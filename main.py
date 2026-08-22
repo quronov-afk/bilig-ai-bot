@@ -2,7 +2,8 @@ import os
 import sqlite3
 import asyncio
 import threading
-import traceback # XATONI ANIQ KO'RSATUVCHI KUTUBXONA
+import traceback
+import base64
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import CommandStart
@@ -59,10 +60,15 @@ def get_child_keyboard():
           [KeyboardButton(text="👤 Mening Qahramonim"), KeyboardButton(text="🏆 Reyting")]]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
+# YANGI: Global Bekor qilish tugmasi
+def get_cancel_keyboard():
+    return ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="❌ Bekor qilish")]], resize_keyboard=True)
+
 def get_add_book_keyboard():
     kb = [[InlineKeyboardButton(text="👶 Yosh bo'yicha tavsiyalar", callback_data="add_book_age")],
           [InlineKeyboardButton(text="✍️ Matn orqali qo'shish", callback_data="add_book_text")],
-          [InlineKeyboardButton(text="📸 Rasm orqali (AI Vision)", callback_data="add_book_photo")]]
+          [InlineKeyboardButton(text="📸 Rasm orqali (AI Vision)", callback_data="add_book_photo")],
+          [InlineKeyboardButton(text="✅ Rejani yakunlash", callback_data="finish_plan")]] # YANGI TUGMA
     return InlineKeyboardMarkup(inline_keyboard=kb)
 
 def get_rewards_main_keyboard():
@@ -107,6 +113,20 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
 
+# YANGI: Global Bekor qilish funksiyasi
+@dp.message(F.text == "❌ Bekor qilish")
+async def cancel_handler(message: types.Message, state: FSMContext):
+    await state.clear()
+    cursor.execute("SELECT role FROM Users WHERE user_id = ?", (message.from_user.id,))
+    user = cursor.fetchone()
+    if user and user[0] == 'parent':
+        await message.answer("🚫 Amaliyot bekor qilindi. Bosh menyudasiz.", reply_markup=get_parent_keyboard())
+    elif user and user[0] == 'child':
+        await message.answer("🚫 Amaliyot bekor qilindi. Bosh menyudasiz.", reply_markup=get_child_keyboard())
+    else:
+        kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
+        await message.answer("🚫 Amaliyot bekor qilindi.", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
+
 @dp.message(CommandStart())
 async def start_handler(message: types.Message, state: FSMContext):
     await state.clear()
@@ -134,7 +154,7 @@ async def parent_handler(message: types.Message):
 async def child_handler(message: types.Message, state: FSMContext):
     cursor.execute("UPDATE Users SET role = 'child' WHERE user_id = ?", (message.from_user.id,))
     conn.commit()
-    await message.answer("Iltimos, ota-onangiz bergan kodni kiriting (masalan, BLG-1234):", reply_markup=types.ReplyKeyboardRemove())
+    await message.answer("Iltimos, ota-onangiz bergan kodni kiriting (masalan, BLG-1234):", reply_markup=get_cancel_keyboard())
     await state.set_state(Registration.waiting_for_parent_code)
 
 @dp.message(Registration.waiting_for_parent_code)
@@ -201,7 +221,8 @@ async def rewards_store_callback(callback: types.CallbackQuery):
 async def process_rate_callback(callback: types.CallbackQuery, state: FSMContext):
     rate_val = callback.data.split("_")[1]
     if rate_val == "custom":
-        await callback.message.edit_text("✍️ <b>Iltimos, 1 ta Bilig (🟡) uchun summani raqamlarda kiriting:</b>\n<i>(Masalan: 2000)</i>", parse_mode="HTML")
+        await callback.message.delete()
+        await bot.send_message(callback.from_user.id, "✍️ <b>Iltimos, 1 ta Bilig (🟡) uchun summani raqamlarda kiriting:</b>\n<i>(Masalan: 2000)</i>", parse_mode="HTML", reply_markup=get_cancel_keyboard())
         await state.set_state(ParentSettings.waiting_for_custom_rate)
         return
     
@@ -223,7 +244,7 @@ async def process_custom_rate(message: types.Message, state: FSMContext):
     rate = int(message.text)
     cursor.execute("UPDATE Users SET coin_rate = ? WHERE user_id = ?", (rate, message.from_user.id))
     conn.commit()
-    await message.answer(f"✅ <b>Bilig kursi muvaffaqiyatli o'rnatildi!</b>\n\nEndi 1 🟡 = {rate} so'm.", parse_mode="HTML")
+    await message.answer(f"✅ <b>Bilig kursi muvaffaqiyatli o'rnatildi!</b>\n\nEndi 1 🟡 = {rate} so'm.", parse_mode="HTML", reply_markup=get_parent_keyboard())
     await state.clear()
 
 # ==========================================
@@ -238,7 +259,7 @@ async def create_plan_start(message: types.Message, state: FSMContext):
         "👇 <b>1-qadam:</b> Rejaga qanday nom berasiz?\n"
         "<i>(Masalan: 'Yozgi ta'til mutolaasi', 'Tug'ilgan kun sovg'asi uchun')</i>"
     )
-    await message.answer(text, parse_mode="HTML")
+    await message.answer(text, parse_mode="HTML", reply_markup=get_cancel_keyboard())
     await state.set_state(PlanCreation.waiting_for_name)
 
 @dp.message(PlanCreation.waiting_for_name)
@@ -249,7 +270,7 @@ async def plan_name_received(message: types.Message, state: FSMContext):
         "Bu reja to'liq tugatilganda farzandingiz qanday katta sovg'a oladi?\n"
         "<i>(Masalan: 'Velosiped', 'Parkka borish', '5000 🟡')</i>"
     )
-    await message.answer(text, parse_mode="HTML")
+    await message.answer(text, parse_mode="HTML", reply_markup=get_cancel_keyboard())
     await state.set_state(PlanCreation.waiting_for_prize)
 
 @dp.message(PlanCreation.waiting_for_prize)
@@ -260,7 +281,7 @@ async def plan_prize_received(message: types.Message, state: FSMContext):
         "Rejani qachongacha tugatish kerak?\n"
         "<i>(Masalan: '1 oyda', '31-Avgustgacha')</i>"
     )
-    await message.answer(text, parse_mode="HTML")
+    await message.answer(text, parse_mode="HTML", reply_markup=get_cancel_keyboard())
     await state.set_state(PlanCreation.waiting_for_deadline)
 
 @dp.message(PlanCreation.waiting_for_deadline)
@@ -277,21 +298,28 @@ async def plan_deadline_received(message: types.Message, state: FSMContext):
     
     await state.update_data(current_plan_id=plan_id)
     
+    # Bosh menyuni qaytaramiz (chunki pastda inline tugmalar chiqadi)
+    await message.answer(f"✅ <b>Reja muvaffaqiyatli yaratildi!</b>\n\n📌 <b>Nom:</b> {plan_name}\n🎁 <b>Mukofot:</b> {plan_prize}\n⏳ <b>Muddat:</b> {plan_deadline}", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    
     text = (
-        f"✅ <b>Reja muvaffaqiyatli yaratildi!</b>\n\n"
-        f"📌 <b>Nom:</b> {plan_name}\n"
-        f"🎁 <b>Mukofot:</b> {plan_prize}\n"
-        f"⏳ <b>Muddat:</b> {plan_deadline}\n\n"
         f"📚 <b>Endi bu rejaga kitoblar qo'shamiz!</b>\n"
-        f"Siz qo'shgan kitoblar farzandingizning botida ro'yxat bo'lib ko'rinadi. U shu ro'yxatdan o'ziga yoqqanini tanlab, o'qishni boshlaydi. Xohlasangiz 1 ta, xohlasangiz 10 ta kitob qo'shishingiz mumkin.\n\n"
+        f"Siz qo'shgan kitoblar farzandingizning botida ro'yxat bo'lib ko'rinadi. Xohlasangiz 1 ta, xohlasangiz 10 ta kitob qo'shishingiz mumkin.\n\n"
         f"👇 <i>Qaysi usuldan foydalanasiz?</i>"
     )
     await message.answer(text, parse_mode="HTML", reply_markup=get_add_book_keyboard())
 
+# --- REJANI YAKUNLASH TUGMASI ---
+@dp.callback_query(F.data == "finish_plan")
+async def finish_plan_handler(callback: types.CallbackQuery, state: FSMContext):
+    await state.clear()
+    await callback.message.edit_text("✅ <b>Mutolaa rejasi to'liq saqlandi va yopildi!</b>\n\nFarzandingiz endi bu kitoblarni o'z menyusida ko'radi va o'qishni boshlashi mumkin.", parse_mode="HTML")
+    await callback.answer()
+
 # --- MATN ORQALI QO'SHISH ---
 @dp.callback_query(F.data == "add_book_text")
 async def add_book_text_handler(callback: types.CallbackQuery, state: FSMContext):
-    await callback.message.edit_text("✍️ <b>Matn orqali qo'shish</b>\n\nKitob nomi va muallifini nuqta bilan ajratib yozing:\n<i>Masalan: O'tkan kunlar. Abdulla Qodiriy</i>", parse_mode="HTML")
+    await callback.message.delete()
+    await bot.send_message(callback.from_user.id, "✍️ <b>Matn orqali qo'shish</b>\n\nKitob nomi va muallifini nuqta bilan ajratib yozing:\n<i>Masalan: O'tkan kunlar. Abdulla Qodiriy</i>", parse_mode="HTML", reply_markup=get_cancel_keyboard())
     await state.set_state(PlanCreation.waiting_for_book_text)
     await callback.answer()
 
@@ -305,12 +333,15 @@ async def process_book_text(message: types.Message, state: FSMContext):
     plan_id = data.get('current_plan_id')
     cursor.execute("INSERT INTO Plan_Books (plan_id, title, author) VALUES (?, ?, ?)", (plan_id, title.strip(), author.strip()))
     conn.commit()
-    await message.answer(f"📚 <b>'{title.strip()}'</b> kitobi rejangizga qo'shildi!\n\nYana kitob qo'shasizmi?", parse_mode="HTML", reply_markup=get_add_book_keyboard())
+    
+    await message.answer(f"📚 <b>'{title.strip()}'</b> kitobi rejangizga qo'shildi!", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    await message.answer("Yana kitob qo'shasizmi yoki rejani yakunlaysizmi?", reply_markup=get_add_book_keyboard())
 
 # --- RASM ORQALI QO'SHISH (GEMINI AI VISION) ---
 @dp.callback_query(F.data == "add_book_photo")
 async def add_book_photo_handler(callback: types.CallbackQuery, state: FSMContext):
-    await callback.message.edit_text("📸 <b>Rasm orqali qo'shish</b>\n\nKitobning muqovasini (ustki qismini) rasmga olib yuboring. AI o'zi kitob nomi va muallifini aniqlaydi!", parse_mode="HTML")
+    await callback.message.delete()
+    await bot.send_message(callback.from_user.id, "📸 <b>Rasm orqali qo'shish</b>\n\nKitobning muqovasini (ustki qismini) rasmga olib yuboring. AI o'zi kitob nomi va muallifini aniqlaydi!", parse_mode="HTML", reply_markup=get_cancel_keyboard())
     await state.set_state(PlanCreation.waiting_for_book_photo)
     await callback.answer()
 
@@ -328,8 +359,7 @@ async def process_book_photo(message: types.Message, state: FSMContext):
         downloaded_file = await bot.download_file(file_info.file_path)
         image_data = downloaded_file.read()
         
-        # Siz aytgan aniq model nomini kiritdik
-        model = genai.GenerativeModel('gemini-3.6-flash')
+        model = genai.GenerativeModel('gemini-1.5-flash')
         prompt = "Bu kitob muqovasining rasmi. Menga faqat kitobning nomi va muallifini quyidagi formatda yozib ber: 'Kitob nomi. Muallif'. Boshqa hech qanday so'z qo'shma. Agar muallif ko'rinmasa, 'Noma'lum muallif' deb yoz."
         
         contents = [prompt, {"mime_type": "image/jpeg", "data": image_data}]
@@ -347,18 +377,16 @@ async def process_book_photo(message: types.Message, state: FSMContext):
         cursor.execute("INSERT INTO Plan_Books (plan_id, title, author) VALUES (?, ?, ?)", (plan_id, title.strip(), author.strip()))
         conn.commit()
         
-        await processing_msg.edit_text(f"✅ <b>AI muvaffaqiyatli aniqladi!</b>\n\n📚 <b>'{title.strip()}'</b> (Muallif: {author.strip()})\n\n<i>Kitob rejangizga qo'shildi! Yana kitob qo'shasizmi?</i>", parse_mode="HTML", reply_markup=get_add_book_keyboard())
-    
+        await processing_msg.delete()
+        await message.answer(f"✅ <b>AI muvaffaqiyatli aniqladi!</b>\n\n📚 <b>'{title.strip()}'</b> (Muallif: {author.strip()})\n\n<i>Kitob rejangizga qo'shildi!</i>", parse_mode="HTML", reply_markup=get_parent_keyboard())
+        await message.answer("Yana kitob qo'shasizmi yoki rejani yakunlaysizmi?", reply_markup=get_add_book_keyboard())
+        
     except Exception as e:
-        # XATONI ANIQ KO'RSATUVCHI QISM
         error_traceback = traceback.format_exc()
-        error_msg = (
-            f"❌ <b>XATOLIK YUZ BERDI:</b>\n\n"
-            f"<code>{str(e)}</code>\n\n"
-            f"<b>Diagnostika logi:</b>\n"
-            f"<code>{error_traceback[-800:]}</code>"
-        )
-        await processing_msg.edit_text(error_msg, parse_mode="HTML", reply_markup=get_add_book_keyboard())
+        error_msg = f"❌ <b>XATOLIK YUZ BERDI:</b>\n\n<code>{str(e)}</code>"
+        await processing_msg.delete()
+        await message.answer(error_msg, parse_mode="HTML", reply_markup=get_parent_keyboard())
+        await message.answer("Iltimos, qaytadan urinib ko'ring yoki matn orqali qo'shing.", reply_markup=get_add_book_keyboard())
         print(error_traceback)
 
 # ==========================================
