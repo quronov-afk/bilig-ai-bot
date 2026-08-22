@@ -49,8 +49,9 @@ def run_dummy_server():
 # 3. MENYULAR (KEYBOARDS)
 # ==========================================
 def get_parent_keyboard():
+    # Koin kursi tugmasi olib tashlandi, menyu ixchamlashdi
     kb = [[KeyboardButton(text="📝 Reja tuzish"), KeyboardButton(text="📊 Farzandim natijalari")],
-          [KeyboardButton(text="⚙️ Koin kursi"), KeyboardButton(text="🎁 Mukofotlar")]]
+          [KeyboardButton(text="🎁 Mukofotlar")]]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
 def get_child_keyboard():
@@ -62,6 +63,27 @@ def get_add_book_keyboard():
     kb = [[InlineKeyboardButton(text="👶 Yosh bo'yicha tavsiyalar", callback_data="add_book_age")],
           [InlineKeyboardButton(text="✍️ Matn orqali qo'shish", callback_data="add_book_text")],
           [InlineKeyboardButton(text="📸 Rasm orqali (AI Vision)", callback_data="add_book_photo")]]
+    return InlineKeyboardMarkup(inline_keyboard=kb)
+
+# Mukofotlar bo'limi uchun asosiy Inline menyu
+def get_rewards_main_keyboard():
+    kb = [
+        [InlineKeyboardButton(text="🪙 Koin kursini belgilash", callback_data="rewards_coin_rate")],
+        [InlineKeyboardButton(text="🛍 Sovg'alar do'konini tahrirlash", callback_data="rewards_store_edit")]
+    ]
+    return InlineKeyboardMarkup(inline_keyboard=kb)
+
+# Koin kursi uchun Inline menyu (Orqaga tugmasi bilan)
+def get_coin_rate_inline_keyboard():
+    kb = [
+        [InlineKeyboardButton(text="🪙 500 so'm", callback_data="rate_500"),
+         InlineKeyboardButton(text="🪙 1,000 so'm", callback_data="rate_1000")],
+        [InlineKeyboardButton(text="🪙 5,000 so'm", callback_data="rate_5000"),
+         InlineKeyboardButton(text="🪙 10,000 so'm", callback_data="rate_10000")],
+        [InlineKeyboardButton(text="✍️ Boshqa summa kiritish", callback_data="rate_custom")],
+        [InlineKeyboardButton(text="🚫 Pul bilan rag'batlantirmaslik", callback_data="rate_0")],
+        [InlineKeyboardButton(text="🔙 Orqaga", callback_data="rewards_main")]
+    ]
     return InlineKeyboardMarkup(inline_keyboard=kb)
 
 # ==========================================
@@ -83,7 +105,6 @@ TOKEN = os.getenv("BOT_TOKEN")
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
-# Gemini AI sozlamalari
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
@@ -140,7 +161,75 @@ async def process_parent_code(message: types.Message, state: FSMContext):
         await message.answer("Bunday kodga ega ota-ona topilmadi. Qaytadan kiriting:")
 
 # ==========================================
-# REJA TUZISH MANTIG'I
+# MUKOFOTLAR VA KOIN KURSI MANTIG'I
+# ==========================================
+def get_rewards_text():
+    return (
+        "🎁 <b>Mukofotlar va Motivatsiya bo'limi</b>\n\n"
+        "Bu bo'lim orqali farzandingiz uchun o'qishni qiziqarli o'yinga aylantirasiz!\n\n"
+        "🪙 <b>Koin (Tilla tanga) nima?</b>\n"
+        "Farzandingiz o'qigan har bir sahifasi va yechgan testlari uchun virtual tangalar (Koin) yig'adi. "
+        "Siz bu tangalarning haqiqiy puldagi qiymatini belgilashingiz mumkin (Masalan: 1 🪙 = 1000 so'm).\n\n"
+        "🛍 <b>Sovg'alar do'koni:</b>\n"
+        "Farzandingiz yig'gan tangalariga nimalar sotib olishi mumkinligini o'zingiz kiritasiz (Masalan: 'Parkka borish' - 50 🪙).\n\n"
+        "<i>👇 Quyidagi tugmalardan keraklisini tanlang:</i>"
+    )
+
+@dp.message(F.text == "🎁 Mukofotlar")
+async def mukofotlar_handler(message: types.Message):
+    await message.answer(get_rewards_text(), parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
+
+@dp.callback_query(F.data == "rewards_main")
+async def rewards_main_callback(callback: types.CallbackQuery):
+    await callback.message.edit_text(get_rewards_text(), parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
+    await callback.answer()
+
+@dp.callback_query(F.data == "rewards_coin_rate")
+async def rewards_coin_rate_callback(callback: types.CallbackQuery):
+    text = (
+        "🪙 <b>Koin kursini belgilash</b>\n\n"
+        "1 ta BiligCoin (🪙) necha so'mga teng ekanligini tanlang.\n\n"
+        "<i>⚠️ Agar farzandingizni pul bilan rag'batlantirishni xohlamasangiz, eng pastdagi 'Pul bilan rag'batlantirmaslik' tugmasini tanlang. "
+        "Shunda u faqat reyting, bilim va maxsus nishonlar uchun o'qiydi.</i>"
+    )
+    await callback.message.edit_text(text, parse_mode="HTML", reply_markup=get_coin_rate_inline_keyboard())
+    await callback.answer()
+
+@dp.callback_query(F.data == "rewards_store_edit")
+async def rewards_store_callback(callback: types.CallbackQuery):
+    await callback.answer("Tez kunda! Bu bo'lim orqali farzandingiz uchun maxsus sovg'alar do'konini yaratasiz.", show_alert=True)
+
+@dp.callback_query(F.data.startswith("rate_"))
+async def process_rate_callback(callback: types.CallbackQuery, state: FSMContext):
+    rate_val = callback.data.split("_")[1]
+    if rate_val == "custom":
+        await callback.message.edit_text("✍️ <b>Iltimos, 1 ta BiligCoin (🪙) uchun summani raqamlarda kiriting:</b>\n<i>(Masalan: 2000)</i>", parse_mode="HTML")
+        await state.set_state(ParentSettings.waiting_for_custom_rate)
+        return
+    
+    rate = int(rate_val)
+    cursor.execute("UPDATE Users SET coin_rate = ? WHERE user_id = ?", (rate, callback.from_user.id))
+    conn.commit()
+    
+    if rate == 0:
+        await callback.message.edit_text("✅ <b>Siz pul bilan rag'batlantirmaslik rejimini tanladingiz!</b>\n\nEndi farzandingiz faqat bilim, reyting va maxsus nishonlar uchun o'qiydi. Bu juda zo'r tanlov! 🧠", parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
+    else:
+        await callback.message.edit_text(f"✅ <b>Koin kursi muvaffaqiyatli o'rnatildi!</b>\n\nEndi 1 🪙 = {rate} so'm.", parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
+    await callback.answer()
+
+@dp.message(ParentSettings.waiting_for_custom_rate)
+async def process_custom_rate(message: types.Message, state: FSMContext):
+    if not message.text.isdigit():
+        await message.answer("⚠️ Iltimos, faqat raqam kiriting! (Masalan: 1500)")
+        return
+    rate = int(message.text)
+    cursor.execute("UPDATE Users SET coin_rate = ? WHERE user_id = ?", (rate, message.from_user.id))
+    conn.commit()
+    await message.answer(f"✅ <b>Koin kursi muvaffaqiyatli o'rnatildi!</b>\n\nEndi 1 🪙 = {rate} so'm.", parse_mode="HTML")
+    await state.clear()
+
+# ==========================================
+# REJA TUZISH MANTIG'I (QOLGAN QISMLAR O'ZGARISHSIZ)
 # ==========================================
 @dp.message(F.text == "📝 Reja tuzish")
 async def create_plan_start(message: types.Message, state: FSMContext):
@@ -150,7 +239,7 @@ async def create_plan_start(message: types.Message, state: FSMContext):
 @dp.message(PlanCreation.waiting_for_name)
 async def plan_name_received(message: types.Message, state: FSMContext):
     await state.update_data(plan_name=message.text)
-    await message.answer("🎁 <b>Katta Mukofot!</b>\n\nBu reja to'liq tugatilganda farzandingiz qanday katta sovg'a oladi?\n<i>(Masalan: 'Velosiped', 'Parkka borish', '5000 Koin')</i>", parse_mode="HTML")
+    await message.answer("🎁 <b>Katta Mukofot!</b>\n\nBu reja to'liq tugatilganda farzandingiz qanday katta sovg'a oladi?\n<i>(Masalan: 'Velosiped', 'Parkka borish', '5000 🪙')</i>", parse_mode="HTML")
     await state.set_state(PlanCreation.waiting_for_prize)
 
 @dp.message(PlanCreation.waiting_for_prize)
@@ -174,7 +263,6 @@ async def plan_deadline_received(message: types.Message, state: FSMContext):
     await state.update_data(current_plan_id=plan_id)
     await message.answer(f"✅ <b>Reja muvaffaqiyatli yaratildi!</b>\n\nEndi bu rejaga kitoblar qo'shamiz. Qaysi usuldan foydalanasiz?", parse_mode="HTML", reply_markup=get_add_book_keyboard())
 
-# --- MATN ORQALI QO'SHISH ---
 @dp.callback_query(F.data == "add_book_text")
 async def add_book_text_handler(callback: types.CallbackQuery, state: FSMContext):
     await callback.message.edit_text("✍️ <b>Matn orqali qo'shish</b>\n\nKitob nomi va muallifini nuqta bilan ajratib yozing:\n<i>Masalan: O'tkan kunlar. Abdulla Qodiriy</i>", parse_mode="HTML")
@@ -193,7 +281,6 @@ async def process_book_text(message: types.Message, state: FSMContext):
     conn.commit()
     await message.answer(f"📚 <b>'{title.strip()}'</b> kitobi rejangizga qo'shildi!\n\nYana kitob qo'shasizmi?", parse_mode="HTML", reply_markup=get_add_book_keyboard())
 
-# --- RASM ORQALI QO'SHISH (GEMINI 3.6 FLASH VISION) ---
 @dp.callback_query(F.data == "add_book_photo")
 async def add_book_photo_handler(callback: types.CallbackQuery, state: FSMContext):
     await callback.message.edit_text("📸 <b>Rasm orqali qo'shish</b>\n\nKitobning muqovasini (ustki qismini) rasmga olib yuboring. AI o'zi kitob nomi va muallifini aniqlaydi!", parse_mode="HTML")
@@ -202,43 +289,32 @@ async def add_book_photo_handler(callback: types.CallbackQuery, state: FSMContex
 
 @dp.message(PlanCreation.waiting_for_book_photo, F.photo)
 async def process_book_photo(message: types.Message, state: FSMContext):
-    processing_msg = await message.answer("⏳ <i>Gemini 3.6 Flash rasmni tahlil qilmoqda... Iltimos kuting.</i>", parse_mode="HTML")
-    
+    processing_msg = await message.answer("⏳ <i>Gemini AI rasmni tahlil qilmoqda... Iltimos kuting.</i>", parse_mode="HTML")
     try:
-        # Rasmni Telegramdan yuklab olish
         photo = message.photo[-1]
         file_info = await bot.get_file(photo.file_id)
         downloaded_file = await bot.download_file(file_info.file_path)
         image_data = downloaded_file.read()
         
-        # Gemini 3.6 Flash modelini chaqirish
-        model = genai.GenerativeModel('gemini-3.6-flash')
+        model = genai.GenerativeModel('gemini-1.5-flash')
         prompt = "Bu kitob muqovasining rasmi. Menga faqat kitobning nomi va muallifini quyidagi formatda yozib ber: 'Kitob nomi. Muallif'. Boshqa hech qanday so'z qo'shma. Agar muallif ko'rinmasa, 'Noma'lum muallif' deb yoz."
         
-        # Rasmni va matnni Gemini ga yuborish
-        contents = [
-            prompt,
-            {"mime_type": "image/jpeg", "data": image_data}
-        ]
-        
+        contents = [prompt, {"mime_type": "image/jpeg", "data": image_data}]
         response = await model.generate_content_async(contents)
         ai_result = response.text.strip()
         
-        # Natijani ajratib olish
         if "." in ai_result:
             title, author = ai_result.split(".", 1)
         else:
             title = ai_result
             author = "Noma'lum muallif"
             
-        # Bazaga saqlash
         data = await state.get_data()
         plan_id = data.get('current_plan_id')
         cursor.execute("INSERT INTO Plan_Books (plan_id, title, author) VALUES (?, ?, ?)", (plan_id, title.strip(), author.strip()))
         conn.commit()
         
         await processing_msg.edit_text(f"✅ <b>AI muvaffaqiyatli aniqladi!</b>\n\n📚 <b>'{title.strip()}'</b> (Muallif: {author.strip()})\n\n<i>Kitob rejangizga qo'shildi! Yana kitob qo'shasizmi?</i>", parse_mode="HTML", reply_markup=get_add_book_keyboard())
-        
     except Exception as e:
         await processing_msg.edit_text("❌ Kechirasiz, rasmni o'qishda xatolik yuz berdi. Iltimos, qaytadan aniqroq rasmga olib yuboring yoki matn orqali qo'shing.", reply_markup=get_add_book_keyboard())
         print(f"Gemini Error: {e}")
