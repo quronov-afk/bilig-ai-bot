@@ -40,6 +40,8 @@ def init_db():
     except: pass
     try: cursor.execute("ALTER TABLE Users ADD COLUMN is_approved INTEGER DEFAULT 0")
     except: pass
+    try: cursor.execute("ALTER TABLE Plan_Books ADD COLUMN audio_count INTEGER DEFAULT 0") # YANGI: Audio cheklovi uchun
+    except: pass
     
     conn.commit()
 
@@ -80,7 +82,6 @@ def get_child_keyboard():
           [KeyboardButton(text="🎁 Sovrinlarim"), KeyboardButton(text="🏆 Reyting")]]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
-# YANGI: Barcha jarayonlar uchun global Orqaga qaytish tugmasi
 def get_back_reply_keyboard():
     return ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="🔙 Orqaga")]], resize_keyboard=True)
 
@@ -142,7 +143,6 @@ if GEMINI_API_KEY:
 
 ACCESS_CODE = os.getenv("ACCESS_CODE", "BILIG-TEST")
 
-# YANGI: Global Orqaga qaytishni ushlab oluvchi handler
 @dp.message(F.text == "🔙 Orqaga")
 async def cancel_handler(message: types.Message, state: FSMContext):
     await state.clear()
@@ -381,7 +381,6 @@ async def process_book_photo(message: types.Message, state: FSMContext):
         file_info = await bot.get_file(photo.file_id)
         downloaded_file = await bot.download_file(file_info.file_path)
         
-        # MODEL YANGILANDI: gemini-3.6-flash
         model = genai.GenerativeModel('gemini-3.6-flash')
         prompt = "Bu kitob muqovasining rasmi. Menga faqat kitobning nomi va muallifini quyidagi formatda yozib ber: 'Kitob nomi. Muallif'."
         response = await model.generate_content_async([prompt, {"mime_type": "image/jpeg", "data": downloaded_file.read()}])
@@ -493,7 +492,6 @@ async def generate_ai_test(message: types.Message, state: FSMContext):
         Natijani FAQAT VA FAQAT quyidagi JSON formatida qaytar, boshqa hech qanday so'z qo'shma:
         [ {"question": "Savol matni?", "options": ["A) variant", "B) variant", "C) variant"], "answer": "A) variant"} ]"""
         
-        # MODEL YANGILANDI: gemini-3.6-flash
         model = genai.GenerativeModel('gemini-3.6-flash')
         response = await model.generate_content_async([prompt, {"mime_type": "image/jpeg", "data": downloaded_file.read()}])
         
@@ -576,14 +574,13 @@ async def no_test_alert(callback: types.CallbackQuery):
     await callback.answer("🔒 Ota-onangiz bu kitob uchun hali test tuzmagan. O'qishda davom eting!", show_alert=True)
 
 # ==========================================
-# 1-BOSQICH: RASM YUBORISH VA BILIG HISOBLASH
+# 1-BOSQICH: RASM YUBORISH VA SAHIFA RAQAMINI O'QISH
 # ==========================================
 @dp.callback_query(F.data.startswith("sendpage_"))
 async def ask_page_photo(callback: types.CallbackQuery, state: FSMContext):
     book_id = int(callback.data.split("_")[1])
     await state.update_data(reading_book_id=book_id)
     await callback.message.delete()
-    # YANGI: get_back_reply_keyboard() qo'shildi!
     await bot.send_message(callback.from_user.id, "📸 <b>O'qigan sahifangni rasmga olib yubor!</b>\n\n<i>(Rasm AI tomonidan tekshirilgach, darhol o'chirib tashlanadi.\nBekor qilish uchun pastdagi '🔙 Orqaga' tugmasini bosing)</i>", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
     await state.set_state(ChildReading.waiting_for_page_photo)
     await callback.answer()
@@ -596,13 +593,13 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         file_info = await bot.get_file(photo.file_id)
         downloaded_file = await bot.download_file(file_info.file_path)
         
+        # YANGI PROMPT: Sahifa raqamini o'qish uchun!
         prompt = """Bu rasm foydalanuvchi yuborgan kitob sahifasi.
         1. Bu haqiqatan ham kitob sahifasimi? (true/false)
-        2. Rasmda nechta sahifa ko'rinyapti? (Odatda 1 yoki 2 ta bo'ladi).
+        2. Rasmda ko'rinib turgan eng katta sahifa raqamini (sahifa burchaklarida, pastda yoki tepada yozilgan raqamni) top. Agar sahifa raqami umuman ko'rinmasa, 0 deb ber.
         Javobingni FAQAT VA FAQAT quyidagi JSON formatida ber, boshqa hech qanday so'z yozma:
-        {"is_book_page": true, "pages_count": 1}"""
+        {"is_book_page": true, "page_number": 155}"""
         
-        # MODEL YANGILANDI: gemini-3.6-flash
         model = genai.GenerativeModel('gemini-3.6-flash')
         response = await model.generate_content_async([prompt, {"mime_type": "image/jpeg", "data": downloaded_file.read()}])
         
@@ -619,7 +616,14 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
             await state.clear()
             return
             
-        pages_count = ai_result.get("pages_count", 1)
+        new_page_num = int(ai_result.get("page_number", 0))
+        
+        if new_page_num == 0:
+            await processing_msg.delete()
+            await message.answer("⚠️ Sahifa raqami ko'rinmadi! Iltimos, sahifa raqami (pastda yoki tepada) aniq ko'rinadigan qilib rasmga olib yubor.", reply_markup=get_child_keyboard())
+            await state.clear()
+            return
+            
         data = await state.get_data()
         book_id = data.get('reading_book_id')
         child_id = message.from_user.id
@@ -627,17 +631,23 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         cursor.execute("SELECT pages_read FROM Plan_Books WHERE book_id = ?", (book_id,))
         row = cursor.fetchone()
         old_pages = row[0] if row else 0
-        new_pages = old_pages + pages_count
         
-        cursor.execute("UPDATE Plan_Books SET pages_read = ? WHERE book_id = ?", (new_pages, book_id))
+        if new_page_num <= old_pages:
+            await processing_msg.delete()
+            await message.answer(f"⚠️ Sen allaqachon {old_pages}-sahifagacha o'qigansan! Iltimos, yangiroq sahifani rasmga olib yubor.", reply_markup=get_child_keyboard())
+            await state.clear()
+            return
         
-        earned_bilig = (new_pages // 5) - (old_pages // 5)
+        cursor.execute("UPDATE Plan_Books SET pages_read = ? WHERE book_id = ?", (new_page_num, book_id))
+        
+        earned_bilig = (new_page_num // 5) - (old_pages // 5)
+        pages_read_now = new_page_num - old_pages
         
         if earned_bilig > 0:
             cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (earned_bilig, child_id))
-            reply_text = f"🎉 <b>Qoyilmaqom!</b> Sen {pages_count} bet o'qiding va <b>{earned_bilig} 🟡 Bilig</b> ishlab olding! G'ayrat qil, Qahramon! 🚀"
+            reply_text = f"🎉 <b>Qoyilmaqom!</b> Sen {pages_read_now} bet o'qiding va <b>{earned_bilig} 🟡 Bilig</b> ishlab olding! G'ayrat qil, Qahramon! 🚀\n<i>(Jami o'qilgan: {new_page_num} bet)</i>"
         else:
-            reply_text = f"👍 <b>Barakalla!</b> Sen {pages_count} bet o'qiding. Yana {5 - (new_pages % 5)} bet o'qisang, yangi Bilig 🟡 olasan!"
+            reply_text = f"👍 <b>Barakalla!</b> Sen {pages_read_now} bet o'qiding. Yana {5 - (new_page_num % 5)} bet o'qisang, yangi Bilig 🟡 olasan!\n<i>(Jami o'qilgan: {new_page_num} bet)</i>"
             
         conn.commit()
         await processing_msg.delete()
@@ -654,9 +664,26 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
 # ==========================================
 @dp.callback_query(F.data.startswith("sendaudio_"))
 async def ask_audio_summary(callback: types.CallbackQuery, state: FSMContext):
-    await state.update_data(audio_book_id=int(callback.data.split("_")[1]))
+    book_id = int(callback.data.split("_")[1])
+    
+    # YANGI: Audio yuborish uchun sahifa cheklovini tekshirish
+    cursor.execute("SELECT pages_read, audio_count FROM Plan_Books WHERE book_id = ?", (book_id,))
+    row = cursor.fetchone()
+    if not row:
+        return
+        
+    pages_read, audio_count = row
+    audio_count = audio_count if audio_count else 0
+    
+    # 1-audio uchun 10 bet, keyingilari uchun +30 bet
+    required_pages = 10 if audio_count == 0 else 10 + (audio_count * 30)
+    
+    if pages_read < required_pages:
+        await callback.answer(f"🔒 Audio xulosa yuborish uchun kamida {required_pages}-sahifagacha o'qishingiz kerak!\n\n(Hozir: {pages_read} bet o'qilgan)", show_alert=True)
+        return
+        
+    await state.update_data(audio_book_id=book_id)
     await callback.message.delete()
-    # YANGI: get_back_reply_keyboard() qo'shildi!
     await bot.send_message(callback.from_user.id, "🎤 <b>Ovozli xabar yubor!</b>\n\nKitobda nimalar bo'lganini o'z so'zlaring bilan aytib ber. AI Adabiyotshunos olim seni eshitib, baho beradi!", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
     await state.set_state(ChildReading.waiting_for_audio)
     await callback.answer()
@@ -680,7 +707,6 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
         Javobni FAQAT JSON formatida ber:
         {{"feedback": "Sening xulosang juda zo'r...", "bonus_bilig": 3, "give_badge": true}}"""
         
-        # MODEL YANGILANDI: gemini-3.6-flash
         model = genai.GenerativeModel('gemini-3.6-flash')
         response = await model.generate_content_async([prompt, {"mime_type": "audio/ogg", "data": downloaded_file.read()}])
         
@@ -690,6 +716,11 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
         give_badge = ai_result.get("give_badge", False)
         feedback = ai_result.get("feedback", "Ajoyib xulosa!")
         
+        data = await state.get_data()
+        book_id = data.get('audio_book_id')
+        
+        # Audio yuborilgach, audio_count ni oshiramiz
+        cursor.execute("UPDATE Plan_Books SET audio_count = audio_count + 1 WHERE book_id = ?", (book_id,))
         cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (bonus, message.from_user.id))
         
         badge_text = ""
