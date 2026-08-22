@@ -38,6 +38,8 @@ def init_db():
     except: pass
     try: cursor.execute("ALTER TABLE Users ADD COLUMN badges TEXT DEFAULT ''")
     except: pass
+    try: cursor.execute("ALTER TABLE Users ADD COLUMN is_approved INTEGER DEFAULT 0") # YANGI: Yopiq test uchun
+    except: pass
     
     conn.commit()
 
@@ -110,6 +112,7 @@ def get_bilig_rate_inline_keyboard():
 # ==========================================
 # 4. FSM (HOLATLAR)
 # ==========================================
+class Access(StatesGroup): waiting_for_code = State() # YANGI
 class Registration(StatesGroup): waiting_for_parent_code = State()
 class ParentSettings(StatesGroup): 
     waiting_for_custom_rate = State()
@@ -136,6 +139,9 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
 
+# Yopiq test uchun maxsus kod (Buni o'zgartirishingiz mumkin)
+ACCESS_CODE = os.getenv("ACCESS_CODE", "BILIG-TEST")
+
 @dp.message(F.text == "❌ Bekor qilish")
 async def cancel_handler(message: types.Message, state: FSMContext):
     await state.clear()
@@ -149,22 +155,43 @@ async def cancel_handler(message: types.Message, state: FSMContext):
         kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
         await message.answer("🚫 Amaliyot bekor qilindi.", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
 
+# ==========================================
+# START VA YOPIQ TEST RUXSATI
+# ==========================================
 @dp.message(CommandStart())
 async def start_handler(message: types.Message, state: FSMContext):
     await state.clear()
-    cursor.execute("SELECT role FROM Users WHERE user_id = ?", (message.from_user.id,))
+    cursor.execute("SELECT role, is_approved FROM Users WHERE user_id = ?", (message.from_user.id,))
     user = cursor.fetchone()
-    if user and user[0] == 'parent':
-        await message.answer("<b>Asosiy menyuga xush kelibsiz!</b> 👨‍👩‍👦", parse_mode="HTML", reply_markup=get_parent_keyboard())
-        return
-    elif user and user[0] == 'child':
-        await message.answer("<b>Asosiy menyuga xush kelibsiz, Qahramon!</b> 🦸‍♂️🦸‍♀️", parse_mode="HTML", reply_markup=get_child_keyboard())
+    
+    # Agar foydalanuvchi tasdiqlangan bo'lsa
+    if user and user[1] == 1:
+        if user[0] == 'parent':
+            await message.answer("<b>Asosiy menyuga xush kelibsiz!</b> 👨‍👩‍👦", parse_mode="HTML", reply_markup=get_parent_keyboard())
+        elif user[0] == 'child':
+            await message.answer("<b>Asosiy menyuga xush kelibsiz, Qahramon!</b> 🦸‍♂️🦸‍♀️", parse_mode="HTML", reply_markup=get_child_keyboard())
+        else:
+            kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
+            await message.answer("👋 <b>Bilig AI - Aqlli kitobxonlar dunyosiga xush kelibsiz!</b>\n\n<i>Kim bo'lib kirmoqchisiz?</i>", parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
         return
 
-    cursor.execute("INSERT OR IGNORE INTO Users (user_id, name) VALUES (?, ?)", (message.from_user.id, message.from_user.full_name))
+    # Agar yangi bo'lsa yoki tasdiqlanmagan bo'lsa
+    cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved) VALUES (?, ?, 0)", (message.from_user.id, message.from_user.full_name))
     conn.commit()
-    kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
-    await message.answer("👋 <b>Bilig AI - Aqlli kitobxonlar dunyosiga xush kelibsiz!</b>\n\n<i>Kim bo'lib kirmoqchisiz?</i>", parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
+    
+    await message.answer(f"👋 <b>Bilig AI yopiq test rejimida ishlamoqda!</b>\n\nBotdan foydalanish uchun maxsus ruxsat kodingizni kiriting:", parse_mode="HTML", reply_markup=types.ReplyKeyboardRemove())
+    await state.set_state(Access.waiting_for_code)
+
+@dp.message(Access.waiting_for_code)
+async def process_access_code(message: types.Message, state: FSMContext):
+    if message.text.strip() == ACCESS_CODE:
+        cursor.execute("UPDATE Users SET is_approved = 1 WHERE user_id = ?", (message.from_user.id,))
+        conn.commit()
+        await state.clear()
+        kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
+        await message.answer("✅ <b>Kod qabul qilindi! Bilig AI ga xush kelibsiz!</b>\n\n<i>Kim bo'lib kirmoqchisiz?</i>", parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
+    else:
+        await message.answer("❌ Noto'g'ri kod! Iltimos, qaytadan kiriting:")
 
 @dp.message(F.text == "👨‍👩‍👦 Men Ota-onaman")
 async def parent_handler(message: types.Message):
@@ -194,7 +221,6 @@ async def process_parent_code(message: types.Message, state: FSMContext):
             conn.commit()
             await message.answer("Tabriklaymiz! Ota-onangiz bilan bog'landingiz! 🎉", reply_markup=get_child_keyboard())
             
-            # Ota-onaga xabar va yoshni kiritish tugmasi
             kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="👦👧 Farzand yoshini kiritish", callback_data=f"set_age_{message.from_user.id}")]])
             await bot.send_message(parent[0], f"Farzandingiz ({message.from_user.full_name}) profilingizga ulandi! ✅\n\nAI unga moslashishi uchun iltimos, farzandingizning yoshini kiriting:", reply_markup=kb)
         except sqlite3.IntegrityError:
@@ -461,11 +487,10 @@ async def generate_ai_test(message: types.Message, state: FSMContext):
         file_info = await bot.get_file(photo.file_id)
         downloaded_file = await bot.download_file(file_info.file_path)
         
-        # YANGI: Fikrlashga undovchi qat'iy prompt
         prompt = """Bu bolalar kitobining sahifasi. Shu matn asosida bolalar uchun 5 ta sifatli test savoli tuz. 
         DIQQAT: Savollar faqat quruq xotirani (kim qayerga bordi, nima dedi) emas, balki bolaning fikrlashini, mantiqini, sabab-oqibat bog'liqligini va asar mohiyatini tushunganini sinaydigan bo'lsin.
         Har bir savolda 3 ta variant (A, B, C) bo'lsin. 
-        Natijani FAQAT quyidagi JSON formatida qaytar, boshqa hech qanday so'z qo'shma:
+        Natijani FAQAT VA FAQAT quyidagi JSON formatida qaytar, boshqa hech qanday so'z qo'shma:
         [ {"question": "Savol matni?", "options": ["A) variant", "B) variant", "C) variant"], "answer": "A) variant"} ]"""
         
         model = genai.GenerativeModel('gemini-1.5-flash')
@@ -569,18 +594,23 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         file_info = await bot.get_file(photo.file_id)
         downloaded_file = await bot.download_file(file_info.file_path)
         
+        # Qat'iy prompt (Xatolikni oldini olish uchun)
         prompt = """Bu rasm foydalanuvchi yuborgan kitob sahifasi.
         1. Bu haqiqatan ham kitob sahifasimi? (true/false)
         2. Rasmda nechta sahifa ko'rinyapti? (Odatda 1 yoki 2 ta bo'ladi).
-        Javobni FAQAT JSON formatida ber: {"is_book_page": true, "pages_count": 1}"""
+        Javobingni FAQAT VA FAQAT quyidagi JSON formatida ber, boshqa hech qanday so'z yozma:
+        {"is_book_page": true, "pages_count": 1}"""
         
         model = genai.GenerativeModel('gemini-1.5-flash')
         response = await model.generate_content_async([prompt, {"mime_type": "image/jpeg", "data": downloaded_file.read()}])
         
         ai_result = json.loads(clean_json(response.text))
         
-        # RASMNI DARHOL O'CHIRISH (Qat'iy talab)
-        await message.delete()
+        # RASMNI DARHOL O'CHIRISH (Try-except bilan, chunki private chatda ba'zan ruxsat muammosi bo'lishi mumkin)
+        try:
+            await message.delete()
+        except:
+            pass # Agar o'chira olmasa ham dastur to'xtab qolmaydi
         
         if not ai_result.get("is_book_page"):
             await processing_msg.delete()
@@ -593,8 +623,10 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         book_id = data.get('reading_book_id')
         child_id = message.from_user.id
         
+        # Xatolikni oldini olish uchun fetchone ni tekshiramiz
         cursor.execute("SELECT pages_read FROM Plan_Books WHERE book_id = ?", (book_id,))
-        old_pages = cursor.fetchone()[0]
+        row = cursor.fetchone()
+        old_pages = row[0] if row else 0
         new_pages = old_pages + pages_count
         
         cursor.execute("UPDATE Plan_Books SET pages_read = ? WHERE book_id = ?", (new_pages, book_id))
@@ -615,7 +647,8 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         
     except Exception as e:
         await processing_msg.delete()
-        await message.answer(f"❌ Xatolik yuz berdi. Qaytadan urinib ko'r.", reply_markup=get_child_keyboard())
+        # Endi xatolik sababini ham yozib yuboradi (Debug uchun)
+        await message.answer(f"❌ Xatolik yuz berdi. Qaytadan urinib ko'r.\n\n<i>Sabab: {str(e)}</i>", reply_markup=get_child_keyboard(), parse_mode="HTML")
         await state.clear()
 
 # ==========================================
@@ -636,7 +669,6 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
         file_info = await bot.get_file(message.voice.file_id)
         downloaded_file = await bot.download_file(file_info.file_path)
         
-        # Bolaning yoshini bazadan olish
         cursor.execute("SELECT child_age FROM Family_Link WHERE child_id = ?", (message.from_user.id,))
         age_row = cursor.fetchone()
         age = age_row[0] if age_row else 10
@@ -678,7 +710,7 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
         
     except Exception as e:
         await processing_msg.delete()
-        await message.answer(f"❌ Xatolik yuz berdi. Qaytadan urinib ko'r.", reply_markup=get_child_keyboard())
+        await message.answer(f"❌ Xatolik yuz berdi. Qaytadan urinib ko'r.\n\n<i>{str(e)}</i>", reply_markup=get_child_keyboard(), parse_mode="HTML")
         await state.clear()
 
 # ==========================================
@@ -698,10 +730,9 @@ async def execute_test(callback: types.CallbackQuery):
         
     questions = json.loads(test_row[0])
     
-    # Test tugasa
     if q_idx >= len(questions):
         cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (correct_count, callback.from_user.id))
-        cursor.execute("DELETE FROM Book_Tests WHERE book_id = ?", (book_id,)) # Testni o'chiramiz
+        cursor.execute("DELETE FROM Book_Tests WHERE book_id = ?", (book_id,))
         conn.commit()
         
         text = f"🏁 <b>Test yakunlandi!</b>\n\n✅ To'g'ri javoblar: {correct_count} ta\n🎁 Sen <b>{correct_count} 🟡 Bilig</b> yutib olding! Barakalla, aqlli Qahramon! 🧠"
@@ -713,7 +744,6 @@ async def execute_test(callback: types.CallbackQuery):
     kb = []
     for i, opt in enumerate(q['options']):
         is_correct = 1 if opt.strip() == q['answer'].strip() else 0
-        # testans_bookid_nextqidx_newcorrectcount_iscorrect
         kb.append([InlineKeyboardButton(text=opt, callback_data=f"tans_{book_id}_{q_idx+1}_{correct_count}_{is_correct}")])
         
     text = f"📝 <b>{q_idx + 1}-savol:</b>\n\n{q['question']}"
@@ -724,13 +754,11 @@ async def execute_test(callback: types.CallbackQuery):
 async def process_test_answer(callback: types.CallbackQuery):
     _, book_id, next_q_idx, correct_count, is_correct = callback.data.split("_")
     new_correct_count = int(correct_count) + int(is_correct)
-    
-    # Keyingi savolga o'tish uchun taketest handlerini chaqiramiz
     callback.data = f"taketest_{book_id}_{next_q_idx}_{new_correct_count}"
     await execute_test(callback)
 
 # ==========================================
-# 4-BOSQICH: GAMIFIKATSIYA (SOVRINLARIM)
+# 4-BOSQICH: GAMIFIKATSIYA VA OTA-ONA NATIJALARI
 # ==========================================
 @dp.message(F.text == "🎁 Sovrinlarim")
 async def show_rewards(message: types.Message):
@@ -744,6 +772,41 @@ async def show_rewards(message: types.Message):
         f"🟡 <b>Sening Biliglaring:</b> {balance} ta\n"
         f"🏅 <b>Sening nishonlaring:</b> {badges}\n\n"
         f"<i>G'ayrat qil! Qancha ko'p o'qisang, shuncha ko'p Bilig va Katta Mukofotga yaqinlashasan!</i> 🚀"
+    )
+    await message.answer(text, parse_mode="HTML")
+
+# YANGI: Ota-ona uchun farzand natijalari
+@dp.message(F.text == "📊 Farzandim natijalari")
+async def parent_results_handler(message: types.Message):
+    cursor.execute("SELECT child_id, child_age FROM Family_Link WHERE parent_id = ?", (message.from_user.id,))
+    link = cursor.fetchone()
+    
+    if not link:
+        await message.answer("Sizga hali farzandingiz ulanmagan. Farzandingiz botga kirib, sizning kodingizni kiritishi kerak.")
+        return
+        
+    child_id, child_age = link
+    cursor.execute("SELECT name, balance_coins, badges FROM Users WHERE user_id = ?", (child_id,))
+    child = cursor.fetchone()
+    
+    if not child:
+        await message.answer("Farzand ma'lumotlari topilmadi.")
+        return
+        
+    child_name, balance, badges = child
+    badges_text = badges if badges else "Hali nishonlar yo'q"
+    
+    # Jami o'qilgan betlarni hisoblash
+    cursor.execute("SELECT SUM(pages_read) FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id WHERE rp.parent_id = ?", (message.from_user.id,))
+    total_pages = cursor.fetchone()[0]
+    total_pages = total_pages if total_pages else 0
+    
+    text = (
+        f"📊 <b>{child_name}ning natijalari:</b>\n\n"
+        f"👦 Yoshi: {child_age}\n"
+        f"📖 Jami o'qilgan sahifalar: {total_pages} bet\n"
+        f"🟡 Yig'ilgan Biliglar: {balance} ta\n"
+        f"🏅 Nishonlar: {badges_text}\n"
     )
     await message.answer(text, parse_mode="HTML")
 
