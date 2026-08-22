@@ -17,30 +17,16 @@ conn = sqlite3.connect(db_path, check_same_thread=False)
 cursor = conn.cursor()
 
 def init_db():
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS Users (
-            user_id INTEGER PRIMARY KEY,
-            role TEXT,
-            name TEXT,
-            balance_coins INTEGER DEFAULT 0,
-            total_xp INTEGER DEFAULT 0,
-            streak_days INTEGER DEFAULT 0
-        )
-    ''')
-    # Ota-onalar uchun koin kursini saqlash ustunini qo'shamiz (agar yo'q bo'lsa)
-    try:
-        cursor.execute("ALTER TABLE Users ADD COLUMN coin_rate INTEGER DEFAULT 500")
-    except sqlite3.OperationalError:
-        pass # Ustun allaqachon bor
-
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS Family_Link (
-            parent_id INTEGER,
-            child_id INTEGER,
-            mutolaa_id TEXT,
-            UNIQUE(parent_id, child_id)
-        )
-    ''')
+    cursor.execute('''CREATE TABLE IF NOT EXISTS Users (
+        user_id INTEGER PRIMARY KEY, role TEXT, name TEXT, balance_coins INTEGER DEFAULT 0, total_xp INTEGER DEFAULT 0, streak_days INTEGER DEFAULT 0, coin_rate INTEGER DEFAULT 500)''')
+    cursor.execute('''CREATE TABLE IF NOT EXISTS Family_Link (
+        parent_id INTEGER, child_id INTEGER, mutolaa_id TEXT, UNIQUE(parent_id, child_id))''')
+    
+    # YANGI: Rejalar va Kitoblar jadvallari
+    cursor.execute('''CREATE TABLE IF NOT EXISTS Reading_Plans (
+        plan_id INTEGER PRIMARY KEY AUTOINCREMENT, parent_id INTEGER, name TEXT, prize TEXT, deadline TEXT, status TEXT DEFAULT 'active')''')
+    cursor.execute('''CREATE TABLE IF NOT EXISTS Plan_Books (
+        book_id INTEGER PRIMARY KEY AUTOINCREMENT, plan_id INTEGER, title TEXT, author TEXT, status TEXT DEFAULT 'pending')''')
     conn.commit()
 
 # ==========================================
@@ -53,8 +39,7 @@ class HealthCheckHandler(BaseHTTPRequestHandler):
         self.wfile.write(b"Bot is alive!")
     def log_message(self, format, *args): pass
 
-class ReusableTCPServer(HTTPServer):
-    allow_reuse_address = True
+class ReusableTCPServer(HTTPServer): allow_reuse_address = True
 
 def run_dummy_server():
     port = int(os.environ.get("PORT", 8080))
@@ -66,7 +51,7 @@ def run_dummy_server():
 # ==========================================
 def get_parent_keyboard():
     kb = [
-        [KeyboardButton(text="📊 Farzandim natijalari")],
+        [KeyboardButton(text="📝 Reja tuzish"), KeyboardButton(text="📊 Farzandim natijalari")],
         [KeyboardButton(text="⚙️ Koin kursi"), KeyboardButton(text="🎁 Mukofotlar")]
     ]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
@@ -78,26 +63,26 @@ def get_child_keyboard():
     ]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
-# Koin kursi uchun Inline tugmalar (Xabar tagida chiqadi)
-def get_coin_rate_inline_keyboard():
+def get_add_book_keyboard():
     kb = [
-        [InlineKeyboardButton(text="🪙 500 so'm", callback_data="rate_500"),
-         InlineKeyboardButton(text="🪙 1,000 so'm", callback_data="rate_1000")],
-        [InlineKeyboardButton(text="🪙 5,000 so'm", callback_data="rate_5000"),
-         InlineKeyboardButton(text="🪙 10,000 so'm", callback_data="rate_10000")],
-        [InlineKeyboardButton(text="✍️ Boshqa summa kiritish", callback_data="rate_custom")],
-        [InlineKeyboardButton(text="🚫 Pul bilan rag'batlantirmaslik", callback_data="rate_0")]
+        [InlineKeyboardButton(text="👶 Yosh bo'yicha tavsiyalar", callback_data="add_book_age")],
+        [InlineKeyboardButton(text="✍️ Matn orqali qo'shish", callback_data="add_book_text")],
+        [InlineKeyboardButton(text="📸 Rasm orqali (AI Vision)", callback_data="add_book_photo")]
     ]
     return InlineKeyboardMarkup(inline_keyboard=kb)
 
 # ==========================================
 # 4. FSM (HOLATLAR)
 # ==========================================
-class Registration(StatesGroup):
-    waiting_for_parent_code = State()
+class Registration(StatesGroup): waiting_for_parent_code = State()
+class ParentSettings(StatesGroup): waiting_for_custom_rate = State()
 
-class ParentSettings(StatesGroup):
-    waiting_for_custom_rate = State()
+# YANGI: Reja tuzish holatlari
+class PlanCreation(StatesGroup):
+    waiting_for_name = State()
+    waiting_for_prize = State()
+    waiting_for_deadline = State()
+    waiting_for_book_text = State()
 
 # ==========================================
 # 5. TELEGRAM BOT MANTIG'I
@@ -109,46 +94,25 @@ dp = Dispatcher()
 @dp.message(CommandStart())
 async def start_handler(message: types.Message, state: FSMContext):
     await state.clear()
-    
     cursor.execute("SELECT role FROM Users WHERE user_id = ?", (message.from_user.id,))
     user = cursor.fetchone()
-    
     if user and user[0] == 'parent':
-        await message.answer(
-            "<b>Asosiy menyuga xush kelibsiz!</b> 👨‍👩‍👦\n\n"
-            "👇 <i>Quyidagi tugmalar orqali botni boshqaring:</i>",
-            parse_mode="HTML", reply_markup=get_parent_keyboard()
-        )
+        await message.answer("<b>Asosiy menyuga xush kelibsiz!</b> 👨‍👩‍👦", parse_mode="HTML", reply_markup=get_parent_keyboard())
         return
     elif user and user[0] == 'child':
-        await message.answer(
-            "<b>Asosiy menyuga xush kelibsiz, Qahramon!</b> 🦸‍♂️🦸‍♀️\n\n"
-            "👇 <i>Quyidagi tugmalardan birini tanla:</i>",
-            parse_mode="HTML", reply_markup=get_child_keyboard()
-        )
+        await message.answer("<b>Asosiy menyuga xush kelibsiz, Qahramon!</b> 🦸‍♂️🦸‍♀️", parse_mode="HTML", reply_markup=get_child_keyboard())
         return
 
-    cursor.execute("INSERT OR IGNORE INTO Users (user_id, name) VALUES (?, ?)", 
-                   (message.from_user.id, message.from_user.full_name))
+    cursor.execute("INSERT OR IGNORE INTO Users (user_id, name) VALUES (?, ?)", (message.from_user.id, message.from_user.full_name))
     conn.commit()
-    
-    kb = [
-        [KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")],
-        [KeyboardButton(text="👦👧 Men O'quvchiman")]
-    ]
-    keyboard = ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
-    await message.answer(
-        "👋 <b>Bilig AI - Aqlli kitobxonlar dunyosiga xush kelibsiz!</b>\n\n"
-        "<i>Iltimos, kim bo'lib kirmoqchi ekanligingizni tanlang:</i>", 
-        parse_mode="HTML", reply_markup=keyboard
-    )
+    kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
+    await message.answer("👋 <b>Bilig AI - Aqlli kitobxonlar dunyosiga xush kelibsiz!</b>\n\n<i>Kim bo'lib kirmoqchisiz?</i>", parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
 
 @dp.message(F.text == "👨‍👩‍👦 Men Ota-onaman")
 async def parent_handler(message: types.Message):
     cursor.execute("UPDATE Users SET role = 'parent' WHERE user_id = ?", (message.from_user.id,))
     conn.commit()
-    parent_code = f"BLG-{str(message.from_user.id)[-4:]}"
-    await message.answer(f"Siz Ota-ona sifatida ro'yxatdan o'tdingiz! ✅\nFarzandingiz ulanishi uchun kodingiz: <b>{parent_code}</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    await message.answer(f"Siz Ota-ona sifatida ro'yxatdan o'tdingiz! ✅\nFarzandingiz ulanishi uchun kodingiz: <b>BLG-{str(message.from_user.id)[-4:]}</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
 
 @dp.message(F.text == "👦👧 Men O'quvchiman")
 async def child_handler(message: types.Message, state: FSMContext):
@@ -163,11 +127,9 @@ async def process_parent_code(message: types.Message, state: FSMContext):
     if not code.startswith("BLG-"):
         await message.answer("Kod xato formatda! 'BLG-1234' ko'rinishida kiriting.")
         return
-        
     parent_suffix = code.replace("BLG-", "")
     cursor.execute("SELECT user_id FROM Users WHERE role = 'parent' AND CAST(user_id AS TEXT) LIKE ?", ('%' + parent_suffix,))
     parent = cursor.fetchone()
-    
     if parent:
         try:
             cursor.execute("INSERT INTO Family_Link (parent_id, child_id) VALUES (?, ?)", (parent[0], message.from_user.id))
@@ -181,53 +143,70 @@ async def process_parent_code(message: types.Message, state: FSMContext):
         await message.answer("Bunday kodga ega ota-ona topilmadi. Qaytadan kiriting:")
 
 # ==========================================
-# KOIN KURSI MANTIG'I (YANGI QO'SHILGAN QISM)
+# REJA TUZISH MANTIG'I (5.1-QISM)
 # ==========================================
-@dp.message(F.text == "⚙️ Koin kursi")
-async def koin_kursi_handler(message: types.Message):
+@dp.message(F.text == "📝 Reja tuzish")
+async def create_plan_start(message: types.Message, state: FSMContext):
+    await message.answer("📝 <b>Yangi o'qish rejasini tuzamiz!</b>\n\nRejaga qanday nom berasiz?\n<i>(Masalan: 'Ta'til mutolaasi', 'Velosiped uchun')</i>", parse_mode="HTML")
+    await state.set_state(PlanCreation.waiting_for_name)
+
+@dp.message(PlanCreation.waiting_for_name)
+async def plan_name_received(message: types.Message, state: FSMContext):
+    await state.update_data(plan_name=message.text)
+    await message.answer("🎁 <b>Katta Mukofot!</b>\n\nBu reja to'liq tugatilganda farzandingiz qanday katta sovg'a oladi?\n<i>(Masalan: 'Velosiped', 'Parkka borish', '5000 Koin')</i>", parse_mode="HTML")
+    await state.set_state(PlanCreation.waiting_for_prize)
+
+@dp.message(PlanCreation.waiting_for_prize)
+async def plan_prize_received(message: types.Message, state: FSMContext):
+    await state.update_data(plan_prize=message.text)
+    await message.answer("⏳ <b>Muddat (Deadline)</b>\n\nRejani qachongacha tugatish kerak?\n<i>(Masalan: '1 oyda', 'Yozgi ta'til oxirigacha', '31-Avgustgacha')</i>", parse_mode="HTML")
+    await state.set_state(PlanCreation.waiting_for_deadline)
+
+@dp.message(PlanCreation.waiting_for_deadline)
+async def plan_deadline_received(message: types.Message, state: FSMContext):
+    data = await state.get_data()
+    plan_name = data['plan_name']
+    plan_prize = data['plan_prize']
+    plan_deadline = message.text
+    
+    # Rejani bazaga saqlaymiz
+    cursor.execute("INSERT INTO Reading_Plans (parent_id, name, prize, deadline) VALUES (?, ?, ?, ?)",
+                   (message.from_user.id, plan_name, plan_prize, plan_deadline))
+    plan_id = cursor.lastrowid
+    conn.commit()
+    
+    await state.update_data(current_plan_id=plan_id)
+    
     text = (
-        "⚙️ <b>Koin kursini belgilash</b>\n\n"
-        "Farzandingiz o'qigan har bir kitobi uchun <b>BiligCoin (🪙)</b> ishlab topadi. "
-        "Siz 1 ta BiligCoin necha so'mga teng ekanligini belgilashingiz mumkin.\n\n"
-        "<i>Agar farzandingizni pul bilan rag'batlantirishni xohlamasangiz, eng pastdagi tugmani tanlang. Shunda u faqat reyting va nishonlar uchun o'qiydi.</i>\n\n"
-        "👇 <b>Quyidagilardan birini tanlang:</b>"
+        f"✅ <b>Reja muvaffaqiyatli yaratildi!</b>\n\n"
+        f"📌 <b>Nom:</b> {plan_name}\n"
+        f"🎁 <b>Mukofot:</b> {plan_prize}\n"
+        f"⏳ <b>Muddat:</b> {plan_deadline}\n\n"
+        f"Endi bu rejaga kitoblar qo'shamiz. Qaysi usuldan foydalanasiz?"
     )
-    await message.answer(text, parse_mode="HTML", reply_markup=get_coin_rate_inline_keyboard())
+    await message.answer(text, parse_mode="HTML", reply_markup=get_add_book_keyboard())
+    # State'ni tozalamaymiz, chunki kitob qo'shish kerak
 
-@dp.callback_query(F.data.startswith("rate_"))
-async def process_rate_callback(callback: types.CallbackQuery, state: FSMContext):
-    rate_val = callback.data.split("_")[1]
-    
-    # Agar "Boshqa summa" bosilsa
-    if rate_val == "custom":
-        await callback.message.edit_text("✍️ <b>Iltimos, 1 ta BiligCoin uchun summani raqamlarda kiriting:</b>\n<i>(Masalan: 2000)</i>", parse_mode="HTML")
-        await state.set_state(ParentSettings.waiting_for_custom_rate)
+@dp.callback_query(F.data == "add_book_text")
+async def add_book_text_handler(callback: types.CallbackQuery, state: FSMContext):
+    await callback.message.edit_text("✍️ <b>Matn orqali qo'shish</b>\n\nKitob nomi va muallifini quyidagi shablon asosida yozib yuboring:\n\n<i>Kitob nomi. Muallif</i>\n(Masalan: <b>Galaktikada bir kun. Sa'dullo Quronov</b>)", parse_mode="HTML")
+    await state.set_state(PlanCreation.waiting_for_book_text)
+    await callback.answer()
+
+@dp.message(PlanCreation.waiting_for_book_text)
+async def process_book_text(message: types.Message, state: FSMContext):
+    if "." not in message.text:
+        await message.answer("⚠️ Iltimos, shablonga rioya qiling. Kitob nomi va muallifini nuqta (.) bilan ajrating.\n<i>Masalan: O'tkan kunlar. Abdulla Qodiriy</i>", parse_mode="HTML")
         return
         
-    rate = int(rate_val)
-    # Bazaga saqlash
-    cursor.execute("UPDATE Users SET coin_rate = ? WHERE user_id = ?", (rate, callback.from_user.id))
+    title, author = message.text.split(".", 1)
+    data = await state.get_data()
+    plan_id = data.get('current_plan_id')
+    
+    cursor.execute("INSERT INTO Plan_Books (plan_id, title, author) VALUES (?, ?, ?)", (plan_id, title.strip(), author.strip()))
     conn.commit()
     
-    if rate == 0:
-        await callback.message.edit_text("✅ <b>Siz pul bilan rag'batlantirmaslik rejimini tanladingiz!</b>\n\nEndi farzandingiz faqat bilim, reyting va maxsus nishonlar uchun o'qiydi. Bu juda zo'r tanlov! 🧠", parse_mode="HTML")
-    else:
-        await callback.message.edit_text(f"✅ <b>Koin kursi muvaffaqiyatli o'rnatildi!</b>\n\nEndi 1 BiligCoin = {rate} so'm.", parse_mode="HTML")
-        
-    await callback.answer() # Tugma aylanishini to'xtatish
-
-@dp.message(ParentSettings.waiting_for_custom_rate)
-async def process_custom_rate(message: types.Message, state: FSMContext):
-    if not message.text.isdigit():
-        await message.answer("⚠️ Iltimos, faqat raqam kiriting! (Masalan: 1500)")
-        return
-        
-    rate = int(message.text)
-    cursor.execute("UPDATE Users SET coin_rate = ? WHERE user_id = ?", (rate, message.from_user.id))
-    conn.commit()
-    
-    await message.answer(f"✅ <b>Koin kursi muvaffaqiyatli o'rnatildi!</b>\n\nEndi 1 BiligCoin = {rate} so'm.", parse_mode="HTML")
-    await state.clear()
+    await message.answer(f"📚 <b>'{title.strip()}'</b> kitobi rejangizga qo'shildi!\n\nYana kitob qo'shasizmi?", parse_mode="HTML", reply_markup=get_add_book_keyboard())
 
 # ==========================================
 # 6. ASOSIY ISHGA TUSHIRISH FUNKSIYASI
