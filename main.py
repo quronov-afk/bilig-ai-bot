@@ -8,6 +8,7 @@ from aiogram.filters import CommandStart
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
+import google.generativeai as genai
 
 # ==========================================
 # 1. MA'LUMOTLAR BAZASI (SQLITE)
@@ -21,8 +22,6 @@ def init_db():
         user_id INTEGER PRIMARY KEY, role TEXT, name TEXT, balance_coins INTEGER DEFAULT 0, total_xp INTEGER DEFAULT 0, streak_days INTEGER DEFAULT 0, coin_rate INTEGER DEFAULT 500)''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS Family_Link (
         parent_id INTEGER, child_id INTEGER, mutolaa_id TEXT, UNIQUE(parent_id, child_id))''')
-    
-    # YANGI: Rejalar va Kitoblar jadvallari
     cursor.execute('''CREATE TABLE IF NOT EXISTS Reading_Plans (
         plan_id INTEGER PRIMARY KEY AUTOINCREMENT, parent_id INTEGER, name TEXT, prize TEXT, deadline TEXT, status TEXT DEFAULT 'active')''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS Plan_Books (
@@ -50,25 +49,19 @@ def run_dummy_server():
 # 3. MENYULAR (KEYBOARDS)
 # ==========================================
 def get_parent_keyboard():
-    kb = [
-        [KeyboardButton(text="📝 Reja tuzish"), KeyboardButton(text="📊 Farzandim natijalari")],
-        [KeyboardButton(text="⚙️ Koin kursi"), KeyboardButton(text="🎁 Mukofotlar")]
-    ]
+    kb = [[KeyboardButton(text="📝 Reja tuzish"), KeyboardButton(text="📊 Farzandim natijalari")],
+          [KeyboardButton(text="⚙️ Koin kursi"), KeyboardButton(text="🎁 Mukofotlar")]]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
 def get_child_keyboard():
-    kb = [
-        [KeyboardButton(text="📖 Kitob o'qish")],
-        [KeyboardButton(text="👤 Mening Qahramonim"), KeyboardButton(text="🏆 Reyting")]
-    ]
+    kb = [[KeyboardButton(text="📖 Kitob o'qish")],
+          [KeyboardButton(text="👤 Mening Qahramonim"), KeyboardButton(text="🏆 Reyting")]]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
 def get_add_book_keyboard():
-    kb = [
-        [InlineKeyboardButton(text="👶 Yosh bo'yicha tavsiyalar", callback_data="add_book_age")],
-        [InlineKeyboardButton(text="✍️ Matn orqali qo'shish", callback_data="add_book_text")],
-        [InlineKeyboardButton(text="📸 Rasm orqali (AI Vision)", callback_data="add_book_photo")]
-    ]
+    kb = [[InlineKeyboardButton(text="👶 Yosh bo'yicha tavsiyalar", callback_data="add_book_age")],
+          [InlineKeyboardButton(text="✍️ Matn orqali qo'shish", callback_data="add_book_text")],
+          [InlineKeyboardButton(text="📸 Rasm orqali (AI Vision)", callback_data="add_book_photo")]]
     return InlineKeyboardMarkup(inline_keyboard=kb)
 
 # ==========================================
@@ -76,13 +69,12 @@ def get_add_book_keyboard():
 # ==========================================
 class Registration(StatesGroup): waiting_for_parent_code = State()
 class ParentSettings(StatesGroup): waiting_for_custom_rate = State()
-
-# YANGI: Reja tuzish holatlari
 class PlanCreation(StatesGroup):
     waiting_for_name = State()
     waiting_for_prize = State()
     waiting_for_deadline = State()
     waiting_for_book_text = State()
+    waiting_for_book_photo = State()
 
 # ==========================================
 # 5. TELEGRAM BOT MANTIG'I
@@ -90,6 +82,11 @@ class PlanCreation(StatesGroup):
 TOKEN = os.getenv("BOT_TOKEN")
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
+
+# Gemini AI sozlamalari
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+if GEMINI_API_KEY:
+    genai.configure(api_key=GEMINI_API_KEY)
 
 @dp.message(CommandStart())
 async def start_handler(message: types.Message, state: FSMContext):
@@ -143,7 +140,7 @@ async def process_parent_code(message: types.Message, state: FSMContext):
         await message.answer("Bunday kodga ega ota-ona topilmadi. Qaytadan kiriting:")
 
 # ==========================================
-# REJA TUZISH MANTIG'I (5.1-QISM)
+# REJA TUZISH MANTIG'I
 # ==========================================
 @dp.message(F.text == "📝 Reja tuzish")
 async def create_plan_start(message: types.Message, state: FSMContext):
@@ -159,7 +156,7 @@ async def plan_name_received(message: types.Message, state: FSMContext):
 @dp.message(PlanCreation.waiting_for_prize)
 async def plan_prize_received(message: types.Message, state: FSMContext):
     await state.update_data(plan_prize=message.text)
-    await message.answer("⏳ <b>Muddat (Deadline)</b>\n\nRejani qachongacha tugatish kerak?\n<i>(Masalan: '1 oyda', 'Yozgi ta'til oxirigacha', '31-Avgustgacha')</i>", parse_mode="HTML")
+    await message.answer("⏳ <b>Muddat (Deadline)</b>\n\nRejani qachongacha tugatish kerak?\n<i>(Masalan: '1 oyda', 'Yozgi ta'til oxirigacha')</i>", parse_mode="HTML")
     await state.set_state(PlanCreation.waiting_for_deadline)
 
 @dp.message(PlanCreation.waiting_for_deadline)
@@ -169,44 +166,82 @@ async def plan_deadline_received(message: types.Message, state: FSMContext):
     plan_prize = data['plan_prize']
     plan_deadline = message.text
     
-    # Rejani bazaga saqlaymiz
     cursor.execute("INSERT INTO Reading_Plans (parent_id, name, prize, deadline) VALUES (?, ?, ?, ?)",
                    (message.from_user.id, plan_name, plan_prize, plan_deadline))
     plan_id = cursor.lastrowid
     conn.commit()
     
     await state.update_data(current_plan_id=plan_id)
-    
-    text = (
-        f"✅ <b>Reja muvaffaqiyatli yaratildi!</b>\n\n"
-        f"📌 <b>Nom:</b> {plan_name}\n"
-        f"🎁 <b>Mukofot:</b> {plan_prize}\n"
-        f"⏳ <b>Muddat:</b> {plan_deadline}\n\n"
-        f"Endi bu rejaga kitoblar qo'shamiz. Qaysi usuldan foydalanasiz?"
-    )
-    await message.answer(text, parse_mode="HTML", reply_markup=get_add_book_keyboard())
-    # State'ni tozalamaymiz, chunki kitob qo'shish kerak
+    await message.answer(f"✅ <b>Reja muvaffaqiyatli yaratildi!</b>\n\nEndi bu rejaga kitoblar qo'shamiz. Qaysi usuldan foydalanasiz?", parse_mode="HTML", reply_markup=get_add_book_keyboard())
 
+# --- MATN ORQALI QO'SHISH ---
 @dp.callback_query(F.data == "add_book_text")
 async def add_book_text_handler(callback: types.CallbackQuery, state: FSMContext):
-    await callback.message.edit_text("✍️ <b>Matn orqali qo'shish</b>\n\nKitob nomi va muallifini quyidagi shablon asosida yozib yuboring:\n\n<i>Kitob nomi. Muallif</i>\n(Masalan: <b>Galaktikada bir kun. Sa'dullo Quronov</b>)", parse_mode="HTML")
+    await callback.message.edit_text("✍️ <b>Matn orqali qo'shish</b>\n\nKitob nomi va muallifini nuqta bilan ajratib yozing:\n<i>Masalan: O'tkan kunlar. Abdulla Qodiriy</i>", parse_mode="HTML")
     await state.set_state(PlanCreation.waiting_for_book_text)
     await callback.answer()
 
 @dp.message(PlanCreation.waiting_for_book_text)
 async def process_book_text(message: types.Message, state: FSMContext):
     if "." not in message.text:
-        await message.answer("⚠️ Iltimos, shablonga rioya qiling. Kitob nomi va muallifini nuqta (.) bilan ajrating.\n<i>Masalan: O'tkan kunlar. Abdulla Qodiriy</i>", parse_mode="HTML")
+        await message.answer("⚠️ Iltimos, kitob nomi va muallifini nuqta (.) bilan ajrating.")
         return
-        
     title, author = message.text.split(".", 1)
     data = await state.get_data()
     plan_id = data.get('current_plan_id')
-    
     cursor.execute("INSERT INTO Plan_Books (plan_id, title, author) VALUES (?, ?, ?)", (plan_id, title.strip(), author.strip()))
     conn.commit()
-    
     await message.answer(f"📚 <b>'{title.strip()}'</b> kitobi rejangizga qo'shildi!\n\nYana kitob qo'shasizmi?", parse_mode="HTML", reply_markup=get_add_book_keyboard())
+
+# --- RASM ORQALI QO'SHISH (GEMINI 3.6 FLASH VISION) ---
+@dp.callback_query(F.data == "add_book_photo")
+async def add_book_photo_handler(callback: types.CallbackQuery, state: FSMContext):
+    await callback.message.edit_text("📸 <b>Rasm orqali qo'shish</b>\n\nKitobning muqovasini (ustki qismini) rasmga olib yuboring. AI o'zi kitob nomi va muallifini aniqlaydi!", parse_mode="HTML")
+    await state.set_state(PlanCreation.waiting_for_book_photo)
+    await callback.answer()
+
+@dp.message(PlanCreation.waiting_for_book_photo, F.photo)
+async def process_book_photo(message: types.Message, state: FSMContext):
+    processing_msg = await message.answer("⏳ <i>Gemini 3.6 Flash rasmni tahlil qilmoqda... Iltimos kuting.</i>", parse_mode="HTML")
+    
+    try:
+        # Rasmni Telegramdan yuklab olish
+        photo = message.photo[-1]
+        file_info = await bot.get_file(photo.file_id)
+        downloaded_file = await bot.download_file(file_info.file_path)
+        image_data = downloaded_file.read()
+        
+        # Gemini 3.6 Flash modelini chaqirish
+        model = genai.GenerativeModel('gemini-3.6-flash')
+        prompt = "Bu kitob muqovasining rasmi. Menga faqat kitobning nomi va muallifini quyidagi formatda yozib ber: 'Kitob nomi. Muallif'. Boshqa hech qanday so'z qo'shma. Agar muallif ko'rinmasa, 'Noma'lum muallif' deb yoz."
+        
+        # Rasmni va matnni Gemini ga yuborish
+        contents = [
+            prompt,
+            {"mime_type": "image/jpeg", "data": image_data}
+        ]
+        
+        response = await model.generate_content_async(contents)
+        ai_result = response.text.strip()
+        
+        # Natijani ajratib olish
+        if "." in ai_result:
+            title, author = ai_result.split(".", 1)
+        else:
+            title = ai_result
+            author = "Noma'lum muallif"
+            
+        # Bazaga saqlash
+        data = await state.get_data()
+        plan_id = data.get('current_plan_id')
+        cursor.execute("INSERT INTO Plan_Books (plan_id, title, author) VALUES (?, ?, ?)", (plan_id, title.strip(), author.strip()))
+        conn.commit()
+        
+        await processing_msg.edit_text(f"✅ <b>AI muvaffaqiyatli aniqladi!</b>\n\n📚 <b>'{title.strip()}'</b> (Muallif: {author.strip()})\n\n<i>Kitob rejangizga qo'shildi! Yana kitob qo'shasizmi?</i>", parse_mode="HTML", reply_markup=get_add_book_keyboard())
+        
+    except Exception as e:
+        await processing_msg.edit_text("❌ Kechirasiz, rasmni o'qishda xatolik yuz berdi. Iltimos, qaytadan aniqroq rasmga olib yuboring yoki matn orqali qo'shing.", reply_markup=get_add_book_keyboard())
+        print(f"Gemini Error: {e}")
 
 # ==========================================
 # 6. ASOSIY ISHGA TUSHIRISH FUNKSIYASI
