@@ -29,13 +29,11 @@ def init_db():
     cursor.execute('''CREATE TABLE IF NOT EXISTS Plan_Books (
         book_id INTEGER PRIMARY KEY AUTOINCREMENT, plan_id INTEGER, title TEXT, author TEXT, status TEXT DEFAULT 'pending')''')
     
-    # YANGI: Kitoblarga o'qilgan sahifalar sonini qo'shamiz (Agar oldin ochilgan bo'lsa xato bermasligi uchun try-except)
     try:
         cursor.execute("ALTER TABLE Plan_Books ADD COLUMN pages_read INTEGER DEFAULT 0")
     except sqlite3.OperationalError:
-        pass # Ustun allaqachon mavjud
+        pass
         
-    # YANGI: Testlar jadvali
     cursor.execute('''CREATE TABLE IF NOT EXISTS Book_Tests (
         test_id INTEGER PRIMARY KEY AUTOINCREMENT, book_id INTEGER UNIQUE, questions_json TEXT)''')
     conn.commit()
@@ -368,7 +366,7 @@ async def process_book_photo(message: types.Message, state: FSMContext):
         await message.answer(f"❌ <b>Xatolik:</b> {str(e)}", parse_mode="HTML", reply_markup=get_parent_keyboard())
 
 # ==========================================
-# YANGI: OTA-ONA UCHUN FAOL REJALAR VA TEST TUZISH
+# OTA-ONA UCHUN FAOL REJALAR VA TEST TUZISH
 # ==========================================
 async def show_parent_plans(message_or_callback, user_id):
     cursor.execute("SELECT plan_id, name, prize, deadline FROM Reading_Plans WHERE parent_id = ? AND status = 'active'", (user_id,))
@@ -418,11 +416,21 @@ async def show_plan_details(callback: types.CallbackQuery):
     for b in books:
         kb.append([InlineKeyboardButton(text=f"📘 {b[1]}", callback_data=f"showbook_{b[0]}")])
         
+    kb.append([InlineKeyboardButton(text="🗑 Rejani o'chirish", callback_data=f"delplan_{plan_id}")])
     kb.append([InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_plans_main")])
     
     text = f"🎯 <b>{plan[0]}</b>\n🎁 Mukofot: {plan[1]}\n⏳ Muddat: {plan[2]}\n\n📚 <b>Kitoblar:</b>"
     await callback.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
     await callback.answer()
+
+@dp.callback_query(F.data.startswith("delplan_"))
+async def delete_plan_handler(callback: types.CallbackQuery):
+    plan_id = int(callback.data.split("_")[1])
+    cursor.execute("DELETE FROM Plan_Books WHERE plan_id = ?", (plan_id,))
+    cursor.execute("DELETE FROM Reading_Plans WHERE plan_id = ?", (plan_id,))
+    conn.commit()
+    await callback.answer("✅ Reja va uning kitoblari o'chirildi!", show_alert=True)
+    await show_parent_plans(callback, callback.from_user.id)
 
 @dp.callback_query(F.data.startswith("showbook_"))
 async def show_book_details(callback: types.CallbackQuery):
@@ -442,7 +450,7 @@ async def show_book_details(callback: types.CallbackQuery):
     await callback.answer()
 
 # ==========================================
-# YANGI: AI TEST TUZISH MANTIG'I (OTA-ONA)
+# AI TEST TUZISH MANTIG'I (OTA-ONA)
 # ==========================================
 @dp.callback_query(F.data.startswith("aitest_"))
 async def ask_for_test_photo(callback: types.CallbackQuery, state: FSMContext):
@@ -469,7 +477,6 @@ async def generate_ai_test(message: types.Message, state: FSMContext):
         downloaded_file = await bot.download_file(file_info.file_path)
         image_data = downloaded_file.read()
         
-        # AI ga test tuzish bo'yicha qat'iy PROMPT
         prompt = """Bu bolalar kitobining sahifasi. Shu matn asosida bolalar uchun 5 ta oddiy va qiziqarli test savoli tuz. 
         Har bir savolda 3 ta variant (A, B, C) bo'lsin. 
         Natijani FAQAT quyidagi JSON formatida qaytar, boshqa hech qanday so'z qo'shma:
@@ -481,18 +488,15 @@ async def generate_ai_test(message: types.Message, state: FSMContext):
         contents = [prompt, {"mime_type": "image/jpeg", "data": image_data}]
         response = await model.generate_content_async(contents)
         
-        # JSON ni tozalab olish
         ai_result = response.text.strip()
         if ai_result.startswith("```json"):
             ai_result = ai_result[7:-3].strip()
             
-        # JSON to'g'riligini tekshirish
         json.loads(ai_result) 
         
         data = await state.get_data()
         book_id = data.get('test_book_id')
         
-        # Bazaga saqlash
         cursor.execute("INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)", (book_id, ai_result))
         conn.commit()
         
@@ -506,7 +510,7 @@ async def generate_ai_test(message: types.Message, state: FSMContext):
         await state.clear()
 
 # ==========================================
-# YANGI: FARZAND UCHUN KITOB O'QISH MENYUSI
+# FARZAND UCHUN KITOB O'QISH MENYUSI
 # ==========================================
 async def show_child_books(message_or_callback, user_id):
     cursor.execute("SELECT parent_id FROM Family_Link WHERE child_id = ?", (user_id,))
@@ -531,15 +535,25 @@ async def show_child_books(message_or_callback, user_id):
         
     kb = []
     text = "🦸‍♂️ <b>Qahramon! Ota-onang senga ajoyib reja tuzgan.</b>\n\n"
+    has_books = False
+    
     for p in plans:
-        text += f"🎯 <b>{p[1]}</b> (Mukofot: {p[2]})\n"
         cursor.execute("SELECT book_id, title, pages_read FROM Plan_Books WHERE plan_id = ?", (p[0],))
         books = cursor.fetchall()
-        for b in books:
-            kb.append([InlineKeyboardButton(text=f"📘 {b[1]} ({b[2]} bet)", callback_data=f"cread_{b[0]}")])
+        
+        if books:
+            text += f"🎯 <b>{p[1]}</b> (Mukofot: {p[2]})\n"
+            for b in books:
+                kb.append([InlineKeyboardButton(text=f"📘 {b[1]} ({b[2]} bet)", callback_data=f"cread_{b[0]}")])
+                has_books = True
+            text += "\n"
             
-    text += "\n👇 Qaysi kitobni o'qishni davom ettiramiz?"
-    markup = InlineKeyboardMarkup(inline_keyboard=kb)
+    if not has_books:
+        text = "Ota-onangiz reja tuzgan, lekin unga hali kitob qo'shmagan. Iltimos, ota-onangizga ayting, rejaga kitob qo'shsinlar! 😊"
+        markup = None
+    else:
+        text += "👇 Qaysi kitobni o'qishni davom ettiramiz?"
+        markup = InlineKeyboardMarkup(inline_keyboard=kb)
     
     if isinstance(message_or_callback, types.Message):
         await message_or_callback.answer(text, parse_mode="HTML", reply_markup=markup)
@@ -559,7 +573,6 @@ async def child_read_book_call(callback: types.CallbackQuery):
 async def child_book_action(callback: types.CallbackQuery):
     book_id = int(callback.data.split("_")[1])
     
-    # Test bor-yo'qligini tekshirish
     cursor.execute("SELECT test_id FROM Book_Tests WHERE book_id = ?", (book_id,))
     test_exists = cursor.fetchone()
     
