@@ -39,7 +39,7 @@ def init_db():
     conn.commit()
 
 # ==========================================
-# 2. DUMMY HTTP SERVER (RENDER UCHUN)
+# 2. DUMMY HTTP SERVER
 # ==========================================
 class HealthCheckHandler(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -90,19 +90,30 @@ dp = Dispatcher()
 async def start_handler(message: types.Message, state: FSMContext):
     await state.clear()
     
-    # 1. Foydalanuvchini bazadan qidiramiz
     cursor.execute("SELECT role FROM Users WHERE user_id = ?", (message.from_user.id,))
     user = cursor.fetchone()
     
-    # Agar u oldin ro'yxatdan o'tgan bo'lsa, to'g'ridan-to'g'ri menyusini beramiz
     if user and user[0] == 'parent':
-        await message.answer("Asosiy menyuga xush kelibsiz, Ota-ona! 👨‍👩‍👦", reply_markup=get_parent_keyboard())
+        await message.answer(
+            "<b>Asosiy menyuga xush kelibsiz!</b> 👨‍👩‍👦\n\n"
+            "👇 <i>Quyidagi tugmalar orqali botni boshqaring:</i>\n"
+            "<b>📊 Farzandim natijalari</b> - O'qilgan kitoblar va ballarni ko'rish.\n"
+            "<b>⚙️ Koin kursi</b> - 1 ta BiligCoin necha so'mga tengligini belgilash.\n"
+            "<b>🎁 Mukofotlar</b> - Farzandingiz Koinlarga sotib olishi mumkin bo'lgan sovg'alarni qo'shish.",
+            parse_mode="HTML", reply_markup=get_parent_keyboard()
+        )
         return
     elif user and user[0] == 'child':
-        await message.answer("Asosiy menyuga xush kelibsiz, Qahramon! 🦸‍♂️🦸‍♀️", reply_markup=get_child_keyboard())
+        await message.answer(
+            "<b>Asosiy menyuga xush kelibsiz, Qahramon!</b> 🦸‍♂️🦸‍♀️\n\n"
+            "👇 <i>Quyidagi tugmalardan birini tanla:</i>\n"
+            "<b>📖 Kitob o'qish</b> - O'qishni boshlash va Koin ishlash.\n"
+            "<b>👤 Mening Qahramonim</b> - Yig'gan ballaring va Koinlaringni ko'rish.\n"
+            "<b>🏆 Reyting</b> - Boshqa o'quvchilar bilan bellashish.",
+            parse_mode="HTML", reply_markup=get_child_keyboard()
+        )
         return
 
-    # Agar yangi bo'lsa, bazaga qo'shamiz va tanlov beramiz
     cursor.execute("INSERT OR IGNORE INTO Users (user_id, name) VALUES (?, ?)", 
                    (message.from_user.id, message.from_user.full_name))
     conn.commit()
@@ -112,7 +123,12 @@ async def start_handler(message: types.Message, state: FSMContext):
         [KeyboardButton(text="👦👧 Men O'quvchiman")]
     ]
     keyboard = ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
-    await message.answer("Bilig AI - Aqlli kitobxonlar dunyosiga xush kelibsiz!\nKim bo'lib kirmoqchisiz?", reply_markup=keyboard)
+    await message.answer(
+        "👋 <b>Bilig AI - Aqlli kitobxonlar dunyosiga xush kelibsiz!</b>\n\n"
+        "Bu bot orqali kitob o'qish qiziqarli o'yinga aylanadi. Bolalar kitob o'qib virtual tangalar (Koinlar) yig'adi, ota-onalar esa bu tangalarni haqiqiy sovg'alarga almashtirib berishadi.\n\n"
+        "<i>Iltimos, kim bo'lib kirmoqchi ekanligingizni tanlang:</i>", 
+        parse_mode="HTML", reply_markup=keyboard
+    )
 
 @dp.message(F.text == "👨‍👩‍👦 Men Ota-onaman")
 async def parent_handler(message: types.Message):
@@ -120,14 +136,29 @@ async def parent_handler(message: types.Message):
     conn.commit()
     
     parent_code = f"BLG-{str(message.from_user.id)[-4:]}"
-    await message.answer(f"Siz Ota-ona sifatida ro'yxatdan o'tdingiz! ✅\n\nFarzandingiz ulanishi uchun kodingiz: <b>{parent_code}</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    
+    instruction_text = (
+        "🎉 <b>Tabriklaymiz! Siz Ota-ona sifatida ro'yxatdan o'tdingiz!</b>\n\n"
+        "Sizning asosiy vazifangiz — farzandingizga motivatsiya berish. \n"
+        "<b>Nima qilish kerak?</b>\n"
+        "1️⃣ <b>Koin kursi:</b> 1 ta BiligCoin necha pulga tengligini belgilang.\n"
+        "2️⃣ <b>Mukofotlar:</b> Farzandingiz qanday sovg'alar yutib olishi mumkinligini kiriting (Masalan: 'Parkka borish' - 100 Koin).\n"
+        "3️⃣ <b>Tasdiqlash:</b> Farzandingiz kitob o'qiganini tasdiqlang va unga Koin bering.\n\n"
+        f"Farzandingiz botga ulanishi uchun unga shu kodni bering: <b>{parent_code}</b>"
+    )
+    
+    await message.answer(instruction_text, parse_mode="HTML", reply_markup=get_parent_keyboard())
 
 @dp.message(F.text == "👦👧 Men O'quvchiman")
 async def child_handler(message: types.Message, state: FSMContext):
     cursor.execute("UPDATE Users SET role = 'child' WHERE user_id = ?", (message.from_user.id,))
     conn.commit()
     
-    await message.answer("Siz O'quvchi sifatida ro'yxatdan o'tdingiz! 👦👧\n\nIltimos, ota-onangiz bergan kodni kiriting (masalan, BLG-1234):", reply_markup=types.ReplyKeyboardRemove())
+    await message.answer(
+        "Siz O'quvchi sifatida ro'yxatdan o'tdingiz! 👦👧\n\n"
+        "Iltimos, ota-onangiz bergan kodni kiriting (masalan, BLG-1234):", 
+        reply_markup=types.ReplyKeyboardRemove()
+    )
     await state.set_state(Registration.waiting_for_parent_code)
 
 @dp.message(Registration.waiting_for_parent_code)
@@ -150,8 +181,18 @@ async def process_parent_code(message: types.Message, state: FSMContext):
             cursor.execute("INSERT INTO Family_Link (parent_id, child_id) VALUES (?, ?)", (parent_id, child_id))
             conn.commit()
             
-            await message.answer("Tabriklaymiz! Ota-onangiz bilan bog'landingiz! 🎉\n\nEndi kitob o'qishni boshlashingiz mumkin.", reply_markup=get_child_keyboard())
-            await bot.send_message(parent_id, f"Farzandingiz ({message.from_user.full_name}) profilingizga ulandi! ✅")
+            child_instruction = (
+                "🎉 <b>Tabriklaymiz! Ota-onangiz bilan bog'landingiz!</b>\n\n"
+                "Seni <b>Bilig AI</b> qahramonlar dunyosi kutmoqda! 🦸‍♂️🦸‍♀️\n\n"
+                "👇 <b>Qanday qilib tanga (Koin) ishlash mumkin?</b>\n"
+                "1️⃣ <b>📖 Kitob o'qish</b> tugmasini bos va o'qiyotgan kitobingni rasmga olib yubor.\n"
+                "2️⃣ O'qishni tugatgach, yana rasm yubor.\n"
+                "3️⃣ Ota-onang tasdiqlagach, sen Koin (🪙) ishlaysan!\n\n"
+                "Yig'ilgan Koinlarni ota-onangdan haqiqiy sovg'alarga almashtirib olishing mumkin! Qani, o'qishni boshladikmi?"
+            )
+            
+            await message.answer(child_instruction, parse_mode="HTML", reply_markup=get_child_keyboard())
+            await bot.send_message(parent_id, f"Farzandingiz ({message.from_user.full_name}) profilingizga ulandi! ✅\nEndi u kitob o'qishni boshlashi mumkin.")
             
         except sqlite3.IntegrityError:
             await message.answer("Siz allaqachon bu ota-onaga ulangansiz!", reply_markup=get_child_keyboard())
