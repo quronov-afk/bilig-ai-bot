@@ -3,7 +3,7 @@ import sqlite3
 import asyncio
 import threading
 import traceback
-import base64
+import json
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import CommandStart
@@ -28,6 +28,16 @@ def init_db():
         plan_id INTEGER PRIMARY KEY AUTOINCREMENT, parent_id INTEGER, name TEXT, prize TEXT, deadline TEXT, status TEXT DEFAULT 'active')''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS Plan_Books (
         book_id INTEGER PRIMARY KEY AUTOINCREMENT, plan_id INTEGER, title TEXT, author TEXT, status TEXT DEFAULT 'pending')''')
+    
+    # YANGI: Kitoblarga o'qilgan sahifalar sonini qo'shamiz (Agar oldin ochilgan bo'lsa xato bermasligi uchun try-except)
+    try:
+        cursor.execute("ALTER TABLE Plan_Books ADD COLUMN pages_read INTEGER DEFAULT 0")
+    except sqlite3.OperationalError:
+        pass # Ustun allaqachon mavjud
+        
+    # YANGI: Testlar jadvali
+    cursor.execute('''CREATE TABLE IF NOT EXISTS Book_Tests (
+        test_id INTEGER PRIMARY KEY AUTOINCREMENT, book_id INTEGER UNIQUE, questions_json TEXT)''')
     conn.commit()
 
 # ==========================================
@@ -51,16 +61,15 @@ def run_dummy_server():
 # 3. MENYULAR (KEYBOARDS)
 # ==========================================
 def get_parent_keyboard():
-    kb = [[KeyboardButton(text="📝 Mutolaa rejasini tuzish"), KeyboardButton(text="📊 Farzandim natijalari")],
-          [KeyboardButton(text="🎁 Mukofotlar")]]
+    kb = [[KeyboardButton(text="📝 Mutolaa rejasini tuzish"), KeyboardButton(text="📚 Faol rejalarim")],
+          [KeyboardButton(text="📊 Farzandim natijalari"), KeyboardButton(text="🎁 Mukofotlar")]]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
 def get_child_keyboard():
     kb = [[KeyboardButton(text="📖 Kitob o'qish")],
-          [KeyboardButton(text="👤 Mening Qahramonim"), KeyboardButton(text="🏆 Reyting")]]
+          [KeyboardButton(text="🎁 Sovrinlarim"), KeyboardButton(text="🏆 Reyting")]]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
-# YANGI: Global Bekor qilish tugmasi
 def get_cancel_keyboard():
     return ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="❌ Bekor qilish")]], resize_keyboard=True)
 
@@ -68,7 +77,7 @@ def get_add_book_keyboard():
     kb = [[InlineKeyboardButton(text="👶 Yosh bo'yicha tavsiyalar", callback_data="add_book_age")],
           [InlineKeyboardButton(text="✍️ Matn orqali qo'shish", callback_data="add_book_text")],
           [InlineKeyboardButton(text="📸 Rasm orqali (AI Vision)", callback_data="add_book_photo")],
-          [InlineKeyboardButton(text="✅ Rejani yakunlash", callback_data="finish_plan")]] # YANGI TUGMA
+          [InlineKeyboardButton(text="✅ Rejani yakunlash", callback_data="finish_plan")]]
     return InlineKeyboardMarkup(inline_keyboard=kb)
 
 def get_rewards_main_keyboard():
@@ -101,6 +110,10 @@ class PlanCreation(StatesGroup):
     waiting_for_deadline = State()
     waiting_for_book_text = State()
     waiting_for_book_photo = State()
+class AITestCreation(StatesGroup): waiting_for_page_photo = State()
+class ChildReading(StatesGroup):
+    waiting_for_page_photo = State()
+    waiting_for_audio = State()
 
 # ==========================================
 # 5. TELEGRAM BOT MANTIG'I
@@ -113,7 +126,6 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
 
-# YANGI: Global Bekor qilish funksiyasi
 @dp.message(F.text == "❌ Bekor qilish")
 async def cancel_handler(message: types.Message, state: FSMContext):
     await state.clear()
@@ -213,10 +225,6 @@ async def rewards_bilig_rate_callback(callback: types.CallbackQuery):
     await callback.message.edit_text(text, parse_mode="HTML", reply_markup=get_bilig_rate_inline_keyboard())
     await callback.answer()
 
-@dp.callback_query(F.data == "rewards_store_edit")
-async def rewards_store_callback(callback: types.CallbackQuery):
-    await callback.answer("Tez kunda! Bu bo'lim orqali farzandingiz uchun maxsus sovg'alar do'konini yaratasiz.", show_alert=True)
-
 @dp.callback_query(F.data.startswith("rate_"))
 async def process_rate_callback(callback: types.CallbackQuery, state: FSMContext):
     rate_val = callback.data.split("_")[1]
@@ -255,7 +263,6 @@ async def create_plan_start(message: types.Message, state: FSMContext):
     text = (
         "📝 <b>Mutolaa rejasi nima?</b>\n\n"
         "Bu farzandingiz uchun maxsus <b>'Kitobxonlik marafoni'</b> dir. Siz unga o'qilishi kerak bo'lgan kitoblarni, muddatni va oxirida beriladigan Katta Mukofotni belgilaysiz.\n\n"
-        "<i>Bu nima beradi?</i> Bola maqsadsiz emas, balki aniq bir marra (masalan, Velosiped yutish) sari intiladi.\n\n"
         "👇 <b>1-qadam:</b> Rejaga qanday nom berasiz?\n"
         "<i>(Masalan: 'Yozgi ta'til mutolaasi', 'Tug'ilgan kun sovg'asi uchun')</i>"
     )
@@ -265,23 +272,13 @@ async def create_plan_start(message: types.Message, state: FSMContext):
 @dp.message(PlanCreation.waiting_for_name)
 async def plan_name_received(message: types.Message, state: FSMContext):
     await state.update_data(plan_name=message.text)
-    text = (
-        "🎁 <b>2-qadam: Katta Mukofot!</b>\n\n"
-        "Bu reja to'liq tugatilganda farzandingiz qanday katta sovg'a oladi?\n"
-        "<i>(Masalan: 'Velosiped', 'Parkka borish', '5000 🟡')</i>"
-    )
-    await message.answer(text, parse_mode="HTML", reply_markup=get_cancel_keyboard())
+    await message.answer("🎁 <b>2-qadam: Katta Mukofot!</b>\n\nBu reja to'liq tugatilganda farzandingiz qanday katta sovg'a oladi?\n<i>(Masalan: 'Velosiped', 'Parkka borish', '5000 🟡')</i>", parse_mode="HTML", reply_markup=get_cancel_keyboard())
     await state.set_state(PlanCreation.waiting_for_prize)
 
 @dp.message(PlanCreation.waiting_for_prize)
 async def plan_prize_received(message: types.Message, state: FSMContext):
     await state.update_data(plan_prize=message.text)
-    text = (
-        "⏳ <b>3-qadam: Muddat (Deadline)</b>\n\n"
-        "Rejani qachongacha tugatish kerak?\n"
-        "<i>(Masalan: '1 oyda', '31-Avgustgacha')</i>"
-    )
-    await message.answer(text, parse_mode="HTML", reply_markup=get_cancel_keyboard())
+    await message.answer("⏳ <b>3-qadam: Muddat (Deadline)</b>\n\nRejani qachongacha tugatish kerak?\n<i>(Masalan: '1 oyda', '31-Avgustgacha')</i>", parse_mode="HTML", reply_markup=get_cancel_keyboard())
     await state.set_state(PlanCreation.waiting_for_deadline)
 
 @dp.message(PlanCreation.waiting_for_deadline)
@@ -297,25 +294,15 @@ async def plan_deadline_received(message: types.Message, state: FSMContext):
     conn.commit()
     
     await state.update_data(current_plan_id=plan_id)
-    
-    # Bosh menyuni qaytaramiz (chunki pastda inline tugmalar chiqadi)
     await message.answer(f"✅ <b>Reja muvaffaqiyatli yaratildi!</b>\n\n📌 <b>Nom:</b> {plan_name}\n🎁 <b>Mukofot:</b> {plan_prize}\n⏳ <b>Muddat:</b> {plan_deadline}", parse_mode="HTML", reply_markup=get_parent_keyboard())
-    
-    text = (
-        f"📚 <b>Endi bu rejaga kitoblar qo'shamiz!</b>\n"
-        f"Siz qo'shgan kitoblar farzandingizning botida ro'yxat bo'lib ko'rinadi. Xohlasangiz 1 ta, xohlasangiz 10 ta kitob qo'shishingiz mumkin.\n\n"
-        f"👇 <i>Qaysi usuldan foydalanasiz?</i>"
-    )
-    await message.answer(text, parse_mode="HTML", reply_markup=get_add_book_keyboard())
+    await message.answer("📚 <b>Endi bu rejaga kitoblar qo'shamiz!</b>\n👇 <i>Qaysi usuldan foydalanasiz?</i>", parse_mode="HTML", reply_markup=get_add_book_keyboard())
 
-# --- REJANI YAKUNLASH TUGMASI ---
 @dp.callback_query(F.data == "finish_plan")
 async def finish_plan_handler(callback: types.CallbackQuery, state: FSMContext):
     await state.clear()
     await callback.message.edit_text("✅ <b>Mutolaa rejasi to'liq saqlandi va yopildi!</b>\n\nFarzandingiz endi bu kitoblarni o'z menyusida ko'radi va o'qishni boshlashi mumkin.", parse_mode="HTML")
     await callback.answer()
 
-# --- MATN ORQALI QO'SHISH ---
 @dp.callback_query(F.data == "add_book_text")
 async def add_book_text_handler(callback: types.CallbackQuery, state: FSMContext):
     await callback.message.delete()
@@ -337,7 +324,6 @@ async def process_book_text(message: types.Message, state: FSMContext):
     await message.answer(f"📚 <b>'{title.strip()}'</b> kitobi rejangizga qo'shildi!", parse_mode="HTML", reply_markup=get_parent_keyboard())
     await message.answer("Yana kitob qo'shasizmi yoki rejani yakunlaysizmi?", reply_markup=get_add_book_keyboard())
 
-# --- RASM ORQALI QO'SHISH (GEMINI AI VISION) ---
 @dp.callback_query(F.data == "add_book_photo")
 async def add_book_photo_handler(callback: types.CallbackQuery, state: FSMContext):
     await callback.message.delete()
@@ -348,11 +334,9 @@ async def add_book_photo_handler(callback: types.CallbackQuery, state: FSMContex
 @dp.message(PlanCreation.waiting_for_book_photo, F.photo)
 async def process_book_photo(message: types.Message, state: FSMContext):
     processing_msg = await message.answer("⏳ <i>Gemini AI rasmni tahlil qilmoqda... Iltimos kuting.</i>", parse_mode="HTML")
-    
     if not GEMINI_API_KEY:
-        await processing_msg.edit_text("❌ GEMINI_API_KEY topilmadi. Iltimos Render sozlamalarini tekshiring.")
+        await processing_msg.edit_text("❌ GEMINI_API_KEY topilmadi.")
         return
-
     try:
         photo = message.photo[-1]
         file_info = await bot.get_file(photo.file_id)
@@ -361,7 +345,6 @@ async def process_book_photo(message: types.Message, state: FSMContext):
         
         model = genai.GenerativeModel('gemini-1.5-flash')
         prompt = "Bu kitob muqovasining rasmi. Menga faqat kitobning nomi va muallifini quyidagi formatda yozib ber: 'Kitob nomi. Muallif'. Boshqa hech qanday so'z qo'shma. Agar muallif ko'rinmasa, 'Noma'lum muallif' deb yoz."
-        
         contents = [prompt, {"mime_type": "image/jpeg", "data": image_data}]
         response = await model.generate_content_async(contents)
         ai_result = response.text.strip()
@@ -380,14 +363,225 @@ async def process_book_photo(message: types.Message, state: FSMContext):
         await processing_msg.delete()
         await message.answer(f"✅ <b>AI muvaffaqiyatli aniqladi!</b>\n\n📚 <b>'{title.strip()}'</b> (Muallif: {author.strip()})\n\n<i>Kitob rejangizga qo'shildi!</i>", parse_mode="HTML", reply_markup=get_parent_keyboard())
         await message.answer("Yana kitob qo'shasizmi yoki rejani yakunlaysizmi?", reply_markup=get_add_book_keyboard())
+    except Exception as e:
+        await processing_msg.delete()
+        await message.answer(f"❌ <b>Xatolik:</b> {str(e)}", parse_mode="HTML", reply_markup=get_parent_keyboard())
+
+# ==========================================
+# YANGI: OTA-ONA UCHUN FAOL REJALAR VA TEST TUZISH
+# ==========================================
+async def show_parent_plans(message_or_callback, user_id):
+    cursor.execute("SELECT plan_id, name, prize, deadline FROM Reading_Plans WHERE parent_id = ? AND status = 'active'", (user_id,))
+    plans = cursor.fetchall()
+    
+    if not plans:
+        text = "Sizda hozircha faol rejalar yo'q. Yangi reja tuzish tugmasidan foydalaning."
+        if isinstance(message_or_callback, types.Message):
+            await message_or_callback.answer(text, reply_markup=get_parent_keyboard())
+        else:
+            await message_or_callback.message.edit_text(text)
+        return
+        
+    kb = []
+    for p in plans:
+        cursor.execute("SELECT COUNT(*) FROM Plan_Books WHERE plan_id = ?", (p[0],))
+        b_count = cursor.fetchone()[0]
+        kb.append([InlineKeyboardButton(text=f"🎯 {p[1]} ({b_count} ta kitob)", callback_data=f"showplan_{p[0]}")])
+        
+    text = "📚 <b>Sizning faol rejalaringiz.</b>\nQaysi birini ko'rmoqchisiz?"
+    markup = InlineKeyboardMarkup(inline_keyboard=kb)
+    
+    if isinstance(message_or_callback, types.Message):
+        await message_or_callback.answer(text, parse_mode="HTML", reply_markup=markup)
+    else:
+        await message_or_callback.message.edit_text(text, parse_mode="HTML", reply_markup=markup)
+
+@dp.message(F.text == "📚 Faol rejalarim")
+async def parent_active_plans_msg(message: types.Message):
+    await show_parent_plans(message, message.from_user.id)
+
+@dp.callback_query(F.data == "parent_plans_main")
+async def parent_active_plans_call(callback: types.CallbackQuery):
+    await show_parent_plans(callback, callback.from_user.id)
+    await callback.answer()
+
+@dp.callback_query(F.data.startswith("showplan_"))
+async def show_plan_details(callback: types.CallbackQuery):
+    plan_id = int(callback.data.split("_")[1])
+    cursor.execute("SELECT name, prize, deadline FROM Reading_Plans WHERE plan_id = ?", (plan_id,))
+    plan = cursor.fetchone()
+    
+    cursor.execute("SELECT book_id, title, author FROM Plan_Books WHERE plan_id = ?", (plan_id,))
+    books = cursor.fetchall()
+    
+    kb = []
+    for b in books:
+        kb.append([InlineKeyboardButton(text=f"📘 {b[1]}", callback_data=f"showbook_{b[0]}")])
+        
+    kb.append([InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_plans_main")])
+    
+    text = f"🎯 <b>{plan[0]}</b>\n🎁 Mukofot: {plan[1]}\n⏳ Muddat: {plan[2]}\n\n📚 <b>Kitoblar:</b>"
+    await callback.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
+    await callback.answer()
+
+@dp.callback_query(F.data.startswith("showbook_"))
+async def show_book_details(callback: types.CallbackQuery):
+    book_id = int(callback.data.split("_")[1])
+    cursor.execute("SELECT plan_id, title, author, pages_read FROM Plan_Books WHERE book_id = ?", (book_id,))
+    book = cursor.fetchone()
+    plan_id = book[0]
+    
+    kb = [
+        [InlineKeyboardButton(text="📝 AI Test tuzish (Rasm orqali)", callback_data=f"aitest_{book_id}")],
+        [InlineKeyboardButton(text="🗑 Kitobni o'chirish", callback_data=f"delbook_{book_id}")],
+        [InlineKeyboardButton(text="🔙 Orqaga", callback_data=f"showplan_{plan_id}")]
+    ]
+    
+    text = f"📘 <b>{book[1]}</b>\n✍️ Muallif: {book[2]}\n📖 Farzandingiz o'qidi: {book[3]} bet"
+    await callback.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
+    await callback.answer()
+
+# ==========================================
+# YANGI: AI TEST TUZISH MANTIG'I (OTA-ONA)
+# ==========================================
+@dp.callback_query(F.data.startswith("aitest_"))
+async def ask_for_test_photo(callback: types.CallbackQuery, state: FSMContext):
+    book_id = int(callback.data.split("_")[1])
+    await state.update_data(test_book_id=book_id)
+    await callback.message.delete()
+    
+    text = (
+        "📸 <b>AI Test tuzish</b>\n\n"
+        "Kitobning ixtiyoriy sahifasini rasmga olib yuboring. "
+        "AI ushbu sahifa matnini o'qib, farzandingiz uchun 5 ta qiziqarli test savoli tuzadi."
+    )
+    await bot.send_message(callback.from_user.id, text, parse_mode="HTML", reply_markup=get_cancel_keyboard())
+    await state.set_state(AITestCreation.waiting_for_page_photo)
+    await callback.answer()
+
+@dp.message(AITestCreation.waiting_for_page_photo, F.photo)
+async def generate_ai_test(message: types.Message, state: FSMContext):
+    processing_msg = await message.answer("⏳ <i>Gemini AI sahifani o'qib, test tuzmoqda... Iltimos kuting.</i>", parse_mode="HTML")
+    
+    try:
+        photo = message.photo[-1]
+        file_info = await bot.get_file(photo.file_id)
+        downloaded_file = await bot.download_file(file_info.file_path)
+        image_data = downloaded_file.read()
+        
+        # AI ga test tuzish bo'yicha qat'iy PROMPT
+        prompt = """Bu bolalar kitobining sahifasi. Shu matn asosida bolalar uchun 5 ta oddiy va qiziqarli test savoli tuz. 
+        Har bir savolda 3 ta variant (A, B, C) bo'lsin. 
+        Natijani FAQAT quyidagi JSON formatida qaytar, boshqa hech qanday so'z qo'shma:
+        [
+          {"question": "Savol matni?", "options": ["A) variant", "B) variant", "C) variant"], "answer": "A) variant"}
+        ]"""
+        
+        model = genai.GenerativeModel('gemini-1.5-flash')
+        contents = [prompt, {"mime_type": "image/jpeg", "data": image_data}]
+        response = await model.generate_content_async(contents)
+        
+        # JSON ni tozalab olish
+        ai_result = response.text.strip()
+        if ai_result.startswith("```json"):
+            ai_result = ai_result[7:-3].strip()
+            
+        # JSON to'g'riligini tekshirish
+        json.loads(ai_result) 
+        
+        data = await state.get_data()
+        book_id = data.get('test_book_id')
+        
+        # Bazaga saqlash
+        cursor.execute("INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)", (book_id, ai_result))
+        conn.commit()
+        
+        await processing_msg.delete()
+        await message.answer("✅ <b>AI Test muvaffaqiyatli tuzildi va bazaga saqlandi!</b>\n\nFarzandingiz ushbu kitobni o'qiyotganda testni yechib, qo'shimcha Bilig 🟡 olishi mumkin.", parse_mode="HTML", reply_markup=get_parent_keyboard())
+        await state.clear()
         
     except Exception as e:
-        error_traceback = traceback.format_exc()
-        error_msg = f"❌ <b>XATOLIK YUZ BERDI:</b>\n\n<code>{str(e)}</code>"
         await processing_msg.delete()
-        await message.answer(error_msg, parse_mode="HTML", reply_markup=get_parent_keyboard())
-        await message.answer("Iltimos, qaytadan urinib ko'ring yoki matn orqali qo'shing.", reply_markup=get_add_book_keyboard())
-        print(error_traceback)
+        await message.answer(f"❌ <b>Xatolik yuz berdi:</b>\n\nAI test tuza olmadi. Iltimos rasmni tiniqroq oling va qayta urinib ko'ring.\n<code>{str(e)}</code>", parse_mode="HTML", reply_markup=get_parent_keyboard())
+        await state.clear()
+
+# ==========================================
+# YANGI: FARZAND UCHUN KITOB O'QISH MENYUSI
+# ==========================================
+async def show_child_books(message_or_callback, user_id):
+    cursor.execute("SELECT parent_id FROM Family_Link WHERE child_id = ?", (user_id,))
+    link = cursor.fetchone()
+    if not link:
+        text = "Siz hali ota-onangizga ulanmagansiz! Iltimos kodni kiriting."
+        if isinstance(message_or_callback, types.Message):
+            await message_or_callback.answer(text)
+        return
+        
+    parent_id = link[0]
+    cursor.execute("SELECT plan_id, name, prize FROM Reading_Plans WHERE parent_id = ? AND status = 'active'", (parent_id,))
+    plans = cursor.fetchall()
+    
+    if not plans:
+        text = "Hozircha ota-onangiz sizga reja tuzmagan. Biroz kuting! 😊"
+        if isinstance(message_or_callback, types.Message):
+            await message_or_callback.answer(text)
+        else:
+            await message_or_callback.message.edit_text(text)
+        return
+        
+    kb = []
+    text = "🦸‍♂️ <b>Qahramon! Ota-onang senga ajoyib reja tuzgan.</b>\n\n"
+    for p in plans:
+        text += f"🎯 <b>{p[1]}</b> (Mukofot: {p[2]})\n"
+        cursor.execute("SELECT book_id, title, pages_read FROM Plan_Books WHERE plan_id = ?", (p[0],))
+        books = cursor.fetchall()
+        for b in books:
+            kb.append([InlineKeyboardButton(text=f"📘 {b[1]} ({b[2]} bet)", callback_data=f"cread_{b[0]}")])
+            
+    text += "\n👇 Qaysi kitobni o'qishni davom ettiramiz?"
+    markup = InlineKeyboardMarkup(inline_keyboard=kb)
+    
+    if isinstance(message_or_callback, types.Message):
+        await message_or_callback.answer(text, parse_mode="HTML", reply_markup=markup)
+    else:
+        await message_or_callback.message.edit_text(text, parse_mode="HTML", reply_markup=markup)
+
+@dp.message(F.text == "📖 Kitob o'qish")
+async def child_read_book_msg(message: types.Message):
+    await show_child_books(message, message.from_user.id)
+
+@dp.callback_query(F.data == "child_books_main")
+async def child_read_book_call(callback: types.CallbackQuery):
+    await show_child_books(callback, callback.from_user.id)
+    await callback.answer()
+
+@dp.callback_query(F.data.startswith("cread_"))
+async def child_book_action(callback: types.CallbackQuery):
+    book_id = int(callback.data.split("_")[1])
+    
+    # Test bor-yo'qligini tekshirish
+    cursor.execute("SELECT test_id FROM Book_Tests WHERE book_id = ?", (book_id,))
+    test_exists = cursor.fetchone()
+    
+    if test_exists:
+        test_btn = InlineKeyboardButton(text="📝 Testni ishlash (Bilig 🟡)", callback_data=f"take_test_{book_id}")
+    else:
+        test_btn = InlineKeyboardButton(text="🔒 Test (Hozircha mavjud emas)", callback_data="no_test_alert")
+        
+    kb = [
+        [InlineKeyboardButton(text="📸 Sahifani rasmga olib yuborish", callback_data=f"send_page_{book_id}")],
+        [InlineKeyboardButton(text="🎤 Audio xulosa yuborish", callback_data=f"send_audio_{book_id}")],
+        [test_btn],
+        [InlineKeyboardButton(text="🔙 Orqaga", callback_data="child_books_main")]
+    ]
+    
+    text = "Ajoyib tanlov! O'qishni boshla. To'xtagan joyingda menga sahifani rasmga olib yubor. Istasang, asar xulosasini so'zlab ber."
+    await callback.message.edit_text(text, reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
+    await callback.answer()
+
+@dp.callback_query(F.data == "no_test_alert")
+async def no_test_alert(callback: types.CallbackQuery):
+    await callback.answer("🔒 Ota-onangiz bu kitob uchun hali test tuzmagan. O'qishda davom eting!", show_alert=True)
 
 # ==========================================
 # 6. ASOSIY ISHGA TUSHIRISH FUNKSIYASI
