@@ -2,6 +2,7 @@ import os
 import sqlite3
 import asyncio
 import threading
+import traceback # XATONI ANIQ KO'RSATUVCHI KUTUBXONA
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import CommandStart
@@ -316,13 +317,19 @@ async def add_book_photo_handler(callback: types.CallbackQuery, state: FSMContex
 @dp.message(PlanCreation.waiting_for_book_photo, F.photo)
 async def process_book_photo(message: types.Message, state: FSMContext):
     processing_msg = await message.answer("⏳ <i>Gemini AI rasmni tahlil qilmoqda... Iltimos kuting.</i>", parse_mode="HTML")
+    
+    if not GEMINI_API_KEY:
+        await processing_msg.edit_text("❌ GEMINI_API_KEY topilmadi. Iltimos Render sozlamalarini tekshiring.")
+        return
+
     try:
         photo = message.photo[-1]
         file_info = await bot.get_file(photo.file_id)
         downloaded_file = await bot.download_file(file_info.file_path)
         image_data = downloaded_file.read()
         
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        # Siz aytgan aniq model nomini kiritdik
+        model = genai.GenerativeModel('gemini-3.6-flash')
         prompt = "Bu kitob muqovasining rasmi. Menga faqat kitobning nomi va muallifini quyidagi formatda yozib ber: 'Kitob nomi. Muallif'. Boshqa hech qanday so'z qo'shma. Agar muallif ko'rinmasa, 'Noma'lum muallif' deb yoz."
         
         contents = [prompt, {"mime_type": "image/jpeg", "data": image_data}]
@@ -341,9 +348,18 @@ async def process_book_photo(message: types.Message, state: FSMContext):
         conn.commit()
         
         await processing_msg.edit_text(f"✅ <b>AI muvaffaqiyatli aniqladi!</b>\n\n📚 <b>'{title.strip()}'</b> (Muallif: {author.strip()})\n\n<i>Kitob rejangizga qo'shildi! Yana kitob qo'shasizmi?</i>", parse_mode="HTML", reply_markup=get_add_book_keyboard())
+    
     except Exception as e:
-        await processing_msg.edit_text("❌ Kechirasiz, rasmni o'qishda xatolik yuz berdi. Iltimos, qaytadan aniqroq rasmga olib yuboring yoki matn orqali qo'shing.", reply_markup=get_add_book_keyboard())
-        print(f"Gemini Error: {e}")
+        # XATONI ANIQ KO'RSATUVCHI QISM
+        error_traceback = traceback.format_exc()
+        error_msg = (
+            f"❌ <b>XATOLIK YUZ BERDI:</b>\n\n"
+            f"<code>{str(e)}</code>\n\n"
+            f"<b>Diagnostika logi:</b>\n"
+            f"<code>{error_traceback[-800:]}</code>"
+        )
+        await processing_msg.edit_text(error_msg, parse_mode="HTML", reply_markup=get_add_book_keyboard())
+        print(error_traceback)
 
 # ==========================================
 # 6. ASOSIY ISHGA TUSHIRISH FUNKSIYASI
