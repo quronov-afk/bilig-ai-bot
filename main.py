@@ -7,11 +7,16 @@ import json
 from datetime import datetime, timedelta
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from aiogram import Bot, Dispatcher, types, F
-from aiogram.filters import CommandStart
+from aiogram.filters import CommandStart, Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 import google.generativeai as genai
+
+# ==========================================
+# LOYIHA MUALLIFI XAVFSIZLIK ID (RENDER ENV)
+# ==========================================
+OWNER_ID = int(os.getenv("OWNER_ID", "0"))
 
 # ==========================================
 # TAVSIYA ETILGAN ASARLAR MA'LUMOTLARI
@@ -253,6 +258,76 @@ def clean_json(text):
     return text.strip()
 
 # ==========================================
+# ADMIN STATISTIKA MATNINI GENERATSIYA QILISH
+# ==========================================
+def generate_admin_stats_text():
+    cursor.execute("SELECT COUNT(*) FROM Users")
+    total_users = cursor.fetchone()[0]
+
+    cursor.execute("SELECT COUNT(*) FROM Users WHERE role = 'parent'")
+    total_parents = cursor.fetchone()[0]
+
+    cursor.execute("SELECT COUNT(*) FROM Users WHERE role = 'child'")
+    total_children = cursor.fetchone()[0]
+
+    cursor.execute("SELECT COUNT(*) FROM Family_Link")
+    total_families = cursor.fetchone()[0]
+
+    cursor.execute("SELECT COUNT(*) FROM Reading_Plans")
+    total_plans = cursor.fetchone()[0]
+
+    cursor.execute("SELECT COUNT(*) FROM Reading_Plans WHERE status = 'completed'")
+    completed_plans = cursor.fetchone()[0]
+
+    cursor.execute("SELECT COUNT(*) FROM Plan_Books")
+    total_books = cursor.fetchone()[0]
+
+    cursor.execute("SELECT COUNT(*) FROM Plan_Books WHERE is_completed = 1")
+    completed_books = cursor.fetchone()[0]
+
+    cursor.execute("SELECT SUM(pages_read) FROM Plan_Books")
+    res_pages = cursor.fetchone()[0]
+    total_pages = res_pages if res_pages else 0
+
+    cursor.execute("SELECT SUM(balance_coins) FROM Users WHERE role = 'child'")
+    res_coins = cursor.fetchone()[0]
+    total_coins = res_coins if res_coins else 0
+
+    cursor.execute("SELECT COUNT(*) FROM Book_Tests")
+    total_tests = cursor.fetchone()[0]
+
+    cursor.execute("SELECT user_id, name, role FROM Users WHERE role IS NOT NULL ORDER BY user_id DESC LIMIT 5")
+    recent_users = cursor.fetchall()
+    recent_text = ""
+    for u in recent_users:
+        r_icon = "👨‍👩‍👦" if u[2] == 'parent' else ("👦👧" if u[2] == 'child' else "👤")
+        recent_text += f"• {r_icon} <b>{u[1]}</b> (ID: <code>{u[0]}</code>)\n"
+
+    if not recent_text:
+        recent_text = "• Hozircha foydalanuvchilar yo'q.\n"
+
+    now_str = datetime.now().strftime("%d.%m.%Y %H:%M")
+
+    text = (
+        f"👑 <b>LOYIHA MUALLIFI STATISTIKASI</b>\n"
+        f"<i>Bilig AI platformasi ko'rsatkichlari ({now_str})</i>\n\n"
+        f"👥 <b>FOYDALANUVCHILAR:</b>\n"
+        f"• Jami foydalanuvchilar: <b>{total_users} ta</b>\n"
+        f"  └ 👨‍👩‍👦 Ota-onalar: <b>{total_parents} ta</b>\n"
+        f"  └ 👦👧 O'quvchilar: <b>{total_children} ta</b>\n"
+        f"  └ 🔗 Bog'langan oilalar: <b>{total_families} ta</b>\n\n"
+        f"📖 <b>MUTOLAA VA KITOBLAR:</b>\n"
+        f"• Jami mutolaa rejalari: <b>{total_plans} ta</b> (Tugatilgan: {completed_plans})\n"
+        f"• Rejalardagi kitoblar: <b>{total_books} ta</b> (Tugatilgan: {completed_books})\n"
+        f"• 📚 Jami o'qilgan sahifalar: <b>{total_pages} bet</b>\n\n"
+        f"🟡 <b>FAOLLIK VA BILIG:</b>\n"
+        f"• Bolalardagi jami Biliglar: <b>{total_coins} 🟡</b>\n"
+        f"• AI orqali tuzilgan testlar: <b>{total_tests} ta</b>\n\n"
+        f"🆕 <b>Oxirgi a'zo bo'lganlar:</b>\n{recent_text}"
+    )
+    return text
+
+# ==========================================
 # 2. DUMMY HTTP SERVER
 # ==========================================
 class HealthCheckHandler(BaseHTTPRequestHandler):
@@ -389,6 +464,46 @@ async def cancel_handler(message: types.Message, state: FSMContext):
     else:
         kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
         await message.answer("🚫 Amaliyot bekor qilindi.", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
+
+# ==========================================
+# ADMIN STATISTIKA BUYRUG'I (/stats, /admin)
+# ==========================================
+@dp.message(Command("stats"))
+@dp.message(Command("admin"))
+async def admin_stats_handler(message: types.Message):
+    user_id = message.from_user.id
+    if OWNER_ID != 0 and user_id != OWNER_ID:
+        return  # Oddiy foydalanuvchiga hech narsa ko'rsatmaydi
+
+    stats_text = generate_admin_stats_text()
+    if OWNER_ID == 0:
+        stats_text += f"\n\n⚙️ <i>Eslatma: Xavfsizlik uchun Render.com'da Environment Variables qismiga <b>OWNER_ID={user_id}</b> o'zgaruvchisini qo'shing.</i>"
+
+    kb = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="🔄 Yangilash", callback_data="admin_refresh_stats")]
+    ])
+    await message.answer(stats_text, parse_mode="HTML", reply_markup=kb)
+
+@dp.callback_query(F.data == "admin_refresh_stats")
+async def refresh_admin_stats(callback: types.CallbackQuery):
+    user_id = callback.from_user.id
+    if OWNER_ID != 0 and user_id != OWNER_ID:
+        await callback.answer("Ruxsat berilmagan!", show_alert=True)
+        return
+        
+    stats_text = generate_admin_stats_text()
+    if OWNER_ID == 0:
+        stats_text += f"\n\n⚙️ <i>Eslatma: Xavfsizlik uchun Render.com'da Environment Variables qismiga <b>OWNER_ID={user_id}</b> o'zgaruvchisini qo'shing.</i>"
+
+    kb = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="🔄 Yangilash", callback_data="admin_refresh_stats")]
+    ])
+    
+    try:
+        await callback.message.edit_text(stats_text, parse_mode="HTML", reply_markup=kb)
+    except:
+        pass
+    await callback.answer("Statistika yangilandi!")
 
 # ==========================================
 # START VA YOPIQ TEST RUXSATI
