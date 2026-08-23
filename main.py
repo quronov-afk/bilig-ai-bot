@@ -196,6 +196,15 @@ RECOMMENDED_BOOKS = {
 
 MUTOLAA_NOTE = "\n\n💡 <i>Izoh: Agarda ushbu kitoblarni bosma shaklda topa olmasangiz, ularni 'Mutolaa' ilovasida elektron o'qish yoki tinglash shaklida topishingiz mumkin.</i>"
 
+WELCOME_TEXT = (
+    "👋 <b>Bilig AI ga xush kelibsiz!</b>\n\n"
+    "Ushbu bot bolalar yozuvchisi <b>Sa'dullo Quronov</b> tomonidan farzandiga kitob o'qitishda qiynalayotgan ota-onalarga yordam berish uchun yaratildi.\n\n"
+    "🎯 <b>Qanday ishlaydi?</b>\n"
+    "📖 <b>Bola o'qiydi</b> ➡️ 🤖 <b>AI tekshirib \"Bilig\" (🟡 oltin tanga) beradi</b> ➡️ 🎁 <b>Bola tangalariga siz belgilagan sovg'alarni oladi!</b>\n\n"
+    "Kitob o'qish endi urush-janjal emas, qiziqarli o'yin! 🚀\n\n"
+    "👇 <b>Boshlash uchun kimsiz?</b>"
+)
+
 # ==========================================
 # 1. MA'LUMOTLAR BAZASI (SQLITE)
 # ==========================================
@@ -397,7 +406,7 @@ async def start_handler(message: types.Message, state: FSMContext):
             await message.answer("<b>Asosiy menyuga xush kelibsiz, Qahramon!</b> 🦸‍♂️🦸‍♀️", parse_mode="HTML", reply_markup=get_child_keyboard())
         else:
             kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
-            await message.answer("👋 <b>Bilig AI - Aqlli kitobxonlar dunyosiga xush kelibsiz!</b>\n\n<i>Kim bo'lib kirmoqchisiz?</i>", parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
+            await message.answer(WELCOME_TEXT, parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
         return
 
     cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved) VALUES (?, ?, 0)", (message.from_user.id, message.from_user.full_name))
@@ -413,7 +422,7 @@ async def process_access_code(message: types.Message, state: FSMContext):
         conn.commit()
         await state.clear()
         kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
-        await message.answer("✅ <b>Kod qabul qilindi! Bilig AI ga xush kelibsiz!</b>\n\n<i>Kim bo'lib kirmoqchisiz?</i>", parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
+        await message.answer(WELCOME_TEXT, parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
     else:
         await message.answer("❌ Noto'g'ri kod! Iltimos, qaytadan kiriting:")
 
@@ -1332,7 +1341,7 @@ async def parent_results_main_callback(callback: types.CallbackQuery):
 @dp.callback_query(F.data.startswith("childres_"))
 async def childres_callback(callback: types.CallbackQuery):
     child_id = int(callback.data.split("_")[1])
-    await show_single_child_result(callback, child_id, callback.fromuser.id)
+    await show_single_child_result(callback, child_id, callback.from_user.id)
     await callback.answer()
 
 @dp.callback_query(F.data == "add_child_info")
