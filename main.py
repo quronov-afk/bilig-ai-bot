@@ -14,6 +14,189 @@ from aiogram.fsm.context import FSMContext
 import google.generativeai as genai
 
 # ==========================================
+# TAVSIYA ETILGAN ASARLAR MA'LUMOTLARI
+# ==========================================
+RECOMMENDED_BOOKS = {
+    "3": [
+        "O‘zbek xalq ertaklari",
+        "Kuchukning hikoyasi. Anvar Obidjon.",
+        "Buzoqning hikoyasi. Anvar Obidjon.",
+        "Xorazmiy. 0 bilan tanishuv. Dinara Muminova.",
+        "Beruniy. Sahrodagi qahramon. Saʼdullo Quronov.",
+        "Ibn Sino. Oʻsimliklar bilan tanishuv. Nilufar Jabborova.",
+        "Alisher. Maktabda birinchi kun. Dilnavoz Najimova.",
+        "Toʻmaris. Tovuqni kim oʻgʻirladi?. Dinara Muminova.",
+        "Bobur. Hindistonda. Gulnoz Tojiboyeva.",
+        "Amir Temur. Qilichsiz gʻalaba. Qobiljon Shermatov.",
+        "Forobiy. Gulnoz Tojiboyeva.",
+        "Ulugʻbek. Kiyik ovida. Qobiljon Shermatov.",
+        "Mushukchaning hikoyasi. Anvar Obidjon.",
+        "Quyonchaning hikoyasi. Anvar Obidjon.",
+        "Xoʻtikning hikoyasi. Anvar Obidjon.",
+        "Toshbaqaning hikoyasi. Anvar Obidjon.",
+        "Assalomu alaykum. Vasiliy Suxomlinskiy.",
+        "Yetti qiz. Vasiliy Suxomlinskiy."
+    ],
+    "6": [
+        "Joʻjaning hikoyasi. Anvar Obidjon.",
+        "Tulkichaning hikoyasi. Anvar Obidjon.",
+        "Choʻchqachaning hikoyasi. Anvar Obidjon.",
+        "Hakkaning hikoyasi. Anvar Obidjon.",
+        "Chumolining hikoyasi. Anvar Obidjon.",
+        "Qurbaqaning hikoyasi. Anvar Obidjon.",
+        "Uloqchaning hikoyasi. Anvar Obidjon.",
+        "Bu sizga, oyijon. Yoqut Rahimova.",
+        "Suv va daraxt. Zamira Ibrohimova.",
+        "Bir bor ekan, pul bor ekan. Namoz Saʼdullayev.",
+        "Bola va pul. Gʻiyosiddin Yusuf.",
+        "Goʻzal xulqlar. Gʻiyosiddin Yusuf.",
+        "Kundalik odoblar. Gʻiyosiddin Yusuf.",
+        "Hayvonlar haqida hikoyalar. Aziz Nesin.",
+        "Olmaxonning xotirasi. Mixail Prishvin.",
+        "Jiblajibonning xatlari. Nikolay Sladkov.",
+        "Assalomu alaykum. Vasiliy Suxomlinskiy.",
+        "Odam boʻlish qiyin. Vasiliy Suxomlinskiy.",
+        "Yetti qiz. Vasiliy Suxomlinskiy.",
+        "Uzunquloq. Georgiy Skrebitskiy.",
+        "Oʻgʻrivoy. Georgiy Skrebitskiy.",
+        "Buyuk sayohatchilar. Mixail Zoshchenko.",
+        "Pinokkioning boshidan kechirganlari. Karlo Kollodi.",
+        "Maugli. Jozef Redyard Kipling.",
+        "Bilmasvoy va doʻstlarining boshidan kechirganlari. Nikolay Nosov."
+    ],
+    "8": [
+        "Oltin yurakli avtobola. Anvar Obidjon.",
+        "Alamazon va uning piyodalari. Anvar Obidjon.",
+        "0099 raqamli yolgʻonchi. Anvar Obidjon.",
+        "Meshpolvonning janglari. Anvar Obidjon.",
+        "Pashshavoyning boshidan kechirganlari. Anvar Obidjon.",
+        "Futbol toʻpining sarguzashtlari. Anvar Obidjon.",
+        "Moʻttivoymisan, Mittivoymisan?. Anvar Obidjon.",
+        "Galaktikada bir kun 1-2-3. Saʼdulla Quronov.",
+        "Shaytonvachchaning nayranglari. Erkin Malik.",
+        "7-“A” da. Erkin Malik.",
+        "Champo otli ilon. Erkin Malik.",
+        "Qaldirgʻoch. Erkin Malik.",
+        "Quyonlar saltanati. Xudoyberdi Toʻxtaboyev.",
+        "Shirin qovunlar mamlakati. Xudoyberdi Toʻxtaboyev.",
+        "Sehrli qalpoqcha. Xudoyberdi Toʻxtaboyev.",
+        "Qaylardasan, bolaligim. Xudoyberdi Toʻxtaboyev.",
+        "Changalzor iti. Normurod Norqobilov.",
+        "Belbogʻ. Normurod Norqobilov.",
+        "Paxmoq. Normurod Norqobilov.",
+        "Amir Temur haqida hikoyalar. Toʻlqin Hayit.",
+        "Olimjonning sarguzashtlari. Otabek Quvvatov.",
+        "Ulugʻbek yulduzlar saltanatida. Otabek Quvvatov.",
+        "Akramning sarguzashtlari. Pirimqul Qodirov.",
+        "Ajab qishloq. Ergash Raimov.",
+        "Chillak oʻyin. Shukur Xolmirzayev.",
+        "Oqtosh. Shukur Xolmirzayev.",
+        "Sulaymon ovchi va uning iti haqida. Sunnatulla Anorboyev.",
+        "Yalpiz somsa. Oʻtkir Hoshimov.",
+        "Shaytonni tutgan Shertoy. Abror Qoʻshnazarov.",
+        "Boychechak. Abdusaid Koʻchimov.",
+        "Hovlidagi maydoncha. Abdusaid Koʻchimov.",
+        "Raqamlar sarguzashtlari. Saidqul Uspanov.",
+        "Kichkina shahzoda. Antuan de Sent-Ekzyuperi.",
+        "Yovvoyi yoʻrgʻa. Ernest Seton-Tompson.",
+        "Domino. Ernest Seton-Tompson.",
+        "Lobo. Ernest Seton-Tompson.",
+        "Springfild tulkisi. Ernest Seton-Tompson.",
+        "Chink. Ernest Seton-Tompson.",
+        "Jonni laqabli ayiqcha. Ernest Seton-Tompson.",
+        "Bingo. Ernest Seton-Tompson.",
+        "Bugʻular izidan. Ernest Seton-Tompson.",
+        "Snap. Ernest Seton-Tompson.",
+        "Arno. Ernest Seton-Tompson.",
+        "Bilmasvoy va doʻstlarining boshidan kechirganlari. Nikolay Nosov.",
+        "Bilmasvoy quyosh shahrida. Nikolay Nosov.",
+        "Pinokkioning boshidan kechirganlari. Karlo Kollodi.",
+        "Buratino va uning sarguzashtlari. Aleksey Tolstoy.",
+        "Tom Soyerning boshidan kechirganlari. Mark Tven.",
+        "Tom Soyerning yangi sarguzashtlari. Mark Tven.",
+        "Antiqa qurbaqa. Mark Tven.",
+        "Alisaning sayohatlari. Kir Bulichev.",
+        "Gʻaroyib bolalar. Aziz Nesin.",
+        "Vinni Pux va uning sarguzashtlari. Alan Aleksandr Miln.",
+        "Maugli. Jozef Redyard Kipling.",
+        "Robinzonlar maktabi. Jyul Vern.",
+        "Muzlar iskanjasida. Jyul Vern.",
+        "Oʻqituvchi odam boʻlgan ekan. Ayzek Azimov.",
+        "Men, buvim, Iliko va Illarion. Nodar Dumbadze.",
+        "Anton boʻrini uchratgan kecha. Edith Shrayber Vike.",
+        "Teddi. Yuriy Kazakov.",
+        "Hikoyalar. Jek London.",
+        "Baron Myunxauzenning sarguzashtlari. Erix Raspe.",
+        "Maysajonning sarguzashtlari. Sergey Rozanov.",
+        "Lider bola. Gʻiyosiddin Yusuf.",
+        "Kundalik odoblar. Gʻiyosiddin Yusuf.",
+        "Stiv Jobs. Navroʻz Ergash oʻgʻli.",
+        "Muhammad Ali. Navroʻz Ergash oʻgʻli.",
+        "Leonardo da Vinchi. Navroʻz Ergash oʻgʻli.",
+        "Motsart. Navroʻz Ergash oʻgʻli.",
+        "Albert Eynshteyn. Navroʻz Ergash oʻgʻli."
+    ],
+    "12": [
+        "Sariq devni minib. Xudoyberdi Toʻxtaboyev.",
+        "Qasoskorning oltin boshi. Xudoyberdi Toʻxtaboyev.",
+        "Besh bolali yigitcha. Xudoyberdi Toʻxtaboyev.",
+        "Shum bola. Gʻafur Gʻulom.",
+        "Oʻtmishdan ertaklar. Abdulla Qahhor.",
+        "Dunyoning ishlari. Oʻtkir Hoshimov.",
+        "Galaktikada bir kun 1-2-3. Saʼdulla Quronov.",
+        "Ot kishnagan oqshom. Togʻay Murod.",
+        "Bolalik xotiralarim. Oybek.",
+        "Jayhun ustida bulutlar. Mirkarim Osim.",
+        "Zulmat ichra nur. Mirkarim Osim.",
+        "Nur va zulmat. Mirkarim Osim.",
+        "Olmos jilosi. Hojiakbar Shayxov.",
+        "Afandining qirq bir pashshasi. Zohir Aʼlam.",
+        "Boʻsh kelma, Aliqulov!. Farhod Musajonov.",
+        "Qaysar bolaning hayoti. Mirzakalon Ismoiliy.",
+        "Yonar daryo. Hakim Nazir.",
+        "Kenjatoy. Hakim Nazir.",
+        "Eski maktab. Sadriddin Ayniy.",
+        "Jadidlar. Abdulla Qodiriy. Bahodir Karimov.",
+        "Jadidlar. Abdulhamid Choʻlpon. Dilmurod Quronov.",
+        "Jadidlar. Abdurauf Fitrat. Hamidulla Boltaboyev.",
+        "Jadidlar. Abdulla Avloniy. Olim Oltinbek.",
+        "Jadidlar. Isʼhoqxon toʻra Ibrat. Ulugʻbek Dolimov.",
+        "Uygʻonish. Abu Ali ibn Sino. Abdulqodir Zohidiy.",
+        "Uygʻonish. Abu Rayhon Beruniy. Abror Xidirov.",
+        "Uygʻonish. Ahmad al-Fargʻoniy. Ashraf Ahmedov.",
+        "Uygʻonish. Muso al-Xorazmiy. Ashraf Ahmedov.",
+        "Kichkina shahzoda. Antuan de Sent-Ekzyuperi.",
+        "Oʻn besh yoshli kapitan. Jyul Vern.",
+        "Kapitan Grant bolalari. Jyul Vern.",
+        "Klodius Bombarnak. Jyul Vern.",
+        "Robinzonlar maktabi. Jyul Vern.",
+        "Oliver Tvistning boshidan kechirganlari. Charlz Dikkens.",
+        "Shahzoda va gado. Mark Tven.",
+        "Tom Soyerning boshidan kechirganlari. Mark Tven.",
+        "Gulliverning sayohatlari. Jonatan Svift.",
+        "Merosxoʻr. Robert Luis Stivenson.",
+        "Kapitan Vrungelning sarguzashtlari. Andrey Nekrasov.",
+        "Birinchi muallim. Chingiz Aytmatov.",
+        "Bolaligim. Chingiz Aytmatov.",
+        "Fransuz tili saboqlari. Valentin Rasputin.",
+        "Bir kunlik yoz. Rey Bredberi.",
+        "Kavkaz asiri. Lev Tolstoy.",
+        "Quyoshni koʻryapman. Nodar Dumbadze.",
+        "Men, buvim, Iliko va Illarion. Nodar Dumbadze.",
+        "Eski telefon. Pol Villard.",
+        "Yoz bilan xayrlashuv. Konstantin Paustovskiy.",
+        "Vaqtni qoʻyib yuboring!. Janni Rodari.",
+        "Maktab alamlari va zavqlari. Orxan Pamuk.",
+        "Marko Poloning ajoyib va gʻaroyib sarguzashtlari. Villi Maynk.",
+        "Yovvoyi yoʻrgʻa. Ernest Seton-Tompson.",
+        "Domino. Ernest Seton-Tompson.",
+        "Lobo. Ernest Seton-Tompson."
+    ]
+}
+
+MUTOLAA_NOTE = "\n\n💡 <i>Izoh: Agarda ushbu kitoblarni bosma shaklda topa olmasangiz, ularni 'Mutolaa' ilovasida elektron o'qish yoki tinglash shaklida topishingiz mumkin.</i>"
+
+# ==========================================
 # 1. MA'LUMOTLAR BAZASI (SQLITE)
 # ==========================================
 db_path = "/var/data/bot_base.db" if os.path.exists("/var/data") else "bot_base.db"
@@ -388,7 +571,6 @@ async def store_item_price(message: types.Message, state: FSMContext):
     cursor.execute("INSERT INTO Store_Items (parent_id, name, price) VALUES (?, ?, ?)", (message.from_user.id, data['item_name'], int(message.text)))
     conn.commit()
     
-    # YANA QO'SHISH YOKI QAYTISH TUGMALARI
     kb = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="➕ Yana sovg'a qo'shish", callback_data="add_store_item")],
         [InlineKeyboardButton(text="🔙 Do'konga qaytish", callback_data="rewards_store_edit")]
@@ -484,6 +666,37 @@ async def process_book_photo(message: types.Message, state: FSMContext):
     except Exception as e:
         await processing_msg.delete()
         await message.answer(f"❌ <b>Xatolik:</b> {str(e)}", parse_mode="HTML", reply_markup=get_parent_keyboard())
+
+# ==========================================
+# YOSH BO'YICHA TAVSIYALAR
+# ==========================================
+@dp.callback_query(F.data == "add_book_age")
+async def show_age_recommendation_menu(callback: types.CallbackQuery):
+    kb = [
+        [InlineKeyboardButton(text="👶 3+ yosh", callback_data="rec_age_3"), InlineKeyboardButton(text="👦 6+ yosh", callback_data="rec_age_6")],
+        [InlineKeyboardButton(text="🧒 8+ yosh", callback_data="rec_age_8"), InlineKeyboardButton(text="🧑 12+ yosh", callback_data="rec_age_12")],
+        [InlineKeyboardButton(text="🔙 Orqaga", callback_data="finish_plan")]
+    ]
+    await callback.message.edit_text("👶 <b>Farzandingiz yosh toifasini tanlang:</b>", parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
+    await callback.answer()
+
+@dp.callback_query(F.data.startswith("rec_age_"))
+async def show_recommended_books_list(callback: types.CallbackQuery):
+    age_group = callback.data.split("_")[2]
+    books_list = RECOMMENDED_BOOKS.get(age_group, [])
+    
+    text = f"📚 <b>{age_group}+ yoshli bolalar uchun tavsiya etilgan asarlar ro'yxati:</b>\n\n"
+    for idx, b_name in enumerate(books_list, 1):
+        text += f"{idx}. {b_name}\n"
+        
+    text += MUTOLAA_NOTE
+    
+    kb = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="🔙 Yosh toifalariga qaytish", callback_data="add_book_age")]
+    ])
+    
+    await callback.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
+    await callback.answer()
 
 # ==========================================
 # OTA-ONA UCHUN FAOL REJALAR VA TEST TUZISH
@@ -907,7 +1120,6 @@ async def execute_test(callback: types.CallbackQuery):
         is_correct = 1 if opt.strip() == q['answer'].strip() else 0
         kb.append([InlineKeyboardButton(text=opt, callback_data=f"tans_{book_id}_{q_idx+1}_{correct_count}_{is_correct}")])
         
-    # TEST YECHAYOTGANDA ORTGA QAYTISH TUGMASI
     kb.append([InlineKeyboardButton(text="🔙 Orqaga (Testni to'xtatish)", callback_data=f"cread_{book_id}")])
         
     text = f"📝 <b>{q_idx + 1}-savol:</b>\n\n{q['question']}"
@@ -1001,7 +1213,7 @@ async def show_leaderboard(message: types.Message):
     await message.answer(text, parse_mode="HTML")
 
 # ==========================================
-# FARZAND NATIJALARINI KO'RISH (KO'P FARZANDLI OTA-ONALAR UCHUN)
+# FARZAND NATIJALARINI KO'RISH VA FARZAND QO'SHISH
 # ==========================================
 async def show_single_child_result(message_or_call, child_id, parent_id):
     cursor.execute("SELECT child_age FROM Family_Link WHERE child_id = ? AND parent_id = ?", (child_id, parent_id))
@@ -1014,7 +1226,6 @@ async def show_single_child_result(message_or_call, child_id, parent_id):
     child_name, balance, badges, streak = child
     badges_text = badges if badges else "Hali nishonlar yo'q"
     
-    # KITOB BO'YICHA SAHIFALARNI HISOBLASH
     cursor.execute("SELECT pb.title, pb.pages_read, pb.is_completed FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id WHERE rp.parent_id = ?", (parent_id,))
     books = cursor.fetchall()
     
@@ -1035,10 +1246,14 @@ async def show_single_child_result(message_or_call, child_id, parent_id):
             status = "✅" if b[2] else "⏳"
             text += f" ➖ <i>{b[0]}</i>: {b[1]} bet {status}\n"
             
+    kb = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="➕ Boshqa farzand qo'shish", callback_data="add_child_info")],
+        [InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_results_main")]
+    ])
+    
     if isinstance(message_or_call, types.Message):
-        await message_or_call.answer(text, parse_mode="HTML")
+        await message_or_call.answer(text, parse_mode="HTML", reply_markup=kb)
     else:
-        kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_results_main")]])
         await message_or_call.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
 
 async def show_parent_results_menu(message_or_call, parent_id):
@@ -1046,27 +1261,28 @@ async def show_parent_results_menu(message_or_call, parent_id):
     links = cursor.fetchall()
     
     if not links:
-        text = "Sizga hali hech qaysi farzand ulanmagan."
-        if isinstance(message_or_call, types.Message): await message_or_call.answer(text)
-        else: await message_or_call.message.edit_text(text)
+        parent_code = f"BLG-{str(parent_id)[-4:]}"
+        text = f"Sizga hali hech qaysi farzand ulanmagan.\n\nFarzandingiz botga kirib <b>'👦👧 Men O'quvchiman'</b> bo'limini tanlasin va kodingizni kiritsin:\n\n🔑 Kodingiz: <b>{parent_code}</b>"
+        kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="➕ Farzand qo'shish yo'riqnomasi", callback_data="add_child_info")]])
+        if isinstance(message_or_call, types.Message): await message_or_call.answer(text, parse_mode="HTML", reply_markup=kb)
+        else: await message_or_call.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
         return
         
-    if len(links) > 1:
-        kb = []
-        for link in links:
-            c_id = link[0]
-            cursor.execute("SELECT name FROM Users WHERE user_id = ?", (c_id,))
-            c_name_row = cursor.fetchone()
-            if c_name_row:
-                kb.append([InlineKeyboardButton(text=f"👦👧 {c_name_row[0]}", callback_data=f"childres_{c_id}")])
-        
-        text = "Qaysi farzandingizning natijasini ko'rmoqchisiz?"
-        if isinstance(message_or_call, types.Message):
-            await message_or_call.answer(text, reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
-        else:
-            await message_or_call.message.edit_text(text, reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
+    kb = []
+    for link in links:
+        c_id = link[0]
+        cursor.execute("SELECT name FROM Users WHERE user_id = ?", (c_id,))
+        c_name_row = cursor.fetchone()
+        if c_name_row:
+            kb.append([InlineKeyboardButton(text=f"👦👧 {c_name_row[0]}", callback_data=f"childres_{c_id}")])
+            
+    kb.append([InlineKeyboardButton(text="➕ Boshqa farzand qo'shish", callback_data="add_child_info")])
+    
+    text = "📊 <b>Qaysi farzandingizning natijasini ko'rmoqchisiz?</b>"
+    if isinstance(message_or_call, types.Message):
+        await message_or_call.answer(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
     else:
-        await show_single_child_result(message_or_call, links[0][0], parent_id)
+        await message_or_call.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
 
 @dp.message(F.text == "📊 Farzandim natijalari")
 async def parent_results_handler(message: types.Message):
@@ -1081,6 +1297,20 @@ async def parent_results_main_callback(callback: types.CallbackQuery):
 async def childres_callback(callback: types.CallbackQuery):
     child_id = int(callback.data.split("_")[1])
     await show_single_child_result(callback, child_id, callback.from_user.id)
+    await callback.answer()
+
+@dp.callback_query(F.data == "add_child_info")
+async def add_child_info_handler(callback: types.CallbackQuery):
+    parent_code = f"BLG-{str(callback.from_user.id)[-4:]}"
+    text = (
+        f"➕ <b>Yangi farzand qo'shish yo'riqnomasi:</b>\n\n"
+        f"1. Farzandingiz telefonida ushbu botni oching va <b>'👦👧 Men O'quvchiman'</b> tugmasini bosing.\n"
+        f"2. Bot undan ota-ona kodini so'raganda, quyidagi kodingizni kiritsin:\n\n"
+        f"🔑 Sizning kodingiz: <b>{parent_code}</b>\n\n"
+        f"<i>Farzandingiz ulangan zahoti sizga Telegram orqali avtomatik xabar boradi!</i>"
+    )
+    kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_results_main")]])
+    await callback.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
     await callback.answer()
 
 # ==========================================
