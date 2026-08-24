@@ -233,6 +233,8 @@ def init_db():
         test_id INTEGER PRIMARY KEY AUTOINCREMENT, book_id INTEGER UNIQUE, questions_json TEXT)''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS Store_Items (
         item_id INTEGER PRIMARY KEY AUTOINCREMENT, parent_id INTEGER, name TEXT, price INTEGER)''')
+    cursor.execute('''CREATE TABLE IF NOT EXISTS Reading_Logs (
+        log_id INTEGER PRIMARY KEY AUTOINCREMENT, child_id INTEGER, book_id INTEGER, pages_added INTEGER, created_at TEXT)''')
     
     try: cursor.execute("ALTER TABLE Plan_Books ADD COLUMN pages_read INTEGER DEFAULT 0")
     except: pass
@@ -456,6 +458,39 @@ def update_streak(user_id):
     conn.commit()
     return streak
 
+# ==========================================
+# KUNLIK AVTOMATIK MOTIVATSIYA VA SCHEDULER
+# ==========================================
+async def daily_reminder_scheduler():
+    while True:
+        try:
+            now = datetime.now()
+            # Har kuni kechqurun soat 19:00 da tekshiradi
+            if now.hour == 19:
+                today_str = now.strftime("%Y-%m-%d")
+                cursor.execute("SELECT user_id, name, streak_days, last_read_date FROM Users WHERE role = 'child'")
+                children = cursor.fetchall()
+                for c in children:
+                    c_id, c_name, streak, last_read = c
+                    if last_read != today_str:
+                        msg = (
+                            f"👋 <b>Salom, Qahramon {c_name}!</b> 🦸‍♂️\n\n"
+                            f"📚 Bugun hali kitob o'qimadingizmi? Kitoblar sizni kutmoqda!\n"
+                            f"🔥 <b>Uzluksiz kunlaringiz (Streak):</b> {streak} kun!\n\n"
+                            f"Bugun ham kamida 2 bet o'qib, olovni 🔥 o'chirmaslikka harakat qiling va yangi 🔅 Biliglar ishlang! ✨"
+                        )
+                        try:
+                            await bot.send_message(c_id, msg, parse_mode="HTML")
+                        except Exception:
+                            pass
+                # Qayta jo'natmaslik uchun 1 soat uxlaydi
+                await asyncio.sleep(3600)
+            else:
+                await asyncio.sleep(1800) # 30 minutda bir soatni tekshiradi
+        except Exception as e:
+            print(f"Scheduler error: {e}")
+            await asyncio.sleep(300)
+
 @dp.message(F.text == "🔙 Orqaga")
 async def cancel_handler(message: types.Message, state: FSMContext):
     await state.clear()
@@ -505,7 +540,7 @@ async def refresh_admin_stats(callback: types.CallbackQuery):
     
     try:
         await callback.message.edit_text(stats_text, parse_mode="HTML", reply_markup=kb)
-    except:
+    except Exception:
         pass
     await callback.answer("Statistika yangilandi!")
 
@@ -686,7 +721,7 @@ async def delete_store_item(callback: types.CallbackQuery):
 @dp.callback_query(F.data == "add_store_item")
 async def add_store_item_start(callback: types.CallbackQuery, state: FSMContext):
     try: await callback.message.delete()
-    except: pass
+    except Exception: pass
     await bot.send_message(callback.from_user.id, "✍️ <b>Sovg'a nomini kiriting:</b>\n<i>(Masalan: Muzqaymoq, Parkka borish)</i>", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
     await state.set_state(StoreSettings.waiting_for_item_name)
     await callback.answer()
@@ -1157,7 +1192,7 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         ai_result = json.loads(clean_json(response.text))
         
         try: await message.delete()
-        except: pass 
+        except Exception: pass 
         
         if not ai_result.get("is_book_page"):
             await processing_msg.delete()
@@ -1193,13 +1228,41 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         earned_bilig = (new_page_num // 5) - (old_pages // 5)
         pages_read_now = new_page_num - old_pages
         
+        # LOGLAR BAZASIGA YOZISH (HAFTALIK HISOBOT UCHUN)
+        now_ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cursor.execute("INSERT INTO Reading_Logs (child_id, book_id, pages_added, created_at) VALUES (?, ?, ?, ?)",
+                       (child_id, book_id, pages_read_now, now_ts))
+        
         streak = update_streak(child_id) 
         
+        # HAFTALIK TAQQOSLASH MATNINI TAYYORLASH
+        now_dt = datetime.now()
+        w1_start = (now_dt - timedelta(days=7)).strftime("%Y-%m-%d %H:%M:%S")
+        w2_start = (now_dt - timedelta(days=14)).strftime("%Y-%m-%d %H:%M:%S")
+
+        cursor.execute("SELECT SUM(pages_added) FROM Reading_Logs WHERE child_id = ? AND created_at >= ?", (child_id, w1_start))
+        res_w1 = cursor.fetchone()[0]
+        this_week = res_w1 if res_w1 else 0
+
+        cursor.execute("SELECT SUM(pages_added) FROM Reading_Logs WHERE child_id = ? AND created_at >= ? AND created_at < ?", (child_id, w2_start, w1_start))
+        res_w2 = cursor.fetchone()[0]
+        last_week = res_w2 if res_w2 else 0
+
+        comp_text = ""
+        if last_week > 0:
+            diff = this_week - last_week
+            if diff > 0:
+                comp_text = f"\n📈 <b>Barakalla!</b> Siz ushbu haftada o'tgan haftaga nisbatan <b>+{diff} bet ko'p</b> o'qidingiz! Ajoyib natija! 🚀"
+            elif diff < 0:
+                comp_text = f"\n📊 <b>G'ayrat qiling!</b> O'tgan haftada nisbatan biroz kamroq o'qiyapsiz, sur'atni oshiramiz! 💪"
+            else:
+                comp_text = f"\n📊 <b>Ajoyib!</b> O'tgan haftadagi kabi barqaror o'qishda davom etyapsiz!"
+
         if earned_bilig > 0:
             cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (earned_bilig, child_id))
-            reply_text = f"🎉 <b>Qoyilmaqom!</b> Sen {pages_read_now} bet o'qiding va <b>{earned_bilig} 🔅 Bilig</b> ishlab olding!\n🔥 Streak: {streak} kun!\n<i>(Jami o'qilgan: {new_page_num} bet)</i>"
+            reply_text = f"🎉 <b>Qoyilmaqom!</b> Sen {pages_read_now} bet o'qiding va <b>{earned_bilig} 🔅 Bilig</b> ishlab olding!{comp_text}\n🔥 Streak: {streak} kun!\n<i>(Jami o'qilgan: {new_page_num} bet)</i>"
         else:
-            reply_text = f"👍 <b>Barakalla!</b> Sen {pages_read_now} bet o'qiding. Yana {5 - (new_page_num % 5)} bet o'qisang, yangi Bilig 🔅 olasan!\n🔥 Streak: {streak} kun!"
+            reply_text = f"👍 <b>Barakalla!</b> Sen {pages_read_now} bet o'qiding. Yana {5 - (new_page_num % 5)} bet o'qisang, yangi Bilig 🔅 olasan!{comp_text}\n🔥 Streak: {streak} kun!"
             
         conn.commit()
         await processing_msg.delete()
@@ -1506,7 +1569,7 @@ async def show_leaderboard(message: types.Message):
     await message.answer(text, parse_mode="HTML")
 
 # ==========================================
-# FARZAND NATIJALARINI KO'RISH VA BILIG AYIRISH
+# FARZAND NATIJALARINI KO'RISH VA HAFTALIK TAHLIL
 # ==========================================
 async def show_single_child_result(message_or_call, child_id, parent_id):
     cursor.execute("SELECT child_age FROM Family_Link WHERE child_id = ? AND parent_id = ?", (child_id, parent_id))
@@ -1545,6 +1608,7 @@ async def show_single_child_result(message_or_call, child_id, parent_id):
             text += f" ➖ <i>{b[0]}</i>: {b[1]} bet {status}\n"
             
     kb = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="📈 Haftalik hisobot va AI Tahlil", callback_data=f"weeklyrep_{child_id}")],
         [InlineKeyboardButton(text="➖ Bilig ayirish / Nolga tushirish", callback_data=f"deduct_coins_{child_id}")],
         [InlineKeyboardButton(text="➕ Boshqa farzand qo'shish", callback_data="add_child_info")],
         [InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_results_main")]
@@ -1554,6 +1618,61 @@ async def show_single_child_result(message_or_call, child_id, parent_id):
         await message_or_call.answer(text, parse_mode="HTML", reply_markup=kb)
     else:
         await message_or_call.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
+
+# OTA-ONA UCHUN HAFTALIK TAHLIL HISOBOTI
+@dp.callback_query(F.data.startswith("weeklyrep_"))
+async def weekly_report_handler(callback: types.CallbackQuery):
+    child_id = int(callback.data.split("_")[1])
+    cursor.execute("SELECT name FROM Users WHERE user_id = ?", (child_id,))
+    c_name = cursor.fetchone()[0]
+
+    now_dt = datetime.now()
+    w1_start = (now_dt - timedelta(days=7)).strftime("%Y-%m-%d %H:%M:%S")
+    w2_start = (now_dt - timedelta(days=14)).strftime("%Y-%m-%d %H:%M:%S")
+
+    cursor.execute("SELECT SUM(pages_added) FROM Reading_Logs WHERE child_id = ? AND created_at >= ?", (child_id, w1_start))
+    res_w1 = cursor.fetchone()[0]
+    this_week = res_w1 if res_w1 else 0
+
+    cursor.execute("SELECT SUM(pages_added) FROM Reading_Logs WHERE child_id = ? AND created_at >= ? AND created_at < ?", (child_id, w2_start, w1_start))
+    res_w2 = cursor.fetchone()[0]
+    last_week = res_w2 if res_w2 else 0
+
+    diff = this_week - last_week
+    if last_week == 0:
+        pct_text = "Yangi ko'rsatkich 🚀"
+        dynamic_icon = "📈"
+    elif diff > 0:
+        pct = int((diff / last_week) * 100)
+        pct_text = f"+{pct}% ga oshgan 🚀"
+        dynamic_icon = "📈"
+    elif diff < 0:
+        pct = int((abs(diff) / last_week) * 100)
+        pct_text = f"-{pct}% ga pasaygan 📉"
+        dynamic_icon = "📉"
+    else:
+        pct_text = "Bir xil barqaror ⏸"
+        dynamic_icon = "📊"
+
+    report_text = (
+        f"📈 <b>{c_name}ning HAFTALIK MUTOLAA HISOBOTI</b>\n\n"
+        f"🗓 <b>Shu hafta o'qildi:</b> {this_week} bet\n"
+        f"🗓 <b>O'tgan hafta o'qilgan edi:</b> {last_week} bet\n"
+        f"{dynamic_icon} <b>Dinamika:</b> {pct_text}\n\n"
+        f"🧠 <b>AI Pedagogik Tavsiyasi:</b>\n"
+    )
+
+    if diff >= 0:
+        report_text += f"<i>Farzandingiz shu haftada juda faol bo'ldi! Sur'atni saqlab qolish uchun uni do'kondagi kichik sovg'alar yoki iliq so'zlar bilan rag'batlantiring.</i>"
+    else:
+        report_text += f"<i>Farzandingiz bu hafta o'tgan haftaga nisbatan biroz kamroq o me'yorida o'qidi. Unga yangi qiziqarli kitob tavsiya qilish yoki birgalikda o'qishni yo'lga qo'yish foydali bo'ladi.</i>"
+
+    kb = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="🔙 Farzand natijalariga qaytish", callback_data=f"childres_{child_id}")]
+    ])
+
+    await callback.message.edit_text(report_text, parse_mode="HTML", reply_markup=kb)
+    await callback.answer()
 
 async def show_parent_results_menu(message_or_call, parent_id):
     cursor.execute("SELECT child_id FROM Family_Link WHERE parent_id = ?", (parent_id,))
@@ -1636,7 +1755,7 @@ async def deduct_zero_handler(callback: types.CallbackQuery):
     
     try:
         await bot.send_message(child_id, f"ℹ️ <b>Ota-onangiz hisobingizdagi Biliglarni nolga tushirdi.</b>\n<i>(Berilgan pul yoki mukofotlar hisobiga)</i>\n\nHozirgi balansingiz: <b>0 🔅</b>", parse_mode="HTML")
-    except:
+    except Exception:
         pass
 
 @dp.callback_query(F.data.startswith("dedcustom_"))
@@ -1685,7 +1804,7 @@ async def process_coin_deduction(message: types.Message, state: FSMContext):
     
     try:
         await bot.send_message(child_id, f"ℹ️ <b>Ota-onangiz hisobingizdan {amount} 🔅 ayirdi.</b>\n<i>(Berilgan pul/sovg'a hisobiga)</i>\n\nHozirgi balansingiz: <b>{new_balance} 🔅</b>", parse_mode="HTML")
-    except:
+    except Exception:
         pass
 
 # ==========================================
@@ -1711,6 +1830,7 @@ async def add_child_info_handler(callback: types.CallbackQuery):
 async def main():
     init_db()
     threading.Thread(target=run_dummy_server, daemon=True).start()
+    asyncio.create_task(daily_reminder_scheduler()) # Avtomatik kunlik eslatmalarni yoqish
     print("Telegram bot ishga tushdi...")
     await dp.start_polling(bot)
 
