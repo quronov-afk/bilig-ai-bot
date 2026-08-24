@@ -45,18 +45,42 @@ async def refresh_admin_stats(callback: types.CallbackQuery):
     await callback.answer("Statistika yangilandi!")
 
 @router.message(Command("invite"))
-async def generate_invite_link(message: types.Message):
+async def generate_invite_package(message: types.Message):
     if OWNER_ID != 0 and message.from_user.id != OWNER_ID:
         return
         
-    code = str(uuid.uuid4())[:8]
-    cursor.execute("INSERT INTO Invite_Links (code) VALUES (?)", (code,))
+    # Ota-ona va Farzand uchun alohida bir martalik tokenlar yaratamiz
+    parent_token = f"prnt_{uuid.uuid4().hex[:8]}"
+    child_token = f"chld_{uuid.uuid4().hex[:8]}"
+    
+    cursor.execute("INSERT INTO Invite_Links (code) VALUES (?)", (parent_token,))
+    cursor.execute("INSERT INTO Invite_Links (code) VALUES (?)", (child_token,))
     conn.commit()
     
     bot_info = await message.bot.get_me()
-    link = f"https://t.me/{bot_info.username}?start={code}"
+    parent_link = f"https://t.me/{bot_info.username}?start={parent_token}"
+    child_link = f"https://t.me/{bot_info.username}?start={child_token}"
     
-    await message.answer(f"🔗 <b>Bir martalik taklif havolasi yaratildi:</b>\n\n<code>{link}</code>\n\n<i>Ushbu havola orqali faqat 1 kishi ro'yxatdan o'ta oladi.</i>", parse_mode="HTML")
+    invitation_text = (
+        f"🌟 <b>BILIG AI — Kitobxonlik sari intellektual sayohat!</b>\n\n"
+        f"Assalomu alaykum! Siz bolalarda kitob mutolaasiga mehr uyg'otuvchi <b>Bilig AI</b> platformasining yopiq sinov dasturiga taklif qilindingiz.\n\n"
+        f"🤖 <b>Bilig AI nima bera oladi?</b>\n"
+        f"• 📚 O'qilgan sahifani <b>AI Vision</b> orqali tekshirish va rag'batlantirish;\n"
+        f"• 🎙 Bolaning ovozli fikrini <b>Adabiyotshunos olim</b> sifatida tahlil qilish;\n"
+        f"• 🧠 Mutolaa qilingan kitoblar bo'yicha qiziqarli <b>AI testlar</b> tuzish;\n"
+        f"• 🟡 Har bir sahifa uchun <b>Bilig tangalari</b>, streak va rag'batlantiruvchi sovg'alar.\n\n"
+        f"━━━━━━━━━━━━━━━━━━━━━\n"
+        f"📌 <b>TIZIMGA KIRISH YO'RIQNOMASI:</b>\n\n"
+        f"1️⃣ <b>OTA-ONA UCHUN:</b>\n"
+        f"Avval ota-ona quyidagi havola orqali botga kiradi va mutolaa rejasini tuzadi:\n"
+        f"👉 <code>{parent_link}</code>\n\n"
+        f"2️⃣ <b>FARZAND UCHUN:</b>\n"
+        f"So'ngra farzand o'z telefonida ushbu havola orqali botga ulanadi:\n"
+        f"👉 <code>{child_link}</code>\n\n"
+        f"<i>⚠️ Eslatma: Har bir havola bir martalik bo'lib, faqat bitta hisob (account) uchun mo'ljallangan.</i>"
+    )
+    
+    await message.answer(invitation_text, parse_mode="HTML")
 
 @router.message(Command("reply"))
 async def admin_reply_handler(message: types.Message, command: CommandObject):
