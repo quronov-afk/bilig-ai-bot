@@ -581,7 +581,7 @@ async def show_single_child_result(message_or_call, child_id, parent_id):
             
     kb = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="📈 Haftalik hisobot va AI Tahlil", callback_data=f"weeklyrep_{child_id}")],
-        [InlineKeyboardButton(text="🪙 Biliglarni boshqarish (+ / -)", callback_data=f"manage_coins_{child_id}")],
+        [InlineKeyboardButton(text="🔅 Biliglarni boshqarish (+ / -)", callback_data=f"manage_coins_{child_id}")],
         [InlineKeyboardButton(text="✍️ Farzand yoshini o'zgartirish", callback_data=f"set_age_{child_id}")],
         [InlineKeyboardButton(text="➕ Boshqa farzand qo'shish", callback_data="add_child_info")],
         [InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_results_main")]
@@ -606,7 +606,7 @@ async def manage_coins_menu(callback: types.CallbackQuery):
         [InlineKeyboardButton(text="🔙 Orqaga", callback_data=f"childres_{child_id}")]
     ])
     text = (
-        f"🪙 <b>{child[0]}ning Biliglarini boshqarish</b>\n\n"
+        f"🔅 <b>{child[0]}ning Biliglarini boshqarish</b>\n\n"
         f"Hozirgi hisobi: <b>{child[1]} 🔅 Bilig</b>\n\n"
         f"<i>Quyidagi amallardan birini tanlang:</i>"
     )
