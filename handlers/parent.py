@@ -161,7 +161,7 @@ async def store_item_price(message: types.Message, state: FSMContext):
     await state.clear()
 
 # ==========================================
-# MUTOLAA REJASINI TUZISH (2 QADAMLI VA SODDA)
+# MUTOLAA REJASINI TUZISH (2 QADAMLI)
 # ==========================================
 @router.message(F.text == "📝 Mutolaa rejasini tuzish")
 async def create_plan_start(message: types.Message, state: FSMContext):
@@ -541,7 +541,7 @@ async def generate_ai_test_multi(message: types.Message, state: FSMContext):
         await state.clear()
 
 # ==========================================
-# FARZAND NATIJALARI (ALOHIDA AJRATILGAN)
+# FARZAND NATIJALARI VA BILIG BOSHQARUVI (+ / -)
 # ==========================================
 async def show_single_child_result(message_or_call, child_id, parent_id):
     cursor.execute("SELECT child_age FROM Family_Link WHERE child_id = ? AND parent_id = ?", (child_id, parent_id))
@@ -581,7 +581,7 @@ async def show_single_child_result(message_or_call, child_id, parent_id):
             
     kb = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="📈 Haftalik hisobot va AI Tahlil", callback_data=f"weeklyrep_{child_id}")],
-        [InlineKeyboardButton(text="➖ Bilig ayirish / Nolga tushirish", callback_data=f"deduct_coins_{child_id}")],
+        [InlineKeyboardButton(text="🪙 Biliglarni boshqarish (+ / -)", callback_data=f"manage_coins_{child_id}")],
         [InlineKeyboardButton(text="✍️ Farzand yoshini o'zgartirish", callback_data=f"set_age_{child_id}")],
         [InlineKeyboardButton(text="➕ Boshqa farzand qo'shish", callback_data="add_child_info")],
         [InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_results_main")]
@@ -591,6 +591,118 @@ async def show_single_child_result(message_or_call, child_id, parent_id):
         await message_or_call.answer(text, parse_mode="HTML", reply_markup=kb)
     else:
         await message_or_call.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
+
+@router.callback_query(F.data.startswith("manage_coins_"))
+async def manage_coins_menu(callback: types.CallbackQuery):
+    child_id = int(callback.data.split("_")[2])
+    cursor.execute("SELECT name, balance_coins FROM Users WHERE user_id = ?", (child_id,))
+    child = cursor.fetchone()
+    if not child: return
+    
+    kb = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="➕ Bilig sovg'a qilish (+ 🔅)", callback_data=f"addcoins_{child_id}")],
+        [InlineKeyboardButton(text="➖ Bilig ayirish (- 🔅)", callback_data=f"dedcustom_{child_id}")],
+        [InlineKeyboardButton(text="🔄 Hisobni 0 ga tushirish", callback_data=f"dedzero_{child_id}")],
+        [InlineKeyboardButton(text="🔙 Orqaga", callback_data=f"childres_{child_id}")]
+    ])
+    text = (
+        f"🪙 <b>{child[0]}ning Biliglarini boshqarish</b>\n\n"
+        f"Hozirgi hisobi: <b>{child[1]} 🔅 Bilig</b>\n\n"
+        f"<i>Quyidagi amallardan birini tanlang:</i>"
+    )
+    await callback.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
+    await callback.answer()
+
+# ➕ BILIG QO'SHISH (RAG'BATLANTIRISH)
+@router.callback_query(F.data.startswith("addcoins_"))
+async def add_coins_start(callback: types.CallbackQuery, state: FSMContext):
+    child_id = int(callback.data.split("_")[1])
+    await state.update_data(target_add_child_id=child_id)
+    try: await callback.message.delete()
+    except Exception: pass
+    await callback.bot.send_message(
+        callback.from_user.id,
+        "🎁 <b>Farzandingizga necha Bilig (🔅) sovg'a qilmoqchisiz?</b>\n\n<i>(Masalan: 10, 20, 50)</i>",
+        parse_mode="HTML",
+        reply_markup=get_back_reply_keyboard()
+    )
+    await state.set_state(ParentSettings.waiting_for_coin_addition)
+    await callback.answer()
+
+@router.message(ParentSettings.waiting_for_coin_addition)
+async def process_coin_addition(message: types.Message, state: FSMContext):
+    if not message.text.isdigit():
+        await message.answer("⚠️ Iltimos, faqat raqam kiriting!")
+        return
+    amount = int(message.text)
+    data = await state.get_data()
+    child_id = data.get('target_add_child_id')
+    
+    cursor.execute("SELECT name, balance_coins FROM Users WHERE user_id = ?", (child_id,))
+    child = cursor.fetchone()
+    if not child: return
+    new_balance = child[1] + amount
+    cursor.execute("UPDATE Users SET balance_coins = ? WHERE user_id = ?", (new_balance, child_id))
+    conn.commit()
+    
+    await message.answer(f"🎉 <b>{child[0]}ga +{amount} 🔅 Bilig sovg'a qilindi!</b>\nYangi balans: <b>{new_balance} 🔅</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    await state.clear()
+    
+    try:
+        await message.bot.send_message(
+            child_id,
+            f"🎉 <b>TABRIKLAYMIZ, QAHRAMON!</b>\n\n"
+            f"Ota-onangiz sizga ajoyib mehnatingiz uchun <b>+{amount} 🔅 Bilig</b> sovg'a qildi! 🎁\n\n"
+            f"Hozirgi balansingiz: <b>{new_balance} 🔅 Bilig</b>",
+            parse_mode="HTML"
+        )
+    except Exception:
+        pass
+
+# ➖ BILIG AYIRISH
+@router.callback_query(F.data.startswith("dedcustom_"))
+async def deduct_custom_start(callback: types.CallbackQuery, state: FSMContext):
+    child_id = int(callback.data.split("_")[1])
+    await state.update_data(target_deduct_child_id=child_id)
+    try: await callback.message.delete()
+    except Exception: pass
+    await callback.bot.send_message(callback.from_user.id, "✍️ <b>Hisobdan necha Bilig (🔅) ayirmoqchisiz?</b> (Masalan: 10):", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await state.set_state(ParentSettings.waiting_for_coin_deduction)
+    await callback.answer()
+
+@router.message(ParentSettings.waiting_for_coin_deduction)
+async def process_coin_deduction(message: types.Message, state: FSMContext):
+    if not message.text.isdigit():
+        await message.answer("⚠️ Iltimos, faqat raqam kiriting!")
+        return
+    amount = int(message.text)
+    data = await state.get_data()
+    child_id = data.get('target_deduct_child_id')
+    
+    cursor.execute("SELECT name, balance_coins FROM Users WHERE user_id = ?", (child_id,))
+    child = cursor.fetchone()
+    if not child: return
+    new_balance = max(0, child[1] - amount)
+    cursor.execute("UPDATE Users SET balance_coins = ? WHERE user_id = ?", (new_balance, child_id))
+    conn.commit()
+    
+    await message.answer(f"✅ <b>{child[0]}ning hisobidan {amount} 🔅 ayirildi!</b>\nYangi balans: <b>{new_balance} 🔅</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    await state.clear()
+    try: await message.bot.send_message(child_id, f"ℹ️ <b>Ota-onangiz hisobingizdan {amount} 🔅 ayirdi.</b>\nHozirgi balansingiz: <b>{new_balance} 🔅</b>", parse_mode="HTML")
+    except Exception: pass
+
+@router.callback_query(F.data.startswith("dedzero_"))
+async def deduct_zero_handler(callback: types.CallbackQuery):
+    child_id = int(callback.data.split("_")[1])
+    cursor.execute("SELECT name, balance_coins FROM Users WHERE user_id = ?", (child_id,))
+    child = cursor.fetchone()
+    cursor.execute("UPDATE Users SET balance_coins = 0 WHERE user_id = ?", (child_id,))
+    conn.commit()
+    
+    await callback.answer(f"{child[0]}ning balansi 0 ga tushirildi!", show_alert=True)
+    await show_single_child_result(callback, child_id, callback.from_user.id)
+    try: await callback.bot.send_message(child_id, "ℹ️ <b>Ota-onangiz hisobingizdagi Biliglarni nolga tushirdi.</b>\nHozirgi balansingiz: <b>0 🔅</b>", parse_mode="HTML")
+    except Exception: pass
 
 @router.callback_query(F.data.startswith("weeklyrep_"))
 async def weekly_report_handler(callback: types.CallbackQuery):
@@ -672,66 +784,6 @@ async def childres_callback(callback: types.CallbackQuery):
     child_id = int(callback.data.split("_")[1])
     await show_single_child_result(callback, child_id, callback.from_user.id)
     await callback.answer()
-
-@router.callback_query(F.data.startswith("deduct_coins_"))
-async def deduct_coins_menu(callback: types.CallbackQuery):
-    child_id = int(callback.data.split("_")[2])
-    cursor.execute("SELECT name, balance_coins FROM Users WHERE user_id = ?", (child_id,))
-    child = cursor.fetchone()
-    if not child: return
-    
-    kb = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="✍️ Summa kiritish (Masalan: 10)", callback_data=f"dedcustom_{child_id}")],
-        [InlineKeyboardButton(text="🔄 Hisobni 0 ga tushirish", callback_data=f"dedzero_{child_id}")],
-        [InlineKeyboardButton(text="🔙 Orqaga", callback_data=f"childres_{child_id}")]
-    ])
-    text = f"➖ <b>{child[0]}ning hisobidan Bilig (🔅) ayirish</b>\n\nHozirgi balans: <b>{child[1]} 🔅</b>"
-    await callback.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
-    await callback.answer()
-
-@router.callback_query(F.data.startswith("dedzero_"))
-async def deduct_zero_handler(callback: types.CallbackQuery):
-    child_id = int(callback.data.split("_")[1])
-    cursor.execute("SELECT name, balance_coins FROM Users WHERE user_id = ?", (child_id,))
-    child = cursor.fetchone()
-    cursor.execute("UPDATE Users SET balance_coins = 0 WHERE user_id = ?", (child_id,))
-    conn.commit()
-    
-    await callback.answer(f"{child[0]}ning balansi 0 ga tushirildi!", show_alert=True)
-    await show_single_child_result(callback, child_id, callback.from_user.id)
-    try: await callback.bot.send_message(child_id, "ℹ️ <b>Ota-onangiz hisobingizdagi Biliglarni nolga tushirdi.</b>\nHozirgi balansingiz: <b>0 🔅</b>", parse_mode="HTML")
-    except Exception: pass
-
-@router.callback_query(F.data.startswith("dedcustom_"))
-async def deduct_custom_start(callback: types.CallbackQuery, state: FSMContext):
-    child_id = int(callback.data.split("_")[1])
-    await state.update_data(target_deduct_child_id=child_id)
-    try: await callback.message.delete()
-    except Exception: pass
-    await callback.bot.send_message(callback.from_user.id, "✍️ <b>Hisobdan necha Bilig (🔅) ayirmoqchisiz?</b> (Masalan: 10):", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
-    await state.set_state(ParentSettings.waiting_for_coin_deduction)
-    await callback.answer()
-
-@router.message(ParentSettings.waiting_for_coin_deduction)
-async def process_coin_deduction(message: types.Message, state: FSMContext):
-    if not message.text.isdigit():
-        await message.answer("⚠️ Iltimos, faqat raqam kiriting!")
-        return
-    amount = int(message.text)
-    data = await state.get_data()
-    child_id = data.get('target_deduct_child_id')
-    
-    cursor.execute("SELECT name, balance_coins FROM Users WHERE user_id = ?", (child_id,))
-    child = cursor.fetchone()
-    if not child: return
-    new_balance = max(0, child[1] - amount)
-    cursor.execute("UPDATE Users SET balance_coins = ? WHERE user_id = ?", (new_balance, child_id))
-    conn.commit()
-    
-    await message.answer(f"✅ <b>{child[0]}ning hisobidan {amount} 🔅 ayirildi!</b>\nYangi balans: <b>{new_balance} 🔅</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
-    await state.clear()
-    try: await message.bot.send_message(child_id, f"ℹ️ <b>Ota-onangiz hisobingizdan {amount} 🔅 ayirdi.</b>\nHozirgi balansingiz: <b>{new_balance} 🔅</b>", parse_mode="HTML")
-    except Exception: pass
 
 @router.callback_query(F.data == "add_child_info")
 async def add_child_info_handler(callback: types.CallbackQuery):
