@@ -12,7 +12,6 @@ class PlanCreation(StatesGroup):
     waiting_for_child = State()
     waiting_for_name = State()
     waiting_for_prize = State()
-    waiting_for_deadline = State()
     waiting_for_book_text = State()
     waiting_for_book_photo = State()
 
