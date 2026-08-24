@@ -7,6 +7,7 @@ class ParentSettings(StatesGroup):
     waiting_for_custom_rate = State()
     waiting_for_child_age = State()
     waiting_for_coin_deduction = State()
+    waiting_for_coin_addition = State()
 
 class PlanCreation(StatesGroup):
     waiting_for_child = State()
