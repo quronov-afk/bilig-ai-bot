@@ -1,0 +1,382 @@
+import json
+from datetime import datetime, timedelta
+from aiogram import Router, types, F
+from aiogram.fsm.context import FSMContext
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from database import conn, cursor, get_parent_id, update_streak
+from keyboards import get_child_keyboard, get_back_reply_keyboard
+from states import ChildReading
+from ai_service import verify_page_photo, evaluate_voice_summary
+
+router = Router()
+
+# ==========================================
+# BOLANING KITOB RO'YXATI
+# ==========================================
+async def show_child_books(message_or_callback, user_id):
+    cursor.execute("SELECT parent_id FROM Family_Link WHERE child_id = ?", (user_id,))
+    link = cursor.fetchone()
+    if not link:
+        if isinstance(message_or_callback, types.Message): await message_or_callback.answer("Siz hali ota-onangizga ulanmagansiz!")
+        return
+        
+    cursor.execute("SELECT plan_id, name, prize FROM Reading_Plans WHERE parent_id = ? AND (child_id = ? OR child_id IS NULL) AND status = 'active'", (link[0], user_id))
+    plans = cursor.fetchall()
+    
+    kb, has_books, text = [], False, "🦸‍♂️ <b>Qahramon! Ota-onang senga ajoyib reja tuzgan.</b>\n\n"
+    for p in plans:
+        cursor.execute("SELECT book_id, title, pages_read, is_completed FROM Plan_Books WHERE plan_id = ?", (p[0],))
+        books = cursor.fetchall()
+        if books:
+            text += f"🎯 <b>{p[1]}</b> (Mukofot: {p[2]})\n"
+            for b in books:
+                if b[3] == 0: 
+                    kb.append([InlineKeyboardButton(text=f"📘 {b[1]} ({b[2]} bet)", callback_data=f"cread_{b[0]}")])
+                    has_books = True
+            text += "\n"
+            
+    if not has_books:
+        text = "Senda hozircha o'qilishi kerak bo'lgan kitoblar yo'q. 😊"
+        markup = None
+    else:
+        text += "👇 Qaysi kitobni o'qishni davom ettiramiz?"
+        markup = InlineKeyboardMarkup(inline_keyboard=kb)
+    
+    if isinstance(message_or_callback, types.Message): await message_or_callback.answer(text, parse_mode="HTML", reply_markup=markup)
+    else: await message_or_callback.message.edit_text(text, parse_mode="HTML", reply_markup=markup)
+
+@router.message(F.text == "📖 Kitob o'qish")
+async def child_read_book_msg(message: types.Message):
+    await show_child_books(message, message.from_user.id)
+
+@router.callback_query(F.data == "child_books_main")
+async def child_read_book_call(callback: types.CallbackQuery):
+    await show_child_books(callback, callback.from_user.id)
+    await callback.answer()
+
+@router.callback_query(F.data.startswith("cread_"))
+async def child_book_action(callback: types.CallbackQuery):
+    book_id = int(callback.data.split("_")[1])
+    cursor.execute("SELECT test_id FROM Book_Tests WHERE book_id = ?", (book_id,))
+    
+    test_btn = InlineKeyboardButton(text="📝 Testni ishlash (Bilig 🔅)", callback_data=f"taketest_{book_id}_0_0") if cursor.fetchone() else InlineKeyboardButton(text="🔒 Test (Hozircha mavjud emas)", callback_data="no_test_alert")
+        
+    kb = [
+        [InlineKeyboardButton(text="📸 Sahifani rasmga olib yuborish", callback_data=f"sendpage_{book_id}")],
+        [InlineKeyboardButton(text="🎤 Audio xulosa yuborish", callback_data=f"sendaudio_{book_id}")],
+        [test_btn],
+        [InlineKeyboardButton(text="✅ Kitobni tugatdim", callback_data=f"finishbook_{book_id}")],
+        [InlineKeyboardButton(text="🔙 Orqaga", callback_data="child_books_main")]
+    ]
+    await callback.message.edit_text("Ajoyib tanlov! O'qishni boshla. To'xtagan joyingda menga sahifani rasmga olib yubor.", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
+    await callback.answer()
+
+@router.callback_query(F.data == "no_test_alert")
+async def no_test_alert(callback: types.CallbackQuery):
+    await callback.answer("🔒 Ota-onangiz bu kitob uchun hali test tuzmagan. O'qishda davom eting!", show_alert=True)
+
+@router.callback_query(F.data.startswith("finishbook_"))
+async def finish_book_handler(callback: types.CallbackQuery):
+    book_id = int(callback.data.split("_")[1])
+    cursor.execute("UPDATE Plan_Books SET is_completed = 1 WHERE book_id = ?", (book_id,))
+    cursor.execute("SELECT plan_id, title FROM Plan_Books WHERE book_id = ?", (book_id,))
+    plan_id, book_title = cursor.fetchone()
+    
+    cursor.execute("SELECT COUNT(*) FROM Plan_Books WHERE plan_id = ? AND is_completed = 0", (plan_id,))
+    remaining = cursor.fetchone()[0]
+    parent_id = get_parent_id(callback.from_user.id)
+    
+    if remaining == 0:
+        cursor.execute("UPDATE Reading_Plans SET status = 'completed' WHERE plan_id = ?", (plan_id,))
+        cursor.execute("SELECT name, prize FROM Reading_Plans WHERE plan_id = ?", (plan_id,))
+        plan_name, prize = cursor.fetchone()
+        
+        await callback.message.edit_text(f"🎉 <b>URAA! MARAFON TUGADI!</b>\n\nSen '{plan_name}' rejasidagi barcha kitoblarni o'qib bo'lding!\nEndi ota-onangdan <b>'{prize}'</b> mukofotini so'rashing mumkin! Qahramon! 🦸‍♂️", parse_mode="HTML")
+        if parent_id:
+            await callback.bot.send_message(parent_id, f"🎉 <b>TABRIKLAYMIZ!</b>\n\nFarzandingiz '{plan_name}' rejasini to'liq yakunladi!\nUnga va'da qilingan <b>'{prize}'</b> mukofotini berish vaqti keldi! 🎁", parse_mode="HTML")
+    else:
+        await callback.message.edit_text(f"✅ <b>'{book_title}'</b> kitobini tugatding! Barakalla!\nRejada yana {remaining} ta kitob qoldi.", parse_mode="HTML")
+        if parent_id:
+            await callback.bot.send_message(parent_id, f"📚 Farzandingiz <b>'{book_title}'</b> kitobini to'liq o'qib tugatdi! ✅", parse_mode="HTML")
+            
+    conn.commit()
+    await callback.answer()
+
+# ==========================================
+# SAHIFA RASMINI TEKSHIRISH (AI VISION)
+# ==========================================
+@router.callback_query(F.data.startswith("sendpage_"))
+async def ask_page_photo(callback: types.CallbackQuery, state: FSMContext):
+    book_id = int(callback.data.split("_")[1])
+    await state.update_data(reading_book_id=book_id)
+    await callback.message.delete()
+    await callback.bot.send_message(callback.from_user.id, "📸 <b>O'qigan sahifangni rasmga olib yubor!</b>", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await state.set_state(ChildReading.waiting_for_page_photo)
+    await callback.answer()
+
+@router.message(ChildReading.waiting_for_page_photo, F.photo)
+async def process_reading_photo(message: types.Message, state: FSMContext):
+    processing_msg = await message.answer("⏳ <i>AI sahifani tekshirmoqda...</i>", parse_mode="HTML")
+    try:
+        photo = message.photo[-1]
+        file_info = await message.bot.get_file(photo.file_id)
+        downloaded_file = await message.bot.download_file(file_info.file_path)
+        
+        ai_result = await verify_page_photo(downloaded_file.read())
+        try: await message.delete()
+        except Exception: pass 
+        
+        if not ai_result.get("is_book_page"):
+            await processing_msg.delete()
+            await message.answer("🚫 Bu kitob sahifasiga o'xshamayapti. Qaytadan urinib ko'r!", reply_markup=get_child_keyboard())
+            await state.clear()
+            return
+            
+        new_page_num = int(ai_result.get("page_number", 0))
+        if new_page_num == 0:
+            await processing_msg.delete()
+            await message.answer("⚠️ Sahifa raqami ko'rinmadi! Raqam aniq ko'rinsin.", reply_markup=get_child_keyboard())
+            await state.clear()
+            return
+            
+        data = await state.get_data()
+        book_id = data.get('reading_book_id')
+        child_id = message.from_user.id
+        
+        cursor.execute("SELECT pages_read, title FROM Plan_Books WHERE book_id = ?", (book_id,))
+        row = cursor.fetchone()
+        old_pages, book_title = (row[0], row[1]) if row else (0, "Kitob")
+        
+        if new_page_num <= old_pages:
+            await processing_msg.delete()
+            await message.answer(f"⚠️ Sen allaqachon {old_pages}-sahifagacha o'qigansan! Yangi sahifani yubor.", reply_markup=get_child_keyboard())
+            await state.clear()
+            return
+        
+        cursor.execute("UPDATE Plan_Books SET pages_read = ? WHERE book_id = ?", (new_page_num, book_id))
+        earned_bilig = (new_page_num // 5) - (old_pages // 5)
+        pages_read_now = new_page_num - old_pages
+        
+        now_ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cursor.execute("INSERT INTO Reading_Logs (child_id, book_id, pages_added, created_at) VALUES (?, ?, ?, ?)", (child_id, book_id, pages_read_now, now_ts))
+        streak = update_streak(child_id) 
+        
+        if earned_bilig > 0:
+            cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (earned_bilig, child_id))
+            reply_text = f"🎉 <b>Qoyilmaqom!</b> Sen {pages_read_now} bet o'qiding va <b>{earned_bilig} 🔅 Bilig</b> ishlading!\n🔥 Streak: {streak} kun!\n<i>(Jami: {new_page_num} bet)</i>"
+        else:
+            reply_text = f"👍 <b>Barakalla!</b> Sen {pages_read_now} bet o'qiding. Yana {5 - (new_page_num % 5)} bet o'qisang, Bilig olasan!\n🔥 Streak: {streak} kun!"
+            
+        conn.commit()
+        await processing_msg.delete()
+        await message.answer(reply_text, parse_mode="HTML", reply_markup=get_child_keyboard())
+        await state.clear()
+        
+        parent_id = get_parent_id(child_id)
+        if parent_id:
+            await message.bot.send_message(parent_id, f"📖 Farzandingiz <b>'{book_title}'</b> kitobidan {pages_read_now} bet o'qidi. (Jami: {new_page_num} bet).", parse_mode="HTML")
+    except Exception as e:
+        await processing_msg.delete()
+        await message.answer(f"❌ Xatolik yuz berdi. Qaytadan urinib ko'r.", reply_markup=get_child_keyboard())
+        await state.clear()
+
+# ==========================================
+# AUDIO XULOSA VA ADABIYOTSHUNOS BAHOSI
+# ==========================================
+@router.callback_query(F.data.startswith("sendaudio_"))
+async def ask_audio_summary(callback: types.CallbackQuery, state: FSMContext):
+    book_id = int(callback.data.split("_")[1])
+    cursor.execute("SELECT pages_read, audio_count FROM Plan_Books WHERE book_id = ?", (book_id,))
+    row = cursor.fetchone()
+    if not row: return
+        
+    pages_read, audio_count = row[0], (row[1] if row[1] else 0)
+    required_pages = 10 if audio_count == 0 else 10 + (audio_count * 30)
+    
+    if pages_read < required_pages:
+        await callback.answer(f"🔒 Audio yuborish uchun kamida {required_pages}-sahifagacha o'qishingiz kerak!\n(Hozir: {pages_read} bet)", show_alert=True)
+        return
+        
+    await state.update_data(audio_book_id=book_id, is_retry=False)
+    await callback.message.delete()
+    await callback.bot.send_message(callback.from_user.id, "🎤 <b>Ovozli xabar yubor!</b>\n\nKitobda nima bo'lganini aytib ber. AI Adabiyotshunos eshitib, baho beradi!", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await state.set_state(ChildReading.waiting_for_audio)
+    await callback.answer()
+
+@router.callback_query(F.data.startswith("retryaudio_"))
+async def retry_audio_summary(callback: types.CallbackQuery, state: FSMContext):
+    book_id = int(callback.data.split("_")[1])
+    await state.update_data(audio_book_id=book_id, is_retry=True)
+    await callback.message.delete()
+    await callback.bot.send_message(callback.from_user.id, "🎤 <b>Qayta ovozli xabar yubor!</b>\nBatafsilroq gapirishga harakat qil!", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await state.set_state(ChildReading.waiting_for_audio)
+    await callback.answer()
+
+@router.message(ChildReading.waiting_for_audio, F.voice)
+async def process_audio_summary(message: types.Message, state: FSMContext):
+    processing_msg = await message.answer("⏳ <i>Adabiyotshunos seni eshitmoqda...</i>", parse_mode="HTML")
+    try:
+        file_info = await message.bot.get_file(message.voice.file_id)
+        downloaded_file = await message.bot.download_file(file_info.file_path)
+        
+        data = await state.get_data()
+        book_id, is_retry = data.get('audio_book_id'), data.get('is_retry', False)
+        
+        cursor.execute("SELECT child_age FROM Family_Link WHERE child_id = ?", (message.from_user.id,))
+        age_row = cursor.fetchone()
+        age = age_row[0] if age_row else 10
+        
+        cursor.execute("SELECT title FROM Plan_Books WHERE book_id = ?", (book_id,))
+        book_row = cursor.fetchone()
+        book_title = book_row[0] if book_row else "Kitob"
+        
+        ai_result = await evaluate_voice_summary(downloaded_file.read(), age, book_title)
+        bonus = int(ai_result.get("bonus_bilig", 1))
+        give_badge = ai_result.get("give_badge", False)
+        child_feedback = ai_result.get("child_feedback", "Ajoyib xulosa!")
+        parent_rep = ai_result.get("parent_report", {})
+        
+        if not is_retry: cursor.execute("UPDATE Plan_Books SET audio_count = audio_count + 1 WHERE book_id = ?", (book_id,))
+        cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (bonus, message.from_user.id))
+        update_streak(message.from_user.id)
+        
+        badge_text = ""
+        if give_badge:
+            cursor.execute("SELECT badges FROM Users WHERE user_id = ?", (message.from_user.id,))
+            current_badges = cursor.fetchone()[0]
+            if "Notiq" not in current_badges:
+                cursor.execute("UPDATE Users SET badges = ? WHERE user_id = ?", (current_badges + " 🗣 Notiq" if current_badges else "🗣 Notiq", message.from_user.id))
+                badge_text = "\n\n🏅 <b>TABRIKLAYMIZ! 'Notiq' nishonini olding!</b>"
+                
+        conn.commit()
+        kb_child = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text=f"🎤 Qayta aytib berish (+{5 - bonus} 🔅)", callback_data=f"retryaudio_{book_id}")]]) if bonus < 5 else None
+            
+        await processing_msg.delete()
+        await message.answer(f"👨‍🏫 <b>Adabiyotshunos:</b>\n\n{child_feedback}\n\n🎁 <b>Mukofot:</b> {bonus} 🔅 Bilig!{badge_text}", parse_mode="HTML", reply_markup=kb_child if kb_child else get_child_keyboard())
+        await state.clear()
+        
+        parent_id = get_parent_id(message.from_user.id)
+        if parent_id:
+            cursor.execute("SELECT name FROM Users WHERE user_id = ?", (message.from_user.id,))
+            c_name = cursor.fetchone()[0]
+            parent_text = (
+                f"📊 <b>FARZANDINGIZNING AUDIO TAHLILI</b>\n\n"
+                f"👦 <b>Farzand:</b> {c_name}\n📘 <b>Kitob:</b> {book_title}\n🎁 <b>Bilig:</b> {bonus}/5 🔅\n\n"
+                f"📝 <b>Mazmuni:</b> <i>{parent_rep.get('summary')}</i>\n\n"
+                f"✅ <b>Yutuqlari:</b> {parent_rep.get('strengths')}\n\n"
+                f"⚠️ <b>Kamchiliklar:</b> {parent_rep.get('weaknesses')}"
+            )
+            await message.bot.send_message(parent_id, parent_text, parse_mode="HTML")
+    except Exception as e:
+        await processing_msg.delete()
+        await message.answer(f"❌ Xatolik yuz berdi.", reply_markup=get_child_keyboard())
+        await state.clear()
+
+# ==========================================
+# TEST TOPSHIRISH
+# ==========================================
+@router.callback_query(F.data.startswith("taketest_"))
+async def execute_test(callback: types.CallbackQuery):
+    parts = callback.data.split("_")
+    book_id, q_idx, correct_count = int(parts[1]), int(parts[2]), int(parts[3])
+    
+    cursor.execute("SELECT questions_json FROM Book_Tests WHERE book_id = ?", (book_id,))
+    test_row = cursor.fetchone()
+    if not test_row:
+        await callback.answer("🔒 Test topilmadi!", show_alert=True)
+        return
+        
+    questions = json.loads(test_row[0])
+    if q_idx >= len(questions):
+        cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (correct_count, callback.from_user.id))
+        cursor.execute("DELETE FROM Book_Tests WHERE book_id = ?", (book_id,))
+        conn.commit()
+        
+        await callback.message.edit_text(f"🏁 <b>Test yakunlandi!</b>\n\n✅ To'g'ri: {correct_count} ta\n🎁 Sen <b>{correct_count} 🔅 Bilig</b> yutib olding! 🧠", parse_mode="HTML")
+        parent_id = get_parent_id(callback.from_user.id)
+        if parent_id:
+            cursor.execute("SELECT name FROM Users WHERE user_id = ?", (callback.from_user.id,))
+            c_name = cursor.fetchone()[0]
+            cursor.execute("SELECT title FROM Plan_Books WHERE book_id = ?", (book_id,))
+            b_title = cursor.fetchone()[0]
+            pct = int((correct_count / len(questions)) * 100)
+            await callback.bot.send_message(parent_id, f"📝 <b>TEST NATIJASI</b>\n\n👦 <b>{c_name}</b> | 📘 {b_title}\n🎯 Natija: {correct_count}/{len(questions)} ({pct}%)\n🎁 +{correct_count} 🔅 Bilig", parse_mode="HTML")
+        await callback.answer()
+        return
+        
+    q = questions[q_idx]
+    kb = []
+    for opt in q['options']:
+        is_correct = 1 if opt.strip() == q['answer'].strip() else 0
+        kb.append([InlineKeyboardButton(text=opt, callback_data=f"tans_{book_id}_{q_idx+1}_{correct_count}_{is_correct}")])
+        
+    kb.append([InlineKeyboardButton(text="🔙 To'xtatish", callback_data=f"cread_{book_id}")])
+    await callback.message.edit_text(f"📝 <b>{q_idx + 1}-savol:</b>\n\n{q['question']}", parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
+    await callback.answer()
+
+@router.callback_query(F.data.startswith("tans_"))
+async def process_test_answer(callback: types.CallbackQuery):
+    parts = callback.data.split("_")
+    _, book_id, next_q_idx, correct_count, is_correct = parts
+    new_correct_count = int(correct_count) + int(is_correct)
+    callback.data = f"taketest_{book_id}_{next_q_idx}_{new_correct_count}"
+    await execute_test(callback)
+
+# ==========================================
+# SOVRINLAR VA REYTING
+# ==========================================
+@router.message(F.text == "🎁 Sovrinlarim")
+async def show_rewards(message: types.Message):
+    cursor.execute("SELECT balance_coins, badges, streak_days FROM Users WHERE user_id = ?", (message.from_user.id,))
+    user = cursor.fetchone()
+    text = f"🦸‍♂️ <b>Qahramon: {message.from_user.full_name}</b>\n\n🔅 <b>Biliglar:</b> {user[0]} ta\n🔥 <b>Uzluksiz o'qish:</b> {user[2]} kun\n🏅 <b>Nishonlar:</b> {user[1] or 'Hali yo\'q'}\n"
+    kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="🛒 Do'konga kirish", callback_data="child_store")]])
+    await message.answer(text, parse_mode="HTML", reply_markup=kb)
+
+@router.callback_query(F.data == "child_store")
+async def child_store_handler(callback: types.CallbackQuery):
+    parent_id = get_parent_id(callback.from_user.id)
+    if not parent_id: return
+    cursor.execute("SELECT item_id, name, price FROM Store_Items WHERE parent_id = ?", (parent_id,))
+    items = cursor.fetchall()
+    
+    if not items:
+        await callback.message.edit_text("🛒 Do'konda hozircha sovg'alar yo'q.")
+        return
+        
+    kb = [[InlineKeyboardButton(text=f"🎁 {item[1]} - {item[2]} 🔅", callback_data=f"buyitem_{item[0]}")] for item in items]
+    await callback.message.edit_text("🛒 <b>Sovg'alar do'koni</b>\nNima sotib olamiz?", parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
+    await callback.answer()
+
+@router.callback_query(F.data.startswith("buyitem_"))
+async def buy_item_handler(callback: types.CallbackQuery):
+    item_id = int(callback.data.split("_")[1])
+    cursor.execute("SELECT name, price, parent_id FROM Store_Items WHERE item_id = ?", (item_id,))
+    item = cursor.fetchone()
+    cursor.execute("SELECT balance_coins FROM Users WHERE user_id = ?", (callback.from_user.id,))
+    balance = cursor.fetchone()[0]
+    
+    if balance < item[1]:
+        await callback.answer(f"Yetarli Bilig yo'q! Yana {item[1] - balance} 🔅 kerak.", show_alert=True)
+        return
+        
+    cursor.execute("UPDATE Users SET balance_coins = balance_coins - ? WHERE user_id = ?", (item[1], callback.from_user.id))
+    conn.commit()
+    
+    await callback.message.edit_text(f"🎉 <b>Tabriklaymiz!</b> Sen <b>{item[0]}</b> sotib olding!", parse_mode="HTML")
+    await callback.bot.send_message(item[2], f"🛍 <b>Diqqat!</b> Farzandingiz do'kondan <b>'{item[0]}'</b> sotib oldi!", parse_mode="HTML")
+    await callback.answer()
+
+@router.message(F.text == "🏆 Reyting")
+async def show_leaderboard(message: types.Message):
+    cursor.execute("SELECT name, balance_coins FROM Users WHERE role = 'child' ORDER BY balance_coins DESC LIMIT 10")
+    top_users = cursor.fetchall()
+    if not top_users:
+        await message.answer("Hali reyting shakllanmadi.")
+        return
+        
+    text, medals = "🏆 <b>Eng ko'p Bilig yig'ganlar:</b>\n\n", ["🥇", "🥈", "🥉"]
+    for i, u in enumerate(top_users):
+        medal = medals[i] if i < 3 else f"{i+1}."
+        text += f"{medal} <b>{u[0]}</b> - {u[1]} 🔅\n"
+    await message.answer(text, parse_mode="HTML")
