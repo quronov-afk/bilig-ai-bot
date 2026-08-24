@@ -329,7 +329,8 @@ async def process_test_answer(callback: types.CallbackQuery):
 async def show_rewards(message: types.Message):
     cursor.execute("SELECT balance_coins, badges, streak_days FROM Users WHERE user_id = ?", (message.from_user.id,))
     user = cursor.fetchone()
-    text = f"🦸‍♂️ <b>Qahramon: {message.from_user.full_name}</b>\n\n🔅 <b>Biliglar:</b> {user[0]} ta\n🔥 <b>Uzluksiz o'qish:</b> {user[2]} kun\n🏅 <b>Nishonlar:</b> {user[1] or 'Hali yo\'q'}\n"
+    badges_display = user[1] if user[1] else "Hali yo'q"
+    text = f"🦸‍♂️ <b>Qahramon: {message.from_user.full_name}</b>\n\n🔅 <b>Biliglar:</b> {user[0]} ta\n🔥 <b>Uzluksiz o'qish:</b> {user[2]} kun\n🏅 <b>Nishonlar:</b> {badges_display}\n"
     kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="🛒 Do'konga kirish", callback_data="child_store")]])
     await message.answer(text, parse_mode="HTML", reply_markup=kb)
 
