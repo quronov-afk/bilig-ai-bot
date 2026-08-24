@@ -210,6 +210,9 @@ WELCOME_TEXT = (
     "👇 <b>Boshlash uchun kimsiz?</b>"
 )
 
+# GEMINI MODELI NOMI
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
+
 # ==========================================
 # 1. MA'LUMOTLAR BAZASI (SQLITE)
 # ==========================================
@@ -638,7 +641,11 @@ async def process_rate_callback(callback: types.CallbackQuery, state: FSMContext
     rate = int(rate_val)
     cursor.execute("UPDATE Users SET coin_rate = ? WHERE user_id = ?", (rate, callback.from_user.id))
     conn.commit()
-    await callback.message.edit_text(f"✅ <b>Bilig kursi o'rnatildi!</b>\n1 🔅 = {rate} so'm.", parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
+    
+    if rate == 0:
+        await callback.message.edit_text("✅ <b>Siz pul bilan rag'batlantirmaslik rejimini tanladingiz!</b>\n\nEndi farzandingiz faqat nishonlar, reyting va bilim uchun o'qiydi. Bu juda zo'r tanlov! 🧠", parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
+    else:
+        await callback.message.edit_text(f"✅ <b>Bilig kursi o'rnatildi!</b>\n1 🔅 = {rate} so'm.", parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
     await callback.answer()
 
 @dp.message(ParentSettings.waiting_for_custom_rate)
@@ -809,7 +816,7 @@ async def process_book_photo(message: types.Message, state: FSMContext):
         file_info = await bot.get_file(photo.file_id)
         downloaded_file = await bot.download_file(file_info.file_path)
         
-        model = genai.GenerativeModel('gemini-3.6-flash')
+        model = genai.GenerativeModel(GEMINI_MODEL)
         prompt = "Bu kitob muqovasining rasmi. Menga faqat kitobning nomi va muallifini quyidagi formatda yozib ber: 'Kitob nomi. Muallif'."
         response = await model.generate_content_async([prompt, {"mime_type": "image/jpeg", "data": downloaded_file.read()}])
         ai_result = response.text.strip()
@@ -995,7 +1002,7 @@ async def generate_ai_test_multi(message: types.Message, state: FSMContext):
         Natijani FAQAT VA FAQAT quyidagi JSON formatida qaytar, boshqa hech qanday so'z qo'shma:
         [ {{"question": "Savol matni?", "options": ["A) variant", "B) variant", "C) variant"], "answer": "A) variant"}} ]"""
         
-        model = genai.GenerativeModel('gemini-3.6-flash')
+        model = genai.GenerativeModel(GEMINI_MODEL)
         
         contents = [prompt]
         for img_bytes in photos:
@@ -1144,7 +1151,7 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         2. Rasmda ko'rinib turgan eng katta sahifa raqamini top. Agar sahifa raqami umuman ko'rinmasa, 0 deb ber.
         Javobingni FAQAT JSON formatida ber: {"is_book_page": true, "page_number": 155}"""
         
-        model = genai.GenerativeModel('gemini-3.6-flash')
+        model = genai.GenerativeModel(GEMINI_MODEL)
         response = await model.generate_content_async([prompt, {"mime_type": "image/jpeg", "data": downloaded_file.read()}])
         
         ai_result = json.loads(clean_json(response.text))
@@ -1209,7 +1216,7 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         await state.clear()
 
 # ==========================================
-# 2-BOSQICH: AUDIO XULOSA VA ADABIYOTSHUNOS OLIM
+# 2-BOSQICH: AUDIO XULOSA, BOLA VA OTA UCHUN BOHOLASH
 # ==========================================
 @dp.callback_query(F.data.startswith("sendaudio_"))
 async def ask_audio_summary(callback: types.CallbackQuery, state: FSMContext):
@@ -1226,41 +1233,75 @@ async def ask_audio_summary(callback: types.CallbackQuery, state: FSMContext):
         await callback.answer(f"🔒 Audio xulosa yuborish uchun kamida {required_pages}-sahifagacha o'qishingiz kerak!\n\n(Hozir: {pages_read} bet o'qilgan)", show_alert=True)
         return
         
-    await state.update_data(audio_book_id=book_id)
+    await state.update_data(audio_book_id=book_id, is_retry=False)
     await callback.message.delete()
-    await bot.send_message(callback.from_user.id, "🎤 <b>Ovozli xabar yubor!</b>\n\nKitobda nimalar bo'lganini o'z so'zlaring bilan aytib ber. AI Adabiyotshunos olim seni eshitib, baho beradi!", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await bot.send_message(callback.from_user.id, "🎤 <b>Ovozli xabar yubor!</b>\n\nKitobda nimalar bo'lganini o'z so'zlaring bilan aytib ber. AI Adabiyotshunos seni eshitib, baho beradi!", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await state.set_state(ChildReading.waiting_for_audio)
+    await callback.answer()
+
+@dp.callback_query(F.data.startswith("retryaudio_"))
+async def retry_audio_summary(callback: types.CallbackQuery, state: FSMContext):
+    book_id = int(callback.data.split("_")[1])
+    await state.update_data(audio_book_id=book_id, is_retry=True)
+    await callback.message.delete()
+    await bot.send_message(callback.from_user.id, "🎤 <b>Qayta ovozli xabar yubor!</b>\n\nBu safar adabiyotshunos maslahat berganidek, chiroyliroq va batafsilroq gapirishga harakat qil. Omadingni sinab ko'r! 🚀", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
     await state.set_state(ChildReading.waiting_for_audio)
     await callback.answer()
 
 @dp.message(ChildReading.waiting_for_audio, F.voice)
 async def process_audio_summary(message: types.Message, state: FSMContext):
-    processing_msg = await message.answer("⏳ <i>Adabiyotshunos olim seni eshitmoqda...</i>", parse_mode="HTML")
+    processing_msg = await message.answer("⏳ <i>Adabiyotshunos va o'qituvchi seni eshitmoqda...</i>", parse_mode="HTML")
     try:
         file_info = await bot.get_file(message.voice.file_id)
         downloaded_file = await bot.download_file(file_info.file_path)
+        
+        data = await state.get_data()
+        book_id = data.get('audio_book_id')
+        is_retry = data.get('is_retry', False)
         
         cursor.execute("SELECT child_age FROM Family_Link WHERE child_id = ?", (message.from_user.id,))
         age_row = cursor.fetchone()
         age = age_row[0] if age_row else 10
         
-        prompt = f"""Sen mehribon va aqlli Adabiyotshunos olimsan. Bu {age} yoshli bolaning kitob bo'yicha audio xulosasi.
-        Bolaning yoshini hisobga olib, uning fikrlashini, so'z boyligini tahlil qil. Unga motivatsiya beruvchi, maqtab, iliq fikr (feedback) yoz. Xulosa sifatiga qarab 1 dan 5 gacha bonus Bilig (tanga) ber.
-        Javobni FAQAT JSON formatida ber: {{"feedback": "Sening xulosang juda zo'r...", "bonus_bilig": 3, "give_badge": true}}"""
+        cursor.execute("SELECT title FROM Plan_Books WHERE book_id = ?", (book_id,))
+        book_row = cursor.fetchone()
+        book_title = book_row[0] if book_row else "Kitob"
         
-        model = genai.GenerativeModel('gemini-3.6-flash')
+        prompt = f"""Sen mehribon va talabchan Adabiyotshunos hamda maktab o'qituvchisisan. Bu {age} yoshli bolaning '{book_title}' kitobi bo'yicha yuborgan audio xulosasi.
+
+        Tahlilni ikkita alohida qismga bo'lib, FAQAT quyidagi JSON formatida qaytar:
+
+        {{
+            "bonus_bilig": 3,
+            "give_badge": false,
+            "child_feedback": "Bola uchun sodda xabar matni...",
+            "parent_report": {{
+                "summary": "Audioning qisqacha matni va mazmuni...",
+                "focused_points": "Bola e'tibor qaratgan asosiy masalalar va voqealar...",
+                "strengths": "Bolaning yutuqlari (so'z boyligi, his-tuyg'ular, mantiq)...",
+                "weaknesses": "Kamchiliklari va rivojlantirish kerak bo'lgan jihatlari..."
+            }}
+        }}
+
+        TALABLAR:
+        1. "bonus_bilig": 1 dan 5 gacha butun raqam (sifatiga qarab).
+        2. "child_feedback": Bolaga yuboriladigan matn. Bolaga mos sodda tilda yoz. Agar Bilig kam (1, 2, 3) berilgan bo'lsa, xafa qilmasdan sababini tushuntir. Nutq so'zlash texnikasini o'rgat: "Gapirganda bunday gapir...", "Keyingi safar mana bu so'zlardan foydalan..." deb sodda o'rgat. Unga yana 1 ta imkoniyat va qolgan Biliglarni ishlash imkoniyati borligini aytib ruhlantir.
+        3. "parent_report": Otaga yuboriladigan HAQQONIY va OBYEKTIV pedagogik tahlil. Audiodagi kamchiliklar va yutuqlarni ro'y-rost ko'rsat.
+        4. "give_badge": boolean (juda ajoyib nutq bo'lsa true)."""
+        
+        model = genai.GenerativeModel(GEMINI_MODEL)
         response = await model.generate_content_async([prompt, {"mime_type": "audio/ogg", "data": downloaded_file.read()}])
         
         ai_result = json.loads(clean_json(response.text))
-        bonus = ai_result.get("bonus_bilig", 0)
+        bonus = int(ai_result.get("bonus_bilig", 1))
         give_badge = ai_result.get("give_badge", False)
-        feedback = ai_result.get("feedback", "Ajoyib xulosa!")
+        child_feedback = ai_result.get("child_feedback", "Ajoyib xulosa!")
+        parent_rep = ai_result.get("parent_report", {})
         
-        data = await state.get_data()
-        book_id = data.get('audio_book_id')
-        
-        cursor.execute("UPDATE Plan_Books SET audio_count = audio_count + 1 WHERE book_id = ?", (book_id,))
+        if not is_retry:
+            cursor.execute("UPDATE Plan_Books SET audio_count = audio_count + 1 WHERE book_id = ?", (book_id,))
+            
         cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (bonus, message.from_user.id))
-        
         update_streak(message.from_user.id)
         
         badge_text = ""
@@ -1274,14 +1315,41 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
                 
         conn.commit()
         
-        reply_text = f"👨‍🏫 <b>Adabiyotshunos olim:</b>\n<i>\"{feedback}\"</i>\n\n🎁 <b>Bonus:</b> {bonus} 🔅 Bilig!{badge_text}"
+        kb_child = None
+        if bonus < 5:
+            remaining = 5 - bonus
+            kb_child = InlineKeyboardMarkup(inline_keyboard=[
+                [InlineKeyboardButton(text=f"🎤 Qayta aytib berish (+{remaining} 🔅 Bilig)", callback_data=f"retryaudio_{book_id}")]
+            ])
+            
+        reply_text = f"👨‍🏫 <b>Adabiyotshunos:</b>\n\n{child_feedback}\n\n🎁 <b>Olgan mukofoting:</b> {bonus} 🔅 Bilig!{badge_text}"
         await processing_msg.delete()
-        await message.answer(reply_text, parse_mode="HTML", reply_markup=get_child_keyboard())
+        await message.answer(reply_text, parse_mode="HTML", reply_markup=kb_child if kb_child else get_child_keyboard())
         await state.clear()
         
+        # OTA-ONA UCHUN BATAHSIL PEDAGOGIK HISOBOT
         parent_id = get_parent_id(message.from_user.id)
         if parent_id:
-            await bot.send_message(parent_id, f"🎤 Farzandingiz audio xulosa yubordi va <b>{bonus} 🔅 Bilig</b> ishladi!", parse_mode="HTML")
+            cursor.execute("SELECT name FROM Users WHERE user_id = ?", (message.from_user.id,))
+            child_name = cursor.fetchone()[0]
+            
+            p_summary = parent_rep.get("summary", "Ko'rsatilmadi")
+            p_focused = parent_rep.get("focused_points", "Ko'rsatilmadi")
+            p_strengths = parent_rep.get("strengths", "Ko'rsatilmadi")
+            p_weaknesses = parent_rep.get("weaknesses", "Ko'rsatilmadi")
+            
+            parent_text = (
+                f"📊 <b>FARZANDINGIZNING AUDIO XULOSA TAHLILI</b>\n"
+                f"<i>(O'qituvchi va adabiyotshunos haqqoniy bahosi)</i>\n\n"
+                f"👦 <b>Farzand:</b> {child_name}\n"
+                f"📘 <b>Kitob:</b> {book_title}\n"
+                f"🎁 <b>Berilgan Bilig:</b> {bonus}/5 🔅\n\n"
+                f"📝 <b>Audio mazmuni:</b>\n<i>{p_summary}</i>\n\n"
+                f"🎯 <b>Bola e'tibor qilgan masalalar:</b>\n{p_focused}\n\n"
+                f"✅ <b>Yutuqlari:</b>\n{p_strengths}\n\n"
+                f"⚠️ <b>Kamchiliklar va rivojlantirish kerak bo'lgan jihatlar:</b>\n{p_weaknesses}"
+            )
+            await bot.send_message(parent_id, parent_text, parse_mode="HTML")
             
     except Exception as e:
         await processing_msg.delete()
@@ -1289,7 +1357,7 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
         await state.clear()
 
 # ==========================================
-# 3-BOSQICH: AI TEST YECHISH (ISHLANGAN VA TO'G'RILANGAN)
+# 3-BOSQICH: AI TEST YECHISH VA OTA-ONAGA HISOBOT
 # ==========================================
 @dp.callback_query(F.data.startswith("taketest_"))
 async def execute_test(callback: types.CallbackQuery):
@@ -1315,7 +1383,21 @@ async def execute_test(callback: types.CallbackQuery):
             
             parent_id = get_parent_id(callback.from_user.id)
             if parent_id:
-                await bot.send_message(parent_id, f"📝 Farzandingiz test yechdi! Natija: <b>{correct_count}/5</b> to'g'ri.", parse_mode="HTML")
+                cursor.execute("SELECT name FROM Users WHERE user_id = ?", (callback.from_user.id,))
+                c_name = cursor.fetchone()[0]
+                cursor.execute("SELECT title FROM Plan_Books WHERE book_id = ?", (book_id,))
+                b_title = cursor.fetchone()[0]
+                
+                pct = int((correct_count / len(questions)) * 100)
+                parent_test_text = (
+                    f"📝 <b>FARZANDINGIZ TEST NATIJASI</b>\n\n"
+                    f"👦 <b>Farzand:</b> {c_name}\n"
+                    f"📘 <b>Kitob:</b> {b_title}\n"
+                    f"🎯 <b>Natija:</b> {correct_count}/{len(questions)} ta to'g'ri ({pct}%)\n"
+                    f"🎁 <b>Ajarilgan Bilig:</b> +{correct_count} 🔅\n\n"
+                    f"💡 <i>Izoh: Test savollari mantiqiy fikrlash va diqqatni sinashga qaratilgan edi.</i>"
+                )
+                await bot.send_message(parent_id, parent_test_text, parse_mode="HTML")
             await callback.answer()
             return
             
@@ -1552,7 +1634,6 @@ async def deduct_zero_handler(callback: types.CallbackQuery):
     await callback.answer(f"{child[0]}ning balansi 0 ga tushirildi!", show_alert=True)
     await show_single_child_result(callback, child_id, callback.from_user.id)
     
-    # Farzandga bildirishnoma
     try:
         await bot.send_message(child_id, f"ℹ️ <b>Ota-onangiz hisobingizdagi Biliglarni nolga tushirdi.</b>\n<i>(Berilgan pul yoki mukofotlar hisobiga)</i>\n\nHozirgi balansingiz: <b>0 🔅</b>", parse_mode="HTML")
     except:
@@ -1602,7 +1683,6 @@ async def process_coin_deduction(message: types.Message, state: FSMContext):
     )
     await state.clear()
     
-    # Farzandga bildirishnoma
     try:
         await bot.send_message(child_id, f"ℹ️ <b>Ota-onangiz hisobingizdan {amount} 🔅 ayirdi.</b>\n<i>(Berilgan pul/sovg'a hisobiga)</i>\n\nHozirgi balansingiz: <b>{new_balance} 🔅</b>", parse_mode="HTML")
     except:
