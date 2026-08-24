@@ -1,25 +1,31 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 def get_parent_keyboard():
-    kb = [[KeyboardButton(text="📝 Mutolaa rejasini tuzish"), KeyboardButton(text="📚 Faol rejalarim")],
-          [KeyboardButton(text="📊 Farzandim natijalari"), KeyboardButton(text="🎁 Mukofotlar")],
-          [KeyboardButton(text="📞 Qayta aloqa")]]
+    kb = [
+        [KeyboardButton(text="📝 Mutolaa rejasini tuzish"), KeyboardButton(text="📚 Faol rejalarim")],
+        [KeyboardButton(text="📊 Farzandim natijalari"), KeyboardButton(text="🎁 Mukofotlar")],
+        [KeyboardButton(text="📞 Qayta aloqa")]
+    ]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
 def get_child_keyboard():
-    kb = [[KeyboardButton(text="📖 Kitob o'qish")],
-          [KeyboardButton(text="🎁 Sovrinlarim"), KeyboardButton(text="🏆 Reyting")],
-          [KeyboardButton(text="📞 Qayta aloqa")]]
+    kb = [
+        [KeyboardButton(text="📖 Kitob o'qish")],
+        [KeyboardButton(text="🎁 Mukofotlar"), KeyboardButton(text="🏆 Reyting")],
+        [KeyboardButton(text="📞 Qayta aloqa")]
+    ]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
 def get_back_reply_keyboard():
     return ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="🔙 Orqaga")]], resize_keyboard=True)
 
 def get_add_book_keyboard():
-    kb = [[InlineKeyboardButton(text="👶 Yosh bo'yicha tavsiyalar", callback_data="add_book_age")],
-          [InlineKeyboardButton(text="✍️ Matn orqali qo'shish", callback_data="add_book_text")],
-          [InlineKeyboardButton(text="📸 Rasm orqali (AI Vision)", callback_data="add_book_photo")],
-          [InlineKeyboardButton(text="✅ Rejani yakunlash", callback_data="finish_plan")]]
+    kb = [
+        [InlineKeyboardButton(text="👶 Yosh bo'yicha tavsiyalar", callback_data="add_book_age")],
+        [InlineKeyboardButton(text="✍️ Matn orqali qo'shish", callback_data="add_book_text")],
+        [InlineKeyboardButton(text="📸 Rasm orqali (AI Vision)", callback_data="add_book_photo")],
+        [InlineKeyboardButton(text="✅ Rejani yakunlash", callback_data="finish_plan")]
+    ]
     return InlineKeyboardMarkup(inline_keyboard=kb)
 
 def get_rewards_main_keyboard():
