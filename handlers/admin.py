@@ -1,9 +1,11 @@
 import uuid
+import asyncio
 from aiogram import Router, types, F
 from aiogram.filters import Command, CommandObject
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import OWNER_ID
 from database import conn, cursor, generate_admin_stats_text
+from keyboards import get_parent_keyboard, get_child_keyboard
 
 router = Router()
 
@@ -49,7 +51,6 @@ async def generate_invite_package(message: types.Message):
     if OWNER_ID != 0 and message.from_user.id != OWNER_ID:
         return
         
-    # Ota-ona va Farzand uchun alohida bir martalik tokenlar yaratamiz
     parent_token = f"prnt_{uuid.uuid4().hex[:8]}"
     child_token = f"chld_{uuid.uuid4().hex[:8]}"
     
@@ -81,6 +82,62 @@ async def generate_invite_package(message: types.Message):
     )
     
     await message.answer(invitation_text, parse_mode="HTML")
+
+# ==========================================
+# OMMAVIY XABAR YUBORISH VA MENYULARNI YANGILASH
+# ==========================================
+@router.message(Command("send"))
+@router.message(Command("broadcast"))
+async def broadcast_message_handler(message: types.Message, command: CommandObject):
+    if OWNER_ID != 0 and message.from_user.id != OWNER_ID:
+        return
+        
+    if not command.args:
+        await message.answer(
+            "⚠️ <b>Foydalanish:</b>\n<code>/send Sizning xabaringiz...</code>\n\n"
+            "<i>Ushbu buyruq barcha foydalanuvchilarga xabarni yuboradi va ularning menyularini yangilaydi.</i>",
+            parse_mode="HTML"
+        )
+        return
+        
+    broadcast_text = command.args
+    status_msg = await message.answer("⏳ <i>Barcha foydalanuvchilarga xabar yetkazilmoqda...</i>", parse_mode="HTML")
+    
+    cursor.execute("SELECT user_id, role FROM Users WHERE is_approved = 1")
+    users = cursor.fetchall()
+    
+    success_count = 0
+    fail_count = 0
+    
+    for u in users:
+        u_id, u_role = u[0], u[1]
+        try:
+            # Foydalanuvchi roliga mos ravishda yangi menyu biriktiriladi
+            if u_role == 'parent':
+                markup = get_parent_keyboard()
+            elif u_role == 'child':
+                markup = get_child_keyboard()
+            else:
+                markup = None
+                
+            await message.bot.send_message(
+                u_id,
+                f"📢 <b>BILIG AI BILDIRISHNOMASI:</b>\n\n{broadcast_text}",
+                parse_mode="HTML",
+                reply_markup=markup
+            )
+            success_count += 1
+            await asyncio.sleep(0.05)  # Telegram spam chekloviga tushmaslik uchun
+        except Exception:
+            fail_count += 1
+
+    await status_msg.edit_text(
+        f"✅ <b>Ommaviy xabar yuborildi!</b>\n\n"
+        f"📨 Yetkazildi: <b>{success_count} ta</b> foydalanuvchiga\n"
+        f"⚠️ Yetib bormadi (botni bloklaganlar): <b>{fail_count} ta</b>\n\n"
+        f"<i>Barcha faol foydalanuvchilarning bosh menyusi eng so'nggi holatga yangilandi! 🚀</i>",
+        parse_mode="HTML"
+    )
 
 @router.message(Command("reply"))
 async def admin_reply_handler(message: types.Message, command: CommandObject):
