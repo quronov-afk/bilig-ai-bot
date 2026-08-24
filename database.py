@@ -30,7 +30,7 @@ def init_db():
     except: pass
     try: cursor.execute("ALTER TABLE Users ADD COLUMN badges TEXT DEFAULT ''")
     except: pass
-    try: cursor.execute("ALTER TABLE Users ADD COLUMN is_approved INTEGER DEFAULT 0")
+    try: cursor.execute("ALTER TABLE Users ADD COLUMN is_approved INTEGER DEFAULT 1")
     except: pass
     try: cursor.execute("ALTER TABLE Plan_Books ADD COLUMN audio_count INTEGER DEFAULT 0")
     except: pass
