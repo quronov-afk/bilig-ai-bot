@@ -1,8 +1,5 @@
 from aiogram.fsm.state import State, StatesGroup
 
-class Access(StatesGroup):
-    waiting_for_code = State()
-
 class Registration(StatesGroup):
     waiting_for_parent_code = State()
 
