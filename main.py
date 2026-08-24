@@ -205,7 +205,7 @@ WELCOME_TEXT = (
     "👋 <b>Bilig AI ga xush kelibsiz!</b>\n\n"
     "Ushbu bot bolalar yozuvchisi <b>Sa'dullo Quronov</b> tomonidan farzandiga kitob o'qitishda qiynalayotgan ota-onalarga yordam berish uchun yaratildi.\n\n"
     "🎯 <b>Qanday ishlaydi?</b>\n"
-    "📖 <b>Bola o'qiydi</b> ➡️ 🤖 <b>AI tekshirib \"Bilig\" (🟡 oltin tanga) beradi</b> ➡️ 🎁 <b>Bola tangalariga siz belgilagan sovg'alarni oladi!</b>\n\n"
+    "📖 <b>Bola o'qiydi</b> ➡️ 🤖 <b>AI tekshirib \"Bilig\" (🔅 oltin tanga) beradi</b> ➡️ 🎁 <b>Bola tangalariga siz belgilagan sovg'alarni oladi!</b>\n\n"
     "Kitob o'qish endi urush-janjal emas, qiziqarli o'yin! 🚀\n\n"
     "👇 <b>Boshlash uchun kimsiz?</b>"
 )
@@ -320,8 +320,8 @@ def generate_admin_stats_text():
         f"• Jami mutolaa rejalari: <b>{total_plans} ta</b> (Tugatilgan: {completed_plans})\n"
         f"• Rejalardagi kitoblar: <b>{total_books} ta</b> (Tugatilgan: {completed_books})\n"
         f"• 📚 Jami o'qilgan sahifalar: <b>{total_pages} bet</b>\n\n"
-        f"🟡 <b>FAOLLIK VA BILIG:</b>\n"
-        f"• Bolalardagi jami Biliglar: <b>{total_coins} 🟡</b>\n"
+        f"🔅 <b>FAOLLIK VA BILIG:</b>\n"
+        f"• Bolalardagi jami Biliglar: <b>{total_coins} 🔅</b>\n"
         f"• AI orqali tuzilgan testlar: <b>{total_tests} ta</b>\n\n"
         f"🆕 <b>Oxirgi a'zo bo'lganlar:</b>\n{recent_text}"
     )
@@ -369,17 +369,17 @@ def get_add_book_keyboard():
 
 def get_rewards_main_keyboard():
     kb = [
-        [InlineKeyboardButton(text="🟡 Bilig kursini belgilash", callback_data="rewards_bilig_rate")],
+        [InlineKeyboardButton(text="🔅 Bilig kursini belgilash", callback_data="rewards_bilig_rate")],
         [InlineKeyboardButton(text="🛍 Sovg'alar do'konini tahrirlash", callback_data="rewards_store_edit")]
     ]
     return InlineKeyboardMarkup(inline_keyboard=kb)
 
 def get_bilig_rate_inline_keyboard():
     kb = [
-        [InlineKeyboardButton(text="🟡 500 so'm", callback_data="rate_500"),
-         InlineKeyboardButton(text="🟡 1,000 so'm", callback_data="rate_1000")],
-        [InlineKeyboardButton(text="🟡 5,000 so'm", callback_data="rate_5000"),
-         InlineKeyboardButton(text="🟡 10,000 so'm", callback_data="rate_10000")],
+        [InlineKeyboardButton(text="🔅 500 so'm", callback_data="rate_500"),
+         InlineKeyboardButton(text="🔅 1,000 so'm", callback_data="rate_1000")],
+        [InlineKeyboardButton(text="🔅 5,000 so'm", callback_data="rate_5000"),
+         InlineKeyboardButton(text="🔅 10,000 so'm", callback_data="rate_10000")],
         [InlineKeyboardButton(text="✍️ Boshqa summa kiritish", callback_data="rate_custom")],
         [InlineKeyboardButton(text="🚫 Pul bilan rag'batlantirmaslik", callback_data="rate_0")],
         [InlineKeyboardButton(text="🔙 Orqaga", callback_data="rewards_main")]
@@ -394,6 +394,7 @@ class Registration(StatesGroup): waiting_for_parent_code = State()
 class ParentSettings(StatesGroup): 
     waiting_for_custom_rate = State()
     waiting_for_child_age = State()
+    waiting_for_coin_deduction = State()
 class PlanCreation(StatesGroup):
     waiting_for_child = State()
     waiting_for_name = State()
@@ -473,7 +474,7 @@ async def cancel_handler(message: types.Message, state: FSMContext):
 async def admin_stats_handler(message: types.Message):
     user_id = message.from_user.id
     if OWNER_ID != 0 and user_id != OWNER_ID:
-        return  # Oddiy foydalanuvchiga hech narsa ko'rsatmaydi
+        return  
 
     stats_text = generate_admin_stats_text()
     if OWNER_ID == 0:
@@ -622,7 +623,7 @@ async def rewards_main_callback(callback: types.CallbackQuery):
 
 @dp.callback_query(F.data == "rewards_bilig_rate")
 async def rewards_bilig_rate_callback(callback: types.CallbackQuery):
-    text = "🟡 <b>Bilig kursini belgilash</b>\n\n1 ta Bilig (🟡) necha so'mga teng ekanligini tanlang."
+    text = "🔅 <b>Bilig kursini belgilash</b>\n\n1 ta Bilig (🔅) necha so'mga teng ekanligini tanlang."
     await callback.message.edit_text(text, parse_mode="HTML", reply_markup=get_bilig_rate_inline_keyboard())
     await callback.answer()
 
@@ -631,13 +632,13 @@ async def process_rate_callback(callback: types.CallbackQuery, state: FSMContext
     rate_val = callback.data.split("_")[1]
     if rate_val == "custom":
         await callback.message.delete()
-        await bot.send_message(callback.from_user.id, "✍️ <b>Iltimos, 1 ta Bilig (🟡) uchun summani kiriting:</b>\n<i>(Masalan: 1000, 5000)</i>", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+        await bot.send_message(callback.from_user.id, "✍️ <b>Iltimos, 1 ta Bilig (🔅) uchun summani kiriting:</b>\n<i>(Masalan: 1000, 5000)</i>", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
         await state.set_state(ParentSettings.waiting_for_custom_rate)
         return
     rate = int(rate_val)
     cursor.execute("UPDATE Users SET coin_rate = ? WHERE user_id = ?", (rate, callback.from_user.id))
     conn.commit()
-    await callback.message.edit_text(f"✅ <b>Bilig kursi o'rnatildi!</b>\n1 🟡 = {rate} so'm.", parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
+    await callback.message.edit_text(f"✅ <b>Bilig kursi o'rnatildi!</b>\n1 🔅 = {rate} so'm.", parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
     await callback.answer()
 
 @dp.message(ParentSettings.waiting_for_custom_rate)
@@ -648,7 +649,7 @@ async def process_custom_rate(message: types.Message, state: FSMContext):
     rate = int(message.text)
     cursor.execute("UPDATE Users SET coin_rate = ? WHERE user_id = ?", (rate, message.from_user.id))
     conn.commit()
-    await message.answer(f"✅ <b>Bilig kursi o'rnatildi!</b>\n1 🟡 = {rate} so'm.", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    await message.answer(f"✅ <b>Bilig kursi o'rnatildi!</b>\n1 🔅 = {rate} so'm.", parse_mode="HTML", reply_markup=get_parent_keyboard())
     await state.clear()
 
 # DO'KONNI TAHRIRLASH
@@ -659,7 +660,7 @@ async def store_edit_callback(callback: types.CallbackQuery):
     
     kb = []
     for item in items:
-        kb.append([InlineKeyboardButton(text=f"❌ {item[1]} ({item[2]} 🟡)", callback_data=f"delitem_{item[0]}")])
+        kb.append([InlineKeyboardButton(text=f"❌ {item[1]} ({item[2]} 🔅)", callback_data=f"delitem_{item[0]}")])
         
     kb.append([InlineKeyboardButton(text="➕ Yangi sovg'a qo'shish", callback_data="add_store_item")])
     kb.append([InlineKeyboardButton(text="🔙 Orqaga", callback_data="rewards_main")])
@@ -686,7 +687,7 @@ async def add_store_item_start(callback: types.CallbackQuery, state: FSMContext)
 @dp.message(StoreSettings.waiting_for_item_name)
 async def store_item_name(message: types.Message, state: FSMContext):
     await state.update_data(item_name=message.text)
-    await message.answer("💰 <b>Bu sovg'a necha Bilig (🟡) turadi?</b>\nFaqat raqam kiriting:\n<i>(Masalan: 50, 100)</i>", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await message.answer("💰 <b>Bu sovg'a necha Bilig (🔅) turadi?</b>\nFaqat raqam kiriting:\n<i>(Masalan: 50, 100)</i>", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
     await state.set_state(StoreSettings.waiting_for_item_price)
 
 @dp.message(StoreSettings.waiting_for_item_price)
@@ -746,7 +747,7 @@ async def plan_child_selected(callback: types.CallbackQuery, state: FSMContext):
 @dp.message(PlanCreation.waiting_for_name)
 async def plan_name_received(message: types.Message, state: FSMContext):
     await state.update_data(plan_name=message.text)
-    await message.answer("🎁 <b>2-qadam: Katta Mukofot!</b>\n\nBu reja to'liq tugatilganda farzandingiz qanday katta sovg'a oladi?\n<i>(Masalan: 'Velosiped', '100 🟡 Bilig', 'Muzqaymoq')</i>", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await message.answer("🎁 <b>2-qadam: Katta Mukofot!</b>\n\nBu reja to'liq tugatilganda farzandingiz qanday katta sovg'a oladi?\n<i>(Masalan: 'Velosiped', '100 🔅 Bilig', 'Muzqaymoq')</i>", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
     await state.set_state(PlanCreation.waiting_for_prize)
 
 @dp.message(PlanCreation.waiting_for_prize)
@@ -933,41 +934,82 @@ async def show_book_details(callback: types.CallbackQuery):
     await callback.answer()
 
 # ==========================================
-# AI TEST TUZISH MANTIG'I (OTA-ONA)
+# AI TEST TUZISH MANTIG'I (KAMIDA 3 TA RASM)
 # ==========================================
 @dp.callback_query(F.data.startswith("aitest_"))
 async def ask_for_test_photo(callback: types.CallbackQuery, state: FSMContext):
-    await state.update_data(test_book_id=int(callback.data.split("_")[1]))
+    book_id = int(callback.data.split("_")[1])
+    await state.update_data(test_book_id=book_id, photos=[])
     await callback.message.delete()
-    await bot.send_message(callback.from_user.id, "📸 <b>AI Test tuzish</b>\n\nKitobning ixtiyoriy sahifasini rasmga olib yuboring.", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    
+    kb = ReplyKeyboardMarkup(keyboard=[
+        [KeyboardButton(text="✅ Testni tuzish")],
+        [KeyboardButton(text="🔙 Orqaga")]
+    ], resize_keyboard=True)
+    
+    await bot.send_message(
+        callback.from_user.id,
+        "📸 <b>AI Test tuzish uchun kamida 3 ta sahifa rasmini yuboring!</b>\n\n"
+        "1-sahifa, 2-sahifa va 3-sahifalarni ketma-ket rasmga olib yuboring.\n\n"
+        "Barcha rasmlarni yuborgach, pastdagi <b>'✅ Testni tuzish'</b> tugmasini bosing.",
+        parse_mode="HTML",
+        reply_markup=kb
+    )
     await state.set_state(AITestCreation.waiting_for_page_photo)
     await callback.answer()
 
 @dp.message(AITestCreation.waiting_for_page_photo, F.photo)
-async def generate_ai_test(message: types.Message, state: FSMContext):
-    processing_msg = await message.answer("⏳ <i>Gemini AI sahifani o'qib, sifatli test tuzmoqda...</i>", parse_mode="HTML")
-    try:
-        photo = message.photo[-1]
-        file_info = await bot.get_file(photo.file_id)
-        downloaded_file = await bot.download_file(file_info.file_path)
+async def collect_test_photo(message: types.Message, state: FSMContext):
+    photo = message.photo[-1]
+    file_info = await bot.get_file(photo.file_id)
+    downloaded_file = await bot.download_file(file_info.file_path)
+    image_bytes = downloaded_file.read()
+    
+    data = await state.get_data()
+    photos = data.get('photos', [])
+    photos.append(image_bytes)
+    await state.update_data(photos=photos)
+    
+    photo_count = len(photos)
+    if photo_count < 3:
+        await message.answer(f"📸 <b>{photo_count}-sahifa rasmi qabul qilindi!</b>\n\nYana kamida {3 - photo_count} ta sahifa rasmini yuboring.")
+    else:
+        await message.answer(f"📸 <b>{photo_count}-sahifa rasmi qabul qilindi!</b>\n\nYetarli rasmlar yig'ildi. Testni tuzish uchun pastdagi <b>'✅ Testni tuzish'</b> tugmasini bosing.")
+
+@dp.message(AITestCreation.waiting_for_page_photo, F.text == "✅ Testni tuzish")
+async def generate_ai_test_multi(message: types.Message, state: FSMContext):
+    data = await state.get_data()
+    photos = data.get('photos', [])
+    book_id = data.get('test_book_id')
+    
+    if len(photos) < 3:
+        await message.answer(f"⚠️ <b>Kamida 3 ta sahifa rasmini yuborishingiz kerak!</b>\nHozircha {len(photos)} ta rasm yubordingiz. Yana {3 - len(photos)} ta rasm yuboring.")
+        return
         
-        prompt = """Bu bolalar kitobining sahifasi. Shu matn asosida bolalar uchun 5 ta sifatli test savoli tuz. 
+    processing_msg = await message.answer(f"⏳ <i>Gemini AI {len(photos)} ta sahifani tahlil qilib, test tuzmoqda... Iltimos kuting.</i>", parse_mode="HTML")
+    
+    try:
+        prompt = f"""Bu bolalar kitobining {len(photos)} ta sahifasi rasmlari. Shu matnlar va sahifalar mazmuni asosida bolalar uchun 5 ta sifatli test savoli tuz. 
         DIQQAT: Savollar faqat quruq xotirani emas, balki bolaning fikrlashini, mantiqini va asar mohiyatini tushunganini sinaydigan bo'lsin.
         Har bir savolda 3 ta variant (A, B, C) bo'lsin. 
         Natijani FAQAT VA FAQAT quyidagi JSON formatida qaytar, boshqa hech qanday so'z qo'shma:
-        [ {"question": "Savol matni?", "options": ["A) variant", "B) variant", "C) variant"], "answer": "A) variant"} ]"""
+        [ {{"question": "Savol matni?", "options": ["A) variant", "B) variant", "C) variant"], "answer": "A) variant"}} ]"""
         
         model = genai.GenerativeModel('gemini-3.6-flash')
-        response = await model.generate_content_async([prompt, {"mime_type": "image/jpeg", "data": downloaded_file.read()}])
+        
+        contents = [prompt]
+        for img_bytes in photos:
+            contents.append({"mime_type": "image/jpeg", "data": img_bytes})
+            
+        response = await model.generate_content_async(contents)
         
         ai_result = clean_json(response.text)
-        questions = json.loads(ai_result) 
+        questions = json.loads(ai_result)
         
-        data = await state.get_data()
-        cursor.execute("INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)", (data.get('test_book_id'), ai_result))
+        cursor.execute("INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)", (book_id, ai_result))
         conn.commit()
         
-        test_text = "✅ <b>AI Test muvaffaqiyatli tuzildi!</b>\n\n<i>Quyidagi savollar bazaga saqlandi:</i>\n\n"
+        test_text = f"✅ <b>AI Test {len(photos)} ta sahifa asosida muvaffaqiyatli tuzildi!</b>\n\n<i>Quyidagi savollar bazaga saqlandi:</i>\n\n"
         for i, q in enumerate(questions):
             test_text += f"<b>{i+1}. {q['question']}</b>\nJavob: {q['answer']}\n\n"
             
@@ -1028,7 +1070,7 @@ async def child_book_action(callback: types.CallbackQuery):
     book_id = int(callback.data.split("_")[1])
     cursor.execute("SELECT test_id FROM Book_Tests WHERE book_id = ?", (book_id,))
     
-    test_btn = InlineKeyboardButton(text="📝 Testni ishlash (Bilig 🟡)", callback_data=f"taketest_{book_id}_0_0") if cursor.fetchone() else InlineKeyboardButton(text="🔒 Test (Hozircha mavjud emas)", callback_data="no_test_alert")
+    test_btn = InlineKeyboardButton(text="📝 Testni ishlash (Bilig 🔅)", callback_data=f"taketest_{book_id}_0_0") if cursor.fetchone() else InlineKeyboardButton(text="🔒 Test (Hozircha mavjud emas)", callback_data="no_test_alert")
         
     kb = [
         [InlineKeyboardButton(text="📸 Sahifani rasmga olib yuborish", callback_data=f"sendpage_{book_id}")],
@@ -1148,9 +1190,9 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         
         if earned_bilig > 0:
             cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (earned_bilig, child_id))
-            reply_text = f"🎉 <b>Qoyilmaqom!</b> Sen {pages_read_now} bet o'qiding va <b>{earned_bilig} 🟡 Bilig</b> ishlab olding!\n🔥 Streak: {streak} kun!\n<i>(Jami o'qilgan: {new_page_num} bet)</i>"
+            reply_text = f"🎉 <b>Qoyilmaqom!</b> Sen {pages_read_now} bet o'qiding va <b>{earned_bilig} 🔅 Bilig</b> ishlab olding!\n🔥 Streak: {streak} kun!\n<i>(Jami o'qilgan: {new_page_num} bet)</i>"
         else:
-            reply_text = f"👍 <b>Barakalla!</b> Sen {pages_read_now} bet o'qiding. Yana {5 - (new_page_num % 5)} bet o'qisang, yangi Bilig 🟡 olasan!\n🔥 Streak: {streak} kun!"
+            reply_text = f"👍 <b>Barakalla!</b> Sen {pages_read_now} bet o'qiding. Yana {5 - (new_page_num % 5)} bet o'qisang, yangi Bilig 🔅 olasan!\n🔥 Streak: {streak} kun!"
             
         conn.commit()
         await processing_msg.delete()
@@ -1232,14 +1274,14 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
                 
         conn.commit()
         
-        reply_text = f"👨‍🏫 <b>Adabiyotshunos olim:</b>\n<i>\"{feedback}\"</i>\n\n🎁 <b>Bonus:</b> {bonus} 🟡 Bilig!{badge_text}"
+        reply_text = f"👨‍🏫 <b>Adabiyotshunos olim:</b>\n<i>\"{feedback}\"</i>\n\n🎁 <b>Bonus:</b> {bonus} 🔅 Bilig!{badge_text}"
         await processing_msg.delete()
         await message.answer(reply_text, parse_mode="HTML", reply_markup=get_child_keyboard())
         await state.clear()
         
         parent_id = get_parent_id(message.from_user.id)
         if parent_id:
-            await bot.send_message(parent_id, f"🎤 Farzandingiz audio xulosa yubordi va <b>{bonus} 🟡 Bilig</b> ishladi!", parse_mode="HTML")
+            await bot.send_message(parent_id, f"🎤 Farzandingiz audio xulosa yubordi va <b>{bonus} 🔅 Bilig</b> ishladi!", parse_mode="HTML")
             
     except Exception as e:
         await processing_msg.delete()
@@ -1247,51 +1289,60 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
         await state.clear()
 
 # ==========================================
-# 3-BOSQICH: AI TEST YECHISH
+# 3-BOSQICH: AI TEST YECHISH (ISHLANGAN VA TO'G'RILANGAN)
 # ==========================================
 @dp.callback_query(F.data.startswith("taketest_"))
 async def execute_test(callback: types.CallbackQuery):
-    _, book_id, q_idx, correct_count = callback.data.split("_")
-    book_id, q_idx, correct_count = int(book_id), int(q_idx), int(correct_count)
-    
-    cursor.execute("SELECT questions_json FROM Book_Tests WHERE book_id = ?", (book_id,))
-    test_row = cursor.fetchone()
-    if not test_row: return
+    try:
+        parts = callback.data.split("_")
+        book_id, q_idx, correct_count = int(parts[1]), int(parts[2]), int(parts[3])
         
-    questions = json.loads(test_row[0])
-    
-    if q_idx >= len(questions):
-        cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (correct_count, callback.from_user.id))
-        cursor.execute("DELETE FROM Book_Tests WHERE book_id = ?", (book_id,))
-        conn.commit()
+        cursor.execute("SELECT questions_json FROM Book_Tests WHERE book_id = ?", (book_id,))
+        test_row = cursor.fetchone()
+        if not test_row:
+            await callback.answer("🔒 Test topilmadi yoki allaqachon yechilgan!", show_alert=True)
+            return
+            
+        questions = json.loads(test_row[0])
         
-        text = f"🏁 <b>Test yakunlandi!</b>\n\n✅ To'g'ri javoblar: {correct_count} ta\n🎁 Sen <b>{correct_count} 🟡 Bilig</b> yutib olding! Barakalla, aqlli Qahramon! 🧠"
-        await callback.message.edit_text(text, parse_mode="HTML")
-        
-        parent_id = get_parent_id(callback.from_user.id)
-        if parent_id:
-            await bot.send_message(parent_id, f"📝 Farzandingiz test yechdi! Natija: <b>{correct_count}/5</b> to'g'ri.", parse_mode="HTML")
+        if q_idx >= len(questions):
+            cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (correct_count, callback.from_user.id))
+            cursor.execute("DELETE FROM Book_Tests WHERE book_id = ?", (book_id,))
+            conn.commit()
+            
+            text = f"🏁 <b>Test yakunlandi!</b>\n\n✅ To'g'ri javoblar: {correct_count} ta\n🎁 Sen <b>{correct_count} 🔅 Bilig</b> yutib olding! Barakalla, aqlli Qahramon! 🧠"
+            await callback.message.edit_text(text, parse_mode="HTML")
+            
+            parent_id = get_parent_id(callback.from_user.id)
+            if parent_id:
+                await bot.send_message(parent_id, f"📝 Farzandingiz test yechdi! Natija: <b>{correct_count}/5</b> to'g'ri.", parse_mode="HTML")
+            await callback.answer()
+            return
+            
+        q = questions[q_idx]
+        kb = []
+        for i, opt in enumerate(q['options']):
+            is_correct = 1 if opt.strip() == q['answer'].strip() else 0
+            kb.append([InlineKeyboardButton(text=opt, callback_data=f"tans_{book_id}_{q_idx+1}_{correct_count}_{is_correct}")])
+            
+        kb.append([InlineKeyboardButton(text="🔙 Orqaga (Testni to'xtatish)", callback_data=f"cread_{book_id}")])
+            
+        text = f"📝 <b>{q_idx + 1}-savol:</b>\n\n{q['question']}"
+        await callback.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
         await callback.answer()
-        return
-        
-    q = questions[q_idx]
-    kb = []
-    for i, opt in enumerate(q['options']):
-        is_correct = 1 if opt.strip() == q['answer'].strip() else 0
-        kb.append([InlineKeyboardButton(text=opt, callback_data=f"tans_{book_id}_{q_idx+1}_{correct_count}_{is_correct}")])
-        
-    kb.append([InlineKeyboardButton(text="🔙 Orqaga (Testni to'xtatish)", callback_data=f"cread_{book_id}")])
-        
-    text = f"📝 <b>{q_idx + 1}-savol:</b>\n\n{q['question']}"
-    await callback.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
-    await callback.answer()
+    except Exception as e:
+        await callback.answer("❌ Xatolik yuz berdi. Qaytadan urinib ko'ring.", show_alert=True)
 
 @dp.callback_query(F.data.startswith("tans_"))
 async def process_test_answer(callback: types.CallbackQuery):
-    _, book_id, next_q_idx, correct_count, is_correct = callback.data.split("_")
-    new_correct_count = int(correct_count) + int(is_correct)
-    callback.data = f"taketest_{book_id}_{next_q_idx}_{new_correct_count}"
-    await execute_test(callback)
+    try:
+        parts = callback.data.split("_")
+        _, book_id, next_q_idx, correct_count, is_correct = parts
+        new_correct_count = int(correct_count) + int(is_correct)
+        callback.data = f"taketest_{book_id}_{next_q_idx}_{new_correct_count}"
+        await execute_test(callback)
+    except Exception as e:
+        await callback.answer("❌ Xatolik yuz berdi.", show_alert=True)
 
 # ==========================================
 # 4-BOSQICH: GAMIFIKATSIYA VA REYTING
@@ -1306,7 +1357,7 @@ async def show_rewards(message: types.Message):
     
     text = (
         f"🦸‍♂️ <b>Qahramon: {message.from_user.full_name}</b>\n\n"
-        f"🟡 <b>Biliglar:</b> {balance} ta\n"
+        f"🔅 <b>Biliglar:</b> {balance} ta\n"
         f"🔥 <b>Uzluksiz o'qish:</b> {streak} kun\n"
         f"🏅 <b>Nishonlar:</b> {badges}\n"
     )
@@ -1329,7 +1380,7 @@ async def child_store_handler(callback: types.CallbackQuery):
         
     kb = []
     for item in items:
-        kb.append([InlineKeyboardButton(text=f"🎁 {item[1]} - {item[2]} 🟡", callback_data=f"buyitem_{item[0]}")])
+        kb.append([InlineKeyboardButton(text=f"🎁 {item[1]} - {item[2]} 🔅", callback_data=f"buyitem_{item[0]}")])
         
     await callback.message.edit_text("🛒 <b>Sovg'alar do'koni</b>\n\nYig'gan Biliglaringizga nima sotib olamiz?", parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
     await callback.answer()
@@ -1344,7 +1395,7 @@ async def buy_item_handler(callback: types.CallbackQuery):
     balance = cursor.fetchone()[0]
     
     if balance < item[1]:
-        await callback.answer(f"Sizda yetarli Bilig yo'q! Yana {item[1] - balance} 🟡 yig'ishingiz kerak.", show_alert=True)
+        await callback.answer(f"Sizda yetarli Bilig yo'q! Yana {item[1] - balance} 🔅 yig'ishingiz kerak.", show_alert=True)
         return
         
     cursor.execute("UPDATE Users SET balance_coins = balance_coins - ? WHERE user_id = ?", (item[1], callback.from_user.id))
@@ -1368,12 +1419,12 @@ async def show_leaderboard(message: types.Message):
     
     for i, user in enumerate(top_users):
         medal = medals[i] if i < 3 else f"{i+1}."
-        text += f"{medal} <b>{user[0]}</b> - {user[1]} 🟡\n"
+        text += f"{medal} <b>{user[0]}</b> - {user[1]} 🔅\n"
         
     await message.answer(text, parse_mode="HTML")
 
 # ==========================================
-# FARZAND NATIJALARINI KO'RISH VA FARZAND QO'SHISH
+# FARZAND NATIJALARINI KO'RISH VA BILIG AYIRISH
 # ==========================================
 async def show_single_child_result(message_or_call, child_id, parent_id):
     cursor.execute("SELECT child_age FROM Family_Link WHERE child_id = ? AND parent_id = ?", (child_id, parent_id))
@@ -1386,7 +1437,12 @@ async def show_single_child_result(message_or_call, child_id, parent_id):
     child_name, balance, badges, streak = child
     badges_text = badges if badges else "Hali nishonlar yo'q"
     
-    cursor.execute("SELECT pb.title, pb.pages_read, pb.is_completed FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id WHERE rp.parent_id = ?", (parent_id,))
+    cursor.execute("""
+        SELECT pb.title, pb.pages_read, pb.is_completed 
+        FROM Plan_Books pb 
+        JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id 
+        WHERE rp.parent_id = ? AND (rp.child_id = ? OR rp.child_id IS NULL)
+    """, (parent_id, child_id))
     books = cursor.fetchall()
     
     total_pages = sum([b[1] for b in books]) if books else 0
@@ -1394,7 +1450,7 @@ async def show_single_child_result(message_or_call, child_id, parent_id):
     text = (
         f"📊 <b>{child_name}ning natijalari:</b>\n\n"
         f"👦 Yoshi: {child_age}\n"
-        f"🟡 Yig'ilgan Biliglar: {balance} ta\n"
+        f"🔅 Yig'ilgan Biliglar: <b>{balance} ta</b>\n"
         f"🔥 Uzluksiz o'qish: {streak} kun\n"
         f"🏅 Nishonlar: {badges_text}\n\n"
         f"📖 <b>Jami o'qilgan: {total_pages} bet</b>\n"
@@ -1407,6 +1463,7 @@ async def show_single_child_result(message_or_call, child_id, parent_id):
             text += f" ➖ <i>{b[0]}</i>: {b[1]} bet {status}\n"
             
     kb = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="➖ Bilig ayirish / Nolga tushirish", callback_data=f"deduct_coins_{child_id}")],
         [InlineKeyboardButton(text="➕ Boshqa farzand qo'shish", callback_data="add_child_info")],
         [InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_results_main")]
     ])
@@ -1459,6 +1516,101 @@ async def childres_callback(callback: types.CallbackQuery):
     await show_single_child_result(callback, child_id, callback.from_user.id)
     await callback.answer()
 
+# ==========================================
+# BILIG AYIRISH VA NOLGA TUSHIRISH MANTIG'I
+# ==========================================
+@dp.callback_query(F.data.startswith("deduct_coins_"))
+async def deduct_coins_menu(callback: types.CallbackQuery):
+    child_id = int(callback.data.split("_")[2])
+    cursor.execute("SELECT name, balance_coins FROM Users WHERE user_id = ?", (child_id,))
+    child = cursor.fetchone()
+    if not child: return
+    
+    kb = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="✍️ Summa kiritish (Masalan: 10)", callback_data=f"dedcustom_{child_id}")],
+        [InlineKeyboardButton(text="🔄 Hisobni 0 ga tushirish", callback_data=f"dedzero_{child_id}")],
+        [InlineKeyboardButton(text="🔙 Orqaga", callback_data=f"childres_{child_id}")]
+    ])
+    
+    text = (
+        f"➖ <b>{child[0]}ning hisobidan Bilig (🔅) ayirish</b>\n\n"
+        f"Hozirgi balans: <b>{child[1]} 🔅</b>\n\n"
+        f"<i>Farzandingizga naqd pul bergandingizda yoki sovg'a olib bergandingizdan so'ng hisobidan Biliglarini ayirish uchun kerakli usulni tanlang:</i>"
+    )
+    await callback.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
+    await callback.answer()
+
+@dp.callback_query(F.data.startswith("dedzero_"))
+async def deduct_zero_handler(callback: types.CallbackQuery):
+    child_id = int(callback.data.split("_")[1])
+    cursor.execute("SELECT name, balance_coins FROM Users WHERE user_id = ?", (child_id,))
+    child = cursor.fetchone()
+    
+    cursor.execute("UPDATE Users SET balance_coins = 0 WHERE user_id = ?", (child_id,))
+    conn.commit()
+    
+    await callback.answer(f"{child[0]}ning balansi 0 ga tushirildi!", show_alert=True)
+    await show_single_child_result(callback, child_id, callback.from_user.id)
+    
+    # Farzandga bildirishnoma
+    try:
+        await bot.send_message(child_id, f"ℹ️ <b>Ota-onangiz hisobingizdagi Biliglarni nolga tushirdi.</b>\n<i>(Berilgan pul yoki mukofotlar hisobiga)</i>\n\nHozirgi balansingiz: <b>0 🔅</b>", parse_mode="HTML")
+    except:
+        pass
+
+@dp.callback_query(F.data.startswith("dedcustom_"))
+async def deduct_custom_start(callback: types.CallbackQuery, state: FSMContext):
+    child_id = int(callback.data.split("_")[1])
+    await state.update_data(target_deduct_child_id=child_id)
+    
+    await callback.message.delete()
+    await bot.send_message(
+        callback.from_user.id,
+        "✍️ <b>Farzandingiz hisobidan necha Bilig (🔅) ayirmoqchisiz?</b>\n\nFaqat raqam kiriting (Masalan: 10 yoki 20):",
+        parse_mode="HTML",
+        reply_markup=get_back_reply_keyboard()
+    )
+    await state.set_state(ParentSettings.waiting_for_coin_deduction)
+    await callback.answer()
+
+@dp.message(ParentSettings.waiting_for_coin_deduction)
+async def process_coin_deduction(message: types.Message, state: FSMContext):
+    if not message.text.isdigit():
+        await message.answer("⚠️ Iltimos, faqat raqam kiriting! (Masalan: 10)")
+        return
+        
+    amount = int(message.text)
+    data = await state.get_data()
+    child_id = data.get('target_deduct_child_id')
+    
+    cursor.execute("SELECT name, balance_coins FROM Users WHERE user_id = ?", (child_id,))
+    child = cursor.fetchone()
+    if not child:
+        await state.clear()
+        return
+        
+    old_balance = child[1]
+    new_balance = max(0, old_balance - amount)
+    
+    cursor.execute("UPDATE Users SET balance_coins = ? WHERE user_id = ?", (new_balance, child_id))
+    conn.commit()
+    
+    await message.answer(
+        f"✅ <b>{child[0]}ning hisobidan {amount} 🔅 ayirildi!</b>\n\nYangi balans: <b>{new_balance} 🔅</b>",
+        parse_mode="HTML",
+        reply_markup=get_parent_keyboard()
+    )
+    await state.clear()
+    
+    # Farzandga bildirishnoma
+    try:
+        await bot.send_message(child_id, f"ℹ️ <b>Ota-onangiz hisobingizdan {amount} 🔅 ayirdi.</b>\n<i>(Berilgan pul/sovg'a hisobiga)</i>\n\nHozirgi balansingiz: <b>{new_balance} 🔅</b>", parse_mode="HTML")
+    except:
+        pass
+
+# ==========================================
+# FARZAND QO'SHISH YO'RIQNOMASI
+# ==========================================
 @dp.callback_query(F.data == "add_child_info")
 async def add_child_info_handler(callback: types.CallbackQuery):
     parent_code = f"BLG-{str(callback.from_user.id)[-4:]}"
