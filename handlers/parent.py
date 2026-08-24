@@ -500,13 +500,18 @@ async def weekly_report_handler(callback: types.CallbackQuery):
     pct_text = "Yangi ko'rsatkich 🚀" if last_week == 0 else (f"+{int((diff/last_week)*100)}% ga oshgan 🚀" if diff > 0 else (f"-{int((abs(diff)/last_week)*100)}% ga pasaygan 📉" if diff < 0 else "Bir xil barqaror ⏸"))
     dynamic_icon = "📈" if diff >= 0 else "📉"
 
+    if diff >= 0:
+        advice_text = "Farzandingiz shu haftada juda faol bo'ldi! Uni rag'batlantiring."
+    else:
+        advice_text = "Farzandingiz bu hafta biroz kamroq o'qidi. Birgalikda o'qishni yo'lga qo'yish foydali bo'ladi."
+
     report_text = (
         f"📈 <b>{c_name}ning HAFTALIK MUTOLAA HISOBOTI</b>\n\n"
         f"🗓 <b>Shu hafta o'qildi:</b> {this_week} bet\n"
         f"🗓 <b>O'tgan hafta o'qilgan edi:</b> {last_week} bet\n"
         f"{dynamic_icon} <b>Dinamika:</b> {pct_text}\n\n"
         f"🧠 <b>AI Pedagogik Tavsiyasi:</b>\n"
-        f"<i>{'Farzandingiz shu haftada juda faol bo\'ldi! Uni rag\'batlantiring.' if diff >= 0 else 'Farzandingiz bu hafta biroz kamroq o\'qidi. Birgalikda o\'qishni yo\'lga qo\'yish foydali bo\'ladi.'}</i>"
+        f"<i>{advice_text}</i>"
     )
 
     kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="🔙 Farzand natijalariga qaytish", callback_data=f"childres_{child_id}")]])
