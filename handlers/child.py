@@ -12,25 +12,21 @@ from ai_service import verify_page_photo, evaluate_voice_summary
 router = Router()
 
 # ==========================================
-# BOLANING KITOB RO'YXATI (Faqat o'ziga tegishli)
+# BOLANING KITOB RO'YXATI (Faqat o'ziniki)
 # ==========================================
 async def show_child_books(message_or_callback, user_id):
     cursor.execute("SELECT parent_id FROM Family_Link WHERE child_id = ?", (user_id,))
     link = cursor.fetchone()
     if not link:
         text_no_parent = "Siz hali ota-onangizga ulanmagansiz! Iltimos, ota-onangiz bergan kod orqali ulaning."
-        if isinstance(message_or_callback, types.Message):
-            await message_or_callback.answer(text_no_parent)
-        else:
-            await message_or_callback.message.edit_text(text_no_parent)
+        if isinstance(message_or_callback, types.Message): await message_or_callback.answer(text_no_parent)
+        else: await message_or_callback.message.edit_text(text_no_parent)
         return
         
     parent_id = link[0]
-    # Farzandlar sonini tekshirish
     cursor.execute("SELECT COUNT(*) FROM Family_Link WHERE parent_id = ?", (parent_id,))
     total_children = cursor.fetchone()[0]
 
-    # Agar 1 ta bola bo'lsa va rejada child_id bo'sh bo'lsa ham ko'rsatadi, agar bir necha bola bo'lsa FAQAT o'zinikini ko'rsatadi
     if total_children <= 1:
         cursor.execute("SELECT plan_id, name, prize FROM Reading_Plans WHERE parent_id = ? AND (child_id = ? OR child_id IS NULL) AND status = 'active'", (parent_id, user_id))
     else:
@@ -48,7 +44,7 @@ async def show_child_books(message_or_callback, user_id):
         if books:
             text += f"🎯 <b>{p[1]}</b> (Mukofot: {p[2]})\n"
             for b in books:
-                if b[3] == 0:  # Tugallanmagan kitoblar
+                if b[3] == 0: 
                     kb.append([InlineKeyboardButton(text=f"📘 {b[1]} ({b[2]} bet)", callback_data=f"cread_{b[0]}")])
                     has_books = True
             text += "\n"
@@ -102,8 +98,6 @@ async def no_test_alert(callback: types.CallbackQuery):
 @router.callback_query(F.data.startswith("finishbook_"))
 async def finish_book_check_test(callback: types.CallbackQuery):
     book_id = int(callback.data.split("_")[1])
-    
-    # Kitob uchun test bormi-yo'qmi tekshirish
     cursor.execute("SELECT test_id FROM Book_Tests WHERE book_id = ?", (book_id,))
     has_test = cursor.fetchone()
     
@@ -248,7 +242,7 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         parent_id = get_parent_id(child_id)
         if parent_id:
             await message.bot.send_message(parent_id, f"📖 Farzandingiz <b>'{book_title}'</b> kitobidan {pages_read_now} bet o'qidi. (Jami: {new_page_num} bet).", parse_mode="HTML")
-    except Exception as e:
+    except Exception:
         await processing_msg.delete()
         await message.answer("❌ Xatolik yuz berdi. Qaytadan urinib ko'r.", reply_markup=get_child_keyboard())
         await state.clear()
@@ -348,7 +342,7 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
         await state.clear()
 
 # ==========================================
-# TEST TOPSHIRISH (YANGI DIZAYN VA BEHATOLIK)
+# TEST TOPSHIRISH
 # ==========================================
 async def render_test_question(message_or_callback, book_id: int, q_idx: int, correct_count: int):
     cursor.execute("SELECT questions_json FROM Book_Tests WHERE book_id = ?", (book_id,))
@@ -362,7 +356,6 @@ async def render_test_question(message_or_callback, book_id: int, q_idx: int, co
     total_q = len(questions)
     user_id = message_or_callback.from_user.id
     
-    # Test tugagan bo'lsa:
     if q_idx >= total_q:
         cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (correct_count, user_id))
         cursor.execute("DELETE FROM Book_Tests WHERE book_id = ?", (book_id,))
@@ -401,7 +394,6 @@ async def render_test_question(message_or_callback, book_id: int, q_idx: int, co
     letters = ["A", "B", "C", "D", "E"]
     options = q.get('options', [])
     
-    # Savol va variantlar matnini shakllantirish
     text = f"📝 <b>{q_idx + 1}-savol (Jami: {total_q} ta):</b>\n\n"
     text += f"❓ <b>{html.escape(q.get('question', ''))}</b>\n\n"
     
@@ -409,17 +401,14 @@ async def render_test_question(message_or_callback, book_id: int, q_idx: int, co
     for idx, opt in enumerate(options):
         letter = letters[idx] if idx < len(letters) else str(idx+1)
         opt_clean = opt.strip()
-        # Agar variant ichida A) bo'lsa tozalab chiqarish
         if opt_clean.startswith(f"{letter})") or opt_clean.startswith(f"{letter}."):
             text += f"<b>{letter})</b> {html.escape(opt_clean[2:].strip())}\n"
         else:
             text += f"<b>{letter})</b> {html.escape(opt_clean)}\n"
             
-        # Ixcham tugma yaratish
         buttons_row.append(InlineKeyboardButton(text=f"[ {letter} ]", callback_data=f"tans_{book_id}_{q_idx}_{idx}_{correct_count}"))
         
     kb = []
-    # Tugmalarni 2 tadan qatorga joylash
     if len(buttons_row) <= 4:
         kb.append(buttons_row[:2])
         if len(buttons_row) > 2:
@@ -463,7 +452,6 @@ async def process_test_answer(callback: types.CallbackQuery):
         selected_text = options[selected_opt_idx].strip() if selected_opt_idx < len(options) else ""
         answer = str(q.get('answer', '')).strip()
         
-        # Javobni tekshirish
         is_correct = False
         if answer.upper() == selected_letter or answer.upper().startswith(f"{selected_letter})") or answer.upper().startswith(f"{selected_letter}."):
             is_correct = True
@@ -480,79 +468,76 @@ async def process_test_answer(callback: types.CallbackQuery):
             await callback.answer("❌ Noto'g'ri javob!", show_alert=False)
             
         await render_test_question(callback, book_id, q_idx + 1, new_correct_count)
-    except Exception as e:
+    except Exception:
         await callback.answer("⚠️ Xatolik yuz berdi. Qaytadan urinib ko'ring.", show_alert=True)
 
 # ==========================================
-# SOVRINLAR VA MUKOFOATLAR (BOLA MENYUSI)
+# SOVRINLARIM (YUTUQLAR XAZINASI)
 # ==========================================
-@router.message(F.text.in_(["🎁 Mukofotlar", "🎁 Sovrinlarim", "🎁 Mukofotlarim"]))
+@router.message(F.text == "🎁 Sovrinlarim")
 async def show_rewards(message: types.Message):
     cursor.execute("SELECT balance_coins, badges, streak_days FROM Users WHERE user_id = ?", (message.from_user.id,))
     user = cursor.fetchone()
     balance = user[0] if user else 0
-    badges_display = user[1] if (user and user[1]) else "Hali yo'q"
+    badges_display = user[1] if (user and user[1]) else "Hali nishonlar yo'q"
     streak = user[2] if user else 0
     
     text = (
         f"🦸‍♂️ <b>Qahramon: {message.from_user.full_name}</b>\n\n"
-        f"🔅 <b>Biliglar hisobi:</b> {balance} ta\n"
+        f"🔅 <b>Biliglar xazinasi:</b> {balance} ta\n"
         f"🔥 <b>Uzluksiz mutolaa (Streak):</b> {streak} kun\n"
         f"🏅 <b>Nishonlar:</b> {badges_display}\n\n"
-        f"<i>To'plagan Bilig tangalaringni maxsus sovg'alarga almashtirishing mumkin! 👇</i>"
+        f"<i>To'plagan Biliglaringga 🛒 Do'kondan o'zingga ajoyib sovg'alar olishing mumkin!</i>"
     )
-    kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="🛍 Sovg'alar do'koniga kirish", callback_data="child_store")]])
+    kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="🛒 Do'konga o'tish", callback_data="child_store")]])
     await message.answer(text, parse_mode="HTML", reply_markup=kb)
 
-@router.callback_query(F.data == "child_store")
-async def child_store_handler(callback: types.CallbackQuery):
-    parent_id = get_parent_id(callback.from_user.id)
+# ==========================================
+# DO'KON (BOLA MENYUSI)
+# ==========================================
+async def show_child_store_view(message_or_call, user_id):
+    parent_id = get_parent_id(user_id)
     if not parent_id:
-        await callback.answer("Ota-ona topilmadi!", show_alert=True)
+        text = "Ota-onangiz profilingizga ulanmagan."
+        if isinstance(message_or_call, types.Message): await message_or_call.answer(text)
+        else: await message_or_call.message.edit_text(text)
         return
         
     cursor.execute("SELECT item_id, name, price FROM Store_Items WHERE parent_id = ?", (parent_id,))
     items = cursor.fetchall()
     
-    if not items:
-        await callback.message.edit_text(
-            "🛒 <b>Sovg'alar do'koni hozircha bo'sh!</b>\n\nOta-onangiz do'konga yangi sovg'alar qo'shishini kuting. 😊",
-            reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="🔙 Orqaga", callback_data="child_rewards_back")]])
-        )
-        await callback.answer()
-        return
-        
-    cursor.execute("SELECT balance_coins FROM Users WHERE user_id = ?", (callback.from_user.id,))
+    cursor.execute("SELECT balance_coins FROM Users WHERE user_id = ?", (user_id,))
     balance_row = cursor.fetchone()
     balance = balance_row[0] if balance_row else 0
     
+    if not items:
+        text = (
+            f"🛒 <b>Sovg'alar do'koni</b>\n\n"
+            f"Sening hisobing: <b>{balance} 🔅 Bilig</b>\n\n"
+            f"<i>Do'konda hozircha sovg'alar yo'q. Ota-onang yangi sovg'alar qo'shishini kutib turamiz! 😊</i>"
+        )
+        if isinstance(message_or_call, types.Message): await message_or_call.answer(text, parse_mode="HTML")
+        else: await message_or_call.message.edit_text(text, parse_mode="HTML")
+        return
+        
     kb = [[InlineKeyboardButton(text=f"🎁 {item[1]} — {item[2]} 🔅", callback_data=f"buyitem_{item[0]}")] for item in items]
-    kb.append([InlineKeyboardButton(text="🔙 Orqaga", callback_data="child_rewards_back")])
-    
-    await callback.message.edit_text(
-        f"🛒 <b>Sovg'alar do'koni</b>\n\nSening hisobing: <b>{balance} 🔅 Bilig</b>\nQaysi sovg'ani xarid qilamiz?",
-        parse_mode="HTML",
-        reply_markup=InlineKeyboardMarkup(inline_keyboard=kb)
-    )
-    await callback.answer()
-
-@router.callback_query(F.data == "child_rewards_back")
-async def child_rewards_back_handler(callback: types.CallbackQuery):
-    cursor.execute("SELECT balance_coins, badges, streak_days FROM Users WHERE user_id = ?", (callback.from_user.id,))
-    user = cursor.fetchone()
-    balance = user[0] if user else 0
-    badges_display = user[1] if (user and user[1]) else "Hali yo'q"
-    streak = user[2] if user else 0
-    
     text = (
-        f"🦸‍♂️ <b>Qahramon: {callback.from_user.full_name}</b>\n\n"
-        f"🔅 <b>Biliglar hisobi:</b> {balance} ta\n"
-        f"🔥 <b>Uzluksiz mutolaa (Streak):</b> {streak} kun\n"
-        f"🏅 <b>Nishonlar:</b> {badges_display}\n\n"
-        f"<i>To'plagan Bilig tangalaringni maxsus sovg'alarga almashtirishing mumkin! 👇</i>"
+        f"🛒 <b>Sovg'alar do'koni</b>\n\n"
+        f"Sening hisobing: <b>{balance} 🔅 Bilig</b>\n\n"
+        f"👇 <b>Qaysi sovg'ani xarid qilmoqchisan?</b>"
     )
-    kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="🛍 Sovg'alar do'koniga kirish", callback_data="child_store")]])
-    await callback.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
+    if isinstance(message_or_call, types.Message):
+        await message_or_call.answer(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
+    else:
+        await message_or_call.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
+
+@router.message(F.text.in_(["🛒 Do‘kon", "🛒 Do'kon"]))
+async def child_store_msg(message: types.Message):
+    await show_child_store_view(message, message.from_user.id)
+
+@router.callback_query(F.data == "child_store")
+async def child_store_call(callback: types.CallbackQuery):
+    await show_child_store_view(callback, callback.from_user.id)
     await callback.answer()
 
 @router.callback_query(F.data.startswith("buyitem_"))
@@ -577,7 +562,7 @@ async def buy_item_handler(callback: types.CallbackQuery):
     await callback.message.edit_text(
         f"🎉 <b>Tabriklaymiz!</b>\n\nSen <b>'{item[0]}'</b> sovg'asini sotib olding! Ota-onangga bu haqda xabar yuborildi. 🎁",
         parse_mode="HTML",
-        reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="🛍 Do'konga qaytish", callback_data="child_store")]])
+        reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="🛒 Do'konga qaytish", callback_data="child_store")]])
     )
     await callback.bot.send_message(
         item[2],
