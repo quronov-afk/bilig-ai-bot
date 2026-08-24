@@ -2,12 +2,19 @@ from aiogram import Router, types, F
 from aiogram.filters import CommandStart, CommandObject
 from aiogram.fsm.context import FSMContext
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
-from config import WELCOME_TEXT, ACCESS_CODE
+from config import WELCOME_TEXT
 from database import conn, cursor
 from keyboards import get_parent_keyboard, get_child_keyboard, get_back_reply_keyboard
-from states import Access, Registration
+from states import Registration
 
 router = Router()
+
+CLOSED_BETA_TEXT = (
+    "🔒 <b>Bilig AI — Yopiq test rejimi</b>\n\n"
+    "Assalomu alaykum! Bilig AI platformasi hozirda muallif tomonidan <b>yopiq sinov (beta)</b> rejimida ishlamoqda.\n\n"
+    "Botdan faqat <b>maxsus taklif havolasi (taklifnoma)</b> orqali foydalanish mumkin.\n\n"
+    "<i>Agar sizda taklifnoma havolasi bo'lsa, iltimos, sizga yuborilgan havola ustiga bosing.</i>"
+)
 
 @router.message(F.text == "🔙 Orqaga")
 async def cancel_handler(message: types.Message, state: FSMContext):
@@ -19,70 +26,101 @@ async def cancel_handler(message: types.Message, state: FSMContext):
     elif user and user[0] == 'child':
         await message.answer("🚫 Amaliyot bekor qilindi. Bosh menyudasiz.", reply_markup=get_child_keyboard())
     else:
-        kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
-        await message.answer("🚫 Amaliyot bekor qilindi.", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
+        await message.answer("🚫 Amaliyot bekor qilindi.", reply_markup=types.ReplyKeyboardRemove())
 
 @router.message(CommandStart())
 async def start_handler(message: types.Message, command: CommandObject, state: FSMContext):
     await state.clear()
+    user_id = message.from_user.id
     
-    # Deep-link orqali taklif tekshiruvi
+    # 1. Agar bir martalik taklif havolasi orqali kirilgan bo'lsa
     if command.args:
         code = command.args
         cursor.execute("SELECT is_used FROM Invite_Links WHERE code = ?", (code,))
         link_row = cursor.fetchone()
+        
         if link_row:
             if link_row[0] == 0:
-                cursor.execute("UPDATE Invite_Links SET is_used = 1, used_by = ? WHERE code = ?", (message.from_user.id, code))
-                cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)", (message.from_user.id, message.from_user.full_name))
-                cursor.execute("UPDATE Users SET is_approved = 1 WHERE user_id = ?", (message.from_user.id,))
-                conn.commit()
+                # Havolani ishlatildi deb belgilash
+                cursor.execute("UPDATE Invite_Links SET is_used = 1, used_by = ? WHERE code = ?", (user_id, code))
                 
-                kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
-                await message.answer(f"✅ <b>Maxsus taklif havolasi qabul qilindi!</b>\n\n{WELCOME_TEXT}", parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
-                return
+                # A) Ota-ona taklifnomasi (prnt_...)
+                if code.startswith("prnt_"):
+                    cursor.execute("INSERT OR REPLACE INTO Users (user_id, role, name, is_approved) VALUES (?, 'parent', ?, 1)", (user_id, message.from_user.full_name))
+                    conn.commit()
+                    await message.answer(
+                        f"🎉 <b>Xush kelibsiz!</b>\n\nSiz <b>Ota-ona</b> sifatida muvaffaqiyatli ro'yxatdan o'tdingiz!\n"
+                        f"Farzandingiz profilingizga ulanishi uchun oilaviy kodingiz: <b>BLG-{str(user_id)[-4:]}</b>\n\n"
+                        f"Quyidagi menyu orqali farzandingiz uchun birinchi mutolaa rejasini tuzishingiz mumkin 👇",
+                        parse_mode="HTML",
+                        reply_markup=get_parent_keyboard()
+                    )
+                    return
+                
+                # B) Farzand taklifnomasi (chld_...)
+                elif code.startswith("chld_"):
+                    cursor.execute("INSERT OR REPLACE INTO Users (user_id, role, name, is_approved) VALUES (?, 'child', ?, 1)", (user_id, message.from_user.full_name))
+                    conn.commit()
+                    await message.answer(
+                        "🦸‍♂️ <b>Xush kelibsiz, Qahramon!</b>\n\n"
+                        "Siz <b>O'quvchi</b> sifatida ro'yxatdan o'tdingiz!\n"
+                        "Ota-onangiz bergan kodni kiriting (masalan, <code>BLG-1234</code>):",
+                        parse_mode="HTML",
+                        reply_markup=get_back_reply_keyboard()
+                    )
+                    await state.set_state(Registration.waiting_for_parent_code)
+                    return
+                
+                # C) Umumiy taklifnoma
+                else:
+                    cursor.execute("INSERT OR REPLACE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)", (user_id, message.from_user.full_name))
+                    conn.commit()
+                    kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
+                    await message.answer(f"✅ <b>Taklifnoma qabul qilindi!</b>\n\n{WELCOME_TEXT}", parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
+                    return
             else:
-                await message.answer("❌ Bu taklif havolasi allaqachon ishlatilgan!")
+                await message.answer("❌ <b>Bu taklif havolasi allaqachon ishlatilgan!</b>", parse_mode="HTML")
                 return
 
-    cursor.execute("SELECT role, is_approved FROM Users WHERE user_id = ?", (message.from_user.id,))
+    # 2. Avval ro'yxatdan o'tgan foydalanuvchi kirgan bo'lsa
+    cursor.execute("SELECT role, is_approved FROM Users WHERE user_id = ?", (user_id,))
     user = cursor.fetchone()
     
     if user and user[1] == 1:
         if user[0] == 'parent':
             await message.answer("<b>Asosiy menyuga xush kelibsiz!</b> 👨‍👩‍👦", parse_mode="HTML", reply_markup=get_parent_keyboard())
+            return
         elif user[0] == 'child':
             await message.answer("<b>Asosiy menyuga xush kelibsiz, Qahramon!</b> 🦸‍♂️🦸‍♀️", parse_mode="HTML", reply_markup=get_child_keyboard())
+            return
         else:
             kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
             await message.answer(WELCOME_TEXT, parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
-        return
+            return
 
-    cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved) VALUES (?, ?, 0)", (message.from_user.id, message.from_user.full_name))
-    conn.commit()
-    
-    await message.answer(f"👋 <b>Bilig AI yopiq test rejimida ishlamoqda!</b>\n\nBotdan foydalanish uchun maxsus ruxsat kodingizni kiriting:", parse_mode="HTML", reply_markup=types.ReplyKeyboardRemove())
-    await state.set_state(Access.waiting_for_code)
-
-@router.message(Access.waiting_for_code)
-async def process_access_code(message: types.Message, state: FSMContext):
-    if message.text.strip() == ACCESS_CODE:
-        cursor.execute("UPDATE Users SET is_approved = 1 WHERE user_id = ?", (message.from_user.id,))
-        conn.commit()
-        await state.clear()
-        kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
-        await message.answer(WELCOME_TEXT, parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
-    else:
-        await message.answer("❌ Noto'g'ri kod! Iltimos, qaytadan kiriting:")
+    # 3. Agar begona yoki havolasiz kirgan foydalanuvchi bo'lsa — kirish yopiq!
+    await message.answer(CLOSED_BETA_TEXT, parse_mode="HTML", reply_markup=types.ReplyKeyboardRemove())
 
 @router.message(F.text == "👨‍👩‍👦 Men Ota-onaman")
 async def parent_handler(message: types.Message):
+    cursor.execute("SELECT is_approved FROM Users WHERE user_id = ?", (message.from_user.id,))
+    u = cursor.fetchone()
+    if not u or u[0] != 1:
+        await message.answer(CLOSED_BETA_TEXT, parse_mode="HTML")
+        return
+        
     cursor.execute("UPDATE Users SET role = 'parent' WHERE user_id = ?", (message.from_user.id,))
     conn.commit()
     await message.answer(f"Siz Ota-ona sifatida ro'yxatdan o'tdingiz! ✅\nFarzandingiz ulanishi uchun kodingiz: <b>BLG-{str(message.from_user.id)[-4:]}</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
 
 @router.message(F.text == "👦👧 Men O'quvchiman")
 async def child_handler(message: types.Message, state: FSMContext):
+    cursor.execute("SELECT is_approved FROM Users WHERE user_id = ?", (message.from_user.id,))
+    u = cursor.fetchone()
+    if not u or u[0] != 1:
+        await message.answer(CLOSED_BETA_TEXT, parse_mode="HTML")
+        return
+        
     cursor.execute("UPDATE Users SET role = 'child' WHERE user_id = ?", (message.from_user.id,))
     conn.commit()
     await message.answer("Iltimos, ota-onangiz bergan kodni kiriting (masalan, BLG-1234):", reply_markup=get_back_reply_keyboard())
