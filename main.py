@@ -4,10 +4,11 @@ import asyncio
 import threading
 import traceback
 import json
+import uuid
 from datetime import datetime, timedelta
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from aiogram import Bot, Dispatcher, types, F
-from aiogram.filters import CommandStart, Command
+from aiogram.filters import CommandStart, Command, CommandObject
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
@@ -235,6 +236,8 @@ def init_db():
         item_id INTEGER PRIMARY KEY AUTOINCREMENT, parent_id INTEGER, name TEXT, price INTEGER)''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS Reading_Logs (
         log_id INTEGER PRIMARY KEY AUTOINCREMENT, child_id INTEGER, book_id INTEGER, pages_added INTEGER, created_at TEXT)''')
+    cursor.execute('''CREATE TABLE IF NOT EXISTS Invite_Links (
+        code TEXT PRIMARY KEY, is_used INTEGER DEFAULT 0, used_by INTEGER)''')
     
     try: cursor.execute("ALTER TABLE Plan_Books ADD COLUMN pages_read INTEGER DEFAULT 0")
     except: pass
@@ -354,12 +357,14 @@ def run_dummy_server():
 # ==========================================
 def get_parent_keyboard():
     kb = [[KeyboardButton(text="📝 Mutolaa rejasini tuzish"), KeyboardButton(text="📚 Faol rejalarim")],
-          [KeyboardButton(text="📊 Farzandim natijalari"), KeyboardButton(text="🎁 Mukofotlar")]]
+          [KeyboardButton(text="📊 Farzandim natijalari"), KeyboardButton(text="🎁 Mukofotlar")],
+          [KeyboardButton(text="📞 Qayta aloqa")]]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
 def get_child_keyboard():
     kb = [[KeyboardButton(text="📖 Kitob o'qish")],
-          [KeyboardButton(text="🎁 Sovrinlarim"), KeyboardButton(text="🏆 Reyting")]]
+          [KeyboardButton(text="🎁 Sovrinlarim"), KeyboardButton(text="🏆 Reyting")],
+          [KeyboardButton(text="📞 Qayta aloqa")]]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
 def get_back_reply_keyboard():
@@ -414,6 +419,8 @@ class ChildReading(StatesGroup):
 class StoreSettings(StatesGroup):
     waiting_for_item_name = State()
     waiting_for_item_price = State()
+class Feedback(StatesGroup):
+    waiting_for_message = State()
 
 # ==========================================
 # 5. TELEGRAM BOT MANTIG'I
@@ -505,7 +512,7 @@ async def cancel_handler(message: types.Message, state: FSMContext):
         await message.answer("🚫 Amaliyot bekor qilindi.", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
 
 # ==========================================
-# ADMIN STATISTIKA BUYRUG'I (/stats, /admin)
+# ADMIN BUYRUQLARI (/stats, /invite, /reply)
 # ==========================================
 @dp.message(Command("stats"))
 @dp.message(Command("admin"))
@@ -544,12 +551,110 @@ async def refresh_admin_stats(callback: types.CallbackQuery):
         pass
     await callback.answer("Statistika yangilandi!")
 
+@dp.message(Command("invite"))
+async def generate_invite_link(message: types.Message):
+    if OWNER_ID != 0 and message.from_user.id != OWNER_ID:
+        return
+        
+    code = str(uuid.uuid4())[:8]
+    cursor.execute("INSERT INTO Invite_Links (code) VALUES (?)", (code,))
+    conn.commit()
+    
+    bot_info = await bot.get_me()
+    link = f"https://t.me/{bot_info.username}?start={code}"
+    
+    await message.answer(f"🔗 <b>Bir martalik taklif havolasi yaratildi:</b>\n\n<code>{link}</code>\n\n<i>Ushbu havola orqali faqat 1 kishi ro'yxatdan o'ta oladi.</i>", parse_mode="HTML")
+
+@dp.message(Command("reply"))
+async def admin_reply_handler(message: types.Message, command: CommandObject):
+    if OWNER_ID != 0 and message.from_user.id != OWNER_ID:
+        return
+        
+    if not command.args:
+        await message.answer("⚠️ <b>Foydalanish:</b> /reply <foydalanuvchi_id> <matn>", parse_mode="HTML")
+        return
+        
+    parts = command.args.split(" ", 1)
+    if len(parts) < 2:
+        await message.answer("⚠️ <b>Foydalanish:</b> /reply <foydalanuvchi_id> <matn>", parse_mode="HTML")
+        return
+        
+    user_id, text = parts[0], parts[1]
+    
+    try:
+        await bot.send_message(int(user_id), f"👨‍💻 <b>Admindan javob:</b>\n\n{text}", parse_mode="HTML")
+        await message.answer("✅ Javob muvaffaqiyatli yuborildi!")
+    except Exception as e:
+        await message.answer(f"❌ Xatolik yuz berdi: {e}")
+
+# ==========================================
+# QAYTA ALOQA (FEEDBACK) TIZIMI
+# ==========================================
+@dp.message(F.text == "📞 Qayta aloqa")
+async def feedback_start(message: types.Message, state: FSMContext):
+    await message.answer("✍️ <b>Qayta aloqa</b>\n\nBot haqida fikrlaringiz, takliflaringiz yoki xatoliklar bo'lsa, shu yerda yozib qoldiring (rasm yoki video ham yuborishingiz mumkin).\n\nXabaringiz to'g'ridan-to'g'ri loyiha muallifiga yuboriladi.", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await state.set_state(Feedback.waiting_for_message)
+
+@dp.message(Feedback.waiting_for_message)
+async def feedback_receive(message: types.Message, state: FSMContext):
+    if message.text == "🔙 Orqaga":
+        await cancel_handler(message, state)
+        return
+        
+    if OWNER_ID == 0:
+        await message.answer("⚠️ Adminga xabar yuborish sozlanmagan (OWNER_ID kiritilmagan).")
+        await state.clear()
+        return
+        
+    cursor.execute("SELECT role FROM Users WHERE user_id = ?", (message.from_user.id,))
+    role_row = cursor.fetchone()
+    role = role_row[0] if role_row else "Noma'lum"
+    
+    user_info = f"📩 <b>YANGI XABAR (Qayta aloqa)</b>\n\n"
+    user_info += f"👤 <b>Yuboruvchi:</b> {message.from_user.full_name}\n"
+    user_info += f"🆔 <b>ID:</b> <code>{message.from_user.id}</code>\n"
+    user_info += f"🎭 <b>Rol:</b> {role}\n\n"
+    user_info += f"<i>Javob yozish uchun:</i>\n<code>/reply {message.from_user.id} matn</code>"
+    
+    try:
+        await bot.send_message(OWNER_ID, user_info, parse_mode="HTML")
+        await message.copy_to(OWNER_ID)
+        
+        kb = get_parent_keyboard() if role == 'parent' else get_child_keyboard()
+        await message.answer("✅ Xabaringiz adminga muvaffaqiyatli yuborildi! Fikringiz uchun rahmat!", reply_markup=kb)
+    except Exception as e:
+        await message.answer("❌ Xabar yuborishda xatolik yuz berdi.")
+        
+    await state.clear()
+
 # ==========================================
 # START VA YOPIQ TEST RUXSATI
 # ==========================================
 @dp.message(CommandStart())
-async def start_handler(message: types.Message, state: FSMContext):
+async def start_handler(message: types.Message, command: CommandObject, state: FSMContext):
     await state.clear()
+    
+    # 1. DEEP-LINK (Bir martalik havola) ORQALI KIRISHNI TEKSHIRISH
+    if command.args:
+        code = command.args
+        cursor.execute("SELECT is_used FROM Invite_Links WHERE code = ?", (code,))
+        link_row = cursor.fetchone()
+        if link_row:
+            if link_row[0] == 0:
+                # Havola to'g'ri va ishlatilmagan
+                cursor.execute("UPDATE Invite_Links SET is_used = 1, used_by = ? WHERE code = ?", (message.from_user.id, code))
+                cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)", (message.from_user.id, message.from_user.full_name))
+                cursor.execute("UPDATE Users SET is_approved = 1 WHERE user_id = ?", (message.from_user.id,))
+                conn.commit()
+                
+                kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
+                await message.answer(f"✅ <b>Maxsus taklif havolasi qabul qilindi!</b>\n\n{WELCOME_TEXT}", parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
+                return
+            else:
+                await message.answer("❌ Bu taklif havolasi allaqachon ishlatilgan!")
+                return
+    
+    # 2. ODATIY KIRISH (Bazada bor-yo'qligini tekshirish)
     cursor.execute("SELECT role, is_approved FROM Users WHERE user_id = ?", (message.from_user.id,))
     user = cursor.fetchone()
     
@@ -1307,7 +1412,7 @@ async def retry_audio_summary(callback: types.CallbackQuery, state: FSMContext):
     book_id = int(callback.data.split("_")[1])
     await state.update_data(audio_book_id=book_id, is_retry=True)
     await callback.message.delete()
-    await bot.send_message(callback.from_user.id, "🎤 <b>Qayta ovozli xabar yubor!</b>\n\nBu safar adabiyotshunos maslahat berganidek, chiroyliroq va batafsilroq gapirishga harakat qil. Omadingni sinab ko'r! 🚀", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await bot.send_message(callback.fromuser.id, "🎤 <b>Qayta ovozli xabar yubor!</b>\n\nBu safar adabiyotshunos maslahat berganidek, chiroyliroq va batafsilroq gapirishga harakat qil. Omadingni sinab ko'r! 🚀", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
     await state.set_state(ChildReading.waiting_for_audio)
     await callback.answer()
 
