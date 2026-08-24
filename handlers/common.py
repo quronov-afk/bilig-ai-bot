@@ -4,8 +4,8 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from config import WELCOME_TEXT
 from database import conn, cursor
-from keyboards import get_parent_keyboard, get_child_keyboard, get_back_reply_keyboard
-from states import Registration
+from keyboards import get_parent_keyboard, get_child_keyboard, get_back_reply_keyboard, get_add_book_keyboard
+from states import Registration, PlanCreation, ParentSettings, AITestCreation, ChildReading, StoreSettings
 
 router = Router()
 
@@ -16,11 +16,24 @@ CLOSED_BETA_TEXT = (
     "<i>Agar sizda taklifnoma havolasi bo'lsa, iltimos, sizga yuborilgan havola ustiga bosing.</i>"
 )
 
+# ==========================================
+# AQLLI ORQAGA (CONTEXT-AWARE BACK)
+# ==========================================
 @router.message(F.text == "🔙 Orqaga")
 async def cancel_handler(message: types.Message, state: FSMContext):
+    current_state = await state.get_state()
+    
+    # 1. Agar kitob qo'shish ichida bo'lsa -> Kitob qo'shish menyusiga qaytaradi (reja o'chmaydi!)
+    if current_state in [PlanCreation.waiting_for_book_text.state, PlanCreation.waiting_for_book_photo.state]:
+        await state.set_state(None)
+        await message.answer("📚 <b>Kitoblar qo'shish usulini tanlang:</b>", parse_mode="HTML", reply_markup=get_add_book_keyboard())
+        return
+
+    # 2. Boshqa holatlarda FSM tozalanadi va foydalanuvchining o'z bosh menyusiga qaytariladi
     await state.clear()
     cursor.execute("SELECT role FROM Users WHERE user_id = ?", (message.from_user.id,))
     user = cursor.fetchone()
+    
     if user and user[0] == 'parent':
         await message.answer("🚫 Amaliyot bekor qilindi. Bosh menyudasiz.", reply_markup=get_parent_keyboard())
     elif user and user[0] == 'child':
@@ -33,7 +46,7 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
     await state.clear()
     user_id = message.from_user.id
     
-    # 1. Agar bir martalik taklif havolasi orqali kirilgan bo'lsa
+    # 1. Taklif havolasi orqali kirgan bo'lsa
     if command.args:
         code = command.args
         cursor.execute("SELECT is_used FROM Invite_Links WHERE code = ?", (code,))
@@ -41,10 +54,8 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
         
         if link_row:
             if link_row[0] == 0:
-                # Havolani ishlatildi deb belgilash
                 cursor.execute("UPDATE Invite_Links SET is_used = 1, used_by = ? WHERE code = ?", (user_id, code))
                 
-                # A) Ota-ona taklifnomasi (prnt_...)
                 if code.startswith("prnt_"):
                     cursor.execute("INSERT OR REPLACE INTO Users (user_id, role, name, is_approved) VALUES (?, 'parent', ?, 1)", (user_id, message.from_user.full_name))
                     conn.commit()
@@ -56,8 +67,6 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
                         reply_markup=get_parent_keyboard()
                     )
                     return
-                
-                # B) Farzand taklifnomasi (chld_...)
                 elif code.startswith("chld_"):
                     cursor.execute("INSERT OR REPLACE INTO Users (user_id, role, name, is_approved) VALUES (?, 'child', ?, 1)", (user_id, message.from_user.full_name))
                     conn.commit()
@@ -70,8 +79,6 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
                     )
                     await state.set_state(Registration.waiting_for_parent_code)
                     return
-                
-                # C) Umumiy taklifnoma
                 else:
                     cursor.execute("INSERT OR REPLACE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)", (user_id, message.from_user.full_name))
                     conn.commit()
@@ -82,7 +89,7 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
                 await message.answer("❌ <b>Bu taklif havolasi allaqachon ishlatilgan!</b>", parse_mode="HTML")
                 return
 
-    # 2. Avval ro'yxatdan o'tgan foydalanuvchi kirgan bo'lsa
+    # 2. Ro'yxatdan o'tgan foydalanuvchini tekshirish
     cursor.execute("SELECT role, is_approved FROM Users WHERE user_id = ?", (user_id,))
     user = cursor.fetchone()
     
@@ -98,7 +105,7 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
             await message.answer(WELCOME_TEXT, parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
             return
 
-    # 3. Agar begona yoki havolasiz kirgan foydalanuvchi bo'lsa — kirish yopiq!
+    # 3. Havolasiz kirgan begonalar uchun yopiq
     await message.answer(CLOSED_BETA_TEXT, parse_mode="HTML", reply_markup=types.ReplyKeyboardRemove())
 
 @router.message(F.text == "👨‍👩‍👦 Men Ota-onaman")
