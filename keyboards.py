@@ -3,7 +3,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMar
 def get_parent_keyboard():
     kb = [
         [KeyboardButton(text="📝 Mutolaa rejasini tuzish"), KeyboardButton(text="📚 Faol rejalarim")],
-        [KeyboardButton(text="📊 Farzandim natijalari"), KeyboardButton(text="🎁 Mukofotlar")],
+        [KeyboardButton(text="📊 Farzandim natijalari"), KeyboardButton(text="🛒 Do‘kon")],
         [KeyboardButton(text="📞 Qayta aloqa")]
     ]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
@@ -11,8 +11,8 @@ def get_parent_keyboard():
 def get_child_keyboard():
     kb = [
         [KeyboardButton(text="📖 Kitob o'qish")],
-        [KeyboardButton(text="🎁 Mukofotlar"), KeyboardButton(text="🏆 Reyting")],
-        [KeyboardButton(text="📞 Qayta aloqa")]
+        [KeyboardButton(text="🎁 Sovrinlarim"), KeyboardButton(text="🛒 Do‘kon")],
+        [KeyboardButton(text="🏆 Reyting")]
     ]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
