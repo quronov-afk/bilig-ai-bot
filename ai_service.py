@@ -1,13 +1,14 @@
 import json
 import re
 import asyncio
-import google.generativeai as genai
+import traceback
+from google import genai
+from google.genai import types
 from config import GEMINI_API_KEY, GEMINI_MODEL
 
+client = None
 if GEMINI_API_KEY:
-    genai.configure(api_key=GEMINI_API_KEY)
-
-model = genai.GenerativeModel(GEMINI_MODEL)
+    client = genai.Client(api_key=GEMINI_API_KEY)
 
 def clean_json(text: str) -> str:
     """Gemini qaytargan matndan JSON blokini xavfsiz ajratib olish (RegEx orqali)"""
@@ -18,8 +19,8 @@ def clean_json(text: str) -> str:
     if json_block:
         return json_block.group(1).strip()
     
-    # 2. { ... } yoki [ ... ] blokini to‘g‘ridan-to‘g‘ri qidirish
-    json_obj = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', text)
+    # 2. { ... } yoki [ ... ] blokini to‘liq sug‘urib olish
+    json_obj = re.search(r'(\{.*\}|\[.*\])', text, re.DOTALL)
     if json_obj:
         return json_obj.group(1).strip()
     
@@ -33,10 +34,13 @@ async def analyze_book_cover(image_bytes: bytes):
     )
     for attempt in range(2):
         try:
-            response = await model.generate_content_async([
-                prompt,
-                {"mime_type": "image/jpeg", "data": image_bytes}
-            ])
+            response = await client.aio.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=[
+                    prompt,
+                    types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
+                ]
+            )
             ai_result = response.text.strip()
             if "." in ai_result:
                 title, author = ai_result.split(".", 1)
@@ -44,8 +48,9 @@ async def analyze_book_cover(image_bytes: bytes):
                 title, author = ai_result, "Noma'lum muallif"
             return title.strip(), author.strip()
         except Exception as e:
+            print(f"XATOLIK [analyze_book_cover - Urinish {attempt + 1}]: {e}")
             if attempt == 1:
-                print(f"XATOLIK [analyze_book_cover]: {e}")
+                traceback.print_exc()
                 raise e
             await asyncio.sleep(1)
 
@@ -58,10 +63,13 @@ async def verify_page_photo(image_bytes: bytes):
     
     for attempt in range(2):
         try:
-            response = await model.generate_content_async([
-                prompt,
-                {"mime_type": "image/jpeg", "data": image_bytes}
-            ])
+            response = await client.aio.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=[
+                    prompt,
+                    types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
+                ]
+            )
             raw_text = clean_json(response.text)
             data = json.loads(raw_text)
             
@@ -79,8 +87,9 @@ async def verify_page_photo(image_bytes: bytes):
                 
             return {"is_book_page": is_page, "page_number": page_number}
         except Exception as e:
+            print(f"XATOLIK [verify_page_photo - Urinish {attempt + 1}]: {e}")
             if attempt == 1:
-                print(f"XATOLIK [verify_page_photo]: {e}")
+                traceback.print_exc()
                 raise e
             await asyncio.sleep(1)
 
@@ -112,17 +121,21 @@ async def generate_test_bank_from_photos(photos_bytes_list: list):
 
     contents = [prompt]
     for img_bytes in photos_bytes_list:
-        contents.append({"mime_type": "image/jpeg", "data": img_bytes})
+        contents.append(types.Part.from_bytes(data=img_bytes, mime_type="image/jpeg"))
 
     for attempt in range(2):
         try:
-            response = await model.generate_content_async(contents)
+            response = await client.aio.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=contents
+            )
             raw_json = clean_json(response.text)
             questions = json.loads(raw_json)
             return questions, raw_json
         except Exception as e:
+            print(f"XATOLIK [generate_test_bank_from_photos - Urinish {attempt + 1}]: {e}")
             if attempt == 1:
-                print(f"XATOLIK [generate_test_bank_from_photos]: {e}")
+                traceback.print_exc()
                 raise e
             await asyncio.sleep(1)
 
@@ -166,13 +179,17 @@ async def evaluate_voice_summary(audio_bytes: bytes, age: int, book_title: str):
 
     for attempt in range(2):
         try:
-            response = await model.generate_content_async([
-                prompt,
-                {"mime_type": "audio/ogg", "data": audio_bytes}
-            ])
+            response = await client.aio.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=[
+                    prompt,
+                    types.Part.from_bytes(data=audio_bytes, mime_type="audio/ogg")
+                ]
+            )
             return json.loads(clean_json(response.text))
         except Exception as e:
+            print(f"XATOLIK [evaluate_voice_summary - Urinish {attempt + 1}]: {e}")
             if attempt == 1:
-                print(f"XATOLIK [evaluate_voice_summary]: {e}")
+                traceback.print_exc()
                 raise e
             await asyncio.sleep(1)
