@@ -5,7 +5,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMar
 from config import WELCOME_TEXT
 from database import conn, cursor
 from keyboards import get_parent_keyboard, get_child_keyboard, get_back_reply_keyboard, get_add_book_keyboard
-from states import Registration, PlanCreation, ParentSettings, AITestCreation, ChildReading, StoreSettings
+from states import Registration, PlanCreation
 
 router = Router()
 
@@ -13,7 +13,7 @@ CLOSED_BETA_TEXT = (
     "🔒 <b>Bilig AI — Yopiq test rejimi</b>\n\n"
     "Assalomu alaykum! Bilig AI platformasi hozirda muallif tomonidan <b>yopiq sinov (beta)</b> rejimida ishlamoqda.\n\n"
     "Botdan faqat <b>maxsus taklif havolasi (taklifnoma)</b> orqali foydalanish mumkin.\n\n"
-    "<i>Agar sizda taklifnoma havolasi bo'lsa, iltimos, sizga yuborilgan havola ustiga bosing.</i>"
+    "<i>Agar sizda taklifnoma havolasi bo‘lsa, iltimos, sizga yuborilgan havola ustiga bosing.</i>"
 )
 
 # ==========================================
@@ -26,7 +26,7 @@ async def cancel_handler(message: types.Message, state: FSMContext):
     # 1. Agar kitob qo'shish ichida bo'lsa -> Kitob qo'shish menyusiga qaytaradi (reja o'chmaydi!)
     if current_state in [PlanCreation.waiting_for_book_text.state, PlanCreation.waiting_for_book_photo.state]:
         await state.set_state(None)
-        await message.answer("📚 <b>Kitoblar qo'shish usulini tanlang:</b>", parse_mode="HTML", reply_markup=get_add_book_keyboard())
+        await message.answer("📚 <b>Kitoblar qo‘shish usulini tanlang:</b>", parse_mode="HTML", reply_markup=get_add_book_keyboard())
         return
 
     # 2. Boshqa holatlarda FSM tozalanadi va foydalanuvchining o'z bosh menyusiga qaytariladi
@@ -60,7 +60,7 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
                     cursor.execute("INSERT OR REPLACE INTO Users (user_id, role, name, is_approved) VALUES (?, 'parent', ?, 1)", (user_id, message.from_user.full_name))
                     conn.commit()
                     await message.answer(
-                        f"🎉 <b>Xush kelibsiz!</b>\n\nSiz <b>Ota-ona</b> sifatida muvaffaqiyatli ro'yxatdan o'tdingiz!\n"
+                        f"🎉 <b>Xush kelibsiz!</b>\n\nSiz <b>Ota-ona</b> sifatida muvaffaqiyatli ro‘yxatdan o‘tdingiz!\n"
                         f"Farzandingiz profilingizga ulanishi uchun oilaviy kodingiz: <b>BLG-{str(user_id)[-4:]}</b>\n\n"
                         f"Quyidagi menyu orqali farzandingiz uchun birinchi mutolaa rejasini tuzishingiz mumkin 👇",
                         parse_mode="HTML",
@@ -72,7 +72,7 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
                     conn.commit()
                     await message.answer(
                         "🦸‍♂️ <b>Xush kelibsiz, Qahramon!</b>\n\n"
-                        "Siz <b>O'quvchi</b> sifatida ro'yxatdan o'tdingiz!\n"
+                        "Siz <b>O‘quvchi</b> sifatida ro‘yxatdan o‘tdingiz!\n"
                         "Ota-onangiz bergan kodni kiriting (masalan, <code>BLG-1234</code>):",
                         parse_mode="HTML",
                         reply_markup=get_back_reply_keyboard()
@@ -82,7 +82,7 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
                 else:
                     cursor.execute("INSERT OR REPLACE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)", (user_id, message.from_user.full_name))
                     conn.commit()
-                    kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
+                    kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O‘quvchiman")]]
                     await message.answer(f"✅ <b>Taklifnoma qabul qilindi!</b>\n\n{WELCOME_TEXT}", parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
                     return
             else:
@@ -101,7 +101,7 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
             await message.answer("<b>Asosiy menyuga xush kelibsiz, Qahramon!</b> 🦸‍♂️🦸‍♀️", parse_mode="HTML", reply_markup=get_child_keyboard())
             return
         else:
-            kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O'quvchiman")]]
+            kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O‘quvchiman")]]
             await message.answer(WELCOME_TEXT, parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
             return
 
@@ -118,9 +118,9 @@ async def parent_handler(message: types.Message):
         
     cursor.execute("UPDATE Users SET role = 'parent' WHERE user_id = ?", (message.from_user.id,))
     conn.commit()
-    await message.answer(f"Siz Ota-ona sifatida ro'yxatdan o'tdingiz! ✅\nFarzandingiz ulanishi uchun kodingiz: <b>BLG-{str(message.from_user.id)[-4:]}</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    await message.answer(f"Siz Ota-ona sifatida ro‘yxatdan o‘tdingiz! ✅\nFarzandingiz ulanishi uchun kodingiz: <b>BLG-{str(message.from_user.id)[-4:]}</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
 
-@router.message(F.text == "👦👧 Men O'quvchiman")
+@router.message(F.text.in_(["👦👧 Men O‘quvchiman", "👦👧 Men O'quvchiman"]))
 async def child_handler(message: types.Message, state: FSMContext):
     cursor.execute("SELECT is_approved FROM Users WHERE user_id = ?", (message.from_user.id,))
     u = cursor.fetchone()
@@ -137,7 +137,7 @@ async def child_handler(message: types.Message, state: FSMContext):
 async def process_parent_code(message: types.Message, state: FSMContext):
     code = message.text.strip()
     if not code.startswith("BLG-"):
-        await message.answer("Kod xato formatda! 'BLG-1234' ko'rinishida kiriting.")
+        await message.answer("Kod xato formatda! 'BLG-1234' ko‘rinishida kiriting.")
         return
     parent_suffix = code.replace("BLG-", "")
     cursor.execute("SELECT user_id FROM Users WHERE role = 'parent' AND CAST(user_id AS TEXT) LIKE ?", ('%' + parent_suffix,))
@@ -146,7 +146,7 @@ async def process_parent_code(message: types.Message, state: FSMContext):
         try:
             cursor.execute("INSERT INTO Family_Link (parent_id, child_id) VALUES (?, ?)", (parent[0], message.from_user.id))
             conn.commit()
-            await message.answer("Tabriklaymiz! Ota-onangiz bilan bog'landingiz! 🎉", reply_markup=get_child_keyboard())
+            await message.answer("Tabriklaymiz! Ota-onangiz bilan bog‘landingiz! 🎉", reply_markup=get_child_keyboard())
             
             kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="👦👧 Farzand yoshini kiritish", callback_data=f"set_age_{message.from_user.id}")]])
             await message.bot.send_message(parent[0], f"Farzandingiz ({message.from_user.full_name}) profilingizga ulandi! ✅\n\nAI unga moslashishi uchun iltimos, farzandingizning yoshini kiriting:", reply_markup=kb)
