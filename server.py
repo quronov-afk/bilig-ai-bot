@@ -1,19 +1,22 @@
-import os
-from http.server import BaseHTTPRequestHandler, HTTPServer
+# ==========================================================
+# server.py  (YANGILANGAN)
+# ------------------------------------------------------------
+# Avvalgi versiyada bu yerda faqat "men tirikman" deb javob
+# beruvchi oddiy HTTP server bor edi (Render.com portni ochiq
+# ushlab turishi uchun). Endi shu server o'rniga to'liq
+# Mini App + API (webapp_api.py) ishga tushadi — health-check
+# vazifasini ham u bajaradi ("/" manzili 200 OK qaytaradi).
+#
+# main.py bu faylni threading.Thread orqali chaqiradi, botning
+# o'zi (aiogram polling) alohida davom etaveradi — ikkalasi
+# bir-biriga xalaqit bermaydi.
+# ==========================================================
+
 from config import PORT
+from webapp_api import run_webapp_server
 
-class HealthCheckHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        self.send_response(200)
-        self.end_headers()
-        self.wfile.write(b"Bilig AI Bot is alive and running!")
-
-    def log_message(self, format, *args):
-        pass  # Konsolga ortiqcha log yozmaslik uchun
-
-class ReusableTCPServer(HTTPServer):
-    allow_reuse_address = True
 
 def run_dummy_server():
-    server = ReusableTCPServer(('0.0.0.0', PORT), HealthCheckHandler)
-    server.serve_forever()
+    """Nomi eski nomda qoldirildi (main.py shu nomni chaqiradi),
+    lekin endi ichida to'liq Mini App + API serveri ishlaydi."""
+    run_webapp_server(PORT)
