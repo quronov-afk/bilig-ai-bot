@@ -39,7 +39,7 @@ async def save_child_age(message: types.Message, state: FSMContext):
     cursor.execute("UPDATE Family_Link SET child_age = ? WHERE child_id = ? AND parent_id = ?", (age, child_id, message.from_user.id))
     conn.commit()
     
-    await message.answer(f"✅ <b>Farzandingiz yoshi ({age} yosh) saqlandi!</b>\nEndi AI uning yoshiga moslashib ishlaydi.", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    await message.answer(f"✅ <b>Farzandingiz yoshi ({age} yosh) saqlandi!</b>\nEndi AI ustoz uning yoshiga moslashib baholaydi.", parse_mode="HTML", reply_markup=get_parent_keyboard())
     await state.clear()
 
 # ==========================================
@@ -47,9 +47,11 @@ async def save_child_age(message: types.Message, state: FSMContext):
 # ==========================================
 def get_rewards_text():
     return (
-        "🛒 <b>Do'kon va Motivatsiya bo'limi</b>\n\n"
-        "Bu bo'lim orqali farzandingiz uchun o'qishni qiziqarli o'yinga aylantirasiz!\n\n"
-        "<i>👇 Kerakli bo'limni tanlang:</i>"
+        "🛒 <b>Do‘kon va Rag‘bat tizimi</b>\n\n"
+        "Tizimda 2 xil rag‘batlantirish falsafasi mavjud:\n"
+        "1️⃣ <b>Yo‘l-yo‘lakay quvvat (Biliglar):</b> Har 5 bet mutolaa uchun beriladi — har kungi odat va kichik quvonchlar uchun.\n"
+        "2️⃣ <b>Marra sovrini (Katta mukofot):</b> Butun rejadagi kitoblar to‘liq o‘qib bo‘linganda beriladi — katta maqsad sari yetaklaydi.\n\n"
+        "<i>👇 Kerakli bo‘limni tanlang:</i>"
     )
 
 @router.message(F.text.in_(["🛒 Do‘kon", "🛒 Do'kon", "🎁 Mukofotlar"]))
@@ -63,7 +65,12 @@ async def rewards_main_callback(callback: types.CallbackQuery):
 
 @router.callback_query(F.data == "rewards_bilig_rate")
 async def rewards_bilig_rate_callback(callback: types.CallbackQuery):
-    text = "🔅 <b>Bilig kursini belgilash</b>\n\n1 ta Bilig (🔅) necha so'mga teng ekanligini tanlang:"
+    text = (
+        "🔅 <b>Bilig kursini belgilash</b>\n\n"
+        "📖 <b>Asosiy qoida:</b> Har 5 sahifa mutolaa = <b>1 ta Bilig (🔅)</b>.\n\n"
+        "💡 <i>Byudjet misoli: Farzandingiz 50 bet kitob o‘qisa, 10 ta Bilig to‘playdi. Kursni 1 000 so‘m qilib belgilasangiz, bu 10 000 so‘m rag‘bat bo‘ladi.</i>\n\n"
+        "👇 <b>1 ta Bilig (🔅) qiymatini tanlang:</b>"
+    )
     await callback.message.edit_text(text, parse_mode="HTML", reply_markup=get_bilig_rate_inline_keyboard())
     await callback.answer()
 
@@ -81,9 +88,9 @@ async def process_rate_callback(callback: types.CallbackQuery, state: FSMContext
     conn.commit()
     
     if rate == 0:
-        await callback.message.edit_text("✅ <b>Siz pul bilan rag'batlantirmaslik rejimini tanladingiz!</b>\n\nEndi farzandingiz faqat nishonlar, reyting va bilim uchun o'qiydi. Bu ajoyib tanlov! 🧠", parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
+        await callback.message.edit_text("✅ <b>Siz pul bilan rag‘batlantirmaslik rejimini tanladingiz!</b>\n\nEndi farzandingiz faqat nishonlar, reyting va bilim uchun o‘qiydi. Bu ajoyib tanlov! 🧠", parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
     else:
-        await callback.message.edit_text(f"✅ <b>Bilig kursi o'rnatildi!</b>\n1 🔅 = {rate:,} so'm.", parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
+        await callback.message.edit_text(f"✅ <b>Bilig kursi o‘rnatildi!</b>\n1 🔅 = {rate:,} so‘m.", parse_mode="HTML", reply_markup=get_rewards_main_keyboard())
     await callback.answer()
 
 @router.message(ParentSettings.waiting_for_custom_rate)
@@ -94,7 +101,7 @@ async def process_custom_rate(message: types.Message, state: FSMContext):
     rate = int(message.text)
     cursor.execute("UPDATE Users SET coin_rate = ? WHERE user_id = ?", (rate, message.from_user.id))
     conn.commit()
-    await message.answer(f"✅ <b>Bilig kursi o'rnatildi!</b>\n1 🔅 = {rate:,} so'm.", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    await message.answer(f"✅ <b>Bilig kursi o‘rnatildi!</b>\n1 🔅 = {rate:,} so‘m.", parse_mode="HTML", reply_markup=get_parent_keyboard())
     await state.clear()
 
 @router.callback_query(F.data == "rewards_store_edit")
@@ -106,13 +113,13 @@ async def store_edit_callback(callback: types.CallbackQuery):
     for item in items:
         kb.append([InlineKeyboardButton(text=f"🗑 {item[1]} — {item[2]} 🔅", callback_data=f"delitem_{item[0]}")])
         
-    kb.append([InlineKeyboardButton(text="➕ Yangi sovg'a qo'shish", callback_data="add_store_item")])
+    kb.append([InlineKeyboardButton(text="➕ Yangi sovg‘a qo‘shish", callback_data="add_store_item")])
     kb.append([InlineKeyboardButton(text="🔙 Orqaga", callback_data="rewards_main")])
     
     text = (
-        "🛍 <b>Sovg'alar do'koni</b>\n\n"
-        "Bu yerdagi sovg'alarni farzandingiz o'z Biliglariga sotib olishi mumkin.\n"
-        "<i>(O'chirmoqchi bo'lgan sovg'angiz ustiga bosing)</i>"
+        "🛍 <b>Sovg‘alar do‘koni</b>\n\n"
+        "Bu yerdagi sovg‘alarni farzandingiz o‘z Biliglariga sotib olishi mumkin.\n"
+        "<i>(O‘chirmoqchi bo‘lgan sovg‘angiz ustiga bosing)</i>"
     )
     await callback.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
     await callback.answer()
@@ -130,8 +137,8 @@ async def add_store_item_start(callback: types.CallbackQuery, state: FSMContext)
     except Exception: pass
     await callback.bot.send_message(
         callback.from_user.id,
-        "✍️ <b>Sovg'a nomini kiriting:</b>\n"
-        "<i>(Emojilar bilan ham yozishingiz mumkin! Masalan: 🍦 Muzqaymoq, 🎡 Parkka borish, 🎮 O'yin)</i>",
+        "✍️ <b>Sovg‘a nomini kiriting:</b>\n"
+        "<i>(Emojilar bilan ham yozishingiz mumkin! Masalan: 🍦 Muzqaymoq, 🎡 Parkka borish, 🎮 O‘yin)</i>",
         parse_mode="HTML",
         reply_markup=get_back_reply_keyboard()
     )
@@ -141,7 +148,7 @@ async def add_store_item_start(callback: types.CallbackQuery, state: FSMContext)
 @router.message(StoreSettings.waiting_for_item_name)
 async def store_item_name(message: types.Message, state: FSMContext):
     await state.update_data(item_name=message.text)
-    await message.answer("💰 <b>Bu sovg'a necha Bilig (🔅) turadi?</b>\nFaqat raqam kiriting:\n<i>(Masalan: 10, 50, 100)</i>", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await message.answer("💰 <b>Bu sovg‘a necha Bilig (🔅) turadi?</b>\nFaqat raqam kiriting:\n<i>(Masalan: 10, 50, 100)</i>", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
     await state.set_state(StoreSettings.waiting_for_item_price)
 
 @router.message(StoreSettings.waiting_for_item_price)
@@ -154,14 +161,14 @@ async def store_item_price(message: types.Message, state: FSMContext):
     conn.commit()
     
     kb = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="➕ Yana sovg'a qo'shish", callback_data="add_store_item")],
-        [InlineKeyboardButton(text="🔙 Do'konga qaytish", callback_data="rewards_store_edit")]
+        [InlineKeyboardButton(text="➕ Yana sovg‘a qo‘shish", callback_data="add_store_item")],
+        [InlineKeyboardButton(text="🔙 Do‘konga qaytish", callback_data="rewards_store_edit")]
     ])
-    await message.answer(f"✅ <b>{data['item_name']}</b> do'konga qo'shildi!\n\nYana sovg'a qo'shasizmi?", parse_mode="HTML", reply_markup=kb)
+    await message.answer(f"✅ <b>{data['item_name']}</b> do‘konga qo‘shildi!\n\nYana sovg‘a qo‘shasizmi?", parse_mode="HTML", reply_markup=kb)
     await state.clear()
 
 # ==========================================
-# MUTOLAA REJASINI TUZISH (2 QADAMLI)
+# MUTOLAA REJASINI TUZISH
 # ==========================================
 @router.message(F.text == "📝 Mutolaa rejasini tuzish")
 async def create_plan_start(message: types.Message, state: FSMContext):
@@ -172,7 +179,7 @@ async def create_plan_start(message: types.Message, state: FSMContext):
         parent_code = f"BLG-{str(message.from_user.id)[-4:]}"
         await message.answer(
             f"⚠️ <b>Sizga hali hech qaysi farzand ulanmagan!</b>\n\n"
-            f"Farzandingiz o'z telefonida botga kirsin va kodingizni kiritsin:\n🔑 Kodingiz: <b>{parent_code}</b>",
+            f"Farzandingiz o‘z telefonida botga kirsin va kodingizni kiritsin:\n🔑 Kodingiz: <b>{parent_code}</b>",
             parse_mode="HTML"
         )
         return
@@ -214,9 +221,9 @@ async def plan_child_selected(callback: types.CallbackQuery, state: FSMContext):
 async def plan_name_received(message: types.Message, state: FSMContext):
     await state.update_data(plan_name=message.text)
     await message.answer(
-        "🎁 <b>2-qadam: Katta Mukofot!</b>\n\n"
-        "Bu reja to'liq tugatilganda farzandingiz qanday katta mukofot oladi?\n"
-        "<i>(Masalan: 'Velosiped', '100 ta Bilig', 'Akva-parkka sayohat')</i>",
+        "🎁 <b>2-qadam: Marra sovrini (Katta mukofot)!</b>\n\n"
+        "Farzandingiz butun rejadagi kitoblarni to‘liq o‘qib tugatganda qanday katta sovrin oladi?\n"
+        "<i>(Masalan: 'Velosiped', 'Akva-parkka sayohat', '100 ta Bilig')</i>",
         parse_mode="HTML",
         reply_markup=get_back_reply_keyboard()
     )
@@ -238,12 +245,12 @@ async def plan_prize_received(message: types.Message, state: FSMContext):
     
     await state.update_data(current_plan_id=plan_id)
     await message.answer("✅ <b>Reja yaratildi!</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
-    await message.answer("📚 <b>Endi bu rejaga kitoblar qo'shamiz!</b>\n👇 <i>Qaysi usuldan foydalanasiz?</i>", parse_mode="HTML", reply_markup=get_add_book_keyboard())
+    await message.answer("📚 <b>Endi bu rejaga kitoblar qo‘shamiz!</b>\n👇 <i>Qaysi usuldan foydalanasiz?</i>", parse_mode="HTML", reply_markup=get_add_book_keyboard())
 
 @router.callback_query(F.data == "finish_plan")
 async def finish_plan_handler(callback: types.CallbackQuery, state: FSMContext):
     await state.clear()
-    await callback.message.edit_text("✅ <b>Mutolaa rejasi muvaffaqiyatli saqlandi!</b>\nFarzandingiz o'z telefonida ushbu kitoblarni o'qishni boshlashi mumkin. 🚀", parse_mode="HTML")
+    await callback.message.edit_text("✅ <b>Mutolaa rejasi muvaffaqiyatli saqlandi!</b>\nFarzandingiz o‘z telefonida ushbu kitoblarni o‘qishni boshlashi mumkin. 🚀", parse_mode="HTML")
     await callback.answer()
 
 @router.callback_query(F.data == "add_book_text")
@@ -252,9 +259,9 @@ async def add_book_text_handler(callback: types.CallbackQuery, state: FSMContext
     except Exception: pass
     await callback.bot.send_message(
         callback.from_user.id,
-        "✍️ <b>Matn orqali qo'shish</b>\n\n"
+        "✍️ <b>Matn orqali qo‘shish</b>\n\n"
         "Kitob nomi va muallifini nuqta bilan ajratib yozing:\n"
-        "<i>(Masalan: Sariq devni minib. Xudoyberdi To'xtaboyev)</i>",
+        "<i>(Masalan: Sariq devni minib. Xudoyberdi To‘xtaboyev)</i>",
         parse_mode="HTML",
         reply_markup=get_back_reply_keyboard()
     )
@@ -264,20 +271,20 @@ async def add_book_text_handler(callback: types.CallbackQuery, state: FSMContext
 @router.message(PlanCreation.waiting_for_book_text)
 async def process_book_text(message: types.Message, state: FSMContext):
     if "." not in message.text:
-        await message.answer("⚠️ Iltimos, kitob nomi va muallifini nuqta (.) bilan ajrating.\n<i>Masalan: Shum bola. G'afur G'ulom</i>")
+        await message.answer("⚠️ Iltimos, kitob nomi va muallifini nuqta (.) bilan ajrating.\n<i>Masalan: Shum bola. G‘afur G‘ulom</i>")
         return
     title, author = message.text.split(".", 1)
     data = await state.get_data()
     cursor.execute("INSERT INTO Plan_Books (plan_id, title, author) VALUES (?, ?, ?)", (data.get('current_plan_id'), title.strip(), author.strip()))
     conn.commit()
-    await message.answer(f"📚 <b>'{title.strip()}'</b> kitobi rejangizga qo'shildi!", parse_mode="HTML", reply_markup=get_parent_keyboard())
-    await message.answer("Yana kitob qo'shasizmi yoki rejani yakunlaysizmi?", reply_markup=get_add_book_keyboard())
+    await message.answer(f"📚 <b>'{title.strip()}'</b> kitobi rejangizga qo‘shildi!", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    await message.answer("Yana kitob qo‘shasizmi yoki rejani yakunlaysizmi?", reply_markup=get_add_book_keyboard())
 
 @router.callback_query(F.data == "add_book_photo")
 async def add_book_photo_handler(callback: types.CallbackQuery, state: FSMContext):
     try: await callback.message.delete()
     except Exception: pass
-    await callback.bot.send_message(callback.from_user.id, "📸 <b>Rasm orqali qo'shish</b>\n\nKitobning muqovasini rasmga olib yuboring.", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await callback.bot.send_message(callback.from_user.id, "📸 <b>Rasm orqali qo‘shish</b>\n\nKitobning muqovasini rasmga olib yuboring.", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
     await state.set_state(PlanCreation.waiting_for_book_photo)
     await callback.answer()
 
@@ -296,13 +303,13 @@ async def process_book_photo(message: types.Message, state: FSMContext):
         conn.commit()
         
         await processing_msg.delete()
-        await message.answer(f"✅ <b>AI aniqladi!</b>\n📚 <b>'{title}'</b> ({author})\nKitob qo'shildi!", parse_mode="HTML", reply_markup=get_parent_keyboard())
-        await message.answer("Yana kitob qo'shasizmi yoki rejani yakunlaysizmi?", reply_markup=get_add_book_keyboard())
+        await message.answer(f"✅ <b>AI aniqladi!</b>\n📚 <b>'{title}'</b> ({author})\nKitob qo‘shildi!", parse_mode="HTML", reply_markup=get_parent_keyboard())
+        await message.answer("Yana kitob qo‘shasizmi yoki rejani yakunlaysizmi?", reply_markup=get_add_book_keyboard())
     except Exception:
         await processing_msg.delete()
-        await message.answer("❌ Muqovani aniqlab bo'lmadi. Iltimos, kitobni matn orqali qo'shing.", parse_mode="HTML", reply_markup=get_parent_keyboard())
+        await message.answer("❌ Muqovani aniqlab bo‘lmadi. Iltimos, kitobni matn orqali qo‘shing.", parse_mode="HTML", reply_markup=get_parent_keyboard())
 
-# YOSH BO'YICHA TAVSIYALAR (1 BOSISHDA NUSXALASH)
+# YOSH BO'YICHA TAVSIYALAR
 @router.callback_query(F.data == "add_book_age")
 async def show_age_recommendation_menu(callback: types.CallbackQuery):
     kb = [
@@ -315,7 +322,7 @@ async def show_age_recommendation_menu(callback: types.CallbackQuery):
 
 @router.callback_query(F.data == "back_to_add_books")
 async def back_to_add_books_callback(callback: types.CallbackQuery):
-    await callback.message.edit_text("📚 <b>Kitoblar qo'shish usulini tanlang:</b>", reply_markup=get_add_book_keyboard())
+    await callback.message.edit_text("📚 <b>Kitoblar qo‘shish usulini tanlang:</b>", reply_markup=get_add_book_keyboard())
     await callback.answer()
 
 @router.callback_query(F.data.startswith("rec_age_"))
@@ -333,7 +340,7 @@ async def show_recommended_books_list(callback: types.CallbackQuery):
     text += f"\n{MUTOLAA_NOTE}"
     kb = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🔙 Yosh toifalariga qaytish", callback_data="add_book_age")],
-        [InlineKeyboardButton(text="📚 Kitob qo'shishga qaytish", callback_data="back_to_add_books")]
+        [InlineKeyboardButton(text="📚 Kitob qo‘shishga qaytish", callback_data="back_to_add_books")]
     ])
     await callback.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
     await callback.answer()
@@ -351,7 +358,7 @@ async def show_parent_plans(message_or_callback, user_id):
     plans = cursor.fetchall()
     
     if not plans:
-        text = "Sizda hozircha faol rejalar yo'q."
+        text = "Sizda hozircha faol rejalar yo‘q."
         if isinstance(message_or_callback, types.Message): await message_or_callback.answer(text, reply_markup=get_parent_keyboard())
         else: await message_or_callback.message.edit_text(text)
         return
@@ -395,11 +402,12 @@ async def show_plan_details(callback: types.CallbackQuery):
         status_icon = "✅" if b[2] == 1 else "📘"
         kb.append([InlineKeyboardButton(text=f"{status_icon} {b[1]}", callback_data=f"showbook_{b[0]}")])
         
-    kb.append([InlineKeyboardButton(text="🗑 Rejani o'chirish", callback_data=f"delplan_{plan_id}")])
+    kb.append([InlineKeyboardButton(text="🗑 Rejani o‘chirish", callback_data=f"delplan_{plan_id}")])
     kb.append([InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_plans_main")])
     
     child_info = f"\n👦 Farzand: <b>{plan[2]}</b>" if plan[2] else ""
-    text = f"🎯 <b>{plan[0]}</b>{child_info}\n🎁 Katta mukofot: <b>{plan[1]}</b>\n\n📚 <b>Kitoblar ro'yxati:</b>"
+    prize_text = f"\n🎁 Marra sovrini: <b>{plan[1]}</b>" if plan[1] else ""
+    text = f"🎯 <b>{plan[0]}</b>{child_info}{prize_text}\n\n📚 <b>Kitoblar ro‘yxati:</b>"
     await callback.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
     await callback.answer()
 
@@ -411,7 +419,7 @@ async def delete_plan_handler(callback: types.CallbackQuery):
     cursor.execute("DELETE FROM Reading_Plans WHERE plan_id = ?", (plan_id,))
     conn.commit()
     
-    await callback.answer("✅ Reja va uning kitoblari to'liq o'chirildi!", show_alert=True)
+    await callback.answer("✅ Reja va uning kitoblari to‘liq o‘chirildi!", show_alert=True)
     await show_parent_plans(callback, callback.from_user.id)
 
 @router.callback_query(F.data.startswith("showbook_"))
@@ -429,12 +437,12 @@ async def show_book_details(callback: types.CallbackQuery):
     
     kb = [
         [InlineKeyboardButton(text=test_btn_text, callback_data=f"aitest_{book_id}")],
-        [InlineKeyboardButton(text="🗑 Kitobni o'chirish", callback_data=f"delbook_{book_id}")],
+        [InlineKeyboardButton(text="🗑 Kitobni o‘chirish", callback_data=f"delbook_{book_id}")],
         [InlineKeyboardButton(text="🔙 Orqaga", callback_data=f"showplan_{book[0]}")]
     ]
-    status_text = "Tugatilgan ✅" if book[4] == 1 else "O'qilmoqda ⏳"
+    status_text = "Tugatilgan ✅" if book[4] == 1 else "O‘qilmoqda ⏳"
     test_status = "Mavjud ✅" if has_test else "Hali tuzilmagan ❌"
-    text = f"📘 <b>{book[1]}</b>\n✍️ Muallif: {book[2]}\n📖 O'qildi: {book[3]} bet\n📊 Holati: {status_text}\n🧠 AI Test: {test_status}"
+    text = f"📘 <b>{book[1]}</b>\n✍️ Muallif: {book[2]}\n📖 O‘qildi: {book[3]} bet\n📊 Holati: {status_text}\n🧠 AI Test: {test_status}"
     await callback.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
     await callback.answer()
 
@@ -449,7 +457,7 @@ async def delete_book_handler(callback: types.CallbackQuery):
         cursor.execute("DELETE FROM Book_Tests WHERE book_id = ?", (book_id,))
         cursor.execute("DELETE FROM Plan_Books WHERE book_id = ?", (book_id,))
         conn.commit()
-        await callback.answer("✅ Kitob o'chirildi!", show_alert=True)
+        await callback.answer("✅ Kitob o‘chirildi!", show_alert=True)
         
         cursor.execute("""
             SELECT rp.name, rp.prize, u.name 
@@ -466,11 +474,12 @@ async def delete_book_handler(callback: types.CallbackQuery):
             status_icon = "✅" if b[2] == 1 else "📘"
             kb.append([InlineKeyboardButton(text=f"{status_icon} {b[1]}", callback_data=f"showbook_{b[0]}")])
             
-        kb.append([InlineKeyboardButton(text="🗑 Rejani o'chirish", callback_data=f"delplan_{plan_id}")])
+        kb.append([InlineKeyboardButton(text="🗑 Rejani o‘chirish", callback_data=f"delplan_{plan_id}")])
         kb.append([InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_plans_main")])
         
         child_info = f"\n👦 Farzand: <b>{plan[2]}</b>" if plan[2] else ""
-        text = f"🎯 <b>{plan[0]}</b>{child_info}\n🎁 Katta mukofot: <b>{plan[1]}</b>\n\n📚 <b>Kitoblar ro'yxati:</b>"
+        prize_text = f"\n🎁 Marra sovrini: <b>{plan[1]}</b>" if plan[1] else ""
+        text = f"🎯 <b>{plan[0]}</b>{child_info}{prize_text}\n\n📚 <b>Kitoblar ro‘yxati:</b>"
         await callback.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
     else:
         await callback.answer("Kitob topilmadi!", show_alert=True)
@@ -485,8 +494,8 @@ async def ask_for_test_photo(callback: types.CallbackQuery, state: FSMContext):
     kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="✅ Testni tuzish")], [KeyboardButton(text="🔙 Orqaga")]], resize_keyboard=True)
     await callback.bot.send_message(
         callback.from_user.id,
-        "📸 <b>AI Test tuzish uchun kamida 3 ta sahifa rasmini yuboring!</b>\n\n"
-        "1-sahifa, 2-sahifa va 3-sahifalarni ketma-ket rasmga olib yuboring.\n\n"
+        "📸 <b>AI Test tuzish uchun sahifalar rasmini yuboring!</b>\n\n"
+        "Sahifalarni ketma-ket rasmga olib yuboring.\n\n"
         "Barcha rasmlarni yuborgach, pastdagi <b>'✅ Testni tuzish'</b> tugmasini bosing.",
         parse_mode="HTML",
         reply_markup=kb
@@ -506,10 +515,7 @@ async def collect_test_photo(message: types.Message, state: FSMContext):
     await state.update_data(photos=photos)
     
     photo_count = len(photos)
-    if photo_count < 3:
-        await message.answer(f"📸 <b>{photo_count}-sahifa rasmi qabul qilindi!</b>\n\nYana kamida {3 - photo_count} ta sahifa rasmini yuboring.")
-    else:
-        await message.answer(f"📸 <b>{photo_count}-sahifa rasmi qabul qilindi!</b>\n\nYetarli rasmlar yig'ildi. Testni tuzish uchun pastdagi <b>'✅ Testni tuzish'</b> tugmasini bosing.")
+    await message.answer(f"📸 <b>{photo_count}-sahifa rasmi qabul qilindi!</b>\n\nYetarli rasmlar yig‘ilgach, testni tuzish uchun pastdagi <b>'✅ Testni tuzish'</b> tugmasini bosing.")
 
 @router.message(AITestCreation.waiting_for_page_photo, F.text == "✅ Testni tuzish")
 async def generate_ai_test_multi(message: types.Message, state: FSMContext):
@@ -517,11 +523,11 @@ async def generate_ai_test_multi(message: types.Message, state: FSMContext):
     photos = data.get('photos', [])
     book_id = data.get('test_book_id')
     
-    if len(photos) < 3:
-        await message.answer(f"⚠️ <b>Kamida 3 ta sahifa rasmini yuborishingiz kerak!</b>\nHozircha {len(photos)} ta rasm yubordingiz. Yana {3 - len(photos)} ta rasm yuboring.")
+    if len(photos) < 1:
+        await message.answer("⚠️ Iltimos, kamida 1 ta sahifa rasmini yuboring!")
         return
         
-    processing_msg = await message.answer(f"⏳ <i>Gemini AI {len(photos)} ta sahifani tahlil qilib, 5 ta test savoli tuzmoqda... Iltimos kuting.</i>", parse_mode="HTML")
+    processing_msg = await message.answer(f"⏳ <i>Gemini AI {len(photos)} ta sahifani tahlil qilib, 5 ta mantiqiy test savoli tuzmoqda... Iltimos kuting.</i>", parse_mode="HTML")
     
     try:
         questions, raw_json = await generate_test_from_photos(photos)
@@ -552,7 +558,7 @@ async def show_single_child_result(message_or_call, child_id, parent_id):
     child = cursor.fetchone()
     if not child: return
     child_name, balance, badges, streak = child
-    badges_text = badges if badges else "Hali nishonlar yo'q"
+    badges_text = badges if badges else "Hali nishonlar yo‘q"
     
     cursor.execute("""
         SELECT pb.title, pb.pages_read, pb.is_completed 
@@ -566,24 +572,24 @@ async def show_single_child_result(message_or_call, child_id, parent_id):
     text = (
         f"📊 <b>{child_name}ning natijalari:</b>\n\n"
         f"👦 Yoshi: <b>{child_age} yosh</b>\n"
-        f"🔅 Yig'ilgan Biliglar: <b>{balance} ta</b>\n"
-        f"🔥 Uzluksiz o'qish: <b>{streak} kun</b>\n"
+        f"🔅 Yig‘ilgan Biliglar: <b>{balance} ta</b>\n"
+        f"🔥 Uzluksiz o‘qish: <b>{streak} kun</b>\n"
         f"🏅 Nishonlar: {badges_text}\n\n"
-        f"📖 <b>Jami o'qilgan: {total_pages} bet</b>\n"
+        f"📖 <b>Jami o‘qilgan: {total_pages} bet</b>\n"
     )
     if books:
-        text += "\n📚 <b>Kitoblar bo'yicha:</b>\n"
+        text += "\n📚 <b>Kitoblar bo‘yicha:</b>\n"
         for b in books:
             status = "✅" if b[2] else "⏳"
             text += f" ➖ <i>{b[0]}</i>: {b[1]} bet {status}\n"
     else:
-        text += "\n<i>Bu farzandingiz uchun hali kitoblar qo'shilmagan.</i>\n"
+        text += "\n<i>Bu farzandingiz uchun hali kitoblar qo‘shilmagan.</i>\n"
             
     kb = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="📈 Haftalik hisobot va AI Tahlil", callback_data=f"weeklyrep_{child_id}")],
         [InlineKeyboardButton(text="🔅 Biliglarni boshqarish (+ / -)", callback_data=f"manage_coins_{child_id}")],
-        [InlineKeyboardButton(text="✍️ Farzand yoshini o'zgartirish", callback_data=f"set_age_{child_id}")],
-        [InlineKeyboardButton(text="➕ Boshqa farzand qo'shish", callback_data="add_child_info")],
+        [InlineKeyboardButton(text="✍️ Farzand yoshini o‘zgartirish", callback_data=f"set_age_{child_id}")],
+        [InlineKeyboardButton(text="➕ Boshqa farzand qo‘shish", callback_data="add_child_info")],
         [InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_results_main")]
     ])
     
@@ -600,7 +606,7 @@ async def manage_coins_menu(callback: types.CallbackQuery):
     if not child: return
     
     kb = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="➕ Bilig sovg'a qilish (+ 🔅)", callback_data=f"addcoins_{child_id}")],
+        [InlineKeyboardButton(text="➕ Bilig sovg‘a qilish (+ 🔅)", callback_data=f"addcoins_{child_id}")],
         [InlineKeyboardButton(text="➖ Bilig ayirish (- 🔅)", callback_data=f"dedcustom_{child_id}")],
         [InlineKeyboardButton(text="🔄 Hisobni 0 ga tushirish", callback_data=f"dedzero_{child_id}")],
         [InlineKeyboardButton(text="🔙 Orqaga", callback_data=f"childres_{child_id}")]
@@ -613,7 +619,7 @@ async def manage_coins_menu(callback: types.CallbackQuery):
     await callback.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
     await callback.answer()
 
-# ➕ BILIG QO'SHISH (RAG'BATLANTIRISH)
+# ➕ BILIG QO'SHISH
 @router.callback_query(F.data.startswith("addcoins_"))
 async def add_coins_start(callback: types.CallbackQuery, state: FSMContext):
     child_id = int(callback.data.split("_")[1])
@@ -622,7 +628,7 @@ async def add_coins_start(callback: types.CallbackQuery, state: FSMContext):
     except Exception: pass
     await callback.bot.send_message(
         callback.from_user.id,
-        "🎁 <b>Farzandingizga necha Bilig (🔅) sovg'a qilmoqchisiz?</b>\n\n<i>(Masalan: 10, 20, 50)</i>",
+        "🎁 <b>Farzandingizga necha Bilig (🔅) sovg‘a qilmoqchisiz?</b>\n\n<i>(Masalan: 10, 20, 50)</i>",
         parse_mode="HTML",
         reply_markup=get_back_reply_keyboard()
     )
@@ -645,14 +651,14 @@ async def process_coin_addition(message: types.Message, state: FSMContext):
     cursor.execute("UPDATE Users SET balance_coins = ? WHERE user_id = ?", (new_balance, child_id))
     conn.commit()
     
-    await message.answer(f"🎉 <b>{child[0]}ga +{amount} 🔅 Bilig sovg'a qilindi!</b>\nYangi balans: <b>{new_balance} 🔅</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    await message.answer(f"🎉 <b>{child[0]}ga +{amount} 🔅 Bilig sovg‘a qilindi!</b>\nYangi balans: <b>{new_balance} 🔅</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
     await state.clear()
     
     try:
         await message.bot.send_message(
             child_id,
             f"🎉 <b>TABRIKLAYMIZ, QAHRAMON!</b>\n\n"
-            f"Ota-onangiz sizga ajoyib mehnatingiz uchun <b>+{amount} 🔅 Bilig</b> sovg'a qildi! 🎁\n\n"
+            f"Ota-onangiz sizga ajoyib mehnatingiz uchun <b>+{amount} 🔅 Bilig</b> sovg‘a qildi! 🎁\n\n"
             f"Hozirgi balansingiz: <b>{new_balance} 🔅 Bilig</b>",
             parse_mode="HTML"
         )
@@ -723,18 +729,18 @@ async def weekly_report_handler(callback: types.CallbackQuery):
     last_week = res_w2 if res_w2 else 0
 
     diff = this_week - last_week
-    pct_text = "Yangi ko'rsatkich 🚀" if last_week == 0 else (f"+{int((diff/last_week)*100)}% ga oshgan 🚀" if diff > 0 else (f"-{int((abs(diff)/last_week)*100)}% ga pasaygan 📉" if diff < 0 else "Bir xil barqaror ⏸"))
+    pct_text = "Yangi ko‘rsatkich 🚀" if last_week == 0 else (f"+{int((diff/last_week)*100)}% ga oshgan 🚀" if diff > 0 else (f"-{int((abs(diff)/last_week)*100)}% ga pasaygan 📉" if diff < 0 else "Bir xil barqaror ⏸"))
     dynamic_icon = "📈" if diff >= 0 else "📉"
 
     if diff >= 0:
-        advice_text = "Farzandingiz shu haftada juda faol bo'ldi! Uni rag'batlantirib turing."
+        advice_text = "Farzandingiz shu haftada juda faol bo‘ldi! Uni doimiy ravishda rag‘batlantirib turing."
     else:
-        advice_text = "Farzandingiz bu hafta biroz kamroq o'qidi. Birgalikda kitob mutolaa qilish foydali bo'ladi."
+        advice_text = "Farzandingiz bu hafta biroz kamroq o‘qidi. Birgalikda kitob mutolaa qilish foydali bo‘ladi."
 
     report_text = (
         f"📈 <b>{c_name}ning HAFTALIK MUTOLAA HISOBOTI</b>\n\n"
-        f"🗓 <b>Shu hafta o'qildi:</b> {this_week} bet\n"
-        f"🗓 <b>O'tgan hafta o'qilgan edi:</b> {last_week} bet\n"
+        f"🗓 <b>Shu hafta o‘qildi:</b> {this_week} bet\n"
+        f"🗓 <b>O‘tgan hafta o‘qilgan edi:</b> {last_week} bet\n"
         f"{dynamic_icon} <b>Dinamika:</b> {pct_text}\n\n"
         f"🧠 <b>AI Pedagogik Tavsiyasi:</b>\n"
         f"<i>{advice_text}</i>"
@@ -750,8 +756,8 @@ async def show_parent_results_menu(message_or_call, parent_id):
     
     if not links:
         parent_code = f"BLG-{str(parent_id)[-4:]}"
-        text = f"Sizga hali hech qaysi farzand ulanmagan.\n\nFarzandingiz botga kirib <b>'👦👧 Men O'quvchiman'</b> bo'limini tanlasin va kodingizni kiritsin:\n\n🔑 Kodingiz: <b>{parent_code}</b>"
-        kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="➕ Farzand qo'shish yo'riqnomasi", callback_data="add_child_info")]])
+        text = f"Sizga hali hech qaysi farzand ulanmagan.\n\nFarzandingiz botga kirib <b>'👦👧 Men O‘quvchiman'</b> bo‘limini tanlasin va kodingizni kiritsin:\n\n🔑 Kodingiz: <b>{parent_code}</b>"
+        kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="➕ Farzand qo‘shish yo‘riqnomasi", callback_data="add_child_info")]])
         if isinstance(message_or_call, types.Message): await message_or_call.answer(text, parse_mode="HTML", reply_markup=kb)
         else: await message_or_call.message.edit_text(text, parse_mode="HTML", reply_markup=kb)
         return
@@ -764,8 +770,8 @@ async def show_parent_results_menu(message_or_call, parent_id):
         if c_name_row:
             kb.append([InlineKeyboardButton(text=f"👦👧 {c_name_row[0]}", callback_data=f"childres_{c_id}")])
             
-    kb.append([InlineKeyboardButton(text="➕ Boshqa farzand qo'shish", callback_data="add_child_info")])
-    text = "📊 <b>Qaysi farzandingizning natijasini ko'rmoqchisiz?</b>"
+    kb.append([InlineKeyboardButton(text="➕ Boshqa farzand qo‘shish", callback_data="add_child_info")])
+    text = "📊 <b>Qaysi farzandingizning natijasini ko‘rmoqchisiz?</b>"
     
     if isinstance(message_or_call, types.Message): await message_or_call.answer(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
     else: await message_or_call.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
@@ -789,8 +795,8 @@ async def childres_callback(callback: types.CallbackQuery):
 async def add_child_info_handler(callback: types.CallbackQuery):
     parent_code = f"BLG-{str(callback.from_user.id)[-4:]}"
     text = (
-        f"➕ <b>Yangi farzand qo'shish yo'riqnomasi:</b>\n\n"
-        f"1. Farzandingiz telefonida botni oching va <b>'👦👧 Men O'quvchiman'</b>ni bosing.\n"
+        f"➕ <b>Yangi farzand qo‘shish yo‘riqnomasi:</b>\n\n"
+        f"1. Farzandingiz telefonida botni oching va <b>'👦👧 Men O‘quvchiman'</b>ni bosing.\n"
         f"2. Quyidagi kodingizni kiritsin:\n\n🔑 <b>{parent_code}</b>"
     )
     kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="🔙 Orqaga", callback_data="parent_results_main")]])
