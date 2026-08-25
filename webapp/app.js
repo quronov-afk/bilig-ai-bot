@@ -89,7 +89,7 @@ document.getElementById("modal-overlay").addEventListener("click", e => {
 });
 
 // ==========================================================
-// BOSHLANG'ICH YUKLASH (main.py dagi /start bilan bir xil vazifa)
+// BOSHLANG‘ICH YUKLASH (main.py dagi /start bilan bir xil vazifa)
 // ==========================================================
 async function boot() {
   try {
@@ -143,7 +143,7 @@ document.getElementById("link-code-submit").addEventListener("click", async () =
   err.textContent = "";
   try {
     await api("/api/link_parent", { method: "POST", body: { code: input.value.trim() } });
-    toast("Tabriklaymiz! Ota-onangiz bilan bog'landingiz 🎉");
+    toast("Tabriklaymiz! Ota-onangiz bilan bog‘landingiz 🎉");
     enterApp();
   } catch (e) {
     err.textContent = e.error || "Xatolik";
@@ -151,7 +151,7 @@ document.getElementById("link-code-submit").addEventListener("click", async () =
 });
 
 // ==========================================================
-// ILOVA QOBIG'I (header + tabs)
+// ILOVA QOBIG‘I (header + tabs)
 // ==========================================================
 async function enterApp() {
   showScreen("shell");
@@ -236,7 +236,7 @@ document.addEventListener("click", async (e) => {
       case "open-tab": switchTab(el.dataset.tab); break;
       case "close-modal": closeModal(); break;
 
-      // ---- Ota-ona: reja/kitob qo'shish ustasi (wizard) ----
+      // ---- Ota-ona: reja/kitob qo‘shish ustasi (wizard) ----
       case "open-add-plan": await Wizard.start(); break;
       case "wizard-pick-child": await Wizard.pickChild(Number(el.dataset.id)); break;
       case "wizard-pick-mode": await Wizard.pickMode(el.dataset.mode); break;
@@ -249,9 +249,9 @@ document.addEventListener("click", async (e) => {
 
       // ---- Ota-ona: reja/kitob boshqaruvi ----
       case "delete-book":
-        if (confirm("Kitobni o'chirasizmi?")) {
+        if (confirm("Kitobni o‘chirasizmi?")) {
           await api(`/api/parent/books/${el.dataset.id}`, { method: "DELETE" });
-          toast("Kitob o'chirildi");
+          toast("Kitob o‘chirildi");
           closeModal(); switchTab("plans");
         }
         break;
@@ -263,12 +263,12 @@ document.addEventListener("click", async (e) => {
       case "open-passport": await openPassportModal(Number(el.dataset.id)); break;
       case "adjust-coins": await adjustCoins(Number(el.dataset.id), Number(el.dataset.delta)); break;
 
-      // ---- Ota-ona: do'kon ----
+      // ---- Ota-ona: do‘kon ----
       case "open-store-add": openStoreAddModal(); break;
       case "submit-store-add": await submitStoreAdd(); break;
       case "delete-store-item":
         await api(`/api/parent/store/${el.dataset.id}`, { method: "DELETE" });
-        toast("Sovg'a o'chirildi"); switchTab("store");
+        toast("Sovg‘a o‘chirildi"); switchTab("store");
         break;
       case "open-rate": openRateModal(); break;
       case "submit-rate": await submitRate(); break;
@@ -284,7 +284,7 @@ document.addEventListener("click", async (e) => {
       // ---- Ota-ona: aloqa ----
       case "submit-contact": await submitContact(); break;
 
-      // ---- Bola: kitob o'qish ----
+      // ---- Bola: kitob o‘qish ----
       case "open-book": await openBookModal(Number(el.dataset.id)); break;
       case "open-page-photo": openPagePhotoModal(Number(el.dataset.id)); break;
       case "open-page-manual": openPageManualModal(Number(el.dataset.id)); break;
@@ -294,7 +294,7 @@ document.addEventListener("click", async (e) => {
       case "select-test-opt": Test.select(el.dataset.qid, el.dataset.val); break;
       case "submit-test": await Test.submit(Number(el.dataset.book)); break;
 
-      // ---- Bola: do'kon ----
+      // ---- Bola: do‘kon ----
       case "buy-item": await buyItem(Number(el.dataset.id)); break;
 
       // ---- Bolaxona chiqish ----
@@ -314,7 +314,7 @@ document.getElementById("bolaxona-exit").addEventListener("click", () => {
 });
 
 // ==========================================================
-// OTA-ONA: "📚 Faol rejalar" (+ kitob qo'shish)
+// OTA-ONA: "📚 Faol rejalar" (+ kitob qo‘shish)
 // ==========================================================
 async function renderParentPlans() {
   const plans = await api("/api/parent/plans");
@@ -324,7 +324,7 @@ async function renderParentPlans() {
   <button class="btn btn-gold btn-block" data-action="open-add-plan">➕ Kitob / reja qo‘shish</button>`;
 
   if (!plans.length) {
-    html += `<div class="empty-state"><div class="em-icon">📖</div>Hali faol reja yo'q.<br>Yuqoridagi tugma orqali birinchi kitobni qo'shing!</div>`;
+    html += `<div class="empty-state"><div class="em-icon">📖</div>Hali faol reja yo‘q.<br>Yuqoridagi tugma orqali birinchi kitobni qo‘shing!</div>`;
   } else {
     plans.forEach(p => {
       html += `<div class="section-title" style="font-size:15px;margin-top:20px">🎯 ${escapeHtml(p.name)} ${p.prize ? `<span class="badge">🎁 ${escapeHtml(p.prize)}</span>` : ""}</div>`;
@@ -394,7 +394,7 @@ async function renderParentResults(childId) {
         <div class="card-meta">${b.pages_read}${b.total_pages ? "/" + b.total_pages : ""} bet</div>
       </div>
       <span class="badge ${b.completed ? "done" : ""}">${b.completed ? "✅ Tugallandi" : "📖 Jarayonda"}</span>
-    </div>`).join("") || `<div class="card-meta">Hali kitob yo'q</div>`;
+    </div>`).join("") || `<div class="card-meta">Hali kitob yo‘q</div>`;
 
   document.getElementById("app-main").innerHTML = `
     <div class="section-title">📊 Farzandim natijalari</div>
@@ -429,7 +429,7 @@ async function openPassportModal(childId) {
       <div class="stat-box"><div class="num">${p.total_pages}</div><div class="lbl">Jami bet</div></div>
       <div class="stat-box"><div class="num">${p.streak}</div><div class="lbl">🔥 Streak</div></div>
     </div>
-    <div class="section-title" style="font-size:15px">🧠 Ko'nikmalar diagnostikasi</div>
+    <div class="section-title" style="font-size:15px">🧠 Ko‘nikmalar diagnostikasi</div>
     ${diagRow("Faktik xotira", p.factual_bar)}
     ${diagRow("Sabab-oqibat mantiqi", p.logic_bar)}
     ${diagRow("Asar xulosasi", p.conclusion_bar)}
@@ -442,12 +442,12 @@ function diagRow(label, bar) {
 }
 async function adjustCoins(childId, delta) {
   await api(`/api/parent/coins/${childId}`, { method: "POST", body: { delta } });
-  toast(delta > 0 ? "🔅 Bilig qo'shildi" : "🔅 Bilig ayirildi");
+  toast(delta > 0 ? "🔅 Bilig qo‘shildi" : "🔅 Bilig ayirildi");
   renderParentResults(childId);
 }
 
 // ==========================================================
-// OTA-ONA: "🛒 Do'kon"
+// OTA-ONA: "🛒 Do‘kon"
 // ==========================================================
 async function renderParentStore() {
   const items = await api("/api/parent/store");
@@ -455,21 +455,21 @@ async function renderParentStore() {
     <div class="list-row">
       <div><div style="font-weight:700">${escapeHtml(i.name)}</div><div class="card-meta">🔅 ${i.price}</div></div>
       <button class="btn-icon" data-action="delete-store-item" data-id="${i.id}">🗑</button>
-    </div>`).join("") || `<div class="card-meta">Hali sovg'a qo'shilmagan</div>`;
+    </div>`).join("") || `<div class="card-meta">Hali sovg‘a qo‘shilmagan</div>`;
 
   document.getElementById("app-main").innerHTML = `
-    <div class="section-title">🛒 Sovg'alar do'koni</div>
-    <p class="section-sub">Farzandingiz Bilig tangalarini shu sovg'alarga almashtiradi.</p>
+    <div class="section-title">🛒 Sovg‘alar do‘koni</div>
+    <p class="section-sub">Farzandingiz Bilig tangalarini shu sovg‘alarga almashtiradi.</p>
     <div class="grid-2">
-      <button class="btn btn-gold" data-action="open-store-add">➕ Sovg'a</button>
+      <button class="btn btn-gold" data-action="open-store-add">➕ Sovg‘a</button>
       <button class="btn btn-secondary" data-action="open-rate">🔅 Bilig kursi</button>
     </div>
     <div class="card" style="margin-top:14px">${list}</div>
   `;
 }
 function openStoreAddModal() {
-  openModal("➕ Yangi sovg'a", `
-    <label class="field-label">Sovg'a nomi</label>
+  openModal("➕ Yangi sovg‘a", `
+    <label class="field-label">Sovg‘a nomi</label>
     <input id="store-name" class="text-input" placeholder="Masalan: 1 soat multfilm" />
     <label class="field-label">Narxi (🔅 Bilig)</label>
     <input id="store-price" type="number" class="text-input" placeholder="20" />
@@ -481,11 +481,11 @@ async function submitStoreAdd() {
   const price = Number(document.getElementById("store-price").value);
   if (!name || !price) { toast("Nomi va narxini kiriting"); return; }
   await api("/api/parent/store", { method: "POST", body: { name, price } });
-  closeModal(); toast("Sovg'a qo'shildi"); switchTab("store");
+  closeModal(); toast("Sovg‘a qo‘shildi"); switchTab("store");
 }
 function openRateModal() {
   openModal("🔅 Bilig kursi", `
-    <p class="section-sub">1 Bilig necha so'mga teng bo'lishini belgilang (ixtiyoriy).</p>
+    <p class="section-sub">1 Bilig necha so‘mga teng bo‘lishini belgilang (ixtiyoriy).</p>
     <input id="rate-input" type="number" class="text-input" placeholder="500" />
     <button class="btn btn-gold btn-block" data-action="submit-rate">Saqlash</button>
   `);
@@ -545,14 +545,14 @@ async function renderParentContact() {
 }
 async function submitContact() {
   const text = document.getElementById("contact-text").value.trim();
-  if (!text) { toast("Xabar bo'sh bo'lmasin"); return; }
+  if (!text) { toast("Xabar bo‘sh bo‘lmasin"); return; }
   await api("/api/parent/contact", { method: "POST", body: { text } });
   toast("✅ Xabaringiz yuborildi!");
   document.getElementById("contact-text").value = "";
 }
 
 // ==========================================================
-// BOLA: "📖 Kitob o'qish"
+// BOLA: "📖 Kitob o‘qish"
 // ==========================================================
 async function renderChildRead() {
   const plans = await api(`/api/child/books${asChildQuery()}`);
@@ -560,7 +560,7 @@ async function renderChildRead() {
 
   const activeBooks = plans.flatMap(p => p.books.filter(b => !b.completed));
   if (!activeBooks.length) {
-    html += `<div class="empty-state"><div class="em-icon">🦸</div>Senda hozircha o'qilishi kerak bo'lgan kitob yo'q. 😊</div>`;
+    html += `<div class="empty-state"><div class="em-icon">🦸</div>Senda hozircha o‘qilishi kerak bo‘lgan kitob yo‘q. 😊</div>`;
   } else {
     plans.forEach(p => {
       const books = p.books.filter(b => !b.completed);
@@ -573,7 +573,7 @@ async function renderChildRead() {
           <div class="book-title">📘 ${escapeHtml(b.title)}</div>
           <div class="book-author">${escapeHtml(b.author || "")}</div>
           <div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div>
-          <div class="progress-label">${b.pages_read}${b.total_pages ? "/" + b.total_pages : ""} bet o'qildi</div>
+          <div class="progress-label">${b.pages_read}${b.total_pages ? "/" + b.total_pages : ""} bet o‘qildi</div>
         </div>`;
       });
     });
@@ -588,10 +588,10 @@ async function openBookModal(bookId) {
     <div class="progress-track"><div class="progress-fill" style="width:${b.total_pages ? Math.min(100, Math.round(b.pages_read/b.total_pages*100)) : 0}%"></div></div>
     <div class="progress-label">${b.pages_read}${b.total_pages ? "/" + b.total_pages : ""} bet</div>
 
-    <div class="section-title" style="font-size:14px">O'qishni belgilash</div>
+    <div class="section-title" style="font-size:14px">O‘qishni belgilash</div>
     <div class="action-row">
       <button class="btn btn-gold" data-action="open-page-photo" data-id="${bookId}">📸 Sahifa rasmini yuborish</button>
-      <button class="btn btn-outline" data-action="open-page-manual" data-id="${bookId}">✏️ Qo'lda kiritish</button>
+      <button class="btn btn-outline" data-action="open-page-manual" data-id="${bookId}">✏️ Qo‘lda kiritish</button>
     </div>
 
     <div class="section-title" style="font-size:14px">Ovozli xulosa (bonus Bilig!)</div>
@@ -609,7 +609,7 @@ async function openBookModal(bookId) {
 
 function openPagePhotoModal(bookId) {
   openModal("📸 Sahifa rasmi", `
-    <p class="section-sub">O'qib bo'lgan sahifangizni ochiq holda, sahifa raqami ko'rinadigan qilib suratga oling.</p>
+    <p class="section-sub">O‘qib bo‘lgan sahifangizni ochiq holda, sahifa raqami ko‘rinadigan qilib suratga oling.</p>
     <div class="upload-zone" id="page-upload-zone">📷 Rasm tanlash uchun bosing</div>
     <input type="file" id="page-photo-input" accept="image/*" capture="environment" class="hidden" />
   `);
@@ -624,7 +624,7 @@ function openPagePhotoModal(bookId) {
     fd.append("photo", input.files[0]);
     try {
       const res = await api(`/api/child/book/${bookId}/page_photo${asChildQuery()}`, { method: "POST", body: fd });
-      if (!res.ok) { toast(res.message || "Qaytadan urinib ko'ring"); closeModal(); return; }
+      if (!res.ok) { toast(res.message || "Qaytadan urinib ko‘ring"); closeModal(); return; }
       showPageResult(res);
     } catch (e) { toast(e.error || "Xatolik"); closeModal(); }
   };
@@ -632,7 +632,7 @@ function openPagePhotoModal(bookId) {
 
 function openPageManualModal(bookId) {
   openModal("✏️ Sahifa raqami", `
-    <label class="field-label">Qaysi sahifagacha o'qidingiz?</label>
+    <label class="field-label">Qaysi sahifagacha o‘qidingiz?</label>
     <input id="manual-page-input" type="number" class="text-input" placeholder="Masalan: 45" />
     <button class="btn btn-gold btn-block" data-action="submit-page-manual" data-id="${bookId}">Yuborish</button>
   `);
@@ -648,7 +648,7 @@ function showPageResult(res) {
   openModal("🎉 Ajoyib!", `
     <div class="big-seal-row"><div class="big-seal">
       <div class="seal seal-lg">🔅</div>
-      <div class="num">+${res.earned_bilig}</div><div class="lbl">Bilig qo'lga kiritdingiz!</div>
+      <div class="num">+${res.earned_bilig}</div><div class="lbl">Bilig qo‘lga kiritdingiz!</div>
     </div></div>
     <div class="stat-grid">
       <div class="stat-box"><div class="num">${res.new_page}</div><div class="lbl">Sahifa</div></div>
@@ -731,7 +731,7 @@ function openVoiceModal(bookId) {
         <div class="big-seal-row"><div class="big-seal"><div class="seal seal-lg">🔅</div>
           <div class="num">+${res.bonus_bilig}</div><div class="lbl">bonus Bilig!</div></div></div>
         <div class="card">${escapeHtml(res.feedback)}</div>
-        ${res.give_badge ? `<p class="section-sub">🏅 Yangi nishon qo'lga kiritdingiz!</p>` : ""}
+        ${res.give_badge ? `<p class="section-sub">🏅 Yangi nishon qo‘lga kiritdingiz!</p>` : ""}
         <button class="btn btn-primary btn-block" data-action="close-modal">Ajoyib!</button>
       `);
       refreshHeader();
@@ -753,9 +753,9 @@ const Test = {
     openModal("📝 Natija", `
       <div class="big-seal-row"><div class="big-seal">
         <div class="seal seal-lg">${res.percent >= 60 ? "🏆" : "💪"}</div>
-        <div class="num">${res.correct}/${res.total}</div><div class="lbl">${res.percent}% to'g'ri</div>
+        <div class="num">${res.correct}/${res.total}</div><div class="lbl">${res.percent}% to‘g‘ri</div>
       </div></div>
-      <p class="section-sub" style="text-align:center">+${res.earned_bilig} 🔅 Bilig qo'lga kiritdingiz!</p>
+      <p class="section-sub" style="text-align:center">+${res.earned_bilig} 🔅 Bilig qo‘lga kiritdingiz!</p>
       <button class="btn btn-primary btn-block" data-action="close-modal">Yopish</button>
     `);
     refreshHeader();
@@ -784,7 +784,7 @@ async function openTestModal(bookId, stage) {
 // ==========================================================
 async function renderChildRewards() {
   const r = await api(`/api/child/rewards${asChildQuery()}`);
-  const badges = r.badges.length ? r.badges.map(b => `<span class="badge done">🏅 ${escapeHtml(b)}</span>`).join(" ") : `<span class="card-meta">Hali nishonlar yo'q — o'qishda davom eting!</span>`;
+  const badges = r.badges.length ? r.badges.map(b => `<span class="badge done">🏅 ${escapeHtml(b)}</span>`).join(" ") : `<span class="card-meta">Hali nishonlar yo‘q — o‘qishda davom eting!</span>`;
   document.getElementById("app-main").innerHTML = `
     <div class="section-title">🎁 Sovrinlarim</div>
     <div class="big-seal-row"><div class="big-seal"><div class="seal seal-lg">🔅</div>
@@ -799,7 +799,7 @@ async function renderChildRewards() {
 }
 
 // ==========================================================
-// BOLA: "🛒 Do'kon"
+// BOLA: "🛒 Do‘kon"
 // ==========================================================
 async function renderChildStore() {
   const data = await api(`/api/child/store${asChildQuery()}`);
@@ -809,10 +809,10 @@ async function renderChildStore() {
       <button class="btn ${i.affordable ? "btn-gold" : "btn-secondary"}" style="padding:8px 14px;font-size:12.5px" data-action="buy-item" data-id="${i.id}" ${i.affordable ? "" : "disabled"}>
         ${i.affordable ? "Sotib olish" : "Yetarli emas"}
       </button>
-    </div>`).join("") || `<div class="card-meta">Ota-onangiz hali sovg'a qo'shmagan</div>`;
+    </div>`).join("") || `<div class="card-meta">Ota-onangiz hali sovg‘a qo‘shmagan</div>`;
 
   document.getElementById("app-main").innerHTML = `
-    <div class="section-title">🛒 Do'kon</div>
+    <div class="section-title">🛒 Do‘kon</div>
     <div class="pill pill-gold" style="width:fit-content;margin-bottom:12px">🔅 Balans: ${data.balance}</div>
     <div class="card">${list}</div>
   `;
@@ -820,7 +820,7 @@ async function renderChildStore() {
 async function buyItem(itemId) {
   const res = await api(`/api/child/store/${itemId}/buy${asChildQuery()}`, { method: "POST" });
   if (!res.ok) { toast(res.message); return; }
-  toast("🎉 Sovg'a sotib olindi! Ota-onangizga xabar berildi.");
+  toast("🎉 Sovg‘a sotib olindi! Ota-onangizga xabar berildi.");
   refreshHeader(); renderChildStore();
 }
 
@@ -840,13 +840,13 @@ async function renderChildRating() {
 
   document.getElementById("app-main").innerHTML = `
     <div class="section-title">🏆 Reyting</div>
-    <p class="section-sub">${data.scope === "oila" ? "Oilangiz o'quvchilari orasida" : "Barcha o'quvchilar orasida TOP-10"}</p>
+    <p class="section-sub">${data.scope === "oila" ? "Oilangiz o‘quvchilari orasida" : "Barcha o‘quvchilar orasida TOP-10"}</p>
     <div class="card">${rows || '<div class="card-meta">Reyting hali bo\'sh</div>'}</div>
   `;
 }
 
 // ==========================================================
-// OTA-ONA: KITOB QO'SHISH USTASI (Wizard)
+// OTA-ONA: KITOB QO‘SHISH USTASI (Wizard)
 // ==========================================================
 const Wizard = {
   children: [], childId: null, childAge: 10, mode: "quick",
@@ -899,9 +899,9 @@ const Wizard = {
   },
   pickMethod(method) {
     if (!method) {
-      openModal("Kitobni qanday qo'shamiz?", `
+      openModal("Kitobni qanday qo‘shamiz?", `
         <button class="option-btn" data-action="wizard-pick-method" data-method="rec">👶 Tavsiya etilgan kitoblardan</button>
-        <button class="option-btn" data-action="wizard-pick-method" data-method="text">✍️ Nomini yozib qo'shish</button>
+        <button class="option-btn" data-action="wizard-pick-method" data-method="text">✍️ Nomini yozib qo‘shish</button>
         <button class="option-btn" data-action="wizard-pick-method" data-method="photo">📸 Muqovani rasmga olish</button>
       `);
       return;
@@ -917,10 +917,10 @@ const Wizard = {
     } else if (method === "text") {
       openModal("✍️ Kitob nomi", `
         <label class="field-label">Kitob nomi (va muallif, ixtiyoriy)</label>
-        <input id="wiz-book-text" class="text-input" placeholder="Masalan: Shum bola. G'.G'ulom" />
+        <input id="wiz-book-text" class="text-input" placeholder="Masalan: Shum bola. G'.G‘ulom" />
         <label class="field-label">Jami sahifa soni (ixtiyoriy)</label>
         <input id="wiz-book-pages" type="number" class="text-input" placeholder="120" />
-        <button class="btn btn-gold btn-block" data-action="wizard-submit-text">Qo'shish</button>
+        <button class="btn btn-gold btn-block" data-action="wizard-submit-text">Qo‘shish</button>
       `);
     } else if (method === "photo") {
       openModal("📸 Muqova rasmi", `
@@ -932,10 +932,10 @@ const Wizard = {
       zone.onclick = () => input.click();
       input.onchange = async () => {
         if (!input.files.length) return;
-        zone.textContent = "⏳ AI muqovani o'qimoqda…";
+        zone.textContent = "⏳ AI muqovani o‘qimoqda…";
         const fd = new FormData(); fd.append("photo", input.files[0]);
         const res = await api(`/api/parent/plans/${this.planId}/books/photo`, { method: "POST", body: fd });
-        toast(`✅ "${res.title}" qo'shildi!`);
+        toast(`✅ "${res.title}" qo‘shildi!`);
         this.afterBookAdded();
       };
     }
@@ -943,7 +943,7 @@ const Wizard = {
   async addRecBook(idx) {
     const text = this.recBooks[idx];
     const res = await api(`/api/parent/plans/${this.planId}/books`, { method: "POST", body: { text } });
-    toast(`✅ "${res.title}" qo'shildi!`);
+    toast(`✅ "${res.title}" qo‘shildi!`);
     this.afterBookAdded();
   },
   async submitTextBook() {
@@ -951,13 +951,13 @@ const Wizard = {
     const pages = Number(document.getElementById("wiz-book-pages").value || 0);
     if (!text) { toast("Kitob nomini kiriting"); return; }
     const res = await api(`/api/parent/plans/${this.planId}/books`, { method: "POST", body: { text, total_pages: pages } });
-    toast(`✅ "${res.title}" qo'shildi!`);
+    toast(`✅ "${res.title}" qo‘shildi!`);
     this.afterBookAdded();
   },
   afterBookAdded() {
     if (this.mode === "marathon") {
-      openModal("✅ Kitob qo'shildi", `
-        <button class="btn btn-gold btn-block" data-action="wizard-add-more">➕ Yana kitob qo'shish</button>
+      openModal("✅ Kitob qo‘shildi", `
+        <button class="btn btn-gold btn-block" data-action="wizard-add-more">➕ Yana kitob qo‘shish</button>
         <button class="btn btn-primary btn-block" data-action="wizard-finish">✅ Marafonni yakunlash</button>
       `);
     } else {
