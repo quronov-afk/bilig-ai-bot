@@ -1,7 +1,7 @@
 /* ==========================================================
    BILIG AI — Mini App uslub fayli
    Token tizimi:
-   - Rang: --paper (qog'oz foni), --gold (Bilig tanga), --coral (olov/urg'u),
+   - Rang: --paper (qog‘oz foni), --gold (Bilig tanga), --coral (olov/urg‘u),
            --leaf (progress/muvaffaqiyat), --ink (asosiy matn)
    - Shrift: Fraunces (sarlavhalar/raqamlar), Manrope (matn), JetBrains Mono (statistikalar)
    ========================================================== */
@@ -186,7 +186,7 @@ html, body {
 }
 .empty-state .em-icon { font-size: 38px; margin-bottom: 10px; }
 
-/* Sikkalar / medalyon (Bilig) katta ko'rinishi */
+/* Sikkalar / medalyon (Bilig) katta ko‘rinishi */
 .big-seal-row { display: flex; justify-content: center; margin: 12px 0 18px; }
 .big-seal { text-align: center; }
 .big-seal .seal { margin: 0 auto 8px; }
