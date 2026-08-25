@@ -5,7 +5,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 OWNER_ID = int(os.getenv("OWNER_ID", "0"))
 ACCESS_CODE = os.getenv("ACCESS_CODE", "BILIG-TEST")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
 PORT = int(os.environ.get("PORT", 8080))
 
 # Doimiy matnlar
