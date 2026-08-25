@@ -2,14 +2,14 @@
 # webapp_api.py
 # ------------------------------------------------------------
 # BU FAYL — "Bilig AI" Telegram Mini App uchun BACKEND (API).
-# Botdagi barcha funksiyalar (kitob qo'shish, o'qish, testlar,
-# do'kon, reyting, natijalar, admin statistikasi) shu yerda
-# WEB so'rovlari (HTTP so'rovlar) sifatida qayta ishlanadi.
+# Botdagi barcha funksiyalar (kitob qo‘shish, o‘qish, testlar,
+# do‘kon, reyting, natijalar, admin statistikasi) shu yerda
+# WEB so‘rovlari (HTTP so‘rovlar) sifatida qayta ishlanadi.
 #
-# MUHIM: bu fayl botning o'zidagi database.py, config.py va
+# MUHIM: bu fayl botning o‘zidagi database.py, config.py va
 # ai_service.py fayllaridan FOYDALANADI (ularni qayta yozmaydi).
 # Shuning uchun bu faylni loyihaning ASOSIY papkasiga
-# (main.py bilan bir joyga) qo'yish kerak.
+# (main.py bilan bir joyga) qo‘yish kerak.
 # ==========================================================
 
 import os
@@ -45,19 +45,19 @@ import ai_service
 _HERE = os.path.dirname(os.path.abspath(__file__))
 _CANDIDATES = [
     os.path.join(_HERE, "webapp"),                              # webapp_api.py bilan bir papkada
-    os.path.join(os.path.dirname(_HERE), "webapp"),              # webapp_api.py bir qavat pastki papkada bo'lsa
+    os.path.join(os.path.dirname(_HERE), "webapp"),              # webapp_api.py bir qavat pastki papkada bo‘lsa
 ]
 WEBAPP_DIR = next((p for p in _CANDIDATES if os.path.isdir(p)), _CANDIDATES[0])
 print(f"[webapp_api] Mini App fayllari shu papkadan xizmat qiladi: {WEBAPP_DIR}")
 
 app = Flask(__name__, static_folder=WEBAPP_DIR, static_url_path="")
 
-# SQLite bir vaqtda ko'p yozuvlarda xato bermasligi uchun oddiy qulf (lock)
+# SQLite bir vaqtda ko‘p yozuvlarda xato bermasligi uchun oddiy qulf (lock)
 db_lock = threading.Lock()
 
 
 def run_async(coro):
-    """ai_service.py dagi funksiyalar 'async def' bo'lgani uchun,
+    """ai_service.py dagi funksiyalar 'async def' bo‘lgani uchun,
     ularni oddiy (sync) Flask ichida shunday chaqiramiz."""
     return asyncio.run(coro)
 
@@ -68,7 +68,7 @@ def run_async(coro):
 # Telegram Mini App ochilganda telefon/brauzer "initData" degan
 # imzolangan ma'lumot yuboradi. Biz shu imzoni BOT_TOKEN yordamida
 # tekshirib, "bu haqiqatan shu botning foydalanuvchisimi" deb
-# ishonch hosil qilamiz. Shu orqali login/parol kerak bo'lmaydi —
+# ishonch hosil qilamiz. Shu orqali login/parol kerak bo‘lmaydi —
 # odam Telegram'da botni ochgani uchun avtomatik tanilib qoladi.
 # ==========================================================
 
@@ -86,7 +86,7 @@ def validate_init_data(init_data: str):
         if calc_hash != received_hash:
             return None
         auth_date = int(parsed.get("auth_date", "0"))
-        if time.time() - auth_date > 86400:  # 24 soatdan eski bo'lsa - rad etamiz
+        if time.time() - auth_date > 86400:  # 24 soatdan eski bo‘lsa - rad etamiz
             return None
         user = json.loads(parsed.get("user", "{}"))
         return user
@@ -100,7 +100,7 @@ def require_auth(f):
         init_data = request.headers.get("X-Telegram-Init-Data", "")
         user = validate_init_data(init_data)
 
-        # DEV_MODE: agar .env da DEV_MODE=1 bo'lsa, brauzerda sinash uchun
+        # DEV_MODE: agar .env da DEV_MODE=1 bo‘lsa, brauzerda sinash uchun
         # tekshiruvsiz ruxsat beriladi (?dev_id=123 orqali).
         if not user and os.getenv("DEV_MODE") == "1":
             dev_id = request.args.get("dev_id") or request.headers.get("X-Dev-Id")
@@ -119,7 +119,7 @@ def require_auth(f):
 
 def send_telegram_message(chat_id: int, text: str):
     """Botdan foydalanuvchiga oddiy Telegram xabari yuborish (masalan,
-    ota-onaga 'farzandingiz sovg'a so'radi' degan bildirishnoma)."""
+    ota-onaga 'farzandingiz sovg‘a so‘radi' degan bildirishnoma)."""
     if not BOT_TOKEN:
         return
     try:
@@ -158,7 +158,7 @@ def api_me():
     row = cursor.fetchone()
 
     if not row:
-        # Bazada umuman yo'q — link orqali kirmagan, yopiq beta
+        # Bazada umuman yo‘q — link orqali kirmagan, yopiq beta
         return jsonify({"exists": False, "approved": False})
 
     role, name, approved, coins, streak, rank = row
@@ -187,11 +187,11 @@ def api_me():
 @app.route("/api/register_role", methods=["POST"])
 @require_auth
 def api_register_role():
-    """Foydalanuvchi 'Men Ota-onaman' yoki 'Men O'quvchiman' tugmasini bosganda."""
+    """Foydalanuvchi 'Men Ota-onaman' yoki 'Men O‘quvchiman' tugmasini bosganda."""
     data = request.get_json(force=True) or {}
     role = data.get("role")
     if role not in ("parent", "child"):
-        return jsonify({"error": "role noto'g'ri"}), 400
+        return jsonify({"error": "role noto‘g‘ri"}), 400
 
     uid = g.user_id
     name = g.tg_user.get("first_name", "Foydalanuvchi")
@@ -211,11 +211,11 @@ def api_register_role():
 @app.route("/api/link_parent", methods=["POST"])
 @require_auth
 def api_link_parent():
-    """Bola ota-ona kodini (BLG-1234) kiritganda oila bog'lanadi."""
+    """Bola ota-ona kodini (BLG-1234) kiritganda oila bog‘lanadi."""
     data = request.get_json(force=True) or {}
     code = (data.get("code") or "").strip().upper()
     if not code.startswith("BLG-"):
-        return jsonify({"error": "Kod 'BLG-1234' ko'rinishida bo'lishi kerak"}), 400
+        return jsonify({"error": "Kod 'BLG-1234' ko‘rinishida bo‘lishi kerak"}), 400
 
     suffix = code.replace("BLG-", "")
     cursor.execute(
@@ -246,7 +246,7 @@ def api_link_parent():
 
 
 # ==========================================================
-# 3) OTA-ONA BO'LIMI
+# 3) OTA-ONA BO‘LIMI
 # ==========================================================
 
 @app.route("/api/parent/children", methods=["GET"])
@@ -335,7 +335,7 @@ def parent_create_plan():
 @app.route("/api/parent/plans/<int:plan_id>/books", methods=["POST"])
 @require_auth
 def parent_add_book_text(plan_id):
-    """Kitobni matn shaklida qo'shish — AI nomi/muallifini avtomatik tozalaydi."""
+    """Kitobni matn shaklida qo‘shish — AI nomi/muallifini avtomatik tozalaydi."""
     data = request.get_json(force=True) or {}
     raw_text = (data.get("text") or "").strip()
     total_pages = int(data.get("total_pages") or 0)
@@ -357,7 +357,7 @@ def parent_add_book_text(plan_id):
 @app.route("/api/parent/plans/<int:plan_id>/books/photo", methods=["POST"])
 @require_auth
 def parent_add_book_photo(plan_id):
-    """Kitob muqovasini rasmga olib yuborish — AI Vision nomi/muallifini o'qiydi."""
+    """Kitob muqovasini rasmga olib yuborish — AI Vision nomi/muallifini o‘qiydi."""
     if "photo" not in request.files:
         return jsonify({"error": "Rasm topilmadi"}), 400
     image_bytes = request.files["photo"].read()
@@ -405,7 +405,7 @@ def parent_generate_test(book_id):
 @app.route("/api/parent/results/<int:child_id>", methods=["GET"])
 @require_auth
 def parent_child_results(child_id):
-    """'📊 Farzandim natijalari' — bitta farzand bo'yicha to'liq hisobot."""
+    """'📊 Farzandim natijalari' — bitta farzand bo‘yicha to‘liq hisobot."""
     rank, total_pages = calculate_and_update_rank(child_id)
     cursor.execute(
         "SELECT name, balance_coins, badges, streak_days FROM Users WHERE user_id = ?", (child_id,)
@@ -427,7 +427,7 @@ def parent_child_results(child_id):
 
     return jsonify({
         "name": name, "rank": rank, "coins": coins, "streak": streak,
-        "badges": badges or "Hali nishonlar yo'q", "total_pages": total_pages,
+        "badges": badges or "Hali nishonlar yo‘q", "total_pages": total_pages,
         "books": books
     })
 
@@ -445,7 +445,7 @@ def parent_child_passport(child_id):
 @app.route("/api/parent/coins/<int:child_id>", methods=["POST"])
 @require_auth
 def parent_manage_coins(child_id):
-    """Ota-ona farzandiga qo'lda Bilig (tanga) qo'shishi/ayirishi."""
+    """Ota-ona farzandiga qo‘lda Bilig (tanga) qo‘shishi/ayirishi."""
     data = request.get_json(force=True) or {}
     delta = int(data.get("delta", 0))
     with db_lock:
@@ -456,11 +456,11 @@ def parent_manage_coins(child_id):
         conn.commit()
         cursor.execute("SELECT balance_coins FROM Users WHERE user_id = ?", (child_id,))
         new_balance = cursor.fetchone()[0]
-    send_telegram_message(child_id, f"🔅 Ota-onangiz balansingizga o'zgartirish kiritdi. Joriy balans: {new_balance}")
+    send_telegram_message(child_id, f"🔅 Ota-onangiz balansingizga o‘zgartirish kiritdi. Joriy balans: {new_balance}")
     return jsonify({"ok": True, "balance": new_balance})
 
 
-# ---------------- OTA-ONA: SOVG'ALAR DO'KONI ----------------
+# ---------------- OTA-ONA: SOVG‘ALAR DO‘KONI ----------------
 
 @app.route("/api/parent/store", methods=["GET"])
 @require_auth
@@ -476,7 +476,7 @@ def parent_store_add():
     name = (data.get("name") or "").strip()
     price = int(data.get("price") or 0)
     if not name or price <= 0:
-        return jsonify({"error": "Nomi va narxini to'g'ri kiriting"}), 400
+        return jsonify({"error": "Nomi va narxini to‘g‘ri kiriting"}), 400
     with db_lock:
         cursor.execute(
             "INSERT INTO Store_Items (parent_id, name, price) VALUES (?, ?, ?)", (g.user_id, name, price)
@@ -497,7 +497,7 @@ def parent_store_delete(item_id):
 @app.route("/api/parent/rate", methods=["POST"])
 @require_auth
 def parent_set_rate():
-    """Bilig tangasining pul kursini belgilash (masalan 1 Bilig = 500 so'm)."""
+    """Bilig tangasining pul kursini belgilash (masalan 1 Bilig = 500 so‘m)."""
     data = request.get_json(force=True) or {}
     rate = int(data.get("rate", 0))
     with db_lock:
@@ -513,7 +513,7 @@ def parent_contact():
     data = request.get_json(force=True) or {}
     text = (data.get("text") or "").strip()
     if not text:
-        return jsonify({"error": "Xabar bo'sh bo'lmasin"}), 400
+        return jsonify({"error": "Xabar bo‘sh bo‘lmasin"}), 400
     if OWNER_ID:
         cursor.execute("SELECT name FROM Users WHERE user_id = ?", (g.user_id,))
         row = cursor.fetchone()
@@ -526,11 +526,11 @@ def parent_contact():
 
 
 # ==========================================================
-# 4) BOLA (O'QUVCHI) BO'LIMI
+# 4) BOLA (O‘QUVCHI) BO‘LIMI
 # ==========================================================
 
 def _resolve_active_child(request):
-    """Bolaxona rejimida ota-ona ekranidan kirilgan bo'lsa, aktiv bolani aniqlaydi.
+    """Bolaxona rejimida ota-ona ekranidan kirilgan bo‘lsa, aktiv bolani aniqlaydi.
     Mini App'da buni frontend ?as_child=ID query parametri orqali beradi."""
     as_child = request.args.get("as_child", type=int)
     return as_child or g.user_id
@@ -588,7 +588,7 @@ def child_book_detail(book_id):
 @app.route("/api/child/book/<int:book_id>/page_photo", methods=["POST"])
 @require_auth
 def child_submit_page_photo(book_id):
-    """Bola o'qigan sahifasini rasmga olib yuboradi -> AI tekshiradi -> Bilig beriladi."""
+    """Bola o‘qigan sahifasini rasmga olib yuboradi -> AI tekshiradi -> Bilig beriladi."""
     if "photo" not in request.files:
         return jsonify({"error": "Rasm topilmadi"}), 400
     image_bytes = request.files["photo"].read()
@@ -597,12 +597,12 @@ def child_submit_page_photo(book_id):
     ai_result = run_async(ai_service.verify_page_photo(image_bytes))
     if not ai_result.get("is_book_page"):
         return jsonify({"ok": False, "reason": "not_book_page",
-                         "message": "Bu kitob sahifasiga o'xshamayapti. Qaytadan urinib ko'ring."})
+                         "message": "Bu kitob sahifasiga o‘xshamayapti. Qaytadan urinib ko‘ring."})
 
     new_page = int(ai_result.get("page_number", 0))
     if new_page <= 0:
         return jsonify({"ok": False, "reason": "page_unclear",
-                         "message": "Sahifa raqami aniq ko'rinmadi. Sahifa raqamini qo'lda kiriting."})
+                         "message": "Sahifa raqami aniq ko‘rinmadi. Sahifa raqamini qo‘lda kiriting."})
 
     return _apply_page_progress(book_id, child_id, new_page)
 
@@ -610,12 +610,12 @@ def child_submit_page_photo(book_id):
 @app.route("/api/child/book/<int:book_id>/page_manual", methods=["POST"])
 @require_auth
 def child_submit_page_manual(book_id):
-    """AI orqali emas, sahifa raqamini qo'lda kiritish (zaxira variant)."""
+    """AI orqali emas, sahifa raqamini qo‘lda kiritish (zaxira variant)."""
     data = request.get_json(force=True) or {}
     new_page = int(data.get("page_number", 0))
     child_id = _resolve_active_child(request)
     if new_page <= 0:
-        return jsonify({"ok": False, "message": "Sahifa raqamini to'g'ri kiriting"}), 400
+        return jsonify({"ok": False, "message": "Sahifa raqamini to‘g‘ri kiriting"}), 400
     return _apply_page_progress(book_id, child_id, new_page)
 
 
@@ -628,7 +628,7 @@ def _apply_page_progress(book_id, child_id, new_page):
 
     if new_page <= old_pages:
         return jsonify({"ok": False, "reason": "not_progress",
-                         "message": f"Siz allaqachon {old_pages}-sahifagacha o'qigansiz!"})
+                         "message": f"Siz allaqachon {old_pages}-sahifagacha o‘qigansiz!"})
 
     earned_bilig = (new_page // 5) - (old_pages // 5)
     pages_added = new_page - old_pages
@@ -706,7 +706,7 @@ def child_submit_voice(book_id):
         pr = result.get("parent_report", {})
         send_telegram_message(
             parent_id,
-            f"🎙 <b>{book_title}</b> bo'yicha farzandingizning ovozli hisobotini AI tahlil qildi!\n\n"
+            f"🎙 <b>{book_title}</b> bo‘yicha farzandingizning ovozli hisobotini AI tahlil qildi!\n\n"
             f"📌 {pr.get('summary', '')}\n\n✅ {pr.get('strengths', '')}\n🌱 {pr.get('weaknesses', '')}\n\n"
             f"{pr.get('conversation_topic', '')}"
         )
@@ -721,7 +721,7 @@ def child_submit_voice(book_id):
 @app.route("/api/child/book/<int:book_id>/test", methods=["GET"])
 @require_auth
 def child_get_test(book_id):
-    """Test savollarini olish (to'g'ri javob YASHIRIB yuboriladi)."""
+    """Test savollarini olish (to‘g‘ri javob YASHIRIB yuboriladi)."""
     cursor.execute("SELECT questions_json FROM Book_Tests WHERE book_id = ?", (book_id,))
     row = cursor.fetchone()
     if not row:
@@ -760,7 +760,7 @@ def child_submit_test(book_id):
             correct += 1
     total = len(questions) if questions else 1
     percent = round((correct / total) * 100)
-    earned = max(1, round(correct / 2))  # har 2 ta to'g'ri javob uchun 1 Bilig (kamida 1)
+    earned = max(1, round(correct / 2))  # har 2 ta to‘g‘ri javob uchun 1 Bilig (kamida 1)
 
     column_map = {
         "mid_test_1": "mid_test_1_done", "mid_test_2": "mid_test_2_done", "final_test": "final_test_done"
@@ -800,7 +800,7 @@ def child_rewards():
 @app.route("/api/child/store", methods=["GET"])
 @require_auth
 def child_store():
-    """'🛒 Do'kon' — ota-ona kiritgan sovg'alar ro'yxati (bola sotib olishi mumkin)."""
+    """'🛒 Do‘kon' — ota-ona kiritgan sovg‘alar ro‘yxati (bola sotib olishi mumkin)."""
     child_id = _resolve_active_child(request)
     parent_id = get_parent_id(child_id)
     if not parent_id:
@@ -822,7 +822,7 @@ def child_store_buy(item_id):
     cursor.execute("SELECT name, price, parent_id FROM Store_Items WHERE item_id = ?", (item_id,))
     item = cursor.fetchone()
     if not item:
-        return jsonify({"error": "Sovg'a topilmadi"}), 404
+        return jsonify({"error": "Sovg‘a topilmadi"}), 404
     item_name, price, parent_id = item
 
     if balance < price:
@@ -834,8 +834,8 @@ def child_store_buy(item_id):
 
     send_telegram_message(
         parent_id,
-        f"🛒 <b>{child_name}</b> do'kondan <b>«{item_name}»</b> sovg'asini {price} 🔅 ga sotib oldi. "
-        f"Sovg'ani berishni unutmang!"
+        f"🛒 <b>{child_name}</b> do‘kondan <b>«{item_name}»</b> sovg‘asini {price} 🔅 ga sotib oldi. "
+        f"Sovg‘ani berishni unutmang!"
     )
     return jsonify({"ok": True, "new_balance": balance - price})
 
@@ -843,8 +843,8 @@ def child_store_buy(item_id):
 @app.route("/api/child/rating", methods=["GET"])
 @require_auth
 def child_rating():
-    """'🏆 Reyting' — bir xil ota-onaga bog'langan barcha farzandlar orasida reyting
-    (agar bitta bola bo'lsa — umumiy TOP-10 orasida ko'rsatiladi)."""
+    """'🏆 Reyting' — bir xil ota-onaga bog‘langan barcha farzandlar orasida reyting
+    (agar bitta bola bo‘lsa — umumiy TOP-10 orasida ko‘rsatiladi)."""
     child_id = _resolve_active_child(request)
     parent_id = get_parent_id(child_id)
 
@@ -879,7 +879,7 @@ def child_rating():
 @require_auth
 def admin_stats():
     if OWNER_ID != 0 and g.user_id != OWNER_ID:
-        return jsonify({"error": "Ruxsat yo'q"}), 403
+        return jsonify({"error": "Ruxsat yo‘q"}), 403
     text = generate_admin_stats_text()
     return jsonify({"html": text})
 
@@ -904,9 +904,9 @@ def serve_index():
 
 @app.route("/<path:path>")
 def serve_static(path):
-    # /api/... bo'lmagan, lekin haqiqatda mavjud bo'lmagan fayl so'ralsa,
-    # SPA odatiga ko'ra bosh sahifaga (index.html) qaytaramiz — shunda
-    # brauzer manzil satrida boshqa yo'l bo'lsa ham ilova ochiladi.
+    # /api/... bo‘lmagan, lekin haqiqatda mavjud bo‘lmagan fayl so‘ralsa,
+    # SPA odatiga ko‘ra bosh sahifaga (index.html) qaytaramiz — shunda
+    # brauzer manzil satrida boshqa yo‘l bo‘lsa ham ilova ochiladi.
     full_path = os.path.join(WEBAPP_DIR, path)
     if os.path.isfile(full_path):
         return send_from_directory(WEBAPP_DIR, path)
