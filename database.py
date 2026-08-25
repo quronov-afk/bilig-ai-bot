@@ -7,39 +7,104 @@ conn = sqlite3.connect(db_path, check_same_thread=False)
 cursor = conn.cursor()
 
 def init_db():
+    # Asosiy jadvallar
     cursor.execute('''CREATE TABLE IF NOT EXISTS Users (
-        user_id INTEGER PRIMARY KEY, role TEXT, name TEXT, balance_coins INTEGER DEFAULT 0, total_xp INTEGER DEFAULT 0, streak_days INTEGER DEFAULT 0, coin_rate INTEGER DEFAULT 500)''')
+        user_id INTEGER PRIMARY KEY, 
+        role TEXT, 
+        name TEXT, 
+        balance_coins INTEGER DEFAULT 0, 
+        total_xp INTEGER DEFAULT 0, 
+        streak_days INTEGER DEFAULT 0, 
+        coin_rate INTEGER DEFAULT 500
+    )''')
+
     cursor.execute('''CREATE TABLE IF NOT EXISTS Family_Link (
-        parent_id INTEGER, child_id INTEGER, mutolaa_id TEXT, UNIQUE(parent_id, child_id))''')
+        parent_id INTEGER, 
+        child_id INTEGER, 
+        mutolaa_id TEXT, 
+        UNIQUE(parent_id, child_id)
+    )''')
+
     cursor.execute('''CREATE TABLE IF NOT EXISTS Reading_Plans (
-        plan_id INTEGER PRIMARY KEY AUTOINCREMENT, parent_id INTEGER, name TEXT, prize TEXT, deadline TEXT, status TEXT DEFAULT 'active')''')
+        plan_id INTEGER PRIMARY KEY AUTOINCREMENT, 
+        parent_id INTEGER, 
+        name TEXT, 
+        prize TEXT, 
+        deadline TEXT, 
+        status TEXT DEFAULT 'active'
+    )''')
+
     cursor.execute('''CREATE TABLE IF NOT EXISTS Plan_Books (
-        book_id INTEGER PRIMARY KEY AUTOINCREMENT, plan_id INTEGER, title TEXT, author TEXT, status TEXT DEFAULT 'pending')''')
+        book_id INTEGER PRIMARY KEY AUTOINCREMENT, 
+        plan_id INTEGER, 
+        title TEXT, 
+        author TEXT, 
+        status TEXT DEFAULT 'pending'
+    )''')
+
     cursor.execute('''CREATE TABLE IF NOT EXISTS Book_Tests (
-        test_id INTEGER PRIMARY KEY AUTOINCREMENT, book_id INTEGER UNIQUE, questions_json TEXT)''')
+        test_id INTEGER PRIMARY KEY AUTOINCREMENT, 
+        book_id INTEGER UNIQUE, 
+        questions_json TEXT
+    )''')
+
     cursor.execute('''CREATE TABLE IF NOT EXISTS Store_Items (
-        item_id INTEGER PRIMARY KEY AUTOINCREMENT, parent_id INTEGER, name TEXT, price INTEGER)''')
+        item_id INTEGER PRIMARY KEY AUTOINCREMENT, 
+        parent_id INTEGER, 
+        name TEXT, 
+        price INTEGER
+    )''')
+
     cursor.execute('''CREATE TABLE IF NOT EXISTS Reading_Logs (
-        log_id INTEGER PRIMARY KEY AUTOINCREMENT, child_id INTEGER, book_id INTEGER, pages_added INTEGER, created_at TEXT)''')
+        log_id INTEGER PRIMARY KEY AUTOINCREMENT, 
+        child_id INTEGER, 
+        book_id INTEGER, 
+        pages_added INTEGER, 
+        created_at TEXT
+    )''')
+
     cursor.execute('''CREATE TABLE IF NOT EXISTS Invite_Links (
-        code TEXT PRIMARY KEY, is_used INTEGER DEFAULT 0, used_by INTEGER)''')
+        code TEXT PRIMARY KEY, 
+        is_used INTEGER DEFAULT 0, 
+        used_by INTEGER
+    )''')
     
+    # Bazani xavfsiz kengaytirish (Mavjud ma'lumotlarga zarar yetkazmaydi)
     try: cursor.execute("ALTER TABLE Plan_Books ADD COLUMN pages_read INTEGER DEFAULT 0")
-    except: pass
+    except Exception: pass
+
+    try: cursor.execute("ALTER TABLE Plan_Books ADD COLUMN total_pages INTEGER DEFAULT 0")
+    except Exception: pass
+
+    try: cursor.execute("ALTER TABLE Plan_Books ADD COLUMN mid_test_1_done INTEGER DEFAULT 0")
+    except Exception: pass
+
+    try: cursor.execute("ALTER TABLE Plan_Books ADD COLUMN mid_test_2_done INTEGER DEFAULT 0")
+    except Exception: pass
+
+    try: cursor.execute("ALTER TABLE Plan_Books ADD COLUMN final_test_done INTEGER DEFAULT 0")
+    except Exception: pass
+
     try: cursor.execute("ALTER TABLE Family_Link ADD COLUMN child_age INTEGER DEFAULT 10")
-    except: pass
+    except Exception: pass
+
     try: cursor.execute("ALTER TABLE Users ADD COLUMN badges TEXT DEFAULT ''")
-    except: pass
+    except Exception: pass
+
     try: cursor.execute("ALTER TABLE Users ADD COLUMN is_approved INTEGER DEFAULT 1")
-    except: pass
+    except Exception: pass
+
     try: cursor.execute("ALTER TABLE Plan_Books ADD COLUMN audio_count INTEGER DEFAULT 0")
-    except: pass
+    except Exception: pass
+
     try: cursor.execute("ALTER TABLE Users ADD COLUMN last_read_date TEXT DEFAULT ''")
-    except: pass
+    except Exception: pass
+
     try: cursor.execute("ALTER TABLE Plan_Books ADD COLUMN is_completed INTEGER DEFAULT 0")
-    except: pass
+    except Exception: pass
+
     try: cursor.execute("ALTER TABLE Reading_Plans ADD COLUMN child_id INTEGER")
-    except: pass
+    except Exception: pass
     
     conn.commit()
 
@@ -51,7 +116,8 @@ def get_parent_id(child_id):
 def update_streak(user_id):
     cursor.execute("SELECT streak_days, last_read_date FROM Users WHERE user_id = ?", (user_id,))
     row = cursor.fetchone()
-    if not row: return 0
+    if not row: 
+        return 0
     streak, last_date_str = row
     
     today_str = datetime.now().strftime("%Y-%m-%d")
