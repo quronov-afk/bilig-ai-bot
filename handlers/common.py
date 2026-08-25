@@ -4,7 +4,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from config import WELCOME_TEXT
 from database import conn, cursor
-from keyboards import get_parent_keyboard, get_child_keyboard, get_back_reply_keyboard, get_add_book_keyboard
+from keyboards import get_parent_keyboard, get_child_keyboard, get_bolaxona_keyboard, get_back_reply_keyboard, get_add_book_keyboard
 from states import Registration, PlanCreation
 
 router = Router()
@@ -22,14 +22,21 @@ CLOSED_BETA_TEXT = (
 @router.message(F.text == "🔙 Orqaga")
 async def cancel_handler(message: types.Message, state: FSMContext):
     current_state = await state.get_state()
+    data = await state.get_data()
     
-    # 1. Agar kitob qo'shish ichida bo'lsa -> Kitob qo'shish menyusiga qaytaradi (reja o'chmaydi!)
+    # 1. Agar kitob qo'shish ichida bo'lsa -> Kitob qo'shish menyusiga qaytaradi
     if current_state in [PlanCreation.waiting_for_book_text.state, PlanCreation.waiting_for_book_photo.state]:
         await state.set_state(None)
         await message.answer("📚 <b>Kitoblar qo‘shish usulini tanlang:</b>", parse_mode="HTML", reply_markup=get_add_book_keyboard())
         return
 
-    # 2. Boshqa holatlarda FSM tozalanadi va foydalanuvchining o'z bosh menyusiga qaytariladi
+    # 2. Agar Bolaxona rejimida bo'lsa -> Bolaxona menyusiga qaytaradi
+    if data.get('active_child_id'):
+        await state.clear()
+        await message.answer("🧒 <b>Bolaxona menyusidasiz.</b>", reply_markup=get_bolaxona_keyboard())
+        return
+
+    # 3. Boshqa barcha holatlarda FSM tozalanadi va bosh menyuga qaytariladi
     await state.clear()
     cursor.execute("SELECT role FROM Users WHERE user_id = ?", (message.from_user.id,))
     user = cursor.fetchone()
@@ -135,7 +142,7 @@ async def child_handler(message: types.Message, state: FSMContext):
 
 @router.message(Registration.waiting_for_parent_code)
 async def process_parent_code(message: types.Message, state: FSMContext):
-    code = message.text.strip()
+    code = message.text.strip().upper()
     if not code.startswith("BLG-"):
         await message.answer("Kod xato formatda! 'BLG-1234' ko‘rinishida kiriting.")
         return
