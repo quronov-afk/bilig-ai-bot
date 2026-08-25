@@ -9,7 +9,7 @@ router = Router()
 
 @router.message(F.text == "📞 Qayta aloqa")
 async def feedback_start(message: types.Message, state: FSMContext):
-    await message.answer("✍️ <b>Qayta aloqa</b>\n\nBot haqida fikrlaringiz, takliflaringiz yoki xatoliklar bo'lsa, shu yerda yozib qoldiring (rasm yoki video ham yuborishingiz mumkin).\n\nXabaringiz to'g'ridan-to'g'ri loyiha muallifiga yuboriladi.", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
+    await message.answer("✍️ <b>Qayta aloqa</b>\n\nBot haqida fikrlaringiz, takliflaringiz yoki xatoliklar bo‘lsa, shu yerda yozib qoldiring (rasm yoki video ham yuborishingiz mumkin).\n\nXabaringiz to‘g‘ridan-to‘g‘ri loyiha muallifiga yuboriladi.", parse_mode="HTML", reply_markup=get_back_reply_keyboard())
     await state.set_state(Feedback.waiting_for_message)
 
 @router.message(Feedback.waiting_for_message)
@@ -23,7 +23,7 @@ async def feedback_receive(message: types.Message, state: FSMContext):
         return
         
     if OWNER_ID == 0:
-        await message.answer("⚠️ Adminga xabar yuborish sozlanmagan (OWNER_ID kiritilmagan).")
+        await message.answer("⚠️ Muallifga xabar yuborish sozlanmagan (OWNER_ID kiritilmagan).")
         await state.clear()
         return
         
@@ -42,8 +42,8 @@ async def feedback_receive(message: types.Message, state: FSMContext):
         await message.copy_to(OWNER_ID)
         
         kb = get_parent_keyboard() if role == 'parent' else get_child_keyboard()
-        await message.answer("✅ Xabaringiz adminga muvaffaqiyatli yuborildi! Fikringiz uchun rahmat!", reply_markup=kb)
-    except Exception as e:
+        await message.answer("✅ Xabaringiz muallifga muvaffaqiyatli yetkazildi! Fikringiz uchun tashakkur!", reply_markup=kb)
+    except Exception:
         await message.answer("❌ Xabar yuborishda xatolik yuz berdi.")
         
     await state.clear()
