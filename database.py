@@ -117,25 +117,25 @@ def generate_admin_stats_text():
         recent_text += f"• {r_icon} <b>{u[1]}</b> (ID: <code>{u[0]}</code>)\n"
 
     if not recent_text:
-        recent_text = "• Hozircha foydalanuvchilar yo'q.\n"
+        recent_text = "• Hozircha foydalanuvchilar yo‘q.\n"
 
     now_str = datetime.now().strftime("%d.%m.%Y %H:%M")
 
     text = (
         f"👑 <b>LOYIHA MUALLIFI STATISTIKASI</b>\n"
-        f"<i>Bilig AI platformasi ko'rsatkichlari ({now_str})</i>\n\n"
+        f"<i>Bilig AI platformasi ko‘rsatkichlari ({now_str})</i>\n\n"
         f"👥 <b>FOYDALANUVCHILAR:</b>\n"
         f"• Jami foydalanuvchilar: <b>{total_users} ta</b>\n"
         f"  └ 👨‍👩‍👦 Ota-onalar: <b>{total_parents} ta</b>\n"
-        f"  └ 👦👧 O'quvchilar: <b>{total_children} ta</b>\n"
-        f"  └ 🔗 Bog'langan oilalar: <b>{total_families} ta</b>\n\n"
+        f"  └ 👦👧 O‘quvchilar: <b>{total_children} ta</b>\n"
+        f"  └ 🔗 Bog‘langan oilalar: <b>{total_families} ta</b>\n\n"
         f"📖 <b>MUTOLAA VA KITOBLAR:</b>\n"
         f"• Jami mutolaa rejalari: <b>{total_plans} ta</b> (Tugatilgan: {completed_plans})\n"
         f"• Rejalardagi kitoblar: <b>{total_books} ta</b> (Tugatilgan: {completed_books})\n"
-        f"• 📚 Jami o'qilgan sahifalar: <b>{total_pages} bet</b>\n\n"
+        f"• 📚 Jami o‘qilgan sahifalar: <b>{total_pages} bet</b>\n\n"
         f"🔅 <b>FAOLLIK VA BILIG:</b>\n"
         f"• Bolalardagi jami Biliglar: <b>{total_coins} 🔅</b>\n"
         f"• AI orqali tuzilgan testlar: <b>{total_tests} ta</b>\n\n"
-        f"🆕 <b>Oxirgi a'zo bo'lganlar:</b>\n{recent_text}"
+        f"🆕 <b>Oxirgi a'zo bo‘lganlar:</b>\n{recent_text}"
     )
     return text
