@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from aiogram import Router, types, F
 from aiogram.fsm.context import FSMContext
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
-from config import RECOMMENDED_BOOKS, MUTOLAA_NOTE
+from config import RECOMMENDED_BOOKS
 from database import (
     conn, cursor, get_child_total_pages, calculate_and_update_rank,
     get_child_passport_data
@@ -227,7 +227,7 @@ async def addmethod_back_handler(callback: types.CallbackQuery, state: FSMContex
         await show_plan_mode_menu(callback, child_id)
     await callback.answer()
 
-# USUL A: TAVSIYA ETILGAN KITOBLAR (1-CLICK ACTION)
+# USUL A: TAVSIYA ETILGAN KITOBLAR (1-CLICK ACTION VA MUALLIFLIK MATNI)
 @router.callback_query(F.data.startswith("addmethod_rec_"))
 async def show_recommended_books_view(callback: types.CallbackQuery, state: FSMContext):
     parts = callback.data.split("_")
@@ -246,9 +246,11 @@ async def show_recommended_books_view(callback: types.CallbackQuery, state: FSMC
     kb.append([InlineKeyboardButton(text="🔙 Boshqa usulni tanlash", callback_data=f"back_to_methods_{plan_id}_{mode}")])
 
     text = (
-        f"👶 <b>{child_age} yoshli bolalar uchun tavsiya etilgan sara asarlar:</b>\n\n"
-        f"<i>Farzandingiz mutolaa ro‘yxatiga qo‘shmoqchi bo‘lgan kitob ustiga bir marta bosing:</i>"
-        f"{MUTOLAA_NOTE}"
+        f"📚 <b>{child_age} yosh uchun tavsiya etilgan sara asarlar:</b>\n\n"
+        f"<i>Ushbu mutolaa ro‘yxati bolalar yozuvchisi <b>Saʼdullo Quronov</b> tomonidan farzandingizning yosh psixologiyasiga moslab hamda <b>«Mutolaa»</b> loyihasi doirasida maxsus saralab olindi.</i>\n\n"
+        f"💡 <b>Foydali eslatma:</b>\n"
+        f"<i>Agarda ushbu kitoblarni bosma shaklda topa olmasangiz, ularni <b>«Mutolaa»</b> mobil ilovasida elektron o‘qish yoki audio shaklda tinglash imkoniyati mavjud.</i>\n\n"
+        f"👇 <b>Mutolaa uchun kitobni tanlang:</b>"
     )
     await callback.message.edit_text(text, parse_mode="HTML", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
     await callback.answer()
