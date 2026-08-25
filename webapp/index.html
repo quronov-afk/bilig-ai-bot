@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>Bilig AI</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Yuklanish ekrani -->
+  <div id="screen-loading" class="screen center-screen">
+    <div class="seal seal-lg pulse">🔅</div>
+    <p class="loading-text">Bilig AI yuklanmoqda…</p>
+  </div>
+
+  <!-- Rol tanlash -->
+  <div id="screen-role" class="screen center-screen hidden">
+    <div class="hero-mark">📖</div>
+    <h1 class="hero-title">Bilig AI ga<br>xush kelibsiz!</h1>
+    <p class="hero-sub">Kitob o‘qish endi qiziqarli o‘yin.<br>Kimsiz?</p>
+    <div class="role-buttons">
+      <button class="btn btn-primary big" data-role="parent">👨‍👩‍👦 Men Ota-onaman</button>
+      <button class="btn btn-secondary big" data-role="child">👦👧 Men O‘quvchiman</button>
+    </div>
+  </div>
+
+  <!-- Bola: ota-ona kodi -->
+  <div id="screen-linkcode" class="screen center-screen hidden">
+    <div class="hero-mark">🔑</div>
+    <h1 class="hero-title">Ota-ona kodi</h1>
+    <p class="hero-sub">Ota-onangiz bergan kodni kiriting<br>(masalan, <b>BLG-1234</b>)</p>
+    <input id="link-code-input" class="text-input center" placeholder="BLG-0000" maxlength="9" autocapitalize="characters" />
+    <button id="link-code-submit" class="btn btn-primary big">Ulanish</button>
+    <p id="link-code-error" class="error-text"></p>
+  </div>
+
+  <!-- Yopiq beta -->
+  <div id="screen-closed" class="screen center-screen hidden">
+    <div class="hero-mark">🔒</div>
+    <h1 class="hero-title">Yopiq sinov</h1>
+    <p class="hero-sub">Bilig AI hozircha faqat taklifnoma orqali ishlaydi. Ota-onangiz yoki administratordan havola so‘rang.</p>
+  </div>
+
+  <!-- ================= ASOSIY ILOVA (parent yoki child) ================= -->
+  <div id="app-shell" class="hidden">
+
+    <header id="app-header">
+      <div class="header-user">
+        <div class="avatar" id="header-avatar">🦉</div>
+        <div class="header-texts">
+          <div class="header-name" id="header-name">—</div>
+          <div class="header-role" id="header-role">—</div>
+        </div>
+      </div>
+      <div class="header-stats">
+        <div class="pill pill-gold" id="header-coins">🔅 0</div>
+        <div class="pill pill-coral" id="header-streak">🔥 0</div>
+      </div>
+    </header>
+
+    <div id="bolaxona-banner" class="bolaxona-banner hidden">
+      <span>🧒 Bolaxona rejimi: <b id="bolaxona-child-name">—</b></span>
+      <button id="bolaxona-exit" class="btn-mini">⬅ Ota-ona kabinetiga qaytish</button>
+    </div>
+
+    <main id="app-main"><!-- JS orqali screenlar shu yerga chiziladi --></main>
+
+    <nav id="app-tabs"><!-- JS orqali rolga qarab tab tugmalari chiziladi --></nav>
+  </div>
+
+  <!-- Universal modal oynasi -->
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3 id="modal-title">—</h3>
+        <button id="modal-close" class="btn-icon">✕</button>
+      </div>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Toast bildirishnoma -->
+  <div id="toast" class="toast hidden"></div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
