@@ -18,7 +18,7 @@ from ai_service import verify_page_photo, evaluate_voice_summary
 router = Router()
 
 async def get_effective_child_id(event: types.Message | types.CallbackQuery, state: FSMContext) -> int:
-    """Bolaxona rejimida yoki alohida bola profilida bo'lsa ham haqiqiy child_id ni aniqlash"""
+    """Bolaxona rejimida yoki alohida bola profilida bo‘lsa ham haqiqiy child_id ni aniqlash"""
     data = await state.get_data()
     active_id = data.get('active_child_id')
     if active_id:
@@ -31,8 +31,17 @@ async def get_appropriate_keyboard(child_id: int, state: FSMContext):
         return get_bolaxona_keyboard()
     return get_child_keyboard()
 
+def get_photo_retry_keyboard(book_id: int):
+    """AI sahifani aniqlay olmaganda chiqadigan qulay zaxira tugmalari"""
+    kb = [
+        [InlineKeyboardButton(text="📸 Qaytadan rasmga olish", callback_data=f"sendpage_{book_id}")],
+        [InlineKeyboardButton(text="✏️ Sahifa raqamini qo‘lda kiritish", callback_data=f"manualpage_{book_id}")],
+        [InlineKeyboardButton(text="🔙 Kitobga qaytish", callback_data=f"cread_{book_id}")]
+    ]
+    return InlineKeyboardMarkup(inline_keyboard=kb)
+
 # ==========================================
-# BOLANING KITOB RO'YXATI
+# BOLANING KITOB RO‘YXATI
 # ==========================================
 async def show_child_books(message_or_callback, user_id, state: FSMContext = None):
     parent_id = get_parent_id(user_id)
@@ -106,7 +115,6 @@ async def child_book_action(callback: types.CallbackQuery, state: FSMContext):
     cursor.execute("SELECT mid_test_1_done, mid_test_2_done, final_test_done FROM Plan_Books WHERE book_id = ?", (book_id,))
     test_status = cursor.fetchone()
     
-    test_label = "📝 Test topshirish (Bilig 🔅)"
     if not has_test:
         test_btn = InlineKeyboardButton(text="🔒 Test (Hozircha mavjud emas)", callback_data="no_test_alert")
     elif test_status and test_status[2] == 1:
@@ -120,12 +128,13 @@ async def child_book_action(callback: types.CallbackQuery, state: FSMContext):
         
     kb = [
         [InlineKeyboardButton(text="📸 Sahifani rasmga olib yuborish", callback_data=f"sendpage_{book_id}")],
+        [InlineKeyboardButton(text="✏️ Sahifa raqamini qo‘lda kiritish", callback_data=f"manualpage_{book_id}")],
         [InlineKeyboardButton(text="🎤 Audio xulosa yuborish", callback_data=f"sendaudio_{book_id}")],
         [test_btn],
         [InlineKeyboardButton(text="✅ Kitobni tugatdim", callback_data=f"finishbook_{book_id}")],
         [InlineKeyboardButton(text="🔙 Orqaga", callback_data="child_books_main")]
     ]
-    await callback.message.edit_text("Ajoyib tanlov! O‘qishni boshla. To‘xtagan joyingda menga sahifani rasmga olib yubor.", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
+    await callback.message.edit_text("Ajoyib tanlov! O‘qishni boshla. To‘xtagan joyingda menga sahifani rasmga olib yubor yoki raqamni kirit.", reply_markup=InlineKeyboardMarkup(inline_keyboard=kb))
     await callback.answer()
 
 @router.callback_query(F.data == "no_test_alert")
@@ -155,6 +164,25 @@ async def ask_page_photo(callback: types.CallbackQuery, state: FSMContext):
 @router.message(ChildReading.waiting_for_page_photo, F.photo)
 async def process_reading_photo(message: types.Message, state: FSMContext):
     processing_msg = await message.answer("⏳ <i>AI sahifani tekshirmoqda...</i>", parse_mode="HTML")
+    data = await state.get_data()
+    child_id = data.get('reading_child_id') or await get_effective_child_id(message, state)
+    book_id = data.get('reading_book_id')
+
+    # Fallback: Agar book_id xotiradan yo‘qolgan bo‘lsa, bazadan faol kitobni topish
+    if not book_id:
+        cursor.execute("""
+            SELECT pb.book_id FROM Plan_Books pb
+            JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id
+            WHERE rp.child_id = ? AND pb.is_completed = 0
+            ORDER BY pb.book_id DESC LIMIT 1
+        """, (child_id,))
+        b_row = cursor.fetchone()
+        if b_row:
+            book_id = b_row[0]
+            await state.update_data(reading_book_id=book_id)
+
+    appropriate_kb = await get_appropriate_keyboard(child_id, state)
+
     try:
         photo = message.photo[-1]
         file_info = await message.bot.get_file(photo.file_id)
@@ -166,32 +194,39 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         except Exception:
             pass 
         
-        data = await state.get_data()
-        child_id = data.get('reading_child_id', message.from_user.id)
-        appropriate_kb = await get_appropriate_keyboard(child_id, state)
-        
         if not ai_result.get("is_book_page"):
             await processing_msg.delete()
-            await message.answer("🚫 Bu kitob sahifasiga o‘xshamayapti. Qaytadan urinib ko‘r!", reply_markup=appropriate_kb)
-            await state.clear()
+            await state.set_state(None)
+            await message.answer(
+                "🚫 <b>Bu kitob sahifasiga o‘xshamayapti.</b>\n\nIltimos, kitob sahifasini to‘liqroq rasmga olib yuboring yoki sahifa raqamini qo‘lda kiriting:",
+                parse_mode="HTML",
+                reply_markup=get_photo_retry_keyboard(book_id) if book_id else appropriate_kb
+            )
             return
             
         new_page_num = int(ai_result.get("page_number", 0))
-        if new_page_num == 0:
+        if new_page_num <= 0:
             await processing_msg.delete()
-            await message.answer("⚠️ Sahifa raqami ko‘rinmadi! Raqam aniq ko‘rinsin.", reply_markup=appropriate_kb)
-            await state.clear()
+            await state.set_state(None)
+            await message.answer(
+                "⚠️ <b>Sahifa raqami aniq ko‘rinmadi.</b>\n\nRaqam aniq ko‘rinadigan qilib qayta yuboring yoki quyidagi tugma orqali sahifa raqamini o‘zingiz yozing:",
+                parse_mode="HTML",
+                reply_markup=get_photo_retry_keyboard(book_id) if book_id else appropriate_kb
+            )
             return
             
-        book_id = data.get('reading_book_id')
         cursor.execute("SELECT pages_read, title FROM Plan_Books WHERE book_id = ?", (book_id,))
         row = cursor.fetchone()
         old_pages, book_title = (row[0], row[1]) if row else (0, "Kitob")
         
         if new_page_num <= old_pages:
             await processing_msg.delete()
-            await message.answer(f"⚠️ Sen allaqachon {old_pages}-sahifagacha o‘qigansan! Yangi sahifani yubor.", reply_markup=appropriate_kb)
-            await state.clear()
+            await state.set_state(None)
+            await message.answer(
+                f"⚠️ <b>Sen allaqachon {old_pages}-sahifagacha o‘qigansan!</b>\n\nYangi o‘qigan sahifangni yubor yoki sahifa raqamini to‘g‘rilab kirit.",
+                parse_mode="HTML",
+                reply_markup=get_photo_retry_keyboard(book_id) if book_id else appropriate_kb
+            )
             return
         
         cursor.execute("UPDATE Plan_Books SET pages_read = ? WHERE book_id = ?", (new_page_num, book_id))
@@ -204,7 +239,7 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         streak, shield_used = update_streak(child_id)
         rank, _ = calculate_and_update_rank(child_id)
         
-        # 7 kunlik uzluksiz o'qish nishoni
+        # 7 kunlik uzluksiz o‘qish nishoni
         if streak >= 7:
             cursor.execute("SELECT badges FROM Users WHERE user_id = ?", (child_id,))
             badges = cursor.fetchone()[0]
@@ -223,16 +258,137 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
             
         conn.commit()
         await processing_msg.delete()
+        await state.set_state(None)
         await message.answer(reply_text, parse_mode="HTML", reply_markup=appropriate_kb)
-        await state.clear()
         
         parent_id = get_parent_id(child_id)
+        if not parent_id:
+            parent_id = data.get('bolaxona_parent_id')
         if parent_id:
             await message.bot.send_message(parent_id, f"📖 Farzandingiz <b>'{book_title}'</b> kitobidan {pages_read_now} bet o‘qidi. (Jami: {new_page_num} bet).", parse_mode="HTML")
-    except Exception:
+    except Exception as e:
+        print(f"XATOLIK [process_reading_photo]: {e}")
         await processing_msg.delete()
-        await message.answer("❌ Xatolik yuz berdi. Qaytadan urinib ko‘r.", reply_markup=get_child_keyboard())
-        await state.clear()
+        await state.set_state(None)
+        await message.answer(
+            "❌ <b>Rasm tahlilida texnik uzilish yuz berdi.</b>\n\nQaytadan rasm yuboring yoki sahifa raqamini qo‘lda kiriting:",
+            parse_mode="HTML",
+            reply_markup=get_photo_retry_keyboard(book_id) if book_id else appropriate_kb
+        )
+
+# ==========================================
+# SAHIFA RAQAMINI QO‘LDA KIRITISH (Fallback)
+# ==========================================
+@router.callback_query(F.data.startswith("manualpage_"))
+async def ask_manual_page(callback: types.CallbackQuery, state: FSMContext):
+    book_id = int(callback.data.split("_")[1])
+    child_id = await get_effective_child_id(callback, state)
+    await state.update_data(reading_book_id=book_id, reading_child_id=child_id)
+    try:
+        await callback.message.delete()
+    except Exception:
+        pass
+    
+    cursor.execute("SELECT pages_read, title FROM Plan_Books WHERE book_id = ?", (book_id,))
+    row = cursor.fetchone()
+    current_page = row[0] if row else 0
+    book_title = row[1] if row else "Kitob"
+
+    await callback.bot.send_message(
+        callback.from_user.id,
+        f"✍️ <b>'{book_title}' kitobi bo‘yicha sahifani kiritish</b>\n\n"
+        f"Hozirgi ko‘rsatkich: <b>{current_page}-bet</b>\n"
+        f"Nechanchi sahifagacha o‘qidingiz? Faqat raqamni kiriting (masalan: <code>{current_page + 5}</code>):",
+        parse_mode="HTML",
+        reply_markup=get_back_reply_keyboard()
+    )
+    await state.set_state(ChildReading.waiting_for_manual_page)
+    await callback.answer()
+
+@router.message(ChildReading.waiting_for_manual_page)
+async def process_manual_page(message: types.Message, state: FSMContext):
+    if not message.text.strip().isdigit():
+        await message.answer("⚠️ Iltimos, faqat raqam kiriting (masalan: 35)!")
+        return
+        
+    new_page_num = int(message.text.strip())
+    data = await state.get_data()
+    child_id = data.get('reading_child_id') or await get_effective_child_id(message, state)
+    book_id = data.get('reading_book_id')
+
+    if not book_id:
+        cursor.execute("""
+            SELECT pb.book_id FROM Plan_Books pb
+            JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id
+            WHERE rp.child_id = ? AND pb.is_completed = 0
+            ORDER BY pb.book_id DESC LIMIT 1
+        """, (child_id,))
+        b_row = cursor.fetchone()
+        if b_row:
+            book_id = b_row[0]
+
+    appropriate_kb = await get_appropriate_keyboard(child_id, state)
+    if not book_id:
+        await message.answer("⚠️ Kitob ma'lumoti topilmadi. Iltimos, kitobni qaytadan tanlang.", reply_markup=appropriate_kb)
+        await state.set_state(None)
+        return
+
+    cursor.execute("SELECT pages_read, title FROM Plan_Books WHERE book_id = ?", (book_id,))
+    row = cursor.fetchone()
+    old_pages, book_title = (row[0], row[1]) if row else (0, "Kitob")
+
+    if new_page_num <= old_pages:
+        await message.answer(
+            f"⚠️ <b>Sen allaqachon {old_pages}-sahifagacha o‘qigansan!</b>\nIltimos, undan kattaroq sahifa raqamini kiriting:",
+            parse_mode="HTML"
+        )
+        return
+
+    cursor.execute("UPDATE Plan_Books SET pages_read = ? WHERE book_id = ?", (new_page_num, book_id))
+    earned_bilig = (new_page_num // 5) - (old_pages // 5)
+    pages_read_now = new_page_num - old_pages
+
+    now_ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    cursor.execute("INSERT INTO Reading_Logs (child_id, book_id, pages_added, created_at) VALUES (?, ?, ?, ?)", (child_id, book_id, pages_read_now, now_ts))
+
+    streak, shield_used = update_streak(child_id)
+    rank, _ = calculate_and_update_rank(child_id)
+
+    # 7 kunlik uzluksiz o‘qish nishoni
+    if streak >= 7:
+        cursor.execute("SELECT badges FROM Users WHERE user_id = ?", (child_id,))
+        badges = cursor.fetchone()[0]
+        if "Charchamas" not in str(badges):
+            new_badges = (str(badges) + " 🔥 Charchamas Kitobxon").strip()
+            cursor.execute("UPDATE Users SET badges = ? WHERE user_id = ?", (new_badges, child_id))
+
+    if earned_bilig > 0:
+        cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (earned_bilig, child_id))
+        reply_text = f"🎉 <b>Ajoyib!</b> Sen {pages_read_now} bet o‘qiding va <b>{earned_bilig} 🔅 Bilig</b> ishlading!\n🔥 Streak: {streak} kun! (Darajang: <b>{rank}</b>)\n<i>(Jami: {new_page_num} bet)</i>"
+    else:
+        reply_text = f"👍 <b>Barakalla!</b> Sen {pages_read_now} bet o‘qiding. Yana {5 - (new_page_num % 5)} bet o‘qisang, Bilig olasan!\n🔥 Streak: {streak} kun! (Darajang: <b>{rank}</b>)"
+
+    if shield_used:
+        reply_text += "\n\n🛡 <b>Eslatma:</b> Kecha o‘qimagan edingiz, lekin 'Olov qalqoni' sizning streakingizni saqlab qoldi!"
+
+    conn.commit()
+    await state.set_state(None)
+    await message.answer(reply_text, parse_mode="HTML", reply_markup=appropriate_kb)
+
+    # Ota-onaga qo‘lda kiritilgani haqida bildirishnoma
+    parent_id = get_parent_id(child_id)
+    if not parent_id:
+        parent_id = data.get('bolaxona_parent_id')
+    if parent_id:
+        cursor.execute("SELECT name FROM Users WHERE user_id = ?", (child_id,))
+        c_name_row = cursor.fetchone()
+        c_name = c_name_row[0] if c_name_row else "Farzandingiz"
+        await message.bot.send_message(
+            parent_id,
+            f"📝 <b>MUTOLAA BILDIRISHNOMASI:</b>\n\n"
+            f"Farzandingiz <b>{c_name}</b> <b>'{book_title}'</b> kitobidan {pages_read_now} bet o‘qiganini (jami: {new_page_num}-sahifani) <b>qo‘lda kiritdi</b>.",
+            parse_mode="HTML"
+        )
 
 # ==========================================
 # AUDIO XULOSA VA PEDAGOGIK DIAGNOSTIKA
@@ -320,11 +476,13 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
         appropriate_kb = await get_appropriate_keyboard(child_id, state)
             
         await processing_msg.delete()
+        await state.set_state(None)
         await message.answer(f"👨‍🏫 <b>AI ustoz:</b>\n\n{child_feedback}\n\n🎁 <b>Mukofot:</b> {bonus} 🔅 Bilig!{badge_text}", parse_mode="HTML", reply_markup=appropriate_kb)
-        await state.clear()
         
-        # Ota-onaga tezkor kartochka va 10 daqiqalik suhbat mavzusi
+        # Ota-onaga tezkor kartochka va suhbat mavzusi
         parent_id = get_parent_id(child_id)
+        if not parent_id:
+            parent_id = data.get('bolaxona_parent_id')
         if parent_id:
             cursor.execute("SELECT name FROM Users WHERE user_id = ?", (child_id,))
             c_name = cursor.fetchone()[0]
@@ -340,13 +498,14 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
                 f"<i>{parent_rep.get('conversation_topic', 'Farzandingiz bilan asar qahramonining xatti-harakatlari haqida fikrlashing.')}</i>"
             )
             await message.bot.send_message(parent_id, parent_text, parse_mode="HTML")
-    except Exception:
+    except Exception as e:
+        print(f"XATOLIK [process_audio_summary]: {e}")
         await processing_msg.delete()
-        await message.answer("❌ Xatolik yuz berdi.", reply_markup=get_child_keyboard())
-        await state.clear()
+        await state.set_state(None)
+        await message.answer("❌ Xatolik yuz berdi. Qaytadan urinib ko‘ring.", reply_markup=get_child_keyboard())
 
 # ==========================================
-# KENGAYTIRILGAN AI TEST TOPSHIRISH (AyT)
+# KENGAYTIRILGAN AI TEST TOPSHIRISH
 # ==========================================
 @router.callback_query(F.data.startswith("starttest_"))
 async def start_extended_test(callback: types.CallbackQuery, state: FSMContext):
@@ -365,7 +524,6 @@ async def start_extended_test(callback: types.CallbackQuery, state: FSMContext):
         await callback.answer("🔒 Savollar mavjud emas!", show_alert=True)
         return
         
-    # Savollar sonini belgilash
     q_count = 5 if test_type in ["mid1", "mid2"] else min(10, len(all_questions))
     selected_questions = random.sample(all_questions, min(q_count, len(all_questions)))
     
@@ -396,7 +554,6 @@ async def render_active_test_question(callback: types.CallbackQuery, state: FSMC
 
     # Test tugaganda
     if q_idx >= total_q:
-        # Baza ustunlarini yangilash
         if test_type == "mid1":
             cursor.execute("UPDATE Plan_Books SET mid_test_1_done = 1 WHERE book_id = ?", (book_id,))
         elif test_type == "mid2":
@@ -406,7 +563,6 @@ async def render_active_test_question(callback: types.CallbackQuery, state: FSMC
 
         cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (correct_count, child_id))
         
-        # 100% to'g'ri topshirsa "Zukko" nishoni
         badge_reward = ""
         if correct_count == total_q and total_q >= 5:
             cursor.execute("SELECT badges FROM Users WHERE user_id = ?", (child_id,))
@@ -417,7 +573,6 @@ async def render_active_test_question(callback: types.CallbackQuery, state: FSMC
                 cursor.execute("UPDATE Users SET badges = ? WHERE user_id = ?", (new_b, child_id))
                 badge_reward = "\n🏅 <b>TABRIKLAYMIZ! '🧠 Zukko' nishonini qo‘lga kiritding!</b>"
 
-        # Diagnostika jurnaliga saqlash
         pct = int((correct_count / total_q) * 100)
         now_ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         cursor.execute("""
@@ -436,8 +591,9 @@ async def render_active_test_question(callback: types.CallbackQuery, state: FSMC
         ])
         await callback.message.edit_text(finish_text, parse_mode="HTML", reply_markup=finish_kb)
 
-        # Ota-onaga tezkor diagnostika kartochkasi
         parent_id = get_parent_id(child_id)
+        if not parent_id:
+            parent_id = data.get('bolaxona_parent_id')
         if parent_id:
             cursor.execute("SELECT name FROM Users WHERE user_id = ?", (child_id,))
             c_name = cursor.fetchone()[0]
@@ -458,7 +614,7 @@ async def render_active_test_question(callback: types.CallbackQuery, state: FSMC
                 f"<i>Kechki ovqat paytida farzandingizdan so‘rang: 'Asar qahramoni bu vaziyatda boshqacha yo‘l tutsa bo‘larmidi?'</i>"
             )
             await callback.bot.send_message(parent_id, parent_msg, parse_mode="HTML")
-        await state.clear()
+        await state.set_state(None)
         return
 
     q = questions[q_idx]
@@ -576,6 +732,9 @@ async def complete_book_process(callback: types.CallbackQuery, book_id: int, sta
     cursor.execute("SELECT COUNT(*) FROM Plan_Books WHERE plan_id = ? AND is_completed = 0", (plan_id,))
     remaining = cursor.fetchone()[0]
     parent_id = get_parent_id(child_id)
+    if not parent_id:
+        data = await state.get_data()
+        parent_id = data.get('bolaxona_parent_id')
     
     if remaining == 0:
         cursor.execute("UPDATE Reading_Plans SET status = 'completed' WHERE plan_id = ?", (plan_id,))
@@ -639,7 +798,7 @@ async def show_rewards(message: types.Message, state: FSMContext):
     await message.answer(text, parse_mode="HTML", reply_markup=kb)
 
 # ==========================================
-# DO'KON (BOLA MENYUSI)
+# DO‘KON (BOLA MENYUSI)
 # ==========================================
 async def show_child_store_view(message_or_call, user_id, state: FSMContext = None):
     parent_id = get_parent_id(user_id)
