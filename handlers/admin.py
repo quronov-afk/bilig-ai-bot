@@ -18,7 +18,7 @@ async def admin_stats_handler(message: types.Message):
 
     stats_text = generate_admin_stats_text()
     if OWNER_ID == 0:
-        stats_text += f"\n\n⚙️ <i>Eslatma: Xavfsizlik uchun Render.com'da Environment Variables qismiga <b>OWNER_ID={user_id}</b> o'zgaruvchisini qo'shing.</i>"
+        stats_text += f"\n\n⚙️ <i>Eslatma: Xavfsizlik uchun Render.com'da Environment Variables qismiga <b>OWNER_ID={user_id}</b> o‘zgaruvchisini qo‘shing.</i>"
 
     kb = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🔄 Yangilash", callback_data="admin_refresh_stats")]
@@ -34,7 +34,7 @@ async def refresh_admin_stats(callback: types.CallbackQuery):
         
     stats_text = generate_admin_stats_text()
     if OWNER_ID == 0:
-        stats_text += f"\n\n⚙️ <i>Eslatma: Xavfsizlik uchun Render.com'da Environment Variables qismiga <b>OWNER_ID={user_id}</b> o'zgaruvchisini qo'shing.</i>"
+        stats_text += f"\n\n⚙️ <i>Eslatma: Xavfsizlik uchun Render.com'da Environment Variables qismiga <b>OWNER_ID={user_id}</b> o‘zgaruvchisini qo‘shing.</i>"
 
     kb = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🔄 Yangilash", callback_data="admin_refresh_stats")]
@@ -64,21 +64,21 @@ async def generate_invite_package(message: types.Message):
     
     invitation_text = (
         f"🌟 <b>BILIG AI — Kitobxonlik sari intellektual sayohat!</b>\n\n"
-        f"Assalomu alaykum! Siz bolalarda kitob mutolaasiga mehr uyg'otuvchi <b>Bilig AI</b> platformasining yopiq sinov dasturiga taklif qilindingiz.\n\n"
+        f"Assalomu alaykum! Siz bolalarda kitob mutolaasiga mehr uyg‘otuvchi <b>Bilig AI</b> platformasining yopiq sinov dasturiga taklif qilindingiz.\n\n"
         f"🤖 <b>Bilig AI nima bera oladi?</b>\n"
-        f"• 📚 O'qilgan sahifani <b>AI Vision</b> orqali tekshirish va rag'batlantirish;\n"
-        f"• 🎙 Bolaning ovozli fikrini <b>Adabiyotshunos olim</b> sifatida tahlil qilish;\n"
-        f"• 🧠 Mutolaa qilingan kitoblar bo'yicha qiziqarli <b>AI testlar</b> tuzish;\n"
-        f"• 🟡 Har bir sahifa uchun <b>Bilig tangalari</b>, streak va rag'batlantiruvchi sovg'alar.\n\n"
+        f"• 📚 O‘qilgan sahifani <b>AI Vision</b> orqali tekshirish va rag‘batlantirish;\n"
+        f"• 🎙 Bolaning ovozli fikrini <b>AI ustoz</b> sifatida tahlil qilish;\n"
+        f"• 🧠 Mutolaa qilingan kitoblar bo‘yicha qiziqarli <b>AI testlar</b> tuzish;\n"
+        f"• 🟡 Har bir sahifa uchun <b>Bilig tangalari</b>, streak va rag‘batlantiruvchi sovg‘alar.\n\n"
         f"━━━━━━━━━━━━━━━━━━━━━\n"
-        f"📌 <b>TIZIMGA KIRISH YO'RIQNOMASI:</b>\n\n"
+        f"📌 <b>TIZIMGA KIRISH YO‘RIQNOMASI:</b>\n\n"
         f"1️⃣ <b>OTA-ONA UCHUN:</b>\n"
         f"Avval ota-ona quyidagi havola orqali botga kiradi va mutolaa rejasini tuzadi:\n"
         f"👉 <code>{parent_link}</code>\n\n"
         f"2️⃣ <b>FARZAND UCHUN:</b>\n"
-        f"So'ngra farzand o'z telefonida ushbu havola orqali botga ulanadi:\n"
+        f"So‘ngra farzand o‘z telefonida ushbu havola orqali botga ulanadi:\n"
         f"👉 <code>{child_link}</code>\n\n"
-        f"<i>⚠️ Eslatma: Har bir havola bir martalik bo'lib, faqat bitta hisob (account) uchun mo'ljallangan.</i>"
+        f"<i>⚠️ Eslatma: Har bir havola bir martalik bo‘lib, faqat bitta hisob (account) uchun mo‘ljallangan.</i>"
     )
     
     await message.answer(invitation_text, parse_mode="HTML")
@@ -112,7 +112,6 @@ async def broadcast_message_handler(message: types.Message, command: CommandObje
     for u in users:
         u_id, u_role = u[0], u[1]
         try:
-            # Foydalanuvchi roliga mos ravishda yangi menyu biriktiriladi
             if u_role == 'parent':
                 markup = get_parent_keyboard()
             elif u_role == 'child':
@@ -127,7 +126,7 @@ async def broadcast_message_handler(message: types.Message, command: CommandObje
                 reply_markup=markup
             )
             success_count += 1
-            await asyncio.sleep(0.05)  # Telegram spam chekloviga tushmaslik uchun
+            await asyncio.sleep(0.05)
         except Exception:
             fail_count += 1
 
@@ -135,7 +134,7 @@ async def broadcast_message_handler(message: types.Message, command: CommandObje
         f"✅ <b>Ommaviy xabar yuborildi!</b>\n\n"
         f"📨 Yetkazildi: <b>{success_count} ta</b> foydalanuvchiga\n"
         f"⚠️ Yetib bormadi (botni bloklaganlar): <b>{fail_count} ta</b>\n\n"
-        f"<i>Barcha faol foydalanuvchilarning bosh menyusi eng so'nggi holatga yangilandi! 🚀</i>",
+        f"<i>Barcha faol foydalanuvchilarning bosh menyusi eng so‘nggi holatga yangilandi! 🚀</i>",
         parse_mode="HTML"
     )
 
