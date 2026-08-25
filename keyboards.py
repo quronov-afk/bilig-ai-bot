@@ -2,7 +2,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMar
 
 def get_parent_keyboard():
     kb = [
-        [KeyboardButton(text="📝 Mutolaa rejasini tuzish"), KeyboardButton(text="📚 Faol rejalar")],
+        [KeyboardButton(text="➕ Kitob qo‘shish"), KeyboardButton(text="📚 Faol rejalar")],
         [KeyboardButton(text="📊 Farzandim natijalari"), KeyboardButton(text="🛒 Do‘kon")],
         [KeyboardButton(text="🧒 Bolaxona"), KeyboardButton(text="📞 Qayta aloqa")]
     ]
@@ -35,12 +35,27 @@ def get_skip_prize_keyboard():
     ]
     return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
 
-def get_add_book_keyboard():
+def get_plan_mode_keyboard(child_id: int):
     kb = [
-        [InlineKeyboardButton(text="👶 Yosh bo‘yicha tavsiyalar", callback_data="add_book_age")],
-        [InlineKeyboardButton(text="✍️ Matn orqali qo‘shish", callback_data="add_book_text")],
-        [InlineKeyboardButton(text="📸 Rasm orqali (AI Vision)", callback_data="add_book_photo")],
-        [InlineKeyboardButton(text="✅ Rejani yakunlash", callback_data="finish_plan")]
+        [InlineKeyboardButton(text="⚡️ Tezkor mutolaa (Bitta kitob)", callback_data=f"mode_quick_{child_id}")],
+        [InlineKeyboardButton(text="🎯 Mutolaa marafoni (Katta reja)", callback_data=f"mode_marathon_{child_id}")],
+        [InlineKeyboardButton(text="🔙 Orqaga", callback_data="addbook_select_child")]
+    ]
+    return InlineKeyboardMarkup(inline_keyboard=kb)
+
+def get_add_book_methods_keyboard(child_age: int, plan_id: int, mode: str = "quick"):
+    kb = [
+        [InlineKeyboardButton(text=f"👶 Tavsiya etilgan kitoblar ({child_age} yosh)", callback_data=f"addmethod_rec_{plan_id}_{mode}")],
+        [InlineKeyboardButton(text="✍️ Kitob nomini yozish", callback_data=f"addmethod_text_{plan_id}_{mode}")],
+        [InlineKeyboardButton(text="📸 Muqovani rasmga olish (AI Vision)", callback_data=f"addmethod_photo_{plan_id}_{mode}")],
+        [InlineKeyboardButton(text="🔙 Orqaga", callback_data=f"addmethod_back_{plan_id}_{mode}")]
+    ]
+    return InlineKeyboardMarkup(inline_keyboard=kb)
+
+def get_marathon_manage_keyboard(plan_id: int):
+    kb = [
+        [InlineKeyboardButton(text="➕ Yana kitob qo‘shish", callback_data=f"addmore_marathon_{plan_id}")],
+        [InlineKeyboardButton(text="✅ Marafonni yakunlash", callback_data="finish_marathon")]
     ]
     return InlineKeyboardMarkup(inline_keyboard=kb)
 
@@ -69,12 +84,5 @@ def get_plan_edit_keyboard(plan_id: int):
         [InlineKeyboardButton(text="🎁 Marra sovrinini o‘zgartirish", callback_data=f"editplanprize_{plan_id}")],
         [InlineKeyboardButton(text="👦 Farzandni o‘zgartirish", callback_data=f"editplanchild_{plan_id}")],
         [InlineKeyboardButton(text="🔙 Rejaga qaytish", callback_data=f"showplan_{plan_id}")]
-    ]
-    return InlineKeyboardMarkup(inline_keyboard=kb)
-
-def get_cover_confirm_keyboard(book_id: int = 0):
-    kb = [
-        [InlineKeyboardButton(text="✅ Ha, to‘g‘ri", callback_data=f"cover_ok_{book_id}")],
-        [InlineKeyboardButton(text="✏️ Noto‘g‘ri, qo‘lda yozish", callback_data=f"cover_edit_{book_id}")]
     ]
     return InlineKeyboardMarkup(inline_keyboard=kb)
