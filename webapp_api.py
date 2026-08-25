@@ -37,9 +37,19 @@ import ai_service
 
 # ------------------------------------------------------------
 # Flask ilovasi. Mini App fayllari (index.html, app.js, style.css)
-# ../webapp papkasidan xizmat qiladi.
+# shu webapp_api.py bilan BIR XIL papkada turgan "webapp" papkasidan
+# xizmat qiladi (masalan: /project/webapp_api.py va /project/webapp/index.html).
+# Agar shu joyda topilmasa, ehtiyot chorasi sifatida bir qavat yuqoridan
+# ham qidiradi — turli papka joylashuvlarida ham ishlashi uchun.
 # ------------------------------------------------------------
-WEBAPP_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "webapp")
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_CANDIDATES = [
+    os.path.join(_HERE, "webapp"),                              # webapp_api.py bilan bir papkada
+    os.path.join(os.path.dirname(_HERE), "webapp"),              # webapp_api.py bir qavat pastki papkada bo'lsa
+]
+WEBAPP_DIR = next((p for p in _CANDIDATES if os.path.isdir(p)), _CANDIDATES[0])
+print(f"[webapp_api] Mini App fayllari shu papkadan xizmat qiladi: {WEBAPP_DIR}")
+
 app = Flask(__name__, static_folder=WEBAPP_DIR, static_url_path="")
 
 # SQLite bir vaqtda ko'p yozuvlarda xato bermasligi uchun oddiy qulf (lock)
@@ -880,12 +890,27 @@ def admin_stats():
 
 @app.route("/")
 def serve_index():
+    index_path = os.path.join(WEBAPP_DIR, "index.html")
+    if not os.path.isfile(index_path):
+        return (
+            "<h3>webapp/index.html topilmadi</h3>"
+            f"<p>Qidirilgan joy: <code>{index_path}</code></p>"
+            "<p>webapp_api.py va webapp/ papkasi bir xil papkada (masalan, ikkalasi ham "
+            "main.py bilan bir qatorda) turganini tekshiring.</p>",
+            500,
+        )
     return send_from_directory(WEBAPP_DIR, "index.html")
 
 
 @app.route("/<path:path>")
 def serve_static(path):
-    return send_from_directory(WEBAPP_DIR, path)
+    # /api/... bo'lmagan, lekin haqiqatda mavjud bo'lmagan fayl so'ralsa,
+    # SPA odatiga ko'ra bosh sahifaga (index.html) qaytaramiz — shunda
+    # brauzer manzil satrida boshqa yo'l bo'lsa ham ilova ochiladi.
+    full_path = os.path.join(WEBAPP_DIR, path)
+    if os.path.isfile(full_path):
+        return send_from_directory(WEBAPP_DIR, path)
+    return serve_index()
 
 
 def run_webapp_server(port: int):
