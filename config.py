@@ -5,18 +5,18 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 OWNER_ID = int(os.getenv("OWNER_ID", "0"))
 ACCESS_CODE = os.getenv("ACCESS_CODE", "BILIG-TEST")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 PORT = int(os.environ.get("PORT", 8080))
 
 # Doimiy matnlar
-MUTOLAA_NOTE = "\n\n💡 <i>Izoh: Agarda ushbu kitoblarni bosma shaklda topa olmasangiz, ularni 'Mutolaa' ilovasida elektron o'qish yoki tinglash shaklida topishingiz mumkin.</i>"
+MUTOLAA_NOTE = "\n\n💡 <i>Izoh: Agarda ushbu kitoblarni bosma shaklda topa olmasangiz, ularni 'Mutolaa' ilovasida elektron o‘qish yoki tinglash shaklida topishingiz mumkin.</i>"
 
 WELCOME_TEXT = (
     "👋 <b>Bilig AI ga xush kelibsiz!</b>\n\n"
-    "Ushbu bot bolalar yozuvchisi <b>Sa'dullo Quronov</b> tomonidan farzandiga kitob o'qitishda qiynalayotgan ota-onalarga yordam berish uchun yaratildi.\n\n"
+    "Ushbu bot bolalar yozuvchisi <b>Sa'dullo Quronov</b> tomonidan farzandiga kitob o‘qitishda qiynalayotgan ota-onalarga yordam berish uchun yaratildi.\n\n"
     "🎯 <b>Qanday ishlaydi?</b>\n"
-    "📖 <b>Bola o'qiydi</b> ➡️ 🤖 <b>AI tekshirib \"Bilig\" (🔅 oltin tanga) beradi</b> ➡️ 🎁 <b>Bola tangalariga siz belgilagan sovg'alarni oladi!</b>\n\n"
-    "Kitob o'qish endi urush-janjal emas, qiziqarli o'yin! 🚀\n\n"
+    "📖 <b>Bola o‘qiydi</b> ➡️ 🤖 <b>AI tekshirib \"Bilig\" (🔅 oltin tanga) beradi</b> ➡️ 🎁 <b>Bola tangalariga siz belgilagan sovg‘alarni oladi!</b>\n\n"
+    "Kitob o‘qish endi urush-janjal emas, qiziqarli o‘yin! 🚀\n\n"
     "👇 <b>Boshlash uchun kimsiz?</b>"
 )
 
