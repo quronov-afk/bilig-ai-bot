@@ -1,4 +1,6 @@
 import json
+import re
+import asyncio
 import google.generativeai as genai
 from config import GEMINI_API_KEY, GEMINI_MODEL
 
@@ -8,15 +10,20 @@ if GEMINI_API_KEY:
 model = genai.GenerativeModel(GEMINI_MODEL)
 
 def clean_json(text: str) -> str:
-    """Gemini qaytargan matndan JSON blokini xavfsiz ajratib olish"""
+    """Gemini qaytargan matndan JSON blokini xavfsiz ajratib olish (RegEx orqali)"""
     text = text.strip()
-    if text.startswith("```json"):
-        text = text[7:]
-    elif text.startswith("```"):
-        text = text[3:]
-    if text.endswith("```"):
-        text = text[:-3]
-    return text.strip()
+    
+    # 1. ```json ... ``` blokini qidirish
+    json_block = re.search(r'```(?:json)?\s*([\s\S]*?)\s*```', text)
+    if json_block:
+        return json_block.group(1).strip()
+    
+    # 2. { ... } yoki [ ... ] blokini to‘g‘ridan-to‘g‘ri qidirish
+    json_obj = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', text)
+    if json_obj:
+        return json_obj.group(1).strip()
+    
+    return text
 
 async def analyze_book_cover(image_bytes: bytes):
     """Kitob muqovasidan nomi va muallifini aniqlash"""
@@ -24,29 +31,58 @@ async def analyze_book_cover(image_bytes: bytes):
         "Bu kitob muqovasining rasmi. Menga faqat kitobning nomi va muallifini quyidagi formatda yozib ber: 'Kitob nomi. Muallif'. "
         "Barcha o‘zbekcha matnlarda faqat va faqat to‘g‘ri O‘, o‘, G‘, g‘ harflaridan foydalan."
     )
-    response = await model.generate_content_async([
-        prompt,
-        {"mime_type": "image/jpeg", "data": image_bytes}
-    ])
-    ai_result = response.text.strip()
-    if "." in ai_result:
-        title, author = ai_result.split(".", 1)
-    else:
-        title, author = ai_result, "Noma'lum muallif"
-    return title.strip(), author.strip()
+    for attempt in range(2):
+        try:
+            response = await model.generate_content_async([
+                prompt,
+                {"mime_type": "image/jpeg", "data": image_bytes}
+            ])
+            ai_result = response.text.strip()
+            if "." in ai_result:
+                title, author = ai_result.split(".", 1)
+            else:
+                title, author = ai_result, "Noma'lum muallif"
+            return title.strip(), author.strip()
+        except Exception as e:
+            if attempt == 1:
+                print(f"XATOLIK [analyze_book_cover]: {e}")
+                raise e
+            await asyncio.sleep(1)
 
 async def verify_page_photo(image_bytes: bytes):
-    """Bola o'qigan kitob sahifasi va sahifa raqamini AI Vision orqali tekshirish"""
+    """Bola o‘qigan kitob sahifasi va sahifa raqamini AI Vision orqali tekshirish"""
     prompt = """Bu rasm foydalanuvchi yuborgan kitob sahifasi.
     1. Bu haqiqatan ham kitob sahifasimi? (true/false)
     2. Rasmda ko‘rinib turgan eng katta sahifa raqamini top. Agar sahifa raqami umuman ko‘rinmasa yoki noaniq bo‘lsa, 0 deb ber.
     Javobingni FAQAT quyidagi JSON formatida ber: {"is_book_page": true, "page_number": 155}"""
     
-    response = await model.generate_content_async([
-        prompt,
-        {"mime_type": "image/jpeg", "data": image_bytes}
-    ])
-    return json.loads(clean_json(response.text))
+    for attempt in range(2):
+        try:
+            response = await model.generate_content_async([
+                prompt,
+                {"mime_type": "image/jpeg", "data": image_bytes}
+            ])
+            raw_text = clean_json(response.text)
+            data = json.loads(raw_text)
+            
+            is_page = bool(data.get("is_book_page", False))
+            raw_page = data.get("page_number", 0)
+            
+            # Sahifa raqamini xavfsiz butun songa aylantirish
+            if isinstance(raw_page, str):
+                nums = re.findall(r'\d+', raw_page)
+                page_number = int(nums[0]) if nums else 0
+            elif isinstance(raw_page, (int, float)):
+                page_number = int(raw_page)
+            else:
+                page_number = 0
+                
+            return {"is_book_page": is_page, "page_number": page_number}
+        except Exception as e:
+            if attempt == 1:
+                print(f"XATOLIK [verify_page_photo]: {e}")
+                raise e
+            await asyncio.sleep(1)
 
 async def generate_test_bank_from_photos(photos_bytes_list: list):
     """Yuklangan 5–10 ta sahifa rasmi asosida 15–20 talik kengaytirilgan Savollar bankini tuzish"""
@@ -78,17 +114,23 @@ async def generate_test_bank_from_photos(photos_bytes_list: list):
     for img_bytes in photos_bytes_list:
         contents.append({"mime_type": "image/jpeg", "data": img_bytes})
 
-    response = await model.generate_content_async(contents)
-    raw_json = clean_json(response.text)
-    questions = json.loads(raw_json)
-    return questions, raw_json
+    for attempt in range(2):
+        try:
+            response = await model.generate_content_async(contents)
+            raw_json = clean_json(response.text)
+            questions = json.loads(raw_json)
+            return questions, raw_json
+        except Exception as e:
+            if attempt == 1:
+                print(f"XATOLIK [generate_test_bank_from_photos]: {e}")
+                raise e
+            await asyncio.sleep(1)
 
-# Eski funksiya bilan moslikni saqlash uchun
 async def generate_test_from_photos(photos_bytes_list: list):
     return await generate_test_bank_from_photos(photos_bytes_list)
 
 async def evaluate_voice_summary(audio_bytes: bytes, age: int, book_title: str):
-    """Bolaning ovozli xulosasini 4 ta nutqiy mezon bo'yicha tahlil qilish va ota-onaga suhbat mavzusi berish"""
+    """Bolaning ovozli xulosasini 4 ta nutqiy mezon bo‘yicha tahlil qilish va ota-onaga suhbat mavzusi berish"""
     prompt = f"""Sen mehribon va talabchan pedagog hamda bolalarning qadrdoni bo‘lgan «AI ustoz»san. Bu {age} yoshli bolaning '{book_title}' kitobi bo‘yicha yuborgan audio xulosasi.
 
     Audioni 4 ta nutqiy mezon bo‘yicha sinchiklab tahlil qil:
@@ -122,8 +164,15 @@ async def evaluate_voice_summary(audio_bytes: bytes, age: int, book_title: str):
     2. "give_badge": agar o‘z yoshiga nisbatan ajoyib notiqlik ko‘rsatgan bo‘lsa true (Notiq nishoni uchun).
     3. Matnda qat'iy ravishda faqat O‘, o‘, G‘, g‘ belgilaridan foydalan."""
 
-    response = await model.generate_content_async([
-        prompt,
-        {"mime_type": "audio/ogg", "data": audio_bytes}
-    ])
-    return json.loads(clean_json(response.text))
+    for attempt in range(2):
+        try:
+            response = await model.generate_content_async([
+                prompt,
+                {"mime_type": "audio/ogg", "data": audio_bytes}
+            ])
+            return json.loads(clean_json(response.text))
+        except Exception as e:
+            if attempt == 1:
+                print(f"XATOLIK [evaluate_voice_summary]: {e}")
+                raise e
+            await asyncio.sleep(1)
