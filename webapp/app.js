@@ -118,6 +118,13 @@ function closeModal() {
 document.getElementById("modal-close").onclick = closeModal;
 document.getElementById("modal-overlay").addEventListener("click", function (e) { if (e.target.id === "modal-overlay") closeModal(); });
 document.getElementById("header-help-btn").addEventListener("click", openContactModal);
+document.getElementById("header-bolaxona-btn").addEventListener("click", function () {
+  if (!State.selectedChildId) { toast("Avval farzand tanlang"); return; }
+  const child = State.childrenCache.filter(function (c) { return c.id === State.selectedChildId; })[0];
+  State.activeChildId = State.selectedChildId;
+  State.activeChildName = child ? child.name : "";
+  setupTabsForRole();
+});
 
 // ==========================================================
 // BOSHLANG‘ICH YUKLASH
@@ -198,11 +205,15 @@ function setupTabsForRole() {
   switchTab("home");
 
   const banner = document.getElementById("bolaxona-banner");
+  const bolaxonaBtn = document.getElementById("header-bolaxona-btn");
   if (State.activeChildId) {
     banner.classList.remove("hidden");
     document.getElementById("bolaxona-child-name").textContent = State.activeChildName || "";
+    bolaxonaBtn.classList.add("hidden");
   } else {
     banner.classList.add("hidden");
+    if (State.role === "parent") bolaxonaBtn.classList.remove("hidden");
+    else bolaxonaBtn.classList.add("hidden");
   }
 }
 
@@ -325,13 +336,11 @@ async function renderParentHome() {
   let chips = State.childrenCache.map(function (c) {
     return '<button class="chip ' + (c.id === childId ? "active" : "") + '" data-action="select-child" data-id="' + c.id + '">' + escapeHtml(c.name) + '</button>';
   }).join("");
-  chips += '<button class="chip" data-action="enter-bolaxona" data-id="' + childId + '" data-name="' + escapeHtml(data.name) + '">' + icon("users", 15, 2) + ' Bolaxona</button>';
 
   let html = '<div class="chip-row">' + chips + '</div>';
 
   html += '<div class="hero-card" data-action="open-add-plan">' +
     '<div class="icon-circle">' + icon("plus-circle", 22, 1.8) + '</div>' +
-    '<p class="eyebrow">Yangi maqsad</p>' +
     '<p class="hc-title">Kitob qo‘shish</p>' +
     '<div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;">Tezkor yoki marafon rejasi yaratish ' + icon("arrow-right", 15, 2) + '</div>' +
     '</div>';
@@ -342,15 +351,39 @@ async function renderParentHome() {
     '<div class="stat-box" style="font-size:11px"><div class="num" style="font-size:13px">' + escapeHtml(data.rank) + '</div><div class="lbl">Daraja</div></div>' +
     '</div>';
 
-  if (data.current_book) {
-    const b = data.current_book;
-    const pct = b.total_pages ? Math.min(100, Math.round(b.pages_read / b.total_pages * 100)) : 0;
-    html += '<p class="eyebrow">Jarayondagi kitob</p>' +
-      '<div class="card" data-action="go-plans-tab" style="cursor:pointer">' +
-      '<p class="book-title" style="margin-bottom:6px">' + escapeHtml(b.title) + '</p>' +
-      '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>' +
-      '<div class="progress-label">' + b.pages_read + (b.total_pages ? "/" + b.total_pages : "") + ' bet</div>' +
-      '</div>';
+  html += '<div class="stat-grid" style="grid-template-columns:repeat(2,minmax(0,1fr))">' +
+    '<div class="stat-box"><div class="num">' + data.total_pages + '</div><div class="lbl">Jami o‘qilgan bet</div></div>' +
+    '<div class="stat-box"><div class="num">' + data.completed_books + '</div><div class="lbl">Tugallangan kitob</div></div>' +
+    '</div>';
+
+  html += '<p class="eyebrow">O‘qiyotgan kitoblari</p>';
+  if (data.active_books && data.active_books.length) {
+    data.active_books.forEach(function (b) {
+      const pct = b.total_pages ? Math.min(100, Math.round(b.pages_read / b.total_pages * 100)) : (b.pages_read > 0 ? 30 : 0);
+      html += '<div class="card book-card" data-action="go-plans-tab" style="cursor:pointer">' +
+        '<div class="book-cover">' + icon("image", 22, 1.5) + '</div>' +
+        '<div class="book-info">' +
+        '<p class="book-title">' + escapeHtml(b.title) + '</p>' +
+        '<p class="book-author">' + escapeHtml(b.author || "") + '</p>' +
+        '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>' +
+        '<div class="progress-label">' + b.pages_read + (b.total_pages ? "/" + b.total_pages : "") + ' bet</div>' +
+        '</div></div>';
+    });
+  } else {
+    html += '<div class="card"><p class="section-sub" style="margin:0">Hozircha o‘qilayotgan kitob yo‘q.</p></div>';
+  }
+
+  html += '<p class="eyebrow">So‘nggi faoliyat</p>';
+  if (data.recent_activity && data.recent_activity.length) {
+    html += '<div class="card">' + data.recent_activity.map(function (a) {
+      return '<div class="activity-row">' +
+        '<div class="activity-dot">' + icon("book-open", 15, 2) + '</div>' +
+        '<div style="min-width:0"><p style="margin:0;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + escapeHtml(a.title) + '</p>' +
+        '<p style="margin:0;font-size:11.5px;color:var(--text-faint)">+' + a.pages_added + ' bet o‘qidi · ' + escapeHtml((a.created_at || "").slice(0, 16).replace("T", " ")) + '</p></div>' +
+        '</div>';
+    }).join("") + '</div>';
+  } else {
+    html += '<div class="card"><p class="section-sub" style="margin:0">Hali faoliyat qayd etilmagan.</p></div>';
   }
 
   if (data.last_report && (data.last_report.summary || data.last_report.conversation_topic)) {
