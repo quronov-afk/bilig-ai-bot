@@ -49,78 +49,70 @@ const ICON_PATHS = {
   star: '<polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"/>',
 };
 
-// Minimalistik kontur chizma — kitob o‘qib o‘tirgan bola (hero kartochka bezagi uchun)
-const KID_READING_ILLUSTRATION =
-  '<svg class="hero-illustration" width="84" height="84" viewBox="0 0 100 100" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' +
-  '<circle cx="50" cy="20" r="9"/>' +
-  '<path d="M42 15 Q50 6 58 15"/>' +
-  '<path d="M39 33 L36 57 Q50 63 64 57 L61 33"/>' +
-  '<path d="M39 40 Q33 49 40 55"/>' +
-  '<path d="M61 40 Q67 49 60 55"/>' +
-  '<path d="M36 57 Q50 72 64 57"/>' +
-  '<path d="M38 54 L50 50 L62 54 L50 58 Z"/>' +
-  '<line x1="50" y1="50" x2="50" y2="58"/>' +
-  '</svg>';
+// Kitob qo‘shish kartochkasi bezagi — o‘qiyotgan boyo‘g‘li maskoti
+const HERO_MASCOT = '<img class="hero-mascot" src="/mascots/mascot-boyogli-oqish-cutout.webp" alt="">';
+
+// ---------------- KITOB MUQOVALARI ----------------
+// covers/index.json — kitob nomi bo‘yicha muqova faylini topish jadvali.
+let COVER_INDEX = null;
+
+function loadCoverIndex() {
+  return fetch("/covers/index.json")
+    .then(function (r) { return r.ok ? r.json() : {}; })
+    .then(function (d) { COVER_INDEX = d; })
+    .catch(function () { COVER_INDEX = {}; });
+}
+
+// Solishtirish uchun nomni soddalashtirish (apostrof — ajratuvchi).
+function coverKey(s) {
+  return (s || "").toLowerCase()
+    .replace(/[ʻʼ‘’'`´]/g, " ")
+    .normalize("NFKD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function coverFile(title, author) {
+  if (!COVER_INDEX) return null;
+  const t = coverKey(title);
+  return COVER_INDEX[coverKey(title + " " + (author || ""))] || COVER_INDEX[t] || null;
+}
+
+// Muqova rasmi; topilmasa — nomning birinchi harfi rangli fonda.
+function coverHtml(title, author, cls) {
+  const file = coverFile(title, author);
+  if (file) {
+    return '<div class="' + cls + '"><img src="/covers/' + file + '" alt="" loading="lazy"></div>';
+  }
+  const letter = (title || "?").trim().charAt(0).toUpperCase();
+  const hue = Math.abs(coverKey(title).split("").reduce(function (a, c) {
+    return c.charCodeAt(0) + ((a << 5) - a);
+  }, 0)) % 360;
+  return '<div class="' + cls + ' cover-blank" style="--h:' + hue + 'deg"><span>' + escapeHtml(letter) + '</span></div>';
+}
 
 // ---------------- 10 TA BOLALAR AVATARI (cho‘chqa yo‘q) ----------------
 const AVATARS = {
   fox: { label: "Tulki", bg: "#F2A65A", inner:
-    '<path d="M20 25 Q15 5 35 12 Q38 28 28 34 Z" fill="#D97F3D"/><path d="M80 25 Q85 5 65 12 Q62 28 72 34 Z" fill="#D97F3D"/>' +
-    '<path d="M50 40 Q25 45 25 68 Q37 82 50 76 Q63 82 75 68 Q75 45 50 40 Z" fill="#FFF3E0"/>' +
-    '<circle cx="40" cy="55" r="5" fill="#2B2B2B"/><circle cx="60" cy="55" r="5" fill="#2B2B2B"/>' +
-    '<path d="M46 66 L54 66 L50 72 Z" fill="#2B2B2B"/>' },
+    '<path d="M 20 25 Q 20.84 12.51 35 12 Q 38 28 28 34 Z" fill="#D97F3D"/><path d="M 80 25 Q 79.16 12.51 65 12 Q 62 28 72 34 Z" fill="#D97F3D"/><path d="M 50 40 Q 25 45 25 68 Q 37 82 50 76 Q 63 82 75 68 Q 75 45 50 40 Z" fill="#FFF3E0"/><circle cx="40" cy="55" r="5" fill="#2B2B2B"/><circle cx="60" cy="55" r="5" fill="#2B2B2B"/><path d="M 46 66 L 54 66 L 50 72 Z" fill="#2B2B2B"/>' },
   bear: { label: "Ayiqcha", bg: "#C89B6B", inner:
-    '<circle cx="22" cy="24" r="14" fill="#C89B6B"/><circle cx="78" cy="24" r="14" fill="#C89B6B"/>' +
-    '<circle cx="22" cy="24" r="6" fill="#A97C4F"/><circle cx="78" cy="24" r="6" fill="#A97C4F"/>' +
-    '<ellipse cx="50" cy="62" rx="26" ry="20" fill="#F5E6D3"/>' +
-    '<circle cx="40" cy="52" r="5" fill="#2B2B2B"/><circle cx="60" cy="52" r="5" fill="#2B2B2B"/>' +
-    '<ellipse cx="50" cy="62" rx="6" ry="4" fill="#2B2B2B"/>' },
+    '<circle cx="25.45" cy="27.2" r="14" fill="#C89B6B"/><circle cx="74.55" cy="27.2" r="14" fill="#C89B6B"/><circle cx="22" cy="24" r="6" fill="#A97C4F"/><circle cx="78" cy="24" r="6" fill="#A97C4F"/><ellipse cx="50" cy="62" rx="26" ry="20" fill="#F5E6D3"/><circle cx="40" cy="52" r="5" fill="#2B2B2B"/><circle cx="60" cy="52" r="5" fill="#2B2B2B"/><ellipse cx="50" cy="62" rx="6" ry="4" fill="#2B2B2B"/>' },
   penguin: { label: "Pingvin", bg: "#2D3142", inner:
-    '<path d="M50 30 Q28 35 28 60 Q28 82 50 85 Q72 82 72 60 Q72 35 50 30 Z" fill="#FFFFFF"/>' +
-    '<circle cx="42" cy="50" r="4" fill="#2B2B2B"/><circle cx="58" cy="50" r="4" fill="#2B2B2B"/>' +
-    '<path d="M44 58 L56 58 L50 68 Z" fill="#F2A65A"/>' },
+    '<path d="M 50 30 Q 28 35 28 60 Q 28 82 50 85 Q 72 82 72 60 Q 72 35 50 30 Z" fill="#FFFFFF"/><circle cx="42" cy="50" r="4" fill="#2B2B2B"/><circle cx="58" cy="50" r="4" fill="#2B2B2B"/><path d="M 44 58 L 56 58 L 50 68 Z" fill="#F2A65A"/>' },
   rabbit: { label: "Quyoncha", bg: "#F7C6D9", inner:
-    '<ellipse cx="35" cy="12" rx="9" ry="22" fill="#F7C6D9"/><ellipse cx="65" cy="12" rx="9" ry="22" fill="#F7C6D9"/>' +
-    '<ellipse cx="35" cy="14" rx="4" ry="14" fill="#F49AC1"/><ellipse cx="65" cy="14" rx="4" ry="14" fill="#F49AC1"/>' +
-    '<ellipse cx="50" cy="62" rx="24" ry="20" fill="#FFFFFF"/>' +
-    '<circle cx="41" cy="55" r="5" fill="#2B2B2B"/><circle cx="59" cy="55" r="5" fill="#2B2B2B"/>' +
-    '<circle cx="50" cy="65" r="4" fill="#F49AC1"/>' },
+    '<ellipse cx="40.64" cy="26.28" rx="9" ry="22" fill="#F7C6D9"/><ellipse cx="59.36" cy="26.28" rx="9" ry="22" fill="#F7C6D9"/><ellipse cx="37.12" cy="19.08" rx="4" ry="14" fill="#F49AC1"/><ellipse cx="62.88" cy="19.08" rx="4" ry="14" fill="#F49AC1"/><ellipse cx="50" cy="62" rx="24" ry="20" fill="#FFFFFF"/><circle cx="41" cy="55" r="5" fill="#2B2B2B"/><circle cx="59" cy="55" r="5" fill="#2B2B2B"/><circle cx="50" cy="65" r="4" fill="#F49AC1"/>' },
   cat: { label: "Mushukcha", bg: "#D9A679", inner:
-    '<path d="M25 25 L15 5 L40 20 Z" fill="#D9A679"/><path d="M75 25 L85 5 L60 20 Z" fill="#D9A679"/>' +
-    '<path d="M25 22 L20 10 L36 20 Z" fill="#F4C9A0"/><path d="M75 22 L80 10 L64 20 Z" fill="#F4C9A0"/>' +
-    '<ellipse cx="40" cy="56" rx="6" ry="8" fill="#2B2B2B"/><ellipse cx="60" cy="56" rx="6" ry="8" fill="#2B2B2B"/>' +
-    '<path d="M46 66 L54 66 L50 70 Z" fill="#F49AC1"/>' +
-    '<line x1="10" y1="60" x2="35" y2="63" stroke="#2B2B2B" stroke-width="1.5"/><line x1="10" y1="68" x2="35" y2="68" stroke="#2B2B2B" stroke-width="1.5"/>' +
-    '<line x1="90" y1="60" x2="65" y2="63" stroke="#2B2B2B" stroke-width="1.5"/><line x1="90" y1="68" x2="65" y2="68" stroke="#2B2B2B" stroke-width="1.5"/>' },
+    '<path d="M 25 25 L 20.84 12.51 L 40 20 Z" fill="#D9A679"/><path d="M 75 25 L 79.16 12.51 L 60 20 Z" fill="#D9A679"/><path d="M 25 22 L 21.5 12 L 36 20 Z" fill="#F4C9A0"/><path d="M 75 22 L 78.5 12 L 64 20 Z" fill="#F4C9A0"/><ellipse cx="40" cy="56" rx="6" ry="8" fill="#2B2B2B"/><ellipse cx="60" cy="56" rx="6" ry="8" fill="#2B2B2B"/><path d="M 46 66 L 54 66 L 50 70 Z" fill="#F49AC1"/><line x1="10" y1="60" x2="35" y2="63" stroke="#2B2B2B" stroke-width="1.5"/><line x1="10" y1="68" x2="35" y2="68" stroke="#2B2B2B" stroke-width="1.5"/><line x1="90" y1="60" x2="65" y2="63" stroke="#2B2B2B" stroke-width="1.5"/><line x1="90" y1="68" x2="65" y2="68" stroke="#2B2B2B" stroke-width="1.5"/>' },
   owl: { label: "Boyo‘g‘li", bg: "#C08A56", inner:
-    '<path d="M30 18 L22 4 L38 14 Z" fill="#C08A56"/><path d="M70 18 L78 4 L62 14 Z" fill="#C08A56"/>' +
-    '<circle cx="38" cy="50" r="18" fill="#FFFFFF"/><circle cx="62" cy="50" r="18" fill="#FFFFFF"/>' +
-    '<circle cx="38" cy="50" r="8" fill="#2B2B2B"/><circle cx="62" cy="50" r="8" fill="#2B2B2B"/>' +
-    '<path d="M46 62 L54 62 L50 70 Z" fill="#F2A65A"/>' },
+    '<path d="M 30 18 L 25.3 9.43 L 38 14 Z" fill="#C08A56"/><path d="M 70 18 L 74.7 9.43 L 62 14 Z" fill="#C08A56"/><circle cx="38" cy="50" r="18" fill="#FFFFFF"/><circle cx="62" cy="50" r="18" fill="#FFFFFF"/><circle cx="38" cy="50" r="8" fill="#2B2B2B"/><circle cx="62" cy="50" r="8" fill="#2B2B2B"/><path d="M 46 62 L 54 62 L 50 70 Z" fill="#F2A65A"/>' },
   panda: { label: "Panda", bg: "#FFFFFF", inner:
-    '<circle cx="22" cy="24" r="14" fill="#2B2B2B"/><circle cx="78" cy="24" r="14" fill="#2B2B2B"/>' +
-    '<ellipse cx="38" cy="54" rx="13" ry="16" fill="#2B2B2B"/><ellipse cx="62" cy="54" rx="13" ry="16" fill="#2B2B2B"/>' +
-    '<circle cx="38" cy="55" r="5" fill="#FFFFFF"/><circle cx="62" cy="55" r="5" fill="#FFFFFF"/>' +
-    '<ellipse cx="50" cy="70" rx="6" ry="4" fill="#2B2B2B"/>' },
+    '<circle cx="25.45" cy="27.2" r="14" fill="#2B2B2B"/><circle cx="74.55" cy="27.2" r="14" fill="#2B2B2B"/><ellipse cx="38" cy="54" rx="13" ry="16" fill="#2B2B2B"/><ellipse cx="62" cy="54" rx="13" ry="16" fill="#2B2B2B"/><circle cx="38" cy="55" r="5" fill="#FFFFFF"/><circle cx="62" cy="55" r="5" fill="#FFFFFF"/><ellipse cx="50" cy="70" rx="6" ry="4" fill="#2B2B2B"/>' },
   lion: { label: "Sherbola", bg: "#F2C14E", inner:
-    '<circle cx="16" cy="50" r="9" fill="#D9A441"/><circle cx="84" cy="50" r="9" fill="#D9A441"/>' +
-    '<circle cx="24" cy="26" r="9" fill="#D9A441"/><circle cx="76" cy="26" r="9" fill="#D9A441"/>' +
-    '<circle cx="24" cy="74" r="9" fill="#D9A441"/><circle cx="76" cy="74" r="9" fill="#D9A441"/>' +
-    '<ellipse cx="50" cy="58" rx="28" ry="24" fill="#F2C14E"/>' +
-    '<ellipse cx="50" cy="64" rx="18" ry="14" fill="#FCE8B8"/>' +
-    '<circle cx="41" cy="55" r="5" fill="#2B2B2B"/><circle cx="59" cy="55" r="5" fill="#2B2B2B"/>' +
-    '<path d="M46 66 L54 66 L50 71 Z" fill="#2B2B2B"/>' },
+    '<circle cx="16" cy="50" r="9" fill="#D9A441"/><circle cx="84" cy="50" r="9" fill="#D9A441"/><circle cx="24" cy="26" r="9" fill="#D9A441"/><circle cx="76" cy="26" r="9" fill="#D9A441"/><circle cx="24" cy="74" r="9" fill="#D9A441"/><circle cx="76" cy="74" r="9" fill="#D9A441"/><ellipse cx="50" cy="58" rx="28" ry="24" fill="#F2C14E"/><ellipse cx="50" cy="64" rx="18" ry="14" fill="#FCE8B8"/><circle cx="41" cy="55" r="5" fill="#2B2B2B"/><circle cx="59" cy="55" r="5" fill="#2B2B2B"/><path d="M 46 66 L 54 66 L 50 71 Z" fill="#2B2B2B"/>' },
   elephant: { label: "Fil", bg: "#B7C4CE", inner:
-    '<ellipse cx="14" cy="48" rx="14" ry="20" fill="#A3B4C0"/><ellipse cx="86" cy="48" rx="14" ry="20" fill="#A3B4C0"/>' +
-    '<ellipse cx="50" cy="48" rx="34" ry="30" fill="#B7C4CE"/>' +
-    '<circle cx="40" cy="45" r="4" fill="#2B2B2B"/><circle cx="60" cy="45" r="4" fill="#2B2B2B"/>' +
-    '<path d="M46 60 Q46 78 38 82" fill="none" stroke="#A3B4C0" stroke-width="9" stroke-linecap="round"/>' },
+    '<ellipse cx="22.54" cy="48.47" rx="14" ry="20" fill="#A3B4C0"/><ellipse cx="77.46" cy="48.47" rx="14" ry="20" fill="#A3B4C0"/><ellipse cx="50" cy="48" rx="34" ry="30" fill="#B7C4CE"/><circle cx="40" cy="45" r="4" fill="#2B2B2B"/><circle cx="60" cy="45" r="4" fill="#2B2B2B"/><path d="M 46 60 Q 46 78 38 82" fill="none" stroke="#A3B4C0" stroke-width="9" stroke-linecap="round"/>' },
   dog: { label: "Kuchukcha", bg: "#C9A27E", inner:
-    '<path d="M18 25 Q8 55 26 62 Q34 40 30 22 Z" fill="#A87C55"/><path d="M82 25 Q92 55 74 62 Q66 40 70 22 Z" fill="#A87C55"/>' +
-    '<ellipse cx="50" cy="60" rx="26" ry="22" fill="#C9A27E"/>' +
-    '<ellipse cx="50" cy="68" rx="14" ry="10" fill="#F4E3D0"/>' +
-    '<circle cx="40" cy="54" r="5" fill="#2B2B2B"/><circle cx="60" cy="54" r="5" fill="#2B2B2B"/>' +
-    '<ellipse cx="50" cy="65" rx="5" ry="4" fill="#2B2B2B"/>' },
+    '<path d="M 18 25 Q 8 55 26 62 Q 34 40 30 22 Z" fill="#A87C55"/><path d="M 82 25 Q 92 55 74 62 Q 66 40 70 22 Z" fill="#A87C55"/><ellipse cx="50" cy="60" rx="26" ry="22" fill="#C9A27E"/><ellipse cx="50" cy="68" rx="14" ry="10" fill="#F4E3D0"/><circle cx="40" cy="54" r="5" fill="#2B2B2B"/><circle cx="60" cy="54" r="5" fill="#2B2B2B"/><ellipse cx="50" cy="65" rx="5" ry="4" fill="#2B2B2B"/>' }
 };
 const AVATAR_ORDER = ["fox", "bear", "penguin", "rabbit", "cat", "owl", "panda", "lion", "elephant", "dog"];
 
@@ -279,6 +271,7 @@ document.getElementById("profile-submit").addEventListener("click", async functi
 // ==========================================================
 async function enterApp() {
   showScreen("shell");
+  if (!COVER_INDEX) await loadCoverIndex();
   await refreshHeader();
   if (State.role === "parent") {
     try {
@@ -330,22 +323,30 @@ const TABS_CHILD = [
   { id: "store", label: "Do‘kon", icon: "cart" },
   { id: "rating", label: "Reyting", icon: "award" },
 ];
+const TABS_PARENT_ACTING = [
+  { id: "home", label: "Bosh sahifa", icon: "home" },
+  { id: "plans", label: "Rejalar", icon: "book-open" },
+  { id: "store", label: "Do‘kon", icon: "cart" },
+  { id: "ota-ona", label: "Ota-ona", icon: "users", action: "exit-bolaxona" },
+];
 
-function setupTabsForRole() {
+async function setupTabsForRole() {
   const nav = document.getElementById("app-tabs");
-  const tabs = isChildView() ? TABS_CHILD : TABS_PARENT;
+  const tabs = State.role === "child" ? TABS_CHILD : (State.activeChildId ? TABS_PARENT_ACTING : TABS_PARENT);
   nav.innerHTML = tabs.map(function (t) {
-    return '<button class="tab-btn" data-action="open-tab" data-tab="' + t.id + '">' + icon(t.icon, 21, 1.7) + '<span>' + t.label + '</span></button>';
+    const action = t.action || "open-tab";
+    const tabAttr = t.action ? "" : ' data-tab="' + t.id + '"';
+    return '<button class="tab-btn" data-action="' + action + '"' + tabAttr + '>' + icon(t.icon, 21, 1.7) + '<span>' + t.label + '</span></button>';
   }).join("");
+  await refreshHeader();
   switchTab("home");
-  refreshHeader();
 
   const banner = document.getElementById("bolaxona-banner");
   const ratingBtn = document.getElementById("header-rating-btn");
   if (State.activeChildId) {
     banner.classList.remove("hidden");
     document.getElementById("bolaxona-child-name").textContent = State.activeChildName || "";
-    ratingBtn.classList.add("hidden");
+    ratingBtn.classList.remove("hidden");
   } else {
     banner.classList.add("hidden");
     if (State.role === "parent") ratingBtn.classList.remove("hidden");
@@ -393,7 +394,11 @@ document.addEventListener("click", async function (e) {
       case "open-tab": switchTab(el.dataset.tab); break;
       case "close-modal": closeModal(); break;
 
-      case "select-child": State.selectedChildId = Number(el.dataset.id); switchTab("home"); break;
+      case "open-child-detail": State.selectedChildId = Number(el.dataset.id); await renderChildDetailPage(State.selectedChildId); break;
+      case "back-to-home":
+        document.getElementById("app-main").innerHTML = '<div class="empty-state"><div class="spinner"></div>Yuklanmoqda…</div>';
+        await renderParentHome();
+        break;
       case "enter-bolaxona":
         State.activeChildId = Number(el.dataset.id);
         State.activeChildName = el.dataset.name;
@@ -435,7 +440,14 @@ document.addEventListener("click", async function (e) {
       case "open-rate": openRateModal(); break;
       case "submit-rate": await submitRate(); break;
 
-      case "save-child-age": await saveChildAge(Number(el.dataset.id)); break;
+      case "edit-child": openEditChildModal(el.dataset.id, el.dataset.name, el.dataset.age, el.dataset.avatar); break;
+      case "pick-edit-avatar":
+        editChildAvatar = el.dataset.avatar;
+        document.querySelectorAll("#edit-avatar-grid .avatar-option").forEach(function (b) {
+          b.classList.toggle("selected", b.dataset.avatar === editChildAvatar);
+        });
+        break;
+      case "submit-edit-child": await submitEditChild(el.dataset.id); break;
 
       case "open-contact": openContactModal(); break;
       case "submit-contact": await submitContact(); break;
@@ -459,11 +471,6 @@ document.addEventListener("click", async function (e) {
   }
 });
 
-document.getElementById("bolaxona-exit").addEventListener("click", function () {
-  State.activeChildId = null; State.activeChildName = null;
-  setupTabsForRole();
-});
-
 // ==========================================================
 // TAB 1: BOSH SAHIFA — OTA-ONA
 // ==========================================================
@@ -473,43 +480,141 @@ async function renderParentHome() {
     main.innerHTML = emptyState("users", "Hali farzand ulanmagan", "Ota-ona kodi: <b>" + (State.me.parent_code || "") + "</b> — shu kodni farzandingizga yuboring.");
     return;
   }
-  if (!State.selectedChildId) State.selectedChildId = State.childrenCache[0].id;
-  const childId = State.selectedChildId;
-  const data = await api("/api/parent/home/" + childId);
+  const primary = State.childrenCache[0];
+  const primaryData = await api("/api/parent/home/" + primary.id);
 
-  let chips = State.childrenCache.map(function (c) {
-    return '<button class="child-chip ' + (c.id === childId ? "active" : "") + '" data-action="select-child" data-id="' + c.id + '">' +
-      '<span class="avatar-circle">' + avatarMarkup(c.avatar_id || "fox", 48) + '</span>' +
-      '<span>' + escapeHtml(c.name) + '</span></button>';
+  // ---- 1. Farzandlar karuseli ----
+  const chips = State.childrenCache.map(function (c, i) {
+    return '<button class="kid-chip ' + (i === 0 ? "is-active" : "") + '" data-action="open-child-detail" data-id="' + c.id + '">' +
+      '<span class="kid-av">' + avatarMarkup(c.avatar_id || "fox", 52) + '</span>' +
+      '<span class="kid-name">' + escapeHtml(c.name) + '</span>' +
+      (i === 0 ? '<span class="kid-flag">Faol</span>' : "") +
+      '</button>';
   }).join("");
 
-  let html = '<div class="child-chip-row">' + chips + '</div>';
+  let html = '<p class="sec-label">Farzandlar' + (State.childrenCache.length > 2 ? ' <span class="sw">' + icon("chevron-right", 12, 2.4) + '</span>' : "") + '</p>' +
+    '<div class="kid-row">' + chips + '</div>';
 
+  // ---- 2. Kitob qo‘shish ----
   html += '<div class="hero-card" data-action="open-add-plan">' +
-    KID_READING_ILLUSTRATION +
+    HERO_MASCOT +
     '<div class="icon-circle">' + icon("plus-circle", 22, 1.8) + '</div>' +
     '<p class="hc-title">Kitob qo‘shish</p>' +
     '<div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;">Tezkor yoki marafon rejasi yaratish ' + icon("arrow-right", 15, 2) + '</div>' +
     '</div>';
 
+  // ---- 3. Statistika ----
+  html += '<div class="stat3">' +
+    '<div class="box"><span class="ic ic-flame">' + icon("flame", 17, 2) + '<span class="n">' + primaryData.streak + '</span></span><span class="l">Ketma-ket kun</span></div>' +
+    '<div class="box"><span class="ic ic-coin">' + icon("coin", 17, 2) + '<span class="n">' + primaryData.coins + '</span></span><span class="l">Bilig tangasi</span></div>' +
+    '<div class="box"><span class="ic ic-rank">' + icon("award", 17, 2) + '</span><span class="rank">' + escapeHtml(stripEmoji(primaryData.rank)) + '</span><span class="l">Daraja</span></div>' +
+    '</div>';
+
+  // ---- 4. O‘qiyotgan kitobi ----
+  html += '<p class="sec-label">O‘qiyotgan kitobi</p>' + nowReadingCard(primaryData.current_book);
+
+  // ---- 5. So‘nggi natijalar ----
+  html += '<p class="sec-label">So‘nggi natijalar</p>' +
+    '<div class="res-card">' +
+    '<div class="res-who"><span class="av">' + avatarMarkup(primary.avatar_id || "fox", 48) + '</span>' +
+    '<span>' + escapeHtml(primary.name) + '</span></div>' +
+    '<div class="res-list">' +
+    resRow("flame", "ic-flame", "Uzluksiz mutolaa", primaryData.streak + " kun") +
+    resRow("book-open", "ic-brand", "Jami o‘qilgan", (primaryData.total_pages || 0) + " bet") +
+    resRow("coin", "ic-coin", "To‘plangan Bilig", primaryData.coins + " ta") +
+    resRow("star", "ic-rank", "Yangi nishon", primaryData.last_badge ? stripEmoji(primaryData.last_badge) : "hali yo‘q") +
+    resRow("mic", "ic-audio", "AI audio bahosi", primaryData.last_audio_score ? primaryData.last_audio_score + "/5" : "hali yo‘q") +
+    '</div></div>';
+
+  // ---- 6. Kitoblar javoni ----
+  const shelf = primaryData.active_books || [];
+  html += '<p class="sec-label">Kitoblar javoni' + (shelf.length > 3 ? ' <span class="sw">' + icon("chevron-right", 12, 2.4) + '</span>' : "") + '</p>';
+  if (shelf.length) {
+    html += '<div class="shelf">' + shelf.map(function (b) {
+      const pct = b.total_pages ? Math.min(100, Math.round(b.pages_read / b.total_pages * 100)) : (b.pages_read > 0 ? 30 : 0);
+      return '<article class="shelf-card" data-action="go-plans-tab">' +
+        coverHtml(b.title, b.author, "shelf-cover") +
+        '<p class="shelf-title">' + escapeHtml(b.title) + '</p>' +
+        '<div class="shelf-bar"><i style="width:' + pct + '%"></i></div>' +
+        '<span class="shelf-pct">' + pct + '% o‘qildi</span>' +
+        '</article>';
+    }).join("") + '</div>';
+  } else {
+    html += '<div class="card"><p class="section-sub" style="margin:0">Javon hozircha bo‘sh — yuqoridan kitob qo‘shing.</p></div>';
+  }
+
+  main.innerHTML = html;
+}
+
+// Unvon matnidagi emojini olib tashlash (ilovada emoji ishlatilmaydi)
+function stripEmoji(s) {
+  return (s || "").replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}]/gu, "").trim();
+}
+
+function resRow(iconName, cls, label, value) {
+  return '<div class="res-row"><span class="' + cls + '">' + icon(iconName, 15, 2) + '</span>' +
+    '<span class="rl">' + label + '</span><b>' + escapeHtml(String(value)) + '</b></div>';
+}
+
+function nowReadingCard(b) {
+  if (!b) {
+    return '<div class="card"><p class="section-sub" style="margin:0">Hozircha o‘qilayotgan kitob yo‘q.</p></div>';
+  }
+  const pct = b.total_pages ? Math.min(100, Math.round(b.pages_read / b.total_pages * 100)) : (b.pages_read > 0 ? 30 : 0);
+  return '<div class="now-card" data-action="go-plans-tab">' +
+    '<div class="now-top">' +
+    coverHtml(b.title, b.author, "now-cover") +
+    '<div class="now-info">' +
+    '<p class="now-title">' + escapeHtml(b.title) + '</p>' +
+    '<p class="now-author">' + escapeHtml(b.author || "") + '</p>' +
+    '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>' +
+    '<div class="now-meta"><b>' + b.pages_read + '</b>/' + (b.total_pages || "?") + ' bet <span class="dot">·</span> <b>' + pct + '%</b></div>' +
+    '</div></div>' +
+    '<div class="now-foot">' +
+    '<div><span class="ic-rank">' + icon("award", 15, 2) + '</span> <b>' + (b.tests_done || 0) + '</b> ta test</div>' +
+    '<div><span class="ic-audio">' + icon("mic", 15, 2) + '</span> <b>' + (b.audio_count || 0) + '</b> ta audio xulosa</div>' +
+    '</div></div>';
+}
+
+function bookCardOrEmpty(b, emptyText) {
+  if (!b) return '<div class="card"><p class="section-sub" style="margin:0">' + emptyText + '</p></div>';
+  const pct = b.total_pages ? Math.min(100, Math.round(b.pages_read / b.total_pages * 100)) : (b.pages_read > 0 ? 30 : 0);
+  return '<div class="card book-card" data-action="go-plans-tab" style="cursor:pointer">' +
+    coverHtml(b.title, b.author, "book-cover") +
+    '<div class="book-info">' +
+    '<p class="book-title">' + escapeHtml(b.title) + '</p>' +
+    '<p class="book-author">' + escapeHtml(b.author || "") + '</p>' +
+    '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>' +
+    '<div class="progress-label">' + b.pages_read + (b.total_pages ? "/" + b.total_pages : "") + ' bet</div>' +
+    '</div></div>';
+}
+
+async function renderChildDetailPage(childId) {
+  const main = document.getElementById("app-main");
+  main.innerHTML = '<div class="empty-state"><div class="spinner"></div>Yuklanmoqda…</div>';
+  const data = await api("/api/parent/home/" + childId);
+  const c = State.childrenCache.filter(function (x) { return x.id === childId; })[0] || {};
+
+  let html = '<div class="detail-topbar">' +
+    '<button class="back-link" data-action="back-to-home">' + icon("arrow-left", 16, 2) + ' Orqaga</button>' +
+    '<button class="edit-link" data-action="edit-child" data-id="' + childId + '" data-name="' + escapeHtml(data.name || c.name || "") + '" data-age="' + (c.age || "") + '" data-avatar="' + (c.avatar_id || "fox") + '">' + icon("edit", 13, 2.2) + ' Tahrirlash</button>' +
+    '</div>';
+
+  html += '<div class="child-detail-header">' +
+    '<span class="avatar-circle" style="width:64px;height:64px">' + avatarMarkup(c.avatar_id || "fox", 64) + '</span>' +
+    '<p class="child-detail-name">' + escapeHtml(data.name || c.name || "") + '</p>' +
+    '</div>';
+
   html += '<div class="stat-grid">' +
     '<div class="stat-box"><div class="num">' + data.streak + '</div><div class="lbl">Ketma-ket kun</div></div>' +
     '<div class="stat-box"><div class="num">' + data.coins + '</div><div class="lbl">Bilig</div></div>' +
-    '<div class="stat-box" style="font-size:11px"><div class="num" style="font-size:13px">' + escapeHtml(data.rank) + '</div><div class="lbl">Daraja</div></div>' +
+    '<div class="stat-box" style="font-size:11px"><div class="num" style="font-size:13px">' + escapeHtml(stripEmoji(data.rank)) + '</div><div class="lbl">Daraja</div></div>' +
     '</div>';
 
   html += '<p class="eyebrow">O‘qiyotgan kitoblari</p>';
   if (data.active_books && data.active_books.length) {
     data.active_books.forEach(function (b) {
-      const pct = b.total_pages ? Math.min(100, Math.round(b.pages_read / b.total_pages * 100)) : (b.pages_read > 0 ? 30 : 0);
-      html += '<div class="card book-card" data-action="go-plans-tab" style="cursor:pointer">' +
-        '<div class="book-cover">' + icon("image", 22, 1.5) + '</div>' +
-        '<div class="book-info">' +
-        '<p class="book-title">' + escapeHtml(b.title) + '</p>' +
-        '<p class="book-author">' + escapeHtml(b.author || "") + '</p>' +
-        '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>' +
-        '<div class="progress-label">' + b.pages_read + (b.total_pages ? "/" + b.total_pages : "") + ' bet</div>' +
-        '</div></div>';
+      html += bookCardOrEmpty(b, "");
     });
   } else {
     html += '<div class="card"><p class="section-sub" style="margin:0">Hozircha o‘qilayotgan kitob yo‘q.</p></div>';
@@ -548,7 +653,7 @@ async function renderChildHome() {
   let html = '<div class="stat-grid">' +
     '<div class="stat-box"><div class="num">' + data.coins + '</div><div class="lbl">Bilig</div></div>' +
     '<div class="stat-box"><div class="num">' + data.streak + '</div><div class="lbl">Ketma-ket kun</div></div>' +
-    '<div class="stat-box" style="font-size:11px"><div class="num" style="font-size:13px">' + escapeHtml(data.rank) + '</div><div class="lbl">Daraja</div></div>' +
+    '<div class="stat-box" style="font-size:11px"><div class="num" style="font-size:13px">' + escapeHtml(stripEmoji(data.rank)) + '</div><div class="lbl">Daraja</div></div>' +
     '</div>';
 
   if (data.current_book) {
@@ -1052,10 +1157,32 @@ async function adjustCoins(childId, delta) {
   toast(delta > 0 ? "Bilig qo‘shildi" : "Bilig ayirildi");
   renderParentHome();
 }
-async function saveChildAge(childId) {
-  const age = Number(document.getElementById("age-input-" + childId).value);
-  await api("/api/parent/children/" + childId + "/age", { method: "POST", body: { age: age } });
-  toast("Yoshi saqlandi");
+let editChildAvatar = "fox";
+function openEditChildModal(id, name, age, avatarId) {
+  editChildAvatar = avatarId || "fox";
+  const avatarsHtml = AVATAR_ORDER.map(function (aid) {
+    const a = AVATARS[aid];
+    return '<button class="avatar-option' + (aid === editChildAvatar ? " selected" : "") + '" data-action="pick-edit-avatar" data-avatar="' + aid + '">' +
+      '<span class="avatar-circle">' + avatarMarkup(aid, 54) + '</span><span>' + a.label + '</span></button>';
+  }).join("");
+  openModal("Farzand ma'lumotlarini tahrirlash",
+    '<div class="avatar-grid" id="edit-avatar-grid" style="padding:0 0 8px">' + avatarsHtml + '</div>' +
+    '<label class="field-label">Ismi</label>' +
+    '<input id="edit-child-name" class="text-input" value="' + escapeHtml(name || "") + '" />' +
+    '<label class="field-label">Yoshi</label>' +
+    '<input id="edit-child-age" type="number" class="text-input" value="' + (age || "") + '" />' +
+    '<button class="btn btn-primary btn-block" data-action="submit-edit-child" data-id="' + id + '">Saqlash</button>'
+  );
+}
+async function submitEditChild(id) {
+  const name = document.getElementById("edit-child-name").value.trim();
+  const age = Number(document.getElementById("edit-child-age").value);
+  if (!name) { toast("Ismni kiriting"); return; }
+  await api("/api/parent/children/" + id + "/profile", { method: "POST", body: { name: name, age: age, avatar_id: editChildAvatar } });
+  closeModal();
+  toast("Ma'lumotlar saqlandi");
+  State.childrenCache = await api("/api/parent/children");
+  renderChildDetailPage(Number(id));
 }
 function openContactModal() {
   openModal("Yordam va aloqa",
