@@ -143,6 +143,52 @@ def get_age_category_key(age: int) -> str:
         return "12"
 
 
+def has_voice_report(child_id: int, book_id: int) -> bool:
+    """Shu kitob uchun bola ovozli xulosa yuborib, AI tahlil qilganmi - tekshiradi."""
+    cursor.execute(
+        "SELECT 1 FROM Diagnostic_Logs WHERE child_id = ? AND book_id = ? AND type = 'voice' LIMIT 1",
+        (child_id, book_id)
+    )
+    return cursor.fetchone() is not None
+
+
+def get_current_book(child_id: int, parent_id: int = None):
+    """Bolaning hozir o'qiyotgan (tugallanmagan, eng ko'p sahifasi o'qilgan) kitobini topadi."""
+    q = ("SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages FROM Plan_Books pb "
+         "JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+         "WHERE rp.child_id = ? AND pb.is_completed = 0")
+    params = [child_id]
+    if parent_id:
+        q += " AND rp.parent_id = ?"
+        params.append(parent_id)
+    q += " ORDER BY pb.pages_read DESC LIMIT 1"
+    cursor.execute(q, params)
+    row = cursor.fetchone()
+    if not row:
+        return None
+    return {"id": row[0], "title": row[1], "author": row[2], "pages_read": row[3], "total_pages": row[4]}
+
+
+def get_latest_report(child_id: int):
+    """AI Ustozning shu bola uchun so'nggi pedagogik xulosasini (ovozli tahlildan) qaytaradi."""
+    cursor.execute(
+        "SELECT parent_note, convo_topic FROM Diagnostic_Logs WHERE child_id = ? "
+        "ORDER BY created_at DESC LIMIT 1",
+        (child_id,)
+    )
+    row = cursor.fetchone()
+    if not row:
+        return None
+    try:
+        report = json.loads(row[0]) if row[0] else {}
+    except Exception:
+        report = {}
+    return {
+        "summary": report.get("summary", ""),
+        "conversation_topic": row[1] or report.get("conversation_topic", "")
+    }
+
+
 # ==========================================================
 # 2) PROFIL / KIRISH OQIMI  ( /start bilan bir xil vazifa)
 # ==========================================================
@@ -249,6 +295,25 @@ def api_link_parent():
 # 3) OTA-ONA BO‘LIMI
 # ==========================================================
 
+@app.route("/api/parent/home/<int:child_id>", methods=["GET"])
+@require_auth
+def parent_home(child_id):
+    """🏠 Bosh sahifa (ota-ona) — tanlangan farzand bo'yicha qisqacha holat."""
+    cursor.execute(
+        "SELECT name, balance_coins, streak_days, rank_title FROM Users WHERE user_id = ?", (child_id,)
+    )
+    row = cursor.fetchone()
+    if not row:
+        return jsonify({"error": "Farzand topilmadi"}), 404
+    name, coins, streak, rank = row
+    current_book = get_current_book(child_id, parent_id=g.user_id)
+    last_report = get_latest_report(child_id)
+    return jsonify({
+        "name": name, "coins": coins, "streak": streak, "rank": rank,
+        "current_book": current_book, "last_report": last_report
+    })
+
+
 @app.route("/api/parent/children", methods=["GET"])
 @require_auth
 def parent_children():
@@ -296,12 +361,15 @@ def parent_plans():
     plans = []
     for plan_id, name, prize, status, cid in cursor.fetchall():
         cursor.execute(
-            "SELECT book_id, title, author, pages_read, total_pages, is_completed FROM Plan_Books WHERE plan_id = ?",
+            "SELECT book_id, title, author, pages_read, total_pages, is_completed, "
+            "mid_test_1_done, mid_test_2_done, final_test_done FROM Plan_Books WHERE plan_id = ?",
             (plan_id,)
         )
         books = [
             {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3],
-             "total_pages": b[4], "completed": bool(b[5])}
+             "total_pages": b[4], "completed": bool(b[5]), "mid_test_1_done": bool(b[6]),
+             "mid_test_2_done": bool(b[7]), "final_test_done": bool(b[8]),
+             "has_voice": has_voice_report(cid, b[0])}
             for b in cursor.fetchall()
         ]
         plans.append({
@@ -536,6 +604,37 @@ def _resolve_active_child(request):
     return as_child or g.user_id
 
 
+@app.route("/api/child/home", methods=["GET"])
+@require_auth
+def child_home():
+    """🏠 Bosh sahifa (bola) — o'zining qisqacha holati."""
+    child_id = _resolve_active_child(request)
+    cursor.execute(
+        "SELECT name, balance_coins, streak_days, rank_title, badges FROM Users WHERE user_id = ?", (child_id,)
+    )
+    row = cursor.fetchone()
+    if not row:
+        return jsonify({"error": "Topilmadi"}), 404
+    name, coins, streak, rank, badges = row
+    current_book = get_current_book(child_id)
+    last_badge = (badges or "").split(",")[-1].strip() if badges else None
+    return jsonify({
+        "name": name, "coins": coins, "streak": streak, "rank": rank,
+        "current_book": current_book, "last_badge": last_badge
+    })
+
+
+@app.route("/api/child/passport", methods=["GET"])
+@require_auth
+def child_passport_self():
+    """📜 Shaxsiy Pasport — bolaning o'zi o'z diagnostikasini ko'radi."""
+    child_id = _resolve_active_child(request)
+    data = get_child_passport_data(child_id)
+    if not data:
+        return jsonify({"error": "Topilmadi"}), 404
+    return jsonify(data)
+
+
 @app.route("/api/child/books", methods=["GET"])
 @require_auth
 def child_books():
@@ -551,12 +650,15 @@ def child_books():
     plans = []
     for plan_id, name, prize in cursor.fetchall():
         cursor.execute(
-            "SELECT book_id, title, author, pages_read, total_pages, is_completed FROM Plan_Books WHERE plan_id = ?",
+            "SELECT book_id, title, author, pages_read, total_pages, is_completed, "
+            "mid_test_1_done, mid_test_2_done, final_test_done FROM Plan_Books WHERE plan_id = ?",
             (plan_id,)
         )
         books = [
             {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3],
-             "total_pages": b[4], "completed": bool(b[5])}
+             "total_pages": b[4], "completed": bool(b[5]), "mid_test_1_done": bool(b[6]),
+             "mid_test_2_done": bool(b[7]), "final_test_done": bool(b[8]),
+             "has_voice": has_voice_report(child_id, b[0])}
             for b in cursor.fetchall()
         ]
         if books:
@@ -567,6 +669,7 @@ def child_books():
 @app.route("/api/child/book/<int:book_id>", methods=["GET"])
 @require_auth
 def child_book_detail(book_id):
+    child_id = _resolve_active_child(request)
     cursor.execute(
         "SELECT title, author, pages_read, total_pages, is_completed, "
         "mid_test_1_done, mid_test_2_done, final_test_done FROM Plan_Books WHERE book_id = ?",
@@ -581,7 +684,7 @@ def child_book_detail(book_id):
         "title": row[0], "author": row[1], "pages_read": row[2], "total_pages": row[3],
         "completed": bool(row[4]), "mid_test_1_done": bool(row[5]),
         "mid_test_2_done": bool(row[6]), "final_test_done": bool(row[7]),
-        "has_test": has_test
+        "has_test": has_test, "has_voice": has_voice_report(child_id, book_id)
     })
 
 
