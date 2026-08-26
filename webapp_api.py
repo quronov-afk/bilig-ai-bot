@@ -45,6 +45,8 @@ import ai_service
 for _col_sql in (
     "ALTER TABLE Users ADD COLUMN avatar_id TEXT DEFAULT 'fox'",
     "ALTER TABLE Users ADD COLUMN profile_done INTEGER DEFAULT 0",
+    # Ovozli xulosa uchun AI bergan Bilig bahosi (bosh sahifada ko‘rsatiladi)
+    "ALTER TABLE Diagnostic_Logs ADD COLUMN bonus_bilig INTEGER DEFAULT 0",
 ):
     try:
         cursor.execute(_col_sql)
@@ -358,13 +360,14 @@ def api_child_profile():
 def parent_home(child_id):
     """Bosh sahifa (ota-ona) — tanlangan farzand bo‘yicha to‘liq holat: faoliyat, kitoblar, natijalar."""
     cursor.execute(
-        "SELECT name, balance_coins, streak_days FROM Users WHERE user_id = ?", (child_id,)
+        "SELECT name, balance_coins, streak_days, badges FROM Users WHERE user_id = ?", (child_id,)
     )
     row = cursor.fetchone()
     if not row:
         return jsonify({"error": "Farzand topilmadi"}), 404
-    name, coins, streak = row
+    name, coins, streak, badges = row
     rank, total_pages = calculate_and_update_rank(child_id)
+    last_badge = (badges or "").split(",")[-1].strip() if badges else None
 
     cursor.execute(
         "SELECT COUNT(*) FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
@@ -396,12 +399,32 @@ def parent_home(child_id):
     ]
 
     current_book = get_current_book(child_id, parent_id=g.user_id)
+    # Joriy kitob bo‘yicha nechta test ishlangani va nechta audio yuborilgani
+    if current_book:
+        cursor.execute(
+            "SELECT mid_test_1_done, mid_test_2_done, final_test_done, audio_count "
+            "FROM Plan_Books WHERE book_id = ?", (current_book["id"],)
+        )
+        r = cursor.fetchone()
+        if r:
+            current_book["tests_done"] = int(r[0] or 0) + int(r[1] or 0) + int(r[2] or 0)
+            current_book["audio_count"] = int(r[3] or 0)
+
+    # Oxirgi ovozli xulosa uchun AI bergan Bilig bahosi
+    cursor.execute(
+        "SELECT bonus_bilig FROM Diagnostic_Logs WHERE child_id = ? AND type = 'voice' "
+        "ORDER BY created_at DESC LIMIT 1", (child_id,)
+    )
+    r = cursor.fetchone()
+    last_audio_score = int(r[0]) if r and r[0] else None
+
     last_report = get_latest_report(child_id)
     return jsonify({
         "name": name, "coins": coins, "streak": streak, "rank": rank,
         "total_pages": total_pages, "completed_books": completed_books,
         "current_book": current_book, "active_books": active_books,
-        "recent_activity": recent_activity, "last_report": last_report
+        "recent_activity": recent_activity, "last_report": last_report,
+        "last_badge": last_badge, "last_audio_score": last_audio_score
     })
 
 
@@ -908,14 +931,14 @@ def child_submit_voice(book_id):
             )
         cursor.execute(
             "INSERT INTO Diagnostic_Logs (child_id, book_id, type, factual_score, logic_score, "
-            "conclusion_score, fluency_score, vocabulary_score, parent_note, convo_topic, created_at) "
-            "VALUES (?, ?, 'voice', ?, ?, ?, ?, ?, ?, ?, ?)",
+            "conclusion_score, fluency_score, vocabulary_score, parent_note, convo_topic, created_at, bonus_bilig) "
+            "VALUES (?, ?, 'voice', ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (child_id, book_id,
              diag.get("factual_score", 0), diag.get("logic_score", 0), diag.get("conclusion_score", 0),
              diag.get("fluency_score", 0), diag.get("vocabulary_score", 0),
              json.dumps(result.get("parent_report", {}), ensure_ascii=False),
              result.get("parent_report", {}).get("conversation_topic", ""),
-             datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+             datetime.now().strftime("%Y-%m-%d %H:%M:%S"), bonus)
         )
         conn.commit()
 
