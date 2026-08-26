@@ -88,6 +88,34 @@ html, body {
   box-shadow: var(--shadow-raised);
 }
 .btn:active { transform: scale(0.97); box-shadow: 0 1px 2px rgba(15,23,42,0.12) inset; }
+
+/* ---------- Bosishga darhol javob ---------- */
+/* Har qanday bosiladigan element bosilganda sal kichrayadi — foydalanuvchi
+   bosgani ro‘yxatga olinganini shu zahoti ko‘radi va qayta bosmaydi. */
+[data-action] { transition: transform .1s ease, opacity .15s ease; }
+[data-action]:active { transform: scale(0.975); }
+
+/* Amal server javobini kutayotganda (150 ms dan uzoq bo‘lsa) */
+[data-action].is-busy {
+  opacity: .55;
+  pointer-events: none;
+  position: relative;
+}
+[data-action].is-busy::after {
+  content: ""; position: absolute; top: 50%; left: 50%;
+  width: 18px; height: 18px; margin: -9px 0 0 -9px;
+  border: 2px solid rgba(15,23,42,.18); border-top-color: var(--brand);
+  border-radius: 50%; animation: busySpin .6s linear infinite;
+}
+.hero-card.is-busy::after, .btn-primary.is-busy::after {
+  border-color: rgba(255,255,255,.35); border-top-color: #fff;
+}
+@keyframes busySpin { to { transform: rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-action] { transition: none; }
+  [data-action].is-busy::after { animation: none; }
+}
 .btn.big { width: 100%; max-width: 300px; padding: 15px 18px; font-size: 15px; }
 .btn-primary { background: var(--brand); color: #fff; box-shadow: 0 1px 0 rgba(255,255,255,.35) inset, 0 6px 14px -6px rgba(78,142,247,0.5); }
 .btn-primary:hover { background: var(--brand-deep); }

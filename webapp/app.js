@@ -383,11 +383,22 @@ function switchTab(tabId) {
 // ==========================================================
 // MARKAZIY KLIK BOSHQARUVCHISI
 // ==========================================================
+// Bir vaqtda faqat bitta amal bajariladi. Bo‘lmasa foydalanuvchi javobni
+// kutolmay qayta-qayta bosadi va buyruqlar birdaniga takrorlanib ketadi.
+let actionBusy = false;
+
 document.addEventListener("click", async function (e) {
   const el = e.target.closest("[data-action]");
   if (!el) return;
+  if (actionBusy) return;            // avvalgi amal tugamagan — bu bosishni e'tiborsiz qoldiramiz
   const a = el.dataset.action;
   haptic();
+
+  actionBusy = true;
+  // Amal tez tugasa, "kutish" belgisi umuman ko‘rinmaydi (150 ms dan keyin chiqadi)
+  const busyTimer = setTimeout(function () { el.classList.add("is-busy"); }, 150);
+  // Xavfsizlik: biror amal osilib qolsa ham ilova qotib qolmaydi
+  const release = setTimeout(function () { actionBusy = false; }, 12000);
 
   try {
     switch (a) {
@@ -468,6 +479,11 @@ document.addEventListener("click", async function (e) {
     }
   } catch (err) {
     toast(err.error || err.message || "Xatolik yuz berdi");
+  } finally {
+    clearTimeout(busyTimer);
+    clearTimeout(release);
+    el.classList.remove("is-busy");
+    actionBusy = false;
   }
 });
 
