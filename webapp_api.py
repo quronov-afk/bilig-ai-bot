@@ -153,7 +153,7 @@ def has_voice_report(child_id: int, book_id: int) -> bool:
 
 
 def get_current_book(child_id: int, parent_id: int = None):
-    """Bolaning hozir o'qiyotgan (tugallanmagan, eng ko'p sahifasi o'qilgan) kitobini topadi."""
+    """Bolaning hozir o‘qiyotgan (tugallanmagan, eng ko‘p sahifasi o‘qilgan) kitobini topadi."""
     q = ("SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages FROM Plan_Books pb "
          "JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
          "WHERE rp.child_id = ? AND pb.is_completed = 0")
@@ -170,7 +170,7 @@ def get_current_book(child_id: int, parent_id: int = None):
 
 
 def get_latest_report(child_id: int):
-    """AI Ustozning shu bola uchun so'nggi pedagogik xulosasini (ovozli tahlildan) qaytaradi."""
+    """AI Ustozning shu bola uchun so‘nggi pedagogik xulosasini (ovozli tahlildan) qaytaradi."""
     cursor.execute(
         "SELECT parent_note, convo_topic FROM Diagnostic_Logs WHERE child_id = ? "
         "ORDER BY created_at DESC LIMIT 1",
@@ -298,19 +298,52 @@ def api_link_parent():
 @app.route("/api/parent/home/<int:child_id>", methods=["GET"])
 @require_auth
 def parent_home(child_id):
-    """🏠 Bosh sahifa (ota-ona) — tanlangan farzand bo'yicha qisqacha holat."""
+    """Bosh sahifa (ota-ona) — tanlangan farzand bo‘yicha to‘liq holat: faoliyat, kitoblar, natijalar."""
     cursor.execute(
-        "SELECT name, balance_coins, streak_days, rank_title FROM Users WHERE user_id = ?", (child_id,)
+        "SELECT name, balance_coins, streak_days FROM Users WHERE user_id = ?", (child_id,)
     )
     row = cursor.fetchone()
     if not row:
         return jsonify({"error": "Farzand topilmadi"}), 404
-    name, coins, streak, rank = row
+    name, coins, streak = row
+    rank, total_pages = calculate_and_update_rank(child_id)
+
+    cursor.execute(
+        "SELECT COUNT(*) FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+        "WHERE rp.parent_id = ? AND rp.child_id = ? AND pb.is_completed = 1",
+        (g.user_id, child_id)
+    )
+    completed_books = cursor.fetchone()[0]
+
+    cursor.execute(
+        "SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages FROM Plan_Books pb "
+        "JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+        "WHERE rp.parent_id = ? AND rp.child_id = ? AND pb.is_completed = 0 ORDER BY pb.pages_read DESC",
+        (g.user_id, child_id)
+    )
+    active_books = [
+        {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3], "total_pages": b[4]}
+        for b in cursor.fetchall()
+    ]
+
+    cursor.execute(
+        "SELECT pb.title, rl.pages_added, rl.created_at FROM Reading_Logs rl "
+        "JOIN Plan_Books pb ON rl.book_id = pb.book_id "
+        "WHERE rl.child_id = ? ORDER BY rl.created_at DESC LIMIT 6",
+        (child_id,)
+    )
+    recent_activity = [
+        {"title": a[0], "pages_added": a[1], "created_at": a[2]}
+        for a in cursor.fetchall()
+    ]
+
     current_book = get_current_book(child_id, parent_id=g.user_id)
     last_report = get_latest_report(child_id)
     return jsonify({
         "name": name, "coins": coins, "streak": streak, "rank": rank,
-        "current_book": current_book, "last_report": last_report
+        "total_pages": total_pages, "completed_books": completed_books,
+        "current_book": current_book, "active_books": active_books,
+        "recent_activity": recent_activity, "last_report": last_report
     })
 
 
@@ -607,7 +640,7 @@ def _resolve_active_child(request):
 @app.route("/api/child/home", methods=["GET"])
 @require_auth
 def child_home():
-    """🏠 Bosh sahifa (bola) — o'zining qisqacha holati."""
+    """🏠 Bosh sahifa (bola) — o‘zining qisqacha holati."""
     child_id = _resolve_active_child(request)
     cursor.execute(
         "SELECT name, balance_coins, streak_days, rank_title, badges FROM Users WHERE user_id = ?", (child_id,)
@@ -627,7 +660,7 @@ def child_home():
 @app.route("/api/child/passport", methods=["GET"])
 @require_auth
 def child_passport_self():
-    """📜 Shaxsiy Pasport — bolaning o'zi o'z diagnostikasini ko'radi."""
+    """📜 Shaxsiy Pasport — bolaning o‘zi o‘z diagnostikasini ko‘radi."""
     child_id = _resolve_active_child(request)
     data = get_child_passport_data(child_id)
     if not data:
