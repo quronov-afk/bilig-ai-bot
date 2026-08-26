@@ -62,6 +62,73 @@ const KID_READING_ILLUSTRATION =
   '<line x1="50" y1="50" x2="50" y2="58"/>' +
   '</svg>';
 
+// ---------------- 10 TA BOLALAR AVATARI (cho‘chqa yo‘q) ----------------
+const AVATARS = {
+  fox: { label: "Tulki", bg: "#F2A65A", inner:
+    '<path d="M20 25 Q15 5 35 12 Q38 28 28 34 Z" fill="#D97F3D"/><path d="M80 25 Q85 5 65 12 Q62 28 72 34 Z" fill="#D97F3D"/>' +
+    '<path d="M50 40 Q25 45 25 68 Q37 82 50 76 Q63 82 75 68 Q75 45 50 40 Z" fill="#FFF3E0"/>' +
+    '<circle cx="40" cy="55" r="5" fill="#2B2B2B"/><circle cx="60" cy="55" r="5" fill="#2B2B2B"/>' +
+    '<path d="M46 66 L54 66 L50 72 Z" fill="#2B2B2B"/>' },
+  bear: { label: "Ayiqcha", bg: "#C89B6B", inner:
+    '<circle cx="22" cy="24" r="14" fill="#C89B6B"/><circle cx="78" cy="24" r="14" fill="#C89B6B"/>' +
+    '<circle cx="22" cy="24" r="6" fill="#A97C4F"/><circle cx="78" cy="24" r="6" fill="#A97C4F"/>' +
+    '<ellipse cx="50" cy="62" rx="26" ry="20" fill="#F5E6D3"/>' +
+    '<circle cx="40" cy="52" r="5" fill="#2B2B2B"/><circle cx="60" cy="52" r="5" fill="#2B2B2B"/>' +
+    '<ellipse cx="50" cy="62" rx="6" ry="4" fill="#2B2B2B"/>' },
+  penguin: { label: "Pingvin", bg: "#2D3142", inner:
+    '<path d="M50 30 Q28 35 28 60 Q28 82 50 85 Q72 82 72 60 Q72 35 50 30 Z" fill="#FFFFFF"/>' +
+    '<circle cx="42" cy="50" r="4" fill="#2B2B2B"/><circle cx="58" cy="50" r="4" fill="#2B2B2B"/>' +
+    '<path d="M44 58 L56 58 L50 68 Z" fill="#F2A65A"/>' },
+  rabbit: { label: "Quyoncha", bg: "#F7C6D9", inner:
+    '<ellipse cx="35" cy="12" rx="9" ry="22" fill="#F7C6D9"/><ellipse cx="65" cy="12" rx="9" ry="22" fill="#F7C6D9"/>' +
+    '<ellipse cx="35" cy="14" rx="4" ry="14" fill="#F49AC1"/><ellipse cx="65" cy="14" rx="4" ry="14" fill="#F49AC1"/>' +
+    '<ellipse cx="50" cy="62" rx="24" ry="20" fill="#FFFFFF"/>' +
+    '<circle cx="41" cy="55" r="5" fill="#2B2B2B"/><circle cx="59" cy="55" r="5" fill="#2B2B2B"/>' +
+    '<circle cx="50" cy="65" r="4" fill="#F49AC1"/>' },
+  cat: { label: "Mushukcha", bg: "#D9A679", inner:
+    '<path d="M25 25 L15 5 L40 20 Z" fill="#D9A679"/><path d="M75 25 L85 5 L60 20 Z" fill="#D9A679"/>' +
+    '<path d="M25 22 L20 10 L36 20 Z" fill="#F4C9A0"/><path d="M75 22 L80 10 L64 20 Z" fill="#F4C9A0"/>' +
+    '<ellipse cx="40" cy="56" rx="6" ry="8" fill="#2B2B2B"/><ellipse cx="60" cy="56" rx="6" ry="8" fill="#2B2B2B"/>' +
+    '<path d="M46 66 L54 66 L50 70 Z" fill="#F49AC1"/>' +
+    '<line x1="10" y1="60" x2="35" y2="63" stroke="#2B2B2B" stroke-width="1.5"/><line x1="10" y1="68" x2="35" y2="68" stroke="#2B2B2B" stroke-width="1.5"/>' +
+    '<line x1="90" y1="60" x2="65" y2="63" stroke="#2B2B2B" stroke-width="1.5"/><line x1="90" y1="68" x2="65" y2="68" stroke="#2B2B2B" stroke-width="1.5"/>' },
+  owl: { label: "Boyo‘g‘li", bg: "#C08A56", inner:
+    '<path d="M30 18 L22 4 L38 14 Z" fill="#C08A56"/><path d="M70 18 L78 4 L62 14 Z" fill="#C08A56"/>' +
+    '<circle cx="38" cy="50" r="18" fill="#FFFFFF"/><circle cx="62" cy="50" r="18" fill="#FFFFFF"/>' +
+    '<circle cx="38" cy="50" r="8" fill="#2B2B2B"/><circle cx="62" cy="50" r="8" fill="#2B2B2B"/>' +
+    '<path d="M46 62 L54 62 L50 70 Z" fill="#F2A65A"/>' },
+  panda: { label: "Panda", bg: "#FFFFFF", inner:
+    '<circle cx="22" cy="24" r="14" fill="#2B2B2B"/><circle cx="78" cy="24" r="14" fill="#2B2B2B"/>' +
+    '<ellipse cx="38" cy="54" rx="13" ry="16" fill="#2B2B2B"/><ellipse cx="62" cy="54" rx="13" ry="16" fill="#2B2B2B"/>' +
+    '<circle cx="38" cy="55" r="5" fill="#FFFFFF"/><circle cx="62" cy="55" r="5" fill="#FFFFFF"/>' +
+    '<ellipse cx="50" cy="70" rx="6" ry="4" fill="#2B2B2B"/>' },
+  lion: { label: "Sherbola", bg: "#F2C14E", inner:
+    '<circle cx="16" cy="50" r="9" fill="#D9A441"/><circle cx="84" cy="50" r="9" fill="#D9A441"/>' +
+    '<circle cx="24" cy="26" r="9" fill="#D9A441"/><circle cx="76" cy="26" r="9" fill="#D9A441"/>' +
+    '<circle cx="24" cy="74" r="9" fill="#D9A441"/><circle cx="76" cy="74" r="9" fill="#D9A441"/>' +
+    '<ellipse cx="50" cy="58" rx="28" ry="24" fill="#F2C14E"/>' +
+    '<ellipse cx="50" cy="64" rx="18" ry="14" fill="#FCE8B8"/>' +
+    '<circle cx="41" cy="55" r="5" fill="#2B2B2B"/><circle cx="59" cy="55" r="5" fill="#2B2B2B"/>' +
+    '<path d="M46 66 L54 66 L50 71 Z" fill="#2B2B2B"/>' },
+  elephant: { label: "Fil", bg: "#B7C4CE", inner:
+    '<ellipse cx="14" cy="48" rx="14" ry="20" fill="#A3B4C0"/><ellipse cx="86" cy="48" rx="14" ry="20" fill="#A3B4C0"/>' +
+    '<ellipse cx="50" cy="48" rx="34" ry="30" fill="#B7C4CE"/>' +
+    '<circle cx="40" cy="45" r="4" fill="#2B2B2B"/><circle cx="60" cy="45" r="4" fill="#2B2B2B"/>' +
+    '<path d="M46 60 Q46 78 38 82" fill="none" stroke="#A3B4C0" stroke-width="9" stroke-linecap="round"/>' },
+  dog: { label: "Kuchukcha", bg: "#C9A27E", inner:
+    '<path d="M18 25 Q8 55 26 62 Q34 40 30 22 Z" fill="#A87C55"/><path d="M82 25 Q92 55 74 62 Q66 40 70 22 Z" fill="#A87C55"/>' +
+    '<ellipse cx="50" cy="60" rx="26" ry="22" fill="#C9A27E"/>' +
+    '<ellipse cx="50" cy="68" rx="14" ry="10" fill="#F4E3D0"/>' +
+    '<circle cx="40" cy="54" r="5" fill="#2B2B2B"/><circle cx="60" cy="54" r="5" fill="#2B2B2B"/>' +
+    '<ellipse cx="50" cy="65" rx="5" ry="4" fill="#2B2B2B"/>' },
+};
+const AVATAR_ORDER = ["fox", "bear", "penguin", "rabbit", "cat", "owl", "panda", "lion", "elephant", "dog"];
+
+function avatarMarkup(avatarId, size) {
+  const a = AVATARS[avatarId] || AVATARS.fox;
+  return '<svg width="' + size + '" height="' + size + '" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="' + a.bg + '"/>' + a.inner + '</svg>';
+}
+
 function icon(name, size, strokeWidth) {
   size = size || 20;
   strokeWidth = strokeWidth || 1.8;
@@ -149,6 +216,7 @@ async function boot() {
     if (!me.role) { showScreen("screen-role"); return; }
     State.role = me.role;
     if (me.role === "child" && !me.linked_to_parent) { showScreen("screen-linkcode"); return; }
+    if (me.role === "child" && me.needs_profile) { showScreen("screen-child-profile"); initAvatarGrid(); return; }
     enterApp();
   } catch (e) { showScreen("screen-closed"); }
 }
@@ -171,7 +239,37 @@ document.getElementById("link-code-submit").addEventListener("click", async func
   err.textContent = "";
   try {
     await api("/api/link_parent", { method: "POST", body: { code: input.value.trim() } });
-    toast("Ota-onangiz bilan bog‘landingiz");
+    showScreen("screen-child-profile");
+    initAvatarGrid();
+  } catch (e) { err.textContent = e.error || "Xatolik"; }
+});
+
+// ---------------- Bola profili: avatar + ism + yosh ----------------
+let selectedProfileAvatar = "fox";
+function initAvatarGrid() {
+  selectedProfileAvatar = "fox";
+  const grid = document.getElementById("avatar-grid");
+  grid.innerHTML = AVATAR_ORDER.map(function (id) {
+    const a = AVATARS[id];
+    return '<button class="avatar-option' + (id === selectedProfileAvatar ? " selected" : "") + '" data-avatar="' + id + '">' +
+      '<span class="avatar-circle">' + avatarMarkup(id, 54) + '</span><span>' + a.label + '</span></button>';
+  }).join("");
+  grid.querySelectorAll(".avatar-option").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      selectedProfileAvatar = btn.dataset.avatar;
+      grid.querySelectorAll(".avatar-option").forEach(function (b) { b.classList.toggle("selected", b === btn); });
+      haptic();
+    });
+  });
+}
+document.getElementById("profile-submit").addEventListener("click", async function () {
+  const name = document.getElementById("profile-name-input").value.trim();
+  const age = document.getElementById("profile-age-input").value;
+  const err = document.getElementById("profile-error");
+  err.textContent = "";
+  try {
+    await api("/api/child/profile", { method: "POST", body: { name: name, age: age, avatar_id: selectedProfileAvatar } });
+    toast("Xush kelibsiz, " + name + "!");
     enterApp();
   } catch (e) { err.textContent = e.error || "Xatolik"; }
 });
@@ -195,23 +293,27 @@ async function enterApp() {
 async function refreshHeader() {
   const me = await api("/api/me");
   State.me = me;
-  document.getElementById("header-avatar").textContent = (me.name || "?").charAt(0).toUpperCase();
+  const avatarEl = document.getElementById("header-avatar");
   document.getElementById("header-name").textContent = me.name || "Foydalanuvchi";
   document.getElementById("header-role").textContent = me.role === "parent" ? "Ota-ona kabineti" : "O‘quvchi";
 
   const statsBox = document.getElementById("header-stats");
   if (isChildView()) {
-    let coins = me.coins || 0, streak = me.streak || 0;
+    let coins = me.coins || 0, streak = me.streak || 0, avatarId = me.avatar_id || "fox";
     if (State.activeChildId) {
       try {
         const childData = await api("/api/child/home?as_child=" + State.activeChildId);
         coins = childData.coins; streak = childData.streak;
+        const child = State.childrenCache.filter(function (c) { return c.id === State.activeChildId; })[0];
+        if (child) avatarId = child.avatar_id;
       } catch (e) {}
     }
+    avatarEl.innerHTML = avatarMarkup(avatarId, 40);
     statsBox.innerHTML =
       '<div class="pill pill-gold">' + icon("coin", 13, 2.2) + ' ' + coins + '</div>' +
       '<div class="pill pill-flame">' + icon("flame", 13, 2.2) + ' ' + streak + '</div>';
   } else {
+    avatarEl.textContent = (me.name || "?").charAt(0).toUpperCase();
     statsBox.innerHTML = "";
   }
 }
@@ -376,10 +478,12 @@ async function renderParentHome() {
   const data = await api("/api/parent/home/" + childId);
 
   let chips = State.childrenCache.map(function (c) {
-    return '<button class="chip ' + (c.id === childId ? "active" : "") + '" data-action="select-child" data-id="' + c.id + '">' + escapeHtml(c.name) + '</button>';
+    return '<button class="child-chip ' + (c.id === childId ? "active" : "") + '" data-action="select-child" data-id="' + c.id + '">' +
+      '<span class="avatar-circle">' + avatarMarkup(c.avatar_id || "fox", 48) + '</span>' +
+      '<span>' + escapeHtml(c.name) + '</span></button>';
   }).join("");
 
-  let html = '<div class="chip-row">' + chips + '</div>';
+  let html = '<div class="child-chip-row">' + chips + '</div>';
 
   html += '<div class="hero-card" data-action="open-add-plan">' +
     KID_READING_ILLUSTRATION +
@@ -492,7 +596,7 @@ async function renderBolaxonaTab() {
   main.innerHTML = '<p class="section-sub">Farzandingiz ekraniga kirib, kitob o‘qish, testlar va do‘kondan foydalanishni ular nomidan bajarishingiz mumkin.</p>' +
     State.childrenCache.map(function (c) {
       return '<div class="card" style="display:flex;align-items:center;justify-content:space-between;gap:10px">' +
-        '<div style="display:flex;align-items:center;gap:10px"><div class="avatar" style="border-radius:12px">' + (c.name || "?").charAt(0).toUpperCase() + '</div>' +
+        '<div style="display:flex;align-items:center;gap:10px"><span class="avatar-circle" style="width:44px;height:44px;display:block;box-shadow:none;border-radius:50%;overflow:hidden">' + avatarMarkup(c.avatar_id || "fox", 44) + '</span>' +
         '<div><p style="margin:0;font-weight:700;font-size:14px">' + escapeHtml(c.name) + '</p><p style="margin:0;font-size:12px;color:var(--text-faint)">Yoshi: ' + c.age + '</p></div></div>' +
         '<button class="btn btn-primary" style="padding:9px 16px;font-size:13px" data-action="enter-bolaxona" data-id="' + c.id + '" data-name="' + escapeHtml(c.name) + '">Kirish</button>' +
         '</div>';
