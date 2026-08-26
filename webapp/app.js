@@ -45,7 +45,23 @@ const ICON_PATHS = {
   image: '<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>',
   lock: '<rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
   user: '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+  shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+  star: '<polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"/>',
 };
+
+// Minimalistik kontur chizma — kitob o‘qib o‘tirgan bola (hero kartochka bezagi uchun)
+const KID_READING_ILLUSTRATION =
+  '<svg class="hero-illustration" width="84" height="84" viewBox="0 0 100 100" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' +
+  '<circle cx="50" cy="20" r="9"/>' +
+  '<path d="M42 15 Q50 6 58 15"/>' +
+  '<path d="M39 33 L36 57 Q50 63 64 57 L61 33"/>' +
+  '<path d="M39 40 Q33 49 40 55"/>' +
+  '<path d="M61 40 Q67 49 60 55"/>' +
+  '<path d="M36 57 Q50 72 64 57"/>' +
+  '<path d="M38 54 L50 50 L62 54 L50 58 Z"/>' +
+  '<line x1="50" y1="50" x2="50" y2="58"/>' +
+  '</svg>';
+
 function icon(name, size, strokeWidth) {
   size = size || 20;
   strokeWidth = strokeWidth || 1.8;
@@ -118,12 +134,8 @@ function closeModal() {
 document.getElementById("modal-close").onclick = closeModal;
 document.getElementById("modal-overlay").addEventListener("click", function (e) { if (e.target.id === "modal-overlay") closeModal(); });
 document.getElementById("header-help-btn").addEventListener("click", openContactModal);
-document.getElementById("header-bolaxona-btn").addEventListener("click", function () {
-  if (!State.selectedChildId) { toast("Avval farzand tanlang"); return; }
-  const child = State.childrenCache.filter(function (c) { return c.id === State.selectedChildId; })[0];
-  State.activeChildId = State.selectedChildId;
-  State.activeChildName = child ? child.name : "";
-  setupTabsForRole();
+document.getElementById("header-rating-btn").addEventListener("click", function () {
+  openRatingFromHeader();
 });
 
 // ==========================================================
@@ -186,11 +198,31 @@ async function refreshHeader() {
   document.getElementById("header-avatar").textContent = (me.name || "?").charAt(0).toUpperCase();
   document.getElementById("header-name").textContent = me.name || "Foydalanuvchi";
   document.getElementById("header-role").textContent = me.role === "parent" ? "Ota-ona kabineti" : "O‘quvchi";
-  document.getElementById("header-coins").innerHTML = icon("coin", 13, 2.2) + " " + (me.coins || 0);
-  document.getElementById("header-streak").innerHTML = icon("flame", 13, 2.2) + " " + (me.streak || 0);
+
+  const statsBox = document.getElementById("header-stats");
+  if (isChildView()) {
+    let coins = me.coins || 0, streak = me.streak || 0;
+    if (State.activeChildId) {
+      try {
+        const childData = await api("/api/child/home?as_child=" + State.activeChildId);
+        coins = childData.coins; streak = childData.streak;
+      } catch (e) {}
+    }
+    statsBox.innerHTML =
+      '<div class="pill pill-gold">' + icon("coin", 13, 2.2) + ' ' + coins + '</div>' +
+      '<div class="pill pill-flame">' + icon("flame", 13, 2.2) + ' ' + streak + '</div>';
+  } else {
+    statsBox.innerHTML = "";
+  }
 }
 
-const TABS = [
+const TABS_PARENT = [
+  { id: "home", label: "Bosh sahifa", icon: "home" },
+  { id: "plans", label: "Rejalar", icon: "book-open" },
+  { id: "store", label: "Do‘kon", icon: "cart" },
+  { id: "bolaxona", label: "Bolaxona", icon: "users" },
+];
+const TABS_CHILD = [
   { id: "home", label: "Bosh sahifa", icon: "home" },
   { id: "plans", label: "Rejalar", icon: "book-open" },
   { id: "store", label: "Do‘kon", icon: "cart" },
@@ -199,22 +231,32 @@ const TABS = [
 
 function setupTabsForRole() {
   const nav = document.getElementById("app-tabs");
-  nav.innerHTML = TABS.map(function (t) {
+  const tabs = isChildView() ? TABS_CHILD : TABS_PARENT;
+  nav.innerHTML = tabs.map(function (t) {
     return '<button class="tab-btn" data-action="open-tab" data-tab="' + t.id + '">' + icon(t.icon, 21, 1.7) + '<span>' + t.label + '</span></button>';
   }).join("");
   switchTab("home");
+  refreshHeader();
 
   const banner = document.getElementById("bolaxona-banner");
-  const bolaxonaBtn = document.getElementById("header-bolaxona-btn");
+  const ratingBtn = document.getElementById("header-rating-btn");
   if (State.activeChildId) {
     banner.classList.remove("hidden");
     document.getElementById("bolaxona-child-name").textContent = State.activeChildName || "";
-    bolaxonaBtn.classList.add("hidden");
+    ratingBtn.classList.add("hidden");
   } else {
     banner.classList.add("hidden");
-    if (State.role === "parent") bolaxonaBtn.classList.remove("hidden");
-    else bolaxonaBtn.classList.add("hidden");
+    if (State.role === "parent") ratingBtn.classList.remove("hidden");
+    else ratingBtn.classList.add("hidden");
   }
+}
+
+function openRatingFromHeader() {
+  document.querySelectorAll(".tab-btn").forEach(function (b) { b.classList.remove("active"); });
+  State.currentTab = "rating";
+  const main = document.getElementById("app-main");
+  main.innerHTML = '<div class="empty-state"><div class="spinner"></div>Yuklanmoqda…</div>';
+  renderRatingTab().catch(function (e) { main.innerHTML = '<div class="empty-state">' + escapeHtml(e.error || "Xatolik yuz berdi") + '</div>'; });
 }
 
 function isChildView() { return State.role === "child" || !!State.activeChildId; }
@@ -228,7 +270,7 @@ function switchTab(tabId) {
   document.querySelectorAll(".tab-btn").forEach(function (b) { b.classList.toggle("active", b.dataset.tab === tabId); });
   const renderers = isChildView()
     ? { home: renderChildHome, plans: renderChildPlans, store: renderStoreTab, rating: renderRatingTab }
-    : { home: renderParentHome, plans: renderParentPlans, store: renderStoreTab, rating: renderRatingTab };
+    : { home: renderParentHome, plans: renderParentPlans, store: renderStoreTab, bolaxona: renderBolaxonaTab };
   const fn = renderers[tabId];
   const main = document.getElementById("app-main");
   main.innerHTML = '<div class="empty-state"><div class="spinner"></div>Yuklanmoqda…</div>';
@@ -340,6 +382,7 @@ async function renderParentHome() {
   let html = '<div class="chip-row">' + chips + '</div>';
 
   html += '<div class="hero-card" data-action="open-add-plan">' +
+    KID_READING_ILLUSTRATION +
     '<div class="icon-circle">' + icon("plus-circle", 22, 1.8) + '</div>' +
     '<p class="hc-title">Kitob qo‘shish</p>' +
     '<div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;">Tezkor yoki marafon rejasi yaratish ' + icon("arrow-right", 15, 2) + '</div>' +
@@ -349,11 +392,6 @@ async function renderParentHome() {
     '<div class="stat-box"><div class="num">' + data.streak + '</div><div class="lbl">Ketma-ket kun</div></div>' +
     '<div class="stat-box"><div class="num">' + data.coins + '</div><div class="lbl">Bilig</div></div>' +
     '<div class="stat-box" style="font-size:11px"><div class="num" style="font-size:13px">' + escapeHtml(data.rank) + '</div><div class="lbl">Daraja</div></div>' +
-    '</div>';
-
-  html += '<div class="stat-grid" style="grid-template-columns:repeat(2,minmax(0,1fr))">' +
-    '<div class="stat-box"><div class="num">' + data.total_pages + '</div><div class="lbl">Jami o‘qilgan bet</div></div>' +
-    '<div class="stat-box"><div class="num">' + data.completed_books + '</div><div class="lbl">Tugallangan kitob</div></div>' +
     '</div>';
 
   html += '<p class="eyebrow">O‘qiyotgan kitoblari</p>';
@@ -440,6 +478,25 @@ async function renderChildHome() {
 
 function emptyState(iconName, title, sub) {
   return '<div class="empty-state"><div class="em-icon">' + icon(iconName, 38, 1.4) + '</div><p style="font-weight:700;color:var(--text);margin:0 0 4px">' + title + '</p><p style="margin:0">' + (sub || "") + '</p></div>';
+}
+
+// ==========================================================
+// TAB: BOLAXONA (faqat ota-ona) — farzandni tanlab, uning ekraniga kirish
+// ==========================================================
+async function renderBolaxonaTab() {
+  const main = document.getElementById("app-main");
+  if (!State.childrenCache.length) {
+    main.innerHTML = emptyState("users", "Hali farzand ulanmagan", "Ota-ona kodi: <b>" + (State.me.parent_code || "") + "</b> — shu kodni farzandingizga yuboring.");
+    return;
+  }
+  main.innerHTML = '<p class="section-sub">Farzandingiz ekraniga kirib, kitob o‘qish, testlar va do‘kondan foydalanishni ular nomidan bajarishingiz mumkin.</p>' +
+    State.childrenCache.map(function (c) {
+      return '<div class="card" style="display:flex;align-items:center;justify-content:space-between;gap:10px">' +
+        '<div style="display:flex;align-items:center;gap:10px"><div class="avatar" style="border-radius:12px">' + (c.name || "?").charAt(0).toUpperCase() + '</div>' +
+        '<div><p style="margin:0;font-weight:700;font-size:14px">' + escapeHtml(c.name) + '</p><p style="margin:0;font-size:12px;color:var(--text-faint)">Yoshi: ' + c.age + '</p></div></div>' +
+        '<button class="btn btn-primary" style="padding:9px 16px;font-size:13px" data-action="enter-bolaxona" data-id="' + c.id + '" data-name="' + escapeHtml(c.name) + '">Kirish</button>' +
+        '</div>';
+    }).join("");
 }
 
 // ==========================================================
@@ -752,13 +809,15 @@ async function renderStoreTab() {
     if (!data.items.length) {
       html += emptyState("gift", "Hali sovg‘a yo‘q", "Ota-onangiz tez orada do‘konga mahsulot qo‘shadi.");
     } else {
-      html += '<div class="store-grid">' + data.items.map(function (i) {
+      html += '<div class="store-grid">' + data.items.map(function (i, idx) {
         return '<div class="store-item">' +
-          '<div class="store-icon">' + icon("gift", 22, 1.6) + '</div>' +
+          '<div class="store-media tint-' + (idx % 4) + '"><div class="store-icon-lg">' + icon("gift", 22, 1.6) + '</div></div>' +
+          '<div class="store-body">' +
           '<p class="store-name">' + escapeHtml(i.name) + '</p>' +
-          '<p class="store-price">' + icon("coin", 13, 2.2) + ' ' + i.price + '</p>' +
+          '<div class="store-footer" style="margin-bottom:10px"><span class="store-price-chip">' + icon("coin", 12, 2.2) + ' ' + i.price + '</span></div>' +
           '<button class="btn ' + (i.affordable ? "btn-primary" : "btn-secondary") + ' btn-block" style="padding:8px;font-size:12.5px" data-action="buy-item" data-id="' + i.id + '" ' + (i.affordable ? "" : "disabled") + '>' +
-          (i.affordable ? "Xarid qilish" : "Yetarli emas") + '</button></div>';
+          (i.affordable ? "Xarid qilish" : "Yetarli emas") + '</button>' +
+          '</div></div>';
       }).join("") + '</div>';
     }
     main.innerHTML = html;
@@ -770,12 +829,17 @@ async function renderStoreTab() {
     if (!items.length) {
       html += emptyState("gift", "Hali mahsulot yo‘q", "Yuqoridagi tugma orqali birinchi sovg‘ani qo‘shing.");
     } else {
-      html += '<div class="store-grid">' + items.map(function (i) {
-        return '<div class="store-item" data-action="open-store-edit" data-id="' + i.id + '" data-name="' + escapeHtml(i.name) + '" data-price="' + i.price + '" style="cursor:pointer">' +
-          '<div class="store-icon">' + icon("gift", 22, 1.6) + '</div>' +
+      html += '<div class="store-grid">' + items.map(function (i, idx) {
+        return '<div class="store-item">' +
+          '<div class="store-media tint-' + (idx % 4) + '">' +
+          '<div class="store-icon-lg">' + icon("gift", 22, 1.6) + '</div>' +
+          '<button class="store-edit-fab" data-action="open-store-edit" data-id="' + i.id + '" data-name="' + escapeHtml(i.name) + '" data-price="' + i.price + '" aria-label="Tahrirlash">' + icon("edit", 13, 2) + '</button>' +
+          '</div>' +
+          '<div class="store-body">' +
           '<p class="store-name">' + escapeHtml(i.name) + '</p>' +
-          '<p class="store-price">' + icon("coin", 13, 2.2) + ' ' + i.price + '</p>' +
-          '<span class="badge">' + icon("edit", 12, 2) + ' Tahrirlash</span></div>';
+          '<div class="store-footer"><span class="store-price-chip">' + icon("coin", 12, 2.2) + ' ' + i.price + '</span>' +
+          '<button class="btn btn-outline" style="padding:6px 10px;font-size:12px" data-action="open-store-edit" data-id="' + i.id + '" data-name="' + escapeHtml(i.name) + '" data-price="' + i.price + '">Tahrirlash</button></div>' +
+          '</div></div>';
       }).join("") + '</div>';
     }
     main.innerHTML = html;
@@ -859,8 +923,18 @@ async function renderRatingTab() {
       diagRow("Nutq ravonligi", p.fluency_bar) +
       '</div>' +
       '<p class="eyebrow">Nishonlar kolleksiyasi</p>' +
-      '<div class="card">' + escapeHtml(p.badges || "Hali nishonlar yo‘q") + '</div>';
+      badgeGridHtml(p.badges);
   }
+}
+function badgeGridHtml(badgesStr) {
+  const names = (badgesStr || "").split(",").map(function (s) { return s.trim(); }).filter(function (s) { return s && !/yo.q/i.test(s); });
+  if (!names.length) {
+    return '<div class="card"><p class="section-sub" style="margin:0">Hali nishonlar yo‘q — o‘qishda davom eting.</p></div>';
+  }
+  const shapes = ["award", "star", "shield", "gift"];
+  return '<div class="badge-grid">' + names.map(function (n, i) {
+    return '<div class="badge-tile"><div class="badge-icon tint-' + (i % 4) + '">' + icon(shapes[i % shapes.length], 24, 1.6) + '</div><p>' + escapeHtml(n) + '</p></div>';
+  }).join("") + '</div>';
 }
 function diagRow(label, bar) {
   return '<div class="diag-row"><div class="diag-label"><span>' + label + '</span><span>' + bar + '</span></div></div>';
