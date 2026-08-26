@@ -36,6 +36,26 @@ from database import (
 import ai_service
 
 # ------------------------------------------------------------
+# Kichik ma'lumotlar bazasi yangilanishi (migratsiya):
+# Users jadvaliga bola avatarini va "profil to‘ldirilganmi" belgisini
+# saqlash uchun 2 ta yangi ustun qo‘shamiz. database.py faylini
+# qayta yozmaslik uchun shu yerda, xavfsiz tarzda (agar ustun
+# allaqachon mavjud bo‘lsa xatoni e'tiborsiz qoldirib) qo‘shiladi.
+# ------------------------------------------------------------
+for _col_sql in (
+    "ALTER TABLE Users ADD COLUMN avatar_id TEXT DEFAULT 'fox'",
+    "ALTER TABLE Users ADD COLUMN profile_done INTEGER DEFAULT 0",
+):
+    try:
+        cursor.execute(_col_sql)
+        conn.commit()
+    except Exception:
+        pass
+
+# 10 ta bolalar avatari — cho‘chqa ISTISNO qilingan
+AVATAR_IDS = ["fox", "bear", "penguin", "rabbit", "cat", "owl", "panda", "lion", "elephant", "dog"]
+
+# ------------------------------------------------------------
 # Flask ilovasi. Mini App fayllari (index.html, app.js, style.css)
 # shu webapp_api.py bilan BIR XIL papkada turgan "webapp" papkasidan
 # xizmat qiladi (masalan: /project/webapp_api.py va /project/webapp/index.html).
@@ -198,7 +218,8 @@ def get_latest_report(child_id: int):
 def api_me():
     uid = g.user_id
     cursor.execute(
-        "SELECT role, name, is_approved, balance_coins, streak_days, rank_title FROM Users WHERE user_id = ?",
+        "SELECT role, name, is_approved, balance_coins, streak_days, rank_title, avatar_id, profile_done "
+        "FROM Users WHERE user_id = ?",
         (uid,)
     )
     row = cursor.fetchone()
@@ -207,7 +228,7 @@ def api_me():
         # Bazada umuman yo‘q — link orqali kirmagan, yopiq beta
         return jsonify({"exists": False, "approved": False})
 
-    role, name, approved, coins, streak, rank = row
+    role, name, approved, coins, streak, rank, avatar_id, profile_done = row
     result = {
         "exists": True,
         "approved": bool(approved),
@@ -216,6 +237,7 @@ def api_me():
         "coins": coins,
         "streak": streak,
         "rank": rank,
+        "avatar_id": avatar_id or "fox",
     }
 
     if role == "parent":
@@ -223,6 +245,7 @@ def api_me():
     elif role == "child":
         parent_id = get_parent_id(uid)
         result["linked_to_parent"] = bool(parent_id)
+        result["needs_profile"] = bool(parent_id) and not bool(profile_done)
 
     if uid == OWNER_ID:
         result["is_admin"] = True
@@ -291,6 +314,41 @@ def api_link_parent():
     return jsonify({"ok": True})
 
 
+@app.route("/api/child/profile", methods=["POST"])
+@require_auth
+def api_child_profile():
+    """Bola (yoki ota-ona) ro‘yxatdan o‘tishda: avatar, ism va yoshni saqlaydi."""
+    data = request.get_json(force=True) or {}
+    name = (data.get("name") or "").strip()
+    age = data.get("age")
+    avatar_id = data.get("avatar_id") or "fox"
+    if avatar_id not in AVATAR_IDS:
+        avatar_id = "fox"
+    if not name:
+        return jsonify({"error": "Ism kiritilishi shart"}), 400
+    try:
+        age = int(age)
+    except (TypeError, ValueError):
+        age = None
+    if not age or age < 3 or age > 17:
+        return jsonify({"error": "Yoshni to‘g‘ri kiriting (3-17)"}), 400
+
+    uid = g.user_id
+    with db_lock:
+        cursor.execute(
+            "UPDATE Users SET name = ?, avatar_id = ?, profile_done = 1 WHERE user_id = ?",
+            (name, avatar_id, uid)
+        )
+        parent_id = get_parent_id(uid)
+        if parent_id:
+            cursor.execute(
+                "UPDATE Family_Link SET child_age = ? WHERE parent_id = ? AND child_id = ?",
+                (age, parent_id, uid)
+            )
+        conn.commit()
+    return jsonify({"ok": True})
+
+
 # ==========================================================
 # 3) OTA-ONA BO‘LIMI
 # ==========================================================
@@ -351,12 +409,12 @@ def parent_home(child_id):
 @require_auth
 def parent_children():
     cursor.execute(
-        "SELECT fl.child_id, u.name, fl.child_age FROM Family_Link fl "
+        "SELECT fl.child_id, u.name, fl.child_age, u.avatar_id FROM Family_Link fl "
         "JOIN Users u ON fl.child_id = u.user_id WHERE fl.parent_id = ?",
         (g.user_id,)
     )
     rows = cursor.fetchall()
-    return jsonify([{"id": r[0], "name": r[1], "age": r[2] or 10} for r in rows])
+    return jsonify([{"id": r[0], "name": r[1], "age": r[2] or 10, "avatar_id": r[3] or "fox"} for r in rows])
 
 
 @app.route("/api/parent/children/<int:child_id>/age", methods=["POST"])
@@ -369,6 +427,30 @@ def parent_set_child_age(child_id):
             "UPDATE Family_Link SET child_age = ? WHERE child_id = ? AND parent_id = ?",
             (age, child_id, g.user_id)
         )
+        conn.commit()
+    return jsonify({"ok": True})
+
+
+@app.route("/api/parent/children/<int:child_id>/profile", methods=["POST"])
+@require_auth
+def parent_edit_child_profile(child_id):
+    """Ota-ona farzandning ismi, yoshi va avatarini o‘zi tahrirlashi (Bolaxona bo‘limidan)."""
+    data = request.get_json(force=True) or {}
+    name = (data.get("name") or "").strip()
+    age = data.get("age")
+    avatar_id = data.get("avatar_id")
+    if avatar_id and avatar_id not in AVATAR_IDS:
+        avatar_id = None
+    with db_lock:
+        if name:
+            cursor.execute("UPDATE Users SET name = ? WHERE user_id = ?", (name, child_id))
+        if avatar_id:
+            cursor.execute("UPDATE Users SET avatar_id = ?, profile_done = 1 WHERE user_id = ?", (avatar_id, child_id))
+        if age:
+            cursor.execute(
+                "UPDATE Family_Link SET child_age = ? WHERE child_id = ? AND parent_id = ?",
+                (int(age), child_id, g.user_id)
+            )
         conn.commit()
     return jsonify({"ok": True})
 
