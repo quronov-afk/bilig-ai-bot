@@ -1,0 +1,15 @@
+# macOS keraksiz fayllari
+.DS_Store
+
+# Mahalliy ma'lumotlar bazasi (serverda alohida turadi)
+bot_base.db
+*.db-journal
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Muhit sozlamalari (maxfiy kalitlar)
+.env
