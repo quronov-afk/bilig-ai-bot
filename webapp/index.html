@@ -7,7 +7,7 @@
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -39,6 +39,23 @@
     <input id="link-code-input" class="text-input center" placeholder="BLG-0000" maxlength="9" autocapitalize="characters" />
     <button id="link-code-submit" class="btn btn-primary big">Ulanish</button>
     <p id="link-code-error" class="error-text"></p>
+  </div>
+
+  <!-- Bola profili: avatar + ism + yosh -->
+  <div id="screen-child-profile" class="screen profile-screen hidden">
+    <div style="padding:36px 24px 24px;text-align:center">
+      <h1 class="hero-title">O‘zingizni tanishtiring</h1>
+      <p class="hero-sub" style="margin:0 auto">Yoqimtoy hayvonchalardan birini tanlang</p>
+    </div>
+    <div id="avatar-grid" class="avatar-grid"></div>
+    <div style="padding:8px 24px 32px">
+      <label class="field-label">Ismingiz</label>
+      <input id="profile-name-input" class="text-input" placeholder="Masalan: Ibrohim" style="max-width:none" />
+      <label class="field-label">Yoshingiz</label>
+      <input id="profile-age-input" type="number" class="text-input" placeholder="Masalan: 9" style="max-width:none" />
+      <button id="profile-submit" class="btn btn-primary big" style="max-width:none;margin-top:6px">Davom etish</button>
+      <p id="profile-error" class="error-text"></p>
+    </div>
   </div>
 
   <!-- Yopiq beta -->
