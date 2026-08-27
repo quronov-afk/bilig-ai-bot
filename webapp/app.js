@@ -72,6 +72,14 @@ const ICON_PATHS = {
   gift: [
     '<path d="M3.6 10.6h16.8v9a2 2 0 0 1-2 2H5.6a2 2 0 0 1-2-2z"/>',
     '<path d="M3.6 10.6h16.8v9a2 2 0 0 1-2 2H5.6a2 2 0 0 1-2-2z"/><rect x="2.6" y="6.6" width="18.8" height="4" rx="1.4"/><path d="M12 6.6v15"/><path d="M12 6.6S11 2.4 8.4 2.4a2.1 2.1 0 0 0 0 4.2z"/><path d="M12 6.6s1-4.2 3.6-4.2a2.1 2.1 0 0 1 0 4.2z"/>'],
+  // Kubok — reyting
+  "trophy": [
+    '<path d="M7 4h10v5a5 5 0 0 1-10 0z"/>',
+    '<path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4.6v1.4A3.4 3.4 0 0 0 8 10.8"/><path d="M17 6h2.4v1.4A3.4 3.4 0 0 1 16 10.8"/><path d="M12 14v3.4"/><path d="M8.4 20.5h7.2"/><path d="M9.8 20.5c.2-1.9.9-3.1 2.2-3.1s2 1.2 2.2 3.1"/>'],
+  // Ustunli diagramma — shaxsiy natija
+  "chart": [
+    '<rect x="4" y="12.5" width="3.6" height="7.2" rx="1.3"/><rect x="10.2" y="8" width="3.6" height="11.7" rx="1.3"/><rect x="16.4" y="4.6" width="3.6" height="15.1" rx="1.3"/>',
+    '<rect x="4" y="12.5" width="3.6" height="7.2" rx="1.3"/><rect x="10.2" y="8" width="3.6" height="11.7" rx="1.3"/><rect x="16.4" y="4.6" width="3.6" height="15.1" rx="1.3"/>'],
   // Qidiruv
   "search": [
     '<circle cx="10.8" cy="10.8" r="7"/>',
@@ -368,9 +376,6 @@ function closeModal() {
 document.getElementById("modal-close").onclick = closeModal;
 document.getElementById("modal-overlay").addEventListener("click", function (e) { if (e.target.id === "modal-overlay") closeModal(); });
 document.getElementById("header-help-btn").addEventListener("click", openContactModal);
-document.getElementById("header-rating-btn").addEventListener("click", function () {
-  openRatingFromHeader();
-});
 
 // ==========================================================
 // BOSHLANG‘ICH YUKLASH
@@ -526,18 +531,34 @@ async function setupTabsForRole() {
   switchTab("home");
 
   const banner = document.getElementById("bolaxona-banner");
-  const ratingBtn = document.getElementById("header-rating-btn");
+  renderHeaderNav();
   if (State.activeChildId) {
     banner.classList.remove("hidden");
     document.getElementById("bolaxona-child-name").textContent = State.activeChildName || "";
     const exitBtn = document.getElementById("bolaxona-exit");
     if (exitBtn) exitBtn.classList.remove("hidden");
-    ratingBtn.classList.remove("hidden");
   } else {
     banner.classList.add("hidden");
-    if (State.role === "parent") ratingBtn.classList.remove("hidden");
-    else ratingBtn.classList.add("hidden");
   }
+}
+
+// Sarlavhadagi uchta tugma: reyting, shaxsiy natija va nishonlar.
+// Har biri bir bosishda kerakli bo‘limni ochadi.
+const HEADER_NAV = [
+  { mode: "global", icon: "trophy", label: "Reyting" },
+  { mode: "passport", icon: "chart", label: "Natija" },
+  { mode: "badges", icon: "award", label: "Nishonlar" },
+];
+
+function renderHeaderNav() {
+  const box = document.getElementById("header-nav");
+  if (!box) return;
+  // Bola rejimida ham, ota-ona kabinetida ham kerak
+  box.innerHTML = HEADER_NAV.map(function (n) {
+    const on = State.currentTab === "rating" && State.ratingMode === n.mode;
+    return '<button class="icon-btn' + (on ? " is-on" : "") + '" data-action="open-rating" data-mode="' + n.mode + '" aria-label="' + n.label + '" title="' + n.label + '">' +
+      icon(n.icon, 18, 1.8) + '</button>';
+  }).join("");
 }
 
 function openRatingFromHeader() {
@@ -663,7 +684,6 @@ document.addEventListener("click", async function (e) {
 
       case "buy-item": await buyItem(Number(el.dataset.id)); break;
 
-      case "set-rating-mode": State.ratingMode = el.dataset.mode; renderRatingTab(); break;
       case "go-plans-tab": switchTab("plans"); break;
       case "go-book": await goToBook(Number(el.dataset.id)); break;
       case "set-active-child":
@@ -679,7 +699,20 @@ document.addEventListener("click", async function (e) {
         });
         break;
       case "copy-code": await copyCode(el.dataset.code); break;
-      case "open-badges": openRatingFromHeader(); break;
+      case "open-badges":
+        State.ratingMode = "badges";     // to‘g‘ridan-to‘g‘ri nishonlar sahifasi
+        openRatingFromHeader();
+        break;
+      case "open-rating":
+        State.ratingMode = el.dataset.mode;
+        openRatingFromHeader();
+        break;
+      case "switch-child":
+        State.selectedChildId = Number(el.dataset.id);
+        await refreshHeader();
+        if (State.currentTab === "rating") { renderRatingTab(); }
+        else { switchTab(State.currentTab || "home"); }
+        break;
       case "demo-fill": await demoFill(Number(el.dataset.id), el.dataset.name); break;
       case "demo-clear": await demoClear(Number(el.dataset.id), el.dataset.name); break;
     }
@@ -1137,7 +1170,8 @@ async function renderParentPlans() {
   const q = State.selectedChildId ? "?child_id=" + State.selectedChildId : "";
   const plans = await api("/api/parent/plans" + q);
   const main = document.getElementById("app-main");
-  let html = '<button class="btn btn-primary btn-block" data-action="open-add-plan" style="display:flex;align-items:center;justify-content:center;gap:6px">' + icon("plus", 17, 2) + ' Yangi kitob qo‘shish</button>';
+  let html = childSwitcherHtml() +
+    '<button class="btn btn-primary btn-block" data-action="open-add-plan" style="display:flex;align-items:center;justify-content:center;gap:6px">' + icon("plus", 17, 2) + ' Yangi kitob qo‘shish</button>';
 
   // Bir martalik kitoblar va marafonlar aralashib ketmasligi kerak —
   // ular butunlay boshqa narsa: biri bitta kitob, ikkinchisi uzoq musobaqa.
@@ -1586,45 +1620,68 @@ async function buyItem(itemId) {
 // ==========================================================
 // TAB 4: REYTING VA DIAGNOSTIKA
 // ==========================================================
+// Farzandni sahifadan chiqmasdan almashtirish. Ota-onada bir nechta
+// farzand bo‘lsa, har bir bo‘limda ismlar qatori turadi — bosh sahifaga
+// qaytib, keyin qayta kirish shart emas.
+function childSwitcherHtml() {
+  if (State.role !== "parent" || State.activeChildId) return "";
+  const kids = State.childrenCache || [];
+  if (kids.length < 2) return "";
+  return '<div class="kid-switch">' + kids.map(function (c) {
+    const on = c.id === State.selectedChildId;
+    return '<button class="ks-btn' + (on ? " is-on" : "") + '" data-action="switch-child" data-id="' + c.id + '">' +
+      '<span class="ks-av">' + avatarMarkup(c.avatar_id || "fox", 26) + '</span>' +
+      escapeHtml(c.name) + '</button>';
+  }).join("") + '</div>';
+}
+
 async function renderRatingTab() {
   const main = document.getElementById("app-main");
+  const titles = { global: "Global reyting", passport: "Shaxsiy natija", badges: "Nishonlar" };
+  const mode = State.ratingMode || "global";
   main.innerHTML =
-    '<div class="segmented">' +
-    '<button class="' + (State.ratingMode === "global" ? "active" : "") + '" data-action="set-rating-mode" data-mode="global">Global reyting</button>' +
-    '<button class="' + (State.ratingMode === "passport" ? "active" : "") + '" data-action="set-rating-mode" data-mode="passport">Shaxsiy natija</button>' +
-    '</div>' +
+    childSwitcherHtml() +
+    '<p class="sec-label">' + titles[mode] + '</p>' +
     '<div id="rating-content"><div class="empty-state"><div class="spinner"></div>Yuklanmoqda…</div></div>';
+  renderHeaderNav();
   const content = document.getElementById("rating-content");
-  if (State.ratingMode === "global") {
+
+  if (mode === "global") {
     const data = await api("/api/child/rating" + asChildQuery());
     const rows = data.list.map(function (r, i) {
       return '<div class="list-row ' + (r.is_me ? "me-row" : "") + '">' +
         '<div style="display:flex;align-items:center;gap:10px;min-width:0">' +
         '<div class="rank-chip ' + (i === 0 ? "top1" : "") + '">' + (i + 1) + '</div>' +
-        '<div style="min-width:0"><p style="margin:0;font-weight:700;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + escapeHtml(r.name) + (r.is_me ? " (Siz)" : "") + '</p><p style="margin:0;font-size:11.5px;color:var(--text-faint)">' + escapeHtml(r.rank) + '</p></div>' +
+        '<div style="min-width:0"><p style="margin:0;font-weight:700;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + escapeHtml(r.name) + (r.is_me ? " (Siz)" : "") + '</p><p style="margin:0;font-size:11.5px;color:var(--text-faint)">' + escapeHtml(stripEmoji(r.rank)) + '</p></div>' +
         '</div><div class="pill pill-leaf">' + r.xp + ' XP</div></div>';
     }).join("");
     content.innerHTML = '<p class="section-sub">' + (data.scope === "oila" ? "Oilangiz o‘quvchilari orasida" : "Barcha o‘quvchilar orasida TOP-10") + '</p>' +
       '<div class="card">' + (rows || emptyState("award", "Reyting hali bo‘sh", "")) + '</div>';
-  } else {
-    const p = await api("/api/child/passport" + asChildQuery());
-    content.innerHTML =
-      '<div class="stat-grid">' +
-      '<div class="stat-box"><div class="num">' + p.completed_books + '</div><div class="lbl">Tugallangan kitob</div></div>' +
-      '<div class="stat-box"><div class="num">' + p.total_pages + '</div><div class="lbl">Jami bet</div></div>' +
-      '<div class="stat-box"><div class="num">' + p.streak + '</div><div class="lbl">Ketma-ket kun</div></div>' +
-      '</div>' +
-      '<p class="eyebrow">Ko‘nikmalar diagnostikasi</p>' +
-      '<div class="card">' +
-      diagRow("Faktik xotira", p.factual_bar) +
-      diagRow("Sabab-oqibat mantiqi", p.logic_bar) +
-      diagRow("Asar xulosasi", p.conclusion_bar) +
-      diagRow("Nutq ravonligi", p.fluency_bar) +
-      '</div>' +
-      '<p class="eyebrow">Nishonlar kolleksiyasi</p>' +
-      badgeGridHtml(p.badges);
+    return;
   }
+
+  const p = await api("/api/child/passport" + asChildQuery());
+
+  if (mode === "badges") {
+    content.innerHTML = badgeGridHtml(p.badges);
+    return;
+  }
+
+  content.innerHTML =
+    '<div class="stat-grid">' +
+    '<div class="stat-box"><div class="num">' + p.completed_books + '</div><div class="lbl">Tugallangan kitob</div></div>' +
+    '<div class="stat-box"><div class="num">' + p.total_pages + '</div><div class="lbl">Jami bet</div></div>' +
+    '<div class="stat-box"><div class="num">' + p.streak + '</div><div class="lbl">Ketma-ket kun</div></div>' +
+    '</div>' +
+    '<p class="eyebrow">Ko‘nikmalar diagnostikasi</p>' +
+    '<div class="card">' +
+    diagRow("Faktik xotira", p.factual_bar) +
+    diagRow("Sabab-oqibat mantiqi", p.logic_bar) +
+    diagRow("Asar xulosasi", p.conclusion_bar) +
+    diagRow("Nutq ravonligi", p.fluency_bar) +
+    '</div>';
 }
+
 // Barcha nishonlar: [fayl nomi, nomi, berilish sharti].
 // Chizmalar webapp/badges/ papkasida, manbasi tools/badges/ da.
 const BADGE_LIST = [

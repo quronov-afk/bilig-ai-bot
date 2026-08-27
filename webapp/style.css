@@ -457,6 +457,28 @@ html, body {
 }
 .stat3 .rank-bar i { display: block; height: 100%; background: var(--brand); border-radius: 99px; }
 
+/* Sarlavhadagi bo‘lim tugmalari (reyting / natija / nishonlar) */
+.header-nav { display: flex; gap: 6px; }
+.header-nav .icon-btn.is-on {
+  background: var(--brand); color: #fff; border-color: var(--brand);
+}
+
+/* Farzandni sahifadan chiqmasdan almashtirish */
+.kid-switch {
+  display: flex; gap: 7px; overflow-x: auto; padding: 2px 0 12px;
+  scrollbar-width: none;
+}
+.kid-switch::-webkit-scrollbar { display: none; }
+.ks-btn {
+  flex-shrink: 0; display: flex; align-items: center; gap: 7px;
+  background: var(--surface); border: 1.5px solid var(--border);
+  color: var(--text-soft); font-family: inherit; font-size: 13px; font-weight: 700;
+  padding: 5px 13px 5px 5px; border-radius: 99px; cursor: pointer;
+  transition: border-color .15s, color .15s;
+}
+.ks-btn.is-on { border-color: var(--brand); color: var(--brand-deep); background: var(--brand-bg); }
+.ks-av { width: 26px; height: 26px; border-radius: 50%; overflow: hidden; display: block; flex-shrink: 0; }
+
 /* Bola sahifasidagi "O‘qishda davom eting" kartochkasi */
 .reading-card {
   display: block; width: 100%; text-align: left; cursor: pointer;
