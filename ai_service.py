@@ -79,8 +79,37 @@ def _usage_log(task: str, response):
         pass
 
 
-class AiEmptyResponse(RuntimeError):
+class UserFacingError(RuntimeError):
+    """Matni foydalanuvchiga ko‘rsatish uchun YOZILGAN xato.
+
+    Boshqa hamma xatolar texnik hisoblanadi: ular jurnalga yoziladi,
+    foydalanuvchiga esa sodda, tushunarli xabar ko‘rsatiladi.
+    """
+
+
+class AiEmptyResponse(UserFacingError):
     """AI javob berdi, lekin matn bo‘sh — sababi xabar matnida."""
+
+
+def human_error(e):
+    """Texnik xatoni foydalanuvchi tushunadigan jumlaga aylantiradi.
+
+    Ekranda «400 INVALID_ARGUMENT» yoki «'NoneType' object has no
+    attribute» kabi yozuvlar chiqmasligi kerak — ular faqat jurnalda
+    qoladi.
+    """
+    if isinstance(e, UserFacingError):
+        return str(e)
+    t = (str(e) or "").lower()
+    if "429" in t or "resource_exhausted" in t or "quota" in t:
+        return "AI hozir juda band. Bir-ikki daqiqadan so‘ng qayta urinib ko‘ring."
+    if "timeout" in t or "timed out" in t or "deadline" in t:
+        return "Javob kutish vaqti tugadi. Internet tezlashganda qayta urinib ko‘ring."
+    if "invalid_argument" in t or "unsupported" in t:
+        return "Yuborilgan fayl AI ga to‘g‘ri kelmadi. Qaytadan yozib ko‘ring."
+    if "permission" in t or "api key" in t or "unauthenticated" in t:
+        return "AI xizmatiga ulanib bo‘lmadi. Administratorga xabar bering."
+    return "Hozir bo‘lmadi. Biroz kutib, qaytadan urinib ko‘ring."
 
 
 def _text_or_reason(task, response):

@@ -1066,7 +1066,9 @@ document.addEventListener("click", async function (e) {
       case "demo-clear": await demoClear(Number(el.dataset.id), el.dataset.name); break;
     }
   } catch (err) {
-    toast(err.error || err.message || "Xatolik yuz berdi");
+    // err.message — brauzerning texnik matni («Cannot read properties…»).
+    // Uni ko‘rsatmaymiz: foydalanuvchiga foydasi yo‘q, faqat qo‘rqitadi.
+    toast(err.error || "Hozir bo‘lmadi. Qaytadan urinib ko‘ring.");
   } finally {
     clearTimeout(busyTimer);
     clearTimeout(release);
@@ -2230,7 +2232,7 @@ function openVoiceModal(bookId) {
         try { st = await api("/api/child/voice_job/" + started.job_id + asChildQuery()); }
         catch (err) { continue; }              // aloqa uzildi — keyingi urinishda so‘raymiz
         if (st.status === "tayyor") { res = st.result; break; }
-        if (st.status === "xato") throw { error: st.error, detail: st.detail };
+        if (st.status === "xato") throw { error: st.error };
       }
       if (!res) throw { error: "Kutish vaqti tugadi. Qisqaroq gapirib ko‘ring." };
 
@@ -2251,18 +2253,12 @@ function openVoiceModal(bookId) {
     } catch (e) {
       // Sababni YASHIRMAYMIZ — «xatolik» degan bo‘sh gap hech kimga yordam bermaydi.
       closeModal();
-      const reason = e.error || e.message || "Server javob bermadi. Internet aloqasini tekshiring.";
-      const tech = "format: " + (recordedBlob.type || "?") +
-        " -> " + (sendBlob.type || "?") +
-        " | " + Math.round(sendBlob.size / 1024) + " KB" +
-        (e.detail ? " | " + e.detail : "");
+      // Texnik tafsilotlar (format, hajm, xato kodi) foydalanuvchiga
+      // KO‘RSATILMAYDI — ular serverning jurnaliga yoziladi. Bu yerda
+      // faqat sodda va foydali gap qoladi.
+      const reason = e.error || "Hozir bo‘lmadi. Internet aloqasini tekshirib, qaytadan urining.";
       openModal("Ovozli xulosa yuborilmadi",
-        '<p class="section-sub" style="margin-top:-4px;color:var(--text);font-weight:600">' +
-          'AI ovozni tahlil qila olmadi.</p>' +
-        '<p class="section-sub" style="font-size:13.5px">' + escapeHtml(reason) + '</p>' +
-        '<p class="section-sub" style="font-size:12px;color:var(--text-faint);' +
-          'background:var(--surface-soft);border-radius:10px;padding:8px 10px;word-break:break-all">' +
-          escapeHtml(tech) + '</p>' +
+        '<p class="section-sub" style="margin-top:-4px">' + escapeHtml(reason) + '</p>' +
         '<button class="btn btn-primary btn-block" data-action="open-voice" data-id="' + bookId + '">Qaytadan urinish</button>' +
         '<button class="btn btn-outline btn-block" data-action="close-modal">Yopish</button>');
     }

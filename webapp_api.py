@@ -1656,7 +1656,7 @@ def _start_test_job(book_id, title, author, photos_bytes):
             # bo‘lganini na ega, na biz bilamiz.
             traceback.print_exc()
             ai_service.log_line("[test_job] XATO kitob=%s: %r" % (book_id, e))
-            _set_test_job(job_id, status="xato", error=str(e)[:300] or e.__class__.__name__)
+            _set_test_job(job_id, status="xato", error=ai_service.human_error(e))
 
     threading.Thread(target=worker, daemon=True).start()
     return job_id
@@ -2201,8 +2201,7 @@ def child_submit_voice(book_id):
                         % (book_id, detail, request.form.get("meta", "-")))
     if len(audio_bytes) < 2000:
         return jsonify({"error": "Ovoz juda qisqa yoki yozilmagan. "
-                                 "Mikrofonni bosib, kamida 15 soniya gapiring.",
-                        "detail": detail}), 400
+                                 "Mikrofonni bosib, kamida 15 soniya gapiring."}), 400
     child_id = _resolve_active_child(request)
 
     cursor.execute("SELECT title FROM Plan_Books WHERE book_id = ?", (book_id,))
@@ -2221,7 +2220,7 @@ def child_submit_voice(book_id):
     # Shuning uchun ish fon rejimida bajariladi: telefon darrov «kvitansiya»
     # oladi va vaqti-vaqti bilan «tayyor bo‘ldimi?» deb so‘rab turadi.
     job_id = _start_voice_job(book_id, child_id, book_title, age, audio_bytes, detail)
-    return jsonify({"ok": True, "job_id": job_id, "detail": detail})
+    return jsonify({"ok": True, "job_id": job_id})
 
 
 # ==========================================================
@@ -2252,8 +2251,7 @@ def _start_voice_job(book_id, child_id, book_title, age, audio_bytes, detail):
             traceback.print_exc()
             ai_service.log_line("[voice] XATO kitob=%s bola=%s (%s): %r"
                                 % (book_id, child_id, detail, e))
-            _set_voice_job(job_id, status="xato",
-                           error=str(e)[:300] or "AI ovozni tahlil qila olmadi")
+            _set_voice_job(job_id, status="xato", error=ai_service.human_error(e))
 
     threading.Thread(target=worker, daemon=True).start()
     return job_id
@@ -2269,7 +2267,7 @@ def child_voice_job(job_id):
         job = _voice_jobs.get(job_id)
     if not job:
         return jsonify({"error": "Bu ish topilmadi — qaytadan urinib ko‘ring"}), 404
-    out = {"status": job["status"], "detail": job.get("detail")}
+    out = {"status": job["status"]}
     if job["status"] == "tayyor":
         out["result"] = job.get("result")
     if job["status"] == "xato":
