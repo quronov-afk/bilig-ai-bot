@@ -481,19 +481,14 @@ async function refreshHeader() {
 
   const statsBox = document.getElementById("header-stats");
   if (isChildView()) {
-    let coins = me.coins || 0, streak = me.streak || 0, avatarId = me.avatar_id || "fox";
+    let avatarId = me.avatar_id || "fox";
     if (State.activeChildId) {
-      try {
-        const childData = await api("/api/child/home?as_child=" + State.activeChildId);
-        coins = childData.coins; streak = childData.streak;
-        const child = State.childrenCache.filter(function (c) { return c.id === State.activeChildId; })[0];
-        if (child) avatarId = child.avatar_id;
-      } catch (e) {}
+      const child = State.childrenCache.filter(function (c) { return c.id === State.activeChildId; })[0];
+      if (child) avatarId = child.avatar_id;
     }
     avatarEl.innerHTML = avatarMarkup(avatarId, 40);
-    statsBox.innerHTML =
-      '<div class="pill pill-gold">' + icon("coin", 13, 2.2) + ' ' + coins + '</div>' +
-      '<div class="pill pill-flame">' + icon("flame", 13, 2.2) + ' ' + streak + '</div>';
+    // Bilig va streak sarlavhada takrorlanmaydi — ular statistika blokida bor
+    statsBox.innerHTML = "";
   } else {
     avatarEl.textContent = (me.name || "?").charAt(0).toUpperCase();
     statsBox.innerHTML = "";
@@ -997,15 +992,24 @@ async function renderChildHome() {
   if (data.current_book) {
     const b = data.current_book;
     const pr = bookProgress(b);
-    html += '<div class="hero-card" data-action="open-book" data-id="' + b.id + '">' +
-      '<div class="icon-circle">' + icon("book-open", 22, 1.8) + '</div>' +
-      '<p class="eyebrow">O‘qishda davom eting</p>' +
-      '<p class="hc-title">' + escapeHtml(b.title) + '</p>' +
-      (pr.known ? '<div class="progress-track" style="background:rgba(255,255,255,.25)"><div class="progress-fill" style="width:' + pr.pct + '%;background:#fff"></div></div>' : "") +
-      '<div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:12.5px;">' +
-      '<span>' + pr.label + '</span>' +
-      '<span style="display:flex;align-items:center;gap:4px;font-weight:700">Davom etish ' + icon("arrow-right", 15, 2) + '</span>' +
-      '</div></div>';
+    html += '<article class="reading-card" data-action="open-book" data-id="' + b.id + '">' +
+      '<p class="rc-eyebrow">O‘qishda davom eting</p>' +
+      '<div class="rc-top">' +
+      coverHtml(b.title, b.author, "rc-cover") +
+      '<div class="rc-info">' +
+      '<p class="rc-title">' + escapeHtml(b.title) + '</p>' +
+      '<p class="rc-author">' + escapeHtml(b.author || "") + '</p>' +
+      (pr.known
+        ? '<div class="rc-bar"><i style="width:' + pr.pct + '%"></i></div>' +
+          '<p class="rc-meta"><b>' + b.pages_read + '</b> / ' + b.total_pages + ' bet' +
+          '<span class="rc-pct">' + pr.pct + '%</span></p>'
+        : '<p class="rc-meta"><b>' + b.pages_read + '</b> bet o‘qildi</p>') +
+      '</div></div>' +
+      '<div class="rc-foot">' +
+      '<span class="rc-stat">' + icon("award", 15, 2) + '<b>' + (b.tests_done || 0) + '</b> ta test</span>' +
+      '<span class="rc-stat">' + icon("mic", 15, 2) + '<b>' + (b.audio_count || 0) + '</b> ta audio</span>' +
+      '<span class="rc-go">Davom etish ' + icon("arrow-right", 15, 2.2) + '</span>' +
+      '</div></article>';
   } else {
     html += '<div class="hero-card" data-action="go-plans-tab">' +
       '<div class="icon-circle">' + icon("book-open", 22, 1.8) + '</div>' +
@@ -1587,7 +1591,7 @@ async function renderRatingTab() {
   main.innerHTML =
     '<div class="segmented">' +
     '<button class="' + (State.ratingMode === "global" ? "active" : "") + '" data-action="set-rating-mode" data-mode="global">Global reyting</button>' +
-    '<button class="' + (State.ratingMode === "passport" ? "active" : "") + '" data-action="set-rating-mode" data-mode="passport">Shaxsiy pasport</button>' +
+    '<button class="' + (State.ratingMode === "passport" ? "active" : "") + '" data-action="set-rating-mode" data-mode="passport">Shaxsiy natija</button>' +
     '</div>' +
     '<div id="rating-content"><div class="empty-state"><div class="spinner"></div>Yuklanmoqda…</div></div>';
   const content = document.getElementById("rating-content");

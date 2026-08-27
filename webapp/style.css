@@ -457,6 +457,55 @@ html, body {
 }
 .stat3 .rank-bar i { display: block; height: 100%; background: var(--brand); border-radius: 99px; }
 
+/* Bola sahifasidagi "O‘qishda davom eting" kartochkasi */
+.reading-card {
+  display: block; width: 100%; text-align: left; cursor: pointer;
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-deep) 100%);
+  color: #fff; border-radius: var(--radius-lg); padding: 14px;
+  box-shadow: var(--shadow-raised); margin-bottom: 12px;
+}
+.rc-eyebrow {
+  margin: 0 0 10px; font-size: 11px; font-weight: 800;
+  letter-spacing: .05em; text-transform: uppercase; color: rgba(255,255,255,.72);
+}
+.rc-top { display: flex; gap: 13px; align-items: flex-start; }
+.rc-cover {
+  width: 74px; height: 99px; flex-shrink: 0; border-radius: 9px; overflow: hidden;
+  background: rgba(255,255,255,.18); display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(15,23,42,.28);
+}
+.rc-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rc-cover.cover-blank { background: rgba(255,255,255,.2); border: 0; }
+.rc-cover.cover-blank span { color: #fff; font-size: 30px; }
+.rc-info { min-width: 0; flex: 1; }
+.rc-title {
+  margin: 0; font-size: 16px; font-weight: 800; line-height: 1.25; letter-spacing: -0.01em;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.rc-author { margin: 3px 0 0; font-size: 12.5px; color: rgba(255,255,255,.7); }
+.rc-bar {
+  height: 7px; border-radius: 99px; background: rgba(255,255,255,.28);
+  overflow: hidden; margin-top: 10px;
+}
+.rc-bar i { display: block; height: 100%; background: #fff; border-radius: 99px; }
+.rc-meta {
+  margin: 7px 0 0; font-size: 12.5px; color: rgba(255,255,255,.85);
+  display: flex; align-items: center; gap: 8px;
+}
+.rc-meta b { color: #fff; font-size: 15px; font-weight: 800; }
+.rc-pct {
+  margin-left: auto; background: rgba(255,255,255,.2); color: #fff;
+  font-weight: 800; font-size: 11.5px; padding: 2px 9px; border-radius: 99px;
+}
+.rc-foot {
+  display: flex; align-items: center; gap: 14px; margin-top: 13px;
+  padding-top: 11px; border-top: 1px solid rgba(255,255,255,.2);
+  font-size: 12.5px; color: rgba(255,255,255,.85);
+}
+.rc-stat { display: flex; align-items: center; gap: 5px; }
+.rc-stat b { color: #fff; font-weight: 800; }
+.rc-go { margin-left: auto; display: flex; align-items: center; gap: 4px; font-weight: 800; color: #fff; }
+
 /* Haftalik mutolaa chizig‘i */
 .week-strip {
   background: var(--surface); border: 1px solid var(--border);

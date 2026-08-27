@@ -85,6 +85,17 @@ DEMO_REPORTS = [
     },
 ]
 
+# Do‘kon mahsulotlari — ota-ona farzandiga qo‘yadigan sovg‘alar
+DEMO_STORE = [
+    ("Muzqaymoq", 10),
+    ("Hot-dog", 15),
+    ("Gamburger", 25),
+    ("Pizza", 60),
+    ("Kinoga borish", 120),
+    ("Yangi kitob", 150),
+    ("Smart soat", 400),
+]
+
 DEMO_BADGES = [
     "Birinchi qadam", "Kitobxon sayyoh", "Kitoblar sultoni",
     "Olovli qanot", "Yengilmas qahramon", "Marra g‘olibi",
@@ -192,7 +203,16 @@ def fill_demo_child(parent_id, child_id):
              rep["child"])
         )
 
-    # 5. Tanga, streak, nishonlar
+    # 5. Do‘kon mahsulotlari — namoyishda do‘kon bo‘sh turmasin
+    cursor.execute("SELECT COUNT(*) FROM Store_Items WHERE parent_id = ?", (parent_id,))
+    if not cursor.fetchone()[0]:
+        for nm, price in DEMO_STORE:
+            cursor.execute(
+                "INSERT INTO Store_Items (parent_id, name, price) VALUES (?, ?, ?)",
+                (parent_id, nm, price)
+            )
+
+    # 6. Tanga, streak, nishonlar
     cursor.execute(
         "UPDATE Users SET balance_coins = ?, streak_days = ?, total_xp = ?, "
         "badges = ?, last_read_date = ? WHERE user_id = ?",
