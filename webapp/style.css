@@ -437,26 +437,6 @@ html, body {
 .badge-tile:not(.is-locked) .badge-cond { color: var(--success-deep); }
 
 /* 3. Statistika */
-.stat3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; margin-bottom: 8px; }
-.stat3 .box {
-  border: 1px solid var(--border); border-radius: var(--radius-md);
-  padding: 13px 8px 11px; box-shadow: var(--shadow-sm); min-width: 0;
-  display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center;
-}
-/* Har bir ko‘rsatkich o‘z rangida — bir qarashda farqlansin */
-.stat3 .box-flame { background: linear-gradient(180deg, #FFF7ED 0%, var(--surface) 62%); border-color: #FDE4C8; }
-.stat3 .box-coin  { background: linear-gradient(180deg, #FEFAE8 0%, var(--surface) 62%); border-color: #F7E3A8; }
-.stat3 .box-rank  { background: linear-gradient(180deg, #F2F6FF 0%, var(--surface) 62%); border-color: #D8E4FB; }
-.stat3 .ic { display: flex; align-items: center; justify-content: center; gap: 5px; }
-.stat3 .n { font-size: 23px; font-weight: 800; line-height: 1; color: var(--text); font-variant-numeric: tabular-nums; }
-.stat3 .l { font-size: 10.5px; color: var(--text-faint); font-weight: 600; line-height: 1.3; }
-.stat3 .rank { font-size: 12.5px; font-weight: 800; line-height: 1.2; color: var(--text); }
-.stat3 .rank-bar {
-  width: 100%; height: 4px; border-radius: 99px; background: #DDE7F9;
-  overflow: hidden; margin-top: 2px;
-}
-.stat3 .rank-bar i { display: block; height: 100%; background: var(--brand); border-radius: 99px; }
-
 /* ---------- Mutolaa taqvimi ---------- */
 .cal-card { padding: 13px 12px 11px; }
 .cal-head {

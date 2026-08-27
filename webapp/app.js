@@ -120,7 +120,7 @@ let COVER_INDEX = null;
 
 // Muqovalar ro‘yxati o‘zgarganda shu raqamni oshiring — shunda telefon
 // eski nusxani emas, yangisini yuklaydi (index.html dagi ?v= bilan bir xil).
-const ASSET_V = "4";
+const ASSET_V = "5";
 
 function loadCoverIndex() {
   return fetch("/covers/index.json?v=" + ASSET_V)
@@ -779,17 +779,7 @@ async function renderParentHome() {
     '<div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;">Tezkor yoki marafon rejasi yaratish ' + icon("arrow-right", 15, 2) + '</div>' +
     '</div>';
 
-  // ---- 3. Statistika ----
-  html += statsBlockHtml(primaryData, false);
-
-  // ---- 4. O‘qiyotgan kitobi ----
-  html += '<p class="sec-label">O‘qiyotgan kitobi</p>' + nowReadingCard(primaryData.current_book);
-
-  // ---- 5. AI ustoz xulosasi ----
-  // Ota-ona uchun: kechqurun farzand bilan suhbatlashishga tayyor ko‘rsatma
-  html += aiReportBlockHtml(primaryData.last_report);
-
-  // ---- 6. So‘nggi natijalar ----
+  // ---- 3. So‘nggi natijalar (ilgari bu joyda 3 ta statistika qutisi turardi) ----
   html += '<p class="sec-label">So‘nggi natijalar</p>' +
     '<div class="res-card is-tappable" data-action="open-result">' +
     '<div class="res-who"><span class="av">' + avatarMarkup(primary.avatar_id || "fox", 48) + '</span>' +
@@ -802,10 +792,18 @@ async function renderParentHome() {
     resRow("mic", "ic-audio", "AI audio bahosi", primaryData.last_audio_score ? primaryData.last_audio_score + "/5" : "hali yo‘q") +
     '</div></div>';
 
-  // ---- 7. Nishonlar ----
+  // ---- 4. O‘qiyotgan kitobi ----
+  html += '<p class="sec-label">O‘qiyotgan kitobi</p>' + nowReadingCard(primaryData.current_book);
+
+  // ---- 5. AI ustoz xulosasi ----
+  // Ota-ona uchun: kechqurun farzand bilan suhbatlashishga tayyor ko‘rsatma
+  html += aiReportBlockHtml(primaryData.last_report);
+
+
+  // ---- 6. Nishonlar ----
   html += badgesBlockHtml(primaryData.badges);
 
-  // ---- 8. Kitoblar javoni (yon tarafga siljitiladi) ----
+  // ---- 7. Kitoblar javoni (yon tarafga siljitiladi) ----
   const shelf = primaryData.shelf_books || primaryData.active_books || [];
   html += '<p class="sec-label">Kitoblar javoni' +
     (shelf.length > 3 ? ' <span class="sw" data-action="go-plans-tab">' + icon("chevron-right", 12, 2.4) + '</span>' : "") + '</p>' +
@@ -885,30 +883,6 @@ function bookProgress(b) {
   }
   const pct = Math.min(100, Math.round(read / total * 100));
   return { known: true, pct: pct, label: read + '/' + total + ' bet' };
-}
-
-// Statistika bloki — 3 ta quti va ostida haftalik mutolaa chizig‘i.
-// Tuzilma o‘zgarmaydi (ketma-ket kun / tanga / daraja), faqat har biri
-// endi qo‘shimcha ma'no tashiydi: darajada keyingi bosqichgacha qolgan yo‘l,
-// pastda esa oxirgi 7 kunning ko‘rinishi.
-function statsBlockHtml(d, showWeek) {
-  const next = d.next_rank;
-  const rankBox =
-    '<div class="box box-rank">' +
-    '<span class="ic ic-rank">' + icon("award", 17, 2) + '</span>' +
-    '<span class="rank">' + escapeHtml(stripEmoji(d.rank)) + '</span>' +
-    (next
-      ? '<span class="rank-bar"><i style="width:' + next.progress + '%"></i></span>' +
-        '<span class="l">Keyingisiga ' + next.pages_left + ' bet</span>'
-      : '<span class="l">Eng yuqori daraja</span>') +
-    '</div>';
-
-  return '<div class="stat3">' +
-    '<div class="box box-flame"><span class="ic ic-flame">' + icon("flame", 17, 2) + '<span class="n">' + d.streak + '</span></span><span class="l">Ketma-ket kun</span></div>' +
-    '<div class="box box-coin"><span class="ic ic-coin">' + icon("coin", 17, 2) + '<span class="n">' + d.coins + '</span></span><span class="l">Bilig tangasi</span></div>' +
-    rankBox +
-    '</div>' +
-    (showWeek ? weekStripHtml(d.week) : "");
 }
 
 // Oxirgi 7 kun: o‘qilgan kunlar to‘ldirilgan doira bilan belgilanadi
@@ -1060,13 +1034,7 @@ async function renderChildHome() {
       '</div>';
   }
 
-  // ---- 2. Statistika + haftalik chiziq ----
-  html += statsBlockHtml(data, true);
-
-  // ---- 3. AI ustoz xulosasi (bolaning o‘ziga) ----
-  html += childNoteHtml(data.child_note);
-
-  // ---- 4. So‘nggi natijalar ----
+  // ---- 2. So‘nggi natijalar (ilgari bu joyda 3 ta statistika qutisi turardi) ----
   html += '<p class="sec-label">So‘nggi natijalar</p>' +
     '<div class="res-card is-tappable" data-action="open-result"><div class="res-list">' +
     resRow("book-open", "ic-brand", "Jami o‘qilgan", (data.total_pages || 0) + " bet") +
@@ -1075,6 +1043,12 @@ async function renderChildHome() {
     resRow("star", "ic-rank", "Yangi nishon", data.last_badge ? stripEmoji(data.last_badge) : "hali yo‘q") +
     resRow("mic", "ic-audio", "AI audio bahosi", data.last_audio_score ? data.last_audio_score + "/5" : "hali yo‘q") +
     '</div></div>';
+
+  // ---- 3. Haftalik chiziq (oxirgi 7 kun) ----
+  html += weekStripHtml(data.week);
+
+  // ---- 4. AI ustoz xulosasi (bolaning o‘ziga) ----
+  html += childNoteHtml(data.child_note);
 
   // ---- 5. Nishonlar ----
   html += badgesBlockHtml(data.badges);
