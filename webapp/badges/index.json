@@ -1,118 +1,292 @@
 {
  "birinchi-qadam": {
   "name": "Birinchi qadam",
-  "cond": "Ilk 5 sahifa o‘qilganda"
+  "cond": "Ilk 5 sahifa o‘qilganda",
+  "msg": "Ilk besh sahifa — eng qiyini shu edi. Endi yo‘l ochiq.",
+  "pal": "yashil",
+  "rim": "#7FCB92",
+  "rim_dark": "#3E9A62",
+  "field": "#FBFDF6",
+  "orn": "#2F7A4B"
  },
  "kitobxon-sayyoh": {
   "name": "Kitobxon sayyoh",
-  "cond": "100 bet o‘qilganda"
+  "cond": "100 bet o‘qilganda",
+  "msg": "Yuz bet! Sen allaqachon uzoq yo‘l bosgan sayyohsan.",
+  "pal": "moviy",
+  "rim": "#6FC7DE",
+  "rim_dark": "#2C8AAE",
+  "field": "#F4FCFF",
+  "orn": "#1D6C8A"
  },
  "kitoblar-sultoni": {
   "name": "Kitoblar sultoni",
-  "cond": "500 bet o‘qilganda"
+  "cond": "500 bet o‘qilganda",
+  "msg": "Besh yuz bet. Bu — javondagi bir necha kitob, boshingdagi bir necha dunyo.",
+  "pal": "oltin",
+  "rim": "#F7D35C",
+  "rim_dark": "#C8901A",
+  "field": "#3A2F63",
+  "orn": "#8A5E10"
  },
  "ming-betlik-dovon": {
   "name": "Ming betlik dovon",
-  "cond": "1 000 bet o‘qilganda"
+  "cond": "1 000 bet o‘qilganda",
+  "msg": "Ming bet! Bu — bir necha dunyo, bir necha hayot. Sen ularni o‘z ko‘zing bilan ko‘rding.",
+  "pal": "tosh",
+  "rim": "#B8C4CE",
+  "rim_dark": "#6E8296",
+  "field": "#F7FAFC",
+  "orn": "#4A5C6E"
  },
  "kitoblar-ummoni": {
   "name": "Kitoblar ummoni",
-  "cond": "5 000 bet o‘qilganda"
+  "cond": "5 000 bet o‘qilganda",
+  "msg": "Besh ming bet! Sen kitoblar ummonida suzayotgan kemasan.",
+  "pal": "koinot",
+  "rim": "#9B7FE0",
+  "rim_dark": "#5B3FA8",
+  "field": "#231B47",
+  "orn": "#7C5FD0"
  },
  "olovli-qanot": {
   "name": "Olovli qanot",
-  "cond": "3 kun uzluksiz o‘qilganda"
+  "cond": "3 kun uzluksiz o‘qilganda",
+  "msg": "Uch kun uzluksiz! Odat shunday tug‘iladi — kichik qadamlardan.",
+  "pal": "olov",
+  "rim": "#FFC24D",
+  "rim_dark": "#E2701A",
+  "field": "#FFF6E6",
+  "orn": "#A63F0C"
  },
  "yengilmas-qahramon": {
   "name": "Yengilmas qahramon",
-  "cond": "7 kun uzluksiz o‘qilganda"
+  "cond": "7 kun uzluksiz o‘qilganda",
+  "msg": "Bir hafta bo‘yi bir kun ham qoldirmading. Bu — chinakam qahramonlik.",
+  "pal": "chaqmoq",
+  "rim": "#FFE066",
+  "rim_dark": "#EFA100",
+  "field": "#FFFCEB",
+  "orn": "#B37400"
  },
  "mutolaa-afsonasi": {
   "name": "Mutolaa afsonasi",
-  "cond": "30 kun uzluksiz o‘qilganda"
+  "cond": "30 kun uzluksiz o‘qilganda",
+  "msg": "O‘ttiz kun! Endi kitob sening kunlik nonings kabi.",
+  "pal": "yulduz",
+  "rim": "#C08BE8",
+  "rim_dark": "#7B3FBF",
+  "field": "#2A1B4A",
+  "orn": "#8E5FD0"
  },
  "olmos-iroda": {
   "name": "Olmos iroda",
-  "cond": "100 kun uzluksiz o‘qilganda"
+  "cond": "100 kun uzluksiz o‘qilganda",
+  "msg": "Yuz kun. Olmos ham shunday tug‘iladi — bosim ostida, sabr bilan.",
+  "pal": "olmos",
+  "rim": "#A8E8F0",
+  "rim_dark": "#3FA8C4",
+  "field": "#F2FDFF",
+  "orn": "#2A7F99"
  },
  "yil-qahramoni": {
   "name": "Yil qahramoni",
-  "cond": "365 kun uzluksiz o‘qilganda"
+  "cond": "365 kun uzluksiz o‘qilganda",
+  "msg": "Bir yil! Buni ko‘pchilik orzu qiladi, sen esa qilding.",
+  "pal": "sayyora",
+  "rim": "#7FB4F0",
+  "rim_dark": "#2F63D6",
+  "field": "#111C3D",
+  "orn": "#4E8EF7"
  },
  "qalqon": {
   "name": "Qalqon",
-  "cond": "Olov qalqonidan keyin darhol qaytganda"
+  "cond": "Olov qalqonidan keyin darhol qaytganda",
+  "msg": "Bir kun qoldirding, lekin ertasiga qaytding. Yiqilib turish — eng katta kuch.",
+  "pal": "polat",
+  "rim": "#C6D0DA",
+  "rim_dark": "#7A8B9C",
+  "field": "#F5F8FB",
+  "orn": "#52646F"
  },
  "marra-golibi": {
   "name": "Marra g‘olibi",
-  "cond": "Ilk kitob yakunlanganda"
+  "cond": "Ilk kitob yakunlanganda",
+  "msg": "Birinchi kitob tamom! Oxirgi sahifani yopish — alohida zavq, shundaymi?",
+  "pal": "gilos",
+  "rim": "#F19A9A",
+  "rim_dark": "#C4482F",
+  "field": "#FFF7F5",
+  "orn": "#8E2F1D"
  },
  "tezkor-mutolaa": {
   "name": "Tezkor mutolaa",
-  "cond": "Kitob 3 kun ichida tugatilganda"
+  "cond": "Kitob 3 kun ichida tugatilganda",
+  "msg": "Uch kunda butun kitob! Seni to‘xtatib bo‘lmaydi.",
+  "pal": "shafaq",
+  "rim": "#FFB48A",
+  "rim_dark": "#E86A3C",
+  "field": "#FFF8F3",
+  "orn": "#A6421C"
  },
  "kichik-kutubxonachi": {
   "name": "Kichik kutubxonachi",
-  "cond": "10 ta kitob tugatilganda"
+  "cond": "10 ta kitob tugatilganda",
+  "msg": "O‘nta kitob! Endi seni chinakam kitobxon deyish mumkin.",
+  "pal": "zumrad",
+  "rim": "#7ED9B8",
+  "rim_dark": "#2E9E78",
+  "field": "#F5FFFB",
+  "orn": "#1F7255"
  },
  "mutolaa-akademigi": {
   "name": "Mutolaa akademigi",
-  "cond": "25 ta kitob tugatilganda"
+  "cond": "25 ta kitob tugatilganda",
+  "msg": "Yigirma besh kitob. Sen endi shunchaki o‘quvchi emas — bilimdonsan.",
+  "pal": "siyoh",
+  "rim": "#8FA8D8",
+  "rim_dark": "#3D5B96",
+  "field": "#F6F9FF",
+  "orn": "#2B4372"
  },
  "bilim-notigi": {
   "name": "Bilim notig‘i",
-  "cond": "Audio xulosada 5 Bilig olinganda"
+  "cond": "Audio xulosada 5 Bilig olinganda",
+  "msg": "AI ustoz senga eng yuqori bahoni berdi. Nutqing ravon va aniq edi.",
+  "pal": "marjon",
+  "rim": "#F2A65A",
+  "rim_dark": "#C4682A",
+  "field": "#FFFAF3",
+  "orn": "#8A4515"
  },
  "tafakkur": {
   "name": "Tafakkur",
-  "cond": "Mustaqil fikr yuqori baholanganda"
+  "cond": "Mustaqil fikr yuqori baholanganda",
+  "msg": "Sen o‘z fikringni aytding — kitobda yozilganini emas. Eng qimmatlisi shu.",
+  "pal": "chaqmoq",
+  "rim": "#FFE066",
+  "rim_dark": "#EFA100",
+  "field": "#FFFCEB",
+  "orn": "#B37400"
  },
  "buyuk-suxandon": {
   "name": "Buyuk suxandon",
-  "cond": "10 ta kitob bo‘yicha a'lo xulosa"
+  "cond": "10 ta kitob bo‘yicha a'lo xulosa",
+  "msg": "O‘nta kitob bo‘yicha ajoyib gapirib berding. Sen chinakam suxandonsan.",
+  "pal": "marjon",
+  "rim": "#F2A65A",
+  "rim_dark": "#C4682A",
+  "field": "#FFFAF3",
+  "orn": "#8A4515"
  },
  "oltin-qalam": {
   "name": "Oltin qalam",
-  "cond": "Go‘zal adabiy so‘zlar bilan bayon etganda"
+  "cond": "Go‘zal adabiy so‘zlar bilan bayon etganda",
+  "msg": "So‘zlaring go‘zal va tanlangan edi. Til — sening quroling.",
+  "pal": "oltin",
+  "rim": "#F7D35C",
+  "rim_dark": "#C8901A",
+  "field": "#3A2F63",
+  "orn": "#8A5E10"
  },
  "zukko-kitobxon": {
   "name": "Zukko kitobxon",
-  "cond": "Testda 100% to‘g‘ri javob"
+  "cond": "Testda 100% to‘g‘ri javob",
+  "msg": "Hamma savolga to‘g‘ri javob! Kitobni chindan yashab chiqibsan.",
+  "pal": "yulduz",
+  "rim": "#C08BE8",
+  "rim_dark": "#7B3FBF",
+  "field": "#2A1B4A",
+  "orn": "#8E5FD0"
  },
  "mantiq-ustasi": {
   "name": "Mantiq ustasi",
-  "cond": "Jami 50 ta to‘g‘ri javob"
+  "cond": "Jami 50 ta to‘g‘ri javob",
+  "msg": "Ellik to‘g‘ri javob. Sen shunchaki o‘qimayapsan — o‘ylayapsan.",
+  "pal": "moviy",
+  "rim": "#6FC7DE",
+  "rim_dark": "#2C8AAE",
+  "field": "#F4FCFF",
+  "orn": "#1D6C8A"
  },
  "bilim-akademiyasi": {
   "name": "Bilim akademiyasi",
-  "cond": "10 ta test ketma-ket 100%"
+  "cond": "10 ta test ketma-ket 100%",
+  "msg": "O‘n marta ketma-ket to‘la ball. Bu tasodif emas — bu mahorat.",
+  "pal": "koinot",
+  "rim": "#9B7FE0",
+  "rim_dark": "#5B3FA8",
+  "field": "#231B47",
+  "orn": "#7C5FD0"
  },
  "tonggi-qaldirgoch": {
   "name": "Tonggi qaldirg‘och",
-  "cond": "06:00–09:00 oralig‘ida o‘qilganda"
+  "cond": "06:00–09:00 oralig‘ida o‘qilganda",
+  "msg": "Tong saharda kitob ochding. Kun shunday boshlansa, hammasi joyida bo‘ladi.",
+  "pal": "shafaq",
+  "rim": "#FFB48A",
+  "rim_dark": "#E86A3C",
+  "field": "#FFF8F3",
+  "orn": "#A6421C"
  },
  "qutb-yulduzi": {
   "name": "Qutb yulduzi",
-  "cond": "Uxlashdan oldin o‘qilganda"
+  "cond": "Uxlashdan oldin o‘qilganda",
+  "msg": "Uxlashdan oldin kitob o‘qiding. Tushlaring ham qiziqarli bo‘lsin.",
+  "pal": "tun",
+  "rim": "#8E9BD6",
+  "rim_dark": "#3F4B9E",
+  "field": "#1B2050",
+  "orn": "#6B78C4"
  },
  "maroqli": {
   "name": "Maroqli",
-  "cond": "Dam olish kunlari o‘qilganda"
+  "cond": "Dam olish kunlari o‘qilganda",
+  "msg": "Dam olish kuni ham kitob ochding. Demak, mutolaa sen uchun vazifa emas — zavq.",
+  "pal": "zaytun",
+  "rim": "#CFD98A",
+  "rim_dark": "#8A9B3C",
+  "field": "#FCFEF2",
+  "orn": "#5F6E22"
  },
  "oila-iftixori": {
   "name": "Oila iftixori",
-  "cond": "Ota-ona bilan suhbat a'lo o‘tganda"
+  "cond": "Ota-ona bilan suhbat a'lo o‘tganda",
+  "msg": "Ota-onang bilan kitob haqida suhbatlashding. Ular sen bilan faxrlanadi.",
+  "pal": "yaqut",
+  "rim": "#E88AA8",
+  "rim_dark": "#B23A63",
+  "field": "#FFF5F9",
+  "orn": "#7E2244"
  },
  "chaqmoq-kitobxon": {
   "name": "Chaqmoq kitobxon",
-  "cond": "Bir o‘tirishda 30+ bet o‘qilganda"
+  "cond": "Bir o‘tirishda 30+ bet o‘qilganda",
+  "msg": "Bir o‘tirishda o‘ttiz betdan ko‘p! Kitobdan uzila olmadingmi?",
+  "pal": "chaqmoq",
+  "rim": "#FFE066",
+  "rim_dark": "#EFA100",
+  "field": "#FFFCEB",
+  "orn": "#B37400"
  },
  "ezgulik-elchisi": {
   "name": "Ezgulik elchisi",
-  "cond": "Qahramon fazilatlari bo‘yicha xulosa"
+  "cond": "Qahramon fazilatlari bo‘yicha xulosa",
+  "msg": "Sen qahramonning ezgu fazilatlarini payqading. Yaxshilikni ko‘ra bilish — katta iste'dod.",
+  "pal": "moviy",
+  "rim": "#6FC7DE",
+  "rim_dark": "#2C8AAE",
+  "field": "#F4FCFF",
+  "orn": "#1D6C8A"
  },
  "xazinabon": {
   "name": "Xazinabon",
-  "cond": "2000 Bilig to‘planganda"
+  "cond": "2000 Bilig to‘planganda",
+  "msg": "Ikki ming Bilig! Sening xazinang mehnat bilan yig‘ilgan.",
+  "pal": "oltin",
+  "rim": "#F7D35C",
+  "rim_dark": "#C8901A",
+  "field": "#3A2F63",
+  "orn": "#8A5E10"
  }
 }

@@ -120,7 +120,7 @@ let COVER_INDEX = null;
 
 // Muqovalar ro‘yxati o‘zgarganda shu raqamni oshiring — shunda telefon
 // eski nusxani emas, yangisini yuklaydi (index.html dagi ?v= bilan bir xil).
-const ASSET_V = "5";
+const ASSET_V = "6";
 
 function loadCoverIndex() {
   return fetch("/covers/index.json?v=" + ASSET_V)
@@ -457,6 +457,7 @@ document.getElementById("profile-submit").addEventListener("click", async functi
 async function enterApp() {
   showScreen("shell");
   if (!COVER_INDEX) await loadCoverIndex();
+  loadBadgeMeta();
   await refreshHeader();
   if (State.role === "parent") {
     try {
@@ -594,6 +595,15 @@ function switchTab(tabId) {
 // kutolmay qayta-qayta bosadi va buyruqlar birdaniga takrorlanib ketadi.
 let actionBusy = false;
 
+// Tabrik ekrani tugmasi va maskot lentasi — markaziy dispatcherdan tashqarida,
+// chunki ular ilova qobig‘idan ustun turadi.
+document.addEventListener("DOMContentLoaded", function () {
+  const celBtn = document.getElementById("cel-btn");
+  if (celBtn) celBtn.onclick = function () { haptic(); celNext(); };
+  const mt = document.getElementById("mtoast");
+  if (mt) mt.onclick = hideMascotToast;
+});
+
 document.addEventListener("click", async function (e) {
   const el = e.target.closest("[data-action]");
   if (!el) return;
@@ -611,6 +621,7 @@ document.addEventListener("click", async function (e) {
     switch (a) {
       case "open-tab": switchTab(el.dataset.tab); break;
       case "close-modal": closeModal(); break;
+      case "show-unseen-badges": await showUnseenBadges(el); break;
 
       case "open-child-detail": State.selectedChildId = Number(el.dataset.id); await renderChildDetailPage(State.selectedChildId); break;
       case "back-to-home":
@@ -1003,8 +1014,10 @@ async function renderChildDetailPage(childId) {
 async function renderChildHome() {
   const data = await api("/api/child/home" + asChildQuery());
 
+  // ---- 0. Kutib olish — bola ko‘rmagan nishonlar bo‘lsa ----
+  let html = welcomeHtml(data.name, data.unseen_badges);
+
   // ---- 1. O‘qilayotgan kitob ----
-  let html = "";
   if (data.current_book) {
     const b = data.current_book;
     const pr = bookProgress(b);
@@ -1390,6 +1403,22 @@ async function submitPageManual(bookId) {
   showPageResult(res);
 }
 function showPageResult(res) {
+  // Nishon olingan bo‘lsa — avval to‘liq ekran tabrik, keyin natija oynasi.
+  if (res.new_badges && res.new_badges.length) {
+    celebrate(res.new_badges, function () { showPageResultModal(res); });
+    return;
+  }
+  // Nishon yo‘q, lekin lahza arziydi — maskot lentasi chiqadi.
+  if (res.streak_up) {
+    mascotToast("sherbola-galaba", res.streak + "-kun ketma-ket!",
+                "Bir kun ham qoldirmading. Zo‘rsan.");
+  } else if (res.earned_bilig >= 5) {
+    mascotToast("qorbars-tanga", "+" + res.earned_bilig + " Bilig!",
+                "Xazinang o‘syapti — jami " + res.balance + " ta.");
+  }
+  showPageResultModal(res);
+}
+function showPageResultModal(res) {
   openModal("Ajoyib natija",
     '<div class="stat-grid">' +
     '<div class="stat-box"><div class="num">+' + res.earned_bilig + '</div><div class="lbl">Bilig</div></div>' +
@@ -1397,7 +1426,6 @@ function showPageResult(res) {
     '<div class="stat-box"><div class="num">' + res.streak + '</div><div class="lbl">Ketma-ket kun</div></div>' +
     '</div>' +
     (res.shield_used ? '<p class="section-sub">Streak qalqoni ishlatildi — ketma-ketlik saqlanib qoldi.</p>' : "") +
-    newBadgesHtml(res.new_badges) +
     '<button class="btn btn-primary btn-block" data-action="close-modal">Yopish</button>'
   );
   refreshHeader();
@@ -1466,14 +1494,19 @@ function openVoiceModal(bookId) {
     fd.append("audio", recordedBlob, "summary.webm");
     try {
       const res = await api("/api/child/book/" + bookId + "/voice" + asChildQuery(), { method: "POST", body: fd });
-      openModal("AI Ustoz fikri",
+      if (res.bonus_bilig >= 4) {
+        mascotToast("olmaxon-2", "AI ustoz seni tingladi",
+                    "+" + res.bonus_bilig + " bonus Bilig — nutqing ravon edi.");
+      }
+      const showVoice = function () { openModal("AI Ustoz fikri",
         '<div class="stat-grid" style="grid-template-columns:1fr">' +
         '<div class="stat-box"><div class="num">+' + res.bonus_bilig + '</div><div class="lbl">bonus Bilig</div></div>' +
         '</div>' +
         '<div class="card">' + escapeHtml(res.feedback) + '</div>' +
-        newBadgesHtml(res.new_badges) +
         '<button class="btn btn-primary btn-block" data-action="close-modal">Ajoyib</button>'
-      );
+      ); };
+      if (res.new_badges && res.new_badges.length) celebrate(res.new_badges, showVoice);
+      else showVoice();
       refreshHeader();
     } catch (e) { toast(e.error || "Xatolik yuz berdi"); closeModal(); }
   };
@@ -1489,15 +1522,18 @@ const Test = {
     const res = await api("/api/child/book/" + bookId + "/test/submit" + asChildQuery(), {
       method: "POST", body: { stage: this.stage, answers: this.answers }
     });
-    openModal("Natija",
+    mascotToast("qaldirgoch-tekshiruv", res.correct + "/" + res.total + " to‘g‘ri javob",
+                res.percent >= 80 ? "Kitobni chindan tushunibsan." : "Yaxshi urinish — davom et.");
+    const showRes = function () { openModal("Natija",
       '<div class="stat-grid">' +
       '<div class="stat-box"><div class="num">' + res.correct + '/' + res.total + '</div><div class="lbl">To‘g‘ri javob</div></div>' +
       '<div class="stat-box"><div class="num">' + res.percent + '%</div><div class="lbl">Natija</div></div>' +
       '<div class="stat-box"><div class="num">+' + res.earned_bilig + '</div><div class="lbl">Bilig</div></div>' +
       '</div>' +
-      newBadgesHtml(res.new_badges) +
       '<button class="btn btn-primary btn-block" data-action="close-modal">Yopish</button>'
-    );
+    ); };
+    if (res.new_badges && res.new_badges.length) celebrate(res.new_badges, showRes);
+    else showRes();
     refreshHeader();
   }
 };
@@ -1600,7 +1636,8 @@ async function submitRate() {
 async function buyItem(itemId) {
   const res = await api("/api/child/store/" + itemId + "/buy" + asChildQuery(), { method: "POST" });
   if (!res.ok) { toast(res.message); return; }
-  toast("Sotib olindi — ota-onangizga xabar berildi");
+  mascotToast("quyoncha-sovga", "Sovg‘ang buyurtma qilindi",
+              "Ota-onangga xabar yubordik.");
   refreshHeader(); renderStoreTab();
 }
 
@@ -1829,17 +1866,194 @@ function earnedBadgeSet(badgesStr) {
   return set;
 }
 
-// Shu daqiqada qo‘lga kiritilgan nishonlar — natija oynasi ichida ko‘rsatiladi.
-function newBadgesHtml(names) {
-  if (!names || !names.length) return "";
-  return '<div class="new-badges">' +
-    '<p class="eyebrow">Yangi nishon' + (names.length > 1 ? "lar" : "") + '</p>' +
-    '<div class="new-badge-row">' + names.map(function (n) {
-      const slug = badgeFile(n);
-      return '<div class="new-badge">' +
-        (slug ? '<div class="badge-icon has-art">' + badgeArt(slug) + '</div>' : "") +
-        '<span>' + escapeHtml(n) + '</span></div>';
-    }).join("") + '</div></div>';
+
+// ==========================================================
+// NISHONLASH LAHZALARI
+// ----------------------------------------------------------
+// Uch daraja:
+//   1. mascotToast() — kichik lenta, maskot bilan. Kamdan-kam chiqadi.
+//   2. celebrate()   — to‘liq ekran tabrik. Faqat nishon uchun.
+//   3. kutib olish   — bola ko‘rmagan nishonlarni tipratikan yetkazadi
+//                      (renderChildHome ichida).
+// Ranglar nishonning o‘z rang oilasidan olinadi (badges/index.json),
+// maskotning rangi esa fonga yumshoq yorug‘lik qo‘shadi.
+// ==========================================================
+let BADGE_META = {}, MASCOT_ACCENT = {};
+
+function loadBadgeMeta() {
+  return Promise.all([
+    fetch("/badges/index.json?v=" + ASSET_V).then(function (r) { return r.ok ? r.json() : {}; }),
+    fetch("/mascots/trim/index.json?v=" + ASSET_V).then(function (r) { return r.ok ? r.json() : {}; })
+  ]).then(function (res) {
+    BADGE_META = res[0] || {}; MASCOT_ACCENT = res[1] || {};
+  }).catch(function () { BADGE_META = {}; MASCOT_ACCENT = {}; });
+}
+
+function badgeMetaByName(name) {
+  const key = stripEmoji(name || "").trim().toLowerCase();
+  for (const slug in BADGE_META) {
+    if ((BADGE_META[slug].name || "").toLowerCase() === key) {
+      return Object.assign({ slug: slug }, BADGE_META[slug]);
+    }
+  }
+  return null;
+}
+
+// ---------- ranglar ----------
+function hex2rgb(h) {
+  h = (h || "#4E8EF7").replace("#", "");
+  return [parseInt(h.slice(0, 2), 16), parseInt(h.slice(2, 4), 16), parseInt(h.slice(4, 6), 16)];
+}
+function rgb2hex(a) {
+  return "#" + a.map(function (v) { return ("0" + Math.round(v).toString(16)).slice(-2); }).join("");
+}
+function mixColor(a, b, t) {
+  const x = hex2rgb(a), y = hex2rgb(b);
+  return rgb2hex(x.map(function (v, i) { return v + (y[i] - v) * t; }));
+}
+function lighten(h, t) { return mixColor(h, "#FFFFFF", t); }
+function rgbaOf(h, a) { return "rgba(" + hex2rgb(h).join(",") + "," + a + ")"; }
+
+// Fonni nishon rangi + maskot rangidan quradi. Konfetti ranglarini qaytaradi.
+function applyCelTheme(meta, mascotAccent) {
+  const cel = document.getElementById("cel");
+  const rim = meta.rim || "#4E8EF7";
+  const deep = meta.rim_dark || "#2F63D6";
+  const glow = rgbaOf(mascotAccent || rim, .30);
+  cel.style.background =
+    "radial-gradient(58% 40% at 74% 78%," + glow + " 0%,transparent 64%)," +
+    "radial-gradient(115% 80% at 50% 34%," + mixColor(deep, "#0B1226", .40) + " 0%," +
+    mixColor(deep, "#0B1226", .74) + " 55%," + mixColor(deep, "#05080F", .88) + " 100%)";
+  cel.style.setProperty("--ray", rgbaOf(lighten(rim, .5), .24));
+  cel.style.setProperty("--eyebrow", lighten(rim, .38));
+  cel.style.setProperty("--btn", "linear-gradient(180deg," + lighten(rim, .55) + "," + rim + ")");
+  return [rim, lighten(meta.orn || rim, .35), "#F5C243", "#FFFFFF", mascotAccent || rim];
+}
+
+// ---------- 2-daraja: to‘liq ekran tabrik ----------
+let celQueue = [], celIdx = 0, celDone = null;
+
+function celebrate(names, onDone) {
+  const list = (names || []).filter(Boolean);
+  if (!list.length) { if (onDone) onDone(); return; }
+  celQueue = list; celIdx = 0; celDone = onDone || null;
+  celShow();
+}
+
+function celShow() {
+  const cel = document.getElementById("cel");
+  const name = celQueue[celIdx];
+  const meta = badgeMetaByName(name) ||
+    { slug: "", name: name, msg: "", rim: "#4E8EF7", rim_dark: "#2F63D6", orn: "#2F63D6" };
+  const colors = applyCelTheme(meta, MASCOT_ACCENT["mascot-sherbola-galaba"]);
+  const img = document.getElementById("cel-img");
+  if (meta.slug) { img.src = "/badges/" + meta.slug + ".svg?v=" + ASSET_V; img.style.display = "block"; }
+  else { img.style.display = "none"; }
+  document.getElementById("cel-name").textContent = meta.name || name;
+  document.getElementById("cel-msg").textContent = meta.msg || meta.cond || "";
+  document.getElementById("cel-count").textContent =
+    celQueue.length > 1 ? (celIdx + 1) + " / " + celQueue.length : "";
+  document.getElementById("cel-btn").textContent =
+    (celIdx < celQueue.length - 1) ? "Keyingisi" : "Ajoyib!";
+  cel.classList.remove("on"); void cel.offsetWidth; cel.classList.add("on");
+  haptic("heavy");
+  celConfetti(colors);
+}
+
+function celNext() {
+  celIdx++;
+  if (celIdx < celQueue.length) { celShow(); return; }
+  document.getElementById("cel").classList.remove("on");
+  const cb = celDone; celDone = null;
+  if (cb) cb();
+}
+
+// ---------- konfetti ----------
+let celParts = [], celRaf = null, celColors = ["#F5C243", "#4E8EF7", "#10B981", "#FFFFFF"];
+
+function celConfetti(palette) {
+  if (palette && palette.length) celColors = palette;
+  const cv = document.getElementById("cel-conf");
+  cv.width = cv.offsetWidth; cv.height = cv.offsetHeight;
+  celParts = [];
+  for (let i = 0; i < 130; i++) {
+    celParts.push({
+      x: cv.width * (.15 + Math.random() * .7),
+      y: cv.height * .42 + (Math.random() - .5) * 30,
+      vx: (Math.random() - .5) * 11, vy: -6 - Math.random() * 7,
+      w: 5 + Math.random() * 6, h: 8 + Math.random() * 8,
+      rot: Math.random() * 6.3, vr: (Math.random() - .5) * .3,
+      c: celColors[(Math.random() * celColors.length) | 0], life: 1
+    });
+  }
+  if (celRaf) cancelAnimationFrame(celRaf);
+  celTick();
+}
+
+function celTick() {
+  const cv = document.getElementById("cel-conf"), cx = cv.getContext("2d");
+  cx.clearRect(0, 0, cv.width, cv.height);
+  let alive = 0;
+  celParts.forEach(function (p) {
+    p.vy += .28; p.vx *= .992; p.x += p.vx; p.y += p.vy; p.rot += p.vr;
+    if (p.y > cv.height * .55) p.life -= .012;
+    if (p.life <= 0) return;
+    alive++;
+    cx.save(); cx.globalAlpha = Math.max(0, p.life);
+    cx.translate(p.x, p.y); cx.rotate(p.rot);
+    cx.fillStyle = p.c; cx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h); cx.restore();
+  });
+  celRaf = alive ? requestAnimationFrame(celTick) : null;
+}
+
+// ---------- 1-daraja: maskot lentasi ----------
+// Qadri saqlanishi uchun kamdan-kam chiqariladi — har bir sahifa uchun emas.
+let mtTimer = null;
+
+function mascotToast(mascot, title, sub, color) {
+  const el = document.getElementById("mtoast");
+  if (!el) return;
+  document.getElementById("mtoast-img").src = "/mascots/trim/mascot-" + mascot + ".webp?v=" + ASSET_V;
+  document.getElementById("mtoast-title").textContent = title;
+  document.getElementById("mtoast-sub").textContent = sub || "";
+  const bar = document.getElementById("mtoast-bar");
+  bar.style.background = color || MASCOT_ACCENT["mascot-" + mascot] || "var(--gold)";
+  bar.style.transition = "none"; bar.style.width = "100%";
+  el.classList.add("on");
+  haptic("light");
+  requestAnimationFrame(function () {
+    bar.style.transition = "width 3.4s linear"; bar.style.width = "0%";
+  });
+  clearTimeout(mtTimer);
+  mtTimer = setTimeout(function () { el.classList.remove("on"); }, 3400);
+}
+
+function hideMascotToast() {
+  clearTimeout(mtTimer);
+  const el = document.getElementById("mtoast");
+  if (el) el.classList.remove("on");
+}
+
+// ---------- 3-daraja: kutib olish kartochkasi ----------
+function welcomeHtml(name, unseen) {
+  if (!unseen || !unseen.length) return "";
+  const word = unseen.length > 1 ? unseen.length + " ta nishon" : "«" + stripEmoji(unseen[0]) + "» nishoni";
+  return '<div class="welc" data-action="show-unseen-badges">' +
+    '<div class="t"><b>Xush kelibsan, ' + escapeHtml(name || "") + '!</b>' +
+    '<span>Sen ko‘rmagan holda ' + escapeHtml(word) + ' qo‘lga kiritilgan.</span>' +
+    '<span class="go">Ko‘rish →</span></div>' +
+    '<div class="m"><img src="/mascots/trim/mascot-tipratikan-salom.webp?v=' + ASSET_V + '" alt=""></div>' +
+    '</div>';
+}
+
+// Kutib olish kartochkasi bosilganda — ko‘rilmagan nishonlarni tabriklaymiz
+async function showUnseenBadges(el) {
+  const card = el.closest(".welc");
+  const data = await api("/api/child/home" + asChildQuery());
+  const names = data.unseen_badges || [];
+  try { await api("/api/child/badges/seen" + asChildQuery(), { method: "POST" }); } catch (e) {}
+  if (card) card.remove();
+  celebrate(names, function () { if (State.currentTab === "home") renderChildHome(); });
 }
 
 function badgeArt(slug, size) {

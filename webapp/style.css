@@ -869,17 +869,122 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
   #app-tabs { max-width: 520px; margin: 0 auto; }
 }
 
-/* Natija oynasida shu daqiqada qo‘lga kiritilgan nishonlar */
-.new-badges {
-  margin: 14px 0 4px; padding: 14px 12px;
-  background: var(--gold-bg); border-radius: var(--radius-md);
+/* ==========================================================
+   MASKOT LENTASI — Bilig, ketma-ketlik, test, sovg‘a lahzalari
+   ========================================================== */
+#mtoast {
+  position: fixed; left: 14px; right: 14px; bottom: calc(var(--tabbar-h, 68px) + 14px);
+  max-width: 402px; margin: 0 auto; z-index: 60; overflow: hidden;
+  display: flex; align-items: center; gap: 12px; padding: 12px 16px 12px 12px;
+  background: var(--surface); border-radius: 18px;
+  box-shadow: 0 16px 34px -14px rgba(15, 23, 42, .42), 0 1px 0 rgba(255,255,255,.9) inset;
+  transform: translateY(190%); opacity: 0; pointer-events: none;
+  transition: transform .45s cubic-bezier(.2,1.3,.4,1), opacity .3s;
 }
-.new-badges .eyebrow { color: var(--gold-deep); margin-bottom: 10px; text-align: center; }
-.new-badge-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
-.new-badge { width: 78px; text-align: center; }
-.new-badge .badge-icon.has-art { width: 56px; height: 56px; margin: 0 auto 6px; }
-.new-badge .badge-icon.has-art img { width: 100%; height: 100%; display: block; }
-.new-badge span {
-  display: block; font-size: 11px; font-weight: 700;
-  line-height: 1.3; color: var(--gold-deep);
+#mtoast.on { transform: translateY(0); opacity: 1; pointer-events: auto; }
+#mtoast .m { width: 64px; height: 64px; flex: 0 0 auto; position: relative; }
+#mtoast .m img {
+  position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
+  height: 82px; width: auto; filter: drop-shadow(0 6px 10px rgba(15,23,42,.22));
 }
+#mtoast .t { min-width: 0; flex: 1; }
+#mtoast .t b { display: block; font-size: 15px; line-height: 1.2; }
+#mtoast .t span { display: block; font-size: 12.5px; color: var(--text-soft); margin-top: 3px; line-height: 1.35; }
+#mtoast .bar { position: absolute; left: 0; bottom: 0; height: 3px; background: var(--gold); }
+
+/* ==========================================================
+   NISHON TABRIGI — to‘liq ekran. Ranglar nishondan olinadi.
+   ========================================================== */
+#cel {
+  position: fixed; inset: 0; z-index: 99; display: none; overflow: hidden;
+  background: radial-gradient(115% 80% at 50% 34%, #24356B 0%, #131C3A 55%, #0B1226 100%);
+}
+#cel.on { display: block; }
+#cel canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.cel-in {
+  position: relative; height: 100%; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; padding: 30px 26px; text-align: center;
+}
+.cel-stage { position: relative; display: flex; align-items: center; justify-content: center; }
+.rays {
+  position: absolute; top: 50%; left: 50%; width: 460px; height: 460px; margin: -230px 0 0 -230px;
+  border-radius: 50%; opacity: 0; pointer-events: none; filter: blur(1.5px);
+  background: repeating-conic-gradient(from 0deg, var(--ray, rgba(255,240,200,.20)) 0 3.5deg, transparent 3.5deg 22deg);
+  -webkit-mask: radial-gradient(circle, transparent 88px, #000 104px, #000 195px, transparent 225px);
+  mask: radial-gradient(circle, transparent 88px, #000 104px, #000 195px, transparent 225px);
+}
+#cel.on .rays { animation: cel-ray-in .7s .25s forwards, cel-spin 15s 1s linear infinite; }
+@keyframes cel-ray-in { to { opacity: 1; } }
+@keyframes cel-spin { to { transform: rotate(360deg); } }
+.halo {
+  position: absolute; top: 50%; left: 50%; width: 178px; height: 178px; margin: -89px 0 0 -89px;
+  border-radius: 50%; border: 2px solid rgba(255,255,255,.5); opacity: 0;
+}
+#cel.on .halo { animation: cel-pulse 2.4s .5s ease-out infinite; }
+#cel.on .halo.d2 { animation-delay: 1.3s; }
+@keyframes cel-pulse {
+  0% { transform: scale(.72); opacity: .55; } 70% { opacity: 0; }
+  100% { transform: scale(2.3); opacity: 0; }
+}
+.cel-badge {
+  width: 174px; height: 174px; flex: 0 0 auto; position: relative; opacity: 0;
+  filter: drop-shadow(0 16px 34px rgba(0,0,0,.5));
+}
+.cel-badge img { width: 100%; height: 100%; display: block; }
+#cel.on .cel-badge { animation: cel-pop .8s .1s cubic-bezier(.2,1.5,.35,1) forwards; }
+@keyframes cel-pop {
+  0% { opacity: 0; transform: scale(.25) rotate(-28deg); }
+  55% { opacity: 1; transform: scale(1.14) rotate(6deg); }
+  75% { transform: scale(.97) rotate(-2deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+.cel-mascot { position: absolute; bottom: -34px; right: -58px; opacity: 0; }
+.cel-mascot img { height: 118px; width: auto; display: block; filter: drop-shadow(0 8px 16px rgba(0,0,0,.45)); }
+#cel.on .cel-mascot { animation: cel-mascot-in .6s .75s cubic-bezier(.2,1.5,.4,1) forwards; }
+@keyframes cel-mascot-in {
+  from { opacity: 0; transform: translateY(26px) scale(.7); } to { opacity: 1; transform: none; }
+}
+.cel-eyebrow {
+  font-size: 12.5px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--eyebrow, #FCD34D); margin: 26px 0 8px; opacity: 0;
+}
+.cel-name {
+  font-size: 27px; font-weight: 800; color: #fff; line-height: 1.15; margin: 0; opacity: 0;
+  text-shadow: 0 3px 18px rgba(0,0,0,.4);
+}
+.cel-msg {
+  font-size: 14.5px; line-height: 1.6; color: rgba(255,255,255,.82);
+  margin: 14px 0 0; max-width: 310px; opacity: 0;
+}
+.cel-count { font-size: 12px; font-weight: 700; color: rgba(255,255,255,.5); margin-top: 16px; opacity: 0; }
+.cel-btn {
+  margin-top: 28px; border: 0; border-radius: 15px; padding: 15px 46px; font-family: inherit;
+  font-size: 16px; font-weight: 800; color: #1E293B; cursor: pointer; opacity: 0;
+  background: var(--btn, linear-gradient(180deg, #FFE79A, #F5C243));
+  box-shadow: 0 10px 24px -10px rgba(0,0,0,.55);
+}
+#cel.on .cel-eyebrow { animation: cel-up .5s .55s forwards; }
+#cel.on .cel-name { animation: cel-up .5s .65s forwards; }
+#cel.on .cel-msg { animation: cel-up .5s .8s forwards; }
+#cel.on .cel-count { animation: cel-up .5s .9s forwards; }
+#cel.on .cel-btn { animation: cel-up .5s 1s forwards; }
+@keyframes cel-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+/* ==========================================================
+   KUTIB OLISH — bola ilovaga kirganda, tipratikan bilan
+   ========================================================== */
+.welc {
+  position: relative; display: flex; align-items: center; gap: 10px; padding: 14px 16px;
+  background: linear-gradient(135deg, var(--brand-bg), var(--bg));
+  border: 1px solid #D8E4FB; border-radius: var(--radius-md);
+  box-shadow: var(--shadow-raised); overflow: hidden; margin-bottom: 14px;
+}
+.welc .m {
+  width: 86px; flex: 0 0 auto; margin: -14px -6px -16px 0; order: 2;
+  display: flex; align-items: flex-end; justify-content: center;
+}
+.welc .m img { height: 104px; width: auto; display: block; }
+.welc .t { min-width: 0; flex: 1; }
+.welc .t b { display: block; font-size: 15.5px; line-height: 1.25; }
+.welc .t span { display: block; font-size: 12.5px; color: var(--text-soft); margin-top: 4px; line-height: 1.4; }
+.welc .go { font-size: 12.5px; font-weight: 800; color: var(--brand-deep); margin-top: 7px; display: block; }

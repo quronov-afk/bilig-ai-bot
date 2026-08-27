@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5" />
+<link rel="stylesheet" href="style.css?v=6" />
 </head>
 <body>
 
@@ -107,8 +107,33 @@
   <!-- Toast bildirishnoma -->
   <div id="toast" class="toast hidden"></div>
 
+  <!-- Maskot lentasi: Bilig, ketma-ketlik, test va sovg‘a lahzalarida chiqadi -->
+  <div id="mtoast">
+    <div class="m"><img id="mtoast-img" alt=""></div>
+    <div class="t"><b id="mtoast-title"></b><span id="mtoast-sub"></span></div>
+    <div class="bar" id="mtoast-bar"></div>
+  </div>
+
+  <!-- Nishon tabrigi: to‘liq ekran, nishonning o‘z rangida -->
+  <div id="cel">
+    <canvas id="cel-conf"></canvas>
+    <div class="cel-in">
+      <div class="cel-stage">
+        <div class="rays"></div>
+        <div class="halo"></div><div class="halo d2"></div>
+        <div class="cel-badge"><img id="cel-img" alt=""></div>
+        <div class="cel-mascot"><img src="/mascots/trim/mascot-sherbola-galaba.webp" alt=""></div>
+      </div>
+      <p class="cel-eyebrow">Yangi nishon</p>
+      <h2 class="cel-name" id="cel-name"></h2>
+      <p class="cel-msg" id="cel-msg"></p>
+      <p class="cel-count" id="cel-count"></p>
+      <button class="cel-btn" id="cel-btn">Ajoyib!</button>
+    </div>
+  </div>
+
 </div>
 
-<script src="app.js?v=5"></script>
+<script src="app.js?v=6"></script>
 </body>
 </html>

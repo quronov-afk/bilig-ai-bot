@@ -32,7 +32,7 @@ from database import (
     conn, cursor, get_parent_id, update_streak,
     calculate_and_update_rank, get_child_total_pages,
     get_child_passport_data, generate_admin_stats_text,
-    generate_progress_bar
+    generate_progress_bar, get_badges
 )
 import ai_service
 import badges_engine
@@ -62,6 +62,11 @@ for _col_sql in (
     # Ilgari faqat umumiy foiz saqlanardi, sanoq esa yo‘qolib ketardi.
     "ALTER TABLE Diagnostic_Logs ADD COLUMN correct_count INTEGER",
     "ALTER TABLE Diagnostic_Logs ADD COLUMN total_count INTEGER",
+    # Bolaga ko‘rsatilgan nishonlar soni. Bundan ortig‘i — u hali ko‘rmagan
+    # nishonlar; ilovaga kirganda tipratikan ularni yetkazadi.
+    "ALTER TABLE Users ADD COLUMN badges_seen INTEGER DEFAULT 0",
+    # Ota-onaga oxirgi marta 3 kunlik xulosa yuborilgan vaqt
+    "ALTER TABLE Users ADD COLUMN last_summary_at TEXT",
 ):
     try:
         cursor.execute(_col_sql)
@@ -341,6 +346,91 @@ def send_telegram_message(chat_id: int, text: str):
         )
     except Exception as e:
         print("Telegram xabar yuborishda xatolik:", e)
+
+
+def notify_parent(child_id: int, text: str):
+    """Farzandning ota-onasiga xabar yuboradi.
+
+    HOZIR bu Telegram orqali ketadi. Kelajakda o‘z ilovamiz chiqqanda
+    faqat shu funksiya ichini almashtirish kifoya — chaqiruv joylari
+    o‘zgarmaydi.
+    """
+    try:
+        parent_id = get_parent_id(child_id)
+        if parent_id:
+            send_telegram_message(parent_id, text)
+    except Exception:
+        pass
+
+
+def child_name_of(child_id: int) -> str:
+    try:
+        cursor.execute("SELECT name FROM Users WHERE user_id = ?", (child_id,))
+        row = cursor.fetchone()
+        return row[0] if row and row[0] else "Farzandingiz"
+    except Exception:
+        return "Farzandingiz"
+
+
+_BADGE_META_CACHE = None
+
+
+def badge_meta():
+    """webapp/badges/index.json — nishon nomi, sharti va matni."""
+    global _BADGE_META_CACHE
+    if _BADGE_META_CACHE is None:
+        try:
+            with io.open(os.path.join(WEBAPP_DIR, "badges", "index.json"),
+                         encoding="utf-8") as fh:
+                _BADGE_META_CACHE = json.load(fh)
+        except Exception:
+            _BADGE_META_CACHE = {}
+    return _BADGE_META_CACHE
+
+
+def badge_cond(name: str) -> str:
+    for meta in badge_meta().values():
+        if meta.get("name") == name:
+            return meta.get("cond", "")
+    return ""
+
+
+def announce_badges(child_id: int, names):
+    """Yangi nishonlar haqida ota-onaga xabar beradi va ularni
+    «bolaga ko‘rsatilgan» deb belgilaydi (tabrik ekrani darhol chiqadi)."""
+    if not names:
+        return
+    try:
+        cursor.execute("UPDATE Users SET badges_seen = ? WHERE user_id = ?",
+                       (len(get_badges(child_id)), child_id))
+        conn.commit()
+    except Exception:
+        pass
+    name = child_name_of(child_id)
+    if len(names) == 1:
+        cond = badge_cond(names[0])
+        notify_parent(child_id, f"🏅 <b>{name}</b> «{names[0]}» nishonini qo‘lga kiritdi.\n"
+                                f"{cond}. Bugun uni bir maqtab qo‘ying.")
+    else:
+        lst = "\n".join("• " + n for n in names)
+        notify_parent(child_id, f"🏅 <b>{name}</b> birdaniga {len(names)} ta nishon oldi:\n{lst}")
+
+
+def unseen_badges(child_id: int):
+    """Bola hali tabrigini ko‘rmagan nishonlar.
+
+    Nishon ota-ona «Bolaxona» rejimida ishlaganda yoki bot orqali
+    berilgan bo‘lishi mumkin — bunda bola tabrikni ko‘rmay qoladi.
+    Ilovaga kirganda tipratikan ularni yetkazadi.
+    """
+    have = get_badges(child_id)
+    try:
+        cursor.execute("SELECT badges_seen FROM Users WHERE user_id = ?", (child_id,))
+        row = cursor.fetchone()
+        seen = int(row[0]) if row and row[0] else 0
+    except Exception:
+        seen = 0
+    return have[seen:] if len(have) > seen else []
 
 
 def get_age_category_key(age: int) -> str:
@@ -1414,8 +1504,21 @@ def child_home():
         "completed_books": completed_books, "active_books": active_books,
         "shelf_books": get_shelf_books(child_id),
         "last_audio_score": last_audio_score,
-        "child_note": get_latest_child_note(child_id)
+        "child_note": get_latest_child_note(child_id),
+        "unseen_badges": unseen_badges(child_id)
     })
+
+
+@app.route("/api/child/badges/seen", methods=["POST"])
+@require_auth
+def child_mark_badges_seen():
+    """Bola nishonlarni ko‘rdi — endi kutib olish kartochkasi chiqmaydi."""
+    child_id = _resolve_active_child(request)
+    with db_lock:
+        cursor.execute("UPDATE Users SET badges_seen = ? WHERE user_id = ?",
+                       (len(get_badges(child_id)), child_id))
+        conn.commit()
+    return jsonify({"ok": True})
 
 
 @app.route("/api/child/passport", methods=["GET"])
@@ -1585,11 +1688,15 @@ def _apply_page_progress(book_id, child_id, new_page):
             )
         conn.commit()
 
+    cursor.execute("SELECT streak_days FROM Users WHERE user_id = ?", (child_id,))
+    _r = cursor.fetchone()
+    old_streak = _r[0] if _r else 0
     streak, shield_used = update_streak(child_id)
     rank, total_pages = calculate_and_update_rank(child_id)
 
     with db_lock:
         new_badges = badges_engine.check_badges(child_id, {"shield_used": shield_used})
+    announce_badges(child_id, new_badges)
 
     cursor.execute("SELECT balance_coins FROM Users WHERE user_id = ?", (child_id,))
     balance = cursor.fetchone()[0]
@@ -1598,7 +1705,7 @@ def _apply_page_progress(book_id, child_id, new_page):
         "ok": True, "book_title": book_title, "new_page": new_page,
         "earned_bilig": max(0, earned_bilig), "balance": balance,
         "streak": streak, "shield_used": shield_used, "rank": rank, "total_pages": total_pages,
-        "new_badges": new_badges
+        "new_badges": new_badges, "streak_up": streak > old_streak
     })
 
 
@@ -1645,6 +1752,8 @@ def child_submit_voice(book_id):
         conn.commit()
         new_badges = badges_engine.check_badges(
             child_id, {"ezgulik": bool(result.get("badge_ezgulik", False))})
+
+    announce_badges(child_id, new_badges)
 
     parent_id = get_parent_id(child_id)
     if parent_id:
@@ -1731,6 +1840,22 @@ def child_submit_test(book_id):
         )
         conn.commit()
         new_badges = badges_engine.check_badges(child_id)
+
+    # Yakuniy test — kitob tugadi. Bu ota-ona kutayotgan xabar.
+    if stage == "final_test":
+        cursor.execute("SELECT title, pages_read FROM Plan_Books WHERE book_id = ?", (book_id,))
+        brow = cursor.fetchone()
+        if brow:
+            cursor.execute(
+                "SELECT COUNT(*) FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+                "WHERE rp.child_id = ? AND pb.is_completed = 1", (child_id,))
+            done = cursor.fetchone()[0]
+            notify_parent(
+                child_id,
+                f"📖 <b>{child_name_of(child_id)}</b> «{brow[0]}» kitobini tugatdi.\n"
+                f"{brow[1] or 0} bet. Javonida endi {done} ta tugatilgan kitob bor."
+            )
+    announce_badges(child_id, new_badges)
 
     return jsonify({"ok": True, "correct": correct, "total": total, "percent": percent,
                     "earned_bilig": earned, "new_badges": new_badges})
@@ -1832,6 +1957,126 @@ def child_rating():
 # 5) ADMIN (loyiha egasi) — ixtiyoriy, /stats bilan bir xil
 # ==========================================================
 
+# ==========================================================
+# 3 KUNLIK XULOSA — ota-onaga o‘z-o‘zidan boradigan yagona xabar
+# ----------------------------------------------------------
+# Qolgan barcha xabarlar bola biror amal qilganda yuboriladi.
+# Bu esa «hech kim hech nima qilmaganda» ham ishlashi kerak,
+# shuning uchun fon rejimidagi alohida ip (thread) kuzatib turadi.
+# ==========================================================
+SUMMARY_EVERY_DAYS = 3
+SUMMARY_HOUR = 20          # kechqurun 20:00 dan keyin yuboriladi
+_WEEKDAYS = ["dushanba", "seshanba", "chorshanba", "payshanba", "juma", "shanba", "yakshanba"]
+
+
+def build_summary(child_id: int, days: int = SUMMARY_EVERY_DAYS):
+    """Oxirgi N kundagi natijalar. Hech nima bo‘lmagan bo‘lsa — None."""
+    since = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d %H:%M:%S")
+
+    cursor.execute("SELECT SUM(pages_added), COUNT(DISTINCT substr(created_at, 1, 10)) "
+                   "FROM Reading_Logs WHERE child_id = ? AND created_at >= ?", (child_id, since))
+    row = cursor.fetchone()
+    pages = row[0] or 0
+    active_days = row[1] or 0
+
+    cursor.execute("SELECT substr(created_at, 1, 10), SUM(pages_added) FROM Reading_Logs "
+                   "WHERE child_id = ? AND created_at >= ? GROUP BY 1 ORDER BY 2 DESC LIMIT 1",
+                   (child_id, since))
+    best = cursor.fetchone()
+
+    cursor.execute("SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id = ? "
+                   "AND type = 'test' AND created_at >= ?", (child_id, since))
+    tests = cursor.fetchone()[0]
+
+    cursor.execute("SELECT streak_days FROM Users WHERE user_id = ?", (child_id,))
+    r = cursor.fetchone()
+    streak = r[0] if r else 0
+
+    name = child_name_of(child_id)
+    if not pages and not tests:
+        # Uch kun ichida hech nima bo‘lmadi — bu ham xabar, lekin boshqacha
+        return (f"📕 <b>{name}</b> so‘nggi {days} kunda kitob ochmadi.\n"
+                f"Ketma-ketligi yo‘qolib qolmasin — bugun eslatib qo‘ysangiz bo‘ladi.")
+
+    lines = [f"📊 <b>{days} kunlik xulosa — {name}</b>", ""]
+    if pages:
+        lines.append(f"• {pages} bet o‘qildi ({active_days} kun faol)")
+    if tests:
+        lines.append(f"• {tests} ta test topshirdi")
+    lines.append(f"• Ketma-ket {streak}-kun")
+    if best and best[1]:
+        try:
+            wd = _WEEKDAYS[datetime.strptime(best[0], "%Y-%m-%d").weekday()]
+            lines.append(f"\nEng faol kuni: {wd} — {best[1]} bet.")
+        except Exception:
+            pass
+    return "\n".join(lines)
+
+
+def _summary_due(child_id: int) -> bool:
+    cursor.execute("SELECT last_summary_at FROM Users WHERE user_id = ?", (child_id,))
+    row = cursor.fetchone()
+    if not row or not row[0]:
+        return True
+    try:
+        last = datetime.strptime(row[0], "%Y-%m-%d %H:%M:%S")
+    except Exception:
+        return True
+    return (datetime.now() - last).days >= SUMMARY_EVERY_DAYS
+
+
+def send_due_summaries():
+    """Muddati kelgan barcha xulosalarni yuboradi."""
+    now = datetime.now()
+    if now.hour < SUMMARY_HOUR:
+        return 0
+    try:
+        cursor.execute("SELECT DISTINCT child_id FROM Family_Link")
+        kids = [r[0] for r in cursor.fetchall()]
+    except Exception:
+        return 0
+    sent = 0
+    for child_id in kids:
+        try:
+            if not _summary_due(child_id):
+                continue
+            text = build_summary(child_id)
+            if text:
+                notify_parent(child_id, text)
+            with db_lock:
+                cursor.execute("UPDATE Users SET last_summary_at = ? WHERE user_id = ?",
+                               (now.strftime("%Y-%m-%d %H:%M:%S"), child_id))
+                conn.commit()
+            sent += 1
+        except Exception:
+            continue
+    return sent
+
+
+def _summary_loop():
+    while True:
+        try:
+            send_due_summaries()
+        except Exception:
+            pass
+        time.sleep(1800)          # yarim soatda bir marta tekshiradi
+
+
+def start_summary_worker():
+    t = threading.Thread(target=_summary_loop, daemon=True)
+    t.start()
+    print("[webapp_api] 3 kunlik xulosa kuzatuvchisi ishga tushdi")
+
+
+@app.route("/api/admin/summary_now", methods=["POST"])
+@require_auth
+def admin_summary_now():
+    """Sinov uchun: xulosalarni darhol yuborish (faqat loyiha egasi)."""
+    if OWNER_ID and g.user_id != OWNER_ID:
+        return jsonify({"error": "Ruxsat yo‘q"}), 403
+    return jsonify({"ok": True, "sent": send_due_summaries()})
+
+
 @app.route("/api/admin/stats", methods=["GET"])
 @require_auth
 def admin_stats():
@@ -1902,6 +2147,7 @@ def serve_static(path):
 
 def run_webapp_server(port: int):
     """main.py / server.py ichidan thread sifatida chaqiriladi."""
+    start_summary_worker()
     app.run(host="0.0.0.0", port=port, threaded=True, use_reloader=False)
 
 

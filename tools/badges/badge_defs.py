@@ -367,3 +367,49 @@ BADGES["xazinabon"] = ("Xazinabon", "2000 Bilig to‘planganda", "oltin", """
         fill="#8A5A1E" text-anchor="middle">B</text>
   <text x="80" y="79.5" font-family="Nunito,sans-serif" font-size="8" font-weight="900"
         fill="#8A5A1E" text-anchor="middle">B</text>""")
+
+
+# =====================================================================
+# BOLAGA ATALGAN MOTIVATSION XABARLAR
+# ---------------------------------------------------------------------
+# Nishon qo‘lga kiritilganda to‘liq ekran tabrikda shu matn chiqadi.
+# Bolaga «sen» deb, iliq va qisqa murojaat qilinadi — maqtov emas,
+# uning aynan nima qilganini ko‘rsatib berish.
+# =====================================================================
+MSG = {
+    # I. Mutolaa hajmi
+    "birinchi-qadam":     "Ilk besh sahifa — eng qiyini shu edi. Endi yo‘l ochiq.",
+    "kitobxon-sayyoh":    "Yuz bet! Sen allaqachon uzoq yo‘l bosgan sayyohsan.",
+    "kitoblar-sultoni":   "Besh yuz bet. Bu — javondagi bir necha kitob, boshingdagi bir necha dunyo.",
+    "ming-betlik-dovon":  "Ming bet! Bu — bir necha dunyo, bir necha hayot. Sen ularni o‘z ko‘zing bilan ko‘rding.",
+    "kitoblar-ummoni":    "Besh ming bet! Sen kitoblar ummonida suzayotgan kemasan.",
+    # II. Uzluksizlik
+    "olovli-qanot":       "Uch kun uzluksiz! Odat shunday tug‘iladi — kichik qadamlardan.",
+    "yengilmas-qahramon": "Bir hafta bo‘yi bir kun ham qoldirmading. Bu — chinakam qahramonlik.",
+    "mutolaa-afsonasi":   "O‘ttiz kun! Endi kitob sening kunlik nonings kabi.",
+    "olmos-iroda":        "Yuz kun. Olmos ham shunday tug‘iladi — bosim ostida, sabr bilan.",
+    "yil-qahramoni":      "Bir yil! Buni ko‘pchilik orzu qiladi, sen esa qilding.",
+    "qalqon":             "Bir kun qoldirding, lekin ertasiga qaytding. Yiqilib turish — eng katta kuch.",
+    # III. Tugatilgan kitoblar
+    "marra-golibi":       "Birinchi kitob tamom! Oxirgi sahifani yopish — alohida zavq, shundaymi?",
+    "tezkor-mutolaa":     "Uch kunda butun kitob! Seni to‘xtatib bo‘lmaydi.",
+    "kichik-kutubxonachi": "O‘nta kitob! Endi seni chinakam kitobxon deyish mumkin.",
+    "mutolaa-akademigi":  "Yigirma besh kitob. Sen endi shunchaki o‘quvchi emas — bilimdonsan.",
+    # IV. Notiqlik va tafakkur
+    "bilim-notigi":       "AI ustoz senga eng yuqori bahoni berdi. Nutqing ravon va aniq edi.",
+    "tafakkur":           "Sen o‘z fikringni aytding — kitobda yozilganini emas. Eng qimmatlisi shu.",
+    "buyuk-suxandon":     "O‘nta kitob bo‘yicha ajoyib gapirib berding. Sen chinakam suxandonsan.",
+    "oltin-qalam":        "So‘zlaring go‘zal va tanlangan edi. Til — sening quroling.",
+    # V. Zukkolik
+    "zukko-kitobxon":     "Hamma savolga to‘g‘ri javob! Kitobni chindan yashab chiqibsan.",
+    "mantiq-ustasi":      "Ellik to‘g‘ri javob. Sen shunchaki o‘qimayapsan — o‘ylayapsan.",
+    "bilim-akademiyasi":  "O‘n marta ketma-ket to‘la ball. Bu tasodif emas — bu mahorat.",
+    # VI. Odat va intizom
+    "tonggi-qaldirgoch":  "Tong saharda kitob ochding. Kun shunday boshlansa, hammasi joyida bo‘ladi.",
+    "qutb-yulduzi":       "Uxlashdan oldin kitob o‘qiding. Tushlaring ham qiziqarli bo‘lsin.",
+    "maroqli":            "Dam olish kuni ham kitob ochding. Demak, mutolaa sen uchun vazifa emas — zavq.",
+    "oila-iftixori":      "Ota-onang bilan kitob haqida suhbatlashding. Ular sen bilan faxrlanadi.",
+    "chaqmoq-kitobxon":   "Bir o‘tirishda o‘ttiz betdan ko‘p! Kitobdan uzila olmadingmi?",
+    "ezgulik-elchisi":    "Sen qahramonning ezgu fazilatlarini payqading. Yaxshilikni ko‘ra bilish — katta iste'dod.",
+    "xazinabon":          "Ikki ming Bilig! Sening xazinang mehnat bilan yig‘ilgan.",
+}
