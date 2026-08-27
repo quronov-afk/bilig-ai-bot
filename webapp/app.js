@@ -983,8 +983,9 @@ document.addEventListener("click", async function (e) {
               editChildAvatar = res.avatar_id;
               closeModal();
               toast("Rasm saqlandi");
+              State.childrenCache = await api("/api/parent/children");
               await refreshHeader();
-              renderParentHome();
+              refreshAfterChildEdit(editChildId);
             } catch (err) { toast(err.error || "Rasmni saqlab bo‘lmadi"); }
           });
           break;
@@ -1287,8 +1288,16 @@ async function renderChildDetailPage(childId) {
   const data = await api("/api/parent/home/" + childId);
   const c = State.childrenCache.filter(function (x) { return x.id === childId; })[0] || {};
 
+  // O‘ng tomonda tahrirlash — ism, yosh va avatarni shu yerdan ham
+  // o‘zgartirish mumkin (Bolaxona ro‘yxatidagi tugma bilan bir xil oyna).
   let html = '<div class="detail-topbar">' +
     '<button class="back-link" data-action="back-to-home">' + icon("arrow-left", 16, 2) + ' Orqaga</button>' +
+    '<button class="edit-link" data-action="edit-child"' +
+      ' data-id="' + childId + '"' +
+      ' data-name="' + escapeHtml(data.name || c.name || "") + '"' +
+      ' data-age="' + (c.age || "") + '"' +
+      ' data-avatar="' + (c.avatar_id || "fox") + '">' +
+      icon("edit", 15, 2) + ' Tahrirlash</button>' +
     '</div>';
 
   html += '<div class="child-detail-header">' +
@@ -2821,6 +2830,15 @@ function openEditChildModal(id, name, age, avatarId) {
     '<button class="btn btn-primary btn-block" data-action="submit-edit-child" data-id="' + id + '">Saqlash</button>'
   );
 }
+// Tahrirlash oynasi ikki joydan ochiladi: Bolaxona ro‘yxatidan va
+// farzandning batafsil sahifasidan. Saqlagandan keyin foydalanuvchini
+// boshqa ekranga olib ketmaymiz — qaysi sahifada bo‘lsa, o‘sha yangilanadi.
+function refreshAfterChildEdit(childId) {
+  if (document.querySelector(".detail-topbar")) return renderChildDetailPage(Number(childId));
+  if (State.currentTab === "bolaxona") return switchTab("bolaxona");
+  return renderParentHome();
+}
+
 async function submitEditChild(id) {
   const name = document.getElementById("edit-child-name").value.trim();
   const age = Number(document.getElementById("edit-child-age").value);
@@ -2829,7 +2847,7 @@ async function submitEditChild(id) {
   closeModal();
   toast("Ma'lumotlar saqlandi");
   State.childrenCache = await api("/api/parent/children");
-  renderChildDetailPage(Number(id));
+  refreshAfterChildEdit(id);
 }
 // ==========================================================
 // FARZAND QO‘SHISH
