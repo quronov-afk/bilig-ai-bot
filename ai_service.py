@@ -122,6 +122,10 @@ async def _ask(task: str, contents, json_mode=False, max_tokens=None, fast=False
     max_tokens    — javob uzunligi chegarasi (faqat fast rejimda xavfsiz).
     """
     global _thinking_off_supported
+    if client is None:
+        # Ilgari bu holatda «'NoneType' object has no attribute 'aio'» degan
+        # tushunarsiz xato chiqardi.
+        raise RuntimeError("AI kaliti sozlanmagan (GEMINI_API_KEY yo‘q)")
     tries = 0
     while True:
         tries += 1
@@ -180,6 +184,34 @@ def image_part(image_bytes: bytes):
     else:
         mime = "image/jpeg"
     return types.Part.from_bytes(data=image_bytes, mime_type=mime)
+
+
+def audio_part(audio_bytes: bytes):
+    """Audioni AI ga uzatish uchun tayyorlaydi.
+
+    Ilgari hamma audio «audio/ogg» deb yuborilardi. Lekin brauzer odatda
+    WEBM (Chrome/Android) yoki MP4 (iPhone) formatida yozadi — natijada
+    AI faylni ocholmay, so‘rovni bir zumda rad etardi. Endi format
+    baytlarning o‘zidan aniqlanadi.
+    """
+    head = audio_bytes[:16]
+    if head[:4] == b"RIFF" and head[8:12] == b"WAVE":
+        mime = "audio/wav"
+    elif head[:4] == b"OggS":
+        mime = "audio/ogg"
+    elif head[:4] == b"fLaC":
+        mime = "audio/flac"
+    elif head[:3] == b"ID3" or (len(head) > 1 and head[0] == 0xFF and (head[1] & 0xE0) == 0xE0):
+        mime = "audio/mp3"
+    elif head[4:8] == b"ftyp":
+        mime = "audio/mp4"
+    elif head[:4] == b"\x1aE\xdf\xa3":
+        mime = "audio/webm"          # Matroska/WebM imzosi
+    elif head[:4] == b"FORM":
+        mime = "audio/aiff"
+    else:
+        mime = "audio/mp3"
+    return types.Part.from_bytes(data=audio_bytes, mime_type=mime)
 
 
 def clean_json(text: str) -> str:
@@ -347,7 +379,8 @@ Natijani FAQAT quyidagi JSON ro‘yxat formatida qaytar:
     "options": ["A) Variant 1", "B) Variant 2", "C) Variant 3"], "answer": "A) Variant 1"}}
 ]"""
 
-    response = await _ask("generate_test_from_notes", [prompt], json_mode=True)
+    # Uch marta urinamiz: bu ish fon rejimida bajariladi, hech kim kutmaydi.
+    response = await _ask("generate_test_from_notes", [prompt], json_mode=True, attempts=3)
     raw_json = clean_json(response.text)
     questions = json.loads(raw_json)
     return questions, raw_json
@@ -384,7 +417,8 @@ async def generate_test_bank_from_photos(photos_bytes_list: list):
         contents.append(image_part(img_bytes))
 
     try:
-        response = await _ask("generate_test_bank", contents, json_mode=True)
+        # Fon rejimida bajariladi — qayta urinish foydalanuvchini kuttirmaydi.
+        response = await _ask("generate_test_bank", contents, json_mode=True, attempts=3)
         raw_json = clean_json(response.text)
         questions = json.loads(raw_json)
         return questions, raw_json
@@ -432,7 +466,7 @@ async def evaluate_voice_summary(audio_bytes: bytes, age: int, book_title: str):
     try:
         response = await _ask("evaluate_voice_summary", [
             prompt,
-            types.Part.from_bytes(data=audio_bytes, mime_type="audio/ogg")
+            audio_part(audio_bytes)
         ], json_mode=True)
         return json.loads(clean_json(response.text))
     except Exception as e:

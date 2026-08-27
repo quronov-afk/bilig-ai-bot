@@ -1904,6 +1904,86 @@ function showPageResultModal(res) {
 
 let mediaRecorder = null, audioChunks = [], recordSeconds = 0, recordTimer = null;
 
+// ==========================================================
+// AUDIONI AI TUSHUNADIGAN FORMATGA O‘GIRISH
+// ----------------------------------------------------------
+// Brauzer ovozni o‘z formatida yozadi: Chrome/Android — WEBM,
+// iPhone — MP4. AI esa bu formatlarni qabul qilmaydi va so‘rovni bir
+// zumda rad etadi. Shuning uchun telefonning o‘zida WAV ga o‘giramiz —
+// bu format hamma joyda ishlaydi.
+// Ovoz 16 kHz, bir kanalga tushiriladi: nutq uchun shu yetarli va
+// fayl bir necha barobar yengil bo‘ladi.
+// ==========================================================
+const VOICE_SAMPLE_RATE = 16000;
+const VOICE_MAX_SECONDS = 150;      // 2,5 daqiqa — bundan uzog‘i shart emas
+
+function encodeWav(samples, rate) {
+  const buf = new ArrayBuffer(44 + samples.length * 2);
+  const view = new DataView(buf);
+  const str = function (pos, s) { for (let i = 0; i < s.length; i++) view.setUint8(pos + i, s.charCodeAt(i)); };
+  str(0, "RIFF");
+  view.setUint32(4, 36 + samples.length * 2, true);
+  str(8, "WAVEfmt ");
+  view.setUint32(16, 16, true);          // fmt bo‘limi uzunligi
+  view.setUint16(20, 1, true);           // PCM
+  view.setUint16(22, 1, true);           // bir kanal
+  view.setUint32(24, rate, true);
+  view.setUint32(28, rate * 2, true);
+  view.setUint16(32, 2, true);
+  view.setUint16(34, 16, true);          // 16 bit
+  str(36, "data");
+  view.setUint32(40, samples.length * 2, true);
+  let p = 44;
+  for (let i = 0; i < samples.length; i++) {
+    let v = Math.max(-1, Math.min(1, samples[i]));
+    view.setInt16(p, v < 0 ? v * 0x8000 : v * 0x7FFF, true);
+    p += 2;
+  }
+  return new Blob([buf], { type: "audio/wav" });
+}
+
+async function audioToWav(blob) {
+  const Ctx = window.AudioContext || window.webkitAudioContext;
+  if (!Ctx) return blob;                       // eski brauzer — borini yuboramiz
+  const bytes = await blob.arrayBuffer();
+  const ctx = new Ctx();
+  let decoded;
+  try {
+    decoded = await new Promise(function (res, rej) {
+      const p = ctx.decodeAudioData(bytes.slice(0), res, rej);
+      if (p && p.then) p.then(res, rej);       // yangi brauzerlarda Promise qaytadi
+    });
+  } catch (e) {
+    try { ctx.close(); } catch (e2) {}
+    return blob;                               // ocholmadik — borini yuboramiz
+  }
+  // Kanallarni qo‘shib, bitta kanalga tushiramiz
+  const chans = [];
+  for (let c = 0; c < decoded.numberOfChannels; c++) chans.push(decoded.getChannelData(c));
+  const mono = new Float32Array(decoded.length);
+  for (let i = 0; i < decoded.length; i++) {
+    let sum = 0;
+    for (let c = 0; c < chans.length; c++) sum += chans[c][i];
+    mono[i] = sum / chans.length;
+  }
+  // 16 kHz ga tushiramiz
+  const ratio = decoded.sampleRate / VOICE_SAMPLE_RATE;
+  let out = mono;
+  if (ratio > 1) {
+    const n = Math.floor(mono.length / ratio);
+    out = new Float32Array(n);
+    for (let i = 0; i < n; i++) {
+      // Oraliqdagi qiymatlar o‘rtachasi — shovqin kamayadi
+      const from = Math.floor(i * ratio), to = Math.min(mono.length, Math.floor((i + 1) * ratio));
+      let sum = 0, k = 0;
+      for (let j = from; j < to; j++) { sum += mono[j]; k++; }
+      out[i] = k ? sum / k : 0;
+    }
+  }
+  try { ctx.close(); } catch (e) {}
+  return encodeWav(out, ratio > 1 ? VOICE_SAMPLE_RATE : decoded.sampleRate);
+}
+
 function openVoiceModal(bookId) {
   openModal("Ovozli xulosa",
     '<p class="section-sub">Kitob haqida 1-2 daqiqa gapirib bering: nima haqida edi, sizga nima yoqdi?</p>' +
@@ -1939,7 +2019,18 @@ function openVoiceModal(bookId) {
         };
         mediaRecorder.start();
         recBtn.innerHTML = icon("x", 26, 2);
-        recordTimer = setInterval(function () { recordSeconds++; timeEl.textContent = "Yozilmoqda… " + recordSeconds + "s"; }, 1000);
+        recordTimer = setInterval(function () {
+          recordSeconds++;
+          timeEl.textContent = "Yozilmoqda… " + recordSeconds + "s";
+          // Juda uzun yozuv faylni og‘irlashtiradi va sekin internetda
+          // yuborilmaydi. 2,5 daqiqada o‘zi to‘xtaydi — bu yetarli.
+          if (recordSeconds >= VOICE_MAX_SECONDS) {
+            mediaRecorder.stop();
+            clearInterval(recordTimer);
+            recBtn.innerHTML = icon("mic", 28, 1.7);
+            toast("Yozuv " + Math.round(VOICE_MAX_SECONDS / 60) + " daqiqada to‘xtadi — bu yetarli");
+          }
+        }, 1000);
       } catch (e) { toast("Mikrofonga ruxsat berilmadi. Fayl yuklang."); }
     } else {
       mediaRecorder.stop();
@@ -1958,9 +2049,20 @@ function openVoiceModal(bookId) {
 
   document.getElementById("voice-send-btn").onclick = async function () {
     if (!recordedBlob) { toast("Avval ovoz yozing yoki fayl tanlang"); return; }
-    openModal("AI Ustoz tinglamoqda", '<div class="empty-state"><div class="spinner"></div>Ovozli xulosa tahlil qilinmoqda…</div>');
+    openModal("AI Ustoz tinglamoqda",
+      '<div class="empty-state" style="padding:26px 0"><div class="spinner"></div>' +
+      '<p style="font-weight:700;color:var(--text);margin:12px 0 4px">Ovoz tayyorlanmoqda…</p></div>');
+    // Telefonning o‘z formati (WEBM/MP4) AI ga to‘g‘ri kelmaydi — WAV ga o‘giramiz.
+    let sendBlob = recordedBlob;
+    try { sendBlob = await audioToWav(recordedBlob); } catch (e) { sendBlob = recordedBlob; }
+    if (!sendBlob || !sendBlob.size) { toast("Ovoz yozilmadi. Qaytadan urinib ko‘ring."); closeModal(); return; }
+    openModal("AI Ustoz tinglamoqda",
+      '<div class="empty-state" style="padding:26px 0"><div class="spinner"></div>' +
+      '<p style="font-weight:700;color:var(--text);margin:12px 0 4px">AI Ustoz tinglayapti…</p>' +
+      '<p style="margin:0">Bu yarim daqiqacha davom etadi.</p></div>');
     const fd = new FormData();
-    fd.append("audio", recordedBlob, "summary.webm");
+    const ext = (sendBlob.type || "").indexOf("wav") >= 0 ? "wav" : "webm";
+    fd.append("audio", sendBlob, "summary." + ext);
     try {
       const res = await api("/api/child/book/" + bookId + "/voice" + asChildQuery(), { method: "POST", body: fd });
       if (res.bonus_bilig >= 4) {
@@ -1977,7 +2079,17 @@ function openVoiceModal(bookId) {
       if (res.new_badges && res.new_badges.length) celebrate(res.new_badges, showVoice);
       else showVoice();
       refreshHeader();
-    } catch (e) { toast(e.error || "Xatolik yuz berdi"); closeModal(); }
+    } catch (e) {
+      // Sababni YASHIRMAYMIZ — «xatolik» degan bo‘sh gap hech kimga yordam bermaydi.
+      closeModal();
+      const reason = e.error || e.message || "Server javob bermadi. Internet aloqasini tekshiring.";
+      openModal("Ovozli xulosa yuborilmadi",
+        '<p class="section-sub" style="margin-top:-4px;color:var(--text);font-weight:600">' +
+          'AI ovozni tahlil qila olmadi.</p>' +
+        '<p class="section-sub" style="font-size:13.5px">' + escapeHtml(reason) + '</p>' +
+        '<button class="btn btn-primary btn-block" data-action="open-voice" data-id="' + bookId + '">Qaytadan urinish</button>' +
+        '<button class="btn btn-outline btn-block" data-action="close-modal">Yopish</button>');
+    }
   };
 }
 

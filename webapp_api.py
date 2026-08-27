@@ -2193,6 +2193,9 @@ def child_submit_voice(book_id):
     if "audio" not in request.files:
         return jsonify({"error": "Audio topilmadi"}), 400
     audio_bytes = request.files["audio"].read()
+    if len(audio_bytes) < 2000:
+        return jsonify({"error": "Ovoz juda qisqa yoki yozilmagan. "
+                                 "Mikrofonni bosib, kamida 15 soniya gapiring."}), 400
     child_id = _resolve_active_child(request)
 
     cursor.execute("SELECT title FROM Plan_Books WHERE book_id = ?", (book_id,))
@@ -2205,7 +2208,15 @@ def child_submit_voice(book_id):
     age_row = cursor.fetchone()
     age = age_row[0] if age_row and age_row[0] else 10
 
-    result = run_async(ai_service.evaluate_voice_summary(audio_bytes, age, book_title))
+    # Xatoni yashirmaymiz: jurnalga to‘liq yoziladi, foydalanuvchiga esa
+    # tushunarli sabab ko‘rsatiladi. Ilgari bu yerda 500-xato chiqib,
+    # ilova shunchaki «Xatolik yuz berdi» derdi.
+    try:
+        result = run_async(ai_service.evaluate_voice_summary(audio_bytes, age, book_title))
+    except Exception as e:
+        traceback.print_exc()
+        print("[voice] XATO kitob=%s bola=%s: %r" % (book_id, child_id, e))
+        return jsonify({"error": str(e)[:300] or "AI ovozni tahlil qila olmadi"}), 502
 
     bonus = int(result.get("bonus_bilig", 0))
     diag = result.get("diagnostic_scores", {})
