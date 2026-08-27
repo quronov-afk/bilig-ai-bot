@@ -2166,7 +2166,7 @@ def _no_cache(response):
 
 
 # Muqova, nishon va maskot rasmlari o‘zgarmaydi — ular uzoq saqlanaveradi
-_LONG_CACHE_DIRS = ("/covers/", "/badges/", "/mascots/")
+_LONG_CACHE_DIRS = ("/covers/", "/badges/", "/mascots/", "/fonts/")
 
 
 @app.after_request

@@ -158,7 +158,7 @@ let COVER_INDEX = null;
 
 // Muqovalar ro‘yxati o‘zgarganda shu raqamni oshiring — shunda telefon
 // eski nusxani emas, yangisini yuklaydi (index.html dagi ?v= bilan bir xil).
-const ASSET_V = "9";
+const ASSET_V = "10";
 
 function loadCoverIndex() {
   return fetch("/covers/index.json?v=" + ASSET_V)
