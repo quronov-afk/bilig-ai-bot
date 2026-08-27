@@ -110,8 +110,12 @@ const HERO_MASCOT = '<img class="hero-mascot" src="/mascots/mascot-boyogli-oqish
 // covers/index.json — kitob nomi bo‘yicha muqova faylini topish jadvali.
 let COVER_INDEX = null;
 
+// Muqovalar ro‘yxati o‘zgarganda shu raqamni oshiring — shunda telefon
+// eski nusxani emas, yangisini yuklaydi (index.html dagi ?v= bilan bir xil).
+const ASSET_V = "3";
+
 function loadCoverIndex() {
-  return fetch("/covers/index.json")
+  return fetch("/covers/index.json?v=" + ASSET_V)
     .then(function (r) { return r.ok ? r.json() : {}; })
     .then(function (d) { COVER_INDEX = d; })
     .catch(function () { COVER_INDEX = {}; });
@@ -152,7 +156,7 @@ function coverFile(title, author) {
 function coverHtml(title, author, cls) {
   const file = coverFile(title, author);
   if (file) {
-    return '<div class="' + cls + '"><img src="/covers/' + file + '" alt="" loading="lazy"></div>';
+    return '<div class="' + cls + '"><img src="/covers/' + file + '?v=' + ASSET_V + '" alt="" loading="lazy"></div>';
   }
   const letter = (title || "?").trim().charAt(0).toUpperCase();
   const hue = Math.abs(coverKey(title).split("").reduce(function (a, c) {
@@ -827,7 +831,7 @@ function badgesBlockHtml(badgesStr, limit) {
     shown.map(function (n) {
       const file = badgeFile(n);
       return '<span class="bs-item">' +
-        (file ? '<img src="/badges/' + file + '.svg" alt="" loading="lazy">'
+        (file ? '<img src="/badges/' + file + '.svg?v=' + ASSET_V + '" alt="" loading="lazy">'
               : '<span class="bs-fallback">' + icon("award", 22, 1.7) + '</span>') +
         '<b>' + escapeHtml(stripEmoji(n)) + '</b></span>';
     }).join("") +
@@ -1669,7 +1673,7 @@ function badgeGridHtml(badgesStr) {
   return '<div class="badge-grid">' + names.map(function (n, i) {
     const file = badgeFile(n);
     const art = file
-      ? '<img src="/badges/' + file + '.svg" alt="" loading="lazy">'
+      ? '<img src="/badges/' + file + '.svg?v=' + ASSET_V + '" alt="" loading="lazy">'
       : icon("award", 24, 1.6);
     return '<div class="badge-tile"><div class="badge-icon' + (file ? " has-art" : " tint-" + (i % 4)) + '">' + art + '</div>' +
       '<p>' + escapeHtml(stripEmoji(n)) + '</p></div>';

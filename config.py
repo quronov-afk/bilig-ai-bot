@@ -47,7 +47,9 @@ RECOMMENDED_BOOKS = {
     "8": [
         "Oltin yurakli avtobola. Anvar Obidjon.", "Alamazon va uning piyodalari. Anvar Obidjon.", "0099 raqamli yolg‘onchi. Anvar Obidjon.",
         "Meshpolvonning janglari. Anvar Obidjon.", "Pashshavoyning boshidan kechirganlari. Anvar Obidjon.", "Futbol to‘pining sarguzashtlari. Anvar Obidjon.",
-        "Mo‘ttivoymisan, Mittivoymisan?. Anvar Obidjon.", "Galaktikada bir kun 1-2-3. Saʼdulla Quronov.", "Shaytonvachchaning nayranglari. Erkin Malik.",
+        "Mo‘ttivoymisan, Mittivoymisan?. Anvar Obidjon.", "Galaktikada bir kun 1-kitob. Saʼdullo Quronov.",
+        "Galaktikada bir kun 2-kitob. Saʼdullo Quronov.",
+        "Galaktikada bir kun 3-kitob. Saʼdullo Quronov.", "Shaytonvachchaning nayranglari. Erkin Malik.",
         "7-“A” da. Erkin Malik.", "Champo otli ilon. Erkin Malik.", "Qaldirg‘och. Erkin Malik.", "Quyonlar saltanati. Xudoyberdi To‘xtaboyev.",
         "Shirin qovunlar mamlakati. Xudoyberdi To‘xtaboyev.", "Sehrli qalpoqcha. Xudoyberdi To‘xtaboyev.", "Qaylardasan, bolaligim. Xudoyberdi To‘xtaboyev.",
         "Changalzor iti. Normurod Norqobilov.", "Belbog‘. Normurod Norqobilov.", "Paxmoq. Normurod Norqobilov.",
@@ -74,7 +76,9 @@ RECOMMENDED_BOOKS = {
     "12": [
         "Sariq devni minib. Xudoyberdi To‘xtaboyev.", "Qasoskorning oltin boshi. Xudoyberdi To‘xtaboyev.",
         "Besh bolali yigitcha. Xudoyberdi To‘xtaboyev.", "Shum bola. G‘afur G‘ulom.", "O‘tmishdan ertaklar. Abdulla Qahhor.",
-        "Dunyoning ishlari. O‘tkir Hoshimov.", "Galaktikada bir kun 1-2-3. Saʼdulla Quronov.", "Ot kishnagan oqshom. Tog‘ay Murod.",
+        "Dunyoning ishlari. O‘tkir Hoshimov.", "Galaktikada bir kun 1-kitob. Saʼdullo Quronov.",
+        "Galaktikada bir kun 2-kitob. Saʼdullo Quronov.",
+        "Galaktikada bir kun 3-kitob. Saʼdullo Quronov.", "Ot kishnagan oqshom. Tog‘ay Murod.",
         "Bolalik xotiralarim. Oybek.", "Jayhun ustida bulutlar. Mirkarim Osim.", "Zulmat ichra nur. Mirkarim Osim.",
         "Nur va zulmat. Mirkarim Osim.", "Olmos jilosi. Hojiakbar Shayxov.", "Afandining qirq bir pashshasi. Zohir Aʼlam.",
         "Bo‘sh kelma, Aliqulov!. Farhod Musajonov.", "Qaysar bolaning hayoti. Mirzakalon Ismoiliy.", "Yonar daryo. Hakim Nazir.",

@@ -1511,7 +1511,9 @@ _LONG_CACHE_DIRS = ("/covers/", "/badges/", "/mascots/")
 def _apply_cache_rules(response):
     """Kesh qoidalari — Flask o‘zi tarqatadigan fayllarga ham tegishli."""
     path = request.path or "/"
-    if path.startswith(_LONG_CACHE_DIRS):
+    # Rasmlar uzoq saqlanadi, lekin ular yonidagi ro‘yxat fayli (index.json)
+    # o‘zgarib turadi — u har safar tekshirilishi kerak.
+    if path.startswith(_LONG_CACHE_DIRS) and not path.endswith(".json"):
         response.headers["Cache-Control"] = "public, max-age=604800"
     elif path.startswith("/api/"):
         _no_cache(response)
