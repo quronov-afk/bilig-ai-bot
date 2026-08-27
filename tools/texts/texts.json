@@ -1,0 +1,2844 @@
+[
+ {
+  "id": "252f78b310",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Birinchi qadam"
+ },
+ {
+  "id": "bc16dd1be9",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Ilk 5 sahifa o‘qilganda"
+ },
+ {
+  "id": "6a990ea364",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Ilk besh sahifa — eng qiyini shu edi. Endi yo‘l ochiq."
+ },
+ {
+  "id": "086e6871d8",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Kitobxon sayyoh"
+ },
+ {
+  "id": "78baa301cf",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "100 bet o‘qilganda"
+ },
+ {
+  "id": "9cb5ec361d",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Yuz bet! Sen allaqachon uzoq yo‘l bosgan sayyohsan."
+ },
+ {
+  "id": "a03f84d7e1",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Kitoblar sultoni"
+ },
+ {
+  "id": "500c7fc71a",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "500 bet o‘qilganda"
+ },
+ {
+  "id": "6e52cbf1fe",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Besh yuz bet. Bu — javondagi bir necha kitob, boshingdagi bir necha dunyo."
+ },
+ {
+  "id": "aff495338d",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Ming bir sahifa"
+ },
+ {
+  "id": "cb36eb9f91",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "1 000 bet o‘qilganda"
+ },
+ {
+  "id": "52134b68c0",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Ming bet! Bu — bir necha dunyo, bir necha hayot. Sen ularni o‘z ko‘zing bilan ko‘rding."
+ },
+ {
+  "id": "86e3b8cbd2",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Kitob ummoni"
+ },
+ {
+  "id": "5eed5c29bb",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "5 000 bet o‘qilganda"
+ },
+ {
+  "id": "451baf51c5",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Besh ming bet! Sen kitoblar ummonida suzayotgan kemasan."
+ },
+ {
+  "id": "50ecb73c02",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Olovli qanot"
+ },
+ {
+  "id": "539e2f52c4",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "3 kun uzluksiz o‘qilganda"
+ },
+ {
+  "id": "968a0f89d0",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Uch kun uzluksiz! Odat shunday tug‘iladi — kichik qadamlardan."
+ },
+ {
+  "id": "29c7bf165b",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Tengsiz qahramon"
+ },
+ {
+  "id": "ac6be7bfa2",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "7 kun uzluksiz o‘qilganda"
+ },
+ {
+  "id": "454c1ce7f5",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Bir hafta bo‘yi bir kun ham qoldirmading. Bu — chinakam qahramonlik."
+ },
+ {
+  "id": "aa58711dc9",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Mutolaa afsonasi"
+ },
+ {
+  "id": "726e3fd1b3",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "30 kun uzluksiz o‘qilganda"
+ },
+ {
+  "id": "b7fb187c33",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "O‘ttiz kun! Endi kitob sening kunlik nonings kabi."
+ },
+ {
+  "id": "99029cde12",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Olmos iroda"
+ },
+ {
+  "id": "60d254dfc3",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "100 kun uzluksiz o‘qilganda"
+ },
+ {
+  "id": "27d1d45ed5",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Yuz kun. Olmos ham shunday tug‘iladi — bosim ostida, sabr bilan."
+ },
+ {
+  "id": "3067e3c201",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Yil qahramoni"
+ },
+ {
+  "id": "712bb76a81",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "365 kun uzluksiz o‘qilganda"
+ },
+ {
+  "id": "52f9b539df",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Bir yil! Buni ko‘pchilik orzu qiladi, sen esa qilding."
+ },
+ {
+  "id": "8003e6153c",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Qalqon"
+ },
+ {
+  "id": "1c0d49fc36",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Olov qalqonidan keyin darhol qaytganda"
+ },
+ {
+  "id": "160042f07f",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Bir kun qoldirding, lekin ertasiga qaytding. Yiqilib turish — eng katta kuch."
+ },
+ {
+  "id": "aafa81fd3c",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Marra g‘olibi"
+ },
+ {
+  "id": "be701d6653",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Ilk kitob yakunlanganda"
+ },
+ {
+  "id": "b64589c08a",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Birinchi kitob tamom! Oxirgi sahifani yopish — alohida zavq, shundaymi?"
+ },
+ {
+  "id": "f40d53fcde",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Tezkor mutolaa"
+ },
+ {
+  "id": "83ca9b916d",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Kitob 3 kun ichida tugatilganda"
+ },
+ {
+  "id": "20f1516363",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Uch kunda butun kitob! Seni to‘xtatib bo‘lmaydi."
+ },
+ {
+  "id": "fa62af7714",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Yosh kutubxonachi"
+ },
+ {
+  "id": "26a48b052e",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "10 ta kitob tugatilganda"
+ },
+ {
+  "id": "1428b687d1",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "O‘nta kitob! Endi seni chinakam kitobxon deyish mumkin."
+ },
+ {
+  "id": "93174bbe2a",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Mutolaa akademigi"
+ },
+ {
+  "id": "ba29bcc88c",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "25 ta kitob tugatilganda"
+ },
+ {
+  "id": "33eb181966",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Yigirma besh kitob. Sen endi shunchaki o‘quvchi emas — bilimdonsan."
+ },
+ {
+  "id": "1da039ed64",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Ilm notig‘i"
+ },
+ {
+  "id": "cd2485fae3",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Audio xulosada 5 Bilig olinganda"
+ },
+ {
+  "id": "104413842a",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "AI ustoz senga eng yuqori bahoni berdi. Nutqing ravon va aniq edi."
+ },
+ {
+  "id": "e857883189",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Tafakkur"
+ },
+ {
+  "id": "6c685cb190",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Mustaqil fikr yuqori baholanganda"
+ },
+ {
+  "id": "0a276d6606",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Sen o‘z fikringni aytding — kitobda yozilganini emas. Eng qimmatlisi shu."
+ },
+ {
+  "id": "5d40b77859",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Buyuk suxandon"
+ },
+ {
+  "id": "c2816a0048",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "10 ta kitob bo‘yicha a'lo xulosa"
+ },
+ {
+  "id": "10c35d176d",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "O‘nta kitob bo‘yicha ajoyib gapirib berding. Sen chinakam suxandonsan."
+ },
+ {
+  "id": "ee5d0f7b42",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Oltin qalam"
+ },
+ {
+  "id": "12bf97c81a",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Go‘zal adabiy so‘zlar bilan bayon etganda"
+ },
+ {
+  "id": "04d39cfd5f",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "So‘zlaring go‘zal va tanlangan edi. Til — sening quroling."
+ },
+ {
+  "id": "d6e06c0b1c",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Zukko kitobxon"
+ },
+ {
+  "id": "df9bf6f1c3",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Testda 100% to‘g‘ri javob"
+ },
+ {
+  "id": "19da55342b",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Hamma savolga to‘g‘ri javob! Kitobni chindan yashab chiqibsan."
+ },
+ {
+  "id": "af61451ca1",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Mantiq ustasi"
+ },
+ {
+  "id": "87d147d0a9",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Jami 50 ta to‘g‘ri javob"
+ },
+ {
+  "id": "5b07bf19c7",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Ellik to‘g‘ri javob. Sen shunchaki o‘qimayapsan — o‘ylayapsan."
+ },
+ {
+  "id": "de166750aa",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Bilimdon"
+ },
+ {
+  "id": "ceacde6cbf",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "10 ta test ketma-ket 100%"
+ },
+ {
+  "id": "0d20a0c246",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "O‘n marta ketma-ket to‘la ball. Bu tasodif emas — bu mahorat."
+ },
+ {
+  "id": "f15a61088f",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Tonggi qaldirg‘och"
+ },
+ {
+  "id": "2c3c3b6b0f",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "06:00–09:00 oralig‘ida o‘qilganda"
+ },
+ {
+  "id": "c9bc4d6ed4",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Tong saharda kitob ochding. Kun shunday boshlansa, hammasi joyida bo‘ladi."
+ },
+ {
+  "id": "bb8af14a41",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Qutb yulduzi"
+ },
+ {
+  "id": "0669161d6c",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Uxlashdan oldin o‘qilganda"
+ },
+ {
+  "id": "4ce90ee85f",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Uxlashdan oldin kitob o‘qiding. Tushlaring ham qiziqarli bo‘lsin."
+ },
+ {
+  "id": "9eaa84e2d6",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Maroqli"
+ },
+ {
+  "id": "a66ba14683",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Dam olish kunlari o‘qilganda"
+ },
+ {
+  "id": "67ee37c9e0",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Dam olish kuni ham kitob ochding. Demak, mutolaa sen uchun vazifa emas — zavq."
+ },
+ {
+  "id": "1da1cc373d",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Oila iftixori"
+ },
+ {
+  "id": "f5c6e56eed",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Ota-ona bilan suhbat a'lo o‘tganda"
+ },
+ {
+  "id": "fd5a3dc9e2",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Ota-onang bilan kitob haqida suhbatlashding. Ular sen bilan faxrlanadi."
+ },
+ {
+  "id": "c1ed9b8c19",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Chaqmoq kitobxon"
+ },
+ {
+  "id": "84e49ff717",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Bir o‘tirishda 30+ bet o‘qilganda"
+ },
+ {
+  "id": "2eff870768",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Bir o‘tirishda o‘ttiz betdan ko‘p! Kitobdan uzila olmadingmi?"
+ },
+ {
+  "id": "8407a9b461",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Ezgulik elchisi"
+ },
+ {
+  "id": "d1bf0263f2",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "Qahramon fazilatlari bo‘yicha xulosa"
+ },
+ {
+  "id": "710ac98822",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Sen qahramonning ezgu fazilatlarini payqading. Yaxshilikni ko‘ra bilish — katta iste'dod."
+ },
+ {
+  "id": "63ffa403c4",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — nomi",
+  "text": "Xazinabon"
+ },
+ {
+  "id": "e20cd55197",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — sharti",
+  "text": "2000 Bilig to‘planganda"
+ },
+ {
+  "id": "d58beffb96",
+  "file": "tools/badges/badge_defs.py",
+  "line": 0,
+  "area": "Nishonlar — xabari",
+  "text": "Ikki ming Bilig! Sening xazinang mehnat bilan yig‘ilgan."
+ },
+ {
+  "id": "1a186910b7",
+  "file": "webapp/app.js",
+  "line": 187,
+  "area": "Umumiy",
+  "text": "Boyo‘g‘li"
+ },
+ {
+  "id": "1c89730400",
+  "file": "webapp/app.js",
+  "line": 232,
+  "area": "Umumiy",
+  "text": "DEV REJIM: test uchun foydalanuvchi ID kiriting"
+ },
+ {
+  "id": "55d751a9da",
+  "file": "webapp/app.js",
+  "line": 249,
+  "area": "Umumiy",
+  "text": "Server xatoligi"
+ },
+ {
+  "id": "2a185ea4cd",
+  "file": "webapp/app.js",
+  "line": 401,
+  "area": "Umumiy",
+  "text": "— farzandingizga bering"
+ },
+ {
+  "id": "1f08336404",
+  "file": "webapp/app.js",
+  "line": 402,
+  "area": "Umumiy",
+  "text": "Xatolik yuz berdi"
+ },
+ {
+  "id": "831b1459e4",
+  "file": "webapp/app.js",
+  "line": 447,
+  "area": "Umumiy",
+  "text": "Xush kelibsiz,"
+ },
+ {
+  "id": "ef79fe14cd",
+  "file": "webapp/app.js",
+  "line": 480,
+  "area": "Umumiy",
+  "text": "Bolaxona rejimi"
+ },
+ {
+  "id": "e5359139ef",
+  "file": "webapp/app.js",
+  "line": 483,
+  "area": "Umumiy",
+  "text": "Ota-ona kabineti"
+ },
+ {
+  "id": "9d54f44981",
+  "file": "webapp/app.js",
+  "line": 483,
+  "area": "Umumiy",
+  "text": "O‘quvchi"
+ },
+ {
+  "id": "a74bae2f02",
+  "file": "webapp/app.js",
+  "line": 503,
+  "area": "Umumiy",
+  "text": "Bosh sahifa"
+ },
+ {
+  "id": "39be77fadd",
+  "file": "webapp/app.js",
+  "line": 505,
+  "area": "Umumiy",
+  "text": "Do‘kon"
+ },
+ {
+  "id": "233992c856",
+  "file": "webapp/app.js",
+  "line": 653,
+  "area": "Umumiy",
+  "text": "Kitobni o‘chirasizmi?"
+ },
+ {
+  "id": "03c1dc82bf",
+  "file": "webapp/app.js",
+  "line": 655,
+  "area": "Umumiy",
+  "text": "Kitob o‘chirildi"
+ },
+ {
+  "id": "eb0217da86",
+  "file": "webapp/app.js",
+  "line": 668,
+  "area": "Umumiy",
+  "text": "Mahsulot o‘chirildi"
+ },
+ {
+  "id": "a1d1288107",
+  "file": "webapp/app.js",
+  "line": 753,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "Hali farzand qo‘shilmagan"
+ },
+ {
+  "id": "d412963809",
+  "file": "webapp/app.js",
+  "line": 753,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "Farzandingizni shu yerdan qo‘shing — alohida telefon shart emas."
+ },
+ {
+  "id": "95e0029fd0",
+  "file": "webapp/app.js",
+  "line": 754,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "Farzand qo‘shish"
+ },
+ {
+  "id": "323a75d94a",
+  "file": "webapp/app.js",
+  "line": 787,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "Kitob qo‘shish"
+ },
+ {
+  "id": "351ab03721",
+  "file": "webapp/app.js",
+  "line": 788,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "Tezkor yoki marafon rejasi yaratish"
+ },
+ {
+  "id": "725f78de19",
+  "file": "webapp/app.js",
+  "line": 792,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "So‘nggi natijalar"
+ },
+ {
+  "id": "6aabfe4200",
+  "file": "webapp/app.js",
+  "line": 797,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "Uzluksiz mutolaa"
+ },
+ {
+  "id": "7e9feda438",
+  "file": "webapp/app.js",
+  "line": 798,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "Jami o‘qilgan"
+ },
+ {
+  "id": "1e8055a625",
+  "file": "webapp/app.js",
+  "line": 799,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "To‘plangan Bilig"
+ },
+ {
+  "id": "e51aac6de2",
+  "file": "webapp/app.js",
+  "line": 800,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "Yangi nishon"
+ },
+ {
+  "id": "df00a092a1",
+  "file": "webapp/app.js",
+  "line": 800,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "hali yo‘q"
+ },
+ {
+  "id": "149f2188ff",
+  "file": "webapp/app.js",
+  "line": 801,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "AI audio bahosi"
+ },
+ {
+  "id": "b738d87cd6",
+  "file": "webapp/app.js",
+  "line": 805,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "O‘qiyotgan kitobi"
+ },
+ {
+  "id": "067651bcd8",
+  "file": "webapp/app.js",
+  "line": 817,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "Kitoblar javoni"
+ },
+ {
+  "id": "90463ed54a",
+  "file": "webapp/app.js",
+  "line": 819,
+  "area": "Bosh sahifa — ota-ona",
+  "text": "Javon hozircha bo‘sh — yuqoridan kitob qo‘shing."
+ },
+ {
+  "id": "219769ec2b",
+  "file": "webapp/app.js",
+  "line": 840,
+  "area": "Umumiy",
+  "text": "% o‘qildi"
+ },
+ {
+  "id": "2a30d06544",
+  "file": "webapp/app.js",
+  "line": 848,
+  "area": "Umumiy",
+  "text": "AI ustoz xulosasi"
+ },
+ {
+  "id": "d92f3169f2",
+  "file": "webapp/app.js",
+  "line": 849,
+  "area": "Umumiy",
+  "text": "Farzandingiz ovozli xulosa yuborgach, AI ustoz tahlili shu yerda chiqadi."
+ },
+ {
+  "id": "2ac90d304c",
+  "file": "webapp/app.js",
+  "line": 857,
+  "area": "Umumiy",
+  "text": "Kechki suhbat mavzusi"
+ },
+ {
+  "id": "e17c7f0abe",
+  "file": "webapp/app.js",
+  "line": 891,
+  "area": "Umumiy",
+  "text": "bet o‘qildi"
+ },
+ {
+  "id": "34d65390e1",
+  "file": "webapp/app.js",
+  "line": 907,
+  "area": "Umumiy",
+  "text": "Shu haftada"
+ },
+ {
+  "id": "b83100997c",
+  "file": "webapp/app.js",
+  "line": 907,
+  "area": "Umumiy",
+  "text": "7 kun o‘qildi"
+ },
+ {
+  "id": "77de12058a",
+  "file": "webapp/app.js",
+  "line": 923,
+  "area": "Umumiy",
+  "text": "Hozircha o‘qilayotgan kitob yo‘q."
+ },
+ {
+  "id": "9453f602ad",
+  "file": "webapp/app.js",
+  "line": 936,
+  "area": "Umumiy",
+  "text": "ta test"
+ },
+ {
+  "id": "111a20ac4a",
+  "file": "webapp/app.js",
+  "line": 937,
+  "area": "Umumiy",
+  "text": "ta audio xulosa"
+ },
+ {
+  "id": "8209a944d2",
+  "file": "webapp/app.js",
+  "line": 970,
+  "area": "Umumiy",
+  "text": "Ketma-ket kun"
+ },
+ {
+  "id": "d932711aaf",
+  "file": "webapp/app.js",
+  "line": 975,
+  "area": "Umumiy",
+  "text": "O‘qiyotgan kitoblari"
+ },
+ {
+  "id": "0c6d137633",
+  "file": "webapp/app.js",
+  "line": 984,
+  "area": "Umumiy",
+  "text": "So‘nggi faoliyat"
+ },
+ {
+  "id": "df512e7f04",
+  "file": "webapp/app.js",
+  "line": 990,
+  "area": "Umumiy",
+  "text": "bet o‘qidi ·"
+ },
+ {
+  "id": "aa2501db62",
+  "file": "webapp/app.js",
+  "line": 994,
+  "area": "Umumiy",
+  "text": "Hali faoliyat qayd etilmagan."
+ },
+ {
+  "id": "7cbc5b1f7e",
+  "file": "webapp/app.js",
+  "line": 998,
+  "area": "Umumiy",
+  "text": "AI Ustoz xulosasi"
+ },
+ {
+  "id": "918fc654d2",
+  "file": "webapp/app.js",
+  "line": 1002,
+  "area": "Umumiy",
+  "text": "Kechki suhbat mavzusi:"
+ },
+ {
+  "id": "8358c50234",
+  "file": "webapp/app.js",
+  "line": 1023,
+  "area": "Bosh sahifa — bola",
+  "text": "O‘qishda davom eting"
+ },
+ {
+  "id": "375d50e4a0",
+  "file": "webapp/app.js",
+  "line": 1037,
+  "area": "Bosh sahifa — bola",
+  "text": "ta audio"
+ },
+ {
+  "id": "81e2eb2d8c",
+  "file": "webapp/app.js",
+  "line": 1038,
+  "area": "Bosh sahifa — bola",
+  "text": "Davom etish"
+ },
+ {
+  "id": "54ba0d56da",
+  "file": "webapp/app.js",
+  "line": 1043,
+  "area": "Bosh sahifa — bola",
+  "text": "Hozircha o‘qiladigan kitob yo‘q"
+ },
+ {
+  "id": "d77abc3d51",
+  "file": "webapp/app.js",
+  "line": 1044,
+  "area": "Bosh sahifa — bola",
+  "text": "Rejalarni ko‘rish"
+ },
+ {
+  "id": "a160dd5112",
+  "file": "webapp/app.js",
+  "line": 1052,
+  "area": "Bosh sahifa — bola",
+  "text": "Tugatilgan kitob"
+ },
+ {
+  "id": "f7b3ddb3b6",
+  "file": "webapp/app.js",
+  "line": 1071,
+  "area": "Bosh sahifa — bola",
+  "text": "Hozircha kitob yo‘q — Rejalar bo‘limiga qarang."
+ },
+ {
+  "id": "db03ca42a7",
+  "file": "webapp/app.js",
+  "line": 1079,
+  "area": "Umumiy",
+  "text": "AI ustoz"
+ },
+ {
+  "id": "a1d725cf98",
+  "file": "webapp/app.js",
+  "line": 1080,
+  "area": "Umumiy",
+  "text": "Kitob haqida ovozli xulosa yuborsang, AI ustoz senga maslahat beradi."
+ },
+ {
+  "id": "8acbbfd00d",
+  "file": "webapp/app.js",
+  "line": 1099,
+  "area": "Umumiy",
+  "text": "O‘z telefonidan ulangan"
+ },
+ {
+  "id": "3afcd02822",
+  "file": "webapp/app.js",
+  "line": 1109,
+  "area": "Umumiy",
+  "text": "Bosh sahifadagi «Farzand qo‘shish» orqali qo‘shing."
+ },
+ {
+  "id": "e9a1347f4e",
+  "file": "webapp/app.js",
+  "line": 1112,
+  "area": "Umumiy",
+  "text": "Farzandingiz ekraniga kirib, kitob o‘qish, testlar va do‘kondan foydalanishni ular nomidan bajarishingiz mumkin."
+ },
+ {
+  "id": "acd72d1084",
+  "file": "webapp/app.js",
+  "line": 1134,
+  "area": "Umumiy",
+  "text": "To‘ldirish"
+ },
+ {
+  "id": "5906e10771",
+  "file": "webapp/app.js",
+  "line": 1138,
+  "area": "Umumiy",
+  "text": "Namoyish ma\\'lumoti"
+ },
+ {
+  "id": "7954f1d798",
+  "file": "webapp/app.js",
+  "line": 1140,
+  "area": "Umumiy",
+  "text": "Faqat sizga ko‘rinadi. Tanlangan farzand profili namoyish uchun to‘liq natijalar bilan to‘ldiriladi."
+ },
+ {
+  "id": "0957170098",
+  "file": "webapp/app.js",
+  "line": 1145,
+  "area": "Umumiy",
+  "text": "profili namoyish ma'lumoti bilan to‘ldiriladi.\\n\\nDIQQAT: uning hozirgi kitoblari va natijalari o‘chib ketadi. Davom etamizmi?"
+ },
+ {
+  "id": "d0d388b245",
+  "file": "webapp/app.js",
+  "line": 1147,
+  "area": "Umumiy",
+  "text": "ta kitob,"
+ },
+ {
+  "id": "0e172110ee",
+  "file": "webapp/app.js",
+  "line": 1147,
+  "area": "Umumiy",
+  "text": "ta AI tahlil qo‘shildi"
+ },
+ {
+  "id": "8d8c1e7847",
+  "file": "webapp/app.js",
+  "line": 1153,
+  "area": "Umumiy",
+  "text": "ning BARCHA kitoblari va natijalari o‘chiriladi. Davom etamizmi?"
+ },
+ {
+  "id": "8d40d1a7fd",
+  "file": "webapp/app.js",
+  "line": 1168,
+  "area": "Umumiy",
+  "text": "Yangi kitob qo‘shish"
+ },
+ {
+  "id": "d2db5616f0",
+  "file": "webapp/app.js",
+  "line": 1181,
+  "area": "Umumiy",
+  "text": "Hali reja yo‘q"
+ },
+ {
+  "id": "b03550b368",
+  "file": "webapp/app.js",
+  "line": 1181,
+  "area": "Umumiy",
+  "text": "Yuqoridagi tugma orqali birinchi kitobni qo‘shing."
+ },
+ {
+  "id": "ed7d0e0c94",
+  "file": "webapp/app.js",
+  "line": 1187,
+  "area": "Umumiy",
+  "text": "Alohida kitoblar"
+ },
+ {
+  "id": "e6155cd7b6",
+  "file": "webapp/app.js",
+  "line": 1214,
+  "area": "Umumiy",
+  "text": "Marra sovrini:"
+ },
+ {
+  "id": "a6fd4fa5d2",
+  "file": "webapp/app.js",
+  "line": 1221,
+  "area": "Umumiy",
+  "text": "Bu marafonga hali kitob qo‘shilmagan."
+ },
+ {
+  "id": "05d6bf10ce",
+  "file": "webapp/app.js",
+  "line": 1230,
+  "area": "Umumiy",
+  "text": "1-oraliq test"
+ },
+ {
+  "id": "11b43a12e6",
+  "file": "webapp/app.js",
+  "line": 1231,
+  "area": "Umumiy",
+  "text": "2-oraliq test"
+ },
+ {
+  "id": "26de33e722",
+  "file": "webapp/app.js",
+  "line": 1232,
+  "area": "Umumiy",
+  "text": "Yakuniy test"
+ },
+ {
+  "id": "1f937dd134",
+  "file": "webapp/app.js",
+  "line": 1233,
+  "area": "Umumiy",
+  "text": "Ovozli tahlil"
+ },
+ {
+  "id": "865cd799aa",
+  "file": "webapp/app.js",
+  "line": 1245,
+  "area": "Umumiy",
+  "text": "Test tuzish"
+ },
+ {
+  "id": "08559a70af",
+  "file": "webapp/app.js",
+  "line": 1252,
+  "area": "Umumiy",
+  "text": "AI savollar banki"
+ },
+ {
+  "id": "fa8e0b3030",
+  "file": "webapp/app.js",
+  "line": 1253,
+  "area": "Test",
+  "text": "Kitobning 5-10 ta sahifasini rasmga oling. AI ular asosida test tuzadi."
+ },
+ {
+  "id": "27df109ca1",
+  "file": "webapp/app.js",
+  "line": 1256,
+  "area": "Test",
+  "text": "Testni tuzish"
+ },
+ {
+  "id": "47934e8491",
+  "file": "webapp/app.js",
+  "line": 1259,
+  "area": "Test",
+  "text": "ta rasm tanlandi"
+ },
+ {
+  "id": "2f724c89fd",
+  "file": "webapp/app.js",
+  "line": 1264,
+  "area": "Test",
+  "text": "Kamida 1 ta rasm tanlang"
+ },
+ {
+  "id": "df44bd1575",
+  "file": "webapp/app.js",
+  "line": 1265,
+  "area": "Test",
+  "text": "Sahifalar tayyorlanmoqda…"
+ },
+ {
+  "id": "5a0c992dce",
+  "file": "webapp/app.js",
+  "line": 1272,
+  "area": "Test",
+  "text": "Sahifalar tahlil qilinmoqda…"
+ },
+ {
+  "id": "83d27f45ba",
+  "file": "webapp/app.js",
+  "line": 1276,
+  "area": "Test",
+  "text": "Bu kitobning testi tayyor edi —"
+ },
+ {
+  "id": "8ca6c046ea",
+  "file": "webapp/app.js",
+  "line": 1276,
+  "area": "Test",
+  "text": "ta savol qo‘shildi"
+ },
+ {
+  "id": "1d7784bb74",
+  "file": "webapp/app.js",
+  "line": 1277,
+  "area": "Test",
+  "text": "ta savol tuzildi"
+ },
+ {
+  "id": "ea7f030dc1",
+  "file": "webapp/app.js",
+  "line": 1293,
+  "area": "Rejalar — bola",
+  "text": "Hozircha kitob yo‘q"
+ },
+ {
+  "id": "85430511dc",
+  "file": "webapp/app.js",
+  "line": 1293,
+  "area": "Rejalar — bola",
+  "text": "Ota-onangiz tez orada kitob qo‘shadi."
+ },
+ {
+  "id": "1a944593f8",
+  "file": "webapp/app.js",
+  "line": 1296,
+  "area": "Rejalar — bola",
+  "text": "O‘qilayotgan kitoblar"
+ },
+ {
+  "id": "07b734f33b",
+  "file": "webapp/app.js",
+  "line": 1312,
+  "area": "Umumiy",
+  "text": "Bilim testlari"
+ },
+ {
+  "id": "64530bf5dd",
+  "file": "webapp/app.js",
+  "line": 1318,
+  "area": "Umumiy",
+  "text": "Bu kitob uchun test hali tuzilmagan."
+ },
+ {
+  "id": "623169ba1f",
+  "file": "webapp/app.js",
+  "line": 1324,
+  "area": "Umumiy",
+  "text": "O‘qishni belgilash"
+ },
+ {
+  "id": "1f01c1376d",
+  "file": "webapp/app.js",
+  "line": 1326,
+  "area": "Umumiy",
+  "text": "Sahifa rasmi"
+ },
+ {
+  "id": "60377e36f6",
+  "file": "webapp/app.js",
+  "line": 1327,
+  "area": "Umumiy",
+  "text": "Qo‘lda kiritish"
+ },
+ {
+  "id": "390c14d354",
+  "file": "webapp/app.js",
+  "line": 1329,
+  "area": "Umumiy",
+  "text": "Ovozli xulosa"
+ },
+ {
+  "id": "7a900d894c",
+  "file": "webapp/app.js",
+  "line": 1330,
+  "area": "Umumiy",
+  "text": "Ovozli xulosa yuborish"
+ },
+ {
+  "id": "f5ba59cb55",
+  "file": "webapp/app.js",
+  "line": 1330,
+  "area": "Umumiy",
+  "text": "(qayta yuborish)"
+ },
+ {
+  "id": "a4f3ee510d",
+  "file": "webapp/app.js",
+  "line": 1337,
+  "area": "Umumiy",
+  "text": "O‘qib bo‘lgan sahifangizni, sahifa raqami ko‘rinadigan qilib suratga oling."
+ },
+ {
+  "id": "150dea1ff5",
+  "file": "webapp/app.js",
+  "line": 1338,
+  "area": "Umumiy",
+  "text": "Rasm tanlash uchun bosing"
+ },
+ {
+  "id": "fd522bb7f3",
+  "file": "webapp/app.js",
+  "line": 1346,
+  "area": "Umumiy",
+  "text": "Rasm tayyorlanmoqda…"
+ },
+ {
+  "id": "eaa3fa92fa",
+  "file": "webapp/app.js",
+  "line": 1361,
+  "area": "Umumiy",
+  "text": "Rasm xira chiqdi"
+ },
+ {
+  "id": "63f537f9ab",
+  "file": "webapp/app.js",
+  "line": 1362,
+  "area": "Umumiy",
+  "text": "Bet raqami o‘qilmasligi mumkin. Yorug‘roq joyda, telefonni qimirlatmay qayta oling."
+ },
+ {
+  "id": "1cd68b7d43",
+  "file": "webapp/app.js",
+  "line": 1364,
+  "area": "Umumiy",
+  "text": "Qaytadan olish"
+ },
+ {
+  "id": "b84e5a5e89",
+  "file": "webapp/app.js",
+  "line": 1365,
+  "area": "Umumiy",
+  "text": "Baribir yuborish"
+ },
+ {
+  "id": "abd29b12c6",
+  "file": "webapp/app.js",
+  "line": 1384,
+  "area": "Umumiy",
+  "text": "Qaytadan urinib ko‘ring"
+ },
+ {
+  "id": "2915d551c7",
+  "file": "webapp/app.js",
+  "line": 1390,
+  "area": "Umumiy",
+  "text": "Sahifa raqami"
+ },
+ {
+  "id": "b6592a3157",
+  "file": "webapp/app.js",
+  "line": 1391,
+  "area": "Umumiy",
+  "text": "Qaysi sahifagacha o‘qidingiz?"
+ },
+ {
+  "id": "efa76e5196",
+  "file": "webapp/app.js",
+  "line": 1398,
+  "area": "Umumiy",
+  "text": "Sahifa raqamini kiriting"
+ },
+ {
+  "id": "072239946b",
+  "file": "webapp/app.js",
+  "line": 1411,
+  "area": "Sahifa natijasi",
+  "text": "-kun ketma-ket!"
+ },
+ {
+  "id": "9b78957ec9",
+  "file": "webapp/app.js",
+  "line": 1412,
+  "area": "Sahifa natijasi",
+  "text": "Bir kun ham qoldirmading. Zo‘rsan."
+ },
+ {
+  "id": "f6815a25f0",
+  "file": "webapp/app.js",
+  "line": 1414,
+  "area": "Sahifa natijasi",
+  "text": "Bilig!"
+ },
+ {
+  "id": "0de46042d4",
+  "file": "webapp/app.js",
+  "line": 1415,
+  "area": "Sahifa natijasi",
+  "text": "Xazinang o‘syapti — jami"
+ },
+ {
+  "id": "fdd4b6197d",
+  "file": "webapp/app.js",
+  "line": 1420,
+  "area": "Sahifa natijasi",
+  "text": "Ajoyib natija"
+ },
+ {
+  "id": "064e4a68ef",
+  "file": "webapp/app.js",
+  "line": 1426,
+  "area": "Sahifa natijasi",
+  "text": "Streak qalqoni ishlatildi — ketma-ketlik saqlanib qoldi."
+ },
+ {
+  "id": "ca0ba69c33",
+  "file": "webapp/app.js",
+  "line": 1438,
+  "area": "Ovozli xulosa",
+  "text": "Kitob haqida 1-2 daqiqa gapirib bering: nima haqida edi, sizga nima yoqdi?"
+ },
+ {
+  "id": "de0dd85fdb",
+  "file": "webapp/app.js",
+  "line": 1441,
+  "area": "Ovozli xulosa",
+  "text": "Yozishni boshlash uchun bosing"
+ },
+ {
+  "id": "817afb5429",
+  "file": "webapp/app.js",
+  "line": 1445,
+  "area": "Ovozli xulosa",
+  "text": "Qaytadan yozish"
+ },
+ {
+  "id": "0267361c0f",
+  "file": "webapp/app.js",
+  "line": 1448,
+  "area": "Ovozli xulosa",
+  "text": "Mikrofon ishlamasa,"
+ },
+ {
+  "id": "526c1d6a14",
+  "file": "webapp/app.js",
+  "line": 1448,
+  "area": "Ovozli xulosa",
+  "text": "audio fayl yuklang"
+ },
+ {
+  "id": "e245aa2e43",
+  "file": "webapp/app.js",
+  "line": 1467,
+  "area": "Ovozli xulosa",
+  "text": "Yozib olindi — endi yuboring"
+ },
+ {
+  "id": "09790fe3e5",
+  "file": "webapp/app.js",
+  "line": 1472,
+  "area": "Ovozli xulosa",
+  "text": "Mikrofonga ruxsat berilmadi. Fayl yuklang."
+ },
+ {
+  "id": "1694a1e407",
+  "file": "webapp/app.js",
+  "line": 1485,
+  "area": "Ovozli xulosa",
+  "text": "Fayl tanlandi"
+ },
+ {
+  "id": "91247b0eb9",
+  "file": "webapp/app.js",
+  "line": 1489,
+  "area": "Ovozli xulosa",
+  "text": "Avval ovoz yozing yoki fayl tanlang"
+ },
+ {
+  "id": "a49be8ffa1",
+  "file": "webapp/app.js",
+  "line": 1490,
+  "area": "Ovozli xulosa",
+  "text": "AI Ustoz tinglamoqda"
+ },
+ {
+  "id": "393c1a9501",
+  "file": "webapp/app.js",
+  "line": 1490,
+  "area": "Ovozli xulosa",
+  "text": "Ovozli xulosa tahlil qilinmoqda…"
+ },
+ {
+  "id": "18d6b71f05",
+  "file": "webapp/app.js",
+  "line": 1496,
+  "area": "Ovozli xulosa",
+  "text": "AI ustoz seni tingladi"
+ },
+ {
+  "id": "bdae238597",
+  "file": "webapp/app.js",
+  "line": 1497,
+  "area": "Ovozli xulosa",
+  "text": "bonus Bilig — nutqing ravon edi."
+ },
+ {
+  "id": "8de10d0003",
+  "file": "webapp/app.js",
+  "line": 1499,
+  "area": "Ovozli xulosa",
+  "text": "AI Ustoz fikri"
+ },
+ {
+  "id": "0c2acc8536",
+  "file": "webapp/app.js",
+  "line": 1501,
+  "area": "Ovozli xulosa",
+  "text": "bonus Bilig"
+ },
+ {
+  "id": "5ca0a2207e",
+  "file": "webapp/app.js",
+  "line": 1523,
+  "area": "Test",
+  "text": "to‘g‘ri javob"
+ },
+ {
+  "id": "2739400916",
+  "file": "webapp/app.js",
+  "line": 1524,
+  "area": "Test",
+  "text": "Kitobni chindan tushunibsan."
+ },
+ {
+  "id": "ea0c5ca4cc",
+  "file": "webapp/app.js",
+  "line": 1524,
+  "area": "Test",
+  "text": "Yaxshi urinish — davom et."
+ },
+ {
+  "id": "b4df356161",
+  "file": "webapp/app.js",
+  "line": 1527,
+  "area": "Test",
+  "text": "To‘g‘ri javob"
+ },
+ {
+  "id": "05cf12920a",
+  "file": "webapp/app.js",
+  "line": 1543,
+  "area": "Test",
+  "text": "ta savol. Har biriga bittadan javob tanlang."
+ },
+ {
+  "id": "ac9d6c3570",
+  "file": "webapp/app.js",
+  "line": 1551,
+  "area": "Test",
+  "text": "Testni yakunlash"
+ },
+ {
+  "id": "6fee9b86a4",
+  "file": "webapp/app.js",
+  "line": 1564,
+  "area": "Do‘kon",
+  "text": "Hali sovg‘a yo‘q"
+ },
+ {
+  "id": "a1069ccbfa",
+  "file": "webapp/app.js",
+  "line": 1564,
+  "area": "Do‘kon",
+  "text": "Ota-onangiz tez orada do‘konga mahsulot qo‘shadi."
+ },
+ {
+  "id": "f928c7c151",
+  "file": "webapp/app.js",
+  "line": 1573,
+  "area": "Do‘kon",
+  "text": "Xarid qilish"
+ },
+ {
+  "id": "8ed1f87303",
+  "file": "webapp/app.js",
+  "line": 1573,
+  "area": "Do‘kon",
+  "text": "Yetarli emas"
+ },
+ {
+  "id": "c9205b8559",
+  "file": "webapp/app.js",
+  "line": 1582,
+  "area": "Do‘kon",
+  "text": "Bilig kursi"
+ },
+ {
+  "id": "205f6ff89a",
+  "file": "webapp/app.js",
+  "line": 1584,
+  "area": "Do‘kon",
+  "text": "Hali mahsulot yo‘q"
+ },
+ {
+  "id": "fb9a016071",
+  "file": "webapp/app.js",
+  "line": 1584,
+  "area": "Do‘kon",
+  "text": "Yuqoridagi tugma orqali birinchi sovg‘ani qo‘shing."
+ },
+ {
+  "id": "8232973172",
+  "file": "webapp/app.js",
+  "line": 1605,
+  "area": "Umumiy",
+  "text": "Mahsulotni tahrirlash"
+ },
+ {
+  "id": "3d2cac9674",
+  "file": "webapp/app.js",
+  "line": 1605,
+  "area": "Umumiy",
+  "text": "Yangi mahsulot"
+ },
+ {
+  "id": "f98c175816",
+  "file": "webapp/app.js",
+  "line": 1606,
+  "area": "Umumiy",
+  "text": "Mahsulot nomi"
+ },
+ {
+  "id": "af04fa2350",
+  "file": "webapp/app.js",
+  "line": 1608,
+  "area": "Umumiy",
+  "text": "Narxi (Bilig)"
+ },
+ {
+  "id": "495e4a1157",
+  "file": "webapp/app.js",
+  "line": 1611,
+  "area": "Umumiy",
+  "text": "O‘chirish"
+ },
+ {
+  "id": "d70ea5a214",
+  "file": "webapp/app.js",
+  "line": 1617,
+  "area": "Umumiy",
+  "text": "Nomi va narxini kiriting"
+ },
+ {
+  "id": "73e5b39883",
+  "file": "webapp/app.js",
+  "line": 1624,
+  "area": "Umumiy",
+  "text": "1 Bilig necha so‘mga teng bo‘lishini belgilang (ixtiyoriy)."
+ },
+ {
+  "id": "69922db8e2",
+  "file": "webapp/app.js",
+  "line": 1632,
+  "area": "Umumiy",
+  "text": "Bilig kursi saqlandi"
+ },
+ {
+  "id": "1bfef3b9d1",
+  "file": "webapp/app.js",
+  "line": 1637,
+  "area": "Umumiy",
+  "text": "Sovg‘ang buyurtma qilindi"
+ },
+ {
+  "id": "54709247e5",
+  "file": "webapp/app.js",
+  "line": 1638,
+  "area": "Umumiy",
+  "text": "Ota-onangga xabar yubordik."
+ },
+ {
+  "id": "f5584f009e",
+  "file": "webapp/app.js",
+  "line": 1662,
+  "area": "Reyting",
+  "text": "Global reyting"
+ },
+ {
+  "id": "9db7334b49",
+  "file": "webapp/app.js",
+  "line": 1662,
+  "area": "Reyting",
+  "text": "Shaxsiy natija"
+ },
+ {
+  "id": "0ffd036940",
+  "file": "webapp/app.js",
+  "line": 1677,
+  "area": "Reyting",
+  "text": "(Siz)"
+ },
+ {
+  "id": "5a39264c01",
+  "file": "webapp/app.js",
+  "line": 1680,
+  "area": "Reyting",
+  "text": "Oilangiz o‘quvchilari orasida"
+ },
+ {
+  "id": "d19ceab2df",
+  "file": "webapp/app.js",
+  "line": 1680,
+  "area": "Reyting",
+  "text": "Barcha o‘quvchilar orasida TOP-10"
+ },
+ {
+  "id": "5a98e784fd",
+  "file": "webapp/app.js",
+  "line": 1681,
+  "area": "Reyting",
+  "text": "Reyting hali bo‘sh"
+ },
+ {
+  "id": "4845037b54",
+  "file": "webapp/app.js",
+  "line": 1700,
+  "area": "Reyting",
+  "text": "Tugallangan kitob"
+ },
+ {
+  "id": "7b12ce3c3a",
+  "file": "webapp/app.js",
+  "line": 1701,
+  "area": "Reyting",
+  "text": "Jami bet"
+ },
+ {
+  "id": "00d2651d99",
+  "file": "webapp/app.js",
+  "line": 1712,
+  "area": "Reyting",
+  "text": "Ko‘nikmalar diagnostikasi"
+ },
+ {
+  "id": "a3f068da5f",
+  "file": "webapp/app.js",
+  "line": 1714,
+  "area": "Reyting",
+  "text": "Faktik xotira"
+ },
+ {
+  "id": "2f6270ebb0",
+  "file": "webapp/app.js",
+  "line": 1715,
+  "area": "Reyting",
+  "text": "Sabab-oqibat mantiqi"
+ },
+ {
+  "id": "672824c7ba",
+  "file": "webapp/app.js",
+  "line": 1716,
+  "area": "Reyting",
+  "text": "Asar xulosasi"
+ },
+ {
+  "id": "dc4048ea68",
+  "file": "webapp/app.js",
+  "line": 1717,
+  "area": "Reyting",
+  "text": "Nutq ravonligi"
+ },
+ {
+  "id": "7199236202",
+  "file": "webapp/app.js",
+  "line": 1740,
+  "area": "Umumiy",
+  "text": "Mutolaa taqvimi"
+ },
+ {
+  "id": "c0389acb53",
+  "file": "webapp/app.js",
+  "line": 1743,
+  "area": "Umumiy",
+  "text": "Oldingi oy"
+ },
+ {
+  "id": "4661266b6a",
+  "file": "webapp/app.js",
+  "line": 1745,
+  "area": "Umumiy",
+  "text": "Keyingi oy"
+ },
+ {
+  "id": "0f22e5c9e2",
+  "file": "webapp/app.js",
+  "line": 1751,
+  "area": "Umumiy",
+  "text": "Shu oyda"
+ },
+ {
+  "id": "c2b539145a",
+  "file": "webapp/app.js",
+  "line": 1751,
+  "area": "Umumiy",
+  "text": "kun o‘qildi"
+ },
+ {
+  "id": "bcae829121",
+  "file": "webapp/app.js",
+  "line": 1752,
+  "area": "Umumiy",
+  "text": "· eng uzun"
+ },
+ {
+  "id": "0ba4d98d39",
+  "file": "webapp/app.js",
+  "line": 1752,
+  "area": "Umumiy",
+  "text": "kun ketma-ket"
+ },
+ {
+  "id": "a06c8f346b",
+  "file": "webapp/app.js",
+  "line": 1760,
+  "area": "Umumiy",
+  "text": "Kitoblar bo‘yicha"
+ },
+ {
+  "id": "2810bfa91a",
+  "file": "webapp/app.js",
+  "line": 1779,
+  "area": "Umumiy",
+  "text": "Hali test ishlanmagan."
+ },
+ {
+  "id": "27f778b47b",
+  "file": "webapp/app.js",
+  "line": 1785,
+  "area": "Umumiy",
+  "text": "ta test ishlandi"
+ },
+ {
+  "id": "e8540ef776",
+  "file": "webapp/app.js",
+  "line": 1789,
+  "area": "Umumiy",
+  "text": "to‘g‘ri"
+ },
+ {
+  "id": "d6e1e26cc8",
+  "file": "webapp/app.js",
+  "line": 1791,
+  "area": "Umumiy",
+  "text": "O‘rtacha natija"
+ },
+ {
+  "id": "8863789516",
+  "file": "webapp/app.js",
+  "line": 1792,
+  "area": "Umumiy",
+  "text": "Eng yaxshi:"
+ },
+ {
+  "id": "4c791f94e7",
+  "file": "webapp/app.js",
+  "line": 1807,
+  "area": "Umumiy",
+  "text": "Keyingi maqsad:"
+ },
+ {
+  "id": "a955f686d4",
+  "file": "webapp/app.js",
+  "line": 1811,
+  "area": "Umumiy",
+  "text": "Sening kuchli tomoning"
+ },
+ {
+  "id": "f28f29c4ee",
+  "file": "webapp/app.js",
+  "line": 2023,
+  "area": "Maskot lentasi",
+  "text": "width 3.4s linear"
+ },
+ {
+  "id": "408fad5b03",
+  "file": "webapp/app.js",
+  "line": 2038,
+  "area": "Kutib olish",
+  "text": "ta nishon"
+ },
+ {
+  "id": "56c9118779",
+  "file": "webapp/app.js",
+  "line": 2038,
+  "area": "Kutib olish",
+  "text": "» nishoni"
+ },
+ {
+  "id": "dd56f00565",
+  "file": "webapp/app.js",
+  "line": 2040,
+  "area": "Kutib olish",
+  "text": "Xush kelibsan,"
+ },
+ {
+  "id": "3f7c5618a4",
+  "file": "webapp/app.js",
+  "line": 2041,
+  "area": "Kutib olish",
+  "text": "Sen ko‘rmagan holda"
+ },
+ {
+  "id": "d51ed4c0f8",
+  "file": "webapp/app.js",
+  "line": 2041,
+  "area": "Kutib olish",
+  "text": "qo‘lga kiritilgan."
+ },
+ {
+  "id": "0327a6f887",
+  "file": "webapp/app.js",
+  "line": 2042,
+  "area": "Kutib olish",
+  "text": "Ko‘rish →"
+ },
+ {
+  "id": "46b9e80d0e",
+  "file": "webapp/app.js",
+  "line": 2068,
+  "area": "Nishonlar",
+  "text": "nishon to‘plandi"
+ },
+ {
+  "id": "ac3d5cd390",
+  "file": "webapp/app.js",
+  "line": 2087,
+  "area": "Umumiy",
+  "text": "Bilig qo‘shildi"
+ },
+ {
+  "id": "cf2761d3f1",
+  "file": "webapp/app.js",
+  "line": 2087,
+  "area": "Umumiy",
+  "text": "Bilig ayirildi"
+ },
+ {
+  "id": "9ab9f9b5ee",
+  "file": "webapp/app.js",
+  "line": 2098,
+  "area": "Umumiy",
+  "text": "Farzand ma'lumotlarini tahrirlash"
+ },
+ {
+  "id": "6ac07e85ac",
+  "file": "webapp/app.js",
+  "line": 2110,
+  "area": "Umumiy",
+  "text": "Ismni kiriting"
+ },
+ {
+  "id": "a7d24a0e8b",
+  "file": "webapp/app.js",
+  "line": 2113,
+  "area": "Umumiy",
+  "text": "Ma'lumotlar saqlandi"
+ },
+ {
+  "id": "4463e1da15",
+  "file": "webapp/app.js",
+  "line": 2118,
+  "area": "Umumiy",
+  "text": "Yordam va aloqa"
+ },
+ {
+  "id": "b17462f1b8",
+  "file": "webapp/app.js",
+  "line": 2119,
+  "area": "Umumiy",
+  "text": "Savol, taklif yoki muammoingizni yozing — administratorga yuboriladi."
+ },
+ {
+  "id": "7bf13a1471",
+  "file": "webapp/app.js",
+  "line": 2120,
+  "area": "Umumiy",
+  "text": "Xabaringizni shu yerga yozing…"
+ },
+ {
+  "id": "7ce3b1253d",
+  "file": "webapp/app.js",
+  "line": 2126,
+  "area": "Umumiy",
+  "text": "Xabar bo‘sh bo‘lmasin"
+ },
+ {
+  "id": "f7f98074ef",
+  "file": "webapp/app.js",
+  "line": 2128,
+  "area": "Umumiy",
+  "text": "Xabaringiz yuborildi"
+ },
+ {
+  "id": "977b12d801",
+  "file": "webapp/app.js",
+  "line": 2142,
+  "area": "Kitob qo‘shish",
+  "text": "Sizga hali hech qaysi farzand ulanmagan. Farzandingiz kod orqali ulansin:"
+ },
+ {
+  "id": "fbd1a21f6f",
+  "file": "webapp/app.js",
+  "line": 2152,
+  "area": "Kitob qo‘shish",
+  "text": "Reja turi"
+ },
+ {
+  "id": "d5844cda7f",
+  "file": "webapp/app.js",
+  "line": 2153,
+  "area": "Kitob qo‘shish",
+  "text": "Tezkor mutolaa (bitta kitob)"
+ },
+ {
+  "id": "2da2a97fff",
+  "file": "webapp/app.js",
+  "line": 2154,
+  "area": "Kitob qo‘shish",
+  "text": "Mutolaa marafoni (bir nechta kitob)"
+ },
+ {
+  "id": "288bf74434",
+  "file": "webapp/app.js",
+  "line": 2168,
+  "area": "Kitob qo‘shish",
+  "text": "Marafonni nomlang"
+ },
+ {
+  "id": "299db4ec7d",
+  "file": "webapp/app.js",
+  "line": 2169,
+  "area": "Kitob qo‘shish",
+  "text": "Marafon nomi"
+ },
+ {
+  "id": "2e805e7d77",
+  "file": "webapp/app.js",
+  "line": 2171,
+  "area": "Kitob qo‘shish",
+  "text": "Marra sovrini (ixtiyoriy)"
+ },
+ {
+  "id": "4a7dffd718",
+  "file": "webapp/app.js",
+  "line": 2184,
+  "area": "Kitob qo‘shish",
+  "text": "Mutolaa marafoni"
+ },
+ {
+  "id": "9323e865ee",
+  "file": "webapp/app.js",
+  "line": 2191,
+  "area": "Kitob qo‘shish",
+  "text": "Kitobni qanday qo‘shamiz?"
+ },
+ {
+  "id": "8e1ce8bc89",
+  "file": "webapp/app.js",
+  "line": 2192,
+  "area": "Kitob qo‘shish",
+  "text": "Katalogdan tanlash"
+ },
+ {
+  "id": "ca3f902153",
+  "file": "webapp/app.js",
+  "line": 2193,
+  "area": "Kitob qo‘shish",
+  "text": "Nomini yozib qo‘shish"
+ },
+ {
+  "id": "f48bf5c0f8",
+  "file": "webapp/app.js",
+  "line": 2194,
+  "area": "Kitob qo‘shish",
+  "text": "Muqovani rasmga olish"
+ },
+ {
+  "id": "b952ca6128",
+  "file": "webapp/app.js",
+  "line": 2205,
+  "area": "Kitob qo‘shish",
+  "text": "Kitob nomi"
+ },
+ {
+  "id": "487be89a96",
+  "file": "webapp/app.js",
+  "line": 2206,
+  "area": "Kitob qo‘shish",
+  "text": "Kitob nomi (va muallif, ixtiyoriy)"
+ },
+ {
+  "id": "0ee37f15a1",
+  "file": "webapp/app.js",
+  "line": 2208,
+  "area": "Kitob qo‘shish",
+  "text": "Jami sahifa soni (ixtiyoriy)"
+ },
+ {
+  "id": "760c758303",
+  "file": "webapp/app.js",
+  "line": 2210,
+  "area": "Kitob qo‘shish",
+  "text": "Qo‘shish"
+ },
+ {
+  "id": "ba48cdee77",
+  "file": "webapp/app.js",
+  "line": 2213,
+  "area": "Kitob qo‘shish",
+  "text": "Muqova rasmi"
+ },
+ {
+  "id": "16cfa0ed97",
+  "file": "webapp/app.js",
+  "line": 2214,
+  "area": "Kitob qo‘shish",
+  "text": "Kitob muqovasini rasmga oling"
+ },
+ {
+  "id": "1ed874b57e",
+  "file": "webapp/app.js",
+  "line": 2224,
+  "area": "Kitob qo‘shish",
+  "text": "Muqova o‘qilmoqda…"
+ },
+ {
+  "id": "5388a6e044",
+  "file": "webapp/app.js",
+  "line": 2232,
+  "area": "Kitob qo‘shish",
+  "text": "Muqovani o‘qib bo‘lmadi, nomini o‘zingiz yozing"
+ },
+ {
+  "id": "033eea6fa2",
+  "file": "webapp/app.js",
+  "line": 2241,
+  "area": "Kitob qo‘shish",
+  "text": "Kitobni tasdiqlang"
+ },
+ {
+  "id": "39f98ab516",
+  "file": "webapp/app.js",
+  "line": 2242,
+  "area": "Kitob qo‘shish",
+  "text": "Muqovadan o‘qildi. Xato bo‘lsa, shu yerda tuzatib qo‘ying."
+ },
+ {
+  "id": "ecb692984d",
+  "file": "webapp/app.js",
+  "line": 2256,
+  "area": "Kitob qo‘shish",
+  "text": "Kitob nomini kiriting"
+ },
+ {
+  "id": "ef62f9e361",
+  "file": "webapp/app.js",
+  "line": 2261,
+  "area": "Kitob qo‘shish",
+  "text": "\" qo‘shildi"
+ },
+ {
+  "id": "5aa0751a05",
+  "file": "webapp/app.js",
+  "line": 2288,
+  "area": "Kitob qo‘shish",
+  "text": "Kitob qo‘shildi"
+ },
+ {
+  "id": "a24674724f",
+  "file": "webapp/app.js",
+  "line": 2289,
+  "area": "Kitob qo‘shish",
+  "text": "Yana kitob qo‘shish"
+ },
+ {
+  "id": "739c4663dc",
+  "file": "webapp/app.js",
+  "line": 2290,
+  "area": "Kitob qo‘shish",
+  "text": "Marafonni yakunlash"
+ },
+ {
+  "id": "28160393d9",
+  "file": "webapp/app.js",
+  "line": 2309,
+  "area": "Umumiy",
+  "text": "3-5 yosh"
+ },
+ {
+  "id": "f5ef64de7d",
+  "file": "webapp/app.js",
+  "line": 2310,
+  "area": "Umumiy",
+  "text": "6-7 yosh"
+ },
+ {
+  "id": "e52731f9ca",
+  "file": "webapp/app.js",
+  "line": 2311,
+  "area": "Umumiy",
+  "text": "8-11 yosh"
+ },
+ {
+  "id": "9ac6f2d7c3",
+  "file": "webapp/app.js",
+  "line": 2312,
+  "area": "Umumiy",
+  "text": "12+ yosh"
+ },
+ {
+  "id": "476ee3a322",
+  "file": "webapp/app.js",
+  "line": 2327,
+  "area": "Umumiy",
+  "text": "Kitob tanlang"
+ },
+ {
+  "id": "4adbdeb504",
+  "file": "webapp/app.js",
+  "line": 2329,
+  "area": "Umumiy",
+  "text": "Kitob yoki muallif nomi"
+ },
+ {
+  "id": "ca408dd168",
+  "file": "webapp/app.js",
+  "line": 2374,
+  "area": "Umumiy",
+  "text": "Bunday kitob topilmadi"
+ },
+ {
+  "id": "d40d440b2b",
+  "file": "webapp/app.js",
+  "line": 2375,
+  "area": "Umumiy",
+  "text": "Nomini o‘zim yozaman"
+ },
+ {
+  "id": "0044c9ebd7",
+  "file": "webapp/app.js",
+  "line": 2380,
+  "area": "Umumiy",
+  "text": "ta kitob"
+ },
+ {
+  "id": "88e68f7354",
+  "file": "webapp/app.js",
+  "line": 2389,
+  "area": "Umumiy",
+  "text": "Katalogda yo‘qmi? Nomini yozing"
+ },
+ {
+  "id": "7a90d9046d",
+  "file": "webapp/index.html",
+  "line": 6,
+  "area": "Umumiy",
+  "text": "Bilig AI"
+ },
+ {
+  "id": "ae5982e460",
+  "file": "webapp/index.html",
+  "line": 26,
+  "area": "Umumiy",
+  "text": "Bilig AI ga xush kelibsiz"
+ },
+ {
+  "id": "6ba5bc8833",
+  "file": "webapp/index.html",
+  "line": 27,
+  "area": "Umumiy",
+  "text": "Kitob o‘qish endi qiziqarli safar. Kimsiz?"
+ },
+ {
+  "id": "24fafc4874",
+  "file": "webapp/index.html",
+  "line": 29,
+  "area": "Umumiy",
+  "text": "Men ota-onaman"
+ },
+ {
+  "id": "f4ad6c16c6",
+  "file": "webapp/index.html",
+  "line": 30,
+  "area": "Umumiy",
+  "text": "Men o‘quvchiman"
+ },
+ {
+  "id": "54c1c2f7b3",
+  "file": "webapp/index.html",
+  "line": 37,
+  "area": "Umumiy",
+  "text": "Ulanish kodi"
+ },
+ {
+  "id": "0fe190f59b",
+  "file": "webapp/index.html",
+  "line": 38,
+  "area": "Umumiy",
+  "text": "Ota-onangiz bergan kodni kiriting — 8 xonali farzand kodi yoki BLG-1234"
+ },
+ {
+  "id": "24e69f74f9",
+  "file": "webapp/index.html",
+  "line": 47,
+  "area": "Umumiy",
+  "text": "O‘zingizni tanishtiring"
+ },
+ {
+  "id": "f256f4e2da",
+  "file": "webapp/index.html",
+  "line": 48,
+  "area": "Umumiy",
+  "text": "Yoqimtoy hayvonchalardan birini tanlang"
+ },
+ {
+  "id": "e161270147",
+  "file": "webapp/index.html",
+  "line": 64,
+  "area": "Umumiy",
+  "text": "Yopiq sinov"
+ },
+ {
+  "id": "21440d19e1",
+  "file": "webapp/index.html",
+  "line": 65,
+  "area": "Umumiy",
+  "text": "Bilig AI hozircha faqat taklifnoma orqali ishlaydi. Ota-onangiz yoki administratordan havola so‘rang."
+ },
+ {
+  "id": "ff976d48cd",
+  "file": "webapp/index.html",
+  "line": 87,
+  "area": "Umumiy",
+  "text": "Bolaxona rejimi:"
+ },
+ {
+  "id": "85be5d1618",
+  "file": "webapp_api.py",
+  "line": 377,
+  "area": "Umumiy",
+  "text": "Telegram orqali ochilmagan"
+ },
+ {
+  "id": "ce292717ba",
+  "file": "webapp_api.py",
+  "line": 398,
+  "area": "Umumiy",
+  "text": "Telegram xabar yuborishda xatolik:"
+ },
+ {
+  "id": "599ded55ee",
+  "file": "webapp_api.py",
+  "line": 462,
+  "area": "Ota-onaga xabar",
+  "text": "«{names[0]}» nishonini qo‘lga kiritdi.\\n"
+ },
+ {
+  "id": "23d9564737",
+  "file": "webapp_api.py",
+  "line": 463,
+  "area": "Ota-onaga xabar",
+  "text": "{cond}. Bugun uni bir maqtab qo‘ying."
+ },
+ {
+  "id": "2a8e0047aa",
+  "file": "webapp_api.py",
+  "line": 466,
+  "area": "Ota-onaga xabar",
+  "text": "birdaniga {len(names)} ta nishon oldi:\\n{lst}"
+ },
+ {
+  "id": "7a74e90282",
+  "file": "webapp_api.py",
+  "line": 507,
+  "area": "Umumiy",
+  "text": "Kitobxon Iztopar"
+ },
+ {
+  "id": "cf19112ec2",
+  "file": "webapp_api.py",
+  "line": 507,
+  "area": "Umumiy",
+  "text": "Kitobxon Qahramon"
+ },
+ {
+  "id": "84d23d733f",
+  "file": "webapp_api.py",
+  "line": 507,
+  "area": "Umumiy",
+  "text": "Bilig Donishmandi"
+ },
+ {
+  "id": "48ce9930da",
+  "file": "webapp_api.py",
+  "line": 608,
+  "area": "Umumiy",
+  "text": "kitobdagi tafsilotlarni juda yaxshi eslab qolasan"
+ },
+ {
+  "id": "39237bdf4f",
+  "file": "webapp_api.py",
+  "line": 609,
+  "area": "Umumiy",
+  "text": "voqealar nima uchun sodir bo‘lganini yaxshi tushunasan"
+ },
+ {
+  "id": "3850e1eab0",
+  "file": "webapp_api.py",
+  "line": 610,
+  "area": "Umumiy",
+  "text": "muallif nima demoqchi bo‘lganini teran anglaysan"
+ },
+ {
+  "id": "1620f01fa6",
+  "file": "webapp_api.py",
+  "line": 611,
+  "area": "Umumiy",
+  "text": "fikringni ravon va ishonchli bayon qilasan"
+ },
+ {
+  "id": "549c49a40e",
+  "file": "webapp_api.py",
+  "line": 612,
+  "area": "Umumiy",
+  "text": "So‘z boyligi"
+ },
+ {
+  "id": "c9a0f365e6",
+  "file": "webapp_api.py",
+  "line": 612,
+  "area": "Umumiy",
+  "text": "go‘zal va boy so‘zlardan foydalanasan"
+ },
+ {
+  "id": "c23ddd4bfc",
+  "file": "webapp_api.py",
+  "line": 768,
+  "area": "Umumiy",
+  "text": "role noto‘g‘ri"
+ },
+ {
+  "id": "daa2b914f7",
+  "file": "webapp_api.py",
+  "line": 805,
+  "area": "Ro‘yxatdan o‘tish",
+  "text": "Bunday kodli farzand topilmadi"
+ },
+ {
+  "id": "14eb2b66c4",
+  "file": "webapp_api.py",
+  "line": 808,
+  "area": "Ro‘yxatdan o‘tish",
+  "text": "Bu koddan allaqachon foydalanilgan"
+ },
+ {
+  "id": "18c7cb6006",
+  "file": "webapp_api.py",
+  "line": 812,
+  "area": "Ro‘yxatdan o‘tish",
+  "text": "Siz allaqachon ota-onaga ulangansiz"
+ },
+ {
+  "id": "916ad7cb1f",
+  "file": "webapp_api.py",
+  "line": 823,
+  "area": "Ro‘yxatdan o‘tish",
+  "text": "✅ Farzandingiz ({nrow[0] if nrow else ''}) o‘z telefonidan ulandi!"
+ },
+ {
+  "id": "3952281969",
+  "file": "webapp_api.py",
+  "line": 829,
+  "area": "Ro‘yxatdan o‘tish",
+  "text": "Kodni tekshiring: 8 xonali farzand kodi yoki BLG-1234"
+ },
+ {
+  "id": "012559c077",
+  "file": "webapp_api.py",
+  "line": 838,
+  "area": "Ro‘yxatdan o‘tish",
+  "text": "Bunday kodli ota-ona topilmadi"
+ },
+ {
+  "id": "f43817cd44",
+  "file": "webapp_api.py",
+  "line": 847,
+  "area": "Ro‘yxatdan o‘tish",
+  "text": "Siz allaqachon shu ota-onaga ulangansiz"
+ },
+ {
+  "id": "74fb1207b8",
+  "file": "webapp_api.py",
+  "line": 853,
+  "area": "Ro‘yxatdan o‘tish",
+  "text": "✅ Farzandingiz ({child_name}) Mini App orqali profilingizga ulandi!"
+ },
+ {
+  "id": "0529c76dc3",
+  "file": "webapp_api.py",
+  "line": 869,
+  "area": "Umumiy",
+  "text": "Ism kiritilishi shart"
+ },
+ {
+  "id": "3b5ff4062f",
+  "file": "webapp_api.py",
+  "line": 875,
+  "area": "Umumiy",
+  "text": "Yoshni to‘g‘ri kiriting (3-17)"
+ },
+ {
+  "id": "3060d34016",
+  "file": "webapp_api.py",
+  "line": 906,
+  "area": "Umumiy",
+  "text": "Farzand topilmadi"
+ },
+ {
+  "id": "a2bca7f671",
+  "file": "webapp_api.py",
+  "line": 1030,
+  "area": "Umumiy",
+  "text": "Ruxsat yo‘q"
+ },
+ {
+  "id": "17e68b4d5d",
+  "file": "webapp_api.py",
+  "line": 1036,
+  "area": "Umumiy",
+  "text": "child_id kerak"
+ },
+ {
+  "id": "cddf32037d",
+  "file": "webapp_api.py",
+  "line": 1042,
+  "area": "Umumiy",
+  "text": "Bu farzand sizga tegishli emas"
+ },
+ {
+  "id": "5342f7aceb",
+  "file": "webapp_api.py",
+  "line": 1078,
+  "area": "Umumiy",
+  "text": "Kod yaratib bo‘lmadi, qaytadan urinib ko‘ring"
+ },
+ {
+  "id": "819ddc81df",
+  "file": "webapp_api.py",
+  "line": 1223,
+  "area": "Umumiy",
+  "text": "Mutolaa rejasi"
+ },
+ {
+  "id": "94efdd94a9",
+  "file": "webapp_api.py",
+  "line": 1254,
+  "area": "Umumiy",
+  "text": "Noma'lum muallif"
+ },
+ {
+  "id": "c9a66fd102",
+  "file": "webapp_api.py",
+  "line": 1281,
+  "area": "Umumiy",
+  "text": "Rasm topilmadi"
+ },
+ {
+  "id": "251e4c7dcb",
+  "file": "webapp_api.py",
+  "line": 1337,
+  "area": "Umumiy",
+  "text": "Kamida 1 ta sahifa rasmi kerak"
+ },
+ {
+  "id": "f94f49e164",
+  "file": "webapp_api.py",
+  "line": 1376,
+  "area": "Umumiy",
+  "text": "Hali nishonlar yo‘q"
+ },
+ {
+  "id": "eeec8b230d",
+  "file": "webapp_api.py",
+  "line": 1417,
+  "area": "Umumiy",
+  "text": "🔅 Ota-onangiz balansingizga o‘zgartirish kiritdi. Joriy balans: {new_balance}"
+ },
+ {
+  "id": "0d192dc1e0",
+  "file": "webapp_api.py",
+  "line": 1437,
+  "area": "Umumiy",
+  "text": "Nomi va narxini to‘g‘ri kiriting"
+ },
+ {
+  "id": "4ca3ce48aa",
+  "file": "webapp_api.py",
+  "line": 1481,
+  "area": "Umumiy",
+  "text": "Yangi murojaat (Mini App)"
+ },
+ {
+  "id": "764d475ac3",
+  "file": "webapp_api.py",
+  "line": 1481,
+  "area": "Umumiy",
+  "text": "\\n👤 {sender_name} (ID:"
+ },
+ {
+  "id": "e392318f5b",
+  "file": "webapp_api.py",
+  "line": 1591,
+  "area": "Umumiy",
+  "text": "Ota-onaga ulanmagansiz"
+ },
+ {
+  "id": "53e0a62721",
+  "file": "webapp_api.py",
+  "line": 1627,
+  "area": "Umumiy",
+  "text": "Kitob topilmadi"
+ },
+ {
+  "id": "e59fc7ba2a",
+  "file": "webapp_api.py",
+  "line": 1665,
+  "area": "Bola amallari",
+  "text": "Bugun rasm orqali tekshirish chegarasiga yetdingiz."
+ },
+ {
+  "id": "8a2c5262ec",
+  "file": "webapp_api.py",
+  "line": 1666,
+  "area": "Bola amallari",
+  "text": "Sahifa raqamini qo‘lda kiritsangiz bo‘ladi."
+ },
+ {
+  "id": "8e05882eba",
+  "file": "webapp_api.py",
+  "line": 1691,
+  "area": "Bola amallari",
+  "text": "Bu kitob sahifasiga o‘xshamayapti. Qaytadan urinib ko‘ring."
+ },
+ {
+  "id": "0ff2caa51a",
+  "file": "webapp_api.py",
+  "line": 1696,
+  "area": "Bola amallari",
+  "text": "Sahifa raqami aniq ko‘rinmadi. Sahifa raqamini qo‘lda kiriting."
+ },
+ {
+  "id": "4eb01f02ae",
+  "file": "webapp_api.py",
+  "line": 1709,
+  "area": "Bola amallari",
+  "text": "Sahifa raqamini to‘g‘ri kiriting"
+ },
+ {
+  "id": "b4624d74f7",
+  "file": "webapp_api.py",
+  "line": 1722,
+  "area": "Umumiy",
+  "text": "Siz allaqachon {old_pages}-sahifagacha o‘qigansiz!"
+ },
+ {
+  "id": "a143c91aa3",
+  "file": "webapp_api.py",
+  "line": 1767,
+  "area": "Bola amallari",
+  "text": "Audio topilmadi"
+ },
+ {
+  "id": "79d0580ab0",
+  "file": "webapp_api.py",
+  "line": 1792,
+  "area": "Bola amallari",
+  "text": "conclusion_score, fluency_score, vocabulary_score, parent_note, convo_topic, created_at, bonus_bilig, child_note)"
+ },
+ {
+  "id": "87866c5fd1",
+  "file": "webapp_api.py",
+  "line": 1813,
+  "area": "Bola amallari",
+  "text": "bo‘yicha farzandingizning ovozli hisobotini AI tahlil qildi!\\n\\n"
+ },
+ {
+  "id": "93df9f5796",
+  "file": "webapp_api.py",
+  "line": 1814,
+  "area": "Bola amallari",
+  "text": "📌 {pr.get('summary', '')}\\n\\n✅ {pr.get('strengths', '')}\\n🌱 {pr.get('weaknesses', '')}\\n\\n"
+ },
+ {
+  "id": "a91dff1074",
+  "file": "webapp_api.py",
+  "line": 1815,
+  "area": "Bola amallari",
+  "text": "{pr.get('conversation_topic', '')}"
+ },
+ {
+  "id": "55ce5bf74a",
+  "file": "webapp_api.py",
+  "line": 1833,
+  "area": "Umumiy",
+  "text": "Bu kitob uchun test hali tuzilmagan"
+ },
+ {
+  "id": "d83bdc0741",
+  "file": "webapp_api.py",
+  "line": 1837,
+  "area": "Umumiy",
+  "text": "Test ma'lumotida xatolik"
+ },
+ {
+  "id": "e3fcd3679d",
+  "file": "webapp_api.py",
+  "line": 1846,
+  "area": "Umumiy",
+  "text": "test/submit"
+ },
+ {
+  "id": "12cdd0960e",
+  "file": "webapp_api.py",
+  "line": 1858,
+  "area": "Bola amallari",
+  "text": "Test topilmadi"
+ },
+ {
+  "id": "967a931219",
+  "file": "webapp_api.py",
+  "line": 1886,
+  "area": "Bola amallari",
+  "text": "conclusion_score, created_at, correct_count, total_count)"
+ },
+ {
+  "id": "7046ec31fd",
+  "file": "webapp_api.py",
+  "line": 1905,
+  "area": "Bola amallari",
+  "text": "«{brow[0]}» kitobini tugatdi.\\n"
+ },
+ {
+  "id": "c65a67d2b6",
+  "file": "webapp_api.py",
+  "line": 1906,
+  "area": "Bola amallari",
+  "text": "{brow[1] or 0} bet. Javonida endi {done} ta tugatilgan kitob bor."
+ },
+ {
+  "id": "3f9b8cf2ea",
+  "file": "webapp_api.py",
+  "line": 1957,
+  "area": "Umumiy",
+  "text": "Sovg‘a topilmadi"
+ },
+ {
+  "id": "5e6e64bcf7",
+  "file": "webapp_api.py",
+  "line": 1961,
+  "area": "Umumiy",
+  "text": "Bilig yetarli emas 😔"
+ },
+ {
+  "id": "9c2d575a3d",
+  "file": "webapp_api.py",
+  "line": 1969,
+  "area": "Umumiy",
+  "text": "do‘kondan"
+ },
+ {
+  "id": "a5e6eb67a9",
+  "file": "webapp_api.py",
+  "line": 1969,
+  "area": "Umumiy",
+  "text": "sovg‘asini {price} 🔅 ga sotib oldi."
+ },
+ {
+  "id": "b25f1ef3b8",
+  "file": "webapp_api.py",
+  "line": 1970,
+  "area": "Umumiy",
+  "text": "Sovg‘ani berishni unutmang!"
+ },
+ {
+  "id": "dd0157c9b9",
+  "file": "webapp_api.py",
+  "line": 2048,
+  "area": "3 kunlik xulosa",
+  "text": "so‘nggi {days} kunda kitob ochmadi.\\n"
+ },
+ {
+  "id": "dceed231f9",
+  "file": "webapp_api.py",
+  "line": 2049,
+  "area": "3 kunlik xulosa",
+  "text": "Ketma-ketligi yo‘qolib qolmasin — bugun eslatib qo‘ysangiz bo‘ladi."
+ },
+ {
+  "id": "a7ce0ad9b7",
+  "file": "webapp_api.py",
+  "line": 2051,
+  "area": "3 kunlik xulosa",
+  "text": "{days} kunlik xulosa — {name}"
+ },
+ {
+  "id": "14267c222d",
+  "file": "webapp_api.py",
+  "line": 2053,
+  "area": "3 kunlik xulosa",
+  "text": "• {pages} bet o‘qildi ({active_days} kun faol)"
+ },
+ {
+  "id": "ea19947366",
+  "file": "webapp_api.py",
+  "line": 2055,
+  "area": "3 kunlik xulosa",
+  "text": "• {tests} ta test topshirdi"
+ },
+ {
+  "id": "5e0ecbb552",
+  "file": "webapp_api.py",
+  "line": 2056,
+  "area": "3 kunlik xulosa",
+  "text": "• Ketma-ket {streak}-kun"
+ },
+ {
+  "id": "cead2da3cb",
+  "file": "webapp_api.py",
+  "line": 2060,
+  "area": "3 kunlik xulosa",
+  "text": "\\nEng faol kuni: {wd} — {best[1]} bet."
+ },
+ {
+  "id": "1d6ebbe677",
+  "file": "webapp_api.py",
+  "line": 2149,
+  "area": "Umumiy",
+  "text": "Qidirilgan joy:"
+ }
+]

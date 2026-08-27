@@ -120,7 +120,7 @@ let COVER_INDEX = null;
 
 // Muqovalar ro‘yxati o‘zgarganda shu raqamni oshiring — shunda telefon
 // eski nusxani emas, yangisini yuklaydi (index.html dagi ?v= bilan bir xil).
-const ASSET_V = "6";
+const ASSET_V = "7";
 
 function loadCoverIndex() {
   return fetch("/covers/index.json?v=" + ASSET_V)
@@ -1820,25 +1820,25 @@ const BADGE_LIST = [
   ["birinchi-qadam", "Birinchi qadam", "Ilk 5 sahifa o‘qilganda"],
   ["kitobxon-sayyoh", "Kitobxon sayyoh", "100 bet o‘qilganda"],
   ["kitoblar-sultoni", "Kitoblar sultoni", "500 bet o‘qilganda"],
-  ["ming-betlik-dovon", "Ming betlik dovon", "1 000 bet o‘qilganda"],
-  ["kitoblar-ummoni", "Kitoblar ummoni", "5 000 bet o‘qilganda"],
+  ["ming-betlik-dovon", "Ming bir sahifa", "1 000 bet o‘qilganda"],
+  ["kitoblar-ummoni", "Kitob ummoni", "5 000 bet o‘qilganda"],
   ["olovli-qanot", "Olovli qanot", "3 kun uzluksiz o‘qilganda"],
-  ["yengilmas-qahramon", "Yengilmas qahramon", "7 kun uzluksiz o‘qilganda"],
+  ["yengilmas-qahramon", "Tengsiz qahramon", "7 kun uzluksiz o‘qilganda"],
   ["mutolaa-afsonasi", "Mutolaa afsonasi", "30 kun uzluksiz o‘qilganda"],
   ["olmos-iroda", "Olmos iroda", "100 kun uzluksiz o‘qilganda"],
   ["yil-qahramoni", "Yil qahramoni", "365 kun uzluksiz o‘qilganda"],
   ["qalqon", "Qalqon", "Olov qalqonidan keyin darhol qaytganda"],
   ["marra-golibi", "Marra g‘olibi", "Ilk kitob yakunlanganda"],
   ["tezkor-mutolaa", "Tezkor mutolaa", "Kitob 3 kun ichida tugatilganda"],
-  ["kichik-kutubxonachi", "Kichik kutubxonachi", "10 ta kitob tugatilganda"],
+  ["kichik-kutubxonachi", "Yosh kutubxonachi", "10 ta kitob tugatilganda"],
   ["mutolaa-akademigi", "Mutolaa akademigi", "25 ta kitob tugatilganda"],
-  ["bilim-notigi", "Bilim notig‘i", "Audio xulosada 5 Bilig olinganda"],
+  ["bilim-notigi", "Ilm notig‘i", "Audio xulosada 5 Bilig olinganda"],
   ["tafakkur", "Tafakkur", "Mustaqil fikr yuqori baholanganda"],
   ["buyuk-suxandon", "Buyuk suxandon", "10 ta kitob bo‘yicha a'lo xulosa"],
   ["oltin-qalam", "Oltin qalam", "Go‘zal adabiy so‘zlar bilan bayon etganda"],
   ["zukko-kitobxon", "Zukko kitobxon", "Testda 100% to‘g‘ri javob"],
   ["mantiq-ustasi", "Mantiq ustasi", "Jami 50 ta to‘g‘ri javob"],
-  ["bilim-akademiyasi", "Bilim akademiyasi", "10 ta test ketma-ket 100%"],
+  ["bilim-akademiyasi", "Bilimdon", "10 ta test ketma-ket 100%"],
   ["tonggi-qaldirgoch", "Tonggi qaldirg‘och", "06:00–09:00 oralig‘ida o‘qilganda"],
   ["qutb-yulduzi", "Qutb yulduzi", "Uxlashdan oldin o‘qilganda"],
   ["maroqli", "Maroqli", "Dam olish kunlari o‘qilganda"],

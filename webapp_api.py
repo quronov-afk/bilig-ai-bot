@@ -84,8 +84,8 @@ for _col_sql in (
 # Aynan shu satrlar qidiriladi — «Zukko kitobxon» kabi yangi nomlar
 # tasodifan o‘zgarib ketmasligi uchun.
 _OLD_BADGE_MAP = {
-    "🔥 Charchamas Kitobxon": "Yengilmas qahramon",
-    "🗣 Notiq": "Bilim notig‘i",
+    "🔥 Charchamas Kitobxon": "Tengsiz qahramon",
+    "🗣 Notiq": "Ilm notig‘i",
     "🧠 Zukko": "Zukko kitobxon",
 }
 
@@ -123,6 +123,56 @@ def _migrate_old_badges():
 
 
 _migrate_old_badges()
+
+# ------------------------------------------------------------
+# NISHON NOMI O‘ZGARGANDA BAZANI KO‘CHIRISH
+# ------------------------------------------------------------
+# Nishonlar bazada NOMI bo‘yicha saqlanadi (Users.badges). Nom
+# o‘zgartirilsa, bolalar qo‘lga kiritgan nishon yo‘qolib qolmasligi
+# uchun eski nom yangisiga ko‘chiriladi. Ro‘yxat o‘sib boradi;
+# ikki marta ishga tushsa ham zarari yo‘q.
+# ------------------------------------------------------------
+_BADGE_RENAMES = [
+    ("Ming betlik dovon", "Ming bir sahifa"),
+    ("Kitoblar ummoni", "Kitob ummoni"),
+    ("Yengilmas qahramon", "Tengsiz qahramon"),
+    ("Kichik kutubxonachi", "Yosh kutubxonachi"),
+    ("Bilim notig‘i", "Ilm notig‘i"),
+    ("Bilim akademiyasi", "Bilimdon"),
+]
+
+
+def _migrate_badge_renames():
+    if not _BADGE_RENAMES:
+        return
+    table = dict(_BADGE_RENAMES)
+    try:
+        cursor.execute("SELECT user_id, badges FROM Users "
+                       "WHERE badges IS NOT NULL AND badges != ''")
+        rows = cursor.fetchall()
+    except Exception:
+        return
+    changed = 0
+    for uid, raw in rows:
+        names = [b.strip() for b in (raw or "").split(",") if b.strip()]
+        new_names = []
+        for b in names:
+            b = table.get(b, b)
+            if b not in new_names:
+                new_names.append(b)
+        if new_names != names:
+            try:
+                cursor.execute("UPDATE Users SET badges = ? WHERE user_id = ?",
+                               (",".join(new_names), uid))
+                changed += 1
+            except Exception:
+                pass
+    if changed:
+        conn.commit()
+        print(f"[webapp_api] {changed} ta foydalanuvchining nishon nomlari ko‘chirildi")
+
+
+_migrate_badge_renames()
 
 # 10 ta bolalar avatari — cho‘chqa ISTISNO qilingan
 AVATAR_IDS = ["fox", "bear", "penguin", "rabbit", "cat", "owl", "panda", "lion", "elephant", "dog"]

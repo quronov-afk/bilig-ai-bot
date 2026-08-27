@@ -98,8 +98,8 @@ DEMO_STORE = [
 
 DEMO_BADGES = [
     "Birinchi qadam", "Kitobxon sayyoh", "Kitoblar sultoni",
-    "Olovli qanot", "Yengilmas qahramon", "Marra g‘olibi",
-    "Zukko kitobxon", "Bilim notig‘i", "Tafakkur", "Chaqmoq kitobxon",
+    "Olovli qanot", "Tengsiz qahramon", "Marra g‘olibi",
+    "Zukko kitobxon", "Ilm notig‘i", "Tafakkur", "Chaqmoq kitobxon",
 ]
 
 

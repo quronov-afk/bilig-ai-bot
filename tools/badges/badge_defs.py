@@ -72,7 +72,7 @@ BADGES["kitoblar-sultoni"] = ("Kitoblar sultoni", "500 bet o‘qilganda", "oltin
   <circle cx="44" cy="34" r="2.8" fill="#FFF0B8"/><circle cx="60" cy="30" r="3.4" fill="#FFF0B8"/>
   <circle cx="76" cy="34" r="2.8" fill="#FFF0B8"/>""")
 
-BADGES["ming-betlik-dovon"] = ("Ming betlik dovon", "1 000 bet o‘qilganda", "tosh", """
+BADGES["ming-betlik-dovon"] = ("Ming bir sahifa", "1 000 bet o‘qilganda", "tosh", """
   <path d="M22 88 44 50l12 19 9-13 25 32z" fill="#8FA3B5" stroke="#4A5C6E" stroke-width="2.2" stroke-linejoin="round"/>
   <path d="M44 50 33 69h22z" fill="#F2F7FB"/>
   <path d="M65 56 56 69h18z" fill="#F2F7FB"/>
@@ -83,7 +83,7 @@ BADGES["ming-betlik-dovon"] = ("Ming betlik dovon", "1 000 bet o‘qilganda", "t
   <text x="60" y="103" font-family="Nunito,sans-serif" font-size="13" font-weight="800"
         fill="#4A5C6E" text-anchor="middle">1000</text>""")
 
-BADGES["kitoblar-ummoni"] = ("Kitoblar ummoni", "5 000 bet o‘qilganda", "koinot", """
+BADGES["kitoblar-ummoni"] = ("Kitob ummoni", "5 000 bet o‘qilganda", "koinot", """
   <g opacity=".85">
     <circle cx="38" cy="38" r="1.8" fill="#FFF"/><circle cx="80" cy="34" r="1.4" fill="#FFF"/>
     <circle cx="88" cy="56" r="1.6" fill="#FFF"/><circle cx="32" cy="60" r="1.3" fill="#FFF"/>
@@ -111,7 +111,7 @@ BADGES["olovli-qanot"] = ("Olovli qanot", "3 kun uzluksiz o‘qilganda", "olov",
   <circle cx="38" cy="42" r="2.6" fill="#FFD766"/><circle cx="86" cy="46" r="2" fill="#FFD766" opacity=".85"/>
   <circle cx="32" cy="58" r="1.7" fill="#FFE9A3" opacity=".8"/>""")
 
-BADGES["yengilmas-qahramon"] = ("Yengilmas qahramon", "7 kun uzluksiz o‘qilganda", "chaqmoq", """
+BADGES["yengilmas-qahramon"] = ("Tengsiz qahramon", "7 kun uzluksiz o‘qilganda", "chaqmoq", """
   <path d="M60 26 78 30v22c0 15-8 26-18 31-10-5-18-16-18-31V30z" fill="#FFDF7A" stroke="#B37400" stroke-width="2.4" stroke-linejoin="round"/>
   <path d="M60 26 78 30v22c0 15-8 26-18 31z" fill="#FFC93F" opacity=".75"/>
   <path d="M64 38 49 60h9l-3 18 17-23h-9z" fill="#EFA100" stroke="#8A5A00" stroke-width="1.8" stroke-linejoin="round"/>
@@ -184,7 +184,7 @@ BADGES["tezkor-mutolaa"] = ("Tezkor mutolaa", "Kitob 3 kun ichida tugatilganda",
   <path d="M52 76c3 5 3 10 0 14M60 78c3 6 3 11 0 16M68 76c3 5 3 10 0 14"
         fill="none" stroke="#FFB03A" stroke-width="3.4" stroke-linecap="round"/>""")
 
-BADGES["kichik-kutubxonachi"] = ("Kichik kutubxonachi", "10 ta kitob tugatilganda", "zumrad", """
+BADGES["kichik-kutubxonachi"] = ("Yosh kutubxonachi", "10 ta kitob tugatilganda", "zumrad", """
   <rect x="28" y="34" width="64" height="56" rx="5" fill="#F0FBF6" stroke="#1F7255" stroke-width="2.6"/>
   <path d="M28 60h64" stroke="#1F7255" stroke-width="2.4"/>
   <g stroke="#1F7255" stroke-width="1.6">
@@ -215,7 +215,7 @@ BADGES["mutolaa-akademigi"] = ("Mutolaa akademigi", "25 ta kitob tugatilganda", 
         fill="#2B4372" text-anchor="middle">25</text>""")
 
 # ---------- IV. NOTIQLIK ----------
-BADGES["bilim-notigi"] = ("Bilim notig‘i", "Audio xulosada 5 Bilig olinganda", "marjon", """
+BADGES["bilim-notigi"] = ("Ilm notig‘i", "Audio xulosada 5 Bilig olinganda", "marjon", """
   <rect x="50" y="28" width="20" height="36" rx="10" fill="#E88A4A" stroke="#8A4515" stroke-width="2.4"/>
   <path d="M56 36h8M56 43h8M56 50h8" stroke="#FFE0C2" stroke-width="2" stroke-linecap="round"/>
   <path d="M38 56v4c0 12 10 22 22 22s22-10 22-22v-4" fill="none" stroke="#8A4515" stroke-width="3" stroke-linecap="round"/>
@@ -277,7 +277,7 @@ BADGES["mantiq-ustasi"] = ("Mantiq ustasi", "Jami 50 ta to‘g‘ri javob", "mov
   <text x="60" y="102" font-family="Nunito,sans-serif" font-size="13" font-weight="900"
         fill="#1D6C8A" text-anchor="middle">50</text>""")
 
-BADGES["bilim-akademiyasi"] = ("Bilim akademiyasi", "10 ta test ketma-ket 100%", "koinot", """
+BADGES["bilim-akademiyasi"] = ("Bilimdon", "10 ta test ketma-ket 100%", "koinot", """
   <path d="M60 30 92 44 60 58 28 44z" fill="#7B5FD8" stroke="#C8B6F5" stroke-width="2.4" stroke-linejoin="round"/>
   <path d="M60 30 92 44 60 58z" fill="#9B7FE0" opacity=".7"/>
   <path d="M42 51v13c0 6 8 10 18 10s18-4 18-10V51" fill="#5B3FA8" stroke="#C8B6F5" stroke-width="2.4" stroke-linejoin="round"/>

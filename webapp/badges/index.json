@@ -30,7 +30,7 @@
   "orn": "#8A5E10"
  },
  "ming-betlik-dovon": {
-  "name": "Ming betlik dovon",
+  "name": "Ming bir sahifa",
   "cond": "1 000 bet o‘qilganda",
   "msg": "Ming bet! Bu — bir necha dunyo, bir necha hayot. Sen ularni o‘z ko‘zing bilan ko‘rding.",
   "pal": "tosh",
@@ -40,7 +40,7 @@
   "orn": "#4A5C6E"
  },
  "kitoblar-ummoni": {
-  "name": "Kitoblar ummoni",
+  "name": "Kitob ummoni",
   "cond": "5 000 bet o‘qilganda",
   "msg": "Besh ming bet! Sen kitoblar ummonida suzayotgan kemasan.",
   "pal": "koinot",
@@ -60,7 +60,7 @@
   "orn": "#A63F0C"
  },
  "yengilmas-qahramon": {
-  "name": "Yengilmas qahramon",
+  "name": "Tengsiz qahramon",
   "cond": "7 kun uzluksiz o‘qilganda",
   "msg": "Bir hafta bo‘yi bir kun ham qoldirmading. Bu — chinakam qahramonlik.",
   "pal": "chaqmoq",
@@ -130,7 +130,7 @@
   "orn": "#A6421C"
  },
  "kichik-kutubxonachi": {
-  "name": "Kichik kutubxonachi",
+  "name": "Yosh kutubxonachi",
   "cond": "10 ta kitob tugatilganda",
   "msg": "O‘nta kitob! Endi seni chinakam kitobxon deyish mumkin.",
   "pal": "zumrad",
@@ -150,7 +150,7 @@
   "orn": "#2B4372"
  },
  "bilim-notigi": {
-  "name": "Bilim notig‘i",
+  "name": "Ilm notig‘i",
   "cond": "Audio xulosada 5 Bilig olinganda",
   "msg": "AI ustoz senga eng yuqori bahoni berdi. Nutqing ravon va aniq edi.",
   "pal": "marjon",
@@ -210,7 +210,7 @@
   "orn": "#1D6C8A"
  },
  "bilim-akademiyasi": {
-  "name": "Bilim akademiyasi",
+  "name": "Bilimdon",
   "cond": "10 ta test ketma-ket 100%",
   "msg": "O‘n marta ketma-ket to‘la ball. Bu tasodif emas — bu mahorat.",
   "pal": "koinot",

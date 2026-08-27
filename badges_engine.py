@@ -50,14 +50,14 @@ def check_badges(child_id, ctx=None):
     # ---------- I. Mutolaa hajmi (sahifalar) ----------
     pages = get_child_total_pages(child_id)
     for need, name in ((5, "Birinchi qadam"), (100, "Kitobxon sayyoh"),
-                       (500, "Kitoblar sultoni"), (1000, "Ming betlik dovon"),
-                       (5000, "Kitoblar ummoni")):
+                       (500, "Kitoblar sultoni"), (1000, "Ming bir sahifa"),
+                       (5000, "Kitob ummoni")):
         if pages >= need:
             give(name)
 
     # ---------- II. Uzluksizlik (streak) ----------
     streak = _num("SELECT streak_days FROM Users WHERE user_id = ?", (child_id,))
-    for need, name in ((3, "Olovli qanot"), (7, "Yengilmas qahramon"),
+    for need, name in ((3, "Olovli qanot"), (7, "Tengsiz qahramon"),
                        (30, "Mutolaa afsonasi"), (100, "Olmos iroda"),
                        (365, "Yil qahramoni")):
         if streak >= need:
@@ -70,7 +70,7 @@ def check_badges(child_id, ctx=None):
         "SELECT COUNT(*) FROM Plan_Books pb "
         "JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
         "WHERE rp.child_id = ? AND pb.is_completed = 1", (child_id,))
-    for need, name in ((1, "Marra g‘olibi"), (10, "Kichik kutubxonachi"),
+    for need, name in ((1, "Marra g‘olibi"), (10, "Yosh kutubxonachi"),
                        (25, "Mutolaa akademigi")):
         if done >= need:
             give(name)
@@ -90,7 +90,7 @@ def check_badges(child_id, ctx=None):
     # ---------- IV. Notiqlik va tafakkur (ovozli xulosa) ----------
     if _num("SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id = ? "
             "AND type = 'voice' AND bonus_bilig >= 5", (child_id,)):
-        give("Bilim notig‘i")
+        give("Ilm notig‘i")
     if _num("SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id = ? "
             "AND type = 'voice' AND conclusion_score >= 90", (child_id,)):
         give("Tafakkur")
@@ -121,7 +121,7 @@ def check_badges(child_id, ctx=None):
             "ORDER BY diag_id DESC LIMIT 10", (child_id,))
         last10 = cursor.fetchall()
         if len(last10) == 10 and all(r[0] == r[1] for r in last10):
-            give("Bilim akademiyasi")
+            give("Bilimdon")
     except Exception:
         pass
 
