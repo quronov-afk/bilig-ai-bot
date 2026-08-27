@@ -158,7 +158,7 @@ let COVER_INDEX = null;
 
 // Muqovalar ro‘yxati o‘zgarganda shu raqamni oshiring — shunda telefon
 // eski nusxani emas, yangisini yuklaydi (index.html dagi ?v= bilan bir xil).
-const ASSET_V = "11";
+const ASSET_V = "14";
 
 function loadCoverIndex() {
   return fetch("/covers/index.json?v=" + ASSET_V)
@@ -854,7 +854,6 @@ document.addEventListener("click", async function (e) {
         break;
 
       case "open-add-plan": await Wizard.start(); break;
-      case "wizard-pick-child": await Wizard.pickChild(Number(el.dataset.id)); break;
       case "wizard-pick-mode": await Wizard.pickMode(el.dataset.mode); break;
       case "wizard-continue-plan": await Wizard.continuePlan(); break;
       case "wizard-pick-method": await Wizard.pickMethod(el.dataset.method); break;
@@ -873,7 +872,9 @@ document.addEventListener("click", async function (e) {
         }
         break;
       case "open-generate-test": openGenerateTestModal(Number(el.dataset.id)); break;
-      case "submit-generate-test": await submitGenerateTest(Number(el.dataset.id)); break;
+      case "shot-add": TestShots.add(); break;
+      case "shot-del": TestShots.remove(Number(el.dataset.i)); break;
+      case "shot-submit": await TestShots.submit(); break;
 
       case "adjust-coins": await adjustCoins(Number(el.dataset.id), Number(el.dataset.delta)); break;
 
@@ -916,6 +917,12 @@ document.addEventListener("click", async function (e) {
         break;
       }
       case "submit-edit-child": await submitEditChild(el.dataset.id); break;
+      case "pick-new-avatar":
+        newChildAvatar = el.dataset.avatar;
+        document.querySelectorAll("#new-avatar-grid .avatar-option").forEach(function (b) {
+          b.classList.toggle("selected", b.dataset.avatar === newChildAvatar);
+        });
+        break;
 
       case "open-contact": openContactModal(); break;
       case "submit-contact": await submitContact(); break;
@@ -1323,6 +1330,39 @@ function childNoteHtml(note) {
     '<p class="ai-text">' + escapeHtml(note) + '</p></div></div>';
 }
 
+// ==========================================================
+// TANLOV KARTOCHKASI
+// ----------------------------------------------------------
+// Butun ilovadagi barcha tanlov ro‘yxatlari shu bitta funksiya orqali
+// chiziladi. Shuning uchun kelajakda ko‘rinishni o‘zgartirish uchun
+// faqat shu yerni tahrirlash yetarli.
+//   ic     — ikona nomi (ICON_PATHS dan)
+//   title  — tugma nomi
+//   desc   — SODDA IZOH: foydalanuvchi nega buni bosishi kerak
+//   action — data-action qiymati
+//   data   — qo‘shimcha data-* atributlari, masalan {mode: "quick"}
+//   tone   — ikona rangi: "" (ko‘k) | "gold" | "success" | "soft"
+//   tag    — o‘ng yuqorida kichik yorliq, masalan "Tavsiya"
+// ==========================================================
+function choiceCard(cfg) {
+  let attrs = "";
+  const data = cfg.data || {};
+  Object.keys(data).forEach(function (k) {
+    attrs += ' data-' + k + '="' + escapeHtml(String(data[k])) + '"';
+  });
+  return '<button class="choice-card' + (cfg.tone ? " tone-" + cfg.tone : "") + '"' +
+    ' data-action="' + cfg.action + '"' + attrs + '>' +
+    '<span class="choice-ic">' + icon(cfg.ic, 22, 1.9) + '</span>' +
+    '<span class="choice-tx">' +
+      '<span class="choice-t">' + cfg.title +
+        (cfg.tag ? '<span class="choice-tag">' + cfg.tag + '</span>' : "") +
+      '</span>' +
+      (cfg.desc ? '<span class="choice-d">' + cfg.desc + '</span>' : "") +
+    '</span>' +
+    '<span class="choice-go">' + icon("chevron-right", 18, 2.2) + '</span>' +
+    '</button>';
+}
+
 function emptyState(iconName, title, sub) {
   return '<div class="empty-state"><div class="em-icon">' + icon(iconName, 38, 1.4) + '</div><p style="font-weight:700;color:var(--text);margin:0 0 4px">' + title + '</p><p style="margin:0">' + (sub || "") + '</p></div>';
 }
@@ -1486,34 +1526,115 @@ function bookCardHtml(b, isParent) {
     '</div></div>';
 }
 
-function openGenerateTestModal(bookId) {
-  openModal("AI savollar banki",
-    '<p class="section-sub">Kitobning 5-10 ta sahifasini rasmga oling. AI ular asosida test tuzadi.</p>' +
-    '<input type="file" id="test-photos-input" accept="image/*" multiple style="margin-bottom:12px" />' +
-    '<div id="test-photos-count" class="section-sub"></div>' +
-    '<button class="btn btn-primary btn-block" data-action="submit-generate-test" data-id="' + bookId + '">Testni tuzish</button>'
-  );
-  document.getElementById("test-photos-input").addEventListener("change", function (e) {
-    document.getElementById("test-photos-count").textContent = e.target.files.length + " ta rasm tanlandi";
-  });
-}
-async function submitGenerateTest(bookId) {
-  const input = document.getElementById("test-photos-input");
-  if (!input.files.length) { toast("Kamida 1 ta rasm tanlang"); return; }
-  openModal("Ishlanmoqda", '<div class="empty-state"><div class="spinner"></div>Sahifalar tayyorlanmoqda…</div>');
-  const fd = new FormData();
-  const files = Array.prototype.slice.call(input.files);
-  for (let i = 0; i < files.length; i++) {
-    const prepared = await prepareImage(files[i], "text");
-    fd.append("photos", prepared.blob, "page" + (i + 1) + ".jpg");
+// ==========================================================
+// AI SAVOLLAR BANKI — KO‘P SAHIFALI RASM JAVONI
+// ----------------------------------------------------------
+// Ilgari bu yerda oddiy <input type="file" multiple> turardi. Telefonda
+// kamera bilan rasm bittalab olinadi, va har yangi rasm avvalgisining
+// O‘RNINI EGALLARDI — shuning uchun 5-10 ta sahifa hech qachon
+// yig‘ilmasdi. Endi rasmlar javonga QO‘SHILIB boradi: har birining
+// kichik ko‘rinishi chiqadi, keraksizini o‘chirish mumkin, va nechta
+// sahifa yig‘ilgani chiziqda ko‘rinib turadi.
+// ==========================================================
+const TEST_SHOTS_MIN = 3;    // shundan kam bo‘lsa test sifatsiz chiqadi
+const TEST_SHOTS_GOOD = 5;   // "yetarli" chizig‘i
+const TEST_SHOTS_MAX = 12;   // bundan ortig‘i AI ga ortiqcha yuk
+
+const TestShots = {
+  bookId: null,
+  items: [],      // { blob, url }
+
+  open: function (bookId) {
+    this.bookId = bookId;
+    this.items.forEach(function (it) { URL.revokeObjectURL(it.url); });
+    this.items = [];
+    openModal("Kitob testini tuzish",
+      '<p class="section-sub" style="margin-top:-4px">Farzandingiz kitobni tushunganini tekshiradigan savollar kerak. ' +
+      'Kitobning ichidan ' + TEST_SHOTS_GOOD + '-10 ta sahifani suratga oling — AI o‘qib chiqib, savollarni o‘zi tuzadi.</p>' +
+      '<div id="shot-body"></div>' +
+      '<input type="file" id="shot-input" accept="image/*" multiple class="hidden" />'
+    );
+    const input = document.getElementById("shot-input");
+    const self = this;
+    input.addEventListener("change", async function () {
+      const files = Array.prototype.slice.call(input.files || []);
+      input.value = "";                       // bir xil rasmni qayta tanlash mumkin bo‘lsin
+      for (let i = 0; i < files.length; i++) {
+        if (self.items.length >= TEST_SHOTS_MAX) { toast("Ko‘pi bilan " + TEST_SHOTS_MAX + " ta sahifa"); break; }
+        const prepared = await prepareImage(files[i], "text");
+        self.items.push({ blob: prepared.blob, url: URL.createObjectURL(prepared.blob) });
+        self.paint();
+      }
+    });
+    this.paint();
+  },
+
+  paint: function () {
+    const body = document.getElementById("shot-body");
+    if (!body) return;
+    const n = this.items.length;
+    const cells = this.items.map(function (it, i) {
+      return '<div class="shot-cell"><img src="' + it.url + '" alt="">' +
+        '<button class="shot-del" data-action="shot-del" data-i="' + i + '">' + icon("x", 12, 2.6) + '</button></div>';
+    }).join("");
+    // Hali bitta ham rasm yo‘q — katta, aniq ko‘rinadigan tugma chiqadi.
+    if (n === 0) {
+      body.innerHTML =
+        '<button class="shot-empty" data-action="shot-add">' + icon("camera", 26, 1.7) +
+          '<span>Birinchi sahifani suratga olish</span>' +
+          '<span style="font-size:13.5px;font-weight:500;color:var(--text-soft)">Har safar bittadan qo‘shaveresiz</span>' +
+        '</button>' +
+        '<p class="shot-hint">Kamida ' + TEST_SHOTS_MIN + ' ta sahifa kerak. ' + TEST_SHOTS_GOOD + ' ta bo‘lsa savollar aniqroq chiqadi.</p>' +
+        '<button class="btn btn-primary btn-block" data-action="shot-submit" disabled>Testni tuzish</button>';
+      return;
+    }
+    const addTile = n >= TEST_SHOTS_MAX ? "" :
+      '<button class="shot-add" data-action="shot-add">' + icon("plus", 20, 2) + '</button>';
+    const pct = Math.min(100, Math.round(n / TEST_SHOTS_GOOD * 100));
+    let hint, okClass = "";
+    if (n < TEST_SHOTS_MIN) hint = n + " ta sahifa — hali kam. Kamida " + TEST_SHOTS_MIN + " ta kerak.";
+    else if (n < TEST_SHOTS_GOOD) hint = n + " ta sahifa — bo‘ladi, lekin " + TEST_SHOTS_GOOD + " ta bo‘lsa savollar aniqroq chiqadi.";
+    else { hint = n + " ta sahifa — yetarli. Testni tuzsak bo‘ladi."; okClass = " is-ok"; }
+    body.innerHTML =
+      '<div class="shot-tray">' + cells + addTile + '</div>' +
+      '<div class="shot-meter"><i style="width:' + pct + '%"></i></div>' +
+      '<p class="shot-hint' + okClass + '">' + hint + '</p>' +
+      '<button class="btn btn-primary btn-block" data-action="shot-submit"' + (n < TEST_SHOTS_MIN ? " disabled" : "") + '>' +
+        'Testni tuzish (' + n + ' ta sahifa)</button>';
+  },
+
+  add: function () { document.getElementById("shot-input").click(); },
+
+  remove: function (i) {
+    const it = this.items[i];
+    if (it) URL.revokeObjectURL(it.url);
+    this.items.splice(i, 1);
+    this.paint();
+  },
+
+  submit: async function () {
+    if (this.items.length < TEST_SHOTS_MIN) { toast("Kamida " + TEST_SHOTS_MIN + " ta sahifa kerak"); return; }
+    const bookId = this.bookId;
+    const fd = new FormData();
+    this.items.forEach(function (it, i) { fd.append("photos", it.blob, "page" + (i + 1) + ".jpg"); });
+    openModal("Ishlanmoqda", '<div class="empty-state"><div class="spinner"></div>Sahifalar o‘qilmoqda…</div>');
+    try {
+      const res = await api("/api/parent/books/" + bookId + "/generate_test", { method: "POST", body: fd });
+      closeModal();
+      toast(res.from_bank
+        ? "Bu kitobning testi tayyor edi — " + res.count + " ta savol qo‘shildi"
+        : res.count + " ta savol tuzildi");
+    } catch (e) {
+      closeModal();
+      toast(e.error || "Testni tuzib bo‘lmadi");
+    } finally {
+      this.items.forEach(function (it) { URL.revokeObjectURL(it.url); });
+      this.items = [];
+    }
   }
-  openModal("Ishlanmoqda", '<div class="empty-state"><div class="spinner"></div>Sahifalar tahlil qilinmoqda…</div>');
-  const res = await api("/api/parent/books/" + bookId + "/generate_test", { method: "POST", body: fd });
-  closeModal();
-  toast(res.from_bank
-    ? "Bu kitobning testi tayyor edi — " + res.count + " ta savol qo‘shildi"
-    : res.count + " ta savol tuzildi");
-}
+};
+
+function openGenerateTestModal(bookId) { TestShots.open(bookId); }
 
 // ==========================================================
 // TAB 2: REJALAR — BOLA
@@ -1559,13 +1680,23 @@ async function openBookModal(bookId) {
     '<p class="section-sub" style="margin-top:-4px">' + escapeHtml(b.author || "") + '</p>' +
     '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>' +
     '<div class="progress-label">' + b.pages_read + (b.total_pages ? "/" + b.total_pages : "") + ' bet</div>' +
-    '<p class="eyebrow" style="margin-top:18px">O‘qishni belgilash</p>' +
-    '<div class="action-row">' +
-    '<button class="btn btn-primary" data-action="open-page-photo" data-id="' + bookId + '">' + icon("camera", 16, 2) + ' Sahifa rasmi</button>' +
-    '<button class="btn btn-outline" data-action="open-page-manual" data-id="' + bookId + '">' + icon("edit", 16, 2) + ' Qo‘lda kiritish</button>' +
-    '</div>' +
-    '<p class="eyebrow" style="margin-top:18px">Ovozli xulosa</p>' +
-    '<button class="btn btn-secondary btn-block" data-action="open-voice" data-id="' + bookId + '">' + icon("mic", 16, 2) + ' Ovozli xulosa yuborish ' + (b.has_voice ? "(qayta yuborish)" : "") + '</button>' +
+    '<p class="eyebrow" style="margin-top:18px">Qayergacha o‘qiding?</p>' +
+    choiceCard({
+      ic: "camera", action: "open-page-photo", data: { id: bookId }, tag: "Tez",
+      title: "Sahifani rasmga olish",
+      desc: "To‘xtagan betingni suratga ol — bet raqamini o‘zi o‘qiydi va Bilig beradi."
+    }) +
+    choiceCard({
+      ic: "edit", tone: "soft", action: "open-page-manual", data: { id: bookId },
+      title: "Bet raqamini o‘zim yozaman",
+      desc: "Rasm chiqmasa yoki yorug‘lik yetmasa — raqamni qo‘lda kiritasan."
+    }) +
+    '<p class="eyebrow" style="margin-top:18px">Kitob haqida gapirib ber</p>' +
+    choiceCard({
+      ic: "mic", tone: "success", action: "open-voice", data: { id: bookId },
+      title: b.has_voice ? "Ovozli xulosani qayta yuborish" : "Ovozli xulosa yuborish",
+      desc: "Kitobni o‘z so‘zing bilan so‘zlab ber. AI Ustoz tinglaydi va maslahat beradi."
+    }) +
     testsHtml
   );
 }
@@ -1781,8 +1912,10 @@ async function openTestModal(bookId, stage) {
   let html = '<p class="section-sub">' + questions.length + ' ta savol. Har biriga bittadan javob tanlang.</p>';
   questions.forEach(function (q) {
     html += '<div class="card"><p style="font-weight:700;font-size:16px;margin:0 0 10px">' + escapeHtml(q.question) + '</p>';
-    (q.options || []).forEach(function (opt) {
-      html += '<button class="option-btn" data-action="select-test-opt" data-qid="' + q.id + '" data-val="' + escapeHtml(opt) + '">' + escapeHtml(opt) + '</button>';
+    (q.options || []).forEach(function (opt, oi) {
+      html += '<button class="option-btn" data-action="select-test-opt" data-qid="' + q.id + '" data-val="' + escapeHtml(opt) + '">' +
+        '<span class="opt-letter">' + "ABCDEF".charAt(oi) + '</span>' +
+        '<span class="opt-text">' + escapeHtml(opt) + '</span></button>';
     });
     html += '</div>';
   });
@@ -2353,6 +2486,82 @@ async function submitEditChild(id) {
   State.childrenCache = await api("/api/parent/children");
   renderChildDetailPage(Number(id));
 }
+// ==========================================================
+// FARZAND QO‘SHISH
+// ----------------------------------------------------------
+// Uyda bitta telefon bo‘lishi mumkin — shuning uchun farzandning
+// alohida Telegram hisobi shart emas. Ota-ona uni shu yerda o‘zi
+// yaratadi, keyin farzandga 8 xonali ID beriladi.
+// ==========================================================
+let newChildAvatar = "fox";
+function openAddChildModal() {
+  newChildAvatar = "fox";
+  const avatarsHtml = AVATAR_ORDER.map(function (aid) {
+    const a = AVATARS[aid];
+    return '<button class="avatar-option' + (aid === newChildAvatar ? " selected" : "") + '" data-action="pick-new-avatar" data-avatar="' + aid + '">' +
+      '<span class="avatar-circle">' + avatarMarkup(aid, 54) + '</span><span>' + a.label + '</span></button>';
+  }).join("");
+  openModal("Farzand qo‘shish",
+    '<p class="section-sub" style="margin-top:-4px">Farzandingizning alohida telefoni bo‘lishi shart emas — hammasini shu yerdan boshqarasiz. ' +
+    'Keyin xohlasa, unga beriladigan ID orqali o‘z telefonidan kiradi.</p>' +
+    '<label class="field-label">Qaysi hayvoncha unga yoqadi?</label>' +
+    '<div class="avatar-grid" id="new-avatar-grid" style="padding:0 0 8px">' + avatarsHtml + '</div>' +
+    '<label class="field-label">Ismi</label>' +
+    '<input id="new-child-name" class="text-input" placeholder="Masalan: Ibrohim" />' +
+    '<label class="field-label">Yoshi</label>' +
+    '<input id="new-child-age" type="number" class="text-input" placeholder="Masalan: 9" />' +
+    '<p class="section-sub" style="margin:8px 0 12px">Yoshi kitob tavsiyalari uchun kerak — katalog aynan shu yoshga mos kitoblarni ko‘rsatadi.</p>' +
+    '<button class="btn btn-primary btn-block" data-action="submit-add-child">Qo‘shish</button>'
+  );
+}
+
+async function submitAddChild() {
+  const name = document.getElementById("new-child-name").value.trim();
+  const age = Number(document.getElementById("new-child-age").value);
+  if (!name) { toast("Ismini kiriting"); return; }
+  if (!age || age < 3 || age > 17) { toast("Yoshini to‘g‘ri kiriting (3-17)"); return; }
+  const res = await api("/api/parent/children", {
+    method: "POST",
+    body: { name: name, age: age, avatar_id: newChildAvatar }
+  });
+  closeModal();
+  State.childrenCache = await api("/api/parent/children");
+  State.selectedChildId = res.id;
+  toast(name + " qo‘shildi");
+  switchTab("home");
+}
+
+// Farzandning ID raqamini nusxalash — u o‘z telefonidan kirganda shu kod kerak.
+async function copyCode(code) {
+  let ok = false;
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      await navigator.clipboard.writeText(code);
+      ok = true;
+    }
+  } catch (e) { ok = false; }
+  if (!ok) {
+    // Eski telefonlarda clipboard API ishlamaydi — zaxira yo‘l.
+    try {
+      const ta = document.createElement("textarea");
+      ta.value = code;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      ok = document.execCommand("copy");
+      document.body.removeChild(ta);
+    } catch (e) { ok = false; }
+  }
+  toast(ok ? "Kod nusxalandi: " + code : "Kod: " + code);
+}
+
+// Bosh sahifadagi kitob kartochkasi bosilganda kitob oynasi ochiladi:
+// bet belgilash, ovozli xulosa va testlar shu yerda.
+async function goToBook(bookId) {
+  await openBookModal(bookId);
+}
+
 function openContactModal() {
   openModal("Yordam va aloqa",
     '<p class="section-sub">Savol, taklif yoki muammoingizni yozing — administratorga yuboriladi.</p>' +
@@ -2388,9 +2597,18 @@ const Wizard = {
     this.renderMode();
   },
   renderMode: function () {
-    openModal("Reja turi",
-      '<button class="option-btn" data-action="wizard-pick-mode" data-mode="quick">' + icon("book-open", 18, 1.8) + ' Tezkor mutolaa (bitta kitob)</button>' +
-      '<button class="option-btn" data-action="wizard-pick-mode" data-mode="marathon">' + icon("award", 18, 1.8) + ' Mutolaa marafoni (bir nechta kitob)</button>'
+    openModal("Qanday reja tuzamiz?",
+      '<p class="section-sub" style="margin-top:-4px">Reja — farzandingiz o‘qiydigan kitoblar ro‘yxati.</p>' +
+      choiceCard({
+        ic: "book-open", action: "wizard-pick-mode", data: { mode: "quick" }, tag: "Oddiy",
+        title: "Bitta kitob",
+        desc: "Faqat bitta kitob qo‘shasiz. Nom ham, sovrin ham so‘ralmaydi — bir bosishda tayyor."
+      }) +
+      choiceCard({
+        ic: "award", tone: "gold", action: "wizard-pick-mode", data: { mode: "marathon" },
+        title: "Mutolaa marafoni",
+        desc: "Bir nechta kitobdan iborat uzoq safar. Nom qo‘yasiz va marra sovrinini va'da qilasiz."
+      })
     );
   },
   pickMode: async function (mode) {
@@ -2428,9 +2646,22 @@ const Wizard = {
   pickMethod: function (method) {
     if (!method) {
       openModal("Kitobni qanday qo‘shamiz?",
-        '<button class="option-btn" data-action="wizard-pick-method" data-method="rec">' + icon("book-open", 18, 1.8) + ' Katalogdan tanlash</button>' +
-        '<button class="option-btn" data-action="wizard-pick-method" data-method="text">' + icon("edit", 18, 1.8) + ' Nomini yozib qo‘shish</button>' +
-        '<button class="option-btn" data-action="wizard-pick-method" data-method="photo">' + icon("camera", 18, 1.8) + ' Muqovani rasmga olish</button>'
+        '<p class="section-sub" style="margin-top:-4px">Uchta yo‘l bor. Eng ishonchlisi — katalog.</p>' +
+        choiceCard({
+          ic: "book-open", action: "wizard-pick-method", data: { method: "rec" }, tag: "Tavsiya",
+          title: "Katalogdan tanlash",
+          desc: "167 ta kitob, muqovasi bilan. Testi ham tayyor — rasm yuklash shart emas."
+        }) +
+        choiceCard({
+          ic: "edit", tone: "soft", action: "wizard-pick-method", data: { method: "text" },
+          title: "Nomini yozib qo‘shish",
+          desc: "Kitob katalogda bo‘lmasa, nomi va muallifini o‘zingiz yozasiz."
+        }) +
+        choiceCard({
+          ic: "camera", tone: "soft", action: "wizard-pick-method", data: { method: "photo" },
+          title: "Muqovani rasmga olish",
+          desc: "Kitob qo‘lingizda, lekin nomini yozishga erinsangiz — old muqovasini suratga oling."
+        })
       );
       return;
     }

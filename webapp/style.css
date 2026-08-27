@@ -873,6 +873,86 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
 .option-btn.correct { border-color: var(--success); background: var(--success-bg); }
 .option-btn.wrong { border-color: var(--danger); background: var(--danger-bg); }
 
+/* ==========================================================
+   TANLOV KARTOCHKASI (.choice-card)
+   ----------------------------------------------------------
+   Ilgari tanlovlar bir xil yassi qatorlar edi — qaysi biri nima
+   qilishini foydalanuvchi taxmin qilardi. Endi har bir tanlov:
+   chapda rangli ikona, sarlavha, ostida bir qatorli SODDA IZOH
+   («nega buni bosaman?»), o‘ngda strelka.
+   ========================================================== */
+.choice-card {
+  width: 100%; display: flex; align-items: center; gap: 13px; text-align: left;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: 14px 14px; margin-bottom: 10px;
+  cursor: pointer; box-shadow: var(--shadow-raised);
+  transition: transform .12s ease, border-color .12s ease;
+}
+.choice-card:active { transform: translateY(1px); }
+.choice-card.is-on { border-color: var(--brand); background: var(--brand-bg); }
+.choice-ic {
+  flex: 0 0 46px; width: 46px; height: 46px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--brand-bg); color: var(--brand-deep);
+}
+.choice-card.tone-gold    .choice-ic { background: var(--gold-bg);    color: var(--gold-deep); }
+.choice-card.tone-success .choice-ic { background: var(--success-bg); color: var(--success-deep); }
+.choice-card.tone-soft    .choice-ic { background: var(--surface-soft); color: var(--text-soft); }
+.choice-tx { flex: 1 1 auto; min-width: 0; display: block; }
+.choice-t {
+  font-size: 16px; font-weight: 700; color: var(--text);
+  display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap;
+}
+.choice-d { display: block; font-size: 13.5px; font-weight: 500; color: var(--text-soft); line-height: 1.4; margin-top: 3px; }
+.choice-go { flex: 0 0 auto; color: var(--text-faint); display: flex; }
+.choice-tag {
+  display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: .03em; text-transform: uppercase;
+  color: var(--brand-deep); background: var(--brand-bg); border-radius: 999px; padding: 2px 7px; white-space: nowrap;
+}
+
+/* Rol tanlash ekranidagi kartochkalar biroz kengroq turadi */
+.role-buttons { max-width: 380px; margin: 10px auto 0; }
+.role-buttons .choice-card { margin-bottom: 0; }
+
+/* ---------- Test javoblari: A / B / C / D ---------- */
+.option-btn .opt-letter {
+  flex: 0 0 30px; width: 30px; height: 30px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--surface-soft); color: var(--text-soft);
+  font-size: 14.5px; font-weight: 800;
+}
+.option-btn .opt-text { flex: 1 1 auto; min-width: 0; }
+.option-btn.selected .opt-letter { background: var(--brand); color: #fff; }
+.option-btn.correct  .opt-letter { background: var(--success); color: #fff; }
+.option-btn.wrong    .opt-letter { background: var(--danger);  color: #fff; }
+
+/* ---------- Rasm javoni (ko‘p sahifali yuklash) ---------- */
+.shot-tray { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 10px 0 4px; }
+.shot-cell { position: relative; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; background: var(--surface-soft); }
+.shot-cell img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shot-del {
+  position: absolute; top: 3px; right: 3px; width: 22px; height: 22px; border-radius: 50%;
+  border: none; background: rgba(15, 23, 42, .62); color: #fff;
+  display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;
+}
+.shot-add {
+  aspect-ratio: 3 / 4; border: 1.5px dashed var(--border); border-radius: 12px; background: var(--surface);
+  color: var(--text-faint); display: flex; align-items: center; justify-content: center; cursor: pointer;
+}
+.shot-meter { height: 6px; border-radius: 999px; background: var(--surface-soft); overflow: hidden; margin-top: 10px; }
+.shot-meter > i { display: block; height: 100%; background: var(--brand); border-radius: 999px; transition: width .2s ease; }
+.shot-hint { font-size: 13.5px; font-weight: 600; color: var(--text-soft); margin: 7px 0 12px; }
+.shot-hint.is-ok { color: var(--success-deep); }
+.shot-empty {
+  width: 100%; border: 1.5px dashed var(--border); border-radius: var(--radius-md);
+  background: var(--surface); padding: 22px 16px; margin: 12px 0 0;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  color: var(--brand-deep); font-size: 15.5px; font-weight: 700; cursor: pointer;
+}
+
+/* Bosib bo‘lmaydigan tugma o‘chiq ko‘rinishda turadi — foydalanuvchi bekorga bosmasin */
+.btn:disabled { opacity: .45; cursor: default; box-shadow: none; }
+
 .upload-zone {
   border: 1.5px dashed var(--border); border-radius: var(--radius-md); padding: 26px 16px; text-align: center;
   color: var(--text-soft); cursor: pointer; margin-bottom: 10px; font-size: 15.5px;

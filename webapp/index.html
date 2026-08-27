@@ -19,7 +19,7 @@ body {
 .hidden { display: none !important; }
 img { max-width: 100%; }
 </style>
-<link rel="stylesheet" href="style.css?v=11" />
+<link rel="stylesheet" href="style.css?v=14" />
 </head>
 <body>
 
@@ -37,8 +37,22 @@ img { max-width: 100%; }
     <h1 class="hero-title">Bilig AI ga xush kelibsiz</h1>
     <p class="hero-sub">Kitob o‘qish endi qiziqarli safar. Kimsiz?</p>
     <div class="role-buttons">
-      <button class="btn btn-primary big" data-role="parent">Men ota-onaman</button>
-      <button class="btn btn-secondary big" data-role="child">Men o‘quvchiman</button>
+      <button class="choice-card" data-role="parent">
+        <span class="choice-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <span class="choice-tx">
+          <span class="choice-t">Men ota-onaman</span>
+          <span class="choice-d">Farzandimga kitob qo‘yaman, natijasini kuzataman va sovrin belgilayman.</span>
+        </span>
+        <span class="choice-go"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+      </button>
+      <button class="choice-card tone-gold" data-role="child">
+        <span class="choice-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+        <span class="choice-tx">
+          <span class="choice-t">Men o‘quvchiman</span>
+          <span class="choice-d">Kitob o‘qiyman, Bilig tangasi yig‘aman va nishonlarni ochaman.</span>
+        </span>
+        <span class="choice-go"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+      </button>
     </div>
   </div>
 
@@ -145,6 +159,6 @@ img { max-width: 100%; }
 
 </div>
 
-<script src="app.js?v=11"></script>
+<script src="app.js?v=14"></script>
 </body>
 </html>
