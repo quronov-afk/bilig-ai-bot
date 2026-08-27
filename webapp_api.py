@@ -47,6 +47,13 @@ for _col_sql in (
     "ALTER TABLE Users ADD COLUMN profile_done INTEGER DEFAULT 0",
     # Ovozli xulosa uchun AI bergan Bilig bahosi (bosh sahifada ko‘rsatiladi)
     "ALTER TABLE Diagnostic_Logs ADD COLUMN bonus_bilig INTEGER DEFAULT 0",
+    # Reja turi: 'quick' — bir martalik kitob, 'marathon' — bir nechta kitobli marafon.
+    # Eski rejalar 'quick' bo‘lib qoladi, chunki ular odatda bitta kitobdan iborat.
+    "ALTER TABLE Reading_Plans ADD COLUMN plan_type TEXT DEFAULT 'quick'",
+    # Farzandning shaxsiy ulanish kodi (8 xonali). Ota-ona farzandni o‘z
+    # kabinetidan yaratganda beriladi; farzand keyinchalik o‘z telefonidan
+    # kirmoqchi bo‘lsa, aynan shu kodni kiritadi.
+    "ALTER TABLE Users ADD COLUMN child_code TEXT",
 ):
     try:
         cursor.execute(_col_sql)
@@ -282,11 +289,48 @@ def api_register_role():
 @app.route("/api/link_parent", methods=["POST"])
 @require_auth
 def api_link_parent():
-    """Bola ota-ona kodini (BLG-1234) kiritganda oila bog‘lanadi."""
+    """Bola kodni kiritganda oila bog‘lanadi.
+
+    Ikki xil kod qabul qilinadi:
+      • 8 xonali farzand kodi — ota-ona uni kabinetida yaratib qo‘ygan,
+        bola o‘z telefonidan kirganda tayyor profilini o‘ziga oladi;
+      • BLG-1234 — ota-ona kodi (eski yo‘l): yangi profil ochiladi.
+    """
     data = request.get_json(force=True) or {}
     code = (data.get("code") or "").strip().upper()
+    uid = g.user_id
+
+    # ---- 1-yo‘l: farzandning shaxsiy 8 xonali kodi ----
+    digits = "".join(ch for ch in code if ch.isdigit())
+    if len(digits) == 8 and not code.startswith("BLG-"):
+        cursor.execute("SELECT user_id FROM Users WHERE child_code = ?", (digits,))
+        found = cursor.fetchone()
+        if not found:
+            return jsonify({"error": "Bunday kodli farzand topilmadi"}), 404
+        local_id = found[0]
+        if local_id > 0:
+            return jsonify({"error": "Bu koddan allaqachon foydalanilgan"}), 400
+
+        cursor.execute("SELECT 1 FROM Family_Link WHERE child_id = ?", (uid,))
+        if cursor.fetchone():
+            return jsonify({"error": "Siz allaqachon ota-onaga ulangansiz"}), 400
+
+        cursor.execute("SELECT parent_id FROM Family_Link WHERE child_id = ?", (local_id,))
+        prow = cursor.fetchone()
+        _bind_child_to_telegram(local_id, uid)
+
+        cursor.execute("SELECT name FROM Users WHERE user_id = ?", (uid,))
+        nrow = cursor.fetchone()
+        if prow:
+            send_telegram_message(
+                prow[0],
+                f"✅ Farzandingiz ({nrow[0] if nrow else ''}) o‘z telefonidan ulandi!"
+            )
+        return jsonify({"ok": True, "profile_ready": True})
+
+    # ---- 2-yo‘l: ota-ona kodi ----
     if not code.startswith("BLG-"):
-        return jsonify({"error": "Kod 'BLG-1234' ko‘rinishida bo‘lishi kerak"}), 400
+        return jsonify({"error": "Kodni tekshiring: 8 xonali farzand kodi yoki BLG-1234"}), 400
 
     suffix = code.replace("BLG-", "")
     cursor.execute(
@@ -297,7 +341,6 @@ def api_link_parent():
     if not parent:
         return jsonify({"error": "Bunday kodli ota-ona topilmadi"}), 404
 
-    uid = g.user_id
     try:
         with db_lock:
             cursor.execute(
@@ -355,7 +398,7 @@ def api_child_profile():
 # 3) OTA-ONA BO‘LIMI
 # ==========================================================
 
-@app.route("/api/parent/home/<int:child_id>", methods=["GET"])
+@app.route("/api/parent/home/<int(signed=True):child_id>", methods=["GET"])
 @require_auth
 def parent_home(child_id):
     """Bosh sahifa (ota-ona) — tanlangan farzand bo‘yicha to‘liq holat: faoliyat, kitoblar, natijalar."""
@@ -428,19 +471,147 @@ def parent_home(child_id):
     })
 
 
+def _new_child_code():
+    """Farzand uchun 8 xonali, takrorlanmas ulanish kodi."""
+    import random
+    for _ in range(50):
+        code = "".join(random.choice("0123456789") for _ in range(8))
+        cursor.execute("SELECT 1 FROM Users WHERE child_code = ?", (code,))
+        if not cursor.fetchone():
+            return code
+    return None
+
+
+def _new_local_child_id():
+    """Ota-ona yaratgan farzand uchun ichki raqam.
+
+    Telegram raqamlari doim musbat bo‘lgani uchun manfiy raqam tanlanadi —
+    shunda hech qachon to‘qnashuv bo‘lmaydi. Farzand keyin o‘z telefonidan
+    ulanganda bu raqam uning haqiqiy Telegram raqamiga almashtiriladi.
+    """
+    cursor.execute("SELECT MIN(user_id) FROM Users")
+    row = cursor.fetchone()
+    lowest = row[0] if row and row[0] is not None else 0
+    return min(-1, lowest - 1)
+
+
+def _bind_child_to_telegram(local_id, telegram_id):
+    """Ota-ona yaratgan farzand profilini haqiqiy Telegram hisobiga bog‘lash.
+
+    Farzandning barcha yozuvlari (kitoblar, o‘qish tarixi, testlar, Bilig)
+    saqlanib qoladi — faqat raqami almashadi.
+    """
+    cursor.execute("SELECT is_approved FROM Users WHERE user_id = ?", (telegram_id,))
+    row = cursor.fetchone()
+    approved = row[0] if row else 1
+    with db_lock:
+        # Telegram foydalanuvchisining bo‘sh yozuvi o‘rnini profil egallaydi
+        cursor.execute("DELETE FROM Users WHERE user_id = ?", (telegram_id,))
+        cursor.execute(
+            "UPDATE Users SET user_id = ?, is_approved = ?, role = 'child', profile_done = 1 "
+            "WHERE user_id = ?",
+            (telegram_id, approved, local_id)
+        )
+        for table in ("Family_Link", "Reading_Plans", "Reading_Logs", "Diagnostic_Logs"):
+            cursor.execute(
+                "UPDATE %s SET child_id = ? WHERE child_id = ?" % table,
+                (telegram_id, local_id)
+            )
+        conn.commit()
+
+
+@app.route("/api/admin/demo", methods=["POST"])
+@require_auth
+def admin_demo():
+    """Namoyish ma'lumoti — faqat loyiha egasi uchun.
+
+    Tanlangan farzand profilini investorlarga ko‘rsatish uchun to‘liq,
+    haqiqiyga o‘xshash natijalar bilan to‘ldiradi yoki tozalaydi.
+    """
+    if g.user_id != OWNER_ID:
+        return jsonify({"error": "Ruxsat yo‘q"}), 403
+
+    data = request.get_json(force=True) or {}
+    child_id = data.get("child_id")
+    action = data.get("action") or "fill"
+    if not child_id:
+        return jsonify({"error": "child_id kerak"}), 400
+
+    cursor.execute(
+        "SELECT 1 FROM Family_Link WHERE parent_id = ? AND child_id = ?", (g.user_id, child_id)
+    )
+    if not cursor.fetchone():
+        return jsonify({"error": "Bu farzand sizga tegishli emas"}), 403
+
+    import demo_data
+    with db_lock:
+        if action == "clear":
+            demo_data.clear_demo_child(int(child_id))
+            return jsonify({"ok": True, "cleared": True})
+        result = demo_data.fill_demo_child(g.user_id, int(child_id))
+    return jsonify({"ok": True, **result})
+
+
+@app.route("/api/parent/children", methods=["POST"])
+@require_auth
+def parent_add_child():
+    """Ota-ona farzandni to‘liq o‘zi qo‘shadi (ism, yosh, avatar).
+
+    Uyda bitta telefon bo‘lishi mumkin — shuning uchun farzandning alohida
+    Telegram hisobi bo‘lishi shart emas. Unga 8 xonali kod beriladi:
+    keyinchalik o‘z telefonidan kirmoqchi bo‘lsa, shu kodni kiritadi.
+    """
+    data = request.get_json(force=True) or {}
+    name = (data.get("name") or "").strip()
+    avatar_id = data.get("avatar_id") or "fox"
+    if avatar_id not in AVATAR_IDS:
+        avatar_id = "fox"
+    if not name:
+        return jsonify({"error": "Ism kiritilishi shart"}), 400
+    try:
+        age = int(data.get("age"))
+    except (TypeError, ValueError):
+        age = 0
+    if age < 3 or age > 17:
+        return jsonify({"error": "Yoshni to‘g‘ri kiriting (3-17)"}), 400
+
+    code = _new_child_code()
+    if not code:
+        return jsonify({"error": "Kod yaratib bo‘lmadi, qaytadan urinib ko‘ring"}), 500
+
+    with db_lock:
+        child_id = _new_local_child_id()
+        cursor.execute(
+            "INSERT INTO Users (user_id, role, name, is_approved, avatar_id, profile_done, child_code) "
+            "VALUES (?, 'child', ?, 1, ?, 1, ?)",
+            (child_id, name, avatar_id, code)
+        )
+        cursor.execute(
+            "INSERT INTO Family_Link (parent_id, child_id, child_age) VALUES (?, ?, ?)",
+            (g.user_id, child_id, age)
+        )
+        conn.commit()
+
+    return jsonify({"ok": True, "id": child_id, "name": name, "age": age,
+                    "avatar_id": avatar_id, "child_code": code, "linked": False})
+
+
 @app.route("/api/parent/children", methods=["GET"])
 @require_auth
 def parent_children():
     cursor.execute(
-        "SELECT fl.child_id, u.name, fl.child_age, u.avatar_id FROM Family_Link fl "
-        "JOIN Users u ON fl.child_id = u.user_id WHERE fl.parent_id = ?",
+        "SELECT fl.child_id, u.name, fl.child_age, u.avatar_id, u.child_code FROM Family_Link fl "
+        "JOIN Users u ON fl.child_id = u.user_id WHERE fl.parent_id = ? "
+        "ORDER BY fl.rowid",   # qo‘shilgan tartibda — har safar joyi almashmasin
         (g.user_id,)
     )
     rows = cursor.fetchall()
-    return jsonify([{"id": r[0], "name": r[1], "age": r[2] or 10, "avatar_id": r[3] or "fox"} for r in rows])
+    # linked=True — farzand o‘z telefonidan ham kirgan (raqami musbat Telegram raqami)
+    return jsonify([{"id": r[0], "name": r[1], "age": r[2] or 10, "avatar_id": r[3] or "fox",
+                     "child_code": r[4] or "", "linked": r[0] > 0} for r in rows])
 
 
-@app.route("/api/parent/children/<int:child_id>/age", methods=["POST"])
+@app.route("/api/parent/children/<int(signed=True):child_id>/age", methods=["POST"])
 @require_auth
 def parent_set_child_age(child_id):
     data = request.get_json(force=True) or {}
@@ -454,7 +625,7 @@ def parent_set_child_age(child_id):
     return jsonify({"ok": True})
 
 
-@app.route("/api/parent/children/<int:child_id>/profile", methods=["POST"])
+@app.route("/api/parent/children/<int(signed=True):child_id>/profile", methods=["POST"])
 @require_auth
 def parent_edit_child_profile(child_id):
     """Ota-ona farzandning ismi, yoshi va avatarini o‘zi tahrirlashi (Bolaxona bo‘limidan)."""
@@ -490,14 +661,15 @@ def parent_recommended_books():
 @require_auth
 def parent_plans():
     child_id = request.args.get("child_id", type=int)
-    q = "SELECT plan_id, name, prize, status, child_id FROM Reading_Plans WHERE parent_id = ?"
+    q = ("SELECT plan_id, name, prize, status, child_id, COALESCE(plan_type, 'quick') "
+         "FROM Reading_Plans WHERE parent_id = ?")
     params = [g.user_id]
     if child_id:
         q += " AND child_id = ?"
         params.append(child_id)
     cursor.execute(q, params)
     plans = []
-    for plan_id, name, prize, status, cid in cursor.fetchall():
+    for plan_id, name, prize, status, cid, plan_type in cursor.fetchall():
         cursor.execute(
             "SELECT book_id, title, author, pages_read, total_pages, is_completed, "
             "mid_test_1_done, mid_test_2_done, final_test_done FROM Plan_Books WHERE plan_id = ?",
@@ -512,7 +684,7 @@ def parent_plans():
         ]
         plans.append({
             "id": plan_id, "name": name, "prize": prize, "status": status,
-            "child_id": cid, "books": books
+            "child_id": cid, "type": plan_type, "books": books
         })
     return jsonify(plans)
 
@@ -525,13 +697,15 @@ def parent_create_plan():
     child_id = data.get("child_id")
     name = data.get("name") or "Mutolaa rejasi"
     prize = data.get("prize") or ""
+    plan_type = "marathon" if data.get("type") == "marathon" else "quick"
     if not child_id:
         return jsonify({"error": "child_id kerak"}), 400
 
     with db_lock:
         cursor.execute(
-            "INSERT INTO Reading_Plans (parent_id, child_id, name, prize, status) VALUES (?, ?, ?, ?, 'active')",
-            (g.user_id, child_id, name, prize)
+            "INSERT INTO Reading_Plans (parent_id, child_id, name, prize, status, plan_type) "
+            "VALUES (?, ?, ?, ?, 'active', ?)",
+            (g.user_id, child_id, name, prize, plan_type)
         )
         conn.commit()
         plan_id = cursor.lastrowid
@@ -545,10 +719,18 @@ def parent_add_book_text(plan_id):
     data = request.get_json(force=True) or {}
     raw_text = (data.get("text") or "").strip()
     total_pages = int(data.get("total_pages") or 0)
-    if not raw_text:
-        return jsonify({"error": "Kitob nomini kiriting"}), 400
 
-    title, author = run_async(ai_service.normalize_book_input(raw_text))
+    # Katalogdan, tavsiyalardan yoki muqova tasdig‘idan kelgan kitobda nom va
+    # muallif allaqachon aniq — bunda AI umuman chaqirilmaydi (tez va tekin).
+    exact_title = (data.get("title") or "").strip()
+    exact_author = (data.get("author") or "").strip()
+    if exact_title:
+        title = exact_title
+        author = exact_author or "Noma'lum muallif"
+    else:
+        if not raw_text:
+            return jsonify({"error": "Kitob nomini kiriting"}), 400
+        title, author = run_async(ai_service.normalize_book_input(raw_text))
 
     with db_lock:
         cursor.execute(
@@ -558,6 +740,21 @@ def parent_add_book_text(plan_id):
         conn.commit()
         book_id = cursor.lastrowid
     return jsonify({"ok": True, "book_id": book_id, "title": title, "author": author})
+
+
+@app.route("/api/parent/cover_read", methods=["POST"])
+@require_auth
+def parent_cover_read():
+    """Muqova rasmidan nom va muallifni o‘qiydi, LEKIN bazaga yozmaydi.
+
+    Rangba-rang muqovalarda AI adashishi mumkin, shuning uchun natija avval
+    ota-onaga tasdiqlash uchun ko‘rsatiladi — u yerda tuzatib, keyin saqlanadi.
+    """
+    if "photo" not in request.files:
+        return jsonify({"error": "Rasm topilmadi"}), 400
+    image_bytes = request.files["photo"].read()
+    title, author = run_async(ai_service.analyze_book_cover(image_bytes))
+    return jsonify({"title": title, "author": author})
 
 
 @app.route("/api/parent/plans/<int:plan_id>/books/photo", methods=["POST"])
@@ -608,7 +805,7 @@ def parent_generate_test(book_id):
     return jsonify({"ok": True, "count": len(questions)})
 
 
-@app.route("/api/parent/results/<int:child_id>", methods=["GET"])
+@app.route("/api/parent/results/<int(signed=True):child_id>", methods=["GET"])
 @require_auth
 def parent_child_results(child_id):
     """'📊 Farzandim natijalari' — bitta farzand bo‘yicha to‘liq hisobot."""
@@ -638,7 +835,7 @@ def parent_child_results(child_id):
     })
 
 
-@app.route("/api/parent/passport/<int:child_id>", methods=["GET"])
+@app.route("/api/parent/passport/<int(signed=True):child_id>", methods=["GET"])
 @require_auth
 def parent_child_passport(child_id):
     """'Oylik Kitobxon Pasporti' — kognitiv/nutqiy diagnostika."""
@@ -648,7 +845,7 @@ def parent_child_passport(child_id):
     return jsonify(data)
 
 
-@app.route("/api/parent/coins/<int:child_id>", methods=["POST"])
+@app.route("/api/parent/coins/<int(signed=True):child_id>", methods=["POST"])
 @require_auth
 def parent_manage_coins(child_id):
     """Ota-ona farzandiga qo‘lda Bilig (tanga) qo‘shishi/ayirishi."""

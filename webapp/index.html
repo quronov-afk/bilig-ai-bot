@@ -34,9 +34,9 @@
   <!-- Bola: ota-ona kodi -->
   <div id="screen-linkcode" class="screen center-screen hidden">
     <div class="hero-mark"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-    <h1 class="hero-title">Ota-ona kodi</h1>
-    <p class="hero-sub">Ota-onangiz bergan kodni kiriting (masalan, BLG-1234)</p>
-    <input id="link-code-input" class="text-input center" placeholder="BLG-0000" maxlength="9" autocapitalize="characters" />
+    <h1 class="hero-title">Ulanish kodi</h1>
+    <p class="hero-sub">Ota-onangiz bergan kodni kiriting — 8 xonali farzand kodi yoki BLG-1234</p>
+    <input id="link-code-input" class="text-input center" placeholder="00000000" maxlength="9" autocapitalize="characters" />
     <button id="link-code-submit" class="btn btn-primary big">Ulanish</button>
     <p id="link-code-error" class="error-text"></p>
   </div>
@@ -85,6 +85,7 @@
 
     <div id="bolaxona-banner" class="bolaxona-banner hidden">
       <span>Bolaxona rejimi: <b id="bolaxona-child-name">—</b></span>
+      <button id="bolaxona-exit" class="banner-exit" data-action="exit-bolaxona">Chiqish</button>
     </div>
 
     <main id="app-main"></main>

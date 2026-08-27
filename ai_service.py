@@ -1,7 +1,11 @@
 import json
+import os
 import re
+import sqlite3
 import asyncio
+import threading
 import traceback
+from datetime import datetime
 from google import genai
 from google.genai import types
 from config import GEMINI_API_KEY, GEMINI_MODEL
@@ -9,6 +13,98 @@ from config import GEMINI_API_KEY, GEMINI_MODEL
 client = None
 if GEMINI_API_KEY:
     client = genai.Client(api_key=GEMINI_API_KEY)
+
+
+# ==========================================================
+# AI SARFINI O‘LCHASH
+# ==========================================================
+# Har bir chaqiruvdan keyin sarflangan token soni bazaga yoziladi.
+# Shundan keyin "pul qayerga ketyapti" degan savolga taxmin emas,
+# aniq raqam bilan javob beramiz.
+_usage_db_path = "/var/data/bot_base.db" if os.path.exists("/var/data") else "bot_base.db"
+_usage_lock = threading.Lock()
+_usage_conn = None
+
+
+def _usage_log(task: str, response):
+    """Bitta AI chaqiruvining token sarfini AI_Usage jadvaliga yozadi."""
+    global _usage_conn
+    try:
+        u = getattr(response, "usage_metadata", None)
+        if u is None:
+            return
+        with _usage_lock:
+            if _usage_conn is None:
+                _usage_conn = sqlite3.connect(_usage_db_path, check_same_thread=False, timeout=10)
+                _usage_conn.execute("""CREATE TABLE IF NOT EXISTS AI_Usage (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    task TEXT,
+                    model TEXT,
+                    prompt_tokens INTEGER,
+                    output_tokens INTEGER,
+                    total_tokens INTEGER,
+                    created_at TEXT
+                )""")
+                _usage_conn.commit()
+            _usage_conn.execute(
+                "INSERT INTO AI_Usage (task, model, prompt_tokens, output_tokens, total_tokens, created_at) "
+                "VALUES (?, ?, ?, ?, ?, ?)",
+                (task, GEMINI_MODEL,
+                 getattr(u, "prompt_token_count", 0) or 0,
+                 getattr(u, "candidates_token_count", 0) or 0,
+                 getattr(u, "total_token_count", 0) or 0,
+                 datetime.now().isoformat(timespec="seconds"))
+            )
+            _usage_conn.commit()
+    except Exception:
+        # O‘lchov hech qachon asosiy ishni to‘xtatmasligi kerak
+        pass
+
+
+# Model "o‘ylash"ni o‘chirishni qo‘llab-quvvatlaydimi — birinchi xatodan keyin aniqlanadi
+_thinking_off_supported = True
+
+
+async def _ask(task: str, contents, json_mode=False, max_tokens=None, fast=False, attempts=2):
+    """Barcha Gemini chaqiruvlari shu yagona joydan o‘tadi.
+
+    fast=True     — sodda vazifa (bet raqamini o‘qish kabi): model ortiqcha
+                    "o‘ylamaydi", ya'ni ortiqcha token sarflanmaydi.
+    json_mode     — javob rasman JSON formatida so‘raladi. Shunda format
+                    buzilib, ikkinchi marta to‘lash holati deyarli yo‘qoladi.
+    max_tokens    — javob uzunligi chegarasi (faqat fast rejimda xavfsiz).
+    """
+    global _thinking_off_supported
+    tries = 0
+    while True:
+        tries += 1
+        cfg = {}
+        if json_mode:
+            cfg["response_mime_type"] = "application/json"
+        use_fast = bool(fast) and _thinking_off_supported
+        if use_fast:
+            cfg["thinking_config"] = types.ThinkingConfig(thinking_budget=0)
+            if max_tokens:
+                cfg["max_output_tokens"] = max_tokens
+        try:
+            response = await client.aio.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=contents,
+                config=types.GenerateContentConfig(**cfg) if cfg else None,
+            )
+            _usage_log(task, response)
+            return response
+        except Exception as e:
+            msg = str(e).lower()
+            # Model "o‘ylashni o‘chirish"ni tushunmasa — bir marta o‘shasiz qayta urinamiz
+            if use_fast and ("thinking" in msg or "budget" in msg or "not supported" in msg):
+                _thinking_off_supported = False
+                tries -= 1
+                continue
+            print(f"XATOLIK [{task} - Urinish {tries}]: {e}")
+            if tries >= attempts:
+                raise
+            await asyncio.sleep(1)
 
 def clean_json(text: str) -> str:
     """Gemini qaytargan matndan JSON blokini xavfsiz ajratib olish (RegEx orqali)"""
@@ -21,8 +117,42 @@ def clean_json(text: str) -> str:
         return json_obj.group(1).strip()
     return text
 
+def split_title_author(user_text: str):
+    """Matnni AI'siz "Nom. Muallif" ko‘rinishida ajratish (zaxira va tezkor yo‘l)."""
+    text = (user_text or "").strip()
+    if "." in text:
+        title, author = text.split(".", 1)
+        title, author = title.strip(), author.strip().rstrip(".")
+        if title and author:
+            return title, author
+    return text, "Noma'lum muallif"
+
+
+def looks_clean(user_text: str) -> bool:
+    """Matn allaqachon toza "Nom. Muallif" ko‘rinishidami?
+
+    Katalogdan yoki tavsiya ro‘yxatidan tanlangan kitoblar shunday keladi —
+    ularni AI'ga yuborish bekorga pul sarflash va bekorga kutish demakdir.
+    """
+    text = (user_text or "").strip()
+    if "." not in text or len(text) > 120:
+        return False
+    title, author = text.split(".", 1)
+    title, author = title.strip(), author.strip().rstrip(".")
+    if not title or not author:
+        return False
+    # Muallif qismi 1-4 so‘zdan iborat ism bo‘lishi kutiladi
+    return 1 <= len(author.split()) <= 4
+
+
 async def normalize_book_input(user_text: str):
-    """Erkin yozilgan matndan kitob nomi va muallifini Gemini orqali aniqlab, tozalash"""
+    """Erkin yozilgan matndan kitob nomi va muallifini aniqlab, tozalash.
+
+    Matn allaqachon toza bo‘lsa — AI umuman chaqirilmaydi.
+    """
+    if looks_clean(user_text):
+        return split_title_author(user_text)
+
     prompt = f"""Foydalanuvchi quyidagi matnni kiritdi: "{user_text}".
 Ushbu matndan kitob nomi va muallifini aniqlab ber.
 Agar muallif yozilmagan bo‘lsa, ushbu mashhur bolalar asarining muallifini o‘zing to‘ldir. Agar asar muallifi noma'lum yoki topilmasa "Noma'lum muallif" deb yoz.
@@ -32,24 +162,16 @@ TALAB:
 - Natijani FAQAT quyidagi JSON formatida ber:
 {{"title": "Kitob nomi", "author": "Muallif ismi"}}"""
 
-    for attempt in range(2):
-        try:
-            response = await client.aio.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=[prompt]
-            )
-            data = json.loads(clean_json(response.text))
-            title = data.get("title", user_text).strip()
-            author = data.get("author", "Noma'lum muallif").strip()
-            return title, author
-        except Exception as e:
-            if attempt == 1:
-                # Fallback agar AI ishlamasa
-                if "." in user_text:
-                    parts = user_text.split(".", 1)
-                    return parts[0].strip(), parts[1].strip()
-                return user_text.strip(), "Noma'lum muallif"
-            await asyncio.sleep(1)
+    try:
+        response = await _ask("normalize_book_input", [prompt],
+                              json_mode=True, max_tokens=120, fast=True)
+        data = json.loads(clean_json(response.text))
+        title = data.get("title", user_text).strip()
+        author = data.get("author", "Noma'lum muallif").strip()
+        return title, author
+    except Exception:
+        # AI ishlamasa — matnni o‘zimiz ajratamiz
+        return split_title_author(user_text)
 
 async def analyze_book_cover(image_bytes: bytes):
     """Kitob muqovasidan nomi va muallifini aniqlash"""
@@ -57,27 +179,15 @@ async def analyze_book_cover(image_bytes: bytes):
         "Bu kitob muqovasining rasmi. Menga faqat kitobning nomi va muallifini quyidagi formatda yozib ber: 'Kitob nomi. Muallif'. "
         "Barcha o‘zbekcha matnlarda faqat va faqat to‘g‘ri O‘, o‘, G‘, g‘ harflaridan foydalan."
     )
-    for attempt in range(2):
-        try:
-            response = await client.aio.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=[
-                    prompt,
-                    types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
-                ]
-            )
-            ai_result = response.text.strip()
-            if "." in ai_result:
-                title, author = ai_result.split(".", 1)
-            else:
-                title, author = ai_result, "Noma'lum muallif"
-            return title.strip(), author.strip()
-        except Exception as e:
-            print(f"XATOLIK [analyze_book_cover - Urinish {attempt + 1}]: {e}")
-            if attempt == 1:
-                traceback.print_exc()
-                raise e
-            await asyncio.sleep(1)
+    try:
+        response = await _ask("analyze_book_cover", [
+            prompt,
+            types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
+        ])
+        return split_title_author(response.text.strip())
+    except Exception as e:
+        traceback.print_exc()
+        raise e
 
 async def verify_page_photo(image_bytes: bytes):
     """Bola o‘qigan kitob sahifasi va sahifa raqamini AI Vision orqali tekshirish"""
@@ -86,36 +196,28 @@ async def verify_page_photo(image_bytes: bytes):
     2. Rasmda ko‘rinib turgan eng katta sahifa raqamini top. Agar sahifa raqami umuman ko‘rinmasa yoki noaniq bo‘lsa, 0 deb ber.
     Javobingni FAQAT quyidagi JSON formatida ber: {"is_book_page": true, "page_number": 155}"""
     
-    for attempt in range(2):
-        try:
-            response = await client.aio.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=[
-                    prompt,
-                    types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
-                ]
-            )
-            raw_text = clean_json(response.text)
-            data = json.loads(raw_text)
-            
-            is_page = bool(data.get("is_book_page", False))
-            raw_page = data.get("page_number", 0)
-            
-            if isinstance(raw_page, str):
-                nums = re.findall(r'\d+', raw_page)
-                page_number = int(nums[0]) if nums else 0
-            elif isinstance(raw_page, (int, float)):
-                page_number = int(raw_page)
-            else:
-                page_number = 0
-                
-            return {"is_book_page": is_page, "page_number": page_number}
-        except Exception as e:
-            print(f"XATOLIK [verify_page_photo - Urinish {attempt + 1}]: {e}")
-            if attempt == 1:
-                traceback.print_exc()
-                raise e
-            await asyncio.sleep(1)
+    try:
+        response = await _ask("verify_page_photo", [
+            prompt,
+            types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
+        ], json_mode=True, max_tokens=80, fast=True)
+        data = json.loads(clean_json(response.text))
+
+        is_page = bool(data.get("is_book_page", False))
+        raw_page = data.get("page_number", 0)
+
+        if isinstance(raw_page, str):
+            nums = re.findall(r'\d+', raw_page)
+            page_number = int(nums[0]) if nums else 0
+        elif isinstance(raw_page, (int, float)):
+            page_number = int(raw_page)
+        else:
+            page_number = 0
+
+        return {"is_book_page": is_page, "page_number": page_number}
+    except Exception as e:
+        traceback.print_exc()
+        raise e
 
 async def generate_test_bank_from_photos(photos_bytes_list: list):
     """Yuklangan sahifa rasmlari asosida kengaytirilgan Savollar bankini tuzish"""
@@ -147,21 +249,14 @@ async def generate_test_bank_from_photos(photos_bytes_list: list):
     for img_bytes in photos_bytes_list:
         contents.append(types.Part.from_bytes(data=img_bytes, mime_type="image/jpeg"))
 
-    for attempt in range(2):
-        try:
-            response = await client.aio.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=contents
-            )
-            raw_json = clean_json(response.text)
-            questions = json.loads(raw_json)
-            return questions, raw_json
-        except Exception as e:
-            print(f"XATOLIK [generate_test_bank_from_photos - Urinish {attempt + 1}]: {e}")
-            if attempt == 1:
-                traceback.print_exc()
-                raise e
-            await asyncio.sleep(1)
+    try:
+        response = await _ask("generate_test_bank", contents, json_mode=True)
+        raw_json = clean_json(response.text)
+        questions = json.loads(raw_json)
+        return questions, raw_json
+    except Exception as e:
+        traceback.print_exc()
+        raise e
 
 async def evaluate_voice_summary(audio_bytes: bytes, age: int, book_title: str):
     """Bolaning ovozli xulosasini tahlil qilish va ota-onaga pedagogik hisobot berish"""
@@ -198,19 +293,12 @@ async def evaluate_voice_summary(audio_bytes: bytes, age: int, book_title: str):
     2. "give_badge": agar o‘z yoshiga nisbatan ajoyib notiqlik ko‘rsatgan bo‘lsa true.
     3. Matnda qat'iy ravishda faqat O‘, o‘, G‘, g‘ belgilaridan foydalan."""
 
-    for attempt in range(2):
-        try:
-            response = await client.aio.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=[
-                    prompt,
-                    types.Part.from_bytes(data=audio_bytes, mime_type="audio/ogg")
-                ]
-            )
-            return json.loads(clean_json(response.text))
-        except Exception as e:
-            print(f"XATOLIK [evaluate_voice_summary - Urinish {attempt + 1}]: {e}")
-            if attempt == 1:
-                traceback.print_exc()
-                raise e
-            await asyncio.sleep(1)
+    try:
+        response = await _ask("evaluate_voice_summary", [
+            prompt,
+            types.Part.from_bytes(data=audio_bytes, mime_type="audio/ogg")
+        ], json_mode=True)
+        return json.loads(clean_json(response.text))
+    except Exception as e:
+        traceback.print_exc()
+        raise e

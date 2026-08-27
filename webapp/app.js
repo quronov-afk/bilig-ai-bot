@@ -72,6 +72,10 @@ const ICON_PATHS = {
   gift: [
     '<path d="M3.6 10.6h16.8v9a2 2 0 0 1-2 2H5.6a2 2 0 0 1-2-2z"/>',
     '<path d="M3.6 10.6h16.8v9a2 2 0 0 1-2 2H5.6a2 2 0 0 1-2-2z"/><rect x="2.6" y="6.6" width="18.8" height="4" rx="1.4"/><path d="M12 6.6v15"/><path d="M12 6.6S11 2.4 8.4 2.4a2.1 2.1 0 0 0 0 4.2z"/><path d="M12 6.6s1-4.2 3.6-4.2a2.1 2.1 0 0 1 0 4.2z"/>'],
+  // Nusxalash — ikkita ustma-ust yumaloq burchakli varaq
+  "copy": [
+    '<rect x="8.6" y="8.6" width="12" height="12" rx="3"/>',
+    '<rect x="8.6" y="8.6" width="12" height="12" rx="3"/><path d="M15.4 5.6a2.6 2.6 0 0 0-2.2-2.2H6.6a3 3 0 0 0-3 3v6.6a2.6 2.6 0 0 0 2.2 2.2"/>'],
   "clipboard-list": [
     '<rect x="4.4" y="4.7" width="15.2" height="16.6" rx="2.5"/>',
     '<rect x="4.4" y="4.7" width="15.2" height="16.6" rx="2.5"/><rect x="8.6" y="2.5" width="6.8" height="4.2" rx="1.5"/><path d="M8.7 12.1h6.6"/><path d="M8.7 16.3h4.4"/>'],
@@ -188,9 +192,13 @@ async function api(path, opts) {
   let url = path;
 
   if (!tg || !tg.initData) {
+    // Kompyuterda sinash uchun: manzil satriga ?dev_id=1001 qo‘shilsa,
+    // hech narsa so‘ramasdan o‘sha foydalanuvchi nomidan ochiladi.
+    const fromUrl = new URLSearchParams(location.search).get("dev_id");
+    if (fromUrl) localStorage.setItem("bilig_dev_id", fromUrl);
     let devId = localStorage.getItem("bilig_dev_id");
     if (!devId) {
-      devId = prompt("DEV REJIM: test uchun Telegram user ID kiriting");
+      devId = prompt("DEV REJIM: test uchun foydalanuvchi ID kiriting");
       if (devId) localStorage.setItem("bilig_dev_id", devId);
     }
     url += (path.includes("?") ? "&" : "?") + "dev_id=" + (devId || "0");
@@ -209,6 +217,93 @@ async function api(path, opts) {
   try { data = await res.json(); } catch (e) {}
   if (!res.ok) throw (data || { error: "Server xatoligi" });
   return data;
+}
+
+// ==========================================================
+// RASMNI YUBORISHDAN OLDIN TAYYORLASH
+// ==========================================================
+// Telefon kamerasi 4000 nuqtali, 4-6 MB rasm oladi. AI rasmni kvadratchalarga
+// bo‘lib hisoblaydi — katta rasm bir necha barobar qimmat va sekin yuklanadi.
+// Shuning uchun har bir vazifaga aynan yetadigan o‘lcham tanlanadi:
+//   page  — faqat bet raqami o‘qiladi          (eng tez-tez chaqiriladi)
+//   text  — sahifadagi butun matn o‘qiladi     (sifat kerak)
+//   cover — nom va muallif, muqova bezakli      (sifat kerak)
+const IMG_PRESETS = {
+  page:  { max: 1280, quality: 0.82 },
+  text:  { max: 1600, quality: 0.88 },
+  cover: { max: 1400, quality: 0.90 }
+};
+
+// Rasm qanchalik o‘tkir ekanini o‘lchaydi. Kichik son = xira rasm.
+// (Qo‘shni nuqtalar orasidagi farq qancha keskin bo‘lsa, rasm shuncha o‘tkir.)
+function measureSharpness(canvas) {
+  try {
+    const w = 240;
+    const h = Math.max(1, Math.round(canvas.height * (w / canvas.width)));
+    const small = document.createElement("canvas");
+    small.width = w; small.height = h;
+    small.getContext("2d").drawImage(canvas, 0, 0, w, h);
+    const d = small.getContext("2d").getImageData(0, 0, w, h).data;
+    const gray = new Float32Array(w * h);
+    for (let i = 0; i < w * h; i++) {
+      gray[i] = 0.299 * d[i * 4] + 0.587 * d[i * 4 + 1] + 0.114 * d[i * 4 + 2];
+    }
+    let sum = 0, sum2 = 0, n = 0;
+    for (let y = 1; y < h - 1; y++) {
+      for (let x = 1; x < w - 1; x++) {
+        const i = y * w + x;
+        const lap = gray[i - 1] + gray[i + 1] + gray[i - w] + gray[i + w] - 4 * gray[i];
+        sum += lap; sum2 += lap * lap; n++;
+      }
+    }
+    if (!n) return 999;
+    const mean = sum / n;
+    return sum2 / n - mean * mean;
+  } catch (e) { return 999; }
+}
+
+// Xira deb hisoblanadigan chegara. Ataylab past qo‘yilgan — faqat chindan ham
+// o‘qib bo‘lmaydigan rasmlar ushlansin, oddiy rasm bekorga rad etilmasin.
+const SHARPNESS_MIN = 5;
+
+// Faylni kichraytirib, JPEG holida qaytaradi. Nimadir ishlamasa —
+// asl faylni qaytaradi, ya'ni foydalanuvchi hech qachon to‘xtab qolmaydi.
+function prepareImage(file, presetName) {
+  const preset = IMG_PRESETS[presetName] || IMG_PRESETS.page;
+  return new Promise(function (resolve) {
+    if (!file || !file.type || file.type.indexOf("image/") !== 0) {
+      resolve({ blob: file, sharpness: 999, resized: false });
+      return;
+    }
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = function () {
+      try {
+        const scale = Math.min(1, preset.max / Math.max(img.width, img.height));
+        const w = Math.round(img.width * scale);
+        const h = Math.round(img.height * scale);
+        const canvas = document.createElement("canvas");
+        canvas.width = w; canvas.height = h;
+        const ctx = canvas.getContext("2d");
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = "high";
+        ctx.drawImage(img, 0, 0, w, h);
+        const sharp = measureSharpness(canvas);
+        canvas.toBlob(function (blob) {
+          URL.revokeObjectURL(url);
+          resolve({ blob: blob || file, sharpness: sharp, resized: scale < 1 });
+        }, "image/jpeg", preset.quality);
+      } catch (e) {
+        URL.revokeObjectURL(url);
+        resolve({ blob: file, sharpness: 999, resized: false });
+      }
+    };
+    img.onerror = function () {
+      URL.revokeObjectURL(url);
+      resolve({ blob: file, sharpness: 999, resized: false });
+    };
+    img.src = url;
+  });
 }
 
 function haptic(type) { if (tg && tg.HapticFeedback) tg.HapticFeedback.impactOccurred(type || "light"); }
@@ -283,7 +378,12 @@ document.getElementById("link-code-submit").addEventListener("click", async func
   const err = document.getElementById("link-code-error");
   err.textContent = "";
   try {
-    await api("/api/link_parent", { method: "POST", body: { code: input.value.trim() } });
+    const res = await api("/api/link_parent", { method: "POST", body: { code: input.value.trim() } });
+    if (res && res.profile_ready) {
+      // Ota-ona profilni allaqachon to‘ldirib qo‘ygan — qayta so‘ramaymiz
+      await boot();
+      return;
+    }
     showScreen("screen-child-profile");
     initAvatarGrid();
   } catch (e) { err.textContent = e.error || "Xatolik"; }
@@ -340,8 +440,17 @@ async function refreshHeader() {
   const me = await api("/api/me");
   State.me = me;
   const avatarEl = document.getElementById("header-avatar");
-  document.getElementById("header-name").textContent = me.name || "Foydalanuvchi";
-  document.getElementById("header-role").textContent = me.role === "parent" ? "Ota-ona kabineti" : "O‘quvchi";
+  const nameEl = document.getElementById("header-name");
+  const roleEl = document.getElementById("header-role");
+  if (State.activeChildId) {
+    // Bolaxona rejimida ota-ona farzand nomidan ishlaydi — sarlavha ham
+    // shuni ko‘rsatishi kerak, aks holda qayerda turgani chalkashadi.
+    nameEl.textContent = State.activeChildName || me.name || "Farzand";
+    roleEl.textContent = "Bolaxona rejimi";
+  } else {
+    nameEl.textContent = me.name || "Foydalanuvchi";
+    roleEl.textContent = me.role === "parent" ? "Ota-ona kabineti" : "O‘quvchi";
+  }
 
   const statsBox = document.getElementById("header-stats");
   if (isChildView()) {
@@ -399,6 +508,8 @@ async function setupTabsForRole() {
   if (State.activeChildId) {
     banner.classList.remove("hidden");
     document.getElementById("bolaxona-child-name").textContent = State.activeChildName || "";
+    const exitBtn = document.getElementById("bolaxona-exit");
+    if (exitBtn) exitBtn.classList.remove("hidden");
     ratingBtn.classList.remove("hidden");
   } else {
     banner.classList.add("hidden");
@@ -480,6 +591,7 @@ document.addEventListener("click", async function (e) {
       case "wizard-pick-method": await Wizard.pickMethod(el.dataset.method); break;
       case "wizard-pick-rec": await Wizard.addRecBook(Number(el.dataset.idx)); break;
       case "wizard-submit-text": await Wizard.submitTextBook(); break;
+      case "wizard-save-cover": await Wizard.saveCoverBook(); break;
       case "wizard-add-more": await Wizard.pickMethod(null); break;
       case "wizard-finish": closeModal(); switchTab("plans"); break;
 
@@ -529,6 +641,22 @@ document.addEventListener("click", async function (e) {
 
       case "set-rating-mode": State.ratingMode = el.dataset.mode; renderRatingTab(); break;
       case "go-plans-tab": switchTab("plans"); break;
+      case "go-book": await goToBook(Number(el.dataset.id)); break;
+      case "set-active-child":
+        State.selectedChildId = Number(el.dataset.id);
+        await renderParentHome();
+        break;
+      case "open-add-child": openAddChildModal(); break;
+      case "submit-add-child": await submitAddChild(); break;
+      case "pick-new-avatar":
+        newChildAvatar = el.dataset.avatar;
+        document.querySelectorAll("#new-avatar-grid .avatar-option").forEach(function (b) {
+          b.classList.toggle("selected", b.dataset.avatar === newChildAvatar);
+        });
+        break;
+      case "copy-code": await copyCode(el.dataset.code); break;
+      case "demo-fill": await demoFill(Number(el.dataset.id), el.dataset.name); break;
+      case "demo-clear": await demoClear(Number(el.dataset.id), el.dataset.name); break;
     }
   } catch (err) {
     toast(err.error || err.message || "Xatolik yuz berdi");
@@ -546,22 +674,34 @@ document.addEventListener("click", async function (e) {
 async function renderParentHome() {
   const main = document.getElementById("app-main");
   if (!State.childrenCache.length) {
-    main.innerHTML = emptyState("users", "Hali farzand ulanmagan", "Ota-ona kodi: <b>" + (State.me.parent_code || "") + "</b> — shu kodni farzandingizga yuboring.");
+    main.innerHTML = emptyState("users", "Hali farzand qo‘shilmagan", "Farzandingizni shu yerdan qo‘shing — alohida telefon shart emas.") +
+      '<button class="btn btn-primary btn-block" data-action="open-add-child" style="display:flex;align-items:center;justify-content:center;gap:6px">' + icon("plus", 17, 2) + ' Farzand qo‘shish</button>';
     return;
   }
-  const primary = State.childrenCache[0];
+  // Faol farzand — ota-ona o‘zi tanlaydi. Tanlanmagan bo‘lsa, birinchisi olinadi.
+  let primary = State.childrenCache.filter(function (c) { return c.id === State.selectedChildId; })[0];
+  if (!primary) { primary = State.childrenCache[0]; State.selectedChildId = primary.id; }
   const primaryData = await api("/api/parent/home/" + primary.id);
 
   // ---- 1. Farzandlar karuseli ----
-  const chips = State.childrenCache.map(function (c, i) {
-    return '<button class="kid-chip ' + (i === 0 ? "is-active" : "") + '" data-action="open-child-detail" data-id="' + c.id + '">' +
+  // Kartochka bosilsa — o‘sha farzand faol bo‘ladi (butun bosh sahifa, Rejalar
+  // va Do‘kon shunga qarab ko‘rsatiladi). Faol kartochkadagi belgi esa
+  // uning batafsil sahifasini ochadi.
+  const chips = State.childrenCache.map(function (c) {
+    const isActive = c.id === primary.id;
+    return '<button class="kid-chip ' + (isActive ? "is-active" : "") + '" data-action="set-active-child" data-id="' + c.id + '">' +
       '<span class="kid-av">' + avatarMarkup(c.avatar_id || "fox", 52) + '</span>' +
       '<span class="kid-name">' + escapeHtml(c.name) + '</span>' +
-      (i === 0 ? '<span class="kid-flag">Faol</span>' : "") +
+      (isActive ? '<span class="kid-flag">Faol</span>' +
+        '<span class="kid-more" data-action="open-child-detail" data-id="' + c.id + '" title="Batafsil">' + icon("chevron-right", 13, 2.4) + '</span>' : "") +
       '</button>';
-  }).join("");
+  }).join("") +
+    '<button class="kid-chip kid-add" data-action="open-add-child">' +
+    '<span class="kid-av kid-plus">' + icon("plus", 22, 2) + '</span>' +
+    '<span class="kid-name">Farzand qo‘shish</span>' +
+    '</button>';
 
-  let html = '<p class="sec-label">Farzandlar' + (State.childrenCache.length > 2 ? ' <span class="sw">' + icon("chevron-right", 12, 2.4) + '</span>' : "") + '</p>' +
+  let html = '<p class="sec-label">Farzandlar</p>' +
     '<div class="kid-row">' + chips + '</div>';
 
   // ---- 2. Kitob qo‘shish ----
@@ -601,7 +741,7 @@ async function renderParentHome() {
   if (shelf.length) {
     html += '<div class="shelf">' + shelf.map(function (b) {
       const pct = b.total_pages ? Math.min(100, Math.round(b.pages_read / b.total_pages * 100)) : (b.pages_read > 0 ? 30 : 0);
-      return '<article class="shelf-card" data-action="go-plans-tab">' +
+      return '<article class="shelf-card" data-action="go-book" data-id="' + b.id + '">' +
         coverHtml(b.title, b.author, "shelf-cover") +
         '<p class="shelf-title">' + escapeHtml(b.title) + '</p>' +
         '<div class="shelf-bar"><i style="width:' + pct + '%"></i></div>' +
@@ -630,7 +770,7 @@ function nowReadingCard(b) {
     return '<div class="card"><p class="section-sub" style="margin:0">Hozircha o‘qilayotgan kitob yo‘q.</p></div>';
   }
   const pct = b.total_pages ? Math.min(100, Math.round(b.pages_read / b.total_pages * 100)) : (b.pages_read > 0 ? 30 : 0);
-  return '<div class="now-card" data-action="go-plans-tab">' +
+  return '<div class="now-card" data-action="go-book" data-id="' + b.id + '">' +
     '<div class="now-top">' +
     coverHtml(b.title, b.author, "now-cover") +
     '<div class="now-info">' +
@@ -648,7 +788,7 @@ function nowReadingCard(b) {
 function bookCardOrEmpty(b, emptyText) {
   if (!b) return '<div class="card"><p class="section-sub" style="margin:0">' + emptyText + '</p></div>';
   const pct = b.total_pages ? Math.min(100, Math.round(b.pages_read / b.total_pages * 100)) : (b.pages_read > 0 ? 30 : 0);
-  return '<div class="card book-card" data-action="go-plans-tab" style="cursor:pointer">' +
+  return '<div class="card book-card" data-action="go-book" data-id="' + b.id + '" style="cursor:pointer">' +
     coverHtml(b.title, b.author, "book-cover") +
     '<div class="book-info">' +
     '<p class="book-title">' + escapeHtml(b.title) + '</p>' +
@@ -666,7 +806,6 @@ async function renderChildDetailPage(childId) {
 
   let html = '<div class="detail-topbar">' +
     '<button class="back-link" data-action="back-to-home">' + icon("arrow-left", 16, 2) + ' Orqaga</button>' +
-    '<button class="edit-link" data-action="edit-child" data-id="' + childId + '" data-name="' + escapeHtml(data.name || c.name || "") + '" data-age="' + (c.age || "") + '" data-avatar="' + (c.avatar_id || "fox") + '">' + icon("edit", 13, 2.2) + ' Tahrirlash</button>' +
     '</div>';
 
   html += '<div class="child-detail-header">' +
@@ -754,6 +893,78 @@ async function renderChildHome() {
   document.getElementById("app-main").innerHTML = html;
 }
 
+// Bosh sahifadan kitob bosilganda — Rejalar tab'iga o‘tib, aynan o‘sha
+// kitobni ko‘rsatadi va bir lahza yoritib qo‘yadi.
+async function goToBook(bookId) {
+  switchTab("plans");
+  for (let i = 0; i < 40; i++) {
+    const el = document.getElementById("book-card-" + bookId);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.classList.add("is-target");
+      setTimeout(function () { el.classList.remove("is-target"); }, 2200);
+      return;
+    }
+    await new Promise(function (r) { setTimeout(r, 100); });
+  }
+}
+
+// Farzand qo‘shish — ota-ona farzandni to‘liq o‘zi yaratadi.
+// Uyda bitta telefon bo‘lishi mumkin, shuning uchun farzandning alohida
+// Telegram hisobi bo‘lishi shart emas.
+let newChildAvatar = "fox";
+function openAddChildModal() {
+  newChildAvatar = "fox";
+  const avatarsHtml = AVATAR_ORDER.map(function (aid) {
+    const a = AVATARS[aid];
+    return '<button class="avatar-option' + (aid === newChildAvatar ? " selected" : "") + '" data-action="pick-new-avatar" data-avatar="' + aid + '">' +
+      '<span class="avatar-circle">' + avatarMarkup(aid, 54) + '</span><span>' + a.label + '</span></button>';
+  }).join("");
+  openModal("Farzand qo‘shish",
+    '<div class="avatar-grid" id="new-avatar-grid" style="padding:0 0 8px">' + avatarsHtml + '</div>' +
+    '<label class="field-label">Ismi</label>' +
+    '<input id="new-child-name" class="text-input" placeholder="Masalan: Ibrohim" />' +
+    '<label class="field-label">Yoshi</label>' +
+    '<input id="new-child-age" type="number" class="text-input" placeholder="Masalan: 9" />' +
+    '<button class="btn btn-primary btn-block" data-action="submit-add-child">Qo‘shish</button>'
+  );
+}
+
+async function submitAddChild() {
+  const name = document.getElementById("new-child-name").value.trim();
+  const age = Number(document.getElementById("new-child-age").value);
+  if (!name) { toast("Ismni kiriting"); return; }
+  if (!age || age < 3 || age > 17) { toast("Yoshni to‘g‘ri kiriting (3-17)"); return; }
+  const res = await api("/api/parent/children", {
+    method: "POST",
+    body: { name: name, age: age, avatar_id: newChildAvatar }
+  });
+  State.childrenCache = await api("/api/parent/children");
+  State.selectedChildId = res.id;
+  showChildCodeModal(res.name, res.child_code);
+  renderParentHome();
+}
+
+// Farzandning shaxsiy kodi — u alohida telefondan kirmoqchi bo‘lsa kerak bo‘ladi
+function showChildCodeModal(name, code) {
+  openModal(escapeHtml(name) + " qo‘shildi",
+    '<p class="section-sub">Endi uning kitoblarini shu telefondan boshqarishingiz mumkin.</p>' +
+    '<p class="field-label" style="margin-top:0">Farzand uchun ochilgan ID</p>' +
+    '<div class="code-box"><span>' + escapeHtml(code || "—") + '</span></div>' +
+    '<button class="btn btn-primary btn-block" data-action="copy-code" data-code="' + escapeHtml(code || "") + '">Kodni nusxalash</button>' +
+    '<p class="section-sub" style="margin-top:10px">Agar farzandingiz o‘z telefonidan kirmoqchi bo‘lsa: Bilig AI ni ochib, «Men o‘quvchiman» ni tanlaydi va shu kodni kiritadi. Barcha kitoblari va Bilig tangalari saqlanib qoladi.</p>'
+  );
+}
+
+async function copyCode(code) {
+  try {
+    await navigator.clipboard.writeText(code);
+    toast("Kod nusxalandi: " + code);
+  } catch (e) {
+    toast("Kod: " + code);
+  }
+}
+
 function emptyState(iconName, title, sub) {
   return '<div class="empty-state"><div class="em-icon">' + icon(iconName, 38, 1.4) + '</div><p style="font-weight:700;color:var(--text);margin:0 0 4px">' + title + '</p><p style="margin:0">' + (sub || "") + '</p></div>';
 }
@@ -761,52 +972,133 @@ function emptyState(iconName, title, sub) {
 // ==========================================================
 // TAB: BOLAXONA (faqat ota-ona) — farzandni tanlab, uning ekraniga kirish
 // ==========================================================
+// Farzandning shaxsiy ID raqami har doim ko‘rinib turadi — u alohida
+// telefondan kirmoqchi bo‘lganda aynan shu kod kerak bo‘ladi.
+function childCodeLine(c) {
+  if (c.linked) {
+    return '<p class="kid-id kid-id-done">O‘z telefonidan ulangan</p>';
+  }
+  if (!c.child_code) return "";
+  return '<p class="kid-id" data-action="copy-code" data-code="' + escapeHtml(c.child_code) + '">ID: <b>' +
+    escapeHtml(c.child_code) + '</b> ' + icon("copy", 12, 2) + '</p>';
+}
+
 async function renderBolaxonaTab() {
   const main = document.getElementById("app-main");
   if (!State.childrenCache.length) {
-    main.innerHTML = emptyState("users", "Hali farzand ulanmagan", "Ota-ona kodi: <b>" + (State.me.parent_code || "") + "</b> — shu kodni farzandingizga yuboring.");
+    main.innerHTML = emptyState("users", "Hali farzand qo‘shilmagan", "Bosh sahifadagi «Farzand qo‘shish» orqali qo‘shing.");
     return;
   }
   main.innerHTML = '<p class="section-sub">Farzandingiz ekraniga kirib, kitob o‘qish, testlar va do‘kondan foydalanishni ular nomidan bajarishingiz mumkin.</p>' +
     State.childrenCache.map(function (c) {
       return '<div class="card" style="display:flex;align-items:center;justify-content:space-between;gap:10px">' +
         '<div style="display:flex;align-items:center;gap:10px"><span class="avatar-circle" style="width:44px;height:44px;display:block;box-shadow:none;border-radius:50%;overflow:hidden">' + avatarMarkup(c.avatar_id || "fox", 44) + '</span>' +
-        '<div><p style="margin:0;font-weight:700;font-size:14px">' + escapeHtml(c.name) + '</p><p style="margin:0;font-size:12px;color:var(--text-faint)">Yoshi: ' + c.age + '</p></div></div>' +
+        '<div><p style="margin:0;font-weight:700;font-size:14px">' + escapeHtml(c.name) + '</p>' +
+        '<p style="margin:0;font-size:12px;color:var(--text-faint)">Yoshi: ' + c.age + '</p>' +
+        childCodeLine(c) + '</div></div>' +
+        '<div class="kid-actions">' +
+        '<button class="btn btn-outline btn-icon" title="Tahrirlash" data-action="edit-child" data-id="' + c.id + '" data-name="' + escapeHtml(c.name) + '" data-age="' + (c.age || "") + '" data-avatar="' + (c.avatar_id || "fox") + '">' + icon("edit", 15, 2) + '</button>' +
         '<button class="btn btn-primary" style="padding:9px 16px;font-size:13px" data-action="enter-bolaxona" data-id="' + c.id + '" data-name="' + escapeHtml(c.name) + '">Kirish</button>' +
-        '</div>';
-    }).join("");
+        '</div></div>';
+    }).join("") + demoPanelHtml();
+}
+
+// Namoyish paneli — faqat loyiha egasiga ko‘rinadi.
+// Investorlarga ilovani to‘la ko‘rsatish uchun bitta farzand profilini
+// haqiqiyga o‘xshash natijalar bilan to‘ldiradi.
+function demoPanelHtml() {
+  if (!State.me || !State.me.is_admin) return "";
+  const rows = State.childrenCache.map(function (c) {
+    return '<div class="demo-row"><span>' + escapeHtml(c.name) + '</span>' +
+      '<span class="demo-btns">' +
+      '<button class="btn btn-outline" data-action="demo-fill" data-id="' + c.id + '" data-name="' + escapeHtml(c.name) + '">To‘ldirish</button>' +
+      '<button class="btn btn-outline" data-action="demo-clear" data-id="' + c.id + '" data-name="' + escapeHtml(c.name) + '">Tozalash</button>' +
+      '</span></div>';
+  }).join("");
+  return '<p class="section-title">Namoyish ma\'lumoti</p>' +
+    '<div class="card demo-card">' +
+    '<p class="section-sub" style="margin:0 0 10px">Faqat sizga ko‘rinadi. Tanlangan farzand profili namoyish uchun to‘liq natijalar bilan to‘ldiriladi.</p>' +
+    rows + '</div>';
+}
+
+async function demoFill(childId, name) {
+  if (!confirm(name + " profili namoyish ma'lumoti bilan to‘ldiriladi.\n\nDIQQAT: uning hozirgi kitoblari va natijalari o‘chib ketadi. Davom etamizmi?")) return;
+  const res = await api("/api/admin/demo", { method: "POST", body: { child_id: childId, action: "fill" } });
+  toast(res.books + " ta kitob, " + res.reports + " ta AI tahlil qo‘shildi");
+  State.childrenCache = await api("/api/parent/children");
+  switchTab("home");
+}
+
+async function demoClear(childId, name) {
+  if (!confirm(name + " ning BARCHA kitoblari va natijalari o‘chiriladi. Davom etamizmi?")) return;
+  await api("/api/admin/demo", { method: "POST", body: { child_id: childId, action: "clear" } });
+  toast("Tozalandi");
+  switchTab("bolaxona");
 }
 
 // ==========================================================
 // TAB 2: REJALAR — OTA-ONA
 // ==========================================================
 async function renderParentPlans() {
-  const plans = await api("/api/parent/plans");
+  // Faqat tanlangan (faol) farzandning rejalari ko‘rsatiladi
+  const q = State.selectedChildId ? "?child_id=" + State.selectedChildId : "";
+  const plans = await api("/api/parent/plans" + q);
   const main = document.getElementById("app-main");
   let html = '<button class="btn btn-primary btn-block" data-action="open-add-plan" style="display:flex;align-items:center;justify-content:center;gap:6px">' + icon("plus", 17, 2) + ' Yangi kitob qo‘shish</button>';
 
-  const active = [];
-  const completed = [];
+  // Bir martalik kitoblar va marafonlar aralashib ketmasligi kerak —
+  // ular butunlay boshqa narsa: biri bitta kitob, ikkinchisi uzoq musobaqa.
+  const singleActive = [];
+  const singleDone = [];
+  const marathons = [];
   plans.forEach(function (p) {
-    p.books.forEach(function (b) {
-      const item = Object.assign({}, b, { planName: p.name, prize: p.prize });
-      (b.completed ? completed : active).push(item);
-    });
+    if (p.type === "marathon") { marathons.push(p); return; }
+    p.books.forEach(function (b) { (b.completed ? singleDone : singleActive).push(b); });
   });
 
-  if (!active.length && !completed.length) {
-    html += emptyState("book-open", "Hali faol reja yo‘q", "Yuqoridagi tugma orqali birinchi kitobni qo‘shing.");
-  } else {
-    if (active.length) {
-      html += '<p class="section-title">Faol kitoblar</p>';
-      active.forEach(function (b) { html += bookCardHtml(b, true); });
-    }
-    if (completed.length) {
-      html += '<p class="section-title">Tugallangan</p>';
-      completed.forEach(function (b) { html += bookCardHtml(b, true); });
-    }
+  if (!singleActive.length && !singleDone.length && !marathons.length) {
+    html += emptyState("book-open", "Hali reja yo‘q", "Yuqoridagi tugma orqali birinchi kitobni qo‘shing.");
+    main.innerHTML = html;
+    return;
   }
+
+  if (singleActive.length) {
+    html += '<p class="section-title">Alohida kitoblar</p>';
+    singleActive.forEach(function (b) { html += bookCardHtml(b, true); });
+  }
+
+  if (marathons.length) {
+    html += '<p class="section-title">Marafonlar</p>';
+    marathons.forEach(function (p) { html += marathonCardHtml(p); });
+  }
+
+  if (singleDone.length) {
+    html += '<p class="section-title">Tugallangan</p>';
+    singleDone.forEach(function (b) { html += bookCardHtml(b, true); });
+  }
+
   main.innerHTML = html;
+}
+
+// Marafon — bitta yaxlit karta: nomi, sovrini, umumiy yo‘li va ichidagi kitoblar
+function marathonCardHtml(p) {
+  const total = p.books.length;
+  const done = p.books.filter(function (b) { return b.completed; }).length;
+  const pct = total ? Math.round(done / total * 100) : 0;
+  return '<section class="marathon">' +
+    '<div class="mr-head">' +
+    '<div class="mr-ic">' + icon("award", 18, 1.9) + '</div>' +
+    '<div style="min-width:0;flex:1">' +
+    '<p class="mr-name">' + escapeHtml(p.name) + '</p>' +
+    (p.prize ? '<p class="mr-prize">Marra sovrini: <b>' + escapeHtml(p.prize) + '</b></p>' : '') +
+    '</div>' +
+    '<span class="mr-count">' + done + '/' + total + '</span>' +
+    '</div>' +
+    '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>' +
+    '<div class="mr-books">' +
+    (total ? p.books.map(function (b) { return bookCardHtml(b, true); }).join("")
+           : '<p class="section-sub" style="margin:8px 0 0">Bu marafonga hali kitob qo‘shilmagan.</p>') +
+    '</div></section>';
 }
 
 function bookCardHtml(b, isParent) {
@@ -820,8 +1112,8 @@ function bookCardHtml(b, isParent) {
       '<span class="badge ' + (b.has_voice ? "done" : "pending") + '">Ovozli tahlil</span>' +
       '</div>';
   }
-  return '<div class="card book-card" ' + (isParent ? "" : 'data-action="open-book" data-id="' + b.id + '"') + '>' +
-    '<div class="book-cover">' + icon("image", 22, 1.5) + '</div>' +
+  return '<div class="card book-card" id="book-card-' + b.id + '" ' + (isParent ? "" : 'data-action="open-book" data-id="' + b.id + '"') + '>' +
+    coverHtml(b.title, b.author, "book-cover") +
     '<div class="book-info">' +
     '<p class="book-title">' + escapeHtml(b.title) + '</p>' +
     '<p class="book-author">' + escapeHtml(b.author || "") + '</p>' +
@@ -849,8 +1141,13 @@ function openGenerateTestModal(bookId) {
 async function submitGenerateTest(bookId) {
   const input = document.getElementById("test-photos-input");
   if (!input.files.length) { toast("Kamida 1 ta rasm tanlang"); return; }
+  openModal("Ishlanmoqda", '<div class="empty-state"><div class="spinner"></div>Sahifalar tayyorlanmoqda…</div>');
   const fd = new FormData();
-  Array.prototype.forEach.call(input.files, function (f) { fd.append("photos", f); });
+  const files = Array.prototype.slice.call(input.files);
+  for (let i = 0; i < files.length; i++) {
+    const prepared = await prepareImage(files[i], "text");
+    fd.append("photos", prepared.blob, "page" + (i + 1) + ".jpg");
+  }
   openModal("Ishlanmoqda", '<div class="empty-state"><div class="spinner"></div>Sahifalar tahlil qilinmoqda…</div>');
   const res = await api("/api/parent/books/" + bookId + "/generate_test", { method: "POST", body: fd });
   closeModal();
@@ -923,16 +1220,47 @@ function openPagePhotoModal(bookId) {
   zone.onclick = function () { input.click(); };
   input.onchange = async function () {
     if (!input.files.length) return;
+    zone.innerHTML = '<div class="spinner"></div>Rasm tayyorlanmoqda…';
+    zone.classList.add("has-file");
+    const prepared = await prepareImage(input.files[0], "page");
+    if (prepared.sharpness < SHARPNESS_MIN) {
+      showBlurWarning(zone, function () { sendPagePhoto(bookId, prepared.blob, zone); });
+      return;
+    }
+    sendPagePhoto(bookId, prepared.blob, zone);
+  };
+}
+
+// Xira rasm haqida ogohlantirish. Majburlamaymiz — bola baribir yuborishi mumkin.
+function showBlurWarning(zone, onSendAnyway) {
+  zone.classList.remove("has-file");
+  zone.innerHTML =
+    '<div style="font-weight:700;margin-bottom:4px">Rasm xira chiqdi</div>' +
+    '<div style="font-size:12.5px;color:var(--text-soft);margin-bottom:10px">Bet raqami o‘qilmasligi mumkin. Yorug‘roq joyda, telefonni qimirlatmay qayta oling.</div>' +
+    '<div style="display:flex;gap:8px;justify-content:center">' +
+    '<button class="btn btn-primary" id="blur-retake" style="padding:8px 14px;font-size:13px">Qaytadan olish</button>' +
+    '<button class="btn btn-outline" id="blur-anyway" style="padding:8px 14px;font-size:13px">Baribir yuborish</button>' +
+    '</div>';
+  document.getElementById("blur-anyway").onclick = function (ev) {
+    ev.stopPropagation();
     zone.innerHTML = '<div class="spinner"></div>Tekshirilmoqda…';
     zone.classList.add("has-file");
-    const fd = new FormData();
-    fd.append("photo", input.files[0]);
-    try {
-      const res = await api("/api/child/book/" + bookId + "/page_photo" + asChildQuery(), { method: "POST", body: fd });
-      if (!res.ok) { toast(res.message || "Qaytadan urinib ko‘ring"); closeModal(); return; }
-      showPageResult(res);
-    } catch (e) { toast(e.error || "Xatolik"); closeModal(); }
+    onSendAnyway();
   };
+  // "Qaytadan olish" tugmasi bosilganda zone'ning o‘z bosilishi ishlaydi
+  // (ya'ni kamera qaytadan ochiladi) — qo‘shimcha kod kerak emas.
+}
+
+async function sendPagePhoto(bookId, blob, zone) {
+  zone.innerHTML = '<div class="spinner"></div>Tekshirilmoqda…';
+  zone.classList.add("has-file");
+  const fd = new FormData();
+  fd.append("photo", blob, "page.jpg");
+  try {
+    const res = await api("/api/child/book/" + bookId + "/page_photo" + asChildQuery(), { method: "POST", body: fd });
+    if (!res.ok) { toast(res.message || "Qaytadan urinib ko‘ring"); closeModal(); return; }
+    showPageResult(res);
+  } catch (e) { toast(e.error || "Xatolik"); closeModal(); }
 }
 
 function openPageManualModal(bookId) {
@@ -1293,21 +1621,36 @@ const Wizard = {
       '<button class="option-btn" data-action="wizard-pick-mode" data-mode="marathon">' + icon("award", 18, 1.8) + ' Mutolaa marafoni (bir nechta kitob)</button>'
     );
   },
-  pickMode: function (mode) {
+  pickMode: async function (mode) {
     this.mode = mode;
-    openModal("Rejani nomlang",
-      '<label class="field-label">Reja nomi</label>' +
-      '<input id="wiz-plan-name" class="text-input" placeholder="Masalan: Yozgi mutolaa" value="' + (mode === "quick" ? "Tezkor mutolaa" : "Mutolaa marafoni") + '" />' +
+    // Tezkor mutolaada nom ham, sovrin ham so‘ralmaydi — ota-ona shunchaki
+    // kitob tanlaydi. Nom va sovrin faqat marafonda ma'noga ega.
+    if (mode === "quick") {
+      this.planName = "Tezkor mutolaa";
+      this.prizeText = "";
+      await this.createPlan();
+      this.pickMethod(null);
+      return;
+    }
+    openModal("Marafonni nomlang",
+      '<label class="field-label">Marafon nomi</label>' +
+      '<input id="wiz-plan-name" class="text-input" placeholder="Masalan: Yozgi mutolaa" value="Mutolaa marafoni" />' +
       '<label class="field-label">Marra sovrini (ixtiyoriy)</label>' +
       '<input id="wiz-plan-prize" class="text-input" placeholder="Masalan: Velosiped" />' +
       '<button class="btn btn-primary btn-block" data-action="wizard-continue-plan">Davom etish</button>'
     );
   },
-  continuePlan: async function () {
-    this.planName = document.getElementById("wiz-plan-name").value.trim() || "Mutolaa rejasi";
-    this.prizeText = document.getElementById("wiz-plan-prize").value.trim();
-    const res = await api("/api/parent/plans", { method: "POST", body: { child_id: this.childId, name: this.planName, prize: this.prizeText } });
+  createPlan: async function () {
+    const res = await api("/api/parent/plans", {
+      method: "POST",
+      body: { child_id: this.childId, name: this.planName, prize: this.prizeText, type: this.mode }
+    });
     this.planId = res.plan_id;
+  },
+  continuePlan: async function () {
+    this.planName = document.getElementById("wiz-plan-name").value.trim() || "Mutolaa marafoni";
+    this.prizeText = document.getElementById("wiz-plan-prize").value.trim();
+    await this.createPlan();
     this.pickMethod(null);
   },
   pickMethod: function (method) {
@@ -1348,17 +1691,59 @@ const Wizard = {
       zone.onclick = function () { input.click(); };
       input.onchange = async function () {
         if (!input.files.length) return;
-        zone.innerHTML = '<div class="spinner"></div>Tahlil qilinmoqda…';
-        const fd = new FormData(); fd.append("photo", input.files[0]);
-        const res = await api("/api/parent/plans/" + self.planId + "/books/photo", { method: "POST", body: fd });
-        toast('"' + res.title + '" qo‘shildi');
-        self.afterBookAdded();
+        zone.innerHTML = '<div class="spinner"></div>Rasm tayyorlanmoqda…';
+        const prepared = await prepareImage(input.files[0], "cover");
+        zone.innerHTML = '<div class="spinner"></div>Muqova o‘qilmoqda…';
+        const fd = new FormData();
+        fd.append("photo", prepared.blob, "cover.jpg");
+        try {
+          const res = await api("/api/parent/cover_read", { method: "POST", body: fd });
+          self.confirmCover(res.title, res.author);
+        } catch (e) {
+          // AI o‘qiy olmasa — qo‘lda yozish oynasi ochiladi, ish to‘xtamaydi
+          toast("Muqovani o‘qib bo‘lmadi, nomini o‘zingiz yozing");
+          self.confirmCover("", "");
+        }
       };
     }
   },
+  // Bezakli muqovalarda AI adashishi mumkin — shuning uchun natija
+  // hech qachon jimgina saqlanmaydi, avval ota-ona tasdiqlaydi.
+  confirmCover: function (title, author) {
+    openModal("Kitobni tasdiqlang",
+      '<p class="section-sub">Muqovadan o‘qildi. Xato bo‘lsa, shu yerda tuzatib qo‘ying.</p>' +
+      '<label class="field-label">Kitob nomi</label>' +
+      '<input id="wiz-cover-title" class="text-input" value="' + escapeHtml(title || "") + '" placeholder="Kitob nomi" />' +
+      '<label class="field-label">Muallif</label>' +
+      '<input id="wiz-cover-author" class="text-input" value="' + escapeHtml(author || "") + '" placeholder="Muallif" />' +
+      '<label class="field-label">Jami sahifa soni (ixtiyoriy)</label>' +
+      '<input id="wiz-cover-pages" type="number" class="text-input" placeholder="120" />' +
+      '<button class="btn btn-primary btn-block" data-action="wizard-save-cover">Qo‘shish</button>'
+    );
+  },
+  saveCoverBook: async function () {
+    const title = document.getElementById("wiz-cover-title").value.trim();
+    const author = document.getElementById("wiz-cover-author").value.trim();
+    const pages = Number(document.getElementById("wiz-cover-pages").value || 0);
+    if (!title) { toast("Kitob nomini kiriting"); return; }
+    const res = await api("/api/parent/plans/" + this.planId + "/books", {
+      method: "POST",
+      body: { title: title, author: author, total_pages: pages }
+    });
+    toast('"' + res.title + '" qo‘shildi');
+    this.afterBookAdded();
+  },
   addRecBook: async function (idx) {
+    // Tavsiya ro‘yxatidagi matn allaqachon toza — AI'ga yubormaymiz.
+    // Shu sabab kitob bir zumda qo‘shiladi, oldingidek kutish yo‘q.
     const text = this.recBooks[idx];
-    const res = await api("/api/parent/plans/" + this.planId + "/books", { method: "POST", body: { text: text } });
+    const dot = text.indexOf(".");
+    const title = dot > 0 ? text.slice(0, dot).trim() : text.trim();
+    const author = dot > 0 ? text.slice(dot + 1).trim().replace(/\.$/, "") : "";
+    const res = await api("/api/parent/plans/" + this.planId + "/books", {
+      method: "POST",
+      body: { title: title, author: author }
+    });
     toast('"' + res.title + '" qo‘shildi');
     this.afterBookAdded();
   },
