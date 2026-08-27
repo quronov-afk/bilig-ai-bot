@@ -120,7 +120,7 @@ let COVER_INDEX = null;
 
 // Muqovalar ro‘yxati o‘zgarganda shu raqamni oshiring — shunda telefon
 // eski nusxani emas, yangisini yuklaydi (index.html dagi ?v= bilan bir xil).
-const ASSET_V = "7";
+const ASSET_V = "8";
 
 function loadCoverIndex() {
   return fetch("/covers/index.json?v=" + ASSET_V)
@@ -787,7 +787,7 @@ async function renderParentHome() {
     HERO_MASCOT +
     '<div class="icon-circle">' + icon("plus-circle", 22, 1.8) + '</div>' +
     '<p class="hc-title">Kitob qo‘shish</p>' +
-    '<div style="display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;">Tezkor yoki marafon rejasi yaratish ' + icon("arrow-right", 15, 2) + '</div>' +
+    '<div style="display:flex;align-items:center;gap:6px;font-size:15px;font-weight:600;">Tezkor yoki marafon rejasi yaratish ' + icon("arrow-right", 15, 2) + '</div>' +
     '</div>';
 
   // ---- 3. So‘nggi natijalar (ilgari bu joyda 3 ta statistika qutisi turardi) ----
@@ -971,7 +971,7 @@ async function renderChildDetailPage(childId) {
   html += '<div class="stat-grid">' +
     '<div class="stat-box"><div class="num">' + data.streak + '</div><div class="lbl">Ketma-ket kun</div></div>' +
     '<div class="stat-box"><div class="num">' + data.coins + '</div><div class="lbl">Bilig</div></div>' +
-    '<div class="stat-box" style="font-size:11px"><div class="num" style="font-size:13px">' + escapeHtml(stripEmoji(data.rank)) + '</div><div class="lbl">Daraja</div></div>' +
+    '<div class="stat-box" style="font-size:13px"><div class="num" style="font-size:15px">' + escapeHtml(stripEmoji(data.rank)) + '</div><div class="lbl">Daraja</div></div>' +
     '</div>';
 
   html += '<p class="eyebrow">O‘qiyotgan kitoblari</p>';
@@ -988,8 +988,8 @@ async function renderChildDetailPage(childId) {
     html += '<div class="card">' + data.recent_activity.map(function (a) {
       return '<div class="activity-row">' +
         '<div class="activity-dot">' + icon("book-open", 15, 2) + '</div>' +
-        '<div style="min-width:0"><p style="margin:0;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + escapeHtml(a.title) + '</p>' +
-        '<p style="margin:0;font-size:11.5px;color:var(--text-faint)">+' + a.pages_added + ' bet o‘qidi · ' + escapeHtml((a.created_at || "").slice(0, 16).replace("T", " ")) + '</p></div>' +
+        '<div style="min-width:0"><p style="margin:0;font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + escapeHtml(a.title) + '</p>' +
+        '<p style="margin:0;font-size:13.5px;color:var(--text-faint)">+' + a.pages_added + ' bet o‘qidi · ' + escapeHtml((a.created_at || "").slice(0, 16).replace("T", " ")) + '</p></div>' +
         '</div>';
     }).join("") + '</div>';
   } else {
@@ -1000,8 +1000,8 @@ async function renderChildDetailPage(childId) {
     html += '<p class="eyebrow">AI Ustoz xulosasi</p>' +
       '<div class="card"><div style="display:flex;gap:10px;align-items:flex-start;">' +
       '<div style="color:var(--brand);flex-shrink:0;margin-top:2px">' + icon("message-circle", 20, 1.8) + '</div>' +
-      '<div><p style="margin:0 0 8px;font-size:13.5px;line-height:1.5">' + escapeHtml(data.last_report.summary || "") + '</p>' +
-      (data.last_report.conversation_topic ? '<p style="margin:0;font-size:12.5px;color:var(--text-soft)"><b>Kechki suhbat mavzusi:</b> ' + escapeHtml(data.last_report.conversation_topic) + '</p>' : "") +
+      '<div><p style="margin:0 0 8px;font-size:15.5px;line-height:1.5">' + escapeHtml(data.last_report.summary || "") + '</p>' +
+      (data.last_report.conversation_topic ? '<p style="margin:0;font-size:14.5px;color:var(--text-soft)"><b>Kechki suhbat mavzusi:</b> ' + escapeHtml(data.last_report.conversation_topic) + '</p>' : "") +
       '</div></div></div>';
   }
 
@@ -1043,7 +1043,7 @@ async function renderChildHome() {
     html += '<div class="hero-card" data-action="go-plans-tab">' +
       '<div class="icon-circle">' + icon("book-open", 22, 1.8) + '</div>' +
       '<p class="hc-title">Hozircha o‘qiladigan kitob yo‘q</p>' +
-      '<div style="font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px">Rejalarni ko‘rish ' + icon("arrow-right", 15, 2) + '</div>' +
+      '<div style="font-size:15px;font-weight:600;display:flex;align-items:center;gap:6px">Rejalarni ko‘rish ' + icon("arrow-right", 15, 2) + '</div>' +
       '</div>';
   }
 
@@ -1115,12 +1115,12 @@ async function renderBolaxonaTab() {
     State.childrenCache.map(function (c) {
       return '<div class="card" style="display:flex;align-items:center;justify-content:space-between;gap:10px">' +
         '<div style="display:flex;align-items:center;gap:10px"><span class="avatar-circle" style="width:44px;height:44px;display:block;box-shadow:none;border-radius:50%;overflow:hidden">' + avatarMarkup(c.avatar_id || "fox", 44) + '</span>' +
-        '<div><p style="margin:0;font-weight:700;font-size:14px">' + escapeHtml(c.name) + '</p>' +
-        '<p style="margin:0;font-size:12px;color:var(--text-faint)">Yoshi: ' + c.age + '</p>' +
+        '<div><p style="margin:0;font-weight:700;font-size:16px">' + escapeHtml(c.name) + '</p>' +
+        '<p style="margin:0;font-size:14px;color:var(--text-faint)">Yoshi: ' + c.age + '</p>' +
         childCodeLine(c) + '</div></div>' +
         '<div class="kid-actions">' +
         '<button class="btn btn-outline btn-icon" title="Tahrirlash" data-action="edit-child" data-id="' + c.id + '" data-name="' + escapeHtml(c.name) + '" data-age="' + (c.age || "") + '" data-avatar="' + (c.avatar_id || "fox") + '">' + icon("edit", 15, 2) + '</button>' +
-        '<button class="btn btn-primary" style="padding:9px 16px;font-size:13px" data-action="enter-bolaxona" data-id="' + c.id + '" data-name="' + escapeHtml(c.name) + '">Kirish</button>' +
+        '<button class="btn btn-primary" style="padding:9px 16px;font-size:15px" data-action="enter-bolaxona" data-id="' + c.id + '" data-name="' + escapeHtml(c.name) + '">Kirish</button>' +
         '</div></div>';
     }).join("") + demoPanelHtml();
 }
@@ -1361,10 +1361,10 @@ function showBlurWarning(zone, onSendAnyway) {
   zone.classList.remove("has-file");
   zone.innerHTML =
     '<div style="font-weight:700;margin-bottom:4px">Rasm xira chiqdi</div>' +
-    '<div style="font-size:12.5px;color:var(--text-soft);margin-bottom:10px">Bet raqami o‘qilmasligi mumkin. Yorug‘roq joyda, telefonni qimirlatmay qayta oling.</div>' +
+    '<div style="font-size:14.5px;color:var(--text-soft);margin-bottom:10px">Bet raqami o‘qilmasligi mumkin. Yorug‘roq joyda, telefonni qimirlatmay qayta oling.</div>' +
     '<div style="display:flex;gap:8px;justify-content:center">' +
-    '<button class="btn btn-primary" id="blur-retake" style="padding:8px 14px;font-size:13px">Qaytadan olish</button>' +
-    '<button class="btn btn-outline" id="blur-anyway" style="padding:8px 14px;font-size:13px">Baribir yuborish</button>' +
+    '<button class="btn btn-primary" id="blur-retake" style="padding:8px 14px;font-size:15px">Qaytadan olish</button>' +
+    '<button class="btn btn-outline" id="blur-anyway" style="padding:8px 14px;font-size:15px">Baribir yuborish</button>' +
     '</div>';
   document.getElementById("blur-anyway").onclick = function (ev) {
     ev.stopPropagation();
@@ -1440,7 +1440,7 @@ function openVoiceModal(bookId) {
     '<p class="section-sub">Kitob haqida 1-2 daqiqa gapirib bering: nima haqida edi, sizga nima yoqdi?</p>' +
     '<div style="text-align:center;padding:16px 0">' +
     '<button id="rec-btn" class="icon-btn" style="width:76px;height:76px;border-radius:50%;background:var(--brand);color:#fff;margin:0 auto">' + icon("mic", 28, 1.7) + '</button>' +
-    '<div id="rec-time" class="card-meta" style="margin-top:10px;color:var(--text-soft);font-size:13px">Yozishni boshlash uchun bosing</div>' +
+    '<div id="rec-time" class="card-meta" style="margin-top:10px;color:var(--text-soft);font-size:15px">Yozishni boshlash uchun bosing</div>' +
     '</div>' +
     '<div id="voice-actions" class="hidden">' +
     '<button class="btn btn-primary btn-block" id="voice-send-btn">Yuborish</button>' +
@@ -1544,7 +1544,7 @@ async function openTestModal(bookId, stage) {
   const stageLabel = { mid_test_1: "1-oraliq test", mid_test_2: "2-oraliq test", final_test: "Yakuniy test" }[stage];
   let html = '<p class="section-sub">' + questions.length + ' ta savol. Har biriga bittadan javob tanlang.</p>';
   questions.forEach(function (q) {
-    html += '<div class="card"><p style="font-weight:700;font-size:14px;margin:0 0 10px">' + escapeHtml(q.question) + '</p>';
+    html += '<div class="card"><p style="font-weight:700;font-size:16px;margin:0 0 10px">' + escapeHtml(q.question) + '</p>';
     (q.options || []).forEach(function (opt) {
       html += '<button class="option-btn" data-action="select-test-opt" data-qid="' + q.id + '" data-val="' + escapeHtml(opt) + '">' + escapeHtml(opt) + '</button>';
     });
@@ -1571,7 +1571,7 @@ async function renderStoreTab() {
           '<div class="store-body">' +
           '<p class="store-name">' + escapeHtml(i.name) + '</p>' +
           '<div class="store-footer" style="margin-bottom:10px"><span class="store-price-chip">' + icon("coin", 12, 2.2) + ' ' + i.price + '</span></div>' +
-          '<button class="btn ' + (i.affordable ? "btn-primary" : "btn-secondary") + ' btn-block" style="padding:8px;font-size:12.5px" data-action="buy-item" data-id="' + i.id + '" ' + (i.affordable ? "" : "disabled") + '>' +
+          '<button class="btn ' + (i.affordable ? "btn-primary" : "btn-secondary") + ' btn-block" style="padding:8px;font-size:14.5px" data-action="buy-item" data-id="' + i.id + '" ' + (i.affordable ? "" : "disabled") + '>' +
           (i.affordable ? "Xarid qilish" : "Yetarli emas") + '</button>' +
           '</div></div>';
       }).join("") + '</div>';
@@ -1594,7 +1594,7 @@ async function renderStoreTab() {
           '<div class="store-body">' +
           '<p class="store-name">' + escapeHtml(i.name) + '</p>' +
           '<div class="store-footer"><span class="store-price-chip">' + icon("coin", 12, 2.2) + ' ' + i.price + '</span>' +
-          '<button class="btn btn-outline" style="padding:6px 10px;font-size:12px" data-action="open-store-edit" data-id="' + i.id + '" data-name="' + escapeHtml(i.name) + '" data-price="' + i.price + '">Tahrirlash</button></div>' +
+          '<button class="btn btn-outline" style="padding:6px 10px;font-size:14px" data-action="open-store-edit" data-id="' + i.id + '" data-name="' + escapeHtml(i.name) + '" data-price="' + i.price + '">Tahrirlash</button></div>' +
           '</div></div>';
       }).join("") + '</div>';
     }
@@ -1676,7 +1676,7 @@ async function renderRatingTab() {
       return '<div class="list-row ' + (r.is_me ? "me-row" : "") + '">' +
         '<div style="display:flex;align-items:center;gap:10px;min-width:0">' +
         '<div class="rank-chip ' + (i === 0 ? "top1" : "") + '">' + (i + 1) + '</div>' +
-        '<div style="min-width:0"><p style="margin:0;font-weight:700;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + escapeHtml(r.name) + (r.is_me ? " (Siz)" : "") + '</p><p style="margin:0;font-size:11.5px;color:var(--text-faint)">' + escapeHtml(stripEmoji(r.rank)) + '</p></div>' +
+        '<div style="min-width:0"><p style="margin:0;font-weight:700;font-size:15.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + escapeHtml(r.name) + (r.is_me ? " (Siz)" : "") + '</p><p style="margin:0;font-size:13.5px;color:var(--text-faint)">' + escapeHtml(stripEmoji(r.rank)) + '</p></div>' +
         '</div><div class="pill pill-leaf">' + r.xp + ' XP</div></div>';
     }).join("");
     content.innerHTML = '<p class="section-sub">' + (data.scope === "oila" ? "Oilangiz o‘quvchilari orasida" : "Barcha o‘quvchilar orasida TOP-10") + '</p>' +
