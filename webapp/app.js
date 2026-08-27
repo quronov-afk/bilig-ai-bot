@@ -30,19 +30,43 @@ function stylesheetLoaded() {
   return false;
 }
 
+// Bezak tayyor — ilovani ko‘rsatamiz, yuklanish ekranini olib tashlaymiz.
+function revealApp() {
+  document.documentElement.classList.add("css-ok");
+}
+
+// Har urinish orasida tobora uzoqroq kutamiz. Mobil tarmoq uzuq-yuluq
+// bo‘lganda birinchi urinish yiqilib, keyingisi o‘tib ketishi mumkin —
+// shuning uchun darrov taslim bo‘lmaymiz.
+const STYLE_RETRY_MS = [600, 1500, 3000];
+
 function ensureStylesLoaded(attempt) {
   attempt = attempt || 0;
-  if (stylesheetLoaded()) return;
-  if (attempt >= 2) return;                 // uch martadan ortiq urinmaymiz
+  if (stylesheetLoaded()) { revealApp(); return; }
+  if (attempt >= STYLE_RETRY_MS.length) {
+    // Bezakni umuman keltira olmadik. Ilovani baribir ochamiz — chala
+    // ko‘rinishda bo‘lsa ham, umuman ochilmagandan yaxshiroq.
+    revealApp();
+    return;
+  }
   const fresh = document.createElement("link");
   fresh.rel = "stylesheet";
   fresh.href = "style.css?v=" + ASSET_V + "&r=" + Date.now();
+  const again = function () {
+    setTimeout(function () { ensureStylesLoaded(attempt + 1); }, STYLE_RETRY_MS[attempt]);
+  };
   fresh.onload = function () { setTimeout(function () { ensureStylesLoaded(attempt + 1); }, 150); };
-  fresh.onerror = function () { setTimeout(function () { ensureStylesLoaded(attempt + 1); }, 500); };
+  fresh.onerror = again;
   document.head.appendChild(fresh);
 }
 
+// Bezak allaqachon kelgan bo‘lsa — darrov ochamiz (kutib o‘tirmaymiz).
+if (stylesheetLoaded()) revealApp();
+// Kelmagan bo‘lsa, hamma narsa yuklangach qayta so‘rab ko‘ramiz.
 window.addEventListener("load", function () { ensureStylesLoaded(0); });
+// Xavfsizlik: 8 soniyadan keyin baribir ko‘rsatamiz. Bezaksiz bo‘lsa ham,
+// ilova umuman ochilmay qolgandan ko‘ra shunisi yaxshiroq.
+setTimeout(revealApp, 8000);
 
 const State = {
   me: null,

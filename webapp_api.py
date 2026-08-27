@@ -25,7 +25,7 @@ import urllib.parse
 from datetime import datetime, date, timedelta
 
 import requests
-from flask import Flask, request, jsonify, send_from_directory, g
+from flask import Flask, request, jsonify, send_from_directory, g, Response
 
 from config import BOT_TOKEN, OWNER_ID, RECOMMENDED_BOOKS
 from database import (
@@ -2323,7 +2323,40 @@ def serve_index():
             "main.py bilan bir qatorda) turganini tekshiring.</p>",
             500,
         )
-    return send_from_directory(WEBAPP_DIR, "index.html")
+    html = io.open(index_path, encoding="utf-8").read()
+    html = html.replace("__ASSET_V__", _asset_version())
+    resp = Response(html, mimetype="text/html")
+    return _no_cache(resp)
+
+
+# ==========================================================
+# BEZAK VA KOD FAYLLARINING VERSIYASI — O‘Z-O‘ZIDAN
+# ----------------------------------------------------------
+# Ilgari versiya raqami qo‘lda yozilardi: yangi kod chiqarilganda uni
+# oshirish esdan chiqsa, telefon eski nusxani ko‘rsatib turaverardi.
+# Endi raqam fayllarning o‘zidan hisoblanadi — fayl o‘zgarsa, raqam ham
+# o‘zgaradi. Shuning uchun style.css va app.js ni telefonda BIR YIL
+# saqlash xavfsiz: yangi nusxa chiqsa, manzili boshqacha bo‘ladi.
+# ==========================================================
+_asset_v_cache = None
+
+
+def _asset_version():
+    global _asset_v_cache
+    # Mahalliy sinovda fayl tahrirlangani zahoti yangi raqam kerak,
+    # serverda esa bir marta hisoblab qo‘yish kifoya (jarayon qayta
+    # ishga tushganda o‘zi yangilanadi).
+    if _asset_v_cache and os.getenv("DEV_MODE") != "1":
+        return _asset_v_cache
+    parts = []
+    for name in ("app.js", "style.css", "index.html"):
+        try:
+            st = os.stat(os.path.join(WEBAPP_DIR, name))
+            parts.append("%d-%d" % (st.st_size, int(st.st_mtime)))
+        except OSError:
+            parts.append("0")
+    _asset_v_cache = hashlib.sha256("|".join(parts).encode()).hexdigest()[:10]
+    return _asset_v_cache
 
 
 def _no_cache(response):
@@ -2351,6 +2384,11 @@ def _apply_cache_rules(response):
         response.headers["Cache-Control"] = "public, max-age=604800"
     elif path.startswith("/api/"):
         _no_cache(response)
+    elif path.endswith((".css", ".js")) and request.args.get("v"):
+        # Manzilida versiya raqami bor — aynan shu nusxa hech qachon
+        # o‘zgarmaydi, shuning uchun telefonda bir yil saqlanaveradi.
+        # Yangi kod chiqarilsa raqam o‘zgaradi va yangisi yuklanadi.
+        response.headers["Cache-Control"] = "public, max-age=31536000, immutable"
     elif path == "/" or path.endswith((".html", ".js", ".css", ".json")):
         _no_cache(response)
     return response
