@@ -61,6 +61,53 @@ def _usage_log(task: str, response):
         pass
 
 
+class AiEmptyResponse(RuntimeError):
+    """AI javob berdi, lekin matn bo‘sh — sababi xabar matnida."""
+
+
+def _text_or_reason(task, response):
+    """Javob matnini olamiz. Bo‘sh bo‘lsa — SABABINI aniq aytamiz.
+
+    Ilgari bu yerda hech qanday tekshiruv yo‘q edi: model bo‘sh javob
+    qaytarsa, `clean_json(None)` ichida "'NoneType' object has no attribute
+    'strip'" degan tushunarsiz xato chiqardi. Na foydalanuvchi, na biz nima
+    bo‘lganini bilardik. Endi sabab aniq nomlanadi.
+    """
+    text = getattr(response, "text", None)
+    if text and text.strip():
+        return text
+
+    reason = ""
+    try:
+        cands = getattr(response, "candidates", None) or []
+        if cands:
+            reason = str(getattr(cands[0], "finish_reason", "") or "")
+    except Exception:
+        pass
+    blocked = ""
+    try:
+        fb = getattr(response, "prompt_feedback", None)
+        blocked = str(getattr(fb, "block_reason", "") or "")
+    except Exception:
+        pass
+
+    up = (reason + " " + blocked).upper()
+    print("[ai] BO‘SH JAVOB [%s] finish_reason=%r block_reason=%r" % (task, reason, blocked))
+    if "MAX_TOKEN" in up:
+        raise AiEmptyResponse(
+            "AI javobi juda uzun bo‘lib ketdi va oxirigacha yetmadi. "
+            "Sahifalar sonini kamaytirib ko‘ring."
+        )
+    if "SAFETY" in up or "BLOCK" in up or "PROHIBITED" in up:
+        raise AiEmptyResponse(
+            "AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). "
+            "Boshqa sahifalarni suratga olib ko‘ring."
+        )
+    if "RECITATION" in up:
+        raise AiEmptyResponse("AI matnni ko‘chirma deb hisobladi. Boshqa sahifalarni tanlang.")
+    raise AiEmptyResponse("AI bo‘sh javob qaytardi (sabab: %s)" % (reason or blocked or "noma'lum"))
+
+
 # Model "o‘ylash"ni o‘chirishni qo‘llab-quvvatlaydimi — birinchi xatodan keyin aniqlanadi
 _thinking_off_supported = True
 
@@ -93,6 +140,9 @@ async def _ask(task: str, contents, json_mode=False, max_tokens=None, fast=False
                 config=types.GenerateContentConfig(**cfg) if cfg else None,
             )
             _usage_log(task, response)
+            # Bo‘sh javob ham xato — shu yerda ushlaymiz. Shunda quyidagi
+            # `except` ishlaydi va yana bir marta urinib ko‘riladi.
+            _text_or_reason(task, response)
             return response
         except Exception as e:
             # Tejash sozlamasi ("o‘ylashni o‘chirish" va javob uzunligi chegarasi)
@@ -101,7 +151,7 @@ async def _ask(task: str, contents, json_mode=False, max_tokens=None, fast=False
             # javob berardi — natijada sahifa rasmi umuman tekshirilmay qolgan edi.
             # Endi tejash rejimida HAR QANDAY xatodan keyin bir marta oddiy
             # rejimda qayta urinamiz. Bir marta ishlamasa, boshqa urinilmaydi.
-            if use_fast:
+            if use_fast and not isinstance(e, AiEmptyResponse):
                 _thinking_off_supported = False
                 print(f"[ai] tejash rejimi bu modelga to‘g‘ri kelmadi, oddiy rejimga o‘tildi ({task}): {e}")
                 tries -= 1

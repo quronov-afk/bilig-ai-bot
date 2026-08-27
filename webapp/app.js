@@ -915,7 +915,11 @@ document.addEventListener("click", async function (e) {
       case "edit-child": openEditChildModal(el.dataset.id, el.dataset.name, el.dataset.age, el.dataset.avatar); break;
       case "pick-edit-avatar":
         if (el.dataset.avatar === "__upload") {
-          if (document.getElementById("avatar-grid")) break;   // bola profili o‘zi hal qiladi
+          // DIQQAT: ilgari bu yerda «#avatar-grid mavjudmi?» deb tekshirilardi.
+          // Lekin u index.html da DOIM turadi (bola profili ekrani yashirin
+          // bo‘lsa ham) — shuning uchun «Rasm qo‘shish» katakchasi HECH QACHON
+          // ishlamasdi. To‘g‘risi: bosilgan tugma AYNAN o‘sha tarmoq ichidami?
+          if (el.closest("#avatar-grid")) break;   // bola profili ekrani o‘zi hal qiladi
           pickImage("avatar", async function (blob) {
             try {
               const res = await uploadAvatarBlob(blob, editChildId);
@@ -1636,25 +1640,78 @@ const TestShots = {
     this.paint();
   },
 
+  // Kutish oynasi. AI ishi uzoq davom etadi, shuning uchun foydalanuvchi
+  // nima bo‘layotganini ko‘rib tursin.
+  waitBox: function (text, sub) {
+    openModal("Test tuzilmoqda",
+      '<div class="empty-state" style="padding:26px 0">' +
+        '<div class="spinner"></div>' +
+        '<p style="font-weight:700;color:var(--text);margin:12px 0 4px">' + text + '</p>' +
+        '<p style="margin:0">' + (sub || "") + '</p>' +
+      '</div>');
+  },
+
+  fail: function (msg) {
+    // Foydalanuvchi kutmasdan oynani yopgan bo‘lsa, daqiqalardan keyin
+    // uni qaytadan ochib yubormaymiz — qisqa lenta bilan xabar beramiz.
+    if (document.getElementById("modal-overlay").classList.contains("hidden")) {
+      toast("Test tuzilmadi: " + msg);
+      return;
+    }
+    openModal("Test tuzilmadi",
+      '<p class="section-sub" style="margin-top:-4px">' + escapeHtml(msg) + '</p>' +
+      '<p class="section-sub">Sahifalaringiz saqlanib qoldi — «Qayta urinish» ni bossangiz, ' +
+      'ularni boshqatdan suratga olish shart emas.</p>' +
+      '<button class="btn btn-primary btn-block" data-action="shot-submit">Qayta urinish</button>' +
+      '<button class="btn btn-outline btn-block" data-action="close-modal">Yopish</button>');
+  },
+
   submit: async function () {
     if (this.items.length < TEST_SHOTS_MIN) { toast("Kamida " + TEST_SHOTS_MIN + " ta sahifa kerak"); return; }
     const bookId = this.bookId;
     const fd = new FormData();
     this.items.forEach(function (it, i) { fd.append("photos", it.blob, "page" + (i + 1) + ".jpg"); });
-    openModal("Ishlanmoqda", '<div class="empty-state"><div class="spinner"></div>Sahifalar o‘qilmoqda…</div>');
+
+    this.waitBox("Sahifalar yuborilmoqda…", "Internet sekin bo‘lsa biroz kutishga to‘g‘ri keladi.");
+    let started;
     try {
-      const res = await api("/api/parent/books/" + bookId + "/generate_test", { method: "POST", body: fd });
-      closeModal();
-      toast(res.from_bank
-        ? "Bu kitobning testi tayyor edi — " + res.count + " ta savol qo‘shildi"
-        : res.count + " ta savol tuzildi");
+      started = await api("/api/parent/books/" + bookId + "/generate_test", { method: "POST", body: fd });
     } catch (e) {
-      closeModal();
-      toast(e.error || "Testni tuzib bo‘lmadi");
-    } finally {
-      this.items.forEach(function (it) { URL.revokeObjectURL(it.url); });
-      this.items = [];
+      this.fail(e.error || "Sahifalarni serverga yuborib bo‘lmadi. Internet aloqasini tekshiring.");
+      return;
     }
+
+    // Kitob umumiy bankda bor ekan — AI umuman chaqirilmadi, test darrov tayyor.
+    if (started.from_bank) {
+      this.done("Bu kitobning testi tayyor edi — " + started.count + " ta savol qo‘shildi");
+      return;
+    }
+
+    // AI ishlayapti. Endi telefon aloqani ushlab turmaydi — vaqti-vaqti
+    // bilan «tayyor bo‘ldimi?» deb so‘rab turadi. Shuning uchun ish
+    // qanchalik uzoq davom etsa ham, aloqa uzilmaydi.
+    this.waitBox("AI sahifalarni o‘qiyapti…", "Bu odatda yarim daqiqadan bir daqiqagacha davom etadi.");
+    const self = this;
+    const until = Date.now() + 4 * 60 * 1000;      // ko‘pi bilan 4 daqiqa kutamiz
+    while (Date.now() < until) {
+      await new Promise(function (r) { setTimeout(r, 2500); });
+      let st;
+      try {
+        st = await api("/api/parent/test_job/" + started.job_id);
+      } catch (e) {
+        continue;                                   // aloqa uzildi — keyingi urinishda so‘raymiz
+      }
+      if (st.status === "tayyor") { self.done(st.count + " ta savol tuzildi"); return; }
+      if (st.status === "xato") { self.fail(st.error || "AI savollarni tuza olmadi."); return; }
+    }
+    this.fail("Kutish vaqti tugadi. Sahifalar soni kamroq bo‘lsa, tezroq bo‘lishi mumkin.");
+  },
+
+  done: function (msg) {
+    this.items.forEach(function (it) { URL.revokeObjectURL(it.url); });
+    this.items = [];
+    closeModal();
+    toast(msg);
   }
 };
 

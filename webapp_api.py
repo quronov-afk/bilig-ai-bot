@@ -21,6 +21,8 @@ import hmac
 import hashlib
 import asyncio
 import threading
+import traceback
+import uuid
 import urllib.parse
 from datetime import datetime, date, timedelta
 
@@ -1430,15 +1432,78 @@ def parent_generate_test(book_id):
         return jsonify({"error": "Kamida 1 ta sahifa rasmi kerak"}), 400
     photos_bytes = [f.read() for f in files]
 
-    questions, raw_json = run_async(ai_service.generate_test_bank_from_photos(photos_bytes))
-    with db_lock:
-        cursor.execute(
-            "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
-            (book_id, raw_json)
-        )
-        conn.commit()
-    _save_test_to_bank(title, author, raw_json)
-    return jsonify({"ok": True, "count": len(questions), "from_bank": False})
+    # AI 5-10 ta sahifani o‘qib, 15-20 ta savol tuzishi 1-2 DAQIQA davom etadi.
+    # Ilgari telefon shuncha vaqt javob kutib turardi va aloqa uzilib,
+    # foydalanuvchi «Testni tuzib bo‘lmadi» degan tushunarsiz xabarni ko‘rardi.
+    # Endi ish fon rejimida bajariladi: telefon darrov «kvitansiya» oladi va
+    # vaqti-vaqti bilan «tayyor bo‘ldimi?» deb so‘rab turadi.
+    job_id = _start_test_job(book_id, title, author, photos_bytes)
+    return jsonify({"ok": True, "job_id": job_id, "from_bank": False})
+
+
+# ==========================================================
+# TEST TUZISH — FON REJIMIDAGI ISH
+# ----------------------------------------------------------
+# Har bir ish uchun bitta yozuv: holati, natijasi yoki xatosi.
+# Xotirada saqlanadi — server qayta ishga tushsa yo‘qoladi, bu normal:
+# foydalanuvchi shunchaki qaytadan urinadi.
+# ==========================================================
+_test_jobs = {}
+_test_jobs_lock = threading.Lock()
+TEST_JOB_TTL = 1800          # yarim soatdan keyin eski yozuvlar tozalanadi
+
+
+def _set_test_job(job_id, **fields):
+    with _test_jobs_lock:
+        job = _test_jobs.setdefault(job_id, {})
+        job.update(fields)
+        job["at"] = time.time()
+
+
+def _start_test_job(book_id, title, author, photos_bytes):
+    job_id = uuid.uuid4().hex[:12]
+    _set_test_job(job_id, status="ishlanmoqda", book_id=book_id, count=0, error=None)
+
+    def worker():
+        try:
+            questions, raw_json = run_async(
+                ai_service.generate_test_bank_from_photos(photos_bytes)
+            )
+            if not questions:
+                raise ValueError("AI birorta ham savol tuza olmadi")
+            with db_lock:
+                cursor.execute(
+                    "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
+                    (book_id, raw_json)
+                )
+                conn.commit()
+            _save_test_to_bank(title, author, raw_json)
+            _set_test_job(job_id, status="tayyor", count=len(questions))
+        except Exception as e:
+            # Xatoni YASHIRMAYMIZ: jurnalga to‘liq yozamiz va qisqartirilgan
+            # holini foydalanuvchiga ham ko‘rsatamiz. Aks holda nima
+            # bo‘lganini na ega, na biz bilamiz.
+            traceback.print_exc()
+            print("[test_job] XATO kitob=%s: %r" % (book_id, e))
+            _set_test_job(job_id, status="xato", error=str(e)[:300] or e.__class__.__name__)
+
+    threading.Thread(target=worker, daemon=True).start()
+    return job_id
+
+
+@app.route("/api/parent/test_job/<job_id>", methods=["GET"])
+@require_auth
+def parent_test_job(job_id):
+    """Telefon shu manzilga «tayyor bo‘ldimi?» deb so‘rab turadi."""
+    now = time.time()
+    with _test_jobs_lock:
+        for k in [k for k, v in _test_jobs.items() if now - v.get("at", 0) > TEST_JOB_TTL]:
+            _test_jobs.pop(k, None)
+        job = _test_jobs.get(job_id)
+    if not job:
+        return jsonify({"error": "Bu ish topilmadi — qaytadan urinib ko‘ring"}), 404
+    return jsonify({"status": job["status"], "count": job.get("count", 0),
+                    "error": job.get("error")})
 
 
 @app.route("/api/parent/results/<int(signed=True):child_id>", methods=["GET"])
