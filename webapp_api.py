@@ -233,6 +233,23 @@ for _tbl_sql in (
         from_cache INTEGER DEFAULT 0,
         created_at TEXT
     )""",
+    # Bola o‘qish davomida yuborgan har bir sahifaning qisqa mazmuni.
+    # AI rasmni baribir o‘qiydi — biz shunchaki ko‘rganini saqlab qolamiz.
+    """CREATE TABLE IF NOT EXISTS Book_Page_Notes (
+        book_id INTEGER,
+        page_number INTEGER,
+        note TEXT,
+        created_at TEXT,
+        PRIMARY KEY (book_id, page_number)
+    )""",
+    # Shu kitob uchun test yozuvlardan tuzilganmi va nechta yozuv ishlatilgan.
+    # Ota-ona qo‘lda tuzgan yoki umumiy bankdan kelgan testni BUZMASLIK uchun
+    # kerak: bu jadvalda yozuvi yo‘q testga biz tegmaymiz.
+    """CREATE TABLE IF NOT EXISTS Auto_Test_State (
+        book_id INTEGER PRIMARY KEY,
+        notes_used INTEGER DEFAULT 0,
+        updated_at TEXT
+    )""",
 ):
     try:
         cursor.execute(_tbl_sql)
@@ -400,6 +417,116 @@ def _save_test_to_bank(title, author, raw_json):
             (key, title, author, raw_json, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         )
         conn.commit()
+
+
+# ==========================================================
+# «YASHIRIN» TEST TUZISH — o‘qish davomida o‘z-o‘zidan
+# ----------------------------------------------------------
+# Bola sahifani rasmga olganda AI uni baribir o‘qiydi. Endi biz o‘sha
+# o‘qiganini saqlab boramiz. Yozuvlar yetarli bo‘lgach, test fon
+# rejimida jimgina tuziladi — hech kim qo‘shimcha ish qilmaydi.
+#
+# NEGA ARZON: test tuzishda RASM QAYTA YUBORILMAYDI, faqat qisqa
+# matnlar. Ya'ni eng qimmat qismi allaqachon to‘langan.
+# ==========================================================
+AUTO_TEST_MIN_NOTES = 3      # shundan kam yozuvda test tuzilmaydi
+AUTO_TEST_STEP = 3           # har 3 ta yangi yozuvda test boyitiladi
+AUTO_TEST_BANK_MIN = 6       # umumiy bankka faqat shundan ko‘p yozuvda qo‘shiladi
+
+
+def _save_page_note(book_id, page_number, note):
+    """Sahifa mazmunini saqlaydi. Bir sahifa uchun bitta yozuv."""
+    if not note or page_number <= 0:
+        return
+    try:
+        with db_lock:
+            cursor.execute(
+                "INSERT OR REPLACE INTO Book_Page_Notes (book_id, page_number, note, created_at) "
+                "VALUES (?, ?, ?, ?)",
+                (book_id, page_number, note, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+            )
+            conn.commit()
+    except Exception:
+        traceback.print_exc()
+
+
+def _auto_test_allowed(book_id):
+    """Bu kitobning testiga tegishimiz mumkinmi?
+
+    Tegmaymiz, agar:
+      - test bor, lekin uni BIZ tuzmagan bo‘lsak (ota-ona yoki umumiy bank);
+      - bola allaqachon biror bosqichni topshirgan bo‘lsa — savollar
+        o‘rtada almashib qolmasin.
+    """
+    cursor.execute("SELECT test_id FROM Book_Tests WHERE book_id = ?", (book_id,))
+    has_test = cursor.fetchone() is not None
+    cursor.execute("SELECT notes_used FROM Auto_Test_State WHERE book_id = ?", (book_id,))
+    state = cursor.fetchone()
+    if has_test and not state:
+        return False, 0
+    cursor.execute(
+        "SELECT mid_test_1_done, mid_test_2_done, final_test_done FROM Plan_Books WHERE book_id = ?",
+        (book_id,)
+    )
+    row = cursor.fetchone()
+    if row and any(row):
+        return False, 0
+    return True, (state[0] if state else 0)
+
+
+def _maybe_build_test_from_notes(book_id):
+    """Yozuvlar yetarli bo‘lsa, fon rejimida test tuzadi. Xatolar jim yutiladi —
+    bu qo‘shimcha imkoniyat, bolaning o‘qishini hech qachon to‘xtatmasligi kerak."""
+    try:
+        allowed, used = _auto_test_allowed(book_id)
+        if not allowed:
+            return
+        cursor.execute(
+            "SELECT page_number, note FROM Book_Page_Notes WHERE book_id = ? "
+            "AND note != '' ORDER BY page_number", (book_id,)
+        )
+        notes = cursor.fetchall()
+        if len(notes) < AUTO_TEST_MIN_NOTES:
+            return
+        if used and len(notes) < used + AUTO_TEST_STEP:
+            return          # oldingi safardan beri yetarli yangi yozuv yig‘ilmagan
+
+        cursor.execute("SELECT title, author FROM Plan_Books WHERE book_id = ?", (book_id,))
+        row = cursor.fetchone()
+        if not row:
+            return
+        title, author = row[0], row[1]
+
+        def worker():
+            try:
+                questions, raw_json = run_async(
+                    ai_service.generate_test_from_notes(title, author, list(notes))
+                )
+                if not questions:
+                    return
+                with db_lock:
+                    cursor.execute(
+                        "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
+                        (book_id, raw_json)
+                    )
+                    cursor.execute(
+                        "INSERT OR REPLACE INTO Auto_Test_State (book_id, notes_used, updated_at) "
+                        "VALUES (?, ?, ?)",
+                        (book_id, len(notes), datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+                    )
+                    conn.commit()
+                # Umumiy bankka faqat yetarlicha to‘liq test tushsin — aks holda
+                # boshqa oilalar ham chala testni olib qoladi.
+                if len(notes) >= AUTO_TEST_BANK_MIN:
+                    _save_test_to_bank(title, author, raw_json)
+                print("[auto_test] «%s» uchun %d ta savol tuzildi (%d ta sahifa yozuvidan)"
+                      % (title, len(questions), len(notes)))
+            except Exception:
+                traceback.print_exc()
+
+        threading.Thread(target=worker, daemon=True).start()
+    except Exception:
+        traceback.print_exc()
 
 
 def _page_checks_today(child_id):
@@ -1928,11 +2055,20 @@ def child_submit_page_photo(book_id):
                          "message": "Bu kitob sahifasiga o‘xshamayapti. Qaytadan urinib ko‘ring."})
 
     new_page = int(ai_result.get("page_number", 0))
+
+    # AI sahifani o‘qiganda nimani ko‘rganini saqlab qolamiz. Bu bolaga
+    # ko‘rinmaydi — keyinchalik shu yozuvlardan test o‘z-o‘zidan tuziladi.
+    # Sahifa raqami noaniq bo‘lsa ham mazmun qimmatli, lekin uni qaysi
+    # sahifaga bog‘lashni bilmaymiz — shuning uchun faqat raqam bor bo‘lsa.
+    _save_page_note(book_id, new_page, ai_result.get("note") or "")
+
     if new_page <= 0:
         return jsonify({"ok": False, "reason": "page_unclear",
                          "message": "Sahifa raqami aniq ko‘rinmadi. Sahifa raqamini qo‘lda kiriting."})
 
-    return _apply_page_progress(book_id, child_id, new_page)
+    result = _apply_page_progress(book_id, child_id, new_page)
+    _maybe_build_test_from_notes(book_id)
+    return result
 
 
 @app.route("/api/child/book/<int:book_id>/page_manual", methods=["POST"])

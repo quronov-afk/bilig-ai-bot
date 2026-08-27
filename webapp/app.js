@@ -1579,6 +1579,8 @@ const TestShots = {
     openModal("Kitob testini tuzish",
       '<p class="section-sub" style="margin-top:-4px">Farzandingiz kitobni tushunganini tekshiradigan savollar kerak. ' +
       'Kitobning ichidan ' + TEST_SHOTS_GOOD + '-10 ta sahifani suratga oling — AI o‘qib chiqib, savollarni o‘zi tuzadi.</p>' +
+      '<p class="section-sub">Shoshilmasangiz, bu shart emas: farzandingiz o‘qish davomida sahifalarni ' +
+      'rasmga olib borsa, test o‘z-o‘zidan tuziladi.</p>' +
       '<div id="shot-body"></div>' +
       '<input type="file" id="shot-input" accept="image/*" multiple class="hidden" />'
     );

@@ -263,19 +263,37 @@ async def analyze_book_cover(image_bytes: bytes):
         raise e
 
 async def verify_page_photo(image_bytes: bytes):
-    """Bola o‘qigan kitob sahifasi va sahifa raqamini AI Vision orqali tekshirish"""
+    """Bola o‘qigan kitob sahifasi va sahifa raqamini AI Vision orqali tekshirish.
+
+    AYYORLIK: model sahifani baribir o‘qib chiqadi — eng qimmat qismi
+    (rasmning o‘zi) allaqachon to‘langan. Shuning uchun undan sahifa
+    MAZMUNINI ham so‘raymiz va saqlab qo‘yamiz. Bola kitob davomida
+    3-4 marta sahifa rasmini yuborsa, shu yozuvlardan test o‘z-o‘zidan
+    tuziladi — na bola, na ota-ona qo‘shimcha ish qiladi.
+    Qo‘shimcha xarajat: javobga ~100 token (rasm qayta yuborilmaydi).
+    """
     prompt = """Bu rasm foydalanuvchi yuborgan kitob sahifasi.
     1. Bu haqiqatan ham kitob sahifasimi? (true/false)
     2. Rasmda ko‘rinib turgan eng katta sahifa raqamini top. Agar sahifa raqami umuman ko‘rinmasa yoki noaniq bo‘lsa, 0 deb ber.
-    Javobingni FAQAT quyidagi JSON formatida ber: {"is_book_page": true, "page_number": 155}"""
-    
+    3. Agar kitob sahifasi bo‘lsa, shu sahifada nima sodir bo‘layotganini 2-4 gapda yoz.
+       ANIQ FAKTLARNI yoz: qahramonlar ismi, joy nomi, ular nima qildi, nima dedi,
+       qanday narsalar tilga olindi. Bu keyinchalik savol tuzish uchun ishlatiladi,
+       shuning uchun umumiy gaplar («qiziqarli voqea») emas, tafsilot kerak.
+       Matn o‘qilmasa yoki sahifa bo‘sh bo‘lsa, "" (bo‘sh satr) ber.
+    Javobingni FAQAT quyidagi JSON formatida ber:
+    {"is_book_page": true, "page_number": 155, "note": "Hoshimjon bozorda cholni uchratdi va undan sehrli qovoq sotib oldi..."}"""
+
     try:
         response = await _ask("verify_page_photo", [prompt, image_part(image_bytes)],
-                              json_mode=True, max_tokens=200, fast=True)
+                              json_mode=True, max_tokens=600, fast=True)
         data = json.loads(clean_json(response.text))
 
         is_page = bool(data.get("is_book_page", False))
         raw_page = data.get("page_number", 0)
+        note = data.get("note") or ""
+        if not isinstance(note, str):
+            note = ""
+        note = note.strip()[:900]
 
         if isinstance(raw_page, str):
             nums = re.findall(r'\d+', raw_page)
@@ -285,10 +303,55 @@ async def verify_page_photo(image_bytes: bytes):
         else:
             page_number = 0
 
-        return {"is_book_page": is_page, "page_number": page_number}
+        return {"is_book_page": is_page, "page_number": page_number, "note": note}
     except Exception as e:
         traceback.print_exc()
         raise e
+
+
+async def generate_test_from_notes(title: str, author: str, notes: list):
+    """O‘qish davomida yig‘ilgan sahifa yozuvlaridan test tuzish.
+
+    Bu yerda RASM YUBORILMAYDI — faqat qisqa matnlar. Shuning uchun
+    rasmlardan test tuzishga qaraganda ancha arzon va tez.
+    `notes` — [(sahifa_raqami, matn), ...] ko‘rinishida.
+    """
+    parts = []
+    for page, text in notes:
+        parts.append("%s-sahifa: %s" % (page, text))
+    body = "\n".join(parts)
+    count = max(6, min(20, len(notes) * 3))
+
+    prompt = f"""Sen malakali bolalar pedagogi va adabiyotshunossan.
+Quyida «{title}» kitobidan ({author or "muallif noma'lum"}) bola o‘qish
+davomida qayd etilgan sahifalar mazmuni berilgan:
+
+{body}
+
+Shu mazmun asosida bolaning kitobni tushunganini tekshiradigan {count} ta
+savol tuz. FAQAT yuqoridagi matnda bor narsalar haqida so‘ra — o‘zingdan
+voqea yoki qahramon to‘qib chiqarma.
+
+SAVOLLARNING PEDAGOGIK QATLAMLARI:
+1. "factual" (Faktik xotira): qahramonlar, joy, tafsilotlar.
+2. "logic" (Sabab-oqibat): nima uchun shunday bo‘ldi, qahramon nega shunday qildi.
+3. "conclusion" (Xulosa): qahramon olgan saboq, voqeaning ma'nosi.
+
+TALABLAR:
+- Har bir savolda 3 yoki 4 ta variant bo‘lsin.
+- Faqat to‘g‘ri o‘zbek lotin alifbosidagi O‘, o‘, G‘, g‘ belgilaridan foydalan.
+
+Natijani FAQAT quyidagi JSON ro‘yxat formatida qaytar:
+[
+  {{"id": 1, "category": "factual", "question": "Savol matni?",
+    "options": ["A) Variant 1", "B) Variant 2", "C) Variant 3"], "answer": "A) Variant 1"}}
+]"""
+
+    response = await _ask("generate_test_from_notes", [prompt], json_mode=True)
+    raw_json = clean_json(response.text)
+    questions = json.loads(raw_json)
+    return questions, raw_json
+
 
 async def generate_test_bank_from_photos(photos_bytes_list: list):
     """Yuklangan sahifa rasmlari asosida kengaytirilgan Savollar bankini tuzish"""
