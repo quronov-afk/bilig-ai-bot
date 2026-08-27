@@ -14,6 +14,7 @@
 
 import os
 import io
+import re
 import json
 import time
 import hmac
@@ -34,6 +35,7 @@ from database import (
     generate_progress_bar
 )
 import ai_service
+import badges_engine
 
 # ------------------------------------------------------------
 # Kichik ma'lumotlar bazasi yangilanishi (migratsiya):
@@ -139,6 +141,130 @@ app = Flask(__name__, static_folder=WEBAPP_DIR, static_url_path="")
 
 # SQLite bir vaqtda ko‘p yozuvlarda xato bermasligi uchun oddiy qulf (lock)
 db_lock = threading.Lock()
+
+# ------------------------------------------------------------
+# AI SARFINI TEJAYDIGAN JADVALLAR
+# ------------------------------------------------------------
+# 1) Test_Bank — bir xil kitobga test FAQAT BIR MARTA tuziladi. Keyin
+#    o‘sha kitobni qo‘shgan har bir oila tayyor testni bepul oladi.
+#    Bu — eng qimmat AI chaqiruvi, shuning uchun tejash ham eng katta.
+# 2) Page_Check_Cache — aynan bir xil sahifa rasmi qayta yuborilsa,
+#    AI qayta chaqirilmaydi, oldingi javob ishlatiladi.
+# 3) Page_Check_Log — kunlik chegarani hisoblash uchun.
+# ------------------------------------------------------------
+for _tbl_sql in (
+    """CREATE TABLE IF NOT EXISTS Test_Bank (
+        book_key TEXT PRIMARY KEY,
+        title TEXT,
+        author TEXT,
+        questions_json TEXT,
+        use_count INTEGER DEFAULT 0,
+        created_at TEXT
+    )""",
+    """CREATE TABLE IF NOT EXISTS Page_Check_Cache (
+        img_hash TEXT PRIMARY KEY,
+        result_json TEXT,
+        created_at TEXT
+    )""",
+    """CREATE TABLE IF NOT EXISTS Page_Check_Log (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        child_id INTEGER,
+        img_hash TEXT,
+        from_cache INTEGER DEFAULT 0,
+        created_at TEXT
+    )""",
+):
+    try:
+        cursor.execute(_tbl_sql)
+        conn.commit()
+    except Exception:
+        pass
+
+# Bitta bola bir kunda nechta sahifa rasmini AI'ga tekshirtira oladi.
+# Chegaraga yetganda mutolaa TO‘XTAMAYDI — sahifa raqamini qo‘lda kiritish
+# yo‘li ochiq qoladi, ya'ni sifat pasaymaydi, faqat ortiqcha sarf kesiladi.
+PAGE_CHECK_DAILY_LIMIT = 20
+
+
+def book_key(title, author):
+    """Kitob nomi va muallifini solishtirish uchun yagona ko‘rinishga keltiradi.
+
+    «Alpomish. Xalq dostoni», «alpomish - xalq dostoni» va «Alpomish.Xalq
+    dostoni» — uchalasi ham bitta kalitga aylanadi.
+    """
+    def norm(t):
+        t = (t or "").strip().lower()
+        for ch in ("‘", "’", "`", "ʻ"):
+            t = t.replace(ch, "'")
+        t = re.sub(r"[^\w']+", " ", t, flags=re.UNICODE)
+        return " ".join(t.split())
+
+    a = norm(author)
+    # Muallif noma'lum bo‘lsa — faqat kitob nomi bo‘yicha solishtiramiz
+    if not a or "noma'lum" in a:
+        a = ""
+    return norm(title) + "|" + a
+
+
+def _attach_test_from_bank(book_id, title, author):
+    """Umumiy bankda shu kitobning testi bo‘lsa — AI'siz nusxalab beradi.
+
+    Qaytaradi: savollar soni (bankda yo‘q bo‘lsa 0).
+    """
+    key = book_key(title, author)
+    try:
+        cursor.execute("SELECT questions_json, book_key FROM Test_Bank WHERE book_key = ?", (key,))
+        row = cursor.fetchone()
+        # Muallif noma'lum bo‘lsa, kalit "kitob nomi|" ko‘rinishida bo‘ladi —
+        # bunda bankdagi ayni shu nomli kitobni muallifidan qat'i nazar topamiz.
+        if not row and key.endswith("|"):
+            cursor.execute(
+                "SELECT questions_json, book_key FROM Test_Bank WHERE book_key LIKE ? LIMIT 1",
+                (key + "%",))
+            row = cursor.fetchone()
+    except Exception:
+        return 0
+    if not row or not row[0]:
+        return 0
+    key = row[1]
+    try:
+        count = len(json.loads(row[0]))
+    except Exception:
+        return 0
+    if not count:
+        return 0
+    with db_lock:
+        cursor.execute(
+            "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
+            (book_id, row[0])
+        )
+        cursor.execute("UPDATE Test_Bank SET use_count = use_count + 1 WHERE book_key = ?", (key,))
+        conn.commit()
+    return count
+
+
+def _save_test_to_bank(title, author, raw_json):
+    """Yangi tuzilgan testni umumiy bankka qo‘shadi."""
+    key = book_key(title, author)
+    with db_lock:
+        cursor.execute(
+            "INSERT OR REPLACE INTO Test_Bank (book_key, title, author, questions_json, use_count, created_at) "
+            "VALUES (?, ?, ?, ?, 1, ?)",
+            (key, title, author, raw_json, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        )
+        conn.commit()
+
+
+def _page_checks_today(child_id):
+    """Bugun shu bola uchun AI nechta rasmni tekshirgani (keshdan olinganlari sanalmaydi)."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    try:
+        cursor.execute(
+            "SELECT COUNT(*) FROM Page_Check_Log WHERE child_id = ? "
+            "AND substr(created_at, 1, 10) = ? AND from_cache = 0", (child_id, today))
+        return cursor.fetchone()[0]
+    except Exception:
+        return 0
 
 
 def run_async(coro):
@@ -998,7 +1124,9 @@ def parent_add_book_text(plan_id):
         )
         conn.commit()
         book_id = cursor.lastrowid
-    return jsonify({"ok": True, "book_id": book_id, "title": title, "author": author})
+    test_count = _attach_test_from_bank(book_id, title, author)
+    return jsonify({"ok": True, "book_id": book_id, "title": title, "author": author,
+                    "test_ready": bool(test_count)})
 
 
 @app.route("/api/parent/cover_read", methods=["POST"])
@@ -1032,7 +1160,9 @@ def parent_add_book_photo(plan_id):
         )
         conn.commit()
         book_id = cursor.lastrowid
-    return jsonify({"ok": True, "book_id": book_id, "title": title, "author": author})
+    test_count = _attach_test_from_bank(book_id, title, author)
+    return jsonify({"ok": True, "book_id": book_id, "title": title, "author": author,
+                    "test_ready": bool(test_count)})
 
 
 @app.route("/api/parent/books/<int:book_id>", methods=["DELETE"])
@@ -1048,7 +1178,20 @@ def parent_delete_book(book_id):
 @app.route("/api/parent/books/<int:book_id>/generate_test", methods=["POST"])
 @require_auth
 def parent_generate_test(book_id):
-    """5-10 ta sahifa surati asosida AI Savollar banki (test) tuzish."""
+    """5-10 ta sahifa surati asosida AI Savollar banki (test) tuzish.
+
+    AVVAL umumiy bank tekshiriladi: bu kitobga test allaqachon tuzilgan
+    bo‘lsa, AI umuman chaqirilmaydi va test bir zumda beriladi.
+    """
+    cursor.execute("SELECT title, author FROM Plan_Books WHERE book_id = ?", (book_id,))
+    _row = cursor.fetchone()
+    title = _row[0] if _row else ""
+    author = _row[1] if _row else ""
+
+    count = _attach_test_from_bank(book_id, title, author)
+    if count:
+        return jsonify({"ok": True, "count": count, "from_bank": True})
+
     files = request.files.getlist("photos")
     if not files:
         return jsonify({"error": "Kamida 1 ta sahifa rasmi kerak"}), 400
@@ -1061,7 +1204,8 @@ def parent_generate_test(book_id):
             (book_id, raw_json)
         )
         conn.commit()
-    return jsonify({"ok": True, "count": len(questions)})
+    _save_test_to_bank(title, author, raw_json)
+    return jsonify({"ok": True, "count": len(questions), "from_bank": False})
 
 
 @app.route("/api/parent/results/<int(signed=True):child_id>", methods=["GET"])
@@ -1347,7 +1491,48 @@ def child_submit_page_photo(book_id):
     image_bytes = request.files["photo"].read()
     child_id = _resolve_active_child(request)
 
-    ai_result = run_async(ai_service.verify_page_photo(image_bytes))
+    # 1) Aynan shu rasm ilgari tekshirilganmi? Bo‘lsa — AI chaqirilmaydi.
+    img_hash = hashlib.sha256(image_bytes).hexdigest()
+    now_ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    ai_result = None
+    from_cache = 0
+    try:
+        cursor.execute("SELECT result_json FROM Page_Check_Cache WHERE img_hash = ?", (img_hash,))
+        cached = cursor.fetchone()
+        if cached and cached[0]:
+            ai_result = json.loads(cached[0])
+            from_cache = 1
+    except Exception:
+        ai_result = None
+
+    # 2) Kesh bo‘sh bo‘lsa — kunlik chegarani tekshiramiz, so‘ng AI chaqiriladi
+    if ai_result is None:
+        if _page_checks_today(child_id) >= PAGE_CHECK_DAILY_LIMIT:
+            return jsonify({"ok": False, "reason": "daily_limit",
+                             "message": "Bugun rasm orqali tekshirish chegarasiga yetdingiz. "
+                                        "Sahifa raqamini qo‘lda kiritsangiz bo‘ladi."})
+        ai_result = run_async(ai_service.verify_page_photo(image_bytes))
+        try:
+            with db_lock:
+                cursor.execute(
+                    "INSERT OR REPLACE INTO Page_Check_Cache (img_hash, result_json, created_at) "
+                    "VALUES (?, ?, ?)",
+                    (img_hash, json.dumps(ai_result, ensure_ascii=False), now_ts)
+                )
+                conn.commit()
+        except Exception:
+            pass
+
+    try:
+        with db_lock:
+            cursor.execute(
+                "INSERT INTO Page_Check_Log (child_id, img_hash, from_cache, created_at) "
+                "VALUES (?, ?, ?, ?)", (child_id, img_hash, from_cache, now_ts)
+            )
+            conn.commit()
+    except Exception:
+        pass
+
     if not ai_result.get("is_book_page"):
         return jsonify({"ok": False, "reason": "not_book_page",
                          "message": "Bu kitob sahifasiga o‘xshamayapti. Qaytadan urinib ko‘ring."})
@@ -1403,13 +1588,17 @@ def _apply_page_progress(book_id, child_id, new_page):
     streak, shield_used = update_streak(child_id)
     rank, total_pages = calculate_and_update_rank(child_id)
 
+    with db_lock:
+        new_badges = badges_engine.check_badges(child_id, {"shield_used": shield_used})
+
     cursor.execute("SELECT balance_coins FROM Users WHERE user_id = ?", (child_id,))
     balance = cursor.fetchone()[0]
 
     return jsonify({
         "ok": True, "book_title": book_title, "new_page": new_page,
         "earned_bilig": max(0, earned_bilig), "balance": balance,
-        "streak": streak, "shield_used": shield_used, "rank": rank, "total_pages": total_pages
+        "streak": streak, "shield_used": shield_used, "rank": rank, "total_pages": total_pages,
+        "new_badges": new_badges
     })
 
 
@@ -1454,6 +1643,8 @@ def child_submit_voice(book_id):
              result.get("child_feedback", ""))
         )
         conn.commit()
+        new_badges = badges_engine.check_badges(
+            child_id, {"ezgulik": bool(result.get("badge_ezgulik", False))})
 
     parent_id = get_parent_id(child_id)
     if parent_id:
@@ -1468,7 +1659,8 @@ def child_submit_voice(book_id):
     return jsonify({
         "ok": True, "bonus_bilig": bonus,
         "feedback": result.get("child_feedback", ""),
-        "give_badge": bool(result.get("give_badge", False))
+        "give_badge": bool(result.get("give_badge", False)),
+        "new_badges": new_badges
     })
 
 
@@ -1538,8 +1730,10 @@ def child_submit_test(book_id):
              datetime.now().strftime("%Y-%m-%d %H:%M:%S"), correct, total)
         )
         conn.commit()
+        new_badges = badges_engine.check_badges(child_id)
 
-    return jsonify({"ok": True, "correct": correct, "total": total, "percent": percent, "earned_bilig": earned})
+    return jsonify({"ok": True, "correct": correct, "total": total, "percent": percent,
+                    "earned_bilig": earned, "new_badges": new_badges})
 
 
 @app.route("/api/child/rewards", methods=["GET"])

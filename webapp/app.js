@@ -120,7 +120,7 @@ let COVER_INDEX = null;
 
 // Muqovalar ro‘yxati o‘zgarganda shu raqamni oshiring — shunda telefon
 // eski nusxani emas, yangisini yuklaydi (index.html dagi ?v= bilan bir xil).
-const ASSET_V = "3";
+const ASSET_V = "4";
 
 function loadCoverIndex() {
   return fetch("/covers/index.json?v=" + ASSET_V)
@@ -1287,7 +1287,9 @@ async function submitGenerateTest(bookId) {
   openModal("Ishlanmoqda", '<div class="empty-state"><div class="spinner"></div>Sahifalar tahlil qilinmoqda…</div>');
   const res = await api("/api/parent/books/" + bookId + "/generate_test", { method: "POST", body: fd });
   closeModal();
-  toast(res.count + " ta savol tuzildi");
+  toast(res.from_bank
+    ? "Bu kitobning testi tayyor edi — " + res.count + " ta savol qo‘shildi"
+    : res.count + " ta savol tuzildi");
 }
 
 // ==========================================================
@@ -1421,6 +1423,7 @@ function showPageResult(res) {
     '<div class="stat-box"><div class="num">' + res.streak + '</div><div class="lbl">Ketma-ket kun</div></div>' +
     '</div>' +
     (res.shield_used ? '<p class="section-sub">Streak qalqoni ishlatildi — ketma-ketlik saqlanib qoldi.</p>' : "") +
+    newBadgesHtml(res.new_badges) +
     '<button class="btn btn-primary btn-block" data-action="close-modal">Yopish</button>'
   );
   refreshHeader();
@@ -1494,7 +1497,7 @@ function openVoiceModal(bookId) {
         '<div class="stat-box"><div class="num">+' + res.bonus_bilig + '</div><div class="lbl">bonus Bilig</div></div>' +
         '</div>' +
         '<div class="card">' + escapeHtml(res.feedback) + '</div>' +
-        (res.give_badge ? '<p class="section-sub">Yangi nishon qo‘lga kiritdingiz.</p>' : "") +
+        newBadgesHtml(res.new_badges) +
         '<button class="btn btn-primary btn-block" data-action="close-modal">Ajoyib</button>'
       );
       refreshHeader();
@@ -1518,6 +1521,7 @@ const Test = {
       '<div class="stat-box"><div class="num">' + res.percent + '%</div><div class="lbl">Natija</div></div>' +
       '<div class="stat-box"><div class="num">+' + res.earned_bilig + '</div><div class="lbl">Bilig</div></div>' +
       '</div>' +
+      newBadgesHtml(res.new_badges) +
       '<button class="btn btn-primary btn-block" data-action="close-modal">Yopish</button>'
     );
     refreshHeader();
@@ -1849,6 +1853,19 @@ function earnedBadgeSet(badgesStr) {
     if (k && !/yo.q/i.test(k)) set[k] = true;
   });
   return set;
+}
+
+// Shu daqiqada qo‘lga kiritilgan nishonlar — natija oynasi ichida ko‘rsatiladi.
+function newBadgesHtml(names) {
+  if (!names || !names.length) return "";
+  return '<div class="new-badges">' +
+    '<p class="eyebrow">Yangi nishon' + (names.length > 1 ? "lar" : "") + '</p>' +
+    '<div class="new-badge-row">' + names.map(function (n) {
+      const slug = badgeFile(n);
+      return '<div class="new-badge">' +
+        (slug ? '<div class="badge-icon has-art">' + badgeArt(slug) + '</div>' : "") +
+        '<span>' + escapeHtml(n) + '</span></div>';
+    }).join("") + '</div></div>';
 }
 
 function badgeArt(slug, size) {

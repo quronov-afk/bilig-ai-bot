@@ -272,6 +272,7 @@ async def evaluate_voice_summary(audio_bytes: bytes, age: int, book_title: str):
     {{
         "bonus_bilig": 4,
         "give_badge": false,
+        "badge_ezgulik": false,
         "child_feedback": "Bola uchun AI ustoz nomidan samimiy, rag‘batlantiruvchi va o‘sishga undovchi xabar...",
         "parent_report": {{
             "summary": "Audioning qisqacha mazmuni...",
@@ -291,7 +292,8 @@ async def evaluate_voice_summary(audio_bytes: bytes, age: int, book_title: str):
     BAHOLASH QOIDALARI:
     1. "bonus_bilig": 1 dan 5 gacha butun son. Nutqi ravon, teran va mazmunli bo‘lsa 4 yoki 5 Bilig ber. Agar fikri sayoz yoki tutilgan bo‘lsa 1, 2 yoki 3 Bilig ber.
     2. "give_badge": agar o‘z yoshiga nisbatan ajoyib notiqlik ko‘rsatgan bo‘lsa true.
-    3. Matnda qat'iy ravishda faqat O‘, o‘, G‘, g‘ belgilaridan foydalan."""
+    3. "badge_ezgulik": agar bola qahramonning ezgu fazilatlari (mehr, halollik, do‘stlik, mardlik) haqida chiroyli va samimiy xulosa aytgan bo‘lsa true.
+    4. Matnda qat'iy ravishda faqat O‘, o‘, G‘, g‘ belgilaridan foydalan."""
 
     try:
         response = await _ask("evaluate_voice_summary", [
