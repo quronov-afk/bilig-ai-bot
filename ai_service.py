@@ -95,16 +95,42 @@ async def _ask(task: str, contents, json_mode=False, max_tokens=None, fast=False
             _usage_log(task, response)
             return response
         except Exception as e:
-            msg = str(e).lower()
-            # Model "o‘ylashni o‘chirish"ni tushunmasa — bir marta o‘shasiz qayta urinamiz
-            if use_fast and ("thinking" in msg or "budget" in msg or "not supported" in msg):
+            # Tejash sozlamasi ("o‘ylashni o‘chirish" va javob uzunligi chegarasi)
+            # modelga yoqmasligi mumkin. Ilgari xato MATNIDAN bilishga urinardik,
+            # lekin Gemini shunchaki "Request contains an invalid argument" deb
+            # javob berardi — natijada sahifa rasmi umuman tekshirilmay qolgan edi.
+            # Endi tejash rejimida HAR QANDAY xatodan keyin bir marta oddiy
+            # rejimda qayta urinamiz. Bir marta ishlamasa, boshqa urinilmaydi.
+            if use_fast:
                 _thinking_off_supported = False
+                print(f"[ai] tejash rejimi bu modelga to‘g‘ri kelmadi, oddiy rejimga o‘tildi ({task}): {e}")
                 tries -= 1
                 continue
             print(f"XATOLIK [{task} - Urinish {tries}]: {e}")
             if tries >= attempts:
                 raise
             await asyncio.sleep(1)
+
+def image_part(image_bytes: bytes):
+    """Rasmni AI ga uzatish uchun tayyorlaydi.
+
+    Rasm turi baytlarning o‘zidan aniqlanadi. Ilgari hamma rasm «jpeg» deb
+    yuborilardi — telefon boshqa turda (png yoki webp) yuborsa, AI so‘rovni
+    rad etardi.
+    """
+    head = image_bytes[:12]
+    if head.startswith(b"\xff\xd8\xff"):
+        mime = "image/jpeg"
+    elif head.startswith(b"\x89PNG\r\n\x1a\n"):
+        mime = "image/png"
+    elif head[:4] == b"RIFF" and head[8:12] == b"WEBP":
+        mime = "image/webp"
+    elif head[:3] == b"GIF":
+        mime = "image/gif"
+    else:
+        mime = "image/jpeg"
+    return types.Part.from_bytes(data=image_bytes, mime_type=mime)
+
 
 def clean_json(text: str) -> str:
     """Gemini qaytargan matndan JSON blokini xavfsiz ajratib olish (RegEx orqali)"""
@@ -180,10 +206,7 @@ async def analyze_book_cover(image_bytes: bytes):
         "Barcha o‘zbekcha matnlarda faqat va faqat to‘g‘ri O‘, o‘, G‘, g‘ harflaridan foydalan."
     )
     try:
-        response = await _ask("analyze_book_cover", [
-            prompt,
-            types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
-        ])
+        response = await _ask("analyze_book_cover", [prompt, image_part(image_bytes)])
         return split_title_author(response.text.strip())
     except Exception as e:
         traceback.print_exc()
@@ -197,10 +220,8 @@ async def verify_page_photo(image_bytes: bytes):
     Javobingni FAQAT quyidagi JSON formatida ber: {"is_book_page": true, "page_number": 155}"""
     
     try:
-        response = await _ask("verify_page_photo", [
-            prompt,
-            types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
-        ], json_mode=True, max_tokens=80, fast=True)
+        response = await _ask("verify_page_photo", [prompt, image_part(image_bytes)],
+                              json_mode=True, max_tokens=200, fast=True)
         data = json.loads(clean_json(response.text))
 
         is_page = bool(data.get("is_book_page", False))
@@ -247,7 +268,7 @@ async def generate_test_bank_from_photos(photos_bytes_list: list):
 
     contents = [prompt]
     for img_bytes in photos_bytes_list:
-        contents.append(types.Part.from_bytes(data=img_bytes, mime_type="image/jpeg"))
+        contents.append(image_part(img_bytes))
 
     try:
         response = await _ask("generate_test_bank", contents, json_mode=True)
