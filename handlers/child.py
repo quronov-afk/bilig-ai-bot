@@ -7,7 +7,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from database import (
     conn, cursor, get_parent_id, update_streak,
-    calculate_and_update_rank
+    calculate_and_update_rank, award_badge
 )
 from keyboards import (
     get_child_keyboard, get_bolaxona_keyboard, get_back_reply_keyboard
@@ -241,11 +241,7 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         
         # 7 kunlik uzluksiz o‘qish nishoni
         if streak >= 7:
-            cursor.execute("SELECT badges FROM Users WHERE user_id = ?", (child_id,))
-            badges = cursor.fetchone()[0]
-            if "Charchamas" not in str(badges):
-                new_badges = (str(badges) + " 🔥 Charchamas Kitobxon").strip()
-                cursor.execute("UPDATE Users SET badges = ? WHERE user_id = ?", (new_badges, child_id))
+            award_badge(child_id, "Yengilmas qahramon")
         
         if earned_bilig > 0:
             cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (earned_bilig, child_id))
@@ -356,11 +352,7 @@ async def process_manual_page(message: types.Message, state: FSMContext):
 
     # 7 kunlik uzluksiz o‘qish nishoni
     if streak >= 7:
-        cursor.execute("SELECT badges FROM Users WHERE user_id = ?", (child_id,))
-        badges = cursor.fetchone()[0]
-        if "Charchamas" not in str(badges):
-            new_badges = (str(badges) + " 🔥 Charchamas Kitobxon").strip()
-            cursor.execute("UPDATE Users SET badges = ? WHERE user_id = ?", (new_badges, child_id))
+        award_badge(child_id, "Yengilmas qahramon")
 
     if earned_bilig > 0:
         cursor.execute("UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (earned_bilig, child_id))
@@ -465,12 +457,8 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
         """, (child_id, book_id, scores.get("fluency_score", 80), scores.get("vocabulary_score", 80), parent_rep.get("strengths", ""), parent_rep.get("conversation_topic", ""), now_ts))
         
         badge_text = ""
-        if give_badge:
-            cursor.execute("SELECT badges FROM Users WHERE user_id = ?", (child_id,))
-            current_badges = cursor.fetchone()[0]
-            if "Notiq" not in str(current_badges):
-                cursor.execute("UPDATE Users SET badges = ? WHERE user_id = ?", (str(current_badges) + " 🗣 Notiq" if current_badges else "🗣 Notiq", child_id))
-                badge_text = "\n\n🏅 <b>TABRIKLAYMIZ! '🗣 Notiq' nishonini olding!</b>"
+        if give_badge and award_badge(child_id, "Bilim notig‘i"):
+            badge_text = "\n\n🏅 <b>TABRIKLAYMIZ! «Bilim notig‘i» nishonini olding!</b>"
                 
         conn.commit()
         appropriate_kb = await get_appropriate_keyboard(child_id, state)
@@ -565,13 +553,8 @@ async def render_active_test_question(callback: types.CallbackQuery, state: FSMC
         
         badge_reward = ""
         if correct_count == total_q and total_q >= 5:
-            cursor.execute("SELECT badges FROM Users WHERE user_id = ?", (child_id,))
-            b_row = cursor.fetchone()
-            current_badges = b_row[0] if b_row else ""
-            if "Zukko" not in str(current_badges):
-                new_b = (str(current_badges) + " 🧠 Zukko").strip()
-                cursor.execute("UPDATE Users SET badges = ? WHERE user_id = ?", (new_b, child_id))
-                badge_reward = "\n🏅 <b>TABRIKLAYMIZ! '🧠 Zukko' nishonini qo‘lga kiritding!</b>"
+            if award_badge(child_id, "Zukko kitobxon"):
+                badge_reward = "\n🏅 <b>TABRIKLAYMIZ! «Zukko kitobxon» nishonini qo‘lga kiritding!</b>"
 
         pct = int((correct_count / total_q) * 100)
         now_ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

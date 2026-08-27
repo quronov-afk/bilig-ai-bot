@@ -337,3 +337,31 @@ def generate_admin_stats_text():
         f"🆕 <b>Oxirgi a'zo bo‘lganlar:</b>\n{recent_text}"
     )
     return text
+
+# ==========================================================
+# NISHONLAR
+# ==========================================================
+# Nishonlar Users.badges ustunida vergul bilan ajratib saqlanadi.
+# Nomlar webapp/badges/index.json dagi nomlar bilan aynan bir xil bo‘lishi
+# kerak — chizma shu nom orqali topiladi.
+
+def get_badges(child_id):
+    """Bolaning nishonlari ro‘yxati."""
+    cursor.execute("SELECT badges FROM Users WHERE user_id = ?", (child_id,))
+    row = cursor.fetchone()
+    raw = (row[0] if row and row[0] else "")
+    return [b.strip() for b in raw.split(",") if b.strip()]
+
+
+def award_badge(child_id, name):
+    """Nishon beradi. Allaqachon bo‘lsa hech nima qilmaydi.
+
+    Qaytaradi: True — yangi nishon berildi, False — allaqachon bor edi.
+    """
+    have = get_badges(child_id)
+    if name in have:
+        return False
+    have.append(name)
+    cursor.execute("UPDATE Users SET badges = ? WHERE user_id = ?", (",".join(have), child_id))
+    conn.commit()
+    return True

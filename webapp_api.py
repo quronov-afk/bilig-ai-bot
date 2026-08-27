@@ -63,6 +63,56 @@ for _col_sql in (
     except Exception:
         pass
 
+# ------------------------------------------------------------
+# ESKI NISHONLARNI YANGI TIZIMGA O‘TKAZISH (bir martalik)
+# ------------------------------------------------------------
+# Ilgari faqat 3 ta nishon bor edi va ular bo‘shliq bilan, emoji bilan
+# saqlanardi. Endi 29 talik tizim ishlaydi: nomlar vergul bilan ajratiladi
+# va webapp/badges/ dagi chizma nomlariga aynan mos keladi.
+# Eski nishonlar aynan shu ko‘rinishda saqlangan edi (emoji bilan).
+# Aynan shu satrlar qidiriladi — «Zukko kitobxon» kabi yangi nomlar
+# tasodifan o‘zgarib ketmasligi uchun.
+_OLD_BADGE_MAP = {
+    "🔥 Charchamas Kitobxon": "Yengilmas qahramon",
+    "🗣 Notiq": "Bilim notig‘i",
+    "🧠 Zukko": "Zukko kitobxon",
+}
+
+
+def _migrate_old_badges():
+    try:
+        cursor.execute("SELECT user_id, badges FROM Users WHERE badges IS NOT NULL AND badges != ''")
+        rows = cursor.fetchall()
+    except Exception:
+        return
+    changed = 0
+    for uid, raw in rows:
+        text = raw or ""
+        if not any(old in text for old in _OLD_BADGE_MAP):
+            continue
+        names = []
+        for old, new in _OLD_BADGE_MAP.items():
+            if old in text:
+                text = text.replace(old, ",")
+                if new not in names:
+                    names.append(new)
+        # Eski yozuvda boshqa nomlar ham qolgan bo‘lsa, ular saqlanadi
+        for part in text.split(","):
+            part = part.strip()
+            if part and part not in names:
+                names.append(part)
+        try:
+            cursor.execute("UPDATE Users SET badges = ? WHERE user_id = ?", (",".join(names), uid))
+            changed += 1
+        except Exception:
+            pass
+    if changed:
+        conn.commit()
+        print(f"[webapp_api] {changed} ta foydalanuvchining eski nishonlari yangilandi")
+
+
+_migrate_old_badges()
+
 # 10 ta bolalar avatari — cho‘chqa ISTISNO qilingan
 AVATAR_IDS = ["fox", "bear", "penguin", "rabbit", "cat", "owl", "panda", "lion", "elephant", "dog"]
 

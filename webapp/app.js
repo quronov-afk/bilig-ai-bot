@@ -816,26 +816,25 @@ function aiReportBlockHtml(report) {
     '</div>';
 }
 
-// Nishonlar bloki — oxirgi olingan nishonlar rasmi bilan
+// Nishonlar bloki — 4 tasi ko‘rsatiladi: avval olinganlari (yangisi
+// birinchi), keyin olinmaganlari xira holatda. Shunda blok hech qachon
+// bo‘sh turmaydi va bola nimaga intilishini ko‘radi.
 function badgesBlockHtml(badgesStr, limit) {
-  const names = (badgesStr || "").split(",").map(function (s) { return s.trim(); })
-    .filter(function (s) { return s && !/yo.q/i.test(s); });
-  const head = '<p class="sec-label">Nishonlar</p>';
-  if (!names.length) {
-    return head + '<div class="card"><p class="section-sub" style="margin:0">Hali nishon yo‘q — birinchi 5 betni o‘qib, «Birinchi qadam» nishonini oling.</p></div>';
-  }
+  const earned = earnedBadgeSet(badgesStr);
+  const have = BADGE_LIST.filter(function (b) { return earned[b[1].toLowerCase()]; });
+  const rest = BADGE_LIST.filter(function (b) { return !earned[b[1].toLowerCase()]; });
   const max = limit || 4;
-  const shown = names.slice(-max).reverse();
-  const rest = names.length - shown.length;
-  return head + '<div class="badge-strip" data-action="open-badges">' +
-    shown.map(function (n) {
-      const file = badgeFile(n);
-      return '<span class="bs-item">' +
-        (file ? '<img src="/badges/' + file + '.svg?v=' + ASSET_V + '" alt="" loading="lazy">'
-              : '<span class="bs-fallback">' + icon("award", 22, 1.7) + '</span>') +
-        '<b>' + escapeHtml(stripEmoji(n)) + '</b></span>';
+  const shown = have.slice().reverse().concat(rest).slice(0, max);
+
+  return '<p class="sec-label">Nishonlar</p>' +
+    '<div class="badge-strip" data-action="open-badges">' +
+    shown.map(function (b) {
+      const got = !!earned[b[1].toLowerCase()];
+      return '<span class="bs-item' + (got ? "" : " is-locked") + '">' +
+        badgeArt(b[0]) +
+        '<b>' + escapeHtml(b[1]) + '</b></span>';
     }).join("") +
-    (rest > 0 ? '<span class="bs-more">+' + rest + '<br>ta</span>' : '') +
+    '<span class="bs-more"><b>' + have.length + '</b><br>/' + BADGE_LIST.length + '</span>' +
     '</div>';
 }
 
@@ -1622,62 +1621,78 @@ async function renderRatingTab() {
       badgeGridHtml(p.badges);
   }
 }
-// Nishon nomi -> chizma fayli. Chizmalar webapp/badges/ papkasida,
-// manbasi tools/badges/ da (kerak bo‘lsa qaytadan chiqariladi).
-const BADGE_FILES = {
-  "Birinchi qadam": "birinchi-qadam",
-  "Kitobxon sayyoh": "kitobxon-sayyoh",
-  "Kitoblar sultoni": "kitoblar-sultoni",
-  "Ming betlik dovon": "ming-betlik-dovon",
-  "Kitoblar ummoni": "kitoblar-ummoni",
-  "Olovli qanot": "olovli-qanot",
-  "Yengilmas qahramon": "yengilmas-qahramon",
-  "Mutolaa afsonasi": "mutolaa-afsonasi",
-  "Olmos iroda": "olmos-iroda",
-  "Yil qahramoni": "yil-qahramoni",
-  "Qalqon": "qalqon",
-  "Marra g‘olibi": "marra-golibi",
-  "Tezkor mutolaa": "tezkor-mutolaa",
-  "Kichik kutubxonachi": "kichik-kutubxonachi",
-  "Mutolaa akademigi": "mutolaa-akademigi",
-  "Bilim notig‘i": "bilim-notigi",
-  "Tafakkur": "tafakkur",
-  "Buyuk suxandon": "buyuk-suxandon",
-  "Oltin qalam": "oltin-qalam",
-  "Zukko kitobxon": "zukko-kitobxon",
-  "Mantiq ustasi": "mantiq-ustasi",
-  "Bilim akademiyasi": "bilim-akademiyasi",
-  "Tonggi qaldirg‘och": "tonggi-qaldirgoch",
-  "Qutb yulduzi": "qutb-yulduzi",
-  "Maroqli": "maroqli",
-  "Oila iftixori": "oila-iftixori",
-  "Chaqmoq kitobxon": "chaqmoq-kitobxon",
-  "Ezgulik elchisi": "ezgulik-elchisi",
-  "Xazinabon": "xazinabon"
-};
+// Barcha nishonlar: [fayl nomi, nomi, berilish sharti].
+// Chizmalar webapp/badges/ papkasida, manbasi tools/badges/ da.
+const BADGE_LIST = [
+  ["birinchi-qadam", "Birinchi qadam", "Ilk 5 sahifa o‘qilganda"],
+  ["kitobxon-sayyoh", "Kitobxon sayyoh", "100 bet o‘qilganda"],
+  ["kitoblar-sultoni", "Kitoblar sultoni", "500 bet o‘qilganda"],
+  ["ming-betlik-dovon", "Ming betlik dovon", "1 000 bet o‘qilganda"],
+  ["kitoblar-ummoni", "Kitoblar ummoni", "5 000 bet o‘qilganda"],
+  ["olovli-qanot", "Olovli qanot", "3 kun uzluksiz o‘qilganda"],
+  ["yengilmas-qahramon", "Yengilmas qahramon", "7 kun uzluksiz o‘qilganda"],
+  ["mutolaa-afsonasi", "Mutolaa afsonasi", "30 kun uzluksiz o‘qilganda"],
+  ["olmos-iroda", "Olmos iroda", "100 kun uzluksiz o‘qilganda"],
+  ["yil-qahramoni", "Yil qahramoni", "365 kun uzluksiz o‘qilganda"],
+  ["qalqon", "Qalqon", "Olov qalqonidan keyin darhol qaytganda"],
+  ["marra-golibi", "Marra g‘olibi", "Ilk kitob yakunlanganda"],
+  ["tezkor-mutolaa", "Tezkor mutolaa", "Kitob 3 kun ichida tugatilganda"],
+  ["kichik-kutubxonachi", "Kichik kutubxonachi", "10 ta kitob tugatilganda"],
+  ["mutolaa-akademigi", "Mutolaa akademigi", "25 ta kitob tugatilganda"],
+  ["bilim-notigi", "Bilim notig‘i", "Audio xulosada 5 Bilig olinganda"],
+  ["tafakkur", "Tafakkur", "Mustaqil fikr yuqori baholanganda"],
+  ["buyuk-suxandon", "Buyuk suxandon", "10 ta kitob bo‘yicha a'lo xulosa"],
+  ["oltin-qalam", "Oltin qalam", "Go‘zal adabiy so‘zlar bilan bayon etganda"],
+  ["zukko-kitobxon", "Zukko kitobxon", "Testda 100% to‘g‘ri javob"],
+  ["mantiq-ustasi", "Mantiq ustasi", "Jami 50 ta to‘g‘ri javob"],
+  ["bilim-akademiyasi", "Bilim akademiyasi", "10 ta test ketma-ket 100%"],
+  ["tonggi-qaldirgoch", "Tonggi qaldirg‘och", "06:00–09:00 oralig‘ida o‘qilganda"],
+  ["qutb-yulduzi", "Qutb yulduzi", "Uxlashdan oldin o‘qilganda"],
+  ["maroqli", "Maroqli", "Dam olish kunlari o‘qilganda"],
+  ["oila-iftixori", "Oila iftixori", "Ota-ona bilan suhbat a'lo o‘tganda"],
+  ["chaqmoq-kitobxon", "Chaqmoq kitobxon", "Bir o‘tirishda 30+ bet o‘qilganda"],
+  ["ezgulik-elchisi", "Ezgulik elchisi", "Qahramon fazilatlari bo‘yicha xulosa"],
+  ["xazinabon", "Xazinabon", "2000 Bilig to‘planganda"]
+];
+
+const BADGE_BY_NAME = {};
+BADGE_LIST.forEach(function (b) { BADGE_BY_NAME[b[1].toLowerCase()] = b; });
 
 function badgeFile(name) {
-  const clean = stripEmoji(name || "").trim();
-  if (BADGE_FILES[clean]) return BADGE_FILES[clean];
-  // Bosh harf farqi yoki ortiqcha bo‘shliqqa chidamli solishtirish
-  const low = clean.toLowerCase();
-  const key = Object.keys(BADGE_FILES).filter(function (k) { return k.toLowerCase() === low; })[0];
-  return key ? BADGE_FILES[key] : null;
+  const b = BADGE_BY_NAME[stripEmoji(name || "").trim().toLowerCase()];
+  return b ? b[0] : null;
 }
 
+// Bolada bor nishonlar ro‘yxati (nomlar bo‘yicha)
+function earnedBadgeSet(badgesStr) {
+  const set = {};
+  (badgesStr || "").split(",").forEach(function (n) {
+    const k = stripEmoji(n).trim().toLowerCase();
+    if (k && !/yo.q/i.test(k)) set[k] = true;
+  });
+  return set;
+}
+
+function badgeArt(slug, size) {
+  return '<img src="/badges/' + slug + '.svg?v=' + ASSET_V + '" alt="" loading="lazy">';
+}
+
+// To‘liq kolleksiya — olinmagan nishonlar xira va rangsiz turadi,
+// shunda bola nimaga intilishini ko‘radi.
 function badgeGridHtml(badgesStr) {
-  const names = (badgesStr || "").split(",").map(function (s) { return s.trim(); }).filter(function (s) { return s && !/yo.q/i.test(s); });
-  if (!names.length) {
-    return '<div class="card"><p class="section-sub" style="margin:0">Hali nishonlar yo‘q — o‘qishda davom eting.</p></div>';
-  }
-  return '<div class="badge-grid">' + names.map(function (n, i) {
-    const file = badgeFile(n);
-    const art = file
-      ? '<img src="/badges/' + file + '.svg?v=' + ASSET_V + '" alt="" loading="lazy">'
-      : icon("award", 24, 1.6);
-    return '<div class="badge-tile"><div class="badge-icon' + (file ? " has-art" : " tint-" + (i % 4)) + '">' + art + '</div>' +
-      '<p>' + escapeHtml(stripEmoji(n)) + '</p></div>';
-  }).join("") + '</div>';
+  const earned = earnedBadgeSet(badgesStr);
+  const have = BADGE_LIST.filter(function (b) { return earned[b[1].toLowerCase()]; });
+  const rest = BADGE_LIST.filter(function (b) { return !earned[b[1].toLowerCase()]; });
+  const all = have.concat(rest);
+  return '<p class="badge-count"><b>' + have.length + '</b> / ' + BADGE_LIST.length + ' nishon to‘plandi</p>' +
+    '<div class="badge-grid">' + all.map(function (b) {
+      const got = !!earned[b[1].toLowerCase()];
+      return '<div class="badge-tile' + (got ? "" : " is-locked") + '" title="' + escapeHtml(b[2]) + '">' +
+        '<div class="badge-icon has-art">' + badgeArt(b[0]) + '</div>' +
+        '<p>' + escapeHtml(b[1]) + '</p>' +
+        '<span class="badge-cond">' + escapeHtml(got ? "Olingan" : b[2]) + '</span>' +
+        '</div>';
+    }).join("") + '</div>';
 }
 function diagRow(label, bar) {
   return '<div class="diag-row"><div class="diag-label"><span>' + label + '</span><span>' + bar + '</span></div></div>';
