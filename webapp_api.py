@@ -1492,6 +1492,34 @@ def serve_index():
     return send_from_directory(WEBAPP_DIR, "index.html")
 
 
+def _no_cache(response):
+    """Ilova fayllari har safar yangilanganini tekshirsin.
+
+    Telegram Mini App fayllarni o‘z xotirasida uzoq saqlab qo‘yadi — natijada
+    server yangilangan bo‘lsa ham, foydalanuvchi eski nusxani ko‘rib qolardi.
+    """
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+    response.headers["Pragma"] = "no-cache"
+    return response
+
+
+# Muqova, nishon va maskot rasmlari o‘zgarmaydi — ular uzoq saqlanaveradi
+_LONG_CACHE_DIRS = ("/covers/", "/badges/", "/mascots/")
+
+
+@app.after_request
+def _apply_cache_rules(response):
+    """Kesh qoidalari — Flask o‘zi tarqatadigan fayllarga ham tegishli."""
+    path = request.path or "/"
+    if path.startswith(_LONG_CACHE_DIRS):
+        response.headers["Cache-Control"] = "public, max-age=604800"
+    elif path.startswith("/api/"):
+        _no_cache(response)
+    elif path == "/" or path.endswith((".html", ".js", ".css", ".json")):
+        _no_cache(response)
+    return response
+
+
 @app.route("/<path:path>")
 def serve_static(path):
     # /api/... bo‘lmagan, lekin haqiqatda mavjud bo‘lmagan fayl so‘ralsa,

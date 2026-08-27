@@ -129,7 +129,23 @@ function coverKey(s) {
 function coverFile(title, author) {
   if (!COVER_INDEX) return null;
   const t = coverKey(title);
-  return COVER_INDEX[coverKey(title + " " + (author || ""))] || COVER_INDEX[t] || null;
+  const exact = COVER_INDEX[coverKey(title + " " + (author || ""))] || COVER_INDEX[t];
+  if (exact) return exact;
+  if (t.length < 8) return null;
+
+  // Nom to‘liq mos kelmasligi mumkin: kitob «Galaktikada bir kun» deb
+  // yozilgan, muqova esa «Galaktikada bir kun 1-2-3» nomi bilan saqlangan.
+  // Shuning uchun boshi mos keladigan eng qisqa nomni qidiramiz.
+  let best = null, bestLen = Infinity;
+  for (const key in COVER_INDEX) {
+    const longer = key.length > t.length && key.indexOf(t + " ") === 0;
+    const shorter = t.length > key.length && key.length >= 8 && t.indexOf(key + " ") === 0;
+    if ((longer || shorter) && key.length < bestLen) {
+      best = COVER_INDEX[key];
+      bestLen = key.length;
+    }
+  }
+  return best;
 }
 
 // Muqova rasmi; topilmasa — nomning birinchi harfi rangli fonda.
