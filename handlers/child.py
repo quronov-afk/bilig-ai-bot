@@ -559,9 +559,9 @@ async def render_active_test_question(callback: types.CallbackQuery, state: FSMC
         pct = int((correct_count / total_q) * 100)
         now_ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         cursor.execute("""
-            INSERT INTO Diagnostic_Logs (child_id, book_id, type, factual_score, logic_score, conclusion_score, created_at)
-            VALUES (?, ?, 'test', ?, ?, ?, ?)
-        """, (child_id, book_id, pct, pct, pct, now_ts))
+            INSERT INTO Diagnostic_Logs (child_id, book_id, type, factual_score, logic_score, conclusion_score, created_at, correct_count, total_count)
+            VALUES (?, ?, 'test', ?, ?, ?, ?, ?, ?)
+        """, (child_id, book_id, pct, pct, pct, now_ts, correct_count, total_q))
         conn.commit()
 
         finish_text = (

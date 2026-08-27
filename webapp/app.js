@@ -703,7 +703,16 @@ document.addEventListener("click", async function (e) {
         State.ratingMode = "badges";     // to‘g‘ridan-to‘g‘ri nishonlar sahifasi
         openRatingFromHeader();
         break;
+      case "open-result":
+        State.ratingMode = "passport";
+        openRatingFromHeader();
+        break;
+      case "cal-move":
+        State.calShift = (State.calShift || 0) + Number(el.dataset.step);
+        renderRatingTab();
+        break;
       case "open-rating":
+        State.calShift = 0;
         State.ratingMode = el.dataset.mode;
         openRatingFromHeader();
         break;
@@ -782,7 +791,7 @@ async function renderParentHome() {
 
   // ---- 6. So‘nggi natijalar ----
   html += '<p class="sec-label">So‘nggi natijalar</p>' +
-    '<div class="res-card">' +
+    '<div class="res-card is-tappable" data-action="open-result">' +
     '<div class="res-who"><span class="av">' + avatarMarkup(primary.avatar_id || "fox", 48) + '</span>' +
     '<span>' + escapeHtml(primary.name) + '</span></div>' +
     '<div class="res-list">' +
@@ -1059,7 +1068,7 @@ async function renderChildHome() {
 
   // ---- 4. So‘nggi natijalar ----
   html += '<p class="sec-label">So‘nggi natijalar</p>' +
-    '<div class="res-card"><div class="res-list">' +
+    '<div class="res-card is-tappable" data-action="open-result"><div class="res-list">' +
     resRow("book-open", "ic-brand", "Jami o‘qilgan", (data.total_pages || 0) + " bet") +
     resRow("check-circle", "ic-leaf", "Tugatilgan kitob", (data.completed_books || 0) + " ta") +
     resRow("coin", "ic-coin", "To‘plangan Bilig", data.coins + " ta") +
@@ -1660,26 +1669,134 @@ async function renderRatingTab() {
     return;
   }
 
-  const p = await api("/api/child/passport" + asChildQuery());
+  const shift = State.calShift || 0;
+  const d = new Date();
+  d.setDate(1);
+  d.setMonth(d.getMonth() + shift);
+  const q = asChildQuery();
+  const p = await api("/api/child/passport" + q + (q ? "&" : "?") +
+    "year=" + d.getFullYear() + "&month=" + (d.getMonth() + 1));
 
   if (mode === "badges") {
     content.innerHTML = badgeGridHtml(p.badges);
     return;
   }
 
-  content.innerHTML =
+  let out =
     '<div class="stat-grid">' +
     '<div class="stat-box"><div class="num">' + p.completed_books + '</div><div class="lbl">Tugallangan kitob</div></div>' +
     '<div class="stat-box"><div class="num">' + p.total_pages + '</div><div class="lbl">Jami bet</div></div>' +
     '<div class="stat-box"><div class="num">' + p.streak + '</div><div class="lbl">Ketma-ket kun</div></div>' +
     '</div>' +
-    '<p class="eyebrow">Ko‘nikmalar diagnostikasi</p>' +
-    '<div class="card">' +
-    diagRow("Faktik xotira", p.factual_bar) +
-    diagRow("Sabab-oqibat mantiqi", p.logic_bar) +
-    diagRow("Asar xulosasi", p.conclusion_bar) +
-    diagRow("Nutq ravonligi", p.fluency_bar) +
+    calendarHtml(p.calendar) +
+    booksStatHtml(p.books) +
+    testStatHtml(p.tests);
+
+  // Ko‘nikmalar diagnostikasi — faqat ota-onaga.
+  // Bolaga foizli baho ko‘rsatish pedagogik jihatdan zararli: u o‘zini
+  // baholanayotgandek his qiladi va stressga tushadi. Bolaga rag‘bat kerak.
+  if (!isChildView()) {
+    out += '<p class="eyebrow">Ko‘nikmalar diagnostikasi</p>' +
+      '<div class="card">' +
+      diagRow("Faktik xotira", p.factual_bar) +
+      diagRow("Sabab-oqibat mantiqi", p.logic_bar) +
+      diagRow("Asar xulosasi", p.conclusion_bar) +
+      diagRow("Nutq ravonligi", p.fluency_bar) +
+      '</div>';
+  } else {
+    out += strengthHtml(p.strength, p.next_rank);
+  }
+  content.innerHTML = out;
+}
+
+// ---------- Mutolaa taqvimi ----------
+const WEEKDAY_LETTERS = ["Du", "Se", "Ch", "Pa", "Ju", "Sh", "Ya"];
+
+function calendarHtml(c) {
+  if (!c) return "";
+  const read = {};
+  (c.read_days || []).forEach(function (d) { read[d] = true; });
+
+  let cells = "";
+  for (let i = 0; i < c.first_weekday; i++) cells += '<span class="cal-cell is-empty"></span>';
+  for (let d = 1; d <= c.days_in_month; d++) {
+    const cls = (read[d] ? " is-read" : "") + (d === c.today ? " is-today" : "");
+    cells += '<span class="cal-cell' + cls + '">' + d + '</span>';
+  }
+
+  return '<p class="eyebrow">Mutolaa taqvimi</p>' +
+    '<div class="card cal-card">' +
+    '<div class="cal-head">' +
+    '<button class="cal-nav" data-action="cal-move" data-step="-1" aria-label="Oldingi oy">' + icon("chevron-right", 15, 2.4) + '</button>' +
+    '<b>' + escapeHtml(c.month_name) + ' ' + c.year + '</b>' +
+    '<button class="cal-nav" data-action="cal-move" data-step="1" aria-label="Keyingi oy">' + icon("chevron-right", 15, 2.4) + '</button>' +
+    '</div>' +
+    '<div class="cal-grid cal-names">' + WEEKDAY_LETTERS.map(function (w) {
+      return '<span class="cal-name">' + w + '</span>';
+    }).join("") + '</div>' +
+    '<div class="cal-grid">' + cells + '</div>' +
+    '<p class="cal-note">Shu oyda <b>' + c.read_count + '</b> kun o‘qildi' +
+    (c.longest > 1 ? ' · eng uzun <b>' + c.longest + '</b> kun ketma-ket' : '') + '</p>' +
     '</div>';
+}
+
+// ---------- Kitoblar bo‘yicha ----------
+function booksStatHtml(books) {
+  const list = books || [];
+  if (!list.length) return "";
+  return '<p class="eyebrow">Kitoblar bo‘yicha</p>' +
+    '<div class="card">' + list.map(function (b) {
+      const pr = bookProgress(b);
+      const done = !!b.completed;
+      return '<div class="bstat">' +
+        '<div class="bstat-top">' +
+        '<span class="bstat-title">' + escapeHtml(b.title) + '</span>' +
+        '<span class="bstat-num' + (done ? " is-done" : "") + '">' +
+        (done ? b.pages_read + ' bet ' + icon("check-circle", 13, 2.4) : pr.label) + '</span>' +
+        '</div>' +
+        '<div class="bstat-bar"><i class="' + (done ? "is-done" : "") + '" style="width:' + (done ? 100 : pr.pct) + '%"></i></div>' +
+        '</div>';
+    }).join("") + '</div>';
+}
+
+// ---------- Testlar ----------
+function testStatHtml(t) {
+  if (!t || !t.count) {
+    return '<p class="eyebrow">Testlar</p>' +
+      '<div class="card"><p class="section-sub" style="margin:0">Hali test ishlanmagan.</p></div>';
+  }
+  const known = t.total > 0;
+  const pct = known ? Math.round(t.correct / t.total * 100) : t.avg_pct;
+  return '<p class="eyebrow">Testlar</p>' +
+    '<div class="card">' +
+    '<p class="tst-head"><b>' + t.count + '</b> ta test ishlandi' +
+    '<span class="tst-pct">' + pct + '%</span></p>' +
+    '<div class="tst-bar"><i style="width:' + pct + '%"></i></div>' +
+    (known
+      ? '<p class="tst-legend"><span class="ok">' + t.correct + ' to‘g‘ri</span>' +
+        '<span class="bad">' + t.wrong + ' xato</span></p>'
+      : '<p class="tst-legend"><span class="ok">O‘rtacha natija</span></p>') +
+    (t.best ? '<p class="tst-best">Eng yaxshi: <b>' + escapeHtml(t.best.title) + '</b> — ' + t.best.pct + '%</p>' : '') +
+    '</div>';
+}
+
+// ---------- Bolaga: kuchli tomoni va keyingi maqsad ----------
+function strengthHtml(strength, next) {
+  if (!strength && !next) return "";
+  let inner = "";
+  if (strength) {
+    inner += '<div class="str-row">' +
+      '<span class="str-ic">' + icon("star", 20, 1.9) + '</span>' +
+      '<p><b>' + escapeHtml(strength.label) + '</b> — ' + escapeHtml(strength.text) + '!</p>' +
+      '</div>';
+  }
+  if (next) {
+    inner += '<div class="str-goal">Keyingi maqsad: <b>' + escapeHtml(next.title) + '</b> darajasigacha ' +
+      next.pages_left + ' bet' +
+      '<span class="str-bar"><i style="width:' + next.progress + '%"></i></span></div>';
+  }
+  return '<p class="eyebrow">Sening kuchli tomoning</p>' +
+    '<div class="card str-card">' + inner + '</div>';
 }
 
 // Barcha nishonlar: [fayl nomi, nomi, berilish sharti].

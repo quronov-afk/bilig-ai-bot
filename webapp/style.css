@@ -457,6 +457,79 @@ html, body {
 }
 .stat3 .rank-bar i { display: block; height: 100%; background: var(--brand); border-radius: 99px; }
 
+/* ---------- Mutolaa taqvimi ---------- */
+.cal-card { padding: 13px 12px 11px; }
+.cal-head {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 10px; font-size: 14px; font-weight: 800;
+}
+.cal-nav {
+  width: 28px; height: 28px; border-radius: 8px; border: 0; cursor: pointer;
+  background: var(--surface-soft); color: var(--text-soft);
+  display: flex; align-items: center; justify-content: center;
+}
+.cal-nav[data-step="-1"] svg { transform: rotate(180deg); }
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.cal-names { margin-bottom: 4px; }
+.cal-name { text-align: center; font-size: 10.5px; font-weight: 700; color: var(--text-faint); }
+.cal-cell {
+  aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+  border-radius: 9px; font-size: 11.5px; font-weight: 700;
+  color: var(--text-faint); background: var(--surface-soft);
+}
+.cal-cell.is-empty { background: transparent; }
+.cal-cell.is-read { background: var(--success-bg); color: var(--success-deep); }
+.cal-cell.is-today { outline: 2px solid var(--brand); outline-offset: -2px; color: var(--brand-deep); }
+.cal-note {
+  margin: 10px 0 0; text-align: center; font-size: 12px;
+  color: var(--text-faint); font-weight: 600;
+}
+.cal-note b { color: var(--text-soft); }
+
+/* ---------- Kitoblar bo‘yicha ---------- */
+.bstat { padding: 8px 0; }
+.bstat + .bstat { border-top: 1px solid var(--border); }
+.bstat-top { display: flex; align-items: baseline; gap: 10px; margin-bottom: 6px; }
+.bstat-title {
+  font-size: 13px; font-weight: 700; min-width: 0; flex: 1;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.bstat-num {
+  font-size: 11.5px; font-weight: 700; color: var(--text-faint); flex-shrink: 0;
+  display: flex; align-items: center; gap: 3px;
+}
+.bstat-num.is-done { color: var(--success-deep); }
+.bstat-bar { height: 6px; border-radius: 99px; background: var(--surface-soft); overflow: hidden; }
+.bstat-bar i { display: block; height: 100%; background: var(--brand); border-radius: 99px; }
+.bstat-bar i.is-done { background: var(--success); }
+
+/* ---------- Testlar ---------- */
+.tst-head { margin: 0 0 8px; font-size: 13px; color: var(--text-soft); display: flex; align-items: center; }
+.tst-head b { color: var(--text); font-size: 16px; margin-right: 4px; }
+.tst-pct { margin-left: auto; font-size: 15px; font-weight: 800; color: var(--success-deep); }
+.tst-bar { height: 10px; border-radius: 99px; background: var(--danger-bg); overflow: hidden; }
+.tst-bar i { display: block; height: 100%; background: var(--success); border-radius: 99px; }
+.tst-legend { margin: 8px 0 0; display: flex; gap: 14px; font-size: 12px; font-weight: 700; }
+.tst-legend .ok { color: var(--success-deep); }
+.tst-legend .bad { color: var(--danger-deep); }
+.tst-best { margin: 8px 0 0; font-size: 12px; color: var(--text-faint); font-weight: 600; }
+.tst-best b { color: var(--text-soft); }
+
+/* ---------- Bolaga: kuchli tomoni ---------- */
+.str-card { background: linear-gradient(180deg, #FEFAE8 0%, var(--surface) 70%); border-color: #F7E3A8; }
+.str-row { display: flex; gap: 10px; align-items: flex-start; }
+.str-ic { color: var(--gold-deep); flex-shrink: 0; margin-top: 1px; }
+.str-row p { margin: 0; font-size: 13.5px; line-height: 1.5; }
+.str-goal { margin-top: 12px; font-size: 12.5px; color: var(--text-soft); font-weight: 600; }
+.str-bar {
+  display: block; height: 6px; border-radius: 99px; margin-top: 6px;
+  background: var(--surface-soft); overflow: hidden;
+}
+.str-bar i { display: block; height: 100%; background: var(--gold); border-radius: 99px; }
+
+/* Bosiladigan natija kartasi */
+.res-card.is-tappable { cursor: pointer; }
+
 /* Sarlavhadagi bo‘lim tugmalari (reyting / natija / nishonlar) */
 .header-nav { display: flex; gap: 6px; }
 .header-nav .icon-btn.is-on {

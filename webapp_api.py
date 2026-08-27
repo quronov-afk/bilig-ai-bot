@@ -56,6 +56,10 @@ for _col_sql in (
     "ALTER TABLE Users ADD COLUMN child_code TEXT",
     # AI ustozning bolaning o‘ziga aytgan iliq xabari (ota-ona hisoboti alohida)
     "ALTER TABLE Diagnostic_Logs ADD COLUMN child_note TEXT",
+    # Testda nechta savol bo‘lgani va nechtasiga to‘g‘ri javob berilgani.
+    # Ilgari faqat umumiy foiz saqlanardi, sanoq esa yo‘qolib ketardi.
+    "ALTER TABLE Diagnostic_Logs ADD COLUMN correct_count INTEGER",
+    "ALTER TABLE Diagnostic_Logs ADD COLUMN total_count INTEGER",
 ):
     try:
         cursor.execute(_col_sql)
@@ -262,6 +266,104 @@ def get_week_activity(child_id: int):
             "today": i == 0,
         })
     return week
+
+
+MONTH_NAMES = ["Yanvar", "Fevral", "Mart", "Aprel", "May", "Iyun",
+               "Iyul", "Avgust", "Sentabr", "Oktabr", "Noyabr", "Dekabr"]
+
+
+def get_reading_calendar(child_id: int, year: int = None, month: int = None):
+    """Oylik mutolaa taqvimi: shu oyda qaysi kunlari o‘qilgan."""
+    today = date.today()
+    year = year or today.year
+    month = month or today.month
+    prefix = "%04d-%02d" % (year, month)
+    cursor.execute(
+        "SELECT DISTINCT substr(created_at, 1, 10) FROM Reading_Logs "
+        "WHERE child_id = ? AND substr(created_at, 1, 7) = ?",
+        (child_id, prefix)
+    )
+    days = sorted(r[0] for r in cursor.fetchall() if r[0])
+    day_nums = sorted(int(d[8:10]) for d in days)
+
+    # Shu oydagi eng uzun ketma-ket kunlar
+    longest = run = 0
+    prev = None
+    for n in day_nums:
+        run = run + 1 if prev is not None and n == prev + 1 else 1
+        longest = max(longest, run)
+        prev = n
+
+    first = date(year, month, 1)
+    nxt = date(year + (month == 12), (month % 12) + 1, 1)
+    return {
+        "year": year, "month": month, "month_name": MONTH_NAMES[month - 1],
+        "days_in_month": (nxt - first).days,
+        "first_weekday": first.weekday(),     # 0 = dushanba
+        "read_days": day_nums,
+        "read_count": len(day_nums),
+        "longest": longest,
+        "today": today.day if (today.year == year and today.month == month) else 0,
+    }
+
+
+def get_test_stats(child_id: int):
+    """Testlar bo‘yicha umumiy natija: nechta test, nechta to‘g‘ri/xato."""
+    cursor.execute(
+        "SELECT COUNT(*), SUM(COALESCE(correct_count, 0)), SUM(COALESCE(total_count, 0)), "
+        "AVG(factual_score) FROM Diagnostic_Logs WHERE child_id = ? AND type = 'test'",
+        (child_id,)
+    )
+    row = cursor.fetchone() or (0, 0, 0, None)
+    count = row[0] or 0
+    correct = row[1] or 0
+    total = row[2] or 0
+    avg_pct = int(row[3]) if row[3] is not None else 0
+
+    cursor.execute(
+        "SELECT pb.title, d.factual_score FROM Diagnostic_Logs d "
+        "JOIN Plan_Books pb ON d.book_id = pb.book_id "
+        "WHERE d.child_id = ? AND d.type = 'test' ORDER BY d.factual_score DESC LIMIT 1",
+        (child_id,)
+    )
+    b = cursor.fetchone()
+    return {
+        "count": count,
+        "correct": correct,
+        "total": total,
+        "wrong": max(0, total - correct),
+        "avg_pct": avg_pct,
+        "best": {"title": b[0], "pct": int(b[1] or 0)} if b else None,
+    }
+
+
+# Bolaga ko‘rsatiladigan kuchli tomon — foiz emas, maqtov
+STRENGTH_TEXT = {
+    "factual": ("Faktik xotira", "kitobdagi tafsilotlarni juda yaxshi eslab qolasan"),
+    "logic": ("Sabab-oqibat mantiqi", "voqealar nima uchun sodir bo‘lganini yaxshi tushunasan"),
+    "conclusion": ("Asar xulosasi", "muallif nima demoqchi bo‘lganini teran anglaysan"),
+    "fluency": ("Nutq ravonligi", "fikringni ravon va ishonchli bayon qilasan"),
+    "vocabulary": ("So‘z boyligi", "go‘zal va boy so‘zlardan foydalanasan"),
+}
+
+
+def get_strength(child_id: int):
+    """Bolaning eng kuchli ko‘nikmasi (unga maqtov sifatida ko‘rsatiladi)."""
+    cursor.execute(
+        "SELECT AVG(factual_score), AVG(logic_score), AVG(conclusion_score), "
+        "AVG(fluency_score), AVG(vocabulary_score) FROM Diagnostic_Logs WHERE child_id = ?",
+        (child_id,)
+    )
+    row = cursor.fetchone()
+    if not row or all(v is None for v in row):
+        return None
+    keys = ["factual", "logic", "conclusion", "fluency", "vocabulary"]
+    scores = [(k, v or 0) for k, v in zip(keys, row)]
+    best = max(scores, key=lambda x: x[1])
+    if best[1] <= 0:
+        return None
+    label, text = STRENGTH_TEXT[best[0]]
+    return {"label": label, "text": text}
 
 
 def get_shelf_books(child_id: int, parent_id: int = None):
@@ -992,6 +1094,18 @@ def parent_child_results(child_id):
     })
 
 
+def _enrich_passport(child_id, data):
+    """Shaxsiy natija sahifasi uchun qo‘shimcha ma'lumot."""
+    year = request.args.get("year", type=int)
+    month = request.args.get("month", type=int)
+    data["calendar"] = get_reading_calendar(child_id, year, month)
+    data["books"] = get_shelf_books(child_id)
+    data["tests"] = get_test_stats(child_id)
+    data["strength"] = get_strength(child_id)
+    data["next_rank"] = get_next_rank(data.get("total_pages", 0))
+    return data
+
+
 @app.route("/api/parent/passport/<int(signed=True):child_id>", methods=["GET"])
 @require_auth
 def parent_child_passport(child_id):
@@ -999,7 +1113,7 @@ def parent_child_passport(child_id):
     data = get_child_passport_data(child_id)
     if not data:
         return jsonify({"error": "Farzand topilmadi"}), 404
-    return jsonify(data)
+    return jsonify(_enrich_passport(child_id, data))
 
 
 @app.route("/api/parent/coins/<int(signed=True):child_id>", methods=["POST"])
@@ -1163,12 +1277,12 @@ def child_home():
 @app.route("/api/child/passport", methods=["GET"])
 @require_auth
 def child_passport_self():
-    """📜 Shaxsiy Pasport — bolaning o‘zi o‘z diagnostikasini ko‘radi."""
+    """📜 Shaxsiy natija — taqvim, kitoblar, testlar va ko‘nikmalar."""
     child_id = _resolve_active_child(request)
     data = get_child_passport_data(child_id)
     if not data:
         return jsonify({"error": "Topilmadi"}), 404
-    return jsonify(data)
+    return jsonify(_enrich_passport(child_id, data))
 
 
 @app.route("/api/child/books", methods=["GET"])
@@ -1413,6 +1527,15 @@ def child_submit_test(book_id):
             cursor.execute("UPDATE Plan_Books SET is_completed = 1 WHERE book_id = ?", (book_id,))
         cursor.execute(
             "UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (earned, child_id)
+        )
+        # Test natijasi diagnostikaga yoziladi — ilgari Mini App'dagi testlar
+        # umuman qayd etilmasdi, faqat botdagilari yozilardi.
+        cursor.execute(
+            "INSERT INTO Diagnostic_Logs (child_id, book_id, type, factual_score, logic_score, "
+            "conclusion_score, created_at, correct_count, total_count) "
+            "VALUES (?, ?, 'test', ?, ?, ?, ?, ?, ?)",
+            (child_id, book_id, percent, percent, percent,
+             datetime.now().strftime("%Y-%m-%d %H:%M:%S"), correct, total)
         )
         conn.commit()
 
