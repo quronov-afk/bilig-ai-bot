@@ -2184,14 +2184,22 @@ def _apply_cache_rules(response):
     return response
 
 
+# Bezak va kod fayllari — ular topilmasa index.html qaytarish MUMKIN EMAS
+_ASSET_EXT = (".css", ".js", ".json", ".map", ".png", ".jpg", ".jpeg",
+              ".webp", ".svg", ".ico", ".woff", ".woff2", ".ttf")
+
+
 @app.route("/<path:path>")
 def serve_static(path):
-    # /api/... bo‘lmagan, lekin haqiqatda mavjud bo‘lmagan fayl so‘ralsa,
-    # SPA odatiga ko‘ra bosh sahifaga (index.html) qaytaramiz — shunda
-    # brauzer manzil satrida boshqa yo‘l bo‘lsa ham ilova ochiladi.
     full_path = os.path.join(WEBAPP_DIR, path)
     if os.path.isfile(full_path):
         return send_from_directory(WEBAPP_DIR, path)
+    # Bezak yoki kod fayli topilmasa — ochiq 404. Ilgari bu yerda ham
+    # index.html qaytarilardi: brauzer HTML ni CSS deb o‘qib, ilova
+    # butunlay bezaksiz ko‘rinardi va bu javob keshga ham tushib qolardi.
+    if path.lower().endswith(_ASSET_EXT):
+        return ("Topilmadi: " + path, 404)
+    # Qolgan yo‘llar uchun SPA odati: bosh sahifani ochamiz.
     return serve_index()
 
 

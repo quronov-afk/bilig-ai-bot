@@ -6,6 +6,44 @@
 const tg = window.Telegram ? window.Telegram.WebApp : null;
 if (tg) { tg.ready(); tg.expand(); }
 
+// ==========================================================
+// BEZAK YETIB KELDIMI — O‘ZINI TEKSHIRISH
+// ----------------------------------------------------------
+// Telefondagi Telegram ba'zan uslub faylini yuklay olmay qoladi
+// (tarmoq uzilishi yoki eski nusxa keshda qolib ketishi sabab).
+// Natijada ilova butunlay bezaksiz ochilardi: hamma ekran birdaniga
+// ko‘rinib, harflar katta-katta bo‘lib ketardi.
+// Endi ilova buni o‘zi sezadi va faylni yangi manzil bilan qayta so‘raydi.
+// ==========================================================
+function stylesheetLoaded() {
+  const sheets = document.styleSheets;
+  for (let i = 0; i < sheets.length; i++) {
+    const href = sheets[i].href || "";
+    if (href.indexOf("style.css") < 0) continue;
+    try {
+      // Fayl o‘rniga HTML kelgan bo‘lsa, qoidalar deyarli bo‘lmaydi
+      if (sheets[i].cssRules && sheets[i].cssRules.length > 20) return true;
+    } catch (e) {
+      return true;      // boshqa manbadan kelgan — o‘qib bo‘lmaydi, lekin yuklangan
+    }
+  }
+  return false;
+}
+
+function ensureStylesLoaded(attempt) {
+  attempt = attempt || 0;
+  if (stylesheetLoaded()) return;
+  if (attempt >= 2) return;                 // uch martadan ortiq urinmaymiz
+  const fresh = document.createElement("link");
+  fresh.rel = "stylesheet";
+  fresh.href = "style.css?v=" + ASSET_V + "&r=" + Date.now();
+  fresh.onload = function () { setTimeout(function () { ensureStylesLoaded(attempt + 1); }, 150); };
+  fresh.onerror = function () { setTimeout(function () { ensureStylesLoaded(attempt + 1); }, 500); };
+  document.head.appendChild(fresh);
+}
+
+window.addEventListener("load", function () { ensureStylesLoaded(0); });
+
 const State = {
   me: null,
   role: null,
@@ -120,7 +158,7 @@ let COVER_INDEX = null;
 
 // Muqovalar ro‘yxati o‘zgarganda shu raqamni oshiring — shunda telefon
 // eski nusxani emas, yangisini yuklaydi (index.html dagi ?v= bilan bir xil).
-const ASSET_V = "8";
+const ASSET_V = "9";
 
 function loadCoverIndex() {
   return fetch("/covers/index.json?v=" + ASSET_V)
