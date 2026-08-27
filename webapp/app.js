@@ -87,6 +87,8 @@ const ICON_PATHS = {
   "chevron-down": '<polyline points="6 9 12 15 18 9"/>',
   x: '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>',
   "arrow-right": '<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>',
+  check: '<polyline points="20 6 9 17 4 12"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/>',
 
   // --- Duotone: [ichki to‘ldirish, ustki chiziq] ---
   home: [
@@ -284,9 +286,13 @@ function avatarMarkup(avatarId, size) {
 // serverga 8-20 KB lik tayyor fayl boradi, disk deyarli band bo‘lmaydi.
 // ==========================================================
 const CROP_SHAPES = {
+  // maxBytes — serverdagi chegaradan bir oz past. Ilova rasmni shu hajmga
+  // TUSHGUNCHA o‘zi siqadi; foydalanuvchidan hech narsa talab qilinmaydi.
   avatar: { w: 264, h: 264, outW: 192, outH: 192, round: true,  quality: 0.72,
+            maxBytes: 38 * 1024,
             title: "Rasmni joyla", hint: "Yuzing doira ichida qolsin" },
   cover:  { w: 240, h: 360, outW: 320, outH: 480, round: false, quality: 0.70,
+            maxBytes: 76 * 1024,
             title: "Muqovani joyla", hint: "Kitob muqovasi ramka ichida qolsin" }
 };
 
@@ -377,9 +383,52 @@ function drawCrop() {
   c.ctx.drawImage(c.img, (c.cfg.w - w) / 2 + c.x, (c.cfg.h - h) / 2 + c.y, w, h);
 }
 
-function saveCrop() {
-  if (!Crop) return;
+// Canvas'ni belgilangan hajmga TUSHGUNCHA siqadi.
+// ----------------------------------------------------------
+// Ilgari faqat bitta urinish bor edi: WEBP, bitta sifat darajasi. Ammo
+// ba'zi telefonlar (ayniqsa eski iPhone) WEBP ni umuman yasay olmaydi —
+// brauzer jimgina PNG qaytaradi, u esa bir necha barobar og‘ir. Natijada
+// server «Rasm juda katta» deb rad etardi va aybdor foydalanuvchi bo‘lib
+// qolardi. Endi ilova o‘zi bir necha usulni ketma-ket sinab ko‘radi.
+function canvasToBlob(canvas, type, quality) {
+  return new Promise(function (res) { canvas.toBlob(res, type, quality); });
+}
+
+async function encodeUnderLimit(canvas, maxBytes, startQuality) {
+  const ladder = [
+    ["image/webp", startQuality], ["image/webp", 0.6], ["image/webp", 0.45],
+    ["image/jpeg", startQuality], ["image/jpeg", 0.6], ["image/jpeg", 0.45], ["image/jpeg", 0.32]
+  ];
+  let best = null;
+  for (let i = 0; i < ladder.length; i++) {
+    const blob = await canvasToBlob(canvas, ladder[i][0], ladder[i][1]);
+    if (!blob) continue;
+    // Brauzer so‘ralgan turni qo‘llamasa, o‘zi bilganini qaytaradi (odatda PNG).
+    // Bunday javobni o‘tkazib yuboramiz — keyingi usul sinaladi.
+    if (blob.type !== ladder[i][0]) { if (!best || blob.size < best.size) best = blob; continue; }
+    if (blob.size <= maxBytes) return blob;
+    if (!best || blob.size < best.size) best = blob;
+  }
+  // Sifatni pasaytirish yetmadi — o‘lchamni kichraytirib qayta urinamiz.
+  if (best && best.size > maxBytes && canvas.width > 96) {
+    const small = document.createElement("canvas");
+    small.width = Math.round(canvas.width * 0.75);
+    small.height = Math.round(canvas.height * 0.75);
+    const sx = small.getContext("2d");
+    sx.imageSmoothingQuality = "high";
+    sx.drawImage(canvas, 0, 0, small.width, small.height);
+    return encodeUnderLimit(small, maxBytes, startQuality);
+  }
+  return best;
+}
+
+async function saveCrop() {
+  if (!Crop || Crop.busy) return;
   const c = Crop, cfg = c.cfg;
+  c.busy = true;
+  const btn = document.querySelector('[data-action="crop-save"]');
+  if (btn) { btn.disabled = true; btn.textContent = "Tayyorlanmoqda…"; }
+
   const k = cfg.outW / cfg.w;                 // ekrandagi o‘lchamdan haqiqiy o‘lchamga
   const out = document.createElement("canvas");
   out.width = cfg.outW; out.height = cfg.outH;
@@ -389,12 +438,19 @@ function saveCrop() {
   const w = c.img.width * sc, h = c.img.height * sc;
   ox.drawImage(c.img, (cfg.outW - w) / 2 + c.x * k, (cfg.outH - h) / 2 + c.y * k, w, h);
 
-  const done = c.onSave;
-  out.toBlob(function (blob) {
-    if (!blob) { toast("Rasmni tayyorlab bo‘lmadi"); return; }
-    Crop = null;
-    done(blob);
-  }, "image/webp", cfg.quality);
+  let blob = null;
+  try {
+    blob = await encodeUnderLimit(out, cfg.maxBytes || 38 * 1024, cfg.quality);
+  } catch (e) { blob = null; }
+
+  // Tugma yana ishlasin: yuklash muvaffaqiyatsiz bo‘lsa, foydalanuvchi
+  // qayta bosa oladi. Ilgari bu yerda Crop = null qilinardi va oyna
+  // «o‘lik» holatga tushib qolardi — tugma bosilsa hech narsa bo‘lmasdi.
+  c.busy = false;
+  if (btn) { btn.disabled = false; btn.textContent = "Saqlash"; }
+
+  if (!blob) { toast("Rasmni tayyorlab bo‘lmadi. Boshqa rasm tanlang."); return; }
+  c.onSave(blob);
 }
 
 // Rasm tanlash oynasini ochadi va kesish oynasiga uzatadi
@@ -870,6 +926,7 @@ document.addEventListener("click", async function (e) {
       case "enter-bolaxona":
         State.activeChildId = Number(el.dataset.id);
         State.activeChildName = el.dataset.name;
+        closeModal();                 // kitob oynasidan kirilgan bo‘lsa ham yopiladi
         setupTabsForRole();
         break;
       case "exit-bolaxona":
@@ -937,7 +994,7 @@ document.addEventListener("click", async function (e) {
           b.classList.toggle("selected", b.dataset.avatar === editChildAvatar);
         });
         break;
-      case "crop-save": saveCrop(); break;
+      case "crop-save": await saveCrop(); break;
       case "crop-skip": {
         const skip = Crop && Crop.cfg && Crop.cfg.onSkip;
         Crop = null; closeModal();
@@ -1754,6 +1811,16 @@ async function renderChildPlans() {
 async function openBookModal(bookId) {
   const b = await api("/api/child/book/" + bookId + asChildQuery());
   const pct = b.total_pages ? Math.min(100, Math.round(b.pages_read / b.total_pages * 100)) : 0;
+  const head =
+    '<p class="section-sub" style="margin-top:-4px">' + escapeHtml(b.author || "") + '</p>' +
+    '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>' +
+    '<div class="progress-label">' + b.pages_read + (b.total_pages ? "/" + b.total_pages : "") + ' bet</div>';
+
+  // Ota-ona o‘z kabinetida turgan bo‘lsa, unga BOLANING tugmalari
+  // ko‘rsatilmaydi: sahifani rasmga olish, ovozli xulosa va testlar —
+  // bularni farzandning o‘zi bajaradi. Ota-ona esa kuzatadi va boshqaradi.
+  if (!isChildView()) { openParentBookModal(bookId, b, head); return; }
+
   let testsHtml;
   if (b.has_test && b.test_final_only) {
     // Test o‘qish davomida yig‘ilgan yozuvlardan tuzilgan. U kitobning
@@ -1779,9 +1846,7 @@ async function openBookModal(bookId) {
     testsHtml = '<p class="section-sub" style="margin-top:18px">Bu kitob uchun test hali tuzilmagan.</p>';
   }
   openModal(b.title,
-    '<p class="section-sub" style="margin-top:-4px">' + escapeHtml(b.author || "") + '</p>' +
-    '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>' +
-    '<div class="progress-label">' + b.pages_read + (b.total_pages ? "/" + b.total_pages : "") + ' bet</div>' +
+    head +
     '<p class="eyebrow" style="margin-top:18px">Qayergacha o‘qiding?</p>' +
     choiceCard({
       ic: "camera", action: "open-page-photo", data: { id: bookId }, tag: "Tez",
@@ -1800,6 +1865,72 @@ async function openBookModal(bookId) {
       desc: "Kitobni o‘z so‘zing bilan so‘zlab ber. AI Ustoz tinglaydi va maslahat beradi."
     }) +
     testsHtml
+  );
+}
+
+// ==========================================================
+// OTA-ONA KO‘RADIGAN KITOB OYNASI
+// ----------------------------------------------------------
+// Ota-onaning ishi boshqa: u o‘qimaydi, kuzatadi va tayyorlaydi.
+// Farzand nomidan biror amal qilish kerak bo‘lsa, Bolaxonaga o‘tadi.
+// ==========================================================
+function statusRow(label, done, doneText, pendingText) {
+  return '<div class="stat-line">' +
+    '<span class="sl-ic ' + (done ? "is-done" : "") + '">' + icon(done ? "check" : "clock", 15, 2.2) + '</span>' +
+    '<span class="sl-name">' + label + '</span>' +
+    '<span class="sl-val' + (done ? " is-done" : "") + '">' + (done ? doneText : pendingText) + '</span>' +
+    '</div>';
+}
+
+function openParentBookModal(bookId, b, head) {
+  const child = State.childrenCache.filter(function (c) { return c.id === State.selectedChildId; })[0];
+  const childName = child ? child.name : "Farzandingiz";
+
+  let testLines;
+  if (!b.has_test) {
+    testLines = statusRow("Bilim testi", false, "", "hali tuzilmagan");
+  } else if (b.test_final_only) {
+    testLines = statusRow("Yakuniy test", b.final_test_done, "topshirilgan", "kutilmoqda");
+  } else {
+    testLines =
+      statusRow("1-oraliq test", b.mid_test_1_done, "topshirilgan", "kutilmoqda") +
+      statusRow("2-oraliq test", b.mid_test_2_done, "topshirilgan", "kutilmoqda") +
+      statusRow("Yakuniy test", b.final_test_done, "topshirilgan", "kutilmoqda");
+  }
+
+  openModal(b.title,
+    head +
+    '<p class="eyebrow" style="margin-top:18px">' + escapeHtml(childName) + ' nima qildi</p>' +
+    '<div class="card" style="padding:12px 14px">' +
+      statusRow("O‘qigan sahifalar", b.pages_read > 0,
+                b.pages_read + " bet", "hali boshlamagan") +
+      statusRow("Ovozli xulosa", b.has_voice, "yuborgan", "yuborilmagan") +
+      testLines +
+    '</div>' +
+
+    '<p class="eyebrow" style="margin-top:18px">Siz nima qilishingiz mumkin</p>' +
+    (b.has_test
+      ? choiceCard({
+          ic: "help", tone: "soft", action: "open-generate-test", data: { id: bookId },
+          title: "Testni qaytadan tuzish",
+          desc: "Savollar mos kelmasa, kitob sahifalarini suratga olib yangisini tuzasiz."
+        })
+      : choiceCard({
+          ic: "help", action: "open-generate-test", data: { id: bookId }, tag: "Tavsiya",
+          title: "Test tuzish",
+          desc: "Kitobning 5-10 ta sahifasini suratga oling — AI savollarni o‘zi tuzadi."
+        })) +
+    choiceCard({
+      ic: "users", tone: "gold", action: "enter-bolaxona",
+      data: { id: State.selectedChildId, name: childName },
+      title: "Bolaxonaga kirish",
+      desc: escapeHtml(childName) + " nomidan sahifa belgilash yoki ovozli xulosa yuborish."
+    }) +
+    choiceCard({
+      ic: "trash", tone: "soft", action: "delete-book", data: { id: bookId },
+      title: "Kitobni o‘chirish",
+      desc: "Kitob rejadan olib tashlanadi. O‘qilgan sahifalar tarixi saqlanib qoladi."
+    })
   );
 }
 
