@@ -67,6 +67,9 @@ for _col_sql in (
     "ALTER TABLE Users ADD COLUMN badges_seen INTEGER DEFAULT 0",
     # Ota-onaga oxirgi marta 3 kunlik xulosa yuborilgan vaqt
     "ALTER TABLE Users ADD COLUMN last_summary_at TEXT",
+    # Ota-ona kitob muqovasini rasmga olsa — o‘sha rasm fayli nomi.
+    # Bo‘sh bo‘lsa, muqova katalogdan nomi bo‘yicha topiladi.
+    "ALTER TABLE Plan_Books ADD COLUMN cover_file TEXT",
 ):
     try:
         cursor.execute(_col_sql)
@@ -234,6 +237,93 @@ for _tbl_sql in (
         conn.commit()
     except Exception:
         pass
+
+# ------------------------------------------------------------
+# FOYDALANUVCHI YUKLAGAN RASMLAR (avatar va kitob muqovasi)
+# ------------------------------------------------------------
+# Rasm telefonning O‘ZIDA kichraytirilib, WebP formatiga o‘tkaziladi —
+# serverga tayyor, kichkina fayl keladi. Shuning uchun bu yerda rasm
+# bilan ishlaydigan kutubxona kerak emas.
+#
+# Disk: avatar ~8 KB, muqova ~20 KB. Ming bola + ming muqova = ~28 MB.
+# O‘smasligi uchun uch qoida: qat'iy hajm chegarasi, bir xil fayl ikki
+# marta saqlanmaydi (mazmuni bo‘yicha), eskisi ishlatilmasa o‘chiriladi.
+# ------------------------------------------------------------
+UPLOAD_DIR = "/var/data/uploads" if os.path.isdir("/var/data") else \
+    os.path.join(_HERE, "uploads")
+AVATAR_MAX_BYTES = 40 * 1024
+COVER_MAX_BYTES = 80 * 1024
+
+for _sub in ("av", "cv"):
+    try:
+        os.makedirs(os.path.join(UPLOAD_DIR, _sub), exist_ok=True)
+    except Exception as e:
+        print(f"[webapp_api] yuklamalar papkasini yaratib bo‘lmadi: {e}")
+
+
+def _image_kind(data: bytes):
+    """Rasm turini baytlaridan aniqlaydi. Rasm bo‘lmasa None."""
+    if data[:3] == b"\xff\xd8\xff":
+        return "jpg"
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        return "png"
+    if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+        return "webp"
+    return None
+
+
+def save_upload(sub: str, data: bytes, max_bytes: int):
+    """Rasmni diskka saqlaydi va fayl nomini qaytaradi.
+
+    Bir xil rasm ikki marta saqlanmaydi — nom mazmun yig‘indisidan olinadi.
+    Xato bo‘lsa (rasm emas yoki juda katta) — (None, sabab) qaytaradi.
+    """
+    if not data:
+        return None, "Rasm bo‘sh"
+    if len(data) > max_bytes:
+        return None, "Rasm juda katta (%d KB, chegara %d KB)" % (
+            len(data) // 1024, max_bytes // 1024)
+    kind = _image_kind(data)
+    if not kind:
+        return None, "Bu rasm emas"
+    name = hashlib.sha1(data).hexdigest()[:16] + "." + kind
+    path = os.path.join(UPLOAD_DIR, sub, name)
+    if not os.path.exists(path):
+        try:
+            with io.open(path, "wb") as fh:
+                fh.write(data)
+        except Exception as e:
+            return None, "Saqlab bo‘lmadi: %s" % e
+    return name, None
+
+
+def drop_upload_if_unused(sub: str, name: str, column: str, table: str = "Users"):
+    """Eski rasm boshqa hech kimda ishlatilmasa — o‘chiriladi."""
+    if not name:
+        return
+    try:
+        cursor.execute("SELECT COUNT(*) FROM %s WHERE %s = ?" % (table, column),
+                       ("up:" + name,))
+        if cursor.fetchone()[0] > 0:
+            return
+        path = os.path.join(UPLOAD_DIR, sub, name)
+        if os.path.isfile(path):
+            os.remove(path)
+    except Exception:
+        pass
+
+
+@app.route("/uploads/<path:path>")
+def serve_upload(path):
+    """Yuklangan rasmlar. Ular loyiha papkasidan tashqarida (doimiy diskda)."""
+    safe = os.path.normpath(path).replace("\\", "/").lstrip("/")
+    if safe.startswith("..") or "/../" in safe:
+        return ("Noto‘g‘ri yo‘l", 400)
+    full = os.path.join(UPLOAD_DIR, safe)
+    if not os.path.isfile(full):
+        return ("Topilmadi", 404)
+    return send_from_directory(UPLOAD_DIR, safe)
+
 
 # Bitta bola bir kunda nechta sahifa rasmini AI'ga tekshirtira oladi.
 # Chegaraga yetganda mutolaa TO‘XTAMAYDI — sahifa raqamini qo‘lda kiritish
@@ -638,7 +728,7 @@ def get_shelf_books(child_id: int, parent_id: int = None):
     Javon — bu kolleksiya: bola nima yig‘ganini ko‘rsin. Avval hozir
     o‘qilayotganlari (eng ko‘p o‘qilgani birinchi), keyin tugatilganlari.
     """
-    q = ("SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages, pb.is_completed "
+    q = ("SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages, pb.is_completed, pb.cover_file "
          "FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
          "WHERE rp.child_id = ?")
     params = [child_id]
@@ -649,7 +739,7 @@ def get_shelf_books(child_id: int, parent_id: int = None):
     cursor.execute(q, params)
     return [
         {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3],
-         "total_pages": b[4], "completed": bool(b[5])}
+         "total_pages": b[4], "completed": bool(b[5]), "cover_file": b[6]}
         for b in cursor.fetchall()
     ]
 
@@ -668,7 +758,7 @@ def get_next_rank(total_pages: int):
 
 def get_current_book(child_id: int, parent_id: int = None):
     """Bolaning hozir o‘qiyotgan (tugallanmagan, eng ko‘p sahifasi o‘qilgan) kitobini topadi."""
-    q = ("SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages FROM Plan_Books pb "
+    q = ("SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages, pb.cover_file FROM Plan_Books pb "
          "JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
          "WHERE rp.child_id = ? AND pb.is_completed = 0")
     params = [child_id]
@@ -680,7 +770,8 @@ def get_current_book(child_id: int, parent_id: int = None):
     row = cursor.fetchone()
     if not row:
         return None
-    return {"id": row[0], "title": row[1], "author": row[2], "pages_read": row[3], "total_pages": row[4]}
+    return {"id": row[0], "title": row[1], "author": row[2], "pages_read": row[3],
+            "total_pages": row[4], "cover_file": row[5]}
 
 
 def get_latest_child_note(child_id: int):
@@ -916,13 +1007,14 @@ def parent_home(child_id):
     completed_books = cursor.fetchone()[0]
 
     cursor.execute(
-        "SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages FROM Plan_Books pb "
+        "SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages, pb.cover_file FROM Plan_Books pb "
         "JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
         "WHERE rp.parent_id = ? AND rp.child_id = ? AND pb.is_completed = 0 ORDER BY pb.pages_read DESC",
         (g.user_id, child_id)
     )
     active_books = [
-        {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3], "total_pages": b[4]}
+        {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3],
+         "total_pages": b[4], "cover_file": b[5]}
         for b in cursor.fetchall()
     ]
 
@@ -1197,14 +1289,15 @@ def parent_plans():
     for plan_id, name, prize, status, cid, plan_type in cursor.fetchall():
         cursor.execute(
             "SELECT book_id, title, author, pages_read, total_pages, is_completed, "
-            "mid_test_1_done, mid_test_2_done, final_test_done FROM Plan_Books WHERE plan_id = ?",
+            "mid_test_1_done, mid_test_2_done, final_test_done, cover_file "
+            "FROM Plan_Books WHERE plan_id = ?",
             (plan_id,)
         )
         books = [
             {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3],
              "total_pages": b[4], "completed": bool(b[5]), "mid_test_1_done": bool(b[6]),
              "mid_test_2_done": bool(b[7]), "final_test_done": bool(b[8]),
-             "has_voice": has_voice_report(cid, b[0])}
+             "cover_file": b[9], "has_voice": has_voice_report(cid, b[0])}
             for b in cursor.fetchall()
         ]
         plans.append({
@@ -1523,13 +1616,14 @@ def child_home():
 
     # Rejadagi kitoblar (bosh sahifada 3 tasi ko‘rsatiladi)
     cursor.execute(
-        "SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages FROM Plan_Books pb "
+        "SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages, pb.cover_file FROM Plan_Books pb "
         "JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
         "WHERE rp.child_id = ? AND pb.is_completed = 0 ORDER BY pb.pages_read DESC",
         (child_id,)
     )
     active_books = [
-        {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3], "total_pages": b[4]}
+        {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3],
+         "total_pages": b[4], "cover_file": b[5]}
         for b in cursor.fetchall()
     ]
 
@@ -1557,6 +1651,83 @@ def child_home():
         "child_note": get_latest_child_note(child_id),
         "unseen_badges": unseen_badges(child_id)
     })
+
+
+@app.route("/api/upload/avatar", methods=["POST"])
+@require_auth
+def upload_avatar():
+    """Foydalanuvchi o‘z rasmini avatar qilib qo‘yadi.
+
+    Rasm telefonda 192x192 ga kichraytirilib, WebP ga o‘tkazilgan bo‘ladi.
+    Ota-ona farzandi uchun ham yuklashi mumkin — `child_id` bilan.
+    """
+    if "photo" not in request.files:
+        return jsonify({"error": "Rasm topilmadi"}), 400
+    data = request.files["photo"].read()
+
+    target = g.user_id
+    raw_child = request.args.get("child_id") or (request.form.get("child_id"))
+    if raw_child:
+        try:
+            cid = int(raw_child)
+        except ValueError:
+            return jsonify({"error": "Farzand tanlanmagan"}), 400
+        cursor.execute("SELECT 1 FROM Family_Link WHERE parent_id = ? AND child_id = ?",
+                       (g.user_id, cid))
+        if not cursor.fetchone():
+            return jsonify({"error": "Bu farzand sizniki emas"}), 403
+        target = cid
+
+    name, err = save_upload("av", data, AVATAR_MAX_BYTES)
+    if err:
+        return jsonify({"error": err}), 400
+
+    cursor.execute("SELECT avatar_id FROM Users WHERE user_id = ?", (target,))
+    row = cursor.fetchone()
+    old = row[0] if row else ""
+
+    with db_lock:
+        cursor.execute("UPDATE Users SET avatar_id = ? WHERE user_id = ?",
+                       ("up:" + name, target))
+        conn.commit()
+
+    # Eskisi endi hech kimda ishlatilmasa — diskdan o‘chiriladi
+    if old and old.startswith("up:") and old != "up:" + name:
+        drop_upload_if_unused("av", old[3:], "avatar_id")
+
+    return jsonify({"ok": True, "avatar_id": "up:" + name})
+
+
+@app.route("/api/parent/books/<int:book_id>/cover", methods=["POST"])
+@require_auth
+def upload_book_cover(book_id):
+    """Kitob muqovasi rasmi. Faqat shu oilaga ko‘rinadi."""
+    if "photo" not in request.files:
+        return jsonify({"error": "Rasm topilmadi"}), 400
+    cursor.execute(
+        "SELECT 1 FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+        "WHERE pb.book_id = ? AND rp.parent_id = ?", (book_id, g.user_id))
+    if not cursor.fetchone():
+        return jsonify({"error": "Bu kitob sizniki emas"}), 403
+
+    data = request.files["photo"].read()
+    name, err = save_upload("cv", data, COVER_MAX_BYTES)
+    if err:
+        return jsonify({"error": err}), 400
+
+    cursor.execute("SELECT cover_file FROM Plan_Books WHERE book_id = ?", (book_id,))
+    row = cursor.fetchone()
+    old = row[0] if row else ""
+
+    with db_lock:
+        cursor.execute("UPDATE Plan_Books SET cover_file = ? WHERE book_id = ?",
+                       ("up:" + name, book_id))
+        conn.commit()
+
+    if old and old.startswith("up:") and old != "up:" + name:
+        drop_upload_if_unused("cv", old[3:], "cover_file", "Plan_Books")
+
+    return jsonify({"ok": True, "cover_file": "up:" + name})
 
 
 @app.route("/api/child/badges/seen", methods=["POST"])
@@ -1598,14 +1769,15 @@ def child_books():
     for plan_id, name, prize in cursor.fetchall():
         cursor.execute(
             "SELECT book_id, title, author, pages_read, total_pages, is_completed, "
-            "mid_test_1_done, mid_test_2_done, final_test_done FROM Plan_Books WHERE plan_id = ?",
+            "mid_test_1_done, mid_test_2_done, final_test_done, cover_file "
+            "FROM Plan_Books WHERE plan_id = ?",
             (plan_id,)
         )
         books = [
             {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3],
              "total_pages": b[4], "completed": bool(b[5]), "mid_test_1_done": bool(b[6]),
              "mid_test_2_done": bool(b[7]), "final_test_done": bool(b[8]),
-             "has_voice": has_voice_report(child_id, b[0])}
+             "cover_file": b[9], "has_voice": has_voice_report(child_id, b[0])}
             for b in cursor.fetchall()
         ]
         if books:
@@ -2166,7 +2338,7 @@ def _no_cache(response):
 
 
 # Muqova, nishon va maskot rasmlari o‘zgarmaydi — ular uzoq saqlanaveradi
-_LONG_CACHE_DIRS = ("/covers/", "/badges/", "/mascots/", "/fonts/")
+_LONG_CACHE_DIRS = ("/covers/", "/badges/", "/mascots/", "/fonts/", "/uploads/")
 
 
 @app.after_request

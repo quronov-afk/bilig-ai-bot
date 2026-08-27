@@ -1018,3 +1018,39 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
 .welc .t b { display: block; font-size: 17.5px; line-height: 1.25; }
 .welc .t span { display: block; font-size: 14.5px; color: var(--text-soft); margin-top: 4px; line-height: 1.4; }
 .welc .go { font-size: 14.5px; font-weight: 800; color: var(--brand-deep); margin-top: 7px; display: block; }
+
+/* ==========================================================
+   RASMNI KESISH OYNASI (avatar va kitob muqovasi)
+   ========================================================== */
+.crop-stage {
+  position: relative; margin: 4px auto 14px; border-radius: var(--radius-md);
+  overflow: hidden; background: var(--surface-soft); touch-action: none;
+  box-shadow: var(--shadow-sm);
+}
+.crop-stage canvas { display: block; cursor: grab; }
+.crop-stage canvas:active { cursor: grabbing; }
+.crop-mask {
+  position: absolute; inset: 0; pointer-events: none;
+  box-shadow: 0 0 0 2px rgba(255,255,255,.9) inset;
+  border-radius: var(--radius-md);
+}
+/* Doiraviy ramka — atrofi xiralashadi, o‘rtasi ochiq qoladi */
+.crop-mask.is-round {
+  box-shadow: 0 0 0 9999px rgba(15,23,42,.42);
+  border-radius: 50%;
+  inset: 6px;
+}
+.crop-zoom { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.crop-zoom input[type="range"] { flex: 1; accent-color: var(--brand); }
+.crop-zoom-lbl { font-size: 12px; font-weight: 700; color: var(--text-faint); }
+
+/* Foydalanuvchi qo‘ygan avatar rasmi */
+.avatar-photo { border-radius: 50%; object-fit: cover; display: block; }
+
+/* «Rasm qo‘shish» kartochkasi */
+.avatar-add {
+  width: 54px; height: 54px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--brand-bg); color: var(--brand-deep);
+  border: 2px dashed var(--brand); box-sizing: border-box;
+}

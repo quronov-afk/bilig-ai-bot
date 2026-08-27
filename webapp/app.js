@@ -158,7 +158,7 @@ let COVER_INDEX = null;
 
 // Muqovalar ro‘yxati o‘zgarganda shu raqamni oshiring — shunda telefon
 // eski nusxani emas, yangisini yuklaydi (index.html dagi ?v= bilan bir xil).
-const ASSET_V = "10";
+const ASSET_V = "11";
 
 function loadCoverIndex() {
   return fetch("/covers/index.json?v=" + ASSET_V)
@@ -199,7 +199,12 @@ function coverFile(title, author) {
 }
 
 // Muqova rasmi; topilmasa — nomning birinchi harfi rangli fonda.
-function coverHtml(title, author, cls) {
+function coverHtml(title, author, cls, custom) {
+  // Ota-ona muqovani o‘zi rasmga olgan bo‘lsa — o‘shani ko‘rsatamiz.
+  if (custom && custom.indexOf("up:") === 0) {
+    return '<div class="' + cls + '"><img src="/uploads/cv/' + custom.slice(3) +
+      '" alt="" loading="lazy"></div>';
+  }
   const file = coverFile(title, author);
   if (file) {
     return '<div class="' + cls + '"><img src="/covers/' + file + '?v=' + ASSET_V + '" alt="" loading="lazy"></div>';
@@ -237,8 +242,154 @@ const AVATARS = {
 const AVATAR_ORDER = ["fox", "bear", "penguin", "rabbit", "cat", "owl", "panda", "lion", "elephant", "dog"];
 
 function avatarMarkup(avatarId, size) {
+  // Foydalanuvchi o‘z rasmini qo‘ygan bo‘lsa — o‘shani ko‘rsatamiz.
+  if (avatarId && avatarId.indexOf("up:") === 0) {
+    return '<img class="avatar-photo" src="/uploads/av/' + avatarId.slice(3) +
+      '" width="' + size + '" height="' + size + '" alt="">';
+  }
   const a = AVATARS[avatarId] || AVATARS.fox;
   return '<svg width="' + size + '" height="' + size + '" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="' + a.bg + '"/>' + a.inner + '</svg>';
+}
+
+
+// ==========================================================
+// RASMNI KESISH OYNASI
+// ----------------------------------------------------------
+// Foydalanuvchi rasmni surib va kattalashtirib joylashtiradi.
+// Natija telefonning O‘ZIDA kichraytirilib WebP ga o‘tkaziladi —
+// serverga 8-20 KB lik tayyor fayl boradi, disk deyarli band bo‘lmaydi.
+// ==========================================================
+const CROP_SHAPES = {
+  avatar: { w: 264, h: 264, outW: 192, outH: 192, round: true,  quality: 0.72,
+            title: "Rasmni joyla", hint: "Yuzing doira ichida qolsin" },
+  cover:  { w: 240, h: 360, outW: 320, outH: 480, round: false, quality: 0.70,
+            title: "Muqovani joyla", hint: "Kitob muqovasi ramka ichida qolsin" }
+};
+
+let Crop = null;
+
+function openCropper(file, shapeName, onSave, opts) {
+  const cfg = Object.assign({}, CROP_SHAPES[shapeName] || CROP_SHAPES.avatar, opts || {});
+  const reader = new FileReader();
+  reader.onload = function (e) {
+    const img = new Image();
+    img.onload = function () { startCropper(img, cfg, onSave); };
+    img.onerror = function () { toast("Rasmni ocholmadim"); };
+    img.src = e.target.result;
+  };
+  reader.onerror = function () { toast("Faylni o‘qib bo‘lmadi"); };
+  reader.readAsDataURL(file);
+}
+
+function startCropper(img, cfg, onSave) {
+  cfg = Object.assign({}, cfg);
+  openModal(cfg.title,
+    '<p class="section-sub">' + cfg.hint + '</p>' +
+    '<div class="crop-stage" style="width:' + cfg.w + 'px;height:' + cfg.h + 'px">' +
+      '<canvas id="crop-cv" width="' + cfg.w + '" height="' + cfg.h + '"></canvas>' +
+      '<div class="crop-mask' + (cfg.round ? " is-round" : "") + '"></div>' +
+    '</div>' +
+    '<div class="crop-zoom">' +
+      '<span class="crop-zoom-lbl">kichik</span>' +
+      '<input id="crop-zoom" type="range" min="100" max="300" value="100">' +
+      '<span class="crop-zoom-lbl">katta</span>' +
+    '</div>' +
+    '<button class="btn btn-primary btn-block" data-action="crop-save">Saqlash</button>' +
+    (cfg.skip ? '<button class="btn btn-block" data-action="crop-skip" style="margin-top:8px">Keyinroq</button>' : "")
+  );
+
+  const cv = document.getElementById("crop-cv");
+  const fit = Math.max(cfg.w / img.width, cfg.h / img.height);
+  Crop = { img: img, cfg: cfg, cv: cv, ctx: cv.getContext("2d"),
+           fit: fit, zoom: 1, x: 0, y: 0, onSave: onSave };
+  clampCrop();
+  drawCrop();
+
+  const zoomEl = document.getElementById("crop-zoom");
+  zoomEl.oninput = function () {
+    Crop.zoom = Number(this.value) / 100;
+    clampCrop(); drawCrop();
+  };
+
+  // Surish — sichqoncha ham, barmoq ham
+  let dragging = false, lastX = 0, lastY = 0;
+  function down(e) {
+    dragging = true;
+    const t = e.touches ? e.touches[0] : e;
+    lastX = t.clientX; lastY = t.clientY;
+  }
+  function move(e) {
+    if (!dragging) return;
+    const t = e.touches ? e.touches[0] : e;
+    Crop.x += t.clientX - lastX;
+    Crop.y += t.clientY - lastY;
+    lastX = t.clientX; lastY = t.clientY;
+    clampCrop(); drawCrop();
+    e.preventDefault();
+  }
+  function up() { dragging = false; }
+  cv.addEventListener("mousedown", down);
+  cv.addEventListener("touchstart", down, { passive: true });
+  window.addEventListener("mousemove", move);
+  cv.addEventListener("touchmove", move, { passive: false });
+  window.addEventListener("mouseup", up);
+  cv.addEventListener("touchend", up);
+}
+
+// Rasm ramkadan kichik bo‘lib, chetida bo‘shliq qolmasin
+function clampCrop() {
+  const c = Crop, sc = c.fit * c.zoom;
+  const w = c.img.width * sc, h = c.img.height * sc;
+  const maxX = Math.max(0, (w - c.cfg.w) / 2);
+  const maxY = Math.max(0, (h - c.cfg.h) / 2);
+  c.x = Math.max(-maxX, Math.min(maxX, c.x));
+  c.y = Math.max(-maxY, Math.min(maxY, c.y));
+}
+
+function drawCrop() {
+  const c = Crop, sc = c.fit * c.zoom;
+  const w = c.img.width * sc, h = c.img.height * sc;
+  c.ctx.clearRect(0, 0, c.cfg.w, c.cfg.h);
+  c.ctx.drawImage(c.img, (c.cfg.w - w) / 2 + c.x, (c.cfg.h - h) / 2 + c.y, w, h);
+}
+
+function saveCrop() {
+  if (!Crop) return;
+  const c = Crop, cfg = c.cfg;
+  const k = cfg.outW / cfg.w;                 // ekrandagi o‘lchamdan haqiqiy o‘lchamga
+  const out = document.createElement("canvas");
+  out.width = cfg.outW; out.height = cfg.outH;
+  const ox = out.getContext("2d");
+  ox.imageSmoothingQuality = "high";
+  const sc = c.fit * c.zoom * k;
+  const w = c.img.width * sc, h = c.img.height * sc;
+  ox.drawImage(c.img, (cfg.outW - w) / 2 + c.x * k, (cfg.outH - h) / 2 + c.y * k, w, h);
+
+  const done = c.onSave;
+  out.toBlob(function (blob) {
+    if (!blob) { toast("Rasmni tayyorlab bo‘lmadi"); return; }
+    Crop = null;
+    done(blob);
+  }, "image/webp", cfg.quality);
+}
+
+// Rasm tanlash oynasini ochadi va kesish oynasiga uzatadi
+async function uploadAvatarBlob(blob, childId) {
+  const fd = new FormData();
+  fd.append("photo", blob, "avatar.webp");
+  const q = childId ? ("?child_id=" + childId) : "";
+  return api("/api/upload/avatar" + q, { method: "POST", body: fd });
+}
+
+function pickImage(shapeName, onSave, opts) {
+  const inp = document.createElement("input");
+  inp.type = "file";
+  inp.accept = "image/*";
+  inp.onchange = function () {
+    if (!inp.files || !inp.files.length) return;
+    openCropper(inp.files[0], shapeName, onSave, opts);
+  };
+  inp.click();
 }
 
 function icon(name, size, strokeWidth) {
@@ -461,20 +612,46 @@ document.getElementById("link-code-submit").addEventListener("click", async func
 
 // ---------------- Bola profili: avatar + ism + yosh ----------------
 let selectedProfileAvatar = "fox";
-function initAvatarGrid() {
-  selectedProfileAvatar = "fox";
+
+// «Mening rasmim» kartochkasi — hamma avatar ro‘yxatining oxirida turadi
+function uploadTileHtml(current) {
+  const mine = current && current.indexOf("up:") === 0;
+  return '<button class="avatar-option' + (mine ? " selected" : "") + '" data-avatar="__upload" data-action="pick-edit-avatar">' +
+    '<span class="avatar-circle">' +
+      (mine ? avatarMarkup(current, 54)
+            : '<span class="avatar-add">' + icon("plus", 22, 2.2) + '</span>') +
+    '</span><span>' + (mine ? "Mening rasmim" : "Rasm qo‘shish") + '</span></button>';
+}
+
+function paintAvatarGrid() {
   const grid = document.getElementById("avatar-grid");
+  if (!grid) return;
   grid.innerHTML = AVATAR_ORDER.map(function (id) {
     const a = AVATARS[id];
     return '<button class="avatar-option' + (id === selectedProfileAvatar ? " selected" : "") + '" data-avatar="' + id + '">' +
       '<span class="avatar-circle">' + avatarMarkup(id, 54) + '</span><span>' + a.label + '</span></button>';
-  }).join("");
-  grid.querySelectorAll(".avatar-option").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      selectedProfileAvatar = btn.dataset.avatar;
-      grid.querySelectorAll(".avatar-option").forEach(function (b) { b.classList.toggle("selected", b === btn); });
-      haptic();
-    });
+  }).join("") + uploadTileHtml(selectedProfileAvatar);
+}
+function initAvatarGrid() {
+  selectedProfileAvatar = "fox";
+  const grid = document.getElementById("avatar-grid");
+  paintAvatarGrid();
+  grid.addEventListener("click", async function (e) {
+    const btn = e.target.closest(".avatar-option");
+    if (!btn) return;
+    haptic();
+    if (btn.dataset.avatar === "__upload") {
+      pickImage("avatar", async function (blob) {
+        try {
+          const res = await uploadAvatarBlob(blob, null);
+          selectedProfileAvatar = res.avatar_id;
+          closeModal(); paintAvatarGrid();
+        } catch (err) { toast(err.error || "Rasmni saqlab bo‘lmadi"); }
+      });
+      return;
+    }
+    selectedProfileAvatar = btn.dataset.avatar;
+    paintAvatarGrid();
   });
 }
 document.getElementById("profile-submit").addEventListener("click", async function () {
@@ -712,11 +889,32 @@ document.addEventListener("click", async function (e) {
 
       case "edit-child": openEditChildModal(el.dataset.id, el.dataset.name, el.dataset.age, el.dataset.avatar); break;
       case "pick-edit-avatar":
+        if (el.dataset.avatar === "__upload") {
+          if (document.getElementById("avatar-grid")) break;   // bola profili o‘zi hal qiladi
+          pickImage("avatar", async function (blob) {
+            try {
+              const res = await uploadAvatarBlob(blob, editChildId);
+              editChildAvatar = res.avatar_id;
+              closeModal();
+              toast("Rasm saqlandi");
+              await refreshHeader();
+              renderParentHome();
+            } catch (err) { toast(err.error || "Rasmni saqlab bo‘lmadi"); }
+          });
+          break;
+        }
         editChildAvatar = el.dataset.avatar;
         document.querySelectorAll("#edit-avatar-grid .avatar-option").forEach(function (b) {
           b.classList.toggle("selected", b.dataset.avatar === editChildAvatar);
         });
         break;
+      case "crop-save": saveCrop(); break;
+      case "crop-skip": {
+        const skip = Crop && Crop.cfg && Crop.cfg.onSkip;
+        Crop = null; closeModal();
+        if (skip) skip();
+        break;
+      }
       case "submit-edit-child": await submitEditChild(el.dataset.id); break;
 
       case "open-contact": openContactModal(); break;
@@ -871,7 +1069,7 @@ function shelfHtml(books, emptyText) {
     const pr = bookProgress(b);
     const done = !!b.completed;
     return '<article class="shelf-card' + (done ? " is-done" : "") + '" data-action="go-book" data-id="' + b.id + '">' +
-      '<span class="shelf-wrap">' + coverHtml(b.title, b.author, "shelf-cover") +
+      '<span class="shelf-wrap">' + coverHtml(b.title, b.author, "shelf-cover", b.cover_file) +
       (done ? '<span class="shelf-check">' + icon("check-circle", 17, 2.2) + '</span>' : "") +
       '</span>' +
       '<p class="shelf-title">' + escapeHtml(b.title) + '</p>' +
@@ -965,7 +1163,7 @@ function nowReadingCard(b) {
   const pr = bookProgress(b);
   return '<div class="now-card" data-action="go-book" data-id="' + b.id + '">' +
     '<div class="now-top">' +
-    coverHtml(b.title, b.author, "now-cover") +
+    coverHtml(b.title, b.author, "now-cover", b.cover_file) +
     '<div class="now-info">' +
     '<p class="now-title">' + escapeHtml(b.title) + '</p>' +
     '<p class="now-author">' + escapeHtml(b.author || "") + '</p>' +
@@ -982,7 +1180,7 @@ function bookCardOrEmpty(b, emptyText) {
   if (!b) return '<div class="card"><p class="section-sub" style="margin:0">' + emptyText + '</p></div>';
   const pr = bookProgress(b);
   return '<div class="card book-card" data-action="go-book" data-id="' + b.id + '" style="cursor:pointer">' +
-    coverHtml(b.title, b.author, "book-cover") +
+    coverHtml(b.title, b.author, "book-cover", b.cover_file) +
     '<div class="book-info">' +
     '<p class="book-title">' + escapeHtml(b.title) + '</p>' +
     '<p class="book-author">' + escapeHtml(b.author || "") + '</p>' +
@@ -1062,7 +1260,7 @@ async function renderChildHome() {
     html += '<article class="reading-card" data-action="open-book" data-id="' + b.id + '">' +
       '<p class="rc-eyebrow">O‘qishda davom eting</p>' +
       '<div class="rc-top">' +
-      coverHtml(b.title, b.author, "rc-cover") +
+      coverHtml(b.title, b.author, "rc-cover", b.cover_file) +
       '<div class="rc-info">' +
       '<p class="rc-title">' + escapeHtml(b.title) + '</p>' +
       '<p class="rc-author">' + escapeHtml(b.author || "") + '</p>' +
@@ -1274,7 +1472,7 @@ function bookCardHtml(b, isParent) {
       '</div>';
   }
   return '<div class="card book-card" id="book-card-' + b.id + '" ' + (isParent ? "" : 'data-action="open-book" data-id="' + b.id + '"') + '>' +
-    coverHtml(b.title, b.author, "book-cover") +
+    coverHtml(b.title, b.author, "book-cover", b.cover_file) +
     '<div class="book-info">' +
     '<p class="book-title">' + escapeHtml(b.title) + '</p>' +
     '<p class="book-author">' + escapeHtml(b.author || "") + '</p>' +
@@ -2127,14 +2325,15 @@ async function adjustCoins(childId, delta) {
   toast(delta > 0 ? "Bilig qo‘shildi" : "Bilig ayirildi");
   renderParentHome();
 }
-let editChildAvatar = "fox";
+let editChildAvatar = "fox", editChildId = null;
 function openEditChildModal(id, name, age, avatarId) {
   editChildAvatar = avatarId || "fox";
+  editChildId = id;
   const avatarsHtml = AVATAR_ORDER.map(function (aid) {
     const a = AVATARS[aid];
     return '<button class="avatar-option' + (aid === editChildAvatar ? " selected" : "") + '" data-action="pick-edit-avatar" data-avatar="' + aid + '">' +
       '<span class="avatar-circle">' + avatarMarkup(aid, 54) + '</span><span>' + a.label + '</span></button>';
-  }).join("");
+  }).join("") + uploadTileHtml(editChildAvatar);
   openModal("Farzand ma'lumotlarini tahrirlash",
     '<div class="avatar-grid" id="edit-avatar-grid" style="padding:0 0 8px">' + avatarsHtml + '</div>' +
     '<label class="field-label">Ismi</label>' +
@@ -2259,6 +2458,7 @@ const Wizard = {
       zone.onclick = function () { input.click(); };
       input.onchange = async function () {
         if (!input.files.length) return;
+        self.coverPhotoFile = input.files[0];      // muqova qilib qo‘yish uchun saqlaymiz
         zone.innerHTML = '<div class="spinner"></div>Rasm tayyorlanmoqda…';
         const prepared = await prepareImage(input.files[0], "cover");
         zone.innerHTML = '<div class="spinner"></div>Muqova o‘qilmoqda…';
@@ -2299,6 +2499,26 @@ const Wizard = {
       body: { title: title, author: author, total_pages: pages }
     });
     toast('"' + res.title + '" qo‘shildi');
+
+    // Katalogda bu kitobning muqovasi bo‘lmasa — ota-ona olgan rasmni
+    // muqova qilib qo‘yishni taklif qilamiz. Bo‘lsa, ortiqcha so‘ramaymiz.
+    const self = this;
+    if (this.coverPhotoFile && !coverFile(title, author) && !res.cover_file) {
+      const photo = this.coverPhotoFile;
+      this.coverPhotoFile = null;
+      openCropper(photo, "cover", async function (blob) {
+        const fd = new FormData();
+        fd.append("photo", blob, "cover.webp");
+        try {
+          await api("/api/parent/books/" + res.book_id + "/cover", { method: "POST", body: fd });
+          toast("Muqova saqlandi");
+        } catch (e) { toast(e.error || "Muqovani saqlab bo‘lmadi"); }
+        closeModal();
+        self.afterBookAdded();
+      }, { skip: true, onSkip: function () { self.afterBookAdded(); } });
+      return;
+    }
+    this.coverPhotoFile = null;
     this.afterBookAdded();
   },
   addRecBook: async function (idx) {

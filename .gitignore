@@ -13,3 +13,6 @@ venv/
 
 # Muhit sozlamalari (maxfiy kalitlar)
 .env
+
+# Foydalanuvchi yuklagan rasmlar (serverda doimiy diskda turadi)
+uploads/
