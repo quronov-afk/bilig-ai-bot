@@ -16,6 +16,24 @@ if GEMINI_API_KEY:
 
 
 # ==========================================================
+# NOSOZLIK JURNALI
+# ----------------------------------------------------------
+# Xatolar Render jurnaliga yoziladi, lekin uni faqat loyiha egasi
+# ko‘ra oladi. Shuning uchun so‘nggi yozuvlar shu yerda ham saqlanadi
+# va himoyalangan manzil orqali o‘qiladi. Bu ma'lumot faqat texnik:
+# format, hajm, xato matni. Bolalarning ismi yoki matnlari yozilmaydi.
+# ==========================================================
+from collections import deque
+LOG_RING = deque(maxlen=400)
+
+
+def log_line(msg):
+    line = datetime.now().strftime("%m-%d %H:%M:%S") + "  " + str(msg)
+    LOG_RING.append(line)
+    print(line, flush=True)
+
+
+# ==========================================================
 # AI SARFINI O‘LCHASH
 # ==========================================================
 # Har bir chaqiruvdan keyin sarflangan token soni bazaga yoziladi.
@@ -92,7 +110,7 @@ def _text_or_reason(task, response):
         pass
 
     up = (reason + " " + blocked).upper()
-    print("[ai] BO‘SH JAVOB [%s] finish_reason=%r block_reason=%r" % (task, reason, blocked), flush=True)
+    log_line("[ai] BO‘SH JAVOB [%s] finish_reason=%r block_reason=%r" % (task, reason, blocked))
     if "MAX_TOKEN" in up:
         raise AiEmptyResponse(
             "AI javobi juda uzun bo‘lib ketdi va oxirigacha yetmadi. "
@@ -157,10 +175,10 @@ async def _ask(task: str, contents, json_mode=False, max_tokens=None, fast=False
             # rejimda qayta urinamiz. Bir marta ishlamasa, boshqa urinilmaydi.
             if use_fast and not isinstance(e, AiEmptyResponse):
                 _thinking_off_supported = False
-                print(f"[ai] tejash rejimi bu modelga to‘g‘ri kelmadi, oddiy rejimga o‘tildi ({task}): {e}", flush=True)
+                log_line(f"[ai] tejash rejimi bu modelga to‘g‘ri kelmadi, oddiy rejimga o‘tildi ({task}): {e}")
                 tries -= 1
                 continue
-            print(f"XATOLIK [{task} - Urinish {tries}]: {e}", flush=True)
+            log_line(f"[ai] XATO [{task} - urinish {tries}]: {e}")
             if tries >= attempts:
                 raise
             await asyncio.sleep(1)

@@ -545,8 +545,8 @@ def _maybe_build_test_from_notes(book_id):
                 # boshqa oilalar ham chala testni olib qoladi.
                 if len(notes) >= AUTO_TEST_BANK_MIN:
                     _save_test_to_bank(title, author, raw_json, from_notes=1)
-                print("[auto_test] «%s» uchun %d ta savol tuzildi (%d ta sahifa yozuvidan)"
-                      % (title, len(questions), len(notes)), flush=True)
+                ai_service.log_line("[auto_test] «%s» uchun %d ta savol tuzildi (%d ta yozuvdan)"
+                                    % (title, len(questions), len(notes)))
             except Exception:
                 traceback.print_exc()
 
@@ -1655,7 +1655,7 @@ def _start_test_job(book_id, title, author, photos_bytes):
             # holini foydalanuvchiga ham ko‘rsatamiz. Aks holda nima
             # bo‘lganini na ega, na biz bilamiz.
             traceback.print_exc()
-            print("[test_job] XATO kitob=%s: %r" % (book_id, e), flush=True)
+            ai_service.log_line("[test_job] XATO kitob=%s: %r" % (book_id, e))
             _set_test_job(job_id, status="xato", error=str(e)[:300] or e.__class__.__name__)
 
     threading.Thread(target=worker, daemon=True).start()
@@ -2197,8 +2197,8 @@ def child_submit_voice(book_id):
     # o‘girish ishladimi, server baytlardan qanday format ko‘ryapti.
     kind = ai_service.audio_kind(audio_bytes)
     detail = "server: %s, %d KB" % (kind, len(audio_bytes) // 1024)
-    print("[voice] kitob=%s %s | telefon: %s"
-          % (book_id, detail, request.form.get("meta", "-")), flush=True)
+    ai_service.log_line("[voice] kitob=%s %s | telefon: %s"
+                        % (book_id, detail, request.form.get("meta", "-")))
     if len(audio_bytes) < 2000:
         return jsonify({"error": "Ovoz juda qisqa yoki yozilmagan. "
                                  "Mikrofonni bosib, kamida 15 soniya gapiring.",
@@ -2215,26 +2215,66 @@ def child_submit_voice(book_id):
     age_row = cursor.fetchone()
     age = age_row[0] if age_row and age_row[0] else 10
 
-    # Xatoni yashirmaymiz: jurnalga to‘liq yoziladi, foydalanuvchiga esa
-    # tushunarli sabab ko‘rsatiladi. Ilgari bu yerda 500-xato chiqib,
-    # ilova shunchaki «Xatolik yuz berdi» derdi.
-    try:
-        result = run_async(ai_service.evaluate_voice_summary(audio_bytes, age, book_title))
-    except Exception as e:
-        traceback.print_exc()
-        print("[voice] XATO kitob=%s bola=%s (%s): %r" % (book_id, child_id, detail, e), flush=True)
-        return jsonify({"error": str(e)[:300] or "AI ovozni tahlil qila olmadi",
-                        "detail": detail}), 502
+    # Uzun audioni tahlil qilish bir daqiqagacha cho‘zilishi mumkin. Agar
+    # telefon shuncha vaqt javob kutib tursa, aloqa uzilib «xato» chiqadi —
+    # egasi buni aniq payqadi: 15 soniyalik ovoz o‘tdi, 1 daqiqaligi yo‘q.
+    # Shuning uchun ish fon rejimida bajariladi: telefon darrov «kvitansiya»
+    # oladi va vaqti-vaqti bilan «tayyor bo‘ldimi?» deb so‘rab turadi.
+    job_id = _start_voice_job(book_id, child_id, book_title, age, audio_bytes, detail)
+    return jsonify({"ok": True, "job_id": job_id, "detail": detail})
 
-    # AI javob berdi. Bundan keyingi ish ham xato bersa (baza, nishonlar,
-    # ota-onaga xabar) — foydalanuvchi bo‘sh «Xatolik» emas, sababni ko‘rsin.
-    try:
-        return _finish_voice(book_id, child_id, book_title, result, detail)
-    except Exception as e:
-        traceback.print_exc()
-        print("[voice] SAQLASHDA XATO kitob=%s bola=%s: %r" % (book_id, child_id, e), flush=True)
-        return jsonify({"error": "Natijani saqlab bo‘lmadi: " + str(e)[:200],
-                        "detail": detail}), 500
+
+# ==========================================================
+# OVOZNI TAHLIL QILISH — FON REJIMIDA
+# ==========================================================
+_voice_jobs = {}
+_voice_jobs_lock = threading.Lock()
+
+
+def _set_voice_job(job_id, **fields):
+    with _voice_jobs_lock:
+        job = _voice_jobs.setdefault(job_id, {})
+        job.update(fields)
+        job["at"] = time.time()
+
+
+def _start_voice_job(book_id, child_id, book_title, age, audio_bytes, detail):
+    job_id = uuid.uuid4().hex[:12]
+    _set_voice_job(job_id, status="ishlanmoqda", result=None, error=None, detail=detail)
+
+    def worker():
+        try:
+            result = run_async(ai_service.evaluate_voice_summary(audio_bytes, age, book_title))
+            payload = _finish_voice(book_id, child_id, book_title, result, detail)
+            _set_voice_job(job_id, status="tayyor", result=payload)
+            ai_service.log_line("[voice] TAYYOR kitob=%s (%s)" % (book_id, detail))
+        except Exception as e:
+            traceback.print_exc()
+            ai_service.log_line("[voice] XATO kitob=%s bola=%s (%s): %r"
+                                % (book_id, child_id, detail, e))
+            _set_voice_job(job_id, status="xato",
+                           error=str(e)[:300] or "AI ovozni tahlil qila olmadi")
+
+    threading.Thread(target=worker, daemon=True).start()
+    return job_id
+
+
+@app.route("/api/child/voice_job/<job_id>", methods=["GET"])
+@require_auth
+def child_voice_job(job_id):
+    now = time.time()
+    with _voice_jobs_lock:
+        for k in [k for k, v in _voice_jobs.items() if now - v.get("at", 0) > TEST_JOB_TTL]:
+            _voice_jobs.pop(k, None)
+        job = _voice_jobs.get(job_id)
+    if not job:
+        return jsonify({"error": "Bu ish topilmadi — qaytadan urinib ko‘ring"}), 404
+    out = {"status": job["status"], "detail": job.get("detail")}
+    if job["status"] == "tayyor":
+        out["result"] = job.get("result")
+    if job["status"] == "xato":
+        out["error"] = job.get("error")
+    return jsonify(out)
 
 
 def _finish_voice(book_id, child_id, book_title, result, detail):
@@ -2274,12 +2314,12 @@ def _finish_voice(book_id, child_id, book_title, result, detail):
             f"{pr.get('conversation_topic', '')}"
         )
 
-    return jsonify({
+    return {
         "ok": True, "bonus_bilig": bonus,
         "feedback": result.get("child_feedback", ""),
         "give_badge": bool(result.get("give_badge", False)),
         "new_badges": new_badges
-    })
+    }
 
 
 @app.route("/api/child/book/<int:book_id>/test", methods=["GET"])
@@ -2590,6 +2630,29 @@ def admin_summary_now():
     if OWNER_ID and g.user_id != OWNER_ID:
         return jsonify({"error": "Ruxsat yo‘q"}), 403
     return jsonify({"ok": True, "sent": send_due_summaries()})
+
+
+@app.route("/api/admin/logs", methods=["GET"])
+def admin_logs():
+    """So‘nggi texnik yozuvlarni ko‘rsatadi — nosozlik sababini topish uchun.
+
+    Render'dagi LOG_TOKEN sozlamasi qo‘yilmagan bo‘lsa, bu manzil umuman
+    yo‘q (404). Ya'ni tasodifan ochilib qolmaydi. Yozuvlarda faqat texnik
+    ma'lumot bo‘ladi: format, hajm, xato matni.
+    """
+    token = os.getenv("LOG_TOKEN", "")
+    if not token or request.args.get("token") != token:
+        return ("Topilmadi", 404)
+    only = (request.args.get("q") or "").strip()
+    lines = list(ai_service.LOG_RING)
+    if only:
+        lines = [x for x in lines if only in x]
+    try:
+        limit = max(1, min(400, int(request.args.get("n", 120))))
+    except ValueError:
+        limit = 120
+    body = "\n".join(lines[-limit:]) or "(yozuv yo‘q)"
+    return Response(body + "\n", mimetype="text/plain; charset=utf-8")
 
 
 @app.route("/api/admin/stats", methods=["GET"])

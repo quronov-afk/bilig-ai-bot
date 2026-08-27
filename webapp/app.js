@@ -2213,7 +2213,27 @@ function openVoiceModal(bookId) {
       kb: Math.round(sendBlob.size / 1024)
     }));
     try {
-      const res = await api("/api/child/book/" + bookId + "/voice" + asChildQuery(), { method: "POST", body: fd });
+      const started = await api("/api/child/book/" + bookId + "/voice" + asChildQuery(),
+                               { method: "POST", body: fd });
+      // Ovoz serverga yetdi. Endi telefon aloqani ushlab turmaydi — AI ishini
+      // fonda bajaradi, biz esa vaqti-vaqti bilan so‘rab turamiz. Shuning
+      // uchun uzun ovoz ham muammosiz o‘tadi.
+      openModal("AI Ustoz tinglamoqda",
+        '<div class="empty-state" style="padding:26px 0"><div class="spinner"></div>' +
+        '<p style="font-weight:700;color:var(--text);margin:12px 0 4px">AI Ustoz tinglayapti…</p>' +
+        '<p style="margin:0">Ovoz uzun bo‘lsa biroz ko‘proq kutadi.</p></div>');
+      let res = null;
+      const until = Date.now() + 4 * 60 * 1000;
+      while (Date.now() < until) {
+        await new Promise(function (r) { setTimeout(r, 2500); });
+        let st;
+        try { st = await api("/api/child/voice_job/" + started.job_id + asChildQuery()); }
+        catch (err) { continue; }              // aloqa uzildi — keyingi urinishda so‘raymiz
+        if (st.status === "tayyor") { res = st.result; break; }
+        if (st.status === "xato") throw { error: st.error, detail: st.detail };
+      }
+      if (!res) throw { error: "Kutish vaqti tugadi. Qisqaroq gapirib ko‘ring." };
+
       if (res.bonus_bilig >= 4) {
         mascotToast("olmaxon-2", "AI ustoz seni tingladi",
                     "+" + res.bonus_bilig + " bonus Bilig — nutqing ravon edi.");
