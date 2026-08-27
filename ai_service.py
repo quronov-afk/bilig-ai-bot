@@ -92,7 +92,7 @@ def _text_or_reason(task, response):
         pass
 
     up = (reason + " " + blocked).upper()
-    print("[ai] BO‘SH JAVOB [%s] finish_reason=%r block_reason=%r" % (task, reason, blocked))
+    print("[ai] BO‘SH JAVOB [%s] finish_reason=%r block_reason=%r" % (task, reason, blocked), flush=True)
     if "MAX_TOKEN" in up:
         raise AiEmptyResponse(
             "AI javobi juda uzun bo‘lib ketdi va oxirigacha yetmadi. "
@@ -157,10 +157,10 @@ async def _ask(task: str, contents, json_mode=False, max_tokens=None, fast=False
             # rejimda qayta urinamiz. Bir marta ishlamasa, boshqa urinilmaydi.
             if use_fast and not isinstance(e, AiEmptyResponse):
                 _thinking_off_supported = False
-                print(f"[ai] tejash rejimi bu modelga to‘g‘ri kelmadi, oddiy rejimga o‘tildi ({task}): {e}")
+                print(f"[ai] tejash rejimi bu modelga to‘g‘ri kelmadi, oddiy rejimga o‘tildi ({task}): {e}", flush=True)
                 tries -= 1
                 continue
-            print(f"XATOLIK [{task} - Urinish {tries}]: {e}")
+            print(f"XATOLIK [{task} - Urinish {tries}]: {e}", flush=True)
             if tries >= attempts:
                 raise
             await asyncio.sleep(1)
@@ -186,6 +186,26 @@ def image_part(image_bytes: bytes):
     return types.Part.from_bytes(data=image_bytes, mime_type=mime)
 
 
+def audio_kind(audio_bytes: bytes):
+    """Audio formatini baytlaridan aniqlaydi (nosozlik izlashda ham kerak)."""
+    head = audio_bytes[:16]
+    if head[:4] == b"RIFF" and head[8:12] == b"WAVE":
+        return "audio/wav"
+    if head[:4] == b"OggS":
+        return "audio/ogg"
+    if head[:4] == b"fLaC":
+        return "audio/flac"
+    if head[:3] == b"ID3" or (len(head) > 1 and head[0] == 0xFF and (head[1] & 0xE0) == 0xE0):
+        return "audio/mp3"
+    if head[4:8] == b"ftyp":
+        return "audio/mp4"
+    if head[:4] == b"\x1aE\xdf\xa3":
+        return "audio/webm"
+    if head[:4] == b"FORM":
+        return "audio/aiff"
+    return "noma'lum"
+
+
 def audio_part(audio_bytes: bytes):
     """Audioni AI ga uzatish uchun tayyorlaydi.
 
@@ -194,24 +214,10 @@ def audio_part(audio_bytes: bytes):
     AI faylni ocholmay, so‘rovni bir zumda rad etardi. Endi format
     baytlarning o‘zidan aniqlanadi.
     """
-    head = audio_bytes[:16]
-    if head[:4] == b"RIFF" and head[8:12] == b"WAVE":
-        mime = "audio/wav"
-    elif head[:4] == b"OggS":
-        mime = "audio/ogg"
-    elif head[:4] == b"fLaC":
-        mime = "audio/flac"
-    elif head[:3] == b"ID3" or (len(head) > 1 and head[0] == 0xFF and (head[1] & 0xE0) == 0xE0):
-        mime = "audio/mp3"
-    elif head[4:8] == b"ftyp":
-        mime = "audio/mp4"
-    elif head[:4] == b"\x1aE\xdf\xa3":
-        mime = "audio/webm"          # Matroska/WebM imzosi
-    elif head[:4] == b"FORM":
-        mime = "audio/aiff"
-    else:
-        mime = "audio/mp3"
-    return types.Part.from_bytes(data=audio_bytes, mime_type=mime)
+    kind = audio_kind(audio_bytes)
+    if kind == "noma'lum":
+        kind = "audio/mp3"
+    return types.Part.from_bytes(data=audio_bytes, mime_type=kind)
 
 
 def clean_json(text: str) -> str:

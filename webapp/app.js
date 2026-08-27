@@ -2203,6 +2203,15 @@ function openVoiceModal(bookId) {
     const fd = new FormData();
     const ext = (sendBlob.type || "").indexOf("wav") >= 0 ? "wav" : "webm";
     fd.append("audio", sendBlob, "summary." + ext);
+    // Nosozlikni izlashda kerak bo‘ladigan ma'lumot: telefon qanday format
+    // yozdi, o‘girish ishladimi, fayl qancha bo‘ldi. Bularsiz xato sababini
+    // topish taxminga aylanadi.
+    fd.append("meta", JSON.stringify({
+      asl: recordedBlob.type || "?",
+      yuborilgan: sendBlob.type || "?",
+      ogirildi: sendBlob !== recordedBlob,
+      kb: Math.round(sendBlob.size / 1024)
+    }));
     try {
       const res = await api("/api/child/book/" + bookId + "/voice" + asChildQuery(), { method: "POST", body: fd });
       if (res.bonus_bilig >= 4) {
@@ -2223,10 +2232,17 @@ function openVoiceModal(bookId) {
       // Sababni YASHIRMAYMIZ — «xatolik» degan bo‘sh gap hech kimga yordam bermaydi.
       closeModal();
       const reason = e.error || e.message || "Server javob bermadi. Internet aloqasini tekshiring.";
+      const tech = "format: " + (recordedBlob.type || "?") +
+        " -> " + (sendBlob.type || "?") +
+        " | " + Math.round(sendBlob.size / 1024) + " KB" +
+        (e.detail ? " | " + e.detail : "");
       openModal("Ovozli xulosa yuborilmadi",
         '<p class="section-sub" style="margin-top:-4px;color:var(--text);font-weight:600">' +
           'AI ovozni tahlil qila olmadi.</p>' +
         '<p class="section-sub" style="font-size:13.5px">' + escapeHtml(reason) + '</p>' +
+        '<p class="section-sub" style="font-size:12px;color:var(--text-faint);' +
+          'background:var(--surface-soft);border-radius:10px;padding:8px 10px;word-break:break-all">' +
+          escapeHtml(tech) + '</p>' +
         '<button class="btn btn-primary btn-block" data-action="open-voice" data-id="' + bookId + '">Qaytadan urinish</button>' +
         '<button class="btn btn-outline btn-block" data-action="close-modal">Yopish</button>');
     }

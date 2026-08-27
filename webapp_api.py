@@ -546,7 +546,7 @@ def _maybe_build_test_from_notes(book_id):
                 if len(notes) >= AUTO_TEST_BANK_MIN:
                     _save_test_to_bank(title, author, raw_json, from_notes=1)
                 print("[auto_test] «%s» uchun %d ta savol tuzildi (%d ta sahifa yozuvidan)"
-                      % (title, len(questions), len(notes)))
+                      % (title, len(questions), len(notes)), flush=True)
             except Exception:
                 traceback.print_exc()
 
@@ -1655,7 +1655,7 @@ def _start_test_job(book_id, title, author, photos_bytes):
             # holini foydalanuvchiga ham ko‘rsatamiz. Aks holda nima
             # bo‘lganini na ega, na biz bilamiz.
             traceback.print_exc()
-            print("[test_job] XATO kitob=%s: %r" % (book_id, e))
+            print("[test_job] XATO kitob=%s: %r" % (book_id, e), flush=True)
             _set_test_job(job_id, status="xato", error=str(e)[:300] or e.__class__.__name__)
 
     threading.Thread(target=worker, daemon=True).start()
@@ -2193,9 +2193,16 @@ def child_submit_voice(book_id):
     if "audio" not in request.files:
         return jsonify({"error": "Audio topilmadi"}), 400
     audio_bytes = request.files["audio"].read()
+    # Nima kelganini AYNAN bilib turamiz: telefon qanday format yozdi,
+    # o‘girish ishladimi, server baytlardan qanday format ko‘ryapti.
+    kind = ai_service.audio_kind(audio_bytes)
+    detail = "server: %s, %d KB" % (kind, len(audio_bytes) // 1024)
+    print("[voice] kitob=%s %s | telefon: %s"
+          % (book_id, detail, request.form.get("meta", "-")), flush=True)
     if len(audio_bytes) < 2000:
         return jsonify({"error": "Ovoz juda qisqa yoki yozilmagan. "
-                                 "Mikrofonni bosib, kamida 15 soniya gapiring."}), 400
+                                 "Mikrofonni bosib, kamida 15 soniya gapiring.",
+                        "detail": detail}), 400
     child_id = _resolve_active_child(request)
 
     cursor.execute("SELECT title FROM Plan_Books WHERE book_id = ?", (book_id,))
@@ -2215,11 +2222,25 @@ def child_submit_voice(book_id):
         result = run_async(ai_service.evaluate_voice_summary(audio_bytes, age, book_title))
     except Exception as e:
         traceback.print_exc()
-        print("[voice] XATO kitob=%s bola=%s: %r" % (book_id, child_id, e))
-        return jsonify({"error": str(e)[:300] or "AI ovozni tahlil qila olmadi"}), 502
+        print("[voice] XATO kitob=%s bola=%s (%s): %r" % (book_id, child_id, detail, e), flush=True)
+        return jsonify({"error": str(e)[:300] or "AI ovozni tahlil qila olmadi",
+                        "detail": detail}), 502
 
+    # AI javob berdi. Bundan keyingi ish ham xato bersa (baza, nishonlar,
+    # ota-onaga xabar) — foydalanuvchi bo‘sh «Xatolik» emas, sababni ko‘rsin.
+    try:
+        return _finish_voice(book_id, child_id, book_title, result, detail)
+    except Exception as e:
+        traceback.print_exc()
+        print("[voice] SAQLASHDA XATO kitob=%s bola=%s: %r" % (book_id, child_id, e), flush=True)
+        return jsonify({"error": "Natijani saqlab bo‘lmadi: " + str(e)[:200],
+                        "detail": detail}), 500
+
+
+def _finish_voice(book_id, child_id, book_title, result, detail):
     bonus = int(result.get("bonus_bilig", 0))
     diag = result.get("diagnostic_scores", {})
+    new_badges = []
     with db_lock:
         if bonus > 0:
             cursor.execute(
