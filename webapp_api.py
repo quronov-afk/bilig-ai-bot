@@ -991,6 +991,11 @@ def api_me():
     role, name, approved, coins, streak, rank, avatar_id, profile_done = row
     result = {
         "exists": True,
+        # Ovoz uchun qaysi formatni AVVAL sinash kerak. Server oxirgi marta
+        # nima ishlaganini eslab qoladi: birinchi foydalanuvchi aniqlaydi,
+        # qolganlari darrov to‘g‘ri yo‘ldan boradi. «asl» — telefon yozgan
+        # fayl (ancha yengil), «wav» — o‘girilgan nusxa.
+        "voice_prefer": _voice_prefer[0],
         "approved": bool(approved),
         "role": role,
         "name": name or g.tg_user.get("first_name", ""),
@@ -2219,7 +2224,11 @@ def child_submit_voice(book_id):
     # egasi buni aniq payqadi: 15 soniyalik ovoz o‘tdi, 1 daqiqaligi yo‘q.
     # Shuning uchun ish fon rejimida bajariladi: telefon darrov «kvitansiya»
     # oladi va vaqti-vaqti bilan «tayyor bo‘ldimi?» deb so‘rab turadi.
-    job_id = _start_voice_job(book_id, child_id, book_title, age, audio_bytes, detail)
+    try:
+        was_original = bool(json.loads(request.form.get("meta") or "{}").get("ogirilmagan"))
+    except Exception:
+        was_original = False
+    job_id = _start_voice_job(book_id, child_id, book_title, age, audio_bytes, detail, was_original)
     return jsonify({"ok": True, "job_id": job_id})
 
 
@@ -2229,6 +2238,10 @@ def child_submit_voice(book_id):
 _voice_jobs = {}
 _voice_jobs_lock = threading.Lock()
 
+# Oxirgi marta qaysi format ishlagani. Ro‘yxat ichida — ip'lar orasida
+# oddiy o‘zgaruvchini almashtirish uchun eng sodda yo‘l.
+_voice_prefer = ["wav"]
+
 
 def _set_voice_job(job_id, **fields):
     with _voice_jobs_lock:
@@ -2237,7 +2250,7 @@ def _set_voice_job(job_id, **fields):
         job["at"] = time.time()
 
 
-def _start_voice_job(book_id, child_id, book_title, age, audio_bytes, detail):
+def _start_voice_job(book_id, child_id, book_title, age, audio_bytes, detail, was_original=False):
     job_id = uuid.uuid4().hex[:12]
     _set_voice_job(job_id, status="ishlanmoqda", result=None, error=None, detail=detail)
 
@@ -2246,6 +2259,11 @@ def _start_voice_job(book_id, child_id, book_title, age, audio_bytes, detail):
             result = run_async(ai_service.evaluate_voice_summary(audio_bytes, age, book_title))
             payload = _finish_voice(book_id, child_id, book_title, result, detail)
             _set_voice_job(job_id, status="tayyor", result=payload)
+            # Ishlagan formatni eslab qolamiz — keyingi safar shundan boshlanadi.
+            new_pref = "asl" if was_original else "wav"
+            if _voice_prefer[0] != new_pref:
+                _voice_prefer[0] = new_pref
+                ai_service.log_line("[voice] endi avval «%s» sinaladi" % new_pref)
             ai_service.log_line("[voice] TAYYOR kitob=%s (%s)" % (book_id, detail))
         except Exception as e:
             traceback.print_exc()

@@ -1018,6 +1018,11 @@ document.addEventListener("click", async function (e) {
       case "open-page-manual": openPageManualModal(Number(el.dataset.id)); break;
       case "submit-page-manual": await submitPageManual(Number(el.dataset.id)); break;
       case "open-voice": openVoiceModal(Number(el.dataset.id)); break;
+      case "voice-resend":
+        VoiceDraft.triedBoth = false;      // qayta bosilganda ikkala usul yana sinaladi
+        await sendVoice(Number(el.dataset.id),
+                        State.me && State.me.voice_prefer === "asl");
+        break;
       case "open-test": await openTestModal(Number(el.dataset.id), el.dataset.stage); break;
       case "select-test-opt": Test.select(el.dataset.qid, el.dataset.val); break;
       case "submit-test": await Test.submit(Number(el.dataset.book)); break;
@@ -2132,14 +2137,49 @@ async function audioToWav(blob) {
   return encodeWav(out, ratio > 1 ? VOICE_SAMPLE_RATE : decoded.sampleRate);
 }
 
+// ==========================================================
+// OVOZLI XULOSA
+// ----------------------------------------------------------
+// Yozib olingan ovoz SAQLANIB TURADI. Yuborish muvaffaqiyatsiz
+// bo‘lsa, bola qaytadan gapirmaydi — o‘sha yozuvni bir bosishda
+// qayta yuboradi. Yozuv faqat muvaffaqiyatli yuborilgandan keyin
+// yoki bola «Qaytadan yozish» deganda o‘chadi.
+// ==========================================================
+const VoiceDraft = {
+  bookId: null,
+  src: null,        // telefon yozgan asl fayl
+  wav: null,        // AI uchun tayyorlangan nusxa (bir marta tayyorlanadi)
+  seconds: 0,
+
+  triedBoth: false,
+
+  set: function (bookId, blob, seconds) {
+    this.bookId = bookId; this.src = blob; this.wav = null;
+    this.seconds = seconds || 0; this.triedBoth = false;
+  },
+  clear: function () {
+    this.bookId = null; this.src = null; this.wav = null;
+    this.seconds = 0; this.triedBoth = false;
+  },
+  has: function (bookId) { return this.src && this.bookId === bookId; },
+  label: function () {
+    if (!this.seconds) return "yozuv tayyor";
+    const m = Math.floor(this.seconds / 60), sec = this.seconds % 60;
+    return m ? (m + ":" + (sec < 10 ? "0" : "") + sec) : (sec + " soniya");
+  }
+};
+
 function openVoiceModal(bookId) {
+  const saved = VoiceDraft.has(bookId);
   openModal("Ovozli xulosa",
     '<p class="section-sub">Kitob haqida 1-2 daqiqa gapirib bering: nima haqida edi, sizga nima yoqdi?</p>' +
     '<div style="text-align:center;padding:16px 0">' +
     '<button id="rec-btn" class="icon-btn" style="width:76px;height:76px;border-radius:50%;background:var(--brand);color:#fff;margin:0 auto">' + icon("mic", 28, 1.7) + '</button>' +
-    '<div id="rec-time" class="card-meta" style="margin-top:10px;color:var(--text-soft);font-size:15px">Yozishni boshlash uchun bosing</div>' +
+    '<div id="rec-time" class="card-meta" style="margin-top:10px;color:var(--text-soft);font-size:15px">' +
+      (saved ? "Yozuvingiz saqlanib turibdi (" + VoiceDraft.label() + ")" : "Yozishni boshlash uchun bosing") +
     '</div>' +
-    '<div id="voice-actions" class="hidden">' +
+    '</div>' +
+    '<div id="voice-actions"' + (saved ? "" : ' class="hidden"') + '>' +
     '<button class="btn btn-primary btn-block" id="voice-send-btn">Yuborish</button>' +
     '<button class="btn btn-outline btn-block" id="voice-retry-btn">Qaytadan yozish</button>' +
     '</div>' +
@@ -2147,7 +2187,6 @@ function openVoiceModal(bookId) {
     '<p class="section-sub" style="margin-top:10px">Mikrofon ishlamasa, <span style="text-decoration:underline;cursor:pointer" id="voice-upload-alt">audio fayl yuklang</span>.</p>'
   );
 
-  let recordedBlob = null;
   const recBtn = document.getElementById("rec-btn");
   const timeEl = document.getElementById("rec-time");
   const actions = document.getElementById("voice-actions");
@@ -2157,13 +2196,20 @@ function openVoiceModal(bookId) {
       try {
         const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
         audioChunks = []; recordSeconds = 0;
-        mediaRecorder = new MediaRecorder(stream);
+        // Past oqim tezligi — nutq uchun yetarli, fayl esa bir necha barobar
+        // yengil bo‘ladi (sekin internetda shu hal qiluvchi).
+        try {
+          mediaRecorder = new MediaRecorder(stream, { audioBitsPerSecond: 32000 });
+        } catch (e) {
+          mediaRecorder = new MediaRecorder(stream);
+        }
         mediaRecorder.ondataavailable = function (e) { audioChunks.push(e.data); };
         mediaRecorder.onstop = function () {
-          recordedBlob = new Blob(audioChunks, { type: "audio/webm" });
+          const type = (mediaRecorder && mediaRecorder.mimeType) || "audio/webm";
+          VoiceDraft.set(bookId, new Blob(audioChunks, { type: type }), recordSeconds);
           stream.getTracks().forEach(function (t) { t.stop(); });
           actions.classList.remove("hidden");
-          timeEl.textContent = "Yozib olindi — endi yuboring";
+          timeEl.textContent = "Yozib olindi (" + VoiceDraft.label() + ") — endi yuboring";
         };
         mediaRecorder.start();
         recBtn.innerHTML = icon("x", 26, 2);
@@ -2188,87 +2234,121 @@ function openVoiceModal(bookId) {
   };
 
   document.getElementById("voice-retry-btn").onclick = function () {
-    recordedBlob = null; actions.classList.add("hidden"); timeEl.textContent = "Yozishni boshlash uchun bosing";
+    VoiceDraft.clear();
+    actions.classList.add("hidden");
+    timeEl.textContent = "Yozishni boshlash uchun bosing";
   };
   document.getElementById("voice-upload-alt").onclick = function () { document.getElementById("voice-file-input").click(); };
   document.getElementById("voice-file-input").onchange = function (e) {
-    if (e.target.files.length) { recordedBlob = e.target.files[0]; actions.classList.remove("hidden"); timeEl.textContent = "Fayl tanlandi"; }
-  };
-
-  document.getElementById("voice-send-btn").onclick = async function () {
-    if (!recordedBlob) { toast("Avval ovoz yozing yoki fayl tanlang"); return; }
-    openModal("AI Ustoz tinglamoqda",
-      '<div class="empty-state" style="padding:26px 0"><div class="spinner"></div>' +
-      '<p style="font-weight:700;color:var(--text);margin:12px 0 4px">Ovoz tayyorlanmoqda…</p></div>');
-    // Telefonning o‘z formati (WEBM/MP4) AI ga to‘g‘ri kelmaydi — WAV ga o‘giramiz.
-    let sendBlob = recordedBlob;
-    try { sendBlob = await audioToWav(recordedBlob); } catch (e) { sendBlob = recordedBlob; }
-    if (!sendBlob || !sendBlob.size) { toast("Ovoz yozilmadi. Qaytadan urinib ko‘ring."); closeModal(); return; }
-    openModal("AI Ustoz tinglamoqda",
-      '<div class="empty-state" style="padding:26px 0"><div class="spinner"></div>' +
-      '<p style="font-weight:700;color:var(--text);margin:12px 0 4px">AI Ustoz tinglayapti…</p>' +
-      '<p style="margin:0">Bu yarim daqiqacha davom etadi.</p></div>');
-    const fd = new FormData();
-    const ext = (sendBlob.type || "").indexOf("wav") >= 0 ? "wav" : "webm";
-    fd.append("audio", sendBlob, "summary." + ext);
-    // Nosozlikni izlashda kerak bo‘ladigan ma'lumot: telefon qanday format
-    // yozdi, o‘girish ishladimi, fayl qancha bo‘ldi. Bularsiz xato sababini
-    // topish taxminga aylanadi.
-    fd.append("meta", JSON.stringify({
-      asl: recordedBlob.type || "?",
-      yuborilgan: sendBlob.type || "?",
-      ogirildi: sendBlob !== recordedBlob,
-      kb: Math.round(sendBlob.size / 1024)
-    }));
-    try {
-      const started = await api("/api/child/book/" + bookId + "/voice" + asChildQuery(),
-                               { method: "POST", body: fd });
-      // Ovoz serverga yetdi. Endi telefon aloqani ushlab turmaydi — AI ishini
-      // fonda bajaradi, biz esa vaqti-vaqti bilan so‘rab turamiz. Shuning
-      // uchun uzun ovoz ham muammosiz o‘tadi.
-      openModal("AI Ustoz tinglamoqda",
-        '<div class="empty-state" style="padding:26px 0"><div class="spinner"></div>' +
-        '<p style="font-weight:700;color:var(--text);margin:12px 0 4px">AI Ustoz tinglayapti…</p>' +
-        '<p style="margin:0">Ovoz uzun bo‘lsa biroz ko‘proq kutadi.</p></div>');
-      let res = null;
-      const until = Date.now() + 4 * 60 * 1000;
-      while (Date.now() < until) {
-        await new Promise(function (r) { setTimeout(r, 2500); });
-        let st;
-        try { st = await api("/api/child/voice_job/" + started.job_id + asChildQuery()); }
-        catch (err) { continue; }              // aloqa uzildi — keyingi urinishda so‘raymiz
-        if (st.status === "tayyor") { res = st.result; break; }
-        if (st.status === "xato") throw { error: st.error };
-      }
-      if (!res) throw { error: "Kutish vaqti tugadi. Qisqaroq gapirib ko‘ring." };
-
-      if (res.bonus_bilig >= 4) {
-        mascotToast("olmaxon-2", "AI ustoz seni tingladi",
-                    "+" + res.bonus_bilig + " bonus Bilig — nutqing ravon edi.");
-      }
-      const showVoice = function () { openModal("AI Ustoz fikri",
-        '<div class="stat-grid" style="grid-template-columns:1fr">' +
-        '<div class="stat-box"><div class="num">+' + res.bonus_bilig + '</div><div class="lbl">bonus Bilig</div></div>' +
-        '</div>' +
-        '<div class="card">' + escapeHtml(res.feedback) + '</div>' +
-        '<button class="btn btn-primary btn-block" data-action="close-modal">Ajoyib</button>'
-      ); };
-      if (res.new_badges && res.new_badges.length) celebrate(res.new_badges, showVoice);
-      else showVoice();
-      refreshHeader();
-    } catch (e) {
-      // Sababni YASHIRMAYMIZ — «xatolik» degan bo‘sh gap hech kimga yordam bermaydi.
-      closeModal();
-      // Texnik tafsilotlar (format, hajm, xato kodi) foydalanuvchiga
-      // KO‘RSATILMAYDI — ular serverning jurnaliga yoziladi. Bu yerda
-      // faqat sodda va foydali gap qoladi.
-      const reason = e.error || "Hozir bo‘lmadi. Internet aloqasini tekshirib, qaytadan urining.";
-      openModal("Ovozli xulosa yuborilmadi",
-        '<p class="section-sub" style="margin-top:-4px">' + escapeHtml(reason) + '</p>' +
-        '<button class="btn btn-primary btn-block" data-action="open-voice" data-id="' + bookId + '">Qaytadan urinish</button>' +
-        '<button class="btn btn-outline btn-block" data-action="close-modal">Yopish</button>');
+    if (e.target.files.length) {
+      VoiceDraft.set(bookId, e.target.files[0], 0);
+      actions.classList.remove("hidden");
+      timeEl.textContent = "Fayl tanlandi";
     }
   };
+
+  // Server oxirgi marta qaysi format ishlaganini eslab qoladi — shundan
+  // boshlaymiz. Odatda bu asl (yengil) fayl bo‘ladi.
+  document.getElementById("voice-send-btn").onclick = function () {
+    sendVoice(bookId, State.me && State.me.voice_prefer === "asl");
+  };
+}
+
+function voiceWait(title, sub) {
+  openModal("AI Ustoz tinglamoqda",
+    '<div class="empty-state" style="padding:26px 0"><div class="spinner"></div>' +
+    '<p style="font-weight:700;color:var(--text);margin:12px 0 4px">' + title + '</p>' +
+    (sub ? '<p style="margin:0">' + sub + '</p>' : "") + '</div>');
+}
+
+// Yuborish. Ovoz saqlanib turadi — xato bo‘lsa qaytadan gapirish shart emas.
+//
+// asl=true bo‘lsa, telefon yozgan ASL fayl yuboriladi (WAV ga o‘girilmaydi).
+// Nega kerak: bot Telegram bergan OGG bilan muammosiz ishlaydi, ilovada esa
+// WAV yuboriladi. Qaysi biri to‘g‘ri kelishini taxmin qilib o‘tirmaymiz —
+// birinchisi bo‘lmasa, ikkinchisi avtomatik sinaladi. Qaysi biri ishlagani
+// serverning jurnaliga yozilib qoladi.
+async function sendVoice(bookId, asl) {
+  if (!VoiceDraft.has(bookId)) { toast("Avval ovoz yozing yoki fayl tanlang"); return; }
+
+  let sendBlob;
+  if (asl) {
+    sendBlob = VoiceDraft.src;
+  } else {
+    // AI uchun tayyorlangan nusxa bir marta yasaladi va saqlanadi — qayta
+    // yuborishda telefon uni boshqatdan o‘girib o‘tirmaydi.
+    if (!VoiceDraft.wav) {
+      voiceWait("Ovoz tayyorlanmoqda…");
+      let out = VoiceDraft.src;
+      try { out = await audioToWav(VoiceDraft.src); } catch (e) { out = VoiceDraft.src; }
+      if (!out || !out.size) { toast("Ovoz yozilmadi. Qaytadan urinib ko‘ring."); closeModal(); return; }
+      VoiceDraft.wav = out;
+    }
+    sendBlob = VoiceDraft.wav;
+  }
+
+  voiceWait("Ovoz yuborilmoqda…", "Internet sekin bo‘lsa biroz kutishga to‘g‘ri keladi.");
+  const fd = new FormData();
+  const ext = (sendBlob.type || "").indexOf("wav") >= 0 ? "wav" : "webm";
+  fd.append("audio", sendBlob, "summary." + ext);
+  fd.append("meta", JSON.stringify({
+    asl: VoiceDraft.src.type || "?",
+    yuborilgan: sendBlob.type || "?",
+    ogirilmagan: !!asl,
+    soniya: VoiceDraft.seconds,
+    kb: Math.round(sendBlob.size / 1024)
+  }));
+
+  try {
+    const started = await api("/api/child/book/" + bookId + "/voice" + asChildQuery(),
+                             { method: "POST", body: fd });
+    voiceWait("AI Ustoz tinglayapti…", "Ovoz uzun bo‘lsa biroz ko‘proq kutadi.");
+    let res = null;
+    const until = Date.now() + 4 * 60 * 1000;
+    while (Date.now() < until) {
+      await new Promise(function (r) { setTimeout(r, 2500); });
+      let st;
+      try { st = await api("/api/child/voice_job/" + started.job_id + asChildQuery()); }
+      catch (err) { continue; }              // aloqa uzildi — keyingi urinishda so‘raymiz
+      if (st.status === "tayyor") { res = st.result; break; }
+      if (st.status === "xato") throw { error: st.error };
+    }
+    if (!res) throw { error: "Kutish vaqti tugadi. Ovozingiz saqlanib qoldi — qayta yuborib ko‘ring." };
+
+    VoiceDraft.clear();                      // muvaffaqiyat — yozuv endi kerak emas
+    if (res.bonus_bilig >= 4) {
+      mascotToast("olmaxon-2", "AI ustoz seni tingladi",
+                  "+" + res.bonus_bilig + " bonus Bilig — nutqing ravon edi.");
+    }
+    const showVoice = function () { openModal("AI Ustoz fikri",
+      '<div class="stat-grid" style="grid-template-columns:1fr">' +
+      '<div class="stat-box"><div class="num">+' + res.bonus_bilig + '</div><div class="lbl">bonus Bilig</div></div>' +
+      '</div>' +
+      '<div class="card">' + escapeHtml(res.feedback) + '</div>' +
+      '<button class="btn btn-primary btn-block" data-action="close-modal">Ajoyib</button>'
+    ); };
+    if (res.new_badges && res.new_badges.length) celebrate(res.new_badges, showVoice);
+    else showVoice();
+    refreshHeader();
+  } catch (e) {
+    // Birinchi urinish WAV bilan edi va bo‘lmadi — endi telefon yozgan
+    // ASL faylni sinab ko‘ramiz. Bu odatda ancha kichik bo‘ladi va
+    // botdagi formatga yaqin. Foydalanuvchi hech narsa qilmaydi.
+    if (!VoiceDraft.triedBoth) {
+      VoiceDraft.triedBoth = true;
+      voiceWait("Boshqa usulda urinib ko‘ryapmiz…", "Bir zum kuting.");
+      return sendVoice(bookId, !asl);
+    }
+    // Texnik tafsilotlar serverning jurnaliga yoziladi. Bu yerda faqat
+    // sodda gap va eng muhimi — ovoz saqlanib qolgani.
+    const reason = e.error || "Hozir bo‘lmadi. Internet aloqasini tekshirib, qaytadan urining.";
+    openModal("Ovozli xulosa yuborilmadi",
+      '<p class="section-sub" style="margin-top:-4px">' + escapeHtml(reason) + '</p>' +
+      '<p class="section-sub" style="color:var(--success-deep);font-weight:600">' +
+        'Ovozingiz saqlanib qoldi — qaytadan gapirish shart emas.</p>' +
+      '<button class="btn btn-primary btn-block" data-action="voice-resend" data-id="' + bookId + '">Shu ovozni qayta yuborish</button>' +
+      '<button class="btn btn-outline btn-block" data-action="open-voice" data-id="' + bookId + '">Qaytadan yozish</button>');
+  }
 }
 
 const Test = {
