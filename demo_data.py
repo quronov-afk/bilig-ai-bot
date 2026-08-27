@@ -133,8 +133,8 @@ def clear_demo_child(child_id):
     cursor.execute("DELETE FROM Reading_Logs WHERE child_id = ?", (child_id,))
     cursor.execute("DELETE FROM Diagnostic_Logs WHERE child_id = ?", (child_id,))
     cursor.execute(
-        "UPDATE Users SET balance_coins = 0, streak_days = 0, total_xp = 0, badges = '' "
-        "WHERE user_id = ?", (child_id,)
+        "UPDATE Users SET balance_coins = 0, streak_days = 0, total_xp = 0, badges = '', "
+        "badges_seen = 0 WHERE user_id = ?", (child_id,)
     )
     conn.commit()
 
@@ -213,9 +213,13 @@ def fill_demo_child(parent_id, child_id):
             )
 
     # 6. Tanga, streak, nishonlar
+    # badges_seen = 0 — nishonlar «hali ko‘rilmagan» holatda qoladi.
+    # Shunda bosh sahifada tipratikanli kutib olish kartochkasi chiqadi va
+    # uni bosib, to‘liq ekranli tabrikni ko‘rsatish mumkin. Namoyishning
+    # eng ta'sirli qismi shu.
     cursor.execute(
         "UPDATE Users SET balance_coins = ?, streak_days = ?, total_xp = ?, "
-        "badges = ?, last_read_date = ? WHERE user_id = ?",
+        "badges = ?, badges_seen = 0, last_read_date = ? WHERE user_id = ?",
         (214, 12, 758, ",".join(DEMO_BADGES),
          datetime.now().strftime("%Y-%m-%d"), child_id)
     )

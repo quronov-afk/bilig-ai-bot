@@ -1518,9 +1518,15 @@ function demoPanelHtml() {
 async function demoFill(childId, name) {
   if (!confirm(name + " profili namoyish ma'lumoti bilan to‘ldiriladi.\n\nDIQQAT: uning hozirgi kitoblari va natijalari o‘chib ketadi. Davom etamizmi?")) return;
   const res = await api("/api/admin/demo", { method: "POST", body: { child_id: childId, action: "fill" } });
-  toast(res.books + " ta kitob, " + res.reports + " ta AI tahlil qo‘shildi");
+  toast(res.books + " ta kitob, " + res.reports + " ta AI tahlil, " + res.badges + " ta nishon qo‘shildi");
   State.childrenCache = await api("/api/parent/children");
-  switchTab("home");
+  // Namoyish uchun darrov farzandning ekraniga kiramiz: bosh sahifaning
+  // yuqorisida tipratikanli kutib olish kartochkasi turadi. Uni bosib,
+  // to‘liq ekranli nishon tabrigini ko‘rsatish mumkin.
+  State.selectedChildId = childId;
+  State.activeChildId = childId;
+  State.activeChildName = name;
+  await setupTabsForRole();
 }
 
 async function demoClear(childId, name) {
