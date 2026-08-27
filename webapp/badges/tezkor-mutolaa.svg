@@ -1,0 +1,23 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tezkor mutolaa">
+  <defs>
+    <linearGradient id="rimtezkormutolaa" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFB48A"/><stop offset="1" stop-color="#E86A3C"/>
+    </linearGradient>
+    <radialGradient id="fldtezkormutolaa" cx=".5" cy=".38" r=".72">
+      <stop offset="0" stop-color="#FFF8F3"/><stop offset="1" stop-color="#FFE2D0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#rimtezkormutolaa)"/>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#000" stroke-opacity=".13" stroke-width="1.5"/>
+  <path d="M110.00 56.60c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(90.0 110.00 60.00)"/><path d="M106.98 73.70c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(110.0 106.98 77.10)"/><path d="M98.30 88.74c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(130.0 98.30 92.14)"/><path d="M85.00 99.90c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(150.0 85.00 103.30)"/><path d="M68.68 105.84c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(170.0 68.68 109.24)"/><path d="M51.32 105.84c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(190.0 51.32 109.24)"/><path d="M35.00 99.90c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(210.0 35.00 103.30)"/><path d="M21.70 88.74c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(230.0 21.70 92.14)"/><path d="M13.02 73.70c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(250.0 13.02 77.10)"/><path d="M10.00 56.60c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(270.0 10.00 60.00)"/><path d="M13.02 39.50c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(290.0 13.02 42.90)"/><path d="M21.70 24.46c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(310.0 21.70 27.86)"/><path d="M35.00 13.30c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(330.0 35.00 16.70)"/><path d="M51.32 7.36c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(350.0 51.32 10.76)"/><path d="M68.68 7.36c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(370.0 68.68 10.76)"/><path d="M85.00 13.30c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(390.0 85.00 16.70)"/><path d="M98.30 24.46c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(410.0 98.30 27.86)"/><path d="M106.98 39.50c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#A6421C" opacity="0.5" transform="rotate(430.0 106.98 42.90)"/>
+  <circle cx="60" cy="60" r="44" fill="url(#fldtezkormutolaa)"/>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="#A6421C" stroke-opacity=".5" stroke-width="1.6"/>
+  <path d="M28 40a44 44 0 0 1 64 0" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 22c9 8 14 19 14 32v14H46V54c0-13 5-24 14-32z" fill="#FBE8D2" stroke="#A6421C" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M60 22c9 8 14 19 14 32v14H60z" fill="#F0C9AC" opacity=".6"/>
+  <circle cx="60" cy="48" r="7" fill="#2C8AAE" stroke="#1D6C8A" stroke-width="2.2"/>
+  <circle cx="60" cy="48" r="3" fill="#CFF3FC"/>
+  <path d="M46 60 34 74l12-2z" fill="#E86A3C" stroke="#A6421C" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M74 60l12 14-12-2z" fill="#E86A3C" stroke="#A6421C" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M52 76c3 5 3 10 0 14M60 78c3 6 3 11 0 16M68 76c3 5 3 10 0 14"
+        fill="none" stroke="#FFB03A" stroke-width="3.4" stroke-linecap="round"/></svg>

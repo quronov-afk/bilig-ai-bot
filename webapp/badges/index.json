@@ -1,0 +1,118 @@
+{
+ "birinchi-qadam": {
+  "name": "Birinchi qadam",
+  "cond": "Ilk 5 sahifa o‘qilganda"
+ },
+ "kitobxon-sayyoh": {
+  "name": "Kitobxon sayyoh",
+  "cond": "100 bet o‘qilganda"
+ },
+ "kitoblar-sultoni": {
+  "name": "Kitoblar sultoni",
+  "cond": "500 bet o‘qilganda"
+ },
+ "ming-betlik-dovon": {
+  "name": "Ming betlik dovon",
+  "cond": "1 000 bet o‘qilganda"
+ },
+ "kitoblar-ummoni": {
+  "name": "Kitoblar ummoni",
+  "cond": "5 000 bet o‘qilganda"
+ },
+ "olovli-qanot": {
+  "name": "Olovli qanot",
+  "cond": "3 kun uzluksiz o‘qilganda"
+ },
+ "yengilmas-qahramon": {
+  "name": "Yengilmas qahramon",
+  "cond": "7 kun uzluksiz o‘qilganda"
+ },
+ "mutolaa-afsonasi": {
+  "name": "Mutolaa afsonasi",
+  "cond": "30 kun uzluksiz o‘qilganda"
+ },
+ "olmos-iroda": {
+  "name": "Olmos iroda",
+  "cond": "100 kun uzluksiz o‘qilganda"
+ },
+ "yil-qahramoni": {
+  "name": "Yil qahramoni",
+  "cond": "365 kun uzluksiz o‘qilganda"
+ },
+ "qalqon": {
+  "name": "Qalqon",
+  "cond": "Olov qalqonidan keyin darhol qaytganda"
+ },
+ "marra-golibi": {
+  "name": "Marra g‘olibi",
+  "cond": "Ilk kitob yakunlanganda"
+ },
+ "tezkor-mutolaa": {
+  "name": "Tezkor mutolaa",
+  "cond": "Kitob 3 kun ichida tugatilganda"
+ },
+ "kichik-kutubxonachi": {
+  "name": "Kichik kutubxonachi",
+  "cond": "10 ta kitob tugatilganda"
+ },
+ "mutolaa-akademigi": {
+  "name": "Mutolaa akademigi",
+  "cond": "25 ta kitob tugatilganda"
+ },
+ "bilim-notigi": {
+  "name": "Bilim notig‘i",
+  "cond": "Audio xulosada 5 Bilig olinganda"
+ },
+ "tafakkur": {
+  "name": "Tafakkur",
+  "cond": "Mustaqil fikr yuqori baholanganda"
+ },
+ "buyuk-suxandon": {
+  "name": "Buyuk suxandon",
+  "cond": "10 ta kitob bo‘yicha a'lo xulosa"
+ },
+ "oltin-qalam": {
+  "name": "Oltin qalam",
+  "cond": "Go‘zal adabiy so‘zlar bilan bayon etganda"
+ },
+ "zukko-kitobxon": {
+  "name": "Zukko kitobxon",
+  "cond": "Testda 100% to‘g‘ri javob"
+ },
+ "mantiq-ustasi": {
+  "name": "Mantiq ustasi",
+  "cond": "Jami 50 ta to‘g‘ri javob"
+ },
+ "bilim-akademiyasi": {
+  "name": "Bilim akademiyasi",
+  "cond": "10 ta test ketma-ket 100%"
+ },
+ "tonggi-qaldirgoch": {
+  "name": "Tonggi qaldirg‘och",
+  "cond": "06:00–09:00 oralig‘ida o‘qilganda"
+ },
+ "qutb-yulduzi": {
+  "name": "Qutb yulduzi",
+  "cond": "Uxlashdan oldin o‘qilganda"
+ },
+ "maroqli": {
+  "name": "Maroqli",
+  "cond": "Dam olish kunlari o‘qilganda"
+ },
+ "oila-iftixori": {
+  "name": "Oila iftixori",
+  "cond": "Ota-ona bilan suhbat a'lo o‘tganda"
+ },
+ "chaqmoq-kitobxon": {
+  "name": "Chaqmoq kitobxon",
+  "cond": "Bir o‘tirishda 30+ bet o‘qilganda"
+ },
+ "ezgulik-elchisi": {
+  "name": "Ezgulik elchisi",
+  "cond": "Qahramon fazilatlari bo‘yicha xulosa"
+ },
+ "xazinabon": {
+  "name": "Xazinabon",
+  "cond": "2000 Bilig to‘planganda"
+ }
+}

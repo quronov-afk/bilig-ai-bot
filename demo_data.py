@@ -42,6 +42,10 @@ DEMO_REPORTS = [
                       "demoqchi bo‘lgani haqida ko‘proq o‘ylashi foydali bo‘ladi.",
         "convo": "Kechki suhbat uchun savol: «Agar senda ham sehrli qalpoqcha bo‘lsa, "
                  "uni birinchi navbatda nimaga ishlatgan bo‘larding?»",
+        "child": "Barakalla! Hikoyani shunday jonli so‘zlab berdingki, men ham "
+                 "Hoshimjon bilan birga sayohat qilgandek bo‘ldim. Ayniqsa «adolat» "
+                 "so‘zini o‘rinli ishlatganing menga juda yoqdi. Shu zavq bilan "
+                 "davom et — keyingi kitob seni yanada qiziqarli olamga olib boradi!",
     },
     {
         "book": "Amir Temur haqida hikoyalar",
@@ -56,6 +60,10 @@ DEMO_REPORTS = [
                       "aytdi. «Nima uchun shunday bo‘ldi?» degan savolga e'tibor bering.",
         "convo": "Kechki suhbat uchun savol: «Amir Temurning qaysi fazilati senga "
                  "eng ko‘p yoqdi va nima uchun?»",
+        "child": "Zo‘r ish qilding! Tarixiy joy nomlarini xatosiz esladingiz — bu "
+                 "diqqating kuchli ekanini bildiradi. Endi bir narsani sinab ko‘r: "
+                 "har voqeadan keyin o‘zingga «nega shunday bo‘ldi?» deb savol ber. "
+                 "Shunda hikoyalar yanada qiziqarli ochiladi.",
     },
     {
         "book": "Tom Soyerning boshidan kechirganlari",
@@ -71,6 +79,9 @@ DEMO_REPORTS = [
         "convo": "Kechki suhbat uchun savol: «Tom devorni bo‘yashni do‘stlariga "
                  "qanday qilib qiziqarli ish qilib ko‘rsatdi? Sen ham shunday "
                  "qilganmisan?»",
+        "child": "«Rostgo‘ylik qo‘rquvdan kuchliroq» — buni o‘zing topding, va bu "
+                 "juda teran fikr. Katta kitobxonlar ham shunday o‘ylaydi. "
+                 "Qahramonlar ismini yozib borsang, hikoya yanada oson eslab qolinadi.",
     },
 ]
 
@@ -174,10 +185,11 @@ def fill_demo_child(parent_id, child_id):
         cursor.execute(
             "INSERT INTO Diagnostic_Logs (child_id, book_id, type, factual_score, "
             "logic_score, conclusion_score, fluency_score, vocabulary_score, "
-            "parent_note, convo_topic, created_at, bonus_bilig) "
-            "VALUES (?, ?, 'voice', ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "parent_note, convo_topic, created_at, bonus_bilig, child_note) "
+            "VALUES (?, ?, 'voice', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (child_id, book_ids.get(rep["book"]), f, l, c, fl, v,
-             note, rep["convo"], _iso(rep["days_ago"], hour=20), rep["bonus"])
+             note, rep["convo"], _iso(rep["days_ago"], hour=20), rep["bonus"],
+             rep["child"])
         )
 
     # 5. Tanga, streak, nishonlar

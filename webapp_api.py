@@ -21,7 +21,7 @@ import hashlib
 import asyncio
 import threading
 import urllib.parse
-from datetime import datetime
+from datetime import datetime, date, timedelta
 
 import requests
 from flask import Flask, request, jsonify, send_from_directory, g
@@ -54,6 +54,8 @@ for _col_sql in (
     # kabinetidan yaratganda beriladi; farzand keyinchalik o‘z telefonidan
     # kirmoqchi bo‘lsa, aynan shu kodni kiritadi.
     "ALTER TABLE Users ADD COLUMN child_code TEXT",
+    # AI ustozning bolaning o‘ziga aytgan iliq xabari (ota-ona hisoboti alohida)
+    "ALTER TABLE Diagnostic_Logs ADD COLUMN child_note TEXT",
 ):
     try:
         cursor.execute(_col_sql)
@@ -181,6 +183,71 @@ def has_voice_report(child_id: int, book_id: int) -> bool:
     return cursor.fetchone() is not None
 
 
+# Daraja bosqichlari — database.py dagi calculate_and_update_rank bilan bir xil
+RANK_STEPS = [(50, "Kitobxon Iztopar"), (150, "Kitobxon Qahramon"), (300, "Bilig Donishmandi")]
+
+WEEKDAY_SHORT = ["Du", "Se", "Ch", "Pa", "Ju", "Sh", "Ya"]
+
+
+def get_week_activity(child_id: int):
+    """Oxirgi 7 kun: qaysi kunlari kitob o‘qilgan.
+
+    Bosh sahifadagi haftalik chiziq uchun — bola uzluksizligini
+    bir qarashda ko‘rsatadi.
+    """
+    today = date.today()
+    first = today - timedelta(days=6)
+    cursor.execute(
+        "SELECT DISTINCT substr(created_at, 1, 10) FROM Reading_Logs "
+        "WHERE child_id = ? AND substr(created_at, 1, 10) >= ?",
+        (child_id, first.isoformat())
+    )
+    done = {r[0] for r in cursor.fetchall()}
+    week = []
+    for i in range(6, -1, -1):
+        d = today - timedelta(days=i)
+        week.append({
+            "label": WEEKDAY_SHORT[d.weekday()],
+            "read": d.isoformat() in done,
+            "today": i == 0,
+        })
+    return week
+
+
+def get_shelf_books(child_id: int, parent_id: int = None):
+    """Kitoblar javoni: rejadagi BARCHA kitoblar, tugatilganlari ham.
+
+    Javon — bu kolleksiya: bola nima yig‘ganini ko‘rsin. Avval hozir
+    o‘qilayotganlari (eng ko‘p o‘qilgani birinchi), keyin tugatilganlari.
+    """
+    q = ("SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages, pb.is_completed "
+         "FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+         "WHERE rp.child_id = ?")
+    params = [child_id]
+    if parent_id:
+        q += " AND rp.parent_id = ?"
+        params.append(parent_id)
+    q += " ORDER BY pb.is_completed ASC, pb.pages_read DESC"
+    cursor.execute(q, params)
+    return [
+        {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3],
+         "total_pages": b[4], "completed": bool(b[5])}
+        for b in cursor.fetchall()
+    ]
+
+
+def get_next_rank(total_pages: int):
+    """Keyingi darajagacha qancha bet qolgani — ilhomlantirish uchun."""
+    for limit, title in RANK_STEPS:
+        if total_pages < limit:
+            return {
+                "title": title,
+                "pages_left": limit - total_pages,
+                "progress": min(100, int(total_pages / limit * 100)),
+            }
+    return None
+
+
 def get_current_book(child_id: int, parent_id: int = None):
     """Bolaning hozir o‘qiyotgan (tugallanmagan, eng ko‘p sahifasi o‘qilgan) kitobini topadi."""
     q = ("SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages FROM Plan_Books pb "
@@ -196,6 +263,17 @@ def get_current_book(child_id: int, parent_id: int = None):
     if not row:
         return None
     return {"id": row[0], "title": row[1], "author": row[2], "pages_read": row[3], "total_pages": row[4]}
+
+
+def get_latest_child_note(child_id: int):
+    """AI ustozning bolaning o‘ziga aytgan so‘nggi iliq xabari."""
+    cursor.execute(
+        "SELECT child_note FROM Diagnostic_Logs WHERE child_id = ? AND child_note IS NOT NULL "
+        "AND child_note != '' ORDER BY created_at DESC LIMIT 1",
+        (child_id,)
+    )
+    row = cursor.fetchone()
+    return row[0] if row else ""
 
 
 def get_latest_report(child_id: int):
@@ -467,7 +545,9 @@ def parent_home(child_id):
         "total_pages": total_pages, "completed_books": completed_books,
         "current_book": current_book, "active_books": active_books,
         "recent_activity": recent_activity, "last_report": last_report,
-        "last_badge": last_badge, "last_audio_score": last_audio_score
+        "last_badge": last_badge, "last_audio_score": last_audio_score,
+        "week": get_week_activity(child_id), "next_rank": get_next_rank(total_pages),
+        "badges": badges or "", "shelf_books": get_shelf_books(child_id, g.user_id)
     })
 
 
@@ -655,6 +735,33 @@ def parent_recommended_books():
     age = int(request.args.get("age", 10))
     key = get_age_category_key(age)
     return jsonify(RECOMMENDED_BOOKS.get(key, []))
+
+
+@app.route("/api/parent/catalog", methods=["GET"])
+@require_auth
+def parent_catalog():
+    """Kitoblar katalogi — nomi va muallifi alohida ajratilgan holda.
+
+    Ota-ona kitobni shu ro‘yxatdan tanlaydi: nom, muallif va muqova tayyor,
+    ya'ni AI umuman chaqirilmaydi. Ro‘yxat kichik bo‘lgani uchun bir marta
+    to‘liq beriladi, qidiruv va yosh bo‘yicha saralash ilovaning o‘zida bo‘ladi.
+    """
+    books = []
+    for age_key, titles in RECOMMENDED_BOOKS.items():
+        for raw in titles:
+            text = (raw or "").strip().rstrip(".")
+            if not text:
+                continue
+            if "." in text:
+                title, author = text.split(".", 1)
+            else:
+                title, author = text, ""
+            books.append({
+                "title": title.strip(),
+                "author": author.strip(),
+                "age": age_key,
+            })
+    return jsonify(books)
 
 
 @app.route("/api/parent/plans", methods=["GET"])
@@ -953,9 +1060,53 @@ def child_home():
     name, coins, streak, rank, badges = row
     current_book = get_current_book(child_id)
     last_badge = (badges or "").split(",")[-1].strip() if badges else None
+    rank, total_pages = calculate_and_update_rank(child_id)
+
+    # Joriy kitob bo‘yicha test va audio soni
+    if current_book:
+        cursor.execute(
+            "SELECT mid_test_1_done, mid_test_2_done, final_test_done, audio_count "
+            "FROM Plan_Books WHERE book_id = ?", (current_book["id"],)
+        )
+        r = cursor.fetchone()
+        if r:
+            current_book["tests_done"] = int(r[0] or 0) + int(r[1] or 0) + int(r[2] or 0)
+            current_book["audio_count"] = int(r[3] or 0)
+
+    # Rejadagi kitoblar (bosh sahifada 3 tasi ko‘rsatiladi)
+    cursor.execute(
+        "SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages FROM Plan_Books pb "
+        "JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+        "WHERE rp.child_id = ? AND pb.is_completed = 0 ORDER BY pb.pages_read DESC",
+        (child_id,)
+    )
+    active_books = [
+        {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3], "total_pages": b[4]}
+        for b in cursor.fetchall()
+    ]
+
+    cursor.execute(
+        "SELECT COUNT(*) FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+        "WHERE rp.child_id = ? AND pb.is_completed = 1", (child_id,)
+    )
+    completed_books = cursor.fetchone()[0]
+
+    cursor.execute(
+        "SELECT bonus_bilig FROM Diagnostic_Logs WHERE child_id = ? AND type = 'voice' "
+        "ORDER BY created_at DESC LIMIT 1", (child_id,)
+    )
+    r = cursor.fetchone()
+    last_audio_score = int(r[0]) if r and r[0] else None
+
     return jsonify({
         "name": name, "coins": coins, "streak": streak, "rank": rank,
-        "current_book": current_book, "last_badge": last_badge
+        "current_book": current_book, "last_badge": last_badge,
+        "week": get_week_activity(child_id), "next_rank": get_next_rank(total_pages),
+        "badges": badges or "", "total_pages": total_pages,
+        "completed_books": completed_books, "active_books": active_books,
+        "shelf_books": get_shelf_books(child_id),
+        "last_audio_score": last_audio_score,
+        "child_note": get_latest_child_note(child_id)
     })
 
 
@@ -1128,14 +1279,15 @@ def child_submit_voice(book_id):
             )
         cursor.execute(
             "INSERT INTO Diagnostic_Logs (child_id, book_id, type, factual_score, logic_score, "
-            "conclusion_score, fluency_score, vocabulary_score, parent_note, convo_topic, created_at, bonus_bilig) "
-            "VALUES (?, ?, 'voice', ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "conclusion_score, fluency_score, vocabulary_score, parent_note, convo_topic, created_at, bonus_bilig, child_note) "
+            "VALUES (?, ?, 'voice', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (child_id, book_id,
              diag.get("factual_score", 0), diag.get("logic_score", 0), diag.get("conclusion_score", 0),
              diag.get("fluency_score", 0), diag.get("vocabulary_score", 0),
              json.dumps(result.get("parent_report", {}), ensure_ascii=False),
              result.get("parent_report", {}).get("conversation_topic", ""),
-             datetime.now().strftime("%Y-%m-%d %H:%M:%S"), bonus)
+             datetime.now().strftime("%Y-%m-%d %H:%M:%S"), bonus,
+             result.get("child_feedback", ""))
         )
         conn.commit()
 

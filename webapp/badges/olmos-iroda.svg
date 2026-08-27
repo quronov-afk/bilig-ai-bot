@@ -1,0 +1,24 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Olmos iroda">
+  <defs>
+    <linearGradient id="rimolmosiroda" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A8E8F0"/><stop offset="1" stop-color="#3FA8C4"/>
+    </linearGradient>
+    <radialGradient id="fldolmosiroda" cx=".5" cy=".38" r=".72">
+      <stop offset="0" stop-color="#F2FDFF"/><stop offset="1" stop-color="#CDEFF8"/>
+    </radialGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#rimolmosiroda)"/>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#000" stroke-opacity=".13" stroke-width="1.5"/>
+  <path d="M110.00 56.60c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(90.0 110.00 60.00)"/><path d="M107.97 70.69c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(106.4 107.97 74.09)"/><path d="M102.06 83.63c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(122.7 102.06 87.03)"/><path d="M92.74 94.39c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(139.1 92.74 97.79)"/><path d="M80.77 102.08c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(155.5 80.77 105.48)"/><path d="M67.12 106.09c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(171.8 67.12 109.49)"/><path d="M52.88 106.09c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(188.2 52.88 109.49)"/><path d="M39.23 102.08c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(204.5 39.23 105.48)"/><path d="M27.26 94.39c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(220.9 27.26 97.79)"/><path d="M17.94 83.63c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(237.3 17.94 87.03)"/><path d="M12.03 70.69c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(253.6 12.03 74.09)"/><path d="M10.00 56.60c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(270.0 10.00 60.00)"/><path d="M12.03 42.51c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(286.4 12.03 45.91)"/><path d="M17.94 29.57c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(302.7 17.94 32.97)"/><path d="M27.26 18.81c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(319.1 27.26 22.21)"/><path d="M39.23 11.12c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(335.5 39.23 14.52)"/><path d="M52.88 7.11c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(351.8 52.88 10.51)"/><path d="M67.12 7.11c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(368.2 67.12 10.51)"/><path d="M80.77 11.12c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(384.5 80.77 14.52)"/><path d="M92.74 18.81c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(400.9 92.74 22.21)"/><path d="M102.06 29.57c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(417.3 102.06 32.97)"/><path d="M107.97 42.51c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2A7F99" opacity="0.5" transform="rotate(433.6 107.97 45.91)"/>
+  <circle cx="60" cy="60" r="44" fill="url(#fldolmosiroda)"/>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="#2A7F99" stroke-opacity=".5" stroke-width="1.6"/>
+  <path d="M28 40a44 44 0 0 1 64 0" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="3" stroke-linecap="round"/>
+  <path d="M42 46h36l14 16-32 34-32-34z" fill="#7FD8EC" stroke="#1F6E88" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M42 46 34 62h20z" fill="#CFF3FC"/>
+  <path d="M78 46l8 16H66z" fill="#CFF3FC"/>
+  <path d="M42 46h36l-6 16H48z" fill="#A8E8F0"/>
+  <path d="M34 62h52L60 96z" fill="#5FC5DD" opacity=".85"/>
+  <path d="M48 62 60 96 72 62" fill="none" stroke="#1F6E88" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M46 40l2.5 5.5L54 48l-5.5 2.5L46 56l-2.5-5.5L38 48l5.5-2.5z" fill="#FFF" opacity=".75"/>
+  <text x="60" y="36" font-family="Nunito,sans-serif" font-size="13" font-weight="900"
+        fill="#1F6E88" text-anchor="middle">100</text></svg>

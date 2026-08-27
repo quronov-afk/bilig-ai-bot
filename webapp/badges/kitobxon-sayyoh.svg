@@ -1,0 +1,22 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kitobxon sayyoh">
+  <defs>
+    <linearGradient id="rimkitobxonsayyoh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6FC7DE"/><stop offset="1" stop-color="#2C8AAE"/>
+    </linearGradient>
+    <radialGradient id="fldkitobxonsayyoh" cx=".5" cy=".38" r=".72">
+      <stop offset="0" stop-color="#F4FCFF"/><stop offset="1" stop-color="#D5EFF8"/>
+    </radialGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#rimkitobxonsayyoh)"/>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#000" stroke-opacity=".13" stroke-width="1.5"/>
+  <path d="M110.00 56.60c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(90.0 110.00 60.00)"/><path d="M106.98 73.70c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(110.0 106.98 77.10)"/><path d="M98.30 88.74c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(130.0 98.30 92.14)"/><path d="M85.00 99.90c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(150.0 85.00 103.30)"/><path d="M68.68 105.84c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(170.0 68.68 109.24)"/><path d="M51.32 105.84c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(190.0 51.32 109.24)"/><path d="M35.00 99.90c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(210.0 35.00 103.30)"/><path d="M21.70 88.74c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(230.0 21.70 92.14)"/><path d="M13.02 73.70c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(250.0 13.02 77.10)"/><path d="M10.00 56.60c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(270.0 10.00 60.00)"/><path d="M13.02 39.50c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(290.0 13.02 42.90)"/><path d="M21.70 24.46c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(310.0 21.70 27.86)"/><path d="M35.00 13.30c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(330.0 35.00 16.70)"/><path d="M51.32 7.36c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(350.0 51.32 10.76)"/><path d="M68.68 7.36c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(370.0 68.68 10.76)"/><path d="M85.00 13.30c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(390.0 85.00 16.70)"/><path d="M98.30 24.46c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(410.0 98.30 27.86)"/><path d="M106.98 39.50c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#1D6C8A" opacity="0.5" transform="rotate(430.0 106.98 42.90)"/>
+  <circle cx="60" cy="60" r="44" fill="url(#fldkitobxonsayyoh)"/>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="#1D6C8A" stroke-opacity=".5" stroke-width="1.6"/>
+  <path d="M28 40a44 44 0 0 1 64 0" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 80c-7-5-16-7-25-6v16c9-1 18 1 25 6z" fill="#DCEEF7" stroke="#2C7C9E" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M60 80c7-5 16-7 25-6v16c-9-1-18 1-25 6z" fill="#EDF8FD" stroke="#2C7C9E" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M60 80v16" stroke="#2C7C9E" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="60" cy="50" r="21" fill="#2C8AAE" stroke="#1D6C8A" stroke-width="2.4"/>
+  <circle cx="60" cy="50" r="16" fill="#8FD8EC" opacity=".55"/>
+  <path d="M60 32l4.6 12.4L77 50l-12.4 4.6L60 68l-4.6-13.4L42 50l13.4-5.6z" fill="#FFF3D0" stroke="#C8901A" stroke-width="1.6" stroke-linejoin="round"/>
+  <circle cx="60" cy="50" r="3.4" fill="#E2701A"/></svg>

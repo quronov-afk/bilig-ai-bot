@@ -1,0 +1,26 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Birinchi qadam">
+  <defs>
+    <linearGradient id="rimbirinchiqadam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7FCB92"/><stop offset="1" stop-color="#3E9A62"/>
+    </linearGradient>
+    <radialGradient id="fldbirinchiqadam" cx=".5" cy=".38" r=".72">
+      <stop offset="0" stop-color="#FBFDF6"/><stop offset="1" stop-color="#DFF1E2"/>
+    </radialGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#rimbirinchiqadam)"/>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#000" stroke-opacity=".13" stroke-width="1.5"/>
+  <path d="M110.00 56.60c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(90.0 110.00 60.00)"/><path d="M106.98 73.70c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(110.0 106.98 77.10)"/><path d="M98.30 88.74c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(130.0 98.30 92.14)"/><path d="M85.00 99.90c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(150.0 85.00 103.30)"/><path d="M68.68 105.84c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(170.0 68.68 109.24)"/><path d="M51.32 105.84c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(190.0 51.32 109.24)"/><path d="M35.00 99.90c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(210.0 35.00 103.30)"/><path d="M21.70 88.74c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(230.0 21.70 92.14)"/><path d="M13.02 73.70c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(250.0 13.02 77.10)"/><path d="M10.00 56.60c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(270.0 10.00 60.00)"/><path d="M13.02 39.50c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(290.0 13.02 42.90)"/><path d="M21.70 24.46c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(310.0 21.70 27.86)"/><path d="M35.00 13.30c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(330.0 35.00 16.70)"/><path d="M51.32 7.36c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(350.0 51.32 10.76)"/><path d="M68.68 7.36c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(370.0 68.68 10.76)"/><path d="M85.00 13.30c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(390.0 85.00 16.70)"/><path d="M98.30 24.46c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(410.0 98.30 27.86)"/><path d="M106.98 39.50c2.11 1.22 2.11 4.35 0 6.80c-2.11 -2.45 -2.11 -5.58 0 -6.80z" fill="#2F7A4B" opacity="0.5" transform="rotate(430.0 106.98 42.90)"/>
+  <circle cx="60" cy="60" r="44" fill="url(#fldbirinchiqadam)"/>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="#2F7A4B" stroke-opacity=".5" stroke-width="1.6"/>
+  <path d="M28 40a44 44 0 0 1 64 0" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 74V51" stroke="#3E8F58" stroke-width="4.6" stroke-linecap="round"/>
+  <path d="M60 58c-3-9-11-12-17-11-1 7 4 15 12 15 2 0 4-1 5-4z" fill="#5FBE7B"/>
+  <path d="M60 58c-5-4-10-6-15-6" stroke="#2F7A4B" stroke-opacity=".45" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M60 53c3-11 13-14 20-12 1 8-5 17-14 17-2 0-5-1-6-5z" fill="#79D18F"/>
+  <path d="M60 53c6-5 12-7 18-7" stroke="#2F7A4B" stroke-opacity=".45" stroke-width="1.7" stroke-linecap="round"/>
+  <circle cx="60" cy="47" r="4.2" fill="#F5C542"/>
+  <circle cx="58.6" cy="45.6" r="1.4" fill="#fff" opacity=".8"/>
+  <path d="M60 76c-6-5-14-7-23-6v18c9-1 17 1 23 6z" fill="#F3E6CE" stroke="#B99A63" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M60 76c6-5 14-7 23-6v18c-9-1-17 1-23 6z" fill="#FBF3E2" stroke="#B99A63" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M60 76v18" stroke="#B99A63" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M43 79h9M43 84h9M68 79h9M68 84h9" stroke="#C9AF7E" stroke-width="1.5" stroke-linecap="round"/></svg>
