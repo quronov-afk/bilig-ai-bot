@@ -72,6 +72,10 @@ for _col_sql in (
     # Ota-ona kitob muqovasini rasmga olsa — o‘sha rasm fayli nomi.
     # Bo‘sh bo‘lsa, muqova katalogdan nomi bo‘yicha topiladi.
     "ALTER TABLE Plan_Books ADD COLUMN cover_file TEXT",
+
+    # Bankdagi test qayerdan kelgan: 1 — o‘qish davomida yig‘ilgan sahifa
+    # yozuvlaridan. Bunday test faqat YAKUNIY test sifatida ishlatiladi.
+    "ALTER TABLE Test_Bank ADD COLUMN from_notes INTEGER DEFAULT 0",
 ):
     try:
         cursor.execute(_col_sql)
@@ -377,14 +381,15 @@ def _attach_test_from_bank(book_id, title, author):
     """
     key = book_key(title, author)
     try:
-        cursor.execute("SELECT questions_json, book_key FROM Test_Bank WHERE book_key = ?", (key,))
+        cursor.execute(
+            "SELECT questions_json, book_key, from_notes FROM Test_Bank WHERE book_key = ?", (key,))
         row = cursor.fetchone()
         # Muallif noma'lum bo‘lsa, kalit "kitob nomi|" ko‘rinishida bo‘ladi —
         # bunda bankdagi ayni shu nomli kitobni muallifidan qat'i nazar topamiz.
         if not row and key.endswith("|"):
             cursor.execute(
-                "SELECT questions_json, book_key FROM Test_Bank WHERE book_key LIKE ? LIMIT 1",
-                (key + "%",))
+                "SELECT questions_json, book_key, from_notes FROM Test_Bank "
+                "WHERE book_key LIKE ? LIMIT 1", (key + "%",))
             row = cursor.fetchone()
     except Exception:
         return 0
@@ -403,18 +408,39 @@ def _attach_test_from_bank(book_id, title, author):
             (book_id, row[0])
         )
         cursor.execute("UPDATE Test_Bank SET use_count = use_count + 1 WHERE book_key = ?", (key,))
+        # Bankdagi test yozuvlardan tuzilgan bo‘lsa, bu kitobda ham faqat
+        # yakuniy test sifatida chiqadi.
+        if len(row) > 2 and row[2]:
+            cursor.execute(
+                "INSERT OR REPLACE INTO Auto_Test_State (book_id, notes_used, updated_at) "
+                "VALUES (?, 0, ?)", (book_id, datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+        else:
+            cursor.execute("DELETE FROM Auto_Test_State WHERE book_id = ?", (book_id,))
         conn.commit()
     return count
 
 
-def _save_test_to_bank(title, author, raw_json):
-    """Yangi tuzilgan testni umumiy bankka qo‘shadi."""
+def _save_test_to_bank(title, author, raw_json, from_notes=0):
+    """Yangi tuzilgan testni umumiy bankka qo‘shadi.
+
+    from_notes=1 — test o‘qish davomida yig‘ilgan sahifa yozuvlaridan
+    tuzilgan. Bunday test kitobning hamma joyini qamramaydi, shuning uchun
+    oraliq testlarga bo‘linmaydi: faqat yakuniy test sifatida beriladi.
+    Bu belgi bank orqali boshqa oilalarga ham o‘tadi.
+    """
     key = book_key(title, author)
     with db_lock:
+        # To‘liq (rasmlardan tuzilgan) testni yozuvlardan tuzilgani bilan
+        # almashtirib yubormaymiz — sifatlisi ustun turadi.
+        cursor.execute("SELECT from_notes FROM Test_Bank WHERE book_key = ?", (key,))
+        row = cursor.fetchone()
+        if row is not None and from_notes and not row[0]:
+            return
         cursor.execute(
-            "INSERT OR REPLACE INTO Test_Bank (book_key, title, author, questions_json, use_count, created_at) "
-            "VALUES (?, ?, ?, ?, 1, ?)",
-            (key, title, author, raw_json, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+            "INSERT OR REPLACE INTO Test_Bank (book_key, title, author, questions_json, "
+            "use_count, created_at, from_notes) VALUES (?, ?, ?, ?, 1, ?, ?)",
+            (key, title, author, raw_json,
+             datetime.now().strftime("%Y-%m-%d %H:%M:%S"), int(from_notes))
         )
         conn.commit()
 
@@ -518,7 +544,7 @@ def _maybe_build_test_from_notes(book_id):
                 # Umumiy bankka faqat yetarlicha to‘liq test tushsin — aks holda
                 # boshqa oilalar ham chala testni olib qoladi.
                 if len(notes) >= AUTO_TEST_BANK_MIN:
-                    _save_test_to_bank(title, author, raw_json)
+                    _save_test_to_bank(title, author, raw_json, from_notes=1)
                 print("[auto_test] «%s» uchun %d ta savol tuzildi (%d ta sahifa yozuvidan)"
                       % (title, len(questions), len(notes)))
             except Exception:
@@ -527,6 +553,15 @@ def _maybe_build_test_from_notes(book_id):
         threading.Thread(target=worker, daemon=True).start()
     except Exception:
         traceback.print_exc()
+
+
+def _final_only_book_ids():
+    """Testi sahifa yozuvlaridan tuzilgan kitoblar — ularda oraliq test yo‘q."""
+    try:
+        cursor.execute("SELECT book_id FROM Auto_Test_State")
+        return {r[0] for r in cursor.fetchall()}
+    except Exception:
+        return set()
 
 
 def _page_checks_today(child_id):
@@ -1413,6 +1448,9 @@ def parent_plans():
     if child_id:
         q += " AND child_id = ?"
         params.append(child_id)
+    # DIQQAT: bu yordamchi ham shu cursor'dan foydalanadi, shuning uchun
+    # asosiy so‘rovdan OLDIN chaqiriladi — aks holda natija o‘chib ketadi.
+    _final_only = _final_only_book_ids()
     cursor.execute(q, params)
     plans = []
     for plan_id, name, prize, status, cid, plan_type in cursor.fetchall():
@@ -1424,7 +1462,9 @@ def parent_plans():
         )
         books = [
             {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3],
-             "total_pages": b[4], "completed": bool(b[5]), "mid_test_1_done": bool(b[6]),
+             "total_pages": b[4], "completed": bool(b[5]),
+             "test_final_only": b[0] in _final_only,
+             "mid_test_1_done": bool(b[6]),
              "mid_test_2_done": bool(b[7]), "final_test_done": bool(b[8]),
              "cover_file": b[9], "has_voice": has_voice_report(cid, b[0])}
             for b in cursor.fetchall()
@@ -1603,6 +1643,10 @@ def _start_test_job(book_id, title, author, photos_bytes):
                     "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
                     (book_id, raw_json)
                 )
+                # Ota-ona rasmlardan tuzgan test TO‘LIQ hisoblanadi — u oraliq
+                # testlarga ham bo‘linadi. Shuning uchun «faqat yakuniy»
+                # belgisini olib tashlaymiz.
+                cursor.execute("DELETE FROM Auto_Test_State WHERE book_id = ?", (book_id,))
                 conn.commit()
             _save_test_to_bank(title, author, raw_json)
             _set_test_job(job_id, status="tayyor", count=len(questions))
@@ -1953,6 +1997,8 @@ def child_books():
     if not parent_id:
         return jsonify({"error": "Ota-onaga ulanmagansiz"}), 400
 
+    # Asosiy so‘rovdan OLDIN — yordamchi ham shu cursor'dan foydalanadi.
+    _final_only = _final_only_book_ids()
     cursor.execute(
         "SELECT plan_id, name, prize FROM Reading_Plans WHERE parent_id = ? AND child_id = ? AND status = 'active'",
         (parent_id, child_id)
@@ -1967,7 +2013,9 @@ def child_books():
         )
         books = [
             {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3],
-             "total_pages": b[4], "completed": bool(b[5]), "mid_test_1_done": bool(b[6]),
+             "total_pages": b[4], "completed": bool(b[5]),
+             "test_final_only": b[0] in _final_only,
+             "mid_test_1_done": bool(b[6]),
              "mid_test_2_done": bool(b[7]), "final_test_done": bool(b[8]),
              "cover_file": b[9], "has_voice": has_voice_report(child_id, b[0])}
             for b in cursor.fetchall()
@@ -1991,11 +2039,17 @@ def child_book_detail(book_id):
         return jsonify({"error": "Kitob topilmadi"}), 404
     cursor.execute("SELECT test_id FROM Book_Tests WHERE book_id = ?", (book_id,))
     has_test = cursor.fetchone() is not None
+    # Test o‘qish davomida yig‘ilgan yozuvlardan tuzilgan bo‘lsa, u kitobning
+    # hamma joyini qamramaydi — shuning uchun oraliq testlarga bo‘linmaydi.
+    # Bola «Kitobni yakunladim» deganda bitta yakuniy test beriladi.
+    cursor.execute("SELECT book_id FROM Auto_Test_State WHERE book_id = ?", (book_id,))
+    final_only = cursor.fetchone() is not None
     return jsonify({
         "title": row[0], "author": row[1], "pages_read": row[2], "total_pages": row[3],
         "completed": bool(row[4]), "mid_test_1_done": bool(row[5]),
         "mid_test_2_done": bool(row[6]), "final_test_done": bool(row[7]),
-        "has_test": has_test, "has_voice": has_voice_report(child_id, book_id)
+        "has_test": has_test, "test_final_only": final_only,
+        "has_voice": has_voice_report(child_id, book_id)
     })
 
 
@@ -2224,6 +2278,12 @@ def child_submit_test(book_id):
     stage = data.get("stage", "mid_test_1")  # mid_test_1 | mid_test_2 | final_test
     answers = data.get("answers", {})  # {"1": "A) ...", ...}
     child_id = _resolve_active_child(request)
+
+    # Test o‘qish davomida yig‘ilgan yozuvlardan tuzilgan bo‘lsa, u faqat
+    # yakuniy test sifatida beriladi — oraliq bosqichlarga bo‘linmaydi.
+    cursor.execute("SELECT book_id FROM Auto_Test_State WHERE book_id = ?", (book_id,))
+    if cursor.fetchone() is not None:
+        stage = "final_test"
 
     cursor.execute("SELECT questions_json FROM Book_Tests WHERE book_id = ?", (book_id,))
     row = cursor.fetchone()

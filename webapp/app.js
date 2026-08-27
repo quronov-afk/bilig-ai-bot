@@ -1531,7 +1531,14 @@ function marathonCardHtml(p) {
 function bookCardHtml(b, isParent) {
   const pr = bookProgress(b);
   let testBadges = "";
-  if (b.mid_test_1_done !== undefined) {
+  if (b.test_final_only) {
+    // Testi o‘qish davomida yig‘ilgan — oraliq bosqichlar yo‘q,
+    // shuning uchun ularni belgilarda ham ko‘rsatmaymiz.
+    testBadges = '<div class="badge-row">' +
+      '<span class="badge ' + (b.final_test_done ? "done" : "pending") + '">Yakuniy test</span>' +
+      '<span class="badge ' + (b.has_voice ? "done" : "pending") + '">Ovozli tahlil</span>' +
+      '</div>';
+  } else if (b.mid_test_1_done !== undefined) {
     testBadges = '<div class="badge-row">' +
       '<span class="badge ' + (b.mid_test_1_done ? "done" : "pending") + '">1-oraliq test</span>' +
       '<span class="badge ' + (b.mid_test_2_done ? "done" : "pending") + '">2-oraliq test</span>' +
@@ -1579,8 +1586,6 @@ const TestShots = {
     openModal("Kitob testini tuzish",
       '<p class="section-sub" style="margin-top:-4px">Farzandingiz kitobni tushunganini tekshiradigan savollar kerak. ' +
       'Kitobning ichidan ' + TEST_SHOTS_GOOD + '-10 ta sahifani suratga oling — AI o‘qib chiqib, savollarni o‘zi tuzadi.</p>' +
-      '<p class="section-sub">Shoshilmasangiz, bu shart emas: farzandingiz o‘qish davomida sahifalarni ' +
-      'rasmga olib borsa, test o‘z-o‘zidan tuziladi.</p>' +
       '<div id="shot-body"></div>' +
       '<input type="file" id="shot-input" accept="image/*" multiple class="hidden" />'
     );
@@ -1750,7 +1755,21 @@ async function openBookModal(bookId) {
   const b = await api("/api/child/book/" + bookId + asChildQuery());
   const pct = b.total_pages ? Math.min(100, Math.round(b.pages_read / b.total_pages * 100)) : 0;
   let testsHtml;
-  if (b.has_test) {
+  if (b.has_test && b.test_final_only) {
+    // Test o‘qish davomida yig‘ilgan yozuvlardan tuzilgan. U kitobning
+    // hamma joyini qamramaydi, shuning uchun oraliq testlar berilmaydi —
+    // bola kitobni tugatdim deganda bitta yakuniy test topshiradi.
+    testsHtml = '<p class="eyebrow" style="margin-top:18px">Kitobni tugatding?</p>' +
+      (b.final_test_done
+        ? '<div class="card" style="text-align:center;font-weight:700;color:var(--success-deep)">' +
+            'Yakuniy test topshirilgan</div>'
+        : choiceCard({
+            ic: "award", tone: "gold", action: "open-test",
+            data: { id: bookId, stage: "final_test" },
+            title: "Kitobni yakunladim",
+            desc: "Oxirigacha o‘qib bo‘lgan bo‘lsang, yakuniy testni topshir va kitobni yopamiz."
+          }));
+  } else if (b.has_test) {
     testsHtml = '<p class="eyebrow" style="margin-top:18px">Bilim testlari</p><div class="action-row">' +
       '<button class="btn ' + (b.mid_test_1_done ? "btn-secondary" : "btn-outline") + '" data-action="open-test" data-id="' + bookId + '" data-stage="mid_test_1">1-oraliq ' + (b.mid_test_1_done ? "(bajarilgan)" : "") + '</button>' +
       '<button class="btn ' + (b.mid_test_2_done ? "btn-secondary" : "btn-outline") + '" data-action="open-test" data-id="' + bookId + '" data-stage="mid_test_2">2-oraliq ' + (b.mid_test_2_done ? "(bajarilgan)" : "") + '</button>' +
