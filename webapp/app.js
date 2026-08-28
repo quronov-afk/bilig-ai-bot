@@ -1626,7 +1626,12 @@ function bookCardHtml(b, isParent) {
       '<span class="badge ' + (b.has_voice ? "done" : "pending") + '">Ovozli tahlil</span>' +
       '</div>';
   }
-  return '<div class="card book-card" id="book-card-' + b.id + '" ' + (isParent ? "" : 'data-action="open-book" data-id="' + b.id + '"') + '>' +
+  // Kartani bosish kitob oynasini ochadi — ota-onaga ham. Ilgari ota-onada
+  // bu yo‘q edi va u «Kitob haqida», holat va Bolaxona tugmasi turgan
+  // oynani umuman ocholmasdi. Ichidagi tugmalar (test tuzish, o‘chirish)
+  // baribir ustun turadi: dispatcher eng ichkaridagi amalni oladi.
+  return '<div class="card book-card" id="book-card-' + b.id + '" ' +
+    'data-action="open-book" data-id="' + b.id + '">' +
     coverHtml(b.title, b.author, "book-cover", b.cover_file) +
     '<div class="book-info">' +
     '<p class="book-title">' + escapeHtml(b.title) + '</p>' +
@@ -1990,17 +1995,34 @@ function openParentBookModal(bookId, b, head) {
   const bb = b.book_base;
   let baseHtml = "";
   if (bb && bb.summary) {
+    // Yosh toifasi va mavzular — chip ko‘rinishida, tez ko‘z yuguritish uchun
+    let chips = "";
+    if (bb.age_band) chips += '<span class="chip">' + escapeHtml(bb.age_band) + ' yosh</span>';
+    if (bb.difficulty) chips += '<span class="chip">' + escapeHtml(bb.difficulty) + '</span>';
+    (bb.topics || []).slice(0, 5).forEach(function (t) {
+      chips += '<span class="chip">' + escapeHtml(t) + '</span>';
+    });
+
     baseHtml =
       '<p class="eyebrow" style="margin-top:18px">Kitob haqida</p>' +
+      (chips ? '<div class="chip-row" style="margin-bottom:10px">' + chips + '</div>' : "") +
       '<div class="card" style="padding:14px 16px">' +
         '<p style="margin:0 0 10px">' + escapeHtml(bb.summary) + '</p>' +
         (bb.characters
           ? '<p class="section-sub" style="margin:0 0 6px"><b>Qahramonlar:</b> ' +
             escapeHtml(bb.characters) + '</p>' : "") +
         (bb.theme
-          ? '<p class="section-sub" style="margin:0"><b>Saboq:</b> ' +
+          ? '<p class="section-sub" style="margin:0 0 6px"><b>G‘oyasi:</b> ' +
             escapeHtml(bb.theme) + '</p>' : "") +
-      '</div>';
+        (bb.conclusion
+          ? '<p class="section-sub" style="margin:0"><b>Xulosasi:</b> ' +
+            escapeHtml(bb.conclusion) + '</p>' : "") +
+      '</div>' +
+      (bb.for_whom
+        ? '<div class="card" style="padding:12px 14px;margin-top:8px">' +
+            '<p class="section-sub" style="margin:0"><b>Kimga mos:</b> ' +
+            escapeHtml(bb.for_whom) + '</p></div>'
+        : "");
   }
 
   let testLines;

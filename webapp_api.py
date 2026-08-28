@@ -79,6 +79,14 @@ for _col_sql in (
     "ALTER TABLE Book_Base ADD COLUMN short_form INTEGER DEFAULT 0",
     # Asar xulosasi — ota-onaga «bu kitob farzandimga nima beradi?» javobi.
     "ALTER TABLE Book_Base ADD COLUMN conclusion TEXT",
+    # Yosh toifasi: 4-6 | 7-8 | 9-10 | 11-13 | 14-16
+    "ALTER TABLE Book_Base ADD COLUMN age_band TEXT",
+    # Mavzu teglari (JSON ro‘yxat) — AI ustoz kitob tavsiya qilishda ishlatadi
+    "ALTER TABLE Book_Base ADD COLUMN topics TEXT",
+    # Qanday bolaga mos kelishi — tavsiya uchun eng muhim maydon
+    "ALTER TABLE Book_Base ADD COLUMN for_whom TEXT",
+    "ALTER TABLE Book_Base ADD COLUMN difficulty TEXT",
+    "ALTER TABLE Book_Base ADD COLUMN mood TEXT",
     # Ota-ona kitob muqovasini rasmga olsa — o‘sha rasm fayli nomi.
     # Bo‘sh bo‘lsa, muqova katalogdan nomi bo‘yicha topiladi.
     "ALTER TABLE Plan_Books ADD COLUMN cover_file TEXT",
@@ -626,15 +634,22 @@ def save_book_base(title, author, info, source, short_form=0):
                 return
             cursor.execute(
                 "INSERT OR REPLACE INTO Book_Base (book_key, title, author, summary, "
-                "characters, theme, conclusion, age_hint, source, short_form, "
+                "characters, theme, conclusion, age_hint, age_band, topics, "
+                "for_whom, difficulty, mood, source, short_form, "
                 "use_count, created_at, updated_at) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
                 "COALESCE((SELECT use_count FROM Book_Base WHERE book_key = ?), 0), "
                 "COALESCE((SELECT created_at FROM Book_Base WHERE book_key = ?), ?), ?)",
                 (key, title, author, (info.get("summary") or "").strip(),
                  (info.get("characters") or "").strip(), (info.get("theme") or "").strip(),
                  (info.get("conclusion") or "").strip(),
-                 (info.get("age_hint") or "").strip(), source, int(short_form),
+                 (info.get("age_hint") or "").strip(),
+                 (info.get("age_band") or "").strip(),
+                 json.dumps(info.get("topics") or [], ensure_ascii=False),
+                 (info.get("for_whom") or "").strip(),
+                 (info.get("difficulty") or "").strip(),
+                 (info.get("mood") or "").strip(),
+                 source, int(short_form),
                  key, key, now, now)
             )
             conn.commit()
@@ -695,7 +710,13 @@ def prepare_talk_questions(title, author, base):
     def worker():
         for stage in TALK_STAGES:
             try:
-                if get_talk_question(title, author, stage):
+                # DIQQAT: `cursor` — butun ilovada YAGONA obyekt. Fon ipida
+                # undan qulfsiz foydalanilsa, ayni paytda so‘rov bajarayotgan
+                # asosiy ipning natijasi o‘chib ketadi («Recursive use of
+                # cursors not allowed»). Shuning uchun O‘QISH ham qulf ostida.
+                with db_lock:
+                    mavjud = get_talk_question(title, author, stage)
+                if mavjud:
                     continue
                 q = run_async(ai_service.generate_talk_question(title, author, base, stage))
                 save_talk_question(title, author, stage, q)
@@ -706,26 +727,36 @@ def prepare_talk_questions(title, author, base):
     threading.Thread(target=worker, daemon=True).start()
 
 
+BASE_COLS = ("summary, characters, theme, age_hint, COALESCE(short_form, 0), "
+             "COALESCE(conclusion, ''), COALESCE(age_band, ''), "
+             "COALESCE(topics, ''), COALESCE(for_whom, ''), "
+             "COALESCE(difficulty, ''), COALESCE(mood, '')")
+
+
 def get_book_base(title, author):
     """Umumiy bazadan kitob haqidagi ma'lumotni oladi (bo‘lmasa None)."""
     key = book_key(title, author)
     try:
         cursor.execute(
-            "SELECT summary, characters, theme, age_hint, COALESCE(short_form, 0), "
-            "COALESCE(conclusion, '') FROM Book_Base WHERE book_key = ?", (key,))
+            "SELECT %s FROM Book_Base WHERE book_key = ?" % BASE_COLS, (key,))
         row = cursor.fetchone()
         if not row and key.endswith("|"):
             cursor.execute(
-                "SELECT summary, characters, theme, age_hint, COALESCE(short_form, 0), "
-                "COALESCE(conclusion, '') FROM Book_Base WHERE book_key LIKE ? LIMIT 1",
+                "SELECT %s FROM Book_Base WHERE book_key LIKE ? LIMIT 1" % BASE_COLS,
                 (key + "%",))
             row = cursor.fetchone()
     except Exception:
         return None
     if not row:
         return None
+    try:
+        topics = json.loads(row[7]) if row[7] else []
+    except Exception:
+        topics = []
     return {"summary": row[0], "characters": row[1], "theme": row[2],
-            "age_hint": row[3], "short_form": bool(row[4]), "conclusion": row[5]}
+            "age_hint": row[3], "short_form": bool(row[4]), "conclusion": row[5],
+            "age_band": row[6], "topics": topics, "for_whom": row[8],
+            "difficulty": row[9], "mood": row[10]}
 
 
 # ==========================================================
@@ -2804,7 +2835,11 @@ def _finish_voice(book_id, child_id, book_title, result, detail):
     _mark_celebrated(child_id, new_badges, later_badges)
     announce_badges(child_id, new_badges + later_badges)
 
-    parent_id = get_parent_id(child_id)
+    # Bu funksiya FON IPIDA ishlaydi, `cursor` esa yagona obyekt —
+    # o‘qishni ham qulf ostida qilamiz, aks holda ayni paytdagi so‘rovning
+    # natijasi o‘chib ketadi.
+    with db_lock:
+        parent_id = get_parent_id(child_id)
     if parent_id:
         pr = result.get("parent_report", {})
         send_telegram_message(
@@ -2957,7 +2992,8 @@ def _finish_talk(book_id, child_id, book_title, result, detail, stage, question)
     _mark_celebrated(child_id, new_badges, later_badges)
     announce_badges(child_id, new_badges + later_badges)
 
-    parent_id = get_parent_id(child_id)
+    with db_lock:
+        parent_id = get_parent_id(child_id)
     if parent_id:
         nom = "kitob boshi" if stage == "start" else "kitob yakuni"
         send_telegram_message(
