@@ -683,7 +683,9 @@ html, body {
 .week-strip {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius-md); box-shadow: var(--shadow-sm);
-  padding: 11px 12px 10px; margin-bottom: 4px;
+  padding: 11px 12px 10px;
+  /* Yuqoridagi «So‘nggi natijalar» kartasiga yopishib qolmasin */
+  margin: 12px 0 4px;
 }
 .week-days { display: flex; justify-content: space-between; gap: 4px; }
 .wd { display: flex; flex-direction: column; align-items: center; gap: 4px; flex: 1; min-width: 0; }
