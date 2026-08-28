@@ -290,6 +290,46 @@ def audio_part(audio_bytes: bytes):
     return types.Part.from_bytes(data=audio_bytes, mime_type=kind)
 
 
+# ==========================================================
+# O‘ZBEKCHA MATNNI TOZALASH
+# ----------------------------------------------------------
+# AI ba'zan tutuq belgisini noto‘g‘ri yozadi (o' yoki o` yoki o’), goho
+# inglizcha so‘zni tarjima qilmay qoldiradi. Tutuq belgisini o‘zimiz
+# tuzatamiz — bu xavfsiz almashtirish. Qolganini jurnalga yozamiz, chunki
+# uni avtomatik tuzatib bo‘lmaydi, lekin bilib turishimiz kerak.
+# ==========================================================
+_BAD_APOS = re.compile(r"([oOgG])['`’]")
+_CYRILLIC = re.compile(r"[Ѐ-ӿ]")
+_FOREIGN = re.compile(
+    r"\b(the|and|with|which|there|about|people|because|through|however|"
+    r"therefore|between|different|astronomers?|chapter|story|children)\b", re.I)
+
+
+def tidy_uz(text, tag=""):
+    """AI matnidagi imlo belgilarini to‘g‘rilaydi va begonasini qayd etadi."""
+    if not text or not isinstance(text, str):
+        return text
+    fixed = _BAD_APOS.sub(lambda m: m.group(1) + "‘", text)
+    for rx, nom in ((_CYRILLIC, "kirill harfi"), (_FOREIGN, "begona so‘z")):
+        m = rx.search(fixed)
+        if m:
+            log_line("[til] %s%s: %r" % (tag + " " if tag else "", nom,
+                                         fixed[max(0, m.start() - 30):m.end() + 20]))
+            break
+    return fixed
+
+
+def tidy_deep(obj, tag=""):
+    """Ichma-ich joylashgan barcha matnlarni tozalaydi (JSON javoblari uchun)."""
+    if isinstance(obj, str):
+        return tidy_uz(obj, tag)
+    if isinstance(obj, list):
+        return [tidy_deep(v, tag) for v in obj]
+    if isinstance(obj, dict):
+        return {k: tidy_deep(v, tag) for k, v in obj.items()}
+    return obj
+
+
 def clean_json(text: str) -> str:
     """Gemini qaytargan matndan JSON blokini xavfsiz ajratib olish (RegEx orqali)"""
     text = text.strip()
@@ -474,8 +514,8 @@ Natijani FAQAT quyidagi JSON ro‘yxat formatida qaytar:
 
     # Uch marta urinamiz: bu ish fon rejimida bajariladi, hech kim kutmaydi.
     response = await _ask("generate_test_from_notes", [prompt], json_mode=True, attempts=3)
-    raw_json = clean_json(response.text)
-    questions = json.loads(raw_json)
+    questions = tidy_deep(json.loads(clean_json(response.text)), "[test]")
+    raw_json = json.dumps(questions, ensure_ascii=False)
     return questions, raw_json
 
 
@@ -509,7 +549,7 @@ Natijani FAQAT quyidagi JSON formatida qaytar:
   "age_hint": "8-12"
 }}"""
     response = await _ask("summarize_book", [prompt], json_mode=True, attempts=2)
-    return json.loads(clean_json(response.text))
+    return tidy_deep(json.loads(clean_json(response.text)), "[mazmun]")
 
 
 async def generate_talk_question(title: str, author: str, base: dict, stage: str, age: int = 10):
@@ -559,7 +599,7 @@ Natijani FAQAT quyidagi JSON formatida qaytar:
 
     response = await _ask("generate_talk_question", [prompt], json_mode=True, attempts=2)
     data = json.loads(clean_json(response.text))
-    return (data.get("question") or "").strip()
+    return tidy_uz((data.get("question") or "").strip(), "[savol]")
 
 
 async def generate_test_bank_from_photos(photos_bytes_list: list):
@@ -630,6 +670,8 @@ async def generate_test_bank_from_photos(photos_bytes_list: list):
         else:
             questions = parsed.get("savollar") or parsed.get("questions") or []
             info = parsed.get("kitob") or parsed.get("book") or {}
+        questions = tidy_deep(questions, "[test]")
+        info = tidy_deep(info, "[mazmun]")
         raw_json = json.dumps(questions, ensure_ascii=False)
         return questions, raw_json, info
     except Exception as e:
@@ -698,7 +740,7 @@ async def evaluate_voice_summary(audio_bytes: bytes, age: int, book_title: str,
             prompt,
             audio_part(audio_bytes)
         ], json_mode=True)
-        return json.loads(clean_json(response.text))
+        return tidy_deep(json.loads(clean_json(response.text)), "[ovoz]")
     except Exception as e:
         traceback.print_exc()
         raise e

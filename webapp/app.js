@@ -1904,7 +1904,11 @@ async function openBookModal(bookId) {
       stageBtn("final_test", "Yakuniy") +
       '</div>' + hint;
   } else {
-    testsHtml = '<p class="section-sub" style="margin-top:18px">Bu kitob uchun test hali tuzilmagan.</p>';
+    // Bolaga test qanday paydo bo‘lishini AYTMAYMIZ — aks holda u sahifa
+    // rasmini test uchun yig‘adigan bo‘lib qoladi, o‘qish uchun emas.
+    testsHtml = '<p class="section-sub" style="margin-top:18px">' +
+      'Bu kitobda test yo‘q. O‘qishda davom et — kitob haqida ovozda ' +
+      'gapirib bersang ham Bilig olasan.</p>';
   }
   // AI USTOZ SAVOLI — kitob boshida va oxirida bittadan. Bu erkin
   // xulosadan farq qiladi: savol aniq, javob baholanadi va ota-onaga
@@ -1917,7 +1921,9 @@ async function openBookModal(bookId) {
   };
   let talkCards = "";
   // Qisqa asarda «kitob boshi» savoli berilmaydi — bitta yakuniy savol.
-  const talkStages = b.short_form ? ["end"] : ["start", "end"];
+  // Kitob haqida hech narsa bilmasak, savol bo‘sh chiqadi — bunday
+  // savoldan ko‘ra yo‘qligi yaxshi (backend ham buni rad etadi).
+  const talkStages = !b.talk_ready ? [] : (b.short_form ? ["end"] : ["start", "end"]);
   talkStages.forEach(function (st) {
     const t = talk[st];
     if (!t || t.done) return;
@@ -2034,7 +2040,10 @@ function openParentBookModal(bookId, b, head) {
 
   let testLines;
   if (!b.has_test) {
-    testLines = statusRow("Bilim testi", false, "", "hali tuzilmagan");
+    testLines = statusRow("Bilim testi", false, "", "hali tuzilmagan") +
+      '<p class="section-sub" style="margin:8px 0 0">Testni o‘zingiz ' +
+      'tuzishingiz mumkin (pastdagi tugma), yoki farzandingiz sahifalarni ' +
+      'rasmga olib borgani sari test o‘z-o‘zidan tuziladi.</p>';
   } else if (b.test_final_only) {
     testLines = statusRow("Yakuniy test", b.final_test_done, "topshirilgan", "kutilmoqda");
   } else {

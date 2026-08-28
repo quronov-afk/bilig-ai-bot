@@ -2515,6 +2515,12 @@ def child_book_detail(book_id):
     base = get_book_base(row[0], row[1])
     # Qisqa asarda test bo‘lmaydi — bola og‘zaki xulosa beradi (ega qarori).
     short_form = bool((base or {}).get("short_form"))
+    # AI USTOZ SAVOLI faqat kitob haqida biror narsa BILGANDA beriladi.
+    # Aks holda AI faqat nom va muallifni ko‘rib, istalgan kitobga
+    # to‘g‘ri keladigan bo‘sh savol yozadi — bola uni o‘qimasdan ham
+    # javob bera oladi. Bunday savoldan ko‘ra yo‘qligi yaxshi.
+    talk_ready = bool((base or {}).get("summary")) or any(
+        get_talk_question(row[0], row[1], _ts) for _ts in TALK_STAGES)
     return jsonify({
         "title": row[0], "author": row[1], "pages_read": row[2], "total_pages": row[3],
         "completed": bool(row[4]), "mid_test_1_done": bool(row[5]),
@@ -2527,6 +2533,7 @@ def child_book_detail(book_id):
         "stages": stages,
         "talk": talk,
         "short_form": short_form,
+        "talk_ready": talk_ready,
         "book_base": base
     })
 
@@ -2894,9 +2901,13 @@ def child_get_talk(book_id):
 
     question = get_talk_question(title, author, stage)
     if not question:
-        # Oldindan tayyorlanmagan bo‘lsa — shu yerda tuzamiz. Bu faqat
-        # matn, ya'ni tez. Kitob bazasi bo‘lmasa ham nomidan tuza oladi.
         base = get_book_base(title, author) or {}
+        if not (base.get("summary") or "").strip():
+            # Kitob haqida hech narsa bilmaymiz. Nomidan savol tuzsak,
+            # u istalgan kitobga to‘g‘ri keladigan bo‘sh savol bo‘ladi.
+            return jsonify({"open": False, "not_ready": True, "done": done,
+                            "need_pages": 0, "question": None})
+        # Oldindan tayyorlanmagan — shu yerda tuzamiz. Bu faqat matn, tez.
         try:
             question = run_async(
                 ai_service.generate_talk_question(title, author, base, stage))
