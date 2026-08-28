@@ -733,7 +733,8 @@ async def evaluate_voice_summary(audio_bytes: bytes, age: int, book_title: str,
     1. "bonus_bilig": 1 dan 5 gacha butun son. Nutqi ravon, teran va mazmunli bo‘lsa 4 yoki 5 Bilig ber. Agar fikri sayoz yoki tutilgan bo‘lsa 1, 2 yoki 3 Bilig ber.
     2. "give_badge": agar o‘z yoshiga nisbatan ajoyib notiqlik ko‘rsatgan bo‘lsa true.
     3. "badge_ezgulik": agar bola qahramonning ezgu fazilatlari (mehr, halollik, do‘stlik, mardlik) haqida chiroyli va samimiy xulosa aytgan bo‘lsa true.
-    4. Matnda qat'iy ravishda faqat O‘, o‘, G‘, g‘ belgilaridan foydalan."""
+    4. "child_feedback": javob zaif bo‘lsa (fikri sayoz, tutilib gapirgan yoki kitobdan uzoqlashgan) — bolani xafa qilmasdan, AYNAN IKKITA konkret maslahat ber: masalan «voqeani boshidan boshlab, ketma-ket ayt» yoki «qahramon nima uchun shunday qilganini tushuntir». Oxirida uni qaytadan gapirib ko‘rishga samimiy chorla. Baho, foiz yoki tanga haqida hech qachon gapirma.
+    5. Matnda qat'iy ravishda faqat O‘, o‘, G‘, g‘ belgilaridan foydalan."""
 
     try:
         response = await _ask("evaluate_voice_summary", [

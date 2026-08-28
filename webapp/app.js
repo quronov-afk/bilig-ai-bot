@@ -2481,6 +2481,10 @@ async function sendVoice(bookId, asl) {
       mascotToast("olmaxon-2", "AI ustoz seni tingladi",
                   "+" + res.bonus_bilig + " bonus Bilig — nutqing ravon edi.");
     }
+    // Bilig chiqmadi, lekin urinish huquqi qoldi: AI ustoz maslahat berdi,
+    // bola shu maslahat bilan qaytadan gapiradi. Bet «yonib ketmaydi».
+    const canRetry = res.bonus_bilig === 0 && res.retry_left > 0;
+    const stageNow = TalkStage;
     const showVoice = function () { openModal("AI Ustoz fikri",
       // Tanga chiqmagan bo‘lsa «+0» ko‘rsatmaymiz — bola uchun bu baho
       // emas, maslahat. AI ustozning so‘zi o‘zi yetarli.
@@ -2490,7 +2494,17 @@ async function sendVoice(bookId, asl) {
           '</div>'
         : "") +
       '<div class="card">' + escapeHtml(res.feedback) + '</div>' +
-      '<button class="btn btn-primary btn-block" data-action="close-modal">Ajoyib</button>'
+      (canRetry
+        ? '<p class="section-sub" style="color:var(--success-deep);font-weight:600">' +
+            'Shoshilma — yana ' + res.retry_left + ' marta gapirib ko‘rsang bo‘ladi. ' +
+            'Kitobni bir eslab, voqealarni o‘z so‘zing bilan boshidan aytib ber.</p>' +
+          (stageNow
+            ? '<button class="btn btn-primary btn-block" data-action="open-talk" data-id="' + bookId +
+              '" data-stage="' + stageNow + '">Yana bir bor javob beraman</button>'
+            : '<button class="btn btn-primary btn-block" data-action="open-voice" data-id="' + bookId +
+              '">Yana bir bor gapiraman</button>') +
+          '<button class="btn btn-outline btn-block" data-action="close-modal">Keyinroq</button>'
+        : '<button class="btn btn-primary btn-block" data-action="close-modal">Ajoyib</button>')
     ); };
     if (res.new_badges && res.new_badges.length) celebrate(res.new_badges, showVoice);
     else showVoice();

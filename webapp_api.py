@@ -75,6 +75,12 @@ for _col_sql in (
     # Oxirgi ovozli xulosa yuborilganda kitob nechanchi betda edi.
     # Keyingi xulosa uchun bola yana 15 bet o‘qishi kerak.
     "ALTER TABLE Plan_Books ADD COLUMN voice_last_page INTEGER DEFAULT 0",
+    # Shu 15 betlik oraliqda ovozli xulosa necha marta yuborilgani. Baho past
+    # bo‘lsa bola qayta urinib ko‘radi — lekin cheksiz emas (VOICE_MAX_TRIES).
+    "ALTER TABLE Plan_Books ADD COLUMN voice_tries INTEGER DEFAULT 0",
+    # AI ustoz savoliga necha marta javob berilgani (kitob boshi va oxiri).
+    "ALTER TABLE Plan_Books ADD COLUMN talk_start_tries INTEGER DEFAULT 0",
+    "ALTER TABLE Plan_Books ADD COLUMN talk_end_tries INTEGER DEFAULT 0",
     # Qisqa asar: test tuzilmaydi, o‘rniga og‘zaki xulosa so‘raladi.
     "ALTER TABLE Book_Base ADD COLUMN short_form INTEGER DEFAULT 0",
     # Asar xulosasi — ota-onaga «bu kitob farzandimga nima beradi?» javobi.
@@ -1115,13 +1121,32 @@ def has_voice_report(child_id: int, book_id: int) -> bool:
 # RAG‘BAT QOIDALARI (ega qarori, 2026-08-28)
 # ----------------------------------------------------------
 #   • Test  — har bosqich uchun natija 70% va undan yuqori bo‘lsa 3 Bilig.
-#   • Ovoz  — har 15 betga bitta xulosa; yaxshi so‘zlab bersa 3 Bilig.
-# Ikkalasida ham bir xil o‘lchov ishlatiladi — bola uchun qoida sodda
-# va tushunarli bo‘lsin.
+#   • Ovoz  — har 15 betga bitta xulosa; Bilig nutq sifatiga qarab beriladi.
 # ==========================================================
 REWARD_PERCENT = 70       # «yaxshi» deb hisoblanadigan eng past natija
 REWARD_COINS = 3          # yaxshi natija uchun beriladigan Bilig
 VOICE_EVERY_PAGES = 15    # necha betga bitta ovozli xulosa
+
+# OVOZLI XULOSA — RAG‘BAT NARVONI (ega qarori, 2026-08-29)
+# ----------------------------------------------------------
+# Ilgari 70% dan yuqori har qanday javob 3 Bilig olardi va past baho ham
+# 15 betlik huquqni yeb qo‘yardi — ya'ni bola qayta urinolmasdi.
+# Endi:
+#   • baho qanchalik yaxshi bo‘lsa, Bilig shuncha ko‘p (1 / 2 / 3);
+#   • 70% dan past — Bilig yo‘q, AI ustoz samimiy maslahat berib
+#     QAYTA URINISHNI so‘raydi, huquq esa yonib ketmaydi;
+#   • qayta urinish cheksiz emas — 3 marta. Aks holda bola bitta
+#     oraliqda AI'ni charchatib, tanga «qazib» oladigan bo‘lardi.
+VOICE_TIERS = ((90, 3), (80, 2), (70, 1))
+VOICE_MAX_TRIES = 3
+
+
+def reward_for(average, tiers=VOICE_TIERS):
+    """O‘rtacha bahoga mos Bilig miqdori (mos kelmasa — 0)."""
+    for edge, coins in tiers:
+        if average >= edge:
+            return coins
+    return 0
 
 
 def voice_quota(book_id: int):
@@ -2802,15 +2827,25 @@ def child_voice_job(job_id):
 
 def _finish_voice(book_id, child_id, book_title, result, detail):
     diag = result.get("diagnostic_scores", {})
-    # Ega qarori: ovoz uchun ham test bilan bir xil o‘lchov — yaxshi so‘zlab
-    # bersa 3 Bilig, aks holda tanga yo‘q (lekin iliq maslahat baribir bor).
+    # Ega qarori (2026-08-29): Bilig nutq sifatiga qarab beriladi — 3, 2 yoki 1.
+    # Baho past bo‘lsa tanga yo‘q, lekin AI ustoz maslahat berib qayta
+    # urinishni so‘raydi va 15 betlik huquq yonib ketmaydi.
     marks = [diag.get(k, 0) for k in ("factual_score", "logic_score",
                                       "conclusion_score", "fluency_score",
                                       "vocabulary_score")]
     average = sum(marks) / len(marks) if marks else 0
-    bonus = REWARD_COINS if average >= REWARD_PERCENT else 0
+    bonus = reward_for(average)
     new_badges = []
     with db_lock:
+        # Yordamchi so‘rov ASOSIY yozuvlardan oldin — `cursor` yagona obyekt.
+        cursor.execute("SELECT voice_tries FROM Plan_Books WHERE book_id = ?", (book_id,))
+        _row = cursor.fetchone()
+        tries = ((_row[0] or 0) if _row else 0) + 1
+        # Huquq ikki holatda yopiladi: yaxshi javob berilganda yoki
+        # uchinchi urinishdan keyin (aks holda bitta oraliqda cheksiz
+        # urinib, AI'ni behuda charchatish mumkin bo‘lardi).
+        window_done = bonus > 0 or tries >= VOICE_MAX_TRIES
+        retry_left = 0 if window_done else VOICE_MAX_TRIES - tries
         if bonus > 0:
             cursor.execute(
                 "UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (bonus, child_id)
@@ -2830,10 +2865,14 @@ def _finish_voice(book_id, child_id, book_title, result, detail):
         # Keyingi ovozli xulosa uchun sanoq shu betdan boshlanadi.
         # Bu AI tahlili MUVAFFAQIYATLI tugagandagina bajariladi — aks holda
         # xatolikdan keyingi qayta yuborish ham to‘silib qolardi.
-        cursor.execute(
-            "UPDATE Plan_Books SET voice_last_page = pages_read WHERE book_id = ?",
-            (book_id,)
-        )
+        if window_done:
+            cursor.execute(
+                "UPDATE Plan_Books SET voice_last_page = pages_read, voice_tries = 0 "
+                "WHERE book_id = ?", (book_id,)
+            )
+        else:
+            cursor.execute("UPDATE Plan_Books SET voice_tries = ? WHERE book_id = ?",
+                           (tries, book_id))
         conn.commit()
         new_badges, later_badges = badges_engine.check_badges(
             child_id, {"ezgulik": bool(result.get("badge_ezgulik", False))},
@@ -2845,8 +2884,10 @@ def _finish_voice(book_id, child_id, book_title, result, detail):
     # Bu funksiya FON IPIDA ishlaydi, `cursor` esa yagona obyekt —
     # o‘qishni ham qulf ostida qilamiz, aks holda ayni paytdagi so‘rovning
     # natijasi o‘chib ketadi.
+    # Ota-onaga xabar FAQAT ish yakunlanganda boradi. Bola qayta urinmoqchi
+    # bo‘lsa, har urinish uchun alohida xabar yuborish — ortiqcha shovqin.
     with db_lock:
-        parent_id = get_parent_id(child_id)
+        parent_id = get_parent_id(child_id) if window_done else None
     if parent_id:
         pr = result.get("parent_report", {})
         send_telegram_message(
@@ -2860,6 +2901,7 @@ def _finish_voice(book_id, child_id, book_title, result, detail):
         "ok": True, "bonus_bilig": bonus,
         "feedback": result.get("child_feedback", ""),
         "give_badge": bool(result.get("give_badge", False)),
+        "retry_left": retry_left,
         "new_badges": new_badges
     }
 
@@ -2974,8 +3016,17 @@ def _finish_talk(book_id, child_id, book_title, result, detail, stage, question)
     pr = dict(result.get("parent_report", {}))
     pr["question"] = question          # ota-ona qaysi savolga javob berilganini ko‘rsin
     column = "talk_start_done" if stage == "start" else "talk_end_done"
+    tries_column = "talk_start_tries" if stage == "start" else "talk_end_tries"
 
     with db_lock:
+        # Ovozli xulosadagi kabi: javob zaif bo‘lsa savol yopilmaydi — bola
+        # maslahatni eshitib, qayta javob beradi (eng ko‘pi 3 marta).
+        cursor.execute("SELECT %s FROM Plan_Books WHERE book_id = ?" % tries_column,
+                       (book_id,))
+        _row = cursor.fetchone()
+        tries = ((_row[0] or 0) if _row else 0) + 1
+        done = bonus > 0 or tries >= VOICE_MAX_TRIES
+        retry_left = 0 if done else VOICE_MAX_TRIES - tries
         if bonus > 0:
             cursor.execute(
                 "UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?",
@@ -2994,7 +3045,12 @@ def _finish_talk(book_id, child_id, book_title, result, detail, stage, question)
              datetime.now().strftime("%Y-%m-%d %H:%M:%S"), bonus,
              result.get("child_feedback", ""))
         )
-        cursor.execute("UPDATE Plan_Books SET %s = 1 WHERE book_id = ?" % column, (book_id,))
+        if done:
+            cursor.execute("UPDATE Plan_Books SET %s = 1, %s = 0 WHERE book_id = ?"
+                           % (column, tries_column), (book_id,))
+        else:
+            cursor.execute("UPDATE Plan_Books SET %s = ? WHERE book_id = ?" % tries_column,
+                           (tries, book_id))
         conn.commit()
         new_badges, later_badges = badges_engine.check_badges(
             child_id, {"ezgulik": bool(result.get("badge_ezgulik", False))},
@@ -3004,7 +3060,7 @@ def _finish_talk(book_id, child_id, book_title, result, detail, stage, question)
     announce_badges(child_id, new_badges + later_badges)
 
     with db_lock:
-        parent_id = get_parent_id(child_id)
+        parent_id = get_parent_id(child_id) if done else None
     if parent_id:
         nom = "kitob boshi" if stage == "start" else "kitob yakuni"
         send_telegram_message(
@@ -3019,6 +3075,7 @@ def _finish_talk(book_id, child_id, book_title, result, detail, stage, question)
     return {
         "ok": True, "bonus_bilig": bonus,
         "feedback": result.get("child_feedback", ""),
+        "retry_left": retry_left,
         "new_badges": new_badges
     }
 
@@ -3199,7 +3256,9 @@ def child_store():
 @app.route("/api/child/store/<int:item_id>/buy", methods=["POST"])
 @require_auth
 def child_store_buy(item_id):
-    child_id = _resolve_active_child(request)
+    # Sotib olish — bolaning amali. Ota-ona buni faqat Bolaxonaga kirgan
+    # holda qila oladi; aks holda Bilig uning O‘Z hisobidan yechilardi.
+    child_id = _require_child_actor(request)
     cursor.execute("SELECT balance_coins, name FROM Users WHERE user_id = ?", (child_id,))
     balance, child_name = cursor.fetchone()
     cursor.execute("SELECT name, price, parent_id FROM Store_Items WHERE item_id = ?", (item_id,))
