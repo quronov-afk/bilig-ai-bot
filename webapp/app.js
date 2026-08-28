@@ -861,7 +861,7 @@ function openRatingFromHeader() {
   document.querySelectorAll(".tab-btn").forEach(function (b) { b.classList.remove("active"); });
   State.currentTab = "rating";
   const main = document.getElementById("app-main");
-  main.innerHTML = '<div class="empty-state"><div class="spinner"></div>Yuklanmoqda…</div>';
+  main.innerHTML = skeleton("rows");
   renderRatingTab().catch(function (e) { main.innerHTML = '<div class="empty-state">' + escapeHtml(e.error || "Xatolik yuz berdi") + '</div>'; });
 }
 
@@ -879,7 +879,7 @@ function switchTab(tabId) {
     : { home: renderParentHome, plans: renderParentPlans, store: renderStoreTab, bolaxona: renderBolaxonaTab };
   const fn = renderers[tabId];
   const main = document.getElementById("app-main");
-  main.innerHTML = '<div class="empty-state"><div class="spinner"></div>Yuklanmoqda…</div>';
+  main.innerHTML = skeleton(SK_KIND[tabId] || "list");
   if (fn) fn().catch(function (e) { main.innerHTML = '<div class="empty-state">' + escapeHtml(e.error || "Xatolik yuz berdi") + '</div>'; });
 }
 
@@ -920,7 +920,7 @@ document.addEventListener("click", async function (e) {
 
       case "open-child-detail": State.selectedChildId = Number(el.dataset.id); await renderChildDetailPage(State.selectedChildId); break;
       case "back-to-home":
-        document.getElementById("app-main").innerHTML = '<div class="empty-state"><div class="spinner"></div>Yuklanmoqda…</div>';
+        document.getElementById("app-main").innerHTML = skeleton("home");
         await renderParentHome();
         break;
       case "enter-bolaxona":
@@ -1089,8 +1089,14 @@ document.addEventListener("click", async function (e) {
 async function renderParentHome() {
   const main = document.getElementById("app-main");
   if (!State.childrenCache.length) {
-    main.innerHTML = emptyState("users", "Hali farzand qo‘shilmagan", "Farzandingizni shu yerdan qo‘shing — alohida telefon shart emas.") +
-      '<button class="btn btn-primary btn-block" data-action="open-add-child" style="display:flex;align-items:center;justify-content:center;gap:6px">' + icon("plus", 17, 2) + ' Farzand qo‘shish</button>';
+    main.innerHTML = emptyState("users", "Keling, farzandingizni qo‘shamiz",
+      "Unga alohida telefon ham, alohida hisob ham shart emas.", {
+        mascot: "tipratikan-salom",
+        steps: ["Farzandingizning ismi, yoshi va avatarini tanlaysiz",
+                "Unga birinchi kitobni qo‘yasiz",
+                "U o‘qigan sahifasini rasmga oladi — qolganini AI bajaradi"],
+        action: "open-add-child", label: "Farzand qo‘shish", btnIcon: "plus"
+      });
     return;
   }
   // Faol farzand — ota-ona o‘zi tanlaydi. Tanlanmagan bo‘lsa, birinchisi olinadi.
@@ -1292,7 +1298,7 @@ function bookCardOrEmpty(b, emptyText) {
 
 async function renderChildDetailPage(childId) {
   const main = document.getElementById("app-main");
-  main.innerHTML = '<div class="empty-state"><div class="spinner"></div>Yuklanmoqda…</div>';
+  main.innerHTML = skeleton("home");
   const data = await api("/api/parent/home/" + childId);
   const c = State.childrenCache.filter(function (x) { return x.id === childId; })[0] || {};
 
@@ -1465,8 +1471,84 @@ function choiceCard(cfg) {
     '</button>';
 }
 
-function emptyState(iconName, title, sub) {
-  return '<div class="empty-state"><div class="em-icon">' + icon(iconName, 38, 1.4) + '</div><p style="font-weight:700;color:var(--text);margin:0 0 4px">' + title + '</p><p style="margin:0">' + (sub || "") + '</p></div>';
+// ==========================================================
+// YUKLANISH SKELETI
+// ----------------------------------------------------------
+// Ilgari har bir tab ochilganda kichkina g‘ildirak aylanardi, ekran esa
+// bo‘m-bo‘sh turardi — foydalanuvchi «ilova qotib qoldimi?» deb o‘ylardi.
+// Endi ekranning «soyasi» chiziladi: bo‘sh kartalar aynan keyin
+// chiqadigan mazmun o‘rnida turadi. Shunda mazmun kelganda ekran
+// sakramaydi va kutish qisqaroq tuyuladi.
+// ==========================================================
+function skLine(w, h) {
+  return '<div class="sk-line" style="width:' + w + ';height:' + (h || 13) + 'px"></div>';
+}
+
+function skRepeat(n, html) {
+  let out = "";
+  for (let i = 0; i < n; i++) out += html;
+  return out;
+}
+
+function skeleton(kind) {
+  let body;
+  if (kind === "grid") {
+    body = '<div class="sk-grid">' + skRepeat(4, '<div class="sk-tile"></div>') + '</div>';
+  } else if (kind === "rows") {
+    body = '<div class="sk-card">' + skRepeat(5,
+      '<div class="sk-row"><div class="sk-dot"></div><div class="sk-row-body">' +
+      skLine("62%", 14) + skLine("38%", 11) + '</div></div>') + '</div>';
+  } else if (kind === "home") {
+    body = '<div class="sk-hero"></div>' +
+      '<div class="sk-card">' + skLine("54%", 17) + skLine("88%") + skLine("64%") + '</div>' +
+      '<div class="sk-grid sk-grid-3">' + skRepeat(3, '<div class="sk-tile sk-tile-sm"></div>') + '</div>' +
+      '<div class="sk-card">' + skLine("46%", 15) + skLine("74%") + '</div>';
+  } else {
+    body = skRepeat(3, '<div class="sk-card sk-card-tall">' +
+      skLine("58%", 17) + skLine("92%") + skLine("40%", 11) + '</div>');
+  }
+  return '<div class="sk-wrap" aria-busy="true" aria-label="Yuklanmoqda">' + body + '</div>';
+}
+
+// Qaysi tabga qaysi skelet mos keladi
+const SK_KIND = { home: "home", plans: "list", store: "grid", bolaxona: "rows", rating: "rows" };
+
+// ==========================================================
+// BO‘SH EKRAN
+// ----------------------------------------------------------
+// Ilgari bu shunchaki ikona va ikki qator matn edi — foydalanuvchi
+// «endi nima qilaman?» degan savol bilan qolardi. Endi uch qismdan
+// iborat: maskot (ekran tirik ko‘rinadi), qisqa 1-2-3 yo‘riqnoma va
+// eng muhimi — shu yerning O‘ZIDA turgan harakat tugmasi.
+//
+// opts = { mascot, steps: [...], action, label, btnIcon, data: {...} }
+// Eski chaqiruvlar (opts'siz) avvalgidek ishlayveradi.
+// ==========================================================
+function emptyState(iconName, title, sub, opts) {
+  opts = opts || {};
+  const art = opts.mascot
+    ? '<div class="em-mascot"><img src="/mascots/trim/mascot-' + opts.mascot + '.webp?v=' + ASSET_V + '" alt=""></div>'
+    : '<div class="em-icon">' + icon(iconName, 38, 1.4) + '</div>';
+  let steps = "";
+  if (opts.steps && opts.steps.length) {
+    steps = '<ol class="em-steps">' + opts.steps.map(function (t, i) {
+      return '<li><span class="em-num">' + (i + 1) + '</span><span>' + escapeHtml(t) + '</span></li>';
+    }).join("") + '</ol>';
+  }
+  let btn = "";
+  if (opts.action) {
+    let attrs = "";
+    const data = opts.data || {};
+    Object.keys(data).forEach(function (k) {
+      attrs += ' data-' + k + '="' + escapeHtml(String(data[k])) + '"';
+    });
+    btn = '<button class="btn btn-primary em-btn" data-action="' + opts.action + '"' + attrs + '>' +
+      (opts.btnIcon ? icon(opts.btnIcon, 17, 2) : "") +
+      '<span>' + escapeHtml(opts.label || "Boshlash") + '</span></button>';
+  }
+  return '<div class="empty-state">' + art +
+    '<p class="em-title">' + title + '</p>' +
+    (sub ? '<p class="em-sub">' + sub + '</p>' : "") + steps + btn + '</div>';
 }
 
 // ==========================================================
@@ -1486,7 +1568,14 @@ function childCodeLine(c) {
 async function renderBolaxonaTab() {
   const main = document.getElementById("app-main");
   if (!State.childrenCache.length) {
-    main.innerHTML = emptyState("users", "Hali farzand qo‘shilmagan", "Bosh sahifadagi «Farzand qo‘shish» orqali qo‘shing.");
+    main.innerHTML = emptyState("users", "Bolaxona hozircha bo‘sh",
+      "Farzand qo‘shsangiz, uning ekraniga shu yerdan kirasiz.", {
+        mascot: "tipratikan-salom",
+        steps: ["Farzandingizni qo‘shasiz",
+                "«Kirish» tugmasi orqali uning ekraniga o‘tasiz",
+                "Kitob, test va do‘konni uning nomidan sinab ko‘rasiz"],
+        action: "open-add-child", label: "Farzand qo‘shish", btnIcon: "plus"
+      });
     return;
   }
   main.innerHTML = '<p class="section-sub">Farzandingiz ekraniga kirib, kitob o‘qish, testlar va do‘kondan foydalanishni ular nomidan bajarishingiz mumkin.</p>' +
@@ -1550,8 +1639,12 @@ async function renderParentPlans() {
   const q = State.selectedChildId ? "?child_id=" + State.selectedChildId : "";
   const plans = await api("/api/parent/plans" + q);
   const main = document.getElementById("app-main");
-  let html = childSwitcherHtml() +
+  // Yuqoridagi «Yangi kitob qo‘shish» tugmasi faqat ro‘yxat bo‘sh
+  // BO‘LMAGANDA kerak — aks holda bo‘sh ekrandagi tugma bilan ikkita
+  // bir xil tugma yonma-yon turadi.
+  const addPlanBtn =
     '<button class="btn btn-primary btn-block" data-action="open-add-plan" style="display:flex;align-items:center;justify-content:center;gap:6px">' + icon("plus", 17, 2) + ' Yangi kitob qo‘shish</button>';
+  let html = childSwitcherHtml();
 
   // Bir martalik kitoblar va marafonlar aralashib ketmasligi kerak —
   // ular butunlay boshqa narsa: biri bitta kitob, ikkinchisi uzoq musobaqa.
@@ -1564,10 +1657,18 @@ async function renderParentPlans() {
   });
 
   if (!singleActive.length && !singleDone.length && !marathons.length) {
-    html += emptyState("book-open", "Hali reja yo‘q", "Yuqoridagi tugma orqali birinchi kitobni qo‘shing.");
+    html += emptyState("book-open", "Birinchi kitobni tanlaymiz",
+      "Katalogdan tanlaysiz yoki muqovasini rasmga olasiz — ikkalasi ham bir necha soniya.", {
+        mascot: "tulki-oqish",
+        steps: ["Kitobni tanlaysiz va necha kunda o‘qishni belgilaysiz",
+                "Farzandingiz har kuni o‘qigan sahifasini rasmga oladi",
+                "AI tekshiradi, test beradi va Bilig yozadi"],
+        action: "open-add-plan", label: "Kitob qo‘shish", btnIcon: "plus"
+      });
     main.innerHTML = html;
     return;
   }
+  html += addPlanBtn;
 
   if (singleActive.length) {
     html += '<p class="section-title">Alohida kitoblar</p>';
@@ -1822,7 +1923,13 @@ async function renderChildPlans() {
   });
 
   if (!activeBooks.length && !completedBooks.length) {
-    html = emptyState("book-open", "Hozircha kitob yo‘q", "Ota-onangiz tez orada kitob qo‘shadi.");
+    html = emptyState("book-open", "Hozircha kitob yo‘q",
+      "Ota-onang tez orada senga kitob qo‘yadi.", {
+        mascot: "boyogli-oylanish",
+        steps: ["Kitob paydo bo‘lganda shu yerda ko‘rinadi",
+                "O‘qigan sahifangni rasmga olib yuborasan",
+                "Har sahifa uchun Bilig yig‘asan"]
+      });
   } else {
     if (activeBooks.length) {
       html += '<p class="section-title">O‘qilayotgan kitoblar</p>';
@@ -2588,7 +2695,13 @@ async function renderStoreTab() {
     const data = await api("/api/child/store" + asChildQuery());
     let html = '<div class="pill pill-gold" style="width:fit-content;margin-bottom:14px">' + icon("coin", 13, 2.2) + ' Balans: ' + data.balance + '</div>';
     if (!data.items.length) {
-      html += emptyState("gift", "Hali sovg‘a yo‘q", "Ota-onangiz tez orada do‘konga mahsulot qo‘shadi.");
+      html += emptyState("gift", "Do‘kon hozircha bo‘sh",
+        "Ota-onang tez orada sovg‘alarni qo‘yadi — sen esa Bilig yig‘ib turaver.", {
+          mascot: "quyoncha-sovga",
+          steps: ["Kitob o‘qib, test va ovozli xulosa uchun Bilig yig‘asan",
+                  "Sovg‘alar shu yerda paydo bo‘ladi",
+                  "Yiqqan Biliging yetsa, sovg‘ani tanlaysan"]
+        });
     } else {
       html += '<div class="store-grid">' + data.items.map(function (i, idx) {
         return '<div class="store-item">' +
@@ -2604,11 +2717,22 @@ async function renderStoreTab() {
     main.innerHTML = html;
   } else {
     const items = await api("/api/parent/store");
-    let html = '<div class="grid-2" style="margin-bottom:16px">' +
-      '<button class="btn btn-primary" data-action="open-store-add" style="display:flex;align-items:center;justify-content:center;gap:6px">' + icon("plus", 16, 2) + ' Mahsulot</button>' +
-      '<button class="btn btn-outline" data-action="open-rate">Bilig kursi</button></div>';
+    // Do‘kon bo‘sh bo‘lsa «Mahsulot» tugmasi ko‘rsatilmaydi — u bo‘sh
+    // ekrandagi «Sovg‘a qo‘shish» tugmasi bilan bir xil ish qiladi.
+    let html = items.length
+      ? '<div class="grid-2" style="margin-bottom:16px">' +
+        '<button class="btn btn-primary" data-action="open-store-add" style="display:flex;align-items:center;justify-content:center;gap:6px">' + icon("plus", 16, 2) + ' Mahsulot</button>' +
+        '<button class="btn btn-outline" data-action="open-rate">Bilig kursi</button></div>'
+      : '<button class="btn btn-outline btn-block" data-action="open-rate" style="margin-bottom:4px">Bilig kursi</button>';
     if (!items.length) {
-      html += emptyState("gift", "Hali mahsulot yo‘q", "Yuqoridagi tugma orqali birinchi sovg‘ani qo‘shing.");
+      html += emptyState("gift", "Birinchi sovg‘ani qo‘yamiz",
+        "Sovg‘a qimmat bo‘lishi shart emas — «1 soat multfilm» ham ajoyib rag‘bat.", {
+          mascot: "quyoncha-sovga",
+          steps: ["Sovg‘a nomini va necha Bilig turishini yozasiz",
+                  "Farzandingiz kitob o‘qib Bilig yig‘adi",
+                  "U sovg‘ani tanlaganda sizga xabar keladi"],
+          action: "open-store-add", label: "Sovg‘a qo‘shish", btnIcon: "plus"
+        });
     } else {
       html += '<div class="store-grid">' + items.map(function (i, idx) {
         return '<div class="store-item">' +
@@ -2691,7 +2815,7 @@ async function renderRatingTab() {
   main.innerHTML =
     childSwitcherHtml() +
     '<p class="sec-label">' + titles[mode] + '</p>' +
-    '<div id="rating-content"><div class="empty-state"><div class="spinner"></div>Yuklanmoqda…</div></div>';
+    '<div id="rating-content">' + skeleton("rows") + '</div>';
   renderHeaderNav();
   const content = document.getElementById("rating-content");
 
@@ -2705,7 +2829,11 @@ async function renderRatingTab() {
         '</div><div class="pill pill-leaf">' + r.xp + ' XP</div></div>';
     }).join("");
     content.innerHTML = '<p class="section-sub">' + (data.scope === "oila" ? "Oilangiz o‘quvchilari orasida" : "Barcha o‘quvchilar orasida TOP-10") + '</p>' +
-      '<div class="card">' + (rows || emptyState("award", "Reyting hali bo‘sh", "")) + '</div>';
+      '<div class="card">' + (rows || emptyState("award", "Reyting hali bo‘sh",
+        "Birinchi sahifalar o‘qilishi bilan ro‘yxat to‘la boshlaydi.", {
+          mascot: "sherbola-galaba",
+          action: "open-tab", label: "Kitoblarga o‘tish", data: { tab: "plans" }
+        })) + '</div>';
     return;
   }
 

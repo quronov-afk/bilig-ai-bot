@@ -279,8 +279,76 @@ html, body {
 .badge.done { background: var(--success-bg); color: var(--success-deep); }
 .badge.pending { background: var(--gold-bg); color: var(--gold-deep); }
 
-.empty-state { text-align: center; padding: 48px 20px; color: var(--text-faint); }
+/* ==========================================================
+   BO‘SH EKRAN — maskot, qisqa yo‘riqnoma va harakat tugmasi
+   ----------------------------------------------------------
+   Bo‘sh ekran «xato» emas, boshlanish nuqtasi. Shuning uchun u
+   quruq ikona emas, balki nima qilish kerakligini o‘zi aytadi.
+   ========================================================== */
+.empty-state { text-align: center; padding: 40px 20px 28px; color: var(--text-faint); }
 .empty-state .em-icon { margin-bottom: 12px; color: var(--text-faint); display: flex; justify-content: center; }
+.empty-state .em-mascot { display: flex; justify-content: center; margin-bottom: 14px; }
+.empty-state .em-mascot img {
+  width: 128px; height: 128px; object-fit: contain;
+  animation: em-float 4.5s ease-in-out infinite;
+}
+@keyframes em-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+.empty-state .em-title { font-weight: 800; font-size: 18px; color: var(--text); margin: 0 0 6px; }
+.empty-state .em-sub { margin: 0 auto; max-width: 300px; font-size: 15px; line-height: 1.45; }
+
+.em-steps {
+  list-style: none; margin: 18px auto 4px; padding: 14px 16px; max-width: 340px;
+  text-align: left; background: var(--surface); border-radius: var(--radius-md);
+  box-shadow: var(--shadow-raised); display: flex; flex-direction: column; gap: 11px;
+}
+.em-steps li { display: flex; align-items: flex-start; gap: 10px; font-size: 14.5px; line-height: 1.4; color: var(--text-soft); }
+.em-num {
+  flex: 0 0 22px; height: 22px; border-radius: 50%; background: var(--brand-bg); color: var(--brand-deep);
+  font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; margin-top: 1px;
+}
+.em-btn {
+  margin-top: 18px; display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  width: 100%; max-width: 340px;
+}
+
+/* ==========================================================
+   YUKLANISH SKELETI
+   ----------------------------------------------------------
+   Mazmun kelguncha uning «soyasi» turadi. Yorug‘lik chapdan o‘ngga
+   sirg‘aladi — bu ilova qotib qolmaganini bildiradi.
+   ========================================================== */
+.sk-wrap { display: flex; flex-direction: column; gap: 12px; padding-top: 4px; }
+.sk-card {
+  background: var(--surface); border-radius: var(--radius-lg); padding: 16px;
+  box-shadow: var(--shadow-raised); display: flex; flex-direction: column; gap: 10px;
+}
+.sk-card-tall { padding: 18px 16px 20px; }
+.sk-hero { height: 132px; border-radius: var(--radius-lg); }
+.sk-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.sk-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.sk-tile { height: 132px; border-radius: var(--radius-lg); }
+.sk-tile-sm { height: 66px; }
+.sk-row { display: flex; align-items: center; gap: 12px; }
+.sk-row + .sk-row { margin-top: 4px; }
+.sk-row-body { flex: 1; display: flex; flex-direction: column; gap: 7px; }
+.sk-dot { flex: 0 0 40px; height: 40px; border-radius: 50%; }
+.sk-line { border-radius: 7px; }
+
+.sk-line, .sk-tile, .sk-hero, .sk-dot {
+  background-color: var(--surface-soft);
+  background-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .85) 50%, transparent 100%);
+  background-size: 220% 100%; background-repeat: no-repeat;
+  animation: sk-shine 1.4s ease-in-out infinite;
+}
+@keyframes sk-shine {
+  0% { background-position: 140% 0; }
+  100% { background-position: -40% 0; }
+}
+/* Harakatni kamaytirish so‘ralgan bo‘lsa — jimgina turadi */
+@media (prefers-reduced-motion: reduce) {
+  .sk-line, .sk-tile, .sk-hero, .sk-dot { animation: none; }
+  .empty-state .em-mascot img { animation: none; }
+}
 
 .stat-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; margin: 10px 0 16px; }
 .stat-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 8px; text-align: center; box-shadow: var(--shadow-raised); }

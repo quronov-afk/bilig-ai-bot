@@ -10,6 +10,10 @@ So‘ng brauzerda: http://localhost:8080/?dev_id=1001
 
 Yaratiladi: ota-ona (1001) + 3 farzand (Ibrohim 9, Ismoil 7, Sadi 12).
 Sadi to‘liq namoyish ma'lumoti bilan to‘ldiriladi.
+
+Bundan tashqari BO‘SH ota-ona (1002) ham yaratiladi — hech qanday farzandi,
+kitobi va sovg‘asi yo‘q. U barcha «bo‘sh ekran»larni ko‘rish uchun kerak:
+    http://localhost:8080/?dev_id=1002
 """
 import os
 import sys
@@ -57,6 +61,13 @@ for i, (title, correct, total) in enumerate([
         (-3, row[0], pct, pct, pct, ts, correct, total)
     )
 
+# BO‘SH OTA-ONA (1002) — bo‘sh ekranlarni ko‘rish uchun. Farzandi ham,
+# kitobi ham, do‘konda mahsuloti ham yo‘q.
+cursor.execute(
+    "INSERT OR REPLACE INTO Users (user_id, role, name, is_approved) "
+    "VALUES (1002, 'parent', 'Yangi ota-ona', 1)"
+)
+
 # Ibrohim (-1) — eski uslubdagi nishon (migratsiyani sinash uchun)
 cursor.execute("UPDATE Users SET badges = ? WHERE user_id = -1", ("🗣 Notiq",))
 conn.commit()
@@ -66,3 +77,4 @@ print("Namunaviy baza tayyor. Farzandlar:")
 for uid, name, code in kids:
     print(f"   {name:10} id={uid}  ID kodi: {code}")
 print("\nOching: http://localhost:8080/?dev_id=1001")
+print("Bo‘sh ekranlar:  http://localhost:8080/?dev_id=1002")
