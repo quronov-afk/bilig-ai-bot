@@ -1854,9 +1854,29 @@ def parent_contact():
 
 def _resolve_active_child(request):
     """Bolaxona rejimida ota-ona ekranidan kirilgan bo‘lsa, aktiv bolani aniqlaydi.
-    Mini App'da buni frontend ?as_child=ID query parametri orqali beradi."""
+    Mini App'da buni frontend ?as_child=ID query parametri orqali beradi.
+
+    XAVFSIZLIK: ilgari bu yerda hech qanday tekshiruv yo‘q edi — istalgan
+    foydalanuvchi ?as_child=<boshqa bolaning raqami> deb yozib, begona
+    oilaning bolasini KO‘RA va uning natijalarini O‘ZGARTIRA olardi.
+    Endi faqat o‘z farzandiga ruxsat beriladi.
+    """
     as_child = request.args.get("as_child", type=int)
-    return as_child or g.user_id
+    if not as_child or as_child == g.user_id:
+        return g.user_id
+    try:
+        cursor.execute(
+            "SELECT 1 FROM Family_Link WHERE parent_id = ? AND child_id = ?",
+            (g.user_id, as_child)
+        )
+        if cursor.fetchone():
+            return as_child
+    except Exception:
+        pass
+    # Ruxsat yo‘q — hech narsa ko‘rsatmaymiz, o‘z hisobiga qaytariladi.
+    ai_service.log_line("[xavfsizlik] %s begona bola %s ga tegmoqchi bo‘ldi"
+                        % (g.user_id, as_child))
+    return g.user_id
 
 
 @app.route("/api/child/home", methods=["GET"])
@@ -2174,15 +2194,25 @@ def child_submit_page_manual(book_id):
 
 
 def _apply_page_progress(book_id, child_id, new_page):
-    cursor.execute("SELECT pages_read, title FROM Plan_Books WHERE book_id = ?", (book_id,))
+    cursor.execute("SELECT pages_read, title, total_pages FROM Plan_Books WHERE book_id = ?",
+                   (book_id,))
     row = cursor.fetchone()
     if not row:
         return jsonify({"error": "Kitob topilmadi"}), 404
-    old_pages, book_title = row
+    old_pages, book_title, total_pages = row
 
     if new_page <= old_pages:
         return jsonify({"ok": False, "reason": "not_progress",
                          "message": f"Siz allaqachon {old_pages}-sahifagacha o‘qigansiz!"})
+
+    # Kitobning jami sahifasidan oshib ketmasin. Ilgari tekshiruv yo‘q edi:
+    # 5000 deb yozilsa qabul qilinardi va bola bir zumda minglab Bilig
+    # hamda hamma nishonni olib qo‘yardi. AI bet raqamini noto‘g‘ri
+    # o‘qib yuborsa ham xuddi shunday bo‘lardi.
+    if total_pages and new_page > total_pages:
+        return jsonify({"ok": False, "reason": "too_big",
+                         "message": f"Bu kitobda {total_pages} bet bor. "
+                                    f"Sahifa raqamini tekshirib qayta kiriting."})
 
     earned_bilig = (new_page // 5) - (old_pages // 5)
     pages_added = new_page - old_pages
@@ -2427,6 +2457,18 @@ def child_submit_test(book_id):
         "mid_test_1": "mid_test_1_done", "mid_test_2": "mid_test_2_done", "final_test": "final_test_done"
     }
     column = column_map.get(stage, "mid_test_1_done")
+
+    # Bir testni ikki marta topshirib, Bilig yig‘ib olishning oldini olamiz.
+    # Ilgari tekshiruv yo‘q edi: bir xil testni qayta-qayta topshirib,
+    # har safar tanga olish mumkin edi.
+    cursor.execute("SELECT %s FROM Plan_Books WHERE book_id = ?" % column, (book_id,))
+    _done = cursor.fetchone()
+    if _done and _done[0]:
+        return jsonify({"ok": False, "reason": "already_done", "already_done": True,
+                        "correct": correct, "total": total, "percent": percent,
+                        "earned_bilig": 0, "new_badges": [],
+                        "message": "Bu testni allaqachon topshirgansan. "
+                                   "Natija saqlanib qolgan."})
 
     with db_lock:
         cursor.execute(f"UPDATE Plan_Books SET {column} = 1 WHERE book_id = ?", (book_id,))
