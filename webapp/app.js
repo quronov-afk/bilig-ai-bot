@@ -1995,13 +1995,18 @@ function openParentBookModal(bookId, b, head) {
   const bb = b.book_base;
   let baseHtml = "";
   if (bb && bb.summary) {
-    // Yosh toifasi va mavzular — chip ko‘rinishida, tez ko‘z yuguritish uchun
+    // Chipda faqat O‘Z-O‘ZIDAN tushunarli narsa turadi: yosh va mavzular.
+    // Qiyinlik «o‘rta» deb yolg‘iz tursa hech nima anglatmaydi — u nomi
+    // bilan, matn qatorida yoziladi.
     let chips = "";
     if (bb.age_band) chips += '<span class="chip">' + escapeHtml(bb.age_band) + ' yosh</span>';
-    if (bb.difficulty) chips += '<span class="chip">' + escapeHtml(bb.difficulty) + '</span>';
-    (bb.topics || []).slice(0, 5).forEach(function (t) {
+    (bb.topics || []).slice(0, 6).forEach(function (t) {
       chips += '<span class="chip">' + escapeHtml(t) + '</span>';
     });
+
+    const qator = [];
+    if (bb.difficulty) qator.push('<b>Qiyinligi:</b> ' + escapeHtml(bb.difficulty));
+    if (bb.mood) qator.push('<b>Kayfiyati:</b> ' + escapeHtml(bb.mood));
 
     baseHtml =
       '<p class="eyebrow" style="margin-top:18px">Kitob haqida</p>' +
@@ -2015,8 +2020,10 @@ function openParentBookModal(bookId, b, head) {
           ? '<p class="section-sub" style="margin:0 0 6px"><b>G‘oyasi:</b> ' +
             escapeHtml(bb.theme) + '</p>' : "") +
         (bb.conclusion
-          ? '<p class="section-sub" style="margin:0"><b>Xulosasi:</b> ' +
+          ? '<p class="section-sub" style="margin:0 0 6px"><b>Xulosasi:</b> ' +
             escapeHtml(bb.conclusion) + '</p>' : "") +
+        (qator.length
+          ? '<p class="section-sub" style="margin:0">' + qator.join(" · ") + '</p>' : "") +
       '</div>' +
       (bb.for_whom
         ? '<div class="card" style="padding:12px 14px;margin-top:8px">' +
