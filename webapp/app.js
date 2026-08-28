@@ -1018,6 +1018,7 @@ document.addEventListener("click", async function (e) {
       case "open-page-manual": openPageManualModal(Number(el.dataset.id)); break;
       case "submit-page-manual": await submitPageManual(Number(el.dataset.id)); break;
       case "open-voice": openVoiceModal(Number(el.dataset.id)); break;
+      case "open-talk": openTalkModal(Number(el.dataset.id), el.dataset.stage); break;
       case "voice-resend":
         VoiceDraft.triedBoth = false;      // qayta bosilganda ikkala usul yana sinaladi
         await sendVoice(Number(el.dataset.id),
@@ -1844,7 +1845,13 @@ async function openBookModal(bookId) {
   if (!isChildView()) { openParentBookModal(bookId, b, head); return; }
 
   let testsHtml;
-  if (b.has_test && b.test_final_only) {
+  if (b.short_form) {
+    // Qisqa asar: bola uni bir o‘tirishda o‘qiydi. Test o‘rniga AI ustoz
+    // bitta savol beradi va bola ovozda javob qaytaradi (ega qarori).
+    testsHtml = '<p class="section-sub" style="margin-top:18px">' +
+      'Bu qisqa asar — test yo‘q. O‘qib bo‘lgach, AI ustozning savoliga ' +
+      'ovozli javob berasan.</p>';
+  } else if (b.has_test && b.test_final_only) {
     // Test o‘qish davomida yig‘ilgan yozuvlardan tuzilgan. U kitobning
     // hamma joyini qamramaydi, shuning uchun oraliq testlar berilmaydi —
     // bola kitobni tugatdim deganda bitta yakuniy test topshiradi.
@@ -1859,14 +1866,87 @@ async function openBookModal(bookId) {
             desc: "Oxirigacha o‘qib bo‘lgan bo‘lsang, yakuniy testni topshir va kitobni yopamiz."
           }));
   } else if (b.has_test) {
+    // Bosqich bolaning kelgan joyiga qarab ochiladi: 1-oraliq kitobning
+    // uchdan biri, 2-oraliq uchdan ikkisi, yakuniy esa oxirigacha
+    // o‘qilganda. Yopiq tugma «man etilgan» emas — pastda qancha bet
+    // qolgani aytiladi, ya'ni bola nima qilishini biladi.
+    const stages = b.stages || {};
+    const stageBtn = function (stage, label) {
+      const st = stages[stage] || { open: true, need_pages: 0 };
+      if (b[stage + "_done"]) {
+        return '<button class="btn btn-secondary" disabled>' + label + ' (bajarilgan)</button>';
+      }
+      if (!st.open) {
+        return '<button class="btn btn-outline" disabled style="opacity:.5">' +
+               icon("lock", 15, 2) + ' ' + label + '</button>';
+      }
+      return '<button class="btn btn-outline" data-action="open-test" data-id="' + bookId +
+             '" data-stage="' + stage + '">' + label + '</button>';
+    };
+    // Keyingi ochiladigan bosqich haqida bitta aniq jumla.
+    let hint = "";
+    const nextClosed = ["mid_test_1", "mid_test_2", "final_test"].filter(function (stage) {
+      return !b[stage + "_done"] && stages[stage] && !stages[stage].open;
+    })[0];
+    if (nextClosed) {
+      const nm = { mid_test_1: "1-oraliq", mid_test_2: "2-oraliq", final_test: "Yakuniy" }[nextClosed];
+      hint = '<p class="section-sub" style="margin-top:8px">Yana ' +
+             stages[nextClosed].need_pages + ' bet o‘qisang, ' + nm + ' test ochiladi.</p>';
+    }
     testsHtml = '<p class="eyebrow" style="margin-top:18px">Bilim testlari</p><div class="action-row">' +
-      '<button class="btn ' + (b.mid_test_1_done ? "btn-secondary" : "btn-outline") + '" data-action="open-test" data-id="' + bookId + '" data-stage="mid_test_1">1-oraliq ' + (b.mid_test_1_done ? "(bajarilgan)" : "") + '</button>' +
-      '<button class="btn ' + (b.mid_test_2_done ? "btn-secondary" : "btn-outline") + '" data-action="open-test" data-id="' + bookId + '" data-stage="mid_test_2">2-oraliq ' + (b.mid_test_2_done ? "(bajarilgan)" : "") + '</button>' +
-      '<button class="btn ' + (b.final_test_done ? "btn-secondary" : "btn-outline") + '" data-action="open-test" data-id="' + bookId + '" data-stage="final_test">Yakuniy ' + (b.final_test_done ? "(bajarilgan)" : "") + '</button>' +
-      '</div>';
+      stageBtn("mid_test_1", "1-oraliq") +
+      stageBtn("mid_test_2", "2-oraliq") +
+      stageBtn("final_test", "Yakuniy") +
+      '</div>' + hint;
   } else {
     testsHtml = '<p class="section-sub" style="margin-top:18px">Bu kitob uchun test hali tuzilmagan.</p>';
   }
+  // AI USTOZ SAVOLI — kitob boshida va oxirida bittadan. Bu erkin
+  // xulosadan farq qiladi: savol aniq, javob baholanadi va ota-onaga
+  // to‘liq hisobot boradi.
+  const talk = b.talk || {};
+  const talkNames = { start: "Kitob boshi", end: "Kitob yakuni" };
+  const talkDescs = {
+    start: "O‘qigan qisming haqida AI ustozning savoliga ovozda javob ber.",
+    end: "Kitobni tugatding. AI ustozning yakuniy savoliga javob ber."
+  };
+  let talkCards = "";
+  // Qisqa asarda «kitob boshi» savoli berilmaydi — bitta yakuniy savol.
+  const talkStages = b.short_form ? ["end"] : ["start", "end"];
+  talkStages.forEach(function (st) {
+    const t = talk[st];
+    if (!t || t.done) return;
+    if (t.open) {
+      talkCards += choiceCard({
+        ic: "help", tone: "gold", action: "open-talk",
+        data: { id: bookId, stage: st },
+        title: talkNames[st], tag: "5 Bilig", desc: talkDescs[st]
+      });
+    }
+  });
+  let talkHtml = "";
+  if (talkCards) {
+    talkHtml = '<p class="eyebrow" style="margin-top:18px">AI ustoz savoli</p>' + talkCards;
+  }
+
+  // Ovozli xulosa har 15 betda bir marta ochiladi. Yopiq bo‘lsa —
+  // «bo‘lmaydi» demaymiz, balki qancha o‘qish qolganini aytamiz.
+  let voiceHtml;
+  if (b.voice_open) {
+    voiceHtml = choiceCard({
+      ic: "mic", tone: "success", action: "open-voice", data: { id: bookId },
+      title: b.has_voice ? "Yana bitta ovozli xulosa" : "Ovozli xulosa yuborish",
+      desc: "Kitobni o‘z so‘zing bilan so‘zlab ber. Yaxshi so‘zlab bersang 3 Bilig."
+    });
+  } else {
+    voiceHtml = '<div class="card" style="padding:14px 16px">' +
+      '<p style="margin:0 0 4px;font-weight:700;color:var(--text)">Yana ' +
+      b.voice_need_pages + ' bet o‘qishing kerak</p>' +
+      '<p class="section-sub" style="margin:0">Ovozli xulosa har ' +
+      b.voice_every_pages + ' betda bir marta ochiladi — o‘qigan sari yangisi ochiladi.</p>' +
+      '</div>';
+  }
+
   openModal(b.title,
     head +
     '<p class="eyebrow" style="margin-top:18px">Qayergacha o‘qiding?</p>' +
@@ -1880,12 +1960,9 @@ async function openBookModal(bookId) {
       title: "Bet raqamini o‘zim yozaman",
       desc: "Rasm chiqmasa yoki yorug‘lik yetmasa — raqamni qo‘lda kiritasan."
     }) +
+    talkHtml +
     '<p class="eyebrow" style="margin-top:18px">Kitob haqida gapirib ber</p>' +
-    choiceCard({
-      ic: "mic", tone: "success", action: "open-voice", data: { id: bookId },
-      title: b.has_voice ? "Ovozli xulosani qayta yuborish" : "Ovozli xulosa yuborish",
-      desc: "Kitobni o‘z so‘zing bilan so‘zlab ber. AI Ustoz tinglaydi va maslahat beradi."
-    }) +
+    voiceHtml +
     testsHtml
   );
 }
@@ -1907,6 +1984,24 @@ function statusRow(label, done, doneText, pendingText) {
 function openParentBookModal(bookId, b, head) {
   const child = State.childrenCache.filter(function (c) { return c.id === State.selectedChildId; })[0];
   const childName = child ? child.name : "Farzandingiz";
+
+  // Kitob mazmuni o‘qish davomida o‘z-o‘zidan yig‘iladi. FAQAT ota-onaga
+  // ko‘rsatiladi: bolaga tayyor mazmun berilsa, u kitobni o‘qimay qo‘yadi.
+  const bb = b.book_base;
+  let baseHtml = "";
+  if (bb && bb.summary) {
+    baseHtml =
+      '<p class="eyebrow" style="margin-top:18px">Kitob haqida</p>' +
+      '<div class="card" style="padding:14px 16px">' +
+        '<p style="margin:0 0 10px">' + escapeHtml(bb.summary) + '</p>' +
+        (bb.characters
+          ? '<p class="section-sub" style="margin:0 0 6px"><b>Qahramonlar:</b> ' +
+            escapeHtml(bb.characters) + '</p>' : "") +
+        (bb.theme
+          ? '<p class="section-sub" style="margin:0"><b>Saboq:</b> ' +
+            escapeHtml(bb.theme) + '</p>' : "") +
+      '</div>';
+  }
 
   let testLines;
   if (!b.has_test) {
@@ -1930,6 +2025,7 @@ function openParentBookModal(bookId, b, head) {
       testLines +
     '</div>' +
 
+    baseHtml +
     '<p class="eyebrow" style="margin-top:18px">Siz nima qilishingiz mumkin</p>' +
     (b.has_test
       ? choiceCard({
@@ -2145,6 +2241,11 @@ async function audioToWav(blob) {
 // qayta yuboradi. Yozuv faqat muvaffaqiyatli yuborilgandan keyin
 // yoki bola «Qaytadan yozish» deganda o‘chadi.
 // ==========================================================
+// Hozirgi ovoz yozuvi nima uchun: bo‘sh bo‘lsa — erkin xulosa,
+// "start"/"end" bo‘lsa — AI ustoz savoliga javob. Qayta yuborish
+// tugmasi ham shu belgiga qarab to‘g‘ri manzilga yuboradi.
+let TalkStage = null;
+
 const VoiceDraft = {
   bookId: null,
   src: null,        // telefon yozgan asl fayl
@@ -2169,10 +2270,17 @@ const VoiceDraft = {
   }
 };
 
-function openVoiceModal(bookId) {
+function openVoiceModal(bookId, talkStage, question) {
+  TalkStage = talkStage || null;
   const saved = VoiceDraft.has(bookId);
-  openModal("Ovozli xulosa",
-    '<p class="section-sub">Kitob haqida 1-2 daqiqa gapirib bering: nima haqida edi, sizga nima yoqdi?</p>' +
+  openModal(TalkStage ? "AI ustoz savoli" : "Ovozli xulosa",
+    (TalkStage
+      ? '<div class="card" style="padding:14px 16px;margin-bottom:4px">' +
+          '<p style="margin:0;font-weight:700;color:var(--text)">' + escapeHtml(question || "") + '</p>' +
+        '</div>' +
+        '<p class="section-sub">Shu savolga o‘z so‘zing bilan javob ber. Shoshilma — ' +
+        'yarim daqiqadan ko‘proq gapirsang bo‘ladi.</p>'
+      : '<p class="section-sub">Kitob haqida 1-2 daqiqa gapirib bering: nima haqida edi, sizga nima yoqdi?</p>') +
     '<div style="text-align:center;padding:16px 0">' +
     '<button id="rec-btn" class="icon-btn" style="width:76px;height:76px;border-radius:50%;background:var(--brand);color:#fff;margin:0 auto">' + icon("mic", 28, 1.7) + '</button>' +
     '<div id="rec-time" class="card-meta" style="margin-top:10px;color:var(--text-soft);font-size:15px">' +
@@ -2254,6 +2362,18 @@ function openVoiceModal(bookId) {
   };
 }
 
+async function openTalkModal(bookId, stage) {
+  const q = asChildQuery();
+  const data = await api("/api/child/book/" + bookId + "/talk" + q +
+                         (q ? "&" : "?") + "stage=" + stage);
+  if (!data.open) {
+    toast("Bu savolga hali erta — yana " + data.need_pages + " bet o‘qi");
+    return;
+  }
+  if (data.done) { toast("Bu savolga allaqachon javob bergansan"); return; }
+  openVoiceModal(bookId, stage, data.question);
+}
+
 function voiceWait(title, sub) {
   openModal("AI Ustoz tinglamoqda",
     '<div class="empty-state" style="padding:26px 0"><div class="spinner"></div>' +
@@ -2300,8 +2420,11 @@ async function sendVoice(bookId, asl) {
   }));
 
   try {
-    const started = await api("/api/child/book/" + bookId + "/voice" + asChildQuery(),
-                             { method: "POST", body: fd });
+    const q = asChildQuery();
+    const path = TalkStage
+      ? "/api/child/book/" + bookId + "/talk" + q + (q ? "&" : "?") + "stage=" + TalkStage
+      : "/api/child/book/" + bookId + "/voice" + q;
+    const started = await api(path, { method: "POST", body: fd });
     voiceWait("AI Ustoz tinglayapti…", "Ovoz uzun bo‘lsa biroz ko‘proq kutadi.");
     let res = null;
     const until = Date.now() + 4 * 60 * 1000;
@@ -2316,14 +2439,18 @@ async function sendVoice(bookId, asl) {
     if (!res) throw { error: "Kutish vaqti tugadi. Ovozingiz saqlanib qoldi — qayta yuborib ko‘ring." };
 
     VoiceDraft.clear();                      // muvaffaqiyat — yozuv endi kerak emas
-    if (res.bonus_bilig >= 4) {
+    if (res.bonus_bilig > 0) {
       mascotToast("olmaxon-2", "AI ustoz seni tingladi",
                   "+" + res.bonus_bilig + " bonus Bilig — nutqing ravon edi.");
     }
     const showVoice = function () { openModal("AI Ustoz fikri",
-      '<div class="stat-grid" style="grid-template-columns:1fr">' +
-      '<div class="stat-box"><div class="num">+' + res.bonus_bilig + '</div><div class="lbl">bonus Bilig</div></div>' +
-      '</div>' +
+      // Tanga chiqmagan bo‘lsa «+0» ko‘rsatmaymiz — bola uchun bu baho
+      // emas, maslahat. AI ustozning so‘zi o‘zi yetarli.
+      (res.bonus_bilig > 0
+        ? '<div class="stat-grid" style="grid-template-columns:1fr">' +
+          '<div class="stat-box"><div class="num">+' + res.bonus_bilig + '</div><div class="lbl">bonus Bilig</div></div>' +
+          '</div>'
+        : "") +
       '<div class="card">' + escapeHtml(res.feedback) + '</div>' +
       '<button class="btn btn-primary btn-block" data-action="close-modal">Ajoyib</button>'
     ); };
@@ -2362,13 +2489,16 @@ const Test = {
       method: "POST", body: { stage: this.stage, answers: this.answers }
     });
     mascotToast("qaldirgoch-tekshiruv", res.correct + "/" + res.total + " to‘g‘ri javob",
-                res.percent >= 80 ? "Kitobni chindan tushunibsan." : "Yaxshi urinish — davom et.");
+                res.earned_bilig ? "Kitobni chindan tushunibsan." : "Yaxshi urinish — davom et.");
     const showRes = function () { openModal("Natija",
       '<div class="stat-grid">' +
       '<div class="stat-box"><div class="num">' + res.correct + '/' + res.total + '</div><div class="lbl">To‘g‘ri javob</div></div>' +
       '<div class="stat-box"><div class="num">' + res.percent + '%</div><div class="lbl">Natija</div></div>' +
       '<div class="stat-box"><div class="num">+' + res.earned_bilig + '</div><div class="lbl">Bilig</div></div>' +
       '</div>' +
+      (res.earned_bilig ? "" :
+        '<p class="section-sub">Bilig 70% dan yuqori natijaga beriladi. ' +
+        'Keyingi bosqichda albatta chiqadi — kitobni sinchiklab o‘qib bor.</p>') +
       '<button class="btn btn-primary btn-block" data-action="close-modal">Yopish</button>'
     ); };
     if (res.new_badges && res.new_badges.length) celebrate(res.new_badges, showRes);
@@ -2378,7 +2508,9 @@ const Test = {
 };
 
 async function openTestModal(bookId, stage) {
-  const questions = await api("/api/child/book/" + bookId + "/test" + asChildQuery());
+  const q = asChildQuery();
+  const questions = await api("/api/child/book/" + bookId + "/test" + q +
+                              (q ? "&" : "?") + "stage=" + stage);
   Test.bookId = bookId; Test.stage = stage; Test.questions = questions; Test.answers = {};
   const stageLabel = { mid_test_1: "1-oraliq test", mid_test_2: "2-oraliq test", final_test: "Yakuniy test" }[stage];
   let html = '<p class="section-sub">' + questions.length + ' ta savol. Har biriga bittadan javob tanlang.</p>';

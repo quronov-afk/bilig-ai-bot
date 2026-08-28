@@ -69,6 +69,16 @@ for _col_sql in (
     "ALTER TABLE Users ADD COLUMN badges_seen INTEGER DEFAULT 0",
     # Ota-onaga oxirgi marta 3 kunlik xulosa yuborilgan vaqt
     "ALTER TABLE Users ADD COLUMN last_summary_at TEXT",
+    # AI ustoz savoliga javob berilganmi (kitob boshi va oxiri uchun).
+    "ALTER TABLE Plan_Books ADD COLUMN talk_start_done INTEGER DEFAULT 0",
+    "ALTER TABLE Plan_Books ADD COLUMN talk_end_done INTEGER DEFAULT 0",
+    # Oxirgi ovozli xulosa yuborilganda kitob nechanchi betda edi.
+    # Keyingi xulosa uchun bola yana 15 bet o‘qishi kerak.
+    "ALTER TABLE Plan_Books ADD COLUMN voice_last_page INTEGER DEFAULT 0",
+    # Qisqa asar: test tuzilmaydi, o‘rniga og‘zaki xulosa so‘raladi.
+    "ALTER TABLE Book_Base ADD COLUMN short_form INTEGER DEFAULT 0",
+    # Asar xulosasi — ota-onaga «bu kitob farzandimga nima beradi?» javobi.
+    "ALTER TABLE Book_Base ADD COLUMN conclusion TEXT",
     # Ota-ona kitob muqovasini rasmga olsa — o‘sha rasm fayli nomi.
     # Bo‘sh bo‘lsa, muqova katalogdan nomi bo‘yicha topiladi.
     "ALTER TABLE Plan_Books ADD COLUMN cover_file TEXT",
@@ -252,6 +262,32 @@ for _tbl_sql in (
     """CREATE TABLE IF NOT EXISTS Auto_Test_State (
         book_id INTEGER PRIMARY KEY,
         notes_used INTEGER DEFAULT 0,
+        updated_at TEXT
+    )""",
+    # UMUMIY KITOB BAZASI. Katalogda yo‘q kitoblar ham shu yerda yig‘iladi.
+    # AI test uchun rasmlarni baribir o‘qiydi — o‘sha o‘qiganini saqlab
+    # qolamiz. Ertaga boshqa oila shu kitobni qo‘shsa, mazmuni TAYYOR
+    # turadi va AI umuman chaqirilmaydi.
+    # AI USTOZ SAVOLLARI — bola ovozda javob beradigan ochiq savollar.
+    # Kalit bo‘yicha saqlanadi, ya'ni bir marta tuzilsa hamma oilaga yetadi.
+    """CREATE TABLE IF NOT EXISTS Book_Talk_Questions (
+        book_key TEXT,
+        stage TEXT,
+        question TEXT,
+        created_at TEXT,
+        PRIMARY KEY (book_key, stage)
+    )""",
+    """CREATE TABLE IF NOT EXISTS Book_Base (
+        book_key TEXT PRIMARY KEY,
+        title TEXT,
+        author TEXT,
+        summary TEXT,
+        characters TEXT,
+        theme TEXT,
+        age_hint TEXT,
+        source TEXT,
+        use_count INTEGER DEFAULT 0,
+        created_at TEXT,
         updated_at TEXT
     )""",
 ):
@@ -446,6 +482,253 @@ def _save_test_to_bank(title, author, raw_json, from_notes=0):
 
 
 # ==========================================================
+# TEST BOSQICHLARI — bolaning kelgan joyiga qarab
+# ----------------------------------------------------------
+# Ilgari uchala bosqich ham bir xil savollarni berardi: 20 tasining
+# HAMMASINI. Shuning uchun 50-betda turgan bolaga 280-bet haqida savol
+# tushardi. Endi savollar kitob qismlariga bo‘linadi va har bosqich
+# faqat O‘QILGAN qismdan so‘raydi.
+# ==========================================================
+TEST_MID_COUNT = 7        # oraliq testda nechta savol
+TEST_FINAL_COUNT = 10     # yakuniy testda nechta savol
+STAGE_ORDER = ("mid_test_1", "mid_test_2", "final_test")
+
+
+def _split_by_part(questions):
+    """Savollarni kitobning uch qismiga ajratadi.
+
+    AI yangi testlarda "part" (1/2/3) belgisini qo‘yadi. Eski testlarda
+    bu belgi yo‘q — ular tartib bo‘yicha uchga bo‘linadi, chunki savollar
+    odatda kitob voqealari ketma-ketligida tuziladi.
+    """
+    parts = {1: [], 2: [], 3: []}
+    tagged = [q for q in questions if q.get("part") in (1, 2, 3, "1", "2", "3")]
+    if len(tagged) >= max(3, len(questions) // 2):
+        for q in questions:
+            parts[int(q.get("part", 1) or 1)].append(q)
+        if all(parts[i] for i in (1, 2, 3)):
+            return parts
+        parts = {1: [], 2: [], 3: []}
+    third = max(1, len(questions) // 3)
+    parts[1] = questions[:third]
+    parts[2] = questions[third:third * 2]
+    parts[3] = questions[third * 2:]
+    return parts
+
+
+def _take(pool, n, chosen):
+    """Ro‘yxatdan n ta savol oladi, allaqachon tanlanganlarini o‘tkazib."""
+    out = []
+    for q in pool:
+        if id(q) in chosen:
+            continue
+        out.append(q)
+        chosen.add(id(q))
+        if len(out) >= n:
+            break
+    return out
+
+
+def stage_questions(questions, stage, done_stages=()):
+    """Shu bosqichda beriladigan savollar.
+
+    Tartib qat'iy: savol berishda va javobni tekshirishda AYNAN bir xil
+    ro‘yxat chiqishi shart.
+
+    `done_stages` — bola ALLAQACHON topshirgan oraliq bosqichlar. Yakuniy
+    test o‘sha bosqichlarda ko‘rilgan savollarni takrorlamaydi: aks holda
+    u bilimni emas, yaqinda ko‘rilgan javobning xotirasini tekshirardi.
+    Oraliqlarni topshirmagan bolada esa (masalan, test faqat yakuniy
+    bo‘lgan kitobda) butun bank ochiq qoladi.
+    """
+    parts = _split_by_part(questions)
+    if stage == "mid_test_1":
+        return parts[1][:TEST_MID_COUNT]
+    if stage == "mid_test_2":
+        return parts[2][:TEST_MID_COUNT]
+
+    asked = set()
+    if "mid_test_1" in done_stages:
+        asked |= {id(q) for q in parts[1][:TEST_MID_COUNT]}
+    if "mid_test_2" in done_stages:
+        asked |= {id(q) for q in parts[2][:TEST_MID_COUNT]}
+
+    fresh = {i: [q for q in parts[i] if id(q) not in asked] for i in (1, 2, 3)}
+    # Yangi savollar yetarli bo‘lsa — takrorga umuman bormaymiz. Yetmasa
+    # (eski, kichik banklarda) butun bankdan olamiz: savolsiz qolgandan
+    # ko‘ra, bir-ikkitasi takrorlangani yaxshi.
+    use = fresh if sum(len(fresh[i]) for i in (1, 2, 3)) >= 6 else parts
+
+    chosen = set()
+    picked = (_take(use[1], 3, chosen) +
+              _take(use[2], 3, chosen) +
+              _take(use[3], 4, chosen))
+    if len(picked) < TEST_FINAL_COUNT:
+        picked += _take(use[1] + use[2] + use[3],
+                        TEST_FINAL_COUNT - len(picked), chosen)
+    return picked[:TEST_FINAL_COUNT]
+
+
+def _done_stages(book_id):
+    """Bola qaysi oraliq bosqichlarni allaqachon topshirgan."""
+    cursor.execute(
+        "SELECT mid_test_1_done, mid_test_2_done FROM Plan_Books WHERE book_id = ?", (book_id,))
+    row = cursor.fetchone()
+    out = []
+    if row and row[0]:
+        out.append("mid_test_1")
+    if row and row[1]:
+        out.append("mid_test_2")
+    return tuple(out)
+
+
+def stage_gate(book_id, stage):
+    """Bu bosqich hozir ochiqmi? Qaytaradi: (ochiqmi, yana necha bet kerak).
+
+    1-oraliq — kitobning 1/3 qismi o‘qilganda,
+    2-oraliq — 2/3 qismi o‘qilganda,
+    yakuniy  — oxirigacha o‘qilganda ochiladi.
+    Kitobning bet soni noma'lum bo‘lsa qulf ishlamaydi — hammasi ochiq.
+    """
+    cursor.execute("SELECT pages_read, total_pages FROM Plan_Books WHERE book_id = ?", (book_id,))
+    row = cursor.fetchone()
+    if not row:
+        return False, 0
+    pages = row[0] or 0
+    total = row[1] or 0
+    if total <= 0:
+        return True, 0
+    # Yakuniy test uchun 100% talab qilinmaydi: bola oxirgi betni rasmga
+    # olmasligi mumkin va test butunlay yopilib qolardi. 90% yetarli.
+    need_at = {"mid_test_1": (total + 2) // 3,
+               "mid_test_2": (total * 2 + 2) // 3,
+               "final_test": max(1, total * 9 // 10)}.get(stage, total)
+    return pages >= need_at, max(0, need_at - pages)
+
+
+def save_book_base(title, author, info, source, short_form=0):
+    """Kitob haqidagi ma'lumotni umumiy bazaga yozadi.
+
+    `source`: 'photo' — ota-ona yuklagan sahifa rasmlaridan;
+              'notes' — bola o‘qish davomida yuborgan sahifalardan.
+    Rasmlardan olingani to‘liqroq, shuning uchun uni yozuvlardan
+    olingani bilan almashtirmaymiz.
+    """
+    if not info or not (info.get("summary") or "").strip():
+        return
+    key = book_key(title, author)
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    try:
+        with db_lock:
+            cursor.execute("SELECT source FROM Book_Base WHERE book_key = ?", (key,))
+            row = cursor.fetchone()
+            if row is not None and source == "notes" and row[0] == "photo":
+                return
+            cursor.execute(
+                "INSERT OR REPLACE INTO Book_Base (book_key, title, author, summary, "
+                "characters, theme, conclusion, age_hint, source, short_form, "
+                "use_count, created_at, updated_at) "
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
+                "COALESCE((SELECT use_count FROM Book_Base WHERE book_key = ?), 0), "
+                "COALESCE((SELECT created_at FROM Book_Base WHERE book_key = ?), ?), ?)",
+                (key, title, author, (info.get("summary") or "").strip(),
+                 (info.get("characters") or "").strip(), (info.get("theme") or "").strip(),
+                 (info.get("conclusion") or "").strip(),
+                 (info.get("age_hint") or "").strip(), source, int(short_form),
+                 key, key, now, now)
+            )
+            conn.commit()
+        ai_service.log_line("[kitob_bazasi] «%s» saqlandi (%s)" % (title, source))
+        # Mazmun bor — endi AI ustoz savollarini ham tayyorlab qo‘yamiz.
+        prepare_talk_questions(title, author, info)
+    except Exception:
+        traceback.print_exc()
+
+
+TALK_COINS = 5            # AI ustoz savoliga yaxshi javob uchun Bilig
+TALK_STAGES = ("start", "end")
+
+
+def talk_gate(book_id, stage):
+    """AI ustoz savoli hozir ochiqmi. Qaytaradi: (ochiqmi, yana necha bet).
+
+    «start» — kitobning uchdan biri o‘qilganda (1-oraliq test bilan bir vaqtda),
+    «end»   — kitob oxirigacha o‘qilganda (yakuniy test bilan bir vaqtda).
+    """
+    return stage_gate(book_id, "mid_test_1" if stage == "start" else "final_test")
+
+
+def get_talk_question(title, author, stage):
+    """Tayyorlangan savolni bazadan oladi (bo‘lmasa None)."""
+    key = book_key(title, author)
+    try:
+        cursor.execute(
+            "SELECT question FROM Book_Talk_Questions WHERE book_key = ? AND stage = ?",
+            (key, stage))
+        row = cursor.fetchone()
+    except Exception:
+        return None
+    return row[0] if row and row[0] else None
+
+
+def save_talk_question(title, author, stage, question):
+    if not question:
+        return
+    try:
+        with db_lock:
+            cursor.execute(
+                "INSERT OR REPLACE INTO Book_Talk_Questions (book_key, stage, question, created_at) "
+                "VALUES (?, ?, ?, ?)",
+                (book_key(title, author), stage, question,
+                 datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+            )
+            conn.commit()
+    except Exception:
+        traceback.print_exc()
+
+
+def prepare_talk_questions(title, author, base):
+    """Ikkala savolni oldindan tayyorlab qo‘yadi — bola bosganda kutmasin.
+
+    Kitob bazasi to‘lgan zahoti fon rejimida chaqiriladi.
+    """
+    def worker():
+        for stage in TALK_STAGES:
+            try:
+                if get_talk_question(title, author, stage):
+                    continue
+                q = run_async(ai_service.generate_talk_question(title, author, base, stage))
+                save_talk_question(title, author, stage, q)
+                ai_service.log_line("[savol] «%s» %s savoli tayyor" % (title, stage))
+            except Exception:
+                traceback.print_exc()
+
+    threading.Thread(target=worker, daemon=True).start()
+
+
+def get_book_base(title, author):
+    """Umumiy bazadan kitob haqidagi ma'lumotni oladi (bo‘lmasa None)."""
+    key = book_key(title, author)
+    try:
+        cursor.execute(
+            "SELECT summary, characters, theme, age_hint, COALESCE(short_form, 0), "
+            "COALESCE(conclusion, '') FROM Book_Base WHERE book_key = ?", (key,))
+        row = cursor.fetchone()
+        if not row and key.endswith("|"):
+            cursor.execute(
+                "SELECT summary, characters, theme, age_hint, COALESCE(short_form, 0), "
+                "COALESCE(conclusion, '') FROM Book_Base WHERE book_key LIKE ? LIMIT 1",
+                (key + "%",))
+            row = cursor.fetchone()
+    except Exception:
+        return None
+    if not row:
+        return None
+    return {"summary": row[0], "characters": row[1], "theme": row[2],
+            "age_hint": row[3], "short_form": bool(row[4]), "conclusion": row[5]}
+
+
+# ==========================================================
 # «YASHIRIN» TEST TUZISH — o‘qish davomida o‘z-o‘zidan
 # ----------------------------------------------------------
 # Bola sahifani rasmga olganda AI uni baribir o‘qiydi. Endi biz o‘sha
@@ -517,16 +800,17 @@ def _maybe_build_test_from_notes(book_id):
         if used and len(notes) < used + AUTO_TEST_STEP:
             return          # oldingi safardan beri yetarli yangi yozuv yig‘ilmagan
 
-        cursor.execute("SELECT title, author FROM Plan_Books WHERE book_id = ?", (book_id,))
+        cursor.execute("SELECT title, author, total_pages FROM Plan_Books WHERE book_id = ?",
+                       (book_id,))
         row = cursor.fetchone()
         if not row:
             return
-        title, author = row[0], row[1]
+        title, author, total_pages = row[0], row[1], (row[2] or 0)
 
         def worker():
             try:
                 questions, raw_json = run_async(
-                    ai_service.generate_test_from_notes(title, author, list(notes))
+                    ai_service.generate_test_from_notes(title, author, list(notes), total_pages)
                 )
                 if not questions:
                     return
@@ -545,6 +829,14 @@ def _maybe_build_test_from_notes(book_id):
                 # boshqa oilalar ham chala testni olib qoladi.
                 if len(notes) >= AUTO_TEST_BANK_MIN:
                     _save_test_to_bank(title, author, raw_json, from_notes=1)
+                    # Yozuvlar yetarli — kitob mazmuni ham tuzilib, umumiy
+                    # bazaga qo‘shiladi. Rasm yuborilmaydi, ya'ni arzon.
+                    try:
+                        info = run_async(
+                            ai_service.summarize_book_from_notes(title, author, list(notes)))
+                        save_book_base(title, author, info, "notes")
+                    except Exception:
+                        traceback.print_exc()
                 ai_service.log_line("[auto_test] «%s» uchun %d ta savol tuzildi (%d ta yozuvdan)"
                                     % (title, len(questions), len(notes)))
             except Exception:
@@ -786,6 +1078,54 @@ def has_voice_report(child_id: int, book_id: int) -> bool:
         (child_id, book_id)
     )
     return cursor.fetchone() is not None
+
+
+# ==========================================================
+# RAG‘BAT QOIDALARI (ega qarori, 2026-08-28)
+# ----------------------------------------------------------
+#   • Test  — har bosqich uchun natija 70% va undan yuqori bo‘lsa 3 Bilig.
+#   • Ovoz  — har 15 betga bitta xulosa; yaxshi so‘zlab bersa 3 Bilig.
+# Ikkalasida ham bir xil o‘lchov ishlatiladi — bola uchun qoida sodda
+# va tushunarli bo‘lsin.
+# ==========================================================
+REWARD_PERCENT = 70       # «yaxshi» deb hisoblanadigan eng past natija
+REWARD_COINS = 3          # yaxshi natija uchun beriladigan Bilig
+VOICE_EVERY_PAGES = 15    # necha betga bitta ovozli xulosa
+
+
+def voice_quota(book_id: int):
+    """Shu kitob uchun ovozli xulosa hozir ochiqmi — shuni hisoblaydi.
+
+    Qoida: oxirgi ovozli xulosadan beri kamida 15 bet o‘qilgan bo‘lsin.
+    Birinchisi uchun — kitob boshidan 15 bet.
+
+    Hisob «o‘qilgan betlar ÷ 15» tarzida qilinmaydi: unda 143 bet o‘qigan
+    bola 9 ta huquqni birdan to‘plab, ketma-ket yuborib tanga yig‘a olardi.
+
+    Qaytaradi: (ochiqmi, keyingisiga necha bet qolgani).
+    """
+    cursor.execute("SELECT pages_read, voice_last_page, total_pages "
+                   "FROM Plan_Books WHERE book_id = ?", (book_id,))
+    row = cursor.fetchone()
+    if not row:
+        return False, VOICE_EVERY_PAGES
+    pages = row[0] or 0
+    last = row[1] or 0
+    total = row[2] or 0
+    need = max(0, last + VOICE_EVERY_PAGES - pages)
+    # QISQA ASARLAR. Bir sahifalik hikoyada 15 bet hech qachon yig‘ilmaydi —
+    # ilgari bunday kitobda ovozli xulosa umuman ochilmasdi. Endi kitob
+    # oxirigacha o‘qilgan bo‘lsa, bitta xulosa beriladi. `last < total`
+    # sharti buni BIR MARTA qiladi: xulosa yuborilgach, sanoq oxirgi betga
+    # suriladi va qayta ochilmaydi.
+    finished = total > 0 and pages >= total and last < total
+    if finished:
+        return True, 0
+    # Kitobda 15 betdan kam qolgan bo‘lsa, «yana 15 bet o‘qi» deyish
+    # noto‘g‘ri — bola oxirigacha o‘qisa bas.
+    if total > 0:
+        need = min(need, max(0, total - pages))
+    return need == 0, need
 
 
 # Daraja bosqichlari — database.py dagi calculate_and_update_rank bilan bir xil
@@ -1669,7 +2009,7 @@ def _start_test_job(book_id, title, author, photos_bytes):
 
     def worker():
         try:
-            questions, raw_json = run_async(
+            questions, raw_json, book_info = run_async(
                 ai_service.generate_test_bank_from_photos(photos_bytes)
             )
             if not questions:
@@ -1685,6 +2025,9 @@ def _start_test_job(book_id, title, author, photos_bytes):
                 cursor.execute("DELETE FROM Auto_Test_State WHERE book_id = ?", (book_id,))
                 conn.commit()
             _save_test_to_bank(title, author, raw_json)
+            # AI bu rasmlarni baribir o‘qidi — kitob haqida bilganini
+            # umumiy bazaga qo‘shib qo‘yamiz.
+            save_book_base(title, author, book_info, "photo")
             _set_test_job(job_id, status="tayyor", count=len(questions))
         except Exception as e:
             # Xatoni YASHIRMAYMIZ: jurnalga to‘liq yozamiz va qisqartirilgan
@@ -1877,6 +2220,32 @@ def _resolve_active_child(request):
     ai_service.log_line("[xavfsizlik] %s begona bola %s ga tegmoqchi bo‘ldi"
                         % (g.user_id, as_child))
     return g.user_id
+
+
+class NeedChildMode(Exception):
+    """Ota-ona farzand nomidan ish qilmoqchi, lekin Bolaxonaga kirmagan."""
+
+
+@app.errorhandler(NeedChildMode)
+def _need_child_mode(_e):
+    return jsonify({"error": "Buni farzandingiz nomidan bajarish uchun avval "
+                             "Bolaxonaga kiring."}), 403
+
+
+def _require_child_actor(request):
+    """Bola nomidan bajariladigan amallar uchun aktiv bolani aniqlaydi.
+
+    Ega qarori (2026-08-28): ota-ona bunday amalni faqat **Bolaxonaga
+    kirgan holda** bajara oladi. Ilgari Bolaxonasiz ham o‘tib ketardi va
+    natija (bet, Bilig, test) ota-onaning O‘Z hisobiga yozilardi.
+    """
+    child_id = _resolve_active_child(request)
+    if child_id == g.user_id:
+        cursor.execute("SELECT role FROM Users WHERE user_id = ?", (g.user_id,))
+        row = cursor.fetchone()
+        if row and row[0] == "parent":
+            raise NeedChildMode()
+    return child_id
 
 
 @app.route("/api/child/home", methods=["GET"])
@@ -2085,6 +2454,18 @@ def child_books():
 @require_auth
 def child_book_detail(book_id):
     child_id = _resolve_active_child(request)
+    # Diqqat: `cursor` yagona obyekt — yordamchi so‘rovni asosiy
+    # execute() dan OLDIN bajaramiz, aks holda natija o‘chib ketadi.
+    voice_open, voice_need = voice_quota(book_id)
+    voice_sent = has_voice_report(child_id, book_id)
+    stages = {}
+    for _st in STAGE_ORDER:
+        _open, _need = stage_gate(book_id, _st)
+        stages[_st] = {"open": _open, "need_pages": _need}
+    talk = {}
+    for _ts in TALK_STAGES:
+        _open, _need, _done = _talk_state(book_id, _ts)
+        talk[_ts] = {"open": _open, "need_pages": _need, "done": _done}
     cursor.execute(
         "SELECT title, author, pages_read, total_pages, is_completed, "
         "mid_test_1_done, mid_test_2_done, final_test_done FROM Plan_Books WHERE book_id = ?",
@@ -2100,12 +2481,22 @@ def child_book_detail(book_id):
     # Bola «Kitobni yakunladim» deganda bitta yakuniy test beriladi.
     cursor.execute("SELECT book_id FROM Auto_Test_State WHERE book_id = ?", (book_id,))
     final_only = cursor.fetchone() is not None
+    base = get_book_base(row[0], row[1])
+    # Qisqa asarda test bo‘lmaydi — bola og‘zaki xulosa beradi (ega qarori).
+    short_form = bool((base or {}).get("short_form"))
     return jsonify({
         "title": row[0], "author": row[1], "pages_read": row[2], "total_pages": row[3],
         "completed": bool(row[4]), "mid_test_1_done": bool(row[5]),
         "mid_test_2_done": bool(row[6]), "final_test_done": bool(row[7]),
         "has_test": has_test, "test_final_only": final_only,
-        "has_voice": has_voice_report(child_id, book_id)
+        "has_voice": voice_sent,
+        "voice_open": voice_open,
+        "voice_need_pages": voice_need,
+        "voice_every_pages": VOICE_EVERY_PAGES,
+        "stages": stages,
+        "talk": talk,
+        "short_form": short_form,
+        "book_base": base
     })
 
 
@@ -2116,7 +2507,7 @@ def child_submit_page_photo(book_id):
     if "photo" not in request.files:
         return jsonify({"error": "Rasm topilmadi"}), 400
     image_bytes = request.files["photo"].read()
-    child_id = _resolve_active_child(request)
+    child_id = _require_child_actor(request)
 
     # 1) Aynan shu rasm ilgari tekshirilganmi? Bo‘lsa — AI chaqirilmaydi.
     img_hash = hashlib.sha256(image_bytes).hexdigest()
@@ -2187,7 +2578,7 @@ def child_submit_page_manual(book_id):
     """AI orqali emas, sahifa raqamini qo‘lda kiritish (zaxira variant)."""
     data = request.get_json(force=True) or {}
     new_page = int(data.get("page_number", 0))
-    child_id = _resolve_active_child(request)
+    child_id = _require_child_actor(request)
     if new_page <= 0:
         return jsonify({"ok": False, "message": "Sahifa raqamini to‘g‘ri kiriting"}), 400
     return _apply_page_progress(book_id, child_id, new_page)
@@ -2270,7 +2661,16 @@ def child_submit_voice(book_id):
     if len(audio_bytes) < 2000:
         return jsonify({"error": "Ovoz juda qisqa yoki yozilmagan. "
                                  "Mikrofonni bosib, kamida 15 soniya gapiring."}), 400
-    child_id = _resolve_active_child(request)
+    child_id = _require_child_actor(request)
+
+    # Ega qarori: ovozli xulosa har 15 betda bir marta yuboriladi. Ilgari
+    # cheklov yo‘q edi — bir xil xulosani qayta-qayta yuborib tanga yig‘sa
+    # bo‘lardi. Endi yangi xulosa uchun avval o‘qish kerak.
+    is_open, need = voice_quota(book_id)
+    if not is_open:
+        return jsonify({"error": "Ovozli xulosa har %d betda bir marta yuboriladi. "
+                                 "Yana %d bet o‘qigach, yangisini yuborsang bo‘ladi."
+                                 % (VOICE_EVERY_PAGES, need)}), 403
 
     cursor.execute("SELECT title FROM Plan_Books WHERE book_id = ?", (book_id,))
     row = cursor.fetchone()
@@ -2313,14 +2713,20 @@ def _set_voice_job(job_id, **fields):
         job["at"] = time.time()
 
 
-def _start_voice_job(book_id, child_id, book_title, age, audio_bytes, detail, was_original=False):
+def _start_voice_job(book_id, child_id, book_title, age, audio_bytes, detail,
+                     was_original=False, talk_stage=None, question=""):
     job_id = uuid.uuid4().hex[:12]
     _set_voice_job(job_id, status="ishlanmoqda", result=None, error=None, detail=detail)
 
     def worker():
         try:
-            result = run_async(ai_service.evaluate_voice_summary(audio_bytes, age, book_title))
-            payload = _finish_voice(book_id, child_id, book_title, result, detail)
+            result = run_async(
+                ai_service.evaluate_voice_summary(audio_bytes, age, book_title, question))
+            if talk_stage:
+                payload = _finish_talk(book_id, child_id, book_title, result,
+                                       detail, talk_stage, question)
+            else:
+                payload = _finish_voice(book_id, child_id, book_title, result, detail)
             _set_voice_job(job_id, status="tayyor", result=payload)
             # Ishlagan formatni eslab qolamiz — keyingi safar shundan boshlanadi.
             new_pref = "asl" if was_original else "wav"
@@ -2357,8 +2763,14 @@ def child_voice_job(job_id):
 
 
 def _finish_voice(book_id, child_id, book_title, result, detail):
-    bonus = int(result.get("bonus_bilig", 0))
     diag = result.get("diagnostic_scores", {})
+    # Ega qarori: ovoz uchun ham test bilan bir xil o‘lchov — yaxshi so‘zlab
+    # bersa 3 Bilig, aks holda tanga yo‘q (lekin iliq maslahat baribir bor).
+    marks = [diag.get(k, 0) for k in ("factual_score", "logic_score",
+                                      "conclusion_score", "fluency_score",
+                                      "vocabulary_score")]
+    average = sum(marks) / len(marks) if marks else 0
+    bonus = REWARD_COINS if average >= REWARD_PERCENT else 0
     new_badges = []
     with db_lock:
         if bonus > 0:
@@ -2376,6 +2788,13 @@ def _finish_voice(book_id, child_id, book_title, result, detail):
              result.get("parent_report", {}).get("conversation_topic", ""),
              datetime.now().strftime("%Y-%m-%d %H:%M:%S"), bonus,
              result.get("child_feedback", ""))
+        )
+        # Keyingi ovozli xulosa uchun sanoq shu betdan boshlanadi.
+        # Bu AI tahlili MUVAFFAQIYATLI tugagandagina bajariladi — aks holda
+        # xatolikdan keyingi qayta yuborish ham to‘silib qolardi.
+        cursor.execute(
+            "UPDATE Plan_Books SET voice_last_page = pages_read WHERE book_id = ?",
+            (book_id,)
         )
         conn.commit()
         new_badges, later_badges = badges_engine.check_badges(
@@ -2403,10 +2822,182 @@ def _finish_voice(book_id, child_id, book_title, result, detail):
     }
 
 
+# ==========================================================
+# AI USTOZ SAVOLI — ovozda javob beriladigan ochiq savol
+# ----------------------------------------------------------
+# Kitobning boshida (uchdan biri o‘qilganda) va oxirida bittadan savol
+# beriladi. Savol FAKTIK EMAS: bola o‘qiganini o‘z so‘zi bilan gapirib
+# bera olishini, tushunganini va munosabatini ochadi. Javob ovozli
+# yuboriladi, ota-onaga to‘liq hisobot boradi.
+# ==========================================================
+def _talk_state(book_id, stage):
+    """(ochiqmi, yana necha bet, topshirilganmi) — bitta so‘rovda."""
+    is_open, need = talk_gate(book_id, stage)
+    column = "talk_start_done" if stage == "start" else "talk_end_done"
+    cursor.execute("SELECT %s FROM Plan_Books WHERE book_id = ?" % column, (book_id,))
+    row = cursor.fetchone()
+    return is_open, need, bool(row and row[0])
+
+
+@app.route("/api/child/book/<int:book_id>/talk", methods=["GET"])
+@require_auth
+def child_get_talk(book_id):
+    """Shu bosqichdagi AI ustoz savolini olish."""
+    stage = request.args.get("stage") or "start"
+    if stage not in TALK_STAGES:
+        stage = "start"
+
+    is_open, need, done = _talk_state(book_id, stage)
+    cursor.execute("SELECT title, author FROM Plan_Books WHERE book_id = ?", (book_id,))
+    row = cursor.fetchone()
+    if not row:
+        return jsonify({"error": "Kitob topilmadi"}), 404
+    title, author = row[0], row[1]
+
+    if not is_open:
+        return jsonify({"open": False, "need_pages": need, "done": done, "question": None})
+
+    question = get_talk_question(title, author, stage)
+    if not question:
+        # Oldindan tayyorlanmagan bo‘lsa — shu yerda tuzamiz. Bu faqat
+        # matn, ya'ni tez. Kitob bazasi bo‘lmasa ham nomidan tuza oladi.
+        base = get_book_base(title, author) or {}
+        try:
+            question = run_async(
+                ai_service.generate_talk_question(title, author, base, stage))
+            save_talk_question(title, author, stage, question)
+        except Exception as e:
+            ai_service.log_line("[savol] XATO kitob=%s: %r" % (book_id, e))
+            return jsonify({"error": ai_service.human_error(e)}), 500
+
+    return jsonify({"open": True, "need_pages": 0, "done": done, "question": question})
+
+
+@app.route("/api/child/book/<int:book_id>/talk", methods=["POST"])
+@require_auth
+def child_submit_talk(book_id):
+    """Bola AI ustoz savoliga ovozli javob yuboradi."""
+    stage = request.args.get("stage") or "start"
+    if stage not in TALK_STAGES:
+        stage = "start"
+    if "audio" not in request.files:
+        return jsonify({"error": "Audio topilmadi"}), 400
+    audio_bytes = request.files["audio"].read()
+    kind = ai_service.audio_kind(audio_bytes)
+    detail = "server: %s, %d KB" % (kind, len(audio_bytes) // 1024)
+    ai_service.log_line("[talk] kitob=%s bosqich=%s %s" % (book_id, stage, detail))
+    if len(audio_bytes) < 2000:
+        return jsonify({"error": "Ovoz juda qisqa yoki yozilmagan. "
+                                 "Mikrofonni bosib, kamida 30 soniya gapiring."}), 400
+
+    child_id = _require_child_actor(request)
+    is_open, need, done = _talk_state(book_id, stage)
+    if not is_open:
+        return jsonify({"error": "Bu savolga hali erta. Yana %d bet o‘qi." % need}), 403
+    if done:
+        return jsonify({"error": "Bu savolga allaqachon javob bergansan."}), 403
+
+    cursor.execute("SELECT title, author FROM Plan_Books WHERE book_id = ?", (book_id,))
+    row = cursor.fetchone()
+    title = row[0] if row else "Kitob"
+    author = row[1] if row else ""
+
+    cursor.execute("SELECT child_age FROM Family_Link WHERE child_id = ?", (child_id,))
+    age_row = cursor.fetchone()
+    age = age_row[0] if age_row and age_row[0] else 10
+
+    question = get_talk_question(title, author, stage) or ""
+    try:
+        was_original = bool(json.loads(request.form.get("meta") or "{}").get("ogirilmagan"))
+    except Exception:
+        was_original = False
+    job_id = _start_voice_job(book_id, child_id, title, age, audio_bytes, detail,
+                              was_original, talk_stage=stage, question=question)
+    return jsonify({"ok": True, "job_id": job_id})
+
+
+def _finish_talk(book_id, child_id, book_title, result, detail, stage, question):
+    """AI ustoz savoliga javobni yakunlaydi: Bilig, yozuv, ota-onaga hisobot."""
+    diag = result.get("diagnostic_scores", {})
+    marks = [diag.get(k, 0) for k in ("factual_score", "logic_score",
+                                      "conclusion_score", "fluency_score",
+                                      "vocabulary_score")]
+    average = sum(marks) / len(marks) if marks else 0
+    bonus = TALK_COINS if average >= REWARD_PERCENT else 0
+
+    pr = dict(result.get("parent_report", {}))
+    pr["question"] = question          # ota-ona qaysi savolga javob berilganini ko‘rsin
+    column = "talk_start_done" if stage == "start" else "talk_end_done"
+
+    with db_lock:
+        if bonus > 0:
+            cursor.execute(
+                "UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?",
+                (bonus, child_id))
+        cursor.execute(
+            "INSERT INTO Diagnostic_Logs (child_id, book_id, type, factual_score, logic_score, "
+            "conclusion_score, fluency_score, vocabulary_score, parent_note, convo_topic, "
+            "created_at, bonus_bilig, child_note) "
+            "VALUES (?, ?, 'talk', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            (child_id, book_id,
+             diag.get("factual_score", 0), diag.get("logic_score", 0),
+             diag.get("conclusion_score", 0), diag.get("fluency_score", 0),
+             diag.get("vocabulary_score", 0),
+             json.dumps(pr, ensure_ascii=False),
+             pr.get("conversation_topic", ""),
+             datetime.now().strftime("%Y-%m-%d %H:%M:%S"), bonus,
+             result.get("child_feedback", ""))
+        )
+        cursor.execute("UPDATE Plan_Books SET %s = 1 WHERE book_id = ?" % column, (book_id,))
+        conn.commit()
+        new_badges, later_badges = badges_engine.check_badges(
+            child_id, {"ezgulik": bool(result.get("badge_ezgulik", False))},
+            action="voice")
+
+    _mark_celebrated(child_id, new_badges, later_badges)
+    announce_badges(child_id, new_badges + later_badges)
+
+    parent_id = get_parent_id(child_id)
+    if parent_id:
+        nom = "kitob boshi" if stage == "start" else "kitob yakuni"
+        send_telegram_message(
+            parent_id,
+            f"🎓 <b>{book_title}</b> — AI ustoz savoli ({nom})\n\n"
+            f"❓ <i>{question}</i>\n\n"
+            f"📌 {pr.get('summary', '')}\n\n"
+            f"✅ {pr.get('strengths', '')}\n🌱 {pr.get('weaknesses', '')}\n\n"
+            f"{pr.get('conversation_topic', '')}"
+        )
+
+    return {
+        "ok": True, "bonus_bilig": bonus,
+        "feedback": result.get("child_feedback", ""),
+        "new_badges": new_badges
+    }
+
+
 @app.route("/api/child/book/<int:book_id>/test", methods=["GET"])
 @require_auth
 def child_get_test(book_id):
-    """Test savollarini olish (to‘g‘ri javob YASHIRIB yuboriladi)."""
+    """Bosqich savollarini olish (to‘g‘ri javob YASHIRIB yuboriladi).
+
+    Savollar bolaning kelgan joyiga qarab beriladi: 1-oraliqda faqat
+    kitobning birinchi uchdan bir qismidan so‘raladi. Ilgari uchala
+    bosqich ham butun kitobdan so‘rardi — o‘qilmagan sahifalar ham.
+    """
+    stage = request.args.get("stage") or "mid_test_1"
+    if stage not in STAGE_ORDER:
+        stage = "mid_test_1"
+
+    cursor.execute("SELECT book_id FROM Auto_Test_State WHERE book_id = ?", (book_id,))
+    if cursor.fetchone() is not None:
+        stage = "final_test"
+
+    is_open, need = stage_gate(book_id, stage)
+    if not is_open:
+        return jsonify({"error": "Bu testga hali erta. Yana %d bet o‘qi." % need}), 403
+
+    done_stages = _done_stages(book_id)
     cursor.execute("SELECT questions_json FROM Book_Tests WHERE book_id = ?", (book_id,))
     row = cursor.fetchone()
     if not row:
@@ -2418,8 +3009,10 @@ def child_get_test(book_id):
 
     safe_questions = [
         {"id": q.get("id"), "category": q.get("category"), "question": q.get("question"), "options": q.get("options")}
-        for q in questions
+        for q in stage_questions(questions, stage, done_stages)
     ]
+    if not safe_questions:
+        return jsonify({"error": "Bu bosqich uchun savollar topilmadi"}), 404
     return jsonify(safe_questions)
 
 
@@ -2430,7 +3023,7 @@ def child_submit_test(book_id):
     data = request.get_json(force=True) or {}
     stage = data.get("stage", "mid_test_1")  # mid_test_1 | mid_test_2 | final_test
     answers = data.get("answers", {})  # {"1": "A) ...", ...}
-    child_id = _resolve_active_child(request)
+    child_id = _require_child_actor(request)
 
     # Test o‘qish davomida yig‘ilgan yozuvlardan tuzilgan bo‘lsa, u faqat
     # yakuniy test sifatida beriladi — oraliq bosqichlarga bo‘linmaydi.
@@ -2444,14 +3037,25 @@ def child_submit_test(book_id):
         return jsonify({"error": "Test topilmadi"}), 404
     questions = json.loads(row[0])
 
+    # Bosqich hali ochilmagan bo‘lsa, javob qabul qilinmaydi — aks holda
+    # bola savollarni ko‘rmasdan turib ham natija yubora olardi.
+    is_open, need = stage_gate(book_id, stage)
+    if not is_open:
+        return jsonify({"error": "Bu testga hali erta. Yana %d bet o‘qi." % need}), 403
+
+    # AYNAN savol berilgan ro‘yxat bo‘yicha tekshiramiz — butun bank
+    # bo‘yicha emas, aks holda berilmagan savollar ham «xato» sanalardi.
+    asked = stage_questions(questions, stage, _done_stages(book_id))
     correct = 0
-    for q in questions:
+    for q in asked:
         qid = str(q.get("id"))
         if qid in answers and answers[qid] == q.get("answer"):
             correct += 1
-    total = len(questions) if questions else 1
+    total = len(asked) if asked else 1
     percent = round((correct / total) * 100)
-    earned = max(1, round(correct / 2))  # har 2 ta to‘g‘ri javob uchun 1 Bilig (kamida 1)
+    # Ega qarori: har bosqich (1-oraliq, 2-oraliq, yakuniy) uchun natija
+    # 70% va undan yuqori bo‘lsa 3 Bilig; pastroq bo‘lsa tanga berilmaydi.
+    earned = REWARD_COINS if percent >= REWARD_PERCENT else 0
 
     column_map = {
         "mid_test_1": "mid_test_1_done", "mid_test_2": "mid_test_2_done", "final_test": "final_test_done"
@@ -2474,9 +3078,10 @@ def child_submit_test(book_id):
         cursor.execute(f"UPDATE Plan_Books SET {column} = 1 WHERE book_id = ?", (book_id,))
         if stage == "final_test":
             cursor.execute("UPDATE Plan_Books SET is_completed = 1 WHERE book_id = ?", (book_id,))
-        cursor.execute(
-            "UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (earned, child_id)
-        )
+        if earned:
+            cursor.execute(
+                "UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (earned, child_id)
+            )
         # Test natijasi diagnostikaga yoziladi — ilgari Mini App'dagi testlar
         # umuman qayd etilmasdi, faqat botdagilari yozilardi.
         cursor.execute(

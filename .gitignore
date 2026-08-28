@@ -16,3 +16,17 @@ venv/
 
 # Foydalanuvchi yuklagan rasmlar (serverda doimiy diskda turadi)
 uploads/
+
+# Maxfiy kalitlar (hech qachon GitHub'ga tushmasin)
+.env
+
+# Kitoblar arxivi — 895 MB. GitHub'ga TUSHMASLIGI kerak.
+Mutolaa Word*/
+Mutolaa Word*.zip
+
+# Word fayllardan ajratilgan matnlar — asl kitoblarning nusxasi.
+# Kerak bo'lsa extract_books.py qayta yasaydi.
+tools/book_work/
+
+# Sinov bazasi
+bot_base.db

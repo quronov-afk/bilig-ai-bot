@@ -120,18 +120,23 @@ def check_badges(child_id, ctx=None, action=None):
         give("Tezkor mutolaa", FAMILY_BOOKS)
 
     # ---------- IV. Notiqlik va tafakkur (ovozli xulosa) ----------
+    # «talk» — AI ustoz savoliga ovozli javob. U ham nutq mashqi, shuning
+    # uchun shu oiladagi nishonlarga erkin xulosa bilan teng hisoblanadi.
     if _num("SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id = ? "
-            "AND type = 'voice' AND bonus_bilig >= 5", (child_id,)):
+            "AND type IN ('voice', 'talk') "
+            "AND (factual_score + logic_score + conclusion_score + fluency_score "
+            "     + vocabulary_score) / 5.0 >= 90", (child_id,)):
         give("Ilm notig‘i", FAMILY_VOICE)
     if _num("SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id = ? "
-            "AND type = 'voice' AND conclusion_score >= 90", (child_id,)):
+            "AND type IN ('voice', 'talk') AND conclusion_score >= 90", (child_id,)):
         give("Tafakkur", FAMILY_VOICE)
     if _num("SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id = ? "
-            "AND type = 'voice' AND vocabulary_score >= 90", (child_id,)):
+            "AND type IN ('voice', 'talk') AND vocabulary_score >= 90", (child_id,)):
         give("Oltin qalam", FAMILY_VOICE)
     if _num(
         "SELECT COUNT(*) FROM ("
-        " SELECT book_id FROM Diagnostic_Logs WHERE child_id = ? AND type = 'voice' "
+        " SELECT book_id FROM Diagnostic_Logs WHERE child_id = ? "
+        " AND type IN ('voice', 'talk') "
         " AND (factual_score + logic_score + conclusion_score + fluency_score "
         "      + vocabulary_score) / 5.0 >= 85 GROUP BY book_id)",
             (child_id,)) >= 10:

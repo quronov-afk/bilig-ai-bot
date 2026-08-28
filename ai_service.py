@@ -159,6 +159,29 @@ def _text_or_reason(task, response):
 _thinking_off_supported = True
 
 
+# ==========================================================
+# MADANIY MEZON — barcha AI ko‘rsatmalariga qo‘shiladi
+# ----------------------------------------------------------
+# Ega talabi (2026-08-28): ilova O‘zbekistondagi oilalar uchun. Savol,
+# mazmun va baholar musulmon Sharqi an'analari, madaniyati va mentaliteti
+# doirasida bo‘lishi SHART.
+# ==========================================================
+MADANIY_MEZON = """
+MADANIY MEZON — MAJBURIY:
+· Ota-ona va kattalarga hurmat eng yuqori qadriyat. Kattalarga qarshi
+  chiqish «jasorat» deb maqtalmasin — oqibati muhokama qilinsin.
+· Halollik, sabr, shukr, hayo, kamtarlik, mehmondo‘stlik, saxovat,
+  mehnatsevarlik, va'daga vafo — ijobiy o‘lchov shular.
+· Oila va qarindoshlik rishtalari, opa-uka inoqligi qadrli holat sifatida
+  ko‘rsatilsin. Ustoz-shogird munosabati va ilm qadri e'zozlansin.
+· Mahalliy madaniyatga yot lavhalarga (ichkilik, qiz-yigit munosabatlari,
+  e'tiqodni masxaralash) urg‘u berilmasin; asarning umuminsoniy
+  saboqlariga e'tibor qaratilsin.
+· Asarda YO‘Q narsani qo‘shma va sun'iy diniy tus BERMA — bor matnni shu
+  qadriyatlar nuqtai nazaridan ko‘r, xolos.
+"""
+
+
 async def _ask(task: str, contents, json_mode=False, max_tokens=None, fast=False, attempts=2):
     """Barcha Gemini chaqiruvlari shu yagona joydan o‘tadi.
 
@@ -394,7 +417,7 @@ async def verify_page_photo(image_bytes: bytes):
         raise e
 
 
-async def generate_test_from_notes(title: str, author: str, notes: list):
+async def generate_test_from_notes(title: str, author: str, notes: list, total_pages: int = 0):
     """O‘qish davomida yig‘ilgan sahifa yozuvlaridan test tuzish.
 
     Bu yerda RASM YUBORILMAYDI — faqat qisqa matnlar. Shuning uchun
@@ -405,7 +428,18 @@ async def generate_test_from_notes(title: str, author: str, notes: list):
     for page, text in notes:
         parts.append("%s-sahifa: %s" % (page, text))
     body = "\n".join(parts)
-    count = max(6, min(20, len(notes) * 3))
+    count = max(6, min(30, len(notes) * 3))
+    # Kitob nechta betligi ma'lum bo‘lsa, AI savollarni kitob qismlariga
+    # to‘g‘ri taqsimlay oladi. Bo‘lmasa — sahifa raqamiga qarab o‘zi bo‘ladi.
+    if total_pages:
+        part_hint = ("Kitob jami %d betdan iborat. 1-qism: 1-%d betlar, "
+                     "2-qism: %d-%d betlar, 3-qism: %d-%d betlar."
+                     % (total_pages, total_pages // 3,
+                        total_pages // 3 + 1, total_pages * 2 // 3,
+                        total_pages * 2 // 3 + 1, total_pages))
+    else:
+        part_hint = ("Kitob necha betligi noma'lum — savol qaysi sahifadan "
+                     "olinganiga qarab qismni o‘zing belgila.")
 
     prompt = f"""Sen malakali bolalar pedagogi va adabiyotshunossan.
 Quyida «{title}» kitobidan ({author or "muallif noma'lum"}) bola o‘qish
@@ -426,9 +460,15 @@ TALABLAR:
 - Har bir savolda 3 yoki 4 ta variant bo‘lsin.
 - Faqat to‘g‘ri o‘zbek lotin alifbosidagi O‘, o‘, G‘, g‘ belgilaridan foydalan.
 
+KITOB QISMLARI: har bir savolga "part" maydonini qo‘y — savol kitobning
+boshlanishiga tegishli bo‘lsa 1, o‘rtasiga 2, oxiriga 3.
+{part_hint}
+
+{MADANIY_MEZON}
+
 Natijani FAQAT quyidagi JSON ro‘yxat formatida qaytar:
 [
-  {{"id": 1, "category": "factual", "question": "Savol matni?",
+  {{"id": 1, "part": 1, "category": "factual", "question": "Savol matni?",
     "options": ["A) Variant 1", "B) Variant 2", "C) Variant 3"], "answer": "A) Variant 1"}}
 ]"""
 
@@ -439,31 +479,141 @@ Natijani FAQAT quyidagi JSON ro‘yxat formatida qaytar:
     return questions, raw_json
 
 
+async def summarize_book_from_notes(title: str, author: str, notes: list):
+    """O‘qish davomida yig‘ilgan sahifa yozuvlaridan kitob mazmunini tuzadi.
+
+    Rasm yuborilmaydi — faqat qisqa matnlar, ya'ni juda arzon. Natija
+    umumiy kitob bazasiga tushadi va boshqa oilalarga tayyor holda beriladi.
+    """
+    body = "\n".join("%s-sahifa: %s" % (page, text) for page, text in notes)
+    prompt = f"""Sen bolalar adabiyoti bo‘yicha mutaxassissan. Quyida
+«{title}» kitobidan ({author or "muallif noma'lum"}) o‘qish davomida qayd
+etilgan sahifalar mazmuni berilgan:
+
+{body}
+
+Shu yozuvlar asosida kitob haqida qisqa ma'lumot tuz. FAQAT yuqoridagi
+matnda bor narsalarga tayan — o‘zingdan voqea yoki qahramon to‘qima.
+Yozuvlar kitobning hammasini qamramagan bo‘lishi mumkin; bunda bor
+qismini tasvirla, yetishmagan joyni to‘qib to‘ldirma.
+
+Faqat to‘g‘ri o‘zbek lotin alifbosidagi O‘, o‘, G‘, g‘ belgilaridan foydalan.
+
+{MADANIY_MEZON}
+
+Natijani FAQAT quyidagi JSON formatida qaytar:
+{{
+  "summary": "Kitobning qisqacha mazmuni — 5-8 jumla.",
+  "characters": "Asosiy qahramonlar va ular kim ekani.",
+  "theme": "Asarning g‘oyasi va bola oladigan saboq.",
+  "age_hint": "8-12"
+}}"""
+    response = await _ask("summarize_book", [prompt], json_mode=True, attempts=2)
+    return json.loads(clean_json(response.text))
+
+
+async def generate_talk_question(title: str, author: str, base: dict, stage: str, age: int = 10):
+    """«AI ustoz savoli» — bola ovozda javob beradigan ochiq savol.
+
+    Faktik emas: «nechta ukasi bor edi?» kabi xotira savoli EMAS. Bolaning
+    o‘qiganini o‘z so‘zi bilan gapira olishini, tushunganini va munosabatini
+    ochadigan savol bo‘lishi kerak.
+
+    `stage`: 'start' — kitobning boshlanish qismi haqida;
+             'end'   — butun kitob va undan olingan saboq haqida.
+    """
+    if stage == "start":
+        qism = ("Bola kitobning BOSHLANISH qismini o‘qib bo‘ldi (taxminan "
+                "uchdan birini). Savol faqat SHU qismga tegishli bo‘lsin — "
+                "kitobning oxiri haqida so‘rama, u hali o‘qimagan.")
+    else:
+        qism = ("Bola kitobni OXIRIGACHA o‘qib bo‘ldi. Savol butun asarga, "
+                "undagi o‘zgarishga va bola olgan saboqqa tegishli bo‘lsin.")
+
+    prompt = f"""Sen mehribon «AI ustoz»san. {age} yoshli bolaga «{title}»
+kitobi ({author or "muallif noma'lum"}) bo‘yicha OG‘ZAKI javob beriladigan
+BITTA savol tuz.
+
+Kitob haqida bilganlaring:
+Mazmuni: {base.get("summary", "")}
+Qahramonlar: {base.get("characters", "")}
+G‘oyasi: {base.get("theme", "")}
+
+{qism}
+
+SAVOL QANDAY BO‘LISHI KERAK:
+- Faktik BO‘LMASIN. «Qahramonning ismi nima edi?», «Nechta edi?» kabi
+  bir so‘z bilan javob beriladigan savollar TAQIQLANADI.
+- Bola kamida 30-60 soniya gapira oladigan, o‘z fikrini aytishga
+  undaydigan ochiq savol bo‘lsin.
+- Javobidan bolaning kitobni haqiqatan o‘qigani va tushungani bilinsin —
+  ya'ni kitobni o‘qimagan bola bunga javob bera olmasin.
+- Bolaning o‘z munosabati, o‘rniga qo‘yib ko‘rishi so‘ralsin.
+- Til sodda, iliq va do‘stona bo‘lsin; savol bitta jumla, ko‘pi bilan ikkita.
+- Faqat to‘g‘ri o‘zbek lotin alifbosidagi O‘, o‘, G‘, g‘ belgilaridan foydalan.
+
+{MADANIY_MEZON}
+
+Natijani FAQAT quyidagi JSON formatida qaytar:
+{{"question": "Savol matni?"}}"""
+
+    response = await _ask("generate_talk_question", [prompt], json_mode=True, attempts=2)
+    data = json.loads(clean_json(response.text))
+    return (data.get("question") or "").strip()
+
+
 async def generate_test_bank_from_photos(photos_bytes_list: list):
-    """Yuklangan sahifa rasmlari asosida kengaytirilgan Savollar bankini tuzish"""
+    """Sahifa rasmlaridan: savollar banki + kitobning qisqacha mazmuni.
+
+    AI bu rasmlarni baribir o‘qiydi — shuning uchun O‘SHA chaqiruvning
+    o‘zida kitob haqidagi ma'lumotni ham so‘raymiz. Qo‘shimcha xarajat
+    deyarli yo‘q, lekin ilova o‘z kitob bazasini yig‘ib boradi.
+
+    Qaytaradi: (savollar, savollar_json, kitob_haqida)
+    """
     prompt = f"""Sen malakali bolalar pedagogi va adabiyotshunossan. Quyida bolalar kitobining {len(photos_bytes_list)} ta sahifasi rasmlari berilgan.
-    Ushbu matnlar asosida bolaning kitobni chuqur tushunishini baholovchi 15 tadan 20 tagacha sifatli mantiqiy savollar bankini tuz.
+    Ushbu matnlar asosida bolaning kitobni chuqur tushunishini baholovchi 30 ta sifatli mantiqiy savollar bankini tuz.
 
     SAVOLLARNING PEDAGOGIK QATLAMLARI:
     1. "factual" (Faktik xotira - 30%): Qahramonlar, makon, vaqt va muhim syujet tafsilotlari.
     2. "logic" (Sabab-oqibat mantiqi - 40%): Voqealar sababi, qahramonning niyati va harakatlar oqibati.
     3. "conclusion" (Asar mohiyati va xulosa - 30%): Muallif g‘oyasi, qahramon olgan saboq va asar xulosasi.
 
+    KITOB QISMLARI — JUDA MUHIM:
+    Kitobni uchga bo‘l va har bir savolga "part" maydonini qo‘y:
+      "part": 1 — kitobning BOSHLANISHI (birinchi uchdan bir qismi)
+      "part": 2 — kitobning O‘RTASI
+      "part": 3 — kitobning OXIRI
+    Har bir qism uchun 10 tadan savol bo‘lsin va savollar shu tartibda,
+    kitob voqealari ketma-ketligida joylashsin. Bu shart uchun sabab:
+    kitobning yarmini o‘qigan bolaga oxiri haqida savol berilmasligi kerak.
+
     TALABLAR:
     - Har bir savolda 3 ta yoki 4 ta variant (A, B, C, D) bo‘lsin.
     - Faqat va faqat to‘g‘ri o‘zbek lotin alifbosidagi O‘, o‘, G‘, g‘ belgilaridan foydalan.
     - Savollar bolaning yoshiga mos, qiziqarli va tushunarli bo‘lsin.
 
-    Natijani FAQAT VA FAQAT quyidagi JSON ro‘yxat formatida qaytar:
-    [
-      {{
-        "id": 1,
-        "category": "factual",
-        "question": "Savol matni?",
-        "options": ["A) Variant 1", "B) Variant 2", "C) Variant 3"],
-        "answer": "A) Variant 1"
-      }}
-    ]"""
+    {MADANIY_MEZON}
+
+    Natijani FAQAT VA FAQAT quyidagi JSON obyekt formatida qaytar:
+    {{
+      "kitob": {{
+        "summary": "Kitobning qisqacha mazmuni — 5-8 jumla, voqealar ketma-ketligi bilan.",
+        "characters": "Asosiy qahramonlar va ular kim ekani.",
+        "theme": "Asarning g‘oyasi va bola oladigan saboq.",
+        "age_hint": "8-12"
+      }},
+      "savollar": [
+        {{
+          "id": 1,
+          "part": 1,
+          "category": "factual",
+          "question": "Savol matni?",
+          "options": ["A) Variant 1", "B) Variant 2", "C) Variant 3"],
+          "answer": "A) Variant 1"
+        }}
+      ]
+    }}"""
 
     contents = [prompt]
     for img_bytes in photos_bytes_list:
@@ -472,22 +622,49 @@ async def generate_test_bank_from_photos(photos_bytes_list: list):
     try:
         # Fon rejimida bajariladi — qayta urinish foydalanuvchini kuttirmaydi.
         response = await _ask("generate_test_bank", contents, json_mode=True, attempts=3)
-        raw_json = clean_json(response.text)
-        questions = json.loads(raw_json)
-        return questions, raw_json
+        parsed = json.loads(clean_json(response.text))
+        # AI ba'zan eski ko‘nikma bo‘yicha to‘g‘ridan-to‘g‘ri ro‘yxat qaytaradi —
+        # ikkala shaklni ham qabul qilamiz, aks holda ish behuda ketardi.
+        if isinstance(parsed, list):
+            questions, info = parsed, {}
+        else:
+            questions = parsed.get("savollar") or parsed.get("questions") or []
+            info = parsed.get("kitob") or parsed.get("book") or {}
+        raw_json = json.dumps(questions, ensure_ascii=False)
+        return questions, raw_json, info
     except Exception as e:
         traceback.print_exc()
         raise e
 
-async def evaluate_voice_summary(audio_bytes: bytes, age: int, book_title: str):
-    """Bolaning ovozli xulosasini tahlil qilish va ota-onaga pedagogik hisobot berish"""
-    prompt = f"""Sen mehribon va talabchan pedagog hamda bolalarning qadrdoni bo‘lgan «AI ustoz»san. Bu {age} yoshli bolaning '{book_title}' kitobi bo‘yicha yuborgan audio xulosasi.
+async def evaluate_voice_summary(audio_bytes: bytes, age: int, book_title: str,
+                                 question: str = ""):
+    """Bolaning ovozli xulosasini tahlil qilish va ota-onaga pedagogik hisobot berish.
 
+    `question` berilgan bo‘lsa — bu erkin xulosa emas, AI ustoz bergan aniq
+    savolga javob. Bunda javobning savolga mos kelishi ham baholanadi.
+    """
+    if question:
+        savol_bloki = f"""
+    MUHIM: bu erkin xulosa EMAS. Bolaga quyidagi savol berilgan:
+    «{question}»
+
+    Shuning uchun avvalo javobning SHU SAVOLGA mos kelishini baho:
+    - Bola savolga javob berdimi yoki chetlab o‘tdimi?
+    - Javobidan kitobni haqiqatan o‘qigani bilinadimi?
+    Savolga umuman aloqasiz javob bo‘lsa, baholarni past qo‘y.
+"""
+    else:
+        savol_bloki = ""
+
+    prompt = f"""Sen mehribon va talabchan pedagog hamda bolalarning qadrdoni bo‘lgan «AI ustoz»san. Bu {age} yoshli bolaning '{book_title}' kitobi bo‘yicha yuborgan audio xulosasi.
+{savol_bloki}
     Audioni 4 ta nutqiy mezon bo‘yicha sinchiklab tahlil qil:
     1. Leksik boylik (yangi so‘zlardan foydalanishi, yoshiga mos lug‘at zaxirasi).
     2. Nutq ravonligi (to‘xtashlarsiz, ifodali va silliq gapirishi).
     3. Syujet izchilligi (fikrni chalkashtirmay, voqealar ketma-ketligini bayon qilishi).
     4. Shaxsiy munosabat (o‘z his-tuyg‘ulari va mustaqil xulosalarini qo‘shishi).
+
+    {MADANIY_MEZON}
 
     Natijani FAQAT quyidagi JSON formatida qaytar:
     {{
