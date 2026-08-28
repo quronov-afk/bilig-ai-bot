@@ -555,6 +555,38 @@ def _maybe_build_test_from_notes(book_id):
         traceback.print_exc()
 
 
+def _mark_celebrated(child_id, shown, later):
+    """Darrov tabriklangan nishonlarni «ko‘rilgan» deb belgilaydi.
+
+    Bo‘lmasa bola ularni ikki marta ko‘rardi: avval natija oynasida,
+    keyin yana tipratikanli kutib olish kartochkasida.
+
+    `badges_seen` — sanoq (ro‘yxatning nechtasi ko‘rilgan). Nishonlar
+    shu tartibda beriladi: [eskilar..., darrov ko‘rsatilganlar..., keyingilar...].
+    Shuning uchun sanoqni «eskilar + ko‘rsatilganlar» ga surish yetarli —
+    keyingilari «ko‘rilmagan» bo‘lib qoladi.
+
+    Ilgaridan ko‘rilmagan nishon turgan bo‘lsa, sanoqqa umuman tegmaymiz:
+    aks holda bola ularni umuman ko‘rmay qolardi.
+    """
+    if not shown:
+        return
+    try:
+        total = len(get_badges(child_id))
+        before = total - len(shown) - len(later or [])
+        cursor.execute("SELECT badges_seen FROM Users WHERE user_id = ?", (child_id,))
+        row = cursor.fetchone()
+        seen = int(row[0]) if row and row[0] else 0
+        if seen != before:
+            return          # ilgaridan ko‘rilmaganlari bor — sanoqqa tegmaymiz
+        with db_lock:
+            cursor.execute("UPDATE Users SET badges_seen = ? WHERE user_id = ?",
+                           (before + len(shown), child_id))
+            conn.commit()
+    except Exception:
+        pass
+
+
 def _final_only_book_ids():
     """Testi sahifa yozuvlaridan tuzilgan kitoblar — ularda oraliq test yo‘q."""
     try:
@@ -700,16 +732,15 @@ def badge_cond(name: str) -> str:
 
 
 def announce_badges(child_id: int, names):
-    """Yangi nishonlar haqida ota-onaga xabar beradi va ularni
-    «bolaga ko‘rsatilgan» deb belgilaydi (tabrik ekrani darhol chiqadi)."""
+    """Yangi nishonlar haqida ota-onaga xabar beradi.
+
+    DIQQAT: ilgari bu funksiya nishonlarni «bolaga ko‘rsatilgan» deb ham
+    belgilardi. Endi bunday emas — hamma nishon ham darrov ko‘rsatilmaydi.
+    Ko‘rsatilganini `_mark_celebrated()` belgilaydi, qolganlari esa
+    «ko‘rilmagan» bo‘lib qoladi va tipratikan ularni keyinroq yetkazadi.
+    """
     if not names:
         return
-    try:
-        cursor.execute("UPDATE Users SET badges_seen = ? WHERE user_id = ?",
-                       (len(get_badges(child_id)), child_id))
-        conn.commit()
-    except Exception:
-        pass
     name = child_name_of(child_id)
     if len(names) == 1:
         cond = badge_cond(names[0])
@@ -2177,8 +2208,10 @@ def _apply_page_progress(book_id, child_id, new_page):
     rank, total_pages = calculate_and_update_rank(child_id)
 
     with db_lock:
-        new_badges = badges_engine.check_badges(child_id, {"shield_used": shield_used})
-    announce_badges(child_id, new_badges)
+        new_badges, later_badges = badges_engine.check_badges(
+            child_id, {"shield_used": shield_used}, action="page")
+    _mark_celebrated(child_id, new_badges, later_badges)
+    announce_badges(child_id, new_badges + later_badges)
 
     cursor.execute("SELECT balance_coins FROM Users WHERE user_id = ?", (child_id,))
     balance = cursor.fetchone()[0]
@@ -2315,10 +2348,12 @@ def _finish_voice(book_id, child_id, book_title, result, detail):
              result.get("child_feedback", ""))
         )
         conn.commit()
-        new_badges = badges_engine.check_badges(
-            child_id, {"ezgulik": bool(result.get("badge_ezgulik", False))})
+        new_badges, later_badges = badges_engine.check_badges(
+            child_id, {"ezgulik": bool(result.get("badge_ezgulik", False))},
+            action="voice")
 
-    announce_badges(child_id, new_badges)
+    _mark_celebrated(child_id, new_badges, later_badges)
+    announce_badges(child_id, new_badges + later_badges)
 
     parent_id = get_parent_id(child_id)
     if parent_id:
@@ -2410,7 +2445,7 @@ def child_submit_test(book_id):
              datetime.now().strftime("%Y-%m-%d %H:%M:%S"), correct, total)
         )
         conn.commit()
-        new_badges = badges_engine.check_badges(child_id)
+        new_badges, later_badges = badges_engine.check_badges(child_id, action="test")
 
     # Yakuniy test — kitob tugadi. Bu ota-ona kutayotgan xabar.
     if stage == "final_test":
@@ -2426,7 +2461,8 @@ def child_submit_test(book_id):
                 f"📖 <b>{child_name_of(child_id)}</b> «{brow[0]}» kitobini tugatdi.\n"
                 f"{brow[1] or 0} bet. Javonida endi {done} ta tugatilgan kitob bor."
             )
-    announce_badges(child_id, new_badges)
+    _mark_celebrated(child_id, new_badges, later_badges)
+    announce_badges(child_id, new_badges + later_badges)
 
     return jsonify({"ok": True, "correct": correct, "total": total, "percent": percent,
                     "earned_bilig": earned, "new_badges": new_badges})
