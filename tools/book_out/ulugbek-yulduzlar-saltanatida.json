@@ -1,0 +1,28 @@
+{
+ "title": "Ulug‘bek yulduzlar saltanatida",
+ "author": "Otabek Quvvatov",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "10-14 yosh",
+  "topics": [
+   "sarguzasht",
+   "ilm-fan",
+   "odob-axloq",
+   "fantastika",
+   "vatanparvarlik"
+  ],
+  "theme": "Ilm-fan sirlarini egallash, halol mehnat qilish hamda buyuk ajdodlarimizga munosib avlod bo‘lib yetishish eng oliy va ezgu maqsad ekanligi ilgari suriladi.",
+  "summary": "6-sinf o‘quvchisi Ulug‘bek bobosining o‘gitlari bilan tarbiyalangan bilimdon bola. U sehrli telefon va Hoshimjonning qalpoqchasi yordamida o‘zga olamlarga fantastik sayohat qiladi. Safar davomida Mittivoylar yurtida qal’a qurishga ko‘maklashadi, Yalqovlar makonini mehnatsevarlar o‘lkasiga aylantiradi hamda buyuk allomalar anjumanida bo‘ladi. Uyiga qaytgach, sehrli telefonni ixtirochilariga topshirib, «Dunyoning yosh xaloskori» unvoniga sazovor bo‘ladi va maktabda Barchinoy bilan uchrashadi.",
+  "characters": "Ulug‘bek — 12 yoshli bilimdon, jasur va odobli bosh qahramon; Olloqul bobo — Ulug‘bekka bilim, iymon va odob sabog‘ini beruvchi dono nuroniy; Sehrli telefon va qalpoqcha — sarguzashtlarda Ulug‘bekka hamroh bo‘lgan va ezgulikka xizmat qilgan vafodor yordamchilar.",
+  "conclusion": "Asar bolada ilm olishga ishtiyoq, kattalarga hurmat va Vatanga muhabbat tuyg‘usini shakllantiradi. Kitobxon halol mehnatning qadriga yetishni, sehr va oson yo‘lga emas, o‘z bilimi hamda g‘ayratiga suyanib muvaffaqiyatga erishish kerakligini tushunadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, ilhomlantiruvchi",
+  "for_whom": "Koinot sirlari, fantastik sarguzashtlar, tarix va bilim olishga qiziqadigan zukko bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Ulug‘bek o‘zga olamlarda sehrli buyumlardan faqat yaxshilik va insonlarga yordam berish uchun foydalandi. Agar sening qo‘lingga shunday sehrli vosita tushib qolsa, undan qanday ezgu ishlar uchun foydalangan bo‘larding hamda nega?"
+}

@@ -1,0 +1,27 @@
+{
+ "title": "Xo‘tikning hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "3",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-10 yosh",
+  "topics": [
+   "hazil-mutoyiba",
+   "mantiq",
+   "qiziquvchanlik",
+   "ilm va bilim"
+  ],
+  "theme": "Asar o‘zini o‘ta bilag‘on deb biladigan xo‘tikning sodda va kulgili mulohazalari orqali kibrlanmaslik hamda hodisalarning chinakam sababini bilim va ilm orqali o‘rganish kerakligini ko‘rsatadi.",
+  "summary": "Xo‘tik o‘zini juda aqlli va bilag‘on deb hisoblaydi va kitobxon bilan muloqotga kirishadi. U chaqmoq va momaguldurakni bulutlarning tog‘ cho‘qqisiga urilib, toshlar pastga yumalashidan paydo bo‘ladi deb tushuntiradi. Deraza ko‘zi to‘rtburchak, g‘ildirak esa yumaloqligini esa oynak fabrikadan to‘rtburchak bo‘lib chiqishi bilan izohlaydi. Oxirida u bolaga maqtanib, bilmagan jumboqlari bo‘lsa so‘rashni taklif qiladi.",
+  "characters": "Xo‘tik — o‘zini hamma narsani biladigan o‘ta aqlli deb hisoblaydigan, lekin hodisalarni o‘zining sodda va kulgili mantiqi bilan izohlaydigan quvnoq bosh qahramon.",
+  "conclusion": "Asar bolada yumor tuyg‘usini o‘stiradi va har qanday narsa haqida fikr bildirishdan oldin ilm o‘rganish kerakligini ko‘rsatadi. U bolaga kibrlanmaslik hamda atrofdagi dunyoni to‘g‘ri tushunish uchun bilim olish muhimligini uqtiradi.",
+  "difficulty": "oson",
+  "mood": "kulgili, yengil",
+  "for_whom": "Hazil-mutoyibani xush ko‘radigan, qiziqarli jumboqlar va tabiat hodisalariga qiziqadigan sho‘x bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Xo‘tik o‘zini juda bilag‘on deb hisoblaydi va tabiat hodisalarini o‘zicha qiziq tushuntiradi. Uning chaqmoq hamda g‘ildirak haqidagi izohlari senga nima uchun kulgili tuyuldi? O‘zing bilgan biror tabiat hodisasi haqida xo‘tikka qanday so‘zlab bergan bo‘larding?"
+}

@@ -1,0 +1,448 @@
+{
+ "title": "Olmos jilosi",
+ "author": "Hojiakbar Shayxov",
+ "genre": "ilmiy-fantastik qissalar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "jasorat",
+   "ilm-fan",
+   "mas’uliyat",
+   "burch",
+   "fazo sirlari",
+   "do‘stlik"
+  ],
+  "theme": "Insonning burchga sadoqati, matonati va koinot sivilizatsiyalari oldidagi mas’uliyati har qanday qiyinchilik hamda qo‘rquvdan ustun turadi.",
+  "summary": "Oliy darajali fazogir Olmos Azizov Kosmik Markaz topshirig‘i bilan Verga sayyorasidagi ekspeditsiyada yuz bergan sirli voqealarni tekshirishga jo‘naydi. U konda ishlovchilarning g‘aroyib xulq-atvorini o‘rganib, sirli g‘or va noorganik hayot shakllarini aniqlaydi. Keyinchalik Azizov «Olmos» kemasi kapitani sifatida olis fazoga — halokatga uchragan «Foton» kemasidan kelgan signallarni va Reya sayyorasidagi jumboqlarni o‘rganishga yo‘l oladi. Reyada fazogirlar «qora qurtlar» va yassi toshlar shaklidagi ongli mavjudotlar hamda halokat yoqasidagi Kristallar sivilizatsiyasiga duch kelishadi. Kristallar o‘z avlodlari saqlangan konteynerni Azizovga topshirishadi. Sayyorada portlash va «qora tuynuk» xavfi tug‘ilganda, qo‘rqib qolgan sherigi Adam kelishdan bosh tortadi. Azizov o‘z hayotini xavfga qo‘yib, vulqon kuchi va ion dvigatellari yordamida kemada Yerga qaytishga erishadi hamda Kristallar sivilizatsiyasini saqlab qoladi. Yillar o‘tib hushiga kelgan Azizov qahramon sifatida e’zozlanadi.",
+  "characters": "Olmos Azizov — irodali, matonatli va tajribali fazogir-kapitan; Saidbekov — institut direktori; Hayot, Yuliya, Farhod, aka-uka Felikslar — Verga ekspeditsiyasi a’zolari; Shavkat, Uken, Anna — «Olmos» kemasi ekipaji; Beganas Shalboyev — meteorolog fazogir; Adam — Reya ekspeditsiyasida Azizovga hamroh bo‘lgan, lekin xavf oldida sarosimaga tushgan fazogir; Inessa — Yerda Olmosni davolagan kelajak shifokori.",
+  "conclusion": "Kitob bolada qiyinchiliklar oldida yengilmaslik, o‘z burchiga va va’dasiga soyasiz sadoqat ko‘rsatish tuyg‘usini shakllantiradi. Asar orqali bola qo‘rqoqlik va ikkilanish inson hayotida qanday ko‘ngilsizliklarga olib kelishini hamda ilm-fan, mardlik va halollik eng yuqori fazilat ekanini tushunib yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "sirli, hayajonli, o‘ylantiruvchi",
+  "for_whom": "Koinot va fantastika olamiga qiziquvchi, sarguzashtlarni sevadigan va qahramonlarning mardligi hamda irodasiga havas qiladigan o‘smirlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olmos Azizov qaysi institutda ishlar edi?",
+   "options": [
+    "A) Kosmik Markaz institutida",
+    "B) Geologiya ilmiy institutida",
+    "C) Fazo va fizika akademiyasida",
+    "D) Astronomiya markaziy institutida"
+   ],
+   "answer": "A) Kosmik Markaz institutida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vergadagi o‘n yettinchi konda necha kishi ishlaydi?",
+   "options": [
+    "A) Uch kishi",
+    "B) Besh kishi",
+    "C) O‘n kishi",
+    "D) Yigirma kishi"
+   ],
+   "answer": "B) Besh kishi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "17-konda qanday qimmatbaho metall qazib olinardi?",
+   "options": [
+    "A) 159-IE markali metall",
+    "B) Oltin va kumush",
+    "C) Uran rudasi qotishmasi",
+    "D) Titon moddasi"
+   ],
+   "answer": "A) 159-IE markali metall"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olmos Azizov Vergaga qaysi planetoxodda yo‘l oldi?",
+   "options": [
+    "A) Burgut nomli planetoxodda",
+    "B) Yashin nomli planetoxodda",
+    "C) Pozitron nomli planetoxodda",
+    "D) Lochin nomli planetoxodda"
+   ],
+   "answer": "B) Yashin nomli planetoxodda"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Konda ishlovchilarning bo‘sh vaqtdagi mashg‘ulotlarini to‘g‘ri juftlang.",
+   "options": [
+    "A) Hayot — bog‘bonlik, Pedro — rassomlik",
+    "B) Hayot — rassomlik, Pedro — raqs",
+    "C) Farhod — olov yoqish, Yuliya — rasm",
+    "D) Pedro — tabobat, Hayot — raqs"
+   ],
+   "answer": "A) Hayot — bog‘bonlik, Pedro — rassomlik"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ekspeditsiya rahbari Vergadagi holatdan nega xavotirga tushgan edi?",
+   "options": [
+    "A) Odamlar g‘alati o‘zgarib qolishgani uchun",
+    "B) Uran zaxirasi tugab borayotgani uchun",
+    "C) Kon avtomatlari buzilib qolgani uchun",
+    "D) Suv va oziq-ovqat tugagani uchun"
+   ],
+   "answer": "A) Odamlar g‘alati o‘zgarib qolishgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Olmos Azizov konda ksi-operator sifatida tanishtirildi?",
+   "options": [
+    "A) Haqiqiy topshiriqni sir tutish uchun",
+    "B) U faqat shu kasbni bilgani uchun",
+    "C) Ekspeditsiya boshlig‘i shuni so‘ragani uchun",
+    "D) Kon boshlig‘i lavozimi bo‘shligi uchun"
+   ],
+   "answer": "A) Haqiqiy topshiriqni sir tutish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Olmosning xavfga qaramay sirli g‘orga kirishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — burchini bajardi",
+    "B) Noto‘g‘ri — o‘zini xavfga qo‘ydi",
+    "C) Noto‘g‘ri — u Yuliyani kutishi kerakdi",
+    "D) To‘g‘ri — u uyga qaytmoqchi edi"
+   ],
+   "answer": "A) To‘g‘ri — burchini bajardi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Vergadagi qumlik va tepaliklarni nima bilan taqqoslaydi?",
+   "options": [
+    "A) Ulkan yong‘in so‘ngidagi cho‘g‘lar bilan",
+    "B) Muzlagan ummon toshlari bilan",
+    "C) Oltin zarrachalari to‘la vodiy bilan",
+    "D) Qorong‘i tuynukli chuqur g‘orlar bilan"
+   ],
+   "answer": "A) Ulkan yong‘in so‘ngidagi cho‘g‘lar bilan"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Katta Feliks chizgan suratdagi titroq fazogirlar tasviri nimani bildiradi?",
+   "options": [
+    "A) Yigitlarning g‘ordagi qo‘rquvi va sarosimasini",
+    "B) Konda sodir bo‘lgan yong‘in dahshatini",
+    "C) Ekspeditsiyadagi sovuq ob-havo ta’sirini",
+    "D) Avtomat mexanizmlarning buzilib qolganini"
+   ],
+   "answer": "A) Yigitlarning g‘ordagi qo‘rquvi va sarosimasini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Foton» kemasidan so‘nggi yordam so‘ragan kapitan kim edi?",
+   "options": [
+    "A) Professor Rene",
+    "B) Shavkat Aliyev",
+    "C) Uken Avezov",
+    "D) Pit Stark"
+   ],
+   "answer": "A) Professor Rene"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Olmos» kemasi ekipajidagi oshpazlikdan xabari bor fazogir kim?",
+   "options": [
+    "A) Uken Avezov",
+    "B) Shavkat Aliyev",
+    "C) Anna Shvars",
+    "D) Beganas Shalboyev"
+   ],
+   "answer": "A) Uken Avezov"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Beganas botqoqlikda kema cho‘kayotganda qaysi tugmani bosdi?",
+   "options": [
+    "A) Sovuq nomli tugmani",
+    "B) Issiq nomli tugmani",
+    "C) Motor nomli tugmani",
+    "D) Lekin hech narsa bosmadi"
+   ],
+   "answer": "A) Sovuq nomli tugmani"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Reya sayyorasida «qora qurtlar»ga qarshi qanday qurol ishlatildi?",
+   "options": [
+    "A) Elto‘p ya’ni elektr to‘pponcha",
+    "B) Lazerli katta pushka",
+    "C) Oddiy olov sochgich",
+    "D) Gravitatsion maxsus to‘p"
+   ],
+   "answer": "A) Elto‘p ya’ni elektr to‘pponcha"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Reyada buzilgan kemalardan nimalar ajratib olingan edi?",
+   "options": [
+    "A) Faqat metall qismlari",
+    "B) Faqat plastmassa va oynalar",
+    "C) Faqat dvigatel va g‘ildiraklar",
+    "D) Faqat oziq-ovqat va suvlar"
+   ],
+   "answer": "A) Faqat metall qismlari"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "«Olmos» kemasiga yangi qabul qilingan a’zolarni tanlang.",
+   "options": [
+    "A) Shavkat, Uken, Anna",
+    "B) Hayot, Farhod, Pedro",
+    "C) Beganas, Pit, Adam",
+    "D) Rene, Saidbekov, Yuliya"
+   ],
+   "answer": "A) Shavkat, Uken, Anna"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Beganas kema atrofidagi suyuqlikni nega muzlatishga qaror qildi?",
+   "options": [
+    "A) Kema botib ketishini to‘xtatish uchun",
+    "B) Maxluqlarni ovlab yeyish uchun",
+    "C) Kema motorini isitish uchun",
+    "D) Sayyoradan uchib ketish uchun"
+   ],
+   "answer": "A) Kema botib ketishini to‘xtatish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Reyadagi kema va planetoxod oynalari nega butun qolgan edi?",
+   "options": [
+    "A) Noma’lum ustalar faqat metallni olgani uchun",
+    "B) Bo‘ron oynalarga ta’sir qilmagani uchun",
+    "C) Ekipaj oynalarni yashirib qo‘ygani uchun",
+    "D) Oynalar o‘ta mustahkam bo‘lgani uchun"
+   ],
+   "answer": "A) Noma’lum ustalar faqat metallni olgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Olmosning ayol kishini kemaga olmaslik fikri to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri — Anna mahoratini isbotladi",
+    "B) To‘g‘ri — ayollar fazoga ucholmaydi",
+    "C) To‘g‘ri — kema kichik edi",
+    "D) Noto‘g‘ri — Anna oshpaz edi"
+   ],
+   "answer": "A) Noto‘g‘ri — Anna mahoratini isbotladi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Reyadagi dahshatli qum bo‘ronlari tasviri nimani ko‘rsatadi?",
+   "options": [
+    "A) Tabiatning shafqatsiz va qudratli kuchini",
+    "B) Fazogirlarning dam olish vaqtini",
+    "C) Sayyorada hayot va o‘simlik borligini",
+    "D) Kemaning juda tez uchishini"
+   ],
+   "answer": "A) Tabiatning shafqatsiz va qudratli kuchini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kristallar Kengashi konteynerda nimani saqlab qolishni so‘ragan edi?",
+   "options": [
+    "A) O‘z avlodlarining bir qismini",
+    "B) Sayyora oltin va metallarini",
+    "C) Ilmiy kitoblar va xaritalarni",
+    "D) Kosmik kema dvigatellarini"
+   ],
+   "answer": "A) O‘z avlodlarining bir qismini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olmos va Beganas hisobi bo‘yicha uchish imkoniyati necha foiz edi?",
+   "options": [
+    "A) Yigirma foiz",
+    "B) Ellik foiz",
+    "C) Sakson foiz",
+    "D) Yuz foiz"
+   ],
+   "answer": "A) Yigirma foiz"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Adam kema bilan uchishdan bosh tortib qayerga yashirindi?",
+   "options": [
+    "A) Tog‘dagi g‘or ichiga",
+    "B) Pozitron kema ichiga",
+    "C) Plastik kulba ostiga",
+    "D) Vulqon krateri yoniga"
+   ],
+   "answer": "A) Tog‘dagi g‘or ichiga"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yerda Olmos Azizov nomi bilan qaysi shahar ataldi?",
+   "options": [
+    "A) U tug‘ilgan shahar",
+    "B) Leningraddagi maxsus shahar",
+    "C) Vergadagi yangi baza",
+    "D) Mirrixdagi geologik shahar"
+   ],
+   "answer": "A) U tug‘ilgan shahar"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kemaning Reyadan ko‘tarilishida ketma-ket qo‘llangan kuchlarni aniqlang.",
+   "options": [
+    "A) Vulqon magma otilishi va ion dvigatellar",
+    "B) Elto‘p quroli va laser nurlari",
+    "C) Shamol bo‘roni va gravitatsiyaviy tuzoq",
+    "D) Kema yelkanlari va sovitish qurilmasi"
+   ],
+   "answer": "A) Vulqon magma otilishi va ion dvigatellar"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Adam nega Olmos Azizov bilan birga uchishga jur’at etmadi?",
+   "options": [
+    "A) Halokatga uchrashdan va o‘limdan qo‘rqdi",
+    "B) Reyada yolg‘iz yashamoqchi bo‘lgani uchun",
+    "C) Kema sig‘maydi deb o‘ylagani uchun",
+    "D) Robot Beganasni yaxshi ko‘rgani uchun"
+   ],
+   "answer": "A) Halokatga uchrashdan va o‘limdan qo‘rqdi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Azizov Adamni Reyada qoldirishini qanday izohladi?",
+   "options": [
+    "A) Qo‘rqoqligi va burchiga xiyonati uchun jazo",
+    "B) Adamni yoqtirmagani va haydagani uchun",
+    "C) Kemada joy va ovqat yetmagani uchun",
+    "D) Adam unga qarshilik qilgani uchun"
+   ],
+   "answer": "A) Qo‘rqoqligi va burchiga xiyonati uchun jazo"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Adamning xavfdan qo‘rqib qolishi qanday baholanadi?",
+   "options": [
+    "A) Zaiflik — burch va mas’uliyatni unutdi",
+    "B) To‘g‘ri — o‘z jonini asrab qoldi",
+    "C) Qahramonlik — yoshligini saqlab qoldi",
+    "D) Oqilona — Yerga qaytish shart emasdi"
+   ],
+   "answer": "A) Zaiflik — burch va mas’uliyatni unutdi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Olmos Azizovning Kristallar avlodini saqlab qolgani munosib ishmi?",
+   "options": [
+    "A) Munosib — o‘zga sivilizatsiyani qutqardi",
+    "B) Noto‘g‘ri — o‘zini xavfga qo‘ydi",
+    "C) Keraksiz — kristallarga yordam shartmasdi",
+    "D) Xato — ularni kosmosda qoldirish kerakdi"
+   ],
+   "answer": "A) Munosib — o‘zga sivilizatsiyani qutqardi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Shifokor Inessaning Olmos Azizovni olmosga o‘xshatgani nimani ko‘rsatadi?",
+   "options": [
+    "A) Irodasi toblangan va matonatli insonligini",
+    "B) Uning juda boy va badavlatligini",
+    "C) Uning kiyimi yarqirab turishini",
+    "D) Tosh bilan ishlashni xush ko‘rishini"
+   ],
+   "answer": "A) Irodasi toblangan va matonatli insonligini"
+  }
+ ]
+}

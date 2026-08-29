@@ -1,0 +1,992 @@
+08-28 19:18:00  [1/5] Olmaxonning xotirasi (to‘liq, 1,017 belgi)
+08-28 19:19:16     ✓ tayyor (76 soniya, jami $0.03)
+08-28 19:19:16  [2/5] Bu sizga, oyijon (to‘liq, 1,303 belgi)
+08-28 19:20:42     ✓ tayyor (86 soniya, jami $0.05)
+08-28 19:20:42  [3/5] Kuchukning hikoyasi (to‘liq, 1,994 belgi)
+08-28 19:22:00     ✓ tayyor (78 soniya, jami $0.08)
+08-28 19:22:00  [4/5] Chumolining hikoyasi (to‘liq, 2,500 belgi)
+08-28 19:23:32     ✓ tayyor (92 soniya, jami $0.11)
+08-28 19:23:32  [5/5] Quyonchaning hikoyasi (to‘liq, 3,087 belgi)
+08-28 19:24:51     ✓ tayyor (79 soniya, jami $0.14)
+08-28 19:24:51  YAKUN: 5 ta tayyor, 0 ta chiqmadi. Sarflandi: $0.14 (kirish 13,364, chiqish 34,382 token)
+08-28 19:27:47  [1/5] Olmaxonning xotirasi (to‘liq, 1,017 belgi)
+08-28 19:28:26     ✓ tayyor (39 soniya, jami $0.01)
+08-28 19:28:26  [2/5] Bu sizga, oyijon (to‘liq, 1,303 belgi)
+08-28 19:29:04     · 1-urinish: 1 ta kamchilik (9-savol: to‘g‘ri javob variantlar orasida yo‘q...)
+08-28 19:29:41     · 2-urinish: 1 ta kamchilik (9-savol: to‘g‘ri javob variantlar orasida yo‘q...)
+08-28 19:30:24     ✓ tayyor (118 soniya, jami $0.05)
+08-28 19:30:24  [3/5] Kuchukning hikoyasi (to‘liq, 1,994 belgi)
+08-28 19:31:12     ✓ tayyor (48 soniya, jami $0.06)
+08-28 19:31:12  [4/5] Chumolining hikoyasi (to‘liq, 2,500 belgi)
+08-28 19:32:01     ✓ tayyor (49 soniya, jami $0.07)
+08-28 19:32:01  [5/5] Quyonchaning hikoyasi (to‘liq, 3,087 belgi)
+08-28 19:32:55     ✓ tayyor (54 soniya, jami $0.08)
+08-28 19:32:55  YAKUN: 5 ta tayyor, 0 ta chiqmadi. Sarflandi: $0.08 (kirish 18,689, chiqish 18,757 token)
+08-28 19:33:49  [1/23] Uzunquloq (to‘liq, 5,499 belgi)
+08-28 19:34:44     ✓ tayyor (55 soniya, jami $0.01)
+08-28 19:34:44  [2/23] Eski telefon (to‘liq, 6,723 belgi)
+08-28 19:37:05  [1/3] Olmaxonning xotirasi (to‘liq, 1,017 belgi)
+08-28 19:37:17     ✓ tayyor (12 soniya, jami $0.00)
+08-28 19:37:17  [2/3] Bu sizga, oyijon (to‘liq, 1,303 belgi)
+08-28 19:37:32     ✓ tayyor (15 soniya, jami $0.01)
+08-28 19:37:32  [3/3] Kuchukning hikoyasi (to‘liq, 1,994 belgi)
+08-28 19:37:49     ✓ tayyor (17 soniya, jami $0.01)
+08-28 19:37:49  YAKUN: 3 ta tayyor, 0 ta chiqmadi. Sarflandi: $0.01 (kirish 3,924, chiqish 1,612 token)
+08-28 19:38:21  [1/25] Chumolining hikoyasi (to‘liq, 2,500 belgi)
+08-28 19:38:39     ✓ tayyor (18 soniya, jami $0.00)
+08-28 19:38:39  [2/25] Quyonchaning hikoyasi (to‘liq, 3,087 belgi)
+08-28 19:38:54     ✓ tayyor (15 soniya, jami $0.01)
+08-28 19:38:54  [3/25] Uzunquloq (to‘liq, 5,499 belgi)
+08-28 19:39:07     ✓ tayyor (14 soniya, jami $0.01)
+08-28 19:39:07  [4/25] Eski telefon (to‘liq, 6,723 belgi)
+08-28 19:39:27     ✓ tayyor (20 soniya, jami $0.02)
+08-28 19:39:27  [5/25] Qaldirg‘och (to‘liq, 18,326 belgi)
+08-28 19:40:56     ✓ tayyor (89 soniya, jami $0.04)
+08-28 19:40:56  [6/25] Maktab alamlari va zavqlari (to‘liq, 18,692 belgi)
+08-28 19:42:17     ✓ tayyor (81 soniya, jami $0.07)
+08-28 19:42:17  [7/25] Bug‘ular izidan (to‘liq, 35,985 belgi)
+08-28 19:43:55     ✓ tayyor (98 soniya, jami $0.11)
+08-28 19:43:55  [8/25] Sulaymon ovchi va uning iti haqida (to‘liq, 45,000 belgi)
+08-28 19:45:38     ✓ tayyor (104 soniya, jami $0.16)
+08-28 19:45:38  [9/25] 7-“A” da (kesma, 48,883 belgi)
+08-28 19:47:35     ✓ tayyor (117 soniya, jami $0.20)
+08-28 19:47:35  [10/25] Leonardo da Vinchi (kesma, 52,922 belgi)
+08-28 19:48:37     ✓ tayyor (63 soniya, jami $0.25)
+08-28 19:48:37  [11/25] Kichkina shahzoda (kesma, 62,599 belgi)
+08-28 19:49:42     ✓ tayyor (65 soniya, jami $0.29)
+08-28 19:49:42  [12/25] Muzlar iskanjasida (kesma, 66,637 belgi)
+08-28 19:51:26     ✓ tayyor (103 soniya, jami $0.34)
+08-28 19:51:26  [13/25] Lider bola (kesma, 69,239 belgi)
+08-28 19:52:37     ✓ tayyor (72 soniya, jami $0.39)
+08-28 19:52:37  [14/25] Bolaligim (kesma, 79,767 belgi)
+08-28 19:54:01     ✓ tayyor (84 soniya, jami $0.44)
+08-28 19:54:01  [15/25] Ot kishnagan oqshom (kesma, 92,059 belgi)
+08-28 19:55:41     ✓ tayyor (100 soniya, jami $0.50)
+08-28 19:55:41  [16/25] Odam bo‘lish qiyin (kesma, 95,490 belgi)
+08-28 21:57:09  [1/12] Bug‘ular izidan (to‘liq, 35,985 belgi)
+08-28 21:58:21     ✓ tayyor (71 soniya, jami $0.03)
+08-28 21:58:21  [2/12] Sulaymon ovchi va uning iti haqida (to‘liq, 45,000 belgi)
+08-28 22:00:18  [1/11] Sulaymon ovchi va uning iti haqida (to‘liq, 45,000 belgi)
+08-28 22:01:41     ✓ tayyor (83 soniya, jami $0.04)
+08-28 22:01:41  [2/11] Odam bo‘lish qiyin (kesma, 95,490 belgi)
+08-28 22:02:02  [1/28] Olmaxonning xotirasi (to‘liq, 1,017 belgi)
+08-28 22:02:17     ✓ tayyor (16 soniya, jami $0.00)
+08-28 22:02:17  [2/28] Bu sizga, oyijon (to‘liq, 1,303 belgi)
+08-28 22:02:29     ✓ tayyor (12 soniya, jami $0.01)
+08-28 22:02:29  [3/28] Kuchukning hikoyasi (to‘liq, 1,994 belgi)
+08-28 22:02:44     ✓ tayyor (15 soniya, jami $0.01)
+08-28 22:02:44  [4/28] Chumolining hikoyasi (to‘liq, 2,500 belgi)
+08-28 22:03:00     ✓ tayyor (16 soniya, jami $0.01)
+08-28 22:03:00  [5/28] Quyonchaning hikoyasi (to‘liq, 3,087 belgi)
+08-28 22:03:15     ✓ tayyor (15 soniya, jami $0.02)
+08-28 22:03:15  [6/28] Uzunquloq (to‘liq, 5,499 belgi)
+08-28 22:03:35     ✓ tayyor (21 soniya, jami $0.02)
+08-28 22:03:35  [7/28] Eski telefon (to‘liq, 6,723 belgi)
+08-28 22:03:52     ✓ tayyor (17 soniya, jami $0.03)
+08-28 22:03:52  [8/28] Qaldirg‘och (to‘liq, 18,326 belgi)
+08-28 22:05:09     ✓ tayyor (76 soniya, jami $0.06)
+08-28 22:05:09  [9/28] Maktab alamlari va zavqlari (to‘liq, 18,692 belgi)
+08-28 22:05:56     ✓ tayyor (48 soniya, jami $0.08)
+08-28 22:05:56  [10/28] Bug‘ular izidan (to‘liq, 35,985 belgi)
+08-28 22:07:11     ✓ tayyor (74 soniya, jami $0.11)
+08-28 22:07:11  [11/28] Sulaymon ovchi va uning iti haqida (to‘liq, 45,000 belgi)
+08-28 22:08:27     ✓ tayyor (76 soniya, jami $0.15)
+08-28 22:08:27  [12/28] 7-“A” da (kesma, 48,883 belgi)
+08-28 22:10:03     ✓ tayyor (96 soniya, jami $0.19)
+08-28 22:10:03  [13/28] Leonardo da Vinchi (kesma, 52,922 belgi)
+08-28 22:11:53     ✓ tayyor (111 soniya, jami $0.24)
+08-28 22:11:53  [14/28] Kichkina shahzoda (kesma, 62,599 belgi)
+08-28 22:12:52     ✓ tayyor (59 soniya, jami $0.28)
+08-28 22:12:52  [15/28] Muzlar iskanjasida (kesma, 66,637 belgi)
+08-28 22:14:34     ✓ tayyor (102 soniya, jami $0.33)
+08-28 22:14:34  [16/28] Lider bola (kesma, 69,239 belgi)
+08-28 22:16:19     ✓ tayyor (105 soniya, jami $0.38)
+08-28 22:16:19  [17/28] Bolaligim (kesma, 79,767 belgi)
+08-28 22:18:25     ✓ tayyor (126 soniya, jami $0.43)
+08-28 22:18:25  [18/28] Ot kishnagan oqshom (kesma, 92,059 belgi)
+08-28 22:20:17     ✓ tayyor (112 soniya, jami $0.49)
+08-28 22:20:17  [19/28] Odam bo‘lish qiyin (kesma, 95,490 belgi)
+08-28 22:21:36     ✓ tayyor (78 soniya, jami $0.55)
+08-28 22:21:36  [20/28] Yonar daryo (kesma, 95,533 belgi)
+08-28 22:22:02     ✓ tayyor (26 soniya, jami $0.58)
+08-28 22:22:02  [21/28] Ulug‘bek yulduzlar saltanatida (kesma, 95,604 belgi)
+08-28 22:22:59  [1/2] Olmaxonning xotirasi (to‘liq, 1,017 belgi)
+08-28 22:23:21     ✓ tayyor (21 soniya, jami $0.00)
+08-28 22:23:21  [2/2] Bu sizga, oyijon (to‘liq, 1,303 belgi)
+08-28 22:23:39     ✓ tayyor (18 soniya, jami $0.01)
+08-28 22:23:39  YAKUN: 2 ta tayyor, 0 ta chiqmadi. Sarflandi: $0.01 (kirish 4,075, chiqish 1,337 token)
+08-28 22:24:15  [1/26] Kuchukning hikoyasi (to‘liq, 1,994 belgi)
+08-28 22:24:36     ✓ tayyor (21 soniya, jami $0.00)
+08-28 22:24:36  [2/26] Chumolining hikoyasi (to‘liq, 2,500 belgi)
+08-28 22:25:04     ✓ tayyor (28 soniya, jami $0.01)
+08-28 22:25:04  [3/26] Quyonchaning hikoyasi (to‘liq, 3,087 belgi)
+08-28 22:25:25     ✓ tayyor (21 soniya, jami $0.01)
+08-28 22:25:25  [4/26] Uzunquloq (to‘liq, 5,499 belgi)
+08-28 22:25:45     ✓ tayyor (20 soniya, jami $0.02)
+08-28 22:25:45  [5/26] Eski telefon (to‘liq, 6,723 belgi)
+08-28 22:26:06     ✓ tayyor (21 soniya, jami $0.02)
+08-28 22:26:06  [6/26] Qaldirg‘och (to‘liq, 18,326 belgi)
+08-28 22:27:14     ✓ tayyor (68 soniya, jami $0.05)
+08-28 22:27:14  [7/26] Maktab alamlari va zavqlari (to‘liq, 18,692 belgi)
+08-28 22:28:28     ✓ tayyor (74 soniya, jami $0.08)
+08-28 22:28:28  [8/26] Bug‘ular izidan (to‘liq, 35,985 belgi)
+08-28 22:29:46     ✓ tayyor (77 soniya, jami $0.11)
+08-28 22:29:46  [9/26] Sulaymon ovchi va uning iti haqida (to‘liq, 45,000 belgi)
+08-28 22:31:13     ✓ tayyor (87 soniya, jami $0.15)
+08-28 22:31:13  [10/26] 7-“A” da (kesma, 48,883 belgi)
+08-28 22:32:56     ✓ tayyor (104 soniya, jami $0.19)
+08-28 22:32:56  [11/26] Leonardo da Vinchi (kesma, 52,922 belgi)
+08-28 22:34:04     ✓ tayyor (68 soniya, jami $0.23)
+08-28 22:34:04  [12/26] Kichkina shahzoda (kesma, 62,599 belgi)
+08-28 22:35:45     ✓ tayyor (101 soniya, jami $0.28)
+08-28 22:35:45  [13/26] Muzlar iskanjasida (kesma, 66,637 belgi)
+08-28 22:37:26     ✓ tayyor (101 soniya, jami $0.33)
+08-28 22:37:26  [14/26] Lider bola (kesma, 69,239 belgi)
+08-28 22:39:19     ✓ tayyor (113 soniya, jami $0.38)
+08-28 22:39:19  [15/26] Bolaligim (kesma, 79,767 belgi)
+08-28 22:41:31     · 1-urinish: 1 ta kamchilik (g‘oyasi 206 belgi (200 dan oshmasin)...)
+08-28 22:42:45     ✓ tayyor (206 soniya, jami $0.49)
+08-28 22:42:45  [16/26] Ot kishnagan oqshom (kesma, 92,059 belgi)
+08-28 22:44:17     ✓ tayyor (92 soniya, jami $0.55)
+08-28 22:44:17  [17/26] Odam bo‘lish qiyin (kesma, 95,490 belgi)
+08-28 22:46:05     ✓ tayyor (107 soniya, jami $0.60)
+08-28 22:46:05  [18/26] Yonar daryo (kesma, 95,533 belgi)
+08-28 22:46:28     ✓ tayyor (24 soniya, jami $0.64)
+08-28 22:46:28  [19/26] Ulug‘bek yulduzlar saltanatida (kesma, 95,604 belgi)
+08-28 22:46:54     ✓ tayyor (26 soniya, jami $0.67)
+08-28 22:46:54  [20/26] O‘n besh yoshli kapitan (kesma, 95,716 belgi)
+08-28 23:04:46     ✗ 1-urinish: AI xatosi: RuntimeError('Event loop is closed')
+08-28 23:04:46     ✗ 2-urinish: AI xatosi: RuntimeError('Event loop is closed')
+08-28 23:04:46     ✗ 3-urinish: AI xatosi: RuntimeError('Event loop is closed')
+08-28 23:23:12  [1/2] Olmaxonning xotirasi (to‘liq, 1,017 belgi)
+08-28 23:23:29     ✓ tayyor (17 soniya, jami $0.00)
+08-28 23:23:29  [2/2] Bu sizga, oyijon (to‘liq, 1,303 belgi)
+08-28 23:23:47     ✓ tayyor (18 soniya, jami $0.01)
+08-28 23:23:47  YAKUN: 2 ta tayyor, 0 ta chiqmadi. Sarflandi: $0.01 (kirish 5,165, chiqish 1,241 token)
+08-28 23:25:09  [1/3] Olmaxonning xotirasi (to‘liq, 1,017 belgi)
+08-28 23:25:28     ✓ tayyor (19 soniya, jami $0.00)
+08-28 23:25:28  [2/3] Bu sizga, oyijon (to‘liq, 1,303 belgi)
+08-28 23:25:46     ✓ tayyor (18 soniya, jami $0.01)
+08-28 23:25:46  [3/3] Kuchukning hikoyasi (to‘liq, 1,994 belgi)
+08-28 23:26:05     ✓ tayyor (19 soniya, jami $0.01)
+08-28 23:26:05  YAKUN: 3 ta tayyor, 0 ta chiqmadi. Sarflandi: $0.01 (kirish 8,097, chiqish 1,891 token)
+08-28 23:26:41  [1/25] Chumolining hikoyasi (to‘liq, 2,500 belgi)
+08-28 23:27:00     ✓ tayyor (19 soniya, jami $0.00)
+08-28 23:27:00  [2/25] Quyonchaning hikoyasi (to‘liq, 3,087 belgi)
+08-28 23:27:16     ✓ tayyor (15 soniya, jami $0.01)
+08-28 23:27:16  [3/25] Uzunquloq (to‘liq, 5,499 belgi)
+08-28 23:27:33     ✓ tayyor (17 soniya, jami $0.02)
+08-28 23:27:33  [4/25] Eski telefon (to‘liq, 6,723 belgi)
+08-28 23:27:52     ✓ tayyor (18 soniya, jami $0.02)
+08-28 23:27:52  [5/25] Qaldirg‘och (to‘liq, 18,326 belgi)
+08-28 23:28:52     ✓ tayyor (60 soniya, jami $0.04)
+08-28 23:28:52  [6/25] Maktab alamlari va zavqlari (to‘liq, 18,692 belgi)
+08-28 23:29:48     ✓ tayyor (56 soniya, jami $0.07)
+08-28 23:29:48  [7/25] Bug‘ular izidan (to‘liq, 35,985 belgi)
+08-28 23:30:50     ✓ tayyor (62 soniya, jami $0.09)
+08-28 23:30:50  [8/25] Sulaymon ovchi va uning iti haqida (to‘liq, 45,000 belgi)
+08-28 23:31:32     ✓ tayyor (42 soniya, jami $0.12)
+08-28 23:31:32  [9/25] 7-“A” da (kesma, 48,883 belgi)
+08-28 23:32:58     ✓ tayyor (86 soniya, jami $0.16)
+08-28 23:32:58  [10/25] Leonardo da Vinchi (kesma, 52,922 belgi)
+08-28 23:34:04     ✓ tayyor (66 soniya, jami $0.20)
+08-28 23:34:04  [11/25] Kichkina shahzoda (kesma, 62,599 belgi)
+08-28 23:34:49     ✓ tayyor (44 soniya, jami $0.24)
+08-28 23:34:49  [12/25] Muzlar iskanjasida (kesma, 66,637 belgi)
+08-28 23:36:01     · 1-urinish: 1 ta kamchilik (25-savol: variant 10 so‘z — juda uzun: 'A) Ruhoniy ota uchun...)
+08-28 23:37:22     ✓ tayyor (153 soniya, jami $0.32)
+08-28 23:37:22  [13/25] Lider bola (kesma, 69,239 belgi)
+08-28 23:38:28     ✓ tayyor (66 soniya, jami $0.36)
+08-28 23:38:28  [14/25] Bolaligim (kesma, 79,767 belgi)
+08-28 23:39:40     ✓ tayyor (72 soniya, jami $0.40)
+08-28 23:39:40  [15/25] Ot kishnagan oqshom (kesma, 92,059 belgi)
+08-28 23:40:55     ✓ tayyor (76 soniya, jami $0.45)
+08-28 23:40:55  [16/25] Odam bo‘lish qiyin (kesma, 95,490 belgi)
+08-28 23:42:06     ✓ tayyor (70 soniya, jami $0.50)
+08-28 23:42:06  [17/25] Yonar daryo (kesma, 95,533 belgi)
+08-28 23:42:29     ✓ tayyor (24 soniya, jami $0.53)
+08-28 23:42:29  [18/25] Ulug‘bek yulduzlar saltanatida (kesma, 95,604 belgi)
+08-28 23:42:47     ✓ tayyor (18 soniya, jami $0.57)
+08-28 23:42:47  [19/25] O‘n besh yoshli kapitan (kesma, 95,716 belgi)
+08-28 23:43:53     ✓ tayyor (66 soniya, jami $0.61)
+08-28 23:43:53  [20/25] Alisaning sayohatlari (kesma, 95,847 belgi)
+08-28 23:45:08     ✓ tayyor (75 soniya, jami $0.66)
+08-28 23:45:08  [21/25] G‘aroyib bolalar (kesma, 95,994 belgi)
+08-28 23:46:26     ✓ tayyor (78 soniya, jami $0.71)
+08-28 23:46:26  [22/25] Shahzoda va gado (kesma, 96,209 belgi)
+08-28 23:47:44     ✓ tayyor (78 soniya, jami $0.76)
+08-28 23:47:44  [23/25] Yovvoyi yo‘rg‘a (kesma, 96,497 belgi)
+08-28 23:49:11     ✓ tayyor (87 soniya, jami $0.81)
+08-28 23:49:11  [24/25] Qaylardasan, bolaligim (kesma, 96,681 belgi)
+08-28 23:50:21     ✓ tayyor (70 soniya, jami $0.86)
+08-28 23:50:21  [25/25] Pinokkioning boshidan kechirganlari (kesma, 100,184 belgi)
+08-28 23:51:45     ✓ tayyor (84 soniya, jami $0.91)
+08-28 23:51:45  YAKUN: 25 ta tayyor, 0 ta chiqmadi. Sarflandi: $0.91 (kirish 717,468, chiqish 100,221 token)
+/Users/bolalaryozuvchisi/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/bolalaryozuvchisi/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/bolalaryozuvchisi/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+HAMMASI: 109 ta kitob, taxminiy narx ~$3.44
+
+08-29 12:36:13  [1/109] Mushukchaning hikoyasi (to‘liq, 2,535 belgi)
+08-29 12:36:13  [1/109] Mushukchaning hikoyasi (to‘liq, 2,535 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:36:41     ✓ tayyor (27 soniya, jami $0.00)
+08-29 12:36:41     ✓ tayyor (27 soniya, jami $0.00)
+08-29 12:36:41  [2/109] O‘g‘rivoy (to‘liq, 4,159 belgi)
+08-29 12:36:41  [2/109] O‘g‘rivoy (to‘liq, 4,159 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:37:10     ✓ tayyor (30 soniya, jami $0.01)
+08-29 12:37:10     ✓ tayyor (30 soniya, jami $0.01)
+08-29 12:37:10  [3/109] Vaqtni qo‘yib yuboring! (to‘liq, 10,974 belgi)
+08-29 12:37:10  [3/109] Vaqtni qo‘yib yuboring! (to‘liq, 10,974 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:38:20     · 1-urinish: 2 ta kamchilik (16-savol: to‘g‘ri javob variantlar orasida yo‘q...)
+08-29 12:38:20     · 1-urinish: 2 ta kamchilik (16-savol: to‘g‘ri javob variantlar orasida yo‘q...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:39:26     ✓ tayyor (136 soniya, jami $0.05)
+08-29 12:39:26     ✓ tayyor (136 soniya, jami $0.05)
+08-29 12:39:26  [4/109] Boychechak (to‘liq, 18,939 belgi)
+08-29 12:39:26  [4/109] Boychechak (to‘liq, 18,939 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:40:10     ✓ tayyor (44 soniya, jami $0.07)
+08-29 12:40:10     ✓ tayyor (44 soniya, jami $0.07)
+08-29 12:40:10  [5/109] Hayvonlar haqida hikoyalar (to‘liq, 19,749 belgi)
+08-29 12:40:10  [5/109] Hayvonlar haqida hikoyalar (to‘liq, 19,749 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:41:25     · 1-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 12:41:25     · 1-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:42:13     · 2-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 12:42:13     · 2-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:43:07     · 3-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 12:43:07     · 3-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 12:43:07     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 12:43:07     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 12:43:07  [6/109] Nur va zulmat (to‘liq, 46,725 belgi)
+08-29 12:43:07  [6/109] Nur va zulmat (to‘liq, 46,725 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:44:19     ✓ tayyor (72 soniya, jami $0.17)
+08-29 12:44:19     ✓ tayyor (72 soniya, jami $0.17)
+08-29 12:44:19  [7/109] Amir Temur haqida hikoyalar (kesma, 49,595 belgi)
+08-29 12:44:19  [7/109] Amir Temur haqida hikoyalar (kesma, 49,595 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:45:54     ✓ tayyor (96 soniya, jami $0.21)
+08-29 12:45:54     ✓ tayyor (96 soniya, jami $0.21)
+08-29 12:45:54  [8/109] Anton bo‘rini uchratgan kecha (kesma, 61,833 belgi)
+08-29 12:45:54  [8/109] Anton bo‘rini uchratgan kecha (kesma, 61,833 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:47:03     · 1-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 12:47:03     · 1-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:48:16     · 2-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 12:48:16     · 2-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:49:25     · 3-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 12:49:25     · 3-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 12:49:25     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 12:49:25     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 12:49:25  [9/109] Changalzor iti (kesma, 68,852 belgi)
+08-29 12:49:25  [9/109] Changalzor iti (kesma, 68,852 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:50:46     ✓ tayyor (81 soniya, jami $0.37)
+08-29 12:50:46     ✓ tayyor (81 soniya, jami $0.37)
+08-29 12:50:46  [10/109] Paxmoq (kesma, 70,719 belgi)
+08-29 12:50:46  [10/109] Paxmoq (kesma, 70,719 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:51:54     ✓ tayyor (68 soniya, jami $0.41)
+08-29 12:51:54     ✓ tayyor (68 soniya, jami $0.41)
+08-29 12:51:54  [11/109] Shum bola (kesma, 95,413 belgi)
+08-29 12:51:54  [11/109] Shum bola (kesma, 95,413 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:53:07     ✓ tayyor (74 soniya, jami $0.46)
+08-29 12:53:07     ✓ tayyor (74 soniya, jami $0.46)
+08-29 12:53:07  [12/109] Robinzonlar maktabi (kesma, 95,565 belgi)
+08-29 12:53:07  [12/109] Robinzonlar maktabi (kesma, 95,565 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:54:09     ✓ tayyor (61 soniya, jami $0.50)
+08-29 12:54:09     ✓ tayyor (61 soniya, jami $0.50)
+08-29 12:54:09  [13/109] Afandining qirq bir pashshasi (kesma, 95,650 belgi)
+08-29 12:54:09  [13/109] Afandining qirq bir pashshasi (kesma, 95,650 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:55:38     ✓ tayyor (90 soniya, jami $0.56)
+08-29 12:55:38     ✓ tayyor (90 soniya, jami $0.56)
+08-29 12:55:38  [14/109] Quyonlar saltanati (kesma, 95,998 belgi)
+08-29 12:55:38  [14/109] Quyonlar saltanati (kesma, 95,998 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:56:46     ✓ tayyor (68 soniya, jami $0.60)
+08-29 12:56:46     ✓ tayyor (68 soniya, jami $0.60)
+08-29 12:56:46  [15/109] Merosxo‘r (kesma, 96,457 belgi)
+08-29 12:56:46  [15/109] Merosxo‘r (kesma, 96,457 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:57:17     ✓ tayyor (31 soniya, jami $0.64)
+08-29 12:57:17     ✓ tayyor (31 soniya, jami $0.64)
+08-29 12:57:17  [16/109] Shirin qovunlar mamlakati (kesma, 96,774 belgi)
+08-29 12:57:17  [16/109] Shirin qovunlar mamlakati (kesma, 96,774 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:58:34     ✓ tayyor (77 soniya, jami $0.69)
+08-29 12:58:34     ✓ tayyor (77 soniya, jami $0.69)
+08-29 12:58:34  [17/109] Kapitan Grant bolalari (kesma, 96,927 belgi)
+08-29 12:58:34  [17/109] Kapitan Grant bolalari (kesma, 96,927 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 12:59:37     ✓ tayyor (63 soniya, jami $0.74)
+08-29 12:59:37     ✓ tayyor (63 soniya, jami $0.74)
+08-29 12:59:37  [18/109] Xo‘tikning hikoyasi (to‘liq, 1,812 belgi)
+08-29 12:59:37  [18/109] Xo‘tikning hikoyasi (to‘liq, 1,812 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:00:01     ✓ tayyor (24 soniya, jami $0.74)
+08-29 13:00:01     ✓ tayyor (24 soniya, jami $0.74)
+08-29 13:00:01  [19/109] Jo‘janing hikoyasi (to‘liq, 2,295 belgi)
+08-29 13:00:01  [19/109] Jo‘janing hikoyasi (to‘liq, 2,295 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:00:24     ✓ tayyor (23 soniya, jami $0.75)
+08-29 13:00:24     ✓ tayyor (23 soniya, jami $0.75)
+08-29 13:00:24  [20/109] Forobiy (to‘liq, 4,098 belgi)
+08-29 13:00:24  [20/109] Forobiy (to‘liq, 4,098 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:01:19     ✓ tayyor (55 soniya, jami $0.76)
+08-29 13:01:19     ✓ tayyor (55 soniya, jami $0.76)
+08-29 13:01:19  [21/109] Chink (to‘liq, 14,219 belgi)
+08-29 13:01:19  [21/109] Chink (to‘liq, 14,219 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:02:20     ✓ tayyor (61 soniya, jami $0.78)
+08-29 13:02:20     ✓ tayyor (61 soniya, jami $0.78)
+08-29 13:02:20  [22/109] Springfild tulkisi (to‘liq, 34,158 belgi)
+08-29 13:02:20  [22/109] Springfild tulkisi (to‘liq, 34,158 belgi)
+08-29 13:02:23  [ai] BO‘SH JAVOB [kitob_pasporti] finish_reason='' block_reason='BlockedReason.PROHIBITED_CONTENT'
+08-29 13:02:23  [ai] XATO [kitob_pasporti - urinish 1]: AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.
+08-29 13:02:23     ✗ 1-urinish: AI xatosi: AiEmptyResponse('AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.')
+08-29 13:02:23     ✗ 1-urinish: AI xatosi: AiEmptyResponse('AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.')
+08-29 13:02:23  [ai] BO‘SH JAVOB [kitob_pasporti] finish_reason='' block_reason='BlockedReason.PROHIBITED_CONTENT'
+08-29 13:02:23  [ai] XATO [kitob_pasporti - urinish 1]: AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.
+08-29 13:02:23     ✗ 2-urinish: AI xatosi: AiEmptyResponse('AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.')
+08-29 13:02:23     ✗ 2-urinish: AI xatosi: AiEmptyResponse('AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.')
+08-29 13:02:24  [ai] BO‘SH JAVOB [kitob_pasporti] finish_reason='' block_reason='BlockedReason.PROHIBITED_CONTENT'
+08-29 13:02:24  [ai] XATO [kitob_pasporti - urinish 1]: AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.
+08-29 13:02:24     ✗ 3-urinish: AI xatosi: AiEmptyResponse('AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.')
+08-29 13:02:24     ✗ 3-urinish: AI xatosi: AiEmptyResponse('AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.')
+08-29 13:02:24     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 13:02:24     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 13:02:24  [23/109] Oqtosh (to‘liq, 41,376 belgi)
+08-29 13:02:24  [23/109] Oqtosh (to‘liq, 41,376 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:03:30     ✓ tayyor (66 soniya, jami $0.81)
+08-29 13:03:30     ✓ tayyor (66 soniya, jami $0.81)
+08-29 13:03:30  [24/109] Fransuz tili saboqlari (kesma, 48,816 belgi)
+08-29 13:03:30  [24/109] Fransuz tili saboqlari (kesma, 48,816 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:04:43     ✓ tayyor (73 soniya, jami $0.84)
+08-29 13:04:43     ✓ tayyor (73 soniya, jami $0.84)
+08-29 13:04:43  [25/109] Belbog‘ (kesma, 64,607 belgi)
+08-29 13:04:43  [25/109] Belbog‘ (kesma, 64,607 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:05:56     ✓ tayyor (73 soniya, jami $0.88)
+08-29 13:05:56     ✓ tayyor (73 soniya, jami $0.88)
+08-29 13:05:56  [26/109] Jadidlar (kesma, 67,074 belgi)
+08-29 13:05:56  [26/109] Jadidlar (kesma, 67,074 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:07:12     ✓ tayyor (76 soniya, jami $0.93)
+08-29 13:07:12     ✓ tayyor (76 soniya, jami $0.93)
+08-29 13:07:12  [27/109] Sehrli qalpoqcha (kesma, 73,883 belgi)
+08-29 13:07:12  [27/109] Sehrli qalpoqcha (kesma, 73,883 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:08:22     ✓ tayyor (70 soniya, jami $0.97)
+08-29 13:08:22     ✓ tayyor (70 soniya, jami $0.97)
+08-29 13:08:22  [28/109] Alisher (kesma, 92,318 belgi)
+08-29 13:08:22  [28/109] Alisher (kesma, 92,318 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:09:33     · 1-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 13:09:33     · 1-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:10:46     · 2-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 13:10:46     · 2-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:12:02     · 3-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 13:12:02     · 3-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 13:12:02     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 13:12:02     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 13:12:02  [29/109] Olmos jilosi (kesma, 95,511 belgi)
+08-29 13:12:02  [29/109] Olmos jilosi (kesma, 95,511 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:13:18     ✓ tayyor (76 soniya, jami $1.17)
+08-29 13:13:18     ✓ tayyor (76 soniya, jami $1.17)
+08-29 13:13:18  [30/109] Quyoshni ko‘ryapman (kesma, 95,621 belgi)
+08-29 13:13:18  [30/109] Quyoshni ko‘ryapman (kesma, 95,621 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:14:35     ✓ tayyor (77 soniya, jami $1.22)
+08-29 13:14:35     ✓ tayyor (77 soniya, jami $1.22)
+08-29 13:14:35  [31/109] Dunyoning ishlari (kesma, 95,738 belgi)
+08-29 13:14:35  [31/109] Dunyoning ishlari (kesma, 95,738 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:16:04     ✓ tayyor (89 soniya, jami $1.28)
+08-29 13:16:04     ✓ tayyor (89 soniya, jami $1.28)
+08-29 13:16:04  [32/109] Klodius Bombarnak (kesma, 95,912 belgi)
+08-29 13:16:04  [32/109] Klodius Bombarnak (kesma, 95,912 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:17:18     · 1-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 13:17:18     · 1-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:18:25     · 2-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 13:18:25     · 2-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:19:34     · 3-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 13:19:34     · 3-urinish: 1 ta kamchilik («genre» maydoni bo‘sh...)
+08-29 13:19:34     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 13:19:34     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 13:19:34  [33/109] Marko Poloning ajoyib va g‘aroyib sarguzashtlari (kesma, 96,257 belgi)
+08-29 13:19:34  [33/109] Marko Poloning ajoyib va g‘aroyib sarguzashtlari (kesma, 96,257 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:20:00     ✓ tayyor (27 soniya, jami $1.47)
+08-29 13:20:00     ✓ tayyor (27 soniya, jami $1.47)
+08-29 13:20:00  [34/109] Qaysar bolaning hayoti (kesma, 96,569 belgi)
+08-29 13:20:00  [34/109] Qaysar bolaning hayoti (kesma, 96,569 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:21:15     ✓ tayyor (74 soniya, jami $1.52)
+08-29 13:21:15     ✓ tayyor (74 soniya, jami $1.52)
+08-29 13:21:15  [35/109] Amir Temur (kesma, 97,753 belgi)
+08-29 13:21:15  [35/109] Amir Temur (kesma, 97,753 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:22:09     · 1-urinish: 1 ta kamchilik (20-savol: variant 12 so‘z — juda uzun: 'A) Vaqtni qadrlash v...)
+08-29 13:22:09     · 1-urinish: 1 ta kamchilik (20-savol: variant 12 so‘z — juda uzun: 'A) Vaqtni qadrlash v...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:23:21     ✓ tayyor (126 soniya, jami $1.62)
+08-29 13:23:21     ✓ tayyor (126 soniya, jami $1.62)
+08-29 13:23:21  [36/109] Buzoqning hikoyasi (to‘liq, 1,849 belgi)
+08-29 13:23:21  [36/109] Buzoqning hikoyasi (to‘liq, 1,849 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:23:42     ✓ tayyor (21 soniya, jami $1.63)
+08-29 13:23:42     ✓ tayyor (21 soniya, jami $1.63)
+08-29 13:23:42  [37/109] Cho‘chqachaning hikoyasi (to‘liq, 2,234 belgi)
+08-29 13:23:42  [37/109] Cho‘chqachaning hikoyasi (to‘liq, 2,234 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:24:06     ✓ tayyor (24 soniya, jami $1.63)
+08-29 13:24:06     ✓ tayyor (24 soniya, jami $1.63)
+08-29 13:24:06  [38/109] Yoz bilan xayrlashuv (to‘liq, 5,195 belgi)
+08-29 13:24:06  [38/109] Yoz bilan xayrlashuv (to‘liq, 5,195 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:24:29     ✓ tayyor (23 soniya, jami $1.64)
+08-29 13:24:29     ✓ tayyor (23 soniya, jami $1.64)
+08-29 13:24:29  [39/109] Chillak o‘yin (to‘liq, 15,216 belgi)
+08-29 13:24:29  [39/109] Chillak o‘yin (to‘liq, 15,216 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:25:34     ✓ tayyor (65 soniya, jami $1.66)
+08-29 13:25:34     ✓ tayyor (65 soniya, jami $1.66)
+08-29 13:25:34  [40/109] Lobo (to‘liq, 30,118 belgi)
+08-29 13:25:34  [40/109] Lobo (to‘liq, 30,118 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:26:18     ✓ tayyor (44 soniya, jami $1.68)
+08-29 13:26:18     ✓ tayyor (44 soniya, jami $1.68)
+08-29 13:26:18  [41/109] Eski maktab (kesma, 48,197 belgi)
+08-29 13:26:18  [41/109] Eski maktab (kesma, 48,197 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:27:34     ✓ tayyor (77 soniya, jami $1.72)
+08-29 13:27:34     ✓ tayyor (77 soniya, jami $1.72)
+08-29 13:27:34  [42/109] Baron Myunxauzenning sarguzashtlari (kesma, 52,177 belgi)
+08-29 13:27:34  [42/109] Baron Myunxauzenning sarguzashtlari (kesma, 52,177 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:28:33     ✓ tayyor (59 soniya, jami $1.75)
+08-29 13:28:33     ✓ tayyor (59 soniya, jami $1.75)
+08-29 13:28:33  [43/109] Domino (kesma, 55,879 belgi)
+08-29 13:28:33  [43/109] Domino (kesma, 55,879 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:29:49     ✓ tayyor (76 soniya, jami $1.79)
+08-29 13:29:49     ✓ tayyor (76 soniya, jami $1.79)
+08-29 13:29:49  [44/109] Akramning sarguzashtlari (kesma, 70,483 belgi)
+08-29 13:29:49  [44/109] Akramning sarguzashtlari (kesma, 70,483 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:30:09     ✓ tayyor (21 soniya, jami $1.82)
+08-29 13:30:09     ✓ tayyor (21 soniya, jami $1.82)
+08-29 13:30:09  [45/109] O‘tmishdan ertaklar (kesma, 95,481 belgi)
+08-29 13:30:09  [45/109] O‘tmishdan ertaklar (kesma, 95,481 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:31:15     ✓ tayyor (65 soniya, jami $1.87)
+08-29 13:31:15     ✓ tayyor (65 soniya, jami $1.87)
+08-29 13:31:15  [46/109] Ibn Sino (kesma, 95,645 belgi)
+08-29 13:31:15  [46/109] Ibn Sino (kesma, 95,645 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:32:21     ✓ tayyor (66 soniya, jami $1.92)
+08-29 13:32:21     ✓ tayyor (66 soniya, jami $1.92)
+08-29 13:32:21  [47/109] Oliver Tvistning boshidan kechirganlari (kesma, 95,839 belgi)
+08-29 13:32:21  [47/109] Oliver Tvistning boshidan kechirganlari (kesma, 95,839 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:33:25     ✓ tayyor (64 soniya, jami $1.97)
+08-29 13:33:25     ✓ tayyor (64 soniya, jami $1.97)
+08-29 13:33:25  [48/109] Bilmasvoy va do‘stlarining boshidan kechirganlari (kesma, 96,034 belgi)
+08-29 13:33:25  [48/109] Bilmasvoy va do‘stlarining boshidan kechirganlari (kesma, 96,034 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:34:58     ✓ tayyor (93 soniya, jami $2.02)
+08-29 13:34:58     ✓ tayyor (93 soniya, jami $2.02)
+08-29 13:34:58  [49/109] Besh bolali yigitcha (kesma, 96,380 belgi)
+08-29 13:34:58  [49/109] Besh bolali yigitcha (kesma, 96,380 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:35:53     ✓ tayyor (55 soniya, jami $2.07)
+08-29 13:35:53     ✓ tayyor (55 soniya, jami $2.07)
+08-29 13:35:53  [50/109] Shaytonvachchaning nayranglari (kesma, 97,088 belgi)
+08-29 13:35:53  [50/109] Shaytonvachchaning nayranglari (kesma, 97,088 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:36:52     ✓ tayyor (59 soniya, jami $2.12)
+08-29 13:36:52     ✓ tayyor (59 soniya, jami $2.12)
+08-29 13:36:52  [51/109] Qurbaqaning hikoyasi (to‘liq, 1,859 belgi)
+08-29 13:36:52  [51/109] Qurbaqaning hikoyasi (to‘liq, 1,859 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:37:18     ✓ tayyor (26 soniya, jami $2.13)
+08-29 13:37:18     ✓ tayyor (26 soniya, jami $2.13)
+08-29 13:37:18  [52/109] Uloqchaning hikoyasi (to‘liq, 2,536 belgi)
+08-29 13:37:18  [52/109] Uloqchaning hikoyasi (to‘liq, 2,536 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:37:37     ✓ tayyor (19 soniya, jami $2.13)
+08-29 13:37:37     ✓ tayyor (19 soniya, jami $2.13)
+08-29 13:37:37  [53/109] Xorazmiy (to‘liq, 3,296 belgi)
+08-29 13:37:37  [53/109] Xorazmiy (to‘liq, 3,296 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:37:58     ✓ tayyor (20 soniya, jami $2.14)
+08-29 13:37:58     ✓ tayyor (20 soniya, jami $2.14)
+08-29 13:37:58  [54/109] Bobur (to‘liq, 8,280 belgi)
+08-29 13:37:58  [54/109] Bobur (to‘liq, 8,280 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:38:52     ✓ tayyor (55 soniya, jami $2.15)
+08-29 13:38:52     ✓ tayyor (55 soniya, jami $2.15)
+08-29 13:38:52  [55/109] Motsart (to‘liq, 13,168 belgi)
+08-29 13:38:52  [55/109] Motsart (to‘liq, 13,168 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:39:53     ✓ tayyor (60 soniya, jami $2.18)
+08-29 13:39:53     ✓ tayyor (60 soniya, jami $2.18)
+08-29 13:39:53  [56/109] Jonni laqabli ayiqcha (to‘liq, 38,201 belgi)
+08-29 13:39:53  [56/109] Jonni laqabli ayiqcha (to‘liq, 38,201 belgi)
+08-29 13:39:57  [ai] BO‘SH JAVOB [kitob_pasporti] finish_reason='' block_reason='BlockedReason.PROHIBITED_CONTENT'
+08-29 13:39:57  [ai] XATO [kitob_pasporti - urinish 1]: AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.
+08-29 13:39:57     ✗ 1-urinish: AI xatosi: AiEmptyResponse('AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.')
+08-29 13:39:57     ✗ 1-urinish: AI xatosi: AiEmptyResponse('AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.')
+08-29 13:39:57  [ai] BO‘SH JAVOB [kitob_pasporti] finish_reason='' block_reason='BlockedReason.PROHIBITED_CONTENT'
+08-29 13:39:57  [ai] XATO [kitob_pasporti - urinish 1]: AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.
+08-29 13:39:57     ✗ 2-urinish: AI xatosi: AiEmptyResponse('AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.')
+08-29 13:39:57     ✗ 2-urinish: AI xatosi: AiEmptyResponse('AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.')
+08-29 13:39:58  [ai] BO‘SH JAVOB [kitob_pasporti] finish_reason='' block_reason='BlockedReason.PROHIBITED_CONTENT'
+08-29 13:39:58  [ai] XATO [kitob_pasporti - urinish 1]: AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.
+08-29 13:39:58     ✗ 3-urinish: AI xatosi: AiEmptyResponse('AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.')
+08-29 13:39:58     ✗ 3-urinish: AI xatosi: AiEmptyResponse('AI yuborilgan rasmlarni qabul qilmadi (xavfsizlik filtri). Boshqa sahifalarni suratga olib ko‘ring.')
+08-29 13:39:58     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 13:39:58     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 13:39:58  [57/109] Teddi (to‘liq, 51,636 belgi)
+08-29 13:39:58  [57/109] Teddi (to‘liq, 51,636 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:40:47     ✓ tayyor (49 soniya, jami $2.21)
+08-29 13:40:47     ✓ tayyor (49 soniya, jami $2.21)
+08-29 13:40:47  [58/109] Hikoyalar (kesma, 63,045 belgi)
+08-29 13:40:47  [58/109] Hikoyalar (kesma, 63,045 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:41:16     ✓ tayyor (29 soniya, jami $2.23)
+08-29 13:41:16     ✓ tayyor (29 soniya, jami $2.23)
+08-29 13:41:16  [59/109] Uyg‘onish (kesma, 71,971 belgi)
+08-29 13:41:16  [59/109] Uyg‘onish (kesma, 71,971 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:42:54     ✓ tayyor (98 soniya, jami $2.27)
+08-29 13:42:54     ✓ tayyor (98 soniya, jami $2.27)
+08-29 13:42:54  [60/109] Bo‘sh kelma, Aliqulov! (kesma, 94,796 belgi)
+08-29 13:42:54  [60/109] Bo‘sh kelma, Aliqulov! (kesma, 94,796 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:44:11     · 1-urinish: 1 ta kamchilik (28-savol: variant 10 so‘z — juda uzun: 'A) To‘g‘ri — inson o...)
+08-29 13:44:11     · 1-urinish: 1 ta kamchilik (28-savol: variant 10 so‘z — juda uzun: 'A) To‘g‘ri — inson o...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:45:18     ✓ tayyor (144 soniya, jami $2.38)
+08-29 13:45:18     ✓ tayyor (144 soniya, jami $2.38)
+08-29 13:45:18  [61/109] Ulug‘bek (kesma, 95,514 belgi)
+08-29 13:45:18  [61/109] Ulug‘bek (kesma, 95,514 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:46:41     ✓ tayyor (83 soniya, jami $2.43)
+08-29 13:46:41     ✓ tayyor (83 soniya, jami $2.43)
+08-29 13:46:41  [62/109] Ajab qishloq (kesma, 95,591 belgi)
+08-29 13:46:41  [62/109] Ajab qishloq (kesma, 95,591 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:47:53     ✓ tayyor (71 soniya, jami $2.48)
+08-29 13:47:53     ✓ tayyor (71 soniya, jami $2.48)
+08-29 13:47:53  [63/109] Champo otli ilon (kesma, 95,719 belgi)
+08-29 13:47:53  [63/109] Champo otli ilon (kesma, 95,719 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:49:14     ✓ tayyor (81 soniya, jami $2.53)
+08-29 13:49:14     ✓ tayyor (81 soniya, jami $2.53)
+08-29 13:49:14  [64/109] Qasoskorning oltin boshi (kesma, 96,663 belgi)
+08-29 13:49:14  [64/109] Qasoskorning oltin boshi (kesma, 96,663 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:50:51     ✓ tayyor (96 soniya, jami $2.58)
+08-29 13:50:51     ✓ tayyor (96 soniya, jami $2.58)
+08-29 13:50:51  [65/109] Beruniy (kesma, 97,667 belgi)
+08-29 13:50:51  [65/109] Beruniy (kesma, 97,667 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:52:06     ✓ tayyor (76 soniya, jami $2.63)
+08-29 13:52:06     ✓ tayyor (76 soniya, jami $2.63)
+08-29 13:52:06  [66/109] Yetti qiz (to‘liq, 1,060 belgi)
+08-29 13:52:06  [66/109] Yetti qiz (to‘liq, 1,060 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:52:23     ✓ tayyor (17 soniya, jami $2.63)
+08-29 13:52:23     ✓ tayyor (17 soniya, jami $2.63)
+08-29 13:52:23  [67/109] Hakkaning hikoyasi (to‘liq, 1,751 belgi)
+08-29 13:52:23  [67/109] Hakkaning hikoyasi (to‘liq, 1,751 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:52:39     ✓ tayyor (16 soniya, jami $2.64)
+08-29 13:52:39     ✓ tayyor (16 soniya, jami $2.64)
+08-29 13:52:39  [68/109] Jiblajibonning xatlari (to‘liq, 2,446 belgi)
+08-29 13:52:39  [68/109] Jiblajibonning xatlari (to‘liq, 2,446 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:53:02     ✓ tayyor (23 soniya, jami $2.64)
+08-29 13:53:02     ✓ tayyor (23 soniya, jami $2.64)
+08-29 13:53:02  [69/109] Tulkichaning hikoyasi (to‘liq, 4,761 belgi)
+08-29 13:53:02  [69/109] Tulkichaning hikoyasi (to‘liq, 4,761 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:53:30     ✓ tayyor (27 soniya, jami $2.65)
+08-29 13:53:30     ✓ tayyor (27 soniya, jami $2.65)
+08-29 13:53:30  [70/109] O‘qituvchi odam bo‘lgan ekan (to‘liq, 5,925 belgi)
+08-29 13:53:30  [70/109] O‘qituvchi odam bo‘lgan ekan (to‘liq, 5,925 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:53:47     ✓ tayyor (17 soniya, jami $2.65)
+08-29 13:53:47     ✓ tayyor (17 soniya, jami $2.65)
+08-29 13:53:47  [71/109] Snap (to‘liq, 26,257 belgi)
+08-29 13:53:47  [71/109] Snap (to‘liq, 26,257 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:54:51     ✓ tayyor (64 soniya, jami $2.68)
+08-29 13:54:51     ✓ tayyor (64 soniya, jami $2.68)
+08-29 13:54:51  [72/109] Albert Eynshteyn (kesma, 48,464 belgi)
+08-29 13:54:51  [72/109] Albert Eynshteyn (kesma, 48,464 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:56:03     ✓ tayyor (72 soniya, jami $2.71)
+08-29 13:56:03     ✓ tayyor (72 soniya, jami $2.71)
+08-29 13:56:03  [73/109] Kundalik odoblar (kesma, 54,073 belgi)
+08-29 13:56:03  [73/109] Kundalik odoblar (kesma, 54,073 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:56:58     ✓ tayyor (55 soniya, jami $2.75)
+08-29 13:56:58     ✓ tayyor (55 soniya, jami $2.75)
+08-29 13:56:58  [74/109] Vinni Pux va uning sarguzashtlari (kesma, 66,588 belgi)
+08-29 13:56:58  [74/109] Vinni Pux va uning sarguzashtlari (kesma, 66,588 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:58:17     · 1-urinish: 2 ta kamchilik (5-savol: variant 10 so‘z — juda uzun: 'A) Dastlab bitta, key...)
+08-29 13:58:17     · 1-urinish: 2 ta kamchilik (5-savol: variant 10 so‘z — juda uzun: 'A) Dastlab bitta, key...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 13:59:24     ✓ tayyor (146 soniya, jami $2.83)
+08-29 13:59:24     ✓ tayyor (146 soniya, jami $2.83)
+08-29 13:59:24  [75/109] Buratino va uning sarguzashtlari (kesma, 80,624 belgi)
+08-29 13:59:24  [75/109] Buratino va uning sarguzashtlari (kesma, 80,624 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:00:30     ✓ tayyor (66 soniya, jami $2.87)
+08-29 14:00:30     ✓ tayyor (66 soniya, jami $2.87)
+08-29 14:00:30  [76/109] O‘zbek xalq ertaklari (kesma, 86,406 belgi)
+08-29 14:00:30  [76/109] O‘zbek xalq ertaklari (kesma, 86,406 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:01:47     · 1-urinish: 2 ta kamchilik («author» maydoni bo‘sh...)
+08-29 14:01:47     · 1-urinish: 2 ta kamchilik («author» maydoni bo‘sh...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:02:45     · 2-urinish: 2 ta kamchilik («author» maydoni bo‘sh...)
+08-29 14:02:45     · 2-urinish: 2 ta kamchilik («author» maydoni bo‘sh...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:03:49     · 3-urinish: 2 ta kamchilik («author» maydoni bo‘sh...)
+08-29 14:03:49     · 3-urinish: 2 ta kamchilik («author» maydoni bo‘sh...)
+08-29 14:03:49     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 14:03:49     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+08-29 14:03:49  [77/109] Tom Soyerning yangi sarguzashtlari (kesma, 95,583 belgi)
+08-29 14:03:49  [77/109] Tom Soyerning yangi sarguzashtlari (kesma, 95,583 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:04:38     ✓ tayyor (49 soniya, jami $3.06)
+08-29 14:04:38     ✓ tayyor (49 soniya, jami $3.06)
+08-29 14:04:38  [78/109] Men, buvim, Iliko va Illarion (kesma, 95,695 belgi)
+08-29 14:04:38  [78/109] Men, buvim, Iliko va Illarion (kesma, 95,695 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:06:06     · 1-urinish: 10 ta kamchilik (6-savol: variant 10 so‘z — juda uzun: 'B) Zurikoning soxta k...)
+08-29 14:06:06     · 1-urinish: 10 ta kamchilik (6-savol: variant 10 so‘z — juda uzun: 'B) Zurikoning soxta k...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:07:28     ✓ tayyor (169 soniya, jami $3.17)
+08-29 14:07:28     ✓ tayyor (169 soniya, jami $3.17)
+08-29 14:07:28  [79/109] Galaktikada bir kun 2-kitob (kesma, 95,851 belgi)
+08-29 14:07:28  [79/109] Galaktikada bir kun 2-kitob (kesma, 95,851 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:08:42     · 1-urinish: 3 ta kamchilik (kirill harfi: 'B) Maqtanchoqligini va манmanligini'...)
+08-29 14:08:42     · 1-urinish: 3 ta kamchilik (kirill harfi: 'B) Maqtanchoqligini va манmanligini'...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:09:47     ✓ tayyor (140 soniya, jami $3.26)
+08-29 14:09:47     ✓ tayyor (140 soniya, jami $3.26)
+08-29 14:09:47  [80/109] Tom Soyerning boshidan kechirganlari (kesma, 96,106 belgi)
+08-29 14:09:47  [80/109] Tom Soyerning boshidan kechirganlari (kesma, 96,106 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:11:00     ✓ tayyor (72 soniya, jami $3.31)
+08-29 14:11:00     ✓ tayyor (72 soniya, jami $3.31)
+08-29 14:11:00  [81/109] Stiv Jobs (kesma, 100,566 belgi)
+08-29 14:11:00  [81/109] Stiv Jobs (kesma, 100,566 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:12:10     ✓ tayyor (70 soniya, jami $3.36)
+08-29 14:12:10     ✓ tayyor (70 soniya, jami $3.36)
+08-29 14:12:10  [82/109] Toshbaqaning hikoyasi (to‘liq, 1,625 belgi)
+08-29 14:12:10  [82/109] Toshbaqaning hikoyasi (to‘liq, 1,625 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:12:32     ✓ tayyor (22 soniya, jami $3.36)
+08-29 14:12:32     ✓ tayyor (22 soniya, jami $3.36)
+08-29 14:12:32  [83/109] Antiqa qurbaqa (to‘liq, 2,423 belgi)
+08-29 14:12:32  [83/109] Antiqa qurbaqa (to‘liq, 2,423 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:12:54     ✓ tayyor (23 soniya, jami $3.37)
+08-29 14:12:54     ✓ tayyor (23 soniya, jami $3.37)
+08-29 14:12:54  [84/109] Buyuk sayohatchilar (to‘liq, 7,876 belgi)
+08-29 14:12:54  [84/109] Buyuk sayohatchilar (to‘liq, 7,876 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:13:49     ✓ tayyor (54 soniya, jami $3.39)
+08-29 14:13:49     ✓ tayyor (54 soniya, jami $3.39)
+08-29 14:13:49  [85/109] Bingo (to‘liq, 26,630 belgi)
+08-29 14:13:49  [85/109] Bingo (to‘liq, 26,630 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:14:46     ✓ tayyor (58 soniya, jami $3.41)
+08-29 14:14:46     ✓ tayyor (58 soniya, jami $3.41)
+08-29 14:14:46  [86/109] Birinchi muallim (kesma, 64,605 belgi)
+08-29 14:14:46  [86/109] Birinchi muallim (kesma, 64,605 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:15:07     ✓ tayyor (21 soniya, jami $3.43)
+08-29 14:15:07     ✓ tayyor (21 soniya, jami $3.43)
+08-29 14:15:07  [87/109] To‘maris (kesma, 88,242 belgi)
+08-29 14:15:07  [87/109] To‘maris (kesma, 88,242 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:16:22     ✓ tayyor (75 soniya, jami $3.48)
+08-29 14:16:22     ✓ tayyor (75 soniya, jami $3.48)
+08-29 14:16:22  [88/109] Meshpolvonning janglari (kesma, 95,492 belgi)
+08-29 14:16:22  [88/109] Meshpolvonning janglari (kesma, 95,492 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:17:31     ✓ tayyor (69 soniya, jami $3.53)
+08-29 14:17:31     ✓ tayyor (69 soniya, jami $3.53)
+08-29 14:17:31  [89/109] Gulliverning sayohatlari (kesma, 95,587 belgi)
+08-29 14:17:31  [89/109] Gulliverning sayohatlari (kesma, 95,587 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:18:59     ✓ tayyor (88 soniya, jami $3.58)
+08-29 14:18:59     ✓ tayyor (88 soniya, jami $3.58)
+08-29 14:18:59  [90/109] Muhammad Ali (kesma, 95,861 belgi)
+08-29 14:18:59  [90/109] Muhammad Ali (kesma, 95,861 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:20:06     ✓ tayyor (67 soniya, jami $3.63)
+08-29 14:20:06     ✓ tayyor (67 soniya, jami $3.63)
+08-29 14:20:06  [91/109] Bilmasvoy quyosh shahrida (kesma, 96,173 belgi)
+08-29 14:20:06  [91/109] Bilmasvoy quyosh shahrida (kesma, 96,173 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:21:22     ✓ tayyor (76 soniya, jami $3.67)
+08-29 14:21:22     ✓ tayyor (76 soniya, jami $3.67)
+08-29 14:21:22  [92/109] Olimjonning sarguzashtlari (kesma, 96,554 belgi)
+08-29 14:21:22  [92/109] Olimjonning sarguzashtlari (kesma, 96,554 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:22:33     ✓ tayyor (71 soniya, jami $3.72)
+08-29 14:22:33     ✓ tayyor (71 soniya, jami $3.72)
+08-29 14:22:33  [93/109] Assalomu alaykum (to‘liq, 1,372 belgi)
+08-29 14:22:33  [93/109] Assalomu alaykum (to‘liq, 1,372 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:22:57     ✓ tayyor (23 soniya, jami $3.73)
+08-29 14:22:57     ✓ tayyor (23 soniya, jami $3.73)
+08-29 14:22:57  [94/109] Suv va daraxt (to‘liq, 1,681 belgi)
+08-29 14:22:57  [94/109] Suv va daraxt (to‘liq, 1,681 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:23:16     ✓ tayyor (20 soniya, jami $3.73)
+08-29 14:23:16     ✓ tayyor (20 soniya, jami $3.73)
+08-29 14:23:16  [95/109] Yalpiz somsa (to‘liq, 3,494 belgi)
+08-29 14:23:16  [95/109] Yalpiz somsa (to‘liq, 3,494 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:23:42     ✓ tayyor (25 soniya, jami $3.74)
+08-29 14:23:42     ✓ tayyor (25 soniya, jami $3.74)
+08-29 14:23:42  [96/109] Hovlidagi maydoncha (to‘liq, 9,160 belgi)
+08-29 14:23:42  [96/109] Hovlidagi maydoncha (to‘liq, 9,160 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:24:45     ✓ tayyor (63 soniya, jami $3.76)
+08-29 14:24:45     ✓ tayyor (63 soniya, jami $3.76)
+08-29 14:24:45  [97/109] Bir kunlik yoz (to‘liq, 11,467 belgi)
+08-29 14:24:45  [97/109] Bir kunlik yoz (to‘liq, 11,467 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:25:51     ✓ tayyor (66 soniya, jami $3.78)
+08-29 14:25:51     ✓ tayyor (66 soniya, jami $3.78)
+08-29 14:25:51  [98/109] Arno (to‘liq, 32,222 belgi)
+08-29 14:25:51  [98/109] Arno (to‘liq, 32,222 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:26:53     ✓ tayyor (62 soniya, jami $3.80)
+08-29 14:26:53     ✓ tayyor (62 soniya, jami $3.80)
+08-29 14:26:53  [99/109] Jayhun ustida bulutlar (kesma, 46,991 belgi)
+08-29 14:26:53  [99/109] Jayhun ustida bulutlar (kesma, 46,991 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:28:14     ✓ tayyor (81 soniya, jami $3.84)
+08-29 14:28:14     ✓ tayyor (81 soniya, jami $3.84)
+08-29 14:28:14  [100/109] 0099 raqamli yolg‘onchi (kesma, 52,850 belgi)
+08-29 14:28:14  [100/109] 0099 raqamli yolg‘onchi (kesma, 52,850 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:29:24     ✓ tayyor (70 soniya, jami $3.88)
+08-29 14:29:24     ✓ tayyor (70 soniya, jami $3.88)
+08-29 14:29:24  [101/109] Kavkaz asiri (to‘liq, 55,620 belgi)
+08-29 14:29:24  [101/109] Kavkaz asiri (to‘liq, 55,620 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:30:36     ✓ tayyor (71 soniya, jami $3.91)
+08-29 14:30:36     ✓ tayyor (71 soniya, jami $3.91)
+08-29 14:30:36  [102/109] Go‘zal xulqlar (kesma, 65,723 belgi)
+08-29 14:30:36  [102/109] Go‘zal xulqlar (kesma, 65,723 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:31:56     ✓ tayyor (80 soniya, jami $3.95)
+08-29 14:31:56     ✓ tayyor (80 soniya, jami $3.95)
+08-29 14:31:56  [103/109] Bola va pul (kesma, 77,487 belgi)
+08-29 14:31:56  [103/109] Bola va pul (kesma, 77,487 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:33:06     ✓ tayyor (71 soniya, jami $4.00)
+08-29 14:33:06     ✓ tayyor (71 soniya, jami $4.00)
+08-29 14:33:06  [104/109] Maugli (kesma, 95,532 belgi)
+08-29 14:33:06  [104/109] Maugli (kesma, 95,532 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:34:16     ✓ tayyor (70 soniya, jami $4.05)
+08-29 14:34:16     ✓ tayyor (70 soniya, jami $4.05)
+08-29 14:34:16  [105/109] Bolalik xotiralarim (kesma, 95,725 belgi)
+08-29 14:34:16  [105/109] Bolalik xotiralarim (kesma, 95,725 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:35:31     · 1-urinish: 2 ta kamchilik (kirill harfi: 'A) Yеr kurrasining '...)
+08-29 14:35:31     · 1-urinish: 2 ta kamchilik (kirill harfi: 'A) Yеr kurrasining '...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:36:52     ✓ tayyor (155 soniya, jami $4.16)
+08-29 14:36:52     ✓ tayyor (155 soniya, jami $4.16)
+08-29 14:36:52  [106/109] Zulmat ichra nur (kesma, 95,867 belgi)
+08-29 14:36:52  [106/109] Zulmat ichra nur (kesma, 95,867 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:38:26     ✓ tayyor (95 soniya, jami $4.21)
+08-29 14:38:26     ✓ tayyor (95 soniya, jami $4.21)
+08-29 14:38:26  [107/109] Shaytonni tutgan Shertoy (kesma, 96,375 belgi)
+08-29 14:38:26  [107/109] Shaytonni tutgan Shertoy (kesma, 96,375 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:39:31     ✓ tayyor (65 soniya, jami $4.26)
+08-29 14:39:31     ✓ tayyor (65 soniya, jami $4.26)
+08-29 14:39:31  [108/109] Sariq devni minib (kesma, 96,585 belgi)
+08-29 14:39:31  [108/109] Sariq devni minib (kesma, 96,585 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:40:48     ✓ tayyor (77 soniya, jami $4.31)
+08-29 14:40:48     ✓ tayyor (77 soniya, jami $4.31)
+08-29 14:40:48  [109/109] Kapitan Vrungelning sarguzashtlari (kesma, 97,687 belgi)
+08-29 14:40:48  [109/109] Kapitan Vrungelning sarguzashtlari (kesma, 97,687 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+08-29 14:42:02     ✓ tayyor (73 soniya, jami $4.36)
+08-29 14:42:02     ✓ tayyor (73 soniya, jami $4.36)
+
+08-29 14:42:02  YAKUN: 102 ta tayyor, 7 ta chiqmadi. Sarflandi: $4.36 (kirish 3,329,562, chiqish 496,006 token)
+08-29 14:42:02  YAKUN: 102 ta tayyor, 7 ta chiqmadi. Sarflandi: $4.36 (kirish 3,329,562, chiqish 496,006 token)
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x10c71a850>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x10c798820>, 7549.187520166)])']
+connector: <aiohttp.connector.TCPConnector object at 0x10c71ad30>

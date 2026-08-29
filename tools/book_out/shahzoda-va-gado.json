@@ -1,0 +1,446 @@
+{
+ "title": "Shahzoda va gado",
+ "author": "Mark Tven",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "do‘stlik",
+   "adolat",
+   "tenglik",
+   "mehribonlik"
+  ],
+  "theme": "Tashqi ko‘rinish aldamchi: kiyim insonning qadr-qimmatini belgilamaydi. Adolatli hukmdor elining dardini o‘zi his etmog‘i lozim.",
+  "summary": "Londonda bir kunda gadoy Tom Kenti va shahzoda Eduard dunyoga keladi. Yillar o‘tib, ular tasodifan uchrashib, kiyimlarini almashtirishadi. Shahzoda gadoy kiyimida saroydan quviladi, Tom esa shahzoda o‘rnida saroyda qoladi. Eduard oddiy xalqning og‘ir turmushini, adolatsiz qonunlar azobini o‘z boshidan kechiradi. Unga sodiq ritsar Mayls Gendon yordam beradi. Oxir-oqibat Eduard toj kiyish marosimida o‘z taxtini qaytarib oladi va xalqqa shafqatli, adolatli qirol bo‘ladi.",
+  "characters": "Eduard Tyudor – ingliz shahzodasi, halol va shafqatli. Tom Kenti – kambag‘al gadoy bola, aqlli va mehribon. Mayls Gendon – Eduardga yordam bergan sodiq ritsar.",
+  "conclusion": "Asar bolani insonlarni kiyimiga qarab baholamaslikka, har qanday vaziyatda halol va rahmdil bo‘lishga o‘rgatadi. Xalqning dardini tushunish va adolatli bo‘lish oliy fazilat ekanini ko‘rsatadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, o‘ylantiruvchi, ta’sirli",
+  "for_whom": "Tarixiy sarguzashtlarni, adolat va mardlik haqidagi qiziqarli voqealarni yaxshi ko‘radigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom Kenti qaysi joyda tug‘ilib o‘sgan edi?",
+   "options": [
+    "A) Chiqindilar hovlisida",
+    "B) Qirol saroyida",
+    "C) Dengiz bo‘yida",
+    "D) Katta qishloqda"
+   ],
+   "answer": "A) Chiqindilar hovlisida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tomga kitob o‘qish va yozishni kim o‘rgatgan edi?",
+   "options": [
+    "A) Ruhoniy Endryu",
+    "B) Otasi Jon",
+    "C) Shahzoda Eduard",
+    "D) Opasi Nen"
+   ],
+   "answer": "A) Ruhoniy Endryu"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom saroy darvozasi oldida kimni ko‘rishni orzu qilardi?",
+   "options": [
+    "A) Haqiqiy shahzodani",
+    "B) Boy savdogarni",
+    "C) Qadimiy ritsarni",
+    "D) Sehrgar cholni"
+   ],
+   "answer": "A) Haqiqiy shahzodani"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eduard va Tom kiyimlarini almashtirgach, qayerga borib qarashdi?",
+   "options": [
+    "A) Tosh oyna oldiga",
+    "B) Daryo bo‘yiga",
+    "C) Saroy hovlisiga",
+    "D) Katta ko‘chaga"
+   ],
+   "answer": "A) Tosh oyna oldiga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tom va Eduard uchrashganda qanday voqealar ketma-ket yuz berdi?",
+   "options": [
+    "A) Suhbatlashishdi, kiyim almashtirishdi, Eduard ko‘chaga chiqdi",
+    "B) Urishishdi, soqchi keldi, Tom qochdi",
+    "C) Ovqatlanishdi, daryoga ketishdi, uxlashdi",
+    "D) Kiyim almashtirishdi, ruhoniy keldi, saroydan qochishdi"
+   ],
+   "answer": "A) Suhbatlashishdi, kiyim almashtirishdi, Eduard ko‘chaga chiqdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Eduard ko‘chadagi soqchini jazolamoqchi bo‘lib nega tashqariga otildi?",
+   "options": [
+    "A) Soqchi Tomni ranjitgani uchun",
+    "B) O‘zi ko‘chada o‘ynamoqchi bo‘lgani uchun",
+    "C) Tomning kiyimini qaytarmoqchi edi",
+    "D) Otasiga xabar bermoqchi edi"
+   ],
+   "answer": "A) Soqchi Tomni ranjitgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tom saroyda o‘zini yo‘qotib qo‘yganida qirol nima deb o‘yladi?",
+   "options": [
+    "A) O‘g‘lim vaqtincha aqldan ozibdi",
+    "B) Bu bola mening o‘g‘lim emas",
+    "C) U xizmatkor bo‘lishni xohlayapti",
+    "D) U dushmanlar ayg‘oqchisi"
+   ],
+   "answer": "A) O‘g‘lim vaqtincha aqldan ozibdi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tomning qirol huzurida o‘zini halol tutishi qanday sifatni ko‘rsatadi?",
+   "options": [
+    "A) Kamtarlik va to‘g‘rilikni",
+    "B) Qo‘rqoqlik va nodonlikni",
+    "C) Takabburlik va maqtanchoqlikni",
+    "D) Bepervolik va loqaydlikni"
+   ],
+   "answer": "A) Kamtarlik va to‘g‘rilikni"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif shahzodaning gado kiyimidagi holatini tasvirlaganda nimani his qilasiz?",
+   "options": [
+    "A) Shahzodaga achinish va hamdardlik",
+    "B) Uning ustidan kulish kayfiyati",
+    "C) Qo‘rquv va vahima tuyg‘usi",
+    "D) Muhabbat va xursandchilik"
+   ],
+   "answer": "A) Shahzodaga achinish va hamdardlik"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif ikkala bolaning o‘xshashligini tasvirlab nimani ta’kidlaydi?",
+   "options": [
+    "A) Insonlar tabiatan teng yaralganini",
+    "B) Boylar har doim ustunligini",
+    "C) Kiyim insonni mutlaqo o‘zgartirishini",
+    "D) Kambag‘allar baxtli yashashini"
+   ],
+   "answer": "A) Insonlar tabiatan teng yaralganini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eduardni ko‘chada qiyin ahvoldan kim qutqarib qoldi?",
+   "options": [
+    "A) Mayls Gendon",
+    "B) Jon Kenti",
+    "C) Ruhoniy Endryu",
+    "D) Saroy soqchisi"
+   ],
+   "answer": "A) Mayls Gendon"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom saroyda qirol sifatida birinchi bo‘lib qanday qaror chiqardi?",
+   "options": [
+    "A) Asirlarga shafqat qilib ozod etdi",
+    "B) Soliqlarni ikki baravar oshirdi",
+    "C) Yangi saroy qurishni buyurdi",
+    "D) Qo‘shni mamlakatga urush ochdi"
+   ],
+   "answer": "A) Asirlarga shafqat qilib ozod etdi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eduard o‘g‘rilar va sayoqlar orasida o‘zini kim deb tanishtirdi?",
+   "options": [
+    "A) Angliya qiroli deb",
+    "B) Kambag‘al gadoy deb",
+    "C) Oddiy askar deb",
+    "D) Savdogar o‘g‘li deb"
+   ],
+   "answer": "A) Angliya qiroli deb"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eduardni o‘g‘rilikda ayblashganda Mayls uni qayerga olib bordi?",
+   "options": [
+    "A) Sudya huzuriga",
+    "B) Qirol saroyiga",
+    "C) Daryo bo‘yiga",
+    "D) Monastir ichiga"
+   ],
+   "answer": "A) Sudya huzuriga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Eduardning sarguzashtlaridagi voqealar ketma-ketligi qaysi javobda to‘g‘ri berilgan?",
+   "options": [
+    "A) Sayoqlarga uchrash, dehqonnikida ishlash, turmaga tushish",
+    "B) Turmaga tushish, saroyga qaytish, dehqonnikida ishlash",
+    "C) Mayls bilan uchrashish, saroyda yashash, qochish",
+    "D) Dehqonnikida ishlash, qirol bo‘lish, turmaga tushish"
+   ],
+   "answer": "A) Sayoqlarga uchrash, dehqonnikida ishlash, turmaga tushish"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mayls Gendon shahzodaga yordam berishda qanday bosqichlarni o‘tdi?",
+   "options": [
+    "A) Himoya qildi, ovqatlantirdi, jazoni o‘rniga oldi",
+    "B) Urushdi, saroyga tashlab ketdi, qochdi",
+    "C) Jazoladi, soqchiga topshirdi, qochib ketdi",
+    "D) Saroyga olib bordi, tashlab ketdi, izladi"
+   ],
+   "answer": "A) Himoya qildi, ovqatlantirdi, jazoni o‘rniga oldi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Eduard adolatsiz qonunlarni ko‘rib nimaga ahd qildi?",
+   "options": [
+    "A) Taxtga qaytgach qonunlarni yumshatishga",
+    "B) Mamlakatdan butunlay qochib ketishga",
+    "C) Hammani turmaga qamayverishga",
+    "D) Qonunlarga umuman aralashmaslikka"
+   ],
+   "answer": "A) Taxtga qaytgach qonunlarni yumshatishga"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mayls Gendon nega Eduardning barcha talablarini bajardi?",
+   "options": [
+    "A) Bolaga rahm qilib, ko‘nglini ko‘tardi",
+    "B) Boladan qo‘rqqani uchun shunday qildi",
+    "C) Qirol unga pul bergani uchun",
+    "D) O‘zi ham shahzoda bo‘lgani uchun"
+   ],
+   "answer": "A) Bolaga rahm qilib, ko‘nglini ko‘tardi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mayls Gendonning bola uchun kaltak yeyishi qanday amaliyot?",
+   "options": [
+    "A) Oliyjanoblik va fidoyilik namunasi",
+    "B) Qo‘rqoqlik va noxolislik alomati",
+    "C) Nodonlik va befoyda harakat",
+    "D) O‘zini ko‘rsatishga urinish"
+   ],
+   "answer": "A) Oliyjanoblik va fidoyilik namunasi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Eduardning dehqon ayolnikidagi mehnatini qanday tasvirlaydi?",
+   "options": [
+    "A) Samimiy va kulgili tarzda",
+    "B) Qorong‘u va g‘amgin tarzda",
+    "C) Qo‘rqinchli va vahimali tarzda",
+    "D) Kesatiq va nafrat bilan"
+   ],
+   "answer": "A) Samimiy va kulgili tarzda"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gendon-xollga qaytgan Maylsni ukasi Gyu qanday kutib aldi?",
+   "options": [
+    "A) Uni tanishdan bosh tortdi",
+    "B) Quvonch bilan quchoqladi",
+    "C) Katta ziyofat uyushtirdi",
+    "D) Otasining oldiga boshladi"
+   ],
+   "answer": "A) Uni tanishdan bosh tortdi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Toj kiyish marosimi qaysi ibodatxonada bo‘lib o‘tayotgan edi?",
+   "options": [
+    "A) Vestminster ibodatxonasida",
+    "B) Tauer qal’asida",
+    "C) Smitfild cherkovida",
+    "D) Sautvork ibodatxonasida"
+   ],
+   "answer": "A) Vestminster ibodatxonasida"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eduard o‘zining haqiqiy qirol ekanini qanday isbotladi?",
+   "options": [
+    "A) Buyuk muhr joyini aytib berdi",
+    "B) Yonidagi qilichni ko‘rsatdi",
+    "C) Onasining ismini aytdi",
+    "D) Tana belgisini ko‘rsatdi"
+   ],
+   "answer": "A) Buyuk muhr joyini aytib berdi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eduard taxtga o‘tirgach Tom Kentiga qanday unvon berdi?",
+   "options": [
+    "A) Qirolning asrandisi unvonini",
+    "B) Bosh vazir unvonini",
+    "C) Lord-protektor unvonini",
+    "D) Saroy soqchisi unvonini"
+   ],
+   "answer": "A) Qirolning asrandisi unvonini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Yechim qismida qahramonlar taqdiri qanday yakun topdi?",
+   "options": [
+    "A) Eduard qirol bo‘ldi, Mayls graflik oldi",
+    "B) Tom qirol bo‘lib qoldi, Eduard qochdi",
+    "C) Mayls turmada qoldi, Gyu qirol bo‘ldi",
+    "D) Eduard va Tom ko‘chada gadoy bo‘ldi"
+   ],
+   "answer": "A) Eduard qirol bo‘ldi, Mayls graflik oldi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tom toj kiyish marosimida haqiqiy shahzodani ko‘rib nega quvondi?",
+   "options": [
+    "A) Asllik va adolat qarar topgani uchun",
+    "B) Saroydan ketishni xohlamagani uchun",
+    "C) Xalqdan qo‘rqqani uchun",
+    "D) Toj unga og‘irlik qilgani uchun"
+   ],
+   "answer": "A) Asllik va adolat qarar topgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Eduard o‘z hukumronligi davrida nega har doim shafqatli bo‘ldi?",
+   "options": [
+    "A) Xalqning azobini shaxsan ko‘rgani uchun",
+    "B) Otasi shunday vasiyat qilgani uchun",
+    "C) Tom unga shunday maslahat bergani uchun",
+    "D) Qonunlar shuni talab qilgani uchun"
+   ],
+   "answer": "A) Xalqning azobini shaxsan ko‘rgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tom Kentining taxtni chinakam egalariga topshirishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, halollik va mardlik ko‘rsatdi",
+    "B) Noto‘g‘ri, taxtda qolishi kerak edi",
+    "C) Noto‘g‘ri, boylikni olib qochishi kerak edi",
+    "D) Farqi yo‘q, ikkalasi ham bir xil"
+   ],
+   "answer": "A) To‘g‘ri, halollik va mardlik ko‘rsatdi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Eduardning boshidan kechirgan qiyinchiliklari unga nima berdi?",
+   "options": [
+    "A) Hayotiy saboq va elga hamdarlik",
+    "B) Nafrat va barcha odamlardan o‘ch",
+    "C) Qo‘rquv va saroydan qochish istagi",
+    "D) Kasallik va kuchsizlik"
+   ],
+   "answer": "A) Hayotiy saboq va elga hamdarlik"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Xotimadagi qirolning \"Zulmni men bilaman, xalqim biladi\" gapi nimani anglatadi?",
+   "options": [
+    "A) Xalq dardini his qilgan hukmdor sifatini",
+    "B) Qirolning faqat o‘zini o‘ylashini",
+    "C) Xalqning yetarlicha mehnat qilmasligini",
+    "D) Saroy a’yonlarining donoligini"
+   ],
+   "answer": "A) Xalq dardini his qilgan hukmdor sifatini"
+  }
+ ]
+}

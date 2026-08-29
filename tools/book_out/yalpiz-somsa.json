@@ -1,0 +1,28 @@
+{
+ "title": "Yalpiz somsa",
+ "author": "O‘tkir Hoshimov",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9",
+  "topics": [
+   "tabiat",
+   "do‘stlik",
+   "mehnatsevarlik",
+   "mehmondo‘stlik",
+   "saxovat"
+  ],
+  "theme": "O‘z mehnati bilan erishilgan narsaning qadri, do‘stlik, samimiy mehmondo‘stlik hamda yaxshilikni boshqalar bilan baham ko‘rish.",
+  "summary": "Toshkentlik Feruza dadasi va oyisi bilan Parkentdagi Karim amakinikiga mehmon bo‘lib boradi. U yerda amakining qizlari Fotima va Zuhra bilan tanishib, soy bo‘yida gul va yalpiz teradi. Dastlab yalpiz o‘rniga yovvoyi beda terib olgan Feruzaga qishloq qizlari to‘g‘ri yalpizni ajratishni o‘rgatishadi. Terilgan yalpizdan tandirda maza somsa pishiriladi. Shaharga qaytayotganda Fotima va Zuhra Feruzaga bog‘chadagi o‘rtoqlariga ulashishi uchun yalpiz somsa berib yuborishadi.",
+  "characters": "Feruza — shaharlik, tabiatga va yangi bilimlarga qiziquvchan qizaloq. Fotima va Zuhra — Parkentlik mehribon, zexnli va mehmondo‘st egizak qizlar. Feruzaning ota-onasi — qizini tabiat va do‘stlik qadriyatlariga o‘rgatuvchi mehribon insonlar.",
+  "conclusion": "Bu asar bolaga tabiat ne'matlarini tanishni va o‘z mehnati bilan qilingan ish har doim quvonch keltirishini ko‘rsatadi. Bola kitobdan mehmondo‘stlik, samimiyat hamda qo‘lidagi bor yaxshi narsani do‘stlari bilan ulashish kabi go‘zal fazilatlarni o‘rganadi.",
+  "difficulty": "oson",
+  "mood": "samimiy, iliq va quvonchli",
+  "for_whom": "Tabiatni, sayohatlarni va yangi narsalarni o‘rganishni yaxshi ko‘radigan, do‘stlashishni va ulashishni xohlaydigan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Feruza o‘zi tergan yalpizdan pishirilgan somsani yeb, uning juda shirinligini his qildi. Sen ham o‘z mehnating bilan biror ish qilib, natijasidan quvonganmisan? Fotima va Zuhraninng Feruzaga ko‘rsatgan mehmondo‘stligi va bog‘chadagi o‘rtoqlariga somsa berib yuborgan saxovati senga qanday ma'qul bo‘ldi?"
+}

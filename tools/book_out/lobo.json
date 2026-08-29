@@ -1,0 +1,287 @@
+{
+ "title": "Lobo",
+ "author": "Ernest Seton-Tompson",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "tabiat",
+   "hayvonlar dunyosi",
+   "sadoqat",
+   "jasorat",
+   "erkinlik"
+  ],
+  "theme": "Jonivorlar dunyosidagi sadoqat, g‘urur va muhabbat tuyg‘usi inson hukmronligidan ustun turuvchi yuksak qadriyatdir.",
+  "summary": "Yangi Meksikadagi Kurrumpo yaylovida Lobo laqabli ayyor va kuchli qari bo‘ri boshchiligidagi gala podalarga qiron keltirib yuradi. Cho‘ponlar va tajribali ovchilar, jumladan texaslik Tennerey va kanadalik ovchi, uni tutish yoki zaharlash uchun har qancha urinishmasin, Lobo barcha hiylalarga chap beradi. Keyinchalik asar muallifi ham bo‘rini tutish uchun harakat boshlaydi. U Loboning urg‘ochi sherigi Blankani tutib, o‘ldiradi. Juftidan ayrilgan Lobo g‘am-anduhga batamom cho‘kadi va Blankaning izidan borib, ehtiyotsizlik natijasida qopqonga tushadi. Qo‘lga olingan Lobo ovqat yemasdan, erkinlik va juftisiz yashashni xohlamay, g‘urur bilan olamdan o‘tadi.",
+  "characters": "Lobo — Kurrumpo vodiysining hukmdori, ayyor va mag‘rur qari bo‘ri; Blanka — Loboning sevikli urg‘ochi jufti, oq bo‘ri; Muallif — bo‘rini tutish uchun kelgan tajribali ovchi; Tennerey — texaslik mashhur bo‘ri ovchisi.",
+  "conclusion": "Asar bolalarga tabiat va jonivorlarga nisbatan hurmat bilan qarashni, ulardagi sadoqat, g‘urur va muhabbat kabi tuyg‘ularning yuksakligini o‘rgatadi. Shuningdek, inson tabiat ustidan shanchaki shafqatsizlarcha hukmronlik qilmasligi kerakligini anglatadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Hayvonlar hayoti, tabiat sirlari va ta’sirli sarguzashtlarga qiziqadigan, qahramonlarning kechinmalarini his qila oladigan o‘quvchilar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kurrumpo yaylovida hukm surgan qari bo‘ri kim edi?",
+   "options": [
+    "A) Lobo",
+    "B) Blanka",
+    "C) Bingo"
+   ],
+   "answer": "A) Lobo"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Loboning galasida jami nechta bo‘ri bor edi?",
+   "options": [
+    "A) Yettita",
+    "B) Beshta",
+    "C) O‘nta"
+   ],
+   "answer": "B) Beshta"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ovchi Tennerey nimaga ishona olmadi?",
+   "options": [
+    "A) O‘z itlarining yutqazishiga",
+    "B) Otining tezligiga",
+    "C) Podachilarning yordamiga"
+   ],
+   "answer": "A) O‘z itlarining yutqazishiga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Lobo nega odam qo‘li teggan go‘shtni yemaydi?",
+   "options": [
+    "A) Xavfli hidni sezgani uchun",
+    "B) Faqat yangi o‘tni yoqtirgani uchun",
+    "C) Odamlardan qo‘rqmagani uchun"
+   ],
+   "answer": "A) Xavfli hidni sezgani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega bo‘rilar galasi odamni ko‘rganda qochib qolardi?",
+   "options": [
+    "A) Miltiqdan xavfsirashgani uchun",
+    "B) Zerikib qolishgani uchun",
+    "C) Shovqindan qo‘rqgani uchun"
+   ],
+   "answer": "A) Miltiqdan xavfsirashgani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Loboning faqat o‘zlari tutgan o‘ljani yeyishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, hayotini asrab qoldi",
+    "B) Noto‘g‘ri, och qolishi kerak edi",
+    "C) Boshqalarga baribir edi"
+   ],
+   "answer": "A) To‘g‘ri, hayotini asrab qoldi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Loboni «bahaybat va ayyor bo‘ri» deb tasvirlaydi.",
+   "options": [
+    "A) Bo‘rining qudratini ko‘rsatish uchun",
+    "B) Uni yomonlab ko‘rsatish uchun",
+    "C) Cho‘ponlarni maqtash uchun"
+   ],
+   "answer": "A) Bo‘rining qudratini ko‘rsatish uchun"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif zaharli pishloq bo‘laklarini nimada tayyorladi?",
+   "options": [
+    "A) Chinni idishda",
+    "B) Yog‘och qutida",
+    "C) Temir qozonda"
+   ],
+   "answer": "A) Chinni idishda"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lobo zaharli pishloqlarni nima qilib ketgan edi?",
+   "options": [
+    "A) Tezagiga ko‘mib ketgan edi",
+    "B) Hammasini yeb qo‘ygan edi",
+    "C) Suvga oqizib yuborgan edi"
+   ],
+   "answer": "A) Tezagiga ko‘mib ketgan edi"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qopqonlar qanday shaklda joylashtirib chiqildi?",
+   "options": [
+    "A) «N» harfi shaklida",
+    "B) Aylana shaklida",
+    "C) To‘rtburchak shaklida"
+   ],
+   "answer": "A) «N» harfi shaklida"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif tuzoq qo‘ygach, qanday ketma-ketlikda natijani tekshirdi?",
+   "options": [
+    "A) Izlarni kuzatib, pishloqlarni topdi",
+    "B) Darhol bo‘rini otib tashladi",
+    "C) Fermada kutib o‘tirdi"
+   ],
+   "answer": "A) Izlarni kuzatib, pishloqlarni topdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Lobo birinchi bo‘lib serkalarni bo‘g‘izlab tashladi?",
+   "options": [
+    "A) Qo‘ylar tarqab ketishi uchun",
+    "B) Serka go‘shti shirinligi uchun",
+    "C) Cho‘ponlarni qo‘rqitish uchun"
+   ],
+   "answer": "A) Qo‘ylar tarqab ketishi uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Lobo qopqonlarni orqaga chekinib, qanday qilib buzdi?",
+   "options": [
+    "A) Tuproq otib yopib ketdi",
+    "B) Tishlari bilan tishlab sindirdi",
+    "C) Suv quyib tashladi"
+   ],
+   "answer": "A) Tuproq otib yopib ketdi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Loboning muallif nayranglaridan qutulib ketishiga qanday baho berasan?",
+   "options": [
+    "A) Zukkolik va yuqori sezgirlik",
+    "B) Shunchaki omad kelishi",
+    "C) Qo‘rqoqlik va zaiflik"
+   ],
+   "answer": "A) Zukkolik va yuqori sezgirlik"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Loboning galasida baridan oldinda yurgan urg‘ochi kim edi?",
+   "options": [
+    "A) Blanka",
+    "B) Yunona",
+    "C) Bingo"
+   ],
+   "answer": "A) Blanka"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lobo qopqonga tushgach, nechta oyog‘i ushlanib qoldi?",
+   "options": [
+    "A) To‘rttala oyog‘i",
+    "B) Bitta oyog‘i",
+    "C) Ikkita oyog‘i"
+   ],
+   "answer": "A) To‘rttala oyog‘i"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Fermaga olib kelingach, Lobo taomga qanday munosabat bildirdi?",
+   "options": [
+    "A) Qayrilib ham qaramadi",
+    "B) Ishtaha bilan yedi",
+    "C) Suvni ichib yubordi"
+   ],
+   "answer": "A) Qayrilib ham qaramadi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Loboning halok bo‘lishiga olib kelgan voqealar ketma-ketligi qaysi?",
+   "options": [
+    "A) Blankaning o‘limi va izlash",
+    "B) Miltiqdan otilishi va qochishi",
+    "C) Ovchilar bilan do‘stlashishi"
+   ],
+   "answer": "A) Blankaning o‘limi va izlash"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Lobo tutqunlikda nega yashashni xohlamadi va o‘ldi?",
+   "options": [
+    "A) Erk va juftidan ayrilgani uchun",
+    "B) Odamlardan juda qo‘rqqani uchun",
+    "C) Zanjir judayam og‘irligi uchun"
+   ],
+   "answer": "A) Erk va juftidan ayrilgani uchun"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Loboning o‘limini «osoyishtagina yotibdi» deb qanday ifodalagan?",
+   "options": [
+    "A) Mag‘rur o‘lim va erkinlik",
+    "B) Uyquga ketish holati",
+    "C) Zaiflik va mag‘lubiyat"
+   ],
+   "answer": "A) Mag‘rur o‘lim va erkinlik"
+  }
+ ]
+}

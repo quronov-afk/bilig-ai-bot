@@ -1,0 +1,417 @@
+{
+ "title": "Yovvoyi yo‘rg‘a",
+ "author": "Ernest Seton-Tompson",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "tabiat",
+   "hayvonlar",
+   "do‘stlik",
+   "sadoqat",
+   "jasorat"
+  ],
+  "theme": "Muallif hayvonlar hayotini haqqoniy va mehr bilan tasvirlab, insonga tabiatni asrash, jonivorlarga shafqat qilish va ularning ham ruhiyati borligini anglash sabog‘ini beradi.",
+  "summary": "Asarda turlicha jonivorlar (tulki Domino, bo‘ri Lobo, ayiqcha Jonni, it Chink va boshqalar) hayoti hamda sarguzashtlari badiiy va haqqoniy aks ettirilgan. Domino oilasi bilan yovvoyi tabiatda yashab, turli xavf-xatarlarga qarshi kurashadi. Bo‘ri Lobo ozodlik hamda mardlik ramzi sifatida gavdalanadi. Kichik it Chink esa ochlikka qaramay xo‘jayinining chodirini va molini sadoqat bilan qo‘riqlaydi. Muallif jonivorlarning ichki dunyosi, quvonchi hamda qayg‘usini xolisona ochib beradi.",
+  "characters": "Domino — zukko va abjir qo‘ng‘ir tulki; Lobo — mag‘rur va aqlli bo‘rilar sarvari; Chink — xo‘jayiniga sadoqatli kichik it; Jonni — mehri va taqdiri ayanchli ayiqcha.",
+  "conclusion": "Asar bolalarni tabiatni sevishga, hayvonlarga nisbatan shafqatli va mas'uliyatli bo‘lishga o‘rgatadi. Sadoqat, halollik va matonat kabi insoniy fazilatlarning qadrini anglatadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Hayvonlar va tabiat haqida o‘qishni yaxshi ko‘radigan, jonivorlar dunyosiga qiziqadigan hamda ularning taqdiriga hamdard bo‘la oladigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Seton-Tompson necha yoshida oilasi bilan Kanadaga ko‘chib o‘tgan?",
+   "options": [
+    "A) Olti yoshida",
+    "B) O‘n yoshida",
+    "C) Sakkiz yoshida"
+   ],
+   "answer": "A) Olti yoshida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yozuvchi bolaligida qaysi kitobni sotib olish uchun pul yig‘gan?",
+   "options": [
+    "A) «Kanada qushlari»",
+    "B) «O‘rmon kitobi»",
+    "C) «Yovvoyi bo‘rilar»"
+   ],
+   "answer": "A) «Kanada qushlari»"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tumshug‘ida qora tasmasi bor abjir tulkiga qanday nom berildi?",
+   "options": [
+    "A) Domino",
+    "B) Chinoq",
+    "C) Renjer"
+   ],
+   "answer": "A) Domino"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abner Juks tulkilar o‘yinini qayerdan kuzatib turgan edi?",
+   "options": [
+    "A) Adirdagi daraxt ustidan",
+    "B) Uyning tomidan",
+    "C) Suv bo‘yidan"
+   ],
+   "answer": "A) Adirdagi daraxt ustidan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Seton-Tompson kitob uchun pul yig‘ishda qaysi ishlarni qildi?",
+   "options": [
+    "A) Quyon va toshlarni sotdi",
+    "B) Baliq tutib sotdi",
+    "C) Mevalarni bozorga olib bordi"
+   ],
+   "answer": "A) Quyon va toshlarni sotdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tulkilar onasi bolalarini yangi inga qaysi tartibda ko‘chirdi?",
+   "options": [
+    "A) Avval Dominoni, so‘ng boshqalarini",
+    "B) Avval eng kichik bolasini",
+    "C) Hamma bolalarini birga olib o‘tdi"
+   ],
+   "answer": "A) Avval Dominoni, so‘ng boshqalarini"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tulkilar otasi nega ovqatni to‘g‘ri inga olib kirmadi?",
+   "options": [
+    "A) Bolalari tashqarida o‘ynayotgani uchun",
+    "B) Ovqat juda og‘ir bo‘lgani uchun",
+    "C) In og‘zi tor bo‘lgani uchun"
+   ],
+   "answer": "A) Bolalari tashqarida o‘ynayotgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bentonning o‘g‘illari nega tulkilar inini poylab borishdi?",
+   "options": [
+    "A) Tulki ularning tovuqlarini o‘g‘irlagani uchun",
+    "B) Tulkini uyda boqmoqchi bo‘lishgani uchun",
+    "C) Tulkilar o‘yinini tomosha qilish uchun"
+   ],
+   "answer": "A) Tulki ularning tovuqlarini o‘g‘irlagani uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tulkilar otasining xavfdan ogohlantirib ovoz berishi qanday sifat?",
+   "options": [
+    "A) Mas'uliyatli va g‘amxo‘r otalik",
+    "B) Qo‘rqoqlik va befarqlik",
+    "C) Shunchaki beg‘amlik"
+   ],
+   "answer": "A) Mas'uliyatli va g‘amxo‘r otalik"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif baxt qushining qo‘shig‘ini eshitib yig‘laganini qanday tasvirlaydi?",
+   "options": [
+    "A) Qalbining tub-tubigacha to‘lqinlangani bilan",
+    "B) Qor erishidan xursand bo‘lgani bilan",
+    "C) Bahor kelganidan qo‘rqqani bilan"
+   ],
+   "answer": "A) Qalbining tub-tubigacha to‘lqinlangani bilan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Domino qopqonga tushganda qanday qilib ozod bo‘lib ketdi?",
+   "options": [
+    "A) Mo‘ynasidan qisqich sirg‘alib chiqdi",
+    "B) Qopqonning zanjiri uzilib ketdi",
+    "C) Boshqa tulki unga yordam berdi"
+   ],
+   "answer": "A) Mo‘ynasidan qisqich sirg‘alib chiqdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kovboy Jo qaysi jonivorni tutib olishni orzu qilgan edi?",
+   "options": [
+    "A) Qora yovvoyi yo‘rg‘a otni",
+    "B) Ulkan ayiqni",
+    "C) Qarg‘alar yo‘lboshchisini"
+   ],
+   "answer": "A) Qora yovvoyi yo‘rg‘a otni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yan bug‘ularni ko‘rganda ularga qarshi nima qildi?",
+   "options": [
+    "A) Ularning go‘zal o‘yiniga mahliyo bo‘ldi",
+    "B) Darhol ularga miltiq otib o‘ldirdi",
+    "C) Orqasidan quvib tutib oldi"
+   ],
+   "answer": "A) Ularning go‘zal o‘yiniga mahliyo bo‘ldi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘rilar sardori Loboni tutganlarida u lagerda nima qildi?",
+   "options": [
+    "A) Ovqat yemay olis dashtga tikildi",
+    "B) Tinmay uvullab hamma yoqni buzdi",
+    "C) Odamlarga hamla qilib qochdi"
+   ],
+   "answer": "A) Ovqat yemay olis dashtga tikildi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif kuzatuviga ko‘ra itinining simyog‘och oldiga borishi sababi nima?",
+   "options": [
+    "A) Boshqa jonivorlar hididan xabar olish",
+    "B) Suv ichib hordiq chiqarish",
+    "C) Ovqat qoldiqlarini topib yeyish"
+   ],
+   "answer": "A) Boshqa jonivorlar hididan xabar olish"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kaklik jo‘jalarining kamayib ketishiga qanday voqealar sabab bo‘ldi?",
+   "options": [
+    "A) Zaharli go‘sht va qunduz hamlasi",
+    "B) Kuchli sovuq va qor bo‘roni",
+    "C) Ovchilar va tezkor itlar"
+   ],
+   "answer": "A) Zaharli go‘sht va qunduz hamlasi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yan nega bug‘ularni otishni xayoliga ham keltirmadi?",
+   "options": [
+    "A) Ularning erkin parvozidan hayratlangani uchun",
+    "B) O‘qlari tugab qolgani uchun",
+    "C) Bug‘ular juda olisda bo‘lgani uchun"
+   ],
+   "answer": "A) Ularning erkin parvozidan hayratlangani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Lobo tutqunlikda berilgan go‘sht va suvga nega qaramadi?",
+   "options": [
+    "A) Mag‘rurligi va erkinligi poymol bo‘lgani uchun",
+    "B) Ovqatlar zaharli ekanini sezgani uchun",
+    "C) Qorni to‘q bo‘lgani uchun"
+   ],
+   "answer": "A) Mag‘rurligi va erkinligi poymol bo‘lgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Loboning jag‘i bog‘langach tinchlanishi va qarshilik qilmasligini qanday baholaysan?",
+   "options": [
+    "A) Taqdirga tan bergan mag‘rur mardlik",
+    "B) Xo‘jayinga bo‘ysungan ojizlik",
+    "C) Qo‘rqoqlik va holsizlik"
+   ],
+   "answer": "A) Taqdirga tan bergan mag‘rur mardlik"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Loboning ko‘zlarini «sarg‘ish-zangori ko‘zlari yondi» deb nimani ko‘rsatadi?",
+   "options": [
+    "A) Uning yengilmas va o‘jar ruhini",
+    "B) Uning juda qattiq qo‘rqqanini",
+    "C) Uning kasal bo‘lib qolganini"
+   ],
+   "answer": "A) Uning yengilmas va o‘jar ruhini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kichkina Jonni ismli ayiqchaga kim g‘amxo‘rlik qildi?",
+   "options": [
+    "A) Nora ismli irland qiz",
+    "B) Bill Obri ismli tog‘lik",
+    "C) Abner Juks ismli bola"
+   ],
+   "answer": "A) Nora ismli irland qiz"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chink laqabli it necha kun davomida chodirni qo‘riqladi?",
+   "options": [
+    "A) To‘rt kecha-yu to‘rt kunduz",
+    "B) Bir kecha-yu bir kunduz",
+    "C) O‘n kun davomida"
+   ],
+   "answer": "A) To‘rt kecha-yu to‘rt kunduz"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chink och qolganida chodirdagi qaysi yegulikka tegmay dahl qildi?",
+   "options": [
+    "A) Cho‘chqaning to‘sh go‘shtiga",
+    "B) Bir xalta quritilgan mevalarga",
+    "C) Kattakon non bo‘lagiga"
+   ],
+   "answer": "A) Cho‘chqaning to‘sh go‘shtiga"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bill Obri Chinkni shoqoldan qutqarish uchun nima qildi?",
+   "options": [
+    "A) Bog‘ qoidasini buzib shoqolni otdi",
+    "B) Shoqolni tayoq bilan urib haydadi",
+    "C) Chinkni uyiga olib qochdi"
+   ],
+   "answer": "A) Bog‘ qoidasini buzib shoqolni otdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Chink nima uchun och bo‘lsa ham qopdagi go‘shtni yemadi?",
+   "options": [
+    "A) Egasining topshirig‘iga sadoqat saqlagani uchun",
+    "B) Go‘sht aynib qolgani uchun",
+    "C) Qopni ocha olmagani uchun"
+   ],
+   "answer": "A) Egasining topshirig‘iga sadoqat saqlagani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bill Obri miltig‘i musodara qilinishini bilsa ham nega shoqolni otdi?",
+   "options": [
+    "A) Sadoqatli iti Chinkni xalos qilish uchun",
+    "B) Shoqol terisini sotish uchun",
+    "C) Miltig‘ini sinab ko‘rish uchun"
+   ],
+   "answer": "A) Sadoqatli iti Chinkni xalos qilish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Chinkning o‘z postini oxirigacha tark etmasligiga qanday baho berish mumkin?",
+   "options": [
+    "A) Yuksak sadoqat va matonat namunasi",
+    "B) Qo‘rquv tufayli qilingan harakat",
+    "C) Shunchaki ahmoqona qaysarlik"
+   ],
+   "answer": "A) Yuksak sadoqat va matonat namunasi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bill Obrining itini qutqarish uchun jazoni bo‘yniga olishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — sadoqatli do‘stni qutqardi",
+    "B) Noto‘g‘ri — qonunni buzmaslik kerak edi",
+    "C) Noto‘g‘ri — it uchun qiymati yo‘q"
+   ],
+   "answer": "A) To‘g‘ri — sadoqatli do‘stni qutqardi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Chinkning matonatini tasvirlab bolalarda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Jonivorlarga mehr va mas'uliyat tuyg‘usini",
+    "B) Ovchilikka bo‘lgan qiziqishni",
+    "C) Qonunlardan qo‘rqish tuyg‘usini"
+   ],
+   "answer": "A) Jonivorlarga mehr va mas'uliyat tuyg‘usini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif ayiqcha Jonnining taqdirini «g‘arib bo‘lib qoldi» deb tasvirlashdan maqsadi nima?",
+   "options": [
+    "A) Kitobxonda ayiqchaga nisbatan hamdardlik uyg‘otish",
+    "B) Uning harakatchanligini maqtash",
+    "C) O‘rmon hayotini qoralash"
+   ],
+   "answer": "A) Kitobxonda ayiqchaga nisbatan hamdardlik uyg‘otish"
+  }
+ ]
+}

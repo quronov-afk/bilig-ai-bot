@@ -1,0 +1,417 @@
+{
+ "title": "Amir Temur",
+ "author": "Qilichsiz g‘alaba. Qobiljon Shermatov",
+ "genre": "roman",
+ "age_group": "3",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tarix",
+   "jasorat",
+   "adolat",
+   "vatanparvarlik",
+   "davlatsozlik"
+  ],
+  "theme": "Amir Temur adolat, yuksak ma’naviyat va harbiy mahoratga tayanib buyuk saltanat qurgan, ilm va obodonchilikni e’zozlagan ulug‘ jahongirdir.",
+  "summary": "Asarda Amir Temurning 1336-yilda Kesh yaqinidagi Xo‘ja Ilg‘or qishlog‘ida tug‘ilishidan tortib, uning harbiy va siyosiy faoliyati, Movarounnahrni birlashtirishi bayon etiladi. Sohibqironning Dashti Qipchoq, Eron, Shom, Hindiston va Onado‘liga qilgan zafarli yurishlari hamda Anqara jangidagi g‘alabasi atroflicha yoritiladi. Amir Temurning adolat sohibi, ilm-fan va shariat rahnamosi bo‘lgani, shayxlar va ulamolarga hurmati ko‘rsatib beriladi. Shuningdek, 1941-yilda uning Samarqanddagi qabri ochilishi va keyinchalik qayta dafn etilishi bilan bog‘liq voqealar tahlil qilinadi. Muallif sovet va g‘arb tarixchilarining Sohibqironga nisbatan nohaq tuhmatlarini rad etib, haqiqiy adolatli hukmdor siymosini gavdalantiradi.",
+  "characters": "Amir Temur (Sohibqiron, buyuk sarkarda), Muhammad Tarag‘ay (otasi), Shayx Shamsiddin Kulol (piri), Amir Husayn (dastlabki ittifoqchisi), Yildirim Boyazid (Usmoniylar sultoni).",
+  "conclusion": "Ushbu asar o‘quvchida o‘z tarixidan g‘ururlanish, adolat va ilm-fanga hurmat tuyg‘ularini shakllantiradi. Bola qiyinchiliklarga taslim bo‘lmaslik, mardlik va mas’uliyatlilik saboqlarini oladi.",
+  "difficulty": "qiyin",
+  "mood": "o‘ylantiruvchi, g‘ururlik",
+  "for_whom": "Tarixiy voqealar, buyuk shaxslar hayoti va harbiy san’atga qiziqadigan o‘quvchilar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Temur qaysi qishloqda tavallud topgan?",
+   "options": [
+    "A) Xo‘ja Ilg‘or",
+    "B) Zanjir Saroy",
+    "C) Qorasaman"
+   ],
+   "answer": "A) Xo‘ja Ilg‘or"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Temurning otasi kim edi?",
+   "options": [
+    "A) Muhammad Tarag‘ay Bahodir",
+    "B) Amir Hoji Barlos",
+    "C) Amir Qozag‘on"
+   ],
+   "answer": "A) Muhammad Tarag‘ay Bahodir"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temurning piri Shamsiddin Kulol tushni qanday ta’birladi?",
+   "options": [
+    "A) O‘g‘lingiz dunyoni fath etajak",
+    "B) O‘g‘lingiz olim bo‘lajak",
+    "C) O‘g‘lingiz savdogar bo‘lajak"
+   ],
+   "answer": "A) O‘g‘lingiz dunyoni fath etajak"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Temur qaysi urug‘ga mansub edi?",
+   "options": [
+    "A) Barlos",
+    "B) Jaloyir",
+    "C) Oyrat"
+   ],
+   "answer": "A) Barlos"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnga ko‘ra Temurning turk ekanini isbotlovchi manbalarni ajrating.",
+   "options": [
+    "A) Xorijiy va mahalliy tarixlarda",
+    "B) Faqat rus tarixlarda",
+    "C) Faqat afsonalarda"
+   ],
+   "answer": "A) Xorijiy va mahalliy tarixlarda"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Bartold Amir Temur shajarasini soxta deb iddao qilgan?",
+   "options": [
+    "A) Ma’naviyatni sindirish niyatida",
+    "B) Haqiqatni ochish uchun",
+    "C) Kitobini sotish uchun"
+   ],
+   "answer": "A) Ma’naviyatni sindirish niyatida"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Amir Husayn Soli saroyga chekinishga qaror qildi?",
+   "options": [
+    "A) Dushmandan jon saqlash uchun",
+    "B) Temurga yordam berishga",
+    "C) Shaharni obod qilishga"
+   ],
+   "answer": "A) Dushmandan jon saqlash uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Temurning Loy jangidan keyin chekinmasligi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, mardlik ko‘rsatdi",
+    "B) Noto‘g‘ri, qochishi kerak edi",
+    "C) Ahamiyatsiz qaror edi"
+   ],
+   "answer": "A) To‘g‘ri, mardlik ko‘rsatdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Yaxshi odam yurt tuzar maqolini qaysi maqsadda keltirgan?",
+   "options": [
+    "A) Temurning bunyodkorligini ko‘rsatishga",
+    "B) Mo‘g‘ullarni maqtash uchun",
+    "C) Qo‘shin sonini bildirishga"
+   ],
+   "answer": "A) Temurning bunyodkorligini ko‘rsatishga"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Amir Temur uzugidagi Rosti-rusti iborasini qanday baholaydi?",
+   "options": [
+    "A) Adolat shiorining isboti deb",
+    "B) Oddiy bezak so‘zi deb",
+    "C) Qo‘rqinchli belgi deb"
+   ],
+   "answer": "A) Adolat shiorining isboti deb"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Temur qaysi oyat sabab Hindistonga yurish qildi?",
+   "options": [
+    "A) Kofirlarga qarshi jang qil",
+    "B) Sabr qiluvchilar bilan bo‘l",
+    "C) Yurtingizni obod qiling"
+   ],
+   "answer": "A) Kofirlarga qarshi jang qil"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Umarshayx Bahodir necha yoshida shahid bo‘ldi?",
+   "options": [
+    "A) Qirq yoshida",
+    "B) O‘ttiz yoshida",
+    "C) Ellik yoshida"
+   ],
+   "answer": "A) Qirq yoshida"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anqara jangida Usmoniylar sultoni kim edi?",
+   "options": [
+    "A) Yildirim Boyazid",
+    "B) Sulton Salim",
+    "C) Sulton Sulaymon"
+   ],
+   "answer": "A) Yildirim Boyazid"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temur qo‘shinining Anqara jangidagi soni qancha edi?",
+   "options": [
+    "A) Bir yuz oltmish ming",
+    "B) Yetmish ming",
+    "C) Ellik ming"
+   ],
+   "answer": "A) Bir yuz oltmish ming"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Temurning Onado‘liga qilgan yurishidagi voqealarni tartiblang.",
+   "options": [
+    "A) Sivas, Kemoh, Anqara",
+    "B) Anqara, Sivas, Shom",
+    "C) Bag‘dod, Izmir, Sivas"
+   ],
+   "answer": "A) Sivas, Kemoh, Anqara"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Amir Temur bugungi ishni ertaga qoldirishni yoqtirmasdi?",
+   "options": [
+    "A) Kechikishda falokat borligi uchun",
+    "B) Qo‘shini kamayib ketgani uchun",
+    "C) Ob-havo buzilgani uchun"
+   ],
+   "answer": "A) Kechikishda falokat borligi uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Temur Sivas shahrini nima uchun kechiktirmasdan egalladi?",
+   "options": [
+    "A) Boyazid sulhni rad etgani uchun",
+    "B) Qo‘shin charchab qolgani uchun",
+    "C) Sivas hokimi iltimos qilgani uchun"
+   ],
+   "answer": "A) Boyazid sulhni rad etgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Temurning Shohruh iltimosi bilan Sulton Husaynni afv etishi qanday qadam?",
+   "options": [
+    "A) Shafqatli va bag‘rikeng qadam",
+    "B) Qo‘rqoqlik va zaiflik",
+    "C) Adolatsiz qaror"
+   ],
+   "answer": "A) Shafqatli va bag‘rikeng qadam"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Umarshayx xarakterini qanday ta’riflaydi?",
+   "options": [
+    "A) Jasur va saxiy insondir",
+    "B) Yovuz va bag‘ritosh",
+    "C) Odatiy askar edi"
+   ],
+   "answer": "A) Jasur va saxiy insondir"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Temurning Kechikishda falokat bor rivoyatini keltirib nimani ta’kidlaydi?",
+   "options": [
+    "A) Intizom va fursatni qadrlashni",
+    "B) Qishda jang qilmaslikni",
+    "C) Dushmandan qochishni"
+   ],
+   "answer": "A) Intizom va fursatni qadrlashni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "1941-yilda kimning buyrug‘i bilan Temur qabri ochildi?",
+   "options": [
+    "A) Stalinning buyrug‘i bilan",
+    "B) Jukovning buyrug‘i bilan",
+    "C) Gerasimovning buyrug‘i bilan"
+   ],
+   "answer": "A) Stalinning buyrug‘i bilan"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temur qabri nechanchi yili qayta dafn etildi?",
+   "options": [
+    "A) 1942-yilda",
+    "B) 1941-yilda",
+    "C) 1945-yilda"
+   ],
+   "answer": "A) 1942-yilda"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temurning piri Mir Sayyid Baraka qayerga dafn etilgan?",
+   "options": [
+    "A) Go‘ri Mir maqbarasiga",
+    "B) Kesh shahri xilxonasiga",
+    "C) Toshkent jome masjidiga"
+   ],
+   "answer": "A) Go‘ri Mir maqbarasiga"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temur o‘z razvedka tizimida kimlardan foydalangan?",
+   "options": [
+    "A) So‘fiy va savdogarlardan",
+    "B) Faqat chet el elchilaridan",
+    "C) Faqat qo‘mondonlardan"
+   ],
+   "answer": "A) So‘fiy va savdogarlardan"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Maqbaradan topilgan suyaklar qaysi tartibda o‘rganildi?",
+   "options": [
+    "A) Temur, Shohruh, Ulug‘bek",
+    "B) Ulug‘bek, Temur, Boyazid",
+    "C) Shohruh, Husayn, Temur"
+   ],
+   "answer": "A) Temur, Shohruh, Ulug‘bek"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Samarqandda ilm-fan gullab-yashnashiga sabab bo‘lgan omillarni ajrating.",
+   "options": [
+    "A) Ulamolar va madrasalar ko‘pligi",
+    "B) Savdo yo‘llari yopilishi",
+    "C) Qo‘shinning tarqatilishi"
+   ],
+   "answer": "A) Ulamolar va madrasalar ko‘pligi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Temur xavfsizlik tizimiga alohida e’tibor bergan?",
+   "options": [
+    "A) G‘alabalarni ta’minlash uchun",
+    "B) Xalqni jazolash uchun",
+    "C) Tarix yozish uchun"
+   ],
+   "answer": "A) G‘alabalarni ta’minlash uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Malik Qayumov Jukovga Temur jasadi dafn etilishini so‘radi?",
+   "options": [
+    "A) Urushdagi kulfatga aybdor hisoblagani uchun",
+    "B) Moskvada joy qolmagani uchun",
+    "C) Olimlar tadqiqotni tugatgani uchun"
+   ],
+   "answer": "A) Urushdagi kulfatga aybdor hisoblagani uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Stalinning 1942-yilda Temur xokini qayta ko‘mdirishi to‘g‘ri bo‘ldimi?",
+   "options": [
+    "A) To‘g‘ri, xalq va hurmat tiklandi",
+    "B) Noto‘g‘ri, bekorga vaqt ketdi",
+    "C) Farqi yo‘q edi"
+   ],
+   "answer": "A) To‘g‘ri, xalq va hurmat tiklandi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning Temur haqida xolis yondashuvga chaqirishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, tarix adolatli yoritilishi shart",
+    "B) Noto‘g‘ri, bir yoqlama yozilishi kerak",
+    "C) Ahamiyatsiz chaqiriq"
+   ],
+   "answer": "A) To‘g‘ri, tarix adolatli yoritilishi shart"
+  }
+ ]
+}

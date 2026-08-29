@@ -1,0 +1,418 @@
+{
+ "title": "Kundalik odoblar",
+ "author": "G‘iyosiddin Yusuf",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "6",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-10",
+  "topics": [
+   "odob-axloq",
+   "poklik",
+   "ota-onaga hurmat",
+   "ustozga ehtirom",
+   "do‘stlik",
+   "kun tartibi"
+  ],
+  "theme": "Har bir ishni va muomalani go‘zal odob hamda tartib bilan bajarish insonni kamolotga va jamiyatda hurmatga yetaklaydi.",
+  "summary": "Kitob bolalarga kundalik hayotda amal qilinadigan odob-axloq va tartib-qoidalarni o‘rgatadi. Avvalo odob tushunchasi va uning aql belgisi ekani tushuntiriladi. So‘ng ota-onani e’zozlash, salom berish, ruxsat so‘rash va ularga g‘amxo‘r bo‘lish yo‘llari ko‘rsatiladi. Ustozlarga ehtirom ko‘rsatish, darsda va muloqotda odobli bo‘lish qoidalari beriladi. Uyquga yotish hamda turish, badantarbiya qilish, badan, kiyim, qalb va joy pokligini saqlash uqtiriladi. Kiyinish, so‘zlash, salomlashish, ovqatlanish, hojatxonadan foydalanish, yo‘lda yurish, maktab va kitob o‘qish odoblari atroflicha bayon etiladi. Zamonaviy texnologiyalardan to‘g‘ri foydalanish, mehmondo‘stlik, chin do‘st tanlash, birovning haqqiga rioya qilish va unumli kun tartibini tuzish haqida qimmatli saboqlar beriladi.",
+  "characters": "Alohida badiiy qahramonlar yo‘q; kitob do‘stona va samimiy Muallif hamda odob-axloq saboqlarini o‘rganuvchi Kitobxon-bolajonlar o‘rtasidagi suhbat tarzida yozilgan.",
+  "conclusion": "Ushbu kitob farzandingizda kattalarga hurmat, halollik va tartib-intizom kabi ijobiy sifatlarni shakllantiradi. Bola muloqot va kundalik odoblarni o‘rganib, jamiyatda va oilada ko‘pchilikka o‘rnak bo‘ladigan barkamol inson bo‘lib ulg‘ayadi.",
+  "difficulty": "oson",
+  "mood": "samimiy, o‘rgatuvchi, ilhomlantiruvchi",
+  "for_whom": "Odob-axloq qoidalarini va to‘g‘ri muomala qilishni o‘rganishni istagan, tartibli va odobli bo‘lishga intiladigan barcha bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Odob» so‘zi qanday ma’noni bildiradi?",
+   "options": [
+    "A) Yaxshilikka chaqirish",
+    "B) Ilm o‘rganish",
+    "C) Chiroyli kiyinish"
+   ],
+   "answer": "A) Yaxshilikka chaqirish"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abdulloh ibn Muborak necha yil odob o‘rganganlar?",
+   "options": [
+    "A) O‘n yil",
+    "B) Yigirma yil",
+    "C) O‘ttiz yil"
+   ],
+   "answer": "C) O‘ttiz yil"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ota-ona bilan yo‘lda yurganda qayerda yurmaslik kerak?",
+   "options": [
+    "A) Ularning ortida",
+    "B) Ularning oldida",
+    "C) Ularning yonida"
+   ],
+   "answer": "B) Ularning oldida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uyquga yotayotganda qaysi tomon bilan yotiladi?",
+   "options": [
+    "A) O‘ng tomon bilan",
+    "B) Chap tomon bilan",
+    "C) Yerga qarab"
+   ],
+   "answer": "A) O‘ng tomon bilan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qaysi odoblar shaxsiy va ijtimoiy turlarga bo‘linadi?",
+   "options": [
+    "A) Kiyinish va ovqatlanish",
+    "B) Shaxsiy va ijtimoiy",
+    "C) Faqat maktab odoblari"
+   ],
+   "answer": "B) Shaxsiy va ijtimoiy"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Insonlar nega har bir ishini odob bilan bajarishi kerak?",
+   "options": [
+    "A) Amallari go‘zal bo‘lishi uchun",
+    "B) Tezroq ulg‘ayish uchun",
+    "C) Ko‘proq uxlash uchun"
+   ],
+   "answer": "A) Amallari go‘zal bo‘lishi uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega ustoz darsga kirganda o‘quvchilar darhol o‘tirib olmasligi kerak?",
+   "options": [
+    "A) Ustoz ruxsatini kutish uchun",
+    "B) Kiyimini tozalash uchun",
+    "C) Kitobini izlash uchun"
+   ],
+   "answer": "A) Ustoz ruxsatini kutish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ustoz doskani tozalayotganda yordam berish to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, xalal beradi",
+    "B) To‘g‘ri, bu ehtiromdir",
+    "C) Farqi yo‘q"
+   ],
+   "answer": "B) To‘g‘ri, bu ehtiromdir"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Odob bizga ko‘rk beradi» deyganda nimani nazarda tutgan?",
+   "options": [
+    "A) Odob insonni chiroyli qiladi",
+    "B) Odob faqat kiyimdadir",
+    "C) Odob og‘ir yukdir"
+   ],
+   "answer": "A) Odob insonni chiroyli qiladi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Olimlarning «Piyolaga odob bilan muomala qilsa sindirmaydi» deyishi nimani bildiradi?",
+   "options": [
+    "A) Har narsani ehtiyot qilishni",
+    "B) Faqat piyolani tozalashni",
+    "C) Idishlarni ko‘p sotib olishni"
+   ],
+   "answer": "A) Har narsani ehtiyot qilishni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kiyimni kiyayotganda qaysi tomondan kiyish kerak?",
+   "options": [
+    "A) Chap tomondan",
+    "B) O‘ng tomondan",
+    "C) Xohlagan tomondan"
+   ],
+   "answer": "B) O‘ng tomondan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Birovning xonasiga kirishda necha martagacha chaqirish mumkin?",
+   "options": [
+    "A) Bir marta",
+    "B) Ikki marta",
+    "C) Uch marta"
+   ],
+   "answer": "C) Uch marta"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Salom bergan kishiga qanday javob qaytariladi?",
+   "options": [
+    "A) Va alaykum assalom",
+    "B) Xayrli tong",
+    "C) Yaxshimisiz"
+   ],
+   "answer": "A) Va alaykum assalom"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kitob bilan ko‘z orasidagi masofa necha santimetr bo‘lishi kerak?",
+   "options": [
+    "A) 10-15 santimetr",
+    "B) 30-35 santimetr",
+    "C) 50-60 santimetr"
+   ],
+   "answer": "B) 30-35 santimetr"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Salomlashish va xayrlashish amallari qanday bog‘langan?",
+   "options": [
+    "A) Ikkisida ham salom beriladi",
+    "B) Xayrlashuvda salom berilmaydi",
+    "C) Faqat kechasi salom beriladi"
+   ],
+   "answer": "A) Ikkisida ham salom beriladi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnga ko‘ra, jamoat joylarida va transportda ovoz balandligi qanday bo‘ladi?",
+   "options": [
+    "A) Juda baland",
+    "B) O‘rtacha",
+    "C) Poshsholarcha past"
+   ],
+   "answer": "B) O‘rtacha"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega kiyimda bema’ni yoki yomon yozuvlar bo‘lmasligi kerak?",
+   "options": [
+    "A) Odobli bolaga munosib emasligi uchun",
+    "B) Kiyim tez kir bo‘lishi uchun",
+    "C) Kiyim tor kelishi uchun"
+   ],
+   "answer": "A) Odobli bolaga munosib emasligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega hojatxonaga kirishda uzoq qolib ketmaslik kerak?",
+   "options": [
+    "A) Faqat zaruriy ish bajarilgani uchun",
+    "B) U yerda kitob o‘qish uchun",
+    "C) O‘yin o‘ynash uchun"
+   ],
+   "answer": "A) Faqat zaruriy ish bajarilgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ko‘chada ketayotib biror kishiga turtilib ketsangiz, nima qilish to‘g‘ri?",
+   "options": [
+    "A) Indamay ketish",
+    "B) Muloyimlik bilan kechirim so‘rash",
+    "C) Uni ayblash"
+   ],
+   "answer": "B) Muloyimlik bilan kechirim so‘rash"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "O‘yin vaqtida mag‘lub bo‘lgan jamoani mazax qilish to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, o‘yinda mumkindir",
+    "B) Noto‘g‘ri, kamsitish beodoblikdir",
+    "C) Farqi yo‘q"
+   ],
+   "answer": "B) Noto‘g‘ri, kamsitish beodoblikdir"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Telefonda biror kishini tasvirga olishdan oldin nima qilish kerak?",
+   "options": [
+    "A) Undan ruxsat so‘rash",
+    "B) Darhol rasmga olish",
+    "C) Suratni internetga joylash"
+   ],
+   "answer": "A) Undan ruxsat so‘rash"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mehmonga borganda ko‘pi bilan necha kun qolish munosib?",
+   "options": [
+    "A) Bir kun",
+    "B) Uch kun",
+    "C) O‘n kun"
+   ],
+   "answer": "B) Uch kun"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uzr so‘raganda nechta narsa bo‘lishi kerak?",
+   "options": [
+    "A) Ikki narsa",
+    "B) Uch narsa",
+    "C) To‘rt narsa"
+   ],
+   "answer": "B) Uch narsa"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Yoshlikda olingan bilim...» maqoli qanday yakunlanadi?",
+   "options": [
+    "A) Suvga yozilgan yozuvdir",
+    "B) Toshga o‘yilgan naqshdir",
+    "C) Havodagi bulutdir"
+   ],
+   "answer": "B) Toshga o‘yilgan naqshdir"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ruxsatsiz birovning narsasini olish va ma’naviy haqqa zarar yetkazish nima?",
+   "options": [
+    "A) Yomon ish va beodoblik",
+    "B) Yaxshi odat",
+    "C) Oddiy o‘yin"
+   ],
+   "answer": "A) Yomon ish va beodoblik"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega yomon va nodon kishilar bilan do‘st bo‘lmaslik kerak?",
+   "options": [
+    "A) Ziyon yetkazib qo‘yishi mumkinligi uchun",
+    "B) Ular ko‘p kitob o‘qigani uchun",
+    "C) Ular tez yugurgani uchun"
+   ],
+   "answer": "A) Ziyon yetkazib qo‘yishi mumkinligi uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega ertalab uyg‘ongach badantarbiya qilish foydali?",
+   "options": [
+    "A) Tana tetiklashib, ishtaha ochilgani uchun",
+    "B) Ko‘proq uxlash uchun",
+    "C) Dars qilmaslik uchun"
+   ],
+   "answer": "A) Tana tetiklashib, ishtaha ochilgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Birovning haqqiga bilmasdan zarar yetkazganda uzr so‘rash to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, uyatli ish",
+    "B) To‘g‘ri, kamtarlik va odobdir",
+    "C) Farqi yo‘q"
+   ],
+   "answer": "B) To‘g‘ri, kamtarlik va odobdir"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning ovchi va ayiq haqidagi hikoyasi qanday tuyg‘u beradi?",
+   "options": [
+    "A) O‘ylantiruvchi va saboq beruvchi",
+    "B) Qahqaha va kulgi",
+    "C) Qo‘rqinch va vahima"
+   ],
+   "answer": "A) O‘ylantiruvchi va saboq beruvchi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif kitob oxirida bolalarga bildirgan tilagidan nimani his qilasiz?",
+   "options": [
+    "A) Cheksiz mehr va g‘amxo‘rlikni",
+    "B) Qattiqqo‘llikni",
+    "C) Loqaydlikni"
+   ],
+   "answer": "A) Cheksiz mehr va g‘amxo‘rlikni"
+  }
+ ]
+}

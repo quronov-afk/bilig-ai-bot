@@ -1,0 +1,447 @@
+{
+ "title": "Qasoskorning oltin boshi",
+ "author": "Xudoyberdi To‘xtaboyev",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "jasorat",
+   "adolat",
+   "vatanparvarlik",
+   "tarix",
+   "ozodlik harakati"
+  ],
+  "theme": "Asarda adolatsizlik va zulmga qarshi mardona kurashgan Namoz botirning xalqparvarligi hamda erkinlik va adolat yo‘lidagi fojiaviy va sharafli yo‘li yoritiladi.",
+  "summary": "1900-yillar boshida Zarafshon vodiysida amaldorlar hamda chor ma'murlarining zulmi avj oladi. Kambag‘allar haqini himoya qilish uchun Namoz polvon adolat yo‘liga chiqadi. U boylardan tortib olgan mol-mulkni och-yalang‘och yetimlarga ulashadi. Dahbed bozorida qurshovda qolgan Namoz paxsa devorni urib yiqitib qutuladi va Qipchoq ariq jarligidan sakrab quvuvchilarni chalg‘itadi. Biroq Hamdamboy va bo‘lis hokimlari unga ot o‘g‘risi deb tuhmat qilishadi. Namoz qamoqdan qochib, daryo orolchasida qarorgoh tuzadi va kurashni davom ettiradi. U beklikka intilmaydi, erkin g‘allakor bo‘lishni orzu qiladi. Ammo xoin Arslonqul Hamdamboyning tillasiga uchib, Qizbuloqda uxlab yotgan Namozni fojiaviy ravishda o‘ldiradi. Namoz vafot etsa-da, uning nomi va adolat g‘oyasi xalq orasida yashab qoladi hamda uning izidan o‘nlab yangi qasoskor to‘dalar yetishib chiqadi.",
+  "characters": "Namoz botir — adolatparvar, dovyurak xalq qasoskori; Hamdamboy — ochko‘z va zolim boy; Mirza Hamid — qamchisidan qon tomgan bo‘lis hokimi; Nazarmatvey — Namozning sadoqatli rus do‘sti; Arslonqul — tilla uchun do‘stiga pichoq urgan sotqin; Nasiba — Namozning suyukli rafiqasi; To‘xtashvoy va Hayitboy — Namoz panohiga olgan yetim bolalar.",
+  "conclusion": "Bu roman kitobxonga haqiqiy mardlik, halollik va adolatparvarlik saboqlarini beradi. Asar orqali bola o‘z xalqining tarixini o‘rganadi. Xiyonatning tubanlik va adolat g‘oyasining mangu barhayot ekanligini teran anglab yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, ta‘sirli, shiddatli",
+  "for_whom": "Tarixiy sarguzashtlar, adolat uchun kurashgan pahlavonlar va mardlik haqidagi asarlarga qiziqadigan o‘smirlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Namoz boy Dahbed bozorida kambag‘allarga nimani tarqatdi?",
+   "options": [
+    "A) Oltin va tangalarni",
+    "B) Qop-qop bug‘doyni",
+    "C) Qimmatbaho kiyimlarni",
+    "D) Ot va tuya chorvasini"
+   ],
+   "answer": "A) Oltin va tangalarni"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Salim qassob Namoz boyga qanday taom pishirib berardi?",
+   "options": [
+    "A) Palov",
+    "B) Kalla-pocha sho‘rva",
+    "C) Manti",
+    "D) No‘xotsho‘rak"
+   ],
+   "answer": "B) Kalla-pocha sho‘rva"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Omon jarchi Namozning boshini kesib kelganga qancha mukofot e‘lon qildi?",
+   "options": [
+    "A) O‘n ming tanga",
+    "B) Besh ming tanga",
+    "C) Uch ming tanga",
+    "D) Bir ming tanga"
+   ],
+   "answer": "C) Uch ming tanga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Namoz quvuvchilardan qutulish uchun otini qayerdan sakratib o‘tkazdi?",
+   "options": [
+    "A) Qipchoq ariq jarligidan",
+    "B) Siyob daryosi ko‘prigidan",
+    "C) Hamdamboy qo‘rg‘oni devoridan",
+    "D) Dahanisoy darasidan"
+   ],
+   "answer": "A) Qipchoq ariq jarligidan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Namoz boy qassob do‘konidan qochish uchun qanday harakatlar qildi?",
+   "options": [
+    "A) Devorni urib yiqitdi",
+    "B) Tomni teshib chiqdi",
+    "C) Yerto‘laga berkinib qoldi",
+    "D) Qurollar bilan hujum qildi"
+   ],
+   "answer": "A) Devorni urib yiqitdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Namoz boy Salim qassobni nega bog‘lab ketdi?",
+   "options": [
+    "A) Salim unga qarshilik qilgani uchun",
+    "B) Salimni hibsdan saqlab qolish uchun",
+    "C) Salimning pulini tortib olish uchun",
+    "D) Salim uni sotib qo‘ymasligi uchun"
+   ],
+   "answer": "B) Salimni hibsdan saqlab qolish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hamdamboy usta paxsakashlarga nega ish haqini bermadi?",
+   "options": [
+    "A) Pullari tugab qolgani uchun",
+    "B) Ustalar ishni tugatmagani uchun",
+    "C) Ochko‘z va zolim bo‘lgani uchun",
+    "D) Ustalar sifatsiz qurgani uchun"
+   ],
+   "answer": "C) Ochko‘z va zolim bo‘lgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Namozning tilanchilarni yoqtirmasligi haqida qanday baho berish mumkin?",
+   "options": [
+    "A) Kibrli va bag‘ritosh odam bo‘lgan",
+    "B) Mehnat va mardlikni ustun qo‘ygan",
+    "C) Kambag‘allarni qoralashni yaxshi ko‘rgan",
+    "D) Faxrlanishni xohlagan"
+   ],
+   "answer": "B) Mehnat va mardlikni ustun qo‘ygan"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Namozning harakatlarini «sherdek pishqirib-pishqirib qo‘yardi» deyishi bilan nimani tasvirlagan?",
+   "options": [
+    "A) Uning hayvoniy vajohatini",
+    "B) Uning kuchli va shiddatli g‘azabini",
+    "C) Uning shamollab qolganini",
+    "D) Uning baland ovozda qichqirganini"
+   ],
+   "answer": "B) Uning kuchli va shiddatli g‘azabini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Pirimqul Qodirov so‘zboshida Namoz botirni qanday xarakterlaydi?",
+   "options": [
+    "A) Benuqson va mukammal farishta",
+    "B) Xalqparvar va adolatparvar qahramon",
+    "C) Faqat kuchga tan beradigan polvon",
+    "D) Boylik ortidan quvgan qasoqchi"
+   ],
+   "answer": "B) Xalqparvar va adolatparvar qahramon"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Namoz do‘sti Nazarmatveyga boylarni jazolash haqida nima dedi?",
+   "options": [
+    "A) Ularni o‘ldirish kerak",
+    "B) Sandiqdagi boyligini tortib olish kerak",
+    "C) Yurtidan haydab yuborish kerak",
+    "D) Qamoqqa tashlash kerak"
+   ],
+   "answer": "B) Sandiqdagi boyligini tortib olish kerak"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Namozning chinakam orzusi nima edi?",
+   "options": [
+    "A) Katta bek bo‘lish",
+    "B) Erkin g‘allakor bo‘lish",
+    "C) Shaharda saroy qurish",
+    "D) Poshsho xizmatiga kirish"
+   ],
+   "answer": "B) Erkin g‘allakor bo‘lish"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Namoz xotini Nasiba va ukalariga miltiq hamda tillani qanday olib keldi?",
+   "options": [
+    "A) Somon qop ichiga berkitib",
+    "B) Xurjunga joylab",
+    "C) Moshinaga ortib",
+    "D) Oq otining sag‘riniga bog‘lab"
+   ],
+   "answer": "A) Somon qop ichiga berkitib"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "General Gesket politsmeysterga nega g‘azab qildi?",
+   "options": [
+    "A) Namoz Yoqubxon boyni bosgani uchun",
+    "B) Askarlar bozorga bormagani uchun",
+    "C) Soliqlar kam yig‘ilgani uchun",
+    "D) Namoz uni o‘zi ushlamagani uchun"
+   ],
+   "answer": "A) Namoz Yoqubxon boyni bosgani uchun"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Namozning qasoskorlar qarorgohi qayerda joylashgan edi?",
+   "options": [
+    "A) Oqdaryo va Qoradaryo oralig‘idagi orolda",
+    "B) Samarqand shahri markazidagi qal'ada",
+    "C) Dahbed bozorining yerto‘lasida",
+    "D) Moxovxona qamoqxonasining ichida"
+   ],
+   "answer": "A) Oqdaryo va Qoradaryo oralig‘idagi orolda"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tergovchi Vladimirov Namozga qanday ayblarni qo‘yishga urindi?",
+   "options": [
+    "A) Bosqinchilik va qotillik aybini",
+    "B) Soliq to‘lamaslik aybini",
+    "C) Yerni noqonuniy egallashni",
+    "D) Davlat sirini sotganlikni"
+   ],
+   "answer": "A) Bosqinchilik va qotillik aybini"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hokim Mirza Hamid sudda nega Namozga qarshi da‘vosidan voz kechdi?",
+   "options": [
+    "A) Namoz yigitlarining o‘chidan qo‘rqqani uchun",
+    "B) Namoz unga ko‘p pul bergani uchun",
+    "C) Sudya uni majburlagani uchun",
+    "D) Namozni oshnasi deb bilgani uchun"
+   ],
+   "answer": "A) Namoz yigitlarining o‘chidan qo‘rqqani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Namoz o‘zini bek deb atashlariga nega qarshi bo‘ldi?",
+   "options": [
+    "A) Beklar halqlarga zulm qilganligi uchun",
+    "B) O‘zini kambag‘al ko‘rsatmoqchi bo‘lgani uchun",
+    "C) Bek nomidan qo‘rqqani uchun",
+    "D) Unvoni yo‘qligi uchun"
+   ],
+   "answer": "A) Beklar halqlarga zulm qilganligi uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Namozning tuhmat va zulmga qarshi qurol ko‘tarishiga qanday baho berish mumkin?",
+   "options": [
+    "A) Mazlumlarni himoya qilish mardlikdir",
+    "B) U faqat o‘zini o‘ylagan",
+    "C) Boylar bilan do‘stlashishi kerak edi",
+    "D) Har qanday kurash xatodir"
+   ],
+   "answer": "A) Mazlumlarni himoya qilish mardlikdir"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Namozning g‘azabini «yuzlari bo‘rtib, ko‘zlariga qon quyildi» deb nimani ko‘rsatgan?",
+   "options": [
+    "A) Uning chidab bo‘lmas nafratini",
+    "B) Uning kasallanib qolganini",
+    "C) Uning ko‘zi ko‘rmay qolganini",
+    "D) Uning juda charchaganini"
+   ],
+   "answer": "A) Uning chidab bo‘lmas nafratini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mixail Morozov Namozga qanday maslahat berdi?",
+   "options": [
+    "A) Inqilobiy ong va birlashuv zarurligini",
+    "B) Darhol chet elga qochishni",
+    "C) Boylar bilan sulh tuzishni",
+    "D) Qurollarni topshirib taslim bo‘lishni"
+   ],
+   "answer": "A) Inqilobiy ong va birlashuv zarurligini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Arslonqul Namozni o‘ldirish uchun kimdan tilla oldi?",
+   "options": [
+    "A) Hamdamboydan",
+    "B) Mirza Hamiddan",
+    "C) Gesketdan",
+    "D) Oleynikovdan"
+   ],
+   "answer": "A) Hamdamboydan"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Namoz uxlashdan oldin boshining tagiga nimani qo‘yib yotardi?",
+   "options": [
+    "A) Zarang tovoqni",
+    "B) Temir qalqonni",
+    "C) Charm xurjunni",
+    "D) Qalin choponni"
+   ],
+   "answer": "A) Zarang tovoqni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Namozning qabriga qo‘yilgan marmartoshga kimlar nomidan bitik yozildi?",
+   "options": [
+    "A) Lolavoy dashti cho‘ponlaridan",
+    "B) Samarqand hokimligidan",
+    "C) Sergey tabib shogirdlaridan",
+    "D) Qo‘qon qasoskorlaridan"
+   ],
+   "answer": "A) Lolavoy dashti cho‘ponlaridan"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Namoz so‘nggi daqiqalarda o‘z guruhini qanday taqsimladi?",
+   "options": [
+    "A) Xotin-qiz va yetimlarni Qo‘qonga jo‘natdi",
+    "B) Hamma yigitlarni uyiga tarqatib yubordi",
+    "C) Hamma bilan birga qal'aga qamaldi",
+    "D) Rossiyaga qochib ketishga buyurdi"
+   ],
+   "answer": "A) Xotin-qiz va yetimlarni Qo‘qonga jo‘natdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Arslonqul Namozni o‘ldirishda nega pichoq o‘rniga avval tosh va to‘pponcha ishlatdi?",
+   "options": [
+    "A) Namozning uyg‘onib ketishidan qo‘rqqani uchun",
+    "B) Xanjar yo‘qolib qolgani uchun",
+    "C) Namoz uni ko‘rib qolgani uchun",
+    "D) Tosh eng yengil qurol bo‘lgani uchun"
+   ],
+   "answer": "A) Namozning uyg‘onib ketishidan qo‘rqqani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nazarmatvey va bolalar Namoz o‘lgach nega qasamyod qilishdi?",
+   "options": [
+    "A) Qotil Arslonqulni topib jazolash uchun",
+    "B) Samarqandni taratib yuborish uchun",
+    "C) Qo‘qonga borishdan voz kechish uchun",
+    "D) Boylarning molini taqsimlash uchun"
+   ],
+   "answer": "A) Qotil Arslonqulni topib jazolash uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Namoz o‘lgach uning nomi bilan ko‘p to‘dalar chiqishini qanday baholaysan?",
+   "options": [
+    "A) Xalq adolat g‘oyasidan voz kechmagan",
+    "B) Odamlar shunchaki o‘g‘rilik qilgan",
+    "C) Poshsho hokimiyati kuchayib ketgan",
+    "D) Namozning o‘zi tirik bo‘lib chiqqan"
+   ],
+   "answer": "A) Xalq adolat g‘oyasidan voz kechmagan"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Arslonqulning do‘stlik va tuz o‘rniga xiyonatni tanlashiga qanday baho berish mumkin?",
+   "options": [
+    "A) Tubanlik va sotqinlikning eng badnom namunasidir",
+    "B) U o‘z oilasini qutqarish uchun to‘g‘ri qildi",
+    "C) U aqlli harakat qildi",
+    "D) U Namozdan ustun keldi"
+   ],
+   "answer": "A) Tubanlik va sotqinlikning eng badnom namunasidir"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Namozning «Mazlum jarohatig‘a intiqom malhamin qo‘ydi» so‘zlari bilan nimani ulug‘laydi?",
+   "options": [
+    "A) Uning xalq dardiga malham bo‘lganini",
+    "B) Uning tabiblik hunari borligini",
+    "C) Uning dorivor giyohlar uzganini",
+    "D) Uning shaharda shifoxona ochganini"
+   ],
+   "answer": "A) Uning xalq dardiga malham bo‘lganini"
+  }
+ ]
+}

@@ -1,0 +1,307 @@
+{
+ "title": "Maktab alamlari va zavqlari",
+ "author": "Orxan Pamuk",
+ "genre": "hikoya",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "maktab",
+   "bolalik",
+   "o‘qituvchi",
+   "tarbiya",
+   "kuzatuvchanlik"
+  ],
+  "theme": "Maktab faqat darslikdagi bilimlarni emas, balki jamiyatdagi turli fe’l-atvor va hayotiy haqiqatlarni anglashingizga yordam beradi.",
+  "summary": "Asarda yosh Orxanning maktabdagi ilk taassurotlari va kechinmalari hikoya qilinadi. U sinfda doim birinchi bo‘lib javob berishga intiladi, lekin vaqt o‘tishi bilan darsdagi bir xillikdan bezib, derazadan tashqaridagi dunyoni hamda bulutlarni kuzatishga o‘tadi. Qahramon sinfdoshlarining turli fe’l-atvorini, o‘qituvchining intizom va jazo usullarini kuzatadi. Maktabdagi qat’iy tartibga qaramay, u o‘z ichki dunyosini boyitadi hamda dars tugashi bilan uyga, onasining bag‘riga oshiqadi.",
+  "characters": "Orxan (muallifning bolaligi) — kuzatuvchan, tasavvuri boy va zaki bola; O‘qituvchi — sinfda qat’iy intizom o‘rnatgan rahnamo; Sinfdoshlar — har xil xarakterli va taqdirli bolalar.",
+  "conclusion": "Asar bolaga atrofdagi insonlarni va hayotiy jarayonlarni kuzatishni o‘rgatadi. Ustozga hamda ota-onaga bo‘lgan hurmatni mustahkamlaydi, bilim olishning mohiyatini anglashga yordam beradi.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, xotira",
+  "for_whom": "Maktab hayoti, bolalik kechinmalari va insonlar fe’l-atvorini kuzatishga qiziqadigan o‘quvchilar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qahramon maktabda eng birinchi nimalarni o‘rgandi?",
+   "options": [
+    "A) Ba‘zilarning ahmoqligini va yanada ahmoqroqligini",
+    "B) Rasm chizish va qo‘shiq aytishni",
+    "C) Chet tillarini mukammal o‘rganishni",
+    "D) Tezkor hisob-kitob qilish usullarini"
+   ],
+   "answer": "A) Ba‘zilarning ahmoqligini va yanada ahmoqroqligini"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qahramonning uyida obro‘li shaxs kim edi?",
+   "options": [
+    "A) Otasi",
+    "B) Onasi",
+    "C) Buvasi",
+    "D) Akasi"
+   ],
+   "answer": "B) Onasi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qahramonning uyidagi va maktabdagi muhit qanday farqlanardi?",
+   "options": [
+    "A) Uyda erkinlik, maktabda tartib bor",
+    "B) Uyda qattiq intizom mavjud edi",
+    "C) Maktabda hammasi erkinroq edi",
+    "D) Ikkala joyda ham tartib yo‘q edi"
+   ],
+   "answer": "A) Uyda erkinlik, maktabda tartib bor"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qahramon nega javobni bilmasa ham barmog‘ini ko‘tarardi?",
+   "options": [
+    "A) O‘zini ko‘rsatish va e’tibor uchun",
+    "B) O‘qituvchidan qo‘rqqani uchun",
+    "C) Jazo olishdan qutulish uchun",
+    "D) Do‘stlariga yordam berish uchun"
+   ],
+   "answer": "A) O‘zini ko‘rsatish va e’tibor uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qahramon darsda zerikkanda derazadan nimani kuzatardi?",
+   "options": [
+    "A) Akas daraxti va bulutlarni",
+    "B) Hovlida o‘ynayotgan bolalarni",
+    "C) Yo‘lda ketayotgan mashinalarni",
+    "D) Tomdagi kabutarlarni"
+   ],
+   "answer": "A) Akas daraxti va bulutlarni"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bulutlar qahramonning xayolida ketma-ket nimaga aylandi?",
+   "options": [
+    "A) Tulki, it va qanddonga",
+    "B) Samolyot, qush va uyga",
+    "C) Kema, tog‘ va gulga",
+    "D) Qashqir, ayiq va mashinaga"
+   ],
+   "answer": "A) Tulki, it va qanddonga"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qahramonning dars paytida xayol surishini qanday baholash mumkin?",
+   "options": [
+    "A) Tabiiy, chunki dars bir xil tuyulgan",
+    "B) Noto‘g‘ri, u jazoga loyiq edi",
+    "C) Juda ajoyib, darsni tinglamaslik kerak",
+    "D) Xato, u maktabni yomon ko‘rgan"
+   ],
+   "answer": "A) Tabiiy, chunki dars bir xil tuyulgan"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qizil sochli qizning portfelida nimalar bor edi?",
+   "options": [
+    "A) Olma, non va soch tasmalari",
+    "B) Faqat kitob va daftarlar",
+    "C) O‘yinchoqlar hamda bo‘yoqlar",
+    "D) Shokolad va turli shirinliklar"
+   ],
+   "answer": "A) Olma, non va soch tasmalari"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sinfdagi sho‘x bolalarga eng kam uchraydigan jazo nima edi?",
+   "options": [
+    "A) Burchakda bir oyoqda turish",
+    "B) Maktabdan butunlay haydalish",
+    "C) Uyga javob berib yuborilish",
+    "D) Sinfni tozalashga majbur etilish"
+   ],
+   "answer": "A) Burchakda bir oyoqda turish"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "O‘qituvchilar jazolashda jadvallar o‘rnida nimadan foydalanishgan?",
+   "options": [
+    "A) Ingichka mika parchasi bor buyumdan",
+    "B) Ota-onalar keltirgan yog‘och chizg‘ichdan",
+    "C) Og‘ir charm tasmalardan",
+    "D) Qalin va uzun tayoqlardan"
+   ],
+   "answer": "A) Ingichka mika parchasi bor buyumdan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qahramon nega ba’zi bolalarning jazolanishini achinish bilan kuzatardi?",
+   "options": [
+    "A) Ularning kamsitilishi yuragini ezardi",
+    "B) O‘zi ham shunday jazo olgan edi",
+    "C) O‘qituvchidan o‘ch olmoqchi edi",
+    "D) Do‘stlari unga shikoyat qilgandi"
+   ],
+   "answer": "A) Ularning kamsitilishi yuragini ezardi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qahramon maktabda paydo bo‘ladigan qaysi yashirin chiziq haqida gapiradi?",
+   "options": [
+    "A) O‘qituvchi o‘tirganda yuzaga keladigan chiziq",
+    "B) Boylar va kambag‘allar orasidagi devor",
+    "C) A’lochi va yomon o‘quvchilar chegara chizig‘i",
+    "D) Maktab va uy orasidagi masofa"
+   ],
+   "answer": "A) O‘qituvchi o‘tirganda yuzaga keladigan chiziq"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif jazolash voqealarini tasvirlab nimani ko‘rsatib bergan?",
+   "options": [
+    "A) Qattiqqollik va bolalar ruhiyatidagi holatni",
+    "B) Jazolarning o‘ta to‘g‘ri bo‘lganini",
+    "C) Bolalarning hammasi aybdorligini",
+    "D) O‘qituvchilarning haqligini"
+   ],
+   "answer": "A) Qattiqqollik va bolalar ruhiyatidagi holatni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mari ismli yahudiy qiz nima haqida so‘zlab berardi?",
+   "options": [
+    "A) O‘zlarining xamirsiz bayrami haqida",
+    "B) Yangi yilda olgan sovg‘asi haqida",
+    "C) Boshqa shaharga safari haqida",
+    "D) Maktabdagi qiziq mashg‘ulotlar haqida"
+   ],
+   "answer": "A) O‘zlarining xamirsiz bayrami haqida"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘qituvchi dars o‘rtasida bolalarga nima qildirardi?",
+   "options": [
+    "A) Qo‘shiq ayttirardi",
+    "B) Rasm chizdirardi",
+    "C) Badantarbiya qildirardi",
+    "D) Insho yazdirardi"
+   ],
+   "answer": "A) Qo‘shiq ayttirardi"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qo‘shiq aytilayotgan paytda sinfdagi bolalar qanday tutishardi?",
+   "options": [
+    "A) Har bir bola har xil kayfiyatda edi",
+    "B) Barchasi yig‘lab o‘tirishardi",
+    "C) Hammasi qo‘rqib turardi",
+    "D) Hamma sinfdan chiqib ketardi"
+   ],
+   "answer": "A) Har bir bola har xil kayfiyatda edi"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qo‘ng‘iroq chalinishidan oldin qahramon nimani hayol qilardi?",
+   "options": [
+    "A) Uyga borib onasini ko‘rishni",
+    "B) Ko‘chada quvlashmachoq o‘ynashni",
+    "C) Do‘stlari bilan sinfda qolishni",
+    "D) Yangi kitoblar o‘qishni"
+   ],
+   "answer": "A) Uyga borib onasini ko‘rishni"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qahramonning maktab haqidagi xulosasiga qanday qaraysiz?",
+   "options": [
+    "A) To‘g‘ri, maktab hayotni tanishga yordam beradi",
+    "B) Yo‘q, u maktabni tushunmagan",
+    "C) Noto‘g‘ri, u faqat o‘ynashni o‘ylagan",
+    "D) Barcha xulosalari asossiz"
+   ],
+   "answer": "A) To‘g‘ri, maktab hayotni tanishga yordam beradi"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif ashula aytilayotgan daqiqalarni qanday mahorat bilan tasvirlagan?",
+   "options": [
+    "A) Bolalarning turlicha fe’l-atvorini ochib bergan",
+    "B) Faqat musiqaning yoqimli ohangini aytgan",
+    "C) O‘qituvchining mahoratini maqtagan",
+    "D) Maktab qoidalarini shunchaki sanagan"
+   ],
+   "answer": "A) Bolalarning turlicha fe’l-atvorini ochib bergan"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qahramon va uning akasini uyga kim yetaklab ketardi?",
+   "options": [
+    "A) Eshikbon amaki",
+    "B) Buvilari",
+    "C) Sinf o‘qituvchisi",
+    "D) Haydovchi amaki"
+   ],
+   "answer": "A) Eshikbon amaki"
+  }
+ ]
+}

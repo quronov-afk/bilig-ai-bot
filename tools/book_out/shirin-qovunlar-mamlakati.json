@@ -1,0 +1,417 @@
+{
+ "title": "Shirin qovunlar mamlakati",
+ "author": "Xudoyberdi To‘xtaboyev",
+ "genre": "ertak-roman",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12 yosh",
+  "topics": [
+   "halollik",
+   "mehnat",
+   "do‘stlik",
+   "xayolot",
+   "odamiylik"
+  ],
+  "theme": "Asarda insoniy illatlar ustidan kulish hamda halollik, mehnatsevarlik va poklik kabi fazilatlarni ulug‘lash g‘oyasi ilgari surilgan.",
+  "summary": "Akbarjon hid bilish qobiliyati o‘tkir, xayolparast bola. U tasodifan sehrli qovun mamlakati — Handalak shahriga tushib qoladi. U yerda Professor Dar Daraja bilan birga insoniy illatlar (yolg‘onchilik, poraxo‘rlik, maqtanchoqlik) manbai bo‘lgan Sehrgar Iblisga qarshi kurashadi. Sehrli Qalpoqcha yordamida Iblisni shishaga qamaydi va mamlakatni ozod qiladi. Shunda unga haykal qo‘yilib, katta bayram qilinadi. Biroq barcha voqealar Akbarjonning eshakdan yiqilib, qirq kun behush yotganda ko‘rgan tushi bo‘lib chiqadi. U o‘ziga kelgach, mehribon oilasi va onasining bag‘riga qaytadi.",
+  "characters": "Akbarjon — o‘tkir hid sezar, xayolparast va sodda bola; Dar Daraja — illatlarga qarshi dori yaratuvchi professor; Gu La — Akbarjon yaxshi ko‘rgan shirinso‘z qiz; Sehrgar Iblis — jamiyatdagi barcha salbiy illatlar timsoli.",
+  "conclusion": "Kitob bolani yolg‘onchilik va maqtanchoqlik kabi illatlardan yiroq bo‘lishga, halol hamda mehnatsevar yashashga o‘rgatadi. Ota-onani e’zozlash, oila va vatan qadrini anglash tuyg‘usini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "kulgili, sarguzashtli, o‘ylantiruvchi",
+  "for_whom": "Sarguzashtlarni, kulgili va sehrli voqealarni yaxshi ko‘radigan, fantaziyaga boy bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akbarjonning qanday alohida fazilati bor edi?",
+   "options": [
+    "A) O‘tkir hid bilar edi",
+    "B) Juda tez yugurardi",
+    "C) Baland sakray olardi"
+   ],
+   "answer": "A) O‘tkir hid bilar edi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ortiqali Akbarjondan qaysi ishda yordam so‘radi?",
+   "options": [
+    "A) O‘g‘irlangan mollarni topishda",
+    "B) Qovun paykalini chopishda",
+    "C) Eshakni topib kelishda"
+   ],
+   "answer": "A) O‘g‘irlangan mollarni topishda"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shokirali boboning yo‘qolgan buyumlari qayerdan topildi?",
+   "options": [
+    "A) Yantoq g‘arami ostidan",
+    "B) Chuqur quduq ichidan",
+    "C) Eski og‘ilxona yonidan"
+   ],
+   "answer": "A) Yantoq g‘arami ostidan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akbarjon insho yozayotib qaysi pyesani esladi?",
+   "options": [
+    "A) Boy ila xizmatchi",
+    "B) O‘tkan kunlar",
+    "C) Shum bola"
+   ],
+   "answer": "A) Boy ila xizmatchi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Akbarjon o‘g‘irlik mollarni izlashda hidlarni qaysi tartibda sezdi?",
+   "options": [
+    "A) Kuyadori, yalpiz, behidan kalishgacha",
+    "B) Kalishdan yalpiz va behigacha",
+    "C) Behidan boshlab faqat kalishgacha"
+   ],
+   "answer": "A) Kuyadori, yalpiz, behidan kalishgacha"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Handalak shahri ko‘chalarida mashinalar qanday yonilg‘ida yurardi?",
+   "options": [
+    "A) Quyosh energiyasidan olib",
+    "B) Benzin va gaz bilan",
+    "C) Elektr simlaridan olib"
+   ],
+   "answer": "A) Quyosh energiyasidan olib"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Akbarjon darsda nega tez-tez chalg‘ib ketardi?",
+   "options": [
+    "A) Xayolparastligi va xayolga berilishi sababli",
+    "B) Uyqusi kelib qolgani sababli",
+    "C) Muallimdan qo‘rqqani sababli"
+   ],
+   "answer": "A) Xayolparastligi va xayolga berilishi sababli"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega tengqurlari Akbarjonga Qovunchi deb laqab qo‘yishgan edi?",
+   "options": [
+    "A) O‘rinsiz gapirib qovun tushirgani uchun",
+    "B) Faqat qovun etishtirgani uchun",
+    "C) Qovun sotib yurgani uchun"
+   ],
+   "answer": "A) O‘rinsiz gapirib qovun tushirgani uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Akbarjonning Shokirali boboga yordam bergani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, keksaga yordam berish savob",
+    "B) Noto‘g‘ri, oz vaqtini yo‘qotdi",
+    "C) Noto‘g‘ri, militsiya topshirig‘i edi"
+   ],
+   "answer": "A) To‘g‘ri, keksaga yordam berish savob"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «xayolot odamga qanot bag‘ishlaydi» deganda nimani nazarda tutgan?",
+   "options": [
+    "A) Xayol insonni yangi kashfiyotlarga undashini",
+    "B) Odam haqiqatan osmonga uchib ketishini",
+    "C) Xayol surish faqat bolalarga mosligini"
+   ],
+   "answer": "A) Xayol insonni yangi kashfiyotlarga undashini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dar Daraja qanday institutda rahbarlik qilardi?",
+   "options": [
+    "A) Halollik va rostgo‘ylik tajriba institutida",
+    "B) Qovunchilik va dehqonchilik institutida",
+    "C) Shahar qurilish va me’morlik institutida"
+   ],
+   "answer": "A) Halollik va rostgo‘ylik tajriba institutida"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dar Daraja lug‘atdan qanday so‘zlarni o‘chirmoqchi edi?",
+   "options": [
+    "A) Illat deb ataluvchi so‘zlarni",
+    "B) Chet eldan kirgan so‘zlarni",
+    "C) Qiyin aytiladigan barcha so‘zlarni"
+   ],
+   "answer": "A) Illat deb ataluvchi so‘zlarni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akbarjon yaxshi ko‘rib qolgan qizning ismi kim edi?",
+   "options": [
+    "A) Gu La",
+    "B) Mu Ti",
+    "C) Chinoriy"
+   ],
+   "answer": "A) Gu La"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akbarjon hashar paytida bir kunda qancha g‘isht qo‘ydi?",
+   "options": [
+    "A) Yigirma ming dona g‘isht",
+    "B) O‘n ming dona g‘isht",
+    "C) Besh ming dona g‘isht"
+   ],
+   "answer": "A) Yigirma ming dona g‘isht"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Handalak shahrida Sehrgar Iblis qanday ko‘rinishda paydo bo‘ldi?",
+   "options": [
+    "A) Qulansa hidli va badbo‘y mahluq",
+    "B) Bahaybat va chiroyli pahlavon",
+    "C) Kichkina va kulgili o‘yinchoq"
+   ],
+   "answer": "A) Qulansa hidli va badbo‘y mahluq"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dar Daraja nega poraxo‘rlik va yolg‘onchilikka qarshi dori tayyorlardi?",
+   "options": [
+    "A) Jamiyatni illatlardan tozalash uchun",
+    "B) Boy bo‘lib ketish uchun",
+    "C) Shaharni tark etish uchun"
+   ],
+   "answer": "A) Jamiyatni illatlardan tozalash uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Oq Sochli prokuror Akbarjonni hibsga olmoqchi bo‘ldi?",
+   "options": [
+    "A) Unga tuhmat xati tushgani uchun",
+    "B) Akbarjon qovun o‘g‘irlagani uchun",
+    "C) U institutdan qochgani uchun"
+   ],
+   "answer": "A) Unga tuhmat xati tushgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shar Mandaning o‘z vazifasini suiste’mol qilishi haqida qanday fikrdasiz?",
+   "options": [
+    "A) Noto‘g‘ri, amaldor halol bo‘lishi kerak",
+    "B) To‘g‘ri, rahbar xohlaganini qiladi",
+    "C) Odatiy holat, e’tibor berish shartmas"
+   ],
+   "answer": "A) Noto‘g‘ri, amaldor halol bo‘lishi kerak"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Akbarjonning mehnatdan qochmay g‘isht tergani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, halol mehnat insonni chiniqtiradi",
+    "B) Noto‘g‘ri, u ishlamasligi kerak edi",
+    "C) Faqat buyruq bo‘lgani uchun to‘g‘ri"
+   ],
+   "answer": "A) To‘g‘ri, halol mehnat insonni chiniqtiradi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif illatlarni Sehrgar Iblis timsolida ko‘rsatib nimaga erishgan?",
+   "options": [
+    "A) Yomon odatlarning xunukligini yorqin ochgan",
+    "B) Ertakni shunchaki qo‘rqinchli qilgan",
+    "C) Bolalarni ertak o‘qishdan bezdirgan"
+   ],
+   "answer": "A) Yomon odatlarning xunukligini yorqin ochgan"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akbarjon Sehrgar Iblisni qayerga qamab qo‘ydi?",
+   "options": [
+    "A) Yigirma litrlik shisha ichiga",
+    "B) Temir sandiqning ichiga",
+    "C) Chuqur yer osti g‘origa"
+   ],
+   "answer": "A) Yigirma litrlik shisha ichiga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akbarjon shisha og‘zini nima bilan berkitdi?",
+   "options": [
+    "A) Rezinka tiqin va yelim bilan",
+    "B) Yog‘och qopqoq va loy bilan",
+    "C) Paxta va mato bo‘lagi bilan"
+   ],
+   "answer": "A) Rezinka tiqin va yelim bilan"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nor Von qarori bilan Akbarjonga qanday huquq berildi?",
+   "options": [
+    "A) Umrbod tekinga qovun yeyish",
+    "B) Shahar meri bo‘lib ishlash",
+    "C) Har kuni tekinga avtobusda yurish"
+   ],
+   "answer": "A) Umrbod tekinga qovun yeyish"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akbarjon shifoxonada necha kun behush yotgan edi?",
+   "options": [
+    "A) Qirq kun behush yotgan",
+    "B) O‘n kun behush yotgan",
+    "C) Bir yil behush yotgan"
+   ],
+   "answer": "A) Qirq kun behush yotgan"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Akbarjonning Handalak shahridagi sarguzashtlari aslida nima bo‘lib chiqdi?",
+   "options": [
+    "A) Eshakdan yiqilgach ko‘rgan tushi",
+    "B) Yozgan ertak kitobi",
+    "C) Do‘stlariga aytgan yolg‘on gapi"
+   ],
+   "answer": "A) Eshakdan yiqilgach ko‘rgan tushi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Akbarjon xalq uni osmonga otganda nega qo‘rqib ketdi?",
+   "options": [
+    "A) Yulduzlarga urilib yiqilishdan qo‘rqdi",
+    "B) Qalpoqchasi tushib ketishidan qo‘rqdi",
+    "C) Shahar rahbaridan uyalgani uchun"
+   ],
+   "answer": "A) Yulduzlarga urilib yiqilishdan qo‘rqdi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Akbarjon o‘ziga kelgach, nega birinchi bo‘lib oyisini chaqirdi?",
+   "options": [
+    "A) Onaning mehri har narsadan ustunligi uchun",
+    "B) Unga ovqat olib kelishini so‘rash uchun",
+    "C) Do‘stlarini chaqirib berishi uchun"
+   ],
+   "answer": "A) Onaning mehri har narsadan ustunligi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Akbarjonga o‘z vaqtida haykal qo‘yilishi va e’zozlanishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, ezgu ish qilganlar qadrlanishi kerak",
+    "B) Noto‘g‘ri, unga haykal shart emas edi",
+    "C) Farqi yo‘q, shunchaki bayram bo‘ldi"
+   ],
+   "answer": "A) To‘g‘ri, ezgu ish qilganlar qadrlanishi kerak"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Onajonim bag‘rida erib ketdim» degan jumla nimani anglatadi?",
+   "options": [
+    "A) Ona quchog‘idagi cheksiz baxtni",
+    "B) Issiq havodan charchaganlikni",
+    "C) Kasallikdan xalos bo‘lishni"
+   ],
+   "answer": "A) Ona quchog‘idagi cheksiz baxtni"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Yaxshilik Yomonlik ustidan g‘alaba qildi» iborasi bilan nima deydi?",
+   "options": [
+    "A) Ezgulik baribir yomonlikni yengishini",
+    "B) Shishani hech kim ocha olmasligini",
+    "C) Ertak tugagani va hamma uyquga ketganini"
+   ],
+   "answer": "A) Ezgulik baribir yomonlikni yengishini"
+  }
+ ]
+}

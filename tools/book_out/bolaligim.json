@@ -1,0 +1,447 @@
+{
+ "title": "Bolaligim",
+ "author": "Chingiz Aytmatov",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "bolalik va matonat",
+   "oila va sadoqat",
+   "urush va tarixiy taqdir",
+   "ijod saboqlari",
+   "halol mehnat"
+  ],
+  "theme": "Muallif mashaqqatli bolalik, repressiya va urush sinovlaridan mehnat, mehr-oqibat va matonat orqali o‘tib, insoniylik va ijodiy yuksaklikka erishish g‘oyasini ilgari suradi.",
+  "summary": "Qissada Chingiz Aytmatovning Shakar ovulidagi ilk bolalik yillari, buvisi Oyimxonning mehri va ota-onasining hayoti tasvirlanadi. 1937-yildagi repressiya oqibatida otasi To‘raqul va amakisi Risqulbek hibsga olinadi. Urush yillarida Chingiz yosh bo‘lishiga qaramay soliq yig‘uvchi, pochtachi, o‘qituvchi bo‘lib mehnat qiladi. Bo‘rilar bilan to‘qnashuv, sigirining o‘g‘irlanishi kabi mashaqqatlarni boshdan kechiradi. Keyinchalik u veterinariya va adabiyot sohasida o‘qib, «Jamila», «Sarvqomat dilbarim» kabi mashhur asarlarini o‘z hayotiy tajribalari asosida yaratadi.",
+  "characters": "Chingiz — bosh qahramon va roviy; Oyimxon — buvisi, ovulda mavqeyi baland dona ayol; To‘raqul — otasi, ma'rifatparvar davlat xodimi; Risqulbek — amakisi; Qoraqiz — ammasi; Jamila va Doniyor — urush davri fojiasi va muhabbati qahramonlari.",
+  "conclusion": "Kitob bolaga qiyinchiliklar oldida taslim bo‘lmaslik, mehnatselimlik, kattalarga hurmat va ota-onaga sadoqat tuyg‘ularini uqtiradi. Inson har qanday og‘ir sharoitda ham o‘zligini va qalbidagi poklikni saqlab qolishi kerakligini ko‘rsatadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, magʻrur, o‘ylantiruvchi",
+  "for_whom": "Tarix, inson taqdiri va yozuvchining hayot yo‘liga qiziquvchan, ruhi tetik bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chingizning aql-farosatli buvisining ismi nima edi?",
+   "options": [
+    "A) Oyimxon",
+    "B) Oyimgul",
+    "C) Qoraqiz",
+    "D) Guloyim"
+   ],
+   "answer": "A) Oyimxon"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "1937-yil kuzida amakisi Risqulbekni kimlar olib ketdi?",
+   "options": [
+    "A) Uch militsioner",
+    "B) Yilqichi qarindoshlar",
+    "C) Qishloq raislari",
+    "D) Maktab o‘qituvchilari"
+   ],
+   "answer": "A) Uch militsioner"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Buvisi Chingizni yaylovga yuborayotganda qanday egarga mindirdi?",
+   "options": [
+    "A) Ayrimoch egar",
+    "B) Charm egar",
+    "C) Harbiy egar",
+    "D) Egarsiz otga"
+   ],
+   "answer": "A) Ayrimoch egar"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yaylovda Chingizning tish og‘rig‘ini qaysi tabib davoladi?",
+   "options": [
+    "A) Shaman tabib",
+    "B) Mol doktori",
+    "C) Qishloq vrachi",
+    "D) Ovul mullasi"
+   ],
+   "answer": "A) Shaman tabib"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zotdor «Don ayg‘iri» nima sababdan o‘lib qoldi?",
+   "options": [
+    "A) Zaharli o‘t yegani uchun",
+    "B) Qahraton sovuq urgani uchun",
+    "C) Bo‘rilar talagani uchun",
+    "D) Qarib qolgani uchun"
+   ],
+   "answer": "A) Zaharli o‘t yegani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Chingiz tarjimonlik qilgani uchun birinchi maosh sifatida nima oldi?",
+   "options": [
+    "A) Yog‘li ustuxon",
+    "B) Bir bo‘lak non",
+    "C) Mayda pul",
+    "D) Yangi egar"
+   ],
+   "answer": "A) Yog‘li ustuxon"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Otasi To‘raqul nima uchun doimo dalada, xalq ichida yurardi?",
+   "options": [
+    "A) Paxta ishlarini tashkil qilish uchun",
+    "B) Ov qilish uchun",
+    "C) Shaharga ketish uchun",
+    "D) Dam olish uchun"
+   ],
+   "answer": "A) Paxta ishlarini tashkil qilish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Moskvada otasi Chingizni qaysi filmga olib bordi?",
+   "options": [
+    "A) Solovey-solovushka",
+    "B) Birinchi muallim",
+    "C) Sarvqomat dilbarim",
+    "D) Gulsari"
+   ],
+   "answer": "A) Solovey-solovushka"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Chingiz kinoni ko‘rib nima uchun o‘kirib yig‘lab yubordi?",
+   "options": [
+    "A) Qahramonlar fojiasi qattiq ta'sir qilgani uchun",
+    "B) Zaldan chiqib ketmoqchi bo‘lgani uchun",
+    "C) Otasi urushib bergani uchun",
+    "D) Kinodan qo‘rqib ketgani uchun"
+   ],
+   "answer": "A) Qahramonlar fojiasi qattiq ta'sir qilgani uchun"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Chingizning ikkala tilni baravar o‘rgangani uning kelajagiga qanday ta'sir qildi?",
+   "options": [
+    "A) Ikki madaniyatni bog‘lashga yordam berdi",
+    "B) Faqat qiyinchilik keltirdi",
+    "C) O‘qishiga xalaqit berdi",
+    "D) Hech qanday ta'sir qilmadi"
+   ],
+   "answer": "A) Ikki madaniyatni bog‘lashga yordam berdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Onasi bilan aravada ketayotganda ularga qaysi yirtqich ilakishdi?",
+   "options": [
+    "A) Bo‘ri",
+    "B) Ayiq",
+    "C) Tulki",
+    "D) Yo‘lbars"
+   ],
+   "answer": "A) Bo‘ri"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sukra sigiri o‘g‘irlangach, Chingiz yelkasiga miltiq olib nima qilmoqchi bo‘ldi?",
+   "options": [
+    "A) O‘g‘rini otib tashlamoqchi bo‘ldi",
+    "B) Ovga chiqmoqchi bo‘ldi",
+    "C) Miltiqni sotmoqchi bo‘ldi",
+    "D) Politsiyaga topshirmoqchi bo‘ldi"
+   ],
+   "answer": "A) O‘g‘rini otib tashlamoqchi bo‘ldi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yo‘lda uchragan qariya Chingizga nima uchun odam o‘ldirma dedi?",
+   "options": [
+    "A) Yomonlik va jazosizlikdan qaytarish uchun",
+    "B) Miltiqni tortib olish uchun",
+    "C) O‘zi qo‘rqqani uchun",
+    "D) Sigirni topib berish uchun"
+   ],
+   "answer": "A) Yomonlik va jazosizlikdan qaytarish uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Urush yillarida rais Chingizga ovulda nima tarqatishni topshirdi?",
+   "options": [
+    "A) Qoraxatlarni o‘qib tarqatishni",
+    "B) Oziq-ovqat mahsulotlarini",
+    "C) Urush qurollarini",
+    "D) Kiyim-kechaklarni"
+   ],
+   "answer": "A) Qoraxatlarni o‘qib tarqatishni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kattalarning davlat pulini yosh Chingizga topshirib yuborishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Odamlar niyati beg‘ubor va pokligini",
+    "B) Kattalar ma'suliyatsiz bo‘lganini",
+    "C) Pulning qadri yo‘qligini",
+    "D) Boshqa odam topilmaganini"
+   ],
+   "answer": "A) Odamlar niyati beg‘ubor va pokligini"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif qoraxat eltganda ayollarning holatini qanday tasvirlaydi?",
+   "options": [
+    "A) Vahm va chuqur qayg‘u bilan",
+    "B) Yengil va kulgili kayfiyatda",
+    "C) Bevaqt va loqayd tarzda",
+    "D) Quvnoq va umidli ruhiyotda"
+   ],
+   "answer": "A) Vahm va chuqur qayg‘u bilan"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Chingiz urush paytida qaysi ovul maktabida o‘qituvchilik qildi?",
+   "options": [
+    "A) Archali maktabida",
+    "B) Shakar maktabida",
+    "C) Pokrovka maktabida",
+    "D) Jiqda maktabida"
+   ],
+   "answer": "A) Archali maktabida"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Saydali bilan Chingiz daryo sohilida nima sababdan yoqalashtilar?",
+   "options": [
+    "A) Muzdek suvdan opichlab o‘tish uchun",
+    "B) Oziq-ovqatni bo‘lishish uchun",
+    "C) Dars jadvalini tuzish uchun",
+    "D) Otni kim minishi uchun"
+   ],
+   "answer": "A) Muzdek suvdan opichlab o‘tish uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "«Birinchi muallim» qissasi yozilishiga qaysi tajriba turtki bo‘lgan?",
+   "options": [
+    "A) Archalidagi muallimlik hissiyotlari",
+    "B) Moskvadagi talabalik yillari",
+    "C) Soliq yig‘ishdagi qiyinchiliklar",
+    "D) Bozorga borish voqealari"
+   ],
+   "answer": "A) Archalidagi muallimlik hissiyotlari"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Urush davri mashaqqatlari aks etgan lavhalar matnga qanday ruh beradi?",
+   "options": [
+    "A) Teran samimiyat va hayotiy drama",
+    "B) Yengil o‘yin-kulgi kayfiyati",
+    "C) Dahshatli va qo‘rqinchli vahima",
+    "D) Zerikarli va quruq bayon"
+   ],
+   "answer": "A) Teran samimiyat va hayotiy drama"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chorg‘in mulla aytib bergan ertakda qahramon nimaga aylanib qoladi?",
+   "options": [
+    "A) Eshakka",
+    "B) Bo‘riga",
+    "C) Tulkiga",
+    "D) Tuyaga"
+   ],
+   "answer": "A) Eshakka"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jambul bozorida domla talabalarga qanday amaliyot o‘tkazardi?",
+   "options": [
+    "A) Mollarga to‘g‘ri ta'rif berish mashqi",
+    "B) Savdolashish va narx kelishish",
+    "C) Eshak haydash musobaqasi",
+    "D) Meva va sabzavot tanlash"
+   ],
+   "answer": "A) Mollarga to‘g‘ri ta'rif berish mashqi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chingiz ov paytida tulkini nima uchun qochirib yubordi?",
+   "options": [
+    "A) Tulkining go‘zalligiga mahliyo bo‘lib",
+    "B) Otidan yiqilib tushgani uchun",
+    "C) Itlardan qo‘rqib ketgani uchun",
+    "D) Pochchasi to‘xtatgani uchun"
+   ],
+   "answer": "A) Tulkining go‘zalligiga mahliyo bo‘lib"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dolon dovonida mast haydovchining muhabbat qissasi qaysi asarga poydevor bo‘ldi?",
+   "options": [
+    "A) Sarvqomat dilbarim",
+    "B) Jamila",
+    "C) Yuzma-yuz",
+    "D) Alvido Gulsari"
+   ],
+   "answer": "A) Sarvqomat dilbarim"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "«Jamila» qissasi dastlab qanday nomlangan edi?",
+   "options": [
+    "A) Obon",
+    "B) Shakarlik kelin",
+    "C) Doniyor",
+    "D) Dala qo‘shig‘i"
+   ],
+   "answer": "A) Obon"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jamilaning Doniyor bilan ketish qarorini qanday baholash mumkin?",
+   "options": [
+    "A) Samimiy muhabbat va erkinlik tanlovi",
+    "B) Oila qoidalariga xiyonat qilish",
+    "C) Urushdan qochish istagi",
+    "D) Shunchaki o‘ylamay qilingan ish"
+   ],
+   "answer": "A) Samimiy muhabbat va erkinlik tanlovi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Klassik» yozuvchining minbardagi tanqidiy nutqida nima aks etgan?",
+   "options": [
+    "A) Mafkuraviy tazyiq va ko‘rolmaslik",
+    "B) To‘g‘ri va adolatli maslahat",
+    "C) Asar g‘oyasiga bo‘lgan hurmat",
+    "D) Yozuvchini qo‘llab-quvvatlash"
+   ],
+   "answer": "A) Mafkuraviy tazyiq va ko‘rolmaslik"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tvardovskiyning asarlarni avval Moskvada ruscha chiqarish maslahati qanday bo‘ldi?",
+   "options": [
+    "A) Oqilona, asarlarni taqiqdan saqladi",
+    "B) Noto‘g‘ri, adibga zarar yetkazdi",
+    "C) Bekorchi va foydasiz maslahat edi",
+    "D) Asar qiymatini pasaytirib qo‘ydi"
+   ],
+   "answer": "A) Oqilona, asarlarni taqiqdan saqladi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif xalq og‘zaki adabiyoti va qo‘shiqlarini qanday ta'riflaydi?",
+   "options": [
+    "A) Ruhiy ma'naviyat va donolik manbayi",
+    "B) Eski va keraksiz afsonalar",
+    "C) Faqat bolalar uchun mo‘ljallangan",
+    "D) Zamonaviy hayotga zid narsa"
+   ],
+   "answer": "A) Ruhiy ma'naviyat va donolik manbayi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jamilaning haqiqiy hayotdagi prototipi qaysi ovuldan kelin bo‘lib tushgan edi?",
+   "options": [
+    "A) Ko‘ksoy ovulidan",
+    "B) Shakar ovulidan",
+    "C) Jiyda ovulidan",
+    "D) Pokrovka ovulidan"
+   ],
+   "answer": "A) Ko‘ksoy ovulidan"
+  }
+ ]
+}

@@ -1,0 +1,417 @@
+{
+ "title": "Leonardo da Vinchi",
+ "author": "Navro‘z Ergash o‘g‘li",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-13 yosh",
+  "topics": [
+   "shaxsiy rivojlanish",
+   "ilm-fan",
+   "san’at",
+   "mehnatsevarlik",
+   "ertaklar"
+  ],
+  "theme": "Izlanish, mehnatsevarlik va uzluksiz o‘rganish insonni buyuklikka yetaklaydi.",
+  "summary": "Asarda uyg‘onish davrining buyuk dahosi Leonardo da Vinchining bolaligi, ustoz Verrokkioga shogird tushishi va san’atdagi ilk qadamlari hikoya qilinadi. U Florensiya va Milanda turli loyihalar, haykallar, mashhur suratlar hamda ixtirolar ustida ishlaydi. Uning tajribalari, muvaffaqiyatlari va omadsizliklari orqali izlanish va uzluksiz mehnatning ahamiyati ochib beriladi. Kitob so‘ngida rassom qalamiga mansub hikmatli ertaklar keltirilgan.",
+  "characters": "Leonardo da Vinchi — izlanuvchan va ko‘p qirrali daho. Ser Pyero — Leonardoning otasi, mashhur notarius. Franchesko amaki — Leonardoga tabiatni sevdirgan inson. Verrokkio — Leonardoning mehribon va talabchan ustozi. Zardusht — Leonardoning ixtirochi va sodiq do‘sti.",
+  "conclusion": "Kitob bolada ilm-fanga va san’atga bo‘lgan qiziqishni oshiradi. U harakat va halol mehnat orqali qiyinchiliklarni yengishni hamda xatolardan saboq chiqarishni o‘rganadi.",
+  "difficulty": "o‘rta",
+  "mood": "maroqli, ilhomlantiruvchi, o‘ylantiruvchi",
+  "for_whom": "Tarixiy shaxslar hayoti, san’at, ixtirolar hamda ibratli ertaklarga qiziqadigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Leonardoning otasi ser Pyero qanday kasb egasi edi?",
+   "options": [
+    "A) Notarius",
+    "B) Shifokor",
+    "C) Musavvir"
+   ],
+   "answer": "A) Notarius"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Leonardoga tabiatni o‘rganishda kim hamrohlik qilardi?",
+   "options": [
+    "A) Otasi",
+    "B) Franchesko amakisi",
+    "C) O‘qituvchisi"
+   ],
+   "answer": "B) Franchesko amakisi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Leonardoning bolaligidagi voqealar qanday ketma-ketlikda yuz berdi?",
+   "options": [
+    "A) G‘orga kirdi, shogird tushdi",
+    "B) Shogird tushdi, g‘orga kirdi",
+    "C) Rasm chizdi, notarius bo‘ldi"
+   ],
+   "answer": "A) G‘orga kirdi, shogird tushdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Leonardoni Florensiyadagi qaysi ustozga shogirdlikka berishdi?",
+   "options": [
+    "A) Lorenzo Medichi",
+    "B) Verrokkio",
+    "C) Mikelanjelo"
+   ],
+   "answer": "B) Verrokkio"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Verrokkioning ustaxonasida Leonardo qaysi sirli yozuvni kashf qildi?",
+   "options": [
+    "A) Teskari o‘ngdan chapga",
+    "B) Lotincha she’riy yozuv",
+    "C) Sifatli bo‘yoq tayyorlash"
+   ],
+   "answer": "A) Teskari o‘ngdan chapga"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Leonardo g‘or og‘zida nega ikkilanib qoldi?",
+   "options": [
+    "A) Qo‘rquv va qiziqish tufayli",
+    "B) Qorong‘ilikdan sham izladi",
+    "C) Yo‘ldan adashib qolgani uchun"
+   ],
+   "answer": "A) Qo‘rquv va qiziqish tufayli"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Verrokkio nega endi rasm chizmasligini aytdi?",
+   "options": [
+    "A) Shogirdi undan o‘tib ketgani uchun",
+    "B) Qo‘li og‘rib qolgani uchun",
+    "C) Boshqa kasbga o‘tmoqchi bo‘ldi"
+   ],
+   "answer": "A) Shogirdi undan o‘tib ketgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Leonardoning g‘ildirakka ajdaho rasmini chizgani to‘g‘rimi?",
+   "options": [
+    "A) Ha, u mahoratini ko‘rsatdi",
+    "B) Yo‘q, otasini qo‘rqitmasligi kerak edi",
+    "C) Boshqa narsa chizgani ma’qul edi"
+   ],
+   "answer": "A) Ha, u mahoratini ko‘rsatdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Xayrli o‘tkazilgan hayot abadiydir» iborasi nimani anglatadi?",
+   "options": [
+    "A) Mehnat bilan yashash baxtini",
+    "B) Doim dam olish kerakligini",
+    "C) Ota kasbini davom ettirishni"
+   ],
+   "answer": "A) Mehnat bilan yashash baxtini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Leonardo Verrokkio ustaxonasida dastlab nimalarni o‘rgandi?",
+   "options": [
+    "A) Bo‘yoq va tayyorlash usullarini",
+    "B) Notariuslik hujjatlarini tuzishni",
+    "C) Saroy bayramlarini tashkil qilishni"
+   ],
+   "answer": "A) Bo‘yoq va tayyorlash usullarini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Leonardo Milanga borishda do‘stiga qanday maktublar yozdi?",
+   "options": [
+    "A) Uydirma sarguzashtlar haqida",
+    "B) Notariuslik ishlari haqida",
+    "C) Kasalliklar haqida"
+   ],
+   "answer": "A) Uydirma sarguzashtlar haqida"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Oqsuvsar ko‘targan xonim» suratida kim tasvirlangan edi?",
+   "options": [
+    "A) Sesiliya Gallerani",
+    "B) Mona Liza",
+    "C) Avliyo Anna"
+   ],
+   "answer": "A) Sesiliya Gallerani"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Leonardo Zardusht bilan birga saroy uchun nima yasadi?",
+   "options": [
+    "A) Mexanik sher",
+    "B) Katta soat",
+    "C) Oltin toj"
+   ],
+   "answer": "A) Mexanik sher"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«So‘nggi kechki taom» freskasi qaysi binosining devoriga chizildi?",
+   "options": [
+    "A) Monastir yemakxonasiga",
+    "B) Gersog saroyiga",
+    "C) Ustaxonaga"
+   ],
+   "answer": "A) Monastir yemakxonasiga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Leonardo Milan shahrida qaysi sohalarda faoliyat yuritdi?",
+   "options": [
+    "A) Rassom, muhandis va haykaltarosh",
+    "B) Faqat notarius va savdogar",
+    "C) Shifokor va harbiy qo‘mondon"
+   ],
+   "answer": "A) Rassom, muhandis va haykaltarosh"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Leonardo nega suv osti kemasi chizmalarini yashirdi?",
+   "options": [
+    "A) Yomon maqsadlarda ishlatilmasligi uchun",
+    "B) Chizmalar tugallanmagani uchun",
+    "C) Gersogga yoqmagani uchun"
+   ],
+   "answer": "A) Yomon maqsadlarda ishlatilmasligi uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bosh rohib nega Leonardodan gersogga shikoyat qildi?",
+   "options": [
+    "A) Rasm sekin chizilayotgani uchun",
+    "B) Zalda shovqin solgani uchun",
+    "C) Bo‘yoqlarni buzgani uchun"
+   ],
+   "answer": "A) Rasm sekin chizilayotgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Leonardoning anatomiyani o‘rganish uchun jasadlarni ko‘rishi to‘g‘rimi?",
+   "options": [
+    "A) Ha, bu ilm uchun kerak edi",
+    "B) Yo‘q, bu vaqtni yo‘qotish edi",
+    "C) Faqat rasm chizishi kerak edi"
+   ],
+   "answer": "A) Ha, bu ilm uchun kerak edi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Yaxshi do‘st insonning yarmi deganday gap» iborasi nimani bildiradi?",
+   "options": [
+    "A) Do‘stlikning yuksak qadrini",
+    "B) Do‘stsiz yashash osonligini",
+    "C) Faqat ishda yordam berishni"
+   ],
+   "answer": "A) Do‘stlikning yuksak qadrini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Leonardo Yahudo obrazini chizish uchun nega uzoq izlandi?",
+   "options": [
+    "A) Xoin yuzini topish qiyin bo‘lgani uchun",
+    "B) Ruhoniy unga xalaqit bergani uchun",
+    "C) Bo‘yoqlar tugab qolgani uchun"
+   ],
+   "answer": "A) Xoin yuzini topish qiyin bo‘lgani uchun"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Leonardo Dovud haykalini qayerga qo‘yishni taklif qilgan edi?",
+   "options": [
+    "A) Lanzi lojasi ostiga",
+    "B) Maydonning o‘rtasiga",
+    "C) Shahar darvozasiga"
+   ],
+   "answer": "A) Lanzi lojasi ostiga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mikelanjelo bilan Leonardo o‘rtasida qanday munosabat bor edi?",
+   "options": [
+    "A) Raqobat va dushmanlik",
+    "B) Yaqin do‘stlik",
+    "C) Ustoz va shogirdlik"
+   ],
+   "answer": "A) Raqobat va dushmanlik"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Angiari jangi» freskasi nega buzilib ketdi?",
+   "options": [
+    "A) Olov issig‘idan bo‘yoq oqdi",
+    "B) Devor qulab tushdi",
+    "C) Yomg‘ir yog‘ib yuvib ketdi"
+   ],
+   "answer": "A) Olov issig‘idan bo‘yoq oqdi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Burgut haqidagi ertakda keksa burgut qayerga uchdi?",
+   "options": [
+    "A) Quyosh tomon",
+    "B) Oqayotgan daryo tomon",
+    "C) Qorong‘i g‘or sari"
+   ],
+   "answer": "A) Quyosh tomon"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ertakdagi ayiqcha ari chaqqach qanday xulosaga keldi?",
+   "options": [
+    "A) Shirinlik uchun badal to‘lanadi",
+    "B) Har doim yolg‘iz yurish kerak",
+    "C) Asalni quyoshda yeyish lozim"
+   ],
+   "answer": "A) Shirinlik uchun badal to‘lanadi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oqsuvsar nega ovchilarga ushlanib qoldi?",
+   "options": [
+    "A) Mo‘ynasi iflos bo‘lishidan qo‘rqib",
+    "B) Tez yugura olmagani uchun",
+    "C) Inini topa olmagani uchun"
+   ],
+   "answer": "A) Mo‘ynasi iflos bo‘lishidan qo‘rqib"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Chaqmoqtosh va qayroqtosh ertagidan qanday saboq olinadi?",
+   "options": [
+    "A) Sabr qilsa, meva beradi",
+    "B) Darhol g‘azablanish kerak",
+    "C) Ishni ertaga qoldirish lozim"
+   ],
+   "answer": "A) Sabr qilsa, meva beradi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Leonardo o‘z hayotiga qanday baho berdi?",
+   "options": [
+    "A) Doim izlanish va mehnatda bo‘ldi",
+    "B) Faqat dam olib yashadi",
+    "C) Notarius bo‘lmaganidan afsuslandi"
+   ],
+   "answer": "A) Doim izlanish va mehnatda bo‘ldi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Inson imkonsiz narsani xohlamasligi kerak» iborasi qanday ma’noga ega?",
+   "options": [
+    "A) Imkoniyatni to‘g‘ri baholash lozim",
+    "B) Har qanday orzu noto‘g‘ri",
+    "C) Mehnat qilish behuda narsa"
+   ],
+   "answer": "A) Imkoniyatni to‘g‘ri baholash lozim"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Tishlar va til haqidagi ertak bola uchun nimani o‘rgatadi?",
+   "options": [
+    "A) Yolg‘on gapirmaslik va o‘ylab so‘zlashni",
+    "B) Ko‘proq gapirishni",
+    "C) Faqat tishlarni parvarish qilishni"
+   ],
+   "answer": "A) Yolg‘on gapirmaslik va o‘ylab so‘zlashni"
+  }
+ ]
+}

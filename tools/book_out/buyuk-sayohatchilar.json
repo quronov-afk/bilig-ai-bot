@@ -1,0 +1,287 @@
+{
+ "title": "Buyuk sayohatchilar",
+ "author": "Mixail Zoshchenko",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "8-10 yosh",
+  "topics": [
+   "sayohat",
+   "do‘stlik",
+   "ilm-fan",
+   "kattalarga hurmat",
+   "oila"
+  ],
+  "theme": "Kattalarning ruxsatisiz va yetarli bilimsiz uzoq safarga chiqish xavfli hamda befoydadir.",
+  "summary": "Styopka ismli bola qo‘shni bolalar Minka va Lelyaga Yer yumaloq ekanini aytib, dunyo bo‘ylab sayohatga chiqishni taklif qiladi. Ular ota-onalari yo‘qligida yegulik va idish-tovoqlarni qopga solib o‘rmon bo‘ylab yo‘lga tushishadi. Safar davomida og‘ir qopni ko‘tarish, arining chaqishi, tungi qo‘rquv kabi qiyinchiliklarga duch kelishadi. Kechasi Styopka adashmaslik uchun oyog‘ini ketayotgan tomonga uzatib uplaydi. Minka va Lelya uyga qaytish uchun uning oyoqlarini chuvab, orqaga burib qo‘yishadi. Ertalab ular Styopka ko‘rsatgan tomonga yurib, aravaga chiqishadi va o‘z qishloqlariga qaytib kelishadi. Ota-onasi va buvisi ularga ilm olmay, kattalardan ruxsat so‘ramay safarga chiqish xato ekanini tushuntiradi.",
+  "characters": "Styopka — sayohat tashabbuskori, bilag‘on bola; Minka — hikoyachi bola; Lelya — Minkaning opasi; Tuzik — Styopkaning iti; Ota-ona va buvi — bolalarga to‘g‘ri yo‘l ko‘rsatuvchi kattalar.",
+  "conclusion": "Asar bolalarga har bir ishni bilim bilan va kattalarning roziligi bilan qilish kerakligini o‘rgatadi. Bola ma'suliyatsizlikning oqibatini va kitob o‘qib ilm olishning naqadar muhimligini tushunib yetadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, yengil",
+  "for_whom": "Sarguzashtli va kulgili hikoyalarni yoqtiradigan, dunyo haqida qiziqadigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Styopka Minkaga Yer haqida nima dedi?",
+   "options": [
+    "A) Yer yumaloq shaklda",
+    "B) Yer to‘rtburchak shaklda",
+    "C) Yer juda kichkina"
+   ],
+   "answer": "A) Yer yumaloq shaklda"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Minka sayohatga borish uchun Styopkaga nima berdi?",
+   "options": [
+    "A) Kichkina pichoqcha",
+    "B) Rangli qalamlar",
+    "C) Pul qutichasi"
+   ],
+   "answer": "A) Kichkina pichoqcha"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lelya sayohat uchun qancha pul oldi?",
+   "options": [
+    "A) Besh so‘m",
+    "B) Uch so‘m",
+    "C) O‘n so‘m"
+   ],
+   "answer": "B) Uch so‘m"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolalar qopga nimalarni joylashtirishdi?",
+   "options": [
+    "A) Non, shakar va idishlar",
+    "B) O‘yinchoqlar va kiyimlar",
+    "C) Kitoblar va gilamlar"
+   ],
+   "answer": "A) Non, shakar va idishlar"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Styopka nega sayohatni ertasi kuni boshlamoqchi bo‘ldi?",
+   "options": [
+    "A) Kattalar uyda bo‘lmasligi uchun",
+    "B) Havo juda issiq bo‘lgani uchun",
+    "C) Yo‘l xaritasi yo‘qligi uchun"
+   ],
+   "answer": "A) Kattalar uyda bo‘lmasligi uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Minka safarga borishni judayam xohladi?",
+   "options": [
+    "A) Do‘stining gaplari qiziq tuyulgani uchun",
+    "B) Uydan qochishni istagani uchun",
+    "C) Styopkadan qo‘rqqani uchun"
+   ],
+   "answer": "A) Do‘stining gaplari qiziq tuyulgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bolalarning uyidagilarga aytmay safarga chiqishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, kattalardan ruxsat olish shart",
+    "B) To‘g‘ri, bu haqiqiy mardlik",
+    "C) Farqi yo‘q, muhimi sarguzasht"
+   ],
+   "answer": "A) Noto‘g‘ri, kattalardan ruxsat olish shart"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Minka qopni ko‘targanda nima sodir bo‘ldi?",
+   "options": [
+    "A) Yiqilib, idishlarni sindirdi",
+    "B) Qopni yirtib qo‘ydi",
+    "C) Tez yugurib ketdi"
+   ],
+   "answer": "A) Yiqilib, idishlarni sindirdi"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tuzik qopdagi qaysi mahsulotni yeb qo‘ydi?",
+   "options": [
+    "A) Go‘shtni",
+    "B) Yog‘ni",
+    "C) Nonni"
+   ],
+   "answer": "B) Yog‘ni"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Minkaning yuzini ari chaqqanda nima chaplashdi?",
+   "options": [
+    "A) Muzdek loy",
+    "B) Qatiq",
+    "C) Toza suv"
+   ],
+   "answer": "A) Muzdek loy"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolalar safar davomida qanday qiyinchiliklarga uchrashdi?",
+   "options": [
+    "A) Yuk og‘irligi va ari chaqishi",
+    "B) Qor yog‘ishi va daryo toshishi",
+    "C) Qaroqchilar va bo‘rilar hujumi"
+   ],
+   "answer": "A) Yuk og‘irligi va ari chaqishi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Nega kechasi olov yoqishning iloji bo‘lmadi?",
+   "options": [
+    "A) Quyosh botgani uchun lupa qizmadi",
+    "B) Gugurt ho‘l bo‘lib qolgani uchun",
+    "C) O‘rmonda o‘tin bo‘lmagani uchun"
+   ],
+   "answer": "A) Quyosh botgani uchun lupa qizmadi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Styopka yotganda nega oyog‘ini oldinga uzatib yotardi?",
+   "options": [
+    "A) Boradigan yo‘nalishni yo‘qotmaslik uchun",
+    "B) Shunday yotish qulay bo‘lgani uchun",
+    "C) Oyog‘i og‘riganidan dam alishi uchun"
+   ],
+   "answer": "A) Boradigan yo‘nalishni yo‘qotmaslik uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Minka va Lelya nega Styopkaning oyog‘ini burib qo‘yishdi?",
+   "options": [
+    "A) Ortga, uyga qaytish uchun",
+    "B) Styopkani hazillashib uyg‘otish uchun",
+    "C) Boshqa yo‘ldan sayohat qilish uchun"
+   ],
+   "answer": "A) Ortga, uyga qaytish uchun"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalar ortga qaytishda qanday ulovdan foydalanishdi?",
+   "options": [
+    "A) Arava bilan",
+    "B) Ot bilan",
+    "C) Kema bilan"
+   ],
+   "answer": "A) Arava bilan"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Safardan keyin Tuzik necha kun uxladi?",
+   "options": [
+    "A) Ikki kun",
+    "B) Bir kun",
+    "C) Uch kun"
+   ],
+   "answer": "A) Ikki kun"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Styopka qishloqqa qaytgach nega hayron bo‘lib qoldi?",
+   "options": [
+    "A) Yer sharini aylanib chiqdik deb o‘yladi",
+    "B) Yo‘ldan adashganini birdan tushundi",
+    "C) Uyidagilar kutib olganidan qo‘rqdi"
+   ],
+   "answer": "A) Yer sharini aylanib chiqdik deb o‘yladi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Onasining fikricha, sayohatga chiqishdan oldin nima qilish kerak?",
+   "options": [
+    "A) Puxta bilim va ilm olish kerak",
+    "B) Ko‘proq pul yig‘ish kerak",
+    "C) Yaxshi it sotib olish kerak"
+   ],
+   "answer": "A) Puxta bilim va ilm olish kerak"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Buvining «geografiyani bilmay safarga chiqish fojia bilan tugaydi» degan gapi nimani ko‘rsatadi?",
+   "options": [
+    "A) Ilmsiz qilingan ishning xavfliligini",
+    "B) Bolalarga sayohat umuman taqiqlanganini",
+    "C) Geografiya eng qiyin fan ekanini"
+   ],
+   "answer": "A) Ilmsiz qilingan ishning xavfliligini"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Hikoyachi bolalarning sarguzashtini qanday kayfiyatda tasvirlagan?",
+   "options": [
+    "A) Samimiy va kulgili tarzda",
+    "B) Qo‘rqinchli va g‘amgin tarzda",
+    "C) Jiddiy va qayg‘uli tarzda"
+   ],
+   "answer": "A) Samimiy va kulgili tarzda"
+  }
+ ]
+}

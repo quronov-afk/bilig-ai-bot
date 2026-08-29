@@ -1,0 +1,28 @@
+{
+ "title": "Xorazmiy",
+ "author": "0 bilan tanishuv. Dinara Muminova",
+ "genre": "hikoya",
+ "age_group": "3",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "4-6",
+  "age_hint": "4-6",
+  "topics": [
+   "ilm-fan",
+   "matematika",
+   "qiziquvchanlik",
+   "tabiat",
+   "sonlar"
+  ],
+  "theme": "Nol soni yo‘q narsani anglatuvchi hamda boshqa sonlar qiymatini oshiruvchi muhim va go‘zal tushunchadir.",
+  "summary": "Kichik Al-Xorazmiy Paxmoq laqabli mushugi bilan birga yashaydi va sonlarni juda yaxshi ko‘radi. Yoz kelganda u olmalarni sanash uchun tog‘ga yo‘l oladi. Yo‘lda 9 ta terak, 8 ta qo‘y, 7 ta chigirtka, 6 ta o‘rgimchak to‘ri, 5 ta lola, 4 ta kapalak, 3 ta qo‘ng‘iz va 2 ta qush bolasini uchratadi. Lekin tog‘da birorta ham olma topolmaydi. Olma yo‘qligidan xafa bo‘lib kitob o me shadow hind kitobida 0 (nol) soni haqida o‘qib oladi. Nol yo‘q narsani bildirishini hamda sonlar yonida tursa ularni kattalashtirishini tushunib yetadi. Tog‘da olmalar soni 0 ta ekanini bilib, yo‘q narsani ham sanash mumkinligini anglaydi. Keyinchalik tog‘da olmalar pishadi va Xorazmiy endi yulduzlarni sanashga yo‘l oladi.",
+  "characters": "Al-Xorazmiy — sonlarni yaxshi ko‘radigan, qiziquvchan va zukko bola. Paxmoq — Al-Xorazmiyning sodiq va hamroh mushugi.",
+  "conclusion": "Asar kitobxon kichintoylarga matematikadagi nol (0) sonining mohiyatini va atrofdagi olamni o‘rganishda izlanuvchan bo‘lishni o‘rgatadi. Bola yo‘q narsalarni ham matematika yordamida ifodalash mumkinligini va bilimsizlikdan xafa bo‘lmay, kitob orqali javob topish kerakligini anglaydi.",
+  "difficulty": "oson",
+  "mood": "quvnoq, ma‘rifiy",
+  "for_whom": "Sonlarni endi o‘rganayotgan, tabiat va sarguzashtlarga qiziqadigan hamda dunyo haqida ko‘p savol beradigan kichintoylar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Al-Xorazmiy tog‘da olma topa olmaganida nima uchun xafa bo‘ldi va u nol (0) soni haqida kitobdan nimani o‘rganib oldi?"
+}

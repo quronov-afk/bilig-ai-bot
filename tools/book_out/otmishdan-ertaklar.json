@@ -1,0 +1,447 @@
+{
+ "title": "O‘tmishdan ertaklar",
+ "author": "Abdulla Qahhor",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14 yosh",
+  "topics": [
+   "bolalik",
+   "tarix va o‘tmish",
+   "mehnat va oila",
+   "ilm-fan va ma'rifat",
+   "odamiylik"
+  ],
+  "theme": "Inson har qanday og‘ir ijtimoiy-tarixiy sharoitda va qiyinchiliklarda ham ma'rifatga intilishi, halol va sabrli bo‘lishi lozim.",
+  "summary": "Asar muallifning Farg‘ona qishloqlarida kechgan bolaligi va o‘tmish xotiralari haqida hikoya qiladi. Dastlab Yaypanda novvoy va temirchi do‘konlarida kechgan qiyin kunlar, turli sabablarga ko‘ra oilaning tez-tez ko‘chib yurishi, jamiyatdagi tengsizlik hamda Jahon urushi yillaridagi iqtisodiy og‘irliklar tasvirlanadi. Keyinchalik qahramon Qo‘qonga ko‘chib o‘tadi, u yerda bosmachilik davri, ocharchilik hamda vaboning dahshatlarini o‘z ko‘zi bilan ko‘radi. Oila qanchalik og‘ir turmush kechirmasin, ota-onasi uni o‘qitishga, ilm berishga harakat qiladi. Nihoyat, bola yangi ochilgan dorilmuallimin va Kommuna maktablarida ta'lim olib, yangi hayotga, ma'rifat yo‘liga qadam qo‘yadi va dorilmuallimin talabasi bo‘lib tanlab olinadi.",
+  "characters": "Abdulla (bosh qahramon, bola) - ziyrak, kuzatuvchan, ilmga intiluvchan bola; Ota (usta temirchi) - mehnatkash, adolatli, o‘g‘lining o‘qishini qo‘llab-quvvatlovchi ota; Ona - ro‘zg‘or tashvishlarini tortuvchi, farzandidan xavotirda yashaydigan mehribon ayol.",
+  "conclusion": "Ushbu asar bolani o‘tmish tarixini qadrlashga, bugungi dorulamon va farovon kunlarga shukronalik keltirishga o‘rgatadi. Shuningdek, ma'rifat va ilm olish yo‘lidagi intilish har qanday qiyinchilikni yengib o‘tishga kuch berishini ko‘rsatadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tarixiy voqealar, o‘tmish hayoti va inson taqdiri haqida o‘ylashni xush ko‘radigan, ma'rifatga intiluvchan kitobxonlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallifga xalq o‘tmishiga nazar solishda kimning asarlari ko‘zoynak bo‘ldi?",
+   "options": [
+    "A) Anton Chexovning asarlari",
+    "B) Lev Tolstoyning asarlari",
+    "C) Aleksandr Pushkinning asarlari",
+    "D) Nikolay Gogolning asarlari"
+   ],
+   "answer": "A) Anton Chexovning asarlari"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bosh qahramon pashsha tutib piston chaqqanda nima sodir bo‘ldi?",
+   "options": [
+    "A) Uning o‘zi jarohatlandi",
+    "B) Onasi cho‘chib rayhon ichiga tushdi",
+    "C) Dadasining qulog‘i kar bo‘ldi",
+    "D) Olim buva uydan yugurib chiqdi"
+   ],
+   "answer": "B) Onasi cho‘chib rayhon ichiga tushdi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otasi bolaning jarohatlangan boldiriga nima bosib bog‘lab qo‘ydi?",
+   "options": [
+    "A) Kigiz kuydirib bosdi",
+    "B) Sovuq suv bosdi",
+    "C) Moy surtib bog‘ladi",
+    "D) Paxta qo‘yib bog‘ladi"
+   ],
+   "answer": "A) Kigiz kuydirib bosdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olim buva nima uchun temirchining oilasini hovlidan haydab soldi?",
+   "options": [
+    "A) Qiziga tegishdi deb o‘ylagani uchun",
+    "B) Uy haqini to‘lamagani uchun",
+    "C) Shayton arava sotib olgani uchun",
+    "D) Hovlini harob qilgani uchun"
+   ],
+   "answer": "A) Qiziga tegishdi deb o‘ylagani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolaning Yaypanga ko‘chib kelgandan keyingi kechinmalarini tartiblang.",
+   "options": [
+    "A) Qo‘rquv, yolg‘izlik, ko‘nikish",
+    "B) Shodlik, erkinlik, g‘azab",
+    "C) Keksa holdan toyish, xursandchilik",
+    "D) Befarqlik, qo‘rqinch, do‘stlashuv"
+   ],
+   "answer": "A) Qo‘rquv, yolg‘izlik, ko‘nikish"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hikoyada tasvirlangan voqealarni to‘g‘ri ketma-ketlikda ajrating.",
+   "options": [
+    "A) Piston chaqilishi, ko‘chish, o‘yinlar",
+    "B) Ko‘chish, piston chaqilishi, o‘yinlar",
+    "C) O‘yinlar, ko‘chish, piston chaqilishi",
+    "D) Piston chaqilishi, o‘yinlar, ko‘chish"
+   ],
+   "answer": "A) Piston chaqilishi, ko‘chish, o‘yinlar"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Onasi nima uchun o‘g‘lini «Indamas» deb atadi?",
+   "options": [
+    "A) Gapirishga tortingani va kamgapligi uchun",
+    "B) Gapirishni umuman bilmagani uchun",
+    "C) Kattalarga hurmatsizlik qilgani uchun",
+    "D) Uy ishlarini xohlamay qilgani uchun"
+   ],
+   "answer": "A) Gapirishga tortingani va kamgapligi uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Olim buva nima uchun «shayton arava»ga salbiy munosabatda bo‘ldi?",
+   "options": [
+    "A) Eski aqidalar va irimlarga ishongani uchun",
+    "B) Arava juda qimmat bo‘lgani uchun",
+    "C) Arava xalqqa xizmat qilmagani uchun",
+    "D) Arava do‘konni buzgani uchun"
+   ],
+   "answer": "A) Eski aqidalar va irimlarga ishongani uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dadasining Olim buva bilan urishmasdan ko‘chib ketishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, kattalarga hurmat ko‘rsatdi",
+    "B) Noto‘g‘ri, o‘zini himoya qilishi kerak edi",
+    "C) To‘g‘ri, chunki u qo‘rqqoq edi",
+    "D) Noto‘g‘ri, janjal ko‘tarishi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, kattalarga hurmat ko‘rsatdi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Balar zamona daraxtida yetishgan olmaning ikki pallasi edi» deyganda nimani tasvirlagan?",
+   "options": [
+    "A) Davrning o‘xshash va xarakterli tiplarini",
+    "B) Tabiat va bog‘larning go‘zalligini",
+    "C) Insonlarning faqat yaxshi taraflarini",
+    "D) Ikki do‘stning munosabatlarini"
+   ],
+   "answer": "A) Davrning o‘xshash va xarakterli tiplarini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘raqul vofurush dadasi bilan qanday kelishuv qilgan edi?",
+   "options": [
+    "A) Saksonta o‘roq yasab berishga",
+    "B) Yuzta pichoq yasab berishga",
+    "C) Otxona qurib berishga",
+    "D) Yigirmata ketmon yasab berishga"
+   ],
+   "answer": "A) Saksonta o‘roq yasab berishga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dadasining ketmon peshlashda boshqa ustalardan afzalligi nimada edi?",
+   "options": [
+    "A) Ketmonga egasining ismini yozardi",
+    "B) Ketmonni tekinga ta'mirlab berardi",
+    "C) Ketmonni juda arzon sotardi",
+    "D) Ketmonni tezda sindirib berardi"
+   ],
+   "answer": "A) Ketmonga egasining ismini yozardi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mardikorlikka bormaslik uchun beriladigan qizil qog‘oz qancha tushdi?",
+   "options": [
+    "A) Ikki yuz ellik so‘m",
+    "B) Yuz so‘m",
+    "C) Ellik so‘m",
+    "D) Besh yuz so‘m"
+   ],
+   "answer": "A) Ikki yuz ellik so‘m"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘raqul vofurush kimni aybsiz kaltaklagani uchun janjal chiqdi?",
+   "options": [
+    "A) Asrandi qizi Xayrini",
+    "B) O‘z shogirdini",
+    "C) Qo‘shnisining o‘g‘lini",
+    "D) Temirchining shogirdini"
+   ],
+   "answer": "A) Asrandi qizi Xayrini"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Valixon so‘fi bilan bog‘liq voqealarning to‘g‘ri ketma-ketligini belgilang.",
+   "options": [
+    "A) Maktabdagi nizo, dori somsa, chirog‘poya",
+    "B) Chirog‘poya, dori somsa, maktabdagi nizo",
+    "C) Dori somsa, chirog‘poya, maktabdagi nizo",
+    "D) Maktabdagi nizo, chirog‘poya, dori somsa"
+   ],
+   "answer": "A) Maktabdagi nizo, dori somsa, chirog‘poya"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun dadasi o‘g‘lini so‘fining maktabidan olib chiqib ketdi?",
+   "options": [
+    "A) So‘fi xato o‘qitgani va bilimsizligi uchun",
+    "B) Pul yetarli bo‘lmagani uchun",
+    "C) Bola maktabga borishni xohlamagani uchun",
+    "D) Maktab yopilib ketgani uchun"
+   ],
+   "answer": "A) So‘fi xato o‘qitgani va bilimsizligi uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mingboshi xotinlarni tinchlantirish uchun kimning nomini eslatdi?",
+   "options": [
+    "A) Dukchi eshon voqeasini",
+    "B) Olimbek dodxoning nomini",
+    "C) Qo‘qon xonining nomini",
+    "D) Podsho farmoyishining nomini"
+   ],
+   "answer": "A) Dukchi eshon voqeasini"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Temirchining qiyin paytda ham adolatli bo‘lishi qanday fazilat?",
+   "options": [
+    "A) Halollik va mardlik",
+    "B) Qo‘rqoqlik va ojizlik",
+    "C) Mansabparastlik",
+    "D) Manfaatdorlik"
+   ],
+   "answer": "A) Halollik va mardlik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sho‘x yigitlarning Valixon so‘figa qilgan jazosi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, zo‘ravonlik bilan muammo hal bo‘lmaydi",
+    "B) To‘g‘ri, so‘fini darrov yo‘q qilish kerak edi",
+    "C) To‘g‘ri, chunki u so‘fi edi",
+    "D) Noto‘g‘ri, so‘fini maqtash kerak edi"
+   ],
+   "answer": "A) Noto‘g‘ri, zo‘ravonlik bilan muammo hal bo‘lmaydi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Babarning o‘limi va xotinining ahvolini qanday tuyg‘u bilan tasvirlaydi?",
+   "options": [
+    "A) Chuqur achinish va alam bilan",
+    "B) Yengil va kulgili kayfiyatda",
+    "C) Kibr va befarqlik bilan",
+    "D) G‘azab va nafrat bilan"
+   ],
+   "answer": "A) Chuqur achinish va alam bilan"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qo‘qonga qaytganlaridan keyin bola qaysi maktabga o‘qishga kirdi?",
+   "options": [
+    "A) Internat va Kommuna maktabiga",
+    "B) Eski usul madrasasiga",
+    "C) Xususiy diniy maktabga",
+    "D) Qorixona maktabiga"
+   ],
+   "answer": "A) Internat va Kommuna maktabiga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qori Niyoziy bolalarni ko‘rib, ulardan qanchasini tanlab oldi?",
+   "options": [
+    "A) Ellik olti bolani",
+    "B) Yuzta bolani",
+    "C) O‘nta bolani",
+    "D) Yigirma bolani"
+   ],
+   "answer": "A) Ellik olti bolani"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bosmachilar tomonidan shafqatsizlarcha o‘ldirilgan mashhur muallim kim edi?",
+   "options": [
+    "A) Nosir maxsum",
+    "B) Hakimjon domla",
+    "C) Subhiy afandi",
+    "D) Po‘latjon domla"
+   ],
+   "answer": "A) Nosir maxsum"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolaning dadasiga atab keltirilgan sovg‘asi nima edi?",
+   "options": [
+    "A) Sariq etikcha",
+    "B) Yangi do‘ppi",
+    "C) Qizil to‘n",
+    "D) Kitob va daftar"
+   ],
+   "answer": "A) Sariq etikcha"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar oxirida bolaning erishgan muvaffaqiyatlari ketma-ketligini aniqlang.",
+   "options": [
+    "A) Maktabga kirish, to‘garak, dorilmualliminga o‘tish",
+    "B) Dorilmualliminga o‘tish, maktab, to‘garak",
+    "C) To‘garak, dorilmualliminga o‘tish, maktab",
+    "D) Maktabga kirish, dorilmuallimin, to‘garak"
+   ],
+   "answer": "A) Maktabga kirish, to‘garak, dorilmualliminga o‘tish"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun bola Qizil soqchidan qochib ketishga harakat qildi?",
+   "options": [
+    "A) Uyidan va ota-onasidan ayrilishdan qo‘rqgani uchun",
+    "B) Maktabda o‘qishni umuman xohlamagani uchun",
+    "C) Soqchining yomon odamligini bilgani uchun",
+    "D) Do‘sti G‘afforjondan xafa bo‘lgani uchun"
+   ],
+   "answer": "A) Uyidan va ota-onasidan ayrilishdan qo‘rqgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Onasi nima uchun doim tinchlik va urush tugashini orzu qilardi?",
+   "options": [
+    "A) Oila xavfsizligi va ro‘zg‘or tinchligi uchun",
+    "B) Shaharga tezroq ko‘chib o‘tish uchun",
+    "C) Yangi kiyimlar sotib olish uchun",
+    "D) Dadasining boshqa ish qilishi uchun"
+   ],
+   "answer": "A) Oila xavfsizligi va ro‘zg‘or tinchligi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bolaning qiyinchiliklarga qaramay o‘qishga intilishi qanday baholanadi?",
+   "options": [
+    "A) Yuksak matonat va ma'rifatparvarlik",
+    "B) Ota-onasiga quloq solmaslik",
+    "C) Shunchaki vaqt o‘tkazish",
+    "D) Boshqalarga ko‘z-ko‘z qilish"
+   ],
+   "answer": "A) Yuksak matonat va ma'rifatparvarlik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif dorilmuallimin talabalari haqida yozganda qanday tuyg‘uni ifodalaydi?",
+   "options": [
+    "A) Boshqalar singari bilimli bo‘lish havasini",
+    "B) Ulardan qo‘rqish va cho‘chish tuyg‘usini",
+    "C) Qadimiy zamonlarga bo‘lgan nafratni",
+    "D) O‘z kelajagidan umidsizlikni"
+   ],
+   "answer": "A) Boshqalar singari bilimli bo‘lish havasini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«O‘tmishdan ertaklar» nomining tanlanishi muallifning qanday munosabatini ko‘rsatadi?",
+   "options": [
+    "A) O‘tmish voqealariga achchiq kinoya va alamni",
+    "B) Haqiqatni buzib ko‘rsatish ishtiyoqini",
+    "C) Ertaklarga bo‘lgan bolalarcha qiziqishini",
+    "D) Faxr va g‘urur tuyg‘usini"
+   ],
+   "answer": "A) O‘tmish voqealariga achchiq kinoya va alamni"
+  }
+ ]
+}

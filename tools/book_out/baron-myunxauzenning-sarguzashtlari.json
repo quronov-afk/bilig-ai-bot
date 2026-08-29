@@ -1,0 +1,417 @@
+{
+ "title": "Baron Myunxauzenning sarguzashtlari",
+ "author": "Erix Raspe",
+ "genre": "toʻplam",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "8-12",
+  "topics": [
+   "tasavvur",
+   "hazil",
+   "jasorat",
+   "topqirlik",
+   "sarguzasht"
+  ],
+  "theme": "Topqirlik va yorqin tasavvur har qanday qiyin vaziyatdan chiqishga yordam beradi.",
+  "summary": "Baron Myunxauzen o‘zining aqlga sig‘mas va kulgili sarguzashtlarini so‘zlab beradi. Birinchi qismda u qorda otini qo‘ng‘iroqxona xochiga bog‘lagani, bo‘rini chenaga qo‘shgani va olcha danagi bilan kiyikni otgani haqida so‘zlaydi. Ikkinchi qismda Turkiyada asir tushib asalarilarni boqgani, oyga loviya poyasi orqali chiqqani hamda sultonning xazinasini olib chiqib, ta‘qibdan qutilgani bayon qilinadi. Uchinchi qismda esa pishloqdan iborat orolga borgani, bahaybat baliq qornidan kemalarni qutqargani va ayiqni yenggani haqida hikoya qilib, o‘zining eng rostgo‘y odam ekanini ta‘kidlaydi.",
+  "characters": "Baron Myunxauzen — topqir, hozirjavob va tasavvuri g‘oyat boy hikoyachi chol.",
+  "conclusion": "Kitob bolada boy tasavvur, hazil-mutoyiba tuyg‘usi va qiyin holatlarda tushkunlikka tushmaslik ko‘nikmasini shakllantiradi. Topqirlik va aql har qanday mushkulni osonlashtirishini o‘rgatadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, yengil, g‘aroyib",
+  "for_whom": "Sarguzashtlarni, kulgili va g‘aroyib voqealarni yaxshi ko‘radigan hamda topqir qahramonlarga qiziqadigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Myunxauzen Rossiyaga safar qilganda otini qayerga bog‘lagan edi?",
+   "options": [
+    "A) Shahar darvozasiga",
+    "B) Qo‘ng‘iroqxona xochiga",
+    "C) Katta eman daraxtiga"
+   ],
+   "answer": "B) Qo‘ng‘iroqxona xochiga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Myunxauzen bo‘rini yenggach, undan nima tiktirdi?",
+   "options": [
+    "A) Issiqqina kamzulcha",
+    "B) Yozgi shlyapa",
+    "C) Charm poyabzal"
+   ],
+   "answer": "A) Issiqqina kamzulcha"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kiyikning manglayidan qanday daraxt o‘sib chiqqan edi?",
+   "options": [
+    "A) Olma daraxti",
+    "B) Olcha daraxti",
+    "C) Yong‘oq daraxti"
+   ],
+   "answer": "B) Olcha daraxti"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Myunxauzen o‘rmondagi ko‘r cho‘chqani uyiga qanday yetaklab bordi?",
+   "options": [
+    "A) Dumi uchidan tutib",
+    "B) Arqon bilan tang‘ib",
+    "C) Bo‘ynidan ushlab"
+   ],
+   "answer": "A) Dumi uchidan tutib"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "O‘rdaklarni tutishda Myunxauzen qanday ketma-ketlikda ish tutdi?",
+   "options": [
+    "A) Yog‘ni ipga bog‘lab otdi",
+    "B) O‘t yoqib tutun chiqardi",
+    "C) Suvni to‘sib qo‘ydi"
+   ],
+   "answer": "A) Yog‘ni ipga bog‘lab otdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Quturgan po‘stin nega kiyimlarni yirtib tashladi?",
+   "options": [
+    "A) Po‘stinni it qopgani uchun",
+    "B) Sichqonlar in qurgani uchun",
+    "C) Xizmatkor uni yirtgani uchun"
+   ],
+   "answer": "A) Po‘stinni it qopgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Myunxauzen nega kiyikni olcha danagi bilan otishga majbur bo‘ldi?",
+   "options": [
+    "A) O‘qi qolmagani uchun",
+    "B) Kiyik shuni xohlagani uchun",
+    "C) Miltig‘i buzilgani uchun"
+   ],
+   "answer": "A) O‘qi qolmagani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Topqirlik insonga qiyin vaziyatda qanday yordam beradi?",
+   "options": [
+    "A) Mushkuldan chiqish yo‘lini topadi",
+    "B) Odamni qo‘rqoq qilib qo‘yadi",
+    "C) Hech qanday yordam bermaydi"
+   ],
+   "answer": "A) Mushkuldan chiqish yo‘lini topadi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Topqirlik — bebaho narsa!» degan fikr qahramonning qaysi xislatini ko‘rsatadi?",
+   "options": [
+    "A) Qiyinchilikda yechim topishini",
+    "B) Maqtanchoqlik qilishini",
+    "C) Qoidaga amal qilmasligini"
+   ],
+   "answer": "A) Qiyinchilikda yechim topishini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Myunxauzenning hikoyalarini qanday kayfiyatda tasvirlagan?",
+   "options": [
+    "A) Kulgili va qiziqarli",
+    "B) G‘amgin va qayg‘uli",
+    "C) Qo‘rqinchli va vahimali"
+   ],
+   "answer": "A) Kulgili va qiziqarli"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Turkiyada sulton Myunxauzenga qanday ish topshirdi?",
+   "options": [
+    "A) Asalarilarga podachi bo‘lishni",
+    "B) Oshpazlik qilishni",
+    "C) Bog‘bonlik qilishni"
+   ],
+   "answer": "A) Asalarilarga podachi bo‘lishni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Myunxauzen oyga birinchi marta nima orqali chiqib oldi?",
+   "options": [
+    "A) Turk loviyasi poyasi orqali",
+    "B) Katta havo shari bilan",
+    "C) Minora zinasidan ko‘tarilib"
+   ],
+   "answer": "A) Turk loviyasi poyasi orqali"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Aravakashning burg‘usidan tovushlar nega birdaniga chiqib ketdi?",
+   "options": [
+    "A) Pechka oldida erigani uchun",
+    "B) U shamolda singani uchun",
+    "C) U chirib ketgani uchun"
+   ],
+   "answer": "A) Pechka oldida erigani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Myunxauzen Jabaltariq urushida nima bilan daryoning narigi betiga uchib o‘tdi?",
+   "options": [
+    "A) Zambarak o‘qi bilan",
+    "B) Katta yelkanli kema bilan",
+    "C) Uchuvchi gilam bilan"
+   ],
+   "answer": "A) Zambarak o‘qi bilan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Turk flotidan qutulish uchun xizmatkor qanday harakat qildi?",
+   "options": [
+    "A) Burnidan shiddatli shamol chiqardi",
+    "B) Kemani suv tagiga cho‘kdirdi",
+    "C) Dushmanga qarshi to‘p otdi"
+   ],
+   "answer": "A) Burnidan shiddatli shamol chiqardi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Myunxauzen sulton bilan sharob haqida qanday shart boylashdi?",
+   "options": [
+    "A) Xitoydan sharob olib kelishga",
+    "B) Oltin xazinani berishga",
+    "C) Yangi kema qurishga"
+   ],
+   "answer": "A) Xitoydan sharob olib kelishga"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Myunxauzen nega ayiqlar orasida omon qoldi?",
+   "options": [
+    "A) Ayiq terisini yopingani uchun",
+    "B) Daraxt tepasiga yashiringani uchun",
+    "C) Suv tagida suzgani uchun"
+   ],
+   "answer": "A) Ayiq terisini yopingani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yarimta ot suv ichganda nega chanqog‘i qonmadi?",
+   "options": [
+    "A) Suv orqasidan to‘kilayotgani uchun",
+    "B) Suv juda issiq bo‘lgani uchun",
+    "C) Ot kasal bo‘lib qolgani uchun"
+   ],
+   "answer": "A) Suv orqasidan to‘kilayotgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Myunxauzenning tezyurar xizmatkorga ishonchi unga qanday natija berdi?",
+   "options": [
+    "A) Shartda g‘olib chiqishga yordam berdi",
+    "B) Sulton uni jazolashiga sabab bo‘ldi",
+    "C) Xitoyga borolmay qolishiga olib keldi"
+   ],
+   "answer": "A) Shartda g‘olib chiqishga yordam berdi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Sovuqda tovushlarning «yaxlab qolishi» tasviri o‘quvchida qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Hayrat va samimiy kulgi",
+    "B) Qo‘rquv va vahima",
+    "C) Achinish va g‘am"
+   ],
+   "answer": "A) Hayrat va samimiy kulgi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oy aholisining qorni qanday vazifani o‘taydi?",
+   "options": [
+    "A) Chamadon vazifasini",
+    "B) Sovut vazifasini",
+    "C) Sandiq vazifasini"
+   ],
+   "answer": "A) Chamadon vazifasini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pishloq orolidagi uzumlar siqilganda ulardan nima oqardi?",
+   "options": [
+    "A) Sut oqardi",
+    "B) Shakar oqardi",
+    "C) Oltin oqardi"
+   ],
+   "answer": "A) Sut oqardi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dengizchilarni yutib yuborgan bahaybat baliq qornidan necha kema chiqdi?",
+   "options": [
+    "A) Yetmish beshta kema",
+    "B) O‘nta kema",
+    "C) Yuzta kema"
+   ],
+   "answer": "A) Yetmish beshta kema"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Myunxauzen ayiqni panjalaridan tutib necha kun qo‘yib yubormadi?",
+   "options": [
+    "A) Uch kecha-kunduz",
+    "B) Bir soat mobaynida",
+    "C) O‘n kun davomida"
+   ],
+   "answer": "A) Uch kecha-kunduz"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dengizchilar bahaybat baliq qornidan qanday usulda qutulishdi?",
+   "options": [
+    "A) Jag‘iga havoza tirab qo‘yishdi",
+    "B) Baliqni ichidan kesib tashlashdi",
+    "C) O‘t yoqib tutun qilishdi"
+   ],
+   "answer": "A) Jag‘iga havoza tirab qo‘yishdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Pishloq orolida nega odamlar ekin ekishmas edi?",
+   "options": [
+    "A) Non tayyor holda o‘sgani uchun",
+    "B) Yer juda qattiq bo‘lgani uchun",
+    "C) Ular mehnatni yoqlamagani uchun"
+   ],
+   "answer": "A) Non tayyor holda o‘sgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ayiq nega panjasidan ushlanganda ochlikdan halok bo‘ldi?",
+   "options": [
+    "A) Panjasini so‘ra olmagani uchun",
+    "B) Ovqat topa olmagani uchun",
+    "C) Suv icholmagani uchun"
+   ],
+   "answer": "A) Panjasini so‘ra olmagani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Myunxauzenning baliq qornidagi dengizchilarni birlashtirishi uning qaysi fazilatidir?",
+   "options": [
+    "A) Tashkilotchilik va yetakchilik",
+    "B) Qo‘rqoqlik va ikkilanuvchanlik",
+    "C) Xudbinlik va loqaydlik"
+   ],
+   "answer": "A) Tashkilotchilik va yetakchilik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Myunxauzen o‘zini «eng rostgo‘y odam» deb atashi haqida nima deyish mumkin?",
+   "options": [
+    "A) Bu kulgili va latifa kabi yondashuv",
+    "B) U chin dildan rost gapirmoqda",
+    "C) U odamlarni aldashni xohlaydi"
+   ],
+   "answer": "A) Bu kulgili va latifa kabi yondashuv"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning Pishloq orolini tasvirlashdan ko‘zlangan asosiy badiiy maqsadi nima?",
+   "options": [
+    "A) Bolaning tasavvurini boyitish",
+    "B) Geografiya darsini o‘rgatish",
+    "C) Ovqatlanish qoidasini tushuntirish"
+   ],
+   "answer": "A) Bolaning tasavvurini boyitish"
+  }
+ ]
+}

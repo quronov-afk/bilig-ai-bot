@@ -1,0 +1,28 @@
+{
+ "title": "Jiblajibonning xatlari",
+ "author": "Nikolay Sladkov",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9 yosh. Rus tilidan tarjima qilingani hamda tabiatni kuzatish ma'nosini anglash kerakligi sababli 7 yoshdan boshlab tavsiya etiladi.",
+  "topics": [
+   "tabiat",
+   "qushlar",
+   "g‘amxo‘rlik",
+   "mehr-shafqat",
+   "kuzatuvchanlik"
+  ],
+  "theme": "Tabiatga va mitti jonzotlarga g‘amxo‘rlik qilish, ularning hayotini kuzatib, mehr ko‘rsatish inson qalbidan chuqur joy oladi va mas'uliyatni o‘rgatadi.",
+  "summary": "Eski pochta qutisiga qizilishton teshik ochadi. Bahorda u yerga jiblajibon qushi in quradi. Uy egalari uni «Pochtachi» deb atashadi, chunki u iniga qog‘oz va xatlar tashib keltiradi hamda haqiqiy pochtachi kelganida chirqillab xabar beradi. Uy egalari qushni bezovta qilmaslik uchun xatlarni tezda olib turishadi. Qush polaponlarini o‘stirib, uchib ketadi. Kuzda qizilishton teshikni kattalashtirgach, hikoyachi in ichidan jiblajibon to‘plagan «xat»larni — xas-xashak va qog‘ozlarni oladi. Quti eskirsa ham, uni yangi bahorda qush qaytishini kutib olib qo‘yishmaydi.",
+  "characters": "Jiblajibon (Pochtachi) — pochta qutisini in qilgan, mehnatkash va polaponlariga g‘amxo‘r mitti qush; Hikoyachi va uning oilasi — qushni bezovta qilmay, uni mehr bilan kuzatuvchi va asrovchi insondo‘st kishilar; Qizilishton — qutini teshib, jiblajibonga joy tayyorlab bergan qush.",
+  "conclusion": "Ushbu hikoya bolada atrofdagi tabiatga, mitti jonzotlarga nisbatan shafqat va e'tibor tuyg‘usini uyg‘otadi. Qushlarning mehnati va hayot tarzini kuzatish orqali bolada g‘amxo‘rlik hamda mehribonlik shakllanadi. Ota-onalar farzandidan tabiatni asrash va hayvonlarga ozor bermaslik haqida fikr so‘rashlari uchun juda mos asar.",
+  "difficulty": "oson",
+  "mood": "samimiy, iliq, tabiatshunoslik",
+  "for_whom": "Tabiatni va qushlarni yaxshi ko‘radigan, atrofdagi olamni kuzatishga qiziqadigan hamda mitti jonzotlarga g‘amxo‘rlik qilishni xohlaydigan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Uy egalari mitti jiblajibon cho‘chib vahimaga tushmasligi uchun pochtachidan xatlarni darrov olishga oshiqishardi. Sen atrofdagi qushlar va jonzotlarga g‘amxo‘rlik qilish uchun qanday yaxshi ishlar qilgan bo‘larding? Hikoyadagi mitti qushning qaysi odati senga eng ko‘p yoqdi va nega?"
+}

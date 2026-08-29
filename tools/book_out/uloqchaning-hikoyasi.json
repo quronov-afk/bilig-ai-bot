@@ -1,0 +1,28 @@
+{
+ "title": "Uloqchaning hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9",
+  "topics": [
+   "oila",
+   "jasorat",
+   "ogohlik",
+   "hazil",
+   "oqibat"
+  ],
+  "theme": "Ota-onaga mehr va ularni himoya qilish intilishi yaxshi fazilat, lekin har bir harakatdan oldin aql va bosiqlik bilan ish tutish lozim.",
+  "summary": "Hikoyada ko‘zi shilpiq bo‘lib qolgan uloqcha o‘z boshidan kechirgan kulgili voqeani so‘zlab beradi. Bahorda suruv bilan o‘tloqqa ketayotganda, hayvonot bog‘idan qochgan maymun daraxtdan archabujur otib, uloqchaning otasi – Serkavoyning boshiga uradi. Otasining alamini olmoqchi bo‘lgan shijoatli uloqcha archaga kalla soladi, ammo maymun uning chap ko‘ziga ham bujur otib, hushidan ketkazadi. Maymun ushlanib, hayvonot bog‘iga qaytariladi. Uloqcha esa kitobxonga ko‘zini ehtiyot qilishni va maymunga salom aytib qo‘yishni tayinlaydi.",
+  "characters": "Uloqcha – shijoatli, otasini yaxshi ko‘radigan, ammo biroz shoshqaloq bosh qahramon; Serkavoy dada – suruv boshlig‘i bo‘lgan taka; Maymun – hayvonot bog‘idan qochgan sho‘x va shaddod maxluq.",
+  "conclusion": "Hikoya bolada ota-onaga mehr-hurmat va ularga suyanish tuyg‘usini rivojlantiradi. Shu bilan birga, jahl ustida shoshma-shosharlik qilmaslik, har bir harakatning oqibatini o‘ylash va o‘zini ehtiyot qilish zarurligini uqtiradi.",
+  "difficulty": "oson",
+  "mood": "kulgili, yengil",
+  "for_whom": "Hayvonlar haqidagi quvnoq va sho‘x hikoyalarni yoqtiradigan, ota-onasiga mehribon bolalar uchun mos."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Uloqcha otasini himoya qilaman deb archaga kalla solgani va ko‘zini og‘ritib olgani haqida nima deya olasan: u to‘g‘ri qildimi yoki shoshqaloqlik? Sen o‘zing ota-onangga bo‘lgan mehring va hurmatingni kundalik hayotda qanday ko‘rsatasan?"
+}

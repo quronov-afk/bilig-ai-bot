@@ -1,0 +1,447 @@
+{
+ "title": "7-“A” da",
+ "author": "Erkin Malik",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "do‘stlik",
+   "tarbiya",
+   "maktab hayoti",
+   "halollik",
+   "mas'uliyat"
+  ],
+  "theme": "Bolalar va kattalar o‘rtasidagi ikkiyuzlamachilikni bartaraf etish, o‘zlikni anglash va haqiqiy tarbiya yo‘lini topish asarning bosh g‘oyasidir.",
+  "summary": "Olim aka ismli tadqiqotchi insonlar fe’l-atvoridagi ikkiyuzlamachilik sabablarini o‘rganish uchun 7-“A” sinfida tarbiyachi bo‘lib ish boshlaydi. Sinfda Azim ismli yuvosh bola zo‘ravon tengdoshlarining papkasini ko‘tarib yuradi. Sinfboshi Salima esa nohaqlikni ko‘rib turib ikkilanadi. Olim aka har bir bolaning pinhona qirralarini ochish uchun ular va ularning ota-onalari bilan suhbatlashadi. Natijada sinfda keskin ma’naviy portlash sodir bo‘ladi: Salima zo‘ravonlarni fosh qiladi, Behzod va sheriklari qilgan xatolarini bo‘yniga olib, jabrlanganlarning pulini qaytarishga iqror bo‘lishadi. O‘qituvchilar majlisida Olim aka o‘tmishdagi tegirmonchilik va temirchilik kabi amaliy tarbiya usullarini misol qilib, ta’limni hayot bilan bog‘lash g‘oyasini ilgari suradi. Lekin maktab direktori uning tajribasini tushunmay, hujjatlarini yirtib tashlaydi va maktabdan haydaydi.",
+  "characters": "Olim aka — tadqiqotchi, jamoatchi-tarbiyachi; Azim — papka ko‘tarib yuruvchi yuvosh bola; Salima — sinfboshi, jur’atini topgan qiz; Nozim va Behzod — mug‘ambir va zo‘ravon bolalar; Orif kalla — ixtirochi o‘quvchi.",
+  "conclusion": "Asar o‘quvchini o‘z qadr-qimmatini bilishga, zo‘ravonlikka qarshi jur’atli bo‘lishga va halollikka o‘rgatadi. Ota-onalar esa farzand tarbiyasida faqat moddiy ko‘mak emas, ma’naviy va amaliy yo‘l-yo‘riq muhimligini anglaydilar.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, tarbiyaviy, jiddiy",
+  "for_whom": "Maktab hayoti, tengdoshlar munosabati va odamiylik saboqlari haqida o‘ylashni yaxshi ko‘radigan o‘quvchilar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Azim har kuni sahardan qayerda bolalarni kutib turardi?",
+   "options": [
+    "A) Maktab devori tagida",
+    "B) Bekatda",
+    "C) Uyining yonida",
+    "D) Maktab stadionida"
+   ],
+   "answer": "A) Maktab devori tagida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Azim ko‘tarib olgan papkalarni necha kishi berib ketdi?",
+   "options": [
+    "A) Beshta bola",
+    "B) Uchta bola",
+    "C) Ikkita bola",
+    "D) To‘rtta bola"
+   ],
+   "answer": "A) Beshta bola"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Azim papkalarni yelkasiga ortish uchun nimasidan foydalandi?",
+   "options": [
+    "A) Shimidagi kamaridan",
+    "B) Ipdan",
+    "C) Sumbatdan",
+    "D) Lentasidan"
+   ],
+   "answer": "A) Shimidagi kamaridan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Azimning ustidan «Xix eshagim» deb kim masxara qildi?",
+   "options": [
+    "A) Nozim",
+    "B) Behzod",
+    "C) Orif",
+    "D) Hasan"
+   ],
+   "answer": "A) Nozim"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Azim va Nozim voqeasidagi holatlar tartibini ko‘rsating.",
+   "options": [
+    "A) Masxara -> qizlar kulgisi -> alam",
+    "B) Qizlar kulgisi -> masxara -> alam",
+    "C) Alam -> masxara -> kulgi",
+    "D) Masxara -> alam -> kulgi"
+   ],
+   "answer": "A) Masxara -> qizlar kulgisi -> alam"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Azim nega papkalarni olib ketishga og‘rinmay rozi bo‘lardi?",
+   "options": [
+    "A) O‘zini hammollik uchun yaratilgandek sezar",
+    "B) Bolalarga yaxshilik qilishni xohlardi",
+    "C) O‘qituvchi shunday topshiriq bergan edi",
+    "D) Papkalar juda yengil bo‘lgani uchun"
+   ],
+   "answer": "A) O‘zini hammollik uchun yaratilgandek sezar"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Salimaga o‘z sinfdoshi ustidan kulish nega alam qildi?",
+   "options": [
+    "A) Boshqa sinf bolalari ko‘rgani uchun",
+    "B) Azim uning qarindoshi bo‘lgani uchun",
+    "C) O‘qituvchi urishib bergani uchun",
+    "D) Azim papkani yerga urgani uchun"
+   ],
+   "answer": "A) Boshqa sinf bolalari ko‘rgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Azimning otasi «bozorga tashkachi bo‘lasan» deyishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, bolaning bilimiga ishonmagan",
+    "B) To‘g‘ri, chunki bozorda pul ko‘p",
+    "C) To‘g‘ri, mehnatning yomoni yo‘q",
+    "D) Noto‘g‘ri, u bozorga borishni taqiqlagan"
+   ],
+   "answer": "A) Noto‘g‘ri, bolaning bilimiga ishonmagan"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Azimni «xoda yutgandek g‘o‘dayishga majbur» deb nimani ko‘rsatadi?",
+   "options": [
+    "A) Yukning og‘irligi va noqulayligini",
+    "B) Azimning mag‘rur bo‘lib qolganini",
+    "C) Azimning bo‘yi juda balandligini",
+    "D) Papkalarning chiroyli ekanligini"
+   ],
+   "answer": "A) Yukning og‘irligi va noqulayligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Nozimni «pashshaxo‘rda bo‘lib yuraveradi» deb nimani tasvirlagan?",
+   "options": [
+    "A) Qulay fursat poylab mug‘ambirlik qilishni",
+    "B) Mayda pashshalarni tutib yurishini",
+    "C) Futbolda juda tez yugurishini",
+    "D) Darsda doim uxlab o‘tirishini"
+   ],
+   "answer": "A) Qulay fursat poylab mug‘ambirlik qilishni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Salima ota-onasidan yetim qolgach kimning uyida yashardi?",
+   "options": [
+    "A) Katta opasinikida",
+    "B) Xolasinikida",
+    "C) Amakisinikida",
+    "D) Buvisinikida"
+   ],
+   "answer": "A) Katta opasinikida"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Orif kalla favvorani bekitmagani sababini qanday izohladi?",
+   "options": [
+    "A) Birov bir so‘m bermaydi deb",
+    "B) Qo‘lida asbobi yo‘qligi uchun",
+    "C) Vaqti bo‘lmagani uchun",
+    "D) Suv sovuqligi uchun"
+   ],
+   "answer": "A) Birov bir so‘m bermaydi deb"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Orif kalla pul topish uchun nima yasagandi?",
+   "options": [
+    "A) Piyoz to‘g‘raydigan pichoq",
+    "B) Suv soat apparati",
+    "C) Yog‘ochdan stul",
+    "D) Velosiped g‘olibi"
+   ],
+   "answer": "A) Piyoz to‘g‘raydigan pichoq"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sinfda Behzod Salimaga qarata nima otdi?",
+   "options": [
+    "A) Kitob",
+    "B) Ruchka",
+    "C) Tosh",
+    "D) Papka"
+   ],
+   "answer": "A) Kitob"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Salimadagi fe’l-atvor o‘zgarishi tartibini ko‘rsating.",
+   "options": [
+    "A) Mulohazalilik -> ikkilanish -> jur’atsizlik",
+    "B) Jur’atsizlik -> ikkilanish -> mulohaza",
+    "C) Ikkilanish -> jur’atsizlik -> mulohaza",
+    "D) Mulohazalilik -> mardlik -> ikkilanish"
+   ],
+   "answer": "A) Mulohazalilik -> ikkilanish -> jur’atsizlik"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Majlisda fosh bo‘lgan zo‘ravon bolalar guruhini ajrating.",
+   "options": [
+    "A) Behzod, Hasan, Husan, Nabijon, Baxtiyor",
+    "B) Azim, Orif, Nozim, Behzod, Hasan",
+    "C) Salima, Nozim, Behzod, Husan, Azim",
+    "D) Orif, Behzod, Nabijon, Baxtiyor, Azim"
+   ],
+   "answer": "A) Behzod, Hasan, Husan, Nabijon, Baxtiyor"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Olim aka nega Salimaga o‘ta shafqatsiz gaplar aytdi?",
+   "options": [
+    "A) Ichidagi jur’atni qo‘zg‘atish uchun",
+    "B) Salimani sinfdan haydash uchun",
+    "C) Salimadan nafratlangani uchun",
+    "D) Xadicha Karimovnaga yoqish uchun"
+   ],
+   "answer": "A) Ichidagi jur’atni qo‘zg‘atish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Azim bir kuni nega maktabga bormay uxlab yotgan edi?",
+   "options": [
+    "A) Qo‘rqmas Azim bilan yoqalashib alahlaganidan",
+    "B) Qattiq shamollab qolgani uchun",
+    "C) Uydagilari ruxsat bermagani uchun",
+    "D) Bozorda ishlab charchagani uchun"
+   ],
+   "answer": "A) Qo‘rqmas Azim bilan yoqalashib alahlaganidan"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zo‘ravon bolalarning uydan pul olib berish qarori to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, mard bo‘lib xatosini tuzatishdi",
+    "B) Noto‘g‘ri, uydan o‘g‘irlash kerak edi",
+    "C) Noto‘g‘ri, pullarni bermaslik kerak edi",
+    "D) To‘g‘ri, qochib ketishlari kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, mard bo‘lib xatosini tuzatishdi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «suv loyqalangandan loyqalandi» deb nimani anglatadi?",
+   "options": [
+    "A) Vaziyatning yanada chigal va keskinlashganini",
+    "B) Maktabdagi suv quvuri yorilganini",
+    "C) Bolalar ko‘chada loy o‘ynaganini",
+    "D) Majlis tugab tinchlik bo‘lganini"
+   ],
+   "answer": "A) Vaziyatning yanada chigal va keskinlashganini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muqaddam opa darsdan keyin qaysi bolalarni olib qolardi?",
+   "options": [
+    "A) Harf o‘rganishga qiynalgan bolalarni",
+    "B) Zo‘ravon va bezori bolalarni",
+    "C) Yosh texniklar to‘garagi a’zolarini",
+    "D) Maktab navbatchilarini"
+   ],
+   "answer": "A) Harf o‘rganishga qiynalgan bolalarni"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qadimda qaysar bolalarni qayerga shogirdlikka berishgan?",
+   "options": [
+    "A) Tegirmonchiga",
+    "B) Temirchiga",
+    "C) Sartaroshga",
+    "D) Duradgorga"
+   ],
+   "answer": "A) Tegirmonchiga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qadimda uxlash bezi bor bolalarni qayerga yuborishgan?",
+   "options": [
+    "A) Temirchiga",
+    "B) Tegirmonchiga",
+    "C) O‘shpazga",
+    "D) Baqqolga"
+   ],
+   "answer": "A) Temirchiga"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Direktor opa Olim akaning qaysi hujjatini yirtib tashladi?",
+   "options": [
+    "A) 7-“A”da o‘tkazgan tajriba hujjatini",
+    "B) Sinf jurnalini",
+    "C) O‘quvchining kundaligini",
+    "D) Maktab guvohnomasini"
+   ],
+   "answer": "A) 7-“A”da o‘tkazgan tajriba hujjatini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qadimgi tarbiya usullari va maqsadi juftligini toping.",
+   "options": [
+    "A) Tegirmonchi - sabr, Temirchi - sergaklik",
+    "B) Tegirmonchi - uyqu, Temirchi - sabr",
+    "C) Tegirmonchi - dangasalik, Temirchi - qaysarlik",
+    "D) Tegirmonchi - sergaklik, Temirchi - sabr"
+   ],
+   "answer": "A) Tegirmonchi - sabr, Temirchi - sergaklik"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Afandi haqidagi latifa majlisda nega aytildi?",
+   "options": [
+    "A) Muammoni noto‘g‘ri joydan qidirishni ko‘rsatishga",
+    "B) Majlisdagilarni shunchaki kuldirish uchun",
+    "C) Afandining aqlliligini isbotlash uchun",
+    "D) Chiroq yo‘qligidan shikoyat qilish uchun"
+   ],
+   "answer": "A) Muammoni noto‘g‘ri joydan qidirishni ko‘rsatishga"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega direktor opa Olim akani maktabdan haydab yubordi?",
+   "options": [
+    "A) Tajribalarni tushunmay, xomxayol deb bildi",
+    "B) Olim aka darsga kechikib kelgani uchun",
+    "C) Bolalar majlisga kelmagani uchun",
+    "D) Olim aka maktab mulkini buzgani uchun"
+   ],
+   "answer": "A) Tajribalarni tushunmay, xomxayol deb bildi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Olim akaning o‘tmish tarbiya usullarini taklif qilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, amaliy mehnat bolani tarbiyalaydi",
+    "B) Noto‘g‘ri, bolalar faqat kitob o‘qishi kerak",
+    "C) Noto‘g‘ri, tegirmonda ishlash taqiqlangan",
+    "D) To‘g‘ri, chunki u maktabni yopmoqchi edi"
+   ],
+   "answer": "A) To‘g‘ri, amaliy mehnat bolani tarbiyalaydi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Direktor opaning tajriba hujjatlarini yirtishi qanday harakat?",
+   "options": [
+    "A) Nohaq va tor qarashli harakat",
+    "B) O‘ta oqilona va to‘g‘ri qaror",
+    "C) Bolalarni himoya qiluvchi jasorat",
+    "D) Qonuniy va namunali odob"
+   ],
+   "answer": "A) Nohaq va tor qarashli harakat"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif oxirida «orzu-o‘ylar yurakda farzanddek tug‘ilarkan» deb nimani bildiradi?",
+   "options": [
+    "A) O‘z niyati barbod bo‘lganidagi ichki alamni",
+    "B) Farzand ko‘rganligi haqidagi quvonchni",
+    "C) Yangi kitob yozish rejasini",
+    "D) Maktab direktori bilan yarashganini"
+   ],
+   "answer": "A) O‘z niyati barbod bo‘lganidagi ichki alamni"
+  }
+ ]
+}

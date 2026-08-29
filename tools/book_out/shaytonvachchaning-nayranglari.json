@@ -1,0 +1,417 @@
+{
+ "title": "Shaytonvachchaning nayranglari",
+ "author": "Erkin Malik",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "8-12",
+  "topics": [
+   "halollik",
+   "odob-axloq",
+   "poklik",
+   "e'tiqod",
+   "to‘g‘rilik"
+  ],
+  "theme": "Inson har bir amalini ezgulik va Alloh zikri bilan boshlasa, shaytoniy vasvasalardan omonda bo‘ladi va halol yashaydi.",
+  "summary": "Qissada bir xonadonda dunyoga kelgan Shaytonvachchaning odamlarni yo‘ldan urishga urinishlari tasvirlanadi. U bolalarni bir-biriga urishtiradi, Bismilloh aytilmagan taomlarga sherik bo‘ladi, bozordagi sotuvchilarni tarozidan urishga undaydi. Biroq Bismillo xolaning ibodati, ezgu duolari va «Insof tarozilari» kabi tadbirlari shaytonlarning barcha rejasini chippakka chiqaradi. Oqibatda Shaytonvachcha o‘z safdoshlari tomonidan sotqin deb ayblanib, dumi va qulog‘i kesilgan holda madrasadan haydaladi.",
+  "characters": "Shaytonvachcha — odamlarni vasvasaga soluvchi bosh qahramon; Ona shayton — o‘g‘liga hiylalarni o‘rgatuvchi ona; Xoja — taqvodor xonadon egasi; Xojabeka — bog‘cha mudirasi; Bismillo xola — imonli va duogo‘y kampir, shaytonlarga qarshi ezgulik tarqatuvchi.",
+  "conclusion": "Asar bolalarga har bir ishni Bismilloh bilan boshlashni, halol va to‘g‘ri yashashni hamda shaytoniy vasvasalarga berilmaslikni o‘rgatadi. U orqali bola halollik va odob eng oliy fazilat ekanini anglaydi.",
+  "difficulty": "o‘rta",
+  "mood": "kulgili, saboq beruvchi",
+  "for_whom": "Halollik va to‘g‘rilik haqida qiziqarli saboq olmoqchi bo‘lgan, sarguzashtli va ibratli voqealarni yoqtiradigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ona shayton Shaytonvachchani qayerda dunyoga keltirdi?",
+   "options": [
+    "A) Xojabekaning xalat yengida",
+    "B) Sandiqning orqasida",
+    "C) Hovlidagi daraxt shoxida"
+   ],
+   "answer": "A) Xojabekaning xalat yengida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shaytonvachcha dunyoga kelganda bo‘ynida nima bor edi?",
+   "options": [
+    "A) Katta yog‘och qoshiq",
+    "B) Kumush uzuk",
+    "C) Kichkina hushtak"
+   ],
+   "answer": "A) Katta yog‘och qoshiq"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dasturxonda Allohning ismi aytilganda shaytonlarga nima bo‘ldi?",
+   "options": [
+    "A) Ularni devorga yopishtirib qo‘ydi",
+    "B) Darrov uyquga ketishdi",
+    "C) Quloqlari og‘rib qoldi"
+   ],
+   "answer": "A) Ularni devorga yopishtirib qo‘ydi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Aka-ukalarning qaysi buyumlari polga tushib ketdi?",
+   "options": [
+    "A) Papka va po‘stin",
+    "B) Piyola va likopcha",
+    "C) Kitob va soat"
+   ],
+   "answer": "A) Papka va po‘stin"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shaytonvachcha bolalarni koptok va velosipeddan qanday mahrum qildi?",
+   "options": [
+    "A) Ularni bir-biriga urishtirib qo‘ydi",
+    "B) Buyumlarni o‘g‘irlab qochdi",
+    "C) Kattalarga aytib berdi"
+   ],
+   "answer": "A) Ularni bir-biriga urishtirib qo‘ydi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ona shayton nima uchun Xojani o‘ziga dushman deb bildi?",
+   "options": [
+    "A) Alloh yo‘liga kirgani uchun",
+    "B) Ko‘chada ko‘p yurgani uchun",
+    "C) Bolalarini urgani uchun"
+   ],
+   "answer": "A) Alloh yo‘liga kirgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Aka-ukalar nima uchun ovqat ustida urishib qolishdi?",
+   "options": [
+    "A) Qoshiqlarning turli metalligidan arazlab",
+    "B) Ovqat pishmay qolgani uchun",
+    "C) Joy talashib qolishgani uchun"
+   ],
+   "answer": "A) Qoshiqlarning turli metalligidan arazlab"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dasturxonga Bismilloh deb o‘tirish bolalarga qanday foyda beradi?",
+   "options": [
+    "A) Ovqatga shayton sherik bo‘lmaydi",
+    "B) Taom tezroq pishadi",
+    "C) Ularga yangi o‘yinchoq beriladi"
+   ],
+   "answer": "A) Ovqatga shayton sherik bo‘lmaydi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Velosiped uchun urishgan bolalarning harakati to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, ular ahil bo‘lishi kerak",
+    "B) To‘g‘ri, velosipedni talashish kerak",
+    "C) Yaxshi, g‘olib uchishi kerak"
+   ],
+   "answer": "A) Noto‘g‘ri, ular ahil bo‘lishi kerak"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «tarki odat — amrimahol» iborasini qanday ma'noda qo‘llagan?",
+   "options": [
+    "A) Odatlangan ishdan voz kechish qiyinligini",
+    "B) Har kuni yangi odat chiqarishni",
+    "C) Tezda yaxshi odat o‘rganishni"
+   ],
+   "answer": "A) Odatlangan ishdan voz kechish qiyinligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shifoxonaga kelgan Bismillo xolaning qo‘lida kim bor edi?",
+   "options": [
+    "A) Kichkina nevarasi",
+    "B) Bir savat olma",
+    "C) Katta og‘ir sumka"
+   ],
+   "answer": "A) Kichkina nevarasi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bismillo xola xonaga kirganda qaysi duoni o‘qidi?",
+   "options": [
+    "A) A'zu billahi va Bismillahni",
+    "B) Istighfor duosini",
+    "C) Safar duosini"
+   ],
+   "answer": "A) A'zu billahi va Bismillahni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bismillo xola nevarasi bilan kelganda shaytonlarga nima bo‘ldi?",
+   "options": [
+    "A) Azob farishtalari ularni savaladi",
+    "B) Ularga yangi kiyim berildi",
+    "C) Ular darrov qochib ketishdi"
+   ],
+   "answer": "A) Azob farishtalari ularni savaladi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sobiq oshpaz xotin yarashish uchun nima olib keldi?",
+   "options": [
+    "A) Bir tog‘ora dumbali manti",
+    "B) Katta jizzali non",
+    "C) Shirin qaymoq va murabbo"
+   ],
+   "answer": "A) Bir tog‘ora dumbali manti"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shaytonvachcha va Ona shaytonning qiyofasi qanday o‘zgardi?",
+   "options": [
+    "A) Biri semirdi, ikkinchisining ko‘zi ochildi",
+    "B) Ikkalasi ham kichkina bo‘lib qoldi",
+    "C) Ularning qanotlari o‘sib chiqdi"
+   ],
+   "answer": "A) Biri semirdi, ikkinchisining ko‘zi ochildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bozor darvozasida shaytonlar va farishtalar nima qilishardi?",
+   "options": [
+    "A) Odamlarni o‘z tomoniga chorlashardi",
+    "B) Kelganlarni mehmonga taklif qilishardi",
+    "C) Bozor vaqtini poylashardi"
+   ],
+   "answer": "A) Odamlarni o‘z tomoniga chorlashardi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Bismillo xola bolalar haqini yeyishni do‘zax o‘ti dedi?",
+   "options": [
+    "A) Harom luqma inson imonini kuydiradi",
+    "B) Taom juda issiq bo‘lgani uchun",
+    "C) Oshpazlar taomni kuydirgani uchun"
+   ],
+   "answer": "A) Harom luqma inson imonini kuydiradi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Bismillo xola kelgan joyda shaytonlar ojiz qolardi?",
+   "options": [
+    "A) U hamisha Allohni zikr qilardi",
+    "B) U juda qattiq baqirgani uchun",
+    "C) U shaytonlarga ovqat bermagani uchun"
+   ],
+   "answer": "A) U hamisha Allohni zikr qilardi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bog‘cha oshpazining bolalar ovqatidan olib ketishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, bu birovning haqqi",
+    "B) To‘g‘ri, u oshpaz bo‘lib ishlaydi",
+    "C) Yaxshi, mehmonga olib boradi"
+   ],
+   "answer": "A) Noto‘g‘ri, bu birovning haqqi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Bismillo xolaning so‘zlarini «oltin kalitcha» deb nimaga qiyosladi?",
+   "options": [
+    "A) Har qanday yaxshilik eshigini ochgani uchun",
+    "B) Tilla metalldan yasalgani uchun",
+    "C) Kichkina va chiroyli bo‘lgani uchun"
+   ],
+   "answer": "A) Har qanday yaxshilik eshigini ochgani uchun"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Guruchfurush tushida kimning gapiga kirib tarozidan urgan edi?",
+   "options": [
+    "A) Shaytonning vasvasasiga kirib",
+    "B) Xaridorning talabiga qarab",
+    "C) Qishloqdagi oshnasiga ishonib"
+   ],
+   "answer": "A) Shaytonning vasvasasiga kirib"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bozorda «Insof tarozisi» nima uchun o‘rnatildi?",
+   "options": [
+    "A) Xaridorlar gumonini tekshirib ko‘rishi uchun",
+    "B) Faqat mevalarni tortish uchun",
+    "C) Bozorchilar dam olishi uchun"
+   ],
+   "answer": "A) Xaridorlar gumonini tekshirib ko‘rishi uchun"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bismillo xola radio orqali qanday tarozi haqida e'lon qildi?",
+   "options": [
+    "A) Elektron tarozilarga o‘tilishi haqida",
+    "B) Eski yog‘och tarozilar haqida",
+    "C) Toshli katta tarozilar haqida"
+   ],
+   "answer": "A) Elektron tarozilarga o‘tilishi haqida"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shaytonvachchaga madrasada qanday jazolar berildi?",
+   "options": [
+    "A) Dumi-qulog‘i kesilib, zambarakdan otildi",
+    "B) Faqat madrasadan quvib solindi",
+    "C) Bir necha kunga qamab qo‘yildi"
+   ],
+   "answer": "A) Dumi-qulog‘i kesilib, zambarakdan otildi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shaytonvachchaning rejalari qanday tartibda barbod bo‘ldi?",
+   "options": [
+    "A) Bismillo xola sabab tarozilar to‘g‘rilandi",
+    "B) Barcha sotuvchilar shahardan qochdi",
+    "C) Shaytonlar bozorni egallab oldi"
+   ],
+   "answer": "A) Bismillo xola sabab tarozilar to‘g‘rilandi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun guruchfurush chayqovchilikni tashlab qishlog‘iga ketmoqchi bo‘ldi?",
+   "options": [
+    "A) Qilmishidan pusaymon bo‘lib, onasini sog‘indi",
+    "B) Bozorda joy qolmagani uchun",
+    "C) Bismillo xola uni urgani uchun"
+   ],
+   "answer": "A) Qilmishidan pusaymon bo‘lib, onasini sog‘indi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shaytonvachcha nima uchun «sotqin» deb ayblandi?",
+   "options": [
+    "A) Hiylalari ezgulik g‘alabasiga olib kelgani uchun",
+    "B) Odamlarga pul tarqatgani uchun",
+    "C) Onasini tashlab qochgani uchun"
+   ],
+   "answer": "A) Hiylalari ezgulik g‘alabasiga olib kelgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tarozidan urmasdan halol va to‘g‘ri savdo qilish nega muhim?",
+   "options": [
+    "A) Yurtda baraka va insof bo‘ladi",
+    "B) Sotuvchi tezroq boyib ketadi",
+    "C) Xaridorlar kamroq keladi"
+   ],
+   "answer": "A) Yurtda baraka va insof bo‘ladi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Bismillo xolaning «Tarozi buzulsa — yurt buzuladi» degan gapidan nima anglashiladi?",
+   "options": [
+    "A) Halollik jamiyat tinchligining asosi ekanligi",
+    "B) Bozordagi tarozilarni tez-tez almashtirish",
+    "C) Tarozining og‘ir bo‘lishi zarurligi"
+   ],
+   "answer": "A) Halollik jamiyat tinchligining asosi ekanligi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Shaytonvachchaning ayanchli oqibatini tasvirlab nimaga urg‘u bergan?",
+   "options": [
+    "A) Yomonlik va hiyla hamisha mag‘lub bo‘lishiga",
+    "B) Shaytonlar ucha olishiga",
+    "C) Qishloqlarda odam kamligiga"
+   ],
+   "answer": "A) Yomonlik va hiyla hamisha mag‘lub bo‘lishiga"
+  }
+ ]
+}

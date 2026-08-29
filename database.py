@@ -175,7 +175,11 @@ def calculate_and_update_rank(child_id):
     return rank, total_pages
 
 def update_streak(user_id):
-    """Streak hisoblash va 'Olov qalqoni' (Streak Freeze 🛡) mexanizmi"""
+    """Parvoz (ketma-ket kunlar) hisobi va uni saqlab qoladigan «Qanot» mexanizmi.
+
+    Nomlar ega tanlovi (2026-08-29): kunlik ketma-ketlik — «Parvoz»,
+    himoya — «Qanot». Bazadagi ustun nomi (`streak_freezes`) o‘zgarmaydi.
+    """
     cursor.execute("SELECT streak_days, last_read_date, streak_freezes FROM Users WHERE user_id = ?", (user_id,))
     row = cursor.fetchone()
     if not row:
@@ -196,7 +200,7 @@ def update_streak(user_id):
         if diff_days == 1:
             streak += 1
         elif diff_days == 2 and freezes > 0:
-            # 1 kun qoldirilgan, lekin Olov qalqoni bor!
+            # 1 kun qoldirilgan, lekin Qanot bor — parvoz uzilmaydi!
             freezes -= 1
             streak += 1
             shield_used = True

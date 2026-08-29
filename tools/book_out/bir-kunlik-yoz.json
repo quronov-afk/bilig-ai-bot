@@ -1,0 +1,307 @@
+{
+ "title": "Bir kunlik yoz",
+ "author": "Rey Bredberi",
+ "genre": "hikoya",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "hasad",
+   "mehr-oqibat",
+   "xato va tavba",
+   "hissiyotlar",
+   "tabiat"
+  ],
+  "theme": "Boshqalarning o‘zgaligini qabul qila olmaslik va hasad insonga zulm ko‘chasini ko‘rsatadi, ammo oqibatda og‘ir vijdon azobiga sabab bo‘ladi.",
+  "summary": "Zuhro sayyorasida yetti yildan beri to‘xtamay yomg‘ir yog‘adi. U yerdagi bolalar quyoshni eslashmaydi. Faqat besh yil muqaddam Yerdan kelgan Margo quyoshni va uning haroratini aniq eslaydi va u haqida she’rlar yozadi. Shu sababli boshqa bolalar unga hasad qilishadi va uni yomon ko‘rishadi. Quyosh chiqishi kutilayotgan kuni Uilyam va boshqa bolalar Margoni qaznoqqa qamab qo‘yishadi. Ustoz kelgach, hamma tashqariga yuguradi. Bolalar ikki soat davomida quyosh va tabiat jamolidan bahramand bo‘lishadi. Biroq tez orada yana yomg‘ir va bo‘ron boshlanadi. Bolalar bino ichiga qaytishgach, qaznoqdagi Margoni eslashadi. Qilgan ishlaridan chuqur afsuslanib, uyat va vijdon azobi bilan qaznoq eshigini ochishadi.",
+  "characters": "Margo — Yerdan kelgan, nozik va ma’yus qizaloq; Uilyam — Margoga hasad qiladigan va uni qaznoqqa qamaydigan bolakay; O‘qituvchi — bolalarni tashqariga olib chiquvchi pedagog.",
+  "conclusion": "Ushbu hikoya bolaga o‘zgalarning tuyg‘ularini hurmat qilishni va tengdoshlariga nisbatan shafqatsiz bo‘lmaslikni o‘rgatadi. Bola ozor berish va hasad qilish oxir-oqibat og‘ir vijdon azobiga olib kelishini anglaydi. Asar mehr-oqibat va hamdardlik fazilatlarini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Insoniy munosabatlar, tuyg‘ular va vijdoniylik haqida o‘ylashni yaxshi ko‘radigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zuhro sayyorasida yomg‘ir necha yil davomida to‘xtamay yog‘ar edi?",
+   "options": [
+    "A) Uch yil",
+    "B) Besh yil",
+    "C) Yetti yil",
+    "D) O‘n yil"
+   ],
+   "answer": "C) Yetti yil"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Margo necha yoshida Yerdan Zuhro sayyorasiga uchib kelgan edi?",
+   "options": [
+    "A) Uch yoshida",
+    "B) To‘rt yoshida",
+    "C) Olti yoshida",
+    "D) Yetti yoshida"
+   ],
+   "answer": "B) To‘rt yoshida"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Margo oftobni nimaga o‘xshatib she’r va hikoya yozgan edi?",
+   "options": [
+    "A) Oltin tangaga va o‘choqdagi olovga",
+    "B) Zangori shishaga va tog‘ga",
+    "C) Katta chiroqqa va sariq gulga",
+    "D) Issiq suvga va daryoga"
+   ],
+   "answer": "A) Oltin tangaga va o‘choqdagi olovga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolalarning Margoni yoqtirmasligiga qaysi sabablar ko‘rsatilgan?",
+   "options": [
+    "A) Uning ko‘p gapirishi va maqtanishi",
+    "B) Oftobni eslashi va Yerga qaytishi",
+    "C) O‘yinlarda doim g‘olib bo‘lishi",
+    "D) Ustoziga faqat shikoyat qilishi"
+   ],
+   "answer": "B) Oftobni eslashi va Yerga qaytishi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Margo dushxonada suv tagiga kirishga nega rozi bo‘lmagan?",
+   "options": [
+    "A) Suv o‘ta sovuq bo‘lgani uchun",
+    "B) Yomg‘ir suvidan bezor bo‘lgani uchun",
+    "C) Kiyimi ho‘l bo‘lishidan qo‘rqib",
+    "D) Dushxona qorong‘i bo‘lgani uchun"
+   ],
+   "answer": "B) Yomg‘ir suvidan bezor bo‘lgani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Uilyam nega Margoning she’rini \"o‘zing yozmagansan\" deb baqirdi?",
+   "options": [
+    "A) She’r juda xunuk yozilgani uchun",
+    "B) Margoga bo‘lgan hasadi sababli",
+    "C) She’rni kitobda ko‘rib qolgani uchun",
+    "D) O‘qituvchining topshirig‘i bo‘lgani uchun"
+   ],
+   "answer": "B) Margoga bo‘lgan hasadi sababli"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Margoni «buklangan surat» deya ta’riflab nimani ko‘rsatgan?",
+   "options": [
+    "A) Uning juda shaddod ekanini",
+    "B) Uning juda zaif va rangparligini",
+    "C) Uning kiyimlari yirtiq ekanini",
+    "D) Uning rasm chizishini"
+   ],
+   "answer": "B) Uning juda zaif va rangparligini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uilyam va bolalar Margoni qayerga qamab qo‘yishdi?",
+   "options": [
+    "A) Sinfxonaga",
+    "B) Yerto‘laga",
+    "C) Qaznoqqa",
+    "D) Dushxonaga"
+   ],
+   "answer": "C) Qaznoqqa"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘qituvchi bolalarga tashqarida qancha vaqt borligini aytdi?",
+   "options": [
+    "A) Bir soat",
+    "B) Ikki soat",
+    "C) Uch soat",
+    "D) Yetti soat"
+   ],
+   "answer": "B) Ikki soat"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yomg‘ir to‘xtaganda osmon qanday tusga kirdi?",
+   "options": [
+    "A) Qop-qora tusga",
+    "B) Och va zangori shishadek",
+    "C) Qip-qizil va sariq",
+    "D) Kulrang tuman kabi"
+   ],
+   "answer": "B) Och va zangori shishadek"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Yomg‘ir to‘xtagach, voqealar qanday ketma-ketlikda sodir bo‘ldi?",
+   "options": [
+    "A) Sukunat cho‘kdi, quyosh chiqdi, bolalar yugurishdi",
+    "B) Bo‘ron ko‘tarildi, ustoz baqirdi, eshik yopildi",
+    "C) Margo chiqdi, bolalar yig‘lashdi, oftob botdi",
+    "D) Momaqaldiroq bo‘ldi, gullar ochildi, bola yiqildi"
+   ],
+   "answer": "A) Sukunat cho‘kdi, quyosh chiqdi, bolalar yugurishdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ustoz \"Hamma shu yerdami?\" deganda bolalar nega \"Ha!\" deyishdi?",
+   "options": [
+    "A) Margoni chindan ham unutib qo‘yishgani uchun",
+    "B) Quyoshni ko‘rish uchun Margoni yashirishgani sababli",
+    "C) Margo uyiga ketgan deb o‘ylashgani uchun",
+    "D) Qaznoqda hech kim yo‘q deb o‘ylashgani uchun"
+   ],
+   "answer": "B) Quyoshni ko‘rish uchun Margoni yashirishgani sababli"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bolalar quyosh chiqqanda nega ustozning ogohlantirishiga quloq solishmadi?",
+   "options": [
+    "A) Ustozning ovozini eshitishmagani uchun",
+    "B) Quyosh quvonchidan o‘zlarini yo‘qotishgani uchun",
+    "C) Ustozga qarshi chiqishni xohlashgani uchun",
+    "D) Tezroq uyga qaytmoqchi bo‘lishgani uchun"
+   ],
+   "answer": "B) Quyosh quvonchidan o‘zlarini yo‘qotishgani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bolalarning Margoni qaznoqqa qamab qo‘yishi to‘g‘ri ish bo‘ldimi?",
+   "options": [
+    "A) To‘g‘ri — u hazilni tushunmadi",
+    "B) Noto‘g‘ri — bu shafqatsizlik va nohaqlikdir",
+    "C) To‘g‘ri — u darsda ko‘p xaqilladi",
+    "D) Noto‘g‘ri — u qaznoqni buzib qo‘ydi"
+   ],
+   "answer": "B) Noto‘g‘ri — bu shafqatsizlik va nohaqlikdir"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yomg‘ir qayta boshlanayotganini birinchi bo‘lib kim va qanday payqadi?",
+   "options": [
+    "A) Uilyam baqirib aytdi",
+    "B) Qizaloq kaftiga tomchi tomganidan",
+    "C) O‘qituvchi soatiga qarab aytdi",
+    "D) Margo qaznoqdan dodladi"
+   ],
+   "answer": "B) Qizaloq kaftiga tomchi tomganidan"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yomg‘ir va bo‘ron qaytganidan keyin yana necha yil yomg‘ir yog‘ishi kerak edi?",
+   "options": [
+    "A) Bir yil",
+    "B) Besh yil",
+    "C) Yetti yil",
+    "D) O‘n yil"
+   ],
+   "answer": "C) Yetti yil"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Yomg‘ir boshlangach, bolalarning ruhiy holati qanday o‘zgardi?",
+   "options": [
+    "A) Quvonchdan birdan qo‘rquv va aybdorlikka",
+    "B) Qayg‘udan birdan katta shodlikka",
+    "C) G‘azabdan birdan kulgiga va o‘yinga",
+    "D) Kayfiyati umuman o‘zgarmadi"
+   ],
+   "answer": "A) Quvonchdan birdan qo‘rquv va aybdorlikka"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bolalar qaznoq eshigi oldida nega bir-birining ko‘ziga qaray olishmadi?",
+   "options": [
+    "A) Qorong‘i bo‘lgani uchun ko‘rishmadi",
+    "B) Qilgan qabih ishlaridan uyalishgani uchun",
+    "C) Ko‘zlariga quyosh nuri tushgani uchun",
+    "D) Margodan qo‘rqishgani uchun"
+   ],
+   "answer": "B) Qilgan qabih ishlaridan uyalishgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bolalarning oxirida Margoni qaznoqdan chiqarishi ularning qaysi hissini ko‘rsatadi?",
+   "options": [
+    "A) Qilgan xatosini anglash va tavba qilishni",
+    "B) Qo‘rqoqlik va mas’uliyatsizlikni",
+    "C) Yana o‘yin o‘ynash istagini",
+    "D) O‘qituvchidan qo‘rqib qochishni"
+   ],
+   "answer": "A) Qilgan xatosini anglash va tavba qilishni"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif qaznoq eshigini ochishni mahbusni ozod qilishga o‘xshatib nimani ko‘rsatmoqchi?",
+   "options": [
+    "A) Margoning haqiqiy jinoyatchi ekanini",
+    "B) Margoni eng katta quvonchdan mahrum qilishganini",
+    "C) Qaznoq eshigi juda qattiq qulflanganini",
+    "D) Bolalar tezda uyga ketishganini"
+   ],
+   "answer": "B) Margoni eng katta quvonchdan mahrum qilishganini"
+  }
+ ]
+}

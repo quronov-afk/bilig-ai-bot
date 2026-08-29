@@ -1,0 +1,417 @@
+{
+ "title": "To‘maris",
+ "author": "Tovuqni kim o‘g‘irladi?. Dinara Muminova",
+ "genre": "qissa",
+ "age_group": "3",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "vatanparvarlik",
+   "jasorat",
+   "tarix",
+   "ona mehr-muhabbati",
+   "ozodlik"
+  ],
+  "theme": "Vatanni va el-yurt ozodligini saqlash eng oily burchdir. Tinchlik hamda erkinlik uchun kurashda birlik, mardlik va adolat har qanday yovuzlik ustidan g‘alaba qozonadi.",
+  "summary": "Fors hukumdori Kir massagetlar yerini egallash va uning boyliklariga ega bo‘lish uchun ulkan qo‘shin tortib keladi. Malika To‘maris va massagetlar tinchlikni saqlashga urinadilar, ammo Kirning makkorona hamda bosqinchilik takliflarini rad etadilar. Kir daryodan o‘tib, hiyla bilan To‘marisning o‘g‘li Sparangizni va bir guruh yigitlarni asir oladi. Sparangiz onasining o‘zi uchun taslim bo‘lishini xohlamay, ozodlik hamda Vatan shani uchun o‘zini o‘ldiradi. Bu fojeadan so‘ng To‘maris va massagetlar shiddatli jangga kirishadilar. Massagetlarning jangovar mahorati va «soxta qochish» hiylasi natijasida forslar tor-mor etiladi. To‘maris Kirni yakkama-yakka quvib yetib, kallasini oladi va qon to‘la xumga solib, «qonga to‘ymagan eding, endi to‘y!» deydi. G‘alabadan so‘ng, farzand hamda fidoyi jangchilar dog‘ida ezilgan To‘maris taxtdan voz kechib, hayotdan ko‘z yumadi.",
+  "characters": "To‘maris — massagetlar malikasi, mard va adolatli ona, elini va Vatanini himoya qiladi. Kir — forslar shahanshohi, bosqinchi va makkor hukmdor. Sparangiz — To‘marisning o‘g‘li, yosh shahzoda, sharafini saqlab o‘z joniga qasd qiladi. Krat va Zaridor — massagetlar oqsoqollari hamda sarkardalari. Ozada — Baqtriya podshohining qizi, Sparangizga yordam berishga urinadi.",
+  "conclusion": "Asar bolada vatanparvarlik, el-yurtga sadoqat va mardlik tuyg‘ularini tarbiyalaydi. Qahramonlik hamda ozodlik uchun kurashning qadrini anglashga yordam beradi. Erkinlik va adolat yo‘lida fidoyilik ko‘rsatishning yuksak namunasini ko‘rsatadi.",
+  "difficulty": "o‘rta",
+  "mood": "vatanparvarlik, shiddatli, o‘ylantiruvchi",
+  "for_whom": "Tarixiy voqealar, qahramonlik va Vatan himoyasi haqidagi asarlarni yoqtiradigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Apanam oyi qanday oy deb bilinadi?",
+   "options": [
+    "A) Shamol oyi",
+    "B) Suv oyi",
+    "C) Olov oyi"
+   ],
+   "answer": "B) Suv oyi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Massagetlar yoy o‘qlariga nima surishni o‘ylab topgan edi?",
+   "options": [
+    "A) Zahar",
+    "B) Moy",
+    "C) Bol"
+   ],
+   "answer": "A) Zahar"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kir daryo bo‘yiga kelganda qaysi daryoning suvini ichdi?",
+   "options": [
+    "A) Yaksart",
+    "B) Oks",
+    "C) Tigr"
+   ],
+   "answer": "B) Oks"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kir To‘marisga elchi orqali qanday shart qo‘ydi?",
+   "options": [
+    "A) Nikohiga kirish va bo‘ysunish",
+    "B) Oltin soliq to‘lash",
+    "C) Yurtidan chiqib ketish"
+   ],
+   "answer": "A) Nikohiga kirish va bo‘ysunish"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "To‘maris Kir elchilariga qanday ketma-ketlikda javob berdi?",
+   "options": [
+    "A) Nikohni rad etdi, daryodan o‘tishni taklif qildi",
+    "B) Daryoni to‘sdi, keyin sovchiga rozi bo‘ldi",
+    "C) Darhol jangga kirdi, elchini o‘ldirdi"
+   ],
+   "answer": "A) Nikohni rad etdi, daryodan o‘tishni taklif qildi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kir nima uchun To‘marisga elchi yuborib uylanmoqchi bo‘ldi?",
+   "options": [
+    "A) Massagetlar boyligini urushsiz egallash uchun",
+    "B) To‘marisni chin dildan sevgani uchun",
+    "C) Oks daryosini ko‘rmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Massagetlar boyligini urushsiz egallash uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Massagetlar nega o‘q zaharini maxfiy saqlashgan?",
+   "options": [
+    "A) Jang taqdirini hal qiluvchi sir bo‘lgani uchun",
+    "B) Tabiblar terishga erinishgani uchun",
+    "C) O‘simlik kam uchragani uchun"
+   ],
+   "answer": "A) Jang taqdirini hal qiluvchi sir bo‘lgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "To‘marisning Kir taklifini rad etishini qanday baholash mumkin?",
+   "options": [
+    "A) Qahramonlik va nomusni saqlash",
+    "B) Nodonlik va qo‘rqoqlik",
+    "C) O‘ylamasdan qilingan xato"
+   ],
+   "answer": "A) Qahramonlik va nomusni saqlash"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Matnda massagetlarning yurtini himoya qilish tuyg‘usi qanday tasvirlangan?",
+   "options": [
+    "A) Hech kim o‘zini chetga olmaydi",
+    "B) Faqat podshoh urushadi",
+    "C) Odamlar qo‘rqib qochadi"
+   ],
+   "answer": "A) Hech kim o‘zini chetga olmaydi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘maris davrida massagetlar qaysi narsani muqaddas bilishgan?",
+   "options": [
+    "A) Quyosh va olovni",
+    "B) Tog‘ va daryoni",
+    "C) Oltin va kumushni"
+   ],
+   "answer": "A) Quyosh va olovni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kratning xoinligi fosh bo‘lgach, u bilan nima yuz berdi?",
+   "options": [
+    "A) Otidan yiqilib halok bo‘ldi",
+    "B) Kirning oldiga qochib ketdi",
+    "C) To‘maris uni kechirdi"
+   ],
+   "answer": "A) Otidan yiqilib halok bo‘ldi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ovchi yigit To‘maris saroyiga nechta dushman kallasini keltirdi?",
+   "options": [
+    "A) Beshta",
+    "B) O‘nta",
+    "C) Uchta"
+   ],
+   "answer": "A) Beshta"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kir aslida qaysi podshohning nabirasi edi?",
+   "options": [
+    "A) Astiakning",
+    "B) Nabonidning",
+    "C) Perseyning"
+   ],
+   "answer": "A) Astiakning"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘maris saroyiga kelgan ovchi yigit podshohdan nima so‘radi?",
+   "options": [
+    "A) Tansoqchi-askar bo‘lishni",
+    "B) Oltin va mukofotni",
+    "C) Katta yer ajratishni"
+   ],
+   "answer": "A) Tansoqchi-askar bo‘lishni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sparangiz asirga tushishidan oldin nimalar bo‘lib o‘tdi?",
+   "options": [
+    "A) Chodirga kirib sharob ichdi",
+    "B) Kir bilan yakkama-yakka urushdi",
+    "C) Onasi bilan jangga kirdi"
+   ],
+   "answer": "A) Chodirga kirib sharob ichdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Massagetlarda hosil bayrami qanday tartibda o‘tkazilardi?",
+   "options": [
+    "A) El oqsoqollari hosilni ko‘rib tasdiqlardi",
+    "B) Faqat podshoh saroyda nishonlardi",
+    "C) O‘simliklar yoqib yuborilardi"
+   ],
+   "answer": "A) El oqsoqollari hosilni ko‘rib tasdiqlardi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "To‘maris nega Kratning sotqinligiga darrov jazo bermadi?",
+   "options": [
+    "A) Haqiqatni ajratmay nohaq qon to‘kishdan qo‘rqdi",
+    "B) Kratdan juda qo‘rqardi",
+    "C) Kirning buyrug‘ini kutayotgan edi"
+   ],
+   "answer": "A) Haqiqatni ajratmay nohaq qon to‘kishdan qo‘rqdi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sparangiz nima uchun onasiga o‘zi uchun taslim bo‘lmaslikni so‘rab xat yozdi?",
+   "options": [
+    "A) Vatan taxti dushmanga o‘tmasligi uchun",
+    "B) Onasini ko‘rishni istamgani uchun",
+    "C) Kirning saroyida qolmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Vatan taxti dushmanga o‘tmasligi uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "To‘marisning farzandi uchun o‘z boshini berishga rozi bo‘lishi qanday hislat?",
+   "options": [
+    "A) Onalik fidoyiligi",
+    "B) Qo‘rqoqlik alomati",
+    "C) Mas'uliyatsizlik"
+   ],
+   "answer": "A) Onalik fidoyiligi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif massagetlarning halollik va adolatga munosabatini qanday tasvirlaydi?",
+   "options": [
+    "A) Haqiqat ularning suyak-suyagiga singib ketgan",
+    "B) Ular aldatishni afzal ko‘radilar",
+    "C) Faqat boylikka sig‘inadilar"
+   ],
+   "answer": "A) Haqiqat ularning suyak-suyagiga singib ketgan"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Baqtriya malikasi Ozada Sparangizning yoniga nima uchun keldi?",
+   "options": [
+    "A) Uni asirlikdan qutqarish uchun",
+    "B) Kirning xabarini yetkazish uchun",
+    "C) Massagetlarga qarshi urushish uchun"
+   ],
+   "answer": "A) Uni asirlikdan qutqarish uchun"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sparangiz o‘z joniga qanday qasd qildi?",
+   "options": [
+    "A) Qilichni ko‘kragiga to‘g‘rilab",
+    "B) Zahar ichib",
+    "C) Daryoga sakrab"
+   ],
+   "answer": "A) Qilichni ko‘kragiga to‘g‘rilab"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Massagetlar jangda dushmanni qumga olib kirish uchun qanday usul ishlatishdi?",
+   "options": [
+    "A) Soxta qochish usulini",
+    "B) Devor qurish usulini",
+    "C) Tunda hujum qilishni"
+   ],
+   "answer": "A) Soxta qochish usulini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jang yakunida voqealar qanday tartibda ro‘y berdi?",
+   "options": [
+    "A) Kir qochdi, To‘maris uni o‘ldirdi",
+    "B) Kir To‘marisni asir oldi",
+    "C) Massagetlar taslim bo‘ldi"
+   ],
+   "answer": "A) Kir qochdi, To‘maris uni o‘ldirdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sparangiz nega o‘zini o‘ldirishga qaror qildi?",
+   "options": [
+    "A) Onasi taslim bo‘lishining oldini olish uchun",
+    "B) Ozadaga achingani uchun",
+    "C) Asirlikda qiynalgani uchun"
+   ],
+   "answer": "A) Onasi taslim bo‘lishining oldini olish uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "To‘maris Kirning kallasini nega qon to‘la xumga tiqdi?",
+   "options": [
+    "A) Kirning qonxo‘rligiga jazo sifatida",
+    "B) Qadimiy rasm-rusum bo‘lgani uchun",
+    "C) Fors elchilarining iltimosi bilan"
+   ],
+   "answer": "A) Kirning qonxo‘rligiga jazo sifatida"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sparangizning o‘zini qurbon qilishini qanday baholash mumkin?",
+   "options": [
+    "A) Vatan va ona shani uchun jasorat",
+    "B) Qaltis va ma'nosiz harakat",
+    "C) Qo‘rqoqlik oqibati"
+   ],
+   "answer": "A) Vatan va ona shani uchun jasorat"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "To‘marisning g‘alabadan so‘ng taxtdan voz kechishini qanday tushunish mumkin?",
+   "options": [
+    "A) Farzand va el qayg‘usidan ado bo‘lgani",
+    "B) Kirga achingani",
+    "C) Boshqa yurtga ketmoqchi bo‘lgani"
+   ],
+   "answer": "A) Farzand va el qayg‘usidan ado bo‘lgani"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif To‘marisning Kir ustidan erishgan g‘alabasini qanday ruhda tasvirlaydi?",
+   "options": [
+    "A) Adolat va mag‘rurlik tantanasi",
+    "B) Afsus va achiniq bilan",
+    "C) Kulgili va yengil hodisa"
+   ],
+   "answer": "A) Adolat va mag‘rurlik tantanasi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "To‘marisning kelajak avlodlarga va kotiblarga aytgan so‘zlarining ma'nosi nima?",
+   "options": [
+    "A) Bosqinchilarning oqibati saboq bo‘lib qolsin",
+    "B) Urush haqida hamma unutsin",
+    "C) Kirni buyuk hukmdor deb yozishsin"
+   ],
+   "answer": "A) Bosqinchilarning oqibati saboq bo‘lib qolsin"
+  }
+ ]
+}

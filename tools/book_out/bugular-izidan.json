@@ -1,0 +1,287 @@
+{
+ "title": "Bug‘ular izidan",
+ "author": "Ernest Seton-Tompson",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "tabiat",
+   "mehribonlik",
+   "ovchilik",
+   "hayvonlar va inson",
+   "sabot"
+  ],
+  "theme": "Inson va tabiat o‘rtasidagi asl rishta tajovuz emas, balki mehr-shafqat hamda hayotni e'zozlashdir.",
+  "summary": "Yan ismli yosh yigit o‘rmonda bug‘u izlarini ko‘rib, uni ovlashga ahd qiladi. U oylab sovuq adirlarda iz quvadi, tabiat sirlarini va ovchilik mahoratini o‘rganadi. Ov jarayonida bo‘rilar ta'qibiga uchrab, jonivorlar chekadigan qo‘rquv va azobni o‘z tanasida his etadi. Keyinchalik hindu Chaska bilan uchrashib, ov ilmidan saboq oladi. Safardosh ovchining yarador bug‘uni shafqatsizlarcha o‘ldirishi Yanning qalbidan ovga bo‘lgan ishtiyoqni so‘ndiradi. Nihoyat, u ikki yil davomida quvgan Qumloq adirning ulkan yo‘lboshchi bug‘usi bilan botqoqli o‘rmonda yuzma-yuz keladi. Jonivorning beg‘ubor va xotirjam ko‘zlariga boqib, u tabiatning go‘zal mavjudotini o‘ldirishga qo‘li bormaydi. Yan bug‘u bilan botiniy muloqot qilib, uni erkinlikka qo‘yib yuboradi hamda hayotida boshqa hech qachon unga qo‘l ko‘tarmaslikka va'da beradi.",
+  "characters": "Yan — ovga qiziquvchi, bardoshli yigit, hikoya davomida tabiatga mehr qo‘yib, ovchilikdan voz kechadi. Qumloq adir bug‘usi — zakovatli, mag‘rur va ozodlikni sevadigan ulkan yo‘lboshchi bug‘u. Chaska — Yanga tabiatni va ov sirlarini o‘rgatgan tajribali hindu ovchi.",
+  "conclusion": "Asar bolada tabiatga va barcha tirik mavjudotlarga nisbatan mehr-shafqat hamda mas'uliyat tuyg‘usini shakllantiradi. U insonning haqiqiy qudrati o‘ldirishda emas, balki kechirish va hayotni asrashda ekanini ko‘rsatib beradi.",
+  "difficulty": "o‘rta",
+  "mood": "ta'sirli, o‘ylantiruvchi, hayajonli",
+  "for_whom": "Tabiat va hayvonot olamini sevadigan, sarguzashtlarga qiziquvchi hamda mehribonlik va ezgulik haqida fikr yuritishni xohlaydigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yan birinchi marta Izlar Bulog‘ida nimaning izini ko‘rdi?",
+   "options": [
+    "A) Bug‘ular izini",
+    "B) Bo‘rilar izini",
+    "C) Ayiq izini"
+   ],
+   "answer": "A) Bug‘ular izini"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yan bug‘ularni birinchi marta ko‘rganda ular nima qilayotgan edi?",
+   "options": [
+    "A) Osmonga irg‘ishlab o‘ynayotgan edi",
+    "B) Suv ichayotgan edi",
+    "C) O‘t yeyayotgan edi"
+   ],
+   "answer": "A) Osmonga irg‘ishlab o‘ynayotgan edi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Yan bug‘ular ketgan tomondan nimani aniqladi?",
+   "options": [
+    "A) Tuyoqning oldi chuqurroq botganini",
+    "B) Izlar yo‘qolganini",
+    "C) Qon izi ko‘ringanini"
+   ],
+   "answer": "A) Tuyoqning oldi chuqurroq botganini"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yan nima uchun bo‘rilar uvullashiga taqlid qildi?",
+   "options": [
+    "A) Xushvaqt tuyg‘ularini izhor qilish uchun",
+    "B) Bo‘rilarni qo‘rqitish uchun",
+    "C) Sheriklarini chaqirish uchun"
+   ],
+   "answer": "A) Xushvaqt tuyg‘ularini izhor qilish uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bo‘rilar Yanni o‘rab olganda, Yan nega daraxtga chiqmadi?",
+   "options": [
+    "A) Sovuqda daraxtda jon saqlab bo‘lmasdi",
+    "B) Miltig‘i daraxtga sig‘mas edi",
+    "C) Bo‘rilar ketgan edi"
+   ],
+   "answer": "A) Sovuqda daraxtda jon saqlab bo‘lmasdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yan bo‘rilar ta'qibidan qanday omon qoldi?",
+   "options": [
+    "A) Qor ustida xotirjam o‘tirdi",
+    "B) Daraxt ortiga yashirindi",
+    "C) Bo‘rilarga o‘q uzdi"
+   ],
+   "answer": "A) Qor ustida xotirjam o‘tirdi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Yanning yoshlik damlarini qanday ataydi?",
+   "options": [
+    "A) Oltin kunlarim",
+    "B) Qiyin kunlarim",
+    "C) Armonli kunlarim"
+   ],
+   "answer": "A) Oltin kunlarim"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yan butalar orasida yotgan kulrang kundani nima deb bildi?",
+   "options": [
+    "A) Qumloq adir bug‘usi deb",
+    "B) Ulkan bo‘ri deb",
+    "C) Yovvoyi ayiq deb"
+   ],
+   "answer": "A) Qumloq adir bug‘usi deb"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yan birinchi marta bug‘uni ko‘rganda nega darhol otolmadi?",
+   "options": [
+    "A) Kuchli hayajondan qo‘llari qaltirab ketdi",
+    "B) Miltig‘i buzilib qoldi",
+    "C) Bug‘u qochib ketdi"
+   ],
+   "answer": "A) Kuchli hayajondan qo‘llari qaltirab ketdi"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hindu Chaska Yanga ovda nima qilishni o‘rgatdi?",
+   "options": [
+    "A) Tepaga chopayotgan bug‘uni quvmaslikni",
+    "B) Faqat tunda ov qilishni",
+    "C) Bug‘ularni chaqirishni"
+   ],
+   "answer": "A) Tepaga chopayotgan bug‘uni quvmaslikni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ovchilar boshiga nega qizil ro‘mol tang‘ib yuradi?",
+   "options": [
+    "A) Bir-birini adashib otib qo‘ymaslik uchun",
+    "B) Sovuqdan saqlanish uchun",
+    "C) Bug‘ularni jalb qilish uchun"
+   ],
+   "answer": "A) Bir-birini adashib otib qo‘ymaslik uchun"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ulkan bug‘u yarador hamrohini qutqarish uchun nima qildi?",
+   "options": [
+    "A) Bosgan izidan ketiga qaytib keldi",
+    "B) Ovchilarga hujum qildi",
+    "C) Bo‘rilarni chaqirib keldi"
+   ],
+   "answer": "A) Bosgan izidan ketiga qaytib keldi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yarador bug‘u o‘ldirilgach, Yan nimani his qildi?",
+   "options": [
+    "A) Ovchilikdan ko‘ngli qolib, o‘zini koyidi",
+    "B) Xursand bo‘ldi",
+    "C) Sherigini qutladi"
+   ],
+   "answer": "A) Ovchilikdan ko‘ngli qolib, o‘zini koyidi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ulkan bug‘uning yarador sherigiga g‘amxo‘rligi nimani ko‘rsatadi?",
+   "options": [
+    "A) Sodiq va fidoyiligini",
+    "B) Qo‘rqoq va ojizligini",
+    "C) Tajovuzkorligini"
+   ],
+   "answer": "A) Sodiq va fidoyiligini"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yan qorbo‘ronda yo‘lni topish uchun qaysi o‘simlikni izladi?",
+   "options": [
+    "A) Oltin tomir o‘simligini",
+    "B) Qarag‘ay novdasini",
+    "C) Qamish poyasini"
+   ],
+   "answer": "A) Oltin tomir o‘simligini"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yo‘lboshchi bug‘u g‘animni ko‘rgach, oilasiga nima buyurdi?",
+   "options": [
+    "A) Vodiy bo‘ylab tarqab ketishni",
+    "B) Birga hujum qilishni",
+    "C) Buloq bo‘yida to‘planishni"
+   ],
+   "answer": "A) Vodiy bo‘ylab tarqab ketishni"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yan so‘nggi uchrashuvda bug‘u oldiga chiqish uchun nimadan foydalandi?",
+   "options": [
+    "A) Sokin hushtak chaldi",
+    "B) Baland qichqirdi",
+    "C) Qor otdi"
+   ],
+   "answer": "A) Sokin hushtak chaldi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yan va Qumloq adir bug‘usi yuzma-yuz kelganda bug‘u nima qildi?",
+   "options": [
+    "A) Qimir etmay Yanga tikilib turdi",
+    "B) Darrov qochdi",
+    "C) Yanga sapchib sakradi"
+   ],
+   "answer": "A) Qimir etmay Yanga tikilib turdi"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Yanning bug‘uni otmasdan qo‘yib yuborishi to‘g‘ri qarormi?",
+   "options": [
+    "A) To‘g‘ri, tabiatga mehr ko‘rsatdi",
+    "B) Xato, ovni tugatmadi",
+    "C) Qo‘rqoqlik qildi"
+   ],
+   "answer": "A) To‘g‘ri, tabiatga mehr ko‘rsatdi"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Yan bug‘uga «Biz tabiat farzandlarimiz» deganda nimani nazarda tutdi?",
+   "options": [
+    "A) Inson va jonivor tengligini",
+    "B) Quda-anda ekanini",
+    "C) O‘rmon faqat insonniki ekanini"
+   ],
+   "answer": "A) Inson va jonivor tengligini"
+  }
+ ]
+}

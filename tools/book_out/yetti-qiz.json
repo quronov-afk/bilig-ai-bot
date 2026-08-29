@@ -1,0 +1,28 @@
+{
+ "title": "Yetti qiz",
+ "author": "Vasiliy Suxomlinskiy",
+ "genre": "hikoya",
+ "age_group": "3",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-10",
+  "topics": [
+   "oila",
+   "ona va bola",
+   "kattalarga hurmat",
+   "odob-axloq",
+   "g‘amxo‘rlik"
+  ],
+  "theme": "Haqiqiy mehr va hurmat balandparvoz so‘zlarda emas, balki amaliy yordam va samimiy g‘amxo‘rlikda namoyon bo‘ladi.",
+  "summary": "Ona bir haftaga uzoqdagi o‘g‘linikiga ketib qaytadi. Uyga kirganida oltita qizi bir-biridan go‘zal va shirin o‘xshatishlar bilan uni qanchalik sog‘inganini izhor qilishadi. Biroq yettinchi qiz hech qanday chiroyli gap aytmaydi. U jim holda yo‘ldan charchab kelgan onasining etigini yechadi va oyoqlarini yuvishi uchun tog‘orada suv keltirib qo‘yadi.",
+  "characters": "Ona — farzandlarini sog‘inib, yo‘ldan charchab kelgan mehribon ona; Oltita qiz — onasiga chiroyli va balandparvoz gaplar aytgan, lekin amalda yordam bermagan qizlar; Yettinchi qiz — kamtarin va amaliy g‘amxo‘rlik ko‘rsatgan, onasining og‘irini yengil qilgan kichik qiz.",
+  "conclusion": "Asar bolaga onaga bo‘lgan mehrni shunchaki maqtovli so‘zlar bilan emas, balki amaliy xizmat va g‘amxo‘rlik bilan ko‘rsatish lozimligini uqtiradi. Bola kattalarning ehtiyojini payqash va ularga yordam berish eng oliy odob ekanini tushunib yetadi.",
+  "difficulty": "oson",
+  "mood": "o‘ylantiruvchi, tarbiyaviy",
+  "for_whom": "Ota-onasi va yaqinlariga mehrini qanday ko‘rsatishni o‘rganmoqchi bo‘lgan, amaliy g‘amxo‘rlik va odob-axloq haqida o‘ylaydigan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Yettinchi qiz opalariga o‘xshab chiroyli so‘zlar aytmadi, lekin qilgan ishi bilan onasiga eng katta mehrini ko‘rsatdi. Seningcha, nima uchun uning qilgan xizmati balandparvoz gaplardan ko‘ra qadrliroq bo‘ldi? O‘zing ota-onang yo‘ldan yoki ishdan charchab kelganida ularga qanday yordam berasan?"
+}

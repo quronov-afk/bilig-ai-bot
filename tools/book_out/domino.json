@@ -1,0 +1,417 @@
+{
+ "title": "Domino",
+ "author": "Ernest Seton-Tompson",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-13",
+  "topics": [
+   "tabiat",
+   "jonivorlar",
+   "jasorat",
+   "erkinlik",
+   "oila"
+  ],
+  "theme": "Asar erkinlik va matonat tabiat qonuniyatlarida g‘olib chiqishini hamda topqirlik va sadoqat har qanday qiyinchilikni yengishini uqtiradi.",
+  "summary": "Qarag‘ayzorda tumshug‘ida qora tasmasi bor Domino ismli tulki bolasi dunyoga keladi. Insonlar ta’qibi va Benton o‘g‘illarining inni portlatishi sababli oila a’zolarining bir qismi halok bo‘ladi. Domino ulg‘ayib, noyob qora-qo‘ng‘ir mo‘ynali, o‘ta aqlli va chopag‘on tulkiga aylanadi. U daryo suvidan foydalanib izlarini yo‘qotishni o‘rganadi. Keyinchalik u Oqsiyna ismli urg‘ochi tulki bilan juftlashib, yangi in quradi va beshta farzandli bo‘ladi. Bentonlar qo‘ygan qopqon va pistirmalarni Domino o‘z aql-ziroati bilan chetlab o‘tadi. Yalanglikda yalpi ov boshlanganda, Domino sadoqatli jufti Oqsiynani qutqarish uchun itlar va ovchilarni o‘z ketidan ergashtirib olib ketadi. Yarador va holdan toygan bo‘lishiga qaramay, u daryo muzliklari ustida jasorat bilan sakrab, narigi sohilga o‘tadi va omon qoladi. Unga adovat qilgan yovuz it Gekla esa daryo girdobida halok bo mezonida yutiladi.",
+  "characters": "Domino — noyob qora-qo‘ng‘ir mo‘ynali, o‘ta epchil va aqlli tulki; Oqsiyna — Dominoning sadoqatli jufti va g‘amxo‘r ona; Abner Juks — tulkilar hayotini kuzatuvchi hamda ularning matonatiga tan bergan bola; Gekla — Dominoni tinmay quvlagan yovuz ovchi it.",
+  "conclusion": "Bu qissa bolalarga tabiatga mehr qo‘yishni, hayvonlar dunyosiga hurmat bilan qarashni o‘rgatadi. Qahramonning qiyinchiliklar qarshisidagi matonati va fidoyiligi o‘quvchida jasorat, sabr va mardlik kabi ijobiy fazilatlarni shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "hayajonli, ta’sirchan, o‘ylantiruvchi",
+  "for_whom": "Jonivorlar sarguzashtlari, tabiat sirlari hamda jasoratli va sadoqatli qahramonlar haqida o‘qishni xush ko‘radigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Domino ilk bor tug‘ilgan in qayerda joylashgan edi?",
+   "options": [
+    "A) Qarag‘ayzor o‘rtasidagi yalanglikda",
+    "B) Daryoning eng chuqur o‘zanida",
+    "C) Baland tog‘ning muzlik qismida"
+   ],
+   "answer": "A) Qarag‘ayzor o‘rtasidagi yalanglikda"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tulkilar otasi iniga birinchi bo‘lib qanday o‘lja keltirdi?",
+   "options": [
+    "A) Oltin rangli baliq",
+    "B) Yangi bo‘g‘izlangan suv kalamushi",
+    "C) Semiz yovvoyi o‘rdak"
+   ],
+   "answer": "B) Yangi bo‘g‘izlangan suv kalamushi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abner Juks tulki bolasiga nega Domino deb nom berdi?",
+   "options": [
+    "A) Tumshug‘ida qora tasmasi bo‘lgani uchun",
+    "B) Juda tez va epchil yugurgani uchun",
+    "C) Qop-qora mo‘ynali bo‘lib tug‘ilgani uchun"
+   ],
+   "answer": "A) Tumshug‘ida qora tasmasi bo‘lgani uchun"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bentonning o‘g‘illari tulkilar inini qanday usulda vayron qildi?",
+   "options": [
+    "A) Suv quyib to‘ldirishdi",
+    "B) Tosh konidan dinamit keltirib portlatishdi",
+    "C) Katak bilan to‘sib qo‘yishdi"
+   ],
+   "answer": "B) Tosh konidan dinamit keltirib portlatishdi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tulkilar onasi bolalarini ko‘chirishda qaysi ketma-ketlikka amal qildi?",
+   "options": [
+    "A) Avval zaifini, keyin kuchlisini oldi",
+    "B) Avval Dominoni, so‘ng boshqalarini ko‘chirdi",
+    "C) Barcha bolalarini birgalikda olib ketdi"
+   ],
+   "answer": "B) Avval Dominoni, so‘ng boshqalarini ko‘chirdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tulkilar otasi nega o‘ljani inining ichiga to‘g‘ridan-to‘g‘ri olib kirmadi?",
+   "options": [
+    "A) Xavf bor-yo‘qligini ehtiyotkorlik bilan tekshirish uchun",
+    "B) Bolalari to‘q bo‘lgani uchun",
+    "C) O‘zining qorni juda och bo‘lgani uchun"
+   ],
+   "answer": "A) Xavf bor-yo‘qligini ehtiyotkorlik bilan tekshirish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Domino daryo suvini nega o‘zining eng yaqin do‘sti deb bildi?",
+   "options": [
+    "A) Suv itlardan va izlardan qutqargani uchun",
+    "B) Suvda cho‘milishni yaxshi ko‘rgani uchun",
+    "C) Daryoda baliqlar juda ko‘p bo‘lgani uchun"
+   ],
+   "answer": "A) Suv itlardan va izlardan qutqargani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tulkilar otasining oilasi uchun tinmay ovqat tashishini qanday baholash mumkin?",
+   "options": [
+    "A) Mas'uliyatli va g‘amxo‘r otalik burchi",
+    "B) Bekorchi va maqsadsiz harakat",
+    "C) Faqat o‘zini o‘ylash alomati"
+   ],
+   "answer": "A) Mas'uliyatli va g‘amxo‘r otalik burchi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif qarag‘ayzor oqshomlarini tasvirlash orqali kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Osoyishtalik va tabiatga nisbatan mehr",
+    "B) Vahima va o‘tkir qo‘rquv hissi",
+    "C) Zerikish va g‘amginlik kayfiyati"
+   ],
+   "answer": "A) Osoyishtalik va tabiatga nisbatan mehr"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Domino mustaqil hayotga o‘tgach, unda qanday jismoniy o‘zgarish yuz berdi?",
+   "options": [
+    "A) Junlari qalinlashib, qora-qo‘ng‘ir tusga kirdi",
+    "B) Oq rangli mo‘ynaga ega bo‘ldi",
+    "C) Bo‘yi kichrayib, zaiflashib qoldi"
+   ],
+   "answer": "A) Junlari qalinlashib, qora-qo‘ng‘ir tusga kirdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Domino Oqsiyna bilan birga nechta farzand ko‘rdi?",
+   "options": [
+    "A) Uchta",
+    "B) Beshta",
+    "C) Yettita"
+   ],
+   "answer": "B) Beshta"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bed Benton qopqonlarga o‘zgacha hid berish uchun nimadan foydalandi?",
+   "options": [
+    "A) O‘tkir hidli dori aralashmasidan",
+    "B) Oddiy toza suvdan",
+    "C) Yangi uzilgan meva sharbatidan"
+   ],
+   "answer": "A) O‘tkir hidli dori aralashmasidan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qizaloq kurkani tulkidan saqlash uchun uning atrofiga nima qo‘ydi?",
+   "options": [
+    "A) Zanjir va taqa kabi temir-tersaklarni",
+    "B) Baland yog‘och panjaralarni",
+    "C) Katta tosh bo mezonlarini"
+   ],
+   "answer": "A) Zanjir va taqa kabi temir-tersaklarni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qariya Bentonning fikricha tulkilar uchun eng jozibali hid qaysi?",
+   "options": [
+    "A) Yangi so‘yilgan tovuq qoni hidi",
+    "B) Pishirilgan go‘sht hidi",
+    "C) Qovurilgan baliq hidi"
+   ],
+   "answer": "A) Yangi so‘yilgan tovuq qoni hidi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Domino Benton qo‘ygan po‘lat qopqondan qanday qutulmoqchi bo‘ldi?",
+   "options": [
+    "A) Temirni g‘ajib, bor kuch bilan yulqindi",
+    "B) Oramdan odam chaqirib yordam so‘radi",
+    "C) Darhol uxlab qoldi"
+   ],
+   "answer": "A) Temirni g‘ajib, bor kuch bilan yulqindi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Domino qizaloq qo‘ygan temirlarni ko‘rgach nega orqasiga qaytdi?",
+   "options": [
+    "A) Temir hidi xavfdan ogohlantirgani uchun",
+    "B) Kurkaga achingani uchun",
+    "C) Qizaloqdan sovg‘a olgani uchun"
+   ],
+   "answer": "A) Temir hidi xavfdan ogohlantirgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oqsiyna nima uchun bolalari tug‘ilgach Dominoni inidan haydaydi?",
+   "options": [
+    "A) Bolalarining xavfsizligini ta'minlash uchun",
+    "B) Dominoni yoqtirmay qolgani uchun",
+    "C) In juda tor bo‘lgani uchun"
+   ],
+   "answer": "A) Bolalarining xavfsizligini ta'minlash uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dominoning o‘zi ko‘mgan yelim-ovqatlarni og‘ir kunlarga saqlashi qanday sifat?",
+   "options": [
+    "A) Uzoqni ko‘ra bilish va tejamkorlik",
+    "B) Ziqnalik va qo‘rqoqlik",
+    "C) Dangasalik va loqaydlik"
+   ],
+   "answer": "A) Uzoqni ko‘ra bilish va tejamkorlik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Dominoning qishki po‘stinini \"yulduzlar misol oppoq tuklar\" deb qanday tasvirlaydi?",
+   "options": [
+    "A) Dominoning mo‘ynasi nihoyatda go‘zalligini ko‘rsatadi",
+    "B) Tulkining juda qari ekanini bildiradi",
+    "C) Mo‘ynaning yirtilganini anglatadi"
+   ],
+   "answer": "A) Dominoning mo‘ynasi nihoyatda go‘zalligini ko‘rsatadi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Domino Oqsiyna va bolalari uchun tirik o‘ljalarni nega olib kelardi?",
+   "options": [
+    "A) Bolalari ov qilishni o‘rganishlari uchun",
+    "B) Inida joy kam bo‘lgani uchun",
+    "C) Tirik o‘lja yengilroq bo‘lgani uchun"
+   ],
+   "answer": "A) Bolalari ov qilishni o‘rganishlari uchun"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yalpi ov paytida Domino nega o‘zini itlarga ko‘rsatdi?",
+   "options": [
+    "A) Itlarni Oqsiynaning izidan chalg‘itish uchun",
+    "B) Itlar bilan o‘ynamoqchi bo‘lgani uchun",
+    "C) Yo‘lidan adashib qolgani uchun"
+   ],
+   "answer": "A) Itlarni Oqsiynaning izidan chalg‘itish uchun"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Quvg‘un paytida Domino ovchilar miltig‘idan qanday jarohat oldi?",
+   "options": [
+    "A) Biqiniga sochma o‘q tegdi",
+    "B) Oyoq suyagi sindi",
+    "C) Qulog‘i kesilib ketdi"
+   ],
+   "answer": "A) Biqiniga sochma o‘q tegdi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Holdan toygan Dominoni birinchi bo‘lib qaysi qizaloq uyiga yashirdi?",
+   "options": [
+    "A) Yo‘ldagi ferma xo‘jayinining qizi",
+    "B) Bentonning kichik qizi",
+    "C) Abner Juksning singlisi"
+   ],
+   "answer": "A) Yo‘ldagi ferma xo‘jayinining qizi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Domino itlardan qutulish uchun temir yo‘lda qanday harakat qildi?",
+   "options": [
+    "A) Izlarini chalkashtirib, ortiga qaytib ketdi",
+    "B) Poyezd ustiga sakrab chiqib oldi",
+    "C) Temir yo‘l bo‘yida uxlab qoldi"
+   ],
+   "answer": "A) Izlarini chalkashtirib, ortiga qaytib ketdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Abner Juks nega ovchi miltiqni urib tushirganda \"Ur-a\" deb hayqirdi?",
+   "options": [
+    "A) Dominoning mardligiga qoyil qolib, uni qutqarmoqchi bo‘ldi",
+    "B) O‘z iti g‘olib bo‘lgani uchun",
+    "C) Ovchiga achchiq qilgani uchun"
+   ],
+   "answer": "A) Dominoning mardligiga qoyil qolib, uni qutqarmoqchi bo‘ldi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yovuz it Gekla daryoda nega halok bo‘ldi?",
+   "options": [
+    "A) Kuchli oqim va muzlar girdobiga tushgani uchun",
+    "B) Domino uni tishlab o‘ldirgani uchun",
+    "C) Ovchilar uni otib qo‘ygani uchun"
+   ],
+   "answer": "A) Kuchli oqim va muzlar girdobiga tushgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dominoning Oqsiynani qutqarish uchun o‘zini xavfga qo‘yishi nimani anglatadi?",
+   "options": [
+    "A) Haqiqiy fidoyilik va olijanob jasoratni",
+    "B) O‘ylamay qilingan kaltabashirlikni",
+    "C) Shunchaki o‘yin va beboshlikni"
+   ],
+   "answer": "A) Haqiqiy fidoyilik va olijanob jasoratni"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dominoning daryo muzlaridan sakrab narigi sohilga o‘tishini qanday baholaysiz?",
+   "options": [
+    "A) Aql, shijoat va sovuqqonlik namoyishi",
+    "B) Qo‘rqoqlik va omadsizlik oqibati",
+    "C) Tasodifiy hamda omadli hodisa"
+   ],
+   "answer": "A) Aql, shijoat va sovuqqonlik namoyishi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Abnerning \"Sen g‘oliblarcha yashading, g‘oliblarcha o‘lyapsan!\" degan so‘zlari nimani ta'kidlaydi?",
+   "options": [
+    "A) Dominoning bukilmas irodasi va g‘ururini",
+    "B) Tulkilarning zaif va ojizligini",
+    "C) Ovning muvaffaqiyatli yakunlanganini"
+   ],
+   "answer": "A) Dominoning bukilmas irodasi va g‘ururini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif daryoning so‘nggi daqiqalardagi alvon nurlarini qanday ma'noda tasvirlagan?",
+   "options": [
+    "A) Kurashning shukuhli va tantanali yakuni sifatida",
+    "B) Qorong‘i tunning dahshatli daragi sifatida",
+    "C) Bahor kelganining oddiy bobi sifatida"
+   ],
+   "answer": "A) Kurashning shukuhli va tantanali yakuni sifatida"
+  }
+ ]
+}

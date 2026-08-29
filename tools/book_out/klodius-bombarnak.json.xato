@@ -1,0 +1,448 @@
+{
+ "title": "Klodius Bombarnak",
+ "author": "Jyul Vern",
+ "genre": "",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15 yosh",
+  "genre": "Sarguzasht, ilmiy-fantastika",
+  "topics": [
+   "sayohat",
+   "do‘stlik",
+   "jasorat",
+   "geografiya",
+   "halollik"
+  ],
+  "theme": "O‘zaro yordam, jasorat va to‘g‘rilik har qanday xavf-xatarni yengishga hamda turli xalqlar o‘rtasida do‘stlik o‘rnatishga xizmat qiladi.",
+  "summary": "«XX asr» gazetasi muxbiri Klodius Bombarnak Tiflisdan Pekin tomon yo‘l olgan poyezdda reportaj tayyorlash topshirig‘ini oladi. Safar davomida u turli davlat vakillari, jumladan mayor Noltits, artist Katernalar, ruminiyalik qochqin Kinko va boshqalar bilan tanishadi. Poyezdda Xitoy imperatorining xazinasi va sirli mandarin murdasi ham olib ketilayotgan bo‘ladi. Yo‘lda qaroqchilar hujumi va sotqin Faruskiarning poyezdni jar ko‘prigiga qaratib halokatga uchratish fitnasi yuz beradi. Kinko o‘z hayotini xavfga qo‘yib, lokomotivni portlatish evaziga poyezdni to‘xtatib, barcha yo‘lovchilar hamda xazinani saqlab qoladi. Xitoyda Kinko avval hibsga olinadi, lekin Klodius va do‘stlarining sa’y-harakati, shuningdek imperator afvi bilan erkinlikka chiqadi hamda sevgilisi Zinkaga uylanadi. Klodius o‘z safarnomasini muvaffaqiyatli yakunlaydi.",
+  "characters": "Klodius Bombarnak — «XX asr» gazetasi muxbiri, asar roviysi. Kinko — yashikda yashirinib safar qilgan rumin mebelsozi, poyezdni qutqargan qahramon. Mayor Noltits — harbiy shifokor, Klodiusning aqlli do‘sti. Faruskiar — temiryo‘l direktori niqobidagi sotqin qaroqchi. Janob va xonim Katerna — parijlik quvnoq san’atkorlar.",
+  "conclusion": "Asar bolalarda dunyoqarashni kengaytirish, geografiya va tarixga qiziqish uyg‘otish bilan birga mardlik, halollik va do‘stlikning ahamiyatini ko‘rsatadi. Har qanday qiyin vaziyatda aql va shijoat bilan harakat qilish lozimligini o‘rgatadi.",
+  "difficulty": "qiyin",
+  "mood": "sarguzashtli, qiziqarli, kulgili",
+  "for_whom": "Sayohatlar, geografiya, poyezdlar va xavf-xatarga boy sarguzashtlarni xush ko‘radigan kitobxonlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Klodius Bombarnak qaysi gazetaning muxbiri edi?",
+   "options": [
+    "A) «XX asr» gazetasi",
+    "B) «Parij xabarlari» gazetasi",
+    "C) «Tiflis tongi» gazetasi",
+    "D) «Yevropa va Osiyo» gazetasi"
+   ],
+   "answer": "A) «XX asr» gazetasi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Klodius Bombarnakka kutilmagan topshiriq topshirilgan shahar qaysi edi?",
+   "options": [
+    "A) Boku",
+    "B) Tiflis",
+    "C) Moskva",
+    "D) Uzun Ota"
+   ],
+   "answer": "B) Tiflis"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uzun Ota bandargohidan jo‘naydigan poyezd qaysi magistralga tegishli edi?",
+   "options": [
+    "A) Transsibir magistrali",
+    "B) Ulug‘ Transosiyo magistrali",
+    "C) Kavkazorti temiryo‘li",
+    "D) Yevropa magistrali"
+   ],
+   "answer": "B) Ulug‘ Transosiyo magistrali"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Efrinel ismli amerikalik Xitoyga nima olib ketayotgan edi?",
+   "options": [
+    "A) Bir million sakkiz yuz ming tish",
+    "B) Qirq ikkita ipak mato",
+    "C) Kerosin va Neft mahsulotlari",
+    "D) Zargarlik buyumlari"
+   ],
+   "answer": "A) Bir million sakkiz yuz ming tish"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Klodius Bombarnak Tiflisdan jo‘nash tartibini qanday belgiladi?",
+   "options": [
+    "A) Hujjatlarni to‘g‘riladi, so‘ng vokzalga shoshildi",
+    "B) Avval sayr qildi, so‘ng pasport oldi",
+    "C) Poyezdga o‘tirdi, so‘ng xat o‘qidi",
+    "D) Tiflisda uch hafta qolishga qaror qildi"
+   ],
+   "answer": "A) Hujjatlarni to‘g‘riladi, so‘ng vokzalga shoshildi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kaspiyorti temiryo‘li lokomotivlarida neft qoldig‘i ishlatilishining tartibi qanday?",
+   "options": [
+    "A) Bokudan keltirilib omborlarda to‘planadi",
+    "B) Ko‘mir bilan aralashtirib yoqiladi",
+    "C) Yog‘och bilan almashtirib turiladi",
+    "D) Faqat Rossiyada quyib olinadi"
+   ],
+   "answer": "A) Bokudan keltirilib omborlarda to‘planadi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Klodius Tiflisdagi rejasini nega o‘zgartirishga majbur bo‘ldi?",
+   "options": [
+    "A) Tahririyatdan shoshilinch topshiriq kelgani uchun",
+    "B) Gruziyada kasal bo‘lib qolgani uchun",
+    "C) Pasportida xatolik topilgani uchun",
+    "D) Vokzal yopilib qolgani uchun"
+   ],
+   "answer": "A) Tahririyatdan shoshilinch topshiriq kelgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega temiryo‘l qurilishida lokomotivlarga neft qoldiqlari yoqilg‘i qilindi?",
+   "options": [
+    "A) Hududda ko‘mir va o‘rmon yo‘qligi uchun",
+    "B) Neft ko‘mirga qaraganda arzonroq bo‘lgani uchun",
+    "C) Neft tutun chiqarmagani uchun",
+    "D) Boshqa yoqilg‘i taqiqlangani uchun"
+   ],
+   "answer": "A) Hududda ko‘mir va o‘rmon yo‘qligi uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Klodiusning har bir ko‘rgan narsasidan reportaj tayyorlashga intilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — kasbiga mas’uliyat bilan yondashadi",
+    "B) Noto‘g‘ri — behuda vaqt yo‘qotadi",
+    "C) Noto‘g‘ri — sayohatga xalaqit beradi",
+    "D) To‘g‘ri — faqat pul ishlashni o‘ylaydi"
+   ],
+   "answer": "A) To‘g‘ri — kasbiga mas’uliyat bilan yondashadi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Poyezdda yo‘lovchilarga ko‘maklashish to‘g‘ri harakatmi?",
+   "options": [
+    "A) To‘g‘ri — odamiylik va xushmuomalalik ifodasi",
+    "B) Noto‘g‘ri — begonalarga aralashmaslik kerak",
+    "C) Noto‘g‘ri — faqat tanishlarga yordam beriladi",
+    "D) To‘g‘ri — buning evaziga mukofot olinadi"
+   ],
+   "answer": "A) To‘g‘ri — odamiylik va xushmuomalalik ifodasi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yashik ichida yashirinib ketayotgan rumin yigitning ismi kim edi?",
+   "options": [
+    "A) Kinko",
+    "B) Popov",
+    "C) Faruskiar",
+    "D) Pan Shao"
+   ],
+   "answer": "A) Kinko"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kinko qayerga va kimning oldiga borayotgan edi?",
+   "options": [
+    "A) Pekinga Zinka Klorkning oldiga",
+    "B) Tiflisga ota-onasi oldiga",
+    "C) Buxoroga mebel sotgani",
+    "D) Samarqandga ish izlab"
+   ],
+   "answer": "A) Pekinga Zinka Klorkning oldiga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amudaryo ustidagi ko‘prikda postlar nega qo‘yilgan edi?",
+   "options": [
+    "A) Yong‘in chiqishining oldini olish uchun",
+    "B) Qaroqchilarni tutish uchun",
+    "C) Boshqa poyezdlarni kutish uchun",
+    "D) Chiptalarni tekshirish uchun"
+   ],
+   "answer": "A) Yong‘in chiqishining oldini olish uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mayor Noltitsning aytishicha, Qo‘qonda qaysi mashhur saroy bor?",
+   "options": [
+    "A) Xudoyorxon saroyi",
+    "B) Amir Temur saroyi",
+    "C) Chingizxon saroyi",
+    "D) Buxoro amiri saroyi"
+   ],
+   "answer": "A) Xudoyorxon saroyi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Klodius Kinko bilan tanishgach, unga qanday tartibda yordam berdi?",
+   "options": [
+    "A) Sirini saqladi va dalda berib turdi",
+    "B) Zudlik bilan politsiyaga xabar berdi",
+    "C) Uni yashikdan chiqarib berkitdi",
+    "D) Poyezd boshlig‘iga aytib chipta oldi"
+   ],
+   "answer": "A) Sirini saqladi va dalda berib turdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kinko nega poyezdga rasman chipta olib chiqmay, yashikka yashirindi?",
+   "options": [
+    "A) Yo‘lkiraga yetarli puli bo‘lmagani uchun",
+    "B) Pasporti yo‘qolib qolgani uchun",
+    "C) Yashikda yurishni yaxshi ko‘rgani uchun",
+    "D) Poyezdda joy qolmagani uchun"
+   ],
+   "answer": "A) Yo‘lkiraga yetarli puli bo‘lmagani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Faruskiar mandarin Ien Luning jasadiga nega alohida e’tibor berayotgan edi?",
+   "options": [
+    "A) Vagonda imperator g‘aznasi yashiringani uchun",
+    "B) Mandarin uning yaqin do‘sti bo‘lgani uchun",
+    "C) Poyezd boshlig‘idan qo‘rqqani uchun",
+    "D) Rus hukumati shuni buyurgani uchun"
+   ],
+   "answer": "A) Vagonda imperator g‘aznasi yashiringani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Klodiusning Kinkoning sirini oshkor qilmay saqlashi to‘g‘ri ish bo‘ldimi?",
+   "options": [
+    "A) To‘g‘ri — insoniylik va do‘stona yordam ko‘rsatdi",
+    "B) Noto‘g‘ri — darhol politsiyaga topshirishi kerak edi",
+    "C) Noto‘g‘ri — reportaj yozishiga xalaqit berdi",
+    "D) To‘g‘ri — buning uchun pul olgan edi"
+   ],
+   "answer": "A) To‘g‘ri — insoniylik va do‘stona yordam ko‘rsatdi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Samarqand obidalarini va Registonni tasvirlaganda qanday tuyg‘uni ifodalaydi?",
+   "options": [
+    "A) Hayrat va yuksak ehtiromni",
+    "B) Hafsalasizlik va zerikishni",
+    "C) Qo‘rquv va xavotirni",
+    "D) Achinish va g‘amginlikni"
+   ],
+   "answer": "A) Hayrat va yuksak ehtiromni"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Katerna er-xotinining harakatlarini tasvirlaganda qanday kayfiyat uyg‘otadi?",
+   "options": [
+    "A) Sho‘x va quvnoq kayfiyatni",
+    "B) Og‘ir va g‘amgin kayfiyatni",
+    "C) Qo‘rqinchli va vahimali kayfiyatni",
+    "D) Jiddiy va rasmiy kayfiyatni"
+   ],
+   "answer": "A) Sho‘x va quvnoq kayfiyatni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Poyezdga Cherchen va Charxlik orasida qaysi qaroqchi hujum qildi?",
+   "options": [
+    "A) Ki Tszan",
+    "B) Faruskiar",
+    "C) Gangir",
+    "D) Kinko"
+   ],
+   "answer": "A) Ki Tszan"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sotqin Faruskiar poyezdni qayerga yo‘naltirib halokatga uchratmoqchi edi?",
+   "options": [
+    "A) Bitmagan Chju darasi ko‘prigiga",
+    "B) Pekin vokzalidagi devorga",
+    "C) Suchjou qal’asi darvozasiga",
+    "D) Lobnor ko‘li ichiga"
+   ],
+   "answer": "A) Bitmagan Chju darasi ko‘prigiga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kinko poyezdni to‘xtatish uchun nima qildi?",
+   "options": [
+    "A) Lokomotivni portlatib yubordi",
+    "B) Poyezd tormozini buzib qo‘ydi",
+    "C) Relslarga g‘isht to‘kib tashladi",
+    "D) Mashinist bilan urushib ketdi"
+   ],
+   "answer": "A) Lokomotivni portlatib yubordi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xitoy imperatori Kinkoni afv etib, qancha mukofot puli berdi?",
+   "options": [
+    "A) O‘n besh ming tayel",
+    "B) O‘n ming rubl",
+    "C) Besh yuz frank",
+    "D) Bir million dollar"
+   ],
+   "answer": "A) O‘n besh ming tayel"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kinkoning Pekindagi qismati qanday tartibda kechdi?",
+   "options": [
+    "A) Hibsga olindi, sudlandi, afv etilib uylandi",
+    "B) Sudlandi, qamaldi, keyin qochib ketdi",
+    "C) Uylandi, so‘ngra hibsga olindi",
+    "D) Mukofotlandi, keyin Buxarestga haydaldi"
+   ],
+   "answer": "A) Hibsga olindi, sudlandi, afv etilib uylandi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Faruskiar Ki Tszanni nega o‘z qo‘li bilan o‘ldirdi?",
+   "options": [
+    "A) Sirini va sherikligini yashirish uchun",
+    "B) Poyezd yo‘lovchilarini yaxshi ko‘rgani uchun",
+    "C) Tasodifan o‘q tegib ketgani uchun",
+    "D) Imperator buyrug‘ini bajargani uchun"
+   ],
+   "answer": "A) Sirini va sherikligini yashirish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Xitoy imperatori Kinkoni jazolash o‘rniga mukofotladi?",
+   "options": [
+    "A) O‘z xazinasini saqlab qolgani uchun",
+    "B) Kinko imperatorning qarindoshi bo‘lgani uchun",
+    "C) Fransuz gazetasi so‘ragani uchun",
+    "D) Poyezd chiptasini to‘lab qo‘yani uchun"
+   ],
+   "answer": "A) O‘z xazinasini saqlab qolgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kinkoning poyezdni to‘xtatish uchun lokomotivni portlatishi qanday baholanadi?",
+   "options": [
+    "A) Jasorat — insonlar va xazinani qutqardi",
+    "B) Qo‘rqoqlik — poyezdni ataylab buzdi",
+    "C) Jinoyat — temiryo‘lga zarar yetkazdi",
+    "D) Behudalik — poyezd o‘zi to‘xtar edi"
+   ],
+   "answer": "A) Jasorat — insonlar va xazinani qutqardi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Klodius Kinkoning poyezdni qutqarganini so‘zlaganda muallif qanday ruh beradi?",
+   "options": [
+    "A) Qahramonlik va faxr ruhini",
+    "B) G‘amgin va ma’yus ruhni",
+    "C) Kulgili va mazaxli ruhni",
+    "D) G‘azab va nafrat ruhini"
+   ],
+   "answer": "A) Qahramonlik va faxr ruhini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif roman oxirida Kinko va Zinkaning to‘yini qanday tasvirlaydi?",
+   "options": [
+    "A) Quvonchli va ezgulik tantanasi sifatli",
+    "B) Rasmiy va zerikarli majlis sifatida",
+    "C) Qayg‘uli va alamli hodisa sifatida",
+    "D) Shoshilinch va pala-partish marosim sifatida"
+   ],
+   "answer": "A) Quvonchli va ezgulik tantanasi sifatli"
+  }
+ ]
+}

@@ -1,0 +1,417 @@
+{
+ "title": "Tom Soyerning yangi sarguzashtlari",
+ "author": "Mark Tven",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "do‘stlik",
+   "sarguzasht",
+   "dunyoqarash",
+   "aqllilik",
+   "halollik"
+  ],
+  "theme": "Bilmursizlik va kibr insonga zarar keltiradi, chinakam do‘stlik hamda soddalik esa har qanday qiyinchilikni yengishga yordam beradi.",
+  "summary": "Tom Soyer shon-shuhratga erishish uchun yangi sarguzashtlar qidiradi. U do‘stlari Gek Finn va negr Jim bilan birga Sent-Luis shahridan ixtirochi professorning havo shariga chiqishadi. Savdoyi professor sharni uchirib, ularni olib qochadi. Yo‘lda sodir bo‘lgan bo‘ronda professor okeanga tushib ketadi va boshqaruv bolalar qo‘lida qoladi. Ular Sahroyi Kabir ustidan uchib o‘tib, turli sarguzashtlarni boshdan kechirishadi: sherlar va burgalar bilan to‘qnashishadi, sahro karvoniga yordam berishadi, suvsiz sahro va Misr ehromlarini, Sfinksni ko‘rishadi. Tom uyda qolgan chilimini (trubkasini) olib kelish uchun Jimni uyga yuboradi. Lekin Polli xola Jimni tutib oladi va Tomni zudlik bilan uyga qaytishga majbur qiladi.",
+  "characters": "Tom Soyer — xayolparast, zukko va shon-shuhratsevar bola; Gek Finn — amaliy fikrlaydigan, samimiy va sodda do‘st; Jim — mehribon, soddil ko‘ngil va sadoqatli qora tanli kishi; Professor — o‘z ixtirosi bilan mag‘rurlangan savdoyi kishi.",
+  "conclusion": "Kitob bolada do‘stlikka sadoqat, har qanday sharoitda aql-idrok bilan ish tutish va kattalarning maslahatiga quloq tutish muhimligini shakllantiradi. Sarguzashtlar orqali dunyo haqidagi bilim va dunyoqarash kengayadi.",
+  "difficulty": "o‘rta",
+  "mood": "kulgili, sarguzashtli",
+  "for_whom": "Sarguzashtlarni, sayohatlarni va kulgili voqealarni yaxshi ko‘radigan, do‘stlik va jasorat haqida o‘qishni xohlaydigan bolalarga mo‘ljallangan."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pochtachi Nat Persons necha yil davomida yagona sayohatchi bo‘lgan?",
+   "options": [
+    "A) O‘n yil davomida",
+    "B) O‘ttiz yil davomida",
+    "C) Yigirma yil davomida"
+   ],
+   "answer": "B) O‘ttiz yil davomida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nat Persons Vashingtonga kimning huzuriga bormoqchi bo‘ldi?",
+   "options": [
+    "A) AQSH prezidenti huzuriga",
+    "B) Shahar hokimi huzuriga",
+    "C) Pochta boshlig‘i huzuriga"
+   ],
+   "answer": "A) AQSH prezidenti huzuriga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom Soyer o‘rmonda do‘stlariga kim bo‘lishni taklif qildi?",
+   "options": [
+    "A) Dengiz qaroqchisi bo‘lishni",
+    "B) Salibchi bo‘lishni",
+    "C) Ovchi bo‘lishni"
+   ],
+   "answer": "B) Salibchi bo‘lishni"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sent-Luis shahrida qanday hodisa haqida gazetalar yozgandi?",
+   "options": [
+    "A) Poyga musobaqasi haqida",
+    "B) Havo shari uchishi haqida",
+    "C) Katta kemalar haqida"
+   ],
+   "answer": "B) Havo shari uchishi haqida"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tom va do‘stlari Sent-Luisga borishining asosiy sabablarini ajrating.",
+   "options": [
+    "A) Nat Personsdan o‘zish va shar ko‘rish",
+    "B) Bozor qilish va sayr qilish",
+    "C) Ish izlash va o‘qish"
+   ],
+   "answer": "A) Nat Personsdan o‘zish va shar ko‘rish"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tom nima uchun uzoq vaqt cho‘loqlanib yurdi?",
+   "options": [
+    "A) Oyog‘i haqiqatan sinib ketgani uchun",
+    "B) Odamlar e'tiborini tortish va maqtanish uchun",
+    "C) Shifokor shuni buyurgani uchun"
+   ],
+   "answer": "B) Odamlar e'tiborini tortish va maqtanish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun professor olomonga jahli chiqib baqirgan edi?",
+   "options": [
+    "A) Odamiar uni mazax qilgani uchun",
+    "B) Unga pul berishmagani uchun",
+    "C) Sharni buzib qo‘yishgani uchun"
+   ],
+   "answer": "A) Odamiar uni mazax qilgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Jim begona kishilarga urush ochish fikriga qarshi bo‘ldi?",
+   "options": [
+    "A) Beozor odamlarga ozor berishni xohlamagani uchun",
+    "B) Urushdan juda qo‘rqgani uchun",
+    "C) Yo‘l xarajatlari ko‘pligi uchun"
+   ],
+   "answer": "A) Beozor odamlarga ozor berishni xohlamagani uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tomning saxiy va do‘stlarini o‘ylaydigan odati to‘g‘ri baholanganmi?",
+   "options": [
+    "A) To‘g‘ri, do‘stlarga mehribonlik shart",
+    "B) Noto‘g‘ri, xudbin bo‘lish kerak",
+    "C) Yomon, hamma narsani yashirish lozim"
+   ],
+   "answer": "A) To‘g‘ri, do‘stlarga mehribonlik shart"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Gekning xaritaning ranglari haqidagi fikri muallif tomonidan qanday tasvirlangan?",
+   "options": [
+    "A) Juda kulgili va soddalik bilan",
+    "B) G‘amgin va ma'yus holatda",
+    "C) Vahimali va qo‘rqinchli tarzda"
+   ],
+   "answer": "A) Juda kulgili va soddalik bilan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Okean ustidagi bo‘ron paytida professorga nima bo‘ldi?",
+   "options": [
+    "A) Shar ichida uxlab qoldi",
+    "B) Okeanga yiqilib tushib ketdi",
+    "C) Qayiqqa mahkam yopishib oldi"
+   ],
+   "answer": "B) Okeanga yiqilib tushib ketdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom sherlardan qutilish uchun nimadan foydalandi?",
+   "options": [
+    "A) Professorning to‘pponchasidan foydalandi",
+    "B) Katta kaltakdan foydalandi",
+    "C) Qattiq baqiriqdan foydalandi"
+   ],
+   "answer": "A) Professorning to‘pponchasidan foydalandi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qaroqchi karvondan nimani o‘g‘irlab ketmoqchi bo‘ldi?",
+   "options": [
+    "A) Bir xalta oltinni",
+    "B) Yosh bir go‘dakni",
+    "C) Chiroyli tuya qushni"
+   ],
+   "answer": "B) Yosh bir go‘dakni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalar sahroda uchratgan halok bo‘lgan odamlardan nima olishdi?",
+   "options": [
+    "A) Qilich va to‘pponchalar olishdi",
+    "B) Oziq-ovqat va suv olishdi",
+    "C) Qimmatbaho kiyimlar olishdi"
+   ],
+   "answer": "A) Qilich va to‘pponchalar olishdi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bo‘ron paytida Tomning sodir bo‘lgan voqealar tartibini ko‘rsating.",
+   "options": [
+    "A) Arqonga osildi, keyin bortga chiqdi",
+    "B) Shar joyida qoldi, keyin uxladilar",
+    "C) Yerga tushdilar, keyin yugurdilar"
+   ],
+   "answer": "A) Arqonga osildi, keyin bortga chiqdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Jim Tomni qaytib chiqqanida arvoh deb o‘yladi?",
+   "options": [
+    "A) Tom okeanga tushib o‘ldi deb o‘ylagani uchun",
+    "B) Tom oq kiyim kiyib olgani uchun",
+    "C) Qorong‘ida tanimay qolgani uchun"
+   ],
+   "answer": "A) Tom okeanga tushib o‘ldi deb o‘ylagani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega bolalar qaroqchiga sharni yaqinlashtirib uni urib yuborishdi?",
+   "options": [
+    "A) Begunah go‘dakni qutqarish uchun",
+    "B) Sharni qo‘ndirish uchun",
+    "C) Qaroqchining otini olish uchun"
+   ],
+   "answer": "A) Begunah go‘dakni qutqarish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tom va do‘stlarining bechora onaga yordam bergani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, muhtojlarga yordam berish mardlikdir",
+    "B) Noto‘g‘ri, birovning ishiga aralashmaslik kerak",
+    "C) Keraksiz ish, xavfli edi"
+   ],
+   "answer": "A) To‘g‘ri, muhtojlarga yordam berish mardlikdir"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Gekning qushlarni behuda o‘ldirmaslik haqidagi qarori qanday baholanadi?",
+   "options": [
+    "A) To‘g‘ri va rahm-shafqatli qaror",
+    "B) Qo‘rqoqlik va befahm qaror",
+    "C) Noto‘g‘ri va keraksiz fikr"
+   ],
+   "answer": "A) To‘g‘ri va rahm-shafqatli qaror"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Sahroda halok bo‘lganlar tasviri kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Achinish va ma'yuslik tuyg‘usini",
+    "B) Kulgili va quvnoq tuyg‘uni",
+    "C) G‘azab va nafrat tuyg‘usini"
+   ],
+   "answer": "A) Achinish va ma'yuslik tuyg‘usini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalar sahro oazisida nima bilan mashg‘ul bo‘lishdi?",
+   "options": [
+    "A) Cho‘milishdi va baliq ovlashdi",
+    "B) Uy qurishdi va ekishdi",
+    "C) Oltin qidirishdi va yugurishdi"
+   ],
+   "answer": "A) Cho‘milishdi va baliq ovlashdi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom sahro qumini sotish fikridan nega voz kechdi?",
+   "options": [
+    "A) Bojxona bojini to‘lamaslik uchun",
+    "B) Qum yetarli bo‘lmagani uchun",
+    "C) Shishalar topilmagani uchun"
+   ],
+   "answer": "A) Bojxona bojini to‘lamaslik uchun"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jim Sfinks ustida turib nimani ko‘rsatdi?",
+   "options": [
+    "A) Qo‘lida Amerika bayrog‘ini ushladi",
+    "B) Katta baraban chalib turdi",
+    "C) Raqsga tushib qo‘shiq aytdi"
+   ],
+   "answer": "A) Qo‘lida Amerika bayrog‘ini ushladi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom Jimni uyga nima uchun yuborgan edi?",
+   "options": [
+    "A) Trubkasini olib kelish uchun",
+    "B) Oziq-ovqat olib kelish uchun",
+    "C) Polli xolaga xat berish uchun"
+   ],
+   "answer": "A) Trubkasini olib kelish uchun"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Misr ehromlarini ko‘rishganda bolalar qilgan ishlarni ketma-ket joylang.",
+   "options": [
+    "A) Tomosha qilishdi, Jim Sfinksga chiqdi",
+    "B) Darhol uyga qaytib ketishdi",
+    "C) Ehrom ichiga kirib yotishdi"
+   ],
+   "answer": "A) Tomosha qilishdi, Jim Sfinksga chiqdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Tom va do‘stlari darhol uyga qaytishga majbur bo‘lishdi?",
+   "options": [
+    "A) Polli xola Jimni ushlab olgani uchun",
+    "B) Havo shari buzilib qolgani uchun",
+    "C) Suvlari tugab qolgani uchun"
+   ],
+   "answer": "A) Polli xola Jimni ushlab olgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Gek Tomning cho‘ntagidagi g‘ishtni boshqasiga almashtirib qo‘ydi?",
+   "options": [
+    "A) Tomning sezgisini tekshirib ko‘rish uchun",
+    "B) Tomni xafa qilish uchun",
+    "C) G‘isht juda og‘ir bo‘lgani uchun"
+   ],
+   "answer": "A) Tomning sezgisini tekshirib ko‘rish uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jimning qancha qiyinchilik bo‘lsa ham Tomning topshirig‘ini bajarishi qanday baholanadi?",
+   "options": [
+    "A) Sadoqat va halollik namunasi",
+    "B) Qalbi qattiqlik va befarqlik",
+    "C) Mas'uliyatsizlik va nodonlik"
+   ],
+   "answer": "A) Sadoqat va halollik namunasi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Sfinks mahobatini va sahro sukutini qanday mahorat bilan tasvirlagan?",
+   "options": [
+    "A) Tantanavor va sirli kayfiyatda",
+    "B) Kulgili va yengiltak uslubda",
+    "C) Vahimali va qayg‘uli tilda"
+   ],
+   "answer": "A) Tantanavor va sirli kayfiyatda"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Gekning oazisdagi erkinlik haqidagi o‘ylari qanday hissiyot beradi?",
+   "options": [
+    "A) Tabiat bilan uyg‘unlik va halovatchilik",
+    "B) Qo‘rquv va sarosima hissiyoti",
+    "C) Ziddiyat va g‘azab tuyg‘usi"
+   ],
+   "answer": "A) Tabiat bilan uyg‘unlik va halovatchilik"
+  }
+ ]
+}

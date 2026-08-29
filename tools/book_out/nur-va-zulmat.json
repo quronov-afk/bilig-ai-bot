@@ -1,0 +1,307 @@
+{
+ "title": "Nur va zulmat",
+ "author": "Mirkarim Osim",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "tarix",
+   "adabiyot",
+   "jasorat",
+   "muhabbat",
+   "vafo"
+  ],
+  "theme": "Asar Uvaysiy hayoti misolida mumtoz adabiyot, ma'rifat, vafo hamda ona sevgisining yuksakligini aks ettiradi.",
+  "summary": "Jahon otin Uvaysiy Qoʻqon saroyiga kelib, Mohlaroyim (Nodira) bilan uchrashadi hamda Umarxon saroyidagi mushoiralarda qatnashadi. U haramxonada anor mevasiga boʻlgan qarashi orqali bagʻri qon ayollar taqdiri haqida mashhur toʻrtligini bitadi. Haydar devonaning sovchiligini rad etib, Margʻilonga qaytadi. Keyinchalik Qoʻqonda qoʻshnisi Oʻgʻiloyning erkak kiyimida oshigʻi Hayotjon bilan yashaganiga va shariat ahkomlari bahonasida toshboʻron qilinishiga guvoh boʻladi. Nodira va Umarxon ularni qutqarishga urinsa-da, ulamolar taʼsirini yenga olishmaydi. Oʻgʻiloy vafo yoʻlida oʻlimni tanlaydi. Qissaning oxirida Uvaysiy Qashqarda sarboz boʻlib qolib ketgan oʻgʻli Muhammadxonni sogʻinib, unga gʻazal bagʻishlaydi hamda Abdulahad orqali xat yuboradi.",
+  "characters": "Jahon otin (Uvaysiy) — oʻktam, ma'rifatli va mehribon shoira; Mohlaroyim (Nodira) — Qoʻqon malikasi, Uvaysiyning shogirdi; Umarxon — Qoʻqon hukmdori; Oʻgʻiloy — sevgi va erkinlik yoʻlida oʻlimni tanlagan cesur qiz; Hayotjon — kosib xalfasi, Oʻgʻiloyning sevgilisi; Abdulahad — Uvaysiyning qarindoshi.",
+  "conclusion": "Asar kitobxonni oʻzbek tarixi va adabiyotining ma'rifatli siymolari bilan tanishtiradi. Bola undan sadoqat, sabr, adolat hamda ona sevgisining beqiyos qudratini oʻrganadi.",
+  "difficulty": "oʻrta",
+  "mood": "hazin, oʻylantiruvchi",
+  "for_whom": "Tarixiy voqealar, mumtoz adabiyot va ta'sirli qismatlar haqida oʻqishni xush koʻradigan kitobxonlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jahon otin Qoʻqon saroyiga kirish uchun qaysi asarini berdi?",
+   "options": [
+    "A) Toshboʻron haqidagi dostonini",
+    "B) Qashgʻar safarnomasini",
+    "C) Shaldiroq qogʻozga yozilgan gʻazalini",
+    "D) Masnaviy darsligini"
+   ],
+   "answer": "C) Shaldiroq qogʻozga yozilgan gʻazalini"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uvaysiy haramxonada Mohlaroyimga nimadan dars bergan edi?",
+   "options": [
+    "A) Ilmi aruzdan",
+    "B) Tikuvchilikdan",
+    "C) Xattotlikdan",
+    "D) Zardoʻzlikdan"
+   ],
+   "answer": "A) Ilmi aruzdan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jahon otin saroyga kelgach, voqealar qanday ketma-ketlikda boʻldi?",
+   "options": [
+    "A) Qizlar maktabi ochildi",
+    "B) Mohlaroyim bilan koʻrishib, mushoirada qatnashdi",
+    "C) Margʻilonga qochib ketdi",
+    "D) Elchilar bilan uchrashdi"
+   ],
+   "answer": "B) Mohlaroyim bilan koʻrishib, mushoirada qatnashdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Uvaysiy anor donalarini koʻrib nega taʼsirlandi?",
+   "options": [
+    "A) Anor mazali boʻlgani uchun",
+    "B) Haram ayollarining bagʻri qonligini eslatgani uchun",
+    "C) Onasining sovugʻotini eslagani uchun",
+    "D) Saroy mevalarini sogʻingani uchun"
+   ],
+   "answer": "B) Haram ayollarining bagʻri qonligini eslatgani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uvaysiyga kim sovchi yuborgan edi?",
+   "options": [
+    "A) Haydar devona",
+    "B) Umarxon",
+    "C) Sayid Murodxoʻja",
+    "D) Bosh rais"
+   ],
+   "answer": "A) Haydar devona"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Uvaysiy nega Haydar devonaga turmushga chiqishni istamadi?",
+   "options": [
+    "A) Shoirlikni tashlamoqchi boʻlgani uchun",
+    "B) Farzandlariga umrini bagʻishlashga ont ichgani uchun",
+    "C) Margʻilondan koʻchib kelgani uchun",
+    "D) Xon uni taqiqlagani uchun"
+   ],
+   "answer": "B) Farzandlariga umrini bagʻishlashga ont ichgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"yuzidan nur yogʻilib turgan qora qosh\" deb kimni tasvirlaydi?",
+   "options": [
+    "A) Mohlaroyimni",
+    "B) Xushholbibini",
+    "C) Ulfatoyni",
+    "D) Chinni bibini"
+   ],
+   "answer": "A) Mohlaroyimni"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oʻgʻiloyning sevgilisi Hayotjon qaysi kasb bilan shugʻullanardi?",
+   "options": [
+    "A) Kosib xalfasi edi",
+    "B) Saroy soqchisi edi",
+    "C) Bosh rais mirshabi edi",
+    "D) Savdogar karvonboshisi edi"
+   ],
+   "answer": "A) Kosib xalfasi edi"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qozikalonning inisi Sayid Murodxoʻja nega Oʻgʻiloyga sovchi qoʻydi?",
+   "options": [
+    "A) Qizning goʻzalligi haqida ovoza tarqalgani uchun",
+    "B) Uvaysiy iltimos qilgani uchun",
+    "C) Xon buyruq bergani uchun",
+    "D) Oʻgʻiloy unga murojaat qilgani uchun"
+   ],
+   "answer": "A) Qizning goʻzalligi haqida ovoza tarqalgani uchun"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oʻgʻiloy Sayid Murodxoʻjaga tegmaslik uchun qanday chora koʻrdi?",
+   "options": [
+    "A) Shoshilinch Margʻilonga qochib ketdi",
+    "B) Sochini qirib, erkak kiyimida qochdi",
+    "C) Mohlaroyimdan yordam soʻrab bordi",
+    "D) Saroyga kanizak boʻlib kirdi"
+   ],
+   "answer": "B) Sochini qirib, erkak kiyimida qochdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Umarxon nega Oʻgʻiloy va Hayotjonni toshboʻron qilishdan qutqarolmadi?",
+   "options": [
+    "A) Ulamolar nufuziga qarshi borolmagani uchun",
+    "B) Oʻgʻiloyni tanimagani uchun",
+    "C) Toshboʻronni oʻzi xohlagani uchun",
+    "D) Qoʻqonda boʻlmagani uchun"
+   ],
+   "answer": "A) Ulamolar nufuziga qarshi borolmagani uchun"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oʻgʻiloy nega terlama kasali boʻldim deb yolgʻon gapirmadi?",
+   "options": [
+    "A) Hayotjonni oʻlimda yolgʻiz qoldirmaslik uchun",
+    "B) Terlama kasalidan qoʻrqqani uchun",
+    "C) Bosh raisdan qoʻrqqani uchun",
+    "D) Sochi oʻsib chiqqani uchun"
+   ],
+   "answer": "A) Hayotjonni oʻlimda yolgʻiz qoldirmaslik uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Oʻgʻiloyning Hayotjon bilan birga oʻlimni tanlashi nimani koʻrsatdi?",
+   "options": [
+    "A) Sadoqat va chin muhabbatni",
+    "B) Qoʻrqoqlik va nodonlikni",
+    "C) Shariatga befarqlikni",
+    "D) Ota-onaga nafratni"
+   ],
+   "answer": "A) Sadoqat va chin muhabbatni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Toshboʻron paytida Oʻgʻiloy tepasiga kelgan jallod qanday kiyingan edi?",
+   "options": [
+    "A) Boʻz chopon kiygan edi",
+    "B) Zarbof toʻn kiygan edi",
+    "C) Temir sovut kiygan edi",
+    "D) Qizil yopinchiq yopingan edi"
+   ],
+   "answer": "A) Boʻz chopon kiygan edi"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jahon otinning toʻrt yashar nevarasining ismi nima edi?",
+   "options": [
+    "A) Xadicha",
+    "B) Quyoshbibi",
+    "C) Ulfatoy",
+    "D) Mohlaroyim"
+   ],
+   "answer": "A) Xadicha"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uvaysiyning oʻgʻli Muhammadxon qayerda sarboz boʻlib qolgan edi?",
+   "options": [
+    "A) Qashgʻarda",
+    "B) Margʻilonda",
+    "C) Toshkentda",
+    "D) Buxoroda"
+   ],
+   "answer": "A) Qashgʻarda"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Abdulahad Uvaysiyning huzuriga kelganda qanday xabarlarni keltirdi?",
+   "options": [
+    "A) Oʻgʻli sogʻligini va yuborgan pulini",
+    "B) Madalixon taxtdan tushganini aytdi",
+    "C) Uvaysiyga yangi uy sovgʻa qildi",
+    "D) Margʻilon hokimi oʻzgarganini aytdi"
+   ],
+   "answer": "A) Oʻgʻli sogʻligini va yuborgan pulini"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Uvaysiy farzandiga bagʻishlab nega gʻazal bitdi?",
+   "options": [
+    "A) Oʻgʻlining sogʻinchi va hasratini yozishga",
+    "B) Madalixonga maqtov yuborish uchun",
+    "C) Abdulahadni xursand qilish uchun",
+    "D) Saroyga qaytish uchun"
+   ],
+   "answer": "A) Oʻgʻlining sogʻinchi va hasratini yozishga"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Uvaysiyning oʻgʻliga yozgan xati va duolari qanday fazilat?",
+   "options": [
+    "A) Ona sevgisi va mehribonligi",
+    "B) Manmanlik va shuhratparastlik",
+    "C) Sabrsizlik va jaholat",
+    "D) Loqaydlik va befarqlik"
+   ],
+   "answer": "A) Ona sevgisi va mehribonligi"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Uvaysiyning gʻazal yozgach holatini qanday tasvirlaydi?",
+   "options": [
+    "A) Yuragi boʻshab, yengil tortgandek boʻldi",
+    "B) Koʻzlari koʻrmay qoldi",
+    "C) Gʻazabdan qaltirab ketdi",
+    "D) Butunlay tushkunlikka tushdi"
+   ],
+   "answer": "A) Yuragi boʻshab, yengil tortgandek boʻldi"
+  }
+ ]
+}

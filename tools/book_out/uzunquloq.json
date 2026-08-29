@@ -1,0 +1,28 @@
+{
+ "title": "Uzunquloq",
+ "author": "Georgiy Skrebitskiy",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-10 yosh",
+  "topics": [
+   "hayvonlar",
+   "mehribonlik",
+   "g‘amxo‘rlik",
+   "do‘stlik",
+   "tabiat"
+  ],
+  "theme": "Asarning asosiy g‘oyasi — ojiz va kichik mavjudotlarga mehr-shafqat ko‘rsatish, ularni parvarish qilish hamda vaqti kelganda tabiat qo‘yniga, o‘z erkinligiga oqilona qaytarishdir.",
+  "summary": "Kuzda ovga chiqqan yigit va uning otasi xazonlar orasidan kichik, ojiz quyonchani topib olishadi. Uni uyga olib kelib, sut berib parvarish qilishadi va Uzunquloq deb nom berishadi. Quyoncha uyda mushuk Ivanich va ovchi it Jek bilan do‘stlashib, birga o‘ynab, pechka oldida isinib qishni o‘tkazadi. Bahor kelgach, uni o‘rmonga qo‘yib yuborishga qaror qilishadi. O‘rmonda it Jek uni avvaliga o‘lja deb tutib oladi, lekin egasi to‘xtatadi. Uzunquloq o‘rmon hayoti uyikidan boshqachaligini tushunib, erkinlik bag‘riga kirib ketadi.",
+  "characters": "Bosh qahramon (ovchi yigit) – quyonchani qutqarib, uyga olib kelgan va o‘rmonga qo‘yib yuborgan mehribon inson; Onasi – quyonchaga sut berib boqqan; Uzunquloq – uyda o‘sgan quyoncha; Jek – ovchi it; Ivanich – qari mushuk.",
+  "conclusion": "Ushbu hikoya bolada jonzotlarga nisbatan shafqat, mas'uliyat va mehr tuyg‘ularini shakllantiradi. Kichik va ojizlarga yordam berish, parvarish qilish hamda ularning erkinligini hurmat qilish kerakligini o‘rgatadi.",
+  "difficulty": "oson",
+  "mood": "samimiy, iliq, o‘ylantiruvchi",
+  "for_whom": "Hayvonlarni yaxshi ko‘radigan, tabiat sirlariga qiziqadigan va jonzotlarga g‘amxo‘rlik qilishni xohlaydigan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Uy egalari Uzunquloqni boqib katta qilishgach, bahorda uni yana o‘rmonga — erkinlikka qo‘yib yuborishdi. Seningcha, ular quyonni uyda olib qolmay, o‘rmonga qo‘yib yuborib to‘g‘ri qilishdimi va nega? Agar sening uyingda shunday jajji hayvoncha bo‘lib qolsa, sen unga qanday g‘amxo‘rlik qilgan bo‘larding?"
+}

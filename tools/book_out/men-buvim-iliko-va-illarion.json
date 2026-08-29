@@ -1,0 +1,447 @@
+{
+ "title": "Men, buvim, Iliko va Illarion",
+ "author": "Nodar Dumbadze",
+ "genre": "roman",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "do‘stlik",
+   "oila",
+   "mehr-oqibat",
+   "bolalik",
+   "vatanparvarlik"
+  ],
+  "theme": "Asar yetim qolgan bolaning samimiy, beg‘ubor do‘stlik hamda mehr-oqibatli qishloq odamlari davrasida inson bo‘lib voyaga yetishini ulug‘laydi.",
+  "summary": "Guriyaning kichik qishlog‘ida o‘sgan yetim bola Zuriko buvisi Olga, hazilkash va mehribon qo‘shnilari Iliko hamda Illarion tarbiyasida ulg‘ayadi. Maktabdagi sho‘xliklari, Murada ismli sodiq iti bilan ovga chiqishi va urush yillarining qiyinchiliklari uning hayot tajribasini boyitadi. Zuriko maktabni bitirib, Tbilisiga o‘qishga kiradi. Poytaxtda bilim olib, diplom olgach, o‘z qishlog‘iga, sevgilisi Meri va yaqinlari bag‘riga qaytadi. Asar buvisining vafoti hamda qahramonning qishloqda qolib mehnat qilish qarori bilan yakunlanadi.",
+  "characters": "Zuriko — bosh qahramon, sho‘x va samimiy yigit; Olga buvi — Zurikoni tarbiyalagan dono va mehribon kampir; Iliko va Illarion — Zurikoga ustozlik va do‘stlik qilgan sho‘x qo‘shnilar; Meri — Zurikoning birinchi sevgisi.",
+  "conclusion": "Kitob bolaga kattalarga hurmat, mehnatsevarlik, do‘stlikka vafo va qiyinchiliklarda ham hazil-mutoyibani yo‘qotmaslikni o‘rgatadi. Insoniy qadriyatlar hamda oilaviy rishtalarni qadrlash tuyg‘usini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "kulgili, samimiy, hazin",
+  "for_whom": "Qishloq hayoti, oqibatli insonlar va kulgili, samimiy sarguzashtlar haqida o‘qishni xush ko‘radigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zurikoning iti qanday nomlangan edi?",
+   "options": [
+    "A) Murada",
+    "B) Rex",
+    "C) Tobik",
+    "D) Aktosh"
+   ],
+   "answer": "A) Murada"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zurikoning buvisining ismi nima edi?",
+   "options": [
+    "A) Sofya",
+    "B) Olga",
+    "C) Marta",
+    "D) Meri"
+   ],
+   "answer": "B) Olga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Buvining fikricha xat tashuvchi qanday odam edi?",
+   "options": [
+    "A) Halol va mehnatsevar",
+    "B) Muttaham va ikkiyuzlamachi",
+    "C) Saxiy va mehmondo‘st",
+    "D) Kamtar va kamgap"
+   ],
+   "answer": "B) Muttaham va ikkiyuzlamachi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Iliko Zurikoning tamakisiga nima qo‘shib qo‘ygan edi?",
+   "options": [
+    "A) Tuz",
+    "B) Qalampir",
+    "C) Kul",
+    "D) Murch"
+   ],
+   "answer": "B) Qalampir"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Maktab majlisida o‘qituvchilar Zurikoni qanday baholashdi?",
+   "options": [
+    "A) A‘lochi va namuna",
+    "B) Dangasa va intizomsiz",
+    "C) Oqil va bosiq",
+    "D) Kamgap va odobli"
+   ],
+   "answer": "B) Dangasa va intizomsiz"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Zuriko soxta kasal bo‘lib yotishga majbur bo‘ldi?",
+   "options": [
+    "A) Maktabdan haydalmaslik uchun",
+    "B) Daryoda cho‘milish uchun",
+    "C) Ovga chiqish uchun",
+    "D) Uxlab olish uchun"
+   ],
+   "answer": "A) Maktabdan haydalmaslik uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Illarion va Zuriko nega ovga chiqishdi?",
+   "options": [
+    "A) Quyon ovlash uchun",
+    "B) O‘rdak tutish uchun",
+    "C) Kiyik izlash uchun",
+    "D) Ayiq ko‘rish uchun"
+   ],
+   "answer": "A) Quyon ovlash uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Doktorning Zurikoni tekshirib aroq ichishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — hazil qilgani uchun",
+    "B) Noto‘g‘ri — u shifokor",
+    "C) To‘g‘ri — kasallikni davolaydi",
+    "D) Noto‘g‘ri — u mast edi"
+   ],
+   "answer": "B) Noto‘g‘ri — u shifokor"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Buvining «ichimda duo qilaman» degan gapi nimani bildiradi?",
+   "options": [
+    "A) Nevarasiga bo‘lgan cheksiz mehrini",
+    "B) Uning juda jahldorligini",
+    "C) Nevarasidan xafa bo‘lganini",
+    "D) Duolarni yoddan bilishini"
+   ],
+   "answer": "A) Nevarasiga bo‘lgan cheksiz mehrini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Illarionning mast holda o‘q uzishi oqibatida nima bo‘ldi?",
+   "options": [
+    "A) Quyon qochib ketdi",
+    "B) O‘q itga tegdi",
+    "C) Miltiq buzilib qoldi",
+    "D) Illarion yaralandi"
+   ],
+   "answer": "B) O‘q itga tegdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ilikoning o‘n ikkita emchagi bor cho‘chqasining ismi nima?",
+   "options": [
+    "A) Pokiza",
+    "B) Serapiona",
+    "C) Sofya",
+    "D) Marta"
+   ],
+   "answer": "B) Serapiona"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zuriko va Romuli sinfda darsda nima haqida gaplashishardi?",
+   "options": [
+    "A) Sevgi xatlari va dars",
+    "B) Uyga vazifalar haqida",
+    "C) Ov va baliq haqida",
+    "D) Sport va o‘yinlar haqida"
+   ],
+   "answer": "A) Sevgi xatlari va dars"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Urush yillarida qishloq odamlari kimlar uchun sovg‘a yig‘ishdi?",
+   "options": [
+    "A) Qizil askarlar uchun",
+    "B) Qo‘shni qishloq uchun",
+    "C) O‘qituvchilar uchun",
+    "D) Shifokorlar uchun"
+   ],
+   "answer": "A) Qizil askarlar uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zuriko poytaxt Tbilisida kimning uyida ijarada yashadi?",
+   "options": [
+    "A) Marta xolanikida",
+    "B) Olga buvinikida",
+    "C) Merinikida",
+    "D) Ilikonikida"
+   ],
+   "answer": "A) Marta xolanikida"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qishloq raisi idorani nega tez-tez ko‘chirar edi?",
+   "options": [
+    "A) O‘z uyiga yaqinlashtirish uchun",
+    "B) Bino eski bo‘lgani uchun",
+    "C) Urush boshlangani uchun",
+    "D) Joy torlik qilgani uchun"
+   ],
+   "answer": "A) O‘z uyiga yaqinlashtirish uchun"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Iliko nega Illarionning vinolarini poylab o‘g‘irlamoqchi bo‘ldi?",
+   "options": [
+    "A) Qasos va hazil uchun",
+    "B) Pulga sotish uchun",
+    "C) Parcha-parcha qilish uchun",
+    "D) Chanqaganligi uchun"
+   ],
+   "answer": "A) Qasos va hazil uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Iliko o‘tinini o‘g‘irlagan odamni ushlamoqchi edi?",
+   "options": [
+    "A) Mehnatini qadrlagani uchun",
+    "B) Sotib pul qilgani uchun",
+    "C) Buviga bergani uchun",
+    "D) Uyni isitgani uchun"
+   ],
+   "answer": "A) Mehnatini qadrlagani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Iliko va Illarionning o‘zaro poyloqchilik qilishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri — do‘stlar aldamaydi",
+    "B) To‘g‘ri — bu qiziqarli",
+    "C) To‘g‘ri — bu foydali",
+    "D) Noto‘g‘ri — uzoq urishishadi"
+   ],
+   "answer": "A) Noto‘g‘ri — do‘stlar aldamaydi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zurikoning poyezdda notanishlar bilan muloqoti qanday baholanadi?",
+   "options": [
+    "A) Samimiy va ochiqko‘ngil",
+    "B) Qo‘pol va takabbur",
+    "C) Qo‘rqoq va tortinchoq",
+    "D) Loqayd va beparvo"
+   ],
+   "answer": "A) Samimiy va ochiqko‘ngil"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif poyezddagi do‘stlashuvni qanday tasvirlaydi?",
+   "options": [
+    "A) Insonlarni birlashtiruvchi vosita deb",
+    "B) Begonalardan qo‘rqish deb",
+    "C) Vaqtni bekor o‘tkazish deb",
+    "D) Zerikarli va og‘ir deb"
+   ],
+   "answer": "A) Insonlarni birlashtiruvchi vosita deb"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zuriko bilan buvi va qo‘shnilarining birgalikdagi sigiri kim edi?",
+   "options": [
+    "A) Pokiza",
+    "B) Serapiona",
+    "C) Murada",
+    "D) Sofya"
+   ],
+   "answer": "A) Pokiza"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pokiza vafot etgach, uni ko‘mish uchun kimga pul berishdi?",
+   "options": [
+    "A) Maratga",
+    "B) Romuliga",
+    "C) Datikoga",
+    "D) Simonga"
+   ],
+   "answer": "A) Maratga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zuriko universitetni qaysi mutaxassislik bo‘yicha bitirdi?",
+   "options": [
+    "A) Iqtisodchi",
+    "B) Vrach",
+    "C) O‘qituvchi",
+    "D) Muhandis"
+   ],
+   "answer": "A) Iqtisodchi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zuriko o‘qishni bitirib qishloqqa qaytganida buvisi qanday holatda edi?",
+   "options": [
+    "A) O‘lim to‘shagida yotgan edi",
+    "B) Daryoda kir yuvayotgan edi",
+    "C) Dala ishlarida edi",
+    "D) Mehmon kutayotgan edi"
+   ],
+   "answer": "A) O‘lim to‘shagida yotgan edi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Pokizani topshirish punktiga olib borishda qanday ketma-ketlik bo‘ldi?",
+   "options": [
+    "A) Yuvishdi, sog‘ishdi, yetaklashdi",
+    "B) Sotishdi, so‘yishdi, yeyishdi",
+    "C) O‘tlatishdi, minishdi, haydashdi",
+    "D) Boqishdi, davolashdi, ko‘mishdi"
+   ],
+   "answer": "A) Yuvishdi, sog‘ishdi, yetaklashdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sanitariya idorasi nega 300 so‘m jarima soldi?",
+   "options": [
+    "A) Sigir qarovsiz qoldirilgani uchun",
+    "B) Uzumzor buzilgani uchun",
+    "C) Miltiq otilgani uchun",
+    "D) Dars qoldirilgani uchun"
+   ],
+   "answer": "A) Sigir qarovsiz qoldirilgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Olga buvi vafot etishdan oldin nega vinodan ho‘pladi?",
+   "options": [
+    "A) Nevarasiga duo va vasiyat uchun",
+    "B) Chanqog‘ini qondirish uchun",
+    "C) Kasalini davolash uchun",
+    "D) Ilikoni xursand qilish uchun"
+   ],
+   "answer": "A) Nevarasiga duo va vasiyat uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Zuriko nega shaharda qolmay qishloqqa qaytishga qaror qildi?",
+   "options": [
+    "A) Qishloqqa va yaqinlariga mehridan",
+    "B) Shaharda ish topolmagani uchun",
+    "C) Buvidan qo‘rqqani uchun",
+    "D) Meri chaqirgani uchun"
+   ],
+   "answer": "A) Qishloqqa va yaqinlariga mehridan"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zurikoning o‘qishni tugatib qishloqqa qaytishi to‘g‘ri qarormi?",
+   "options": [
+    "A) To‘g‘ri — eliga xizmat qiladi",
+    "B) Noto‘g‘ri — shaharda qolishi kerak",
+    "C) Noto‘g‘ri — o‘qishni davom ettirsin",
+    "D) To‘g‘ri — faqat dam oladi"
+   ],
+   "answer": "A) To‘g‘ri — eliga xizmat qiladi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif buvining vafoti lavhasida qanday tuyg‘uni uyg‘otadi?",
+   "options": [
+    "A) Chuqur qayg‘u va oqibatni",
+    "B) Qo‘rqinch va vahimani",
+    "C) G‘azab va nafratni",
+    "D) Kulgili va sho‘xlikni"
+   ],
+   "answer": "A) Chuqur qayg‘u va oqibatni"
+  }
+ ]
+}

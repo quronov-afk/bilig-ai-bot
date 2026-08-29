@@ -1,0 +1,287 @@
+{
+ "title": "Snap",
+ "author": "Ernest Seton-Tompson",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14 yosh",
+  "topics": [
+   "jasorat",
+   "sadoqat",
+   "tabiat va hayvonlar",
+   "do‘stlik",
+   "burch va mas'uliyat"
+  ],
+  "theme": "Haqiqiy jasorat va sadoqat gavdasi bo‘lgan kichik kuchukning qo‘rqmasligi, do‘stiga bo‘lgan sadoqati hamda mardlik ulug‘lanadi.",
+  "summary": "Bosh qahramonga do‘sti Jek telegramma orqali Jinjersnap (Snap) laqabli qo‘rqmas bulteryer kuchukchasini sovg‘a qiladi. Qahramon sabr va «ertalaabki nonushtani bermaslik» usuli bilan Snapning ishonchini qozonib, u bilan ajralmas do‘stga aylanadi. Keyinchalik qahramon xizmat yuzasidan Shimoliy Dakotadagi Penruf aka-ukalar ferma xo‘jaligiga boradi. U yerda fermerlar yirtqich bo‘rilardan aziyat chekayotgan, ularning ko‘plab qimmatbaho itlari bo‘rining vajohatidan qo‘rqib hamla qila olmayotgan edi. Qahramon Snapni Mendozaga olib keladi. Snap birinchi ovdayoq o‘zidan necha barobar katta bo‘riga birinchi bo‘lib tashlanib, boshqa itlarga o‘rnak bo‘ladi. Keyingi ovda esa yarador holida ombordan qochib chiqib, ulkan qari bo‘rining halqumiga yopishadi va uni mahv etadi. Biroq jasur Snap olgan og‘ir jarohatlari sababli egasining qo‘lida jon beradi. Uni adirga sharaf bilan dafn etishadi.",
+  "characters": "Snap — jajji, ammo benihoya jasur va qo‘rqmas bulteryer kuchukcha; Hikoyachi — firma xodimi, Snapning egasi va mehribon do‘sti; Gilton Penruf — fermer va ovchi itlar galasining egasi; Garvin va qariya Penruf — fermer ovchilar.",
+  "conclusion": "Ushbu hikoya bolalarga haqqoniy jasorat, mas'uliyat va sadoqat kabi oliy fazilatlarni o‘rgatadi. Hayvonlarga nisbatan kuch ishlatmay, sabr va mehr bilan yondashish zarurligini ko‘rsatadi. Asar kitobxonda mardlik, do‘stga vafo va tabiatga mehr tuyg‘ularini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, ta'sirli",
+  "for_whom": "Hayvonlar haqidagi ta'sirli hikoyalarni xush ko‘radigan, jasorat va sadoqat haqida o‘ylaydigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bosh qahramon do‘sti Jekdan qanday telegramma oldi?",
+   "options": [
+    "A) Senga xavfli kuchuk yuboryapman",
+    "B) Senga ajoyib kuchuk jo‘natyapman",
+    "C) Kuchukni darhol sotib yubor"
+   ],
+   "answer": "B) Senga ajoyib kuchuk jo‘natyapman"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Snap solingan quti ustiga nima deb yozilgan edi?",
+   "options": [
+    "A) Xavfli!",
+    "B) Ehtiyot bo‘ling!",
+    "C) Sovg‘a!"
+   ],
+   "answer": "A) Xavfli!"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bosh qahramon Snapni o‘ziga ko‘niktirish uchun qanday usul qo‘lladi?",
+   "options": [
+    "A) Uni zanjirga bog‘lab qo‘ydi",
+    "B) Ertalabki nonushtani bermaslik tadbirini qo‘lladi",
+    "C) Har kuni kaltaklab tarbiya qildi"
+   ],
+   "answer": "B) Ertalabki nonushtani bermaslik tadbirini qo‘lladi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Snap nega o‘zidan katta itlarni ko‘rganda hurib chiranardi?",
+   "options": [
+    "A) Qo‘rqqanidan qochishga joy izlardi",
+    "B) Qo‘rqmasligi va urishishga tayyorligini ko‘rsatardi",
+    "C) Egasini himoya qilishni istamasdi"
+   ],
+   "answer": "B) Qo‘rqmasligi va urishishga tayyorligini ko‘rsatardi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Snap oyog‘ini qanday qilib sindirib oldi?",
+   "options": [
+    "A) Stol ustidan pastga sakrab",
+    "B) Kareta darchasidan senbernarga otilib",
+    "C) Bo‘ri bilan olishuv paytida"
+   ],
+   "answer": "B) Kareta darchasidan senbernarga otilib"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bosh qahramonning Snapni urmasdan sabr bilan tarbiyalagani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — sabr do‘stlikka olib keldi",
+    "B) Xato — uni darhol kaltaklash kerak edi",
+    "C) To‘g‘ri — chunki u kuchukdan qo‘rqardi"
+   ],
+   "answer": "A) To‘g‘ri — sabr do‘stlikka olib keldi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Snap qo‘rquv nimaligini bilmasdi» jumlasi bilan nimani ta'kidlaydi?",
+   "options": [
+    "A) Uning o‘ta jasurligi va qaytmasligini",
+    "B) Uning aqlsiz va nodonligini",
+    "C) Uning odamlarni yoqtirmasligini"
+   ],
+   "answer": "A) Uning o‘ta jasurligi va qaytmasligini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Aka-uka Penruflar fermada nega bo‘ri oviga chiqishardi?",
+   "options": [
+    "A) Bo‘rilar chorvaga qiron keltirgani uchun",
+    "B) Faqat sport musobaqasi o‘tkazish uchun",
+    "C) Itlarni sotish maqsadida"
+   ],
+   "answer": "A) Bo‘rilar chorvaga qiron keltirgani uchun"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Penruflar bo‘ri ovida itlarni qanday vazifalarga bo‘lishgan edi?",
+   "options": [
+    "A) Barcha itlar faqat poyloqchilik qilgan",
+    "B) Tozilar quvish, bo‘ribosarlar esa olishish uchun",
+    "C) Doglar quvgan, tozilar esa olishgan"
+   ],
+   "answer": "B) Tozilar quvish, bo‘ribosarlar esa olishish uchun"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gilton Penruf o‘ljani ko‘rsatish uchun Danderni qayerga chiqardi?",
+   "options": [
+    "A) Daraxt shoxiga",
+    "B) Ot egari ustiga",
+    "C) Katta tosh tepasiga"
+   ],
+   "answer": "B) Ot egari ustiga"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Penruflarning qimmatbaho itlari bo‘rini tuta olmasdi?",
+   "options": [
+    "A) Itlar yetarlicha tez yugura olmasdi",
+    "B) Bo‘rining vajohatidan qo‘rqib hamla qilmasdi",
+    "C) Egalari ularga ruxsat bermasdi"
+   ],
+   "answer": "B) Bo‘rining vajohatidan qo‘rqib hamla qilmasdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bosh qahramon nega Snapni Mendozaga olib kelishga qaror qildi?",
+   "options": [
+    "A) Uy bekasi Snapdan shikoyat qilgani uchun",
+    "B) Snapni fermerlarga sotib yubormoqchi edi",
+    "C) Snap uyda yolg‘iz zerikkani uchun"
+   ],
+   "answer": "A) Uy bekasi Snapdan shikoyat qilgani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Birinchi birgalikdagi ovda Snap bo‘rining qayeridan tishlab oldi?",
+   "options": [
+    "A) Dumidan",
+    "B) Tumshug‘idan",
+    "C) Orqa oyog‘idan"
+   ],
+   "answer": "B) Tumshug‘idan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Birinchi ovdan so‘ng ovchilarning ko‘ngli nega biroz xira bo‘ldi?",
+   "options": [
+    "A) Bo‘ri juda yosh edi va Snap yaralandi",
+    "B) Itlarning hammasi qochib ketdi",
+    "C) Otlar charchab yo‘lda qoldi"
+   ],
+   "answer": "A) Bo‘ri juda yosh edi va Snap yaralandi"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ovchilar so‘nggi ovga chiqishda Snapni nega omborga qamab ketishdi?",
+   "options": [
+    "A) Yarasi hali bitmagani uchun",
+    "B) Uni jazolash maqsadida",
+    "C) U juda qarib qolgani uchun"
+   ],
+   "answer": "A) Yarasi hali bitmagani uchun"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Snap ombordan qochib chiqib, ovchilarga qanday yetib keldi?",
+   "options": [
+    "A) Aka-uka Penruflarning otida keldi",
+    "B) Butalar oralab, yugurib yetib keldi",
+    "C) Boshqa itlarga qo‘shilib keldi"
+   ],
+   "answer": "B) Butalar oralab, yugurib yetib keldi"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ulkan qari bo‘ri bilan olishuv qanday ketma-ketlikda yuz berdi?",
+   "options": [
+    "A) Barcha itlar darhol bo‘rini o‘ldirdi",
+    "B) Itlar qo‘rqib turdi, Snap birinchi tashlandi",
+    "C) Snap bo‘ridan qochdi, itlar uni qutqardi"
+   ],
+   "answer": "B) Itlar qo‘rqib turdi, Snap birinchi tashlandi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Boshqa itlar nega faqat Snap hujum qilgandan keyin bo‘riga tashlandi?",
+   "options": [
+    "A) Snap ularga o‘rnak bo‘lib yo‘l ochdi",
+    "B) Ular Snapni yomon ko‘rishardi",
+    "C) Egalari shunday buyruq bergan edi"
+   ],
+   "answer": "A) Snap ularga o‘rnak bo‘lib yo‘l ochdi"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qariya Penrufning Snap haqidagi achinish gapi nimani anglatadi?",
+   "options": [
+    "A) Jasur kuchukning qadri mol-dunyodan balandligini",
+    "B) U ho‘kizlarini umuman yaxshi ko‘rmasligini",
+    "C) Snap juda qimmatga sotib olinganini"
+   ],
+   "answer": "A) Jasur kuchukning qadri mol-dunyodan balandligini"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Snapning so‘nggi daqiqada egasining qo‘lini yalashini qanday tasvirlaydi?",
+   "options": [
+    "A) Uning so‘nggi vidolashuvi va cheksiz sadoqati sifatida",
+    "B) Uning ovqat so‘rayotganini bildirish uchun",
+    "C) Uning og‘riqdan qo‘rqayotganini ko‘rsatish uchun"
+   ],
+   "answer": "A) Uning so‘nggi vidolashuvi va cheksiz sadoqati sifatida"
+  }
+ ]
+}

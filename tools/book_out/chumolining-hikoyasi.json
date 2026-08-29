@@ -1,0 +1,28 @@
+{
+ "title": "Chumolining hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9",
+  "topics": [
+   "odob-ahloq",
+   "tabiat",
+   "tasavvur",
+   "oila",
+   "hozirjavoblik"
+  ],
+  "theme": "Kattalarning o‘g‘itlariga amal qilish, salom berish odobi va zukkolik har qanday kutilmagan vaziyatda yordam berishi haqida quvnoq va ibratli hikoya.",
+  "summary": "Kichik chumoli uzum urug‘ini ko‘tarolmay turganda qarshisidan ko‘k qurt chiqadi. Chumoli uni onasi aytib bergan ertakdagi ajdarho deb o‘ylab, odob bilan salom beradi. Shu payt osmondan chumchuq uchib tushib, qurtni tutib ketadi. Chumoli chumchuqni ertakdagi Qilichbotir deb o‘ylaydi, lekin u o‘zini Chumchuq polvon deb tanishtiradi. Chumoli o‘zi ko‘rgan bu g‘aroyib voqeani onasiga aytib berish uchun uyiga shoshiladi.",
+  "characters": "Chumoli — tasavvuri boy, odobli va hozirjavob mitti qahramon. Ko‘kqurt — chumoli ajdarho deb o‘ylagan yashil qurt. Chumchuq polvon — qurtni tutgan shiddatli qush.",
+  "conclusion": "Hikoya bolalarga kattalarning so‘ziga quloq solish, har qanday vaziyatda salom berish va odob-ahloq bilan ish tutish muhimligini ko‘rsatadi. Shuningdek, ota-ona aytib bergan ibratli ertaklar hayotda asqatishini yengil va kulgili tarzda uqtiradi.",
+  "difficulty": "oson",
+  "mood": "kulgili, yengil, quvnoq",
+  "for_whom": "Tabiat va hayvonlar haqidagi qiziqarli voqealarni, kulgili va zukko qahramonlar sarguzashtlarini yoqtiradigan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Chumoli kutilmagan vaziyatda odob bilan salom bergani uchun o‘zini ajdarhodan qutulib qoldim deb o‘yladi va bu haqda onasiga aytishga shoshildi. Sen o‘zing bilmagan yoki biroz qo‘rqinchli tuyulgan narsaga duch kelganingda nima qilasan? Chumolining qaysi odati senga ko‘proq yoqdi va nega?"
+}

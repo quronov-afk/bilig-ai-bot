@@ -1,0 +1,417 @@
+{
+ "title": "Bilmasvoy quyosh shahrida",
+ "author": "Nikolay Nosov",
+ "genre": "ertak-roman",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "do‘stlik",
+   "vijdon",
+   "halollik",
+   "mehnatsevarlik",
+   "ilm-fan va texnika"
+  ],
+  "theme": "Bajarilgan har bir xatti-harakat uchun vijdon va mas'uliyat oldida javobgarlik hamda mehnatning sehrdan ustunligi.",
+  "summary": "Bilmasvoy sehrli tayoqchaga ega bo‘lish uchun uchta beg‘araz yaxshi ish qilishga urinadi. Niyatidan qaytib, samimiy yaxshilik qilganida, sehrgar unga tayoqcha beradi. Bilmasvoy do‘stlari Tugmachaxon va Olabola bilan mo‘jizaviy Quyosh shahriga sayohat qiladi. Tayoqchadan o‘ylamay foydalanib, uchta eshakni mitti bolaga va shahardagi odamlarni qiyin ahvolga solib qo‘yadi. Kelib chiqqan tartibsizliklar va o‘z vijdonining qiynalishi natijasida u qilmishlarining xatoligini tushunadi. Oxir-oqibat sehrgar yordamida hamma narsa o‘z o‘rniga tushadi va sayohatchilar Gulzor shahriga qaytib, halol mehnat hamda do‘stlikning qadriga yetishadi.",
+  "characters": "Bilmasvoy — shox, xayolparast, lekin vijdoni bor mitti bola; Tugmachaxon — aqlli va tartibli qizaloq; Olabola — dangasa va tartibsiz bola; Sehrgar — Bilmasvoyga tayoqcha bergan donishmand chol; Harfxon va Varaqjon — kitobsevar do‘stlar; Hushtakjon — Quyosh shahri militsioneri.",
+  "conclusion": "Kitob bolani o‘z qilmishlari uchun mas'uliyat his qilishga va har bir ishda vijdoniga quloq solishga o‘rgatadi. Mehnat va bilim sehrdan ko‘ra qudratliroq ekanini hamda do‘stlik va halollikning bebaho qadrini uqtiradi.",
+  "difficulty": "o‘rta",
+  "mood": "quvnoq, sarguzashtli, o‘ylantiruvchi",
+  "for_whom": "Sarguzashtlarni, fantastika va qiziqarli texnik mo‘jizalarni yaxshi ko‘radigan, yaxshi va yomon xulq haqida o‘ylaydigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy ertaklar haqida qaysi qizaloq bilan bahslashardi?",
+   "options": [
+    "A) Tugmachaxon bilan",
+    "B) Tomchioy bilan",
+    "C) Ipakoy bilan"
+   ],
+   "answer": "A) Tugmachaxon bilan"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy Dorijonga qaysi gulni terib keldi?",
+   "options": [
+    "A) Qizil roʻzani",
+    "B) Marvaridgulni",
+    "C) Boshqacha gulni"
+   ],
+   "answer": "B) Marvaridgulni"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy kimning etigini moylab berdi?",
+   "options": [
+    "A) Ovchi Oʻqtoyning",
+    "B) Ustoz Murvatvoyning",
+    "C) Shoshqaloqning"
+   ],
+   "answer": "A) Ovchi Oʻqtoyning"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy zanjirdan yechib yuborgan kuchukning ismi nima?",
+   "options": [
+    "A) Barbos",
+    "B) Koʻktoy",
+    "C) Olabola"
+   ],
+   "answer": "B) Koʻktoy"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sehrgarning tashqi koʻrinishidagi asosiy belgilar qanday edi?",
+   "options": [
+    "A) Uzoq chopon va soqolli",
+    "B) Yosh va harbiy kiyimda",
+    "C) Qisqa koʻylak va shapkada"
+   ],
+   "answer": "A) Uzoq chopon va soqolli"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bilmasvoy sehrli tayoqchani olguncha qanday voqealar boʻlib oʻtdi?",
+   "options": [
+    "A) Yaxshiliklar qildi va itdan qutqardi",
+    "B) Avtomobil oʻylab topdi",
+    "C) Boshqa shaharga qochib ketdi"
+   ],
+   "answer": "A) Yaxshiliklar qildi va itdan qutqardi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Bilmasvoyning birinchi qilgan yaxshi ishlari amalga oshmadi?",
+   "options": [
+    "A) Ular manfaat uchun qilingan edi",
+    "B) Suv sovuq boʻlgani uchun",
+    "C) Dorijon bunga ruxsat bermagandi"
+   ],
+   "answer": "A) Ular manfaat uchun qilingan edi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega sehrgar Bilmasvoyga sehrli tayoqchani berishga qaror qildi?",
+   "options": [
+    "A) Bilmasvoy begʻaraz uchta yaxshilik qildi",
+    "B) Bilmasvoy undan tayoqchani soʻradi",
+    "C) Chol sehrli tayoqchani yoʻqotgandi"
+   ],
+   "answer": "A) Bilmasvoy begʻaraz uchta yaxshilik qildi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bilmasvoyning oʻz xatosini tushunib, sertakalluf boʻlishi toʻgʻrimi?",
+   "options": [
+    "A) Ha, bu toʻgʻri yoʻl",
+    "B) Yoʻq, u qaysarlik qilishi kerak",
+    "C) U baribir oʻzgarmadi"
+   ],
+   "answer": "A) Ha, bu toʻgʻri yoʻl"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif yomgʻirdan keyingi tabiatni qanday tuygʻu bilan tasvirlaydi?",
+   "options": [
+    "A) Shodlik va quvonch bilan",
+    "B) Mungli va qaygʻuli tilda",
+    "C) Qoʻrqinchli va vahimali tilda"
+   ],
+   "answer": "A) Shodlik va quvonch bilan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sayohatchilar daryo boʻyida toʻxtaganda nima qilishdi?",
+   "options": [
+    "A) Hammalari yuvinib olishdi",
+    "B) Baliq tutishdi",
+    "C) Mashinani buzishdi"
+   ],
+   "answer": "A) Hammalari yuvinib olishdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy va uning doʻstlari qaysi shaharga borishdi?",
+   "options": [
+    "A) Yashil shaharga",
+    "B) Quyosh shahriga",
+    "C) Varrakxona shahriga"
+   ],
+   "answer": "B) Quyosh shahriga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy mehmonxonadagi ertak aytadigan tumbochkaning qaysi tugmasini bosdi?",
+   "options": [
+    "A) Alyonushka va Ivanushka haqida",
+    "B) Kichkina bola haqida",
+    "C) Oltin xoʻrozcha haqida"
+   ],
+   "answer": "A) Alyonushka va Ivanushka haqida"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Teatrda sahna koʻrinishida turli kiyimlarga kirgan artist kim edi?",
+   "options": [
+    "A) Quymoqjon",
+    "B) Binovoy",
+    "C) Harfxon"
+   ],
+   "answer": "A) Quymoqjon"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Quyosh shahridagi uylar tomdagi moslamalar yordamida nimani yigʻadi?",
+   "options": [
+    "A) Quyosh energiyasini",
+    "B) Yomgʻir suvini",
+    "C) Shamol kuchini"
+   ],
+   "answer": "A) Quyosh energiyasini"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Harfxon kitob teatrida yigʻlab oʻtirgan edi?",
+   "options": [
+    "A) Doʻsti Varaqjon yoʻqolib qolgani uchun",
+    "B) Kitob topshira olmagani uchun",
+    "C) Tomoshabinlar kelmagani uchun"
+   ],
+   "answer": "A) Doʻsti Varaqjon yoʻqolib qolgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Militsioner Qorovuljon va Hushtakjon nega Bilmasvoyni jazolashmadi?",
+   "options": [
+    "A) Quyosh shahri tartibi boshqachaligi uchun",
+    "B) Bilmasvoydan qoʻrqishgani uchun",
+    "C) Suv sepish mumkin boʻlgani uchun"
+   ],
+   "answer": "A) Quyosh shahri tartibi boshqachaligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Quyosh shahridagi militsionerlarning xushfe'lligi haqida qanday baho berasan?",
+   "options": [
+    "A) Odamlarga hurmat koʻrsatish namunasi",
+    "B) Qonunlarni umuman bilmaslik",
+    "C) Qoʻrqoqlik alamini olish"
+   ],
+   "answer": "A) Odamlarga hurmat koʻrsatish namunasi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Quyosh shahridagi hovlilar va oʻyin joylarini qanday tasvirlaydi?",
+   "options": [
+    "A) Devorsiz va hamma uchun ochiq",
+    "B) Baland devor bilan oʻralgan",
+    "C) Faqat kattalar uchun moʻljallangan"
+   ],
+   "answer": "A) Devorsiz va hamma uchun ochiq"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Quymoqjonning sahnadagi mahoratini qanday ta'riflaydi?",
+   "options": [
+    "A) Tez qayta kiyinuvchi tovlangich",
+    "B) Qovushmagan va zerikarli",
+    "C) Qirq xil cholgʻu chaluvchi"
+   ],
+   "answer": "A) Tez qayta kiyinuvchi tovlangich"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Varaqjon yoʻqotgan kitob nomi nima edi?",
+   "options": [
+    "A) Yashka degan gʻoz sarguzashtlari",
+    "B) Sehrli tayoqcha haqida ertak",
+    "C) Mittivoylar sayohati"
+   ],
+   "answer": "A) Yashka degan gʻoz sarguzashtlari"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy hayvonot bogʻida qaysi hayvon qafasiga kirib qoldi?",
+   "options": [
+    "A) Sher qafasiga",
+    "B) Fil qafasiga",
+    "C) Maymun qafasiga"
+   ],
+   "answer": "A) Sher qafasiga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sehrgar bolalarga qaysi bayramda qatnashishni tushuntirdi?",
+   "options": [
+    "A) Quyosh birodarligi bayrami",
+    "B) Gul bayrami",
+    "C) Sayohat bayrami"
+   ],
+   "answer": "A) Quyosh birodarligi bayrami"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sehrli tayoqcha oʻrniga Bilmasvoy Tugmachaxonga qaysi doʻstini aytdi?",
+   "options": [
+    "A) Vijdonini",
+    "B) Dorijonni",
+    "C) Shoshqaloqni"
+   ],
+   "answer": "A) Vijdonini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Quyosh birodarlari bayramida mittilar oʻzaro nimani almashtirishdi?",
+   "options": [
+    "A) Har xil rangdagi qoʻlqopchalarni",
+    "B) Mevalar va totli shirinliklarni",
+    "C) Kitoblar va oʻyinchoqlarni"
+   ],
+   "answer": "A) Har xil rangdagi qoʻlqopchalarni"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Bilmasvoy tunda oʻz vijdoni bilan gaplashib qiynaldi?",
+   "options": [
+    "A) Qilmishlarining oqibatini tushunib yetgani uchun",
+    "B) Qorni och qolgani uchun",
+    "C) Doʻstlari uni uyga kirgizmagani uchun"
+   ],
+   "answer": "A) Qilmishlarining oqibatini tushunib yetgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Tugmachaxon sehrli tayoqchaga sira achinmasligini aytdi?",
+   "options": [
+    "A) Mehnat va aql sehrdan ustunligi uchun",
+    "B) Tayoqcha sinib qolgani uchun",
+    "C) Boshqa tayoqchasi borligi uchun"
+   ],
+   "answer": "A) Mehnat va aql sehrdan ustunligi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Militsioner Etikjonning Shoʻrvajonni qoʻyib yuborishi toʻgʻri qilingan ishmi?",
+   "options": [
+    "A) Ha, vijdon amriga quloq tutdi",
+    "B) Yoʻq, u qattiqroq jazolashi kerak edi",
+    "C) Bilmasman, unga baribir edi"
+   ],
+   "answer": "A) Ha, vijdon amriga quloq tutdi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bilmasvoy va doʻstlarining Gulzor shahrini obod qilish niyati haqida bahongiz?",
+   "options": [
+    "A) Juda ezgu va ibratli niyat",
+    "B) Amalga oshmaydigan qkuyosh orzusi",
+    "C) Keraksiz va foydasiz mashgʻulot"
+   ],
+   "answer": "A) Juda ezgu va ibratli niyat"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida muallif Gulzor shahriga qaytish voqeasini qanday yakunlaydi?",
+   "options": [
+    "A) Doʻstlik va vijdon gʻalabasi bilan",
+    "B) Xafagarchilik va urush-janjal bilan",
+    "C) Qahramonlarning yoʻqolishi bilan"
+   ],
+   "answer": "A) Doʻstlik va vijdon gʻalabasi bilan"
+  }
+ ]
+}

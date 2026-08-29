@@ -1,0 +1,447 @@
+{
+ "title": "Kapitan Grant bolalari",
+ "author": "Jyul Vern",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15",
+  "topics": [
+   "do‘stlik",
+   "jasorat",
+   "sarguzasht",
+   "fidoyilik",
+   "odamiylik"
+  ],
+  "theme": "Ezgulik, qat’iyat va do‘stlik har qanday mushkulotni yengishga, hatto umidsiz tuynuklardan ham najot topishga qodir.",
+  "summary": "Shotlandiyalik lord Glenarvan «Dunkan» yaxtasida akula qornidan shisha ichiga yashiringan uch dildagi hujjatni topadi. Hujjatda kapitan Garri Grant va uning dengizchilari 37-parallel yaqinida halokatga uchragani yozilgan edi. Glenarvan kapitan Grantning bolalari Meri va Robert hamda parishonxotir olim Jak Paganel bilan birga qidiruvga otlanadi. Ular Janubiy Amerika (Patagoniya va Kordiler tog‘lari), Avstraliya hamda Yangi Zelandiyani o‘ttizinchi parallel bo‘ylab kesib o‘tadilar. Yo‘lda xiyonatkor botsman Ayrton (Ben Joys) va shafqatsiz maori yovvoyilari qarshiligiga uchraydilar. Nihoyat, barcha qiyinchiliklarni yengib, Tabor (Mariya-Tereziya) kimsasiz orolidan kapitan Grantni sog‘-salomat topishadi.",
+  "characters": "Eduard Glenarvan — mard va oliyjanob lord, ekspeditsiya rahbari; Elen Glenarvan — uning mehribon rafiqasi; Meri va Robert Grant — kapitan Grantning izlanuvchan, jasur bolalari; Jak Paganel — fransuz geograf-olimi, parishonxotir va bilimdon; Mayor Mak-Nabbs — vazmin, bosiq va tartibli zobit; Jon Mangls — «Dunkan» yaxtasining yosh va mohir kapitani; Ayrton — xiyonatkor botsman va qaroqchilar boshlig‘i.",
+  "conclusion": "Asar bolani do‘stlikka sadoqatli bo‘lishga, qiyinchiliklar oldida taslim bo‘lmaslikka va insonparvarlikka o‘rgatadi. Ilm-fan, geografiya va matonat inson hayotida qanchalik muhim o‘rin tutishini ko‘rsatadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, hayajonli, ruhiyatni ko‘taruvchi",
+  "for_whom": "Sarguzashtlarni, dengiz va sayohatlarni xush ko‘radigan, sinovlarda mardlik ko‘rsatadigan qahramonlarga havas qiladigan o‘smirlarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Dunkan» matroslari dengizda qanday yirtqich baliqni tutib olishdi?",
+   "options": [
+    "A) Bolg‘abaliq",
+    "B) Ko‘k akula",
+    "C) Kit baliq",
+    "D) Delfin"
+   ],
+   "answer": "A) Bolg‘abaliq"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akula qornidan chiqqan shisha ichida nima bor edi?",
+   "options": [
+    "A) Oltin tangalar",
+    "B) Uchta tildagi hujjat",
+    "C) Qadimiy xarita",
+    "D) Dengizchi soati"
+   ],
+   "answer": "B) Uchta tildagi hujjat"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Halokatga uchragan kapitan Grantning kemasi qanday nomlangan edi?",
+   "options": [
+    "A) «Dunkan»",
+    "B) «Makari»",
+    "C) «Britaniya»",
+    "D) «Sen-Mishel»"
+   ],
+   "answer": "C) «Britaniya»"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Dunkan» yaxtasiga tasodifan kelib qolgan parishonxotir olim kim?",
+   "options": [
+    "A) Mak-Nabbs",
+    "B) Jak Paganel",
+    "C) Tom Ostin",
+    "D) Jon Mangls"
+   ],
+   "answer": "B) Jak Paganel"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sayohatchilar Kordiler tog‘laridan o‘tgach, tartib bo‘yicha qayerga yo‘l olishdi?",
+   "options": [
+    "A) Pampaslar va Argentina tekisliklariga",
+    "B) Yangi Zelandiya orollariga",
+    "C) Avstraliya oltin konlariga",
+    "D) Tabor kimsasiz oroliga"
+   ],
+   "answer": "A) Pampaslar va Argentina tekisliklariga"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Glenarvan nima uchun kapitan Grantni qidirishga qaror qildi?",
+   "options": [
+    "A) Oliyjanoblik va insoniy burch yuzasidan",
+    "B) Qirolicha maxfiy buyrug‘ini bajarishga",
+    "C) Yangi boyliklar ortirish uchun",
+    "D) Yevropada dong taratish uchun"
+   ],
+   "answer": "A) Oliyjanoblik va insoniy burch yuzasidan"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Paganel nima uchun «Dunkan» kemasiga adashib chiqib qoldi?",
+   "options": [
+    "A) Parishonxotirlik bilan kemalarni adashtirdi",
+    "B) Dushmanlaridan yashirinib yurgan edi",
+    "C) Kema egasiga bildirmay suzmoqchi edi",
+    "D) Dengizda ov qilishni xohlagandi"
+   ],
+   "answer": "A) Parishonxotirlik bilan kemalarni adashtirdi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Eduard Glenarvanning Grant bolalariga yordam berishi haqida fikring qanday?",
+   "options": [
+    "A) Bu oliyjanob va mardona ish",
+    "B) Bu o‘ylamasdan qilingan xato",
+    "C) Bu shunchaki vaqtni yo‘qotish",
+    "D) Bu faqat mashhurlik uchun"
+   ],
+   "answer": "A) Bu oliyjanob va mardona ish"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Kordilerdagi zilzilani tasvirlab, kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Tabiat qudrati oldidagi hayrat",
+    "B) Tog‘larga nisbatan nafrat tuyg‘usi",
+    "C) Quvonch va yengil kulgi",
+    "D) Zerikish va loqaydlik hissi"
+   ],
+   "answer": "A) Tabiat qudrati oldidagi hayrat"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kordiler tog‘laridagi zilzila paytida kim yo‘qolib qolgan edi?",
+   "options": [
+    "A) Meri Grant",
+    "B) Robert Grant",
+    "C) Mak-Nabbs",
+    "D) Jak Paganel"
+   ],
+   "answer": "B) Robert Grant"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sayohatchilar Avstraliyada uchratgan sobiq botsman kim edi?",
+   "options": [
+    "A) Bill Galley",
+    "B) Ayrton",
+    "C) Tom Ostin",
+    "D) Paddi O‘Mur"
+   ],
+   "answer": "B) Ayrton"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ayrton «Dunkan»ni qaysi ko‘rfazga olib kelishni taklif qildi?",
+   "options": [
+    "A) Tufold ko‘rfaziga",
+    "B) Botanika ko‘rfaziga",
+    "C) Talkaguano ko‘rfaziga",
+    "D) Eden ko‘rfaziga"
+   ],
+   "answer": "A) Tufold ko‘rfaziga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vimmera daryosi bo‘yida sayohatchilarning nimasi sinib qoldi?",
+   "options": [
+    "A) Karabin miltig‘i",
+    "B) Aravaning oldingi o‘qi",
+    "C) Suv solingan bochka",
+    "D) Chodirning yog‘och ustuni"
+   ],
+   "answer": "B) Aravaning oldingi o‘qi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avstraliya tog‘larida oltin konlari borligini taxmin qilgan olim kim?",
+   "options": [
+    "A) Roderik Merchison",
+    "B) Frensis Lyutton",
+    "C) Garri Grant",
+    "D) Jak Paganel"
+   ],
+   "answer": "A) Roderik Merchison"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sayohatchilarning Avstraliyadagi harakat yo‘nalishi tartibini ko‘rsat:",
+   "options": [
+    "A) Vimmera, Aleksandr tog‘i, Tufold",
+    "B) Tufold, Vimmera, Tabor oroli",
+    "C) Eden, Melburn, Kordiler tog‘i",
+    "D) Patagoniya, Vimmera, Kordiler"
+   ],
+   "answer": "A) Vimmera, Aleksandr tog‘i, Tufold"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ayrton nima uchun Melburnga xatni o‘zi olib borishga tirishdi?",
+   "options": [
+    "A) «Dunkan»ni egallab, qaroqchilik qilishga",
+    "B) Garri Grantni tezroq qutqarish uchun",
+    "C) Glenarvanga chin dildan yordam berishga",
+    "D) Melburnda oilasi uni kutgani uchun"
+   ],
+   "answer": "A) «Dunkan»ni egallab, qaroqchilik qilishga"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mayor Mak-Nabbs nima uchun Ayrtondan shubhalanib yurgan edi?",
+   "options": [
+    "A) Ayrtonning xulqida ayyorlik sezgani uchun",
+    "B) Ayrton shotlandcha gapirmagani uchun",
+    "C) Ayrton xaritani yaxshi bilgani uchun",
+    "D) Ayrton ov qilishni bilmagani uchun"
+   ],
+   "answer": "A) Ayrtonning xulqida ayyorlik sezgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ayrtonning Glenarvan otryadiga qilgan xiyonatiga qanday baho beriladi?",
+   "options": [
+    "A) Shafqatsiz va pastkashlik harakati",
+    "B) To‘g‘ri va oqlanadigan ish",
+    "C) Shunchaki beg‘araz hazil-huzul",
+    "D) Jasorat va mardlik namuna"
+   ],
+   "answer": "A) Shafqatsiz va pastkashlik harakati"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Avstraliya tabiatini tasvirlashda qanday usuldan foydalanadi?",
+   "options": [
+    "A) Yorqin va jozibador bo‘yoqlardan",
+    "B) Faqat g‘amgin va qorong‘i so‘zlardan",
+    "C) Ilmiy va zerikarli atamalardan",
+    "D) Qisqa va tushunarsiz iboralardan"
+   ],
+   "answer": "A) Yorqin va jozibador bo‘yoqlardan"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Glenarvan va do‘stlari Eden shahriga yetishganda ufqda nima ko‘rinmadi?",
+   "options": [
+    "A) Pochta karetasi",
+    "B) «Dunkan» yaxtasi",
+    "C) Mayak chirog‘i",
+    "D) Port idorasi"
+   ],
+   "answer": "B) «Dunkan» yaxtasi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sayohatchilar Yangi Zelandiyada qaysi qabila qo‘liga asir tushishdi?",
+   "options": [
+    "A) Maori qabilasi",
+    "B) Inklar qabilasi",
+    "C) Patagonlar qabilasi",
+    "D) Aborigenlar qabilasi"
+   ],
+   "answer": "A) Maori qabilasi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kapitan Grant va ikki matros qaysi orolda yashayotgan edi?",
+   "options": [
+    "A) Tabor (Mariya-Tereziya) orolida",
+    "B) Tristan-da-Kunya orolida",
+    "C) Amsterdam orolida",
+    "D) Arran orolida"
+   ],
+   "answer": "A) Tabor (Mariya-Tereziya) orolida"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif kapitan Grantning bolalari bilan uchrashuvida nimani yoritgan?",
+   "options": [
+    "A) Cheksiz quvonch va mehr-oqibatni",
+    "B) Sovuqqonlik va befarqlik tuyg‘usini",
+    "C) Qo‘rqinch va sarosima holatini",
+    "D) Afsus va achinish hissini"
+   ],
+   "answer": "A) Cheksiz quvonch va mehr-oqibatni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kapitan Grantni qidirish marshrutida eng oxirida bosib o‘tilgan joylar:",
+   "options": [
+    "A) Yangi Zelandiya, Tabor, Shotlandiya",
+    "B) Patagoniya, Melburn, London shahri",
+    "C) Kordiler, Vimmera, Parij shahri",
+    "D) Chili, Buenos-Ayres, Madrid shahri"
+   ],
+   "answer": "A) Yangi Zelandiya, Tabor, Shotlandiya"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Fransuzcha hujjatdagi «Tabor» so‘zi nemis kartalarida qanday nomlangan edi?",
+   "options": [
+    "A) Mariya-Tereziya oroli",
+    "B) Tristan-da-Kunya oroli",
+    "C) Amsterdam oroli",
+    "D) Botanika ko‘rfazi"
+   ],
+   "answer": "A) Mariya-Tereziya oroli"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Glenarvan nima uchun Ayrtonni Tabor orolida qoldirishga qaror qildi?",
+   "options": [
+    "A) Unga pusaymon bo‘lish imkonini berishga",
+    "B) Kema og‘irligini kamaytirish maqsadida",
+    "C) Orolni qo‘riqlash topshirig‘i bilan",
+    "D) Kema oziq-ovqatini tejash uchun"
+   ],
+   "answer": "A) Unga pusaymon bo‘lish imkonini berishga"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Paganel tanasidagi tatuirovkani nima uchun doim yashirib yurdi?",
+   "options": [
+    "A) Odamlar ustidan kulishidan uyalgani uchun",
+    "B) Bu juda ham muhim sir bo‘lgani uchun",
+    "C) Doim sovuqdan qo‘rqqani uchun",
+    "D) Mayor unga taqiqlab qo‘ygani uchun"
+   ],
+   "answer": "A) Odamlar ustidan kulishidan uyalgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kapitan Grantning barcha qiyinchiliklarga qaramay taslim bo‘lmagani haqida nima deysiz?",
+   "options": [
+    "A) Matonat va kuchli iroda belgisi",
+    "B) Keraksiz va o‘ylanmagan harakat",
+    "C) Faqat omadga tayanish holati",
+    "D) Qo‘rqoqlik va ojizlik belgisi"
+   ],
+   "answer": "A) Matonat va kuchli iroda belgisi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Glenarvanning Ayrtonni kimsasiz orolda qoldirgan qarori to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, bu adolatli va saboq beruvchi",
+    "B) Noto‘g‘ri, uni darhol qamoqqa tiqish lozim",
+    "C) Noto‘g‘ri, uni kemada qoldirish kerak",
+    "D) To‘g‘ri, chunki u kemaga sig‘masdi"
+   ],
+   "answer": "A) To‘g‘ri, bu adolatli va saboq beruvchi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar so‘ngida muallif o‘quvchida qanday umumiy taassurot qoldiradi?",
+   "options": [
+    "A) Ezgulik va do‘stlik g‘alaba qozonishi",
+    "B) Hayotda adolat umuman yo‘qligi",
+    "C) Sarguzashtlar doim fojia bilan tugashi",
+    "D) Insonga hech qachon ishonib bo‘lmasligi"
+   ],
+   "answer": "A) Ezgulik va do‘stlik g‘alaba qozonishi"
+  }
+ ]
+}

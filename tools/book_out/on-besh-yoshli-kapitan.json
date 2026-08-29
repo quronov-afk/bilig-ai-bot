@@ -1,0 +1,447 @@
+{
+ "title": "O‘n besh yoshli kapitan",
+ "author": "Jyul Vern",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15 yosh",
+  "topics": [
+   "jasorat",
+   "mas’uliyat",
+   "do‘stlik",
+   "sayohat",
+   "sadoqat"
+  ],
+  "theme": "Inson har qanday og‘ir vaziyatda ham mas’uliyatni o‘z zimmasiga olishi, jasorat va bilimi bilan yaqinlariga yordam berishi kerak.",
+  "summary": "«Piligrim» kit ovlash kemasi kapitani va uning tajribali matroslari ola kitni ovlash chog‘ida halok bo‘lishadi. Kemada o‘n besh yoshli matros Dik Send kapitanlikni o‘z zimmasiga oladi. Kema oshpazi Negoro xiyonat qilib, kompas ostiga temir parchasi qo‘yadi va kemani Janubiy Amerika o‘rniga Afrikaga yo‘naltiradi. Kema Afrika qirg‘oqlarida halokatga uchraydi. Dik Send, missis Ueldon, kichkina Jek, Benedikt tog‘a va qutqarilgan negrlar o‘rmon ichkarisiga yurishadi. Ular Gerris va Negoroning tuzog‘iga tushib, quldorlar qo‘liga asir bo‘lishadi. Biroq jasur va baquvvat Gerkules do‘stlarini qutqarishga erishadi. Ular daryo bo‘ylab suzib, xavf-xatarlardan o‘tib, eson-omon San-Fransiskoga qarindoshlari va do‘stlari yaniga qaytib kelishadi. Dik Send o‘qishni tamomlab, haqiqiy kapitan bo‘lib yetishadi.",
+  "characters": "Dik Send — 15 yoshli jasur va mas’uliyatli matros, kema kapitani. Missis Ueldon — kema egasining rafiqasi, sabrli va mehribon ona. Jek — missis Ueldonning 5 yashar o‘g‘li. Benedikt tog‘a — entomolog olim, parishonxotir va sodda. Gerkules — pahlavonsifat, sadoqatli qora tanli do‘st. Negoro va Gerris — shafqatsiz va ayyor quldorlar.",
+  "conclusion": "Asar bolada matonat, mas’uliyat, do‘stlikka sadoqat va bilimga intilish kabi fazilatlarni shakllantiradi. Qiyinchiliklar oldida taslim bo‘lmaslik va yaqinlariga g‘amxo‘rlik qilishni o‘rgatadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, hayajonli",
+  "for_whom": "Sarguzashtlarni, dengiz va sayohatlarni xush ko‘radigan, jasur qahramonlarga havas qiladigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Piligrim» kemasining kapitani kim edi?",
+   "options": [
+    "A) Kapitan Gul",
+    "B) Dik Send",
+    "C) Jems Ueldon",
+    "D) Gerris"
+   ],
+   "answer": "A) Kapitan Gul"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dik Send bolaligida qayerda o‘sgan edi?",
+   "options": [
+    "A) Bolalar tarbiyaxonasida",
+    "B) Badavlat oilada",
+    "C) Kema kapitani xonadonida",
+    "D) Oklend shahri ko‘chalarida"
+   ],
+   "answer": "A) Bolalar tarbiyaxonasida"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Benedikt tog‘a qaysi fanni juda yaxshi ko‘rardi?",
+   "options": [
+    "A) Entomologiya fanini",
+    "B) Botanika fanini",
+    "C) Geografiya fanini",
+    "D) Astronomiya fanini"
+   ],
+   "answer": "A) Entomologiya fanini"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Piligrim» kemasining oshpazi kim edi?",
+   "options": [
+    "A) Negoro",
+    "B) Tom",
+    "C) Gerkules",
+    "D) Bat"
+   ],
+   "answer": "A) Negoro"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Missis Ueldon bilan birga kemada kimlar bor edi?",
+   "options": [
+    "A) Jek, Benedikt tog‘a va Nan",
+    "B) Faqat Jek va er-xotin",
+    "C) Faqat pahlavon Gerkules",
+    "D) Faqat oshxona oshpazi Negoro"
+   ],
+   "answer": "A) Jek, Benedikt tog‘a va Nan"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kapitan Gul nega missis Ueldonni kemaga olishga rozi bo‘ldi?",
+   "options": [
+    "A) Ularga yordam berish va hurmat yuzasidan",
+    "B) Ko‘proq pul ishlab olish uchun",
+    "C) Yangi matroslar yollash uchun",
+    "D) Oklendda qolishni xohlamagani uchun"
+   ],
+   "answer": "A) Ularga yordam berish va hurmat yuzasidan"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dik Send nega o‘z ustida ko‘p ishlar edi?",
+   "options": [
+    "A) Odam bo‘lish va dengizchi bo‘lish uchun",
+    "B) Faqat pul jamg‘arish uchun",
+    "C) Kema xo‘jayinidan qo‘rqqani uchun",
+    "D) Sayohat qilishni xohlamagani uchun"
+   ],
+   "answer": "A) Odam bo‘lish va dengizchi bo‘lish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dik Sendning yoshligidan mehnat qilgani to‘g‘ri bo‘lganmi?",
+   "options": [
+    "A) To‘g‘ri, u irodali bo‘lib o‘sdi",
+    "B) Noto‘g‘ri, bola o‘ynashi kerak edi",
+    "C) Faqat o‘qishi kerak edi",
+    "D) Muhim emas edi"
+   ],
+   "answer": "A) To‘g‘ri, u irodali bo‘lib o‘sdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kapitan Gulning «Piligrim» kemasiga ishonchi haqida nima deya olasiz?",
+   "options": [
+    "A) U o‘z kemasini yaxshi bilardi",
+    "B) U behuda maqtanar edi",
+    "C) U kemani yoqtirmas edi",
+    "D) U xavfni umuman o‘ylamasdi"
+   ],
+   "answer": "A) U o‘z kemasini yaxshi bilardi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Dik Sendni «ikki o‘ng qo‘li bor» deb nimani nazarda tutadi?",
+   "options": [
+    "A) Har qanday ishni epchillik bilan qilishini",
+    "B) Uning jismoniy nuqsoni borligini",
+    "C) Faqat o‘ng qo‘lda yozishini",
+    "D) Juda sekin harakat qilishini"
+   ],
+   "answer": "A) Har qanday ishni epchillik bilan qilishini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kapitan Gul va matroslar nimani ovlashda halok bo‘lishdi?",
+   "options": [
+    "A) Katta ola kitni",
+    "B) Suv otini",
+    "C) Yirtqich akulani",
+    "D) Yirtqich arslonni"
+   ],
+   "answer": "A) Katta ola kitni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kapitan Gul halok bo‘lgach, kemaga kim kapitan bo‘ldi?",
+   "options": [
+    "A) Dik Send",
+    "B) Negoro",
+    "C) Tom",
+    "D) Gerris"
+   ],
+   "answer": "A) Dik Send"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Negoro kompas strelkasini burish uchun nima qo‘ydi?",
+   "options": [
+    "A) Bir bo‘lak temir",
+    "B) Yog‘och bo‘lagi",
+    "C) Kichik tosh parchasi",
+    "D) Guruch tarozi toshi"
+   ],
+   "answer": "A) Bir bo‘lak temir"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sayohatchilar kemadan qayerda yerga tushishdi?",
+   "options": [
+    "A) Afrika qirg‘oqlarida",
+    "B) Amerika qirg‘oqlarida",
+    "C) Avstraliya orolida",
+    "D) Yangi Zelandiyada"
+   ],
+   "answer": "A) Afrika qirg‘oqlarida"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sayohatchilarga o‘rmonda kim duch keldi?",
+   "options": [
+    "A) O‘zini yo‘lboshchi ko‘rsatgan Gerris",
+    "B) Mahalliy kema kapitani",
+    "C) Yangi Zelandiyalik savdogar",
+    "D) Qutqaruvchi amerikalik askar"
+   ],
+   "answer": "A) O‘zini yo‘lboshchi ko‘rsatgan Gerris"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Negoro kompasni nega buzib to‘g‘ri yo‘ldan adashtirdi?",
+   "options": [
+    "A) Kemani Afrikaga olib borish uchun",
+    "B) Kemani Amerikaning o‘ziga yetkazish uchun",
+    "C) Kemani tezroq to‘xtatish uchun",
+    "D) Kompasni tasodifan buzib qo‘ygani uchun"
+   ],
+   "answer": "A) Kemani Afrikaga olib borish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dik Send nega darhol Negoroga qarshi ochiq urush ochmadi?",
+   "options": [
+    "A) Yo‘lovchilar xavfsizligini o‘ylagani uchun",
+    "B) Negorodan juda qo‘rqgani uchun",
+    "C) Negoroning niyatini bilmagani uchun",
+    "D) Unga baribir bo‘lgani uchun"
+   ],
+   "answer": "A) Yo‘lovchilar xavfsizligini o‘ylagani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dik Sendning o‘n besh yoshida kapitanlikni olishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, u yagona munosib dengizchi edi",
+    "B) Noto‘g‘ri, Negoroga topshirish kerak edi",
+    "C) Noto‘g‘ri, u juda yosh edi",
+    "D) Muhim emas edi"
+   ],
+   "answer": "A) To‘g‘ri, u yagona munosib dengizchi edi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif o‘rmondagi hasharotlar va tabiatni tasvirlash orqali nimani beradi?",
+   "options": [
+    "A) Sayohat muhiti va bilim beradi",
+    "B) Kitobni shunchaki uzaytiradi",
+    "C) Kitobxonni zeriktirish uchun yozadi",
+    "D) Voqeani chalkashtirish uchun yozadi"
+   ],
+   "answer": "A) Sayohat muhiti va bilim beradi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dik Sendning xavf oldidagi bosiqligi kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Hurmat va havas tuyg‘usini",
+    "B) Qo‘rquv va umidsizlik tuyg‘usini",
+    "C) Zerikish va loqaydlik tuyg‘usini",
+    "D) Nafrat va g‘azab tuyg‘usini"
+   ],
+   "answer": "A) Hurmat va havas tuyg‘usini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gerkules Benedikt tog‘ani qanday qutqarib oldi?",
+   "options": [
+    "A) Ko‘tarib o‘rmonga olib kirib ketdi",
+    "B) Quldorlarga pul to‘lab sotib oldi",
+    "C) Unga qurol berib qochirdi",
+    "D) Xonning ruxsati bilan olib ketdi"
+   ],
+   "answer": "A) Ko‘tarib o‘rmonga olib kirib ketdi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Benedikt oltioyoqlisi» aslida qanday jonivor edi?",
+   "options": [
+    "A) Ikki oyog‘i uzilgan o‘rgimchak",
+    "B) Noyob oltioyoqli qo‘ng‘iz",
+    "C) Zaharli qora chayon",
+    "D) Afrika kapalagi"
+   ],
+   "answer": "A) Ikki oyog‘i uzilgan o‘rgimchak"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sayohatchilar Afrikadan qaysi shahar orqali uyga qaytishdi?",
+   "options": [
+    "A) Boma shahri orqali",
+    "B) Oklend shahri orqali",
+    "C) Nyu-York shahri orqali",
+    "D) London shahri orqali"
+   ],
+   "answer": "A) Boma shahri orqali"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dik Send San-Fransiskoga qaytgach nima qildi?",
+   "options": [
+    "A) O‘qib, kapitan unvonini oldi",
+    "B) Kema oshpazi bo‘lib ishladi",
+    "C) Dengizchilikni butunlay tashladi",
+    "D) Afrikaga qaytib ketdi"
+   ],
+   "answer": "A) O‘qib, kapitan unvonini oldi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Do‘stlar San-Fransiskoga qaytgach, Tom va uning sheriklarini qanday qutqarishdi?",
+   "options": [
+    "A) Jems Ueldon ularni sotib oldi",
+    "B) Ular o‘zlari qochib kelishdi",
+    "C) Gerkules borib olib keldi",
+    "D) Ular topilmay qolishdi"
+   ],
+   "answer": "A) Jems Ueldon ularni sotib oldi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Voqealar ketma-ketligida qaysi voqea oxirida sodir bo‘ldi?",
+   "options": [
+    "A) Tom va sheriklarining uyga qaytishi",
+    "B) «Piligrim» kemasining g‘arq bo‘lishi",
+    "C) Gerrisning otga minib qochishi",
+    "D) Kazondeda yarmarka o‘tkazilishi"
+   ],
+   "answer": "A) Tom va sheriklarining uyga qaytishi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Benedikt tog‘a nega o‘rgimchakni noyob hasharot deb o‘yladi?",
+   "options": [
+    "A) Chalg‘ib, oyoqlarini noto‘g‘ri sanagani uchun",
+    "B) Uni ataylab aldashgani uchun",
+    "C) U tirik qo‘ng‘iz bo‘lgani uchun",
+    "D) Ko‘zoynagi yo‘qolgani uchun"
+   ],
+   "answer": "A) Chalg‘ib, oyoqlarini noto‘g‘ri sanagani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Gerkules do‘stlariga nega nihoyatda sadoqatli edi?",
+   "options": [
+    "A) Yaxshilik va mehrni qadrlagani uchun",
+    "B) Unga ko‘p pul va’da qilingani uchun",
+    "C) Boshqa boradigan joyi yo‘qligi uchun",
+    "D) Dik Senddan qo‘rqqani uchun"
+   ],
+   "answer": "A) Yaxshilik va mehrni qadrlagani uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jems Ueldonning Tom va do‘stlarini qutqargani haqida nima deysiz?",
+   "options": [
+    "A) Olijanob va mas’uliyatli harakat",
+    "B) Keraksiz xarajat qilgan",
+    "C) Majbur bo‘lgani uchun qilgan",
+    "D) Noto‘g‘ri qaror bergan"
+   ],
+   "answer": "A) Olijanob va mas’uliyatli harakat"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif romanda qul savdosini tasvirlab nimaga erishgan?",
+   "options": [
+    "A) Adolatsizlikka nisbatan nafrat uyg‘otgan",
+    "B) Sayohatni shunchaki qiziqarli qilgan",
+    "C) Quldorlarni maqtagan",
+    "D) Afrikani yomonlab ko‘rsatgan"
+   ],
+   "answer": "A) Adolatsizlikka nisbatan nafrat uyg‘otgan"
+  }
+ ]
+}

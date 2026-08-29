@@ -1,0 +1,287 @@
+{
+ "title": "Hovlidagi maydoncha",
+ "author": "Abdusaid Ko‘chimov",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "do‘stlik",
+   "oqibat",
+   "tarbiya",
+   "shafqatsizlik",
+   "mas'uliyat"
+  ],
+  "theme": "Befarqlik va faqat o‘zini o‘ylash tarbiyasi jamiyatda mehr-shafqatsizlik va beoqibatlikni keltirib chiqaradi.",
+  "summary": "Maydonchada o‘ynayotganda kichkina Kamol yiqilib jarohat oladi. Oybek unga yordam beradi, ammo Kamolning onasi surishtirmay Oybekni urib ketadi. Salim esa qochib qutulganini aytib, Oybekni pishiq bo‘lishga chaqiradi. Oybekning onasi ham o‘g‘liga birovning ishiga aralashmaslikni tayinlaydi. Keyingi safar «Oq terakmi, ko‘k terak» o‘yinida Omon hiyla bilan yiqitilganda va keyin Ahmad do‘pposlanganda, Oybek Salimning maslahatiga kirib, faqat tomoshabin bo‘lib turadi. Onasi uni maqtaydi. Qishda Turdi Oybekni chalib yiqitib do‘pposlayotganda, bitta ham bola uni ajratmaydi, hammasi kulib tomosha qiladi. Uyga paltosi yirtilib qaytgan Oybekdan bo‘lgan voqeani eshitgan ona bolalarning bunchalik beoqibat bo‘lib o‘sayotganidan alam va hayrat bilan yoqasini ushlaydi.",
+  "characters": "Oybek — bosh qahramon, ko‘ngilchan, lekin kattalar va tengdoshlari ta'sirida befarq bo‘lishga o‘rganayotgan bola; Salim — har qanday vaziyatda o‘z jonini o‘ylaydigan, pishiq va chaqqon bola; Turdi — sho‘xliklari bilan boshqalarga ozor beradigan bola; Kamolning onasi — jahldor va surishtirmasdan ayblaydigan ayol; Oybekning onasi — o‘g‘lini janjaldan asrash uchun «birov bilan ishing bo‘lmasin» deydigan, lekin oxirida beoqibatlikdan afsuslangan ona.",
+  "conclusion": "Asar bolalarga har qanday vaziyatda hamdard bo‘lish va kulfatda qolgan insonga tomoshabin bo‘lmaslik kerakligini o‘rgatadi. Ota-onalar esa «faqat o‘zingni o‘yla» degan tarbiya oxir-oqibat o‘z farzandiga ham beoqibatlik bo‘lib qaytishini anglab yetadilar.",
+  "difficulty": "oson",
+  "mood": "o‘ylantiruvchi, hazin",
+  "for_whom": "Tengdoshlar o‘rtasidagi munosabatlar, adolat, hamdardlik va to‘g‘ri xulq-atvor haqida o‘ylashni xohlaydigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hovuzcha devoridan oshmoqchi bo‘lgan kichkina bolaning ismi nima edi?",
+   "options": [
+    "A) Kamol",
+    "B) Turdi",
+    "C) Ahmad"
+   ],
+   "answer": "A) Kamol"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kamol ariqchaga yiqilganda uning qaysi a'zosidan qon oqdi?",
+   "options": [
+    "A) Qulog‘idan",
+    "B) Burnidan",
+    "C) Qo‘lidan"
+   ],
+   "answer": "B) Burnidan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Salim Kamolning onasini ko‘rgach nega tezda qochib ketdi?",
+   "options": [
+    "A) Urushishdan qo‘rqqani uchun",
+    "B) Uyiga shoshilgani uchun",
+    "C) O‘yin tugagani uchun"
+   ],
+   "answer": "A) Urushishdan qo‘rqqani uchun"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kamolning onasi yetib kelgach Oybekka nima qildi?",
+   "options": [
+    "A) Yuziga tarsaki urdi",
+    "B) Rahmat aytdi",
+    "C) Uydan shirinlik olib chiqdi"
+   ],
+   "answer": "A) Yuziga tarsaki urdi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kamol yiqilgach voqealar qanday ketma-ketlikda sodir bo‘ldi?",
+   "options": [
+    "A) Yordam berildi, ayol urdi",
+    "B) Qochib ketildi, keyin kelindi",
+    "C) O‘yin davom etdi"
+   ],
+   "answer": "A) Yordam berildi, ayol urdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Oybekning yiqilgan Kamolga yordam berishi to‘g‘ri ish edimi?",
+   "options": [
+    "A) To‘g‘ri, u mehr ko‘rsatdi",
+    "B) Noto‘g‘ri, qochishi kerak edi",
+    "C) Farqi yo‘q edi"
+   ],
+   "answer": "A) To‘g‘ri, u mehr ko‘rsatdi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Salimning \"kallani ishlatish kerak\" degani nimani ko‘rsatadi?",
+   "options": [
+    "A) Uning faqat o‘zini o‘ylashini",
+    "B) Uning juda bilimdonligini",
+    "C) Uning do‘stini sevishini"
+   ],
+   "answer": "A) Uning faqat o‘zini o‘ylashini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalar ikkinchi qismda qaysi o‘yinni o‘ynashayotgan edi?",
+   "options": [
+    "A) Oq terakmi, ko‘k terak",
+    "B) Bekinmachoq",
+    "C) Futbol"
+   ],
+   "answer": "A) Oq terakmi, ko‘k terak"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Omon kaltachani kimlar hiyla bilan yiqitishdi?",
+   "options": [
+    "A) Turdi va Ahmad",
+    "B) Oybek va Salim",
+    "C) Kamol va akasi"
+   ],
+   "answer": "A) Turdi va Ahmad"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Omon yiqilgandan keyin bolalar tartibda nima qilishdi?",
+   "options": [
+    "A) Oybek jerkidi, Ahmad tepdi",
+    "B) Hamma qochib ketdi",
+    "C) Salim Omonni turg‘izdi"
+   ],
+   "answer": "A) Oybek jerkidi, Ahmad tepdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ahmad nega Turdining orqasiga tepib yiqitdi?",
+   "options": [
+    "A) Qo‘lini qo‘yib yuborgani uchun",
+    "B) O‘yinda yutqazgani uchun",
+    "C) Urishishni yaxshi ko‘rgani uchun"
+   ],
+   "answer": "A) Qo‘lini qo‘yib yuborgani uchun"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Turdining akasi Ahmadni urayotganda Oybek nima qildi?",
+   "options": [
+    "A) Jim tomosha qildi",
+    "B) Ahmadga yordam berdi",
+    "C) Akasini urib yubordi"
+   ],
+   "answer": "A) Jim tomosha qildi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oybek onasiga nega \"tekin tomosha ko‘rdim\" deb aytdi?",
+   "options": [
+    "A) Onasi maqtashini bilgani uchun",
+    "B) Chindan xursand bo‘lgani uchun",
+    "C) Kaltak yegani uchun"
+   ],
+   "answer": "A) Onasi maqtashini bilgani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Onaning \"o‘zingdan boshqa bilan ishing bo‘lmasin\" degani to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, befarqlikni o‘rgatadi",
+    "B) To‘g‘ri, tinch yashaydi",
+    "C) Ajoyib maslahat"
+   ],
+   "answer": "A) Noto‘g‘ri, befarqlikni o‘rgatadi"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qishda bolalar hovuzchada nima qilishayotgan edi?",
+   "options": [
+    "A) Muzda yaxmalak uchishayotgan edi",
+    "B) Qorbo‘ron o‘ynashayotgan edi",
+    "C) Konki uchishayotgan edi"
+   ],
+   "answer": "A) Muzda yaxmalak uchishayotgan edi"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Turdi Oybekni yiqitgach voqea qanday davom etdi?",
+   "options": [
+    "A) Oybek yutqazdi, bolalar kulishdi",
+    "B) Oybek Turdini urib yutdi",
+    "C) Bolalar ularni ajratishdi"
+   ],
+   "answer": "A) Oybek yutqazdi, bolalar kulishdi"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oybek Turdining tagida yotganida nega xo‘rligi keldi?",
+   "options": [
+    "A) Hech kim ajratmagani uchun",
+    "B) Qor sovuq bo‘lgani uchun",
+    "C) Uyi uzoq bo‘lgani uchun"
+   ],
+   "answer": "A) Hech kim ajratmagani uchun"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oybek uyiga qaytganda onasi nimasi yirtilganini ko‘rdi?",
+   "options": [
+    "A) Paltosi",
+    "B) Sholchasi",
+    "C) Poyabzali"
+   ],
+   "answer": "A) Paltosi"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oybekning onasi oxirida nega yoqasini ushlab qoldi?",
+   "options": [
+    "A) Bolalar beoqibatligini tushungani uchun",
+    "B) Paltosi yirtilgani uchun",
+    "C) Turdidan qo‘rqqani uchun"
+   ],
+   "answer": "A) Bolalar beoqibatligini tushungani uchun"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif onaning oxirgi hayratida nimaga urg‘u bergan?",
+   "options": [
+    "A) Befarqlikning yomon oqibatlariga",
+    "B) Qishning sovuqligiga",
+    "C) Bolalarning o‘yinlariga"
+   ],
+   "answer": "A) Befarqlikning yomon oqibatlariga"
+  }
+ ]
+}

@@ -1,0 +1,417 @@
+{
+ "title": "Stiv Jobs",
+ "author": "Navro‘z Ergash o‘g‘li",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "texnologiya",
+   "biznes",
+   "shaxsiy rivojlanish",
+   "innovatsiya",
+   "mehnatsevarlik"
+  ],
+  "theme": "Buyuk texnologik inqilob san‘at va aniq fanlar tutashuvida yaratiladi; mehad, intilish va o‘zgacha fikrlash orqali dunyoni o‘zgartirish mumkin.",
+  "summary": "Kitob kompyuter dahosi Stiv Jobsning hayot yo‘li haqida hikoya qiladi. Pol va Klara Jobslar tomonidan asrab olingan Stiv bolaligidanoq elektronikaga qiziqadi. U Stiv Voznyak bilan birgalikda Apple kompaniyasiga asos soladi va shaxsiy kompyuterlar inqilobini boshlaydi. Macintosh kompyuterini yaratgach, rahbariyat bilan nizo sabab Apple'dan haydaladi. Shundan so‘ng NeXT va Pixar kompaniyalarini yo‘lga qo‘yadi. Yillar o‘tib Apple'ga qaytgan Jobs kompaniyani inqirozdan qutqarib, iPod, iPhone, iPad kabi inqilobiy qurilmalarni yaratadi. Hayotining oxirgi yillarida og‘ir xastalik bilan kurashib, dunyoda o‘chmas iz qoldiradi.",
+  "characters": "Stiv Jobs — Apple kompaniyasi asoschisi, daho va perfeksionist novator; Stiv Voznyak — kompyuter dahosi, Jobsning ilk hamkori; Pol va Klara Jobs — Stivni asrab olib o‘stirishgan fidoiy ota-ona; Jon Skalli — Apple'ning sobiq rahbari; Loren Pauell — Stivning rafiqasi va suyanchi.",
+  "conclusion": "Kitob kitobxonga matonat, mukammallikka intilish va o‘z g‘oyalariga sodiqlik sabog‘ini beradi. Bola san‘at va texnologiyani birlashtirish, xatolardan saboq chiqarib qayta oyoqqa turish hamda har qanday qiyinchilikda ham ijod qilish va o‘zgacha fikrlash muhimligini tushunib yetadi.",
+  "difficulty": "qiyin",
+  "mood": "o‘ylantiruvchi, ilhomlantiruvchi",
+  "for_whom": "Texnologiyalarga, zamonaviy biznesga va muvaffaqiyat tarixiga qiziqadigan, buyuk maqsadlar sari intiladigan o‘smirlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Stiv Jobsni asrab olgan otasi Pol qaysi sohada ishlagan?",
+   "options": [
+    "A) Shifokor",
+    "B) Mexanik",
+    "C) O‘qituvchi"
+   ],
+   "answer": "B) Mexanik"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Stiv Jobsning biologik otasi qaysi mamlakatda tug‘ilgan?",
+   "options": [
+    "A) Germaniyada",
+    "B) Turkiyada",
+    "C) Suriyada"
+   ],
+   "answer": "C) Suriyada"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Stiv Jobs va Voznyak birgalikda yasagan ilk qurilma nima edi?",
+   "options": [
+    "A) Ko‘k quticha",
+    "B) Qizil radio",
+    "C) Sariq kompyuter"
+   ],
+   "answer": "A) Ko‘k quticha"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Stiv Jobsning maktab davridagi ilk sevgilisi kim edi?",
+   "options": [
+    "A) Joan Baez",
+    "B) Krisenn Brennan",
+    "C) Loren Pauell"
+   ],
+   "answer": "B) Krisenn Brennan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jobs va Voznyak hamkorligida vazifalar qanday taqsimlangan edi?",
+   "options": [
+    "A) Voznyak kashf etardi, Jobs sotardi",
+    "B) Jobs dasturlardi, Voznyak sotardi",
+    "C) Ikkovi ham faqat dizayn qilardi"
+   ],
+   "answer": "A) Voznyak kashf etardi, Jobs sotardi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Biologik onasi Joan nega avval Jobslarga hujjat imzolamagan?",
+   "options": [
+    "A) Ularning oliy ma‘lumoti yo‘qligi uchun",
+    "B) Shaharni tark etgani uchun",
+    "C) Boshqa bola xohlagani uchun"
+   ],
+   "answer": "A) Ularning oliy ma‘lumoti yo‘qligi uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jobs Ko‘k qutilar tajribasini nega muhim deb hisoblagan?",
+   "options": [
+    "A) Ko‘p pul keltirgani uchun",
+    "B) Birgalikda ishlashni o‘rgatgani uchun",
+    "C) Maktabdan haydalmaslik uchun"
+   ],
+   "answer": "B) Birgalikda ishlashni o‘rgatgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jobslar oilasining kollej uchun pul yig‘ish va‘dasi to‘g‘rimi?",
+   "options": [
+    "A) Ha, mas‘uliyatli ota-onalik burchi",
+    "B) Yo‘q, bu ortiqcha harakat edi",
+    "C) Faqat aldash uchun aytilgan"
+   ],
+   "answer": "A) Ha, mas‘uliyatli ota-onalik burchi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Pol Jobsning Klara bilan uchrashuvini qanday tasvirlaydi?",
+   "options": [
+    "A) Garovda yutib olingan baxt",
+    "B) Urushdagi og‘ir fojia",
+    "C) Tasodifiy yo‘qotish"
+   ],
+   "answer": "A) Garovda yutib olingan baxt"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Och bo‘l. Ahmoq bo‘l» iborasi asarda qanday tuyg‘u beradi?",
+   "options": [
+    "A) Ilmga va izlanishga ishtiyoq",
+    "B) Tushkunlik va umidsizlik",
+    "C) Qo‘rquv va xavotir"
+   ],
+   "answer": "A) Ilmga va izlanishga ishtiyoq"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Macintosh jamoasi joylashgan bino qanday nomlangan edi?",
+   "options": [
+    "A) Kremniy saroyi",
+    "B) Texaco minoralari",
+    "C) Oltin darvoza"
+   ],
+   "answer": "B) Texaco minoralari"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "1983-yilda Jobs Pepsi rahbarlaridan kimni Apple'ga taklif qildi?",
+   "options": [
+    "A) Jon Skalli",
+    "B) Bill Geyts",
+    "C) Tim Kuk"
+   ],
+   "answer": "A) Jon Skalli"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Stiv Jobs Apple'dan ketgach qaysi kompaniyaga asos soldi?",
+   "options": [
+    "A) Pixar",
+    "B) NeXT",
+    "C) Microsoft"
+   ],
+   "answer": "B) NeXT"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jobsning biologik singlisi Mona Simpson qaysi kasb egasi edi?",
+   "options": [
+    "A) Shifokor",
+    "B) Yozuvchi",
+    "C) Muhandis"
+   ],
+   "answer": "B) Yozuvchi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Stiv Jobs va Bill Geyts qarashlaridagi asosiy farq nima edi?",
+   "options": [
+    "A) Jobs perfeksionist edi, Geyts litsenziyalardi",
+    "B) Jobs dasturchi edi, Geyts dizayner",
+    "C) Ikkalasi ham bir xil fikrlardi"
+   ],
+   "answer": "A) Jobs perfeksionist edi, Geyts litsenziyalardi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jobs biologik onasi Joan bilan uchrashish uchun nima qildi?",
+   "options": [
+    "A) Klaraning vafotidan keyin qo‘ng‘iroq qildi",
+    "B) Bolaligidayoq uyidan qochib ketdi",
+    "C) Gazetaga e‘lon berib kutdi"
+   ],
+   "answer": "A) Klaraning vafotidan keyin qo‘ng‘iroq qildi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mac jamoasi kompyuter nomini Velosiped deyishga nega qarshi bo‘ldi?",
+   "options": [
+    "A) Nom o‘ta ahmoqona tuyulgani uchun",
+    "B) Ularga velosipedlar yoqmagani uchun",
+    "C) Pul yetarli bo‘lmagani uchun"
+   ],
+   "answer": "A) Nom o‘ta ahmoqona tuyulgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jobs NeXT zavodini nega mutlaqo oq rangga bo‘yatdi?",
+   "options": [
+    "A) Mukammallik va tozalik estetikasi uchun",
+    "B) Bo‘yoq arzon bo‘lgani uchun",
+    "C) Ishchilar so‘ragani uchun"
+   ],
+   "answer": "A) Mukammallik va tozalik estetikasi uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mac jamoasining qaroqchilar bayrog‘ini ko‘tarishi to‘g‘ri harakatmidi?",
+   "options": [
+    "A) Ha, bu isyonkor ruh berdi",
+    "B) Yo‘q, bu jinoyat edi",
+    "C) Faqat bayram uchun qilingandi"
+   ],
+   "answer": "A) Ha, bu isyonkor ruh berdi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Jobs va Skalli o‘rtasidagi janjalni qanday tasvirlaydi?",
+   "options": [
+    "A) Shiddatli va fojiali qarama-qarshilik",
+    "B) Kulgili va yengil suhbat",
+    "C) Oddiy ishchi uchrashuv"
+   ],
+   "answer": "A) Shiddatli va fojiali qarama-qarshilik"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jobs Apple'ga qaytgach mahsulotlarni nechta katakka bo‘ldi?",
+   "options": [
+    "A) 4 ta katakka",
+    "B) 10 ta katakka",
+    "C) 2 ta katakka"
+   ],
+   "answer": "A) 4 ta katakka"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jobs iPod uchun qaysi mashhur musiqa guruhi bilan hamkorlik qildi?",
+   "options": [
+    "A) U2",
+    "B) Queen",
+    "C) Coldplay"
+   ],
+   "answer": "A) U2"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jobs saratonga chalinsada avvaliga qanday davolanmoqchi bo‘ldi?",
+   "options": [
+    "A) Parhez va muqobil vositalar bilan",
+    "B) Zudlik bilan operatsiya qildirib",
+    "C) Faqat chet elda davolanib"
+   ],
+   "answer": "A) Parhez va muqobil vositalar bilan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Apple'ning yangi bino dizaynini kim tayyorlagan?",
+   "options": [
+    "A) Norman Foster",
+    "B) Joni Ayv",
+    "C) Edvin Lend"
+   ],
+   "answer": "A) Norman Foster"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jobs nazariyasiga ko‘ra kompaniyalar inqiroziga nima sabab bo‘ladi?",
+   "options": [
+    "A) Rahbarlikka sotuvchilar kelib qolishi",
+    "B) Dasturchilar ko‘payib ketishi",
+    "C) Reklama kamayishi"
+   ],
+   "answer": "A) Rahbarlikka sotuvchilar kelib qolishi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jobs nega bozor tadqiqotlariga hech qachon tayanmagan?",
+   "options": [
+    "A) Xaridor yangi narsani ko‘rmaguncha bilmaydi",
+    "B) Pulni tejashni xohlagani uchun",
+    "C) Tadqiqotchilar yolg‘on gapirgani uchun"
+   ],
+   "answer": "A) Xaridor yangi narsani ko‘rmaguncha bilmaydi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jobs nega Apple qurilmalarida o‘chirish tugmasini yoqtirmasdi?",
+   "options": [
+    "A) O‘lim va yo‘qolishni eslatgani uchun",
+    "B) Tokni ko‘p sarflagani uchun",
+    "C) Tugma joyi qolmagani uchun"
+   ],
+   "answer": "A) O‘lim va yo‘qolishni eslatgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jobsning xodimlarga tik va ro‘y-rost gapirishi to‘g‘rimi?",
+   "options": [
+    "A) Ha, yuqori sifat va natija uchun",
+    "B) Yo‘q, bu faqat odamlarni kamsitgan",
+    "C) Bu uning kuchsizligi edi"
+   ],
+   "answer": "A) Ha, yuqori sifat va natija uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jobsning gumanitar va texnik fanlarni birlashtirishi qanday baholanadi?",
+   "options": [
+    "A) Buyuk va innovatsion yondashuv",
+    "B) Noto‘g‘ri va xatoga boy yo‘l",
+    "C) Faqat marketing usuli"
+   ],
+   "answer": "A) Buyuk va innovatsion yondashuv"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Jobsning tarixdagi o‘rnini kimlar bilan tenglashtiradi?",
+   "options": [
+    "A) Edison va Genri Ford bilan",
+    "B) Faqat siyosatchilar bilan",
+    "C) Qadimgi shoirlar bilan"
+   ],
+   "answer": "A) Edison va Genri Ford bilan"
+  }
+ ]
+}

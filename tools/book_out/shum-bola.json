@@ -1,0 +1,448 @@
+{
+ "title": "Shum bola",
+ "author": "G‘afur G‘ulom",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14 yosh",
+  "topics": [
+   "sarguzasht",
+   "oila",
+   "tarix",
+   "halollik",
+   "mehnat",
+   "odob-axloq"
+  ],
+  "theme": "Qiyinchilik va mashaqqatlarda ham insoniy tuyg‘ularni yo‘qotmaslik hamda oila va ota-ona qadrini anglab yetish.",
+  "summary": "Shum bola sho‘xligi sabab uyidan chiqib ketadi va do‘sti Omon bilan turli sarguzashtlarni boshdan kechiradi. Ular bozorlarda sang‘ib, turli kasb egalari va odamlar bilan uchrashadilar. Shum bola qalandarlarga qo‘shiladi, eshon xonadonida xizmat qiladi, o‘lik yuvish hangomasiga duch keladi hamda takyada Hoji boboga qarashadi. Boshidan kechirgan turli-tuman sarguzashtlar va mashaqqatlardan so‘ng, u hayot saboqlarini anglab, oilasi hamda halol mehnatning qadriga yeta boshlaydi.",
+  "characters": "Shum bola — bosh qahramon, sho‘x va uddaburon bola; Omon — uning sodda va vafodor do‘sti; Hoji bobo — takya egasi, giyohvand chol; Hasanboy domla — Shum bolaning ilk ustoz-muallimi.",
+  "conclusion": "Asar bolalarga har qanday vaziyatda ham halol va to‘g‘ri yo‘lni tanlash zarurligini o‘rgatadi. Ota-ona va oilaning muqaddasligini hamda uydan yiroqdagilik qanchalik og‘ir ekanini anglatadi.",
+  "difficulty": "o‘rta",
+  "mood": "kulgili, sarguzashtli, o‘ylantiruvchi",
+  "for_whom": "Sarguzashtli voqealarni va milliy o‘zbek hayot tarzini o‘rganishga qiziqadigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ilhom samovarchining choyxonasida shiftga nima osib qo‘yilgan edi?",
+   "options": [
+    "A) Zarhallangan to‘ti qafasi",
+    "B) Katta qizil fonus",
+    "C) Qadimgi grammofon",
+    "D) Quritilgan qovunlar"
+   ],
+   "answer": "A) Zarhallangan to‘ti qafasi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shum bola boshlang‘ich saboqni qaysi domlada o‘rgangan edi?",
+   "options": [
+    "A) Shamsi domlada",
+    "B) Hasanboy domlada",
+    "C) Olim domlada",
+    "D) Ziyod domlada"
+   ],
+   "answer": "B) Hasanboy domlada"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shum bola xalfana uchun uyidan nima o‘g‘irlab chiqdi?",
+   "options": [
+    "A) Yog‘ va tuxum",
+    "B) Guruch va sabzi",
+    "C) Go‘sht va tuz",
+    "D) Qand va choy"
+   ],
+   "answer": "A) Yog‘ va tuxum"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ammasining uyidan qochganda Shum bola nimani olib ketdi?",
+   "options": [
+    "A) Bir juft qumrini",
+    "B) Ov tozisini",
+    "C) Buxoro baroq mushugini",
+    "D) Dakang xo‘rozni"
+   ],
+   "answer": "A) Bir juft qumrini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shum bola qumri evaziga olingan buyumlar ichida nima yo‘q edi?",
+   "options": [
+    "A) G‘alvir gardishi",
+    "B) Yog‘och beshikcha",
+    "C) Katta chinni lagan",
+    "D) Chirmandacha"
+   ],
+   "answer": "C) Katta chinni lagan"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shum bola qushlarga nega zo‘rlab qatiq ichira boshladi?",
+   "options": [
+    "A) Qushlar o‘zi yemagani uchun",
+    "B) Pochchasi buyurgani uchun",
+    "C) Qatiqni yoqdirish uchun",
+    "D) Qushlar juda ko‘paygani uchun"
+   ],
+   "answer": "A) Qushlar o‘zi yemagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shum bola onasining oldidan nega qochib ketdi?",
+   "options": [
+    "A) Uyatsizligi oshkor bo‘lgani uchun",
+    "B) Mol sotgani borish uchun",
+    "C) Omon uni chaqirgani uchun",
+    "D) Ko‘chada o‘ynamoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Uyatsizligi oshkor bo‘lgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ammasining qushlariga bilmasdan qatiq berishning oqibati qanday bo‘ldi?",
+   "options": [
+    "A) Qushlar halok bo‘ldi",
+    "B) Qushlar tez ko‘paydi",
+    "C) Qushlar yaxshi sayradi",
+    "D) Pochchasi xursand bo‘ldi"
+   ],
+   "answer": "A) Qushlar halok bo‘ldi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif daydi bolalarning o‘yindagi quvonchini qanday aks ettirgan?",
+   "options": [
+    "A) Samimiy va kulgili tarzda",
+    "B) G‘amgin va qayg‘uli tilda",
+    "C) Jiddiy va qo‘rqinchli qilib",
+    "D) Zerikarli bayon bilan"
+   ],
+   "answer": "A) Samimiy va kulgili tarzda"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "To‘tining gapirishini uch yashar qizcha ovoziga o‘xshatish nimani beradi?",
+   "options": [
+    "A) Tasvirni jonli ko‘rsatadi",
+    "B) Bozor shovqinini kamaytiradi",
+    "C) To‘ti qariganini anglatadi",
+    "D) Grammofon ovozini o‘chiradi"
+   ],
+   "answer": "A) Tasvirni jonli ko‘rsatadi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ko‘kterak bozorida Shum bola kimga duch keldi?",
+   "options": [
+    "A) Do‘sti Omonga",
+    "B) Hasanboy domlaga",
+    "C) Toshkentlik qo‘shnisiga",
+    "D) Ammasining eriga"
+   ],
+   "answer": "A) Do‘sti Omonga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sulton o‘g‘ri va domla bilan birga qanday ichimlik ichishdi?",
+   "options": [
+    "A) Bo‘za",
+    "B) Achchiq choy",
+    "C) Sharbat",
+    "D) Qatiq"
+   ],
+   "answer": "A) Bo‘za"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Domla va bolalar kimning murdasini yuvishga kelishishgan edi?",
+   "options": [
+    "A) Qishloqdagi o‘likni",
+    "B) Sulton o‘g‘rini",
+    "C) Bozor kassa furushini",
+    "D) Qalandarlar boshlig‘ini"
+   ],
+   "answer": "A) Qishloqdagi o‘likni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eshon Shum bolaga nima olib kelishni buyurdi?",
+   "options": [
+    "A) Eshak",
+    "B) Qo‘y",
+    "C) Ot",
+    "D) Tovuq"
+   ],
+   "answer": "A) Eshak"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Boy Shum boladan so‘raganda, birinchi bo‘lib nima sindi dedi?",
+   "options": [
+    "A) Dandon sopli pichoq",
+    "B) Arava g‘ildiragi",
+    "C) Katta yog‘och xurmacha",
+    "D) Somonxona eshigi"
+   ],
+   "answer": "A) Dandon sopli pichoq"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Boyning uyida ketma-ket sodir bo‘ldi deyilgan yolg‘onlar tartibi qanday?",
+   "options": [
+    "A) Pichoq, tozi, ot, og‘ilxona",
+    "B) Og‘ilxona, ot, tozi, pichoq",
+    "C) Ot, pichoq, og‘ilxona, tozi",
+    "D) Tozi, og‘ilxona, pichoq, ot"
+   ],
+   "answer": "A) Pichoq, tozi, ot, og‘ilxona"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hujradagi o‘lik tirilganda bolalar nega dahshatga tushdi?",
+   "options": [
+    "A) Kutmagan va qo‘rqinchli bo‘lgani uchun",
+    "B) O‘lik ularni so‘kkani uchun",
+    "C) Domla qochib ketgani uchun",
+    "D) Pulni bermagani uchun"
+   ],
+   "answer": "A) Kutmagan va qo‘rqinchli bo‘lgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shum bola boyga nega ketma-ket alal-oqibat yolg‘on gapirdi?",
+   "options": [
+    "A) Boyning 'innaykeyin' savolidan qutulish uchun",
+    "B) Boydan pul undirish uchun",
+    "C) Otni sotib yuborgani uchun",
+    "D) Omonni qutqarib qolish uchun"
+   ],
+   "answer": "A) Boyning 'innaykeyin' savolidan qutulish uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "O‘lik yuvish voqeasida domlaning harakati qanday baholanadi?",
+   "options": [
+    "A) Qo‘rqoq va mas'uliyatsiz",
+    "B) Jasur va mehnatkash",
+    "C) Aqlli va tadbirkor",
+    "D) Saxiy va mehribon"
+   ],
+   "answer": "A) Qo‘rqoq va mas'uliyatsiz"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shum bolaning boyga qilgan yolg‘on hangomasi nimani ko‘rsatadi?",
+   "options": [
+    "A) Uning topqir va hozirjavobligini",
+    "B) Uning juda yovuzligini",
+    "C) Boyning o‘ta aqlliligini",
+    "D) Mehnatni yaxshi ko‘rishini"
+   ],
+   "answer": "A) Uning topqir va hozirjavobligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shum bola qaysi kasb egalari oldida anor yegani uchun haydaldi?",
+   "options": [
+    "A) Karnaychi va surnaychilar",
+    "B) Dorboz va polvonlar",
+    "C) Novvoy va qassoblar",
+    "D) Masxaraboz hamda raqqosalar"
+   ],
+   "answer": "A) Karnaychi va surnaychilar"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shum bola Hoji boboga qanday xat yozib berdi?",
+   "options": [
+    "A) Qorxat",
+    "B) Taloqxat",
+    "C) Qarzxat",
+    "D) Maktubxat"
+   ],
+   "answer": "A) Qorxat"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Takyada kulga ko‘milgan shisha nima sababdan portladi?",
+   "options": [
+    "A) Ichidagi suv qaynaganidan",
+    "B) Unga porox solinganidan",
+    "C) Hoji bobo tepganidan",
+    "D) Tashqaridan otilganidan"
+   ],
+   "answer": "A) Ichidagi suv qaynaganidan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hindi sarrof Shum bolaga xizmati evaziga nima sovg‘a qildi?",
+   "options": [
+    "A) Hindcha keng to‘n",
+    "B) Buxoro nosqovog‘i",
+    "C) Oltin soat",
+    "D) Paxtalik guppi"
+   ],
+   "answer": "A) Hindcha keng to‘n"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shum bola takyada yig‘gan pullarini qayeriga yashirib tikib oldi?",
+   "options": [
+    "A) To‘nining yoqasiga",
+    "B) Qalpoqning ichiga",
+    "C) Etigining tagiga",
+    "D) Belbog‘ining burchagiga"
+   ],
+   "answer": "A) To‘nining yoqasiga"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Surnaychilar anor yeyayotgan bolani nega davradan haydashdi?",
+   "options": [
+    "A) Og‘zidan so‘lak kelib puflayolmagani uchun",
+    "B) Anorning po‘stini tashlagani uchun",
+    "C) Puli yo‘qligi uchun",
+    "D) Shovqin solgani uchun"
+   ],
+   "answer": "A) Og‘zidan so‘lak kelib puflayolmagani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shum bola takyadan ketayotganda ko‘nglida nima tuyg‘uni his qildi?",
+   "options": [
+    "A) Pok va qushdek yengillik",
+    "B) Chuqur alam va nafrat",
+    "C) Qo‘rquv va sarimsoqlik",
+    "D) Xafalik va umidsizlik"
+   ],
+   "answer": "A) Pok va qushdek yengillik"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Hoji boboning takyadagi hayot tarzi qanday baholanadi?",
+   "options": [
+    "A) Giyohvand va behuda umr",
+    "B) Halol va ibodatli hayot",
+    "C) Saxovatli va fidoyilik",
+    "D) Namunali va bilimdonlik"
+   ],
+   "answer": "A) Giyohvand va behuda umr"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Shum bolaning Hoji boboga yozgan qorxati asarga qanday ruh bag‘ishlaydi?",
+   "options": [
+    "A) Kulgili va xalqona uslub",
+    "B) G‘amgin va fojiali kayfiyat",
+    "C) Rasmiy va quruq bayon",
+    "D) Vahimali va qo‘rqinchli tus"
+   ],
+   "answer": "A) Kulgili va xalqona uslub"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida Shum bolaning uyni va erkinlikni anglashi nimani anglatadi?",
+   "options": [
+    "A) Hayotiy tajriba va ulg‘ayishni",
+    "B) Sarguzashtlarning tugaganini",
+    "C) Shaharning zerikarli bo‘lganini",
+    "D) Do‘stlarining yo‘qolganini"
+   ],
+   "answer": "A) Hayotiy tajriba va ulg‘ayishni"
+  }
+ ]
+}

@@ -1,0 +1,286 @@
+{
+ "title": "Chink",
+ "author": "Ernest Seton-Tompson",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "sadoqat",
+   "jasorat",
+   "mas'uliyat",
+   "hayvonlar va tabiat"
+  ],
+  "theme": "Topshirilgan vazifaga sadoqat va mas'uliyat eng oliy fazilatdir; kichik va tajribasiz bo‘lishga qaramay, burchini bajarish haqiqiy mardlikdir.",
+  "summary": "Bill Obri ismli keksa tog‘likning Chink atalmish tajribasiz, sho‘x va go‘l kuchugi bor edi. Chink Yellouston milliy bog‘ida yumronqoziq va boshqa hayvonlarni quvib, turli ko‘ngilsizliklarga uchraydi. Bog‘da yashovchi ayyor va surbet shoqol Chinkni doim qiynab, ta'qib qiladi. Bir kuni Bill mast bo‘lib, qovoqxonaga ketayotib, Chinkka chodir va buyumlarni qo‘riqlashni topshiradi. Chink och bo‘lishiga va qopda go‘sht bo‘lishiga qaramay, xo‘jayinining topshirig‘iga sadoqat saqlaydi. Surbet shoqol chodirga bostirib kirmoqchi bo‘lganda, Chink matonat bilan to‘rt kecha-yu to‘rt kunduz postini qo‘riqlaydi. Beshinchi kuni hushyor tortib qaytgan Bill Obri kuchugining bu mardligini ko‘rib, ko‘ziga yosh oladi. U bog‘ qonunlarini buzib bo‘lsa ham, miltiq muhrini buzib shoqolni otib tashlaydi va sodiq do‘sti Chinkni balodan qutqaradi.",
+  "characters": "Chink — sodiq, sho‘x, tajribasiz, lekin mas'uliyatli va botir kuchuk. Bill Obri — Chinkning egasi, keksa va piyonista tog‘lik odam. Shoqol — Yellouston bog‘ida yashovchi ayyor, surbet va bezori yirtqich.",
+  "conclusion": "Asar bolaga va'daga vafo qilish, topshirilgan ishga mas'uliyat bilan yondashish va sadoqatni o‘rgatadi. Bola har qanday qiyinchilikda ham burchga sodiq qolish haqiqiy mardlik ekanini anglaydi. Shuningdek, kattalarning o‘z harakati va hayvonlarga bo‘lgan mas'uliyati haqida o‘ylashga undaydi.",
+  "difficulty": "o‘rta",
+  "mood": "hayajonli, ta'sirli",
+  "for_whom": "Hayvonlar hayoti, ularning sadoqati va qiziqarli sarguzashtlari haqida o‘qishni yaxshi ko‘radigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chinkning egasi Bill Obri qayerda yashaydi?",
+   "options": [
+    "A) Yellouston milliy bog‘ida",
+    "B) Katta shahar markazida",
+    "C) Daryo bo‘yidagi qishloqda"
+   ],
+   "answer": "A) Yellouston milliy bog‘ida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chink qaysi hayvonni ovlashni juda xohlardi?",
+   "options": [
+    "A) Yumronqoziqni",
+    "B) O‘rmon ayig‘ini",
+    "C) Yovvoyi quyonni"
+   ],
+   "answer": "A) Yumronqoziqni"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Chink yumronqoziq o‘rniga nimani tishlab oldi?",
+   "options": [
+    "A) Yog‘och qoziqchani",
+    "B) Katta toshni",
+    "C) Daraxt shohini"
+   ],
+   "answer": "A) Yog‘och qoziqchani"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Chink yog‘och qoziqni tishlab olgach, nega yashirindi?",
+   "options": [
+    "A) Ahmoq bo‘lib qolganidan uyaldi",
+    "B) Xo‘jayinidan qattiq qo‘rqdi",
+    "C) Uyqusi kelib qolgani uchun"
+   ],
+   "answer": "A) Ahmoq bo‘lib qolganidan uyaldi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yumronqoziq Chinkdan qochib, uning og‘ziga nima sepdi?",
+   "options": [
+    "A) Bir hovuch qum",
+    "B) Kichkina toshlar",
+    "C) Quruq o‘tlar"
+   ],
+   "answer": "A) Bir hovuch qum"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Chinkning omadsizliklarga qaramay harakat qilishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Qaysar va g‘ayratliligini",
+    "B) Qo‘rqoq va dangasaligini",
+    "C) Yovuz va jahldorligini"
+   ],
+   "answer": "A) Qaysar va g‘ayratliligini"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Chinkni «go‘l itlar toifasiga kiradi» deb nimani tasvirlagan?",
+   "options": [
+    "A) Uning soddaligi va beozorligini",
+    "B) Uning juda aqlliligini",
+    "C) Uning yovvoyi xarakterini"
+   ],
+   "answer": "A) Uning soddaligi va beozorligini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shoqol nega bog‘da o‘zini erkin tutardi?",
+   "options": [
+    "A) Ov qilish man etilgani uchun",
+    "B) Odamlardan umuman qo‘rqmagani uchun",
+    "C) Chink bilan do‘st bo‘lgani uchun"
+   ],
+   "answer": "A) Ov qilish man etilgani uchun"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Odamlar Chinkka hazillashib nima deyishdi?",
+   "options": [
+    "A) Shoqolni haydab kel",
+    "B) Chodirni buzib tashla",
+    "C) Ovqatni o‘rmonga olib bor"
+   ],
+   "answer": "A) Shoqolni haydab kel"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bill Obri lagerini nega boshqa joyga ko‘chirdi?",
+   "options": [
+    "A) Bamaylixotir aroq ichish uchun",
+    "B) Yangi uy qurish uchun",
+    "C) Shoqoldan qochish uchun"
+   ],
+   "answer": "A) Bamaylixotir aroq ichish uchun"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shoqol Chinkka hujum qilganda nima ro‘y berdi?",
+   "options": [
+    "A) Chink yig‘lab lagerga qochdi",
+    "B) Shoqol qo‘rqib qochib ketdi",
+    "C) Bill shoqolni urib haydadi"
+   ],
+   "answer": "A) Chink yig‘lab lagerga qochdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bill ketayotib Chinkka qanday topshiriq berdi?",
+   "options": [
+    "A) Chodirni qo‘riqlab o‘tirishni",
+    "B) Shoqolni ovlab kelishni",
+    "C) O‘rmondan oziq-ovqat topishni"
+   ],
+   "answer": "A) Chodirni qo‘riqlab o‘tirishni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoqol nega aynan Chinkni qiynashga tushdi?",
+   "options": [
+    "A) Uning ojizligini bilgani uchun",
+    "B) U bilan o‘ynashni xohlagani uchun",
+    "C) Billdan o‘ch olmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Uning ojizligini bilgani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Shoqolning «iblisona ishshayib turishi» tasviri qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Yirtqichning surbetligi va ayyorligini",
+    "B) Shoqolning mehribon va quvnoqligini",
+    "C) Hayvonning juda qo‘rquvda ekanini"
+   ],
+   "answer": "A) Yirtqichning surbetligi va ayyorligini"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chink chodirda och qolib ham nimaga tegishmadi?",
+   "options": [
+    "A) Qopdagi to‘sh go‘shtga",
+    "B) Idishdagi toza suvga",
+    "C) Xo‘jayinning eski poyabzaliga"
+   ],
+   "answer": "A) Qopdagi to‘sh go‘shtga"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chink chodirni necha kun davomida qo‘riqladi?",
+   "options": [
+    "A) To‘rt kecha va to‘rt kunduz",
+    "B) Bir kun va bir kecha",
+    "C) Bir hafta davomida"
+   ],
+   "answer": "A) To‘rt kecha va to‘rt kunduz"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bill Obri qaytib kelgach, miltig‘i bilan nima qildi?",
+   "options": [
+    "A) Shoqolni otib tashladi",
+    "B) Osmonga qarata o‘q uzdi",
+    "C) Miltiqni sotib yubordi"
+   ],
+   "answer": "A) Shoqolni otib tashladi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qorovullar kelib Bill Obrini qanday jazoladi?",
+   "options": [
+    "A) Bog‘dan haydab yuborishdi",
+    "B) Unga katta jadval berishdi",
+    "C) Chinkni tortib olishdi"
+   ],
+   "answer": "A) Bog‘dan haydab yuborishdi"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Chink och bo‘lsa ham go‘shtni nega yemadi?",
+   "options": [
+    "A) Xo‘jayinning ishonchini oqlamoqchi bo‘ldi",
+    "B) Go‘shtning mazasi unga yoqmadi",
+    "C) Shoqol go‘shtni o‘g‘rilab ketgandi"
+   ],
+   "answer": "A) Xo‘jayinning ishonchini oqlamoqchi bo‘ldi"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Billning qoidani buzib bo‘lsa ham shoqolni otgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, sodiq do‘stini qutqardi",
+    "B) Noto‘g‘ri, itga e'tibor bermasligi kerak edi",
+    "C) Noto‘g‘ri, shoqol bilan do‘stlashishi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, sodiq do‘stini qutqardi"
+  }
+ ]
+}

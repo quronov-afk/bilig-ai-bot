@@ -30,3 +30,11 @@ tools/book_work/
 
 # Sinov bazasi
 bot_base.db
+
+# Muqova qayta chizishdagi xom rasmlar (200 MB). Matnsiz asl nusxalar —
+# matn joylashuvini qayta yozish uchun kerak, GitHub'ga tushmaydi.
+tools/covers_raw/
+
+# Shriftlarning ochilgan arxivi (23 MB). Kerakli 9 ta fayl allaqachon
+# tools/fonts/ da — arxivning o‘zi GitHub'ga tushmaydi.
+tools/fonts_raw/

@@ -1,0 +1,448 @@
+{
+ "title": "Besh bolali yigitcha",
+ "author": "Xudoyberdi To‘xtaboyev",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "urush yillari",
+   "oilaviy mas‘uliyat",
+   "mehnatsevarlik",
+   "do‘stlik",
+   "yetimlik",
+   "vatanparvarlik"
+  ],
+  "theme": "Inson har qanday og‘ir sinov va qiyinchiliklarda ham halollik, mehnatsevarlik, oila va vatan oldidagi mas'uliyatni saqlab qolishi kerak.",
+  "summary": "Ikkinchi jahon urushi yillari. Otasi frontga ketgan, onasi traktorchi bo‘lib tunu kun dalada bo‘lgan Orifjon beshta ukasiga qaraydi va ro‘zg‘or ishlarini qiladi. Onasi vafot etgach, bolalar detdomga tushadi. Ukasi Sulton otasini qidirib frontga qochadi. Orifjon ukalarini birlashtirib qishloqqa qaytadi. Qishloqda 'Afandichilar' nomli yoshlar brigadasini tuzib, kolxoz ishlarida fidoiylik ko‘rsatadi. El rizqini urgan Meli baqqolning kirdikorlari ochilib qamaladi. Asar oxirida bolalar o‘qishga, bilim yurtlariga yo‘l oladi, Orifjon esa el hurmatiga sazovor bo‘lib brigadir etib tayinlanadi.",
+  "characters": "Orifjon (Beshbolali) — mas'uliyatli, sho‘x va mehnatsevar bosh qahramon; Mirzapolvon — otasi; Karomat — onasi; Sulton, Zulayho, Usmon, Omon, Robiya — ukalari va singillari; Parpi buva — urush faxriysi, fidoyi kishi; Mariya Pavlovna (O‘ris xola) — yetim bolalarga g‘amxo‘r tarbiyachi; Roziq tog‘a — o‘qituvchi; Rahbar opa — kolxoz raisi.",
+  "conclusion": "Ushbu asar farzandingizga eng og‘ir damlarda ham tushkunlikka tushmaslikni, oila va yaqinlarga g‘amxo‘r bo‘lishni o‘rgatadi. Halol mehnat, sabr-toqat va insoniylik har qanday qiyinchilikni yengishga qodirligini tushuntiradi.",
+  "difficulty": "o‘rta",
+  "mood": "ta'sirli, sabr va umidga boy, sarguzashtli",
+  "for_whom": "Tarixiy va sarguzasht asarlarga qiziqadigan, mehnatsevarlik, oilaviy rishtalar va do‘stlik haqida o‘qishni xohlaydigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Orifjonning ukalari nechta edi?",
+   "options": [
+    "A) Uchta",
+    "B) To‘rtta",
+    "C) Beshta",
+    "D) Oltita"
+   ],
+   "answer": "C) Beshta"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Orifjonga qanday laqab qo‘yishgan edi?",
+   "options": [
+    "A) Beshbolali",
+    "B) Afandi",
+    "C) Bilag‘on",
+    "D) Qorovul"
+   ],
+   "answer": "A) Beshbolali"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otasi Mirzapolvon dalada nima ish qilardi?",
+   "options": [
+    "A) Anhor kovlardi",
+    "B) Traktor haydardi",
+    "C) Tegirmon yuritardi",
+    "D) Eshak boqardi"
+   ],
+   "answer": "A) Anhor kovlardi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Parpi buva nimani sotib olmoqchi bo‘ldi?",
+   "options": [
+    "A) Zambarak",
+    "B) Traktor",
+    "C) Avtomobil",
+    "D) Miltiq"
+   ],
+   "answer": "A) Zambarak"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ota urushga ketishidan oldin oilasiga nimalar tayyorladi?",
+   "options": [
+    "A) O‘tin va un tayyorladi",
+    "B) Uy va imorat qurdi",
+    "C) Kiyim va poyabzal oldi",
+    "D) Traktor va mashina tuzatdi"
+   ],
+   "answer": "A) O‘tin va un tayyorladi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Orifjon nega ko‘chada bolalar bilan ko‘p o‘ynamasdi?",
+   "options": [
+    "A) Uy ishlariga qarashgani uchun",
+    "B) Bolalar uni yoqtirmagani uchun",
+    "C) Kasal bo‘lib qolgani uchun",
+    "D) Ko‘chaga chiqishni xohlamagani uchun"
+   ],
+   "answer": "A) Uy ishlariga qarashgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Otasiga chaqiriq qog‘ozi kelganda Orifjon nega yig‘ladi?",
+   "options": [
+    "A) Otasidan ajralishdan qo‘rqgani uchun",
+    "B) Boshqa bolalar masxaralaganidan",
+    "C) Ish ko‘payib ketganidan",
+    "D) Eshagi qochib ketganidan"
+   ],
+   "answer": "A) Otasidan ajralishdan qo‘rqgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Orifjonning ukalariga mehribonligi va g‘amxo‘rligi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, aka mas'uliyatli bo‘lishi kerak",
+    "B) Noto‘g‘ri, o‘zini o‘ylashi kerak",
+    "C) Shart emas, kattalar qaragani ma'qul",
+    "D) Faqat buyruq berishi kerak"
+   ],
+   "answer": "A) To‘g‘ri, aka mas'uliyatli bo‘lishi kerak"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Parpi buvaning jangchilar uchun zambarak olmoqchiligi qanday sifat?",
+   "options": [
+    "A) Yuksak vatanparvarlik va fidoyilik",
+    "B) O‘ylamay qilingan bema'ni harakat",
+    "C) Shunchaki maqtanchoqlik va sho‘xlik",
+    "D) Zoti pastlik va xasislik"
+   ],
+   "answer": "A) Yuksak vatanparvarlik va fidoyilik"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Orifjonning latifago‘yligini tasvirlab nimani ko‘rsatmoqchi bo‘lgan?",
+   "options": [
+    "A) Og‘ir damda ham umid borligini",
+    "B) Uning besaer va sho‘xligini",
+    "C) O‘qishni xohlamasligini",
+    "D) Boshqalardan ustunligini"
+   ],
+   "answer": "A) Og‘ir damda ham umid borligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qaysi ukasi Sasha bilan urushga qochib ketdi?",
+   "options": [
+    "A) Sulton",
+    "B) Usmon",
+    "C) Omon",
+    "D) Robiya"
+   ],
+   "answer": "A) Sulton"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Detdomda bolalarga kim juda mehribonlik qildi?",
+   "options": [
+    "A) Mariya Pavlovna",
+    "B) Mukarram xola",
+    "C) Rahbar opa",
+    "D) To‘xta xolam"
+   ],
+   "answer": "A) Mariya Pavlovna"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pakana buva omborxonadan nima olib chiqdi?",
+   "options": [
+    "A) Mayiz va o‘rik",
+    "B) Bug‘doy va un",
+    "C) Go‘sht va yog‘",
+    "D) Kiyim va poyabzal"
+   ],
+   "answer": "A) Mayiz va o‘rik"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Orifjonga detkoloniyada qochish haqida kim maslahat berdi?",
+   "options": [
+    "A) Islom va Shermat",
+    "B) Roziq tog‘a",
+    "C) Parpi buva",
+    "D) Samovar"
+   ],
+   "answer": "A) Islom va Shermat"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Onasining vafotidan so‘ng bolalar qayerlarga joylashdi?",
+   "options": [
+    "A) Bolalar uyiga va detdomga",
+    "B) Boshqa qishloqqa ko‘chib ketishdi",
+    "C) Faqat Meli baqqolnikiga kirishdi",
+    "D) Begona shaharga qochib ketishdi"
+   ],
+   "answer": "A) Bolalar uyiga va detdomga"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Orifjon nega ukalarini yetimxonadan olib chiqmoqchi bo‘ldi?",
+   "options": [
+    "A) Oila chirog‘ini o‘chirmaslik uchun",
+    "B) Detdomda ovqat kamligidan",
+    "C) Mariya Pavlovna haydagani uchun",
+    "D) Qishloqni sog‘inmagani uchun"
+   ],
+   "answer": "A) Oila chirog‘ini o‘chirmaslik uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sulton nega frontga qochishga harakat qildi?",
+   "options": [
+    "A) Otasini topish va yordam berish uchun",
+    "B) O‘qishdan qochish uchun",
+    "C) Aka-ukalaridan urishib qolgani uchun",
+    "D) Shaharni ko‘rish uchun"
+   ],
+   "answer": "A) Otasini topish va yordam berish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Orifjonning har qanday qiyinchilikda ukalarini tashlab qo‘ymagani qanday ish?",
+   "options": [
+    "A) Haqiqiy burch va opichlik namunasi",
+    "B) O‘ylamay qilingan xato xatti-harakat",
+    "C) Majburiyatdan qilingan chorasiz ish",
+    "D) Boshqalarga ko‘z-ko‘z qilish"
+   ],
+   "answer": "A) Haqiqiy burch va opichlik namunasi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif O‘ris xolaning mehribonligini tasvirlab nimani ta'kidlaydi?",
+   "options": [
+    "A) Yaxshilik millat tanlamasligini",
+    "B) Kofirlarning hammasi yomonligini",
+    "C) Detdomlar yomon joyligini",
+    "D) Urush tez tugashini"
+   ],
+   "answer": "A) Yaxshilik millat tanlamasligini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Orifjonning «oyimning qabridan kim xabar oladi» deyishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Onasiga bo‘lgan cheksiz hurmatini",
+    "B) Qabristondan qo‘rqmasligini",
+    "C) Qishloqda qolish bahonasini",
+    "D) Uyda yolg‘iz yashamoqchiligini"
+   ],
+   "answer": "A) Onasiga bo‘lgan cheksiz hurmatini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yoshlar brigadasiga kim boshliq etib tayinlandi?",
+   "options": [
+    "A) Roziq tog‘a",
+    "B) Turon amaki",
+    "C) Meli baqqol",
+    "D) Karimov amaki"
+   ],
+   "answer": "A) Roziq tog‘a"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘rta mahalla bolalari brigadasiga qanday laqab qo‘yildi?",
+   "options": [
+    "A) Afandichilar",
+    "B) Yig‘loqilar",
+    "C) Qahramonlar",
+    "D) Frontovoylar"
+   ],
+   "answer": "A) Afandichilar"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Meli baqqolning yerto‘lasidan nima topildi?",
+   "options": [
+    "A) O‘g‘irlangan guruch",
+    "B) Miltiq va qurol",
+    "C) Zambarak va o‘q",
+    "D) Tillalar va pullar"
+   ],
+   "answer": "A) O‘g‘irlangan guruch"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kolxozga yangi rais bo‘lib kim keldi?",
+   "options": [
+    "A) Rahbar opa",
+    "B) Mariya Pavlovna",
+    "C) To‘xta xola",
+    "D) Rahima opa"
+   ],
+   "answer": "A) Rahbar opa"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar oxirida qaysi voqealar sodir bo‘ldi?",
+   "options": [
+    "A) Baqqol ushlandi, Zulayho o‘qishga ketdi",
+    "B) Urush tugadi, ota qaytib keldi",
+    "C) Bolalar detdomga qaytib ketishdi",
+    "D) Roziq tog‘a rais bo‘lib saylandi"
+   ],
+   "answer": "A) Baqqol ushlandi, Zulayho o‘qishga ketdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Frontovoy brigadaning muvaffaqiyati sababi nima edi?",
+   "options": [
+    "A) Bolalarning ahilligi va mehnati",
+    "B) Kattalarning majburlab ishlatishi",
+    "C) Yaxshi traktorlar berilgani",
+    "D) Yernining o‘zi hosildorligi"
+   ],
+   "answer": "A) Bolalarning ahilligi va mehnati"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Meli baqqol nega el oldida sharmanda bo‘lib qamaldi?",
+   "options": [
+    "A) El rizqini o‘g‘irlab berkitgani uchun",
+    "B) Zanglagan ketmon sotgani uchun",
+    "C) Baqqolxonani yopib qo‘ygani uchun",
+    "D) Majlisga kelmagani uchun"
+   ],
+   "answer": "A) El rizqini o‘g‘irlab berkitgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Roziq tog‘a o‘qishga ketgach nega Orifjon brigadir qilindi?",
+   "options": [
+    "A) Bolalarni birlashtira olgani va mas'uliyatliligi uchun",
+    "B) Yosh jihatdan eng kattasi bo‘lgani uchun",
+    "C) Boshqa hech kim ishlamagani uchun",
+    "D) Rahbar opaning qarindoshi bo‘lgani uchun"
+   ],
+   "answer": "A) Bolalarni birlashtira olgani va mas'uliyatliligi uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qiyinchiliklarga qaramay halol mehnat qilgan bolalarning harakati qanday?",
+   "options": [
+    "A) Haqiqiy vatanparvarlik va matonat kelajagidir",
+    "B) Shunchaki vaqt o‘tkazish va o‘yin",
+    "C) Majburiy va foydasiz urush oqibati",
+    "D) O‘zini ko‘rsatish va maqtanchoqlik"
+   ],
+   "answer": "A) Haqiqiy vatanparvarlik va matonat kelajagidir"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Parpi buvaning Zulayhoga to‘plagan pulini berishi nimani ifodalaydi?",
+   "options": [
+    "A) Keksalarning yoshlarga bo‘lgan cheksiz mehrini",
+    "B) Pulning keraksiz va keragi yo‘qligini",
+    "C) Zulayhoning pulso‘rar va qaysarligini",
+    "D) Buvining boy-badavlat kishi ekanini"
+   ],
+   "answer": "A) Keksalarning yoshlarga bo‘lgan cheksiz mehrini"
+  }
+ ]
+}

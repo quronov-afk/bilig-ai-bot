@@ -1,0 +1,448 @@
+{
+ "title": "Oliver Tvistning boshidan kechirganlari",
+ "author": "Charlz Dikkens",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15",
+  "topics": [
+   "yetimlik",
+   "mehribonlik",
+   "halollik",
+   "sabr",
+   "adolat",
+   "oila"
+  ],
+  "theme": "Inson har qanday og‘ir va shafqatsiz sharoitda ham o‘zining pokligini, halolligini va ezgulikka bo‘lgan ishonchini saqlab qolishi kerak.",
+  "summary": "Oliver Tvist mehnat uyida tug‘ilib, yetimlik va xorlikda o‘sadi. Tobutsozga shogirdlikka berilgach, zolimona muomalaga chiday olmay Londonga qochadi. U yerda bilmasdan o‘g‘rilar to‘dasiga tushib qoladi. Xayrixoh jentlmen mister Braunlou va keyinchalik Roz Meyli bolaga g‘amxo‘rlik qilib, uni qutqarishga urinishadi. O‘g‘rilar to‘dasi bolani qayta o‘zlariga tortishga harakat qiladi, ammo Nensi ismli qiz bolaning siringa oid haqiqatni oshkor etadi. Ma'lum bo‘lishicha, Monks ismli kishi Oliverning ota bir tug‘ishgan ag‘asi bo‘lib, merosni egallash uchun bolani jinoyat yo‘liga solishni rejalashtirgan edi. Yovuzlik fosh bo‘ladi, Bill Sayks va Fedjin o‘z jazolarini oladi. Mister Braunlou Oliverni asrab oladi va bola baxtli hayotga erishadi.",
+  "characters": "Oliver Tvist — beg‘ubor va sabrli yetim bola. Mister Braunlou — oliyjanob va rahmdil keksa jentlmen. Fedjin — o‘g‘rilar to‘dasi boshlig‘i. Bill Sayks — shafqatsiz va g‘azabkor kazzob. Nensi — ich-ichidan ezgulikka intiluvchi ayol. Roz Meyli — Oliverga mehr ko‘rsatgan saxovatli qiz.",
+  "conclusion": "Ushbu roman farzandingizga har qanday qiyinchilik va adolatsizlik qarshisida ham halollik va ezgulikni yo‘qotmaslikni o‘rgatadi. Yomon yo‘ldan yiroq bo‘lish, kattalarga va mehr-shafqatli insonlarga sodiq bo‘lish qadrini anglatadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi, hayajonli",
+  "for_whom": "Hayotiy qiyinchiliklarni yengib o‘tgan mard qahramonlar haqida o‘qishni xohlaydigan, adolat va mehr-shafqat tuyg‘ulariga qiziquvchi bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oliver qayerda dunyoga keldi?",
+   "options": [
+    "A) Mehnat uyida",
+    "B) Boy xonadonda",
+    "C) Shifoxonada",
+    "D) Qishloq uyida"
+   ],
+   "answer": "A) Mehnat uyida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mister Bambl bolalarga qanday tartibda ism qo‘yardi?",
+   "options": [
+    "A) Alifbo tartibida",
+    "B) Tug‘ilgan oyiga qarab",
+    "C) Yoshinga qarab",
+    "D) Tasodifiy tanlash bilan"
+   ],
+   "answer": "A) Alifbo tartibida"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oliver to‘qqiz yoshida qaysi fermada yashardi?",
+   "options": [
+    "A) Missis Mann fermasida",
+    "B) Mister Braunlou uyida",
+    "C) Tobutsoz do‘konida",
+    "D) London mehmonxonasida"
+   ],
+   "answer": "A) Missis Mann fermasida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oliver tobutsoz do‘konida kim bilan urishib qoldi?",
+   "options": [
+    "A) Noe Kleypol bilan",
+    "B) Mister Bambl bilan",
+    "C) Abjir tullak bilan",
+    "D) Bill Sayks bilan"
+   ],
+   "answer": "A) Noe Kleypol bilan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oliverning Londongacha bo‘lgan sarguzashtlari ketma-ketligi qaysi?",
+   "options": [
+    "A) Mehnat uyi, ferma, tobutsoz, London",
+    "B) Ferma, London, tobutsoz, mehnat uyi",
+    "C) London, ferma, mehnat uyi, tobutsoz",
+    "D) Tobutsoz, mehnat uyi, ferma, London"
+   ],
+   "answer": "A) Mehnat uyi, ferma, tobutsoz, London"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oliver Noe Kleypolga nega g‘azab bilan tashlandi?",
+   "options": [
+    "A) Onasini haqorat qilgani uchun",
+    "B) Ovqatini tortib olgani uchun",
+    "C) Kiyimini yirtgani uchun",
+    "D) Ishga kechikkani uchun"
+   ],
+   "answer": "A) Onasini haqorat qilgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ko‘chadagi olomon nega Oliverning orqasidan quvdi?",
+   "options": [
+    "A) Uni o‘g‘ri deb o‘ylashgani uchun",
+    "B) Yordam berishni istashgani uchun",
+    "C) Mister Bambl buyurgani uchun",
+    "D) Uni tanib qolishgani uchun"
+   ],
+   "answer": "A) Uni o‘g‘ri deb o‘ylashgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mister Bamblning yetimlarga bo‘lgan munosabatini qanday baholash mumkin?",
+   "options": [
+    "A) Qahri qattiq va bag‘ritosh",
+    "B) Mehribon va saxovatli",
+    "C) Adolatli va samimiy",
+    "D) Kamtarin va mehnatkash"
+   ],
+   "answer": "A) Qahri qattiq va bag‘ritosh"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «O‘g‘rini ushlanglar!» hayqiriqlarini tasvirlab nimani ko‘rsatmoqchi?",
+   "options": [
+    "A) Olomonning o‘ylamay harakat qilishini",
+    "B) Odamlarning juda tez yugurishini",
+    "C) Shahar ko‘chalarining chiroyliligini",
+    "D) Bolaning epchillik bilan qochishini"
+   ],
+   "answer": "A) Olomonning o‘ylamay harakat qilishini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif debochada o‘g‘rilar hayotini qanday ko‘rsatishni maqsad qilgan?",
+   "options": [
+    "A) Ayanchli va jirkanch holatda",
+    "B) Havas qilarli va go‘zal",
+    "C) Kulgili va yengil uslubda",
+    "D) Boylik va dabdaba ichida"
+   ],
+   "answer": "A) Ayanchli va jirkanch holatda"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oliverni mehribonlik bilan o‘z uyiga qabul qilgan jentlmen kim?",
+   "options": [
+    "A) Mister Braunlou",
+    "B) Mister Sayks",
+    "C) Mister Fedjin",
+    "D) Mister Bambl"
+   ],
+   "answer": "A) Mister Braunlou"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bill Sayks Oliverni qayerga o‘g‘rilikka olib bordi?",
+   "options": [
+    "A) Chertsidegi hovliga",
+    "B) London cherkoviga",
+    "C) Mehnat uyiga",
+    "D) Tobutsoz do‘koniga"
+   ],
+   "answer": "A) Chertsidegi hovliga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘g‘rilik paytida Oliver bilan nima sodir bo‘ldi?",
+   "options": [
+    "A) O‘q tegib yaralandi",
+    "B) Qochib qutulib ketdi",
+    "C) Politsiyaga topshirildi",
+    "D) Uyga kirib yashirindi"
+   ],
+   "answer": "A) O‘q tegib yaralandi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yaralangan Oliverga kimlar g‘amxo‘rlik qilib davolatdi?",
+   "options": [
+    "A) Missis Meyli va Roz",
+    "B) Nensi va Missis Mann",
+    "C) Mister Bambl va xotini",
+    "D) Salli kampir va tabib"
+   ],
+   "answer": "A) Missis Meyli va Roz"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oliverning ikkinchi marta o‘g‘rilar qo‘liga tushishi tartibi qaysi?",
+   "options": [
+    "A) Kitob eltganda Nensi ushladi",
+    "B) Uyda uqlayotganda olib ketildi",
+    "C) Ko‘chada adashganda topib olindi",
+    "D) Chertsidegi uyda ushlandi"
+   ],
+   "answer": "A) Kitob eltganda Nensi ushladi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mister Bambl va missis Korni munosabatlari qanday rivojlandi?",
+   "options": [
+    "A) Turmush qurib birga yashashdi",
+    "B) Do‘st bo‘lib qolishdi",
+    "C) Dushmanlashib ajralib ketishdi",
+    "D) Bir-birini ko‘rmay ketishdi"
+   ],
+   "answer": "A) Turmush qurib birga yashashdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bill Sayks nega Oliverga to‘pponcha o‘qtalib do‘q qildi?",
+   "options": [
+    "A) Tinch yurishga majburlash uchun",
+    "B) Pul berishini talab qilib",
+    "C) O‘g‘rilikni o‘rganishi uchun",
+    "D) Qochib ketishini istab"
+   ],
+   "answer": "A) Tinch yurishga majburlash uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nensi nega Oliverga achinib yordam berishni xohladi?",
+   "options": [
+    "A) Bolaning beaybligi va pokligidan",
+    "B) Mister Fedjin buyurgani uchun",
+    "C) Bill Sayksdan qo‘rqqani uchun",
+    "D) Mister Braunlou pul bergani uchun"
+   ],
+   "answer": "A) Bolaning beaybligi va pokligidan"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Roz Meylining Oliverga qilgan yaxshiligini qanday baholash mumkin?",
+   "options": [
+    "A) Oliyjanoblik va yuksak mehr-shafqat",
+    "B) Shaxsiy manfaatini o‘ylash",
+    "C) Majburiyat yuzasidan yordam berish",
+    "D) Boshqalarga ko‘z-ko‘z qilish"
+   ],
+   "answer": "A) Oliyjanoblik va yuksak mehr-shafqat"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Nensining murakkab qalbini qanday ibora bilan tasvirlaydi?",
+   "options": [
+    "A) Yomonlik va ezgulik aralashgan",
+    "B) Faqat yovuzlikka to‘la",
+    "C) Mutlaqo beparvo va sovuq",
+    "D) Doimo xursand va shodon"
+   ],
+   "answer": "A) Yomonlik va ezgulik aralashgan"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nensi tunda ko‘prikda kimlar bilan yashirincha uchrashdi?",
+   "options": [
+    "A) Roz va mister Braunlou",
+    "B) Bill Sayks va Fedjin",
+    "C) Mister Bambl va Noe",
+    "D) Oliver va Charli Beyts"
+   ],
+   "answer": "A) Roz va mister Braunlou"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nensining uchrashuvini pinhona kuzatib, sotgan kishi kim?",
+   "options": [
+    "A) Noe Kleypol",
+    "B) Charli Beyts",
+    "C) Mister Bambl",
+    "D) Mister Jayls"
+   ],
+   "answer": "A) Noe Kleypol"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bill Sayks qanday halok bo‘ldi?",
+   "options": [
+    "A) Tomdan tushayotib arqonga osilib",
+    "B) Politsiya o‘q uzganidan",
+    "C) Xandaqqa g‘arq bo‘lib",
+    "D) Og‘ir xastalikdan o‘lib"
+   ],
+   "answer": "A) Tomdan tushayotib arqonga osilib"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Monks aslida Oliverga kim bo‘lib chiqdi?",
+   "options": [
+    "A) Ota bir tug‘ishgan ag‘asi",
+    "B) Begona o‘g‘ri",
+    "C) Tobutsozning shogirdi",
+    "D) Mister Braunlouning jiyani"
+   ],
+   "answer": "A) Ota bir tug‘ishgan ag‘asi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar oxirida qahramonlar taqdiri guruhlanganda qaysi tenglik to‘g‘ri?",
+   "options": [
+    "A) Bambllar g‘aribxonaga tushdi",
+    "B) Monks boyib ketdi",
+    "C) Sayks qamoqda qoldi",
+    "D) Fedjin qochib qutuldi"
+   ],
+   "answer": "A) Bambllar g‘aribxonaga tushdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Monks nega Oliverni doimo ta’qib qilib yo‘qotmoqchi edi?",
+   "options": [
+    "A) Merosni yolg‘iz egallash uchun",
+    "B) Fedjinning buyrug‘ini bajarish uchun",
+    "C) Onasining qasosini olish uchun",
+    "D) Mister Braunlouga yoqish uchun"
+   ],
+   "answer": "A) Merosni yolg‘iz egallash uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Charli Beyts nega jinoyatchilik yo‘lidan qaytib halol bo‘ldi?",
+   "options": [
+    "A) Sayksning mudhish jinoyatidan cho‘chib",
+    "B) Politsiya uni ushlab olgani uchun",
+    "C) Mister Braunlou pul bergani uchun",
+    "D) Oliver uni ko‘ndirgani uchun"
+   ],
+   "answer": "A) Sayksning mudhish jinoyatidan cho‘chib"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Oliverning salbiy muhitda ham pok qalbli bo‘lib qolishi nimani ko‘rsatdi?",
+   "options": [
+    "A) Ezgulik va halollik ustunligini",
+    "B) Taqdirning shunchaki tasodifini",
+    "C) O‘g‘rilarning rahmdil ekanini",
+    "D) Pulning hamma narsani hal qilishini"
+   ],
+   "answer": "A) Ezgulik va halollik ustunligini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mister Braunlouning Monksga merosning yarmini berishi nimadan dalolat beradi?",
+   "options": [
+    "A) Bag‘rikenglik va adolat namunasi",
+    "B) Qo‘rqoqlik va ojizlik belgisi",
+    "C) Xatoga yo‘l qo‘yilgan qaror",
+    "D) Faqat qonun talab qilgan ish"
+   ],
+   "answer": "A) Bag‘rikenglik va adolat namunasi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif asar oxirida Agnes xotirasiga atalgan marmar taxtani qanday tasvirlaydi?",
+   "options": [
+    "A) Muqaddas va pokiza xotira",
+    "B) Qimmatbaho va dabdabali bezak",
+    "C) Unutilgan va eskirgan tosh",
+    "D) Qorong‘i va vahimali belgi"
+   ],
+   "answer": "A) Muqaddas va pokiza xotira"
+  }
+ ]
+}

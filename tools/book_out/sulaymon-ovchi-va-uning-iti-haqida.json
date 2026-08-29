@@ -1,0 +1,287 @@
+{
+ "title": "Sulaymon ovchi va uning iti haqida",
+ "author": "Sunnatulla Anorboyev",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-13",
+  "topics": [
+   "do‘stlik",
+   "vafo",
+   "tabiat",
+   "halollik",
+   "hayot saboqlari"
+  ],
+  "theme": "Inson va hayvon o‘rtasidagi samimiy rishtalar, vafodorlik, kechirimli bo‘lish va xatolardan saboq chiqarish asarning bosh g‘oyasidir.",
+  "summary": "Sulaymon ota — to‘g‘onda ellik yil ishlagan tajribali mirob va ovchi. Urushda ikki o‘g‘lidan ayrilgan ota tabiat bag‘rida sodiq iti Chinoq bilan yashaydi. Shaharlik Yovqochev ovga chiqqanda to‘ng‘izdan qo‘rqib qochadi, Chinoq uni qutqarib og‘ir yaralanadi. Yovqochev nomardlik bilan qochib ketadi, ota esa itini davolaydi. Urush yillaridagi ocharchilikda Chinoq makkajo‘xorini yegani uchun otaning jahli chiqib, itni daryoga cho‘ktirmoqchi bo‘ladi. Lekin ota daryoga tushib ketganda, Chinoq o‘z hayotini xavfga qo‘yib otani qutqaradi. Ota qilgan ishidan qattiq afsuslanib, umrbod xijolatda yashaydi va itiga g‘amxo‘rlik qiladi.",
+  "characters": "Sulaymon ota — mehnatkash, tajribali ovchi va mirob; Chinoq — otaga cheksiz sodiq va dovyurak it; Yovqochev — manman va nomard shaharlik yozuvchi; Tohir — otaning suhbatini qadrlaydigan yosh shoir.",
+  "conclusion": "Ushbu asar bolalarga vafo, sadoqat va kechirimli bo‘lishni o‘rgatadi. Hayvonlarga shafqat qilish va o‘z xatolaridan saboq chiqarish insoniy fazilat ekanini anglatadi. Farzandingizda mehribonlik va mas'uliyat tuyg‘ularini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "samimiy, ta'sirli, o‘ylantiruvchi",
+  "for_whom": "Hayvonlarni yaxshi ko‘radigan, do‘stlik va sadoqat haqida ta'sirli voqealarni o‘qishni xohlaydigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sulaymon ota to‘g‘onda necha yil ishlagan?",
+   "options": [
+    "A) O‘ttiz yil",
+    "B) Ellik yil",
+    "C) Qirq yil"
+   ],
+   "answer": "B) Ellik yil"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sulaymon otaning nechta tishi butun edi?",
+   "options": [
+    "A) Barcha tishi butun",
+    "B) Yarim tishi yo‘q",
+    "C) Faqat ikki tishi"
+   ],
+   "answer": "A) Barcha tishi butun"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sulaymon otaning uyga qaytishdagi harakatlari tartibi qaysi?",
+   "options": [
+    "A) To‘g‘onni tekshirdi, so‘ng bog‘ladi",
+    "B) Bozorga bordi, to‘g‘onni ko‘rdi",
+    "C) Taom yedi, bozorga ketdi"
+   ],
+   "answer": "B) Bozorga bordi, to‘g‘onni ko‘rdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sulaymon ota nega yoshlarga qo‘shilishni yaxshi ko‘radi?",
+   "options": [
+    "A) O‘zini yosharib ketgandek sezadi",
+    "B) Zero shaharga borishni xohlaydi",
+    "C) Ular unga ovqat pishiradi"
+   ],
+   "answer": "A) O‘zini yosharib ketgandek sezadi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Bo‘ri laqabli it xomush yotgan edi?",
+   "options": [
+    "A) Kasal bo‘lib qolgani uchun",
+    "B) Kuchukchalarini sog‘ingani uchun",
+    "C) Ota uni urgani uchun"
+   ],
+   "answer": "B) Kuchukchalarini sog‘ingani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Toshpo‘lat amakining kechasi ovchi eshigiga borishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, shoshilinch ish edi",
+    "B) Noto‘g‘ri, soddalik qilib ishondi",
+    "C) To‘g‘ri, hazilni tushunishi kerak"
+   ],
+   "answer": "B) Noto‘g‘ri, soddalik qilib ishondi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «yoshlarga qo‘shilsa yosharib ketadi» deb nimani ko‘rsatgan?",
+   "options": [
+    "A) Qalbning har doim navqironligini",
+    "B) Otaning kasallikdan qutulganini",
+    "C) Yig‘inlarning vaqtinchalik quvonchini"
+   ],
+   "answer": "A) Qalbning har doim navqironligini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yovqochev ovga qaysi itni olib ketdi?",
+   "options": [
+    "A) Bo‘ri itini",
+    "B) Chinoq itini",
+    "C) Tozi itini"
+   ],
+   "answer": "B) Chinoq itini"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chinoqqa qaysi hayvon hujum qildi?",
+   "options": [
+    "A) Yirtqich bo‘ri",
+    "B) Yovvoyi to‘ng‘iz",
+    "C) Ayiq"
+   ],
+   "answer": "B) Yovvoyi to‘ng‘iz"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sulaymon ota Chinoqning qornini nima bilan tikdi?",
+   "options": [
+    "A) Ip va igna bilan",
+    "B) Bint bilan",
+    "C) Sim bilan"
+   ],
+   "answer": "A) Ip va igna bilan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Chinoq yaralangach voqealar qanday tartibda yuz berdi?",
+   "options": [
+    "A) Yovqochev qochdi, ota tikdi",
+    "B) Ota tikdi, Yovqochev otdi",
+    "C) Gazeta chiqdi, it yaralandi"
+   ],
+   "answer": "A) Yovqochev qochdi, ota tikdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Yovqochev uydan xayrlashmasdan ketib qoldi?",
+   "options": [
+    "A) Qo‘rquv va nomardligi uchun",
+    "B) Avtobusga shoshilgani uchun",
+    "C) Otaga jahli chiqqani uchun"
+   ],
+   "answer": "A) Qo‘rquv va nomardligi uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Sulaymon ota gazetani o‘tga tashladi?",
+   "options": [
+    "A) Yovqochevning soxtaligidan nafratlandi",
+    "B) Gazeta juda eski edi",
+    "C) O‘g‘illariga xat kerak edi"
+   ],
+   "answer": "A) Yovqochevning soxtaligidan nafratlandi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Yovqochevning xavf paytida itni tashlab qochishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, u nomardlik qildi",
+    "B) To‘g‘ri, jonini saqlashi kerak",
+    "C) To‘g‘ri, it o‘zi aybdor"
+   ],
+   "answer": "A) Noto‘g‘ri, u nomardlik qildi"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chinoq ochlikdan nima yeya boshladi?",
+   "options": [
+    "A) Makkajo‘xori so‘tasini",
+    "B) Bug‘doy donini",
+    "C) Qovun po‘stlog‘ini"
+   ],
+   "answer": "A) Makkajo‘xori so‘tasini"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ota Chinoqni cho‘ktirish uchun boylagan tosh qayerda edi?",
+   "options": [
+    "A) Itning bo‘ynida",
+    "B) Qayiqning ichida",
+    "C) Otaning oyog‘ida"
+   ],
+   "answer": "A) Itning bo‘ynida"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ertalab Tohir uyg‘onganda ota qayerda edi?",
+   "options": [
+    "A) Pichanzorda bedana tutayotgan edi",
+    "B) Suv xo‘jaligi idorasida edi",
+    "C) Choyxonada choy ichayotgan edi"
+   ],
+   "answer": "A) Pichanzorda bedana tutayotgan edi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sulaymon otaning itga nisbatan munosabati qanday o‘zgardi?",
+   "options": [
+    "A) G‘azabdan pushaymonlikka o‘tdi",
+    "B) Sevgidan nafratga o‘tdi",
+    "C) Loqaydlikdan qo‘rqinchga o‘tdi"
+   ],
+   "answer": "A) G‘azabdan pushaymonlikka o‘tdi"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Chinoq o‘zini cho‘ktirmoqchi bo‘lgan otani nega qutqardi?",
+   "options": [
+    "A) Otaga cheksiz vafodorligi uchun",
+    "B) Tasodifan suvga tushgani uchun",
+    "C) Tosh uzilib ketgani uchun"
+   ],
+   "answer": "A) Otaga cheksiz vafodorligi uchun"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «men jafo qilsam ham u vafo qildi» bilan nimani uqtiradi?",
+   "options": [
+    "A) Jonivorlarning insondan vafodorligini",
+    "B) Daryo suvi sovuqligini",
+    "C) Makkajo‘xori qimmatligini"
+   ],
+   "answer": "A) Jonivorlarning insondan vafodorligini"
+  }
+ ]
+}

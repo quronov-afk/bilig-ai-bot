@@ -1,0 +1,28 @@
+{
+ "title": "Akramning sarguzashtlari",
+ "author": "Pirimqul Qodirov",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "8-12",
+  "topics": [
+   "mas'uliyat",
+   "kattalarga hurmat",
+   "jasorat",
+   "halollik",
+   "tabiat"
+  ],
+  "theme": "Kattalarning maslahatiga quloq tutish, bergan va'dasida turish, mas'uliyatli va halol bo‘lish insonni to‘g‘ri yo‘lga hamda chinakam jasoratga yetaklaydi.",
+  "summary": "Akram o‘yinchoq mashinasini qutqarish uchun ko‘chaga chiqib, samosval tagida qolay deydi. Ota-onasining tanbebidan so‘ng u va'dasida turish, tartib hamda kamtarlikni o‘rganadi. Qora dengiz hamda tog‘dagi bobosinikiga borib, tabiat va hayot saboqlarini oladi. Kuchli do‘l va seldan so‘ng bobosining yo‘qolgan oltita qo‘yini do‘sti To‘ychi bilan birga qorong‘i va xavfli tog‘dan qidirib topadi. Akram mas'uliyatli va mard bola bo‘lib yetishadi.",
+  "characters": "Akram — sarguzashtsevar, odobli va jasur bola; Sanjar aka — Akramning ilmiy xodim dadasi, talabchan va mehribon; Muhabbat opa — Akramning onasi, o‘qituvchi; Suyun ota va Oyxol momo — Akramning tog‘da yashaydigan mehnatkash bobosi hamda buvisi; To‘ychi — Akramning tog‘lik sodiq do‘sti.",
+  "conclusion": "Kitob farzandingizda kattalarga hurmat, va'daga vafo qilish hamda mas'uliyatli bo‘lish fazilatlarini tarbiyalaydi. Sarguzashtli voqealar orqali bola mehnatsevarlik, halollik hamda qiyinchilik oldida do‘stlik va jasorat ko‘rsatishni o‘rganadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, tarbiyaviy, iliq",
+  "for_whom": "Sarguzashtlarni, tabiatni va mashinalarni yaxshi ko‘radigan, mas'uliyatli hamda jasur bo‘lishni istaydigan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Akram bobosining yo‘qolgan qo‘ylarini topish uchun qorong‘ida xavfli tog‘ yo‘llaridan yurib, mas'uliyatni o‘z zimmasiga oldi. Sen Akramning o‘rnida bo‘lganingda qanday yo‘l tutarding? Oila va kattalarga yordam berish uchun o‘zing qanday mas'uliyatli ishlarni bajarasan?"
+}

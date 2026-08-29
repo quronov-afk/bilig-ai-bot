@@ -1,0 +1,27 @@
+{
+ "title": "Mushukchaning hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "3",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9 yosh",
+  "topics": [
+   "hayvonlar dunyosi",
+   "kulgili voqealar",
+   "kattalar o‘giti",
+   "aql va topqirlik"
+  ],
+  "theme": "Atrof-olamni kuzatish, har qanday vaziyatda aql va topqirlik bilan ish ko‘rish hamda kattalar o‘gitiga amal qilish.",
+  "summary": "Sho‘x mushukcha tomdan turib dunyoni tomosha qilishni va oftobda isinishni yaxshi ko‘radi. Bir kuni u tandir yonida kalish g‘ajiyotgan sichqonni ko‘rib, uni tutmoqchi bo‘ladi. Lekin to‘satdan Qoplon nomli it uni quvib qoladi. Mushukcha siniq tog‘ora ostiga yashirinadi. It ketgach, tog‘ora tagida o‘sha sichqon ham qo‘rqib berkinib o‘tirganini payqaydi. Bobosining nasihatini eslab, sichqonni tutib yeydi va sichqonning nodonligidan kuladi. Oxirida u kitobxondan dunyoni qanday chamalashini so‘raydi.",
+  "characters": "Mushukcha — kuzatuvchan, sho‘x va o‘zicha dono bosh qahramon; Sichqon — e’tiborsiz va nodon; Qoplon — jahldor va hujumkor it.",
+  "conclusion": "Asar bolani atrof-olamni diqqat bilan kuzatishga va har bir vaziyatda aql bilan yo‘l tutishga o‘rgatadi. Shuningdek, kattalarning va bobolarning maslahati vaqtida juda qo‘l kelishini kulgili tarzda ko‘rsatib beradi.",
+  "difficulty": "oson",
+  "mood": "kulgili, yengil",
+  "for_whom": "Hayvonlar haqida kulgili hikoyalarni va sho‘x qahramonlarning sarguzashtlarini yoqtiradigan zukkoga boy bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Mushukcha qiyin ahvolda qolganda bobosining donishmandona o‘gitini esladi va aql bilan ish tutdi. Sen kattalaringning qaysi maslahatiga amal qilasan va u senga qachon yordam bergan? Mushukchaning dunyoni tomdan turib chamalashi haqida sen nima deya olasan?"
+}

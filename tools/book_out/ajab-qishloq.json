@@ -1,0 +1,417 @@
+{
+ "title": "Ajab qishloq",
+ "author": "Ergash Raimov",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12 yoshli kitobxonlar uchun",
+  "topics": [
+   "do‘stlik",
+   "oila",
+   "halollik",
+   "qishloq hayoti",
+   "tarixiy xotira"
+  ],
+  "theme": "Asarda halollik, do‘stlik, oilaviy mehr va urush qahramonlari xotirasini e’zozlash kabi ezgu g‘oyalar ilgari suriladi.",
+  "summary": "Ajab qishloqlik Said (laqabi Hojiquduq) va uning do‘sti Soat (Yuvosh) yangi uyga ko‘chgan Jambil otaga yordam berishadi. Eski uyda sirli narsa yashiringan degan gumon bilan tunda u yerga kirib, Po‘rim xola bilan bog‘liq voqealarga guvoh bo‘lishadi. Saidning otasi ichkilikka ruju qo‘ygan bo‘lsa-da, keyinchalik shifoxonada davolanib to‘g‘ri yo‘lga kiradi. Sartarosh Mullajonning aldovlari va soxta ma’lumotnoma mashmashalaridan so‘ng Said o‘qituvchisi Hasan aka yordamida yana maktabga qaytadi. O‘quvchilar urushda halok bo‘lgan qishloqdoshar xotirasiga bag‘ishlab haykal o‘rnatadilar.",
+  "characters": "Said (Hojiquduq) — bosh qahramon, sofdil va sho‘x bola; Soat (Yuvosh) — Saidning yaqin do‘sti; Buvisi — Saidga g‘amxo‘r, ba’zan koyiydigan otin buvi; Hasan aka — jonkuyar va mas’uliyatli o‘qituvchi.",
+  "conclusion": "Kitob bolalarni do‘stlikni qadrlashga, kattalarni hurmat qilishga va nohaqlikka qarshi halol bo‘lishga o‘rgatadi. Oila bag‘ridagi mehr va to‘g‘ri ta’lim-tarbiya inson kelajagini belgilashini ko‘rsatadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, samimiy, o‘ylantiruvchi",
+  "for_whom": "Qishloq hayoti, do‘stlar sarguzashtlari va samimiy voqealarga qiziqadigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saidning ikkinchi laqabi nima edi?",
+   "options": [
+    "A) Hojiquduq",
+    "B) Shumoyoq",
+    "C) Ota pismiq"
+   ],
+   "answer": "A) Hojiquduq"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jambil otaning uyiga ko‘chishda kimlar yordamlashdi?",
+   "options": [
+    "A) Said va Soat",
+    "B) Karim va Akrom",
+    "C) Doniyor va Sharif"
+   ],
+   "answer": "A) Said va Soat"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ming so‘mlik buvi bolalarga nima berdi?",
+   "options": [
+    "A) Non va qaymoq",
+    "B) Baliq va sho‘rva",
+    "C) Olma va shaftoli"
+   ],
+   "answer": "A) Non va qaymoq"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saidga Saidbek deb kim ism qo‘ygan edi?",
+   "options": [
+    "A) Sharif tog‘asi",
+    "B) Qori buvasi",
+    "C) Jambil otasi"
+   ],
+   "answer": "A) Sharif tog‘asi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolalar eski uyga kirishda voqealar tartibi qanday bo‘ldi?",
+   "options": [
+    "A) Derazadan kirishdi va hujrani qidirishdi",
+    "B) Qulfni buzishdi va uydan qochishdi",
+    "C) Eshikdan kirishdi va rasm olishdi"
+   ],
+   "answer": "A) Derazadan kirishdi va hujrani qidirishdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Soat nega Saidni olma bog‘ga yetaklab bordi?",
+   "options": [
+    "A) Sirlarini bemalol gaplashib olish uchun",
+    "B) Sa‘dulla qorovuldan qochish uchun",
+    "C) Dars tayyorlashga yordam berish uchun"
+   ],
+   "answer": "A) Sirlarini bemalol gaplashib olish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Said magazinda yigitlarning dadasini masxara qilganidan nega xafa bo‘ldi?",
+   "options": [
+    "A) Dadasiga bo‘lgan mehri va achingani uchun",
+    "B) Tuz sotib ololmagani uchun",
+    "C) Buvisi urishganidan qo‘rqqani uchun"
+   ],
+   "answer": "A) Dadasiga bo‘lgan mehri va achingani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Said va Soatning tunda eski uyga kirgani to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, birovning uyiga ruxsatsiz kirilmaydi",
+    "B) To‘g‘ri, qiziqqan narsani ko‘rish kerak",
+    "C) To‘g‘ri, chalkashlikni hal qilish kerak"
+   ],
+   "answer": "A) Noto‘g‘ri, birovning uyiga ruxsatsiz kirilmaydi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Ajab qishloq odamlarini qanday tasvirlaydi?",
+   "options": [
+    "A) Quvnoq va laqab qo‘yishga usta",
+    "B) Kamgap va odamovi",
+    "C) Jahldor va qovushmaydigan"
+   ],
+   "answer": "A) Quvnoq va laqab qo‘yishga usta"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Ajab qishloqning mevalarini tasvirlaganda qaysi hissiyot seziladi?",
+   "options": [
+    "A) Qishloq tabiatidan g‘ururlanish va zavqlanish",
+    "B) Og‘ir mehnatdan charchash",
+    "C) Mevalar ozligidan afsuslanish"
+   ],
+   "answer": "A) Qishloq tabiatidan g‘ururlanish va zavqlanish"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chollarning arizasini kim yozib berdi?",
+   "options": [
+    "A) Zaki abziy",
+    "B) Mullajon usta",
+    "C) Hasan aka"
+   ],
+   "answer": "A) Zaki abziy"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jambil ota poyezdni nega to‘xtatgan edi?",
+   "options": [
+    "A) Farg‘onalik mehmonlarni chiqarish uchun",
+    "B) Pichan yuklash uchun",
+    "C) Temiryo‘lni tuzatish uchun"
+   ],
+   "answer": "A) Farg‘onalik mehmonlarni chiqarish uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ota pismiq Nazirani nimasi bilan qo‘rqitdi?",
+   "options": [
+    "A) Xanjar bilan",
+    "B) Pista bilan",
+    "C) Kitob bilan"
+   ],
+   "answer": "A) Xanjar bilan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Said maktabni tashlagach, bekatda nima sotdi?",
+   "options": [
+    "A) Pista va qurut",
+    "B) Meva va sabzavot",
+    "C) Kitob va daftar"
+   ],
+   "answer": "A) Pista va qurut"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Saidning sartaroshxonada ishlash jarayoni qaysi tartibda kechdi?",
+   "options": [
+    "A) Do‘konni tozaladi, so‘ng baqqollik qildi",
+    "B) Avval soch oldi, so‘ng qochdi",
+    "C) Dars berdi, so‘ng uyga ketdi"
+   ],
+   "answer": "A) Do‘konni tozaladi, so‘ng baqqollik qildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Arizaga qo‘l yig‘ish jarayonida Said kimning uyiga bordi?",
+   "options": [
+    "A) Jambil otaning uyiga",
+    "B) Doniyor akaning uyiga",
+    "C) Shokir akaning uyiga"
+   ],
+   "answer": "A) Jambil otaning uyiga"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ustam va shifokor nega Saidga soxta ma’lumotnoma berishdi?",
+   "options": [
+    "A) Saidni maktabdan chiqarib ishlatish uchun",
+    "B) Said haqiqatan kasal bo‘lgani uchun",
+    "C) Said Toshkentga borishi uchun"
+   ],
+   "answer": "A) Saidni maktabdan chiqarib ishlatish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jambil ota arizaga qo‘l qo‘yganda nega ajablendi?",
+   "options": [
+    "A) Said to‘satdan kelib kayfiyatini buzgani uchun",
+    "B) Sartaroshni tanimagani uchun",
+    "C) Ko‘zoynagi yo‘qligi uchun"
+   ],
+   "answer": "A) Said to‘satdan kelib kayfiyatini buzgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mullajon ustaning shogirdidan savdo ishida foydalanishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, u hunar o‘rgatishi kerak edi",
+    "B) To‘g‘ri, har qanday ish foydali",
+    "C) To‘g‘ri, bola maktabga bormasligi lozim"
+   ],
+   "answer": "A) Noto‘g‘ri, u hunar o‘rgatishi kerak edi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Jambil otaning poyezd to‘xtatishi lavhasi qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Kulgili va ajabtovur kayfiyat",
+    "B) Qayg‘uli va horg‘in kayfiyat",
+    "C) Qo‘rqinchli va vahimali kayfiyat"
+   ],
+   "answer": "A) Kulgili va ajabtovur kayfiyat"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saidning dadasi qayerda davolanishga yotqizildi?",
+   "options": [
+    "A) Toshkentdagi kasalxonada",
+    "B) Qishloq shifoxonasida",
+    "C) Maktab tibbiyot xonasida"
+   ],
+   "answer": "A) Toshkentdagi kasalxonada"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saidning Toshkentdan kelgan o‘rtog‘ining ismi kim?",
+   "options": [
+    "A) Fayzi",
+    "B) Doniyor",
+    "C) Melis"
+   ],
+   "answer": "A) Fayzi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saidning sog‘lom ekani haqidagi ma’lumotnoma qayerda berildi?",
+   "options": [
+    "A) Toshkentdagi shifokorlar tomonidan",
+    "B) Mullajon usta tomonidan",
+    "C) Maktab direktori tomonidan"
+   ],
+   "answer": "A) Toshkentdagi shifokorlar tomonidan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maktab oldida qanday yodgorlik ochiladigan bo‘ldi?",
+   "options": [
+    "A) Urush qahramonlari xotirasiga",
+    "B) Qishloq bog‘bonlari sharafiga",
+    "C) Maktab a’lochilari uchun"
+   ],
+   "answer": "A) Urush qahramonlari xotirasiga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Said o‘qishga qaytishidan oldin qanday voqealar bo‘lib o‘tdi?",
+   "options": [
+    "A) Soxta ma’lumotnoma fosh bo‘ldi va tekshirildi",
+    "B) U yangi sartaroshxona ochdi",
+    "C) U Toshkentga ko‘chib o‘tdi"
+   ],
+   "answer": "A) Soxta ma’lumotnoma fosh bo‘ldi va tekshirildi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Saidning dadasi kasalxonada nega yig‘ladi?",
+   "options": [
+    "A) Do‘stining mehri va pushaymonlikdan",
+    "B) Buvining koyiganidan",
+    "C) Kasallik og‘rig‘idan"
+   ],
+   "answer": "A) Do‘stining mehri va pushaymonlikdan"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Soat Saidga nega botinka sovg‘a qildi?",
+   "options": [
+    "A) Do‘stining poyabzali yirtilganini bilgani uchun",
+    "B) O‘ziga sig‘may qolgani uchun",
+    "C) Said shuni so‘ragani uchun"
+   ],
+   "answer": "A) Do‘stining poyabzali yirtilganini bilgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Hasan akaning Saidni maktabga qaytarishga urinishi qanday baholanadi?",
+   "options": [
+    "A) Jonkuyar va mas’uliyatli o‘qituvchilik namunasi",
+    "B) O‘quvchiga ortiqcha xalaqit berish",
+    "C) Bekorchi tashvish orttirish"
+   ],
+   "answer": "A) Jonkuyar va mas’uliyatli o‘qituvchilik namunasi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Saidning o‘z xatosini tushunib o‘qishga qaytishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, bilim olish kelajak uchun muhim",
+    "B) Noto‘g‘ri, unga baqqolchilik yaxshi edi",
+    "C) Farqi yo‘q, baribir uyda o‘tiradi"
+   ],
+   "answer": "A) To‘g‘ri, bilim olish kelajak uchun muhim"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar so‘ngidagi yodgorlik ochilishi marosimi o‘quvchida qanday tuyg‘u qoldiradi?",
+   "options": [
+    "A) Vatanparvarlik va xotiraga hurmat tuyg‘usi",
+    "B) Qayg‘u va umidsizlik tuyg‘usi",
+    "C) Afsus va achinish tuyg‘usi"
+   ],
+   "answer": "A) Vatanparvarlik va xotiraga hurmat tuyg‘usi"
+  }
+ ]
+}

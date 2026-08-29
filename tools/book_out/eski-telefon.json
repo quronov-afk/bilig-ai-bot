@@ -1,0 +1,28 @@
+{
+ "title": "Eski telefon",
+ "author": "Pol Villard",
+ "genre": "hikoya",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14 yosh (xorijiy madaniyat, yaqin insonni yo‘qotish va hayotiy-falsafiy ma'no sababli)",
+  "topics": [
+   "mehr-oqibat",
+   "kattalarga hurmat",
+   "hamdardlik",
+   "do‘stlik",
+   "hayot saboqlari"
+  ],
+  "theme": "Kichik bir mehribonlik, samimiy e'tibor va shirin so‘z inson hayotida chuqur iz qoldiradi hamda katta ruhiy dalda bo‘ladi.",
+  "summary": "Pol bolaligida tasodifan telefonda ma'lumot beruvchi operator Selli bilan tanishib qoladi. Selli yolg‘iz bolaga maslahatlar beradi, saboqlariga ko‘maklashadi va qushchasi o‘lganda tasalli beradi. Yillar o‘tib, ulg‘aygan Pol Selli bilan qayta bog‘lanadi va bu suhbatlar ikkalasi uchun ham qanchalik qadrli bo‘lganini anglaydi. Keyinroq Selli vafot etadi, lekin Pol uchun tasalli beruvchi so‘nggi xabarni qoldirib ketadi. Hikoya insoniy mehr va xushfe'llikning boqiy qiymatini ko‘rsatadi.",
+  "characters": "Pol — barmog‘ini urib olganida operatorga qo‘ng‘iroq qilib, yillar davomida u bilan do‘stlashgan samimiy bola. Selli — farzandsiz, bolalarni yaxshi ko‘radigan, sabr-toqatli va mehribon telefon operatori.",
+  "conclusion": "Asar bolaga kattalarning maslahatiga quloq tutish, atrofdagilarga nisbatan sabrli va mehribon bo‘lish hamda arzimas tuyulgan yaxshilik ham kimningdir hayotini yoritishi mumkinligini o‘rgatadi. Ota-onalar uchun esa bu hikoya farzandga ruhiy e'tibor berish va uni tinglash qanchalar muhimligini eslatadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Kattalar bilan muloqot qilishni hush ko‘radigan, insoniy munosabatlar va hayotiy voqealarga qiziquvchi, ta'sirchan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Selli opaning kichkina Polga ko‘rsatgan sabri va mehribonligi uning hayotida qanday o‘rin tutdi deb o‘ylaysan? O‘zing ham qiyin ahvolda qolganingda kattalar yoki do‘stlaring senga shunday tasalli va yordam berganmi, shu haqida gapirib ber-chi?"
+}

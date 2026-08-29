@@ -1,0 +1,417 @@
+{
+ "title": "Meshpolvonning janglari",
+ "author": "Anvar Obidjon",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12 yosh",
+  "topics": [
+   "jasorat",
+   "do‘stlik",
+   "vatanparvarlik",
+   "kulgili",
+   "sarguzasht"
+  ],
+  "theme": "Ota-ona va yurt ozodligi yo‘lida birlashish, jasorat ko‘rsatish hamda kamtar bo‘lish.",
+  "summary": "Sepkilshoh askarlari Meshpolvonning ota-onasi va bir qancha yurtdoshlarini qul qilib olib ketishadi. Meshpolvon o‘qlov, qozonqopqoq va daskalla bilan qurollanib, cho‘loq xachirda yo‘lga chiqadi. Yo‘lda u ilonlar, Oshiqbola, Chumakvoy, Rayhon qiziq va Hojixonajina bilan do‘stlashadi. Ular birgalikda Sepkilshoh lashkarini hamda makkor dushmanlarni hiyla va jasorat bilan yengishadi. Qullar ozod qilinadi, Oshiqbola va Oytumorning to‘yi bo‘lib o‘tadi, Meshpolvon esa ota-onasi bilan o‘z qishlog‘iga qaytadi.",
+  "characters": "Meshpolvon — sodda, jasur va kulgili 12 yoshli pahlavon. Oshiqbola — Go‘ro‘g‘lining evarasi, dovyurak yigit. Chumakvoy — tuppakchi lo‘li bola. Rayhon qiziq — shoch va dono chol. Hojixonajina — ajina bola, Meshpolvonning do‘sti. Sepkilshoh — zolim hukmdor.",
+  "conclusion": "Asar bolalarga jasorat, do‘stlik, kamtarlik va ota-onaga bo‘lgan mehrning ahamiyatini kulgili voqealar orqali o‘rgatadi. Maqtanchoqlik va manmanlik kulgiga sabab bo‘lishini ko‘rsatib beradi.",
+  "difficulty": "oson",
+  "mood": "kulgili, quvnoq, sarguzashtli",
+  "for_whom": "Kulgili sarguzashtlarni, mardlik va do‘stlik haqidagi ertak-qissalarni yaxshi ko‘radigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Meshpolvon dadasini ozod qilish uchun qaysi hayvonda jangga jo‘naydi?",
+   "options": [
+    "A) Qora otda",
+    "B) Cho‘loq xachirda",
+    "C) Bo‘ron tuyada"
+   ],
+   "answer": "B) Cho‘loq xachirda"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Meshpolvon qalqon o‘rnida nimadan foydalandi?",
+   "options": [
+    "A) Qozon qopqog‘idan",
+    "B) Sopol tog‘oradan",
+    "C) Og‘och lagandan"
+   ],
+   "answer": "A) Qozon qopqog‘idan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sahroda Meshpolvonning qo‘yniga qanday jonzotlar kirib oldi?",
+   "options": [
+    "A) Ikkita gurza ilon",
+    "B) Uchta kaltakesak",
+    "C) Kichkina chayonlar"
+   ],
+   "answer": "A) Ikkita gurza ilon"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oshiqbola kimning avlodi edi?",
+   "options": [
+    "A) Shirvonshohning",
+    "B) Go‘ro‘g‘libekning",
+    "C) Sepkilshohning"
+   ],
+   "answer": "B) Go‘ro‘g‘libekning"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Meshpolvon safarga chiqishda qanday ketma-ketlikda kiyindi?",
+   "options": [
+    "A) Dubulga, keyin etik kiygan",
+    "B) Chopon kiyib, chapyani dubulga qildi",
+    "C) Avval qilich taqib, po‘stak kiygan"
+   ],
+   "answer": "B) Chopon kiyib, chapyani dubulga qildi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Meshpolvon nega enasining kalishini so‘rab olmoqchi bo‘ldi?",
+   "options": [
+    "A) Yalangoyoq jangga kirish noqulayligidan",
+    "B) Kalish sehrli bo‘lgani uchun",
+    "C) Enasi kalishni berishni xohlagani uchun"
+   ],
+   "answer": "A) Yalangoyoq jangga kirish noqulayligidan"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Meshpolvon sahro ilonlariga nega talqon sepdi?",
+   "options": [
+    "A) Ularni o‘ldirish uchun",
+    "B) Ularga xushomad qilib omon qalish uchun",
+    "C) Ilonlar talqonni so‘ragani uchun"
+   ],
+   "answer": "B) Ularga xushomad qilib omon qalish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Meshpolvonning ota-onasini qutqarishga otlanishi qanday sifatni ko‘rsatadi?",
+   "options": [
+    "A) Farzandlik burchi va jasoratni",
+    "B) Maqtanchoqlik va o‘zboshimchalikni",
+    "C) Qo‘rqoqlik va befarqlikni"
+   ],
+   "answer": "A) Farzandlik burchi va jasoratni"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Enasining «Yantoq uzsang, gul bo‘lsin» degan tilagi nimani bildiradi?",
+   "options": [
+    "A) Safarda barcha ishi o‘ngidan kelishini",
+    "B) Cho‘lda faqat gul terishni",
+    "C) Yantoqlarni gulga aylantirishni"
+   ],
+   "answer": "A) Safarda barcha ishi o‘ngidan kelishini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Meshpolvonning qo‘shig‘ida qaysi so‘zlarni qayta-qayta takrorlaydi?",
+   "options": [
+    "A) Bog‘bon buvaning shapalog‘idan",
+    "B) Sepkilshohning oltin taxtidan",
+    "C) Cho‘loq xachirning tuyog‘idan"
+   ],
+   "answer": "A) Bog‘bon buvaning shapalog‘idan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chumakvoy dushmanga qarshi qanday quroldan foydalanardi?",
+   "options": [
+    "A) Tuproq va toshdan",
+    "B) Qalampirli tuppakdan",
+    "C) Uzun o‘qlovdan"
+   ],
+   "answer": "B) Qalampirli tuppakdan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nahang o‘lponchi xalqdan nimalarni yig‘ib yurardi?",
+   "options": [
+    "A) Faqat bug‘doy va nonni",
+    "B) Har xil zo‘ravonlik soliqlarini",
+    "C) Faqat harbiy qurollarni"
+   ],
+   "answer": "B) Har xil zo‘ravonlik soliqlarini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rayhon qiziq popukqandni kimdan tortib olmoqchi bo‘ldi?",
+   "options": [
+    "A) Bolalardan",
+    "B) Meshpolvon va Oshiqboladan",
+    "C) Qora papoqlilardan"
+   ],
+   "answer": "B) Meshpolvon va Oshiqboladan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Meshpolvon jardan qutulish uchun kim bilan do‘stlashdi?",
+   "options": [
+    "A) Hojixonajina bilan",
+    "B) Nahang o‘lponchi bilan",
+    "C) Malla jodugar bilan"
+   ],
+   "answer": "A) Hojixonajina bilan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Meshpolvon Oshiqbolani Qizqo‘rg‘on yonida qanday ko‘rinishga keltirdi?",
+   "options": [
+    "A) Ustiga deri yopib ho‘kiz qildi",
+    "B) Chopon kiydirib chol qildi",
+    "C) Yuzini bo‘yab lo‘li qildi"
+   ],
+   "answer": "A) Ustiga deri yopib ho‘kiz qildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Meshpolvon va do‘stlari hammomda kallakesarlarni qanday yengishdi?",
+   "options": [
+    "A) Sovun ichidagi bigizlar bilan sanchib",
+    "B) Suv sepib cho‘ktirib",
+    "C) Eshikni qulflab qo‘yib"
+   ],
+   "answer": "A) Sovun ichidagi bigizlar bilan sanchib"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mutal-maynavoz nega mehmondo‘st bo‘lib ko‘rinishga urindi?",
+   "options": [
+    "A) Pahlavonlarni tuzoqqa tushirish uchun",
+    "B) Haqiqatan mehribon bo‘lgani uchun",
+    "C) Meshpolvonni dadasidek ko‘rgani uchun"
+   ],
+   "answer": "A) Pahlavonlarni tuzoqqa tushirish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Chumakvoy nega shiringulni hidlayotganda ag‘darilib tushdi?",
+   "options": [
+    "A) Asalari peshanasidan chaqqani uchun",
+    "B) Shiringul tikanli bo‘lgani uchun",
+    "C) Meshpolvon uni turtib yuborgani uchun"
+   ],
+   "answer": "A) Asalari peshanasidan chaqqani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Meshpolvonning jardagi sheriklarini tashlab ketmasligi qanday fazilat?",
+   "options": [
+    "A) Do‘stlikka sadoqat",
+    "B) Qo‘rqoqlik va ikkilanib turish",
+    "C) O‘z manfaatini o‘ylash"
+   ],
+   "answer": "A) Do‘stlikka sadoqat"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Hammomdagi jangda «Jiq-jiq» tovushi nimaning tasvirini beradi?",
+   "options": [
+    "A) Bigiz sanchilish ovozini",
+    "B) Suv tomchilarining tomishini",
+    "C) Sovun ko‘pigining shishishini"
+   ],
+   "answer": "A) Bigiz sanchilish ovozini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sepkilshohning askarlari Qizqo‘rg‘onga kirish uchun nima kavlashdi?",
+   "options": [
+    "A) Yer ostidan lahim kavlashdi",
+    "B) Baland devor qurishdi",
+    "C) Katta ariq qazishdi"
+   ],
+   "answer": "A) Yer ostidan lahim kavlashdi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qizqo‘rg‘onda tutqunlikda bo‘lgan qullarni kimlar ozod qildi?",
+   "options": [
+    "A) Meshpolvon va uning do‘stlari",
+    "B) Sepkilshohning o‘zi",
+    "C) Malla jodugar askarlari"
+   ],
+   "answer": "A) Meshpolvon va uning do‘stlari"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘ydagi kelinsalomda Meshpolvon qanday idishni nog‘ora qilib chaldi?",
+   "options": [
+    "A) Bo‘sh barkashni",
+    "B) Sopol chapyani",
+    "C) Yog‘och qopqoqni"
+   ],
+   "answer": "A) Bo‘sh barkashni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sepkilshoh yengilgach, kimlarning to‘yi bo‘lib o‘tdi?",
+   "options": [
+    "A) Oshiqbola va Oytumorning",
+    "B) Meshpolvon va bekachning",
+    "C) Chumakvoy va qizning"
+   ],
+   "answer": "A) Oshiqbola va Oytumorning"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "To‘y kechasida tartib qanday bo‘ldi?",
+   "options": [
+    "A) Bazmdan so‘ng kelin aravada olib ketildi",
+    "B) Avval to‘y tugab, so‘ng jang bo‘ldi",
+    "C) Qullar qochib, keyin ziyofat bo‘ldi"
+   ],
+   "answer": "A) Bazmdan so‘ng kelin aravada olib ketildi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Meshpolvon oshirib gapirganda dadasi nega qattiq yo‘talib qo‘yardi?",
+   "options": [
+    "A) O‘g‘liga maqtanmaslikni eslatish uchun",
+    "B) Shamollab qolgani uchun",
+    "C) Tomog‘iga ovqat tiqilgani uchun"
+   ],
+   "answer": "A) O‘g‘liga maqtanmaslikni eslatish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Meshpolvon otgan o‘qlov nega aylanib qarama-qarshi tomondan keldi?",
+   "options": [
+    "A) Hojixonajina uni havoda uchirib kelgani uchun",
+    "B) O‘qlov sehrli bo‘lgani uchun",
+    "C) Shamol o‘qlovni qaytarib kelgani uchun"
+   ],
+   "answer": "A) Hojixonajina uni havoda uchirib kelgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Meshpolvonning elga «o‘zlaring urishishni o‘rganinglar» deyishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, har kim o‘z yurtini qo‘riqlashi kerak",
+    "B) Noto‘g‘ri, doim pahlavon kelishini kutish kerak",
+    "C) Noto‘g‘ri, xalq urishmasligi kerak"
+   ],
+   "answer": "A) To‘g‘ri, har kim o‘z yurtini qo‘riqlashi kerak"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Onasining Meshpolvonga maqtanmaslik haqida aytgan nasihati bolaga nima beradi?",
+   "options": [
+    "A) Kamtarlik va samimiylikni o‘rgatadi",
+    "B) O‘zini hamma bilan urishtirishni o‘rgatadi",
+    "C) Uyda tinch o‘tirishni o‘rgatadi"
+   ],
+   "answer": "A) Kamtarlik va samimiylikni o‘rgatadi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Onasining «Sherman desa quyonlar... kulgi bo‘lar hammaga» misrasi nimani anglatadi?",
+   "options": [
+    "A) Qo‘rqoqning o‘zini botir ko‘rsatishi kulgili bo‘lishini",
+    "B) Quyonlar sher bilan do‘st bo‘lishini",
+    "C) O‘rmonda hayvonlar kulishini"
+   ],
+   "answer": "A) Qo‘rqoqning o‘zini botir ko‘rsatishi kulgili bo‘lishini"
+  }
+ ]
+}

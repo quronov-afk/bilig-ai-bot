@@ -1,0 +1,417 @@
+{
+ "title": "Muzlar iskanjasida",
+ "author": "Jyul Vern",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "jasorat",
+   "sadoqat",
+   "sayohat",
+   "oqibat",
+   "oilaviy mehr"
+  ],
+  "theme": "Insoniy sadoqat, matonat va mehr har qanday qahraton sovuq hamda razolat ustidan g‘alaba qozonadi.",
+  "summary": "Lui Kornbyut shimoliy dengizda o‘zgalarni qutqarish chog‘ida bedarak yo‘qoladi. Uning otasi Jan Kornbyut va qallig‘i Mari umidni uzmay, «Navnihol shunqor» kemasida uni izlashga otlanadilar. Arktikaning qahraton muzliklarida og‘ir sinovlar, muz qamallari va Andre Vaslingning xiyonatiga duch keladilar. Yakunda Lui va uning omon qolgan do‘stlari topiladi. Oq ayiqlar hujumi va to‘qnashuvda xiyonatkorlar halok bo‘ladi. Keksa Jan vafot etsa-da, Lui va Mari qolgan komanda bilan vataniga qaytib, baxtli turmush qurishadi.",
+  "characters": "Jan Kornbyut — jasur ota va kapitan. Lui Kornbyut — uning mard va fidoyi o‘g‘li. Mari — Luining sadoqatli qallig‘i. Penellan — sodiq bretoniyalik dengizchi. Andre Vasling — g‘arazli va xiyonatkor kapitan yordamchisi.",
+  "conclusion": "Asar bolaga sadoqat, fidoyilik va qiyinchiliklarda taslim bo‘lmaslikni o‘rgatadi. Ota va farzand o‘rtasidagi mehr hamda do‘stlik tuyg‘ulari har qanday yovuzlikdan ustun ekani ko‘rsatiladi.",
+  "difficulty": "o‘rta",
+  "mood": "hayajonli, og‘ir, sinovli",
+  "for_whom": "Sarguzasht, dengiz va qahramonlik haqidagi asarlarga qiziqadigan, matonatli insonlar haqida o‘qishni xohlaydigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kema bandargohga qanday bayroq ko‘tarib kirib keldi?",
+   "options": [
+    "A) Qizil bayroq",
+    "B) Qora bayroq",
+    "C) Oq bayroq"
+   ],
+   "answer": "B) Qora bayroq"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lui Kornbyut nima uchun dengizda yo‘qolib qolgan edi?",
+   "options": [
+    "A) Qutbni tadqiq qilgani uchun",
+    "B) Boshqa kemadagilarni qutqargani uchun",
+    "C) Savdo qilgani uchun"
+   ],
+   "answer": "B) Boshqa kemadagilarni qutqargani uchun"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jan Kornbyut o‘g‘lini izlash uchun qaysi kemada jo‘nadi?",
+   "options": [
+    "A) Navnihol shunqor",
+    "B) Freyern",
+    "C) Bodo"
+   ],
+   "answer": "A) Navnihol shunqor"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mari kemaga kimning yordami bilan yashirincha chiqib olgan edi?",
+   "options": [
+    "A) Andre Vaslingning",
+    "B) Penellanning",
+    "C) Kyurening"
+   ],
+   "answer": "B) Penellanning"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qidiruv otryadi dastlab qaysi hududlarni ko‘zdan kechirishni rejalashtirdi?",
+   "options": [
+    "A) Shpitsbergen va Islandiyani",
+    "B) Ferer va Bodoe sohillarini",
+    "C) Daniya va Gollandiyani"
+   ],
+   "answer": "B) Ferer va Bodoe sohillarini"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jan Kornbyut o‘g‘lining o‘lganiga nega darrov ishonmadi?",
+   "options": [
+    "A) Ota mehri umid bag‘ishlagani uchun",
+    "B) Vasling yolg‘on gapirgani uchun",
+    "C) Xat olgani uchun"
+   ],
+   "answer": "A) Ota mehri umid bag‘ishlagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bodoe portida topilgan tiqinli shisha dengizchilarga nima berdi?",
+   "options": [
+    "A) Oziq-ovqat xaritasi",
+    "B) Izlash uchun umid va yo‘nalish",
+    "C) Xiyonat haqida ogohlantirish"
+   ],
+   "answer": "B) Izlash uchun umid va yo‘nalish"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jan Kornbyutning o‘g‘lini izlashga shaxsan otlanishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, ota farzandidan kechmaydi",
+    "B) Noto‘g‘ri, u juda keksa edi",
+    "C) Bekorchi ish edi"
+   ],
+   "answer": "A) To‘g‘ri, ota farzandidan kechmaydi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif kema kelgandagi sukunatni «qabriston sukunati» deb nima uchun tasvirlaydi?",
+   "options": [
+    "A) Portda hech kim yo‘qligi uchun",
+    "B) G‘amli xabar vahimasini ko‘rsatish uchun",
+    "C) Ob-havo yomonligi uchun"
+   ],
+   "answer": "B) G‘amli xabar vahimasini ko‘rsatish uchun"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Harakatda — barakat» iborasini Penellan qaysi maqsadda ko‘p takrorlaydi?",
+   "options": [
+    "A) Ishni tezroq tugatish uchun",
+    "B) Sabr va umid berish uchun",
+    "C) Qizdan qutulish uchun"
+   ],
+   "answer": "B) Sabr va umid berish uchun"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kema qutb muzliklari orasiga kirgach, nima sodir bo‘ldi?",
+   "options": [
+    "A) Yonib ketdi",
+    "B) Muzlar iskanjasida qoldi",
+    "C) Cho‘kib ketdi"
+   ],
+   "answer": "B) Muzlar iskanjasida qoldi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qishlov paytida sovuqdan saqlanish uchun qanday uycha tiklashdi?",
+   "options": [
+    "A) Yog‘och kulba",
+    "B) Qor va muzdan uycha",
+    "C) Mato chodir"
+   ],
+   "answer": "B) Qor va muzdan uycha"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kutmaganda yuz bergan dengiz osti hodisasi nima edi?",
+   "options": [
+    "A) Zilzila",
+    "B) Suv toshqini",
+    "C) Tayfun"
+   ],
+   "answer": "A) Zilzila"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muz kulbada otryadni qanday dahshatli xavf qamrab oldi?",
+   "options": [
+    "A) Tutunga bo‘qilib o‘lish",
+    "B) Yirtqichlar hujumi",
+    "C) Suvga cho‘kish"
+   ],
+   "answer": "A) Tutunga bo‘qilib o‘lish"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shimoliy safar uchun qanday maxsus zaxiralar g‘amlangan edi?",
+   "options": [
+    "A) Issiq mo‘yna, limon, pemmikan",
+    "B) Meva, mebel, shoyi mata",
+    "C) Oltin, qurol, tutun"
+   ],
+   "answer": "A) Issiq mo‘yna, limon, pemmikan"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muzliklar siljishi paytida otryad a’zolari tartibi qanday belgilandi?",
+   "options": [
+    "A) Orada masofa saqlab yurishdi",
+    "B) Hamma yonma-yon yurdi",
+    "C) Zanjir bo‘lib bog‘lanishdi"
+   ],
+   "answer": "A) Orada masofa saqlab yurishdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Penellan nega Andre Vaslingning har bir qadamini kuzatib yurdi?",
+   "options": [
+    "A) Vaslingning niyati yomonligini sezgani uchun",
+    "B) Vasling uning do‘sti bo‘lgani uchun",
+    "C) Vasling kapitan bo‘lgani uchun"
+   ],
+   "answer": "A) Vaslingning niyati yomonligini sezgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Olisda ko‘ringan tutun dengizchilarga qanday ta’sir qildi?",
+   "options": [
+    "A) Qorquvga solib qochishga majbur qildi",
+    "B) Tirik qolishga umid bag‘ishladi",
+    "C) Uyushtirilgan tuzoqdek tuyuldi"
+   ],
+   "answer": "B) Tirik qolishga umid bag‘ishladi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Penellanning Mari sovuqda har kuni palubada sayr qilishi haqidagi qarori to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, salomatligini saqlash uchun zarur",
+    "B) Noto‘g‘ri, qizni qiynab qo‘ydi",
+    "C) Ahamiyatsiz va befoyda ish"
+   ],
+   "answer": "A) To‘g‘ri, salomatligini saqlash uchun zarur"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif muzliklar harakatini «sahro beshik misoli tebranardi» deb tasvirlashi nimani anglatadi?",
+   "options": [
+    "A) Muzliklarning ulkan va xavfli tebranishini",
+    "B) Dengizning juda tinch ekanini",
+    "C) Muzlarning osongina eriyotganini"
+   ],
+   "answer": "A) Muzliklarning ulkan va xavfli tebranishini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lui Kornbyut va uning omon qolgan do‘stlari qayerdan topildi?",
+   "options": [
+    "A) G‘aribona g‘orda",
+    "B) G‘aribona muz kulbada",
+    "C) Boshqa kemada"
+   ],
+   "answer": "B) G‘aribona muz kulbada"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Andre Vasling singadan saqlanish uchun mo‘ljallangan nimani o‘g‘irladi?",
+   "options": [
+    "A) Limon bochkachalarini",
+    "B) Go‘sht zaxirasini",
+    "C) Spirt idishlarini"
+   ],
+   "answer": "A) Limon bochkachalarini"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kemaga to‘satdan qanday yirtqich hayvonlar yopirilib hujum qildi?",
+   "options": [
+    "A) Oq ayiqlar",
+    "B) Bo‘rilar",
+    "C) Dengiz sherlari"
+   ],
+   "answer": "A) Oq ayiqlar"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kemada issiqlikni saqlash uchun o‘tin tugagach, nimani yoqishga majbur bo‘lishdi?",
+   "options": [
+    "A) Kemaning taxta qismlarini",
+    "B) Kiyim-kechaklarni",
+    "C) Kitoblarni"
+   ],
+   "answer": "A) Kemaning taxta qismlarini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dyunkerkga qaytgach, kyure cherkovda qanday ikkita marosimni o‘tkazdi?",
+   "options": [
+    "A) Jan Kornbyut duosi va to‘y",
+    "B) Saylov va kema ta’miri",
+    "C) Yangi safar fotiha marosimi"
+   ],
+   "answer": "A) Jan Kornbyut duosi va to‘y"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Andre Vasling ayiqlar hujumi paytida ham nega Luiga qasd qildi?",
+   "options": [
+    "A) Hasad va yovuzlik tufayli",
+    "B) Luini ayiq deb o‘ylagani uchun",
+    "C) Adashib ketgani uchun"
+   ],
+   "answer": "A) Hasad va yovuzlik tufayli"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Penellan ayiqlar haqida «Jonimizga shu ayiqlar ora kirdi» deb nega aytdi?",
+   "options": [
+    "A) Ayiqlar xiyonatkorlar fitnasini buzgani uchun",
+    "B) Ayiqlar go‘sht bo‘lgani uchun",
+    "C) Ayiqlar kemani tortgani uchun"
+   ],
+   "answer": "A) Ayiqlar xiyonatkorlar fitnasini buzgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Andre Vaslingning og‘ir vaziyatda o‘g‘rilik va fitna qilishi qanday baholanadi?",
+   "options": [
+    "A) Pastkashlik va xiyonat",
+    "B) Donolik va ehtiyotkorlik",
+    "C) Majburiylik va odatiylik"
+   ],
+   "answer": "A) Pastkashlik va xiyonat"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dengizchilarning barcha qiyinchiliklarga qaramay bir-biriga yordam berishi qanday xislat?",
+   "options": [
+    "A) Haqiqiy do‘stlik va mardlik",
+    "B) Majburiy bo‘ysunish",
+    "C) Oddiy yumush"
+   ],
+   "answer": "A) Haqiqiy do‘stlik va mardlik"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif bahor kelishini «archagul nihollari tansiq jamoliga Boqardi» deb qanday tasvirlagan?",
+   "options": [
+    "A) Umid va hayot uyg‘onishi",
+    "B) Sovuqning kuchayish tasviri",
+    "C) G‘amginlik tasviri"
+   ],
+   "answer": "A) Umid va hayot uyg‘onishi"
+  }
+ ]
+}

@@ -1,0 +1,418 @@
+{
+ "title": "Anton bo‘rini uchratgan kecha",
+ "author": "Edith Shrayber Vike",
+ "genre": "",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "8-11 yosh",
+  "genre": "falsafiy-sarguzasht qissa",
+  "topics": [
+   "do‘stlik",
+   "tasavvur",
+   "vaqt va keksallik",
+   "hayvonlarga mehr",
+   "va'daga vafo"
+  ],
+  "theme": "Eski buyumlar, hayvonlar va keksalarga mehr ko‘rsatish, vaqtning qadriga yetish va har bir jonzotning o‘z o‘rni borligini anglash.",
+  "summary": "Anton ismli maktab o‘quvchisi uyining tom tagidagi sandiqdan sehrli matnni topadi. U kechasi bo‘ri bilan uchrashadi hamda yugurish musobaqasida undan madad oladi. Anton hayvonot bog‘idagi labi cho‘ziq ayiqqa karam olib borib yordam beradi. U uydan qochgan Ervin bobo, qiyinchilikda qolgan do‘stlari va Hopi hindulari sardori bilan tanishadi. Sehrli zamon gardishi yordamida Anton o‘tmishga sayohat qilib, qora mushuklarni va tabib cholni qutqaradi. Oxirida Anton zamon gardishini ixtirochi soatsozga qaytaradi va undan xotira tariqasida sehrli billur toshni sovg‘a oladi.",
+  "characters": "Anton — mehribon va hayolot dunyosi boy maktab o‘quvchisi. Mushuk — Antonning zukkoga boy uy hayvoni. Bo‘ri — tumanli kechada Antonning madadkoriga aylangan sirdosh hayvon. Labi cho‘ziq ayiq va uning boquvchisi — hayvonot bog‘idagi Antonning do‘stlari. Soatsoz — zamon gardishini ixtiro qilgan keksa usto.",
+  "conclusion": "Asar bolaga atrofdagilarga e'tiborli bo‘lishni, hayvonlarni sevishni va keksalar tajribasini qadrlashni o‘rgatadi. U bolada tasavvur ko‘nikmasini boyitadi va mas'uliyat hissini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, o‘ylantiruvchi, sehrli",
+  "for_whom": "Sarguzashtlarni, sehrli voqealarni va hayvonlar haqida o‘qishni yaxshi ko‘radigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anton sandiqdan qanday tutqichli hassani topdi?",
+   "options": [
+    "A) Mushuk boshi shaklidagi",
+    "B) It boshi shaklidagi",
+    "C) Ot boshi shaklidagi"
+   ],
+   "answer": "B) It boshi shaklidagi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anton tumanli kechada bo‘ri bilan qayerga bordi?",
+   "options": [
+    "A) Keksa eman daraxti tagiga",
+    "B) Hayvonot bog‘iga",
+    "C) Maktab sport maydoniga"
+   ],
+   "answer": "A) Keksa eman daraxti tagiga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gudrun xolaning kuchugi ismi nima edi?",
+   "options": [
+    "A) Bodo",
+    "B) Telramund",
+    "C) Diyeter"
+   ],
+   "answer": "B) Telramund"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anton hayvonot bog‘idagi ayiqqa nima olib bordi?",
+   "options": [
+    "A) Olma",
+    "B) Sabzavot sho‘rva",
+    "C) Ko‘k karam"
+   ],
+   "answer": "C) Ko‘k karam"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Anton sandiq ichidan buyumlarni qanday tartibda ko‘rdi?",
+   "options": [
+    "A) Hassa, shlyapa va kitob",
+    "B) Kitob, qog‘oz va hassa",
+    "C) Shlyapa, kitob va hassa"
+   ],
+   "answer": "A) Hassa, shlyapa va kitob"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Anton va Telramund bog‘da kimlarga duch kelishdi?",
+   "options": [
+    "A) Kabutarlar va bokser itga",
+    "B) Bo‘ri va ayiqqa",
+    "C) Maymunlar va ko‘rshapalakka"
+   ],
+   "answer": "A) Kabutarlar va bokser itga"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bo‘ri bilan yugurganda Anton nimani his qildi?",
+   "options": [
+    "A) Qiynalmasdan yugurayotganini",
+    "B) Juda charchaganini",
+    "C) Oyoqlari og‘riyotganini"
+   ],
+   "answer": "A) Qiynalmasdan yugurayotganini"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Anton nega boquvchining ovozini ayiqnikiga o‘xshatdi?",
+   "options": [
+    "A) Erkak ham to‘ng‘illab gapirgani uchun",
+    "B) Erkak baland baqirgani uchun",
+    "C) Erkak qo‘shiq kuylagani uchun"
+   ],
+   "answer": "A) Erkak ham to‘ng‘illab gapirgani uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Antonning ayiqqa karam olib borishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, unga mehr ko‘rsatdi",
+    "B) Noto‘g‘ri, hayvondan qo‘rqish kerak",
+    "C) Noto‘g‘ri, karamni o‘zi yeyishi kerak"
+   ],
+   "answer": "A) To‘g‘ri, unga mehr ko‘rsatdi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Anton va bo‘ri uchrashuvini qanday tasvirlagan?",
+   "options": [
+    "A) Qo‘rqinchli va dahshatli",
+    "B) Sirli va vahimasiz",
+    "C) Kulgili va sho‘x"
+   ],
+   "answer": "B) Sirli va vahimasiz"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Supermen nega yangi kiyim sotib ololmas edi?",
+   "options": [
+    "A) Puli yo‘qligi uchun",
+    "B) Do‘kon yopiqligi uchun",
+    "C) Kiyim yoqmagani uchun"
+   ],
+   "answer": "A) Puli yo‘qligi uchun"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anton qo‘shnisining mikseriga qanday yordam berdi?",
+   "options": [
+    "A) Ulagichni rozetkaga uladi",
+    "B) Ichini ochib tuzatdi",
+    "C) Yangi mikser sotib oldi"
+   ],
+   "answer": "A) Ulagichni rozetkaga uladi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qorbobo Antonga to‘rvachada nimani qaytarib berdi?",
+   "options": [
+    "A) Yo‘qotgan o‘ng qo‘lqopini",
+    "B) Shokolad to‘la qutini",
+    "C) Sehrli sharnir soatni"
+   ],
+   "answer": "A) Yo‘qotgan o‘ng qo‘lqopini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ervin bobo uydan nima uchun qochgan edi?",
+   "options": [
+    "A) Qizining ortiqcha g‘amxo‘rligidan",
+    "B) Puli tugab qolgani uchun",
+    "C) Nevaralari bilan urishib"
+   ],
+   "answer": "A) Qizining ortiqcha g‘amxo‘rligidan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Gundining uyidagi bayramda Anton nimalar qildi?",
+   "options": [
+    "A) Tortni qushlarga berdi va ketdi",
+    "B) Raqsga tushdi va rasm chizdi",
+    "C) O‘yin o‘ynadi va uxladi"
+   ],
+   "answer": "A) Tortni qushlarga berdi va ketdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tomas nima uchun bir hafta maktabga kelmadi?",
+   "options": [
+    "A) Otasi ko‘zini mo‘mataloq qilgani uchun",
+    "B) Qattiq shamollab qolgani uchun",
+    "C) Boshqa shaharga ketgani uchun"
+   ],
+   "answer": "A) Otasi ko‘zini mo‘mataloq qilgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hindular rivoyatidagi Yahu so‘zi nimani anglatadi?",
+   "options": [
+    "A) Birgalikda harakat qilishni",
+    "B) Osmondan qo‘rqishni",
+    "C) Chopib qochishni"
+   ],
+   "answer": "A) Birgalikda harakat qilishni"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Antonning Ervin bobo bilan muomalasini qanday baholaysan?",
+   "options": [
+    "A) Kattalarga nisbatan e'tiborli",
+    "B) O‘ta odobsiz va qo‘pol",
+    "C) Bevaqt va befoyda"
+   ],
+   "answer": "A) Kattalarga nisbatan e'tiborli"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Antonning qushlarga tort berishi haqida nima deysan?",
+   "options": [
+    "A) Jonzotlarga bo‘lgan mehr ko‘rsatgichi",
+    "B) Yegulikni shunchaki isrof qilish",
+    "C) Uy egalariga bildirilgan hurmatsizlik"
+   ],
+   "answer": "A) Jonzotlarga bo‘lgan mehr ko‘rsatgichi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Tomasning holatini tasvirlab nimani uyg‘otadi?",
+   "options": [
+    "A) Tomasga nisbatan hamdardlikni",
+    "B) Tomas ustidan kulishni",
+    "C) Qiziqish va quvonchni"
+   ],
+   "answer": "A) Tomasga nisbatan hamdardlikni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anton o‘tmishga sayohatda qanday vosita ishlatdi?",
+   "options": [
+    "A) Zamon gardishini",
+    "B) Sehrli tayoqchani",
+    "C) Uchar gilamni"
+   ],
+   "answer": "A) Zamon gardishini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘tmishdagi shahar qo‘riqchisi fonusni nima deb atadi?",
+   "options": [
+    "A) Shaytonchiroq",
+    "B) Sehrli chiroq",
+    "C) Qorong‘i fonus"
+   ],
+   "answer": "A) Shaytonchiroq"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Antonni qamoqdan kim qutqarib qoldi?",
+   "options": [
+    "A) Qisqartirilgan soqolli tabib chol",
+    "B) Soatsoz usto",
+    "C) Shahar hokimi"
+   ],
+   "answer": "A) Qisqartirilgan soqolli tabib chol"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Soatsoz Antonga ajdodidan qolgan nimani berdi?",
+   "options": [
+    "A) Oq billur toshni",
+    "B) Qadimiy soatni",
+    "C) Oltin kalitni"
+   ],
+   "answer": "A) Oq billur toshni"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Anton zamon gardishini oxirida nima qildi?",
+   "options": [
+    "A) Soatsozga eltib topshirdi",
+    "B) Karavot tagida saqladi",
+    "C) Daryoga tashlab yubordi"
+   ],
+   "answer": "A) Soatsozga eltib topshirdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Anton nima uchun gardishni soatsozga qaytarib berdi?",
+   "options": [
+    "A) Soatsoz ixtirosiga o‘zi mas'ulligini bilgani uchun",
+    "B) Gardish sinib qolgani uchun",
+    "C) Onasi tashlab yuborgani uchun"
+   ],
+   "answer": "A) Soatsoz ixtirosiga o‘zi mas'ulligini bilgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Soatsoz bergan billur tosh nimasi bilan g‘aroyib edi?",
+   "options": [
+    "A) U o‘tmishdagi tabibning toshi edi",
+    "B) U qorong‘ida yorug‘lik berardi",
+    "C) U har xil rangga kirardi"
+   ],
+   "answer": "A) U o‘tmishdagi tabibning toshi edi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Antonning o‘tmishga boshqa qaytmaslik qarori to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, xavf-xatarlarning oldini oldi",
+    "B) Noto‘g‘ri, sayohatni davom ettirishi kerak edi",
+    "C) Noto‘g‘ri, qo‘rqoqlik qildi"
+   ],
+   "answer": "A) To‘g‘ri, xavf-xatarlarning oldini oldi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Billur tosh topilishi tasviri nimani uyg‘otadi?",
+   "options": [
+    "A) Sehrli bog‘liqlik va mo‘jiza hissiyotini",
+    "B) Qo‘rqinch va xavotir tuyg‘usini",
+    "C) Ziddiyat va g‘azab tuyg‘usini"
+   ],
+   "answer": "A) Sehrli bog‘liqlik va mo‘jiza hissiyotini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Antonning o‘z zamoniga qaytgandagi quvonchini qanday ko‘rsatadi?",
+   "options": [
+    "A) Yengil tortib devordan gardishni olishi bilan",
+    "B) Baland ovozda qo‘shiq aytishi bilan",
+    "C) Onasiga hammasini aytib berishi bilan"
+   ],
+   "answer": "A) Yengil tortib devordan gardishni olishi bilan"
+  }
+ ]
+}

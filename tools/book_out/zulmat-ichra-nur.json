@@ -1,0 +1,447 @@
+{
+ "title": "Zulmat ichra nur",
+ "author": "Mirkarim Osim",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15 yoshdagilar uchun",
+  "topics": [
+   "tarix",
+   "ilm-fan",
+   "adabiyot",
+   "vatanparvarlik",
+   "shaxsiyat"
+  ],
+  "theme": "Alisher Navoiyning bolaligidan boshlab ilm, ma‘rifat va adolat yo‘lida kechgan mashaqqatli hamda sharafli hayot yo‘lini ko‘rsatish.",
+  "summary": "Qissada Alisher Navoiyning to‘rt yoshli bolaligidan to umrining oxirigacha bo‘lgan voqealar aks ettirilgan. Yosh Alisher erta maktabga borib, Farididdin Attorning 'Mantiq ut-tayr' dostoniga ko‘ngil qo‘yadi. Shohrux Mirza vafotidan so‘ng mamlakatda parokandalik boshlanadi, Alisher oilasi bilan Yazdga ko‘chadi va u yerda Sharafiddin Yazdiy bilan uchrashadi. Samarqand, Mashhad hamda Hirotda ilm olib, sulton Husayn Boyqaro saroyida vazir va hokim bo‘lib ishlaydi. U xalq farovonligi, obodonchilik va ilm-fan rivojiga ulkan hissa qo‘shadi. Saroy ig‘volari hamda yaqinlarining fojiali taqdiri (Mo‘min mirza va Mirhaydarning halokati) uni qattiq iztirobga soladi. Umrining oxirida ham u ilm va adabiyotga sodiq qolib, xalq xotirasida zulmat ichra nur taratgan ulug‘ zot sifatida muhrlanadi.",
+  "characters": "Alisher Navoiy — bosh qahramon, ulug‘ shoir va adolatli davlat arbobi; G‘iyosiddin Kichkina — Alisherning otasi; Husayn Boyqaro — Alisherning maktabdosh do‘sti, Xuroson sultoni; Sharafiddin Yazdiy — tarixchi olim; Pahlavon Muhammad — Navoiyning yaqin do‘sti va ijodkor.",
+  "conclusion": "Ushbu asar kitobxonga ilm-fan va adabiyotning inson hayotidagi yuksak o‘rnini ko‘rsatib beradi. Bola Navoiy siymosida vatanparvarlik, halollik va sabr-toqat kabi ijobiy fazilatlarni o‘rganadi. Qissa milliy ma‘naviyatimiz hamda tarixiy shaxslarimizga nisbatan fahr va hurmat tuyg‘usini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "tarixiy, hazin, o‘ylantiruvchi",
+  "for_whom": "Tarixiy shaxslar hayoti, adabiyot va ilm-fan taraqqiyotiga qiziquvchi, Navoiy bobomizning bolaligi va fazilatlari haqida bilmoqchi bo‘lgan kitobxonlarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alisher to‘rt yoshida otasidan qanday o‘yinchoq oldi?",
+   "options": [
+    "A) Yog‘och otcha",
+    "B) Sopol qo‘chqor",
+    "C) Temir qilich",
+    "D) Kamon va o‘q"
+   ],
+   "answer": "B) Sopol qo‘chqor"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘iyosiddin Kichkina Sabzavorda qanday g‘oyat mas‘uliyatli mansabda ishlagan?",
+   "options": [
+    "A) Qozikalon",
+    "B) Hokim",
+    "C) Xazinachi",
+    "D) Kitobdor"
+   ],
+   "answer": "B) Hokim"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shohrux Mirza vafotidan so‘ng Alisher oilasi qayerga ko‘chdi?",
+   "options": [
+    "A) Yazd vohasiga",
+    "B) Samarqand shahriga",
+    "C) Mashhad shahriga",
+    "D) Balkh shahriga"
+   ],
+   "answer": "A) Yazd vohasiga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alisher maktabda taxta ostiga qaysi kitobni yashirib o‘qir edi?",
+   "options": [
+    "A) \"Guliston\" kitobini",
+    "B) \"Mantiq ut-tayr\" kitobini",
+    "C) \"Zafarnoma\" kitobini",
+    "D) \"Haftiyak\" kitobini"
+   ],
+   "answer": "B) \"Mantiq ut-tayr\" kitobini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Yosh Alisher hayotidagi ushbu uch voqeani to‘g‘ri tartibda ko‘rsating.",
+   "options": [
+    "A) She‘r aytishi, adashishi, maktabga borishi",
+    "B) She‘r aytishi, maktabga borishi, adashishi",
+    "C) Maktabga borishi, she‘r aytishi, adashishi",
+    "D) Adashishi, maktabga borishi, she‘r aytishi"
+   ],
+   "answer": "B) She‘r aytishi, maktabga borishi, adashishi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Alisherning tog‘alari fe‘l-atvorini to‘g‘ri guruhlang.",
+   "options": [
+    "A) Mirsaid xushchaqchaq, Muhammad Ali sipo",
+    "B) Mirsaid sipo, Muhammad Ali xushchaqchaq",
+    "C) Ikkalasi ham sipo edi",
+    "D) Ikkalasi ham o‘ta sho‘x edi"
+   ],
+   "answer": "B) Mirsaid sipo, Muhammad Ali xushchaqchaq"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Otasi Alisherga she‘r o‘qitishni boshqalardan nega pinhon tutmoqchi bo‘ldi?",
+   "options": [
+    "A) Yomon ko‘z tegishidan qo‘rqqani uchun",
+    "B) Uyga mehmon kelmagani uchun",
+    "C) Alisher she‘r bilmagani uchun",
+    "D) Shoir bo‘lishini xohlamagani uchun"
+   ],
+   "answer": "A) Yomon ko‘z tegishidan qo‘rqqani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Alisher Yazd cho‘lida adashganda nega aynan kun chiqishga yurdi?",
+   "options": [
+    "A) Hirot kun chiqishda ekanini eshitgani uchun",
+    "B) Quyoshdan panalanmoqchi bo‘lgani uchun",
+    "C) Shamol shu tomondan esgani uchun",
+    "D) Boshqa yo‘l bo‘lmagani uchun"
+   ],
+   "answer": "A) Hirot kun chiqishda ekanini eshitgani uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Alisherning cho‘ldagi idishni uzoqdan gumbaz deb o‘ylashi nimani bildiradi?",
+   "options": [
+    "A) Qo‘rquv va sarosimada qolganini",
+    "B) Ziyrakligi va sinchkov kuzatuvchi ekanini",
+    "C) Ko‘zlari ojizlanib qolganini",
+    "D) Shoirlik xayoli o‘sib borayotganini"
+   ],
+   "answer": "B) Ziyrakligi va sinchkov kuzatuvchi ekanini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Attor haqidagi somon qop hikoyasi Alisherda qanday tuyg‘u uyg‘otdi?",
+   "options": [
+    "A) Shoir ijodiga qiziqishini oshirdi",
+    "B) Qo‘rquv tuyg‘usini paydo qildi",
+    "C) Dehqonlardan nafratlanishni o‘rgatdi",
+    "D) Attor kitobini o‘qimaslikka undadi"
+   ],
+   "answer": "A) Shoir ijodiga qiziqishini oshirdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mashhadda betob Alisherning choponini kim tikib qo‘ymoqchi bo‘ldi?",
+   "options": [
+    "A) Hasan Ardasher",
+    "B) Pahlavon Muhammad",
+    "C) Abdusamad kotib",
+    "D) Sulton Abulqosim"
+   ],
+   "answer": "B) Pahlavon Muhammad"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alisher Samarqandda qaysi majmuani ko‘rib ko‘ngli tog‘dek ko‘tarildi?",
+   "options": [
+    "A) Shohi Zinda majmuasini",
+    "B) Ulug‘bek rasadxonasini",
+    "C) Bibi Xonim masjidini",
+    "D) Go‘ri Amir maqbarasini"
+   ],
+   "answer": "B) Ulug‘bek rasadxonasini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Naqqosh Hoji Muhammad Navoiyga qanday noyob buyum yasab berdi?",
+   "options": [
+    "A) Sandiq shaklidagi soatni",
+    "B) Oltin suvi yuritilgan shamdonni",
+    "C) Naqshdor yog‘och sandiqni",
+    "D) Kumush sopli pichoqni"
+   ],
+   "answer": "A) Sandiq shaklidagi soatni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy Astrobodda Maryamobod kenti dehqonlariga qanday inoyat ko‘rsatdi?",
+   "options": [
+    "A) Ularni yer bilan ta‘minladi",
+    "B) Ikki yil xirojdan ozod etdi",
+    "C) Yangi uylar qurib berdi",
+    "D) Xarajatlarini o‘z bo‘yniga aldi"
+   ],
+   "answer": "B) Ikki yil xirojdan ozod etdi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Navoiy faoliyatidagi voqealarni to‘g‘ri ketma-ketlikda belgilang.",
+   "options": [
+    "A) Samarqandda bo‘lish, Astrobod hokimligi, Balx sulhi",
+    "B) Astrobod hokimligi, Samarqandda bo‘lish, Balx sulhi",
+    "C) Balx sulhi, Astrobod hokimligi, Samarqandda bo‘lish",
+    "D) Samarqandda bo‘lish, Balx sulhi, Astrobod hokimligi"
+   ],
+   "answer": "A) Samarqandda bo‘lish, Astrobod hokimligi, Balx sulhi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Navoiy yonidagi ijodkorlarni ularning kasbiga qarab to‘g‘ri ajrating.",
+   "options": [
+    "A) Hoji Muhammad — naqqosh, Behzod — musavvir",
+    "B) Hoji Muhammad — musavvir, Behzod — kotib",
+    "C) Hoji Muhammad — shoir, Behzod — naqqosh",
+    "D) Hoji Muhammad — kotib, Behzod — musavvir"
+   ],
+   "answer": "A) Hoji Muhammad — naqqosh, Behzod — musavvir"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Navoiy Astrobodda bakovulni bilib turib nega jallodga bermadi?",
+   "options": [
+    "A) Bakovuldan qo‘rqqani uchun",
+    "B) Saroyda ig‘vo ko‘paymasligi uchun",
+    "C) Bakovul uni maqtangani uchun",
+    "D) Sulton ruxsat bermagani uchun"
+   ],
+   "answer": "B) Saroyda ig‘vo ko‘paymasligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jomiy kotib Abdusamad ko‘chirgan kitobdan nega norozi bo‘ldi?",
+   "options": [
+    "A) Xushxat bo‘lsa ham xatolar qilgani uchun",
+    "B) Qimmat narx so‘ragani uchun",
+    "C) Varaqlarini yirtib qo‘ygani uchun",
+    "D) Kitobni o‘z vaqtida topshirmagani uchun"
+   ],
+   "answer": "A) Xushxat bo‘lsa ham xatolar qilgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Navoiyning Badiuzzamon bilan uchrashib sulh tuzishi qanday baholanadi?",
+   "options": [
+    "A) Yurt tinchligini o‘ylagan oqilona ish",
+    "B) Shohga nisbatan xiyonatkorona ish",
+    "C) O‘z manfaatini ko‘zlagan ish",
+    "D) Ma‘nosiz hamda keraksiz harakat"
+   ],
+   "answer": "A) Yurt tinchligini o‘ylagan oqilona ish"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Navoiyning sulhdan so‘ng o‘n yil yasharganini aytib nimani ko‘rsatgan?",
+   "options": [
+    "A) Urush to‘xtaganidan cheksiz quvonganini",
+    "B) Sog‘lig‘i birdan tiklanib qolganini",
+    "C) Shahzodadan sovg‘a olganini",
+    "D) Hirotga tezroq qaytishini"
+   ],
+   "answer": "A) Urush to‘xtaganidan cheksiz quvonganini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zindonda yotgan begunoh Mo‘min mirzani kim qatl etdi?",
+   "options": [
+    "A) Bakovul Mirhoji",
+    "B) Do‘lana jallod",
+    "C) Muhammad Valibek",
+    "D) Nizomulmulk"
+   ],
+   "answer": "B) Do‘lana jallod"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mirhaydar darvishlikni tark etib kimning xizmatiga o‘tib ketdi?",
+   "options": [
+    "A) Sulton Ahmad",
+    "B) Xisravshoh",
+    "C) Badiuzzamon",
+    "D) Abu Said"
+   ],
+   "answer": "B) Xisravshoh"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sulton Husayn Bodg‘isda elchi bo‘lib kelgan Mirhaydarga qanday jazo berdi?",
+   "options": [
+    "A) Uni qamatib, so‘ng qatl ettirdi",
+    "B) Uni kechirib, sovg‘alar berdi",
+    "C) Qunduzga qaytarib yubordi",
+    "D) Astrobodga hokim qilib tayinladi"
+   ],
+   "answer": "A) Uni qamatib, so‘ng qatl ettirdi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy vafot etgach, uning jasadini qayerga dafn etishdi?",
+   "options": [
+    "A) Gozurgoh mozoriga",
+    "B) O‘zi qurdirgan masjid jomesi yaniga",
+    "C) Taft qishlog‘idagi xonaqohga",
+    "D) Mashhad shahridagi maqbaraga"
+   ],
+   "answer": "B) O‘zi qurdirgan masjid jomesi yaniga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hirot xalqi Navoiy tobutiga nega intilib yaqinlashishga urindi?",
+   "options": [
+    "A) Shoirga bo‘lgan yuksak hurmati sababli",
+    "B) Shahzodalar buyrug‘ini bajargani uchun",
+    "C) Tarqatilayotgan ehsonni olish uchun",
+    "D) Masjiddan joy egallash uchun"
+   ],
+   "answer": "A) Shoirga bo‘lgan yuksak hurmati sababli"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sulton Husayn Navoiy uyida uch kun o‘tirishdan qanday maqsad ko‘zlagan?",
+   "options": [
+    "A) Navoiyning mol-mulkiga merosxo‘r ekanini ko‘rsatish",
+    "B) Ulug‘ shoirga chin dildan azadorlik qilish",
+    "C) Hirot xalqiga o‘z saxovatini ko‘rsatish",
+    "D) Shoirning inisi kelishini kutish"
+   ],
+   "answer": "A) Navoiyning mol-mulkiga merosxo‘r ekanini ko‘rsatish"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mirhaydarning mehnatdan qochib darvishlikka kirishiga Navoiy munosabati qanday bo‘ldi?",
+   "options": [
+    "A) Buni soxta va riyokorlik deb bildi",
+    "B) Uning bu qarorini ma‘qulladi",
+    "C) Mirhaydarga mol-mulkini berdi",
+    "D) U bilan birga darvishlik qildi"
+   ],
+   "answer": "A) Buni soxta va riyokorlik deb bildi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sulton Husaynning o‘z nabirasini qatl ettirgani haqida qanday baho beriladi?",
+   "options": [
+    "A) Bu zulm va katta fojia edi",
+    "B) U adolatli va to‘g‘ri qaror edi",
+    "C) Yurt tinchligi uchun zarur edi",
+    "D) Shahzodaning iltimosi bilan bo‘ldi"
+   ],
+   "answer": "A) Bu zulm va katta fojia edi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Navoiy shiyponidagi sham nurining tasviri asarda nimani anglatadi?",
+   "options": [
+    "A) Zulmatli zamondagi ma‘rifat va adolat nurini",
+    "B) Tunda ishlaydigan shoirning charchoqlarini",
+    "C) Hirot saroyidagi dabdabali hayotni",
+    "D) Qashshoqlikdagi nochor hayot tarzini"
+   ],
+   "answer": "A) Zulmatli zamondagi ma‘rifat va adolat nurini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida yomg‘ir yog‘ishi qanday tuyg‘uni ifodalash uchun qo‘llangan?",
+   "options": [
+    "A) Xalqning ulug‘ shoirdan ayrilgan qayg‘usini",
+    "B) Hirotdagi ob-havoning yomonlashganini",
+    "C) Tabiatning bahor kelganidan quvonchini",
+    "D) Saroydagilarning tinchlanib qolganini"
+   ],
+   "answer": "A) Xalqning ulug‘ shoirdan ayrilgan qayg‘usini"
+  }
+ ]
+}

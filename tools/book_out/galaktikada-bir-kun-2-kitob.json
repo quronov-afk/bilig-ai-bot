@@ -1,0 +1,417 @@
+{
+ "title": "Galaktikada bir kun 2-kitob",
+ "author": "Saʼdullo Quronov",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "sarguzasht",
+   "koinot",
+   "do‘stlik",
+   "ilm-fan",
+   "jasorat"
+  ],
+  "theme": "Ilm-fan, jasorat va ezgulik yovuzlik hamda manfaatsizlik ustidan har doim g‘alaba qozonadi.",
+  "summary": "Ahmad Yerdagi Moviy toshlar ustida tajriba o‘tkazayotganda kutilmagan radioaktivlik tarqaladi. Bu hodisa Pentagon va olis sayyoralarning e'tiborini tortadi. Salmirdan kelgan Dumgom Ahmadni qutqarib, koinotga olib ketadi. Yovuz qirol Magistik XXIII galaktikani bosib olish uchun Moviy toshlar qurolini yasamoqchi bo‘ladi. Ahmad do‘stlari Moki, To‘g‘rivoy, O‘g‘rivachcha va Mitnik bilan birga Hodisalar gorizonti hamda Kvantlar olamiga kirib, xaritani tiklaydi. Qadimgi Meriya sayyorasidagi bilimlardan foydalanib, annigilyatsiya hodisasi orqali dushman qo‘shinini mag‘lub etadi va galaktikani qutqaradi. Uyga qaytgach, bularning baridan saboq olib, haqiqiy mo‘jiza insonning o‘z qalbida ekanini anglaydi.",
+  "characters": "Ahmad — topqir, bilimdon yerlik bola, koinot xaloskori. Dumgom — Salmir sayyorasidan kelgan sodiq do‘st. Magistik XXIII — galaktikani bosib olmoqchi bo‘lgan yovuz qirol. Moki — kvant-protsessorli noyob droid.",
+  "conclusion": "Kitob bolada ilm-fanga qiziqish, muammolarga aqlli yechim topish va vatanparvarlik tuyg‘ularini shakllantiradi. Qahramonning jasorati va do‘stlikka sodiqligi bolani mardlik hamda ezgulikka undaydi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, hayajonli, ilmiy-fantastik",
+  "for_whom": "Koinot sirlari, ilmiy-fantastik sarguzashtlar va fizika mo‘jizalariga qiziqadigan chaqqon bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pentagon mayor Jekobson yadro fizikasi bo‘yicha qanday mutaxassis edi?",
+   "options": [
+    "A) Yetuk va tajribali mutaxassis",
+    "B) Yangi kelgan shogird",
+    "C) Oddiy harbiy haydovchi"
+   ],
+   "answer": "A) Yetuk va tajribali mutaxassis"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Radioaktivlik o‘chog‘i O‘zbekistonning qaysi viloyatida aniqlandi?",
+   "options": [
+    "A) Toshkent viloyatida",
+    "B) Andijon viloyatida",
+    "C) Samarqand viloyatida"
+   ],
+   "answer": "B) Andijon viloyatida"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmad xonasida toshga zarba berganda bolg‘a qayoqqa otildi?",
+   "options": [
+    "A) Yerto‘laga tushib ketdi",
+    "B) Shift va tomni teshib uchdi",
+    "C) Derazadan ko‘chaga uchdi"
+   ],
+   "answer": "B) Shift va tomni teshib uchdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmadni yerto‘ladan qutqargan pakana va xunuk odam kim edi?",
+   "options": [
+    "A) General Obma",
+    "B) Margolning evarasi Dumgom",
+    "C) Qirol Magistik"
+   ],
+   "answer": "B) Margolning evarasi Dumgom"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Quyidagilardan qaysi voqea boshqalardan oldinroq sodir bo‘ldi?",
+   "options": [
+    "A) Ahmad toshni egovlab ko‘rdi",
+    "B) Pentagon yig‘ilishi o‘tkazildi",
+    "C) Dumgom yerto‘laga tushdi"
+   ],
+   "answer": "A) Ahmad toshni egovlab ko‘rdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Pentagondagi yig‘ilishda ishtirok etgan harbiylarni belgilang.",
+   "options": [
+    "A) Shvaykart va Jekobson",
+    "B) Margol va Dumgom",
+    "C) Obma va Dordon"
+   ],
+   "answer": "A) Shvaykart va Jekobson"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ahmad Moviy toshni nega bolg‘a bilan urishga majbur bo‘ldi?",
+   "options": [
+    "A) Toshni sadoqat bilan sevgandi",
+    "B) Egov toshdan zarracha ajratolmadi",
+    "C) Bolg‘ani yo‘qotib qo‘ymoqchi edi"
+   ],
+   "answer": "B) Egov toshdan zarracha ajratolmadi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Pentagondagilar kuchli radioaktivlikni ko‘rib nega vahimaga tushishdi?",
+   "options": [
+    "A) Yerdagi barcha qurilmalar buzilgandi",
+    "B) Misli ko‘rilmagan energiya tarqalgandi",
+    "C) Quyosh butunlay o‘chib qolgandi"
+   ],
+   "answer": "B) Misli ko‘rilmagan energiya tarqalgandi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ahmadning tosh sirini bilim bilan o‘rganishga intilishi qanday baholanadi?",
+   "options": [
+    "A) Ijobiy, u ilmga intilgan",
+    "B) Salbiy, u shunchaki zerikkan",
+    "C) Noto‘g‘ri, u tajribani yoqtirmagan"
+   ],
+   "answer": "A) Ijobiy, u ilmga intilgan"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"butun Yer kurrasida vaqt to‘xtab qolgandi\" deb nimani tasvirlagan?",
+   "options": [
+    "A) Hodisaning favqulodda shiddatli ekanini",
+    "B) Soat millari haqiqatan to‘xtaganini",
+    "C) Xonadagi chiroqlar o‘chib qolganini"
+   ],
+   "answer": "A) Hodisaning favqulodda shiddatli ekanini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmad va Dumgom Mokini izlab qaysi sayyoraga borishdi?",
+   "options": [
+    "A) Salmir sayyorasiga",
+    "B) Kasmond sayyorasiga",
+    "C) Olmos sayyorasiga"
+   ],
+   "answer": "B) Kasmond sayyorasiga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mokining miyasi nimadan iborat edi?",
+   "options": [
+    "A) Temir tishli g‘ildiraklardan",
+    "B) To‘q ko‘k rangli toshdan",
+    "C) Oddiy sim va plastmassadan"
+   ],
+   "answer": "B) To‘q ko‘k rangli toshdan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘g‘riboshining o‘g‘li o‘zini qanday tanishtirdi?",
+   "options": [
+    "A) To‘g‘rivoy deb",
+    "B) O‘g‘rivachcha deb",
+    "C) Mitnik deb"
+   ],
+   "answer": "B) O‘g‘rivachcha deb"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kvantlar olamida Ahmad qaysi fizik olimning qonunini qo‘lladi?",
+   "options": [
+    "A) Nyuton qonunini",
+    "B) Galileo qonunini",
+    "C) Arximed qonunini"
+   ],
+   "answer": "A) Nyuton qonunini"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mokining xarakterli belgilari to‘g‘ri ko‘rsatilgan qatorni toping.",
+   "options": [
+    "A) Kvant-foton miyali, sodiq droid",
+    "B) Yovuz harbiy, dushman generali",
+    "C) Kasmondlik o‘g‘ri va firibgar"
+   ],
+   "answer": "A) Kvant-foton miyali, sodiq droid"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "\"Kvantlar olami\"ga kirish ketma-ketligini aniqlang.",
+   "options": [
+    "A) Qora tuynuk, Hodisalar gorizonti, Kvantlar",
+    "B) Uy, Pentagon, Kasmond sayyorasi",
+    "C) Meriya sayyorasi, urush, tinchlik"
+   ],
+   "answer": "A) Qora tuynuk, Hodisalar gorizonti, Kvantlar"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Moki nega bank hududidan tashqariga chiqa olmasdi?",
+   "options": [
+    "A) Tanasiga maxsus chip o‘rnatilgandi",
+    "B) U yurishni butunlay unutgandi",
+    "C) Unga ko‘cha havosi yoqmasdi"
+   ],
+   "answer": "A) Tanasiga maxsus chip o‘rnatilgandi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ahmad nega Hodisalar gorizontiga kirish g‘oyasini ilgari surdi?",
+   "options": [
+    "A) Droid xotirasidagi kvantlarni olish uchun",
+    "B) Dushmandan yashirinib dam olish uchun",
+    "C) Yangi kema sotib olish uchun"
+   ],
+   "answer": "A) Droid xotirasidagi kvantlarni olish uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "O‘g‘rivachchaning Ahmad va Dumgomga yordam berishi qanday baholanadi?",
+   "options": [
+    "A) Ezgu va to‘g‘ri qaror",
+    "B) Qo‘rqoqlik va sotqinlik",
+    "C) Maqsadni tushunmaslik"
+   ],
+   "answer": "A) Ezgu va to‘g‘ri qaror"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Kasmond sayyorasidagi 33 ming yulduzni nimaga o‘xshatgan?",
+   "options": [
+    "A) Bozorda adashgan bolaga",
+    "B) Osmondagi chaqmoqqa",
+    "C) Suzib yurgan baliqqa"
+   ],
+   "answer": "A) Bozorda adashgan bolaga"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qirol Magistik yaratgan dahshatli qurol nima deb atalardi?",
+   "options": [
+    "A) \"Dahshat bo‘roni\"",
+    "B) \"Moviy qalqon\"",
+    "C) \"Quyosh nuri\""
+   ],
+   "answer": "A) \"Dahshat bo‘roni\""
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmad superkompyuter matosiga barmog‘ini bosganda nima vujudga keldi?",
+   "options": [
+    "A) Bioneyronkompyuter vujudga keldi",
+    "B) Kema o‘chib qoldi",
+    "C) Dushman qochib ketdi"
+   ],
+   "answer": "A) Bioneyronkompyuter vujudga keldi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Materiya va antimateriya to‘qnashuvi ilm-fanda nima deyiladi?",
+   "options": [
+    "A) Gravitatsiya",
+    "B) Annigilyatsiya",
+    "C) Radiatsiya"
+   ],
+   "answer": "B) Annigilyatsiya"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmad uyiga qaytgach devordagi taqvim qaysi sana va yilni ko‘rsatardi?",
+   "options": [
+    "A) 2036-yil 25-iyun",
+    "B) 2038-yil 18-aprel",
+    "C) 2040-yil 1-yanvar"
+   ],
+   "answer": "A) 2036-yil 25-iyun"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ahmad dushman qo‘shinini mag‘lub etishda qanday usuldan foydalandi?",
+   "options": [
+    "A) Annigilyatsiya energiyasini dushman tomonga yo‘naltirdi",
+    "B) Dushman kemalarini o‘zi quvib yetdi",
+    "C) Salmir qo‘shinini qochirib yubordi"
+   ],
+   "answer": "A) Annigilyatsiya energiyasini dushman tomonga yo‘naltirdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ahmad koinot sarguzashtlaridan keyin qanday muhim xulosaga keldi?",
+   "options": [
+    "A) Asl mo‘jiza o‘z qalbida ekanini",
+    "B) Koinotga boshqa uchmaslik kerakligini",
+    "C) Boylik to‘plash eng muhimligini"
+   ],
+   "answer": "A) Asl mo‘jiza o‘z qalbida ekanini"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Salmir harbiylarining Vatanini oxirigacha himoya qilishi qanday sifat?",
+   "options": [
+    "A) Yuksak mardlik va fidoiylik",
+    "B) Shunchaki behuda urinish",
+    "C) Qo‘rqoqlik va ikkilanuvchanlik"
+   ],
+   "answer": "A) Yuksak mardlik va fidoiylik"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ahmadning tosh va qurollarni muzey hamda omborga topshirishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, xavfsizlik va tinchlik uchun",
+    "B) Noto‘g‘ri, ularni sotishi kerak edi",
+    "C) Noto‘g‘ri, ularni tashlab yuborgani ma'qul"
+   ],
+   "answer": "A) To‘g‘ri, xavfsizlik va tinchlik uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif dushman yo‘qolganini \"Sassiz, sadosiz daf bo‘ldi\" deb aytishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Ezgulik kuchining mutlaq g‘alabasini",
+    "B) Dushmanlar sekin qochganini",
+    "C) Koinotda shovqin ko‘tarilganini"
+   ],
+   "answer": "A) Ezgulik kuchining mutlaq g‘alabasini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Qissaning so‘nggi jumlasi kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Qiziqish va samimiy tabassum",
+    "B) Qattiq xafa bo‘lish",
+    "C) Qo‘rquv va tushkunlik"
+   ],
+   "answer": "A) Qiziqish va samimiy tabassum"
+  }
+ ]
+}

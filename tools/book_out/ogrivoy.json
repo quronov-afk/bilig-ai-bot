@@ -1,0 +1,27 @@
+{
+ "title": "O‘g‘rivoy",
+ "author": "Georgiy Skrebitskiy",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-10 yosh. Chet el asari tarjimasi bo‘lgani hamda jonivorlarning tabiiy instinktlari va gumondan saqlanish saboqlarini anglash uchun shu yosh toifasiga mos keladi.",
+  "topics": [
+   "hayvonot dunyosi",
+   "tabiat",
+   "halollik",
+   "oila"
+  ],
+  "theme": "Jonivorlarning tabiiy instinktlarini tushunish, ularga mehr ko‘rsatish va aniq dalilsiz birovdan asossiz gumonsiramaslik.",
+  "summary": "Uyga olmaxon olib kelishgach, javondan oqqandlar yo‘qola boshlaydi. Ota-ona avvaliga bolalardan gumonsiraydi. Biroq bolalardan biri olmaxonning non va shirinliklarni eski shlyapa ichiga yashirayotganini ko‘rib qoladi. Ota olmaxonning bu harakatini qishga zaxira yig‘ish instinkti deb tushuntiradi. Keyinroq olmaxon terib kelingan qo‘ziqorinlarni xonadagi mix va bug‘u shoxlariga ilib quritadi. Sovuq tushgach esa mo‘riga kiyim-kechaklarni tashib uya quradi. Jonivorning bu sho‘xliklari oilaga quvonch va saboq bag‘ishlaydi.",
+  "characters": "Olmaxon (tabiiy odatlarini yo‘qotmagan chaqqon va sho‘x jonivor), Bola (hikoyachi va topqir kuzatuvchi), Ota (bosiq, donishmand va tushunuvchan oila boshlig‘i), Ona (xonadondagi tartib va halollikni nazorat qiluvchi ona).",
+  "conclusion": "Asar bolaga jonivorlarning o‘ziga xos tabiatini tushunishni va ularga mehr ko‘rsatishni o‘rgatadi. Shuningdek, shoshmasdan, surishtirmay turib kishilardan asossiz gumon qilmaslik hamda oiladagi halollik va samimiyatning qadriga yetish sabog‘ini beradi.",
+  "difficulty": "oson",
+  "mood": "kulgili, samimiy, o‘ylantiruvchi",
+  "for_whom": "Jonivorlarni yaxshi ko‘radigan, ularning xulq-atvoriga qiziqadigan va hayotiy, samimiy hikoyalarni o‘qishni yoqtiradigan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Asarda qand yo‘qolganida ota-ona avvaliga bolalardan gumonsiraydi, lekin keyin barchasiga olmaxon sababchi ekani ma'lum bo‘ladi. Seningcha, biror voqeaning sababini bilmay turib birovdan gumonsirash to‘g‘rimi? O‘zing ham biror jonivorning shunday qiziq va kutilmagan odatiga guvoh bo‘lganmisan?"
+}

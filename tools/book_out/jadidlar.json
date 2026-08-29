@@ -1,0 +1,448 @@
+{
+ "title": "Jadidlar",
+ "author": "Abdulla Qodiriy. Bahodir Karimov",
+ "genre": "biografik asar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "jadidlar",
+   "teatr",
+   "musiqa",
+   "ma‘rifat",
+   "vatanparvarlik",
+   "folklor"
+  ],
+  "theme": "G‘ulom Zafariyning ma‘rifatparvarlik, o‘zbek musiqali dramasi va bolalar dramaturgiyasini yaratish hamda milliy ozodlik yo‘lidagi fidoyi xizmatlarini ko‘rsatish.",
+  "summary": "Asar adib, dramaturg va bastakor G‘ulom Zafariyning hayot yo‘li va ijodiga bag‘ishlangan. U 1889-yilda Toshkentda tug‘ilib, onasining hikoyalari orqali Vatan va tariximizga muhabbat ruhi bilan o‘sadi. Avloniyning «Turon» truppasiga kirib, teatr va jadidchilik harakatida faol qatnashadi. 1917–1918-yillarda Turkiston Muxtoriyati g‘oyalarini matbuotda targ‘ib qiladi. O‘zbekistonda birinchi bo‘lib «Halima» musiqali dramasi va bolalar uchun «Gunafsha», «Erk bolalari» kabi pyesalarni yaratadi. Shuningdek, «El ashulalari» to‘plamini tuzib, xalq og‘zaki ijodi va cholg‘ularini to‘playdi. 1932-yilda soxta ayblar bilan Sibirga surgun qilinib, 1937-yilda qatag‘on qurboni bo‘ladi. Mustaqillik yillarida uning xizmatlari oqlanib, milliy adabiyot va teatr asoschilaridan biri sifatida tan olinadi.",
+  "characters": "G‘ulom Zafariy — shoir, dramaturg, bastakor va folklorchi olim; Fayzinisa otin — uning onasi, doston va tarixlarni bilgan ma‘rifatli ayol; Abdulla Avloniy, Abdurauf Fitrat, Cho‘lpon — uning maslakdosh jadid do‘stlari.",
+  "conclusion": "Kitob o‘quvchini Vatan va milliy madaniyatni e’zozlashga, ilm-ma’rifatga intilishga va milliy qadriyatlarni asrashga o‘rgatadi. G‘ulom Zafariy kabi fidoyi insonlar hayoti yoshlarda g‘urur va vatanparvarlik tuyg‘ularini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, mag‘rur, o‘ylantiruvchi",
+  "for_whom": "Tarix, teatr va milliy adabiyotga qiziqadigan, Vatan uchun xizmat qilgan buyuk siymolar taqdiri haqida bilishni xohlagan kitobxonlarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘ulom Zafariy nechanchi yilda Toshkentda dunyoga kelgan?",
+   "options": [
+    "A) 1889-yilda",
+    "B) 1895-yilda",
+    "C) 1900-yilda",
+    "D) 1905-yilda"
+   ],
+   "answer": "A) 1889-yilda"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘ulom Zafariyning otasi Muzaffar qanday kasb egasi edi?",
+   "options": [
+    "A) Duzgar edi",
+    "B) Misgar hunarmand edi",
+    "C) Zargar edi",
+    "D) Dehqon edi"
+   ],
+   "answer": "B) Misgar hunarmand edi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘ulom Zafariy Avloniy tashkil etgan qaysi truppaga a’zo bo‘ldi?",
+   "options": [
+    "A) Turon truppasiga",
+    "B) Sharq truppasiga",
+    "C) Buxoro truppasiga",
+    "D) Farg‘ona truppasiga"
+   ],
+   "answer": "A) Turon truppasiga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘ulom Zafariy «Ishchilar dunyosi» jurnalida qaysi g‘oyani faol targ‘ib etdi?",
+   "options": [
+    "A) Mustamlakachilik g‘oyasini",
+    "B) Muxtoriyat g‘oyasini",
+    "C) Sotsializm g‘oyasini",
+    "D) Diniy aqidaparastlikni"
+   ],
+   "answer": "B) Muxtoriyat g‘oyasini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "G‘ulom Zafariy tahsilini qaysi tartibda olganini aniqlang.",
+   "options": [
+    "A) Eski maktab, rus-tuzem, madrasa",
+    "B) Madrasa, rus-tuzem, eski maktab",
+    "C) Rus-tuzem, madrasa, universitet",
+    "D) Universitet, eski maktab, madrasa"
+   ],
+   "answer": "A) Eski maktab, rus-tuzem, madrasa"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "G‘ulom Zafariy she’rlarida nega yoshlarni harbiy quvvatni oshirishga chaqirgan?",
+   "options": [
+    "A) Muxtoriyatni himoya qilish uchun",
+    "B) Boshqa mamlakatlarga hujum qilishga",
+    "C) Boylar molini tortib olishga",
+    "D) Chet elga sayohat qilishga"
+   ],
+   "answer": "A) Muxtoriyatni himoya qilish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jadidlar Turkiston Muxtoriyati halokatiga nega uchradi deb hisoblagan?",
+   "options": [
+    "A) Xalq orasida hamjihatlik yetishmagani uchun",
+    "B) Teatrlar yopilib ketgani uchun",
+    "C) Shoirlar kamayib ketgani uchun",
+    "D) Maktablar ko‘payib ketgani uchun"
+   ],
+   "answer": "A) Xalq orasida hamjihatlik yetishmagani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Adibning «Ey ilm» she’rida ilmga murojaat qilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, jaholatdan qutulish kalitidir",
+    "B) Noto‘g‘ri, ilm ma’naviyatni buzadi",
+    "C) Keraksiz, faqat urush muhim",
+    "D) Noto‘g‘ri, ma’rifat zarardir"
+   ],
+   "answer": "A) To‘g‘ri, jaholatdan qutulish kalitidir"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Tolpinur ruhim huzun sorig‘a» misrasida shoir qanday tuyg‘uni ifodalaydi?",
+   "options": [
+    "A) Vatan taqdiridan iztirob va qayg‘uni",
+    "B) Katta quvonch va bayram kayfiyatini",
+    "C) Tabiat chiroyidan hayratlanishni",
+    "D) Raqiblar ustidan qozonilgan g‘alabani"
+   ],
+   "answer": "A) Vatan taqdiridan iztirob va qayg‘uni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘ulom Zafariy onasi hikoyalaridan qanday saboq oldi?",
+   "options": [
+    "A) Vatanga va madaniyatga muhabbatni",
+    "B) Tijorat qilish sirlarini",
+    "C) Rus tilini o‘rganishni",
+    "D) Chet elga ko‘chib ketishni"
+   ],
+   "answer": "A) Vatanga va madaniyatga muhabbatni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Fitrat G‘ulom Zafariyning qaysi dostonlarini «yangi zamon dostonlari» degan?",
+   "options": [
+    "A) Cho‘pon Temir va Vannaycha",
+    "B) Gulyor va Paxtaxon",
+    "C) Ketmon chopdi va Qora kunlar",
+    "D) Halima va Tilak"
+   ],
+   "answer": "A) Cho‘pon Temir va Vannaycha"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘ulom Zafariyning «Gulyor» dostoni qanday mavzuda yozilgan?",
+   "options": [
+    "A) Sof sevgi mavzusida",
+    "B) Siyosiy kurashlar haqida",
+    "C) Sayohat taassurotlari haqida",
+    "D) Harbiy harakatlar haqida"
+   ],
+   "answer": "A) Sof sevgi mavzusida"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘zbek adabiyotidagi birinchi musiqali drama asari qaysi?",
+   "options": [
+    "A) Halima dramasi",
+    "B) Padarkush dramasi",
+    "C) Tilak dramasi",
+    "D) Gunafsha dramasi"
+   ],
+   "answer": "A) Halima dramasi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘ulom Zafariyning «Tilak» pyesasida qanday muhim masala ko‘tarilgan?",
+   "options": [
+    "A) Xotin-qizlarning bilim olish huquqi",
+    "B) Dehqonchilik sohasini rivojlantirish",
+    "C) Yangi binolar qurish rejalari",
+    "D) Harbiy kiyimlarni tikish"
+   ],
+   "answer": "A) Xotin-qizlarning bilim olish huquqi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Quyidagi sahna asarlarini bolalar uchun mo‘ljallanganlariga ajrating.",
+   "options": [
+    "A) Gunafsha va Erk bolalari",
+    "B) Halima va Padarkush",
+    "C) Tilak va Baxtsiz shogird",
+    "D) Gulyor va Cho‘pon Temir"
+   ],
+   "answer": "A) Gunafsha va Erk bolalari"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jadidlar nima uchun ayollar huquqi va ta’limiga alohida e’tibor berishgan?",
+   "options": [
+    "A) Jamiyat rivoji ayollar ma’rifatiga bog‘liqligi uchun",
+    "B) Chet elliklar shuni talab qilgani uchun",
+    "C) Teatrlarda aktrisa ko‘payishi uchun",
+    "D) Maktablar bo‘sh qolganligi uchun"
+   ],
+   "answer": "A) Jamiyat rivoji ayollar ma’rifatiga bog‘liqligi uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega G‘ulom Zafariy asarlari 1937-yildan keyin taqiqlab qo‘yildi?",
+   "options": [
+    "A) Adib xalq dushmani deb soxta ayblangani uchun",
+    "B) Asarlar kitobxonlarga yoqmay qolgani uchun",
+    "C) Muallif o‘zi yozishdan voz kechgani uchun",
+    "D) Kitoblar bosmaxonadan chiqmay qolgani uchun"
+   ],
+   "answer": "A) Adib xalq dushmani deb soxta ayblangani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "G‘ulom Zafariyning yosh shoirlarga beg‘araz yordam berishi qanday sifat?",
+   "options": [
+    "A) Oliyjanob va ustozlik fazilati",
+    "B) O‘z manfaatini ko‘zlash",
+    "C) Vaqtni besamar sarflash",
+    "D) Qat’iyatsizlik ko‘rinishi"
+   ],
+   "answer": "A) Oliyjanob va ustozlik fazilati"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "G‘ulom Zafariy soxta ayblovlar bilan qatag‘on qilinishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, u begunoh millatparvar edi",
+    "B) To‘g‘ri, u jinoyatchi bo‘lgan",
+    "C) Adolatli qaror bo‘lgan",
+    "D) Muhim emas edi"
+   ],
+   "answer": "A) Noto‘g‘ri, u begunoh millatparvar edi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Cho‘lpon «Halima» asarining xalqqa ta’sirini qanday baholagan?",
+   "options": [
+    "A) Yoqimli kuylari bilan xalqni maftun etgan",
+    "B) Juda zerikarli spektakl deb bilgan",
+    "C) Aktyorlar o‘yinini past baholagan",
+    "D) Sahna bezaklarini yoqtirmagan"
+   ],
+   "answer": "A) Yoqimli kuylari bilan xalqni maftun etgan"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘ulom Zafariy Elbek bilan birga qaysi folklor to‘plamini nashr etdi?",
+   "options": [
+    "A) El ashulalari to‘plamini",
+    "B) Turkiston qo‘shiqlari to‘plamini",
+    "C) Maktab ashulalari to‘plamini",
+    "D) Shohnomadan parchalarni"
+   ],
+   "answer": "A) El ashulalari to‘plamini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Saidahmad» xalq qo‘shig‘i qaysi tarixiy voqeaga bag‘ishlangan?",
+   "options": [
+    "A) 1916-yilgi mardikor olish voqeasiga",
+    "B) Toshkentdagi zilzila voqeasiga",
+    "C) Yangi teatr ochilishiga",
+    "D) Buxoro amirligi tugatilishiga"
+   ],
+   "answer": "A) 1916-yilgi mardikor olish voqeasiga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘ulom Zafariy to‘plab e’lon qilgan she’riy xalq dramasi qaysi?",
+   "options": [
+    "A) Er va xotun dramasi",
+    "B) Maqtanchoq kishi dramasi",
+    "C) Padarkush dramasi",
+    "D) Buzuqlik armug‘oni dramasi"
+   ],
+   "answer": "A) Er va xotun dramasi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "G‘ulom Zafariy to‘plagan qo‘shiqlarda qaysi ikki asosiy mavzu yetakchilik qiladi?",
+   "options": [
+    "A) Lirik-ishqiy va Vatan sog‘inchi",
+    "B) Dehqonchilik va chorvachilik",
+    "C) Sayohat va savdo-sotiq",
+    "D) Urush va harbiy strategiya"
+   ],
+   "answer": "A) Lirik-ishqiy va Vatan sog‘inchi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnda keltirilgan adiblarning e’tiroflarini sohalar bo‘yicha to‘g‘ri guruhlang.",
+   "options": [
+    "A) Fitrat-dramaturgiya, Pestovskiy-musiqiy teatr",
+    "B) Yudaxin-teatr, Fitrat-tilshunoslik",
+    "C) Uspenskiy-tarix, Cho‘lpon-tilshunoslik",
+    "D) Karimov-musiqa, Qodirov-tarjima"
+   ],
+   "answer": "A) Fitrat-dramaturgiya, Pestovskiy-musiqiy teatr"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega G‘ulom Zafariy yo‘qolib borayotgan Sharq cholg‘ularini ro‘yxatga olgan?",
+   "options": [
+    "A) Milliy ma’naviy merosni saqlab qolish uchun",
+    "B) Cholg‘u sotib foyda ko‘rish uchun",
+    "C) Chet elga muzey ochish uchun",
+    "D) Barcha cholg‘ularni taqiqlash uchun"
+   ],
+   "answer": "A) Milliy ma’naviy merosni saqlab qolish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega G‘ulom Zafariy xalq og‘zaki ijodini to‘plashga katta kuch ajratgan?",
+   "options": [
+    "A) Xalq ma’naviyatini va milliy o‘zlikni asrash uchun",
+    "B) Sho‘ro hukumatiga yordam berish uchun",
+    "C) Faqat o‘z nomini mashhur qilish uchun",
+    "D) Eski kitoblarni yoqib yuborish uchun"
+   ],
+   "answer": "A) Xalq ma’naviyatini va milliy o‘zlikni asrash uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "G‘ulom Zafariyning xalq qo‘shiqlarini to‘plab nashr ettirgani qanday ahamiyatga ega?",
+   "options": [
+    "A) Boy madaniy merosimiz yo‘qolishdan saqlab qolindi",
+    "B) Hech qanday ahamiyatga ega bo‘lmadi",
+    "C) Faqat bir necha kishiga yoqdi",
+    "D) Zamonaviy musiqaga xalaqit berdi"
+   ],
+   "answer": "A) Boy madaniy merosimiz yo‘qolishdan saqlab qolindi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Qarg‘alar uchsa qaraylik Marg‘ilonning yo‘liga» qo‘shig‘ida qanday samimiy tuyg‘u bor?",
+   "options": [
+    "A) Yor va Vatan sog‘inchining teran ifodasi",
+    "B) Raqibga nisbatan qahr va g‘azab",
+    "C) Sayohat qilishga bo‘lgan ishtiyoq",
+    "D) Ishlashdan charchash va horg‘inlik"
+   ],
+   "answer": "A) Yor va Vatan sog‘inchining teran ifodasi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Abdurauf Fitrat G‘ulom Zafariyning o‘zbek operasiga qo‘shgan hissasini qanday baholaydi?",
+   "options": [
+    "A) Halima bilan birinchi qadam tashlanganini aytadi",
+    "B) Uning musiqadan xabari yo‘q deydi",
+    "C) Faqat chet el dramalarini maqtaydi",
+    "D) Operani o‘zbeklarga yot deb biladi"
+   ],
+   "answer": "A) Halima bilan birinchi qadam tashlanganini aytadi"
+  }
+ ]
+}

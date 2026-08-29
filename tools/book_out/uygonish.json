@@ -1,0 +1,448 @@
+{
+ "title": "Uyg‘onish",
+ "author": "Abu Ali ibn Sino. Abdulqodir Zohidiy",
+ "genre": "biografik asar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "13+",
+  "topics": [
+   "ilm-fan",
+   "al-Xorazmiy",
+   "tarix",
+   "algebra",
+   "astronomiya",
+   "ma’rifat"
+  ],
+  "theme": "Muso al-Xorazmiyning jahon ilm-fani, algebra, arifmetika va geografiya taraqqiyotiga qo‘shgan beqiyos hissasi hamda uning ilmiy merosining boqiy ahamiyati.",
+  "summary": "Ushbu ilmiy-ommabop kitobda buyuk o‘zbek olimi Abu Abdulloh Muhammad ibn Muso al-Xorazmiyning hayoti va boy ilmiy merosi haqida so‘z yuritiladi. Muallif VIII–IX asrlarda Arab xalifaligi va O‘rta Osiyodagi ijtimoiy-siyosiy hamda madaniy muhitni tasvirlaydi. Al-Xorazmiyning Bag‘doddagi «Bayt ul-hikma» (Donishmandlik uyi) ilmiy markazidagi rahbarlik faoliyati, yunon, hind va eron ilmiy yutuqlarini o‘rganib, ularni rivojlantirgani ko‘rsatiladi. Olim o‘nlik pozitsion sanoq sistemasini va nol («as-sifr») tushunchasini amaliyotga joriy etadi, algebra faniga va algoritm tushunchasiga asos soladi. Shuningdek, uning astronomiya («Zij»), geografiya («Kitob surat al-arz») va tarix sohasidagi kashfiyotlari, olimlarning jamiyatdagi o‘rni hamda fanda vorislik tamoyili yoritiladi. Asar buyuk allomaning jahon sivilizatsiyasiga qo‘shgan beqiyos hissasi e’tirof etilishi bilan yakunlanadi.",
+  "characters": "Muso al-Xorazmiy — algebra va algoritm fanlari asoschisi, «Bayt ul-hikma» rahbari, buyuk ensiklopedik olim; Xalifa al-Ma’mun — Bag‘dodda «Bayt ul-hikma»ni tashkil etgan va ilm-fanga homiylik qilgan hukmdor; Beruniy va al-Farg‘oniy — al-Xorazmiy ilmiy an’analarini davom ettirgan vatandosh allomalar.",
+  "conclusion": "Kitob o‘quvchida buyuk ajdodlarimizning jahon faniga qo‘shgan hissasi bilan faxrlanish tuyg‘usini uyg‘otadi. U mehnatsevarlik, qunt bilan o‘qish va izlanish muvaffaqiyat kaliti ekanini uqtiradi. Yoshlarda aniq fanlarga va milliy g‘ururga bo‘lgan hurmatni oshiradi.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, ilmiy, ilhomlantiruvchi",
+  "for_whom": "Tarix, aniq fanlar, buyuk allomalar hayoti va ilmiy kashfiyotlar haqida o‘qishga qiziqadigan o‘quvchilar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Al-Xorazmiyning nomi fanda qaysi atama shaklida saqlanib qoldi?",
+   "options": [
+    "A) Algoritm",
+    "B) Algebra",
+    "C) Sifra",
+    "D) Astronomiya"
+   ],
+   "answer": "A) Algoritm"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Professor Tolstov Xorazmda qaysi fanlar rivojlanganini ta’kidlaydi?",
+   "options": [
+    "A) Aniq va tabiiy fanlar",
+    "B) Faqat adabiyot va she’riyat",
+    "C) Faqat harbiy soha",
+    "D) Faqat dengizchilik ishi"
+   ],
+   "answer": "A) Aniq va tabiiy fanlar"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Beruniyning yozishicha, arab istilochilari Xorazm madaniyatiga qanday zarar yetkazdi?",
+   "options": [
+    "A) Kitoblarni kuydirib, olimlarni o‘ldirdi",
+    "B) Faqat shaharlarni ko‘chirdi",
+    "C) Savdo yo‘llarini buyunlay yopdi",
+    "D) Dehqonchilikni taqiqlab qo‘ydi"
+   ],
+   "answer": "A) Kitoblarni kuydirib, olimlarni o‘ldirdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bag‘dodda qurilgan «Bayt ul-hikma» qanday maskan edi?",
+   "options": [
+    "A) Kutubxona va rasadxonali ilmiy markaz",
+    "B) Harbiylar tayyorlaydigan maxsus qal’a",
+    "C) Faqat savdogarlar to‘planadigan saroy",
+    "D) Diniy ziyoratgoh va masjid"
+   ],
+   "answer": "A) Kutubxona va rasadxonali ilmiy markaz"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bag‘dod akademiyasida ish olib borgan olimlarni ko‘rsating.",
+   "options": [
+    "A) Al-Xorazmiy, al-Farg‘oniy, al-Javhariy",
+    "B) Ibn Sino, Beruniy, Ulug‘bek",
+    "C) Demokrit, Yevklid, Ptolemey",
+    "D) Narshaxiy, Tabariy, Rudakiy"
+   ],
+   "answer": "A) Al-Xorazmiy, al-Farg‘oniy, al-Javhariy"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun al-Xorazmiy o‘z asarlarini arab tilida yozgan?",
+   "options": [
+    "A) Arab tili fan tili bo‘lgani uchun",
+    "B) Ona tilini bilmagani uchun",
+    "C) Boshqa tillar taqiqlangani uchun",
+    "D) Faqat arablarga mo‘ljallangani uchun"
+   ],
+   "answer": "A) Arab tili fan tili bo‘lgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Xalifalar nima uchun ilm-fan rivojlanishiga sharoit yaratib berdi?",
+   "options": [
+    "A) Jamiyat va davlat muammolarini yechishga",
+    "B) Chet elga maqtanish uchun",
+    "C) Olimlar qo‘zg‘olonidan qo‘rqib",
+    "D) Eski ibodatxonalarni saqlash uchun"
+   ],
+   "answer": "A) Jamiyat va davlat muammolarini yechishga"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Al-Xorazmiyning turli tillarni o‘rganishi unga qanday imkon berdi?",
+   "options": [
+    "A) Turli xalqlar ilmini o‘zlashtirishga",
+    "B) Faqat savdo qilishga",
+    "C) Faqat tarjimon bo‘lib yashashga",
+    "D) Siyosiy hokimiyatni egallashga"
+   ],
+   "answer": "A) Turli xalqlar ilmini o‘zlashtirishga"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Olimlarning do‘st bo‘lib ijod qilishi qanday qadriyatni ko‘rsatadi?",
+   "options": [
+    "A) Ilm yo‘lidagi hamjihatlik va bag‘rikenglikni",
+    "B) Faqat boylik orttirish istagini",
+    "C) Mansobga erishish musobaqasini",
+    "D) Vaqtni ko‘ngilli o‘tkazish istagini"
+   ],
+   "answer": "A) Ilm yo‘lidagi hamjihatlik va bag‘rikenglikni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Xorazmning qadimiy madaniyatini tasvirlaganda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Ajdodlarimizdan faxrlanish tuyg‘usini",
+    "B) O‘tmishdan afsuslanish va umidsizlikni",
+    "C) Qadimiy shaharlarga nisbatan qo‘rquvni",
+    "D) Aniq fanlarga nisbatan befarqlikni"
+   ],
+   "answer": "A) Ajdodlarimizdan faxrlanish tuyg‘usini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Al-Xorazmiy «as-sifr» so‘zini qaysi ma’noda ishlatgan?",
+   "options": [
+    "A) Nol ma’nosida",
+    "B) O‘n soni ma’nosida",
+    "C) Noma’lum tenglama ma’nosida",
+    "D) Kasr son ma’nosida"
+   ],
+   "answer": "A) Nol ma’nosida"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xorazmiy arifmetik risolasining lotincha qo‘lyozmasi qayerda saqlanadi?",
+   "options": [
+    "A) Kembrij universiteti kutubxonasida",
+    "B) Qohira shahri muzeyida",
+    "C) Bag‘dod akademiyasi arxivida",
+    "D) Parij milliy kutubxonasida"
+   ],
+   "answer": "A) Kembrij universiteti kutubxonasida"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Al-jabr» atamasi algebraik amallarda nimani bildiradi?",
+   "options": [
+    "A) Ayriluvchini ikkinchi tomonga o‘tkazishni",
+    "B) Teng hadlarni o‘zaro qisqartirishni",
+    "C) Sonlarni ildizdan chiqarishni",
+    "D) Kasrlarni oltmishlikka o‘tkazishni"
+   ],
+   "answer": "A) Ayriluvchini ikkinchi tomonga o‘tkazishni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xorazmiy algebraik risolaning kirishida sonlarni nechta turga bo‘ladi?",
+   "options": [
+    "A) Uch turga",
+    "B) Besh turga",
+    "C) Olti turga",
+    "D) Ikki turga"
+   ],
+   "answer": "A) Uch turga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Xorazmiy ta’riflagan uchta matematika unsurlarini ko‘rsating.",
+   "options": [
+    "A) Ildizlar, kvadratlar va sodda sonlar",
+    "B) Kasrlar, foizlar va nol",
+    "C) Geometrik shakllar va burchaklar",
+    "D) Masofalar, vaqtlar va tezliklar"
+   ],
+   "answer": "A) Ildizlar, kvadratlar va sodda sonlar"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Xorazmiyning «Al-jabr» kitobi qanday amaliy ehtiyojlar uchun yozilgan?",
+   "options": [
+    "A) Meros, savdo va o‘lchov ishlarida",
+    "B) Faqat harbiy qurollarni hisoblashda",
+    "C) Faqat saroy binolarini bezashda",
+    "D) Faqat dengizda suzish qoidalarida"
+   ],
+   "answer": "A) Meros, savdo va o‘lchov ishlarida"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Xorazmiy taklif etgan o‘nlik sanoq sistemasi tez tarqaldi?",
+   "options": [
+    "A) Hisoblash va amallar qulayligi uchun",
+    "B) Yevropada raqamlar bo‘lmagani uchun",
+    "C) Xalifa shuni majburlagani uchun",
+    "D) Faqat lotincha yozilgani uchun"
+   ],
+   "answer": "A) Hisoblash va amallar qulayligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Xizmatkori Al-Xorazmiyning kechasi ishlashini ko‘rib nega hayron qolardi?",
+   "options": [
+    "A) Podshoh maosh berganda jonini kuydirganiga",
+    "B) Sham yorug‘ida o‘qishni bilmagani uchun",
+    "C) Kitoblarning ko‘pligidan qo‘rqqani uchun",
+    "D) Olim ovqat yemay o‘tirganiga"
+   ],
+   "answer": "A) Podshoh maosh berganda jonini kuydirganiga"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Al-Xorazmiyning qoidalarni amaliyotga bog‘lashi nimadan dalolat beradi?",
+   "options": [
+    "A) Ilm insonlarga xizmat qilishi zarurligidan",
+    "B) Faqat nazariya yaratish istagidan",
+    "C) Olimlar bilan bahslashish istagidan",
+    "D) Qadimgi usullarni inkor etishdan"
+   ],
+   "answer": "A) Ilm insonlarga xizmat qilishi zarurligidan"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Xorazmiyning tunlari ishlash tasviri o‘quvchida qanday fazilatni shakllantiradi?",
+   "options": [
+    "A) Mehnatsevarlik va ilmga fidoyilikni",
+    "B) Boylik orttirishga intilishni",
+    "C) Mansobdor shaxslarga yoqishni",
+    "D) Faqat tunlari ishlash odatini"
+   ],
+   "answer": "A) Mehnatsevarlik va ilmga fidoyilikni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Al-Xorazmiyning «Zij» asari nimaga bag‘ishlangan edi?",
+   "options": [
+    "A) Astronomik va trigonometrik jadvallarga",
+    "B) Faqat shahar va daryolar nomiga",
+    "C) Xalifalar o‘rtasidagi urushlar tarixiga",
+    "D) Tibbiy dori-darmonlar tayyorlashga"
+   ],
+   "answer": "A) Astronomik va trigonometrik jadvallarga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Al-Xorazmiyning «Kitob surat al-arz» asari qaysi fanga bag‘ishlangan?",
+   "options": [
+    "A) Geografiyaga",
+    "B) Algebraga",
+    "C) Tibbiyotga",
+    "D) Tarixga"
+   ],
+   "answer": "A) Geografiyaga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Al-Xorazmiy olimlarni faoliyati xarakteriga ko‘ra nechta guruhga bo‘ladi?",
+   "options": [
+    "A) Uch guruhga",
+    "B) Ikki guruhga",
+    "C) To‘rt guruhga",
+    "D) Besh guruhga"
+   ],
+   "answer": "A) Uch guruhga"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Al-Xorazmiy hikmatida ota-onalar qanday ikki turga bo‘linadi?",
+   "options": [
+    "A) Tug‘ilish otasi va ta’lim otasi",
+    "B) Yosh otalar va qari otalar",
+    "C) Boy otalar va kambag‘al otalar",
+    "D) Shartli otalar va haqiqiy otalar"
+   ],
+   "answer": "A) Tug‘ilish otasi va ta’lim otasi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Al-Xorazmiy «Kitob surat al-arz»da joylarni qanday tartibda beradi?",
+   "options": [
+    "A) Iqlimlar va koordinatalar bo‘yicha",
+    "B) Faqat alifbo tartibida",
+    "C) Joylarning boyligiga qarab",
+    "D) Hukmdorlarning ismlari bo‘yicha"
+   ],
+   "answer": "A) Iqlimlar va koordinatalar bo‘yicha"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Beruniy Al-Xorazmiyning «Zij»ini boshqa olimlar tanqididan himoyalagan?",
+   "options": [
+    "A) Asarning yuqori ilmiy qiymati uchun",
+    "B) Al-Xorazmiy uning ustozi bo‘lgani uchun",
+    "C) Xalifa shunday buyruq bergani uchun",
+    "D) Faqat yurtdoshi bo‘lgani uchun"
+   ],
+   "answer": "A) Asarning yuqori ilmiy qiymati uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Al-Xorazmiyning «Doimo harakatda bo‘lish kerak» hikmati nimani anglatadi?",
+   "options": [
+    "A) Harakatsizlik dangasalikka olib kelishini",
+    "B) Barcha odamlar yugurishi kerakligini",
+    "C) Tunda uxlash zararli ekanini",
+    "D) Jismoniy mehnat afzalligini"
+   ],
+   "answer": "A) Harakatsizlik dangasalikka olib kelishini"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Al-Xorazmiy fanning rivojlanishida ilmiy vorislikni qanday baholaydi?",
+   "options": [
+    "A) Ilmiy yutuqlar avlodlarga o‘tishini",
+    "B) Hammasini noldan boshlash kerakligini",
+    "C) Qadimgi fikrlarni inkor etishni",
+    "D) Ilm bitta millatnikiligini"
+   ],
+   "answer": "A) Ilmiy yutuqlar avlodlarga o‘tishini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "J. Bernalning musulmon olami haqidagi bahosi nega keltirilgan?",
+   "options": [
+    "A) Sharq ilmining jahoniy e’tirofini ko‘rsatishga",
+    "B) Yevropa madaniyatini kamsitish uchun",
+    "C) Faqat chet el olimlarini maqtashga",
+    "D) Kitob hajmini sun’iy oshirish uchun"
+   ],
+   "answer": "A) Sharq ilmining jahoniy e’tirofini ko‘rsatishga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Ko‘r ko‘rmasa ham, kunduz kunduzdir» hikmati nimani ta’kidlaydi?",
+   "options": [
+    "A) Haqiqat har doim haqiqat bo‘lib qolishini",
+    "B) Quyosh tunda ham chaqlab turishini",
+    "C) Ko‘zi ojizlar kunduzni sezmasligini",
+    "D) Insonga ma’lumot kerak emasligini"
+   ],
+   "answer": "A) Haqiqat har doim haqiqat bo‘lib qolishini"
+  }
+ ]
+}

@@ -1,0 +1,417 @@
+{
+ "title": "Belbog‘",
+ "author": "Normurod Norqobilov",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "ishq va sadoqat",
+   "sabr va bag‘rikenglik",
+   "milliy qadriyatlar",
+   "tog‘ hayoti",
+   "or-nomus"
+  ],
+  "theme": "Insoniy tuyg‘ularning sofligi, o‘tmish azoblariga sabr qilish va milliy ramzlar orqali ko‘ngil izhor etish olijanobligidir.",
+  "summary": "Shahar haydovchisi Otamurod tog‘li qishloqqa Sardor cholning yukini olib keladi va uning beva qolgan qizi Zumradni sevib qoladi. Qishloq yigitlari begonaning kelishidan g‘ashlanadi. Sardor chol esa o‘tmishida xiyonat sababli hayotdan ko‘ngli qolib, Abdurahmon chavandoz yordamida tog‘da muqim yashab qolgan inson edi. Zumrad tushida marhum erining roziligini olgach, Otamurodning ko‘nglini qabul qilishga qaror qiladi. U qaymoq solingan xurmachani avloddan-avlodga o‘tib kelayotgan va rozilik ramzi bo‘lmish belbog‘ga tugib yigitga beradi. Qishloqdan chiqishda yo‘lini to‘sgan yigitlar mashina ichidagi belbog‘ni ko‘rib, Zumrad va uning oilasi yigitga rozilik berganini anglashadi va to‘siqlarni olib tashlab, Otamurodga oq yo‘l tilashadi.",
+  "characters": "Otamurod — halol va samimiy shahar haydovchisi; Sardor chol — hayot sinovlarini boshdan kechirgan tog‘lik mo‘tabar ota; Zumrad — ma’sum va iboli beva juvon; Abdurahmon chavandoz — Sardor cholga hayot sabog‘ini bergan donishmand; Akram qora — qishloq or-nomusini himoya qiluvchi tog‘lik yigit.",
+  "conclusion": "Asar bolada sabr, kechirimli bo‘lish hamda insoniy munosabatlardagi samimiyatni shakllantiradi. Kattalar va milliy urf-odatlarga hurmat bilan qarash, tuyg‘ularni iffat va andisha bilan ifodalash sabog‘ini beradi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Milliy qadriyatlar, insoniy munosabatlar va tog‘ odamlarining fe’l-atvori haqida o‘qishga qiziqqan o‘smirlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otamurod Sardor cholning yukini qaysi mashinada olib keldi?",
+   "options": [
+    "A) Kamaz mashinasida",
+    "B) ZIL mashinasida",
+    "C) GAZ-53 mashinasida"
+   ],
+   "answer": "A) Kamaz mashinasida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sardor chol so‘zlagan rivoyatda bolalar nima tergani chiqqandi?",
+   "options": [
+    "A) Do‘lana tergani",
+    "B) Yong‘oq tergani",
+    "C) Olma tergani"
+   ],
+   "answer": "A) Do‘lana tergani"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mashina buzilganda uni sozlashga kimlar kelgan edi?",
+   "options": [
+    "A) Akram qora va yigitlar",
+    "B) Qishloq oqsoqoli",
+    "C) Sardor cholning o‘g‘illari"
+   ],
+   "answer": "A) Akram qora va yigitlar"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sardor cholni o‘zini o‘ldirishdan kim qaytarib qolgan edi?",
+   "options": [
+    "A) Abdurahmon chavandoz",
+    "B) Shavkat shapka",
+    "C) O‘z otasi"
+   ],
+   "answer": "A) Abdurahmon chavandoz"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Otamurodning qishloqqa kelishidan asosiy maqsadi nima edi?",
+   "options": [
+    "A) Zumradga ko‘ngil izhor qilish",
+    "B) Faqat yong‘oq sotib olish",
+    "C) Tog‘da sayr qilish"
+   ],
+   "answer": "A) Zumradga ko‘ngil izhor qilish"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sardor chol nega yigitning o‘sha kuni ketishiga izn bermadi?",
+   "options": [
+    "A) Yigitlarning muomalasi hamiyatiga teggani uchun",
+    "B) Mashinasi yurmay qolgani uchun",
+    "C) Yo‘lda qor yog‘ayotgani uchun"
+   ],
+   "answer": "A) Yigitlarning muomalasi hamiyatiga teggani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Otamurod shaharda beva ayol darvozasida nega urishib ketgandi?",
+   "options": [
+    "A) Ayolning sha'nini himoya qilish uchun",
+    "B) O‘zi uchun pul talashib",
+    "C) Qo‘shnisining topshirig‘i bilan"
+   ],
+   "answer": "A) Ayolning sha'nini himoya qilish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Abdurahmon chavandozning Sardor cholni mehmonga taklif qilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, og‘ir damda qo‘lladi",
+    "B) Noto‘g‘ri, aralashmasligi kerak edi",
+    "C) Beboshlik, o‘z holiga qo‘ygani ma'qul"
+   ],
+   "answer": "A) To‘g‘ri, og‘ir damda qo‘lladi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif tog‘liklar qarashidagi ulug‘vorlikni qanday tasvirlaydi?",
+   "options": [
+    "A) Yuksak tog‘lardan ulgu olgandek",
+    "B) Shoshqaloq va jahldor shaklda",
+    "C) O‘ta faryodli va qayg‘uli"
+   ],
+   "answer": "A) Yuksak tog‘lardan ulgu olgandek"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sardor cholning rivoyatiga ko‘ra qishloq ahli kimlardan tarqalgan?",
+   "options": [
+    "A) Omon qolgan ikki norasidadan",
+    "B) Quvilgan ovchilardan",
+    "C) Qo‘shni qishloq odamlaridan"
+   ],
+   "answer": "A) Omon qolgan ikki norasidadan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otamurod hovlisida o‘zi yasayotgan qurilmani nimaga o‘xshatardi?",
+   "options": [
+    "A) Kapalakka o‘xshash qurilmaga",
+    "B) Qush nusxa samolyotga",
+    "C) Kichik vertolyoqqa"
+   ],
+   "answer": "A) Kapalakka o‘xshash qurilmaga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sardor cholning qovurg‘asini qaysi jonivor ezib tashlagan edi?",
+   "options": [
+    "A) Quturgan ayiq",
+    "B) Yirtqich bo‘ri",
+    "C) Yovvoyi qoplon"
+   ],
+   "answer": "A) Quturgan ayiq"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abdurahmon chavandoz uylanmoqchi bo‘lganga nimani osib qo‘yishni tayinlagan?",
+   "options": [
+    "A) Chakmon ostidagi belbog‘ni",
+    "B) Qamchin va pichoqni",
+    "C) Oq shohi ro‘molni"
+   ],
+   "answer": "A) Chakmon ostidagi belbog‘ni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zumrad tushida marhum eridan nima qabul qilib oldi?",
+   "options": [
+    "A) Oppoq shohi ro‘mol",
+    "B) Kumush uzuk",
+    "C) Qizil belbog‘"
+   ],
+   "answer": "A) Oppoq shohi ro‘mol"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shokir kichkina nega Shavkat shapkani jardan uloqtirgan edi?",
+   "options": [
+    "A) Beva opasiga til tegizgani uchun",
+    "B) Pulini tortib olgani uchun",
+    "C) Harbiy xizmatga majburlagani uchun"
+   ],
+   "answer": "A) Beva opasiga til tegizgani uchun"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Zumrad tush ko‘rgach, ko‘ngli nega xotirjam bo‘ldi?",
+   "options": [
+    "A) Erining ruhi roziligini sezdi",
+    "B) Qishloqdan ketishga qaror qildi",
+    "C) Shaharga ko‘chib o‘tmoqchi bo‘ldi"
+   ],
+   "answer": "A) Erining ruhi roziligini sezdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Otamurod nega maktabga, o‘z kasbiga qaytishni o‘ylayotgan edi?",
+   "options": [
+    "A) Shogirdlar va ilm berishni sog‘ingani uchun",
+    "B) Haydovchilikda pul kamligi uchun",
+    "C) Otasining qat'iy talabi bo‘lgani uchun"
+   ],
+   "answer": "A) Shogirdlar va ilm berishni sog‘ingani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Abdurahmon chavandozning belbog‘ni 'til' deb bilishi qanday qadriyat?",
+   "options": [
+    "A) Andisha va iffat belgisi",
+    "B) Quruq maqtanchilik",
+    "C) Keraksiz va eskicha odat"
+   ],
+   "answer": "A) Andisha va iffat belgisi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Otamurodning ichki kechinmalarini qanday ifodalaydi?",
+   "options": [
+    "A) Samimiylik va iztirobga yo‘g‘rib",
+    "B) Masxara va kulgi aralashtirib",
+    "C) Befarq va sovuq tilda"
+   ],
+   "answer": "A) Samimiylik va iztirobga yo‘g‘rib"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sardor cholning aytishicha, Suvloq qishlog‘i odamlarining fe'li qanday edi?",
+   "options": [
+    "A) Jonivorlarga shafqatsiz va chatoq",
+    "B) Juda mehmondo‘st va muloyim",
+    "C) Shaharliklar kabi kiyinadigan"
+   ],
+   "answer": "A) Jonivorlarga shafqatsiz va chatoq"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zumrad qaymoq to‘ldirilgan xurmachani nimaga tugib olib chiqdi?",
+   "options": [
+    "A) Tanish belbog‘ga tugib",
+    "B) Qizil dastro‘molga o‘rab",
+    "C) Oddiy qopga solib"
+   ],
+   "answer": "A) Tanish belbog‘ga tugib"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otamurod qishloqdan chiqayotganda yo‘l nima bilan to‘silgan edi?",
+   "options": [
+    "A) Chog‘roq xarsang toshlar bilan",
+    "B) Yiqilgan archa daraxti bilan",
+    "C) Katta ariq va suv bilan"
+   ],
+   "answer": "A) Chog‘roq xarsang toshlar bilan"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qorato‘ri yigit mashinada nimani ko‘rib muomalasini o‘zgartirdi?",
+   "options": [
+    "A) O‘rindiqdagi belbog‘ni ko‘rib",
+    "B) Katta pul tugunini ko‘rib",
+    "C) Miltiq va qurolni ko‘rib"
+   ],
+   "answer": "A) O‘rindiqdagi belbog‘ni ko‘rib"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muyulishdagi voqeani Sardor chol qayerdan kuzatib turgan edi?",
+   "options": [
+    "A) Butalar orasidan yashirincha",
+    "B) Qoya tepasidagi o‘rindiqdan",
+    "C) Mashinaning orqa kuzovidan"
+   ],
+   "answer": "A) Butalar orasidan yashirincha"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qishloq yigitlari nega belbog‘ni ko‘rgach, Otamurodga yo‘l berishdi?",
+   "options": [
+    "A) Belbog‘ rozilik belgisi edi",
+    "B) Yigitlar belbog‘dan qo‘rqishgani uchun",
+    "C) Belbog‘ni sotib olmoqchi bo‘lishdi"
+   ],
+   "answer": "A) Belbog‘ rozilik belgisi edi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sardor chol o‘tmishda dovon tepasida nimani teran idrok etgan?",
+   "options": [
+    "A) Intiqomdan ko‘ra yashash afzalligini",
+    "B) Shaharga ko‘chib ketish zarurligini",
+    "C) Dushmanini albatta topib o‘ldirishni"
+   ],
+   "answer": "A) Intiqomdan ko‘ra yashash afzalligini"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zumradning belbog‘ orqali rozilik bildirishi haqida qanday fikrdasan?",
+   "options": [
+    "A) Yuksak ibo va odob namunasi",
+    "B) Keraksiz va tushunarsiz harakat",
+    "C) Yigitni ataylab chalg‘itish usuli"
+   ],
+   "answer": "A) Yuksak ibo va odob namunasi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sardor cholning qishloq yigitlarini kuzatib turgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, yigitlarning or-nomusini tushundi",
+    "B) Noto‘g‘ri, darrov militsiya chaqirishi kerak edi",
+    "C) Xato, yigitlar bilan urishishi lozim edi"
+   ],
+   "answer": "A) To‘g‘ri, yigitlarning or-nomusini tushundi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif belbog‘dan anqigan hidni qanday tasvirlaydi?",
+   "options": [
+    "A) Ko‘hnalik va zaif atir isi",
+    "B) Tog‘ chechagi va rayhon isi",
+    "C) Tutun va o‘tin isi"
+   ],
+   "answer": "A) Ko‘hnalik va zaif atir isi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Qissaning 'Belbog‘' deb nomlanishi muallifning qaysi mahoratini ko‘rsatadi?",
+   "options": [
+    "A) Bosh g‘oyani milliy ramzga bog‘lashini",
+    "B) Faqat liboslar haqida yozishini",
+    "C) Voqealarni tasodifga asoslashini"
+   ],
+   "answer": "A) Bosh g‘oyani milliy ramzga bog‘lashini"
+  }
+ ]
+}

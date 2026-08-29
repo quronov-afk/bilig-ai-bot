@@ -1,0 +1,28 @@
+{
+ "title": "Yoz bilan xayrlashuv",
+ "author": "Konstantin Paustovskiy",
+ "genre": "hikoya",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "10-13 yosh (tarjima asar, lirik va kuzatuvchanlikka asoslangan falsafiy tabiat tasviri)",
+  "topics": [
+   "tabiat",
+   "fasllar almashinuvi",
+   "uy issiqligi",
+   "keksalar o‘giti",
+   "mehr-oqibat"
+  ],
+  "theme": "Kuzning tugab, birinchi qor yog‘ishi orqali tabiatning maftunkor go‘zalligi hamda oddiy hayotiy lahzalar, uy issiqligi va mehrning qadri ochib beriladi.",
+  "summary": "Kuzning izg‘irinli, yomg‘irli kunlarida qahramonlar uyda pech yoqib, kitob o‘qib, mushugi Funtikni parvarish qilib kun o‘tkazishadi. Bir kuni tunda to‘satdan birinchi qor yog‘ib, atrofdagi barcha narsa mo‘jizaviy tarzda oqlikka burkanadi. Ertalab ularnikiga Mitriy bobo kelib, ilk qor bilan tabriklaydi va qadimgi rivoyatni so‘zlab beradi. Qahramonlar o‘rmon ko‘liga sayrga chiqib, qishning ilk go‘zalligi, muzlagan suv va tabiat osoyishtaligidan zavqlanishadi.",
+  "characters": "Bosh qahramon (muallif) — tabiatni kuzatuvchi va qadrlovchi inson; Ruvim — muallifning hamrohi; Mitriy bobo — el-yurt va tabiat sirlarini biladigan hikmatli keksa; Funtik — sho‘x hamda mehribon mushukcha.",
+  "conclusion": "Asar bolaga tabiatdagi har bir faslning o‘ziga xos go‘zalligi borligini ko‘rsatadi. U insonni atrofdagi kichik mo‘jizalarni payqashga, kattalarning hikmatli so‘zlariga quloq tutishga hamda o‘z uyidagi issiq muhit va mehr-oqibatni qadrlashga o‘rgatadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi, iliq",
+  "for_whom": "Tabiatni kuzatishni xush ko‘radigan, sokinlik va kitobxonlikni sevadigan, fasllar mo‘jizasiga qiziqadigan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Hikoyada ilk qor yog‘ganda Mitriy bobo kelib, ularni tabrikladi va kumush suv haqidagi qadimiy naqlni so‘zlab berdi. Sening hayotingda ham buvalaring yoki buvilaring aytib bergan shunday ajoyib rivoyat va nasihatlar bormi? Birinchi qor yog‘ganda o‘zingda va atrofingda qanday o‘zgarish hamda tuyg‘ularni sezasan?"
+}

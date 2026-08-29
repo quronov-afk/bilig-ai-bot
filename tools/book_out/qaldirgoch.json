@@ -1,0 +1,287 @@
+{
+ "title": "Qaldirg‘och",
+ "author": "Erkin Malik",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "tabiat",
+   "mehnat",
+   "oila",
+   "cho‘l hayoti",
+   "iste’dod"
+  ],
+  "theme": "Tabiatni asrash, ota-onaga yordam berish va har qanday amaliy mahoratni bilim hamda savod bilan boyitish muhimligini ko‘rsatish.",
+  "summary": "Shaharlik sayyohlar Qizilqum bag‘ridagi cho‘ponlar qo‘rg‘oniga borishadi. Ularga cho‘ponning tiyrak qizi Guljahon yo‘lboshchilik qiladi. Guljahon ularga kovrak o‘simligi va jo‘rchi qushi haqida afsona so‘zlab beradi hamda beparvo shaharliklar tabiatni oyoqosti qilayotganidan kuyunadi. Keyin mehmonlar mototsikl, traktor va Jigulini chaqqonlik bilan boshqarayotgan, so‘ng do‘mbira chertib qo‘shiq aytgan 14 yoshli Qaldirg‘och bilan tanishadilar. Uning qiz bola ekani va maktabda o‘qimagani ma'lum bo‘lgach, mehmonlar uning noyob iqtidoriga qoyil qolgan holda, kelajakda bilim va savod olishi kerakligini uqtirib shaharga qaytadilar.",
+  "characters": "Guljahon — cho‘ponning tiyrak va tabiatni sevadigan qizi; Qaldirg‘och — 14 yoshli mehnatsevar, texnikalarni egallagan va do‘mbira chaluvchi qiz; Ota va Ona — cho‘pon oilasi egalari; Sayyohlar — shaharlik kuzatuvchilar va muallif.",
+  "conclusion": "Asar bolalarda tabiatga mehr-muhabbat, halol mehnat va ota-onaga ko‘maklashish tuyg‘ularini shakllantiradi. Shuningdek, hayotda amaliy mahorat bilan birga bilim hamda savod olish ham o‘ta muhimligini anglatadi.",
+  "difficulty": "o‘rta",
+  "mood": "samimiy, o‘ylantiruvchi",
+  "for_whom": "Tabiatni va qishloq hayotini yoqtiradigan, tengdoshlarining mehnati hamda noyob qobiliyatlari haqida o‘qishga qiziqadigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mehmonlar Qizilqumga nimada ichkarilab borishdi?",
+   "options": [
+    "A) Otda",
+    "B) Mashinada",
+    "C) Avtobusda"
+   ],
+   "answer": "B) Mashinada"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mehmonlarga yo‘lboshchilik qilgan qizaloqning ismi nima edi?",
+   "options": [
+    "A) Guljahon",
+    "B) Qaldirg‘och",
+    "C) Maftuna"
+   ],
+   "answer": "A) Guljahon"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Guljahon mehmonlarga qaysi tabib o‘simlik va qush haqida gapirdi?",
+   "options": [
+    "A) Yantoq va burut qushi",
+    "B) Kovrak va jo‘rchi qushi",
+    "C) Qushqo‘nmas va qaqnus"
+   ],
+   "answer": "B) Kovrak va jo‘rchi qushi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Guljahon nega mehmonlarga darrov rozi bo‘lmay onasiga qaradi?",
+   "options": [
+    "A) Qo‘rqqani uchun",
+    "B) Onasidan ruxsat so‘rash uchun",
+    "C) Yo‘lni bilmagani uchun"
+   ],
+   "answer": "B) Onasidan ruxsat so‘rash uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kovrak o‘simligi yerdan ko‘tarilib gullasa, nima bo‘ladi?",
+   "options": [
+    "A) Qurg‘oqchilik bo‘ladi",
+    "B) O‘t ko‘p bo‘ladi",
+    "C) Yomg‘ir yog‘maydi"
+   ],
+   "answer": "B) O‘t ko‘p bo‘ladi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun cho‘pon bolalari bardoshli va mehnatsevar bo‘lib ulg‘ayadi?",
+   "options": [
+    "A) Ular mehnatda chiniqib ulg‘ayadi",
+    "B) Ular shaharga ko‘p borishadi",
+    "C) Ular faqat kitob o‘qishadi"
+   ],
+   "answer": "A) Ular mehnatda chiniqib ulg‘ayadi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mototsiklli bola orqasida kimlarni olib ketayotgan edi?",
+   "options": [
+    "A) Shaharlik mehmonlarni",
+    "B) Ikki qizaloq ukasini",
+    "C) Otasini"
+   ],
+   "answer": "B) Ikki qizaloq ukasini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Afsonada hukmdor odamlarga qanday qasr qurishni buyurdi?",
+   "options": [
+    "A) Oltindan yasalgan qasr",
+    "B) Boshi osmon, oyog‘i yerga tegmaydigan",
+    "C) Cho‘l o‘rtasidagi keng qasr"
+   ],
+   "answer": "B) Boshi osmon, oyog‘i yerga tegmaydigan"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Afsonadagi yigit jo‘rchilarga qaysi so‘zlarni o‘rgatgan edi?",
+   "options": [
+    "A) \"Hasan loy, Tohir g‘isht\"",
+    "B) \"Boshi osmon, oyog‘i yer\"",
+    "C) \"Poshsho keldi, qasr bitdi\""
+   ],
+   "answer": "A) \"Hasan loy, Tohir g‘isht\""
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Cho‘ponlarga shaharliklarning qaysi harakati yoqmas edi?",
+   "options": [
+    "A) Cho‘ponlar bilan gaplashmasliklari",
+    "B) O‘tlarni va kovraklarni ezg‘ilashlari",
+    "C) Asfalt yo‘ldan tez yurishlari"
+   ],
+   "answer": "B) O‘tlarni va kovraklarni ezg‘ilashlari"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qaysi o‘simlik tikanlari yaylovlarni sel suvidan asraydi?",
+   "options": [
+    "A) Ismaloq",
+    "B) Qushqo‘nmas",
+    "C) Karam"
+   ],
+   "answer": "B) Qushqo‘nmas"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning \"tabiatga xalaqit qilma\" degan fikri to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — tabiatni asrash kerak",
+    "B) Noto‘g‘ri — xohlaganicha yoqishi mumkin",
+    "C) Noto‘g‘ri — tikanlar befoyda"
+   ],
+   "answer": "A) To‘g‘ri — tabiatni asrash kerak"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Asfalt yo‘l nega yaylovlar uchun yomon bo‘ldi?",
+   "options": [
+    "A) Beparvo odamlar ko‘payib, tabiat zararlandi",
+    "B) Yo‘lda qo‘ylar o‘tolmay qoldi",
+    "C) Yo‘l sabab yomg‘ir yog‘madi"
+   ],
+   "answer": "A) Beparvo odamlar ko‘payib, tabiat zararlandi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Guljahonni \"tabiatning bir parchasi\" deb nimani ko‘rsatdi?",
+   "options": [
+    "A) Qizning tabiatni teran tushunishini",
+    "B) Faqat cho‘lda yashashni xohlashini",
+    "C) Shaharliklarni yoqtirmasligini"
+   ],
+   "answer": "A) Qizning tabiatni teran tushunishini"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pritsepga sixmola ortilayotganda traktor rulida kim o‘tirgan edi?",
+   "options": [
+    "A) Yunus aka",
+    "B) Qaldirg‘och",
+    "C) Guljahonning otasi"
+   ],
+   "answer": "B) Qaldirg‘och"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qaldirg‘och hayday oladigan texnikalarni to‘g‘ri ko‘rsating:",
+   "options": [
+    "A) Mototsikl, traktor, Jiguli",
+    "B) Avtobus, samolyot, mototsikl",
+    "C) Traktor, velosiped, yuk mashinasi"
+   ],
+   "answer": "A) Mototsikl, traktor, Jiguli"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega mehmonlar Qaldirg‘ochning qiz bola ekaniga hayron qolishdi?",
+   "options": [
+    "A) U do‘mbira chala olgani uchun",
+    "B) U og‘ir texnikalarni mohir boshqargani uchun",
+    "C) U oilada yolg‘iz bo‘lgani uchun"
+   ],
+   "answer": "B) U og‘ir texnikalarni mohir boshqargani uchun"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qaldirg‘och do‘mbira chalishni qayerdan o‘rgangan edi?",
+   "options": [
+    "A) Maktabdagi ustozidan",
+    "B) Televizorga qarab",
+    "C) Onasining o‘rgatishidan"
+   ],
+   "answer": "B) Televizorga qarab"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning Qaldirg‘och o‘qimaganidan kuyunishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — har bir bola o‘qishi kerak",
+    "B) Noto‘g‘ri — texnika bilsa yetadi",
+    "C) Noto‘g‘ri — cho‘lda o‘qish shart emas"
+   ],
+   "answer": "A) To‘g‘ri — har bir bola o‘qishi kerak"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning \"Odam avval inson bo‘lishi kerak\" fikri nimani anglatadi?",
+   "options": [
+    "A) Insoniy fazilatlar va bilim muhimligini",
+    "B) Faqat shaharliklar inson bo‘lishini",
+    "C) Ishlamaslik afzalroq ekanini"
+   ],
+   "answer": "A) Insoniy fazilatlar va bilim muhimligini"
+  }
+ ]
+}

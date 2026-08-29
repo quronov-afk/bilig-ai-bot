@@ -1,0 +1,417 @@
+{
+ "title": "Buratino va uning sarguzashtlari",
+ "author": "Aleksey Tolstoy",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9",
+  "topics": [
+   "do‘stlik",
+   "halollik",
+   "kattalarga hurmat",
+   "sarguzasht",
+   "mehnatsevarlik"
+  ],
+  "theme": "Sho‘xlik va bilimsizlik balolarga yetaklaydi, lekin sodiq do‘stlik, mehnat va halollik har qanday qiyinchilikni yengishga yordam beradi.",
+  "summary": "Duradgor Juzeppe gapiradigan g‘o‘lani do‘sti Karloga beradi. Karlo undan Buratino ismli yog‘och bola yasaydi. Buratino maktabga borish o‘rniga alifbeni sotib, qo‘g‘irchoq teatriga chipta oladi. Teatr xo‘jayini Karabas Barabasdan besh tilla olgan Buratino yo‘lda firibgar Alisa tulki va Bazilio mushukka uchrab, pullarini yo‘qotadi. Toshbaqa Tortila unga sehrli oltin kalitni sovg‘a qiladi. Buratino do‘stlari Pyero, Malvina va Artemon bilan birga Karabas Barabasdan qochadi. Ular Karlo otaning hujrasidagi rasm ortida yashiringan sehrli eshikni oltin kalit bilan ochib, yangi va ajoyib qo‘g‘irchoq teatrini topadilar.",
+  "characters": "Buratino — sho‘x va qiziquvchan yog‘och bola; Karlo ota — uni yaratgan mehr-oqibatli sharmankachi; Karabas Barabas — bag‘ritosh teatr xo‘jayini; Malvina — zangori sochli odobli qo‘g‘irchoq qiz; Pyero — g‘amgin shoir qo‘g‘irchoq; Alisa va Bazilio — firibgar tulki va mushuk.",
+  "conclusion": "Asar bolalarni kattalarning maslahatiga quloq tutishga, bilim olishga va halol bo‘lishga o‘rgatadi. Do‘stlarga yordam berish hamda qiyinchilikda yengilmaslik fazilatlarini shakllantiradi. Ota-onalar uchun farzandiga oqibat va sabr-toqat tushunchalarini tushuntirishda ajoyib qo‘llanma.",
+  "difficulty": "oson",
+  "mood": "kulgili, sarguzashtli",
+  "for_whom": "Sarguzashtlarni yaxshi ko‘radigan, sho‘x va quvnoq qahramonlar haqida o‘qishni xohlaydigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Juzeppe gapiradigan g‘o‘lani kimga berdi?",
+   "options": [
+    "A) Karlo otaga",
+    "B) Karabas Barabasga",
+    "C) Politsiyachiga"
+   ],
+   "answer": "A) Karlo otaga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karlo yog‘och bolaning ismini nima qo‘ydi?",
+   "options": [
+    "A) Pyero",
+    "B) Buratino",
+    "C) Arlekin"
+   ],
+   "answer": "B) Buratino"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karlo otaning hujrasidagi o‘choq rasmi nimaga solingan edi?",
+   "options": [
+    "A) Qog‘ozga",
+    "B) Kanop lattaga",
+    "C) Yog‘ochga"
+   ],
+   "answer": "B) Kanop lattaga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karlo ota Buratinoga alifbe olish uchun nimasini sotdi?",
+   "options": [
+    "A) Sharmankasini",
+    "B) Eski nimchasini",
+    "C) Boshmog‘ini"
+   ],
+   "answer": "B) Eski nimchasini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Buratino maktabga ketayotib qaysi voqeani birinchi qildi?",
+   "options": [
+    "A) Alifbeni sotdi",
+    "B) Musiqani eshitdi",
+    "C) Teatrga kirdi"
+   ],
+   "answer": "A) Alifbeni sotdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Buratino alifbeni sotishiga nima sabab bo‘ldi?",
+   "options": [
+    "A) Qorni ochgani uchun",
+    "B) Teatrga kirgisi kelgani uchun",
+    "C) Kitobni yoqtirmagani uchun"
+   ],
+   "answer": "B) Teatrga kirgisi kelgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Karabas Barabas nega Buratinoga besh tilla berdi?",
+   "options": [
+    "A) O‘choq rasmini eshitgani uchun",
+    "B) Unga achingani uchun",
+    "C) Qo‘g‘irchoqni yaxshi ko‘rgani uchun"
+   ],
+   "answer": "A) O‘choq rasmini eshitgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Buratinoning alifbeni sotib teatrga kirishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, bilim olish muhim",
+    "B) To‘g‘ri, tomosha yaxshiroq",
+    "C) Farqi yo‘q"
+   ],
+   "answer": "A) Noto‘g‘ri, bilim olish muhim"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Buratinoning burni uzayganini tasvirlab nimani ko‘rsatgan?",
+   "options": [
+    "A) Uning har narsaga qiziqishini",
+    "B) Uning juda aqlliligini",
+    "C) Uning kasal bo‘lganini"
+   ],
+   "answer": "A) Uning har narsaga qiziqishini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Buratinoga maslahat bergan gapiradigan mavjudot kim edi?",
+   "options": [
+    "A) Qora chigirtka",
+    "B) Chumoli",
+    "C) Kapalak"
+   ],
+   "answer": "A) Qora chigirtka"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Buratino uyga qaytayotganda qaysi firibgarlarga duch keldi?",
+   "options": [
+    "A) Alisa va Bazilioga",
+    "B) Pyero va Arlekinga",
+    "C) Shushara va Duremarga"
+   ],
+   "answer": "A) Alisa va Bazilioga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Firibgarlar Buratinoni qayerga pul ekishga ko‘ndirishdi?",
+   "options": [
+    "A) Mo‘jizalar maydoniga",
+    "B) O‘rmon ichiga",
+    "C) Qal'a hovlisiga"
+   ],
+   "answer": "A) Mo‘jizalar maydoniga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Buratinoga sehrli oltin kalitni kim sovg‘a qildi?",
+   "options": [
+    "A) Toshbaqa Tortila",
+    "B) Zangori sochli qiz",
+    "C) Karlo ota"
+   ],
+   "answer": "A) Toshbaqa Tortila"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Malvina Buratinoni qayerda mehmonga taklif qildi?",
+   "options": [
+    "A) Bog‘dagi stol yonida",
+    "B) O‘rmon o‘rtasida",
+    "C) Hujra ichida"
+   ],
+   "answer": "A) Bog‘dagi stol yonida"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Buratino oltin kalitni olgach birinchi nima qildi?",
+   "options": [
+    "A) Cho‘ntagiga solib qo‘ydi",
+    "B) Karabasga berdi",
+    "C) Suvga tashladi"
+   ],
+   "answer": "A) Cho‘ntagiga solib qo‘ydi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Malvinaning uyida Buratinoni tarbiyalash uchun nima berishdi?",
+   "options": [
+    "A) Qahva va somsa",
+    "B) Non va suv",
+    "C) Mevalar"
+   ],
+   "answer": "A) Qahva va somsa"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Alisa va Bazilio Buratinoni nega aldashdi?",
+   "options": [
+    "A) Tillalarini tortib olish uchun",
+    "B) Do‘st bo‘lish uchun",
+    "C) Maktabga olib borish uchun"
+   ],
+   "answer": "A) Tillalarini tortib olish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Duremar va Karabas nega oltin kalitni qidirishardi?",
+   "options": [
+    "A) Sehrli eshikni ochish uchun",
+    "B) Sotib pul qilish uchun",
+    "C) Ko‘lga tashlash uchun"
+   ],
+   "answer": "A) Sehrli eshikni ochish uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Buratinoning noma'lum kishilarga ishonib pul ekishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, firibgarlarga inanmaslik kerak",
+    "B) To‘g‘ri, boyib ketardi",
+    "C) Farqi yo‘q"
+   ],
+   "answer": "A) Noto‘g‘ri, firibgarlarga inanmaslik kerak"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Toshbaqa Tortilaning xafa bo‘lish tasviri nimani anglatadi?",
+   "options": [
+    "A) Odamlarning shafqatsizligidan ozor chekishini",
+    "B) Toshbaqalarning qariganini",
+    "C) Suvning sovuqligini"
+   ],
+   "answer": "A) Odamlarning shafqatsizligidan ozor chekishini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qo‘g‘irchoqlar Karabas Barabasning soqolini qayerga boylab qo‘yishdi?",
+   "options": [
+    "A) Qarag‘ay daraxtiga",
+    "B) Uy devoriga",
+    "C) Karavot oyog‘iga"
+   ],
+   "answer": "A) Qarag‘ay daraxtiga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sehrli eshik Karlo otaning hujrasida qayerda joylashgan edi?",
+   "options": [
+    "A) O‘choq rasmining ortida",
+    "B) Savatning ostida",
+    "C) Karavot tagida"
+   ],
+   "answer": "A) O‘choq rasmining ortida"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sehrli eshik ortidan nima chiqdi?",
+   "options": [
+    "A) Yangi qo‘g‘irchoq teatri",
+    "B) Katta tilla xazinasi",
+    "C) Eski omborxona"
+   ],
+   "answer": "A) Yangi qo‘g‘irchoq teatri"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Yangi teatr topilgach qo‘g‘irchoqlar qanday ketma-ketlikda ish bo‘lishishdi?",
+   "options": [
+    "A) Pyero she'r, Malvina chipta",
+    "B) Karlo chipta, Buratino she'r",
+    "C) Artemon chipta sotdi"
+   ],
+   "answer": "A) Pyero she'r, Malvina chipta"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega hamma qo‘g‘irchoqlar Karabas Barabasdan qochib ketishdi?",
+   "options": [
+    "A) Karabas yovuz va bag‘ritosh bo‘lgani uchun",
+    "B) Ular sayr qilmoqchi bo‘lishgani uchun",
+    "C) Teatr eskirgani uchun"
+   ],
+   "answer": "A) Karabas yovuz va bag‘ritosh bo‘lgani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Karabas Barabas oxirida yolg‘iz ko‘lmakda qoldi?",
+   "options": [
+    "A) Yomonligi va zulmi uchun",
+    "B) Yomg‘ir yog‘gani uchun",
+    "C) Puli tugagani uchun"
+   ],
+   "answer": "A) Yomonligi va zulmi uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Karlo otaning o‘z qo‘g‘irchoqlarini Karabasga sotmagani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, do‘stlar sotilmaydi",
+    "B) Noto‘g‘ri, pul kerak edi",
+    "C) Farqi yo‘q"
+   ],
+   "answer": "A) To‘g‘ri, do‘stlar sotilmaydi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Buratino va do‘stlarining g‘alabasi nimani ko‘rsatadi?",
+   "options": [
+    "A) Birlik va do‘stlik kuchini",
+    "B) Faqat omad kelganini",
+    "C) Kuchli bo‘lish kerakligini"
+   ],
+   "answer": "A) Birlik va do‘stlik kuchini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif yangi teatrni tasvirlashda qanday tuyg‘u bergan?",
+   "options": [
+    "A) Quvonch va umid tuyg‘usini",
+    "B) G‘am va qayg‘uni",
+    "C) Qo‘rqinch va vahimani"
+   ],
+   "answer": "A) Quvonch va umid tuyg‘usini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida gapiradigan chigirtkaning qaytib kelishi nimani anglatadi?",
+   "options": [
+    "A) Donolik va to‘g‘ri yo‘l g‘alabasini",
+    "B) Uning uyni sog‘inganini",
+    "C) Buratinoning uzr so‘raganini"
+   ],
+   "answer": "A) Donolik va to‘g‘ri yo‘l g‘alabasini"
+  }
+ ]
+}

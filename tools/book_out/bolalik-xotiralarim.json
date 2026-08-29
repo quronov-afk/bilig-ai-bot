@@ -1,0 +1,448 @@
+{
+ "title": "Bolalik xotiralarim",
+ "author": "Oybek",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "bolalik",
+   "tarix",
+   "maktab",
+   "oila",
+   "mehnat",
+   "ma’rifat"
+  ],
+  "theme": "Asar o‘tgan asr boshlaridagi og‘ir turmush sharoiti, xalq hayoti, bolalik beguborligi hamda ma’rifat va ilmga bo‘lgan kuchli intilishni aks ettiradi.",
+  "summary": "Qissada adib Oybekning Toshkentning Govkush mahallasida kechgan bolaligi tasvirlanadi. Kichik Muso mehribon bobosi, buvisi va onasi davrasida ulg‘ayadi. Oila qiyinchiliklar va yo‘qchilikni boshdan kechiradi. Muso eski maktabda o‘qiydi, mahalladagi ustalar va chollarning tarixdan so‘zlagan hikoyalarini maroq bilan tinglaydi. Birinchi jahon urushi va Toshkentdagi tarixiy qo‘zg‘olonlar uning bola nigohida aks etadi. Nihoyat, u ma’rifatparvar Akbar aka yordamida Xadradagi yangi maktabga kiradi va ilm-fan, she’riyat dunyosiga qadam qo‘yadi.",
+  "characters": "Muso (Oybek) — ziyo va ilmga intiluvchan sho‘x, sezgir bola. Bobo (Dadaqo‘zi ota) — mehribon, nevarasini ardoqlovchi keksaygan tuyakash chol. Buvim — ro‘zg‘orboz, mehnatkash va kuyunchak kampir. Onam (Shahodat) — bosiq, mo‘min va tikuvchi ayol. Turg‘un va A’zam — Musoning sho‘x mahalla doshlari hamda do‘stlari.",
+  "conclusion": "Asar bolalarda mehnatsevarlik, kattalarga hurmat, tariximizga va ilm-fanga bo‘lgan ishtiyoqni shakllantiradi. Qiyinchiliklarga qaramay, ma’rifatga intilish inson hayotini nurli etishini ko‘rsatadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi, samimiy",
+  "for_whom": "Tarixiy voqealar, o‘zbekona oilaviy qadriyatlar va ma’rifatga intilish haqida o‘qishni xohlaydigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Govkush ko‘chasiga nega ot va arava kira olmas edi?",
+   "options": [
+    "A) Ko‘chada pishiq g‘ov bor edi",
+    "B) Ko‘cha juda keng bo‘lgani uchun",
+    "C) Yo‘lda katta ariq bor edi",
+    "D) Darvoza hamisha qulflangan edi"
+   ],
+   "answer": "A) Ko‘chada pishiq g‘ov bor edi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bobo sandiqning kalitini qayerdan topib oladi?",
+   "options": [
+    "A) Namatning tagidan",
+    "B) Tokchaning ustidan",
+    "C) Choponining cho‘ntagidan",
+    "D) Sandiqning teshigidan"
+   ],
+   "answer": "A) Namatning tagidan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otinbibi maktabida qaysi qizlarni tayoq bilan urar edi?",
+   "options": [
+    "A) Qurt shimgan va saqich chaynaganlarni",
+    "B) Kitobini uyda unutib qoldirganlarni",
+    "C) Maktabga kechikib kelgan qizlarni",
+    "D) Darsda baland ovozda o‘qiganlarni"
+   ],
+   "answer": "A) Qurt shimgan va saqich chaynaganlarni"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sigir podaga yuborilmaganining sababi nima edi?",
+   "options": [
+    "A) Konka oynasini sindirib qo‘ygani uchun",
+    "B) Sutni juda kam bergani uchun",
+    "C) Yo‘ldan adashib qolgani uchun",
+    "D) Ko‘chada bolalarga suzgani uchun"
+   ],
+   "answer": "A) Konka oynasini sindirib qo‘ygani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnga ko‘ra, bolaning do‘kondagi xatti-harakatlari tartibi qanday?",
+   "options": [
+    "A) Handalakni hidladi, shamolday yugurib ketdi",
+    "B) Pul to‘ladi, keyin handalakni hidladi",
+    "C) Handalakni kesdi, keyin uni tanladi",
+    "D) Uyga bordi, keyin handalak oldi"
+   ],
+   "answer": "A) Handalakni hidladi, shamolday yugurib ketdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bobo nega sandiqdan olingan qandni buvisiga ko‘rsatmaslikni tayinladi?",
+   "options": [
+    "A) Buvisi mevalarni ayab saqlagani uchun",
+    "B) Buvisi qandni yeb qo‘ygani uchun",
+    "C) Sandiq buvisiga tegishli bo‘lmagani uchun",
+    "D) Qandlar eskirib qolgani uchun"
+   ],
+   "answer": "A) Buvisi mevalarni ayab saqlagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dadasining yuborgan bug‘doy va yong‘oqlari sotilganda bola nega xafa bo‘ldi?",
+   "options": [
+    "A) Yong‘oqlarga achingani va tushunmagani uchun",
+    "B) Unga pul berishmagani uchun",
+    "C) Sichqonlar donlarni yeb qo‘ygani uchun",
+    "D) Tuyakashlar bug‘doyni to‘kib yuborgani uchun"
+   ],
+   "answer": "A) Yong‘oqlarga achingani va tushunmagani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Boboning nevarasiga yashirincha qand berishi haqida nima deyish mumkin?",
+   "options": [
+    "A) Mehribonlik, lekin buvisidan yashirish xato",
+    "B) Mutlaqo to‘g‘ri va namunali ish",
+    "C) Bolani tarbiyasiz qilish uchun qilingan",
+    "D) Buviga qarshi yomon niyatda qilingan"
+   ],
+   "answer": "A) Mehribonlik, lekin buvisidan yashirish xato"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sobir baqqolning savdo qilish usulini qanday baholash mumkin?",
+   "options": [
+    "A) Halol va xaridorga muloyim so‘zli",
+    "B) O‘ta ziqna va insofsiz sotuvchi",
+    "C) Xaridorlarni doim aldaydigan odam",
+    "D) Faqat qimmat narsalar sotadigan savdogar"
+   ],
+   "answer": "A) Halol va xaridorga muloyim so‘zli"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Bolaning ko‘ngli — poshsho\" iborasi orqali nimani tasvirlagan?",
+   "options": [
+    "A) Boboning nevarasiga bo‘lgan cheksiz mehrini",
+    "B) Bolaning podsho kabi kiyinib yurishini",
+    "C) Bolalarning juda buyuk va aqlliligini",
+    "D) Boboning podsholar haqidagi hikoyasini"
+   ],
+   "answer": "A) Boboning nevarasiga bo‘lgan cheksiz mehrini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bobo bolani maktabga topshirayotganda domlaga nima dedi?",
+   "options": [
+    "A) Eti sizniki, suyagi bizniki",
+    "B) Faqat yaxshi so‘zlar bilan o‘qiting",
+    "C) Bolamni hech qachon urib qo‘ymang",
+    "D) Pulingizni har oyda berib turaman"
+   ],
+   "answer": "A) Eti sizniki, suyagi bizniki"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Attor do‘konidagi qafasda qanday qushlar bor edi?",
+   "options": [
+    "A) Bulbul va mayna qushlari",
+    "B) To‘ti va bedana qushlari",
+    "C) Qaldirg‘och va musicha qushlari",
+    "D) Chumchuq va zag‘izg‘on qushlari"
+   ],
+   "answer": "A) Bulbul va mayna qushlari"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Turg‘un va Musavoy jiyak sotib olgan pulga nima xarid qilishdi?",
+   "options": [
+    "A) Kichkina nog‘ora sotib olishdi",
+    "B) Mazali handalak va qand sotib olishdi",
+    "C) Yangi rangli ipaklar sotib olishdi",
+    "D) Maktab uchun daftar va qalam olishdi"
+   ],
+   "answer": "A) Kichkina nog‘ora sotib olishdi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kinnachi O‘rin buvi kasal bolani tuzatish uchun nima qildi?",
+   "options": [
+    "A) Duolar o‘qib xokandozda isiriq tutatdi",
+    "B) Mazali shirinliklar va mevalar berdi",
+    "C) Kasalxonaga olib borishni maslahat berdi",
+    "D) Bolaning oyog‘iga dori surtib qo‘ydi"
+   ],
+   "answer": "A) Duolar o‘qib xokandozda isiriq tutatdi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Navro‘z sayriga borish voqealari tartibini aniqlang.",
+   "options": [
+    "A) Pul yig‘ildi, Kamolonga borildi, Qur’on o‘qildi",
+    "B) Kamolonga borildi, pul yig‘ildi, o‘ynaldi",
+    "C) Qur’on o‘qildi, uyda pul tarqatildi",
+    "D) Samovar qaynatildi, keyin yo‘lga tushildi"
+   ],
+   "answer": "A) Pul yig‘ildi, Kamolonga borildi, Qur’on o‘qildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Onasi Navro‘z uchun domla so‘ragan pulni eshitib nega ma’yus tortdi?",
+   "options": [
+    "A) Uyda yo‘qchilik va qiyinchilik bo‘lgani uchun",
+    "B) Bolasining sayrga borishini xohlamagani uchun",
+    "C) Domlaning o‘zi borishini istagani uchun",
+    "D) Bayram bekor qilingani haqida eshitgani uchun"
+   ],
+   "answer": "A) Uyda yo‘qchilik va qiyinchilik bo‘lgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mirshab nega bolani chang burqitgani uchun koyib berdi?",
+   "options": [
+    "A) O‘zining manfaati va mansabini ko‘rsatish uchun",
+    "B) Bola ko‘chada yiqilib tushgani uchun",
+    "C) Ot changdan qo‘rqib qochib ketgani uchun",
+    "D) Bobosining iltimosiga ko‘ra ogohlantirish uchun"
+   ],
+   "answer": "A) O‘zining manfaati va mansabini ko‘rsatish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Attor cholning bolaga bulbul haqida gapirib berishini qanday baholaysiz?",
+   "options": [
+    "A) Bolaga mehr va sabr bilan javob berdi",
+    "B) Bolani tezroq haydash uchun gapirdi",
+    "C) Qushlarni qimmatroq sotish uchun maqtadi",
+    "D) Bolaning savollaridan jahli chiqib gapirdi"
+   ],
+   "answer": "A) Bolaga mehr va sabr bilan javob berdi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "\"Duo har dardga shifo beradi\" degan ibora matnda qanday tuyg‘uni ifodalaydi?",
+   "options": [
+    "A) Insonlarning shifoga va e’tiqodga bo‘lgan ishonchini",
+    "B) Shifokorlarning dorilarini mensimaslik tuyg‘usini",
+    "C) Domlaning faqat pul topish istagini",
+    "D) Bolalarning maktabdan qochish bahonasini"
+   ],
+   "answer": "A) Insonlarning shifoga va e’tiqodga bo‘lgan ishonchini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Nog‘ora chalanganda qo‘shni kampirlarning chiyillashi matnga qanday ruh bag‘ishlaydi?",
+   "options": [
+    "A) Mahallaning o‘ziga xos samimiy hayotini",
+    "B) Bolalarning o‘yini juda xavfli ekanini",
+    "C) Qo‘shnilar bir-birini yomon ko‘rishini",
+    "D) Nog‘ora ovozi juda xunuk ekanini"
+   ],
+   "answer": "A) Mahallaning o‘ziga xos samimiy hayotini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temirchi usta temirchilik hunari haqida nima dedi?",
+   "options": [
+    "A) Temirni Dovud payg‘ambar topgan deydi",
+    "B) Temirni faqat ruslar yasagan deydi",
+    "C) Temirchilik eng oson hunar deydi",
+    "D) Temirni faqat boylar ishlatadi deydi"
+   ],
+   "answer": "A) Temirni Dovud payg‘ambar topgan deydi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akbar aka maktab idorasida bolaga nimani ko‘rsatib tushuntirdi?",
+   "options": [
+    "A) Globusni yer kurrasining nusxasi dedi",
+    "B) Katta xaritaning rasmini ko‘rsatdi",
+    "C) Siyohdon va qamish qalamni ko‘rsatdi",
+    "D) Yangi ruscha kitoblarni sovg‘a qildi"
+   ],
+   "answer": "A) Globusni yer kurrasining nusxasi dedi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Turg‘un rus bolalar haqida gapirganda qaysi so‘zni bilishini aytdi?",
+   "options": [
+    "A) Ispasiba, xarasho va tavarish so‘zlarini",
+    "B) Zdravstvuyte va do svidaniya so‘zlarini",
+    "C) Pazhaluysta va khorosho so‘zlarini",
+    "D) Dobryy den va spasibo so‘zlarini"
+   ],
+   "answer": "A) Ispasiba, xarasho va tavarish so‘zlarini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bola yangi maktabda qaysi sinfga qabul qilindi?",
+   "options": [
+    "A) Ikkinchi sinfga qabul qilindi",
+    "B) Birinchi sinfga qabul qilindi",
+    "C) Uchinchi sinfga qabul qilindi",
+    "D) To‘rtinchi sinfga qabul qilindi"
+   ],
+   "answer": "A) Ikkinchi sinfga qabul qilindi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Toshkentda qo‘zg‘olon boshlanganda voqealar qanday ketma-ketlikda yuz berdi?",
+   "options": [
+    "A) Miltiq otildi, baqqollar do‘konni yig‘di, tramvaylar to‘xtadi",
+    "B) Tramvaylar to‘xtadi, keyin miltiq otila boshlandi",
+    "C) Baqqollar savdo qildi, keyin tinchlik bo‘ldi",
+    "D) Odamlar bog‘ga yig‘ildi, keyin bozor ochildi"
+   ],
+   "answer": "A) Miltiq otildi, baqqollar do‘konni yig‘di, tramvaylar to‘xtadi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolaning yangi maktabga kirish bosqichlari tartibi qanday bo‘ldi?",
+   "options": [
+    "A) Akbar aka chaqirdi, imtihon topshirdi, sinfga kirdi",
+    "B) Sinfga kirdi, kitob oldi, keyin rasm chizdi",
+    "C) Rasm chizdi, keyin idoraga kirib yozdi",
+    "D) Globusni oldi, keyin uyiga yugurib ketdi"
+   ],
+   "answer": "A) Akbar aka chaqirdi, imtihon topshirdi, sinfga kirdi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega ishchilar va ustalar shahardagi mitinglarga qiziqish bilan qarashdi?",
+   "options": [
+    "A) Adolat va yorug‘ kunlarga umid qilgani uchun",
+    "B) Mitingda tekin ovqat berilgani uchun",
+    "C) Poshsholarga yordam berishni xohlagani uchun",
+    "D) Ishdan qochish uchun imkoniyat topilganidan"
+   ],
+   "answer": "A) Adolat va yorug‘ kunlarga umid qilgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bola nega eski maktabni tashlab, yangi maktabda o‘qishni xohladi?",
+   "options": [
+    "A) Yangi ilmlar va ma’rifatga intilgani uchun",
+    "B) Eski maktabda uni tez-tez urishgani uchun",
+    "C) Yangi maktab uyiga juda yaqin bo‘lganidan",
+    "D) Do‘stlarining hammasi yangi maktabga o‘tgani uchun"
+   ],
+   "answer": "A) Yangi ilmlar va ma’rifatga intilgani uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bolaning yarador odamga do‘ppisida suv keltirib bergan ishini qanday baholaysiz?",
+   "options": [
+    "A) Yuksak insoniylik va rahm-shafqat ko‘rinishi",
+    "B) Qo‘rqoq odamning bilmasdan qilgan harakati",
+    "C) O‘z hayotini behabar xavfga qo‘yish",
+    "D) Faqat ruschani o‘rganish uchun qilingan ish"
+   ],
+   "answer": "A) Yuksak insoniylik va rahm-shafqat ko‘rinishi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida \"Yangi maktab — ilm xazinasi\" deyilganda qanday his uzatilgan?",
+   "options": [
+    "A) Kelajakka bo‘lgan ishonch va ilm ziyo tuyg‘usi",
+    "B) Maktab binosining juda katta va muhtashamligi",
+    "C) Eski maktab domlalaridan o‘ch olish quvonchi",
+    "D) Bolaning faqat rasm chizishga bo‘lgan qiziqishi"
+   ],
+   "answer": "A) Kelajakka bo‘lgan ishonch va ilm ziyo tuyg‘usi"
+  }
+ ]
+}

@@ -1,0 +1,447 @@
+{
+ "title": "Afandining qirq bir pashshasi",
+ "author": "Zohir Aʼlam",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15",
+  "topics": [
+   "topqirlik",
+   "adolat",
+   "haqiqatparvarlik",
+   "kattalarga hurmat",
+   "mehnatsevarlik"
+  ],
+  "theme": "Asar zukkolar adolatsizlik ustidan hamisha aql va kulgi bilan gʻalaba qozonishini koʻrsatadi.",
+  "summary": "Nasriddin Afandi Laylak qishlogʻiga koʻchib keladi. Qishloq boyi Muhsin guppi elning suvini toʻsib, odamlarni ezardi. Afandi Muhsinboyni aql bilan chuv tushirib, polizini sugʻortirib oladi. Alamzada boy mirshablar bilan birga Afandining asalini oʻzlashtirmoqchi boʻladi. Lekin Dono Afandi pashshalar bahonasi bilan qozidan «qirq bir pashshani urish» vakolatnomasini oladi va boy hamda mirshablarni sharmanda qiladi. Oxirida qozikalon va bek majbur boʻlib Laylakdagi ariqni xalqqa qaytaradi. Afandi esa oilasi va sodiq doʻsti Abdi oppoq bilan boshqa shahar va oʻlkalarga yoʻl oladi.",
+  "characters": "Nasriddin Afandi — hozirjavob, dono va kambagʻalparvar qahramon; Muhsin guppi — Laylak qishlogʻining ochkoʻz boyi; Abdi oppoq (Qalandar) — mard va jasur chapani; Nodir va Sodir — taʼmagir mirshablar.",
+  "conclusion": "Bu qissa bolaga qiyin vaziyatlarda aql, sabr va yumor bilan adolat oʻrnatish mumkinligini oʻrgatadi. Kattalarga hurmat, halollik hamda haqiqatparvarlik kabi oliyjanob fazilatlarni shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "kulgili, o‘ylantiruvchi",
+  "for_whom": "Qiziqarli hangomalar, dono sarguzashtlar va hozirjavob qahramonlar haqida oʻqishni xush koʻradigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nasriddin Afandi tushida otasi nimani buyurganini aytdi?",
+   "options": [
+    "A) Bogʻdagi xumni suvga toʻldirishni",
+    "B) Qishloqdan koʻchib ketishni",
+    "C) Bolarilar uchun uy qurishni",
+    "D) Yangi mevali bogʻ yaratishni"
+   ],
+   "answer": "A) Bogʻdagi xumni suvga toʻldirishni"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muhsin guppi va malaylari xumga qancha suv quydilar?",
+   "options": [
+    "A) Ellik chelak suv",
+    "B) Yuz chelak suv",
+    "C) Ikki yuz chelak suv",
+    "D) Oʻn chelak suv"
+   ],
+   "answer": "C) Ikki yuz chelak suv"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muhsin guppi aytgan ikki malay kimlar edi?",
+   "options": [
+    "A) Nodir va Sodir",
+    "B) Tursunali va Alimsho",
+    "C) Abdi va Ahmad",
+    "D) Qosim va Barot"
+   ],
+   "answer": "B) Tursunali va Alimsho"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Afandi xumga quyilgan suvdan qanday foydalandi?",
+   "options": [
+    "A) Hovuzni toʻldirib choy ichdi",
+    "B) Suvni qoʻshnilarga sotib yubordi",
+    "C) Oʻzining poliz va daraxtlarini sugʻordi",
+    "D) Eshagini sugʻorishga ishlatdi"
+   ],
+   "answer": "C) Oʻzining poliz va daraxtlarini sugʻordi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nasriddin Afandining buvi xolasi necha yoshda vafot etdi?",
+   "options": [
+    "A) Sakson yoshda",
+    "B) Toʻqson uch yoshda",
+    "C) Yuz yoshda",
+    "D) Yetti oʻn yoshda"
+   ],
+   "answer": "B) Toʻqson uch yoshda"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Muhsin guppi tush haqidagi gapga tezda ishondi?",
+   "options": [
+    "A) Afandiga juda rahm qilgani uchun",
+    "B) Bogʻning yarmiga ega boʻlish uchun",
+    "C) Otasining ruhidan qoʻrqqani uchun",
+    "D) Suv tashlashni yaxshi koʻrgani uchun"
+   ],
+   "answer": "B) Bogʻning yarmiga ega boʻlish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Afandining Muhsin guppiga tush haqida gapirishi toʻgʻrimidi?",
+   "options": [
+    "A) Yoʻq, u yolgʻon gapirmasligi kerakdi",
+    "B) Toʻgʻri, boyning haqsizligiga saboq boʻldi",
+    "C) Notoʻgʻri, u mehnatdan qochdi",
+    "D) Nomaʼlum, hech qanday taʼsiri boʻlmadi"
+   ],
+   "answer": "B) Toʻgʻri, boyning haqsizligiga saboq boʻldi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Afandi haqida «tegirmonga tushsa joyidan chiqadi» deganda nimani bildiradi?",
+   "options": [
+    "A) Har qanday vaziyatdan yoʻl topishini",
+    "B) Un tegirmonida ishlashni yaxshi koʻrishini",
+    "C) Faqat tegirmonchilar bilan doʻstligini",
+    "D) Uning juda ogʻir odamligini"
+   ],
+   "answer": "A) Har qanday vaziyatdan yoʻl topishini"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmad tarasha va Abdi oppoq qaysi choyxonaga burilishdi?",
+   "options": [
+    "A) Toshxoʻja kal choyxonasiga",
+    "B) Pirmat pirsyon choyxonasiga",
+    "C) Shokir qizil choyxonasiga",
+    "D) Mulla qovoq choyxonasiga"
+   ],
+   "answer": "C) Shokir qizil choyxonasiga"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mirshablar Sardoba oldida dastlab kimni toʻxtatib chirqiratishdi?",
+   "options": [
+    "A) Abdukarim degan dehqonni",
+    "B) Muhsin guppini",
+    "C) Alimsho shoirni",
+    "D) Nasriddin Afandini"
+   ],
+   "answer": "A) Abdukarim degan dehqonni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muhsin guppi mirshablarga asal evaziga nima vaʼda qildi?",
+   "options": [
+    "A) Bir xumdan asal va yarim tilla",
+    "B) Oʻn tanga kumush pul",
+    "C) Yangi toʻn va ot",
+    "D) Ikki qop meva va non"
+   ],
+   "answer": "A) Bir xumdan asal va yarim tilla"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nasriddin mirshablarga asalni kim yeb ketdi dedi?",
+   "options": [
+    "A) Qaroqchilar toʻdasi",
+    "B) Qirq bitta pashsha",
+    "C) Koʻchadagi bekorchilar",
+    "D) Boyning malaylari"
+   ],
+   "answer": "B) Qirq bitta pashsha"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega mirshablar Afandining pashshalar haqidagi gapiga darrov qoʻshilishdi?",
+   "options": [
+    "A) Afandidan juda qoʻrqishgani uchun",
+    "B) Asal oʻgʻriligini yashirish uchun",
+    "C) Pashshalardan nafratlanishgani uchun",
+    "D) Qozining buyrugʻini bajarish uchun"
+   ],
+   "answer": "B) Asal oʻgʻriligini yashirish uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Afandining qozidan pashshalarni urishga vakolat soʻrashi oqilonami?",
+   "options": [
+    "A) Yoʻq, bu bemaʼni ish edi",
+    "B) Ha, firibgarlarni boplash usuli edi",
+    "C) Notoʻgʻri, qozi xafa boʻldi",
+    "D) Qaysarlik, hech kimga yordam bermadi"
+   ],
+   "answer": "B) Ha, firibgarlarni boplash usuli edi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qozixonada kim kimga tarsaki tushirish bilan tahdid qildi?",
+   "options": [
+    "A) Muhsin guppi mirshablarga",
+    "B) Nasriddin Afandi barcha firibgarlarga",
+    "C) Abdukarim qozikalonga",
+    "D) Bek barcha aʼyonlarga"
+   ],
+   "answer": "B) Nasriddin Afandi barcha firibgarlarga"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muhsin guppi bozorda qanday buyumni koʻzdan kechirdi?",
+   "options": [
+    "A) Oq poʻlatli xanjarni",
+    "B) Qimmatbaho gilamni",
+    "C) Kumush uzukni",
+    "D) Zarbof choponni"
+   ],
+   "answer": "A) Oq poʻlatli xanjarni"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Afandi haqida «dushmanlariga kulgi bilan taʼzir berdi» deya nimani taʼkidlaydi?",
+   "options": [
+    "A) Uning qurolsiz, aql bilan yengishini",
+    "B) Faqat latifa aytib yurishini",
+    "C) Odamlar ustidan mazax qilishini",
+    "D) Urushishni bilmasligini"
+   ],
+   "answer": "A) Uning qurolsiz, aql bilan yengishini"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Abdukarim vakolatnomani oʻzida saqlashdan qoʻrqdi?",
+   "options": [
+    "A) Boy va amaldorlar intizorligidan",
+    "B) Qogʻozni yoʻqotib qoʻyishdan",
+    "C) Afandiga yomonlik yetishidan xavotirlanib",
+    "D) Hujjatning eskiligidan"
+   ],
+   "answer": "C) Afandiga yomonlik yetishidan xavotirlanib"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Afandi Nozlinisaga kim bilan uchrashishni maslahat berdi?",
+   "options": [
+    "A) Shahar beki bilan",
+    "B) Muhsin guppi bilan",
+    "C) Qozikalon bilan",
+    "D) Qalandar Hoji Sattor bilan"
+   ],
+   "answer": "A) Shahar beki bilan"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Afandining Abdukarim charxpalagini tiklashga kirishishi haqida qanday baho berasan?",
+   "options": [
+    "A) Bu zahmatli va keraksiz ish",
+    "B) Mazlum dehqonga haqiqiy gʻamxoʻrlik",
+    "C) Oʻz manfaati uchun qilingan",
+    "D) Boylarga qarshi behuda urinish"
+   ],
+   "answer": "B) Mazlum dehqonga haqiqiy gʻamxoʻrlik"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Laylak qishlogʻidagi majlisda oʻqariq suvining taqdiri nima boʻldi?",
+   "options": [
+    "A) Suv butunlay Muhsinboyga berildi",
+    "B) Oʻqariq umumjamoa mulkiga aylandi",
+    "C) Ariq yopib tashlandi",
+    "D) Suv faqat mirshablarga ajratildi"
+   ],
+   "answer": "B) Oʻqariq umumjamoa mulkiga aylandi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Majlisdan soʻng Muhsin guppi qanday ahvolga tushdi?",
+   "options": [
+    "A) Boyligi ortib xursand boʻldi",
+    "B) Uydan chiqmay koʻkragini zaxga berdi",
+    "C) Nasriddin bilan sayohatga chiqdi",
+    "D) Shaharga koʻchib bekka xizmat qildi"
+   ],
+   "answer": "B) Uydan chiqmay koʻkragini zaxga berdi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Afandi bogʻini Muhsin guppiga necha tangaga sotdi?",
+   "options": [
+    "A) Besh tangaga",
+    "B) Oʻn tangaga",
+    "C) Oʻn besh tangaga",
+    "D) Yigirma tangaga"
+   ],
+   "answer": "C) Oʻn besh tangaga"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Afandi bogʻini sotib Laylakdan koʻchib ketishga qaror qildi?",
+   "options": [
+    "A) Muhsinboydan qoʻrqgani uchun",
+    "B) Katta shaharni hamda farzandlarini sogʻingani uchun",
+    "C) Dehqonchilikni yoqtirmagani uchun",
+    "D) Bek uni haydagani uchun"
+   ],
+   "answer": "B) Katta shaharni hamda farzandlarini sogʻingani uchun"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Afandining Guppiga bogʻni sotib, unga koʻchmaslikni aytishi haqida fikring?",
+   "options": [
+    "A) Oliyjanoblik va kibrsiz bagʻrikenglik",
+    "B) Zaiflik va magʻlubiyat",
+    "C) Pulga oʻchlik",
+    "D) Eʼtiborsizlik"
+   ],
+   "answer": "A) Oliyjanoblik va kibrsiz bagʻrikenglik"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Qalandarning «Soyamdan boshqa yor yoʻq» bayti muallif tomonidan qanday kayfiyatda berilgan?",
+   "options": [
+    "A) Quvnoq va kulgili",
+    "B) Hazin va oʻylantiruvchi",
+    "C) Gʻazabli va shafqatsiz",
+    "D) Mazax va pichingli"
+   ],
+   "answer": "B) Hazin va oʻylantiruvchi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karvonga hujum qilgan qaroqchilar toʻdasining boshligʻi kim edi?",
+   "options": [
+    "A) Qosim qaroqchi",
+    "B) Ahmad tarasha",
+    "C) Abdi oppoq",
+    "D) Barot zargar"
+   ],
+   "answer": "A) Qosim qaroqchi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qalandar Karvondagi odamlarni qanday qilib qaroqchilardan qutqardi?",
+   "options": [
+    "A) Kamondan aniq otib va jasorat koʻrsatib",
+    "B) Qaroqchilarga barcha tilla va mollarni berib",
+    "C) Shahar mirshablarini yordamga chaqirib",
+    "D) Qosim qaroqchiga yolvorib soʻrab"
+   ],
+   "answer": "A) Kamondan aniq otib va jasorat koʻrsatib"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif asar soʻngida Nasriddin va Abdi oppoqning Turkiyaga oʻtganini yozib nimani ifodalaydi?",
+   "options": [
+    "A) Haqiqatparvar insonlar har qayerda ardoqlanishini",
+    "B) Ularning yurtni yoqtirmay ketganini",
+    "C) Urushdan qoʻrqib qochganini",
+    "D) Sayohat qilishni yaxshi koʻrishini"
+   ],
+   "answer": "A) Haqiqatparvar insonlar har qayerda ardoqlanishini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karvondagi qalandar aslida kim boʻlib chiqdi?",
+   "options": [
+    "A) Abdi oppoq",
+    "B) Ahmad tarasha",
+    "C) Alimsho shoir",
+    "D) Nodir mirshab"
+   ],
+   "answer": "A) Abdi oppoq"
+  }
+ ]
+}

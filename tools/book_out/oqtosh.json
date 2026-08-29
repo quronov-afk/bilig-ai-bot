@@ -1,0 +1,287 @@
+{
+ "title": "Oqtosh",
+ "author": "Shukur Xolmirzayev",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "do‘stlik",
+   "mehr-oqibat",
+   "jasorat",
+   "oila",
+   "tabiat"
+  ],
+  "theme": "Insoniy mehr, keksiz birodarlik va jasorat har qanday adovat hamda nifoqdan ustun turadi.",
+  "summary": "Sodiq Sho‘ro raisasi bo‘lgan onasi bilan Ulkan qishlog‘iga ko‘chib o‘tadi. Onasi unga kolxoz raisi Rais boboning o‘g‘li Jo‘ra bilan o‘ynashni taqiqlaydi. Biroq Sodiq Jo‘ra bilan tanishib, do‘stlashib oladi. Jo‘ra unga daryoda suzishni, suv ostida ko‘z ochishni va palaxmon otishni o‘rgatadi. Ular daryo tubidan «Oqtosh» deb ataladigan silliq toshni olib chiqish o‘yinini o‘ynashadi. Bir kuni Sodiq daryo qoyasidagi jarqaldirg‘och inini ko‘rish uchun yuqoriga chiqadi. Qaldirg‘ochlar hamlasidan boshi aylanib, daryoning eng chuqur va xavfli girdobiga tushib ketadi. Suv ostida Sodiq oqtoshni topib ushlab oladi, ammo hushidan ketadi. Jo‘ra o‘z hayotini xavfga qo‘yib, Sodiqni daryo tubidan qutqarib olib chiqadi. Shu voqeadan keyin ham onasining Jo‘raga munosabati o‘zgarmasa-da, Sodiq uchun Jo‘ra eng yaqin va sirdosh birodariga aylanadi.",
+  "characters": "Sodiq (hikoyachi bola, shaharlik), Jo‘ra (Rais boboning o‘g‘li, mard va g‘amxo‘r bola), Sodiqning onasi (Sho‘ro raisasi, qattiqqo‘l), Rais bobo (kolxoz raisi, Jo‘raning otasi), Oqboy va Jamol (qishloq bolalari).",
+  "conclusion": "Asar bolalarda kattalarning nifoqlariga qaramasdan soflikni saqlash, do‘stga sadoqat, mardlik va g‘amxo‘rlik fazilatlarini shakllantiradi. Bola qiyin damda yordamga oshiqish va mehr-oqibatning har qanday to‘siqdan ustunligini anglaydi.",
+  "difficulty": "o‘rta",
+  "mood": "ta'sirchan, o‘ylantiruvchi, samimiy",
+  "for_whom": "Do‘stlik, jasorat hamda tabiat qo‘ynidagi sarguzashtlarni xush ko‘radigan, qahramonlar taqdiriga befarq bo‘lmagan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sodiqning onasi qishloqqa qanday vazifaga tayinlandi?",
+   "options": [
+    "A) Kolxoz raisi",
+    "B) Sho‘ro raisi",
+    "C) Maktab direktori"
+   ],
+   "answer": "B) Sho‘ro raisi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sodiq va uning onasi qayerga joylashishdi?",
+   "options": [
+    "A) Pishiq g‘ishtli uyga",
+    "B) O‘rikzordagi o‘tovga",
+    "C) Daryo bo‘yidagi kapaga"
+   ],
+   "answer": "B) O‘rikzordagi o‘tovga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sodiq va bolalar Jo‘raning onasiga nimalar olib borishdi?",
+   "options": [
+    "A) Patir non va qovurdoq",
+    "B) O‘rik va yong‘oq",
+    "C) Shakar va sut"
+   ],
+   "answer": "A) Patir non va qovurdoq"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Onasi Sodiqqa nega Jo‘ra bilan o‘ynashni taqiqladi?",
+   "options": [
+    "A) Jo‘ra shox bola bo‘lgani uchun",
+    "B) Ota-onalar orasidagi munosabat sababli",
+    "C) Jo‘ra shaharga ketmoqchi bo‘lgani uchun"
+   ],
+   "answer": "B) Ota-onalar orasidagi munosabat sababli"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jo‘raning onasi qayerda va qanday joyda yashardi?",
+   "options": [
+    "A) Qishloq markazidagi katta hovlida",
+    "B) Qabriston yaqinidagi kapada",
+    "C) Tumandagi kasalxonada"
+   ],
+   "answer": "B) Qabriston yaqinidagi kapada"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jo‘ra onasining oldidan chiqqach, nega ko‘zlarini artib keldi?",
+   "options": [
+    "A) Ko‘ziga chang kirgani uchun",
+    "B) Onasining ahvoliga achinib yig‘lagani uchun",
+    "C) Quyosh ko‘zini qashtirgani uchun"
+   ],
+   "answer": "B) Onasining ahvoliga achinib yig‘lagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oqboy chumchuq bolalarini nima qilganini aytdi?",
+   "options": [
+    "A) Uyaga qaytarib qo‘ydi",
+    "B) It va mushukka yedirdi",
+    "C) Qafasda boqdi"
+   ],
+   "answer": "B) It va mushukka yedirdi"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Daryo ustiga qurilgan ko‘prik qanday ko‘prik edi?",
+   "options": [
+    "A) Tosh ko‘prik",
+    "B) Osma ko‘prik",
+    "C) Yog‘och ko‘prik"
+   ],
+   "answer": "B) Osma ko‘prik"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jo‘ra Sodiqqa palaxmonni nimadan eshib yasab berdi?",
+   "options": [
+    "A) Kigiz qili va echki junidan",
+    "B) Pishiq ip va charmdan",
+    "C) Terak po‘stlog‘idan"
+   ],
+   "answer": "A) Kigiz qili va echki junidan"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sodiq va Jo‘ra nega onasining oldida arazlashganday yurishga kelishishdi?",
+   "options": [
+    "A) Chindan urishib qolishgani uchun",
+    "B) Onasining jahli chiqmasligi uchun",
+    "C) Boshqa bolalardan qo‘rqishgani uchun"
+   ],
+   "answer": "B) Onasining jahli chiqmasligi uchun"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Daryo tubida ko‘z ochib o‘ynaladigan o‘yin nima deb atalardi?",
+   "options": [
+    "A) \"Oqtosh\" o‘yini",
+    "B) \"Girdob\" o‘yini",
+    "C) \"Suvchi\" o‘yini"
+   ],
+   "answer": "A) \"Oqtosh\" o‘yini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sodiq daryoda suzishni o‘rganayotganda qanday qoidalarni tushundi?",
+   "options": [
+    "A) Oqim bo‘yicha tez chopishni",
+    "B) Oqimga qarshi suzish kerakligini",
+    "C) Suvda mutlaqo harakatlanmaslikni"
+   ],
+   "answer": "B) Oqimga qarshi suzish kerakligini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jamol nega o‘zini kelajakda suvchi bo‘laman deb aytdi?",
+   "options": [
+    "A) O‘qishni umuman yoqtirmagani uchun",
+    "B) Suvda juda yaxshi suza olgani uchun",
+    "C) Shaharga ko‘chib ketmoqchi bo‘lgani uchun"
+   ],
+   "answer": "B) Suvda juda yaxshi suza olgani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jo‘raning Sodiqqa suzishni sabr bilan o‘rgatishi uning qaysi sifatini ko‘rsatadi?",
+   "options": [
+    "A) Bag‘rikeng va g‘amxo‘rligini",
+    "B) Qahri qattiqligini",
+    "C) Maqtanchoqligini"
+   ],
+   "answer": "A) Bag‘rikeng va g‘amxo‘rligini"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sodiq tosh qatiga nega o‘rmalab chiqdi?",
+   "options": [
+    "A) Jamoldan yashirinish uchun",
+    "B) Qaldirg‘och bolalarini ko‘rish uchun",
+    "C) Chumchuq inini buzish uchun"
+   ],
+   "answer": "B) Qaldirg‘och bolalarini ko‘rish uchun"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sodiq nega tosh qatidan birdaniga suvga tushib ketdi?",
+   "options": [
+    "A) Qaldirg‘ochlar hamlasidan boshi aylanib",
+    "B) Bolalar uni pastga tortgani uchun",
+    "C) Suvga sakrashni xohlagani uchun"
+   ],
+   "answer": "A) Qaldirg‘ochlar hamlasidan boshi aylanib"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sodiqni suv girdobidan kim qutqarib olib chiqdi?",
+   "options": [
+    "A) Jamol",
+    "B) Jo‘ra",
+    "C) Rais bobo"
+   ],
+   "answer": "B) Jo‘ra"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jo‘raning o‘z hayotini xavfga qo‘yib Sodiqni qutqarishi haqida nima deyish mumkin?",
+   "options": [
+    "A) U haqiqiy mard va mehribon birodar",
+    "B) U shunchaki o‘zini ko‘rsatmoqchi bo‘ldi",
+    "C) U otasidan qo‘rqgani uchun qutqardi"
+   ],
+   "answer": "A) U haqiqiy mard va mehribon birodar"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Sodiqning oqtoshni musobaqa kuboklaridan ham aziz bilishini qanday tasvirlaydi?",
+   "options": [
+    "A) Tosh mardlik va mehr belgisi ekani uchun",
+    "B) U judayam qimmatbaho tosh bo‘lgani uchun",
+    "C) Uni onasi sovg‘a qilgani uchun"
+   ],
+   "answer": "A) Tosh mardlik va mehr belgisi ekani uchun"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Hikoyada Jo‘ra obrazining bolalarda uyg‘otadigan eng go‘zal tuyg‘usi nima?",
+   "options": [
+    "A) Kek saqlamaslik va chinakam birodarlik",
+    "B) Boshqalarga xursandchilik bilan berilmaslik",
+    "C) Har doim faqat o‘zini o‘ylash"
+   ],
+   "answer": "A) Kek saqlamaslik va chinakam birodarlik"
+  }
+ ]
+}

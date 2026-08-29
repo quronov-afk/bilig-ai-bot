@@ -1,0 +1,419 @@
+{
+ "title": "O‘zbek xalq ertaklari",
+ "author": "",
+ "genre": "",
+ "age_group": "3",
+ "coverage": "kesma",
+ "passport": {
+  "author": "Xalq og‘zaki ijodi",
+  "genre": "Ertak / Xalq ertaklari",
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "ezgulik va yovuzlik",
+   "halollik",
+   "mehnatsevarlik",
+   "jasorat",
+   "sadoqat"
+  ],
+  "theme": "Ezgulik, halollik va mehnatsevarlik har doim yovuzlik hamda ochko‘zlik ustidan g‘alaba qozonadi, va’daga vafo insonga baxt va el-yurt hurmatini keltiradi.",
+  "summary": "To‘plamga xalq og‘zaki ijodining sara ertaklari kiritilgan. 'Ilonning ishi zahar solmoq' ertagida cho‘pon ilonni qutqaradi, tulki esa aql bilan ilonni qayta xaltaga soladi. 'Oltin tarvuz'da yaxshilik qilgan kambag‘al dehqon tarvuzidan tilla oladi, yomonlik qilgan boy esa jazolanadi. 'Tohir va Zuhra'da ikki yoshning fojiali, ammo pok muhabbati va sadoqati hikoya qilinadi. 'Muqbil toshotar'da jasur cho‘pon yirtqichlarni yengib, xalqini va sevgisini himoya qiladi. 'Podachining qizi'da yetim qiz sabr-toqati va pokligi bilan baxtga erishadi, shafqatsiz o‘gay ona esa jazosini oladi. 'Jonon piyola'da aqlli va dovyurak Nosir kal zolim podshoh va ayyor vazirning hiylasini fosh etib, qirq bechora kulolni o‘limdan qutqarib qoladi.",
+  "characters": "Kambag‘al dehqon — mehnatsevar va rahm-shafqatli. Tohir va Zuhra — chin muhabbat hamda sadoqat timsollari. Muqbil toshotar — jasur va elparvar cho‘pon. Podachining qizi — sabrli va halol yetim qiz. Nosir kal — zukko, dovyurak va oqko‘ngil usta shogird.",
+  "conclusion": "Ushbu ertaklar farzandingizga halollik, sabr-toqat, kattalarga hurmat va do‘stlikka sadoqat kabi eng oliy insoniy fazilatlarni o‘rgatadi. Bola yaxshilik har doim yomonlik ustidan g‘alaba qozonishini anglab yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, o‘ylantiruvchi, saboq beruvchi",
+  "for_whom": "Sehrli sarguzashtlar, adolat va mardlik haqidagi ertaklarni yoqtiradigan, ezgulik va halollik qadrini tushunishni xohlagan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Cho‘pon ilonni o‘limdan qanday qutqardi?",
+   "options": [
+    "A) Xaltani tayoqqa bog‘lab uzatdi",
+    "B) Uni qo‘li bilan ko‘tarib oldi",
+    "C) Suvga yog‘och tashladi"
+   ],
+   "answer": "A) Xaltani tayoqqa bog‘lab uzatdi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kambag‘al dehqon laylakning qaysi a’zosini davoladi?",
+   "options": [
+    "A) Siniq qanotini",
+    "B) Siniq oyog‘ini",
+    "C) Yaroqsiz tumshug‘ini"
+   ],
+   "answer": "A) Siniq qanotini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kambag‘al dehqon pishgan tarvuzlarni so‘yganda ichidan nima chiqdi?",
+   "options": [
+    "A) Shirin sharbat",
+    "B) Sof tilla",
+    "C) Qovoqarilar"
+   ],
+   "answer": "B) Sof tilla"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Noma’lum chol podshoh va vazirga nima berdi?",
+   "options": [
+    "A) Ikkita qizil olma",
+    "B) Ikkita oltin uzuk",
+    "C) Sehrli kitob"
+   ],
+   "answer": "A) Ikkita qizil olma"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sigir va olma daraxtining javoblaridagi umumiy fikr nima edi?",
+   "options": [
+    "A) Yaxshilikka yomonlik qaytadi",
+    "B) Yaxshilikka yaxshilik qaytadi",
+    "C) Odamlar har doim g‘amxo‘r"
+   ],
+   "answer": "A) Yaxshilikka yomonlik qaytadi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tulki ilonni xaltaga kiritish uchun qanday usul qo‘lladi?",
+   "options": [
+    "A) Ilonning maqtanchoqligidan foydalandi",
+    "B) Ilonni kuch bilan qo‘rqitdi",
+    "C) Ilonga shirin yelmish berdi"
+   ],
+   "answer": "A) Ilonning maqtanchoqligidan foydalandi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Boy dehqonning tarvuzidan nega qovoqarilar chiqdi?",
+   "options": [
+    "A) U laylakka g‘arazlik qilgani uchun",
+    "B) U urug‘ni noto‘g‘ri ekkani uchun",
+    "C) Tarvuzlar chirib ketgani uchun"
+   ],
+   "answer": "A) U laylakka g‘arazlik qilgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Cho‘ponning yong‘oq o‘yinidan keyin kampirga qilgan muomalasini qanday baholaysan?",
+   "options": [
+    "A) Qiziqqan bo‘lsa ham, qo‘pol bo‘ldi",
+    "B) Juda to‘g‘ri va odobli bo‘ldi",
+    "C) Qariya bilan hazillashishi maqsadga muvofiq"
+   ],
+   "answer": "A) Qiziqqan bo‘lsa ham, qo‘pol bo‘ldi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Ilonning ishi zahar solmoq» iborasi bilan nimani ta’kidlaydi?",
+   "options": [
+    "A) Yomon tabiati o‘zgarmaydigan kimsalarni",
+    "B) Cho‘ponning juda soddaligini",
+    "C) Tulkining ayyor va quvligini"
+   ],
+   "answer": "A) Yomon tabiati o‘zgarmaydigan kimsalarni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Kambag‘al dehqon halollik bilan murodiga yetdi» jumlasida qanday g‘oya bor?",
+   "options": [
+    "A) Halol mehnat baxt keltirishi",
+    "B) Boylik har doim kelishi",
+    "C) Laylaklar omad keltirishi"
+   ],
+   "answer": "A) Halol mehnat baxt keltirishi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xorazmda sandiqni daryo labidan kimlar tortib chiqardi?",
+   "options": [
+    "A) Podshohning ikkita qizi",
+    "B) Daryo bo‘yidagi baliqchilar",
+    "C) Karvonboshi va navkarlar"
+   ],
+   "answer": "A) Podshohning ikkita qizi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muqbil toshotar qanday qurol bilan jang qilardi?",
+   "options": [
+    "A) Oddiy palaxmon bilan",
+    "B) Oltin qilich bilan",
+    "C) O‘tkir nayza bilan"
+   ],
+   "answer": "A) Oddiy palaxmon bilan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muqbil podshohning birinchi shartida nechta yo‘lbars keltirdi?",
+   "options": [
+    "A) Sakkizta yo‘lbars",
+    "B) To‘rtta yo‘lbars",
+    "C) O‘nta yo‘lbars"
+   ],
+   "answer": "A) Sakkizta yo‘lbars"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tohir va Zuhra qabrida gullar o‘rtasida nima o‘sib chiqdi?",
+   "options": [
+    "A) Qora tikan",
+    "B) Qizil lola",
+    "C) Yashil daraxt"
+   ],
+   "answer": "A) Qora tikan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tohir va Muqbil obrazlarining umumiy xususiyati nima?",
+   "options": [
+    "A) Sevgi va va’daga sadoqatli",
+    "B) Podshoh bo‘lishga intilish",
+    "C) Yirtqichlarni boysundirish mahorati"
+   ],
+   "answer": "A) Sevgi va va’daga sadoqatli"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muqbilning el-yurt uchun qilgan ishlarini tartiblang.",
+   "options": [
+    "A) Malikani qutqardi, dushmanni yengdi",
+    "B) Yurtni tark etib boylik qidirdi",
+    "C) Shohga qul bo‘lib xizmat qildi"
+   ],
+   "answer": "A) Malikani qutqardi, dushmanni yengdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tohir Xorazm malikasining savollariga nega javob bermadi?",
+   "options": [
+    "A) Zuhraga bergan va’dasiga sodiqligi uchun",
+    "B) Tilini yo‘qotib qo‘ygani uchun",
+    "C) Malikaning savollarini tushunmagani uchun"
+   ],
+   "answer": "A) Zuhraga bergan va’dasiga sodiqligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Zolim podshoh Muqbilga nega ketma-ket og‘ir shartlar qo‘ydi?",
+   "options": [
+    "A) Uni halok qilish maqsadida",
+    "B) Uni sinab ko‘rish uchun",
+    "C) Qizini unga bermoqchi bo‘lib"
+   ],
+   "answer": "A) Uni halok qilish maqsadida"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zuhra Tohirni qutqarish uchun ustalarga tilla berishini qanday baholaysan?",
+   "options": [
+    "A) Sadoqat va fidoyilik belgisi",
+    "B) Boylikni behuda sarflash",
+    "C) Podshohga qarshi bekorchi isyon"
+   ],
+   "answer": "A) Sadoqat va fidoyilik belgisi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Tohir va Zuhra qabridagi gullar hamda tikan tasviri nimani anglatadi?",
+   "options": [
+    "A) Pok muhabbat va yovuzlik ramzini",
+    "B) Tabiatning oddiy o‘simliklarini",
+    "C) Podshohning qahr-g‘azabini"
+   ],
+   "answer": "A) Pok muhabbat va yovuzlik ramzini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘gay ona yetim qizni mehmonlar kelganda qayerga yashirdi?",
+   "options": [
+    "A) Tandirning ichiga",
+    "B) Somonxonaga",
+    "C) Yer osti yerto‘lasiga"
+   ],
+   "answer": "A) Tandirning ichiga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yetim qizning tandirda ekanligini kampirlarga kim bildirdi?",
+   "options": [
+    "A) Tovuq bilan xo‘roz",
+    "B) Uyga kelgan qo‘shni",
+    "C) Qizning o‘zi aytdi"
+   ],
+   "answer": "A) Tovuq bilan xo‘roz"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘zchi chol sotgan gullarni podshoh xotini nimaga alishdi?",
+   "options": [
+    "A) Qizning ikki ko‘ziga",
+    "B) Bir xalta tillaga",
+    "C) Qimmatbaho sarpo-surug‘ga"
+   ],
+   "answer": "A) Qizning ikki ko‘ziga"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nosir kal sinib ketgan Jonon piyolani qanday tuzatdi?",
+   "options": [
+    "A) Yangi va afzalini yasadi",
+    "B) Siniqlarini yelimlab qo‘ydi",
+    "C) O‘g‘irlangan piyolani topib keldi"
+   ],
+   "answer": "A) Yangi va afzalini yasadi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Podachining qizi ertagidagi ijobiy yordamchilarni ajrating.",
+   "options": [
+    "A) Kampir, tovuq va bo‘zchi chol",
+    "B) O‘gay ona va uning qizi",
+    "C) Podshoh va uning navkarlari"
+   ],
+   "answer": "A) Kampir, tovuq va bo‘zchi chol"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nosir kal podshohdan nima uchun qirq xachir boylik so‘radi?",
+   "options": [
+    "A) Kulollarni boqish va ta’minlash uchun",
+    "B) O‘zi boyib ketishi uchun",
+    "C) Podshohni qasddan kambag‘allashtirish uchun"
+   ],
+   "answer": "A) Kulollarni boqish va ta’minlash uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Podshoh piyola sohibi Nosir kalni nega o‘g‘ri deb aybladi?",
+   "options": [
+    "A) Vazirining fitnasiga uchrab",
+    "B) Kal piyolani sindirib qo‘ygani uchun",
+    "C) Piyola unga yoqmagani uchun"
+   ],
+   "answer": "A) Vazirining fitnasiga uchrab"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Nosir kalning qirq kulolni o‘limdan qutqarib qolganini qanday baholaysan?",
+   "options": [
+    "A) Aqllilik va do‘stona g‘amxo‘rlik",
+    "B) Shunchaki omadli tasodif",
+    "C) O‘zini ko‘rsatishga urinish"
+   ],
+   "answer": "A) Aqllilik va do‘stona g‘amxo‘rlik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Podachining qiziga zug‘um qilgan o‘gay onaning oqibatini qanday baholaysan?",
+   "options": [
+    "A) Qilmishiga yarasha odil jazo",
+    "B) Mantiqsiz va adolatsiz hukm",
+    "C) Tasodifiy ko‘rgilik va kulfat"
+   ],
+   "answer": "A) Qilmishiga yarasha odil jazo"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Kal piyolani o‘ngga buraganda yettita bo‘lishi tasviri nimani ifodalaydi?",
+   "options": [
+    "A) O‘zbek ertaklaridagi sehr va mahoratni",
+    "B) Podshohning boyligini",
+    "C) Vazirning topqirligini"
+   ],
+   "answer": "A) O‘zbek ertaklaridagi sehr va mahoratni"
+  }
+ ]
+}

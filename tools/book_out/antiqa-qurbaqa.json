@@ -1,0 +1,28 @@
+{
+ "title": "Antiqa qurbaqa",
+ "author": "Mark Tven",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "10-13 yosh (tarjima asar va garov, ayyorlik kabi majoziy holatlar borligi sababli)",
+  "topics": [
+   "ogohlik",
+   "ayyorlik",
+   "soddadillik",
+   "garov va oqibat",
+   "hushyorlik"
+  ],
+  "theme": "Manmanlik va halol bo‘lmagan garovlar insonni chalg‘itadi. Begona kishilar oldida soddalik va beparvolik qilish aldanib qolishga olib keladi.",
+  "summary": "Jim Smiley hamma narsaga garov bog‘lashni yaxshi ko‘radigan sodda odam edi. U Daniel Vebster ismli qurbaqani sakrashga o‘rgatadi va poygalarda yutib yuradi. Bir kuni bir musofir u bilan qirq dollarga garov bog‘lashga rozi bo‘ladi. Smiley musofirga ham qurbaqa tutib kelish uchun ketganda, ayyor musofir Danielning og‘ziga sochma o‘q to‘ldirib qo‘yadi. Poyga paytida Daniel og‘irligidan sakray olmaydi va musofir pulni olib qochadi. Smiley qurbaqasining og‘zidan o‘qlar to‘kilganidagina aldanganini tushunib yetadi.",
+  "characters": "Jim Smiley — garov o‘ynashni yoqtiradigan sodda va maqtanchoq odam; Daniel Vebster — sakrashga o‘rgatilgan antiqa qurbaqa; Musofir — hiyla bilan pulni yutib ketgan ayyor yigit.",
+  "conclusion": "Asar bolaga halol mehnatsiz, garov va tavakkalchilik orqali yutuqqa erishishga urinishning oqibati poyonli bo‘lmasligini ko‘rsatadi. Har bir vaziyatda begona kishilarga ko‘r-ko‘rona ishonmasdan, ogoh va hushyor bo‘lish kerakligini o‘rgatadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, hajviy, saboq beruvchi",
+  "for_whom": "Hajviy voqealarga boy hikoyalarni yoqtiradigan va hayotda ogoh hamda hushyor bo‘lishni o‘rganayotgan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Jim Smiley o‘zining qurbaqasiga ortiqcha ishonib, uni begona kishiga qoldirib ketgani uchun aldanib qoldi. Seningcha, u yana qanday xatoga yo‘l qo‘ydi? O‘zing hayotda tuntaklik qilib aldanib qolmaslik va ogoh bo‘lish uchun nimalarga e’tibor berasan?"
+}

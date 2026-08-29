@@ -1,0 +1,447 @@
+{
+ "title": "Quyoshni ko‘ryapman",
+ "author": "Nodar Dumbadze",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "urush va tinchlik",
+   "samimiy sevgi",
+   "do‘stlik va vafo",
+   "insonparvarlik",
+   "qishloq hayoti"
+  ],
+  "theme": "Asar urush fojialari fonida insoniy mehr-oqibat, pokiza sevgi, sadoqat va ruhiy yorug‘lik har qanday kulfatdan ustun kelishini ko‘rsatadi.",
+  "summary": "Ikkinchi jahon urushi boshlanishi bilan Gurjistonning kichik qishlog‘ida tinch hayot izdan chiqadi. Bosh qahramon Sosoya yetim bo‘lib, o‘qituvchi ammasi Kyeto qaramog‘ida yashaydi. U ko‘zi ojiz, aqlli va chiroyli qiz Xatiani samimiy sevadi. Urush qishloqning barcha erkaklarini frontga olib ketadi. Brigadir Datiko esa frontdan qochib, o‘rmonda yashirinib yuradi. Sosoya va uning do‘sti Bejan paykaldan og‘ir yarador rus askari Anatoliyni topib, ammasining uyida yashirincha davolashadi. Urush yillari ocharchilik, judolik va mashaqqatlar bilan o‘tadi. Daryoda baliq tutishayotganda toshqin Xatiani oqizib ketadi, kutilmaganda qochqin Datiko o‘zini suvga otib, qizni qutqaradi. Lekin qishloq aholi qochqinlikni kechirmaydi va Datikodan yuz o‘giradi. Urush tugab, ko‘plar qaytadi, ko‘plar halok bo‘ladi. Xatia ko‘zini operatsiya qildirish uchun shaharga boradi, ammo jarrohlik keyingi bahorga qoldiriladi. Sosoya Xatiaga bir umr sodiq qolishini va uning ko‘zi bo‘lishini ta’kidlaydi.",
+  "characters": "Sosoya Mamaladze — yetim va mard o‘spirin, Xatiaga sadoqatli oshiq. Xatia — ko‘zi ojiz, ichki dunyosi yorug‘ va dono qiz. Kyeto amma — Sosoyaning mehribon, ilmli ammasi. Datiko — urushdan qochgan, lekin Xatiani qutqargan sobiq brigadir. Bejan — sodda va mehnati halol qishloqdosh. Anatoliy — paykalda topilib, tuzatilgan yarador rus askari.",
+  "conclusion": "Ushbu roman bolaga har qanday og‘ir sharoitda ham insoniylikni yo‘qotmaslik, yaqinlarga sadoqatli bo‘lish va kelajakka umid bilan qarashni o‘rgatadi. Ota-onalar farzandida mehr-oqibat va mardlik tuyg‘ularini shakllantirish uchun bu kitobni tavsiya etishlari mumkin.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Urush davridagi insonlar taqdiri, samimiy sevgi va mardlik haqida o‘qishni xohlaydigan, qahramonlar kechinmalariga hamdard bo‘la oladigan kitobxonlarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Soso va ammasi hovlida o‘tirganda qaysi qush sayrayotgan edi?",
+   "options": [
+    "A) Bulbul",
+    "B) Jo‘r qushcha",
+    "C) Qaldirg‘och",
+    "D) Musicha"
+   ],
+   "answer": "B) Jo‘r qushcha"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kyeto amma qaysi fandan dars berar edi?",
+   "options": [
+    "A) Tarix fanidan",
+    "B) Gruzin tili fanidan",
+    "C) Matematika fanidan",
+    "D) Rus tili fanidan"
+   ],
+   "answer": "B) Gruzin tili fanidan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Urush boshlangani haqidagi xabarni odamlar qayerda eshitishdi?",
+   "options": [
+    "A) Maktab hovlisida",
+    "B) Pochta oldidagi reproduktorda",
+    "C) Tegirmon yonida",
+    "D) Rayon ijroqo‘mida"
+   ],
+   "answer": "B) Pochta oldidagi reproduktorda"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Luka amaki yo‘lda nimani sotgani olib ketayotgan edi?",
+   "options": [
+    "A) Jo‘xori",
+    "B) Olma",
+    "C) Pishloq",
+    "D) Uzum"
+   ],
+   "answer": "B) Olma"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Urush boshlangach, qishloqda dastlab qanday o‘zgarish sezila boshladi?",
+   "options": [
+    "A) Kooperativda mahsulotlar tugab qoldi",
+    "B) Tegirmon butunlay buzildi",
+    "C) Maktab yopib qo‘yildi",
+    "D) Daryo suvi qurib qoldi"
+   ],
+   "answer": "A) Kooperativda mahsulotlar tugab qoldi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sosoya nega ammasining erga tegishini istamas edi?",
+   "options": [
+    "A) Ammasini qizg‘anib, yolg‘izlanishdan qo‘rqqani uchun",
+    "B) Datikoni juda yaxshi ko‘rgani uchun",
+    "C) Qishloqdan ko‘chib ketmoqchi bo‘lgani uchun",
+    "D) Ammasi qarib qolgan deb o‘ylagani uchun"
+   ],
+   "answer": "A) Ammasini qizg‘anib, yolg‘izlanishdan qo‘rqqani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Xatia darsda doskaga yozmas, faqat tinglardi?",
+   "options": [
+    "A) Dangasa bo‘lgani uchun",
+    "B) Tug‘ma ko‘zi ojiz bo‘lgani uchun",
+    "C) Qalam tutishni bilmagani uchun",
+    "D) Kitobi yo‘qligi uchun"
+   ],
+   "answer": "B) Tug‘ma ko‘zi ojiz bo‘lgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Urushga ketayotgan yigitlarning kulishib xayrlashishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Urushni o‘yin deb bilishganini",
+    "B) Yaqinlariga tasalli berish va mardligini",
+    "C) Qishloqdan qutulganiga xursandligini",
+    "D) Urushni juda xohlashganini"
+   ],
+   "answer": "B) Yaqinlariga tasalli berish va mardligini"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif erkaklar ketgach odamlarni sohilga chiqarilgan baliqlarga o‘xshatgani nimani anglatadi?",
+   "options": [
+    "A) Qishloqdagilarning chorasiz va yolg‘iz qolganini",
+    "B) Supsa daryosida baliq ko‘pligini",
+    "C) Odamlar baliq oviga chiqmoqchiligini",
+    "D) Qishloqda suv toshqini bo‘lganini"
+   ],
+   "answer": "A) Qishloqdagilarning chorasiz va yolg‘iz qolganini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Kyeto ammaning Bibi Maryamga o‘xshatilishi uning qaysi sifatini ochadi?",
+   "options": [
+    "A) Boy va mag‘rurligini",
+    "B) Pokiza, chiroyli va ilmliligini",
+    "C) Qahri qattiqligini",
+    "D) Qo‘rqoq va nimjonligini"
+   ],
+   "answer": "B) Pokiza, chiroyli va ilmliligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sosoya va Bejan paykaldan qanday odamni topib olishdi?",
+   "options": [
+    "A) Yarador rus askarini",
+    "B) Qochqin nemisni",
+    "C) Qishloq brigadirini",
+    "D) Keksa tegirmonchini"
+   ],
+   "answer": "A) Yarador rus askarini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yarador Askarni davolash uchun kim giyohlardan dori keltirdi?",
+   "options": [
+    "A) Mina xola",
+    "B) Akvirine buvi",
+    "C) Sidoniya",
+    "D) Ksenia"
+   ],
+   "answer": "B) Akvirine buvi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Harbiy dars o‘qituvchisi Levan qaysi jangda qatnashgan edi?",
+   "options": [
+    "A) Hasan ko‘li yaqinida",
+    "B) Berlin shturmida",
+    "C) Moskva mudofaasida",
+    "D) Stalingrad jangida"
+   ],
+   "answer": "A) Hasan ko‘li yaqinida"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bejan vafot etgach, uning qabri qaysi daraxt tagida edi?",
+   "options": [
+    "A) Yong‘oq daraxti",
+    "B) Archa daraxti",
+    "C) Olma daraxti",
+    "D) Kashtan daraxti"
+   ],
+   "answer": "B) Archa daraxti"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Anatoliy tuzalgach, ammasiga qarab uni kim deb o‘yladi?",
+   "options": [
+    "A) Xotini Mariya deb",
+    "B) Oshpaz xola deb",
+    "C) Singlisi Anna deb",
+    "D) Hamshira qiz deb"
+   ],
+   "answer": "A) Xotini Mariya deb"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Anatoliyni qutqarish uchun Sosoya va Xatia qayerdan sut so‘rashdi?",
+   "options": [
+    "A) Mina xolanikiga borishdi",
+    "B) Edemikanikiga borishdi",
+    "C) Gerasimnikiga borishdi",
+    "D) Asalonikiga borishdi"
+   ],
+   "answer": "A) Mina xolanikiga borishdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bejan nima uchun Datikoning bo‘ynidan ushlab, uni to‘xtatdi?",
+   "options": [
+    "A) Anatoliyni o‘ldirishiga yo‘l qo‘ymaslik uchun",
+    "B) Datikoning miltig‘ini tortib olish uchun",
+    "C) O‘zi Datikoga dushman bo‘lgani uchun",
+    "D) Anatoliy bilan urushmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Anatoliyni o‘ldirishiga yo‘l qo‘ymaslik uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Datikoning frontdan qochib yashirinishi uning qandayligini ko‘rsatadi?",
+   "options": [
+    "A) Qo‘rqoq va xiyonatkorligini",
+    "B) Aqlli va ehtiyotkorligini",
+    "C) Mehribon va soddaligini",
+    "D) Kuchli va jasurligini"
+   ],
+   "answer": "A) Qo‘rqoq va xiyonatkorligini"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sosoyaning Bejan qabrini qordan tozalashi qaysi fazilatni ko‘rsatadi?",
+   "options": [
+    "A) Vafodorlik va do‘stga hurmatni",
+    "B) Ishyoqmaslik va bekorchilikni",
+    "C) Qo‘rqinch va majburiyatni",
+    "D) Maqtanchoqlik va kibrni"
+   ],
+   "answer": "A) Vafodorlik va do‘stga hurmatni"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Anatoliyning ammasiga aytgan «Mariyam...» degan gapida qanday tuyg‘u bor?",
+   "options": [
+    "A) Chuqur iztirob va umid",
+    "B) G‘azab va nafrat",
+    "C) Kibir va manmanlik",
+    "D) Quvonch va hazil"
+   ],
+   "answer": "A) Chuqur iztirob va umid"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Babilo amaki va Kakanoning nechta o‘g‘li urushda yo‘qolgan edi?",
+   "options": [
+    "A) Ikkita egizak o‘g‘li",
+    "B) Bitta yagona o‘g‘li",
+    "C) Uchta polvon o‘g‘li",
+    "D) To‘rtta yosh o‘g‘li"
+   ],
+   "answer": "A) Ikkita egizak o‘g‘li"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uylariga kelgan asir nemis (Ioxan) nima so‘radi?",
+   "options": [
+    "A) Non",
+    "B) Suv",
+    "C) Tamaki",
+    "D) Kiyim"
+   ],
+   "answer": "A) Non"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sosoya, Nodar va Otia Supsa daryosida nima ovlashardi?",
+   "options": [
+    "A) Baliq",
+    "B) O‘rdak",
+    "C) Qisqichbaqa",
+    "D) G‘oz"
+   ],
+   "answer": "A) Baliq"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Supsa daryosi quturganda Xatiani kim suvdan qutqarib chiqardi?",
+   "options": [
+    "A) Brigadir Datiko",
+    "B) Sosoya",
+    "C) Anatoliy",
+    "D) Gerasim amaki"
+   ],
+   "answer": "A) Brigadir Datiko"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Datiko Xatiani qutqargach, qishloq odamlari unga qanday munosabatda bo‘lishdi?",
+   "options": [
+    "A) Indamay, yuz o‘girib tarqalishdi",
+    "B) Uni ko‘tarib olqishlashdi",
+    "C) Darrov militsiyaga topshirishdi",
+    "D) Katta ziyofat berishdi"
+   ],
+   "answer": "A) Indamay, yuz o‘girib tarqalishdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qishloqdoshlarning Datikodan yuz o‘girib ketishi nimani anglatadi?",
+   "options": [
+    "A) Qochqinga nisbatan xalqning nafratini",
+    "B) Odamlarning shoshilinch ishi borligini",
+    "C) Datikoni tanimay qolishganini",
+    "D) Ular Xatiaga achinishganini"
+   ],
+   "answer": "A) Qochqinga nisbatan xalqning nafratini"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Xatia Batumidan operatsiya qildirmay qaytgach, Sosoya nega unga dalda berdi?",
+   "options": [
+    "A) Xatiani cheksiz sevgani uchun",
+    "B) Shifokor bo‘lishni xohlamagani uchun",
+    "C) Qishloqqa qaytishni istagani uchun",
+    "D) Otasidan qo‘rqqani uchun"
+   ],
+   "answer": "A) Xatiani cheksiz sevgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ammaning asir nemisga non berishi to‘g‘ri ish bo‘ldimi?",
+   "options": [
+    "A) Ha, insoniylik va rahm-shafqat ko‘rsatildi",
+    "B) Yo‘q, asirlarga ovqat berish taqiqlangan",
+    "C) Yo‘q, u nonni o‘zi yeyishi kerak edi",
+    "D) Ha, chunki nemis unga pul berdi"
+   ],
+   "answer": "A) Ha, insoniylik va rahm-shafqat ko‘rsatildi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Datikoning to‘pponchasini otib yuborib yig‘lashi haqida nima deyish mumkin?",
+   "options": [
+    "A) U o‘z qilmishidan pushaymon bo‘ldi",
+    "B) U to‘pponchasi buzilgani uchun yig‘ladi",
+    "C) U odamlardan qo‘rqib ketdi",
+    "D) U shunchaki aktyorlik qildi"
+   ],
+   "answer": "A) U o‘z qilmishidan pushaymon bo‘ldi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Hoy odamlar, men sizlarni ko‘ryapman!..» jumlasi qanday g‘oyani beradi?",
+   "options": [
+    "A) Umid, mehr va ruhiy ko‘rish g‘oyasini",
+    "B) Qishloqdagilarga baqirish istagini",
+    "C) Quyosh chiqqanini xabar qilishni",
+    "D) Urush tugaganini e’lon qilishni"
+   ],
+   "answer": "A) Umid, mehr va ruhiy ko‘rish g‘oyasini"
+  }
+ ]
+}

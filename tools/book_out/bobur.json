@@ -1,0 +1,287 @@
+{
+ "title": "Bobur",
+ "author": "Hindistonda. Gulnoz Tojiboyeva",
+ "genre": "sheʼrlar",
+ "age_group": "3",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14 yosh",
+  "topics": [
+   "mehr-oqibat",
+   "ustozga hurmat",
+   "tarbiya",
+   "tabiatni muhofaza qilish",
+   "insof va adolat"
+  ],
+  "theme": "Insoniylik, mehr-shafqat, ma'naviy qadriyatlar va ustozga bo‘lgan cheksiz hurmatni she'riy misralar orqali anglatish.",
+  "summary": "To‘plamda turli mavzulardagi ibratli she'rlar jamlangan. Unda sahroda tangasini yo‘qotgan cholga yordam bergan bola, bo‘ri hujumidan so‘ng aybsiz kaltaklangan Olapar laqabli it taqdiri, insoniylik va or-nomus haqidagi o‘y-xayollar aks etgan. Shuningdek, ovchining yomon so‘zidan bolasini asramoqchi bo‘lgan ona ohu hamda puli yo‘q o‘quvchisiga bildirmay yordam bergan oqko‘ngil ustoz haqidagi she'rlar o‘rin olgan.",
+  "characters": "Bola (hikoya qiluvchi), Olapar (sadoqatli it), Ona ohu va bola ohu, Karkidon, Oqko‘ngil ustoz.",
+  "conclusion": "Kitob bolaga mehr-shafqat, sadoqat va ustozni qadrlashni o‘rgatadi. U o‘quvchida adabiyotga mehr va ma'naviy poklik tuyg‘ularini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "She'riyatni xush ko‘radigan, hayvonlar va insonlar taqdiriga befarq bo‘lmagan, chuqur ma'noli asarlarni o‘qishni xohlaydigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chol sahroda yerdan nimani axtarardi?",
+   "options": [
+    "A) Uzukni",
+    "B) Tangasini",
+    "C) Kalitni"
+   ],
+   "answer": "B) Tangasini"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘ri ovuldagi qaysi hayvonlarni bo‘g‘izlab ketdi?",
+   "options": [
+    "A) Qo‘ylarni",
+    "B) Otlarni",
+    "C) Sigirlarni"
+   ],
+   "answer": "A) Qo‘ylarni"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Olapar haqidagi voqealar tartibini belgilang.",
+   "options": [
+    "A) Bo‘ri keldi, it kaltaklandi, it ketdi",
+    "B) It ketdi, bo‘ri keldi, it urildi",
+    "C) It urildi, it ketdi, bo‘ri keldi"
+   ],
+   "answer": "A) Bo‘ri keldi, it kaltaklandi, it ketdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bola nega cholga tanga otib yubordi?",
+   "options": [
+    "A) Boy bo‘lgani uchun",
+    "B) Chol Xudodan yuz o‘girmasin deb",
+    "C) Tangasi ko‘payib ketgani uchun"
+   ],
+   "answer": "B) Chol Xudodan yuz o‘girmasin deb"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ota nega Olaparni kaltakladi?",
+   "options": [
+    "A) Qo‘ylarni bo‘ri bo‘g‘izlagani uchun",
+    "B) Olapar uydan qochgani uchun",
+    "C) Ovqat yemay qo‘ygani uchun"
+   ],
+   "answer": "A) Qo‘ylarni bo‘ri bo‘g‘izlagani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bolaning cholga tanga berishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, chol uni aldadilar",
+    "B) To‘g‘ri, e'tiqodini saqlashga yordam berdi",
+    "C) Noto‘g‘ri, tanga bermaslik kerak edi"
+   ],
+   "answer": "B) To‘g‘ri, e'tiqodini saqlashga yordam berdi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Kitobga bosh qo‘yib uxladi inson\" deganda nimani nazarda tutgan?",
+   "options": [
+    "A) Inson kitob o‘qishdan toliqib qolganini",
+    "B) Ma'naviyat va bilimdan uzoqlashib borayotganini",
+    "C) Uxlash uchun kitob yostiq bo‘lganini"
+   ],
+   "answer": "B) Ma'naviyat va bilimdan uzoqlashib borayotganini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qishloqdagi qizga kim pista bergan edi?",
+   "options": [
+    "A) Otasi",
+    "B) Niqobli kishi",
+    "C) Qo‘shnisi"
+   ],
+   "answer": "B) Niqobli kishi"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif \"Alpomishini kutmay qo‘ydi\" deb kimni aytadi?",
+   "options": [
+    "A) Barchinni",
+    "B) Kumushni",
+    "C) Shiroqni"
+   ],
+   "answer": "A) Barchinni"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Majnunlarning muhabbatlari qayerga sig‘may qoldi?",
+   "options": [
+    "A) Keng hovliga",
+    "B) Tor ko‘ngilga",
+    "C) Uzoq yo‘lga"
+   ],
+   "answer": "B) Tor ko‘ngilga"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "She'rdagi doston qahramonlarini tartiblang.",
+   "options": [
+    "A) Barchin, Farhod, Shiroq, Kumush",
+    "B) Kumush, Barchin, Shiroq, Farhod",
+    "C) Shiroq, Farhod, Kumush, Barchin"
+   ],
+   "answer": "A) Barchin, Farhod, Shiroq, Kumush"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Otabeklar Kumushlariga xat yozmay qo‘ydi?",
+   "options": [
+    "A) Xat yozishni unutganlari uchun",
+    "B) Tuyg‘ular va sevgi qadrsizlangani uchun",
+    "C) Qog‘oz tugab qolgani uchun"
+   ],
+   "answer": "B) Tuyg‘ular va sevgi qadrsizlangani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif qanday kun kelishini orzu qiladi?",
+   "options": [
+    "A) Bolalar och qolmaydigan kunni",
+    "B) Odamlar ishlashdan to‘xtaydigan kunni",
+    "C) Hamma uydan chiqmaydigan kunni"
+   ],
+   "answer": "A) Bolalar och qolmaydigan kunni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shoirning ezgu kun haqidagi orzulari to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, dunyo o‘zgarmaydi",
+    "B) To‘g‘ri, tinchlik va mehr zarur",
+    "C) Noto‘g‘ri, bu behuda xayol"
+   ],
+   "answer": "B) To‘g‘ri, tinchlik va mehr zarur"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karkidonning tumshug‘idan nima sizib oqardi?",
+   "options": [
+    "A) Suv",
+    "B) Qon",
+    "C) Sut"
+   ],
+   "answer": "B) Qon"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ona ohu bolasidan nimani so‘radi?",
+   "options": [
+    "A) Qulog‘ini yopishni",
+    "B) Qochib ketishni",
+    "C) Ko‘zini yumishni"
+   ],
+   "answer": "A) Qulog‘ini yopishni"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ustoz darsda qaysi san'at haqida gapirdi?",
+   "options": [
+    "A) Tajohilul orif",
+    "B) Muammo",
+    "C) Tazod"
+   ],
+   "answer": "A) Tajohilul orif"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ustoz va o‘quvchi haqidagi voqealar tartibi qaysi?",
+   "options": [
+    "A) Pul qistaldi, bola o‘ksindi, ustoz berdi",
+    "B) Ustoz berdi, bola o‘ksindi, pul qistaldi",
+    "C) Bola o‘ksindi, ustoz berdi, pul qistaldi"
+   ],
+   "answer": "A) Pul qistaldi, bola o‘ksindi, ustoz berdi"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ona ohu nega bolasining qulog‘ini yopmoqchi bo‘ldi?",
+   "options": [
+    "A) Ovchining so‘kishini eshitmasin deb",
+    "B) O‘q ovozidan qo‘rqmasin deb",
+    "C) Shamol shovqinidan asrash uchun"
+   ],
+   "answer": "A) Ovchining so‘kishini eshitmasin deb"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Ustozning bilmaganga olib pul berishi nimani ko‘rsatadi?",
+   "options": [
+    "A) O‘quvchi ko‘nglini va g‘ururini asrashni",
+    "B) Pulini qayerga sarflashni bilmasligini",
+    "C) Maktab qoidasini buzishni xohlaganini"
+   ],
+   "answer": "A) O‘quvchi ko‘nglini va g‘ururini asrashni"
+  }
+ ]
+}

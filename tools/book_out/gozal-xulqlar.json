@@ -1,0 +1,418 @@
+{
+ "title": "Go‘zal xulqlar",
+ "author": "G‘iyosiddin Yusuf",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "6",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-10 yosh",
+  "topics": [
+   "odob-axloq",
+   "ilm",
+   "rostgo‘ylik",
+   "kamtarlik",
+   "mehnatkashlik",
+   "vaqt qadri"
+  ],
+  "theme": "Go‘zal xulqlar, ilm o‘rganish, rostgo‘ylik va halollik insonni el hurmatiga hamda haqiqiy muvaffaqiyatga yetaklaydi.",
+  "summary": "Kitob bolalarga o‘zbek va sharqona odob-axloq, go‘zal xulqlarni sodda hamda ta'sirli hikoyalar orqali o‘rgatadi. Ilm olish, ustozni e'zozlash, kitobni asrash, har qanday vaziyatda rostgo‘y bo‘lish, kamtarlik va kibrdan saqlanish, samimiy uzr so‘rash, sabr-toqat ko‘rsatish, va'daga vafo qilish, saxiylik, xushmuomalalik, hayo va omonatdorlik kabi fazilatlar tushuntiriladi. Har bir mavzuda hayosizlik, yolg‘onchilik va dangasalikning salbiy oqibatlari ma'rifiy voqealar (masalan, To‘raboy va Jo‘raboy tuyalar, Jamshid va Aziz, Podshoh No‘mon va Shurayh vazir, Temirbosh va Qaychi) misolida ko‘rsatiladi. Yakunda mehnatkashlik, vaqtni qadrlash hamda kishilar haqida yaxshi gumonda bo‘lish insonni ikki dunyo saodatiga yetaklovchi asosiy qadriyatlar ekani ta'kidlanadi.",
+  "characters": "Abdulkarim, Salim oqsoqol, To‘raboy va Jo‘raboy, Jamshid va Aziz, Oybek va Sa‘d, Zafar, No‘mon podshoh va Shurayh vazir, Temirbosh va Qaychi, Komil va do‘stlari, Aziza va Diyora",
+  "conclusion": "Ushbu kitob bolaga kattalarga hurmat, halollik va mehnatsevarlik tuyg‘ularini singdiradi. U bolada rostgo‘ylik, sabr hamda odamlarga yaxshilik qilish ishtiyoqini oshiradi.",
+  "difficulty": "oson",
+  "mood": "o‘rgatuvchi, samimiy, da'vatkor",
+  "for_whom": "Odob-axloq saboqlarini o‘rganishni istagan, qiziqarli hikoyalar orqali yaxshi xulqlarni egallamoqchi bo‘lgan barcha bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abdulkarimga tirishqoqligi uchun ota-onasi nima olib berdi?",
+   "options": [
+    "A) Velosiped",
+    "B) Yangi kitob",
+    "C) Koptok"
+   ],
+   "answer": "A) Velosiped"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hikoyada uchinchi bola o‘rmondan qaytgach nima dedi?",
+   "options": [
+    "A) Bo‘ri ko‘rganini",
+    "B) Bobosini uchratganini",
+    "C) Rostini aytib kechirim so‘radi"
+   ],
+   "answer": "C) Rostini aytib kechirim so‘radi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karvonda qaysi tuya suvsiz buloq haqida aldaydi?",
+   "options": [
+    "A) Jo‘raboy",
+    "B) To‘raboy",
+    "C) Salim"
+   ],
+   "answer": "B) To‘raboy"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dada bolaligida kitobni yashirincha qanday o‘qigan?",
+   "options": [
+    "A) Sham yoqib",
+    "B) Ko‘rpa tagida qo‘lchiroq bilan",
+    "C) Oyna yonida"
+   ],
+   "answer": "B) Ko‘rpa tagida qo‘lchiroq bilan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ilm olishning asosiy ikkita vositasi qaysilar?",
+   "options": [
+    "A) Ustoz va kitob",
+    "B) Internet va kompyuter",
+    "C) O‘yin va maktab"
+   ],
+   "answer": "A) Ustoz va kitob"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "To‘raboy nega daryo bulog‘i haqida yolg‘on gapirdi?",
+   "options": [
+    "A) Dono bo‘lib ko‘rinish uchun",
+    "B) Karvonni adashtirish uchun",
+    "C) Suvni xohlamagani uchun"
+   ],
+   "answer": "A) Dono bo‘lib ko‘rinish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hikoyadagi o‘g‘ri nega yomon ishlaridan voz kechdi?",
+   "options": [
+    "A) Qamalishdan qo‘rqgani uchun",
+    "B) Rost gapirishga va‘da bergani uchun",
+    "C) Puli ko‘paygani uchun"
+   ],
+   "answer": "B) Rost gapirishga va‘da bergani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Uchinchi bolaning rost gapirishi to‘g‘ri qarormidi?",
+   "options": [
+    "A) Ha, oyisi uni kechirdi",
+    "B) Yo‘q, u jazolandi",
+    "C) Noto‘g‘ri, u alday olmadi"
+   ],
+   "answer": "A) Ha, oyisi uni kechirdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Ilmli inson xor bo‘lmas» iborasi bilan nimani uqtiradi?",
+   "options": [
+    "A) Bilimli kishi yechim topishini",
+    "B) Ilmli kishi boy bo‘lishini",
+    "C) Kuchli odam yutishini"
+   ],
+   "answer": "A) Bilimli kishi yechim topishini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Ustoz — otangdek ulug‘» maqoli qanday tuyg‘uni ifodalaydi?",
+   "options": [
+    "A) Ustozga bo‘lgan chuqur hurmatni",
+    "B) Ustozdan qo‘rqish kerakligini",
+    "C) Oila va maktab tengligini"
+   ],
+   "answer": "A) Ustozga bo‘lgan chuqur hurmatni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jamshid bog‘dagi o‘simliklar haqida kimdan yordam oldi?",
+   "options": [
+    "A) O‘qituvchisidan",
+    "B) Bog‘bon otasidan",
+    "C) Azizdan"
+   ],
+   "answer": "B) Bog‘bon otasidan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oybek do‘sti Sa‘dning nimasini sindirib qo‘ydi?",
+   "options": [
+    "A) Velosipedini",
+    "B) O‘yinchoq mashinasini",
+    "C) Qalamdonini"
+   ],
+   "answer": "B) O‘yinchoq mashinasini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zafar san‘at ko‘rgazmasida qanday natijaga erishdi?",
+   "options": [
+    "A) Rasmi yuqori baholandi",
+    "B) Oxirgi o‘rinni oldi",
+    "C) Qatnashmay qoldi"
+   ],
+   "answer": "A) Rasmi yuqori baholandi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Podshoh No‘mon huzuriga qaytgan kishiga kim kafil bo‘lgandi?",
+   "options": [
+    "A) Vazir Shurayh",
+    "B) Askarlar",
+    "C) Jallod"
+   ],
+   "answer": "A) Vazir Shurayh"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oybek Sa‘ddan uzr so‘rash uchun nima qildi?",
+   "options": [
+    "A) Uzr so‘rab, yangi mashina berdi",
+    "B) Faqat uzr so‘radi",
+    "C) Undan qochib ketdi"
+   ],
+   "answer": "A) Uzr so‘rab, yangi mashina berdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kamtarlik va manmanlikning asosiy farqi nimada?",
+   "options": [
+    "A) Kamtar o‘zini ustun qo‘ymaydi",
+    "B) Manman kamgap bo‘ladi",
+    "C) Farqi yo‘q"
+   ],
+   "answer": "A) Kamtar o‘zini ustun qo‘ymaydi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Aziz nega avval Jamshidni guruhiga qo‘shgisi kelmadi?",
+   "options": [
+    "A) U kibrli va pisand qilmas edi",
+    "B) Jamshid kasal edi",
+    "C) Jamshid rad etdi"
+   ],
+   "answer": "A) U kibrli va pisand qilmas edi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Podshoh No‘mon vafo qilgan kishini nega kechirdi?",
+   "options": [
+    "A) Rahm-shafqat yo‘qolmasligi uchun",
+    "B) Vazir buyurgani uchun",
+    "C) Puli ko‘pligi uchun"
+   ],
+   "answer": "A) Rahm-shafqat yo‘qolmasligi uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jamshidning kamtarlik bilan harakat qilgani to‘g‘rimidi?",
+   "options": [
+    "A) Ha, u hurmat va muvaffaqiyat qozondi",
+    "B) Yo‘q, u vaqt yo‘qotdi",
+    "C) Noto‘g‘ri, u yengildi"
+   ],
+   "answer": "A) Ha, u hurmat va muvaffaqiyat qozondi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Kamtarga — kamol, manmanga — zavol» maqoli nimani anglatadi?",
+   "options": [
+    "A) Kamtarlik yuksaltirishini, kibr halok qilishini",
+    "B) Boylik har doim foydaliligini",
+    "C) Dangasalik oqibatini"
+   ],
+   "answer": "A) Kamtarlik yuksaltirishini, kibr halok qilishini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Omon yaylovda yolg‘ondan nima keldi deb baqirdi?",
+   "options": [
+    "A) Bo‘ri",
+    "B) Ayiq",
+    "C) O‘g‘ri"
+   ],
+   "answer": "A) Bo‘ri"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dangasa ninachi Qaychi qishda kimdan yordam so‘radi?",
+   "options": [
+    "A) Chumoli Temirboshdan",
+    "B) Kapalakdan",
+    "C) Ari balosidan"
+   ],
+   "answer": "A) Chumoli Temirboshdan"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yozgi kitob o‘qish musobaqasida kim g‘olib bo‘ldi?",
+   "options": [
+    "A) Komil",
+    "B) Nurali",
+    "C) Yorqin"
+   ],
+   "answer": "A) Komil"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alisher Navoiy necha yoshida ajoyib she‘r yozgan?",
+   "options": [
+    "A) To‘qqiz yoshida",
+    "B) O‘n ikki yoshida",
+    "C) O‘n besh yoshida"
+   ],
+   "answer": "A) To‘qqiz yoshida"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Omonning ketma-ket yolg‘on gapirishi qanday oqibatga olib keldi?",
+   "options": [
+    "A) Bo‘ri kelganda hech kim ishonmadi",
+    "B) Hamrohlari uni maqtashdi",
+    "C) Qishloqdagilar xursand bo‘lishdi"
+   ],
+   "answer": "A) Bo‘ri kelganda hech kim ishonmadi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Diyora nega Azizadan kechirim so‘radi?",
+   "options": [
+    "A) Noto‘g‘ri gumon qilgani uchun",
+    "B) Daftarini yo‘qotgani uchun",
+    "C) Dars qilmagani uchun"
+   ],
+   "answer": "A) Noto‘g‘ri gumon qilgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ninachi Qaychi nega yozda oziq-ovqat yig‘madi?",
+   "options": [
+    "A) Dangasalik va beparvoligi tufayli",
+    "B) Kasal bo‘lib qolgani uchun",
+    "C) Chumolilar ruxsat bermagani uchun"
+   ],
+   "answer": "A) Dangasalik va beparvoligi tufayli"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Temirboshning Qaychiga yordam berishi to‘g‘ri ish bo‘ldimi?",
+   "options": [
+    "A) Ha, u saxovat va o‘rnak ko‘rsatdi",
+    "B) Yo‘q, uni haydash kerak edi",
+    "C) Noto‘g‘ri, oziq-ovqat kamaydi"
+   ],
+   "answer": "A) Ha, u saxovat va o‘rnak ko‘rsatdi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Komilning ta‘tilda kitob o‘qishi bolaga nima beradi?",
+   "options": [
+    "A) Vaqtni unumli va foydali o‘tkazishni",
+    "B) O‘yinlardan butunlay voz kechishni",
+    "C) Do‘stlaridan ajralib qolishni"
+   ],
+   "answer": "A) Vaqtni unumli va foydali o‘tkazishni"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«So‘z kumush, sukut esa oltindir» maqoli nimaga chaqiradi?",
+   "options": [
+    "A) Keraksiz va o‘ylamay gapirmaslikka",
+    "B) Doimo jim yurishga",
+    "C) Hech kim bilan gaplashmaslikka"
+   ],
+   "answer": "A) Keraksiz va o‘ylamay gapirmaslikka"
+  }
+ ]
+}

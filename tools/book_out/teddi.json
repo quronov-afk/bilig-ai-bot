@@ -1,0 +1,287 @@
+{
+ "title": "Teddi",
+ "author": "Yuriy Kazakov",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "tabiat va hayvonlar",
+   "erkinlik",
+   "sirk",
+   "yashash uchun kurash",
+   "jasorat"
+  ],
+  "theme": "Erkinlik qanchalik mashaqqatli bo‘lmasin, o‘zlikni anglash va tabiat bilan uyg‘un yashash eng oliy ne’matdir.",
+  "summary": "Teddi — sirkda o‘sgan, odamlarga itoat qilishga o‘rgangan bahaybat qo‘ng‘ir ayiq. Safar chog‘ida xizmatchining ehtiyotsizligi sababli qafas eshigi ochiq qoladi va Teddi tasodifan ozodlikka chiqadi. Avvaliga u odamlarni va sirkdagi hayotini sog‘inib yuradi, o‘rmonda oziq-ovqat topishga va yirtqichlik instinktlarini tiklashga qiynaladi. Odamlar unga qarata miltiq uzgach, ulardan qo‘rqishni va uzoq yurishni o‘rganadi. Sekin-asta u chumoli yeyishni, baliq tutishni, mevalarni terishni hamda o‘rmon hidlarini ajratishni o‘zlashtiradi. Yo‘lda u o‘zidan kuchliroq ayiqqa duch keladi va aql bilan chekinadi. Keyinchalik bahaybat bug‘u bilan olishib, uni mag‘lub etadi va haqiqiy o‘rmon hukmdoriga aylanadi. Qish kirishi bilan Teddi o‘z inida tinch va qattiq uyquga ketadi.",
+  "characters": "Teddi — sirk ayig‘i, erkinlikka chiqib o‘rmon hayotiga moslashgan bosh qahramon; Oq ko‘ylakli odam — Teddi qo‘rqadigan sirk o‘rgatuvchisi; Ovchilar va shofyor — o‘rmon va stansiyada Teddini cho‘chitgan odamlar; Bahaybat bug‘u — Teddi o‘rmonda olishgan kuchli raqib.",
+  "conclusion": "Ushbu hikoya bolaga erkinlikning qadrini, qiyinchiliklar oldida taslim bo‘lmaslikni va tabiat qonunlarini hurmat qilishni o‘rgatadi. Bola qahramonning o‘zligini topish va moslashish yo‘lidagi sabr-matonatidan ijobiy saboq oladi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, hazin, o‘ylantiruvchi",
+  "for_whom": "Jonivorlar va tabiat sarguzashtlariga qiziqadigan, qahramonning matonati va taqdiriga befarq bo‘lmagan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Teddi sirk sahnasida asosan nima qilardi?",
+   "options": [
+    "A) Velosiped haydab aylanardi",
+    "B) Olovli halqadan sakrardi",
+    "C) Chavgon o‘ynab raqs tushardi"
+   ],
+   "answer": "A) Velosiped haydab aylanardi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Teddi sirkdan qanday qilib qochib ketdi?",
+   "options": [
+    "A) Qafas eshigi ochiq qoldi",
+    "B) Qafas simlarini buzib qochdi",
+    "C) Odamlar uni qo‘yib yubordi"
+   ],
+   "answer": "A) Qafas eshigi ochiq qoldi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Teddining qochganidan keyingi harakatlari tartibini belgilang.",
+   "options": [
+    "A) Qafasdan chiqdi, shofyorga uchradi, qochdi",
+    "B) O‘rmonga qochdi, keyin kartoshka yedi",
+    "C) Shofyor bilan do‘stlashdi, poyezdga chiqdi"
+   ],
+   "answer": "A) Qafasdan chiqdi, shofyorga uchradi, qochdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Odam miltiq otganidan keyin Teddi nimani his qildi?",
+   "options": [
+    "A) Odamlardan qo‘rqish kerakligini tushundi",
+    "B) Sirkka tezroq qaytgisi keldi",
+    "C) Odamlar bilan do‘stlashishni xohladi"
+   ],
+   "answer": "A) Odamlardan qo‘rqish kerakligini tushundi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Teddi soldagi kulbadan nimani yeb qochdi?",
+   "options": [
+    "A) Non va kartoshkani yedi",
+    "B) Go‘sht va baliqni yedi",
+    "C) Faqat asalni tushirdi"
+   ],
+   "answer": "A) Non va kartoshkani yedi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Teddi o‘q yeganda «alamdan bo‘kirdi» deb nimani ko‘rsatgan?",
+   "options": [
+    "A) Ishonchi sinib, qalbi og‘riganini",
+    "B) Ovozi juda balandligini",
+    "C) O‘q tegmaganini"
+   ],
+   "answer": "A) Ishonchi sinib, qalbi og‘riganini"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Teddi daryoga o‘zini tashlashiga nima sabab bo‘ldi?",
+   "options": [
+    "A) Odamlar uni burchakka siqib qo‘ydi",
+    "B) Suvda suzishni yoqtirgani uchun",
+    "C) Sirkka suzib bormoqchi edi"
+   ],
+   "answer": "A) Odamlar uni burchakka siqib qo‘ydi"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘rmonda Teddining qaysi sezgilari dastlab pand berdi?",
+   "options": [
+    "A) Sirkda o‘tmaslashgan sezgilari",
+    "B) Ko‘rish va eshitish qobiliyati",
+    "C) Yugurish va sakrash mahorati"
+   ],
+   "answer": "A) Sirkda o‘tmaslashgan sezgilari"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Teddi chumolilarni qanday qilib oson yeyishni esladi?",
+   "options": [
+    "A) Uyasini buzib, panjasini yaladi",
+    "B) Tumshug‘ini chuqur suqib turdi",
+    "C) Suvga bo‘ktirib yedi"
+   ],
+   "answer": "A) Uyasini buzib, panjasini yaladi"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Teddi o‘rmonda o‘ziga oziq-ovqat topishni qanday tartibda o‘rgandi?",
+   "options": [
+    "A) Chumoli, meva, keyin baliq tutdi",
+    "B) Avval baliq, keyin go‘sht yedi",
+    "C) Faqat oqib kelgan ovqatni yedi"
+   ],
+   "answer": "A) Chumoli, meva, keyin baliq tutdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Teddi o‘zining kuchli yirtqich ekanini qachon his qildi?",
+   "options": [
+    "A) Bo‘rilar unga o‘ljani tashlab qochganda",
+    "B) Quyonni tutib yegan paytida",
+    "C) Sirkda o‘z fokuslarini ko‘rsatganda"
+   ],
+   "answer": "A) Bo‘rilar unga o‘ljani tashlab qochganda"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Teddi vaqt o‘tishi bilan kechalari daydishga o‘tdi?",
+   "options": [
+    "A) Chivinlar yo‘qolgani va tinch bo‘lganiga",
+    "B) Kunduzi odamlardan qo‘rqqani uchun",
+    "C) Kechasi ko‘zlari yaxshiroq ko‘rgani uchun"
+   ],
+   "answer": "A) Chivinlar yo‘qolgani va tinch bo‘lganiga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Teddining o‘rmondagi hayotga moslashishini qanday baholaysiz?",
+   "options": [
+    "A) Sabr va harakat bilan moslashdi",
+    "B) Mutlaqo moslasha olmadi",
+    "C) Faqat omadiga tayanib yashadi"
+   ],
+   "answer": "A) Sabr va harakat bilan moslashdi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Teddi ko‘lda birinchi marta qaysi jonivorni tutib yedi?",
+   "options": [
+    "A) Cho‘rtanbaliqni tutib yedi",
+    "B) Qurbaqani tutib yedi",
+    "C) O‘rmon quyonini tutdi"
+   ],
+   "answer": "A) Cho‘rtanbaliqni tutib yedi"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Teddi suli maydonida kimlarning tuzog‘iga tushib yaralandi?",
+   "options": [
+    "A) Miltiqli ovchilarning tuzog‘iga",
+    "B) Sirk xodimlarining tuzog‘iga",
+    "C) Boshqa ayiqning pistirmasiga"
+   ],
+   "answer": "A) Miltiqli ovchilarning tuzog‘iga"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Teddining yaralangandan keyingi holatlari ketma-ketligini ko‘rsating.",
+   "options": [
+    "A) Qochdi, yarani yaladi, tuzaldi",
+    "B) Urishdi, yutdi, uyquga ketdi",
+    "C) Qafasga qaytdi, odamlarga taslim bo‘ldi"
+   ],
+   "answer": "A) Qochdi, yarani yaladi, tuzaldi"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Teddi kattaroq va kuchliroq ayiqni ko‘rganda nega chekindi?",
+   "options": [
+    "A) Kuchini baholab, hayotini saqlab qoldi",
+    "B) Ayiq bilan do‘stlashmoqchi bo‘ldi",
+    "C) Unga ergashib ketmoqchi edi"
+   ],
+   "answer": "A) Kuchini baholab, hayotini saqlab qoldi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Teddining bahaybat bug‘u bilan olishib g‘alaba qozonishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Haqiqiy yirtqichga aylanganini",
+    "B) Qo‘rqoq bo‘lib qolganini",
+    "C) Sirkka qaytishni xohlaganini"
+   ],
+   "answer": "A) Haqiqiy yirtqichga aylanganini"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida erkinlik nimaga o‘xshatilgan?",
+   "options": [
+    "A) Quyosh va poyonsiz samoga",
+    "B) Tor va qorong‘i qafasga",
+    "C) Sirk sahnasidagi chiroqlarga"
+   ],
+   "answer": "A) Quyosh va poyonsiz samoga"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qish kelgach Teddi qanday holatga kirdi?",
+   "options": [
+    "A) Inida qattiq uyquga ketdi",
+    "B) Sirkka qaytib ketdi",
+    "C) Odamlar oldiga bordi"
+   ],
+   "answer": "A) Inida qattiq uyquga ketdi"
+  }
+ ]
+}

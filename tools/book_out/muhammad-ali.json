@@ -1,0 +1,417 @@
+{
+ "title": "Muhammad Ali",
+ "author": "Navro‘z Ergash o‘g‘li",
+ "genre": "roman",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tarix",
+   "vatanparvarlik",
+   "jasorat",
+   "muhabbat",
+   "mustaqillik"
+  ],
+  "theme": "Vatan ozodligi va mustaqilligi yo‘lida har qanday sinovlarga tik bo‘lish, milliy ildizlar va fidoyilikni saqlab qolish.",
+  "summary": "Asarda milliy qahramon Spitamen avlodi bo‘lgan Misrning so‘nggi malikasi Kleopatraning suronli hayoti va Vatan mustaqilligi yo‘lidagi kurashi tasvirlanadi. Kleopatra otasi Ptolemey XII vafotidan so‘ng taxtga o‘tiradi va Misrni Rim tobeligidan asrab qolish uchun kuchli siyosat yuritadi. U Rim hukmdori Yuliy Sezar bilan ittifoq tuzadi va undan o‘g‘il ko‘radi. Sezar senatdagi fitna sabab o‘ldirilgach, Kleopatra Rimning sharqiy hukmdori Mark Antoniy bilan yaqinlashadi va oralarida buyuk muhabbat paydo bo‘ladi. Biroq Rimda hokimiyatni egallagan Oktavian Misrga urush ochadi. Aksiy jangida mag‘lubiyatga uchragach, Antoniy va Kleopatra dushman qo‘liga tushmaslik uchun ketma-ket o‘z jonlariga qasd qiladilar. Misr Rim viloyatiga aylanadi, ammo Kleopatra vatanparvar va bukilmas malika sifatida tarixdan joy oladi.",
+  "characters": "Kleopatra — Misr malikasi, Spitamen avlodi, vatanparvar va zukko ayol; Yuliy Sezar — Rim diktatori; Mark Antoniy — Rim sarkardasi, Kleopatraning sevgilisi; Oktavian — Rim imperatori, Sezarning merosxo‘ri; Apollodor — malikaga sadoqatli xizmatkor.",
+  "conclusion": "Asar o‘quvchiga tariximiz ildizlari qanchalik teran va jahon sivilizatsiyasi bilan bog‘liq ekanini ko‘rsatadi. Kitobxon undan Vatan ozodligi yo‘lidagi fidoyilik, sadoqat va bukilmas g‘urur saboqlarini oladi.",
+  "difficulty": "o‘rta",
+  "mood": "tarixiy, shiddatli, o‘ylantiruvchi",
+  "for_whom": "Tarixiy voqealar, qadimgi dunyo sivilizatsiyalari, buyuk shaxslar taqdiri va Vatan taqdiri haqida o‘qishni xush ko‘radigan o‘smirlarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kleopatra qaysi milliy qahramonimizning o‘ninchi avlodi hisoblanadi?",
+   "options": [
+    "A) Spitamenning",
+    "B) Jaloliddinning",
+    "C) Muqannaning"
+   ],
+   "answer": "A) Spitamenning"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Iskandariyaning markaziy va muhtasham shohko‘chasi qanday nomlanadi?",
+   "options": [
+    "A) Loxiy",
+    "B) Kanob",
+    "C) Mesopedion"
+   ],
+   "answer": "B) Kanob"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Podsho Ptolemey XII o‘ziga qanday laqab qo‘shib olgan edi?",
+   "options": [
+    "A) Yangi Dionis",
+    "B) Buyuk Apollon",
+    "C) Qudratli Zevs"
+   ],
+   "answer": "A) Yangi Dionis"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Iskandar shahar loyihasiga nechta yunoncha harf yozgan edi?",
+   "options": [
+    "A) Uchta",
+    "B) Qirqta",
+    "C) Beshta"
+   ],
+   "answer": "C) Beshta"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnda keltirilgan saroy amaldorlarini to‘g‘ri guruhlang.",
+   "options": [
+    "A) Potin, Teodot, Axillas",
+    "B) Sezar, Brut, Kassiy",
+    "C) Apollodor, Vissarion, Irada"
+   ],
+   "answer": "A) Potin, Teodot, Axillas"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ptolemeylar saroyidan Faros mash’aligacha bo‘lgan voqealarni tartiblang.",
+   "options": [
+    "A) Musiqa, olomon, nutqlar",
+    "B) Urush, qochish, g‘alaba",
+    "C) Tinchlik, uyqu, sukunat"
+   ],
+   "answer": "A) Musiqa, olomon, nutqlar"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ptolemey XII nega ko‘cha bo‘ylab surnay chalib yurardi?",
+   "options": [
+    "A) Xalqni quvontirish uchun",
+    "B) Dilidagi dardini ovutish uchun",
+    "C) Rimliklarni qo‘rqitish uchun"
+   ],
+   "answer": "B) Dilidagi dardini ovutish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kleopatra nega ma’bud Dionisni Apollondan yaqinroq deb bilardi?",
+   "options": [
+    "A) Dionis inson bolasidan tug‘ilgan",
+    "B) Dionis juda boy edi",
+    "C) Dionis urush Xudosi edi"
+   ],
+   "answer": "A) Dionis inson bolasidan tug‘ilgan"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Podshoning xalq oldida surnay chalishini qanday baholash mumkin?",
+   "options": [
+    "A) Podshoga xos bo‘lmagan harakat",
+    "B) Eng to‘g‘ri davlat boshqaruvi",
+    "C) Xalqqa nisbatan zug‘um"
+   ],
+   "answer": "A) Podshoga xos bo‘lmagan harakat"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Iskandariya shahrining ko‘rkini qanday go‘zal o‘xshatish bilan tasvirlaydi?",
+   "options": [
+    "A) Uzukdagi ko‘z misoli",
+    "B) Oltin toj kabi",
+    "C) Yaltiroq tanga kabi"
+   ],
+   "answer": "A) Uzukdagi ko‘z misoli"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sezar, Krass va Pompey o‘rtasida qanday yashirin ittifoq tuzildi?",
+   "options": [
+    "A) Senat kengashi",
+    "B) Triumvirat",
+    "C) Harbiylar kengashi"
+   ],
+   "answer": "B) Triumvirat"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kleopatra Misrdagi ocharchilikda g‘alla so‘rab qayerga odam yubordi?",
+   "options": [
+    "A) Parfiyaga",
+    "B) Rimga",
+    "C) Suriyaga"
+   ],
+   "answer": "A) Parfiyaga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saroyga bostirib kirgan askarlar Potinni qanday o‘ldirishdi?",
+   "options": [
+    "A) Bolta bilan urib",
+    "B) Xanjar sanchib",
+    "C) Zahar berib"
+   ],
+   "answer": "A) Bolta bilan urib"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sitseronning boshi va qo‘li qayerga osib qo‘yildi?",
+   "options": [
+    "A) Forum minbariga",
+    "B) Saroy devoriga",
+    "C) Ibodatxona darvozasiga"
+   ],
+   "answer": "A) Forum minbariga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Rimdagi siyosiy fitna ishtirokchilarini to‘g‘ri ajrating.",
+   "options": [
+    "A) Brut, Kassiy, Kaska",
+    "B) Potin, Axillas, Teodot",
+    "C) Iyeronim, Orest, Koriolan"
+   ],
+   "answer": "A) Brut, Kassiy, Kaska"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sezarning o‘limidan keyin Rimda sodir bo‘lgan voqealarni tartiblang.",
+   "options": [
+    "A) Parokandalik, qasos va fuqarolar urushi",
+    "B) Tinchlik, to‘y va bayramlar",
+    "C) Misrga darhol elchilar yuborilishi"
+   ],
+   "answer": "A) Parokandalik, qasos va fuqarolar urushi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sezar o‘limi oldidan nega «Hali sen hammi, Brut?» dedi?",
+   "options": [
+    "A) Brut uning yaqin ishongani edi",
+    "B) Brut uni qutqarmoqchi edi",
+    "C) Brut Rim imperatori edi"
+   ],
+   "answer": "A) Brut uning yaqin ishongani edi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Antoniy Pergam kutubxonasidagi 200 ming kitobni nega Kleopatraga hadya qildi?",
+   "options": [
+    "A) Malikaga bo‘lgan muhabbati va hurmati uchun",
+    "B) Kitoblardan qutulish uchun",
+    "C) Rim senatining buyrug‘i bilan"
+   ],
+   "answer": "A) Malikaga bo‘lgan muhabbati va hurmati uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Senatorlarning Sezarga suiqasd uyushtirishini qanday baholash mumkin?",
+   "options": [
+    "A) Xiyonatkorona va yovuz harakat",
+    "B) Adolatli va to‘g‘ri qaror",
+    "C) Qahramonlarcha jasorat"
+   ],
+   "answer": "A) Xiyonatkorona va yovuz harakat"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Sezar vafot etgan sahnani qanday ta’sirchan tasvirlagan?",
+   "options": [
+    "A) Pompey haykali poyiga qulashi bilan",
+    "B) Tinchgina uxlab qolishi bilan",
+    "C) Xursandchilik bilan kulishi bilan"
+   ],
+   "answer": "A) Pompey haykali poyiga qulashi bilan"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Antoniyning vasiyatnomasi qaysi ibodatxonada saqlanayotgan edi?",
+   "options": [
+    "A) Vesta ibodatxonasida",
+    "B) Isida ibodatxonasida",
+    "C) Yupiter ibodatxonasida"
+   ],
+   "answer": "A) Vesta ibodatxonasida"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kleopatra o‘z joniga qasd qilishda qanday ilondan foydalandi?",
+   "options": [
+    "A) Sata-ilon (kapcha ilon)",
+    "B) Suv iloni",
+    "C) Qum iloni"
+   ],
+   "answer": "A) Sata-ilon (kapcha ilon)"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kleopatra vafot etayotganda ko‘z oldida kim paydo bo‘ldi?",
+   "options": [
+    "A) Momokaloni Apama-ona",
+    "B) Otasi Ptolemey XII",
+    "C) Yuliy Sezar"
+   ],
+   "answer": "A) Momokaloni Apama-ona"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kleopatra vafotidan so‘ng uning poyida kim o‘zini o‘ldirdi?",
+   "options": [
+    "A) Apollodor",
+    "B) Vissarion",
+    "C) Protarx"
+   ],
+   "answer": "A) Apollodor"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oktavian Antoniy vasiyatnomasini nega senatorlarga o‘qib berdi?",
+   "options": [
+    "A) Xalqni Kleopatradan nafratlantirish uchun",
+    "B) Antoniyni maqtash uchun",
+    "C) Misrga yordam berish uchun"
+   ],
+   "answer": "A) Xalqni Kleopatradan nafratlantirish uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kleopatra nega dushmanlariga taslim bo‘lmasdan o‘limni tanladi?",
+   "options": [
+    "A) Misr va o‘z g‘ururini saqlash uchun",
+    "B) Tajriba o‘tkazish uchun",
+    "C) Qorong‘ilikdan qo‘rqqani uchun"
+   ],
+   "answer": "A) Misr va o‘z g‘ururini saqlash uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kleopatraning o‘z Vatani ozodligi uchun kurashishini qanday baholaysiz?",
+   "options": [
+    "A) Yuksak vatanparvarlik va mardlik",
+    "B) Qo‘rqoqlik va befarklik",
+    "C) Noto‘g‘ri va behuda harakat"
+   ],
+   "answer": "A) Yuksak vatanparvarlik va mardlik"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Apollodorning malikaga sadoqati va qilmishini qanday baholash mumkin?",
+   "options": [
+    "A) Cheksiz sadoqat va fidoyilik",
+    "B) Xiyonat va yolg‘onchilik",
+    "C) Qo‘rqoqlik va beparvolik"
+   ],
+   "answer": "A) Cheksiz sadoqat va fidoyilik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Kleopatraning so‘nggi holatini qanday go‘zal tasvirlaydi?",
+   "options": [
+    "A) Oyday balqib, labida tabassum bilan",
+    "B) Qah-qah urib kulgan holda",
+    "C) Yuzida g‘azab va nafrat bilan"
+   ],
+   "answer": "A) Oyday balqib, labida tabassum bilan"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar so‘ngida Nil va dengiz tasviri nimani anglatadi?",
+   "options": [
+    "A) Mangu barhayot borliq va tarixni",
+    "B) Qurg‘oqchilik va xavf-xatarni",
+    "C) Dushmanlarning g‘alabasini"
+   ],
+   "answer": "A) Mangu barhayot borliq va tarixni"
+  }
+ ]
+}

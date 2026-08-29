@@ -1,0 +1,447 @@
+{
+ "title": "Kapitan Vrungelning sarguzashtlari",
+ "author": "Andrey Nekrasov",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-13 yosh",
+  "topics": [
+   "dengiz sayohati",
+   "do‘stlik",
+   "yumor",
+   "topqirlik",
+   "jasorat"
+  ],
+  "theme": "Qiyinchiliklar va kutilmagan to‘siqlarga duch kelganda aql, yumor va topqirlik bilan har qanday vaziyatdan chiqib ketish mumkin.",
+  "summary": "Kapitan Vrungel o‘zining bo‘yi baland va kuchli yordamchisi Lom bilan «Bexatar» nomli yelkanli kemada dunyo bo‘ylab sayohatga otlanadi. biroq kema nomidagi dastlabki ikki harf to‘kilib tushib, kema «Xatar»ga aylanadi. Yo‘l-yo‘lakay ularga kartada usta bo‘lgan Fuks qo‘shiladi. Ular sayohat davomida turli sarguzashtlarga duch kelishadi: yog‘och kemada novdalar ko‘karishi, olmaxonlar savdosi, tirik selyodkalarni haydash, kasal kashalotga dori berish, bo‘g‘ma ilonni shishirib o‘ldirish va admiral Kusakining hiylalarini fosh qilish. Har qanday qiyin va xavfli vaziyatda ham kapitan Vrungel o‘zining favqulodda topqirligi va bamisoli lofga boy aqli bilan jamoasini omon saqlab qoladi va dunyo bo‘ylab sayohatni muvaffaqiyatli yakunlaydi.",
+  "characters": "Vrungel — tajribali, og‘ir-bosiq, har qanday vaziyatdan chiqib keta oladigan topqir kapitan; Lom — bo‘yi yetti futdan baland, sodda, chaqqon va bo‘ysunuvchan bosh yordamchi; Fuks — qarta o‘yinining ustasi, chaqqon va do‘stona jamoa a‘zosi; Admiral Kusaki — Vrungel va uning jamoasiga izchil qarshilik ko‘rsatadigan yapon admirali.",
+  "conclusion": "Asar bolada har qanday qiyinchilik oldida tushkunlikka tushmaslik, hayotga yumor va nekbinlik bilan qarash ile topqirlik tuyg‘ularini shakllantiradi. Ota-onalar uchun bu kitob farzandida mardlik, mulohazakorlik va do‘stlik qadrini tarbiyalashda ajoyib qo‘llanma bo‘lib xizmat qiladi.",
+  "difficulty": "o‘rta",
+  "mood": "kulgili, yengil",
+  "for_whom": "Dengiz sayohatlari, hazil-mutoyiba va qiziqarli sarguzashtli sarguzashtlarni yaxshi ko‘radigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vrungel bilim yurtida qaysi fandan dars bergan?",
+   "options": [
+    "A) Astronomiya",
+    "B) Navigatsiya",
+    "C) Geografiya",
+    "D) Tarix"
+   ],
+   "answer": "B) Navigatsiya"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vrungel yordamchisi Lomga qaysi tilni o‘rganishni buyurdi?",
+   "options": [
+    "A) Nemis tilini",
+    "B) Fransuz tilini",
+    "C) Ingliz tilini",
+    "D) Ispan tilini"
+   ],
+   "answer": "C) Ingliz tilini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kemaga dastlab qanday nom berilgan edi?",
+   "options": [
+    "A) Bexatar",
+    "B) Pahlavon",
+    "C) Gerkules",
+    "D) Oqqush"
+   ],
+   "answer": "A) Bexatar"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dastlab kema nega joyidan qimirlamay qoldi?",
+   "options": [
+    "A) Langar bog‘liq bo‘lgani uchun",
+    "B) Yog‘ochlar ildiz otib ko‘kargani uchun",
+    "C) Shatakchi kema yo‘qligi uchun",
+    "D) Shamol esmagani uchun"
+   ],
+   "answer": "B) Yog‘ochlar ildiz otib ko‘kargani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Vrungel rom shishasini nega kayutaning o‘ng tomoniga ko‘chirdi?",
+   "options": [
+    "A) Lom burni bilan o‘ngga burilishi uchun",
+    "B) Shisha sinib ketmasligi uchun",
+    "C) Fuksga ko‘rinmasligi uchun",
+    "D) Quyosh tushmasligi uchun"
+   ],
+   "answer": "A) Lom burni bilan o‘ngga burilishi uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Gazetada kemaning nomi nega «Xatar» bo‘lib chiqdi?",
+   "options": [
+    "A) Muallif shunday xohlagani uchun",
+    "B) Dastlabki ikki harf o‘chib ketgani uchun",
+    "C) Lom noto‘g‘ri yozgani uchun",
+    "D) Bosmaxona xatosi bo‘lgani uchun"
+   ],
+   "answer": "B) Dastlabki ikki harf o‘chib ketgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Vrungelning kema nomiga jiddiy e‘tibor berishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri — nomning ahamiyati yo‘q",
+    "B) To‘g‘ri — nom kema ruhiyatini belgilaydi",
+    "C) Noto‘g‘ri — bu shunchaki qog‘oz",
+    "D) To‘g‘ri — faqat chiroyli ko‘rinish uchun"
+   ],
+   "answer": "B) To‘g‘ri — nom kema ruhiyatini belgilaydi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif dengizni «inson dilidagi g‘amni yuvadi» deyish bilan nimani tasvirlagan?",
+   "options": [
+    "A) Suvning sho‘rligini",
+    "B) Dengizning inson ruhiga ta‘sirini",
+    "C) Qirg‘oqning uzoqligini",
+    "D) Shamolning kuchini"
+   ],
+   "answer": "B) Dengizning inson ruhiga ta‘sirini"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lom ingliz tilini qancha vaqtda o‘rganib oldi?",
+   "options": [
+    "A) Bir haftada",
+    "B) Uch haftada",
+    "C) Bir oyda",
+    "D) Ikki yilda"
+   ],
+   "answer": "B) Uch haftada"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kema jo‘nashida sodir bo‘lgan voqealar tartibi qanday?",
+   "options": [
+    "A) Ildiz otish, harflar to‘kilishi, suzish",
+    "B) Suzish, ildiz otish, harflar to‘kilishi",
+    "C) Harflar to‘kilishi, suzish, ildiz otish",
+    "D) Langar uzilishi, suzish, ildiz otish"
+   ],
+   "answer": "A) Ildiz otish, harflar to‘kilishi, suzish"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lom jarga sakrashdan qo‘rqqanda Vrungel unga nimani berdi?",
+   "options": [
+    "A) Durbinni",
+    "B) Arqonni",
+    "C) Xaritani",
+    "D) Parashutni"
+   ],
+   "answer": "A) Durbinni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olmaxonlar kemada nima yeb o‘tirishgan edi?",
+   "options": [
+    "A) Yong‘oq holva",
+    "B) Olma va nok",
+    "C) Selyodka balig‘i",
+    "D) Quruq non"
+   ],
+   "answer": "A) Yong‘oq holva"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Angliyadagi tilanchilar qanday kiyimda yurishga majbur edi?",
+   "options": [
+    "A) Frak va qalpoqda",
+    "B) Dengizchi formasida",
+    "C) Yirtiq kiyimda",
+    "D) Harbiy kiyimda"
+   ],
+   "answer": "A) Frak va qalpoqda"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Fuks yelkanlarni boshqarishda nimadan foydalandi?",
+   "options": [
+    "A) Qarta o‘yinidan",
+    "B) Rangli bayroqlardan",
+    "C) Hushtakdan",
+    "D) Raqamlangan taxtachalardan"
+   ],
+   "answer": "A) Qarta o‘yinidan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Olmaxonlar kemadan qanday qilib sotib yuborildi?",
+   "options": [
+    "A) G‘ildirak qurilmasi bilan Gadenbekka sotildi",
+    "B) Orolga qo‘yib yuborildi",
+    "C) Muzeyga topshirildi",
+    "D) Dengizga tushirildi"
+   ],
+   "answer": "A) G‘ildirak qurilmasi bilan Gadenbekka sotildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kashalot atrofdagi suvni nega isitib yuborgan edi?",
+   "options": [
+    "A) Shamollab isitmasi ko‘tarilgani uchun",
+    "B) Oftobda toblangani uchun",
+    "C) Suv osti vulqoni sababli",
+    "D) Tez suzgani uchun"
+   ],
+   "answer": "A) Shamollab isitmasi ko‘tarilgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yashikdan tuxum o‘rniga nega timsohlar chiqdi?",
+   "options": [
+    "A) Qishloqda bilmay timsoh tuxumi berilgani uchun",
+    "B) Fuks ularni ko‘paytirgani uchun",
+    "C) Suv tegib o‘zgargani uchun",
+    "D) Sehrli tuxumlar bo‘lgani uchun"
+   ],
+   "answer": "A) Qishloqda bilmay timsoh tuxumi berilgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Vrungelning kasal kashalotga aspirin berishi qanday xislat?",
+   "options": [
+    "A) Rahmdillik va g‘amxo‘rlik",
+    "B) Qo‘rqoqlik va qochish",
+    "C) Befarqlik va loqaydlik",
+    "D) Manfaatsizlik va keraksizlik"
+   ],
+   "answer": "A) Rahmdillik va g‘amxo‘rlik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «vaxtada uxlash» haqidagi dengizchilar maqoli bilan nimani ko‘rsatadi?",
+   "options": [
+    "A) Dengizchilarning mehnatkash va tajribaliligini",
+    "B) Dengizchilarning tanbal ekanini",
+    "C) Uyquning zarar ekanini",
+    "D) Kemada joy yo‘qligini"
+   ],
+   "answer": "A) Dengizchilarning mehnatkash va tajribaliligini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vrungel bo‘g‘ma ilonning og‘ziga nima otib uni shishirdi?",
+   "options": [
+    "A) O‘t o‘chirgich",
+    "B) Zambarak o‘qi",
+    "C) Katta tosh",
+    "D) Yong‘oq yashigi"
+   ],
+   "answer": "A) O‘t o‘chirgich"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vrungel va Fuks samolyotda qaysi mamlakatga uchishdi?",
+   "options": [
+    "A) Braziliyaga",
+    "B) Angliyaga",
+    "C) Yaponiyaga",
+    "D) Norvegiyaga"
+   ],
+   "answer": "A) Braziliyaga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muzeyda ishlagan papuas aslida qaysi oliy dargohni tugatgan edi?",
+   "options": [
+    "A) Oksford universitetini",
+    "B) Garvard universitetini",
+    "C) Sorbonna universitetini",
+    "D) Moskva universitetini"
+   ],
+   "answer": "A) Oksford universitetini"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lom va Fuks paroxodda qanday ishga yollanishdi?",
+   "options": [
+    "A) O‘tyoqarlikka",
+    "B) Oshpazlikka",
+    "C) Kapitanlikka",
+    "D) Darvozabonlikka"
+   ],
+   "answer": "A) O‘tyoqarlikka"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Vrungel va uning jamoasi chanaga qaysi hayvonlarni qo‘shishdi?",
+   "options": [
+    "A) Bug‘u va itni",
+    "B) Ikki bug‘uni",
+    "C) Ot va itni",
+    "D) Olmaxon va itni"
+   ],
+   "answer": "A) Bug‘u va itni"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Admiral Kusaki o‘zining kimligini nega yashirishga urindi?",
+   "options": [
+    "A) Qilmishlari fosh bo‘lishidan qo‘rqgani uchun",
+    "B) Hazillashmoqchi bo‘lgani uchun",
+    "C) Ismini unutib qo‘ygani uchun",
+    "D) Kema uniki bo‘lgani uchun"
+   ],
+   "answer": "A) Qilmishlari fosh bo‘lishidan qo‘rqgani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qiyofadosh Kusakining qorni tilinganda ichidan nega par uchdi?",
+   "options": [
+    "A) Qorni ichiga par tiqib olgani uchun",
+    "B) Sehrli odam bo‘lgani uchun",
+    "C) Qushga aylangani uchun",
+    "D) Yostiq yutib yuborgani uchun"
+   ],
+   "answer": "A) Qorni ichiga par tiqib olgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Vrungelning kema halokatidan so‘ng ham taslim bo‘lmasligi qanday baholanadi?",
+   "options": [
+    "A) Yuksak matonat va bukilmas iroda",
+    "B) Bekorchi kimsaning odati",
+    "C) Kaltabinlik va nodonlik",
+    "D) Omadga ortiqcha ishonish"
+   ],
+   "answer": "A) Yuksak matonat va bukilmas iroda"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Fuksning keyinchalik kinofabrikaga ishga kirishi to‘g‘ri qarormi?",
+   "options": [
+    "A) To‘g‘ri — o‘z qobiliyatiga halol yo‘l topdi",
+    "B) Noto‘g‘ri — dengizda qolishi kerak edi",
+    "C) To‘g‘ri — nohalol ish bilan shug‘ullandi",
+    "D) Noto‘g‘ri — uyiga qaytishi lozim edi"
+   ],
+   "answer": "A) To‘g‘ri — o‘z qobiliyatiga halol yo‘l topdi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dengiz lug‘atida «Ankerok» so‘ziga berilgan izoh muallifning qaysi uslubini ko‘rsatadi?",
+   "options": [
+    "A) Yumor va ilmiy zukkolik uyg‘unligini",
+    "B) Quruq va zerikarli bayonni",
+    "C) Shunchaki lof urishni",
+    "D) G‘amgin va hazin kayfiyatni"
+   ],
+   "answer": "A) Yumor va ilmiy zukkolik uyg‘unligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Lug‘atda «Yakor» so‘zi bilan tugashining badiiy ma‘nosi nimada?",
+   "options": [
+    "A) Safar va kitobning yakunlanish ramzi",
+    "B) Kema cho‘kib ketganini bildirish",
+    "C) Matroslar qochganini ko‘rsatish",
+    "D) Yangi kema sotib olish"
+   ],
+   "answer": "A) Safar va kitobning yakunlanish ramzi"
+  }
+ ]
+}

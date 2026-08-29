@@ -1,0 +1,307 @@
+{
+ "title": "Fransuz tili saboqlari",
+ "author": "Valentin Rasputin",
+ "genre": "hikoya",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "ustoz va shogird",
+   "halollik",
+   "sabr",
+   "mehr-oqibat",
+   "matonat"
+  ],
+  "theme": "Asarning bosh g‘oyasi — har qanday og‘ir sharoitda ham insoniylik, g‘urur va halollikni saqlab qolish hamda ustozning shogirdiga bo‘lgan cheksiz mehr-oqibati va fidoiyligini ko‘rsatishdir.",
+  "summary": "1948-yil. Urushdan keyingi ocharchilik yillari. 11 yoshli bola o‘qishni davom ettirish uchun tuman markaziga keladi. U uydan uzoqda ochlik va sog‘inchdan qiynaladi. Sog‘lig‘ini tiklash uchun sutga pul topish ilinjida ko‘chada bolalar bilan pulga «chikka» o‘ynay boshlaydi. Halol o‘ynagani va g‘irromlikni fosh qilgani uchun ko‘cha bolalari uni do‘pposlashadi. Bu haqda xabar topgan fransuz tili o‘qituvchisi Lidiya Mixaylovna bolaning g‘ururini sindirmay yordam berish uchun uni uyiga chaqirib dars o‘tadi va ovqatlantirishga urinadi. Bola yordamni rad etgach, o‘qituvchi u bilan pulga «pristenok» o‘ynay boshlaydi va bilib turib yutqazib beradi. Buni ko‘rib qolgan maktab direktori muallimani axloqsizlikda ayblaydi. Lidiya Mixaylovna barcha aybni o‘z bo‘yniga olib yurtiga ketadi. Qishda bolaga o‘qituvchisidan posilka keladi: unda makaron va u faqat rasmlarda ko‘rgan uchta qizil olma bor edi.",
+  "characters": "Bosh qahramon — 11 yoshli tirishqoq, halol va g‘ururli bola. Lidiya Mixaylovna — fransuz tili o‘qituvchisi, mehribon va fidoiy ustoz. Vadik va Ptaxa — pulga o‘ynaydigan bezori bolalar. Vasiliy Andreyevich — qattiqqol maktab direktori.",
+  "conclusion": "Ushbu hikoya kitobxon bolaga har qanday qiyinchilikda ham halol va g‘ururli bo‘lishni o‘rgatadi. Ustoz va shogird o‘rtasidagi chinakam mehr va oqibatning qadrini anglatadi. Bolada boshqalarga nisbatan e'tiborli va saxovatli bo‘lish tuyg‘ularini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Qiyinchiliklarga qaramay ilm olishga intiladigan, ustoz-shogird munosabatlari va insoniy mehr-oqibat haqida o‘ylashni yaxshi ko‘radigan kitobxonlarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bosh qahramon necha yoshida mustaqil hayotni boshladi?",
+   "options": [
+    "A) 9 yoshida",
+    "B) 10 yoshida",
+    "C) 11 yoshida",
+    "D) 12 yoshida"
+   ],
+   "answer": "C) 11 yoshida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qahramon fransuz tilidan aynan nimaga qiynalardi?",
+   "options": [
+    "A) Grammatikani eslab qolishga",
+    "B) So‘zlarni tarjima qilishga",
+    "C) So‘zlarni to‘g‘ri talaffuz qilishga",
+    "D) Imlo qoidalarini yozishga"
+   ],
+   "answer": "C) So‘zlarni to‘g‘ri talaffuz qilishga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bosh qahramon yutgan puliga nima sotib olardi?",
+   "options": [
+    "A) Shirinliklar",
+    "B) Bir banka sut",
+    "C) Yangi kiyimlar",
+    "D) Badiiy kitoblar"
+   ],
+   "answer": "B) Bir banka sut"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qahramon uchun qishloq va shahar o‘rtasidagi farq nimada edi?",
+   "options": [
+    "A) Qishloqda ovqat topish osonroq edi",
+    "B) Shaharda do‘stlari ko‘p edi",
+    "C) Qishloqda maktab juda katta edi",
+    "D) Shaharda daryo yo‘q edi"
+   ],
+   "answer": "A) Qishloqda ovqat topish osonroq edi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qahramon nega har kuni faqat bir so‘m yutardi?",
+   "options": [
+    "A) Ko‘proq yuta olmagani uchun",
+    "B) Faqat sutga yetadiganini olardi",
+    "C) Sheriklari ko‘p bermagani uchun",
+    "D) Pul yetarli bo‘lgani uchun"
+   ],
+   "answer": "B) Faqat sutga yetadiganini olardi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Onasi yuborgan oziq-ovqatlar nega tez tugab qolardi?",
+   "options": [
+    "A) Bola hammasini yeb qo‘yardi",
+    "B) Boshqalar sezdirmay olib yeyardi",
+    "C) Taomlar tez buzilib qolardi",
+    "D) Yo‘lda to‘kilib ketardi"
+   ],
+   "answer": "B) Boshqalar sezdirmay olib yeyardi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «sog‘inchdan jinni bo‘layozardim» deb nimani ko‘rsatgan?",
+   "options": [
+    "A) Bolaning uyni kuchli sog‘inganini",
+    "B) O‘qishdan bezib qolganini",
+    "C) Shahardan ketishga qo‘rqqanini",
+    "D) Kasal bo‘lib qolganini"
+   ],
+   "answer": "A) Bolaning uyni kuchli sog‘inganini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vadik va Ptaxa bolani nega do‘pposlashdi?",
+   "options": [
+    "A) Pul tikmay o‘ynagani uchun",
+    "B) G‘irromlikni aytib bergani uchun",
+    "C) Darsga kechikib kelgani uchun",
+    "D) O‘yindan qochib ketgani uchun"
+   ],
+   "answer": "B) G‘irromlikni aytib bergani uchun"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maktabda kim o‘qituvchiga bolaning pul o‘ynaganini sotdi?",
+   "options": [
+    "A) Vadik",
+    "B) Ptaxa",
+    "C) Tishkin",
+    "D) Fedka"
+   ],
+   "answer": "C) Tishkin"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bola yuborilgan posilka muallimadan ekanini qanday bildi?",
+   "options": [
+    "A) Qutida xat bor edi",
+    "B) Qishloqda makaron bo‘lmagani uchun",
+    "C) Farrosh xola aytgani uchun",
+    "D) Vadik ko‘rib aytgani uchun"
+   ],
+   "answer": "B) Qishloqda makaron bo‘lmagani uchun"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Lidiya Mixaylovnaning bolaga munosabati qanday rivojlandi?",
+   "options": [
+    "A) Qattiqqollikdan mehribonlik va yordamga",
+    "B) Do‘stlikdan begonalashuvga o‘tdi",
+    "C) Faqat dars berish bilan cheklandi",
+    "D) Avval o‘ynadi, keyin jazoladi"
+   ],
+   "answer": "A) Qattiqqollikdan mehribonlik va yordamga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bola nega muallimaning makaron solingan qutisini qaytardi?",
+   "options": [
+    "A) Makaronni yoqtirmagani uchun",
+    "B) G‘ururi va halolligi sababli",
+    "C) Quti unga tegishli emasligidan",
+    "D) Makaron buzilib qolgani uchun"
+   ],
+   "answer": "B) G‘ururi va halolligi sababli"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Lidiya Mixaylovna nega bolani uyiga chaqirib dars o‘tdi?",
+   "options": [
+    "A) Faqat til o‘rgatish uchun",
+    "B) Unga samimiy mehr ko‘rsatish uchun",
+    "C) Onasiga shikoyat qilish uchun",
+    "D) Uy ishlarini qildirish uchun"
+   ],
+   "answer": "B) Unga samimiy mehr ko‘rsatish uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bolaning kaltaklansa ham g‘irromlikka chidamay haqni aytishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, chunki halollik muhim",
+    "B) Noto‘g‘ri, jim turishi kerak edi",
+    "C) Noto‘g‘ri, pulni berishi kerak edi",
+    "D) Noto‘g‘ri, o‘yinga bormasligi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, chunki halollik muhim"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lidiya Mixaylovna bola bilan qaysi o‘yinni o‘ynay boshladi?",
+   "options": [
+    "A) Chikka",
+    "B) Pristenok",
+    "C) Shaxmat",
+    "D) Oshiq"
+   ],
+   "answer": "B) Pristenok"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallimaning aybni o‘z bo‘yniga olib ketishini qanday baholaysiz?",
+   "options": [
+    "A) O‘quvchisini himoya qilgan jasorat",
+    "B) Qoidani buzgan mas'uliyatsizlik",
+    "C) Kutilmagan va noto‘g‘ri qaror",
+    "D) Shunchaki maktabdan qochish yo‘li"
+   ],
+   "answer": "A) O‘quvchisini himoya qilgan jasorat"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qishda muallimadan kelgan posilkada nima bor edi?",
+   "options": [
+    "A) Makaron va uchta olma",
+    "B) Non va bir chelak kartoshka",
+    "C) Kitob va daftar",
+    "D) Kiyim-kechak va shirinlik"
+   ],
+   "answer": "A) Makaron va uchta olma"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Voqealarning to‘g‘ri tartibini aniqlang: 1-Fransuzcha dars, 2-Pristenok, 3-Olma posilkasi.",
+   "options": [
+    "A) 1, 2, 3",
+    "B) 2, 1, 3",
+    "C) 3, 1, 2",
+    "D) 1, 3, 2"
+   ],
+   "answer": "A) 1, 2, 3"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Lidiya Mixaylovna bola bilan o‘yinda nega bilib yutqazardi?",
+   "options": [
+    "A) Bolaga yordam berish uchun",
+    "B) O‘ynashni bilmagani uchun",
+    "C) O‘yindan zerikkani uchun",
+    "D) O‘quvchisidan qo‘rqgani uchun"
+   ],
+   "answer": "A) Bolaga yordam berish uchun"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif oxiridagi olma tasviri bilan nimani ko‘rsatmoqchi?",
+   "options": [
+    "A) Ustozning unutilmas mehr va g‘amxo‘rligini",
+    "B) Qishloqdagi mevalarning tansiqligini",
+    "C) Bolaning ochlikdan to‘liq qutilganini",
+    "D) Qish kunlarining sovuqligini"
+   ],
+   "answer": "A) Ustozning unutilmas mehr va g‘amxo‘rligini"
+  }
+ ]
+}

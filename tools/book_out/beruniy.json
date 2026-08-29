@@ -1,0 +1,417 @@
+{
+ "title": "Beruniy",
+ "author": "Sahrodagi qahramon. Saʼdullo Quronov",
+ "genre": "roman",
+ "age_group": "3",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "ilm-fan",
+   "tarix",
+   "vatanparvarlik",
+   "sabr",
+   "ustoz-shogird"
+  ],
+  "theme": "Aql va bilim insonni hamda jamiyatni yuksaltiruvchi eng buyuk kuchdir; ilm yo‘lidagi fidoiylik abadiy shon-sharaf keltiradi.",
+  "summary": "Asarda Abu Fazl Rayyoniy tilidan buyuk mutafakkir Abu Rayhon Beruniy va sulton Mahmud G‘aznaviy davri hikoya qilinadi. Beruniy yoshligidanoq ilm-fanga intilib, Qiyotda Mansur ibn Iroq qo‘lida tahsil oladi. Xorazmdagi siyosiy parokandaliklar sababli turli shaharlarga safar qiladi, Gurganjda «Dorulhikma»da Ibn Sino kabi olimlar bilan hamkorlik qiladi. Mahmud G‘aznaviy saroyida va Hindiston yurishlarida Beruniy o‘z tadqiqotlarini davom ettirib, geodeziya, astronomiya va mineralogiyaga oid o‘lmas asarlar yaratadi. Asar oxirida Beruniyning fidoiy umri va ilmiy merosi keyingi avlodlarga ibrat sifatida yakunlanadi.",
+  "characters": "Abu Rayhon Beruniy — buyuk olim, ilmga fidoiy zot; Abu Fazl Rayyoniy — Beruniyning sodiq shogirdi va hikoyachi; Mansur ibn Iroq — Beruniyning ustozi, Xorazm akademiyasi homiysi; Sulton Mahmud G‘aznaviy — fotih va ilm-fan homiysi bo‘lgan hukmdor.",
+  "conclusion": "Asar o‘quvchini ajdodlarimizning buyuk ilmiy merosini qadrlashga, matonat va sabr bilan ilm egallashga chorlaydi. Bola undan Vatan tarixiga g‘urur, ilm-fanga bo‘lgan qiziqish va hayotda halol yashash sabog‘ini oladi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tarix, ilm-fan va buyuk shaxslar hayoti bilan qiziqadigan, kitob o‘qish orqali dunyoqarashini kengaytirmoqchi bo‘lgan o‘smirlarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abu Fazlga «Fazilatlar otasi» laqabini kim bergan edi?",
+   "options": [
+    "A) Abul Asqar Rayyoniy",
+    "B) Mansur ibn Iroq",
+    "C) Sulton Mahmud"
+   ],
+   "answer": "A) Abul Asqar Rayyoniy"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abu Rayhon necha yoshida Qur’onni to‘liq yod olgan edi?",
+   "options": [
+    "A) O‘n yoshida",
+    "B) O‘n to‘rt yoshida",
+    "C) Yigirma yoshida"
+   ],
+   "answer": "B) O‘n to‘rt yoshida"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abu Rayhon o‘smirlikda nimani o‘ziga tortishini kuzatgan edi?",
+   "options": [
+    "A) Ishqalangan shisha tayoqcha yungni",
+    "B) Temir bo‘lagi yog‘ochni",
+    "C) Muz bo‘lagi suvni"
+   ],
+   "answer": "A) Ishqalangan shisha tayoqcha yungni"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mansur ibn Iroq Xorazmda qaysi sulolaga mansub edi?",
+   "options": [
+    "A) Samoniylar sulolasiga",
+    "B) Ofrig‘iylar sulolasiga",
+    "C) G‘aznaviylar sulolasiga"
+   ],
+   "answer": "B) Ofrig‘iylar sulolasiga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asarning birinchi qismida sobiylar va mazdakiylar qanday tasvirlangan?",
+   "options": [
+    "A) Ilmdan uzoqlashib adashgan qavmlar",
+    "B) Buyuk kashfiyotlar qilgan olimlar",
+    "C) Yengilmas sarkardalar va jangchilar"
+   ],
+   "answer": "A) Ilmdan uzoqlashib adashgan qavmlar"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Abu Rayhon chorvadorlik emas, ilm yo‘lini tanladi?",
+   "options": [
+    "A) Boylikdan ko‘ra bilmni afzal bilgani uchun",
+    "B) Qattiq mehnatdan qo‘rqqani uchun",
+    "C) Xojasiga qarshi chiqmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Boylikdan ko‘ra bilmni afzal bilgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Abul Asqar keksaygach butun mol-mulkini tarqatib yubordi?",
+   "options": [
+    "A) Oxirat uchun savob umidida",
+    "B) Qaroqchilardan qo‘rqqani uchun",
+    "C) O‘g‘liga ishonmagani uchun"
+   ],
+   "answer": "A) Oxirat uchun savob umidida"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Abu Rayhonning o‘z vujudini va bilimini butlashga intilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, komillikka intilish zarur",
+    "B) Noto‘g‘ri, faqat mol-dunyoni o‘ylash kerak",
+    "C) Bekorchi harakat, foydasiz intilish"
+   ],
+   "answer": "A) To‘g‘ri, komillikka intilish zarur"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Beruniy va Mahmud G‘aznaviy haqida so‘zlab, nimani ta’kidlaydi?",
+   "options": [
+    "A) Biri qilich, biri qalam tutganini",
+    "B) Ikkalasi ham faqat urushganini",
+    "C) Ularning dushman bo‘lib o‘tganini"
+   ],
+   "answer": "A) Biri qilich, biri qalam tutganini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "So‘zboshida Nobel mukofoti laureati Aziz Sanjar asarni qanday baholaydi?",
+   "options": [
+    "A) Yoshlarni ilmgaga ruhlantiruvchi deb",
+    "B) Faqat o‘tmish xatolari haqida deb",
+    "C) Zafarsiz urushlar bayoni deb"
+   ],
+   "answer": "A) Yoshlarni ilmgaga ruhlantiruvchi deb"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shamsulmaoliy Qobus Jurjonda qanday inshoot barpo etishni buyurdi?",
+   "options": [
+    "A) Baland minora",
+    "B) Bahaybat saroy",
+    "C) Katta kutubxona"
+   ],
+   "answer": "A) Baland minora"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gurganjda «Dorulhikma val-maorif» ilmiy akademiyasini kim tashkil etdi?",
+   "options": [
+    "A) Xorazmshoh Ma’mun",
+    "B) Sulton Mahmud",
+    "C) Qobus ibn Vushmgir"
+   ],
+   "answer": "A) Xorazmshoh Ma’mun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xorazmshoh Abu Rayhonga akademiyadan tashqari qaysi vazifani topshirdi?",
+   "options": [
+    "A) Miroblik vazifasini",
+    "B) Lashkarboshilik vazifasini",
+    "C) Xazinachilik vazifasini"
+   ],
+   "answer": "A) Miroblik vazifasini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gurganj «Dorulhikma»siga kelgan mashhur tabib va hakim kim edi?",
+   "options": [
+    "A) Ibn Sino",
+    "B) Al-Xo‘jandiy",
+    "C) Miskavayh"
+   ],
+   "answer": "A) Ibn Sino"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sulton Mahmud Hindiston yurishlarida asosan nimani maqsad qilgan edi?",
+   "options": [
+    "A) Islomni yoyish va zafarlar quchishni",
+    "B) Faqir dehqonlarni quvishni",
+    "C) Yovvoyi hayvonlarni ovlashni"
+   ],
+   "answer": "A) Islomni yoyish va zafarlar quchishni"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Xorazmshoh Ma’mun olimlarni saroyga to‘pladi?",
+   "options": [
+    "A) Davlat shon-sharafini ilm bilan ko‘tarishga",
+    "B) Olimlarni qamoqda saqlash uchun",
+    "C) Qo‘shinni urushga tayyorlash uchun"
+   ],
+   "answer": "A) Davlat shon-sharafini ilm bilan ko‘tarishga"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Xoja Minovandiy berilgan qullardan so‘ng o‘zgardi?",
+   "options": [
+    "A) Dunyo matosiga chalg‘ib charchagani uchun",
+    "B) Kasallikka chalingani uchun",
+    "C) Saroydan haydalgani uchun"
+   ],
+   "answer": "A) Dunyo matosiga chalg‘ib charchagani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Abu Rayhonning raislik mas’uliyatiga o‘ta daqiqlik bilan yondashishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, halollik va intizom muhim",
+    "B) Noto‘g‘ri, harajatni o‘ylamaslik kerak",
+    "C) Manmanlik, bekorga vaqt sarflash"
+   ],
+   "answer": "A) To‘g‘ri, halollik va intizom muhim"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sulton Mahmudning ocharchilik paytida g‘allani xalqga tarqatgani qanday amaliyot?",
+   "options": [
+    "A) Saxovatli va oqilona qaror",
+    "B) Zolimona va nojo‘ya ish",
+    "C) Qo‘rqoqlik va befoyda harakat"
+   ],
+   "answer": "A) Saxovatli va oqilona qaror"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Beruniy va Ibn Sinoning uchrashuvini qanday tasvirlaydi?",
+   "options": [
+    "A) Ikki zakovat yulduzining bahsi deb",
+    "B) Ikki dushman olimning urushi deb",
+    "C) Oddiy va ahamiyatsiz voqea deb"
+   ],
+   "answer": "A) Ikki zakovat yulduzining bahsi deb"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ayoz o‘z xonasida nega eski choriq va po‘stinchasini saqlardi?",
+   "options": [
+    "A) Manmanlik va kibrga berilmaslik uchun",
+    "B) Otasiga sotib berish uchun",
+    "C) Sultondan yashirish uchun"
+   ],
+   "answer": "A) Manmanlik va kibrga berilmaslik uchun"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abu Rayhon do‘sti Al-Hasanning qizi Rayhona uchun qanday kitob yozdi?",
+   "options": [
+    "A) Savol-javob shaklidagi ilmiy kitob",
+    "B) Hindiston ertaklari to‘plami",
+    "C) Hukmdorlar madhiyasi bitilgan doston"
+   ],
+   "answer": "A) Savol-javob shaklidagi ilmiy kitob"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yunonistondan Abu Rayhonning ilmini izlab kelgan yigitchaning ismi kim edi?",
+   "options": [
+    "A) Yustinus",
+    "B) Yadid",
+    "C) Volis"
+   ],
+   "answer": "A) Yustinus"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abu Rayhon insondagi haqiqiy baxtiyorlikni nimada deb javob beradi?",
+   "options": [
+    "A) Tangridan va taqdirdan rozilikda",
+    "B) Katta boylik to‘plashda",
+    "C) Shaharlarni fath etishda"
+   ],
+   "answer": "A) Tangridan va taqdirdan rozilikda"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Beruniy fikricha, insonni boshqa mavjudotlardan ajratib turuvchi asosiy omil nima?",
+   "options": [
+    "A) Ilm va tafakkur qilish qobiliyati",
+    "B) Ko‘p mol-dunyo va boylik yig‘ishi",
+    "C) Katta imoratlar va qasrlar qurishi"
+   ],
+   "answer": "A) Ilm va tafakkur qilish qobiliyati"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Abu Rayhon hayoti davomida dunyo matosiga qanday munosabatda bo‘ldi?",
+   "options": [
+    "A) Qanoatli bo‘lib, boylikka qiziqmadi",
+    "B) Har doim oltin to‘plashga urindi",
+    "C) Qimmatbaho saroylarga ega bo‘lishni istadi"
+   ],
+   "answer": "A) Qanoatli bo‘lib, boylikka qiziqmadi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Abu Rayhon «Sajdasiz siymo bo‘lmaydi» deb ta’kidladi?",
+   "options": [
+    "A) Haqiqiy insoniy husn ibodatda bo‘lgani uchun",
+    "B) Surat chizishni yomon ko‘rgani uchun",
+    "C) Haykaltaroshlarni jazolash uchun"
+   ],
+   "answer": "A) Haqiqiy insoniy husn ibodatda bo‘lgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Beruniy vazir Haraqoniyga masofalarni o‘lchashning qanday foydasi borligini uqtirdi?",
+   "options": [
+    "A) Safarlar va yo‘l topishdagi zaruratni",
+    "B) Faqat soliq yig‘ish osonligini",
+    "C) Shaharlar sonini maqtanishni"
+   ],
+   "answer": "A) Safarlar va yo‘l topishdagi zaruratni"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ayozning mansabga erishganda ham kamtarlikni yo‘qotmagani qanday xulq?",
+   "options": [
+    "A) Yuksak odob va kamtarlik",
+    "B) Qo‘rqoqlik va nodonlik",
+    "C) Shohga nisbatan behurmatlik"
+   ],
+   "answer": "A) Yuksak odob va kamtarlik"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Beruniy umrining oxirgi onlaridagi fidoiylikni qanday tasvirlaydi?",
+   "options": [
+    "A) So‘nggi nafasigacha ilmga sodiqlik deb",
+    "B) Umrini bekorga sarfladi deb",
+    "C) Faqat g‘am va alam chekdi deb"
+   ],
+   "answer": "A) So‘nggi nafasigacha ilmga sodiqlik deb"
+  }
+ ]
+}

@@ -1,0 +1,416 @@
+{
+ "title": "Ulug‘bek",
+ "author": "Kiyik ovida. Qobiljon Shermatov",
+ "genre": "roman",
+ "age_group": "3",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "ota-ona va farzand",
+   "taqdir va sabr",
+   "kechirimli bo‘lish",
+   "oila va ma'naviyat"
+  ],
+  "theme": "Asarda insoniy taqdir sinovlarida sabr-toqat ko‘rsatish, otalik mas'uliyati va kechirimli bo‘lish orqali ma'naviy yuksalishga erishish bosh g‘oya qilib olingan.",
+  "summary": "Po‘lat urush va asirlikdan o‘n ikki yil o‘tib qaytadi. U xotini Yog‘du bilan o‘n besh yil deganda Sevinch ismli qizli bo‘lishadi. Biroq uydagi yong‘in sababli Sevinchning yuzi kuydi va chandiq qoladi. Ulg‘aygan Sevinch shifokor Fakil bilan yashirincha nikohdan o‘tib homilador bo‘ladi. Po‘lat ota or-nomus va elning gap-so‘zidan qo‘rqib, fojiali ravishda qizining joniga qasd qiladi va qamoqqa tushadi. Qamoqdan chiqqach, u sobiq dushmani Erboyning tavbasini eshitadi. Keyin yetimxonada qolgan nevarasi Yodgorni o‘z qaramog‘iga oladi. Sevinchning turmush o‘rtog‘i Fakil kelib, nikohlari bo‘lganini aytgach, Po‘lat ota uni kechiradi hamda taqdirning barcha sinovlariga shukronalik keltirib tavba qiladi.",
+  "characters": "Po‘lat — urush qatnashchisi, sabrli, or-nomusli va keyinchalik kechirimli ota; Yog‘du — Po‘latning sadoqatli va mehribon rafiqasi; Sevinch — taqdir sinovlariga uchragan qiz; Erboy — alamzadalik sabab xatolar qilgan qo‘shni; Fakil og‘a — Sevinchning turmush o‘rtog‘i; Yodgor — Sevinchning o‘g‘li.",
+  "conclusion": "Ushbu asar o‘smirlarga hayot sinovlarida sabr-toqatli bo‘lishni va g‘azabga berilmaslikni o‘rgatadi. Ota-onaga hurmat, kechirimli bo‘lish hamda qadriyatlarni anglash tuyg‘usini shakllantiradi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Insoniy munosabatlar, taqdir va oilaviy qadriyatlar haqida o‘ylaydigan, hayotiy saboqlarga qiziquvchi o‘smirlarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oychechak opa Toshkentga kimning huzuriga boradi?",
+   "options": [
+    "A) Azayimxon Toshdomla huzuriga",
+    "B) Shifoxonadagi bosh shifokor huzuriga",
+    "C) O‘zining qadrdon qarindoshi huzuriga"
+   ],
+   "answer": "A) Azayimxon Toshdomla huzuriga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Toshdomla xonasida o‘tirib nima ko‘rayotgan edi?",
+   "options": [
+    "A) Harbiylar haqidagi kinoni",
+    "B) Zangori ekranda partiya majlisini",
+    "C) Qiziqarli konsert dasturini"
+   ],
+   "answer": "B) Zangori ekranda partiya majlisini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Po‘lat va Yog‘du necha yil tirnoqqa zor bo‘lishdi?",
+   "options": [
+    "A) Besh yil davomida",
+    "B) O‘n besh yil davomida",
+    "C) Yigirma yil davomida"
+   ],
+   "answer": "B) O‘n besh yil davomida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Po‘lat urush va asirlikda necha yil qolib ketdi?",
+   "options": [
+    "A) O‘n ikki yil",
+    "B) Besh yil",
+    "C) Sakkiz yil"
+   ],
+   "answer": "A) O‘n ikki yil"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Toshdomlaning huzuriga kirish tartibini to‘g‘ri ko‘rsating.",
+   "options": [
+    "A) Zinalardan ko‘tarilib, oltinrang eshikdan kiriladi",
+    "B) Darvozadan kiriboq o‘ngga burilinadi",
+    "C) To‘ppa-to‘g‘ri taxt oldiga boriladi"
+   ],
+   "answer": "A) Zinalardan ko‘tarilib, oltinrang eshikdan kiriladi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Po‘lat nega Toshdomlaning harakatlaridan g‘azabga tushdi?",
+   "options": [
+    "A) Domla odamlarni aldab, pul olayotgani uchun",
+    "B) Domla ularni juda uzoq kutdirgani uchun",
+    "C) Domla xonaga hech kimni kiritmagani uchun"
+   ],
+   "answer": "A) Domla odamlarni aldab, pul olayotgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Po‘lat va Nikita yarador olmon askarini nega o‘ldirishmadi?",
+   "options": [
+    "A) Unda qurol bo‘lmagani uchun",
+    "B) Uni ojiz va qurolsiz deb bilishgani uchun",
+    "C) Olmon askari qochib ketgani uchun"
+   ],
+   "answer": "B) Uni ojiz va qurolsiz deb bilishgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Po‘latning domlaga pul berib, onasini olib chiqishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, onasini azobdan qutqardi",
+    "B) Noto‘g‘ri, domladan shifo olishi kerak edi",
+    "C) Noto‘g‘ri, Toshkentda qolishi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, onasini azobdan qutqardi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif urush lavhalarini tasvirlash orqali qanday tuyg‘uni ifodalaydi?",
+   "options": [
+    "A) Urushning dahshati va tinchlikning qadrini",
+    "B) Urushdagi g‘alaba quvonchini",
+    "C) Askarlarning boylikka o‘chligini"
+   ],
+   "answer": "A) Urushning dahshati va tinchlikning qadrini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Po‘latning xotini oyoqlarini quchib yig‘lashi muallif tasvirida nimani bildiradi?",
+   "options": [
+    "A) Chuqur minnatdorlik va sadoqat hissini",
+    "B) Uzoq yo‘ldan charchaganini",
+    "C) Kelajakdan qo‘rquv tuyg‘usini"
+   ],
+   "answer": "A) Chuqur minnatdorlik va sadoqat hissini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Po‘lat va Yog‘duning qizlariga qanday ism qo‘yildi?",
+   "options": [
+    "A) Sevinch",
+    "B) Rayhon",
+    "C) Gulrux"
+   ],
+   "answer": "A) Sevinch"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sevinch tug‘ilgan kuni mahallada kim vafot etgan edi?",
+   "options": [
+    "A) Erboyning xotini",
+    "B) Qo‘shni To‘lqin mirob",
+    "C) Oychechak opaning opasi"
+   ],
+   "answer": "A) Erboyning xotini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sevinchning yuzi nima sababdan yomon kuydi?",
+   "options": [
+    "A) Uydagi yong‘in sababli",
+    "B) Qaynoq suv to‘kilgani sababli",
+    "C) Quyoshda toblandig‘i sababli"
+   ],
+   "answer": "A) Uydagi yong‘in sababli"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sevinch birinchi sinfga borib nega yig‘lab qaytdi?",
+   "options": [
+    "A) Bolalar yuzidagi chandiqdan qochgani uchun",
+    "B) O‘qituvchisi uni urishgani uchun",
+    "C) Darslarni tushunmagani uchun"
+   ],
+   "answer": "A) Bolalar yuzidagi chandiqdan qochgani uchun"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sevinchning sho‘xligidan to yong‘ingacha bo‘lgan voqealarni tartiblang.",
+   "options": [
+    "A) Piyola sinishi, yo‘qolishi, uy yonishi",
+    "B) Uy yonishi, piyola sinishi, yo‘qolishi",
+    "C) Yo‘qolishi, uy yonishi, piyola sinishi"
+   ],
+   "answer": "A) Piyola sinishi, yo‘qolishi, uy yonishi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oychechak opa aza kuni to‘yni to‘xtatgisi kelmaganiga sabab nima?",
+   "options": [
+    "A) Uzoq kutilgan nevarasi quvonchi uchun",
+    "B) Erboyga alamlari bo‘lgani uchun",
+    "C) Karnaychilarga pul berib bo‘lingani uchun"
+   ],
+   "answer": "A) Uzoq kutilgan nevarasi quvonchi uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Po‘lat o‘t o‘chiruvchi bo‘la turib nega o‘zini aybdor his qildi?",
+   "options": [
+    "A) Qizini olovdan asray olmagani uchun",
+    "B) Ishdan bo‘shab ketgani uchun",
+    "C) Uyini sug‘urta qilmagani uchun"
+   ],
+   "answer": "A) Qizini olovdan asray olmagani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "O‘tkir akaning aza tufayli to‘yni to‘xtatish qarori to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, mahalladoshining azasini hurmat qildi",
+    "B) Noto‘g‘ri, nevarasining to‘yi muhim edi",
+    "C) Noto‘g‘ri, Oychechak opani xafa qildi"
+   ],
+   "answer": "A) To‘g‘ri, mahalladoshining azasini hurmat qildi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Maktabdagi bolalarning Sevinchdan qochish harakatiga qanday baho berasan?",
+   "options": [
+    "A) Bag‘ritoshlik, qizga mehr ko‘rsatish kerak edi",
+    "B) To‘g‘ri harakat, qo‘rqinchli yuzdan qochiladi",
+    "C) Oddiy holat, e'tibor bermaslik kerak"
+   ],
+   "answer": "A) Bag‘ritoshlik, qizga mehr ko‘rsatish kerak edi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Sevinchning chandiqli yuzini tasvirlab nimani yetkazmoqchi?",
+   "options": [
+    "A) Tashqi qiyofa emas, qalbi go‘zalligini",
+    "B) Qizning juda omadsiz ekanini",
+    "C) Tibbiyotning ojizligini"
+   ],
+   "answer": "A) Tashqi qiyofa emas, qalbi go‘zalligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sevinchning o‘g‘lining ismi nima edi?",
+   "options": [
+    "A) Yodgor",
+    "B) Po‘lat",
+    "C) Erboy"
+   ],
+   "answer": "A) Yodgor"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Po‘lat ota qancha muddatga qamoqqa tushgan edi?",
+   "options": [
+    "A) Yetti yilga",
+    "B) O‘n ikki yilga",
+    "C) Uch yilga"
+   ],
+   "answer": "A) Yetti yilga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Erboy ota Po‘latning oldiga kelib nimani iqror bo‘ldi?",
+   "options": [
+    "A) Uyga o‘zi o‘t qo‘yganini",
+    "B) Sevinchni o‘zi qochirganini",
+    "C) Toshdomlaga pul berganini"
+   ],
+   "answer": "A) Uyga o‘zi o‘t qo‘yganini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avtobusda Po‘lat otaga kim dalda berdi?",
+   "options": [
+    "A) O‘lmas domla",
+    "B) Tursun aka",
+    "C) Haydar qo‘shni"
+   ],
+   "answer": "A) O‘lmas domla"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Po‘lat otaning oxirgi hayotiy o‘zgarishlarini tartiblang.",
+   "options": [
+    "A) Qamoqdan chiqish, nevarani olish, tavba qilish",
+    "B) Tavba qilish, qamoqdan chiqish, nevarani olish",
+    "C) Nevarani olish, qamoqdan chiqish, tavba qilish"
+   ],
+   "answer": "A) Qamoqdan chiqish, nevarani olish, tavba qilish"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Yodgorbekning ota-bobolari zanjirini to‘g‘ri ajrating.",
+   "options": [
+    "A) Bobosi Po‘lat, otasi Fakil og‘a",
+    "B) Bobosi Erboy, otasi Po‘lat",
+    "C) Bobosi Tursun, otasi O‘lmas"
+   ],
+   "answer": "A) Bobosi Po‘lat, otasi Fakil og‘a"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Po‘lat ota pichoqni otib yuborishiga nima sabab bo‘ldi?",
+   "options": [
+    "A) Mehr va kechirim g‘azabdan ustun kelgani",
+    "B) Pichoqning tig‘i o‘tmas bo‘lgani",
+    "C) Yonida odamlar ko‘pligi sababli"
+   ],
+   "answer": "A) Mehr va kechirim g‘azabdan ustun kelgani"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "O‘lmas domla nega Po‘lat otaning nevarasini olishini ma'qulladi?",
+   "options": [
+    "A) Gunahsiz go‘dakni parvarishlash savob bo‘lgani uchun",
+    "B) Po‘lat otaning qariganini ko‘rib achingani uchun",
+    "C) Yetimxonada joy qolmagani uchun"
+   ],
+   "answer": "A) Gunahsiz go‘dakni parvarishlash savob bo‘lgani uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Po‘lat otaning Fakilni kechirib, pichoqni otgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, kechirimli bo‘lish olijanoblikdir",
+    "B) Noto‘g‘ri, qasos olishi kerak edi",
+    "C) Noto‘g‘ri, pichoqni saqlashi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, kechirimli bo‘lish olijanoblikdir"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar yakunida hayotning ikki yuzi haqidagi o‘y nimani anglatadi?",
+   "options": [
+    "A) Taqdirning achchiq-chuchugiga shukronalik keltirishni",
+    "B) Faqat go‘zal narsalarni yaxshi ko‘rishni",
+    "C) Hayotdan butunlay ko‘ngli qolganini"
+   ],
+   "answer": "A) Taqdirning achchiq-chuchugiga shukronalik keltirishni"
+  }
+ ]
+}

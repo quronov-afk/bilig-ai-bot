@@ -1,0 +1,28 @@
+{
+ "title": "Cho‘chqachaning hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9",
+  "topics": [
+   "tozalik va ozodalik",
+   "yomon odatlar",
+   "do‘stlik",
+   "ota-ona maslahati",
+   "hajv"
+  ],
+  "theme": "Asarda tozalik va ozodalikka rioya qilish, yomon odatlarga berilmaslik hamda boshqalarning noto‘g‘ri ta'siriga tushmaslik kerakligi hajviy usulda bayon etiladi.",
+  "summary": "Hikoyada ozodalikni yoqtirmaydigan Cho‘chqacha haqida so‘z boradi. U o‘zining kir yurishini to‘g‘ri deb bilib, do‘sti Qo‘zichoqni ham Sassiqko‘lga loyga yumalashga chorlaydi. Qo‘zichoq unga ishonib loyga tushadi, lekin bu unga yoqmay, uyiga qaytadi. Onasi Qora Sovliq ust-boshini rasvo qilgani uchun uning ta'zirini beradi. Cho‘chqacha esa hamon o‘z qilmishini maqlab, toza Oqsoyga ketayotgan boshqalarni ham loyga chorlashda davom etadi.",
+  "characters": "Cho‘chqacha – kirlikni yaxshi ko‘radigan va o‘zining yomon odatini boshqalarga ham o‘tkazmoqchi bo‘lgan sho‘x qahramon; Qo‘zichoq – do‘stining gapiga kirib adashgan, lekin o‘z xatosini tushunib onasiga quloq solgan personaj; Qora Sovliq – Qo‘zichoqning tartib-intizomni talab qiluvchi kuydirmakor onasi.",
+  "conclusion": "Bu hikoya bolaga har doim toza va ozoda yurish lozimligini, shuningdek, yomon odatli do‘stlarning nojo‘ya da'vatlariga ergashmaslik kerakligini o‘rgatadi. Ota-onaning tanbehi va maslahati bolani noto‘g‘ri yo‘ldan va ko‘ngilsizliklardan asrashini ko‘rsatib beradi.",
+  "difficulty": "oson",
+  "mood": "kulgili, hajviy",
+  "for_whom": "Kulgili hajvlarni yoqtiradigan, tozalik hamda do‘st tanlash borasida yaxshi saboq olmoqchi bo‘lgan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Cho‘chqacha Qo‘zichoqni Sassiqko‘lga boshlab borib loyga yumalatdi, lekin Qo‘zichoqqa bu yoqmadi va onasining tanbehidan keyin qaytib u yoqqa bormadi. Sen biror do‘sting seni noto‘g‘ri yoki kir ish qilishga undaganda nima qilgan bo‘larding? Ota-onangning maslahati shunday vaziyatda senga qanday yordam beradi?"
+}

@@ -1,0 +1,287 @@
+{
+ "title": "Arno",
+ "author": "Ernest Seton-Tompson",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "10-14 yosh",
+  "topics": [
+   "sadoqat",
+   "jasorat",
+   "vatanparvarlik",
+   "tabiat",
+   "mehr-oqibat"
+  ],
+  "theme": "Asar insonga sadoqat, tug‘ilgan makonga muhabbat hamda erkinlik tuyg‘usi har qanday qiyinchilik va xavf-xatardan ustun turishini ko‘rsatadi.",
+  "summary": "Arno — ko‘rimsiz, ammo g‘ayrioddiy yo‘l topish tuyg‘usi va qudratli qanotlariga ega xat tashuvchi kaptar. U ilk musobaqadanoq 2590 S raqamli kumush halqani yutib oladi. Tumanda qolgan kema kapitanining xabarini dengiz uzra 210 mil uchib yetkazadi va oqibatda bankirni ham kasodga uchrashdan qutqaradi. Navbatdagi musobaqada Sirakuza shahrida suv ichayotganida begona kaptarboz uni tutib olib, ikki yil tutqunlikda saqlaydi. Nihoyat ozodlikka chiqqan Arno ona kaptarxonasiga oshiqadi. Yo‘lda qirg‘iy hamda mergan o‘qidan yaralansa-da, parvozni to‘xtatmaydi. Biroq jonajon Manxetten ko‘rinib turganda, qaroqchi lochinlar unga hamla qilib halok etishadi. Yillar o‘tib, lochinlar inidan uning kumush halqasi topiladi.",
+  "characters": "Arno (matonatli, vafodor va uchqur xat tashuvchi kaptar), Ulkan Ko‘k / Burchaklik (chiroyli, lekin qo‘rqoq va g‘irrom kaptar), Billi (kaptarxona parvarishlovchisi, Arnoning qadrdoni), Bankir chol (Arno tufayli qutilib qolgan va kaptarlarni himoya qilish qonunini talab qilgan shaxs), Sirakuzalik kaptarboz (Arnoni tutib olib ikki yil qamab qo‘ygan insonsiz kishi).",
+  "conclusion": "Asar bolaga sadoqat, matonat va o‘z uyiga bo‘lgan chuqur muhabbat tuyg‘usini uqtiradi. Insoniyatning tabiat va tirik jonzotlarga bo‘lgan mas'uliyatsiz hamda shafqatsiz munosabati ayanchli oqibatlarga olib kelishini ko‘rsatadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi, ta'sirli",
+  "for_whom": "Hayvonlar hayoti, sadoqat va sarguzashtlar haqidagi ta'sirli va chuqur ma'noli hikoyalarni yaxshi ko‘radigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yosh kaptarlar birinchi mustaqil musobaqasi qaysi shaharchada o‘tkazildi?",
+   "options": [
+    "A) Elizabet shaharchasida",
+    "B) Nyu York shaharchasida",
+    "C) Boston shaharchasida"
+   ],
+   "answer": "A) Elizabet shaharchasida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Arno musobaqada g‘olib bo‘lib qanday mukofot oldi?",
+   "options": [
+    "A) Oltin medal",
+    "B) 2590 S raqamli kumush halqa",
+    "C) Maxsus yog‘och katak"
+   ],
+   "answer": "B) 2590 S raqamli kumush halqa"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnga ko‘ra, xonaki kaptarlarning boshqa kaptarlardan ajralib turuvchi asosiy belgilari qaysilar?",
+   "options": [
+    "A) Chiroyli patlari va baland sayrashi",
+    "B) Quloq usti qavariqlari va qudratli qanotlari",
+    "C) Uzun bo‘yni va katta bo‘qog‘i"
+   ],
+   "answer": "B) Quloq usti qavariqlari va qudratli qanotlari"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tumanda qolgan kemadan ikkinchi bo‘lib uchirilgan Ulkan Ko‘k nima qildi?",
+   "options": [
+    "A) To‘g‘ri kaptarxonaga uchib ketdi",
+    "B) Qo‘rqib, kema arqoniga qo‘nib oldi",
+    "C) Dengizga tushib halok bo‘ldi"
+   ],
+   "answer": "B) Qo‘rqib, kema arqoniga qo‘nib oldi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kaptarlar bo‘yicha trener nima uchun ilk musobaqani olis masofada o‘tkazdi?",
+   "options": [
+    "A) Kaptarlarni sotib yuborish uchun",
+    "B) Faqat eng zo‘rlarini saralash uchun",
+    "C) Shunchaki o‘yin ko‘rsatish uchun"
+   ],
+   "answer": "B) Faqat eng zo‘rlarini saralash uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dengizchilar Arnoni uchirganlarida u nima uchun bexato yo‘l topa oldi?",
+   "options": [
+    "A) U kemada uzoq yashagani uchun",
+    "B) Qo‘rqmay, tug‘ma tuyg‘usiga tayangani uchun",
+    "C) Boshqa kaptarlar ortidan ergashgani uchun"
+   ],
+   "answer": "B) Qo‘rqmay, tug‘ma tuyg‘usiga tayangani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kaptarbozlarning faqat kuchli va chidamli kaptarlarni saralashi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — kaptar naslini takomillashtiradi",
+    "B) Xato — hamma kaptarga bir xil qaralsin",
+    "C) Noto‘g‘ri — ularni uchirish xato"
+   ],
+   "answer": "A) To‘g‘ri — kaptar naslini takomillashtiradi"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bankir chol kaptarxonaga nima sababdan kelgan edi?",
+   "options": [
+    "A) Kaptar sotib olish uchun",
+    "B) Telegrammadan ko‘ra tezroq xabar olishga",
+    "C) Billi bilan uchrashish uchun"
+   ],
+   "answer": "B) Telegrammadan ko‘ra tezroq xabar olishga"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Arnoning akasi Arnolf qanday halok bo‘ldi?",
+   "options": [
+    "A) Qirg‘iy bilan urishib",
+    "B) Mergan ovchi otib o‘ldirdi",
+    "C) Qamoqda kasal bo‘lib"
+   ],
+   "answer": "B) Mergan ovchi otib o‘ldirdi"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ulkan Ko‘kning Arnodan ustunligi va kamchiligi qanday jamlangan?",
+   "options": [
+    "A) U uchqur va dovyurak edi",
+    "B) Chiroyli va yirik, lekin qo‘rqoq edi",
+    "C) Faqat kechasi uchishni bilardi"
+   ],
+   "answer": "B) Chiroyli va yirik, lekin qo‘rqoq edi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sirakuzalik kaptarboz Arnoni tutib olgach, nima uchun darrov qo‘yib yubormadi?",
+   "options": [
+    "A) Undan nasl olib ko‘paytirmoqchi edi",
+    "B) Uni sotib yubormoqchi edi",
+    "C) Kaptar uchishni bilmas edi"
+   ],
+   "answer": "A) Undan nasl olib ko‘paytirmoqchi edi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bankir nima uchun kaptarlarni himoya qiluvchi qonun talab qildi?",
+   "options": [
+    "A) Arno uni halokatdan qutqargani uchun",
+    "B) Kaptar sotish biznesini boshlagani uchun",
+    "C) Ovchilarga qarshi urushgani uchun"
+   ],
+   "answer": "A) Arno uni halokatdan qutqargani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Kaptarning yuragini sotib olib bo‘lmaydi» deya nimani ta'kidlaydi?",
+   "options": [
+    "A) Kaptarning narxi balandligini",
+    "B) Sadoqatni boylikka almashtirib bo‘lmasligini",
+    "C) Kaptarlar hech kimni tanimasligini"
+   ],
+   "answer": "B) Sadoqatni boylikka almashtirib bo‘lmasligini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sirakuzalik kaptarboz Arnoni necha yil tutqunlikda saqladi?",
+   "options": [
+    "A) Bir oy",
+    "B) Ikki yil",
+    "C) Besh yil"
+   ],
+   "answer": "B) Ikki yil"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sirakuzadagi qamoqdan ozod bo‘lgach, Arno qaysi tomonga qarab uchdi?",
+   "options": [
+    "A) Shimoli-g‘arbga",
+    "B) Janubi-sharqqa",
+    "C) G‘arbiy tomonga"
+   ],
+   "answer": "B) Janubi-sharqqa"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Arnoning uyga qaytish yo‘lida uchratgan xavf-xatarlari tartibi qanday?",
+   "options": [
+    "A) Qirg‘iy, mergan o‘qi, lochinlar",
+    "B) Ovchi, qirg‘iy, dengiz to‘foni",
+    "C) Lochin, qafas, poyezd"
+   ],
+   "answer": "A) Qirg‘iy, mergan o‘qi, lochinlar"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mergan o‘qidan yaralangan Arno nima uchun uchishda davom etdi?",
+   "options": [
+    "A) Ovchidan qasos olmoqchi bo‘lgani uchun",
+    "B) Vataniga sevgisi og‘riqdan kuchli edi",
+    "C) Yo‘lni adashtirib qo‘ygani uchun"
+   ],
+   "answer": "B) Vataniga sevgisi og‘riqdan kuchli edi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Arnoning yarador holatda ham uyiga intilishini qanday baholash mumkin?",
+   "options": [
+    "A) Befoyda harakat — to‘xtashi kerak edi",
+    "B) Yuksak matonat va cheksiz sadoqat",
+    "C) Qo‘rqoqlik — u lochinlardan qochdi"
+   ],
+   "answer": "B) Yuksak matonat va cheksiz sadoqat"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Arnoning o‘q yegach jasorati kamayganini qanday ibora bilan tasvirlaydi?",
+   "options": [
+    "A) Kaptar halqasi yo‘qolgani haqida",
+    "B) Qanotidan bitikli patlar to‘dalanib tushgani",
+    "C) Musobaqa qoidasi buzilgani haqida"
+   ],
+   "answer": "B) Qanotidan bitikli patlar to‘dalanib tushgani"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yillar o‘tib, lochinlarning inidan Arnoning nimasi topildi?",
+   "options": [
+    "A) Oltin patlari",
+    "B) 2590 S raqamli kumush halqasi",
+    "C) Xat solingan karnaycha"
+   ],
+   "answer": "B) 2590 S raqamli kumush halqasi"
+  }
+ ]
+}

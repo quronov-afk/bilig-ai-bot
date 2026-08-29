@@ -1,0 +1,29 @@
+{
+ "title": "Merosxo‘r",
+ "author": "Robert Luis Stivenson",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14-16 yosh (tarixiy-sarguzasht janri, tarjima asar va g‘oyaviy murakkabligi sababli 14 yoshdan yuqori o‘smirlarga mos keladi)",
+  "topics": [
+   "sarguzasht",
+   "do‘stlik",
+   "jasorat",
+   "halollik",
+   "meros",
+   "sabr"
+  ],
+  "theme": "Adolat va halollik baribir qaror topishi, inson har qanday og‘ir sinovda ham o‘zligini yo‘qotmasligi va sadoqat e’tiqoddan ham ustun turishi asarning bosh fikridir.",
+  "summary": "Ota-onasi vafot etgach, 16 yoshli Devid Belfur amakisi Ebenezerning huzuriga boradi. Xasis amaki merosga tekis egalik qilish uchun yigitni dengizchilarga sotib yuboradi. Devid kemada jasur shotland jangchisi Alan Brek bilan do‘stlashadi. Kema halokatga uchragach, Devid va Alan og‘ir azoblarni boshdan kechirib, ta’qiblardan qochib o‘tishadi. Oxir-oqibat Devid adolatli advokat Rankiler yordamida amakisining hiylasini fosh etadi va Shos qo‘rg‘onidagi o‘z merosini tiklaydi.",
+  "characters": "Devid Belfur — 16 yashar halol va sabrli merosxo‘r yigit; Ebenezer Belfur — Devidning niyati buzuq, xasis amakisi; Alan Brek Styuart — dovyurak va sadoqatli shotland jangchisi; Mister Rankiler — adolatli va tajribali huquqshunos.",
+  "conclusion": "Asar Devidning o‘z haq-huquqi va merosini tiklashi bilan xayrli yakun topadi. O‘smir bu asar orqali har qanday og‘ir sinovda sabr va halollikni yo‘qotmaslik, kattalar vasiyatini hurmat qilish hamda do‘stga sadoqatli bo‘lish sabog‘ini oladi.",
+  "difficulty": "qiyin",
+  "mood": "sarguzashtli, hayajonli, o‘ylantiruvchi",
+  "for_whom": "Dengiz va tog‘lardagi xatarli sayohatlarni, mardlik, adolat hamda haqiqiy do‘stlik haqidagi qiziqarli asarlarni yoqtiradigan o‘smirlar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Devid amakisining xiyonatiga va og‘ir sinovlarga uchrasa ham, umidsizlikka tushmadi va o‘z halolligini yo‘qotmadi. Seningcha, inson kutilmagan adolatsizlikka yoki qiyinchilikka duch kelganda unga sabr va jasorat qanday yordam beradi? O‘z hayotingdan yoki kuzatganlaringdan shunga o‘xshash misol keltirib bera olasanmi?"
+}

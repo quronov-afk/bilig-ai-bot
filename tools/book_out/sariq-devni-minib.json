@@ -1,0 +1,447 @@
+{
+ "title": "Sariq devni minib",
+ "author": "Xudoyberdi To‘xtaboyev",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "10-14 yosh",
+  "topics": [
+   "halollik",
+   "mehnat",
+   "ilm-fan",
+   "do‘stlik",
+   "mas'uliyat"
+  ],
+  "theme": "Muallif sehr va aldov bilan emas, faqat halol mehnat, qunt bilan o‘qish va to‘g‘rilik orqaligina hayotda haqiqiy muvaffaqiyat va hurmatga erishish mumkinligini ko‘rsatadi.",
+  "summary": "Hoshimjon dangasa va sho‘x bola bo‘lib, dars qilishdan qochib sehrli qalpoqcha topib oladi. Qalpoqcha yordamida u bilimsiz holda muhandis, shoir, agronom bo‘lishga urinadi, lekin har safar sharmanda bo‘ladi. Qori va folbinlarning yolg‘onlarini fosh qilgach, uyiga qaytadi. Maktabda o‘qituvchisi Vohid Soliyevich va sinfdoshlari ko‘magida o‘z ustida ishlab, halol mehnat bilan a’lochi o‘quvchiga aylanadi.",
+  "characters": "Hoshimjon — bosh qahramon, sho‘x va xayolparast bola; Otajon Azizovich — maktab direktori; Vohid Soliyevich — yangi va talabchan sinf rahbari; Ro‘zivoy aka — Hoshimjonning mehnatkash dadasi; Orif va Akrom — Hoshimjonning do‘stlari.",
+  "conclusion": "Asar bolaga dangasalik va oson yo‘l izlash baribir muvaffaqiyat keltirmasligini, haqiqiy bilim va halol mehnatgina insonni ulug‘lashini uqtiradi. Kattalarni hurmat qilish hamda do‘stlik mas'uliyatini o‘rgatadi.",
+  "difficulty": "o‘rta",
+  "mood": "kulgili, sarguzashtli, saboq beruvchi",
+  "for_whom": "Sho‘xlikni va sarguzashtlarni yaxshi ko‘radigan, bilim olishga erinadigan, lekin do‘stlik va halollik qadrini tushunishni xohlaydigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hoshimjon dars vazifalarini ko‘pincha kimdan ko‘chirib olardi?",
+   "options": [
+    "A) Qosimjondan",
+    "B) Orifdan",
+    "C) Akromdan",
+    "D) Mamatjondan"
+   ],
+   "answer": "B) Orifdan"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hoshimjon oyisining qaysi buyumini taqib bozorga borgan edi?",
+   "options": [
+    "A) Qo‘l soatini",
+    "B) Oltin uzukni",
+    "C) Mehnat medalini",
+    "D) Kumush zirakni"
+   ],
+   "answer": "C) Mehnat medalini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hoshimjon sehrli qalpoqchani qayerdan topib oldi?",
+   "options": [
+    "A) Eski hovli oxuridan",
+    "B) O‘z xonasidan",
+    "C) Maktab hovlisidan",
+    "D) Anhor bo‘yidan"
+   ],
+   "answer": "A) Eski hovli oxuridan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hoshimjon folbinning podvalidagi Mirobiddinxo‘jaga o‘zini kim deb tanitdi?",
+   "options": [
+    "A) Sariq dev",
+    "B) Qora alvasti",
+    "C) Azroil",
+    "D) Maktab direktori"
+   ],
+   "answer": "C) Azroil"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hoshimjon folbin xolaning xaltachalaridagi dorilarni nimaga almashtirib qo‘ydi?",
+   "options": [
+    "A) Rangli shakar dorilarga",
+    "B) Ich suradigan dorilarga",
+    "C) Oddiy un va tuzga",
+    "D) Tinchlantiruvchi dorilarga"
+   ],
+   "answer": "B) Ich suradigan dorilarga"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Hoshimjon sinf jurnaliga baholarni o‘zi qo‘yib chiqdi?",
+   "options": [
+    "A) O‘qimasdan a’lochi bo‘lish uchun",
+    "B) O‘qituvchisiga yordam berish uchun",
+    "C) Adashib yozib qo‘ydi",
+    "D) Sinfkom bo‘lishni xohlagani uchun"
+   ],
+   "answer": "A) O‘qimasdan a’lochi bo‘lish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Hoshimjon jurnaldagi aybni o‘z bo‘yniga oldi?",
+   "options": [
+    "A) Qosimni aybdor qilmaslik uchun",
+    "B) Direktor uyi tomon qochish uchun",
+    "C) Maqtanmoqchi bo‘lgani uchun",
+    "D) Sehrli qalpoqchasini ko‘rsatish uchun"
+   ],
+   "answer": "A) Qosimni aybdor qilmaslik uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Hoshimjonning fanlarni darsdan olib tashlash haqidagi arizasi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — qiyin fanlar kerakmas",
+    "B) Noto‘g‘ri — bilim kelajak uchun zarur",
+    "C) To‘g‘ri — futbol muhimroq",
+    "D) Noto‘g‘ri — direktor javob bermadi"
+   ],
+   "answer": "B) Noto‘g‘ri — bilim kelajak uchun zarur"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Hoshimjonning sehrli qalpoqcha bilan a’lochi bo‘lishi to‘g‘ri yo‘lmi?",
+   "options": [
+    "A) To‘g‘ri — tez natija beradi",
+    "B) Noto‘g‘ri — mehnat va bilim o‘rnini bosmaydi",
+    "C) To‘g‘ri — dars qilish shart emas",
+    "D) Noto‘g‘ri — qalpoqcha tezda yo‘qoladi"
+   ],
+   "answer": "B) Noto‘g‘ri — mehnat va bilim o‘rnini bosmaydi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Hoshimjonning hiqichoq tutganini qanday tuyg‘u bilan tasvirlaydi?",
+   "options": [
+    "A) Qorinchasi og‘rigan achinarli holatda",
+    "B) Kulgili va samimiy yumor bilan",
+    "C) G‘amgin va qo‘rqinchli tarzda",
+    "D) Jiddiy va ogohlantiruvchi tilda"
+   ],
+   "answer": "B) Kulgili va samimiy yumor bilan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hoshimjon tahririyatga qaysi sarlavhali she’rni o‘ziki deb olib bordi?",
+   "options": [
+    "A) Ona o‘lka",
+    "B) Bahor keldi",
+    "C) Maktabimga salom",
+    "D) Yong‘oq daraxti"
+   ],
+   "answer": "A) Ona o‘lka"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Said aka qurgan uy komissiyaga nega ma’qul kelmadi?",
+   "options": [
+    "A) Uy ko‘chaga ko‘ndalang tushgani uchun",
+    "B) Tomi yo‘qligi uchun",
+    "C) G‘ashti juda kichikligi uchun",
+    "D) Bo‘yog‘i o‘chib ketgani uchun"
+   ],
+   "answer": "A) Uy ko‘chaga ko‘ndalang tushgani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yong‘oq qori pochchaning oshqozoni shishganda Hoshimjon nima qildi?",
+   "options": [
+    "A) Baqaterak shoxidan kergi solddi",
+    "B) Issiq choy ichirdi",
+    "C) Tezgacha tabibga olib bordi",
+    "D) Qornini arqon bilan bog‘ladi"
+   ],
+   "answer": "A) Baqaterak shoxidan kergi solddi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uzunquloq ota qabrini kovlaganda qanday suyaklar chiqdi?",
+   "options": [
+    "A) Urg‘ochi eshak suyaklari",
+    "B) Katta ayiq suyaklari",
+    "C) Bo‘ri suyaklari",
+    "D) Qadimiy odam suyaklari"
+   ],
+   "answer": "A) Urg‘ochi eshak suyaklari"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hoshimjon uydan qochgach qaysi sohalarda o‘zini sinab ko‘rdi?",
+   "options": [
+    "A) Agronom, shoir, muhandis",
+    "B) O‘qituvchi, shifokor, haydovchi",
+    "C) Sudya, uchuvchi, suxandon",
+    "D) Rassam, etikdo‘z, duradgor"
+   ],
+   "answer": "A) Agronom, shoir, muhandis"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dononing qorni og‘riganda Hoshimjon qanday tartibda harakat qildi?",
+   "options": [
+    "A) Folbinga bormay, shifoxonaga olib bordi",
+    "B) Folbin chaqirib kinna soldirdi",
+    "C) O‘zi uyda dori berdi",
+    "D) Qo‘shni qishloqqa qochib ketdi"
+   ],
+   "answer": "A) Folbinga bormay, shifoxonaga olib bordi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Hoshimjon sehrli qalpoqchani oxurga qaytarib tashladi?",
+   "options": [
+    "A) Qalpoqcha unga baxt keltirmagani uchun",
+    "B) Qalpoqcha yirtilib ketgani uchun",
+    "C) Oyisi uni tashlab yuborgani uchun",
+    "D) Boshiga sig‘may qolgani uchun"
+   ],
+   "answer": "A) Qalpoqcha unga baxt keltirmagani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega qorilar Uzunquloq ota ziyoratgohini to‘qib chiqarishgan edi?",
+   "options": [
+    "A) Odamlardan pul va in’om olish uchun",
+    "B) Qishloqni obod qilish uchun",
+    "C) Toshlarni tozalash uchun",
+    "D) Lager qurish uchun"
+   ],
+   "answer": "A) Odamlardan pul va in’om olish uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Hoshimjonning firibgar qorilarning sirlarini ochgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — yolg‘onchilik fosh etilishi kerak",
+    "B) Noto‘g‘ri — kattalarga aralashmaslik kerak",
+    "C) To‘g‘ri — faqat o‘zi uchun qildi",
+    "D) Noto‘g‘ri — qorilar xafa bo‘ldi"
+   ],
+   "answer": "A) To‘g‘ri — yolg‘onchilik fosh etilishi kerak"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Uzunquloq ota qabri kovlangan sahna orqali nimani ko‘rsatgan?",
+   "options": [
+    "A) Aqidasizlik va xurofotning poydor emasligini",
+    "B) Qabristondagi toshlarning ko‘pligini",
+    "C) Eshaklarning qanchalik qadrliligini",
+    "D) Qorilarning juda kuchliligini"
+   ],
+   "answer": "A) Aqidasizlik va xurofotning poydor emasligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "6 \"B\" sinfiga kim yangi sinf rahbari bo‘lib keldi?",
+   "options": [
+    "A) Vohid Soliyevich",
+    "B) Otajon Azizovich",
+    "C) Sirojiddin aka",
+    "D) Abdushukurov amaki"
+   ],
+   "answer": "A) Vohid Soliyevich"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sinf majlisida o‘quvchilar Hoshimjon haqida qanday qarorga kelishdi?",
+   "options": [
+    "A) Maktabdan haydamay yordam berishga",
+    "B) Maktabdan biryo‘la haydashga",
+    "C) Boshqa qishloqqa yuborishga",
+    "D) Dadasiga jarima solishga"
+   ],
+   "answer": "A) Maktabdan haydamay yordam berishga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hoshimjon devoriy gazetaga qanday a’zo bo‘lib tayinlandi?",
+   "options": [
+    "A) Redkollegiya a’zosi",
+    "B) Bosh muharrir",
+    "C) Rassam",
+    "D) Fotosuratchi"
+   ],
+   "answer": "A) Redkollegiya a’zosi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hoshimjon sehrli qalpoqchasini kimga sovg‘a qilib berdi?",
+   "options": [
+    "A) Akromga",
+    "B) Orifga",
+    "C) Toshtemirga",
+    "D) Mirobiddinxo‘jaga"
+   ],
+   "answer": "A) Akromga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hoshimjon a’lochi bo‘lish uchun qanday bosqichlarni bosib o‘tdi?",
+   "options": [
+    "A) Dangasalikdan voz kechib qunt bilan o‘qidi",
+    "B) Yana sehrli qalpoqchani ishlatdi",
+    "C) Faqat dadasining aytganini qildi",
+    "D) Boshqa maktabga ko‘chib o‘tdi"
+   ],
+   "answer": "A) Dangasalikdan voz kechib qunt bilan o‘qidi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Hoshimjon sinf majlisida tantanali va’da berishdan bosh tortdi?",
+   "options": [
+    "A) Va’dalarining qadri qolmagani uchun",
+    "B) Sinfdoshlaridan qo‘rqqani uchun",
+    "C) O‘qishni xohlamagani uchun",
+    "D) O‘qituvchisiga jahli chiqqani uchun"
+   ],
+   "answer": "A) Va’dalarining qadri qolmagani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hoshimjon nega tekin lager yo‘llanmasi bilan mukofotlandi?",
+   "options": [
+    "A) O‘qishda katta natijaga erishgani uchun",
+    "B) Sehrli qalpoqchasi bo‘lgani uchun",
+    "C) Maktab direktori qarindoshi bo‘lgani uchun",
+    "D) Futbolda g‘olib bo‘lgani uchun"
+   ],
+   "answer": "A) O‘qishda katta natijaga erishgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sinfdoshlarining Hoshimjonni maktabdan haydamay qo‘llashi qanday fazilat?",
+   "options": [
+    "A) Haqiqiy do‘stlik va bag‘rikenglik",
+    "B) Mas’uliyatsizlik va loqaydlik",
+    "C) Qoidalarni buzish",
+    "D) Dangasalikni rag‘batlantirish"
+   ],
+   "answer": "A) Haqiqiy do‘stlik va bag‘rikenglik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Hoshimjonning o‘zgarishini qanday tuyg‘u bilan ko‘rsatadi?",
+   "options": [
+    "A) Quvonch va ishonch bilan",
+    "B) Afsus va qayg‘u bilan",
+    "C) Qahri va nafrati bilan",
+    "D) Bevafo va sovuq tilda"
+   ],
+   "answer": "A) Quvonch va ishonch bilan"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxiridagi lager manzarasi kitobxonda qanday taassurot qoldiradi?",
+   "options": [
+    "A) Yorqin, quvnoq va umidli",
+    "B) G‘amgin va zerikarli",
+    "C) Vahimali va qo‘rqinchli",
+    "D) Og‘ir va tushkun"
+   ],
+   "answer": "A) Yorqin, quvnoq va umidli"
+  }
+ ]
+}

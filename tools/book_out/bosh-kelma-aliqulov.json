@@ -1,0 +1,447 @@
+{
+ "title": "Bo‘sh kelma, Aliqulov!",
+ "author": "Farhod Musajonov",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "10-14 yosh",
+  "topics": [
+   "do‘stlik",
+   "o‘qish va mas’uliyat",
+   "oila va ota-ona",
+   "mehnatsevarlik",
+   "o‘z ustida ishlash"
+  ],
+  "theme": "Asar inson o‘ziga ishonsa, qunt va g‘ayrat qilsa, har qanday dangasalikni yengib, muvaffaqiyatga erishishi mumkinligini ko‘rsatadi.",
+  "summary": "Sanjar (Bo‘taloq) — samimiy, sofdil, lekin o‘qishga hafsalasiz, dangasaroq o‘quvchi. U ota-onasining alohida yashashi tufayli ichdan eziladi va ukasi Soliga g‘amxo‘rlik qiladi. Sinfdoshi Shoqayum uni doim turtkilaydi, lekin Sanjar unga xafa bo‘lmaydi. Maktabda temir-tersak yig‘ish musobaqasi bo‘lganda, Sanjar og‘ir mehnatda jonbozlik ko‘rsatadi. Ona tili o‘qituvchisi Nasiba opa uning ko‘nglini topishga, o‘qishga qiziqtirishga harakat qiladi. Sanjar Nasiba opasining o‘zi sababli pedsovetda dashnom eshitganini va maktabdan ketish xavfi borligini bilib, o‘zidagi hafsalasizlikni yengishga ahd qiladi. U tuni bilan qunt bilan dars tayyorlab, ona tili darsida a’lo javob beradi va \"besh\" baho oladi. O‘ziga bo‘lgan ishonchi ortgan Sanjar kelajakka umid bilan qaraydi.",
+  "characters": "Sanjar (Aliqulov/Bo‘taloq) — bosh qahramon, sofdil va mehribon, lekin hafsalasiz o‘quvchi; Soli (So) — Sanjarning beozor va kichik ukasi; Shoqayum (Shoqosimov) — a’lochi, tilga usta va maqtanchaq sinfdosh; Nasiba opa — bag‘rikeng, adolatli ona tili o‘qituvchisi; Oyisi — jahli tez, lekin farzandlarini yaxshi ko‘radigan ona.",
+  "conclusion": "Asar bolaga mas’uliyatli bo‘lish, xatolarini anglash va o‘z ustida ishlash qanchalik muhimligini o‘rgatadi. Bola halollik, mehnatsevarlik hamda ota-ona va ustozlar mehrini qadrlashni anglaydi.",
+  "difficulty": "o‘rta",
+  "mood": "quvnoq, samimiy, o‘ylantiruvchi",
+  "for_whom": "Maktab hayoti, do‘stlar munosabati haqida o‘qishni xohlaydigan, o‘ziga bo‘lgan ishonchni oshirishni istagan va samimiy hikoyalarni sevadigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sanjar ertalab balkonga chiqqanda havo qanday edi?",
+   "options": [
+    "A) Tip-tiniq va iliq edi",
+    "B) Qor yog‘ib sovuq edi",
+    "C) Kuchli shamol va yomg‘ir edi",
+    "D) Qalin tuman tushgan edi"
+   ],
+   "answer": "A) Tip-tiniq va iliq edi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sanjarning kichkina ukasining ismi kim edi?",
+   "options": [
+    "A) Sanjar",
+    "B) Soli",
+    "C) Shoqayum",
+    "D) Aliqul"
+   ],
+   "answer": "B) Soli"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sanjar sinfdoshlari orasida qanday laqab bilan tanilgan?",
+   "options": [
+    "A) Bo‘taloq",
+    "B) Bulbul",
+    "C) Polvon",
+    "D) Zumrasha"
+   ],
+   "answer": "A) Bo‘taloq"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Darsga kimlar kirishi sababli o‘qituvchi \"ikki\" qo‘ymadi?",
+   "options": [
+    "A) Maktab direktori",
+    "B) Ota-onalar",
+    "C) Komissiya a’zolari",
+    "D) Yangi o‘quvchilar"
+   ],
+   "answer": "C) Komissiya a’zolari"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ertalabki voqealarning to‘g‘ri ketma-ketligini ko‘rsating.",
+   "options": [
+    "A) Balkonga chiqdi, nonushtalandi, yo‘lga tushdi",
+    "B) Ukasini kuzatdi, balkonga chiqdi, o‘qidi",
+    "C) Nonushta qildi, kitob o‘qidi, uxladi",
+    "D) Darsga bordi, keyin uyga qaytdi"
+   ],
+   "answer": "A) Balkonga chiqdi, nonushtalandi, yo‘lga tushdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sanjar nega ukasini bog‘chadan doim vaqtida olardi?",
+   "options": [
+    "A) Oyisi urishgani uchun",
+    "B) Soli yolg‘iz qolishdan qo‘rqqani uchun",
+    "C) Bog‘cha ertaga yopilgani uchun",
+    "D) Shoqayum shuni iltimos qilgani uchun"
+   ],
+   "answer": "B) Soli yolg‘iz qolishdan qo‘rqqani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sanjar nega \"Bo‘taloq\" laqabidan xafa bo‘lmas edi?",
+   "options": [
+    "A) Tuyalarni yaxshi ko‘rgani uchun",
+    "B) Laqabni o‘zi o‘ylab topgani uchun",
+    "C) Buni eshitmay qolgani uchun",
+    "D) Hammani shunday chaqirishgani uchun"
+   ],
+   "answer": "A) Tuyalarni yaxshi ko‘rgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Nasiba opaning darsda Sanjarni kamsitmay muomala qilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — o‘quvchining izzat-nafsini xorlamadi",
+    "B) Noto‘g‘ri — qattiq urishishi kerak edi",
+    "C) To‘g‘ri — chunki u darsga kelmadi",
+    "D) Noto‘g‘ri — o‘quvchini sinfdan quvdi"
+   ],
+   "answer": "A) To‘g‘ri — o‘quvchining izzat-nafsini xorlamadi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Ashula darsida Sanjarning quvonchini qanday tasvirlaydi?",
+   "options": [
+    "A) San’at kishiga ma’naviy o‘zuqa beradi",
+    "B) O‘zimni juda yomon his qildim",
+    "C) Dars juda zerikarli o‘tdi",
+    "D) Ashula aytishni sira xohlamadim"
+   ],
+   "answer": "A) San’at kishiga ma’naviy o‘zuqa beradi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Nasiba opaning \"noshud o‘qituvchi nasihatga uradi\" g‘oyasi nimani ko‘rsatadi?",
+   "options": [
+    "A) O‘qituvchining donoligi va samimiyligini ko‘rsatadi",
+    "B) O‘qituvchining qattiqqol va jahldorligini bildiradi",
+    "C) Darsning bekorga o‘tganini ko‘rsatadi",
+    "D) Sanjarning jahli chiqqanini bildiradi"
+   ],
+   "answer": "A) O‘qituvchining donoligi va samimiyligini ko‘rsatadi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temir-tersak yig‘ishda bolalar ko‘chadan nima topib ko‘tarishdi?",
+   "options": [
+    "A) Og‘ir temir karavot",
+    "B) Eski velosiped ramasi",
+    "C) Katta temir bochka",
+    "D) Buzilgan poyezd relsi"
+   ],
+   "answer": "A) Og‘ir temir karavot"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sanjar otasi bilan do‘konga kirib ukasiga nima sotib oldi?",
+   "options": [
+    "A) Chiroyli va qimmatbaho tufli",
+    "B) Rangdor o‘yinchoq mashina",
+    "C) Qalin qishki kurtka",
+    "D) Yangi maktab papkasi"
+   ],
+   "answer": "A) Chiroyli va qimmatbaho tufli"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shoqayum yozuvchilar bilan uchrashuvda sahnada nima qildi?",
+   "options": [
+    "A) Keksa shoirning she’rini o‘qidi",
+    "B) Raqsga tushib berdi",
+    "C) Kulgili hikoya aytib berdi",
+    "D) Gitara chalib ashula aytdi"
+   ],
+   "answer": "A) Keksa shoirning she’rini o‘qidi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sanjar otasining kasbi haqida o‘qituvchisiga nima dedi?",
+   "options": [
+    "A) Trolleybus haydovchisi",
+    "B) Maktabda o‘qituvchi",
+    "C) Qurilishda muhandis",
+    "D) Shifoxonada shifokor"
+   ],
+   "answer": "A) Trolleybus haydovchisi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Temir-tersak yig‘ish guruhidagi vazifalarni to‘g‘ri guruhlang.",
+   "options": [
+    "A) Qizlar so‘raydi, bolalar tashiydi",
+    "B) Bolalar so‘raydi, qizlar tashiydi",
+    "C) Hamma faqat axlatxonalardan qidiradi",
+    "D) O‘qituvchi temirni o‘zi yig‘adi"
+   ],
+   "answer": "A) Qizlar so‘raydi, bolalar tashiydi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sanjarning otasi bilan uchrashgandagi ishlarini ketma-ket joylashtiring.",
+   "options": [
+    "A) Do‘konga kirishdi, kiyim tanlashdi, xayrlashishdi",
+    "B) Xayrlashishdi, ovqatlanishdi, trolleybusga chiqishdi",
+    "C) Soliga kiyim olishdi, uyga qaytishdi",
+    "D) Parkka borishdi, muzqaymoq deyishdi"
+   ],
+   "answer": "A) Do‘konga kirishdi, kiyim tanlashdi, xayrlashishdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sanjar nega eng arzon va odmi kostyumni tanladi?",
+   "options": [
+    "A) Otasining pulini ayagani uchun",
+    "B) Kiyim unga yoqmagani uchun",
+    "C) Sotuvchi shuni majbur qilgani uchun",
+    "D) Yupqa kiyimlarni yoqtirgani uchun"
+   ],
+   "answer": "A) Otasining pulini ayagani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Sanjar Shoqayumga tashnalikda limonad olib kelib berdi?",
+   "options": [
+    "A) Shoqayumning ijrosiga qoyil qolgani uchun",
+    "B) Shoqayum uni urishidan qo‘rqqani uchun",
+    "C) O‘zi ham limonad ichmoqchi bo‘lgani",
+    "D) O‘qituvchi shunga buyurgani uchun"
+   ],
+   "answer": "A) Shoqayumning ijrosiga qoyil qolgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ra’noning temir ko‘tarib charchagan Sanjarga dam berishi qanday xislat?",
+   "options": [
+    "A) O‘rtoqlik va mehribonlik xislati",
+    "B) Dangasalik va qo‘rqoqlik belgisi",
+    "C) Maqtanchoqlik va kerilish belgisi",
+    "D) O‘qituvchiga yoqish harakati"
+   ],
+   "answer": "A) O‘rtoqlik va mehribonlik xislati"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Ilinj bilan qilingan yaxshilik poraga o‘xshaydi\"da nimani ko‘rsatgan?",
+   "options": [
+    "A) Yaxshilik xolis bo‘lishi shartligini",
+    "B) Yaxshilik qilmaslik kerakligini",
+    "C) Hamma ish pul bilan bitishini",
+    "D) Inson faqat o‘zini o‘ylashini"
+   ],
+   "answer": "A) Yaxshilik xolis bo‘lishi shartligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sanjar dars tayyorlashdan oldin miyasini to‘plash uchun nechagacha sanadi?",
+   "options": [
+    "A) Oltmishgacha sanadi",
+    "B) O‘ngacha sanadi",
+    "C) Yuzgacha sanadi",
+    "D) O‘ttizgacha sanadi"
+   ],
+   "answer": "A) Oltmishgacha sanadi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sanjar ertalab maktab binosi oldidagi bolaga nima sovg‘a qildi?",
+   "options": [
+    "A) Futbol rasmli marka",
+    "B) Rangli qalamlar to‘plami",
+    "C) Shirin shokolad konfeta",
+    "D) Chiroyli va o‘tkir ruchka"
+   ],
+   "answer": "A) Futbol rasmli marka"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ona tili darsida Sanjar darsga javob berib qanday baho oldi?",
+   "options": [
+    "A) Rasmana \"besh\" baho",
+    "B) Oddiy \"to‘rt\" baho",
+    "C) Yana \"ikki\" baho",
+    "D) O‘rtacha \"uch\" baho"
+   ],
+   "answer": "A) Rasmana \"besh\" baho"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shoqayum Sanjarni uyga qaytayotganda qanday gap bilan ruhlantirdi?",
+   "options": [
+    "A) Bu yog‘iga bo‘sh kelma",
+    "B) Endi darsga umuman kelma",
+    "C) Menga bergan qarzingni qaytar",
+    "D) Yana \"ikki\" olib yurasan"
+   ],
+   "answer": "A) Bu yog‘iga bo‘sh kelma"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sanjarning o‘zgarish jarayonini to‘g‘ri tartibda ko‘rsating.",
+   "options": [
+    "A) Qaror qildi, o‘qidi, \"besh\" oldi",
+    "B) \"Besh\" oldi, keyin dars tayyorladi",
+    "C) Darsdan qochdi, uyda uxlayverdi",
+    "D) Ko‘chirdi, \"ikki\" oldi, yig‘ladi"
+   ],
+   "answer": "A) Qaror qildi, o‘qidi, \"besh\" oldi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sanjar nega birdaniga darsni berilib va qattiq kirishib tayyorladi?",
+   "options": [
+    "A) Nasiba opaga gap tegishidan qo‘rqib",
+    "B) Oyisi ko‘chaga haydagani uchun",
+    "C) Shoqayum kitobini tortib olgani uchun",
+    "D) Maktabdan quvilgani uchun"
+   ],
+   "answer": "A) Nasiba opaga gap tegishidan qo‘rqib"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Sanjar javob berayotganda Nasiba opa deraza tomonga qaradi?",
+   "options": [
+    "A) Sanjar hayajonlanib adashmasligi uchun",
+    "B) Tashqarida voqea bo‘layotgani uchun",
+    "C) Sanjarning javobini eshitgisi kelmagani",
+    "D) Dars tugashini kutayotgani uchun"
+   ],
+   "answer": "A) Sanjar hayajonlanib adashmasligi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sanjarning o‘z xatosini anglab, o‘z ustida ishlashi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — bu haqiqiy mardlik",
+    "B) Noto‘g‘ri — o‘qishning keragi yo‘q",
+    "C) To‘g‘ri — faqat maktab uchun",
+    "D) Noto‘g‘ri — maqtanish uchun xolos"
+   ],
+   "answer": "A) To‘g‘ri — bu haqiqiy mardlik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Onasining Sanjarning dars qilayotganini ko‘rib quvonishi qanday tuyg‘u?",
+   "options": [
+    "A) Farzandiga bo‘lgan cheksiz ona mehri",
+    "B) Faqat baho uchun qayg‘urish tuyg‘usi",
+    "C) Jahli chiqqanini ko‘rsatish holati",
+    "D) Sanjardan norozilik alomati"
+   ],
+   "answer": "A) Farzandiga bo‘lgan cheksiz ona mehri"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Nasiba opaning \"bo‘sh kelma, Aliqulov!\" deyishi qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Ishonch va kelajakka umid",
+    "B) Qo‘rquv va xavotir hissi",
+    "C) Taassuf va g‘amginlik kayfiyati",
+    "D) Befarq va loqayd munosabat"
+   ],
+   "answer": "A) Ishonch va kelajakka umid"
+  }
+ ]
+}

@@ -1,0 +1,287 @@
+{
+ "title": "Motsart",
+ "author": "Navro‘z Ergash o‘g‘li",
+ "genre": "tragediya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "hasad",
+   "san‘at",
+   "iste‘dod",
+   "do‘stlik va xiyonat",
+   "halollik"
+  ],
+  "theme": "Asar haqiqiy iste‘dod Tangri in‘omi ekanini, qora hasad va xiyonat esa inson ruhiyatini yemirib, tuban jinoyatga olib kelishini ko‘rsatadi.",
+  "summary": "Bastakor Salyeri yoshligidan zahmat chekib, musiqa san‘atini qunt bilan egallaydi va shon-shuhratga erishadi. Biroq u yosh va begʻubor daho Motsartning ilohiy iste‘dodiga guvoh bo‘lgach, qalbidan shafqatsiz hasad o‘rin oladi. Salyeri Motsartning samimiyligi va yuksak iqtidorini ko‘rolmay, uni san‘at kelajagiga tahdid deb biladi. U Motsartni «Oltin arslon» qovoqxonasiga taklif qiladi. Motsart unga o‘zining sirli qora kiyimdagi kishi buyurtma qilgan «Rekviyem» asari haqida va o‘lim sezgisi haqida so‘zlab beradi. Salyeri bildirib o‘zi bilan yurgan zaharni Motsartning qadahiga soladi. Motsart sharobni ichib, fortepianoda kuy chaladi va tobi qochib uyiga yo‘l oladi. Salyeri esa o‘z qilmishidan so‘ng daho va jinoyat birga yashay olmasligi haqida o‘yga toladi.",
+  "characters": "Salyeri — mehnatkash, lekin ichki hasadga to‘la bastakor. Motsart — sho‘x, beg‘ubor, Tangri in‘om etgan daho bastakor. Qora kiyimdagi odam — Motsartga Rekviyem buyurtma qilgan sirli shaxs.",
+  "conclusion": "Bu asar kitobxonga insoniy poklik va samimiyat har qanday qunt-matonatdan ustun turishini o‘rgatadi. Hasad va kibr kishini tubanlikka boshlashini ko‘rsatib, halollik hamda haqiqiy san‘atni qadrlashga chorlaydi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Musiqa, falsafa va inson ruhiyati haqidagi dramatik asarlarga qiziqadigan o‘smirlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Salyeri yoshligida cherkovda qaysi soz sadosini eshitib ta‘sirlanardi?",
+   "options": [
+    "A) Arg‘anun sadosini",
+    "B) G‘ijjak sadosini",
+    "C) Nay sadosini"
+   ],
+   "answer": "A) Arg‘anun sadosini"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Motsart o‘zi bilan birga Salyerinikiga kimni yetaklab keldi?",
+   "options": [
+    "A) Qora kiyimdagi odamni",
+    "B) Ko‘r va keksa g‘ijjakchini",
+    "C) Fransuz dramaturgi Bomarsheni"
+   ],
+   "answer": "B) Ko‘r va keksa g‘ijjakchini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Salyeri o‘z ijodiy yo‘lida qanday bosqichlarni bosib o‘tdi?",
+   "options": [
+    "A) Mehnat qildi, keyin zahar tayyorladi",
+    "B) Hunarni egalladi, so‘ng ijod qildi",
+    "C) Rasmlar chizdi, keyin organ chaldi"
+   ],
+   "answer": "B) Hunarni egalladi, so‘ng ijod qildi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Salyeri nega ko‘r g‘ijjakchining chalgan kuyiga kulmadi?",
+   "options": [
+    "A) Charchagani va uyqusi kelgani uchun",
+    "B) Buyuk san‘atning masxara bo‘lishidan og‘rindi",
+    "C) G‘ijjakchini umuman yoqtirmagani uchun"
+   ],
+   "answer": "B) Buyuk san‘atning masxara bo‘lishidan og‘rindi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Salyeri Motsartning iste‘dodiga nisbatan qanday tuyg‘uni his etdi?",
+   "options": [
+    "A) Ulug‘vor havas va quvonch",
+    "B) Chuqur va iztirobli hasad",
+    "C) Umuman beparvolik va loqaydlik"
+   ],
+   "answer": "B) Chuqur va iztirobli hasad"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Motsartning ko‘r sozandaga pul berib xursand qilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, bu mehribonlik va saxovat",
+    "B) Noto‘g‘ri, pul berish shart emasdi",
+    "C) Noto‘g‘ri, u yaxshi chalmadi"
+   ],
+   "answer": "A) To‘g‘ri, bu mehribonlik va saxovat"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Salyeri Motsart yaratgan musiqani qanday baholaydi?",
+   "options": [
+    "A) Chuqur, jur‘atli va ixcham",
+    "B) Quruq, zerikarli va uzun",
+    "C) Soddaligi yo‘q va tushunarsiz"
+   ],
+   "answer": "A) Chuqur, jur‘atli va ixcham"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Salyeri yonida necha yil davomida zaharni saqlab yurgan edi?",
+   "options": [
+    "A) O‘n sakkiz yil",
+    "B) Besh yil",
+    "C) O‘n yil"
+   ],
+   "answer": "A) O‘n sakkiz yil"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Motsart va Salyeri tushlik qilish uchun qayerga borishdi?",
+   "options": [
+    "A) \"Oltin arslon\" qovoqxonasiga",
+    "B) Qirol saroyiga",
+    "C) Shahar maydoniga"
+   ],
+   "answer": "A) \"Oltin arslon\" qovoqxonasiga"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Salyeriga zaharni kim sovg‘a qilgan edi?",
+   "options": [
+    "A) Bomarshe ismli do‘sti",
+    "B) Izora ismli ayol",
+    "C) Qora kiyimdagi kishi"
+   ],
+   "answer": "B) Izora ismli ayol"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Salyeri zahardan foydalanish qaroriga qanday keldi?",
+   "options": [
+    "A) Shon-shuhratga erishgach darhol zahar aralashtirdi",
+    "B) Uzoq sabrdan so‘ng Motsartni raqib bildi",
+    "C) Zaharni tasodifan sharobga to‘kib yubordi"
+   ],
+   "answer": "B) Uzoq sabrdan so‘ng Motsartni raqib bildi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Salyeri nega Motsartni musiqadan yo‘qotish kerak deb hisobladi?",
+   "options": [
+    "A) Motsart boshqa bastakorlarga imkon bermaydi deb",
+    "B) Motsartning qarzi o‘ta ko‘payib ketgani uchun",
+    "C) Motsart Venadan ketmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Motsart boshqa bastakorlarga imkon bermaydi deb"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Motsart nega avval uyiga borishga ruxsat so‘radi?",
+   "options": [
+    "A) Xotinini ogoh qilib qo‘yish uchun",
+    "B) Yangi musiqa asbobini olish uchun",
+    "C) Ko‘r g‘ijjakchi bilan ko‘rishish uchun"
+   ],
+   "answer": "A) Xotinini ogoh qilib qo‘yish uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Salyerining «Dohiylikka badkirdorlik sig‘maydi» degan iborasida qanday ma‘no bor?",
+   "options": [
+    "A) Haqiqiy daho hech qachon yovuzlik qilmaydi",
+    "B) Har bir daho yovuz bo‘lishi shart",
+    "C) San‘atkorlar doim jinoyatga qo‘l uradi"
+   ],
+   "answer": "A) Haqiqiy daho hech qachon yovuzlik qilmaydi"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Motsartga «Rekviyem» yozishni kim buyurtma qilgan edi?",
+   "options": [
+    "A) Qora libosli sirli odam",
+    "B) Cherkov rohibi",
+    "C) Salyerining o‘zi"
+   ],
+   "answer": "A) Qora libosli sirli odam"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Motsart «Rekviyem» ustida taxminan qancha vaqt ishlagan edi?",
+   "options": [
+    "A) Uch haftacha",
+    "B) Bir yilcha",
+    "C) Ikki kuncha"
+   ],
+   "answer": "A) Uch haftacha"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Salyeri Motsartga ko‘ngli buzilganda nimani taklif qildi?",
+   "options": [
+    "A) Fortepianoda kuy chalib berishni",
+    "B) Qovoqxonadan chiqib ketishni",
+    "C) Uydagilarga xat yozishni"
+   ],
+   "answer": "A) Fortepianoda kuy chalib berishni"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Motsartning Rekviyem haqidagi kechinmalari qanday ketma-ketlikda bo‘ldi?",
+   "options": [
+    "A) Buyurtma oldi, yozdi, vahimaga tushdi",
+    "B) Vahimaga tushdi, keyin buyurtma oldi",
+    "C) Avval ijro etdi, so‘ng yozdi"
+   ],
+   "answer": "A) Buyurtma oldi, yozdi, vahimaga tushdi"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Motsart qora kiyimdagi odam haqida nima uchun tashvishlanardi?",
+   "options": [
+    "A) U o‘zining o‘limini oldindan sezayotgandi",
+    "B) Buyurtma pulini ololmagani uchun",
+    "C) U odam asarni yoqtirmaydi deb"
+   ],
+   "answer": "A) U o‘zining o‘limini oldindan sezayotgandi"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Salyerining Motsartga zahar berishi qanday qilmish?",
+   "options": [
+    "A) Tuban xiyonat va og‘ir jinoyat",
+    "B) San‘atni qutqaruvchi to‘g‘ri ish",
+    "C) Odatiy va ahamiyatsiz voqea"
+   ],
+   "answer": "A) Tuban xiyonat va og‘ir jinoyat"
+  }
+ ]
+}

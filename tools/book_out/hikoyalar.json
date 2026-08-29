@@ -1,0 +1,28 @@
+{
+ "title": "Hikoyalar",
+ "author": "Jek London",
+ "genre": "toʻplam",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "sabot va matonat",
+   "va'daga vafo",
+   "do‘stlik",
+   "mas'uliyat",
+   "halollik"
+  ],
+  "theme": "Muallif har qanday og‘ir sharoitda ham berilgan va'daga vafo qilish, burchga sodiqlik va hayot sinovlarida sabr-matonat ko‘rsatish insoniy burch ekanini ta'kidlaydi.",
+  "summary": "To‘plamga kirgan hikoyalarda qiyin sinovlarga duch kelgan insonlar qismati tasvirlanadi. \"Ishonch\" hikoyasida Cherchill do‘stining omonatini yetkazish uchun izg‘irin sovuqda o‘z hayotini xavfga qo‘yadi. \"Bir parcha go‘sht\"da esa keksa bokschi Tom King oilasini boqish ilinjida yosh va kuchli raqibiga qarshi sabr bilan olishadi. Asarlarda Shimolning shafqatsiz tabiati, do‘stga yordam berish, mas'uliyat va qiyinchiliklar oldida yengilmaslik g‘oyasi ilgari suriladi.",
+  "characters": "Fred Cherchill — do‘stining omonati uchun har qanday qiyinchilikka chidagan jasur yigit; Tom King — oilasini tebratish uchun oxirgi kuchigacha jang qilgan keksa bokschi; Antonsen — Cherchillning matonatli hamrohi.",
+  "conclusion": "Kitob bolani o‘z so‘zida turishga, zimmasidagi mas'uliyatni oxirigacha yetkazishga hamda qiyinchiliklar qarshisida tushkunlikka tushmaslikka o‘rgatadi. Oila farovonligi va do‘stlar ishonchi uchun halol mehnat qilish tuyg‘usini mustahkamlaydi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Matonatli insonlar haqida o‘qishni xohlaydigan, do‘stlik, va'da va mas'uliyat qadrini anglashni istagan o‘smirlar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Cherchill do‘stining omonatini o‘z vaqtida yetkazish uchun sovuq va charchoqqa qaramay bor kuchini berdi. Seningcha, berilgan va'daga vafo qilish va ishonchni oqlash nega muhim? O‘zing ham do‘sting yoki yaqinlaring oldidagi mas'uliyatni bajarish uchun qiyinchilikni yengganing haqida so‘zlab ber."
+}

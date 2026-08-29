@@ -1,0 +1,417 @@
+{
+ "title": "Quyonlar saltanati",
+ "author": "Xudoyberdi To‘xtaboyev",
+ "genre": "roman",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-13",
+  "topics": [
+   "do‘stlik",
+   "mehnatsevarlik",
+   "tadbirkorlik",
+   "halollik",
+   "oila"
+  ],
+  "theme": "Halol mehnat, do‘stlik va ezgu niyat insonni har qanday qiyinchilikdan olib chiqadi, adolat va mehr har doim g‘alaba qozonadi.",
+  "summary": "Xonkeldi qishlog‘ida yashovchi shiddatli Egamberdi va bosiq Karimberdi maktab va qishloq hayotida turli sarguzashtlarni boshdan kechirishadi. Quyon boqishga qiziqqan ikki do‘st nohaq ayblanib maktabdan chetlashtirilgach, ozodlikda o‘z fermalarini tashkil etishga kirishadi. Ular Eshonbog‘da yashaydigan Eshon aya yordamida qadimiy tillo xazinani topib, savdo-sotiq va quyonchilik orqali katta muvaffaqiyatga erishadilar. Ular otalariga traktor, onalariga xotira marmari o‘rnatish niyatlarini amalga oshirishadi. Asar oxirida adolatsiz fotiha va to‘ylarga barham berilib, Egamberdi Fotimaga, Karimberdi esa Zuhroga uylanadi va qishloqda katta qo‘sha to‘y bo‘lib o‘tadi.",
+  "characters": "Egamberdi — epchil, tirishqoq, quyonboz va matonatli o‘smir; Karimberdi — uning sodiq do‘sti, bosiq, duogo‘y yigit; Eshon aya — ma’naviy suyanch bo‘lgan duogo‘y onaxon; Fotima — Egamberdining sadoqatli sevgilisi; Siroj brigadir — Karimberdining qattiqqo‘l, tartibli otasi; Azizov domla — maktabning talabchan direktori.",
+  "conclusion": "Ushbu asar bolalarni mehnatsevarlikka, do‘stlikka sadoqatli bo‘lishga va qiyinchiliklar qarshisida tushkunlikka tushmaslikka o‘rgatadi. Ota-onalar va kattalarga hurmat, halol rizq va ezgu niyat insonni ulug‘lashi haqqoniy voqealar orqali ko‘rsatib berilgan.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, quvnoq, saboq beruvchi",
+  "for_whom": "Sarguzashtli voqealarni, mehnatsevarlik va do‘stlik sadoqati haqida o‘qishni xush ko‘radigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qishloqning ikkita nomi qaysilar edi?",
+   "options": [
+    "A) Xonkeldi va Qo‘rg‘oncha",
+    "B) Toshbuloq va Oltinsoy",
+    "C) Soykeldi va Bog‘ishamol"
+   ],
+   "answer": "A) Xonkeldi va Qo‘rg‘oncha"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maktab direktori yarmarkaga kimlarni yubormadi?",
+   "options": [
+    "A) Fotima va Zuhroni",
+    "B) Egamberdi va Karimberdini",
+    "C) Shokir va G‘ulomni"
+   ],
+   "answer": "B) Egamberdi va Karimberdini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Egamberdining hayotidagi voqealar ketma-ketligi qaysi?",
+   "options": [
+    "A) Onasidan ayrildi, o‘gay ona keldi",
+    "B) Quyonboz bo‘ldi, onasi vafot etdi",
+    "C) Sirkda ishladi, maktabni bitirdi"
+   ],
+   "answer": "A) Onasidan ayrildi, o‘gay ona keldi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Egamberdi va Karimberdi darsdan qanday qochishdi?",
+   "options": [
+    "A) Qornimiz og‘ridi deyishdi",
+    "B) Jo‘rttaga mushtlashishdi",
+    "C) Derazadan sakrab qochishdi"
+   ],
+   "answer": "B) Jo‘rttaga mushtlashishdi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Karimberdi nega Egamberdini «akam» deydi?",
+   "options": [
+    "A) Undan uch yosh katta bo‘lgani uchun",
+    "B) To‘rt soat avval tug‘ilgani uchun",
+    "C) U aqlroq va epchilroq bo‘lgani uchun"
+   ],
+   "answer": "B) To‘rt soat avval tug‘ilgani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Geografiya darsida muallim qaysi hudud haqida gapirdi?",
+   "options": [
+    "A) Sahara cho‘li haqida",
+    "B) Sibir o‘rmonlari haqida",
+    "C) Tayvan oroli haqida"
+   ],
+   "answer": "B) Sibir o‘rmonlari haqida"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Azizov domla nega ikkala bolaga qattiq tegishdi?",
+   "options": [
+    "A) Intizomsizlik va sho‘xlik qilgani uchun",
+    "B) Darsga umuman kelmagani uchun",
+    "C) A’lochi bo‘la olmagani uchun"
+   ],
+   "answer": "A) Intizomsizlik va sho‘xlik qilgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bolalarning darsdan qochish uchun mushtlashgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, niyatlariga yetishdi",
+    "B) Noto‘g‘ri, yolg‘onchilik va intizomsizlikdir",
+    "C) To‘g‘ri, o‘qituvchi payqamadi"
+   ],
+   "answer": "B) Noto‘g‘ri, yolg‘onchilik va intizomsizlikdir"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Karimberdining oilasi haqida qaysi ma’lumot to‘g‘ri?",
+   "options": [
+    "A) Otasi brigadir, akasi Sobirjon",
+    "B) Otasi shifokor, onasi yo‘q",
+    "C) Otasi sotuvchi, ukasi yo‘q"
+   ],
+   "answer": "A) Otasi brigadir, akasi Sobirjon"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif urushni «don talashgan jo‘jaxo‘rozdek» deb nimani tasvirlagan?",
+   "options": [
+    "A) Bolalarning sho‘x va samimiy holatini",
+    "B) Bolalarning juda shafqatsizligini",
+    "C) Tovuqlarning katakdagi hayotini"
+   ],
+   "answer": "A) Bolalarning sho‘x va samimiy holatini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karimberdi akasidan velosipedni qanday oldi?",
+   "options": [
+    "A) Sotib oldi",
+    "B) Siringni aytaman deb oldi",
+    "C) Bildirmay o‘g‘irlab ketdi"
+   ],
+   "answer": "B) Siringni aytaman deb oldi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalar quyonchilik fermasini qayerda ochishdi?",
+   "options": [
+    "A) Maktab hovlisida",
+    "B) Eshonbog‘da",
+    "C) Tuman markazida"
+   ],
+   "answer": "B) Eshonbog‘da"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zabihilla zargar bolalardan nimani sotib oldi?",
+   "options": [
+    "A) Zotli quyonni",
+    "B) Qadimiy tillo tangani",
+    "C) Yap-yangi velosipedni"
+   ],
+   "answer": "B) Qadimiy tillo tangani"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolalar Eshonbog‘da qilgan ishlar ketma-ketligi qaysi?",
+   "options": [
+    "A) Bog‘ga keldi, tillo topdi, ferma ochdi",
+    "B) Ferma yopildi, sotuvga chiqdi, qochdi",
+    "C) Uy qurdi, maktabga qaytdi, pul tarqatdi"
+   ],
+   "answer": "A) Bog‘ga keldi, tillo topdi, ferma ochdi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Siroj brigadir o‘g‘lini nega ustunga bog‘lardi?",
+   "options": [
+    "A) Yomon ko‘organi uchun",
+    "B) Qattiqqo‘llik bilan tarbiyalash uchun",
+    "C) Uydan qochmasligi uchun"
+   ],
+   "answer": "B) Qattiqqo‘llik bilan tarbiyalash uchun"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uchastkovoy bolalarni qamaganda kim ovqat keltirdi?",
+   "options": [
+    "A) Shakarxon aya",
+    "B) Fotima va Zuhro",
+    "C) Azizov domla"
+   ],
+   "answer": "B) Fotima va Zuhro"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Karimberdi qiyin ahvolda qolganda nima qilardi?",
+   "options": [
+    "A) Qichqirib yig‘lardi",
+    "B) Ichida duolar o‘qirdi",
+    "C) Hammaga musht otardi"
+   ],
+   "answer": "B) Ichida duolar o‘qirdi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Siroj brigadirning tarbiya usulini qanday baholash mumkin?",
+   "options": [
+    "A) Zamonaviy va ideal usul",
+    "B) Qattiq, lekin niyati halol tarbiya",
+    "C) Bolalarga nisbatan loqaydlik"
+   ],
+   "answer": "B) Qattiq, lekin niyati halol tarbiya"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Egamberdi va Karimberdining matonati haqida ne deysan?",
+   "options": [
+    "A) Sabrsiz va darrov taslim bo‘lishadi",
+    "B) Qiyinchiliklarga qaramay intiluvchan",
+    "C) Faqat manfaatchi bolalar"
+   ],
+   "answer": "B) Qiyinchiliklarga qaramay intiluvchan"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Shaldirab oqgan suv oq yo‘l tilardi» tasvirining ma’nosi nima?",
+   "options": [
+    "A) Tabiat va bolalar quvonchi uyg‘unligi",
+    "B) Suvning juda baland oqishi",
+    "C) Soy bo‘yida xavf borligi"
+   ],
+   "answer": "A) Tabiat va bolalar quvonchi uyg‘unligi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Egamberdi kimoshdi savdosida o‘rikzorni qanchaga oldi?",
+   "options": [
+    "A) 3 million so‘mga",
+    "B) 5 million so‘mga",
+    "C) 6 million so‘mga"
+   ],
+   "answer": "C) 6 million so‘mga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tursunali qassob Fotimani kimga erga bermoqchi bo‘ldi?",
+   "options": [
+    "A) G‘ulomjonga",
+    "B) Karimberdiga",
+    "C) Leytenantga"
+   ],
+   "answer": "A) G‘ulomjonga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Fotima majburiy to‘ydan qochib kimning oldiga bordi?",
+   "options": [
+    "A) Maktab direktorining",
+    "B) Eshon ayaning",
+    "C) Zabihilla zargarning"
+   ],
+   "answer": "B) Eshon ayaning"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar oxiridagi voqealar tartibi qaysi ko‘rinishda?",
+   "options": [
+    "A) Shifoxona, to‘y to‘xtashi, qo‘sha to‘y",
+    "B) Qassob qamalishi, ferma yopilishi, qochish",
+    "C) Quyonlar o‘lishi, maktab yonishi, to‘y"
+   ],
+   "answer": "A) Shifoxona, to‘y to‘xtashi, qo‘sha to‘y"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Tursunali qassobga jinoiy ish qo‘zg‘atildi?",
+   "options": [
+    "A) Qizini majburlab erga berayotgani uchun",
+    "B) Go‘shtni qimmat sotgani uchun",
+    "C) Maktabga tosh otgani uchun"
+   ],
+   "answer": "A) Qizini majburlab erga berayotgani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Asar oxirida qaysi juftliklarning to‘yi bo‘ldi?",
+   "options": [
+    "A) Egam-Fotima va Karim-Zuhro",
+    "B) Egam-Zuhro va Karim-Fotima",
+    "C) G‘ulom-Fotima va Egam-Zuhro"
+   ],
+   "answer": "A) Egam-Fotima va Karim-Zuhro"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Eshon aya nega bolalarni o‘z o‘g‘lidek ko‘rdi?",
+   "options": [
+    "A) Ularning niyati xolis va mehnatsevarligi uchun",
+    "B) Ular juda ko‘p pul bergani uchun",
+    "C) Ular qishloqdan ko‘chib ketgani uchun"
+   ],
+   "answer": "A) Ularning niyati xolis va mehnatsevarligi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Fotimaning o‘z baxti uchun intilishini qanday baholaysan?",
+   "options": [
+    "A) Kattalarga asossiz qarshi chiqish",
+    "B) Haq-huquqi va baxti uchun oqilona intilish",
+    "C) Behuda harakat"
+   ],
+   "answer": "B) Haq-huquqi va baxti uchun oqilona intilish"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Osmondan ilohiy nurlar yog‘ilgandek bo‘ldi» nimani ifodalaydi?",
+   "options": [
+    "A) To‘ydagi cheksiz fayz va baxt-saodatni",
+    "B) To‘yxonadagi chiroqlar yorug‘ligini",
+    "C) Kutilmaganda ob-havo yorishganini"
+   ],
+   "answer": "A) To‘ydagi cheksiz fayz va baxt-saodatni"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida mehmonlarga quyon ulashilishi nimadan dalolat?",
+   "options": [
+    "A) Quyonchilik va ezgulik an’anaga aylanganidan",
+    "B) Quyonlar ko‘payib xalaqit berganidan",
+    "C) Mehmonlarni tezroq kuzatish niyatidan"
+   ],
+   "answer": "A) Quyonchilik va ezgulik an’anaga aylanganidan"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "title": "Jo‘janing hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "6-9",
+  "topics": [
+   "oila",
+   "jonivorlar",
+   "dunyoqarash",
+   "kulgili hikoya",
+   "bag‘rikenglik"
+  ],
+  "theme": "Atrofimizdagi har bir jonzotning o‘ziga xos tabiati bor va dunyoni anglash bag‘rikenglik hamda qiziquvchanlikni talab qiladi.",
+  "summary": "Tuxumdan yangi chiqqan jo‘ja o‘z oilasi — tovuq-onasi, mag‘rur xo‘roz-otasi va ukalari haqida so‘zlab beradi. Oxirgi yettinchi tuxumdan ularga o‘xshamaydigan yapaloq tumshug‘li o‘rdakcha chiqadi. U birdaniga suv to‘la tog‘oraga sakrab suza boshlaydi. Xo‘roz va boshqa jo‘jalar uni tushunmay ajablanishadi. Hikoyachi jo‘ja esa o‘quvchiga murojaat qilib, o‘rdak o‘zi nima ekanini so‘raydi.",
+  "characters": "Bosh qahramon jo‘ja — dunyoni endi kashf etayotgan, qiziquvchan va quvnoq jo‘ja;\nOna tovuq — bolalari uchun qayg‘uradigan va ularni parvarish qiladigan ona;\nOta xo‘roz — mag‘rur va tartibni yaxshi ko‘radigan ota;\nKenjatoy o‘rdakcha — tuxumdan chiqishi bilan suvga talpingan sho‘x qushcha.",
+  "conclusion": "Hikoya bolaga atrofimizdagi mavjudotlarning va insonlarning xilma-xil bo‘lishi tabiiy holat ekanini tushuntiradi. Bola o‘zidan farq qiladigan boshqa insonlar va jonivorlarga hurmat bilan qarashni hamda atrof-muhitni sinchkovlik bilan kuzatishni o‘rganadi. Samimiy va kulgili mutolaa orqali kitobga bo‘lgan mehra oshadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, yengil",
+  "for_whom": "Jonivorlar haqidagi kulgili voqealarni yaxshi ko‘radigan, dunyoni kashf etishga va yangi narsalarni o‘rganishga qiziqadigan boshlang‘ich sinf o‘quvchilari uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Hikoyadagi jo‘ja o‘ziga o‘xshamaydigan o‘rdakchani ko‘rib juda ajablandi. Sen ham o‘zingga yoki do‘stlaringga o‘xshamaydigan, boshqacha odatlari bor insonni uchratganmisan? O‘zingdan farq qiladigan kishilar bilan qanday do‘stlashish va ularga qanday muomala qilish kerak deb o‘ylaysan?"
+}

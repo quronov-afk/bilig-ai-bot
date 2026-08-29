@@ -1,0 +1,417 @@
+{
+ "title": "Robinzonlar maktabi",
+ "author": "Jyul Vern",
+ "genre": "roman",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "sarguzasht",
+   "sabot-matonat",
+   "do‘stlik",
+   "orol",
+   "tarbiya"
+  ],
+  "theme": "Ota-onaning oqilona tarbiyasi va hayotiy sinovlar insonni pishitishi, qiyinchiliklar oldida taslim bo‘lmaslik va do‘stlikning qadri.",
+  "summary": "San-Fransiskolik millioner Uilyam Kolderup auksionda Spenser orolini sotib oladi. Uning jiyani Godfri to‘y oldidan dunyo bo‘ylab sayohatga chiqishni xohlaydi. Tog‘asi unga raqs muallimi Tartelett hamrohligida «Drim» kemasida suzishga ruxsat beradi. Kema soxta halokatga uchrab, Godfri va Tartelett kimsasiz orolga tushib qolishadi. Ular u yerda sekvoyya kovagidan boshpana hozirlashadi, yashin tufayli olov yoqishadi va qora tanli Karefinotuni qutqarib olishadi. Bir qancha vaqt o‘tib, orolda yirtqich hayvonlar paydo bo‘ladi va hayot xavf ostida qoladi. So‘ngra Uilyam Kolderup va kema ekipaji yetib keladi. Ma'lum bo‘lishicha, kema halokati va oroldagi soxta sinovlar tog‘aning jiyaniga hayot sabog‘ini berish uchun uyushtirilgan ssenariy edi. Biroq haqiqiy yirtqichlarni Kolderupning raqibi Taskinar qasos sifatida yuborgan bo‘lib chiqadi. Yakunda Godfri va Fina San-Fransiskoda to‘y qilishadi.",
+  "characters": "Godfri Morgan — erkalanib o‘sgan, sarguzashtsevar yigit; Uilyam Kolderup — uning tadbirkor va dono tog‘asi; Tartelett — qat'iy va noshud raqs muallimi; Fina — Godfrining vafodor qallig‘i; Taskinar — Kolderupga hasad qiluvchi boyvachcha; Karefinotu (Jip Brass) — Kolderupning sodiq mulozimi.",
+  "conclusion": "Ushbu asar farzandingizga hayotiy qiyinchiliklarga qarshi matonat bilan kurashish, noshudlik va kaltabinlikdan yiroq bo‘lish hamda ota-ona va kattalarning maslahatlariga quloq tutish muhimligini o‘rgatadi. Sarguzashtlarga boy voqealar bolaning tasavvurini boyitadi va mas'uliyat hissini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, quvnoq, maroqli",
+  "for_whom": "Sarguzashtli va xilvat orollar haqidagi kitoblarni xush ko‘radigan, qahramonlar bilan birga qiyinchiliklarni yengishni xohlaydigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Auksionda qaysi orol sotuvga qo‘yilgan edi?",
+   "options": [
+    "A) Spenser oroli",
+    "B) Maldiv oroli",
+    "C) Gayana oroli"
+   ],
+   "answer": "A) Spenser oroli"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Spenser orolini Kolderup qanchaga sotib oldi?",
+   "options": [
+    "A) Bir million dollarga",
+    "B) Uch million dollarga",
+    "C) Besh million dollarga"
+   ],
+   "answer": "B) Uch million dollarga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kolderup bilan auksionda kim raqobatlashdi?",
+   "options": [
+    "A) Tyurkot",
+    "B) Taskinar",
+    "C) Tartelett"
+   ],
+   "answer": "B) Taskinar"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kema tryumida kim yashirinib olgan edi?",
+   "options": [
+    "A) Xitoylik Seng-Vu",
+    "B) Yaponiyalik dengizchi",
+    "C) Fransuz oshpazi"
+   ],
+   "answer": "A) Xitoylik Seng-Vu"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Voqealar dastlab qaysi tartibda sodir bo‘ldi?",
+   "options": [
+    "A) Auksion, shartnoma, kemada suzish",
+    "B) Suzish, auksion, to‘y",
+    "C) To‘y, suzish, auksion"
+   ],
+   "answer": "A) Auksion, shartnoma, kemada suzish"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Godfri to‘ydan oldin nega sayohatga chiqmoqchi bo‘ldi?",
+   "options": [
+    "A) Dunyo ko‘rib, tajriba orttirish uchun",
+    "B) Orol sotib olish uchun",
+    "C) Qallig‘idan qochish uchun"
+   ],
+   "answer": "A) Dunyo ko‘rib, tajriba orttirish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Taskinar nega Kolderup bilan oxirigacha savdolashdi?",
+   "options": [
+    "A) Orol juda kerakligi uchun",
+    "B) Kolderupga hasad qilgani uchun",
+    "C) Davlat topshirig‘i bo‘lgani uchun"
+   ],
+   "answer": "B) Kolderupga hasad qilgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kolderupning jiyaniga sayohat uchun kema ajratishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, unga imkoniyat berdi",
+    "B) Noto‘g‘ri, uni xavfga qo‘ydi",
+    "C) Noto‘g‘ri, pulini tejashi kerakdi"
+   ],
+   "answer": "A) To‘g‘ri, unga imkoniyat berdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Finaning Godfrini kutishga rozi bo‘lishi qanday sifat?",
+   "options": [
+    "A) Sadoqat va sabr",
+    "B) Qo‘rqoqlik va ikkilanish",
+    "C) Loqaydlik va beparvolik"
+   ],
+   "answer": "A) Sadoqat va sabr"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Kolderupni kapitan ko‘rinishida tasvirlab nimani ko‘rsatgan?",
+   "options": [
+    "A) Uning qat‘iyati va matonatini",
+    "B) Uning dengizda tug‘ilganini",
+    "C) Uning juda qariyligini"
+   ],
+   "answer": "A) Uning qat‘iyati va matonatini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Godfri bilan orolda kim birga qoldi?",
+   "options": [
+    "A) Raqs muallimi Tartelett",
+    "B) Kapitan Tyurkot",
+    "C) Savdogar Taskinar"
+   ],
+   "answer": "A) Raqs muallimi Tartelett"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Boshpana bo‘lgan ulkan sekvoyyaga qanday nom berildi?",
+   "options": [
+    "A) Viltri",
+    "B) Spenser",
+    "C) Drim"
+   ],
+   "answer": "A) Viltri"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Orolga tushgan sayyohlarga olov hosil qilishda nima yordam berdi?",
+   "options": [
+    "A) Momaqaldiroqdagi yashin",
+    "B) Gugurt qutisi",
+    "C) Qaynoq geyzer"
+   ],
+   "answer": "A) Momaqaldiroqdagi yashin"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Godfri qutqarib qolgan qora tanli kishining ismi nima edi?",
+   "options": [
+    "A) Karefinotu",
+    "B) Jumavoy",
+    "C) Seng-Vu"
+   ],
+   "answer": "A) Karefinotu"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Godfrining oroldagi dastlabki harakatlari tartibi qaysi?",
+   "options": [
+    "A) Boshpana topish, olov, do‘stlashish",
+    "B) Olov, kema qurish, ov",
+    "C) Do‘stlashish, sohilni tark etish"
+   ],
+   "answer": "A) Boshpana topish, olov, do‘stlashish"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Orolda topilgan buyumlar qayerdan keltirildi?",
+   "options": [
+    "A) Sohilga chiqib qolgan sandiqdan",
+    "B) Yovvoyi odamlar kulbasidan",
+    "C) Orol ichidagi g‘ordan"
+   ],
+   "answer": "A) Sohilga chiqib qolgan sandiqdan"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Godfri nega orolga Finaning nomini berdi?",
+   "options": [
+    "A) Sevgili qallig‘ini eslab yurish uchun",
+    "B) Orol unga tegishli bo‘lgani uchun",
+    "C) Tog‘asining buyrug‘i shunday edi"
+   ],
+   "answer": "A) Sevgili qallig‘ini eslab yurish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tartelett nega oroldagi ishlarda noshudlik qildi?",
+   "options": [
+    "A) Shahar hayotiga o‘rganib qolgani uchun",
+    "B) Godfriga yordam berishni xohlamagani uchun",
+    "C) Orolni yomon ko‘rgani uchun"
+   ],
+   "answer": "A) Shahar hayotiga o‘rganib qolgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Godfrining Karefinotuni qutqarishi qanday harakat?",
+   "options": [
+    "A) Oliyjanob va jasur ish",
+    "B) Xavfli va noto‘g‘ri ish",
+    "C) Befoyda va keraksiz ish"
+   ],
+   "answer": "A) Oliyjanob va jasur ish"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif sekvoyya daraxtini «pahlavon» deb tasvirlaganda nimani nazarda tutgan?",
+   "options": [
+    "A) Daraxtning mahobatli va baquvvatligini",
+    "B) Daraxtning odamdek yurishini",
+    "C) Daraxtning juda chiroyliligini"
+   ],
+   "answer": "A) Daraxtning mahobatli va baquvvatligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karefinotu aslida kim bo‘lib chiqdi?",
+   "options": [
+    "A) Kolderupning mulozimi Jip Brass",
+    "B) Yovvoyi qabila sardori",
+    "C) Kema matrosi Tyurkot"
+   ],
+   "answer": "A) Kolderupning mulozimi Jip Brass"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kema halokati va soxta ayiqlarni kim rejalashtirgan edi?",
+   "options": [
+    "A) Uilyam Kolderup",
+    "B) Tartelett",
+    "C) Taskinar"
+   ],
+   "answer": "A) Uilyam Kolderup"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Haqiqiy yirtqich hayvonlarni orolga kim yuborgan edi?",
+   "options": [
+    "A) Taskinar",
+    "B) Kolderup",
+    "C) Seng-Vu"
+   ],
+   "answer": "A) Taskinar"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Asarda haqiqiy Robinzon deb kim aytildi?",
+   "options": [
+    "A) Xitoylik Seng-Vu",
+    "B) Godfri Morgan",
+    "C) Tartelett domla"
+   ],
+   "answer": "A) Xitoylik Seng-Vu"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar so‘ngida voqealar qanday tartibda yechim topdi?",
+   "options": [
+    "A) Qutqaruv, sirlar ochilishi, to‘y",
+    "B) To‘y, qutqaruv, yangi sayohat",
+    "C) Sirlar ochilishi, jang, qutqaruv"
+   ],
+   "answer": "A) Qutqaruv, sirlar ochilishi, to‘y"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kolderup nega jiyaniga orolda soxta sinov tayyorladi?",
+   "options": [
+    "A) Hayot maktabini o‘tashi uchun",
+    "B) Uni jazolash va haydash uchun",
+    "C) Orolni sotib yuborish uchun"
+   ],
+   "answer": "A) Hayot maktabini o‘tashi uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Taskinar nega orolga yirtqich hayvonlarni yubordi?",
+   "options": [
+    "A) Kolderupdan o‘ch olish uchun",
+    "B) Yirtqichlarni ko‘paytirish uchun",
+    "C) Godfriga yordam berish uchun"
+   ],
+   "answer": "A) Kolderupdan o‘ch olish uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Godfrining oroldagi sinovlardan o‘tishi unga nima berdi?",
+   "options": [
+    "A) Iroda va pishqoqlik bag‘ishladi",
+    "B) Boylik va shon-shuhrat berdi",
+    "C) Odamlardan nafratlanishni o‘rgatdi"
+   ],
+   "answer": "A) Iroda va pishqoqlik bag‘ishladi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif romanda quvnoq hazil uslubidan foydalanib nimaga erishgan?",
+   "options": [
+    "A) Sarguzashtni maroqli va yengil qilgan",
+    "B) Kitobxonni qo‘rqitishga erishgan",
+    "C) Voqealarni chalkashtirib yuborgan"
+   ],
+   "answer": "A) Sarguzashtni maroqli va yengil qilgan"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Robinzonlar maktabi» nomi asar mazmunini qanday ochib beradi?",
+   "options": [
+    "A) Hayotiy saboq va tarbiyani ko‘rsatadi",
+    "B) Haqiqiy maktab binosi haqida",
+    "C) Orolning xaritasini tasvirlaydi"
+   ],
+   "answer": "A) Hayotiy saboq va tarbiyani ko‘rsatadi"
+  }
+ ]
+}

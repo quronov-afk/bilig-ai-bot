@@ -1,0 +1,287 @@
+{
+ "title": "Forobiy",
+ "author": "Gulnoz Tojiboyeva",
+ "genre": "hikoya",
+ "age_group": "3",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "8-11",
+  "topics": [
+   "ilm-fan",
+   "ustoz-shogird",
+   "musiqa",
+   "mehnatsevarlik",
+   "odob-ahloq"
+  ],
+  "theme": "Ilm va hunar egallash kishini yuksak martabalarga yetkazadi hamda mushkul vaziyatlardan qutqaradi.",
+  "summary": "11 yoshli Forobiy Bag‘dodda turli fanlar va musiqani qunt bilan o‘rganadi. U yo‘lda uchratgan hunarmand ustaga yordam berib, uning ustaxonasida shogird sifatida cholg‘u asboblarini ta‘mirlash va ularning tuzilishini o‘rgana boshlaydi. Kuz boshida mamlakat amiri harbiy safardan g‘alaba bilan qaytgach, shahar maydonida uch kunlik katta bayram uyushtiriladi. Bayram avjiga chiqqanda dutor va rubobning torlari uzilib ketadi. G‘azablangan amir sozandalarni zindonga tashlashni buyuradi. Vaziyatni tushungan Forobiy maydonga kirib, chaqqonlik va mahorat bilan cholg‘ularni ta‘mirlab beradi. Sozandalar zindondan qutiladi. Yosh bolaning aql-idroki va mahoratidan hayratlangan amir Forobiy bilan suhbatlashadi hamda unga saroy kutubxonasidagi kitoblardan foydalanishga ruxsat beradi.",
+  "characters": "Forobiy — 11 yoshli zukko, hunar va ilmga chanqoq bola; Hunarmand usta — Forobiyga cholg‘ular sirlarini o‘rgatgan ustozi; Amir — mamlakat hukmdori; Sozandalar — bayramda kuy chalgan san'atkorlar.",
+  "conclusion": "Ushbu hikoya bolalarga ilm va hunar egallashning qanchalik muhimligini ko‘rsatadi. Bola qiyin vaziyatda aql va mahorat bilan atrofdagilarga yordam berish, kattalarga hurmat ko‘rsatish hamda ustoz-shogirdlik qadriyatlarini anglaydi.",
+  "difficulty": "oson",
+  "mood": "ilhomlantiruvchi, quvnoq",
+  "for_whom": "Tarixiy shaxslar, musiqa va ilm-fan haqidagi qiziqarli hikoyalarga qiziqadigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yosh Forobiy qaysi shaharda ta‘lim olardi?",
+   "options": [
+    "A) Bag‘dodda",
+    "B) Samarqandda",
+    "C) Buxoroda"
+   ],
+   "answer": "A) Bag‘dodda"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Forobiy hunarmand ustaga yo‘lda qanday yordam berdi?",
+   "options": [
+    "A) Suv keltirib berdi",
+    "B) Sozlarni ko‘tarishga yordamlashdi",
+    "C) Otini yetaklab ketdi"
+   ],
+   "answer": "B) Sozlarni ko‘tarishga yordamlashdi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Forobiy ustaxonasiga kirgan cholg‘uning nimasi uzilgan edi?",
+   "options": [
+    "A) Nay teshigi",
+    "B) Dutor tori",
+    "C) Doira terisi"
+   ],
+   "answer": "B) Dutor tori"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Forobiy ustozidan sozlar haqida nimalarni o‘rgandi?",
+   "options": [
+    "A) Sozlarning tuzilishi va xususiyatini",
+    "B) Faqat she’r aytishni",
+    "C) Saroyda navbatchilik qilishni"
+   ],
+   "answer": "A) Sozlarning tuzilishi va xususiyatini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hunarmand usta nega Forobiyni o‘ziga shogird qilib oldi?",
+   "options": [
+    "A) Forobiy soz qismlarini taniganiga",
+    "B) Usta yolg‘iz yashagani uchun",
+    "C) Amir buyruq bergani uchun"
+   ],
+   "answer": "A) Forobiy soz qismlarini taniganiga"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Forobiy nega qog‘oz va qalam ko‘tarib yuradigan bo‘ldi?",
+   "options": [
+    "A) Sozlarning rasmini chizish uchun",
+    "B) Bayramga taklifnoma yozishga",
+    "C) Zindonga tushmaslik uchun"
+   ],
+   "answer": "A) Sozlarning rasmini chizish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif usta javobida odobni ko‘rsatib nimani ta‘kidlaydi?",
+   "options": [
+    "A) Muomala odobi va hurmatni",
+    "B) Ustaning juda kambag‘alligini",
+    "C) Shaharning juda kattaligini"
+   ],
+   "answer": "A) Muomala odobi va hurmatni"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir qaysi fasl boshida harbiy safardan qaytdi?",
+   "options": [
+    "A) Bahor boshida",
+    "B) Kuz boshida",
+    "C) Qish o‘rtasida"
+   ],
+   "answer": "B) Kuz boshida"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir g‘alabasi munosabati bilan necha kun bayram qilindi?",
+   "options": [
+    "A) Bir kun",
+    "B) Uch kun",
+    "C) Yetti kun"
+   ],
+   "answer": "B) Uch kun"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bayram vaqtida qaysi cholg‘ularning torlari uzilib ketdi?",
+   "options": [
+    "A) Dutor va rubobning",
+    "B) Nay va doiraning",
+    "C) Chang va tanburning"
+   ],
+   "answer": "A) Dutor va rubobning"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Musiqa to‘xtagach amir sozandalar haqida qanday buyruq berdi?",
+   "options": [
+    "A) Ularga oltin berishni",
+    "B) Hammasini zindonga tashlashni",
+    "C) Yangi soz berishni"
+   ],
+   "answer": "B) Hammasini zindonga tashlashni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Musiqa to‘xtaganda sozandalar nega vahimaga tushdi?",
+   "options": [
+    "A) Amir g‘azablanishini bilgani uchun",
+    "B) Bayram tugaganidan xursand bo‘lib",
+    "C) Yomg‘ir yog‘ib ketgani uchun"
+   ],
+   "answer": "A) Amir g‘azablanishini bilgani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Forobiy bayram bo‘layotgan maydon tomonga nega yugurdi?",
+   "options": [
+    "A) Musiqa ovozini eshitib qolgani uchun",
+    "B) Amir uni chaqirtirgani uchun",
+    "C) Sozlarini sotmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Musiqa ovozini eshitib qolgani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Amirning sozandalarni zindonga tashlash buyrug‘iga qanday baho beriladi?",
+   "options": [
+    "A) Shoshqaloqlik va jahldorlik",
+    "B) Oqilona va adolatli qaror",
+    "C) Mehribonlik va saxovat"
+   ],
+   "answer": "A) Shoshqaloqlik va jahldorlik"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Forobiy cholg‘ularni ta‘mirlash uchun nimalardan foydalandi?",
+   "options": [
+    "A) Xaltachasidagi asboblaridan",
+    "B) Saroy usta asboblaridan",
+    "C) Amirning shaxsiy sozlaridan"
+   ],
+   "answer": "A) Xaltachasidagi asboblaridan"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Forobiyga saroyning qayeridan foydalanishga ruxsat berdi?",
+   "options": [
+    "A) Kutubxonasidan",
+    "B) Oshxonasidan",
+    "C) Xazinasidan"
+   ],
+   "answer": "A) Kutubxonasidan"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sozandalar zindondan qutilgach, Forobiy haqida nima deyishdi?",
+   "options": [
+    "A) Otasiga rahmat, baraka topsin",
+    "B) U saroydan ketishi kerak",
+    "C) U soz chalishni bilmas ekan"
+   ],
+   "answer": "A) Otasiga rahmat, baraka topsin"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Forobiy qiyin vaziyatda sozandalarga nega yordamga oshiqdi?",
+   "options": [
+    "A) Beayb insonlarni qutqarish uchun",
+    "B) Amirga xushomad qilish uchun",
+    "C) Pullik mukofot olish uchun"
+   ],
+   "answer": "A) Beayb insonlarni qutqarish uchun"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Forobiy amirdan kitob o‘qishni so‘rashi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, ilm har ne'matdan ustun",
+    "B) Xato, u boylik so‘rashi kerak edi",
+    "C) Farqi yo‘q, baribir o‘qimasdi"
+   ],
+   "answer": "A) To‘g‘ri, ilm har ne'matdan ustun"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Sozandalar lol qolishdi» iborasi bilan nimani tasvirlagan?",
+   "options": [
+    "A) Forobiy mahoratining yuqoriligini",
+    "B) Musiqaning juda balandligini",
+    "C) Amirning g‘azabi kuchliligini"
+   ],
+   "answer": "A) Forobiy mahoratining yuqoriligini"
+  }
+ ]
+}

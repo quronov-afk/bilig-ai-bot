@@ -1,0 +1,447 @@
+{
+ "title": "Eski maktab",
+ "author": "Sadriddin Ayniy",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-13",
+  "topics": [
+   "ilm va ta'lim",
+   "tarix",
+   "maktab",
+   "ota-ona va farzand",
+   "sabr-toqat"
+  ],
+  "theme": "Asarda eskicha maktab tizimidagi johillik va qattiqqollik qoralanib, tushunmay yodlash emas, balki mantiqiy va amaliy bilim olishning muhimligi ko‘rsatiladi.",
+  "summary": "Olti yoshli Sadriddin otasi tomonidan qishloq maktabiga beriladi. Maktab tor va kirsiz hujra bo‘lib, domla bolalarga bilim berish o‘rniga ularni kaltaklaydi va shafqatsiz jazolaydi. Otasi domlaning bilimsizligini payqab, o‘g‘lini u yerdan oladi va Otinbibi maktabiga beradi. Otinbibi maktabida sharoit yumshoqroq bo‘lsa-da, u yerda ham chinakam savod chiqarilmaydi. Otasi o‘g‘liga kechalari abjad hisobini hamda hind raqamlarini o‘rgatadi. Saylda Sadriddin abjad ilmi bo‘yicha chala mulla bilan munozarada g‘olib chiqib, ota o‘rgatgan bilimning kuchini namoyon etadi.",
+  "characters": "Sadriddin — bilimga chanqoq, zukko bola; Otasi — o‘g‘lining ta'limiga kuyunchak, donishmand va bilimli inson; Domla — eskicha maktabning johil, tamagir va qattiqqol muallimi; Xalfa — domlaning yordamchisi, bolalarni urishtiruvchi chaqimchi; Otinbibi — qizlar maktabining bag‘rikengroq, lekin an'anaviy o‘qituvchisi.",
+  "conclusion": "Ushbu asar farzandingizga bugungi zamonaviy maktab sharoitlarining qadriga yetishni o‘rgatadi. Shuningdek, quruq yodlash emas, balki tushunib ilm olishning afzalligini hamda ota-ona ko‘magining bilim olishdagi muhim o‘rnini anglatadi.",
+  "difficulty": "o‘rta",
+  "mood": "satirik, o‘ylantiruvchi",
+  "for_whom": "Tarixiy voqealar, maktab hayoti va bilim olishning qadri haqida o‘ylaydigan, qiziqarli va saboq beruvchi asarlarni yoqtiradigan kitobxonlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sadriddinni maktabga necha yoshida olib borishdi?",
+   "options": [
+    "A) Olti yoshida",
+    "B) Besh yoshida",
+    "C) Yetti yoshida",
+    "D) Sakkiz yoshida"
+   ],
+   "answer": "A) Olti yoshida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sadriddin o‘qigan maktab hujrasi nechta bo‘lakka bo‘lingan edi?",
+   "options": [
+    "A) To‘qqiz bo‘lakka",
+    "B) Olti bo‘lakka",
+    "C) To‘rt bo‘lakka",
+    "D) O‘n bo‘lakka"
+   ],
+   "answer": "A) To‘qqiz bo‘lakka"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otasi Sadriddinni yupatish uchun nima olib bermoqchi bo‘ldi?",
+   "options": [
+    "A) Kurra",
+    "B) Ot",
+    "C) Kitob",
+    "D) Qand"
+   ],
+   "answer": "A) Kurra"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalar bo‘yradan cho‘p sug‘urib qanday o‘yin o‘ynashdi?",
+   "options": [
+    "A) Kamonboziy o‘yinini",
+    "B) Chillak o‘yinini",
+    "C) Danak o‘yinini",
+    "D) Qo‘g‘irchoq o‘yinini"
+   ],
+   "answer": "A) Kamonboziy o‘yinini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sadriddin maktabga kelganda sodir bo‘lgan voqealarni tartiblang.",
+   "options": [
+    "A) Non sochildi, kaltaklandi, saboq boshlandi",
+    "B) Saboq boshlandi, non sochildi, qochildi",
+    "C) Kaltaklandi, qand berildi, eshik yopildi",
+    "D) Kurash bo‘ldi, non sochildi, fotiha o‘qildi"
+   ],
+   "answer": "A) Non sochildi, kaltaklandi, saboq boshlandi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Domla taxtachadagi xatoni to‘g‘rilagan otani ko‘rib nega taxtani irg‘itdi?",
+   "options": [
+    "A) Jahli chiqib, achchiq qilgani uchun",
+    "B) Xursand bo‘lib, rahm qilgani uchun",
+    "C) Maktabdan qochib ketmoqchi bo‘lgani uchun",
+    "D) Bolalarga non bermoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Jahli chiqib, achchiq qilgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sadriddin nega otasining harakatidan keyin o‘zini quvvatli his qildi?",
+   "options": [
+    "A) Otasi domladan bilimliroq bo‘lib ko‘ringani uchun",
+    "B) Otasi unga pichoqcha bergani uchun",
+    "C) Domla otasiga qand bergani uchun",
+    "D) Xalfa otasidan qo‘rqqani uchun"
+   ],
+   "answer": "A) Otasi domladan bilimliroq bo‘lib ko‘ringani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Domlaning bolalarga non sochib urishtirishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, bolalarni azoblab urishtirgan",
+    "B) To‘g‘ri, bolalarni xursand qilgan",
+    "C) To‘g‘ri, tartib o‘rnatish uchun zarur",
+    "D) Noto‘g‘ri, non kamlik qilgani uchun"
+   ],
+   "answer": "A) Noto‘g‘ri, bolalarni azoblab urishtirgan"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif derazadagi moyli qog‘ozni nimaga o‘xshatib tasvirlaydi?",
+   "options": [
+    "A) Qop-qora kirlangan qozon sochiqqa",
+    "B) Eski yirtiq choponga",
+    "C) Qishloq zindonining devoriga",
+    "D) Domlaning sallasiga"
+   ],
+   "answer": "A) Qop-qora kirlangan qozon sochiqqa"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif maktabdagi bolalarning tiqilib o‘tirishini nimaga o‘xshatadi?",
+   "options": [
+    "A) Tovuq tagidagi jo‘jalarga",
+    "B) Zindondagi mahbuslarga",
+    "C) Uyga yig‘ilgan qizlarga",
+    "D) Sayldagi tomoshabinlarga"
+   ],
+   "answer": "A) Tovuq tagidagi jo‘jalarga"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Domla Ahmad va boshqa bolalarning oyog‘iga nima soldirdi?",
+   "options": [
+    "A) Falloq",
+    "B) Zanjir",
+    "C) Arqon",
+    "D) Ip"
+   ],
+   "answer": "A) Falloq"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sadriddin domlaning tayoqlarini qayerga eltib tashladi?",
+   "options": [
+    "A) Machit hovuziga",
+    "B) Qishloq arig‘iga",
+    "C) O‘z uyiga",
+    "D) Ko‘chaga"
+   ],
+   "answer": "A) Machit hovuziga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otasi bo‘yra puli uchun Sadriddinga necha pul berdi?",
+   "options": [
+    "A) Sakkiz pul",
+    "B) O‘n pul",
+    "C) Besh pul",
+    "D) Ikkita tanga"
+   ],
+   "answer": "A) Sakkiz pul"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Domla urushgan bolalarning bedanalarini nima qildi?",
+   "options": [
+    "A) Boshini uzib tashladi",
+    "B) Hovuzga tashladi",
+    "C) O‘zi bilan olib ketdi",
+    "D) Uchirib yubordi"
+   ],
+   "answer": "A) Boshini uzib tashladi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Maktabda bolalar o‘ynagan o‘yinlarni ko‘rsating.",
+   "options": [
+    "A) Danak va bedanabozlik",
+    "B) Futbol va shashka",
+    "C) Quvlajamoq va bekinmachoq",
+    "D) Yugurish va sakrash"
+   ],
+   "answer": "A) Danak va bedanabozlik"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sadriddinning uyga qaytgandan keyingi harakatlari ketma-ketligi qaysi?",
+   "options": [
+    "A) Yig‘ladi, otasi yupatdi, rejalar tuzdi",
+    "B) Uxladi, ovqat yedi, maktabga qochdi",
+    "C) O‘ynadi, dars qildi, tayoq yedi",
+    "D) Otasidan pul oldi, domlaga urishdi"
+   ],
+   "answer": "A) Yig‘ladi, otasi yupatdi, rejalar tuzdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Domla nega xalfaning o‘zini ham falloqqa soldirdi?",
+   "options": [
+    "A) Barcha sho‘xlikni xalfa boshlagani uchun",
+    "B) Xalfa maktabga kelmagani uchun",
+    "C) Xalfa dars o‘tishni bilmagani uchun",
+    "D) Xalfa bedana olib kelgani uchun"
+   ],
+   "answer": "A) Barcha sho‘xlikni xalfa boshlagani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Otasi Sadriddinga nega «sen to‘tiqushsan» dedi?",
+   "options": [
+    "A) Ma'nosini tushunmay yodlagani uchun",
+    "B) Juda chiroyli kuylagani uchun",
+    "C) Maktabda baland gapirgani uchun",
+    "D) Faqat domlaning gapini qaytargani uchun"
+   ],
+   "answer": "A) Ma'nosini tushunmay yodlagani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Domlaning bedanalarning boshini uzib tashlashi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, mehrsizlik va shafqatsizlik",
+    "B) To‘g‘ri, chunki bedana urishgan",
+    "C) To‘g‘ri, bolalarga saboq bo‘lgan",
+    "D) Noto‘g‘ri, bedanalarni sotishi kerak edi"
+   ],
+   "answer": "A) Noto‘g‘ri, mehrsizlik va shafqatsizlik"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Otasining Sadriddinni u maktabdan olish qarori to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, bilimsiz domladan foyda yo‘q",
+    "B) Noto‘g‘ri, maktabda o‘qishi kerak edi",
+    "C) Noto‘g‘ri, domla uni yaxshi ko‘rardi",
+    "D) To‘g‘ri, o‘g‘li uyda ishlashi kerak"
+   ],
+   "answer": "A) To‘g‘ri, bilimsiz domladan foyda yo‘q"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otasi Sadriddinni kimning maktabiga olib bordi?",
+   "options": [
+    "A) Otinbibi maktabiga",
+    "B) Qishloq domlasiga",
+    "C) Xatibning darsxonasiga",
+    "D) Madrasaga"
+   ],
+   "answer": "A) Otinbibi maktabiga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otinbibi maktabida nonxo‘rak payti qanday qoida bor edi?",
+   "options": [
+    "A) Nonning yarmisini otinbibiga berish",
+    "B) Hamma nonini bo‘lishib yeyish",
+    "C) Uyga borib ovqatlanib kelish",
+    "D) Otinbibi hamma uchun non berishi"
+   ],
+   "answer": "A) Nonning yarmisini otinbibiga berish"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otasi Sadriddinga kechalari nimani o‘rgatdi?",
+   "options": [
+    "A) Abjad hisobi va raqamlarni",
+    "B) Qur'on suralarini yodlashni",
+    "C) Xat yozish va chizishni",
+    "D) She'r o‘qishni"
+   ],
+   "answer": "A) Abjad hisobi va raqamlarni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sadriddin mullavachchadan abjadda «T» harfi necha deb so‘radi?",
+   "options": [
+    "A) To‘rt yuz",
+    "B) Yuz",
+    "C) Ellik",
+    "D) Ming"
+   ],
+   "answer": "A) To‘rt yuz"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sadriddinning otasidan o‘rgangan ilmlarini ketma-ket joylashtiring.",
+   "options": [
+    "A) Abjad harflari, hisobi, hind raqamlari",
+    "B) Hind raqamlari, she'rlar, abjad harflari",
+    "C) Xat yozish, Qur'on, abjad hisobi",
+    "D) Hind raqamlari, Qur'on, kir yuvish"
+   ],
+   "answer": "A) Abjad harflari, hisobi, hind raqamlari"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qizlar nega Sadriddinga o‘g‘ilcha qo‘g‘irchoq yasab berishdi?",
+   "options": [
+    "A) O‘yinlarida kuyov rolida o‘ynashi uchun",
+    "B) Domladan qo‘rqib sovg‘a qilish uchun",
+    "C) Sadriddin ularga yordam bergani uchun",
+    "D) Sadriddin yig‘lamasligi uchun"
+   ],
+   "answer": "A) O‘yinlarida kuyov rolida o‘ynashi uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mullavachcha nega abjad haqidagi savollarga javob berolmadi?",
+   "options": [
+    "A) Yuzaki o‘qib, chuqur bilmagani uchun",
+    "B) Sadriddinning ovozini eshitmagani uchun",
+    "C) Otasining haybatidan qo‘rqqani uchun",
+    "D) Faqat kurashga tayyorlangani uchun"
+   ],
+   "answer": "A) Yuzaki o‘qib, chuqur bilmagani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Otasining Sadriddinga uyda abjad va raqamlarni o‘rgatishi qanday baholanadi?",
+   "options": [
+    "A) Judayam to‘g‘ri, haqiqiy bilim bergan",
+    "B) Noto‘g‘ri, maktabga aralashmaslik kerak",
+    "C) Ortiqcha ish, bola dam olishi kerak",
+    "D) Qiyin darslar berib qiynagan"
+   ],
+   "answer": "A) Judayam to‘g‘ri, haqiqiy bilim bergan"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Otinbibining tizzalarini nimaga o‘xshatib tasvirlaydi?",
+   "options": [
+    "A) Tegirmon charxining gupchagiga",
+    "B) Katta sopol ko‘zaga",
+    "C) Dumaloq barkashga",
+    "D) Semiz qozon tubiga"
+   ],
+   "answer": "A) Tegirmon charxining gupchagiga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar so‘ngida Sadriddin g‘ururlansa-da, o‘z bilimi haqida qanday xulosaga keladi?",
+   "options": [
+    "A) Hali xat-savodi chiqmaganini tushunadi",
+    "B) O‘zini eng bilimli deb hisoblaydi",
+    "C) Maktabni butunlay tashlamoqchi bo‘ladi",
+    "D) Otasidan ham aqlli ekanini o‘ylaydi"
+   ],
+   "answer": "A) Hali xat-savodi chiqmaganini tushunadi"
+  }
+ ]
+}

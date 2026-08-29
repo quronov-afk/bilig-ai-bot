@@ -1,0 +1,447 @@
+{
+ "title": "Dunyoning ishlari",
+ "author": "O‘tkir Hoshimov",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "ona mehr-oqibati",
+   "oila",
+   "xotiralar",
+   "sabr va shukr",
+   "mehnatsevarlik"
+  ],
+  "theme": "Ona mehrining cheksizligi, farzandlik burchi hamda hayotning oddiy va chuqur haqiqatlari haqida samimiy novellalar majmuasi.",
+  "summary": "Asarda adib o‘z bolaligi, onasi va mahalladoshlari haqidagi samimiy xotiralarini so‘zlab beradi. Har bir novellada ona siymosi, uning mehribonligi, sabr-toqati va kamtarligi namoyon bo‘ladi. Urush yillarining mashaqqatlari, bolalikdagi sodda voqealar, mahalla hayoti va insoniy munosabatlar ona mehri prizmasi orqali yoritiladi. Asar oxirida adib onasi vafotidan so‘ng uning qabriga tashrif buyurib, onasiga bag‘ishlab yozgan ushbu kitobini xotirlaydi va barcha onalarga hurmat-ehtirom ko‘rsatishga da'vat etadi.",
+  "characters": "Ona — mehribon, sabrli, farzandlari va el-yurt uchun jon kuydiradigan o‘zbek ayoli. Hikoyachi (O‘tkir) — onasining xotiralarini ardoqlovchi farzand. Dada — jiddiy, mehnatkash soatsoz. Ermon buva — jannatiy, bolajon va donishmand qariya. Zebi xola — dutorchi, sabrli ayol. Huri satang — chayqovchi ayol, ammo ona uning ham yetim bolalariga rahm qiladi.",
+  "conclusion": "Asar bolaga ota-ona va kattalarni qadrlashni, ularga tiriklik chog‘ida mehr berishni o‘rgatadi. Har bir voqea farzandda halollik, shukronalik va odamiylik tuyg‘ularini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Oila, ona mehri va bolalik xotiralari haqida ta'sirlanib o‘qiydigan, mehr-oqibatli bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Onasi nega hovlidagi to‘rtinchi kichik yulduzni o‘ziniki deb bilardi?",
+   "options": [
+    "A) Yetimcha yulduz bo‘lgani uchun",
+    "B) Eng yorug‘ yulduz bo‘lgani uchun",
+    "C) Osmonda yolg‘iz turgani uchun",
+    "D) U yulduz unga yoqqani uchun"
+   ],
+   "answer": "A) Yetimcha yulduz bo‘lgani uchun"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘rkov jaladan so‘ng quyosh chiqishini qanday izohladi?",
+   "options": [
+    "A) Marhuma ruhi pok inson bo‘lgan",
+    "B) Ob-havo birdan o‘zgardi",
+    "C) Yoz kunlari shunday bo‘ladi",
+    "D) Qabriston bag‘ri issiq bo‘ladi"
+   ],
+   "answer": "A) Marhuma ruhi pok inson bo‘lgan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ona o‘g‘liga «chuqur bor» deb nimani ko‘tarib tushiga kirardi?",
+   "options": [
+    "A) Chiroq ko‘tarib",
+    "B) Supurgi ko‘tarib",
+    "C) Obkash ko‘tarib",
+    "D) Qafas ko‘tarib"
+   ],
+   "answer": "A) Chiroq ko‘tarib"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nilufar poshsha buvisi unga nima olib berganini aytdi?",
+   "options": [
+    "A) Tufli olib berganini",
+    "B) Qo‘g‘irchoq olib berganini",
+    "C) Atlas ko‘ylak olib berganini",
+    "D) Velosiped olib berganini"
+   ],
+   "answer": "A) Tufli olib berganini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bola kasal bo‘lganda onasi uni qayerga ko‘tarib bordi?",
+   "options": [
+    "A) Hoji buvinikiga",
+    "B) Qo‘shni qishloqqa",
+    "C) Kasalxonaga",
+    "D) Dorixonaga"
+   ],
+   "answer": "A) Hoji buvinikiga"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hikoyachi tolqon solingan tovoqni nega yerga urib yubordi?",
+   "options": [
+    "A) Yutadigan soqqasi chaqib yuborilganiga achinib",
+    "B) Tolqonning mazasi yoqmagani uchun",
+    "C) Onasiga jahli chiqqani uchun",
+    "D) Tolqon sovuq bo‘lgani uchun"
+   ],
+   "answer": "A) Yutadigan soqqasi chaqib yuborilganiga achinib"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ona to‘kilgan tolqonni yerdan terarkan, o‘g‘liga nima dedi?",
+   "options": [
+    "A) Nonni to‘kish eng og‘ir gunoh",
+    "B) Boshqa tolqon qilib bermayman",
+    "C) Soqqangni qaytarib beraman",
+    "D) Otangga aytib beraman"
+   ],
+   "answer": "A) Nonni to‘kish eng og‘ir gunoh"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ona farroshlik qilganda bolalarni barvaqt uyg‘otishi to‘g‘ri edimi?",
+   "options": [
+    "A) To‘g‘ri — ularni mehnatga o‘rgatdi",
+    "B) Noto‘g‘ri — bolalar uxlashi kerak",
+    "C) Noto‘g‘ri — ish juda og‘ir edi",
+    "D) To‘g‘ri — uyda odam yo‘q edi"
+   ],
+   "answer": "A) To‘g‘ri — ularni mehnatga o‘rgatdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Haqqush» haqidagi afsonani muallif qanday ta'sirli tasvirlaydi?",
+   "options": [
+    "A) Aka-uka inqligining qadrini ko‘rsatib",
+    "B) Qushlarning chiroyli ovozini maqtab",
+    "C) Tun sukunatini ajoyib tasvirlab",
+    "D) Tog‘larning salobatini ko‘rsatib"
+   ],
+   "answer": "A) Aka-uka inqligining qadrini ko‘rsatib"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ona o‘g‘liga aytgan ikki afsonaning umumiy ma'nosi nimada?",
+   "options": [
+    "A) Yaqinlarni va o‘z uyini sevish",
+    "B) Yulduzlarni tomosha qilish",
+    "C) Erta turib ko‘chani supurish",
+    "D) Mehmonlarni izzat qilish"
+   ],
+   "answer": "A) Yaqinlarni va o‘z uyini sevish"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dada hujrada soatga tegishganini berganda nima yoqolgan edi?",
+   "options": [
+    "A) Soatning mili",
+    "B) Soatning oynasi",
+    "C) Soatning zanjiri",
+    "D) Soatning murvati"
+   ],
+   "answer": "A) Soatning mili"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sahoba haqidagi afsonada shaltoq qiz nimadan paydo bo‘lgan?",
+   "options": [
+    "A) Sigirdan paydo bo‘lgan",
+    "B) Echkidan paydo bo‘lgan",
+    "C) Qo‘ydan paydo bo‘lgan",
+    "D) Tuyadan paydo bo‘lgan"
+   ],
+   "answer": "A) Sigirdan paydo bo‘lgan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ermon buva yonboshlab yotganda qanday qo‘shiqni xirgoyi qilardi?",
+   "options": [
+    "A) Toldachumchuq sayraydi, ko‘rsam ko‘nglim yayraydi",
+    "B) Boychechak aytdim boyning eshigiga",
+    "C) Oymomaxon xulla, qanotlari tilla",
+    "D) Alla-yo alla, jonim bolam-a"
+   ],
+   "answer": "A) Toldachumchuq sayraydi, ko‘rsam ko‘nglim yayraydi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qoraquloq echkini sotish uchun bozorga olib borganda nima bo‘ldi?",
+   "options": [
+    "A) Yetim bolaga arzon sotib yuborildi",
+    "B) Uyga qaytarib olib kelindi",
+    "C) Bozor burchagida yo‘qolib qoldi",
+    "D) Qimmat narxga sotildi"
+   ],
+   "answer": "A) Yetim bolaga arzon sotib yuborildi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ona echki sotilgandan so‘ng nega vahimaga tushib qoldi?",
+   "options": [
+    "A) Echkini arqoni bilan berib yuborganiga",
+    "B) Pulni kam olganiga achinib",
+    "C) Bozorga kech qolganiga kuunib",
+    "D) Bolasiga pufayka ololmagani uchun"
+   ],
+   "answer": "A) Echkini arqoni bilan berib yuborganiga"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ona Naim sartarosh olib kelgan moshkichirini nega yemadi?",
+   "options": [
+    "A) Uni pora deb hisoblagani uchun",
+    "B) Moshkichiri sovuq bo‘lgani uchun",
+    "C) Taqdiridan roziligi uchun",
+    "D) Uyda ovqat ko‘pligi uchun"
+   ],
+   "answer": "A) Uni pora deb hisoblagani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Zebi xolaning dutorining qulog‘i singanda bolalar nima tiqib qo‘yishdi?",
+   "options": [
+    "A) Zanglagan temir tiqib qo‘yishdi",
+    "B) Yog‘och bo‘lagi tiqib qo‘yishdi",
+    "C) Qalam bo‘lagi tiqib qo‘yishdi",
+    "D) Gugurt cho‘pi tiqib qo‘yishdi"
+   ],
+   "answer": "A) Zanglagan temir tiqib qo‘yishdi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Achinska doktorning sovg‘ani rad etishi uning qaysi sifatini ko‘rsatadi?",
+   "options": [
+    "A) Halollik va poklikni",
+    "B) Kibirli va g‘ozlikni",
+    "C) Bolalarni yoqtirmaslikni",
+    "D) Sovg‘alardan to‘yganini"
+   ],
+   "answer": "A) Halollik va poklikni"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Ermon buvaning paxta haqidagi afsonasi matnda qanday tuyg‘u beradi?",
+   "options": [
+    "A) Halol mehnatga hurmat uyg‘otadi",
+    "B) Urushga nisbatan qafas beradi",
+    "C) Qish kunining sovuqligini ko‘rsatadi",
+    "D) Paxtaning qimmatligini tushuntiradi"
+   ],
+   "answer": "A) Halol mehnatga hurmat uyg‘otadi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lo‘li Acha xola onaning tog‘asi haqida nima dedi?",
+   "options": [
+    "A) Akang tirik, u yo‘lga chiqqan",
+    "B) Akang urushdan qaytmaydi",
+    "C) Akang xat yuboribdi",
+    "D) Akang kasal bo‘lib qolgan"
+   ],
+   "answer": "A) Akang tirik, u yo‘lga chiqqan"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Guzardagi bozorchada pista va qurut sotadigan kishi kim edi?",
+   "options": [
+    "A) Dalavoy",
+    "B) Abdujabbor",
+    "C) Egamberdi aka",
+    "D) Naim sartarosh"
+   ],
+   "answer": "A) Dalavoy"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Usta Abdujabborning ish paytida qanday salbiy odati bor edi?",
+   "options": [
+    "A) Har kuni ichimlik ichardi",
+    "B) Ishga kechikib kelardi",
+    "C) To‘sinlarni noto‘g‘ri qo‘yardi",
+    "D) Doim baland ovozda so‘kinardi"
+   ],
+   "answer": "A) Har kuni ichimlik ichardi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Huri satang ko‘chada ayollarga qanday matoni ko‘rsatgan edi?",
+   "options": [
+    "A) Mokriy trikotin matosini",
+    "B) Ipak atlas matosini",
+    "C) Qizil baxmal matosini",
+    "D) Oddiy doka matosini"
+   ],
+   "answer": "A) Mokriy trikotin matosini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ona Huri satang haqida gazeta maqolasi chiqmasligini so‘raganda kimni o‘yladi?",
+   "options": [
+    "A) Uning ikki nafar norasidasini",
+    "B) Uning qimmatbaho taqinchoqlarini",
+    "C) Uning mahalladagi obro‘yini",
+    "D) Uning eridan ajrashganini"
+   ],
+   "answer": "A) Uning ikki nafar norasidasini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif astronomiyadan «oy quyoshdan nur oladi» haqiqatini bilgach nimani tushundi?",
+   "options": [
+    "A) Odamlar ham bir-biriga nur bag‘ishlaydi",
+    "B) Osmonda yulduzlar ko‘pligini",
+    "C) Oy tunda yaxshi yoritishini",
+    "D) Dunyo quyoshsiz yashay olmasligini"
+   ],
+   "answer": "A) Odamlar ham bir-biriga nur bag‘ishlaydi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qabriston darvozasi oldida bir vaqtning o‘zida qanday ikki sado yangradi?",
+   "options": [
+    "A) Tilovat va alla sadosi",
+    "B) Quvonch va qahqaha sadosi",
+    "C) Qushlar va suv shiviri",
+    "D) Shamol va yomg‘ir shovqini"
+   ],
+   "answer": "A) Tilovat va alla sadosi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning onasi qabriga kelib aytgan iltijosi bolaga nima beradi?",
+   "options": [
+    "A) Ona tirikligida uni e'zozlashni",
+    "B) Kitob ko‘p yozish kerakligini",
+    "C) Qabristonga tez-tez borishni",
+    "D) Bahorda guvoh bo‘lishni"
+   ],
+   "answer": "A) Ona tirikligida uni e'zozlashni"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ona Huri satangni avval haydab, keyin uni himoya qilgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — onalik rahmdilligi ustun keldi",
+    "B) Noto‘g‘ri — chayqovchini jazolash kerak",
+    "C) Noto‘g‘ri — Huri bunga loyiq emasdi",
+    "D) To‘g‘ri — ona qo‘rqib ketgan edi"
+   ],
+   "answer": "A) To‘g‘ri — onalik rahmdilligi ustun keldi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Oq marmar, qora marmar» hikoyasida muallif qanday hayotiy saboq beradi?",
+   "options": [
+    "A) Onaga eng yaxshi sovga — tirikligidagi mehr",
+    "B) Qabr toshlarini chiroyli qilish kerak",
+    "C) Marhumlar uchun fotiha o‘qish kifoya",
+    "D) Bahor go‘ristondan boshlanishi ajoyib tasvir"
+   ],
+   "answer": "A) Onaga eng yaxshi sovga — tirikligidagi mehr"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida muallif o‘z kitobini kim yozgan deb hisoblaydi?",
+   "options": [
+    "A) Onasi yozgan deb hisoblaydi",
+    "B) O‘zi yolg‘iz yozganini aytadi",
+    "C) Do‘stlari yordam berganini aytadi",
+    "D) Xalq afsonalari yaratgan deydi"
+   ],
+   "answer": "A) Onasi yozgan deb hisoblaydi"
+  }
+ ]
+}

@@ -1,0 +1,417 @@
+{
+ "title": "Maugli",
+ "author": "Jozef Redyard Kipling",
+ "genre": "hikoyalar",
+ "age_group": "6",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15",
+  "topics": [
+   "do‘stlik",
+   "tabiat",
+   "jasorat",
+   "sadoqat",
+   "odob-axloq"
+  ],
+  "theme": "Asar inson va tabiat o‘rtasidagi uyg‘unlik, do‘stlikka sadoqat, halollik hamda har bir mavjudot o‘z asliyatiga qaytishi haqidagi ezgu g‘oyani ilgari suradi.",
+  "summary": "Hindiston changalzorida adashib qolgan odam bolasi Mauglini bo‘rilar to‘dasi asrab oladi. Ayiq Balu va qoplon Bagira unga changalzor Qonunlarini o‘rgatadi. Yovuz yo‘lbars Sherxon Mauglini o‘ldirishga urinadi, lekin Maugli Qizil Gul (olov) yordamida uni va unga ergashgan bo‘rilarni chekintiradi. Keyinchalik Maugli odamlar qishlog‘iga borib Messua ismli ayolning uyida yashaydi va Sherxonni yengib, uning terisini Kengash Qoyasiga ilib qo‘yadi. Odamlarning xiyonatiga uchragach, Maugli yana changalzorga qaytadi va uni yovvoyi itlar (Dhole) hujumidan saqlab qoladi. Yillar o‘tib, ulg‘aygan Maugli o‘z asliyati insoniyat ekanini anglaydi va changalzor do‘stlari bilan mehr va sadoqat bilan vidolashib, odamlar dunyosiga qaytadi.",
+  "characters": "Maugli — changalzor bo‘rilari orasida o‘sgan, dovyurak, aqlli va adolatli odam bolasi. Balu — mehribon va donishmand keksa ayiq, Maugliga changalzor Qonunlarini o‘rgatuvchi ustoz. Bagira — chaqqon va dovyurak qoplon, Mauglining sodiq do‘sti va himoyachisi. Akela — Sion bo‘rilar to‘dasining odil yetakchisi. Sherxon — oqsoq va yovuz yo‘lbars, Mauglining ashaddiy dushmani. Messua — Maugliga onalik mehrini ko‘rsatgan mehribon inson.",
+  "conclusion": "Bu asar bolaga har qanday vaziyatda ham vafodor bo‘lishni, kattalarni va ustozlarni hurmat qilishni hamda tabiatga mehr ko‘rsatishni o‘rgatadi. Bola kitobdan adolat, jasorat va mas'uliyat kabi oliyjanob qadriyatlarni saboq qilib oladi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, o‘ylantiruvchi, ta’sirli",
+  "for_whom": "Tabiat va hayvonot olamini yaxshi ko‘radigan, jasorat hamda haqiqiy do‘stlik haqida sarguzashtli asarlarga qiziqadigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Taboqi bo‘ri uyasiga kirganda nimani g‘ajiy ketdi?",
+   "options": [
+    "A) Bug‘u suyagini",
+    "B) Echki go‘shtini",
+    "C) Quyon terisini"
+   ],
+   "answer": "A) Bug‘u suyagini"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sherxon nima uchun bitta oyog‘i oqsoq edi?",
+   "options": [
+    "A) Tug‘ma oqsoq bo‘lgani uchun",
+    "B) Qopqonga tushgani uchun",
+    "C) Bo‘rilar tishlagani uchun"
+   ],
+   "answer": "A) Tug‘ma oqsoq bo‘lgani uchun"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mauglini To‘daga qabul qilish uchun kim qo‘tos in’om etdi?",
+   "options": [
+    "A) Bagira",
+    "B) Balu",
+    "C) Akela"
+   ],
+   "answer": "A) Bagira"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Balu To‘da Kengashida Maugliga qanday yordam berdi?",
+   "options": [
+    "A) Bolani yoqlab so‘zladi",
+    "B) Sherxon bilan urishdi",
+    "C) Ozuqa olib keldi"
+   ],
+   "answer": "A) Bolani yoqlab so‘zladi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mauglining To‘daga qabul qilinish tartibi qanday kechdi?",
+   "options": [
+    "A) Balu yoqladi, Bagira qo‘tos berdi",
+    "B) Akela tanladi, Sherxon rozi bo‘ldi",
+    "C) Ona Bo‘ri sotib oldi"
+   ],
+   "answer": "A) Balu yoqladi, Bagira qo‘tos berdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Maymunlar Mauglini qochirganda kimlar uni qutqardi?",
+   "options": [
+    "A) Balu, Bagira va Qao",
+    "B) Akela va Ota Bo‘ri",
+    "C) Sherxon va Taboqi"
+   ],
+   "answer": "A) Balu, Bagira va Qao"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sherxon nega Kengashda Mauglini tortib ololmadi?",
+   "options": [
+    "A) To‘da Qonuniga qarshi chiqolmadi",
+    "B) Qoplon Bagiradan qo‘rqdi",
+    "C) Bo‘rilar ko me’yorda edi"
+   ],
+   "answer": "A) To‘da Qonuniga qarshi chiqolmadi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Maymunlar nega o‘zlariga yetakchi saylay olishmasdi?",
+   "options": [
+    "A) Fahmi-farosatlari yetishmagani uchun",
+    "B) Bo‘rilar xalaqit bergani uchun",
+    "C) Qao taqiqlagani uchun"
+   ],
+   "answer": "A) Fahmi-farosatlari yetishmagani uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ona Bo‘rining bolani Sherxondan himoya qilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, mehri va mardligini ko‘rsatdi",
+    "B) Noto‘g‘ri, xavfni oshirdi",
+    "C) Farqi yo‘q edi"
+   ],
+   "answer": "A) To‘g‘ri, mehri va mardligini ko‘rsatdi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Bagira ovozini «yovvoyi asaldek» deganda nimani ko‘rsatgan?",
+   "options": [
+    "A) Uning tovushi muloyimligini",
+    "B) U asal yeyishini",
+    "C) Uning o‘rmonda yashashini"
+   ],
+   "answer": "A) Uning tovushi muloyimligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maugli bo‘rilarga kimligini ko‘rsatish uchun nimani keltirdi?",
+   "options": [
+    "A) Qizil Gulni (olovni)",
+    "B) O‘tkir uzun pichoqni",
+    "C) Bahaybat bug‘u suyagini"
+   ],
+   "answer": "A) Qizil Gulni (olovni)"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qurg‘oqchilik paytida daryo bo‘yida nima e’lon qilindi?",
+   "options": [
+    "A) Suv Ahdnomasi (Sulh)",
+    "B) Ov qilish bayrami",
+    "C) Maymunlar hukmi"
+   ],
+   "answer": "A) Suv Ahdnomasi (Sulh)"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oq Kalava g‘orda nimani qo‘riqlab yotgan edi?",
+   "options": [
+    "A) Maxaroja xazinasini",
+    "B) Sehrli o‘tkir pichoqni",
+    "C) Oq qo‘tos terisini"
+   ],
+   "answer": "A) Maxaroja xazinasini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maugli Messua va uning erini qayerdan qutqardi?",
+   "options": [
+    "A) Bog‘langan mahkam kulbadan",
+    "B) Qorong‘i chuqur g‘ordan",
+    "C) Yo‘lbarsning inidan"
+   ],
+   "answer": "A) Bog‘langan mahkam kulbadan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Maugli qishloqqa borgach voqealar qanday ketma-ketlikda bo‘ldi?",
+   "options": [
+    "A) Messua asradi, so‘ng sehrgar deyishdi",
+    "B) Kohin quvdi, so‘ng To‘da oldi",
+    "C) Sherxon tutdi, so‘ng Balu qutqardi"
+   ],
+   "answer": "A) Messua asradi, so‘ng sehrgar deyishdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Maugli nega qishloq tomlarini fillarga buzdirib tashladi?",
+   "options": [
+    "A) Odamlarning yovuzligiga ta’zir berish uchun",
+    "B) O‘rmonni kengaytirish uchun",
+    "C) Yangi uy qurish uchun"
+   ],
+   "answer": "A) Odamlarning yovuzligiga ta’zir berish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oq Kalava nega o‘sha asbobni «ajal» deb atadi?",
+   "options": [
+    "A) U sabab odamlar urishib o‘lishgani uchun",
+    "B) U zaharli bo‘lgani uchun",
+    "C) U juda og‘ir bo‘lgani uchun"
+   ],
+   "answer": "A) U sabab odamlar urishib o‘lishgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mauglining Akelani olov bilan saqlab qolgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, do‘stiga sadoqat ko‘rsatdi",
+    "B) Noto‘g‘ri, bo‘rilar urishishi kerak edi",
+    "C) Qonunga to‘g‘ri kelmasdi"
+   ],
+   "answer": "A) To‘g‘ri, do‘stiga sadoqat ko‘rsatdi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Maugli odamlarni o‘ldirmay faqat haydagani haqida nima deysiz?",
+   "options": [
+    "A) Shafqatli va adolatli qaror berdi",
+    "B) Qo‘rqoqlik qilib qochdi",
+    "C) Bevafo bo‘lib chiqdi"
+   ],
+   "answer": "A) Shafqatli va adolatli qaror berdi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif fillar harakatini «gulduros ovozlar» deganda nimani anglatgan?",
+   "options": [
+    "A) Ularning qudrati va haybatini",
+    "B) Ularning tez chopishini",
+    "C) Ularning qo‘rqinchli ekanini"
+   ],
+   "answer": "A) Ularning qudrati va haybatini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dekan tomondan kelgan yovvoyi malla itlar nima deyilardi?",
+   "options": [
+    "A) Dhole (yovvoyi itlar)",
+    "B) Bandar-Loglar",
+    "C) Pxiallar"
+   ],
+   "answer": "A) Dhole (yovvoyi itlar)"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maugli yovvoyi itlarni qayerga yetaklab borib mag‘lub etdi?",
+   "options": [
+    "A) Asalari Qoyasiga",
+    "B) Sion tog‘iga",
+    "C) Messuaning kulbasiga"
+   ],
+   "answer": "A) Asalari Qoyasiga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yovvoyi itlar bilan bo‘lgan jangda qaysi bo‘ri halok bo‘ldi?",
+   "options": [
+    "A) Akela",
+    "B) Pxao",
+    "C) Vantala"
+   ],
+   "answer": "A) Akela"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Messua Maugli kulbaga kelganda unga nima berdi?",
+   "options": [
+    "A) Issiq sut va non",
+    "B) Boshqa kiyim-kechak",
+    "C) O‘tkir yangi pichoq"
+   ],
+   "answer": "A) Issiq sut va non"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mauglining changalzor bilan vidolashuvi qanday kechdi?",
+   "options": [
+    "A) Do‘stlari bilan xayrlashib ketdi",
+    "B) Bo‘rilar uni quvib yubordi",
+    "C) Bildirmay qochib ketdi"
+   ],
+   "answer": "A) Do‘stlari bilan xayrlashib ketdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Maugli ulg‘aygani sari nega changalzor unga torlik qildi?",
+   "options": [
+    "A) Insoniy tabiatiga qaytayotgani uchun",
+    "B) Hayvonlar undan nafratlangani uchun",
+    "C) Ov qilishni yoqtirmagani uchun"
+   ],
+   "answer": "A) Insoniy tabiatiga qaytayotgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Messua nega Mauglini ko‘rganda «o‘rmon xudosi» deb o‘yladi?",
+   "options": [
+    "A) U baquvvat yigit bo‘lib yetishgani uchun",
+    "B) U ustiga olov yopib olgani uchun",
+    "C) U hayvonlar bilan kelgani uchun"
+   ],
+   "answer": "A) U baquvvat yigit bo‘lib yetishgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mauglining do‘stlari bilan mehr bilan xayrlashishi qanday sifat?",
+   "options": [
+    "A) Vafodorlik va oqibat",
+    "B) Manmanlik va kibr",
+    "C) Chaqqonlik va chaqqonlik"
+   ],
+   "answer": "A) Vafodorlik va oqibat"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Baluning «Po‘stni tashlagach, qaytadan kirolmaysan» deyishi nimani anglatadi?",
+   "options": [
+    "A) Ulg‘aygach, o‘tmishga qaytib bo‘lmasligini",
+    "B) Ilonlar po‘st tashlashini",
+    "C) Kiyimni almashtirish kerakligini"
+   ],
+   "answer": "A) Ulg‘aygach, o‘tmishga qaytib bo‘lmasligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Bagiraning so‘nggi «Yangi yo‘lda oving baroridan kelsin» tilagi nimani anglatadi?",
+   "options": [
+    "A) Do‘stning samimiy ezgu tilagini",
+    "B) Qoplonning xavotirini",
+    "C) Ov Qonunining tugashini"
+   ],
+   "answer": "A) Do‘stning samimiy ezgu tilagini"
+  }
+ ]
+}

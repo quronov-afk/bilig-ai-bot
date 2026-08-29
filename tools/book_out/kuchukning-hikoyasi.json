@@ -1,0 +1,27 @@
+{
+ "title": "Kuchukning hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "3",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-10",
+  "topics": [
+   "aka-uka va opa-singil",
+   "oila",
+   "mehribonlik",
+   "saxovat"
+  ],
+  "theme": "Opa-singil va aka-ukalar o‘rtasida o‘zaro mehr, bo‘lishish va bir-birini xafa qilmaslik muhimligini kuchukcha tili orqali kulgili tarzda ko‘rsatish.",
+  "summary": "Kichik kuchukcha o‘zining ochko‘z opasidan shikoyat qiladi. Opasi yoshligidan beri unga kun bermaydi: ovqat paytida 'qiz bolaman, idishni men tozalayman' deb mazali yuvindilarni yeb qo‘yadi, ukasiga esa qattiq suyaklarni qoldiradi. Kuchukcha azbaroyi qorni ochganidan barmog‘ini so‘rib o‘tiradi va uydan ketish haqida o‘ylaydi. Hikoya oxirida u kitobxon qizaloqqa yuzlanib, 'Sen ham ukangni xafa qilmayapsanmi?' deb murojaat qiladi.",
+  "characters": "Kichik kuchukcha (shikoyatchi, samimiy uka), Opasi (ochko‘z, ayyor va surbetroq kuchukcha).",
+  "conclusion": "Hikoya bolalarga aka-uka va opa-singillar bilan inoq yashash, o‘zaro bo‘lishish va bir-biriga g‘amxo‘r bo‘lish zarurligini uqtiradi. Bola o‘zining oiladagi tutumiga chetdan nazar solib, yaqinlarini xafa qilmaslikni o‘rganadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, samimiy, yengil",
+  "for_whom": "Aka-ukasi yoki opa-singlisi bor, hayvonlar haqidagi kulgili va saboq beruvchi hikoyalarni yoqtiradigan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Kuchukcha opasining ochko‘zligidan va unga tegishli yegulikni ham yeb qo‘yganidan xafa bo‘ldi. Sen uyingda aka-ukang yoki opa-singling bilan shirinlik va o‘yinchoqlarni qanday bo‘lishasan va ularni xafa qilmaslik uchun nima qilasan?"
+}

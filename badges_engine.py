@@ -11,8 +11,9 @@
 # Nishon nomlari webapp/badges/index.json dagi nomlar bilan AYNAN
 # bir xil bo‘lishi shart — chizma shu nom orqali topiladi.
 #
-# Hozircha avtomatlashtirilmagan yagona nishon: «Oila iftixori»
-# (ota-ona kechki suhbatni baholaydigan alohida oqim hali yo‘q).
+# «Oila iftixori» nishoni shu yerda tekshirilmaydi — u kechki suhbat
+# oqimida beriladi (`webapp_api.py`, `_start_talk_check` va
+# `child_talk_check`). Sharti: ota-ona va bola ALOHIDA tasdiqlashi kerak.
 # ==========================================================
 
 from database import conn, cursor, award_badge, get_child_total_pages
@@ -63,7 +64,7 @@ def check_badges(child_id, ctx=None, action=None):
     """Bolaning hamma nishon shartlarini tekshiradi.
 
     ctx — shu daqiqada sodir bo‘lgan, bazada saqlanmaydigan holatlar:
-        shield_used — «Olov qalqoni» ishlatildi (Qalqon nishoni uchun)
+        shield_used — «Qanot» ishlatildi (Qalqon nishoni uchun)
         ezgulik     — AI ustoz «qahramon fazilatlari» xulosasini a'lo dedi
 
     action — bola nima qildi: "page" | "voice" | "test".

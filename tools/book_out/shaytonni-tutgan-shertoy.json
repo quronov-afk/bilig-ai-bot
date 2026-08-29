@@ -1,0 +1,417 @@
+{
+ "title": "Shaytonni tutgan Shertoy",
+ "author": "Abror Qo‘shnazarov",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12 yosh",
+  "topics": [
+   "do‘stlik",
+   "sarguzasht",
+   "odob-axloq",
+   "halollik",
+   "maktab hayoti"
+  ],
+  "theme": "Sho‘x va xayolparast bolaning xatolaridan saboq chiqarib, halollik, do‘stlik va ilmning qadrini tushunib yetishi.",
+  "summary": "Shertoy ammasining uyida yashab, turli sho‘xliklar va xatolar qiladi. Dadasining Toshkentdan kelishi, Zafar bobo bilan mol bozordagi qiziq sarguzashtlar va maktabdagi voqealardan so‘ng, u sehrgarlik xayollari bilan yurib, firibgar folbinlarni fosh etadi. Sheriklari bilan birga soxta sehrgarlar saltanatida turli sinovlarni boshdan kechiradi. Oqibatda qishlog‘iga qaytib, folbinning kirdikorlarini el oldida ochadi. Ota-onasi va do‘stlari davrasida Shertoy ilm olish, halollik va do‘stlikning haqiqiy mo‘jiza ekanini anglab yetadi hamda to‘g‘ri yo‘lni topadi.",
+  "characters": "Shertoy (Ulug‘bek) — sho‘x, xayolparast va adolatparvar bosh qahramon; Javohir usta — Shertoyning mehnatkash dadasi; Berdiqul (Qizil tog‘a) — badjahl, lekin ochiq ko‘ngil tog‘a; Zafar bobo — shoir va mug‘ambir dallol; Tursinoy — odamlarni aldaydigan firibgar folbin; Charos — bilimdon va iqtidorli shoira qiz.",
+  "conclusion": "Asar bolalarga sho‘xlik va yolg‘onning salbiy oqibatlarini tushuntiradi. U halollik, kattalarga hurmat hamda bilim olishning jamiyatdagi o‘rnini ko‘rsatib beradi. Kitobni o‘qigan bola o‘z xatolarini anglashni va do‘stlikka sadoqatli bo‘lishni o‘rganadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, sarguzashtli va saboqli",
+  "for_whom": "Sarguzashtlarni, kulgili voqealarni va topqir qahramonlar haqida o‘qishni yaxshi ko‘radigan, sho‘x va qiziquvchan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qizil tog‘aning haqiqiy ismi nima edi?",
+   "options": [
+    "A) Berdiqul",
+    "B) Javohir",
+    "C) Qurbonali"
+   ],
+   "answer": "A) Berdiqul"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shertoyning dadasi kasbi bo‘yicha kim edi?",
+   "options": [
+    "A) Shoir",
+    "B) Duradgor usta",
+    "C) Haydovchi"
+   ],
+   "answer": "B) Duradgor usta"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zafar bobo mol bozorda qanday hayvon sotib oldi?",
+   "options": [
+    "A) Semiz qo‘y",
+    "B) Qora buqa",
+    "C) Oppoq echki"
+   ],
+   "answer": "C) Oppoq echki"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zafar bobo salla o‘rniga boshiga nima o‘rab olgandi?",
+   "options": [
+    "A) Kampirining lozimini",
+    "B) Qizil ro‘molni",
+    "C) Shohi choponni"
+   ],
+   "answer": "A) Kampirining lozimini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shertoy ammasinikida yashashining asosiy sababi nima edi?",
+   "options": [
+    "A) Uylari yo‘qligi",
+    "B) Sho‘xligi va beborligi",
+    "C) Toshkentda o‘qishi"
+   ],
+   "answer": "B) Sho‘xligi va beborligi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Echki egasi Qurbonali nega kutilmaganda qattiq kulib yubordi?",
+   "options": [
+    "A) Echkisi qochib ketgani uchun",
+    "B) Zafar boboning sallasini ko‘rib",
+    "C) Pulni kam olgani uchun"
+   ],
+   "answer": "B) Zafar boboning sallasini ko‘rib"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shertoy nega darsga dadasining telefonini olib kirdi?",
+   "options": [
+    "A) O‘qituvchiga sovg‘a qilishga",
+    "B) Sinfdoshlariga maqtanmoqchi bo‘lib",
+    "C) Uyga qo‘ng‘iroq qilish uchun"
+   ],
+   "answer": "B) Sinfdoshlariga maqtanmoqchi bo‘lib"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shertoyning tog‘asiga yolg‘on gapirishi to‘g‘ri ish bo‘ldimi?",
+   "options": [
+    "A) Noto‘g‘ri, tartibsizlikka olib keldi",
+    "B) To‘g‘ri, juda kulgili bo‘ldi",
+    "C) Yaxshi, tog‘asi xursand bo‘ldi"
+   ],
+   "answer": "A) Noto‘g‘ri, tartibsizlikka olib keldi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Zafar boboning echki savdosini qanday tasvirlagan?",
+   "options": [
+    "A) Kulgili va mug‘ambirona",
+    "B) Qayg‘uli va g‘amgin",
+    "C) Qo‘rqinchli va vahimali"
+   ],
+   "answer": "A) Kulgili va mug‘ambirona"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zafar bobo echkini qancha pulga sotib oldi?",
+   "options": [
+    "A) Sakson ming",
+    "B) To‘qson ming",
+    "C) Yuz ming"
+   ],
+   "answer": "B) To‘qson ming"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shertoy dars o‘rniga qayerga o‘yin o‘ynagani borardi?",
+   "options": [
+    "A) Kutubxonaga",
+    "B) Kompyuter xonasiga",
+    "C) Sport zaliga"
+   ],
+   "answer": "B) Kompyuter xonasiga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shertoy yolg‘ondakam muyassar bo‘lgan «xotini» kim edi?",
+   "options": [
+    "A) Shaytonning urg‘ochisi",
+    "B) Pari qiz",
+    "C) Suv parisi"
+   ],
+   "answer": "A) Shaytonning urg‘ochisi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uloq poygasida Shertoy nechta sovrin yutib oldi?",
+   "options": [
+    "A) Uchta",
+    "B) Beshta",
+    "C) Yettita"
+   ],
+   "answer": "C) Yettita"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shertoy uloqda minib qatnashgan otni odamlar qanday atashdi?",
+   "options": [
+    "A) Qora tulpor",
+    "B) Amerikanskiy ot",
+    "C) Uchar qanot"
+   ],
+   "answer": "B) Amerikanskiy ot"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Odamlar Shertoyning oilasiga qanday munosabatda bo‘lishardi?",
+   "options": [
+    "A) Juda hurmat qilishardi",
+    "B) Muloqot qilishmasdi",
+    "C) Faqat urishishardi"
+   ],
+   "answer": "A) Juda hurmat qilishardi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shertoyning oyisi nega o‘g‘lini jinni bo‘lib qoldi deb o‘yladi?",
+   "options": [
+    "A) U g‘alati harakatlar qilgach",
+    "B) U umuman gapirmay qo‘ygach",
+    "C) U ovqat yemay qo‘ygach"
+   ],
+   "answer": "A) U g‘alati harakatlar qilgach"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega folbin Tursinoy odamlarni aldashga urinardi?",
+   "options": [
+    "A) Odamlarga yordam berish uchun",
+    "B) Harom pul topish uchun",
+    "C) Maktabda o‘qitish uchun"
+   ],
+   "answer": "B) Harom pul topish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shertoyning firibgar folbinlarni fosh qilishi qanday amaliyot?",
+   "options": [
+    "A) To‘g‘ri va mardona ish",
+    "B) Yomon va zararli harakat",
+    "C) Keraksiz va behuda yumush"
+   ],
+   "answer": "A) To‘g‘ri va mardona ish"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif uloq sahnalarida Shertoyning harakatlarini qanday tasvirlaydi?",
+   "options": [
+    "A) Zukko va sho‘x",
+    "B) Qo‘rqoq va tortinchoq",
+    "C) Katta va og‘ir-bosiq"
+   ],
+   "answer": "A) Zukko va sho‘x"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shertoy va uning sheriklari nima sababdan to‘planishdi?",
+   "options": [
+    "A) O‘yin-kulgi qilish uchun",
+    "B) Adolatsizlikka qarshi kurashish uchun",
+    "C) Qishloqdan qochib ketish uchun"
+   ],
+   "answer": "B) Adolatsizlikka qarshi kurashish uchun"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Danakchaning saltanatida qanday mo‘jizaviy buyumlar bor edi?",
+   "options": [
+    "A) Dunyo xaritasi va quyon",
+    "B) Oltin kalit va gilam",
+    "C) Sehrli shisha va oyna"
+   ],
+   "answer": "A) Dunyo xaritasi va quyon"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Salim Shertoyning soxta jasadini ko‘rib nima qildi?",
+   "options": [
+    "A) Qattiq yig‘ladi",
+    "B) Xursand bo‘lib kuldi",
+    "C) Indamay chiqib ketdi"
+   ],
+   "answer": "A) Qattiq yig‘ladi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Salim g‘amgin paytlarida qaysi mashhur kuyni chalardi?",
+   "options": [
+    "A) Sangam kuyini",
+    "B) Lazgi kuyini",
+    "C) Tanovar kuyini"
+   ],
+   "answer": "A) Sangam kuyini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shertoy va sheriklari necha yil yo‘qolib ketishgan edi?",
+   "options": [
+    "A) Bir yil",
+    "B) Uch yil",
+    "C) Besh yil"
+   ],
+   "answer": "B) Uch yil"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qishloqdagilar Shertoylarni qaytib kelganida nega birinchi bo‘lib qochishdi?",
+   "options": [
+    "A) Ularni arvoh deb o‘ylashdi",
+    "B) Ulardan qattiq xafa edi",
+    "C) Ularni tanishmadi"
+   ],
+   "answer": "A) Ularni arvoh deb o‘ylashdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega buloq yonidagi joy «Tomchiqoq» deb atala boshlandi?",
+   "options": [
+    "A) Suvi o‘rik ta‘mini bergach",
+    "B) U yerda toshlar ko‘pligidan",
+    "C) Suvi juda sho‘r bo‘lganidan"
+   ],
+   "answer": "A) Suvi o‘rik ta‘mini bergach"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Salimning Shertoy uchun kuylashi ularning do‘stligini qanday ko‘rsatadi?",
+   "options": [
+    "A) Samimiy va sadoqatli",
+    "B) Yuzaki va soxta",
+    "C) Vaqtinchalik va manfaatsiz"
+   ],
+   "answer": "A) Samimiy va sadoqatli"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shertoyning oxir-oqibat o‘qishga qiziqib ketishi nimani anglatadi?",
+   "options": [
+    "A) To‘g‘ri yo‘lni topganini",
+    "B) Majburlikdan o‘qiyotganini",
+    "C) Vaqt o‘tkazayotganini"
+   ],
+   "answer": "A) To‘g‘ri yo‘lni topganini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Charosning yutuqlarini asarda qanday aks ettirgan?",
+   "options": [
+    "A) Iftixor va havas bilan",
+    "B) Masxara va kulgi bilan",
+    "C) Nadomat va afsus bilan"
+   ],
+   "answer": "A) Iftixor va havas bilan"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida Shertoyning notiqlik qilishi kitobxonda qanday kayfiyat uyg‘otadi?",
+   "options": [
+    "A) Quvnoq va zavqli",
+    "B) G‘amgin va ma’yus",
+    "C) Qo‘rqinchli va ziddiyatli"
+   ],
+   "answer": "A) Quvnoq va zavqli"
+  }
+ ]
+}

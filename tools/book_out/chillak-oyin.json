@@ -1,0 +1,287 @@
+{
+ "title": "Chillak o‘yin",
+ "author": "Shukur Xolmirzayev",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-13",
+  "topics": [
+   "do‘stlik",
+   "halollik",
+   "bolalik o‘yinlari",
+   "sabr-toqat",
+   "o‘z ustida ishlash"
+  ],
+  "theme": "Bolalar o‘yinlari faqat jismoniy mashq emas, balki halollik, matonat va mardlik kabi insoniy fazilatlarni shakllantiradigan ma’naviy sinov maydonidir.",
+  "summary": "Bo‘ri ismli bola qo‘shnisi Rahmat bilan chillak o‘ynaydi. Ilgari u mag‘lub bo‘lganda yutqiziqni tan olmay, uyiga qochib berkinardi. Navbatdagi o‘yinda u yutqazib qo‘ysa-da, endi g‘irromlik qilmaslikka qaror qiladi. Rahmat chillakni ketma-ket uzoqqa urgach, Bo‘ri katta masofani zuvullab chopib o‘tishga majbur bo‘ladi. U loy va ariqlardan o‘tib, charchaganiga qaramay, Ko‘kqiya soyigacha taslim bo‘lmay yuguradi. Oxiri ikkala bola ham holdan toyadi va Rahmat Bo‘rining mardligiga tan berib, uning g‘irrom emasligini e’tirof etadi. Shu kundan boshlab Bo‘ri g‘irromlikdan uyaladigan va mas’uliyatli bo‘lishni o‘rganadi.",
+  "characters": "Bo‘ri — darslarini a’lo o‘qiydigan, sho‘x va ilgari g‘irromlik qilib yurgan, lekin irodali bola; Rahmat (Go‘ppon) — bir sinf yuqori o‘qiydigan, jismonan bag‘rikeng va kuchli, halol qo‘shni bola.",
+  "conclusion": "Asar bolani har qanday o‘yinda va hayotda halol bo‘lishga, qiyinchilik oldida taslim bo‘lmaslikka va mag‘lubiyatni mardlarcha tan olishga o‘rgatadi. U o‘z xatolarini anglash va ularni tuzatish chinakam mardlik ekanini ko‘rsatadi.",
+  "difficulty": "o‘rta",
+  "mood": "samimiy, o‘ylantiruvchi, ilhomlantiruvchi",
+  "for_whom": "Milliy o‘yinlar, do‘stlik va o‘z fe’l-atvorini shakllantirish haqida o‘qishni xohlaydigan, sinovlardan qochmaydigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘ri ertalab nega uyda yolg‘iz qolgan edi?",
+   "options": [
+    "A) Onasi ishga ketgani uchun",
+    "B) Maktabga kechikkani uchun",
+    "C) Sheriklari uni tashlab ketgani uchun"
+   ],
+   "answer": "A) Onasi ishga ketgani uchun"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rahmat maktabda nechanchi sinfda o‘qir edi?",
+   "options": [
+    "A) Oltinchi sinfda",
+    "B) Yettinchi sinfda",
+    "C) Beshinchi sinfda"
+   ],
+   "answer": "B) Yettinchi sinfda"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bo‘ri ilgari yutqazganda qanday yo‘l tutar edi?",
+   "options": [
+    "A) Zuvullash o‘rniga uyiga qochardi",
+    "B) Rahmat bilan urishib ketardi",
+    "C) Chillakni sindirib tashlardi"
+   ],
+   "answer": "A) Zuvullash o‘rniga uyiga qochardi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bo‘ri Rahmatni o‘yinga chaqirish uchun nima qildi?",
+   "options": [
+    "A) Devor yonida yo‘g‘ochlarni savaladi",
+    "B) Uyining eshigini taqillatdi",
+    "C) Singlisidan aytib yubordi"
+   ],
+   "answer": "A) Devor yonida yo‘g‘ochlarni savaladi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Rahmat nega Bo‘ri bilan o‘ynashga darrov rozi bo‘lmadi?",
+   "options": [
+    "A) Bo‘rini g‘irrom deb bilardi",
+    "B) Darslarini tayyorlamagan edi",
+    "C) Uyda ishi bor edi"
+   ],
+   "answer": "A) Bo‘rini g‘irrom deb bilardi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bo‘rining yutqazgach uyga qochib berkinishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri — bu g‘irromlikdir",
+    "B) To‘g‘ri — mag‘lubiyatdan qutuladi",
+    "C) O‘yinda bu ruxsat etiladi"
+   ],
+   "answer": "A) Noto‘g‘ri — bu g‘irromlikdir"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘ri Rahmatni ko‘ndirish uchun nima qildi?",
+   "options": [
+    "A) Qasam ichdi",
+    "B) Sovg‘a berdi",
+    "C) Pul berdi"
+   ],
+   "answer": "A) Qasam ichdi"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rahmat urgan uchinchi chillak qayerga borib tushdi?",
+   "options": [
+    "A) Meteostansiya hovlisiga",
+    "B) Hovuz bo‘yiga",
+    "C) Maktab hovlisiga"
+   ],
+   "answer": "A) Meteostansiya hovlisiga"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘ri zuvullashdan qutulish uchun bolasopni qayerga tashladi?",
+   "options": [
+    "A) Yumronqoziqning iniga",
+    "B) Chuqur suvga",
+    "C) Daraxt shoxiga"
+   ],
+   "answer": "A) Yumronqoziqning iniga"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bo‘ri g‘irromlik qilgach, Rahmat qanday munosabat bildirdi?",
+   "options": [
+    "A) Indamay ketib qoldi",
+    "B) Bo‘rini urdi",
+    "C) Chillakni olib qo‘ydi"
+   ],
+   "answer": "A) Indamay ketib qoldi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bo‘ri o‘yinda yutib olgach Rahmatda qanday holat bo‘ldi?",
+   "options": [
+    "A) Charchab, yo‘talib uyiga ketdi",
+    "B) Quvonib sakradi",
+    "C) Bo‘riga tan berdi"
+   ],
+   "answer": "A) Charchab, yo‘talib uyiga ketdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bo‘ri Rahmatni o‘yinga chiqarish uchun qanday po‘pisa qildi?",
+   "options": [
+    "A) Go‘ppon deb chaqirishini aytdi",
+    "B) Uyiga borishini aytdi",
+    "C) Onasiga aytishini aytdi"
+   ],
+   "answer": "A) Go‘ppon deb chaqirishini aytdi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «qitmirlik» so‘zi orqali Bo‘rining qaysi odatini tasvirlaydi?",
+   "options": [
+    "A) Mug‘ombirlik va g‘irromligini",
+    "B) Dars qilmasligini",
+    "C) Mehnatdan qochishini"
+   ],
+   "answer": "A) Mug‘ombirlik va g‘irromligini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ikkinchi o‘yinda Bo‘ri zuvullayotganda do‘ppisini nima qildi?",
+   "options": [
+    "A) Buklab tishlab oldi",
+    "B) Boshi ustiga kiyib oldi",
+    "C) Cho‘ntagiga solib qo‘ydi"
+   ],
+   "answer": "A) Buklab tishlab oldi"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalar o‘ynab yurib qaysi joygacha yetib borishdi?",
+   "options": [
+    "A) Ko‘kqiya soyigacha",
+    "B) Boshqa qishloqqacha",
+    "C) Shakar ko‘ligacha"
+   ],
+   "answer": "A) Ko‘kqiya soyigacha"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "O‘yin oxirida Rahmat nega birdan yig‘lab yubordi?",
+   "options": [
+    "A) Och qolib, juda charchagani uchun",
+    "B) Yutqazib qo‘ygani uchun",
+    "C) Chillakbola yo‘qolgani uchun"
+   ],
+   "answer": "A) Och qolib, juda charchagani uchun"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Rahmat nima uchun Bo‘rini «g‘irrom emassan» deb tan oldi?",
+   "options": [
+    "A) Oxirigacha matonat ko‘rsatgani uchun",
+    "B) O‘yinda yutib chiqqani uchun",
+    "C) Unga ovqat bergani uchun"
+   ],
+   "answer": "A) Oxirigacha matonat ko‘rsatgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bo‘rining charchasa ham zuvullashda davom etishi qanday sifat?",
+   "options": [
+    "A) Sabr va mardlik",
+    "B) O‘jarlik va manmanlik",
+    "C) Qo‘rqoqlik va ojizlik"
+   ],
+   "answer": "A) Sabr va mardlik"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif bolalik o‘yinlarini inson hayotida nima deb ataydi?",
+   "options": [
+    "A) Ajib bir sinov davri",
+    "B) Vaqt o‘tkazish vositasi",
+    "C) Shunchaki ko‘ngilochar mashg‘ulot"
+   ],
+   "answer": "A) Ajib bir sinov davri"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shu voqeadan keyin Bo‘rining xulqida qanday o‘zgarish bo‘ldi?",
+   "options": [
+    "A) O‘yindan qochmaydigan bo‘ldi",
+    "B) Chillak o‘ynamay qo‘ydi",
+    "C) Rahmat bilan urishib qoldi"
+   ],
+   "answer": "A) O‘yindan qochmaydigan bo‘ldi"
+  }
+ ]
+}

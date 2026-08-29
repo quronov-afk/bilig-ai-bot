@@ -1,0 +1,417 @@
+{
+ "title": "Alisaning sayohatlari",
+ "author": "Kir Bulichev",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "do‘stlik",
+   "ilm-fan va koinot",
+   "jasorat",
+   "mas’uliyat",
+   "sarguzasht"
+  ],
+  "theme": "Aql-idrok, halollik va do‘stona hamkorlik har qanday murakkab sinovni yengishga hamda koinotda tinchlikni saqlashga yordam beradi.",
+  "summary": "Bo‘lajak yosh biologlar – Alisa, Pashka, Arkasha, Javod va egizaklar har xil sarguzashtlarni boshdan kechirishadi. Ular Vaqt instituti orqali o‘tmishga borib, pitekantrop Geraklni olib kelishadi. Gerakl laboratoriyani tozalash o‘rniga shlang bilan suv sepib ivirsitib yuboradi. Pashka bilan Alisa o‘rta asrlarga borib, ritsar turnirida qatnashadi va jodugarlikda ayblangan qizaloqni qutqaradi. Penelopa sayyorasidagi sarguzashtlarda esa ular sirli hodisalarga va kosmik qaroqchilarga duch kelishadi. Qaroqchilar qirolichasi va Kris Brastak sayyorasini hamda kosmik kemani egallamoqchi bo‘lganida, doktor yaratgan dangasalik keltirib chiqaruvchi dori vositasida qaroqchilar zararsizlantiriladi. Alisa va uning do‘stlari o‘z bilim hamda jasoratlari bilan g‘olib chiqib, eson-omon uyga qaytishadi.",
+  "characters": "Alisa Seleznyova – zukkosi va jasur yosh biolog, topqir qiz; Pashka Geraskin – xayolparast va sarguzashtsevar yigit; Arkasha Sapojkov – tajribali va hissiyotli o‘simliklar parvarishlovchisi; Javod Rahimov – hayvonot bog‘iga qarovchi yosh olim; Gerakl – Yava orolidan olib kelingan pitekantrop; Qaroqchilar qirolichasi va Kris – koinotni egallamoqchi bo‘lgan makkor qaroqchilar; Doktor – topqir va vazmin kema shifokori.",
+  "conclusion": "Asar bolalarda do‘stlik, mas’uliyat, bilimga chanqoqlik va halollik kabi fazilatlarni shakllantiradi. Kattalar va do‘stlar bergan saboqlarni qadrlash hamda qiyin vaziyatda aql bilan yo‘l tutish muhimligini o‘rgatadi.",
+  "difficulty": "o‘rta",
+  "mood": "kulgili, yengil",
+  "for_whom": "Ilm-fan, koinot sarguzashtlari va topsqirlik haqida o‘qishni xohlaydigan, do‘stlikni qadrlaydigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Biostansiyadagi o‘quvchilar necha yoshdan oshmagan bolalar edi?",
+   "options": [
+    "A) 10 yoshdan",
+    "B) 12 yoshdan",
+    "C) 15 yoshdan"
+   ],
+   "answer": "B) 12 yoshdan"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pashka laboratoriyada o‘qib kelgan kitob nomi nima edi?",
+   "options": [
+    "A) Qadimgi Yunoniston afsonalari",
+    "B) Koinot sarguzashtlari",
+    "C) Biologiya sirlari"
+   ],
+   "answer": "A) Qadimgi Yunoniston afsonalari"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Pitekantrop Gerakl laboratoriyani tozalashda nimalardan foydalandi?",
+   "options": [
+    "A) Supurgi va chelakdan",
+    "B) Suv sepiladigan shlangdan",
+    "C) Changyutgich va shvetkadan"
+   ],
+   "answer": "B) Suv sepiladigan shlangdan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Gerakl nima uchun ish qilishdan oldin banan so‘radi?",
+   "options": [
+    "A) Mevalarni juda yaxshi ko‘rgani uchun",
+    "B) Qorni juda och bo‘lgani uchun",
+    "C) Bevaqt uyg‘otishgani uchun"
+   ],
+   "answer": "A) Mevalarni juda yaxshi ko‘rgani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Pashkaning o‘z ishini pitekantropga topshirib ketishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, u juda shoshilayotgan edi",
+    "B) Noto‘g‘ri, mas’uliyatsizlik qilib xato qildi",
+    "C) To‘g‘ri, Gerakl aqlli maymun edi"
+   ],
+   "answer": "B) Noto‘g‘ri, mas’uliyatsizlik qilib xato qildi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Pashkaning xonasini Avgiyning otxonasi deyish bilan nimani tasvirlagan?",
+   "options": [
+    "A) Xonaning juda ivirsib yotganini",
+    "B) Otlar saqlanadigan joyligini",
+    "C) Qadimgi binoga o‘xshashini"
+   ],
+   "answer": "A) Xonaning juda ivirsib yotganini"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vaqt institutida Gogolning qaysi asari saqlab qolingan?",
+   "options": [
+    "A) Urush va tinchlik",
+    "B) O‘lik jonlar",
+    "C) Shinel"
+   ],
+   "answer": "B) O‘lik jonlar"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yava orolidan qaysi ibtidoiy odam biostansiyaga olib kelindi?",
+   "options": [
+    "A) Pitekantrop Gerakl",
+    "B) Neandertal",
+    "C) Kroman’on"
+   ],
+   "answer": "A) Pitekantrop Gerakl"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Vaqt institutidagi bo‘limlar to‘g‘ri ko‘rsatilgan qatorni toping.",
+   "options": [
+    "A) Tarixiy, tadqiqotchilar va nohaqliklarni to‘g‘rilash",
+    "B) Kosmik, biologik va fizika",
+    "C) Kimyoviy, tibbiy va sport"
+   ],
+   "answer": "A) Tarixiy, tadqiqotchilar va nohaqliklarni to‘g‘rilash"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Richard Tempest o‘tmishga boruvchilarga nima uchun niqob berdi?",
+   "options": [
+    "A) O‘tmishga mikrob olib o‘tmaslik uchun",
+    "B) Yuzlarini yashirish uchun",
+    "C) Chivinlardan saqlanish uchun"
+   ],
+   "answer": "A) O‘tmishga mikrob olib o‘tmaslik uchun"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘rta asrlarda Alisa va Pashkaga kim hamroqlik qildi?",
+   "options": [
+    "A) Qirol saroyidagi masxara",
+    "B) Qora ritsar",
+    "C) Semiz oshpaz"
+   ],
+   "answer": "A) Qirol saroyidagi masxara"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Penelopa sayyorasida qaysi g‘alati hayvon ko‘ringan edi?",
+   "options": [
+    "A) Shoxdor itning yarmi",
+    "B) Uchar ayiq",
+    "C) Ikki boshli sher"
+   ],
+   "answer": "A) Shoxdor itning yarmi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Pashka va Alisa jodugar qizni qanday qutqarishdi?",
+   "options": [
+    "A) Kareta bilan shahardan qochishdi",
+    "B) Ritsarlar bilan urushishdi",
+    "C) Qirolga pul berishdi"
+   ],
+   "answer": "A) Kareta bilan shahardan qochishdi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Pashka Ritsar turnirida nima uchun g‘olib bo‘ldi?",
+   "options": [
+    "A) Ayyorligi va xokkey o‘ynagani uchun",
+    "B) Eng kuchli ritsar bo‘lgani uchun",
+    "C) Unga qirol yordam bergani uchun"
+   ],
+   "answer": "A) Ayyorligi va xokkey o‘ynagani uchun"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Pashkaning jodugar qizaloqni gulxandan qutqarishi qanday harakat?",
+   "options": [
+    "A) Jasoratli va mardona harakat",
+    "B) Qo‘rqinchli va bemanfaot ish",
+    "C) Qoidalarga qarshi xato ish"
+   ],
+   "answer": "A) Jasoratli va mardona harakat"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif o‘rta asr ritsarlarining savodsizligini qanday jumla bilan ko‘rsatadi?",
+   "options": [
+    "A) Ularning maktab ko‘rmaganini aytib",
+    "B) Ularni o‘qimishli deb maqtab",
+    "C) Ularning she’r aytganini tasvirlab"
+   ],
+   "answer": "A) Ularning maktab ko‘rmaganini aytib"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Penelopa sayyorasidagi mehmonxona kimlar uchun shaffof shar shaklida qurilgan?",
+   "options": [
+    "A) Krokoslar uchun",
+    "B) Pitekantroplar uchun",
+    "C) Ritsarlar uchun"
+   ],
+   "answer": "A) Krokoslar uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yovvoyi lagerni tark etayotganda yoniga nima oldi?",
+   "options": [
+    "A) Kichkina to‘pponcha",
+    "B) Kattakon fonar",
+    "C) Uzun nayza"
+   ],
+   "answer": "A) Kichkina to‘pponcha"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Penelopa sayyorasida qanday kashfiyot qilindi?",
+   "options": [
+    "A) Qadimgi tosh yo‘l topildi",
+    "B) Oltin koni topildi",
+    "C) Ulkan shahar qurildi"
+   ],
+   "answer": "A) Qadimgi tosh yo‘l topildi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Arkasha shoxdor it haqida qanday ilmiy faraz bildirdi?",
+   "options": [
+    "A) U vaqt bo‘ylab yashaydi dedi",
+    "B) U sehrlangan maymun dedi",
+    "C) U boshqa sayyoradan kelgan dedi"
+   ],
+   "answer": "A) U vaqt bo‘ylab yashaydi dedi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qaroqchilar Brastak sayyorasiga qanday kirib olishgan edi?",
+   "options": [
+    "A) Quticha ichida yashirinib",
+    "B) Kema bilan ochiq hujum qilib",
+    "C) Shahar darvozasini buzib"
+   ],
+   "answer": "A) Quticha ichida yashirinib"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kris kayutadan qochish uchun qaysi jonzotga aylandi?",
+   "options": [
+    "A) Suvarakka",
+    "B) Kapalakka",
+    "C) Qumursqaga"
+   ],
+   "answer": "A) Suvarakka"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qaroqchilar qirolichasi nima uchun Pashkani savaladi?",
+   "options": [
+    "A) O‘zini turist deb aldagani uchun",
+    "B) Qutichani sindirib qo‘ygani uchun",
+    "C) Ovqatni to‘kib yuborgani uchun"
+   ],
+   "answer": "A) O‘zini turist deb aldagani uchun"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Doktor qaroqchilarga qarshi qanday usulni qo‘lladi?",
+   "options": [
+    "A) Dangasalik keltiradigan dori sepdi",
+    "B) Ularni xonaga qamab qo‘ydi",
+    "C) Blaster bilan qurolsizlantirdi"
+   ],
+   "answer": "A) Dangasalik keltiradigan dori sepdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Doktorning qaroqchilarni qurol bilan emas, dori bilan yengishi haqida fikringiz?",
+   "options": [
+    "A) Oqilona va tinchliksevar yo‘l",
+    "B) Qo‘rqoqlik va befoyda ish",
+    "C) Xavfli va noto‘g‘ri harakat"
+   ],
+   "answer": "A) Oqilona va tinchliksevar yo‘l"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Alisaning brastaklarni qutqarish uchun o‘zini xavfga qo‘yishi qanday saboq beradi?",
+   "options": [
+    "A) Do‘stlarga yordam berish mas’uliyatini",
+    "B) Faqat o‘zini o‘ylash kerakligini",
+    "C) Shoshqaloqlik zararligini"
+   ],
+   "answer": "A) Do‘stlarga yordam berish mas’uliyatini"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif dangasalik dorisi sepilgach, xonada tarqagan hidni nimaga o‘xshatdi?",
+   "options": [
+    "A) Marvarid gullar hidiga",
+    "B) Apelsin va olma hidiga",
+    "C) Mog‘or va chang hidiga"
+   ],
+   "answer": "A) Marvarid gullar hidiga"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doktorning Dangasalikdan faqat mehnat qutqaradi degan xulosasi asarda nimani anglatadi?",
+   "options": [
+    "A) Harakat va mehnatsevarlik muhimligini",
+    "B) Uxlash sog‘liq uchun foydaliligini",
+    "C) Dori ichish shartligini"
+   ],
+   "answer": "A) Harakat va mehnatsevarlik muhimligini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qaroqchilar qirolichasi o‘zini qaysi xastalik bezovta qilayotganini aytdi?",
+   "options": [
+    "A) Bel og‘rig‘i",
+    "B) Bosh og‘rig‘i",
+    "C) Tish og‘rig‘i"
+   ],
+   "answer": "A) Bel og‘rig‘i"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Moskvaga qaytgach, Pashka turistlardan nimani so‘rab oldi?",
+   "options": [
+    "A) Savatcha nima uchun kerakligini",
+    "B) Qayerdan kelishganini",
+    "C) Necha yoshda ekanliklarini"
+   ],
+   "answer": "A) Savatcha nima uchun kerakligini"
+  }
+ ]
+}

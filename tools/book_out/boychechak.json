@@ -1,0 +1,287 @@
+{
+ "title": "Boychechak",
+ "author": "Abdusaid Ko‘chimov",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "8-11 yosh",
+  "topics": [
+   "do‘stlik",
+   "mehr-oqibat",
+   "saxovat",
+   "kamtarinlik",
+   "bolalik"
+  ],
+  "theme": "Bahor elchisi bo‘lgan boychechak orqali bolalarning bir-biriga bo‘lgan mehri, saxiyligi va muhtoj dildoshiga yordam berish tuyg‘ulari ulug‘lanadi.",
+  "summary": "Qo‘zivoy cho‘pon tog‘asi sovg‘a qilgan ilk boychechak bilan do‘stlari yoniga oshiqadi. Bolalar ikki guruhga bo‘linib o‘ynayotgan edi, ammo boychechak sabab birga «Boychechak» aytishga kelishib, qishloq xonadonlarini aylanib chiqishadi. Odamlar bahor mujdasini quvonch va saxiylik bilan kutib olib, bolalarga pul va shirinliklar berishadi. Salbiy fe’lli qo‘mondon Murod to‘plangan pullarning bir qismini yashirib, Qo‘zivoyga boychechak va ulush berishdan bosh tortadi hamda gulni balchiqqa otadi. Shunda Qo‘zivoy bu boychechak va to‘plangan pullarni onasi kasal, yetim qolgan qo‘shnisi Usmonga bermoqchi bo‘lganini aytadi. Buni eshitgan bolalar Muroddan yuz o‘girib, pullarni Usmonga berishga qaror qilishadi. Murod ham o‘z qilmishidan uyalib, yashirgan pullarini topshiradi. Bolalar quvonch bilan Usmonnikiga oshiqishadi.",
+  "characters": "Qo‘zivoy — sodda va mehribon bolakay; Murod — g‘irrom va manmanroq qo‘mondon bola; Bahrilla («professor») — aqlli va odil bola; Tosh tog‘a — Qo‘zivoyning cho‘pon tog‘asi; Shodmon amaki — ichganida fe’li o‘zgaradigan, lekin ichdan mehribon fuqaro.",
+  "conclusion": "Kitob bolalarga saxovatli bo‘lishni, muhtoj va kasal do‘stlarga g‘amxo‘rlik qilishni hamda g‘irromlik va xasislikning oqibati yomon bo‘lishini o‘rgatadi. Halollik va mehr-oqibat har qanday kelishmovchilikni yengishini ko‘rsatadi.",
+  "difficulty": "oson",
+  "mood": "samimiy, ta’sirli, o‘ylantiruvchi",
+  "for_whom": "Qishloq hayoti, bolalar sarguzashtlari va do‘stlik haqidagi samimiy hikoyalarni yoqtiradigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qo‘zivoyga sap-sariq boychechakni kim keltirib berdi?",
+   "options": [
+    "A) Tosh tog‘asi",
+    "B) Murod chilim",
+    "C) Do‘sti Bahrilla"
+   ],
+   "answer": "A) Tosh tog‘asi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tosh tog‘a boychechakni qayerga qistirib kelgan edi?",
+   "options": [
+    "A) Choponining cho‘ntagiga",
+    "B) Tulki telpagiga",
+    "C) Otining egariga"
+   ],
+   "answer": "B) Tulki telpagiga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pastguzarliklar bolalarining qo‘mondoni kim edi?",
+   "options": [
+    "A) Otabek",
+    "B) Ro‘zivoy",
+    "C) Murod chilim"
+   ],
+   "answer": "C) Murod chilim"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolalar o‘yinda kelisha olmagach, qanday qarorga kelishdi?",
+   "options": [
+    "A) Birga «Boychechak» aytadigan bo‘lishdi",
+    "B) Barchasi uylariga tarqalib ketishdi",
+    "C) Qaytadan urush o‘yinini boshlashdi"
+   ],
+   "answer": "A) Birga «Boychechak» aytadigan bo‘lishdi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qo‘zivoy boychechakni ko‘rib nega juda quvonib ketdi?",
+   "options": [
+    "A) U bahorning ilk gulini ko‘rgan edi",
+    "B) Tog‘asi unga o‘yinchoq bergandi",
+    "C) Do‘stlariga maqtanmoqchi bo‘lgan edi"
+   ],
+   "answer": "A) U bahorning ilk gulini ko‘rgan edi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Murod nega boychechakni o‘ziniki qilmoqchi bo‘ldi?",
+   "options": [
+    "A) Boshliqlik qilib foyda ko‘rmoqchi edi",
+    "B) Onasiga sovg‘a qilmoqchi edi",
+    "C) Gulni juda yaxshi ko‘rardi"
+   ],
+   "answer": "A) Boshliqlik qilib foyda ko‘rmoqchi edi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Murodning Qo‘zivoyga «sotqin» deb do‘q qilgani to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, chunki Qo‘zivoy beozor edi",
+    "B) To‘g‘ri, u dushman tarafga o‘tdi",
+    "C) To‘g‘ri, u o‘yinni buzdi"
+   ],
+   "answer": "A) Noto‘g‘ri, chunki Qo‘zivoy beozor edi"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalar «Boychechak» qo‘shig‘ini aytishni kimnikidan boshlashdi?",
+   "options": [
+    "A) Shodmon amakinikidan",
+    "B) Fotima folbinnikidan",
+    "C) Ismat cho‘loqnikidan"
+   ],
+   "answer": "B) Fotima folbinnikidan"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bahrillaga bilimdonligi va bosiqligi uchun qanday nom berishgandi?",
+   "options": [
+    "A) Qo‘mondon",
+    "B) Professor",
+    "C) Sarkarda"
+   ],
+   "answer": "B) Professor"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ismat cho‘loqnikida bolalarning ustiga nima to‘kildi?",
+   "options": [
+    "A) Issiq choy",
+    "B) Muzday suv",
+    "C) Bug‘doy donlari"
+   ],
+   "answer": "B) Muzday suv"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolalar Shodmon amakinikiga kirganda voqealar qanday tartibda bo‘ldi?",
+   "options": [
+    "A) Do‘q eshitishdi, qo‘shiq aytishdi, pul olishdi",
+    "B) Pul olishdi, ovqat yeyishdi, qochishdi",
+    "C) O‘ynashdi, sovg‘a olishdi, uxlashdi"
+   ],
+   "answer": "A) Do‘q eshitishdi, qo‘shiq aytishdi, pul olishdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shodmon amaki Qo‘zivoyning qo‘shig‘ini eshitib nega yumshab qoldi?",
+   "options": [
+    "A) Bola dilidagi ezgu tilakdan ta’sirlandi",
+    "B) Bolaning chiroyli kiyimini ko‘rib quvondi",
+    "C) Qo‘shiq judayam kulgili tuyuldi"
+   ],
+   "answer": "A) Bola dilidagi ezgu tilakdan ta’sirlandi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Fotima folbin boychechakni ko‘rganda nega yig‘lab yubordi?",
+   "options": [
+    "A) Urushda halok bo‘lgan o‘g‘illarini esladi",
+    "B) Bolalarning shovqinidan jahli chiqdi",
+    "C) Qo‘lida puli yo‘qligidan uyaldi"
+   ],
+   "answer": "A) Urushda halok bo‘lgan o‘g‘illarini esladi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif to‘lin oyni tasvirlaganda tabiatda qanday kayfiyat uyg‘otgan?",
+   "options": [
+    "A) Vahimali va qo‘rqinchli",
+    "B) Yorug‘, osuda va sehrli",
+    "C) G‘amgin va vaqtinchalik"
+   ],
+   "answer": "B) Yorug‘, osuda va sehrli"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalar qochib borib qayerda gulxan yoqishdi?",
+   "options": [
+    "A) Eski saroyda",
+    "B) Otabeknikida",
+    "C) Ilontepada"
+   ],
+   "answer": "A) Eski saroyda"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Murod yashirgan pullarini qayerdan olib chiqdi?",
+   "options": [
+    "A) Paytavasi orasidan",
+    "B) Etigining ichidan",
+    "C) Cho‘ntagi tubidan"
+   ],
+   "answer": "A) Paytavasi orasidan"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Saroydagi voqealar ketma-ketligi qaysi javobda to‘g‘ri berilgan?",
+   "options": [
+    "A) Pul sanaldi, haqiqat aytildi, Murod uyaldi",
+    "B) Murod qochdi, boychechak otildi, pul sanaldi",
+    "C) Usmon keldi, pul berildi, Murod kuldi"
+   ],
+   "answer": "A) Pul sanaldi, haqiqat aytildi, Murod uyaldi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Murod nega yashirgan pullarini chiqarib berishga majbur bo‘ldi?",
+   "options": [
+    "A) Qo‘zivoyning maqsadi oldida uyalib ketdi",
+    "B) Bolalar uni urishmoqchi bo‘lishdi",
+    "C) Pul unga kerak bo‘lmay qoldi"
+   ],
+   "answer": "A) Qo‘zivoyning maqsadi oldida uyalib ketdi"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bolalarning barcha pullarni Usmonga berish qarori haqida nima deysan?",
+   "options": [
+    "A) Juda to‘g‘ri va saxovatli qaror",
+    "B) Noto‘g‘ri, pullarni bo‘lishish kerak edi",
+    "C) Faqat Murodning ulushini berish kerak edi"
+   ],
+   "answer": "A) Juda to‘g‘ri va saxovatli qaror"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif boychechakni «mash’ala»ga o‘xshatib nimani ko‘rsatib bergan?",
+   "options": [
+    "A) Ezgulik va umid yo‘lini yoritishini",
+    "B) Gulning judayam issiqligini",
+    "C) Tunda uylarga olov yoqishini"
+   ],
+   "answer": "A) Ezgulik va umid yo‘lini yoritishini"
+  }
+ ]
+}

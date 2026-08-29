@@ -1,0 +1,447 @@
+{
+ "title": "Jayhun ustida bulutlar",
+ "author": "Mirkarim Osim",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15",
+  "topics": [
+   "tarix",
+   "ilm-fan",
+   "jasorat",
+   "ustoz-shogird",
+   "vatan"
+  ],
+  "theme": "Ilm-fan, haqiqat va ma‘rifat har qanday zulm va mustabid hukmdorlar tazyiqidan baland turadi.",
+  "summary": "Qissada buyuk aloma Abu Rayhon Beruniyning yoshligi, Xorazmda Abu Nasr ibn Iroq qo‘lida ilm o‘rganishi va ilmiy izlanishlari tasvirlanadi. Xorazmdagi siyosiy parokandalik hamda Mahmud G‘aznaviyning bosqini sababli Beruniy G‘azna shahriga asir sifatida olib ketiladi. Sulton Mahmudning tazyiqlariga, xavf-xatarlarga qaramay, Beruniy o‘z ilmiy e‘tiqodi, mardligi va hozirjavobligini yo‘qotmaydi. U ustozlari va do‘stlari bilan birga har qanday og‘ir sharoitda ham ilm-fanga hamda haqiqatga sobitqadamlik bilan xizmat qilishda davom etadi.",
+  "characters": "Abu Rayhon Beruniy — izlanuvchan, mard va hozirjavob olim; Abu Nasr ibn Iroq — Beruniyning mehribon ustozi, Xorazmshoh qarindoshi; Mahmud G‘aznaviy — jahondor, mutaassib va shubhali sulton; Abul Abbos Ma‘mun — Xorazm hukmdori.",
+  "conclusion": "Asar o‘quvchida ilm-fanga ishtiyoq, mustahkam iroda hamda qiyinchiliklar oldida yengilmaslik tuyg‘usini shakllantiradi. Bola mardlik, haqiqatgo‘ylik va ustozga hurmat kabi oliyjanob qadriyatlarni o‘rganadi.",
+  "difficulty": "o‘rta",
+  "mood": "jiddiylik, o‘ylantiruvchi, tarixdan g‘ururlanish",
+  "for_whom": "Tarixiy shaxslar hayoti, ilm-fan yo‘lidagi mashaqqatlar va mardlik haqidagi qissalarga qiziqadigan o‘quvchilar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abu Nasr ibn Iroq Xorazmshoh Abu Abdulloga kim bo‘lgan?",
+   "options": [
+    "A) Amakivachchasi",
+    "B) Inisi",
+    "C) Vaziri",
+    "D) Qaynotasi"
+   ],
+   "answer": "A) Amakivachchasi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muhammad birinchi ko‘rishganda necha yoshda edi?",
+   "options": [
+    "A) O‘n birga qadam qo‘ygan",
+    "B) To‘qqiz yoshda edi",
+    "C) O‘n besh yoshda edi",
+    "D) Yetti yoshda edi"
+   ],
+   "answer": "A) O‘n birga qadam qo‘ygan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muhammad o‘qishdan oldin qanday tirikchilik qilgan?",
+   "options": [
+    "A) Cho‘ldan saksovul keltirib sotgan",
+    "B) Non yopib sotgan",
+    "C) Karvonsaroyda xizmat qilgan",
+    "D) Qo‘ylarni boqib yurgan"
+   ],
+   "answer": "A) Cho‘ldan saksovul keltirib sotgan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Beruniy necha yoshida katta globus yasadi?",
+   "options": [
+    "A) Yigirma bir yoshida",
+    "B) O‘n besh yoshida",
+    "C) O‘n sakkiz yoshida",
+    "D) Yigirma besh yoshida"
+   ],
+   "answer": "A) Yigirma bir yoshida"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Abu Nasr Muhammadga qaysi ilmlarni tartib bilan o‘rgatdi?",
+   "options": [
+    "A) Avval hisob, keyin tabobat",
+    "B) Avval tabobat, keyin falakiyot",
+    "C) Avval yunon tili, keyin hisob",
+    "D) Avval kimyo, keyin mantiq"
+   ],
+   "answer": "A) Avval hisob, keyin tabobat"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Abu Nasr Muhammadni tekinga o‘qitishga qaror qildi?",
+   "options": [
+    "A) Uning o‘tkir zehnini ko‘rib",
+    "B) Otasini yaxshi tanigani uchun",
+    "C) Onasining iltimosi sababli",
+    "D) Saroyda xizmat qildirgani uchun"
+   ],
+   "answer": "A) Uning o‘tkir zehnini ko‘rib"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega ustoz Beruniyga shahardan shoshilinch ketishni maslahat berdi?",
+   "options": [
+    "A) Urush xavfi tug‘ilgani uchun",
+    "B) O‘qishni tugatgani uchun",
+    "C) Sayohat qilishni xohlagani uchun",
+    "D) Shoh haydagani uchun"
+   ],
+   "answer": "A) Urush xavfi tug‘ilgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Beruniyning xavf paytida ustoz maslahatiga kirishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, hayotini va ilmini saqladi",
+    "B) Noto‘g‘ri, jang qilishi kerak edi",
+    "C) Noto‘g‘ri, ustozini majburlashi kerak edi",
+    "D) Farqi yo‘q, baribir tutildi"
+   ],
+   "answer": "A) To‘g‘ri, hayotini va ilmini saqladi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «insonning ziynati ilm» deya nimani ta‘kidlaydi?",
+   "options": [
+    "A) Ilm va ma‘rifatning yuksak qadrini",
+    "B) Kiyimlar chiroyli bo‘lishi kerakligini",
+    "C) Boylik eng muhim narsa ekanini",
+    "D) Amaldorlar ziynatli kiyinishini"
+   ],
+   "answer": "A) Ilm va ma‘rifatning yuksak qadrini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «falokat bulutlari paydo bo‘ldi» deganda nimani tasvirlagan?",
+   "options": [
+    "A) Yurtga urush xavfi kelganini",
+    "B) Kuchli yomg‘ir yog‘ganini",
+    "C) Daryo toshib ketganini",
+    "D) Qahraton sovuq boshlanganini"
+   ],
+   "answer": "A) Yurtga urush xavfi kelganini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Beruniy qaysi asarini yozgani uchun ustozidan maqtov eshitdi?",
+   "options": [
+    "A) «Osori boqiya» asari uchun",
+    "B) «Handasa» kitobi uchun",
+    "C) «Tibbiyot» kitobi uchun",
+    "D) «Jug‘rofiya» xaritasi uchun"
+   ],
+   "answer": "A) «Osori boqiya» asari uchun"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Beruniy ramazon oyida qanday tabiat hodisasini kuzatdi?",
+   "options": [
+    "A) Oy to‘la tutilishini",
+    "B) Quyosh tutilishini",
+    "C) Yulduzlar uchishini",
+    "D) Kuchli shamol va to‘fonni"
+   ],
+   "answer": "A) Oy to‘la tutilishini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mahmud G‘aznaviy jangda qanday hayvonlardan foydalandi?",
+   "options": [
+    "A) Besh yuzta fildan",
+    "B) Minlab tuyalardan",
+    "C) Yo‘lbars va arslonlardan",
+    "D) Chopqir otlardan"
+   ],
+   "answer": "A) Besh yuzta fildan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘aznaga olib ketilgan olimlar orasida kim bor edi?",
+   "options": [
+    "A) Beruniy va Abu Nasr",
+    "B) Ibn Sino va Firdavsiy",
+    "C) Umar Xayyom va Rudakiy",
+    "D) Al-Xorazmiy va Farobiy"
+   ],
+   "answer": "A) Beruniy va Abu Nasr"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oy tutilganda avom xalq va Beruniy qanday yo‘l tutdi?",
+   "options": [
+    "A) Xalq vahima qildi, Beruniy o‘lchadi",
+    "B) Xalq uxladi, Beruniy duolar qildi",
+    "C) Xalq qochdi, Beruniy namoz o‘qidi",
+    "D) Hammasi birgalikda azon aytdi"
+   ],
+   "answer": "A) Xalq vahima qildi, Beruniy o‘lchadi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Xorazm hukmdori Mahmud elchisiga nisbatan qanday yo‘l tutdi?",
+   "options": [
+    "A) Ikkalanib maslahat so‘radi va tinchlantirdi",
+    "B) Urush e‘lon qildi va qochdi",
+    "C) Mahmudga taslim bo‘ldi va yig‘ladi",
+    "D) Elchini qamadi va qo‘shin yubordi"
+   ],
+   "answer": "A) Ikkalanib maslahat so‘radi va tinchlantirdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Beruniy oy tutilishini yaxshilik alomati deb bildi?",
+   "options": [
+    "A) Hodisaning ilmiy sababini bilgani uchun",
+    "B) Diniy alomatlarni yaxshi ko‘rgani uchun",
+    "C) Shoh xursand bo‘lgani uchun",
+    "D) Qorong‘ilik yoqqani uchun"
+   ],
+   "answer": "A) Hodisaning ilmiy sababini bilgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Mahmud G‘aznaviy Xorazm ustiga qo‘shin tortib keldi?",
+   "options": [
+    "A) Yurtni egallash va talash uchun",
+    "B) Beruniyni ko‘rgani kelgani uchun",
+    "C) Dinni yoyish niyatida bo‘lgani uchun",
+    "D) Karvonlarni qutqarish uchun"
+   ],
+   "answer": "A) Yurtni egallash va talash uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Beruniyning podshohga to‘g‘ri maslahat berishi qanday fazilat?",
+   "options": [
+    "A) Haqgo‘ylik va mardlik fazilati",
+    "B) Qo‘rqoqlik va xushomadg‘ylik",
+    "C) Manfaatsizlik va loqaydlik",
+    "D) Kibr va takabburlik"
+   ],
+   "answer": "A) Haqgo‘ylik va mardlik fazilati"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Beruniyning shoh vazirini itga o‘xshatganida nimani ko‘rsatgan?",
+   "options": [
+    "A) Vazirning shohga ko‘r-ko‘rona tobeligini",
+    "B) Vazirning haqiqatan itligini",
+    "C) Vazirning juda aqlliligini",
+    "D) Vazirning yaxshi insonligini"
+   ],
+   "answer": "A) Vazirning shohga ko‘r-ko‘rona tobeligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sulton Mahmud Beruniyga qaysi topshiriqni berdi?",
+   "options": [
+    "A) Qay eshikdan chiqishini topishni",
+    "B) Yangi saroy binosini chizishni",
+    "C) Hindistonga elchi bo‘lib borishni",
+    "D) Oltin xazinani hisoblashni"
+   ],
+   "answer": "A) Qay eshikdan chiqishini topishni"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Beruniy Sulton Mahmudning hiylasini qanday yozib berdi?",
+   "options": [
+    "A) Devorni buzdirib chiqishini yozdi",
+    "B) Asosiy darvozadan chiqishini yozdi",
+    "C) Orqa eshikdan chiqishini yozdi",
+    "D) Uyda qolishini yozdi"
+   ],
+   "answer": "A) Devorni buzdirib chiqishini yozdi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Beruniy saroy tomidan tashlanganda nega tirik qoldi?",
+   "options": [
+    "A) Tagiga paxta va to‘r yoyilgani uchun",
+    "B) Tom juda past bo‘lgani uchun",
+    "C) Suvga tushgani uchun",
+    "D) Qush kabi uchib ketgani uchun"
+   ],
+   "answer": "A) Tagiga paxta va to‘r yoyilgani uchun"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sulton Mahmud javohirlar haqida eshitgach, Beruniyga nima berdi?",
+   "options": [
+    "A) Ot, ming dinor va g‘ulom",
+    "B) Tillo kamar va zar to‘n",
+    "C) Yangi uy va katta yer",
+    "D) Katta rasadxona va kitoblar"
+   ],
+   "answer": "A) Ot, ming dinor va g‘ulom"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mahmud Beruniyni jazolash va mukofotlashida nima ko‘rindi?",
+   "options": [
+    "A) Avval g‘azablandi, keyin ilmini tan oldi",
+    "B) Avval yaxshi ko‘rdi, keyin yomon ko‘rdi",
+    "C) Shoh uni sinamoqchi emas edi",
+    "D) Vazir uni majburlab mukofotlatdi"
+   ],
+   "answer": "A) Avval g‘azablandi, keyin ilmini tan oldi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega vazir Hasanak Beruniyni tomdan tashlashda paxta yoydirdi?",
+   "options": [
+    "A) Beruniydek ulug‘ olim o‘lishini xohlamagani uchun",
+    "B) Shohning amrini yoqtirmagani uchun",
+    "C) O‘zi qo‘rqqani uchun",
+    "D) Shohga bergan va‘dasi sababli"
+   ],
+   "answer": "A) Beruniydek ulug‘ olim o‘lishini xohlamagani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Beruniy tomdan tashlangach ham ruhi sinmadi?",
+   "options": [
+    "A) Ilm yo‘lidagi mashaqqatlarga tayyor bo‘lgani uchun",
+    "B) Shoh unga teginolmasligini bilgani uchun",
+    "C) Do‘stlari qutqarishiga ishongani uchun",
+    "D) O‘zini juda kuchli deb bildi"
+   ],
+   "answer": "A) Ilm yo‘lidagi mashaqqatlarga tayyor bo‘lgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Beruniyning shoh oldida ham haqiqatni aytishi qanday baholanadi?",
+   "options": [
+    "A) Olimlik va e‘tiqodga sadoqat misoli",
+    "B) Kibrli va nodonlik belgisi",
+    "C) Qo‘rqmasdan qilingan bema‘ni ish",
+    "D) Taqdirga qarshi chiqish xatosi"
+   ],
+   "answer": "A) Olimlik va e‘tiqodga sadoqat misoli"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Vazir Hasanakning Beruniy hayotini saqlab qolishi to‘g‘ri ishmi?",
+   "options": [
+    "A) To‘g‘ri, buyuk olimni o‘limdan qutqardi",
+    "B) Noto‘g‘ri, shohga xiyonat qildi",
+    "C) Farqi yo‘q, olimga baribir edi",
+    "D) Noto‘g‘ri, o‘zini xavfga qo‘ydi"
+   ],
+   "answer": "A) To‘g‘ri, buyuk olimni o‘limdan qutqardi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Beruniyning «Ilm uchun mashaqqatga bardosh beraylik» so‘zi nimani anglatadi?",
+   "options": [
+    "A) Ilmning har qanday qiyinchilikdan ustunligini",
+    "B) Olimlarning qiynalishni yaxshi ko‘rishini",
+    "C) Zulmga qarshi kurashmaslik kerakligini",
+    "D) Shohlarga hamisha bo‘ysunish lozimligini"
+   ],
+   "answer": "A) Ilmning har qanday qiyinchilikdan ustunligini"
+  }
+ ]
+}

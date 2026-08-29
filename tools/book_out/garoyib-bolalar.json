@@ -1,0 +1,417 @@
+{
+ "title": "G‘aroyib bolalar",
+ "author": "Aziz Nesin",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "do‘stlik",
+   "maktab",
+   "oila",
+   "samimiylik",
+   "kattalar va bolalar"
+  ],
+  "theme": "Kattalar va bolalar dunyosi o‘rtasidagi samimiy munosabatlar, ta'lim hamda tarbiyadagi uchraydigan nuqsonlarni bolalarning beg‘ubor nigohi orqali hajviy yoritish.",
+  "summary": "Istanbuldan Anqaraga ko‘chib o‘tgan Zaynab va uning Istanbulda qolgan sinfdoshi Ahmad maktub orqali muloqot qilishadi. Har ikki bola o‘z maktabidagi voqealar, inspektor va o‘qituvchilarning g‘alati qiliqlari, ota-onalarining maqtanchakligi va kundalik turmushdagi kulgili holatlarni samimiy bayon qiladi. Ahmad sinfda inspektor oldida adashib esankirab qolishi, yangi o‘qituvchining «eskisini unutinglar» degan g‘alati uslubi va maktab konsertidagi tartibsizliklarni yozsa, Zaynab ham o‘z hayotidagi hajviy voqealarni ulashadi. So‘ngida Ahmad bu xatlarni to‘plab, bolalar romani konkursiga yuborishni taklif etadi. Kitob oxirida muallif Aziz Nesin bolalarga murojaat qilib, kattalar ham bir paytlar bola bo‘lganini unutib qo‘yishini ta'kidlaydi.",
+  "characters": "Ahmad — Istanbulda yashaydigan sinf a'lochisi, zukko va sinchkov bola; Zaynab — Anqaraga ko‘chib o‘tgan quvnoq va kuzatuvchan qiz; Metin — Zaynabning ukasi; Damir — Ahmadning sinfdoshi; Yangi o‘qituvchi — darslarni o‘zgacha uslubda o‘tishga urinuvchi muallim.",
+  "conclusion": "Bu asar bolaga kattalar dunyosini tushunishga, atrofdagi voqealarga tanqidiy va yumor bilan qarashga o‘rgatadi. Ota-onalar uchun esa farzand ruhiyatini yaxshiroq anglash va ular bilan samimiy muloqot o‘rnatish muhimligini eslatadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, yengil, maroqli",
+  "for_whom": "Maktab hayoti, do‘stlar o‘rtasidagi xatlar va kulgili voqealarga qiziqadigan, yumorni yaxshi ko‘radigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zaynab va uning oilasi Istanbuldan qaysi shaharga ko‘chib o‘tdi?",
+   "options": [
+    "A) Izmirga",
+    "B) Anqaraga",
+    "C) Bursa shahriga"
+   ],
+   "answer": "B) Anqaraga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmad va Zaynab bir-biri bilan qanday aloqa bog‘lab turishgan?",
+   "options": [
+    "A) Xat yozishib",
+    "B) Telefon qilib",
+    "C) Telegramma jo‘natib"
+   ],
+   "answer": "A) Xat yozishib"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Inspektor kelganda Ahmad qaysi sanani aytib adashib ketdi?",
+   "options": [
+    "A) 1942-yilni",
+    "B) 1492-yilni",
+    "C) 1963-yilni"
+   ],
+   "answer": "B) 1492-yilni"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmadning sinfiga kelgan yangi o‘qituvchi o‘quvchilardan nimani talab qildi?",
+   "options": [
+    "A) Eskilarini unutishni",
+    "B) Ko‘proq yodlashni",
+    "C) Darsdan qolmaslikni"
+   ],
+   "answer": "A) Eskilarini unutishni"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ahmad tayyorlagan qo‘y haqidagi she’r nima uchun ijro etilmadi?",
+   "options": [
+    "A) O‘qituvchi o‘zgargani uchun",
+    "B) Ahmad yodlay olmagani uchun",
+    "C) Vaqt yetmay qolgani uchun"
+   ],
+   "answer": "A) O‘qituvchi o‘zgargani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega hamma bolalarning otasi o‘zini maktabda a’lochi bo‘lgan deydi?",
+   "options": [
+    "A) Farzandiga o‘rnak bo‘lish uchun",
+    "B) Haqiqatdan shunday bo‘lgani uchun",
+    "C) O‘qituvchi shunday buyurgani uchun"
+   ],
+   "answer": "A) Farzandiga o‘rnak bo‘lish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Inspektor oldida Ahmad nega savollarni aralashtirib yubordi?",
+   "options": [
+    "A) Hayajonlanib esankirab qolgani uchun",
+    "B) Darsni umuman bilmagani uchun",
+    "C) Qasddan shunday qilgani uchun"
+   ],
+   "answer": "A) Hayajonlanib esankirab qolgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Yangi o‘qituvchining «oldin o‘tilganlarni unutinglar» degani to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, bilim doim kerak",
+    "B) To‘g‘ri, eskilari keraksiz",
+    "C) Farqi yo‘q, baribir"
+   ],
+   "answer": "A) Noto‘g‘ri, bilim doim kerak"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif o‘qituvchining polni tepib taxtani sindirishini qanday tasvirlagan?",
+   "options": [
+    "A) Kulgili va satirik tarzda",
+    "B) Qayg‘uli va g‘amgin qilib",
+    "C) Juda qo‘rqinchli holatda"
+   ],
+   "answer": "A) Kulgili va satirik tarzda"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Zaynab va Ahmad maktublarida qaysi ikki shahardagi voqealar taqqoslanadi?",
+   "options": [
+    "A) Istanbul va Anqara",
+    "B) Izmir va Anqara",
+    "C) Istanbul va Bursa"
+   ],
+   "answer": "A) Istanbul va Anqara"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Fidoyilik haqidagi hikoyada bolakay qanday xabarni yetkazgan edi?",
+   "options": [
+    "A) Dushman kelayotganini",
+    "B) Qor yog‘ayotganini",
+    "C) Maktab yopilganini"
+   ],
+   "answer": "A) Dushman kelayotganini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Usmon insho o‘rniga qaysi o‘yin haqida yozib bergan edi?",
+   "options": [
+    "A) Futbol o‘yini haqida",
+    "B) Shaxmat o‘yini haqida",
+    "C) Basketbol haqida"
+   ],
+   "answer": "A) Futbol o‘yini haqida"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hikmatning otasi nega ham farzandlariga o‘g‘il bolasimon kiyim kiydirgan?",
+   "options": [
+    "A) O‘g‘il farzand orzu qilgani uchun",
+    "B) Qizlar kiyim topilmagani uchun",
+    "C) Kiyimlar arzon bo‘lgani uchun"
+   ],
+   "answer": "A) O‘g‘il farzand orzu qilgani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zaynab buvasining uyida kimga qarshi sovunli suv ishlatdi?",
+   "options": [
+    "A) Maqtanchoq mehmon jurnalistga",
+    "B) Qo‘shni bolaga",
+    "C) O‘z ukasiga"
+   ],
+   "answer": "A) Maqtanchoq mehmon jurnalistga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Uyda yo‘qolgan buyumlar (sigaret, ruchka) qanday qilib topildi?",
+   "options": [
+    "A) Uy tozalanganda topildi",
+    "B) Ko‘chadan sotib olindi",
+    "C) Buvasi esdan chiqardi"
+   ],
+   "answer": "A) Uy tozalanganda topildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Usmon nega inshoga futbol haqida yozishdan qo‘rqmadi?",
+   "options": [
+    "A) O‘qituvchi o‘qimasligini bilgani uchun",
+    "B) Futbolni juda yaxshi ko‘rgani uchun",
+    "C) O‘qituvchi shunday topshirgani uchun"
+   ],
+   "answer": "A) O‘qituvchi o‘qimasligini bilgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega «Donishmand» deb atalgan bola javob berishga shoshilmas edi?",
+   "options": [
+    "A) Otasi o‘ylab gapirishni uqtirgani uchun",
+    "B) Savolni umuman tushunmagani uchun",
+    "C) Gapirishni bilmagani uchun"
+   ],
+   "answer": "A) Otasi o‘ylab gapirishni uqtirgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ahmadning o‘qituvchi oldida o‘zini soxta fidoyi ko‘rsatishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, halol bo‘lish kerak",
+    "B) To‘g‘ri, baho olish muhim",
+    "C) Farqi yo‘q, o‘yin bu"
+   ],
+   "answer": "A) Noto‘g‘ri, halol bo‘lish kerak"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Zaynabning buvasining uyidagi mehmon sirpanib ketgan lavha qanday mahorat bilan yozilgan?",
+   "options": [
+    "A) Yumor va hazil bilan",
+    "B) Qo‘rqinchli va vahimali",
+    "C) Juda g‘amgin va hazin"
+   ],
+   "answer": "A) Yumor va hazil bilan"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ahmadning dadasining ko‘chada pul sarflagandan keyingi va uydagi holati qanday?",
+   "options": [
+    "A) Ko‘chada saxiylashib, uyda tejamkorlashadi",
+    "B) Doim bir xil tejamkor",
+    "C) Uyda doim saxiylik qiladi"
+   ],
+   "answer": "A) Ko‘chada saxiylashib, uyda tejamkorlashadi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Husayn «uy» so‘zi haqidagi savolga nega «yaxshi emas» deb javob berdi?",
+   "options": [
+    "A) Uyidan ko‘chirilayotganini o‘ylagani uchun",
+    "B) Kelishikni bilmagani uchun",
+    "C) O‘qituvchini eshitmagani uchun"
+   ],
+   "answer": "A) Uyidan ko‘chirilayotganini o‘ylagani uchun"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bayram konsertida bolalar qaysi elning raqsini o‘ynashga majbur bo‘lishdi?",
+   "options": [
+    "A) Xitoycha raqsni",
+    "B) Arabcha raqsni",
+    "C) Hindcha raqsni"
+   ],
+   "answer": "A) Xitoycha raqsni"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Spektakl paytida Damir nega sahnada devorga qarab gapirdi?",
+   "options": [
+    "A) Ko‘zoynakda ko‘rolmagani uchun",
+    "B) Qasddan shunday qilgani uchun",
+    "C) Sahnadan qo‘rqqani uchun"
+   ],
+   "answer": "A) Ko‘zoynakda ko‘rolmagani uchun"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maktublar so‘ngida Aziz Nesin bu kitobni aslida kim yozganini aytdi?",
+   "options": [
+    "A) O‘zi yozganini",
+    "B) Ahmad yozganini",
+    "C) Zaynab yozganini"
+   ],
+   "answer": "A) O‘zi yozganini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega bolalarning xatlaridan tuzilgan kitob konkursda g‘olib bo‘lmadi?",
+   "options": [
+    "A) Kattalar bolaligini unutgani uchun",
+    "B) Xatlar juda yomon yozilgani uchun",
+    "C) Konkurs o‘tkazilmagani uchun"
+   ],
+   "answer": "A) Kattalar bolaligini unutgani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bayram spektakli nega fojiaviy drama emas, komediyaga aylanib ketdi?",
+   "options": [
+    "A) Tasodifiy kulgili xatolar sababli",
+    "B) Bolalar ataylab masxarabozlik qilgani uchun",
+    "C) Tomoshabinlar so‘ragani uchun"
+   ],
+   "answer": "A) Tasodifiy kulgili xatolar sababli"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bolalarning kattalar xatti-harakatlarini kuzatib xatga yozishi qanday baholanadi?",
+   "options": [
+    "A) Bolalarning beg‘ubor va o‘tkir qaroshi",
+    "B) Ularning odobsizligi va beadabligi",
+    "C) Begona ishlarga aralashishi"
+   ],
+   "answer": "A) Bolalarning beg‘ubor va o‘tkir qaroshi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Aziz Nesin maktubida kattalarning bolalarga munosabatini to‘g‘ri deb biladimi?",
+   "options": [
+    "A) Xato, bolalikni unutmaslik kerak",
+    "B) To‘g‘ri, kattalar doim haq",
+    "C) Bunga e’tibor bermaydi"
+   ],
+   "answer": "A) Xato, bolalikni unutmaslik kerak"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Kitob oxiridagi «Yozuvchidan bolalarga maktub» qanday tuyg‘uni uyg‘otadi?",
+   "options": [
+    "A) Samimiyat va bolalarga mehr",
+    "B) Qo‘rqinch va xavotir",
+    "C) G‘azab va norozilik"
+   ],
+   "answer": "A) Samimiyat va bolalarga mehr"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Aziz Nesin asarda bolalar tili va ruhiyatini qanday aks ettirgan?",
+   "options": [
+    "A) Juda hayotiy va yumor bilan",
+    "B) Rasmiy va quruq tilda",
+    "C) Falsafiy va og‘ir tilda"
+   ],
+   "answer": "A) Juda hayotiy va yumor bilan"
+  }
+ ]
+}

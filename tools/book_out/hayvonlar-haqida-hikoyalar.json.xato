@@ -1,0 +1,288 @@
+{
+ "title": "Hayvonlar haqida hikoyalar",
+ "author": "Aziz Nesin",
+ "genre": "",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12 yosh",
+  "genre": "voqeiy hikoyalar",
+  "topics": [
+   "hayvonlar",
+   "mehr-oqibat",
+   "sadoqat",
+   "tabiat",
+   "odob-axloq"
+  ],
+  "theme": "Hayvonlar ham mehr, sadoqat va sezgirlik ko‘rsatishga qodir jonivorlardir.",
+  "summary": "To‘plamda muallif o‘zi guvohi bo‘lgan va eshitgan haqiqiy voqealarni bayon qiladi. Yugoslaviyadan keltirilgan kuchukcha soat tiqillashi ostida tinchlanadi. Istanbulda mushuk, it va eshak birgalikda jo‘jalarni kalxatdan himoya qiladi. Ashxabodda sodiq it zilzila vaqtida chaqaloqni va butun oilani qutqaradi. Bola chumchuqni otib qo‘ygach, afsuslanib qush ovlashdan voz kechadi. Yaralangan daydi it tuzalgach, bir yildan so‘ng boshqa yarador sherigini yordamga yetaklab keladi. Ayiq va ilon bilan bog‘liq g‘aroyib voqealar hamda oqila ona mushukning o‘z bolasiga dasturxon odobini o‘rgatishi tasvirlanadi.",
+  "characters": "Muallif (hikoyachi), Idol Branski (kuchukcha), Chalabiy (eshak), Ashxabodlik sodiq it, Urxon va Burxon (aka-uka), daydi it va uning yarador sherigi, o‘tinchi dehqon va ayiq, Targ‘il (ona mushuk).",
+  "conclusion": "Kitob bolalarda jonivorlarga nisbatan mehr-shafqat, mas'uliyat va hushyorlik hissini uyg‘otadi. Tabiatdagi har bir mavjudotga hurmat bilan qarashni hamda yomon qilmish uchun vijdon azobi chekishni o‘rgatadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, ta'sirli, o‘ylantiruvchi",
+  "for_whom": "Hayvonlar hayotiga qiziquvchi, ta'sirli va haqiqiy voqealarni o‘qishni xush ko‘radigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Idol Branski qaysi shahardan sotib olindi?",
+   "options": [
+    "A) Belgrad yaqinidan",
+    "B) Moskva shahridan",
+    "C) Istanbul markazidan"
+   ],
+   "answer": "A) Belgrad yaqinidan"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kuchukcha katakda nega tunda uvillab chiqdi?",
+   "options": [
+    "A) Qorni ochgani uchun",
+    "B) Onasini qumsab yolg‘izlangani uchun",
+    "C) Sovotib qolgani uchun"
+   ],
+   "answer": "B) Onasini qumsab yolg‘izlangani uchun"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jo‘jalarga kalxat hujum qilganda jonivorlar qanday ketma-ketlikda yordamga keldi?",
+   "options": [
+    "A) Avval eshak, so‘ng it",
+    "B) Tovuq, mushuk, it va eshak",
+    "C) Faqat ona tovuq o‘zi"
+   ],
+   "answer": "B) Tovuq, mushuk, it va eshak"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega kuchukcha soat tiqillashini eshitib tinchlandi?",
+   "options": [
+    "A) Onasining yurak urishiga o‘xshatgani uchun",
+    "B) Musiqa ovozini yoqtirgani uchun",
+    "C) Soatni o‘yinchoq deb bilgani uchun"
+   ],
+   "answer": "A) Onasining yurak urishiga o‘xshatgani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ashxabodlik it zilziladan oldin beshikni nega tashqariga chiqardi?",
+   "options": [
+    "A) O‘ynash uchun",
+    "B) Xatarni oldindan sezgani uchun",
+    "C) Quyoshda toblandirish uchun"
+   ],
+   "answer": "B) Xatarni oldindan sezgani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Eshak Chalabiyning qoziqni sug‘urib yordamga kelgani qanday baholanadi?",
+   "options": [
+    "A) Uning ham do‘stlariga sodiqligi",
+    "B) Eshakning qaysarligi va itoatsizligi",
+    "C) Tasodifiy qochish harakati"
+   ],
+   "answer": "A) Uning ham do‘stlariga sodiqligi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «hayvonlar xatti-harakatida favqulodda holat izlaymiz» deganda nimani nazarda tutgan?",
+   "options": [
+    "A) Ularda tabiiy sezgi borligini",
+    "B) Hayvonlar gapira olishini",
+    "C) Odamlar adashmasligini"
+   ],
+   "answer": "A) Ularda tabiiy sezgi borligini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Urxon va Burxon ovda qaysi qushni urib tushirishdi?",
+   "options": [
+    "A) Qaldirg‘och",
+    "B) Chumchuq",
+    "C) Kaklik"
+   ],
+   "answer": "B) Chumchuq"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Urxon va Burxon o‘lgan chumchuqni nima qilishdi?",
+   "options": [
+    "A) Yeb qo‘yishdi",
+    "B) Yerga ko‘mishdi",
+    "C) Uyga olib ketishdi"
+   ],
+   "answer": "B) Yerga ko‘mishdi"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif yarador daydi itning oyog‘ini qanday davoladi?",
+   "options": [
+    "A) Operatsiya qildi",
+    "B) Yuvib, dori surtib taxtakachladi",
+    "C) Faqat ovqat berdi"
+   ],
+   "answer": "B) Yuvib, dori surtib taxtakachladi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Daydi it bir yildan so‘ng uyga qaytgach nima qildi?",
+   "options": [
+    "A) Yarador sherigini boshlab keldi",
+    "B) Darhol qochib ketdi",
+    "C) Uyga kirmay akilladi"
+   ],
+   "answer": "A) Yarador sherigini boshlab keldi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Aka-uka chumchuq o‘lgach nega rogatkani uloqtirib yuborishdi?",
+   "options": [
+    "A) Rogatka sinib qolgani uchun",
+    "B) Qilmishidan pushaymon bo‘lishgani uchun",
+    "C) Boshqa tosh qolmagani uchun"
+   ],
+   "answer": "B) Qilmishidan pushaymon bo‘lishgani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega daydi it ikkinchi marta o‘zi uchun emas, sherigi uchun keldi?",
+   "options": [
+    "A) Insonning mehriga ishongani uchun",
+    "B) Uydan ovqat o‘g‘irlash uchun",
+    "C) Zanjirdan qutulish uchun"
+   ],
+   "answer": "A) Insonning mehriga ishongani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "O‘qituvchi Urxonning chumchuq haqidagi inshosini nega juda maqtadi?",
+   "options": [
+    "A) Chin ko‘ngildan yozilgani uchun",
+    "B) Qushlarni ovlashni targ‘ib qilgani uchun",
+    "C) Yozuvi juda chiroyli bo‘lgani uchun"
+   ],
+   "answer": "A) Chin ko‘ngildan yozilgani uchun"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ayiq cho‘ponlarning piltali miltig‘ini nima qildi?",
+   "options": [
+    "A) O‘rmonga olib qochdi",
+    "B) Tizzasiga urib sindirdi",
+    "C) O‘tga tashlab yubordi"
+   ],
+   "answer": "B) Tizzasiga urib sindirdi"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ayiq o‘tinchi dehqonga yaxshiligi uchun nima qoldirdi?",
+   "options": [
+    "A) Mumkatakda asal",
+    "B) O‘rmon mevalari",
+    "C) Yutib olingan qo‘y"
+   ],
+   "answer": "A) Mumkatakda asal"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ona mushuk Targ‘il go‘sht olib kelgach nima qildi?",
+   "options": [
+    "A) Avval o‘zi yeb tugatdi",
+    "B) Bolasini chaqirib tog‘orachaga soldi",
+    "C) Go‘shtni ko‘mib qo‘ydi"
+   ],
+   "answer": "B) Bolasini chaqirib tog‘orachaga soldi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ona mushuk nega o‘z bolasini xontaxta tagiga urib kiritdi?",
+   "options": [
+    "A) Dasturxon odobini o‘rgatish uchun",
+    "B) Go‘shtni qizg‘angani uchun",
+    "C) Bola kasal bo‘lgani uchun"
+   ],
+   "answer": "A) Dasturxon odobini o‘rgatish uchun"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Otinchi dehqonning ayiqqa yordam berishi haqida nima deyish mumkin?",
+   "options": [
+    "A) Ezgulik har doim mukofotlanadi",
+    "B) Hayvonlarga yordam berish xavfli",
+    "C) Dehqon noto‘g‘ri ish qildi"
+   ],
+   "answer": "A) Ezgulik har doim mukofotlanadi"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ona mushuk o‘zi ko‘chadan go‘sht o‘marsa ham, uyda nima qilmasdi?",
+   "options": [
+    "A) Uydagi narsalarga ko‘z olaytirmasdi",
+    "B) Bolasiga ovqat bermasdi",
+    "C) Tunda uqlamasdi"
+   ],
+   "answer": "A) Uydagi narsalarga ko‘z olaytirmasdi"
+  }
+ ]
+}

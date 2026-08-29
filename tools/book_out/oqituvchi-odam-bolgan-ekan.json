@@ -1,0 +1,28 @@
+{
+ "title": "O‘qituvchi odam bo‘lgan ekan",
+ "author": "Ayzek Azimov",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "ta'lim",
+   "kelajak",
+   "ustoz va shogird",
+   "do‘stlik",
+   "texnologiya"
+  ],
+  "theme": "Chinakam ta'lim va tarbiya faqat insoniy mehr, jonli muloqot va ustoz hamda tengdoshlar bilan birga o‘rganish orqali go‘zal bo‘lishini ko‘rsatish.",
+  "summary": "2155-yilda yashovchi Mari va Tommi chordoqdan qadimiy qog‘oz kitob topib olishadi. Unda o‘tmishdagi maktablar, inson bo‘lgan o‘qituvchilar va bolalarning birga o‘qigani haqida yozilgan edi. Uylarida sovuq robot-o‘qituvchi bilan yakka o‘zi o‘qishga majbur bo‘lgan va testlardan charchagan Mari o‘tmishdagi bolalarning ahil ta'lim olganini, insoniy ustoz bilan do‘stona muloqot qilganini havas bilan tasavvur qiladi va o‘sha davr maktabini orzu qiladi.",
+  "characters": "Mari — 11 yoshli qizcha, robot-o‘qituvchidan zerikkan va jonli maktabni orzu qiladi. Tommi — Marining 13 yoshli akasi, eski kitobni topib olib, singlisiga o‘tmish maktabini tushuntiradi.",
+  "conclusion": "Asar insoniy muloqot va ustoz mehrining o‘rnini hech qanday texnologiya bosa olmasligini ko‘rsatadi. Bola kitobni o‘qib, jonli ta'lim, ustozga hurmat va sinfdoshlar bilan hamkorlik qilishning qanchalik buyuk ne'mat ekanligini anglaydi.",
+  "difficulty": "o‘rta",
+  "mood": "hayratli, o‘ylantiruvchi",
+  "for_whom": "Kelajak texnologiyalariga qiziquvchi hamda ustoz va maktab qadrini anglashni xohlagan o‘quvchilar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Mari kelajakda robot-o‘qituvchidan saboq olib, inson ustozning mehrini va sinfdoshlar bilan birga o‘qish zavqini qo‘msadi. Senga ham o‘z ustozing va sinfdoshlaring bilan birga dars qilish nima uchun yoqadi? Ustozingning qaysi maslahati yoki sabog‘i xotirangda eng ko‘p saqlanib qolgan?"
+}

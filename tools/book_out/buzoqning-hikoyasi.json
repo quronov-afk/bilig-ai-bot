@@ -1,0 +1,27 @@
+{
+ "title": "Buzoqning hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "3",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9",
+  "topics": [
+   "jonivorlar",
+   "halollik",
+   "odob-axloq",
+   "kulgili hikoyalar"
+  ],
+  "theme": "Halollik, birovning nasibasiga ko‘z olaytirmaslik va o‘z haqqini hurmat qilish zarurligi haqida kulgili va saboq beruvchi hikoya.",
+  "summary": "Targ‘il ismli buzoqcha o‘ziga juda o‘xshaydigan Qashqa ismli sho‘x buzoqchadan xafa bo‘ladi. Chunki Qashqa Targ‘il uxlab yotganida ayyorlik qilib, uning onasining sutini emib qochadi. Targ‘il bir necha bor ogohlantirsa ham, Qashqa buni takrorlayveradi. Oxiri Targ‘ilning sabri chidamay, uni topib adabini berishga qaror qiladi va «Buzoqning yugurgani somonxonagacha» degan iboraga tayanib, Qashqani izlab somonxonaga yo‘l oladi.",
+  "characters": "Targ‘il — alamzada va haqiqatgo‘y buzoqcha; Qashqa — ayyor va birovning rizqiga ko‘z olaytiradigan sho‘x buzoqcha; Nortuya — qo‘shni tuya.",
+  "conclusion": "Asar bolaga birovning narsasiga yoki haqqiga ruxsatsiz tegish yomon odat ekanini quvnoq tarzda tushuntiradi. Ota-onalar ushbu hikoya orqali farzandiga halollik hamda paydo bo‘lgan ziddiyatlarni urishmasdan, aql va odob bilan hal qilish sabog‘ini berishlari mumkin.",
+  "difficulty": "oson",
+  "mood": "kulgili, yengil",
+  "for_whom": "Jonivorlar haqidagi kulgili voqealarni va qisqa quvnoq hikoyalarni yoqtiradigan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Qashqaning Targ‘il uxlab yotganida uning onasini emib qochishi to‘g‘ri ish bo‘ldimi? Agar birov seni ranjitib, narsangni ruxsatsiz olib qo‘ysa, nima qilarding va Targ‘ilga muammoni urishmasdan hal etish uchun qanday maslahat bergan bo‘larding?"
+}

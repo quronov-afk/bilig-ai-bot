@@ -1,0 +1,416 @@
+{
+ "title": "Kichkina shahzoda",
+ "author": "Antuan de Sent-Ekzyuperi",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "do‘stlik",
+   "mas'uliyat",
+   "mehr-oqibat",
+   "sayohat"
+  ],
+  "theme": "Chinakama do‘stlik, bag‘rikenglik hamda burch va mas'uliyat hissi inson hayotining eng oliy qadriyatlaridir.",
+  "summary": "Uchuvchi Sahroi Kabirda samolyoti buzilib, to‘xtashga majbur bo‘ladi. U yerda boshqa sayyoradan uchib kelgan Kichkina shahzodani uchratadi. Bolakay o‘zining mo‘jaz sayyorasi, u yerdagi gul va baobablar haqida so‘zlab beradi. U o‘z gulidan arazlab, koinot bo‘ylab sayohatga chiqqan edi. Turli sayyoralarda qirol, shuhratparast, piyonista, korchalon, charog‘bon va geograf bilan uchrashadi. Nihoyat, Yer sayyorasiga kelib, Tulki bilan do‘stlashadi. Tulki unga mehr va mas'uliyat sirlarini o‘rgatadi. Yakunda Kichkina shahzoda o‘z gulining qadriga yetib, o‘z sayyorasiga qaytishga qaror qiladi.",
+  "characters": "Kichkina shahzoda — mo‘jaz sayyora egasi, pok va samimiy bolakay. Uchuvchi — sahroda halokatga uchragan va bolakay bilan do‘stlashgan hikoyachi. Tulki — bolakayga do‘stlik va mas'uliyat sabog‘ini bergan donishmand jonivor. Gul — bolakayning sayyorasidagi nozik va arazchi atirgul.",
+  "conclusion": "Asar bolani chinakam do‘stlikni qadrlashga va o‘z yaqinlari oldidagi mas'uliyatni his qilishga o‘rgatadi. Tashqi ko‘rinishga emas, ko‘ngil ko‘zi bilan qarashni uqtiradi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Hayot va do‘stlik haqida mushohada yuritishni, samimiy va ma'noli qissalarni o‘qishni xush ko‘radigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uchuvchining samolyoti qayerda buzilib qolgan edi?",
+   "options": [
+    "A) Sahroi Kabirda",
+    "B) Qoraqum cho‘lida",
+    "C) Oltoy tog‘larida"
+   ],
+   "answer": "A) Sahroi Kabirda"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kichkina shahzoda uchuvchidan birinchi bo‘lib nima chizishni so‘radi?",
+   "options": [
+    "A) Tulkini",
+    "B) Qo‘zichoqni",
+    "C) Bo‘g‘ma ilonni"
+   ],
+   "answer": "B) Qo‘zichoqni"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kichkina shahzodaning ona sayyorasi tartib raqami nima edi?",
+   "options": [
+    "A) B-612",
+    "B) A-325",
+    "C) C-100"
+   ],
+   "answer": "A) B-612"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kichkina shahzodaning sayyorasiga qaysi bahaybat daraxtlar tahdid solardi?",
+   "options": [
+    "A) Chinar daraxtlari",
+    "B) Baobab daraxtlari",
+    "C) Emang daraxtlari"
+   ],
+   "answer": "B) Baobab daraxtlari"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolakay o‘z sayyorasida ertalab birinchi bo‘lib nima qilardi?",
+   "options": [
+    "A) Sayyorasini tozalab, baobablarni yulardi",
+    "B) Darhol uxlab olardi",
+    "C) Rasm chizardi"
+   ],
+   "answer": "A) Sayyorasini tozalab, baobablarni yulardi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Uchuvchi nega 1-raqamli rasmini kattalarga ko‘rsatishdan to‘xtagan edi?",
+   "options": [
+    "A) Kattalar uni shlyapa deb o‘ylashgani uchun",
+    "B) Kattalar rasmni tortib olishgani uchun",
+    "C) Rasm yirtilib ketgani uchun"
+   ],
+   "answer": "A) Kattalar uni shlyapa deb o‘ylashgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kichkina shahzoda nega botayotgan quyoshni tomosha qilishni yaxshi ko‘rardi?",
+   "options": [
+    "A) Yuragi g‘ussaga to‘lganda yupanch topardi",
+    "B) Zangori rangni yoqtirgani uchun",
+    "C) Quyosh uni issiq tutgani uchun"
+   ],
+   "answer": "A) Yuragi g‘ussaga to‘lganda yupanch topardi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Uchuvchining quticha chizib bergani to‘g‘ri qaror bo‘ldimi?",
+   "options": [
+    "A) Ha, bu shahzodaning tasavvuriga imkon berdi",
+    "B) Yo‘q, bu dangasalik edi",
+    "C) Yo‘q, bola xafa bo‘ldi"
+   ],
+   "answer": "A) Ha, bu shahzodaning tasavvuriga imkon berdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif kattalarning raqamlarni yaxshi ko‘rishini aytganda nimani nazarda tutgan?",
+   "options": [
+    "A) Kattalar narsalarning zohiriy qiymatiga berilishini",
+    "B) Kattalar hisobni yaxshi bilishini",
+    "C) Kattalar faqat maktabda o‘qishini"
+   ],
+   "answer": "A) Kattalar narsalarning zohiriy qiymatiga berilishini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Kattalarga tushuntirish berishdan bolalarning beza bo‘lishi tasviri nimani bildiradi?",
+   "options": [
+    "A) Kattalar va bolalar dunyoqarashidagi tafovutni",
+    "B) Bolalarning kattalarga hurmatsizligini",
+    "C) Kattalarning vaqti yo‘qligini"
+   ],
+   "answer": "A) Kattalar va bolalar dunyoqarashidagi tafovutni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Birinchi asteroidda yashaydigan odam kim edi?",
+   "options": [
+    "A) Qirol",
+    "B) Piyonista",
+    "C) Geograf"
+   ],
+   "answer": "A) Qirol"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shuhratparast yashaydigan sayyorada u boladan nima qilishni so‘radi?",
+   "options": [
+    "A) Chapak chalib olqishlashni",
+    "B) Raqsga tushishni",
+    "C) Uyini supurishni"
+   ],
+   "answer": "A) Chapak chalib olqishlashni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Korchalon sayyorasida nima bilan band edi?",
+   "options": [
+    "A) Yulduzlarni sanab, hisoblab o‘tirardi",
+    "B) Kitob o‘qiyotgan edi",
+    "C) Gul o‘stirayotgan edi"
+   ],
+   "answer": "A) Yulduzlarni sanab, hisoblab o‘tirardi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Geograf nega o‘z sayyorasida tog‘lar bor-yo‘qligini bilmas edi?",
+   "options": [
+    "A) Chunki u sayyoh emas edi",
+    "B) Chunki u ko‘r edi",
+    "C) Chunki u erinchoq edi"
+   ],
+   "answer": "A) Chunki u sayyoh emas edi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kichkina shahzoda safar davomida uchratgan insonlar tartibini ko‘rsating.",
+   "options": [
+    "A) Qirol, shuhratparast, piyonista, korchalon, charog‘bon",
+    "B) Piyonista, qirol, geograf, charog‘bon",
+    "C) Charog‘bon, korchalon, piyonista, qirol"
+   ],
+   "answer": "A) Qirol, shuhratparast, piyonista, korchalon, charog‘bon"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kichkina shahzodaga Yer sayyorasiga borishni kim maslahat berdi?",
+   "options": [
+    "A) Geograf",
+    "B) Qirol",
+    "C) Charog‘bon"
+   ],
+   "answer": "A) Geograf"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Piyonista nega ichayotganini aytdi?",
+   "options": [
+    "A) Uyalgab ichishini unutish uchun",
+    "B) Suv topolmagani uchun",
+    "C) Mazali bo‘lgani uchun"
+   ],
+   "answer": "A) Uyalgab ichishini unutish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kichkina shahzoda nega charog‘bonning ishini foydali deb hisobladi?",
+   "options": [
+    "A) Chunki u boshqalar uchun niyat qilardi",
+    "B) Chunki u juda boy edi",
+    "C) Chunki u ko‘p uxlardi"
+   ],
+   "answer": "A) Chunki u boshqalar uchun niyat qilardi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Korchalonning yulduzlarni o‘ziniki deb hisoblashi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, ulardan hech kimga naf yo‘q",
+    "B) To‘g‘ri, u birinchi bo‘lib o‘yladi",
+    "C) To‘g‘ri, u pullarini to‘ladi"
+   ],
+   "answer": "A) Noto‘g‘ri, ulardan hech kimga naf yo‘q"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qirolning faqat bajarib bo‘ladigan buyruqlar berishi haqida nima deysiz?",
+   "options": [
+    "A) Bu uning dona va oqilligidan dalolat",
+    "B) Bu uning qo‘rqoqligini ko‘rsatadi",
+    "C) Bu uning zolimligini bildiradi"
+   ],
+   "answer": "A) Bu uning dona va oqilligidan dalolat"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yerda Kichkina shahzoda birinchi bo‘lib qaysi jonzotni uchratdi?",
+   "options": [
+    "A) Ilonni",
+    "B) Tulkini",
+    "C) Quyyonni"
+   ],
+   "answer": "A) Ilonni"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tulki Kichkina shahzodadan nima qilishni iltimos qildi?",
+   "options": [
+    "A) O‘ziga qo‘lga o‘rgatishni",
+    "B) Ovqat berishni",
+    "C) Uyinga olib ketishni"
+   ],
+   "answer": "A) O‘ziga qo‘lga o‘rgatishni"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Savdogar sotayotgan həblar nima uchun kerak edi?",
+   "options": [
+    "A) Tashnalikni bosib, vaqt tejash uchun",
+    "B) Uxlash uchun",
+    "C) Tez yugurish uchun"
+   ],
+   "answer": "A) Tashnalikni bosib, vaqt tejash uchun"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uchuvchi va bolakay sahroda nima topishdi?",
+   "options": [
+    "A) Quduq",
+    "B) Oltin",
+    "C) Samolyot qismini"
+   ],
+   "answer": "A) Quduq"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kichkina shahzoda o‘z gulining noyobligini qachon anglab yetdi?",
+   "options": [
+    "A) Tulki bilan suhbatlashgandan so‘ng",
+    "B) Ilonni ko‘rgach",
+    "C) Geograf bilan uchrashgach"
+   ],
+   "answer": "A) Tulki bilan suhbatlashgandan so‘ng"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kichkina shahzoda nega o‘z sayyorasiga qaytishga qaror qildi?",
+   "options": [
+    "A) O‘z guli oldidagi mas'uliyatini anglagani uchun",
+    "B) Yer yoqmay qolgani uchun",
+    "C) Uchuvchi bilan urushib qolgani uchun"
+   ],
+   "answer": "A) O‘z guli oldidagi mas'uliyatini anglagani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega ilon Kichkina shahzodaga yordam bera olishini aytdi?",
+   "options": [
+    "A) U chaqish orqali uni jismidan ozod etardi",
+    "B) U uni yelkasida olib ketardi",
+    "C) U sehrli so‘z bilar edi"
+   ],
+   "answer": "A) U chaqish orqali uni jismidan ozod etardi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shahzodaning o‘z guli uchun mas'ul bo‘lishi insoniy fazilatmi?",
+   "options": [
+    "A) Ha, bu va'daga vafo va mehr ko‘rsatkichidir",
+    "B) Yo‘q, bu keraksiz ovoragarchilik",
+    "C) Yo‘q, gul buni tushunmaydi"
+   ],
+   "answer": "A) Ha, bu va'daga vafo va mehr ko‘rsatkichidir"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Tulkining «Eng asosiy narsani ko‘z bilan ko‘rib bo‘lmaydi» degan fikri nimani anglatadi?",
+   "options": [
+    "A) Haqiqiy qadriyatlar ko‘ngil ko‘zi bilan his etilishini",
+    "B) Ko‘zlar doim adashishini",
+    "C) Qorong‘ida hech narsa ko‘rinmasligini"
+   ],
+   "answer": "A) Haqiqiy qadriyatlar ko‘ngil ko‘zi bilan his etilishini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Uchuvchining yulduzlarga qaraganda kulgi eshitishi nimani aks ettiradi?",
+   "options": [
+    "A) Do‘stining xotirasi uning qalbida mangu yashashini",
+    "B) U osmondan tovushlar kelishini yoqtirishini",
+    "C) U sahroda yolg‘iz qolib ketganini"
+   ],
+   "answer": "A) Do‘stining xotirasi uning qalbida mangu yashashini"
+  }
+ ]
+}

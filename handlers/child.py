@@ -250,7 +250,7 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
             reply_text = f"👍 <b>Barakalla!</b> Sen {pages_read_now} bet o‘qiding. Yana {5 - (new_page_num % 5)} bet o‘qisang, Bilig olasan!\n🔥 Streak: {streak} kun! (Darajang: <b>{rank}</b>)"
             
         if shield_used:
-            reply_text += "\n\n🛡 <b>Eslatma:</b> Kecha o‘qimagan edingiz, lekin 'Olov qalqoni' sizning streakingizni saqlab qoldi!"
+            reply_text += "\n\n🛡 <b>Eslatma:</b> Kecha o‘qimagan edingiz, lekin «Qanot» parvozingizni saqlab qoldi!"
             
         conn.commit()
         await processing_msg.delete()
@@ -361,7 +361,7 @@ async def process_manual_page(message: types.Message, state: FSMContext):
         reply_text = f"👍 <b>Barakalla!</b> Sen {pages_read_now} bet o‘qiding. Yana {5 - (new_page_num % 5)} bet o‘qisang, Bilig olasan!\n🔥 Streak: {streak} kun! (Darajang: <b>{rank}</b>)"
 
     if shield_used:
-        reply_text += "\n\n🛡 <b>Eslatma:</b> Kecha o‘qimagan edingiz, lekin 'Olov qalqoni' sizning streakingizni saqlab qoldi!"
+        reply_text += "\n\n🛡 <b>Eslatma:</b> Kecha o‘qimagan edingiz, lekin «Qanot» parvozingizni saqlab qoldi!"
 
     conn.commit()
     await state.set_state(None)
@@ -772,8 +772,8 @@ async def show_rewards(message: types.Message, state: FSMContext):
         f"🦸‍♂️ <b>Qahramon: {message.from_user.full_name}</b>\n"
         f"🎖 Darajang: <b>{rank}</b>\n\n"
         f"🔅 <b>Biliglar xazinasi:</b> {balance} ta\n"
-        f"🔥 <b>Uzluksiz mutolaa (Streak):</b> {streak} kun\n"
-        f"🛡 <b>Olov qalqonlari:</b> {freezes} ta\n"
+        f"🔥 <b>Parvoz:</b> {streak} kun\n"
+        f"🛡 <b>Qanot:</b> {freezes} ta\n"
         f"🏅 <b>Nishonlar:</b> {badges_display}\n\n"
         f"<i>To‘plagan Biliglaringga 🛒 Do‘kondan o‘zingga ajoyib sovg‘alar olishing mumkin!</i>"
     )

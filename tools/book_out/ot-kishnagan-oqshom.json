@@ -1,0 +1,447 @@
+{
+ "title": "Ot kishnagan oqshom",
+ "author": "Tog‘ay Murod",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "do‘stlik",
+   "oqko‘ngillik",
+   "urf-odatlar",
+   "inson va tabiat",
+   "halollik"
+  ],
+  "theme": "Inson bilan ot o‘rtasidagi samimiy va sadoqatli do‘stlik, milliy qadriyatlar hamda pokiza qalb egasining el-yurt va tabiat oldidagi halolligi aks ettirilgan.",
+  "summary": "Beshinchi sinfda sochi to‘kilib, maktabni tashlagan Ziyodulla kal podachi bo‘lib ishlaydi. U Momosuluvga uylanadi va Oboqlidan bo‘z ot sotib oladi. Otni mehr berib tarbiyalaydi, ot to‘qqiz yoshga to‘lganda xoldor Tarlonga aylanadi. Ziyodulla Tarlon bilan ko‘pkarilarda qatnashib, el orasida chavandoz sifatida nom qozonadi. Turli nohaqliklar, qiyinchiliklar va jamiyatdagi sun’iyliklarga qaramay, Ziyodulla otiga sodiq qoladi. Asar oxirida u adirda begona shahar yigitlari tomonidan ayovsiz kaltaklanganda, Tarlon uni himoya qiladi va ikkisi o‘rtasidagi birodarlik rishtasi yanada muqaddaslashadi.",
+  "characters": "Ziyodulla kal — sodda, oqko‘ngil, oriyatli podachi va chavandoz; Tarlon — Ziyodullaning sadoqatli va mard oti; Momosuluv — Ziyodullaning turmush o‘rtog‘i; Rixsiyev — balandparvoz radio-muxbir hamsoya; Qurbonnazar tabib — xalq tabibi.",
+  "conclusion": "Ushbu asar bolaga insoniylik, sadoqat va milliy qadriyatlarni chuqur anglashga yordam beradi. Inson har qanday vaziyatda ham soflikni va tabiatga bo‘lgan mehrini yo‘qotmasligi kerakligini o‘rgatadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Otlar va tabiatni yaxshi ko‘radigan, samimiy va milliy ruhiyatdagi asarlarga qiziqadigan o‘quvchilar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ziyodulla nechanchi sinf kallasi bilan maktabdan ketdi?",
+   "options": [
+    "A) Beshinchi sinf",
+    "B) Oltinchi sinf",
+    "C) Yettinchi sinf",
+    "D) To‘rtinchi sinf"
+   ],
+   "answer": "A) Beshinchi sinf"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ziyodulla podachi bo‘lib adirlarda nima chalardi?",
+   "options": [
+    "A) Do‘mbira va nay",
+    "B) Garmon va rubob",
+    "C) Tanbur va chang",
+    "D) Gʻijjak va karnay"
+   ],
+   "answer": "A) Do‘mbira va nay"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ziyodulla uylanmoqchi bo‘lgan qizning ismi nima edi?",
+   "options": [
+    "A) Momosuluv",
+    "B) Oymomo",
+    "C) G‘uncha",
+    "D) Barchin"
+   ],
+   "answer": "A) Momosuluv"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ziyodulla bo‘z otni necha pulga sotib oldi?",
+   "options": [
+    "A) Uch ming somga",
+    "B) Ikki ming somga",
+    "C) Bir ming somga",
+    "D) To‘rt ming somga"
+   ],
+   "answer": "A) Uch ming somga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ziyodulla ot tarbiyalashda qanday ishlarni tartib bilan bajardi?",
+   "options": [
+    "A) Yem berdi, sovitdi, egarladi",
+    "B) Mindirdi, sotdi, qochirdi",
+    "C) Chopdirdi, urdi, boyladi",
+    "D) Sotib oldi, haydadi, boqdi"
+   ],
+   "answer": "A) Yem berdi, sovitdi, egarladi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ziyodulla nega pochtachining «o‘rtoq Qurbonov» deganiga g‘ashlanardi?",
+   "options": [
+    "A) O‘zini mayna qilingandek sezardi",
+    "B) Otini unutgan deb o‘ylardi",
+    "C) Amaldor bo‘lishni xohlamasdi",
+    "D) Pochtachini yomon ko‘rardi"
+   ],
+   "answer": "A) O‘zini mayna qilingandek sezardi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif Rixsiyev obrazi orqali qanday odamlarni ko‘rsatmoqchi bo‘lgan?",
+   "options": [
+    "A) Balandparvoz va samimiy bo‘lmagan",
+    "B) Mehnatkash va halol Cho‘pon",
+    "C) Juda aqlli va kamtar",
+    "D) Qishloqparvar va sodda insondan"
+   ],
+   "answer": "A) Balandparvoz va samimiy bo‘lmagan"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ziyodullaning el gapiga qaramay ot boqishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, orzusi uchun intildi",
+    "B) Noto‘g‘ri, eldan ajralmaslik kerak",
+    "C) Bekorchi ish bilan shug‘ullandi",
+    "D) Faqat pul sarflab qiynaldi"
+   ],
+   "answer": "A) To‘g‘ri, orzusi uchun intildi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «otning joni bor, yuragi bor» iborasi bilan nimani ko‘rsatgan?",
+   "options": [
+    "A) Ot inson kabi sadoqatli",
+    "B) Ot mashinadan sekinroq yuradi",
+    "C) Ot faqat yem yeydi",
+    "D) Ot to‘rt oyoqli jonivor"
+   ],
+   "answer": "A) Ot inson kabi sadoqatli"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘z ot to‘qqiz yoshga to‘lgach, badanida nima paydo bo‘ldi?",
+   "options": [
+    "A) Xolday qora donalar",
+    "B) Oq chiziqlar",
+    "C) Qizil nishonlar",
+    "D) Jigarrang dog‘lar"
+   ],
+   "answer": "A) Xolday qora donalar"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ziyodulla Tarlon peshonasiga qanday tumor ilib qo‘ydi?",
+   "options": [
+    "A) Do‘lana shoxidan bo‘lgan tumor",
+    "B) Kumushdan yasalgan belgi",
+    "C) Charmdan qilingan ko‘ztumor",
+    "D) Qizil matodan bog‘langan"
+   ],
+   "answer": "A) Do‘lana shoxidan bo‘lgan tumor"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Obshir qishlog‘idagi to‘yda bakovul kim edi?",
+   "options": [
+    "A) Qizil yuzli, mo‘ylovli odam",
+    "B) Keksa sinchi Jo‘ra bobo",
+    "C) Safar ismli chavandoz",
+    "D) Shoʻrchilik Fayzulla chavandoz"
+   ],
+   "answer": "A) Qizil yuzli, mo‘ylovli odam"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tarlon ko‘pkarida uloqni olib qayerga sakradi?",
+   "options": [
+    "A) Chuqur soy ichiga",
+    "B) Baland adir ustiga",
+    "C) Katta ariq bo‘yiga",
+    "D) Qishloq ko‘chasiga"
+   ],
+   "answer": "A) Chuqur soy ichiga"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Boysundagi ko‘pkarida o‘zgalarning haqqiga kimlar qing‘irlik qildi?",
+   "options": [
+    "A) Boysunlik chavandozlar",
+    "B) Sho‘rchilik chavandozlar",
+    "C) Irg‘alilik yigitlar",
+    "D) Oboqlilik otboqarlar"
+   ],
+   "answer": "A) Boysunlik chavandozlar"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tarlon mardligidan keyin voqealar qanday ketma-ketlikda yuz berdi?",
+   "options": [
+    "A) Soqoldor talab qildi, haq berildi",
+    "B) Bakovul qochdi, ot sotildi",
+    "C) Ot jarohatlandi, uyga qaytildi",
+    "D) Uloq bekor qilindi, arazlandi"
+   ],
+   "answer": "A) Soqoldor talab qildi, haq berildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Ziyodulla tez-tez arazlab turishni yaxshi ko‘rardi?",
+   "options": [
+    "A) E’tibor va izzatni his etish uchun",
+    "B) Boshqalarni jazolash maqsadida",
+    "C) Kallasi kal bo‘lgani uchun",
+    "D) Otini maqtashlarini kutib"
+   ],
+   "answer": "A) E’tibor va izzatni his etish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Chag‘ir ot kunga qarab chopolmadi?",
+   "options": [
+    "A) Ko‘zi ko‘k bo‘lgani uchun",
+    "B) Quda-anda ot bo‘lgani uchun",
+    "C) Juda qari bo‘lgani uchun",
+    "D) Oyoqlari og‘r kalta edi"
+   ],
+   "answer": "A) Ko‘zi ko‘k bo‘lgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Fayzulla chavandoz yiqilgach, darrov turib otini egarlagani nimadan dalolat?",
+   "options": [
+    "A) Chavandozlik mardligi va sabridan",
+    "B) Otidan qo‘rqqanidan",
+    "C) Uloqni o‘g‘irlash niyatidan",
+    "D) Yiqilishni sezmaganidan"
+   ],
+   "answer": "A) Chavandozlik mardligi va sabridan"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Ot yiqitsa, yolini to‘shaydi» iborasi matnda qanday tuyg‘u beradi?",
+   "options": [
+    "A) Otning insoniyatga mehribonligini",
+    "B) Otning juda og‘irligini",
+    "C) Yiqilishning xavfsizligini",
+    "D) Eshakning kuchli emasligini"
+   ],
+   "answer": "A) Otning insoniyatga mehribonligini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qoralik zotini olish uchun chavandoz nima qilishi kerak edi?",
+   "options": [
+    "A) Uloqni chuqurchaga olib kelishi",
+    "B) Otni tez chopdirishi",
+    "C) Bakovulga serka berishi",
+    "D) Adir oshib o‘tishi"
+   ],
+   "answer": "A) Uloqni chuqurchaga olib kelishi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ziyodullaning chiqqan qo‘lini kim joyiga solib qo‘ydi?",
+   "options": [
+    "A) Qurbonnazar tabib",
+    "B) Qishloq do‘xtiri",
+    "C) Botir mirob",
+    "D) Kapitan katta"
+   ],
+   "answer": "A) Qurbonnazar tabib"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rayonda Rahmon aka deb atalgan kishi qaysi kolxozdan edi?",
+   "options": [
+    "A) Navoiy kolxozidan",
+    "B) 8-Mart kolxozidan",
+    "C) Irg‘ali kolxozidan",
+    "D) Obshir kolxozidan"
+   ],
+   "answer": "A) Navoiy kolxozidan"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qishloqda adolat so‘rab ariza to‘plagan kishi kim edi?",
+   "options": [
+    "A) Botir mirob",
+    "B) Nazir juvozkash",
+    "C) Hasan bobo",
+    "D) Qurbonnazar tabib"
+   ],
+   "answer": "A) Botir mirob"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ziyodulla adirda to‘rt shahar yigiti bilan qanday to‘qnash keldi?",
+   "options": [
+    "A) So‘roqlandi, urildi, Tarlon qutqardi",
+    "B) Tanishdi, osh yedi, haydashdi",
+    "C) Ot sotdi, pul oldi, quvdi",
+    "D) Yordam berdi, ariqdan o‘tkazdi"
+   ],
+   "answer": "A) So‘roqlandi, urildi, Tarlon qutqardi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Tarlon hushsiz yotgan Ziyodullaning yonida vahimali kishnadi?",
+   "options": [
+    "A) Egasi uchun alamlangan va qayg‘urganidan",
+    "B) Och qolgani va suvsagani uchun",
+    "C) Shoshilib uyga ketgisi kelganidan",
+    "D) Boshqa otlarni chaqirish uchun"
+   ],
+   "answer": "A) Egasi uchun alamlangan va qayg‘urganidan"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ziyodulla nega Tarlonni o‘ziga aka, uka va birodar deydi?",
+   "options": [
+    "A) Ot unga eng sadoqatli do‘st",
+    "B) Boshqa odami yo‘q bo‘lganidan",
+    "C) Ot insondek gapira olgani uchun",
+    "D) Onasi shunday tayinlaganidan"
+   ],
+   "answer": "A) Ot unga eng sadoqatli do‘st"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qurbonnazar tabibning Ziyodullani gapga solib qo‘lini solishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, og‘riqni bildirmay davoladi",
+    "B) Noto‘g‘ri, aldamaslik kerak edi",
+    "C) Bekorchi usul qo‘llagan",
+    "D) Bemorga ziyon yetkazgan"
+   ],
+   "answer": "A) To‘g‘ri, og‘riqni bildirmay davoladi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Beqasam choponli Rahmon aka uchun Ziyodullaning guvohlik berishi qanday xulq?",
+   "options": [
+    "A) Oqko‘ngillik va juvonmardlik",
+    "B) Qo‘rqoqlik va befarqlik",
+    "C) Manfaatparastlik va xudbinlik",
+    "D) Shoshqaloqlik va soddalik"
+   ],
+   "answer": "A) Oqko‘ngillik va juvonmardlik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «ot – rubobiy musiqa, ot – ko‘rkam surat» jumlasi bilan nimani ifodalagan?",
+   "options": [
+    "A) Otning go‘zalligi va nafakatini",
+    "B) Otning juda baland kishnashini",
+    "C) Otning rasmda chizilganini",
+    "D) Otning musiqa chala olishini"
+   ],
+   "answer": "A) Otning go‘zalligi va nafakatini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida Ziyodullaning Tarlonga aytgan dildoshlik gaplari o‘quvchida qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Mungli, samimiy va kuchli mehr",
+    "B) Qo‘rquv va xavotir tuyg‘usi",
+    "C) Kulgili va yengil kayfiyat",
+    "D) Jahil va nafrat hissi"
+   ],
+   "answer": "A) Mungli, samimiy va kuchli mehr"
+  }
+ ]
+}

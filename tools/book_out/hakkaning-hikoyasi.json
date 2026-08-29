@@ -1,0 +1,28 @@
+{
+ "title": "Hakkaning hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-10",
+  "topics": [
+   "halollik",
+   "odob",
+   "jonivorlar",
+   "kulgi",
+   "to‘g‘rilik"
+  ],
+  "theme": "O‘zgalar mulkiga ruxsatsiz tegish va nojo‘ya qilmishlarni turli bahonalar bilan oqlash doimo xato ekanligi majoziy tilda ko‘rsatiladi.",
+  "summary": "Hakka odamlar uni o‘g‘ri deb atashidan nolib, o‘z qilmishlarini oqlashga tushadi. U egalik qurut va yong‘oqlarni yeyishini ehtiyoj, ashula aytishi uchun boshqa qushlarning tuxumini yutishini zarurat deb biladi. Hatto atirsovunni olib ketishiga ham bahona topadi. Hakka e’tiroz bildirganlarni g‘iybatchilikda ayblab, o‘zini mutlaqo haq deb hisoblaydi. Hikoya hakkaning mantiqsiz va kulgili oqlovlari bilan yakun topadi.",
+  "characters": "Hakka — o‘zining o‘g‘rilik va xudbinliklarini bahonalar bilan oqlashga usta, ayyor va majoziy qush.",
+  "conclusion": "Bu hikoya bolaga o‘zgalarning haqiga tegmaslik va qilgan xatosini bahonalar ortiga yashirmaslik sabog‘ini beradi. Hakkaning kulgili va mantiqsiz bahonalari orqali bola halollik hamda to‘g‘risini tan olish naqadar muhimligini anglaydi.",
+  "difficulty": "oson",
+  "mood": "kulgili, majoziy",
+  "for_whom": "Jonivorlar haqidagi qiziqarli hikoyalarni sevadigan, to‘g‘risozlik va halollik qoidalarini o‘rganayotgan bolalarga mos keladi."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Hakka o‘zining nojo‘ya ishlarini to‘g‘ri ko‘rsatish uchun turli bahonalar o‘ylab topdi. Seningcha, uning bu bahonalari to‘g‘rimi yoki u shunchaki o‘zini oqlamoqchimi? O‘zing biror marta xato qilib qo‘yganingda nima qilasan va o‘zgalar narsasini ruxsatsiz olmaslik uchun nima qilish kerak deb o‘ylaysan?"
+}

@@ -1,0 +1,417 @@
+{
+ "title": "Albert Eynshteyn",
+ "author": "Navro‘z Ergash o‘g‘li",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "ilm-fan",
+   "mehnatsevarlik",
+   "sabr",
+   "tinchlik",
+   "tafakkur"
+  ],
+  "theme": "Asar buyuk olim Albert Eynshteynning mashaqqatli hayot yo‘li, ilmga bo‘lgan cheksiz mehr va tinchliksevarlik g‘oyalarini yoritib beradi.",
+  "summary": "Albert Eynshteyn bolaligida kamgap va sinchkov bola bo‘lib o‘sadi. U besh yoshida kompas, olti yoshida skripka va keyinchalik geometriya kitobi orqali ilmga mehr qo‘yadi. Gimnaziyadagi qat'iy intizomni yoqtirmay, o‘qishni tashlaydi va Shveysariyada ta'limni davom ettiradi. Bern shahridagi patent idorasida ishlab yurganida 'Olimpiya akademiyasi'ni tuzadi va 1905-yilda fizikaga oid to‘rtta olamshumul maqolasini e'lon qiladi. Nisbiylik nazariyasi unga dunyo bo‘ylab mashhurlik keltiradi. Germaniyada fashizm kuchaygach, u AQShga ko‘chib o‘tadi. Yadro qurolining xavfidan ogohlantirib, butun umri davomida tinchlik tarafdori bo‘lib qoladi. Eynshteyn 1955-yilda vafot etadi.",
+  "characters": "Albert Eynshteyn — bosh qahramon, daho fizik olim va tinchliksevar inson. Mileva — Albertning birinchi turmush o‘rtog‘i va ilmiy sherigi. Elza — Albertning ikkinchi ayoli va g‘amxo‘r hamrohi. Leo Silard — Albertni Ruzveltga maktub yozishga ko‘ndirgan olim.",
+  "conclusion": "Kitob bolada ilm-fanga qiziqish, mustaqil fikrlash va qiyinchiliklar qarshisida taslim bo‘lmaslik tuyg‘usini shakllantiradi. Bola muvaffaqiyat ortida mashaqqatli mehnat va izlanish yotishini anglaydi. Shuningdek, insoniylik va tinchlikni saqlash har qanday kashfiyotdan ustun ekanini uqadi.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, ilhomlantiruvchi",
+  "for_whom": "Ilm-fanga va kashfiyotlarga qiziqadigan, dunyo daholarining hayoti hamda muvaffaqiyat sirlarini o‘rganmoqchi bo‘lgan o‘smirlarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Albert necha yoshgacha biror og‘iz ham so‘z aytmadi?",
+   "options": [
+    "A) Ikki yoshgacha",
+    "B) Uch yoshgacha",
+    "C) To‘rt yoshgacha"
+   ],
+   "answer": "B) Uch yoshgacha"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Onasi Albert olti yoshga to‘lganda nimani sovg‘a qildi?",
+   "options": [
+    "A) Kompas",
+    "B) Kitob",
+    "C) Skripka"
+   ],
+   "answer": "C) Skripka"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Albertning otasi Myunxenda qanday shirkat ochdi?",
+   "options": [
+    "A) Elektr shirkati",
+    "B) Qurilish shirkati",
+    "C) Savdo shirkati"
+   ],
+   "answer": "A) Elektr shirkati"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Albert Myunxenda tasodifan qaysi kitobni topib oldi?",
+   "options": [
+    "A) Fizika kitobi",
+    "B) Geometriya kitobi",
+    "C) Tarix kitobi"
+   ],
+   "answer": "B) Geometriya kitobi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Albertning bolalikdagi ikkita asosiy hamrohi nimalar edi?",
+   "options": [
+    "A) Kompas va skripka",
+    "B) Daho va ustoz",
+    "C) Velosiped va daftar"
+   ],
+   "answer": "A) Kompas va skripka"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Albert Syurix universitetiga birinchi urinishda qanday natija ko‘rsatdi?",
+   "options": [
+    "A) Hamma fanlardan yiqildi",
+    "B) Matematika-fizikada eng yaxshi bo‘ldi",
+    "C) Faqat tillardan o‘tdi"
+   ],
+   "answer": "B) Matematika-fizikada eng yaxshi bo‘ldi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Albert nega Luitpold gimnaziyasidagi darslarni yoqtirmas edi?",
+   "options": [
+    "A) Intizom juda qat'iy bo‘lgani uchun",
+    "B) Darslar juda oson bo‘lgani uchun",
+    "C) Xonalar qorong‘i bo‘lgani uchun"
+   ],
+   "answer": "A) Intizom juda qat'iy bo‘lgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Maks Talmey Albertga nega ilmiy kitoblarni keltirib berardi?",
+   "options": [
+    "A) Albertning bilimga qiziqishini ko‘rib",
+    "B) Otasi shuni iltimos qilgani uchun",
+    "C) Kitoblarini sotish uchun"
+   ],
+   "answer": "A) Albertning bilimga qiziqishini ko‘rib"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Albertning o‘qishni tashlab Milanga ketishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, o‘z yo‘lini topdi",
+    "B) Noto‘g‘ri, barchasini unutdi",
+    "C) Xato, u umuman o‘qimadi"
+   ],
+   "answer": "A) To‘g‘ri, o‘z yo‘lini topdi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Albertning yuvosh bolakayligini qanday tasvirlaydi?",
+   "options": [
+    "A) Xonada indamay tashqariga qarashidan",
+    "B) Doim baland ovozda yig‘lashidan",
+    "C) Barcha bilan urishishidan"
+   ],
+   "answer": "A) Xonada indamay tashqariga qarashidan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Albert 1905-yilda nechta ilmiy maqola chop etdi?",
+   "options": [
+    "A) Ikkita",
+    "B) To‘rtta",
+    "C) Oltita"
+   ],
+   "answer": "B) To‘rtta"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yorug‘likning kichik zarrachalari fanga qanday nom bilan kirdi?",
+   "options": [
+    "A) Atom",
+    "B) Foton",
+    "C) Elektron"
+   ],
+   "answer": "B) Foton"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jeneva universiteti Albertga qanday unvon berishga qaror qildi?",
+   "options": [
+    "A) Faxriy doktorlik",
+    "B) Professorlik",
+    "C) Akademiklik"
+   ],
+   "answer": "A) Faxriy doktorlik"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Albert darsdan so‘ng talabalar bilan qayerga borardi?",
+   "options": [
+    "A) Kutubxonaga",
+    "B) Terrasse kafesiga",
+    "C) Uyiga"
+   ],
+   "answer": "B) Terrasse kafesiga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Albert taklif qilingan Kayzer Vilgelm instituti qaysi shaharda joylashgan?",
+   "options": [
+    "A) Milan",
+    "B) Berlin",
+    "C) Syurix"
+   ],
+   "answer": "B) Berlin"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Albert marosimga paypoqsiz borganida nimani ko‘rsatmoqchi edi?",
+   "options": [
+    "A) Rasmiyatchilik va qoidalarga befarqligini",
+    "B) Paypog‘i yo‘qolib qolganini",
+    "C) Sovuqni sezmasligini"
+   ],
+   "answer": "A) Rasmiyatchilik va qoidalarga befarqligini"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Albert nega Birinchi jahon urushida qatnashishni rad etdi?",
+   "options": [
+    "A) U tinchlik tarafdori bo‘lgani uchun",
+    "B) U urushdan qo‘rqqani uchun",
+    "C) Unga ruxsat berishmagani uchun"
+   ],
+   "answer": "A) U tinchlik tarafdori bo‘lgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Albertning Freyndlix dasturxoniga formula yozishi haqida nima deysiz?",
+   "options": [
+    "A) Xayolparastligi tufayli odobni unutgan",
+    "B) Qasddan dasturxonni buzmoqchi bo‘lgan",
+    "C) Dasturxonni qog‘oz deb o‘ylagan"
+   ],
+   "answer": "A) Xayolparastligi tufayli odobni unutgan"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Hilbert va Eynshteynning formulani go‘zallik deb bilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, ilm-fan ham san'atdir",
+    "B) Noto‘g‘ri, faqat raqamlar muhim",
+    "C) Xato, formulada go‘zallik bo‘lmaydi"
+   ],
+   "answer": "A) To‘g‘ri, ilm-fan ham san'atdir"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif 1905-yilni nima uchun Ajoyibotga boy yil deb ataydi?",
+   "options": [
+    "A) Albert fundamental kashfiyotlar qilgani uchun",
+    "B) Albert uylangani uchun",
+    "C) Albert sayohatga chiqqani uchun"
+   ],
+   "answer": "A) Albert fundamental kashfiyotlar qilgani uchun"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Albert Elza bilan Haberlandstrasse ko‘chasida qaysi shaharda yashadi?",
+   "options": [
+    "A) Parij",
+    "B) Berlin",
+    "C) Nyu-York"
+   ],
+   "answer": "B) Berlin"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Albert AQShning qaysi universitetida ishlash taklifini qabul qildi?",
+   "options": [
+    "A) Garvard",
+    "B) Prinston",
+    "C) Oksford"
+   ],
+   "answer": "B) Prinston"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eynshteynga qarshi chiqqanlar necha muallifli kitob nashr etishdi?",
+   "options": [
+    "A) 50 muallif",
+    "B) 100 muallif",
+    "C) 200 muallif"
+   ],
+   "answer": "B) 100 muallif"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Albert AQSh Prezidenti Ruzveltga kim bilan maktub yozdi?",
+   "options": [
+    "A) Leo Silard",
+    "B) Frits Haber",
+    "C) Maksimilian"
+   ],
+   "answer": "A) Leo Silard"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "1945-yilda Yaponiyaning qaysi shaharlariga atom bombasi tashlandi?",
+   "options": [
+    "A) Tokio va Kioto",
+    "B) Xirosima va Nagasaki",
+    "C) Osaka va Kobo"
+   ],
+   "answer": "B) Xirosima va Nagasaki"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Albert Eynshteynga qarshi 100 muallif kitobiga nega kulib qaradi?",
+   "options": [
+    "A) Nohaq bo‘lsa bitta dalil yetarli bo‘lgani uchun",
+    "B) Kitobni o‘qishni xohlamagani uchun",
+    "C) Mualliflarni tanimagani uchun"
+   ],
+   "answer": "A) Nohaq bo‘lsa bitta dalil yetarli bo‘lgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Albert Yaponiyadagi portlashdan so‘ng nega Voh, kuydim dedi?",
+   "options": [
+    "A) Kashfiyoti dahshatli qurol bo‘lganidan qayg‘urib",
+    "B) O‘zi jarohat olgani uchun",
+    "C) Urush tugaganidan xursand bo‘lib"
+   ],
+   "answer": "A) Kashfiyoti dahshatli qurol bo‘lganidan qayg‘urib"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Eynshteynning umri oxirida tinchlik uchun kurashgani qanday sifat?",
+   "options": [
+    "A) Yuksak insonparvarlik",
+    "B) Shunchaki majburiyat",
+    "C) Manfaatsiz harakat"
+   ],
+   "answer": "A) Yuksak insonparvarlik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Eynshteynning so‘nggi kunlarini qanday tasvirlaydi?",
+   "options": [
+    "A) Haqiqiy faylasufdek mamnun va xotirjam",
+    "B) Qassos va g‘azabdor kayfiyatda",
+    "C) Qo‘rquv va sarosimaga tushgan"
+   ],
+   "answer": "A) Haqiqiy faylasufdek mamnun va xotirjam"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif ta'rificha, bugungi kunda Eynshteyn nomi nimaning sinonimi?",
+   "options": [
+    "A) Daho so‘zining",
+    "B) Qaysar so‘zining",
+    "C) Qahramon so‘zining"
+   ],
+   "answer": "A) Daho so‘zining"
+  }
+ ]
+}

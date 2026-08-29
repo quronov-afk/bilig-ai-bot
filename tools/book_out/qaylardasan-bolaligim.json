@@ -1,0 +1,417 @@
+{
+ "title": "Qaylardasan, bolaligim",
+ "author": "Xudoyberdi To‘xtaboyev",
+ "genre": "toʻplam",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "8-12",
+  "topics": [
+   "halollik",
+   "do‘stlik",
+   "oila",
+   "mehnatsevarlik",
+   "bolalik"
+  ],
+  "theme": "Halol mehnat, samimiy do‘stlik va ota-ona nasihatiga amal qilish insonni har qanday qiyinchilikdan qutqaradi hamda to‘g‘ri yo‘lga boshlaydi.",
+  "summary": "To‘plam adibning bolalik xotiralari, sarguzashtli qissa va ibratli ertaklaridan tashkil topgan. Qissalarda aka-uka Omonboy va Davronboyning beg‘ubor sarguzashtlari, ulkan quvurlar va gaz olib kelish voqealari, televizorga mukkasidan ketgan Telebolaning boshiga tushgan qiziq holatlar tasvirlanadi. Hikoyalarda esa maktab hayoti, bolalar o‘rtasidagi samimiy munosabatlar, qizg‘anchiqlik, shoshqaloqlik kabi illatlarning tarbiyaviy oqibatlari ochib beriladi. Kitob oxiridagi rivoyat va ertaklarda ota tarbiyasi, halol mehnating bilan topilgan burda nonning qadri, oqko‘ngillik va muhtojlarga yordam berishning fazilati sodda va ta'sirchan tilda hal etiladi.",
+  "characters": "Omonboy va Davronboy — quvnoq va sersavol aka-uka; Shofyor amaki — mehnatkash va bolajon shofyor; Qosimjon — shoirlikqa havas qilgan bola; Shavkatjon — qizg‘anchiq, lekin do‘stlarining yordamidan saboq olgan o‘quvchi; Rashid — sho‘x va arazchi bola.",
+  "conclusion": "Bu kitob bolaga halollik, kattalarni hurmat qilish va do‘stlikning qadriga yetish kabi oliyjanob fazilatlarni uqtiradi. Farzandingiz mehnatning rohatini va ota-ona nasihatiga rioya qilishning muhimligini anglab etadi.",
+  "difficulty": "oson",
+  "mood": "quvnoq, samimiy, saboq beruvchi",
+  "for_whom": "Sarguzashtlarni xush ko‘radigan, qiziqarli va kulgili voqealar orqali hayotiy saboqlar olishni istaydigan zukko bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Omonboy va Davronboy nega katak yonida poylab o‘tirishdi?",
+   "options": [
+    "A) Tovuqlar tuxum tug‘ishini poylash uchun",
+    "B) Mushukni haydash uchun",
+    "C) Shofyor amakini kutish uchun"
+   ],
+   "answer": "A) Tovuqlar tuxum tug‘ishini poylash uchun"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shofyor amakining mashinasiga nima bo‘lgan edi?",
+   "options": [
+    "A) Benzin tugab qolgan edi",
+    "B) Baloni yorilib ketgan edi",
+    "C) Dvigateli buzilgan edi"
+   ],
+   "answer": "B) Baloni yorilib ketgan edi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shofyor amaki bolalardan nima so‘rab keldi?",
+   "options": [
+    "A) Suv so‘rab keldi",
+    "B) Non so‘rab keldi",
+    "C) O‘tin so‘rab keldi"
+   ],
+   "answer": "A) Suv so‘rab keldi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Omonboy peshonasiga nima yopishib qolganini ko‘rdi?",
+   "options": [
+    "A) Kichkina televizorcha",
+    "B) Sehrli qalpoqcha",
+    "C) Rangli rasmlar"
+   ],
+   "answer": "A) Kichkina televizorcha"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Aka-ukalar shofyor amakiga qanday yordam berishdi?",
+   "options": [
+    "A) Suv va tuxum keltirishdi",
+    "B) Mashina balonini almashtirishdi",
+    "C) Qo‘shnilarni yordamga chaqirishdi"
+   ],
+   "answer": "A) Suv va tuxum keltirishdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shofyor amaki nega aka-ukalarga mashinani topshirib ketdi?",
+   "options": [
+    "A) Bolalar bir so‘zli bo‘lgani uchun",
+    "B) Mashinani sotmoqchi bo‘lgani uchun",
+    "C) Bolalar iltimos qilgani uchun"
+   ],
+   "answer": "A) Bolalar bir so‘zli bo‘lgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Telebola Omonboy nega dars tayyorlashda televizor qutisiga kirardi?",
+   "options": [
+    "A) Aks holda miyasiga narsa kirmasdi",
+    "B) Uyda joy yo‘qligi uchun",
+    "C) Dadasidan berkinish uchun"
+   ],
+   "answer": "A) Aks holda miyasiga narsa kirmasdi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Aka-ukalarning amaki topshirig‘ini bajarishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, mas'uliyatni his qilishdi",
+    "B) Noto‘g‘ri, o‘yinga ketishlari kerak edi",
+    "C) Ahamiyatsiz ish edi"
+   ],
+   "answer": "A) To‘g‘ri, mas'uliyatni his qilishdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif aka-ukalarni 'azamat bolalar' deb nimani ko‘rsatgan?",
+   "options": [
+    "A) Ularning va'daga vafodorligini",
+    "B) Ularning juda kuchliligini",
+    "C) Ularning yugurishini"
+   ],
+   "answer": "A) Ularning va'daga vafodorligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Telebola voqeasida qaysi illat kulgili tarzda tasvirlangan?",
+   "options": [
+    "A) Tushkunlik va yolg‘izlik",
+    "B) Televizorga me'yoridan ortiq berilish",
+    "C) Ota-onaga quloq solmaslik"
+   ],
+   "answer": "B) Televizorga me'yoridan ortiq berilish"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Aka-ukalar quvur ichida sovuqdan saqlanish uchun nimaga o‘ralishdi?",
+   "options": [
+    "A) Dadalarining eski to‘niga",
+    "B) Katta ko‘rpaga",
+    "C) Qalin gilamga"
+   ],
+   "answer": "A) Dadalarining eski to‘niga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qosimjonning she'ri qaysi gazetada bosilib chiqdi?",
+   "options": [
+    "A) Maktab va kolxoz gazetasida",
+    "B) Shahar gazetasida",
+    "C) Bolalar jurnalida"
+   ],
+   "answer": "A) Maktab va kolxoz gazetasida"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rashid dazmol spirali uchun qorovulga nimani berdi?",
+   "options": [
+    "A) Dadasining ko‘zoynagini",
+    "B) O‘zining soatini",
+    "C) Kitoblarini"
+   ],
+   "answer": "A) Dadasining ko‘zoynagini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shavkatjon bir kuni ko‘rsatmasdan yeyish uchun nimani yutib yubordi?",
+   "options": [
+    "A) Butun bir tuxumni",
+    "B) Katta olmani",
+    "C) Shirin konfetni"
+   ],
+   "answer": "A) Butun bir tuxumni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qosimjonning she'r yozgani va rasmi chizilgani tartibi qanday?",
+   "options": [
+    "A) Avval she'ri chiqdi, so‘ng rasmi chizildi",
+    "B) Avval rasmi chizildi, so‘ng she'r yozdi",
+    "C) Ikkalasi bir kunda bo‘ldi"
+   ],
+   "answer": "A) Avval she'ri chiqdi, so‘ng rasmi chizildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Vova va Abduqodir birgalikda nima qilishdi?",
+   "options": [
+    "A) Ko‘chat ekib parvarish qilishdi",
+    "B) Uy qurishdi",
+    "C) Shoshilinch yo‘lga chiqishdi"
+   ],
+   "answer": "A) Ko‘chat ekib parvarish qilishdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Shavkatjon do‘stlariga daftari va ruchkasini bermas edi?",
+   "options": [
+    "A) Qizg‘anchiq va xasis bo‘lgani uchun",
+    "B) Daftari qolmagani uchun",
+    "C) Muallim taqiqlagani uchun"
+   ],
+   "answer": "A) Qizg‘anchiq va xasis bo‘lgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Baxtiyor nega dam olish oromgohiga borishni xohlamadi?",
+   "options": [
+    "A) Nihollari qurib qolishidan qo‘rqib",
+    "B) Oromgohni yoqtirmagani uchun",
+    "C) Kasal bo‘lib qolgani uchun"
+   ],
+   "answer": "A) Nihollari qurib qolishidan qo‘rqib"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Rashidning ota-onasi buyumini birovga berib yuborishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, so‘ramay olish odabsizlik",
+    "B) To‘g‘ri, dazmol muhim edi",
+    "C) Farqi yo‘q"
+   ],
+   "answer": "A) Noto‘g‘ri, so‘ramay olish odabsizlik"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Shavkatjonning o‘zgarishini tasvirlab nimani ilgari suradi?",
+   "options": [
+    "A) O‘rtoqlik va saxovatning muhimligini",
+    "B) Boylik to‘plash kerakligini",
+    "C) Yolg‘iz yashash afzalligini"
+   ],
+   "answer": "A) O‘rtoqlik va saxovatning muhimligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uch sayyoh tog‘lar orasida qolganda nimani eslab tavallo qildi?",
+   "options": [
+    "A) Birovning haqqini yemaganlarini",
+    "B) Shohona saroylarini",
+    "C) Sayohatdagi sarguzashtlarini"
+   ],
+   "answer": "A) Birovning haqqini yemaganlarini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rivoyatda ota o‘g‘lining olovdan pulni olganida nimani bildi?",
+   "options": [
+    "A) O‘g‘li mehnat qilib topganini",
+    "B) O‘g‘lining qo‘rqoqligini",
+    "C) Pulning sohtaligini"
+   ],
+   "answer": "A) O‘g‘li mehnat qilib topganini"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qaysi qush sovuqda qolgan chumchuqqa boshpana berdi?",
+   "options": [
+    "A) Qarg‘a",
+    "B) Lochin",
+    "C) Chumchuq do‘sti"
+   ],
+   "answer": "A) Qarg‘a"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Podshoh o‘lpon solgach anor sharbati nima uchun kamaydi?",
+   "options": [
+    "A) Podshohning niyati buzilgani uchun",
+    "B) Anorlar qurigani uchun",
+    "C) Kampir anorni almashtirgani uchun"
+   ],
+   "answer": "A) Podshohning niyati buzilgani uchun"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ota o‘g‘lining mehnatini qanday bosqichda sinab ko‘rdi?",
+   "options": [
+    "A) Uch marta turli ustalarga berib",
+    "B) Darrov pulini tortib olib",
+    "C) Uyda olib o‘tirib"
+   ],
+   "answer": "A) Uch marta turli ustalarga berib"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Aqlli bola nega 'topsak birini, topmasak ikkisini so‘yamiz' dedi?",
+   "options": [
+    "A) Qo‘y bo‘g‘oz bo‘lgani uchun",
+    "B) Ikkita qo‘yi borligi uchun",
+    "C) Shohni aldash uchun"
+   ],
+   "answer": "A) Qo‘y bo‘g‘oz bo‘lgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Chumchuq avval nega qarg‘a bilan do‘st bo‘lishni xohlamadi?",
+   "options": [
+    "A) Qarg‘ani ko‘rimsiz deb hisoblagani uchun",
+    "B) Qarg‘a urishqoq bo‘lgani uchun",
+    "C) Uydan ketmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Qarg‘ani ko‘rimsiz deb hisoblagani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qarg‘aning o‘zini kamsitgan chumchuqni qutqarishi qanday xislat?",
+   "options": [
+    "A) Oqko‘ngillik va chin do‘stlik",
+    "B) Maqtanchoqlik",
+    "C) Soddalik va qo‘rqoqlik"
+   ],
+   "answer": "A) Oqko‘ngillik va chin do‘stlik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Rivoyatdagi otaning pulni olovga tashlashi to‘g‘ri sinovmi?",
+   "options": [
+    "A) To‘g‘ri, mehnat qadrini bilish uchun",
+    "B) Noto‘g‘ri, pulni asrash kerak edi",
+    "C) Befoyda sinov edi"
+   ],
+   "answer": "A) To‘g‘ri, mehnat qadrini bilish uchun"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Podshoh va kampir ertagidan muallif qanday xulosa beradi?",
+   "options": [
+    "A) Adolat va yaxshi niyat baraka keltiradi",
+    "B) O‘lponni ko‘paytirish kerak",
+    "C) Anor yetishtirish qiyin"
+   ],
+   "answer": "A) Adolat va yaxshi niyat baraka keltiradi"
+  }
+ ]
+}

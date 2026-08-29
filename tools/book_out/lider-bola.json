@@ -1,0 +1,417 @@
+{
+ "title": "Lider bola",
+ "author": "G‘iyosiddin Yusuf",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "8-12 yoshdagilar uchun",
+  "topics": [
+   "liderlik",
+   "odob-axloq",
+   "mehnatsevarlik",
+   "maqsad qo‘yish",
+   "tabiatni asrash"
+  ],
+  "theme": "Bolalarda haqiqiy liderlik xislatlarini, odob-axloq, mehnatsevarlik va mustaqil fikrlash ko‘nikmalarini rivojlantirish.",
+  "summary": "Kitobda bolalarga liderlik yetakchilik va mas’uliyat ekani sodda hikoyalar orqali tushuntiriladi. Sarvar va Azimjonning hashari, Alining hikoya yozib qobiliyatini kashf etishi, Tohir va Shodiyorning reja hamda harakat orqali muvaffaqiyatga erishishi, Omonning yolg‘onchilik oqibatida ishonchni yo‘qotishi, Javohirning halol mehnat bilan pul yig‘ishi, Islom va Jasurning kattalarga hamda qo‘shnilarga hurmati, Yusufning mushukchaga va Odilning gullarga g‘amxo‘rlik qilishi kabi hayotiy voqealar keltirilgan. Har bir hikoya bolani to‘g‘ri yo‘l tutishga, salomatlikni asrashga va tabiatga mehr ko‘rsatishga o‘rgatadi.",
+  "characters": "Azimjon va Sarvar (sinfdoshlariga va otasiga yordam bergan mehnatkash bolalar), Ali (yozuvchilik qobiliyatini kashf etgan bola), Tohir va Shodiyor (reja va mehnat bilan g‘alaba qozonganlar), Omon (yolg‘on gapirib pand yegan bola), Javohir (mehnat bilan pul topishni o‘rgangan bola), Yusuf va Odil (tabiat hamda jonivorlarga mehribon bolalar).",
+  "conclusion": "Kitob bolaga haqiqiy liderlik faqat buyruq berish emas, balki o‘zini boshqarish, o‘rnak bo‘lish va yordam berishdan iboratligini ko‘rsatadi. U farzandingizda mas’uliyat, rostgo‘ylik hamda ota-ona va ustozlarga hurmat tuyg‘ularini shakllantiradi.",
+  "difficulty": "oson",
+  "mood": "samimiy, o‘ylantiruvchi, da’vatkor",
+  "for_whom": "O‘z qobiliyatini kashf etishni, sinfda va hayotda yetakchi hamda odobli bola bo‘lishni istagan o‘quvchilar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Azimjon va sinfdoshlari Sarvarga qanday yordam berishdi?",
+   "options": [
+    "A) Hashar qilib uy qurishda yordam berishdi",
+    "B) Pul yig‘ib berishdi",
+    "C) Darslarini qilib berishdi"
+   ],
+   "answer": "A) Hashar qilib uy qurishda yordam berishdi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ali qaysi topshiriqni bajargach o‘z qobiliyatini kashf etdi?",
+   "options": [
+    "A) Erkin mavzuda insho yozganda",
+    "B) Matematikadan misol yechganda",
+    "C) Futbol o‘ynaganda"
+   ],
+   "answer": "A) Erkin mavzuda insho yozganda"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anvar shahar olimpiadasida qaysi fandan birinchi o‘rinni oldi?",
+   "options": [
+    "A) Matematika fanidan",
+    "B) Ona tili fanidan",
+    "C) Rasm chizish fanidan"
+   ],
+   "answer": "A) Matematika fanidan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tohir matematikadan o‘tkazilgan tanlovda nechanchi o‘rinni egalladi?",
+   "options": [
+    "A) Birinchi o‘rinni",
+    "B) Ikkinchi o‘rinni",
+    "C) Uchinchi o‘rinni"
+   ],
+   "answer": "C) Uchinchi o‘rinni"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnga ko‘ra, inson tanasida nechta asosiy a’zo bor?",
+   "options": [
+    "A) 50 ta",
+    "B) 78 ta",
+    "C) 100 ta"
+   ],
+   "answer": "B) 78 ta"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Bobur yetakchilikka intilmasa ham jamoaga juda kerak edi?",
+   "options": [
+    "A) U sodiq va yordamchi edi",
+    "B) U eng boy bola edi",
+    "C) U musobaqada yugurgan edi"
+   ],
+   "answer": "A) U sodiq va yordamchi edi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ali nega avvaliga o‘zini hech narsa qila olmayman deb o‘yladi?",
+   "options": [
+    "A) O‘zini turli ishlarda sinab ko‘rmagandi",
+    "B) Dangasa bo‘lgani uchun",
+    "C) Maktabga bormagani uchun"
+   ],
+   "answer": "A) O‘zini turli ishlarda sinab ko‘rmagandi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Azimjonning Sarvarga yordam berish tashabbusi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, bu haqiqiy liderlikdir",
+    "B) Noto‘g‘ri, o‘z ishini qilishi kerak",
+    "C) Bebaho va foydasiz ish"
+   ],
+   "answer": "A) To‘g‘ri, bu haqiqiy liderlikdir"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tohirning uchinchi o‘rinni olib ham xursand bo‘lishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, chunki u harakat qildi",
+    "B) Noto‘g‘ri, u faqat yutishi kerak",
+    "C) Noto‘g‘ri, u siqilishi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, chunki u harakat qildi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif “Hayot ko‘zguga o‘xshaydi” iborasi bilan nimani anglatmoqchi?",
+   "options": [
+    "A) Unga qanday qarasang, shunday ko‘rinadi",
+    "B) Har kuni ko‘zguga qarash kerak",
+    "C) Hayot faqat shisha va ko‘zgudir"
+   ],
+   "answer": "A) Unga qanday qarasang, shunday ko‘rinadi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shodiyor yugurish musobaqasiga tayyorlanish uchun qancha vaqt belgiladi?",
+   "options": [
+    "A) Bir oy",
+    "B) Uch oy",
+    "C) Bir yil"
+   ],
+   "answer": "B) Uch oy"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Omon ikkinchi marta yolg‘on gapirganda qishloqdoshlari nima deyishdi?",
+   "options": [
+    "A) Yana kelaveramiz deyishdi",
+    "B) Yolg‘on chaqirsang, boshqa kelmaymiz deyishdi",
+    "C) Unga mukofot berishdi"
+   ],
+   "answer": "B) Yolg‘on chaqirsang, boshqa kelmaymiz deyishdi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "7-10 yoshli bolalar telefondan kuniga qancha foydalanishi mumkin?",
+   "options": [
+    "A) Bir soatgacha",
+    "B) Uch soatgacha",
+    "C) Umuman mumkin emas"
+   ],
+   "answer": "A) Bir soatgacha"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ziyod nega maktabda yugura olmay, qorin og‘rig‘i bilan kasallandi?",
+   "options": [
+    "A) Salomatligiga e’tibor bermagani uchun",
+    "B) Ko‘p yugurgani uchun",
+    "C) Kitob ko‘p o‘qigani uchun"
+   ],
+   "answer": "A) Salomatligiga e’tibor bermagani uchun"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shodiyor marraga birinchi bo‘lib yetib kelishining sabablari ketma-ketligi qaysi?",
+   "options": [
+    "A) Aniq maqsad, reja va mehnat",
+    "B) Faqat tez yugurish va omad",
+    "C) Uyqu va ko‘p ovqatlanish"
+   ],
+   "answer": "A) Aniq maqsad, reja va mehnat"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnga ko‘ra, fikrlamaydigan insonning oqibatlari qaysi javobda ko‘rsatilgan?",
+   "options": [
+    "A) Noto‘g‘ri qaror va ko‘r-ko‘rona ergashish",
+    "B) Juda ko‘p g‘alabalarga erishish",
+    "C) Har doim sog‘lom bo‘lish"
+   ],
+   "answer": "A) Noto‘g‘ri qaror va ko‘r-ko‘rona ergashish"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Haqiqiy bo‘ri kelganda nega qishloq ahli Omonning yoniga bormadi?",
+   "options": [
+    "A) Ular Omonni yana aldayapti deb o‘ylashdi",
+    "B) Bo‘ridan juda qo‘rqishdi",
+    "C) Omonning ovozini eshitishmadi"
+   ],
+   "answer": "A) Ular Omonni yana aldayapti deb o‘ylashdi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yulduz nega yerga yashiringan o‘raga tushib ketdi?",
+   "options": [
+    "A) O‘ylamasdan, oyoq ostiga qaramay yugurgani uchun",
+    "B) Shar uni tortib ketgani uchun",
+    "C) Qorong‘i tushib qolgani uchun"
+   ],
+   "answer": "A) O‘ylamasdan, oyoq ostiga qaramay yugurgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Omonning hazillashib yolg‘on gapirishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, yolg‘on ishonchni yo‘qotadi",
+    "B) To‘g‘ri, hazillashsa bo‘laveradi",
+    "C) To‘g‘ri, bu juda kulgili"
+   ],
+   "answer": "A) Noto‘g‘ri, yolg‘on ishonchni yo‘qotadi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Avval o‘yla, keyin so‘yla\" maqolini nima uchun keltirgan?",
+   "options": [
+    "A) O‘ylamay qilingan ish zarar keltirishini ko‘rsatish uchun",
+    "B) Tez gapirishni o‘rgatish uchun",
+    "C) Maqollarni yodlatish uchun"
+   ],
+   "answer": "A) O‘ylamay qilingan ish zarar keltirishini ko‘rsatish uchun"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Javohir velosiped olish uchun pulni qanday topdi?",
+   "options": [
+    "A) Baklajkalarni yig‘ib, topshirib pul yig‘di",
+    "B) Otasidan tayyor pul oldi",
+    "C) Musobaqada yutib oldi"
+   ],
+   "answer": "A) Baklajkalarni yig‘ib, topshirib pul yig‘di"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yusuf qutqarib qolgan mushukchasiga qanday ism qo‘ydi?",
+   "options": [
+    "A) Suvsar",
+    "B) Olapar",
+    "C) Moshik"
+   ],
+   "answer": "A) Suvsar"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bir kilogramm asal yig‘ish uchun asalarilar qancha gulga qo‘nadi?",
+   "options": [
+    "A) 19 million gulga",
+    "B) 100 ming gulga",
+    "C) 1 million gulga"
+   ],
+   "answer": "A) 19 million gulga"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Islom qo‘shnisining hovlisiga o‘tgan olma shoxini nima qildi?",
+   "options": [
+    "A) Kesmay, mevasidan olishga ruxsat berdi",
+    "B) Darhol shoxni kesib tashladi",
+    "C) Qo‘shnisi bilan urushdi"
+   ],
+   "answer": "A) Kesmay, mevasidan olishga ruxsat berdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oqibatini o‘ylamay taxta ko‘prikdan o‘tgan bola nega suvga tushdi?",
+   "options": [
+    "A) Ogohlantiruvchi yozuvni o‘qishni bilmagani uchun",
+    "B) Ko‘prikdan sakramagani uchun",
+    "C) Suvda suzmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Ogohlantiruvchi yozuvni o‘qishni bilmagani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jasur ekgan gul ko‘chatiga g‘amxo‘rlik qilib nimani o‘rgandi?",
+   "options": [
+    "A) Mehnat va odobda hurmat qozonishni",
+    "B) Gullarni uzib sotishni",
+    "C) Dars qilmasdan o‘ynashni"
+   ],
+   "answer": "A) Mehnat va odobda hurmat qozonishni"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Odilning chiroyli gulni uzmasdan parvarish qilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, gulni parvarishlash haqiqiy mehrdir",
+    "B) Noto‘g‘ri, uzib uyga olib borishi kerak",
+    "C) Noto‘g‘ri, gulni tashlab ketish kerak"
+   ],
+   "answer": "A) To‘g‘ri, gulni parvarishlash haqiqiy mehrdir"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Ustoz - otangdek ulug‘\" iborasini nega ta’kidlaydi?",
+   "options": [
+    "A) Ustozni ota-onaday ehtirom qilish kerakligi uchun",
+    "B) Ustoz faqat dars o‘tishi uchun",
+    "C) Maqol chiroyli eshitilgani uchun"
+   ],
+   "answer": "A) Ustozni ota-onaday ehtirom qilish kerakligi uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "\"Kim rahm qilmasa, unga rahm qilinmaydi\" iborasi nimaga chorlaydi?",
+   "options": [
+    "A) Jonivorlar va insonlarga mehribon bo‘lishga",
+    "B) Faqat o‘zini o‘ylashga",
+    "C) Hayvonlardan qochishga"
+   ],
+   "answer": "A) Jonivorlar va insonlarga mehribon bo‘lishga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oishaning tartib-intizomli bo‘lgandan keyingi kun tartibini ko‘rsating.",
+   "options": [
+    "A) Bir vaqtda uyg‘onish, tayyorgarlik va nonushta",
+    "B) Kechikib uyg‘onish va ovqatlanmaslik",
+    "C) Faqat o‘yin o‘ynash va uxlash"
+   ],
+   "answer": "A) Bir vaqtda uyg‘onish, tayyorgarlik va nonushta"
+  }
+ ]
+}

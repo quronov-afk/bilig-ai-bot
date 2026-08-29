@@ -1,0 +1,417 @@
+{
+ "title": "0099 raqamli yolg‘onchi",
+ "author": "Anvar Obidjon",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "8-12",
+  "topics": [
+   "halollik",
+   "do‘stlik",
+   "mas'uliyat",
+   "oqibat",
+   "kamtarlik"
+  ],
+  "theme": "Asarda manmanlik, yolg‘onchilik va amalparastlik insonni qiyin ahvolga solishi, chinakam baxt va kuch esa halollik hamda ahil do‘stlikda ekani ko‘rsatiladi.",
+  "summary": "Babachoq fermasida yashovchi 0099 raqamli sho‘x va betamiz Uloqcha podaboshi Nayzashox serkaning bo‘ynidagi kumush qo‘ng‘iroqni o‘g‘irlab, yaylovga qochadi. U u yerda o‘zini fermadan yuborilgan yangi boshliq deb tanishtirib, Bilimdon laqabli sodda eshakni o‘ziga yordamchi qilib oladi. Uloqcha manmanlik bilan yaylovning eng sero‘t joylarini egallaydi, xavfsizlikni o‘ylab gapirgan Olapar itni quvib yuboradi. Keyin ayyor bo‘rilar Ashqal va Dashqalning maqtovlariga uchib, podadagi hayvonlarni (Ho‘kiz og‘a, Bo‘taloq, Qo‘zichoq va Eshakni) Olatog‘ga sayohat bahonasida Toshqo‘rg‘ondagi bo‘rilar qopqoniga boshlab boradi. Qamalga tushgan hayvonlar Ho‘kiz og‘a boshchiligida mardona kurashadilar. Quyon (Dingirvoy) xabar berishi bilan yetib kelgan Olapar it bo‘rilarni mag‘lub etadi. Uloqcha o‘zining manmanligi va yolg‘onchiligi tufayli barchani xavfga qo‘yganini anglab, tavba qiladi. U o‘g‘irlangan qo‘ng‘iroqni itqitib yuboradi, hayvonlar uni kechirib, o‘z saflariga qabul qilishadi.",
+  "characters": "0099 raqamli Uloqcha — sho‘x, manman, yolg‘onchi va amalparast bosh qahramon.\nBilimdon — o‘zini aqlli ko‘rsatishni yaxshi ko‘radigan sodda va ishonchuvchan eshak.\nHo‘kiz og‘a — mulohazali, mehribon va baquvvat keksa ho‘kiz.\nBo‘taloq — erkinlikni sevuvchi, to‘g‘ri so‘z va chaqqon tuya.\nOlapar — sodiq, burchli va jasur qo‘riqchi it.\nDingirvoy — zukko, hushyor va yordamga tayyor quyon.\nAshqal va Dashqal — ayyor, vahshiy va yirtqich egizak bo‘rilar.",
+  "conclusion": "Bu kitob bolaga yolg‘onchilik, manmanlik va maqtanchoqlikning yomon oqibatlarini tushuntiradi. Kattalarning maslahatiga quloq tutish, qiyin damda ahillik ko‘rsatish va o‘z xatosini tan olib kechirim so‘rash eng go‘zal insoniy fazilat ekanini o‘rgatadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, sarguzashtli, saboq beruvchi",
+  "for_whom": "Hayvonlar haqidagi kulgili sarguzashtlarni yaxshi ko‘radigan, do‘stlik va halollik haqida fikrlamoqchi bo‘lgan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uloqcha fermada boshqa qaysi taka bilan urishib turardi?",
+   "options": [
+    "A) Sulla bilan",
+    "B) Nayzashox bilan",
+    "C) Olapar bilan"
+   ],
+   "answer": "A) Sulla bilan"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uloqcha Sullaning yemiga nima aralashtirib qo‘ydi?",
+   "options": [
+    "A) Maydalangan kirsovun",
+    "B) Tuz",
+    "C) Murch"
+   ],
+   "answer": "A) Maydalangan kirsovun"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nayzashox serkaning bo‘ynidan nima yo‘qolib qoldi?",
+   "options": [
+    "A) Kumush qo‘ng‘iroq",
+    "B) Mis baldoq",
+    "C) Ko‘k tasma"
+   ],
+   "answer": "A) Kumush qo‘ng‘iroq"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilimdon laqabli hayvon qaysi jonivor edi?",
+   "options": [
+    "A) Eshak",
+    "B) Ho‘kiz",
+    "C) Tuya"
+   ],
+   "answer": "A) Eshak"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Uloqcha fermadagi ayblari uchun ketma-ket nimaga uchradi?",
+   "options": [
+    "A) Bir necha bor hayfsan oldi",
+    "B) Yaylovdan butkul haydaldi",
+    "C) Og‘ilxonaga qamalib qo‘yildi"
+   ],
+   "answer": "A) Bir necha bor hayfsan oldi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Uloqcha Bilimdon eshakka o‘zini kim deb tanishtirdi?",
+   "options": [
+    "A) Yaylovning yangi oqsoqoli deb",
+    "B) Fermaning oddiy ishchisi deb",
+    "C) Qo‘riqchi it deb"
+   ],
+   "answer": "A) Yaylovning yangi oqsoqoli deb"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Uloqcha nega oqsoqol Nayzashoxdan oldinroq yurishga urindi?",
+   "options": [
+    "A) Manmanlik va amalparastlik qilgani uchun",
+    "B) Yo‘lni yaxshi bilgani uchun",
+    "C) Shoshilayotgani uchun"
+   ],
+   "answer": "A) Manmanlik va amalparastlik qilgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Uloqchaning Sullaning yemiga kirsovun solishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, bu qasoskorlik va yomonlik",
+    "B) To‘g‘ri, o‘zini qutqarish uchun",
+    "C) To‘g‘ri, kulgili hazil edi"
+   ],
+   "answer": "A) Noto‘g‘ri, bu qasoskorlik va yomonlik"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Eshakning o‘ngacha sanashini tasvirlashdan maqsadi nima?",
+   "options": [
+    "A) Uning chala bilimdonligini ko‘rsatish",
+    "B) Uning juda aqlliligini maqtash",
+    "C) Matematikani o‘rgatish"
+   ],
+   "answer": "A) Uning chala bilimdonligini ko‘rsatish"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Babachoq fermasidagi hayvonlar hayotini qanday tasvirlagan?",
+   "options": [
+    "A) Kulgili va majoziy uslubda",
+    "B) Qorong‘i va g‘amgin uslubda",
+    "C) O‘ta jiddiy va rasmiy"
+   ],
+   "answer": "A) Kulgili va majoziy uslubda"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uloqcha yaylovdagi eng sero‘t joylarni kimlarga ajratdi?",
+   "options": [
+    "A) O‘ziga va yordamchisi Eshakka",
+    "B) Ho‘kiz og‘a va Bo‘taloqqa",
+    "C) Olapar va Qo‘zichoqqa"
+   ],
+   "answer": "A) O‘ziga va yordamchisi Eshakka"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uloqcha Olaparni yaylovda qaysi huquqdan mahrum qildi?",
+   "options": [
+    "A) Akillash huquqidan",
+    "B) O‘t yeyish huquqidan",
+    "C) Yugurish huquqidan"
+   ],
+   "answer": "A) Akillash huquqidan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Egizak bo‘rilarning ismlari nima edi?",
+   "options": [
+    "A) Ashqal va Dashqal",
+    "B) Olapar va Bo‘ribosar",
+    "C) Nayzashox va Sulla"
+   ],
+   "answer": "A) Ashqal va Dashqal"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hayvonlarni bo‘rilar xavfidan kim ogohlantirmoqchi bo‘ldi?",
+   "options": [
+    "A) Dingirvoy laqabli Quyon",
+    "B) Bilimdon laqabli Eshak",
+    "C) Sulla laqabli Taka"
+   ],
+   "answer": "A) Dingirvoy laqabli Quyon"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Uloqcha hayvonlarni Olatog‘ga yetaklashda qanday safladi?",
+   "options": [
+    "A) O‘zi oldinda, keyin boshqalar",
+    "B) Ho‘kiz og‘a eng oldinda",
+    "C) Bo‘rilar podani boshqardi"
+   ],
+   "answer": "A) O‘zi oldinda, keyin boshqalar"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ho‘kiz og‘a Uloqchaning fermadanligiga qanday ishonch hosil qildi?",
+   "options": [
+    "A) Qulog‘idagi mis tamg‘ani ko‘rib",
+    "B) Bo‘ynidagi tasmani ko‘rib",
+    "C) Egizak bo‘rilar aytgani uchun"
+   ],
+   "answer": "A) Qulog‘idagi mis tamg‘ani ko‘rib"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bo‘taloq nega Uloqchaning oqsoqolligiga darrov ishonmadi?",
+   "options": [
+    "A) Uning harakatlarida ayyorlik sezgani uchun",
+    "B) Uni ilgari ko‘rgani uchun",
+    "C) Ho‘kiz og‘a taqiqlagani uchun"
+   ],
+   "answer": "A) Uning harakatlarida ayyorlik sezgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Egizak bo‘rilar Uloqchaga nega maqtovlar yog‘dirishdi?",
+   "options": [
+    "A) Uni aldab, tuzoqqa tushirish uchun",
+    "B) Uni rostdan yaxshi ko‘rishgani uchun",
+    "C) Qo‘ng‘iroqni sotib olish uchun"
+   ],
+   "answer": "A) Uni aldab, tuzoqqa tushirish uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Uloqchaning Olaparni yaylovdan hayvab yuborishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, qo‘riqchini haydash xavfli edi",
+    "B) To‘g‘ri, itlar o‘t yemaydi",
+    "C) To‘g‘ri, it shovqin solardi"
+   ],
+   "answer": "A) Noto‘g‘ri, qo‘riqchini haydash xavfli edi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Bo‘taloq obrazida qaysi xislatni yoritgan?",
+   "options": [
+    "A) Erkinlik va to‘g‘riso‘zlikni",
+    "B) Qo‘rqoqlik va ayyorlikni",
+    "C) Maqtanchoqlik va dangasalikni"
+   ],
+   "answer": "A) Erkinlik va to‘g‘riso‘zlikni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Toshqo‘rg‘onda bo‘rilar birinchi kimga tashlanmoqchi bo‘lishdi?",
+   "options": [
+    "A) Uloqchaga",
+    "B) Quyonga",
+    "C) Olaparga"
+   ],
+   "answer": "A) Uloqchaga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘rilar bilan jangda kim birinchi mardona turib berdi?",
+   "options": [
+    "A) Ho‘kiz og‘a",
+    "B) Bilimdon eshak",
+    "C) Qo‘zichoq"
+   ],
+   "answer": "A) Ho‘kiz og‘a"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olaparni yordamga chorlash uchun kim Chimtepa qishlog‘iga chopdi?",
+   "options": [
+    "A) Dingirvoy laqabli Quyon",
+    "B) Bilimdon laqabli Eshak",
+    "C) Bo‘taloq"
+   ],
+   "answer": "A) Dingirvoy laqabli Quyon"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uloqcha hikoya oxirida kumush qo‘ng‘iroqni nima qildi?",
+   "options": [
+    "A) Dashqalning oldiga itqitib yubordi",
+    "B) Bo‘yniga mahkam boylab oldi",
+    "C) Bilimdon eshakka sovg‘a qildi"
+   ],
+   "answer": "A) Dashqalning oldiga itqitib yubordi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Toshqo‘rg‘ondagi jangda hayvonlar bo‘rilarga qarshi qanday kurashdilar?",
+   "options": [
+    "A) Barchalari birga ahillik bilan urishdilar",
+    "B) Hammasi qochib berkinib oldilar",
+    "C) Faqat Ho‘kiz og‘a yolg‘iz urishdi"
+   ],
+   "answer": "A) Barchalari birga ahillik bilan urishdilar"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Uloqcha Toshqo‘rg‘onda qamalga tushgach nimani anglab yetdi?",
+   "options": [
+    "A) Yolg‘onchilik va manmanlikning yomon oqibatini",
+    "B) Bo‘rilar unga eng yaqin do‘stligini",
+    "C) Fermaga qaytishning umuman iloji yo‘qligini"
+   ],
+   "answer": "A) Yolg‘onchilik va manmanlikning yomon oqibatini"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ho‘kiz og‘a nega o‘zini xavfga qo‘yib Uloqchani himoya qildi?",
+   "options": [
+    "A) Kattalarcha g‘amxo‘rlik va mehribonlik uchun",
+    "B) Uloqcha unga buyruq bergani uchun",
+    "C) Bo‘rilardan qo‘rqqani uchun"
+   ],
+   "answer": "A) Kattalarcha g‘amxo‘rlik va mehribonlik uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Uloqchaning oxirida o‘g‘irlangan qo‘ng‘iroqdan voz kechishi haqida qanday fikrdasan?",
+   "options": [
+    "A) To‘g‘ri yo‘l, manmanlikdan qutuldi",
+    "B) Xato yo‘l, qo‘ng‘iroq kerak edi",
+    "C) Bemani ish, uni sotishi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri yo‘l, manmanlikdan qutuldi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Hayvonlarning Uloqchani kechirgani to‘g‘ri bo‘ldimi?",
+   "options": [
+    "A) To‘g‘ri, u samimiy tavba qildi",
+    "B) Noto‘g‘ri, uni jazolash kerak edi",
+    "C) Noto‘g‘ri, u yana aldaydi"
+   ],
+   "answer": "A) To‘g‘ri, u samimiy tavba qildi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Olaparning do‘stlar haqidagi so‘zi nimani anglatadi?",
+   "options": [
+    "A) Do‘stlar bir-biriga mehr berishi muhimligini",
+    "B) Jismoniy jarohatlar bitmasligini",
+    "C) Itlar yurakni g‘ajishini"
+   ],
+   "answer": "A) Do‘stlar bir-biriga mehr berishi muhimligini"
+  }
+ ]
+}

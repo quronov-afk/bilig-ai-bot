@@ -1,0 +1,307 @@
+{
+ "title": "Kavkaz asiri",
+ "author": "Lev Tolstoy",
+ "genre": "hikoya",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "jasorat",
+   "sabr-matonat",
+   "do‘stlik",
+   "erkinlik",
+   "hunarmandlik"
+  ],
+  "theme": "Asarda har qanday og‘ir sharoitda ham umidsizlikka tushmaslik, aql-idrok, sabr va mardlik orqali qiyinchiliklarni yengib erkinlikka erishish mumkinligi ko‘rsatiladi.",
+  "summary": "Kavkazda xizmat qilayotgan ofitser Jilin onasining xatini olib uyiga yo‘l oladi. Yo‘lda sherigi Kostilinning qo‘rqoqligi sababli totorlar qo‘liga asir tushadi. Totorlar Jilindan uch ming so‘m tovon puli talab qilishadi, lekin u jasorat ko‘rsatib, summani besh yuz so‘mga tushiradi va xatga noto‘g‘ri manzil yozadi. Asirlikda u loydan o‘yinchoqlar yasaydi, soatlarni tuzatadi va xo‘jayinining qizi Dina bilan do‘stlashadi. Kechalari devor tagini qazib, qochish yo‘lini tayyorlaydi. Birinchi qochishda unga oyoqlari og‘rigan Kostilin xalaqit beradi va ularni qayta tutib, chuqur o‘raga tashlashadi. Shunda ham Jilin ruhiyatini tushirmaydi. Dina unga xoda tushirib, o‘radan chiqishiga yordam beradi. Jilin taxtakach bilan qiyinchilik bilan qochib, kazak soldatlari joylashgan qo‘rg‘onga yetib oladi va ozod bo‘ladi.",
+  "characters": "Jilin — dovyurak, aqli raso, hunarmand va sabrli rus ofitseri; Kostilin — bo‘sh-bayov, qo‘rqoq va noshud ofitser; Dina — Abdulmurodning 13 yoshli mehribon va saxiy qizi; Abdulmurod — Jilinning totor xo‘jayini.",
+  "conclusion": "Asar bolalarni qiyinchilik oldida taslim bo‘lmaslikka, har qanday vaziyatda aql va sabr bilan harakat qilishga o‘rgatadi. Shuningdek, chinakam do‘stlik, mardlik hamda turli madaniyat vakillari o‘rtasidagi insoniylik va mehr-shafqat tuyg‘ularini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "hayajonli, o‘ylantiruvchi",
+  "for_whom": "Sarguzashtlar, jasorat, do‘stlik va chaqqonlik haqidagi hikoyalarni yoqtiradigan, qahramonlar bilan birga qiyinchiliklarni yengishni xohlaydigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jilinga onasi yuborgan xatda nima so‘ralgan edi?",
+   "options": [
+    "A) Urushga yordamga borishini",
+    "B) Uyiga rozi-rizolik uchun qaytishini",
+    "C) Pul yuborishini",
+    "D) Qo‘rg‘ondan chiqmasligini"
+   ],
+   "answer": "B) Uyiga rozi-rizolik uchun qaytishini"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jilin bilan birga yo‘lga chiqqan otliq kim edi?",
+   "options": [
+    "A) Abdulmurod",
+    "B) G‘ozi Muhammad",
+    "C) Kostilin",
+    "D) Malik"
+   ],
+   "answer": "C) Kostilin"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Totorlar Jilinni ushlab olgach, ketma-ket nimalar qilishdi?",
+   "options": [
+    "A) Otdan tushirib, darrov qo‘yib yuborishdi",
+    "B) Qo‘l-oyog‘ini bog‘lab, ovulga olib ketishdi",
+    "C) Qo‘rg‘onga qaytarib olib borishdi",
+    "D) Darhol o‘raga tashlashdi"
+   ],
+   "answer": "B) Qo‘l-oyog‘ini bog‘lab, ovulga olib ketishdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jilin xatga nega boshqa manzilni yozdi?",
+   "options": [
+    "A) Onasining puli yo‘qligi uchun",
+    "B) Manzilni unutib qo‘ygani uchun",
+    "C) Totorlarni xursand qilish uchun",
+    "D) Kostilinga yordam berish uchun"
+   ],
+   "answer": "A) Onasining puli yo‘qligi uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kostilin totorlarni ko‘rgach, nega Jilinni tashlab qochdi?",
+   "options": [
+    "A) Qo‘rg‘ondan yordam chaqirish uchun",
+    "B) Jilinga achingani uchun",
+    "C) Qo‘rquv va o‘zini o‘ylagani uchun",
+    "D) Otini almashtirish uchun"
+   ],
+   "answer": "C) Qo‘rquv va o‘zini o‘ylagani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jilinning to‘lanadigan pul miqdorida kamaytirishni talab qilgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — jasorat va aql ko‘rsatdi",
+    "B) Noto‘g‘ri — totorlarni jahllantirdi",
+    "C) To‘g‘ri — chunki u juda boy edi",
+    "D) Noto‘g‘ri — tezroq to‘lashi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri — jasorat va aql ko‘rsatdi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dina Jilinga saroyda birinchi marta nima keltirdi?",
+   "options": [
+    "A) Idishda quyuq sut",
+    "B) Mis qumg‘onchada suv",
+    "C) Pishirilgan go‘sht",
+    "D) Shirin mevalar"
+   ],
+   "answer": "B) Mis qumg‘onchada suv"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dina Jilinga yashirincha qanday taomlar keltirib turdi?",
+   "options": [
+    "A) Sut, pishloq va go‘sht",
+    "B) Olma, uzum va osh",
+    "C) Sharbat va shirinliklar",
+    "D) Faqat quruq non"
+   ],
+   "answer": "A) Sut, pishloq va go‘sht"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jilin ovulda qanday mashg‘ulotlar bilan tanildi?",
+   "options": [
+    "A) Dehqonchilik va ovchilik bilan",
+    "B) O‘yinchoq yasash va soat tuzatish",
+    "C) Ot chopish va kurashish",
+    "D) Kiyim tikish va savdo qilish"
+   ],
+   "answer": "B) O‘yinchoq yasash va soat tuzatish"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dina nega Jilinga yashirincha yordam bera boshladi?",
+   "options": [
+    "A) Otasi buyurgani uchun",
+    "B) Jilinning mehribonligi va sovg‘alari uchun",
+    "C) Jilin sovg‘a bergani uchun",
+    "D) Rus tilini o‘rganish uchun"
+   ],
+   "answer": "B) Jilinning mehribonligi va sovg‘alari uchun"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Salla o‘ragan chol nega ruslarni juda yomon ko‘rardi?",
+   "options": [
+    "A) Ruslar uning o‘g‘illarini o‘ldirgani uchun",
+    "B) Unga pul bermagani uchun",
+    "C) Uning uyini tortib olgani uchun",
+    "D) Makkaga yubormagani uchun"
+   ],
+   "answer": "A) Ruslar uning o‘g‘illarini o‘ldirgani uchun"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jilin yo‘lni mo‘ljallash uchun tog‘ga kim bilan chiqdi?",
+   "options": [
+    "A) Abdulmurod bilan",
+    "B) Kostilin bilan",
+    "C) Xo‘jayinning o‘g‘li bilan",
+    "D) Dina bilan"
+   ],
+   "answer": "C) Xo‘jayinning o‘g‘li bilan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jilin kechalari saroyda yotib nima ish qilardi?",
+   "options": [
+    "A) Devor tagini qazirdi",
+    "B) Totorcha kitob o‘qirdi",
+    "C) Kostilin bilan shashka o‘ynardi",
+    "D) Qo‘shiq aytib o‘tirardi"
+   ],
+   "answer": "A) Devor tagini qazirdi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Jilinning hunarmandligini tasvirlab, nimani ko‘rsatmoqchi bo‘lgan?",
+   "options": [
+    "A) Og‘ir vaziyatda tushkunlikka tushmaslikni",
+    "B) O‘yinchoq sotib pul topishni",
+    "C) Totorlarga xizmat qilish lozimligini",
+    "D) Asirlikda doim uxlash lozimligini"
+   ],
+   "answer": "A) Og‘ir vaziyatda tushkunlikka tushmaslikni"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Birinchi qochishda totorlar ularni qayerga tashlashdi?",
+   "options": [
+    "A) Baland tom ustiga",
+    "B) Chuqurligi besh gazli o‘raga",
+    "C) Qorong‘i tosh zindonga",
+    "D) Daryo bo‘yidagi kulbaga"
+   ],
+   "answer": "B) Chuqurligi besh gazli o‘raga"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jilinning o‘radan chiqishiga kim va qanday yordam berdi?",
+   "options": [
+    "A) Kostilin — yelkasida ko‘tardi",
+    "B) Dina — uzun xoda tushirdi",
+    "C) Kazaklar — arqon tashlashdi",
+    "D) Abdulmurod — eshikni ochdi"
+   ],
+   "answer": "B) Dina — uzun xoda tushirdi"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kostilin ikkinchi marta nega Jilin bilan qochishdan bosh tortdi?",
+   "options": [
+    "A) Kasalligi va madori yo‘qligi uchun",
+    "B) Totorlarni yaxshi ko‘rgani uchun",
+    "C) Dinadan qo‘rqqani uchun",
+    "D) Uyiga pul yetib kelgani uchun"
+   ],
+   "answer": "A) Kasalligi va madori yo‘qligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jilinning birinchi qochishda Kostilinni opichib borgani qanday xulq?",
+   "options": [
+    "A) Haqiqiy do‘stlik va mardlik",
+    "B) Qo‘rqoqlik va nodonlik",
+    "C) Behuda va bema’ni harakat",
+    "D) Sherigiga ziyon yetkazish"
+   ],
+   "answer": "A) Haqiqiy do‘stlik va mardlik"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dina va Jilinning xayrlashuv sahnalari o‘quvchida qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Samimiy mehr va achinish",
+    "B) G‘azab va nafrat",
+    "C) Kulgili va hazil tuyg‘u",
+    "D) Loqaydlik va beparvolik"
+   ],
+   "answer": "A) Samimiy mehr va achinish"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jilin o‘rmondan chiqib kimlarning oldiga yetib bordi?",
+   "options": [
+    "A) Kazak soldatlari oldiga",
+    "B) Totor otliqlari oldiga",
+    "C) Onasining uyi oldiga",
+    "D) Cholning bog‘i oldiga"
+   ],
+   "answer": "A) Kazak soldatlari oldiga"
+  }
+ ]
+}

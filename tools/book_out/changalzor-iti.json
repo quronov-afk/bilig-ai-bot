@@ -1,0 +1,417 @@
+{
+ "title": "Changalzor iti",
+ "author": "Normurod Norqobilov",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "sadoqat",
+   "tabiat va hayvonlar",
+   "mehr-oqibat",
+   "erkinlik",
+   "jasorat"
+  ],
+  "theme": "Inson va jonivor o‘rtasidagi samimiy mehr hamda sadoqat tuyg‘usi har qanday shafqatsizlik va yovvoyilikdan ustun turadi.",
+  "summary": "Qoravoy Toshlisoy etagidagi changalzor o‘rtasida yovvoyilashgan ona it — Olapardan dunyoga keladi. Olapar ferma qorovuli tomonidan otib o‘ldirilgach, Qoravoy changalzor qonunlari asosida mustaqil yashashni va ov qilishni o‘rganadi. Kunlarning birida tovuqxona qorovulining o‘qidan yaralangan itni Tolmas ismli yetim bola qutqarib qoladi va unga g‘amxo‘rlik qiladi. Tolmasning shafqatsiz tog‘asi Uzunqul itni uyga bog‘lab qo‘ysa-da, Qoravoy erkinlikka qochadi, lekin har kuni tunlari faqat bola uchun qaytib keladi. Tolmas og‘ir xastalik (ko‘richak) sababli vafot etgach, Qoravoy uning qabri boshida har tun uvlab aza tutadi. Uzunqul va johil shifokor Orif itni tutib sotmoqchi bo‘lganda, Qoravoy o‘zini himoya qilib tog‘ani mahv etadi. U bo‘rilar to‘dasiga bosh bo‘lib ketsa ham, egasiga bo‘lgan sadoqatini unutmadi.",
+  "characters": "Qoravoy — changalzor iti, yovqur, ozodlikni sevadigan va cheksiz sadoqatli. Tolmas — yetim va mehribon bola, Qoravoyning yagona haqiqiy do‘sti. Olapar — Qoravoyning onasi. Uzunqul qora — Tolmasning badfe’l, berahm va ochko‘z tog‘asi. Orif tirriq — qishloqning savodsiz, nodon shifokori.",
+  "conclusion": "Asar o‘quvchiga hayvonlarga nisbatan shafqatli va mas’uliyatli bo‘lishni, chinakam sadoqat hamda do‘stlik qadrini o‘rgatadi. Bola insoniylik, mehr-muhabbat va tabiat bilan hamohang yashash tuyg‘ularini teran anglab yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "ta’sirli, hazin, o‘ylantiruvchi",
+  "for_whom": "Hayvonlar hayoti, sadoqat, mardlik hamda sarguzashtli voqealarga qiziqadigan, ta’sirchan va mulohazali kitobxonlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qoravoy qayerda dunyoga kelgan edi?",
+   "options": [
+    "A) Toshlisoy etagidagi changalzor o‘rtasida",
+    "B) Qishloqdagi tutun singgan hovlida",
+    "C) Tog‘ bag‘ridagi tor g‘orda"
+   ],
+   "answer": "A) Toshlisoy etagidagi changalzor o‘rtasida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olapar nega Haydar ko‘sanikidan qochib ketgandi?",
+   "options": [
+    "A) Arqon uzilib, uni tishlab qochdi",
+    "B) Haydar ko‘sa uni haydab yubordi",
+    "C) Bo‘ribosar uni dashtga yetaklab ketdi"
+   ],
+   "answer": "A) Arqon uzilib, uni tishlab qochdi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qoravoy birinchi marta qaysi hayvonning go‘shtini totib ko‘rdi?",
+   "options": [
+    "A) Dala sichqonining etini",
+    "B) Yovvoyi mushuk etini",
+    "C) Suvda suzgan baliqni"
+   ],
+   "answer": "A) Dala sichqonining etini"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qoravoy toshbaqa va tipratikandan keyin qaysi jonivorni ovladi?",
+   "options": [
+    "A) Biqqisemiz soqchi yumronqoziqni",
+    "B) Olatasir yovvoyi mushukni",
+    "C) Jar tubidagi kaptarni"
+   ],
+   "answer": "A) Biqqisemiz soqchi yumronqoziqni"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qoravoyning ulg‘ayishi va ov o‘rganishi tartibi qanday kechdi?",
+   "options": [
+    "A) Sichqon, so‘ng yumronqoziq ovladi",
+    "B) Avval echki, so‘ng sichqon tutdi",
+    "C) Dastlab kaptar, so‘ng sigir yedi"
+   ],
+   "answer": "A) Sichqon, so‘ng yumronqoziq ovladi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Olapar nega Qoravoyga ozuqa tashib keltirmas edi?",
+   "options": [
+    "A) Unda xonakilik fe’li ustun edi",
+    "B) Bolasini o‘ta yomon ko‘rardi",
+    "C) Changalzordan chiqishga qo‘rqardi"
+   ],
+   "answer": "A) Unda xonakilik fe’li ustun edi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qoravoy echkilarga hamla qilganida nega ularni yemadi?",
+   "options": [
+    "A) Ularni yemish emas, g‘anim bildi",
+    "B) Echkilar unga hamla qilib yengdi",
+    "C) Och emasligi uchun shunchaki quvdi"
+   ],
+   "answer": "A) Ularni yemish emas, g‘anim bildi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qoravoyning changalzorga o‘z vatani deb qarashi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, u yerda erkin ulg‘aydi",
+    "B) Noto‘g‘ri, u hovlida yashashi kerak",
+    "C) Noto‘g‘ri, changalzor o‘ta xavfli joy"
+   ],
+   "answer": "A) To‘g‘ri, u yerda erkin ulg‘aydi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Qoravoyning qochgan echkilar ortidan yugurishini qanday tasvirlaydi?",
+   "options": [
+    "A) G‘oliblik nashidasidan masrur bo‘lib yugurdi",
+    "B) Qo‘rquvdan qaltirab ortga chekindi",
+    "C) Alamdan uvlab chakalakzorga yashirindi"
+   ],
+   "answer": "A) G‘oliblik nashidasidan masrur bo‘lib yugurdi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qoravoyning onasi Olapar qanday halok bo‘ldi?",
+   "options": [
+    "A) Ferma qorovuli otib o‘ldirdi",
+    "B) Toshlisoydagi jarga tushib o‘ldi",
+    "C) Qishloq itlari bilan olishuvda o‘ldi"
+   ],
+   "answer": "A) Ferma qorovuli otib o‘ldirdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Toshlisoy o‘zanida Qoravoy kim bilan yakkama-yakka olishdi?",
+   "options": [
+    "A) Jussador Ola it bilan",
+    "B) Tovuqxona iti Bo‘ynoq bilan",
+    "C) Qirdagi suruv itlari bilan"
+   ],
+   "answer": "A) Jussador Ola it bilan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tovuqxonaga borgan Qoravoyni qorovul qayeridan yaraladi?",
+   "options": [
+    "A) Sochma o‘q bilan quymuchidan",
+    "B) O‘tkir kaltak bilan yag‘rinidan",
+    "C) Og‘ir tosh bilan biqinidan"
+   ],
+   "answer": "A) Sochma o‘q bilan quymuchidan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yaralangan Qoravoyga changalzor ichida kim g‘amxo‘rlik qildi?",
+   "options": [
+    "A) Yetim bola Tolmas",
+    "B) Qishloq shifokori Orif",
+    "C) Tovuqxona qorovuli"
+   ],
+   "answer": "A) Yetim bola Tolmas"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tolmas Qoravoyni qanday tartibda uyiga olib ketdi?",
+   "options": [
+    "A) Tumshuqband taqib, eshakka bog‘lab sudradi",
+    "B) Zanjirlab, chana ustiga ortib olib bordi",
+    "C) Yonida yetaklab, non berib olib bordi"
+   ],
+   "answer": "A) Tumshuqband taqib, eshakka bog‘lab sudradi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tolmasning tog‘asiga Qoravoy qanday ketma-ketlikda javob qaytardi?",
+   "options": [
+    "A) Tuflisini tishladi, keyin go‘shtini uzdi",
+    "B) Tumshug‘idan tishlab, qishloqqa qochdi",
+    "C) Dastlab qochdi, so‘ng kaltakladi"
+   ],
+   "answer": "A) Tuflisini tishladi, keyin go‘shtini uzdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qoravoy nega Tolmas yig‘laganda uning bilagini yaladi?",
+   "options": [
+    "A) Bolaning mehri va dardini his qildi",
+    "B) Qorni ochib, ovqat so‘ramoqchi bo‘ldi",
+    "C) Tumshug‘idagi og‘riqdan qutulmoqchi edi"
+   ],
+   "answer": "A) Bolaning mehri va dardini his qildi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qoravoy nega har kuni tuni bilan Tolmasnikiga kelardi?",
+   "options": [
+    "A) Tolmasga bo‘lgan sadoqati va mehridan",
+    "B) Hovlidagi yaloqdan yuvundi ichish uchun",
+    "C) Uzunqul qoradan qasos olish uchun"
+   ],
+   "answer": "A) Tolmasga bo‘lgan sadoqati va mehridan"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Uzunqul qoraning itga qilgan muomalasini qanday baholaysiz?",
+   "options": [
+    "A) Shafqatsiz va zolimona harakat",
+    "B) To‘g‘ri va qat’iyatli tarbiya",
+    "C) Beozor va hazilomuz munosabat"
+   ],
+   "answer": "A) Shafqatsiz va zolimona harakat"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Qoravoyning devorlardan sakrab qochishini qanday tasvirlaydi?",
+   "options": [
+    "A) Bamisoli sharpaday uchib o‘tdi",
+    "B) Og‘ir va sekin tirmashib o‘tdi",
+    "C) Devor tagidan kovak ochib o‘tdi"
+   ],
+   "answer": "A) Bamisoli sharpaday uchib o‘tdi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tolmas yomg‘irda ivimasin deb Qoravoy ustiga nima yopgan edi?",
+   "options": [
+    "A) Yelim yoping‘ichni",
+    "B) Eski paxtali to‘nni",
+    "C) Qalin qopni"
+   ],
+   "answer": "A) Yelim yoping‘ichni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Orif tirriq Tolmasning qorni og‘riganda unga nima ichirdi?",
+   "options": [
+    "A) Aroqqa tuz qo‘shib ichirdi",
+    "B) Issiq giyohli choy ichirdi",
+    "C) Shirin meva sharbatini ichirdi"
+   ],
+   "answer": "A) Aroqqa tuz qo‘shib ichirdi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tolmasning vafotiga tegishli asl sabab nima edi?",
+   "options": [
+    "A) Ko‘richagining yorilib ketishi",
+    "B) Sochma o‘qdan yaralanishi",
+    "C) Kuchli shamollash va issiq chiqishi"
+   ],
+   "answer": "A) Ko‘richagining yorilib ketishi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qoravoy Tolmas vafot etgach har kuni qayerda uvlardi?",
+   "options": [
+    "A) Mozortepadagi Tolmasning qabri boshida",
+    "B) Changalzor ichidagi kamarda",
+    "C) Tog‘aning hovlisidagi bostirma tagida"
+   ],
+   "answer": "A) Mozortepadagi Tolmasning qabri boshida"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tog‘a va Orif tirriq Mozortepaga borishdan oldin nimani mashq qilishdi?",
+   "options": [
+    "A) Hachcha va takaga sirtmoq tashlashni",
+    "B) Qora itga kaltak otishni",
+    "C) Toshlisoyda yugurib ov qilishni"
+   ],
+   "answer": "A) Hachcha va takaga sirtmoq tashlashni"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Uzunqul qora nega Qoravoyni Mozortepadan tutmoqchi bo‘ldi?",
+   "options": [
+    "A) Qimmatga sotib pul qilmoqchi edi",
+    "B) Tolmasning ruhini tinchitmamoqchi edi",
+    "C) Uyini qo‘riqlashga it kerak edi"
+   ],
+   "answer": "A) Qimmatga sotib pul qilmoqchi edi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qoravoy nega sirtmoq solingach Uzunqul qoraning bo‘g‘zini ayirdi?",
+   "options": [
+    "A) Eski g‘azabi va nafrati uyg‘ondi",
+    "B) Orif tirriqning buyrug‘ini bajardi",
+    "C) Qorong‘ida uni tanimay qo‘rqib ketdi"
+   ],
+   "answer": "A) Eski g‘azabi va nafrati uyg‘ondi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Orif tirriqning kasal bolaga aroq ichirishi haqida nima deysiz?",
+   "options": [
+    "A) Jaholat va mas’uliyatsizlik",
+    "B) To‘g‘ri va samarali tibbiy yordam",
+    "C) Beozor va zararsiz sinov"
+   ],
+   "answer": "A) Jaholat va mas’uliyatsizlik"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qoravoyning vafot etgan ega-do‘stiga aza tutishi insonga nimani o‘rgatadi?",
+   "options": [
+    "A) Haqiqiy sadoqat va mehr-oqibatni",
+    "B) Hayvonlardan har doim qochishni",
+    "C) Faqat o‘zini o‘ylash kerakligini"
+   ],
+   "answer": "A) Haqiqiy sadoqat va mehr-oqibatni"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Mozortepada Qoravoyning qiyofasini qanday ta’riflaydi?",
+   "options": [
+    "A) Yoli yo‘q sherga o‘xshatadi",
+    "B) Kichkina daydi itga o‘xshatadi",
+    "C) Qo‘rqoq va nimjon jonzotga o‘xshatadi"
+   ],
+   "answer": "A) Yoli yo‘q sherga o‘xshatadi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Qoravoyning mozor boshidagi nolasini qanday sifatlaydi?",
+   "options": [
+    "A) Tun bag‘rini tilkalagan hazin nola",
+    "B) Qishloqni cho‘chitgan quvnoq vovullash",
+    "C) Dahshatli va shafqatsiz irillash"
+   ],
+   "answer": "A) Tun bag‘rini tilkalagan hazin nola"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "title": "Toshbaqaning hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "3",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9",
+  "topics": [
+   "do‘stlik",
+   "oqibat",
+   "yaxshilik",
+   "hazil-mutoyiba",
+   "sayohat"
+  ],
+  "theme": "Qarindoshlik va do‘stlik rishtalarini qadrlash, yaxshi niyat yo‘lida harakat qilish hamda muhtojga yordam berish yuksak fazilatdir.",
+  "summary": "Juda issiq dushanba kuni toshbaqa o‘zining 110 yoshga to‘ladigan qadrdon o‘rtog‘ini tabriklagani yo‘lga chiqadi. Sekin yurishi sababli bir hafta oldin harakatni boshlagan toshbaqa yoz chillasidan va o‘z imkoniyatlaridan biroz noshiylik qiladi. Yo‘lda gap bilan bo‘lib sirg‘anchiq qumloq do‘nglikka duch keladi. Bu do‘nglikdan o‘zi oshib o‘tolmasligini anglagach, u o‘quvchiga murojaat qilib, yaxshi niyatli ziyofatdan qolib ketmasligi uchun uni do‘ppisiga solib do‘nglikdan o‘tkazib qo‘yishni va yaxshilik qilishini so‘raydi.",
+  "characters": "Toshbaqa — samimiy, hazilkash, mehmondo‘st va qarindosh-urug‘chilik rishtalarini e'zozlaydigan, maqsadi sari astoydil intiluvchi bosh qahramon.",
+  "conclusion": "Hikoya bolada hazil-mutoyiba tuyg‘usini o‘stiradi, do‘stlik va qarindoshlik rishtalarini qadrlashni o‘rgatadi. Shuningdek, yordamga muhtoj bo‘lganlarga ko‘mak berish va xolis yaxshilik qilish olijanob ish ekanini uqtiradi.",
+  "difficulty": "oson",
+  "mood": "kulgili, yengil, samimiy",
+  "for_whom": "Kulgili hikoyalarni yoqtiradigan, do‘stlariga hamda hayvonlarga mehribon va g‘amxo‘r bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Toshbaqa o‘rtog‘ining tug‘ilgan kuniga yetib borish uchun issiqqa qaramay uzoq yo‘lga chiqdi va yo‘lda qiyin ahvolda qolganda o‘quvchidan yordam so‘radi. Sen yaqin do‘sting yoki qarindoshingni xursand qilish uchun qanday yaxshilik qilgansan va ko‘chada yordamga muhtoj jonivor yoki insonni ko‘rib qolsang, unga qanday yordam bergan bo‘larding?"
+}

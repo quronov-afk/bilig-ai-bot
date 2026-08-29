@@ -1,0 +1,28 @@
+{
+ "title": "Assalomu alaykum",
+ "author": "Vasiliy Suxomlinskiy",
+ "genre": "hikoya",
+ "age_group": "3",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "4-6",
+  "age_hint": "5-7 yosh (tarjima asar bo‘lgani va ruhiy-majoziy o‘zgarishlarni anglash uchun 5 yoshdan mos keladi)",
+  "topics": [
+   "odob-ahloq",
+   "salomlashish",
+   "kattalarga hurmat",
+   "samimiyat",
+   "mehr-oqibat"
+  ],
+  "theme": "Notanish insonlarga ham samimiy salom berish va yaxshi tilak bildirish inson qalbiga quvonch bag‘ishlaydi, atrofdagi dunyoni go‘zalroq qiladi.",
+  "summary": "Ota va o‘g‘il o‘rmon so‘qmog‘idan ketayotib, hassaga tayanib kelayotgan nuroniy cholni uchratishadi. Ota o‘g‘liga notanish bo‘lsa ham boboga salom berishni tayinlaydi. Bola buning sababini so‘raganda, ota salom bergach buni o‘zi tushunib olishini aytadi. Ular boboga «Assalomu alaykum» deb salom berishadi, chol ham jilmayib alik oladi. Shunda bolaga quyosh yorqinroq charaqlagandek, qushlar sayrab, tabiat yashnagandek tuyuladi. Ota o‘g‘liga bu quvonch samimiy salom va tabassum sababli yuz berganini tushuntiradi.",
+  "characters": "Ota — o‘g‘liga hayotiy saboq beruvchi dono valine'mat;\nO‘g‘il — ziyrak, otasining gapiga quloq soluvchi va chiroyli odobni o‘rganayotgan bola;\nBobo — yoshi ulug‘, samimiy va jilmayib alik oluvchi nuroniy otaxon.",
+  "conclusion": "Bu hikoya bolaga kattalarga hurmat ko‘rsatish va ko‘rishganda birinchi bo‘lib salom berish odobini o‘rgatadi. Shirin so‘z hamda samimiy tabassum insonlar ko‘nglini ko‘tarib, atrofga quvonch va mehr ulashishini tushuntiradi. Farzandingizda kattalarni e'zozlash va odob-ahloq tuyg‘ularini mustahkamlaydi.",
+  "difficulty": "oson",
+  "mood": "iliq, samimiy, ruhlantiruvchi",
+  "for_whom": "Odob-ahloq qoidalarini o‘rganayotgan, kattalarga va atrofdagi insonlarga qanday muomalada bo‘lishni bilmoqchi bo‘lgan barcha kichkintoylar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Sen yo‘lda biror yoshi ulug‘ insonni uchratganingda unga salom berasanmi va shunda o‘zingni qanday his qilasan? Hikoyadagi bolaga salom bergandan so‘ng nega butun atrof yorishib va go‘zallashib ketgandek tuyuldi deb o‘ylaysan?"
+}

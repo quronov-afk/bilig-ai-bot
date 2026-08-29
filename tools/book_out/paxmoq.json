@@ -1,0 +1,417 @@
+{
+ "title": "Paxmoq",
+ "author": "Normurod Norqobilov",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12 yosh",
+  "topics": [
+   "tabiat",
+   "hayvonlar",
+   "jasorat",
+   "yolg‘izlik",
+   "mehr"
+  ],
+  "theme": "Odam va tabiat o‘rtasidagi munosabat, ozodlik hamda hayot uchun kurash g‘oyasi ulug‘lanadi.",
+  "summary": "Paxmoq — Egridara tog‘larida yashovchi yetim ayiq. Shaharlik boshliq Panji sayoqqa ayiq terisi uchun mo‘l pul beradi. Panji Paxmoqni ovlashga kirishib, uni oyog‘idan yaralaydi. Paxmoq omon qolish uchun tog‘larda yashirinib yuradi. Shu orada Panji kulbasini tuzatib, Ko‘kbuloq qishlog‘idagi juvonga ko‘ngil qo‘yadi. Issiq buloqda oyog‘ini davolagan Paxmoq o‘z hududida begona urg‘ochi ayiq hidini tuyib, unga intiladi. So‘nggi to‘qnashuvda tor qoya yo‘lida Paxmoq ovchi Panjiga tik kelib, panjasi bilan urib uni jarlikka ag‘daradi va ozod bo‘lib o‘z jufti tomonga yo‘l oladi.",
+  "characters": "Paxmoq — matonatli, yolg‘iz ayiq; Panji sayoq — tog‘da ov qilib yuradigan sayoq mergan; Tog‘begi — tabiatni va jonivorlarni qo‘riqlovchi inson.",
+  "conclusion": "Asar bolalarga tabiatni va hayvonlarni asrashni o‘rgatadi. Har bir jonzotning ozod va tinch yashashga haqli ekanini anglatadi.",
+  "difficulty": "o‘rta",
+  "mood": "hayajonli, o‘ylantiruvchi",
+  "for_whom": "Tabiat va hayvonlar haqida sarguzashtli hikoyalarni yaxshi ko‘radigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Paxmoq necha yoshida ovchi o‘qidan yaralandi?",
+   "options": [
+    "A) Ikki yoshida",
+    "B) Uch yoshida",
+    "C) Besh yoshida"
+   ],
+   "answer": "B) Uch yoshida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Panji sayoq asosan qanday hayvonni ovlashni xush ko‘rardi?",
+   "options": [
+    "A) Tulki",
+    "B) Bo‘ri",
+    "C) Kiyik"
+   ],
+   "answer": "A) Tulki"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Paxmoqning onasi nima sababdan halok bo‘ldi?",
+   "options": [
+    "A) Ovchi otib qo‘ydi",
+    "B) Zaharli go‘sht yedi",
+    "C) Qoyadan yiqildi"
+   ],
+   "answer": "B) Zaharli go‘sht yedi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Panji sayoqqa shaharlik boshliq nima uchun pul berdi?",
+   "options": [
+    "A) Kaklik sho‘rva uchun",
+    "B) Ayiq terisi uchun",
+    "C) Uyni ta’mirlash uchun"
+   ],
+   "answer": "B) Ayiq terisi uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Paxmoqning onasi o‘lgach, ketma-ket qaysi hayvonlarga duch keldi?",
+   "options": [
+    "A) To‘ng‘iz va silovsinga",
+    "B) Bo‘ri va kiyikka",
+    "C) Tulki va quyon bo‘lasiga"
+   ],
+   "answer": "A) To‘ng‘iz va silovsinga"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Paxmoq nima uchun birinchi o‘q tegaganda ovchiga hamla qilmadi?",
+   "options": [
+    "A) Qopqonga tushgani uchun",
+    "B) Yosh va jur’atsiz bo‘lgani uchun",
+    "C) Ovchini tanigani uchun"
+   ],
+   "answer": "B) Yosh va jur’atsiz bo‘lgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Panji sayoq nima sababdan shaharlik boshliqning taklifiga darrov rozi bo‘ldi?",
+   "options": [
+    "A) Katta pulga uchgani uchun",
+    "B) Tog‘begidan o‘ch olmoqchi bo‘lib",
+    "C) Ayiqdan qo‘rqqani uchun"
+   ],
+   "answer": "A) Katta pulga uchgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Panji sayoqning tog‘dagi jonivorlarni noqonuniy otishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, bu uning kasbi",
+    "B) To‘g‘ri, pul topishi kerak",
+    "C) Noto‘g‘ri, tabiatga zarar yetkazadi"
+   ],
+   "answer": "C) Noto‘g‘ri, tabiatga zarar yetkazadi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Paxmoqning yetim qolib ho‘ngrab yig‘lashi kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Quvonch va zavq",
+    "B) Rahm-shafqat va achinish",
+    "C) G‘azab va nafrat"
+   ],
+   "answer": "B) Rahm-shafqat va achinish"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Paxmoqning onasi o‘limini tasvirlaganda nimaga urg‘u bergan?",
+   "options": [
+    "A) Hayvonlarning himoyasizligiga",
+    "B) Ovchilarning merganligiga",
+    "C) Tog‘larning go‘zalligiga"
+   ],
+   "answer": "A) Hayvonlarning himoyasizligiga"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Panji sayoq kimning pichingidan so‘ng uyini ta’mirlashga kirishdi?",
+   "options": [
+    "A) Zarif ustaning",
+    "B) Samad jo‘rasining",
+    "C) Tog‘begining"
+   ],
+   "answer": "A) Zarif ustaning"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Panji sayoq Ko‘kbuloq qishlog‘ida kimga duch keldi?",
+   "options": [
+    "A) Keksa ota-onasiga",
+    "B) Suv olayotgan juvonga",
+    "C) Ovchi do‘stiga"
+   ],
+   "answer": "B) Suv olayotgan juvonga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Paxmoq oyog‘idagi jarohatni tuzatish uchun qayerga bordi?",
+   "options": [
+    "A) Chuqurkamardagi issiq buloqqa",
+    "B) Bujurqoyadagi olmazorga",
+    "C) Egridaradagi muzlikka"
+   ],
+   "answer": "A) Chuqurkamardagi issiq buloqqa"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Paxmoq Chuqurkamar hududida nimani daraga uloqtirib yubordi?",
+   "options": [
+    "A) Temir qopqonni",
+    "B) Katta xarsang toshni",
+    "C) Qurigan archa shoxini"
+   ],
+   "answer": "A) Temir qopqonni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Panji sayoqning aka-ukalari nima uchun unga yordamga kelishdi?",
+   "options": [
+    "A) Uydan pul topishgani uchun",
+    "B) Panji ish boshlaganini ko‘rib",
+    "C) Zarif usta buyurgani uchun"
+   ],
+   "answer": "B) Panji ish boshlaganini ko‘rib"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Paxmoq o‘z hududida yurib, tartib bilan qanday ishlarni qildi?",
+   "options": [
+    "A) Buloqda cho‘mildi va belgi qo‘ydi",
+    "B) Quyon quvladi va uxladi",
+    "C) Qo‘rada qo‘y otib yedi"
+   ],
+   "answer": "A) Buloqda cho‘mildi va belgi qo‘ydi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Panji sayoq suvdagi juvonni ko‘rgach, nega yuragi hapriqdi?",
+   "options": [
+    "A) Undan qo‘rqib ketgani uchun",
+    "B) Unga ko‘ngil qo‘ygani uchun",
+    "C) Qishloqqa qaytgisi kelgani uchun"
+   ],
+   "answer": "B) Unga ko‘ngil qo‘ygani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Paxmoq o‘zga urg‘ochi ayiq hidini tuyganda nega ich-ichidan quvondi?",
+   "options": [
+    "A) Yolg‘izlikdan bezgani uchun",
+    "B) Urushmoqchi bo‘lgani uchun",
+    "C) Ovqat topgani uchun"
+   ],
+   "answer": "A) Yolg‘izlikdan bezgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Panji sayoqning aka-ukalari arazni unutib yordam berishi qanday sifat?",
+   "options": [
+    "A) Oqibatli va hamjihat",
+    "B) Manfaatparast va ayyor",
+    "C) Qo‘rqoq va favorsiz"
+   ],
+   "answer": "A) Oqibatli va hamjihat"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Paxmoqning o‘z hududiga belgi qo‘yishi tasviri nimani ko‘rsatadi?",
+   "options": [
+    "A) Erkinlik va o‘zligini anglashini",
+    "B) Ayiqning dangasaligini",
+    "C) Tog‘ning juda sovuqligini"
+   ],
+   "answer": "A) Erkinlik va o‘zligini anglashini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tog‘begi kenglikda qanday hayvonni qopqondan bo‘shatishga urinayotgan edi?",
+   "options": [
+    "A) Tog‘ tulkisini",
+    "B) Yovvoyi to‘ng‘izni",
+    "C) Kichik ayiqni"
+   ],
+   "answer": "A) Tog‘ tulkisini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Panji sayoq va Tog‘begi munosabati qanday edi?",
+   "options": [
+    "A) Inoq do‘stlar edi",
+    "B) Bir-biriga g‘anim edi",
+    "C) Usta va shogird edi"
+   ],
+   "answer": "B) Bir-biriga g‘anim edi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Paxmoq tor yo‘lakda Panji sayoqqa qanday zarba berdi?",
+   "options": [
+    "A) Tishi bilan tishladi",
+    "B) Panjasi bilan urdi",
+    "C) Tosh otib urdi"
+   ],
+   "answer": "B) Panjasi bilan urdi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Panji sayoq Paxmoqning zarbasidan so‘ng qayoqqa yiqildi?",
+   "options": [
+    "A) Jarlikka yumalab ketdi",
+    "B) Archa ustiga tushdi",
+    "C) Qoya tepasiga sakradi"
+   ],
+   "answer": "A) Jarlikka yumalab ketdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Paxmoq tor yo‘lakda qolganda voqealar qanday tartibda yuz berdi?",
+   "options": [
+    "A) Qo‘rqdi, g‘azablandi, zarba berdi",
+    "B) Qochdi, uxladi, uyga qaytdi",
+    "C) Bo‘kirdi, do‘stlashdi, ovqat yedi"
+   ],
+   "answer": "A) Qo‘rqdi, g‘azablandi, zarba berdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Paxmoq oxirgi daqiqada nima uchun ovchidan qo‘rqmay g‘azabga mindi?",
+   "options": [
+    "A) Jon saqlash va qasos uchun",
+    "B) Tog‘begi yordam bergani uchun",
+    "C) Miltiq bo‘sh bo‘lgani uchun"
+   ],
+   "answer": "A) Jon saqlash va qasos uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ko‘kbuloqlik juvon qalbidagi to‘satdan paydo bo‘lgan g‘ussa nimani anglatadi?",
+   "options": [
+    "A) Panji boshiga kulfat tushganini",
+    "B) Havo ayniganini",
+    "C) Suv tugaganini"
+   ],
+   "answer": "A) Panji boshiga kulfat tushganini"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Paxmoqning o‘zini himoya qilib ovchini urib yuborishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, hayotini saqlab qoldi",
+    "B) Noto‘g‘ri, taslim bo‘lishi kerak edi",
+    "C) Noto‘g‘ri, uyga qochishi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, hayotini saqlab qoldi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tog‘begining qopqonga tushgan tulkini qutqarishi haqida ne deysan?",
+   "options": [
+    "A) Ezgu va savobli ish",
+    "B) Bekorchi va zararli ish",
+    "C) Qo‘rqoqona ish"
+   ],
+   "answer": "A) Ezgu va savobli ish"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Qissaning oxirida Paxmoqning o‘ynoqlab yo‘lga tushishi kitobxonga nima beradi?",
+   "options": [
+    "A) Umid va quvonch hissini",
+    "B) Qayg‘u va umidsizlikni",
+    "C) Qo‘rquv va vahimani"
+   ],
+   "answer": "A) Umid va quvonch hissini"
+  }
+ ]
+}

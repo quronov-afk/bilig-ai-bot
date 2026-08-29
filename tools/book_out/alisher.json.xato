@@ -1,0 +1,418 @@
+{
+ "title": "Alisher",
+ "author": "Maktabda birinchi kun. Dilnavoz Najimova",
+ "genre": "",
+ "age_group": "3",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "jamiyat",
+   "axloq",
+   "davlat boshqaruvi",
+   "ilm-fan",
+   "tasavvuf",
+   "hikmat"
+  ],
+  "theme": "Jamiyatning turli tabaqalari nuqsonlari va fazilatlarini ko‘rsatib, insonlarni ezgulik, adolat, halollik va axloqiy poklikka chorlash.",
+  "summary": "Asar muqaddima, uch qism va xotimadan iborat. Muqaddimada muallif hayotiy tajribalari va asarni yozish sababini bayon qiladi. Birinchi qismda jamiyatning 40 ta tabaqasi (shohlar, beklar, vazirlar, qozilar, tabiblar, shoirlar va boshqalar) ta’riflanib, adolatli va zolim vakillar qiyoslanadi. Ikkinchi qismda 10 bobda insoniy fazilatlar (tavba, qanoat, tavajjuh va boshqalar) va illatlar tahlil etiladi. Uchinchi qismda esa 127 tanbeh (hikmatli maslahat va qisqa masallar) orqali hayotiy xulosalar beriladi. Asar yakunida muallif insonni mol-dunyodan kechib, ma’naviy kamolot va Alloh ridosiga intilishga chaqiradi.",
+  "characters": "Alisher Navoiy (muallif va roviy, o‘z hayotiy tajribalarini so‘zlab beradi); odil va zolim podshohlar, beklar, vazirlar, qozilar, mudarrislar, tabiblar, shoirlar hamda turli kasb egalari.",
+  "conclusion": "Asar o‘quvchini jamiyat va undagi insonlar xulq-atvorini teran tushunishga o‘rgatadi. Ota-onalar uchun farzandida odamiylik, halollik, kattalarga hurmat, ilmga intilish va qanoat kabi yuksak axloqiy fazilatlarni shakllantirishda tengsiz ma’naviy manba bo‘lib xizmat qiladi.",
+  "difficulty": "qiyin",
+  "mood": "o‘ylantiruvchi, falsafiy",
+  "for_whom": "Mumtoz adabiyot, tarix va falsafa bilan qiziqadigan, insonlar xulq-atvorini va hayot saboqlarini anglashni xohlaydigan o‘smirlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy «Mahbub ul-qulub» asarini necha qismga bo‘lgan?",
+   "options": [
+    "A) Ikki qismga",
+    "B) Uch qismga",
+    "C) To‘rt qismga"
+   ],
+   "answer": "B) Uch qismga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy fikricha, odil podshoh kimning yerda soyasidir?",
+   "options": [
+    "A) Allohning soyasidir",
+    "B) Xalqning suyanchidir",
+    "C) Qo‘shinning yetakchisidir"
+   ],
+   "answer": "A) Allohning soyasidir"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yolg‘onchi va xudnamo noib kimning millatiga nisbat beriladi?",
+   "options": [
+    "A) Fir’avn millatiga",
+    "B) Homon millatiga",
+    "C) Musaylamai kazzob millatiga"
+   ],
+   "answer": "C) Musaylamai kazzob millatiga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yomon podshohning yomon vaziri kimga o‘xshatilgan?",
+   "options": [
+    "A) Musaylamaga",
+    "B) Homonga",
+    "C) Qorunga"
+   ],
+   "answer": "B) Homonga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Navoiy birinchi qismda tabaqalarni qanday tartibda baholaydi?",
+   "options": [
+    "A) Odil va zolimga ajratadi",
+    "B) Faqat shoirlarni maqtaydi",
+    "C) Faqat boylarni sanaydi"
+   ],
+   "answer": "A) Odil va zolimga ajratadi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun rishvaxo‘r qozi islom hisorig‘a raxnagar deyiladi?",
+   "options": [
+    "A) Adolat va shariatni buzgani uchun",
+    "B) Ko‘p pul to‘plagani uchun",
+    "C) Masjiddan yiroq bo‘lgani uchun"
+   ],
+   "answer": "A) Adolat va shariatni buzgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega hoziq va shafqatli tabib Isoga nisbat beriladi?",
+   "options": [
+    "A) Bemorga shifo keltirgani uchun",
+    "B) Ko‘p dori tayyorlagani uchun",
+    "C) Bemor bilan gaplashgani uchun"
+   ],
+   "answer": "A) Bemorga shifo keltirgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zolim podshoh zulmini Navoiy to‘g‘ri baholaganmi?",
+   "options": [
+    "A) Ha, zulm mulkni vayron qiladi",
+    "B) Yo‘q, zulm tartib o‘rnatadi",
+    "C) Fikr bildirish qiyin"
+   ],
+   "answer": "A) Ha, zulm mulkni vayron qiladi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Haq yo‘lida bir harf o‘qutmish ranj ila» baytida nimani ulug‘laydi?",
+   "options": [
+    "A) Ustoz va muallim mehnatini",
+    "B) Shoirlarning go‘zal so‘zlarini",
+    "C) Boylarning saxovatini"
+   ],
+   "answer": "A) Ustoz va muallim mehnatini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Navoiy yaxshi kotib xatini nimaga o‘xshatadi?",
+   "options": [
+    "A) Yuzdagi xol va jamolga",
+    "B) Oltin va kumushga",
+    "C) Sharqiy gulistonga"
+   ],
+   "answer": "A) Yuzdagi xol va jamolga"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy fikricha, va’z aytuvchi voiz avval nima qilishi kerak?",
+   "options": [
+    "A) O‘zi shu yo‘ldan yurishi",
+    "B) Baland ovozda gapirishi",
+    "C) Odamlardan mol so‘rashi"
+   ],
+   "answer": "A) O‘zi shu yo‘ldan yurishi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy ikkinchi qismning birinchi bobida qaysi fazilat haqida yozadi?",
+   "options": [
+    "A) Qanoat haqida",
+    "B) Tavba haqida",
+    "C) Tavajjuh haqida"
+   ],
+   "answer": "B) Tavba haqida"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qanoat haqidagi hikoyatda Shayx Shoh Ziyoratgohiy qayerda maskan tutdi?",
+   "options": [
+    "A) Hirot shahrida",
+    "B) Ziyoratgoh qasabasida",
+    "C) Samarqand kentida"
+   ],
+   "answer": "B) Ziyoratgoh qasabasida"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Majnun haqidagi hikoyatda bemor oshiqqa nima iloj bo‘ldi?",
+   "options": [
+    "A) Shifobaxsh dori ichish",
+    "B) Ma’shuq nomasini o‘qish",
+    "C) Boshqa shaharga ketish"
+   ],
+   "answer": "B) Ma’shuq nomasini o‘qish"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Navoiy tasvirlagan tavba bosqichlarini to‘g‘ri belgilang.",
+   "options": [
+    "A) Ogohlik, sharmandalik, to‘g‘ri yo‘lga kirish",
+    "B) Taqvo, boylik, elga tanilish",
+    "C) G‘aflat, xursandchilik, safarga chiqish"
+   ],
+   "answer": "A) Ogohlik, sharmandalik, to‘g‘ri yo‘lga kirish"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tarbiyat ko‘rib, haromnamaklik qilgan navkar nega xorlanadi?",
+   "options": [
+    "A) Tuz-namak va vafoni unutgani uchun",
+    "B) Kam ish haq olgani uchun",
+    "C) Boshqa shaharga ko‘chgani uchun"
+   ],
+   "answer": "A) Tuz-namak va vafoni unutgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun qanoat kishini ozod va aziz qiladi?",
+   "options": [
+    "A) Tama va hirsga berilmagani uchun",
+    "B) Ko‘p mol-dunyo to‘plagani uchun",
+    "C) Odamlar bilan aralashmagani uchun"
+   ],
+   "answer": "A) Tama va hirsga berilmagani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shayx Ziyoratgohiyning o‘z mehnati bilan kun kechirishi to‘g‘rimi?",
+   "options": [
+    "A) Ha, halol mehnat va qanoatdir",
+    "B) Yo‘q, shohlarga suyanish kerak",
+    "C) Farqi yo‘q"
+   ],
+   "answer": "A) Ha, halol mehnat va qanoatdir"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Voiz o‘zi qilmagan ishni elga buyursa, bu to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, so‘zi ta’sir qilmaydi",
+    "B) To‘g‘ri, el so‘zini eshitadi",
+    "C) Muhim emas"
+   ],
+   "answer": "A) Noto‘g‘ri, so‘zi ta’sir qilmaydi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Navoiy «Ishq so‘zidan marazi sihhat topdi» deganda nimani ta’riflaydi?",
+   "options": [
+    "A) Ruhiy va ma’naviy quvvatni",
+    "B) Tabibning shifobaxsh dori-darmonini",
+    "C) Bemorning jismoniy mashqlarini"
+   ],
+   "answer": "A) Ruhiy va ma’naviy quvvatni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy 50-tanbehda qaysi yomon xislatni keskin qoralaydi?",
+   "options": [
+    "A) Yolg‘onchilikni",
+    "B) Dangasalikni",
+    "C) Manmanlikni"
+   ],
+   "answer": "A) Yolg‘onchilikni"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "73-tanbehda oshiqmasdan sabr qilgan kishi nimani ipak qiladi?",
+   "options": [
+    "A) Chechak bargini",
+    "B) Tut yaprog‘ini",
+    "C) Paxta tolasini"
+   ],
+   "answer": "B) Tut yaprog‘ini"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Horun ar-Rashid va Bahlul hikoyatida Bahlul nimadan voz kechdi?",
+   "options": [
+    "A) Kafsh va dastor taklifidan",
+    "B) Oziq-ovqat va suvlardan",
+    "C) Ot va tuyalardan"
+   ],
+   "answer": "A) Kafsh va dastor taklifidan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy «Mahbub ul-qulub» asarini nechanchi yilda yozib tugatgan?",
+   "options": [
+    "A) 1500-yilda",
+    "B) 1490-yilda",
+    "C) 1485-yilda"
+   ],
+   "answer": "A) 1500-yilda"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Uchinchi qismdagi tanbehlarda berilgan ibratlarni guruhlang:",
+   "options": [
+    "A) Axloq, shukr va qanoat saboqlari",
+    "B) Urush va jang san’ati",
+    "C) Savdo va tijorat qoidalari"
+   ],
+   "answer": "A) Axloq, shukr va qanoat saboqlari"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "125-126-tanbehlarda olam asbobidan kechish qanday izohlanadi?",
+   "options": [
+    "A) Dunyo hojatlaridan xalos bo‘lish",
+    "B) Faqat uy qurish bilan",
+    "C) Shaharlar o‘rtasida sayohat qilish"
+   ],
+   "answer": "A) Dunyo hojatlaridan xalos bo‘lish"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun kishi o‘z aybini ko‘rib, o‘zgalar aybini qidirmasligi kerak?",
+   "options": [
+    "A) Ma’naviy poklik va kamolot uchun",
+    "B) Odamlar maqtashi uchun",
+    "C) Boylikka erishish uchun"
+   ],
+   "answer": "A) Ma’naviy poklik va kamolot uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bahlul Horun ar-Rashidning kafsh berish taklifini nega rad etdi?",
+   "options": [
+    "A) Ortiqcha tashvishdan qutulish uchun",
+    "B) Kafsh hajmi to‘g‘ri kelmagani uchun",
+    "C) Shohdan g‘azablangani uchun"
+   ],
+   "answer": "A) Ortiqcha tashvishdan qutulish uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Navoiyning «Sihhat tilasang ko‘p yema» degan o‘giti to‘g‘rimi?",
+   "options": [
+    "A) Ha, salomatlik va mo‘tadillik kaliti",
+    "B) Yo‘q, ko‘p yeyish kerak",
+    "C) Bu qoida muhim emas"
+   ],
+   "answer": "A) Ha, salomatlik va mo‘tadillik kaliti"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Navoiy kitob yakunida asar o‘quvchilariga nima tilaydi?",
+   "options": [
+    "A) Xushdil bo‘lish va bahramandlik",
+    "B) Ko‘p boylik to‘plashni",
+    "C) Mansab va martabaga erishishni"
+   ],
+   "answer": "A) Xushdil bo‘lish va bahramandlik"
+  }
+ ]
+}

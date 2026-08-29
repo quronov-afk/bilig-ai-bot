@@ -1,0 +1,417 @@
+{
+ "title": "Olimjonning sarguzashtlari",
+ "author": "Otabek Quvvatov",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12 yosh",
+  "topics": [
+   "do‘stlik",
+   "ilm-fan",
+   "vatanparvarlik",
+   "ezgulik va yovuzlik",
+   "sarguzasht"
+  ],
+  "theme": "Ilm-fan va yuksak odob-axloq orqali har qanday yovuzlikni yengish hamda ezgulikni qaror toptirish mumkin.",
+  "summary": "6-sinf o‘quvchisi Olimjon dasturlash va kitob o‘qishga juda qiziqadi. U sirli kalit va Ezgulik kitobini izlab olamlararo fantastik sayohatga otlanadi. Olimjon turli zamonlarda bo‘lib, To‘qson bobo, Rim gladiatorlari va buyuk alloma Al-Xorazmiy bilan uchrashadi. Al-Xorazmiydan ilm va algoritm sirini o‘rganadi. Shu bilan birga, sehrli Ezgulik shahri va uning xalqini Maston kampir hamda yovuz Manman kitobining zulmidan qutqarishda faol qatnashadi. Do‘stlari Doniyor va Turg‘un ham unga yordam beradi. Yakunda Olimjon ezgulikni qaror toptirishga erishadi, vataniga qaytib, o‘z dasturi bilan xalqaro anjumanda g‘olib bo‘ladi.",
+  "characters": "Olimjon — izlanuvchan va a‘lochi 6-sinf o‘quvchisi, fantastik sayohatchi; Doniyor va Turg‘un — uning sodiq sinfdosh do‘stlari; Qobil amaki — sharqshunos donishmand; Al-Xorazmiy — buyuk alloma, Olimjonning ma‘naviy ustozi; Maston kampir — yovuzlik yo‘liga kirgan sehrgar.",
+  "conclusion": "Asar bolalarga ilm-fanning kuchini, kitobxonlik va do‘stlikning qadrini o‘rgatadi. Kattalarga hurmat va halollik kabi insoniy fazilatlarni shakllantiradi. Bola o‘z oldiga ulug‘ maqsadlar qo‘yishga va ezgulik yo‘lida intilishga ilhomlanadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, ilhomlantiruvchi, sehrli",
+  "for_whom": "Ilm-fanga, kompyuter va sarguzashtlarga qiziqadigan, ertak va fantastikani xush ko‘radigan o‘smirlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olimjon nechanchi sinfda o‘qiydi?",
+   "options": [
+    "A) 5-sinfda",
+    "B) 6-sinfda",
+    "C) 7-sinfda"
+   ],
+   "answer": "B) 6-sinfda"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olimjon qaysi tumandan ekanligini aytadi?",
+   "options": [
+    "A) Qiziltepa",
+    "B) Paxtachi",
+    "C) Nurota"
+   ],
+   "answer": "A) Qiziltepa"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sinfdoshlari Olimjonni maktabda qanday atashardi?",
+   "options": [
+    "A) Katta polvon",
+    "B) Kichik olim",
+    "C) Tezkor dasturchi"
+   ],
+   "answer": "B) Kichik olim"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qobil amaki kasbi bo‘yicha kim bo‘lgan?",
+   "options": [
+    "A) Sharqshunos olim",
+    "B) Maktab direktori",
+    "C) Shifokor"
+   ],
+   "answer": "A) Sharqshunos olim"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Olimjonning qaysi sinfdosh do‘stlari birgalikda yozgi ta‘tilni o‘tkazardi?",
+   "options": [
+    "A) Turg‘un, Umid, Doniyor",
+    "B) Jobir, Nozima, Umid",
+    "C) Hasan, Husan, Doniyor"
+   ],
+   "answer": "A) Turg‘un, Umid, Doniyor"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shifokorlar Olimjonning o‘qishini nega taqiqlashmadi?",
+   "options": [
+    "A) U dam olishni bilgani uchun",
+    "B) U dars qilmagani uchun",
+    "C) U kasal bo‘lgani uchun"
+   ],
+   "answer": "A) U dam olishni bilgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qobil amaki nega jiddiy kitoblar haqida ogohlantirdi?",
+   "options": [
+    "A) Yomon g‘oyalar ongni zaharlaydi",
+    "B) Kitoblar juda qimmat",
+    "C) Kitoblar tez yirtiladi"
+   ],
+   "answer": "A) Yomon g‘oyalar ongni zaharlaydi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Olimjonning Jobirga qarshi kuch ishlatgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, zaifni himoya qildi",
+    "B) Noto‘g‘ri, urishish shart edi",
+    "C) Noto‘g‘ri, qochishi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, zaifni himoya qildi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Olimjonning yomonlikni tugatuvchi dastur yaratish niyati haqida fikringiz?",
+   "options": [
+    "A) Ezgu va tahsinga loyiq",
+    "B) Bevaqt va foydasiz niyat",
+    "C) Kibrli va noto‘g‘ri fikr"
+   ],
+   "answer": "A) Ezgu va tahsinga loyiq"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Qobil amakini «yer larzaga kelgandek» deb nimani ko‘rsatgan?",
+   "options": [
+    "A) Uning mehnatkash va kuchliligini",
+    "B) Yer juda yumshoqligini",
+    "C) Amakining juda jahldorligini"
+   ],
+   "answer": "A) Uning mehnatkash va kuchliligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘qsonboy bobo Olimjonga ketish oldidan nima berdi?",
+   "options": [
+    "A) Sirli malhamli ko‘zacha",
+    "B) Oltin qilich",
+    "C) Sehrli kitob"
+   ],
+   "answer": "A) Sirli malhamli ko‘zacha"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ikkinchi Olimjon maktabdan ko‘ra qaysi sohani yaxshi ko‘rardi?",
+   "options": [
+    "A) Avtomobil haydash va tuzatish",
+    "B) Rasm chizish va kuylash",
+    "C) Suvda suzish va yugurish"
+   ],
+   "answer": "A) Avtomobil haydash va tuzatish"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olimjon tarixiy makonda qaysi tomoshabinlar qarshisida bo‘ldi?",
+   "options": [
+    "A) Kolizeydagi gladiatorlar jangida",
+    "B) Qirol saroyidagi balda",
+    "C) Bozordagi kurash musobaqasida"
+   ],
+   "answer": "A) Kolizeydagi gladiatorlar jangida"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olimjon o‘z olamida qaysi buyuk alloma bilan suhbatlashdi?",
+   "options": [
+    "A) Al-Xorazmiy bilan",
+    "B) Abu Ali ibn Sino bilan",
+    "C) Al-Forobiy bilan"
+   ],
+   "answer": "A) Al-Xorazmiy bilan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Olimjon izlagan sirli belgi qaysi manbalarda uchradi?",
+   "options": [
+    "A) Yunon, Rim va soatda",
+    "B) Faqat hind va xitoyda",
+    "C) Faqat misr ehromlarida"
+   ],
+   "answer": "A) Yunon, Rim va soatda"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Olimjon yo‘qolgach, Doniyor va Turg‘un nima qilishdi?",
+   "options": [
+    "A) Sirni saqlashga kelishib olishdi",
+    "B) Darhol militsiyaga xabar berishdi",
+    "C) Toshkentga qochib ketishdi"
+   ],
+   "answer": "A) Sirni saqlashga kelishib olishdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Rimdagi alloma qariya nega Sezarni yoqtirmasdi?",
+   "options": [
+    "A) U odamlarni shafqatsiz urishtirardi",
+    "B) U urushlarni to‘xtatgani uchun",
+    "C) U allomaga pul bermagani uchun"
+   ],
+   "answer": "A) U odamlarni shafqatsiz urishtirardi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Olimjonning onasi ikkinchi Olimjonni ko‘rib nega yig‘ladi?",
+   "options": [
+    "A) O‘g‘lini ozib, charchagan deb o‘yladi",
+    "B) U dars qilmayotganidan jahli chiqdi",
+    "C) O‘g‘li uni tanimagani uchun"
+   ],
+   "answer": "A) O‘g‘lini ozib, charchagan deb o‘yladi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Doniyorning ikkinchi Olimjonga bilim haqida aytgan gapini baholang.",
+   "options": [
+    "A) To‘g‘ri, har sohada bilim kerak",
+    "B) Noto‘g‘ri, usta bilimga muhtojmas",
+    "C) Noto‘g‘ri, hayotda o‘qish shartmas"
+   ],
+   "answer": "A) To‘g‘ri, har sohada bilim kerak"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Al-Xorazmiyning «ilm donishmand otalarda» degan jumlasi nimani anglatadi?",
+   "options": [
+    "A) Ilm va tajriba qadrli manbadir",
+    "B) Kitob o‘qish foydasiz narsa",
+    "C) Faqat yoshlar bilimli bo‘ladi"
+   ],
+   "answer": "A) Ilm va tajriba qadrli manbadir"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maston kampir qaysi taqiqlangan kitobni ozod qildi?",
+   "options": [
+    "A) Manman kitobini",
+    "B) Sehrli alifboni",
+    "C) Yovuz devlar dostonini"
+   ],
+   "answer": "A) Manman kitobini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maston kampir jonini nimaga yashirgan edi?",
+   "options": [
+    "A) Qutichadagi tuxumga",
+    "B) Oltin ko‘zachaga",
+    "C) Sehrli uzukka"
+   ],
+   "answer": "A) Qutichadagi tuxumga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ezgulik bulogʻining suvi chinorga qanday ta‘sir qildi?",
+   "options": [
+    "A) Qaytadan jonlanib ko‘kardi",
+    "B) Butunlay qurib qoldi",
+    "C) Yonib kulga aylandi"
+   ],
+   "answer": "A) Qaytadan jonlanib ko‘kardi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mahmud polvon Maston kampirning qasridan kimlarni qutqardi?",
+   "options": [
+    "A) Sehrlangan barcha qizlarni",
+    "B) Qafasdagi ajdaho va devlarni",
+    "C) Yo‘qolgan mol-qo‘ylarni"
+   ],
+   "answer": "A) Sehrlangan barcha qizlarni"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Maston kampirni mag‘lub etishda qaysi jonzotlar yordam berishdi?",
+   "options": [
+    "A) Chumolilar, kalamushlar va burgut",
+    "B) Qora ilonlar va bo‘rilar",
+    "C) Tulki va ayiqlar"
+   ],
+   "answer": "A) Chumolilar, kalamushlar va burgut"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Keksa chinor nega Maston kampirning sehriga ilinmadi?",
+   "options": [
+    "A) U Yaratganning zikridan to‘xtamadi",
+    "B) U juda baland edi",
+    "C) Kampir uni ko‘rmay qoldi"
+   ],
+   "answer": "A) U Yaratganning zikridan to‘xtamadi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Cho‘pon ota Maston kampirga suv sepib nega uni kechirdi?",
+   "options": [
+    "A) U xatosini anglab tavba qildi",
+    "B) Kampir undan qo‘rqqan edi",
+    "C) Kampir unga tilla berdi"
+   ],
+   "answer": "A) U xatosini anglab tavba qildi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Oqil boboning xalq bilan birga sarosimaga tushmay ish ko‘rishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, birlik g‘alabaga yetaklaydi",
+    "B) Noto‘g‘ri, yolg‘iz urishish kerak edi",
+    "C) Noto‘g‘ri, shahrini tashlab qochgan"
+   ],
+   "answer": "A) To‘g‘ri, birlik g‘alabaga yetaklaydi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Ezgulikning kuchi abadiydir» iborasi bilan nimani uqtiradi?",
+   "options": [
+    "A) Yaxshilik har doim g‘alaba qiladi",
+    "B) Yovuzlik hech qachon tugamaydi",
+    "C) Sehr-jodu eng kuchli qurol"
+   ],
+   "answer": "A) Yaxshilik har doim g‘alaba qiladi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar so‘ngida Olimjon o‘z yutug‘i bilan nimani ko‘rsatdi?",
+   "options": [
+    "A) Ilm va mehnat muvaffaqiyat keltirishini",
+    "B) O‘yin o‘ynash foydaliroq ekanini",
+    "C) Taqdirga tan berish kerakligini"
+   ],
+   "answer": "A) Ilm va mehnat muvaffaqiyat keltirishini"
+  }
+ ]
+}

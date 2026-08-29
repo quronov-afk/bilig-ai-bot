@@ -1,0 +1,29 @@
+{
+ "title": "Yonar daryo",
+ "author": "Hakim Nazir",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12 yosh",
+  "topics": [
+   "do‘stlik",
+   "mehnat",
+   "oila",
+   "mas’uliyat",
+   "jasorat",
+   "vatanparvarlik"
+  ],
+  "theme": "Asar mehnatsevarlik, kattalarga hurmat, mas’uliyatli bo‘lish va qiyinchiliklar qarshisida chekinmaslik hamda oilaviy jipslikning muhimligini ilgari suradi.",
+  "summary": "Toshkentlik Damir otasiz o‘sayotgan sho‘x bola. Uyiga tez-tez keladigan injener Sulton amaki Qizilqumdagi gaz quvuri qurilishiga ketadi. Damir oyisiga bildirmay, do‘sti Bo‘ron bilan cho‘lga, Sulton amaki oldiga yo‘l oladi. U yerda cho‘l hayoti va fidoyi insonlar mehnatini ko‘radi. Sulton amaki betoblanib qolgach, Damir o‘z shoshqaloqligini anglaydi. Ular Toshkentga qaytishadi, oyisi Sulton amakiga g‘amxo‘rlik qiladi. Damir sinfdoshlari bilan yarashib, mas’uliyatli bo‘lishni o‘rganadi.",
+  "characters": "Damir — sho‘x, sarguzashtjo‘y, lekin samimiy va mehribon o‘quvchi; Sulton amaki — cho‘lda gaz quvuri qurayotgan fidoyi va halol injener; Oyisi va Buvisi — oila hamda tarbiya ustunlari; Bo‘ron — Damirning cho‘ldagi zukko va chaqqon do‘sti.",
+  "conclusion": "Bu kitob bolaga mehnatning qadrini, mas’uliyatli bo‘lishni va kattalarning maslahatiga quloq solish lozimligini o‘rgatadi. Bola qahramonlar timsolida mardlik, halollik hamda do‘stlikning haqiqiy ma’nosini anglaydi va o‘z xatolaridan to‘g‘ri xulosa chiqarishni o‘rganadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, hayajonli, samimiy, ilhomlantiruvchi",
+  "for_whom": "Sarguzashtlarni xush ko‘radigan, yangi joylarni kashf etishga va mehnatsevar, jasur insonlar haqida o‘qishga qiziqadigan bolalar uchun mos."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Damir kattalardan so‘ramay Qizilqumga ketib qolgani haqida nima deya olasan? Sen o‘z hayotingda biror marta shoshqaloqlik qilib ota-onangni xavotirga qo‘yganmisan va bu voqeadan qanday saboq chiqargansan?"
+}

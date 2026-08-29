@@ -1,0 +1,307 @@
+{
+ "title": "Vaqtni qo‘yib yuboring!",
+ "author": "Janni Rodari",
+ "genre": "hikoya",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "vaqt qadri",
+   "mas'uliyat",
+   "ulg‘ayish",
+   "yangi yil",
+   "kelajak"
+  ],
+  "theme": "Vaqtni to‘xtatib bo‘lmaydi va uni to‘xtatish ham kerak emas, chunki ulg‘ayish, orzular va hayotning davom etishi uchun har bir lahza qadrlidir.",
+  "summary": "Yangi yil kirishiga 33 daqiqa qolganda aeroportga notanish samolyot qo‘nadi. Uchuvchi o‘zini Vaqt deb tanishtiradi va 12 jomadonida 12 oy borligini aytadi. Hujjat so‘ragan aeroport boshlig‘iga isbot sifatida u vaqtni to‘xtatib qo‘yadi. Dunyo bo‘ylab soatlar to‘xtaydi va Yangi yil kirmaydi. Dastlab kattalar keksaymasliklarini o‘ylab xursand bo‘lishadi, ammo tezda qiyinchiliklar boshlanadi: bolalar ulg‘ayish va yoz kelishini, bemorlar tuzalishni, dehqonlar bahorni xohlashadi. Shaharda yong‘in chiqib, vaqt to‘xtagani sababli o‘t o‘chiruvchilar yordamga kela olmaydi. Buni ko‘rgan aeroport boshlig‘i mas'uliyatni o‘z zimmasiga oladi va Vaqtni qo‘yib yuboradi. Soatlar yurib, Yangi yil va hayot o‘z maromida davom etadi.",
+  "characters": "Janob Vaqt — samolyot uchuvchisi qiyofasidagi vaqt ramzi, 12 oyni olib kelgan mehmon. Aeroport boshlig‘i — qonun va tartibga rioya qiluvchi, lekin el manfaati uchun mas'uliyatni zimmasiga oladigan rahbar. Bolalar — vaqtning qadrini va ulg‘ayish zarurligini birinchi bo‘lib anglagan qahramonlar.",
+  "conclusion": "Ushbu hikoya farzandingizga vaqtning qanchalik azizligini hamda hayotdagi har bir fasl va yoshning o‘z o‘rni borligini o‘rgatadi. Bola ulg‘ayishdan qo‘rqmaslik, kelajakka umid bilan qarash va har bir daqiqani qadrlash kerakligini anglaydi.",
+  "difficulty": "oson",
+  "mood": "sarguzashtli, o‘ylantiruvchi, sehrli",
+  "for_whom": "Vaqt, fantastika va qiziqarli hayotiy saboqlar haqida o‘qishni xohlaydigan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Samolyot aeroportga Yangi yilga necha daqiqa qolganda qo‘ndi?",
+   "options": [
+    "A) 33 daqiqa qolganda",
+    "B) 10 daqiqa qolganda",
+    "C) 50 daqiqa qolganda",
+    "D) 15 daqiqa qolganda"
+   ],
+   "answer": "A) 33 daqiqa qolganda"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Notanish uchuvchi samolyotdan nechta jomadon tushirishni so‘radi?",
+   "options": [
+    "A) O‘n oltita jomadon",
+    "B) O‘n ikkita jomadon",
+    "C) Beshta jomadon",
+    "D) O‘nta jomadon"
+   ],
+   "answer": "B) O‘n ikkita jomadon"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uchuvchi stol ustidagi taqvimga qarab o‘zini kim deb tanishtirdi?",
+   "options": [
+    "A) Sehrgar deb",
+    "B) Vaqt deb",
+    "C) Uchuvchi deb",
+    "D) Vazir deb"
+   ],
+   "answer": "B) Vaqt deb"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Aeroport boshlig‘i notanish uchuvchini dastlab kim deb o‘yladi?",
+   "options": [
+    "A) Lo‘ttiboz va hazilkash deb",
+    "B) Xavfli jinoyatchi deb",
+    "C) Haqiqiy sehrgar deb",
+    "D) Muhim davlat arbobi deb"
+   ],
+   "answer": "A) Lo‘ttiboz va hazilkash deb"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Uchuvchi nega bort-jurnal va hujjatlarini ko‘rsatishdan bosh tortdi?",
+   "options": [
+    "A) U oddiy inson emas edi",
+    "B) Hujjatlarini uyda unutgan edi",
+    "C) Boshliqdan qo‘rqqan edi",
+    "D) Samolyoti buzilgan edi"
+   ],
+   "answer": "A) U oddiy inson emas edi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun aeroport boshlig‘i mehmonga darhol ishonmadi?",
+   "options": [
+    "A) Vaqt inson qiyofasida kelmaydi",
+    "B) Uchuvchi judayam qo‘rqinchli edi",
+    "C) Boshliq taqvimni yoqtirmas edi",
+    "D) Aeroportda bayram bo‘lmas edi"
+   ],
+   "answer": "A) Vaqt inson qiyofasida kelmaydi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif uchuvchining «Meni hech kim to‘xtatolmaydi» degan gapini qanday ta'riflaydi?",
+   "options": [
+    "A) Qiziq va g‘alati hazil",
+    "B) Qo‘rqinchli po‘pisa",
+    "C) G‘azabli buyruq",
+    "D) Qashshoq yolg‘on"
+   ],
+   "answer": "A) Qiziq va g‘alati hazil"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vaqt stol ustidagi qizil atirgulga «puf» deganda nima sodir bo‘ldi?",
+   "options": [
+    "A) Gullar birpasda kulga aylandi",
+    "B) Gullar yanada go‘zal bo‘ldi",
+    "C) Gullar darrov mevaga kirdi",
+    "D) Guldon buyunlay yo‘qoldi"
+   ],
+   "answer": "A) Gullar birpasda kulga aylandi"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vaqt to‘xtaganda soatning qaysi mili harakatdan to‘xtab qoldi?",
+   "options": [
+    "A) Sekund va daqiqa millari",
+    "B) Faqat soat mili",
+    "C) Barcha soatlar portlab ketdi",
+    "D) Soat orqaga qarab yurdi"
+   ],
+   "answer": "A) Sekund va daqiqa millari"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kattalar vaqt to‘xtaganidan nega xursand bo‘lishdi?",
+   "options": [
+    "A) Keksaymay, yosh qolamiz deyishdi",
+    "B) Ishga bormaslik uchun",
+    "C) Sovg‘alar ko‘paygani uchun",
+    "D) Qish tugagani uchun"
+   ],
+   "answer": "A) Keksaymay, yosh qolamiz deyishdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kimlar vaqtning to‘xtashiga birinchi bo‘lib qarshi chiqishdi?",
+   "options": [
+    "A) Maktab o‘quvchilari va bolalar",
+    "B) Aeroport xodimlari va uchuvchilar",
+    "C) Hukumat vazirlari va keksalar",
+    "D) Boshliq va uning yordamchilari"
+   ],
+   "answer": "A) Maktab o‘quvchilari va bolalar"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun bolalar vaqt to‘xtab qolishini xohlashmadi?",
+   "options": [
+    "A) Ulg‘ayish va yoz kelishini istashgani uchun",
+    "B) Qishda o‘ynashni yoqtirishmagani uchun",
+    "C) Yangi yil sovg‘asini olmagani uchun",
+    "D) Maktabga borishni yoqtirishgani uchun"
+   ],
+   "answer": "A) Ulg‘ayish va yoz kelishini istashgani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bemorlar nega vaqtning to‘xtaganidan jahli chiqdi?",
+   "options": [
+    "A) Og‘riqlar va kasallik arimagani uchun",
+    "B) Shifokorlar kelmagani uchun",
+    "C) Dori-darmon tugab qolgani uchun",
+    "D) Kasalxonadan chiqib ketishgani uchun"
+   ],
+   "answer": "A) Og‘riqlar va kasallik arimagani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ichki ishlar vazirining vaqtni hibsda tutish taklifi to‘g‘rimidi?",
+   "options": [
+    "A) Noto‘g‘ri, vaqt to‘xtasa hayot to‘xtaydi",
+    "B) To‘g‘ri, hujjatsiz odamni ushlash kerak",
+    "C) To‘g‘ri, odamlar keksaymasligi yaxshi",
+    "D) Noto‘g‘ri, u ko‘proq maosh so‘ragandi"
+   ],
+   "answer": "A) Noto‘g‘ri, vaqt to‘xtasa hayot to‘xtaydi"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Boshliqni Vaqtni qo‘yib yuborishga majbur qilgan so‘nggi voqea nima edi?",
+   "options": [
+    "A) Binoda o‘t tushganligi haqida qo‘ng‘iroq",
+    "B) Vazirning qat'iy buyrug‘i",
+    "C) Bolalarning ko‘chadagi namoyishi",
+    "D) Samolyotning qayta uchishi"
+   ],
+   "answer": "A) Binoda o‘t tushganligi haqida qo‘ng‘iroq"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vaqt xonadan chiqqanidan so‘ng nima ro‘y berdi?",
+   "options": [
+    "A) Soatlar yurib, Yangi yil kirdi",
+    "B) Qor yog‘ib, havo sovib ketdi",
+    "C) Samolyot qaytadan ko‘kka ko‘tarildi",
+    "D) Boshliq ishdan bo‘shatildi"
+   ],
+   "answer": "A) Soatlar yurib, Yangi yil kirdi"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Vaqt ozod etilgach, odamlar va tabiatda qanday o‘zgarish bo‘ldi?",
+   "options": [
+    "A) Mushaklar chaqnadi va vaqt davom etdi",
+    "B) Hamma narsa muzlab qoldi",
+    "C) Taqvimlar mutlaqo yo‘qolib ketdi",
+    "D) Odamlar mangu uqubatda qolishdi"
+   ],
+   "answer": "A) Mushaklar chaqnadi va vaqt davom etdi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun vaqt to‘xtaganda yong‘inni o‘chirish imkonsiz edi?",
+   "options": [
+    "A) O‘t o‘chiruvchilar harakatlana olmas edi",
+    "B) Suv quvurlarida suv tugagan edi",
+    "C) Ota-onalar ruxsat bermagan edi",
+    "D) Telefon aloqasi o‘chgan edi"
+   ],
+   "answer": "A) O‘t o‘chiruvchilar harakatlana olmas edi"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Aeroport boshlig‘ining mas'uliyatni zimmaga olib Vaqtni qo‘yib yuborishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, u insonlarni falokatdan qutqardi",
+    "B) Noto‘g‘ri, u buyruqni kutishi kerak edi",
+    "C) Noto‘g‘ri, u aeroportni xavfga qo‘ydi",
+    "D) To‘g‘ri, u shampan vinosini ichmoqchi edi"
+   ],
+   "answer": "A) To‘g‘ri, u insonlarni falokatdan qutqardi"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Janob Vaqt aeroport boshlig‘i bilan xayrlashayotib unga qanday baho berdi?",
+   "options": [
+    "A) Dunyoda tengi yo‘q odam ekansiz",
+    "B) Juda qo‘rqoq va mas'uliyatsiz ekansiz",
+    "C) Men sizni hech qachon kechirmayman",
+    "D) Siz bilan qayta ko‘rishmaymiz"
+   ],
+   "answer": "A) Dunyoda tengi yo‘q odam ekansiz"
+  }
+ ]
+}

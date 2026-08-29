@@ -1,0 +1,418 @@
+{
+ "title": "Odam bo‘lish qiyin",
+ "author": "Vasiliy Suxomlinskiy",
+ "genre": "roman",
+ "age_group": "6",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "odamiylik",
+   "mas'uliyat",
+   "muhabbat",
+   "vijdon",
+   "halollik",
+   "oila"
+  ],
+  "theme": "Ilm va martabaga erishish jarayonida odamiylik, vafo hamda ma'naviy mas'uliyatni yo‘qotmaslik asarning bosh g‘oyasidir.",
+  "summary": "Maktabni oltin medal bilan bitirgan Abdulla Mingbuloq qishlog‘ida Gulchehra bilan tanishib, uni sevib qoladi. Keyinchalik Toshkent va Leningradda o‘qib, ilmiy martaba haqida hayol suradi. Professor Tursunali akaning qizi Sayyora va kelajakdagi qulayliklarni o‘ylab, Gulchehradan uzoqlashadi. Qishloqda qolgan Gulchehra og‘ir ahvolda xat yozsa ham, Abdulla ikkilanib javob bermaydi. Gulchehra Toshkentga kelgach, baxtsiz hodisa tufayli baland binodan yiqilib halok bo‘ladi. Dahshatli xabardan so‘ng Mingbuloqqa oshqqan Abdullani buvisi va do‘stlari xiyonatkor deb haydashadi. Abdulla hayotda olim bo‘lish yetarli emasligini, eng muhimi odam bo‘lib qolish kerakligini anglab, umrbod vijdon azobida qoladi.",
+  "characters": "Abdulla — xudbinlikka chalingan iqtidorli talaba; Gulchehra — samimiy, orzularga boy me'mor qiz; Hojar buvi — Abdullaning buvisi; Obid aka — halol mehnati bilan yashaydigan tog‘asi; Samad — Gulchehraning chin do‘sti; Sayyora — professorning sho‘x qizi.",
+  "conclusion": "Asar inson hayotida mansab va muvaffaqiyatdan ko‘ra vafo, insof hamda mas'uliyat ustun turishini ko‘rsatadi. O‘quvchi har bir qarorning oqibati borligini, birovning ishonchini poymol qilish tuzatib bo‘lmas fojiaga olib kelishini anglab yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Hayotda to‘g‘ri yo‘l tanlash, mas'uliyat va odamiylik qadrini tushunishni istagan o‘spirin kitobxonlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shoh Muslim podsholigi muqaddimada qanday tasvirlangan?",
+   "options": [
+    "A) Obod va tinch",
+    "B) Kambag‘al va qashshoq",
+    "C) Vayron va urushqoq"
+   ],
+   "answer": "A) Obod va tinch"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abdullaning buvisi Hojar buvini qishloqda nima deyishardi?",
+   "options": [
+    "A) Zavod aya",
+    "B) Mehrigiyo aya",
+    "C) Polvon aya"
+   ],
+   "answer": "A) Zavod aya"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Obid aka bilan Abdullaning iti ismi nima edi?",
+   "options": [
+    "A) Oqto‘sh",
+    "B) Teshavoy",
+    "C) Olapar"
+   ],
+   "answer": "B) Teshavoy"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gulchehra bilan Abdulla tomda ko‘rgan burgutning nimalari qirqilgan edi?",
+   "options": [
+    "A) Tirnoqlari",
+    "B) Qanotlari",
+    "C) Patlari"
+   ],
+   "answer": "B) Qanotlari"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Boshlanishida yuz bergan voqealarning to‘g‘ri tartibini toping.",
+   "options": [
+    "A) Mehmonga kelish, bedana ovi",
+    "B) Bedana ovi, maktabni bitirish",
+    "C) Burgutni ko‘rish, maktab imtihoni"
+   ],
+   "answer": "A) Mehmonga kelish, bedana ovi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hojar buvining oila a'zolarini to‘g‘ri guruhlang.",
+   "options": [
+    "A) Obid, Shahodat, Abdulla",
+    "B) Obid, Husanxon, Siddiq",
+    "C) Shahodat, Samad, Qosimjon"
+   ],
+   "answer": "A) Obid, Shahodat, Abdulla"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Obid aka nega bedana oviga erta tongda chiqdi?",
+   "options": [
+    "A) Bedanalar erta sayrashi uchun",
+    "B) Issiq tushmasligi uchun",
+    "C) Qishloqda odam ozligi uchun"
+   ],
+   "answer": "A) Bedanalar erta sayrashi uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Abdulla nega qishloqqa yolg‘iz o‘zi kelgan edi?",
+   "options": [
+    "A) Maktabni medalga bitirgani uchun",
+    "B) Otasi uni haydagani uchun",
+    "C) Uyda joy bo‘lmagani uchun"
+   ],
+   "answer": "A) Maktabni medalga bitirgani uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Obid akaning halol mehnat qilib yashashi qanday fazilat?",
+   "options": [
+    "A) Ijobiy va ibratli",
+    "B) Maqtanchoqlik",
+    "C) Keraksiz urug‘-aymoqchilik"
+   ],
+   "answer": "A) Ijobiy va ibratli"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Mingbuloq tabiatini qanday ohangda tasvirlagan?",
+   "options": [
+    "A) Mehr va zavq bilan",
+    "B) G‘azab bilan",
+    "C) Quvonchsiz va sovuq"
+   ],
+   "answer": "A) Mehr va zavq bilan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abdullaning otasi G‘afurjon aka qaysi kasal bilan og‘rigan edi?",
+   "options": [
+    "A) Gipertoniya",
+    "B) Shamollash",
+    "C) Saraton"
+   ],
+   "answer": "A) Gipertoniya"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Professor Tursunali akaning qizi ismi nima edi?",
+   "options": [
+    "A) Sayyora",
+    "B) Zubayda",
+    "C) Saida"
+   ],
+   "answer": "A) Sayyora"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gulchehra qaysi qishloqning maketini yasagan edi?",
+   "options": [
+    "A) Mingbuloq",
+    "B) Yangiobod",
+    "C) Parkent"
+   ],
+   "answer": "A) Mingbuloq"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abdulla va Po‘lat Sayyora bilan qaysi restoranga borishdi?",
+   "options": [
+    "A) Astoriya",
+    "B) Toshkent",
+    "C) Bahor"
+   ],
+   "answer": "A) Astoriya"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Abdullaning Toshkent va Leningraddagi tanishlarini ajrating.",
+   "options": [
+    "A) Sayyora, Po‘lat, Tursunali aka",
+    "B) Samad, Obid aka, Qosimjon",
+    "C) Nurmat aka, Yusuf aka, Hojar"
+   ],
+   "answer": "A) Sayyora, Po‘lat, Tursunali aka"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Gulchehra nega qishloq maketini yasashga kirishgan edi?",
+   "options": [
+    "A) Qishloqni go‘zal qilish uchun",
+    "B) Raisdan pul olish uchun",
+    "C) Abdullaga maqtanish uchun"
+   ],
+   "answer": "A) Qishloqni go‘zal qilish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Abdulla nega Gulchehraning xatiga darrov javob yazmadi?",
+   "options": [
+    "A) Ikki o‘t orasida ikkilangani uchun",
+    "B) Xatni olmagani uchun",
+    "C) O‘qishni tashlagani uchun"
+   ],
+   "answer": "A) Ikki o‘t orasida ikkilangani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Abdullaning Gulchehra oldidagi mas'uliyatdan qochishi qanday harakat?",
+   "options": [
+    "A) Nomardlik va mas'uliyatsizlik",
+    "B) To‘g‘ri va oqilona qaror",
+    "C) Qahramonlik"
+   ],
+   "answer": "A) Nomardlik va mas'uliyatsizlik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Gulchehraning qishloq haqidagi orzularini qanday tasvirlaydi?",
+   "options": [
+    "A) Samimiy va ezgu niyatli",
+    "B) Xudbin va manfaatchi",
+    "C) Quruq va ma'nosiz"
+   ],
+   "answer": "A) Samimiy va ezgu niyatli"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Abdullaning ikkilanish daqiqalari matnda qanday berilgan?",
+   "options": [
+    "A) Ruhiy qiynoq va iztirobda",
+    "B) Yengil va kulgili",
+    "C) Mutlaqo beparvo"
+   ],
+   "answer": "A) Ruhiy qiynoq va iztirobda"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gulchehraning jasodini ertalab birinchi bo‘lib kim ko‘rib qoldi?",
+   "options": [
+    "A) Sulaymon ota",
+    "B) Samad",
+    "C) Qosimjon"
+   ],
+   "answer": "A) Sulaymon ota"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Militsiya tekshiruvida Gulchehra nechanchi qavatdan tushib ketgani aniqlandi?",
+   "options": [
+    "A) Beshinchi qavatdan",
+    "B) Uchinchi qavatdan",
+    "C) O‘ninchi qavatdan"
+   ],
+   "answer": "A) Beshinchi qavatdan"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abdulla qabristonga borganida yangi qabr tepasida kimni ko‘rdi?",
+   "options": [
+    "A) Samadni",
+    "B) Obid akani",
+    "C) Yusuf amakini"
+   ],
+   "answer": "A) Samadni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abdullaga ko‘chada uchragan kishi xotini unga nima deganini aytdi?",
+   "options": [
+    "A) Olim bo‘lish oson, odam bo‘lish qiyin",
+    "B) Toshkentga borish oson, o‘qish qiyin",
+    "C) Ishlash oson, yashash qiyin"
+   ],
+   "answer": "A) Olim bo‘lish oson, odam bo‘lish qiyin"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar oxiridagi fojiali voqealarning ketma-ketligini belgilang.",
+   "options": [
+    "A) Fojia, qabriston, vokzalga qaytish",
+    "B) Poyezdga chiqish, to‘y, qabriston",
+    "C) Xat yozish, imtihon, qabriston"
+   ],
+   "answer": "A) Fojia, qabriston, vokzalga qaytish"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hojar buvi nega Abdullani qarg‘ab uyga kiritmadi?",
+   "options": [
+    "A) Gulchehraning o‘limida aybdor bilgani uchun",
+    "B) Uyga sovg‘a keltirmagani uchun",
+    "C) O‘qishdan haydalgani uchun"
+   ],
+   "answer": "A) Gulchehraning o‘limida aybdor bilgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Begona kishining Saida bilan yarashishi Abdullaga qanday ta'sir qildi?",
+   "options": [
+    "A) O‘z gunohini chuqurroq anglatdi",
+    "B) Uni quvontirib kuldirdi",
+    "C) Mutlaqo ta'sir qilmadi"
+   ],
+   "answer": "A) O‘z gunohini chuqurroq anglatdi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Samadning Abdullaga aytgan tanbehi haqida qanday fikrdasiz?",
+   "options": [
+    "A) Ha, Abdullaning qilmishiga mos",
+    "B) Yo‘q, Samad adashgan",
+    "C) Asossiz tuhmat"
+   ],
+   "answer": "A) Ha, Abdullaning qilmishiga mos"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Abdullaning mansab uchun sevgisini qurbon qilishi qanday oqibat keltirdi?",
+   "options": [
+    "A) Katta fojia va pushaymonlik",
+    "B) Baxt va farovonlik",
+    "C) Omad va shon-sharaf"
+   ],
+   "answer": "A) Katta fojia va pushaymonlik"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif asar so‘ngida kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Teran o‘y va saboq",
+    "B) Shodlik va bayram",
+    "C) Kulgili kayfiyat"
+   ],
+   "answer": "A) Teran o‘y va saboq"
+  }
+ ]
+}

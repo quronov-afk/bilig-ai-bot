@@ -1,0 +1,417 @@
+{
+ "title": "Amir Temur haqida hikoyalar",
+ "author": "To‘lqin Hayit",
+ "genre": "toʻplam",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "tarix",
+   "jasorat",
+   "ilm-ma'rifat",
+   "vatanparvarlik",
+   "adolat"
+  ],
+  "theme": "Amir Temurning yoshligi, adolati, el-yurtga mehr-muhabbati hamda ilm va ulamolarga bo‘lgan yuksak hurmati.",
+  "summary": "To‘plamda buyuk sarkarda Amir Temurning bolaligi, ustozlaridan saboq olgani, Mahmud Shabistariy qabrini ziyorat qilib obod etgani, g‘animlarga qarshi mardona kurashlari va adolatli qarorlari ta'sirchan hikoya va rivoyatlar orqali tasvirlanadi. Sohibqironning yosh Ulug‘bekka ilm bog‘ini tilagani, dehqonlar va navkarlarga g‘amxo‘rligi, do‘stlik hamda va'daga vafodorligi sodda bayon etilgan.",
+  "characters": "Amir Temur (Sohibqiron) — bosh qahramon, adolatli va ma'rifatli hukmdor; Shayx Shamsuddin Kulol va Amir Kulol — ma'naviy ustozlar; Elyor dehqon — mehnatkash va halol fuqaro; Mirzo Ulug‘bek — Temurning suyguchi nevarasi; O‘ljoy Turkon — jasur va vafo qiluvchi qahramon.",
+  "conclusion": "Kitob kitobxonda vatanga muhabbat, mehnat va bilimni qadrlash, kattalar va ustozlarga hurmat tuyg‘ularini shakllantiradi. Bola aql va adolat har qanday kuchdan baland turishini anglaydi.",
+  "difficulty": "o‘rta",
+  "mood": "tarbiyaviy, ilhomlantiruvchi, haqqoniy",
+  "for_whom": "Tarixiy shaxslar hayoti, mardlik, adolat va ilm-fan haqida o‘qishni xohlaydigan, ibratli hikoyalarga qiziquvchi bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temurbek Mahmud Shabistariyning qaysi kitobini 14 yoshida o‘qigan edi?",
+   "options": [
+    "A) «Gulshani roz» kitobini",
+    "B) «Sirlar bo‘stoni» kitobini",
+    "C) «Hikmatlar» kitobini"
+   ],
+   "answer": "A) «Gulshani roz» kitobini"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shabistor qishlog‘ida qancha erkak va ayol yashashi aniqlandi?",
+   "options": [
+    "A) 3981 nafar",
+    "B) 2500 nafar",
+    "C) 5000 nafar"
+   ],
+   "answer": "A) 3981 nafar"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shabistor qishlog‘ining har bir aholisiga qancha oltin berildi?",
+   "options": [
+    "A) Besh misqoldan",
+    "B) O‘n misqoldan",
+    "C) Bir misqoldan"
+   ],
+   "answer": "A) Besh misqoldan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maktabda bola Temurbek birinchi bo‘lib qaysi surani yod o‘qidi?",
+   "options": [
+    "A) «Ash-shams» surasini",
+    "B) «Yasin» surasini",
+    "C) «Fotiha» surasini"
+   ],
+   "answer": "A) «Ash-shams» surasini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bola Temurbek qaysi tartibda ta'lim olib kamolga etdi?",
+   "options": [
+    "A) Mulla Alibek, Shamsuddin, Amir Kulol",
+    "B) Amir Kulol, Mulla Alibek, Shamsuddin",
+    "C) Shamsuddin, Amir Kulol, Mulla Alibek"
+   ],
+   "answer": "A) Mulla Alibek, Shamsuddin, Amir Kulol"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Temurbek nima uchun Mahmud Shabistariy qabrini ziyorat qilmoqchi bo‘ldi?",
+   "options": [
+    "A) Shoir ilmi va ijodini hurmat qilib",
+    "B) Qishloq ahlining talabi bo‘lgani uchun",
+    "C) Yo‘li shunday tushib qolgani uchun"
+   ],
+   "answer": "A) Shoir ilmi va ijodini hurmat qilib"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qoracha yuz chol nima uchun avvaliga xavotirga tushib titradi?",
+   "options": [
+    "A) Hukmdor aholi hisobini so‘raganidan qo‘rqib",
+    "B) Shoir qabri yo‘qolib ketganidan qo‘rqib",
+    "C) Hukmdorga ovqat yoqmaganidan qo‘rqib"
+   ],
+   "answer": "A) Hukmdor aholi hisobini so‘raganidan qo‘rqib"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Temurbekning Shabistor aholisiga oltin ulashishi uning qaysi sifatini ko‘rsatadi?",
+   "options": [
+    "A) Saxovatli va elparvar hukmdorligini",
+    "B) Shohona boyligini ko‘z-ko‘z qilishini",
+    "C) Shunchaki oddiy harajat qilganini"
+   ],
+   "answer": "A) Saxovatli va elparvar hukmdorligini"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Temurbek ovozidagi «orom va lazzat» bilan nimani ko‘rsatgan?",
+   "options": [
+    "A) Qiroatning juda samimiy va ta'sirchanligini",
+    "B) Temurbek juda baland ovozda baqirganini",
+    "C) Tinglovchilarning uyqusi kelib qolganini"
+   ],
+   "answer": "A) Qiroatning juda samimiy va ta'sirchanligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Maysa hidi» tasviri orqali muallif Temurbekning qaysi tuyg‘usini ko‘rsatgan?",
+   "options": [
+    "A) Bolaligi va maysazorlarga bo‘lgan sog‘inchini",
+    "B) Ot chopishni juda yaxshi ko‘rishini",
+    "C) Qishloq havosining juda issiqligini"
+   ],
+   "answer": "A) Bolaligi va maysazorlarga bo‘lgan sog‘inchini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sayyid Ahror choparga qutilarda nima berib yuborgan edi?",
+   "options": [
+    "A) Qovun shaklidagi kesaklarni",
+    "B) Haqiqiy shirin qovunlarni",
+    "C) Oltin va qimmatbaho toshlarni"
+   ],
+   "answer": "A) Qovun shaklidagi kesaklarni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chopar yo‘lda ochgan quti ichidagi qovun qanday edi?",
+   "options": [
+    "A) Ko‘m-ko‘k holda bujmayib turardi",
+    "B) Shirmoy va shirin bo‘lib turardi",
+    "C) Butunlay yo‘qolib qolgan edi"
+   ],
+   "answer": "A) Ko‘m-ko‘k holda bujmayib turardi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hernan sovg‘a sifatida Amir Temurdan nima so‘radi?",
+   "options": [
+    "A) Amir Temurning shamshirini",
+    "B) Oltin taqinchoqlar va chopon",
+    "C) Uchta uchqur otni"
+   ],
+   "answer": "A) Amir Temurning shamshirini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Elyor dehqon Amir Temur huzuriga nima olib keldi?",
+   "options": [
+    "A) Bug‘doydan yopilgan shirmoy kulchalar",
+    "B) Yangi uzilgan totli mevalar",
+    "C) Bir xalta yangi un"
+   ],
+   "answer": "A) Bug‘doydan yopilgan shirmoy kulchalar"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Elyor dehqonning o‘g‘illari qanday faoliyat egalari bo‘lishdi?",
+   "options": [
+    "A) Tegirmonchi, moyjuvozchi va qandolatchi",
+    "B) Qilichboz, mergan va bog‘bon",
+    "C) Ustoz, xattot va munajjim"
+   ],
+   "answer": "A) Tegirmonchi, moyjuvozchi va qandolatchi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Amir Temur Elyor dehqon arzidan so‘ng qanday qaror chiqardi?",
+   "options": [
+    "A) Soliqchilarni jazoladi, serfarzandlarga imtiyoz berdi",
+    "B) Dehqondan olingan barcha yerni tortib aldi",
+    "C) Dehqonlarni boshqa shaharga ko‘chirtirib yubordi"
+   ],
+   "answer": "A) Soliqchilarni jazoladi, serfarzandlarga imtiyoz berdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sayyid Ahror yuborgan kesaklar nima uchun novvotrang qovunga aylandi?",
+   "options": [
+    "A) Ulug‘ zotning karomati va mo‘jizasi edi",
+    "B) Chopar yo‘lda ularni almashtirib qo‘ygan edi",
+    "C) Issiq havodan kesaklar pishib qolgan edi"
+   ],
+   "answer": "A) Ulug‘ zotning karomati va mo‘jizasi edi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Amir Temur nevarasi Ulug‘bek barpo etadigan bog‘ni nima uchun abadiy dedi?",
+   "options": [
+    "A) Ilm va ma'rifat bog‘i abadiy yashnaydi",
+    "B) Ulug‘bek bog‘iga eng zo‘r daraxtlar ekiladi",
+    "C) Bog‘ atrofi baland devor bilan o‘raladi"
+   ],
+   "answer": "A) Ilm va ma'rifat bog‘i abadiy yashnaydi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Choparning yo‘lda qutini ochib ko‘rib, keyin rostini aytishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, xatosini tan olib to‘g‘risini aytdi",
+    "B) Noto‘g‘ri, u qutini yashirishi kerak edi",
+    "C) Noto‘g‘ri, u ortga qaytishi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, xatosini tan olib to‘g‘risini aytdi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Amir Umar Temurbek bergan yerlarni rad etib to‘g‘ri qildimi?",
+   "options": [
+    "A) To‘g‘ri, otasining odil nasihatiga amal qildi",
+    "B) Noto‘g‘ri, berilgan katta boylikdan voz kechmasdi",
+    "C) Noto‘g‘ri, amir bilan urishib qolishi kerak"
+   ],
+   "answer": "A) To‘g‘ri, otasining odil nasihatiga amal qildi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tug‘luq Temirxon Sohibqirondan xursand bo‘lib Movarounnahrni kimga topshirdi?",
+   "options": [
+    "A) Amir Temurbekka",
+    "B) Bekchik amirga",
+    "C) Hojibek Erkinibga"
+   ],
+   "answer": "A) Amir Temurbekka"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Husayn qasamini buzgani uchun kim tomonidan jazolandi?",
+   "options": [
+    "A) Huttalon hokimi Kayxusrav",
+    "B) Tug‘luq Temirxon",
+    "C) Amir Qozag‘on"
+   ],
+   "answer": "A) Huttalon hokimi Kayxusrav"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘ljoy Turkon va Temurbek ovda qaysi hayvonga kamon otishdi?",
+   "options": [
+    "A) Kiyikka qarata",
+    "B) Kiyiklar to‘dasiga",
+    "C) Yirtqich bo‘riga"
+   ],
+   "answer": "A) Kiyikka qarata"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘olib navkarga yuziga temir to‘r tutib kim da'vogar bo‘ldi?",
+   "options": [
+    "A) Qirqqizlar guruhidagi malika",
+    "B) Boshqa viloyatdan kelgan pahlavon",
+    "C) Chag‘oniyon burgutining dost do‘sti"
+   ],
+   "answer": "A) Qirqqizlar guruhidagi malika"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Temurbek yurtni g‘animlardan asrash uchun qanday tadbir qo‘lladi?",
+   "options": [
+    "A) Sovg‘alar berdi va yigitlarni birlashtirdi",
+    "B) Qal'aga yashirinib dushmanning ketishini kutdi",
+    "C) Barcha mol-mulkni dushmanga berib qochdi"
+   ],
+   "answer": "A) Sovg‘alar berdi va yigitlarni birlashtirdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Temurbek nima uchun navkarning sevgilisi bilan oila qurishiga yordam berdi?",
+   "options": [
+    "A) Muhabbatni har qanday boylikdan ustun bildi",
+    "B) Navkarning kurashda yutqazganiga achindi",
+    "C) Qirqqizlar sardori shunday qilishni so‘radi"
+   ],
+   "answer": "A) Muhabbatni har qanday boylikdan ustun bildi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Amir Husaynning halok bo‘lishiga asosiy sabab nima edi?",
+   "options": [
+    "A) Qur'onni ushlab ichgan qasamini buzgani",
+    "B) Urushda do‘stlaridan ajralib qolgani",
+    "C) Shahardan qochib ketishga kechikkani"
+   ],
+   "answer": "A) Qur'onni ushlab ichgan qasamini buzgani"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Temurbekning Naxshab qal'asidagi mardligi haqida nima deya olasiz?",
+   "options": [
+    "A) Haqiqiy yetakchiga xos jasorat va aql",
+    "B) Qo‘rquvga tushib qilingan tavakkal ish",
+    "C) Befikr va shoshmashosharlik bilan qilingan"
+   ],
+   "answer": "A) Haqiqiy yetakchiga xos jasorat va aql"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif O‘ljoy Turkon sochlarining to‘kilishini qanday tasvirlagan?",
+   "options": [
+    "A) Och qo‘ng‘ir sochlari oftobda yaltirab ko‘rindi",
+    "B) Qora sochlari shamolda har tomonga sochildi",
+    "C) Sochlari dubulg‘a ostidan umuman ko‘rinmadi"
+   ],
+   "answer": "A) Och qo‘ng‘ir sochlari oftobda yaltirab ko‘rindi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Bir to‘g‘ri tadbir yuz ming otliqdan afzal» iborasi nimani tasvirlaydi?",
+   "options": [
+    "A) Aql va tadbirning qudratdan ustunligini",
+    "B) Urushda otliqlarning keraksiz ekanligini",
+    "C) Yuz ming askar har doim yengilishini"
+   ],
+   "answer": "A) Aql va tadbirning qudratdan ustunligini"
+  }
+ ]
+}

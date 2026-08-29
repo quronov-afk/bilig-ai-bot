@@ -156,6 +156,22 @@ matnlarga tegilmasin**. Bu degani:
   Yangi interaktiv element qo‘shsangiz, shu naqshga qo‘shiling.
 - `api(path, opts)` — barcha backend so‘rovlari shu yordamchi orqali.
 
+## Namoyish ma'lumoti — MAJBURIY qoida
+
+`demo_data.py` — «Bolaxona» bo‘limidagi **«To‘ldirish»** tugmasi ishlatadigan
+fayl. Ega uni investorlarga ilovani ko‘rsatishda bosadi.
+
+**Ilovaga yangi imkoniyat qo‘shsangiz — shu faylga ham qo‘shing.** Ega
+«To‘ldirish» ni bosganda ilovaning ENG OXIRGI holati to‘liq ko‘rinishi kerak:
+bironta ekran bo‘sh qolmasin. Hozir to‘ldiriladi: kitoblar, mutolaa tarixi,
+testlar, AI ustoz tahlillari va savollari, nishonlar, Bilig hisob daftari,
+do‘kon sovg‘alari (belgilari bilan), xaridlar (berilgani va kutayotgani),
+orzu, Bilig kursi, ikkala tomon uchun xabarnomalar, kechki suhbat savoli.
+
+Tugma qayta-qayta bosilishi mumkin — natija har safar bir xil bo‘lishi shart
+(avval `clear_demo_child`, keyin to‘ldirish; do‘kon sovg‘alari nomi bo‘yicha
+yangilanadi, takrorlanmaydi).
+
 ## Har bir o‘zgarishdan keyin tekshir
 
 1. `node --check webapp/app.js` — JS sintaksisi.

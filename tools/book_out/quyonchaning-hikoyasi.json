@@ -1,0 +1,28 @@
+{
+ "title": "Quyonchaning hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "3",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-10",
+  "topics": [
+   "soddadillik",
+   "ayyorlik",
+   "ogohlik",
+   "xushomadgo‘ylik",
+   "aql-idrok"
+  ],
+  "theme": "Muallif soxta xushomadga uchmaslik, har bir vaziyatga aql bilan yondashish va aldanib qolmaslik uchun ogoh bo‘lish lozimligini ko‘rsatadi.",
+  "summary": "Quyoncha yo‘lda aravadan tushib qolgan ikkita karamni topib oladi. Shu payt uning oldiga ayyor va ochko‘z To‘ng‘iz keladi. U Quyonchaga soxta iltifot ko‘rsatib, uni «ahmoq-ahmoq» degan o‘yinni o‘ynashga ko‘ndiradi. O‘yin sharti bo‘yicha To‘ng‘iz karamni yeydi, Quyoncha esa uni masxara qilib chapak chalib sakraydi. Natijada To‘ng‘iz ikkala karamni yeb tugatadi va Quyonchani ustidan kulib ketadi. Quyoncha esa hamon o‘zini To‘ng‘izni bopladim deb o‘ylab, och-nahor va charchagan holda qolaveradi.",
+  "characters": "Quyoncha — soddadil, tez inanuvchan, o‘zini aqlli deb o‘ylaydigan, ammo aldanib qolgan obraz. To‘ng‘iz (Ishkamba) — ayyor, ochko‘z, o‘z manfaati uchun soxta xushomad qiladigan qahramon.",
+  "conclusion": "Hikoya bolaga samimiy do‘st bilan ayyor kimsaning farqiga borishni, kutilmagan xushomadlarga aldanib qolmaslikni o‘rgatadi. Bola har bir ishni qilishdan oldin uning oqibatini o‘ylash va o‘z nasibasini aql bilan asrash kerakligini tushunadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, o‘ylantiruvchi",
+  "for_whom": "Sodda va kulgili voqealarni yoqtiradigan, hayotda kimga ishonish va kimdan ehtiyot bo‘lish kerakligini o‘rganayotgan kichik yoshdagi bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "To‘ng‘iz Quyonchani soxta maqtovlar bilan aldab, uning karamlarini yeb ketdi. Sen Quyonchaning o‘rnida bo‘lganingda To‘ng‘izga qanday javob berarding? Biror kishi senga ortiqcha xushomad qilsa, uning niyati xolis yoki ayyorlik ekanini qanday bilib olish mumkin?"
+}

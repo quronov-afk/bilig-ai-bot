@@ -1,0 +1,447 @@
+{
+ "title": "Gulliverning sayohatlari",
+ "author": "Jonatan Svift",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15",
+  "topics": [
+   "sayohat",
+   "adolat",
+   "jamiyat",
+   "inson tabiati",
+   "mehnatsevarlik"
+  ],
+  "theme": "Asar insoniyat illatlari, manmanlik va adolatsiz siyosatni hajv qilish orqali to‘g‘rilik, halollik hamda kamtarinlikka da'vat etadi.",
+  "summary": "Kema shifokori Lemyuel Gulliver dengiz safarlarida halokatga uchrab, turli g‘aroyib mamlakatlarga tushib qoladi. Dastlab mitti odamlar — liliputlar yurtida Tog‘ odamga aylanadi va saroydagi arzimas mansabparastlik hamda poyabzal poshnasi, tuxum sindirish ustidagi ahmoqona urushlarning guvohi bo‘ladi. So‘ngra ulkan darozlar o‘lkasi (Brobdingneg)ga tushib, mitti jonzot sifatida yashaydi va qirol bilan muloqotda Yevropa jamiyatining nuqsonlarini anglaydi. Uchinchi safarda uchar orol Laputu va Lo‘ttibozlar akademiyasidagi mantiqsiz kashfiyotlar hamda abadiy yashaydigan azobli struldbruglar bilan tanishadi. Oxirgi safarda aqlli otlar (Guigngnmlar) hamda badbashara, ochofat odamsimon maxluqlar (Yexular) yurtiga borib qoladi. U yerda insoniyatning tubanligini ko‘rib, otlarning donoligiga tan beradi. Uyiga qaytgach, manmanlik va kibrdan xoli bo‘lib, to‘g‘ri hayot kechirishga intiladi.",
+  "characters": "Lemyuel Gulliver — kema xirurgi va sayohatchi, ziyrak va sabrli. Glyumdalklich — darozlar o‘lkasidagi mehribon qizcha, Gulliverning enagasi. Pedro de Mendes — oliyjanob va kamsuxan portugal kapitani. Brobdingneg qiroli — adolatli va donishmand hukmdor.",
+  "conclusion": "Ushbu asar bolani jamiyat va inson fe'l-atvorini chuqur mushohada qilishga, kibr hamda manmanlikdan yiroq bo‘lishga o‘rgatadi. Bola halollik, adolat va sabr-toqatning har qanday vaziyatda eng yuksak insoniy qadriyat ekanini anglab yetadi.",
+  "difficulty": "qiyin",
+  "mood": "hajviy, o‘ylantiruvchi, sarguzashtli",
+  "for_whom": "Sayohat va sarguzashtlarni xush ko‘radigan, insonlar fe'li hamda jamiyatdagi adolat haqida o‘ylashni yaxshi ko‘radigan zukkoli o‘quvchilarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gulliver Kembrijdan so‘ng kimga vrachlikka shogird bo‘ldi?",
+   "options": [
+    "A) Jems Betsga",
+    "B) Vilyam Prichardga",
+    "C) Pedro de Mendesga",
+    "D) Edmond Bertonga"
+   ],
+   "answer": "A) Jems Betsga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gulliver «Ohu» kemasida qaysi shahardan safarga chiqdi?",
+   "options": [
+    "A) Londondan",
+    "B) Bristoldan",
+    "C) Dublindan",
+    "D) Leydendan"
+   ],
+   "answer": "B) Bristoldan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Liliputiyadagi ikki partiya bir-biridan nima bilan farqlanardi?",
+   "options": [
+    "A) Kiyimidagi bezaklari bilan",
+    "B) Poshnasining baland-pastligi bilan",
+    "C) Gapirish uslubi bilan",
+    "D) Minadigan otlari bilan"
+   ],
+   "answer": "B) Poshnasining baland-pastligi bilan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Liliputlar Gulliverning ko‘zini o‘yish hukmini nega marhamat dedilar?",
+   "options": [
+    "A) O‘lim jazosidan yengilroq bo‘lgani uchun",
+    "B) Uning ko‘zi kasal bo‘lgani uchun",
+    "C) Qirol uni aybsiz degani uchun",
+    "D) Saroy qoidasi shunday bo‘lgani uchun"
+   ],
+   "answer": "A) O‘lim jazosidan yengilroq bo‘lgani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Liliputiyada amaldorlar bo‘sh lavozimni egallash uchun nima qilishardi?",
+   "options": [
+    "A) Arqon ustida dor o‘ynashardi",
+    "B) Kuch bilan musobaqalashardi",
+    "C) Katta miqdorda pul to‘lashardi",
+    "D) Qirolga kitob yozib berishardi"
+   ],
+   "answer": "A) Arqon ustida dor o‘ynashardi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Gulliverning cho‘ntaklarini ixtiyoriy ravishda ko‘rsatishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, niyati halolligini ko‘rsatdi",
+    "B) Xato, u qarshilik qilishi kerak edi",
+    "C) To‘g‘ri, u qo‘rqqanidan shunday qildi",
+    "D) Xato, bu saroy qoidalariga zid"
+   ],
+   "answer": "A) To‘g‘ri, niyati halolligini ko‘rsatdi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif tuxum sindirish mashmashasini tasvirlab nimani ko‘rsatmoqchi?",
+   "options": [
+    "A) Odamlarning tuxum yeyish odatini",
+    "B) Arzimas sababdan qonli urushlar chiqishini",
+    "C) Liliputlar pazandalikda usta ekanini",
+    "D) Tuxumning shifobaxsh xususiyatlarini"
+   ],
+   "answer": "B) Arzimas sababdan qonli urushlar chiqishini"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Liliputlar Gulliverni o‘z tillarida nima deb atashgan?",
+   "options": [
+    "A) Kuinbus Flestrin",
+    "B) Gekina degul",
+    "C) Tollgo fonak",
+    "D) Grildrig"
+   ],
+   "answer": "A) Kuinbus Flestrin"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Gulliver nega Liliputiyadan o‘z vaqtida qochishga majbur bo‘ldi?",
+   "options": [
+    "A) Ko‘zidan mahrum qilmoqchi bo‘lishgani uchun",
+    "B) Vatanni juda sog‘inib qolgani uchun",
+    "C) Ovqat yetmay qolgani uchun",
+    "D) Kema qurib bo‘lingani uchun"
+   ],
+   "answer": "A) Ko‘zidan mahrum qilmoqchi bo‘lishgani uchun"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Liliputiyadagi sud muassasalarida adolat ma'budasi qanday tasvirlangan?",
+   "options": [
+    "A) Olti ko‘zli ayol sifatida",
+    "B) Ikki qanotli qush sifatida",
+    "C) Qilich tutgan chavandoz sifatida",
+    "D) Nurlicha quyosh sifatida"
+   ],
+   "answer": "A) Olti ko‘zli ayol sifatida"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Darozlar o‘lkasida Gulliverga kim mehribonlik bilan enaga bo‘ldi?",
+   "options": [
+    "A) Qirolichaning o‘zi",
+    "B) Dehqonning qizi Glyumdalklich",
+    "C) Saroy oshpazi",
+    "D) Qishloq tabibi"
+   ],
+   "answer": "B) Dehqonning qizi Glyumdalklich"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Brobdingneg saroyida Gulliverga qanday xavf-xatarlar tahdid qildi?",
+   "options": [
+    "A) Saroy pakanasi va maymun tajovuzi",
+    "B) Bo‘ron va suv qashshoqligi",
+    "C) Yirtqich sherlar hujumi",
+    "D) Qirolning g‘azabi va qamog‘i"
+   ],
+   "answer": "A) Saroy pakanasi va maymun tajovuzi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Darozlar qiroli Yevropa davlatlari haqida eshitib nega taajjublandi?",
+   "options": [
+    "A) Urush va manmanlikni ko‘rib",
+    "B) Yevropaning kattaligiga qoyil qolib",
+    "C) Odamlarning boyligiga hasad qilib",
+    "D) Dengizchilarning jasoratidan quvonib"
+   ],
+   "answer": "A) Urush va manmanlikni ko‘rib"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gulliverni saroydan olib qochgan maymun uni qayerga olib chiqdi?",
+   "options": [
+    "A) Qo‘shni binoning tomiga",
+    "B) Baland daraxt shoxiga",
+    "C) Chuqur quduq ichiga",
+    "D) Otlar boqiladigan saroyga"
+   ],
+   "answer": "A) Qo‘shni binoning tomiga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qirolning porox kashfiyotini rad etishi qanday baholanadi?",
+   "options": [
+    "A) Insoniyatni qirg‘indan saqlash donoligi",
+    "B) Qo‘rqoqlik va bilimsizlik alomati",
+    "C) Gulliverga nisbatan bepisandlik",
+    "D) Yangilikdan qo‘rqish tuyg‘usi"
+   ],
+   "answer": "A) Insoniyatni qirg‘indan saqlash donoligi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Gulliverning vatani haqidagi maqtovlariga qirol kulishini qanday tasvirlaydi?",
+   "options": [
+    "A) Kattalar oldida manmanlikning kulgililigini",
+    "B) Qirolning odobsiz kishi ekanligini",
+    "C) Yevropa qudratining tan olinishini",
+    "D) Dengizchilar hayotining qiziqarliligini"
+   ],
+   "answer": "A) Kattalar oldida manmanlikning kulgililigini"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gulliver darozlar mamlakatidan qanday qilib chiqib ketdi?",
+   "options": [
+    "A) Qutisini burgut dengizga tashladi",
+    "B) Kattakon kemaga o‘tirib suzdi",
+    "C) Qayiqda o‘zi suzib ketdi",
+    "D) Glyumdalklich uni qochirib yubordi"
+   ],
+   "answer": "A) Qutisini burgut dengizga tashladi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Brobdingneg dehqoni Gulliverni topib olgach undan qanday foydalandi?",
+   "options": [
+    "A) Odamlarga pulga tomosha qildirdi",
+    "B) Dalada og‘ir ishlarga soldi",
+    "C) O‘ziga shogird qilib oldi",
+    "D) Qushlarni qoquvchi qildi"
+   ],
+   "answer": "A) Odamlarga pulga tomosha qildirdi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dengizda Gulliver sandig‘ini qutqargan kema matroslari avval nima deb o‘ylashdi?",
+   "options": [
+    "A) Suzib yurgan uyni ko‘rdik deb",
+    "B) Bahaybat baliq deb",
+    "C) Dushman kemasi deb",
+    "D) Cho‘kkan daraxt deb"
+   ],
+   "answer": "A) Suzib yurgan uyni ko‘rdik deb"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Saroy pakanasi Gulliverni nega qaymoq to‘la kosaga tashlab yubordi?",
+   "options": [
+    "A) Unga hasad va adovat qilgani uchun",
+    "B) Hazil qilib o‘ynagani uchun",
+    "C) Qirolning buyrug‘ini bajargani uchun",
+    "D) Tasodifan turtib yuborgani uchun"
+   ],
+   "answer": "A) Unga hasad va adovat qilgani uchun"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Laputu o‘lkasidagi uchar orol qachon yerga yaqinlashar edi?",
+   "options": [
+    "A) Soliq undirish yoki qo‘zg‘olonni bostirishga",
+    "B) Bayramlarda aholi bilan ko‘rishishga",
+    "C) Savdo-sotiq ishlarini amalga oshirishga",
+    "D) Yangi uylar qurish uchun"
+   ],
+   "answer": "A) Soliq undirish yoki qo‘zg‘olonni bostirishga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Lo‘ttibozlar akademiyasida qanday bema'ni ilmiy loyihalar bor edi?",
+   "options": [
+    "A) Uylarni tomidan boshlab qurish",
+    "B) Dengiz suvini ichimlik qilish",
+    "C) Shamoldan elektr energiyasi olish",
+    "D) Uchar kemalar kashf etish"
+   ],
+   "answer": "A) Uylarni tomidan boshlab qurish"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Gulliver Guigngnmlar mamlakatida nega inson zotidan jirkanib qoldi?",
+   "options": [
+    "A) Yexularning iflosligini ko‘rib",
+    "B) Otlarning ozodaligiga hasad qilib",
+    "C) Yevropaga qaytishni istamagani uchun",
+    "D) Ovqatlar yoqmagani uchun"
+   ],
+   "answer": "A) Yexularning iflosligini ko‘rib"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Guigngnmlar o‘lkasida aqlsiz va odamsimon maxluqlar nima deb atalardi?",
+   "options": [
+    "A) Yexular",
+    "B) Struldbruglar",
+    "C) Laputuliklar",
+    "D) Liliputlar"
+   ],
+   "answer": "A) Yexular"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Gulliverning uyiga qaytgach otlar bilan do‘stlashib yashashi qanday baholanadi?",
+   "options": [
+    "A) Jamiyat illatlaridan bezor bo‘lish alomati",
+    "B) Aqlini yo‘qotganining isboti",
+    "C) Otboqarga yordam berish niyati",
+    "D) Kiyimlarni tejash maqsadida"
+   ],
+   "answer": "A) Jamiyat illatlaridan bezor bo‘lish alomati"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif struldbruglar haqidagi hikoyasi orqali nimani tasvirlab bergan?",
+   "options": [
+    "A) Aqlsiz abadiy umr azob ekanini",
+    "B) Qarilikning juda go‘zal davrligini",
+    "C) O‘lmaslik eng buyuk baxtligini",
+    "D) Tibbiyotning yuksak rivojlanganini"
+   ],
+   "answer": "A) Aqlsiz abadiy umr azob ekanini"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gulliverni Yaponiyadan keyin Angliyaga qaytargan oliyjanob kapitan kim?",
+   "options": [
+    "A) Pedro de Mendes",
+    "B) Vilyam Prichard",
+    "C) Eybregem Pennell",
+    "D) Jems Bets"
+   ],
+   "answer": "A) Pedro de Mendes"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Gulliver Angliyaga qaytgach nega kiyimlarini shamollatib kiyadigan bo‘ldi?",
+   "options": [
+    "A) Odamlar hididan jirkangani uchun",
+    "B) Kiyimlari juda yangi bo‘lgani uchun",
+    "C) Issiq havodan salqinlash uchun",
+    "D) Dengiz namligini ketkazish uchun"
+   ],
+   "answer": "A) Odamlar hididan jirkangani uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Otxonaning yoqimli hidi anqib turadi» deb nimani ko‘rsatadi?",
+   "options": [
+    "A) Otlarga bo‘lgan samimiy ehtiromini",
+    "B) Otboqarning mehnatsevar va toza ekanini",
+    "C) Uyining tartibsiz va iflosligini",
+    "D) Dengiz hidini sog‘inganligini"
+   ],
+   "answer": "A) Otlarga bo‘lgan samimiy ehtiromini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Gulliverning o‘z sayohatnomasini yozishdan ko‘zlagan asosiy maqsadi nima?",
+   "options": [
+    "A) Odamlarni halollik va kamolotga undash",
+    "B) O‘z nomini mashhur qilish",
+    "C) Katta boylik orttirish",
+    "D) Qirolga xushomad qilish"
+   ],
+   "answer": "A) Odamlarni halollik va kamolotga undash"
+  }
+ ]
+}

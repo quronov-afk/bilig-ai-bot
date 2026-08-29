@@ -1,0 +1,447 @@
+{
+ "title": "Qaysar bolaning hayoti",
+ "author": "Mirzakalon Ismoiliy",
+ "genre": "qissalar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "halollik",
+   "mas'uliyat",
+   "oila",
+   "tarbiya",
+   "do‘stlik"
+  ],
+  "theme": "Asar o‘zboshimchalik va intizomsizlik yomon oqibatlarga olib kelishini, halol mehnat hamda to‘g‘ri yo‘l insonni baxtga elatishini ko‘rsatadi.",
+  "summary": "To‘la — intizomsiz va sho‘x bola. U darslarni qoldiradi, uyda va maktabda aldaydi. Yomon ulfatlar ta'siriga tushib, ogʻir jinoyatlarga aralashib qoladi va tarbiya koloniyasiga tushadi. Koloniyada mehribon kapitan Omonov va halol mehnat tufayli o‘z xatolarini anglaydi. Amnistiya tufayli ozodlikka chiqib, to‘g‘ri hayot kechirishga ahd qiladi.",
+  "characters": "To‘la (bosh qahramon), Salima (singlisi), Karima opa (onasi), Rasul aka (otasi), Samad (do‘sti), Sodiq muallim (o‘qituvchisi), Kapitan Omonov (koloniya rahbari).",
+  "conclusion": "Kitob bolalarni yolg‘onchilik va intizomsizlikning achchiq oqibatlaridan ogohlantiradi. Kattalarning nasihatiga quloq tutish, mehnatsevarlik va to‘g‘ri do‘st tanlash ko‘nikmalarini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, tarbiyaviy",
+  "for_whom": "Sho‘x va intizomga rioya qilishda qiynaladigan, to‘g‘ri do‘st tutish hamda o‘z harakatlari uchun mas'uliyatni anglamoqchi bo‘lgan bolalarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sodiq muallim darsda qaysi o‘quvchining daftarlarini ko‘rib qoldi?",
+   "options": [
+    "A) To‘la Rasulovning",
+    "B) Samadning",
+    "C) Turg‘unsozning",
+    "D) Salimaning"
+   ],
+   "answer": "A) To‘la Rasulovning"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kitob sahifasida qanday kulgili surat solingan edi?",
+   "options": [
+    "A) Sirkdagi ayiq surati",
+    "B) Mushuk va kuchuklar surati",
+    "C) Dashtda chopayotgan ot surati",
+    "D) Quyosh va bulut surati"
+   ],
+   "answer": "B) Mushuk va kuchuklar surati"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karima opa To‘laga ko‘chadan nima olib kelishni buyurdi?",
+   "options": [
+    "A) Sut olib kelishni",
+    "B) Qatiq olib kelishni",
+    "C) Non olib kelishni",
+    "D) Go‘sht olib kelishni"
+   ],
+   "answer": "B) Qatiq olib kelishni"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘la nima uchun devoriy gazetani yirtib tashladi?",
+   "options": [
+    "A) Unda tanqid qilingani uchun",
+    "B) Tasodifan tegib ketgani uchun",
+    "C) O‘rtoqlari so‘ragani uchun",
+    "D) Rasm chizish uchun"
+   ],
+   "answer": "A) Unda tanqid qilingani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "To‘laning xatolari qaysi tartibda sodir bo‘ldi?",
+   "options": [
+    "A) Darsdan qochdi, gazetani yirtdi",
+    "B) Qatiq oldi, a'lochi bo‘ldi",
+    "C) Urushdi, keyin darsga shoshildi",
+    "D) Surat chizdi, uyda o‘tirdi"
+   ],
+   "answer": "A) Darsdan qochdi, gazetani yirtdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Salima nega akasining qiliqlaridan uncha xursand emas edi?",
+   "options": [
+    "A) Akasi a'lochi bo‘lgani uchun",
+    "B) Akasi intizomsizlik qilgani uchun",
+    "C) Akasi unga sovg‘a bermagani uchun",
+    "D) Akasi maktabga bormagani uchun"
+   ],
+   "answer": "B) Akasi intizomsizlik qilgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun otasi To‘laga tarsaki urdi?",
+   "options": [
+    "A) Darsdan kechikkani uchun",
+    "B) Yolg‘on gapirgani va aldagani uchun",
+    "C) Idishni sindirgani uchun",
+    "D) Ko‘chada o‘ynagani uchun"
+   ],
+   "answer": "B) Yolg‘on gapirgani va aldagani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "To‘laning ota-onasini aldashi to‘g‘ri ish bo‘ldimi?",
+   "options": [
+    "A) To‘g‘ri — jazodan qutuldi",
+    "B) Noto‘g‘ri — yolg‘onchilik yomon oqibat beradi",
+    "C) To‘g‘ri — singlisini asradi",
+    "D) Noto‘g‘ri — puli kamayib qoldi"
+   ],
+   "answer": "B) Noto‘g‘ri — yolg‘onchilik yomon oqibat beradi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif To‘laning bezbetligini tasvirlaganda nimani ko‘rsatmoqchi bo‘lgan?",
+   "options": [
+    "A) Uning jasoratli bola ekanini",
+    "B) Odabsizlikning insonni xunuk qilishini",
+    "C) Uning aqlli bola ekanini",
+    "D) O‘qituvchining qattiqqolligini"
+   ],
+   "answer": "B) Odabsizlikning insonni xunuk qilishini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Sinfga juda og‘ir jimlik cho‘kdi\" deya nimani bergan?",
+   "options": [
+    "A) Bolalarning qo‘rquv va xijolatini",
+    "B) Darsning juda zerikarli o‘tganini",
+    "C) Muallimning qichqirganini",
+    "D) Hamma uxlab qolganini"
+   ],
+   "answer": "A) Bolalarning qo‘rquv va xijolatini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘la va Samad Chirchiq to‘qayiga borish uchun qayerga kelishdi?",
+   "options": [
+    "A) Qo‘yliq markaziga",
+    "B) Chorsu bozoriga",
+    "C) Chilonzorga",
+    "D) Olay bozoriga"
+   ],
+   "answer": "A) Qo‘yliq markaziga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘la archa bayramidagi konsertda qanday she'r o‘qib berdi?",
+   "options": [
+    "A) \"Temirlar raqsi\" she'rini",
+    "B) \"Vatan\" she'rini",
+    "C) \"Bahor\" she'rini",
+    "D) \"Maktabim\" she'rini"
+   ],
+   "answer": "A) \"Temirlar raqsi\" she'rini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘la maktab gulzoriga kimning bog‘idan ko‘chatlar keltirdi?",
+   "options": [
+    "A) Tog‘asining bog‘idan",
+    "B) Qo‘shnisining bog‘idan",
+    "C) Bozor do‘konidan",
+    "D) Muallimning hovlisidan"
+   ],
+   "answer": "A) Tog‘asining bog‘idan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘la telefondan nimani o‘g‘irlab ketgan edi?",
+   "options": [
+    "A) Telefon trubkasini",
+    "B) Telefon simini",
+    "C) Telefon tugmachasini",
+    "D) Telefon aparatini"
+   ],
+   "answer": "A) Telefon trubkasini"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "To‘laning yaxshi tomonga o‘zgarishi qaysi hodisalardan keyin boshlandi?",
+   "options": [
+    "A) Samadning kasalligi va archa bayrami",
+    "B) Qo‘yliqqa borishi va urushishi",
+    "C) Darsdan qolishi va o‘g‘riligi",
+    "D) Telefon buzishi va qochishi"
+   ],
+   "answer": "A) Samadning kasalligi va archa bayrami"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "To‘la ko‘chat ekishda qanday bosqichlarni bajardi?",
+   "options": [
+    "A) Yerni tozaladi, chopdi, ko‘chat ekdi",
+    "B) Suv quydi, so‘ng yer kavladi",
+    "C) Ko‘chatni sotib oldi va sotdi",
+    "D) Shunchaki joyni tomosha qildi"
+   ],
+   "answer": "A) Yerni tozaladi, chopdi, ko‘chat ekdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun To‘la o‘g‘irlagan telefon trubkasini qaytarib olib keldi?",
+   "options": [
+    "A) Samadning daldasi va afsuslanishi sababli",
+    "B) Militsiya uyiga kelgani uchun",
+    "C) Trubka ishlamay qolgani uchun",
+    "D) Otasi buni buyurgani uchun"
+   ],
+   "answer": "A) Samadning daldasi va afsuslanishi sababli"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Samad nega kasalxonada og‘irlashib qoldi?",
+   "options": [
+    "A) Sovuqda o‘zboshimchalik bilan tashqariga chiqqani uchun",
+    "B) Dori ichishni xohlamagani uchun",
+    "C) To‘la bilan urushgani uchun",
+    "D) Yomon ovqat yegani uchun"
+   ],
+   "answer": "A) Sovuqda o‘zboshimchalik bilan tashqariga chiqqani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "To‘laning tajriba qilish uchun trubka o‘g‘irlashi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri — birovning narsasini olish jinoyat",
+    "B) To‘g‘ri — ilm uchun hamma narsa mumkin",
+    "C) To‘g‘ri — u tezda qaytardi",
+    "D) Noto‘g‘ri — trubka arzon narsa"
+   ],
+   "answer": "A) Noto‘g‘ri — birovning narsasini olish jinoyat"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "\"Bizning roman\" kitobi topshirilganda bolalarning quvonchi qanday tasvirlangan?",
+   "options": [
+    "A) Qozondagi bodroqlarga o‘xshatilgan",
+    "B) Muzlagan suvlarga o‘xshatilgan",
+    "C) Qorong‘i tunga o‘xshatilgan",
+    "D) Shiddatli shamolga o‘xshatilgan"
+   ],
+   "answer": "A) Qozondagi bodroqlarga o‘xshatilgan"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sud jarayonida Valixonni o‘ldirgan haqiqiy aybdor kim edi?",
+   "options": [
+    "A) To‘g‘on Matkarimov",
+    "B) To‘la Rasulov",
+    "C) Chikaldak",
+    "D) To‘xtasin"
+   ],
+   "answer": "A) To‘g‘on Matkarimov"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mehnat koloniyasi boshlig‘ining o‘rinbosari kim edi?",
+   "options": [
+    "A) Kapitan Tursunali Omonov",
+    "B) Sodiq Ismoilov",
+    "C) Rasul aka",
+    "D) O‘rayimjon"
+   ],
+   "answer": "A) Kapitan Tursunali Omonov"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Koloniyadagi muqova sexining boshlig‘i kim edi?",
+   "options": [
+    "A) O‘rayimjon",
+    "B) Chikaldak",
+    "C) To‘g‘on",
+    "D) Samad"
+   ],
+   "answer": "A) O‘rayimjon"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘la va boshqa o‘smirlar koloniyadan qanday ozod bo‘lishdi?",
+   "options": [
+    "A) Avfi umumiy (amnistiya) tufayli",
+    "B) Qochib ketishganlari tufayli",
+    "C) Jarima to‘laganlari tufayli",
+    "D) Muddatlari tugagani tufayli"
+   ],
+   "answer": "A) Avfi umumiy (amnistiya) tufayli"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "To‘laning koloniyadagi o‘zgarishlari ketma-ketligini aniqlang.",
+   "options": [
+    "A) Afsuslandi, mehnat qildi, to‘g‘rilandi",
+    "B) Urushdi, qochdi, qaytib keldi",
+    "C) Dangasalandi, yig‘ladi, uyga ketdi",
+    "D) Kasal bo‘ldi, so‘ng jazolandi"
+   ],
+   "answer": "A) Afsuslandi, mehnat qildi, to‘g‘rilandi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Chikaldak gospitalga To‘laning yoniga kelgan edi?",
+   "options": [
+    "A) Uni qo‘rqitib, og‘zini yopish uchun",
+    "B) Holidan xabar olgani uchun",
+    "C) Kechirim so‘rash uchun",
+    "D) Kitob berish uchun"
+   ],
+   "answer": "A) Uni qo‘rqitib, og‘zini yopish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kapitan Omonov nega To‘laga alohida mehr ko‘rsatdi?",
+   "options": [
+    "A) To‘laning samimiy tuzalishini ko‘rgani uchun",
+    "B) To‘laning qarindoshi bo‘lgani uchun",
+    "C) To‘la unga sovg‘a bergani uchun",
+    "D) To‘la qochmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) To‘laning samimiy tuzalishini ko‘rgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "To‘g‘onning aybni To‘laga ag‘darishga urinishi haqida nima deysiz?",
+   "options": [
+    "A) Bu pastkashlik va vijdonsizlikdir",
+    "B) Bu to‘g‘ri va aqlli ishdir",
+    "C) Bu jo‘n va hazil gapdir",
+    "D) Bu uning haqligini ko‘rsatadi"
+   ],
+   "answer": "A) Bu pastkashlik va vijdonsizlikdir"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "To‘laning koloniyadan chiqqach to‘g‘ri yo‘lga kirishi qanday baholanadi?",
+   "options": [
+    "A) O‘z xatosini anglagan mardlikdir",
+    "B) Qo‘rqoqlik va ojizlikdir",
+    "C) Majburiyatdan qilingan ishdir",
+    "D) Vaqtinchalik va bekorchi harakatdir"
+   ],
+   "answer": "A) O‘z xatosini anglagan mardlikdir"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif xotima qismida To‘laga qanday tilak bildiradi?",
+   "options": [
+    "A) Pok va halol yo‘li qutlug‘ bo‘lishini",
+    "B) Boy va mashhur bo‘lishini",
+    "C) Yana koloniyaga qaytishini",
+    "D) Chet elga ketishini"
+   ],
+   "answer": "A) Pok va halol yo‘li qutlug‘ bo‘lishini"
+  }
+ ]
+}

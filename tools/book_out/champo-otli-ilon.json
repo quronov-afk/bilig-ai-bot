@@ -1,0 +1,417 @@
+{
+ "title": "Champo otli ilon",
+ "author": "Erkin Malik",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12 yosh",
+  "topics": [
+   "tabiat",
+   "hayvonlar",
+   "mas'uliyat",
+   "oqibat",
+   "bolalik xotiralari"
+  ],
+  "theme": "Har bir jonzotga nisbatan rahm-shafqatli bo‘lish, o‘ylanmay qilingan harakatlarning ayanchli oqibatlaridan ogoh bo‘lish va tabiat bilan uyg‘un yashash.",
+  "summary": "Qissada adib o‘z hayoti va bog‘hovlisida yuz bergan voqealarni hikoya qiladi. Bolaligida ilon zahriga uchrab Mamariza tog‘a yordamida tuzalgani, xitoylik oshpaz boladan ilon taomini tatib ko‘rgani va bog‘ida Champo nomli ilon paydo bo‘lib, oxiri uni ketmon bilan o‘ldirishga majbur bo‘lganini eslaydi. Keyinchalik uyidagi sichqon va kalamushlar tashvishidan qutulish uchun kalamushlarga zahar beradi. Shu jarayonda unga cheksiz sodiq bo‘lgan Oqtosh itining jasoratlari (jin va bo‘rilardan muhofaza qilishi) va vafodorligi tasvirlanadi. Biroq adib qo‘ygan zaharni yegan kalamushni Oqtosh tutib yeydi va zahar suti orqali yangi tug‘ilgan 5 ta kuchukchasiga o‘tadi. Kuchukchalarining nobud bo‘lishiga chiday olmagan Oqtosh ham bolalari yonida vafot etadi. Qahramon o‘zining beparvoligi va noshukrligidan qattiq pushaymon bo‘ladi.",
+  "characters": "Muallif (hikoyachi, bog‘hovli egasi, jonivorlarga mehrli, ammo ba'zan mulohazasiz qaror chiqaruvchi inson), Mamariza tog‘a (donishmand qo‘shni, tabib sifatli domla), Champo (muallif bog‘ida uchratgan va keyinchalik o‘ldirgan chipor ilon), Oqtosh (muallifga sodiq, aqlli va jasur urg‘ochi it), Boymurod aka (shirinso‘z, samimiy va biroz vahimali podachi qo‘shni).",
+  "conclusion": "Bu asar bolaga har bir tirik jonzotga ma'suliyat bilan qarashni va o‘ylamasdan qilingan ishlar yomon oqibatlarga olib kelishini o‘rgatadi. Kitobxon sadoqat, rahm-shafqat, tabiatni asrash hamda kattalar o‘gitiga amal qilish kabi muhim insoniy qadriyatlarni anglab yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, ta'sirli",
+  "for_whom": "Hayvonlar va tabiat haqidagi hikoyalarga qiziqadigan, qahramonlarning kechinmalaridan saboq ola biladigan va jonivorlarga mehr-shafqatli bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mamariza tog‘a bolaning tanasidan zaharni qanday haydab chiqardi?",
+   "options": [
+    "A) Xivchin bilan urib terlatib",
+    "B) Issiq choy va dori berib",
+    "C) Buloq suviga bo‘ktirib"
+   ],
+   "answer": "A) Xivchin bilan urib terlatib"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xitoylik oshpaz bola ilonni qaysi idishda pishirdi?",
+   "options": [
+    "A) Mis qumg‘onda",
+    "B) Sopol qozonda",
+    "C) Katta cho‘yanda"
+   ],
+   "answer": "A) Mis qumg‘onda"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif bog‘da uchratgan ilk ilonni qayerga tashlab keldi?",
+   "options": [
+    "A) Soy bo‘yiga",
+    "B) Chuqur iniga",
+    "C) Qo‘shnining hovlisiga"
+   ],
+   "answer": "A) Soy bo‘yiga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif Champo ilonini oxiri qanday qurol bilan o‘ldirdi?",
+   "options": [
+    "A) Ketmon bilan",
+    "B) Yo‘g‘on kaltak bilan",
+    "C) O‘tkir pichoq bilan"
+   ],
+   "answer": "A) Ketmon bilan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Xitoylik oshpaz ilonli taomni tayyorlashda tartib bo‘yicha nima qildi?",
+   "options": [
+    "A) Ilonni mis qumg‘onga tiqdi",
+    "B) Guruchni qozonga qovurdi",
+    "C) Ilonni avval pichoqda pishirdi"
+   ],
+   "answer": "A) Ilonni mis qumg‘onga tiqdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif uyiga kelgan mehmonlarga ilonni nega Champo deb tanishtirdi?",
+   "options": [
+    "A) Mehmonlar qo‘rqmasdan xotirjam bo‘lishi uchun",
+    "B) Ilon haqiqatan o‘rgatilgani uchun",
+    "C) Ilon shunday ismga ega bo‘lgani uchun"
+   ],
+   "answer": "A) Mehmonlar qo‘rqmasdan xotirjam bo‘lishi uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif achchiq bodom mevalarini nega shoxlardan qoqib oldi?",
+   "options": [
+    "A) Kalamushni tomga chiqishga majburlash uchun",
+    "B) Bodomdan dori tayyorlash uchun",
+    "C) Qushlar yeb qo‘ymasligi uchun"
+   ],
+   "answer": "A) Kalamushni tomga chiqishga majburlash uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning Champoni o‘ldirgach o‘zini toshbag‘ir his qilishi to‘g‘rimi?",
+   "options": [
+    "A) Ha, beozor jonivorni o‘ldirgani uchun",
+    "B) Yo‘q, ilon darrov hujum qilgandi",
+    "C) Yo‘q, uyga o‘g‘ri kirgandi"
+   ],
+   "answer": "A) Ha, beozor jonivorni o‘ldirgani uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"ilon zaharli edi, boshidagi qo‘shuv alomati bildirardi\" tasvirida nimaga urg‘u bergan?",
+   "options": [
+    "A) Ilonning xavfli belgisini aniq ko‘rsatishga",
+    "B) Ilonning juda chiroyliligiga",
+    "C) Pichanlar ko‘pligiga"
+   ],
+   "answer": "A) Ilonning xavfli belgisini aniq ko‘rsatishga"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning \"o‘z navbatdagi nonushtadan keyin lohas sezdim\" deyishi nimani beradi?",
+   "options": [
+    "A) Voqea rivojidagi xavfni his qildirishni",
+    "B) Ovqat juda mazali chiqqanini",
+    "C) Ertalab havo issiq bo‘lganini"
+   ],
+   "answer": "A) Voqea rivojidagi xavfni his qildirishni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif bog‘hovlini kimdan sotib olgan edi?",
+   "options": [
+    "A) Aziz Abdurazzoqdan",
+    "B) Boymurod akadan",
+    "C) Yo‘ldosh Eshbekdan"
+   ],
+   "answer": "A) Aziz Abdurazzoqdan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chinor choyxonasi oldida Yo‘ldosh Eshbek kim bilan urushib qoldi?",
+   "options": [
+    "A) Mast bolalar bilan",
+    "B) Qishloq qorovuli bilan",
+    "C) Bekatdagi haydovchilar bilan"
+   ],
+   "answer": "A) Mast bolalar bilan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ko‘ktoy it sariyog‘ni qanday idishdan yalab yeyotgan edi?",
+   "options": [
+    "A) Shisha bankadan",
+    "B) Sopol kosadan",
+    "C) Yog‘och chelakdan"
+   ],
+   "answer": "A) Shisha bankadan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karim aka polizda qaysi qizni yaxshi ko‘rardi?",
+   "options": [
+    "A) Gulsum opani",
+    "B) O‘g‘iloy opani",
+    "C) Popoch qizni"
+   ],
+   "answer": "A) Gulsum opani"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Boymurod aka urg‘ochi it va erkak it haqida qanday fikr bildirdi?",
+   "options": [
+    "A) Urg‘ochisi uyparast, erkagi sang‘ib ketadi",
+    "B) Erkagi uyparast, urg‘ochisi sang‘iydi",
+    "C) Ikkalasi ham uydan ketmaydi"
+   ],
+   "answer": "A) Urg‘ochisi uyparast, erkagi sang‘ib ketadi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif yarim kechasi Oqtosh tinimsiz akillaganda uni qanday chaqirdi?",
+   "options": [
+    "A) Hushtak chalib chaqirdi",
+    "B) Ismini baland aytib chaqirdi",
+    "C) Qattiq qarsak chalib chaqirdi"
+   ],
+   "answer": "A) Hushtak chalib chaqirdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ammasi Ko‘ktoy teggan bankani nega kosov bilan sindirib tashladi?",
+   "options": [
+    "A) Harom bo‘lgani va qatron qilib bo‘lmasligi uchun",
+    "B) Banka yorilib bo‘lingani uchun",
+    "C) Ko‘ktoy yana yemasligi uchun"
+   ],
+   "answer": "A) Harom bo‘lgani va qatron qilib bo‘lmasligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Karim aka nega Gulsumning uyiga sovchi qo‘ya olmas edi?",
+   "options": [
+    "A) O‘zini surgun qilingan kelgindi deb bilgani uchun",
+    "B) Gulsum uni umuman yoqtirmagani uchun",
+    "C) Uylanishga puli yetmagani uchun"
+   ],
+   "answer": "A) O‘zini surgun qilingan kelgindi deb bilgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ammaning Ko‘ktoyni urgani qo‘ymay \"nasibasi ekan\" deyishi to‘g‘rimi?",
+   "options": [
+    "A) Ha, sabr va kechirimlilik ko‘rsatgani uchun",
+    "B) Yo‘q, itni qattiq kaltaklash kerak edi",
+    "C) Yo‘q, sariyog‘ni darrov tortib olish kerak edi"
+   ],
+   "answer": "A) Ha, sabr va kechirimlilik ko‘rsatgani uchun"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "\"Olovni ko‘rish bilan qo‘rquvni unutdim\" jumlasida qanday tuyg‘u tasvirlangan?",
+   "options": [
+    "A) Yorug‘lik inson ko‘ngliga xotirjamlik berishi",
+    "B) Olov juda issiq ekani",
+    "C) Qorong‘ida yurish yoqimli ekani"
+   ],
+   "answer": "A) Yorug‘lik inson ko‘ngliga xotirjamlik berishi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif sandalli uy uchun tut va o‘rik o‘tinini nega aralashtirib yoqdi?",
+   "options": [
+    "A) O‘rik asabga, tut quvvatga davoligi uchun",
+    "B) Faqat tut o‘tini tez o‘chgani uchun",
+    "C) O‘rik o‘tini umuman yonmagani uchun"
+   ],
+   "answer": "A) O‘rik asabga, tut quvvatga davoligi uchun"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Boymurod aka o‘tin o‘g‘risini qanday tutib olgan edi?",
+   "options": [
+    "A) Boloxonadan durbin bilan qarab",
+    "B) Yonida poylab turib",
+    "C) Jinlardan xabar topib"
+   ],
+   "answer": "A) Boloxonadan durbin bilan qarab"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qishda bog‘ga kelgan ikki jonzot aslida nima edi?",
+   "options": [
+    "A) Yirtqich bo‘rilar edi",
+    "B) Qo‘shnining ovcharka itlari edi",
+    "C) Oqtoshning sheriklari edi"
+   ],
+   "answer": "A) Yirtqich bo‘rilar edi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oqtoshning 5 ta kuchukchasi nega nobud bo‘ldi?",
+   "options": [
+    "A) Zaharlangan kalamush sutga o‘tgani uchun",
+    "B) Qishda sovuqda muzlab qolgani uchun",
+    "C) Daydi itlar talab ketgani uchun"
+   ],
+   "answer": "A) Zaharlangan kalamush sutga o‘tgani uchun"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oqtosh zaif tug‘ilgan ikkita kuchukchasini qanday asrab qoldi?",
+   "options": [
+    "A) Pana joyda alohida emizib boqdi",
+    "B) Ularni darrov boshqalarga berib yubordi",
+    "C) Ularni uy ichiga olib kirdi"
+   ],
+   "answer": "A) Pana joyda alohida emizib boqdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oqtosh bo‘rilar kelganda nega muallifning yo‘lini to‘sib sakradi?",
+   "options": [
+    "A) Muallifni xatardan va bo‘rilardan his qilish uchun",
+    "B) O‘zi ovqat so‘rab erkalangani uchun",
+    "C) Tashqarida uxlashni xohlagani uchun"
+   ],
+   "answer": "A) Muallifni xatardan va bo‘rilardan his qilish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif Oqtosh o‘lgach nega chuqur qazib uni bolalari yoniga ko‘mdi?",
+   "options": [
+    "A) Vafodor itga nisbatan hurmat va pushaymonlikdan",
+    "B) Shunchaki hovli tozalanib qolishi uchun",
+    "C) Boymurod aka shunday buyurgani uchun"
+   ],
+   "answer": "A) Vafodor itga nisbatan hurmat va pushaymonlikdan"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning zaharlangan kalamush oqibatini o‘ylamay dori qo‘yishi to‘g‘rimi?",
+   "options": [
+    "A) Yo‘q, oqibatda beozor kuchukchalar nobud bo‘ldi",
+    "B) Ha, kalamushlardan qutulishning boshqa yo‘li yo‘q",
+    "C) Ha, itlar baribir dori yemaydi"
+   ],
+   "answer": "A) Yo‘q, oqibatda beozor kuchukchalar nobud bo‘ldi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Oqtoshning zaif bolalarini alohida ajratib emizishida qanday sifat ko‘rinadi?",
+   "options": [
+    "A) Onalik mehri va g‘amxo‘rlik ko‘rinadi",
+    "B) Kuchli bolalarini yomon ko‘rishi ko‘rinadi",
+    "C) Faqat ovqat ketidan chopishi ko‘rinadi"
+   ],
+   "answer": "A) Onalik mehri va g‘amxo‘rlik ko‘rinadi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Alloh asrasa bandasini shunaqa xotirjam qilib qo‘yadi\" deb nimani uqtirmoqchi?",
+   "options": [
+    "A) Yaratganning hifz-u himoyasi va qudratini",
+    "B) Odam doim beparvo yurishi kerakligini",
+    "C) Bo‘rilardan qo‘rqish shart emasligini"
+   ],
+   "answer": "A) Yaratganning hifz-u himoyasi va qudratini"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "title": "Birinchi muallim",
+ "author": "Chingiz Aytmatov",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "ustozga hurmat",
+   "ilm-fan",
+   "sabr-toqat",
+   "jasorat",
+   "mehribonlik",
+   "xalq tarixi"
+  ],
+  "theme": "Ilm berish va insoniylik yo‘lidagi xolis fidoiylik hech qachon unutilmaydi; ustozning ezgu amali inson taqdirini tubdan o‘zgartirishi mumkin.",
+  "summary": "Qissa akademik Oltinoy Sulaymonovaning xotiralari orqali bayon etiladi. 1920-yillarda yetim qiz Oltinoy ovulga kelgan savodsizroq, lekin g‘ayratli komsomol Duyshen ochgan maktabda o‘qiydi. Duyshen qiyinchiliklarga qaramay bolalarga bilim beradi va ularni sovuq hamda tazyiqlardan asraydi. Oltinoyni zolim amakisi va kelinoyisi zo‘rlik bilan boyga xotinlikka berib yuborishganda, Duyshen uni qutqarib, Toshkentga o‘qishga yuboradi. Yillar o‘tib Oltinoy mashhur akademik bo‘ladi. U o‘z muvaffaqiyatlarida birinchi ustozi Duyshenning beqiyos xizmati borligini el-yurt oldida e’tirof etadi.",
+  "characters": "Duyshen — fidoyi muallim, qiyinchiliklarga qaramay maktab ochib, Oltinoyning hayotini o‘zgartirgan inson; Oltinoy — yetim qiz, Duyshenning birinchi shogirdi, keyinchalik mashhur akademik; Qartangboy va Sayqal buvi — Oltinoyga g‘amxo‘rlik qilgan mehribon qariyalar; Amakisi va kelinoyisi — Oltinoyga zolimlik qilgan qarindoshlar.",
+  "conclusion": "Bu kitob bolada ustoz va murabbiylarga nisbatan chuqur hurmat, bilim olishga bo‘lgan kuchli ishtiyoq hamda sabr-toqat tuyg‘ularini shakllantiradi. Qiyinchiliklar qarshisida taslim bo‘lmaslik va insoniy qadr-qimmatni saqlashni o‘rgatadi. Farzandingizga bugungi tinch va bilim olish imkoniyati bor kunlarning qadriga yetishni anglatadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tarixiy va hayotiy voqealarga qiziqadigan, ustoz-shogird munosabatlari va bilim olishning qadri haqida o‘ylaydigan, ta'sirchan va mulohazali bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Duyshen muallim o‘z shogirdlariga bilim berish uchun har qanday qiyinchilik va masxaralashlarga sabr-toqat bilan bardosh berdi. Sening hayotingda ham senga to‘g‘ri yo‘l ko‘rsatgan yoki ilm o‘rgatgan qaysi ustozingni alohida hurmat qilasan va nega? Uning qaysi fazilati senga eng ko‘p yoqadi?"
+}

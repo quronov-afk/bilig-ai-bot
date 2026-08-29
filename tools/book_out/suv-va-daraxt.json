@@ -1,0 +1,28 @@
+{
+ "title": "Suv va daraxt",
+ "author": "Zamira Ibrohimova",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "6-8 yosh (sodda ertak shaklidagi majoziy va tarbiyaviy hikoya)",
+  "topics": [
+   "kamtarlik",
+   "do‘stlik",
+   "o‘zaro yordam",
+   "kibr oqibati",
+   "tabiat"
+  ],
+  "theme": "Manmanlik va kibr insonni halokatga yetaklaydi, hayotiy kuch va muvaffaqiyat esa o‘zaro hamkorlik hamda bir-birini qadrlashdadir.",
+  "summary": "Yonma-yon o‘sgan Daraxt va Buloq vaqt o‘tib ulg‘ayadi. Yo‘lovchilar Daraxtning soyasini maqtashgach, u kibrga berilib, Buloqni mensimay qo‘yadi va o‘zini hayot manbai deb biladi. Xafa bo‘lgan Buloq oqimini o‘zgartiradi. Suvsiz qolgan Daraxt quriy boshlaydi va o‘z xatosini, tiriklik kuchi hamkorlikda ekanini tushunib yetadi. Shunda Buloq yana avvalgi o‘zaniga qaytadi va Daraxtni qutqarib qoladi.",
+  "characters": "Daraxt — kibr va manmanlikka berilib, do‘stining qadrini unutgan, ammo keyinchalik xatosini anglab yetgan qahramon; Buloq — bag‘rikeng, hayot baxsh etuvchi, ammo o‘z qadr-qimmatini biladigan sabrli manba.",
+  "conclusion": "Bu ertak bolani kibr va manmanlikdan yiroq bo‘lishga, atrofdagilar hamda do‘stlarning mehnati va yordamini qadrlashga o‘rgatadi. Bola har bir muvaffaqiyat ortida boshqalarning ham hissasi borligini, kamtarlik va ahillikda baraka mavjudligini anglab yetadi.",
+  "difficulty": "oson",
+  "mood": "tarbiyaviy, o‘ylantiruvchi",
+  "for_whom": "Kibrning oqibatlarini tushunmoqchi bo‘lgan, do‘stlik va o‘zaro yordam haqida ibratli ertaklarni yaxshi ko‘radigan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Daraxt o‘zini Buloqdan ustun deb o‘ylab kibrlanganda suvsiz qolib quriy boshladi. Sen o‘z hayotingda do‘stlaring yoki yaqinlaringning yordami qanchalik muhimligini qachon his qilgansan? Nima uchun har doim kamtar bo‘lish va atrofdagilarning mehnati hamda yordamini qadrlash kerak deb o‘ylaysan?"
+}

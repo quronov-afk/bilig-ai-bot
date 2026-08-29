@@ -1,0 +1,28 @@
+{
+ "title": "Qurbaqaning hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9 yosh. Kichik yoshli kitobxonlar uchun sodda, samimiy va sho‘x tilda yozilgan hikoya.",
+  "topics": [
+   "tabiat",
+   "ozodlik",
+   "salomatlik",
+   "ehtiyotkorlik",
+   "foydali maslahat"
+  ],
+  "theme": "Hikoyaning bosh g‘oyasi — ehtiyotkor bo‘lish, ovqatlanish odobiga rioya qilish hamda ozodlik va halol mehnatning tayyor ne’matdan ko‘ra afzalroq ekanini ko‘rsatishdir.",
+  "summary": "Vaqvaqato‘ra laqabli quvnoq qurbaqa o‘z hayotidan kulgili va saboq beruvchi voqeani so‘zlaydi. U bir kuni uyqusirab yurib, pashsha o‘rniga arini yutib yuboradi va oshqozoni og‘rib, rosa azob chekadi. Keyin uni qafasga solmoqchi bo‘lgan boladan suvga qochib qutuladi. Qurbaqa qafasdagi tayyor ovqatdan ko‘ra erkinlikda yurish afzalligini ta’kidlaydi. Yakunda u kitobxonga chala uyg‘ongan holda ovqat yemaslik haqida samimiy maslahat beradi.",
+  "characters": "Vaqvaqato‘ra — sho‘x va mehmondo‘st qurbaqa, o‘z xatolaridan saboq chiqarib, bolalarga maslahat beradi. Sariqsoch bola — sayroqi qushlarni qafasda boqadigan bolakay.",
+  "conclusion": "Bu hikoya bolaga ehtiyotkorlik va to‘g‘ri ovqatlanish odobini o‘rgatadi. Shuningdek, birovning qafasidagi tayyor ne’matdan ko‘ra erkinlik va o‘z mehnati bilan yashash qadrliroq ekanini tushuntiradi. Bola o‘zgalar tajribasidan saboq chiqarish hamda har bir ishni diqqat bilan qilish ko‘nikmasini oladi.",
+  "difficulty": "oson",
+  "mood": "kulgili, sho‘x, samimiy",
+  "for_whom": "Hayvonlar haqidagi shirin va kulgili hikoyalarni yaxshi ko‘radigan, qiziquvchan hamda o‘zgalar maslahatiga quloq soladigan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Qurbaqa uyqusirab arini yutib yuborgani uchun qiynalib qoldi va senga ham chala uyg‘onib ovqat yemaslikni maslahat berdi. Sen qachondir shoshqaloqlik yoki ehtiyotsizlik qilib biror noqulay ahvolga tushganmisan? O‘sha vaziyatdan qanday saboq olgansan?"
+}

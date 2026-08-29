@@ -1,0 +1,28 @@
+{
+ "title": "Olmaxonning xotirasi",
+ "author": "Mixail Prishvin",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9 yosh (tarjima asari bo‘lgani va kuzatuvchanlikni talab qilgani uchun)",
+  "topics": [
+   "tabiat",
+   "olmaxon",
+   "xotira",
+   "kuzatuvchanlik",
+   "hayvonlar dunyosi"
+  ],
+  "theme": "Muallif tabiatning mukammalligi, olmaxonning favqulodda xotirasi va aniq hisob-kitob qilish qobiliyatiga tasanno aytadi hamda insonni tabiatni kuzatishga chorlaydi.",
+  "summary": "Hikoyada muallif qishki o‘rmonda hayvonlarning izlarini kuzatadi. U olmaxonning qalin qor va muz tagidan kuzda yashirib qo‘ygan yong‘oqlarini aniq topib yeganini ko‘radi. Olmaxon ketma-ket uch marta aniq masofani saqlagan holda yerni kavlab, o‘z xazinasini olgan. Muallif olmaxon yong‘oqlarni hidi bo‘yicha emas, balki aniq xotirasi va ko‘z bilan hisoblash qobiliyati orqali topganiga hayratlanadi va uning zehniga havas qiladi.",
+  "characters": "Muallif (tabiat shaydosi va kuzatuvchi hikoyachi), Olmaxon (asarda izlari va uddaburonligi orqali namoyon bo‘ladigan zukko jonzot).",
+  "conclusion": "Ushbu hikoya bolaga tabiat mo‘jizalariga e'tiborli bo‘lishni va kuzatuvchanlikni o‘rgatadi. Bola olmaxon misolida mehnatsevarlik, kelajakni o‘ylab g‘amxo‘rlik qilish va xotirani charxlash muhimligini anglaydi. Shuningdek, atrofdagi olamni kuzatish orqali fikrlash ko‘nikmasi shakllanadi.",
+  "difficulty": "oson",
+  "mood": "maroqli, o‘ylantiruvchi",
+  "for_whom": "Tabiatni va hayvonlarni yaxshi ko‘radigan, atrofdagi voqealarga qiziquvchan va kuzatuvchan bolalar uchun mos."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Olmaxon qahraton qishda och qolmaslik uchun kuzda yong‘oqlarni yashirib, ularning joyini aniq eslab qolgani seni hayratlantirdimi? Sen ham muhim narsalarni yoki darslaringni unutmaslik uchun nima qilasan? Olmaxonning bu xislatidan o‘zing uchun qanday foydali saboq olding?"
+}

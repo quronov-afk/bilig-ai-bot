@@ -1,0 +1,28 @@
+{
+ "title": "Tulkichaning hikoyasi",
+ "author": "Anvar Obidjon",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9 yosh",
+  "topics": [
+   "sabr-toqat",
+   "ona maslahati",
+   "ozodlik",
+   "aqllilik",
+   "nafsni tiyish"
+  ],
+  "theme": "Qiyin vaziyatda sabr-toqat ko‘rsatish, nafsni tiya bilish va kattalarning maslahatiga kirish har qanday kulfatdan qutulishga yordam beradi.",
+  "summary": "Tulkicha va uning onasi tovuqxonada ushlanib, zanjirga solinadi. Tulkicha ochlikdan qiynalib ovqatga intilganda, onasi uni to‘xtatib, ozodlik uchun sabr qilishni va nafsni tiyishni uqtiradi. Ular kunduzi o‘zini chalajon ko‘rsatib, faqat tunda suv va baqalardan ozuqalanadi. Beshinchi kuni ikkalasi o‘zini o‘likka soladi. Kampir ularni o‘ldi deb o‘ylab, zanjirdan bo‘shatadi. Fursat poylab, ona-bola tovuqni olib, ozodlikka qochib qutulishadi.",
+  "characters": "Tulkicha — hikoya qiluvchi, nafsini tiyishni va sabr qilishni o‘rganayotgan yosh tulki. Ona tulki — tadbirkor, sabrli va bolasi uchun qayg‘uradigan oqila ona. Qorovul chol va kampir — tulkilarni tutib, zanjirlab qo‘ygan xonadon egalari.",
+  "conclusion": "Bu hikoya bolaga qiyinchilik paytida shoshqaloqlik qilmay, sabrli bo‘lishni va nafsini tiyishni o‘rgatadi. Ona maslahati va aql-idrok bilan harakat qilish har qanday murakkab vaziyatdan chiqishga yordam berishini ko‘rsatadi. Bola ozodlik va sabr-toqatning naqadar muhimligini anglab yetadi.",
+  "difficulty": "oson",
+  "mood": "qiziqarli, o‘ylantiruvchi",
+  "for_whom": "Hayvonlar haqida qiziqarli hikoyalarni xush ko‘radigan, sabr-toqat va aqllilik haqida saboq olmoqchi bo‘lgan bolalar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Ona tulki zanjirga solinganida shoshqaloqlik qilmadi, bolasiga nafsni tiyish va sabr qilishni uqtirdi. Sen o‘z hayotingda kattalarning maslahatiga kirib, sabr qilishing natijasida yaxshi natijaga erishganingni eslay olasanmi? Ona tulkining sabr-toqati senga qanday saboq berdi?"
+}

@@ -19,6 +19,7 @@ import json
 import time
 import hmac
 import hashlib
+import gzip
 import asyncio
 import threading
 import traceback
@@ -34,7 +35,7 @@ from database import (
     conn, cursor, get_parent_id, update_streak,
     calculate_and_update_rank, get_child_total_pages,
     get_child_passport_data, generate_admin_stats_text,
-    generate_progress_bar, get_badges
+    generate_progress_bar, get_badges, award_badge
 )
 import ai_service
 import badges_engine
@@ -46,7 +47,7 @@ import badges_engine
 # qayta yozmaslik uchun shu yerda, xavfsiz tarzda (agar ustun
 # allaqachon mavjud bo‘lsa xatoni e'tiborsiz qoldirib) qo‘shiladi.
 # ------------------------------------------------------------
-for _col_sql in (
+_COLUMN_MIGRATIONS = (
     "ALTER TABLE Users ADD COLUMN avatar_id TEXT DEFAULT 'fox'",
     "ALTER TABLE Users ADD COLUMN profile_done INTEGER DEFAULT 0",
     # Ovozli xulosa uchun AI bergan Bilig bahosi (bosh sahifada ko‘rsatiladi)
@@ -111,12 +112,31 @@ for _col_sql in (
     # Ota-ona ruxsat bersagina bola Biligning so‘mdagi qiymatini ko‘radi.
     # Sukut bo‘yicha o‘chiq: o‘qish «pul ishlash»ga aylanib qolmasin.
     "ALTER TABLE Users ADD COLUMN show_som INTEGER DEFAULT 0",
-):
-    try:
-        cursor.execute(_col_sql)
-        conn.commit()
-    except Exception:
-        pass
+    # Xabar KIMGA atalgan. Ilgari lenta faqat ota-onada bor edi, shuning
+    # uchun qabul qiluvchi har doim `parent_id` bo‘lardi. Endi bolada ham
+    # lenta bor — eski yozuvlarda bu ustun bo‘sh, o‘shanda `parent_id` olinadi.
+    "ALTER TABLE Notifications ADD COLUMN to_user INTEGER",
+)
+
+
+def _apply_column_migrations():
+    """Yetishmayotgan ustunlarni qo‘shadi. Mavjud bo‘lsa — jim o‘tadi.
+
+    IKKI MARTA chaqiriladi: shu yerda va jadvallar yaratilgandan KEYIN.
+    Sabab: baza mutlaqo yangi bo‘lsa (masalan yangi serverda birinchi
+    ishga tushganda), Book_Base va Test_Bank jadvallari hali mavjud
+    emas — ularga tegishli buyruqlar shunchaki yo‘qolib ketardi va
+    ilova server ikkinchi marta qayta ishga tushgunicha nosoz turardi.
+    """
+    for _col_sql in _COLUMN_MIGRATIONS:
+        try:
+            cursor.execute(_col_sql)
+            conn.commit()
+        except Exception:
+            pass
+
+
+_apply_column_migrations()
 
 # ------------------------------------------------------------
 # HAMYON: xaridlar tarixi va Bilig hisob daftari
@@ -152,6 +172,22 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS Notifications (
     ref_id     INTEGER,
     created_at TEXT,
     read_at    TEXT
+)""")
+# Kechki suhbat tekshiruvi. AI tayyorlagan suhbat mavzusi bo‘yicha ota-ona
+# uchta javobdan birini tanlaydi; «a'lo javob berdi» deyilsa bolaga
+# «Oila iftixori» nishoni beriladi. `child_answer` ustuni ishlatilmaydi —
+# ega ikki tomon tasdig‘i shart emas dedi (2026-08-29).
+cursor.execute("""CREATE TABLE IF NOT EXISTS Talk_Checks (
+    check_id      INTEGER PRIMARY KEY AUTOINCREMENT,
+    child_id      INTEGER,
+    parent_id     INTEGER,
+    book_id       INTEGER,
+    topic         TEXT,
+    parent_answer TEXT,
+    child_answer  TEXT,
+    created_at    TEXT,
+    parent_at     TEXT,
+    child_at      TEXT
 )""")
 cursor.execute("""CREATE TABLE IF NOT EXISTS Coin_Ledger (
     entry_id   INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -405,6 +441,10 @@ for _tbl_sql in (
         conn.commit()
     except Exception:
         pass
+
+# Jadvallar endi aniq mavjud — yuqoridagi ustun qo‘shishlarni qaytaramiz.
+# Yangi bazada birinchi urinishda ular o‘tmagan edi.
+_apply_column_migrations()
 
 # ------------------------------------------------------------
 # FOYDALANUVCHI YUKLAGAN RASMLAR (avatar va kitob muqovasi)
@@ -862,6 +902,151 @@ def get_book_base(title, author):
 
 
 # ==========================================================
+# TAYYOR KITOB BAZASI — «books_seed.json.gz»
+# ----------------------------------------------------------
+# Yuzlab kitobning pasporti va test savollari oldindan tayyorlangan
+# (`tools/build_book_seed.py` bilan yig‘ilgan). Server ishga tushganda
+# ular bazaga bir marta ko‘chiriladi. Natijada ota-ona katalogdan
+# kitob tanlashi bilan mazmun ham, test ham TAYYOR turadi — AI umuman
+# chaqirilmaydi.
+#
+# QOIDALAR:
+#  1. Bo‘sh joyni to‘ldiradi, mavjudini BUZMAYDI. Bazada allaqachon
+#     yozuv bo‘lsa — tegilmaydi. Yagona istisno: o‘qish davomida
+#     yig‘ilgan sahifa yozuvlaridan tuzilgan test (`from_notes=1`) —
+#     u kitobning hammasini qamramaydi, shuning uchun to‘liq test
+#     bilan almashtiriladi.
+#  2. Qayta-qayta ishga tushsa ham natija bir xil.
+#  3. Fayl o‘zgarmagan bo‘lsa umuman ochilmaydi (`Seed_State` da
+#     faylning barmoq izi saqlanadi) — server sekin ishga tushmasin.
+# ==========================================================
+BOOK_SEED_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                              "books_seed.json.gz")
+
+
+def _import_book_seed():
+    """Tayyor kitob bazasini bir marta ko‘chiradi. Xato bo‘lsa ham
+    server ishga tushaveradi — bu qo‘shimcha imkoniyat, shart emas."""
+    if not os.path.exists(BOOK_SEED_FILE):
+        return
+
+    try:
+        with open(BOOK_SEED_FILE, "rb") as f:
+            blob = f.read()
+        stamp = hashlib.sha256(blob).hexdigest()[:16]
+    except Exception:
+        return
+
+    with db_lock:
+        try:
+            cursor.execute(
+                """CREATE TABLE IF NOT EXISTS Seed_State (
+                    name TEXT PRIMARY KEY,
+                    stamp TEXT,
+                    updated_at TEXT
+                )""")
+            conn.commit()
+            cursor.execute("SELECT stamp FROM Seed_State WHERE name = 'books'")
+            row = cursor.fetchone()
+        except Exception:
+            return
+        if row and row[0] == stamp:
+            return  # bu fayl allaqachon ko‘chirilgan
+
+        try:
+            data = json.loads(gzip.decompress(blob).decode("utf-8"))
+            books = data.get("books") or []
+        except Exception:
+            traceback.print_exc()
+            return
+
+        # Bazada nimalar borligini BITTA so‘rovda olamiz. Diqqat: `cursor`
+        # yagona obyekt — halqa ichida so‘rov yuborsak, kutib turgan
+        # natija o‘chib ketardi. Shuning uchun avval hammasini o‘qib olamiz.
+        try:
+            cursor.execute("SELECT book_key FROM Book_Base")
+            have_base = {r[0] for r in cursor.fetchall()}
+            cursor.execute("SELECT book_key, COALESCE(from_notes, 0) FROM Test_Bank")
+            have_test = {r[0]: r[1] for r in cursor.fetchall()}
+        except Exception:
+            traceback.print_exc()
+            return
+
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        added_base = added_test = 0
+        for b in books:
+            key = b.get("key")
+            if not key:
+                continue
+            p = b.get("passport") or {}
+
+            if key not in have_base and (p.get("summary") or "").strip():
+                try:
+                    cursor.execute(
+                        "INSERT INTO Book_Base (book_key, title, author, summary, "
+                        "characters, theme, conclusion, age_hint, age_band, topics, "
+                        "for_whom, difficulty, mood, source, short_form, "
+                        "use_count, created_at, updated_at) "
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'seed', ?, 0, ?, ?)",
+                        (key, b.get("title"), b.get("author"),
+                         (p.get("summary") or "").strip(),
+                         (p.get("characters") or "").strip(),
+                         (p.get("theme") or "").strip(),
+                         (p.get("conclusion") or "").strip(),
+                         (p.get("age_hint") or "").strip(),
+                         (p.get("age_band") or "").strip(),
+                         json.dumps(p.get("topics") or [], ensure_ascii=False),
+                         (p.get("for_whom") or "").strip(),
+                         (p.get("difficulty") or "").strip(),
+                         (p.get("mood") or "").strip(),
+                         int(b.get("short_form") or 0), now, now))
+                    added_base += 1
+                except Exception:
+                    traceback.print_exc()
+
+            questions = b.get("questions") or []
+            # Bazada test bor va u to‘liq bo‘lsa — tegmaymiz. Faqat
+            # sahifa yozuvlaridan tuzilgan («from_notes») testni
+            # to‘liq test bilan almashtiramiz.
+            if questions and (key not in have_test or have_test.get(key)):
+                try:
+                    cursor.execute(
+                        "INSERT OR REPLACE INTO Test_Bank (book_key, title, author, "
+                        "questions_json, use_count, created_at, from_notes) "
+                        "VALUES (?, ?, ?, ?, "
+                        "COALESCE((SELECT use_count FROM Test_Bank WHERE book_key = ?), 0), "
+                        "?, 0)",
+                        (key, b.get("title"), b.get("author"),
+                         json.dumps(questions, ensure_ascii=False), key, now))
+                    added_test += 1
+                except Exception:
+                    traceback.print_exc()
+
+        try:
+            cursor.execute(
+                "INSERT OR REPLACE INTO Seed_State (name, stamp, updated_at) "
+                "VALUES ('books', ?, ?)", (stamp, now))
+            conn.commit()
+        except Exception:
+            traceback.print_exc()
+            return
+
+    if added_base or added_test:
+        try:
+            ai_service.log_line(
+                "[kitob_bazasi] tayyor bazadan %d ta pasport, %d ta test qo‘shildi"
+                % (added_base, added_test))
+        except Exception:
+            pass
+
+
+try:
+    _import_book_seed()
+except Exception:
+    traceback.print_exc()
+
+
+# ==========================================================
 # «YASHIRIN» TEST TUZISH — o‘qish davomida o‘z-o‘zidan
 # ----------------------------------------------------------
 # Bola sahifani rasmga olganda AI uni baribir o‘qiydi. Endi biz o‘sha
@@ -1130,19 +1315,26 @@ def notify_parent(child_id: int, text: str, feed=None):
         pass
 
 
-def _feed(parent_id, child_id, kind, title, body="", ref_id=None):
-    """Ota-ona bosh sahifasidagi xabarlar lentasiga bitta yozuv qo‘shadi.
+def _feed(parent_id, child_id, kind, title, body="", ref_id=None, to_child=False, at=None):
+    """Bosh sahifadagi xabarlar lentasiga bitta yozuv qo‘shadi.
 
     Matn ilova uchun yoziladi: emoji va HTML teglarsiz, qisqa. Telegramdagi
     xabar boshqacha bo‘lishi mumkin — u yerda emoji o‘rinli.
+
+    `to_child=True` — xabar bolaning o‘ziga atalgan (sovg‘a berildi,
+    yangi kitob qo‘yildi kabi).
+
+    `at` — xabar KEYINROQ ko‘rinsin (ISO vaqt). Kechki suhbat savoli shu
+    yo‘l bilan kechqurun chiqadi: yozuv darrov yaratiladi, lekin lentada
+    vaqti kelgunicha ko‘rinmaydi.
     """
     try:
         with db_lock:
             cursor.execute(
                 "INSERT INTO Notifications (parent_id, child_id, kind, title, body, "
-                "ref_id, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                "ref_id, to_user, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
                 (parent_id, child_id, kind, title, body or "", ref_id,
-                 datetime.now().isoformat()))
+                 child_id if to_child else parent_id, at or datetime.now().isoformat()))
             conn.commit()
     except Exception:
         pass
@@ -1357,7 +1549,7 @@ def get_reading_calendar(child_id: int, year: int = None, month: int = None):
     days = sorted(r[0] for r in cursor.fetchall() if r[0])
     day_nums = sorted(int(d[8:10]) for d in days)
 
-    # Shu oydagi eng uzun ketma-ket kunlar
+    # Shu oydagi eng uzun parvoz
     longest = run = 0
     prev = None
     for n in day_nums:
@@ -1996,17 +2188,42 @@ def _child_titles(child_id):
     return set((r[0] or "").strip().lower() for r in cursor.fetchall())
 
 
+AGE_LABELS = {"3": "3-5 yosh", "6": "6-7 yosh", "8": "8-11 yosh", "12": "12+ yosh"}
+
+
 def _recommend_for(child_id, age, limit=12):
-    """Yoshga mos, hali rejada bo‘lmagan kitoblar."""
+    """Yoshga mos, hali rejada bo‘lmagan kitoblar.
+
+    Kitob bazasida (Book_Base) pasporti bo‘lsa — mavzusi va qisqacha
+    mazmuni ham qo‘shiladi. Baza to‘lgani sari kitob oynasi boyib boradi.
+    """
     have = _child_titles(child_id)
+    key = get_age_category_key(age)
     out = []
-    for raw in RECOMMENDED_BOOKS.get(get_age_category_key(age), []):
+    for raw in RECOMMENDED_BOOKS.get(key, []):
         b = _split_book(raw)
         if not b or b["title"].strip().lower() in have:
             continue
+        b["age_label"] = AGE_LABELS.get(key, "")
         out.append(b)
         if len(out) >= limit:
             break
+
+    # Pasportlar alohida so‘rov bilan — asosiy ro‘yxat tayyor bo‘lgach.
+    for b in out:
+        try:
+            cursor.execute(
+                "SELECT theme, summary, age_band, mood FROM Book_Base WHERE book_key = ?",
+                (book_key(b["title"], b["author"]),))
+            row = cursor.fetchone()
+            if row:
+                b["theme"] = row[0] or ""
+                b["summary"] = row[1] or ""
+                if row[2]:
+                    b["age_label"] = row[2] + " yosh"
+                b["mood"] = row[3] or ""
+        except Exception:
+            pass
     return out
 
 
@@ -2201,6 +2418,18 @@ def parent_create_plan():
     return jsonify({"ok": True, "plan_id": plan_id})
 
 
+def _notify_new_book(plan_id, title):
+    """Bolaga xabar: ota-onasi unga yangi kitob qo‘ydi."""
+    try:
+        cursor.execute("SELECT child_id FROM Reading_Plans WHERE plan_id = ?", (plan_id,))
+        row = cursor.fetchone()
+        if row and row[0]:
+            _feed(g.user_id, row[0], "new_book", f"Senga yangi kitob: «{title}»",
+                  "Ota-onang qo‘ydi. Birinchi sahifadan boshlaymizmi?", to_child=True)
+    except Exception:
+        pass
+
+
 @app.route("/api/parent/plans/<int:plan_id>/books", methods=["POST"])
 @require_auth
 def parent_add_book_text(plan_id):
@@ -2229,6 +2458,7 @@ def parent_add_book_text(plan_id):
         conn.commit()
         book_id = cursor.lastrowid
     test_count = _attach_test_from_bank(book_id, title, author)
+    _notify_new_book(plan_id, title)
     return jsonify({"ok": True, "book_id": book_id, "title": title, "author": author,
                     "test_ready": bool(test_count)})
 
@@ -2265,6 +2495,7 @@ def parent_add_book_photo(plan_id):
         conn.commit()
         book_id = cursor.lastrowid
     test_count = _attach_test_from_bank(book_id, title, author)
+    _notify_new_book(plan_id, title)
     return jsonify({"ok": True, "book_id": book_id, "title": title, "author": author,
                     "test_ready": bool(test_count)})
 
@@ -2419,6 +2650,9 @@ def _enrich_passport(child_id, data):
     data["calendar"] = get_reading_calendar(child_id, year, month)
     data["books"] = get_shelf_books(child_id)
     data["tests"] = get_test_stats(child_id)
+    cursor.execute("SELECT streak_freezes FROM Users WHERE user_id = ?", (child_id,))
+    _f = cursor.fetchone()
+    data["freezes"] = (_f[0] if _f else 0) or 0
     data["strength"] = get_strength(child_id)
     data["next_rank"] = get_next_rank(data.get("total_pages", 0))
     return data
@@ -2451,6 +2685,9 @@ def parent_manage_coins(child_id):
         cursor.execute("SELECT balance_coins FROM Users WHERE user_id = ?", (child_id,))
         new_balance = cursor.fetchone()[0]
     send_telegram_message(child_id, f"🔅 Ota-onangiz balansingizga o‘zgartirish kiritdi. Joriy balans: {new_balance}")
+    if delta > 0:
+        _feed(g.user_id, child_id, "coins", f"Ota-onang senga {delta} Bilig qo‘shdi",
+              f"Hamyoningda endi {new_balance} Bilig bor.", to_child=True)
     return jsonify({"ok": True, "balance": new_balance})
 
 
@@ -2658,19 +2895,111 @@ def _make_gift_reminders(parent_id):
               f"Va'daga vafo — eng katta saboq.", ref_id=pid)
 
 
-def _unread_feed(parent_id):
-    """Ota-ona hali yopmagan xabarlar (eng yangisi birinchi)."""
-    _make_gift_reminders(parent_id)
+def _unread_feed(user_id, is_parent=True):
+    """Foydalanuvchi hali yopmagan xabarlar (eng yangisi birinchi)."""
+    if is_parent:
+        _make_gift_reminders(user_id)
     cursor.execute(
-        "SELECT n.notif_id, n.kind, n.title, n.body, n.created_at, u.name, u.avatar_id "
+        "SELECT n.notif_id, n.kind, n.title, n.body, n.created_at, u.name, u.avatar_id, n.ref_id "
         "FROM Notifications n LEFT JOIN Users u ON u.user_id = n.child_id "
-        "WHERE n.parent_id = ? AND n.read_at IS NULL "
+        "WHERE COALESCE(n.to_user, n.parent_id) = ? AND n.read_at IS NULL "
+        "AND n.created_at <= ? "
         # Eng yangisi birinchi. Tartib yozuv raqamiga emas, VAQTGA qarab —
         # eslatmalar keyin tug‘ilgani uchun raqami kattaroq bo‘lib qoladi.
-        "ORDER BY n.created_at DESC, n.notif_id DESC LIMIT 20", (parent_id,))
+        "ORDER BY n.created_at DESC, n.notif_id DESC LIMIT 20",
+        (user_id, datetime.now().isoformat()))
     return [{"id": r[0], "kind": r[1], "title": r[2], "body": r[3] or "",
-             "created_at": r[4], "child_name": r[5] or "", "avatar_id": r[6] or "fox"}
+             "created_at": r[4], "child_name": r[5] or "", "avatar_id": r[6] or "fox",
+             "ref_id": r[7] or 0}
             for r in cursor.fetchall()]
+
+
+# ---------------- KECHKI SUHBAT VA «OILA IFTIXORI» NISHONI ----------------
+
+TALK_EVENING_HOUR = 19       # suhbat savoli shu soatdan keyin ko‘rinadi
+FAMILY_BADGE = "Oila iftixori"
+
+
+def _evening_time():
+    """Bugungi kechqurun vaqti. Soat allaqachon o‘tgan bo‘lsa — hozir."""
+    now = datetime.now()
+    evening = now.replace(hour=TALK_EVENING_HOUR, minute=0, second=0, microsecond=0)
+    return (now if now >= evening else evening).isoformat()
+
+
+def _start_talk_check(child_id, parent_id, book_id, topic):
+    """AI suhbat mavzusi tayyorlaganda — kechki tekshiruvni boshlaydi.
+
+    Kuniga bitta yetarli: bir kunda bir necha ovozli xulosa yuborilsa ham,
+    ota-ona bitta savol oladi.
+    """
+    topic = (topic or "").strip()
+    if not topic or not parent_id:
+        return
+    today = datetime.now().strftime("%Y-%m-%d")
+    cursor.execute("SELECT 1 FROM Talk_Checks WHERE child_id = ? AND created_at >= ?",
+                   (child_id, today))
+    if cursor.fetchone():
+        return
+
+    name = child_name_of(child_id)
+    with db_lock:
+        cursor.execute(
+            "INSERT INTO Talk_Checks (child_id, parent_id, book_id, topic, created_at) "
+            "VALUES (?, ?, ?, ?, ?)",
+            (child_id, parent_id, book_id, topic, datetime.now().isoformat()))
+        conn.commit()
+        check_id = cursor.lastrowid
+
+    _feed(parent_id, child_id, "talk_check",
+          f"Bugun {name} bilan gaplashdingizmi?", topic,
+          ref_id=check_id, at=_evening_time())
+
+
+@app.route("/api/parent/talk_check/<int:check_id>", methods=["POST"])
+@require_auth
+def parent_talk_check(check_id):
+    """Ota-onaning javobi: great | ok | missed.
+
+    Ega qarori (2026-08-29): tasdiqni faqat ota-ona beradi, boladan
+    qayta so‘ralmaydi. «Oila iftixori» nishoni FAQAT «a'lo javob berdi»
+    tanlanganda beriladi — shunda uning qadri saqlanadi.
+    """
+    data = request.get_json(force=True) or {}
+    answer = (data.get("answer") or "").strip()
+    if answer not in ("great", "ok", "missed"):
+        return jsonify({"error": "Javob tanlanmagan"}), 400
+
+    cursor.execute("SELECT child_id FROM Talk_Checks "
+                   "WHERE check_id = ? AND parent_id = ?", (check_id, g.user_id))
+    row = cursor.fetchone()
+    if not row:
+        return jsonify({"error": "Topilmadi"}), 404
+    child_id = row[0]
+
+    with db_lock:
+        cursor.execute("UPDATE Talk_Checks SET parent_answer = ?, parent_at = ? "
+                       "WHERE check_id = ?",
+                       (answer, datetime.now().isoformat(), check_id))
+        # Savol berilgan xabar yopiladi — javob berildi.
+        cursor.execute("UPDATE Notifications SET read_at = ? WHERE kind = 'talk_check' "
+                       "AND ref_id = ? AND read_at IS NULL",
+                       (datetime.now().isoformat(), check_id))
+        conn.commit()
+
+    new_badge = False
+    if answer == "great":
+        with db_lock:
+            new_badge = award_badge(child_id, FAMILY_BADGE)
+        if new_badge:
+            name = child_name_of(child_id)
+            send_telegram_message(
+                g.user_id,
+                f"🏅 <b>{name}</b> «{FAMILY_BADGE}» nishonini qo‘lga kiritdi — "
+                f"kitob haqida birga gaplashganingiz uchun."
+            )
+    return jsonify({"ok": True, "new_badge": new_badge,
+                    "child_name": child_name_of(child_id)})
 
 
 @app.route("/api/parent/feed/<int:notif_id>/read", methods=["POST"])
@@ -2678,11 +3007,24 @@ def _unread_feed(parent_id):
 def parent_feed_read(notif_id):
     """Xabar o‘qildi — «x» bosilganda. Javobda qolgan xabarlar qaytadi."""
     with db_lock:
-        cursor.execute("UPDATE Notifications SET read_at = ? "
-                       "WHERE notif_id = ? AND parent_id = ? AND read_at IS NULL",
+        cursor.execute("UPDATE Notifications SET read_at = ? WHERE notif_id = ? "
+                       "AND COALESCE(to_user, parent_id) = ? AND read_at IS NULL",
                        (datetime.now().isoformat(), notif_id, g.user_id))
         conn.commit()
     return jsonify({"ok": True, "feed": _unread_feed(g.user_id)})
+
+
+@app.route("/api/child/feed/<int:notif_id>/read", methods=["POST"])
+@require_auth
+def child_feed_read(notif_id):
+    """Bola xabarni yopdi. Bolaxona rejimida ota-ona ham shu yo‘ldan o‘tadi."""
+    child_id = _resolve_active_child(request)
+    with db_lock:
+        cursor.execute("UPDATE Notifications SET read_at = ? WHERE notif_id = ? "
+                       "AND to_user = ? AND read_at IS NULL",
+                       (datetime.now().isoformat(), notif_id, child_id))
+        conn.commit()
+    return jsonify({"ok": True, "feed": _unread_feed(child_id, is_parent=False)})
 
 
 @app.route("/api/parent/wallet", methods=["GET"])
@@ -2737,6 +3079,9 @@ def parent_purchase_given(purchase_id):
         f"🎁 <b>«{item_name}»</b> sovg‘ang qo‘lingga tegdi! "
         f"Buni o‘z mehnating bilan qozonding."
     )
+    _feed(g.user_id, child_id, "gift_given",
+          f"«{item_name}» sovg‘ang qo‘lingga tegdi!",
+          "Buni o‘z mehnating bilan qozonding.", to_child=True)
     return jsonify({"ok": True})
 
 
@@ -2887,6 +3232,22 @@ def child_home():
     r = cursor.fetchone()
     last_audio_score = int(r[0]) if r and r[0] else None
 
+    # Ko‘rilmagan nishonlar ham xabarnomalar lentasidan chiqadi — ilgari
+    # alohida «Xush kelibsan» kartochkasi turardi, ega uni olib tashlashni
+    # so‘radi: ikkita o‘xshash kartochka ustma-ust tushardi.
+    unseen = unseen_badges(child_id)
+    feed = _unread_feed(child_id, is_parent=False)
+    if unseen:
+        feed.insert(0, {
+            "id": 0, "kind": "unseen_badges", "ref_id": 0,
+            "title": ("Sen ko‘rmagan holda %d ta nishon qo‘lga kiritilgan" % len(unseen))
+                     if len(unseen) > 1 else
+                     ("«%s» nishonini qo‘lga kiritding" % unseen[0]),
+            "body": "Ularni hoziroq ko‘rib chiqamizmi?",
+            "created_at": datetime.now().isoformat(),
+            "child_name": name, "avatar_id": "",
+        })
+
     return jsonify({
         "name": name, "coins": coins, "streak": streak, "rank": rank,
         "current_book": current_book, "last_badge": last_badge,
@@ -2896,8 +3257,9 @@ def child_home():
         "shelf_books": get_shelf_books(child_id),
         "last_audio_score": last_audio_score,
         "child_note": get_latest_child_note(child_id),
-        "unseen_badges": unseen_badges(child_id),
-        "goal": _child_goal(child_id, coins)
+        "unseen_badges": unseen,
+        "goal": _child_goal(child_id, coins),
+        "feed": feed
     })
 
 
@@ -3012,11 +3374,12 @@ def child_books():
     # Asosiy so‘rovdan OLDIN — yordamchi ham shu cursor'dan foydalanadi.
     _final_only = _final_only_book_ids()
     cursor.execute(
-        "SELECT plan_id, name, prize FROM Reading_Plans WHERE parent_id = ? AND child_id = ? AND status = 'active'",
+        "SELECT plan_id, name, prize, plan_type FROM Reading_Plans "
+        "WHERE parent_id = ? AND child_id = ? AND status = 'active'",
         (parent_id, child_id)
     )
     plans = []
-    for plan_id, name, prize in cursor.fetchall():
+    for plan_id, name, prize, plan_type in cursor.fetchall():
         cursor.execute(
             "SELECT book_id, title, author, pages_read, total_pages, is_completed, "
             "mid_test_1_done, mid_test_2_done, final_test_done, cover_file "
@@ -3033,7 +3396,8 @@ def child_books():
             for b in cursor.fetchall()
         ]
         if books:
-            plans.append({"id": plan_id, "name": name, "prize": prize, "books": books})
+            plans.append({"id": plan_id, "name": name, "prize": prize,
+                          "type": plan_type or "quick", "books": books})
     return jsonify(plans)
 
 
@@ -3229,6 +3593,17 @@ def _apply_page_progress(book_id, child_id, new_page):
     _r = cursor.fetchone()
     old_streak = _r[0] if _r else 0
     streak, shield_used = update_streak(child_id)
+    if shield_used:
+        # Qanot jimgina sarflanib ketmasin — bola ham, ota-ona ham bilsin.
+        _parent_id = get_parent_id(child_id)
+        _feed(_parent_id or 0, child_id, "shield_used",
+              "Qanot ishlatildi", "Kecha o‘qimading, lekin bir Qanot sarflandi — "
+              "parvozing uzilmadi.", to_child=True)
+        if _parent_id:
+            _feed(_parent_id, child_id, "shield_used",
+                  "%s bir Qanot sarfladi" % child_name_of(child_id),
+                  "Kecha o‘qimagan edi — parvozi shu bilan saqlanib qoldi.")
+    streak_bonus = _check_streak_milestone(child_id, streak)
     rank, total_pages = calculate_and_update_rank(child_id)
 
     with db_lock:
@@ -3244,7 +3619,8 @@ def _apply_page_progress(book_id, child_id, new_page):
         "ok": True, "book_title": book_title, "new_page": new_page,
         "earned_bilig": max(0, earned_bilig), "balance": balance,
         "streak": streak, "shield_used": shield_used, "rank": rank, "total_pages": total_pages,
-        "new_badges": new_badges, "streak_up": streak > old_streak
+        "new_badges": new_badges, "streak_up": streak > old_streak,
+        "streak_bonus": streak_bonus
     })
 
 
@@ -3440,6 +3816,9 @@ def _finish_voice(book_id, child_id, book_title, result, detail):
         _feed(parent_id, child_id, "voice",
               f"{child_name_of(child_id)} «{book_title}» bo‘yicha ovozli xulosa yubordi",
               pr.get("summary", ""))
+        # AI suhbat mavzusi tayyorlagan bo‘lsa — kechqurun ota-onadan
+        # «gaplashdingizmi?» deb so‘raymiz («Oila iftixori» nishoni shundan).
+        _start_talk_check(child_id, parent_id, book_id, pr.get("conversation_topic", ""))
 
     return {
         "ok": True, "bonus_bilig": bonus,
@@ -3611,6 +3990,7 @@ def _finish_talk(book_id, child_id, book_title, result, detail, stage, question)
         _feed(parent_id, child_id, "talk",
               f"{child_name_of(child_id)} AI ustoz savoliga javob berdi",
               f"«{book_title}» — {nom}. " + (pr.get("summary", "") or ""))
+        _start_talk_check(child_id, parent_id, book_id, pr.get("conversation_topic", ""))
         send_telegram_message(
             parent_id,
             f"🎓 <b>{book_title}</b> — AI ustoz savoli ({nom})\n\n"
@@ -3894,6 +4274,184 @@ def child_store_buy(item_id):
     return jsonify({"ok": True, "new_balance": balance - price})
 
 
+# ---------------- QANOT VA PARVOZ MARRALARI ----------------
+# NOMLAR (ega tanladi, 2026-08-29): kunlik ketma-ketlik — «Parvoz»,
+# uni saqlab qoladigan himoya — «Qanot». Parvoz qanotsiz bo‘lmaydi.
+# Ilgari «Muz», keyin «Qalqon» deb turgan edi.
+# Mexanizm `database.update_streak()` da allaqachon bor edi, lekin uni
+# sotib olish yo‘li yo‘q edi. Narxi 15 Bilig, eng ko‘pi 3 ta.
+FREEZE_PRICE = 15
+FREEZE_MAX = 3
+
+# Parvoz marralari. Har biri bir marta beriladi; marra uzoqlashgan
+# sari mukofot ham o‘sadi.
+STREAK_MILESTONES = ((7, 5), (14, 10), (30, 25), (60, 50), (100, 100))
+
+
+def _check_streak_milestone(child_id, streak):
+    """Marraga yetilgan bo‘lsa — Bilig beradi va bolaga xabar yozadi.
+
+    Takror berilmasligi hisob daftaridan tekshiriladi: har marraning
+    yozuvi aynan bitta bo‘ladi.
+    """
+    for days, coins in STREAK_MILESTONES:
+        if streak != days:
+            continue
+        note = "Parvoz %d kun" % days
+        # DIQQAT: nomi «Ketma-ket» dan «Parvoz» ga o‘zgardi (2026-08-29).
+        # Tekshiruvda ESKI yozuv ham qidiriladi — aks holda marrani
+        # allaqachon olgan bola uni ikkinchi marta olib qo‘yardi.
+        cursor.execute(
+            "SELECT 1 FROM Coin_Ledger WHERE child_id = ? AND kind = 'streak' "
+            "AND note IN (?, ?)",
+            (child_id, note, "Ketma-ket %d kun" % days))
+        if cursor.fetchone():
+            return 0
+        with db_lock:
+            cursor.execute(
+                "UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?",
+                (coins, child_id))
+            _ledger(child_id, coins, "streak", note)
+            conn.commit()
+        parent_id = get_parent_id(child_id)
+        _feed(parent_id or 0, child_id, "streak",
+              "Parvozing %d kun!" % days,
+              "Shuning uchun %d Bilig qo‘shdik. Parvozni uzma." % coins,
+              to_child=True)
+        if parent_id:
+            _feed(parent_id, child_id, "streak",
+                  "%s parvozi %d kunga yetdi" % (child_name_of(child_id), days),
+                  "Bu odat shakllanayotganining eng aniq belgisi.")
+        return coins
+    return 0
+
+
+# ---------------- «PARVOZ O‘CHYAPTI» OGOHLANTIRISHI ----------------
+# Ega talabi: bola bugun o‘qimagan bo‘lsa, kechqurun unga xabar borsin —
+# parvozi uzilib qolmasin. Xabarning O‘ZIDA Qanot sotib olish yo‘li ham
+# bo‘lsin, bola do‘konni qidirib yurmasin.
+#
+# NEGA KECHQURUN: ertalab ogohlantirish ma'nosiz — kun oldinda. Kechki
+# soat 18 dan keyin esa bu haqiqiy eslatma bo‘ladi.
+STREAK_WARN_HOUR = 18
+
+
+def _warned_today(child_id):
+    """Shu bolaga bugun allaqachon ogohlantirish yuborilganmi.
+
+    Alohida ustun ochilmadi: lentaning o‘zidan tekshiriladi. Xabar
+    kuniga bittadan ko‘p bo‘lmasligi kerak — aks holda yarim soatlik
+    kuzatuvchi uni qayta-qayta yozib tashlardi.
+    """
+    today = datetime.now().strftime("%Y-%m-%d")
+    try:
+        cursor.execute(
+            "SELECT 1 FROM Notifications WHERE child_id = ? AND kind = 'streak_warn' "
+            "AND created_at >= ? LIMIT 1", (child_id, today))
+        return cursor.fetchone() is not None
+    except Exception:
+        return True          # shubha bo‘lsa — yubormaymiz, bezovta qilgandan ko‘ra
+
+
+def check_streak_at_risk():
+    """Parvozi uzilish arafasidagi bolalarni ogohlantiradi.
+
+    Har yarim soatda chaqiriladi (`_summary_loop`), lekin ish faqat
+    kechqurun va kuniga bir marta bajariladi.
+    """
+    now = datetime.now()
+    if now.hour < STREAK_WARN_HOUR:
+        return 0
+    today = now.strftime("%Y-%m-%d")
+    try:
+        # DIQQAT: `cursor` yagona obyekt — avval HAMMASINI o‘qib olamiz,
+        # keyin halqada boshqa so‘rovlar yuboramiz.
+        cursor.execute(
+            "SELECT user_id, COALESCE(name, ''), COALESCE(streak_days, 0), "
+            "COALESCE(streak_freezes, 0) FROM Users "
+            "WHERE role = 'child' AND COALESCE(streak_days, 0) > 0 "
+            "AND COALESCE(last_read_date, '') <> ?", (today,))
+        rows = cursor.fetchall()
+    except Exception:
+        return 0
+
+    sent = 0
+    for child_id, name, streak, freezes in rows:
+        try:
+            if _warned_today(child_id):
+                continue
+            if freezes > 0:
+                body = ("Qanoting bor (%d ta) — parvozing uzilmaydi. Lekin eng "
+                        "yaxshisi bugun bir necha bet o‘qish." % freezes)
+            else:
+                body = ("Qanoting yo‘q. Bugun o‘qisang parvozing davom etadi, "
+                        "yoki 15 Biligga Qanot olib qo‘yasan.")
+            _feed(get_parent_id(child_id) or 0, child_id, "streak_warn",
+                  "Parvozing %d kun — uzilib qolmasin" % streak, body, to_child=True)
+            # Telegram faqat o‘z hisobi bor bolaga boradi. Ota-ona qo‘shgan,
+            # lekin hali telefonini ulamagan bolaning `user_id` si manfiy —
+            # unga xabar yuborib bo‘lmaydi, lentadagi kartochka yetarli.
+            if child_id > 0:
+                send_telegram_message(
+                    child_id,
+                    "🔥 <b>Parvozing %d kun</b>\n%s" % (streak, body))
+            sent += 1
+        except Exception:
+            continue
+    return sent
+
+
+@app.route("/api/admin/streak_warn_now", methods=["POST"])
+@require_auth
+def admin_streak_warn_now():
+    """Sinov uchun: ogohlantirishni darhol yuborish (faqat loyiha egasi)."""
+    if OWNER_ID and g.user_id != OWNER_ID:
+        return jsonify({"error": "Ruxsat yo‘q"}), 403
+    return jsonify({"ok": True, "sent": check_streak_at_risk()})
+
+
+@app.route("/api/child/freeze", methods=["GET"])
+@require_auth
+def child_freeze_state():
+    """Qanot haqidagi ma'lumot — do‘konda ko‘rsatiladi."""
+    child_id = _resolve_active_child(request)
+    cursor.execute("SELECT streak_freezes, balance_coins, streak_days FROM Users "
+                   "WHERE user_id = ?", (child_id,))
+    row = cursor.fetchone()
+    have = (row[0] if row else 0) or 0
+    balance = (row[1] if row else 0) or 0
+    return jsonify({"have": have, "max": FREEZE_MAX, "price": FREEZE_PRICE,
+                    "streak": (row[2] if row else 0) or 0,
+                    "can_buy": have < FREEZE_MAX and balance >= FREEZE_PRICE,
+                    "balance": balance})
+
+
+@app.route("/api/child/freeze/buy", methods=["POST"])
+@require_auth
+def child_freeze_buy():
+    """Qanot sotib olish — bolaning amali (Bolaxonasiz ota-ona qila olmaydi)."""
+    child_id = _require_child_actor(request)
+    cursor.execute("SELECT streak_freezes, balance_coins FROM Users WHERE user_id = ?",
+                   (child_id,))
+    row = cursor.fetchone()
+    have = (row[0] if row else 0) or 0
+    balance = (row[1] if row else 0) or 0
+
+    if have >= FREEZE_MAX:
+        return jsonify({"ok": False, "message": "Qanoting to‘lgan — %d tadan ko‘p "
+                                                "saqlab bo‘lmaydi." % FREEZE_MAX})
+    if balance < FREEZE_PRICE:
+        return jsonify({"ok": False, "message": "Bilig yetarli emas"})
+
+    with db_lock:
+        cursor.execute(
+            "UPDATE Users SET streak_freezes = streak_freezes + 1, "
+            "balance_coins = balance_coins - ? WHERE user_id = ?", (FREEZE_PRICE, child_id))
+        _ledger(child_id, -FREEZE_PRICE, "freeze", "Qanot")
+        conn.commit()
+    return jsonify({"ok": True, "have": have + 1, "balance": balance - FREEZE_PRICE})
+
+
 @app.route("/api/child/wallet", methods=["GET"])
 @require_auth
 def child_wallet():
@@ -4007,14 +4565,14 @@ def build_summary(child_id: int, days: int = SUMMARY_EVERY_DAYS):
     if not pages and not tests:
         # Uch kun ichida hech nima bo‘lmadi — bu ham xabar, lekin boshqacha
         return (f"📕 <b>{name}</b> so‘nggi {days} kunda kitob ochmadi.\n"
-                f"Ketma-ketligi yo‘qolib qolmasin — bugun eslatib qo‘ysangiz bo‘ladi.")
+                f"Parvozi uzilib qolmasin — bugun eslatib qo‘ysangiz bo‘ladi.")
 
     lines = [f"📊 <b>{days} kunlik xulosa — {name}</b>", ""]
     if pages:
         lines.append(f"• {pages} bet o‘qildi ({active_days} kun faol)")
     if tests:
         lines.append(f"• {tests} ta test topshirdi")
-    lines.append(f"• Ketma-ket {streak}-kun")
+    lines.append(f"• Parvoz — {streak} kun")
     if best and best[1]:
         try:
             wd = _WEEKDAYS[datetime.strptime(best[0], "%Y-%m-%d").weekday()]
@@ -4070,13 +4628,17 @@ def _summary_loop():
             send_due_summaries()
         except Exception:
             pass
+        try:
+            check_streak_at_risk()
+        except Exception:
+            pass
         time.sleep(1800)          # yarim soatda bir marta tekshiradi
 
 
 def start_summary_worker():
     t = threading.Thread(target=_summary_loop, daemon=True)
     t.start()
-    print("[webapp_api] 3 kunlik xulosa kuzatuvchisi ishga tushdi")
+    print("[webapp_api] xulosa va parvoz kuzatuvchisi ishga tushdi")
 
 
 @app.route("/api/admin/summary_now", methods=["POST"])

@@ -1,0 +1,417 @@
+{
+ "title": "Vinni Pux va uning sarguzashtlari",
+ "author": "Alan Aleksandr Miln",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-9",
+  "topics": [
+   "do‘stlik",
+   "sarguzasht",
+   "o‘zaro yordam",
+   "xayolparastlik",
+   "mehribonlik"
+  ],
+  "theme": "Samimiy do‘stlik, bir-biriga g‘amxo‘rlik qilish va beg‘ubor xayolot har qanday qiyinchilikni yengishga yordam beradi.",
+  "summary": "Vinni Pux — asalni juda yaxshi ko‘radigan quvnoq va sodda ayiqcha. U do‘stlari Kristofer Robin, Puchuqvoy, Quyon, Xo‘tikvoy va Ukki bilan turli sarguzashtlarni boshidan kechiradi. Vinni pufakda uchib asal olishga urinadi, Quyonnikida tamaddi qilib tiqilib qoladi, Puchuqvoy bilan qorda Olabo‘ji izini qidiradi. Shuningdek, u Xo‘tikvoyning yo‘qolgan dumini topadi va unga tug‘ilgan kuniga bo‘sh asal xumchasini sovg‘a qiladi. O‘rmonni suv bosganda, Vinni topsqirlik qilib xumda va soyabonda suzib, Puchuqvoyni qutqaradi. Kristofer Robin Vinnining jasorati va mehribonligi uchun do‘stlar davrasida katta ziyofat uyushtiradi hamda unga maxsus qalamdon sovg‘a qiladi.",
+  "characters": "Vinni Pux — asalni yaxshi ko‘radigan, sodda va mehribon ayiqcha. Kristofer Robin — o‘rmon hayvonlarining eng yaqin do‘sti va rahnamosi. Puchuqvoy — Vinnining kichkina, qo‘rqoq, ammo sodiq do‘sti. Quyon — tirishqoq va tartibli hayvon. Xo‘tikvoy — doim g‘amgin yuradigan eshakcha. Ukki — ko‘p biladigan va maslahat beradigan donishmand qush.",
+  "conclusion": "Asar bolalarda do‘stlik, o‘zaro yordam, mehribonlik va samimiyat tuyg‘ularini shakllantiradi. Qahramonlarning bir-biriga bo‘lgan g‘amxo‘rligi bola qalblarida beg‘uborlik va fidoyilik sifatlarini o‘stiradi.",
+  "difficulty": "oson",
+  "mood": "kulgili, yengil, samimiy",
+  "for_whom": "Sarguzashtlarni, hayvonlar haqida kulgili hikoyalarni yaxshi ko‘radigan va do‘stlikning qadriga yetadigan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vinni Pux asallarni olish uchun qanday rangli pufakni tanladi?",
+   "options": [
+    "A) Yashil rangli",
+    "B) Ko‘k rangli",
+    "C) Qizil rangli"
+   ],
+   "answer": "B) Ko‘k rangli"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vinni Pux baland eman daraxtiga nega tirmashib chiqdi?",
+   "options": [
+    "A) Asal yeyish uchun",
+    "B) Uxlash uchun",
+    "C) Qushlarni ko‘rish uchun"
+   ],
+   "answer": "A) Asal yeyish uchun"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Quyonning uyida Vinni Pux nimaga tiqilib qoldi?",
+   "options": [
+    "A) Katta stulga",
+    "B) Derazaga",
+    "C) Kovak eshikka"
+   ],
+   "answer": "C) Kovak eshikka"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tiqilib qolgan Vinnini qutqarish uchun necha hafta kutishdi?",
+   "options": [
+    "A) Bir hafta",
+    "B) Ikki hafta",
+    "C) Uch kun"
+   ],
+   "answer": "A) Bir hafta"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Vinni va Puchuqvoy qordagi izlarni tartibi bo‘yicha qanday topdi?",
+   "options": [
+    "A) Avval bitta, keyin ko‘paydi",
+    "B) Avval to‘rtta, keyin kamaydi",
+    "C) Izlar darrov yo‘qoldi"
+   ],
+   "answer": "A) Avval bitta, keyin ko‘paydi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Vinni Pux pufakda uchayotganda nega o‘zini bulutga o‘xshatdi?",
+   "options": [
+    "A) Asalarilarni aldash uchun",
+    "B) Shamol yoqqani uchun",
+    "C) Uchishni yaxshi ko‘rgani uchun"
+   ],
+   "answer": "A) Asalarilarni aldash uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Vinni Pux Quyonning kovagiga nega tiqilib qoldi?",
+   "options": [
+    "A) Juda ko‘p yegani uchun",
+    "B) Quyon uni ushlab qolgani uchun",
+    "C) Kovak birdan kichraygani uchun"
+   ],
+   "answer": "A) Juda ko‘p yegani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kristofer Robinning Vinniga o‘q uzib pufakni teshishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, Vinnini qutqardi",
+    "B) Noto‘g‘ri, pufak achinarli",
+    "C) Noto‘g‘ri, ayiqni qo‘rqitdi"
+   ],
+   "answer": "A) To‘g‘ri, Vinnini qutqardi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Vinnining zinadan tushishini tasvirlab nimani ko‘rsatgan?",
+   "options": [
+    "A) Ayiqchaning sodda va beg‘uborligini",
+    "B) Zinaning juda uzunligini",
+    "C) Vinnining shoshilayotganini"
+   ],
+   "answer": "A) Ayiqchaning sodda va beg‘uborligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Do‘stlarning tiqilgan Vinniga kitob o‘qib berishi qanday xulq?",
+   "options": [
+    "A) Mehribonlik va g‘amxo‘rlik",
+    "B) Vaqtni bekor o‘tkazish",
+    "C) Qo‘rqinchli ish"
+   ],
+   "answer": "A) Mehribonlik va g‘amxo‘rlik"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xo‘tikvoyning yo‘qolgan dumi qayerdan topildi?",
+   "options": [
+    "A) Ukkining eshigidan",
+    "B) Quyonning omboridan",
+    "C) Daraxtning kovagidan"
+   ],
+   "answer": "A) Ukkining eshigidan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vinni Pux Filchaga tuzoq sifatida nima ishlatdi?",
+   "options": [
+    "A) Asal solingan xumni",
+    "B) Katta pufakni",
+    "C) Shirin olmani"
+   ],
+   "answer": "A) Asal solingan xumni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Puchuqvoy Xo‘tikvoyga tug‘ilgan kunida nimani sovg‘a qilmoqchi edi?",
+   "options": [
+    "A) Havo pufagini",
+    "B) Asal xumchasini",
+    "C) Rangli qalamni"
+   ],
+   "answer": "A) Havo pufagini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ukki Xo‘tikvoyning xumchasiga qanday yozuv yozib berdi?",
+   "options": [
+    "A) Tabrik so‘zlarini",
+    "B) Asal degan so‘zni",
+    "C) O‘z ismini"
+   ],
+   "answer": "A) Tabrik so‘zlarini"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Xo‘tikvoyning sovg‘alari qanday tartibda yetib keldi?",
+   "options": [
+    "A) Avval idish, keyin pufak",
+    "B) Avval pufak, keyin idish",
+    "C) Ikkalasi bir vaqtda keldi"
+   ],
+   "answer": "A) Avval idish, keyin pufak"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kenguru va Runi ko‘rgach, do‘stlar voqealarni qanday rejalashtirishdi?",
+   "options": [
+    "A) Runi sezdirmay almashtirishdi",
+    "B) O‘rmondan quvib chiqarishdi",
+    "C) Ziyofatga taklif qilishdi"
+   ],
+   "answer": "A) Runi sezdirmay almashtirishdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Vinni Pux tuzoqdagi asalni nega o‘zi yeb qo‘ydi?",
+   "options": [
+    "A) Asalni juda yaxshi ko‘radi",
+    "B) Filchadan qizg‘andi",
+    "C) Asal buzilib qolmasin dedi"
+   ],
+   "answer": "A) Asalni juda yaxshi ko‘radi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Puchuqvoy yiqilib pufak yorilgach, o‘zini qayerda deb o‘yladi?",
+   "options": [
+    "A) Oyga tushib qoldim deb",
+    "B) Dengizda suzyapman deb",
+    "C) Uyimga keldim deb"
+   ],
+   "answer": "A) Oyga tushib qoldim deb"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Vinni Puxning Xo‘tikvoyga bo‘sh xumcha sovg‘a qilgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, chin dildan berdi",
+    "B) Noto‘g‘ri, u ziqnalik qildi",
+    "C) Noto‘g‘ri, xum keraksiz edi"
+   ],
+   "answer": "A) To‘g‘ri, chin dildan berdi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Xo‘tikvoyning g‘amginligini ko‘rsatib nimani ta'kidlaydi?",
+   "options": [
+    "A) Do‘stlarning e'tibori muhimligini",
+    "B) Xo‘tikvoyning yomon xarakterini",
+    "C) O‘rmonning juda sovuqligini"
+   ],
+   "answer": "A) Do‘stlarning e'tibori muhimligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shimoliy qutbni kim va nima bilan topdi?",
+   "options": [
+    "A) Vinni Pux tayoq bilan",
+    "B) Quyon xarita bilan",
+    "C) Ukki ip bilan"
+   ],
+   "answer": "A) Vinni Pux tayoq bilan"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Suv bosganda Puchuqvoy yordam so‘rab xatni qanday yubordi?",
+   "options": [
+    "A) Shisha idishga solib",
+    "B) Ukkidan berib yubordi",
+    "C) Qog‘oz samolyotda otdi"
+   ],
+   "answer": "A) Shisha idishga solib"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vinni Pux suvda suzish uchun nimadan foydalandi?",
+   "options": [
+    "A) Katta asal xumidan",
+    "B) Yog‘och eshikdan",
+    "C) Katta soyabondan"
+   ],
+   "answer": "A) Katta asal xumidan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kristofer Robin ziyofatda Vinniga nima sovg‘a qildi?",
+   "options": [
+    "A) Maxsus qalamdon",
+    "B) Katta tort",
+    "C) Yangi etik"
+   ],
+   "answer": "A) Maxsus qalamdon"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Suv bosganda Puchuqvoyni qutqarish tartibi qanday bo‘ldi?",
+   "options": [
+    "A) Xat topildi, soyabonda borishdi",
+    "B) Ukki borib, uni ko‘tarib keldi",
+    "C) Puchuqvoy o‘zi suzib chiqdi"
+   ],
+   "answer": "A) Xat topildi, soyabonda borishdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kristofer va Vinni suzish uchun nega soyabondan foydalanishdi?",
+   "options": [
+    "A) Soyabon suvda yaxshi suzgani uchun",
+    "B) Boshqa hech narsa yo‘qligi uchun",
+    "C) Yomg‘ir yog‘ayotgani uchun"
+   ],
+   "answer": "A) Soyabon suvda yaxshi suzgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kristofer Robin Vinniga nega alohida ziyofat uyushtirdi?",
+   "options": [
+    "A) Puchuqvoyni qutqargani uchun",
+    "B) Tug‘ilgan kuni bo‘lgani uchun",
+    "C) Qutbni topgani uchun"
+   ],
+   "answer": "A) Puchuqvoyni qutqargani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Vinnining xatni ko‘rib darhol yordamga shoshilishi qanday xulq?",
+   "options": [
+    "A) Haqiqiy do‘stlik va fidoyilik",
+    "B) Shunchaki qiziqishga borish",
+    "C) O‘zini ko‘rsatish istagi"
+   ],
+   "answer": "A) Haqiqiy do‘stlik va fidoyilik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Vinni Puxning Aqli» qayig‘ini tasvirlab nimani yetkazgan?",
+   "options": [
+    "A) Qahramonning topsqirligi va xayolotini",
+    "B) Qayiqning juda qimmatligini",
+    "C) Suvning juda chuqurligini"
+   ],
+   "answer": "A) Qahramonning topsqirligi va xayolotini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Kitob so‘ngidagi samimiy xayrlashuv o‘quvchida qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Iliqlik va shirin taassurot",
+    "B) Qo‘rquv va xavotir",
+    "C) Zerikish va g‘ashlik"
+   ],
+   "answer": "A) Iliqlik va shirin taassurot"
+  }
+ ]
+}

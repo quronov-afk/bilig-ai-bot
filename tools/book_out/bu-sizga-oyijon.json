@@ -1,0 +1,27 @@
+{
+ "title": "Bu sizga, oyijon",
+ "author": "Yoqut Rahimova",
+ "genre": "hikoya",
+ "age_group": "6",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "4-6",
+  "age_hint": "4-7",
+  "topics": [
+   "onaga mehr",
+   "saxovat",
+   "oila",
+   "oqibat"
+  ],
+  "theme": "Onaga nisbatan g‘amxo‘rlik va mehr-oqibat ko‘rsatish, borini yaqinlari bilan baham ko‘rish oiladagi eng go‘zal qadriyatdir.",
+  "summary": "Ona bog‘chadan kelgan Nodir va Dilnozaga shirin nonni teng bo‘lib beradi. Dilnoza onasiga non qolmaganini payqab, o‘z bo‘lagini onasiga taklif qiladi. Buni ko‘rgan Nodir ham o‘z nonini uzatadi. Ona bolalarining mehribonligidan quvonib, ularning nonidan ozgina totadi. Hatto belanchakda yotgan kenjatoy Shahnoza ham sut to‘la shishasini onasiga uzatib, mehr ko‘rsatadi.",
+  "characters": "Ona — fidoiy va mehribon. Dilnoza — onasiga g‘amxo‘r, hoziqjavob qizcha. Nodir — opasidan o‘rnak olgan o‘g‘ilcha. Shahnoza — belanchakdagi mitti chaqaloq.",
+  "conclusion": "Hikoya bolada ota-onaga mehr va g‘amxo‘rlik ko‘rsatish, saxiylik hamda yaqinlariga ilashish tuyg‘ularini shakllantiradi. Bola ezgu amallarda opasidan o‘rnak olgan Nodir kabi saxovatli bo‘lishni o‘rganadi.",
+  "difficulty": "oson",
+  "mood": "samimiy, iliq, quvonchli",
+  "for_whom": "Oila va ota-onaga bo‘lgan mehr haqida iliq, sodda va tarbiyaviy hikoyalarni tinglashni yoki o‘qishni yaxshi ko‘radigan kichkintoylar uchun."
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Dilnoza va Nodir o‘zlari yaxshi ko‘rgan shirin nonni onasi bilan baham ko‘rishdi. Sen ham qachondir o‘zingga yoqqan narsangni onangga yoki yaqinlaringga ilashganmisan? O‘shanda ularning xursand bo‘lganini ko‘rib, o‘zingda qanday tuyg‘ularni his qilganding?"
+}

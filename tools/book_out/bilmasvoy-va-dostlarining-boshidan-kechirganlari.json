@@ -1,0 +1,417 @@
+{
+ "title": "Bilmasvoy va do‘stlarining boshidan kechirganlari",
+ "author": "Nikolay Nosov",
+ "genre": "roman",
+ "age_group": "6",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "7-8",
+  "age_hint": "7-10 yosh",
+  "topics": [
+   "do‘stlik",
+   "sayohat",
+   "mehnatsevarlik",
+   "odob-axloq",
+   "haqiqatsevarlik"
+  ],
+  "theme": "Asar do‘stlikning qadri, halollik hamda bilimsizlikdan bilim va odobga intilish insonni kamolotga yetkazishini uqtiradi.",
+  "summary": "Gulzor shahrida yashaydigan Bilmasvoy shox va bilimsiz bola bo‘lib, doim turli xatolar qiladi. Bir kuni Bilag‘on havo pufagi yasab, mittilarni sayohatga olib chiqadi. Pasayish paytida pufak halokatga uchrab, mittilar Yashil shaharga tushib qolishadi. Bilmasvoy qizaloqlar oldida havo pufagini o‘zim o‘ylab topdim deb maqtanadi va do‘stlarini kamsitadi. Biroq Bilag‘on va boshqa mittilar topilgach, Bilmasvoyning yolg‘onlari oshkor bo‘ladi. U o‘z qilmishidan uyalib, do‘stlaridan va Yashil shahar qizlaridan uzr so‘raydi. Mittilar Yashil shahar va Varrakxona aholisi bilan do‘stlashib, mevalarni yig‘ishda va mexanizatsiyalashda yordam berishadi. Gulzor shaharga qaytgach, Bilmasvoy o‘z do‘sti Dumbulvoy bilan yarashadi va xatolarini tuzatish uchun sabr bilan o‘qish hamda chiroyli yozishni o‘rganishga kirishadi.",
+  "characters": "Bilmasvoy — shoxtabiat, maqtanchoq, ammo xatosini anglab to‘g‘ri yo‘lga kiruvchi bosh qahramon. Bilag‘on — oqil, ko‘p kitob o‘qigan va havo pufagini ixtiro qilgan yetakchi mitti. Ko‘kko‘z — Yashil shaharlik odobli va mehribon qizaloq. Murvatvoy va Tuzatvoy — avtomobil va mexanizmlar yasovchi usta mittilar. Dorijon — mittilarni davolovchi shifokor. Dumbulvoy — Bilmasvoyning qadrdon do‘sti.",
+  "conclusion": "Bu kitob bolalarga yolg‘onchilik va maqtanchoqlikning oqibati yomon bo‘lishini, haqiqiy do‘stlik esa samimiy bo‘lishni talab qilishini o‘rgatadi. Bola mehnatsevarlik, bilimga intilish va tengdoshlarga hurmat ko‘rsatish naqadar muhimligini anglab yetadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, sarguzashtli va saboq beruvchi",
+  "for_whom": "Sarguzashtlarni, kulgili voqealarni yaxshi ko‘radigan, do‘stlik hamda odob-axloq haqida saboq olmoqchi bo‘lgan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gulzor shahridagi mittilar yashaydigan anhor nima deb atalardi?",
+   "options": [
+    "A) Bodring daryosi",
+    "B) Gul daryosi",
+    "C) Meva anhori"
+   ],
+   "answer": "A) Bodring daryosi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy ensasiga tillaqo‘ng‘iz urilganda nima deb o‘yladi?",
+   "options": [
+    "A) Boshimga quyosh parchasi tushdi",
+    "B) Daraxtdan yong‘oq tushdi",
+    "C) Tosh kelib tegdi"
+   ],
+   "answer": "A) Boshimga quyosh parchasi tushdi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy Mashshoqvoydan qaysi musiqa asbobini chalishni so‘radi?",
+   "options": [
+    "A) Kattakon mis karnayni",
+    "B) Kichkina skripkani",
+    "C) Mayin balalaykani"
+   ],
+   "answer": "A) Kattakon mis karnayni"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Murvatvoy va Tuzatvoy yasagan avtomobil nima bilan yurardi?",
+   "options": [
+    "A) Shirin gazli suv bilan",
+    "B) Oddiy toza suv bilan",
+    "C) Meva sharbati bilan"
+   ],
+   "answer": "A) Shirin gazli suv bilan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bilmasvoy avtomobilni o‘zboshimchalik bilan haydaganda nimalarni buzib qo‘ydi?",
+   "options": [
+    "A) It uychasi va shiyponchani",
+    "B) Mehmonxona va oshxonani",
+    "C) Darvoza va ko‘prikni"
+   ],
+   "answer": "A) It uychasi va shiyponchani"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun barcha mittilar Bilmasvoyning karnay chalishiga qarshi bo‘lishdi?",
+   "options": [
+    "A) U juda baland shovqin solardi",
+    "B) Karnay buzilib qolgan edi",
+    "C) Kechasi uxlab qolishgan edi"
+   ],
+   "answer": "A) U juda baland shovqin solardi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bilmasvoy she’r to‘qiganda do‘stlari nega undan xafa bo‘lishdi?",
+   "options": [
+    "A) U yolg‘on gaplarni to‘qigani uchun",
+    "B) She’rlar juda uzun bo‘lgani uchun",
+    "C) U she’rlarni qichqirib o‘qigani uchun"
+   ],
+   "answer": "A) U yolg‘on gaplarni to‘qigani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bilmasvoyning avtomobilni ruxsatsiz haydashi to‘g‘ri ish bo‘ldimi?",
+   "options": [
+    "A) Noto‘g‘ri, chunki xavfli voqea yuz berdi",
+    "B) To‘g‘ri, chunki u haydashni o‘rgandi",
+    "C) Noto‘g‘ri, chunki u uxlab qoldi"
+   ],
+   "answer": "A) Noto‘g‘ri, chunki xavfli voqea yuz berdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Gulshaniyning she’r o‘ylash jarayonini nima uchun kulgili tasvirlagan?",
+   "options": [
+    "A) Shoirlik mas'uliyatli va mehnatli ishligini ko‘rsatishga",
+    "B) Gulshaniy she’r yozishni bilmasligini ko‘rsatishga",
+    "C) Mittilar shoirlarni yoqtirmasligini bildirishga"
+   ],
+   "answer": "A) Shoirlik mas'uliyatli va mehnatli ishligini ko‘rsatishga"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Haqiqatni to‘qishning hojati yo‘q» degan ibora bilan muallif nimani uqtiradi?",
+   "options": [
+    "A) Badiiy to‘qima bilan haqiqat farq qilishini",
+    "B) Hamma narsani to‘qib chiqarish kerakligini",
+    "C) Yolg‘on gapirish doim foydali ekanligini"
+   ],
+   "answer": "A) Badiiy to‘qima bilan haqiqat farq qilishini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Havo pufagida uchayotganda pastda chopayotgan qora dog‘ nima edi?",
+   "options": [
+    "A) Pufakning soyasi",
+    "B) Ko‘ktoy ismli kuchukcha",
+    "C) Kichkina quyoncha"
+   ],
+   "answer": "A) Pufakning soyasi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy pufak pasaya boshlaganda o‘zini kim deb e’lon qildi?",
+   "options": [
+    "A) Guruh boshlig‘i deb",
+    "B) Tajribali uchuvchi deb",
+    "C) Shahar hokimi deb"
+   ],
+   "answer": "A) Guruh boshlig‘i deb"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy uyg‘ongach, uni parvarish qilgan qizaloqning ismi kim edi?",
+   "options": [
+    "A) Ko‘kko‘z",
+    "B) Oppog‘oy",
+    "C) Asalxon"
+   ],
+   "answer": "A) Ko‘kko‘z"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yashil shahardagi kasalxonaning bosh vrachi kim edi?",
+   "options": [
+    "A) Asalxon",
+    "B) Dorijon",
+    "C) Ko‘kko‘z"
+   ],
+   "answer": "A) Asalxon"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bilmasvoy qizaloqlarga havo pufagi haqida so‘zlaganda qanday ketma-ketlikda aladi?",
+   "options": [
+    "A) Bulutni teshdik va muzladik deb",
+    "B) Yiqildik va darrov qochdik deb",
+    "C) Uyda qoldik va uchmadik deb"
+   ],
+   "answer": "A) Bulutni teshdik va muzladik deb"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kasalxonadagi mittilar nima uchun qochishni va chiqishni xohlashardi?",
+   "options": [
+    "A) Bekorga ushlanib cheklovlar qo‘yilgani uchun",
+    "B) Kasalxonada ovqat bo‘lmagani uchun",
+    "C) Ular Gulzor shaharni sog‘ingani uchun"
+   ],
+   "answer": "A) Bekorga ushlanib cheklovlar qo‘yilgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Bilmasvoy havo pufagini o‘zim o‘ylab topdim deb aldadilar?",
+   "options": [
+    "A) Qizlar oldida qahramon ko‘rinish uchun",
+    "B) Bilag‘on uni shunday deyishga buyurgani uchun",
+    "C) U chindan ham shunday o‘ylagani uchun"
+   ],
+   "answer": "A) Qizlar oldida qahramon ko‘rinish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Ko‘kko‘z Bilmasvoyning peshonasiga malhamni dumaloq qilib yopishtirdi?",
+   "options": [
+    "A) Dumaloq shakl unga yarashgani uchun",
+    "B) To‘rtburchak malham tugab qolgani uchun",
+    "C) To‘rtburchak yopishmay tushib ketgani uchun"
+   ],
+   "answer": "A) Dumaloq shakl unga yarashgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bilmasvoyning Bilag‘onni «qo‘rqoq» deb atashi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, chunki Bilag‘on jasur edi",
+    "B) To‘g‘ri, chunki Bilag‘on birinchi sakradi",
+    "C) To‘g‘ri, chunki pufak yorilib ketdi"
+   ],
+   "answer": "A) Noto‘g‘ri, chunki Bilag‘on jasur edi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Yashil shahardagi tartib va meva yig‘ishni qanday tasvirlagan?",
+   "options": [
+    "A) Hamjihatlik va mehnatsevarlik ramzi sifatida",
+    "B) Juda og‘ir va azobli ish sifatida",
+    "C) Zerikarli va keraksiz mashg‘ulot sifatida"
+   ],
+   "answer": "A) Hamjihatlik va mehnatsevarlik ramzi sifatida"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Varrakxonadagi Buramavoy yozuvchi Fahmdorga qanday asbob yasab bergan edi?",
+   "options": [
+    "A) Bormotograf nomli gapiradigan mashina",
+    "B) Avtomobil uchun shirin gazsuv baki",
+    "C) Musiqa chaladigan yangi chiltor"
+   ],
+   "answer": "A) Bormotograf nomli gapiradigan mashina"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gulzor shahri bolalar jo‘ri konsertda qanday qo‘shiqni kuylashdi?",
+   "options": [
+    "A) Ochko‘z qurbaqa yutgan chigirtka haqida",
+    "B) Bahorda ochilgan go‘zal gullar haqida",
+    "C) Havo pufagida uchgan sayyohlar haqida"
+   ],
+   "answer": "A) Ochko‘z qurbaqa yutgan chigirtka haqida"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy qaysi do‘stidan xayrlashmay ketgani uchun vijdoni qiynaldi?",
+   "options": [
+    "A) Dumbulvoydan",
+    "B) Bilag‘ondan",
+    "C) Shoshqaloqdan"
+   ],
+   "answer": "A) Dumbulvoydan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bilmasvoy Gulzor shaharga qaytgach nimani o‘rganishga qattiq kirishdi?",
+   "options": [
+    "A) Yozma harflar bilan chiroyli yozishni",
+    "B) Yangi avtomobilni tez haydashni",
+    "C) Mis karnayni chiroyli chalishni"
+   ],
+   "answer": "A) Yozma harflar bilan chiroyli yozishni"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bilmasvoy va do‘stlari Gulzor shaharga qanday tartibda qaytib kelishdi?",
+   "options": [
+    "A) Bilag‘on boshchiligida yayov yurib qaytishdi",
+    "B) Havo pufagida uchib qaytishdi",
+    "C) Avtomobilda tez suzib qaytishdi"
+   ],
+   "answer": "A) Bilag‘on boshchiligida yayov yurib qaytishdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Bilmasvoy bazm paytida chetga chiqib ho‘ng-ho‘ng yig‘ladi?",
+   "options": [
+    "A) Yolg‘onlari oshkor bo‘lib xijolat bo‘lganidan",
+    "B) Kasalxonaga qaytishni xohlamagani uchun",
+    "C) Meva terishda charchab qolgani uchun"
+   ],
+   "answer": "A) Yolg‘onlari oshkor bo‘lib xijolat bo‘lganidan"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Gulzor shahridagi mittivoylar qizaloqlarni xafa qilmaydigan bo‘lishdi?",
+   "options": [
+    "A) Bilmasvoy va boshqalar do‘stlikni anglagani uchun",
+    "B) Qizaloqlar boshqa shaharga ketgani uchun",
+    "C) Bilag‘on ularga taqiqlab qo‘ygani uchun"
+   ],
+   "answer": "A) Bilmasvoy va boshqalar do‘stlikni anglagani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bilmasvoyning Dumbulvoy bilan ko‘rishganda yig‘lab quchoqlashgani nimani ko‘rsatadi?",
+   "options": [
+    "A) Samimiy do‘stlik va xatoni anglashni",
+    "B) Qo‘rqoqlik va ojizlikni",
+    "C) O‘yinni tezroq tugatish istagini"
+   ],
+   "answer": "A) Samimiy do‘stlik va xatoni anglashni"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bilmasvoyning kitob oxirida bilim olishga intilishi qanday sifat?",
+   "options": [
+    "A) Maqtovga loyiq yaxshi fazilat",
+    "B) Keraksiz va vaqtni oluvchi ish",
+    "C) Qizlar uchun qilingan amaliyot"
+   ],
+   "answer": "A) Maqtovga loyiq yaxshi fazilat"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Bilmasvoyning daftarlaridagi «dumli yulduz»larni qanday mehri bilan tasvirlaydi?",
+   "options": [
+    "A) Mehnat orqali o‘zgarishiga ishonch bilan",
+    "B) Bilmasvoy hech qachon o‘rganolmasligini ko‘rsatib",
+    "C) Siyohni yutish juda foydali ekanini uqtirib"
+   ],
+   "answer": "A) Mehnat orqali o‘zgarishiga ishonch bilan"
+  }
+ ]
+}

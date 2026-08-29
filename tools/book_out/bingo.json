@@ -1,0 +1,287 @@
+{
+ "title": "Bingo",
+ "author": "Ernest Seton-Tompson",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14 yosh",
+  "topics": [
+   "sadoqat",
+   "tabiat",
+   "jonivorlar",
+   "do‘stlik",
+   "jasorat"
+  ],
+  "theme": "Inson va jonivor o‘rtasidagi samimiy do‘stlik, sadoqat hamda hayvonlarga bo‘lgan mehr-muhabbat va mas'uliyat.",
+  "summary": "Hikoyada Bingo laqabli dovyurak itning hayot yo‘li tasvirlanadi. U kuchukligida xonadonga kelib, Donni laqabli sariq molni haydashni o‘rganadi. Bingo vaqt o‘tib erkin hayotga intilib, yaqin-atrafda sarguzashtlar boshidan kechiradi. Qopqonlar va ovchilar xavf solgan dashtda Bingo ozod yirtqich kabi yashaydi, ammo o‘z egasiga bo‘lgan sadoqatini yo‘qotmaydi. Kunlardan bir kun muallif Kennedi tekisligida tuzoqqa tushib, bo‘rilar qurshovida qolganda, Bingo yetib kelib, uning hayotini saqlab qoladi. Keyinchalik Bingo zaharlangan ot o‘ligini yeb qo‘yib, og‘ir ahvolda so‘nggi nafasigacha o‘zining qadrdon egasi kulbasiga keladi va uning ostonasida ko‘z yumadi.",
+  "characters": "Bingo — dovyurak va sadoqatli it; Muallif — Bingoning birinchi egasi va hikoyachi; Gordon Rayt — Bingoning keyingi egasi; Oliver — ovchi.",
+  "conclusion": "Ushbu hikoya bolalarni hayvonlarga mehr ko‘rsatishga, sadoqat va mas'uliyatli bo‘lishga o‘rgatadi. Qahramon itning jasorati orqali bolada chin do‘stlik va oqibat tuyg‘ulari shakllanadi.",
+  "difficulty": "o‘rta",
+  "mood": "ta'sirchan, sarguzashtli, hazin",
+  "for_whom": "Jonivorlar va tabiat sarguzashtlariga qiziquvchi, do‘stlik hamda sadoqat tuyg‘ularini qadrlovchi kitobxonlar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif nima uchun bo‘riga qarshi urushgan itning kuchugini sotib oldi?",
+   "options": [
+    "A) Do‘stining iltimosi bilan",
+    "B) Uning shijoatiga qoyil qolgani uchun",
+    "C) Qo‘ylarni qo‘riqlash uchun"
+   ],
+   "answer": "B) Uning shijoatiga qoyil qolgani uchun"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bingo uy hayvonlaridan birinchi bo‘lib qaysi birini uyga haydashni o‘rgandi?",
+   "options": [
+    "A) Sariq mol Donnini",
+    "B) Qo‘shnining otini",
+    "C) Qora qo‘chqorni"
+   ],
+   "answer": "A) Sariq mol Donnini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yarmarkadagi musobaqada Bingo molni qayerga haydab ketdi?",
+   "options": [
+    "A) Yarmarka maydoniga",
+    "B) O‘rmon ichiga",
+    "C) To‘g‘ri o‘z og‘ilxonasiga"
+   ],
+   "answer": "C) To‘g‘ri o‘z og‘ilxonasiga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bingoning xatti-harakatlari sababli ro‘y bergan voqealarni tartibga soling.",
+   "options": [
+    "A) Molni haydadi, kaltak yedi, otxonaga ko‘chdi",
+    "B) Otxonaga ko‘chdi, molni haydadi, kaltak yedi",
+    "C) Kaltak yedi, otxonaga ko‘chdi, molni haydadi"
+   ],
+   "answer": "A) Molni haydadi, kaltak yedi, otxonaga ko‘chdi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Donni nima uchun ertalablari og‘ildan chiqishga qo‘rqadigan bo‘lib qoldi?",
+   "options": [
+    "A) Bo‘rilar paydo bo‘lganidan",
+    "B) Bingo uni tinmay quvlaganidan",
+    "C) Havo sovuqligidan"
+   ],
+   "answer": "B) Bingo uni tinmay quvlaganidan"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bingo nima uchun og‘ilxonani tark etib, otxonaga ko‘chib o‘tdi?",
+   "options": [
+    "A) Otxona issiqroq bo‘lgani uchun",
+    "B) Donni bilan urishib qolgani uchun",
+    "C) O‘zini aybdor his qilgani uchun"
+   ],
+   "answer": "C) O‘zini aybdor his qilgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif odam va it munosabatini qanday ta'riflaydi?",
+   "options": [
+    "A) Faqat u dunyoda barham topadi",
+    "B) Bir necha yildan so‘ng tugaydi",
+    "C) Manfaat uzilgach yo‘qoladi"
+   ],
+   "answer": "A) Faqat u dunyoda barham topadi"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bingo boshqa jonivorlar haqida xabarlarni qanday bilib olardi?",
+   "options": [
+    "A) Chegaradagi simyog‘ochni hidlab",
+    "B) Bo‘rilarning uvullashini eshitib",
+    "C) Egasining harakatlarini kuzatib"
+   ],
+   "answer": "A) Chegaradagi simyog‘ochni hidlab"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bingo nima uchun miltiqni ko‘rsa juda qo‘rqib ketardi?",
+   "options": [
+    "A) Miltiq ovozidan qo‘rqqani uchun",
+    "B) Uni o‘q bilan otishgani uchun",
+    "C) Egar ostida ko‘rib qolgani uchun"
+   ],
+   "answer": "B) Uni o‘q bilan otishgani uchun"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oliver ot o‘ligiga nima uchun zahar sepib qo‘ygan edi?",
+   "options": [
+    "A) Bo‘rilarni yo‘q qilish uchun",
+    "B) Bingoni jazolash uchun",
+    "C) Chiyabo‘rilarni boqish uchun"
+   ],
+   "answer": "A) Bo‘rilarni yo‘q qilish uchun"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tan laqabli tozi itning o‘limi haqidagi ma'lumotlarni guruhlang.",
+   "options": [
+    "A) Yaralandi, emaklab keldi, Bingo o‘ldirgandi",
+    "B) Uydan qochdi, yo‘qoldi, bo‘ri yedi",
+    "C) Tuzoqqa tushdi, muzlab qoldi, o‘ldi"
+   ],
+   "answer": "A) Yaralandi, emaklab keldi, Bingo o‘ldirgandi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bingo nima uchun ona chiyabo‘riga hamla qilmadi?",
+   "options": [
+    "A) Undan juda qo‘rqqani uchun",
+    "B) U bilan do‘stlashib olgani uchun",
+    "C) U yetarlicha semiz bo‘lmagani uchun"
+   ],
+   "answer": "B) U bilan do‘stlashib olgani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif nima uchun Tanning o‘limi bo‘yicha surishtiruvni to‘xtatdi?",
+   "options": [
+    "A) Qotil Bingo ekanini bilgach",
+    "B) Qo‘shnisi bunga ruxsat bermagach",
+    "C) Dalillar topilmagani uchun"
+   ],
+   "answer": "A) Qotil Bingo ekanini bilgach"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning do‘stining itini izzat qilish odatiga amal qilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, bu hurmat va oqibatdir",
+    "B) Noto‘g‘ri, itga e'tibor shart emas",
+    "C) Noto‘g‘ri, hayvonlarni ajratish kerak"
+   ],
+   "answer": "A) To‘g‘ri, bu hurmat va oqibatdir"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bingo bo‘ri qopqoniga tushib qolganda kimga qarshilik qilmadi?",
+   "options": [
+    "A) Gordon Raytga",
+    "B) Eski egasi — muallifga",
+    "C) Oliverga"
+   ],
+   "answer": "B) Eski egasi — muallifga"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif Kennedi tekisligida qanday qilib qopqonga tushib qoldi?",
+   "options": [
+    "A) Qum ostidagi qopqonni payqamay",
+    "B) Bo‘rilardan qochib yugurganda",
+    "C) Otdan yiqilib tushganida"
+   ],
+   "answer": "A) Qum ostidagi qopqonni payqamay"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bingo egasini qutqarish uchun ketma-ket nimani keltirdi?",
+   "options": [
+    "A) Buragich, kamar, miltiq",
+    "B) Miltiq, kamar, buragich",
+    "C) Kamar, miltiq, buragich"
+   ],
+   "answer": "B) Miltiq, kamar, buragich"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bingo tunda o‘rmonga qarab qochib ketishiga nima sabab bo‘ldi?",
+   "options": [
+    "A) Egasining xavfda ekanini sezgani",
+    "B) Bo‘rilar bilan urishmoqchi bo‘lgani",
+    "C) O‘rmondan o‘lja qidirgani"
+   ],
+   "answer": "A) Egasining xavfda ekanini sezgani"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Egasining joniga oro kirgan Bingo haqida qanday xulosa qilish mumkin?",
+   "options": [
+    "A) U nihoyatda sadoqatli it bo‘lgan",
+    "B) U faqat oziq-ovqat ilinjida kelgan",
+    "C) U tasodifan o‘rmonga borib qolgan"
+   ],
+   "answer": "A) U nihoyatda sadoqatli it bo‘lgan"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Bingo o‘limi oldidan muallif kulbasiga kelgani nimani anglatadi?",
+   "options": [
+    "A) Oxirgi daqiqagacha unga ishonganini",
+    "B) Hamma joydan haydalganini",
+    "C) Muzlab qolishdan qo‘rqqanini"
+   ],
+   "answer": "A) Oxirgi daqiqagacha unga ishonganini"
+  }
+ ]
+}

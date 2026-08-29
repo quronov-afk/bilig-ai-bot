@@ -1,0 +1,417 @@
+{
+ "title": "Pinokkioning boshidan kechirganlari",
+ "author": "Karlo Kollodi",
+ "genre": "qissa",
+ "age_group": "6",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "halollik",
+   "mehnat",
+   "ota-onaga hurmat",
+   "ilm va maktab",
+   "do‘stlik"
+  ],
+  "theme": "Ota-onani hurmat qilish, mehnatsevarlik va halollik insonni barkamol etadi; yolg‘onchilik va yengiltaklik esa kulfat keltiradi.",
+  "summary": "Jeppetto ismli usta gapiradigan g‘o‘ladan Pinokkio ismli yog‘och bola yasaydi. Pinokkio sho‘x va quloqsiz bo‘lib, uydan qochadi, maktabga bormay alifbesini sotadi va qo‘g‘irchoq teatriga kiradi. Teatr xo‘jayini unga beshta oltin tanga beradi, lekin Pinokkio ayyor Tulki va Mushukning tuzog‘iga tushib, tangalaridan ayriladi. Turli xavf-xatarlardan uni Zangori sochli Pari qutqaradi. Har gal yolg‘on gapirganda Pinokkioning burni uzayib ketadi. Keyinchalik u dangasaligi tufayli Tarallabedod Mamlakatiga borib, eshakka aylanib qoladi. Sirkda oyog‘i lat yeb, dengizga tashlangach, uni bahaybat Akula yutib yuboradi. Akula qornida u otasi Jeppettoni uchratib, uni qutqarib qirg‘oqqa olib chiqadi. Pinokkio mehnat qilishni, otasini va Parini parvarishlashni o‘rganadi. Oxirida u o‘zining mehnatsevarligi, halolligi va mehr-oqibati evaziga haqiqiy tirik bolaga aylanadi.",
+  "characters": "Pinokkio — yog‘och qo‘g‘irchoq, keyinchalik odobli va mehnatsevar bolaga aylanadi. Jeppetto — Pinokkioning mehribon va sabrli otasi. Zangori sochli Pari — Pinokkioga to‘g‘ri yo‘l ko‘rsatuvchi mehribon Pari. Tulki va Mushuk — Pinokkioni aldaydigan tovlamachilar. Gapiruvchi Qora Chigirtka — Pinokkioga maslahat beruvchi dono jonzot.",
+  "conclusion": "Asar bolalarni halol bo‘lishga, ota-onani e’zozlashga va hafsala bilan ilm olishga undaydi. Yolg‘onchilik hamda dangasalik insonni tubanlikka yetaklashini uqtiradi. Bola bu kitob orqali mehnat va mehr-oqibat har qanday qiyinchilikni yengishini tushunib yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, saboq beruvchi, ta’sirli",
+  "for_whom": "Sarguzashtlarni xush ko‘radigan, sho‘xlik va yaxshi-yomon xulq haqida fikr yuritishni istaydigan hamda ota-onasini qadrlashni o‘rganayotgan bolalar uchun."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Usta Antonioning burni nimaga o‘xshardi?",
+   "options": [
+    "A) Olchaga",
+    "B) Olmaga",
+    "C) Sabziga"
+   ],
+   "answer": "A) Olchaga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Antonio g‘o‘ladan nima yasamoqchi edi?",
+   "options": [
+    "A) Stolga oyoq",
+    "B) Stulga suyanchiq",
+    "C) Kichik javon"
+   ],
+   "answer": "A) Stolga oyoq"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jeppetto yasagan yog‘och bolaga nima ism qo‘ydi?",
+   "options": [
+    "A) Pinokkio",
+    "B) Arlekin",
+    "C) Pilik"
+   ],
+   "answer": "A) Pinokkio"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pinokkio otasining boshidan nimani yulib kiyib oldi?",
+   "options": [
+    "A) Qizil qalpoqni",
+    "B) Sariq parikni",
+    "C) Qora ro‘molni"
+   ],
+   "answer": "B) Sariq parikni"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Pinokkioning qochishi va politsiya tutgach sodir bo‘lgan voqealarni tartiblang.",
+   "options": [
+    "A) Ko‘chaga qochdi, ushlandi, Jeppetto qamaldi",
+    "B) Qamaldi, ko‘chaga qochdi, ushlandi",
+    "C) Ushlandi, Jeppetto qamaldi, qochdi"
+   ],
+   "answer": "A) Ko‘chaga qochdi, ushlandi, Jeppetto qamaldi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun politsiyachi Pinokkioni emas, Jeppettoni qamadi?",
+   "options": [
+    "A) Odamlar Jeppettoni bag‘ritosh deyishgani uchun",
+    "B) Jeppetto politsiyachini urgani uchun",
+    "C) Pinokkio o‘zi qamalishni so‘ragani uchun"
+   ],
+   "answer": "A) Odamlar Jeppettoni bag‘ritosh deyishgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Pinokkio nega Qora Chigirtkaga yog‘och bolg‘a otib o‘ldirdi?",
+   "options": [
+    "A) Uning nasihatlaridan jahli chiqqani uchun",
+    "B) Chigirtka uni tishlab olgani uchun",
+    "C) Bolg‘ani o‘ynab ushlab turgani uchun"
+   ],
+   "answer": "A) Uning nasihatlaridan jahli chiqqani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Pinokkioning Chigirtka maslahatiga quloq solmay uydan qochishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, chunki qiyinchilikka uchradi",
+    "B) To‘g‘ri, chunki erkin yashashi kerak",
+    "C) To‘g‘ri, chunki maktab kerak emas"
+   ],
+   "answer": "A) Noto‘g‘ri, chunki qiyinchilikka uchradi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Jeppettoning xonasidagi devoriy surat olov haqida nima deydi?",
+   "options": [
+    "A) Hammasi haqiqiyga o‘xshardi",
+    "B) Olov juda issiq edi",
+    "C) Dekcha haqiqiy jezdan edi"
+   ],
+   "answer": "A) Hammasi haqiqiyga o‘xshardi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Pinokkioning burni uzayganda muallif u haqida qanday tasvir beradi?",
+   "options": [
+    "A) Burni to‘rt enlik uzayib ketdi",
+    "B) Burni butunlay yo‘qolib qoldi",
+    "C) Burni qizarib shishib ketdi"
+   ],
+   "answer": "A) Burni to‘rt enlik uzayib ketdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jeppetto Pinokkioga alifbe sotib olish uchun nimani sotdi?",
+   "options": [
+    "A) O‘z kamzulini",
+    "B) Eski stulini",
+    "C) Yog‘och randasini"
+   ],
+   "answer": "A) O‘z kamzulini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pinokkio qo‘g‘irchoq teatriga kirish uchun nimani sotdi?",
+   "options": [
+    "A) Alifbe kitobini",
+    "B) Nondan qalpoqchasini",
+    "C) Charm poyabzalini"
+   ],
+   "answer": "A) Alifbe kitobini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Teatr xo‘jayini Manjafoko ko‘ngli yumshaganda nima qilardi?",
+   "options": [
+    "A) Aksira boshlardi",
+    "B) Yig‘lay boshlardi",
+    "C) Qo‘shiq aytardi"
+   ],
+   "answer": "A) Aksira boshlardi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pinokkio yolg‘on gapirganda uning tanasida nima o‘zgarardi?",
+   "options": [
+    "A) Burni uzayardi",
+    "B) Quloqlari kattalashardi",
+    "C) Bo‘yi o‘sardi"
+   ],
+   "answer": "A) Burni uzayardi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Pinokkioning teatrga kirishi va tanga olishi ketma-ketligi qanday?",
+   "options": [
+    "A) Alifbeni sotdi, teatrga kirdi, tanga oldi",
+    "B) Tanga oldi, alifbeni sotdi, teatrga kirdi",
+    "C) Teatrga kirdi, alifbeni sotdi, tanga oldi"
+   ],
+   "answer": "A) Alifbeni sotdi, teatrga kirdi, tanga oldi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Pinokkio nega Arlekin o‘rniga o‘zini olovga tashlashga rozi bo‘ldi?",
+   "options": [
+    "A) Do‘stini o‘limdan qutqarish uchun",
+    "B) Olovda yonishni yaxshi ko‘rgani uchun",
+    "C) Manjafoko unga buyurgani uchun"
+   ],
+   "answer": "A) Do‘stini o‘limdan qutqarish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tulki va Mushuk Pinokkioni nega Sehrli Dalaga taklif qilishdi?",
+   "options": [
+    "A) Tangalarini o‘g‘irlab olish uchun",
+    "B) Unga chin dildan yordam berish uchun",
+    "C) Birga o‘ynab vaqt o‘tkazish uchun"
+   ],
+   "answer": "A) Tangalarini o‘g‘irlab olish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Pinokkioning qiyin paytda dori ichmay injiqlik qilishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, dori sog‘liq uchun zarur",
+    "B) To‘g‘ri, achchiq dorini ichmaslik kerak",
+    "C) To‘g‘ri, Pari uni majburlamasligi kerak"
+   ],
+   "answer": "A) Noto‘g‘ri, dori sog‘liq uchun zarur"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Pinokkioning dehqonga o‘g‘rilarni ushlashda yordam berishi qanday baholanadi?",
+   "options": [
+    "A) Halol va sadoqatli harakat",
+    "B) Bekorchi va foydasiz ish",
+    "C) Qo‘rqoqlik va xiyonat"
+   ],
+   "answer": "A) Halol va sadoqatli harakat"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Pinokkioning Pari oldidagi ko‘z yoshlarini tasvirlab nimani ko‘rsatgan?",
+   "options": [
+    "A) Uning pushaymonligini va mehrini",
+    "B) Uning ayyor va aldamchi ekanini",
+    "C) Uning yig‘lashni yaxshi ko‘rishini"
+   ],
+   "answer": "A) Uning pushaymonligini va mehrini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tarallabedod Mamlakatida bolalar qanday jonzotga aylanib qolishardi?",
+   "options": [
+    "A) Eshakka",
+    "B) Mushukka",
+    "C) Qushga"
+   ],
+   "answer": "A) Eshakka"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pinokkioni yutib yuborgan bahaybat dengiz jonzoti nima edi?",
+   "options": [
+    "A) Akula",
+    "B) Kit",
+    "C) Qisqichbaqa"
+   ],
+   "answer": "A) Akula"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pinokkio Akula ichida kimni uchratdi?",
+   "options": [
+    "A) Otasi Jeppettoni",
+    "B) Usta Antonioni",
+    "C) Polizchi Janjoni"
+   ],
+   "answer": "A) Otasi Jeppettoni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pinokkio betob otasiga sut olish uchun nima qildi?",
+   "options": [
+    "A) Chig‘irni aylantirdi",
+    "B) Baliq tutib sotdi",
+    "C) Odamlardan tilandi"
+   ],
+   "answer": "A) Chig‘irni aylantirdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Pinokkioning eshakka aylanishi va suvga tashlanishi tartibini ko‘rsating.",
+   "options": [
+    "A) Quloq o‘sdi, eshak bo‘ldi, suvga tashlandi",
+    "B) Suvga tashlandi, quloq o‘sdi, eshak bo‘ldi",
+    "C) Eshak bo‘ldi, suvga tashlandi, quloq o‘sdi"
+   ],
+   "answer": "A) Quloq o‘sdi, eshak bo‘ldi, suvga tashlandi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Pinokkioning haqiqiy bolaga aylanishi ketma-ketligini belgilang.",
+   "options": [
+    "A) Mehnat qildi, Pariga yordam berdi, bola bo‘ldi",
+    "B) Bola bo‘ldi, mehnat qildi, Pariga yordam berdi",
+    "C) Pariga yordam berdi, bola bo‘ldi, mehnat qildi"
+   ],
+   "answer": "A) Mehnat qildi, Pariga yordam berdi, bola bo‘ldi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Pinokkio nega Tulki va Mushukka qaytib yordam bermadi?",
+   "options": [
+    "A) Ularning yolg‘onchiligini tushungani uchun",
+    "B) Yonda umuman puli qolmagani uchun",
+    "C) Ularni tanimay o‘tib ketgani uchun"
+   ],
+   "answer": "A) Ularning yolg‘onchiligini tushungani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Pinokkioning haqiqiy o‘g‘il bolaga aylanishiga asosiy sabab nima?",
+   "options": [
+    "A) Mehnatsevar va mehribon bo‘lgani",
+    "B) Tarallabedodga borib o‘ynagani",
+    "C) Katta poyabzal sotib olgani"
+   ],
+   "answer": "A) Mehnatsevar va mehribon bo‘lgani"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Pinokkioning otasi uchun kechalari savat to‘qib pul topgani qanday xulq?",
+   "options": [
+    "A) Ota-onaga g‘amxo‘rlik va mardlik",
+    "B) O‘zini ko‘rsatish va maqtanchoqlik",
+    "C) Majburiy va nafratli yumush"
+   ],
+   "answer": "A) Ota-onaga g‘amxo‘rlik va mardlik"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Odobsiz bolalar yaxshi bo‘lsa, hamma narsani go‘zallashtiradi» nimani anglatadi?",
+   "options": [
+    "A) Yaxshilik va mehnating dunyoni o‘zgartirishini",
+    "B) Uyni tez-tez ta’mirlash kerakligini",
+    "C) Yog‘och qo‘g‘irchoqlar chiroyli turishini"
+   ],
+   "answer": "A) Yaxshilik va mehnating dunyoni o‘zgartirishini"
+  }
+ ]
+}

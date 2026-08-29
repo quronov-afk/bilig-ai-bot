@@ -1,0 +1,417 @@
+{
+ "title": "Ibn Sino",
+ "author": "O‘simliklar bilan tanishuv. Nilufar Jabborova",
+ "genre": "roman",
+ "age_group": "3",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "ilm-fan",
+   "tarix",
+   "sadoqat",
+   "tibbiyot",
+   "sevgi"
+  ],
+  "theme": "Buyuk mutafakkir Ibn Sinoning ilm-fan yo‘lidagi mashaqqatli mehnati, insonga bo‘lgan sadoqati va murakkab hayot yo‘li.",
+  "summary": "Buxoroda yosh Husayn (Ibn Sino) Buxoro bozoridan Forobiyning Arastu asariga yozgan sharhini sotib olib, murakkab mantiqiy savollarga javob topadi. U amir Nuh ibn Mansurni davolab saroyga yo‘l topadi. Keyinchalik turli siyosiy fitnalar va urushlar tufayli Buxoroni tark etib, darbadarlikda Xorazm, Ray, Jurjon va Hamadon kabi shaharlarda yashaydi. Xorazmda Beruniy va boshqa olimlar bilan hamkorlik qiladi, Jurjonda o‘zining mashhur «al-Qonun» asarini yozishni boshlaydi. Sevgani Sanam bilan ayriliq va ketma-ket tazyiqlarga qaramay, u tibbiyot va falsafa sohasida o‘chmas meros qoldiradi. Umrining oxirida Hamadondagi g‘orda toat-ibodat qilib, dunyodan o‘tadi.",
+  "characters": "Ibn Sino (Husayn) — tabib va mutafakkir, bosh qahramon; Sanam — qandolatchi Xorisning go‘zal qizi, Husaynning pinhona sevgilisi; Abu Rayhon Beruniy — Xorazmdagi ulug‘ olim, Husaynning ilmiy hamrohi; Juzjoniy va Ma’sumiy — Ibn Sinoning eng sodiq shogirdlari.",
+  "conclusion": "Asar o‘quvchida ilm-fanga va sabr-toqatga nisbatan chuqur hurmat uyg‘otadi. Yoshlar qiyinchiliklar oldida taslim bo‘lmaslik, mehnati va aqli bilan xalqqa xizmat qilish hamda ma’naviy poklikni saqlash sabog‘ini oladi.",
+  "difficulty": "qiyin",
+  "mood": "jiddiy, o‘ylantiruvchi",
+  "for_whom": "Tarix, ilmu ma’rifat va buyuk allomalar hayotiga qiziquvchi, murakkab va ibratli asarlarni mutolaa qilishni xohlaydigan o‘quvchilarga."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Buxoro kitob bozorida savdo qiladigan mashhur kitobfurush kim edi?",
+   "options": [
+    "A) Abdusamad kitobfurush",
+    "B) Mas’ud qandolatpaz",
+    "C) Sodiqbek tabib"
+   ],
+   "answer": "A) Abdusamad kitobfurush"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sanam kimning qizi edi?",
+   "options": [
+    "A) Abdusamad kitobfurushning",
+    "B) Mas’ud qandolatpazning",
+    "C) Saroy tabibining"
+   ],
+   "answer": "B) Mas’ud qandolatpazning"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ibn Sino bozordan Abu Nasr Forobiyning qaysi risolashini sotib oldi?",
+   "options": [
+    "A) Ilohiyot sharhini",
+    "B) Tibbiyot qonunini",
+    "C) Mantiq kitobini"
+   ],
+   "answer": "A) Ilohiyot sharhini"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Husayn bozordan sotib olgan kitob uchun qancha haq to‘ladi?",
+   "options": [
+    "A) Besh dirham",
+    "B) Uch dirham",
+    "C) Bir oltin"
+   ],
+   "answer": "B) Uch dirham"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sanamning Husaynga bo‘lgan munosabatini qanday tartibda ko‘rish mumkin?",
+   "options": [
+    "A) Uzoqdan ko‘rish va oshiq bo‘lish",
+    "B) Bevosita gaplashish va rad etish",
+    "C) Do‘st bo‘lish va birga o‘qish"
+   ],
+   "answer": "A) Uzoqdan ko‘rish va oshiq bo‘lish"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ibn Sino Forobiy risolashini o‘qigach nega g‘oyat xursand bo‘ldi?",
+   "options": [
+    "A) Arastu g‘oyalarini tushunib yetgani uchun",
+    "B) Kitobni qimmatga sotish mumkinligi uchun",
+    "C) Ukasiga sovg‘a qilgani uchun"
+   ],
+   "answer": "A) Arastu g‘oyalarini tushunib yetgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kitobfurush mehnati va sa’y-harakati nimani ko‘rsatadi?",
+   "options": [
+    "A) Ma’rifat va ilmni qadrlashini",
+    "B) Faqat boylik orttirish istagini",
+    "C) Kitob o‘qishni yoqtirmasligini"
+   ],
+   "answer": "A) Ma’rifat va ilmni qadrlashini"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Husaynning nochor ayol muhtojligi uchun kitobni sotib olishi qanday fazilat?",
+   "options": [
+    "A) Saxovat va mehr-shafqat",
+    "B) Shoshqaloqlik va beparvolik",
+    "C) Maqtanchoqlik va kiborlik"
+   ],
+   "answer": "A) Saxovat va mehr-shafqat"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Buxoro kitob bozorini tasvirlash orqali kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Ilm-fan maskaniga nisbatan iftixor",
+    "B) Qadimiy shahar to‘g‘risida g‘am",
+    "C) Bozordagi shovqindan zerikish"
+   ],
+   "answer": "A) Ilm-fan maskaniga nisbatan iftixor"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Buxorodagi ilmiy muhit qanday omillar asosida guruhlanadi?",
+   "options": [
+    "A) Kitoblar, olimlar va madrasalar",
+    "B) Savdogarlar, mirshablar va bozorchilar",
+    "C) Dehqonlar, hunarmandlar va harbiylar"
+   ],
+   "answer": "A) Kitoblar, olimlar va madrasalar"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ibn Sino Xorazmda qaysi buyuk olim bilan uchrashadi?",
+   "options": [
+    "A) Abu Rayhon Beruniy",
+    "B) Al-Kindiy",
+    "C) Jolinus"
+   ],
+   "answer": "A) Abu Rayhon Beruniy"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ibn Sino Jurjonda qaysi mashhur asarini yozishni boshladi?",
+   "options": [
+    "A) Al-Qonun fit-tibb",
+    "B) Kitob ash-Shifo",
+    "C) Lison al-arab"
+   ],
+   "answer": "A) Al-Qonun fit-tibb"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jurjonda Ibn Sinoga umrbod sadoqatli bo‘lgan qaysi shogirdi qo‘shildi?",
+   "options": [
+    "A) Juzjoniy",
+    "B) Mas’ud",
+    "C) Bahrom"
+   ],
+   "answer": "A) Juzjoniy"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Beruniy Ibn Sinoga nimani ko‘rsatishni va’da qilgan edi?",
+   "options": [
+    "A) Yer ko‘rinishini ifodalovchi kurrani",
+    "B) Oltin tayyorlaydigan uskunasini",
+    "C) Shahar darvozasining kalitini"
+   ],
+   "answer": "A) Yer ko‘rinishini ifodalovchi kurrani"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ibn Sinoning Buxorodan ketgandan keyingi yo‘li qanday tartibda kechdi?",
+   "options": [
+    "A) Xorazm, Jurjon va Ray",
+    "B) Ray, Hamadon va Buxoro",
+    "C) Jurjon, Bag‘dod va Hindiston"
+   ],
+   "answer": "A) Xorazm, Jurjon va Ray"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ibn Sino va Beruniy ilmiy bahslarida nega bir-birini hurmat qilishardi?",
+   "options": [
+    "A) Chuqur bilim va zakovat uchun",
+    "B) Bir viloyatdan bo‘lganliklari uchun",
+    "C) Shoh amri borligi uchun"
+   ],
+   "answer": "A) Chuqur bilim va zakovat uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sulton Mahmud olimlarni o‘z saroyiga yig‘ishdan qanday maqsad ko‘zlagan?",
+   "options": [
+    "A) Saltanat shonu-shuhratini oshirish",
+    "B) Falsafiy kitoblar yozish",
+    "C) Bozor sohasini rivojlantirish"
+   ],
+   "answer": "A) Saltanat shonu-shuhratini oshirish"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Juzjoniyning ustoziga ergashib ketish qarori qanday baholanadi?",
+   "options": [
+    "A) Sadoqat va fidoyilik",
+    "B) O‘ylamay qilingan harakat",
+    "C) Majburiy ko‘rsatma burchi"
+   ],
+   "answer": "A) Sadoqat va fidoyilik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif cho‘l bo‘ronida qolgan allomalar holatini qanday tuyg‘u bilan tasvirlaydi?",
+   "options": [
+    "A) Hamdardlik va xavotir bilan",
+    "B) Kulgili va shubhali",
+    "C) Beparvo va sovuqqonlik bilan"
+   ],
+   "answer": "A) Hamdardlik va xavotir bilan"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Allomaning Xorazmdagi faoliyati qaysi ikki asosiy sohaga bo‘linadi?",
+   "options": [
+    "A) Muloqot va ilmiy kuzatishlar",
+    "B) Savdo va harbiy xizmat",
+    "C) Qurilish va dehqonchilik"
+   ],
+   "answer": "A) Muloqot va ilmiy kuzatishlar"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Shamsuddavlani Ibn Sino qaysi xastalikdan davoladi?",
+   "options": [
+    "A) Kulanj kasalligidan",
+    "B) Istisqo xastaligidan",
+    "C) Ko‘z og‘rig‘idan"
+   ],
+   "answer": "A) Kulanj kasalligidan"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ibn Sinoning birinchi shogirdlaridan biri kim edi?",
+   "options": [
+    "A) Ma’sumiy",
+    "B) Sobirxon",
+    "C) Abulqosim"
+   ],
+   "answer": "A) Ma’sumiy"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ibn Sino hayotining so‘nggi damlarini qayerda o‘tkazdi?",
+   "options": [
+    "A) Hamadondagi g‘orda",
+    "B) Buxoro madrasasida",
+    "C) Gurganj saroyida"
+   ],
+   "answer": "A) Hamadondagi g‘orda"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qora Turk Buxoroga borib kimni topishi kerak edi?",
+   "options": [
+    "A) Sanamni",
+    "B) Abdusamadni",
+    "C) Mahmudni"
+   ],
+   "answer": "A) Sanamni"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ibn Sino vasiyatida nega o‘zining faqat asarlari qolganini ta’kidladi?",
+   "options": [
+    "A) Ilm umrning haqiqiy ma’nosi bo‘lganidan",
+    "B) Boshqa boyligi bo‘lmagani uchun",
+    "C) Shogirdlari xafa bo‘lmasligi uchun"
+   ],
+   "answer": "A) Ilm umrning haqiqiy ma’nosi bo‘lganidan"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Buxorodagi keksa Sanamning fojiali taqdiriga nima sabab bo‘ldi?",
+   "options": [
+    "A) Urushlar va sevgilisidan ayriliq",
+    "B) Ota-onasining uydan haydashi",
+    "C) Kitob o‘qishga qiziqmasligi"
+   ],
+   "answer": "A) Urushlar va sevgilisidan ayriliq"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ibn Sinoning dori berishda va taom tanlashda mas’uliyati qanday baholanadi?",
+   "options": [
+    "A) Yuksak kasbiy mas’uliyat va buranch",
+    "B) Shunchaki ehtiyotkorlik va qo‘rquv",
+    "C) Amirdan mukofot olish istagi"
+   ],
+   "answer": "A) Yuksak kasbiy mas’uliyat va buranch"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ibn Sinoning bemorlarga tunu kun yordam berishga tayyorligi nimalikni ko‘rsatadi?",
+   "options": [
+    "A) Bemorga va burchga sadoqatni",
+    "B) Uyda o‘tirishni xohlamasligini",
+    "C) Shogirdlariga dars berishdan qochishni"
+   ],
+   "answer": "A) Bemorga va burchga sadoqatni"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Ibn Sinoning vafoti oldidagi tilovatini tasvirlaganda qanday tuyg‘u beradi?",
+   "options": [
+    "A) Ruhoniy poklik va sukunat",
+    "B) Qo‘rquv va vahima",
+    "C) Alam va dargʻazablik"
+   ],
+   "answer": "A) Ruhoniy poklik va sukunat"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Romanning yakunidagi hikoya kitobxonda qanday taassurot qoldiradi?",
+   "options": [
+    "A) Dunyo o‘kinchi va buyuklik sabog‘i",
+    "B) Shunchaki ko‘ngilochar ertak",
+    "C) Tarixiy voqealarga ishonchsizlik"
+   ],
+   "answer": "A) Dunyo o‘kinchi va buyuklik sabog‘i"
+  }
+ ]
+}

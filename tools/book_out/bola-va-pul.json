@@ -1,0 +1,417 @@
+{
+ "title": "Bola va pul",
+ "author": "G‘iyosiddin Yusuf",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "6",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12 yosh",
+  "topics": [
+   "moliyaviy savodxonlik",
+   "mehnatsevarlik",
+   "halollik",
+   "saxovat",
+   "oila va ota-onaga hurmat"
+  ],
+  "theme": "Pul — inson hayotidagi zaruriy vosita, lekin u baxt, mehr, do‘stlik va halollik kabi oliy qadriyatlardan ustun emas.",
+  "summary": "Kitob bolalarga pulning kelib chiqish tarixi, uning jamiyatdagi o‘rni va moliyaviy savodxonlik asoslarini qiziqarli va sodda hikoyalar orqali tushuntiradi. Hasan ismli bolaning birinchi xaridi, Sherzodning ota-ona vaqtini pulga sotib olib bo‘lmasligini anglab yetishi, Javohirning otasi chekkan og‘ir mehnatni ko‘rib pulning qadriga yetishi kabi real hayotiy voqealar bayon etiladi. Shuningdek, naqd va elektron pul turlari, tejamkorlik, cho‘ntak pulini rejalashtirish, halol mehnatsiz tez boyish ilinjida lotereya va firibgarlik tuzoqlariga tushib qolmaslik haqida muhim o‘gitlar beriladi. Asar yakunida qarz odobi, kommunal to‘lovlar, savdo va moliyaviy mas'uliyat tushunchalari hayotiy saboqlar bilan xulosa qilinadi.",
+  "characters": "Hasan (birinchi mustaqil xaridni qilgan bola), Sherzod (vaqt va mehr pulga sotilmasligini tushungan bola), Javohir (otasi mehnatini ko‘rib pulni qadrlashni o‘rgangan bola), Is’hoq (masjid yonida pishiriq sotib tadbirkorlikni boshlagan bola), Malika (orzusidagi ryukzak uchun pul jamg‘argan qiz), Ahmad (Saudiya Arabistonida pul ayirboshlashni o‘rgangan bola), Jahongir (lotereyaga aldanib pulini yo‘qotgan bola), Ominaxon (uy ishlari oilaviy burch ekanini anglagan qiz).",
+  "conclusion": "Ushbu kitob farzandingizga pulning qanday mashaqqat bilan topilishini ko‘rsatib, tejamkorlik va halollikni o‘rgatadi. Bola har bir narsani pul bilan o‘lchash xato ekanini, oilaviy mehr va halol rizq eng katta boylik ekanini anglab yetadi. Natijada u cho‘ntak pulini to‘g‘ri boshqarishni hamda mas'uliyatli bo‘lishni o‘rganadi.",
+  "difficulty": "o‘rta",
+  "mood": "ta'limiy, samimiy, o‘ylantiruvchi",
+  "for_whom": "Pulni to‘g‘ri sarflashni, jamg‘arishni o‘rganmoqchi bo‘lgan hamda hayotiy qadriyatlar va halol mehnat qadriga yetishni xohlaydigan bolalarga mo‘ljallangan."
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hasan birinchi marta mustaqil xarid qilishda do‘kondan nima olib keldi?",
+   "options": [
+    "A) Ikkita issiq non",
+    "B) Uchta shokolad",
+    "C) Bir litr sut"
+   ],
+   "answer": "A) Ikkita issiq non"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sherzod dadasining bir soatlik vaqtini sotib olish uchun qancha berdi?",
+   "options": [
+    "A) O‘n ming so‘m",
+    "B) Yigirma to‘rt ming so‘m",
+    "C) Ellik ming so‘m"
+   ],
+   "answer": "B) Yigirma to‘rt ming so‘m"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Javohirning otasi qayerda yuk tashuvchi bo‘lib ishlardi?",
+   "options": [
+    "A) Katta do‘kon omborida",
+    "B) Qurilish maydonida",
+    "C) Pishiq g‘isht zavodida"
+   ],
+   "answer": "A) Katta do‘kon omborida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sherzod rasm chizdirgani uchun sinfdoshi Salimga nima taklif qildi?",
+   "options": [
+    "A) Muzqaymoq berishni",
+    "B) Pul to‘lashni",
+    "C) O‘yinchoq berishni"
+   ],
+   "answer": "B) Pul to‘lashni"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ushbu bo‘limda keltirilgan qaysi qahramonlar pul bilan bog‘liq xato qildi?",
+   "options": [
+    "A) Sherzod va Javohir",
+    "B) Hasan va Shokir",
+    "C) Salim va Ahmad"
+   ],
+   "answer": "A) Sherzod va Javohir"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Javohir otasidan boshqa hadeb pul so‘ramaydigan bo‘ldi?",
+   "options": [
+    "A) Otasining og‘ir mehnatchiligini ko‘rgani uchun",
+    "B) Shirinliklardan batamom zerikkani uchun",
+    "C) O‘yinchog‘i ko‘payib ketgani uchun"
+   ],
+   "answer": "A) Otasining og‘ir mehnatchiligini ko‘rgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun qadimda tovar almashish jarayoni qiyin kechgan?",
+   "options": [
+    "A) Hammaga bir xil narsa kerak bo‘lmagani uchun",
+    "B) Odamlarda mahsulot umuman bo‘lmagani uchun",
+    "C) Bozorlar juda uzoqda joylashgani uchun"
+   ],
+   "answer": "A) Hammaga bir xil narsa kerak bo‘lmagani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sherzodning dadasiga pul taklif qilib vaqt so‘rashi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, mehr pulga sotilmaydi",
+    "B) To‘g‘ri, pulga hamma narsa keladi",
+    "C) To‘g‘ri, dada pulni yaxshi ko‘radi"
+   ],
+   "answer": "A) Noto‘g‘ri, mehr pulga sotilmaydi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif pul haqida qaysi mashhur iborani keltirgan?",
+   "options": [
+    "A) Pul yaxshi xizmatkor, yomon xo‘jayin",
+    "B) Pul bo‘lsa changalda sho‘rva",
+    "C) Pul ketar, obro‘ qolar"
+   ],
+   "answer": "A) Pul yaxshi xizmatkor, yomon xo‘jayin"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif ota-onaga mehr ko‘rsatish deb nimani baholaydi?",
+   "options": [
+    "A) Ularning halol mehnatchiligini qadrlashni",
+    "B) Qimmat sovg‘alar sotib berishni",
+    "C) Ko‘proq cho‘ntak puli so‘rashni"
+   ],
+   "answer": "A) Ularning halol mehnatchiligini qadrlashni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmad Saudiya Arabistonida do‘kondan qanday shar tanladi?",
+   "options": [
+    "A) Yashil rangli katta shar",
+    "B) Qizil rangli kichik shar",
+    "C) Ko‘k rangli yumaloq shar"
+   ],
+   "answer": "A) Yashil rangli katta shar"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Is’hoq masjid yonida nima sotishni yo‘lga qo‘ydi?",
+   "options": [
+    "A) Mazali pishiriqlarni",
+    "B) Issiq nonlarni",
+    "C) Mevali sharbatlarni"
+   ],
+   "answer": "A) Mazali pishiriqlarni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Malika cho‘ntak pulini yig‘ib nima sotib olmoqchi edi?",
+   "options": [
+    "A) Yangi qizil ryukzak",
+    "B) Yangi sport velosipedi",
+    "C) Qiziqarli ertaklar kitobi"
+   ],
+   "answer": "A) Yangi qizil ryukzak"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Husan cho‘ntak pulini jamg‘arib oxiri nimaga erishdi?",
+   "options": [
+    "A) Yangi velosiped sotib oldi",
+    "B) Katta o‘yinchoq mashina oldi",
+    "C) Sayohatga chipta xarid qildi"
+   ],
+   "answer": "A) Yangi velosiped sotib oldi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ushbu bo‘limdagi qaysi bolalar jamg‘arilgan puliga maqsadli buyum sotib olishdi?",
+   "options": [
+    "A) Malika va Husan",
+    "B) Ahmad va Is’hoq",
+    "C) Doniyor va Madina"
+   ],
+   "answer": "A) Malika va Husan"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qaysi qahramon ota-onasining maslahati bilan daromad va xarajatni hisobladi?",
+   "options": [
+    "A) Is’hoq",
+    "B) Doniyor",
+    "C) Madina"
+   ],
+   "answer": "A) Is’hoq"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Ahmad do‘konda o‘zbek so‘miga shar sotib ololmadi?",
+   "options": [
+    "A) Boshqa mamlakatda ularning valyutasi o‘tgani uchun",
+    "B) Sotuvchi o‘zbekcha gapirishni bilmagani uchun",
+    "C) Cho‘ntagidagi pul shar narxiga yetmagani uchun"
+   ],
+   "answer": "A) Boshqa mamlakatda ularning valyutasi o‘tgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Malika ota-onasidan ryukzak olib berishni so‘ramadi?",
+   "options": [
+    "A) O‘z puliga olgan narsa qadrliroq bo‘lishi uchun",
+    "B) Ota-onasi unga umuman pul bermagani uchun",
+    "C) Qizil ryukzak do‘konda qolmagani uchun"
+   ],
+   "answer": "A) O‘z puliga olgan narsa qadrliroq bo‘lishi uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Husanning pulni tejab velosiped olishi to‘g‘ri qarormi?",
+   "options": [
+    "A) To‘g‘ri, tejamkorlik orzu-maqsadga yetkazadi",
+    "B) Noto‘g‘ri, pulni darrov sarflash kerak",
+    "C) Noto‘g‘ri, o‘yinchoqlar olish afzal edi"
+   ],
+   "answer": "A) To‘g‘ri, tejamkorlik orzu-maqsadga yetkazadi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Is’hoqning harakatini tasvirlashda qaysi muhim sifatni ko‘rsatdi?",
+   "options": [
+    "A) Mehnatsevarlik va hisob-kitobli bo‘lishni",
+    "B) Shoshqaloqlik va tez boyib ketishni",
+    "C) Faqat o‘zi uchun pul sarflashni"
+   ],
+   "answer": "A) Mehnatsevarlik va hisob-kitobli bo‘lishni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bobur aka Sirojiddinga chegirmadagi kitoblar haqida nima dedi?",
+   "options": [
+    "A) Kerakli 10-15 ta kitobni olish arzonga tushishini",
+    "B) Hammasini birgalikda sotib olish to‘g‘riligini",
+    "C) Kitob do‘konidan tezda chiqib ketishni"
+   ],
+   "answer": "A) Kerakli 10-15 ta kitobni olish arzonga tushishini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jahongir lotereyaga jami qancha yig‘gan pulini sarflab yubordi?",
+   "options": [
+    "A) Ellik ming so‘m",
+    "B) Yigirma ming so‘m",
+    "C) Yuz ming so‘m"
+   ],
+   "answer": "A) Ellik ming so‘m"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ominaxon onasidan nima ish qilgani evaziga pul so‘radi?",
+   "options": [
+    "A) Hovli supurib, gullarga suv quygani uchun",
+    "B) Darslarini a’lo bahoga tayyorlagani uchun",
+    "C) Bozordan non sotib olib kelgani uchun"
+   ],
+   "answer": "A) Hovli supurib, gullarga suv quygani uchun"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Fazliddin mahallada bolalar bilan birga nima yig‘ib sotdi?",
+   "options": [
+    "A) To‘kilgan yong‘oqlarni",
+    "B) Eski qog‘ozlarni",
+    "C) Mevali olmalarni"
+   ],
+   "answer": "A) To‘kilgan yong‘oqlarni"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bo‘limda qaysi qahramonlar qarzsizlik va ishonch masalasida saboq olishdi?",
+   "options": [
+    "A) Anvar va Akmal",
+    "B) Jahongir va Fazliddin",
+    "C) Sirojiddin va Ominaxon"
+   ],
+   "answer": "A) Anvar va Akmal"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bobosi Ominaxonga uy ishlarini qilish nima ekanini tushuntirdi?",
+   "options": [
+    "A) Bajarilishi lozim bo‘lgan oilaviy burchini",
+    "B) Qo‘shimcha daromad topish imkoniyatini",
+    "C) Kattalarning topshirig‘i va majburiyatini"
+   ],
+   "answer": "A) Bajarilishi lozim bo‘lgan oilaviy burchini"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Akmal do‘sti Doniyorning ishonchini yo‘qotishiga oz qoldi?",
+   "options": [
+    "A) Qarzga olgan pulni shirinlikka ishlatgani uchun",
+    "B) Kitobni do‘konga qaytarib bermagani uchun",
+    "C) Doniyorga yolg‘on gapirib uyga ketgani uchun"
+   ],
+   "answer": "A) Qarzga olgan pulni shirinlikka ishlatgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jahongirning telefon yutish umidida lotereya o‘ynashi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, oson pul va yutuq ketidan quvmaslik kerak",
+    "B) To‘g‘ri, omadni har kuni sinab ko‘rish kerak",
+    "C) To‘g‘ri, 50 ming so‘m kam pul hisoblanadi"
+   ],
+   "answer": "A) Noto‘g‘ri, oson pul va yutuq ketidan quvmaslik kerak"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ominaxonning xatosini tushunib pul so‘ramay ko‘maklashishi qanday sifat?",
+   "options": [
+    "A) Odob-axloq va oilani qadrlash",
+    "B) Qo‘rqoqlik va burchga bo‘ysinish",
+    "C) Kattalardan hayiqish va jim turish"
+   ],
+   "answer": "A) Odob-axloq va oilani qadrlash"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif kitob xotimasida pulning joyi qayerda bo‘lishini uqtiradi?",
+   "options": [
+    "A) Cho‘ntakda bo‘lsin, qalbda emas",
+    "B) Faqat bank hisobida tursin",
+    "C) Doim uyda saqlanishi kerak"
+   ],
+   "answer": "A) Cho‘ntakda bo‘lsin, qalbda emas"
+  }
+ ]
+}
