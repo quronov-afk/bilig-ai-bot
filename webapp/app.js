@@ -1,6 +1,6 @@
 // ==========================================================
 // BILIG AI — Mini App frontend logikasi (vanilla JS)
-// Yangi arxitektura: 4 ta doimiy tab — Bosh sahifa, Rejalar, Do‘kon, Reyting
+// Yangi arxitektura: 4 ta doimiy tab — Bosh sahifa, Kitobxona, Do‘kon, Reyting
 // ==========================================================
 
 const tg = window.Telegram ? window.Telegram.WebApp : null;
@@ -71,12 +71,19 @@ setTimeout(revealApp, 8000);
 const State = {
   me: null,
   role: null,
-  selectedChildId: null,   // Ota-ona tanlagan "faol farzand" konteksti (Bosh sahifa/Rejalar/Reyting uchun)
+  selectedChildId: null,   // Ota-ona tanlagan "faol farzand" konteksti (Bosh sahifa/Kitobxona/Reyting uchun)
   activeChildId: null,     // "Bolaxona" rejimida to‘liq bola ekraniga o‘tilganda
   activeChildName: null,
   currentTab: "home",
   childrenCache: [],
   ratingMode: "global",
+  storeView: "shop",       // do‘kon ichida: "shop" (sovg‘alar javoni) yoki "wallet"
+  storeItems: [],          // ota-ona sovg‘alari — tahrir oynasi shu ro‘yxatdan to‘ldiriladi
+  storeChildren: [],       // narx maslahati uchun: farzandning haftalik yig‘imi
+  storeBalance: 0,         // bolaning balansi — xarid tasdig‘ida ko‘rsatiladi
+  walletRate: 0,
+  walletShowSom: false,
+  feed: [],                // ota-onaning o‘qilmagan xabarlari
 };
 
 // ---------------- IKONALAR (Feather uslubi, emoji YO‘Q) ----------------
@@ -133,6 +140,11 @@ const ICON_PATHS = {
   "check-circle": [
     '<circle cx="12" cy="12" r="8.8"/>',
     '<circle cx="12" cy="12" r="8.8"/><path d="M8.2 12.2l2.6 2.6 5-5.2"/>'],
+  "arrow-left": '<path d="M19 12H5"/><path d="m11 18-6-6 6-6"/>',
+  // Hamyon — do‘kon ichidagi hisob bo‘limi
+  wallet: [
+    '<path d="M3.2 8.4a2.6 2.6 0 0 1 2.6-2.6h12.4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5.8a2.6 2.6 0 0 1-2.6-2.6z"/>',
+    '<path d="M3.2 8.4a2.6 2.6 0 0 1 2.6-2.6h12.4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5.8a2.6 2.6 0 0 1-2.6-2.6z"/><path d="M3.2 9.9h17"/><path d="M20.9 12.2h-3.1a1.9 1.9 0 0 0 0 3.8h3.1a.8.8 0 0 0 .8-.8v-2.2a.8.8 0 0 0-.8-.8z"/>'],
   gift: [
     '<path d="M3.6 10.6h16.8v9a2 2 0 0 1-2 2H5.6a2 2 0 0 1-2-2z"/>',
     '<path d="M3.6 10.6h16.8v9a2 2 0 0 1-2 2H5.6a2 2 0 0 1-2-2z"/><rect x="2.6" y="6.6" width="18.8" height="4" rx="1.4"/><path d="M12 6.6v15"/><path d="M12 6.6S11 2.4 8.4 2.4a2.1 2.1 0 0 0 0 4.2z"/><path d="M12 6.6s1-4.2 3.6-4.2a2.1 2.1 0 0 1 0 4.2z"/>'],
@@ -242,6 +254,42 @@ function coverHtml(title, author, cls, custom) {
   return '<div class="' + cls + ' cover-blank" style="--h:' + hue + 'deg"><span>' + escapeHtml(letter) + '</span></div>';
 }
 
+// ---------------- XABARLAR LENTASI (ota-ona bosh sahifasi) ----------------
+// Har bir xabar turiga o‘z ikonasi. Bola nima qilgani bir qarashda ko‘rinsin.
+const FEED_ICONS = {
+  badge: "award", book_done: "check-circle", test: "clipboard-list",
+  voice: "mic", talk: "message-circle", gift: "gift", gift_wait: "clock",
+  child_linked: "users", summary: "chart", book_request: "book-open"
+};
+
+function feedCardHtml() {
+  const list = State.feed || [];
+  if (!list.length) return "";
+  const n = list[0];
+  const rest = list.length - 1;
+  return '<div class="feed-card">' +
+    '<span class="fc-ic">' + icon(FEED_ICONS[n.kind] || "star", 19, 1.9) + '</span>' +
+    '<div class="fc-body">' +
+    '<p class="fc-title">' + escapeHtml(n.title) + '</p>' +
+    (n.body ? '<p class="fc-sub">' + escapeHtml(n.body) + '</p>' : "") +
+    '<p class="fc-meta">' + dayLabel(n.created_at) +
+    (rest ? ' · yana ' + rest + ' ta xabar' : '') + '</p>' +
+    '</div>' +
+    '<button class="fc-x" data-action="feed-read" data-id="' + n.id + '" aria-label="Yopish">' +
+    icon("x", 15, 2.4) + '</button>' +
+    '</div>';
+}
+
+// «x» bosildi: xabar o‘qildi deb belgilanadi va keyingisi chiqadi.
+async function readFeed(notifId) {
+  const slot = document.getElementById("feed-slot");
+  const card = slot ? slot.querySelector(".feed-card") : null;
+  if (card) card.classList.add("is-leaving");
+  const res = await api("/api/parent/feed/" + notifId + "/read", { method: "POST" });
+  State.feed = res.feed || [];
+  if (slot) slot.innerHTML = feedCardHtml();
+}
+
 // ---------------- 10 TA BOLALAR AVATARI (cho‘chqa yo‘q) ----------------
 const AVATARS = {
   fox: { label: "Tulki", bg: "#F2A65A", inner:
@@ -293,7 +341,10 @@ const CROP_SHAPES = {
             title: "Rasmni joyla", hint: "Yuzing doira ichida qolsin" },
   cover:  { w: 240, h: 360, outW: 320, outH: 480, round: false, quality: 0.70,
             maxBytes: 76 * 1024,
-            title: "Muqovani joyla", hint: "Kitob muqovasi ramka ichida qolsin" }
+            title: "Muqovani joyla", hint: "Kitob muqovasi ramka ichida qolsin" },
+  gift:   { w: 260, h: 200, outW: 420, outH: 320, round: false, quality: 0.72,
+            maxBytes: 56 * 1024,
+            title: "Sovg‘a rasmi", hint: "Sovg‘a ramka ichida yaqqol ko‘rinsin" }
 };
 
 let Crop = null;
@@ -798,19 +849,19 @@ async function refreshHeader() {
 
 const TABS_PARENT = [
   { id: "home", label: "Bosh sahifa", icon: "home" },
-  { id: "plans", label: "Rejalar", icon: "book-open" },
+  { id: "plans", label: "Kitobxona", icon: "book-open" },
   { id: "store", label: "Do‘kon", icon: "cart" },
   { id: "bolaxona", label: "Bolaxona", icon: "users" },
 ];
 const TABS_CHILD = [
   { id: "home", label: "Bosh sahifa", icon: "home" },
-  { id: "plans", label: "Rejalar", icon: "book-open" },
+  { id: "plans", label: "Kitobxona", icon: "book-open" },
   { id: "store", label: "Do‘kon", icon: "cart" },
   { id: "rating", label: "Reyting", icon: "award" },
 ];
 const TABS_PARENT_ACTING = [
   { id: "home", label: "Bosh sahifa", icon: "home" },
-  { id: "plans", label: "Rejalar", icon: "book-open" },
+  { id: "plans", label: "Kitobxona", icon: "book-open" },
   { id: "store", label: "Do‘kon", icon: "cart" },
   { id: "ota-ona", label: "Ota-ona", icon: "users", action: "exit-bolaxona" },
 ];
@@ -873,6 +924,9 @@ function asChildQuery() {
 
 function switchTab(tabId) {
   State.currentTab = tabId;
+  // Hamyon do‘kon ichidagi ko‘rinish. Pastdagi tab qayta bosilsa,
+  // foydalanuvchi sovg‘alar javonini kutadi — shuning uchun tiklanadi.
+  if (tabId === "store") State.storeView = "shop";
   document.querySelectorAll(".tab-btn").forEach(function (b) { b.classList.toggle("active", b.dataset.tab === tabId); });
   const renderers = isChildView()
     ? { home: renderChildHome, plans: renderChildPlans, store: renderStoreTab, rating: renderRatingTab }
@@ -960,14 +1014,31 @@ document.addEventListener("click", async function (e) {
       case "adjust-coins": await adjustCoins(Number(el.dataset.id), Number(el.dataset.delta)); break;
 
       case "open-store-add": openStoreEditModal(null); break;
-      case "open-store-edit": openStoreEditModal(el.dataset.id, el.dataset.name, el.dataset.price); break;
+      case "open-store-edit": openStoreEditModal(el.dataset.id); break;
       case "submit-store-save": await submitStoreSave(el.dataset.id || null); break;
       case "delete-store-item":
         await api("/api/parent/store/" + el.dataset.id, { method: "DELETE" });
-        toast("Mahsulot o‘chirildi"); closeModal(); switchTab("store");
+        toast("Sovg‘a o‘chirildi"); closeModal(); switchTab("store");
         break;
+      case "gift-photo": pickGiftPhoto(); break;
+      case "gift-emoji-toggle": toggleEmojiGrid(); break;
+      case "gift-emoji": pickGiftEmoji(el.dataset.e); break;
+      case "quick-gift": await addQuickGift(el.dataset.name, el.dataset.price, el.dataset.emoji); break;
       case "open-rate": openRateModal(); break;
       case "submit-rate": await submitRate(); break;
+
+      case "open-wallet": State.storeView = "wallet"; await renderStoreTab(); break;
+      case "close-wallet": State.storeView = "shop"; await renderStoreTab(); break;
+      case "gift-given": await markGiftGiven(Number(el.dataset.id)); break;
+      case "feed-read": await readFeed(Number(el.dataset.id)); break;
+
+      case "rec-add": openRecAddModal(el.dataset.title, el.dataset.author); break;
+      case "rec-add-confirm": await addRecommendedBook(el.dataset.title, el.dataset.author); break;
+      case "rec-ask": await askForBook(el.dataset.title, el.dataset.author); break;
+      case "add-book-for":
+        State.selectedChildId = Number(el.dataset.id);
+        await Wizard.start();
+        break;
 
       case "edit-child": openEditChildModal(el.dataset.id, el.dataset.name, el.dataset.age, el.dataset.avatar); break;
       case "pick-edit-avatar":
@@ -1028,7 +1099,10 @@ document.addEventListener("click", async function (e) {
       case "select-test-opt": Test.select(el.dataset.qid, el.dataset.val); break;
       case "submit-test": await Test.submit(Number(el.dataset.book)); break;
 
-      case "buy-item": await buyItem(Number(el.dataset.id)); break;
+      case "buy-item": openBuyConfirm(el.dataset.id, el.dataset.name, el.dataset.price); break;
+      case "confirm-buy": await buyItem(Number(el.dataset.id)); break;
+      case "toggle-goal": await toggleGoal(el.dataset.id, !!el.dataset.on); break;
+      case "go-store-tab": switchTab("store"); break;
 
       case "go-plans-tab": switchTab("plans"); break;
       case "go-book": await goToBook(Number(el.dataset.id)); break;
@@ -1124,6 +1198,12 @@ async function renderParentHome() {
 
   let html = '<p class="sec-label">Farzandlar</p>' +
     '<div class="kid-row">' + chips + '</div>';
+
+  // ---- 1b. Xabarlar lentasi ----
+  // Farzandlar faoliyati bo‘yicha eng so‘nggi xabar. «x» bosilsa u yopiladi
+  // va keyingi o‘qilmagani chiqadi; xabar qolmasa — bo‘lim umuman yo‘qoladi.
+  State.feed = primaryData.feed || [];
+  html += '<div id="feed-slot">' + feedCardHtml() + '</div>';
 
   // ---- 2. Kitob qo‘shish ----
   html += '<div class="hero-card" data-action="open-add-plan">' +
@@ -1394,8 +1474,22 @@ async function renderChildHome() {
     html += '<div class="hero-card" data-action="go-plans-tab">' +
       '<div class="icon-circle">' + icon("book-open", 22, 1.8) + '</div>' +
       '<p class="hc-title">Hozircha o‘qiladigan kitob yo‘q</p>' +
-      '<div style="font-size:15px;font-weight:600;display:flex;align-items:center;gap:6px">Rejalarni ko‘rish ' + icon("arrow-right", 15, 2) + '</div>' +
+      '<div style="font-size:15px;font-weight:600;display:flex;align-items:center;gap:6px">Kitobxonani ochish ' + icon("arrow-right", 15, 2) + '</div>' +
       '</div>';
+  }
+
+  // ---- 1b. Orzu qilingan sovg‘a ----
+  // Bola do‘kondan bitta sovg‘ani maqsad qilib belgilaydi; unga qancha
+  // qolgani shu yerda ko‘rinib turadi.
+  if (data.goal) {
+    const gl = data.goal;
+    html += '<button class="goal-strip" data-action="go-store-tab">' +
+      giftThumb(gl) +
+      '<div class="gs-mid">' +
+      '<p class="gs-name">Orzuim: ' + escapeHtml(gl.name) + '</p>' +
+      '<div class="goal-bar"><i style="width:' + gl.percent + '%"></i></div>' +
+      '<p class="gs-left">' + (gl.left ? 'Yana <b>' + gl.left + '</b> Bilig' : 'Yetdi! Do‘kondan olsang bo‘ladi') + '</p>' +
+      '</div>' + icon("chevron-right", 16, 2.2) + '</button>';
   }
 
   // ---- 2. So‘nggi natijalar (ilgari bu joyda 3 ta statistika qutisi turardi) ----
@@ -1417,11 +1511,11 @@ async function renderChildHome() {
   // ---- 5. Nishonlar ----
   html += badgesBlockHtml(data.badges);
 
-  // ---- 6. Kitoblarim (3 tasi; qolgani Rejalar bo‘limida) ----
+  // ---- 6. Kitoblarim (3 tasi; qolgani Kitobxona bo‘limida) ----
   const books = data.shelf_books || data.active_books || [];
   html += '<p class="sec-label">Kitoblarim' +
     (books.length > 3 ? ' <span class="sw" data-action="go-plans-tab">' + icon("chevron-right", 12, 2.4) + '</span>' : "") + '</p>' +
-    shelfHtml(books.slice(0, 3), "Hozircha kitob yo‘q — Rejalar bo‘limiga qarang.");
+    shelfHtml(books.slice(0, 3), "Hozircha kitob yo‘q — Kitobxonaga qarang.");
 
   document.getElementById("app-main").innerHTML = html;
 }
@@ -1546,9 +1640,12 @@ function emptyState(iconName, title, sub, opts) {
       (opts.btnIcon ? icon(opts.btnIcon, 17, 2) : "") +
       '<span>' + escapeHtml(opts.label || "Boshlash") + '</span></button>';
   }
+  // Harakat tugmasi yo‘riqnomadan YUQORIDA turadi: foydalanuvchi avval
+  // nima qilishini ko‘rsin, izohni esa xohlasa keyin o‘qiydi. Ilgari
+  // tugma uchta qadamdan keyin, ekranning pastida qolib ketardi.
   return '<div class="empty-state">' + art +
     '<p class="em-title">' + title + '</p>' +
-    (sub ? '<p class="em-sub">' + sub + '</p>' : "") + steps + btn + '</div>';
+    (sub ? '<p class="em-sub">' + sub + '</p>' : "") + btn + steps + '</div>';
 }
 
 // ==========================================================
@@ -1665,6 +1762,10 @@ async function renderParentPlans() {
                 "AI tekshiradi, test beradi va Bilig yozadi"],
         action: "open-add-plan", label: "Kitob qo‘shish", btnIcon: "plus"
       });
+    // Kitob yo‘q bo‘lsa tavsiyalar ayniqsa asqotadi — «nimadan boshlasam?»
+    // degan savolga shu yerdayoq javob bo‘ladi.
+    html += await recShelfHtml(false);
+    html += await familyReadingHtml();
     main.innerHTML = html;
     return;
   }
@@ -1685,7 +1786,116 @@ async function renderParentPlans() {
     singleDone.forEach(function (b) { html += bookCardHtml(b, true); });
   }
 
+  // Pastda: butun oila manzarasi va yoshga mos tavsiyalar.
+  html += await familyReadingHtml();
+  html += await recShelfHtml(false);
   main.innerHTML = html;
+}
+
+// «Oila kitobxonligi» — qaysi farzand nima o‘qiyapti, rejasida nechta kitob.
+// Ota-ona bitta qarashda butun oilaning holatini ko‘radi.
+async function familyReadingHtml() {
+  let kids = [];
+  try { kids = await api("/api/parent/family_reading"); } catch (e) { return ""; }
+  if (!kids.length) return "";
+  return '<p class="sec-label">Oila kitobxonligi</p>' +
+    '<div class="card fam-list">' + kids.map(function (c) {
+      const cur = c.current;
+      const pct = cur && cur.total_pages
+        ? Math.min(100, Math.round(cur.pages_read * 100 / cur.total_pages)) : 0;
+      return '<div class="fam-row">' +
+        '<span class="fam-av">' + avatarMarkup(c.avatar_id, 44) + '</span>' +
+        '<div class="fam-mid">' +
+        '<p class="fam-name">' + escapeHtml(c.name) +
+        '<span class="fam-age">' + c.age + ' yosh</span></p>' +
+        (cur
+          ? '<p class="fam-book">Hozir: «' + escapeHtml(cur.title) + '»</p>' +
+            (cur.total_pages ? '<div class="goal-bar"><i style="width:' + pct + '%"></i></div>' : "") +
+            '<p class="fam-meta">' + cur.pages_read +
+            (cur.total_pages ? "/" + cur.total_pages : "") + ' bet · Rejada ' +
+            c.book_count + ' ta · Tugatgan ' + c.done_count + ' ta</p>'
+          : '<p class="fam-book is-soft">Hozir kitob o‘qimayapti</p>' +
+            '<p class="fam-meta">Rejada ' + c.book_count + ' ta · Tugatgan ' +
+            c.done_count + ' ta</p>' +
+            '<button class="btn btn-outline fam-btn" data-action="add-book-for" data-id="' +
+            c.id + '">Kitob qo‘yish</button>') +
+        '</div></div>';
+    }).join("") + '</div>';
+}
+
+// Yoshga mos tavsiyalar javoni. Ota-onada bosilsa — rejaga qo‘shiladi,
+// bolada esa «So‘rayman» — ota-onaning lentasiga xabar tushadi.
+async function recShelfHtml(forChild) {
+  let books = [], childName = "";
+  try {
+    if (forChild) {
+      books = await api("/api/child/recommended" + asChildQuery());
+    } else {
+      const d = await api("/api/parent/recommended" +
+        (State.selectedChildId ? "?child_id=" + State.selectedChildId : ""));
+      books = d.books || [];
+      childName = (d.child && d.child.name) || "";
+    }
+  } catch (e) { return ""; }
+  if (!books.length) return "";
+
+  return '<p class="sec-label">' +
+    (forChild ? "Senga tavsiya" : (childName ? escapeHtml(childName) + " yoshiga tavsiya" : "Tavsiya etilgan kitoblar")) +
+    '</p>' +
+    '<p class="section-sub">' + (forChild
+      ? "Yoqqanini bossang, ota-onangga aytamiz."
+      : "Bosilsa — farzandingiz rejasiga qo‘shiladi.") + '</p>' +
+    '<div class="rec-shelf">' + books.map(function (b) {
+      return '<button class="rec-item" data-action="' + (forChild ? "rec-ask" : "rec-add") +
+        '" data-title="' + escapeHtml(b.title) + '" data-author="' + escapeHtml(b.author || "") + '">' +
+        coverHtml(b.title, b.author, "rec-cover") +
+        '<span class="rec-name">' + escapeHtml(b.title) + '</span>' +
+        (b.author ? '<span class="rec-author">' + escapeHtml(b.author) + '</span>' : "") +
+        '</button>';
+    }).join("") + '</div>';
+}
+
+// Tavsiyani rejaga qo‘shish — ota-ona tasdiqlagandan keyin.
+function openRecAddModal(title, author, childId) {
+  const kid = (State.childrenCache || []).filter(function (c) {
+    return String(c.id) === String(childId || State.selectedChildId);
+  })[0];
+  openModal("Rejaga qo‘shamizmi?",
+    '<div class="buy-confirm">' +
+    '<p class="bc-name">' + escapeHtml(title) + '</p>' +
+    (author ? '<p class="bc-left">' + escapeHtml(author) + '</p>' : "") +
+    '</div>' +
+    '<p class="section-sub">' + escapeHtml(kid ? kid.name : "Farzandingiz") +
+    ' uchun alohida kitob sifatida qo‘shiladi.</p>' +
+    '<button class="btn btn-primary btn-block" data-action="rec-add-confirm" data-title="' +
+    escapeHtml(title) + '" data-author="' + escapeHtml(author || "") + '">Qo‘shish</button>' +
+    '<button class="btn btn-outline btn-block" data-action="close-modal">Bekor qilish</button>'
+  );
+}
+
+async function addRecommendedBook(title, author) {
+  // Kitob qo‘shish sehrgaridagi bilan bir xil yo‘l: avval tezkor reja,
+  // keyin unga kitob. Shu tufayli kitob oynasi va testlar avvalgidek ishlaydi.
+  const childId = State.selectedChildId || (State.childrenCache[0] && State.childrenCache[0].id);
+  if (!childId) { toast("Avval farzand qo‘shing"); return; }
+  const plan = await api("/api/parent/plans", {
+    method: "POST",
+    body: { child_id: childId, name: "Tezkor mutolaa", prize: "", type: "quick" }
+  });
+  await api("/api/parent/plans/" + plan.plan_id + "/books", {
+    method: "POST", body: { title: title, author: author, total_pages: 0 }
+  });
+  closeModal();
+  toast("«" + title + "» qo‘shildi");
+  switchTab("plans");
+}
+
+async function askForBook(title, author) {
+  await api("/api/child/book_request" + asChildQuery(), {
+    method: "POST", body: { title: title, author: author }
+  });
+  mascotToast("boyogli-oqish", "Ota-onangga aytdik",
+              "«" + title + "» kitobini so‘raganingni yetkazdik.");
 }
 
 // Marafon — bitta yaxlit karta: nomi, sovrini, umumiy yo‘li va ichidagi kitoblar
@@ -1940,6 +2150,7 @@ async function renderChildPlans() {
       completedBooks.forEach(function (b) { html += bookCardHtml(b, false); });
     }
   }
+  html += await recShelfHtml(true);
   document.getElementById("app-main").innerHTML = html;
 }
 
@@ -2687,13 +2898,95 @@ async function openTestModal(bookId, stage) {
 }
 
 // ==========================================================
-// TAB 3: DO‘KON (ota-ona ham, bola ham shu yerda)
+// TAB 3: DO‘KON VA HAMYON (ota-ona ham, bola ham shu yerda)
 // ==========================================================
+// Do‘kon ikki ko‘rinishga ega: sovg‘alar javoni (`shop`) va hamyon
+// (`wallet`). Ikkinchisi alohida tab emas — pastdagi to‘rtta tab
+// tartibi buzilmasin uchun do‘kon ichida ochiladi.
+
+// Ota-ona sovg‘aga tanlaydigan belgilar. Klaviaturadan istalgan belgi
+// qidirilmasin — kompyuterda bu noqulay va mos kelmaydigan belgi
+// tushib qolishi mumkin edi.
+const GIFT_EMOJI = [
+  "🚲", "🛴", "⚽", "🏀", "🏐", "🎾", "🏸", "🛼",
+  "🎁", "🧸", "🪀", "🧩", "🎨", "🖍️", "🪁", "🎯",
+  "📚", "📗", "✏️", "🎒", "🔭", "🔬", "🧪", "🧲",
+  "🍦", "🍫", "🍩", "🍕", "🍔", "🍓", "🥤", "🍿",
+  "🎬", "🎡", "🏞️", "🏊", "🚗", "⌚", "🎧", "📱"
+];
+
+// Hamyon logosi — chiziqli ikona emas, o‘z rangi bilan chizilgan belgi.
+// Bolalar uchun eng sevimli bo‘lim bo‘lgani uchun u yorqin va «tirik»
+// ko‘rinishi kerak: ko‘k hamyon va uning ustidan tushayotgan oltin Bilig.
+function walletLogo(size) {
+  size = size || 40;
+  return '<svg class="wallet-logo" width="' + size + '" height="' + size + '" viewBox="0 0 64 64" fill="none">' +
+    // Bilig tangasi
+    '<circle cx="41" cy="15" r="11" fill="#F59E0B"/>' +
+    '<circle cx="41" cy="15" r="7.6" fill="#FBBF24"/>' +
+    '<path d="M41 9.6l1.6 3.3 3.6.5-2.6 2.5.6 3.6-3.2-1.7-3.2 1.7.6-3.6-2.6-2.5 3.6-.5z" fill="#FEF3C7"/>' +
+    // Hamyon tanasi
+    '<rect x="6" y="25" width="48" height="31" rx="9" fill="#4E8EF7"/>' +
+    // Qopqoq
+    '<path d="M6 34v-1a9 9 0 0 1 9-9h30a9 9 0 0 1 9 9v1z" fill="#7EAFFA"/>' +
+    // Karta uyasi
+    '<rect x="34" y="34" width="26" height="13" rx="6.5" fill="#EAF2FF"/>' +
+    '<circle cx="43" cy="40.5" r="3.1" fill="#F59E0B"/>' +
+    '</svg>';
+}
+
+// Sovg‘a tasviri: ota-ona yuklagan rasm → belgi → bezak ikonasi.
+function giftMedia(item, idx, inner) {
+  const cls = "store-media tint-" + (idx % 4);
+  if (item.photo && item.photo.indexOf("up:") === 0) {
+    return '<div class="' + cls + ' has-photo"><img src="/uploads/gf/' +
+      escapeHtml(item.photo.slice(3)) + '" alt="" loading="lazy">' + (inner || "") + '</div>';
+  }
+  if (item.emoji) {
+    return '<div class="' + cls + '"><span class="store-emoji">' +
+      escapeHtml(item.emoji) + '</span>' + (inner || "") + '</div>';
+  }
+  return '<div class="' + cls + '"><div class="store-icon-lg">' + icon("gift", 22, 1.6) +
+    '</div>' + (inner || "") + '</div>';
+}
+
+// Kichik tasvir — hamyondagi ro‘yxatlar uchun
+function giftThumb(item) {
+  if (item.photo && item.photo.indexOf("up:") === 0) {
+    return '<div class="gift-thumb has-photo"><img src="/uploads/gf/' +
+      escapeHtml(item.photo.slice(3)) + '" alt="" loading="lazy"></div>';
+  }
+  if (item.emoji) return '<div class="gift-thumb"><span>' + escapeHtml(item.emoji) + '</span></div>';
+  return '<div class="gift-thumb">' + icon("gift", 18, 1.8) + '</div>';
+}
+
+// 60000 → «60 000». Uzun raqam bo‘linmasa o‘qish qiyin.
+function somFmt(n) {
+  return String(Math.round(n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " so‘m";
+}
+
+const MONTHS_SHORT = ["yan", "fev", "mar", "apr", "may", "iyn",
+                      "iyl", "avg", "sen", "okt", "noy", "dek"];
+
+function dayLabel(iso) {
+  if (!iso) return "";
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return "";
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const that = new Date(d); that.setHours(0, 0, 0, 0);
+  const diff = Math.round((today - that) / 86400000);
+  if (diff === 0) return "bugun";
+  if (diff === 1) return "kecha";
+  return d.getDate() + "-" + MONTHS_SHORT[d.getMonth()];
+}
+
 async function renderStoreTab() {
+  if (State.storeView === "wallet") return renderWalletView();
   const main = document.getElementById("app-main");
   if (isChildView()) {
     const data = await api("/api/child/store" + asChildQuery());
-    let html = '<div class="pill pill-gold" style="width:fit-content;margin-bottom:14px">' + icon("coin", 13, 2.2) + ' Balans: ' + data.balance + '</div>';
+    State.storeBalance = data.balance;
+    let html = walletBarHtml('<b>' + data.balance + '</b> Bilig', "Hamyonim");
     if (!data.items.length) {
       html += emptyState("gift", "Do‘kon hozircha bo‘sh",
         "Ota-onang tez orada sovg‘alarni qo‘yadi — sen esa Bilig yig‘ib turaver.", {
@@ -2704,46 +2997,75 @@ async function renderStoreTab() {
         });
     } else {
       html += '<div class="store-grid">' + data.items.map(function (i, idx) {
-        return '<div class="store-item">' +
-          '<div class="store-media tint-' + (idx % 4) + '"><div class="store-icon-lg">' + icon("gift", 22, 1.6) + '</div></div>' +
+        const isGoal = data.goal_item_id === i.id;
+        const goalFab = '<button class="store-goal-fab' + (isGoal ? " on" : "") +
+          '" data-action="toggle-goal" data-id="' + i.id + '" data-on="' + (isGoal ? "1" : "") +
+          '" aria-label="Orzu qilib belgilash">' + icon("star", 13, 2) + '</button>';
+        return '<div class="store-item' + (isGoal ? " is-goal" : "") + '">' +
+          giftMedia(i, idx, goalFab) +
           '<div class="store-body">' +
           '<p class="store-name">' + escapeHtml(i.name) + '</p>' +
-          '<div class="store-footer" style="margin-bottom:10px"><span class="store-price-chip">' + icon("coin", 12, 2.2) + ' ' + i.price + '</span></div>' +
-          '<button class="btn ' + (i.affordable ? "btn-primary" : "btn-secondary") + ' btn-block" style="padding:8px;font-size:14.5px" data-action="buy-item" data-id="' + i.id + '" ' + (i.affordable ? "" : "disabled") + '>' +
-          (i.affordable ? "Xarid qilish" : "Yetarli emas") + '</button>' +
+          '<div class="store-footer" style="margin-bottom:10px">' +
+          '<span class="store-price-chip">' + icon("coin", 12, 2.2) + ' ' + i.price + '</span>' +
+          (isGoal ? '<span class="goal-tag">' + icon("star", 11, 2.2) + ' Orzuim</span>' : "") +
+          '</div>' +
+          (i.affordable
+            ? '<button class="btn btn-primary btn-block" style="padding:8px;font-size:14.5px" ' +
+              'data-action="buy-item" data-id="' + i.id + '" data-name="' + escapeHtml(i.name) +
+              '" data-price="' + i.price + '">Xarid qilish</button>'
+            : '<div class="goal-bar"><i style="width:' + i.percent + '%"></i></div>' +
+              '<p class="goal-left">Yana <b>' + i.left + '</b> Bilig kerak</p>') +
           '</div></div>';
       }).join("") + '</div>';
     }
     main.innerHTML = html;
   } else {
-    const items = await api("/api/parent/store");
-    // Do‘kon bo‘sh bo‘lsa «Mahsulot» tugmasi ko‘rsatilmaydi — u bo‘sh
-    // ekrandagi «Sovg‘a qo‘shish» tugmasi bilan bir xil ish qiladi.
-    let html = items.length
+    const data = await api("/api/parent/store");
+    State.storeChildren = data.children || [];
+    State.storeItems = data.items || [];
+    State.walletRate = data.rate || 0;
+    State.walletShowSom = !!data.show_som;
+    const items = data.items || [];
+
+    let html = walletBarHtml(
+      data.rate ? ('1 Bilig = <b>' + somFmt(data.rate) + '</b>') : 'Bilig kursi belgilanmagan',
+      "Hamyon");
+    html += items.length
       ? '<div class="grid-2" style="margin-bottom:16px">' +
-        '<button class="btn btn-primary" data-action="open-store-add" style="display:flex;align-items:center;justify-content:center;gap:6px">' + icon("plus", 16, 2) + ' Mahsulot</button>' +
+        '<button class="btn btn-primary" data-action="open-store-add" style="display:flex;align-items:center;justify-content:center;gap:6px">' + icon("plus", 16, 2) + ' Sovg‘a</button>' +
         '<button class="btn btn-outline" data-action="open-rate">Bilig kursi</button></div>'
-      : '<button class="btn btn-outline btn-block" data-action="open-rate" style="margin-bottom:4px">Bilig kursi</button>';
+      : "";
     if (!items.length) {
       html += emptyState("gift", "Birinchi sovg‘ani qo‘yamiz",
         "Sovg‘a qimmat bo‘lishi shart emas — «1 soat multfilm» ham ajoyib rag‘bat.", {
           mascot: "quyoncha-sovga",
-          steps: ["Sovg‘a nomini va necha Bilig turishini yozasiz",
+          steps: ["Sovg‘a nomini, belgisini va necha Bilig turishini yozasiz",
                   "Farzandingiz kitob o‘qib Bilig yig‘adi",
                   "U sovg‘ani tanlaganda sizga xabar keladi"],
           action: "open-store-add", label: "Sovg‘a qo‘shish", btnIcon: "plus"
         });
+      html += '<p class="sec-label">Tayyor takliflar</p>' +
+        '<p class="section-sub">Bosilsa — darrov do‘konga qo‘shiladi.</p>' +
+        '<div class="quick-gifts">' + QUICK_GIFTS.map(function (q) {
+          return '<button class="quick-gift" data-action="quick-gift" data-name="' + escapeHtml(q[0]) +
+            '" data-price="' + q[1] + '" data-emoji="' + q[2] + '">' +
+            '<span class="qg-emoji">' + q[2] + '</span>' +
+            '<span class="qg-name">' + escapeHtml(q[0]) + '</span>' +
+            '<span class="qg-price">' + icon("coin", 11, 2.2) + ' ' + q[1] + '</span></button>';
+        }).join("") + '</div>';
     } else {
       html += '<div class="store-grid">' + items.map(function (i, idx) {
-        return '<div class="store-item">' +
-          '<div class="store-media tint-' + (idx % 4) + '">' +
-          '<div class="store-icon-lg">' + icon("gift", 22, 1.6) + '</div>' +
-          '<button class="store-edit-fab" data-action="open-store-edit" data-id="' + i.id + '" data-name="' + escapeHtml(i.name) + '" data-price="' + i.price + '" aria-label="Tahrirlash">' + icon("edit", 13, 2) + '</button>' +
-          '</div>' +
+        const editFab = '<button class="store-edit-fab" data-action="open-store-edit" data-id="' + i.id +
+          '" aria-label="Tahrirlash">' + icon("edit", 13, 2) + '</button>';
+        // Butun kartochka bosilsa tahrir oynasi ochiladi — qalam belgisi
+        // kichkina, ota-ona uni sezmasligi mumkin.
+        return '<div class="store-item is-tappable" data-action="open-store-edit" data-id="' + i.id + '">' +
+          giftMedia(i, idx, editFab) +
           '<div class="store-body">' +
           '<p class="store-name">' + escapeHtml(i.name) + '</p>' +
           '<div class="store-footer"><span class="store-price-chip">' + icon("coin", 12, 2.2) + ' ' + i.price + '</span>' +
-          '<button class="btn btn-outline" style="padding:6px 10px;font-size:14px" data-action="open-store-edit" data-id="' + i.id + '" data-name="' + escapeHtml(i.name) + '" data-price="' + i.price + '">Tahrirlash</button></div>' +
+          (data.rate ? '<span class="store-som">≈ ' + somFmt(i.price * data.rate) + '</span>' : "") +
+          '</div>' +
           '</div></div>';
       }).join("") + '</div>';
     }
@@ -2751,43 +3073,341 @@ async function renderStoreTab() {
   }
 }
 
-function openStoreEditModal(id, name, price) {
-  const isEdit = !!id;
-  openModal(isEdit ? "Mahsulotni tahrirlash" : "Yangi mahsulot",
-    '<label class="field-label">Mahsulot nomi</label>' +
-    '<input id="store-name" class="text-input" placeholder="Masalan: 1 soat multfilm" value="' + escapeHtml(name || "") + '" />' +
+// Tayyor sovg‘a takliflari — do‘kon bo‘sh turmasin. Narxlar taxminiy:
+// bola haftasiga o‘rtacha 20-30 Bilig yig‘adi.
+const QUICK_GIFTS = [
+  ["1 soat multfilm", 15, "🎬"],
+  ["Muzqaymoq", 10, "🍦"],
+  ["Do‘st bilan sayrga", 40, "🏞️"],
+  ["Yangi kitob", 60, "📚"],
+  ["Attraksionlar", 80, "🎡"],
+  ["Konstruktor", 150, "🧩"]
+];
+
+function walletBarHtml(left, label) {
+  return '<button class="wallet-bar" data-action="open-wallet">' +
+    '<span class="wb-ic">' + walletLogo(30) + '</span>' +
+    '<span class="wb-left">' + left + '</span>' +
+    '<span class="wb-go">' + label + ' ' + icon("chevron-right", 15, 2.2) + '</span>' +
+    '</button>';
+}
+
+// ---------------- HAMYON ----------------
+
+async function renderWalletView() {
+  const main = document.getElementById("app-main");
+  return isChildView() ? renderChildWallet(main) : renderParentWallet(main);
+}
+
+async function renderChildWallet(main) {
+  const d = await api("/api/child/wallet" + asChildQuery());
+  let html = '<button class="back-link" data-action="close-wallet">' +
+    icon("arrow-left", 16, 2) + ' Do‘kon</button>';
+
+  html += '<div class="wallet-hero">' +
+    '<div class="wh-glow"></div>' +
+    '<div class="wh-logo">' + walletLogo(74) + '</div>' +
+    '<p class="wh-lbl">Hamyoningda</p>' +
+    '<div class="wh-coin"><b>' + d.balance + '</b><span>Bilig</span></div>' +
+    (d.show_som && d.rate ? '<p class="wh-som">≈ ' + somFmt(d.balance * d.rate) + '</p>' : "") +
+    '<div class="wh-split">' +
+    '<div><b>' + d.earned + '</b><span>Jami yig‘gan</span></div>' +
+    '<div><b>' + d.spent + '</b><span>Sarflagan</span></div>' +
+    '</div></div>';
+
+  html += '<p class="sec-label">Sovg‘alarim</p>';
+  if (!d.purchases.length) {
+    html += '<div class="card empty-soft">' + icon("gift", 20, 1.8) +
+      '<p>Hali sovg‘a olmagansan. Bilig yig‘ib, do‘kondan tanlaysan.</p></div>';
+  } else {
+    html += '<div class="card wallet-list">' + d.purchases.map(function (p) {
+      const given = p.status === "given";
+      return '<div class="wl-row">' + giftThumb(p) +
+        '<div class="wl-mid"><p class="wl-name">' + escapeHtml(p.name) + '</p>' +
+        '<p class="wl-sub">' + dayLabel(p.created_at) + '</p></div>' +
+        '<div class="wl-right">' +
+        '<span class="store-price-chip">' + icon("coin", 11, 2.2) + ' ' + p.price + '</span>' +
+        '<span class="pill ' + (given ? "pill-leaf" : "pill-gold") + '">' +
+        (given ? "Qo‘lingda" : "Kutilmoqda") + '</span>' +
+        '</div></div>';
+    }).join("") + '</div>';
+  }
+
+  html += '<p class="sec-label">Harakatlar tarixi</p>';
+  if (!d.history.length) {
+    html += '<div class="card empty-soft">' + icon("clock", 20, 1.8) +
+      '<p>Bilig harakatlari shu yerda ko‘rinadi.</p></div>';
+  } else {
+    html += '<div class="card wallet-list">' + d.history.map(function (h) {
+      const plus = h.amount > 0;
+      return '<div class="wl-row"><div class="wl-amt ' + (plus ? "up" : "down") + '">' +
+        (plus ? "+" : "−") + Math.abs(h.amount) + '</div>' +
+        '<div class="wl-mid"><p class="wl-name">' + escapeHtml(h.note || "Bilig") + '</p>' +
+        '<p class="wl-sub">' + dayLabel(h.created_at) + '</p></div></div>';
+    }).join("") + '</div>';
+  }
+  main.innerHTML = html;
+}
+
+async function renderParentWallet(main) {
+  const d = await api("/api/parent/wallet");
+  let html = '<button class="back-link" data-action="close-wallet">' +
+    icon("arrow-left", 16, 2) + ' Do‘kon</button>' +
+    '<div class="wallet-head">' + walletLogo(42) +
+    '<div><p class="wh-head-title">Hamyon</p>' +
+    '<p class="wh-head-sub">Bilig qayerdan kelib, qayerga ketmoqda</p></div></div>';
+
+  html += '<div class="card rate-card" data-action="open-rate">' +
+    '<div class="rate-left"><p class="rate-lbl">Bilig kursi</p>' +
+    '<p class="rate-val">' + (d.rate ? '1 Bilig = ' + somFmt(d.rate) : 'Belgilanmagan') + '</p>' +
+    '<p class="rate-note">' + (d.show_som
+      ? 'Farzandingiz so‘mdagi qiymatni ko‘radi.'
+      : 'Farzandingizga so‘m ko‘rsatilmaydi.') + '</p></div>' +
+    '<span class="edit-link">O‘zgartirish</span></div>';
+
+  if (!d.children.length) {
+    html += emptyState("users", "Farzand qo‘shilmagan",
+      "Hamyon farzandingiz Bilig yig‘a boshlagach to‘ladi.", { mascot: "boyogli-oqish" });
+    main.innerHTML = html;
+    return;
+  }
+
+  d.children.forEach(function (c) {
+    // Kimning hisobi ekani darrov ko‘rinsin — ismning yoniga avatar.
+    html += '<div class="wallet-who"><span class="av">' +
+      avatarMarkup(c.avatar_id || "fox", 40) + '</span>' +
+      '<span class="ww-name">' + escapeHtml(c.name) + '</span>' +
+      '<span class="ww-sub">hamyoni</span></div>';
+    if (!c.earned && !c.spent) {
+      html += '<div class="card empty-soft">' + icon("coin", 20, 1.8) +
+        '<p>Hali Bilig yig‘magan. Kitob o‘qiy boshlagach shu yerda ko‘rinadi.</p></div>';
+      return;
+    }
+    html += '<div class="wallet-hero small">' +
+      '<div class="wh-split three">' +
+      '<div><b>' + c.earned + '</b><span>Yig‘gan</span></div>' +
+      '<div><b>' + c.spent + '</b><span>Sarflagan</span></div>' +
+      '<div><b>' + c.balance + '</b><span>Qolgan</span></div>' +
+      '</div>' +
+      (d.rate ? '<p class="wh-som soft">Qo‘lidagi Bilig ≈ ' + somFmt(c.balance * d.rate) + '</p>' : "") +
+      '</div>';
+
+    if (c.pending.length) {
+      const owed = c.pending.reduce(function (a, p) { return a + p.price; }, 0);
+      html += '<div class="promise-card">' +
+        '<p class="pc-title">' + icon("gift", 16, 2) + ' Va\'da qilingan sovg‘a: ' +
+        c.pending.length + ' ta</p>' +
+        c.pending.map(function (p) {
+          return '<div class="pc-row">' + giftThumb(p) +
+            '<div class="wl-mid"><p class="wl-name">' + escapeHtml(p.name) + '</p>' +
+            '<p class="wl-sub">' + p.price + ' Bilig' +
+            (d.rate ? ' · ≈ ' + somFmt(p.price * d.rate) : "") +
+            (p.days >= 1 ? ' · ' + p.days + ' kundan beri kutmoqda' : '') + '</p></div>' +
+            '<button class="btn btn-primary pc-btn" data-action="gift-given" data-id="' + p.purchase_id +
+            '">Berdim</button></div>';
+        }).join("") +
+        '<p class="pc-note">' + escapeHtml(promiseNote(c.name, owed, d.rate)) + '</p>' +
+        '</div>';
+    }
+    if (c.given_count) {
+      html += '<div class="card given-row">' + icon("check-circle", 17, 2) +
+        '<span>Berilgan sovg‘alar: <b>' + c.given_count + ' ta</b>' +
+        (d.rate ? ' · ' + somFmt(c.given_price * d.rate) : '') + '</span></div>';
+    }
+  });
+  main.innerHTML = html;
+}
+
+// Ota-onaga samimiy, dashnom bermaydigan eslatma.
+function promiseNote(childName, owed, rate) {
+  const money = rate ? " (taxminan " + somFmt(owed * rate) + ")" : "";
+  return childName + " bu sovg‘ani o‘z mehnati bilan — " + owed + " Bilig yig‘ib qo‘lga kiritdi" +
+    money + ". Va'daga vafo qilish farzandga kitobdan ham ko‘proq saboq beradi.";
+}
+
+// ---------------- SOVG‘A QO‘SHISH VA TAHRIRLASH ----------------
+
+// Tahrir oynasi to‘ldirilayotgan sovg‘a. Rasm tanlash oynasi shu oynaning
+// O‘RNIGA ochiladi, shuning uchun yozilganlar shu yerda saqlab turiladi —
+// aks holda rasm qo‘ygan ota-ona nom va narxni qaytadan yozardi.
+const GiftDraft = { id: "", name: "", price: "", emoji: "", photo: "" };
+
+function readGiftForm() {
+  const n = document.getElementById("store-name");
+  const pr = document.getElementById("store-price");
+  if (n) GiftDraft.name = n.value;
+  if (pr) GiftDraft.price = pr.value;
+}
+
+function openStoreEditModal(id, keep) {
+  if (!keep) {
+    const item = id ? (State.storeItems || []).find(function (x) { return String(x.id) === String(id); }) : null;
+    GiftDraft.id = id || "";
+    GiftDraft.name = item ? item.name : "";
+    GiftDraft.price = item ? item.price : "";
+    GiftDraft.emoji = item ? (item.emoji || "") : "";
+    GiftDraft.photo = item ? (item.photo || "") : "";
+  }
+  const item = { name: GiftDraft.name, price: GiftDraft.price };
+
+  openModal(id ? "Sovg‘ani tahrirlash" : "Yangi sovg‘a",
+    '<div id="gift-preview">' + giftPreviewHtml() + '</div>' +
+    '<div class="grid-2" style="margin-bottom:12px">' +
+    '<button class="btn btn-outline" data-action="gift-photo" style="display:flex;align-items:center;justify-content:center;gap:6px">' +
+    icon("image", 15, 2) + ' Rasm</button>' +
+    '<button class="btn btn-outline" data-action="gift-emoji-toggle" style="display:flex;align-items:center;justify-content:center;gap:6px">' +
+    icon("star", 15, 2) + ' Belgi</button></div>' +
+    '<div id="gift-emoji-grid" class="emoji-grid" hidden>' + GIFT_EMOJI.map(function (e) {
+      return '<button class="emoji-btn" data-action="gift-emoji" data-e="' + e + '">' + e + '</button>';
+    }).join("") + '</div>' +
+    '<label class="field-label">Sovg‘a nomi</label>' +
+    '<input id="store-name" class="text-input" placeholder="Masalan: 1 soat multfilm" value="' +
+    escapeHtml(item.name || "") + '" />' +
     '<label class="field-label">Narxi (Bilig)</label>' +
-    '<input id="store-price" type="number" class="text-input" placeholder="20" value="' + (price || "") + '" />' +
+    '<input id="store-price" type="number" class="text-input" placeholder="20" value="' +
+    (item.price || "") + '" oninput="updatePriceHint()" />' +
+    '<p id="price-hint" class="price-hint">' + priceHintText(Number(item.price) || 0) + '</p>' +
     '<button class="btn btn-primary btn-block" data-action="submit-store-save" data-id="' + (id || "") + '">Saqlash</button>' +
-    (isEdit ? '<button class="btn btn-danger btn-block" data-action="delete-store-item" data-id="' + id + '">' + icon("trash", 15, 2) + ' O‘chirish</button>' : "")
+    (id ? '<button class="btn btn-danger btn-block" data-action="delete-store-item" data-id="' + id + '">' +
+      icon("trash", 15, 2) + ' O‘chirish</button>' : "")
   );
 }
+
+function giftPreviewHtml() {
+  return giftMedia({ emoji: GiftDraft.emoji, photo: GiftDraft.photo }, 0, "") ;
+}
+function refreshGiftPreview() {
+  const el = document.getElementById("gift-preview");
+  if (el) el.innerHTML = giftPreviewHtml();
+}
+
+// Ota-onaga narx maslahati: bola haftasiga qancha Bilig yig‘ayotganidan
+// kelib chiqib, sovg‘a qancha vaqtda qo‘lga kirishini aytadi.
+function priceHintText(price) {
+  const kids = State.storeChildren || [];
+  if (!kids.length) return "";
+  const kid = kids.find(function (k) { return String(k.id) === String(State.activeChildId); }) || kids[0];
+  const weekly = kid.weekly || 0;
+  if (!weekly) {
+    return kid.name + " hali Bilig yig‘a boshlagani yo‘q — 15-40 Bilig oralig‘idan boshlang.";
+  }
+  if (!price) {
+    return kid.name + " haftasiga o‘rtacha " + weekly + " Bilig yig‘moqda.";
+  }
+  const weeks = price / weekly;
+  if (weeks < 0.5) {
+    return kid.name + " haftasiga ~" + weekly + " Bilig yig‘adi. Bu sovg‘a bir necha kunda qo‘lga kiradi — " +
+      "biroz qimmatroq qo‘ysangiz, qadri ortadi.";
+  }
+  if (weeks > 16) {
+    return kid.name + " haftasiga ~" + weekly + " Bilig yig‘adi. Bunga " + Math.round(weeks) +
+      " hafta ketadi — bola yo‘lda umidini uzishi mumkin.";
+  }
+  return kid.name + " haftasiga ~" + weekly + " Bilig yig‘moqda. Bu sovg‘a taxminan " +
+    (weeks < 1 ? "bir haftada" : Math.round(weeks) + " haftada") + " qo‘lga kiradi.";
+}
+function updatePriceHint() {
+  const el = document.getElementById("price-hint");
+  const inp = document.getElementById("store-price");
+  if (el && inp) el.textContent = priceHintText(Number(inp.value) || 0);
+}
+
+function toggleEmojiGrid() {
+  const g = document.getElementById("gift-emoji-grid");
+  if (g) g.hidden = !g.hidden;
+}
+function pickGiftEmoji(e) {
+  GiftDraft.emoji = e; GiftDraft.photo = "";
+  refreshGiftPreview();
+  const g = document.getElementById("gift-emoji-grid");
+  if (g) g.hidden = true;
+}
+function pickGiftPhoto() {
+  readGiftForm();
+  pickImage("gift", async function (blob) {
+    const fd = new FormData();
+    fd.append("photo", blob, "gift.webp");
+    try {
+      const res = await api("/api/parent/store/photo", { method: "POST", body: fd });
+      GiftDraft.photo = res.photo; GiftDraft.emoji = "";
+      // Kesish oynasi sovg‘a oynasining o‘rniga ochilgan edi — qaytaramiz.
+      openStoreEditModal(GiftDraft.id, true);
+    } catch (e) { toast(e.error || "Rasmni yuklab bo‘lmadi"); }
+  });
+}
+
 async function submitStoreSave(id) {
   const name = document.getElementById("store-name").value.trim();
   const price = Number(document.getElementById("store-price").value);
   if (!name || !price) { toast("Nomi va narxini kiriting"); return; }
-  if (id) { await api("/api/parent/store/" + id, { method: "DELETE" }); }
-  await api("/api/parent/store", { method: "POST", body: { name: name, price: price } });
+  const body = { name: name, price: price, emoji: GiftDraft.emoji, photo: GiftDraft.photo };
+  await api("/api/parent/store" + (id ? "/" + id : ""), { method: "POST", body: body });
   closeModal(); toast("Saqlandi"); switchTab("store");
 }
+
+async function addQuickGift(name, price, emoji) {
+  await api("/api/parent/store", { method: "POST", body: { name: name, price: Number(price), emoji: emoji } });
+  toast("Do‘konga qo‘shildi"); switchTab("store");
+}
+
 function openRateModal() {
+  const rate = State.walletRate || 0;
   openModal("Bilig kursi",
-    '<p class="section-sub">1 Bilig necha so‘mga teng bo‘lishini belgilang (ixtiyoriy).</p>' +
-    '<input id="rate-input" type="number" class="text-input" placeholder="500" />' +
+    '<p class="section-sub">1 Bilig necha so‘mga teng bo‘lishini belgilang. Bu faqat ' +
+    'sizning hisobingiz uchun — sovg‘alarga qancha sarflayotganingizni ko‘rasiz.</p>' +
+    '<input id="rate-input" type="number" class="text-input" placeholder="500" value="' + (rate || "") + '" />' +
+    '<label class="switch-row"><span>Farzandim so‘mdagi qiymatni ko‘rsin</span>' +
+    '<input id="rate-show" type="checkbox"' + (State.walletShowSom ? " checked" : "") + ' /></label>' +
+    '<p class="section-sub">Tavsiya: o‘chiq qoldiring. Bilig o‘z qadrida qolgani ma\'qul — ' +
+    'o‘qish «pul ishlash»ga aylanib qolmasin.</p>' +
     '<button class="btn btn-primary btn-block" data-action="submit-rate">Saqlash</button>'
   );
 }
 async function submitRate() {
   const rate = Number(document.getElementById("rate-input").value || 0);
-  await api("/api/parent/rate", { method: "POST", body: { rate: rate } });
+  const show = document.getElementById("rate-show").checked;
+  await api("/api/parent/rate", { method: "POST", body: { rate: rate, show_som: show } });
   closeModal(); toast("Bilig kursi saqlandi");
+  State.walletRate = rate; State.walletShowSom = show;
+  renderStoreTab();
 }
+
+// ---------------- XARID ----------------
+
+function openBuyConfirm(id, name, price) {
+  const left = (State.storeBalance || 0) - Number(price);
+  openModal("Sovg‘ani olasanmi?",
+    '<div class="buy-confirm">' +
+    '<p class="bc-name">' + escapeHtml(name) + '</p>' +
+    '<p class="bc-price">' + icon("coin", 18, 2.2) + ' <b>' + price + '</b> Bilig sarflanadi</p>' +
+    '<p class="bc-left">Shundan keyin qo‘lingda <b>' + left + '</b> Bilig qoladi.</p>' +
+    '</div>' +
+    '<button class="btn btn-primary btn-block" data-action="confirm-buy" data-id="' + id + '">Ha, olaman</button>' +
+    '<button class="btn btn-outline btn-block" data-action="close-modal">Hozircha yo‘q</button>'
+  );
+}
+
 async function buyItem(itemId) {
   const res = await api("/api/child/store/" + itemId + "/buy" + asChildQuery(), { method: "POST" });
   if (!res.ok) { toast(res.message); return; }
+  closeModal();
   mascotToast("quyoncha-sovga", "Sovg‘ang buyurtma qilindi",
               "Ota-onangga xabar yubordik.");
   refreshHeader(); renderStoreTab();
+}
+
+async function toggleGoal(itemId, isOn) {
+  await api("/api/child/goal" + asChildQuery(), {
+    method: "POST", body: { item_id: isOn ? 0 : Number(itemId) }
+  });
+  toast(isOn ? "Orzu bekor qilindi" : "Orzu qilib belgilandi");
+  renderStoreTab();
+}
+
+async function markGiftGiven(purchaseId) {
+  await api("/api/parent/purchase/" + purchaseId + "/given", { method: "POST" });
+  toast("Ajoyib — va'da bajarildi");
+  renderStoreTab();
 }
 
 // ==========================================================

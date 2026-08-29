@@ -15,6 +15,7 @@ Ishlatish:
     python3 tools/build_books_ai.py --kun 1 --limit 5    # sinov
     python3 tools/build_books_ai.py --kun 1              # 1-kunning hammasi
     python3 tools/build_books_ai.py --kun 1 --narx       # faqat narxni chamalash
+    python3 tools/build_books_ai.py --hammasi            # qolgan hamma kitob
 """
 
 import asyncio
@@ -481,14 +482,16 @@ async def one_book(book, usage):
 
 
 async def run(day, limit, dry):
+    """`day = 0` — kunlarga bo‘lmasdan, qolgan HAMMA kitobni ketma-ket qiladi."""
     with open(INDEX, encoding="utf-8") as fh:
         books = json.load(fh)
-    todo = [b for b in books if b.get("day") == day
+    todo = [b for b in books
+            if (day == 0 or b.get("day") == day)
             and not os.path.exists(os.path.join(OUT, b["work_file"][:-4] + ".json"))]
     if limit:
         todo = todo[:limit]
     if not todo:
-        print("%d-kunda qiladigan ish qolmagan." % day)
+        print("Qiladigan ish qolmagan." if day == 0 else "%d-kunda qiladigan ish qolmagan." % day)
         return 0
 
     chars = sum(b["sent_chars"] for b in todo)
@@ -497,7 +500,9 @@ async def run(day, limit, dry):
                   for b in todo)
     est = (chars / 4.0 + 2000 * len(todo)) / 1e6 * PRICE_IN + \
           out_tok / 1e6 * PRICE_OUT
-    print("%d-kun: %d ta kitob, taxminiy narx ~$%.2f\n" % (day, len(todo), est))
+    print(("HAMMASI: %d ta kitob, taxminiy narx ~$%.2f\n" % (len(todo), est))
+          if day == 0 else
+          ("%d-kun: %d ta kitob, taxminiy narx ~$%.2f\n" % (day, len(todo), est)))
     if dry:
         return 0
     if not os.getenv("GEMINI_API_KEY"):
@@ -527,7 +532,9 @@ async def run(day, limit, dry):
 
 def main():
     args = sys.argv[1:]
-    day = int(args[args.index("--kun") + 1]) if "--kun" in args else 1
+    # `--hammasi` — kunlarga bo‘lmay, qolgan barcha kitoblarni bir yo‘la
+    day = 0 if "--hammasi" in args else \
+        (int(args[args.index("--kun") + 1]) if "--kun" in args else 1)
     limit = int(args[args.index("--limit") + 1]) if "--limit" in args else 0
     dry = "--narx" in args
     os.makedirs(OUT, exist_ok=True)

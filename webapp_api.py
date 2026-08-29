@@ -100,12 +100,104 @@ for _col_sql in (
     # Bankdagi test qayerdan kelgan: 1 — o‘qish davomida yig‘ilgan sahifa
     # yozuvlaridan. Bunday test faqat YAKUNIY test sifatida ishlatiladi.
     "ALTER TABLE Test_Bank ADD COLUMN from_notes INTEGER DEFAULT 0",
+
+    # ---- Do‘kon va Hamyon (2026-08-29) ----
+    # Sovg‘aning ko‘rinishi: belgi (emoji) yoki ota-ona yuklagan rasm.
+    "ALTER TABLE Store_Items ADD COLUMN emoji TEXT",
+    "ALTER TABLE Store_Items ADD COLUMN photo TEXT",
+    # Bolaning «orzusi» — maqsad qilib tanlagan sovg‘asi. Bosh sahifada
+    # unga qancha qolgani ko‘rinib turadi.
+    "ALTER TABLE Users ADD COLUMN goal_item_id INTEGER",
+    # Ota-ona ruxsat bersagina bola Biligning so‘mdagi qiymatini ko‘radi.
+    # Sukut bo‘yicha o‘chiq: o‘qish «pul ishlash»ga aylanib qolmasin.
+    "ALTER TABLE Users ADD COLUMN show_som INTEGER DEFAULT 0",
 ):
     try:
         cursor.execute(_col_sql)
         conn.commit()
     except Exception:
         pass
+
+# ------------------------------------------------------------
+# HAMYON: xaridlar tarixi va Bilig hisob daftari
+# ------------------------------------------------------------
+# Ilgari sovg‘a sotib olinganda balans shunchaki kamayardi va hech qayerda
+# iz qolmasdi. Endi har bir xarid va har bir Bilig harakati yoziladi —
+# bola ham, ota-ona ham o‘z hamyonida hammasini ko‘radi.
+#
+# Sovg‘a nomi va narxi Purchases ichiga NUSXA qilib yoziladi: ota-ona
+# keyinchalik sovg‘ani do‘kondan o‘chirsa ham, tarix buzilmaydi.
+cursor.execute("""CREATE TABLE IF NOT EXISTS Purchases (
+    purchase_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    child_id    INTEGER,
+    parent_id   INTEGER,
+    item_id     INTEGER,
+    name        TEXT,
+    price       INTEGER,
+    emoji       TEXT,
+    photo       TEXT,
+    status      TEXT DEFAULT 'ordered',
+    created_at  TEXT,
+    given_at    TEXT
+)""")
+# Ota-onaga ko‘rsatiladigan xabarlar lentasi. Ilgari hamma xabar faqat
+# Telegramga ketardi va ilovada iz qolmasdi.
+cursor.execute("""CREATE TABLE IF NOT EXISTS Notifications (
+    notif_id   INTEGER PRIMARY KEY AUTOINCREMENT,
+    parent_id  INTEGER,
+    child_id   INTEGER,
+    kind       TEXT,
+    title      TEXT,
+    body       TEXT,
+    ref_id     INTEGER,
+    created_at TEXT,
+    read_at    TEXT
+)""")
+cursor.execute("""CREATE TABLE IF NOT EXISTS Coin_Ledger (
+    entry_id   INTEGER PRIMARY KEY AUTOINCREMENT,
+    child_id   INTEGER,
+    amount     INTEGER,
+    kind       TEXT,
+    note       TEXT,
+    created_at TEXT
+)""")
+conn.commit()
+
+
+def _earned_spent(child_id, balance):
+    """Jami yig‘ilgan va jami sarflangan Bilig.
+
+    Hisob daftari 2026-08-29 da paydo bo‘ldi — undan oldingi yig‘imlar
+    yozilmagan. Botdagi (Telegram) amallar ham daftardan tashqarida qoladi.
+    Shuning uchun «yig‘gan» daftardagi yig‘indi bilan cheklanmaydi:
+    u hech qachon `balans + sarflangan` dan kam bo‘lmaydi. Shunda uchala
+    raqam doim bir-biriga mos tushadi va bola hamyonida «Jami yig‘gan: 0,
+    balans: 214» degan tushunarsiz holat chiqmaydi.
+    """
+    cursor.execute(
+        "SELECT COALESCE(SUM(CASE WHEN amount > 0 THEN amount ELSE 0 END), 0), "
+        "       COALESCE(SUM(CASE WHEN amount < 0 THEN -amount ELSE 0 END), 0) "
+        "FROM Coin_Ledger WHERE child_id = ?", (child_id,))
+    r = cursor.fetchone()
+    earned, spent = int(r[0] or 0), int(r[1] or 0)
+    return max(earned, (balance or 0) + spent), spent
+
+
+def _ledger(child_id, amount, kind, note=""):
+    """Bilig kirim/chiqimini hisob daftariga yozadi.
+
+    DIQQAT: bu funksiya `db_lock` ni O‘ZI OLMAYDI — u har doim mavjud
+    `with db_lock:` bloki ICHIDA chaqiriladi (aks holda qulf ikki marta
+    olinib, dastur qotib qolardi).
+    """
+    if not amount:
+        return
+    cursor.execute(
+        "INSERT INTO Coin_Ledger (child_id, amount, kind, note, created_at) "
+        "VALUES (?, ?, ?, ?, ?)",
+        (child_id, int(amount), kind, note or "", datetime.now().isoformat())
+    )
+
 
 # ------------------------------------------------------------
 # ESKI NISHONLARNI YANGI TIZIMGA O‘TKAZISH (bir martalik)
@@ -228,7 +320,10 @@ print(f"[webapp_api] Mini App fayllari shu papkadan xizmat qiladi: {WEBAPP_DIR}"
 app = Flask(__name__, static_folder=WEBAPP_DIR, static_url_path="")
 
 # SQLite bir vaqtda ko‘p yozuvlarda xato bermasligi uchun oddiy qulf (lock)
-db_lock = threading.Lock()
+# RLock (oddiy Lock emas): qulf olingan blok ichidan yana qulf oladigan
+# yordamchi chaqirilsa, dastur qotib qolmaydi. Oddiy Lock bilan bu holat
+# butun serverni to‘xtatib qo‘yardi.
+db_lock = threading.RLock()
 
 # ------------------------------------------------------------
 # AI SARFINI TEJAYDIGAN JADVALLAR
@@ -326,8 +421,9 @@ UPLOAD_DIR = "/var/data/uploads" if os.path.isdir("/var/data") else \
     os.path.join(_HERE, "uploads")
 AVATAR_MAX_BYTES = 40 * 1024
 COVER_MAX_BYTES = 80 * 1024
+GIFT_MAX_BYTES = 60 * 1024
 
-for _sub in ("av", "cv"):
+for _sub in ("av", "cv", "gf"):
     try:
         os.makedirs(os.path.join(UPLOAD_DIR, _sub), exist_ok=True)
     except Exception as e:
@@ -1013,17 +1109,41 @@ def send_telegram_message(chat_id: int, text: str):
         print("Telegram xabar yuborishda xatolik:", e)
 
 
-def notify_parent(child_id: int, text: str):
+def notify_parent(child_id: int, text: str, feed=None):
     """Farzandning ota-onasiga xabar yuboradi.
 
     HOZIR bu Telegram orqali ketadi. Kelajakda o‘z ilovamiz chiqqanda
     faqat shu funksiya ichini almashtirish kifoya — chaqiruv joylari
     o‘zgarmaydi.
+
+    `feed` berilsa — xabar ilova ichidagi lentaga ham tushadi:
+    (kind, title, body[, ref_id]).
     """
     try:
         parent_id = get_parent_id(child_id)
         if parent_id:
             send_telegram_message(parent_id, text)
+            if feed:
+                _feed(parent_id, child_id, feed[0], feed[1], feed[2],
+                      feed[3] if len(feed) > 3 else None)
+    except Exception:
+        pass
+
+
+def _feed(parent_id, child_id, kind, title, body="", ref_id=None):
+    """Ota-ona bosh sahifasidagi xabarlar lentasiga bitta yozuv qo‘shadi.
+
+    Matn ilova uchun yoziladi: emoji va HTML teglarsiz, qisqa. Telegramdagi
+    xabar boshqacha bo‘lishi mumkin — u yerda emoji o‘rinli.
+    """
+    try:
+        with db_lock:
+            cursor.execute(
+                "INSERT INTO Notifications (parent_id, child_id, kind, title, body, "
+                "ref_id, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                (parent_id, child_id, kind, title, body or "", ref_id,
+                 datetime.now().isoformat()))
+            conn.commit()
     except Exception:
         pass
 
@@ -1074,10 +1194,14 @@ def announce_badges(child_id: int, names):
     if len(names) == 1:
         cond = badge_cond(names[0])
         notify_parent(child_id, f"🏅 <b>{name}</b> «{names[0]}» nishonini qo‘lga kiritdi.\n"
-                                f"{cond}. Bugun uni bir maqtab qo‘ying.")
+                                f"{cond}. Bugun uni bir maqtab qo‘ying.",
+                      feed=("badge", f"{name} «{names[0]}» nishonini qo‘lga kiritdi",
+                            f"{cond}. Bugun uni bir maqtab qo‘ying."))
     else:
         lst = "\n".join("• " + n for n in names)
-        notify_parent(child_id, f"🏅 <b>{name}</b> birdaniga {len(names)} ta nishon oldi:\n{lst}")
+        notify_parent(child_id, f"🏅 <b>{name}</b> birdaniga {len(names)} ta nishon oldi:\n{lst}",
+                      feed=("badge", f"{name} birdaniga {len(names)} ta nishon oldi",
+                            ", ".join(names)))
 
 
 def unseen_badges(child_id: int):
@@ -1505,10 +1629,12 @@ def api_link_parent():
         cursor.execute("SELECT name FROM Users WHERE user_id = ?", (uid,))
         nrow = cursor.fetchone()
         if prow:
+            _cn = nrow[0] if nrow else ""
             send_telegram_message(
-                prow[0],
-                f"✅ Farzandingiz ({nrow[0] if nrow else ''}) o‘z telefonidan ulandi!"
-            )
+                prow[0], f"✅ Farzandingiz ({_cn}) o‘z telefonidan ulandi!")
+            _feed(prow[0], local_id, "child_linked",
+                  f"{_cn} o‘z telefonidan ulandi",
+                  "Endi u kitobni o‘z qurilmasidan o‘qiy oladi.")
         return jsonify({"ok": True, "profile_ready": True})
 
     # ---- 2-yo‘l: ota-ona kodi ----
@@ -1539,6 +1665,9 @@ def api_link_parent():
         parent[0],
         f"✅ Farzandingiz ({child_name}) Mini App orqali profilingizga ulandi!"
     )
+    _feed(parent[0], uid, "child_linked",
+          f"{child_name} profilingizga ulandi",
+          "Endi uning o‘qishini shu yerdan kuzatib borasiz.")
     return jsonify({"ok": True})
 
 
@@ -1646,6 +1775,9 @@ def parent_home(child_id):
     last_audio_score = int(r[0]) if r and r[0] else None
 
     last_report = get_latest_report(child_id)
+    # Xabarlar lentasi — butun oila bo‘yicha (faqat tanlangan farzand emas).
+    feed = _unread_feed(g.user_id)
+
     return jsonify({
         "name": name, "coins": coins, "streak": streak, "rank": rank,
         "total_pages": total_pages, "completed_books": completed_books,
@@ -1653,7 +1785,8 @@ def parent_home(child_id):
         "recent_activity": recent_activity, "last_report": last_report,
         "last_badge": last_badge, "last_audio_score": last_audio_score,
         "week": get_week_activity(child_id), "next_rank": get_next_rank(total_pages),
-        "badges": badges or "", "shelf_books": get_shelf_books(child_id, g.user_id)
+        "badges": badges or "", "shelf_books": get_shelf_books(child_id, g.user_id),
+        "feed": feed
     })
 
 
@@ -1841,6 +1974,143 @@ def parent_recommended_books():
     age = int(request.args.get("age", 10))
     key = get_age_category_key(age)
     return jsonify(RECOMMENDED_BOOKS.get(key, []))
+
+
+def _split_book(raw):
+    """«Teddi. Yuriy Kazakov.» → («Teddi», «Yuriy Kazakov»)."""
+    text = (raw or "").strip().rstrip(".")
+    if not text:
+        return None
+    if "." in text:
+        title, author = text.split(".", 1)
+    else:
+        title, author = text, ""
+    return {"title": title.strip(), "author": author.strip()}
+
+
+def _child_titles(child_id):
+    """Bolaning rejasidagi kitob nomlari (takror tavsiya qilinmasin)."""
+    cursor.execute(
+        "SELECT pb.title FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+        "WHERE rp.child_id = ?", (child_id,))
+    return set((r[0] or "").strip().lower() for r in cursor.fetchall())
+
+
+def _recommend_for(child_id, age, limit=12):
+    """Yoshga mos, hali rejada bo‘lmagan kitoblar."""
+    have = _child_titles(child_id)
+    out = []
+    for raw in RECOMMENDED_BOOKS.get(get_age_category_key(age), []):
+        b = _split_book(raw)
+        if not b or b["title"].strip().lower() in have:
+            continue
+        out.append(b)
+        if len(out) >= limit:
+            break
+    return out
+
+
+@app.route("/api/parent/family_reading", methods=["GET"])
+@require_auth
+def parent_family_reading():
+    """«Oila kitobxonligi» — qaysi farzand nima o‘qiyapti, rejasida nechta kitob.
+
+    Kitobxona bo‘limining pastida, pasport ko‘rinishida chiqadi.
+    """
+    cursor.execute(
+        "SELECT fl.child_id, u.name, fl.child_age, u.avatar_id FROM Family_Link fl "
+        "JOIN Users u ON fl.child_id = u.user_id WHERE fl.parent_id = ? ORDER BY fl.rowid",
+        (g.user_id,))
+    kids = cursor.fetchall()
+
+    out = []
+    for cid, name, age, avatar in kids:
+        cursor.execute(
+            "SELECT COUNT(*), COALESCE(SUM(CASE WHEN pb.is_completed = 1 THEN 1 ELSE 0 END), 0) "
+            "FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+            "WHERE rp.child_id = ?", (cid,))
+        r = cursor.fetchone()
+        total, done = int(r[0] or 0), int(r[1] or 0)
+        cursor.execute(
+            "SELECT COALESCE(SUM(pages_read), 0) FROM Plan_Books pb "
+            "JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id WHERE rp.child_id = ?", (cid,))
+        pages = int(cursor.fetchone()[0] or 0)
+        out.append({
+            "id": cid, "name": name, "age": age or 10, "avatar_id": avatar or "fox",
+            "book_count": total, "done_count": done, "reading_count": total - done,
+            "pages": pages, "current": get_current_book(cid),
+        })
+    return jsonify(out)
+
+
+@app.route("/api/parent/recommended", methods=["GET"])
+@require_auth
+def parent_recommended():
+    """Tanlangan farzand yoshiga mos tavsiyalar (rejadagilari chiqarib tashlanadi)."""
+    raw = request.args.get("child_id")
+    cursor.execute(
+        "SELECT fl.child_id, fl.child_age, u.name FROM Family_Link fl "
+        "JOIN Users u ON fl.child_id = u.user_id WHERE fl.parent_id = ? ORDER BY fl.rowid",
+        (g.user_id,))
+    kids = cursor.fetchall()
+    if not kids:
+        return jsonify({"child": None, "books": []})
+    chosen = None
+    if raw:
+        try:
+            cid = int(raw)
+            chosen = next((k for k in kids if k[0] == cid), None)
+        except ValueError:
+            chosen = None
+    chosen = chosen or kids[0]
+    return jsonify({
+        "child": {"id": chosen[0], "name": chosen[2], "age": chosen[1] or 10},
+        "books": _recommend_for(chosen[0], chosen[1] or 10)
+    })
+
+
+@app.route("/api/child/recommended", methods=["GET"])
+@require_auth
+def child_recommended():
+    """Bolaning o‘z yoshiga mos tavsiyalar."""
+    child_id = _resolve_active_child(request)
+    parent_id = get_parent_id(child_id)
+    age = 10
+    if parent_id:
+        cursor.execute("SELECT child_age FROM Family_Link WHERE parent_id = ? AND child_id = ?",
+                       (parent_id, child_id))
+        r = cursor.fetchone()
+        age = (r[0] if r else 10) or 10
+    return jsonify(_recommend_for(child_id, age))
+
+
+@app.route("/api/child/book_request", methods=["POST"])
+@require_auth
+def child_book_request():
+    """«So‘rayman» — bola kitobni ota-onasidan so‘raydi.
+
+    Xabar ota-onaning lentasiga tushadi; u bir bosishda rejaga qo‘shadi.
+    """
+    child_id = _require_child_actor(request)
+    data = request.get_json(force=True) or {}
+    title = (data.get("title") or "").strip()[:120]
+    author = (data.get("author") or "").strip()[:120]
+    if not title:
+        return jsonify({"error": "Kitob tanlanmagan"}), 400
+    parent_id = get_parent_id(child_id)
+    if not parent_id:
+        return jsonify({"error": "Ota-onaga ulanmagansiz"}), 400
+
+    name = child_name_of(child_id)
+    _feed(parent_id, child_id, "book_request",
+          f"{name} «{title}» kitobini so‘rayapti",
+          (f"Muallif: {author}. " if author else "") +
+          "Kitobxona bo‘limidan bir bosishda rejasiga qo‘shasiz.")
+    send_telegram_message(
+        parent_id,
+        f"📚 <b>{name}</b> «{title}» kitobini so‘rayapti."
+    )
+    return jsonify({"ok": True})
 
 
 @app.route("/api/parent/catalog", methods=["GET"])
@@ -2175,6 +2445,8 @@ def parent_manage_coins(child_id):
             "UPDATE Users SET balance_coins = MAX(0, balance_coins + ?) WHERE user_id = ?",
             (delta, child_id)
         )
+        _ledger(child_id, delta, "manual",
+                "Ota-ona qo‘shdi" if delta > 0 else "Ota-ona ayirdi")
         conn.commit()
         cursor.execute("SELECT balance_coins FROM Users WHERE user_id = ?", (child_id,))
         new_balance = cursor.fetchone()[0]
@@ -2184,11 +2456,43 @@ def parent_manage_coins(child_id):
 
 # ---------------- OTA-ONA: SOVG‘ALAR DO‘KONI ----------------
 
+def _weekly_earn(child_id):
+    """Bola so‘nggi 4 haftada haftasiga o‘rtacha nechta Bilig topgan.
+
+    Ota-onaga sovg‘a narxini belgilashda maslahat berish uchun kerak:
+    juda arzon ham, umuman yetib bo‘lmaydigan ham bo‘lmasin.
+    """
+    cursor.execute(
+        "SELECT COALESCE(SUM(amount), 0) FROM Coin_Ledger "
+        "WHERE child_id = ? AND amount > 0 AND kind != 'start' AND created_at >= ?",
+        (child_id, (datetime.now() - timedelta(days=28)).isoformat()))
+    row = cursor.fetchone()
+    return int(round((row[0] if row else 0) / 4.0))
+
+
+def _item_row(r):
+    return {"id": r[0], "name": r[1], "price": r[2], "emoji": r[3] or "", "photo": r[4] or ""}
+
+
 @app.route("/api/parent/store", methods=["GET"])
 @require_auth
 def parent_store_list():
-    cursor.execute("SELECT item_id, name, price FROM Store_Items WHERE parent_id = ?", (g.user_id,))
-    return jsonify([{"id": r[0], "name": r[1], "price": r[2]} for r in cursor.fetchall()])
+    cursor.execute("SELECT item_id, name, price, emoji, photo FROM Store_Items "
+                   "WHERE parent_id = ? ORDER BY price", (g.user_id,))
+    items = [_item_row(r) for r in cursor.fetchall()]
+
+    # Narx maslahati uchun farzandlar ro‘yxati (haftalik o‘rtacha bilan).
+    cursor.execute("SELECT u.user_id, u.name FROM Family_Link fl "
+                   "JOIN Users u ON fl.child_id = u.user_id WHERE fl.parent_id = ?",
+                   (g.user_id,))
+    kids = cursor.fetchall()
+    children = [{"id": k[0], "name": k[1], "weekly": _weekly_earn(k[0])} for k in kids]
+
+    cursor.execute("SELECT coin_rate, show_som FROM Users WHERE user_id = ?", (g.user_id,))
+    row = cursor.fetchone()
+    return jsonify({"items": items, "children": children,
+                    "rate": (row[0] if row else 0) or 0,
+                    "show_som": bool(row[1]) if row else False})
 
 
 @app.route("/api/parent/store", methods=["POST"])
@@ -2197,34 +2501,242 @@ def parent_store_add():
     data = request.get_json(force=True) or {}
     name = (data.get("name") or "").strip()
     price = int(data.get("price") or 0)
+    emoji = (data.get("emoji") or "").strip()[:8]
+    photo = (data.get("photo") or "").strip()[:64]
     if not name or price <= 0:
         return jsonify({"error": "Nomi va narxini to‘g‘ri kiriting"}), 400
     with db_lock:
         cursor.execute(
-            "INSERT INTO Store_Items (parent_id, name, price) VALUES (?, ?, ?)", (g.user_id, name, price)
+            "INSERT INTO Store_Items (parent_id, name, price, emoji, photo) "
+            "VALUES (?, ?, ?, ?, ?)", (g.user_id, name, price, emoji, photo)
         )
         conn.commit()
     return jsonify({"ok": True})
 
 
+@app.route("/api/parent/store/<int:item_id>", methods=["POST"])
+@require_auth
+def parent_store_update(item_id):
+    """Sovg‘ani tahrirlash.
+
+    Ilgari frontend eskisini o‘chirib, yangisini qo‘shardi — shunda
+    sovg‘aning raqami o‘zgarib, bolaning «orzusi» uzilib qolardi.
+    """
+    data = request.get_json(force=True) or {}
+    name = (data.get("name") or "").strip()
+    price = int(data.get("price") or 0)
+    emoji = (data.get("emoji") or "").strip()[:8]
+    photo = (data.get("photo") or "").strip()[:64]
+    if not name or price <= 0:
+        return jsonify({"error": "Nomi va narxini to‘g‘ri kiriting"}), 400
+
+    cursor.execute("SELECT photo FROM Store_Items WHERE item_id = ? AND parent_id = ?",
+                   (item_id, g.user_id))
+    row = cursor.fetchone()
+    if not row:
+        return jsonify({"error": "Sovg‘a topilmadi"}), 404
+    old_photo = row[0] or ""
+
+    with db_lock:
+        cursor.execute(
+            "UPDATE Store_Items SET name = ?, price = ?, emoji = ?, photo = ? "
+            "WHERE item_id = ? AND parent_id = ?",
+            (name, price, emoji, photo, item_id, g.user_id))
+        conn.commit()
+
+    if old_photo.startswith("up:") and old_photo != photo:
+        drop_upload_if_unused("gf", old_photo[3:], "photo", "Store_Items")
+    return jsonify({"ok": True})
+
+
+@app.route("/api/parent/store/photo", methods=["POST"])
+@require_auth
+def parent_store_photo():
+    """Sovg‘a rasmi. Telefonda kichraytirilib, WebP holida keladi."""
+    if "photo" not in request.files:
+        return jsonify({"error": "Rasm topilmadi"}), 400
+    name, err = save_upload("gf", request.files["photo"].read(), GIFT_MAX_BYTES)
+    if err:
+        return jsonify({"error": err}), 400
+    return jsonify({"ok": True, "photo": "up:" + name})
+
+
 @app.route("/api/parent/store/<int:item_id>", methods=["DELETE"])
 @require_auth
 def parent_store_delete(item_id):
+    cursor.execute("SELECT photo FROM Store_Items WHERE item_id = ? AND parent_id = ?",
+                   (item_id, g.user_id))
+    row = cursor.fetchone()
+    old_photo = (row[0] or "") if row else ""
     with db_lock:
-        cursor.execute("DELETE FROM Store_Items WHERE item_id = ? AND parent_id = ?", (item_id, g.user_id))
+        cursor.execute("DELETE FROM Store_Items WHERE item_id = ? AND parent_id = ?",
+                       (item_id, g.user_id))
+        # Bu sovg‘ani orzu qilib turgan bola bo‘lsa — orzusi bo‘shatiladi.
+        cursor.execute("UPDATE Users SET goal_item_id = NULL WHERE goal_item_id = ?",
+                       (item_id,))
         conn.commit()
+    if old_photo.startswith("up:"):
+        drop_upload_if_unused("gf", old_photo[3:], "photo", "Store_Items")
     return jsonify({"ok": True})
 
 
 @app.route("/api/parent/rate", methods=["POST"])
 @require_auth
 def parent_set_rate():
-    """Bilig tangasining pul kursini belgilash (masalan 1 Bilig = 500 so‘m)."""
+    """Bilig tangasining pul kursini belgilash (masalan 1 Bilig = 500 so‘m).
+
+    `show_som` — farzandga shu qiymat ko‘rinsinmi. Sukut bo‘yicha o‘chiq:
+    o‘qish «pul ishlash»ga aylanib qolmasligi uchun.
+    """
     data = request.get_json(force=True) or {}
     rate = int(data.get("rate", 0))
+    show_som = 1 if data.get("show_som") else 0
     with db_lock:
-        cursor.execute("UPDATE Users SET coin_rate = ? WHERE user_id = ?", (rate, g.user_id))
+        cursor.execute("UPDATE Users SET coin_rate = ?, show_som = ? WHERE user_id = ?",
+                       (rate, show_som, g.user_id))
         conn.commit()
+    return jsonify({"ok": True})
+
+
+# ---------------- OTA-ONA: HAMYON ----------------
+
+def _pending_gifts(parent_id):
+    """Bola sotib olgan, lekin hali qo‘liga tegmagan sovg‘alar."""
+    cursor.execute(
+        "SELECT p.purchase_id, p.child_id, p.name, p.price, p.emoji, p.photo, "
+        "       p.created_at, u.name "
+        "FROM Purchases p LEFT JOIN Users u ON u.user_id = p.child_id "
+        "WHERE p.parent_id = ? AND p.status = 'ordered' ORDER BY p.purchase_id DESC",
+        (parent_id,))
+    out = []
+    for r in cursor.fetchall():
+        days = 0
+        try:
+            days = (datetime.now() - datetime.fromisoformat(r[6])).days
+        except Exception:
+            pass
+        out.append({"purchase_id": r[0], "child_id": r[1], "name": r[2], "price": r[3],
+                    "emoji": r[4] or "", "photo": r[5] or "", "days": days,
+                    "child_name": r[7] or ""})
+    return out
+
+
+GIFT_REMIND_DAYS = 3          # sovg‘a shuncha kun berilmasa — eslatma
+GIFT_REMIND_AGAIN_DAYS = 3    # eslatma o‘qilgach, shuncha kundan keyin qaytadi
+
+
+def _make_gift_reminders(parent_id):
+    """Uzoq vaqt berilmagan sovg‘a haqida eslatma xabari tug‘diradi.
+
+    Ota-ona eslatmani yopsa ham, sovg‘a berilmagunicha u belgilangan
+    kundan keyin qaytib keladi — bola va'dani kutib qolmasin.
+    """
+    border = (datetime.now() - timedelta(days=GIFT_REMIND_DAYS)).isoformat()
+    again = (datetime.now() - timedelta(days=GIFT_REMIND_AGAIN_DAYS)).isoformat()
+    cursor.execute(
+        "SELECT p.purchase_id, p.child_id, p.name, p.price, u.name FROM Purchases p "
+        "LEFT JOIN Users u ON u.user_id = p.child_id "
+        "WHERE p.parent_id = ? AND p.status = 'ordered' AND p.created_at <= ?",
+        (parent_id, border))
+    waiting = cursor.fetchall()
+    for pid, cid, item_name, price, cname in waiting:
+        cursor.execute(
+            "SELECT created_at, read_at FROM Notifications WHERE parent_id = ? AND kind = 'gift_wait' "
+            "AND ref_id = ? ORDER BY notif_id DESC LIMIT 1", (parent_id, pid))
+        last = cursor.fetchone()
+        if last:
+            if last[1] is None:
+                continue      # oldingi eslatma hali o‘qilmagan — ustiga qo‘shmaymiz
+            if last[1] >= again:
+                continue      # yaqinda yopilgan; sanoq YOPILGAN vaqtdan boshlanadi
+            # DIQQAT: bu yerda yaratilgan vaqtga qarash xato edi — ota-ona
+            # eslatmani yopgan zahoti yangisi tug‘ilib, «x» ishlamayotgandek
+            # ko‘rinardi.
+        _feed(parent_id, cid, "gift_wait",
+              f"«{item_name}» sovg‘asi hali berilmadi",
+              f"{cname or 'Farzandingiz'} uni {price} Bilig yig‘ib qo‘lga kiritgan edi. "
+              f"Va'daga vafo — eng katta saboq.", ref_id=pid)
+
+
+def _unread_feed(parent_id):
+    """Ota-ona hali yopmagan xabarlar (eng yangisi birinchi)."""
+    _make_gift_reminders(parent_id)
+    cursor.execute(
+        "SELECT n.notif_id, n.kind, n.title, n.body, n.created_at, u.name, u.avatar_id "
+        "FROM Notifications n LEFT JOIN Users u ON u.user_id = n.child_id "
+        "WHERE n.parent_id = ? AND n.read_at IS NULL "
+        # Eng yangisi birinchi. Tartib yozuv raqamiga emas, VAQTGA qarab —
+        # eslatmalar keyin tug‘ilgani uchun raqami kattaroq bo‘lib qoladi.
+        "ORDER BY n.created_at DESC, n.notif_id DESC LIMIT 20", (parent_id,))
+    return [{"id": r[0], "kind": r[1], "title": r[2], "body": r[3] or "",
+             "created_at": r[4], "child_name": r[5] or "", "avatar_id": r[6] or "fox"}
+            for r in cursor.fetchall()]
+
+
+@app.route("/api/parent/feed/<int:notif_id>/read", methods=["POST"])
+@require_auth
+def parent_feed_read(notif_id):
+    """Xabar o‘qildi — «x» bosilganda. Javobda qolgan xabarlar qaytadi."""
+    with db_lock:
+        cursor.execute("UPDATE Notifications SET read_at = ? "
+                       "WHERE notif_id = ? AND parent_id = ? AND read_at IS NULL",
+                       (datetime.now().isoformat(), notif_id, g.user_id))
+        conn.commit()
+    return jsonify({"ok": True, "feed": _unread_feed(g.user_id)})
+
+
+@app.route("/api/parent/wallet", methods=["GET"])
+@require_auth
+def parent_wallet():
+    """Ota-ona hamyoni: kurs, har farzandning yig‘imi-sarfi va va'dalar."""
+    cursor.execute("SELECT coin_rate, show_som FROM Users WHERE user_id = ?", (g.user_id,))
+    row = cursor.fetchone()
+    rate = (row[0] if row else 0) or 0
+    show_som = bool(row[1]) if row else False
+
+    cursor.execute("SELECT u.user_id, u.name, u.avatar_id, u.balance_coins FROM Family_Link fl "
+                   "JOIN Users u ON fl.child_id = u.user_id WHERE fl.parent_id = ?",
+                   (g.user_id,))
+    kids = cursor.fetchall()
+
+    pending = _pending_gifts(g.user_id)
+
+    children = []
+    for cid, cname, avatar, balance in kids:
+        earned, spent = _earned_spent(cid, balance)
+        cursor.execute(
+            "SELECT COUNT(*), COALESCE(SUM(price), 0) FROM Purchases "
+            "WHERE child_id = ? AND status = 'given'", (cid,))
+        gr = cursor.fetchone()
+        children.append({
+            "id": cid, "name": cname, "avatar_id": avatar or "fox",
+            "balance": balance, "earned": earned, "spent": spent,
+            "given_count": gr[0] or 0, "given_price": gr[1] or 0,
+            "pending": [p for p in pending if p["child_id"] == cid],
+        })
+    return jsonify({"rate": rate, "show_som": show_som, "children": children})
+
+
+@app.route("/api/parent/purchase/<int:purchase_id>/given", methods=["POST"])
+@require_auth
+def parent_purchase_given(purchase_id):
+    """«Sovg‘ani berdim» — va'da bajarildi."""
+    cursor.execute("SELECT child_id, name FROM Purchases "
+                   "WHERE purchase_id = ? AND parent_id = ? AND status = 'ordered'",
+                   (purchase_id, g.user_id))
+    row = cursor.fetchone()
+    if not row:
+        return jsonify({"error": "Xarid topilmadi"}), 404
+    child_id, item_name = row
+    with db_lock:
+        cursor.execute("UPDATE Purchases SET status = 'given', given_at = ? "
+                       "WHERE purchase_id = ?", (datetime.now().isoformat(), purchase_id))
+        conn.commit()
+    send_telegram_message(
+        child_id,
+        f"🎁 <b>«{item_name}»</b> sovg‘ang qo‘lingga tegdi! "
+        f"Buni o‘z mehnating bilan qozonding."
+    )
     return jsonify({"ok": True})
 
 
@@ -2304,6 +2816,24 @@ def _require_child_actor(request):
     return child_id
 
 
+def _child_goal(child_id, balance):
+    """Bolaning orzu qilgan sovg‘asi — bosh sahifada progress bilan turadi."""
+    cursor.execute("SELECT goal_item_id FROM Users WHERE user_id = ?", (child_id,))
+    row = cursor.fetchone()
+    item_id = (row[0] if row else 0) or 0
+    if not item_id:
+        return None
+    cursor.execute("SELECT item_id, name, price, emoji, photo FROM Store_Items WHERE item_id = ?",
+                   (item_id,))
+    r = cursor.fetchone()
+    if not r:
+        return None
+    price = r[2] or 0
+    return {"id": r[0], "name": r[1], "price": price, "emoji": r[3] or "",
+            "photo": r[4] or "", "left": max(0, price - balance),
+            "percent": min(100, int(balance * 100 / price)) if price else 100}
+
+
 @app.route("/api/child/home", methods=["GET"])
 @require_auth
 def child_home():
@@ -2366,7 +2896,8 @@ def child_home():
         "shelf_books": get_shelf_books(child_id),
         "last_audio_score": last_audio_score,
         "child_note": get_latest_child_note(child_id),
-        "unseen_badges": unseen_badges(child_id)
+        "unseen_badges": unseen_badges(child_id),
+        "goal": _child_goal(child_id, coins)
     })
 
 
@@ -2672,6 +3203,13 @@ def _apply_page_progress(book_id, child_id, new_page):
     pages_added = new_page - old_pages
     now_ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
+    # Kitob nomi hisob daftariga yoziladi — «nima uchun Bilig oldim?» degan
+    # savolga bola o‘z hamyonidan javob topsin. So‘rov qulfdan OLDIN:
+    # `cursor` yagona obyekt, kutib turgan natijani buzib qo‘ymasin.
+    cursor.execute("SELECT title FROM Plan_Books WHERE book_id = ?", (book_id,))
+    _t = cursor.fetchone()
+    _book_title = (_t[0] if _t else "") or "Kitob"
+
     with db_lock:
         cursor.execute("UPDATE Plan_Books SET pages_read = ? WHERE book_id = ?", (new_page, book_id))
         cursor.execute(
@@ -2683,6 +3221,8 @@ def _apply_page_progress(book_id, child_id, new_page):
                 "UPDATE Users SET balance_coins = balance_coins + ?, total_xp = total_xp + ? WHERE user_id = ?",
                 (earned_bilig, pages_added, child_id)
             )
+            _ledger(child_id, earned_bilig, "pages",
+                    "O‘qilgan betlar · %s" % _book_title)
         conn.commit()
 
     cursor.execute("SELECT streak_days FROM Users WHERE user_id = ?", (child_id,))
@@ -2850,6 +3390,7 @@ def _finish_voice(book_id, child_id, book_title, result, detail):
             cursor.execute(
                 "UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (bonus, child_id)
             )
+            _ledger(child_id, bonus, "voice", "Ovozli xulosa · %s" % book_title)
         cursor.execute(
             "INSERT INTO Diagnostic_Logs (child_id, book_id, type, factual_score, logic_score, "
             "conclusion_score, fluency_score, vocabulary_score, parent_note, convo_topic, created_at, bonus_bilig, child_note) "
@@ -2896,6 +3437,9 @@ def _finish_voice(book_id, child_id, book_title, result, detail):
             f"📌 {pr.get('summary', '')}\n\n✅ {pr.get('strengths', '')}\n🌱 {pr.get('weaknesses', '')}\n\n"
             f"{pr.get('conversation_topic', '')}"
         )
+        _feed(parent_id, child_id, "voice",
+              f"{child_name_of(child_id)} «{book_title}» bo‘yicha ovozli xulosa yubordi",
+              pr.get("summary", ""))
 
     return {
         "ok": True, "bonus_bilig": bonus,
@@ -3031,6 +3575,7 @@ def _finish_talk(book_id, child_id, book_title, result, detail, stage, question)
             cursor.execute(
                 "UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?",
                 (bonus, child_id))
+            _ledger(child_id, bonus, "talk", "AI ustoz savoli · %s" % book_title)
         cursor.execute(
             "INSERT INTO Diagnostic_Logs (child_id, book_id, type, factual_score, logic_score, "
             "conclusion_score, fluency_score, vocabulary_score, parent_note, convo_topic, "
@@ -3063,6 +3608,9 @@ def _finish_talk(book_id, child_id, book_title, result, detail, stage, question)
         parent_id = get_parent_id(child_id) if done else None
     if parent_id:
         nom = "kitob boshi" if stage == "start" else "kitob yakuni"
+        _feed(parent_id, child_id, "talk",
+              f"{child_name_of(child_id)} AI ustoz savoliga javob berdi",
+              f"«{book_title}» — {nom}. " + (pr.get("summary", "") or ""))
         send_telegram_message(
             parent_id,
             f"🎓 <b>{book_title}</b> — AI ustoz savoli ({nom})\n\n"
@@ -3186,6 +3734,9 @@ def child_submit_test(book_id):
             cursor.execute(
                 "UPDATE Users SET balance_coins = balance_coins + ? WHERE user_id = ?", (earned, child_id)
             )
+            _ledger(child_id, earned, "test", {
+                "mid_test_1": "1-oraliq test", "mid_test_2": "2-oraliq test",
+                "final_test": "Yakuniy test"}.get(stage, "Test"))
         # Test natijasi diagnostikaga yoziladi — ilgari Mini App'dagi testlar
         # umuman qayd etilmasdi, faqat botdagilari yozilardi.
         cursor.execute(
@@ -3207,11 +3758,23 @@ def child_submit_test(book_id):
                 "SELECT COUNT(*) FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
                 "WHERE rp.child_id = ? AND pb.is_completed = 1", (child_id,))
             done = cursor.fetchone()[0]
+            _cname = child_name_of(child_id)
             notify_parent(
                 child_id,
-                f"📖 <b>{child_name_of(child_id)}</b> «{brow[0]}» kitobini tugatdi.\n"
-                f"{brow[1] or 0} bet. Javonida endi {done} ta tugatilgan kitob bor."
+                f"📖 <b>{_cname}</b> «{brow[0]}» kitobini tugatdi.\n"
+                f"{brow[1] or 0} bet. Javonida endi {done} ta tugatilgan kitob bor.",
+                feed=("book_done", f"{_cname} «{brow[0]}» kitobini tugatdi",
+                      f"{brow[1] or 0} bet. Javonida endi {done} ta tugatilgan kitob bor.")
             )
+    _parent_id = get_parent_id(child_id)
+    if _parent_id:
+        _stage_name = {"mid_test_1": "1-oraliq testni", "mid_test_2": "2-oraliq testni",
+                       "final_test": "yakuniy testni"}.get(stage, "testni")
+        _feed(_parent_id, child_id, "test",
+              f"{child_name_of(child_id)} {_stage_name} topshirdi",
+              f"{total} savoldan {correct} tasi to‘g‘ri ({percent}%)." +
+              (f" {earned} Bilig oldi." if earned else ""))
+
     _mark_celebrated(child_id, new_badges, later_badges)
     announce_badges(child_id, new_badges + later_badges)
 
@@ -3244,13 +3807,46 @@ def child_store():
     child_id = _resolve_active_child(request)
     parent_id = get_parent_id(child_id)
     if not parent_id:
-        return jsonify([])
-    cursor.execute("SELECT item_id, name, price FROM Store_Items WHERE parent_id = ?", (parent_id,))
-    cursor.execute("SELECT balance_coins FROM Users WHERE user_id = ?", (child_id,))
-    balance = cursor.fetchone()[0]
-    cursor.execute("SELECT item_id, name, price FROM Store_Items WHERE parent_id = ?", (parent_id,))
-    items = [{"id": r[0], "name": r[1], "price": r[2], "affordable": r[2] <= balance} for r in cursor.fetchall()]
-    return jsonify({"balance": balance, "items": items})
+        return jsonify({"balance": 0, "items": [], "goal_item_id": 0})
+
+    cursor.execute("SELECT balance_coins, goal_item_id FROM Users WHERE user_id = ?", (child_id,))
+    row = cursor.fetchone()
+    balance = row[0] if row else 0
+    goal_id = (row[1] if row else 0) or 0
+
+    cursor.execute("SELECT item_id, name, price, emoji, photo FROM Store_Items "
+                   "WHERE parent_id = ? ORDER BY price", (parent_id,))
+    items = [{"id": r[0], "name": r[1], "price": r[2], "emoji": r[3] or "",
+              "photo": r[4] or "", "affordable": r[2] <= balance,
+              "percent": min(100, int(balance * 100 / r[2])) if r[2] else 100,
+              "left": max(0, r[2] - balance)} for r in cursor.fetchall()]
+    return jsonify({"balance": balance, "items": items, "goal_item_id": goal_id})
+
+
+@app.route("/api/child/goal", methods=["POST"])
+@require_auth
+def child_set_goal():
+    """Bolaning «orzusi» — maqsad qilib tanlagan sovg‘asi.
+
+    Bitta orzu bo‘ladi: yangisi tanlansa eskisi almashadi. O‘sha sovg‘ani
+    qayta bossa — orzu bekor qilinadi.
+    """
+    child_id = _require_child_actor(request)
+    data = request.get_json(force=True) or {}
+    item_id = int(data.get("item_id") or 0)
+
+    if item_id:
+        parent_id = get_parent_id(child_id)
+        cursor.execute("SELECT 1 FROM Store_Items WHERE item_id = ? AND parent_id = ?",
+                       (item_id, parent_id))
+        if not cursor.fetchone():
+            return jsonify({"error": "Sovg‘a topilmadi"}), 404
+
+    with db_lock:
+        cursor.execute("UPDATE Users SET goal_item_id = ? WHERE user_id = ?",
+                       (item_id or None, child_id))
+        conn.commit()
+    return jsonify({"ok": True, "goal_item_id": item_id})
 
 
 @app.route("/api/child/store/<int:item_id>/buy", methods=["POST"])
@@ -3261,17 +3857,30 @@ def child_store_buy(item_id):
     child_id = _require_child_actor(request)
     cursor.execute("SELECT balance_coins, name FROM Users WHERE user_id = ?", (child_id,))
     balance, child_name = cursor.fetchone()
-    cursor.execute("SELECT name, price, parent_id FROM Store_Items WHERE item_id = ?", (item_id,))
+    cursor.execute("SELECT name, price, parent_id, emoji, photo FROM Store_Items WHERE item_id = ?",
+                   (item_id,))
     item = cursor.fetchone()
     if not item:
         return jsonify({"error": "Sovg‘a topilmadi"}), 404
-    item_name, price, parent_id = item
+    item_name, price, parent_id, emoji, photo = item
 
     if balance < price:
         return jsonify({"ok": False, "message": "Bilig yetarli emas 😔"})
 
     with db_lock:
-        cursor.execute("UPDATE Users SET balance_coins = balance_coins - ? WHERE user_id = ?", (price, child_id))
+        cursor.execute("UPDATE Users SET balance_coins = balance_coins - ? WHERE user_id = ?",
+                       (price, child_id))
+        _ledger(child_id, -price, "buy", item_name)
+        # Sovg‘a nomi va rasmi NUSXA qilib yoziladi: ota-ona keyin uni
+        # do‘kondan o‘chirsa ham, xaridlar tarixi to‘liq qoladi.
+        cursor.execute(
+            "INSERT INTO Purchases (child_id, parent_id, item_id, name, price, emoji, photo, "
+            "status, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, 'ordered', ?)",
+            (child_id, parent_id, item_id, item_name, price, emoji or "", photo or "",
+             datetime.now().isoformat()))
+        # Orzusi ushbu sovg‘a bo‘lsa — u ro‘yobga chiqdi, bo‘shatamiz.
+        cursor.execute("UPDATE Users SET goal_item_id = NULL "
+                       "WHERE user_id = ? AND goal_item_id = ?", (child_id, item_id))
         conn.commit()
 
     send_telegram_message(
@@ -3279,7 +3888,49 @@ def child_store_buy(item_id):
         f"🛒 <b>{child_name}</b> do‘kondan <b>«{item_name}»</b> sovg‘asini {price} 🔅 ga sotib oldi. "
         f"Sovg‘ani berishni unutmang!"
     )
+    _feed(parent_id, child_id, "gift",
+          f"{child_name} «{item_name}» sovg‘asini qo‘lga kiritdi",
+          f"{price} Bilig yig‘di. Sovg‘ani berishni unutmang.")
     return jsonify({"ok": True, "new_balance": balance - price})
+
+
+@app.route("/api/child/wallet", methods=["GET"])
+@require_auth
+def child_wallet():
+    """Bolaning hamyoni: balans, yig‘imi, sovg‘alari va harakatlar tarixi."""
+    child_id = _resolve_active_child(request)
+    cursor.execute("SELECT balance_coins, name FROM Users WHERE user_id = ?", (child_id,))
+    row = cursor.fetchone()
+    balance = row[0] if row else 0
+    child_name = row[1] if row else ""
+
+    earned, spent = _earned_spent(child_id, balance)
+
+    # So‘m qiymati faqat ota-ona ruxsat bergan bo‘lsa ko‘rsatiladi.
+    rate, show_som = 0, False
+    parent_id = get_parent_id(child_id)
+    if parent_id:
+        cursor.execute("SELECT coin_rate, show_som FROM Users WHERE user_id = ?", (parent_id,))
+        pr = cursor.fetchone()
+        if pr and pr[1]:
+            show_som, rate = True, (pr[0] or 0)
+
+    cursor.execute(
+        "SELECT purchase_id, name, price, emoji, photo, status, created_at, given_at "
+        "FROM Purchases WHERE child_id = ? ORDER BY purchase_id DESC LIMIT 30", (child_id,))
+    purchases = [{"id": r[0], "name": r[1], "price": r[2], "emoji": r[3] or "",
+                  "photo": r[4] or "", "status": r[5], "created_at": r[6],
+                  "given_at": r[7]} for r in cursor.fetchall()]
+
+    cursor.execute(
+        "SELECT amount, kind, note, created_at FROM Coin_Ledger "
+        "WHERE child_id = ? ORDER BY entry_id DESC LIMIT 40", (child_id,))
+    history = [{"amount": r[0], "kind": r[1], "note": r[2], "created_at": r[3]}
+               for r in cursor.fetchall()]
+
+    return jsonify({"name": child_name, "balance": balance, "earned": earned,
+                    "spent": spent, "show_som": show_som, "rate": rate,
+                    "purchases": purchases, "history": history})
 
 
 @app.route("/api/child/rating", methods=["GET"])

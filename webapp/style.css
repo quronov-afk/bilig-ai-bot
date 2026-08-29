@@ -297,7 +297,7 @@ html, body {
 .empty-state .em-sub { margin: 0 auto; max-width: 300px; font-size: 15px; line-height: 1.45; }
 
 .em-steps {
-  list-style: none; margin: 18px auto 4px; padding: 14px 16px; max-width: 340px;
+  list-style: none; margin: 16px auto 4px; padding: 14px 16px; max-width: 340px;
   text-align: left; background: var(--surface); border-radius: var(--radius-md);
   box-shadow: var(--shadow-raised); display: flex; flex-direction: column; gap: 11px;
 }
@@ -307,7 +307,7 @@ html, body {
   font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; margin-top: 1px;
 }
 .em-btn {
-  margin-top: 18px; display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  margin-top: 20px; display: inline-flex; align-items: center; justify-content: center; gap: 7px;
   width: 100%; max-width: 340px;
 }
 
@@ -828,12 +828,321 @@ html, body {
   background: rgba(255,255,255,.85); border: none; display: flex; align-items: center; justify-content: center;
   color: var(--text-soft); cursor: pointer;
 }
+.store-item.is-tappable { cursor: pointer; }
 .store-body { padding: 12px; }
 .store-name { font-size: 15.5px; font-weight: 700; margin: 0 0 8px; min-height: 34px; line-height: 1.35; }
 .store-footer { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
 .store-price-chip {
   font-size: 14.5px; font-weight: 700; color: var(--gold-deep); background: var(--gold-bg);
   padding: 4px 9px; border-radius: 999px; display: flex; align-items: center; gap: 4px; flex-shrink: 0;
+}
+
+/* ---------- Sovg‘a tasviri: rasm yoki belgi ---------- */
+.store-media.has-photo { padding: 0; }
+.store-media.has-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.store-emoji { font-size: 40px; line-height: 1; filter: drop-shadow(0 2px 4px rgba(15,23,42,.12)); }
+
+/* Orzu belgisi — bola bitta sovg‘ani maqsad qilib tanlaydi */
+.store-goal-fab {
+  position: absolute; top: 6px; right: 6px; width: 26px; height: 26px; border-radius: 8px;
+  background: rgba(255,255,255,.85); border: none; display: flex; align-items: center;
+  justify-content: center; color: var(--text-faint); cursor: pointer;
+}
+.store-goal-fab.on { background: var(--gold); color: #fff; }
+.store-item.is-goal { border-color: var(--gold); box-shadow: 0 0 0 2px var(--gold-bg), var(--shadow-raised); }
+.goal-tag {
+  font-size: 12.5px; font-weight: 800; color: var(--gold-deep); display: flex; align-items: center; gap: 3px;
+}
+.store-som { font-size: 13px; color: var(--text-faint); font-weight: 600; }
+
+/* Yetmagan sovg‘a — «Yetarli emas» o‘rniga qancha qolgani ko‘rsatiladi */
+.goal-bar { height: 7px; border-radius: 999px; background: var(--surface-soft); overflow: hidden; }
+.goal-bar i { display: block; height: 100%; border-radius: 999px; background: var(--gold); }
+.goal-left { font-size: 13.5px; color: var(--text-soft); margin: 6px 0 0; }
+.goal-left b { color: var(--gold-deep); }
+
+/* Bosh sahifadagi orzu chizig‘i */
+.goal-strip {
+  width: 100%; display: flex; align-items: center; gap: 12px; text-align: left;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: 12px; margin-bottom: 16px; box-shadow: var(--shadow-raised);
+  color: var(--text-faint); cursor: pointer;
+}
+.gs-mid { flex: 1; min-width: 0; }
+.gs-name {
+  font-size: 15px; font-weight: 800; color: var(--text); margin: 0 0 7px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.gs-left { font-size: 13.5px; color: var(--text-soft); margin: 6px 0 0; }
+.gs-left b { color: var(--gold-deep); }
+
+/* Tayyor sovg‘a takliflari — do‘kon bo‘sh turmasin */
+.quick-gifts { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+.quick-gift {
+  display: flex; align-items: center; gap: 8px; padding: 10px 12px; cursor: pointer;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-raised); text-align: left;
+}
+.qg-emoji { font-size: 22px; line-height: 1; }
+.qg-name { flex: 1; font-size: 14px; font-weight: 700; min-width: 0; }
+.qg-price {
+  font-size: 13px; font-weight: 800; color: var(--gold-deep);
+  display: flex; align-items: center; gap: 3px;
+}
+
+/* Belgi tanlash panjarasi */
+/* `hidden` atributi ishlashi uchun — aks holda `display: grid` uni bosib ketadi */
+.emoji-grid[hidden] { display: none; }
+.emoji-grid {
+  display: grid; grid-template-columns: repeat(8, minmax(0,1fr)); gap: 6px;
+  background: var(--surface-soft); border-radius: var(--radius-sm); padding: 10px; margin-bottom: 12px;
+}
+.emoji-btn {
+  font-size: 21px; line-height: 1; padding: 6px 0; border: none; background: none;
+  border-radius: 9px; cursor: pointer;
+}
+.emoji-btn:active { background: var(--brand-bg); }
+.price-hint {
+  font-size: 13.5px; color: var(--text-soft); background: var(--brand-bg);
+  border-radius: var(--radius-sm); padding: 10px 12px; margin: 10px 0 14px; line-height: 1.45;
+}
+.switch-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  font-size: 15px; font-weight: 700; margin: 14px 0 4px;
+}
+.switch-row input { width: 20px; height: 20px; accent-color: var(--brand); }
+
+/* ---------- HAMYON ---------- */
+.wallet-bar {
+  width: 100%; display: flex; align-items: center; gap: 10px; cursor: pointer;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: 11px 13px; margin-bottom: 14px; box-shadow: var(--shadow-raised); text-align: left;
+}
+.wb-ic {
+  width: 34px; height: 34px; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.wb-left { flex: 1; font-size: 14.5px; color: var(--text-soft); min-width: 0; }
+.wb-left b { color: var(--text); font-size: 17px; }
+.wb-go {
+  font-size: 14px; font-weight: 700; color: var(--brand-deep);
+  display: flex; align-items: center; gap: 2px; flex-shrink: 0;
+}
+
+/* Bolaning hamyoni — ilovadagi eng sevimli bo‘lim bo‘lishi kerak,
+   shuning uchun bu yagona joyda to‘q ko‘k, «tirik» kartochka ishlatiladi. */
+.wallet-hero {
+  position: relative; overflow: hidden;
+  background: linear-gradient(160deg, #5B95F8 0%, #3B6FDE 55%, #2F5BC4 100%);
+  border-radius: 24px; padding: 20px 16px 16px; text-align: center; margin-bottom: 18px;
+  box-shadow: 0 18px 34px -18px rgba(47, 99, 214, .75);
+  color: #fff;
+}
+/* Orqadagi yumshoq yorug‘lik — kartochka tekis bo‘lib qolmasin */
+.wh-glow {
+  position: absolute; top: -70px; right: -50px; width: 190px; height: 190px;
+  border-radius: 50%; background: rgba(255,255,255,.16); pointer-events: none;
+}
+.wh-logo { position: relative; display: flex; justify-content: center; margin-bottom: 4px; }
+.wh-logo .wallet-logo { filter: drop-shadow(0 8px 14px rgba(15,23,42,.28)); }
+.wallet-hero:not(.small) .wh-lbl { font-size: 14px; color: rgba(255,255,255,.82); margin: 6px 0 2px; }
+.wallet-hero:not(.small) .wh-coin {
+  display: flex; align-items: baseline; justify-content: center; gap: 7px;
+  font-size: 44px; font-weight: 800; line-height: 1.1; color: #fff;
+}
+.wallet-hero:not(.small) .wh-coin span { font-size: 17px; font-weight: 700; color: rgba(255,255,255,.8); }
+.wallet-hero:not(.small) .wh-som {
+  display: inline-block; font-size: 14px; font-weight: 700; color: #fff; margin: 8px 0 0;
+  background: rgba(255,255,255,.18); padding: 4px 12px; border-radius: 999px;
+}
+.wallet-hero:not(.small) .wh-split {
+  margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,.24);
+}
+.wallet-hero:not(.small) .wh-split b { color: #fff; }
+.wallet-hero:not(.small) .wh-split span { color: rgba(255,255,255,.78); }
+
+/* Ota-ona hamyonidagi farzand hisobi — oq, vazmin kartochka.
+   DIQQAT: yuqoridagi oq matn qoidalari `:not(.small)` bilan cheklangan —
+   aks holda oq fonda oq raqamlar ko‘rinmay qolardi. */
+.wallet-hero.small {
+  background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-raised); padding: 14px 16px 12px;
+}
+.wh-coin {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  color: var(--gold); font-size: 34px; font-weight: 800; line-height: 1;
+}
+.wh-coin b { color: var(--text); }
+.wh-lbl { font-size: 14px; color: var(--text-soft); margin: 8px 0 0; }
+.wh-som { font-size: 15px; font-weight: 700; color: var(--success-deep); margin: 6px 0 0; }
+.wh-som.soft { font-size: 13.5px; font-weight: 600; color: var(--text-soft); margin-top: 10px; }
+.wh-split {
+  display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px;
+  margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border);
+}
+.wh-split.three { grid-template-columns: repeat(3, minmax(0,1fr)); }
+.wh-split div { display: flex; flex-direction: column; gap: 2px; }
+.wh-split b { font-size: 19px; font-weight: 800; }
+.wh-split span { font-size: 12.5px; color: var(--text-soft); }
+
+/* Hamyon sarlavhasi (ota-ona) */
+.wallet-head { display: flex; align-items: center; gap: 12px; margin: 4px 0 16px; }
+.wh-head-title { font-size: 22px; font-weight: 800; margin: 0; }
+.wh-head-sub { font-size: 13.5px; color: var(--text-soft); margin: 2px 0 0; }
+
+/* Kimning hisobi ekani — avatar bilan */
+.wallet-who { display: flex; align-items: center; gap: 10px; margin: 20px 0 10px; }
+.wallet-who .av { width: 40px; height: 40px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+.ww-name { font-size: 17px; font-weight: 800; }
+.ww-sub { font-size: 14px; color: var(--text-soft); }
+
+.wallet-list { padding: 4px 12px; }
+.wl-row {
+  display: flex; align-items: center; gap: 11px; padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+}
+.wl-row:last-child { border-bottom: none; }
+.wl-mid { flex: 1; min-width: 0; }
+.wl-name {
+  font-size: 15px; font-weight: 700; margin: 0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.wl-sub { font-size: 12.5px; color: var(--text-faint); margin: 2px 0 0; }
+.wl-right { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; flex-shrink: 0; }
+.wl-amt {
+  width: 46px; flex-shrink: 0; font-size: 16px; font-weight: 800; text-align: center;
+}
+.wl-amt.up { color: var(--success-deep); }
+.wl-amt.down { color: var(--danger-deep); }
+
+.gift-thumb {
+  width: 42px; height: 42px; border-radius: 12px; flex-shrink: 0; overflow: hidden;
+  background: var(--brand-bg); color: var(--brand-deep);
+  display: flex; align-items: center; justify-content: center;
+}
+.gift-thumb span { font-size: 22px; line-height: 1; }
+.gift-thumb.has-photo { background: none; }
+.gift-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.empty-soft {
+  display: flex; align-items: center; gap: 10px; color: var(--text-soft); padding: 14px;
+}
+.empty-soft p { margin: 0; font-size: 14.5px; }
+
+.rate-card { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.rate-left { flex: 1; min-width: 0; }
+.rate-lbl { font-size: 13px; color: var(--text-soft); margin: 0; }
+.rate-val { font-size: 17px; font-weight: 800; margin: 3px 0 0; }
+.rate-note { font-size: 13px; color: var(--text-faint); margin: 4px 0 0; }
+
+/* Va'da qilingan sovg‘alar — ota-onaga iliq eslatma */
+.promise-card {
+  background: var(--gold-bg); border: 1px solid #FCD34D; border-radius: var(--radius-md);
+  padding: 14px; margin-bottom: 16px;
+}
+.pc-title {
+  display: flex; align-items: center; gap: 6px; margin: 0 0 10px;
+  font-size: 15px; font-weight: 800; color: var(--gold-deep);
+}
+.pc-row {
+  display: flex; align-items: center; gap: 10px; background: var(--surface);
+  border-radius: var(--radius-sm); padding: 10px; margin-bottom: 8px;
+}
+.pc-btn { padding: 8px 14px; font-size: 14px; flex-shrink: 0; width: auto; }
+.pc-note { font-size: 13.5px; color: var(--gold-deep); margin: 10px 0 0; line-height: 1.5; }
+.given-row {
+  display: flex; align-items: center; gap: 9px; color: var(--success-deep);
+  font-size: 14.5px; padding: 12px 14px;
+}
+
+/* Bosh sahifadagi xabarlar lentasi (ota-ona).
+   Bir vaqtda bitta xabar turadi; «x» bosilsa keyingisi chiqadi. */
+.feed-card {
+  display: flex; align-items: flex-start; gap: 11px;
+  background: var(--gold-bg); border: 1px solid #FCD34D; border-radius: var(--radius-md);
+  padding: 13px 12px 13px 13px; margin-bottom: 16px;
+  animation: feed-in .22s ease-out;
+}
+@keyframes feed-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: none; }
+}
+.feed-card.is-leaving { opacity: .35; transition: opacity .15s ease-out; }
+.fc-ic {
+  width: 34px; height: 34px; border-radius: 11px; flex-shrink: 0;
+  background: rgba(255,255,255,.75); color: var(--gold-deep);
+  display: flex; align-items: center; justify-content: center;
+}
+.fc-body { flex: 1; min-width: 0; }
+.fc-title { font-size: 15px; font-weight: 800; color: var(--gold-deep); margin: 0; line-height: 1.35; }
+.fc-sub { font-size: 14px; color: #A16207; margin: 4px 0 0; line-height: 1.45; }
+.fc-meta { font-size: 12.5px; color: #B45309; margin: 6px 0 0; font-weight: 700; }
+.fc-x {
+  width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0; cursor: pointer;
+  background: rgba(255,255,255,.8); border: 1px solid rgba(180,83,9,.18);
+  color: var(--gold-deep); display: flex; align-items: center; justify-content: center;
+  transition: background .15s ease, transform .15s ease;
+}
+.fc-x:active { background: #fff; transform: scale(.92); }
+
+/* Xarid tasdig‘i */
+.buy-confirm { text-align: center; padding: 6px 0 14px; }
+.bc-name { font-size: 19px; font-weight: 800; margin: 0 0 10px; }
+.bc-price {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  color: var(--gold-deep); font-size: 16px; margin: 0 0 6px;
+}
+.bc-left { font-size: 14.5px; color: var(--text-soft); margin: 0; }
+
+/* ---------- KITOBXONA: oila kitobxonligi (pasport) ---------- */
+.fam-list { padding: 4px 14px; }
+.fam-row {
+  display: flex; align-items: flex-start; gap: 12px; padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.fam-row:last-child { border-bottom: none; }
+.fam-av { width: 44px; height: 44px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+.fam-mid { flex: 1; min-width: 0; }
+.fam-name {
+  font-size: 16px; font-weight: 800; margin: 0 0 5px;
+  display: flex; align-items: baseline; gap: 7px;
+}
+.fam-age { font-size: 12.5px; font-weight: 700; color: var(--text-faint); }
+.fam-book {
+  font-size: 14.5px; color: var(--text); margin: 0 0 7px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.fam-book.is-soft { color: var(--text-faint); }
+.fam-meta { font-size: 13px; color: var(--text-soft); margin: 7px 0 0; }
+.fam-btn { margin-top: 10px; padding: 7px 14px; font-size: 14px; width: auto; }
+
+/* ---------- KITOBXONA: tavsiya javoni ---------- */
+.rec-shelf {
+  display: flex; gap: 12px; overflow-x: auto; padding: 2px 0 10px;
+  scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch;
+}
+.rec-shelf::-webkit-scrollbar { display: none; }
+.rec-item {
+  flex: 0 0 108px; scroll-snap-align: start; background: none; border: none;
+  padding: 0; text-align: left; cursor: pointer;
+}
+.rec-cover {
+  width: 108px; height: 156px; border-radius: 12px; overflow: hidden; margin-bottom: 7px;
+  box-shadow: var(--shadow-raised); background: var(--surface-soft);
+}
+.rec-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rec-cover.cover-blank {
+  display: flex; align-items: center; justify-content: center;
+  background: hsl(var(--h) 70% 94%); color: hsl(var(--h) 45% 38%);
+}
+.rec-cover.cover-blank span { font-size: 40px; font-weight: 800; }
+.rec-name {
+  display: block; font-size: 13.5px; font-weight: 700; line-height: 1.3;
+  overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+}
+.rec-author {
+  display: block; font-size: 12.5px; color: var(--text-faint); margin-top: 2px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 
 /* Nishonlar (badge) katakchalari */

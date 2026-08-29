@@ -112,9 +112,14 @@ matnlarga tegilmasin**. Bu degani:
 
 ## Ilova arxitekturasi
 
-- **4 ta doimiy tab** (pastki navigatsiya): Bosh sahifa, Rejalar, Do‘kon +
+- **4 ta doimiy tab** (pastki navigatsiya): Bosh sahifa, **Kitobxona**, Do‘kon +
   to‘rtinchisi rolga qarab farq qiladi: ota-onada **Bolaxona**, bolada
-  **Reyting**. Ota-onada Reyting'ga header'dagi belgi orqali kirilyapti
+  **Reyting**. Diqqat: «Kitobxona» — ko‘rinadigan nom; koddagi ichki nomi
+  avvalgidek `plans` bo‘lib qoladi (2026-08-29 da qayta nomlandi).
+  Kitobxona ichida: kitob qo‘shish, rejalar, «Oila kitobxonligi» pasporti
+  va yoshga mos tavsiyalar javoni.
+- **Do‘kon ichida Hamyon** — alohida tab emas, `State.storeView` bilan
+  almashadigan ikkinchi ko‘rinish. Ota-onada Reyting'ga header'dagi belgi orqali kirilyapti
   (yuqorida, doim ko‘rinadi).
 - **Bolaxona rejimi**: ota-ona farzand nomidan kirib, uning to‘liq (child)
   interfeysida ishlaydi. `State.activeChildId` shu holatni belgilaydi;
