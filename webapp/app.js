@@ -2648,7 +2648,11 @@ async function openBookModal(bookId) {
     if (!t || t.done) return;
     if (t.open) {
       talkCards += choiceCard({
-        ic: "help", tone: "gold", action: "open-talk",
+        // Suhbat pufakchasi — ilovada AI ustozning o‘z belgisi
+        // (ota-onadagi «AI ustoz xulosasi» ham shu belgi bilan).
+        // Ilgari savol belgisi turardi: ega uni «xunuk va yetarlicha
+        // ma'no bermaydi» dedi (2026-08-31).
+        ic: "message-circle", tone: "gold", action: "open-talk",
         data: { id: bookId, stage: st },
         title: talkNames[st], tag: "5 Bilig", desc: talkDescs[st]
       });
@@ -2690,10 +2694,11 @@ async function openBookModal(bookId) {
       title: "Bet raqamini o‘zim yozaman",
       desc: "Rasm chiqmasa yoki yorug‘lik yetmasa — raqamni qo‘lda kiritasan."
     }) +
-    talkHtml +
     '<p class="eyebrow" style="margin-top:18px">Kitob haqida gapirib ber</p>' +
     voiceHtml +
-    testsHtml
+    testsHtml +
+    // AI ustoz savoli eng oxirida — ega qarori (2026-08-31).
+    talkHtml
   );
 }
 
