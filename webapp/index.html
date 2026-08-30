@@ -138,6 +138,16 @@ setTimeout(function () { document.documentElement.classList.add("css-ok"); }, 10
 
     <header id="app-header">
       <div class="header-user">
+        <!-- Ilovaning O‘Z «orqaga» tugmasi. Telegramniki ham ulangan, lekin
+             ega buni ilova ichida ko‘rishni so‘radi: kelajakda alohida
+             mobil ilova bo‘lganda Telegram tugmasi bo‘lmaydi. -->
+        <button id="header-back" class="back-btn hidden" data-action="go-back"
+                aria-label="Orqaga" title="Orqaga">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+          </svg>
+        </button>
         <div class="avatar" id="header-avatar">A</div>
         <div class="header-texts">
           <div class="header-name" id="header-name">—</div>

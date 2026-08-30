@@ -871,11 +871,18 @@ function isModalOpen() {
 }
 
 function syncBackButton() {
-  if (!tg || !tg.BackButton) return;
-  const deep = isModalOpen() || !!State.subPage ||
+  // Oyna ochiq bo‘lsa, sarlavha oynaning ostida qoladi — u yerdagi tugma
+  // ko‘rinmaydi, oynaning o‘z «x» belgisi ishlaydi.
+  const canGoBack = !!State.subPage ||
     (State.currentTab === "store" && State.storeView === "wallet") ||
     (State.currentTab && State.currentTab !== "home");
-  if (deep) tg.BackButton.show(); else tg.BackButton.hide();
+
+  const btn = document.getElementById("header-back");
+  if (btn) btn.classList.toggle("hidden", !canGoBack);
+
+  // Telegramniki ham yonma-yon ishlaydi: u ochiq oynani ham yopa oladi.
+  if (!tg || !tg.BackButton) return;
+  if (canGoBack || isModalOpen()) tg.BackButton.show(); else tg.BackButton.hide();
 }
 
 async function goBack() {
@@ -1204,6 +1211,7 @@ document.addEventListener("click", async function (e) {
       case "open-tab": switchTab(el.dataset.tab); break;
       case "retry-tab": switchTab(el.dataset.tab); break;
       case "close-modal": closeModal(); break;
+      case "go-back": await goBack(); break;
 
       case "open-child-detail":
         State.selectedChildId = Number(el.dataset.id);
