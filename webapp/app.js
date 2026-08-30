@@ -89,82 +89,23 @@ const State = {
 
 // ---------------- KO‘RSATMA CHIZMALARI ----------------
 // Bola o‘qimasdan ham tushunishi kerak bo‘lgan ikki joy: sahifani rasmga
-// olish va ovozda gapirish. Matn emas, RASM tushuntiradi — kichik bola
-// hali yaxshi o‘qimaydi, kattaroq bola esa uzun izohni o‘qimaydi.
-// Uslub ilovaning ikonalari bilan bir xil: faqat chiziq, emoji yo‘q.
+// olish va ovozda gapirish. Matn emas, RASM tushuntiradi.
+//
+// Chizmalar AI bilan, ilovaning maskotlari bilan bir uslubda chizilgan —
+// `tools/draw_guides.py`. Avval bu yerda qo‘lda chizilgan chiziqli
+// variant turgan edi; ega ma'nosini ma'qulladi, lekin «chiroyli
+// chiqmagan» dedi (2026-08-31).
 const GUIDE_ART = {
-
-  // Ochiq kitob, ustida suratga olish ramkasi. Bet raqami ataylab
-  // ramka ichida va yorqin rangda — asosiy shart shu.
-  "page-photo":
-    '<svg viewBox="0 0 240 150" fill="none" aria-hidden="true">' +
-    '<g class="ga-soft">' +
-      '<path d="M120 30C102 22 70 20 34 26v96c36-6 68-4 86 4"/>' +
-      '<path d="M120 30c18-8 50-10 86-4v96c-36-6-68-4-86 4"/>' +
-      '<line x1="120" y1="30" x2="120" y2="126"/>' +
-    '</g>' +
-    // chap betdagi matn qatorlari
-    '<g class="ga-faint">' +
-      '<line x1="48" y1="46" x2="104" y2="43"/>' +
-      '<line x1="48" y1="60" x2="104" y2="57"/>' +
-      '<line x1="48" y1="74" x2="94" y2="72"/>' +
-      '<line x1="48" y1="88" x2="104" y2="86"/>' +
-      '<line x1="136" y1="43" x2="192" y2="46"/>' +
-      '<line x1="136" y1="57" x2="192" y2="60"/>' +
-      '<line x1="136" y1="72" x2="182" y2="74"/>' +
-    '</g>' +
-    // suratga olish ramkasi — o‘ng bet to‘liq ichida
-    '<g class="ga-accent">' +
-      '<path d="M132 40v-8h10"/><path d="M200 34h10v8"/>' +
-      '<path d="M210 118v8h-10"/><path d="M142 126h-10v-8"/>' +
-    '</g>' +
-    // bet raqami — yorqin doirada
-    '<circle class="ga-mark-bg" cx="176" cy="106" r="14"/>' +
-    '<circle class="ga-accent" cx="176" cy="106" r="14"/>' +
-    '<text class="ga-num" x="176" y="106" text-anchor="middle" dominant-baseline="central">18</text>' +
-    // kichik kamera belgisi
-    '<g class="ga-accent">' +
-      '<rect x="14" y="12" width="34" height="24" rx="6"/>' +
-      '<circle cx="31" cy="24" r="6"/>' +
-      '<path d="M25 12l3-4h6l3 4"/>' +
-    '</g>' +
-    '</svg>',
-
-  // Ochiq kitob va undan chiqayotgan ovoz to‘lqinlari: «kitob haqida
-  // gapir». Mikrofon kitobga tayangan — ikkisi bir ish ekani ko‘rinsin.
-  "voice":
-    '<svg viewBox="0 0 240 150" fill="none" aria-hidden="true">' +
-    '<g class="ga-soft">' +
-      '<path d="M74 44C62 37 42 35 20 39v78c22-4 42-2 54 4"/>' +
-      '<path d="M74 44c12-7 32-9 54-5v78c-22-4-42-2-54 4"/>' +
-      '<line x1="74" y1="44" x2="74" y2="121"/>' +
-    '</g>' +
-    '<g class="ga-faint">' +
-      '<line x1="34" y1="56" x2="64" y2="54"/>' +
-      '<line x1="34" y1="70" x2="64" y2="68"/>' +
-      '<line x1="34" y1="84" x2="58" y2="83"/>' +
-      '<line x1="86" y1="54" x2="116" y2="56"/>' +
-      '<line x1="86" y1="68" x2="116" y2="70"/>' +
-    '</g>' +
-    // mikrofon
-    '<circle class="ga-mark-bg" cx="150" cy="80" r="30"/>' +
-    '<g class="ga-accent">' +
-      '<rect x="143" y="60" width="14" height="24" rx="7"/>' +
-      '<path d="M136 78a14 14 0 0 0 28 0"/>' +
-      '<line x1="150" y1="92" x2="150" y2="100"/>' +
-    '</g>' +
-    // ovoz to‘lqinlari
-    '<g class="ga-accent">' +
-      '<path d="M190 62a26 26 0 0 1 0 36"/>' +
-      '<path d="M204 50a44 44 0 0 1 0 60"/>' +
-    '</g>' +
-    '</svg>'
+  "page-photo": "sahifa",     // ochiq kitob va unga qaratilgan telefon
+  "voice": "ovoz"             // kitob haqida gapirayotgan boyo‘g‘li
 };
 
 // Chizmani oynaga qo‘yish uchun tayyor bo‘lak.
 function guideArt(name) {
-  const art = GUIDE_ART[name];
-  return art ? '<div class="guide-art">' + art + '</div>' : "";
+  const file = GUIDE_ART[name];
+  return file
+    ? '<div class="guide-art"><img src="/guides/' + file + '.webp?v=' + ASSET_V + '" alt=""></div>'
+    : "";
 }
 
 // ---------------- IKONALAR (Feather uslubi, emoji YO‘Q) ----------------

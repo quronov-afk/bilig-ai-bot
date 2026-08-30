@@ -1960,27 +1960,14 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
 /* ==========================================================
    KO‘RSATMA CHIZMALARI — sahifa rasmi va ovozli xulosa oynalarida
    ----------------------------------------------------------
-   Bola matnni o‘qimasdan ham nima qilishini tushunsin. Chizma ilova
-   ikonalari bilan bir uslubda: faqat chiziq, emoji yo‘q.
+   Rasmning o‘z foni krem (maskotlar bilan bir xil), shuning uchun
+   kartochkaga qo‘shimcha fon berilmaydi — faqat burchaklari yumaltiriladi.
    ========================================================== */
 .guide-art {
-  background: var(--brand-bg);
   border-radius: var(--radius-md);
-  padding: 10px 14px;
+  overflow: hidden;
   margin-bottom: 12px;
+  background: #F6E9D8;
+  line-height: 0;
 }
-.guide-art svg { display: block; width: 100%; height: auto; max-height: 132px; }
-
-.guide-art .ga-soft,
-.guide-art .ga-faint,
-.guide-art .ga-accent {
-  fill: none; stroke-linecap: round; stroke-linejoin: round;
-}
-.guide-art .ga-soft   { stroke: var(--text-soft); stroke-width: 2.2; }
-.guide-art .ga-faint  { stroke: var(--text-faint); stroke-width: 2; opacity: .5; }
-.guide-art .ga-accent { stroke: var(--brand); stroke-width: 2.4; }
-.guide-art .ga-mark-bg { fill: var(--surface); stroke: none; }
-.guide-art .ga-num {
-  fill: var(--brand); stroke: none;
-  font-family: 'Nunito', sans-serif; font-size: 15px; font-weight: 800;
-}
+.guide-art img { display: block; width: 100%; height: auto; }
