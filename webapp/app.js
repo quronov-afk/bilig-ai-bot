@@ -88,24 +88,115 @@ const State = {
 };
 
 // ---------------- KO‘RSATMA CHIZMALARI ----------------
-// Bola o‘qimasdan ham tushunishi kerak bo‘lgan ikki joy: sahifani rasmga
-// olish va ovozda gapirish. Matn emas, RASM tushuntiradi.
+// Bola o‘qimasdan ham tushunishi kerak bo‘lgan uch joy: sahifani rasmga
+// olish, bet raqamini qo‘lda yozish va ovozda gapirish.
 //
-// Chizmalar AI bilan, ilovaning maskotlari bilan bir uslubda chizilgan —
-// `tools/draw_guides.py`. Avval bu yerda qo‘lda chizilgan chiziqli
-// variant turgan edi; ega ma'nosini ma'qulladi, lekin «chiroyli
-// chiqmagan» dedi (2026-08-31).
+// TARIX (2026-08-31). Avval shu yerda chiziqli chizma bor edi — ega
+// ma'nosini ma'qulladi, lekin «chiroyli chiqmagan» dedi. Keyin AI bilan
+// maskot uslubida rasm chizdirildi — chiroyli chiqdi, lekin ega
+// birinchisini afzal ko‘rdi: «aniq ma'no ko‘rsatma beradigan chizma
+// edi». Shuning uchun CHIZMA usuli qaytarildi, lekin bu safar sifatli:
+// yassi konturlar o‘rniga to‘ldirilgan shakllar, soya va ilovaning
+// haqiqiy ranglari. (AI varianti kerak bo‘lsa — tools/draw_guides.py.)
+//
+// Uchalasi bir oilaga o‘xshasin uchun tuzilishi bir xil: CHAPDA kitob,
+// O‘NGDA bolaning haqiqatda ko‘radigan narsasi (telefon yoki tugma).
+
+// Har uchala chizmadagi ochiq kitob — bir xil.
+const GD_BOOK =
+  '<ellipse class="gd-shadow" cx="95" cy="130" rx="60" ry="5"/>' +
+  // Betlar o‘rtaga — muqova tomonga — engashadi: shunda yassi
+  // to‘rtburchak emas, ochiq kitob bo‘lib ko‘rinadi.
+  '<path class="gd-paper" d="M95 62C84 51 62 44 40 44.5 36.5 44.6 34.5 46.5 34.5 49.5V106c0 3 2 4.9 5.5 4.8 22-.5 44 6.2 55 17.2Z"/>' +
+  '<path class="gd-paper" d="M95 62c11-11 33-18 55-17.5 3.5.1 5.5 2 5.5 5V106c0 3-2 4.9-5.5 4.8-22-.5-44 6.2-55 17.2Z"/>' +
+  '<path class="gd-spine" d="M95 62V128"/>' +
+  '<g class="gd-textline">' +
+    '<path d="M46 66h34"/><path d="M46 76h34"/><path d="M46 86h27"/><path d="M46 96h34"/>' +
+    '<path d="M110 66h34"/><path d="M110 76h34"/><path d="M110 86h27"/>' +
+  '</g>';
+
+// Bet raqami — kitob betining pastki burchagida, oltin doirada.
+// Ko‘rsatmaning eng muhim bo‘lagi shu, shuning uchun ajralib turadi.
+const GD_PAGENUM =
+  '<circle class="gd-gold-bg" cx="136" cy="99" r="10.5"/>' +
+  '<circle class="gd-gold-line" cx="136" cy="99" r="10.5"/>' +
+  '<text class="gd-num" x="136" y="99">18</text>';
+
+// Telefon korpusi. Ichiga har chizma o‘z mazmunini qo‘yadi.
+function gdPhone(inner) {
+  return '<ellipse class="gd-shadow" cx="238" cy="146" rx="40" ry="4"/>' +
+    '<rect class="gd-phone" x="198" y="10" width="80" height="132" rx="15"/>' +
+    '<rect class="gd-screen" x="204" y="21" width="68" height="106" rx="8"/>' +
+    '<rect class="gd-phone-part" x="230" y="15" width="16" height="3" rx="1.5"/>' +
+    '<rect class="gd-phone-part" x="226" y="132" width="24" height="3" rx="1.5"/>' +
+    inner;
+}
+
 const GUIDE_ART = {
-  "page-photo": "sahifa",     // ochiq kitob va unga qaratilgan telefon
-  "page-manual": "raqam",     // bet burchagidagi raqamni telefonga yozish
-  "voice": "ovoz"             // kitob haqida gapirayotgan boyo‘g‘li
+
+  // 1. SAHIFANI RASMGA OLISH.
+  // Ma'no: telefonni betga to‘g‘rila — bet raqami ramka ichida bo‘lsin.
+  // Shuning uchun o‘sha oltin doira telefon EKRANIDA ham ko‘rinadi.
+  "page-photo":
+    GD_BOOK + GD_PAGENUM +
+    gdPhone(
+      '<rect class="gd-soft" x="212" y="36" width="52" height="66" rx="5"/>' +
+      '<g class="gd-textline sm">' +
+        '<path d="M219 47h30"/><path d="M219 56h30"/><path d="M219 65h22"/>' +
+      '</g>' +
+      '<circle class="gd-gold-bg" cx="250" cy="88" r="9"/>' +
+      '<circle class="gd-gold-line" cx="250" cy="88" r="9"/>' +
+      '<text class="gd-num sm" x="250" y="88">18</text>' +
+      // suratga olish ramkasi
+      '<g class="gd-brand-line">' +
+        '<path d="M208 40v-7h7"/><path d="M261 33h7v7"/>' +
+        '<path d="M268 99v7h-7"/><path d="M215 106h-7v-7"/>' +
+      '</g>'
+    ) +
+    // «chirt» — surat olindi
+    '<g class="gd-brand-fill">' +
+      '<path d="M291 20q0 9 9 9-9 0-9 9 0-9-9-9 9 0 9-9Z"/>' +
+      '<path d="M304 44q0 5.5 5.5 5.5-5.5 0-5.5 5.5 0-5.5-5.5-5.5 5.5 0 5.5-5.5Z"/>' +
+    '</g>',
+
+  // 2. BET RAQAMINI QO‘LDA YOZISH.
+  // Ma'no: bet burchagidagi raqamni ko‘chirib yoz. Uzuq strelka
+  // aynan shu ko‘chirishni ko‘rsatadi.
+  "page-manual":
+    GD_BOOK + GD_PAGENUM +
+    '<path class="gd-dash" d="M150 94c16-4 22-16 40-22"/>' +
+    '<path class="gd-brand-line" d="M184 66l7 5-4 7"/>' +
+    gdPhone(
+      '<rect class="gd-soft" x="213" y="42" width="28" height="6" rx="3"/>' +
+      '<rect class="gd-input" x="212" y="55" width="52" height="27" rx="8"/>' +
+      '<text class="gd-num brand" x="234" y="69">18</text>' +
+      '<rect class="gd-brand-fill" x="212" y="91" width="52" height="18" rx="9"/>'
+    ),
+
+  // 3. OVOZLI XULOSA.
+  // Ma'no: kitob haqida ovozda gapir. O‘ngda — bola bosadigan
+  // HAQIQIY tugma: ko‘k doiradagi mikrofon.
+  "voice":
+    GD_BOOK +
+    '<circle class="gd-brand-halo" cx="222" cy="76" r="45"/>' +
+    '<circle class="gd-brand-fill" cx="222" cy="76" r="34"/>' +
+    '<g class="gd-on-brand">' +
+      '<rect x="216" y="59" width="13" height="23" rx="6.5"/>' +
+      '<path d="M209.5 76a13 13 0 0 0 26 0"/>' +
+      '<path d="M222.5 89v7"/><path d="M215 96h15"/>' +
+    '</g>' +
+    '<g class="gd-brand-line">' +
+      '<path d="M276 62a21 21 0 0 1 0 28"/>' +
+      '<path d="M292 50a37 37 0 0 1 0 52"/>' +
+    '</g>'
 };
 
 // Chizmani oynaga qo‘yish uchun tayyor bo‘lak.
 function guideArt(name) {
-  const file = GUIDE_ART[name];
-  return file
-    ? '<div class="guide-art"><img src="/guides/' + file + '.webp?v=' + ASSET_V + '" alt=""></div>'
+  const art = GUIDE_ART[name];
+  return art
+    ? '<div class="guide-art"><svg viewBox="0 0 320 152" fill="none" aria-hidden="true">' +
+      art + '</svg></div>'
     : "";
 }
 
