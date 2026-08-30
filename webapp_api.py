@@ -24,6 +24,7 @@ import asyncio
 import threading
 import traceback
 import uuid
+import random
 import urllib.parse
 from datetime import datetime, date, timedelta
 
@@ -560,6 +561,65 @@ def book_key(title, author):
     return norm(title) + "|" + a
 
 
+# ==========================================================
+# SAVOL VARIANTLARINI TARTIBGA SOLISH
+# ----------------------------------------------------------
+# Ikkita eski nuqson shu yerda tuzatiladi:
+#  1) Variant matnining o‘ziga «A) » deb harf yozib qo‘yilgan edi, ilova
+#     esa harfni yonida alohida chizadi — natijada «A) A) ...» chiqardi.
+#  2) To‘g‘ri javob deyarli har doim birinchi variant edi (bankdagi 2650
+#     savolning 84 foizida). Bola mazmunni emas, joyni eslab qolardi.
+#
+# Aralashtirish TASODIFIY EMAS — savol matnidan kelib chiqadi. Ya'ni
+# savol berilganda va javob tekshirilganda tartib doim bir xil chiqadi.
+# ==========================================================
+_OPT_PREFIX = re.compile(r"^\s*[A-Ha-h1-8]\s*[\)\.\-\u2013:]\s+")
+
+
+def strip_option_prefix(text):
+    """«A) Sulla bilan» → «Sulla bilan»."""
+    if not isinstance(text, str):
+        return text
+    return _OPT_PREFIX.sub("", text).strip()
+
+
+def normalize_questions(questions):
+    """Savollar ro‘yxatini ko‘rsatishga tayyor holga keltiradi."""
+    if not isinstance(questions, list):
+        return questions
+    out = []
+    for q in questions:
+        if not isinstance(q, dict):
+            continue
+        q = dict(q)
+        opts = [strip_option_prefix(o) for o in (q.get("options") or [])
+                if isinstance(o, str) and o.strip()]
+        ans = strip_option_prefix(q.get("answer"))
+        if opts:
+            if ans and ans not in opts:
+                # AI javobni variantlardan boshqacha yozib yuborgan —
+                # savol yo‘qolmasin uchun javobni variantlarga qo‘shamiz.
+                opts = [ans] + opts
+            if not ans:
+                ans = opts[0]
+            seed = int(hashlib.md5(
+                (str(q.get("question", "")) + "|" + str(q.get("id", "")))
+                .encode("utf-8")).hexdigest()[:8], 16)
+            random.Random(seed).shuffle(opts)
+            q["options"] = opts
+            q["answer"] = ans
+        out.append(q)
+    return out
+
+
+def normalize_questions_json(raw_json):
+    """JSON matnni tartibga solib, yana JSON matn qaytaradi."""
+    try:
+        return json.dumps(normalize_questions(json.loads(raw_json)), ensure_ascii=False)
+    except Exception:
+        return raw_json
+
+
 def _attach_test_from_bank(book_id, title, author):
     """Umumiy bankda shu kitobning testi bo‘lsa — AI'siz nusxalab beradi.
 
@@ -615,6 +675,7 @@ def _save_test_to_bank(title, author, raw_json, from_notes=0):
     Bu belgi bank orqali boshqa oilalarga ham o‘tadi.
     """
     key = book_key(title, author)
+    raw_json = normalize_questions_json(raw_json)
     with db_lock:
         # To‘liq (rasmlardan tuzilgan) testni yozuvlardan tuzilgani bilan
         # almashtirib yubormaymiz — sifatlisi ustun turadi.
@@ -844,6 +905,49 @@ def save_talk_question(title, author, stage, question):
         traceback.print_exc()
 
 
+def _talk_question_from_notes(book_id, title, author, stage):
+    """Kitob bazada bo‘lmaganda — bolaning sahifa yozuvlaridan suhbat savoli.
+
+    Bu YAGONA joy: bola yuborgan sahifa rasmlaridan olingan yozuvlar
+    faqat shu ishga ishlatiladi. Testga hech qachon emas.
+
+    Savol umumiy bankka tushmaydi (kalit «book:ID») — chunki u bitta
+    bolaning tasodifiy sahifalariga tayangan, boshqa oilaga bermaymiz.
+    """
+    key = "book:%d" % book_id
+    try:
+        with db_lock:
+            cursor.execute(
+                "SELECT question FROM Book_Talk_Questions WHERE book_key = ? AND stage = ?",
+                (key, stage))
+            row = cursor.fetchone()
+        if row and row[0]:
+            return row[0]
+
+        with db_lock:
+            cursor.execute(
+                "SELECT page_number, note FROM Book_Page_Notes WHERE book_id = ? "
+                "AND note != '' ORDER BY page_number", (book_id,))
+            notes = cursor.fetchall()
+        if len(notes) < 3:
+            return None
+
+        question = run_async(ai_service.generate_talk_question_from_notes(
+            title, author, list(notes), stage))
+        if not question:
+            return None
+        with db_lock:
+            cursor.execute(
+                "INSERT OR REPLACE INTO Book_Talk_Questions (book_key, stage, question, "
+                "created_at) VALUES (?, ?, ?, ?)",
+                (key, stage, question, datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+            conn.commit()
+        return question
+    except Exception:
+        traceback.print_exc()
+        return None
+
+
 def prepare_talk_questions(title, author, base):
     """Ikkala savolni oldindan tayyorlab qo‘yadi — bola bosganda kutmasin.
 
@@ -1004,11 +1108,12 @@ def _import_book_seed():
                 except Exception:
                     traceback.print_exc()
 
-            questions = b.get("questions") or []
-            # Bazada test bor va u to‘liq bo‘lsa — tegmaymiz. Faqat
-            # sahifa yozuvlaridan tuzilgan («from_notes») testni
-            # to‘liq test bilan almashtiramiz.
-            if questions and (key not in have_test or have_test.get(key)):
+            questions = normalize_questions(b.get("questions") or [])
+            # Tayyor baza — ilova asoschilari tekshirgan yagona ishonchli
+            # manba. Fayl yangilangan bo‘lsa (bu yergacha faqat shunda
+            # yetib kelamiz), bankdagi eski nusxa ustidan yoziladi:
+            # tahrir qilingan savollar hamma oilaga yetib borsin.
+            if questions:
                 try:
                     cursor.execute(
                         "INSERT OR REPLACE INTO Test_Bank (book_key, title, author, "
@@ -1077,92 +1182,15 @@ def _save_page_note(book_id, page_number, note):
         traceback.print_exc()
 
 
-def _auto_test_allowed(book_id):
-    """Bu kitobning testiga tegishimiz mumkinmi?
-
-    Tegmaymiz, agar:
-      - test bor, lekin uni BIZ tuzmagan bo‘lsak (ota-ona yoki umumiy bank);
-      - bola allaqachon biror bosqichni topshirgan bo‘lsa — savollar
-        o‘rtada almashib qolmasin.
-    """
-    cursor.execute("SELECT test_id FROM Book_Tests WHERE book_id = ?", (book_id,))
-    has_test = cursor.fetchone() is not None
-    cursor.execute("SELECT notes_used FROM Auto_Test_State WHERE book_id = ?", (book_id,))
-    state = cursor.fetchone()
-    if has_test and not state:
-        return False, 0
-    cursor.execute(
-        "SELECT mid_test_1_done, mid_test_2_done, final_test_done FROM Plan_Books WHERE book_id = ?",
-        (book_id,)
-    )
-    row = cursor.fetchone()
-    if row and any(row):
-        return False, 0
-    return True, (state[0] if state else 0)
-
-
-def _maybe_build_test_from_notes(book_id):
-    """Yozuvlar yetarli bo‘lsa, fon rejimida test tuzadi. Xatolar jim yutiladi —
-    bu qo‘shimcha imkoniyat, bolaning o‘qishini hech qachon to‘xtatmasligi kerak."""
-    try:
-        allowed, used = _auto_test_allowed(book_id)
-        if not allowed:
-            return
-        cursor.execute(
-            "SELECT page_number, note FROM Book_Page_Notes WHERE book_id = ? "
-            "AND note != '' ORDER BY page_number", (book_id,)
-        )
-        notes = cursor.fetchall()
-        if len(notes) < AUTO_TEST_MIN_NOTES:
-            return
-        if used and len(notes) < used + AUTO_TEST_STEP:
-            return          # oldingi safardan beri yetarli yangi yozuv yig‘ilmagan
-
-        cursor.execute("SELECT title, author, total_pages FROM Plan_Books WHERE book_id = ?",
-                       (book_id,))
-        row = cursor.fetchone()
-        if not row:
-            return
-        title, author, total_pages = row[0], row[1], (row[2] or 0)
-
-        def worker():
-            try:
-                questions, raw_json = run_async(
-                    ai_service.generate_test_from_notes(title, author, list(notes), total_pages)
-                )
-                if not questions:
-                    return
-                with db_lock:
-                    cursor.execute(
-                        "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
-                        (book_id, raw_json)
-                    )
-                    cursor.execute(
-                        "INSERT OR REPLACE INTO Auto_Test_State (book_id, notes_used, updated_at) "
-                        "VALUES (?, ?, ?)",
-                        (book_id, len(notes), datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-                    )
-                    conn.commit()
-                # Umumiy bankka faqat yetarlicha to‘liq test tushsin — aks holda
-                # boshqa oilalar ham chala testni olib qoladi.
-                if len(notes) >= AUTO_TEST_BANK_MIN:
-                    _save_test_to_bank(title, author, raw_json, from_notes=1)
-                    # Yozuvlar yetarli — kitob mazmuni ham tuzilib, umumiy
-                    # bazaga qo‘shiladi. Rasm yuborilmaydi, ya'ni arzon.
-                    try:
-                        info = run_async(
-                            ai_service.summarize_book_from_notes(title, author, list(notes)))
-                        save_book_base(title, author, info, "notes")
-                    except Exception:
-                        traceback.print_exc()
-                ai_service.log_line("[auto_test] «%s» uchun %d ta savol tuzildi (%d ta yozuvdan)"
-                                    % (title, len(questions), len(notes)))
-            except Exception:
-                traceback.print_exc()
-
-        threading.Thread(target=worker, daemon=True).start()
-    except Exception:
-        traceback.print_exc()
+# DIQQAT — EGA QARORI (2026-08-30):
+# Test FAQAT ota-ona yuborgan sahifa rasmlaridan yoki ilova asoschilari
+# tayyorlagan kitob bazasidan tuziladi. Bola o‘qish davomida yuborgan
+# sahifa rasmlari testga UMUMAN ishlatilmaydi: ular tasodifiy sahifalar
+# bo‘lib, ulardan tuzilgan savollar xato va chala chiqardi.
+#
+# Bola yuborgan sahifa yozuvlari saqlanaveradi, lekin ular faqat bitta
+# ishga yaraydi: kitob bazada bo‘lmaganda «AI ustoz suhbati» savolini
+# tuzish uchun (pastdagi `talk` bo‘limiga qarang).
 
 
 def _mark_celebrated(child_id, shown, later):
@@ -1274,6 +1302,28 @@ def require_auth(f):
 
         g.tg_user = user
         g.user_id = int(user["id"])
+
+        # ROLLARNI AJRATISH — 2026-08-30.
+        # Ilgari bu yerda faqat «kim ekani» aniqlanardi, «nimaga haqli
+        # ekani» emas. Natijada bola o‘z telefonidan ota-ona bo‘limlariga
+        # murojaat qila olardi: hamyonni ko‘rish, hatto Bilig kursini
+        # o‘zgartirish ham mumkin edi.
+        #
+        # Diqqat: «Bolaxona» rejimida so‘rovni ota-onaning O‘ZI yuboradi
+        # (bolaning nomidan emas), shuning uchun bu tekshiruv unga xalal
+        # bermaydi. Ro‘yxatdan hali o‘tmagan foydalanuvchi ham to‘siladi
+        # emas — u hali «bola» emas.
+        if request.path.startswith("/api/parent/"):
+            try:
+                cursor.execute("SELECT role FROM Users WHERE user_id = ?", (g.user_id,))
+                _row = cursor.fetchone()
+            except Exception:
+                _row = None
+            if _row and _row[0] == "child":
+                ai_service.log_line("[ruxsat] bola %s ota-ona bo‘limiga urindi: %s"
+                                    % (g.user_id, request.path))
+                return jsonify({"error": "Bu bo‘lim faqat ota-ona uchun"}), 403
+
         return f(*args, **kwargs)
     wrapper.__name__ = f.__name__
     return wrapper
@@ -2571,6 +2621,7 @@ def _start_test_job(book_id, title, author, photos_bytes):
             )
             if not questions:
                 raise ValueError("AI birorta ham savol tuza olmadi")
+            raw_json = normalize_questions_json(raw_json)
             with db_lock:
                 cursor.execute(
                     "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
@@ -3525,9 +3576,7 @@ def child_submit_page_photo(book_id):
         return jsonify({"ok": False, "reason": "page_unclear",
                          "message": "Sahifa raqami aniq ko‘rinmadi. Sahifa raqamini qo‘lda kiriting."})
 
-    result = _apply_page_progress(book_id, child_id, new_page)
-    _maybe_build_test_from_notes(book_id)
-    return result
+    return _apply_page_progress(book_id, child_id, new_page)
 
 
 @app.route("/api/child/book/<int:book_id>/page_manual", methods=["POST"])
@@ -3868,8 +3917,14 @@ def child_get_talk(book_id):
     if not question:
         base = get_book_base(title, author) or {}
         if not (base.get("summary") or "").strip():
-            # Kitob haqida hech narsa bilmaymiz. Nomidan savol tuzsak,
-            # u istalgan kitobga to‘g‘ri keladigan bo‘sh savol bo‘ladi.
+            # Kitob bazada yo‘q. FAQAT shu holatda bolaning o‘zi yuborgan
+            # sahifa yozuvlariga tayanamiz — boshqa yo‘l qolmadi.
+            question = _talk_question_from_notes(book_id, title, author, stage)
+            if question:
+                return jsonify({"open": True, "need_pages": 0, "done": done,
+                                "question": question})
+            # Yozuv ham yo‘q. Kitob nomidan savol tuzsak, u istalgan
+            # kitobga to‘g‘ri keladigan bo‘sh savol bo‘lardi.
             return jsonify({"open": False, "not_ready": True, "done": done,
                             "need_pages": 0, "question": None})
         # Oldindan tayyorlanmagan — shu yerda tuzamiz. Bu faqat matn, tez.
@@ -4035,7 +4090,7 @@ def child_get_test(book_id):
     if not row:
         return jsonify({"error": "Bu kitob uchun test hali tuzilmagan"}), 404
     try:
-        questions = json.loads(row[0])
+        questions = normalize_questions(json.loads(row[0]))
     except Exception:
         return jsonify({"error": "Test ma'lumotida xatolik"}), 500
 
@@ -4067,7 +4122,7 @@ def child_submit_test(book_id):
     row = cursor.fetchone()
     if not row:
         return jsonify({"error": "Test topilmadi"}), 404
-    questions = json.loads(row[0])
+    questions = normalize_questions(json.loads(row[0]))
 
     # Bosqich hali ochilmagan bo‘lsa, javob qabul qilinmaydi — aks holda
     # bola savollarni ko‘rmasdan turib ham natija yubora olardi.
@@ -4079,10 +4134,17 @@ def child_submit_test(book_id):
     # bo‘yicha emas, aks holda berilmagan savollar ham «xato» sanalardi.
     asked = stage_questions(questions, stage, _done_stages(book_id))
     correct = 0
+    # «Qaysi javobim xato edi?» — bola natijani ko‘rgach shuni bilishi kerak,
+    # aks holda test o‘rgatmaydi, faqat baholaydi.
+    review = []
     for q in asked:
         qid = str(q.get("id"))
-        if qid in answers and answers[qid] == q.get("answer"):
+        given = answers.get(qid)
+        ok = bool(given) and given == q.get("answer")
+        if ok:
             correct += 1
+        review.append({"question": q.get("question", ""), "your": given or "",
+                       "correct": q.get("answer", ""), "ok": ok})
     total = len(asked) if asked else 1
     percent = round((correct / total) * 100)
     # Ega qarori: har bosqich (1-oraliq, 2-oraliq, yakuniy) uchun natija
@@ -4102,7 +4164,7 @@ def child_submit_test(book_id):
     if _done and _done[0]:
         return jsonify({"ok": False, "reason": "already_done", "already_done": True,
                         "correct": correct, "total": total, "percent": percent,
-                        "earned_bilig": 0, "new_badges": [],
+                        "earned_bilig": 0, "new_badges": [], "review": review,
                         "message": "Bu testni allaqachon topshirgansan. "
                                    "Natija saqlanib qolgan."})
 
@@ -4159,7 +4221,7 @@ def child_submit_test(book_id):
     announce_badges(child_id, new_badges + later_badges)
 
     return jsonify({"ok": True, "correct": correct, "total": total, "percent": percent,
-                    "earned_bilig": earned, "new_badges": new_badges})
+                    "earned_bilig": earned, "new_badges": new_badges, "review": review})
 
 
 @app.route("/api/child/rewards", methods=["GET"])
@@ -4746,6 +4808,27 @@ def _no_cache(response):
 
 # Muqova, nishon va maskot rasmlari o‘zgarmaydi — ular uzoq saqlanaveradi
 _LONG_CACHE_DIRS = ("/covers/", "/badges/", "/mascots/", "/fonts/", "/uploads/")
+
+
+# ==========================================================
+# KUTILMAGAN XATO — JURNALGA YOZILADI
+# ----------------------------------------------------------
+# Ilgari server ichida xato chiqsa, telefonda quruq «Server xatoligi»
+# ko‘rinardi va nima bo‘lgani hech qayerda qolmasdi. Endi har bir
+# kutilmagan xato jurnalga to‘liq yoziladi (`/api/admin/logs` orqali
+# o‘qish mumkin), foydalanuvchiga esa sodda jumla chiqadi.
+# ==========================================================
+@app.errorhandler(Exception)
+def _log_unexpected(e):
+    from werkzeug.exceptions import HTTPException
+    if isinstance(e, HTTPException):
+        return e                      # 404, 403 kabilar — bu oddiy holat
+    try:
+        traceback.print_exc()
+        ai_service.log_line("[xato] %s %s — %r" % (request.method, request.path, e))
+    except Exception:
+        pass
+    return jsonify({"error": "Serverda kutilmagan xato. Qaytadan urinib ko‘ring."}), 500
 
 
 @app.after_request

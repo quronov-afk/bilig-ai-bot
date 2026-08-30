@@ -38,3 +38,10 @@ tools/covers_raw/
 # Shriftlarning ochilgan arxivi (23 MB). Kerakli 9 ta fayl allaqachon
 # tools/fonts/ da — arxivning o‘zi GitHub'ga tushmaydi.
 tools/fonts_raw/
+
+# SQLite WAL yordamchi fayllari
+*.db-wal
+*.db-shm
+
+# Test bazasini muharrirlash jarayonining oraliq fayli
+tools/edit_tests_progress.json

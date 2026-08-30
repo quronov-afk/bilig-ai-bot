@@ -254,7 +254,11 @@ html, body {
   width: 42px; height: 42px; border-radius: 12px; background: rgba(255,255,255,.16);
   display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
 }
-.hero-mascot { position: absolute; top: -4px; right: 8px; width: 124px; pointer-events: none; }
+/* Rasmning o‘ng chekkasida ortiqcha oq tasma bor edi — u kartaning
+   ustida oq vertikal chiziq bo‘lib ko‘rinardi. Tasma rasmdan olib
+   tashlandi; boyo‘g‘li avvalgi joyida va avvalgi kattaligida
+   qolishi uchun o‘lcham va o‘ng chetdan masofa moslandi. */
+.hero-mascot { position: absolute; top: 7px; right: 27px; width: 85px; pointer-events: none; }
 
 .book-card { display: flex; gap: 12px; cursor: pointer; }
 .book-cover {
@@ -1624,3 +1628,110 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
   background: var(--brand-bg); color: var(--brand-deep);
   border: 2px dashed var(--brand); box-sizing: border-box;
 }
+
+
+/* ==========================================================
+   TEST NATIJASI — xato javoblar ro‘yxati
+   ----------------------------------------------------------
+   Bola natijani ko‘rgach «qayerda adashdim?» degan savolga javob
+   olishi kerak. Xato javob qizil, to‘g‘risi yashil chiziq bilan.
+   ========================================================== */
+.review-head {
+  margin: 16px 0 8px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--text-soft, #64748B);
+}
+.review-all-ok {
+  margin: 14px 0 4px;
+  padding: 12px 14px;
+  border-radius: var(--radius-md, 14px);
+  background: rgba(16, 185, 129, .10);
+  color: var(--success-deep, #047857);
+  font-weight: 700;
+  font-size: 14px;
+}
+.review-item {
+  margin-bottom: 10px;
+  padding: 12px 14px;
+  border-radius: var(--radius-md, 14px);
+  background: var(--surface, #FFF);
+  box-shadow: var(--shadow-raised);
+}
+.review-q {
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.review-line {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0 0 6px;
+  padding-left: 10px;
+  border-left: 3px solid transparent;
+  font-size: 14px;
+  line-height: 1.35;
+}
+.review-line:last-child { margin-bottom: 0; }
+.review-line span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--text-soft, #64748B);
+}
+.review-line.bad { border-left-color: var(--danger, #EF4444); }
+.review-line.good { border-left-color: var(--success, #10B981); font-weight: 600; }
+
+
+/* ==========================================================
+   SAHIFA OCHILMAGANDA
+   ----------------------------------------------------------
+   Ilgari bu joyda quruq «Server xatoligi» degan kulrang yozuv
+   turardi va foydalanuvchi nima qilishni bilmasdi.
+   ========================================================== */
+.load-error {
+  margin: 24px auto;
+  max-width: 320px;
+  padding: 26px 22px;
+  border-radius: var(--radius-lg, 18px);
+  background: var(--surface, #FFF);
+  box-shadow: var(--shadow-raised);
+  text-align: center;
+}
+.load-error-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: rgba(78, 142, 247, .12);
+  color: var(--brand, #4E8EF7);
+}
+.load-error-title { margin: 0 0 6px; font-size: 17px; font-weight: 800; }
+.load-error-sub {
+  margin: 0 0 18px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text-soft, #64748B);
+}
+.load-error .btn { width: 100%; }
+
+
+/* ==========================================================
+   YONBOSHGA SURILADIGAN QATORLAR — chiziq ko‘rinmasin
+   ----------------------------------------------------------
+   Telefonda «farzandlar» va «chiplar» qatorlari ostida kulrang
+   surish chizig‘i tortilib qolardi. Bezakning bir qismiga
+   o‘xshab ko‘rinardi va sahifani xunuk qilardi.
+   ========================================================== */
+.kid-row,
+.chip-row { scrollbar-width: none; -ms-overflow-style: none; }
+.kid-row::-webkit-scrollbar,
+.chip-row::-webkit-scrollbar { display: none; }

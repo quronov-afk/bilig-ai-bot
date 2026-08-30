@@ -182,6 +182,29 @@ MADANIY MEZON — MAJBURIY:
 """
 
 
+# ==========================================================
+# TIL MEZONI — savol va variantlar matni uchun
+# ----------------------------------------------------------
+# Ega talabi (2026-08-30): testlarda mavjud bo‘lmagan so‘zlar, harfi
+# almashib ketgan so‘zlar va g‘aliz jumlalar chiqib qolgan edi. Endi
+# har bir test chaqiruvi shu mezon bilan yuboriladi.
+# ==========================================================
+TIL_MEZONI = """
+TIL MEZONI — MAJBURIY (professional o‘zbek muharriri darajasi):
+· Har bir so‘z o‘zbek adabiy tilida HAQIQATAN mavjud bo‘lsin. O‘zingdan
+  so‘z yasama, harflarni almashtirib yuborma, so‘zni chala yozma.
+· Jumla grammatik jihatdan mukammal bo‘lsin: kelishik, egalik va
+  zamon qo‘shimchalari joyida, so‘z tartibi tabiiy.
+· Uslub aniq va ravon bo‘lsin: g‘aliz, tarjimaga o‘xshagan, ma'nosi
+  chalkash jumla yozma. Bola bir o‘qishda tushunsin.
+· Ruscha yoki inglizcha so‘z ishlatma. Atamalar o‘zbekcha bo‘lsin.
+· O‘, o‘, G‘, g‘ harflari FAQAT chapga qaragan jingalak belgi bilan
+  yozilsin. Tutuq belgisi (ma'lumot, e'tibor) oddiy apostrof bilan.
+· Har bir jumlani yozgach o‘zingni tekshir: shubhali so‘z bo‘lsa,
+  uni oddiyroq va aniq so‘z bilan almashtir.
+"""
+
+
 async def _ask(task: str, contents, json_mode=False, max_tokens=None, fast=False, attempts=2):
     """Barcha Gemini chaqiruvlari shu yagona joydan o‘tadi.
 
@@ -457,99 +480,61 @@ async def verify_page_photo(image_bytes: bytes):
         raise e
 
 
-async def generate_test_from_notes(title: str, author: str, notes: list, total_pages: int = 0):
-    """O‘qish davomida yig‘ilgan sahifa yozuvlaridan test tuzish.
+# ==========================================================
+# EGA QARORI (2026-08-30): bola o‘qish davomida yuborgan sahifa
+# rasmlaridan TEST TUZILMAYDI. Ular tasodifiy sahifalar bo‘lib,
+# ulardan tuzilgan savollar xato va chala chiqardi. Test faqat
+# ota-ona yuborgan rasmlardan yoki tayyor kitob bazasidan olinadi.
+#
+# Bola yuborgan yozuvlarga ruxsat etilgan yagona ish — kitob bazada
+# umuman bo‘lmaganda «AI ustoz» suhbat savolini tuzish (quyida).
+# ==========================================================
 
-    Bu yerda RASM YUBORILMAYDI — faqat qisqa matnlar. Shuning uchun
-    rasmlardan test tuzishga qaraganda ancha arzon va tez.
+
+async def generate_talk_question_from_notes(title: str, author: str, notes: list,
+                                            stage: str, age: int = 10):
+    """Kitob bazada yo‘q bo‘lganda — sahifa yozuvlaridan og‘zaki suhbat savoli.
+
+    Bu savol testga aylanmaydi va boshqa oilalarga ham berilmaydi: u
+    bitta bolaning o‘qigan sahifalariga tayanadi.
     `notes` — [(sahifa_raqami, matn), ...] ko‘rinishida.
     """
-    parts = []
-    for page, text in notes:
-        parts.append("%s-sahifa: %s" % (page, text))
-    body = "\n".join(parts)
-    count = max(6, min(30, len(notes) * 3))
-    # Kitob nechta betligi ma'lum bo‘lsa, AI savollarni kitob qismlariga
-    # to‘g‘ri taqsimlay oladi. Bo‘lmasa — sahifa raqamiga qarab o‘zi bo‘ladi.
-    if total_pages:
-        part_hint = ("Kitob jami %d betdan iborat. 1-qism: 1-%d betlar, "
-                     "2-qism: %d-%d betlar, 3-qism: %d-%d betlar."
-                     % (total_pages, total_pages // 3,
-                        total_pages // 3 + 1, total_pages * 2 // 3,
-                        total_pages * 2 // 3 + 1, total_pages))
-    else:
-        part_hint = ("Kitob necha betligi noma'lum — savol qaysi sahifadan "
-                     "olinganiga qarab qismni o‘zing belgila.")
-
-    prompt = f"""Sen malakali bolalar pedagogi va adabiyotshunossan.
-Quyida «{title}» kitobidan ({author or "muallif noma'lum"}) bola o‘qish
-davomida qayd etilgan sahifalar mazmuni berilgan:
-
-{body}
-
-Shu mazmun asosida bolaning kitobni tushunganini tekshiradigan {count} ta
-savol tuz. FAQAT yuqoridagi matnda bor narsalar haqida so‘ra — o‘zingdan
-voqea yoki qahramon to‘qib chiqarma.
-
-SAVOLLARNING PEDAGOGIK QATLAMLARI:
-1. "factual" (Faktik xotira): qahramonlar, joy, tafsilotlar.
-2. "logic" (Sabab-oqibat): nima uchun shunday bo‘ldi, qahramon nega shunday qildi.
-3. "conclusion" (Xulosa): qahramon olgan saboq, voqeaning ma'nosi.
-
-TALABLAR:
-- Har bir savolda 3 yoki 4 ta variant bo‘lsin.
-- Faqat to‘g‘ri o‘zbek lotin alifbosidagi O‘, o‘, G‘, g‘ belgilaridan foydalan.
-
-KITOB QISMLARI: har bir savolga "part" maydonini qo‘y — savol kitobning
-boshlanishiga tegishli bo‘lsa 1, o‘rtasiga 2, oxiriga 3.
-{part_hint}
-
-{MADANIY_MEZON}
-
-Natijani FAQAT quyidagi JSON ro‘yxat formatida qaytar:
-[
-  {{"id": 1, "part": 1, "category": "factual", "question": "Savol matni?",
-    "options": ["A) Variant 1", "B) Variant 2", "C) Variant 3"], "answer": "A) Variant 1"}}
-]"""
-
-    # Uch marta urinamiz: bu ish fon rejimida bajariladi, hech kim kutmaydi.
-    response = await _ask("generate_test_from_notes", [prompt], json_mode=True, attempts=3)
-    questions = tidy_deep(json.loads(clean_json(response.text)), "[test]")
-    raw_json = json.dumps(questions, ensure_ascii=False)
-    return questions, raw_json
-
-
-async def summarize_book_from_notes(title: str, author: str, notes: list):
-    """O‘qish davomida yig‘ilgan sahifa yozuvlaridan kitob mazmunini tuzadi.
-
-    Rasm yuborilmaydi — faqat qisqa matnlar, ya'ni juda arzon. Natija
-    umumiy kitob bazasiga tushadi va boshqa oilalarga tayyor holda beriladi.
-    """
     body = "\n".join("%s-sahifa: %s" % (page, text) for page, text in notes)
-    prompt = f"""Sen bolalar adabiyoti bo‘yicha mutaxassissan. Quyida
-«{title}» kitobidan ({author or "muallif noma'lum"}) o‘qish davomida qayd
-etilgan sahifalar mazmuni berilgan:
+    if stage == "start":
+        qism = ("Bola kitobning boshlanish qismini o‘qidi. Savol shu "
+                "qismga tegishli bo‘lsin.")
+    else:
+        qism = ("Bola kitobni oxirigacha o‘qidi. Savol asarning umumiy "
+                "ma'nosiga va bola olgan saboqqa tegishli bo‘lsin.")
+
+    prompt = f"""Sen mehribon «AI ustoz»san. Quyida {age} yoshli bola
+«{title}» kitobidan ({author or "muallif noma'lum"}) o‘qigan sahifalar
+mazmuni berilgan:
 
 {body}
 
-Shu yozuvlar asosida kitob haqida qisqa ma'lumot tuz. FAQAT yuqoridagi
-matnda bor narsalarga tayan — o‘zingdan voqea yoki qahramon to‘qima.
-Yozuvlar kitobning hammasini qamramagan bo‘lishi mumkin; bunda bor
-qismini tasvirla, yetishmagan joyni to‘qib to‘ldirma.
+{qism}
 
-Faqat to‘g‘ri o‘zbek lotin alifbosidagi O‘, o‘, G‘, g‘ belgilaridan foydalan.
+Shu yozuvlarga tayanib, bolaga OG‘ZAKI javob beriladigan BITTA savol tuz.
+
+SAVOL QANDAY BO‘LISHI KERAK:
+- Faktik BO‘LMASIN: «Ismi nima edi?», «Nechta edi?» kabi bir so‘zlik
+  javobli savollar TAQIQLANADI.
+- Bola 30-60 soniya gapira oladigan, o‘z fikrini aytishga undaydigan
+  ochiq savol bo‘lsin.
+- Yozuvlarda BO‘LMAGAN voqea yoki qahramon haqida so‘rama.
+- Til sodda, iliq va do‘stona bo‘lsin; savol bitta jumla.
+
+{TIL_MEZONI}
 
 {MADANIY_MEZON}
 
 Natijani FAQAT quyidagi JSON formatida qaytar:
-{{
-  "summary": "Kitobning qisqacha mazmuni — 5-8 jumla.",
-  "characters": "Asosiy qahramonlar va ular kim ekani.",
-  "theme": "Asarning g‘oyasi va bola oladigan saboq.",
-  "age_hint": "8-12"
-}}"""
-    response = await _ask("summarize_book", [prompt], json_mode=True, attempts=2)
-    return tidy_deep(json.loads(clean_json(response.text)), "[mazmun]")
+{{"question": "Savol matni?"}}"""
+
+    response = await _ask("talk_question_from_notes", [prompt], json_mode=True, attempts=2)
+    data = json.loads(clean_json(response.text))
+    return tidy_uz((data.get("question") or "").strip(), "[savol]")
 
 
 async def generate_talk_question(title: str, author: str, base: dict, stage: str, age: int = 10):
@@ -629,9 +614,17 @@ async def generate_test_bank_from_photos(photos_bytes_list: list):
     kitobning yarmini o‘qigan bolaga oxiri haqida savol berilmasligi kerak.
 
     TALABLAR:
-    - Har bir savolda 3 ta yoki 4 ta variant (A, B, C, D) bo‘lsin.
-    - Faqat va faqat to‘g‘ri o‘zbek lotin alifbosidagi O‘, o‘, G‘, g‘ belgilaridan foydalan.
+    - Har bir savolda 3 ta yoki 4 ta variant bo‘lsin.
+    - VARIANT MATNIDA HARF YOZMA. «A) », «B) », «1. » kabi belgilarsiz,
+      faqat javobning o‘zini yoz. Harfni ilova o‘zi qo‘yadi.
+    - "answer" maydoniga to‘g‘ri variantning matnini AYNAN ko‘chirib yoz.
+    - To‘g‘ri javob har safar birinchi variant bo‘lib qolmasin — uni
+      variantlar orasida turlicha joylashtir.
+    - Noto‘g‘ri variantlar ham jiddiy va ishonarli bo‘lsin: kulgili yoki
+      ochiq-oydin bema'ni variant yozma, aks holda test bilimni o‘lchamaydi.
     - Savollar bolaning yoshiga mos, qiziqarli va tushunarli bo‘lsin.
+
+    {TIL_MEZONI}
 
     {MADANIY_MEZON}
 
@@ -649,8 +642,8 @@ async def generate_test_bank_from_photos(photos_bytes_list: list):
           "part": 1,
           "category": "factual",
           "question": "Savol matni?",
-          "options": ["A) Variant 1", "B) Variant 2", "C) Variant 3"],
-          "answer": "A) Variant 1"
+          "options": ["Birinchi variant matni", "Ikkinchi variant matni", "Uchinchi variant matni"],
+          "answer": "Ikkinchi variant matni"
         }}
       ]
     }}"""

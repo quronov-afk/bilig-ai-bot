@@ -1,11 +1,98 @@
 import os
 import sqlite3
+import threading
 from datetime import datetime, timedelta
 
-# Render.com doimiy diski yoki mahalliy baza yo'li
+# Render.com doimiy diski yoki mahalliy baza yo‘li
 db_path = "/var/data/bot_base.db" if os.path.exists("/var/data") else "bot_base.db"
-conn = sqlite3.connect(db_path, check_same_thread=False)
-cursor = conn.cursor()
+
+
+# ==========================================================
+# HAR BIR IP UCHUN ALOHIDA ULANISH — 2026-08-30
+# ----------------------------------------------------------
+# MUAMMO: butun ilova bitta ulanish va bitta `cursor` obyektidan
+# foydalanardi. Mini App ochilganda telefon bir vaqtning o‘zida bir
+# nechta so‘rov yuboradi, server esa ularni parallel bajaradi. Ikkinchi
+# so‘rov birinchisining hali o‘qilmagan natijasini o‘chirib yuborar va
+# «Recursive use of cursors not allowed» xatosi chiqardi.
+#
+# Foydalanuvchi buni «Server xatoligi» degan bo‘sh ekran ko‘rinishida,
+# ba'zan esa ilovaning yarim holatda qotib qolishi ko‘rinishida ko‘rardi
+# (bir joyi ota-ona, bir joyi bola bo‘lib qolardi).
+#
+# YECHIM: har bir ip o‘zining alohida ulanishi bilan ishlaydi. Ip
+# tugagach ulanish o‘z-o‘zidan yopiladi. Koddagi `conn` va `cursor`
+# nomlari o‘zgarmadi — hamma joy avvalgidek ishlayveradi.
+#
+# WAL rejimi — o‘qish va yozish bir-birini to‘smaydi; busy_timeout —
+# baza band bo‘lsa darrov xato bermay, 10 soniya kutib turadi.
+# ==========================================================
+def _new_connection():
+    c = sqlite3.connect(db_path, check_same_thread=False, timeout=15)
+    try:
+        c.execute("PRAGMA busy_timeout=10000")
+        c.execute("PRAGMA synchronous=NORMAL")
+    except Exception:
+        pass
+    return c
+
+
+# WAL rejimi bazaning o‘ziga bir marta yoziladi va shundan keyin
+# hamma ulanishlarga tegishli bo‘ladi.
+try:
+    _boot = sqlite3.connect(db_path, check_same_thread=False)
+    _boot.execute("PRAGMA journal_mode=WAL")
+    _boot.close()
+except Exception:
+    pass
+
+
+class _DBLocal:
+    """Ip (thread) uchun ulanish va kursorni saqlaydi."""
+
+    def __init__(self):
+        self._local = threading.local()
+
+    @property
+    def conn(self):
+        c = getattr(self._local, "conn", None)
+        if c is None:
+            c = _new_connection()
+            self._local.conn = c
+            self._local.cur = c.cursor()
+        return c
+
+    @property
+    def cursor(self):
+        self.conn                      # ulanish borligiga ishonch hosil qilamiz
+        return self._local.cur
+
+
+_db = _DBLocal()
+
+
+class _ConnProxy:
+    def __getattr__(self, name):
+        return getattr(_db.conn, name)
+
+    def __enter__(self):
+        return _db.conn.__enter__()
+
+    def __exit__(self, *a):
+        return _db.conn.__exit__(*a)
+
+
+class _CursorProxy:
+    def __getattr__(self, name):
+        return getattr(_db.cursor, name)
+
+    def __iter__(self):
+        return iter(_db.cursor)
+
+
+conn = _ConnProxy()
+cursor = _CursorProxy()
+
 
 def init_db():
     # 1. FOYDALANUVCHILAR JADVALI

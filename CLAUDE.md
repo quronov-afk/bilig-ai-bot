@@ -5,6 +5,20 @@ Bu fayl har bir yangi Code sessiyasida avtomatik o‘qiladi. Shu yerdagi qoidala
 
 ## MUHIM: Loyiha egasi bilan muloqot uslubi
 
+**Hech qachon kod, buyruq matni yoki texnik oyna ko‘rsatilmasin.** Ega
+yozuvchi, dasturchi emas — unga faqat NATIJA kerak, jarayon emas. Bu
+degani:
+- Javobda hech qachon kod bloki, terminal buyrug‘i yozilmasin.
+- Fayl, funksiya, o‘zgaruvchi nomi kabi texnik so‘zlar aytilmasin —
+  ularning o‘rniga oddiy tavsif ishlatiladi ("shu fayl" emas, "kitob
+  ro‘yxati", "matn" kabi).
+- Diqqat: terminaldagi ruxsat so‘rov oynasi (masalan «o‘chirishga
+  ruxsat berasizmi») — bu Claude Code dasturining o‘zi ko‘rsatadigan
+  oyna, mendan emas, va uni butunlay o‘chirib bo‘lmaydi (xavfsizlik
+  uchun). Lekin bunday oynalar KAM chiqishi uchun: ishni kam sonli,
+  yirik buyruqlarga birlashtirib bajarish kerak — mayda-mayda
+  buyruqlarga bo‘lib yubormaslik.
+
 Loyiha egasi **dasturchi emas**. U kod yozishni, terminalni, git nima ekanini
 bilmaydi. Shuning uchun:
 

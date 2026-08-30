@@ -96,6 +96,7 @@ const ICON_PATHS = {
   "arrow-right": '<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>',
   check: '<polyline points="20 6 9 17 4 12"/>',
   clock: '<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/>',
+  refresh: '<path d="M20.5 12a8.5 8.5 0 1 1-2.6-6.1"/><polyline points="20.6 4.2 20.6 9.1 15.7 9.1"/>',
 
   // --- Duotone: [ichki to‘ldirish, ustki chiziq] ---
   home: [
@@ -187,16 +188,18 @@ const ICON_PATHS = {
     '<path d="M12 2.9c.35 0 .67.2.83.52l2.42 4.9 5.41.79c.75.11 1.05 1.03.5 1.56l-3.91 3.81.92 5.39c.13.75-.65 1.32-1.32.96L12 18.29l-4.85 2.55c-.67.36-1.45-.21-1.32-.96l.92-5.39-3.91-3.81c-.55-.53-.25-1.45.5-1.56l5.41-.79 2.42-4.9c.16-.32.48-.52.83-.52z"/>'],
 };
 
+// Rasm va bezak fayllari o‘zgarganda shu raqamni oshiring — shunda telefon
+// eski nusxani emas, yangisini yuklaydi (index.html dagi ?v= bilan bir xil).
+// Rasmlar telefonda bir hafta saqlanadi, shuning uchun raqamsiz yangilanish
+// foydalanuvchiga umuman yetib bormaydi.
+const ASSET_V = "16";
+
 // Kitob qo‘shish kartochkasi bezagi — o‘qiyotgan boyo‘g‘li maskoti
-const HERO_MASCOT = '<img class="hero-mascot" src="/mascots/mascot-boyogli-oqish-cutout.webp" alt="">';
+const HERO_MASCOT = '<img class="hero-mascot" src="/mascots/mascot-boyogli-oqish-cutout.webp?v=' + ASSET_V + '" alt="">';
 
 // ---------------- KITOB MUQOVALARI ----------------
 // covers/index.json — kitob nomi bo‘yicha muqova faylini topish jadvali.
 let COVER_INDEX = null;
-
-// Muqovalar ro‘yxati o‘zgarganda shu raqamni oshiring — shunda telefon
-// eski nusxani emas, yangisini yuklaydi (index.html dagi ?v= bilan bir xil).
-const ASSET_V = "15";
 
 function loadCoverIndex() {
   return fetch("/covers/index.json?v=" + ASSET_V)
@@ -694,10 +697,34 @@ async function api(path, opts) {
     fetchOpts.body = JSON.stringify(opts.body);
   }
 
-  const res = await fetch(url, fetchOpts);
+  // Server bir muddat ishlatilmasa uyquga ketadi va birinchi so‘rov
+  // javobsiz qolishi mumkin. Ilgari shunda ekranda quruq «Server
+  // xatoligi» chiqardi. Endi ma'lumot SO‘RASH (GET) jimgina qayta
+  // urinib ko‘riladi. Ma'lumot YUBORISH takrorlanmaydi — aks holda
+  // bitta test ikki marta topshirilgan bo‘lib qolardi.
+  const isGet = fetchOpts.method === "GET";
+  const tries = isGet ? 3 : 1;
+  let res = null;
+  for (let attempt = 0; attempt < tries; attempt++) {
+    if (attempt) await new Promise(function (r) { setTimeout(r, attempt * 1200); });
+    try {
+      res = await fetch(url, fetchOpts);
+    } catch (err) {
+      res = null;                   // aloqa uzildi — yana urinamiz
+      continue;
+    }
+    if (res.status >= 500 && attempt < tries - 1) continue;
+    break;
+  }
+  if (!res) throw { error: "Aloqa uzildi. Internetni tekshirib, qaytadan urining.", offline: true };
+
   let data = null;
   try { data = await res.json(); } catch (e) {}
-  if (!res.ok) throw (data || { error: "Server xatoligi" });
+  if (!res.ok) {
+    throw (data || { error: res.status >= 500
+      ? "Server javob bermadi. Bir zumdan keyin qaytadan urining."
+      : "So‘rov bajarilmadi. Qaytadan urining." });
+  }
   return data;
 }
 
@@ -946,8 +973,18 @@ async function enterApp() {
 }
 
 async function refreshHeader() {
-  const me = await api("/api/me");
-  State.me = me;
+  // Ma'lumot kelmasa ham sarlavha ESKI holatda qolib ketmasligi kerak:
+  // shunda ilova bir joyi ota-ona, bir joyi bola bo‘lib chalkashardi.
+  // Shu sabab so‘rov muvaffaqiyatsiz bo‘lsa, bor bilganimiz bilan
+  // sarlavhani baribir to‘g‘rilaymiz.
+  let me = State.me || {};
+  try {
+    me = await api("/api/me");
+    State.me = me;
+  } catch (e) {
+    me = { name: State.activeChildName || (State.me && State.me.name) || "",
+           role: State.role, avatar_id: (State.me && State.me.avatar_id) || "fox" };
+  }
   const avatarEl = document.getElementById("header-avatar");
   const nameEl = document.getElementById("header-name");
   const roleEl = document.getElementById("header-role");
@@ -1004,9 +1041,11 @@ async function setupTabsForRole() {
     const tabAttr = t.action ? "" : ' data-tab="' + t.id + '"';
     return '<button class="tab-btn" data-action="' + action + '"' + tabAttr + '>' + icon(t.icon, 21, 1.7) + '<span>' + t.label + '</span></button>';
   }).join("");
-  await refreshHeader();
-  switchTab("home");
-
+  // Ko‘rinishni AVVAL to‘liq almashtiramiz, so‘ng ma'lumot so‘raymiz.
+  // Ilgari teskarisi edi: so‘rov bajarilmay qolsa, pastdagi tugmalar
+  // ota-onaniki, sarlavha va tepadagi lenta esa bolaniki bo‘lib qolardi.
+  // Aynan shunda «Bolaxona rejimi» yozuvi turib, ota-ona hamyoni —
+  // Bilig kursi bilan birga — ochilib ketardi.
   const banner = document.getElementById("bolaxona-banner");
   renderHeaderNav();
   if (State.activeChildId) {
@@ -1017,6 +1056,8 @@ async function setupTabsForRole() {
   } else {
     banner.classList.add("hidden");
   }
+  switchTab("home");
+  await refreshHeader();
 }
 
 // Sarlavhadagi uchta tugma: reyting, shaxsiy natija va nishonlar.
@@ -1064,7 +1105,17 @@ function switchTab(tabId) {
   const fn = renderers[tabId];
   const main = document.getElementById("app-main");
   main.innerHTML = skeleton(SK_KIND[tabId] || "list");
-  if (fn) fn().catch(function (e) { main.innerHTML = '<div class="empty-state">' + escapeHtml(e.error || "Xatolik yuz berdi") + '</div>'; });
+  // Sahifa ochilmay qolsa — quruq xato matni emas, qayta urinish tugmasi
+  // bilan tushunarli kartochka chiqadi.
+  if (fn) fn().catch(function (e) {
+    main.innerHTML =
+      '<div class="load-error">' +
+      '<div class="load-error-icon">' + icon("refresh", 26, 1.7) + '</div>' +
+      '<p class="load-error-title">Sahifa ochilmadi</p>' +
+      '<p class="load-error-sub">' + escapeHtml(e.error || "Qaytadan urinib ko‘ring.") + '</p>' +
+      '<button class="btn btn-primary" data-action="retry-tab" data-tab="' + tabId + '">Qayta urinish</button>' +
+      '</div>';
+  });
 }
 
 // ==========================================================
@@ -1099,6 +1150,7 @@ document.addEventListener("click", async function (e) {
   try {
     switch (a) {
       case "open-tab": switchTab(el.dataset.tab); break;
+      case "retry-tab": switchTab(el.dataset.tab); break;
       case "close-modal": closeModal(); break;
 
       case "open-child-detail": State.selectedChildId = Number(el.dataset.id); await renderChildDetailPage(State.selectedChildId); break;
@@ -3073,6 +3125,27 @@ async function sendVoice(bookId, asl) {
   }
 }
 
+// Natijadan keyin xato javoblarni ko‘rsatish. Bola qayerda adashganini
+// bilmasa, test unga hech narsa o‘rgatmaydi — faqat baho qo‘yadi.
+function testReview(review) {
+  if (!review || !review.length) return "";
+  const wrong = review.filter(function (r) { return !r.ok; });
+  if (!wrong.length) {
+    return '<p class="review-all-ok">Barcha javoblar to‘g‘ri. Kitobni chindan tushunibsan.</p>';
+  }
+  let html = '<p class="review-head">Xato javoblar — ' + wrong.length + ' ta</p>';
+  wrong.forEach(function (r) {
+    html += '<div class="review-item">' +
+      '<p class="review-q">' + escapeHtml(r.question) + '</p>' +
+      (r.your
+        ? '<p class="review-line bad"><span>Sening javobing</span>' + escapeHtml(r.your) + '</p>'
+        : '<p class="review-line bad"><span>Sening javobing</span>javob bermading</p>') +
+      '<p class="review-line good"><span>To‘g‘ri javob</span>' + escapeHtml(r.correct) + '</p>' +
+      '</div>';
+  });
+  return html;
+}
+
 const Test = {
   bookId: null, stage: null, questions: [], answers: {},
   select: function (qid, val) {
@@ -3094,6 +3167,7 @@ const Test = {
       (res.earned_bilig ? "" :
         '<p class="section-sub">Bilig 70% dan yuqori natijaga beriladi. ' +
         'Keyingi bosqichda albatta chiqadi — kitobni sinchiklab o‘qib bor.</p>') +
+      testReview(res.review) +
       '<button class="btn btn-primary btn-block" data-action="close-modal">Yopish</button>'
     ); };
     if (res.new_badges && res.new_badges.length) celebrate(res.new_badges, showRes);
