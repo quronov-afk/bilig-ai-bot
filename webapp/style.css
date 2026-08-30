@@ -403,7 +403,10 @@ html, body {
 
 /* Bo‘lim sarlavhasi */
 .sec-label {
-  font-size: 13.5px; font-weight: 800; color: var(--text-faint);
+  /* Hamma harf bosh harf bo‘lgani uchun bu yozuv ko‘zga kattaroq
+     ko‘rinadi — shuning uchun o‘lchami va qalinligi ataylab pasaytirilgan
+     (ega talabi, 2026-08-30). */
+  font-size: 12px; font-weight: 700; color: var(--text-faint);
   text-transform: uppercase; letter-spacing: .06em; margin: 18px 0 9px;
   display: flex; align-items: center; gap: 7px;
 }
