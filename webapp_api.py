@@ -2224,7 +2224,7 @@ def _split_book(raw):
     if not text:
         return None
     if "." in text:
-        title, author = text.split(".", 1)
+        title, author = text.rsplit(".", 1)
     else:
         title, author = text, ""
     return {"title": title.strip(), "author": author.strip()}
@@ -2396,7 +2396,7 @@ def parent_catalog():
             if not text:
                 continue
             if "." in text:
-                title, author = text.split(".", 1)
+                title, author = text.rsplit(".", 1)
             else:
                 title, author = text, ""
             books.append({
