@@ -2135,7 +2135,11 @@ async function recShelfHtml(forChild) {
   // ochiladi (ega talabi — bazadagi hamma kitobni ko‘rish mumkin bo‘lsin).
   return '<button class="sec-more" data-action="open-catalog">' +
     '<span class="sec-label" style="margin:0">' +
-    (forChild ? "Senga tavsiya" : (childName ? escapeHtml(childName) + " yoshiga tavsiya" : "Tavsiya etilgan kitoblar")) +
+    // Faqat ISM olinadi: to‘liq familiya bilan sarlavha ikki qatorga
+    // tushib, «Barchasi» tugmasiga tiqilib qolardi.
+    (forChild ? "Senga tavsiya"
+              : (childName ? escapeHtml(childName.trim().split(/\s+/)[0]) + " yoshiga tavsiya"
+                           : "Tavsiya etilgan kitoblar")) +
     '</span>' +
     '<span class="sec-more-go">Barchasi ' + icon("chevron-right", 15, 2.2) + '</span>' +
     '</button>' +
