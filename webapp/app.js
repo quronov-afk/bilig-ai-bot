@@ -2654,10 +2654,10 @@ async function openBookModal(bookId) {
       });
     }
   });
-  // AI ustoz savoli ALOHIDA bo‘lim emas — u testlar bilan bitta joyda
-  // turadi. Ega sababini aytdi: kitob oynasida bo‘limlar juda ko‘payib
-  // ketgan edi (2026-08-31). Ikkalasi ham «bilimni tekshirish» ishi.
-  testsHtml += talkCards;
+  let talkHtml = "";
+  if (talkCards) {
+    talkHtml = '<p class="eyebrow" style="margin-top:18px">AI ustoz savoli</p>' + talkCards;
+  }
 
   // Ovozli xulosa har 15 betda bir marta ochiladi. Yopiq bo‘lsa —
   // «bo‘lmaydi» demaymiz, balki qancha o‘qish qolganini aytamiz.
@@ -2690,6 +2690,7 @@ async function openBookModal(bookId) {
       title: "Bet raqamini o‘zim yozaman",
       desc: "Rasm chiqmasa yoki yorug‘lik yetmasa — raqamni qo‘lda kiritasan."
     }) +
+    talkHtml +
     '<p class="eyebrow" style="margin-top:18px">Kitob haqida gapirib ber</p>' +
     voiceHtml +
     testsHtml
