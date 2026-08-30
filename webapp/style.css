@@ -1933,3 +1933,19 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
   cursor: pointer;
 }
 .back-btn:active { background: var(--border); transform: translateY(1px); }
+
+/* Xabar kartochkasida — qaysi farzand haqidaligi. Lenta ota-onaning
+   o‘ziniki, hamma farzandlar bo‘yicha keladi; kartochka esa «Faol»
+   belgisining ostida turadi, shuning uchun ism aniq ko‘rsatiladi. */
+/* DIQQAT: tanlagich uch bo‘lakli bo‘lishi SHART (.feed-card .t .fc-who).
+   Yuqoridagi «.welc .t span» qoidasi kuchliroq bo‘lib, ikki bo‘lakli
+   tanlagichni bosib qo‘yadi — ism avatarga yopishib qolardi. */
+.feed-card .t .fc-who {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 13px; font-weight: 700; color: var(--text-soft);
+  margin: 0 0 6px; line-height: 1;
+}
+.feed-card .t .fc-who svg,
+.feed-card .t .fc-who img {
+  width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0; display: block;
+}

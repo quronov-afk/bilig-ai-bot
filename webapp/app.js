@@ -312,6 +312,14 @@ function feedCardHtml() {
     (ask ? ' data-action="feed-open" data-id="' + n.id + '" data-kind="' + n.kind +
            '" data-topic="' + escapeHtml(n.body || "") + '"' : "") + '>' +
     '<div class="t">' +
+    // Xabar QAYSI farzand haqidaligi. Lenta ota-onaning o‘ziniki — u hamma
+    // farzandlar bo‘yicha keladi, «faol» farzandga bog‘liq emas. Kartochka
+    // esa faol farzand belgisining ostida turadi, shuning uchun ism
+    // ko‘rsatilmasa xabar noto‘g‘ri farzandga tegishlidek ko‘rinardi.
+    (n.child_name
+      ? '<span class="fc-who">' + avatarMarkup(n.avatar_id || "fox", 20) +
+        escapeHtml(n.child_name) + '</span>'
+      : "") +
     '<b>' + escapeHtml(n.title) + '</b>' +
     (n.body ? '<span>' + escapeHtml(n.body) + '</span>' : "") +
     (ask ? '<span class="go">' +
