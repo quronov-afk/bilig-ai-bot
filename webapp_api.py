@@ -117,6 +117,11 @@ _COLUMN_MIGRATIONS = (
     # uchun qabul qiluvchi har doim `parent_id` bo‘lardi. Endi bolada ham
     # lenta bor — eski yozuvlarda bu ustun bo‘sh, o‘shanda `parent_id` olinadi.
     "ALTER TABLE Notifications ADD COLUMN to_user INTEGER",
+    # Kitob oxirgi marta QACHON o‘qilgani. Ega talabi: eng oxirgi
+    # o‘qigan kitob hamma ro‘yxatda birinchi tursin. Ilgari tartib
+    # «eng ko‘p bet o‘qilgani» bo‘yicha edi — bola boshqa kitobga
+    # o‘tsa ham eskisi yuqorida qolaverardi.
+    "ALTER TABLE Plan_Books ADD COLUMN last_read_at TEXT",
 )
 
 
@@ -446,6 +451,27 @@ for _tbl_sql in (
 # Jadvallar endi aniq mavjud — yuqoridagi ustun qo‘shishlarni qaytaramiz.
 # Yangi bazada birinchi urinishda ular o‘tmagan edi.
 _apply_column_migrations()
+
+
+def _backfill_last_read():
+    """Yangi «oxirgi o‘qilgan vaqt» ustunini eski o‘qish tarixidan to‘ldiradi.
+
+    Faqat bo‘sh yozuvlarga tegadi, shuning uchun har ishga tushganda
+    xavfsiz qayta chaqirilaveradi.
+    """
+    try:
+        cursor.execute(
+            "UPDATE Plan_Books SET last_read_at = ("
+            "  SELECT MAX(rl.created_at) FROM Reading_Logs rl"
+            "  WHERE rl.book_id = Plan_Books.book_id"
+            ") WHERE last_read_at IS NULL"
+        )
+        conn.commit()
+    except Exception:
+        pass
+
+
+_backfill_last_read()
 
 # ------------------------------------------------------------
 # FOYDALANUVCHI YUKLAGAN RASMLAR (avatar va kitob muqovasi)
@@ -1692,7 +1718,7 @@ def get_shelf_books(child_id: int, parent_id: int = None):
     if parent_id:
         q += " AND rp.parent_id = ?"
         params.append(parent_id)
-    q += " ORDER BY pb.is_completed ASC, pb.pages_read DESC"
+    q += " ORDER BY pb.is_completed ASC, COALESCE(pb.last_read_at, '') DESC, pb.pages_read DESC"
     cursor.execute(q, params)
     return [
         {"id": b[0], "title": b[1], "author": b[2], "pages_read": b[3],
@@ -1722,7 +1748,7 @@ def get_current_book(child_id: int, parent_id: int = None):
     if parent_id:
         q += " AND rp.parent_id = ?"
         params.append(parent_id)
-    q += " ORDER BY pb.pages_read DESC LIMIT 1"
+    q += " ORDER BY COALESCE(pb.last_read_at, '') DESC, pb.pages_read DESC LIMIT 1"
     cursor.execute(q, params)
     row = cursor.fetchone()
     if not row:
@@ -1976,7 +2002,8 @@ def parent_home(child_id):
     cursor.execute(
         "SELECT pb.book_id, pb.title, pb.author, pb.pages_read, pb.total_pages, pb.cover_file FROM Plan_Books pb "
         "JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
-        "WHERE rp.parent_id = ? AND rp.child_id = ? AND pb.is_completed = 0 ORDER BY pb.pages_read DESC",
+        "WHERE rp.parent_id = ? AND rp.child_id = ? AND pb.is_completed = 0 "
+        "ORDER BY COALESCE(pb.last_read_at, '') DESC, pb.pages_read DESC",
         (g.user_id, child_id)
     )
     active_books = [
@@ -2380,31 +2407,70 @@ def child_book_request():
     return jsonify({"ok": True})
 
 
-@app.route("/api/parent/catalog", methods=["GET"])
-@require_auth
-def parent_catalog():
-    """Kitoblar katalogi — nomi va muallifi alohida ajratilgan holda.
+def _build_catalog():
+    """Butun kitob javoni — nomi, muallifi, yosh toifasi va pasporti bilan.
 
-    Ota-ona kitobni shu ro‘yxatdan tanlaydi: nom, muallif va muqova tayyor,
-    ya'ni AI umuman chaqirilmaydi. Ro‘yxat kichik bo‘lgani uchun bir marta
-    to‘liq beriladi, qidiruv va yosh bo‘yicha saralash ilovaning o‘zida bo‘ladi.
+    Ro‘yxat kichik (bir necha yuz kitob) bo‘lgani uchun bir marta to‘liq
+    beriladi: qidiruv va yosh bo‘yicha saralash ilovaning o‘zida bo‘ladi,
+    ya'ni har harf terilganda serverga so‘rov ketmaydi.
+
+    Kitob pasporti (mavzusi, qisqacha mazmuni) bitta so‘rov bilan olinadi —
+    har kitob uchun alohida so‘rov qilinsa, yuzlab so‘rov bo‘lib ketardi.
     """
+    base = {}
+    try:
+        cursor.execute(
+            "SELECT book_key, COALESCE(theme, ''), COALESCE(summary, ''), "
+            "COALESCE(age_band, ''), COALESCE(mood, '') FROM Book_Base")
+        for r in cursor.fetchall():
+            base[r[0]] = {"theme": r[1], "summary": r[2],
+                          "age_band": r[3], "mood": r[4]}
+    except Exception:
+        base = {}
+
     books = []
     for age_key, titles in RECOMMENDED_BOOKS.items():
         for raw in titles:
             text = (raw or "").strip().rstrip(".")
             if not text:
                 continue
+            # Ajratish OXIRGI nuqtadan: turkumli kitoblarda nom ichida ham
+            # nuqta bor («Xorazmiy. 0 bilan tanishuv. Dinara Muminova»).
             if "." in text:
                 title, author = text.rsplit(".", 1)
             else:
                 title, author = text, ""
-            books.append({
-                "title": title.strip(),
-                "author": author.strip(),
-                "age": age_key,
-            })
-    return jsonify(books)
+            title, author = title.strip(), author.strip()
+            b = {"title": title, "author": author, "age": age_key,
+                 "age_label": AGE_LABELS.get(age_key, "")}
+            info = base.get(book_key(title, author))
+            if info:
+                b["theme"] = info["theme"]
+                b["summary"] = info["summary"]
+                b["mood"] = info["mood"]
+                if info["age_band"]:
+                    b["age_label"] = info["age_band"] + " yosh"
+            books.append(b)
+    books.sort(key=lambda x: x["title"].lower())
+    return books
+
+
+@app.route("/api/parent/catalog", methods=["GET"])
+@require_auth
+def parent_catalog():
+    """Ota-ona uchun katalog — kitob bir bosishda rejaga qo‘shiladi."""
+    return jsonify(_build_catalog())
+
+
+@app.route("/api/child/catalog", methods=["GET"])
+@require_auth
+def child_catalog():
+    """Bola uchun ayni katalog — u kitobni ko‘radi va «So‘rayman» deydi.
+
+    Alohida manzil kerak: bola ota-ona bo‘limlariga umuman kira olmaydi
+    (rollar ajratilgan), lekin butun javonni ko‘rishga haqli.
+    """
+    return jsonify(_build_catalog())
 
 
 @app.route("/api/parent/plans", methods=["GET"])
@@ -2425,8 +2491,10 @@ def parent_plans():
     for plan_id, name, prize, status, cid, plan_type in cursor.fetchall():
         cursor.execute(
             "SELECT book_id, title, author, pages_read, total_pages, is_completed, "
-            "mid_test_1_done, mid_test_2_done, final_test_done, cover_file "
-            "FROM Plan_Books WHERE plan_id = ?",
+            "mid_test_1_done, mid_test_2_done, final_test_done, cover_file, "
+            "COALESCE(last_read_at, '') "
+            "FROM Plan_Books WHERE plan_id = ? "
+            "ORDER BY COALESCE(last_read_at, '') DESC, pages_read DESC",
             (plan_id,)
         )
         books = [
@@ -2435,7 +2503,8 @@ def parent_plans():
              "test_final_only": b[0] in _final_only,
              "mid_test_1_done": bool(b[6]),
              "mid_test_2_done": bool(b[7]), "final_test_done": bool(b[8]),
-             "cover_file": b[9], "has_voice": has_voice_report(cid, b[0])}
+             "cover_file": b[9], "last_read_at": b[10],
+             "has_voice": has_voice_report(cid, b[0])}
             for b in cursor.fetchall()
         ]
         plans.append({
@@ -3433,8 +3502,10 @@ def child_books():
     for plan_id, name, prize, plan_type in cursor.fetchall():
         cursor.execute(
             "SELECT book_id, title, author, pages_read, total_pages, is_completed, "
-            "mid_test_1_done, mid_test_2_done, final_test_done, cover_file "
-            "FROM Plan_Books WHERE plan_id = ?",
+            "mid_test_1_done, mid_test_2_done, final_test_done, cover_file, "
+            "COALESCE(last_read_at, '') "
+            "FROM Plan_Books WHERE plan_id = ? "
+            "ORDER BY COALESCE(last_read_at, '') DESC, pages_read DESC",
             (plan_id,)
         )
         books = [
@@ -3443,7 +3514,8 @@ def child_books():
              "test_final_only": b[0] in _final_only,
              "mid_test_1_done": bool(b[6]),
              "mid_test_2_done": bool(b[7]), "final_test_done": bool(b[8]),
-             "cover_file": b[9], "has_voice": has_voice_report(child_id, b[0])}
+             "cover_file": b[9], "last_read_at": b[10],
+             "has_voice": has_voice_report(child_id, b[0])}
             for b in cursor.fetchall()
         ]
         if books:
@@ -3624,7 +3696,9 @@ def _apply_page_progress(book_id, child_id, new_page):
     _book_title = (_t[0] if _t else "") or "Kitob"
 
     with db_lock:
-        cursor.execute("UPDATE Plan_Books SET pages_read = ? WHERE book_id = ?", (new_page, book_id))
+        cursor.execute(
+            "UPDATE Plan_Books SET pages_read = ?, last_read_at = ? WHERE book_id = ?",
+            (new_page, now_ts, book_id))
         cursor.execute(
             "INSERT INTO Reading_Logs (child_id, book_id, pages_added, created_at) VALUES (?, ?, ?, ?)",
             (child_id, book_id, pages_added, now_ts)

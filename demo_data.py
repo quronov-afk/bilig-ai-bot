@@ -239,12 +239,21 @@ def fill_demo_child(parent_id, child_id):
         bid = book_ids.get(title)
         if not bid:
             continue
+        last = ""
         for days_ago, pages in entries:
+            ts = _iso(days_ago)
+            if ts > last:
+                last = ts
             cursor.execute(
                 "INSERT INTO Reading_Logs (child_id, book_id, pages_added, created_at) "
                 "VALUES (?, ?, ?, ?)",
-                (child_id, bid, pages, _iso(days_ago))
+                (child_id, bid, pages, ts)
             )
+        # Kitob ro‘yxatlari «oxirgi o‘qilgani birinchi» tartibida chiqadi —
+        # namoyishda ham shu tartib to‘g‘ri ko‘rinishi uchun vaqtni yozamiz.
+        if last:
+            cursor.execute(
+                "UPDATE Plan_Books SET last_read_at = ? WHERE book_id = ?", (last, bid))
 
     # 4. AI Ustoz tahlillari
     for rep in DEMO_REPORTS:

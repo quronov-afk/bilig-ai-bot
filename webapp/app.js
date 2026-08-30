@@ -84,6 +84,7 @@ const State = {
   walletRate: 0,
   walletShowSom: false,
   feed: [],                // ota-onaning o‘qilmagan xabarlari
+  subPage: null,           // tab ichidagi ichki sahifa (masalan farzand kartasi)
 };
 
 // ---------------- IKONALAR (Feather uslubi, emoji YO‘Q) ----------------
@@ -92,6 +93,8 @@ const ICON_PATHS = {
   plus: '<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>',
   "chevron-right": '<polyline points="9 18 15 12 9 6"/>',
   "chevron-down": '<polyline points="6 9 12 15 18 9"/>',
+  // Ulashish — nishonni Telegram orqali yuborish tugmasida ishlatiladi
+  share: '<circle cx="18" cy="5.4" r="2.7"/><circle cx="6" cy="12" r="2.7"/><circle cx="18" cy="18.6" r="2.7"/><line x1="8.4" y1="10.8" x2="15.6" y2="6.6"/><line x1="8.4" y1="13.2" x2="15.6" y2="17.4"/>',
   x: '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>',
   "arrow-right": '<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>',
   check: '<polyline points="20 6 9 17 4 12"/>',
@@ -845,11 +848,56 @@ function openModal(title, bodyHtml, extraClass) {
   box.className = "modal-box" + (extraClass ? " " + extraClass : "");
   box.scrollTop = 0;
   document.getElementById("modal-overlay").classList.remove("hidden");
+  syncBackButton();
 }
 function closeModal() {
   document.getElementById("modal-overlay").classList.add("hidden");
   document.getElementById("modal-body").innerHTML = "";
+  syncBackButton();
 }
+
+// ==========================================================
+// «ORQAGA» TUGMASI
+// ==========================================================
+// Ega talabi: bir sahifa ortga qaytish yo‘li bo‘lsin. Telegram oynasining
+// O‘Z tugmasidan foydalanamiz — u tepada, «Yopish» yonida chiqadi va
+// telefonning orqaga ishorasi bilan ham ishlaydi. Ilova ichiga yana bitta
+// tugma qo‘yilsa, ekran tor bo‘lib qolardi.
+//
+// Qaytish tartibi: ochiq oyna → hamyon/ichki sahifa → bosh sahifa.
+function isModalOpen() {
+  const o = document.getElementById("modal-overlay");
+  return !!o && !o.classList.contains("hidden");
+}
+
+function syncBackButton() {
+  if (!tg || !tg.BackButton) return;
+  const deep = isModalOpen() || !!State.subPage ||
+    (State.currentTab === "store" && State.storeView === "wallet") ||
+    (State.currentTab && State.currentTab !== "home");
+  if (deep) tg.BackButton.show(); else tg.BackButton.hide();
+}
+
+async function goBack() {
+  haptic();
+  if (isModalOpen()) { closeModal(); return; }
+  if (State.currentTab === "store" && State.storeView === "wallet") {
+    State.storeView = "shop";
+    await renderStoreTab();
+    syncBackButton();
+    return;
+  }
+  if (State.subPage) {
+    State.subPage = null;
+    document.getElementById("app-main").innerHTML = skeleton("home");
+    await renderParentHome();
+    syncBackButton();
+    return;
+  }
+  if (State.currentTab !== "home") switchTab("home");
+}
+
+if (tg && tg.BackButton) tg.BackButton.onClick(function () { goBack(); });
 document.getElementById("modal-close").onclick = closeModal;
 document.getElementById("modal-overlay").addEventListener("click", function (e) { if (e.target.id === "modal-overlay") closeModal(); });
 document.getElementById("header-help-btn").addEventListener("click", openContactModal);
@@ -1082,6 +1130,8 @@ function renderHeaderNav() {
 function openRatingFromHeader() {
   document.querySelectorAll(".tab-btn").forEach(function (b) { b.classList.remove("active"); });
   State.currentTab = "rating";
+  State.subPage = null;
+  syncBackButton();
   const main = document.getElementById("app-main");
   main.innerHTML = skeleton("rows");
   renderRatingTab().catch(function (e) { main.innerHTML = '<div class="empty-state">' + escapeHtml(e.error || "Xatolik yuz berdi") + '</div>'; });
@@ -1095,6 +1145,7 @@ function asChildQuery() {
 
 function switchTab(tabId) {
   State.currentTab = tabId;
+  State.subPage = null;
   // Hamyon do‘kon ichidagi ko‘rinish. Pastdagi tab qayta bosilsa,
   // foydalanuvchi sovg‘alar javonini kutadi — shuning uchun tiklanadi.
   if (tabId === "store") State.storeView = "shop";
@@ -1107,6 +1158,7 @@ function switchTab(tabId) {
   main.innerHTML = skeleton(SK_KIND[tabId] || "list");
   // Sahifa ochilmay qolsa — quruq xato matni emas, qayta urinish tugmasi
   // bilan tushunarli kartochka chiqadi.
+  syncBackButton();
   if (fn) fn().catch(function (e) {
     main.innerHTML =
       '<div class="load-error">' +
@@ -1153,10 +1205,17 @@ document.addEventListener("click", async function (e) {
       case "retry-tab": switchTab(el.dataset.tab); break;
       case "close-modal": closeModal(); break;
 
-      case "open-child-detail": State.selectedChildId = Number(el.dataset.id); await renderChildDetailPage(State.selectedChildId); break;
+      case "open-child-detail":
+        State.selectedChildId = Number(el.dataset.id);
+        State.subPage = "child-detail";
+        await renderChildDetailPage(State.selectedChildId);
+        syncBackButton();
+        break;
       case "back-to-home":
+        State.subPage = null;
         document.getElementById("app-main").innerHTML = skeleton("home");
         await renderParentHome();
+        syncBackButton();
         break;
       case "enter-bolaxona":
         State.activeChildId = Number(el.dataset.id);
@@ -1174,6 +1233,8 @@ document.addEventListener("click", async function (e) {
       case "wizard-continue-plan": await Wizard.continuePlan(); break;
       case "wizard-pick-method": await Wizard.pickMethod(el.dataset.method); break;
       case "wizard-pick-rec": await Wizard.addRecBook(Number(el.dataset.idx)); break;
+      case "open-catalog": await Catalog.openBrowse(); break;
+      case "cat-back": await Catalog.openBrowse(); break;
       case "cat-age": Catalog.setAge(el.dataset.key); break;
       case "cat-pick": await Catalog.pick(Number(el.dataset.idx)); break;
       case "wizard-submit-text": await Wizard.submitTextBook(); break;
@@ -1208,8 +1269,8 @@ document.addEventListener("click", async function (e) {
       case "open-rate": openRateModal(); break;
       case "submit-rate": await submitRate(); break;
 
-      case "open-wallet": State.storeView = "wallet"; await renderStoreTab(); break;
-      case "close-wallet": State.storeView = "shop"; await renderStoreTab(); break;
+      case "open-wallet": State.storeView = "wallet"; await renderStoreTab(); syncBackButton(); break;
+      case "close-wallet": State.storeView = "shop"; await renderStoreTab(); syncBackButton(); break;
       case "gift-given": await markGiftGiven(Number(el.dataset.id)); break;
       case "feed-read": await readFeed(Number(el.dataset.id)); break;
       case "feed-open":
@@ -1222,6 +1283,8 @@ document.addEventListener("click", async function (e) {
       case "talk-parent": await answerTalkParent(el.dataset.id, el.dataset.a); break;
 
       case "open-rec-book": openRecBookModal(el.dataset.i); break;
+      case "open-badge": openBadgeModal(el.dataset.slug); break;
+      case "share-badge": shareBadge(el.dataset.slug); break;
       case "open-done-books": openDoneBooksModal(); break;
       case "open-marathon": openMarathonModal(el.dataset.id); break;
       case "rec-add-confirm": {
@@ -1982,7 +2045,7 @@ async function renderParentPlans() {
 
   if (reading.length) {
     html += '<p class="section-title">O‘qilayotgan kitoblar</p>';
-    reading.forEach(function (b) { html += bookCardHtml(b, true); });
+    sortByLastRead(reading).forEach(function (b) { html += bookCardHtml(b, true); });
   }
   MarathonCache = marathons;
   if (marathons.length) {
@@ -2025,6 +2088,17 @@ async function familyReadingHtml() {
     }).join("") + '</div>';
 }
 
+// Eng oxirgi o‘qilgan kitob doim birinchi turadi — ega talabi: «Eng
+// oxirgi o‘qiyotgan kitobi yuqorida turishi kerak. Hamma joyda.»
+// Vaqti teng bo‘lsa (yoki hali o‘qilmagan bo‘lsa) ko‘proq o‘qilgani ustun.
+function sortByLastRead(list) {
+  return list.sort(function (a, b) {
+    const x = a.last_read_at || "", y = b.last_read_at || "";
+    if (x !== y) return x < y ? 1 : -1;
+    return (b.pages_read || 0) - (a.pages_read || 0);
+  });
+}
+
 // Yoshga mos tavsiyalar javoni. Kitobga bosilsa oyna ochiladi: ota-onada
 // «Rejaga qo‘shish», bolada «So‘rayman» tugmasi bilan.
 async function recShelfHtml(forChild) {
@@ -2041,9 +2115,14 @@ async function recShelfHtml(forChild) {
   } catch (e) { return ""; }
   if (!books.length) return "";
 
-  return '<p class="sec-label">' +
+  // Sarlavhaning o‘zi tugma: o‘ngdagi «Barchasi» bosilsa butun javon
+  // ochiladi (ega talabi — bazadagi hamma kitobni ko‘rish mumkin bo‘lsin).
+  return '<button class="sec-more" data-action="open-catalog">' +
+    '<span class="sec-label" style="margin:0">' +
     (forChild ? "Senga tavsiya" : (childName ? escapeHtml(childName) + " yoshiga tavsiya" : "Tavsiya etilgan kitoblar")) +
-    '</p>' +
+    '</span>' +
+    '<span class="sec-more-go">Barchasi ' + icon("chevron-right", 15, 2.2) + '</span>' +
+    '</button>' +
     '<p class="section-sub">' + (forChild
       ? "Yoqqanini bossang, kitob haqida o‘qiysan."
       : "Kitobni bosib, farzandingiz rejasiga qo‘shasiz.") + '</p>' +
@@ -2059,12 +2138,19 @@ async function recShelfHtml(forChild) {
 
 // Tavsiya javonidagi kitoblar — oyna shu ro‘yxatdan to‘ldiriladi.
 const RecBooks = [];
+// Katalogdan («Barchasi») ochilgan kitoblar shu ro‘yxatning yuqori
+// raqamlariga yoziladi — tavsiya javonining o‘z raqamlari bilan
+// to‘qnashmasin.
+let CatSeq = 1000;
 
 // Kitob haqidagi oyna. Ota-onada «Rejaga qo‘shish», bolada «So‘rayman».
 // Kitob bazasi to‘lgach, bu yerga mavzu va qisqacha mazmun ham chiqadi.
-function openRecBookModal(index) {
+function openRecBookModal(index, fromCatalog) {
   const b = RecBooks[Number(index)];
   if (!b) return;
+  // Javondan kelingan bo‘lsa, «Bekor qilish» ilovani yopmaydi —
+  // foydalanuvchini javonning o‘ziga qaytaradi.
+  const backAction = fromCatalog ? "cat-back" : "close-modal";
   const kid = (State.childrenCache || []).filter(function (c) {
     return String(c.id) === String(State.selectedChildId);
   })[0];
@@ -2089,12 +2175,14 @@ function openRecBookModal(index) {
   if (isChildView()) {
     html += '<p class="rec-ask-q">Shu kitobni o‘qimoqchimisan? Ota-onangga xabar boradi.</p>' +
       '<button class="btn btn-primary btn-block" data-action="rec-ask-confirm" data-i="' + index + '">Ha, so‘rayman</button>' +
-      '<button class="btn btn-outline btn-block" data-action="close-modal">Yo‘q</button>';
+      '<button class="btn btn-outline btn-block" data-action="' + backAction + '">' +
+      (fromCatalog ? "Orqaga" : "Yo‘q") + '</button>';
   } else {
     html += '<p class="section-sub">' + escapeHtml(kid ? kid.name : "Farzandingiz") +
       ' rejasiga qo‘shiladi.</p>' +
       '<button class="btn btn-primary btn-block" data-action="rec-add-confirm" data-i="' + index + '">Rejaga qo‘shish</button>' +
-      '<button class="btn btn-outline btn-block" data-action="close-modal">Bekor qilish</button>';
+      '<button class="btn btn-outline btn-block" data-action="' + backAction + '">' +
+      (fromCatalog ? "Orqaga" : "Bekor qilish") + '</button>';
   }
   openModal("Kitob haqida", html);
 }
@@ -2420,7 +2508,7 @@ async function renderChildPlans() {
 
   if (reading.length) {
     html += '<p class="section-title">O‘qilayotgan kitoblar</p>';
-    reading.forEach(function (b) { html += bookCardHtml(b, false); });
+    sortByLastRead(reading).forEach(function (b) { html += bookCardHtml(b, false); });
   }
   MarathonCache = marathons;
   if (marathons.length) {
@@ -2470,18 +2558,34 @@ async function openBookModal(bookId) {
     // uchdan biri, 2-oraliq uchdan ikkisi, yakuniy esa oxirigacha
     // o‘qilganda. Yopiq tugma «man etilgan» emas — pastda qancha bet
     // qolgani aytiladi, ya'ni bola nima qilishini biladi.
+    // Uchta bosqich uchta kartochka bo‘lib turadi. Ega ikki narsani
+    // so‘radi: ko‘rinish chiroyli bo‘lsin va QULF OCHILGANI ANIQ
+    // ko‘rinsin. Shuning uchun ochiq bosqich ko‘k ramka, to‘q yozuv va
+    // «Boshlash ›» chaqirig‘i bilan ajralib turadi; yopig‘i esa xira,
+    // qulf belgisi bilan; bajarilgani yashil belgi bilan.
     const stages = b.stages || {};
     const stageBtn = function (stage, label) {
       const st = stages[stage] || { open: true, need_pages: 0 };
       if (b[stage + "_done"]) {
-        return '<button class="btn btn-secondary" disabled>' + label + ' (bajarilgan)</button>';
+        return '<span class="test-tile is-done">' +
+               '<span class="tt-ic">' + icon("check", 16, 2.6) + '</span>' +
+               '<span class="tt-name">' + label + '</span>' +
+               '<span class="tt-state">Bajarildi</span></span>';
       }
       if (!st.open) {
-        return '<button class="btn btn-outline" disabled style="opacity:.5">' +
-               icon("lock", 15, 2) + ' ' + label + '</button>';
+        return '<span class="test-tile is-locked">' +
+               '<span class="tt-ic">' + icon("lock", 15, 2) + '</span>' +
+               '<span class="tt-name">' + label + '</span>' +
+               '<span class="tt-state">' +
+               (st.need_pages ? "Yana " + st.need_pages + " bet" : "Yopiq") +
+               '</span></span>';
       }
-      return '<button class="btn btn-outline" data-action="open-test" data-id="' + bookId +
-             '" data-stage="' + stage + '">' + label + '</button>';
+      return '<button class="test-tile is-open" data-action="open-test" data-id="' + bookId +
+             '" data-stage="' + stage + '">' +
+             '<span class="tt-ic">' + icon("arrow-right", 16, 2.4) + '</span>' +
+             '<span class="tt-name">' + label + '</span>' +
+             '<span class="tt-state">Boshlash</span>' +
+             '</button>';
     };
     // Keyingi ochiladigan bosqich haqida bitta aniq jumla.
     let hint = "";
@@ -2493,7 +2597,7 @@ async function openBookModal(bookId) {
       hint = '<p class="section-sub" style="margin-top:8px">Yana ' +
              stages[nextClosed].need_pages + ' bet o‘qisang, ' + nm + ' test ochiladi.</p>';
     }
-    testsHtml = '<p class="eyebrow" style="margin-top:18px">Bilim testlari</p><div class="action-row">' +
+    testsHtml = '<p class="eyebrow" style="margin-top:18px">Bilim testlari</p><div class="test-row">' +
       stageBtn("mid_test_1", "1-oraliq") +
       stageBtn("mid_test_2", "2-oraliq") +
       stageBtn("final_test", "Yakuniy") +
@@ -2769,15 +2873,35 @@ function showPageResult(res) {
   }
   showPageResultModal(res);
 }
+// Bet qo‘shilgandan keyingi tabrik oynasi. Ega eski ko‘rinishni («uchta
+// bir xil quti») xunuk deb topdi. Endi bitta narsa bosh qahramon bo‘ladi:
+// Bilig olingan bo‘lsa — Bilig, olinmagan bo‘lsa — yetib borilgan bet.
+// Qolgani pastda, mayda va vazmin.
 function showPageResultModal(res) {
-  openModal("Ajoyib natija",
-    '<div class="stat-grid">' +
-    '<div class="stat-box"><div class="num">+' + res.earned_bilig + '</div><div class="lbl">Bilig</div></div>' +
-    '<div class="stat-box"><div class="num">' + res.new_page + '</div><div class="lbl">Sahifa</div></div>' +
-    '<div class="stat-box"><div class="num">' + res.streak + '</div><div class="lbl">Parvoz</div></div>' +
-    '</div>' +
-    (res.shield_used ? '<p class="section-sub">Qanot ishlatildi — parvozing uzilmadi.</p>' : "") +
-    '<button class="btn btn-primary btn-block" data-action="close-modal">Yopish</button>'
+  const gotBilig = res.earned_bilig > 0;
+  const hero = gotBilig
+    ? '<span class="wp-num">+' + res.earned_bilig + '</span>' +
+      '<span class="wp-unit">Bilig</span>'
+    : '<span class="wp-num">' + res.new_page + '</span>' +
+      '<span class="wp-unit">bet</span>';
+  const heroNote = gotBilig
+    ? "Xazinangga qo‘shildi"
+    : "Yo‘l davom etmoqda — har 5 betga 1 Bilig";
+
+  openModal(gotBilig ? "Ajoyib natija" : "Yozib oldik",
+    '<div class="win-panel">' +
+    '<span class="win-glow"></span>' +
+    '<div class="wp-hero">' + hero + '</div>' +
+    '<p class="wp-note">' + heroNote + '</p>' +
+    '<div class="wp-facts">' +
+    '<div><b>' + res.new_page + '</b><span>Yetgan bet</span></div>' +
+    '<div><b>' + res.streak + '</b><span>Parvoz kuni</span></div>' +
+    '</div></div>' +
+    (res.shield_used
+      ? '<p class="wp-shield">' + icon("shield", 15, 2) +
+        ' Qanot ishlatildi — parvozing uzilmadi.</p>'
+      : "") +
+    '<button class="btn btn-primary btn-block" data-action="close-modal">Davom etaman</button>'
   );
   refreshHeader();
   if (State.currentTab === "plans") renderChildPlans();
@@ -3496,23 +3620,28 @@ async function renderParentWallet(main) {
   }
 
   d.children.forEach(function (c) {
-    // Kimning hisobi ekani darrov ko‘rinsin — ismning yoniga avatar.
-    html += '<div class="wallet-who"><span class="av">' +
-      avatarMarkup(c.avatar_id || "fox", 40) + '</span>' +
-      '<span class="ww-name">' + escapeHtml(c.name) + '</span>' +
-      '<span class="ww-sub">hamyoni</span></div>';
+    // Ega eski ko‘rinishni xunuk deb topdi: ism kartochkadan tashqarida,
+    // havoda osilib turardi. Endi har farzand BITTA yaxlit kartochka —
+    // tepasida ismi va qo‘lidagi Biligi, pastida qayerdan kelib qayerga
+    // ketgani.
+    const head = '<div class="kw-head">' +
+      '<span class="kw-av">' + avatarMarkup(c.avatar_id || "fox", 40) + '</span>' +
+      '<span class="kw-id"><b>' + escapeHtml(c.name) + '</b><span>hamyoni</span></span>' +
+      '<span class="kw-bal">' + icon("coin", 15, 2.2) + ' ' + c.balance + '</span>' +
+      '</div>';
     if (!c.earned && !c.spent) {
-      html += '<div class="card empty-soft">' + icon("coin", 20, 1.8) +
-        '<p>Hali Bilig yig‘magan. Kitob o‘qiy boshlagach shu yerda ko‘rinadi.</p></div>';
+      html += '<div class="kid-wallet">' + head +
+        '<p class="kw-empty">Hali Bilig yig‘magan. Kitob o‘qiy boshlagach ' +
+        'shu yerda ko‘rinadi.</p></div>';
       return;
     }
-    html += '<div class="wallet-hero small">' +
-      '<div class="wh-split three">' +
+    html += '<div class="kid-wallet">' + head +
+      '<div class="kw-split">' +
       '<div><b>' + c.earned + '</b><span>Yig‘gan</span></div>' +
       '<div><b>' + c.spent + '</b><span>Sarflagan</span></div>' +
       '<div><b>' + c.balance + '</b><span>Qolgan</span></div>' +
       '</div>' +
-      (d.rate ? '<p class="wh-som soft">Qo‘lidagi Bilig ≈ ' + somFmt(c.balance * d.rate) + '</p>' : "") +
+      (d.rate ? '<p class="kw-som">Qo‘lidagi Bilig ≈ ' + somFmt(c.balance * d.rate) + '</p>' : "") +
       '</div>';
 
     if (c.pending.length) {
@@ -3580,9 +3709,22 @@ function openStoreEditModal(id, keep) {
     icon("image", 15, 2) + ' Rasm</button>' +
     '<button class="btn btn-outline" data-action="gift-emoji-toggle" style="display:flex;align-items:center;justify-content:center;gap:6px">' +
     icon("star", 15, 2) + ' Belgi</button></div>' +
-    '<div id="gift-emoji-grid" class="emoji-grid" hidden>' + GIFT_EMOJI.map(function (e) {
+    // Ega so‘radi: «Hamma telefonlarning o‘z emojilarini ulasakchi?»
+    // Veb ilovada emoji klaviaturasini majburan ochib bo‘lmaydi, lekin
+    // oddiy yozuv maydoni buni hal qiladi: ota-ona klaviaturasidagi
+    // kulgich tugmasini bosib, xohlagan belgisini qo‘yadi. Pastdagi
+    // tayyor ro‘yxat esa tez tanlash uchun qoladi.
+    '<div id="gift-emoji-grid" class="emoji-box" hidden>' +
+    '<label class="field-label" style="margin-top:0">O‘z belgingiz</label>' +
+    '<input id="gift-emoji-input" class="text-input emoji-input" ' +
+    'placeholder="Belgi qo‘ying" value="' + escapeHtml(GiftDraft.emoji || "") + '" ' +
+    'oninput="setGiftEmojiFromInput(this.value)" />' +
+    '<p class="emoji-hint">Klaviaturangizdagi kulgich tugmasini bosing — ' +
+    'telefoningizdagi istalgan belgini qo‘ya olasiz.</p>' +
+    '<p class="emoji-or">yoki tez tanlang</p>' +
+    '<div class="emoji-grid">' + GIFT_EMOJI.map(function (e) {
       return '<button class="emoji-btn" data-action="gift-emoji" data-e="' + e + '">' + e + '</button>';
-    }).join("") + '</div>' +
+    }).join("") + '</div></div>' +
     '<label class="field-label">Sovg‘a nomi</label>' +
     '<input id="store-name" class="text-input" placeholder="Masalan: 1 soat multfilm" value="' +
     escapeHtml(item.name || "") + '" />' +
@@ -3641,9 +3783,20 @@ function toggleEmojiGrid() {
 }
 function pickGiftEmoji(e) {
   GiftDraft.emoji = e; GiftDraft.photo = "";
+  const inp = document.getElementById("gift-emoji-input");
+  if (inp) inp.value = e;
   refreshGiftPreview();
   const g = document.getElementById("gift-emoji-grid");
   if (g) g.hidden = true;
+}
+
+// Ota-ona o‘z klaviaturasidan qo‘ygan belgi. Uzun matn yozib yuborilsa
+// ham ilova buzilmasin uchun qisqartiriladi — bu maydon nom emas, BELGI.
+function setGiftEmojiFromInput(v) {
+  const clean = (v || "").replace(/\s+/g, "").slice(0, 8);
+  GiftDraft.emoji = clean;
+  if (clean) GiftDraft.photo = "";
+  refreshGiftPreview();
 }
 function pickGiftPhoto() {
   readGiftForm();
@@ -4159,19 +4312,73 @@ function badgeArt(slug, size) {
 // shunda bola nimaga intilishini ko‘radi.
 function badgeGridHtml(badgesStr) {
   const earned = earnedBadgeSet(badgesStr);
+  BadgeEarnedSet = earned;        // tafsilot oynasi shundan foydalanadi
   const have = BADGE_LIST.filter(function (b) { return earned[b[1].toLowerCase()]; });
   const rest = BADGE_LIST.filter(function (b) { return !earned[b[1].toLowerCase()]; });
   const all = have.concat(rest);
   return '<p class="badge-count"><b>' + have.length + '</b> / ' + BADGE_LIST.length + ' nishon to‘plandi</p>' +
     '<div class="badge-grid">' + all.map(function (b) {
       const got = !!earned[b[1].toLowerCase()];
-      return '<div class="badge-tile' + (got ? "" : " is-locked") + '" title="' + escapeHtml(b[2]) + '">' +
+      // Nishon endi bosiladi: tafsiloti va ulashish tugmasi ochiladi.
+      return '<button class="badge-tile' + (got ? "" : " is-locked") +
+        '" data-action="open-badge" data-slug="' + b[0] + '">' +
         '<div class="badge-icon has-art">' + badgeArt(b[0]) + '</div>' +
         '<p>' + escapeHtml(b[1]) + '</p>' +
         '<span class="badge-cond">' + escapeHtml(got ? "Olingan" : b[2]) + '</span>' +
-        '</div>';
+        '</button>';
     }).join("") + '</div>';
 }
+// ==========================================================
+// NISHON TAFSILOTI VA ULASHISH
+// ----------------------------------------------------------
+// Ega so‘radi: «Nishon ustiga bosganda, tafsilotlar ko‘rinsin. Nishonlarni
+// ijtimoiy tarmoqlarda ulashish mumkin bo‘lsin.»
+//
+// Ulashish Telegramning o‘z «yuborish» oynasi orqali ketadi — u yerdan
+// istalgan suhbatga, kanalga yoki boshqa ilovaga uzatiladi.
+let BadgeEarnedSet = {};        // qaysi nishonlar olingani — javon chizilganda yoziladi
+
+function openBadgeModal(slug) {
+  const b = BADGE_LIST.filter(function (x) { return x[0] === slug; })[0];
+  if (!b) return;
+  const got = !!BadgeEarnedSet[b[1].toLowerCase()];
+  const meta = badgeMetaByName(b[1]) || {};
+  const who = isChildView() ? "Sen" : "Farzandingiz";
+
+  let html = '<div class="bd-art' + (got ? "" : " is-locked") + '">' + badgeArt(b[0]) + '</div>' +
+    '<p class="bd-name">' + escapeHtml(b[1]) + '</p>' +
+    '<p class="bd-state ' + (got ? "on" : "off") + '">' +
+    icon(got ? "check-circle" : "lock", 14, 2.2) + ' ' +
+    (got ? "Qo‘lga kiritilgan" : "Hali olinmagan") + '</p>';
+
+  if (meta.msg) html += '<p class="bd-msg">' + escapeHtml(meta.msg) + '</p>';
+  html += '<div class="bd-cond"><span>Sharti</span><b>' + escapeHtml(b[2]) + '</b></div>';
+  if (!got) {
+    html += '<p class="section-sub">' + who +
+      ' shu shartni bajarsa, nishon shu yerda yonadi.</p>';
+  }
+  if (got) {
+    html += '<button class="btn btn-primary btn-block" data-action="share-badge" ' +
+      'data-slug="' + b[0] + '">' + icon("share", 16, 2) + ' Ulashish</button>';
+  }
+  html += '<button class="btn btn-outline btn-block" data-action="close-modal">Yopish</button>';
+  openModal("Nishon", html);
+}
+
+function shareBadge(slug) {
+  const b = BADGE_LIST.filter(function (x) { return x[0] === slug; })[0];
+  if (!b) return;
+  const name = (State.activeChildName || (State.me && State.me.name) || "").trim();
+  const text = isChildView()
+    ? "Men «" + b[1] + "» nishonini qo‘lga kiritdim! " + b[2] + ". Bilig AI — kitob o‘qish odati."
+    : (name ? name + " " : "Farzandim ") + "«" + b[1] + "» nishonini qo‘lga kiritdi! " +
+      b[2] + ". Bilig AI — kitob o‘qish odati.";
+  const link = "https://t.me/share/url?url=" +
+    encodeURIComponent(location.origin) + "&text=" + encodeURIComponent(text);
+  if (tg && tg.openTelegramLink) tg.openTelegramLink(link);
+  else window.open(link, "_blank");
+}
+
 function diagRow(label, bar) {
   return '<div class="diag-row"><div class="diag-label"><span>' + label + '</span><span>' + bar + '</span></div></div>';
 }
@@ -4530,6 +4737,13 @@ const Catalog = {
   all: [],          // barcha kitoblar (bir marta yuklanadi)
   ageKey: "8",      // tanlangan yosh guruhi ("all" — barchasi)
   query: "",
+  // Ikki rejim bor:
+  //   "wizard" — kitob qo‘shish sehrgari ichida: bosilgan kitob darrov
+  //              rejaga tushadi.
+  //   "browse" — «Barchasi» tugmasi orqali ochilgan javon: bosilgan kitob
+  //              avval «Kitob haqida» oynasini ochadi. Ega talabi: bazadagi
+  //              hamma kitobni shunchaki ko‘rib chiqish mumkin bo‘lsin.
+  mode: "wizard",
 
   AGE_TABS: [
     { key: "3", label: "3-5 yosh" },
@@ -4546,11 +4760,33 @@ const Catalog = {
     return "12";
   },
 
+  load: async function () {
+    // Bola ota-ona bo‘limlariga kira olmaydi, shuning uchun unga o‘z
+    // manzili beriladi — mazmuni bir xil.
+    if (!this.all.length) {
+      this.all = await api(isChildView() ? "/api/child/catalog" : "/api/parent/catalog");
+    }
+  },
+
+  // «Barchasi» — butun javonni ko‘rish. Yosh chegarasisiz ochiladi.
+  openBrowse: async function () {
+    this.mode = "browse";
+    this.query = "";
+    this.ageKey = "all";
+    await this.load();
+    this.show("Barcha kitoblar");
+  },
+
   open: async function (childAge) {
+    this.mode = "wizard";
     this.query = "";
     this.ageKey = this.ageKeyFor(childAge || 10);
-    if (!this.all.length) this.all = await api("/api/parent/catalog");
-    openModal("Kitob tanlang",
+    await this.load();
+    this.show("Kitob tanlang");
+  },
+
+  show: function (title) {
+    openModal(title,
       '<div class="cat-search">' + icon("search", 16, 2) +
       '<input id="cat-q" class="cat-input" placeholder="Kitob yoki muallif nomi" autocomplete="off" />' +
       '</div>' +
@@ -4598,7 +4834,9 @@ const Catalog = {
     if (!list.length) {
       body.innerHTML = '<div class="cat-empty">' + icon("book-open", 34, 1.4) +
         '<p>Bunday kitob topilmadi</p>' +
-        '<button class="btn btn-outline btn-block" data-action="wizard-pick-method" data-method="text">Nomini o‘zim yozaman</button></div>';
+        (this.mode === "wizard"
+          ? '<button class="btn btn-outline btn-block" data-action="wizard-pick-method" data-method="text">Nomini o‘zim yozaman</button>'
+          : "") + '</div>';
       return;
     }
     const self = this;
@@ -4612,12 +4850,22 @@ const Catalog = {
           '<span class="cat-author">' + escapeHtml(b.author || "") + '</span>' +
           '</button>';
       }).join("") + '</div>' +
-      '<button class="btn btn-outline btn-block cat-manual" data-action="wizard-pick-method" data-method="text">Katalogda yo‘qmi? Nomini yozing</button>';
+      (this.mode === "wizard"
+        ? '<button class="btn btn-outline btn-block cat-manual" data-action="wizard-pick-method" data-method="text">Katalogda yo‘qmi? Nomini yozing</button>'
+        : "");
   },
 
   pick: async function (idx) {
     const b = this.all[idx];
     if (!b) return;
+    if (this.mode === "browse") {
+      // Javondan bosilgan kitob avval «Kitob haqida» oynasini ochadi:
+      // ota-onada «Rejaga qo‘shish», bolada «So‘rayman» tugmasi bilan.
+      const i = CatSeq++;
+      RecBooks[i] = b;
+      openRecBookModal(i, true);
+      return;
+    }
     const res = await api("/api/parent/plans/" + Wizard.planId + "/books", {
       method: "POST",
       body: { title: b.title, author: b.author }
