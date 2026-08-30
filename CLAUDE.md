@@ -62,8 +62,9 @@ To‘g‘ri: **O‘qish, O‘quvchi, Qo‘shish, Bog‘, Ko‘rish, Yo‘q, To�
 Tutuq belgili so‘zlar (ma'lumot, e'tibor, a'lo, san'at) boshqa masala — ularga
 tegilmaydi, ular oddiy apostrof bilan qoladi.
 
-**Har bir kod o‘zgarishidan keyin** quyidagi tekshiruvni bajar (buni avtomatik,
-so‘ralmasa ham qil):
+Tekshiruvni **ishning oxirida, bir marta** bajar — har tahrirdan keyin emas
+(sabab: pastdagi «Tejamkorlik» bo‘limi). Faqat **o‘zing tahrirlagan**
+fayllarni tekshir:
 
 ```bash
 python3 -c "
@@ -172,14 +173,63 @@ Tugma qayta-qayta bosilishi mumkin — natija har safar bir xil bo‘lishi shart
 (avval `clear_demo_child`, keyin to‘ldirish; do‘kon sovg‘alari nomi bo‘yicha
 yangilanadi, takrorlanmaydi).
 
-## Har bir o‘zgarishdan keyin tekshir
+## Tekshiruv — ishning oxirida, BIR MARTA
 
-1. `node --check webapp/app.js` — JS sintaksisi.
-2. `python3 -c "import ast; ast.parse(open('webapp_api.py').read())"` — Python
-   sintaksisi.
-3. Yuqoridagi imlo tekshiruv skripti.
+Bu ro‘yxat har tahrirdan keyin emas, **bir marta** — ishni yakunlab, egaga
+hisobot berishdan yoki commit qilishdan oldin bajariladi. Faqat o‘zing
+tegingan fayllar tekshiriladi.
+
+1. `node --check webapp/app.js` — JS sintaksisi (app.js tegilgan bo‘lsa).
+2. `python3 -c "import ast; ast.parse(open('FAYL').read())"` — tegilgan
+   Python fayllar uchun.
+3. Imlo tekshiruvi — tegilgan fayllar bo‘yicha.
 4. O‘zgargan endpoint bo‘lsa, frontend chaqiruvi bilan yo‘l (`/api/...`) va
-   metod (`GET`/`POST`) mosligini qo‘lda solishtiring.
+   metod (`GET`/`POST`) mosligini solishtir.
+
+Uchalasini **bitta buyruqda** birlashtir — uchta alohida chaqiruv qilma.
+
+## TEJAMKORLIK — majburiy qoidalar
+
+Ega dasturchi emas va ilova hali ommaga chiqmagan. Shuning uchun **har bir
+qadamni isbotlash shart emas** — xato chiqsa, keyin tuzatiladi. Har ortiqcha
+buyruq eganing limitini yeydi.
+
+**Qat'iy qoidalar:**
+
+1. **Tekshiruv — yakunda bir marta.** Har `Edit` dan keyin sintaksis
+   tekshirma. Hamma tahrirni qil, keyin bitta tekshiruv.
+2. **O‘qilgan faylni qayta o‘qima.** Bir seans ichida faylni bir marta
+   o‘qiysan. `Edit` muvaffaqiyatli bo‘lsa — o‘zgargan, tasdiqlash shart emas.
+3. **Fon ishini sanama.** `run_in_background` tugaganda o‘zi xabar beradi.
+   Oraliqda `ls | wc -l` qilma.
+4. **Skrinshot — faqat vizual o‘zgarish qilganda va bittadan.** Ega so‘ramasa
+   ilovani ochib ko‘rma. Ko‘rish kerak bo‘lsa — bitta skrinshot, o‘shanda
+   hamma kerakli narsa ko‘rinsin.
+5. **Namuna — bittadan.** Yangi uslub/dizayn sinaganda 1-2 misol yetarli,
+   4 ta emas. Ega ma'qullagach hammasiga qo‘llaysan.
+6. **Javob qisqa.** Uzun jadval va takroriy xulosa yozma. Nima qilinganini
+   3-5 qatorda ayt.
+7. **Bir buyruqda ko‘p ish.** `&&` bilan birlashtir — har biri uchun alohida
+   chaqiruv qilma.
+8. **Qidiruvni takrorlama.** Bir marta `grep` qilib topgan joyingni eslab qol.
+
+**Vazifa aytilganda MODEL ham aytiladi.** Ega yo‘l xaritasidagi ishni
+eslatganda yoki yangi vazifa taklif qilganda, har birining yoniga qaysi
+model samarali ekanini yoz:
+
+- **Sonnet 5** — odatiy ish: kod yozish, tuzatish, matn, mavjud naqshni
+  takrorlash. Ishlarning ko‘pi shu.
+- **Opus 5** — murakkab ish: yangi katta bo‘lim arxitekturasi, chalkash
+  xato izlash, ko‘p faylga tegadigan qayta qurish, nozik dizayn qarori.
+- **Haiku 4.5** — mayda ish: nom almashtirish, kichik matn tuzatish.
+
+Sabab: ega limitni tejashi kerak, lekin murakkab ishni kuchsiz modelga
+bersa — xato ko‘payib, qayta ishlash uchun KO‘PROQ sarflanadi.
+
+**Istisno — bularda tejamkorlik QO‘LLANMAYDI:**
+- Pul ketadigan amal (AI rasm chizish) — avval hisobla va ruxsat so‘ra.
+- Ma'lumot o‘chiradigan amal — avval tekshir.
+- Ega «to‘liq tekshir» yoki «sinab ko‘r» deb aytganda.
 
 ## Deploy
 
