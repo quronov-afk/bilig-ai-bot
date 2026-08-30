@@ -107,6 +107,24 @@ SCENES = {
     ),
 
     # ------------------------------------------------------
+    # 3. Bet raqamini qo‘lda yozish.
+    # Bola shuni tushunishi kerak: kitobning burchagidagi raqamni
+    # ko‘chirib yoz. Shuning uchun boyo‘g‘li bir qo‘li bilan bet
+    # burchagini ko‘rsatib, ikkinchisi bilan telefonga yozyapti.
+    # ------------------------------------------------------
+    "raqam": (
+        "A cute cartoon owl character with large friendly eyes, wearing a small "
+        "square embroidered Uzbek doppi cap, sitting behind a big open book that "
+        "lies flat on a table with its pages facing up. With one wing the owl points "
+        "with a wooden pencil at the bottom outer corner of the open right-hand page, "
+        "where a small blue circle marks the spot. With its other wing it holds a "
+        "modern smartphone upright, screen facing the viewer, showing one single "
+        "large empty rounded input box outlined in blue in the middle of the screen "
+        "and a small blue button below it. The owl looks focused and helpful, glancing "
+        "between the page corner and the phone. Full body, seen from the front."
+    ),
+
+    # ------------------------------------------------------
     # 2. Ovozli xulosa.
     # Bola shuni tushunishi kerak: kitob haqida OVOZDA gapir.
     # ------------------------------------------------------

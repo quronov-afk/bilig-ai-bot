@@ -97,6 +97,7 @@ const State = {
 // chiqmagan» dedi (2026-08-31).
 const GUIDE_ART = {
   "page-photo": "sahifa",     // ochiq kitob va unga qaratilgan telefon
+  "page-manual": "raqam",     // bet burchagidagi raqamni telefonga yozish
   "voice": "ovoz"             // kitob haqida gapirayotgan boyo‘g‘li
 };
 
@@ -2675,10 +2676,10 @@ async function openBookModal(bookId) {
       });
     }
   });
-  let talkHtml = "";
-  if (talkCards) {
-    talkHtml = '<p class="eyebrow" style="margin-top:18px">AI ustoz savoli</p>' + talkCards;
-  }
+  // AI ustoz savoli ALOHIDA bo‘lim emas — u testlar bilan bitta joyda
+  // turadi. Ega sababini aytdi: kitob oynasida bo‘limlar juda ko‘payib
+  // ketgan edi (2026-08-31). Ikkalasi ham «bilimni tekshirish» ishi.
+  testsHtml += talkCards;
 
   // Ovozli xulosa har 15 betda bir marta ochiladi. Yopiq bo‘lsa —
   // «bo‘lmaydi» demaymiz, balki qancha o‘qish qolganini aytamiz.
@@ -2711,7 +2712,6 @@ async function openBookModal(bookId) {
       title: "Bet raqamini o‘zim yozaman",
       desc: "Rasm chiqmasa yoki yorug‘lik yetmasa — raqamni qo‘lda kiritasan."
     }) +
-    talkHtml +
     '<p class="eyebrow" style="margin-top:18px">Kitob haqida gapirib ber</p>' +
     voiceHtml +
     testsHtml
@@ -2887,6 +2887,7 @@ async function sendPagePhoto(bookId, blob, zone) {
 
 function openPageManualModal(bookId) {
   openModal("Sahifa raqami",
+    guideArt("page-manual") +
     '<label class="field-label">Qaysi sahifagacha o‘qidingiz?</label>' +
     '<input id="manual-page-input" type="number" class="text-input" placeholder="Masalan: 45" />' +
     '<button class="btn btn-primary btn-block" data-action="submit-page-manual" data-id="' + bookId + '">Yuborish</button>'
