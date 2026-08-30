@@ -3159,14 +3159,16 @@ const Test = {
     mascotToast("qaldirgoch-tekshiruv", res.correct + "/" + res.total + " to‘g‘ri javob",
                 res.earned_bilig ? "Kitobni chindan tushunibsan." : "Yaxshi urinish — davom et.");
     const showRes = function () { openModal("Natija",
+      // Bolaga FOIZ ko‘rsatilmaydi (ega qarori): foiz baho bo‘lib
+      // tuyuladi va ruhini tushiradi. Unga aniq son va rag‘bat kerak.
       '<div class="stat-grid">' +
       '<div class="stat-box"><div class="num">' + res.correct + '/' + res.total + '</div><div class="lbl">To‘g‘ri javob</div></div>' +
-      '<div class="stat-box"><div class="num">' + res.percent + '%</div><div class="lbl">Natija</div></div>' +
       '<div class="stat-box"><div class="num">+' + res.earned_bilig + '</div><div class="lbl">Bilig</div></div>' +
       '</div>' +
       (res.earned_bilig ? "" :
-        '<p class="section-sub">Bilig 70% dan yuqori natijaga beriladi. ' +
-        'Keyingi bosqichda albatta chiqadi — kitobni sinchiklab o‘qib bor.</p>') +
+        '<p class="section-sub">Bu safar Bilig chiqmadi — savollarning ko‘pini ' +
+        'to‘g‘ri yechish kerak edi. Keyingi bosqichda albatta chiqadi, ' +
+        'kitobni sinchiklab o‘qib bor.</p>') +
       testReview(res.review) +
       '<button class="btn btn-primary btn-block" data-action="close-modal">Yopish</button>'
     ); };
