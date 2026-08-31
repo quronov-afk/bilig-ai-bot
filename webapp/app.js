@@ -76,7 +76,7 @@ const State = {
   activeChildName: null,
   currentTab: "home",
   childrenCache: [],
-  ratingMode: "global",
+  ratingMode: "passport",
   storeView: "shop",       // do‘kon ichida: "shop" (sovg‘alar javoni) yoki "wallet"
   storeItems: [],          // ota-ona sovg‘alari — tahrir oynasi shu ro‘yxatdan to‘ldiriladi
   storeChildren: [],       // narx maslahati uchun: farzandning haftalik yig‘imi
@@ -86,6 +86,9 @@ const State = {
   feed: [],                // ota-onaning o‘qilmagan xabarlari
   subPage: null,           // tab ichidagi ichki sahifa (masalan farzand kartasi)
   groupId: null,           // ochilgan guruh (Guruhlar ko‘rinishi ichida)
+  groupTab: "members",     // guruh ichida: a'zolar yoki reyting
+  groupPeriod: "week",     // guruh reytingi: week / month / all
+  groupMemberId: null,     // ochilgan a'zoning kartochkasi
   groupFound: null,        // qidiruv natijasi; null bo‘lsa qidiruv qilinmagan
   groupQuery: "",
 };
@@ -1141,11 +1144,14 @@ async function setupTabsForRole() {
 // Sarlavhada bitta belgi — kubok. Ichida to‘rtta ko‘rinish bor:
 // natija, nishonlar, guruhlar va reyting. Ilgari bu yerda uchta alohida
 // tugma turardi va uzun ism ularga sig‘masdi.
+// Global reyting olib tashlandi (2026-08-31, ega qarori): butun ilova
+// bo‘yicha ro‘yxatda o‘rtacha bola hech qachon ko‘rinmasdi va bu unga
+// rag‘bat bermasdi; qolaversa begona bolalarning ismi ochiq turardi.
+// Uning o‘rnini guruh reytingi egalladi — oila ham o‘ziga guruh ochadi.
 const RATING_VIEWS = [
   { mode: "passport", icon: "chart", label: "Natijam" },
   { mode: "badges", icon: "award", label: "Nishonlar" },
   { mode: "groups", icon: "users", label: "Guruhlar" },
-  { mode: "global", icon: "trophy", label: "Reyting" },
 ];
 
 function renderHeaderNav() {
@@ -1449,12 +1455,31 @@ document.addEventListener("click", async function (e) {
         break;
       case "group-open":
         State.groupId = Number(el.dataset.id);
+        State.groupTab = "members";
+        State.groupMemberId = null;
         State.subPage = "group";
         await renderRatingTab();
         break;
       case "group-back":
         State.groupId = null;
+        State.groupMemberId = null;
         State.subPage = null;
+        await renderRatingTab();
+        break;
+      case "group-tab":
+        State.groupTab = el.dataset.id;
+        await renderRatingTab();
+        break;
+      case "group-period":
+        State.groupPeriod = el.dataset.id;
+        await renderGroupRating(State.groupId);
+        break;
+      case "group-member-card":
+        State.groupMemberId = Number(el.dataset.id);
+        await renderRatingTab();
+        break;
+      case "group-member-back":
+        State.groupMemberId = null;
         await renderRatingTab();
         break;
       case "group-search": await groupSearchRun(); break;
@@ -4018,31 +4043,13 @@ function childSwitcherHtml() {
 
 async function renderRatingTab() {
   const main = document.getElementById("app-main");
-  const mode = State.ratingMode || "global";
+  const mode = State.ratingMode || "passport";
   main.innerHTML =
     childSwitcherHtml() +
     ratingChipsHtml(mode) +
     '<div id="rating-content">' + skeleton("rows") + '</div>';
   renderHeaderNav();
   const content = document.getElementById("rating-content");
-
-  if (mode === "global") {
-    const data = await api("/api/child/rating" + asChildQuery());
-    const rows = data.list.map(function (r, i) {
-      return '<div class="list-row ' + (r.is_me ? "me-row" : "") + '">' +
-        '<div style="display:flex;align-items:center;gap:10px;min-width:0">' +
-        '<div class="rank-chip ' + (i === 0 ? "top1" : "") + '">' + (i + 1) + '</div>' +
-        '<div style="min-width:0"><p style="margin:0;font-weight:700;font-size:15.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + escapeHtml(r.name) + (r.is_me ? " (Siz)" : "") + '</p><p style="margin:0;font-size:13.5px;color:var(--text-faint)">' + escapeHtml(stripEmoji(r.rank)) + '</p></div>' +
-        '</div><div class="pill pill-leaf">' + r.xp + ' XP</div></div>';
-    }).join("");
-    content.innerHTML = '<p class="section-sub">' + (data.scope === "oila" ? "Oilangiz o‘quvchilari orasida" : "Barcha o‘quvchilar orasida TOP-10") + '</p>' +
-      '<div class="card">' + (rows || emptyState("award", "Reyting hali bo‘sh",
-        "Birinchi sahifalar o‘qilishi bilan ro‘yxat to‘la boshlaydi.", {
-          mascot: "sherbola-galaba",
-          action: "open-tab", label: "Kitoblarga o‘tish", data: { tab: "plans" }
-        })) + '</div>';
-    return;
-  }
 
   if (mode === "groups") {
     await renderGroupsView(content);
@@ -4178,7 +4185,18 @@ function groupRowHtml(gr, endHtml, openId) {
     endHtml + '</div>';
 }
 
+const GROUP_TABS = [
+  { id: "members", icon: "users", label: "A\'zolar" },
+  { id: "rating", icon: "trophy", label: "Reyting" },
+];
+const GROUP_PERIODS = [
+  { id: "week", label: "Haftalik" },
+  { id: "month", label: "Oylik" },
+  { id: "all", label: "Umumiy" },
+];
+
 async function renderGroupDetail(content, gid) {
+  if (State.groupMemberId) { await renderGroupMember(content, gid, State.groupMemberId); return; }
   const d = await api(groupUrl("/api/groups/" + gid));
   let out =
     '<div class="detail-topbar">' +
@@ -4189,6 +4207,17 @@ async function renderGroupDetail(content, gid) {
     '<div style="min-width:0"><p class="g-title">' + escapeHtml(d.name) + '</p>' +
     '<p class="g-meta">' + d.members.length + (d.max_members ? " / " + d.max_members : "") +
     " a'zo · Admin: " + escapeHtml(d.admin_name) + '</p></div></div>';
+
+  out += '<div class="chip-row">' + GROUP_TABS.map(function (t) {
+    return '<button class="chip' + (State.groupTab === t.id ? " active" : "") +
+      '" data-action="group-tab" data-id="' + t.id + '">' + icon(t.icon, 16, 2) + t.label + '</button>';
+  }).join("") + '<button class="chip is-soon">' + icon("clipboard-list", 16, 2) + 'Topshiriq</button></div>';
+
+  if (State.groupTab === "rating") {
+    content.innerHTML = out + '<div id="g-rating">' + skeleton("rows") + '</div>';
+    await renderGroupRating(gid);
+    return;
+  }
 
   const reqs = d.requests || [];
   if (reqs.length) {
@@ -4219,7 +4248,7 @@ async function renderGroupDetail(content, gid) {
     const end = d.is_admin && !me
       ? '<button class="icon-btn" data-action="group-member" data-id="' + m.id + '" data-name="' + escapeHtml(m.name) + '" data-admin="' + (m.is_admin ? 1 : 0) + '" aria-label="Sozlash">' + icon("more", 16, 2.2) + '</button>'
       : (m.is_admin ? '<span class="pill pill-brand">Admin</span>' : '<span class="g-end">' + m.books + ' kitob</span>');
-    return '<div class="list-row' + (me ? " me-row" : "") + '">' +
+    return '<div class="list-row g-row' + (me ? " me-row" : "") + '" data-action="group-member-card" data-id="' + m.id + '">' +
       '<div style="display:flex;align-items:center;gap:10px;min-width:0">' +
       '<span class="g-av">' + avatarMarkup(m.avatar_id, 36) + '</span>' +
       '<div style="min-width:0"><p class="g-name">' + escapeHtml(m.name) + '</p>' +
@@ -4228,6 +4257,87 @@ async function renderGroupDetail(content, gid) {
     '<div class="action-row"><button class="btn btn-outline" data-action="group-leave">Guruhdan chiqish</button></div>';
 
   content.innerHTML = out;
+}
+
+async function renderGroupRating(gid) {
+  const box = document.getElementById("g-rating");
+  const d = await api(groupUrl("/api/groups/" + gid + "/rating?period=" + (State.groupPeriod || "week")));
+  let out = '<div class="chip-row sub">' + GROUP_PERIODS.map(function (p) {
+    return '<button class="chip chip-sm' + (State.groupPeriod === p.id ? " active" : "") +
+      '" data-action="group-period" data-id="' + p.id + '">' + p.label + '</button>';
+  }).join("") + '</div>';
+
+  const rows = (d.list || []).filter(function (r) { return r.points > 0; });
+  if (!rows.length) {
+    box.innerHTML = out + '<div class="card">' + emptyState("trophy", "Hisob hali boshlanmagan",
+      "Birinchi betlar o‘qilishi bilan ro‘yxat to‘la boshlaydi.") + '</div>';
+    return;
+  }
+  out += '<div class="card">' + rows.map(function (r, i) {
+    return '<div class="list-row g-row' + (r.is_me ? " me-row" : "") +
+      '" data-action="group-member-card" data-id="' + r.id + '">' +
+      '<div style="display:flex;align-items:center;gap:10px;min-width:0">' +
+      '<div class="rank-chip ' + (i === 0 ? "top1" : "") + '">' + (i + 1) + '</div>' +
+      '<span class="g-av sm">' + avatarMarkup(r.avatar_id, 32) + '</span>' +
+      '<div style="min-width:0"><p class="g-name">' + escapeHtml(r.name) + '</p>' +
+      '<p class="g-meta">' + r.pages + ' bet · ' + r.days + ' kun</p></div></div>' +
+      '<div class="pill pill-brand">' + r.points + ' ball</div></div>';
+  }).join("") + '</div>' +
+    '<p class="g-note">Ball: har bet 1 (kuniga eng ko‘pi 40), tugatilgan kitob 20, ' +
+    'to‘g‘ri test javobi 2, ovozli xulosa 5-15, AI ustoz savoli 10. ' +
+    'Yig‘indi har kuni o‘qilganiga qarab ko‘payadi.</p>';
+  box.innerHTML = out;
+}
+
+async function renderGroupMember(content, gid, cid) {
+  const d = await api(groupUrl("/api/groups/" + gid + "/member/" + cid));
+  let out =
+    '<div class="detail-topbar">' +
+    '<button class="back-link" data-action="group-member-back">' + icon("arrow-left", 17, 2.2) + ' Guruh</button>' +
+    '</div>' +
+    '<div class="g-card-head"><span class="g-av lg">' + avatarMarkup(d.avatar_id, 64) + '</span>' +
+    '<p class="g-title">' + escapeHtml(d.name) + '</p>' +
+    '<p class="g-meta">' + d.total_books + ' kitob · ' + d.total_pages + ' bet</p></div>' +
+    '<div class="stat-grid">' +
+    '<div class="stat-box"><div class="num">' + d.week_points + '</div><div class="lbl">Shu hafta ball</div></div>' +
+    '<div class="stat-box"><div class="num">' + d.days + '</div><div class="lbl">Shu hafta kun</div></div>' +
+    '</div>';
+
+  const done = (d.books || []).filter(function (b) { return b.completed; });
+  const now = (d.books || []).filter(function (b) { return !b.completed; });
+  if (now.length) {
+    out += '<p class="eyebrow">Hozir o‘qiyapti</p><div class="card">' +
+      now.slice(0, 3).map(groupBookRow).join("") + '</div>';
+  }
+  if (done.length) {
+    out += '<p class="eyebrow">O‘qib tugatgan</p><div class="card">' +
+      done.map(groupBookRow).join("") + '</div>';
+  }
+  out += groupBadgesHtml(d.badges);
+  content.innerHTML = out;
+}
+
+// A'zo kartochkasida faqat OLINGAN nishonlar ko‘rinadi. To‘liq javon
+// (olinmaganlari bilan) — faqat o‘z bo‘limida; begona bolaning nimasi
+// yetishmasligini ko‘rsatib turish o‘rinsiz.
+function groupBadgesHtml(list) {
+  const set = {};
+  (list || []).forEach(function (b) { set[String(b).toLowerCase()] = true; });
+  const have = BADGE_LIST.filter(function (b) { return set[b[1].toLowerCase()]; });
+  if (!have.length) return "";
+  return '<p class="eyebrow">Nishonlari</p><div class="g-badges">' + have.map(function (b) {
+    return '<span class="g-badge"><span class="g-badge-art">' + badgeArt(b[0]) + '</span>' +
+      escapeHtml(b[1]) + '</span>';
+  }).join("") + '</div>';
+}
+
+function groupBookRow(b) {
+  return '<div class="list-row">' +
+    '<div style="min-width:0"><p class="g-name">' + escapeHtml(b.title) + '</p>' +
+    '<p class="g-meta">' + escapeHtml(b.author || "") + '</p></div>' +
+    '<span class="g-end">' + (b.completed
+      ? icon("check-circle", 16, 2.2)
+      : b.pages_read + ' bet') + '</span></div>';
 }
 
 function openGroupCreateModal() {
@@ -4274,7 +4384,7 @@ async function openGroupSettings() {
     '<p class="eyebrow" style="margin-top:16px">A\'zo soni chegarasi</p>' +
     '<input id="g-max" class="g-input wide" inputmode="numeric" placeholder="Cheklovsiz" value="' +
     (d.max_members ? d.max_members : "") + '">' +
-    '<p class="section-sub" style="margin:8px 0 14px">Bo‘sh qoldirilsa cheklov bo‘lmaydi. Belgilansa, o‘sha songa yetgach yangi a\'zo qo‘shilmaydi.</p>' +
+    '<p class="section-sub" style="margin:8px 0 14px">Bo‘sh qoldirilsa cheklov bo‘lmaydi. Belgilansa, o‘sha songa yetgach yangi a\'zo qo‘shilmaydi. Eng ko‘pi — 300.</p>' +
     '<label class="g-switch"><input type="checkbox" id="g-searchable"' +
     (d.searchable ? " checked" : "") + '>' +
     '<span><b>Qidiruvda ko‘rinsin</b><i>Boshqalar topib so‘rov yubora oladi</i></span></label>' +

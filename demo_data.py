@@ -210,14 +210,18 @@ def clear_demo_child(child_id):
     conn.commit()
 
 
+# Har sinfdoshda: raqami, ismi, avatari, tugatgan kitoblari soni va
+# shu haftadagi kunlik betlari (dushanbadan bugungacha aylanma tarzda
+# olinadi). Raqamlar QAT'IY — «To‘ldirish» qayta bosilsa ham reyting
+# aynan bir xil chiqadi.
 DEMO_MATES = [
-    (-9001, "Doniyor", "bear", 6),
-    (-9002, "Nilufar", "owl", 5),
-    (-9003, "Javohir", "lion", 4),
-    (-9004, "Zilola", "rabbit", 3),
-    (-9005, "Bekzod", "dog", 2),
+    (-9001, "Doniyor", "bear", 6, [34, 28, 40, 22, 36, 30, 26], 9),
+    (-9002, "Nilufar", "owl", 5, [26, 31, 18, 29, 24, 33, 20], 8),
+    (-9003, "Javohir", "lion", 4, [22, 0, 27, 19, 25, 0, 30], 7),
+    (-9004, "Zilola", "rabbit", 3, [18, 21, 0, 24, 16, 22, 0], 6),
+    (-9005, "Bekzod", "dog", 2, [12, 0, 0, 15, 0, 18, 0], 4),
 ]
-DEMO_MATE_REQ = (-9006, "Shohrux", "fox", 3)
+DEMO_MATE_REQ = (-9006, "Shohrux", "fox", 3, [20, 17, 0, 23, 0, 19, 21], 6)
 DEMO_GROUP_NAME = "4-maktab, 7-B sinf"
 DEMO_MATE_BOOKS = [
     ("Alpomish", "Xalq dostoni", 96),
@@ -229,7 +233,19 @@ DEMO_MATE_BOOKS = [
 ]
 
 
-def _demo_mate(uid, mate_name, avatar, books):
+def _week_days():
+    """Shu haftaning dushanbasidan bugungacha bo‘lgan kunlar."""
+    today = datetime.now()
+    start = today - timedelta(days=today.weekday())
+    out = []
+    d = start
+    while d.date() <= today.date():
+        out.append(d)
+        d = d + timedelta(days=1)
+    return out
+
+
+def _demo_mate(uid, mate_name, avatar, books, week_pages=None, correct=0):
     """Namoyish uchun sinfdosh profili va uning tugatgan kitoblari."""
     cursor.execute(
         "INSERT OR REPLACE INTO Users (user_id, role, name, is_approved, avatar_id, profile_done) "
@@ -244,11 +260,41 @@ def _demo_mate(uid, mate_name, avatar, books):
         "VALUES (?, ?, ?, 'active', 'quick')", (uid, uid, "Sinf ro‘yxati")
     )
     pid = cursor.lastrowid
+    book_id = None
     for i in range(books):
         title, author, total = DEMO_MATE_BOOKS[i % len(DEMO_MATE_BOOKS)]
         cursor.execute(
             "INSERT INTO Plan_Books (plan_id, title, author, total_pages, pages_read, is_completed) "
             "VALUES (?, ?, ?, ?, ?, 1)", (pid, title, author, total, total)
+        )
+        book_id = cursor.lastrowid
+
+    # Haftalik reyting shu yozuvlardan hisoblanadi — busiz «Haftalik»
+    # ro‘yxati bo‘sh ko‘rinardi.
+    cursor.execute("DELETE FROM Reading_Logs WHERE child_id = ?", (uid,))
+    cursor.execute("DELETE FROM Diagnostic_Logs WHERE child_id = ?", (uid,))
+    # Shu hafta va undan oldingi uch hafta — «Oylik» va «Umumiy»
+    # ro‘yxatlar ham haqiqiyga o‘xshab ko‘rinishi uchun.
+    for week_back in range(4):
+        for i, day in enumerate(_week_days()):
+            d = day - timedelta(days=7 * week_back)
+            pages = (week_pages or [0])[(i + week_back) % len(week_pages or [0])]
+            if not pages:
+                continue
+            cursor.execute(
+                "INSERT INTO Reading_Logs (child_id, book_id, pages_added, created_at) "
+                "VALUES (?, ?, ?, ?)",
+                (uid, book_id, pages, d.replace(hour=18, minute=0, second=0,
+                                                microsecond=0).strftime("%Y-%m-%d %H:%M:%S"))
+            )
+    if correct:
+        last = _week_days()[-1]
+        cursor.execute(
+            "INSERT INTO Diagnostic_Logs (child_id, book_id, type, factual_score, "
+            "logic_score, conclusion_score, created_at, correct_count, total_count) "
+            "VALUES (?, ?, 'test', 80, 80, 80, ?, ?, 10)",
+            (uid, book_id, last.replace(hour=19, minute=0, second=0,
+                                        microsecond=0).strftime("%Y-%m-%d %H:%M:%S"), correct)
         )
 
 
@@ -266,18 +312,38 @@ def _fill_demo_group(parent_id, child_id, child_display_name):
         "INSERT OR REPLACE INTO Group_Members (group_id, child_id, is_admin, joined_at) "
         "VALUES (?, ?, 1, ?)", (gid, child_id, now)
     )
-    for uid, mate_name, avatar, books in DEMO_MATES:
-        _demo_mate(uid, mate_name, avatar, books)
+    for uid, mate_name, avatar, books, week_pages, correct in DEMO_MATES:
+        _demo_mate(uid, mate_name, avatar, books, week_pages, correct)
         cursor.execute(
             "INSERT OR REPLACE INTO Group_Members (group_id, child_id, is_admin, joined_at) "
             "VALUES (?, ?, 0, ?)", (gid, uid, now)
         )
-    uid, mate_name, avatar, books = DEMO_MATE_REQ
-    _demo_mate(uid, mate_name, avatar, books)
+    uid, mate_name, avatar, books, week_pages, correct = DEMO_MATE_REQ
+    _demo_mate(uid, mate_name, avatar, books, week_pages, correct)
     cursor.execute(
         "INSERT OR REPLACE INTO Group_Requests (group_id, child_id, status, created_at) "
         "VALUES (?, ?, 'pending', ?)", (gid, uid, now)
     )
+    # Namoyish bolasining o‘zi ham shu haftada ko‘rinsin: dushanbadan
+    # bugungacha har kuni yozuv qo‘yiladi, aks holda u haftalik
+    # reytingda umuman chiqmasdi.
+    cursor.execute(
+        "SELECT pb.book_id FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+        "WHERE rp.child_id = ? ORDER BY pb.book_id DESC LIMIT 1", (child_id,)
+    )
+    r = cursor.fetchone()
+    own_book = r[0] if r else None
+    own_pages = [30, 24, 35, 28, 32, 26, 38]
+    for i, day in enumerate(_week_days()):
+        stamp = day.replace(hour=17, minute=30, second=0, microsecond=0).strftime("%Y-%m-%d %H:%M:%S")
+        cursor.execute(
+            "SELECT 1 FROM Reading_Logs WHERE child_id = ? AND created_at = ?", (child_id, stamp))
+        if cursor.fetchone():
+            continue
+        cursor.execute(
+            "INSERT INTO Reading_Logs (child_id, book_id, pages_added, created_at) "
+            "VALUES (?, ?, ?, ?)", (child_id, own_book, own_pages[i % len(own_pages)], stamp)
+        )
     conn.commit()
     return gid
 

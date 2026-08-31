@@ -4704,6 +4704,7 @@ def child_rating():
 # ==========================================================
 
 GROUP_NAME_MAX = 48
+GROUP_MEMBERS_MAX = 300
 
 
 def _user_role():
@@ -4912,7 +4913,10 @@ def groups_update(gid):
                 limit = int(data.get("max_members") or 0)
             except (TypeError, ValueError):
                 limit = 0
-            limit = max(0, min(limit, 1000))
+            # Eng ko‘pi 300. Sabab texnik: musobaqa vaqtida guruhning
+            # hamma a'zosi bo‘yicha hisob-kitob qilinadi — mingta a'zoda
+            # bu server uchun og‘ir bo‘ladi.
+            limit = max(0, min(limit, GROUP_MEMBERS_MAX))
             cursor.execute("SELECT COUNT(*) FROM Group_Members WHERE group_id = ?", (gid,))
             now_count = cursor.fetchone()[0]
             if limit and limit < now_count:
@@ -5096,6 +5100,184 @@ def groups_leave(gid):
             cursor.execute("DELETE FROM Groups WHERE group_id = ?", (gid,))
         conn.commit()
     return jsonify({"ok": True})
+
+
+# ----------------------------------------------------------
+# HAFTA BALI — guruh reytingining o‘lchovi
+# ----------------------------------------------------------
+# Ega bilan kelishilgan tartib (2026-08-31):
+#   har o‘qilgan bet 1 ball, lekin BIR KUNDAN eng ko‘pi 40 ball;
+#   tugatilgan kitob 20; har to‘g‘ri test javobi 2;
+#   ovozli xulosa bahosiga qarab 5/10/15; AI ustoz savoli 10.
+# Yig‘indi «Parvoz koeffitsienti»ga ko‘paytiriladi — davrda necha kun
+# o‘qilganiga qarab. Sabab: doimiylik alohida ball emas, u qolgan
+# hamma ishning qiymatini oshiradi. Shunda bir kunda 200 bet
+# varaqlagan bola emas, har kuni ozdan o‘qigan bola yuqoriga chiqadi.
+# ----------------------------------------------------------
+PAGE_POINTS_PER_DAY_MAX = 40
+POINTS_BOOK = 20
+POINTS_TEST_ANSWER = 2
+POINTS_VOICE_PER_BILIG = 5
+POINTS_TALK = 10
+
+
+def _period_bounds(period):
+    """'week' — shu dushanbadan, 'month' — shu oyning 1-sanasidan, 'all' — boshidan."""
+    now = datetime.now()
+    if period == "month":
+        start = now.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+        days = now.day
+    elif period == "all":
+        return None, 10 ** 6
+    else:
+        start = (now - timedelta(days=now.weekday())).replace(
+            hour=0, minute=0, second=0, microsecond=0)
+        days = now.weekday() + 1
+    return start.strftime("%Y-%m-%d %H:%M:%S"), max(1, days)
+
+
+def _streak_factor(days_read, days_total):
+    """Davrning qancha qismida o‘qilgan bo‘lsa — shuncha ko‘paytuvchi."""
+    if not days_total:
+        return 1.0
+    share = days_read / float(days_total)
+    if share > 0.85:
+        return 1.3
+    if share >= 0.6:
+        return 1.2
+    if share >= 0.3:
+        return 1.1
+    return 1.0
+
+
+def _child_points(child_id, since, days_total):
+    """Bitta bolaning davr ichidagi hafta bali va uning tarkibi."""
+    where = " AND created_at >= ?" if since else ""
+    args = (child_id, since) if since else (child_id,)
+
+    cursor.execute(
+        "SELECT substr(created_at, 1, 10), SUM(pages_added) FROM Reading_Logs "
+        "WHERE child_id = ?" + where + " GROUP BY 1", args
+    )
+    rows = cursor.fetchall()
+    pages = sum(r[1] or 0 for r in rows)
+    page_points = sum(min(PAGE_POINTS_PER_DAY_MAX, r[1] or 0) for r in rows)
+    days_read = len([r for r in rows if (r[1] or 0) > 0])
+
+    bwhere = " AND pb.last_read_at >= ?" if since else ""
+    cursor.execute(
+        "SELECT COUNT(*) FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+        "WHERE rp.child_id = ? AND pb.is_completed = 1" + bwhere, args
+    )
+    books = cursor.fetchone()[0]
+
+    cursor.execute(
+        "SELECT COALESCE(SUM(correct_count), 0) FROM Diagnostic_Logs "
+        "WHERE child_id = ? AND type = 'test'" + where, args
+    )
+    correct = cursor.fetchone()[0]
+
+    cursor.execute(
+        "SELECT COALESCE(SUM(bonus_bilig), 0) FROM Diagnostic_Logs "
+        "WHERE child_id = ? AND type = 'voice'" + where, args
+    )
+    voice_bilig = cursor.fetchone()[0]
+
+    cursor.execute(
+        "SELECT COUNT(*) FROM Diagnostic_Logs "
+        "WHERE child_id = ? AND type = 'talk' AND COALESCE(bonus_bilig, 0) > 0" + where, args
+    )
+    talks = cursor.fetchone()[0]
+
+    if since is None:
+        # «Umumiy» uchun davr uzunligi — birinchi o‘qilgan kundan bugungacha
+        days_total = max(days_read, 1)
+
+    base = (page_points + books * POINTS_BOOK + correct * POINTS_TEST_ANSWER +
+            voice_bilig * POINTS_VOICE_PER_BILIG + talks * POINTS_TALK)
+    factor = _streak_factor(days_read, days_total)
+    return {"points": int(round(base * factor)), "base": base, "factor": factor,
+            "pages": pages, "books": books, "days": days_read,
+            "tests": correct, "voice": voice_bilig, "talks": talks}
+
+
+@app.route("/api/groups/<int:gid>/rating", methods=["GET"])
+@require_auth
+def groups_rating(gid):
+    """Guruh reytingi: haftalik, oylik yoki umumiy."""
+    child_id = _resolve_active_child(request)
+    row = _group_row(gid)
+    if not row:
+        return jsonify({"error": "Guruh topilmadi"}), 404
+    cursor.execute("SELECT 1 FROM Group_Members WHERE group_id = ? AND child_id = ?", (gid, child_id))
+    if not cursor.fetchone() and not _group_is_admin(row, child_id):
+        return jsonify({"error": "Bu guruh a'zosi emassiz"}), 403
+
+    period = request.args.get("period") or "week"
+    since, days_total = _period_bounds(period)
+    cursor.execute(
+        "SELECT u.user_id, u.name, u.avatar_id FROM Group_Members gm "
+        "JOIN Users u ON gm.child_id = u.user_id WHERE gm.group_id = ?", (gid,)
+    )
+    members = cursor.fetchall()          # avval to‘liq o‘qib olamiz — cursor yagona
+
+    out = []
+    for m in members:
+        p = _child_points(m[0], since, days_total)
+        out.append({"id": m[0], "name": m[1], "avatar_id": m[2] or "fox",
+                    "points": p["points"], "days": p["days"], "pages": p["pages"],
+                    "books": p["books"], "is_me": m[0] == child_id})
+    out.sort(key=lambda r: (-r["points"], r["name"]))
+    return jsonify({"period": period, "list": out})
+
+
+@app.route("/api/groups/<int:gid>/member/<cid>", methods=["GET"])
+@require_auth
+def groups_member_card(gid, cid):
+    """A'zoning kitobxonlik kartochkasi — guruhdoshlar ko‘radigan sahifa.
+
+    Faqat o‘qishga oid narsa ko‘rsatiladi. Bilig hisobi, xaridlar va
+    foizli baholar bu yerga CHIQMAYDI — ega shunday qaror qilgan.
+    """
+    try:
+        cid = int(cid)
+    except (TypeError, ValueError):
+        return jsonify({"error": "Noto‘g‘ri raqam"}), 400
+    child_id = _resolve_active_child(request)
+    row = _group_row(gid)
+    if not row:
+        return jsonify({"error": "Guruh topilmadi"}), 404
+    cursor.execute("SELECT 1 FROM Group_Members WHERE group_id = ? AND child_id = ?", (gid, child_id))
+    if not cursor.fetchone() and not _group_is_admin(row, child_id):
+        return jsonify({"error": "Bu guruh a'zosi emassiz"}), 403
+    cursor.execute("SELECT 1 FROM Group_Members WHERE group_id = ? AND child_id = ?", (gid, cid))
+    if not cursor.fetchone():
+        return jsonify({"error": "Bunday a'zo yo‘q"}), 404
+
+    cursor.execute("SELECT name, avatar_id, badges FROM Users WHERE user_id = ?", (cid,))
+    u = cursor.fetchone()
+    if not u:
+        return jsonify({"error": "Topilmadi"}), 404
+
+    cursor.execute(
+        "SELECT pb.title, pb.author, pb.pages_read, pb.total_pages, pb.is_completed, pb.cover_file "
+        "FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+        "WHERE rp.child_id = ? ORDER BY pb.is_completed DESC, COALESCE(pb.last_read_at, '') DESC "
+        "LIMIT 30", (cid,)
+    )
+    books = [{"title": b[0], "author": b[1], "pages_read": b[2], "total_pages": b[3],
+              "completed": bool(b[4]), "cover_file": b[5]} for b in cursor.fetchall()]
+
+    since, days_total = _period_bounds("week")
+    week = _child_points(cid, since, days_total)
+    total = _child_points(cid, None, 0)
+    badges = [b for b in (u[2] or "").split(",") if b]
+    return jsonify({
+        "id": cid, "name": u[0], "avatar_id": u[1] or "fox",
+        "badges": badges, "books": books,
+        "week_points": week["points"], "total_pages": total["pages"],
+        "total_books": total["books"], "days": week["days"],
+    })
 
 
 # ==========================================================
