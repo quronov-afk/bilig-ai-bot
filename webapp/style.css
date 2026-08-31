@@ -1989,7 +1989,8 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
 .g-head { display: flex; align-items: center; gap: 12px; margin: 4px 0 14px; }
 .g-title { margin: 0; font-size: 19px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.25; }
 .g-code { display: flex; align-items: center; justify-content: space-between; gap: 10px; cursor: pointer; }
-.g-code-val { font-size: 19px; font-weight: 800; letter-spacing: .1em; }
+.g-code-val { font-size: 19px; font-weight: 800; letter-spacing: .1em; display: block; }
+.g-code-note { margin: 2px 0 0; font-size: 12.5px; color: var(--text-faint); }
 .g-req { background: var(--gold-bg); border-color: #F6D77E; }
 .g-req .list-row { border-bottom-color: rgba(146, 64, 14, .16); }
 .g-req-t {

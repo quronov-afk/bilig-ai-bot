@@ -4208,7 +4208,8 @@ async function renderGroupDetail(content, gid) {
   if (d.invite_code) {
     out += '<div class="card g-code" data-action="copy-code" data-code="' + escapeHtml(d.invite_code) + '">' +
       '<div><p class="eyebrow" style="margin:0">Taklif kodi</p>' +
-      '<b class="g-code-val">' + escapeHtml(d.invite_code) + '</b></div>' +
+      '<b class="g-code-val">' + escapeHtml(d.invite_code) + '</b>' +
+      '<p class="g-code-note">Faqat adminga ko‘rinadi</p></div>' +
       '<span class="icon-btn">' + icon("copy", 16, 2.2) + '</span></div>';
   }
 
@@ -4217,12 +4218,10 @@ async function renderGroupDetail(content, gid) {
     const end = d.is_admin && !me
       ? '<button class="icon-btn" data-action="group-member" data-id="' + m.id + '" data-name="' + escapeHtml(m.name) + '" data-admin="' + (m.is_admin ? 1 : 0) + '" aria-label="Sozlash">' + icon("more", 16, 2.2) + '</button>'
       : (m.is_admin ? '<span class="pill pill-brand">Admin</span>' : '<span class="g-end">' + m.books + ' kitob</span>');
-    // Ota-ona o‘qiyotgan bo‘lsa «siz» emas — bu uning farzandi
-    const meLabel = isChildView() ? " (siz)" : " (farzandingiz)";
     return '<div class="list-row' + (me ? " me-row" : "") + '">' +
       '<div style="display:flex;align-items:center;gap:10px;min-width:0">' +
       '<span class="g-av">' + avatarMarkup(m.avatar_id, 36) + '</span>' +
-      '<div style="min-width:0"><p class="g-name">' + escapeHtml(m.name) + (me ? meLabel : "") + '</p>' +
+      '<div style="min-width:0"><p class="g-name">' + escapeHtml(m.name) + '</p>' +
       '<p class="g-meta">' + m.books + ' kitob</p></div></div>' + end + '</div>';
   }).join("") + '</div>' +
     '<div class="action-row"><button class="btn btn-outline" data-action="group-leave">Guruhdan chiqish</button></div>';
