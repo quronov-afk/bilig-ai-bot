@@ -5465,7 +5465,6 @@ def _task_brief(t, child_id):
 KUDOS_PHRASES = [
     "Barakalla!",
     "Zo‘r o‘qiding!",
-    "Sen bilan faxrlanaman",
     "Davom et, oz qoldi!",
     "Ajoyib natija",
 ]
