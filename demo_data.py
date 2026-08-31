@@ -190,6 +190,7 @@ def clear_demo_child(child_id):
         "DELETE FROM Talk_Checks WHERE child_id = ?",
         "DELETE FROM Group_Members WHERE child_id = ?",
         "DELETE FROM Group_Requests WHERE child_id = ?",
+        "DELETE FROM Group_Task_Members WHERE child_id = ?",
     ):
         try:
             cursor.execute(sql, (child_id,))
@@ -200,6 +201,10 @@ def clear_demo_child(child_id):
     try:
         cursor.execute(
             "DELETE FROM Groups WHERE group_id NOT IN (SELECT group_id FROM Group_Members)")
+        cursor.execute(
+            "DELETE FROM Group_Tasks WHERE group_id NOT IN (SELECT group_id FROM Groups)")
+        cursor.execute(
+            "DELETE FROM Group_Task_Members WHERE task_id NOT IN (SELECT task_id FROM Group_Tasks)")
     except Exception:
         pass
     cursor.execute(
@@ -298,6 +303,68 @@ def _demo_mate(uid, mate_name, avatar, books, week_pages=None, correct=0):
         )
 
 
+DEMO_TASK_BOOK = ("Sariq devni minib", "Xudoyberdi To‘xtaboyev", 176)
+DEMO_TASK_QUESTIONS = [
+    {"question": "Hoshimjon sehrli qalpoqni qayerdan topib oladi?",
+     "options": ["Bog‘dan", "G‘ordan", "Maktabdan", "Bozordan"], "answer": "G‘ordan"},
+    {"question": "Hoshimjon sariq devni nima bilan yengadi?",
+     "options": ["Aql va topqirlik bilan", "Kuch bilan", "Sehrli qilich bilan"],
+     "answer": "Aql va topqirlik bilan"},
+    {"question": "Asar qahramoni dastlab qanday o‘quvchi edi?",
+     "options": ["Dangasa", "A‘lochi", "Sportchi"], "answer": "Dangasa"},
+    {"question": "Hoshimjonga eng ko‘p kim yordam beradi?",
+     "options": ["Do‘stlari", "Hech kim", "Sariq dev"], "answer": "Do‘stlari"},
+    {"question": "Asarning asosiy g‘oyasi nima?",
+     "options": ["Mehnat va aql g‘alaba keltiradi", "Kuchli bo‘lgan yutadi",
+                 "Omad hal qiladi"], "answer": "Mehnat va aql g‘alaba keltiradi"},
+]
+# Namoyishda musobaqa yarim yo‘lda turadi: kimdir tugatgan, kimdir o‘qiyapti.
+DEMO_TASK_RACERS = [(-9001, 176, 1), (-9002, 138, 0), (-9003, 96, 0), (-9004, 54, 0)]
+
+
+def _fill_demo_task(gid, child_id, parent_id):
+    """Namoyish uchun ochiq musobaqa: sovg‘asi, muddati va qatnashchilari bilan."""
+    title, author, pages = DEMO_TASK_BOOK
+    now = datetime.now()
+    cursor.execute(
+        "INSERT INTO Group_Tasks (group_id, kind, title, author, total_pages, goal_kind, "
+        "goal_value, prize, deadline, final_count, questions_json, checked_by, status, "
+        "created_by, created_at, published_at) VALUES (?, 'book', ?, ?, ?, 'books', 0, ?, ?, "
+        "?, ?, ?, 'open', ?, ?, ?)",
+        (gid, title, author, pages, "Velosiped",
+         (now + timedelta(days=9)).strftime("%Y-%m-%d"), len(DEMO_TASK_QUESTIONS),
+         json.dumps(DEMO_TASK_QUESTIONS, ensure_ascii=False), "Nodira opa",
+         parent_id,
+         now.strftime("%Y-%m-%d %H:%M:%S"), now.strftime("%Y-%m-%d %H:%M:%S"))
+    )
+    tid = cursor.lastrowid
+    joined = (now - timedelta(days=4)).strftime("%Y-%m-%d %H:%M:%S")
+
+    def _put(uid, read, done):
+        cursor.execute(
+            "SELECT plan_id FROM Reading_Plans WHERE child_id = ? ORDER BY plan_id LIMIT 1", (uid,))
+        r = cursor.fetchone()
+        if not r:
+            return
+        cursor.execute(
+            "INSERT INTO Plan_Books (plan_id, title, author, total_pages, pages_read, is_completed, "
+            "last_read_at) VALUES (?, ?, ?, ?, ?, ?, ?)",
+            (r[0], title, author, pages, read, done, now.strftime("%Y-%m-%d %H:%M:%S"))
+        )
+        bid = cursor.lastrowid
+        cursor.execute(
+            "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
+            (bid, json.dumps(DEMO_TASK_QUESTIONS, ensure_ascii=False)))
+        cursor.execute(
+            "INSERT OR REPLACE INTO Group_Task_Members (task_id, child_id, book_id, joined_at) "
+            "VALUES (?, ?, ?, ?)", (tid, uid, bid, joined))
+
+    _put(child_id, 112, 0)
+    for uid, read, done in DEMO_TASK_RACERS:
+        _put(uid, read, done)
+    return tid
+
+
 def _fill_demo_group(parent_id, child_id, child_display_name):
     """Sinfdoshlar guruhi: a'zolar, taklif kodi va bitta kutayotgan so‘rov."""
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -344,6 +411,7 @@ def _fill_demo_group(parent_id, child_id, child_display_name):
             "INSERT INTO Reading_Logs (child_id, book_id, pages_added, created_at) "
             "VALUES (?, ?, ?, ?)", (child_id, own_book, own_pages[i % len(own_pages)], stamp)
         )
+    _fill_demo_task(gid, child_id, parent_id)
     conn.commit()
     return gid
 

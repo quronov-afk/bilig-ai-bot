@@ -89,6 +89,14 @@ const State = {
   groupTab: "members",     // guruh ichida: a'zolar yoki reyting
   groupPeriod: "week",     // guruh reytingi: week / month / all
   groupMemberId: null,     // ochilgan a'zoning kartochkasi
+  groupTaskId: null,       // ochilgan musobaqa
+  taskView: null,          // "questions" — test tahriri ko‘rinishi
+  taskQuestions: null,     // tahrir qilinayotgan savollar
+  taskQIndex: null,
+  taskKind: "book",
+  taskAiDraft: false,      // savollarni AI tayyorlaganmi (yozuv matni shunga qarab)
+  taskGoal: "books",
+  taskCount: 10,
   groupFound: null,        // qidiruv natijasi; null bo‘lsa qidiruv qilinmagan
   groupQuery: "",
 };
@@ -1463,11 +1471,15 @@ document.addEventListener("click", async function (e) {
       case "group-back":
         State.groupId = null;
         State.groupMemberId = null;
+        State.groupTaskId = null;
+        State.taskView = null;
         State.subPage = null;
         await renderRatingTab();
         break;
       case "group-tab":
         State.groupTab = el.dataset.id;
+        State.groupTaskId = null;
+        State.taskView = null;
         await renderRatingTab();
         break;
       case "group-period":
@@ -1480,6 +1492,107 @@ document.addEventListener("click", async function (e) {
         break;
       case "group-member-back":
         State.groupMemberId = null;
+        await renderRatingTab();
+        break;
+      case "task-open":
+        State.groupTaskId = Number(el.dataset.id);
+        State.taskView = null;
+        State.taskQuestions = null;
+        await renderRatingTab();
+        break;
+      case "task-back":
+        State.groupTaskId = null;
+        State.taskView = null;
+        State.taskQuestions = null;
+        await renderRatingTab();
+        break;
+      case "task-new": openTaskKindModal(); break;
+      case "task-kind": openTaskFormModal(el.dataset.kind); break;
+      case "task-goal":
+        State.taskGoal = el.dataset.k;
+        document.querySelectorAll("#t-goal .chip").forEach(function (b) {
+          b.classList.toggle("active", b.dataset.k === el.dataset.k);
+        });
+        break;
+      case "task-count":
+        State.taskCount = Number(el.dataset.n);
+        document.querySelectorAll("#t-count .day-chip").forEach(function (b) {
+          b.classList.toggle("is-on", b.dataset.n === el.dataset.n);
+        });
+        break;
+      case "task-save": await submitTaskCreate(); break;
+      case "task-edit-questions":
+        State.taskView = "questions";
+        State.taskQuestions = null;
+        State.taskAiDraft = true;
+        await renderRatingTab();
+        break;
+      case "task-questions-back":
+        State.taskView = null;
+        await renderRatingTab();
+        break;
+      case "task-q-edit": openTaskQuestionModal(Number(el.dataset.i)); break;
+      case "task-q-add": openTaskQuestionModal(null); break;
+      case "task-q-del":
+        State.taskQuestions.splice(Number(el.dataset.i), 1);
+        await renderRatingTab();
+        break;
+      case "task-q-right":
+        document.querySelectorAll("#q-opts .q-opt").forEach(function (row, i) {
+          const on = String(i) === el.dataset.i;
+          row.classList.toggle("is-right", on);
+          row.querySelector(".q-mark").innerHTML = on ? icon("check", 13, 2.6) : "";
+        });
+        break;
+      case "task-q-opt-add": {
+        const box = document.getElementById("q-opts");
+        const i = box.children.length;
+        const row = document.createElement("div");
+        row.className = "q-opt";
+        row.innerHTML = '<button class="q-mark" data-action="task-q-right" data-i="' + i + '"></button>' +
+          '<input class="q-in" value="" placeholder="Javob matni">' +
+          '<button class="q-del" data-action="task-q-opt-del" data-i="' + i + '">' + icon("x", 13, 2.4) + '</button>';
+        box.appendChild(row);
+        break;
+      }
+      case "task-q-opt-del": {
+        const row = el.closest(".q-opt");
+        if (row && document.querySelectorAll("#q-opts .q-opt").length > 2) row.remove();
+        break;
+      }
+      case "task-q-save": {
+        const q = readTaskQuestionModal();
+        if (!q.question || q.options.length < 2) { toast("Savol va kamida ikkita javob kerak"); break; }
+        if (State.taskQIndex === null) State.taskQuestions.push(q);
+        else State.taskQuestions[State.taskQIndex] = q;
+        closeModal();
+        await renderRatingTab();
+        break;
+      }
+      case "task-publish": {
+        const gid = State.groupId, tid = State.groupTaskId;
+        if ((State.taskQuestions || []).length < 3) { toast("Kamida uchta savol kerak"); break; }
+        await api(groupUrl("/api/groups/" + gid + "/tasks/" + tid + "/questions"),
+          { method: "POST", body: { questions: State.taskQuestions } });
+        await api(groupUrl("/api/groups/" + gid + "/tasks/" + tid + "/publish"), { method: "POST", body: {} });
+        State.taskView = null;
+        toast("Musobaqa e'lon qilindi");
+        await renderRatingTab();
+        break;
+      }
+      case "task-join":
+        await api(groupUrl("/api/groups/" + State.groupId + "/tasks/" + State.groupTaskId + "/join"),
+          { method: "POST", body: {} });
+        toast("Qatnashyapsiz — kitob javoningizga qo‘yildi");
+        await renderRatingTab();
+        break;
+      case "task-delete":
+        if (!confirm("Musobaqa bekor qilinsinmi?")) break;
+        await api(groupUrl("/api/groups/" + State.groupId + "/tasks/" + State.groupTaskId + "/delete"),
+          { method: "POST", body: {} });
+        State.groupTaskId = null;
+        State.taskView = null;
+        toast("Bekor qilindi");
         await renderRatingTab();
         break;
       case "group-search": await groupSearchRun(); break;
@@ -4191,6 +4304,7 @@ function groupRowHtml(gr, endHtml, openId) {
 const GROUP_TABS = [
   { id: "members", icon: "users", label: "A\'zolar" },
   { id: "rating", icon: "trophy", label: "Reyting" },
+  { id: "tasks", icon: "clipboard-list", label: "Musobaqa" },
 ];
 const GROUP_PERIODS = [
   { id: "week", label: "Haftalik" },
@@ -4200,6 +4314,7 @@ const GROUP_PERIODS = [
 
 async function renderGroupDetail(content, gid) {
   if (State.groupMemberId) { await renderGroupMember(content, gid, State.groupMemberId); return; }
+  if (State.groupTaskId) { await renderTaskDetail(content, gid, State.groupTaskId); return; }
   const d = await api(groupUrl("/api/groups/" + gid));
   let out =
     '<div class="detail-topbar">' +
@@ -4214,11 +4329,16 @@ async function renderGroupDetail(content, gid) {
   out += '<div class="chip-row">' + GROUP_TABS.map(function (t) {
     return '<button class="chip' + (State.groupTab === t.id ? " active" : "") +
       '" data-action="group-tab" data-id="' + t.id + '">' + icon(t.icon, 16, 2) + t.label + '</button>';
-  }).join("") + '<button class="chip is-soon">' + icon("clipboard-list", 16, 2) + 'Topshiriq</button></div>';
+  }).join("") + '</div>';
 
   if (State.groupTab === "rating") {
     content.innerHTML = out + '<div id="g-rating">' + skeleton("rows") + '</div>';
     await renderGroupRating(gid);
+    return;
+  }
+  if (State.groupTab === "tasks") {
+    content.innerHTML = out + '<div id="g-tasks">' + skeleton("rows") + '</div>';
+    await renderGroupTasks(gid);
     return;
   }
 
@@ -4341,6 +4461,278 @@ function groupBookRow(b) {
     '<span class="g-end">' + (b.completed
       ? icon("check-circle", 16, 2.2)
       : b.pages_read + ' bet') + '</span></div>';
+}
+
+// ==========================================================
+// MUSOBAQA — guruh ichidagi birga o‘qish
+// ----------------------------------------------------------
+// Admin e'lon qiladi: kitob yoki marafon, sovg‘a, ixtiyoriy muddat.
+// Kitob musobaqasida test admin tasdiqlamaguncha guruhga CHIQMAYDI:
+// sovrin katta bo‘lsa, xato savol janjalga aylanadi.
+// ==========================================================
+
+function taskDeadlineLabel(deadline) {
+  if (!deadline) return "Muddatsiz";
+  const end = new Date(deadline + "T23:59:59");
+  const left = end - new Date();
+  if (left <= 0) return "Muddat tugadi";
+  const days = Math.floor(left / 86400000);
+  const hours = Math.floor((left % 86400000) / 3600000);
+  if (days > 0) return days + " kun " + hours + " soat qoldi";
+  return hours + " soat qoldi";
+}
+
+function taskGoalLabel(t) {
+  if (t.kind === "book") return t.author || "";
+  return t.goal_value + (t.goal_kind === "pages" ? " bet" : " kitob");
+}
+
+async function renderGroupTasks(gid) {
+  const box = document.getElementById("g-tasks");
+  const d = await api(groupUrl("/api/groups/" + gid + "/tasks"));
+  let out = "";
+
+  if (!(d.list || []).length) {
+    out += '<div class="card">' + emptyState("clipboard-list", "Hali musobaqa yo‘q",
+      d.is_admin
+        ? "Guruhga birga o‘qish e'lon qiling — bitta kitob yoki marafon."
+        : "Admin musobaqa e'lon qilganda shu yerda ko‘rinadi.") + '</div>';
+  } else {
+    out += '<div class="t-list">' + d.list.map(function (t) {
+      const draft = t.status === "draft";
+      return '<div class="card t-card" data-action="task-open" data-id="' + t.id + '">' +
+        '<div class="t-top">' +
+        '<span class="t-ic">' + icon(t.kind === "book" ? "book-open" : "chart", 20, 2) + '</span>' +
+        '<div style="min-width:0"><p class="g-name">' + escapeHtml(t.title) + '</p>' +
+        '<p class="g-meta">' + escapeHtml(taskGoalLabel(t)) + '</p></div>' +
+        (draft ? '<span class="pill pill-soft">Tayyorlanmoqda</span>' : '') +
+        '</div>' +
+        (t.prize ? '<div class="t-prize">' + icon("award", 15, 2.2) + ' ' + escapeHtml(t.prize) + '</div>' : '') +
+        '<div class="t-foot">' +
+        '<span>' + icon("clock", 14, 2.2) + ' ' + taskDeadlineLabel(t.deadline) + '</span>' +
+        '<span>' + t.members + ' qatnashchi</span></div>' +
+        (t.progress ? '<div class="bar"><i style="width:' + t.progress.pct + '%"></i></div>' : '') +
+        '</div>';
+    }).join("") + '</div>';
+  }
+
+  if (d.can_add) {
+    out += '<div class="action-row"><button class="btn btn-primary" data-action="task-new">Musobaqa e\'lon qilish</button></div>' +
+      '<p class="g-note">Bir vaqtda eng ko‘pi ' + d.max_open + ' ta musobaqa bo‘ladi.</p>';
+  }
+  box.innerHTML = out;
+}
+
+// ---------- Musobaqa sahifasi ----------
+async function renderTaskDetail(content, gid, tid) {
+  const t = await api(groupUrl("/api/groups/" + gid + "/tasks/" + tid));
+  if (State.taskView === "questions") { renderTaskQuestions(content, t); return; }
+
+  let out =
+    '<div class="detail-topbar">' +
+    '<button class="back-link" data-action="task-back">' + icon("arrow-left", 17, 2.2) + ' Musobaqa</button>' +
+    (t.status === "draft"
+      ? '<button class="edit-link" data-action="task-edit-questions">' + icon("edit", 16, 2.2) + ' Test</button>'
+      : '') +
+    '</div>' +
+    '<div class="terms-card">' +
+    '<p class="eyebrow" style="margin:0 0 4px">' + (t.kind === "book" ? "Kitob musobaqasi" : "Marafon") + '</p>' +
+    '<p class="g-title">' + escapeHtml(t.title) + '</p>' +
+    '<p class="g-meta" style="margin-bottom:12px">' + escapeHtml(taskGoalLabel(t)) + '</p>' +
+    (t.prize ? '<div class="t-prize big">' + icon("award", 17, 2.2) + ' Sovg‘a: <b>' + escapeHtml(t.prize) + '</b></div>' : '') +
+    '<div class="t-timer">' + icon("clock", 16, 2.2) + ' ' + taskDeadlineLabel(t.deadline) + '</div>' +
+    '</div>';
+
+  if (t.kind === "marathon" && (t.books || []).length) {
+    out += '<p class="eyebrow">Kitoblar</p><div class="card">' + t.books.map(function (b) {
+      return '<div class="list-row"><div style="min-width:0"><p class="g-name">' + escapeHtml(b.title) + '</p>' +
+        '<p class="g-meta">' + escapeHtml(b.author || "") + '</p></div></div>';
+    }).join("") + '</div>';
+  }
+
+  out += '<p class="eyebrow">Shartlar</p><div class="card terms-list">' +
+    (t.kind === "book"
+      ? '<div class="tl"><span class="tl-n">1</span> Kitobni o‘qib tugating</div>' +
+        '<div class="tl"><span class="tl-n">2</span> Testni ishlang — bir marta</div>'
+      : '<div class="tl"><span class="tl-n">1</span> Maqsadni bajaring: ' + escapeHtml(taskGoalLabel(t)) + '</div>' +
+        '<div class="tl"><span class="tl-n">2</span> O‘qilgan kitoblar ball keltiradi</div>') +
+    '<div class="tl"><span class="tl-n">3</span> Ovozli xulosa va AI ustoz savoli ball qo‘shadi</div>' +
+    '<div class="tl"><span class="tl-n">4</span> Ball teng bo‘lsa — test vaqti hal qiladi</div>' +
+    '<div class="tl"><span class="tl-n">5</span> Muddat tugagach g‘olib o‘z-o‘zidan e\'lon qilinadi</div>' +
+    '</div>' +
+    (t.checked_by ? '<p class="g-note" style="margin-bottom:14px">Testni tekshirgan: ' + escapeHtml(t.checked_by) + '</p>' : '');
+
+  if (t.status === "draft") {
+    out += '<div class="notice-soft">Bu musobaqa hali guruhga chiqmagan. Testni tekshirib, e\'lon qiling.</div>' +
+      '<button class="btn btn-primary btn-block" data-action="task-edit-questions">Testni ko‘rish va e\'lon qilish</button>' +
+      '<button class="btn btn-outline btn-block" style="margin-top:8px" data-action="task-delete">Bekor qilish</button>';
+  } else if (!t.joined) {
+    out += '<button class="btn btn-primary btn-block" data-action="task-join">Qatnashaman</button>';
+  } else {
+    out += '<p class="eyebrow">Qatnashyapti — ' + (t.racers || []).length + ' ta</p><div class="card">' +
+      (t.racers || []).map(function (r) {
+        return '<div class="racer' + (r.is_me ? " me" : "") + '">' +
+          '<span class="g-av sm">' + avatarMarkup(r.avatar_id, 32) + '</span>' +
+          '<div class="r-main"><div class="g-name">' + escapeHtml(r.name) + '</div>' +
+          '<div class="bar"><i style="width:' + r.pct + '%"></i></div></div>' +
+          '<span class="r-st' + (r.done ? " done" : "") + '">' + escapeHtml(r.label) + '</span></div>';
+      }).join("") + '</div>' +
+      '<p class="g-note">Ball va o‘rin muddat tugagach e\'lon qilinadi.</p>';
+  }
+  content.innerHTML = out;
+}
+
+// ---------- Test tahriri ----------
+function renderTaskQuestions(content, t) {
+  if (!State.taskQuestions) State.taskQuestions = (t.questions || []).slice();
+  const qs = State.taskQuestions;
+  let out =
+    '<div class="detail-topbar">' +
+    '<button class="back-link" data-action="task-questions-back">' + icon("arrow-left", 17, 2.2) + ' Musobaqa</button>' +
+    '</div>' +
+    // Yozuv testni kim tuzganiga qarab o‘zgaradi: AI tuzgan bo‘lsa
+    // ogohlantiradi, admin o‘zi yozgan bo‘lsa — ortiqcha gap qilmaydi.
+    '<div class="notice-ai">' +
+    '<span class="n-ic">' + icon("clipboard-list", 18, 2) + '</span>' +
+    '<span><b>' + (!qs.length ? "Test hali bo‘sh"
+      : (State.taskAiDraft ? "Testni AI tuzdi" : "Sizning testingiz")) + '</b>' +
+    (!qs.length
+      ? "Savollarni o‘zingiz yozasiz. Kamida uchta savol kerak."
+      : (State.taskAiDraft
+        ? "E'lon qilishdan oldin ko‘rib chiqing. Har savolni tahrirlash, o‘chirish yoki o‘zingiznikini qo‘shish mumkin."
+        : "Savol qo‘shishingiz, tahrirlashingiz yoki o‘chirishingiz mumkin.")) + '</span></div>';
+
+  out += '<div class="card">' + (qs.length ? qs.map(function (q, i) {
+    return '<div class="q-row"><span class="q-n">' + (i + 1) + '</span>' +
+      '<div class="q-main"><p class="q-text">' + escapeHtml(q.question || q.q || "") + '</p>' +
+      '<p class="q-ans">' + icon("check", 13, 2.4) + ' ' +
+      escapeHtml(q.answer || (q.options || [])[0] || "") + '</p></div>' +
+      '<span class="q-btns">' +
+      '<button class="icon-btn" data-action="task-q-edit" data-i="' + i + '" aria-label="Tahrirlash">' + icon("edit", 15, 2.2) + '</button>' +
+      '<button class="icon-btn" data-action="task-q-del" data-i="' + i + '" aria-label="O‘chirish">' + icon("x", 15, 2.4) + '</button>' +
+      '</span></div>';
+  }).join("") : '<p class="section-sub" style="margin:0">Hali savol yo‘q.</p>') + '</div>';
+
+  out += '<button class="btn btn-secondary btn-block" data-action="task-q-add">+ Savol qo‘shish</button>' +
+    '<button class="btn btn-primary btn-block" style="margin-top:10px" data-action="task-publish">Tekshirdim, e\'lon qilaman</button>' +
+    '<p class="g-note">Siz tasdiqlamaguningizcha musobaqa guruhga chiqmaydi.</p>';
+  content.innerHTML = out;
+}
+
+function openTaskQuestionModal(idx) {
+  const q = idx === null
+    ? { question: "", options: ["", "", ""], answer: "" }
+    : State.taskQuestions[idx];
+  State.taskQIndex = idx;
+  const right = (q.options || []).indexOf(q.answer);
+  const rightIdx = right < 0 ? 0 : right;
+  const opts = (q.options || []).map(function (o, i) {
+    return '<div class="q-opt' + (i === rightIdx ? " is-right" : "") + '">' +
+      '<button class="q-mark" data-action="task-q-right" data-i="' + i + '" aria-label="To‘g‘ri javob">' +
+      (i === rightIdx ? icon("check", 13, 2.6) : "") + '</button>' +
+      '<input class="q-in" data-qi="' + i + '" value="' + escapeHtml(o) + '" placeholder="Javob matni">' +
+      '<button class="q-del" data-action="task-q-opt-del" data-i="' + i + '" aria-label="O‘chirish">' + icon("x", 13, 2.4) + '</button>' +
+      '</div>';
+  }).join("");
+  openModal(idx === null ? "Yangi savol" : "Savolni tahrirlash",
+    '<p class="eyebrow">Savol</p>' +
+    '<textarea id="q-text" class="g-input wide" rows="2" placeholder="Savol matni">' + escapeHtml(q.question || "") + '</textarea>' +
+    '<p class="eyebrow" style="margin-top:14px">Javoblar</p>' +
+    '<div id="q-opts">' + opts + '</div>' +
+    '<button class="btn btn-secondary btn-block" data-action="task-q-opt-add">+ Javob qo‘shish</button>' +
+    '<p class="section-sub" style="margin:10px 0 12px">To‘g‘ri javobni belgilash uchun chapdagi doirani bosing.</p>' +
+    '<button class="btn btn-primary btn-block" data-action="task-q-save">Saqlash</button>');
+}
+
+function readTaskQuestionModal() {
+  const text = (document.getElementById("q-text").value || "").trim();
+  const opts = [];
+  let answer = "";
+  document.querySelectorAll("#q-opts .q-opt").forEach(function (row) {
+    const v = (row.querySelector(".q-in").value || "").trim();
+    if (!v) return;
+    if (row.classList.contains("is-right")) answer = v;
+    opts.push(v);
+  });
+  return { question: text, options: opts, answer: answer || opts[0] || "" };
+}
+
+function openTaskKindModal() {
+  openModal("Yangi musobaqa",
+    '<button class="pick-row" data-action="task-kind" data-kind="book">' +
+    '<span class="pr-ic">' + icon("book-open", 22, 2) + '</span>' +
+    '<span><b>Bitta kitob</b><i>Hamma bir kitobni o‘qiydi. G‘olib test bo‘yicha aniqlanadi.</i></span>' +
+    icon("chevron-right", 18, 2.2) + '</button>' +
+    '<button class="pick-row" data-action="task-kind" data-kind="marathon">' +
+    '<span class="pr-ic">' + icon("chart", 22, 2) + '</span>' +
+    '<span><b>Marafon</b><i>«Shu oy 5 kitob» kabi umumiy maqsad. Testi bo‘lmaydi.</i></span>' +
+    icon("chevron-right", 18, 2.2) + '</button>');
+}
+
+function openTaskFormModal(kind) {
+  State.taskKind = kind;
+  const common =
+    '<p class="eyebrow" style="margin-top:14px">Sovg‘a</p>' +
+    '<input id="t-prize" class="g-input wide" placeholder="Masalan: velosiped">' +
+    '<p class="section-sub" style="margin:8px 0 0">Sovg‘ani ilova bermaydi: g‘olibni e\'lon qiladi, sovg‘ani o‘zingiz topshirasiz.</p>' +
+    '<p class="eyebrow" style="margin-top:14px">Tugash sanasi</p>' +
+    '<input id="t-deadline" class="g-input wide" type="date">' +
+    '<p class="section-sub" style="margin:8px 0 0">Bo‘sh qoldirsangiz — muddatsiz.</p>';
+
+  if (kind === "book") {
+    openModal("Kitob musobaqasi",
+      '<p class="eyebrow">Kitob nomi</p>' +
+      '<input id="t-title" class="g-input wide" placeholder="Sariq devni minib">' +
+      '<p class="eyebrow" style="margin-top:14px">Muallif</p>' +
+      '<input id="t-author" class="g-input wide" placeholder="Xudoyberdi To‘xtaboyev">' +
+      '<p class="eyebrow" style="margin-top:14px">Betlar soni</p>' +
+      '<input id="t-pages" class="g-input wide" type="number" inputmode="numeric" placeholder="176">' +
+      common +
+      '<p class="eyebrow" style="margin-top:14px">Yakuniy test</p>' +
+      '<div class="days-row" id="t-count">' +
+      [10, 15, 20, 30].map(function (n, i) {
+        return '<button class="day-chip' + (i === 0 ? " is-on" : "") + '" data-action="task-count" data-n="' + n + '">' + n + '</button>';
+      }).join("") + '</div>' +
+      '<p class="section-sub" style="margin:8px 0 12px">Savollar soni. Oraliq testlar o‘zgarmaydi.</p>' +
+      '<button class="btn btn-primary btn-block" data-action="task-save">Testni tayyorlash</button>');
+  } else {
+    openModal("Marafon",
+      '<p class="eyebrow">Nomi</p>' +
+      '<input id="t-title" class="g-input wide" placeholder="Kuzgi mutolaa marafoni">' +
+      '<p class="eyebrow" style="margin-top:14px">Maqsad</p>' +
+      '<div class="chip-row" id="t-goal">' +
+      '<button class="chip active" data-action="task-goal" data-k="books">Kitob soni</button>' +
+      '<button class="chip" data-action="task-goal" data-k="pages">Bet soni</button></div>' +
+      '<input id="t-goalv" class="g-input wide" type="number" inputmode="numeric" placeholder="5">' +
+      common +
+      '<button class="btn btn-primary btn-block" style="margin-top:14px" data-action="task-save">Marafonni e\'lon qilish</button>');
+  }
+}
+
+async function submitTaskCreate() {
+  const gid = State.groupId;
+  const kind = State.taskKind || "book";
+  const body = {
+    kind: kind,
+    title: (document.getElementById("t-title").value || "").trim(),
+    prize: (document.getElementById("t-prize").value || "").trim(),
+    deadline: (document.getElementById("t-deadline").value || "").trim(),
+  };
+  if (kind === "book") {
+    body.author = (document.getElementById("t-author").value || "").trim();
+    body.total_pages = Number(document.getElementById("t-pages").value || 0);
+    body.final_count = State.taskCount || 10;
+  } else {
+    body.goal_kind = State.taskGoal || "books";
+    body.goal_value = Number(document.getElementById("t-goalv").value || 0);
+  }
+  const r = await api(groupUrl("/api/groups/" + gid + "/tasks"), { method: "POST", body: body });
+  closeModal();
+  State.groupTaskId = r.id;
+  State.taskQuestions = (r.questions || []).slice();
+  State.taskAiDraft = !!(r.questions || []).length;
+  State.taskView = kind === "book" ? "questions" : null;
+  await renderRatingTab();
 }
 
 function openGroupCreateModal() {

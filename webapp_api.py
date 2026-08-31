@@ -236,6 +236,51 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS Group_Requests (
     decided_at TEXT
 )""")
 cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_group_request ON Group_Requests(group_id, child_id)")
+# ==========================================================
+# MUSOBAQA — guruh ichidagi birga o‘qish
+# ----------------------------------------------------------
+# Ikki turi bor: bitta kitob bo‘yicha musobaqa va marafon.
+# Kitob musobaqasida g‘olib test, ovozli xulosa va AI ustoz savoli
+# ballari bo‘yicha aniqlanadi; ball teng bo‘lsa test vaqti hal qiladi.
+# Marafonda maqsadni bajarganlar orasidan ball bo‘yicha eng yuqorisi.
+#
+# Test admin tasdiqlamaguncha musobaqa e'lon qilinmaydi (status='draft').
+# ==========================================================
+cursor.execute("""CREATE TABLE IF NOT EXISTS Group_Tasks (
+    task_id       INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id      INTEGER,
+    kind          TEXT,
+    title         TEXT,
+    author        TEXT,
+    total_pages   INTEGER DEFAULT 0,
+    goal_kind     TEXT,
+    goal_value    INTEGER DEFAULT 0,
+    prize         TEXT,
+    deadline      TEXT,
+    final_count   INTEGER DEFAULT 10,
+    questions_json TEXT,
+    checked_by    TEXT,
+    status        TEXT DEFAULT 'draft',
+    created_by    INTEGER,
+    created_at    TEXT,
+    published_at  TEXT
+)""")
+cursor.execute("""CREATE TABLE IF NOT EXISTS Group_Task_Books (
+    id      INTEGER PRIMARY KEY AUTOINCREMENT,
+    task_id INTEGER,
+    title   TEXT,
+    author  TEXT
+)""")
+cursor.execute("""CREATE TABLE IF NOT EXISTS Group_Task_Members (
+    id        INTEGER PRIMARY KEY AUTOINCREMENT,
+    task_id   INTEGER,
+    child_id  INTEGER,
+    book_id   INTEGER,
+    joined_at TEXT,
+    done_at   TEXT,
+    points    INTEGER DEFAULT 0
+)""")
+cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_task_member ON Group_Task_Members(task_id, child_id)")
 cursor.execute("""CREATE TABLE IF NOT EXISTS Coin_Ledger (
     entry_id   INTEGER PRIMARY KEY AUTOINCREMENT,
     child_id   INTEGER,
@@ -5278,6 +5323,358 @@ def groups_member_card(gid, cid):
         "week_points": week["points"], "total_pages": total["pages"],
         "total_books": total["books"], "days": week["days"],
     })
+
+
+# ----------------------------------------------------------
+# MUSOBAQA — e'lon qilish, test, qatnashish
+# ----------------------------------------------------------
+TASK_MAX_OPEN = 2          # bir guruhda bir vaqtda ochiq musobaqalar soni
+TASK_FINAL_MIN = 10
+TASK_FINAL_MAX = 30
+
+
+def _task_row(tid):
+    cursor.execute(
+        "SELECT task_id, group_id, kind, title, author, total_pages, goal_kind, goal_value, "
+        "prize, deadline, final_count, questions_json, checked_by, status, created_by "
+        "FROM Group_Tasks WHERE task_id = ?", (tid,)
+    )
+    r = cursor.fetchone()
+    if not r:
+        return None
+    keys = ["id", "group_id", "kind", "title", "author", "total_pages", "goal_kind",
+            "goal_value", "prize", "deadline", "final_count", "questions", "checked_by",
+            "status", "created_by"]
+    return dict(zip(keys, r))
+
+
+def _task_guard(gid, tid, need_admin=False):
+    """Guruh va musobaqa mavjudmi, foydalanuvchining haqqi bormi."""
+    child_id = _resolve_active_child(request)
+    grow = _group_row(gid)
+    if not grow:
+        return None, None, (jsonify({"error": "Guruh topilmadi"}), 404)
+    is_admin = _group_is_admin(grow, child_id)
+    cursor.execute("SELECT 1 FROM Group_Members WHERE group_id = ? AND child_id = ?", (gid, child_id))
+    if not cursor.fetchone() and not is_admin:
+        return None, None, (jsonify({"error": "Bu guruh a'zosi emassiz"}), 403)
+    if need_admin and not is_admin:
+        return None, None, (jsonify({"error": "Bu amalni faqat admin bajaradi"}), 403)
+    if tid is None:
+        return child_id, is_admin, None
+    t = _task_row(tid)
+    if not t or t["group_id"] != gid:
+        return None, None, (jsonify({"error": "Musobaqa topilmadi"}), 404)
+    return child_id, is_admin, t
+
+
+def _task_progress(t, child_id, book_id):
+    """Qatnashchining holati: qancha o‘qigani va bajarganmi."""
+    if t["kind"] == "book":
+        if not book_id:
+            return {"pct": 0, "label": "Boshlanmadi", "done": False}
+        cursor.execute("SELECT pages_read, total_pages, is_completed FROM Plan_Books WHERE book_id = ?",
+                       (book_id,))
+        r = cursor.fetchone()
+        if not r:
+            return {"pct": 0, "label": "Boshlanmadi", "done": False}
+        read, total, done = r[0] or 0, r[1] or 0, bool(r[2])
+        pct = 100 if done else (int(read * 100 / total) if total else 0)
+        return {"pct": pct, "done": done,
+                "label": "Tugatdi" if done else (str(read) + "/" + str(total) + " bet" if total else str(read) + " bet")}
+    # Marafon: qo‘shilgandan keyingi kitob va betlar
+    cursor.execute("SELECT joined_at FROM Group_Task_Members WHERE task_id = ? AND child_id = ?",
+                   (t["id"], child_id))
+    r = cursor.fetchone()
+    since = r[0] if r else None
+    if t["goal_kind"] == "pages":
+        cursor.execute(
+            "SELECT COALESCE(SUM(pages_added), 0) FROM Reading_Logs WHERE child_id = ? AND created_at >= ?",
+            (child_id, since or "")
+        )
+        have = cursor.fetchone()[0]
+        unit = " bet"
+    else:
+        cursor.execute(
+            "SELECT COUNT(*) FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+            "WHERE rp.child_id = ? AND pb.is_completed = 1 AND COALESCE(pb.last_read_at, '') >= ?",
+            (child_id, since or "")
+        )
+        have = cursor.fetchone()[0]
+        unit = " kitob"
+    goal = t["goal_value"] or 1
+    return {"pct": min(100, int(have * 100 / goal)), "done": have >= goal,
+            "label": str(have) + "/" + str(goal) + unit}
+
+
+def _task_brief(t, child_id):
+    cursor.execute("SELECT COUNT(*) FROM Group_Task_Members WHERE task_id = ?", (t["id"],))
+    joined = cursor.fetchone()[0]
+    cursor.execute("SELECT book_id FROM Group_Task_Members WHERE task_id = ? AND child_id = ?",
+                   (t["id"], child_id))
+    r = cursor.fetchone()
+    me = {"joined": bool(r), "book_id": r[0] if r else None}
+    out = {"id": t["id"], "kind": t["kind"], "title": t["title"], "author": t["author"],
+           "prize": t["prize"], "deadline": t["deadline"], "status": t["status"],
+           "goal_kind": t["goal_kind"], "goal_value": t["goal_value"],
+           "checked_by": t["checked_by"], "joined": me["joined"], "members": joined}
+    if me["joined"]:
+        out["progress"] = _task_progress(t, child_id, me["book_id"])
+    return out
+
+
+@app.route("/api/groups/<int:gid>/tasks", methods=["GET"])
+@require_auth
+def tasks_list(gid):
+    child_id, is_admin, err = _task_guard(gid, None)
+    if err:
+        return err
+    cursor.execute(
+        "SELECT task_id FROM Group_Tasks WHERE group_id = ? AND status != 'deleted' "
+        "ORDER BY status = 'draft' DESC, created_at DESC", (gid,)
+    )
+    ids = [r[0] for r in cursor.fetchall()]
+    items = []
+    for tid in ids:
+        t = _task_row(tid)
+        if not t:
+            continue
+        if t["status"] == "draft" and not is_admin:
+            continue          # tayyorlanayotgan musobaqa faqat adminga ko‘rinadi
+        items.append(_task_brief(t, child_id))
+    open_count = len([i for i in items if i["status"] == "open"])
+    return jsonify({"list": items, "is_admin": is_admin,
+                    "can_add": is_admin and open_count < TASK_MAX_OPEN,
+                    "max_open": TASK_MAX_OPEN})
+
+
+@app.route("/api/groups/<int:gid>/tasks", methods=["POST"])
+@require_auth
+def tasks_create(gid):
+    """Musobaqa qoralamasi. Test tasdiqlanmaguncha guruhga ko‘rinmaydi."""
+    child_id, is_admin, err = _task_guard(gid, None, need_admin=True)
+    if err:
+        return err
+    cursor.execute("SELECT COUNT(*) FROM Group_Tasks WHERE group_id = ? AND status = 'open'", (gid,))
+    if cursor.fetchone()[0] >= TASK_MAX_OPEN:
+        return jsonify({"error": "Bir vaqtda eng ko‘pi %d ta musobaqa bo‘ladi" % TASK_MAX_OPEN}), 400
+
+    d = request.get_json(force=True) or {}
+    kind = "marathon" if d.get("kind") == "marathon" else "book"
+    title = (d.get("title") or "").strip()[:120]
+    if not title:
+        return jsonify({"error": "Nomini yozing"}), 400
+    prize = (d.get("prize") or "").strip()[:120]
+    deadline = (d.get("deadline") or "").strip() or None
+    final_count = int(d.get("final_count") or TASK_FINAL_MIN)
+    final_count = max(TASK_FINAL_MIN, min(TASK_FINAL_MAX, final_count))
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    with db_lock:
+        cursor.execute(
+            "INSERT INTO Group_Tasks (group_id, kind, title, author, total_pages, goal_kind, "
+            "goal_value, prize, deadline, final_count, status, created_by, created_at) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'draft', ?, ?)",
+            (gid, kind, title, (d.get("author") or "").strip()[:120],
+             int(d.get("total_pages") or 0),
+             "pages" if d.get("goal_kind") == "pages" else "books",
+             int(d.get("goal_value") or 0), prize, deadline, final_count, g.user_id, now)
+        )
+        tid = cursor.lastrowid
+        for b in (d.get("books") or [])[:20]:
+            cursor.execute("INSERT INTO Group_Task_Books (task_id, title, author) VALUES (?, ?, ?)",
+                           (tid, (b.get("title") or "").strip()[:120], (b.get("author") or "").strip()[:120]))
+        conn.commit()
+
+    # Kitob musobaqasida savollar tayyor bo‘lsa — qoralama sifatida beriladi,
+    # admin ularni tahrirlab, keyin tasdiqlaydi.
+    suggested = []
+    if kind == "book":
+        key = book_key(title, (d.get("author") or "").strip())
+        cursor.execute("SELECT questions_json FROM Test_Bank WHERE book_key = ?", (key,))
+        r = cursor.fetchone()
+        if r and r[0]:
+            try:
+                suggested = json.loads(r[0])[:final_count]
+            except Exception:
+                suggested = []
+        if suggested:
+            with db_lock:
+                cursor.execute("UPDATE Group_Tasks SET questions_json = ? WHERE task_id = ?",
+                               (json.dumps(suggested, ensure_ascii=False), tid))
+                conn.commit()
+    return jsonify({"ok": True, "id": tid, "questions": suggested})
+
+
+@app.route("/api/groups/<int:gid>/tasks/<int:tid>", methods=["GET"])
+@require_auth
+def tasks_detail(gid, tid):
+    child_id, is_admin, t = _task_guard(gid, tid)
+    if isinstance(t, tuple):
+        return t
+    out = _task_brief(t, child_id)
+    out["total_pages"] = t["total_pages"]
+    out["final_count"] = t["final_count"]
+    cursor.execute("SELECT title, author FROM Group_Task_Books WHERE task_id = ?", (tid,))
+    out["books"] = [{"title": b[0], "author": b[1]} for b in cursor.fetchall()]
+    if is_admin:
+        try:
+            out["questions"] = json.loads(t["questions"] or "[]")
+        except Exception:
+            out["questions"] = []
+    cursor.execute(
+        "SELECT gtm.child_id, gtm.book_id, u.name, u.avatar_id FROM Group_Task_Members gtm "
+        "JOIN Users u ON gtm.child_id = u.user_id WHERE gtm.task_id = ? ORDER BY gtm.joined_at", (tid,)
+    )
+    rows = cursor.fetchall()
+    racers = []
+    for r in rows:
+        p = _task_progress(t, r[0], r[1])
+        racers.append({"id": r[0], "name": r[2], "avatar_id": r[3] or "fox",
+                       "pct": p["pct"], "label": p["label"], "done": p["done"],
+                       "is_me": r[0] == child_id})
+    racers.sort(key=lambda x: -x["pct"])
+    out["racers"] = racers
+    return jsonify(out)
+
+
+@app.route("/api/groups/<int:gid>/tasks/<int:tid>/questions", methods=["POST"])
+@require_auth
+def tasks_questions(gid, tid):
+    """Admin tahrirlagan savollarni saqlaydi."""
+    child_id, is_admin, t = _task_guard(gid, tid, need_admin=True)
+    if isinstance(t, tuple):
+        return t
+    qs = (request.get_json(force=True) or {}).get("questions")
+    if not isinstance(qs, list):
+        return jsonify({"error": "Savollar yuborilmadi"}), 400
+    # Savollar ILOVADAGI umumiy ko‘rinishda saqlanadi (question/options/answer):
+    # musobaqa testi keyin oddiy kitob testi kabi ishlatiladi.
+    clean = []
+    for q in qs[:TASK_FINAL_MAX]:
+        text = (q.get("question") or q.get("q") or "").strip()
+        opts = [str(o).strip() for o in (q.get("options") or []) if str(o).strip()]
+        if not text or len(opts) < 2:
+            continue
+        ans = (q.get("answer") or "").strip()
+        if ans not in opts:
+            ans = opts[0]
+        clean.append({"question": text, "options": opts, "answer": ans})
+    with db_lock:
+        cursor.execute("UPDATE Group_Tasks SET questions_json = ? WHERE task_id = ?",
+                       (json.dumps(clean, ensure_ascii=False), tid))
+        conn.commit()
+    return jsonify({"ok": True, "count": len(clean)})
+
+
+@app.route("/api/groups/<int:gid>/tasks/<int:tid>/publish", methods=["POST"])
+@require_auth
+def tasks_publish(gid, tid):
+    """«Tekshirdim, e'lon qilaman» — shundan keyin guruh ko‘radi."""
+    child_id, is_admin, t = _task_guard(gid, tid, need_admin=True)
+    if isinstance(t, tuple):
+        return t
+    if t["kind"] == "book":
+        try:
+            qs = json.loads(t["questions"] or "[]")
+        except Exception:
+            qs = []
+        if len(qs) < 3:
+            return jsonify({"error": "Avval testni tayyorlang"}), 400
+    cursor.execute("SELECT name FROM Users WHERE user_id = ?", (g.user_id,))
+    r = cursor.fetchone()
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with db_lock:
+        cursor.execute(
+            "UPDATE Group_Tasks SET status = 'open', checked_by = ?, published_at = ? WHERE task_id = ?",
+            ((r[0] if r else "Admin"), now, tid)
+        )
+        conn.commit()
+    # Guruhdagi har bir bolaning ota-onasiga xabar
+    cursor.execute("SELECT child_id FROM Group_Members WHERE group_id = ?", (gid,))
+    kids = [x[0] for x in cursor.fetchall()]
+    for kid in kids:
+        pid = get_parent_id(kid)
+        if pid:
+            _feed(pid, kid, "group_task", "Guruhda musobaqa",
+                  "«%s» — %s" % (t["title"], t["prize"] or "sovg‘ali musobaqa"), tid)
+    return jsonify({"ok": True})
+
+
+def _child_plan_id(child_id):
+    """Bolaning kitob qo‘yish uchun rejasi; bo‘lmasa yaratiladi."""
+    cursor.execute(
+        "SELECT plan_id FROM Reading_Plans WHERE child_id = ? AND status = 'active' "
+        "ORDER BY plan_id LIMIT 1", (child_id,)
+    )
+    r = cursor.fetchone()
+    if r:
+        return r[0]
+    parent_id = get_parent_id(child_id) or child_id
+    cursor.execute(
+        "INSERT INTO Reading_Plans (parent_id, child_id, name, status, plan_type) "
+        "VALUES (?, ?, ?, 'active', 'quick')", (parent_id, child_id, "Kitoblarim")
+    )
+    return cursor.lastrowid
+
+
+@app.route("/api/groups/<int:gid>/tasks/<int:tid>/join", methods=["POST"])
+@require_auth
+def tasks_join(gid, tid):
+    """«Qatnashaman». Kitob musobaqasida kitob bolaning javoniga qo‘yiladi
+    va musobaqa testi o‘sha kitobga biriktiriladi — hammaga bir xil savol."""
+    child_id, is_admin, t = _task_guard(gid, tid)
+    if isinstance(t, tuple):
+        return t
+    if t["status"] != "open":
+        return jsonify({"error": "Musobaqa hali boshlanmagan"}), 400
+    cursor.execute("SELECT 1 FROM Group_Task_Members WHERE task_id = ? AND child_id = ?", (tid, child_id))
+    if cursor.fetchone():
+        return jsonify({"ok": True, "already": True})
+
+    book_id = None
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with db_lock:
+        if t["kind"] == "book":
+            cursor.execute(
+                "SELECT pb.book_id FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+                "WHERE rp.child_id = ? AND pb.title = ? LIMIT 1", (child_id, t["title"])
+            )
+            r = cursor.fetchone()
+            if r:
+                book_id = r[0]
+            else:
+                plan_id = _child_plan_id(child_id)
+                cursor.execute(
+                    "INSERT INTO Plan_Books (plan_id, title, author, total_pages) VALUES (?, ?, ?, ?)",
+                    (plan_id, t["title"], t["author"] or "", t["total_pages"] or 0)
+                )
+                book_id = cursor.lastrowid
+            if t["questions"]:
+                cursor.execute(
+                    "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
+                    (book_id, t["questions"])
+                )
+        cursor.execute(
+            "INSERT INTO Group_Task_Members (task_id, child_id, book_id, joined_at) VALUES (?, ?, ?, ?)",
+            (tid, child_id, book_id, now)
+        )
+        conn.commit()
+    return jsonify({"ok": True, "book_id": book_id})
+
+
+@app.route("/api/groups/<int:gid>/tasks/<int:tid>/delete", methods=["POST"])
+@require_auth
+def tasks_delete(gid, tid):
+    child_id, is_admin, t = _task_guard(gid, tid, need_admin=True)
+    if isinstance(t, tuple):
+        return t
+    with db_lock:
+        cursor.execute("DELETE FROM Group_Tasks WHERE task_id = ?", (tid,))
+        cursor.execute("DELETE FROM Group_Task_Members WHERE task_id = ?", (tid,))
+        cursor.execute("DELETE FROM Group_Task_Books WHERE task_id = ?", (tid,))
+        conn.commit()
+    return jsonify({"ok": True})
 
 
 # ==========================================================

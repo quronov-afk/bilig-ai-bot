@@ -2031,3 +2031,103 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
 }
 .g-badge-art { width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; }
 .g-badge-art img, .g-badge-art svg { width: 100%; height: 100%; object-fit: contain; }
+
+/* ==========================================================
+   MUSOBAQA — guruh ichidagi birga o‘qish
+   ========================================================== */
+.t-list { display: flex; flex-direction: column; gap: 10px; }
+.t-card { margin-bottom: 0; cursor: pointer; }
+.t-top { display: flex; align-items: center; gap: 10px; }
+.t-ic {
+  width: 38px; height: 38px; border-radius: 12px; background: var(--brand-bg); color: var(--brand);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.t-top > div { flex: 1; min-width: 0; }
+.t-prize {
+  display: flex; align-items: center; gap: 6px; background: var(--gold-bg); color: var(--gold-deep);
+  border-radius: 10px; padding: 7px 10px; margin-top: 10px; font-size: 13.5px; font-weight: 700;
+}
+.t-prize.big { font-size: 15px; padding: 9px 12px; margin-bottom: 8px; }
+.t-timer {
+  display: flex; align-items: center; gap: 7px; background: var(--brand-bg); color: var(--brand-deep);
+  border-radius: 10px; padding: 9px 12px; font-size: 14.5px; font-weight: 700;
+}
+.t-foot {
+  display: flex; justify-content: space-between; gap: 10px; margin-top: 10px;
+  font-size: 13px; color: var(--text-faint); font-weight: 700;
+}
+.t-foot span { display: flex; align-items: center; gap: 5px; }
+.terms-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 16px; margin-bottom: 14px; box-shadow: var(--shadow-sm);
+}
+.terms-list .tl {
+  display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; font-size: 14.5px;
+  border-bottom: 1px solid var(--border); line-height: 1.45;
+}
+.terms-list .tl:last-child { border-bottom: none; }
+.tl-n {
+  width: 22px; height: 22px; border-radius: 7px; background: var(--brand-bg); color: var(--brand-deep);
+  font-size: 12.5px; font-weight: 800; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 1px;
+}
+.notice-ai, .notice-soft {
+  display: flex; gap: 11px; border-radius: var(--radius-md); padding: 13px 15px; margin-bottom: 12px;
+  font-size: 13.5px; line-height: 1.5;
+}
+.notice-ai { background: var(--gold-bg); border: 1px solid #F6D77E; color: var(--gold-deep); }
+.notice-soft { background: var(--surface-soft); color: var(--text-soft); display: block; }
+.notice-ai .n-ic {
+  width: 32px; height: 32px; border-radius: 10px; background: rgba(146, 64, 14, .12);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.notice-ai b { display: block; font-size: 15px; color: var(--text); margin-bottom: 2px; }
+.q-row { display: flex; gap: 10px; padding: 12px 2px; border-bottom: 1px solid var(--border); }
+.q-row:last-child { border-bottom: none; }
+.q-n {
+  width: 24px; height: 24px; border-radius: 8px; background: var(--surface-soft); color: var(--text-soft);
+  font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.q-main { flex: 1; min-width: 0; }
+.q-text { font-size: 14.5px; font-weight: 700; line-height: 1.4; margin: 0 0 4px; }
+.q-ans { font-size: 13px; color: var(--success-deep); display: flex; align-items: center; gap: 5px; margin: 0; }
+.q-btns { display: flex; gap: 6px; flex-shrink: 0; }
+.q-opt {
+  display: flex; align-items: center; gap: 9px; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 9px 11px; margin-bottom: 8px;
+}
+.q-opt.is-right { border-color: #6EE7B7; background: var(--success-bg); }
+.q-mark {
+  width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--border); background: none;
+  flex-shrink: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;
+  color: #fff;
+}
+.q-opt.is-right .q-mark { border-color: var(--success-deep); background: var(--success-deep); }
+.q-in {
+  flex: 1; min-width: 0; border: none; background: none; font-family: inherit; font-size: 15px;
+  font-weight: 600; color: var(--text); padding: 0; outline: none;
+}
+.q-del {
+  width: 24px; height: 24px; border-radius: 7px; border: none; background: rgba(15, 23, 42, .06);
+  color: var(--text-faint); flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; padding: 0;
+}
+.pick-row {
+  display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px; margin-bottom: 10px;
+  cursor: pointer; font-family: inherit; color: var(--text); box-shadow: var(--shadow-sm);
+}
+.pick-row .pr-ic {
+  width: 42px; height: 42px; border-radius: 13px; background: var(--brand-bg); color: var(--brand);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.pick-row > span:nth-child(2) { flex: 1; min-width: 0; }
+.pick-row b { display: block; font-size: 16px; font-weight: 800; margin-bottom: 2px; }
+.pick-row i { display: block; font-style: normal; font-size: 13.5px; color: var(--text-faint); line-height: 1.45; }
+.days-row { display: flex; gap: 7px; }
+.day-chip {
+  flex: 1; padding: 10px 0; border-radius: 999px; border: 1px solid var(--border); background: var(--surface);
+  font-family: inherit; font-size: 14px; font-weight: 700; color: var(--text-soft); cursor: pointer;
+}
+.day-chip.is-on { background: var(--brand-bg); border-color: #A9C8FB; color: var(--brand-deep); }
+textarea.g-input { resize: vertical; line-height: 1.45; }
