@@ -2058,6 +2058,7 @@ function childNoteHtml(note) {
 //   data   — qo‘shimcha data-* atributlari, masalan {mode: "quick"}
 //   tone   — ikona rangi: "" (ko‘k) | "gold" | "success" | "soft"
 //   tag    — o‘ng yuqorida kichik yorliq, masalan "Tavsiya"
+//   compact— ixcham ko‘rinish (bolaning kitob oynasi bitta ekranga sig‘sin)
 // ==========================================================
 function choiceCard(cfg) {
   let attrs = "";
@@ -2065,7 +2066,8 @@ function choiceCard(cfg) {
   Object.keys(data).forEach(function (k) {
     attrs += ' data-' + k + '="' + escapeHtml(String(data[k])) + '"';
   });
-  return '<button class="choice-card' + (cfg.tone ? " tone-" + cfg.tone : "") + '"' +
+  return '<button class="choice-card' + (cfg.tone ? " tone-" + cfg.tone : "") +
+    (cfg.compact ? " compact" : "") + '"' +
     ' data-action="' + cfg.action + '"' + attrs + '>' +
     '<span class="choice-ic">' + icon(cfg.ic, 22, 1.9) + '</span>' +
     '<span class="choice-tx">' +
@@ -2788,22 +2790,22 @@ async function openBookModal(bookId) {
   if (b.short_form) {
     // Qisqa asar: bola uni bir o‘tirishda o‘qiydi. Test o‘rniga AI ustoz
     // bitta savol beradi va bola ovozda javob qaytaradi (ega qarori).
-    testsHtml = '<p class="section-sub" style="margin-top:18px">' +
+    testsHtml = '<p class="section-sub" style="margin-top:6px">' +
       'Bu qisqa asar — test yo‘q. O‘qib bo‘lgach, AI ustozning savoliga ' +
       'ovozli javob berasan.</p>';
   } else if (b.has_test && b.test_final_only) {
     // Test o‘qish davomida yig‘ilgan yozuvlardan tuzilgan. U kitobning
     // hamma joyini qamramaydi, shuning uchun oraliq testlar berilmaydi —
     // bola kitobni tugatdim deganda bitta yakuniy test topshiradi.
-    testsHtml = '<p class="eyebrow" style="margin-top:18px">Kitobni tugatding?</p>' +
+    testsHtml = '<p class="eyebrow" style="margin-top:6px">Kitobni tugatding?</p>' +
       (b.final_test_done
         ? '<div class="card" style="text-align:center;font-weight:700;color:var(--success-deep)">' +
             'Yakuniy test topshirilgan</div>'
         : choiceCard({
             ic: "award", tone: "gold", action: "open-test",
-            data: { id: bookId, stage: "final_test" },
+            compact: true, data: { id: bookId, stage: "final_test" },
             title: "Kitobni yakunladim",
-            desc: "Oxirigacha o‘qib bo‘lgan bo‘lsang, yakuniy testni topshir va kitobni yopamiz."
+            desc: "Yakuniy testni topshir va kitobni yopamiz."
           }));
   } else if (b.has_test) {
     // Bosqich bolaning kelgan joyiga qarab ochiladi: 1-oraliq kitobning
@@ -2849,7 +2851,7 @@ async function openBookModal(bookId) {
       hint = '<p class="section-sub" style="margin-top:8px">Yana ' +
              stages[nextClosed].need_pages + ' bet o‘qisang, ' + nm + ' test ochiladi.</p>';
     }
-    testsHtml = '<p class="eyebrow" style="margin-top:18px">Bilim testlari</p><div class="test-row">' +
+    testsHtml = '<p class="eyebrow" style="margin-top:6px">Bilim testlari</p><div class="test-row compact">' +
       stageBtn("mid_test_1", "1-oraliq") +
       stageBtn("mid_test_2", "2-oraliq") +
       stageBtn("final_test", "Yakuniy") +
@@ -2857,7 +2859,7 @@ async function openBookModal(bookId) {
   } else {
     // Bolaga test qanday paydo bo‘lishini AYTMAYMIZ — aks holda u sahifa
     // rasmini test uchun yig‘adigan bo‘lib qoladi, o‘qish uchun emas.
-    testsHtml = '<p class="section-sub" style="margin-top:18px">' +
+    testsHtml = '<p class="section-sub" style="margin-top:6px">' +
       'Bu kitobda test yo‘q. O‘qishda davom et — kitob haqida ovozda ' +
       'gapirib bersang ham Bilig olasan.</p>';
   }
@@ -2867,8 +2869,8 @@ async function openBookModal(bookId) {
   const talk = b.talk || {};
   const talkNames = { start: "Kitob boshi", end: "Kitob yakuni" };
   const talkDescs = {
-    start: "O‘qigan qisming haqida AI ustozning savoliga ovozda javob ber.",
-    end: "Kitobni tugatding. AI ustozning yakuniy savoliga javob ber."
+    start: "AI ustoz savoliga ovozda javob ber.",
+    end: "Yakuniy savolga ovozda javob ber."
   };
   let talkCards = "";
   // Qisqa asarda «kitob boshi» savoli berilmaydi — bitta yakuniy savol.
@@ -2885,14 +2887,14 @@ async function openBookModal(bookId) {
         // Ilgari savol belgisi turardi: ega uni «xunuk va yetarlicha
         // ma'no bermaydi» dedi (2026-08-31).
         ic: "message-circle", tone: "gold", action: "open-talk",
-        data: { id: bookId, stage: st },
+        compact: true, data: { id: bookId, stage: st },
         title: talkNames[st], tag: "5 Bilig", desc: talkDescs[st]
       });
     }
   });
   let talkHtml = "";
   if (talkCards) {
-    talkHtml = '<p class="eyebrow" style="margin-top:18px">AI ustoz savoli</p>' + talkCards;
+    talkHtml = '<p class="eyebrow" style="margin-top:6px">AI ustoz savoli</p>' + talkCards;
   }
 
   // Ovozli xulosa har 15 betda bir marta ochiladi. Yopiq bo‘lsa —
@@ -2901,11 +2903,11 @@ async function openBookModal(bookId) {
   if (b.voice_open) {
     voiceHtml = choiceCard({
       ic: "mic", tone: "success", action: "open-voice", data: { id: bookId },
-      title: b.has_voice ? "Yana bitta ovozli xulosa" : "Ovozli xulosa yuborish",
-      desc: "Kitobni o‘z so‘zing bilan so‘zlab ber. Yaxshi so‘zlab bersang 3 Bilig."
+      compact: true, title: b.has_voice ? "Yana bitta ovozli xulosa" : "Ovozli xulosa yuborish",
+      desc: "O‘z so‘zing bilan so‘zlab ber — 3 Bilig."
     });
   } else {
-    voiceHtml = '<div class="card" style="padding:14px 16px">' +
+    voiceHtml = '<div class="card" style="padding:11px 14px">' +
       '<p style="margin:0 0 4px;font-weight:700;color:var(--text)">Yana ' +
       b.voice_need_pages + ' bet o‘qishing kerak</p>' +
       '<p class="section-sub" style="margin:0">Ovozli xulosa har ' +
@@ -2915,22 +2917,23 @@ async function openBookModal(bookId) {
 
   openModal(b.title,
     head +
-    '<p class="eyebrow" style="margin-top:18px">Qayergacha o‘qiding?</p>' +
+    '<p class="eyebrow" style="margin-top:6px">Qayergacha o‘qiding?</p>' +
     choiceCard({
       ic: "camera", action: "open-page-photo", data: { id: bookId }, tag: "Tez",
-      title: "Sahifani rasmga olish",
-      desc: "To‘xtagan betingni suratga ol — bet raqamini o‘zi o‘qiydi va Bilig beradi."
+      compact: true, title: "Sahifani rasmga olish",
+      desc: "Suratga ol — bet raqamini o‘zi o‘qiydi."
     }) +
-    choiceCard({
-      ic: "edit", tone: "soft", action: "open-page-manual", data: { id: bookId },
-      title: "Bet raqamini o‘zim yozaman",
-      desc: "Rasm chiqmasa yoki yorug‘lik yetmasa — raqamni qo‘lda kiritasan."
-    }) +
-    '<p class="eyebrow" style="margin-top:18px">Kitob haqida gapirib ber</p>' +
+    // Qo‘lda kiritish — zaxira yo‘l, shuning uchun to‘liq kartochka emas,
+    // kamera kartochkasi ostidagi kichik qator (ekranni tejaydi).
+    '<button class="mini-link" data-action="open-page-manual" data-id="' + bookId + '">' +
+      icon("edit", 14, 2.2) + 'Bet raqamini o‘zim yozaman</button>' +
+    '<p class="eyebrow" style="margin-top:6px">Kitob haqida gapirib ber</p>' +
     voiceHtml +
     testsHtml +
     // AI ustoz savoli eng oxirida — ega qarori (2026-08-31).
-    talkHtml
+    talkHtml,
+    // Bolaning oynasi baland — bet qo‘shish, ovoz va testlar bir ekranda.
+    "modal-tall modal-book"
   );
 }
 

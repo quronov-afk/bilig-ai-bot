@@ -1289,6 +1289,9 @@ html, body {
 .modal-box.modal-tall { max-height: 94vh; }
 .modal-box { overflow-x: hidden; }
 
+/* Bolaning kitob oynasi — ichki bo‘shliqlar ixchamroq, hammasi sig‘sin */
+.modal-box.modal-book { padding: 14px 16px calc(14px + env(safe-area-inset-bottom)); }
+
 .modal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
 
 /* ---------- KITOBLAR KATALOGI ---------- */
@@ -1392,6 +1395,22 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
   display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: .03em; text-transform: uppercase;
   color: var(--brand-deep); background: var(--brand-bg); border-radius: 999px; padding: 2px 7px; white-space: nowrap;
 }
+
+/* Ixcham ko‘rinish — bolaning kitob oynasi bitta ekranga sig‘ishi uchun.
+   Ega talabi: bet qo‘shish, ovozli xulosa va testlar bir ekranda tursin. */
+.choice-card.compact { padding: 9px 12px; gap: 11px; margin-bottom: 6px; }
+.choice-card.compact .choice-ic { flex: 0 0 38px; width: 38px; height: 38px; border-radius: 12px; }
+.choice-card.compact .choice-t { font-size: 15px; }
+.choice-card.compact .choice-d { font-size: 12.5px; margin-top: 2px; }
+
+/* Ikkinchi darajali yo‘l — kartochka emas, kichik matnli qator */
+.mini-link {
+  display: flex; align-items: center; gap: 6px; width: 100%;
+  background: none; border: 0; margin: 0; padding: 2px 4px 6px;
+  font: inherit; font-size: 13.5px; font-weight: 700; color: var(--brand-deep);
+  cursor: pointer; text-align: left;
+}
+.mini-link:active { opacity: .6; }
 
 /* Rol tanlash ekranidagi kartochkalar biroz kengroq turadi */
 .role-buttons { max-width: 380px; margin: 10px auto 0; }
@@ -1812,6 +1831,11 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
   display: flex; align-items: center; justify-content: center; gap: 1px;
   font-size: 11.5px; font-weight: 600; color: var(--text-faint);
 }
+
+/* Ixcham qator — bolaning kitob oynasi bitta ekranga sig‘sin */
+.test-row.compact { gap: 7px; margin-top: 8px; }
+.test-row.compact .test-tile { padding: 9px 5px 8px; }
+.test-row.compact .test-tile .tt-ic { width: 26px; height: 26px; margin-bottom: 0; }
 
 /* Ochiq — bola aynan shuni bosishi kerak */
 .test-tile.is-open {
