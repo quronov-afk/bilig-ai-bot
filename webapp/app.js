@@ -95,6 +95,7 @@ const State = {
   taskQIndex: null,
   taskKind: "book",
   taskAiDraft: false,      // savollarni AI tayyorlaganmi (yozuv matni shunga qarab)
+  kudosPhrases: [],        // olqish iboralari — serverdan keladi
   taskGoal: "books",
   taskCount: 10,
   groupFound: null,        // qidiruv natijasi; null bo‘lsa qidiruv qilinmagan
@@ -1593,6 +1594,20 @@ document.addEventListener("click", async function (e) {
         State.groupTaskId = null;
         State.taskView = null;
         toast("Bekor qilindi");
+        await renderRatingTab();
+        break;
+      case "kudos-open": openKudosModal(Number(el.dataset.id), el.dataset.name); break;
+      case "kudos-send":
+        await api(groupUrl("/api/groups/" + State.groupId + "/kudos"),
+          { method: "POST", body: { to: Number(el.dataset.id), phrase: el.dataset.p } });
+        closeModal();
+        toast("Olqish yuborildi");
+        await renderRatingTab();
+        break;
+      case "task-prize":
+        await api(groupUrl("/api/groups/" + State.groupId + "/tasks/" + State.groupTaskId + "/prize"),
+          { method: "POST", body: {} });
+        toast("Belgilandi");
         await renderRatingTab();
         break;
       case "group-search": await groupSearchRun(); break;
@@ -4414,6 +4429,7 @@ async function renderGroupRating(gid) {
 
 async function renderGroupMember(content, gid, cid) {
   const d = await api(groupUrl("/api/groups/" + gid + "/member/" + cid));
+  State.kudosPhrases = d.phrases || [];
   let out =
     '<div class="detail-topbar">' +
     '<button class="back-link" data-action="group-member-back">' + icon("arrow-left", 17, 2.2) + ' Guruh</button>' +
@@ -4437,6 +4453,17 @@ async function renderGroupMember(content, gid, cid) {
       done.map(groupBookRow).join("") + '</div>';
   }
   out += groupBadgesHtml(d.badges);
+  if (!d.is_me) {
+    out += '<button class="btn btn-primary btn-block" data-action="kudos-open" data-id="' + cid +
+      '" data-name="' + escapeHtml(d.name) + '">Olqish yuborish</button>';
+  }
+  if ((d.kudos || []).length) {
+    out += '<p class="eyebrow">Olqishlar</p><div class="card">' + d.kudos.map(function (k) {
+      return '<div class="list-row"><div style="min-width:0">' +
+        '<p class="g-name">' + escapeHtml(k.phrase) + '</p>' +
+        '<p class="g-meta">' + escapeHtml(k.from) + '</p></div></div>';
+    }).join("") + '</div>';
+  }
   content.innerHTML = out;
 }
 
@@ -4506,10 +4533,14 @@ async function renderGroupTasks(gid) {
         '<div style="min-width:0"><p class="g-name">' + escapeHtml(t.title) + '</p>' +
         '<p class="g-meta">' + escapeHtml(taskGoalLabel(t)) + '</p></div>' +
         (draft ? '<span class="pill pill-soft">Tayyorlanmoqda</span>' : '') +
+        (t.status === "done" ? '<span class="pill pill-leaf">Yakunlandi</span>' : '') +
         '</div>' +
         (t.prize ? '<div class="t-prize">' + icon("award", 15, 2.2) + ' ' + escapeHtml(t.prize) + '</div>' : '') +
         '<div class="t-foot">' +
-        '<span>' + icon("clock", 14, 2.2) + ' ' + taskDeadlineLabel(t.deadline) + '</span>' +
+        '<span>' + icon("clock", 14, 2.2) + ' ' +
+        (t.status === "done"
+          ? "G‘olib: " + escapeHtml(t.winner_name || "aniqlanmadi")
+          : taskDeadlineLabel(t.deadline)) + '</span>' +
         '<span>' + t.members + ' qatnashchi</span></div>' +
         (t.progress ? '<div class="bar"><i style="width:' + t.progress.pct + '%"></i></div>' : '') +
         '</div>';
@@ -4561,6 +4592,40 @@ async function renderTaskDetail(content, gid, tid) {
     '<div class="tl"><span class="tl-n">5</span> Muddat tugagach g‘olib o‘z-o‘zidan e\'lon qilinadi</div>' +
     '</div>' +
     (t.checked_by ? '<p class="g-note" style="margin-bottom:14px">Testni tekshirgan: ' + escapeHtml(t.checked_by) + '</p>' : '');
+
+  if (t.status === "done") {
+    // Yakunlangan musobaqada shartlar endi kerak emas — birinchi ko‘rinadigan
+    // narsa g‘olib bo‘lsin.
+    const st = t.standings || [];
+    const win = st[0];
+    out = '<div class="detail-topbar">' +
+      '<button class="back-link" data-action="task-back">' + icon("arrow-left", 17, 2.2) + ' Musobaqa</button>' +
+      '</div>' +
+      '<p class="eyebrow">' + escapeHtml(t.title) + '</p>' +
+      '<div class="win-card">' +
+      '<span class="win-ic">' + icon("trophy", 30, 1.8) + '</span>' +
+      '<p class="win-t">' + (win ? escapeHtml(win.name) : "G‘olib aniqlanmadi") + '</p>' +
+      '<p class="win-s">' + (win ? "Musobaqa g‘olibi · " + win.points + " ball" : "Hech kim yakuniga yetmadi") + '</p>' +
+      (t.prize ? '<div class="t-prize big" style="margin:12px 0 0">' + icon("award", 17, 2.2) +
+        ' ' + escapeHtml(t.prize) + (t.prize_given ? ' · berildi' : '') + '</div>' : '') +
+      '</div>';
+    if (st.length) {
+      out += '<p class="eyebrow">Yakuniy jadval</p><div class="card">' + st.map(function (r, i) {
+        return '<div class="list-row' + (r.is_me ? " me-row" : "") + '">' +
+          '<div style="display:flex;align-items:center;gap:10px;min-width:0">' +
+          '<div class="rank-chip ' + (i === 0 ? "top1" : "") + '">' + (i + 1) + '</div>' +
+          '<span class="g-av sm">' + avatarMarkup(r.avatar_id, 32) + '</span>' +
+          '<div style="min-width:0"><p class="g-name">' + escapeHtml(r.name) + '</p>' +
+          '<p class="g-meta">' + escapeHtml(r.label) + (r.secs ? ' · test ' + Math.round(r.secs / 60) + ' daqiqa' : '') + '</p></div></div>' +
+          '<div class="pill pill-brand">' + r.points + ' ball</div></div>';
+      }).join("") + '</div>';
+    }
+    if (t.is_admin && !t.prize_given && t.prize) {
+      out += '<button class="btn btn-secondary btn-block" data-action="task-prize">Sovg‘a topshirildi</button>';
+    }
+    content.innerHTML = out;
+    return;
+  }
 
   if (t.status === "draft") {
     out += '<div class="notice-soft">Bu musobaqa hali guruhga chiqmagan. Testni tekshirib, e\'lon qiling.</div>' +
@@ -4733,6 +4798,21 @@ async function submitTaskCreate() {
   State.taskAiDraft = !!(r.questions || []).length;
   State.taskView = kind === "book" ? "questions" : null;
   await renderRatingTab();
+}
+
+function openKudosModal(cid, name) {
+  // Chat yo‘q — faqat tayyor iboralar. Erkin matn yozilmaydi, shuning
+  // uchun nazoratchi ham kerak emas: begona so‘z umuman kirmaydi.
+  const phrases = State.kudosPhrases || [];
+  openModal("Olqish — " + name,
+    '<p class="section-sub" style="margin-top:0">Tayyor iboralardan birini tanlang. Bir kunda bir do‘stingizga bir marta.</p>' +
+    phrases.map(function (p) {
+      return '<button class="pick-row kudos-row" data-action="kudos-send" data-id="' + cid +
+        '" data-p="' + escapeHtml(p) + '">' +
+        '<span class="pr-ic">' + icon("star", 20, 2) + '</span>' +
+        '<span><b>' + escapeHtml(p) + '</b></span>' +
+        icon("chevron-right", 18, 2.2) + '</button>';
+    }).join(""));
 }
 
 function openGroupCreateModal() {

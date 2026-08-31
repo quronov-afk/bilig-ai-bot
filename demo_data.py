@@ -191,6 +191,8 @@ def clear_demo_child(child_id):
         "DELETE FROM Group_Members WHERE child_id = ?",
         "DELETE FROM Group_Requests WHERE child_id = ?",
         "DELETE FROM Group_Task_Members WHERE child_id = ?",
+        "DELETE FROM Group_Kudos WHERE to_child = ?",
+        "DELETE FROM Group_Kudos WHERE from_child = ?",
     ):
         try:
             cursor.execute(sql, (child_id,))
@@ -319,7 +321,9 @@ DEMO_TASK_QUESTIONS = [
                  "Omad hal qiladi"], "answer": "Mehnat va aql g‘alaba keltiradi"},
 ]
 # Namoyishda musobaqa yarim yo‘lda turadi: kimdir tugatgan, kimdir o‘qiyapti.
-DEMO_TASK_RACERS = [(-9001, 176, 1), (-9002, 138, 0), (-9003, 96, 0), (-9004, 54, 0)]
+# (raqami, o‘qigan beti, tugatganmi, testdagi to‘g‘ri javob, ovozli xulosa Biligi)
+DEMO_TASK_RACERS = [(-9001, 176, 1, 4, 3), (-9002, 138, 0, 3, 2),
+                    (-9003, 96, 0, 2, 0), (-9004, 54, 0, 0, 0)]
 
 
 def _fill_demo_task(gid, child_id, parent_id):
@@ -340,7 +344,7 @@ def _fill_demo_task(gid, child_id, parent_id):
     tid = cursor.lastrowid
     joined = (now - timedelta(days=4)).strftime("%Y-%m-%d %H:%M:%S")
 
-    def _put(uid, read, done):
+    def _put(uid, read, done, correct=0, voice=0):
         cursor.execute(
             "SELECT plan_id FROM Reading_Plans WHERE child_id = ? ORDER BY plan_id LIMIT 1", (uid,))
         r = cursor.fetchone()
@@ -355,13 +359,29 @@ def _fill_demo_task(gid, child_id, parent_id):
         cursor.execute(
             "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
             (bid, json.dumps(DEMO_TASK_QUESTIONS, ensure_ascii=False)))
+        # Musobaqa ballari shu yozuvlardan hisoblanadi: test javoblari,
+        # ovozli xulosa va AI ustoz savoli.
+        seconds = 0
+        if correct:
+            cursor.execute(
+                "INSERT INTO Diagnostic_Logs (child_id, book_id, type, factual_score, logic_score, "
+                "conclusion_score, created_at, correct_count, total_count) "
+                "VALUES (?, ?, 'test', 80, 80, 80, ?, ?, 5)",
+                (uid, bid, (now - timedelta(days=1)).strftime("%Y-%m-%d %H:%M:%S"), correct))
+            seconds = 240 + correct * 30
+        if voice:
+            cursor.execute(
+                "INSERT INTO Diagnostic_Logs (child_id, book_id, type, factual_score, logic_score, "
+                "conclusion_score, fluency_score, created_at, bonus_bilig) "
+                "VALUES (?, ?, 'voice', 90, 90, 90, 90, ?, ?)",
+                (uid, bid, (now - timedelta(days=1)).strftime("%Y-%m-%d %H:%M:%S"), voice))
         cursor.execute(
-            "INSERT OR REPLACE INTO Group_Task_Members (task_id, child_id, book_id, joined_at) "
-            "VALUES (?, ?, ?, ?)", (tid, uid, bid, joined))
+            "INSERT OR REPLACE INTO Group_Task_Members (task_id, child_id, book_id, joined_at, "
+            "test_seconds) VALUES (?, ?, ?, ?, ?)", (tid, uid, bid, joined, seconds))
 
-    _put(child_id, 112, 0)
-    for uid, read, done in DEMO_TASK_RACERS:
-        _put(uid, read, done)
+    _put(child_id, 112, 0, 3, 2)
+    for uid, read, done, correct, voice in DEMO_TASK_RACERS:
+        _put(uid, read, done, correct, voice)
     return tid
 
 
@@ -412,6 +432,16 @@ def _fill_demo_group(parent_id, child_id, child_display_name):
             "VALUES (?, ?, ?, ?)", (child_id, own_book, own_pages[i % len(own_pages)], stamp)
         )
     _fill_demo_task(gid, child_id, parent_id)
+    # Olqishlar — namoyishda bu ekran ham bo‘sh qolmasin
+    now_s = datetime.now()
+    for i, (uid, phrase) in enumerate([(-9001, "Barakalla!"), (-9002, "Zo‘r o‘qiding!"),
+                                       (-9003, "Davom et, oz qoldi!")]):
+        cursor.execute(
+            "INSERT INTO Group_Kudos (group_id, from_child, to_child, phrase, created_at) "
+            "VALUES (?, ?, ?, ?, ?)",
+            (gid, uid, child_id, phrase,
+             (now_s - timedelta(days=i + 1)).strftime("%Y-%m-%d %H:%M:%S"))
+        )
     conn.commit()
     return gid
 

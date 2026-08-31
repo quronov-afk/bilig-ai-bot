@@ -125,6 +125,12 @@ _COLUMN_MIGRATIONS = (
     # Guruhga a'zo soni chegarasi. 0 — cheklov yo‘q. Admin o‘zi belgilaydi:
     # bir sinf 30 kishi bo‘lsa, o‘ttizinchidan keyin yangi odam kirmaydi.
     "ALTER TABLE Groups ADD COLUMN max_members INTEGER DEFAULT 0",
+    # Musobaqa yakuni: g‘olib, tugash vaqti, sovg‘a topshirildimi;
+    # qatnashchining test vaqti — ball teng bo‘lganda aynan shu hal qiladi.
+    "ALTER TABLE Group_Tasks ADD COLUMN winner_id INTEGER",
+    "ALTER TABLE Group_Tasks ADD COLUMN finished_at TEXT",
+    "ALTER TABLE Group_Tasks ADD COLUMN prize_given INTEGER DEFAULT 0",
+    "ALTER TABLE Group_Task_Members ADD COLUMN test_seconds INTEGER DEFAULT 0",
 )
 
 
@@ -281,6 +287,25 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS Group_Task_Members (
     points    INTEGER DEFAULT 0
 )""")
 cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_task_member ON Group_Task_Members(task_id, child_id)")
+# Test qachon ochilgani. Musobaqada ball teng bo‘lsa vaqt hal qiladi,
+# shuning uchun savollar berilgan payt yozib qo‘yiladi. Bolaga ekranda
+# soat KO‘RSATILMAYDI — bu faqat shartlarda aytiladi.
+cursor.execute("""CREATE TABLE IF NOT EXISTS Test_Timer (
+    book_id    INTEGER,
+    child_id   INTEGER,
+    stage      TEXT,
+    started_at TEXT
+)""")
+cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_test_timer ON Test_Timer(book_id, child_id, stage)")
+# Olqish — chat o‘rniga. Faqat tayyor iboralar, erkin matn yozilmaydi.
+cursor.execute("""CREATE TABLE IF NOT EXISTS Group_Kudos (
+    kudos_id   INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id   INTEGER,
+    from_child INTEGER,
+    to_child   INTEGER,
+    phrase     TEXT,
+    created_at TEXT
+)""")
 cursor.execute("""CREATE TABLE IF NOT EXISTS Coin_Ledger (
     entry_id   INTEGER PRIMARY KEY AUTOINCREMENT,
     child_id   INTEGER,
@@ -4260,6 +4285,7 @@ def child_get_test(book_id):
     ]
     if not safe_questions:
         return jsonify({"error": "Bu bosqich uchun savollar topilmadi"}), 404
+    _test_timer_start(book_id, _resolve_active_child(request), stage)
     return jsonify(safe_questions)
 
 
@@ -4348,6 +4374,7 @@ def child_submit_test(book_id):
             (child_id, book_id, percent, percent, percent,
              datetime.now().strftime("%Y-%m-%d %H:%M:%S"), correct, total)
         )
+        _test_timer_stop(book_id, child_id, stage)
         conn.commit()
         new_badges, later_badges = badges_engine.check_badges(child_id, action="test")
 
@@ -5317,9 +5344,15 @@ def groups_member_card(gid, cid):
     week = _child_points(cid, since, days_total)
     total = _child_points(cid, None, 0)
     badges = [b for b in (u[2] or "").split(",") if b]
+    cursor.execute(
+        "SELECT gk.phrase, u2.name FROM Group_Kudos gk JOIN Users u2 ON gk.from_child = u2.user_id "
+        "WHERE gk.group_id = ? AND gk.to_child = ? ORDER BY gk.created_at DESC LIMIT 8", (gid, cid)
+    )
+    kudos = [{"phrase": r[0], "from": r[1]} for r in cursor.fetchall()]
     return jsonify({
         "id": cid, "name": u[0], "avatar_id": u[1] or "fox",
-        "badges": badges, "books": books,
+        "badges": badges, "books": books, "kudos": kudos,
+        "phrases": KUDOS_PHRASES, "is_me": cid == child_id,
         "week_points": week["points"], "total_pages": total["pages"],
         "total_books": total["books"], "days": week["days"],
     })
@@ -5336,7 +5369,8 @@ TASK_FINAL_MAX = 30
 def _task_row(tid):
     cursor.execute(
         "SELECT task_id, group_id, kind, title, author, total_pages, goal_kind, goal_value, "
-        "prize, deadline, final_count, questions_json, checked_by, status, created_by "
+        "prize, deadline, final_count, questions_json, checked_by, status, created_by, "
+        "COALESCE(winner_id, 0), COALESCE(prize_given, 0) "
         "FROM Group_Tasks WHERE task_id = ?", (tid,)
     )
     r = cursor.fetchone()
@@ -5344,7 +5378,7 @@ def _task_row(tid):
         return None
     keys = ["id", "group_id", "kind", "title", "author", "total_pages", "goal_kind",
             "goal_value", "prize", "deadline", "final_count", "questions", "checked_by",
-            "status", "created_by"]
+            "status", "created_by", "winner_id", "prize_given"]
     return dict(zip(keys, r))
 
 
@@ -5417,10 +5451,237 @@ def _task_brief(t, child_id):
     out = {"id": t["id"], "kind": t["kind"], "title": t["title"], "author": t["author"],
            "prize": t["prize"], "deadline": t["deadline"], "status": t["status"],
            "goal_kind": t["goal_kind"], "goal_value": t["goal_value"],
-           "checked_by": t["checked_by"], "joined": me["joined"], "members": joined}
+           "checked_by": t["checked_by"], "joined": me["joined"], "members": joined,
+           "winner_id": t.get("winner_id") or 0, "prize_given": bool(t.get("prize_given"))}
+    if out["winner_id"]:
+        cursor.execute("SELECT name FROM Users WHERE user_id = ?", (out["winner_id"],))
+        w = cursor.fetchone()
+        out["winner_name"] = w[0] if w else ""
     if me["joined"]:
         out["progress"] = _task_progress(t, child_id, me["book_id"])
     return out
+
+
+KUDOS_PHRASES = [
+    "Barakalla!",
+    "Zo‘r o‘qiding!",
+    "Sen bilan faxrlanaman",
+    "Davom et, oz qoldi!",
+    "Ajoyib natija",
+]
+
+# Musobaqa ballari — ega bilan kelishilgan uch qism.
+TASK_POINTS_TEST = 2       # har to‘g‘ri javob
+TASK_POINTS_VOICE = 5      # ovozli xulosaning har Biligi (5/10/15)
+TASK_POINTS_TALK = 10      # AI ustoz savoliga yaxshi javob
+
+
+def _test_timer_start(book_id, child_id, stage):
+    try:
+        with db_lock:
+            cursor.execute(
+                "INSERT OR REPLACE INTO Test_Timer (book_id, child_id, stage, started_at) "
+                "VALUES (?, ?, ?, ?)",
+                (book_id, child_id, stage, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+            )
+            conn.commit()
+    except Exception:
+        pass
+
+
+def _test_timer_stop(book_id, child_id, stage):
+    """Test qancha davom etganini musobaqa yozuviga qo‘shadi.
+
+    DIQQAT: bu qulf (`db_lock`) ICHIDA chaqiriladi — o‘zi qulf olmaydi.
+    """
+    try:
+        cursor.execute(
+            "SELECT started_at FROM Test_Timer WHERE book_id = ? AND child_id = ? AND stage = ?",
+            (book_id, child_id, stage)
+        )
+        r = cursor.fetchone()
+        if not r:
+            return
+        started = datetime.strptime(r[0], "%Y-%m-%d %H:%M:%S")
+        secs = max(1, int((datetime.now() - started).total_seconds()))
+        secs = min(secs, 3600)          # oyna ochiq qolib ketgan bo‘lsa
+        cursor.execute(
+            "UPDATE Group_Task_Members SET test_seconds = COALESCE(test_seconds, 0) + ? "
+            "WHERE child_id = ? AND book_id = ?", (secs, child_id, book_id)
+        )
+        cursor.execute(
+            "DELETE FROM Test_Timer WHERE book_id = ? AND child_id = ? AND stage = ?",
+            (book_id, child_id, stage)
+        )
+    except Exception:
+        pass
+
+
+def _task_points(t, child_id, book_id, since):
+    """Musobaqa ballari: test javoblari, ovozli xulosa va AI ustoz savoli."""
+    where = " AND created_at >= ?"
+    if t["kind"] == "book" and book_id:
+        base = " AND book_id = ?"
+        args = (child_id, book_id, since or "")
+    else:
+        base = ""
+        args = (child_id, since or "")
+    cursor.execute(
+        "SELECT COALESCE(SUM(correct_count), 0) FROM Diagnostic_Logs WHERE child_id = ? "
+        "AND type = 'test'" + base + where, args
+    )
+    correct = cursor.fetchone()[0]
+    cursor.execute(
+        "SELECT COALESCE(SUM(bonus_bilig), 0) FROM Diagnostic_Logs WHERE child_id = ? "
+        "AND type = 'voice'" + base + where, args
+    )
+    voice = cursor.fetchone()[0]
+    cursor.execute(
+        "SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id = ? "
+        "AND type = 'talk' AND COALESCE(bonus_bilig, 0) > 0" + base + where, args
+    )
+    talks = cursor.fetchone()[0]
+    return (correct * TASK_POINTS_TEST + voice * TASK_POINTS_VOICE + talks * TASK_POINTS_TALK)
+
+
+def _task_standings(t):
+    """Qatnashchilar ballari bo‘yicha saralanadi; teng bo‘lsa test vaqti hal qiladi."""
+    cursor.execute(
+        "SELECT gtm.child_id, gtm.book_id, gtm.joined_at, COALESCE(gtm.test_seconds, 0), "
+        "u.name, u.avatar_id FROM Group_Task_Members gtm JOIN Users u ON gtm.child_id = u.user_id "
+        "WHERE gtm.task_id = ?", (t["id"],)
+    )
+    rows = cursor.fetchall()
+    out = []
+    for r in rows:
+        p = _task_progress(t, r[0], r[1])
+        pts = _task_points(t, r[0], r[1], r[2])
+        out.append({"id": r[0], "name": r[4], "avatar_id": r[5] or "fox",
+                    "points": pts, "secs": r[3], "done": p["done"],
+                    "pct": p["pct"], "label": p["label"]})
+    out.sort(key=lambda x: (0 if x["done"] else 1, -x["points"], x["secs"] or 999999))
+    return out
+
+
+def finalize_due_tasks():
+    """Muddati tugagan musobaqalarni yopadi va g‘olibni e'lon qiladi.
+
+    G‘olib admin tasdig‘isiz, o‘z-o‘zidan aniqlanadi (ega qarori):
+    maqsadni bajarganlar orasidan ball bo‘yicha eng yuqorisi, ball teng
+    bo‘lsa — test vaqti kamrog‘i.
+    """
+    today = datetime.now().strftime("%Y-%m-%d")
+    try:
+        cursor.execute(
+            "SELECT task_id FROM Group_Tasks WHERE status = 'open' AND deadline IS NOT NULL "
+            "AND deadline != '' AND deadline < ?", (today,)
+        )
+        ids = [r[0] for r in cursor.fetchall()]
+    except Exception:
+        return 0
+    done = 0
+    for tid in ids:
+        t = _task_row(tid)
+        if not t:
+            continue
+        table = _task_standings(t)
+        winner = table[0] if table else None
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        with db_lock:
+            for row in table:
+                cursor.execute("UPDATE Group_Task_Members SET points = ? WHERE task_id = ? AND child_id = ?",
+                               (row["points"], tid, row["id"]))
+            cursor.execute(
+                "UPDATE Group_Tasks SET status = 'done', winner_id = ?, finished_at = ? WHERE task_id = ?",
+                (winner["id"] if winner else None, now, tid)
+            )
+            conn.commit()
+        for row in table:
+            pid = get_parent_id(row["id"])
+            if not pid:
+                continue
+            if winner and row["id"] == winner["id"]:
+                _feed(pid, row["id"], "task_win", "Musobaqada g‘olib!",
+                      "%s «%s» musobaqasida birinchi o‘rinni egalladi. Sovg‘a: %s"
+                      % (row["name"], t["title"], t["prize"] or "e'lon qilingan sovg‘a"), tid)
+            else:
+                _feed(pid, row["id"], "task_end", "Musobaqa yakunlandi",
+                      "«%s» musobaqasi tugadi. G‘olib: %s"
+                      % (t["title"], winner["name"] if winner else "aniqlanmadi"), tid)
+        done += 1
+    return done
+
+
+@app.route("/api/groups/<int:gid>/tasks/<int:tid>/prize", methods=["POST"])
+@require_auth
+def tasks_prize_given(gid, tid):
+    """Admin sovg‘ani topshirganini belgilaydi."""
+    child_id, is_admin, t = _task_guard(gid, tid, need_admin=True)
+    if isinstance(t, tuple):
+        return t
+    with db_lock:
+        cursor.execute("UPDATE Group_Tasks SET prize_given = 1 WHERE task_id = ?", (tid,))
+        conn.commit()
+    return jsonify({"ok": True})
+
+
+@app.route("/api/groups/<int:gid>/kudos", methods=["POST"])
+@require_auth
+def group_kudos(gid):
+    """Olqish — chat o‘rniga tayyor ibora. Erkin matn qabul qilinmaydi."""
+    child_id, is_admin, err = _task_guard(gid, None)
+    if err:
+        return err
+    d = request.get_json(force=True) or {}
+    phrase = (d.get("phrase") or "").strip()
+    if phrase not in KUDOS_PHRASES:
+        return jsonify({"error": "Bunday ibora yo‘q"}), 400
+    try:
+        to = int(d.get("to"))
+    except (TypeError, ValueError):
+        return jsonify({"error": "Kimga yuborilishi ko‘rsatilmagan"}), 400
+    if to == child_id:
+        return jsonify({"error": "O‘zingizga olqish yuborib bo‘lmaydi"}), 400
+    cursor.execute("SELECT 1 FROM Group_Members WHERE group_id = ? AND child_id = ?", (gid, to))
+    if not cursor.fetchone():
+        return jsonify({"error": "Bu bola guruhda yo‘q"}), 404
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    # Bir kunda bir bolaga bir marta — olqish qadrini yo‘qotmasin
+    cursor.execute(
+        "SELECT 1 FROM Group_Kudos WHERE from_child = ? AND to_child = ? AND created_at >= ?",
+        (child_id, to, now[:10] + " 00:00:00")
+    )
+    if cursor.fetchone():
+        return jsonify({"error": "Bugun bu do‘stingizga olqish yubordingiz"}), 400
+    with db_lock:
+        cursor.execute(
+            "INSERT INTO Group_Kudos (group_id, from_child, to_child, phrase, created_at) "
+            "VALUES (?, ?, ?, ?, ?)", (gid, child_id, to, phrase, now)
+        )
+        conn.commit()
+    pid = get_parent_id(to)
+    if pid:
+        _feed(pid, to, "kudos", "Guruhdan olqish",
+              "%s: «%s»" % (child_name_of(child_id), phrase), gid, to_child=True)
+    return jsonify({"ok": True})
+
+
+@app.route("/api/groups/<int:gid>/kudos", methods=["GET"])
+@require_auth
+def group_kudos_list(gid):
+    """Iboralar ro‘yxati va bolaga kelgan so‘nggi olqishlar."""
+    child_id, is_admin, err = _task_guard(gid, None)
+    if err:
+        return err
+    who = request.args.get("child", type=int) or child_id
+    cursor.execute(
+        "SELECT gk.phrase, u.name, gk.created_at FROM Group_Kudos gk "
+        "JOIN Users u ON gk.from_child = u.user_id "
+        "WHERE gk.group_id = ? AND gk.to_child = ? ORDER BY gk.created_at DESC LIMIT 10",
+        (gid, who)
+    )
+    got = [{"phrase": r[0], "from": r[1], "at": r[2]} for r in cursor.fetchall()]
+    return jsonify({"phrases": KUDOS_PHRASES, "list": got})
 
 
 @app.route("/api/groups/<int:gid>/tasks", methods=["GET"])
@@ -5429,6 +5690,7 @@ def tasks_list(gid):
     child_id, is_admin, err = _task_guard(gid, None)
     if err:
         return err
+    finalize_due_tasks()
     cursor.execute(
         "SELECT task_id FROM Group_Tasks WHERE group_id = ? AND status != 'deleted' "
         "ORDER BY status = 'draft' DESC, created_at DESC", (gid,)
@@ -5513,6 +5775,7 @@ def tasks_detail(gid, tid):
     if isinstance(t, tuple):
         return t
     out = _task_brief(t, child_id)
+    out["is_admin"] = is_admin
     out["total_pages"] = t["total_pages"]
     out["final_count"] = t["final_count"]
     cursor.execute("SELECT title, author FROM Group_Task_Books WHERE task_id = ?", (tid,))
@@ -5535,6 +5798,9 @@ def tasks_detail(gid, tid):
                        "is_me": r[0] == child_id})
     racers.sort(key=lambda x: -x["pct"])
     out["racers"] = racers
+    if t["status"] == "done":
+        # Musobaqa tugagach ball va o‘rin ochiladi — undan oldin emas.
+        out["standings"] = _task_standings(t)
     return jsonify(out)
 
 
@@ -5785,6 +6051,10 @@ def _summary_loop():
             pass
         try:
             check_streak_at_risk()
+        except Exception:
+            pass
+        try:
+            finalize_due_tasks()
         except Exception:
             pass
         time.sleep(1800)          # yarim soatda bir marta tekshiradi

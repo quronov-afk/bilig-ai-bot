@@ -2131,3 +2131,16 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
 }
 .day-chip.is-on { background: var(--brand-bg); border-color: #A9C8FB; color: var(--brand-deep); }
 textarea.g-input { resize: vertical; line-height: 1.45; }
+
+/* Musobaqa yakuni va olqish */
+.win-card {
+  background: linear-gradient(160deg, #FEF3C7, #FDE68A); border: 1px solid #F6D77E;
+  border-radius: var(--radius-lg); padding: 20px 16px; text-align: center; margin-bottom: 14px;
+}
+.win-ic {
+  width: 56px; height: 56px; border-radius: 50%; background: rgba(255,255,255,.7); color: var(--gold-deep);
+  display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;
+}
+.win-t { margin: 0; font-size: 21px; font-weight: 800; letter-spacing: -0.01em; color: var(--gold-deep); }
+.win-s { margin: 4px 0 0; font-size: 14.5px; font-weight: 700; color: #A16207; }
+.kudos-row b { font-size: 15.5px; }
