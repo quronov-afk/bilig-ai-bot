@@ -4187,7 +4187,8 @@ async function renderGroupDetail(content, gid) {
     '</div>' +
     '<div class="g-head"><span class="g-mark lg">' + icon("users", 26, 1.9) + '</span>' +
     '<div style="min-width:0"><p class="g-title">' + escapeHtml(d.name) + '</p>' +
-    '<p class="g-meta">' + d.members.length + " a'zo · Admin: " + escapeHtml(d.admin_name) + '</p></div></div>';
+    '<p class="g-meta">' + d.members.length + (d.max_members ? " / " + d.max_members : "") +
+    " a'zo · Admin: " + escapeHtml(d.admin_name) + '</p></div></div>';
 
   const reqs = d.requests || [];
   if (reqs.length) {
@@ -4270,7 +4271,11 @@ async function openGroupSettings() {
   openModal("Guruh sozlamasi",
     '<p class="eyebrow">Guruh nomi</p>' +
     '<input id="g-name" class="g-input wide" maxlength="48" value="' + escapeHtml(d.name) + '">' +
-    '<label class="g-switch" style="margin-top:14px"><input type="checkbox" id="g-searchable"' +
+    '<p class="eyebrow" style="margin-top:16px">A\'zo soni chegarasi</p>' +
+    '<input id="g-max" class="g-input wide" inputmode="numeric" placeholder="Cheklovsiz" value="' +
+    (d.max_members ? d.max_members : "") + '">' +
+    '<p class="section-sub" style="margin:8px 0 14px">Bo‘sh qoldirilsa cheklov bo‘lmaydi. Belgilansa, o‘sha songa yetgach yangi a\'zo qo‘shilmaydi.</p>' +
+    '<label class="g-switch"><input type="checkbox" id="g-searchable"' +
     (d.searchable ? " checked" : "") + '>' +
     '<span><b>Qidiruvda ko‘rinsin</b><i>Boshqalar topib so‘rov yubora oladi</i></span></label>' +
     '<button class="btn btn-primary btn-block" data-action="group-settings-save">Saqlash</button>');
@@ -4279,8 +4284,9 @@ async function openGroupSettings() {
 async function submitGroupSettings() {
   const name = (document.getElementById("g-name").value || "").trim();
   const searchable = document.getElementById("g-searchable").checked;
+  const maxRaw = (document.getElementById("g-max").value || "").replace(/\D/g, "");
   await api(groupUrl("/api/groups/" + State.groupId + "/update"),
-    { method: "POST", body: { name: name, searchable: searchable } });
+    { method: "POST", body: { name: name, searchable: searchable, max_members: Number(maxRaw || 0) } });
   closeModal();
   toast("Saqlandi");
   await renderRatingTab();

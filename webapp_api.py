@@ -122,6 +122,9 @@ _COLUMN_MIGRATIONS = (
     # «eng ko‘p bet o‘qilgani» bo‘yicha edi — bola boshqa kitobga
     # o‘tsa ham eskisi yuqorida qolaverardi.
     "ALTER TABLE Plan_Books ADD COLUMN last_read_at TEXT",
+    # Guruhga a'zo soni chegarasi. 0 — cheklov yo‘q. Admin o‘zi belgilaydi:
+    # bir sinf 30 kishi bo‘lsa, o‘ttizinchidan keyin yangi odam kirmaydi.
+    "ALTER TABLE Groups ADD COLUMN max_members INTEGER DEFAULT 0",
 )
 
 
@@ -213,6 +216,7 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS Groups (
     admin_user_id INTEGER,
     invite_code   TEXT,
     searchable    INTEGER DEFAULT 1,
+    max_members   INTEGER DEFAULT 0,
     created_at    TEXT
 )""")
 cursor.execute("""CREATE TABLE IF NOT EXISTS Group_Members (
@@ -4724,10 +4728,19 @@ def _group_new_code():
 
 def _group_row(gid):
     cursor.execute(
-        "SELECT group_id, name, admin_user_id, invite_code, searchable FROM Groups WHERE group_id = ?",
-        (gid,)
+        "SELECT group_id, name, admin_user_id, invite_code, searchable, "
+        "COALESCE(max_members, 0) FROM Groups WHERE group_id = ?", (gid,)
     )
     return cursor.fetchone()
+
+
+def _group_full(row):
+    """Chegara belgilangan bo‘lsa va joy qolmagan bo‘lsa — True."""
+    limit = row[5] if len(row) > 5 else 0
+    if not limit:
+        return False
+    cursor.execute("SELECT COUNT(*) FROM Group_Members WHERE group_id = ?", (row[0],))
+    return cursor.fetchone()[0] >= limit
 
 
 def _group_is_admin(row, child_id):
@@ -4859,8 +4872,8 @@ def groups_detail(gid):
 
     members = _group_members(gid)
     out = {"id": row[0], "name": row[1], "searchable": bool(row[4]),
-           "admin_name": _group_admin_name(row), "is_admin": is_admin,
-           "me": child_id, "members": members}
+           "max_members": row[5], "admin_name": _group_admin_name(row),
+           "is_admin": is_admin, "me": child_id, "members": members}
     if is_admin:
         out["invite_code"] = row[3]
         cursor.execute(
@@ -4894,6 +4907,17 @@ def groups_update(gid):
         if "searchable" in data:
             cursor.execute("UPDATE Groups SET searchable = ? WHERE group_id = ?",
                            (1 if data.get("searchable") else 0, gid))
+        if "max_members" in data:
+            try:
+                limit = int(data.get("max_members") or 0)
+            except (TypeError, ValueError):
+                limit = 0
+            limit = max(0, min(limit, 1000))
+            cursor.execute("SELECT COUNT(*) FROM Group_Members WHERE group_id = ?", (gid,))
+            now_count = cursor.fetchone()[0]
+            if limit and limit < now_count:
+                return jsonify({"error": "Hozir %d a'zo bor — chegara undan kam bo‘lmasin" % now_count}), 400
+            cursor.execute("UPDATE Groups SET max_members = ? WHERE group_id = ?", (limit, gid))
         conn.commit()
     return jsonify({"ok": True})
 
@@ -4913,13 +4937,15 @@ def groups_join():
         return jsonify({"error": "Avval farzandni tanlang"}), 400
 
     cursor.execute("SELECT group_id, name FROM Groups WHERE invite_code = ?", (code,))
-    row = cursor.fetchone()
-    if not row:
+    row0 = cursor.fetchone()
+    if not row0:
         return jsonify({"error": "Bunday kod topilmadi"}), 404
-    gid, name = row[0], row[1]
+    gid, name = row0[0], row0[1]
     cursor.execute("SELECT 1 FROM Group_Members WHERE group_id = ? AND child_id = ?", (gid, child_id))
     if cursor.fetchone():
         return jsonify({"ok": True, "id": gid, "name": name, "already": True})
+    if _group_full(_group_row(gid)):
+        return jsonify({"error": "Guruh to‘lgan — admin belgilagan chegaraga yetdi"}), 400
     with db_lock:
         cursor.execute(
             "INSERT INTO Group_Members (group_id, child_id, is_admin, joined_at) VALUES (?, ?, 0, ?)",
@@ -5001,6 +5027,8 @@ def groups_request_decide(gid, rid):
         return jsonify({"error": "So‘rov topilmadi"}), 404
     who = r[0]
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    if action == "approve" and _group_full(row):
+        return jsonify({"error": "Guruh to‘lgan — avval chegarani kattalashtiring"}), 400
     with db_lock:
         if action == "approve":
             cursor.execute(
