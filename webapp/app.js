@@ -4044,9 +4044,12 @@ function childSwitcherHtml() {
 async function renderRatingTab() {
   const main = document.getElementById("app-main");
   const mode = State.ratingMode || "passport";
+  // Guruh ichiga kirilganda tepadagi ikki qator (farzand tanlash va
+  // bo‘lim chiplari) yashiriladi — ekranda tugma haddan ziyod ko‘payib
+  // ketardi. Chiqilganda ular o‘z-o‘zidan qaytadi.
+  const inGroup = mode === "groups" && !!State.groupId;
   main.innerHTML =
-    childSwitcherHtml() +
-    ratingChipsHtml(mode) +
+    (inGroup ? "" : childSwitcherHtml() + ratingChipsHtml(mode)) +
     '<div id="rating-content">' + skeleton("rows") + '</div>';
   renderHeaderNav();
   const content = document.getElementById("rating-content");
