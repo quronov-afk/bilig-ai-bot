@@ -1956,3 +1956,59 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
 .feed-card .t .fc-who img {
   width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0; display: block;
 }
+
+
+/* ==========================================================
+   GURUHLAR — kubok ichidagi uchinchi ko‘rinish
+   ----------------------------------------------------------
+   Kartochka, ro‘yxat qatori va chiplar mavjud uslublardan
+   olinadi; bu yerda faqat guruhga xos qismlar.
+   ========================================================== */
+.g-search { display: flex; gap: 8px; margin-bottom: 12px; }
+.g-input {
+  flex: 1; min-width: 0; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 12px 14px; font-size: 16px; font-family: inherit; font-weight: 600;
+  background: var(--surface); color: var(--text);
+}
+.g-input:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-bg); }
+.g-input.wide { width: 100%; }
+.g-input.center { text-align: center; letter-spacing: .12em; font-weight: 800; }
+.g-find { width: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; padding: 0; }
+.g-mark {
+  width: 38px; height: 38px; border-radius: 12px; background: var(--brand-bg); color: var(--brand);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.g-mark.sm { width: 32px; height: 32px; border-radius: 10px; }
+.g-mark.lg { width: 52px; height: 52px; border-radius: 16px; }
+.g-av { width: 36px; height: 36px; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; }
+.g-av svg { border-radius: 50%; }
+.g-row { cursor: pointer; }
+.g-name { margin: 0; font-weight: 700; font-size: 15.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.g-meta { margin: 0; font-size: 13.5px; color: var(--text-faint); }
+.g-end { color: var(--text-faint); font-size: 13.5px; font-weight: 700; display: flex; align-items: center; }
+.g-head { display: flex; align-items: center; gap: 12px; margin: 4px 0 14px; }
+.g-title { margin: 0; font-size: 19px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.25; }
+.g-code { display: flex; align-items: center; justify-content: space-between; gap: 10px; cursor: pointer; }
+.g-code-val { font-size: 19px; font-weight: 800; letter-spacing: .1em; }
+.g-req { background: var(--gold-bg); border-color: #F6D77E; }
+.g-req .list-row { border-bottom-color: rgba(146, 64, 14, .16); }
+.g-req-t {
+  margin: 0 0 4px; font-size: 13px; font-weight: 800; color: var(--gold-deep);
+  text-transform: uppercase; letter-spacing: .05em;
+}
+.g-req-btns { display: flex; gap: 6px; flex-shrink: 0; }
+.icon-btn.ok { background: var(--success-bg); color: var(--success-deep); }
+.pill-soft { background: var(--surface-soft); color: var(--text-soft); }
+.g-mini { width: auto; padding: 8px 14px; font-size: 14px; }
+.g-switch { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; margin-bottom: 6px; }
+.g-switch input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--brand); flex-shrink: 0; }
+.g-switch b { display: block; font-size: 15.5px; }
+.g-switch i { display: block; font-style: normal; font-size: 13.5px; color: var(--text-faint); }
+.g-member-act {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 14px 2px; border-bottom: 1px solid var(--border); cursor: pointer; color: var(--text);
+}
+.g-member-act:last-of-type { border-bottom: none; }
+.g-member-act b { font-size: 15.5px; }
+.g-member-act i { display: block; font-style: normal; font-size: 13px; color: var(--text-faint); }
+.g-member-act.danger { color: var(--danger-deep); }

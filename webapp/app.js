@@ -85,6 +85,9 @@ const State = {
   walletShowSom: false,
   feed: [],                // ota-onaning o‘qilmagan xabarlari
   subPage: null,           // tab ichidagi ichki sahifa (masalan farzand kartasi)
+  groupId: null,           // ochilgan guruh (Guruhlar ko‘rinishi ichida)
+  groupFound: null,        // qidiruv natijasi; null bo‘lsa qidiruv qilinmagan
+  groupQuery: "",
 };
 
 // ---------------- IKONALAR (Feather uslubi, emoji YO‘Q) ----------------
@@ -186,6 +189,8 @@ const ICON_PATHS = {
   shield: [
     '<path d="M12 2.7 19.5 5.5v6.1c0 4.5-3.05 8.05-7.5 9.55-4.45-1.5-7.5-5.05-7.5-9.55V5.5z"/>',
     '<path d="M12 2.7 19.5 5.5v6.1c0 4.5-3.05 8.05-7.5 9.55-4.45-1.5-7.5-5.05-7.5-9.55V5.5z"/><path d="M9.1 11.8l2.15 2.15 3.95-4.1"/>'],
+  // Uch nuqta — a'zo ustidagi amallar oynasini ochadi
+  more: '<circle cx="12" cy="5.5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="18.5" r="1.6"/>',
   star: [
     '<path d="M12 2.9c.35 0 .67.2.83.52l2.42 4.9 5.41.79c.75.11 1.05 1.03.5 1.56l-3.91 3.81.92 5.39c.13.75-.65 1.32-1.32.96L12 18.29l-4.85 2.55c-.67.36-1.45-.21-1.32-.96l.92-5.39-3.91-3.81c-.55-.53-.25-1.45.5-1.56l5.41-.79 2.42-4.9c.16-.32.48-.52.83-.52z"/>',
     '<path d="M12 2.9c.35 0 .67.2.83.52l2.42 4.9 5.41.79c.75.11 1.05 1.03.5 1.56l-3.91 3.81.92 5.39c.13.75-.65 1.32-1.32.96L12 18.29l-4.85 2.55c-.67.36-1.45-.21-1.32-.96l.92-5.39-3.91-3.81c-.55-.53-.25-1.45.5-1.56l5.41-.79 2.42-4.9c.16-.32.48-.52.83-.52z"/>'],
@@ -902,6 +907,13 @@ async function goBack() {
     syncBackButton();
     return;
   }
+  if (State.subPage === "group") {
+    State.groupId = null;
+    State.subPage = null;
+    await renderRatingTab();
+    syncBackButton();
+    return;
+  }
   if (State.subPage) {
     State.subPage = null;
     document.getElementById("app-main").innerHTML = skeleton("home");
@@ -1083,11 +1095,14 @@ const TABS_PARENT = [
   { id: "store", label: "Do‘kon", icon: "cart" },
   { id: "bolaxona", label: "Bolaxona", icon: "users" },
 ];
+// Bolada to‘rtinchi tab yo‘q: natija, nishonlar, guruhlar va reyting
+// sarlavhadagi kubok belgisi ichiga yig‘ildi. Sabab — uyda bitta telefon
+// bo‘lishi mumkin, ya'ni ota-ona ham shu bo‘limga kira olishi kerak,
+// uning pastki qatorida esa «Bolaxona» turadi.
 const TABS_CHILD = [
   { id: "home", label: "Bosh sahifa", icon: "home" },
   { id: "plans", label: "Kitobxona", icon: "book-open" },
   { id: "store", label: "Do‘kon", icon: "cart" },
-  { id: "rating", label: "Reyting", icon: "award" },
 ];
 const TABS_PARENT_ACTING = [
   { id: "home", label: "Bosh sahifa", icon: "home" },
@@ -1123,23 +1138,32 @@ async function setupTabsForRole() {
   await refreshHeader();
 }
 
-// Sarlavhadagi uchta tugma: reyting, shaxsiy natija va nishonlar.
-// Har biri bir bosishda kerakli bo‘limni ochadi.
-const HEADER_NAV = [
-  { mode: "global", icon: "trophy", label: "Reyting" },
-  { mode: "passport", icon: "chart", label: "Natija" },
+// Sarlavhada bitta belgi — kubok. Ichida to‘rtta ko‘rinish bor:
+// natija, nishonlar, guruhlar va reyting. Ilgari bu yerda uchta alohida
+// tugma turardi va uzun ism ularga sig‘masdi.
+const RATING_VIEWS = [
+  { mode: "passport", icon: "chart", label: "Natijam" },
   { mode: "badges", icon: "award", label: "Nishonlar" },
+  { mode: "groups", icon: "users", label: "Guruhlar" },
+  { mode: "global", icon: "trophy", label: "Reyting" },
 ];
 
 function renderHeaderNav() {
   const box = document.getElementById("header-nav");
   if (!box) return;
-  // Bola rejimida ham, ota-ona kabinetida ham kerak
-  box.innerHTML = HEADER_NAV.map(function (n) {
-    const on = State.currentTab === "rating" && State.ratingMode === n.mode;
-    return '<button class="icon-btn' + (on ? " is-on" : "") + '" data-action="open-rating" data-mode="' + n.mode + '" aria-label="' + n.label + '" title="' + n.label + '">' +
-      icon(n.icon, 18, 1.8) + '</button>';
-  }).join("");
+  // Bola rejimida ham, ota-ona kabinetida ham bir joyda turadi
+  const on = State.currentTab === "rating";
+  box.innerHTML = '<button class="icon-btn' + (on ? " is-on" : "") +
+    '" data-action="open-rating" aria-label="Natijalar" title="Natijalar">' +
+    icon("trophy", 18, 1.8) + '</button>';
+}
+
+function ratingChipsHtml(mode) {
+  return '<div class="chip-row">' + RATING_VIEWS.map(function (v) {
+    return '<button class="chip' + (v.mode === mode ? " active" : "") +
+      '" data-action="open-rating" data-mode="' + v.mode + '">' +
+      icon(v.icon, 16, 2) + escapeHtml(v.label) + '</button>';
+  }).join("") + '</div>';
 }
 
 function openRatingFromHeader() {
@@ -1412,7 +1436,9 @@ document.addEventListener("click", async function (e) {
         break;
       case "open-rating":
         State.calShift = 0;
-        State.ratingMode = el.dataset.mode;
+        if (el.dataset.mode) State.ratingMode = el.dataset.mode;
+        State.groupId = null;
+        State.groupFound = null;
         openRatingFromHeader();
         break;
       case "switch-child":
@@ -1420,6 +1446,59 @@ document.addEventListener("click", async function (e) {
         await refreshHeader();
         if (State.currentTab === "rating") { renderRatingTab(); }
         else { switchTab(State.currentTab || "home"); }
+        break;
+      case "group-open":
+        State.groupId = Number(el.dataset.id);
+        State.subPage = "group";
+        await renderRatingTab();
+        break;
+      case "group-back":
+        State.groupId = null;
+        State.subPage = null;
+        await renderRatingTab();
+        break;
+      case "group-search": await groupSearchRun(); break;
+      case "group-create": openGroupCreateModal(); break;
+      case "group-create-save": await submitGroupCreate(); break;
+      case "group-join": openGroupJoinModal(); break;
+      case "group-join-save": await submitGroupJoin(); break;
+      case "group-settings": await openGroupSettings(); break;
+      case "group-settings-save": await submitGroupSettings(); break;
+      case "group-request":
+        await api(groupUrl("/api/groups/" + el.dataset.id + "/request"), { method: "POST", body: {} });
+        toast("So‘rov yuborildi — admin tasdiqlaydi");
+        await groupSearchRun();
+        break;
+      case "group-decide":
+        await api(groupUrl("/api/groups/" + State.groupId + "/requests/" + el.dataset.id),
+          { method: "POST", body: { action: el.dataset.act } });
+        toast(el.dataset.act === "approve" ? "Qabul qilindi" : "Rad etildi");
+        await renderRatingTab();
+        break;
+      case "group-member":
+        openGroupMemberModal(Number(el.dataset.id), el.dataset.name, el.dataset.admin === "1");
+        break;
+      case "group-set-admin":
+        await api(groupUrl("/api/groups/" + State.groupId + "/member/" + el.dataset.id),
+          { method: "POST", body: { is_admin: el.dataset.val === "1" } });
+        closeModal();
+        toast("Bajarildi");
+        await renderRatingTab();
+        break;
+      case "group-remove":
+        await api(groupUrl("/api/groups/" + State.groupId + "/leave"),
+          { method: "POST", body: { child_id: Number(el.dataset.id) } });
+        closeModal();
+        toast("Guruhdan chiqarildi");
+        await renderRatingTab();
+        break;
+      case "group-leave":
+        if (!confirm("Guruhdan chiqasizmi? O‘qigan kitoblaringiz o‘zingizda qoladi.")) break;
+        await api(groupUrl("/api/groups/" + State.groupId + "/leave"), { method: "POST", body: {} });
+        State.groupId = null;
+        State.subPage = null;
+        toast("Guruhdan chiqdingiz");
+        await renderRatingTab();
         break;
       case "demo-fill": await demoFill(Number(el.dataset.id), el.dataset.name); break;
       case "demo-clear": await demoClear(Number(el.dataset.id), el.dataset.name); break;
@@ -3939,11 +4018,10 @@ function childSwitcherHtml() {
 
 async function renderRatingTab() {
   const main = document.getElementById("app-main");
-  const titles = { global: "Global reyting", passport: "Shaxsiy natija", badges: "Nishonlar" };
   const mode = State.ratingMode || "global";
   main.innerHTML =
     childSwitcherHtml() +
-    '<p class="sec-label">' + titles[mode] + '</p>' +
+    ratingChipsHtml(mode) +
     '<div id="rating-content">' + skeleton("rows") + '</div>';
   renderHeaderNav();
   const content = document.getElementById("rating-content");
@@ -3963,6 +4041,11 @@ async function renderRatingTab() {
           mascot: "sherbola-galaba",
           action: "open-tab", label: "Kitoblarga o‘tish", data: { tab: "plans" }
         })) + '</div>';
+    return;
+  }
+
+  if (mode === "groups") {
+    await renderGroupsView(content);
     return;
   }
 
@@ -4007,6 +4090,222 @@ async function renderRatingTab() {
     out += strengthHtml(p.strength, p.next_rank);
   }
   content.innerHTML = out;
+}
+
+// ==========================================================
+// GURUHLAR — kubok ichidagi uchinchi ko‘rinish
+// ----------------------------------------------------------
+// Ikki xil kirish yo‘li ataylab farq qiladi:
+//   • taklif kodi bilan — darrov a'zo bo‘ladi;
+//   • qidiruv orqali topilsa — admin tasdig‘i kutiladi.
+// Guruhni ota-ona ochadi; xohlasa a'zo bolaga admin huquqini beradi.
+// ==========================================================
+
+function groupUrl(path) {
+  const q = asChildQuery();
+  if (!q) return path;
+  return path + (path.indexOf("?") >= 0 ? "&" + q.slice(1) : q);
+}
+
+async function renderGroupsView(content) {
+  if (State.groupId) { await renderGroupDetail(content, State.groupId); return; }
+
+  const data = await api(groupUrl("/api/groups"));
+  let out =
+    '<div class="g-search">' +
+    '<input id="group-q" class="g-input" placeholder="Guruh nomini qidiring" value="' +
+    escapeHtml(State.groupQuery || "") + '">' +
+    '<button class="btn btn-secondary g-find" data-action="group-search">' + icon("search", 18, 2) + '</button>' +
+    '</div>';
+
+  if (State.groupFound) {
+    out += '<p class="section-sub">' + (State.groupFound.length
+      ? State.groupFound.length + ' ta guruh topildi'
+      : 'Bunday nomli guruh topilmadi') + '</p>';
+    if (State.groupFound.length) {
+      out += '<div class="card">' + State.groupFound.map(function (gr) {
+        let end;
+        if (gr.is_member) end = '<span class="pill pill-leaf">A\'zo</span>';
+        else if (gr.pending) end = '<span class="pill pill-soft">Kutilmoqda</span>';
+        else end = '<button class="btn btn-outline g-mini" data-action="group-request" data-id="' + gr.id + '">So‘rov</button>';
+        return groupRowHtml(gr, end, gr.is_member ? gr.id : 0);
+      }).join("") + '</div>';
+    }
+  }
+
+  const mine = data.groups || [];
+  if (mine.length) {
+    out += '<p class="eyebrow">Mening guruhlarim</p><div class="card">' +
+      mine.map(function (gr) {
+        const badge = (gr.is_admin && gr.pending)
+          ? '<span class="pill pill-gold">' + gr.pending + ' so‘rov</span>'
+          : '<span class="g-end">' + icon("chevron-right", 16, 2.2) + '</span>';
+        return groupRowHtml(gr, badge, gr.id);
+      }).join("") + '</div>';
+  }
+
+  (data.waiting || []).forEach(function (w, i) {
+    if (i === 0) out += '<p class="eyebrow">Javob kutilmoqda</p><div class="card" id="g-wait">';
+    out += '<div class="list-row"><div style="display:flex;align-items:center;gap:10px;min-width:0">' +
+      '<span class="g-mark sm">' + icon("users", 18, 2) + '</span>' +
+      '<b style="font-size:15.5px">' + escapeHtml(w.name) + '</b></div>' +
+      '<span class="pill pill-soft">Kutilmoqda</span></div>';
+  });
+  if ((data.waiting || []).length) out += '</div>';
+
+  if (!mine.length && !State.groupFound) {
+    out += '<div class="card">' + emptyState("users", "Hali guruhingiz yo‘q",
+      "Guruh oching va taklif kodini do‘stlaringizga yuboring. Yoki yuqoridan qidirib so‘rov jo‘nating.") + '</div>';
+  }
+
+  out += '<div class="action-row">';
+  if (data.can_create) {
+    out += '<button class="btn btn-primary" data-action="group-create">Guruh ochish</button>';
+  }
+  out += '<button class="btn btn-secondary" data-action="group-join">Kod bilan qo‘shilish</button></div>';
+  content.innerHTML = out;
+}
+
+function groupRowHtml(gr, endHtml, openId) {
+  const act = openId ? ' data-action="group-open" data-id="' + openId + '"' : '';
+  return '<div class="list-row g-row"' + act + '>' +
+    '<div style="display:flex;align-items:center;gap:10px;min-width:0">' +
+    '<span class="g-mark">' + icon("users", 20, 2) + '</span>' +
+    '<div style="min-width:0">' +
+    '<p class="g-name">' + escapeHtml(gr.name) + '</p>' +
+    '<p class="g-meta">' + gr.members + " a'zo" +
+    (gr.admin_name ? ' · ' + escapeHtml(gr.admin_name) : '') + '</p></div></div>' +
+    endHtml + '</div>';
+}
+
+async function renderGroupDetail(content, gid) {
+  const d = await api(groupUrl("/api/groups/" + gid));
+  let out =
+    '<div class="detail-topbar">' +
+    '<button class="back-link" data-action="group-back">' + icon("arrow-left", 17, 2.2) + ' Guruhlar</button>' +
+    (d.is_admin ? '<button class="edit-link" data-action="group-settings">' + icon("edit", 16, 2.2) + ' Sozlash</button>' : '') +
+    '</div>' +
+    '<div class="g-head"><span class="g-mark lg">' + icon("users", 26, 1.9) + '</span>' +
+    '<div style="min-width:0"><p class="g-title">' + escapeHtml(d.name) + '</p>' +
+    '<p class="g-meta">' + d.members.length + " a'zo · Admin: " + escapeHtml(d.admin_name) + '</p></div></div>';
+
+  const reqs = d.requests || [];
+  if (reqs.length) {
+    out += '<div class="card g-req"><p class="g-req-t">' + reqs.length + ' ta so‘rov kutmoqda</p>' +
+      reqs.map(function (r) {
+        return '<div class="list-row">' +
+          '<div style="display:flex;align-items:center;gap:10px;min-width:0">' +
+          '<span class="g-av">' + avatarMarkup(r.avatar_id, 34) + '</span>' +
+          '<div style="min-width:0"><p class="g-name">' + escapeHtml(r.name) + '</p>' +
+          '<p class="g-meta">' + r.books + ' kitob</p></div></div>' +
+          '<span class="g-req-btns">' +
+          '<button class="icon-btn ok" data-action="group-decide" data-id="' + r.req_id + '" data-act="approve" aria-label="Tasdiqlash">' + icon("check", 16, 2.4) + '</button>' +
+          '<button class="icon-btn" data-action="group-decide" data-id="' + r.req_id + '" data-act="reject" aria-label="Rad etish">' + icon("x", 16, 2.4) + '</button>' +
+          '</span></div>';
+      }).join("") + '</div>';
+  }
+
+  if (d.invite_code) {
+    out += '<div class="card g-code" data-action="copy-code" data-code="' + escapeHtml(d.invite_code) + '">' +
+      '<div><p class="eyebrow" style="margin:0">Taklif kodi</p>' +
+      '<b class="g-code-val">' + escapeHtml(d.invite_code) + '</b></div>' +
+      '<span class="icon-btn">' + icon("copy", 16, 2.2) + '</span></div>';
+  }
+
+  out += '<div class="card">' + d.members.map(function (m) {
+    const me = m.id === d.me;
+    const end = d.is_admin && !me
+      ? '<button class="icon-btn" data-action="group-member" data-id="' + m.id + '" data-name="' + escapeHtml(m.name) + '" data-admin="' + (m.is_admin ? 1 : 0) + '" aria-label="Sozlash">' + icon("more", 16, 2.2) + '</button>'
+      : (m.is_admin ? '<span class="pill pill-brand">Admin</span>' : '<span class="g-end">' + m.books + ' kitob</span>');
+    // Ota-ona o‘qiyotgan bo‘lsa «siz» emas — bu uning farzandi
+    const meLabel = isChildView() ? " (siz)" : " (farzandingiz)";
+    return '<div class="list-row' + (me ? " me-row" : "") + '">' +
+      '<div style="display:flex;align-items:center;gap:10px;min-width:0">' +
+      '<span class="g-av">' + avatarMarkup(m.avatar_id, 36) + '</span>' +
+      '<div style="min-width:0"><p class="g-name">' + escapeHtml(m.name) + (me ? meLabel : "") + '</p>' +
+      '<p class="g-meta">' + m.books + ' kitob</p></div></div>' + end + '</div>';
+  }).join("") + '</div>' +
+    '<div class="action-row"><button class="btn btn-outline" data-action="group-leave">Guruhdan chiqish</button></div>';
+
+  content.innerHTML = out;
+}
+
+function openGroupCreateModal() {
+  openModal("Yangi guruh",
+    '<p class="eyebrow">Guruh nomi</p>' +
+    '<input id="g-name" class="g-input wide" placeholder="4-maktab, 7-B sinf" maxlength="48">' +
+    '<p class="section-sub" style="margin:8px 0 14px">Nomni a\'zolar darrov tanisin: maktab va sinf, oila yoki mahalla nomi.</p>' +
+    '<label class="g-switch"><input type="checkbox" id="g-searchable" checked>' +
+    '<span><b>Qidiruvda ko‘rinsin</b><i>Boshqalar topib so‘rov yubora oladi</i></span></label>' +
+    '<button class="btn btn-primary btn-block" data-action="group-create-save">Guruhni ochish</button>');
+}
+
+async function submitGroupCreate() {
+  const name = (document.getElementById("g-name").value || "").trim();
+  const searchable = document.getElementById("g-searchable").checked;
+  const r = await api(groupUrl("/api/groups"), { method: "POST", body: { name: name, searchable: searchable } });
+  closeModal();
+  toast("Guruh ochildi");
+  State.groupId = r.id;
+  await renderRatingTab();
+}
+
+function openGroupJoinModal() {
+  openModal("Kod bilan qo‘shilish",
+    '<p class="section-sub" style="margin-top:0">Sizga yuborilgan taklif kodini kiriting — darrov a\'zo bo‘lasiz.</p>' +
+    '<input id="g-code" class="g-input wide center" placeholder="BILIG-0000" maxlength="12">' +
+    '<button class="btn btn-primary btn-block" data-action="group-join-save">Qo‘shilish</button>');
+}
+
+async function submitGroupJoin() {
+  const code = (document.getElementById("g-code").value || "").trim();
+  const r = await api(groupUrl("/api/groups/join"), { method: "POST", body: { code: code } });
+  closeModal();
+  toast(r.already ? "Siz allaqachon a'zosiz" : "Guruhga qo‘shildingiz");
+  State.groupId = r.id;
+  await renderRatingTab();
+}
+
+async function openGroupSettings() {
+  const d = await api(groupUrl("/api/groups/" + State.groupId));
+  openModal("Guruh sozlamasi",
+    '<p class="eyebrow">Guruh nomi</p>' +
+    '<input id="g-name" class="g-input wide" maxlength="48" value="' + escapeHtml(d.name) + '">' +
+    '<label class="g-switch" style="margin-top:14px"><input type="checkbox" id="g-searchable"' +
+    (d.searchable ? " checked" : "") + '>' +
+    '<span><b>Qidiruvda ko‘rinsin</b><i>Boshqalar topib so‘rov yubora oladi</i></span></label>' +
+    '<button class="btn btn-primary btn-block" data-action="group-settings-save">Saqlash</button>');
+}
+
+async function submitGroupSettings() {
+  const name = (document.getElementById("g-name").value || "").trim();
+  const searchable = document.getElementById("g-searchable").checked;
+  await api(groupUrl("/api/groups/" + State.groupId + "/update"),
+    { method: "POST", body: { name: name, searchable: searchable } });
+  closeModal();
+  toast("Saqlandi");
+  await renderRatingTab();
+}
+
+function openGroupMemberModal(cid, name, isAdmin) {
+  openModal(name,
+    '<div class="g-member-act" data-action="group-set-admin" data-id="' + cid + '" data-val="' + (isAdmin ? 0 : 1) + '">' +
+    '<div><b>' + (isAdmin ? "Admin huquqini olish" : "Admin huquqini berish") + '</b>' +
+    '<i>Guruhni boshqara oladi: a\'zo qo‘shadi, chiqaradi</i></div>' +
+    icon("chevron-right", 18, 2.2) + '</div>' +
+    '<div class="g-member-act danger" data-action="group-remove" data-id="' + cid + '">' +
+    '<div><b>Guruhdan chiqarish</b><i>O‘qigan kitoblari va natijalari o‘zida qoladi</i></div>' +
+    icon("chevron-right", 18, 2.2) + '</div>');
+}
+
+async function groupSearchRun() {
+  const box = document.getElementById("group-q");
+  const q = (box ? box.value : "").trim();
+  State.groupQuery = q;
+  if (q.length < 2) { toast("Kamida ikki harf yozing"); return; }
+  const r = await api(groupUrl("/api/groups/search?q=" + encodeURIComponent(q)));
+  State.groupFound = r.list || [];
+  await renderRatingTab();
 }
 
 // ---------- Mutolaa taqvimi ----------

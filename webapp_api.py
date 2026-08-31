@@ -195,6 +195,43 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS Talk_Checks (
     parent_at     TEXT,
     child_at      TEXT
 )""")
+# ==========================================================
+# GURUH — sinfdoshlar yoki qarindoshlar birga o‘qiydigan doira
+# ----------------------------------------------------------
+# Guruhni ota-ona ochadi va admin bo‘ladi (Groups.admin_user_id).
+# A'zolar esa BOLALAR (Group_Members.child_id) — reyting ham,
+# topshiriq ham bolaning o‘qishi bo‘yicha hisoblanadi.
+# Admin xohlasa a'zo bolaga ham admin huquqini beradi (is_admin).
+#
+# Ikki xil kirish yo‘li bor va ular ataylab farq qiladi:
+#   • taklif kodi bilan — darrov a'zo (kodni admin o‘zi bergan);
+#   • qidiruv orqali topib — avval so‘rov, admin tasdiqlaydi.
+# ==========================================================
+cursor.execute("""CREATE TABLE IF NOT EXISTS Groups (
+    group_id      INTEGER PRIMARY KEY AUTOINCREMENT,
+    name          TEXT,
+    admin_user_id INTEGER,
+    invite_code   TEXT,
+    searchable    INTEGER DEFAULT 1,
+    created_at    TEXT
+)""")
+cursor.execute("""CREATE TABLE IF NOT EXISTS Group_Members (
+    id        INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id  INTEGER,
+    child_id  INTEGER,
+    is_admin  INTEGER DEFAULT 0,
+    joined_at TEXT
+)""")
+cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_group_member ON Group_Members(group_id, child_id)")
+cursor.execute("""CREATE TABLE IF NOT EXISTS Group_Requests (
+    req_id     INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id   INTEGER,
+    child_id   INTEGER,
+    status     TEXT DEFAULT 'pending',
+    created_at TEXT,
+    decided_at TEXT
+)""")
+cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_group_request ON Group_Requests(group_id, child_id)")
 cursor.execute("""CREATE TABLE IF NOT EXISTS Coin_Ledger (
     entry_id   INTEGER PRIMARY KEY AUTOINCREMENT,
     child_id   INTEGER,
@@ -4656,6 +4693,381 @@ def child_rating():
         "scope": "umumiy",
         "list": [{"id": r[0], "name": r[1], "xp": r[2], "rank": r[3], "is_me": r[0] == child_id} for r in rows]
     })
+
+
+# ==========================================================
+# GURUH — 1-bosqich: ochish, taklif kodi, qidiruv, so‘rov, a'zolar
+# ==========================================================
+
+GROUP_NAME_MAX = 48
+
+
+def _user_role():
+    """Kirgan foydalanuvchi roli — 'parent' yoki 'child'."""
+    try:
+        cursor.execute("SELECT role FROM Users WHERE user_id = ?", (g.user_id,))
+        r = cursor.fetchone()
+        return r[0] if r else "parent"
+    except Exception:
+        return "parent"
+
+
+def _group_new_code():
+    """Takrorlanmaydigan taklif kodi: BILIG-7431."""
+    for _ in range(40):
+        code = "BILIG-%04d" % random.randint(1000, 9999)
+        cursor.execute("SELECT 1 FROM Groups WHERE invite_code = ?", (code,))
+        if not cursor.fetchone():
+            return code
+    return None
+
+
+def _group_row(gid):
+    cursor.execute(
+        "SELECT group_id, name, admin_user_id, invite_code, searchable FROM Groups WHERE group_id = ?",
+        (gid,)
+    )
+    return cursor.fetchone()
+
+
+def _group_is_admin(row, child_id):
+    """Admin — guruhni ochgan ota-ona, yoki admin huquqi berilgan a'zo bola.
+
+    Bolaxona rejimida ota-ona farzand nomidan ishlaydi: shunda g.user_id
+    baribir ota-onaniki bo‘lgani uchun birinchi shart ishlaydi.
+    """
+    if not row:
+        return False
+    if row[2] == g.user_id:
+        return True
+    cursor.execute(
+        "SELECT is_admin FROM Group_Members WHERE group_id = ? AND child_id = ?",
+        (row[0], child_id)
+    )
+    r = cursor.fetchone()
+    return bool(r and r[0])
+
+
+def _group_books(child_id):
+    """Bolaning tugatgan kitoblari soni — a'zolar ro‘yxatida shu ko‘rinadi."""
+    cursor.execute(
+        "SELECT COUNT(*) FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id "
+        "WHERE rp.child_id = ? AND pb.is_completed = 1", (child_id,)
+    )
+    r = cursor.fetchone()
+    return r[0] if r else 0
+
+
+def _group_admin_name(row):
+    if not row:
+        return ""
+    cursor.execute("SELECT name FROM Users WHERE user_id = ?", (row[2],))
+    r = cursor.fetchone()
+    return (r[0] if r and r[0] else "Admin")
+
+
+def _group_members(gid):
+    cursor.execute(
+        "SELECT u.user_id, u.name, u.avatar_id, gm.is_admin FROM Group_Members gm "
+        "JOIN Users u ON gm.child_id = u.user_id WHERE gm.group_id = ? "
+        "ORDER BY gm.is_admin DESC, gm.joined_at", (gid,)
+    )
+    rows = cursor.fetchall()          # oldin to‘liq o‘qib olamiz — cursor yagona
+    out = []
+    for r in rows:
+        out.append({"id": r[0], "name": r[1], "avatar_id": r[2] or "fox",
+                    "is_admin": bool(r[3]), "books": _group_books(r[0])})
+    return out
+
+
+def _group_brief(gid, child_id):
+    row = _group_row(gid)
+    if not row:
+        return None
+    cursor.execute("SELECT COUNT(*) FROM Group_Members WHERE group_id = ?", (gid,))
+    count = cursor.fetchone()[0]
+    cursor.execute("SELECT COUNT(*) FROM Group_Requests WHERE group_id = ? AND status = 'pending'", (gid,))
+    pending = cursor.fetchone()[0]
+    return {"id": row[0], "name": row[1], "members": count,
+            "admin_name": _group_admin_name(row),
+            "is_admin": _group_is_admin(row, child_id),
+            "pending": pending}
+
+
+@app.route("/api/groups", methods=["GET"])
+@require_auth
+def groups_list():
+    """Bola a'zo bo‘lgan guruhlar va javob kutayotgan so‘rovlari."""
+    child_id = _resolve_active_child(request)
+    cursor.execute("SELECT group_id FROM Group_Members WHERE child_id = ? ORDER BY joined_at", (child_id,))
+    ids = [r[0] for r in cursor.fetchall()]
+    groups = [g_ for g_ in (_group_brief(i, child_id) for i in ids) if g_]
+
+    cursor.execute(
+        "SELECT gr.group_id, g2.name FROM Group_Requests gr JOIN Groups g2 ON gr.group_id = g2.group_id "
+        "WHERE gr.child_id = ? AND gr.status = 'pending'", (child_id,)
+    )
+    waiting = [{"id": r[0], "name": r[1]} for r in cursor.fetchall()]
+    return jsonify({"groups": groups, "waiting": waiting, "can_create": _user_role() != "child"})
+
+
+@app.route("/api/groups", methods=["POST"])
+@require_auth
+def groups_create():
+    """Guruhni ota-ona ochadi va o‘zi admin bo‘ladi."""
+    if _user_role() == "child":
+        return jsonify({"error": "Guruhni ota-ona ochadi"}), 403
+    data = request.get_json(force=True) or {}
+    name = (data.get("name") or "").strip()[:GROUP_NAME_MAX]
+    if len(name) < 3:
+        return jsonify({"error": "Guruh nomini yozing (kamida 3 harf)"}), 400
+    child_id = _resolve_active_child(request)
+    if child_id == g.user_id:
+        return jsonify({"error": "Avval farzandni tanlang"}), 400
+    searchable = 0 if data.get("searchable") is False else 1
+
+    with db_lock:
+        code = _group_new_code()
+        if not code:
+            return jsonify({"error": "Kod yaratib bo‘lmadi, qaytadan urinib ko‘ring"}), 500
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cursor.execute(
+            "INSERT INTO Groups (name, admin_user_id, invite_code, searchable, created_at) "
+            "VALUES (?, ?, ?, ?, ?)", (name, g.user_id, code, searchable, now)
+        )
+        gid = cursor.lastrowid
+        cursor.execute(
+            "INSERT INTO Group_Members (group_id, child_id, is_admin, joined_at) VALUES (?, ?, 1, ?)",
+            (gid, child_id, now)
+        )
+        conn.commit()
+    return jsonify({"ok": True, "id": gid, "name": name, "invite_code": code})
+
+
+@app.route("/api/groups/<int:gid>", methods=["GET"])
+@require_auth
+def groups_detail(gid):
+    child_id = _resolve_active_child(request)
+    row = _group_row(gid)
+    if not row:
+        return jsonify({"error": "Guruh topilmadi"}), 404
+    cursor.execute("SELECT 1 FROM Group_Members WHERE group_id = ? AND child_id = ?", (gid, child_id))
+    is_member = bool(cursor.fetchone())
+    is_admin = _group_is_admin(row, child_id)
+    if not is_member and not is_admin:
+        return jsonify({"error": "Bu guruh a'zosi emassiz"}), 403
+
+    members = _group_members(gid)
+    out = {"id": row[0], "name": row[1], "searchable": bool(row[4]),
+           "admin_name": _group_admin_name(row), "is_admin": is_admin,
+           "me": child_id, "members": members}
+    if is_admin:
+        out["invite_code"] = row[3]
+        cursor.execute(
+            "SELECT gr.req_id, u.user_id, u.name, u.avatar_id FROM Group_Requests gr "
+            "JOIN Users u ON gr.child_id = u.user_id "
+            "WHERE gr.group_id = ? AND gr.status = 'pending' ORDER BY gr.created_at", (gid,)
+        )
+        reqs = cursor.fetchall()
+        out["requests"] = [{"req_id": r[0], "id": r[1], "name": r[2],
+                            "avatar_id": r[3] or "fox", "books": _group_books(r[1])} for r in reqs]
+    return jsonify(out)
+
+
+@app.route("/api/groups/<int:gid>/update", methods=["POST"])
+@require_auth
+def groups_update(gid):
+    """Nomni o‘zgartirish va qidiruvda ko‘rinishini yoqib-o‘chirish."""
+    child_id = _resolve_active_child(request)
+    row = _group_row(gid)
+    if not row:
+        return jsonify({"error": "Guruh topilmadi"}), 404
+    if not _group_is_admin(row, child_id):
+        return jsonify({"error": "Bu amalni faqat admin bajaradi"}), 403
+    data = request.get_json(force=True) or {}
+    name = (data.get("name") or "").strip()[:GROUP_NAME_MAX]
+    with db_lock:
+        if name:
+            if len(name) < 3:
+                return jsonify({"error": "Guruh nomini yozing (kamida 3 harf)"}), 400
+            cursor.execute("UPDATE Groups SET name = ? WHERE group_id = ?", (name, gid))
+        if "searchable" in data:
+            cursor.execute("UPDATE Groups SET searchable = ? WHERE group_id = ?",
+                           (1 if data.get("searchable") else 0, gid))
+        conn.commit()
+    return jsonify({"ok": True})
+
+
+@app.route("/api/groups/join", methods=["POST"])
+@require_auth
+def groups_join():
+    """Taklif kodi bilan — so‘rovsiz, darrov a'zo."""
+    data = request.get_json(force=True) or {}
+    code = (data.get("code") or "").strip().upper()
+    if not code:
+        return jsonify({"error": "Kodni kiriting"}), 400
+    if not code.startswith("BILIG-"):
+        code = "BILIG-" + code.lstrip("-")
+    child_id = _resolve_active_child(request)
+    if child_id == g.user_id and _user_role() != "child":
+        return jsonify({"error": "Avval farzandni tanlang"}), 400
+
+    cursor.execute("SELECT group_id, name FROM Groups WHERE invite_code = ?", (code,))
+    row = cursor.fetchone()
+    if not row:
+        return jsonify({"error": "Bunday kod topilmadi"}), 404
+    gid, name = row[0], row[1]
+    cursor.execute("SELECT 1 FROM Group_Members WHERE group_id = ? AND child_id = ?", (gid, child_id))
+    if cursor.fetchone():
+        return jsonify({"ok": True, "id": gid, "name": name, "already": True})
+    with db_lock:
+        cursor.execute(
+            "INSERT INTO Group_Members (group_id, child_id, is_admin, joined_at) VALUES (?, ?, 0, ?)",
+            (gid, child_id, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        )
+        cursor.execute("DELETE FROM Group_Requests WHERE group_id = ? AND child_id = ?", (gid, child_id))
+        conn.commit()
+    return jsonify({"ok": True, "id": gid, "name": name})
+
+
+@app.route("/api/groups/search", methods=["GET"])
+@require_auth
+def groups_search():
+    """Nom bo‘yicha qidiruv. Faqat qidiruvga ochiq guruhlar chiqadi."""
+    q = (request.args.get("q") or "").strip()
+    if len(q) < 2:
+        return jsonify({"list": []})
+    child_id = _resolve_active_child(request)
+    cursor.execute(
+        "SELECT group_id, name, admin_user_id FROM Groups WHERE searchable = 1 AND name LIKE ? "
+        "ORDER BY name LIMIT 20", ("%" + q + "%",)
+    )
+    rows = cursor.fetchall()
+    out = []
+    for r in rows:
+        cursor.execute("SELECT COUNT(*) FROM Group_Members WHERE group_id = ?", (r[0],))
+        count = cursor.fetchone()[0]
+        cursor.execute("SELECT 1 FROM Group_Members WHERE group_id = ? AND child_id = ?", (r[0], child_id))
+        member = bool(cursor.fetchone())
+        cursor.execute("SELECT status FROM Group_Requests WHERE group_id = ? AND child_id = ?", (r[0], child_id))
+        rq = cursor.fetchone()
+        cursor.execute("SELECT name FROM Users WHERE user_id = ?", (r[2],))
+        an = cursor.fetchone()
+        out.append({"id": r[0], "name": r[1], "members": count,
+                    "admin_name": (an[0] if an and an[0] else "Admin"),
+                    "is_member": member, "pending": bool(rq and rq[0] == "pending")})
+    return jsonify({"list": out})
+
+
+@app.route("/api/groups/<int:gid>/request", methods=["POST"])
+@require_auth
+def groups_request(gid):
+    """Qidiruv orqali topilgan guruhga qo‘shilish so‘rovi."""
+    child_id = _resolve_active_child(request)
+    if child_id == g.user_id and _user_role() != "child":
+        return jsonify({"error": "Avval farzandni tanlang"}), 400
+    row = _group_row(gid)
+    if not row:
+        return jsonify({"error": "Guruh topilmadi"}), 404
+    cursor.execute("SELECT 1 FROM Group_Members WHERE group_id = ? AND child_id = ?", (gid, child_id))
+    if cursor.fetchone():
+        return jsonify({"ok": True, "already": True})
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with db_lock:
+        cursor.execute(
+            "INSERT OR REPLACE INTO Group_Requests (group_id, child_id, status, created_at) "
+            "VALUES (?, ?, 'pending', ?)", (gid, child_id, now)
+        )
+        conn.commit()
+    _feed(row[2], child_id, "group_request", "Guruhga so‘rov",
+          "%s «%s» guruhiga qo‘shilmoqchi." % (child_name_of(child_id), row[1]), gid)
+    return jsonify({"ok": True})
+
+
+@app.route("/api/groups/<int:gid>/requests/<int:rid>", methods=["POST"])
+@require_auth
+def groups_request_decide(gid, rid):
+    """Admin so‘rovni tasdiqlaydi yoki rad etadi."""
+    child_id = _resolve_active_child(request)
+    row = _group_row(gid)
+    if not row:
+        return jsonify({"error": "Guruh topilmadi"}), 404
+    if not _group_is_admin(row, child_id):
+        return jsonify({"error": "Bu amalni faqat admin bajaradi"}), 403
+    action = ((request.get_json(force=True) or {}).get("action") or "").strip()
+    cursor.execute("SELECT child_id, status FROM Group_Requests WHERE req_id = ? AND group_id = ?", (rid, gid))
+    r = cursor.fetchone()
+    if not r:
+        return jsonify({"error": "So‘rov topilmadi"}), 404
+    who = r[0]
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with db_lock:
+        if action == "approve":
+            cursor.execute(
+                "INSERT OR IGNORE INTO Group_Members (group_id, child_id, is_admin, joined_at) "
+                "VALUES (?, ?, 0, ?)", (gid, who, now)
+            )
+            cursor.execute("UPDATE Group_Requests SET status = 'approved', decided_at = ? WHERE req_id = ?", (now, rid))
+        else:
+            cursor.execute("UPDATE Group_Requests SET status = 'rejected', decided_at = ? WHERE req_id = ?", (now, rid))
+        conn.commit()
+    if action == "approve":
+        pid = get_parent_id(who)
+        if pid:
+            _feed(pid, who, "group_join", "Guruhga qabul qilindi",
+                  "%s «%s» guruhiga qo‘shildi." % (child_name_of(who), row[1]), gid)
+    return jsonify({"ok": True})
+
+
+# Diqqat: `cid` MANFIY bo‘lishi mumkin — Telegramsiz farzand raqami
+# shunday beriladi. Flask'ning <int:...> qolipi manfiy sonni tanimaydi,
+# shuning uchun bu yerda oddiy matn olinadi va o‘zimiz songa aylantiramiz.
+@app.route("/api/groups/<int:gid>/member/<cid>", methods=["POST"])
+@require_auth
+def groups_member_admin(gid, cid):
+    """Admin huquqini berish yoki qaytarib olish."""
+    try:
+        cid = int(cid)
+    except (TypeError, ValueError):
+        return jsonify({"error": "Noto‘g‘ri raqam"}), 400
+    child_id = _resolve_active_child(request)
+    row = _group_row(gid)
+    if not row:
+        return jsonify({"error": "Guruh topilmadi"}), 404
+    if not _group_is_admin(row, child_id):
+        return jsonify({"error": "Bu amalni faqat admin bajaradi"}), 403
+    val = 1 if (request.get_json(force=True) or {}).get("is_admin") else 0
+    with db_lock:
+        cursor.execute("UPDATE Group_Members SET is_admin = ? WHERE group_id = ? AND child_id = ?",
+                       (val, gid, cid))
+        conn.commit()
+    return jsonify({"ok": True})
+
+
+@app.route("/api/groups/<int:gid>/leave", methods=["POST"])
+@require_auth
+def groups_leave(gid):
+    """A'zoning o‘zi chiqishi yoki adminning a'zoni chiqarishi.
+
+    Bolaning o‘qish tarixiga tegilmaydi — faqat a'zolik yozuvi o‘chadi.
+    """
+    child_id = _resolve_active_child(request)
+    row = _group_row(gid)
+    if not row:
+        return jsonify({"error": "Guruh topilmadi"}), 404
+    who = (request.get_json(force=True) or {}).get("child_id")
+    who = int(who) if who else child_id
+    if who != child_id and not _group_is_admin(row, child_id):
+        return jsonify({"error": "Bu amalni faqat admin bajaradi"}), 403
+    with db_lock:
+        cursor.execute("DELETE FROM Group_Members WHERE group_id = ? AND child_id = ?", (gid, who))
+        cursor.execute("DELETE FROM Group_Requests WHERE group_id = ? AND child_id = ?", (gid, who))
+        cursor.execute("SELECT COUNT(*) FROM Group_Members WHERE group_id = ?", (gid,))
+        left = cursor.fetchone()[0]
+        if left == 0:
+            cursor.execute("DELETE FROM Groups WHERE group_id = ?", (gid,))
+        conn.commit()
+    return jsonify({"ok": True})
 
 
 # ==========================================================

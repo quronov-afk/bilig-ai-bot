@@ -188,17 +188,98 @@ def clear_demo_child(child_id):
         "DELETE FROM Purchases WHERE child_id = ?",
         "DELETE FROM Notifications WHERE child_id = ?",
         "DELETE FROM Talk_Checks WHERE child_id = ?",
+        "DELETE FROM Group_Members WHERE child_id = ?",
+        "DELETE FROM Group_Requests WHERE child_id = ?",
     ):
         try:
             cursor.execute(sql, (child_id,))
         except Exception:
             pass          # jadval hali yaratilmagan bo‘lsa — e'tiborsiz
+    # A'zosi qolmagan namoyish guruhi ham o‘chadi — «To‘ldirish» qayta
+    # bosilganda guruh takrorlanib ketmasligi uchun.
+    try:
+        cursor.execute(
+            "DELETE FROM Groups WHERE group_id NOT IN (SELECT group_id FROM Group_Members)")
+    except Exception:
+        pass
     cursor.execute(
         "UPDATE Users SET balance_coins = 0, streak_days = 0, total_xp = 0, badges = '', "
         "badges_seen = 0, goal_item_id = NULL, streak_freezes = 0 WHERE user_id = ?",
         (child_id,)
     )
     conn.commit()
+
+
+DEMO_MATES = [
+    (-9001, "Doniyor", "bear", 6),
+    (-9002, "Nilufar", "owl", 5),
+    (-9003, "Javohir", "lion", 4),
+    (-9004, "Zilola", "rabbit", 3),
+    (-9005, "Bekzod", "dog", 2),
+]
+DEMO_MATE_REQ = (-9006, "Shohrux", "fox", 3)
+DEMO_GROUP_NAME = "4-maktab, 7-B sinf"
+DEMO_MATE_BOOKS = [
+    ("Alpomish", "Xalq dostoni", 96),
+    ("Shum bola", "G‘afur G‘ulom", 128),
+    ("Bolalikning oltin daftari", "Xudoyberdi To‘xtaboyev", 112),
+    ("Sariq devni minib", "Xudoyberdi To‘xtaboyev", 176),
+    ("Kichkina shahzoda", "Antuan de Sent-Ekzyuperi", 88),
+    ("Robinzon Kruzo", "Daniel Defo", 148),
+]
+
+
+def _demo_mate(uid, mate_name, avatar, books):
+    """Namoyish uchun sinfdosh profili va uning tugatgan kitoblari."""
+    cursor.execute(
+        "INSERT OR REPLACE INTO Users (user_id, role, name, is_approved, avatar_id, profile_done) "
+        "VALUES (?, 'child', ?, 1, ?, 1)", (uid, mate_name, avatar)
+    )
+    cursor.execute("SELECT plan_id FROM Reading_Plans WHERE child_id = ?", (uid,))
+    for (pid,) in cursor.fetchall():
+        cursor.execute("DELETE FROM Plan_Books WHERE plan_id = ?", (pid,))
+    cursor.execute("DELETE FROM Reading_Plans WHERE child_id = ?", (uid,))
+    cursor.execute(
+        "INSERT INTO Reading_Plans (parent_id, child_id, name, status, plan_type) "
+        "VALUES (?, ?, ?, 'active', 'quick')", (uid, uid, "Sinf ro‘yxati")
+    )
+    pid = cursor.lastrowid
+    for i in range(books):
+        title, author, total = DEMO_MATE_BOOKS[i % len(DEMO_MATE_BOOKS)]
+        cursor.execute(
+            "INSERT INTO Plan_Books (plan_id, title, author, total_pages, pages_read, is_completed) "
+            "VALUES (?, ?, ?, ?, ?, 1)", (pid, title, author, total, total)
+        )
+
+
+def _fill_demo_group(parent_id, child_id, child_display_name):
+    """Sinfdoshlar guruhi: a'zolar, taklif kodi va bitta kutayotgan so‘rov."""
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    cursor.execute("DELETE FROM Groups WHERE admin_user_id = ? AND name = ?",
+                   (parent_id, DEMO_GROUP_NAME))
+    cursor.execute(
+        "INSERT INTO Groups (name, admin_user_id, invite_code, searchable, created_at) "
+        "VALUES (?, ?, ?, 1, ?)", (DEMO_GROUP_NAME, parent_id, "BILIG-7431", now)
+    )
+    gid = cursor.lastrowid
+    cursor.execute(
+        "INSERT OR REPLACE INTO Group_Members (group_id, child_id, is_admin, joined_at) "
+        "VALUES (?, ?, 1, ?)", (gid, child_id, now)
+    )
+    for uid, mate_name, avatar, books in DEMO_MATES:
+        _demo_mate(uid, mate_name, avatar, books)
+        cursor.execute(
+            "INSERT OR REPLACE INTO Group_Members (group_id, child_id, is_admin, joined_at) "
+            "VALUES (?, ?, 0, ?)", (gid, uid, now)
+        )
+    uid, mate_name, avatar, books = DEMO_MATE_REQ
+    _demo_mate(uid, mate_name, avatar, books)
+    cursor.execute(
+        "INSERT OR REPLACE INTO Group_Requests (group_id, child_id, status, created_at) "
+        "VALUES (?, ?, 'pending', ?)", (gid, uid, now)
+    )
+    conn.commit()
+    return gid
 
 
 def fill_demo_child(parent_id, child_id):
@@ -474,6 +555,12 @@ def fill_demo_child(parent_id, child_id):
         "to_user, created_at) VALUES (?, ?, 'talk_check', ?, ?, ?, ?, ?)",
         (parent_id, child_id, f"Bugun {name} bilan gaplashdingizmi?", topic,
          check_id, parent_id, datetime.now().isoformat(timespec="seconds")))
+
+    # 11b. GURUH — sinfdoshlar doirasi.
+    #      Sinfdoshlar haqiqiy foydalanuvchi emas: ular manfiy raqamli
+    #      ichki profil (Telegramsiz farzand bilan bir xil usul). Raqamlar
+    #      QAT'IY belgilangan — «To‘ldirish» qayta bosilganda takrorlanmaydi.
+    _fill_demo_group(parent_id, child_id, name)
 
     # 12. Tanga, streak, nishonlar
     # badges_seen = 0 — nishonlar «hali ko‘rilmagan» holatda qoladi.
