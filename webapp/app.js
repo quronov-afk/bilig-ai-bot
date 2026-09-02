@@ -91,6 +91,7 @@ const State = {
   groupMemberId: null,     // ochilgan a'zoning kartochkasi
   groupTaskId: null,       // ochilgan musobaqa
   taskView: null,          // "questions" — test tahriri ko‘rinishi
+  plus: null,              // Bilig plus holati: {plan, enforced, days_left, narxlar}
   taskQuestions: null,     // tahrir qilinayotgan savollar
   taskQIndex: null,
   taskKind: "book",
@@ -113,6 +114,8 @@ const ICON_PATHS = {
   x: '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>',
   "arrow-right": '<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>',
   check: '<polyline points="20 6 9 17 4 12"/>',
+  // Bilig plus ramzi — chiziqli toj (ega tanlovi, 2026-09-02)
+  crown: '<path d="M4.6 17 5.9 8.6 9.6 11.7 12 7 14.4 11.7 18.1 8.6 19.4 17Z"/><path d="M5.2 20h13.6"/>',
   clock: '<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/>',
   refresh: '<path d="M20.5 12a8.5 8.5 0 1 1-2.6-6.1"/><polyline points="20.6 4.2 20.6 9.1 15.7 9.1"/>',
 
@@ -699,6 +702,13 @@ function icon(name, size, strokeWidth) {
 }
 
 // ---------------- API YORDAMCHISI ----------------
+// Xato haqida xabar berishning yagona joyi. Bilig plus chegarasi
+// alohida oyna ochadi — bunda ustiga yana lenta chiqarilmaydi.
+function apiError(e, fallback) {
+  if (e && e.silent) return;
+  toast((e && e.error) || fallback || "Xatolik yuz berdi");
+}
+
 async function api(path, opts) {
   opts = opts || {};
   const headers = { "X-Telegram-Init-Data": (tg && tg.initData) || "" };
@@ -749,6 +759,13 @@ async function api(path, opts) {
   let data = null;
   try { data = await res.json(); } catch (e) {}
   if (!res.ok) {
+    // 402 — Bilig plus chegarasi. Oynani MARKAZDA ochamiz: shunda
+    // ekranning istalgan burchagidagi amal ham to‘g‘ri javob beradi,
+    // hatto tamg‘a qo‘yish esdan chiqqan bo‘lsa ham.
+    if (res.status === 402 && data && data.plus) {
+      openPlusLock(data.plus.feature);
+      throw { error: "", silent: true, plus: data.plus };
+    }
     throw (data || { error: res.status >= 500
       ? "Server javob bermadi. Bir zumdan keyin qaytadan urining."
       : "So‘rov bajarilmadi. Qaytadan urining." });
@@ -965,7 +982,7 @@ document.querySelectorAll("[data-role]").forEach(function (btn) {
       State.role = res.role;
       if (res.role === "child") showScreen("screen-linkcode");
       else { toast("Kodingiz: " + res.parent_code + " — farzandingizga bering", 4000); enterApp(); }
-    } catch (e) { toast(e.error || "Xatolik yuz berdi"); }
+    } catch (e) { apiError(e); }
   });
 });
 
@@ -1048,6 +1065,7 @@ async function enterApp() {
   showScreen("shell");
   if (!COVER_INDEX) await loadCoverIndex();
   loadBadgeMeta();
+  loadPlusState();
   await refreshHeader();
   if (State.role === "parent") {
     try {
@@ -1168,9 +1186,17 @@ function renderHeaderNav() {
   if (!box) return;
   // Bola rejimida ham, ota-ona kabinetida ham bir joyda turadi
   const on = State.currentTab === "rating";
-  box.innerHTML = '<button class="icon-btn' + (on ? " is-on" : "") +
+  let html = '<button class="icon-btn' + (on ? " is-on" : "") +
     '" data-action="open-rating" aria-label="Natijalar" title="Natijalar">' +
     icon("trophy", 18, 1.8) + '</button>';
+  // Bilig plus — faqat ota-onaning o‘z kabinetida. Bolaxona rejimida
+  // ham ko‘rinmaydi: u yerda ekran bolaniki, unda pul gapi bo‘lmaydi.
+  if (State.role === "parent" && !State.activeChildId) {
+    html = '<button class="icon-btn plus-btn" data-action="open-plus" ' +
+      'aria-label="Bilig plus" title="Bilig plus">' + icon("crown", 18, 1.9) +
+      '</button>' + html;
+  }
+  box.innerHTML = html;
 }
 
 function ratingChipsHtml(mode) {
@@ -1305,6 +1331,13 @@ document.addEventListener("click", async function (e) {
         break;
       case "open-generate-test": openGenerateTestModal(Number(el.dataset.id)); break;
       case "open-book-test-edit": await BookTest.open(Number(el.dataset.id)); break;
+      case "open-plus": await openPlusPage(); break;
+      case "plus-trial": openPlusTrialPage(); break;
+      case "plus-card": await plusBindCard(); break;
+      case "plus-cancel": openPlusCancel(); break;
+      case "plus-cancel-yes": await plusCancelConfirm(); break;
+      case "plus-buy": await plusBuy(el.dataset.period); break;
+      case "plus-lock": openPlusLock(el.dataset.f); break;
       case "btest-add": BookTest.editQ(null); break;
       case "btest-edit": BookTest.editQ(Number(el.dataset.i)); break;
       case "btest-del": BookTest.del(Number(el.dataset.i)); break;
@@ -1708,13 +1741,26 @@ async function renderParentHome() {
       '<span class="kid-av">' + avatarMarkup(c.avatar_id || "fox", 52) + '</span>' +
       '<span class="kid-name">' + escapeHtml(c.name) + '</span>' +
       (isActive ? '<span class="kid-flag">Faol</span>' +
-        '<span class="kid-more" data-action="open-child-detail" data-id="' + c.id + '" title="Batafsil">' + icon("chevron-right", 13, 2.4) + '</span>' : "") +
+        // Statistika va o‘qish tarixi — Bilig plus imkoniyati.
+        '<span class="kid-more' + (hasPlus() ? "" : " is-locked") + '" data-action="' +
+        (hasPlus() ? "open-child-detail" : "plus-lock") + '" data-id="' + c.id + '"' +
+        (hasPlus() ? "" : ' data-f="stats"') + ' title="Batafsil">' +
+        (hasPlus() ? icon("chevron-right", 13, 2.4) : icon("crown", 13, 2.1)) +
+        '</span>' : "") +
       '</button>';
   }).join("") +
-    '<button class="kid-chip kid-add" data-action="open-add-child">' +
-    '<span class="kid-av kid-plus">' + icon("plus", 22, 2) + '</span>' +
-    '<span class="kid-name">Farzand qo‘shish</span>' +
-    '</button>';
+    (function () {
+      // Tekin versiyada bitta farzand. Chegara to‘lgan bo‘lsa, tugma
+      // yo‘qolmaydi — ustiga toj bosiladi va bosilganda sabab aytiladi.
+      const kidLock = !hasPlus() && State.childrenCache.length >= 1;
+      return '<button class="kid-chip kid-add' + (kidLock ? " is-locked" : "") + '" ' +
+        'data-action="' + (kidLock ? "plus-lock" : "open-add-child") + '"' +
+        (kidLock ? ' data-f="children"' : "") + '>' +
+        (kidLock ? plusBadge(14) : "") +
+        '<span class="kid-av kid-plus">' + icon("plus", 22, 2) + '</span>' +
+        '<span class="kid-name">Farzand qo‘shish</span>' +
+        '</button>';
+    })();
 
   let html = '<p class="sec-label">Farzandlar</p>' +
     '<div class="kid-row">' + chips + '</div>';
@@ -1724,6 +1770,9 @@ async function renderParentHome() {
   // va keyingi o‘qilmagani chiqadi; xabar qolmasa — bo‘lim umuman yo‘qoladi.
   State.feed = primaryData.feed || [];
   html += '<div id="feed-slot">' + feedCardHtml() + '</div>';
+  // Bilig plus taklifi — xabarlar lentasidan keyin, «Kitob qo‘shish»
+  // kartasidan oldin. Chegara o‘chiq bo‘lsa umuman chiqmaydi.
+  html += plusBannerHtml();
 
   // ---- 2. Kitob qo‘shish ----
   html += '<div class="hero-card" data-action="open-add-plan">' +
@@ -1898,7 +1947,7 @@ function bookCardOrEmpty(b, emptyText) {
 async function renderChildDetailPage(childId) {
   const main = document.getElementById("app-main");
   main.innerHTML = skeleton("home");
-  const data = await api("/api/parent/home/" + childId);
+  const data = await api("/api/parent/home/" + childId + "?detail=1");
   const c = State.childrenCache.filter(function (x) { return x.id === childId; })[0] || {};
 
   // O‘ng tomonda tahrirlash — ism, yosh va avatarni shu yerdan ham
@@ -2075,9 +2124,14 @@ function choiceCard(cfg) {
   Object.keys(data).forEach(function (k) {
     attrs += ' data-' + k + '="' + escapeHtml(String(data[k])) + '"';
   });
+  // `lock` — Bilig plus imkoniyati: kartochka ustiga toj tamg‘asi bosiladi
+  // va bosilganda amal emas, chegara oynasi ochiladi.
+  const locked = !!cfg.lock;
   return '<button class="choice-card' + (cfg.tone ? " tone-" + cfg.tone : "") +
-    (cfg.compact ? " compact" : "") + '"' +
-    ' data-action="' + cfg.action + '"' + attrs + '>' +
+    (cfg.compact ? " compact" : "") + (locked ? " is-locked" : "") + '"' +
+    ' data-action="' + (locked ? "plus-lock" : cfg.action) + '"' +
+    (locked ? ' data-f="' + cfg.lock + '"' : "") + attrs + '>' +
+    (locked ? plusBadge(15) : "") +
     '<span class="choice-ic">' + icon(cfg.ic, 22, 1.9) + '</span>' +
     '<span class="choice-tx">' +
       '<span class="choice-t">' + cfg.title +
@@ -2830,6 +2884,304 @@ const BookTest = {
 };
 
 // ==========================================================
+// BILIG PLUS — ramz, qulf va obuna sahifasi
+// ----------------------------------------------------------
+// Ega qoidasi: BOLAGA pul ko‘rsatilmaydi. Bolaning ekranida narx ham,
+// tugma ham, «to‘lanmagan» so‘zi ham bo‘lmaydi — bitta jumla, xolos.
+// Ota-onada esa to‘liq: nima yopiq, plusda nima ochiladi, qancha turadi.
+// ==========================================================
+const PLUS_NAME = "Bilig plus";
+
+// Tekin va plus farqi — obuna sahifasidagi jadval.
+const PLUS_TABLE = [
+  { name: "Farzandlar", free: "1 ta", plus: "5 ta" },
+  { name: "Kitob, bet, Bilig, nishon", free: "cheksiz", plus: "cheksiz" },
+  { name: "Sahifa suratini AI tekshirishi", free: "kuniga 1", plus: "cheksiz" },
+  { name: "Bet raqamini qo‘lda kiritish", free: "cheksiz", plus: "cheksiz" },
+  { name: "Bazadagi tayyor testlar", free: "cheksiz", plus: "cheksiz" },
+  { name: "Suratdan yangi test tuzish", free: null, plus: "bor" },
+  { name: "Testni qo‘lda yozish", free: null, plus: "bor" },
+  { name: "Ovozli xulosa", free: "haftada 1", plus: "cheksiz" },
+  { name: "AI ustoz savoli", free: "oyiga 4", plus: "cheksiz" },
+  { name: "Kechki suhbat savoli", free: "haftada 1", plus: "har kuni" },
+  { name: "Statistika va tarix", free: null, plus: "to‘liq" },
+  { name: "Guruhga a'zolik", free: "1 ta guruh", plus: "cheksiz" },
+  { name: "O‘z guruhi", free: "1 ta, 30 a'zo", plus: "cheksiz, 300 a'zo" },
+  { name: "Musobaqa e'lon qilish", free: null, plus: "bor" },
+];
+
+// Chegara to‘lganda chiqadigan qisqa yozuvlar. Har biri ikki xil:
+// ota-onaga — nima ochilishi; bolaga — bitta sodda jumla, pulsiz.
+const PLUS_TEXTS = {
+  page_check: { p: "Bugungi sahifa suratingiz tugadi.",
+                c: "Bugungi surating tugadi. Ertaga yana olasan." },
+  voice:      { p: "Bu haftadagi ovozli xulosa berilib bo‘ldi.",
+                c: "Bu haftalik ovozli xulosang tayyor bo‘ldi." },
+  talk:       { p: "Bu oydagi AI ustoz savollari tugadi.",
+                c: "AI ustozning bu oygi savollari tugadi." },
+  evening:    { p: "Bu haftadagi kechki suhbat savoli berilgan.", c: "" },
+  make_test:  { p: "Suratdan test tuzish — Bilig plus imkoniyati.", c: "" },
+  edit_test:  { p: "Testni qo‘lda yozish — Bilig plus imkoniyati.", c: "" },
+  stats:      { p: "Statistika va o‘qish tarixi — Bilig plus imkoniyati.", c: "" },
+  children:   { p: "Tekin versiyada bitta farzand qo‘shiladi.", c: "" },
+  group_own:  { p: "Tekin versiyada bitta guruh ochiladi.", c: "" },
+  group_join: { p: "Tekin versiyada bitta guruhga a'zo bo‘linadi.", c: "" },
+  task_create: { p: "Musobaqa e'lon qilish — Bilig plus imkoniyati.", c: "" },
+};
+
+async function loadPlusState() {
+  try { State.plus = await api("/api/plus"); } catch (e) { State.plus = null; }
+}
+
+function hasPlus() {
+  const p = State.plus;
+  return !p || !p.enforced || p.plan === "trial" || p.plan === "plus";
+}
+
+/* Toj tamg‘asi — yopiq imkoniyat ustiga bosiladi */
+function plusBadge(size) {
+  return '<span class="plus-badge">' + icon("crown", size || 15, 1.9) + '</span>';
+}
+
+function money(n) {
+  return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " so‘m";
+}
+
+/* Chegara to‘lganda yoki imkoniyat yopiq bo‘lganda */
+function openPlusLock(feature) {
+  const t = PLUS_TEXTS[feature] || { p: "Bu imkoniyat Bilig plusda ochiladi.", c: "" };
+
+  // BOLA: pul yo‘q, tugma yo‘q, bitta jumla. Ega qoidasi.
+  if (isChildView()) {
+    toast(t.c || "Bu imkoniyat hozircha yopiq", 3200);
+    return;
+  }
+
+  const p = State.plus || {};
+  const trial = !p.trial_used;
+  openModal(PLUS_NAME,
+    '<div class="plus-lock">' + icon("crown", 34, 1.7) + '</div>' +
+    '<p class="plus-lock-t">' + escapeHtml(t.p) + '</p>' +
+    '<p class="plus-lock-d">Bilig plusda cheklov yo‘q: farzandingiz xohlagancha ' +
+    'sahifa yuboradi, ovozli xulosa beradi va siz uning butun o‘qish tarixini ' +
+    'ko‘rib turasiz.</p>' +
+    (trial
+      ? '<button class="btn btn-primary btn-block" data-action="plus-trial">' +
+        (p.trial_days || 14) + ' kun tekin sinovdan o‘tkazish</button>' +
+        '<p class="g-note" style="text-align:center">' +
+        'Sinov ichida bekor qilsangiz, pul yechilmaydi.</p>'
+      : '<button class="btn btn-primary btn-block" data-action="open-plus">' +
+        PLUS_NAME + ' haqida</button>'),
+    "modal-plus");
+}
+
+/* Obuna sahifasi — to‘rt holat: sinamagan · sinovda · obunachi · tugagan */
+async function openPlusPage() {
+  await loadPlusState();
+  const p = State.plus || {};
+  const plan = p.plan || "free";
+
+  let head;
+  if (plan === "plus") {
+    head = '<div class="plus-head is-on">' + icon("crown", 38, 1.7) +
+      '<b>Bilig plus ochiq</b><span>' +
+      (p.days_left ? p.days_left + " kun qoldi" : "amal qilmoqda") + '</span></div>';
+  } else if (plan === "trial") {
+    head = '<div class="plus-head is-on">' + icon("crown", 38, 1.7) +
+      '<b>Sinov davri</b><span>' + p.days_left + ' kun qoldi — hamma imkoniyat ochiq</span></div>';
+  } else {
+    head = '<div class="plus-head">' + icon("crown", 38, 1.7) +
+      '<b>' + PLUS_NAME + '</b><span>Farzandingizning o‘qishi — chegarasiz va tasdiqlangan</span></div>';
+  }
+
+  const rows = PLUS_TABLE.map(function (r) {
+    return '<tr><td>' + escapeHtml(r.name) + '</td>' +
+      '<td class="c">' + (r.free
+        ? '<span class="v-free">' + escapeHtml(r.free) + '</span>'
+        : '<span class="v-no">' + icon("x", 13, 2.6) + '</span>') + '</td>' +
+      '<td class="c"><span class="v-plus">' + escapeHtml(r.plus) + '</span></td></tr>';
+  }).join("");
+
+  const priceBox = plan === "plus" ? "" :
+    '<div class="plus-prices">' +
+      '<button class="plus-price" data-action="plus-buy" data-period="month">' +
+        '<span class="pp-lab">Oylik</span>' +
+        '<span class="pp-val">' + money(p.price_month || 24900) + '</span>' +
+        (p.price_month && p.price_month_full && p.price_month < p.price_month_full
+          ? '<span class="pp-old">' + money(p.price_month_full) + '</span>' +
+            '<span class="pp-tag">dastlabki ' + (p.discount_months || 6) + ' oy</span>'
+          : '') +
+      '</button>' +
+      '<button class="plus-price is-best" data-action="plus-buy" data-period="year">' +
+        '<span class="pp-lab">Yillik</span>' +
+        '<span class="pp-val">' + money(p.price_year || 149000) + '</span>' +
+        '<span class="pp-tag">ikki baravar arzon</span>' +
+      '</button>' +
+    '</div>' +
+    (p.trial_used ? "" :
+      '<button class="btn btn-primary btn-block" style="margin-top:10px" ' +
+      'data-action="plus-trial">' + (p.trial_days || 14) +
+      ' kun tekin sinovdan o‘tkazish</button>');
+
+  openModal(PLUS_NAME,
+    head +
+    '<div class="plus-why">' +
+      '<b>Nima uchun?</b>' +
+      'Bilig plus — farzandingiz haqiqatan o‘qiganini tekshiradigan yo‘l: ' +
+      'har bet surat orqali tasdiqlanadi, har kitob test va ovozli xulosa ' +
+      'bilan yopiladi, siz esa butun o‘qish tarixini ko‘rib turasiz.' +
+    '</div>' +
+    '<table class="plus-table"><tr><th>Imkoniyat</th><th class="c">Tekin</th>' +
+    '<th class="c">' + icon("crown", 14, 2) + ' plus</th></tr>' + rows + '</table>' +
+    priceBox +
+    // Bekor qilish YASHIRILMAYDI: sinovda ham, obunada ham shu yerda turadi.
+    ((plan === "trial" || plan === "plus") && !p.cancelled
+      ? '<button class="plus-cancel" data-action="plus-cancel">Obunani bekor qilish</button>'
+      : "") +
+    (p.cancelled && plan === "plus"
+      ? '<p class="g-note" style="text-align:center;margin-top:12px">Obuna bekor ' +
+        'qilingan. Muddat oxirigacha hamma imkoniyat ochiq qoladi.</p>'
+      : '<p class="g-note" style="text-align:center;margin-top:12px">' +
+        'Istalgan payt bekor qilasiz. Bekor qilinganda ma\'lumotlaringiz saqlanib qoladi.</p>'),
+    "modal-tall modal-plus");
+}
+
+/* SINOV — karta bog‘lash orqali (ega qarori, 2026-09-02).
+   Mashhur ilovalardagi tartib: karta bugun bog‘lanadi, pul 15-kuni
+   yechiladi, 14 kun ichida bekor qilinsa — hech narsa yechilmaydi.
+   Shartlar YASHIRILMAYDI: uchala qadam ham ochiq yozilgan. */
+function openPlusTrialPage() {
+  const p = State.plus || {};
+  const days = p.trial_days || 14;
+  const price = p.price_month || 24900;
+  const first = new Date(Date.now() + days * 86400000);
+  const dateText = first.getDate() + "-" +
+    ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust",
+     "sentabr", "oktabr", "noyabr", "dekabr"][first.getMonth()];
+
+  openModal(days + " kun tekin",
+    '<div class="plus-lock">' + icon("crown", 34, 1.7) + '</div>' +
+    '<p class="plus-lock-t">Bugun hech narsa to‘lamaysiz</p>' +
+    '<div class="trial-steps">' +
+      '<div class="ts"><span class="ts-n">1</span><div><b>Bugun</b>' +
+        'Kartangizni bog‘laysiz. Hisobingizdan pul yechilmaydi va ' +
+        'Bilig plus darrov ochiladi.</div></div>' +
+      '<div class="ts"><span class="ts-n">2</span><div><b>' + days + ' kun davomida</b>' +
+        'Hamma imkoniyat ochiq: chegarasiz sahifa surati, ovozli xulosa, ' +
+        'statistika va o‘qish tarixi.</div></div>' +
+      '<div class="ts"><span class="ts-n">3</span><div><b>' + dateText + ' kuni</b>' +
+        'Birinchi to‘lov yechiladi — ' + money(price) + '. Keyin har oy takrorlanadi.</div></div>' +
+      '<div class="ts is-off"><span class="ts-n">' + icon("x", 13, 2.6) + '</span><div>' +
+        '<b>Bekor qilsangiz</b>' + days + ' kun ichida bekor qilsangiz, ' +
+        '<u>hech qanday pul yechilmaydi</u>. Bekor qilish ikki bosishda, ' +
+        'shu sahifaning o‘zida.</div></div>' +
+    '</div>' +
+    '<button class="btn btn-primary btn-block" data-action="plus-card">' +
+      'Kartani bog‘lash va boshlash</button>' +
+    '<p class="g-note" style="text-align:center">Karta ma\'lumotlari to‘lov ' +
+    'tizimining o‘z sahifasida kiritiladi — biz ularni ko‘rmaymiz va saqlamaymiz.</p>',
+    "modal-tall modal-plus");
+}
+
+/* Bekor qilish — ikki bosishda: tugma, keyin tasdiq. Mashhur ilovalarda
+   shunday; uchinchi ekran ham, «sababini yozing» ham yo‘q. */
+function openPlusCancel() {
+  const p = State.plus || {};
+  const trial = p.plan === "trial";
+  openModal("Obunani bekor qilish",
+    '<p class="plus-lock-d" style="margin-top:4px">' +
+    (trial
+      ? 'Sinov shu zahoti tugaydi va hech qanday pul yechilmaydi. ' +
+        'Farzandingizning kitoblari, Biliglari va butun tarixi joyida qoladi.'
+      : 'To‘langan muddat oxirigacha hamma imkoniyat ochiq qoladi, keyin ' +
+        'ilova tekin versiyaga qaytadi. Ma\'lumotlaringiz o‘chmaydi.') +
+    '</p>' +
+    '<button class="btn btn-danger btn-block" data-action="plus-cancel-yes">' +
+      (trial ? 'Ha, sinovni to‘xtatish' : 'Ha, bekor qilish') + '</button>' +
+    '<button class="btn btn-outline btn-block" style="margin-top:8px" ' +
+      'data-action="open-plus">Yo‘q, davom etaman</button>',
+    "modal-plus");
+}
+
+async function plusCancelConfirm() {
+  try {
+    await api("/api/plus/cancel", { method: "POST", body: {} });
+    await loadPlusState();
+    closeModal();
+    toast("Bekor qilindi. Pul yechilmaydi.", 3200);
+    if (State.currentTab === "home") switchTab("home");
+  } catch (e) { apiError(e); }
+}
+
+async function plusBindCard() {
+  // TO‘LOV TIZIMI ULANADIGAN JOY. Kalit kelganda shu chaqiruv karta
+  // bog‘lash havolasini qaytaradi va foydalanuvchi o‘sha yerga o‘tadi.
+  try {
+    const r = await api("/api/plus/subscribe", { method: "POST", body: { period: "month", trial: true } });
+    if (r.url) { location.href = r.url; return; }
+    openModal(PLUS_NAME,
+      '<div class="plus-lock">' + icon("crown", 34, 1.7) + '</div>' +
+      '<p class="plus-lock-t">To‘lov tez orada ochiladi</p>' +
+      '<p class="plus-lock-d">Bilig plus hozir tayyorlanmoqda. Ochilishi bilan ' +
+      'sizga birinchilardan bo‘lib xabar beramiz — va dastlabki obunachilar ' +
+      'uchun narx ' + money(r.price) + ' bo‘lib qoladi.</p>' +
+      '<button class="btn btn-primary btn-block" data-action="close-modal">Tushunarli</button>',
+      "modal-plus");
+  } catch (e) { apiError(e); }
+}
+
+async function plusBuy(period) {
+  try {
+    const r = await api("/api/plus/subscribe", { method: "POST", body: { period: period } });
+    if (!r.ready) {
+      // To‘lov tizimi hali ulanmagan. Foydalanuvchiga texnik sabab
+      // aytilmaydi — unga faqat nima bo‘lishi kerakligi aytiladi.
+      openModal(PLUS_NAME,
+        '<div class="plus-lock">' + icon("crown", 34, 1.7) + '</div>' +
+        '<p class="plus-lock-t">To‘lov tez orada ochiladi</p>' +
+        '<p class="plus-lock-d">Bilig plus hozir tayyorlanmoqda. Ochilishi bilan ' +
+        'sizga birinchilardan bo‘lib xabar beramiz — va dastlabki obunachilar ' +
+        'uchun narx ' + money(r.price) + ' bo‘lib qoladi.</p>' +
+        '<button class="btn btn-primary btn-block" data-action="close-modal">Tushunarli</button>',
+        "modal-plus");
+    }
+  } catch (e) { apiError(e); }
+}
+
+/* Bosh sahifadagi taklif. Ega talabi: baner ko‘rinsin, lekin bosim
+   bo‘lmasin — shuning uchun matn qiymat haqida, «to‘lang» haqida emas. */
+function plusBannerHtml() {
+  if (State.role !== "parent" || State.activeChildId) return "";
+  const p = State.plus;
+  if (!p) return "";
+  // Chegara hali yoqilmagan bo‘lsa ham baner ko‘rinadi — bu e'lon, ya'ni
+  // odamlar Bilig plus haqida oldindan bilib turadi. Qulf esa chegara
+  // yoqilmaguncha qo‘yilmaydi: bosilmaydigan tugmaga tamg‘a bosish yolg‘on.
+  if (p.plan === "plus") return "";
+  if (p.plan === "trial") {
+    return '<button class="plus-banner is-trial" data-action="open-plus">' +
+      '<span class="pb-ic">' + icon("crown", 20, 1.9) + '</span>' +
+      '<span class="pb-tx"><b>Sinov davri — ' + p.days_left + ' kun qoldi</b>' +
+      '<span>Keyin oddiy versiyaga qaytadi. Ko‘rib chiqasizmi?</span></span>' +
+      icon("chevron-right", 17, 2.2) + '</button>';
+  }
+  // Sinovni ishlatib bo‘lgan ota-onaga boshqacha gapiramiz: unga endi
+  // «sinab ko‘ring» demaymiz, u allaqachon ko‘rgan.
+  if (p.trial_used) {
+    return '<button class="plus-banner" data-action="open-plus">' +
+      '<span class="pb-ic">' + icon("crown", 20, 1.9) + '</span>' +
+      '<span class="pb-tx"><b>Sinov davri tugadi</b>' +
+      '<span>Bilig plusni qaytadan ochsangiz, hammasi o‘sha joyidan davom etadi.</span></span>' +
+      icon("chevron-right", 17, 2.2) + '</button>';
+  }
+  return '<button class="plus-banner" data-action="open-plus">' +
+    '<span class="pb-ic">' + icon("crown", 20, 1.9) + '</span>' +
+    '<span class="pb-tx"><b>Farzandingiz qanday o‘qiyapti?</b>' +
+    '<span>Bilig plusda butun o‘qish tarixi, chegarasiz surat va ovozli xulosa.</span></span>' +
+    icon("chevron-right", 17, 2.2) + '</button>';
+}
+
+// ==========================================================
 // TAB 2: REJALAR — BOLA
 // ==========================================================
 async function renderChildPlans() {
@@ -3159,21 +3511,25 @@ function openParentBookModal(bookId, b, head) {
     (b.has_test
       ? choiceCard({
           ic: "edit", action: "open-book-test-edit", data: { id: bookId },
+          lock: hasPlus() ? null : "edit_test",
           title: "Testni ko‘rish va tahrirlash",
           desc: "Tayyor savollarni tuzatasiz, o‘chirasiz yoki yangisini qo‘shasiz."
         }) +
         choiceCard({
           ic: "help", tone: "soft", action: "open-generate-test", data: { id: bookId },
+          lock: hasPlus() ? null : "make_test",
           title: "Testni qaytadan tuzish",
           desc: "Savollar mos kelmasa, kitob sahifalarini suratga olib yangisini tuzasiz."
         })
       : choiceCard({
           ic: "help", action: "open-generate-test", data: { id: bookId }, tag: "Tavsiya",
+          lock: hasPlus() ? null : "make_test",
           title: "Test tuzish",
           desc: "Kitobning 5-10 ta sahifasini suratga oling — AI savollarni o‘zi tuzadi."
         }) +
         choiceCard({
           ic: "edit", tone: "soft", action: "open-book-test-edit", data: { id: bookId },
+          lock: hasPlus() ? null : "edit_test",
           title: "Testni o‘zim tuzaman",
           desc: "Rasm kerak emas — savol va javoblarni qo‘lda yozib chiqasiz."
         })) +
@@ -3236,7 +3592,7 @@ async function sendPagePhoto(bookId, blob, zone) {
     const res = await api("/api/child/book/" + bookId + "/page_photo" + asChildQuery(), { method: "POST", body: fd });
     if (!res.ok) { toast(res.message || "Qaytadan urinib ko‘ring"); closeModal(); return; }
     showPageResult(res);
-  } catch (e) { toast(e.error || "Xatolik"); closeModal(); }
+  } catch (e) { apiError(e, "Xatolik"); closeModal(); }
 }
 
 function openPageManualModal(bookId) {
@@ -4204,7 +4560,7 @@ function pickGiftPhoto() {
       GiftDraft.photo = res.photo; GiftDraft.emoji = "";
       // Kesish oynasi sovg‘a oynasining o‘rniga ochilgan edi — qaytaramiz.
       openStoreEditModal(GiftDraft.id, true);
-    } catch (e) { toast(e.error || "Rasmni yuklab bo‘lmadi"); }
+    } catch (e) { apiError(e, "Rasmni yuklab bo‘lmadi"); }
   });
 }
 
@@ -5745,7 +6101,7 @@ const Wizard = {
         try {
           await api("/api/parent/books/" + res.book_id + "/cover", { method: "POST", body: fd });
           toast("Muqova saqlandi");
-        } catch (e) { toast(e.error || "Muqovani saqlab bo‘lmadi"); }
+        } catch (e) { apiError(e, "Muqovani saqlab bo‘lmadi"); }
         closeModal();
         self.afterBookAdded();
       }, { skip: true, onSkip: function () { self.afterBookAdded(); } });

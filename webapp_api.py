@@ -147,6 +147,8 @@ _COLUMN_MIGRATIONS = (
     # qarang. Testning qayerdan kelgani yozib boriladi.
     "ALTER TABLE Test_Bank ADD COLUMN source TEXT",
     "ALTER TABLE Book_Tests ADD COLUMN source TEXT",
+    "ALTER TABLE Subscriptions ADD COLUMN cancelled INTEGER DEFAULT 0",
+    "ALTER TABLE Subscriptions ADD COLUMN warned TEXT",
 )
 
 
@@ -321,6 +323,22 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS Group_Kudos (
     to_child   INTEGER,
     phrase     TEXT,
     created_at TEXT
+)""")
+# BILIG PLUS obunasi — oila darajasida (ota-ona bo‘yicha).
+cursor.execute("""CREATE TABLE IF NOT EXISTS Subscriptions (
+    parent_id   INTEGER PRIMARY KEY,
+    plan        TEXT DEFAULT 'free',
+    period      TEXT,
+    started_at  TEXT,
+    expires_at  TEXT,
+    trial_used  INTEGER DEFAULT 0,
+    price       INTEGER DEFAULT 0,
+    months_paid INTEGER DEFAULT 0,
+    provider    TEXT,
+    provider_id TEXT,
+    cancelled   INTEGER DEFAULT 0,
+    warned      TEXT,
+    updated_at  TEXT
 )""")
 cursor.execute("""CREATE TABLE IF NOT EXISTS Coin_Ledger (
     entry_id   INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -2238,6 +2256,12 @@ def api_child_profile():
 @require_auth
 def parent_home(child_id):
     """Bosh sahifa (ota-ona) — tanlangan farzand bo‘yicha to‘liq holat: faoliyat, kitoblar, natijalar."""
+    # `detail=1` — farzandning STATISTIKA sahifasi. Bosh sahifa bu
+    # belgini yubormaydi, shuning uchun u hech qachon to‘silmaydi.
+    if request.args.get("detail") == "1":
+        blocked = plus_block("stats")
+        if blocked:
+            return blocked
     cursor.execute(
         "SELECT name, balance_coins, streak_days, badges FROM Users WHERE user_id = ?", (child_id,)
     )
@@ -2405,6 +2429,13 @@ def parent_add_child():
     Telegram hisobi bo‘lishi shart emas. Unga 8 xonali kod beriladi:
     keyinchalik o‘z telefonidan kirmoqchi bo‘lsa, shu kodni kiritadi.
     """
+    cursor.execute("SELECT COUNT(*) FROM Family_Link WHERE parent_id = ?", (g.user_id,))
+    have = (cursor.fetchone() or [0])[0]
+    lim = PLUS_LIMITS["children"]["free"]
+    if plus_enforced() and not plus_active(g.user_id) and have >= lim:
+        return jsonify({"error": "Tekin versiyada %d ta farzand qo‘shiladi" % lim,
+                        "plus": {"feature": "children", "name": "Farzandlar",
+                                 "used": have, "limit": lim, "ok": False}}), 402
     data = request.get_json(force=True) or {}
     name = (data.get("name") or "").strip()
     avatar_id = data.get("avatar_id") or "fox"
@@ -2972,6 +3003,10 @@ def parent_save_test(book_id):
     Bu test UMUMIY BANKKA yozilmaydi: u bitta oilaning o‘z testi,
     boshqa oilalarga tarqalmasligi kerak.
     """
+    gate = plus_gate("edit_test")
+    if not gate["ok"]:
+        return jsonify({"error": "Testni qo‘lda yozish — Bilig plus imkoniyati",
+                        "plus": gate}), 402
     data = request.get_json(force=True) or {}
     clean = []
     for q in (data.get("questions") or []):
@@ -3026,6 +3061,10 @@ def parent_generate_test(book_id):
     AVVAL umumiy bank tekshiriladi: bu kitobga test allaqachon tuzilgan
     bo‘lsa, AI umuman chaqirilmaydi va test bir zumda beriladi.
     """
+    gate = plus_gate("make_test")
+    if not gate["ok"]:
+        return jsonify({"error": "Suratdan test tuzish — Bilig plus imkoniyati",
+                        "plus": gate}), 402
     cursor.execute("SELECT title, author FROM Plan_Books WHERE book_id = ?", (book_id,))
     _row = cursor.fetchone()
     title = _row[0] if _row else ""
@@ -3456,6 +3495,15 @@ def _start_talk_check(child_id, parent_id, book_id, topic):
                    (child_id, today))
     if cursor.fetchone():
         return
+    # Tekin versiyada kechki suhbat savoli haftada bir marta beriladi.
+    # Chegara SAVOL TUG‘ILISHIDA qo‘yiladi: ota-ona hech qanday qulf
+    # ko‘rmaydi, shunchaki savol kamroq keladi.
+    if plus_enforced() and not plus_active(parent_id):
+        week = _period_start("week")
+        cursor.execute("SELECT COUNT(*) FROM Talk_Checks WHERE parent_id = ? "
+                       "AND created_at >= ?", (parent_id, week))
+        if (cursor.fetchone() or [0])[0] >= PLUS_LIMITS["evening"]["free"]:
+            return
 
     name = child_name_of(child_id)
     with db_lock:
@@ -3987,6 +4035,9 @@ def child_submit_page_photo(book_id):
         return jsonify({"error": "Rasm topilmadi"}), 400
     image_bytes = request.files["photo"].read()
     child_id = _require_child_actor(request)
+    blocked = plus_block("page_check", child_id)
+    if blocked:
+        return blocked
 
     # 1) Aynan shu rasm ilgari tekshirilganmi? Bo‘lsa — AI chaqirilmaydi.
     img_hash = hashlib.sha256(image_bytes).hexdigest()
@@ -4149,6 +4200,9 @@ def _apply_page_progress(book_id, child_id, new_page):
 @require_auth
 def child_submit_voice(book_id):
     """Bola audio xulosa yuboradi -> AI Ustoz tahlil qiladi -> bonus Bilig + ota-onaga hisobot."""
+    blocked = plus_block("voice", _require_child_actor(request))
+    if blocked:
+        return blocked
     if "audio" not in request.files:
         return jsonify({"error": "Audio topilmadi"}), 400
     audio_bytes = request.files["audio"].read()
@@ -4415,6 +4469,9 @@ def child_get_talk(book_id):
 @require_auth
 def child_submit_talk(book_id):
     """Bola AI ustoz savoliga ovozli javob yuboradi."""
+    blocked = plus_block("talk", _require_child_actor(request))
+    if blocked:
+        return blocked
     stage = request.args.get("stage") or "start"
     if stage not in TALK_STAGES:
         stage = "start"
@@ -5190,6 +5247,14 @@ def groups_create():
     """Guruhni ota-ona ochadi va o‘zi admin bo‘ladi."""
     if _user_role() == "child":
         return jsonify({"error": "Guruhni ota-ona ochadi"}), 403
+    lim = PLUS_LIMITS["group_own"]["free"]
+    free_plan = plus_enforced() and not plus_active(g.user_id)
+    if free_plan:
+        cursor.execute("SELECT COUNT(*) FROM Groups WHERE admin_user_id = ?", (g.user_id,))
+        if (cursor.fetchone() or [0])[0] >= lim:
+            return jsonify({"error": "Tekin versiyada %d ta guruh ochiladi" % lim,
+                            "plus": {"feature": "group_own", "name": "O‘z guruhi",
+                                     "used": lim, "limit": lim, "ok": False}}), 402
     data = request.get_json(force=True) or {}
     name = (data.get("name") or "").strip()[:GROUP_NAME_MAX]
     if len(name) < 3:
@@ -5204,9 +5269,13 @@ def groups_create():
         if not code:
             return jsonify({"error": "Kod yaratib bo‘lmadi, qaytadan urinib ko‘ring"}), 500
         now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        # Tekin versiyada guruh 30 a'zogacha. Chegara Groups.max_members
+        # ustuniga yoziladi — a'zo qo‘shish yo‘llari uni allaqachon
+        # hisobga oladi, ya'ni yangi tekshiruv kerak emas.
         cursor.execute(
-            "INSERT INTO Groups (name, admin_user_id, invite_code, searchable, created_at) "
-            "VALUES (?, ?, ?, ?, ?)", (name, g.user_id, code, searchable, now)
+            "INSERT INTO Groups (name, admin_user_id, invite_code, searchable, "
+            "max_members, created_at) VALUES (?, ?, ?, ?, ?, ?)",
+            (name, g.user_id, code, searchable, GROUP_FREE_MEMBERS if free_plan else 0, now)
         )
         gid = cursor.lastrowid
         cursor.execute(
@@ -5296,6 +5365,14 @@ def groups_join():
     if not code.startswith("BILIG-"):
         code = "BILIG-" + code.lstrip("-")
     child_id = _resolve_active_child(request)
+    # Tekin versiyada bola bitta guruhga a'zo bo‘ladi.
+    lim = PLUS_LIMITS["group_join"]["free"]
+    if plus_enforced() and not plus_active(_family_parent(g.user_id)):
+        cursor.execute("SELECT COUNT(*) FROM Group_Members WHERE child_id = ?", (child_id,))
+        if (cursor.fetchone() or [0])[0] >= lim:
+            return jsonify({"error": "Tekin versiyada %d ta guruhga a'zo bo‘linadi" % lim,
+                            "plus": {"feature": "group_join", "name": "Guruhga a'zolik",
+                                     "used": lim, "limit": lim, "ok": False}}), 402
     if child_id == g.user_id and _user_role() != "child":
         return jsonify({"error": "Avval farzandni tanlang"}), 400
 
@@ -6003,6 +6080,9 @@ def tasks_create(gid):
     child_id, is_admin, err = _task_guard(gid, None, need_admin=True)
     if err:
         return err
+    blocked = plus_block("task_create")
+    if blocked:
+        return blocked
     cursor.execute("SELECT COUNT(*) FROM Group_Tasks WHERE group_id = ? AND status = 'open'", (gid,))
     if cursor.fetchone()[0] >= TASK_MAX_OPEN:
         return jsonify({"error": "Bir vaqtda eng ko‘pi %d ta musobaqa bo‘ladi" % TASK_MAX_OPEN}), 400
@@ -6344,7 +6424,73 @@ def _summary_loop():
             finalize_due_tasks()
         except Exception:
             pass
+        try:
+            check_trials()
+        except Exception:
+            pass
         time.sleep(1800)          # yarim soatda bir marta tekshiradi
+
+
+def check_trials():
+    """Sinov tugashidan oldin ogohlantiradi va tugaganda xabar beradi.
+
+    Ega talabi emas, mening qo‘shganim: sinov jimgina tugab, pul
+    yechilib qolsa — ota-ona ranjiydi va pulni qaytarishni so‘raydi.
+    Ogohlantirish ishonchni saqlaydi va bekor qilishni oson qiladi.
+
+    Ikki xabar: 3 kun qolganda va tugagan kuni. Har biri BIR MARTA
+    yuboriladi (`warned` ustunida qaysi xabar ketgani yozib boriladi).
+    """
+    try:
+        cursor.execute(
+            "SELECT parent_id, plan, expires_at, COALESCE(warned, ''), "
+            "COALESCE(cancelled, 0) FROM Subscriptions WHERE plan IN ('trial', 'plus')")
+        rows = cursor.fetchall()
+    except Exception:
+        return 0
+    now = datetime.now()
+    sent = 0
+    for parent_id, plan, expires, warned, cancelled in rows:
+        if not expires:
+            continue
+        try:
+            secs = (datetime.strptime(expires[:19], "%Y-%m-%d %H:%M:%S") - now).total_seconds()
+        except Exception:
+            continue
+        left = int(secs // 86400)
+        # Ko‘rsatiladigan raqam YUQORIGA yaxlitlanadi: 1,9 kun qolganda
+        # «1 kun qoldi» deyish ota-onani noto‘g‘ri shoshiltiradi.
+        show = int(-(-secs // 86400)) if secs > 0 else 0
+        mark = None
+        title = body = ""
+        if left < 0 and warned != "end":
+            mark = "end"
+            title = "Sinov davri tugadi"
+            body = ("Bilig plus yopildi. Farzandingizning kitoblari, Biliglari va "
+                    "butun tarixi joyida — istagan payt qaytadan ochasiz.")
+        elif 0 <= left <= 3 and warned not in ("soon", "end") and not cancelled:
+            mark = "soon"
+            price = plus_price_now(parent_id, "month")
+            title = "Sinovga %d kun qoldi" % max(1, show)
+            body = ("Sinov tugagach birinchi to‘lov yechiladi — %s so‘m. "
+                    "Agar davom ettirmoqchi bo‘lmasangiz, obunani shu kunlarda "
+                    "bekor qiling: hech qanday pul yechilmaydi."
+                    % "{:,}".format(price).replace(",", " "))
+        if not mark:
+            continue
+        try:
+            cursor.execute("SELECT child_id FROM Family_Link WHERE parent_id = ? LIMIT 1",
+                           (parent_id,))
+            r = cursor.fetchone()
+            _feed(parent_id, r[0] if r else None, "plus", title, body)
+            with db_lock:
+                cursor.execute("UPDATE Subscriptions SET warned = ? WHERE parent_id = ?",
+                               (mark, parent_id))
+                conn.commit()
+            sent += 1
+        except Exception:
+            traceback.print_exc()
+    return sent
 
 
 def start_summary_worker():
@@ -6392,6 +6538,313 @@ def admin_stats():
         return jsonify({"error": "Ruxsat yo‘q"}), 403
     text = generate_admin_stats_text()
     return jsonify({"html": text})
+
+
+# ==========================================================
+# BILIG PLUS — obuna, chegaralar va ruxsat
+# ----------------------------------------------------------
+# Ega qarori (2026-09-02). Asosiy g‘oya: pul AI xarajati uchun emas,
+# ISBOT uchun olinadi — tasdiqlangan o‘qish, sertifikat, pasport.
+#
+# MUHIM QOIDALAR:
+#  1. Chegara BOLAGA pul tilida ko‘rsatilmaydi. Bolada narx ham,
+#     tugma ham, «to‘lanmagan» so‘zi ham bo‘lmaydi — bitta jumla.
+#  2. Chegara kunlik/haftalik (oylik emas): oylik chegara oyning
+#     o‘rtasida odatni buzadi, kunlik esa har kuni qaytishga sabab.
+#  3. Sinov 14 kun, ota-ona chegaraga BIRINCHI marta urilganda
+#     o‘z-o‘zidan boshlanadi (ega tanlovi). Bir marta beriladi.
+#  4. Ilova ommaga chiqmaguncha chegara O‘CHIQ turadi (PLUS_ENFORCE).
+#     Ega aytganda yoqiladi — kod o‘zgarmaydi.
+# ==========================================================
+PLUS_TRIAL_DAYS = 14
+PLUS_MONTH_PRICE = 24900          # oylik to‘liq narx
+PLUS_MONTH_FIRST = 14940          # birinchi 6 oy (40% chegirma)
+PLUS_DISCOUNT_MONTHS = 6
+PLUS_YEAR_PRICE = 149000          # yillik (oylikka nisbatan 50% arzon)
+GROUP_FREE_MEMBERS = 30           # tekin versiyada guruh a'zolari chegarasi
+
+# Chegaralar. `free` — tekin versiyada nechta; 0 = umuman yo‘q.
+# `period` — chegara qaysi muddatga: day | week | month.
+PLUS_LIMITS = {
+    "page_check": {"free": 1, "period": "day",
+                   "name": "Sahifa surati", "who": "child"},
+    "voice":      {"free": 1, "period": "week",
+                   "name": "Ovozli xulosa", "who": "child"},
+    "talk":       {"free": 4, "period": "month",
+                   "name": "AI ustoz savoli", "who": "child"},
+    "evening":    {"free": 1, "period": "week",
+                   "name": "Kechki suhbat", "who": "family"},
+    "make_test":  {"free": 0, "name": "Suratdan test tuzish"},
+    "edit_test":  {"free": 0, "name": "Testni qo‘lda yozish"},
+    "children":   {"free": 1, "name": "Farzandlar soni"},
+    "stats":      {"free": 0, "name": "Statistika va tarix"},
+    # Sertifikat hali YO‘Q — ega «hozircha kerak emas» dedi (2026-09-02).
+    # Yasalganda shu qatorni ochamiz.
+    # "certificate": {"free": 0, "name": "Sertifikat va oylik pasport"},
+    "group_join": {"free": 1, "name": "Guruhga a'zolik"},
+    "group_own":  {"free": 1, "name": "O‘z guruhi"},
+    "task_create": {"free": 0, "name": "Musobaqa e'lon qilish"},
+}
+
+
+def plus_enforced():
+    """Chegaralar hozir ishlayaptimi? Ilova ommaga chiqmaguncha — yo‘q."""
+    return os.getenv("PLUS_ENFORCE", "0") == "1"
+
+
+def _family_parent(uid):
+    """Foydalanuvchi qaysi oilaga tegishli — obuna oila darajasida."""
+    try:
+        cursor.execute("SELECT role FROM Users WHERE user_id = ?", (uid,))
+        r = cursor.fetchone()
+        if r and r[0] == "child":
+            return get_parent_id(uid) or uid
+    except Exception:
+        pass
+    return uid
+
+
+def plus_plan(parent_id):
+    """Oilaning holati: free | trial | plus. Muddati o‘tgani free bo‘ladi."""
+    try:
+        cursor.execute(
+            "SELECT plan, expires_at FROM Subscriptions WHERE parent_id = ?", (parent_id,))
+        row = cursor.fetchone()
+    except Exception:
+        return "free"
+    if not row or not row[0] or row[0] == "free":
+        return "free"
+    if row[1]:
+        try:
+            if datetime.strptime(row[1][:19], "%Y-%m-%d %H:%M:%S") < datetime.now():
+                return "free"
+        except Exception:
+            pass
+    return row[0]
+
+
+def plus_active(parent_id):
+    """To‘liq imkoniyat ochiqmi (sinov ham, obuna ham ochiq hisoblanadi)."""
+    return plus_plan(parent_id) in ("trial", "plus")
+
+
+def _period_start(period):
+    now = datetime.now()
+    if period == "day":
+        return now.strftime("%Y-%m-%d 00:00:00")
+    if period == "week":
+        return (now - timedelta(days=now.weekday())).strftime("%Y-%m-%d 00:00:00")
+    return now.strftime("%Y-%m-01 00:00:00")
+
+
+def plus_used(feature, child_id, parent_id):
+    """Shu davrda nechta ishlatilgan. Mavjud jurnallardan hisoblanadi —
+    yangi jadval kerak emas."""
+    cfg = PLUS_LIMITS.get(feature) or {}
+    period = cfg.get("period")
+    if not period:
+        return 0
+    since = _period_start(period)
+    try:
+        if feature == "page_check":
+            cursor.execute(
+                "SELECT COUNT(*) FROM Page_Check_Log WHERE child_id = ? "
+                "AND from_cache = 0 AND created_at >= ?", (child_id, since))
+        elif feature in ("voice", "talk"):
+            cursor.execute(
+                "SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id = ? "
+                "AND type = ? AND created_at >= ?",
+                (child_id, "voice" if feature == "voice" else "talk", since))
+        elif feature == "evening":
+            cursor.execute(
+                "SELECT COUNT(*) FROM Talk_Checks WHERE parent_id = ? AND created_at >= ?",
+                (parent_id, since))
+        else:
+            return 0
+        r = cursor.fetchone()
+        return (r[0] if r else 0) or 0
+    except Exception:
+        return 0
+
+
+def plus_gate(feature, user_id=None, child_id=None):
+    """Shu amal hozir ruxsatmi?
+
+    Qaytaradi: {"ok": bool, "plan": ..., "used": n, "limit": n,
+                "feature": ..., "name": ...}
+    `ok=False` bo‘lsa — chegara to‘lgan yoki imkoniyat faqat plusda.
+    """
+    uid = user_id if user_id is not None else getattr(g, "user_id", 0)
+    parent_id = _family_parent(uid)
+    plan = plus_plan(parent_id)
+    cfg = PLUS_LIMITS.get(feature) or {}
+    limit = cfg.get("free", 0)
+    out = {"ok": True, "plan": plan, "used": 0, "limit": limit,
+           "feature": feature, "name": cfg.get("name", feature)}
+    if plan in ("trial", "plus") or not plus_enforced():
+        return out
+    if not cfg.get("period"):
+        # Bir martalik imkoniyat: bor yoki yo‘q.
+        out["ok"] = limit > 0
+        return out
+    out["used"] = plus_used(feature, child_id if child_id is not None else uid, parent_id)
+    out["ok"] = out["used"] < limit
+    return out
+
+
+def plus_start_trial(parent_id):
+    """Sinovni boshlash — ota-ona chegaraga BIRINCHI marta urilganda.
+
+    Bir marta beriladi: sinov tugagach qaytadan boshlanmaydi.
+    Qaytaradi: boshlandimi (True/False).
+    """
+    try:
+        cursor.execute(
+            "SELECT plan, trial_used FROM Subscriptions WHERE parent_id = ?", (parent_id,))
+        row = cursor.fetchone()
+    except Exception:
+        return False
+    if row and (row[1] or row[0] == "plus"):
+        return False
+    now = datetime.now()
+    with db_lock:
+        cursor.execute(
+            "INSERT OR REPLACE INTO Subscriptions (parent_id, plan, period, started_at, "
+            "expires_at, trial_used, price, months_paid, provider, provider_id, updated_at) "
+            "VALUES (?, 'trial', NULL, ?, ?, 1, 0, 0, NULL, NULL, ?)",
+            (parent_id, now.strftime("%Y-%m-%d %H:%M:%S"),
+             (now + timedelta(days=PLUS_TRIAL_DAYS)).strftime("%Y-%m-%d %H:%M:%S"),
+             now.strftime("%Y-%m-%d %H:%M:%S")))
+        conn.commit()
+    return True
+
+
+def plus_price_now(parent_id, period="month"):
+    """Shu oila uchun hozirgi narx. Chegirma har obunaning birinchi
+    6 oyiga tegishli (ega qarori) — yillikda chegirma yo‘q, u allaqachon
+    oylikka nisbatan 50% arzon."""
+    if period == "year":
+        return PLUS_YEAR_PRICE
+    try:
+        cursor.execute("SELECT months_paid FROM Subscriptions WHERE parent_id = ?", (parent_id,))
+        row = cursor.fetchone()
+        paid = (row[0] if row else 0) or 0
+    except Exception:
+        paid = 0
+    return PLUS_MONTH_FIRST if paid < PLUS_DISCOUNT_MONTHS else PLUS_MONTH_PRICE
+
+
+def plus_block(feature, child_id=None):
+    """Chegara to‘lgan bo‘lsa tayyor javob qaytaradi, aks holda None.
+
+    Har bir pullik amal shu bitta funksiyadan o‘tadi — chegaralar
+    tarqoq joyda emas, bitta jadvalda (`PLUS_LIMITS`) turadi.
+    Javob kodi 402: telefon buni ko‘rib, Bilig plus oynasini ochadi.
+    """
+    gate = plus_gate(feature, child_id=child_id)
+    if gate["ok"]:
+        return None
+    return jsonify({"error": gate["name"] + " — Bilig plus imkoniyati",
+                    "plus": gate}), 402
+
+
+@app.route("/api/plus", methods=["GET"])
+@require_auth
+def plus_status():
+    """Bilig plus sahifasi uchun hamma ma'lumot bitta javobda."""
+    parent_id = _family_parent(g.user_id)
+    plan = plus_plan(parent_id)
+    days_left = 0
+    try:
+        cursor.execute(
+            "SELECT expires_at, period, trial_used, months_paid, COALESCE(cancelled, 0) "
+            "FROM Subscriptions WHERE parent_id = ?", (parent_id,))
+        row = cursor.fetchone()
+    except Exception:
+        row = None
+    if row and row[0]:
+        try:
+            days_left = max(0, (datetime.strptime(row[0][:19], "%Y-%m-%d %H:%M:%S")
+                                - datetime.now()).days)
+        except Exception:
+            days_left = 0
+    return jsonify({
+        "plan": plan,
+        "enforced": plus_enforced(),
+        "days_left": days_left,
+        "period": (row[1] if row else None),
+        "trial_used": bool(row[2]) if row else False,
+        "cancelled": bool(row[4]) if row else False,
+        "trial_days": PLUS_TRIAL_DAYS,
+        "price_month": plus_price_now(parent_id, "month"),
+        "price_month_full": PLUS_MONTH_PRICE,
+        "price_year": PLUS_YEAR_PRICE,
+        "discount_months": PLUS_DISCOUNT_MONTHS,
+    })
+
+
+@app.route("/api/plus/subscribe", methods=["POST"])
+@require_auth
+def plus_subscribe():
+    """Obuna bo‘lish. TO‘LOV TIZIMI HALI ULANMAGAN.
+
+    Kalit kelganda aynan shu yerga ulanadi: bu yerda to‘lov havolasi
+    yaratiladi va foydalanuvchi o‘sha yerga yuboriladi. Hozircha
+    niyat yozib qo‘yiladi — kim obuna bo‘lmoqchi bo‘lgani ma'lum
+    bo‘lsin (ega ommaga chiqishdan oldin shuni ko‘rmoqchi).
+    """
+    data = request.get_json(force=True) or {}
+    period = "year" if data.get("period") == "year" else "month"
+    parent_id = _family_parent(g.user_id)
+    price = plus_price_now(parent_id, period)
+    ai_service.log_line("[plus] obuna niyati: oila=%s muddat=%s narx=%s"
+                        % (parent_id, period, price))
+    return jsonify({"ok": True, "ready": False, "period": period, "price": price})
+
+
+@app.route("/api/plus/cancel", methods=["POST"])
+@require_auth
+def plus_cancel():
+    """Obunani bekor qilish. Ilovaning o‘zidan, ikki bosishda.
+
+    Sinov davrida bekor qilinsa — darrov tugaydi va HECH QANDAY pul
+    yechilmaydi (biz kartaga umuman tegmaganmiz). To‘langan obuna
+    bekor qilinsa — to‘langan muddat oxirigacha ochiq qoladi, keyin
+    o‘z-o‘zidan tekin versiyaga qaytadi.
+    """
+    parent_id = _family_parent(g.user_id)
+    plan = plus_plan(parent_id)
+    if plan == "free":
+        return jsonify({"ok": True, "plan": "free", "already": True})
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with db_lock:
+        if plan == "trial":
+            cursor.execute(
+                "UPDATE Subscriptions SET plan = 'free', cancelled = 1, expires_at = ?, "
+                "updated_at = ? WHERE parent_id = ?", (now, now, parent_id))
+        else:
+            cursor.execute(
+                "UPDATE Subscriptions SET cancelled = 1, updated_at = ? WHERE parent_id = ?",
+                (now, parent_id))
+        conn.commit()
+    ai_service.log_line("[plus] bekor qilindi: oila=%s holat=%s" % (parent_id, plan))
+    return jsonify({"ok": True, "plan": plus_plan(parent_id), "was": plan})
+
+
+@app.route("/api/plus/trial", methods=["POST"])
+@require_auth
+def plus_trial():
+    """14 kunlik sinovni boshlash.
+
+    DIQQAT: bu manzilni telefon TO‘G‘RIDAN chaqirmaydi. Sinov karta
+    bog‘langandan keyin boshlanadi — ya'ni to‘lov tizimi kartani
+    tasdiqlagach, ulanish kodi shu yerni chaqiradi. Hozir u sinov
+    uchun ochiq turibdi (to‘lov hali ulanmagan).
+    """
+    parent_id = _family_parent(g.user_id)
+    started = plus_start_trial(parent_id)
+    return jsonify({"ok": True, "started": started, "plan": plus_plan(parent_id),
+                    "days": PLUS_TRIAL_DAYS})
 
 
 # ==========================================================

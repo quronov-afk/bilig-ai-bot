@@ -2196,3 +2196,121 @@ textarea.g-input { resize: vertical; line-height: 1.45; }
   color: var(--text-soft);
 }
 .talkq-q { margin: 0; font-size: 15px; font-weight: 600; line-height: 1.5; }
+
+/* ==========================================================
+   BILIG PLUS — toj ramzi, qulf, obuna sahifasi
+   ----------------------------------------------------------
+   Rang: Bilig tangasining oltini (--gold). Sabab: ilovada bu rang
+   allaqachon «qadr, mukofot» ma'nosini bildiradi.
+   ========================================================== */
+.plus-btn { color: var(--gold-deep); }
+
+/* Yopiq imkoniyat ustidagi tamg‘a */
+.plus-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--gold); flex: none;
+}
+.is-locked { position: relative; }
+.is-locked .choice-t, .is-locked .choice-d { opacity: .62; }
+.is-locked .plus-badge { position: absolute; top: 11px; right: 13px; }
+
+/* Chegara oynasi */
+.modal-plus .plus-lock {
+  display: flex; align-items: center; justify-content: center;
+  width: 64px; height: 64px; margin: 2px auto 14px;
+  border-radius: 20px; background: var(--gold-bg); color: var(--gold-deep);
+}
+.plus-lock-t { font-size: 17px; font-weight: 800; text-align: center; margin: 0 0 8px; }
+.plus-lock-d {
+  font-size: 14.5px; color: var(--text-soft); line-height: 1.55;
+  text-align: center; margin: 0 0 18px;
+}
+
+/* Obuna sahifasining boshi */
+.plus-head {
+  text-align: center; padding: 6px 0 18px; color: var(--gold-deep);
+}
+.plus-head b { display: block; font-size: 21px; color: var(--text); margin: 8px 0 3px; }
+.plus-head span { font-size: 14px; color: var(--text-soft); }
+.plus-head.is-on b { color: var(--gold-deep); }
+
+.plus-why {
+  background: var(--gold-bg); border: 1px solid #F6D77E; border-radius: var(--radius-md);
+  padding: 13px 15px; font-size: 14px; line-height: 1.55; color: var(--text-soft);
+  margin-bottom: 16px;
+}
+.plus-why b { display: block; color: var(--gold-deep); font-size: 15px; margin-bottom: 3px; }
+
+/* Taqqoslash jadvali */
+.plus-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.plus-table th {
+  text-align: left; font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--text-faint); font-weight: 800; padding: 0 6px 9px;
+}
+.plus-table th.c, .plus-table td.c { text-align: center; width: 74px; }
+.plus-table th.c svg { vertical-align: -2px; color: var(--gold); }
+.plus-table td { padding: 9px 6px; border-top: 1px solid var(--border); line-height: 1.35; }
+.v-free { color: var(--text-soft); font-size: 13px; }
+.v-no { color: var(--text-faint); display: inline-flex; }
+.v-plus { color: var(--success-deep); font-weight: 700; font-size: 13px; }
+
+/* Narx tugmalari */
+.plus-prices { display: flex; gap: 10px; margin-top: 18px; }
+.plus-price {
+  flex: 1; border: 1.5px solid var(--border); background: var(--surface);
+  border-radius: var(--radius-md); padding: 13px 12px; font-family: inherit;
+  display: flex; flex-direction: column; align-items: center; gap: 2px; cursor: pointer;
+}
+.plus-price.is-best { border-color: var(--gold); background: var(--gold-bg); }
+.plus-price:active { transform: scale(.98); }
+.pp-lab { font-size: 12.5px; color: var(--text-soft); font-weight: 700; }
+.pp-val { font-size: 17px; font-weight: 800; color: var(--text); }
+.pp-old { font-size: 12.5px; color: var(--text-faint); text-decoration: line-through; }
+.pp-tag { font-size: 11.5px; color: var(--gold-deep); font-weight: 700; }
+
+/* Bosh sahifadagi taklif */
+.plus-banner {
+  display: flex; align-items: center; gap: 12px; width: 100%; text-align: left;
+  background: var(--surface); border: 1px solid #F6D77E; border-radius: var(--radius-lg);
+  padding: 13px 15px; margin-bottom: 14px; font-family: inherit;
+  box-shadow: var(--shadow-raised); color: var(--text-faint); cursor: pointer;
+}
+.plus-banner:active { transform: scale(.99); }
+.plus-banner .pb-ic {
+  width: 40px; height: 40px; border-radius: 12px; flex: none;
+  background: var(--gold-bg); color: var(--gold-deep);
+  display: flex; align-items: center; justify-content: center;
+}
+.plus-banner .pb-tx { flex: 1; min-width: 0; }
+.plus-banner .pb-tx b { display: block; font-size: 15px; color: var(--text); margin-bottom: 2px; }
+.plus-banner .pb-tx span { font-size: 13px; color: var(--text-soft); line-height: 1.4; }
+.plus-banner.is-trial { border-color: var(--brand); }
+.plus-banner.is-trial .pb-ic { background: var(--brand-bg); color: var(--brand-deep); }
+
+/* Sinov sahifasidagi qadamlar */
+.trial-steps { margin: 4px 0 18px; }
+.trial-steps .ts { display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--border); }
+.trial-steps .ts:last-child { border-bottom: none; }
+.trial-steps .ts-n {
+  width: 26px; height: 26px; border-radius: 9px; flex: none;
+  background: var(--gold-bg); color: var(--gold-deep);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 14px;
+}
+.trial-steps .ts.is-off .ts-n { background: var(--success-bg); color: var(--success-deep); }
+.trial-steps .ts div { font-size: 13.8px; color: var(--text-soft); line-height: 1.5; }
+.trial-steps .ts b { display: block; color: var(--text); font-size: 14.5px; margin-bottom: 2px; }
+.trial-steps .ts u { text-decoration: none; color: var(--success-deep); font-weight: 700; }
+
+/* Qulflangan «Farzand qo‘shish» kartochkasi */
+.kid-chip.is-locked { position: relative; opacity: .75; }
+.kid-chip.is-locked .plus-badge { position: absolute; top: 8px; right: 9px; }
+
+/* Obunani bekor qilish — yashirilmaydi, lekin ko‘zga urilmaydi ham */
+.plus-cancel {
+  display: block; width: 100%; margin-top: 14px; padding: 11px 0;
+  background: none; border: none; font-family: inherit; font-size: 14.5px;
+  font-weight: 700; color: var(--text-faint); cursor: pointer;
+}
+.plus-cancel:active { opacity: .6; }
+.kid-more.is-locked { color: var(--gold); }

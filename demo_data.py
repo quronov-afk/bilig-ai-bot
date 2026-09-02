@@ -502,9 +502,30 @@ def _fill_demo_group(parent_id, child_id, child_display_name):
     return gid
 
 
+def _demo_plus(parent_id):
+    """Namoyishda Bilig plus SINOV holatida turadi.
+
+    Sabab: investorga ko‘rsatishda hech bir ekran qulflanmasin, lekin
+    premium tizim borligi ham ko‘rinib tursin — bosh sahifada «sinov
+    davri, N kun qoldi» yozuvi chiqadi.
+    """
+    now = datetime.now()
+    try:
+        cursor.execute(
+            "INSERT OR REPLACE INTO Subscriptions (parent_id, plan, period, started_at, "
+            "expires_at, trial_used, price, months_paid, provider, provider_id, updated_at) "
+            "VALUES (?, 'trial', NULL, ?, ?, 1, 0, 0, NULL, NULL, ?)",
+            (parent_id, (now - timedelta(days=3)).strftime("%Y-%m-%d %H:%M:%S"),
+             (now + timedelta(days=11)).strftime("%Y-%m-%d %H:%M:%S"),
+             now.strftime("%Y-%m-%d %H:%M:%S")))
+    except Exception:
+        pass          # jadval hali yaratilmagan bo‘lsa — e'tiborsiz
+
+
 def fill_demo_child(parent_id, child_id):
     """Farzand profilini namoyish uchun to‘liq ma'lumot bilan to‘ldiradi."""
     clear_demo_child(child_id)
+    _demo_plus(parent_id)
     book_ids = {}
 
     # 1. Marafon — bir nechta kitob, marra sovrini bilan
