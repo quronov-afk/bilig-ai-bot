@@ -1,0 +1,477 @@
+{
+ "title": "Avazxon",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "jasorat",
+   "do‘stlik",
+   "vatanparvarlik",
+   "sadoqat",
+   "xalq og‘zaki ijodi"
+  ],
+  "theme": "Asarda mardlik, sadoqat, sarmast bo‘lmaslik, el-yurt va oila oldidagi burch hamda oliyhimmatlik ulug‘lanadi. Bosh qahramon Avazxon va Go‘ro‘gli sulton o‘z yurtining erkinligi va or-nomusi yo‘lida har qanday mushkulot va xatarlarni yengib o‘tishadi.",
+  "summary": "Chambil yurtida sultonlik qilayotgan Go‘ro‘gli sulton huzuriga bir qari baxshi kelib, Xunxor yurtida zolim shoh qo‘lida bo‘lgan o‘n uch yoshli go‘zal va mard Avazxon haqida doston aytadi. Avazxonning ta'rifini eshitgan Go‘ro‘gli uni o‘ziga o‘g‘il qilib olish niyatida Xunxorga borishni maqsad qiladi. Avvaliga Go‘ro‘glining boqindi o‘g‘li Hasanxon qirq yigit bilan yo‘lga chiqadi, lekin Badbaxt belidagi vahimali tumanni ko‘rib orqaga qaytadi. Shunda Go‘ro‘gli sulton yolg‘iz o‘zi G‘irko‘k otida Xunxor yurtiga otlanadi.\n\nGo‘ro‘gli Xizir bobosining maslahatiga kirib, o‘zbek savdogari kiyimida Avazxonning enasi Guloyim va otasi Bulduruq qassobning xonadoniga boradi. U o‘zini Guloyimning ukasi Qo‘ng‘irboy deb tanishtirib, Avazxon bilan uchrashadi hamda uni chaqqonlik bilan Chambilga olib qochadi. Xunxorshoh ularning orqasidan qo‘shin va bahodirlarini yuboradi. Avazxon yakkama-yakka jangda azim Govdaroz devni yengadi.\n\nKeyinchalik Xunxorshoh boshqa to‘rtta podshoh bilan birlashib Chambilga yurish qiladi. Janglar davomida xiyonat va hiylalar sodir bo‘ladi: Bektosh arab va Amloq ayyor Go‘ro‘gli hamda Avazxonni behush dori bilan asir olishadi. Biroq Sarvinoz malikaning yordami va Go‘ro‘glining favqulodda kuchi bilan dushmanlar tor-mor etiladi, Amloq ayyor munosib jazo oladi.\n\nKeyingi voqealarda Avazxon Hashtarxon yurtiga borib, ulkan daryo va sinovlardan o‘tib, Hashtarxon shohining erka va go‘zal qizi Zulfizarning shartlarini bajaradi. Ular to‘y qilib nikohlanishadi. Avazxon va Zulfizar Chambilga qaytayotganda, sehrgar Chamidxon burgut va chigirtka shakliga kirib ularga hamla qiladi, lekin Zulfizarning hozirjavobligi va mardligi sababli dushman yo‘q qilinadi. Qahramonlar eson-omon Chambilga yetib kelib, to‘y-tomosha qilishadi va el-yurtida tinch-totuv davron surishadi.",
+  "characters": "Go‘ro‘gli sulton — Chambil yurtining mard, adolatli va dono hukmdori. U Avazxonni o‘g‘il qilib olib, elining mard pahlavoni sifatida tarbiyalaydi.\nAvazxon — Xunxor yurtida o‘sgan, keyinchalik Go‘ro‘gliga o‘g‘il bo‘lgan o‘n uch yoshli jasur, pokiza va bahodir yigit.\nHasanxon — Go‘ro‘glining boqindi o mehmondo‘st o‘g‘li, mard yigit, lekin tajribasizligi sababli safardan birinchi marta qaytgan.\nSarvinoz — Xunxor malikasi, adolatni va mardlikni qadrlovchi, Go‘ro‘gli va Avazxonga zindondan qutulishda yordam bergan jasur qiz.\nZulfizar — Hashtarxon podshohining yolg‘iz va go‘zal qizi, Avazxonning sevgilisi va sadoqatli yori.",
+  "conclusion": "Bu doston bolaga mardlik, sadoqat va kattalarga hurmat saboqlarini beradi. Qahramonlarning har qanday mushkul va xatarda chekinmasligi, to‘siqlarni aql va jasorat bilan yengishi bolada matonat tuyg‘usini shakllantiradi. Asar insoniy qadriyatlar, va'daga vafo va yaxshilikning har doim yomonlik ustidan g‘alaba qozonishini ko‘rsatib beradi.",
+  "difficulty": "o‘rta",
+  "mood": "ko‘tarinki, sarguzashtli, qahramonona",
+  "for_whom": "Xalq dostonlari, mardlik va sarguzashtlarga qiziqadigan, milliy qadriyatlar va qahramonlik voqealarini o‘qishni xohlaydigan bolalarga.",
+  "events": [
+   "Chambilga kelgan qari baxshi Go‘ro‘gli sulton majlisida Avazxonning ta'rifini kuylaydi.",
+   "Go‘ro‘gli sulton Xunxorga borib Avazni olib kelish uchun may to‘la kosa ko‘taradi.",
+   "Hasanxon otasining qo‘lidan kosani olib, qirq yigit bilan Xunxor yurtiga jo‘naydi.",
+   "Hasanxon va qirq yigit Badbaxt belidagi qop-qora tumandan qo‘rqib Chambilga qaytib kelishadi.",
+   "Go‘ro‘gli sulton yolg‘iz o‘zi G‘irko‘k otini minib Xunxor yurtiga otlanadi.",
+   "Go‘ro‘gli Badbaxt belida Xizir bobosi bilan uchrashib, zarur yo‘l-yo‘riqlarni oladi.",
+   "Go‘ro‘gli cho‘ponlar matkatagiga burilib, ovqat yeydi va cho‘ponlar bilan saboq beruvchi mojaroga kirishadi.",
+   "Go‘ro‘gli sulton Bulduruq qassob va uning ayoli Guloyim bilan uchrashib, o‘zini Qo‘ng‘irboy deb tanishtiradi.",
+   "Go‘ro‘gli sulton Avazxonni otiga mingashtirib Xunxorshoh saroyidan olib qochadi.",
+   "Avazxon yakkama-yakka jangda bahaybat Govdaroz devni nayzasi bilan mag‘lub etadi.",
+   "Xunxorshoh va to‘rt podshoh birlashib Chambil beliga katta qo‘shin tortadi.",
+   "Bektosh arab va Amloq ayyor Go‘ro‘gli hamda Avazxonni behush dori berib po‘lat zanjirga solishadi.",
+   "Sarvinoz malika zindondagi Avazxon va Go‘ro‘gliga g‘amxo‘rlik qilib, ularga yordam beradi.",
+   "Go‘ro‘gli sulton zanjirlarni uzib, dushmanlardan qutuladi va Amloq ayyor Hasanxon tomonidan jazolanadi.",
+   "Go‘ro‘gli sulton Xuroson va boshqa o‘lkalarda qalandar hamda baxshi qiyofasida yashirincha safar qiladi.",
+   "Avazxon Hashtarxon yurtidagi Zulfizar malikaga uylanish uchun safarga otlanadi.",
+   "Avazxon G‘irko‘k oti bilan ulkan va shiddatli azim daryodan parvoz qilib o‘tadi.",
+   "Avazxon o‘g‘rilar qo‘rg‘onini tor-mor etib, u yerdagi asir ayollarni ozod qiladi.",
+   "Hashtarxon podshohi Avazxon bilan Zulfizarga dabdabali nikoh to‘yini o‘tkazib beradi.",
+   "Zulfizar va Avazxon Chambilga qaytayotganda, chigirtkaga aylangan Chamidxon sehrgarni yo‘q qilishadi.",
+   "Avazxon va Zulfizar eson-omon Chambilga yetib kelib, katta bayram va to‘y-tomosha qilishadi."
+  ],
+  "quotes": [
+   "Majlis ahli xurram bo‘lar, Majlisning bulubuli bo‘lsa.",
+   "Har kishi ishonsa kuchga, bilakka, Dushmanlar yurtiga boradi yakka.",
+   "Odamiylik mard bilandir, Nomardman urushguvchi bo‘lmang.",
+   "Qayda bo‘lsang baxting senga yor bo‘lsin, Suyub tekkan yoring vafodor bo‘lsin.",
+   "Asl qarimas, oltin chirimas."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chambilga kelgan qari baxshi kim haqida doston kuyladi?",
+   "options": [
+    "A) Hasanxon haqida",
+    "B) Avazxon haqida",
+    "C) Go‘ro‘gli sulton haqida",
+    "D) Xunxorshoh haqida"
+   ],
+   "answer": "B) Avazxon haqida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘gli tutgan may to‘la kosani birinchi kim ichdi?",
+   "options": [
+    "A) Hasanxon ichdi",
+    "B) Xoldor mahram ichdi",
+    "C) Baxshi bobo ichdi",
+    "D) Avazxon ichdi"
+   ],
+   "answer": "A) Hasanxon ichdi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hasanxon va qirq yigit qaysi tog‘da to‘xtab qo‘rqishdi?",
+   "options": [
+    "A) Xo‘jatog‘i ustida",
+    "B) Asqar tog‘i ustida",
+    "C) Ko‘hi Qof ustida",
+    "D) Mozandaron tog‘ida"
+   ],
+   "answer": "B) Asqar tog‘i ustida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avazxonning tug‘ishgan otasi kasbi bo‘yicha kim edi?",
+   "options": [
+    "A) Saroy vaziri edi",
+    "B) Bulduruq qassob edi",
+    "C) Gambik cho‘pon edi",
+    "D) Mirishkor bog‘bon edi"
+   ],
+   "answer": "B) Bulduruq qassob edi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Go‘ro‘gli Avazxonni izlab chiqishida qaysi voqealar ketma-ket sodir bo‘ldi?",
+   "options": [
+    "A) Cho‘ponlar bilan uchrashuv, keyin qassobxonaga borish",
+    "B) Qassobxonaga borish, keyin cho‘ponlarni urish",
+    "C) Xunxorga borish, keyin Asqarga chiqish",
+    "D) Avaz bilan uchrashuv, keyin Baxshini tutish"
+   ],
+   "answer": "A) Cho‘ponlar bilan uchrashuv, keyin qassobxonaga borish"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qirq yigit Badbaxt belidagi tumanni ko‘rib nega orqaga qaytdi?",
+   "options": [
+    "A) Otlari charchagani uchun",
+    "B) Qo‘rqinch va vahima bosgani uchun",
+    "C) Go‘ro‘gli buyruq bergani uchun",
+    "D) Yo‘l adashib qolgani uchun"
+   ],
+   "answer": "B) Qo‘rqinch va vahima bosgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Go‘ro‘gli sulton nega qassobxonaga o‘zbek savdogari kiyimida bordi?",
+   "options": [
+    "A) Avazxonning enasini topish uchun",
+    "B) Dushman askarlaridan yashirinish uchun",
+    "C) Tuyalarni sotib olish uchun",
+    "D) Shohning o‘rdasiga kirish uchun"
+   ],
+   "answer": "A) Avazxonning enasini topish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Go‘ro‘glining yolg‘iz o‘zi xatarga yo‘l olishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, chunki u mard yetakchi",
+    "B) Noto‘g‘ri, qo‘shin bilan borishi kerak",
+    "C) Qo‘rqoqlik alomati hisoblanadi",
+    "D) Faqat shohlar shunday qiladi"
+   ],
+   "answer": "A) To‘g‘ri, chunki u mard yetakchi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Baxshining «Avazxonsiz majlisingdan sahrodagi soya yaxshi» degani nimani anglatadi?",
+   "options": [
+    "A) Avazxonsiz majlisning fayzi yo‘qligini",
+    "B) Sahro majlisdan ko‘ra chiroyliroqligini",
+    "C) Baxshi sahroni yaxshi ko‘rishini",
+    "D) Majlisda soya bo‘lishi shartligini"
+   ],
+   "answer": "A) Avazxonsiz majlisning fayzi yo‘qligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avazxonning enasi Guloyim aslan qaysi eldan edi?",
+   "options": [
+    "A) Turkman elidan edi",
+    "B) Qizilbosh elidan edi",
+    "C) Arab elidan edi",
+    "D) Qalmoq elidan edi"
+   ],
+   "answer": "A) Turkman elidan edi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Govdaroz dev kimning chaqirig‘iga ko‘ra urushga otlandi?",
+   "options": [
+    "A) Harishoh vakillari chaqirig‘iga",
+    "B) Go‘ro‘gli sulton chaqirig‘iga",
+    "C) Xunxorshoh farmoniga ko‘ra",
+    "D) Bulduruq qassob iltimosiga"
+   ],
+   "answer": "A) Harishoh vakillari chaqirig‘iga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avazxon Govdaroz dev bilan qanday qurol ishlatib urushdi?",
+   "options": [
+    "A) Nayza bilan urushdi",
+    "B) Qilich bilan urushdi",
+    "C) O‘q-yoy bilan urushdi",
+    "D) Gurzi bilan urushdi"
+   ],
+   "answer": "A) Nayza bilan urushdi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘gli sulton va Avazxonni kim behush dori bilan zanjirladi?",
+   "options": [
+    "A) Bektosh arab zanjirladi",
+    "B) Kosaman sardor zanjirladi",
+    "C) Amloq ayyor zanjirladi",
+    "D) Pirovun ko‘sa zanjirladi"
+   ],
+   "answer": "A) Bektosh arab zanjirladi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Go‘ro‘gli sulton Xunxor yurtida qanday qiyofalarga kirdi?",
+   "options": [
+    "A) Qalandar va to‘rg‘ay qiyofasiga",
+    "B) Cho‘pon va podsho qiyofasiga",
+    "C) Qassob va vazir qiyofasiga",
+    "D) Mergan va tabib qiyofasiga"
+   ],
+   "answer": "A) Qalandar va to‘rg‘ay qiyofasiga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sarvinoz malika Avazxonni nega zindondan qutqarishga yordam berdi?",
+   "options": [
+    "A) Go‘ro‘gli va Avazga ko‘ngli tushgani uchun",
+    "B) Xunxorshoh buyrug‘i bo‘lgani uchun",
+    "C) Bektoshdan o‘ch olish uchun",
+    "D) Chambilga podsho bo‘lish uchun"
+   ],
+   "answer": "A) Go‘ro‘gli va Avazga ko‘ngli tushgani uchun"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Go‘ro‘gli sulton nega lashkarlariga kamtarlik va halollikni nasihat qildi?",
+   "options": [
+    "A) Mardlik faqat odamiylik bilan bo‘lishi uchun",
+    "B) Urushdan qo‘rqqanlari uchun",
+    "C) O‘lja to‘plashni taqiqlash uchun",
+    "D) Dushman bilan do‘stlashish uchun"
+   ],
+   "answer": "A) Mardlik faqat odamiylik bilan bo‘lishi uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Hasanxonning Amloq ayyorni jazolashi to‘g‘ri ish bo‘ldimi?",
+   "options": [
+    "A) To‘g‘ri, xiyonatkor munosib jazo oldi",
+    "B) Noto‘g‘ri, uni kechirish kerak edi",
+    "C) Behudaga kuch sarflandi",
+    "D) Shohdan ijozat so‘rash kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, xiyonatkor munosib jazo oldi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dostonda Go‘ro‘glining «Bardosh berib har mushkulga» degan da'vati nimani tasvirlaydi?",
+   "options": [
+    "A) Qahramonning bukilmas sabr va matonatini",
+    "B) Otning tez yugurishini",
+    "C) Yovning ko‘pligidan qo‘rqishni",
+    "D) Ziyoratga borish istagini"
+   ],
+   "answer": "A) Qahramonning bukilmas sabr va matonatini"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘gli sulton yarador bo‘lgach, uni kim o‘lmay qolganini ko‘rib hayron qoldi?",
+   "options": [
+    "A) Merganlar va dushmanlar",
+    "B) Xunxorshoh va vazirlar",
+    "C) Chambil elining biylari",
+    "D) Gambik cho‘pon va do‘stlari"
+   ],
+   "answer": "A) Merganlar va dushmanlar"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘gli sulton Chambildan yashirincha qaysi shaklda chiqib ketdi?",
+   "options": [
+    "A) Qalandar shaklida chiqdi",
+    "B) Baxshi shaklida chiqdi",
+    "C) Vazir shaklida chiqdi",
+    "D) Qassob shaklida chiqdi"
+   ],
+   "answer": "A) Qalandar shaklida chiqdi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avazxon Hashtarxonga borishda qanday ulkan to‘siqdan o‘tdi?",
+   "options": [
+    "A) Azim daryodan o‘tdi",
+    "B) Qorli tog‘dan oshdi",
+    "C) Yonar cho‘ldan o‘tdi",
+    "D) Qorong‘i g‘ordan o‘tdi"
+   ],
+   "answer": "A) Azim daryodan o‘tdi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘gli sulton musobaqada qandahorlik bozirgonning qaysi hayvonini yengdi?",
+   "options": [
+    "A) Oq nor tuyasini yengdi",
+    "B) Qizil otini yengdi",
+    "C) Qoplonini yengdi",
+    "D) Bo‘risini yengdi"
+   ],
+   "answer": "A) Oq nor tuyasini yengdi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Avazxon o‘g‘rilar qo‘rg‘onida qanday asirlarni topib ozod qildi?",
+   "options": [
+    "A) Turli elatdan bo‘lgan asir ayollarni",
+    "B) Qirq yigit va Hasanxonni",
+    "C) Hashtarxon shohining vazirlarini",
+    "D) Bulduruq qassob va oilasini"
+   ],
+   "answer": "A) Turli elatdan bo‘lgan asir ayollarni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hashtarxon podshohi Avazxon bilan Zulfizarga qanday marosim o‘tkazdi?",
+   "options": [
+    "A) Avval nikoh, keyin elga to‘y",
+    "B) Avval poyga, keyin ziyofat",
+    "C) Avval ov, keyin to‘y",
+    "D) Avval urush, keyin nikoh"
+   ],
+   "answer": "A) Avval nikoh, keyin elga to‘y"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Avazxon nega Hashtarxonda qolmay, Zulfizarni Chambilga olib qaytdi?",
+   "options": [
+    "A) Go‘ro‘gli va eliga sadoqati sababli",
+    "B) Hashtarxon yurtini yoqtirmagani uchun",
+    "C) Shoh uni haydab yuborgani uchun",
+    "D) Urush boshlanib qolgani uchun"
+   ],
+   "answer": "A) Go‘ro‘gli va eliga sadoqati sababli"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Chamidxon burgut va chigirtka shakliga kirib nimaga erishmoqchi edi?",
+   "options": [
+    "A) Zulfizarni olib qochishga erishmoqchi edi",
+    "B) G‘irko‘kni o‘ldirishga erishmoqchi edi",
+    "C) Avazxon bilan do‘stlashmoqchi edi",
+    "D) Chambilga podsho bo‘lmoqchi edi"
+   ],
+   "answer": "A) Zulfizarni olib qochishga erishmoqchi edi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zulfizarning chigirtkaga aylangan dushman-sehrgarni yo‘q qilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, topqirlik bilan xavfni bartaraf etdi",
+    "B) Noto‘g‘ri, uni qo‘yib yuborish kerak edi",
+    "C) Avazxonga berishi kerak edi",
+    "D) Otasiga xabar berishi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, topqirlik bilan xavfni bartaraf etdi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Avazxonning Hashtarxon podshohining qo‘riqchi askarlaridan voz kechishi qanday fazilat?",
+   "options": [
+    "A) O‘z kuchiga bo‘lgan yuksak ishonch",
+    "B) Manmanlik va kibr alomati",
+    "C) Qo‘riqchilardan qo‘rqish belgisi",
+    "D) Shohga behurmatlik qilish"
+   ],
+   "answer": "A) O‘z kuchiga bo‘lgan yuksak ishonch"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston oxiridagi «Asl qarimas, oltin chirimas» maqoli nimaga nisbatan aytilgan?",
+   "options": [
+    "A) Qahramonlarning o‘chmas nomi va ehtiromiga",
+    "B) Tuyalarga ortilgan tillalarga",
+    "C) Hashtarxon shahri imoratlariga",
+    "D) G‘irko‘k otning taqalariga"
+   ],
+   "answer": "A) Qahramonlarning o‘chmas nomi va ehtiromiga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Zulfizarning onasi aytgan «Aylanay, oftobni oyga yopishtirdim» misrasi nimani anglatadi?",
+   "options": [
+    "A) Ikki munosib yoshning go‘zal nikohini",
+    "B) Quyosh bilan oyning tutilishini",
+    "C) Tilla va kumush taqinchoqlarni",
+    "D) Kunduz bilan tunning almashinuvini"
+   ],
+   "answer": "A) Ikki munosib yoshning go‘zal nikohini"
+  }
+ ]
+}

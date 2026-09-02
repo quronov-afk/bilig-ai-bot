@@ -1,0 +1,80 @@
+{
+ "title": "Iymon",
+ "author": "Shayx Muhammad Sodiq Muhammad Yusuf",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "iymon",
+   "ilm-fan",
+   "odob-axloq",
+   "shariat",
+   "e'tiqod",
+   "tarbiya"
+  ],
+  "theme": "Kitob Islom dinining aqiyda va e'tiqod asoslarini, ilm-fan bilan uyg‘unligini hamda insoniy, axloqiy va ijtimoiy qadriyatlarini Qur'on va Sunnat ko‘rsatmalari asosida atroflicha tushuntirishni maqsad qilgan.",
+  "summary": "«Iymon» kitobi Islom dinining tub mohiyati, e'tiqod asoslari hamda ma'naviy-axloqiy qadriyatlarni keng va tartibli ravishda yoritib beruvchi diniy-ma'rifiy asardir. Kitob muqaddimada ta'kidlanganidek, muallif Shayx Muhammad Sodiq Muhammad Yusuf tomonidan bir necha yangi dolzarb maqolalar hamda dalillar bilan boyitilib, ikkinchi nashrga tayyorlangan. Kitobning avvalida «Islom» tushunchasining lug‘aviy va shar'iy ma'nolari, uning ixlos, sulh, omonlik va bo‘ysunish kabi poydevorlari tushuntiriladi. Barcha samoviy dinlarning asli bir ekani hamda payg‘ambarlarning yagona tavhid da'vati bilan yuborilgani bayon qilinadi.\n\nAsarning muhim qismlaridan biri Islom va ilm-fan munozarasiga bag‘ishlangan. Unda Islom dinining ilmga, aql yuritishga va dalil-hujjatga tayanishga undashi, ko‘r-ko‘rona taqlid hamda gumonga ergashishni tanqid qilishi keltiriladi. Tabiiy va gumanitar ilmlarning iymonni mustahkamlashdagi o‘rni koinot va biologiya hodisalari misolida ko‘rsatib beriladi. Shuningdek, kitobda Islomda ayollar huquqlari, ayol kishining jamiyatdagi o‘rni hamda ota-onaning farzandlar o‘rtasida tenglikni saqlash masalalari atroflicha yoritiladi. Atrof-muhitni muhofaza qilish, isrofgarchilikka yo‘l qo‘ymaslik va tabiatga nisbatan mas'uliyatli munosabatda bo‘lish diniy ko‘rsatmalar asosida tushuntiriladi.\n\nBundan tashqari, kitobda jamiyatdagi illatlar, masalan, dabdababozlik, baxillik, ochko‘zlik va behuda amallarning zararlari haqida so‘z yuritiladi. Islomning terrorizm va ziddiyatlarga qarshi tinchlikparvar mohiyati, inson hayoti va mol-mulkining daxlsizligi ta'kidlanadi. Oxirgi bo‘limlarda Islom shariatining ikkinchi manbasi bo‘lmish Sunnatning ta'rifi, turlari va ahamiyati, shuningdek, shariatning bosh maqsadlari – din, jon, aql, nasl va mol muhofazasi ekani bayon etiladi. Muallif kitob xotimasida iymon faqat so‘zdan iborat bo‘lmay, balki ezgu amallar va chiroyli xulq bilan tasdiqlanishi zarurligini ta'kidlaydi.",
+  "characters": "Muhammad alayhissalom, sahobalar va boshqa payg‘ambarlar haqida bayon qilingan",
+  "conclusion": "Bu kitob o‘quvchida Islom dinining asl mohiyati, ilm va aqlning e'tiqoddagi o‘rni haqida aniq va to‘g‘ri tasavvur shakllantiradi. Kitobxon ijtimoiy munosabatlar, tabiatni muhofaza qilish, isrof va dabdabadan qochish hamda odob-axloq qoidalarining ahamiyatini anglab yetadi. Shuningdek, u o‘z hayotida har bir amalda mas'uliyatli bo‘lish va ezgu ishlarga intilish tuyg‘usini rivojlantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, nasihatomuz, ma'rifiy",
+  "for_whom": "Islom dini, iymon asoslari va ilm-fan bog‘liqligi haqida bilmoqchi bo‘lgan o‘smirlar uchun",
+  "events": [
+   "Kitob muqaddimasida asarning ikkinchi nashrida kiritilgan qo‘shimchalar va tahrirlar haqida ma'lumot beriladi.",
+   "«Islom» tushunchasining lug‘aviy hamda shar'iy ma'nolari va barcha payg‘ambarlar da'vatining asli bir ekani tushuntiriladi.",
+   "Islomning ilm-fanga va aql yuritishga bo‘lgan munosabati hamda ko‘r-ko‘rona taqlidning zarari bayon qilinadi.",
+   "Ilm-fan va koinot hodisalarini o‘rganish insonni iymonga yetaklovchi omil ekani ko‘rsatib beriladi.",
+   "Islomda ayollarga berilgan huquqlar va ularning jamiyatdagi hamda ilm-fandagi o‘rni yoritiladi.",
+   "Atrof-muhitni asrash, tabiatni muhofaza qilish va isrofgarchilikning oldini olish haqida shar'iy ko‘rsatmalar beriladi.",
+   "Islomning boshqa din vakillariga bo‘lgan bag‘rikeng munosabati va tarixiy xolis guvohliklar keltiriladi.",
+   "Allohning borligi, uning sifatlari hamda koinotdagi tartib-intizomning ilohiy dalillari tushuntiriladi.",
+   "Farishtalarga, payg‘ambarlarga hamda oxirat kunidagi hisob-kitobga iymon keltirish masalalari bayon etiladi.",
+   "Qadar va insonning ixtiyori hamda hidoyat va zalolat tushunchalarining mohiyati ochib beriladi.",
+   "Dabdababozlik, isrofgarchilik va mol-dunyo fitnasining jamiyatga keltiradigan zararlari haqida ogohlantiriladi.",
+   "Qur'oni Karimning nozil bo‘lishi, jamlanishi va undagi ilmiy mo‘jizalar tahlil qilinadi.",
+   "Axloqiy fazilatlar – sabr, afv, sadoqat, elni isloh qilish va shirinso‘zlikning ahamiyati ta'kidlanadi.",
+   "Islomning terrorizm va buzg‘unchilikka qarshi ekani hamda inson hayotining daxlsizligi ko‘rsatiladi.",
+   "Sunnatning Islom shariatidagi ikkinchi manba ekani va shariat maqsadlarining mohiyati xulosa qilinadi."
+  ],
+  "quotes": [
+   "Hayo – iymonning sho‘'basidir.",
+   "Islom – Allohni bir deb e'tiqod qilib, U Zotga bo‘ysunish, butun qalb bilan U Zotga ixlos qilish va Alloh buyurgan diniy e'tiqodga iymon keltirishdir.",
+   "Alloh kishilarni ilmga undagan, chunki inson shaxsiyatini ilmdan boshqa narsa to‘g‘ri yo‘lga sola olmaydi, taraqqiyotga ham erishtira olmaydi.",
+   "Islomda har bir jon nihoyatda yuqori baholanadi.",
+   "Xalqlarning taraqqiyotga erishish shartlaridan biri behuda gap-so‘z, amallardan yuz o‘girib, samarali, foydali ishlar bilan mashg‘ul bo‘lishdir.",
+   "Ilohiy, abadiy va mo‘jizakor dastur – Qur'oni Karimni hayotga tatbiq qilish yo‘llari va uslublarini ham biz Sunnatdan o‘rganamiz."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Ilm ko‘r-ko‘rona taqliddan qaytarishda Qur'on bilan muvofiqdir. Qur'oni Karimda “Bu ishni ota-bobomiz qilgan”, deb bir fikrga yopishib oladigan, o‘zlari aql ishlatmaydiganlar tanqid qilingan.",
+   "question": "Biror fikr yoki odatni shunchaki boshqalar qilgani uchun ko‘r-ko‘rona takrorlash o‘rniga, u haqida o‘zing aql yuritib ko‘rganingda qanday xulosaga kelgansan? O‘z hayotingdan misol keltir."
+  },
+  {
+   "part": 2,
+   "context": "Olima ayollar vakilasi Oisha onamiz hadis rivoyat qilish bo‘yicha ikkinchi o‘rinda turadilar. Ulkan sahobiylar o‘zlari bilmagan narsalarini, hal qila olmay qolgan masalalarini Oisha onamizdan so‘rar edilar. O‘sha vaqtning sharoitida bu narsalar dunyo miqyosida katta o‘zgarishlar edi.",
+   "question": "Oila va jamiyatda ayol-qizlarning bilimli bo‘lishi hamda ularning fikriga quloq tutish nima uchun muhim deb o‘ylaysan? Sen o‘z hayotingda bilimli ayollardan qanday saboqlar olgansan?"
+  },
+  {
+   "part": 2,
+   "context": "Hozirgi kunda odamlar o‘ylab chiqqan befoyda, insonga manfaat keltirmaydigan ko‘ngilxushlikdangina iborat barcha narsalar behuda gap-so‘z yoki ishlar qatoriga kiradi. Xalqlarning taraqqiyotga erishish shartlaridan biri behuda gap-so‘z, amallardan yuz o‘girib, samarali, foydali ishlar bilan mashg‘ul bo‘lishdir. Aksincha, behuda gap-so‘z va amallar bilan o‘z vaqtini bekor o‘tkazayotgan xalqlar qoloq xalqlar bo‘lishi turgan gap.",
+   "question": "Vaqtingni va g‘ayratingni zoye ketkazadigan behuda mashg‘ulotlardan qanday saqlanasan? Shaxsiy rivojlanishing uchun vaqtingni unumli taqsimlashda nimalarga e'tibor berishing haqida so‘zlab ber."
+  },
+  {
+   "part": 3,
+   "context": "Payg‘ambar sollallohu alayhi vasallam siz bilan biz, ummatlariga boshqalarning ko‘zida arzimas bo‘lib ko‘rinsa ham, aslida o‘ta muhim bo‘lgan ishlarda irshod bermoqdalar. Jumladan, “Chirog‘ingni o‘chir va Allohning ismini zikr qil”, demoqdalar. Ushbu amri nabaviyga amal qilgan holda har bir musulmon kechqurun chirog‘ini o‘chirib yotmog‘i lozim bo‘ladi.",
+   "question": "Bir qarashda kichik yoki arzimas bo‘lib ko‘ringan tartib-qoida yoki odat inson salomatligi va xavfsizligida qanday katta rol o‘ynashi mumkin? O‘zing amal qiladigan shunday kichik foydali odating haqida gapirib ber."
+  },
+  {
+   "part": 3,
+   "context": "Shariatning ehtiyojga bog‘liq maqsadlari esa kishilarga osonlik tug‘dirish va ulardan qiyinchilik va mashaqqatni aritishga qaratilgan. Musofir va bemor kishilarga namozni qasr qilib o‘qish va ro‘zani ochib yuborishga berilgan ruxsatlar va shunga o‘xshash ko‘plab shar'iy hukmlar shular jumlasidandir.",
+   "question": "Hayotdagi qoida va qonunlarda insonlarning holati va qiyinchiliklarini e'tiborga olib yengilliklar berilishi qanchalik muhim deb o‘ylaysan? O‘z o‘qishing yoki kundalik hayotingda qanday yengillik va qulayliklar senga yordam berganini so‘zlab ber."
+  }
+ ]
+}

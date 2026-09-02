@@ -1,0 +1,57 @@
+{
+ "title": "Uch mushketyor",
+ "author": "Aleksandr Dyuma",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+ yoshdagilar uchun. Asardagi murakkab siyosiy intrigalar, tarixiy davr sharoitlari va harbiy-falsafiy mulohazalar sababli o‘smirlar va kattalar uchun mos keladi.",
+  "topics": [
+   "do‘stlik",
+   "sadoqat",
+   "jasorat",
+   "burch",
+   "tarixiy voqealar"
+  ],
+  "theme": "Asarning bosh g‘oyasi — samimiy do‘stlik, hamjihatlik va burchga sadoqat har qanday xatar hamda ayyorona fitnalardan ustun kelishini ko‘rsatishdir. 'Barchamiz birimiz uchun, birimiz barchamiz uchun' tamoyili orqali muallif birlik va o‘zaro yordamning yuksak qadrini ulug‘laydi.",
+  "summary": "Gaskoniyalik yosh dvoryan d'Artanyan jasorat va orzular bilan Parijga, qirol mushketyorlari kapitani janob de Trevil huzuriga yo‘l oladi. Parijda u uch nufuzli mushketyor — Atos, Portos va Aramis bilan tanishib, kutilmagan tushunmovchiliklar sababli ular bilan duelga kelishadi. biroq kardinal gvardiyachilarining kutilmagan hujumi paytida to‘rt yigit birlashib, dushmanga qarshi birga jang qiladilar va ularning o‘rtasida mustahkam do‘stlik rishtasi bog‘lanadi. d'Artanyan va uning do‘stlari qirol hamda qirolicha atrofidagi xufiyona fitnalarga, jumladan kardinal Rishelye hamda uning ayyor ayg‘oqchisi Miledining mash’um rejalari va hiylalariga qarshi mardona kurashadilar. Turli xatarli sarguzashtlar, taqiblar hamda fojiali yo‘qotishlardan so‘ng, d'Artanyan o‘zining zukkoligi va do‘stlarining sadoqati evaziga o‘z burchini halol bajaradi. Yakunda kardinal Rishelye yigitning jasorati va zakovatini tan olib, unga leytenantlik unvonini topshiradi, do‘stlar esa insoflilik va mardlik namunasini ko‘rsatadilar.",
+  "characters": "d'Artanyan — jasur, epchil va o‘tkir ziddiyatlarda ham do‘stlariga sodiq gaskon yigiti.\nAtos — og‘ir-bosiq, oliyjanob va do‘stlari uchun har qanday xatarga tayyor keksa mushketyor.\nPortos — xushchaqchaq, samimiy va soddadil mard mushketyor.\nAramis — nazokatli, muloyim hamda din va harbiy xizmat o‘rtasida ikkilanuvchi mushketyor.\nKardinal Rishelye — fransuz davlatining qudratli va zukko rahnamosi, maqsadiga erishishda ustomon siyosatchi.\nMiledi — kardinalning xufiyona va ayyor xizmatkori, fitnalar ustasi.",
+  "conclusion": "Asar d'Artanyanning mushketyorlar leytenanti unvoniga erishishi hamda do‘stlarning har biri o‘z hayot yo‘lini tanlashi bilan yakunlanadi. Bola ushbu kitobdan haqiqiy do‘stlik, bir-birini qiyin ahvolda tashlab ketmaslik va qiyinchiliklar qarshisida tushkunlikka tushmaslik sabog‘ini oladi. Shuningdek, halollik, jasorat va burchga sadoqat har qanday hiyla va fitnalardan ustun kelishini tushunib yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, shiddatli, mardona",
+  "for_whom": "Tarixiy sarguzashtlarni, mardlik va do‘stlik haqidagi qiziqarli voqealarni yoqtiradigan hamda sadoqat va jasorat mavzulariga qiziqadigan o‘smirlar uchun mos.",
+  "events": [
+   "Ota-d'Artanyan o‘g‘liga xat, ot hamda nasihatlar berib Parijga kuzatadi.",
+   "Meng shaharchasida d'Artanyan notanish kibor odam bilan aytishib qoladi va tayoq zarbidan yaralanadi.",
+   "Parijga kelgan d'Artanyan mushketyorlar kapitani janob de Trevil huzuriga qabulga boradi.",
+   "Kutilmagan hodisalar sababli d'Artanyan Atos, Portos va Aramis bilan alohida duellarga kelishib oladi.",
+   "Duel joyida kardinal gvardiyachilari paydo bo‘lgach, d'Artanyan va uch mushketyor birlashib ularga qarshi jang qiladilar va g‘alaba qozonadilar.",
+   "Qirol Lyudovik XIII mushketyorlarning jasoratidan xabar topib, ularni taqdirlaydi.",
+   "d'Artanyan va uning do‘stlari saroydagi pinhona fitnalar va kardinalning ayg‘oqchilariga qarshi hushyor turishga qaror qiladilar.",
+   "d'Artanyan xavf ostida qolgan Bonasye xonimni qutqaradi va saroy sirlariga aralashib qoladi.",
+   "d me'yorida d'Artanyan do‘stlari bilan birgalikda Angliyaga muhim topshiriqni bajarish uchun safarga otlanadi.",
+   "Yo‘lda kardinal odamlarining qarshiliklari sababli mushketyorlar birin-ketin to‘xtab qoladilar va d'Artanyan topshiriqni o‘zi uddalaydi.",
+   "Topshiriq muvaffaqiyatli bajarilgach, d'Artanyan orqaga qaytib, yo‘lda qolgan do‘stlarini birma-bir topib oladi.",
+   "Atos d'Artanyanga o‘zining fojiali o‘tmishi va xotini Miledi haqidagi sirni so‘zlab beradi.",
+   "Laroshel qamali paytida to‘rt do‘st Sen-Jerve bastionida mardona nonushta qilib, dushman hujumini qaytaradilar.",
+   "Miledi kardinal topshirig‘i bilan Angliyaga Bekingem gersogiga qarshi suiqasd tayyorlash uchun jo‘naydi.",
+   "Atos Miledidan kardinal bergan maxfiy himoya maktubini tortib oladi.",
+   "Miledi ingliz zobiti Feltonni o‘ziga rom qilib, uni tutqunlikdan qochishga hamda suiqasd qilishga ko‘ndiradi.",
+   "Miledi monastirda yashirinib yurgan Bonasye xonimni zaharlab o‘ldiradi.",
+   "To‘rt mushketyor va ularning hamrohlari Miledini ushlab, uning jinoyatlari uchun adolatli jazo beradilar.",
+   "Kardinal Rishelye d'Artanyanni hibsga oladi, lekin uning qo‘lidagi ochiq maktub va jasoratini ko‘rib, uni afv etadi.",
+   "Kardinal d'Artanyanga mushketyorlar leytenanti unvonini topshiradi hamda do‘stlar bir-birlari bilan xayrlashib o‘z yo‘llarini tanlaydilar."
+  ],
+  "quotes": [
+   "Faqat jasorat bilan – eshityapsizmi, yolg‘iz jasorat bilan bizning kunda dvoryan o‘ziga yo‘l solishi mumkin.",
+   "Odobli va e'tiborli bo‘lish qo‘rqoqlik degan gap emas.",
+   "Bizning zamonda naqd pullar aziz, qurbon berishni ham uddalamoq kerak.",
+   "Hayot – bu mayda-chuyda dard-u hasratlardan tuzilgan bir tasbeh, faylasuf odam uni kulib turib o‘giraverardi.",
+   "Siz yoshsiz, achchiq xotiralaringiz ham xushnudlariga almashishga ulguradi hali!"
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "d'Artanyan va uning do‘stlari 'Barchamiz birimiz uchun, birimiz barchamiz uchun' degan qoidaga amal qilib, bir-biriga doim yordam berishdi. Sen o‘z do‘stingga biror qiyin yoki mas'uliyatli vaziyatda qanday yordam bergan eding hamda chinakam halol do‘stlik qanday bo‘lishi kerak deb o‘ylaysan?"
+}

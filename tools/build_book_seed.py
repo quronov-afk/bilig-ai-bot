@@ -17,12 +17,15 @@ import os
 import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC_DIR = os.path.join(ROOT, "tools", "book_out")
+SRC_DIRS = [os.path.join(ROOT, "tools", "book_out"),
+            os.path.join(ROOT, "tools", "book_out2")]   # 2026-09-01: yangi ro‘yxat
 OUT_FILE = os.path.join(ROOT, "books_seed.json.gz")
 
 # Pasportdan bazaga ko‘chiriladigan maydonlar (Book_Base ustunlari).
 PASSPORT_FIELDS = ("summary", "characters", "theme", "conclusion", "age_hint",
-                   "age_band", "topics", "for_whom", "difficulty", "mood")
+                   "age_band", "topics", "for_whom", "difficulty", "mood",
+                   # 2026-09-01 da qo‘shildi: kelajakda yangi test tuzish uchun
+                   "events", "quotes")
 
 # Savoldan bazaga ko‘chiriladigan maydonlar. Ortiqchasi (masalan
 # «barrett») tashlanadi — fayl bekorga kattalashmasin.
@@ -52,7 +55,10 @@ def book_key(title, author):
 def build():
     books = []
     skipped = []
-    for path in sorted(glob.glob(os.path.join(SRC_DIR, "*.json"))):
+    paths = []
+    for d in SRC_DIRS:
+        paths += sorted(glob.glob(os.path.join(d, "*.json")))
+    for path in paths:
         try:
             d = json.load(open(path, encoding="utf-8"))
         except Exception as e:
@@ -80,6 +86,11 @@ def build():
             "title": title,
             "author": author,
             "short_form": 1 if d.get("short_form") else 0,
+            # Diniy-ma'rifiy kitob: test tuzilmaydi, o‘rniga parchaga
+            # tayangan ochiq savollar beriladi (ega qarori, 2026-09-01).
+            "no_test": 1 if d.get("no_test") else 0,
+            "talk_questions": d.get("talk_questions") or [],
+            "talk_question": (d.get("talk_question") or "").strip(),
             "passport": {k: passport.get(k) for k in PASSPORT_FIELDS
                          if passport.get(k)},
             "questions": questions,
@@ -93,9 +104,11 @@ def build():
         f.write(raw)
 
     with_test = sum(1 for b in books if b["questions"])
+    diniy = sum(1 for b in books if b.get("no_test"))
     print("Kitoblar:      %d ta" % len(books))
     print("  testi bor:   %d ta" % with_test)
     print("  qisqa asar:  %d ta (test tuzilmaydi)" % sum(1 for b in books if b["short_form"]))
+    print("  diniy kitob: %d ta (test o‘rniga ochiq savol)" % diniy)
     print("Savollar jami: %d ta" % sum(len(b["questions"]) for b in books))
     print("Fayl:          %s (%.0f KB)" % (OUT_FILE, os.path.getsize(OUT_FILE) / 1024.0))
     if skipped:

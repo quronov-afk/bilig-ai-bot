@@ -1,0 +1,282 @@
+<title>Yosh kitobxon ro‘yxati</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#F2F4F1; --surface:#FFFFFF; --raised:#FAFBF9;
+  --ink:#151F1C; --ink-soft:#4E5C57; --ink-faint:#77837E;
+  --line:#DBE0DB; --line-soft:#E9EDE9;
+  --accent:#23527C; --accent-soft:#E4ECF3;
+  --bor:#2C6A4E; --bor-bg:#E1EEE7;
+  --mut:#8A5712; --mut-bg:#F5EAD6;
+  --yoq:#982C2C; --yoq-bg:#F6E3E3;
+  --noa:#57565F; --noa-bg:#E9E9ED;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#111715; --surface:#19211F; --raised:#1E2725;
+    --ink:#E9EEEB; --ink-soft:#A6B2AD; --ink-faint:#7C8781;
+    --line:#2B3532; --line-soft:#232C2A;
+    --accent:#89B6DE; --accent-soft:#1C2A36;
+    --bor:#7ECBA3; --bor-bg:#1B3128;
+    --mut:#E0B461; --mut-bg:#332913;
+    --yoq:#E58B8B; --yoq-bg:#341D1D;
+    --noa:#B0B0BA; --noa-bg:#26262B;
+  }
+}
+:root[data-theme="dark"]{
+    --paper:#111715; --surface:#19211F; --raised:#1E2725;
+    --ink:#E9EEEB; --ink-soft:#A6B2AD; --ink-faint:#7C8781;
+    --line:#2B3532; --line-soft:#232C2A;
+    --accent:#89B6DE; --accent-soft:#1C2A36;
+    --bor:#7ECBA3; --bor-bg:#1B3128;
+    --mut:#E0B461; --mut-bg:#332913;
+    --yoq:#E58B8B; --yoq-bg:#341D1D;
+    --noa:#B0B0BA; --noa-bg:#26262B;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1040px; margin:0 auto; padding:48px 24px 96px; display:flex; flex-direction:column; gap:56px}
+header{display:flex; flex-direction:column; gap:18px; border-bottom:2px solid var(--ink); padding-bottom:32px}
+.eyebrow{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:600}
+h1{
+  font-family:Literata,Georgia,serif; font-weight:700; font-size:clamp(30px,5vw,46px);
+  line-height:1.15; margin:0; text-wrap:balance; letter-spacing:-.01em;
+}
+.lead{font-family:Literata,Georgia,serif; font-size:18px; color:var(--ink-soft); max-width:62ch; margin:0}
+.meta{font-size:13px; color:var(--ink-faint); display:flex; flex-wrap:wrap; gap:6px 18px}
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:2px; background:var(--line); border:1px solid var(--line)}
+.stat{background:var(--surface); padding:22px 20px; display:flex; flex-direction:column; gap:6px}
+.stat .n{font-family:Literata,Georgia,serif; font-size:38px; font-weight:700; line-height:1; font-variant-numeric:tabular-nums}
+.stat .k{font-size:13px; color:var(--ink-soft)}
+.stat.s-bor .n{color:var(--bor)} .stat.s-mut .n{color:var(--mut)} .stat.s-yoq .n{color:var(--yoq)}
+section{display:flex; flex-direction:column; gap:20px}
+h2{font-family:Literata,Georgia,serif; font-size:26px; font-weight:600; margin:0; letter-spacing:-.01em; text-wrap:balance}
+h2 .sub{display:block; font-family:"IBM Plex Sans",sans-serif; font-size:13px; font-weight:500; color:var(--ink-faint); letter-spacing:.02em; margin-top:6px}
+h3{font-family:Literata,Georgia,serif; font-size:18px; margin:0 0 6px; font-weight:600}
+p{margin:0; max-width:70ch}
+.note{background:var(--raised); border:1px solid var(--line); border-left:3px solid var(--accent); padding:18px 20px; display:flex; flex-direction:column; gap:8px}
+.note p{color:var(--ink-soft); font-size:15px}
+.tbox{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14.5px}
+thead th{
+  text-align:left; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-faint); font-weight:600; padding:12px 14px; border-bottom:1px solid var(--line);
+  background:var(--raised); position:sticky; top:0;
+}
+td{padding:11px 14px; border-bottom:1px solid var(--line-soft); vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:var(--raised)}
+.num{color:var(--ink-faint); font-variant-numeric:tabular-nums; width:38px}
+.asar{font-family:Literata,Georgia,serif; font-weight:600; min-width:230px}
+.mual{color:var(--ink-soft); white-space:nowrap}
+.yosh{font-variant-numeric:tabular-nums; white-space:nowrap; font-weight:600}
+.izoh{color:var(--ink-soft); font-size:13.5px; min-width:200px}
+.chip{display:inline-block; white-space:nowrap; font-size:12px; font-weight:600; padding:3px 9px; border-radius:2px}
+.chip.bor{color:var(--bor); background:var(--bor-bg)}
+.chip.mut{color:var(--mut); background:var(--mut-bg)}
+.chip.yoq{color:var(--yoq); background:var(--yoq-bg)}
+.chip.noaniq{color:var(--noa); background:var(--noa-bg)}
+.legend{display:flex; flex-wrap:wrap; gap:10px 22px; font-size:13.5px; color:var(--ink-soft)}
+.legend span b{font-weight:600}
+.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px}
+.card{background:var(--surface); border:1px solid var(--line); padding:20px; display:flex; flex-direction:column; gap:8px}
+.card p{font-size:14.5px; color:var(--ink-soft)}
+.steps{display:flex; flex-direction:column; gap:0; border:1px solid var(--line); background:var(--surface)}
+.step{display:grid; grid-template-columns:56px 1fr; gap:18px; padding:20px; border-bottom:1px solid var(--line-soft)}
+.step:last-child{border-bottom:none}
+.step .no{font-family:Literata,Georgia,serif; font-size:24px; font-weight:700; color:var(--accent); line-height:1.1}
+.step p{font-size:14.5px; color:var(--ink-soft)}
+footer{border-top:1px solid var(--line); padding-top:24px; font-size:13px; color:var(--ink-faint)}
+@media (max-width:600px){ .wrap{padding:32px 16px 64px; gap:44px} .step{grid-template-columns:40px 1fr; gap:12px} }
+</style>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Davlat tanlovi · 2026-yil mavsumi</div>
+  <h1>«Yosh kitobxon» ro‘yxati va Bilig AI bazasi</h1>
+  <p class="lead">Tanlovning 10-14 va 15-19 yosh toifalari uchun e'lon qilingan 90 ta asar bazamiz bilan bittalab solishtirildi. Har bir asar uchun: bizda bormi, Mutolaa'da bormi va qaysi yoshga mos.</p>
+  <div class="meta"><span>2026-yil 1-sentabr</span><span>Manba: gov.uz e'loni · mutolaa.com katalogi · Bilig AI kitob bazasi (130 ta asar)</span></div>
+</header>
+
+<section>
+  <div class="stats">
+    <div class="stat"><div class="n">90</div><div class="k">Ro‘yxatdagi asar (40 + 50)</div></div>
+    <div class="stat s-bor"><div class="n">10</div><div class="k">Bazamizda allaqachon bor</div></div>
+    <div class="stat s-mut"><div class="n">62</div><div class="k">Mutolaa'da bor — darhol olish mumkin</div></div>
+    <div class="stat s-yoq"><div class="n">18</div><div class="k">Topilmadi yoki aniqlanmadi</div></div>
+  </div>
+  <div class="legend">
+    <span><b>Bazada bor</b> — ilovada mavjud</span>
+    <span><b>Mutolaa'da bor</b> — matni tayyor, bazaga olinadi</span>
+    <span><b>Topilmadi</b> — kelajakda to‘ldiriladi</span>
+    <span><b>Aniqlanmadi</b> — qaysi nashr ekani noaniq</span>
+  </div>
+  <div class="note">
+    <p><b>Eng muhim raqam:</b> davlat ro‘yxatining 90 ta asaridan bazamizda atigi 10 tasi bor — hammasi 10-14 toifasidan. <b>15-19 yosh toifasidagi 50 ta asardan bittasi ham yo‘q.</b> Buning sababi oddiy: bazamiz shu kungacha 14 yoshgacha bo‘lgan bolaga qurilgan edi.</p>
+    <p>Yaxshi xabar: ro‘yxatdagi 62 ta asarning matni Mutolaa'da turibdi — ya'ni ro‘yxatning uchdan ikki qismini qidirmasdan, tayyor manbadan olsa bo‘ladi.</p>
+  </div>
+</section>
+
+<section>
+<h2>10-14 yosh toifasi<span class="sub">40 ta asar · bazada 10 ta · Mutolaa'da 23 ta · topilmadi 7 ta</span></h2>
+<div class="tbox"><table>
+<thead><tr><th>№</th><th>Asar</th><th>Muallif</th><th>Holat</th><th>Taklif yosh</th><th>Izoh</th></tr></thead>
+<tbody>
+<tr><td class="num">1</td><td class="asar">«Malika Husnobod» dostoni</td><td class="mual">Xalq og‘zaki ijodi</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">11-13</td><td class="izoh">Doston; bolalar uchun qisqartirilgan nashri kerak</td></tr>
+<tr><td class="num">2</td><td class="asar">«Ravshan» dostoni</td><td class="mual">Xalq og‘zaki ijodi</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">11-13</td><td class="izoh">«Go‘ro‘g‘li» turkumidan</td></tr>
+<tr><td class="num">3</td><td class="asar">«Yunus va Misqol pari» dostoni</td><td class="mual">Xalq og‘zaki ijodi</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">11-13</td><td class="izoh">Doston</td></tr>
+<tr><td class="num">4</td><td class="asar">«Xalq bo‘l, elim»</td><td class="mual">Muhammad Yusuf</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">11-13</td><td class="izoh">She'riy to‘plam — testga mos emas</td></tr>
+<tr><td class="num">5</td><td class="asar">«Bolajon, bolajonim»</td><td class="mual">Po‘lat Mo‘min</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">7-8</td><td class="izoh">She'riy to‘plam — testga mos emas</td></tr>
+<tr><td class="num">6</td><td class="asar">«Quyosh bola, oy bola»</td><td class="mual">Qambar Ota</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">7-8</td><td class="izoh">She'riy to‘plam — testga mos emas</td></tr>
+<tr><td class="num">7</td><td class="asar">«Yashasin quyoshli kun»</td><td class="mual">Rustam Nazar</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">7-8</td><td class="izoh">She'riy to‘plam — testga mos emas</td></tr>
+<tr><td class="num">8</td><td class="asar">«Hirotga sayohat»</td><td class="mual">Yo‘ldosh Sulaymon</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">9-10</td><td class="izoh">She'riy to‘plam — testga mos emas</td></tr>
+<tr><td class="num">9</td><td class="asar">«Saylanma» (qissalar)</td><td class="mual">Mirkarim Osim</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">11-13</td><td class="izoh">Bazada shu muallifning uchta qissasi bor, saylanma yo‘q</td></tr>
+<tr><td class="num">10</td><td class="asar">«Mo‘ttivoymisan, Mittivoymisan»</td><td class="mual">Anvar Obidjon</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">9-10</td><td class="izoh"></td></tr>
+<tr><td class="num">11</td><td class="asar">«Qaydalardasan, bolaligim»</td><td class="mual">Xudoyberdi To‘xtaboyev</td><td><span class="chip bor">Bazada bor</span></td><td class="yosh">11-13</td><td class="izoh"></td></tr>
+<tr><td class="num">12</td><td class="asar">«Akramning sarguzashtlari»</td><td class="mual">Pirimqul Qodirov</td><td><span class="chip bor">Bazada bor</span></td><td class="yosh">9-10</td><td class="izoh"></td></tr>
+<tr><td class="num">13</td><td class="asar">«Ming bir kitob»</td><td class="mual">Sharifjon Ahmad</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">11-13</td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="num">14</td><td class="asar">«O‘tkirjonning o‘nta o‘rdak ukasi»</td><td class="mual">Qobiljon Shermatov</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">9-10</td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="num">15</td><td class="asar">«Nabiralarimga maktublar…»</td><td class="mual">Erkin Malik</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">11-13</td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="num">16</td><td class="asar">«Changalzor iti»</td><td class="mual">Normurod Norqobilov</td><td><span class="chip bor">Bazada bor</span></td><td class="yosh">11-13</td><td class="izoh"></td></tr>
+<tr><td class="num">17</td><td class="asar">«Qaysar bolaning hayoti»</td><td class="mual">Mirzakalon Ismoiliy</td><td><span class="chip bor">Bazada bor</span></td><td class="yosh">11-13</td><td class="izoh"></td></tr>
+<tr><td class="num">18</td><td class="asar">«Shum bola»</td><td class="mual">G‘afur G‘ulom</td><td><span class="chip bor">Bazada bor</span></td><td class="yosh">11-13</td><td class="izoh"></td></tr>
+<tr><td class="num">19</td><td class="asar">«Shunaqa bolani qidirib yuribman»</td><td class="mual">Latif Mahmudov</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">9-10</td><td class="izoh"></td></tr>
+<tr><td class="num">20</td><td class="asar">«Bolalik xotiralarim»</td><td class="mual">Oybek</td><td><span class="chip bor">Bazada bor</span></td><td class="yosh">11-13</td><td class="izoh"></td></tr>
+<tr><td class="num">21</td><td class="asar">«O‘tmishdan ertaklar»</td><td class="mual">Abdulla Qahhor</td><td><span class="chip bor">Bazada bor</span></td><td class="yosh">11-13</td><td class="izoh"></td></tr>
+<tr><td class="num">22</td><td class="asar">«Olamlar kurashi»</td><td class="mual">Baxtiyor Abdug‘afur</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">9-10</td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="num">23</td><td class="asar">«Galaktikada bir kun» (3-kitob)</td><td class="mual">Sa'dullo Quronov</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">9-10</td><td class="izoh">Bazada 2-kitob bor; 1- va 3-kitobi Mutolaa'da turibdi</td></tr>
+<tr><td class="num">24</td><td class="asar">«Dunyoning ishlari»</td><td class="mual">O‘tkir Hoshimov</td><td><span class="chip bor">Bazada bor</span></td><td class="yosh">14-16</td><td class="izoh">Bazada 11-14 deb turibdi — yoshi ko‘tarilishi kerak</td></tr>
+<tr><td class="num">25</td><td class="asar">«Bir qultum buloq suvi»</td><td class="mual">Farhod Musajonov</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">11-13</td><td class="izoh"></td></tr>
+<tr><td class="num">26</td><td class="asar">«Qorxat»</td><td class="mual">Nosir Fozilov</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">11-13</td><td class="izoh"></td></tr>
+<tr><td class="num">27</td><td class="asar">«Uch baqaloq»</td><td class="mual">Yuriy Olesha</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">9-10</td><td class="izoh">Tarjima asar</td></tr>
+<tr><td class="num">28</td><td class="asar">«Oq so‘yloq»</td><td class="mual">Jek London</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">11-13</td><td class="izoh">Bazada Jek Londonning hikoyalari bor, bu qissa yo‘q</td></tr>
+<tr><td class="num">29</td><td class="asar">«Nilsning yovvoyi g‘ozlar bilan sayohati»</td><td class="mual">Selma Lagerlyof</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">9-10</td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="num">30</td><td class="asar">«Hellados»</td><td class="mual">Nodar Dumbadze</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh">Bazada shu muallifning ikki asari bor</td></tr>
+<tr><td class="num">31</td><td class="asar">«Imperatorning tug‘ilishi. Boburning bolaligi»</td><td class="mual">Durbek Qo‘ldoshev</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">9-10</td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="num">32</td><td class="asar">«Geklberri Finning boshidan kechirganlari»</td><td class="mual">Mark Tven</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">11-13</td><td class="izoh">Bazada Tom Soyer bor, Geklberri yo‘q</td></tr>
+<tr><td class="num">33</td><td class="asar">«Buyuk Akbar va Roja Birbol»</td><td class="mual">Hind xalq og‘zaki ijodi</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">9-10</td><td class="izoh">Mutolaa'da «Shoh Akbar va dono Birbal» nomi bilan</td></tr>
+<tr><td class="num">34</td><td class="asar">«Tolzordan esgan shamol»</td><td class="mual">Kennet Grehem</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">9-10</td><td class="izoh">Tarjima asar</td></tr>
+<tr><td class="num">35</td><td class="asar">«Yovvoyi yo‘rg‘a»</td><td class="mual">Ernest Seton-Tompson</td><td><span class="chip bor">Bazada bor</span></td><td class="yosh">11-13</td><td class="izoh"></td></tr>
+<tr><td class="num">36</td><td class="asar">«Bolaligim»</td><td class="mual">Chingiz Aytmatov</td><td><span class="chip bor">Bazada bor</span></td><td class="yosh">11-13</td><td class="izoh"></td></tr>
+<tr><td class="num">37</td><td class="asar">«Dunyo bo‘ylab sakson kun»</td><td class="mual">Jyul Vern</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">11-13</td><td class="izoh">Bazada Jyul Vernning to‘rt asari bor, bu yo‘q</td></tr>
+<tr><td class="num">38</td><td class="asar">«Qanday xatolar bo‘ladi»</td><td class="mual">Janni Rodari</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">7-8</td><td class="izoh">Ertaklar — kichik hajmli, o‘zingiz saralaysiz</td></tr>
+<tr><td class="num">39</td><td class="asar">«Mio, bolajonim Mio»</td><td class="mual">Astrid Lindgren</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">9-10</td><td class="izoh">Tarjima asar</td></tr>
+<tr><td class="num">40</td><td class="asar">«Britannika ensiklopediyasi»</td><td class="mual">Kristofer Lloyd</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">—</td><td class="izoh">Ma'lumotnoma — boshdan-oxir o‘qiladigan asar emas</td></tr>
+</tbody></table></div>
+</section>
+
+<section>
+<h2>15-19 yosh toifasi<span class="sub">50 ta asar · bazada 0 ta · Mutolaa'da 39 ta · topilmadi yoki noaniq 11 ta</span></h2>
+<div class="tbox"><table>
+<thead><tr><th>№</th><th>Asar</th><th>Muallif</th><th>Holat</th><th>Taklif yosh</th><th>Izoh</th></tr></thead>
+<tbody>
+<tr><td class="num">1</td><td class="asar">«Go‘ro‘g‘lining tug‘ilishi» dostoni</td><td class="mual">Xalq og‘zaki ijodi</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh">Doston; qisqartirilgan nashrda 11-13 ham bo‘ladi</td></tr>
+<tr><td class="num">2</td><td class="asar">«Shirin bilan Shakar» dostoni</td><td class="mual">Xalq og‘zaki ijodi</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">14-16</td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="num">3</td><td class="asar">«Kalila va Dimna»</td><td class="mual">Hind xalq eposi</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">11-13</td><td class="izoh">Masal shaklidagi hikmat</td></tr>
+<tr><td class="num">4</td><td class="asar">«Qobusnoma»</td><td class="mual">Kaykovus</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh">Pand-nasihat; bo‘limlarga bo‘lib berish qulay</td></tr>
+<tr><td class="num">5</td><td class="asar">«Boburnoma»</td><td class="mual">Zahiriddin Muhammad Bobur</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh">To‘liq matni og‘ir; moslashtirilgan nashrda 14-16</td></tr>
+<tr><td class="num">6</td><td class="asar">«Lison ut-tayr»</td><td class="mual">Alisher Navoiy</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh">Mutolaa'da nasriy bayoni bor — bizga o‘shasi kerak</td></tr>
+<tr><td class="num">7</td><td class="asar">«Mezon uz-zamon»</td><td class="mual">Is'hoqxon Ibrat</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh">Ilmiy-tarixiy asar</td></tr>
+<tr><td class="num">8</td><td class="asar">«She'rlar»</td><td class="mual">G‘afur G‘ulom</td><td><span class="chip noaniq">Aniqlanmadi</span></td><td class="yosh">14-16</td><td class="izoh">She'riy to‘plam — qaysi nashr ekani aniqlanishi kerak</td></tr>
+<tr><td class="num">9</td><td class="asar">«She'rlar»</td><td class="mual">Oybek</td><td><span class="chip noaniq">Aniqlanmadi</span></td><td class="yosh">14-16</td><td class="izoh">She'riy to‘plam — qaysi nashr ekani aniqlanishi kerak</td></tr>
+<tr><td class="num">10</td><td class="asar">«Umr manzillari»</td><td class="mual">Abdulla Oripov</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh">She'riy to‘plam — testga mos emas</td></tr>
+<tr><td class="num">11</td><td class="asar">«Zamon qasri»</td><td class="mual">Sirojiddin Sayyid</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">14-16</td><td class="izoh">She'riy to‘plam; Mutolaa'da topilmadi</td></tr>
+<tr><td class="num">12</td><td class="asar">«Qoraqalpoqnoma»</td><td class="mual">To‘lepbergen Qaipbergenov</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">17-19</td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="num">13</td><td class="asar">«Muqaddas»</td><td class="mual">Odil Yoqubov</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh"></td></tr>
+<tr><td class="num">14</td><td class="asar">«Amir Temur siymosi»</td><td class="mual">Pirimqul Qodirov</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh">Ilmiy badia; bazadagi «Amir Temur» bolalar kitobi — boshqa asar</td></tr>
+<tr><td class="num">15</td><td class="asar">«Mungli ko‘zlar»</td><td class="mual">Xudoyberdi To‘xtaboyev</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh"></td></tr>
+<tr><td class="num">16</td><td class="asar">«Qorako‘z Majnun»</td><td class="mual">Said Ahmad</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh"></td></tr>
+<tr><td class="num">17</td><td class="asar">«Spitamen»</td><td class="mual">Maqsud Qoriyev</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh">Tarixiy roman</td></tr>
+<tr><td class="num">18</td><td class="asar">«Yoz yomg‘iri»</td><td class="mual">O‘lmas Umarbekov</td><td><span class="chip noaniq">Aniqlanmadi</span></td><td class="yosh">17-19</td><td class="izoh">Kattalar munosabatlari; Mutolaa'da ovozli nashri bor</td></tr>
+<tr><td class="num">19</td><td class="asar">«Yulduzlar mangu yonadi»</td><td class="mual">Tog‘ay Murod</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh"></td></tr>
+<tr><td class="num">20</td><td class="asar">«Daftar hoshiyasidagi bitiklar»</td><td class="mual">O‘tkir Hoshimov</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh">Qaydlar to‘plami</td></tr>
+<tr><td class="num">21</td><td class="asar">«Odamlardan tinglab hikoya»</td><td class="mual">Xayriddin Sulton</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh"></td></tr>
+<tr><td class="num">22</td><td class="asar">«Ozodlik»</td><td class="mual">Shukur Xolmirzayev</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">23</td><td class="asar">«Og‘abiy»</td><td class="mual">Kengisboy Karimov</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">24</td><td class="asar">«Panoh»</td><td class="mual">Xurshid Do‘stmuhammad</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">25</td><td class="asar">«Qoyalar ham yig‘laydi»</td><td class="mual">Normurod Norqobilov</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh"></td></tr>
+<tr><td class="num">26</td><td class="asar">«Boboso‘z izidan»</td><td class="mual">Eshqobil Shukur</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh">Ilmiy-badiiy izlanish</td></tr>
+<tr><td class="num">27</td><td class="asar">«Mezon»</td><td class="mual">Shomirza Turdimov</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">28</td><td class="asar">«Jaziramadagi odamlar»</td><td class="mual">Luqmon Bo‘rixon</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">29</td><td class="asar">«Sho‘rodan qolgan odamlar»</td><td class="mual">Shoyim Bo‘tayev</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">30</td><td class="asar">«Gudbay, Amerika»</td><td class="mual">Abduqayum Yo‘ldoshev</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">17-19</td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="num">31</td><td class="asar">«Ma'suma»</td><td class="mual">Isajon Sulton</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">32</td><td class="asar">«Azal muhri»</td><td class="mual">Baxtiyor Abdug‘afur</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">33</td><td class="asar">«Mo‘ysafid Biyobonim»</td><td class="mual">Shahodat Ulug‘</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">34</td><td class="asar">«Munavvar Qorining so‘nggi nidosi»</td><td class="mual">Abbos Said</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">35</td><td class="asar">«Maqar»</td><td class="mual">Shuhrat Matkarim</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">36</td><td class="asar">«Tongotar»</td><td class="mual">Raxshona Ahmedova</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">37</td><td class="asar">«Suyumbika»</td><td class="mual">Risolat Haydarova</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">38</td><td class="asar">«Mening Dog‘istonim»</td><td class="mual">Rasul Hamzatov</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh"></td></tr>
+<tr><td class="num">39</td><td class="asar">«Yevgeniya Grande»</td><td class="mual">Onore de Balzak</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh">Tarjima asar; pul va oila mavzusi</td></tr>
+<tr><td class="num">40</td><td class="asar">«Iqrornoma»</td><td class="mual">Lev Tolstoy</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh">Diniy-falsafiy iqrornoma — ehtiyot bilan</td></tr>
+<tr><td class="num">41</td><td class="asar">«Bu yerda hamma narsa bo‘lishi mumkin»</td><td class="mual">Jianna Molinari</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">17-19</td><td class="izoh">Mutolaa'da topilmadi; mazmuni tekshirilsin</td></tr>
+<tr><td class="num">42</td><td class="asar">«Farengeyt bo‘yicha 451 daraja»</td><td class="mual">Rey Bredberi</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh"></td></tr>
+<tr><td class="num">43</td><td class="asar">«Kambag‘allar»</td><td class="mual">Fyodor Dostoyevskiy</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh"></td></tr>
+<tr><td class="num">44</td><td class="asar">«Choliqushi»</td><td class="mual">Rashod Nuri Guntekin</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh"></td></tr>
+<tr><td class="num">45</td><td class="asar">«Klod Gyo»</td><td class="mual">Viktor Gyugo</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh">Qatl mavzusi</td></tr>
+<tr><td class="num">46</td><td class="asar">«Yulduzlararo sargardon»</td><td class="mual">Jek London</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">17-19</td><td class="izoh">Qamoq va qiynoq tasviri; Mutolaa'da topilmadi</td></tr>
+<tr><td class="num">47</td><td class="asar">«Kon-Tikida safar»</td><td class="mual">Tur Xeyerdal</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">14-16</td><td class="izoh"></td></tr>
+<tr><td class="num">48</td><td class="asar">«Mening hayotim»</td><td class="mual">Henri Ford</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="yosh">17-19</td><td class="izoh">Shaxsiy rivojlanish yo‘nalishiga mos</td></tr>
+<tr><td class="num">49</td><td class="asar">«Jasorat» to‘plami</td><td class="mual">Mualliflar jamoasi</td><td><span class="chip noaniq">Aniqlanmadi</span></td><td class="yosh">14-16</td><td class="izoh">Qaysi to‘plam ekani aniqlanishi kerak</td></tr>
+<tr><td class="num">50</td><td class="asar">«Yoshlik» jurnali, 2026-yil sonlari</td><td class="mual">—</td><td><span class="chip yoq">Topilmadi</span></td><td class="yosh">—</td><td class="izoh">Jurnal — kitob bazasiga kirmaydi</td></tr>
+</tbody></table></div>
+</section>
+
+<section>
+  <h2>Uchta masala — qaror sizniki<span class="sub">Ro‘yxatni ko‘chirishdan oldin hal qilinishi kerak</span></h2>
+  <div class="cards">
+    <div class="card">
+      <h3>She'riy to‘plamlar</h3>
+      <p>Ro‘yxatda 8 ta she'riy to‘plam bor (Muhammad Yusuf, Po‘lat Mo‘min, Abdulla Oripov…). She'rga syujet savoli tuzib bo‘lmaydi. Taklifim: ular bazaga kiradi, lekin testsiz — «o‘qildi» belgisi va bitta og‘zaki savol bilan.</p>
+    </div>
+    <div class="card">
+      <h3>Kitob bo‘lmaganlari</h3>
+      <p>«Britannika ensiklopediyasi» va «Yoshlik» jurnalining 2026-yil sonlari — boshdan-oxir o‘qiladigan asar emas. Taklifim: bazaga kiritilmasin.</p>
+    </div>
+    <div class="card">
+      <h3>Kattalar mavzusi</h3>
+      <p>15-19 toifasida 24 ta asarni 17-19 yoshga surdim: qamoq, qatl, kattalar munosabatlari, diniy-falsafiy iqror kabi mavzular bor. 13 yoshli bola ro‘yxatda ularni ko‘rmasligi kerak.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Xalq dostonlari — bazada bitta ham yo‘q<span class="sub">Ro‘yxatdagi 4 ta doston va undan keyingisi</span></h2>
+  <p>Bazadagi 130 ta asar orasida bironta xalq dostoni yo‘q. Davlat ro‘yxati to‘rttasini nomma-nom ko‘rsatadi: «Malika Husnobod», «Ravshan», «Yunus va Misqol pari» (10-14) va «Go‘ro‘g‘lining tug‘ilishi» (15-19). Uchtasi Mutolaa'da turibdi.</p>
+  <div class="note">
+    <p><b>Nozik joyi:</b> dostonning to‘liq matni — she'riy, uzun va o‘smir uchun og‘ir. Bolalar uchun qayta hikoya qilingan nashrini olish kerak. Qaysi nashrni olishimizni siz aytasiz — bu adabiyotshunoslik qarori, men o‘zim hal qilmayman.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Taklif etilayotgan ish tartibi<span class="sub">Nimadan boshlaymiz</span></h2>
+  <div class="steps">
+    <div class="step"><div class="no">1</div><div>
+      <h3>10-14 toifasini yopamiz — 23 ta asar</h3>
+      <p>Mutolaa'da matni bor, yoshi bizning bugungi qamrovimizga to‘g‘ri keladi. Har biriga pasport, test va muqova tayyorlanadi. Shundan keyin bu toifada tanlov ro‘yxatining 33 tasi bizda bo‘ladi.</p>
+    </div></div>
+    <div class="step"><div class="no">2</div><div>
+      <h3>Yangi «17-19» toifasi ochiladi</h3>
+      <p>Ilovaning eng katta toifasi hozir 14-16. Yangi toifa qo‘shilgach, 15-19 ro‘yxatidagi 39 ta asarni ikkiga ajratib kiritamiz: 15 tasi 14-16 ga, 24 tasi 17-19 ga.</p>
+    </div></div>
+    <div class="step"><div class="no">3</div><div>
+      <h3>Dostonlar alohida to‘lqin</h3>
+      <p>Siz nashrni tanlaganingizdan keyin — 4 ta doston, keyin ro‘yxatdan tashqari «Alpomish» va «Kuntug‘mish» ham qaraladi.</p>
+    </div></div>
+    <div class="step"><div class="no">4</div><div>
+      <h3>Topilmagan 14 ta asar — kutish ro‘yxatida</h3>
+      <p>Ular na bazamizda, na Mutolaa'da. Matni qo‘lga kirgan sayin qo‘shib boriladi. Bu ro‘yxat yo‘qolmasligi uchun alohida saqlab qo‘yiladi.</p>
+    </div></div>
+  </div>
+</section>
+
+<footer>Bilig AI · kitob bazasi hisoboti · tekshirilgan sana: 2026-yil 1-sentabr. Mutolaa'dagi mavjudlik sayt katalogi va davlat e'lonidagi izohlar bo‘yicha aniqlandi; she'riy to‘plamlarning bir qismi katalogda umumiy nom bilan turgani uchun qo‘lda tasdiqlash kerak bo‘lishi mumkin.</footer>
+
+</div>

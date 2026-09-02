@@ -1,0 +1,477 @@
+{
+ "title": "Factfulness",
+ "author": "Hans Rosling",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14-18",
+  "topics": [
+   "ilm-fan",
+   "faktlar",
+   "dunyoqarash",
+   "tahlil",
+   "jamiyat"
+  ],
+  "theme": "Dunyo biz o‘ylagandan va ommaviy axborot vositalari tasvirlagandan ko‘ra ancha yaxshiroq hamda barqaror rivojlanmoqda. Insoniyat hissiy instinktlarga emas, balki faktlar va statistik ma'lumotlarga tayanib fikrlashni o‘rganishi zarur.",
+  "summary": "Kitob muallifi Hans Rosling uzoq yillik shifokorlik va professorlik tajribasiga tayanib, odamlarning dunyo haqidagi bilimlari naqadar eskirgani va yanglish ekanini ochib beradi. U o‘g‘li Ola va kelini Anna bilan birgalikda tuzgan «Gapminder» jamg‘armasi orqali dunyo aholisi, kambag‘allik, ta'lim va salomatlik bo‘yicha faktik testlar o‘tkazadi. Natijalar shuni ko‘rsatadiki, hatto Nobel mukofoti laureatlari va davlat rahbarlari ham global ko‘rsatkichlar bo‘yicha savollarga shimpanzelardan ham yomonroq javob berishadi.\n\nMuallif inson miyasi va fikrlashidagi o‘nta dramatik instinktni tahlil qiladi. Bular: bo‘shliq, salbiylik, to‘g‘ri chiziqlar, qo‘rquv, hajm, umumlashtirish, taqdir, bir tomonlama yondashuv, ayblash va shoshilish instinktlaridir. Odamlar dunyoni faqat «boylar va kambag‘allar»ga bo‘lib ko‘rishga odatlanishgan, vaholanki aholining 85 foizi o‘rta daromadli qatlamda yashaydi. So‘nggi o‘n yilliklarda o‘ta qashshoqlik darajasi ikki baravarga kamaygan, qizlarning maktabda o‘qishi va bolalarning emlanishi misli ko‘rilmagan darajada oshgan.\n\nHans o‘z hayotidagi qiziqarli voqealarni — qilich yutishni o‘rganishi, Mozambikdagi shifokorlik amaliyoti, Kongodagi «konzo» kasalligini tadqiq qilish paytida g‘azablangan olomondan bir jasur afrikalik ayol tomonidan qutqarilishi kabi epizodlarni hikoya qiladi. Kitob yakunida muallif kasallikka chalinib vafot etsa-da, uning oilasi faktlarga asoslangan xolis dunyoqarashni targ‘ib qilish g‘oyasini munosib davom ettiradi.",
+  "characters": "Hans Rosling — xalqaro sog‘liqni saqlash bo‘yicha professor, shifokor, ma'ruzachi va kitobning bosh muallifi; Ola Rosling — Hansning o‘g‘li, ma'lumotlar tahlilchisi va «Gapminder» rahbari; Anna Rosling Ryonnlund — Hansning kelini, «Dollar ko‘chasi» loyihasi va dizayn muallifi; Jasur afrikalik ayol — Kongo qishlog‘idagi savodsiz, ammo mantiqli fikrlashi bilan Hansning hayotini qutqarib qolgan ayol; Pashkual Mokumbi — Mozambikning sobiq bosh vaziri, iqtisodiy o‘sishni paradga chiqqanlarning poyabzalidan aniqlagan arbob.",
+  "conclusion": "Bu kitob bolada tanqidiy fikrlash, mantiq va xolis tahlil qilish ko‘nikmasini shakllantiradi. U atrofdagi salbiy xabarlarga ko‘r-ko me'yorda ishonmay, dalillarga suyanishni o‘rgatadi. Kitob o‘smirda kelajakka nisbatan ishonch va konstruktiv umid bag‘ishlaydi.",
+  "difficulty": "qiyin",
+  "mood": "o‘ylantiruvchi, ilhomlantiruvchi",
+  "for_whom": "Dunyoning asl qiyofasini faktlar orqali anglashni, mantiqiy fikrlashni va o‘z dunyoqarashini kengaytirishni xohlaydigan o‘smirlar uchun.",
+  "events": [
+   "1. Hans Rosling bolaligida sirk ustasi bo‘lishni orzu qiladi, lekin ota-onasining xohishi bilan tibbiyot yo‘nalishida o‘qiydi.",
+   "2. Kasalxonada qilich yutuvchi qariyalardan birini davolash jarayonida tomoq teshigi yapaloq shaklda ekanini bilib oladi.",
+   "3. Hans uyida cho‘mich bandi va eski Shvetsiya armiyasi nayzasini yutib, qilich yutish san'atini egallaydi.",
+   "4. Hans, Ola va Anna 2005-yilda bilimsizlikka qarshi kurashish uchun «Gapminder» jamg‘armasiga asos solishadi.",
+   "5. Anna va Ola ma'lumotlarni tushunarli qilish uchun animatsiyali pufakchali diagrammalar va «Trendalyzer» dasturini yaratishadi.",
+   "6. Garvard va Stokholm talabalari o‘rtasida global faktlar bo‘yicha testlar o‘tkaziladi va xato javoblar ustunlik qiladi.",
+   "7. Muallif test natijalarini o‘ylamay banan tanlaydigan shimpanzelar natijasi bilan solishtiradi.",
+   "8. Davosdagi Jahon iqtisodiy forumida dunyo yetakchilari va siyosatchilari test savollariga shimpanzelardan ham yomonroq javob berishadi.",
+   "9. Muallif dunyoning 1965-yildagi va hozirgi holatini solishtirib, «biz va ular» degan bo‘shliq tugaganini ko‘rsatadi.",
+   "10. 1960-yilda Xitoyda insoniy xatolar oqibatida yuz bergan yirik ocharchilik natijasida umr ko‘rish chizig‘i keskin tushib ketgani tahlil qilinadi.",
+   "11. So‘nggi 50 yilda dunyo bo‘ylab har bir ayolga to‘g‘ri keladigan bolalar soni o‘rtacha 5 tadan 2.5 taga kamaygani tushuntiriladi.",
+   "12. Nepalda 9 ming kishi o‘lgan zilzila bilan bir vaqtda iflos suvdan 9 ming bola o‘lgani, lekin OAV buni yoritmagani ko‘rsatiladi.",
+   "13. Shvetsiyada ayiq hujumidan halok bo‘lgan ovchi va erining qo‘lida vafot etgan Mari Larson taqdiri OAVda turlicha yoritilishi tahlil qilinadi.",
+   "14. Anna Rosling turli daromadli oilalar hayotini suratlarga oluvchi «Dollar ko‘chasi» loyihasini taqdim etadi.",
+   "15. Vyetnamdagi eng ulkan urush yodgorligi Amerikaga emas, 2 ming yillik Xitoy bilan bo‘lgan urushlarga bag‘ishlangani ma'lum bo‘ladi.",
+   "16. Mozambik sobiq bosh vaziri Pashkual Mokumbi paradga chiqqan aholining poyabzaliga qarab iqtisodiyot o‘sishini baholaydi.",
+   "17. Kongo qishlog‘ida Hans va uning hamkorlarini qon o‘g‘risi deb o‘ylagan olomondan bir jasur ayol mantiqiy nutqi bilan qutqaradi.",
+   "18. Liberiyada ebola epidemiyasi paytida qo‘rquv va shoshilish sababli noto‘g‘ri qarorlar qabul qilinishi tahlil etiladi.",
+   "19. Hans Rosling 2017-yilda vafot etadi va uning oilasi kitobni nashrga tayyorlab tugatadi.",
+   "20. Hansning dafn marosimi uning vasiyatiga ko‘ra sirk tomoshasi va qilich yutish san'ati bilan o‘tkaziladi."
+  ],
+  "quotes": [
+   "Xuddi “TED talks”dagi nutqlarim va so‘nggi o‘n yilda dunyoning turli burchaklarida o‘qigan ma'ruzalarim kabi bu kitob ham bir emas, uch kishining mehnati samarasidir.",
+   "Men tomoshani va iloji yo‘qdek tuyulgan narsalar ko‘z o‘ngimda sodir bo‘layotganda hayrat va zavq hissini tuyishni yaxshi ko ko‘raman.",
+   "Qilich yutish imkonsizdek ko‘ringan narsalarning imkoni borligini ko‘rsatib kelgan va insonlarni shundoq ko‘rinib turgan narsa bilan cheklanmay, kengroq fikrlashiga undadi.",
+   "Oxirgi 20 yilda dunyoning o‘ta qashshoq hayot kechiruvchi aholisi 2 barobarga kamaygan.",
+   "Chunki “qo‘rqinchli” va “xavfli” bir narsa emas. Qo‘rqinchli narsa his qilinayotgan xavfni, xavfli narsa esa haqiqiy xavfni nazarda tutadi.",
+   "Bizda aybdorni topish instinkti bor, ammo kamdan-kam holda ko‘zguga qaraymiz."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hans Rosling yoshligida qaysi kasb egasi bo‘lishni orzu qilgan?",
+   "options": [
+    "A) Sirk ustasi bo‘lishni",
+    "B) Kosmonavt bo‘lishni",
+    "C) Uchuvchi bo‘lishni",
+    "D) Harbiy bo‘lishni"
+   ],
+   "answer": "A) Sirk ustasi bo‘lishni"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hans tomog‘idan birinchi marta nimani muvaffaqiyatli o‘tkaza oldi?",
+   "options": [
+    "A) Cho‘mich bandini",
+    "B) Qarmoqni",
+    "C) Qilichni",
+    "D) Temir simni"
+   ],
+   "answer": "A) Cho‘mich bandini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hans va uning oilasi 2005-yilda qaysi jamg‘armaga asos soldi?",
+   "options": [
+    "A) Gapminder jamg‘armasiga",
+    "B) YUNISEF jamg‘armasiga",
+    "C) TED jamg‘armasiga",
+    "D) Google jamg‘armasiga"
+   ],
+   "answer": "A) Gapminder jamg‘armasiga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "BMT hisobiga ko‘ra bugun dunyoda 15 yoshgacha bolalar qancha?",
+   "options": [
+    "A) 2 milliard",
+    "B) 4 milliard",
+    "C) 1 milliard",
+    "D) 3 milliard"
+   ],
+   "answer": "A) 2 milliard"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oliy ma'lumotli odamlarning test javoblari shimpanzelarnikidan qanday farq qildi?",
+   "options": [
+    "A) Bitta yo‘nalishda xato bo‘ldi",
+    "B) Mutlaqo to‘g‘ri bo‘lib chiqdi",
+    "C) Shimpanzelar umuman topa olmadi",
+    "D) Hech qanday farq bo‘lmadi"
+   ],
+   "answer": "A) Bitta yo‘nalishda xato bo‘ldi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hans nima uchun ma'ruzalarida qilich yutish san'atini namoyish etadi?",
+   "options": [
+    "A) Kengroq fikrlashga undash uchun",
+    "B) Tomoshabinlarni qo‘rqitish uchun",
+    "C) Vaqtni uzaytirish uchun",
+    "D) Ko‘proq pul topish uchun"
+   ],
+   "answer": "A) Kengroq fikrlashga undash uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Insonlar dunyo haqidagi savollarga nega salbiy javob berishadi?",
+   "options": [
+    "A) O‘ta dramatik dunyoqarash sababli",
+    "B) Kitob o‘qishni xohlamagani uchun",
+    "C) Savollar juda qiyinligi uchun",
+    "D) Yomon xotirasi sababli"
+   ],
+   "answer": "A) O‘ta dramatik dunyoqarash sababli"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Insonlarning bilimsizligida faqat ommaviy axborot vositalarini ayblash to‘g‘rimi?",
+   "options": [
+    "A) Yo‘q, miya instinktlari ham aybdor",
+    "B) Ha, faqat OAV aybdor",
+    "C) Ha, OAV yolg‘on gapiradi",
+    "D) Yo‘q, OAV ta'sir qilmaydi"
+   ],
+   "answer": "A) Yo‘q, miya instinktlari ham aybdor"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Davos forumidagi yetakchilarning test natijalari nimani ko‘rsatib berdi?",
+   "options": [
+    "A) Mansob ham bilimsizlikdan qutqarmaydi",
+    "B) Ular dunyoni mukammal biladi",
+    "C) Ular faqat iqtisodni tushunadi",
+    "D) Hamma savol noto‘g‘ri berilgan"
+   ],
+   "answer": "A) Mansob ham bilimsizlikdan qutqarmaydi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif inkubatordagi chaqaloq misolida dunyo haqida nimani tushuntirdi?",
+   "options": [
+    "A) Vaziyat yomon ham, yaxshilanayotgani ham",
+    "B) Dunyo tezda halok bo‘lishini",
+    "C) Tibbiyot mutlaqo ojiz ekanini",
+    "D) Bolalar soni kamayib borayotganini"
+   ],
+   "answer": "A) Vaziyat yomon ham, yaxshilanayotgani ham"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "1960-yilda Xitoyda qanday fojiaviy voqea yuz bergan edi?",
+   "options": [
+    "A) Yirik ocharchilik yuz bergan",
+    "B) Qattiq zilzila sodir bo‘lgan",
+    "C) Suv toshqini yuzaga kelgan",
+    "D) Urush harakatlari boshlangan"
+   ],
+   "answer": "A) Yirik ocharchilik yuz bergan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oxirgi 50 yilda har bir ayolga to‘g‘ri keladigan bolalar soni qancha?",
+   "options": [
+    "A) O‘rtacha 2.5 ta",
+    "B) O‘rtacha 5 ta",
+    "C) O‘rtacha 1 ta",
+    "D) O‘rtacha 4 ta"
+   ],
+   "answer": "A) O‘rtacha 2.5 ta"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anna ishlab chiqqan fotosuratlarga asoslangan ma'lumotlar loyihasi nima deb ataladi?",
+   "options": [
+    "A) Dollar ko‘chasi",
+    "B) Dunyo xaritasi",
+    "C) Tinchlik ko‘chasi",
+    "D) Faktlar ko‘chasi"
+   ],
+   "answer": "A) Dollar ko‘chasi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mari Larson o‘limi haqidagi xabar gazetada qanday yoritilgan edi?",
+   "options": [
+    "A) Mahalliy gazetada imi-jimida yoritildi",
+    "B) Barcha kanallarda ko‘rsatildi",
+    "C) Bosh sahifalarga katta bosildi",
+    "D) Umuman gazetaga chiqmagan edi"
+   ],
+   "answer": "A) Mahalliy gazetada imi-jimida yoritildi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Inson daromadi ikki baravar oshganda uning hayotida nima o‘zgaradi?",
+   "options": [
+    "A) Turmush tarzi sezilarli yaxshilanadi",
+    "B) Hech qanday o‘zgarish bo‘lmaydi",
+    "C) Faqat soliqlar miqdori oshadi",
+    "D) Harajatlar butunlay kamayib ketadi"
+   ],
+   "answer": "A) Turmush tarzi sezilarli yaxshilanadi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "O‘rtacha ko‘rsatkichlarni solishtirishda qanday asosiy xavf mavjud?",
+   "options": [
+    "A) Ular oradagi farqlarni berkitadi",
+    "B) Ular har doim yolg‘on bo‘ladi",
+    "C) Ularni hisoblash imkoni yo‘q",
+    "D) Ular faqat boylarga tegishli"
+   ],
+   "answer": "A) Ular oradagi farqlarni berkitadi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ayiq hujumi nega gazetada oilaviy zo‘ravonlikdan ko‘proq yoritiladi?",
+   "options": [
+    "A) Chunki u juda kam uchraydi",
+    "B) Chunki ayiqlar juda ko‘paygan",
+    "C) Chunki oilaviy zo‘ravonlik muhim emas",
+    "D) Chunki ayiq egasi aybdor bo‘lgan"
+   ],
+   "answer": "A) Chunki u juda kam uchraydi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "OAV nima uchun salbiy xabarlarni yaxshi xabarlardan ko‘ra ko‘proq beradi?",
+   "options": [
+    "A) Dramatik voqealarni tanlab uzatadi",
+    "B) Dunyoda yaxshi voqea bo‘lmaydi",
+    "C) Insonlar faqat qayg‘uni xohlaydi",
+    "D) Yomon xabarlar arzonroq turadi"
+   ],
+   "answer": "A) Dramatik voqealarni tanlab uzatadi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Faktlar va raqamlar inson vaqotidagi qo‘rquvga qanday ta'sir qilishi kerak?",
+   "options": [
+    "A) Vahimani bosib, mantiqni tiklashi",
+    "B) Insonni yanada ko‘proq qo‘rqitishi",
+    "C) Hissiyotlarni butunlay yo‘q qilishi",
+    "D) Faqat xursandchilik berishi kerak"
+   ],
+   "answer": "A) Vahimani bosib, mantiqni tiklashi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Daniya va Shvetsiya haqidagi yolg‘on bilan nimaga erishdi?",
+   "options": [
+    "A) Qishloq ahlining ko‘nglini og‘ritmadi",
+    "B) Ularni o‘ziga dushman qildi",
+    "C) Do‘sti Torkildni sharmanda qildi",
+    "D) Qishloq o‘qituvchisini javobgar qildi"
+   ],
+   "answer": "A) Qishloq ahlining ko‘nglini og‘ritmadi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vyetnamdagi eng ulkan va baland urush yodgorligi kimlarga bag‘ishlangan?",
+   "options": [
+    "A) Xitoy bilan bo‘lgan janglarga",
+    "B) Fransiyaga qarshi urush qurbonlariga",
+    "C) Amerikaga qarshi urush qatnashchilariga",
+    "D) Fuqarolar urushi qatnashchilariga"
+   ],
+   "answer": "A) Xitoy bilan bo‘lgan janglarga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mozambik sobiq bosh vaziri iqtisodiyot o‘sishini qanday aniqlagan edi?",
+   "options": [
+    "A) Paradidagilarning poyabzaliga qarab",
+    "B) Televizordagi yangiliklarni ko‘rib",
+    "C) Chet el banki hisobotidan",
+    "D) Do‘konlardagi narxlarni tahlil qilib"
+   ],
+   "answer": "A) Paradidagilarning poyabzaliga qarab"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kongo qishlog‘ida shifokorlarni g‘azablangan olomondan kim qutqarib qoldi?",
+   "options": [
+    "A) Jasur bir afrikalik ayol",
+    "B) Qishloq mirshablari va harbiylari",
+    "C) Qishloq o‘qituvchisi va hokim",
+    "D) BMT vakillari va ko‘ngillilar"
+   ],
+   "answer": "A) Jasur bir afrikalik ayol"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hans Rosling qaysi yilda vafot etgan edi?",
+   "options": [
+    "A) 2017-yilda",
+    "B) 2015-yilda",
+    "C) 2018-yilda",
+    "D) 2020-yilda"
+   ],
+   "answer": "A) 2017-yilda"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Insonlarda ayblash instinkti paydo bo‘lganda odatda nima sodir bo‘ladi?",
+   "options": [
+    "A) Muammo o‘rniga aybdor qidiriladi",
+    "B) O‘z xatolari darrov tan olinadi",
+    "C) Tizim chuqur tahlil qilinadi",
+    "D) Boshqalarga yordam berishga oshiqiladi"
+   ],
+   "answer": "A) Muammo o‘rniga aybdor qidiriladi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kongo qishlog‘idagi ayol nima uchun o‘z qonini topshirishga rozi bo‘ldi?",
+   "options": [
+    "A) Kelajak avlod sog‘lom bo‘lishi uchun",
+    "B) Hans unga pul bergani uchun",
+    "C) Qishloqdoshlaridan juda qo‘rqqani uchun",
+    "D) Shifokor bo‘lishni xohlagani uchun"
+   ],
+   "answer": "A) Kelajak avlod sog‘lom bo‘lishi uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoshilish instinkti inson tahlil qilish qobiliyatiga qanday ta'sir qiladi?",
+   "options": [
+    "A) Vahima uyg‘otib, tahlilni o‘chiradi",
+    "B) Insonni juda aqlli qilib qo‘yadi",
+    "C) Faktlarni aniqroq ko‘rishga yordam beradi",
+    "D) Xotirani va diqqatni kuchaytiradi"
+   ],
+   "answer": "A) Vahima uyg‘otib, tahlilni o‘chiradi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Hansning dafn marosimidagi sirk va qilich yutish tomoshasi nimani anglatadi?",
+   "options": [
+    "A) Hayotsevarlik va betakror shaxsiyat ifodasi",
+    "B) Kattalarga nisbatan behurmatlik ko‘rinishi",
+    "C) Sirk reklama qilish istagi",
+    "D) Mantiqsiz va omadsiz harakat"
+   ],
+   "answer": "A) Hayotsevarlik va betakror shaxsiyat ifodasi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dafn marosimidagi Frenk Sinatraning qo‘shig‘i Hansning qaysi xislatini ko‘rsatadi?",
+   "options": [
+    "A) O‘z tamoyillari bilan yashaganini",
+    "B) Musiqani juda yaxshi tushunganini",
+    "C) Doim chet elda yashaganini",
+    "D) Faqat san'at bilan shug‘ullanganini"
+   ],
+   "answer": "A) O‘z tamoyillari bilan yashaganini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Jasur afrikalik ayolning harakati o‘quvchida qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Mantiq va ilm kuchi ishonchi",
+    "B) Afrikaga borishdan qo‘rquv hissi",
+    "C) Kasalliklardan umidsizlikka tushish tuyg‘usi",
+    "D) Oddiy odamlarga bepisandlik qarashi"
+   ],
+   "answer": "A) Mantiq va ilm kuchi ishonchi"
+  }
+ ]
+}

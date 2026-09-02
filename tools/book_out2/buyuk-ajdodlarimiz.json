@@ -1,0 +1,80 @@
+{
+ "title": "Buyuk ajdodlarimiz",
+ "author": "Mualliflar jamoasi",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "odob",
+   "ilm",
+   "vatanparvarlik",
+   "bag‘rikenglik",
+   "aqida",
+   "tarix"
+  ],
+  "theme": "Kitob Movarounnahr kabi qadimiy o‘lkada yetishib chiqqan buyuk islom allomalarining hayoti, ilmiy merosi, odob-axloq, vatanparvarlik, bag‘rikenglik va aqidaviy qarashlarini keng kitobxonlar ommasiga hamda tadqiqotchilarga sodda va tushunarli tarzda yetkazib berishga bag‘ishlangan.",
+  "summary": "Ushbu kitob Movarounnahr mintaqasida yashab ijod etgan o‘n nafar buyuk allomaning hayoti va ilmiy merosini muayyan mantiqiy tartibda yoritib beradi. Kirish qismida Sharq olimlarining jahon sivilizatsiyasi va ilm-fani rivojiga qo‘shgan ulkan hissasi hamda ularning asarlarini chuqur tadqiq etishning bugungi kundagi ahamiyati ta'kidlanadi. Birinchi bo‘limda moturidiylik ta'limotining asoschisi Imom Abu Mansur Moturidiyning hayoti, ustoz-shogirdlari, ega bo‘lgan unvonlari va qoldirgan o‘n beshga yaqin asari haqida batafsil ma'lumot beriladi. Undan so‘ng Abu Lays Samarqandiyning tafsir, tasavvuf hamda odob-axloq sohasidagi faoliyati va “Tanbeh al-g‘ofilin” kabi mashhur asarlari tahlil etiladi. Uchinchi bobda Imom Zandavistiyning hayoti, Buxoroning Zandana qishlog‘i tarixi va allomaning qomusiy ilmiy merosi yoritiladi. To‘rtinchi va beshinchi bo‘limlarda Abu Shakur Solimiy hamda Abul Muin Nasafiyning moturidiylik ta'limotini rivojlantirish va aqidaviy masalalarda to‘g‘ri e'tiqod asoslarini ko‘rsatib berishga qaratilgan sa'y-harakatlari bayon etiladi. Oltinchi bobda Alouddin Samarqandiy va uning “Tuhfat al-fuqaho” asari misolida hanafiy fiqhining nozik qirralari hamda ibodat va muomalot masalalari ochib beriladi. Yettinchi va sakkizinchi bo‘limlarda Sirojiddin O‘shiy hamda Abu Hafs Nasafiyning fiqh, hadis va aqida sohasidagi asarlari tahlil etiladi. Oxirgi bo‘limlarda Abul Barakot Nasafiy va Sa'duddin Taftazoniy kabi qomusiy allomalarning hayot yo‘li, mantiq, kalom hamda balog‘at ilmlariga qo‘shgan ulkan hissasi ketma-ket bayon qilinadi. Kitob har bir allomaning islom ma'rifati rivojidagi o‘rnini ko‘rsatib berish bilan yakunlanadi.",
+  "characters": "Imom Abu Mansur Moturidiy, Abu Lays Samarqandiy, Imom Zandavistiy, Abu Shakur Solimiy, Abul Muin Nasafiy, Alouddin Samarqandiy, Sirojiddin O‘shiy, Abu Hafs Nasafiy, Abul Barakot Nasafiy, Sa'duddin Taftazoniy.",
+  "conclusion": "Ushbu kitobni o‘qigan o‘quvchi Movarounnahr zamonidan yetishib chiqqan buyuk allomalarning hayoti va ilmiy merosi haqida yaxlit tasavvurga ega bo‘ladi. Ularning ilm-fanga, odob-axloqqa hamda jamiyat ma'naviyatiga qo‘shgan g‘oyat ulkan hissasini anglab yetadi. Mutolaa davomida insoniy qadriyatlar, mehnatsevarlik, halollik va bag‘rikenglik kabi ezgu fazilatlarning ahamiyatini tushunib oladi. Bu esa o‘smirlarda o‘z ajdodlari bilan faxrlanish tuyg‘usini shakllantiradi hamda ularni ilm olishga va komillikka intilishga undaydi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, ilmiy-ma'rifiy",
+  "for_whom": "Buyuk ajdodlarimiz hayoti va ma'naviy merosi bilan qiziquvchi 14 yoshdan katta barcha o‘smirlar hamda kitobxonlar uchun mos.",
+  "events": [
+   "Kirish qismida Movarounnahr allomalari merosini o‘rganish va targ‘ib qilishning ahamiyati yoritiladi.",
+   "Imom Abu Mansur Moturidiyning hayoti, uning unvonlari va kalom maktabini tizimlashtirishdagi xizmatlari bayon qilinadi.",
+   "Imom Moturidiyning ustozlari shajarasi va uning yetuk shogirdlari haqida ma'lumotlar beriladi.",
+   "Abu Mansur Moturidiyning “Kitob at-tavhid” va “Ta'vilot al-Qur'on” kabi asosiy asarlari tahlil qilinadi.",
+   "Abu Lays Samarqandiyning hayot yo‘li va Movarounnahr tafsir ilmi rivojidagi o‘rni ko‘rsatib beriladi.",
+   "Abu Lays Samarqandiyning “Tanbeh al-g‘ofilin” va “Bo‘ston al-orifin” asarlaridagi axloqiy va tarbiyaviy hikoyalar bayon etiladi.",
+   "Imom Zandavistiyning hayoti va Buxoroning Zandana qishlog‘i tarixi haqida ma'lumotlar keltiriladi.",
+   "Imom Zandavistiyning “Ravzat al-ulamo” asari va undagi ilm fazilatiga oid rivoyatlar yoritiladi.",
+   "Abu Shakur Solimiy Keshiyning hayoti hamda uning “At-Tamhid” asaridagi e'tiqodiy qarashlari tahlil qilinadi.",
+   "Abul Muin Nasafiyning moturidiylik ta'limotini himoya qilish va rivojlantirish borasidagi ilmiy faoliyati ko‘rsatiladi.",
+   "Abul Muin Nasafiyning “Bahr al-kalom” asarida sog‘lom e'tiqod va halol mehnat masalalarining yoritilishi bayon etiladi.",
+   "Alouddin Samarqandiyning hayot yo‘li va uning hanafiy fiqhiga bag‘ishlangan “Tuhfat al-fuqaho” asari tahlil qilinadi.",
+   "Sirojiddin O‘shiyning hayoti, hadis va fiqh ilmlari rivojiga qo‘shgan hissasi hamda “Fatovoi sirojiya” asari haqida so‘z yuritiladi.",
+   "Abu Hafs Nasafiyning hayot yo‘li, tafsirlari hamda mashhur “Aqoid” risolasining yaratilish tarixi yoritiladi.",
+   "Abul Barakot Nasafiyning Movarounnahr fiqh ilmi rivojidagi o‘rni va “Kanz ad-daqoiq” asarining ahamiyati tahlil qilinadi.",
+   "Sa'duddin Taftazoniyning hayoti, uning qomusiy bilimi hamda mantiq va aqoid sohasidagi asarlari bayon etiladi."
+  ],
+  "quotes": [
+   "O‘ylaymizki, yurtimiz olimlarining tarjimayi holi va ilmiy merosini xorijiy tillarga tarjima qilib, ularni ilmiy-ommabop nashrlar tarzida jahon hamjamiyatiga yetkazish orqali ularning jahon miqyosida qo‘shgan ulkan hissasini xorijda ham kengroq targ‘ib qilishga erishish mumkin bo‘ladi.",
+   "Abu Mansur Moturidiy buyuk mutakallim allomalardan biri bo‘lib, Samarqandda tavallud topgan va shu yerda yashab, faoliyat yuritgan.",
+   "Abu Lays Samarqandiyning tasavvuf va odob-axloq ilmiga oid asarlari orasida “Tanbeh al-g‘ofilin” (“G‘ofillarga ogohlantirish”) hamda “Bo‘ston al-orifin” (“Oriflar bo‘stoni”) kitoblari ma'lum va mashhur.",
+   "Abul Muin Nasafiy ana shunday mo‘tabar ilm bilan mashg‘ul bo‘lib, o‘z davrida turli e'tiqodi noto‘g‘ri bo‘lgan oqimlarga qarshi o‘z asarlari bilan raddiya bergan.",
+   "Sa'duddin Taftazoniy mashhur mutafakkirlardan tahsil olib, o‘z davrining deyarli barcha ilm-fan sohalari doirasida arab, fors, eski turkiy tillarda ijod qilgan alloma sifatida e'tirof etilgan."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "O‘zbekistonda keyingi yillarda Sharq allomalari hayoti va boy ilmiy-ma'naviy merosini chuqur o‘rganish, bu merosni aholi o‘rtasida keng targ‘ib etishga alohida e'tibor qaratilmoqda. Alohida ta'kidlash joizki, bugungi kunda ushbu maqsadlarda O‘zbekiston xalqaro islom akademiyasi, O‘zbekistondagi Islom sivilizatsiyasi markazi, Imom Moturidiy, Imom Buxoriy va Imom Termiziy nomidagi xalqaro ilmiy-tadqiqot markazlari tomonidan tizimli ilmiy-tadqiqot ishlari olib borilmoqda.",
+   "question": "Ajdodlarimiz merosini o‘rganish va targ‘ib qilish bugungi kunda nega muhim deb o‘ylaysan hamda sen shaxsan o‘z hayotingda bunga qanday hissa qo‘sha olasan?"
+  },
+  {
+   "part": 1,
+   "context": "Abul Muinning “Tabsirat al-adilla” asarida Abu Mansur Moturidiy haqida keltirilgan yana bir rivoyati uning islom olamida ilmiy mavqeyi juda katta bo‘lgani dan dalolat beradi. Asarda ta'kidlanishicha, agar Abu Mansur Moturidiy ustozi Abu Nasr Iyoziyning darsida ayrim sabablarga ko‘ra ishtirok etmay qolsa yoki kechiksa, hatto, ustozi o‘z shogirdiga nisbatan cheksiz hurmati va muhabbatining izhori sifatida o‘sha darsda Moturidiy hozir bo‘lmaguncha biror so‘z ham aytmas ekan.",
+   "question": "Ustoz va shogird o‘rtasidagi bunday yuksak hurmat hamda ehtirom haqida o‘qiganingda qanday tuyg‘ularni his qilding va sen o‘z ustozlaring bilan munosabatda bu holatni qanday qo‘llay olasan?"
+  },
+  {
+   "part": 2,
+   "context": "Abu Lays Samarqandiy aytadi: Bilgilki, har bir muslim va muslimaga din ishlarida muhtoj bo‘ladigan tahorat, namoz va shariatning boshqa hukmlari hamda hayotiy ishlarda zarur bo‘lgan miqdorda ilm o‘rganish farzdir. Bundan ortiqchasi farzi kifoya (ya'ni bir kishi o‘rgansa, qolganlardan soqit bo‘ladi)dir, ya'ni fazilatdir. Xullas, kundalik hayotda kishi uchun zarur bo‘lgan ilmlarni o‘rganish farzi ayn, undan ortig‘ini tahsil olish farzi kifoyadir.",
+   "question": "Kundalik hayotingda har kuni o‘rganishing zarur bo‘lgan amaliy ilmlar va bilimlarga nimalarni kiritgan bo‘larding hamda ularni egallash uchun kun bo‘yi qanday reja tuzasan?"
+  },
+  {
+   "part": 2,
+   "context": "Nasafiy Payg‘ambarimizdan quyidagi hadisni dalil keltiradi:\n“Rasululloh sollallohu alayhi vasallam aytdilar:\n“Kim turli riyolardan chetlashgan holda, o‘z oilasi uchun va qo‘shnisiga in'om ko‘rsatish uchun halol yo‘l bilan mol-u dunyo topsa, qiyomat kuni uning yuzi xuddi badr kechasidagi to‘lin oydek bo‘ladi. Agar kim ko‘p iftixor va riyo uchun halol yo‘l bilan bo‘lsa ham mol-u dunyo topsa, qiyomat kuni Alloh unga g‘azabli holda duch keladi””.",
+   "question": "Insonning halol mehnat qilishi va topgan daromadidan atrofdagilarga ham ko‘maklashishi uning fe'l-atvoriga hamda jamiyatga qanday ijobiy ta'sir ko‘rsatadi deb o‘ylaysan?"
+  },
+  {
+   "part": 3,
+   "context": "Sa'duddin Taftazoniy yoshligidanoq ilm olishga katta qiziqish bilan qaragani va g‘ayritabiiy zehn hamda qobiliyat sohibi bo‘lgani tarixiy manbalarda ko‘p bora ta'kidlangan. Shuningdek, olimning nutqida biroz duduq lik bo‘lgani ham qayd etilgan.\nAlloma Taftazoniyning ilm olishga bo‘lgan qiziqishi va g‘ayritabiiy zehni zarbulmasalga aylanib ketgan hamda u bugungi kungacha ham madrasa va ustoz-shogird ta'lim tizimida davom etib kelmoqda.",
+   "question": "Inson har qanday jismoniy yoki nutqiy qiyinchiliklarga qaramasdan yuksak ilmiy muvaffaqiyatlarga erishishi mumkinligini o‘ylaganingda, bu senga o‘z maqsadlaringga erishishda qanday ruhiy kuch beradi?"
+  }
+ ]
+}

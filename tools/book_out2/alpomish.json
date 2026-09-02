@@ -1,0 +1,481 @@
+{
+ "title": "Alpomish",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "jasorat",
+   "vatanparvarlik",
+   "sadoqat",
+   "do‘stlik",
+   "oila",
+   "halollik"
+  ],
+  "theme": "Asarning bosh g‘oyasi — vatan va el-yurtga sadoqat, mardlik, adolat, oilaviy rishtalarni e'zozlash va va'daga vafo qilishdir. Doston insonni har qanday qiyinchilikda ham mard va halol bo‘lishga, birlik va hamjihatlikni saqlashga da'vat etadi.",
+  "summary": "Qadim zamonda Qo‘ng‘irot elida Boybo‘ri va Boysari degan biylar farzandsiz bo‘lib, to‘yda behurmat qilinadilar. Ular Shohimardon piri ravzasiga borib farzand tilaydilar. Duolar qabul bo‘lib, Boybo‘ri o‘g‘illi (Hakimbek) va qizli (Qaldirg‘och), Boysari esa qizli (Barchinoy) bo‘ladi. Hakimbek yetti yoshida bobosidan qolgan og‘ir yoydan otib, Asqar tog‘i cho‘qqisini yulib o‘tgani uchun xalq unga Alpomish deb ot qo‘yadi.\n\nKunlardan bir kun Boybo‘ri inisi Boysaridan zakot so‘raydi. Zakot gapidan g‘azablangan Boysari akasidan arazlab, o‘n ming uyli Qo‘ng‘irot elati bilan Qalmoq yurtiga — Chilbir cho‘liga ko‘chib ketadi. Qalmoq elida to‘qson qalmoq alp Barchinoyga zor bo‘lib, tazyiq o‘tkaza boshlaydi. Barchinoy Qo‘ng‘irotga maktub yuborib, Alpomishni yordamga chaqiradi.\n\nAlpomish Qultoy bobodan Boychibor otini olib qalmoq yurtiga jo‘naydi. U yerda qalmoq alpi Qorajon bilan do‘stlashadi. Barchinoy alplarga poyga, merganlik va kurash shartlarini qo‘yadi. Qorajon Boychibor otida poygada g‘olib chiqadi, Alpomish alplarni yengib, Barchinoyga nikohlanadi va eliga qaytadi.\n\nKeyinchalik Boysarining qalmoq elida qolib ketgani va xor bo‘layotgani haqida xabar kelgach, Alpomish amakisini qutqarish uchun yana yo‘lga chiqadi. Lekin qalmoqlar uni mast qilib, qirq quloch zindonga tashlaydilar. Alpomish zindonda yetti yil yotadi. Unga cho‘pon Kayqubod kal va podshoning qizi Tovka yordam beradi. Alpomish zindondan qutulib, eliga qaytsa, Qo‘ng‘irotda qul Ultontoz hokimiyatni egallab, elga zulm qilayotgan va Barchinoyga uylanmoqchi bo‘layotgan bo‘ladi. Alpomish Qultoy qiyofasida to‘yxonaga kirib, el-yurt va o‘z yaqinlarini sinaydi. So‘ngra Ultontoz va uning tarafdorlarini jazolab, Boysarini yurtga qaytaradi, Qo‘ng‘irotda tinchlik va adolatni qaror toptiradi.",
+  "characters": "Alpomish (Hakimbek) — mard, jasur, el-yurtiga va yoriga sodiq qahramon. Barchinoy — aqli raso, vafodor, jasoratli va iboli o‘zbek qizi. Boybo‘ri — Qo‘ng‘irotning hukmdori, Hakimbekning otasi. Boysari — Boybo‘rining inisi, Barchinoyning otasi, arazchi va kaltabin boy. Qorajon — adolatni tan olgan, Alpomish bilan chin do‘st bo‘lgan qalmoq alpi. Ultontoz — mansabparast, berahm va xiyonatkor qul.",
+  "conclusion": "Asar yovuzlik va xiyonat ustidan adolat va mardlik g‘alaba qozonishi bilan yakunlanadi. Bola ushbu dostondan vatanparvarlik, do‘stlikka sadoqat va qiyinchiliklarda bukilmaslik sabog‘ini oladi. U ota-ona hamda yaqinlarga hurmat bilan qarash, har qanday sharoitda ham o‘zligini yo‘qotmaslik muhimligini anglaydi.",
+  "difficulty": "o‘rta",
+  "mood": "vatanparvarlik, shijoatli, xalqona",
+  "for_whom": "Jasorat, qahramonlik va xalq dostonlariga qiziqadigan, do‘stlik hamda mardlik haqidagi sarguzashtli asarlarni yaxshi ko‘radigan kitobxonga.",
+  "events": [
+   "1. Boybo‘ri va Boysari farzandsiz bo‘lib, to‘yda behurmat qilingach, Shohimardon piri ravzasiga borib farzand tilaydilar.",
+   "2. Shohimardon piri duosi bilan Boybo‘riga Hakimbek va Qaldirg‘och, Boysariga Barchinoy dunyoga keladi va ular beshkirti qilinadi.",
+   "3. Hakimbek yetti yoshida bobosidan qolgan o‘n to‘rt botmon yoyni tortib otgani uchun xalq unga Alpomish deb ot qo‘yadi.",
+   "4. Boybo‘ri inisi Boysaridan zakot so‘rab mahram yuboradi, Boysari zakotchilarni jazolaydi.",
+   "5. Boysari akasidan arazlab o‘n ming uyli Qo‘ng‘irot elati bilan Qalmoq yurtiga, Chilbir cho‘liga ko‘chib ketadi.",
+   "6. Barchinoy yurtini va elini tashlab ketayotganidan iztirobga tushib yig‘laydi.",
+   "7. Qalmoq yurtida to‘qson qalmoq alp Barchinoyga xaridor bo‘lib, tazyiq o‘tkaza boshlaydi.",
+   "8. Barchinoy Qo‘ng‘irot eliga va Hakimbekka maktub yo‘llab yordam so‘raydi.",
+   "9. Alpomish singlisi Qaldirg‘ochdan xabarni eshitgach, Qultoydan Boychibor otini olib Qalmoq yurtiga jo‘naydi.",
+   "10. Qalmoq alpi Qorajon Alpomishning mardligini ko‘rib unga do‘st bo‘ladi.",
+   "11. Barchinoy alplarga poyga, kamondan otish, merganlik va kurash shartlarini qo‘yadi.",
+   "12. Qorajon Boychibor otida poygada qatnashib, toshloq yo‘llardan chopib g‘alaba qozonadi.",
+   "13. Alpomish barcha shartlarni bajarib, qalmoq alplarini yengadi va Barchinoyga nikohlanadi.",
+   "14. Alpomish va Barchinoy Qo‘ng‘irot eliga qaytib, el-yurtda katta to‘y-tomosha bo‘ladi.",
+   "15. Boysarining qalmoq elida asir va xor bo‘lib qolgani haqida xabar kelgach, Alpomish uni qutqarish uchun yana yo‘lga chiqadi.",
+   "16. Alpomish qalmoq yurtida g‘animlar tomonidan mast qilinib zindonga tashlanadi.",
+   "17. Cho‘pon Kayqubod kal va Qalmoqshohning qizi Tovka zindondagi Alpomishga yordam berib turishadi.",
+   "18. Alpomish zindonda yotgan yillari Qo‘ng‘irotda qul Ultontoz hokimiyatni egallab, elga va Yodgorga zulm o‘tkazadi.",
+   "19. Alpomish yetti yildan so‘ng zindondan qutulib, o‘z yurtiga qaytadi va Qultoy qul qiyofasiga kiradi.",
+   "20. Alpomish Yodgor, Qaldirg‘och va elining holatini sinab ko‘radi hamda Ultontozning zulmini fosh qiladi.",
+   "21. Alpomish Ultontozni va uning tasmachilarini jazolab, Boysarini yurtga salomat qaytaradi va Qo‘ng‘irotda adolat hamda tinchlikni tiklaydi."
+  ],
+  "quotes": [
+   "Alpinbiydan tag‘in ikki o‘g‘il paydo bo‘ldi: kattakonining otini Boybo‘ri qo‘ydi, kichkinasining otini Boysari qo‘ydi.",
+   "To‘qson alpning biri bo‘lib sanaga o‘tib, alplik otini ko‘tarib, yetti yoshida Alpomish ot qo‘yildi.",
+   "Boybo‘ridan bizga mahram kelibdi, Zakot debdi, bir bidahat qilibdi.",
+   "O‘n ming uyli elat birga boramiz, Sen nima bo‘lsang, biz ham shunday bo‘lamiz.",
+   "Chiltanlar Barchinning ruhini olib ketdi, Chilbir cho‘lida, Oyna ko‘lida, baxmal o‘tovda, uxlab yotgan yerida Barchinning ruhini ham taniga kirgizib qaytdi.",
+   "Qo‘ng‘irot eldan yorin olib, Nomus bilan orin olib, Kelayotir sherday bo‘lib...",
+   "Nikoh qiyib oldi Barchin yorini, Ko‘ngildan chiqarib ko‘p g‘uborini...",
+   "Barchin suluv aqli raso, donodi, O‘zi ayol, ko‘p ishlarni biladi..."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Boybo‘ri va Boysari farzand tilab qayerga bordi?",
+   "options": [
+    "A) Shohimardon piri ravzasiga",
+    "B) Qag‘oton tog‘i cho‘qqisiga",
+    "C) Chilbir cho‘lidagi obod koshonaga",
+    "D) Ko‘kqamish ko‘li bo‘yiga"
+   ],
+   "answer": "A) Shohimardon piri ravzasiga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hakimbek yetti yoshida qanday jasorat ko‘rsatdi?",
+   "options": [
+    "A) Qirq botmon yoyni tortdi",
+    "B) O‘n to‘rt botmon yoyni otib tog‘ni yuldi",
+    "C) Qalmoq alplarini poygada yengdi",
+    "D) Qaltis jangda ayiqni yengdi"
+   ],
+   "answer": "B) O‘n to‘rt botmon yoyni otib tog‘ni yuldi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hakimbekka Alpomish deb kim ot qo‘ydi?",
+   "options": [
+    "A) O‘n olti urug‘ xalqi",
+    "B) Otasi Boybo‘ribiy",
+    "C) Amakisi Boysaribiy",
+    "D) Ustoz qalandar"
+   ],
+   "answer": "A) O‘n olti urug‘ xalqi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Boysari nima uchun akasidan arazlab ko‘chib ketdi?",
+   "options": [
+    "A) Zakot so‘ralgani uchun",
+    "B) Yaylov bo‘lingani uchun",
+    "C) To‘yga chaqirilmagani uchun",
+    "D) Moli yo‘qolgani uchun"
+   ],
+   "answer": "A) Zakot so‘ralgani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Boysari bilan birga ko‘chgan el xususiyati qanday edi?",
+   "options": [
+    "A) Ekin ekmaydigan chorvador boylar edi",
+    "B) Dehqonchilik qiladigan kambag‘allar edi",
+    "C) Hunarmandchilik qiladigan kasb egalari edi",
+    "D) Savdo qiladigan shahar xalqi edi"
+   ],
+   "answer": "A) Ekin ekmaydigan chorvador boylar edi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yartiboy oqsoqol Boysarining qaroriga nega qarshi chiqmadi?",
+   "options": [
+    "A) Oqibatdan qo‘rqib, birga ko‘chishni ma’qulladi",
+    "B) Qalmoq yurtini juda ko‘rmoqchi edi",
+    "C) Boybo‘ridan sovg‘a olgan edi",
+    "D) Boysarini yomon ko‘rar edi"
+   ],
+   "answer": "A) Oqibatdan qo‘rqib, birga ko‘chishni ma’qulladi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Barchinoy enasi yetaklab kelgan otni ko‘rib nega yig‘ladi?",
+   "options": [
+    "A) Elidan va yurtidan ayrilayotganini sezdi",
+    "B) Ot unga yoqmay qolgan edi",
+    "C) Otasiga achinib yig‘ladi",
+    "D) Minishni bilmas edi"
+   ],
+   "answer": "A) Elidan va yurtidan ayrilayotganini sezdi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Boybo‘rining inisidan zakot so‘rashi to‘g‘ri ish edimi?",
+   "options": [
+    "A) Noto‘g‘ri — g‘araz sabab qarindoshlik rishtasi buzildi",
+    "B) To‘g‘ri — inisi boyroq edi",
+    "C) To‘g‘ri — elda shunday tartib bor edi",
+    "D) Noto‘g‘ri — zakotni qalmoqlar olishi kerak edi"
+   ],
+   "answer": "A) Noto‘g‘ri — g‘araz sabab qarindoshlik rishtasi buzildi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Boysarining arazlab qalmoq yurtiga ko‘chishi qanday oqibat keltirdi?",
+   "options": [
+    "A) O‘z xalqini xorlik va musofirlikka do‘char qildi",
+    "B) Yurtini yanada obod va boy qildi",
+    "C) Akasi bilan munosabatini darhol tuzatdi",
+    "D) Qalmoqlar bilan do‘st bo‘lib yashadi"
+   ],
+   "answer": "A) O‘z xalqini xorlik va musofirlikka do‘char qildi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston aytuvchi Boysarining dardi haqida qanday tasvir beradi?",
+   "options": [
+    "A) Bag‘ri pora va ko‘zi yoshli qilib",
+    "B) Kulgili va yengil qilib",
+    "C) G‘azabdor va berahm qilib",
+    "D) Bevafo va loqayd qilib"
+   ],
+   "answer": "A) Bag‘ri pora va ko‘zi yoshli qilib"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qorajon nima uchun o‘z enasining yo‘lini to‘sdi?",
+   "options": [
+    "A) O‘zbeklar eliga yomonlik bilan bormasligi uchun",
+    "B) Qalmoq alplaridan qo‘rqani uchun",
+    "C) Barchinoyni o‘zi olmoqchi bo‘lgani uchun",
+    "D) Qo‘ng‘irot eliga ko‘chmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) O‘zbeklar eliga yomonlik bilan bormasligi uchun"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘qson qalmoq alp Barchinoyga kelganda Boysari nima qildi?",
+   "options": [
+    "A) Ertangacha muhlat so‘rab o‘ylanib qoldi",
+    "B) Ularni uyidan haydab chiqardi",
+    "C) Qizini darhol Ko‘kaldoshga berdi",
+    "D) Hakimbekka xabar yuborib qochdi"
+   ],
+   "answer": "A) Ertangacha muhlat so‘rab o‘ylanib qoldi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alpomish qalmoq yurtiga jo‘nashdan oldin otni kimdan oldi?",
+   "options": [
+    "A) Yilqichi Qultoy bobodan",
+    "B) Otasi Boybo‘ribiydan",
+    "C) Singlisi Qaldirg‘ochdan",
+    "D) Amakisi Boysaridan"
+   ],
+   "answer": "A) Yilqichi Qultoy bobodan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qorajon Alpomish bilan do‘stlashib, poygada qaysi otni mindi?",
+   "options": [
+    "A) Boychibor otini",
+    "B) Ko‘kdo‘non otini",
+    "C) To‘riq yo‘rg‘ani",
+    "D) Saman otni"
+   ],
+   "answer": "A) Boychibor otini"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qorajon Boychibor bilan poygada g‘alaba qozonish uchun nima qildi?",
+   "options": [
+    "A) Toshloq yo‘ldan chopib, g‘animlarni ortda qoldirdi",
+    "B) Qalmoq alplarini qilich bilan urib yengdi",
+    "C) Boychiboming tuyog‘iga taqa qoqdi",
+    "D) Qalmoqlar bilan kelishib oldi"
+   ],
+   "answer": "A) Toshloq yo‘ldan chopib, g‘animlarni ortda qoldirdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Alpomish va Barchinoyning nikoh to‘yi qanday o‘tdi?",
+   "options": [
+    "A) O‘zbek milliy udumlari va rasmlari bilan",
+    "B) Qalmoqcha urf-odatlar asosida",
+    "C) Yashirincha, hech kimga bildirmasdan",
+    "D) Faqat alplar davrasida"
+   ],
+   "answer": "A) O‘zbek milliy udumlari va rasmlari bilan"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qorajon nima uchun Alpomishga sodiq do‘st bo‘lishga qaror qildi?",
+   "options": [
+    "A) Alpomishning mardligi va haqiqiy alp ekanini ko‘rib",
+    "B) Qalmoq shohidan qasos olmoqchi bo‘lgani uchun",
+    "C) Boysari unga ko‘p mol va’da qilgani uchun",
+    "D) O‘z yurtidan haydalgani uchun"
+   ],
+   "answer": "A) Alpomishning mardligi va haqiqiy alp ekanini ko‘rib"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Boybo‘ri o‘g‘lining qalmoq eliga borishiga nega qarshilik qildi?",
+   "options": [
+    "A) Yolg‘iz o‘g‘lining xavfga yo‘liqishidan qo‘rqib",
+    "B) Boysarini haliyam yomon ko‘rgani uchun",
+    "C) Otini berishni xohlamagani uchun",
+    "D) Qalmoqlar bilan urushmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Yolg‘iz o‘g‘lining xavfga yo‘liqishidan qo‘rqib"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qorajonning o‘z qalmoq alplaridan yuz o‘girib Alpomishga yordam berishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — u haqiqat va adolat tarafida turdi",
+    "B) Noto‘g‘ri — u o‘z eliga xiyonat qildi",
+    "C) Noto‘g‘ri — u faqat ot uchun shunday qildi",
+    "D) To‘g‘ri — u Barchinga uylanmoqchi edi"
+   ],
+   "answer": "A) To‘g‘ri — u haqiqat va adolat tarafida turdi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston baxshisi Boychiboming chopishini qanday ibora bilan ta’riflaydi?",
+   "options": [
+    "A) Yashinday bo‘lib oqib ketdi deb",
+    "B) Suv kabi sekin oqdi deb",
+    "C) Qushday sekin uchdi deb",
+    "D) Quyun kabi to‘xtadi deb"
+   ],
+   "answer": "A) Yashinday bo‘lib oqib ketdi deb"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alpomish qalmoq elida nega zindonga tushib qoldi?",
+   "options": [
+    "A) Mastlikda poylab turgan g‘animlar tutib oldi",
+    "B) Jangsiz qalmoq shohiga taslim bo‘ldi",
+    "C) Qorajon unga xiyonat qilib tutib berdi",
+    "D) Boysarining o‘zi uni zindonga tashladi"
+   ],
+   "answer": "A) Mastlikda poylab turgan g‘animlar tutib oldi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kayqubod kal Alpomishga zindonda qanday yordam berdi?",
+   "options": [
+    "A) Yeb-ichish berib, xabar tashib turdi",
+    "B) Zindon eshigini kalit bilan ochdi",
+    "C) Qalmoq shohini o‘ldirib kalitni oldi",
+    "D) Alpomishni yelkasida ko‘tarib chiqardi"
+   ],
+   "answer": "A) Yeb-ichish berib, xabar tashib turdi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alpomish zindonda yotganda Qo‘ng‘irot elida kim zulm o‘tkazdi?",
+   "options": [
+    "A) Qul Ultontoz",
+    "B) Yartiboy oqsoqol",
+    "C) Cho‘pon Kayqubod",
+    "D) Barchinoyning otasi"
+   ],
+   "answer": "A) Qul Ultontoz"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alpomish zindondan qutulib elga qaytgach, kimning qiyofasiga kirdi?",
+   "options": [
+    "A) Qultoy qul qiyofasiga",
+    "B) Kayqubod kal qiyofasiga",
+    "C) Qalmoq shohi qiyofasiga",
+    "D) Qalandar dervish qiyofasiga"
+   ],
+   "answer": "A) Qultoy qul qiyofasiga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Alpomish yurtiga qaytgach, dastlab kimlarni uchratdi va sinadi?",
+   "options": [
+    "A) Cho‘ponlarni, Yodgomi va Qaldirg‘och oyimni",
+    "B) Ultontoz va uning barcha navkarlarini",
+    "C) Boysari va uning xotinini",
+    "D) Qalmoq alplarini va Surxayilni"
+   ],
+   "answer": "A) Cho‘ponlarni, Yodgomi va Qaldirg‘och oyimni"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tovka oyim nima uchun Alpomishga zindonda ko‘maklashdi?",
+   "options": [
+    "A) Alpomishning mardligi va to‘g‘riligiga tan bergani uchun",
+    "B) Kayqubod kalni yoqtirgani uchun",
+    "C) Surxayil maston buyurgani uchun",
+    "D) Qo‘ng‘irot eliga ko‘chmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Alpomishning mardligi va to‘g‘riligiga tan bergani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Alpomish o‘z yurtiga qaytgach, nega birdan o‘zini fosh etmadi?",
+   "options": [
+    "A) Elidagi do‘st va dushman kimligini bilish uchun",
+    "B) Ultontozdan qo‘rqib panada durgani uchun",
+    "C) Barchinoy uni tanimaydi deb o‘ylagani uchun",
+    "D) Boychibor otini yo‘qotib qo‘ygani uchun"
+   ],
+   "answer": "A) Elidagi do‘st va dushman kimligini bilish uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Alpomishning Ultontozni jazolashi va elni birlashtirishi qanday baholanadi?",
+   "options": [
+    "A) Adolat qaror topib, el tinchligiga erishildi",
+    "B) Zolimlik va shafqatsizlik deb baholanadi",
+    "C) Keraksiz va behuda harakat deb baholanadi",
+    "D) Faqat shaxsiy o‘ch olish deb baholanadi"
+   ],
+   "answer": "A) Adolat qaror topib, el tinchligiga erishildi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston so‘ngida Barchin va otasining topishuvi qanday tasvirlanadi?",
+   "options": [
+    "A) Ko‘zyosh va zo‘r quvonch bilan",
+    "B) Sovuq va loqayd munosabat bilan",
+    "C) G‘azab va arazlashuv bilan",
+    "D) Kulgili va hazil-huzul bilan"
+   ],
+   "answer": "A) Ko‘zyosh va zo‘r quvonch bilan"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif doston nihoyasida asarning asosiy g‘oyasini qanday yakunlaydi?",
+   "options": [
+    "A) Eblab-seblab aytilgan chin va ma’qul so‘z deb",
+    "B) Qalmoqlar g‘alabasi va tantanasi deb",
+    "C) Boysarining pushaymonligi va araz qilishi deb",
+    "D) Ultontozning podsholigi davom etdi deb"
+   ],
+   "answer": "A) Eblab-seblab aytilgan chin va ma’qul so‘z deb"
+  }
+ ]
+}

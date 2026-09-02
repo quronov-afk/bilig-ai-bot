@@ -1,0 +1,636 @@
+{
+ "10-14 yosh toifasi": [
+  {
+   "t": "Malika Husnobod",
+   "a": "Xalq og‘zaki ijodi",
+   "s": 1.0,
+   "f": "Xalq oʻgʻzaki ijodi. Malika Husnobod (ertak).docx",
+   "tan": false
+  },
+  {
+   "t": "Ravshan",
+   "a": "Xalq og‘zaki ijodi",
+   "s": 1.0,
+   "f": "Xalq ogʻzaki ijodi. Ravshan (doston).docx",
+   "tan": false
+  },
+  {
+   "t": "Yunus va Misqol pari",
+   "a": "Xalq og‘zaki ijodi",
+   "s": 1.0,
+   "f": "Yunus va Misqol pari (doston).docx",
+   "tan": false
+  },
+  {
+   "t": "Xalq bo‘l, elim",
+   "a": "Muhammad Yusuf",
+   "s": 0.6,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Bolajon, bolajonim",
+   "a": "Po‘lat Mo‘min",
+   "s": 0.57,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Quyosh bola, oy bola",
+   "a": "Qambar Ota",
+   "s": 0.6,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Yashasin quyoshli kun",
+   "a": "Rustam Nazar",
+   "s": 0.59,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Hirotga sayohat",
+   "a": "Yo‘ldosh Sulaymon",
+   "s": 0.59,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Saylanma",
+   "a": "Mirkarim Osim",
+   "s": 1.0,
+   "f": "Mirkarim Osim. Saylanma (toʻplam).docx",
+   "tan": false
+  },
+  {
+   "t": "Mo‘ttivoymisan, Mittivoymisan",
+   "a": "Anvar Obidjon",
+   "s": 0.47,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Qaydalardasan, bolaligim",
+   "a": "Xudoyberdi To‘xtaboyev",
+   "s": 0.97,
+   "f": "Xudoyberdi Toʻxtaboyev. Qaylardasan, bolaligim (toʻplam).docx",
+   "tan": false
+  },
+  {
+   "t": "Akramning sarguzashtlari",
+   "a": "Pirimqul Qodirov",
+   "s": 1.0,
+   "f": "Pirimqul Qodirov. Akramning sarguzashtlari (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Ming bir kitob",
+   "a": "Sharifjon Ahmad",
+   "s": 0.63,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "O‘tkirjonning o‘nta o‘rdak ukasi",
+   "a": "Qobiljon Shermatov",
+   "s": 0.59,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Nabiralarimga maktublar",
+   "a": "Erkin Malik",
+   "s": 0.62,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Changalzor iti",
+   "a": "Normurod Norqobilov",
+   "s": 1.0,
+   "f": "Normurod Norqobilov. Changalzor iti (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Qaysar bolaning hayoti",
+   "a": "Mirzakalon Ismoiliy",
+   "s": 1.0,
+   "f": "Mirzakalon Ismoiliy. Qaysar bolaning hayoti (qissalar).docx",
+   "tan": false
+  },
+  {
+   "t": "Shum bola",
+   "a": "G‘afur G‘ulom",
+   "s": 1.0,
+   "f": "Gʻafur Gʻulom. Shum bola (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Shunaqa bolani qidirib yuribman",
+   "a": "Latif Mahmudov",
+   "s": 1.0,
+   "f": "Latif Mahmudov. Shunaqa bolani qidirib yuribman (hikoya).docx",
+   "tan": false
+  },
+  {
+   "t": "Bolalik xotiralarim",
+   "a": "Oybek",
+   "s": 1.0,
+   "f": "Oybek. Bolalik xotiralarim (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "O‘tmishdan",
+   "a": "Abdulla Qahhor",
+   "s": 0.95,
+   "f": "Abdulla Qahhor. Oʻtmishdan ertaklar (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Olamlar kurashi",
+   "a": "Baxtiyor Abdug‘afur",
+   "s": 0.6,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Galaktikada bir kun",
+   "a": "Sa’dulla Quronov",
+   "s": 0.93,
+   "f": "Galaktikada bir kun_tahrir.docx",
+   "tan": false
+  },
+  {
+   "t": "Dunyoning ishlari",
+   "a": "O‘tkir Hoshimov",
+   "s": 1.0,
+   "f": "Oʻtkir Hoshimov. Dunyoning ishlari (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Bir qultum buloq suvi",
+   "a": "Farhod Musajonov",
+   "s": 1.0,
+   "f": "Farhod Musajonov. Bir qultum buloq suvi (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Qorxat",
+   "a": "Nosir Fozilov",
+   "s": 1.0,
+   "f": "Nosir Fozilov. Qorxat (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Uch baqaloq",
+   "a": "Yuriy Olesha",
+   "s": 1.0,
+   "f": "Yuriy Olesha. Uch baqaloq (Roman-ertak).docx",
+   "tan": false
+  },
+  {
+   "t": "Oq so‘yloq",
+   "a": "Jek London",
+   "s": 1.0,
+   "f": "Jek London. Oq soʻyloq (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Nilsning yovvoyi g‘ozlar bilan ajoyib sayohati",
+   "a": "Selma Lagerlyof",
+   "s": 0.54,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Hellados",
+   "a": "Nodar Dumbadze",
+   "s": 1.0,
+   "f": "Nodar Dumbadze. Hellados (hikoya).docx",
+   "tan": false
+  },
+  {
+   "t": "Imperatorning tug‘ilishi. Boburning bolaligi",
+   "a": "Durbek Qo‘ldoshev",
+   "s": 0.53,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Geklberri Finning boshidan kechirganlari",
+   "a": "Mark Tven",
+   "s": 0.84,
+   "f": "Mark Tven. Tom Soyerning boshidan kechirganlari (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Buyuk Akbar va Roja Birbol",
+   "a": "Hind xalq og’zaki ijodi",
+   "s": 0.55,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Tolzordan esgan shamol",
+   "a": "Kennet Grehem",
+   "s": 0.6,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Yovvoyi yo‘rg‘a",
+   "a": "E.Seton-Tompson",
+   "s": 0.95,
+   "f": "Ernest Seton-Tompson. Yovvoyi yoʻrgʻa (hikoya).docx",
+   "tan": false
+  },
+  {
+   "t": "Bolaligim",
+   "a": "Chingiz Aytmatov",
+   "s": 1.0,
+   "f": "Chingiz Aytmatov. Bolaligim (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Dunyo bo‘ylab sakson kun",
+   "a": "Jyul Vern",
+   "s": 0.5,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Qanday xatolar bo‘ladi",
+   "a": "Janni Rodari",
+   "s": 0.59,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Mio, bolajonim Mio",
+   "a": "Astrid Lindgren",
+   "s": 0.57,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Britannika ensiklopediyasi",
+   "a": "Kristofer Lloyd",
+   "s": 0.57,
+   "f": null,
+   "tan": false
+  }
+ ],
+ "15-19 yosh toifasi": [
+  {
+   "t": "Go‘ro‘g‘lining tug‘ilishi",
+   "a": "Xalq og‘zaki ijodi",
+   "s": 1.0,
+   "f": "Xalq ogʻzaki ijodi. Goʻroʻgʻlining tugʻilishi (doston).docx",
+   "tan": false
+  },
+  {
+   "t": "Shirin bilan Shakar",
+   "a": "Xalq og‘zaki ijodi",
+   "s": 1.0,
+   "f": "Xalq ogʻzaki ijodi. Shirin bilan Shakar (doston).docx",
+   "tan": false
+  },
+  {
+   "t": "Kalila va Dimna",
+   "a": "Hind xalq eposi",
+   "s": 1.0,
+   "f": "Hind xalq eposi. Kalila va Dimna (epos).docx",
+   "tan": false
+  },
+  {
+   "t": "Qobusnoma",
+   "a": "Kaykovus",
+   "s": 1.0,
+   "f": "Kaykovus. Qobusnoma (didaktik asar).docx",
+   "tan": false
+  },
+  {
+   "t": "Boburnoma",
+   "a": "Zahiriddin Muhammad Bobur",
+   "s": 1.0,
+   "f": "Zahiriddin Muhammad Bobur. Boburnoma (avtobiografik asar).docx",
+   "tan": false
+  },
+  {
+   "t": "Lison ut-tayr",
+   "a": "Alisher Navoiy",
+   "s": 1.0,
+   "f": "Alisher Navoiy. Lison ut-tayr (nasriy bayon).docx",
+   "tan": false
+  },
+  {
+   "t": "Mezon uz-zamon",
+   "a": "Is’hoqxon Ibrat",
+   "s": 0.96,
+   "f": "Isʼhoqxon Toʻra Ibrat. Mezon uz-zamon (risola).docx",
+   "tan": false
+  },
+  {
+   "t": "",
+   "a": "G‘afur G‘ulom",
+   "s": 0,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "",
+   "a": "Oybek",
+   "s": 0,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Umr manzillari",
+   "a": "Abdulla Oripov",
+   "s": 1.0,
+   "f": "Abdulla Oripov. Umr manzillari (sheʼrlar).docx",
+   "tan": false
+  },
+  {
+   "t": "Zamon qasri",
+   "a": "Sirojiddin Sayyid",
+   "s": 0.6,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Qoraqalpoqnoma",
+   "a": "To‘lepbergen Qaipbergenov",
+   "s": 0.73,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Muqaddas",
+   "a": "Odil Yoqubov",
+   "s": 1.0,
+   "f": "Odil Yoqubov. Muqaddas (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Amir Temur siymosi",
+   "a": "Pirimqul Qodirov",
+   "s": 1.0,
+   "f": "Pirimqul Qodirov. Amir Temur siymosi (roman).docx",
+   "tan": false
+  },
+  {
+   "t": "Mungli ko‘zlar",
+   "a": "Xudoyberdi To‘xtaboyev",
+   "s": 1.0,
+   "f": "Xudoyberdi Toʻxtaboyev. Mungli koʻzlar (roman).docx",
+   "tan": false
+  },
+  {
+   "t": "Qorako‘z Majnun",
+   "a": "Said Ahmad",
+   "s": 1.0,
+   "f": "Said Ahmad. Qorakoʻz majnun (hikoyalar).docx",
+   "tan": false
+  },
+  {
+   "t": "Spitamen",
+   "a": "Maqsud Qoriyev",
+   "s": 1.0,
+   "f": "Maqsud Qoriyev. Spitamen (roman).docx",
+   "tan": false
+  },
+  {
+   "t": "Yoz yomg‘iri",
+   "a": "O‘lmas Umarbekov",
+   "s": 1.0,
+   "f": "Oʻlmas Umarbekov. Yoz yomgʻiri (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Yulduzlar mangu yonadi",
+   "a": "Tog‘ay Murod",
+   "s": 1.0,
+   "f": "Togʻay Murod. Yulduzlar mangu yonadi (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Daftar hoshiyasidagi bitiklar",
+   "a": "O‘tkir Hoshimov",
+   "s": 1.0,
+   "f": "Oʻtkir Hoshimov. Daftar hoshiyasidagi bitiklar (badiiy-publitsistik).docx",
+   "tan": false
+  },
+  {
+   "t": "Odamlardan tinglab",
+   "a": "Xayriddin Sulton",
+   "s": 0.95,
+   "f": "Xayriddin Sulton. Odamlardan tinglab hikoya (hikoyalar).docx",
+   "tan": false
+  },
+  {
+   "t": "Ozodlik",
+   "a": "Shukur Xolmirzayev",
+   "s": 1.0,
+   "f": "Shukur Xolmirzayev. Ozodlik (hikoya).docx",
+   "tan": false
+  },
+  {
+   "t": "Og‘abiy",
+   "a": "Kengisboy Karimov",
+   "s": 0.98,
+   "f": "Kengesboy Karimov. Ogʻabiy (roman).docx",
+   "tan": false
+  },
+  {
+   "t": "Panoh",
+   "a": "Xurshid Do‘stmuhammad",
+   "s": 1.0,
+   "f": "Xurshid Doʻstmuhammad. Panoh (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Qoyalar ham yig‘laydi",
+   "a": "Normurod Norqobilov",
+   "s": 0.61,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Boboso‘z izidan",
+   "a": "Eshqobil Shukur",
+   "s": 1.0,
+   "f": "Eshqobil Shukur. Bobosoʻz izidan (ilmiy-ommabop).docx",
+   "tan": false
+  },
+  {
+   "t": "Mezon",
+   "a": "Shomirza Turdimov",
+   "s": 1.0,
+   "f": "Shomirza Turdimov. Mezon (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Jaziramadagi odamlar",
+   "a": "Luqmon Bo‘rixon",
+   "s": 1.0,
+   "f": "Luqmon Boʻrixon. Jaziramadagi odamlar (roman).docx",
+   "tan": false
+  },
+  {
+   "t": "Sho‘rodan qolgan odamlar",
+   "a": "Shoyim Bo‘tayev",
+   "s": 1.0,
+   "f": "Shoyim Boʻtayev. Shoʻrodan qolgan odamlar (qissalar).docx",
+   "tan": false
+  },
+  {
+   "t": "Gudbay, Amerika",
+   "a": "Abduqayum Yo‘ldoshev",
+   "s": 0.55,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Ma’suma",
+   "a": "Isajon Sulton",
+   "s": 1.0,
+   "f": "Isajon Sulton. Maʼsuma (roman).docx",
+   "tan": false
+  },
+  {
+   "t": "Azal muhri",
+   "a": "Baxtiyor Abdug‘afur",
+   "s": 0.59,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Mo‘ysafid Biyobonim",
+   "a": "Shahodat Ulug‘",
+   "s": 0.55,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Munavvar Qorining so‘nggi nidosi",
+   "a": "Abbos Said",
+   "s": 0.6,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Maqar",
+   "a": "Shuhrat Matkarim",
+   "s": 0.6,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Tongotar",
+   "a": "Raxshona Ahmedova",
+   "s": 0.59,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Suyumbika",
+   "a": "Risolat Haydarova",
+   "s": 0.59,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Mening Dog‘istonim",
+   "a": "Rasul Hamzatov",
+   "s": 1.0,
+   "f": "Rasul Hamzatov. Mening Dogʻistonim (badia).docx",
+   "tan": false
+  },
+  {
+   "t": "Yevgeniya Grande",
+   "a": "Onore de Balzak",
+   "s": 1.0,
+   "f": "Onore de Balzak. Yevgeniya Grande (roman).docx",
+   "tan": false
+  },
+  {
+   "t": "Iqrornoma",
+   "a": "Lev Tolstoy",
+   "s": 1.0,
+   "f": "Lev Tolstoy. Iqrornoma (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Bu yerda hamma narsa bo‘lishi mumkin",
+   "a": "Jianna Molinari",
+   "s": 0.59,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Farengeyt bo‘yicha 451 daraja",
+   "a": "Rey Bredberi",
+   "s": 1.0,
+   "f": "Rey Bredberi. Farengeyt boʻyicha 451 daraja (roman).docx",
+   "tan": false
+  },
+  {
+   "t": "Kambag‘allar",
+   "a": "Dostoyevskiy",
+   "s": 0.94,
+   "f": "Fyodor Dostoyevskiy. Kambagʻallar (roman).docx",
+   "tan": false
+  },
+  {
+   "t": "Choliqushi",
+   "a": "Rashod Nuri Guntekin",
+   "s": 1.0,
+   "f": "Rashod Nuri Guntekin. Choliqushi (roman).docx",
+   "tan": false
+  },
+  {
+   "t": "Klod Gyo",
+   "a": "Viktor Gyugo",
+   "s": 1.0,
+   "f": "Viktor Gyugo. Klod Gyo (qissa).docx",
+   "tan": false
+  },
+  {
+   "t": "Yulduzlararo sargardon",
+   "a": "Jek London",
+   "s": 0.6,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Kon-Tikida safar",
+   "a": "Tur Xeyerdal",
+   "s": 1.0,
+   "f": "Tur Xeyerdal. Kon-Tikida safar (roman).docx",
+   "tan": false
+  },
+  {
+   "t": "Mening hayotim",
+   "a": "Henri Ford",
+   "s": 1.0,
+   "f": "Henri Ford. Mening hayotim (shaxsiy rivojlanish).docx",
+   "tan": false
+  },
+  {
+   "t": "Jasorat",
+   "a": "Mualliflar jamoasi",
+   "s": 0.67,
+   "f": null,
+   "tan": false
+  },
+  {
+   "t": "Yoshlik” jurnali 2026-yil sonlari",
+   "a": "",
+   "s": 0.62,
+   "f": null,
+   "tan": false
+  }
+ ]
+}

@@ -1,0 +1,338 @@
+{
+ "title": "Klod Gyo",
+ "author": "Viktor Gyugo",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "adolat",
+   "jamiyat",
+   "jinoyat va jazo",
+   "tarbiya",
+   "ilm-ma'rifat"
+  ],
+  "theme": "Asar jamiyatning inson taqdiridagi mas'uliyati, kambag‘allik va jaholat odamni jinoyatga yetaklashi hamda o‘lim jazosining shafqatsiz va behuda ekanligini ilgari suradi. Muallif jamiyatni jazolashdan ko‘ra xalqqa ta'lim-tarbiya berishga va mehnat bilan ta'minlashga chaqiradi.",
+  "summary": "Parijda Klod Gyo ismli mehnatkash, ammo savodsiz ishchi yigit o‘z oilasi va kichik farzandi bilan qashshoqlikda yashaydi. Qahraton qish kunlarining birida u ishsiz qolib, oilasi ochlikdan o‘lmasligi uchun birinchi marta o‘g‘rilik qiladi. Shu jinoyati uchun u qo‘lga olinib, besh yil muddatga Klervo qamoqxonasiga hukm qilinadi. Klervo qamoqxonasida Klod o‘zining aqli, vazminligi va kuchli irodasi bilan tezda boshqa mahbuslar o‘rtasida alohida obro‘-e'tibor qozonadi. Mahbuslar uning har bir so‘ziga quloq solishadi va maslahat so‘rashadi. Biroq ustaxona bosh noziri janob D. qattiqqo‘l, o‘jar va kaltabin odam bo‘lib, Klodning mahbuslar orasidagi bu ruhiy hukmronligiga ich-ichidan hasad qiladi.\n\nQamoqxona beradigan oziq-ovqat normasi baquvvat Klod uchun yetarli emasdi va u doimo ochlikdan iztirob chekardi. Kunlarning birida Alben ismli yosh va nimjon mahbus o‘z ovqatini Klod bilan baham ko‘rishni taklif qiladi. Shundan so‘ng ular o‘rtasida samimiy va ajralmas do‘stlik rishtasi bog‘lanadi. Buni ko‘rgan bosh nozir Klodni yanada qiynash va ezish maqsadida Albenni boshqa bo‘limga o‘tkazib yuboradi. Do‘stidan va yagona yupanchidan ayrilgan Klod har kuni nozirdan Albenni qaytarishni yolvorib so‘raydi. Ammo nozir o‘z o‘jarligi va beshafqatligidan chekinmaydi. Klod unga to‘rtinchi noyabrgacha muhlat beradi. Belgilangan kuni Klod duradgorlik ustaxonasidan kichik bolta olib yashiradi va ustaxonadagi sakson ikkita mahbus qarshisida nozir ustidan chiqargan hukmini e'lon qiladi.\n\nSoat to‘qqizda bosh nozir ustaxonaga kirganda, Klod oxirgi marta undan Albenni qaytarishni so‘raydi. Nozir yana rad javobini bergach, Klod bolta bilan nozirning boshiga urib, uni o‘ldiradi. So‘ngra qaychi bilan o‘z ko‘ksiga ko‘p marotaba urib, og‘ir yaralanadi. Shifoxonada davolanib sog‘ayganidan keyin Trua shahrida sud jarayoni bo‘lib o‘tadi. Klod sudda o‘zini juda mardona tutadi, qilgan ishini va sabablarini ochiq-oydin gapirib beradi. Sud maslahatchilari uni o‘lim jazosiga hukm qilishadi. 1832-yil 8-iyunda Klod Gyo gilotina orqali qatl etiladi. Qatl oldidan u qo‘lidagi so‘nggi besh frank tangasini qashshoqlarga ulashishni vasiyat qiladi. Viktor Gyugo ushbu fojiaviy voqea orqali davlat va jamiyat rahbarlarini shafqatsiz jazolarga chek qo‘yishga, xalqqa ma'rifat va ta'lim berishga da'vat etadi.",
+  "characters": "Klod Gyo — aqlli, irodali, vazmin va salobatli ishchi yigit. Oilasini ochlikdan qutqarish uchun o‘g‘rilik qilib, qamoqqa tushadi hamda adolatsizlikka qarshi isyon ko‘taradi.\nJanob D. — Klervo qamoqxonasining bosh noziri. Qahri qattiq, o‘jar, kaltabin va hasadg‘oy amaldor.\nAlben — yosh, sodda va nimjon mahbus. Klodning yaqin do‘sti va unga sodiq hamrohi.",
+  "conclusion": "Ushbu asar kitobxonga inson qadri, adolat va jamiyat mas'uliyati haqida chuqur mushohada yuritish imkonini beradi. Bola kambag‘allik, jaholat va jaholatdan tug‘iladigan fojialarni anglab yetadi. Asar insoniy mehr-shafqat, do‘stlikka vafo hamda ilm-ma'rifatning hayotdagi bebaho o‘rnini ko‘rsatib beradi. Ota-onalar uchun bu asar farzandiga axloqiy va ma'naviy tarbiya berishda kuchli turtki bo‘ladi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Jamiyat, adolat, inson huquqlari va taqdiri haqida fikr yuritishni xohlaydigan o‘smirlar uchun.",
+  "events": [
+   "1. Klod Gyo Parijda ishsiz qolib, oilasi ochlikdan azob chekgani uchun o‘g‘rilik qiladi.",
+   "2. O‘g‘rilik jinoyati uchun Klod besh yilga Klervo qamoqxonasiga hukm qilinadi.",
+   "3. Klervo qamoqxonasida Klod o‘zining aqli va vazminligi bilan mahbuslar hurmatini qozonadi.",
+   "4. Ustaxona bosh noziri janob D. Klodning mahbuslar orasidagi obro‘siga ich-ichidan hasad qila boshlaydi.",
+   "5. Klod qamoqxonada beriladigan ozgina ovqatdan doim och qolardi.",
+   "6. Yosh mahbus Alben o‘z ovqatini Klod bilan baham ko‘rib, ular o‘rtasida samimiy do‘stlik bog‘lanadi.",
+   "7. Bosh nozir janob D. Klodni qiynash uchun Albenni boshqa bo‘limga o‘tkazib yuboradi.",
+   "8. Klod do‘stidan ayrilib, iztirobga tushadi va har kuni nozirdan Albenni qaytarishni so‘raydi.",
+   "9. Nozir Klodning iltimoslarini mensimay rad etadi va uni karserga qamatadi.",
+   "10. Klod nozirga to‘rtinchi noyabrgacha muhlat berib, uni ogohlantiradi.",
+   "11. To‘rtinchi noyabr kuni Klod duradgorlik ustaxonasidan kichik bolta olib yashiradi.",
+   "12. Klod ustaxonadagi sakson ikkita mahbus qarshisida nozir ustidan chiqargan hukmini e'lon qiladi.",
+   "13. Klod o‘zining barcha kiyim-kechak va buyumlarini do‘stlariga bo‘lib beradi.",
+   "14. Soat to‘qqizda bosh nozir ustaxonaga kirganida, Klod oxirgi marta undan Albenni qaytarishni so‘raydi.",
+   "15. Nozir yana rad etgach, Klod bolta bilan uning boshiga urib, uni o‘ldiradi.",
+   "16. Klod qaychi bilan o‘z ko‘ksiga bir necha bor sanchib og‘ir yaralanadi.",
+   "17. Kasalxonada davolanib sog‘aygach, Klod Trua shahri sudida so‘roq qilinadi.",
+   "18. Sudda Alben guvoh sifatid kelib, Klod bilan ko‘rishganda yig‘lab yuboradi.",
+   "19. Sud maslahatchilari Klod Gyoni o‘lim jazosiga hukm qiladilar.",
+   "20. Qatl kuni Klod o‘zining so‘nggi besh frank tangasini qashshoqlarga berishni vasiyat qiladi.",
+   "21. Klod Gyo gilotina pichog‘i ostida matonat bilan qatl etiladi."
+  ],
+  "quotes": [
+   "Klod Gyo tabiatan, shubhasiz, ham jismonan, ham ma'nan barkamol inson edi.",
+   "O‘lim jazosi – vahshiyona qassoblik.",
+   "Xalq haqida o‘ylanglar. Bolalarni maktab bilan, kattalarni ish bilan ta'minlang.",
+   "Shuni bilingki, g‘irt nodonlik yomon bilimdan afzalroqdir.",
+   "Umid kishini bardoshli qiladi.",
+   "Xalqning savodini chiqaring, uni tarbiyalang, ma'rifatli qiling, ongiga axloq-odob tushunchalarini singdiring, undagi mavjud layoqatni kerakli tomonga yo‘naltiring, ana unda odamlarning boshini kundada chopishingizga vaj qolmaydi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Klod Gyo dastlab nega o‘g‘rilik qilishga majbur bo‘ldi?",
+   "options": [
+    "A) Qimorda bor pulini boyotgani uchun",
+    "B) Oilasini ochlikdan qutqarish uchun",
+    "C) Doyaga qarzini to‘lash uchun",
+    "D) Yangi uy sotib olish uchun"
+   ],
+   "answer": "B) Oilasini ochlikdan qutqarish uchun"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Klod qamoqxonaga tushgach, mahbuslar unga qanday munosabatda bo‘lishdi?",
+   "options": [
+    "A) Undan qo‘rqib, uzoq yurishdi",
+    "B) Uni masxara qilib kulishdi",
+    "C) Maslahat so‘rab, gapiga kirishdi",
+    "D) Uni umuman ko‘rmaganga olishdi"
+   ],
+   "answer": "C) Maslahat so‘rab, gapiga kirishdi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Klod qamoqxonada doim nima sababdan azob chekardi?",
+   "options": [
+    "A) O‘z vaqtida uxlay olmasligidan",
+    "B) Beriladigan ovqat yetmasligidan, ochlikdan",
+    "C) Og‘ir ishlardan charchaganidan",
+    "D) Soqchilar uni kaltaklaganidan"
+   ],
+   "answer": "B) Beriladigan ovqat yetmasligidan, ochlikdan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Klod bilan Alben do‘stlashgach, kunlarini qanday o‘tkazishardi?",
+   "options": [
+    "A) Faqat doimiy ravishda urishishardi",
+    "B) Birgalikda ishlab, ovqatni bo‘lishishardi",
+    "C) Bir-biridan qochib, ayri yurishardi",
+    "D) Soqchilarga yordam berib yurishardi"
+   ],
+   "answer": "B) Birgalikda ishlab, ovqatni bo‘lishishardi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun bosh nozir janob D. Klodni yoqtirmay qoldi?",
+   "options": [
+    "A) Klod ishni yaxshi qilmagani uchun",
+    "B) Klodning mahbuslar orasidagi obro‘siga hasad qilib",
+    "C) Klod uning pulini o‘g‘irlagani uchun",
+    "D) Klod qamoqxonadan qochishga uringani uchun"
+   ],
+   "answer": "B) Klodning mahbuslar orasidagi obro‘siga hasad qilib"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nozir Albenni Kloddan ajratish orqali nimaga erishmoqchi edi?",
+   "options": [
+    "A) Albenni kasalxonada davolatmoqchi edi",
+    "B) Klodni ruhan ezib, jazolamoqchi edi",
+    "C) Albenga yangi hunar o‘rgatmoqchi edi",
+    "D) Ustaxonani butunlay yopmoqchi edi"
+   ],
+   "answer": "B) Klodni ruhan ezib, jazolamoqchi edi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Klodning ozgina ovqatini Alben bilan baham ko‘rishi uning qanday odamligini ko‘rsatadi?",
+   "options": [
+    "A) Saxiy va oqko‘ngil insonligini",
+    "B) O‘zini ko‘rsatishni yaxshi ko‘rishini",
+    "C) Boshqalarga ishonmaydigan ayyorligini",
+    "D) Ovqatni yoqtirmaydigan kishiligini"
+   ],
+   "answer": "A) Saxiy va oqko‘ngil insonligini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Klod Albenni qaytarishni so‘raganda nozir qanday javob berdi?",
+   "options": [
+    "A) Bir haftadan keyin qaytaraman dedi",
+    "B) Iloji yo‘q deb rad etdi",
+    "C) Qosimga pul berishni talab qildi",
+    "D) Albenni uyiga javob berdim dedi"
+   ],
+   "answer": "B) Iloji yo‘q deb rad etdi"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Klod nozirga o‘z talabini bajarishi uchun qaysi kungacha muhlat berdi?",
+   "options": [
+    "A) Bir oydan keyinga",
+    "B) Yilning oxirigacha",
+    "C) To‘rtinchi noyabrgacha",
+    "D) Kelasi bahor kelguncha"
+   ],
+   "answer": "C) To‘rtinchi noyabrgacha"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Klod ustaxonada nozirni kutayotib, o‘zi bilan nima olib kelgandi?",
+   "options": [
+    "A) Kichkina bolta yashirib kelgandi",
+    "B) Miltiq va to‘pponcha olgandi",
+    "C) Og‘ir zanjir ko‘tarib kelgandi",
+    "D) Katta yog‘och tayoq olgandi"
+   ],
+   "answer": "A) Kichkina bolta yashirib kelgandi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Klod ustaxonadagi mahbuslarga voqea oldidan qanday tartibda murojaat qildi?",
+   "options": [
+    "A) U birinchi qochishni taklif qildi",
+    "B) Sababni tushuntirib, qaroridan ogohlantirdi",
+    "C) Barchadan pul yig‘ib berishni so‘radi",
+    "D) Hamma mahbusni urishishga chaqirdi"
+   ],
+   "answer": "B) Sababni tushuntirib, qaroridan ogohlantirdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Klod o‘z kiyim va buyumlarini boshqa mahbuslarga bo‘lib berishidan maqsad nima edi?",
+   "options": [
+    "A) Kiyimlarini sotib pul qilmoqchi edi",
+    "B) O‘lishini bilgani uchun ulashib ketdi",
+    "C) Boshqalarni aldab qarzdor qilmoqchi edi",
+    "D) Qamoqxonadan tezda qochmoqchi edi"
+   ],
+   "answer": "B) O‘lishini bilgani uchun ulashib ketdi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nozir Klodning so‘nggi iltijosiga ham ko‘nmagach, Klod nega bu ishga qo‘l urdi?",
+   "options": [
+    "A) Qasos va adolat izlab, chorasiz qolgani uchun",
+    "B) Mansabga erishish va boshliq bo‘lish uchun",
+    "C) Boshqa mahbuslar buyurgani uchun",
+    "D) Qamoqdan tezroq chiqib ketish uchun"
+   ],
+   "answer": "A) Qasos va adolat izlab, chorasiz qolgani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Klodning so‘nggi soatdagi xotirjamligini tasvirlash orqali nimani ko‘rsatmoqchi?",
+   "options": [
+    "A) Uning irodasi va qat'iyati adolatga ishonchidan ekanini",
+    "B) Uning hech narsani tushunmaydigan nodonligini",
+    "C) Uning o‘z xatosini yashirishga urinayotganini",
+    "D) Uning hayotdan butunlay zerikib ketganini"
+   ],
+   "answer": "A) Uning irodasi va qat'iyati adolatga ishonchidan ekanini"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sud majlisida Alben guvoh sifatida kelganida nima sodir bo‘ldi?",
+   "options": [
+    "A) U Klodni tanimaganini aytdi",
+    "B) Yig‘lab, Klodning quchog‘iga otildi",
+    "C) Klodga qarshi guvohlik berdi",
+    "D) Sud zalidan qochib ketdi"
+   ],
+   "answer": "B) Yig‘lab, Klodning quchog‘iga otildi"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Klod o‘lim oldidan o‘zining so‘nggi tangasini kimga berishni vasiyat qildi?",
+   "options": [
+    "A) Bosh nozirning oilasiga",
+    "B) Qamoqxona soqchilariga",
+    "C) Kambag‘al va qashshoq odamlarga",
+    "D) Sud ma'murlariga"
+   ],
+   "answer": "C) Kambag‘al va qashshoq odamlarga"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Klod Gyoning hayotida ro‘y bergan fojialar ketma-ketligi qanday kechdi?",
+   "options": [
+    "A) Ishsizlik, o‘g‘rilik, qamoq va qotillik",
+    "B) Qotillik, boylik, qamoq va ozodlik",
+    "C) Boylik, o‘g‘rilik, qochish va sud",
+    "D) O‘qish, mansab, jinoyat va surgun"
+   ],
+   "answer": "A) Ishsizlik, o‘g‘rilik, qamoq va qotillik"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Klod turmadagi do‘stlarining qochish haqidagi taklifini rad etdi?",
+   "options": [
+    "A) Qochishga kuchi yetmagani uchun",
+    "B) Qonuniy jazoni mardona kutgani uchun",
+    "C) Qamoqxonada yashashni yoqtirgani uchun",
+    "D) Do‘stlariga ishonmagani uchun"
+   ],
+   "answer": "B) Qonuniy jazoni mardona kutgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallif Viktor Gyugo fikricha, Klodning jinoyatchiga aylanishida kim aybdor?",
+   "options": [
+    "A) Faqat Klodning o‘zi aybdor",
+    "B) Uni tarbiyalamagan va och qoldirgan jamiyat",
+    "C) Faqat uning do‘sti Alben",
+    "D) Unga pul bermagan qo‘shnilari"
+   ],
+   "answer": "B) Uni tarbiyalamagan va och qoldirgan jamiyat"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «O‘lim jazosi – vahshiyona qassoblik» degan ibora bilan nimaga chaqirmoqda?",
+   "options": [
+    "A) Inson hayotini saqlash va o‘lim jazosini bekor qilishga",
+    "B) Barchaning hammasini katorgaga yuborishga",
+    "C) Qamoqxonalarni ko‘paytirib, qattiqroq jazolashga",
+    "D) Jallodlarga ko‘proq maosh to‘lashga"
+   ],
+   "answer": "A) Inson hayotini saqlash va o‘lim jazosini bekor qilishga"
+  }
+ ]
+}

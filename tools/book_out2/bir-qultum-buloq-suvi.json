@@ -1,0 +1,480 @@
+{
+ "title": "Bir qultum buloq suvi",
+ "author": "Farhod Musajonov",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "do‘stlik",
+   "kattalarga hurmat",
+   "oilaviy qadriyatlar",
+   "sabr-toqat",
+   "haqiqatparvarlik"
+  ],
+  "theme": "Asar insoniy qadr-qimmat, halollik, ota-ona va buvi mehrining beqiyosligi, do‘stlikda fidoiylik hamda qiyinchiliklar qarshisida ruhiy bukilmaslik g‘oyasini ilgari suradi.",
+  "summary": "Qissada yetim o‘sayotgan, ziyrak va g‘ururli bola Rixsivoy hamda uning fidoyi buvisi Mastura xolaning hayoti tasvirlanadi. Rixsivoy maktabda yangi kelgan o‘quvchi bo‘lib, o‘zining or-nomusi uchun kurashadi. U boks bo‘yicha shahar chempioni Sanjar bilan tanishib, qalin do‘st bo‘lib oladi. Sinfning futbol uchrashuvida Rixsivoy tizzasi shilinishiga qaramay matonat ko‘rsatib, hal qiluvchi golli uzatmani amalga oshiradi.\n\nSinf rahbari Sharifjon aka bilan gazeta obunasi va intizom masalasida kelishmovchilik kelib chiqqanda, Rixsivoy o‘z haqiqatini tik turib himoya qiladi. Pioneer-vojatiy Habiba uni qo‘llab-quvvatlaydi, chunki Rixsivoyning samimiy va izzat-nafsli bola ekanini tushunadi. Chimyon tog‘iga qilingan sayohat davomida Rixsivoy shoqol va sho‘x sinfdoshi Anqaboyev bilan yaqindan do‘stlashadi. Anqaboyev sirtidan sho‘x va dangasa ko‘rinsa-da, aslida chuqur fikrlaydigan, mehribon bola bo‘lib chiqadi.\n\nMastura xolaning qadrdon dugonasi Zumrad opanikiga mehmonga borishganda, Rixsivoy Zumrad opaning qizi Soraxon ko‘rsatgan sayohat rasmlari va slaydlar orasida o‘zining vafot etgan yosh onasining suratini ko‘rib qoladi. Bu voqea uning qalbidagi ata-ona mehriga bo‘lgan tashnalikni va sog‘inchli tuyg‘ularni junbushga keltiradi.\n\nAsar kulminatsiyasida Mastura xola og‘ir betob bo‘lib, kasalxonaga olib ketiladi. Buvisi azaldan «Chimyondagi bir qultum buloq suvi ming dardga darmon» deb ta'riflaganini eslagan Rixsivoy har ne evaziga bo‘lsa ham tog‘ga borishga ahd qiladi. Pul zarur bo‘lganda Sanjar yordam berolmaydi, lekin Anqaboyev o‘zining eng qadrli ovchilik pichog‘ini sotib, Rixsivoyga yo‘l haqi beradi. Rixsivoy Chimyondan shifobaxsh buloq suvini keltirib, kasalxona qorovuli Mamarasul amakining yordami bilan palata derazasidan buvisiga tutqazadi.",
+  "characters": "Rixsivoy — yetim, odamovi, g‘ururli, izzat-nafsli va buvisiga juda mehirli 7-sinf o‘quvchisi.\nMastura xola — Rixsivoyning buvisi, mehnatsevar, qiyinchiliklarga boy bermaydigan, sho‘x va mehribon kampir.\nSanjar — boks bo‘yicha shahar chempioni, bag‘rikeni, xushchaqchaq va sportchi bola.\nAnqaboyev — g‘alati, doim kasalman deb yuradigan, lekin ashulachi va haqiqiy do‘stlikka sodiq bola.\nHabiba — maktabning bosh pionervojatiysi, adolatparvar, bolalar ruhiyatini tushunadigan tarbiyachi.\nSharifjon aka — tarix o‘qituvchisi va 7-“b” sinf rahbari, g‘ayratli, lekin ba'zan shoshqaloq pedogog.\nZumrad opa — Mastura xolaning sodiq va oqibatli dugonasi, ministrning ayoli.",
+  "conclusion": "Asar bolani har qanday vaziyatda halol va g‘ururli bo‘lishga, kattalar hamda ota-onani e'zozlashga o‘rgatadi. Bola kitobdan haqiqiy do‘stlik mol-dunyo bilan emas, fidoiylik va samimiyat bilan o‘lchanishini uqib oladi. Qissa o‘quvchida mehr-oqibat va matonat kabi yuksak insoniy tuyg‘ularni shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "ta'sirlantiruvchi, samimiy, o‘ylantiruvchi",
+  "for_whom": "Do‘stlik, oilaviy mehr, hayotiy sarguzashtlar va insoniy munosabatlar haqida o‘qishni xohlaydigan bolalarga.",
+  "events": [
+   "1. Rixsivoy parkda Sanjarning ustidan kulgani uchun yo‘lini to‘sib, urishishga chaqirdi.",
+   "2. Sanjar Rixsivoy bilan urishmasdan, gapni hazilga burdi va unga muzqaymoq olib berdi.",
+   "3. Maktabda 7-“a” va 7-“b” sinflari o‘rtasida futbol matchi bo‘lib o‘tdi.",
+   "4. Tarix o‘qituvchisi Sharifjon aka 7-“b” darvozasini mahorat bilan qo‘riqladi.",
+   "5. Rixsivoy ikkinchi bo‘limda maydonga tushib, tizzasi shilinsa ham Sanjarga golli pas uzatdi.",
+   "6. Hamshira qiz Dilnoza Rixsivoyning jarohatlangan tizzasini tozalab, bog‘lab qo‘ydi.",
+   "7. Anqaboyev shifokor Ruxsora Shokirovnaning oldida o‘zini soxta kasallikka solib artistlik qildi.",
+   "8. Sharifjon aka sinfdan gazeta-jurnallarga yozilish uchun pul yig‘ishni talab qildi.",
+   "9. Rixsivoy puli yo‘qligi uchun o‘qituvchi bilan aytishib, majburiy obunaga qarshi chiqdi.",
+   "10. Mastura xola tikuv mashinasida kiyim tikib, ro‘zg‘or tebratishi haqida gapirib berdi.",
+   "11. Sinf o‘quvchilari Sharifjon aka boshchiligida Chimyon tog‘iga sayohatga yo‘l olishdi.",
+   "12. Avtobusda Anqaboyev baland va shirali ovozda «Bog‘ aro qo‘ysam qadam» ashulasini aytdi.",
+   "13. Rixsivoy va Anqaboyev o‘zbek tilidagi «H» va «X» harflarining muammosi haqida bahslashishdi.",
+   "14. Rixsivoy qo‘shnisi Po‘kalakning g‘udayib yordam bermaganidan buvisiga xasrat qildi.",
+   "15. Mastura xola va Rixsivoy non bozoridan shirmoy hamda patir nonlar sotib olishdi.",
+   "16. Rixsivoy buvisi bilan Zumrad opaning xonadoniga mehmongarchilikka borishdi.",
+   "17. Soraxon ko‘rsatgan slayd-fotolar orasida Rixsivoy o‘zining marhum onasi suratini ko‘rib qoldi.",
+   "18. Pedsovetda Habiba opa Rixsivoyning izzat-nafsini va xulqini Sharifjon akadan himoya qildi.",
+   "19. Mastura xolaning og‘ir kasali tutib, uni «tez yordam» mashinasida kasalxonaga olib ketishdi.",
+   "20. Rixsivoy Chimyonga borish uchun Sanjardan pul so‘radi, lekin Sanjar unga pul bermadi.",
+   "21. Anqaboyev Rixsivoyga yordam berish uchun o‘zining yaxshi ko‘rgan ovchilik pichog‘ini sotdi.",
+   "22. Rixsivoy Chimyon tog‘iga borib, buvisiga atab shifobaxsh buloq suvini idishga to‘ldirdi.",
+   "23. Kasalxona qorovuli Mamarasul amaki Rixsivoyga yordam berib, uni palata derazasiga yetkazdi.",
+   "24. Rixsivoy uch litrli idishdagi buloq suvini palata derazasidan buvisiga topshirdi."
+  ],
+  "quotes": [
+   "Odamning kulgisi qistagandan keyin kuladi-da...",
+   "Yomon bilan o‘chakishsang, o‘zing ham yomon bo‘lib ketganingni bilmay qolasan.",
+   "Haqiqat uchun kurashganlarning qaysi birining qismati yengil bo‘lgan?",
+   "Dunyoning hamma tashvishi borib qorin to‘yg‘azishga taqalarmish...",
+   "O‘zbekning bozori shu, to‘ram, savdolashmasa ikkala tarafning ham ko‘ngli joyiga tushmaydi..."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rixsivoy parkda Sanjarga nima uchun do‘q qildi?",
+   "options": [
+    "A) Holvaytar haqidagi gapiga kulgani uchun",
+    "B) Papkasini tortib olgani uchun",
+    "C) Futbolda to‘p oshirmagani uchun",
+    "D) Darsga kech qolgani uchun"
+   ],
+   "answer": "A) Holvaytar haqidagi gapiga kulgani uchun"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sanjar boks bo‘yicha qanday unvonga ega edi?",
+   "options": [
+    "A) Shahar chempioni edi",
+    "B) Respublika chempioni edi",
+    "C) Maktab chempioni edi",
+    "D) Viloyat chempioni edi"
+   ],
+   "answer": "A) Shahar chempioni edi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sanjar Rixsivoyning do‘qiga nega bosiqlik bilan javob berdi?",
+   "options": [
+    "A) Sport bilan shug‘ullangani uchun",
+    "B) Rixsivoydan juda qo‘rqgani uchun",
+    "C) Parkda odamlar kamligi uchun",
+    "D) O‘qituvchisidan hayiqgani uchun"
+   ],
+   "answer": "A) Sport bilan shug‘ullangani uchun"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Futbol o‘yinida 7-“b” darvozasida kim turdi?",
+   "options": [
+    "A) Tarix o‘qituvchisi Sharifjon aka",
+    "B) Yevropa chempioni Chorichayir",
+    "C) Sinfkom Sanobar",
+    "D) Bosh pionervojatiy Habiba"
+   ],
+   "answer": "A) Tarix o‘qituvchisi Sharifjon aka"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Futbol o‘yinidagi voqealar tartibini belgilang.",
+   "options": [
+    "A) Tanaffus, Rixsivoy tushishi, gol",
+    "B) Gol, tanaffus, Rixsivoy tushishi",
+    "C) Rixsivoy tushishi, gol, tanaffus",
+    "D) Tanaffus, gol, Rixsivoy tushishi"
+   ],
+   "answer": "A) Tanaffus, Rixsivoy tushishi, gol"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rixsivoy maydonga tushgach, tizzasi nega shilindi?",
+   "options": [
+    "A) Himoyachi uni yelka bilan turtgani uchun",
+    "B) To‘pga yetolmay o‘zi yiqilgani uchun",
+    "C) Darvozabon unga urilgani uchun",
+    "D) Chimda toyib ketgani uchun"
+   ],
+   "answer": "A) Himoyachi uni yelka bilan turtgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Rixsivoy tizzasi og‘riganiga qaramay o‘yinni davom ettirgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, uning pasi gol keltirdi",
+    "B) Xato, u darrov chiqishi kerak edi",
+    "C) Xato, jamoaga ziyon yetkazdi",
+    "D) To‘g‘ri, chunki u kapitan edi"
+   ],
+   "answer": "A) To‘g‘ri, uning pasi gol keltirdi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rixsivoyning jarohatlangan tizzasini kim bog‘lab qo‘ydi?",
+   "options": [
+    "A) Hamshira qiz Dilnoza",
+    "B) Oshpaz Ruxsora Shokirovna",
+    "C) Pionervojatiy Habiba",
+    "D) Zumrad opa"
+   ],
+   "answer": "A) Hamshira qiz Dilnoza"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Sanjarning xushchaqchaqligini ta'riflashda qaysi iborani ishlatgan?",
+   "options": [
+    "A) Shaldir-shuldur bola",
+    "B) Dimog‘dor yigit",
+    "C) Qo‘rqoq va beparvo",
+    "D) Kibrli va manman"
+   ],
+   "answer": "A) Shaldir-shuldur bola"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Rixsivoy nega Sanjarning kechirimiga to‘la qoniqmadi?",
+   "options": [
+    "A) O‘zini chiranchoq his qilgani uchun",
+    "B) Sanjar unga pul bermagani uchun",
+    "C) Muzqaymoq yemagani uchun",
+    "D) Sanjar urishishdan qochgani uchun"
+   ],
+   "answer": "A) O‘zini chiranchoq his qilgani uchun"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sharifjon aka dars oxirida qaysi masalani ko‘tardi?",
+   "options": [
+    "A) Gazeta va jurnallarga yozilishni",
+    "B) Tarix fanidan imtihon topshirishni",
+    "C) Maktab bog‘ini tozalashni",
+    "D) Yozgi lagerga borishni"
+   ],
+   "answer": "A) Gazeta va jurnallarga yozilishni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Obunaga pul yig‘ishda ketma-ketlik bo‘yicha kimlar chaqirildi?",
+   "options": [
+    "A) Mashhura, Ahad, Rixsivoy",
+    "B) Rixsivoy, Mashhura, Ahad",
+    "C) Ahad, Rixsivoy, Mashhura",
+    "D) Sanobar, Ahad, Rixsivoy"
+   ],
+   "answer": "A) Mashhura, Ahad, Rixsivoy"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chimyon tog‘iga borishda kim katta safar xaltasi olib keldi?",
+   "options": [
+    "A) Baqaloq laqabli Shodiyev",
+    "B) Odil Anqaboyev",
+    "C) Bokschi Sanjar",
+    "D) Sinfkom Sanobar"
+   ],
+   "answer": "A) Baqaloq laqabli Shodiyev"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mastura xola nega kamtarona yashasa ham doim maqlanardi?",
+   "options": [
+    "A) Tenglik yo‘qolishidan qo‘rqqani uchun",
+    "B) Odamlarni aldashni xohlagani uchun",
+    "C) Ko‘p puli borligi uchun",
+    "D) Boylikni yaxshi ko‘rgani uchun"
+   ],
+   "answer": "A) Tenglik yo‘qolishidan qo‘rqqani uchun"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avtobusda ketyatganda Anqaboyev qaysi ashulani aytdi?",
+   "options": [
+    "A) \"Bog‘ aro qo‘ysam qadam\"",
+    "B) \"O‘zbekiston vatanim\"",
+    "C) \"Mening mehribon buvim\"",
+    "D) \"Buloq suvi shifobaxsh\""
+   ],
+   "answer": "A) \"Bog‘ aro qo‘ysam qadam\""
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Rixsivoy va Anqaboyevning imlo haqidagi bahsi qanday ahamiyatga ega?",
+   "options": [
+    "A) Bolalarning bilimli va fikrli ekanini ko‘rsatadi",
+    "B) Ularning odobsizligini anglatadi",
+    "C) Vaqtni bekorga o‘tkazganini bildiradi",
+    "D) Boshqalarga xalaqit berganini ko‘rsatadi"
+   ],
+   "answer": "A) Bolalarning bilimli va fikrli ekanini ko‘rsatadi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mastura xolaning tikuv mashinasi olishiga kimlar pul qo‘shdi?",
+   "options": [
+    "A) Mastura xola va Zumrad opa",
+    "B) Rixsivoy va Sharifjon aka",
+    "C) Sanjar va uning dadasi",
+    "D) Soraxon va uning onasi"
+   ],
+   "answer": "A) Mastura xola va Zumrad opa"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Anqaboyevning hazillarini qanday so‘z bilan ta'riflagan?",
+   "options": [
+    "A) Donishmandning o‘zginasi",
+    "B) Qo‘pol va shafqatsiz",
+    "C) Yig‘loqi va g‘amgin",
+    "D) Zerikarli va quruq"
+   ],
+   "answer": "A) Donishmandning o‘zginasi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mastura xolaning chuchvarasiga kelini nima qo‘shib yuborgan edi?",
+   "options": [
+    "A) Guruch qo‘shib yuborgan edi",
+    "B) Kartoshka qo‘shib yuborgan edi",
+    "C) Sabzi qo‘shib yuborgan edi",
+    "D) Murch qo‘shib yuborgan edi"
+   ],
+   "answer": "A) Guruch qo‘shib yuborgan edi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Rixsivoy nega Sharifjon akadan kechirim so‘rashni xohlamadi?",
+   "options": [
+    "A) Habibani nohaq qilmaslik uchun",
+    "B) O‘qituvchisini yomon ko‘rgani uchun",
+    "C) Darsdan qochish uchun",
+    "D) Maktabdan ketmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Habibani nohaq qilmaslik uchun"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zumrad opaning qizi Soraxon Rixsivoyga nima ko‘rsatdi?",
+   "options": [
+    "A) Chet el sayohatidagi rasmlarni",
+    "B) Akvariumdagi rangli balıqlarni",
+    "C) Yangi sotib olingan avtomobilni",
+    "D) Maktabdagi a'lo baholarini"
+   ],
+   "answer": "A) Chet el sayohatidagi rasmlarni"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Rixsivoy suratlarda onasini ko‘rib nega chuqur hayajonga tushdi?",
+   "options": [
+    "A) Onasining mehrini va siymosini qumsagani uchun",
+    "B) Rasm juda xira bo‘lgani uchun",
+    "C) Soraxondan uyalib ketgani uchun",
+    "D) Sayohatga borishni xohlagani uchun"
+   ],
+   "answer": "A) Onasining mehrini va siymosini qumsagani uchun"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Pedsovetda Habiba va Qumri opaning qarashlari qanday farq qildi?",
+   "options": [
+    "A) Habiba adolatparvar, Qumri opa ko‘nikkan",
+    "B) Ikkalasi ham Rixsivoyni jazoladi",
+    "C) Habiba qattiqqol, Qumri opa rahmdil",
+    "D) Ikkalasi ham bir xil fikrladi"
+   ],
+   "answer": "A) Habiba adolatparvar, Qumri opa ko‘nikkan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anqaboyev Rixsivoyga pul topish uchun nimani sotdi?",
+   "options": [
+    "A) O‘zining yaxshi ko‘rgan pichog‘ini",
+    "B) Qimmatbaho kitoblar to‘plamini",
+    "C) Sport poyabzalini va kiyimini",
+    "D) Soat va dastro‘molini"
+   ],
+   "answer": "A) O‘zining yaxshi ko‘rgan pichog‘ini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Rixsivoy nega aynan Chimyongorga borib buloq suvi keltirdi?",
+   "options": [
+    "A) Buvisi buloq suvini shifobaxsh degani uchun",
+    "B) U yerda sayr qilishni xohlagani uchun",
+    "C) Sanjar bilan uchrashish uchun",
+    "D) Shaharda suv tugagani uchun"
+   ],
+   "answer": "A) Buvisi buloq suvini shifobaxsh degani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Habiba «Haqiqat uchun kurashganlarning qismati yengil bo‘lmagan» deganda nimani nazarda tutdi?",
+   "options": [
+    "A) Adolat yo‘li mashaqqatli bo‘lishini",
+    "B) Urushda g‘olib bo‘lish qiyinligini",
+    "C) O‘qishni bitirish qiyinligini",
+    "D) Pul topish og‘ir kechishini"
+   ],
+   "answer": "A) Adolat yo‘li mashaqqatli bo‘lishini"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kasalxona darvozasida Rixsivoyga kim yordam berib ichkariga qo‘ydi?",
+   "options": [
+    "A) Badqovoq qorovul Mamarasul amaki",
+    "B) Pista chaqayotgan Masha xola",
+    "C) Bosh shifokorning o‘zi",
+    "D) Dori olib kelgan haydovchi"
+   ],
+   "answer": "A) Badqovoq qorovul Mamarasul amaki"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Anqaboyevning pichog‘ini sotib Rixsivoyga pul berishi qanday fazilat?",
+   "options": [
+    "A) Haqiqiy do‘stlik va fidoiylik",
+    "B) Pulga o‘chlik va manfaatchilik",
+    "C) Keraksiz narsadan qutulish istagi",
+    "D) Kattalarga maqtanish va kerilish"
+   ],
+   "answer": "A) Haqiqiy do‘stlik va fidoiylik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Rixsivoy buloq suvini palata derazasidan nega shoshib berdi?",
+   "options": [
+    "A) Buvisining tezroq tuzalishini istagani uchun",
+    "B) Suv to‘kilib ketishidan qo‘rqqani uchun",
+    "C) Qorovul quvib yubormasligi uchun",
+    "D) Uyiga kech qolmaslik uchun"
+   ],
+   "answer": "A) Buvisining tezroq tuzalishini istagani uchun"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar so‘ngida bankadagi suvning chayqalishi nimaga o‘xshatilgan?",
+   "options": [
+    "A) Rixsivoyning hayajonli yurak urishiga",
+    "B) Daryoning shiddatli oqimiga",
+    "C) Tog‘dagi kuchli shamolga",
+    "D) Mashinaning tez yurishiga"
+   ],
+   "answer": "A) Rixsivoyning hayajonli yurak urishiga"
+  }
+ ]
+}

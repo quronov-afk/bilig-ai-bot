@@ -1,0 +1,478 @@
+{
+ "title": "Umr manzillari",
+ "author": "Abdulla Oripov",
+ "genre": "sheʼrlar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "vatan",
+   "ma'naviyat",
+   "falsafa",
+   "insonparvarlik",
+   "vaqt",
+   "odob"
+  ],
+  "theme": "Insonning hayotdagi o‘rni, ma'naviy soflik, Vatan va ona tiliga muhabbat, ezgulik hamda e'tiqodning beqiyos qadri.",
+  "summary": "To‘plamda Abdulla Oripovning so‘nggi yillarda yozgan falsafiy va lirik she'rlari, «Ranglar va ohanglar» she'riy traktati hamda g‘azallari jamlangan. Shoir hayot sinovlari, insoniy fazilatlar va nuqsonlar, ota-ona o‘giti, Vatan qadri hamda e'tiqod masalalarini teran musshohada qiladi. She'rlarda pahlavonlar, tabiblar, tarixiy siymolar (Navoiy, Bobur, Mirtemir) va oddiy insonlar hayotidan saboqlar keltiriladi. Inson nafsga qul bo‘lmay, iymon va samimiyatni saqlashi, yurt tinchligini qadrlashi lozimligi uqtiriladi.",
+  "characters": "Lirik qahramon — umr yo‘lini sarhisob qilayotgan donishmand va vatanparvar shoir. Ota — o‘g‘liga fe'li keng bo‘lishni uqtirgan mo‘tabar zot. Bobo — nabirasiga halol mehnat va samimiyat haqida saboq beruvchi donishmand. Mirtemir — shoirga saboq bergan kamtar va bag‘rikeng ustoz. Boysunlik polvon — mag‘rur va e'tiqodli pahlavon.",
+  "conclusion": "To‘plam kitobxonga insoniy qadr-qimmat, shukronalik va ma'naviy tozalik saboqlarini beradi. Ota-onaga hurmat, Vatan va ona tilini sevish, fe'li kenglik hamda e'tiqodli bo‘lish kabi oliy qadriyatlar singdiriladi. Bola ushbu kitob orqali hayotdagi chinakam va soxta narsalarni ajratishni o‘rganadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Falsafiy she'riyatni xush ko‘radigan, hayot va insoniylik haqida o‘ylaydigani hamda she'riyat orqali ma'naviy ozuqa oladigan o‘smirlarga.",
+  "events": [
+   "Otasi shoirga fe'li tor bo‘lmaslikni va har doim bag‘ri keng bo‘lishni uqtiradi.",
+   "Shoir Navoiy ko‘chasini kezib, buyuk adib va san'atkorlarni yodga oladi.",
+   "Bog‘ga ekilgan to‘rt tup arg‘uvon niholi orqali umrning boqiyligi haqida o‘yga toladi.",
+   "Buxoro va Xivadagi keksa xorijiy sayyohlarni ko‘rib, ularning hayot tarzi haqida mushohada yuritadi.",
+   "Aktyor Zikir Muhammadjonov xotirasini e'zozlab, san'atkorning xoksorligini madh etadi.",
+   "Shifokorlar topolmagan xastalikka qo‘shni oqsoqol Xudbinlik deb tashxis qo‘yadi.",
+   "O‘zbek ayolining ibosi va tarixiy jasorati (To‘maris, Bibixon, Nodira) e'tirof etiladi.",
+   "Ustoz Mirtemirning shogirdlarga ko‘rsatgan g‘amxo‘rligi va saboqlari yodga olinadi.",
+   "Maydanak rasadxonasida koinot va yulduzlarni kuzatib, Ulug‘bek dahosiga tasannolar aytiladi.",
+   "Alisher Navoiy Xamsani tugatgach, Boyqaroning oq otini minish taklifiga kamtarlik bilan javob beradi.",
+   "Shoir el-yurt tinchligi va Mustaqillik bayrami eng oliy ne'mat ekanini ta'kidlaydi.",
+   "Keksa bobo nabirasiga boylik deb aqlni yo‘qotmaslikni va baxt mehnatda ekanini aytadi.",
+   "Maktabga ketayotgan bolakayning har bir insonga tushunib salom berishi madh etiladi.",
+   "Ona tilining boyligi va sanduloch, hululu kabi so‘zlarning jilosi madh etiladi.",
+   "G‘am-alamni faqat Allohga aytish mumkinligi pochta qutisi timsolida bayon etiladi.",
+   "Boysunlik polvonning xalqaro kurashlarda o‘zbek sha'nini baland ko‘tarishi tasvirlanadi.",
+   "Mutal Burhonning non do‘sti va jon do‘sti haqidagi saboqlari keltiriladi.",
+   "Xorijda Vatansiz yurgan o‘zbekning ko‘z yoshlari va Vatansizlik fojiasi bayon qilinadi.",
+   "G‘azalda Rasulullohning g‘azabini yenggan inson chin pahlavon ekani haqidagi hadisi eslanadi.",
+   "Boburshohning ham shaddod shoir, ham sarkarda sifatidagi tengsiz siymosi e'zozlanadi."
+  ],
+  "quotes": [
+   "Bolam, fe'li torlik bu ham bir zavol. Keng bo‘l, oyoqlaring orasidan to o‘tib keta olsin tuya bemalol.",
+   "Navoiy ko‘chasi – Toshkentim faxri, Ilm-u fan shahrining pok siynasidir.",
+   "Shodmonlik yarashar Vatan tinch bo‘lsa, Komillik ufurib tursa har nafas.",
+   "Ahd-u tajriba top, yashagil dadil, Bilib qo‘y, baxt uchun mehnatdir kafil.",
+   "Tarixni-yu xalqni aldash eng mudhish gunoh!",
+   "Rasululloh lutf aylamish sahobalarga: G‘azabini yengolsa kim – chin pahlavon emish."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otasi shoirga hayotda qanday bo‘lishni maslahat bergan?",
+   "options": [
+    "A) Bag‘ri keng va fe'li keng",
+    "B) Har doim qattiqqol bo‘lishni",
+    "C) Faqat boylik yig‘ishni",
+    "D) Odamlardan uzoqroq yurishni"
+   ],
+   "answer": "A) Bag‘ri keng va fe'li keng"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shoir o‘z hovlisiga qanday daraxtdan to‘rt tup ekkan edi?",
+   "options": [
+    "A) Arg‘uvon",
+    "B) Terak",
+    "C) Tol",
+    "D) Bodom"
+   ],
+   "answer": "A) Arg‘uvon"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shifokorlar ojiz qolgan bemorga oqsoqol qanday tashxis qo‘ydi?",
+   "options": [
+    "A) Xudbinlik",
+    "B) Tumov",
+    "C) Dangasalik",
+    "D) Uyqusizlik"
+   ],
+   "answer": "A) Xudbinlik"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Turnalar Qo‘ng‘irtov uzra uchganda qanday sado chiqarardi?",
+   "options": [
+    "A) Qure qure",
+    "B) Chir chir",
+    "C) Cik cik",
+    "D) G‘oz g‘oz"
+   ],
+   "answer": "A) Qure qure"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shoir Navoiy ko‘chasi haqida yozganda qaysi ijodkorlarni eslaydi?",
+   "options": [
+    "A) Oybek, Mirtemir, Shukur Burxonni",
+    "B) Ogahiy, Muqimiy, Furqatni",
+    "C) Hamza, Qodiriy, Cho‘lponni",
+    "D) Babur, Nodira, Uvaysiyni"
+   ],
+   "answer": "A) Oybek, Mirtemir, Shukur Burxonni"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoir nega arg‘uvon nihollariga boqqanda alohida havas qiladi?",
+   "options": [
+    "A) Ularning umri juda uzunligi uchun",
+    "B) Meva berib hosil qilgani uchun",
+    "C) Tez qurib qolgani uchun",
+    "D) Ranglari qizil bo‘lgani uchun"
+   ],
+   "answer": "A) Ularning umri juda uzunligi uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kuzda boshqa qushlar ketsa ham, qush nega deraza yonida sayraydi?",
+   "options": [
+    "A) Shoirga mehr va sadoqat ko‘rsatgani",
+    "B) Uchib ketishga qanoti yo‘qligi",
+    "C) Don izlab topshiriq olgani",
+    "D) Uy ichiga kirmoqchi bo‘lgani"
+   ],
+   "answer": "A) Shoirga mehr va sadoqat ko‘rsatgani"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shoirning o‘zini tabiat bilan teng ko‘rishi haqidagi fikrini qanday baholaysan?",
+   "options": [
+    "A) To‘g‘ri, inson tabiatning ajralmas qismidir",
+    "B) Xato, inson tabiatdan mutlaq ustun",
+    "C) Kulgili, inson daryoga o‘xshay olmaydi",
+    "D) Noto‘g‘ri, inson alohida koinotdir"
+   ],
+   "answer": "A) To‘g‘ri, inson tabiatning ajralmas qismidir"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif turnalarni harir ko‘ylak kiygan farishta deya qanday tasvirlagan?",
+   "options": [
+    "A) Ularning nafis va go‘zal holatini",
+    "B) Ularning odamdek kiyinib olganini",
+    "C) Ularning faqat osmonda yashashini",
+    "D) Ularning juda qo‘rqinchli ekanini"
+   ],
+   "answer": "A) Ularning nafis va go‘zal holatini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Enagasi Mashrabga alla aytganda Mashrab beshikdan nima deydi?",
+   "options": [
+    "A) Alda-yo alda",
+    "B) Alla-yo alla",
+    "C) Uxlayman-yo uxlayman",
+    "D) Kattaman-yo kattaman"
+   ],
+   "answer": "A) Alda-yo alda"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maydanak rasadxonasidan kuzatilganda qaysi nomli sayyora ko‘rinadi?",
+   "options": [
+    "A) O‘zbekiston va Samarqand",
+    "B) Toshkent va Buxoro",
+    "C) Andijon va Xiva",
+    "D) Nasaf va Termiz"
+   ],
+   "answer": "A) O‘zbekiston va Samarqand"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy Xamsani tugatgach Boyqaro unga qanday izzat ko‘rsatdi?",
+   "options": [
+    "A) Oq otini minishni taklif etdi",
+    "B) Katta saroy sovg‘a qildi",
+    "C) Qimmatbaho toj kiygizdi",
+    "D) Boshqa yurtga hokim qildi"
+   ],
+   "answer": "A) Oq otini minishni taklif etdi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shoir darvozasiga o‘rnatilgan va xatlar keladigan bezak nima?",
+   "options": [
+    "A) Pochta qutisi",
+    "B) Temir qulf",
+    "C) Kichik qo‘ng‘iroq",
+    "D) Yog‘och yog‘du"
+   ],
+   "answer": "A) Pochta qutisi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maktabga shoshayotgan bolakay yo‘lda uchragan odamlarga nima qilardi?",
+   "options": [
+    "A) Ataylab salom berib o‘tardi",
+    "B) Qaramay yugurib ketardi",
+    "C) Ulardan joy so‘rardi",
+    "D) Savollar berib to‘xtatardi"
+   ],
+   "answer": "A) Ataylab salom berib o‘tardi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Avgust to‘rtliklarida insoniy munosabatlar haqida qanday fikrlar jamlangan?",
+   "options": [
+    "A) Nochor ustidan kulmaslik, yaxshilik qilish",
+    "B) Faqat pul uchun mehnat qilish",
+    "C) O‘rtoqlarni bir-biriga qarshi qo‘yish",
+    "D) Manfaatsiz hech kimga boqmaslik"
+   ],
+   "answer": "A) Nochor ustidan kulmaslik, yaxshilik qilish"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shoir she'riy traktatda Boysunlik polvonni qanday sifatlar bilan xarakterlaydi?",
+   "options": [
+    "A) Tanti, rostgo‘y va irodali",
+    "B) Kibrli va maqtanchoq",
+    "C) Qo‘rqoq va sustkash",
+    "D) Yuvosh va ayyor"
+   ],
+   "answer": "A) Tanti, rostgo‘y va irodali"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bobo nabirasiga nega boylik deb aqlni yo‘qotmaslikni uqtiradi?",
+   "options": [
+    "A) Boylik vaqtincha, aql esa doimiy",
+    "B) Boylik aqldan ko‘ra muhimroq",
+    "C) Aql bilan pul topib bo‘lmaydi",
+    "D) Boy odamga aql kerak emas"
+   ],
+   "answer": "A) Boylik vaqtincha, aql esa doimiy"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoirning fikricha, pochta qutisiga sig‘maydigan tuyg‘u qaysi?",
+   "options": [
+    "A) Insonning ichki ohi va qalbdagi alami",
+    "B) Bayram qutlovlari va quvonchlar",
+    "C) Shikoyat va do‘stona xatlar",
+    "D) She'rlar va kitob nusxalari"
+   ],
+   "answer": "A) Insonning ichki ohi va qalbdagi alami"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Alisher Navoiyning Boyqaro otini minishdan uzr so‘rashini qanday baholaysan?",
+   "options": [
+    "A) Shoirning yuksak kamtarligi va odabi",
+    "B) Shoirning podshodan qo‘rqqanligi",
+    "C) Otga minishni bilmasligi",
+    "D) Sulton sovg‘asini pisand qilmagani"
+   ],
+   "answer": "A) Shoirning yuksak kamtarligi va odabi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Vatan tinch bo‘lsa misralari orqali o‘quvchida qanday his uyg‘otadi?",
+   "options": [
+    "A) Yurt tinchligi eng buyuk baxtligi",
+    "B) Sayohat qilish eng muhimligi",
+    "C) Boylik to‘plash kerakligi",
+    "D) Uyda o‘tirish zarurligi"
+   ],
+   "answer": "A) Yurt tinchligi eng buyuk baxtligi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rasulullohning hadisiga ko‘ra, kim haqiqiy va chin pahlavon hisoblanadi?",
+   "options": [
+    "A) G‘azabini yenga olgan inson",
+    "B) Hammadan kuchli polvon",
+    "C) Ko‘p mol-dunyo topgan odam",
+    "D) Maydonda hammani yiqitgan kishi"
+   ],
+   "answer": "A) G‘azabini yenga olgan inson"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘azalda madh etilgan Voqeot nomli ulug‘ asar muallifi kim?",
+   "options": [
+    "A) Boburshoh",
+    "B) Alisher Navoiy",
+    "C) Amir Temur",
+    "D) Mashrab"
+   ],
+   "answer": "A) Boburshoh"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shoir g‘azalida she'r yozish mashaqqatini nimaga o‘xshatgan?",
+   "options": [
+    "A) Ignada quduq qazishga",
+    "B) Tog‘dan tosh yumalatishga",
+    "C) Gulzor ekib parvarishlashga",
+    "D) Suvda kema haydashga"
+   ],
+   "answer": "A) Ignada quduq qazishga"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qismat she'rida Vatansiz va kambag‘al odamlar qanday taqqoslangan?",
+   "options": [
+    "A) Biri non gadosi, biri Vatan",
+    "B) Ikkisi ham baxtiyor yashaydi",
+    "C) Ikkalasi ham boy-badavlat kimsalar",
+    "D) Ular sirayam farq qilmaydi"
+   ],
+   "answer": "A) Biri non gadosi, biri Vatan"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Vatansizlik degan og‘ir qismat iborasidan muallif nimani nazarda tutadi?",
+   "options": [
+    "A) Yurt sog‘inchi har qanday yo‘qchilikdan og‘ir",
+    "B) Chet elda yashash juda qiziq",
+    "C) Boy bo‘lsang Vatan kerak emas",
+    "D) Vatansiz inson erkin yashaydi"
+   ],
+   "answer": "A) Yurt sog‘inchi har qanday yo‘qchilikdan og‘ir"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega shoir Tarixni va xalqni aldash eng mudhish gunoh deydi?",
+   "options": [
+    "A) Yolg‘on tarix avlodlar kelajagini buzgani uchun",
+    "B) Odamlar baribir yolg‘onga ishonmagani uchun",
+    "C) Tarixni hech kim eslamagani uchun",
+    "D) Yolg‘on yozish juda osonligi uchun"
+   ],
+   "answer": "A) Yolg‘on tarix avlodlar kelajagini buzgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shoirning nafsga qul bo‘lmaslik haqidagi fikrini qanday baholaysan?",
+   "options": [
+    "A) To‘g‘ri, nafs insonni tubanlikka yetaklaydi",
+    "B) Xato, nafsga erishish baxt keltiradi",
+    "C) Keraksiz, nafs haqida o‘ylash shartmas",
+    "D) Noto‘g‘ri, nafs insonga yordam beradi"
+   ],
+   "answer": "A) To‘g‘ri, nafs insonni tubanlikka yetaklaydi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "O‘zgalar aybini kechirish haqidagi shoir qaroriga qanday baho berasan?",
+   "options": [
+    "A) Oliyjanoblik va ma'naviy kenglik belgisi",
+    "B) Qo‘rqoqlik va ojizlik belgisi",
+    "C) Bekorchi va ma'nosiz ish",
+    "D) O‘zini ko‘z-ko‘z qilish usuli"
+   ],
+   "answer": "A) Oliyjanoblik va ma'naviy kenglik belgisi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Shoir bulbulini Sandulochim deb ataganda qanday tuyg‘u uyg‘onadi?",
+   "options": [
+    "A) Ona tiliga nisbatan hayrat va mehr",
+    "B) Qushlardan qo‘rqish hissi",
+    "C) Bog‘da yurish istagi",
+    "D) Chuqur qayg‘u va alam"
+   ],
+   "answer": "A) Ona tiliga nisbatan hayrat va mehr"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "G‘azalda Boburshoh siymosi e'zozlanganda muallif qanday ta'sirlanadi?",
+   "options": [
+    "A) Faxr va milliy g‘urur tuyg‘usi",
+    "B) Uzoq o‘tmishdan g‘amginlik hissi",
+    "C) Begona diyorlarga havas tuyg‘usi",
+    "D) Afsus va o‘kinch hissi"
+   ],
+   "answer": "A) Faxr va milliy g‘urur tuyg‘usi"
+  }
+ ]
+}

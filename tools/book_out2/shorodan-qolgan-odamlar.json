@@ -1,0 +1,479 @@
+{
+ "title": "Sho‘rodan qolgan odamlar",
+ "author": "Shoyim Bo‘tayev",
+ "genre": "qissalar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "jamiyat va davr",
+   "oila va ota-farzand munosabati",
+   "tarixiy xotira",
+   "falsafa va majoz",
+   "oqibat va mas'uliyat"
+  ],
+  "theme": "Sho‘ro tuzumidan qolgan ruhiy va ma'naviy inqiroz, insonlar ongida saqlanib qolgan asoratlar hamda ota-farzand va jamiyat o‘rtasidagi uzilishlarni majoziy va fojiaviy-satirik uslubda ochib berish.",
+  "summary": "Qissa sovet tuzumining yemirilish davri va undan keyingi o‘tish bosqichida yashagan insonlarning ruhiy hamda maishiy ahvolini tasvirlash bilan boshlanadi. Sobiq qamoqxona nazoratchisi (Melsif) va uning o‘g‘li Toshmurod o‘rtasida nizo kelib chiqadi. O‘g‘il otasiga «umr bo‘yi bitta tayoq ushlab o‘tasizmi» deb piching qilgani uchun shafqatsiz kaltaklanadi. Uyidan bezigan Toshmurod mol-hollari qirilib, nochor ahvolda qolgan amakisinikiga boradi. Keyinchalik Toshmurod jo‘ralari bilan amakisining yolg‘iz qolgan ho‘kizini o‘g‘irlaydi. Militsiya o‘g‘rilarni ushlaydi. Qishloq oqsoqollari va qo‘shnilar aralashuviga qaramay, ma'naviy qashshoqlik va araz tufayli ota-o‘g‘il o‘rtasidagi rishtalar darz ketadi. Toshmurod sud qilinib, qamaladi. Nazoratchining xotini og‘ir xastalikka chalinib, vafot etadi. Nazoratchi o‘g‘li bilan ko‘rishish uchun boshliqdan ruxsat oladi va uni uyiga olib keladi. Qissaning keyingi qismlarida majoziy va satirik ramzlar kirib keladi: Gogolning «O‘lik jonlar» asari qahramoni Pavel Ivanovich Chichikov va uning xizmatkorlari Selifan hamda Petrushka O‘zbekiston muhitida paydo bo‘lishadi. Ular mahalliy amaldorlar — Nishonboy Hurzamonovich, Zamzam to‘ra va qallob Koshkaryovlar bilan uchrashishadi. Amaldorlar xalq manfaatidan yiroq, balandparvoz safsata va ma'nosiz islohotlar bilan band. Asar oxirida Petrushka «O‘lik jonlar» kitobini o‘qib o‘tirganini ko‘rgan Chichikov o‘z kirdikorlari oshkor bo‘lganidan qo‘rqib, aravasida noma'lum tomonga qochib ketadi.",
+  "characters": "Melsif (Nazoratchi) — sho‘ro tuzumining sobiq nazoratchisi, qattiqqo‘l va jahldor ota.\nToshmurod — Melsifning yolg‘iz o‘g‘li, otasining kasbidan nafratlanib, adashib jinoyatga qo‘l uradi.\nAmaki — Melsifning ukasi, mol-hollaridan ajrab, dunyodan va odamlardan ko‘ngli qolgan kishi.\nSunnat o‘g‘ri — sobiq mahbus, davr o‘zgarishi bilan biznes boshlagan chaqqon odam.\nNishonboy Hurzamonovich — balandparvoz va rasmiyatchi mahalli amaldor.\nZamzam to‘ra — har qanday vaziyatni dinga va manfaatga moslashtirib beruvchi munofiq kishi.\nPolkovnik Koshkaryov — asossiz va bema'ni nazariyalarni ilgari suruvchi soxta olim.\nPavel Ivanovich Chichikov — Gogol asaridan ko‘chgan majoziy qahramon, o‘lik jonlar hisobiga boylik orttirmoqchi bo‘lgan qallob.",
+  "conclusion": "Asar kitobxonni mustaqillik va o‘tish davridagi ruhiy-ma'naviy inqirozlar, sobiq tuzum asoratlari haqida chuqur mushohada yuritishga chorlaydi. Bola ota-onaga hurmat, halol mehnating qadri, amaldorlikdagi soxtalik va ma'naviy tubanlikning oqibatlarini tushunib yetadi. Kitob hayotda to‘g‘ri yo‘lni tanlash hamda o‘tmish xatolaridan saboq chiqarish muhimligini uqtiradi.",
+  "difficulty": "qiyin",
+  "mood": "falsafiy, majoziy, o‘ylantiruvchi",
+  "for_whom": "Tarixiy va falsafiy asarlarga qiziquvchi, hayotiy satira va majoz ma'nosini tushunishga intiluvchi o‘smirlar uchun.",
+  "events": [
+   "Toshmurod otasining kasbini kamsitib gapirgani uchun otasi Melsifdan qattiq kaltak yeydi.",
+   "Ota va o‘g‘il o‘rtasida doimiy araz va sovuq munosabat paydo bo‘ladi.",
+   "Toshmurod maktabni bitirib, ish topolmay amakisining qishlog‘iga boradi.",
+   "Amakining barcha mollari birin-ketin o‘lib, faqat bitta buzov qoladi.",
+   "Toshmurod tunda ikkita sherigi bilan amakisining yetilgan ho‘kizini o‘g‘irlab ketadi.",
+   "Militsiya o‘g‘rilarni ushlab, ho‘kizni amakiga qaytarib beradi.",
+   "Qishloq oqsoqollari amakining oldiga kelib, da'vosidan kechishini va jiyanini qamoqdan qutqarishini so‘rashadi.",
+   "Toshmurod va uning sheriklari ustidan sud jarayoni bo‘lib o‘tadi.",
+   "Nazoratchi Melsif yo‘lda sobiq mahbus Sunnat o‘g‘ri bilan ko‘rishib, uning mashinasida ketadi.",
+   "Sunnat o‘g‘ri o‘zining firma ochib Sibirga meva-cheva olib borayotganini aytadi.",
+   "Melsifning xotini og‘ir kasal bo‘lib, o‘lim to‘shagida yotib qoladi.",
+   "Melsif qamoqxona boshlig‘idan o‘g‘li Toshmurodni onasi bilan ko‘rishishi uchun javob so‘raydi.",
+   "Boshliq Toshmurodni uch kunga otasining nazorati (konvoyi) ostida uyiga javob beradi.",
+   "Nazoratchi Musayev Toshmurodga kiyib olishi uchun eski choponini beradi.",
+   "Pavel Ivanovich Chichikov va uning xizmatkorlari O‘zbekiston hududiga kelib qolishadi.",
+   "Chichikov ko‘chada pioner qizcha bilan gaplashib, Lenin haykalini ko‘radi.",
+   "Nishonboy Hurzamonovich mehmonlarni qabul qilib, ularga alohida izzat-ikrom ko‘rsatadi.",
+   "Sobakevich dasturxondagi qo‘y soni va tandirkabobni yeb, Yelizaveta Vorobeyni so‘raydi.",
+   "Chichikov o‘lik jonlar ro‘yxatini taklif qilganda, Zamzam to‘ra va Nishonboy ularning nomini ko‘chalarga qo‘yishni o‘ylashadi.",
+   "Polkovnik Koshkaryov Ovrupo va Osiyo tuproqlarini aralashtirish haqida safsata sotadi.",
+   "Petrushka daraxt tagida «O‘lik jonlar» nomli kitobni o‘qib o‘tiradi.",
+   "Chichikov o‘z kirdikorlari fosh bo‘lganidan qo‘rqib, Selifanga aravani tez haydashni buyuradi va qochib ketadi."
+  ],
+  "quotes": [
+   "Umr bo‘yi poliz qo‘riqchisiga o‘xshab bitta tayoq ushlab o‘tasizmi, ota?",
+   "Ko‘ngil tavalludisiz odamning bu dunyoga kelishi, yurishi, ketishi bir hasharot umrichalik emasligini Hoji pochchangizdan so‘rasangiz, yaxshilab tushuntirib qo‘yadi.",
+   "Vayron joyda bino bo‘lgan bir vayron eding.",
+   "Hazorisfon, hazorisfon, hazorisfon!.. Havoni isiriq isi tutganday bo‘ldi.",
+   "Tiriklarga yer yo‘g‘-u o‘liklarga qayda bo‘lsin?!",
+   "Savob ishni har kuni har kim qilish kerak!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Toshmurod otasiga qarata qanday gap aytdi?",
+   "options": [
+    "A) Bitta tayoq ushlab o‘tasizmi?",
+    "B) Menga yangi kiyim olmaysizmi?",
+    "C) Shaharga ketishimga ruxsat bering.",
+    "D) Boshqa ishga o‘tmaysizmi?"
+   ],
+   "answer": "A) Bitta tayoq ushlab o‘tasizmi?"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘g‘lining gapidan so‘ng Nazoratchi nima qildi?",
+   "options": [
+    "A) Indamay uydan chiqib ketdi",
+    "B) O‘g‘lini qulog‘i ostiga urdi",
+    "C) Xotiniga shikoyat qilib yig‘ladi",
+    "D) Uni darhol o‘qishga yubordi"
+   ],
+   "answer": "B) O‘g‘lini qulog‘i ostiga urdi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Toshmurod maktabni bitirgach kimnikiga bordi?",
+   "options": [
+    "A) Qishloqdagi oqsoqolning uyiga",
+    "B) Qo‘shni qishloqdagi amakisining oldiga",
+    "C) Shahardagi o‘rtog‘ining yoniga",
+    "D) Tog‘dagi machoyi qarindoshinikiga"
+   ],
+   "answer": "B) Qo‘shni qishloqdagi amakisining oldiga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amakining hovlisida qanday hayvon qolgan edi?",
+   "options": [
+    "A) Bitta tirraqi buzov",
+    "B) Bitta qari eshak",
+    "C) Ikkita oq qo‘y",
+    "D) Uchta shoxli echki"
+   ],
+   "answer": "A) Bitta tirraqi buzov"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Toshmurod va amakisi munosabatidagi voqealar tartibini belgilang.",
+   "options": [
+    "A) Maslahat so‘rash, ho‘kizni o‘g‘irlash",
+    "B) O‘g‘rilik, maslahat so‘rash, yarashuv",
+    "C) Urushish, shaharga qochish, sovg‘a berish",
+    "D) Ho‘kizni sotish, amakini qamatish"
+   ],
+   "answer": "A) Maslahat so‘rash, ho‘kizni o‘g‘irlash"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Amaki nega jiyaniga maslahat berishni xohlamadi?",
+   "options": [
+    "A) O‘zi mollari o‘lib alamda edi",
+    "B) Toshmurodning maktabini yoqtirmasdi",
+    "C) Aka-ukalar doim do‘st edi",
+    "D) Toshmurod pul so‘ragani uchun"
+   ],
+   "answer": "A) O‘zi mollari o‘lib alamda edi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qo‘shnilar nega amakidan yozg‘irishdi?",
+   "options": [
+    "A) Jiyanini melisaga tutib bergani uchun",
+    "B) Ularga go‘sht bermagani uchun",
+    "C) Hovlisini tozalamagani uchun",
+    "D) Oqsoqollarni uyiga kiritmagani uchun"
+   ],
+   "answer": "A) Jiyanini melisaga tutib bergani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Chavandoz oqsoqolning «qamalsa qamalsin» deyishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri — jiyanga imkon berilmagan",
+    "B) To‘g‘ri — o‘g‘rilik maqlanadi",
+    "C) To‘g‘ri — amakiga yordam bo‘ladi",
+    "D) Noto‘g‘ri — u pul so‘rashi kerak"
+   ],
+   "answer": "A) Noto‘g‘ri — jiyanga imkon berilmagan"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif amakining alamini qanday tasvirlaydi?",
+   "options": [
+    "A) G‘alvir elab so‘kinishi orqali",
+    "B) O‘tirib ho‘ngrab yig‘lashi orqali",
+    "C) Shaharga qochib ketishi orqali",
+    "D) Qo‘shnilarga uyini sotishi orqali"
+   ],
+   "answer": "A) G‘alvir elab so‘kinishi orqali"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Vayron joyda bino bo‘lgan vayron» iborasi nimani bildiradi?",
+   "options": [
+    "A) Insonning ma'naviy qashshoqligini",
+    "B) Uyning haqiqatan buzilganini",
+    "C) Qishloqning qarovsiz qolganini",
+    "D) Mollar qirilib ketganini"
+   ],
+   "answer": "A) Insonning ma'naviy qashshoqligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sud raisi tushlik payti nimani orzu qilayotgan edi?",
+   "options": [
+    "A) Muzdek ayron simirishni",
+    "B) Issiq palov yeyishni",
+    "C) Shaharga borib dam olishni",
+    "D) Yangi mashina sotib olishni"
+   ],
+   "answer": "A) Muzdek ayron simirishni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sunnat o‘g‘ri Melsifni qanday mashinada uchratdi?",
+   "options": [
+    "A) Ko‘k Villis mashinasida",
+    "B) Qizil Jiguli mashinasida",
+    "C) Oq Kamaz yuk mashinasida",
+    "D) Qora Volga mashinasida"
+   ],
+   "answer": "A) Ko‘k Villis mashinasida"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Melsif boshliqdan nega javob so‘rab kirdi?",
+   "options": [
+    "A) Xotini og‘ir kasalligi uchun",
+    "B) O‘zi davolangani borish uchun",
+    "C) Uyiga o‘tin tashish uchun",
+    "D) Bozorga borib kelish uchun"
+   ],
+   "answer": "A) Xotini og‘ir kasalligi uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Musayev Toshmurodga nima berdi?",
+   "options": [
+    "A) Eski choponini kiyishga berdi",
+    "B) Bir juft yangi etik berdi",
+    "C) Yo‘l uchun pul berdi",
+    "D) Yeyishga non va go‘sht berdi"
+   ],
+   "answer": "A) Eski choponini kiyishga berdi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Musayev choponini berayotganda kimlarni tilga oldi?",
+   "options": [
+    "A) Bobosi va achasini",
+    "B) Otasi va onasini",
+    "C) Qamoqxona boshlig‘i va xotinini",
+    "D) Qishloqdagi qo‘shnisi va do‘stini"
+   ],
+   "answer": "A) Bobosi va achasini"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sud zalidagi uch o‘spirinning holatini aniqlang.",
+   "options": [
+    "A) Qo‘rqmay, beparvo o‘tirishgan edi",
+    "B) Qattiq yig‘lab tavba qilishardi",
+    "C) Sud raisiga va'da berishardi",
+    "D) Qochishga harakat qilishardi"
+   ],
+   "answer": "A) Qo‘rqmay, beparvo o‘tirishgan edi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Boshliq Toshmurodga nega otasining o‘zini konvoy qildi?",
+   "options": [
+    "A) Otasi javobgarlikni bo‘yniga olgani uchun",
+    "B) Boshqa konvoylar ishda bo‘lgani uchun",
+    "C) Toshmurod qochmasligiga ishongani uchun",
+    "D) Qamoqxonada odam kamligi uchun"
+   ],
+   "answer": "A) Otasi javobgarlikni bo‘yniga olgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sunnat o‘g‘ri nega o‘zini dadil tutardi?",
+   "options": [
+    "A) Firma ochib boyib ketgani uchun",
+    "B) Melsifdan qo‘rqmagani uchun",
+    "C) Qamoqdan butunlay qutulgani uchun",
+    "D) Qishloqqa hokim bo‘lgani uchun"
+   ],
+   "answer": "A) Firma ochib boyib ketgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Musayevning kiyimlarini vishkaga yashirincha olib chiqishi qanday harakat?",
+   "options": [
+    "A) Tartibni buzish bo‘lsa ham insoniy",
+    "B) Qamoqxona qoidalariga to‘g‘ri keladi",
+    "C) O‘g‘rilik va og‘ir jinoyat",
+    "D) Boshliqning topshirig‘ini bajarish"
+   ],
+   "answer": "A) Tartibni buzish bo‘lsa ham insoniy"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Sud raisining holati orqali muallif nimani ko‘rsatgan?",
+   "options": [
+    "A) Tizimning loqayd va zerikarliligini",
+    "B) Sudning adolatli ishlayotganini",
+    "C) Raisning juda mehnatkashligini",
+    "D) O‘spirinlarning qattiq jazolanganini"
+   ],
+   "answer": "A) Tizimning loqayd va zerikarliligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chichikov ko‘chada kim bilan gaplashib qoldi?",
+   "options": [
+    "A) Pioner qizaloq bilan",
+    "B) Keksa go‘rkov bilan",
+    "C) Traktorchi Alivoy bilan",
+    "D) Sobiq nazoratchi Melsif bilan"
+   ],
+   "answer": "A) Pioner qizaloq bilan"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ziyofatda Sobakevich qaysi taomni oldiga surib oldi?",
+   "options": [
+    "A) Ziravorli pishirilgan qo‘y sonini",
+    "B) Kattakon tovoqdagi oshni",
+    "C) Bir kosa issiq shashlikni",
+    "D) Maza qilib pishirilgan chuchvarani"
+   ],
+   "answer": "A) Ziravorli pishirilgan qo‘y sonini"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nishonboy Hurzamonovichning «yonqozig‘i» kim edi?",
+   "options": [
+    "A) Zamzam to‘ra",
+    "B) Polkovnik Koshkaryov",
+    "C) Pavel Ivanovich Chichikov",
+    "D) Kucher Selifan"
+   ],
+   "answer": "A) Zamzam to‘ra"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Petrushka daraxt tagida qaysi kitobni o‘qiyotgan edi?",
+   "options": [
+    "A) O‘lik jonlar kitobini",
+    "B) O‘tkan kunlar romanini",
+    "C) Qasoskorlar haqida dostonni",
+    "D) Geografiya darsligini"
+   ],
+   "answer": "A) O‘lik jonlar kitobini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Zamzam to‘ra va Nishonboy o‘lik dehqonlar nomini nima qilmoqchi bo‘lishdi?",
+   "options": [
+    "A) Ko‘cha va kolxozlarga qo‘ymoqchi",
+    "B) Chet elga sotmoqchi",
+    "C) Ro‘yxatdan o‘chirib tashlamoqchi",
+    "D) Kitob qilib chop etmoqchi"
+   ],
+   "answer": "A) Ko‘cha va kolxozlarga qo‘ymoqchi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Koshkaryovning takliflari nega kulgili va safsata edi?",
+   "options": [
+    "A) Hayotdan va haqiqatdan yiroq bo‘lgani uchun",
+    "B) U dehqonlarni umuman yoqtirmagani uchun",
+    "C) Chichikov unga pul bermagani uchun",
+    "D) Zamzam to‘ra qarshi chiqqani uchun"
+   ],
+   "answer": "A) Hayotdan va haqiqatdan yiroq bo‘lgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Chichikov nega shoshilinch ravshda qochib ketdi?",
+   "options": [
+    "A) Kirdikorlari yozilgan kitobni ko‘rib qo‘rqdi",
+    "B) Nishonboy uni qamoqqa olmoqchi bo‘ldi",
+    "C) Selifan otlarni o‘g‘irlab qochgani uchun",
+    "D) Sobakevich u bilan urushib qolgani uchun"
+   ],
+   "answer": "A) Kirdikorlari yozilgan kitobni ko‘rib qo‘rqdi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Nishonboy va Zamzam to‘raning xatti-harakatlariga qanday baho berish mumkin?",
+   "options": [
+    "A) Soxtalik va ma'naviy tubanlik",
+    "B) Xalq haqida samimiy qayg‘urish",
+    "C) Yuksak vatanparvarlik va halollik",
+    "D) Ilm-fanga bo‘lgan yuksak hurmat"
+   ],
+   "answer": "A) Soxtalik va ma'naviy tubanlik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zamzam to‘raning har qanday holatga moslashishi qaysi illatni ko‘rsatadi?",
+   "options": [
+    "A) Munofiqlik va riyokorlikni",
+    "B) Donolik va bilimdonlikni",
+    "C) Kamtarlik va mo‘minlikni",
+    "D) Saxovat va mehmondo‘stlikni"
+   ],
+   "answer": "A) Munofiqlik va riyokorlikni"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Gogol qahramonlarining o‘zbek muhitida paydo bo‘lishi ramziy ma'noda nimani anglatadi?",
+   "options": [
+    "A) Illo illatlar zamon va makon tanlamasligini",
+    "B) Rossiya bilan savdo aloqalari rivojlanganini",
+    "C) Chichikov haqiqatan tirilib kelganini",
+    "D) Qishloqda adabiyotga qiziqish yuqoriligini"
+   ],
+   "answer": "A) Illo illatlar zamon va makon tanlamasligini"
+  }
+ ]
+}

@@ -1,0 +1,479 @@
+{
+ "title": "Saylanma",
+ "author": "Mirkarim Osim",
+ "genre": "toʻplam",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tarix",
+   "jasorat",
+   "ilm-fan",
+   "vatanparvarlik",
+   "sadoqat"
+  ],
+  "theme": "Asarda xalqimizning olis o‘tmishidagi shonli voqealar, To‘maris va Temur Malik kabi qahramonlarning vatan ozodligi yo‘lidagi jasorati, Ibn Sino hamda Alisher Navoiy kabi buyuk mutafakkirlarning ilm-fan va madaniyatga qo‘shgan hissasi, shuningdek, el-yurt erki va sadoqat qadriyatlari aks ettirilgan.",
+  "summary": "To‘plam Mirkarim Osimning bir necha tarixiy qissalaridan tashkil topgan. «To‘maris» qissasida ko‘chmanchi massagetlar malikasi To‘marisning Eron shohi Kayxisrav bosqiniga qarshi mardona kurashi va uning o‘g‘li Siparangizning jasorati tasvirlanadi. Siparangiz dushman hiylasiga uchrab asir tushgach, nomusni o‘limdan ustun bilib, o‘z ko‘ksiga pichoq uradi. To‘maris dushmandan o‘ch olib, erkinlikni saqlab qoladi. «Ibn Sino qissasi» va «Ma'rifat darvozasi» boblarida buyuk tabib hamda alloma Ibn Sinoning yoshligi, ilmga bo‘lgan cheksiz ixlos va izlanishlari, Beruniy bilan ilmiy muloqotlari va Mahmud G‘aznaviy ta'qibidan qochib kechirgan mashaqqatli hayoti bayon etiladi. «O‘tror» hamda «Temur Malik» qissalarida mo‘g‘ul bosqinchilariga qarshi xalqning qahramonona qarshiligi, O‘tror mudofaasi va hunarmandlarning Samarqandga haydalishi voqealari yoritiladi. «Zulmat ichra nur» hamda «Singan setor» qissalarida Alisher Navoiyning yoshligi, uning shoirlik va davlat arbobi sifatidagi faoliyati, xalq manfaati yo‘lidagi adolatli qarorlari, Zayniddin kabi zukko yoshlarga homiylik qilgani va shogirdi Mashrabning fojiali taqdiri ko‘rsatiladi. «Nur va zulmat» qissasida esa Qo‘qon xonligi davridagi ijtimoiy adolatsizliklar va Jahon otin hamda O‘g‘iloy kabi matonatli ayollarning kechinmalari o‘z aksini topgan.",
+  "characters": "To‘maris — massagetlar malikasi, yurt erki va erkinligini hamma narsadan ustun qo‘yuvchi jasur va dono hukmdor. Siparangiz — To‘marisning o‘g‘li, g‘ayratli va mard yigit, dushman hiylasiga uchrasa-da, or-nomusini halokatdan baland tutadi. Ibn Sino — buyuk hakim va mutafakkir, ilm-fanga bag‘ishlangan umr sohibi. Alisher Navoiy — ulug‘ shoir va mufakkir, adolatparvar davlat arbobi, yoshlar va ma'rifat homiysi. Jahon otin — oqila shoira va murabbiy, ma'rifatparvar va mehirli ona.",
+  "conclusion": "Ushbu asar kitobxonda vatanparvarlik, tarixiy xotiraga hurmat, ilm-fanga intilish va or-nomusli bo‘lish kabi yuksak insoniy fazilatlarni shakllantiradi. Bola ajdodlarimizning ko‘rsatgan jasoratlari hamda ma'rifat yo‘lidagi fidoyiliklaridan saboq oladi. Ota-onalar uchun bu kitob farzandida milliylik va adolat tuyg‘ularini tarbiyalashda tengsiz qo‘llanmadir.",
+  "difficulty": "o‘rta",
+  "mood": "tarixiy, jiddiy, ilhomlantiruvchi",
+  "for_whom": "Tarixiy voqealar, ajdodlarimiz jasorati hamda buyuk allomalar hayotiga qiziqadigan 14 va undan katta yoshdagi kitobxonlar uchun.",
+  "events": [
+   "Massagetlar malikasi To‘maris o‘g‘li Siparangizni Zarina degan qizga uylantiradi.",
+   "To‘yda kelin va kuyov milliy urf-odatga ko‘ra kurashib kuch sinashadilar.",
+   "Eron shohi Kayxisrav To‘marisga sovchi va sovg‘alar yuboradi.",
+   "To‘maris Eron shohining mamlakatni bosib olish hiylasini anglab, sovchilikni rad etadi.",
+   "Eron qo‘shini daryodan o‘tib, massagetlar yeriga bostirib kiradi.",
+   "Siparangiz dushman qoldirgan qarorgohdagi sharobdan ichib, hushyorlikni boy beradi.",
+   "Dushman hujum qilib, Siparangiz va uning yigitlarini asir oladi.",
+   "Siparangiz nomusga chiday olmay, pichoq bilan o‘z ko‘ksiga urib halok bo‘ladi.",
+   "Beruniy saroyda kahraboni qaynatayotganda podshoh huzuriga chaqirtiriladi.",
+   "Ibn Sino Mahmud G‘aznaviy ta'qibidan saqlanish uchun Jurjon shahriga ketadi.",
+   "Ibn Sino qal'ada «Hay binni Yaqzon» ramziy qissasini yozib tugatadi.",
+   "Chingizxon nevarasi Botuga O‘tror hokimi Inolchiqni yo‘lbarsga o‘xshatib gapiradi.",
+   "Mo‘g‘ullar O‘trorni egallab, hunarmandlarni Samarqand tomonga haydaydilar.",
+   "Abdumajid usta tushkunlikka tushgan shogirdiga yovdan o‘ch olish uchun yashash kerakligini uqtiradi.",
+   "Alisher Navoiy yoshligida maktabda «Mantiq ut-tayr» kitobini berilib o‘qiydi.",
+   "Alisher Navoiy bakovulning dabdabali yurishini ko‘rib, bu haqda sulton Husayn Mirzaga aytadi.",
+   "Zayniddin ismli zukko yigit Alisher Navoiy majlisida qiyin muammoni topadi.",
+   "Buxoro elchilari bilan rus vakili Ivan Bochkov Moskva yo‘lida birga safar qiladi.",
+   "Hoji Baxshillo rus yigiti Ivan Bochkovni cho‘risi Zahrodan rashk qiladi.",
+   "Boborahim Mashrab Ofoqxojadan oq eshak va yo‘lbars terisini sovg‘a sifatida oladi.",
+   "O‘g‘iloy va Hayotjon nohaq ayblanib, toshbo‘ron qilish jazosiga hukm qilinadi.",
+   "Jahon otin Qoshqarda qolgan o‘g‘li Muhammadxonni sog‘inib g‘azal yozadi."
+  ],
+  "quotes": [
+   "Boshimizdan zar sochganlaringda ham biz erkinlikni qullikka alishtirmaymiz.",
+   "O‘lim har kimarsaning boshida bor, ammo kishi bir martagina berilgan hayotdan o‘zini xalos etmoqqa haqqi yo‘q.",
+   "Kishi bedor mahalidagina o‘zini tirik hisoblashi mumkin, uyqu o‘lim bilan barobardir.",
+   "Daraxtning yumshoq ildizi xarsangtoshni yorib o‘tadur. Yumshoqlik tig‘i qilichdan o‘tkir.",
+   "Yaxshi odam hamma joyda ham bor.",
+   "Bukun, e do‘stlar, farzandi jonimni sog‘indim..."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘maris o‘g‘li Siparangizni kimga uylantirdi?",
+   "options": [
+    "A) Zarina ismli qizga",
+    "B) Nodira ismli qizga",
+    "C) O‘g‘iloy ismli qizga",
+    "D) Jahon otinga"
+   ],
+   "answer": "A) Zarina ismli qizga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘yda Siparangiz bilan Zarina nima qilishdi?",
+   "options": [
+    "A) Ot choptirishdi",
+    "B) Kurash tushishdi",
+    "C) Kamondan o‘q otishdi",
+    "D) Qo‘shiq aytishdi"
+   ],
+   "answer": "B) Kurash tushishdi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kayxisrav To‘maris huzuriga kimni yubordi?",
+   "options": [
+    "A) Maxsus elchisini",
+    "B) Bosh vazirini",
+    "C) O‘g‘li Tulini",
+    "D) Qo‘shin boshlig‘ini"
+   ],
+   "answer": "A) Maxsus elchisini"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "To‘maris Kayxisravning taklifini nega rad etdi?",
+   "options": [
+    "A) Yurtini qul qilmaslik uchun",
+    "B) Sovg‘alarni yoqtirmagani uchun",
+    "C) Eron shohini tanimagani uchun",
+    "D) O‘g‘li qarshi bo‘lgani uchun"
+   ],
+   "answer": "A) Yurtini qul qilmaslik uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Eron elchisi massagetlar turmushidan nega hayron qoldi?",
+   "options": [
+    "A) Malikani oddiy ko‘rgani uchun",
+    "B) Ovqatlar shirinligi uchun",
+    "C) Otlar ko‘pligi uchun",
+    "D) Kiyimlar chiroyliligi uchun"
+   ],
+   "answer": "A) Malikani oddiy ko‘rgani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eron askarlari daryodan o‘tish uchun nima yasashdi?",
+   "options": [
+    "A) Yog‘och va qamishdan sol",
+    "B) Katta kemalar",
+    "C) Toshdan ko‘prik",
+    "D) Temir qayiqlar"
+   ],
+   "answer": "A) Yog‘och va qamishdan sol"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Siparangiz dushman qarorgohida nimaga uchrab mag‘lub bo‘ldi?",
+   "options": [
+    "A) Sharob ichib hushyorlikni yo‘qotdi",
+    "B) Qurollari yetishmay qoldi",
+    "C) Askerlari qochib ketdi",
+    "D) Otlari kasal bo‘lib qoldi"
+   ],
+   "answer": "A) Sharob ichib hushyorlikni yo‘qotdi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Siparangizning asir tushgach pichoq urishi qanday baholanadi?",
+   "options": [
+    "A) Nomusni o‘limdan ustun bildi",
+    "B) Qo‘rqoqlik qilib o‘zini o‘ldirdi",
+    "C) Shunchaki jahli chiqib qildi",
+    "D) Shohning amri bilan qildi"
+   ],
+   "answer": "A) Nomusni o‘limdan ustun bildi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif bahoriy cho‘lni qanday tasvirlaydi?",
+   "options": [
+    "A) Chechakli yashil poyandoz yoyilgan",
+    "B) Suvsiz va qurib qolgan",
+    "C) Qor bilan qoplangan",
+    "D) Faqat qumdan iborat"
+   ],
+   "answer": "A) Chechakli yashil poyandoz yoyilgan"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Siparangiz asirlikda o‘zini qanday halok etdi?",
+   "options": [
+    "A) Ko‘ksiga pichoq sanchib",
+    "B) Daryoga o‘zini tashlab",
+    "C) Zahr ichib",
+    "D) Qilich bilan urib"
+   ],
+   "answer": "A) Ko‘ksiga pichoq sanchib"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Beruniy saroyga chaqirilganda nima ish qilayotgan edi?",
+   "options": [
+    "A) Kahraboni qaynatayotgan edi",
+    "B) Kitob ko‘chirayotgan edi",
+    "C) Xarita chizayotgan edi",
+    "D) Yulduzlarni kuzatayotgan edi"
+   ],
+   "answer": "A) Kahraboni qaynatayotgan edi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Beruniy saroyga qanday kiyimda bordi?",
+   "options": [
+    "A) Qimmatbaho shoyi to‘nda",
+    "B) Oddiy bo‘z choponda",
+    "C) Yarg‘oq terili kamzulda",
+    "D) Harir ipak ko‘ylakda"
+   ],
+   "answer": "A) Qimmatbaho shoyi to‘nda"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ibn Sino Buxorodan nega ketishga majbur bo‘ldi?",
+   "options": [
+    "A) Mahmud G‘aznaviy ta'qibidan qutulishga",
+    "B) Yangi kitoblar sotib olishga",
+    "C) Jurjon hukmdorini davolashga",
+    "D) Tijorat ishlari bilan shug‘ullanishga"
+   ],
+   "answer": "A) Mahmud G‘aznaviy ta'qibidan qutulishga"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chingizxon Botuga O‘trorda kim borligini aytdi?",
+   "options": [
+    "A) Inolchiq ismli yo‘lbars",
+    "B) Temur Malik ismli arslon",
+    "C) Jaloliddin ismli pahlavon",
+    "D) Mahmud Yolvoch ismli ayg‘oqchi"
+   ],
+   "answer": "A) Inolchiq ismli yo‘lbars"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mo‘g‘ullar O‘tror bosqinida hunarmandlarni qayerga haydadi?",
+   "options": [
+    "A) Samarqandga qarab",
+    "B) G‘azna shahriga",
+    "C) Qashqar tomonga",
+    "D) Buxoro shahriga"
+   ],
+   "answer": "A) Samarqandga qarab"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Abdumajid usta shogirdiga nega o‘lishga shoshilma dedi?",
+   "options": [
+    "A) Yovdan o‘ch olish uchun",
+    "B) Samarqandni ko‘rish uchun",
+    "C) Hunar o‘rganish uchun",
+    "D) Ota-onasini topish uchun"
+   ],
+   "answer": "A) Yovdan o‘ch olish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alisher Navoiy maktabdalikda qaysi kitobni berilib o‘qidi?",
+   "options": [
+    "A) Mantiq ut-tayr",
+    "B) Guliston",
+    "C) Bo‘ston",
+    "D) Xamsa"
+   ],
+   "answer": "A) Mantiq ut-tayr"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Alisherning yoshlikdan kitobga berilishi qanday ma'no beradi?",
+   "options": [
+    "A) Ilmga cheksiz muhabbatini ko‘rsatadi",
+    "B) Maktab darslaridan qochishini bildiradi",
+    "C) Qushlarga qiziqishini anglatadi",
+    "D) Sherigidan o‘zish istagini bildiradi"
+   ],
+   "answer": "A) Ilmga cheksiz muhabbatini ko‘rsatadi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Chingizxonning nevarasiga munosabatini qanday tasvirlaydi?",
+   "options": [
+    "A) Uni jasur qilib o‘stirmoqchi",
+    "B) Undan mutlaqo bexabar yuradi",
+    "C) Faqat saroyda saqlashni xohlaydi",
+    "D) Urushga yuborishdan qo‘rqadi"
+   ],
+   "answer": "A) Uni jasur qilib o‘stirmoqchi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ibn Sino qal'ada qanday qissa yozdi?",
+   "options": [
+    "A) Hay binni Yaqzon",
+    "B) Mantiq ut-tayr",
+    "C) To‘maris qissasi",
+    "D) Singan setor"
+   ],
+   "answer": "A) Hay binni Yaqzon"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alisher Navoiy bakovulning harakatida nimani ko‘rib achindi?",
+   "options": [
+    "A) Ochiqdan-ochiq dabdaba va manmanlikni",
+    "B) Shoirlarga qilgan saxiyligini",
+    "C) Kambag‘allarga bergan yordamini",
+    "D) Otlarni yaxshi parvarishlaganini"
+   ],
+   "answer": "A) Ochiqdan-ochiq dabdaba va manmanlikni"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Navoiy Husayn Mirzaga bakovul haqida nega gapirdi?",
+   "options": [
+    "A) Amaldorlar haddidan oshmasligi uchun",
+    "B) Bakovulni vazifasidan bo‘shatish uchun",
+    "C) O‘ziga yangi to‘n olish uchun",
+    "D) Shoirlarni saroyga chaqirish uchun"
+   ],
+   "answer": "A) Amaldorlar haddidan oshmasligi uchun"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zayniddin kimning huzurida muammoni yechib berdi?",
+   "options": [
+    "A) Alisher Navoiy huzurida",
+    "B) Sulton Husayn huzurida",
+    "C) Darvishali huzurida",
+    "D) Majdiddin huzurida"
+   ],
+   "answer": "A) Alisher Navoiy huzurida"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Alisher Navoiyning yosh Zayniddinga bo‘lgan munosabati qanday?",
+   "options": [
+    "A) Yosh iste'dodlarni qo‘llab-quvvatlash",
+    "B) O‘z ustunligini ko‘rsatib maqtanish",
+    "C) Savollar bilan uni uyaltirish",
+    "D) Majlisdan quvib yuborish"
+   ],
+   "answer": "A) Yosh iste'dodlarni qo‘llab-quvvatlash"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hoji Baxshillo Ivan Bochkovdan nega g‘azablandi?",
+   "options": [
+    "A) Zahroga mehri tushganidan rashk qildi",
+    "B) Moskvaga borishni istamgani uchun",
+    "C) Savdo ishlarida aldagani uchun",
+    "D) Karvondan orqada qolgani uchun"
+   ],
+   "answer": "A) Zahroga mehri tushganidan rashk qildi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ofoqxoja Mashrabga qanday sovg‘alar in'om qildi?",
+   "options": [
+    "A) Oq eshak va yo‘lbars terisi",
+    "B) Oltin soat va to‘n",
+    "C) Kumush kosa va pichoq",
+    "D) Zarbof bo‘g‘cha va ot"
+   ],
+   "answer": "A) Oq eshak va yo‘lbars terisi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif toshbo‘ron sahnasidagi chumchuqlarni qanday ma'noda tasvirlaydi?",
+   "options": [
+    "A) Begunoh qizga achinish ramzi sifatida",
+    "B) Toshlardan qo‘rqib uchgan qush sifatida",
+    "C) Oddiy tabiat ko‘rinishi sifatida",
+    "D) Bahor kelganini bildirish uchun"
+   ],
+   "answer": "A) Begunoh qizga achinish ramzi sifatida"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "O‘g‘iloyning yolg‘on gapirishdan bosh tortgani nimani ko‘rsatadi?",
+   "options": [
+    "A) Yuksak sadoqat va halollikni",
+    "B) Ota-onasiga qarshi chiqishni",
+    "C) O‘limdan qo‘rqmaslik namoyishini",
+    "D) Shoiraga ishonmaslik holatini"
+   ],
+   "answer": "A) Yuksak sadoqat va halollikni"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Jahon otin farzandiga atab yozgan she'ri qanday ruhda?",
+   "options": [
+    "A) Cheksiz sog‘inch va ona mehriga to‘la",
+    "B) Qoshqar yurtini maqtash ruhida",
+    "C) Xon saroyini ulug‘lash ruhida",
+    "D) Jangovar chaqiriqlar ruhida"
+   ],
+   "answer": "A) Cheksiz sog‘inch va ona mehriga to‘la"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jahon otinning nevarasining ismi nima edi?",
+   "options": [
+    "A) Xadicha",
+    "B) O‘g‘iloy",
+    "C) Ulfatoy",
+    "D) Zarina"
+   ],
+   "answer": "A) Xadicha"
+  }
+ ]
+}

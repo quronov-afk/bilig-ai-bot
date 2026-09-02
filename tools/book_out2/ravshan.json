@@ -1,0 +1,479 @@
+{
+ "title": "Ravshan",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "jasorat",
+   "muhabbat",
+   "sadoqat",
+   "vatanparvarlik",
+   "or-nomus"
+  ],
+  "theme": "Asarda chin muhabbat, va'daga vafo, ota-ona va farzand o‘rtasidagi mehr-oqibat hamda el-yurt va ar-nomusni saqlash yo‘lidagi mardlik madh etiladi.",
+  "summary": "Go‘ro‘g‘libek farzandsiz bo‘lgani uchun Hasanxon va Avazxonni asrab olib, ulg‘aytiradi. Hasanxondan Ravshanbek dunyoga keladi. Ravshan o‘n uch yoshga kirganda Go‘ro‘g‘li uni Avazxonning qizi Gulanorga fotiha qilmoqchi bo‘lib, sovchi bo‘lib boradi. Ammo Avazxon kibrga berilib, «Hasanga va uning o‘g‘liga qiz bermayman» deb rad etadi. Ravshanbek bu sovuq gaplardan ranjib yig‘laydi. Uni Og‘a Yunus pari ovutadi va sehrli xosiyatli uzuk beradi. Uzukda Shirvon podshosi Qoraxonning qizi Zulxumorning rasmi va ismi bor edi. Ravshan g‘oyibona oshiq bo‘lib, otasi Hasanning Jiyronqush otida Shirvonga yo‘l oladi. Shirvonga yetib kelgach, bir kampirnikida to‘xtaydi va o‘zini Bevatan yetim deb tanishtiradi. Bozorda qalpoq sotib o‘tirgan Zulxumorni ko‘rib, ishqi yanada alovlanadi. Ravshan Zulxumorning bog‘iga kiradi va ikki yosh bir-birini sevib qoladi. Biqor, g‘aflatda uxlab qolgan Ravshanni Qoraxonning mirg‘azablari ushlab zindonga tashlashadi. Zulxumor sevgilisini qutqarish uchun esli mayna orqali Chambilga — Ravshanning otasi Hasanga xat yuboradi. Xatni olgan Hasanxon G‘irko‘k otini minib, o‘g‘lini qutqarishga otlanadi. Yo‘lda unga Aynoq, Jaynoq, Ersak, Tersak degan to‘rt kal yordamchi bo‘lib qo‘shiladi. Shirvonda Ravshanni dorda qatl etishmoqchi bo‘lganlarida, Hasanxon va kallar yetib kelib, yov qo‘shinini tor-mor etishadi, zolim Qoraxonni o‘ldirishadi. Shirvon taxtiga Aynoq kal o‘tiradi. Hasanxon, Ravshanbek va Zulxumor Chambilga qaytishadi. Go‘ro‘g‘libek katta to‘y-tomosha qilib, ikki yoshni murod-maqsadiga yetkazadi.",
+  "characters": "Ravshanbek — Hasanxonning o‘g‘li, mard, oriyatli, sevgi va g‘urur yo‘lida har qanday qiyinchilikka tayyor yosh bahodir. Zulxumor — Shirvon podshosi Qoraxonning qizi, vafodor va oqila suluv. Hasanxon — Ravshanning otasi, farzandi uchun jonini fido qilishga tayyor, jasur va tengsiz polvon. Go‘ro‘g‘libek — Chambil elining donishmand va adolatli xoni. Avazxon — Go‘ro‘g‘lining asrandi o‘g‘li, manmanlik qilib qarindoshlik rishtasini buzgan qahramon. Aynoq, Jaynoq, Ersak, Tersak — Ravshan va Hasanga jangga yordam bergan jasur kallar.",
+  "conclusion": "Asar haqiqiy muhabbat va sadoqat har qanday to‘siqlarni yengishini ko‘rsatadi. Ota-ona farzandi uchun har qanday xatarga tayyor turishi, farzand esa el-yurt sha'ni va o‘z e'tiqodini sotmasligi kerakligi ta'kidlanadi. Bola kitobdan mardlik, sabr-toqat hamda va'daga vafo qilish kabi insoniy fazilatlarni o‘rganadi.",
+  "difficulty": "o‘rta",
+  "mood": "mardanavor, hayajonli, ko‘tarinki",
+  "for_whom": "Xalq dostonlariga, bahodirlik va sadoqat haqidagi sarguzashtli asarlarga qiziqadigan o‘quvchilar uchun.",
+  "events": [
+   "Go‘ro‘g‘libek Hasanxon va Avazxonni asrab olib, tarbiyalab ulg‘aytiradi.",
+   "Hasanxondan Ravshanbek, Avazxondan Gulanor dunyoga keladi.",
+   "Go‘ro‘g‘libek Ravshanbekni Gulanorga fotiha qilish uchun Avazxonnikiga sovchilikka boradi.",
+   "Avazxon manmanlik qilib, Go‘ro‘g‘lining taklifini rad etadi va Hasanni o‘ziga teng ko‘rmaydi.",
+   "Ravshanbek bu sovuq gaplarni eshitib, qattiq xafa bo‘ladi va yig‘laydi.",
+   "Og‘a Yunus pari Ravshanga Zulxumorning rasmi tushirilgan xosiyatli uzukni beradi.",
+   "Ravshanbek g‘oyibona oshiq bo‘lib, Jiyronqush otini minib Shirvon eliga yo‘l oladi.",
+   "Hasanxon o‘g‘lini yo‘ldan qaytara olmay, unga oq fotiha beradi.",
+   "Ravshanbek Shirvonga yetib kelib, bir kampirning uyida mehmon bo‘ladi va o‘zini yetim deb aldaydi.",
+   "Ravshanbek bozorda zarrin qalpoqlar sotib o‘tirgan Zulxumorning jamolini ko‘radi.",
+   "Ravshanbek Zulxumorning bog‘iga yashirincha kirib, qiz bilan uchrashadi.",
+   "G‘aflatda uxlab qolgan Ravshanbekni Qoraxonning mirg‘azablari ushlab zindonga tashlashadi.",
+   "Zulxumor sevgilisini qutqarish uchun elchi mayna orqali Chambilga xat yuboradi.",
+   "Mayna keltirgan xatni Xon Dalli ko‘rib, Hasanxonga xabar beradi.",
+   "Hasanxon G‘irko‘k otini minib, yolg‘iz o‘zi Shirvonga otlanadi.",
+   "Yo‘lda Hasanxonga Aynoq, Jaynoq, Ersak va Tersak degan to‘rt kal yordamchi bo‘lib qo‘shiladi.",
+   "Shirvonda Ravshanni dorda qatl etish soatida Qoraxon unga dinini o‘zgartirishni taklif qiladi, lekin Ravshan rad etadi.",
+   "Dorda turgan Ravshanbek otasi Hasanxon kelganini ko‘rib quvonadi.",
+   "Hasanxon va to‘rt kal dushman qo‘shiniga tashlanib, ularni tor-mor etishadi.",
+   "Hasanxon Qoraxonni nayza bilan urib o‘ldiradi va elga omonlik beradi.",
+   "Shirvon taxtiga Aynoq kal podsho qilib tayinlanadi.",
+   "Hasanxon, Ravshanbek va Zulxumor g‘alaba bilan Chambilga qaytib kelishadi.",
+   "Go‘ro‘g‘libek Chambilda katta to‘y berib, Ravshan va Zulxumorni qovushtiradi."
+  ],
+  "quotes": [
+   "Go‘ro‘g‘libekka xudo farzand bermadi, oti o‘chmadi.",
+   "Odam qarisa, ayniydi, der edi, rost ekan.",
+   "Avazning qizidan yaxshini olmasam, vallamatim, menga Chambil haromdir.",
+   "Sen aytgan odaming, zolim, men emas, bir nechalar o‘z holini chengamas!",
+   "Tor zindonda mening yig‘laganimni bilib, otam kelgan ekan, ming shukur."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘libek Hasanxon va Avazxonni kim deb tarbiya qildi?",
+   "options": [
+    "A) O‘z o‘g‘lim deb",
+    "B) Qo‘shnimning bolasi deb",
+    "C) Asrandi xizmatkor deb",
+    "D) Begona mehmon deb"
+   ],
+   "answer": "A) O‘z o‘g‘lim deb"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ravshanbek kimning o‘g‘li edi?",
+   "options": [
+    "A) Avazxonning",
+    "B) Hasanxonning",
+    "C) Go‘ro‘g‘lining",
+    "D) Qoraxonning"
+   ],
+   "answer": "B) Hasanxonning"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘libek kimning uyiga sovchilikka bordi?",
+   "options": [
+    "A) Qoraxonning uyiga",
+    "B) Avazxonning uyiga",
+    "C) Hasanxonning uyiga",
+    "D) Kampirning uyiga"
+   ],
+   "answer": "B) Avazxonning uyiga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Og‘a Yunus pari Ravshanga nima berdi?",
+   "options": [
+    "A) Xosiyatli uzuk",
+    "B) Oltin qilich",
+    "C) Zarrin chopon",
+    "D) Uchqur ot"
+   ],
+   "answer": "A) Xosiyatli uzuk"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Avazxonning rad javobidan keyin voqealar qanday kechdi?",
+   "options": [
+    "A) Yig‘i, uzuk olish, yo‘lga chiqish",
+    "B) To‘y, qochish, zindonga tushish",
+    "C) Urush, to‘y, uzuk berish",
+    "D) Safar, to‘y, yig‘i"
+   ],
+   "answer": "A) Yig‘i, uzuk olish, yo‘lga chiqish"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Avazxon nima uchun qizini Ravshanga berishni xohlamadi?",
+   "options": [
+    "A) Manmanlik va kibr qilgani uchun",
+    "B) Ravshan o‘qishni bilmagani uchun",
+    "C) Go‘ro‘g‘li kelmagani uchun",
+    "D) Gulanor boshqani sevgani uchun"
+   ],
+   "answer": "A) Manmanlik va kibr qilgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ravshan nima uchun Shirvon eliga yo‘l oldi?",
+   "options": [
+    "A) Zulxumorning ishqiga erishish uchun",
+    "B) Avazxon bilan urushish uchun",
+    "C) Bobosining amrini bajarish uchun",
+    "D) Savdo-sotiq qilish uchun"
+   ],
+   "answer": "A) Zulxumorning ishqiga erishish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Avazxonning Go‘ro‘g‘liga qarshi aytgan gaplarini qanday baholaysan?",
+   "options": [
+    "A) Kattaga hurmatsizlik va odobsizlik",
+    "B) Oqilona va to‘g‘ri qaror",
+    "C) Kattalarga sadoqat ko‘rsatish",
+    "D) Kamtarinlik va hayo belgisi"
+   ],
+   "answer": "A) Kattaga hurmatsizlik va odobsizlik"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Jiyronqushni «qarchig‘ayning havosi tekkan» deb nimani ko‘rsatgan?",
+   "options": [
+    "A) Otning chaqqon va uchqurligini",
+    "B) Otning qushday kichikligini",
+    "C) Otning og‘ir va sekinligini",
+    "D) Otning faqat uchishini"
+   ],
+   "answer": "A) Otning chaqqon va uchqurligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Qizi borning nozi bor» iborasi matnda qanday ma'noda kelgan?",
+   "options": [
+    "A) Qiz tomonning erka-taltayishida",
+    "B) Qizning mutlaqo yo‘qligida",
+    "C) O‘g‘il bolalar erkaligida",
+    "D) Sovchilarning ko‘pligida"
+   ],
+   "answer": "A) Qiz tomonning erka-taltayishida"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ravshanbek Shirvonga yetib kelgach, kimnikida to‘xtadi?",
+   "options": [
+    "A) Kampirning uyida",
+    "B) Qoraxon saroyida",
+    "C) Aynoq kalnikida",
+    "D) Avazxon o‘rdasida"
+   ],
+   "answer": "A) Kampirning uyida"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ravshanbek kampirga o‘zini kim deb tanishtirdi?",
+   "options": [
+    "A) Bevatan yetim deb",
+    "B) Chambilning bekiman deb",
+    "C) Qoraxonning o‘g‘liman deb",
+    "D) Boy savdogarman deb"
+   ],
+   "answer": "A) Bevatan yetim deb"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zulxumor oyim bozorda nima sotardi?",
+   "options": [
+    "A) Zarrin qalpoqlar",
+    "B) Mevalar va sabzavotlar",
+    "C) Ot abzal-anjomlari",
+    "D) Ip va gazlamalar"
+   ],
+   "answer": "A) Zarrin qalpoqlar"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zulxumorning bog‘ida Ravshanni kimlar ushlab oldi?",
+   "options": [
+    "A) Qoraxonning mirg‘azablari",
+    "B) Chambil yigitlari",
+    "C) To‘rt kal jo‘ralar",
+    "D) Avazxon navkarlari"
+   ],
+   "answer": "A) Qoraxonning mirg‘azablari"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ravshanning Shirvondagi harakatlarini tartib bo‘yicha ko‘rsating.",
+   "options": [
+    "A) Kampirnikiga borish, bozor, bog‘",
+    "B) Bog‘, zindon, kampirnikiga borish",
+    "C) Zindon, bozor, kampirnikiga borish",
+    "D) Bozor, zindon, kampirnikiga borish"
+   ],
+   "answer": "A) Kampirnikiga borish, bozor, bog‘"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ravshanbek kampirga nima uchun o‘zining kimligini birdan aytmadi?",
+   "options": [
+    "A) Ehtiyotkorlik va hushyorlik yuzasidan",
+    "B) Kampirni qo‘rqitib yubormaslik uchun",
+    "C) O‘z otini unutib qo‘ygani uchun",
+    "D) Kampir unga inanmagani uchun"
+   ],
+   "answer": "A) Ehtiyotkorlik va hushyorlik yuzasidan"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Zulxumor Ravshanni qutqarish uchun nima sababdan maynani tanladi?",
+   "options": [
+    "A) Mayna tez va esli bo‘lgani uchun",
+    "B) Boshqa hech qanday qush bo‘lmagani uchun",
+    "C) Mayna gapirishni bilgani uchun",
+    "D) Otda xabar yuborish imkonsizligi uchun"
+   ],
+   "answer": "A) Mayna tez va esli bo‘lgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ravshanning dushman qo‘liga tushishiga asosiy sabab nima?",
+   "options": [
+    "A) G‘aflatda uxlab qolgani",
+    "B) Qilichini uyda unutgani",
+    "C) Otining charchab qolgani",
+    "D) Zulxumorning xiyonat qilgani"
+   ],
+   "answer": "A) G‘aflatda uxlab qolgani"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zulxumorning Ravshanga ko‘rsatgan sadoqatini qanday baholaysan?",
+   "options": [
+    "A) Haqiqiy va vafodor sevgi",
+    "B) Vaqtinchalik va o‘tkinchi tuyg‘u",
+    "C) Qo‘rqinch va majburiyat",
+    "D) Otasiga qarshi xiyonat"
+   ],
+   "answer": "A) Haqiqiy va vafodor sevgi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Zulxumorning maynaga qilgan murojaatidagi «suxanvar» so‘zi nimani anglatadi?",
+   "options": [
+    "A) Shirin so‘zli va esli",
+    "B) Tez uchuvchi va chaqqon",
+    "C) Chiroyli patli va mitti",
+    "D) Ovozli va vahimali"
+   ],
+   "answer": "A) Shirin so‘zli va esli"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mayna keltirgan xabarni Chambilda kim birinchi ko‘rdi?",
+   "options": [
+    "A) Xon Dalli",
+    "B) Go‘ro‘g‘libek",
+    "C) Avazxon",
+    "D) Og‘a Yunus"
+   ],
+   "answer": "A) Xon Dalli"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hasanxon Shirvonga qaysi otni minib yo‘lga chiqdi?",
+   "options": [
+    "A) G‘irko‘k otini",
+    "B) Jiyronqush otini",
+    "C) Boychibor otini",
+    "D) Duldul otini"
+   ],
+   "answer": "A) G‘irko‘k otini"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hasanxonga Shirvonda kimlar yordamchi bo‘ldi?",
+   "options": [
+    "A) To‘rt kal jo‘ra",
+    "B) Avazxon yigitlari",
+    "C) Qoraxon vazirlari",
+    "D) Chambil qirq yigiti"
+   ],
+   "answer": "A) To‘rt kal jo‘ra"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shirvonda g‘alabadan keyin taxtga kim o‘tirdi?",
+   "options": [
+    "A) Aynoq kal",
+    "B) Hasanxon",
+    "C) Ravshanbek",
+    "D) Avazxon"
+   ],
+   "answer": "A) Aynoq kal"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shirvondagi hal qiluvchi jang epizodlarini tartiblang.",
+   "options": [
+    "A) Hasan kelishi, jang, Aynoq podsho bo‘lishi",
+    "B) Aynoq podsho bo‘lishi, jang, Hasan kelishi",
+    "C) Jang, Hasan kelishi, to‘y bo‘lishi",
+    "D) To‘y, Aynoq podsho bo‘lishi, jang"
+   ],
+   "answer": "A) Hasan kelishi, jang, Aynoq podsho bo‘lishi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar oxirida sodir bo‘lgan voqealar ketma-ketligi qaysi?",
+   "options": [
+    "A) G‘alaba, Shirvonda to‘y, Chambilga qaytish",
+    "B) Chambilga qaytish, g‘alaba, zindon",
+    "C) Zindon, Chambilga qaytish, g‘alaba",
+    "D) Shirvonda to‘y, zindon, g‘alaba"
+   ],
+   "answer": "A) G‘alaba, Shirvonda to‘y, Chambilga qaytish"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qoraxon nima uchun Ravshanga o‘z dinini qabul qilishni taklif qildi?",
+   "options": [
+    "A) Ravshanni o‘ziga bo‘ysundirish uchun",
+    "B) Ravshanning otasini yaxshi ko‘rgani uchun",
+    "C) Ravshan juda boy bo‘lgani uchun",
+    "D) Chambilni tinchlantirish uchun"
+   ],
+   "answer": "A) Ravshanni o‘ziga bo‘ysundirish uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ravshan o‘lim xavfi ostida ham dinini va elini sotmadi, bu nimani ko‘rsatadi?",
+   "options": [
+    "A) Bukulmas iroda va mardlikni",
+    "B) Manmanlik va ahmoqlikni",
+    "C) Qoraxonga bo‘lgan nafratni",
+    "D) Otasining g‘azabidan qo‘rqishni"
+   ],
+   "answer": "A) Bukulmas iroda va mardlikni"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Hasanxonning o‘g‘li uchun jangga kirishi ota sifatida qanday saboq beradi?",
+   "options": [
+    "A) Ota farzand uchun jonini fido qiladi",
+    "B) Ota o‘g‘lining ishiga aralashmasligi kerak",
+    "C) Ota faqat otini o‘ylashi kerak",
+    "D) Ota faqat yurtida o‘tirishi kerak"
+   ],
+   "answer": "A) Ota farzand uchun jonini fido qiladi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Ravshan ozod bo‘lgan ekan, ming shukur» jumlasi qanday tuyg‘uni ifodalaydi?",
+   "options": [
+    "A) Qutulish shodligi va shukronalikni",
+    "B) Dushmandan qo‘rqish va xavotirni",
+    "C) G‘am-anduh va umidsizlikni",
+    "D) Kibr va mag‘rurlikni"
+   ],
+   "answer": "A) Qutulish shodligi va shukronalikni"
+  }
+ ]
+}

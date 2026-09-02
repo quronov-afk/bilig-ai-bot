@@ -1,0 +1,338 @@
+{
+ "title": "Malika Husnobod",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "ertak",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12",
+  "topics": [
+   "jasorat",
+   "adolat",
+   "mehnatsevarlik",
+   "kechirimlilik",
+   "oqibat"
+  ],
+  "theme": "Asar adolat, mehnatsevarlik, sabr va kechirimlilik g‘oyasini ilgari suradi. Inson halol mehnat va oqillik orqali har qanday qiyinchilikni yengib, murod-maqsadiga yetishi ko‘rsatiladi.",
+  "summary": "Zolim podshoh bir kuni taxti tepasidagi qarg‘aning qag‘illashiga tushunmay, to‘rt yuz ulamoni qatl etmoqchi bo‘ladi. Podshohning qizi Malikai Husnobod jumboqni yechib, ulamolarni o‘limdan saqlab qoladi. Biroid, qizning «erni bor qiladigan ham, yo‘q qiladigan ham xotin» degan gapi otasiga yoqmaydi va u qizini zindonga tashlaydi. Mehribon vazir qizni zindondan qutqarib, sandiqqa solib daryoga oqizib yuboradi.\n\nSandiq uch oy oqib, boshqa bir mamlakatga boradi. Sandiqni topgan o‘tinchi chol uni shaharga olib boradi. Yo‘lda podshoh cholni o‘ldirib, sandiqni saroyga keltirib ochadi. Malikaning husniga oshiq bo‘lib, uylanmoqchi bo‘ladi. Qiz bir kunlik muhlat olib, bog‘dagi daryoga o‘zini tashlaydi va uni katta jayxun baliq yutib ketadi.\n\nBaliqchi to‘riga tushgan ushbu baliqni bir podachining o‘g‘li uyiga olib keladi. Baliqning qornidan qiz eshon-omonsiz chiqadi. Malika podachining mehnatkash o‘g‘liga turmushga chiqadi. U o‘zining baldoqlarini sotdirib, katta boylik to‘playdi va o‘n besh kunda yangi va muazzam Husnobod shahrini bino ettiradi. Shaharga kelib zo‘ravonlik qilmoqchi bo‘lgan ikki zolim podshohni ham zindonga tashlaydi.\n\nSo‘ngra Malika yetti lak lashkar yig‘ib, o‘zining ota yurtiga yo‘l oladi. Zolim otasi tush ko‘rib, dushman xavfidan qo‘rqib qoladi. Sadoqatli vazir elchi bo‘lib Husnobod huzuriga keladi va qizini tanib oladi. Malika ota yurtiga kirib boradi, somonxonaga yashiringan zolim otasini kechiradi. Podachi yigitni podshoh qilib taxtga o‘tqazadi va mamlakatda adolat o‘rnatadi.",
+  "characters": "Malikai Husnobod — aqlli, jasur va adolatli malika, qiyinchiliklardan qrqmaydi va mehnatkash yigitga turmushga chiqadi.\nZolim podshoh — qizning otasi, shafqatsiz va mag‘rur hukmdor, oxirida qilgan ishidan pushaymon bo‘ladi.\nMehribon vazir — adolatparvar, qizni o‘limdan saqlab sandiqda daryoga oqizgan va keyinchalik elchi bo‘lgan oqil inson.\nPodachi yigit — kamtarin, mehnatsevar va halol yigit, Malikaning turmush o‘rtog‘i va yangi podshoh.\nPodachi chol — podachi yigitning otasi, mehmondo‘st va halol mehnat bilan kun kechiruvchi keksa kishi.",
+  "conclusion": "Ertak bolaga har qanday vaziyatda ham aql, sabr va halollik bilan to‘g‘ri yo‘l topish mumkinligini o‘rgatadi. Manmanlik va zolimlik insonni tanazzulga yetaklashini, kamtarlik va mehnatsevarlik esa yuksaltirishini ko‘rsatadi. Shuningdek, kattalarga nisbatan kechirimli bo‘lish hamda adolatni ustun qo‘yish kabi fazilatlarni shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, ta'sirchan, ibratli",
+  "for_whom": "Ertaklar, sarguzashtlar va adolat o‘rnatish haqidagi voqealarga qiziqadigan, to‘g‘ri va halol yashashni xohlaydigan bolalar uchun.",
+  "events": [
+   "Zolim podshoh qarg‘aning qag‘illashini tushunmagani uchun to‘rt yuz ulamoni qatl etmoqchi bo‘ldi.",
+   "Malikai Husnobod jumboqni yechib, to‘rt yuz ulamoning jonini saqlab qoldi.",
+   "Podshoh g‘azablanib, o‘z qizini yetti yilga zindonga tashladi.",
+   "Mehribon vazir qizni zindondan yashirincha qutqarib, sandiqda daryoga oqizdi.",
+   "Sandiqni daryodan tutib olgan o‘tinchi cholni zolim podshoh o‘ldirdi va sandiqni saroyga olib ketdi.",
+   "Malika podshohdan bir kunga javob olib, daryoga sakradi va uni jayxun baliq yutib ketadi.",
+   "Podachi bola baliqchilar to‘riga tushgan katta baliqni uyiga olib bordi.",
+   "Podachi chol baliqning qornini yorganida, ichidan tirik Malika chiqdi.",
+   "Malika podachining halol va mehnatkash o‘g‘liga o‘z xohishi bilan turmushga chiqdi.",
+   "Malika o‘zining baldoqlarini sotdirib, topilgan oltinlar bilan uy-ro‘zg‘orni butladi.",
+   "Malika ko‘plab ustalar to‘plab, o‘n besh kunda Husnobod shahrini bino qildirdi.",
+   "Jurjon podshohi kelib malikaga zo‘ravonlik qilmoqchi bo‘lgach, zindonga tashlandi.",
+   "Bir kunga muhlat bergan podshoh ham qalandar kiyimi bilan kelib, zindonga tushdi.",
+   "Malika yetti lak lashkar to‘plab, ota yurtiga tomon yo‘lga chiqdi.",
+   "Malikaning otasi vahimali tush ko‘rib, tush ta'birini aytgan vazirini zindonga soldirdi.",
+   "Husnobod elchi bo‘lib kelgan mehribon vazir bilan ko‘rishib, uni tanidi.",
+   "Malika ota yurtiga kirib, somonxonada yashiringan otasini topdi.",
+   "Malika otasining gunohidan o‘tib, uni o‘limdan saqlab qoldi.",
+   "Podachi yigit taxtga o‘tkazilib, podshoh deb e'lon qilindi.",
+   "Malika eri bilan barcha zindondagilarni ozod qilib, adolatli umr kechirdi."
+  ],
+  "quotes": [
+   "Erni bor qiladigan ham xotin, yo‘q qiladigan ham xotin.",
+   "Podshoh qilichidan o‘lganingdan ko‘ra, sahroda cho‘pon bo‘lib yurganing yaxshi.",
+   "Men bir kambag‘alga tegib, uni podshoh qilib, zolim otamning tepasiga lashkar tortib borib, uning taxtini ko‘kka sovuraman.",
+   "Mening joyim yo‘q.",
+   "Bu yurtning nomi Husnobod. Har kimga oshlik-nonlik kerak bo‘lsa, kelib xizmat qilsin.",
+   "Kishi o‘z farzandidan ham qo‘rqadimi?",
+   "Har nechuk bo‘lsa ham otam qilgan gunohiga tavba qildi, o‘lmasin."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Podshoh nechta ulamoning boshini kesmoqchi bo‘ldi?",
+   "options": [
+    "A) Yetti yuz kishining",
+    "B) To‘rt yuz kishining",
+    "C) Qirq kishining",
+    "D) Yuz kishining"
+   ],
+   "answer": "B) To‘rt yuz kishining"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Malika Husnobod jumboqni kim uchun yechib berdi?",
+   "options": [
+    "A) Ulamolarni qutqarish uchun",
+    "B) O‘ziga oltin olish uchun",
+    "C) Vazirlarni sinash uchun",
+    "D) Shaharni tark etish uchun"
+   ],
+   "answer": "A) Ulamolarni qutqarish uchun"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vazir Malikani daryoga oqizishdan oldin nima tayyorladi?",
+   "options": [
+    "A) Mustahkam sandiq va ovqat",
+    "B) Katta kema va otlar",
+    "C) Oltin kalit va qilich",
+    "D) Qirqta navkarlik kiyim"
+   ],
+   "answer": "A) Mustahkam sandiq va ovqat"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Malika sandiqda oqib yurganida vaqtni qanday o‘tkazdi?",
+   "options": [
+    "A) Bir kunlik ovqatni to‘rt kunga yetkazdi",
+    "B) Hamma ovqatni bir kunda yeb tugatdi",
+    "C) Sandiqni ichidan buzishga harakat qildi",
+    "D) Suvdan baliq tutib yedi"
+   ],
+   "answer": "A) Bir kunlik ovqatni to‘rt kunga yetkazdi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega vazir Malikani zindondan yashirincha qutqarib oldi?",
+   "options": [
+    "A) Qizga rahmi kelgani uchun",
+    "B) Podshohdan pul olgani uchun",
+    "C) Qiz uni chaqirgani uchun",
+    "D) Boshqa yurtga ko‘chmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Qizga rahmi kelgani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Malika podshoh bog‘ida o‘zini daryoga tashladi?",
+   "options": [
+    "A) Zolim podshohga tegmaslik ahdi uchun",
+    "B) Cho‘milishni juda xohlagani uchun",
+    "C) Baliq tutmoqchi bo‘lgani uchun",
+    "D) Qizlar bilan o‘ynash uchun"
+   ],
+   "answer": "A) Zolim podshohga tegmaslik ahdi uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Vazirning Malikani daryoga oqizib saqlab qolishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, o‘limdan saqlab qoldi",
+    "B) Noto‘g‘ri, uni zindonda qoldirish kerak edi",
+    "C) Noto‘g‘ri, podshohga aytishi kerak edi",
+    "D) To‘g‘ri, lekin oltin olishi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, o‘limdan saqlab qoldi"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Baliqchilar to‘riga tushgan baliqni kim uyiga olib bordi?",
+   "options": [
+    "A) Podachi bola",
+    "B) O‘tinchi chol",
+    "C) Zolim podshoh",
+    "D) Karvonboshi"
+   ],
+   "answer": "A) Podachi bola"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Malika podachi cholga sotish uchun nimasini berdi?",
+   "options": [
+    "A) Qulog‘idagi baldoqlarini",
+    "B) Qo‘lidagi uzuklarini",
+    "C) Boshidagi tojini",
+    "D) Ustidagi shohi to‘nini"
+   ],
+   "answer": "A) Qulog‘idagi baldoqlarini"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yangi qurilgan shahar qanday nomlandi?",
+   "options": [
+    "A) Husnobod",
+    "B) Jurjon",
+    "C) Guliston",
+    "D) Zarafshon"
+   ],
+   "answer": "A) Husnobod"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Malika Husnobod shahrini qurish uchun nimalar qildi?",
+   "options": [
+    "A) Oltin berib devolzon ustalarni to‘pladi",
+    "B) Otasidan qo‘shin so‘rab oldi",
+    "C) Boshqa podshohdan shahar so‘radi",
+    "D) O‘z xazinasini daryodan topdi"
+   ],
+   "answer": "A) Oltin berib devolzon ustalarni to‘pladi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Malika aynan podachining o‘g‘liga uzatilishini so‘radi?",
+   "options": [
+    "A) Kambag‘al va mehnatkash bo‘lgani uchun",
+    "B) U juda boy bo‘lgani uchun",
+    "C) Otasiga jahli chiqqani uchun",
+    "D) Podachilikni yaxshi ko‘rgani uchun"
+   ],
+   "answer": "A) Kambag‘al va mehnatkash bo‘lgani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Jurjon podshohi zindonga tashlandi?",
+   "options": [
+    "A) Malikaga zo‘ravonlik va beodoblik qilgani uchun",
+    "B) Shahardan qochib ketgani uchun",
+    "C) Podachi cholni xafa qilgani uchun",
+    "D) Darvozani buzgani uchun"
+   ],
+   "answer": "A) Malikaga zo‘ravonlik va beodoblik qilgani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif cholning «Mening joyim yo‘q» deyishini qanday tasvirlagan?",
+   "options": [
+    "A) Oltinlarini tortib olishlaridan qo‘rqqanini ko‘rsatgan",
+    "B) Cholning rostdan uyi yo‘qligini aytgan",
+    "C) Chol savdogarni yoqtirib qolganini ko‘rsatgan",
+    "D) Chol adashib qolganini ko‘rsatgan"
+   ],
+   "answer": "A) Oltinlarini tortib olishlaridan qo‘rqqanini ko‘rsatgan"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Malikaning otasi tushida nimani ko‘rdi?",
+   "options": [
+    "A) Burgut uni ko‘tarib uchganini",
+    "B) Ajdarho shaharga kelganini",
+    "C) Daryoda kema cho‘kkanini",
+    "D) Oltin tola to‘kilganini"
+   ],
+   "answer": "A) Burgut uni ko‘tarib uchganini"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zolim podshoh lashkar kelganda qayerga yashirinib oldi?",
+   "options": [
+    "A) Somonxonadagi oxur ichiga",
+    "B) Saroyning yerto‘lasiga",
+    "C) Daryoning bo‘yiga",
+    "D) Zindonning burchagiga"
+   ],
+   "answer": "A) Somonxonadagi oxur ichiga"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ota yurtida adolat qanday qaror topdi?",
+   "options": [
+    "A) Podachi yigit taxtga o‘tqazildi",
+    "B) Barcha xalq shaharni tark etdi",
+    "C) Zolim podshoh qayta taxtga o‘tirdi",
+    "D) Shahar boshqa yurtga berildi"
+   ],
+   "answer": "A) Podachi yigit taxtga o‘tqazildi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Malika erining otasini o‘ldirishiga yo‘l qo‘ymadi?",
+   "options": [
+    "A) Otasi tavba qilgani va otalik haqqi uchun",
+    "B) Otasi ko‘p oltin bergani uchun",
+    "C) Qilich o‘tkir bo‘lmagani uchun",
+    "D) Otasi yana podshoh bo‘lishi uchun"
+   ],
+   "answer": "A) Otasi tavba qilgani va otalik haqqi uchun"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Malikaning o‘z otasini kechirishi uning qaysi fazilatini ko‘rsatadi?",
+   "options": [
+    "A) Olijanoblik va kechirimlilikni",
+    "B) Qo‘rqoqlik va ojizlikni",
+    "C) Loqaydlik va beparvolikni",
+    "D) Shoshqaloqlikni"
+   ],
+   "answer": "A) Olijanoblik va kechirimlilikni"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Ertak oxiridagi «murod-maqsadiga yetdi» iborasi kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Adolat va ezgulik g‘alabasidan quvonch",
+    "B) Qahramonlarga nisbatan achinish",
+    "C) Kelajakdan qo‘rquv tuyg‘usi",
+    "D) Zolim podshohga hamdarlik"
+   ],
+   "answer": "A) Adolat va ezgulik g‘alabasidan quvonch"
+  }
+ ]
+}

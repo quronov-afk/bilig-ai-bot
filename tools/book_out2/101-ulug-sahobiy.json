@@ -1,0 +1,80 @@
+{
+ "title": "101 ulug‘ sahobiy",
+ "author": "Moturidiy markazi",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tarix",
+   "odob",
+   "ilm",
+   "sabr",
+   "fidoyilik",
+   "shaxsiyat"
+  ],
+  "theme": "Ushbu kitob Islom tarixida o‘chmas iz qoldirgan 101 nafar mashhur sahobiy hamda sahobiya ayollarning hayoti, e'tiqodi, axloqi, ilm va jamiyat rivojiga qo‘shgan ulkan hissasi haqida qomusiy ma'lumot beradi.",
+  "summary": "Kitob muqaddimasida sahobiylarning Islom tarixidagi va ma'naviy tarbiyadagi o‘rni haqida atroflicha so‘z yuritiladi. Unda sahobiylarning Qur'on va Sunnatni keyingi avlodlarga yetkazishdagi fidoyiligi, ularning hayoti komil insonni tarbiyalashda namuna ekani ta'kidlanadi. Asarda «sahobiy» tushunchasining lug‘aviy va istilohiy ma'nolari tahlil qilinadi. Muhaddislar, faqihlar hamda usulchi olimlarning ushbu atamaga bergan ta'riflari keltirilib, ularning eng ishonchli jihatlari ko‘rsatiladi. Shuningdek, sahobiylarni aniqlash mezonlari hamda ularning martabalari xususida ma'lumot beriladi. Kitobning asosiy qismida 101 nafar mashhur sahobiy va sahobiya ayollarning tarjimai holi xronologik va alifbo tartibida taqdim etiladi. Birinchi navbatda, to‘rt roshid xalifa — Abu Bakr Siddiq, Umar ibn Xattob, Usmon ibn Affon va Ali ibn Abu Tolib roziyallohu anhularning hayoti, davlat boshqaruvi, adolatli islohotlari va Islom jamiyatiga qo‘shgan hissasi yoritiladi. Qolgan 76 nafar erkak sahobiy alifbo tartibida joylashtirilgan bo‘lib, ularning nasabi, Islomni qabul qilish tarixi, g‘azotlardagi ishtiroki, ilm va fiqhdagi o‘rni, shuningdek, vafot etgan joylari hamda hikmatli so‘zlari keltiriladi. Shuningdek, kitobda 21 nafar sahobiya ayol, jumladan, mo‘minlarning onalari, Payg‘ambar alayhissalomning qizlari va boshqa mashhur muslima ayollarning ma'naviy matanati bayon qilingan. Kitob yakunida tarixiy atamalar, voqealar va nomlar izohlangan keng ko‘lamli lug‘at berilgan. Bu lug‘at o‘quvchiga o‘sha davrdagi ijtimoiy-siyosiy hamda diniy muhitni, harbiy yurishlarni va geografik joylarni chuqurroq anglashga yordam beradi. Umuman olganda, asar tarixiy manbalarga tayangan holda sahobiylar hayotini qomusiy tarzda bayon qiladi.",
+  "characters": "Abu Bakr Siddiq, Umar ibn Xattob, Usmon ibn Affon, Ali ibn Abu Tolib, Xadicha bintu Xuvaylid, Oisha bintu Abu Bakr, Fotima bintu Muhammad",
+  "conclusion": "Ushbu kitobni o‘qigan o‘quvchi tarixdagi buyuk shaxslarning hayot yo‘li, ularning qiyinchiliklar qarshisida ko‘rsatgan sabri hamda ilmga bo‘lgan intilishi haqida bilimlarga ega bo‘ladi. Kitobdagi ibratli voqealar insoniy fazilatlarni, o‘zaro hurmat va sadoqatni anglashga ko‘maklashadi. O‘smirlar hayotda to‘g‘ri qarorlar qabul qilishda teran fikrlash hamda zamon bilan hamnafas yashashning muhimligini tushunib yetadilar.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, ma'rifiy, nasihatomuz",
+  "for_whom": "Tarix, Islom madaniyati hamda buyuk shaxslar hayotiga qiziquvchi 14 yoshdan katta o‘smirlar va keng kitobxonlar ommasi.",
+  "events": [
+   "Kitob so‘zboshisida sahobiylarning Islom tarixidagi o‘rni hamda komil inson tarbiyasidagi ahamiyati bayon etiladi.",
+   "Sahobiy atamasiga turli islomiy ilmlar va olimlar nuqtayi nazaridan berilgan ta'riflar keltiriladi.",
+   "Sahobiylarning jamiyatdagi hamda e'tiqoddagi martabalari va darajalari tushuntiriladi.",
+   "Qur'oni Karim va hadislarda bayon etilgan sahobiylarning ulkan fazilatlari yoritiladi.",
+   "Fiqh ilmining shakllanishida va tarqalishida faqih sahobiylarning tutgan o‘rni ko‘rsatib beriladi.",
+   "Sahobiylarning turli mezonlarga ko‘ra guruhlarga ajratilishi hamda ularning soni haqida ma'lumot beriladi.",
+   "Islom dinini birinchilardan bo‘lib qabul qilgan ilk sahobiylar hayoti yodga olinadi.",
+   "Sahobiylar davrida bo‘lib o‘tgan muhim g‘azot va janglar qisqacha bayon qilinadi.",
+   "Islom jamiyatida alohida o‘rin tutgan sahobiya ayollarning jasorati va fazilatlari haqida so‘z yuritiladi.",
+   "Eng so‘nggi vafot etgan sahobiylar va ularning Islom tarqalishidagi oxirgi xizmatlari sanab o‘tiladi.",
+   "Birinchi xalifa Abu Bakr Siddiqning hayoti, xalifalik davri va hikmatli so‘zlari keltiriladi.",
+   "Ikkinchi xalifa Umar ibn Xattobning davlat boshqaruvi va adolatli islohotlari yoritiladi.",
+   "Uchinchi xalifa Usmon ibn Affonning saxovati hamda Qur'onni jamlashdagi xizmatlari bayon etiladi.",
+   "To‘rtinchi xalifa Ali ibn Abu Tolibning ilmi, shijoati hamda purhikmat so‘zlari taqdim etiladi.",
+   "Kitob so‘ngida tarixiy voqealar, atamalar hamda atoqli nomlarning izohli lug‘ati beriladi."
+  ],
+  "quotes": [
+   "Islom olamida, xususan, yurtimizda komil insonni tarbiyalash masalasi doimo dolzarb hisoblangan.",
+   "Sahobiylar o‘z davrining eng peshqadam kishilari bo‘lib, barcha sohalarda ilg‘or bo‘lishga intilganlar.",
+   "Sahobiylarga ehtirom ko‘rsatish azaldan xalqimiz qon-qoniga singib ketganini tarix ham tasdiqlaydi.",
+   "Kim dunyoga muhabbatni tark qilsa, uni Alloh yaxshi ko‘radi, kim gunohlarni tark qilsa, uni farishtalar va musulmonlar yaxshi ko‘radi.",
+   "Dihya Kalbiy roziyallohu anhu Islom tarixida asosan ikki narsa bilan chuqur iz qoldirgan.",
+   "“Sahobiy” so‘zi arab tilida “suhbatdosh”, “safdosh”, “tarafdor”, “hamroh” kabi ma'nolarni anglatadi."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Sahobiylar o‘z davrining eng peshqadam kishilari bo‘lib, barcha sohalarda ilg‘or bo‘lishga intilganlar. Tarix kitoblarida dinni tushunishda sahobiylar voqelikni e'tiborga olishlari, teran fikrlab zamon va makon bilan hisoblashishlari, turli vaziyatni hisobga olib, unga munosib yechim topishlari qayd etilgan. Ularning bu jihatlari hozirgi ayrim fikri turg‘un shaxslarga ham o‘rnak bo‘la oladi.",
+   "question": "Ushbu parchada insondan zamon va sharoitni hisobga olib fikrlash talab etilishi haqida aytilgan. Sizningcha, kundalik hayotda yoki o‘qishda o‘zgaruvchan vaziyatlarga moslashib, to‘g‘ri qaror qabul qilish nima uchun muhim?"
+  },
+  {
+   "part": 1,
+   "context": "Qays ibn Sorma bir kuni bog‘da ko‘p ishlaganidan charchab, toliqib iftor mahali uxlab qoladi va yegulik yeyishga madori qolmaydi. Ertasiga tush mahali Qays ibn Sorma ishlab turgan joyida holsizlanib, hushidan ketadi. Bu hodisa Rasululloh alayhissalomga yetib bordi.",
+   "question": "Odamlar o‘z imkoniyatidan ortiqchasi bilan majburlanganda yoki qiyinchilikka duch kelganda atrofidagilar tomonidan ko‘rsatilgan yengillik va g‘amxo‘rlik inson hayotida qanday rol o‘ynaydi? O‘z hayotingizdan misol keltiring."
+  },
+  {
+   "part": 2,
+   "context": "Asmo roziyallohu anho. Abu Bakr Siddiqning Zubayr ibn Avvom roziyallohu anhuga uzatgan qizlari. Hijratdan so‘ng muhojirlar orasida tug‘ilgan birinchi chaqaloq Abdulloh ibn Zubayr roziyallohu anhuning onasi. Birinchilardan bo‘lib musulmon bo‘lgan, Madinaga hijrat qilgan. Hijrat kuni Rasululloh va Abu Bakrning yuklarini bog‘lashga arqon topilmaganida o‘z belbog‘ini ikkiga bo‘lib bergani uchun “Ikki belbog‘ sohibasi” (“Zotun-nitoqayn”) kunyasiga sazovor bo‘lgan.",
+   "question": "Kichik bo‘lsa-da, o‘z vaqtida va topqirlik bilan qilingan yordam inson hayotida qanday katta o‘zgarishlarga sabab bo‘lishi mumkin? O‘zingiz shunday vaziyatga duch kelganmisiz?"
+  },
+  {
+   "part": 2,
+   "context": "Mus'ab ibn Umayr roziyallohu anhu har qancha urinmasin, musulmonliginiyashirishiuzoqqacho‘zilmadi. Quraysh ayg‘oqchilaridan biri Usmon ibn Talha maxfiy ravishda Arqamning hovlisida kirib, Mus'abni u yerda musulmonlar bilan birga namoz o‘qiyotganini ko‘rgach, zudlik bilan bu xabarni yoyishga kirishdi. Eng avvalo, bu xabarni Mus'abning onasiga yetkazdi. Shundan so‘ng Mus'ab ibn Umayr roziyallohu anhuning hayotida sinovli kunlar boshlandi. Onasi unga boyligidan bir dirham ham bermay qo‘ydi.",
+   "question": "Inson o‘z e'tiqodi yoki qadriyatlari yo‘lida moddiy qulayliklar va boylikdan voz kechishga to‘g‘ri kelganda, unga nima kuch va matonat bag‘ishlaydi deb o‘ylaysiz?"
+  },
+  {
+   "part": 3,
+   "context": "Salamaning yolg‘iz o‘zi g‘animlarni anchagina tahlikaga solib, sarson qildi. Payg‘ambarimizning dushmanni orqasidan quvib borish haqidagi chaqiriqlariga birinchi bo‘lib Miqdod ibn Asvad “labbay” deb javob berdi. Rasululloh unga bayroqni tutqazib, “Sen odamlarni boshlab ketaver, men orqangdan yetib boraman”, dedilar.",
+   "question": "Xavf-xatar paytida mas'uliyatni o‘z zimmasiga olish va birinchilardan bo‘lib tashabbus ko‘rsatish insondan qanday shaxsiy fazilatlarni talab qiladi?"
+  }
+ ]
+}

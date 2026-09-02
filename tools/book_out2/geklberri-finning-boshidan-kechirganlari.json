@@ -1,0 +1,479 @@
+{
+ "title": "Geklberri Finning boshidan kechirganlari",
+ "author": "Mark Tven",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "10-14 yosh",
+  "topics": [
+   "do‘stlik",
+   "sarguzasht",
+   "bolalik",
+   "halollik",
+   "jasorat",
+   "mehnat"
+  ],
+  "theme": "Asarning asosiy g‘oyasi — bolalikning samimiy va beg‘ubor dunyosi, haqiqiy do‘stlik, adolat hamda halollikning har qanday qiyinchilik ustidan g‘alaba qozonishini ko‘rsatishdan iborat. Shuningdek, kattalarning qoliplarga tushgan hayotiga nisbatan bolalarcha sof dunyoqarash yutug‘i aks ettiriladi.",
+  "summary": "Tom Soyer — Sankt-Peterburg shaharchasida Polli xolasining qaramog‘ida yashaydigan sho‘x va quvnoq bola. U maktabga borishni yoqtirmaydi va doimo turli sho‘xliklar o‘ylab topadi. Bir kuni xolasi uni jazo sifatida devorni oqlashga majbur qiladi, ammo Tom topqirlik qilib, boshqa bolalarni bu ishni qilishga ko‘ndiradi va evaziga ularning o‘yinchoqlarini yig‘ib oladi.\n\nTom shaharchada paydo bo‘lgan Bekki Techer ismli qizga ko‘ngil qo‘yadi. U o‘zining uysiz va erkin o‘rtog‘i Geklberri Finn bilan tun yarmida qabristonga so‘gallardan qutulish ilinjida boradi. U yerda bolalar dahshatli qotillikka guvoh bo‘lishadi: hindi Jo shifokorni o‘ldirib, aybni bechora Meff Potterga ag‘daradi. Qo‘rqqan bolalar bu haqda hech kimga aytmaslikka qasam ichishadi.\n\nVijdon azobida qiynalgan Tom va Gek do‘sti Jo Garper bilan birga orolga qochib, qaroqchilik o‘ynashadi. Shahardagilar ularni daryoga cho‘kib o‘lgan deb o‘ylab, motam marosimi o‘tkazayotganida bolalar kutilmaganda paydo bo‘lishadi. Keyinchalik, Meff Potterning sudi bo‘layotganda Tom chidab tura olmaydi va sudda haqiqatni aytib, Meffni qutqaradi, hindi Jo esa qochib ketadi.\n\nKeyinroq Tom va Gek ko‘milgan xazinani qidirib, eski tashlandiq uyga boradilar hamda yashirinib yurgan hindi Joning katta oltin xazinani topib olganini ko‘rishadi. Tom bilan Bekki g‘orda adashib qolishadi, Tom qizni qutqarish uchun jasorat ko‘rsatadi va g‘ordan chiqish yo‘lini topadi. G‘or eshigi berkitilgach, hindi Jo g‘or ichida ochlikdan halok bo‘ladi. Tom va Gek g‘ordagi xazinani qo‘lga kiritib, boyib ketishadi. Gekni beva xotin Duglas o‘z qaramog‘iga oladi.",
+  "characters": "Tom Soyer — zakovatli, tasavvuri boy, sho‘x, ammo oqko‘ngil va mard bola; Polli xola — Tomning mehribon va kuanchak xolasi; Geklberri Finn — Tomning erkin va tartibsiz yashaydigan sadoqatli do‘sti; Bekki Techer — Tom yaxshi ko‘rgan aqlli va nozik qizcha; hindi Jo — shafqatsiz va qasoskor qotil; Meff Potter — sodda va beozor ichimlikboz odam.",
+  "conclusion": "Asar bolaga haqiqiy do‘stlik, qiyin vaziyatda aql va jasorat ko‘rsatish hamda har qanday holatda to‘g‘risini aytish (halollik) qanchalik muhimligini o‘rgatadi. Bola kitobdan sadoqat va adolat saboqlarini oladi.",
+  "difficulty": "o‘rta",
+  "mood": "kulgili, sarguzashtli, hayajonli",
+  "for_whom": "Sarguzashtlarni, qiziqarli voqealarni hamda do‘stlik va jasorat haqidagi kitoblarni sevadigan bolalar uchun.",
+  "events": [
+   "Tom Polli xolaning murabbosini o‘g‘irlab yeb, kaltakdan qutulish uchun qochib ketadi.",
+   "Polli xola Tomning yoqasidagi ip rangidan maktabdan qochganini bilib oladi.",
+   "Tom shaharchada yangi paydo bo‘lgan yaxshi kiyingan bola bilan mushtlashadi.",
+   "Jazo sifatidagi devor oqlash ishini Tom boshqa bolalarga qiziqarli o‘yin kabi ko‘rsatib bajaradi.",
+   "Tom yakshanba kungi maktabda bolalardan biletlarni ayirboshlab, Injil kitobini mukofotga oladi.",
+   "Tom maktabga yangi kelgan Bekki Techer ismli qizni ko‘rib, uni yoqtirib qoladi.",
+   "Tom va Geklberri Finn tunda o‘lik kalamush va so‘gallar haqida suhbatlashishadi.",
+   "Tom va Gek yarim kechasi qabristonga borib, hindi Joning shifokorni o‘ldirganiga guvoh bo‘lishadi.",
+   "Bolalar qabristondagi sirdan hech kimga gapirolmay, qon bilan qasam ichishadi.",
+   "Tom va Gek qamoqxonadagi Meff Potterga achinib, unga yordam berishni o‘ylashadi.",
+   "Tom sevgisi va xolasining dori berishlaridan bezib, mushuk Piterga dori ichiradi.",
+   "Tom, Gek va Jo Garper orolga qochib, qaroqchi bo‘lib yashay boshlashadi.",
+   "Tom tunda yashirincha uyiga kelib, xolasining motam tutayotganini ko‘radi.",
+   "Bolalar o‘zlarining motam marosimiga to‘satdan kirib kelib, hammani hayron qoldirishadi.",
+   "Tom maktabda Bekki yirtib qo‘ygan o‘qituvchining kitobi uchun aybni o‘z bo‘yniga oladi.",
+   "Meff Potterning sudi vaqtida Tom haqiqatni aytib, Meffni qutqaradi va hindi Jo qochadi.",
+   "Tom va Gek eski tashlandiq uyda yashirinib, hindi Jo oltin to‘la sandiqni topganini ko‘rishadi.",
+   "Geklberri Finn hindi Joning beva xotin Duglasga qilmoqchi bo‘lgan suiqasdidan xabar topib, uni qutqaradi.",
+   "Tom bilan Bekki ulkan g‘or ichida adashib qolishadi va bir necha kun azob chekishadi.",
+   "Tom g‘or ichida hindi Jo bilan kutilmaganda duch keladi hamda chiqish yo‘lini topadi.",
+   "G‘or eshigi qulflangach, hindi Jo g‘or ichida ochlikdan vafot etadi.",
+   "Tom va Gek g‘ordagi oltin xazinani olib chiqib, butun shaharchani hayratga solishadi."
+  ],
+  "quotes": [
+   "Kattalar biror narsa bilan qiziqsalar, ular ham shuningdek xafachiliklarni unutib yuboradilar.",
+   "Odamlarning hulqi va atvoriga qarab buyuk qonuniyatni ochganini o‘zi ham bilmay qoldi: masalan, biror odam yoki biror bola biror narsaning egasi bo‘lmoqni orzu qilsa, u odam bu narsaga mumkin qadar qiyinlik bilan erishsin.",
+   "Bu hayot deganlarini u qadar ma'nosiz va arzimaydigan narsa deb bo‘lmaydi.",
+   "Bu yolg‘on bo‘lsa ham buyuk, olijanob, sof ko‘ngil kishining obro‘sini ko‘taradigan yolg‘on ekan...",
+   "Kattalar haqida roman yozganda, qayerga borib to‘xtashni kishi biladi, bolalar haqida yozganda esa, istagan yeringda nuqta qo‘yib tugatsang bo‘ladi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom ko‘za ichidagi qaysi shirinlikni o‘g‘irlab yegan edi?",
+   "options": [
+    "A) Murabboga tegib yeydi",
+    "B) Asalni o‘g‘irlab yeydi",
+    "C) Qandni olib yeydi",
+    "D) Halvoni o‘g‘irlab yeydi"
+   ],
+   "answer": "A) Murabboga tegib yeydi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sid Tomning yoqasidagi qanday o‘zgarishni fosh qildi?",
+   "options": [
+    "A) Qizil ip ko‘rindi",
+    "B) Ip uzilib ketgan edi",
+    "C) Yoqasi yirtilib ketgan edi",
+    "D) Qora ip ko‘rinib turardi"
+   ],
+   "answer": "D) Qora ip ko‘rinib turardi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom ko‘chada uchratgan yangi bolaning nimasi g‘ashini keltirdi?",
+   "options": [
+    "A) Juda baland ovozda gapirishi",
+    "B) O‘ta bosa-bosa olifta kiyingani",
+    "C) Qo‘lida zo‘r o‘yinchoq borligi",
+    "D) Uni masxara qilib kulgani"
+   ],
+   "answer": "B) O‘ta bosa-bosa olifta kiyingani"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tom devorni oqlash evaziga bolalardan qanday narsalar yig‘ib oldi?",
+   "options": [
+    "A) Faqat kitob va daftarlar",
+    "B) Pul va tilla tangalar",
+    "C) Soqqalar, hushtak va o‘yinchoqlar",
+    "D) Faqat shirinlik va olmalar"
+   ],
+   "answer": "C) Soqqalar, hushtak va o‘yinchoqlar"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Ben Rodjers devorni oqlashga bunchalik qiziqib qoldi?",
+   "options": [
+    "A) Polli xoladan qo‘rqqani uchun",
+    "B) Tom uni san'atkor kabi ko‘rsatgani uchun",
+    "C) Unga pul berishgani uchun",
+    "D) Oqlashni judayam yaxshi ko‘rgani uchun"
+   ],
+   "answer": "B) Tom uni san'atkor kabi ko‘rsatgani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tom nima uchun maktabdagi biletlarni savdolashib to‘pladi?",
+   "options": [
+    "A) Injil kitobini mukofotga olish uchun",
+    "B) Boshqa bolalarga sotish uchun",
+    "C) O‘qituvchiga sovg‘a qilish uchun",
+    "D) Xolasiga maqtanib berish uchun"
+   ],
+   "answer": "A) Injil kitobini mukofotga olish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tomning devor oqlashdagi topqirligini qanday baholash mumkin?",
+   "options": [
+    "A) Yomon ish — o‘rtoqlarini aldaydi",
+    "B) Aql — og‘ir ishni o‘yinga aylantirdi",
+    "C) Dangasalik — ishdan mutlaqo qochadi",
+    "D) Qo‘rqoqlik — o‘zi ishlay olmaydi"
+   ],
+   "answer": "B) Aql — og‘ir ishni o‘yinga aylantirdi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Tomning kayfiyatini «osmonda yangi sayyora kashf etgan astronom»ga o‘xshatib nimani ko‘rsatgan?",
+   "options": [
+    "A) Tom yulduzlarni yaxshi bilishini",
+    "B) Hushtak chalishdan cheksiz quvonganini",
+    "C) Astronom bo‘lishni orzu qilganini",
+    "D) Uning juda aqlli bola ekanini"
+   ],
+   "answer": "B) Hushtak chalishdan cheksiz quvonganini"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom va Gek so‘gallarni yo‘qotish uchun qayerga borishmoqchi bo‘lishdi?",
+   "options": [
+    "A) Shifoxonaga borishmoqchi bo‘ldi",
+    "B) Daryo bo‘yiga borishmoqchi bo‘ldi",
+    "C) Yarim kechada qabristonga borishmoqchi",
+    "D) Maktab hovlisiga borishmoqchi bo‘ldi"
+   ],
+   "answer": "C) Yarim kechada qabristonga borishmoqchi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tom bilan Bekki o‘rtasidagi do‘stlik qanday boshlandi?",
+   "options": [
+    "A) Ular urushib qolishgan edi",
+    "B) Taxtaga izhor yozib, rezinka chaynashdi",
+    "C) Kitobni birga o‘qishgan edi",
+    "D) Daryoda birga cho‘milishgan edi"
+   ],
+   "answer": "B) Taxtaga izhor yozib, rezinka chaynashdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalar qabristonda kimning o‘ldirilganiga guvoh bo‘lishdi?",
+   "options": [
+    "A) Meff Potterning o‘ldirilganiga",
+    "B) Shifokorning o‘ldirilganiga guvoh bo‘lishdi",
+    "C) Qari itning o‘lganiga",
+    "D) Hindi Joning o‘ldirilganiga"
+   ],
+   "answer": "B) Shifokorning o‘ldirilganiga guvoh bo‘lishdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom Polli xola bergan dori-darmonni nima qilardi?",
+   "options": [
+    "A) Hammasini ichib yuborardi",
+    "B) Ko‘chaga sepib yuborardi",
+    "C) Taxta yorig‘iga quyar edi",
+    "D) Gekga berib yuborardi"
+   ],
+   "answer": "C) Taxta yorig‘iga quyar edi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom dorini ichirgach mushuk Piter qanday yo‘l tutdi?",
+   "options": [
+    "A) Tinchgina uxlab qoldi",
+    "B) Devorlarga sakrab, telbalarcha yugurdi",
+    "C) Tomni tishlab olgan edi",
+    "D) Tashqariga qochib ketgan edi"
+   ],
+   "answer": "B) Devorlarga sakrab, telbalarcha yugurdi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Orolga qochgan uchta qaroqchi bolalarni tartib bilan ko‘rsating:",
+   "options": [
+    "A) Tom, Gek, Jo Garper",
+    "B) Tom, Sid, Ben Rodjers",
+    "C) Gek, Billi, Jonni Miller",
+    "D) Tom, Bekki, Meff Potter"
+   ],
+   "answer": "A) Tom, Gek, Jo Garper"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega bolalar qabristondagi sirdan keyin qon bilan qasam ichishdi?",
+   "options": [
+    "A) Hindi Jodan qo‘rqishgani uchun",
+    "B) O‘qituvchi bilib qalmasin deb",
+    "C) Shunchaki o‘yin bo‘lgani uchun",
+    "D) Polli xola buyurgani uchun"
+   ],
+   "answer": "A) Hindi Jodan qo‘rqishgani uchun"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tom uyga yashirincha kelganida xolasining holatini ko‘rib nima qildi?",
+   "options": [
+    "A) Tayoq yeyishdan qo‘rqib qochdi",
+    "B) Kampirga achinib, sekin o‘pib qo‘ydi",
+    "C) Uning kiyimlarini o‘g‘irlab ketdi",
+    "D) Baland ovozda baqirib yubordi"
+   ],
+   "answer": "B) Kampirga achinib, sekin o‘pib qo‘ydi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tomning o‘z motam marosimiga kutilmaganda kelishini qanday baholaysan?",
+   "options": [
+    "A) Qo‘rqinchli xato ish bo‘ldi",
+    "B) Xolasini quvontirgan sho‘xlik bo‘ldi",
+    "C) Yomon va shafqatsiz xatti-harakat",
+    "D) Foydasiz va ma'nosiz ish"
+   ],
+   "answer": "B) Xolasini quvontirgan sho‘xlik bo‘ldi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Tom va Gekning Meff Potterga bo‘lgan achinishi ularning qaysi xislatini ko‘rsatadi?",
+   "options": [
+    "A) Ularning mehribon va vijdonliligini",
+    "B) Faqat o‘zini o‘ylaydiganligini",
+    "C) Urushishni yaxshi ko‘rishini",
+    "D) Qonunni bilmasliklarini ko‘rsatadi"
+   ],
+   "answer": "A) Ularning mehribon va vijdonliligini"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom sudda kimni qutqarib qolish uchun guvohlik berdi?",
+   "options": [
+    "A) Hindi Joni qutqarish uchun",
+    "B) Meff Potterni qutqarish uchun",
+    "C) Jo Garperni qutqarish uchun",
+    "D) Gek Finni qutqarish uchun"
+   ],
+   "answer": "B) Meff Potterni qutqarish uchun"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hindi Jo yashirinib yurgan eski uyda nimani topib oldi?",
+   "options": [
+    "A) Eski kitoblar solingan qutini",
+    "B) Oltin pul to‘la sandiqni",
+    "C) Bir qop undan qilingan narsani",
+    "D) Qurol-yarog‘lar to‘la sandiqni"
+   ],
+   "answer": "B) Oltin pul to‘la sandiqni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gek kimni hindi Joning xavfli suiqasdidan qutqarib qoldi?",
+   "options": [
+    "A) Beva xotin Duglasni qutqardi",
+    "B) Polli xolani qutqarib qoldi",
+    "C) Bekki Techerni qutqarib qoldi",
+    "D) O‘qituvchi Dobbinsni qutqardi"
+   ],
+   "answer": "A) Beva xotin Duglasni qutqardi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom va Bekki g‘orda adashib yurganlarida nima tugab qoldi?",
+   "options": [
+    "A) Suv va ovqat mahsulotlari",
+    "B) Qo‘llaridagi shamlari tugab qoldi",
+    "C) Kiyim-kechaklari yirtilib ketdi",
+    "D) Ip va arqonlari uzildi"
+   ],
+   "answer": "B) Qo‘llaridagi shamlari tugab qoldi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hindi Jo g‘or ichida qanday halok bo‘ldi?",
+   "options": [
+    "A) Daryoga cho‘kib ketgan edi",
+    "B) Soddalik bilan yiqilib tushdi",
+    "C) Ochlikdan eshik yonida o‘ldi",
+    "D) Sudya tomonidan otib tashlandi"
+   ],
+   "answer": "C) Ochlikdan eshik yonida o‘ldi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Tom sudda o‘z hayotini xavfga qo‘yib haqiqatni aytdi?",
+   "options": [
+    "A) Mashhur bo‘lishni istagani uchun",
+    "B) Beayb odam o‘lishiga chidamay",
+    "C) Sudya pul va'da qilgani uchun",
+    "D) Gek uni majbur qilgani uchun"
+   ],
+   "answer": "B) Beayb odam o‘lishiga chidamay"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Gek nima uchun beva xotin Duglasning uyidan qochib ketdi?",
+   "options": [
+    "A) Tartib va qoidalar siqqani uchun",
+    "B) Beva xotin uni urgani uchun",
+    "C) Pulini yo‘qotib qo‘ygani uchun",
+    "D) Tom uni chaqirganligi uchun"
+   ],
+   "answer": "A) Tartib va qoidalar siqqani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tomning g‘orda Bekkiga bergan dalda va yordamini qanday baholaysan?",
+   "options": [
+    "A) Asil va mard o‘rtoq harakati",
+    "B) Qo‘rqoq bola harakati",
+    "C) O‘ylamay qilingan bemaza ish",
+    "D) O‘zini ko‘rsatish uchun harakat"
+   ],
+   "answer": "A) Asil va mard o‘rtoq harakati"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sudya Techerning Tom haqidagi «olijanob yolg‘on» degan bahosi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri — har qanday yolg‘on yomon",
+    "B) To‘g‘ri — qizni qutqarish uchun edi",
+    "C) Noto‘g‘ri — Tom jazolanishi kerak edi",
+    "D) Noma'lum — sudya adashgan edi"
+   ],
+   "answer": "B) To‘g‘ri — qizni qutqarish uchun edi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Tom va Gek topgan oltinlarni stolga to‘kgan sahnada nimani tasvirlagan?",
+   "options": [
+    "A) Kattalarning hayrat va lol qolishini",
+    "B) Bolalarning pulni yoqlamasligini",
+    "C) Oltinlarning juda arzonligini",
+    "D) Polli xolaning jahli chiqqanini"
+   ],
+   "answer": "A) Kattalarning hayrat va lol qolishini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif asar oxirida «bolalar haqida yozganda istagan yeringda nuqta qo‘yasan» deya nimaga shama qilgan?",
+   "options": [
+    "A) Kitob yozishdan charchaganiga",
+    "B) Bolalik sarguzashtlari tugamasligiga",
+    "C) Asar voqealari yolg‘onligiga",
+    "D) Qahramonlar ulg‘ayib bo‘lganiga"
+   ],
+   "answer": "B) Bolalik sarguzashtlari tugamasligiga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom va Gek topib olgan oltin pul qancha edi?",
+   "options": [
+    "A) Yuz dollar atrofida edi",
+    "B) O‘n ikki ming dollardan ortiq",
+    "C) Ming dollar kumush tanga",
+    "D) Ellik ming dollar oltin"
+   ],
+   "answer": "B) O‘n ikki ming dollardan ortiq"
+  }
+ ]
+}

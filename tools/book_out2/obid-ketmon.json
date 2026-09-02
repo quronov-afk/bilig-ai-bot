@@ -1,0 +1,48 @@
+{
+ "title": "Obid ketmon",
+ "author": "Abdulla Qodiriy",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "mehnatsevarlik",
+   "halollik",
+   "yetakchilik",
+   "jamoaviylik",
+   "dehqonchilik",
+   "sabr"
+  ],
+  "theme": "Asarning bosh g‘oyasi — halol va fidokorona mehnat, o‘z kasbiga sadoqat hamda jamoa manfaati yo‘lida birlashish insonni va jamiyatni yuksaltirishini ko‘rsatishdir. Muallif Obid ketmon siymosida bilim, tajriba va sabr-toqat har qanday qiyinchilikni yengishga qodir ekanini uqtiradi.",
+  "summary": "Mulla Obid — Tiktepa qishlog‘ining halol va g‘ayratli dehqoni. U o‘zining ulkan ketmoni va mehnatsevarligi bilan g‘umay bosgan va tashlandiq yerlarni obod qiladi, unumdorligini oshiradi. Qishloqda kolxozlashtirish davri boshlangach, Mulla Obid o‘zining katta tajribasi va el orasidagi obro‘si sababli kolxoz raisi etib saylanadi. U kolxoz ishini to‘g‘ri va adolat bilan tashkil etadi. Yuqoridan ekin holatiga to‘g‘ri kelmaydigan shoshma-shosharlik buyruqlari kelganda ham, Obid ketmon sabr hamda bilim bilan ekinni asrab qolish qarorida qat'iy turadi. U qishloq ahlining birdamligini ta'minlab, har bir a'zoning imkoniyatidan unumli foydalanadi. Natijada «Chetan» kolxozi mo‘l hosil yetishtirib, tumanda birinchi o‘ringa chiqadi. Asar oxirida kolxoz a'zolari fidokorona mehnatlari uchun munosib mukofotlanadilar, Obid ketmonga berilgan maxsus moslama sababli uning ko‘p yillik karlık xastaligi tuzaladi va qishloq ravnaq yo‘liga kiradi.",
+  "characters": "Mulla Obid (Obid ketmon) — bosh qahramon, halol, mehnatsevar, tadbirkor dehqon va adolatli kolxoz raisi; Berdi tatar (Berdi Shodiyev) — kolxoz yacheyka kotibi, Obidning eng yaqin maslakdoshi va g‘ayratli faol; Xolmirza aka — Obidning qaynotasi, tajribali va mulohazali keksa dehqon; Mirsoat — kolxoz raisi muovini, tirishqoq va shoshqaloq yigit; Rafiqov — tuman rahbarlaridan biri, odil va kolxozchilarning mehnatini qadrlovchi inson.",
+  "conclusion": "Bu asar o‘quvchiga halol mehnatning qadrini, har bir ishga mas'uliyat bilan yondashish va el-yurtga nafi tegishining go‘zalligini o‘rgatadi. Bola Obid ketmon timsolida qiyinchiliklardan qo‘rqmaslik, o‘z kasbining ustasi bo‘lish va atrofdagilarning hurmatiga halol mehnat bilan erishish mumkinligini anglaydi. Shuningdek, asar jamoa bo‘lib ishlash, kattalarga hurmat va sabr-toqatli bo‘lish tuyg‘ularini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "ruhlantiruvchi, mehnatsevarlikka chorlovchi, samimiy",
+  "for_whom": "Mehnatsevarlik, dehqonchilik, yetakchilik va hayotiy tajribalarga qiziqadigan, el-yurtiga manfaat keltirishni xohlaydigan o‘smirlar uchun mos.",
+  "events": [
+   "Obid ketmon o‘zining katta ketmoni va zanbalg‘altagi bilan shudgordagi g‘umaylarni tozalaydi va xirmontepa tuprog‘ini tashib yerini unumdor qiladi.",
+   "Qishloqda kolxoz tuzilib, Obid ketmon o‘zining boy dehqonchilik tajribasi sababli bir ovozdan kolxoz raisligiga saylanadi.",
+   "Mulla Obid va Berdi tatar kolxoz ishlarini tartibga solib, ekinlarni o‘z vaqtida parvarish qilish chora-tadbirlarini ko‘radilar.",
+   "Yuqoridan ekin pishmasdan paxta terish buyrug‘i kelganda, Obid ketmon ekin holatini o‘rganib, muddatni orqaga surishni qat'iy talab qiladi.",
+   "Obid ketmon qishloqni va qo‘rg‘onlarni axlatlardan tozalab, yerlarga go‘ng va unumdor tuproq solish ishlarini uyushtiradi.",
+   "Chopiq va sug‘orish ishlariga xotin-qizlar hamda yoshlar jalb etilib, ish unumdorligi keskin oshiriladi.",
+   "Qo‘shni kolxozlar bilan musobaqa shartnomalari tuzilib, yuqori hosil olish uchun fidoyi mehnat yo‘lga qo‘yiladi.",
+   "«Chetan» kolxozi yuqori paxta va g‘alla hosili olib, tumanda birinchi o‘ringa chiqadi hamda tuman rahbariyati tomonidan traktor bilan mukofotlanadi.",
+   "Klubda katta bayram tantanasi o‘tkazilib, fidoyi zarbdorlarga yangi hovlilar, mashinalar va to‘nlar topshiriladi.",
+   "Mulla Obidga ko‘rsatilgan g‘amxo‘rlik va maxsus moslama sababli uning o‘n sakkiz yillik karlık xastaligi barham topadi."
+  ],
+  "quotes": [
+   "Ketmonni mo‘ljallab tashla: birinchi ketmondan o‘t o‘lsin, kesak ushalsin, tomir bo‘shalsin...",
+   "Maqsad, senlar tushungancha qimorbozlardek, bir-birlaridan o‘tishdan, hunarni yashirib yutushda emas...",
+   "Mening fikrimcha, yerni pishitishga kelganda, bir chegara qo‘yish mumkin emas...",
+   "Biz baxtlimiz, chunki bizga firqa rahbar, Mehnatkashga saodat bu bilsak agar!",
+   "Kolxozchilarimiz aqlli otalarning so‘ziga quloq solmaydigan beboshlar bo‘lsalar, Obid ketmonlar qo‘lidan hech narsa kelmas edi."
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Obid ketmon ekin yetilmay turib paxta terish buyrug‘i kelganda, shoshqaloqlik qilmay, ekinning obodligi va el manfaati uchun to‘g‘ri qaror qabul qildi. Sen o‘z hayotingda biror ishni shoshilmasdan, pishiq-puxta bajarish uchun qanday yo‘l tutasan va Obid ketmonning mehnatsevarligi senga nimalarni o‘rgatdi?"
+}

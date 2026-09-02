@@ -1,0 +1,59 @@
+{
+ "title": "Yulduzli tunlar",
+ "author": "Pirimqul Qodirov",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "vatanparvarlik",
+   "jasorat",
+   "ilm-ma'rifat",
+   "tarixiy xotira",
+   "fidoiylik",
+   "oila va vafo"
+  ],
+  "theme": "Asarning bosh g‘oyasi — Vatan va el-ulus taqdiri yo‘lida fidoiylik ko‘rsatish, har qanday og‘ir sharoitda ham insoniylik, adolat, ilm va yaratuvchilikka sadoqatli qolishdir. Muallif taxt uchun ketsiz urushlar va mol-dunyo o‘tkinchi, lekin insoniyatga xizmat qiladigan ma'rifat, me'moriy obidalar hamda ezgu amallar boqiy ekanini ta'kidlaydi.",
+  "summary": "1494-yilda Farg‘ona vodiysida boshlangan taxt va toj uchun kurashlar fojiasi fonida yosh Zahiriddin Muhammad Boburning hokimiyatga kelishi va murakkab hayot yo‘li tasvirlanadi. Samarqand va Andijon uchun kechgan ketma-ket urushlar, bek va xonlarning xiyonati, Shayboniyxon bilan toqnashuvlar Boburni o‘z yurtini tark etishga majbur qiladi. Opasi Xonzoda begimning fidoiyligi evaziga omon qolgan Bobur Kobulni egallaydi, so‘ngra Hindistonga yurish qilib, qudratli Boburiylar davlatiga asos soladi. Asarda Bobur bilan birga oddiy xalq vakillari — me'mor Mulla Fazliddin, Tohir va Robiyalar taqdiri ham parallel ko‘rsatiladi. Bobur umri davomida adolatli hukmdor, ma'rifatparvar shaxs va shoir sifatida ijod qiladi. Umrining oxirida og‘ir xastalanib yotgan o‘g‘li Humoyunga o‘z jonini tasaddiq qilib, davlatni va madaniy merosi — «Boburnoma»ni unga topshiradi hamda me'moriy obidalar, ma'rifiy va adabiy meros qoldirib vafot etadi.",
+  "characters": "Zahiriddin Muhammad Bobur — shoh va shoir, vatanparvar, adolatli va matonatli hukmdor. Tohir — sadoqatli va mard yigit, Boburning navkari va yaqin hamrohi. Robiya — Tohirning sevgilisi, iboli va sabr-toqatli o‘zbek qizi. Mulla Fazliddin — el orasida tanilgan me'mor va musavvir, Boburning maslakdoshi. Xonzoda begim — Boburning opasi, ukasi va el-yurti omonligi uchun o‘zini fido qilishga tayyor matonatli ayol. Ahmad Tanbal — taxt ketidan quvgan, hiylagor va berahm bek.",
+  "conclusion": "Asar Boburning vafoti hamda uning boy ma'naviy merosi va ezgu amallari abadiy yashab qolishi bilan yakunlanadi. Bola ushbu kitobdan Vatanga bo‘lgan cheksiz muhabbatni, har qanday sinovda ham iroda va odamiylikni yo‘qotmaslikni o‘rganadi. Shuningdek, asar kitobxonda kattalarga va oilaga sadoqat, ilm-fan hamda barpo etilgan madaniy merosni qadrlash tuyg‘ularini shakllantiradi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tarixiy voqealar, buyuk shaxslar hayoti, vatanparvarlik va ma'naviy matonat mavzulariga qiziqadigan, teran fikrlashni xohlaydigan o‘smirlar uchun.",
+  "events": [
+   "1494-yil yozida Quvada urush xavfi yaqinlashganda Tohir va Robiya bir-biriga sadoqat izhor qiladi.",
+   "Me'mor Mulla Fazliddin Ahmad Tanbalning nojoiz taklifini rad etgach, uning uyiga bosqinchilar tushadi va u Quvaga qochib keladi.",
+   "Umarshayx mirzo vafot etib, o‘n ikki yoshli Bobur Farg‘ona taxtiga o‘tiradi.",
+   "Ahmad Tanbal va boshqa g‘arazli beklar taxtni egallash uchun ichki nizolar keltirib chiqaradi.",
+   "Bobur Samarqandni egallaydi, ammo Andijondagi g‘alayonlar sababli ikki shahardan ham ajralib arosatda qoladi.",
+   "Shayboniyxon Samarqandni qamal qilganda, Xonzoda begim ukasi Boburni qutqarish uchun o‘zini fido qilib Shayboniyxonga turmushga chiqishga rozi bo‘ladi.",
+   "Samarqanddan chiqqan Bobur tog‘larda sarson-sargardonlikda bir cho‘pon bilan uchrashib, adolat va hukmdorlik saboqlarini mushohada qiladi.",
+   "Bobur sadoqatli navkarlari bilan Hindukush tog‘larini oshib, Kobulni egallaydi va yangi davlatga asos soladi.",
+   "Mulla Fazliddin va Tohir Kobulda Bobur xizmatiga kirib, qurilish va ma'rifat ishlariga bosh-qosh bo‘lishadi.",
+   "Xonzoda begim yillardan so‘ng asoratdan qutulib, ukasi Bobur bilan Kobulda qayta diydorlashadi.",
+   "Bobur Panipat jangida to‘p va tuyandozlardan ustalik bilan foydalanib, Ibrohim Lodi qo‘shinini mag‘lub etadi.",
+   "Hindistonda qudratli Boburiylar saltanati o‘rnatiladi va ulkan obodonchilik ishlari boshlanadi.",
+   "Bobur jangda qo‘lga kiritilgan boyliklarni harbiy ishlarga emas, me'morlik, ilm-fan va xalq farovonligiga yo‘naltiradi.",
+   "Mulla Fazliddin Hindistonda samarqandcha va hind me'morchiligi uslublarini uyg‘unlashtirgan obidalar tarhini chizadi.",
+   "Bobur o‘z hayot yo‘li va tarixiy voqealarni muhrlagan «Boburnoma» (Vaqoye) asarini yozib tugatadi.",
+   "Boburning o‘g‘li Humoyun og‘ir xastalikka chalinganda, Bobur Yaratganga iltijo qilib, o‘g‘lining dardini o‘ziga olishni so‘raydi.",
+   "Humoyun mo‘jizaviy tarzda tuzala boshlaydi, Boburning esa salomatligi kundan-kun yomonlashib boradi.",
+   "Bobur o‘lim to‘shagida Humoyunga Sahiqron bobosidan qolgan adolat qilichini va «Boburnoma» qo‘lyozmasini topshiradi.",
+   "Bobur barcha yaqinlari va el-yurti bilan rozilashib, Agra shahri bog‘ida vafot etadi.",
+   "Boburning jasadi vasiyatiga ko‘ra Kobuldagi xushhavo bog‘ga dafn etiladi, uning qoldirgan adabiy va madaniy merosi asrlar oshib yashayveradi."
+  ],
+  "quotes": [
+   "Kitob o‘qiydigan odam teran va sog‘lom fikrlaydi. Bunday tafakkurga ega inson esa jamiyatni o‘zgartira oladi.",
+   "Vatanimiz bo‘lmish Farg‘ona vodiysida Samarqanddagidek, Hirotdagidek madrasalar-u ko‘rkam obidalar qurmoqchi edim.",
+   "Biz o‘zbek, qozoq, turkman, qirg‘iz — barchasi ham turkiy uluslarmiz. Bir otaning bolalaridek yerimiz bir, tariximiz bir.",
+   "Kuch – adolatdadir degan so‘zlar bitilgan. Doim odil bo‘lgin-u mag‘lub bo‘lmagin!",
+   "Men tug‘ilgan yurt bilan aloqani uzmanglar. Shoyad men bitgan kitablar... ikki oradagi aloqaning rishtalari bo‘lsa...",
+   "Faqat Bobur o‘z qo‘li bilan yozgan asarlar haligacha tirik bir qalbning haroratiga to‘lib, odamlarga hamon ma'naviy oziq va zavq beryapti."
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Bobur va uning opasi Xonzoda begim bir-biri va el-yurti uchun og‘ir damlarda katta fidoiylik ko‘rsatishadi. Sen o‘z oilang va yaqinlaring uchun qanday mehribonlik yoki g‘amxo‘rlik qilishni xush ko‘rasan? Asardagi qaysi ijobiy fazilat senga eng kuchli ta'sir qildi va nega?"
+}

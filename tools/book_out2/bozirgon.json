@@ -1,0 +1,48 @@
+{
+ "title": "Bozirgon",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15 yosh (dostonning murakkab tili, fitna, mardlik va pushaymonlik kabi chuqur ma'naviy g‘oyalari sabab)",
+  "topics": [
+   "do‘stlik",
+   "mardlik",
+   "fitna va pushaymonlik",
+   "haqiqat va adolat",
+   "vafodorlik"
+  ],
+  "theme": "Dostonda mardlik, to‘g‘rilik va haqiqiy do‘stlik ulug‘lanadi. Inson birovning ig‘vosi va fitnasiga uchmasligi, har bir ishni shoshmasdan, aql va insof bilan mulohaza qilishi kerak. Shuningdek, yo‘l qo‘yilgan xatoni tan ola bilish va uni tuzatish uchun mas'uliyatni bo‘yniga olish haqiqiy mardning fazilatidir.",
+  "summary": "Bozirgon arab — Zobilistonda yashovchi, insofli va ulkan kuchga ega savdogar polvon. Xunxor shoh uni Go‘ro‘g‘liga qarshi gijgijlaganda, Bozirgon kelishmovchilikni xohlamay rad etadi. Go‘ro‘g‘li sulton esa o‘z yurtidan boj to‘lamay o‘tgan Bozirgon haqida eshitib, qirq yigiti bilan uning oldiga boradi. Sinovlar va bellashuvlardan so‘ng Bozirgonning olijanobligini ko‘rib, ikkisi do‘stlashadi. Biroq yo‘lda Manjalaqixon ismli ayol hiyla va yolg‘on ishlatib, Go‘ro‘g‘lini Bozirgon haqida sarosimaga soladi va fitna uyushtiradi. G‘azabga mingan Go‘ro‘g‘li uxlab yotgan Bozirgonni kamondan otib og‘ir yaralaydi. O‘lim oldidan Bozirgon sadoqatini isbotlab, yolg‘iz singlisi Qaldirg‘ochni Go‘ro‘g‘liga topshiradi. Xatosini anglagan Go‘ro‘g‘li qattiq pushaymon bo‘lib, fitnachi Manjalaqixonni jazolaydi hamda Bozirgonga dabdabali maqbara qurdiradi. Keyinchalik Bozirgonning singlisi Qaldirg‘och qasos uchun kelganda, Go‘ro‘g‘li haqiqatni aytib, uning qiyomatli og‘asiga aylanadi. Go‘ro‘g‘li Qaldirg‘ochni Hindiston hukmdori Qoradevning tajovuzidan qutqarib, eliga tinchlik keltiradi va uni munosib yigitga uzatadi.",
+  "characters": "Go‘ro‘g‘li sulton — Turkman elining mard va pahlavon hukmdori, ba'zan shoshqaloqlik va fitnaga uchib xato qiladi, lekin xatosini tan oladigan va tuzatadigan mard inson. Bozirgon arab — alplar kabi gavdali, ulkan kuch-qudratga ega bo‘lsa-da, insofli, halol va va'dasiga vafo qiladigan savdogar polvon. Misqol pari — Go‘ro‘g‘lining oqila, uzoqni ko‘ra oladigan va unga to‘g‘ri maslahat beradigan yori. Manjalaqixon — fitnachi va makkor kimsaning timsoli, Go‘ro‘g‘lini aldab beayb Bozirgonning qoniga zamin yaratadi. Qaldirg‘och — Bozirgonning jasoratli, mard va oqila singlisi. Qoradev — Hindistonning zolim hukmdori, Qaldirg‘ochga zo‘ravonlik qilmoqchi bo‘ladi.",
+  "conclusion": "Asar bolaga insoniy munosabatlarda fitna va ig‘volarga uchmaslik, shoshma-shosharlik qilmaslik sabog‘ini beradi. Bola mardlik faqat kuch-qudratda emas, balki o‘z xatosini tan olishda, va'daga vafo qilishda hamda yaqinlar oldidagi mas'uliyatda ekanini anglaydi. Shuningdek, doston yetim qolgan yoki musibatga uchragan insonga g‘amxo‘rlik qilish va yaxshilik bilan javob qaytarish sharqona odobning go‘zal namunasi ekanligini ko‘rsatadi.",
+  "difficulty": "o‘rta",
+  "mood": "shiddatli, saboq beruvchi, afsus va mardlik hissi",
+  "for_whom": "Qahramonlik dostonlariga, mardlik va sarguzashtlarga qiziquvchi, do‘stlik hamda adolat qadrini tushunishni xohlaydigan bolalar uchun.",
+  "events": [
+   "Bozirgon arab Zobilistonga ko‘chib kelib, yirik karvon tuzib shaharma-shahar halol savdo qilib yuradi.",
+   "Xunxor shoh Bozirgonni Go‘ro‘g‘liga qarshi qayramoqchi bo‘ladi, lekin Bozirgon adovat va fitnani rad etib ketadi.",
+   "Go‘ro‘g‘li sulton yurtidan boj to‘lamay o‘tgan Bozirgon bilan kuch sinashish uchun qirq yigiti bilan yo‘lga chiqadi.",
+   "Go‘ro‘g‘li o‘zini elchi qilib ko‘rsatib, Bozirgonning kuch-qudratini va bag‘rikengligini sinab ko‘radi.",
+   "O‘zaro suhbat va sinovlardan so‘ng Bozirgonning mard va insofli ekaniga ishonch hosil qilgan Go‘ro‘g‘li u bilan do‘stlashadi.",
+   "Yo‘lda makkor Manjalaqixon Buxorolik hoji ayol qiyofasiga kirib, Go‘ro‘g‘liga Bozirgon haqida yolg‘on va fitna gaplarni aytadi.",
+   "Fitnaga uchgan Go‘ro‘g‘li uxlab yotgan Bozirgonga bexosdan o‘q uzib, uni og‘ir yaralaydi.",
+   "O‘lim toshini totayotgan Bozirgon do‘stiga sadoqatini ta'kidlab, yolg‘iz singlisi Qaldirg‘ochni Go‘ro‘g‘liga topshiradi.",
+   "Qattiq pushaymon bo‘lgan Go‘ro‘g‘li Bozirgonga dabdabali maqbara qurdiradi va fitnachi Manjalaqixonni jazolaydi.",
+   "Akasining qasosini olmoqchi bo‘lib kelgan Qaldirg‘och haqiqatni bilgach, Go‘ro‘g‘lini qiyomatli og‘a deb tan oladi va Go‘ro‘g‘li uni Qoradev tajovuzidan qutqaradi."
+  ],
+  "quotes": [
+   "Shuncha zo‘rlik, qadd-u qomat bilan Bozirgon arab insofli odam bo‘lib, o‘z ixtiyori bilan har yurtning rasmi bo‘yicha oliq-solig‘ini bir tiyin qoldirmay, o‘zi to‘lab ketar edi.",
+   "Men Go‘ro‘g‘liga ham indamayman, gina-kudurat degan narsalar o‘zingga nasib qilsin. Aqling bo‘lsa, ikkinchi menga bunday dema",
+   "Bu yolg‘onchi poyoni yo‘q dunyoda, Birovlar kam bo‘ldi, birov ziyoda, Shuytib hech bir kimsa maqsad-muroda, Yetolmay albatta armoni bordir.",
+   "Ol, yoying o‘zingga nasib qilsin. Men nomardlikni yomon ko‘raman",
+   "Go‘ro‘g‘li sulton Bozirgon arabning bunday haqqoniy so‘zlarini eshitib, uning zo‘rlik va mardligiga tan berib, Bozirgon arabni quchoqlab ko‘rishib...",
+   "Qo‘rg‘onning boshini to‘p buzar, odamning boshini gap buzar..."
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Go‘ro‘g‘li sulton fitnachi Manjalaqixonning yolg‘on so‘zlariga ishonib, o‘z do‘sti Bozirgonga zarar yetkazdi va keyin bundan qattiq pushaymon bo‘ldi. Sen hayotingda biror marta tekshirmasdan birovning gapiga ishonib xato qilganmisan va bundan nima saboq olgansan?"
+}

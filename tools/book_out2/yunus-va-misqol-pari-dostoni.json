@@ -1,0 +1,480 @@
+{
+ "title": "Yunus va Misqol pari",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "jasorat",
+   "muhabbat",
+   "vafo",
+   "doston",
+   "xalq og‘zaki ijodi"
+  ],
+  "theme": "Asarning bosh g‘oyasi — mardlik, va'daga vafo qilish, odamiylik hamda chin sevgi va sadoqat har qanday mushkulotlarni yengib o‘tishga qodir ekanligini ko‘rsatishdan iborat. Insonning qadri mol-dunyo yoki pul bilan emas, balki uning mardligi, halolligi va ma'naviy fazilatlari bilan o‘lchanadi.",
+  "summary": "Go‘ro‘g‘libek mayxonada qirq yigiti bilan o‘tirganda tush ko‘rib, osmon bilan yer oralig‘ida tengsiz go‘zal Yunus pari va Misqol pariga oshiq bo‘lib qoladi. Uyg‘ongach, tushini yigitlariga aytib beradi. Xoldor mahramning maslahati bilan Go‘ro‘g‘libek Sarilar elatiga borib, ulug‘ bobo Ersaridagi Sari boboni topadi. Sari bobo uni g‘or to‘ridagi Qora boboning huzuriga kiritadi. Qora bobo Yunus parining makoni Irambog‘ida, Misqol parining makoni esa Qo‘hi Qofda ekanini, Iram bog‘i yo‘lini Hazrati Xizr ko‘rsatishini aytadi. Go‘ro‘g‘libek qirq yigitini Chambilga qaytarib, qirq kunda qaytishga va'da beradi. U Nishopur orqali o‘tib, posbon kiyimini kiyib, Isfihon va Dayrabodga yetib boradi. Dayrabodda Hazrati Xizrni topadi. Xizr bobo unga Irambog‘ yo‘lidagi g‘or og‘zida yotgan devni yengish sirini o‘rgatadi va kaptarlar ketidan borishni buyuradi. Go‘ro‘g‘li jazirama cho‘lda yomg‘ir suvidan choy kaynatib, hordiq chiqaradi. So‘ng tog‘ bag‘rida Farqis devning ko‘zlariga o‘q uzib, uni xanjar bilan o‘ldiradi. G‘or orqali Irambog‘iga kiradi. Irambog‘ida Og‘a Yunus pari va uning kanizagi Oqchagul Go‘ro‘g‘lining qo‘shig‘ini eshitib, uni ichkariga taklif qiladi. Misqol pari raschk qilib Ko‘hi Qofga uchib ketgan edi. Og‘a Yunus Go‘ro‘g‘lining chin oshiqligini va odamiyligini sinab ko‘radi. So‘ng Go‘ro‘g‘li sozini chertib, Misqol parini chorlaydi. Misqol pari darhol yetib keladi. Parilar bilan ahdlashib, Shohjahon podshodan rozilik olinadi. Qaytish yo‘lida Og‘a Yunus boylik haqida so‘raganda, Go‘ro‘g‘li inson qadri moli bilan o‘lchanmasligini aytib saboq beradi. Yo‘lda Misqol pari uchun asov tulpor Majnunko‘kni sotib oladi. Va'da qilingan qirqinchi kuni Chambilga qaytib kelishadi. Yigitlar ularni xursandchilik bilan kutib oladi va yetti kecha-kunduz to‘y berilib, murod-maqsadga yetishadi.",
+  "characters": "Go‘ro‘g‘libek — Chambil elining adolatli xoni, mard va va'dasiga vaqida turadigan pahlavon. Og‘a Yunus pari — Irambog‘i podshosi Shohjahonning qizi, oqila va erkinlikni qadrlovchi parizod. Misqol pari — Qo‘hi Qof podshosining qizi, Og‘a Yunusning sadoqatli va rashkchi dugonasi. Xoldor mahram — Go‘ro‘g‘lining yaqin do‘sti va maslahatgo‘y yigiti. Sari bobo va Qora bobo — turkman elining keksa, donishmand g‘oyib ulamolari. Hazrati Xizr — to‘g‘ri yo‘l ko‘rsatuvchi murshid, tabiat va sirlar bilag‘oni.",
+  "conclusion": "Ushbu doston kitobxonga va'dada turish, kattalarga hurmat ko‘rsatish va qiyinchiliklar oldida chekinmaslikni o‘rgatadi. Bola asardan insonning haqiqiy qiymati boylikda emas, balki uning oqko‘ngilligi va mardligida ekanligini anglab yetadi. Doston milliy qadriyatlar, vafodorlik va halollik ruhini mustahkamlaydi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, ko‘tarinki",
+  "for_whom": "Xalq dostonlari, qahramonlik va sarguzashtli rivoyatlarga qiziquvchi, mardlik hamda vafo hissini qadrlovchi bolalar uchun.",
+  "events": [
+   "1. Go‘ro‘g‘libek mayxonada tush ko‘rib, Yunus va Misqol parilarga oshiq bo‘ladi.",
+   "2. Go‘ro‘g‘libek ko‘rgan tushini qirq yigitiga aytib beradi.",
+   "3. Xoldor mahram Go‘ro‘g‘libekka Sarilar elatidagi Sari bobodan yo‘l so‘rashni maslahat beradi.",
+   "4. Go‘ro‘g‘libek qirq yigiti bilan g‘orga borib, Sari boboga uchrashadi.",
+   "5. Sari bobo Go‘ro‘g‘libekni g‘or to‘ridagi Qora boboning huzuriga yuboradi.",
+   "6. Qora bobo parilarning makonini aytib, Dayrabodga Hazrati Xizr oldiga borishni buyuradi.",
+   "7. Go‘ro‘g‘libek yigitlariga Chambilga qaytishni aytib, qirq kunda qaytishga va'da beradi.",
+   "8. Go‘ro‘g‘libek Nishopurda posbon kiyimini kiyib, o‘zini sipohi kabi ko‘rsatadi.",
+   "9. Go‘ro‘g‘libek Dayrabod suvini yoqalab borib, Hazrati Xizrning chorbog‘ini topadi.",
+   "10. Hazrati Xizr Go‘ro‘g‘libekka Irambog‘ yo‘lini va Farqis devni yengish sirini o‘rgatadi.",
+   "11. Go‘ro‘g‘libek kaptarlar ketidan borib, cho‘lda yomg‘ir suvidan choy qaynatadi.",
+   "12. Go‘ro‘g‘libek tog‘ bag‘rida Farqis devning ko‘zlariga o‘q uzib, uni mag‘lub etadi.",
+   "13. Go‘ro‘g‘libek g‘or orqali o‘tib, Irambog‘ devorining yoniga yetib keladi.",
+   "14. Misqol pari arazlab, qirq kanizagi bilan Ko‘hi Qofga uchib ketadi.",
+   "15. Oqchagul devor ortida kuylayotgan Go‘ro‘g‘libekni ko‘rib, Og‘a Yunusga xabar beradi.",
+   "16. Og‘a Yunus pari Oqchagulni yuborib, Go‘ro‘g‘libekni bog‘ ichiga taklif qiladi.",
+   "17. Og‘a Yunus pari Go‘ro‘g‘libekning vafo va niyatlarini sinab ko‘radi.",
+   "18. Go‘ro‘g‘libek soz chalib, Misqol parini Ko‘hi Qofdan chorlaydi.",
+   "19. Misqol pari yetib keladi va Go‘ro‘g‘libekni Ko‘hi Qofga olib borib mehmondorchilik qiladi.",
+   "20. Go‘ro‘g‘libek Shohjahon podshodan rozilik olib, Og‘a Yunus pari bilan Chambilga yo‘l oladi.",
+   "21. Yo‘lda Og‘a Yunus pari boylik haqida so‘raganda, Go‘ro‘g‘libek inson qadri moli bilan o‘lchanmasligini uqtiradi.",
+   "22. Go‘ro‘g‘libek Misqol pari uchun Majnunko‘k nomli asov otni sotib oladi.",
+   "23. Va'da qilingan qirqinchi kuni Go‘ro‘g‘libek Chambilga parilar bilan qaytib keladi.",
+   "24. Chambilda yetti kecha-kunduz to‘y berilib, murod-maqsadga yetiladi."
+  ],
+  "quotes": [
+   "Boshqalar o‘n olti-o‘n yetti yoshida er etsa, polvon odam yigirmadan oshib er yetar ekan.",
+   "O‘zi qaridir, lekin atoqli, nomdor, Oldida bir kosa hikmat suvi bor, Ul suvida bo‘lur maqsad nomudor.",
+   "Odamning qadri pul bilan, mol bilan bo‘lmaydi. Yigit gohida pulli bo‘ladi, gohida bo‘lmaydi.",
+   "Iram qizi sevganini yor etar, Vafosi yo‘q, bevafoga tegmaydi.",
+   "Yigit degan birday bo‘lmas, Pulli bo‘lar, pulsiz bo‘lar."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘libek tushida qaysi parilarni ko‘radi?",
+   "options": [
+    "A) Yunus va Misqol parilarni",
+    "B) Oqchagul va Misqol parilarni",
+    "C) Shirin va Layli parilarni",
+    "D) Oygul va Zuxra parilarni"
+   ],
+   "answer": "A) Yunus va Misqol parilarni"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘libek tushini kimlarga aytib berdi?",
+   "options": [
+    "A) Xoldor mahram va yigitlariga",
+    "B) Ersari elatidagi cho‘ponlarga",
+    "C) Nishopurdagi qizilbosh posbonlariga",
+    "D) Dayraboddagi Hazrati Xizrga"
+   ],
+   "answer": "A) Xoldor mahram va yigitlariga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Go‘ro‘g‘libekning yo‘lga chiqishida voqealar tartibi qanday?",
+   "options": [
+    "A) Tush ko‘rish, fotiha, otlanish",
+    "B) Otlanish, tush ko‘rish, fotiha",
+    "C) Fotiha, otlanish, tush ko‘rish",
+    "D) Otlanish, fotiha, tush ko‘rish"
+   ],
+   "answer": "A) Tush ko‘rish, fotiha, otlanish"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Go‘ro‘g‘li nega avval Ersariga borishga qaror qildi?",
+   "options": [
+    "A) Parilar joyini bilish uchun",
+    "B) Yangi ot sotib olish uchun",
+    "C) Qirq yigitni qoldirish uchun",
+    "D) Dushmanlar bilan urushish uchun"
+   ],
+   "answer": "A) Parilar joyini bilish uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sari bobo Go‘ro‘g‘lini kimning huzuriga yubordi?",
+   "options": [
+    "A) Qora boboning huzuriga",
+    "B) Shohjahon podshoning huzuriga",
+    "C) Hazrati Xizrning huzuriga",
+    "D) Farqis devning huzuriga"
+   ],
+   "answer": "A) Qora boboning huzuriga"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Go‘ro‘g‘lining Qora boboga adab bilan yondashishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, kattalarga hurmat shart",
+    "B) Noto‘g‘ri, botir bosh egmaydi",
+    "C) Farqi yo‘q, baribir o‘tardi",
+    "D) Xato, u darrov so‘rashi lozim"
+   ],
+   "answer": "A) To‘g‘ri, kattalarga hurmat shart"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qora bobo Og‘a Yunus makonini qayda dedi?",
+   "options": [
+    "A) Irambog‘ida joylashgan dedi",
+    "B) Qo‘hi Qofda joylashgan dedi",
+    "C) Chambilbelda joylashgan dedi",
+    "D) Sabzavorda joylashgan dedi"
+   ],
+   "answer": "A) Irambog‘ida joylashgan dedi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Xoldor mahramning maslahati uning qanday do‘stligini ko‘rsatadi?",
+   "options": [
+    "A) Sadsoq va vafo bilan yo‘llovchi",
+    "B) Qaytishga undovchi qo‘rqoq do‘st",
+    "C) Bemayl va loqayd do‘st",
+    "D) O‘z manfaatini o‘ylovchi do‘st"
+   ],
+   "answer": "A) Sadsoq va vafo bilan yo‘llovchi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Go‘ro‘g‘li yigitlariga nega Chambilga qaytishni buyurdi?",
+   "options": [
+    "A) Yurtni xavfsiz saqlash uchun",
+    "B) Qizilboshlar bilan urushish uchun",
+    "C) Parilarni birga izlash uchun",
+    "D) Ersarida yashab qolish uchun"
+   ],
+   "answer": "A) Yurtni xavfsiz saqlash uchun"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li yigitlariga qaytish uchun vaqt belgiladimi?",
+   "options": [
+    "A) Qirq kun vaqt belgiladi",
+    "B) Bir yil vaqt belgiladi",
+    "C) Bir hafta vaqt belgiladi",
+    "D) Hech qanday vaqt belgilamadi"
+   ],
+   "answer": "A) Qirq kun vaqt belgiladi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li Nishopurda kimning kiyimini kiyib oldi?",
+   "options": [
+    "A) Qizilbosh posbonining kiyimini",
+    "B) Sarilar cho‘ponining kiyimini",
+    "C) Farqis devning kiyimini",
+    "D) Hazrati Xizrning kiyimini"
+   ],
+   "answer": "A) Qizilbosh posbonining kiyimini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Go‘ro‘g‘li Dayrabodga yetib kelgach nimalarga duch keldi?",
+   "options": [
+    "A) Soylar, bedazor va chorbog‘ga",
+    "B) Baland devorlar va saroylarga",
+    "C) Qirq yigit va sarbozlarga",
+    "D) Bozorlar va gavjum shaharga"
+   ],
+   "answer": "A) Soylar, bedazor va chorbog‘ga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hazrati Xizr Go‘ro‘g‘liga nega kaptarlar ketidan borishni aytdi?",
+   "options": [
+    "A) Irambog‘ yo‘lini topish uchun",
+    "B) Cho‘lda suv topish uchun",
+    "C) G‘irko‘kni dam aldirish uchun",
+    "D) Dushmandan yashirinish uchun"
+   ],
+   "answer": "A) Irambog‘ yo‘lini topish uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Farqis dev g‘or og‘zida nima qilib yotgan edi?",
+   "options": [
+    "A) Irambog‘ isini olib yotgan",
+    "B) Dengizda cho‘milib yotgan edi",
+    "C) Go‘ro‘g‘lini poylab yotgan edi",
+    "D) Parilarni asrab yotgan edi"
+   ],
+   "answer": "A) Irambog‘ isini olib yotgan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Go‘ro‘g‘lining dev bilan ayyorona olishishi mardlikka zidmi?",
+   "options": [
+    "A) Yo‘q, yovga tatbiq aql alomatidir",
+    "B) Ha, mard doim to‘g‘ridan urushadi",
+    "C) Ha, u kutilmaganda hujum qildi",
+    "D) Yo‘q, dev baribir zaif edi"
+   ],
+   "answer": "A) Yo‘q, yovga tatbiq aql alomatidir"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li devni ojiz qilish uchun qayeriga o‘q uzdi?",
+   "options": [
+    "A) Devning ko‘zlariga o‘q uzdi",
+    "B) Devning qo‘llariga o‘q uzdi",
+    "C) Devning oyoqlariga o‘q uzdi",
+    "D) Devning ko‘kragiga o‘q uzdi"
+   ],
+   "answer": "A) Devning ko‘zlariga o‘q uzdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Matnda Dayrabod tabiatining tasviri kitobxonda qanday kayfiyat uyg‘otadi?",
+   "options": [
+    "A) Muvaffaqiyat va orom baxsh etadi",
+    "B) Qo‘rqinch va xavf uyg‘otadi",
+    "C) G‘am va qayg‘u beradi",
+    "D) Zerikish va horg‘inlik beradi"
+   ],
+   "answer": "A) Muvaffaqiyat va orom baxsh etadi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Misqol pari nega Ko‘hi Qofga uchib ketdi?",
+   "options": [
+    "A) Yunus pariga araz qilgani uchun",
+    "B) Farqis devdan qo‘rqgani uchun",
+    "C) Go‘ro‘g‘lini izlab topish uchun",
+    "D) Otasining amrini bajarish uchun"
+   ],
+   "answer": "A) Yunus pariga araz qilgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Devor ortidagi ashulani birinchi bo‘lib kim eshitdi?",
+   "options": [
+    "A) Kanizak Oqchagul eshitib qoldi",
+    "B) Og‘a Yunus pari eshitdi",
+    "C) Misqol pari eshitib qoldi",
+    "D) Shohjahon podsho eshitdi"
+   ],
+   "answer": "A) Kanizak Oqchagul eshitib qoldi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oqchagulning xabaridan keyin Og‘a Yunus qanday yo‘l tutdi?",
+   "options": [
+    "A) Oqchagulni mehmonga xabar yubordi",
+    "B) Qirq kanizakni jangga yubordi",
+    "C) Darvozani mahkam berkitib qo‘ydi",
+    "D) Misqol pari ortidan uchib ketdi"
+   ],
+   "answer": "A) Oqchagulni mehmonga xabar yubordi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li Irambog‘ida Og‘a Yunus bilan qayerda uchrashdi?",
+   "options": [
+    "A) Ko‘l bo‘yidagi oliy ayvonda",
+    "B) Farqis dev yotgan g‘orda",
+    "C) Shohjahon podshoning saroyida",
+    "D) Dayrabod soyi bo‘yidagi chorbog‘da"
+   ],
+   "answer": "A) Ko‘l bo‘yidagi oliy ayvonda"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Og‘a Yunus pari Go‘ro‘g‘lini nega sinovli so‘zlarga tutdi?",
+   "options": [
+    "A) Niyati va vafosini bilish uchun",
+    "B) Uni Iramdan haydash uchun",
+    "C) Misqol parini chaqirish uchun",
+    "D) Otasiga ko‘rsatish uchun"
+   ],
+   "answer": "A) Niyati va vafosini bilish uchun"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Go‘ro‘g‘lining ayollarga ehtirom va erkinlik berish haqidagi javobi qanday?",
+   "options": [
+    "A) Yuksak odamiylik va mardlik namunasi",
+    "B) Mansabdorlik va kibr belgisi",
+    "C) Qo‘rqoqlik va ojizlik alomati",
+    "D) Oddiy va e'tiborsiz so‘zlar"
+   ],
+   "answer": "A) Yuksak odamiylik va mardlik namunasi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li Misqol parini Qofdan qanday chorladi?",
+   "options": [
+    "A) Sozini chertib qo‘shiq aytdi",
+    "B) Oqchagul orqali maktub yubordi",
+    "C) Farqis devni xabariga yubordi",
+    "D) G‘irko‘k otini choptirib bordi"
+   ],
+   "answer": "A) Sozini chertib qo‘shiq aytdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Odamning qadri pul bilan bo‘lmaydi» degan jumla nimani ulug‘laydi?",
+   "options": [
+    "A) Ma'naviyat va halol insoniylikni",
+    "B) Boylik va mol-dunyo to‘plashni",
+    "C) Qimmatbaho kiyim va otlarni",
+    "D) Mansab va kuch-qudratni"
+   ],
+   "answer": "A) Ma'naviyat va halol insoniylikni"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Go‘ro‘g‘li Misqol pari uchun nega asov toyni tanladi?",
+   "options": [
+    "A) Toy ham tulporzod bo‘lgani uchun",
+    "B) Cho‘ponlar tekinga bergani uchun",
+    "C) G‘irko‘k ot charchagani uchun",
+    "D) Boshqa ot umuman yo‘qligi uchun"
+   ],
+   "answer": "A) Toy ham tulporzod bo‘lgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Go‘ro‘g‘lining va'da qilingan kuni qaytib kelishi qaysi xislat?",
+   "options": [
+    "A) Va'daga vafo va mas'uliyat",
+    "B) Tasodif va omad kulishi",
+    "C) Majburiyat va qo‘rquv hissi",
+    "D) Shoshqaloqlik va beborlik"
+   ],
+   "answer": "A) Va'daga vafo va mas'uliyat"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar oxirida Chambildagi voqealar tartibi qanday?",
+   "options": [
+    "A) Qaytish, peshvoz chiqish, to‘y",
+    "B) To‘y qilish, qaytish, peshvoz",
+    "C) Peshvoz chiqish, to‘y, qaytish",
+    "D) To‘y qilish, peshvoz, qaytish"
+   ],
+   "answer": "A) Qaytish, peshvoz chiqish, to‘y"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston so‘ngidagi to‘y tasviri kitobxonda qanday tuyg‘u qoldiradi?",
+   "options": [
+    "A) Qanoat, shodlik va ezgulik",
+    "B) Xavotir va tushkunlik tuyg‘usi",
+    "C) Afsus va achinish hissi",
+    "D) G‘azab va nafrat tuyg‘usi"
+   ],
+   "answer": "A) Qanoat, shodlik va ezgulik"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Doston qanday xotima bilan yakunlanadi?",
+   "options": [
+    "A) Chambilda to‘y-tomosha bo‘lib tugaydi",
+    "B) Go‘ro‘g‘li Irambog‘ida qolib ketadi",
+    "C) Misqol pari Qo‘hi Qofga qaytadi",
+    "D) Yigitlar urushga otlanib ketadi"
+   ],
+   "answer": "A) Chambilda to‘y-tomosha bo‘lib tugaydi"
+  }
+ ]
+}

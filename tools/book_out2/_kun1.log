@@ -1,0 +1,172 @@
+/Users/bolalaryozuvchisi/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/bolalaryozuvchisi/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/bolalaryozuvchisi/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+1-kun: 28 ta kitob, taxminiy narx ~$1.07
+
+09-02 21:27:16  [1/28] G‘olib iroda (kesma, 61,799 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:28:05     · 1-urinish: 1 ta kamchilik (22-savol: mayda tafsilot so‘ralgan («necha...»): 'Fransuz yo...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:29:15     ✓ tayyor (119 soniya, jami $0.09)
+09-02 21:29:15  [2/28] Hayrat ul-abror (kesma, 95,839 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:30:04     ✓ tayyor (50 soniya, jami $0.15)
+09-02 21:30:04  [3/28] Hellados (to‘liq, 33,876 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:30:36     ✓ tayyor (32 soniya, jami $0.18)
+09-02 21:30:36  [4/28] Iliada (kesma, 95,715 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:31:37     ✓ tayyor (61 soniya, jami $0.24)
+09-02 21:31:37  [5/28] Imom Buxoriydan qirq hadis (kesma, 57,279 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:32:09     ✓ tayyor (31 soniya, jami $0.26)
+09-02 21:32:09  [6/28] Iymon (kesma, 97,672 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:32:51     ✓ tayyor (42 soniya, jami $0.30)
+09-02 21:32:51  [7/28] Mashriqo (kesma, 65,202 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:33:51     ✓ tayyor (60 soniya, jami $0.35)
+09-02 21:33:51  [8/28] Mening Dog‘istonim (kesma, 70,203 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:34:15     ✓ tayyor (24 soniya, jami $0.38)
+09-02 21:34:15  [9/28] O‘tkan kunlar (kesma, 96,829 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:35:12     ✓ tayyor (57 soniya, jami $0.44)
+09-02 21:35:12  [10/28] Qobusnoma (kesma, 97,198 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:36:18     · 1-urinish: 1 ta kamchilik (3-savol: mayda tafsilot so‘ralgan («necha...»): 'Asar necha ...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:37:34     ✓ tayyor (142 soniya, jami $0.55)
+09-02 21:37:34  [11/28] Raqamlar uchun yaralgan idrok (kesma, 101,036 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:38:35     · 1-urinish: 1 ta kamchilik (11-savol: mayda tafsilot so‘ralgan («necha...»): '«Pomidor» ...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:39:24     · 2-urinish: 1 ta kamchilik (kirill harfi: 'an va samarali o‘rganish уsullaridan foy'...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:40:04     · 3-urinish: 3 ta kamchilik (1-savol: mayda tafsilot so‘ralgan («necha...»): 'Barbara Ouk...)
+09-02 21:40:04     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+09-02 21:40:04  [12/28] Ruhiy tarbiya (kesma, 96,711 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:40:31     ✓ tayyor (27 soniya, jami $0.76)
+09-02 21:40:31  [13/28]  (to‘liq, 10,364 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:41:16     · 1-urinish: 3 ta kamchilik («title» maydoni bo‘sh...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:42:21     · 2-urinish: 1 ta kamchilik («title» maydoni bo‘sh...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:43:18     · 3-urinish: 2 ta kamchilik («title» maydoni bo‘sh...)
+09-02 21:43:18     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+09-02 21:43:18  [14/28] Uch mushketyor (kesma, 96,508 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:43:44     · 1-urinish: 4 ta kamchilik (kirill harfi: 'adoqat, mardlik, tarixiy воqеalаr va mus'...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:44:18     ✓ tayyor (60 soniya, jami $0.92)
+09-02 21:44:18  [15/28] Umr manzillari (kesma, 53,576 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:45:30     ✓ tayyor (72 soniya, jami $0.96)
+09-02 21:45:30  [16/28] Yulduzli tunlar (kesma, 96,728 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:45:58     ✓ tayyor (29 soniya, jami $1.01)
+09-02 21:45:58  [17/28] Baxtiyor oila (kesma, 97,120 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:46:49     ✓ tayyor (51 soniya, jami $1.05)
+09-02 21:46:49  [18/28] Boburnoma (kesma, 96,428 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:47:57     · 1-urinish: 3 ta kamchilik (1-savol: mayda tafsilot so‘ralgan («necha...»): 'Bobur Farg‘...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:49:05     ✓ tayyor (136 soniya, jami $1.16)
+09-02 21:49:05  [19/28] Factfulness (kesma, 98,727 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:50:44     ✓ tayyor (100 soniya, jami $1.22)
+09-02 21:50:44  [20/28] Ilohiy komediya (kesma, 78,767 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:51:50     ✓ tayyor (65 soniya, jami $1.27)
+09-02 21:51:50  [21/28] Klod Gyo (to‘liq, 58,029 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:52:41     · 1-urinish: 2 ta kamchilik (2-savol: mayda tafsilot so‘ralgan («necha...»): 'Klod Gyo bi...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:53:44     ✓ tayyor (115 soniya, jami $1.35)
+09-02 21:53:44  [22/28] Mezon uz-zamon (to‘liq, 50,460 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:54:49     · 1-urinish: 1 ta kamchilik (10-savol: mayda tafsilot so‘ralgan («necha...»): 'Muallif o‘...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:56:07     ✓ tayyor (142 soniya, jami $1.43)
+09-02 21:56:07  [23/28] Mukammal saodat yo‘li (kesma, 96,661 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:56:56     ✓ tayyor (49 soniya, jami $1.47)
+09-02 21:56:56  [24/28] Obid ketmon (kesma, 96,087 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:57:25     ✓ tayyor (29 soniya, jami $1.51)
+09-02 21:57:25  [25/28] Sab'ayi sayyor (kesma, 95,486 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 21:58:45     · 1-urinish: 2 ta kamchilik (20-savol: mayda tafsilot so‘ralgan («necha...»): 'Muallif «H...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 22:00:06     ✓ tayyor (161 soniya, jami $1.63)
+09-02 22:00:06  [26/28] Sho‘rodan qolgan odamlar (kesma, 95,442 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 22:00:57     ✓ tayyor (51 soniya, jami $1.69)
+09-02 22:00:57  [27/28] Ufq (kesma, 95,719 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 22:02:12     · 1-urinish: 2 ta kamchilik (2-savol: mayda tafsilot so‘ralgan («necha...»): 'Tursunboy n...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 22:03:16     ✓ tayyor (138 soniya, jami $1.80)
+09-02 22:03:16  [28/28] Zukkolar va landavurlar (kesma, 95,876 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 22:04:07     · 1-urinish: 1 ta kamchilik (24-savol: mayda tafsilot so‘ralgan («necha...»): 'Marita har...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 22:05:20     · 2-urinish: 1 ta kamchilik (imlo xatosi: "s kabi kompyuter daho'larining muvaffaqiya"...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-02 22:06:36     · 3-urinish: 1 ta kamchilik (22-savol: mayda tafsilot so‘ralgan («necha...»): 'Sholi yeti...)
+09-02 22:06:36     ✗ 3 urinishda ham chiqmadi — qo‘lda ko‘riladi
+
+09-02 22:06:36  YAKUN: 25 ta tayyor, 3 ta chiqmadi. Sarflandi: $1.97 (kirish 1,463,642, chiqish 231,331 token)
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x10bf5fa60>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x10bfa8820>, 2360.904649458)])']
+connector: <aiohttp.connector.TCPConnector object at 0x10bf5f730>

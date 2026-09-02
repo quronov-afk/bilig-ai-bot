@@ -1,0 +1,486 @@
+{
+ "title": "Qorxat",
+ "author": "Nosir Fozilov",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "do‘stlik",
+   "sarguzasht",
+   "mas'uliyat",
+   "tabiat",
+   "halollik"
+  ],
+  "theme": "Samimiy do‘stlik, mas'uliyat va hayotiy tajribaga tayanib ijod qilishning muhimligi. Yozuvchilik va har qanday kasbda haqiqat va halol mehnat asosiy o‘rin tutadi.",
+  "summary": "Sog‘indiq ismli maktab o‘quvchisi yozuvchi bo‘lishni orzu qiladi. Biroq u o‘zi ko‘rmagan narsalar haqida yozgani uchun tahririyatdan rad javobi oladi. Uyiga kelgan jurnalist Jo‘ra amaki unga faqat o‘zi ko‘rgan-bilgan voqealarni yozishni maslahat beradi. Sinf majlisida o‘quvchilar Mo‘ynoqlik Qahramon baliqchi Qalli ota Shomurodovni sinfning faxriy a'zosi qilib saylashadi. Sog‘indiq uni taklif qilish va fotosuratlar olib kelish uchun Mo‘ynoqqa, o‘rtog‘i Asetnikiga jo‘naydi.\nMo‘ynoqda u Aset va boshqa mahalliy bolalar bilan tanishadi. Bolalar ularga «qorxat» berib, shart bo‘yicha ziyofat uchun ov va baliq ovlashni yuklashadi. Bolalar to‘qayga ovga chiqib, so‘ng muzlagan daryoda baliq tutayotganlarida muz bo‘lagi ko‘chib, ularni oqizib ketadi. Ular daryo va dengiz oralig‘ida oqib, kichik orolchada qolib ketishadi. Sog‘indiq va Aset muzda olov yoqishadi. Qidiruvga chiqqan vertolyot olovni payqaydi va katerda kelgan qutqaruvchilar, Qalli ota hamda Japaq amaki ularni qutqaradi.\nUlar salomat ovulga qaytib, qorxat shartini bajarishadi. Qalli ota bolalarning matonatini va g‘ayratini ko‘rib, sinf faxriy a'zosi bo‘lishga rozi bo‘ladi. Mehnat va do‘stlik haqida katta saboq olgan Sog‘indiq ushbu sarguzashtlarni haqqoniy qissa qilib yozib chiqadi.",
+  "characters": "Sog‘indiq — ijodga qiziquvchi, tirishqoq va samimiy shahar bolasi.\nAset — Sog‘indiqning mo‘ynoqlik o‘rtog‘i, chaqqon va tabiat sirlarini yaxshi biladigan bola.\nJo‘ra Parpiyev — tajribali jurnalist, Sog‘indiqqa to‘g‘ri yo‘l ko‘rsatgan ustoz.\nQalli ota Shomurodov — mehnat qahramoni, tajribali va bag‘rikeng baliqchi.\nJapaq amaki — Asetning dadasi, shifokor, bag‘rikeng inson.\nSafargul va Seyt — Mo‘ynoqlik sinfdoshlar, qorxat o‘yinida faol qatnashgan bolalar.",
+  "conclusion": "Ushbu asar bolalarga har bir ishda mas'uliyatli bo‘lishni, do‘stlikni qadrlashni va qiyin vaziyatda sarosimaga tushmaslikni o‘rgatadi. Shuningdek, haqiqiy muvaffaqiyat zamirida halol mehnat hamda hayotiy tajriba yotishini ko‘rsatadi. Kitobxon bolalarda tabiatga, el-yurt xizmatidagi insonlarga nisbatan hurmat tuyg‘usini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, samimiy, hayajonli",
+  "for_whom": "Sarguzashtlarni, tabiat va do‘stlik haqidagi qiziqarli voqealarni o‘qishni xush ko‘radigan, yozuvchilikka hamda fotosuratga qiziqadigan bolalar uchun.",
+  "events": [
+   "1. Sog‘indiq gazetaga yuborgan she'rlari bosilmagani uchun hafsalasi pir bo‘ldi.",
+   "2. Uyga kelgan jurnalist Jo‘ra Parpiyev Sog‘indiqqa faqat o‘zi ko‘rgan va bilgan narsalari haqida yozishni maslahat berdi.",
+   "3. Sinf majlisida mo‘ynoqlik Qahramon baliqchi Qalli ota Shomurodovni sinfga faxriy a'zo qilib saylashdi.",
+   "4. Sog‘indiq Qalli ota bilan uchrashish va suratlar olish uchun Mo‘ynoqqa yo‘l oldi.",
+   "5. Sog‘indiq Nukusdan chanasimon g‘ildirakli samolyotda Mo‘ynoqqa uchib keldi.",
+   "6. Mo‘ynoq aeroportida uni o‘rtog‘i Aset va boshqa bolalar kutib olishdi.",
+   "7. Asetning uyida Sog‘indiq uning buvisi va mehmondo‘st oilasi bilan tanishdi.",
+   "8. Mahalliy bolalar Sog‘indiq va Asetga qorxat berib, ziyofat uchun ov va baliq tutish shartini qo‘yishdi.",
+   "9. Sog‘indiq va Aset miltiqni olib to‘qayga ovga chiqishdi.",
+   "10. Aset qamish yaproqlarining kunchiqar tomonga qarab o‘sishini ko‘rsatib adashmaslik sirlarini tushuntirdi.",
+   "11. Ovda ular bitta quyon va qirg‘ovulni otib olishdi.",
+   "12. Ular lampochka o‘rnatilgan qarmoq va sumba bilan daryoga baliq ovlashga tushishdi.",
+   "13. Ular ko‘plab chavoq va katta bakira balig‘ini tutib olishdi.",
+   "14. Ular xursandchilikdan muz ustida sakraganlarida muz bo‘lagi ko‘chib, ularni daryo oqimi bo‘ylab oqizib ketdi.",
+   "15. Seyt ularning oqib ketayotganini ko‘rib, butun ovul va qutqaruvchilarga xabar berdi.",
+   "16. Sog‘indiq va Aset muz parchasi ustida aysberg va akulalar haqida xavotirli xayollarga borishdi.",
+   "17. Ular to‘xtab qolgan kichik orolchaga Sog‘ase deb nom berishdi.",
+   "18. Bolalar orolchada qarmoq dastasidan tutantiriq qilib, olov yoqishdi.",
+   "19. Tunda uchib o‘tgan vertolyot ularning olovini payqab, katerga radio orqali xabar berdi.",
+   "20. Japaq amaki va Qalli ota katerda kelib, bolalarni qutqarib olishdi.",
+   "21. Bolalarni shifoxonada issiq choy va tibbiy ko‘rik bilan davolashdi.",
+   "22. Ertasi kuni vertolyot bolalarni qaytarib ovulga olib keldi.",
+   "23. Oyisi va buvisi bolalarni eson-aman ko‘rib xursand bo‘lishdi.",
+   "24. Bolalar birgalikda tutib kelgan ov va baliqlaridan taom hozirlashdi.",
+   "25. Qalli ota va ilmiy mudir Asetnikiga ziyofatga kelishdi.",
+   "26. Qalli ota bolalarning mehnatsevarligini maqtadi va sinf faxriy a'zosi bo‘lishga rozi bo‘ldi.",
+   "27. Dasturxonda ovqat yeyilayotganda qirg‘ovul go‘shtida sochma o‘q chiqib qoldi.",
+   "28. Qalli ota bolalarning sirini tushunib, ularni maqtab vaziyatdan olib chiqdi.",
+   "29. Sog‘indiq barcha voqealarni suratlarga olib, albomini to‘ldirdi.",
+   "30. Sog‘indiq To‘rtko‘lga qaytgach, Jo‘ra amakining maslahatiga amal qilib, boshdan kechirganlarini yozib tugatdi."
+  ],
+  "quotes": [
+   "Ko‘rmagan, bilmagan narsani yozsangiz, yozgan asaringiz qo‘polroq qilib aytganda, yolg‘on bo‘lib qoladi.",
+   "Yozganimni gazeta chiqarmas ekan, deb yozmay qo‘ysangiz, bu – qo‘rqoqlik bo‘ladi.",
+   "Qamishning yaprog‘i doim kun chiqadigan tarafga qarab o‘sadi.",
+   "O‘zing mehnat qilib topgan nonning mazasi doim mana shunaqa shirin bo‘ladi!",
+   "Jo‘ra amakim aytganlariday, faqat ko‘rgan-bilgan narsalarimni yozdim."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jo‘ra amaki Sog‘indiqqa qanday ijod qilishni maslahat berdi?",
+   "options": [
+    "A) Faqat ko‘rgan va bilganini yozishni",
+    "B) Faqat she'rlar mashq qilishni",
+    "C) Boshqa kitoblardan ko‘chirishni",
+    "D) Fantastik hikoyalar to‘qishni"
+   ],
+   "answer": "A) Faqat ko‘rgan va bilganini yozishni"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sinf majlisida kimni faxriy a'zo qilishga kelishib olindi?",
+   "options": [
+    "A) Qalli ota Shomurodovni",
+    "B) Jo‘ra Parpiyevni",
+    "C) Chinnixon opani",
+    "D) Murod Qurbonnazarovni"
+   ],
+   "answer": "A) Qalli ota Shomurodovni"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sog‘indiq Mo‘ynoqqa qaysi transport vositasida uchib bordi?",
+   "options": [
+    "A) Samolyotda",
+    "B) Vertolyotda",
+    "C) Avtobusda",
+    "D) Poyezdda"
+   ],
+   "answer": "A) Samolyotda"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Aeroportda Sog‘indiqni kim kutib oldi?",
+   "options": [
+    "A) O‘rtog‘i Aset",
+    "B) Qalli ota",
+    "C) Jo‘ra amaki",
+    "D) Sinf rahbari"
+   ],
+   "answer": "A) O‘rtog‘i Aset"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sog‘indiqning Mo‘ynoqqa borish tartibiga mos keladigan javob qaysi?",
+   "options": [
+    "A) Toshkent, Nukus, Mo‘ynoq",
+    "B) To‘rtko‘l, Nukus, Mo‘ynoq",
+    "C) Urganch, To‘rtko‘l, Mo‘ynoq",
+    "D) Nukus, To‘rtko‘l, Mo‘ynoq"
+   ],
+   "answer": "B) To‘rtko‘l, Nukus, Mo‘ynoq"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sog‘indiq nega Mo‘ynoqqa borishga qaror qildi?",
+   "options": [
+    "A) Qalli ota bilan uchrashish uchun",
+    "B) Kasalxonada davolanish uchun",
+    "C) Ta'tilda dam olish uchun",
+    "D) Yangi maktabga o‘tish uchun"
+   ],
+   "answer": "A) Qalli ota bilan uchrashish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jo‘ra amaki Sog‘indiqning kosmos haqidagi she'rini nega kamchilik deb bildi?",
+   "options": [
+    "A) O‘zi ko‘rmagan narsasini yozgani uchun",
+    "B) She'r juda uzun bo‘lgani uchun",
+    "C) Imlo xatolari ko‘p bo‘lgani uchun",
+    "D) Gazetada bosilib chiqqani uchun"
+   ],
+   "answer": "A) O‘zi ko‘rmagan narsasini yozgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sog‘indiqning xatni o‘qib rad etilganini aytishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, ustozdan maslahat oldi",
+    "B) Noto‘g‘ri, xatni yashirishi kerak edi",
+    "C) To‘g‘ri, chunki u ranjigan edi",
+    "D) Noto‘g‘ri, xatni ko‘rsatish uyat"
+   ],
+   "answer": "A) To‘g‘ri, ustozdan maslahat oldi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Samolyotda qo‘li yopishib qolganda cholning yordam berishini qanday baholaysan?",
+   "options": [
+    "A) Kattalarga xos g‘amxo‘rlik va mehribonlik",
+    "B) Oddiy tasodifiy harakat",
+    "C) Bolaning o‘ziga qo‘yib berish",
+    "D) Bemahsul aralashuv deb baholayman"
+   ],
+   "answer": "A) Kattalarga xos g‘amxo‘rlik va mehribonlik"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Jo‘ra amaki «Yozuvchi botir bo‘lishi kerak» deganda nimani nazarda tutdi?",
+   "options": [
+    "A) Rad javobidan cho‘chimay yozishni",
+    "B) Qorong‘ida yolg‘iz yurishni",
+    "C) Miltiq otishni o‘rganishni",
+    "D) Barcha bilan urishishni"
+   ],
+   "answer": "A) Rad javobidan cho‘chimay yozishni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mo‘ynoqlik bolalar Aset va Sog‘indiqqa nima berishdi?",
+   "options": [
+    "A) Qorxat",
+    "B) Maktub",
+    "C) Sovg‘a",
+    "D) Kitob"
+   ],
+   "answer": "A) Qorxat"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qorxat shartiga ko‘ra bolalar ziyofat uchun nimani ovlashlari kerak edi?",
+   "options": [
+    "A) Quyon va baliqni",
+    "B) Kiyik va o‘rdakni",
+    "C) Bo‘ri va tulkini",
+    "D) Tovuq va g‘ozni"
+   ],
+   "answer": "A) Quyon va baliqni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Aset to‘qayda yo‘nalishni qanday aniqladi?",
+   "options": [
+    "A) Qamish yaproqlarining o‘sishiga qarab",
+    "B) Quyoshning joylashishiga qarab",
+    "C) Quyon izlariga qarab",
+    "D) Shamolning esishiga qarab"
+   ],
+   "answer": "A) Qamish yaproqlarining o‘sishiga qarab"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalar daryoda baliq tutayotganda qanday ko‘ngilsizlik yuz berdi?",
+   "options": [
+    "A) Muz bo‘lagi ajralib oqib ketdi",
+    "B) Qarmog‘i daryoga cho‘kib ketdi",
+    "C) Qorbo‘ron boshlanib qoldi",
+    "D) Miltig‘i suvga tushib ketdi"
+   ],
+   "answer": "A) Muz bo‘lagi ajralib oqib ketdi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolalarning to‘qay va daryodagi harakatlar ketma-ketligi qanday bo‘ldi?",
+   "options": [
+    "A) Ov qilish, baliq tutish, oqib ketish",
+    "B) Baliq tutish, ov qilish, oqib ketish",
+    "C) Oqib ketish, ov qilish, baliq tutish",
+    "D) Ov qilish, oqib ketish, baliq tutish"
+   ],
+   "answer": "A) Ov qilish, baliq tutish, oqib ketish"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qorxat topshirig‘i va uning natijasi mosligini toping.",
+   "options": [
+    "A) Ov va baliq ovlandi",
+    "B) Faqat baliq sotib olindi",
+    "C) Ziyofat bekor qilindi",
+    "D) Bolalar uyda o‘tirishdi"
+   ],
+   "answer": "A) Ov va baliq ovlandi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Aset va Sog‘indiq daryoga borish haqida kattalarga aytishmadi?",
+   "options": [
+    "A) Qorxat shartini o‘zlari bajarishmoqchi edi",
+    "B) Kattalar ularga ruxsat bermagan edi",
+    "C) Uyda hech kim yo‘q edi",
+    "D) Ular kattalardan qo‘rqishgan edi"
+   ],
+   "answer": "A) Qorxat shartini o‘zlari bajarishmoqchi edi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Seyt daryo bo‘yiga kelganda nega qichqirib hayajonlandi?",
+   "options": [
+    "A) Ularning muzda oqayotganini ko‘rgani uchun",
+    "B) Baliq tuta olmagani uchun",
+    "C) Miltiq ovozidan qo‘rqgani uchun",
+    "D) Bolalarga yetib ololmagani uchun"
+   ],
+   "answer": "A) Ularning muzda oqayotganini ko‘rgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Asetning to‘qayda adashmaslik yo‘lini bilishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Tabiat sirlarini va bilimni yaxshi bilishini",
+    "B) Faqat omadiga tayanib yurishini",
+    "C) Kattalarning gapiga kirmasligini",
+    "D) Doim qo‘rqib harakat qilishini"
+   ],
+   "answer": "A) Tabiat sirlarini va bilimni yaxshi bilishini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif daryoda muz parchasi ajralgan lahzani qanday ta'sirlantirgan?",
+   "options": [
+    "A) Qars etib tagimiz qimirlab ketdi",
+    "B) Shuvillab suv sathi ko‘tarildi",
+    "C) Daryo to‘lqini shiddat bilan urildi",
+    "D) Muz Birdan suvga cho‘kdi"
+   ],
+   "answer": "A) Qars etib tagimiz qimirlab ketdi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalar muz ustida qolganda to‘xtagan orolchaga nima deb nom berishdi?",
+   "options": [
+    "A) Sog‘ase oroli",
+    "B) Robinzon oroli",
+    "C) Mo‘ynoq oroli",
+    "D) Orolcha"
+   ],
+   "answer": "A) Sog‘ase oroli"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qutqaruvchilar bolalarning joyini qanday payqab olishdi?",
+   "options": [
+    "A) Bolalar yoqqan olov orqali",
+    "B) Miltiq ovozini eshitib",
+    "C) Qarmoq chirog‘ini ko‘rib",
+    "D) Seyt ko‘rsatgan xarita bo‘yicha"
+   ],
+   "answer": "A) Bolalar yoqqan olov orqali"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolalarni katerda qutqarib olganlar orasida kim bor edi?",
+   "options": [
+    "A) Qalli ota va Japaq amaki",
+    "B) Jo‘ra amaki va sinf rahbari",
+    "C) Faqat uchuvchilar",
+    "D) Asetning buvisi va oyisi"
+   ],
+   "answer": "A) Qalli ota va Japaq amaki"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qalli ota qaysi go‘shtni yeganda tishiga sochma tegib qoldi?",
+   "options": [
+    "A) Qirg‘ovul go‘shtini",
+    "B) Quyon go‘shtini",
+    "C) Baliq go‘shtini",
+    "D) Murchli go‘shtni"
+   ],
+   "answer": "A) Qirg‘ovul go‘shtini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolalarning qutqarilish jarayoni ketma-ketligi qaysi javobda to‘g‘ri ko‘rsatilgan?",
+   "options": [
+    "A) Olov yoqish, vertolyot ko‘rishi, kater kelishi",
+    "B) Kater kelishi, olov yoqish, vertolyot ko‘rishi",
+    "C) Vertolyot ko‘rishi, kater kelishi, olov yoqish",
+    "D) Olov yoqish, kater kelishi, vertolyot ko‘rishi"
+   ],
+   "answer": "A) Olov yoqish, vertolyot ko‘rishi, kater kelishi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sog‘indiq katerga chiqqach nega yig‘lab yubordi?",
+   "options": [
+    "A) Hayajon va xavf ortda qolgani uchun",
+    "B) Qalli otadan qo‘rqkani uchun",
+    "C) Fotoapparati yo‘qolgani uchun",
+    "D) Buvining ovqatini sog‘ingani uchun"
+   ],
+   "answer": "A) Hayajon va xavf ortda qolgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qalli ota sochma o‘qni ko‘rgach nega sirni oshkor qilmadi?",
+   "options": [
+    "A) Bolalarning mehnatini va g‘ayratini qadrlagani uchun",
+    "B) O‘qni payqamay qolgani uchun",
+    "C) Ovqat mazali bo‘lgani uchun",
+    "D) Mehmonlarni xafa qilmoqchi bo‘lmagani uchun"
+   ],
+   "answer": "A) Bolalarning mehnatini va g‘ayratini qadrlagani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qalli otaning «O‘zing mehnat qilib topgan non shirin» deyishini qanday baholaysan?",
+   "options": [
+    "A) Halol mehnat va harakatni qadrlash",
+    "B) Faqat ovchilikni maqtagan g‘oya",
+    "C) Bolalarni ayblash uchun aytilgan gap",
+    "D) Shunchaki hazil tariqasidagi gap"
+   ],
+   "answer": "A) Halol mehnat va harakatni qadrlash"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif qissaning oxirida qanday saboq bergan?",
+   "options": [
+    "A) Haqiqiy voqealar asosida yozish muhimligini",
+    "B) Doim uydan chiqmay o‘tirish lozimligini",
+    "C) Baliq tutish eng asosiy mashg‘ulotligini",
+    "D) Qorxat o‘ynash xavfli ekanligini"
+   ],
+   "answer": "A) Haqiqiy voqealar asosida yozish muhimligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Xayr, Sog‘ase!» deya xayrlashishda qanday tuyg‘u aks etgan?",
+   "options": [
+    "A) Minnatdorlik va unutilmas sarguzasht hissi",
+    "B) Alam va afsuslanish tuyg‘usi",
+    "C) Qo‘rquv va vahima tuyg‘usi",
+    "D) Nafrat va loqaydlik hissi"
+   ],
+   "answer": "A) Minnatdorlik va unutilmas sarguzasht hissi"
+  }
+ ]
+}

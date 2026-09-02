@@ -1,0 +1,477 @@
+{
+ "title": "Yusuf va Ahmad",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "jasorat",
+   "sadoqat",
+   "qardoshlik",
+   "adolat",
+   "vatanparvarlik"
+  ],
+  "theme": "Asarda mardlik, adolat, el-yurtga sadoqat hamda og‘ir sinovlarda aka-uka va do‘stlarning inoq-ahilligi tarannum etiladi. Hukmdorlarning adolatsizligi va xiyonati qoralanib, tinchlik hamda bag‘rikenglik oliy qadriyat sifatida ulug‘lanadi.",
+  "summary": "Isfahon hukmdori Bo‘zo‘g‘lonxon amaldorlarning ig‘vosiga uchrab, jiyanlari Yusufbek va Ahmadbekni shahardan haydaydi. Ashirbek sardor Bo‘zo‘g‘lonxonni o‘ldirishni taklif qilsa-da, Yusufbek tog‘asiga qarshi qon to‘kishni xohlamay, podsho amrini vojib biladi. U o‘n bir ming uyli elati bilan shaharni tinchgina tark etadi. Ular uzoq yo yo‘l yurib Xorazm taraflarga boradilar. Urganch podshosi Eralixon ularning kelayotganini eshitib, Nodirbek sulton boshchiligida elchilarni yuboradi va beklarning do‘stona niyatda ekanini biladi. Eralixon ularni izzat-hurmat bilan kutib olib, o‘z taxtini Yusufbekka topshiradi hamda qizi Gulasalni unga nikohlab beradi.\n\nBir kuni Misr podshosi Go‘zalshoh tush ko‘rib, Chin-Mochinlik savdogar Bobo Qambardan taxtini Xorazmdan kelgan ikki bek egallashi haqidagi bashoratni eshitadi. Go‘zalshoh buning oldini olish uchun Xorazmga Mirza Mahmud degan ayyor josusni yuboradi. Mirza Mahmud beklar ishonchiga kirib oladi va ular Hovdak bo‘yida ov qilib uxlab yotganlarida pistirma yordamida asir oladi. Beklar Misrda yetti yil davomida zindonda og‘ir uqubatlarni tortadilar. Zindonda Bobo Qambar va mirshabning qizi Qorako‘z beklarga yordam berishadi. Yusuf va Ahmad zindonda dutor yasab, soz va so‘z aytish musobaqasida Go‘zalshohning mashhur sozandasi Ko‘kchadan g‘olib chiqadilar hamda bandilikdan ozod bo‘ladilar.\n\nGo‘zalshoh ularga yarim taxt va mol-dunyo taklif qilganda, mard beklar faqat po‘lat sovut, yaroq va ildam otlar so‘rab Xorazmga qaytadilar. Ular yetti yillik xazonlik uchun Misrga og‘ir lashkar tortadilar. Ularning qudratini ko‘rgan Go‘zalshoh jangsiz tobe bo‘ladi. Bobo Qambarning oqilona maslahati bilan Ahmadbek Go‘zalshohning qizi Gulnahorga uylanadi, Yusufbek esa zindonda sadoqat ko‘rsatgan Qorako‘zni o‘zi bilan olib keladi. Qon to‘kilmay, tinchlik va qudachilik o‘rnatiladi. Yusufbek Xivada, Ahmadbek Urganchda adolat bilan yurt so‘rab, murod-maqsadlariga yetadilar.",
+  "characters": "Yusufbek: Asarning bosh qahramoni, bosiq, odobli, adolatli va uzoqni ko‘ra oladigan bek. Tog‘asiga qarshi qurol ko‘tarmaydi, el-yurt tinchligini hamma narsadan ustun qo‘yadi.\nAhmadbek: Yusufbekning ukasi, mard va jasur botir. Og‘ir sinovlarda va asirlikda akasiga sadoqatli yelkadosh bo‘ladi.\nBo‘zo‘g‘lonxon: Isfahon hukmdori, Yusuf va Ahmadning tog‘asi. Amaldorlarning ig‘vosiga uchrab jiyanlarini haydaydi, keyinchalik pushaymon bo‘ladi.\nAshirbek sardor: Beklarning mard lashkarboshisi va tog‘asi. Qiyin damlarda beklarni himoya qiladi va ularga sadoqat bilan xizmat qiladi.\nEralixon: Urganch podshosi, odil va saxovatli hukmdor. Beklarning mardligini qadrlab, taxtini va qizini Yusufbekka topshiradi.\nGo‘zalshoh: Misr podshosi, taxtini yo‘qotishdan qo‘rqib beklarga hiyla ishlatadi, doston oxirida tinchlikni tan olib quda bo‘ladi.\nMirza Mahmud: Misr podshosining ayyor josusi, tuzkur va xiyonatkor kimsadir.\nBobo Qambar: Chin-Mochinlik savdogar va ta'birchi, zindonda beklarga hamdam bo‘lib, oxirida ularni quda-anda qilishda bosh bo‘ladi.\nQorako‘z: Mirshab Hamzaning qizi, zindondagi beklarga mehri tushib, ularga yordam beradigan va'dasiga vafo qiz.",
+  "conclusion": "Doston kitobxonga mardlik, sabr-toqat, kattalarga hurmat hamda va'daga vafo kabi yuksak insoniy fazilatlarni o‘rgatadi. Yusufbekning tog‘asiga qarshi urushmasdan tinchlikni tanlashi bolaga bosiqlik va oqillik kuchdan ustun turishini ko‘rsatadi. Asar orqali bola vafo va sadoqat har qanday zulm ustidan g‘alaba qozonishini, adolat va tinchlik eng oliy saodat ekanini anglab yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, mardona, ta'sirchan",
+  "for_whom": "Xalq dostonlari, qahramonlik voqealari, mardlik va sadoqat haqidagi sarguzashtli asarlarga qiziqadigan o‘quvchilar uchun.",
+  "events": [
+   "Isfahon podshosi Bo‘zo‘g‘lonxon amaldorlar ig‘vosiga uchrab, jiyanlari Yusufbek bilan Ahmadbekka eldan ketish haqida xat yuboradi.",
+   "Ashirbek sardor Bo‘zo‘g‘lonxonni o‘ldirishni taklif qiladi, lekin Yusufbek podsho amri vojib deb qon to‘kishdan bosh tortadi.",
+   "Yusufbek va Ahmadbek o‘n bir ming uyli elati bilan Isfahon shahrini tinchgina tark etishadi.",
+   "Urganch podshosi Eralixon kelayotgan beklarga Nodirbek sulton boshchiligida elchilar yuborib ularning niyatini biladi.",
+   "Eralixon Yusufbekning mardligiga qoyil qolib, o‘z taxtini va qizi Gulasalni Yusufbekka topshiradi.",
+   "Misr podshosi Go‘zalshoh tush ko‘rib, Chin elidan kelgan savdagor Bobo Qambarga tushini ta'birlatadi.",
+   "Bobo Qambar Xorazmdan keladigan ikki bek Go‘zalshoh taxtini egallashini bashorat qiladi.",
+   "Go‘zalshoh Xorazmga Mirza Mahmud degan josusini yuboradi va u beklar ishonchiga kirib oladi.",
+   "Yusuf bilan Ahmad ovga chiqib Hovdak bo‘yida uxlab qolishganda, Mirza Mahmud pistirma bilan ularni asir oladi.",
+   "Beklar Misr zindoniga tashlanib, yetti yil davomida og‘ir azob-uqubatlarni boshdan kechiradilar.",
+   "Ashirbek sardor beklarni qutqarish uchun dushman bilan urushib og‘ir yaralanadi.",
+   "Zindonda mirshabning qizi Qorako‘z va Bobo Qambar beklarga ko‘maklashadi.",
+   "Qorako‘z yordamida zindonga ashyolar kiritilib, beklar dutor yasaydilar.",
+   "Yusuf va Ahmad soz hamda so‘z aytish musobaqasida Go‘zalshohning sozandasi Ko‘kchadan g‘olib chiqadilar.",
+   "Go‘zalshoh beklarni bandilikdan ozod qilib, ularga mol-dunyo va taxt ulushini taklif etadi.",
+   "Yusufbek dushmandan mol emas, faqat yaroq va ildam otlar so‘rab Xorazmga qaytadi.",
+   "Yusuf va Ahmad Xorazmga kelib, Misrga qarshi og‘ir lashkar toplaydilar va Misrga yo‘l oladilar.",
+   "Go‘zalshoh beklar qo‘shinining qudratini ko‘rib, jangsiz taslim bo‘ladi va tobe bo‘lishini bildiradi.",
+   "Bobo Qambarning maslahati bilan Ahmadbek Go‘zalshohning qizi Gulnahorga uylanadi va Ikki el o‘rtasida do‘stlik o‘rnatiladi.",
+   "Yusufbek Xivada, Ahmadbek Urganchda adolatli hukmdor bo‘lib murod-maqsadlariga yetadilar."
+  ],
+  "quotes": [
+   "Amri podsho vojib, yuring, ketamiz, Endi bizga yurt haromdir, yoronlar.",
+   "Er yigit birovga sirin aytarmi, Temir nayza egovlasang o‘tarmi, Podsho ketinglar desa bu eldan, Mard yigit ham qon to‘kishmay ketarmi?!",
+   "O‘lik arslondan tirik sichqon avlo degan burungidan qolgan bir naqliyot bor.",
+   "Dushmanidan mol tilarmi mard kishi, Yaxshi anjom, yaxshi bedov tilayman.",
+   "Manmanlikni tilda aytma, ukajon, Manmanlikdan hech kim yetmas maqsadga, O‘zingni past qilgin hargiz, ukajon.",
+   "Chin sidqidil sizga xizmat qilgani, Qochib keldim gunohkor bo‘p podshodan..."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘zo‘g‘lonxon Yusuf va Ahmadga qarshi kimlarning gapiga ishondi?",
+   "options": [
+    "A) Saroy amaldorlari va vazirlarning",
+    "B) Ashirbek sardorning",
+    "C) Urganch podshosi Eralixonning",
+    "D) La'lixon oyimning"
+   ],
+   "answer": "A) Saroy amaldorlari va vazirlarning"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ashirbek sardor Bo‘zo‘g‘lonxonga qarshi nima qilishni taklif qildi?",
+   "options": [
+    "A) Bo‘zo‘g‘lonxonni o‘ldirib taxtni egallashni",
+    "B) Tinchlik shartnomasini tuzishni",
+    "C) Misrga qochib ketishni",
+    "D) Eralixon podshodan yordam so‘rashni"
+   ],
+   "answer": "A) Bo‘zo‘g‘lonxonni o‘ldirib taxtni egallashni"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yusufbek tog‘asi Bo‘zo‘g‘lonxonga qarshi urishmaslikka nega qaror qildi?",
+   "options": [
+    "A) Podsho amrini vojib deb bildi",
+    "B) Tog‘asidan juda qo‘rqqani uchun",
+    "C) Qo‘shini kam bo‘lgani uchun",
+    "D) Urganchga borishni xohlagani uchun"
+   ],
+   "answer": "A) Podsho amrini vojib deb bildi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Isfahondan chiqgach beklar qaysi ketma-ketlikda voqealarni boshdan kechirdi?",
+   "options": [
+    "A) Shaharni tark etdi, Urganchga borishdi",
+    "B) Urganchga bordi, keyin tog‘asi bilan urishdi",
+    "C) Misrga bordi, keyin Isfahonga qaytdi",
+    "D) Eralixonni yengdi, keyin Isfahondan qochdi"
+   ],
+   "answer": "A) Shaharni tark etdi, Urganchga borishdi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bo‘zo‘g‘lonxon yigitlarni shahardan haydash uchun nega xat yubordi?",
+   "options": [
+    "A) O‘z taxtini yo‘qotishdan qo‘rqqani uchun",
+    "B) Ularni ovga yubormoqchi bo‘lgani uchun",
+    "C) Misr podshosi shuni talab qilgani uchun",
+    "D) Ularga yangi yerlar bermoqchi edi"
+   ],
+   "answer": "A) O‘z taxtini yo‘qotishdan qo‘rqqani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Eralixon Nodirbekni beklar qarshisiga nega elchi qilib yubordi?",
+   "options": [
+    "A) Beklarning do‘st yoki dushmanligini bilishga",
+    "B) Beklarni jangsiz asir olish uchun",
+    "C) Ularga Misr yo‘lini ko‘rsatish uchun",
+    "D) Isfahonni birga bosib olish uchun"
+   ],
+   "answer": "A) Beklarning do‘st yoki dushmanligini bilishga"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Yusufbekning tog‘asiga qarshi qurol ko‘tarmay ketishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, qon to‘kilishining oldini oldi",
+    "B) Noto‘g‘ri, taxt uchun urishishi kerak edi",
+    "C) Qo‘rqoqlik, u darrov taslim bo‘ldi",
+    "D) Xato, chunki elatsiz qoldi"
+   ],
+   "answer": "A) To‘g‘ri, qon to‘kilishining oldini oldi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Nodirbekning jangsiz ko‘rishish maslahatini bergani qanday baholanadi?",
+   "options": [
+    "A) Oqilona, tinchlik va totuvlikni ta'minladi",
+    "B) Qo‘rqoqlik, urushdan qochish edi",
+    "C) Xato, chunki dushmanga aldanish edi",
+    "D) Behudagarchilik, hech narsani hal etmadi"
+   ],
+   "answer": "A) Oqilona, tinchlik va totuvlikni ta'minladi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dastlabki qismda Yusufbek obrazining qaysi fazilati yaqqol yoritilgan?",
+   "options": [
+    "A) Kattalarga hurmat va bosiqlik",
+    "B) Manmanlik va g‘azabdorlik",
+    "C) Mol-dunyoga o‘chlik va shafqatsizlik",
+    "D) Ayyorlik va xiyonatkorlik"
+   ],
+   "answer": "A) Kattalarga hurmat va bosiqlik"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eralixon podsho Urganchda Yusufbekka nima taqdim etdi?",
+   "options": [
+    "A) O‘z taxti va qizini",
+    "B) Faqat mingta bedov otni",
+    "C) Misr shahri kalitini",
+    "D) Isfahon taxtini"
+   ],
+   "answer": "A) O‘z taxti va qizini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘zalshoh Xorazmga josus sifatida kimni yubordi?",
+   "options": [
+    "A) Mirza Mahmudni",
+    "B) Ashirbek sardorni",
+    "C) Bobo Qambarni",
+    "D) Nodirbek sultoni"
+   ],
+   "answer": "A) Mirza Mahmudni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mirza Mahmud beklarni qaysi joyda g‘ofillikda ushladi?",
+   "options": [
+    "A) Hovdak bo‘yida ovda uxlab yotganda",
+    "B) Urganch saroyida ziyofat paytida",
+    "C) Isfahon dashtida savash vaqtida",
+    "D) Gurgon daryosidan o‘tayotganda"
+   ],
+   "answer": "A) Hovdak bo‘yida ovda uxlab yotganda"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Misr zindonida beklar kim bilan tanishdi?",
+   "options": [
+    "A) Savdo-sotiq qilgan Bobo Qambar bilan",
+    "B) Urganchlik Nodirbek sulton bilan",
+    "C) Isfahonlik Ashirbek sardor bilan",
+    "D) Eralixonning elchisi bilan"
+   ],
+   "answer": "A) Savdo-sotiq qilgan Bobo Qambar bilan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zindonda dutor yasash uchun kim charxlarini berdi?",
+   "options": [
+    "A) Mirshabning qizi Qorako‘z",
+    "B) Eralixonning qizi Gulasal",
+    "C) Go‘zalshohning qizi Gulnahor",
+    "D) Yusufbekning singlisi Qaldirg‘och"
+   ],
+   "answer": "A) Mirshabning qizi Qorako‘z"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mirza Mahmudning xiyonati qanday tartibda amalga oshdi?",
+   "options": [
+    "A) Ishonchga kirdi, g‘ofillikda asir oldi",
+    "B) Oshkora urushdi, so‘ng qochib ketdi",
+    "C) Zindonga tushdi, so‘ng podsho bo‘ldi",
+    "D) Beklarni aldadilar, so‘ng Isfahonga hayradi"
+   ],
+   "answer": "A) Ishonchga kirdi, g‘ofillikda asir oldi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Go‘zalshoh Xorazm beklarini asir olishga nega intildi?",
+   "options": [
+    "A) Tushida taxti egallanishini eshitgani uchun",
+    "B) Xorazmni boyliklarini olmoqchi bo‘lgani uchun",
+    "C) Beklar unga qarshi urush ochgani uchun",
+    "D) Mirza Mahmudni qutqarish uchun"
+   ],
+   "answer": "A) Tushida taxti egallanishini eshitgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Beklar zindonda dutor chalib nega qo‘shiq aytdi?",
+   "options": [
+    "A) G‘am-hasratini tarqatish va sabr qilish uchun",
+    "B) Go‘zalshohni masxara qilish uchun",
+    "C) Sozandalikdan pul topish uchun",
+    "D) Qorako‘zga yomonlik qilish uchun"
+   ],
+   "answer": "A) G‘am-hasratini tarqatish va sabr qilish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mirza Mahmudning beklar tuzini yeb xiyonat qilishi qanday illat?",
+   "options": [
+    "A) Tuzkurlik va munofiqlik",
+    "B) Botirlik va uddaburonlik",
+    "C) Kattalarga hurmat va sadoqat",
+    "D) Ehtiyotkorlik va donolik"
+   ],
+   "answer": "A) Tuzkurlik va munofiqlik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Ahmadbekning asirlikdagi qiyinchiliklarda aytgan nolasi nimani ko‘rsatadi?",
+   "options": [
+    "A) Insoniy ojizlik va Vatanga talpinishni",
+    "B) Dushmandan o‘ch olishni xohlamasligini",
+    "C) Tog‘asiga nisbatan g‘azabini",
+    "D) Dutor chalishga ishtiyoqini"
+   ],
+   "answer": "A) Insoniy ojizlik va Vatanga talpinishni"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yusuf va Ahmad Misr sozandasi Ko‘kcha bilan nimada bellashdi?",
+   "options": [
+    "A) Soz va so‘z aytish musobaqasida",
+    "B) Qilichbozlik va nayzabazlikda",
+    "C) Ot chopish va kamondan otishda",
+    "D) Polvonlik va gurowda"
+   ],
+   "answer": "A) Soz va so‘z aytish musobaqasida"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ozod bo‘lgach Yusufbek Go‘zalshohdan nima so‘radi?",
+   "options": [
+    "A) Yaxshi anjom va ildam otlar",
+    "B) Tilla taxt va yarim shahar",
+    "C) Qimmatbaho javohirlar va qullar",
+    "D) Misr mamlakatining tojlari"
+   ],
+   "answer": "A) Yaxshi anjom va ildam otlar"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yusuf va Ahmad Xorazmga qaytib kelgach nima qildi?",
+   "options": [
+    "A) Misrga qarshi qo‘shin toplay boshladi",
+    "B) Isfahonga tog‘asi bilan urushga ketdi",
+    "C) Zindondagi kunlarini unutib yotdi",
+    "D) Go‘zalshohga barcha molini berdi"
+   ],
+   "answer": "A) Misrga qarshi qo‘shin toplay boshladi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmadbekka Go‘zalshohning qaysi qizi munosib ko‘rildi?",
+   "options": [
+    "A) Gulnahor oyim",
+    "B) Gulasal oyim",
+    "C) Qorako‘z oyim",
+    "D) Bibi Niyoz oyim"
+   ],
+   "answer": "A) Gulnahor oyim"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar oxirida taraflar o‘rtasidagi sulh qanday ketma-ketlikda tuzildi?",
+   "options": [
+    "A) Qudachilik maslahati berildi, to‘y qilindi",
+    "B) Misr vakillari o‘ldirildi, shaharlar bo‘lindi",
+    "C) Bobo Qambar qochdi, beklar zindonga tushdi",
+    "D) Urush bo‘ldi, so‘ng Isfahon tandi"
+   ],
+   "answer": "A) Qudachilik maslahati berildi, to‘y qilindi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qorako‘zning beklar taqdiridagi o‘rni qanday tartibda kechdi?",
+   "options": [
+    "A) Zindonda yordam berdi, Xivaga keldi",
+    "B) Xorazmda tug‘ildi, Misrga qochib ketdi",
+    "C) Go‘zalshohni aldaydi, so‘ng asir tushdi",
+    "D) Beklarga qarshi chiqdi, so‘ng kechirim so‘radi"
+   ],
+   "answer": "A) Zindonda yordam berdi, Xivaga keldi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yusufbek Go‘zalshohdan taxt emas, ot va yaroq so‘rashining sababi nima?",
+   "options": [
+    "A) Mard yigit dushmandan mol emas, yaroq tilar",
+    "B) Tilla taxtni ko‘tarib ketish qiyin edi",
+    "C) Misr taxtini yoqtirmagani uchun",
+    "D) Urganchda oltin yetarli bo‘lgani uchun"
+   ],
+   "answer": "A) Mard yigit dushmandan mol emas, yaroq tilar"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bobo Qambar nega ikkala tomonni quda qilish maslahatini berdi?",
+   "options": [
+    "A) El-yurt o‘rtasida abadiy tinchlik bo‘lishi uchun",
+    "B) O‘zi Chin-Mochinga tezroq qochish uchun",
+    "C) Go‘zalshohdan ko‘proq in'om olish uchun",
+    "D) Ahmadbekni Misrda olib qolish uchun"
+   ],
+   "answer": "A) El-yurt o‘rtasida abadiy tinchlik bo‘lishi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Doston nihoyasida qon to‘kmay tinchlik o‘rnatilishi qanday qadriyatni ko‘rsatadi?",
+   "options": [
+    "A) Tinchliksevarlik va kechirimlilik",
+    "B) Manmanlik va maqtanchoqlik",
+    "C) Boylikka o‘chlik va shavqatsizlik",
+    "D) Qo‘rqoqlik va ojizlik"
+   ],
+   "answer": "A) Tinchliksevarlik va kechirimlilik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston so‘ngida xalq baxshisi asar qahramonlariga qanday yakun beradi?",
+   "options": [
+    "A) Murod-maqsadga yetgan adolatli yakun",
+    "B) Barcha qahramonlar halok bo‘lgan hazin yakun",
+    "C) Sirli va mavhum qolgan yakun",
+    "D) Qahramonlar yana asir tushgan yakun"
+   ],
+   "answer": "A) Murod-maqsadga yetgan adolatli yakun"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Bobo Qambarning Chin-Mochinga qaytish tasviri o‘quvchida qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) El-yurtiga bo‘lgan sadoqat va minnatdorlik",
+    "B) Begona yurtga nisbatan nafrat",
+    "C) Sayohat qilishga bo‘lgan qo‘rquv",
+    "D) Zindonga qaytish istagi"
+   ],
+   "answer": "A) El-yurtiga bo‘lgan sadoqat va minnatdorlik"
+  }
+ ]
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bilig AI — o‘sish paneli</title>
+<style>
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("/fonts/nunito-latin.woff2") format("woff2");
+}
+:root {
+  --brand: #4E8EF7;
+  --brand-deep: #1D4ED8;
+  --brand-bg: #EAF1FE;
+  --gold: #F59E0B;
+  --gold-bg: #FEF6E7;
+  --gold-deep: #B45309;
+  --success: #10B981;
+  --success-bg: #E7F8F1;
+  --success-deep: #047857;
+  --danger: #EF4444;
+  --danger-bg: #FEECEC;
+  --danger-deep: #B91C1C;
+  --bg: #F8FAFC;
+  --surface: #FFFFFF;
+  --text: #0F172A;
+  --text-soft: #64748B;
+  --text-faint: #94A3B8;
+  --border: #E9EEF5;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --shadow-raised: 0 1px 2px rgba(15,23,42,.04), 0 6px 18px rgba(15,23,42,.06);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 20px 70px; }
+
+/* ---------- sarlavha ---------- */
+.top { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
+.top h1 { font-size: 27px; font-weight: 800; margin: 0 0 4px; letter-spacing: -.5px; }
+.top p { margin: 0; color: var(--text-soft); font-size: 14.5px; }
+.btn {
+  border: none; background: var(--brand); color: #fff; font-family: inherit;
+  font-size: 14.5px; font-weight: 700; padding: 10px 18px;
+  border-radius: var(--radius-sm); cursor: pointer; box-shadow: var(--shadow-raised);
+}
+.btn:active { transform: translateY(1px); }
+
+.eyebrow {
+  font-size: 12px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--text-faint); margin: 34px 0 12px;
+}
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-raised); padding: 18px 20px;
+}
+.grid { display: grid; gap: 14px; }
+.g4 { grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); }
+.g3 { grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
+.g2 { grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); }
+/* Tor ekranda jadval o‘zi siljiydi — sahifa yon tomonga qimirlamaydi */
+.tbl { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.tbl table { min-width: 340px; }
+
+/* ---------- signal kartalari ---------- */
+.sig { border-radius: var(--radius-md); padding: 14px 16px; border: 1px solid transparent; }
+.sig.good { background: var(--success-bg); border-color: #BBF0DA; }
+.sig.warn { background: var(--gold-bg); border-color: #F6D77E; }
+.sig b { display: block; font-size: 15.5px; margin-bottom: 3px; }
+.sig.good b { color: var(--success-deep); }
+.sig.warn b { color: var(--gold-deep); }
+.sig span { font-size: 13.5px; line-height: 1.5; color: var(--text-soft); }
+
+/* ---------- KPI ---------- */
+.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+       box-shadow: var(--shadow-raised); padding: 16px 18px; }
+.kpi .lab { font-size: 12.5px; font-weight: 700; color: var(--text-faint); text-transform: uppercase; letter-spacing: .05em; }
+.kpi .val { font-size: 30px; font-weight: 800; letter-spacing: -1px; margin: 6px 0 2px; }
+.kpi .sub { font-size: 13px; color: var(--text-soft); }
+.kpi.brand .val { color: var(--brand-deep); }
+.kpi.gold .val { color: var(--gold-deep); }
+.kpi.green .val { color: var(--success-deep); }
+.kpi.red .val { color: var(--danger-deep); }
+
+.card h3 { margin: 0 0 2px; font-size: 16.5px; font-weight: 800; }
+.card .hint { margin: 0 0 14px; font-size: 13px; color: var(--text-soft); line-height: 1.5; }
+
+/* ---------- jadval ---------- */
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font-size: 11.5px; letter-spacing: .07em; text-transform: uppercase;
+     color: var(--text-faint); font-weight: 800; padding: 0 8px 9px; }
+td { padding: 9px 8px; border-top: 1px solid var(--border); }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.tw { position: relative; }
+.tw i { position: absolute; left: 8px; top: 50%; transform: translateY(-50%);
+        height: 22px; background: var(--brand-bg); border-radius: 6px; z-index: 0; }
+.tw span { position: relative; z-index: 1; }
+
+/* ---------- voronka ---------- */
+.fn { margin-bottom: 11px; }
+.fn .row { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 5px; }
+.fn .row b { font-weight: 700; }
+.fn .row s { text-decoration: none; color: var(--text-soft); font-variant-numeric: tabular-nums; }
+.fn .track { height: 12px; background: #F1F5F9; border-radius: 99px; overflow: hidden; }
+.fn .fill { height: 100%; border-radius: 99px; background: var(--brand); }
+.fn .drop { font-size: 12.5px; color: var(--danger-deep); margin-top: 4px; }
+
+/* ---------- kogorta ---------- */
+.ch { display: inline-block; min-width: 52px; text-align: center; padding: 5px 8px;
+      border-radius: 7px; font-weight: 700; font-size: 13px; font-variant-numeric: tabular-nums; }
+
+/* ---------- ustunli chiziq ---------- */
+.bars { display: flex; align-items: flex-end; gap: 3px; height: 120px; }
+.bars .b { flex: 1; background: var(--brand-bg); border-radius: 4px 4px 2px 2px; min-height: 2px; position: relative; }
+.bars .b.on { background: var(--brand); }
+.bars .b:hover::after {
+  content: attr(data-t); position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
+  background: var(--text); color: #fff; font-size: 11.5px; font-weight: 700;
+  padding: 4px 8px; border-radius: 6px; white-space: nowrap; margin-bottom: 6px; z-index: 5;
+}
+.axis { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--text-faint); margin-top: 7px; }
+
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; color: var(--text-soft); margin-top: 12px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; }
+
+.srcbox { margin-top: 14px; }
+.src-lab { font-size: 13.5px; font-weight: 700; margin-bottom: 6px; }
+.src-lab s { text-decoration: none; color: var(--text-faint); font-weight: 600; }
+.src-bar { display: flex; height: 10px; border-radius: 99px; overflow: hidden; background: #F1F5F9; }
+.src-bar i { display: block; height: 100%; }
+.src-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 7px; }
+.src-tag { font-size: 12.5px; color: var(--text-soft); display: flex; align-items: center; gap: 5px; }
+.src-tag b { width: 9px; height: 9px; border-radius: 3px; display: inline-block; }
+
+.pillrow { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { background: var(--brand-bg); color: var(--brand-deep); font-size: 13px; font-weight: 700;
+        padding: 6px 12px; border-radius: 99px; }
+.pill.g { background: var(--gold-bg); color: var(--gold-deep); }
+
+.miss { text-align: center; color: var(--text-faint); padding: 26px 0; font-size: 14px; }
+.foot { margin-top: 40px; text-align: center; color: var(--text-faint); font-size: 12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap" id="root">
+  <div class="miss">Ma'lumot yuklanmoqda…</div>
+</div>
+
+<script>
+var D = null;
+
+function el(html) { var d = document.createElement("div"); d.innerHTML = html; return d.firstElementChild; }
+function n(x) { return (x === null || x === undefined) ? 0 : x; }
+function fmt(x) { return String(n(x)).replace(/\B(?=(\d{3})+(?!\d))/g, " "); }
+
+/* Ustunli diagramma — oxirgi 30 kun */
+function barsHtml(series, days, tone) {
+  var max = Math.max.apply(null, series.concat([1]));
+  var out = '<div class="bars">';
+  for (var i = 0; i < series.length; i++) {
+    var h = Math.max(2, Math.round(series[i] / max * 118));
+    var on = series[i] > 0 ? " on" : "";
+    out += '<div class="b' + on + '" style="height:' + h + 'px' +
+      (tone ? ';background:' + (series[i] > 0 ? tone : "#F1F5F9") : "") + '" data-t="' +
+      days[i].slice(5) + ' — ' + series[i] + '"></div>';
+  }
+  out += '</div><div class="axis"><span>' + days[0].slice(5) +
+    '</span><span>' + days[days.length - 1].slice(5) + '</span></div>';
+  return out;
+}
+
+/* Kogorta katagi — foiz qanchalik baland bo‘lsa, rang shunchalik to‘q */
+function cell(p) {
+  if (!p) return '<span class="ch" style="background:#F1F5F9;color:#94A3B8">0%</span>';
+  var a = Math.min(1, p / 60);
+  return '<span class="ch" style="background:rgba(78,142,247,' + (0.12 + a * 0.75) +
+    ');color:' + (a > 0.45 ? "#fff" : "#1D4ED8") + '">' + p + '%</span>';
+}
+
+/* Manba qatori: bazaning qaysi qismi rasmiy, qaysi qismi ota-onalardan */
+var SRC_NAME = { seed: "rasmiy", photo: "ota-ona rasmidan", notes: "bola yozuvlaridan",
+                 parent: "ota-ona qo‘lda yozgan", task: "musobaqa",
+                 eskisi: "manbasi yozilmagan" };
+var SRC_COLOR = { seed: "#10B981", photo: "#F59E0B", notes: "#EF4444",
+                  parent: "#4E8EF7", task: "#94A3B8", eskisi: "#CBD5E1" };
+function srcRow(label, obj) {
+  var keys = Object.keys(obj || {});
+  if (!keys.length) return "";
+  var total = 0;
+  keys.forEach(function (k) { total += obj[k]; });
+  var bar = keys.map(function (k) {
+    return '<i style="width:' + (obj[k] / total * 100) + '%;background:' +
+      (SRC_COLOR[k] || "#CBD5E1") + '"></i>';
+  }).join("");
+  var tags = keys.map(function (k) {
+    return '<span class="src-tag"><b style="background:' + (SRC_COLOR[k] || "#CBD5E1") +
+      '"></b>' + (SRC_NAME[k] || k) + ' — ' + obj[k] + '</span>';
+  }).join("");
+  return '<div class="srcbox"><div class="src-lab">' + label +
+    ' <s>' + total + ' ta</s></div><div class="src-bar">' + bar + '</div>' +
+    '<div class="src-tags">' + tags + '</div></div>';
+}
+
+function kpi(cls, lab, val, sub) {
+  return '<div class="kpi ' + cls + '"><div class="lab">' + lab + '</div>' +
+    '<div class="val">' + val + '</div><div class="sub">' + sub + '</div></div>';
+}
+
+function render() {
+  var k = D.kpi, r = "";
+
+  r += '<div class="top"><div><h1>Bilig AI — o‘sish paneli</h1>' +
+    '<p>Yangilangan: ' + D.generated_at + ' · oxirgi 30 kun kesimida</p></div>' +
+    '<button class="btn" onclick="load()">Yangilash</button></div>';
+
+  /* ---------- SIGNALLAR ---------- */
+  if (D.signals.length) {
+    r += '<div class="grid g3">';
+    D.signals.forEach(function (s) {
+      r += '<div class="sig ' + s.tone + '"><b>' + s.title + '</b><span>' + s.text + '</span></div>';
+    });
+    r += '</div>';
+  }
+
+  /* ---------- ASOSIY RAQAMLAR ---------- */
+  r += '<p class="eyebrow">Asosiy raqamlar</p><div class="grid g4">' +
+    kpi("brand", "Oilalar", fmt(k.families), k.parents + " ota-ona · " + k.children + " bola") +
+    kpi("", "O‘rtacha farzand", k.avg_children, "bitta oilada") +
+    kpi("green", "Bugun o‘qidi", fmt(k.dau), "haftada " + k.wau + " · oyda " + k.mau) +
+    kpi(k.stickiness >= 20 ? "green" : "gold", "Yopishqoqlik", k.stickiness + "%",
+        "kunlik / oylik faol nisbati") +
+    kpi("gold", "Jami o‘qilgan bet", fmt(k.total_pages), "bugun " + fmt(k.pages_today) + " bet") +
+    kpi("", "Bir bolaga", k.avg_pages + " bet", "o‘rtacha, boshidan beri") +
+    kpi("brand", "Kitoblar", fmt(k.books), k.done_books + " tasi tugatilgan") +
+    kpi(k.abandoned ? "red" : "", "Tashlab ketilgan", fmt(k.abandoned), "boshlangan, 20% dan kam o‘qilgan") +
+    '</div>';
+
+  /* ---------- O‘SISH ---------- */
+  r += '<p class="eyebrow">O‘sish va kundalik harakat</p><div class="grid g3">' +
+    '<div class="card"><h3>Yangi foydalanuvchilar</h3>' +
+    '<p class="hint">Har kuni ilovaga birinchi marta kirganlar.</p>' +
+    barsHtml(D.series.new_users, D.days, "#4E8EF7") + '</div>' +
+
+    '<div class="card"><h3>Kunlik faol bolalar</h3>' +
+    '<p class="hint">O‘sha kuni bet belgilagan bolalar soni.</p>' +
+    barsHtml(D.series.readers, D.days, "#10B981") + '</div>' +
+
+    '<div class="card"><h3>Kunlik o‘qilgan bet</h3>' +
+    '<p class="hint">Mahsulotning haqiqiy foydasi shu raqamda.</p>' +
+    barsHtml(D.series.pages, D.days, "#F59E0B") + '</div>' +
+    '</div>';
+
+  /* ---------- VORONKA ---------- */
+  var f = "";
+  D.funnel.forEach(function (s, i) {
+    var prev = i ? D.funnel[i - 1] : null;
+    var drop = prev && prev.n ? Math.round((prev.n - s.n) * 100 / prev.n) : 0;
+    f += '<div class="fn"><div class="row"><b>' + s.name + '</b>' +
+      '<s>' + s.n + ' ta · ' + s.pct + '%</s></div>' +
+      '<div class="track"><div class="fill" style="width:' + Math.max(2, s.pct) + '%' +
+      (i === 0 ? "" : ";background:" + (drop > 40 ? "#EF4444" : drop > 20 ? "#F59E0B" : "#4E8EF7")) +
+      '"></div></div>' +
+      (drop > 0 ? '<div class="drop">shu bosqichda ' + drop + '% yo‘qoladi</div>' : "") +
+      '</div>';
+  });
+
+  r += '<p class="eyebrow">Bola yo‘li — qayerda to‘xtab qolyapti</p><div class="grid g2">' +
+    '<div class="card"><h3>Voronka</h3>' +
+    '<p class="hint">Ro‘yxatdan o‘tgandan kitobni tugatgunga qadar. Eng katta pasayish — ' +
+    'birinchi tuzatiladigan joy.</p>' + f + '</div>' +
+
+    '<div class="card"><h3>Ushlab qolish — haftalik kogortalar</h3>' +
+    '<p class="hint">Har hafta kelganlarning qanchasi keyingi haftalarda ham qaytdi.</p>' +
+    (D.cohorts.length
+      ? '<div class="tbl"><table><tr><th>Hafta</th><th class="num">Keldi</th><th class="num">1-hafta</th>' +
+        '<th class="num">2-hafta</th><th class="num">4-hafta</th></tr>' +
+        D.cohorts.map(function (c) {
+          return '<tr><td>' + c.week + '</td><td class="num">' + c.size + '</td>' +
+            '<td class="num">' + cell(c.w1) + '</td><td class="num">' + cell(c.w2) +
+            '</td><td class="num">' + cell(c.w4) + '</td></tr>';
+        }).join("") + '</table></div>'
+      : '<div class="miss">Kogorta uchun ma\'lumot hali yetarli emas</div>') +
+    '</div></div>';
+
+  /* ---------- ODAT VA YO‘QOTISH ---------- */
+  var st = D.streaks, stMax = Math.max(st["0"], st["1-3"], st["4-7"], st["8-14"], st["15+"], 1);
+  var stRows = ["0", "1-3", "4-7", "8-14", "15+"].map(function (key) {
+    return '<tr><td class="tw"><i style="width:' + (st[key] / stMax * 88) + '%"></i>' +
+      '<span>' + key + ' kun</span></td><td class="num">' + st[key] + '</td></tr>';
+  }).join("");
+
+  r += '<p class="eyebrow">Odat va yo‘qotish</p><div class="grid g3">' +
+    '<div class="card"><h3>Parvoz — ketma-ket kunlar</h3>' +
+    '<p class="hint">Odat shakllangan bolalar ulushi. 8 kundan yuqorisi — qaytib keladigan mijoz.</p>' +
+    '<div class="tbl"><table>' + stRows + '</table></div></div>' +
+
+    '<div class="card"><h3>Yo‘qotish</h3>' +
+    '<p class="hint">Qaytarish xabari kimga kerakligi.</p>' +
+    '<div class="grid g4" style="gap:10px">' +
+    kpi("gold", "Uxlab qolgan", D.churn.sleeping, "7-30 kun kirmagan") +
+    kpi("red", "Yo‘qolgan", D.churn.lost, "30 kundan ortiq") +
+    kpi("", "Boshlamagan", D.churn.never, "hech qachon faol bo‘lmagan") +
+    '</div></div>' +
+
+    '<div class="card"><h3>Guruh ta\'siri</h3>' +
+    '<p class="hint">Guruhga a\'zo bola ko‘proq o‘qiydimi — virallik uchun asosiy dalil.</p>' +
+    '<div class="grid g4" style="gap:10px">' +
+    kpi("green", "Guruhda", D.groups.avg_in + " bet", D.groups.members + " bola") +
+    kpi("", "Guruhsiz", D.groups.avg_out + " bet", "o‘rtacha") +
+    '</div>' +
+    '<div class="pillrow" style="margin-top:12px">' +
+    '<span class="pill">' + D.groups.n + ' guruh</span>' +
+    '<span class="pill">' + D.groups.kudos + ' olqish</span>' +
+    Object.keys(D.groups.tasks).map(function (s) {
+      return '<span class="pill g">' + s + ': ' + D.groups.tasks[s] + '</span>';
+    }).join("") +
+    '</div></div></div>';
+
+  /* ---------- KITOBLAR ---------- */
+  var tbMax = D.top_books.length ? D.top_books[0].n : 1;
+  r += '<p class="eyebrow">Kitoblar — nima o‘qilyapti</p><div class="grid g2">' +
+    '<div class="card"><h3>Eng ko‘p qo‘shilgan kitoblar</h3>' +
+    '<p class="hint">Nashriyot va mualliflar bilan gaplashish uchun tayyor ro‘yxat.</p>' +
+    (D.top_books.length
+      ? '<div class="tbl"><table><tr><th>Kitob</th><th class="num">Javonda</th><th class="num">Tugatilgan</th>' +
+        '<th class="num">Bet</th></tr>' +
+        D.top_books.map(function (b) {
+          return '<tr><td class="tw"><i style="width:' + (b.n / tbMax * 92) + '%"></i>' +
+            '<span>' + b.title + '</span></td><td class="num">' + b.n + '</td>' +
+            '<td class="num">' + b.done + '</td><td class="num">' + fmt(b.pages) + '</td></tr>';
+        }).join("") + '</table></div>'
+      : '<div class="miss">Hali kitob qo‘shilmagan</div>') +
+    '</div>' +
+
+    '<div class="card"><h3>Kontent bazasi va AI sarfi</h3>' +
+    '<p class="hint">Baza to‘lgani sari AI kamroq chaqiriladi — xarajat pasayadi.</p>' +
+    '<div class="grid g4" style="gap:10px">' +
+    kpi("brand", "Kitob pasporti", fmt(D.content.base), "umumiy bazada") +
+    kpi("brand", "Tayyor test", fmt(D.content.bank), D.content.bank_use + " marta ishlatilgan") +
+    kpi(D.content.no_test ? "gold" : "green", "Testsiz kitob", fmt(D.content.no_test), "javonlarda") +
+    kpi("", "AI sahifa tekshiruvi", fmt(D.ai.checks), "30 kunda " + fmt(D.ai.last30)) +
+    '</div>' +
+    srcRow("Kitob pasporti", D.content.src_base) +
+    srcRow("Umumiy test ombori", D.content.src_bank) +
+    srcRow("Kitoblarga biriktirilgan test", D.content.src_tests) +
+    '<div class="pillrow" style="margin-top:12px">' +
+    '<span class="pill">tayyor javobdan: ' + D.ai.cached + '</span>' +
+    Object.keys(D.ai.diag).map(function (t) {
+      return '<span class="pill g">' + t + ': ' + D.ai.diag[t] + '</span>';
+    }).join("") +
+    '</div></div></div>';
+
+  /* ---------- DO‘KON VA DEMOGRAFIYA ---------- */
+  var ageKeys = Object.keys(D.ages);
+  var ageMax = 1;
+  ageKeys.forEach(function (a) { if (D.ages[a] > ageMax) ageMax = D.ages[a]; });
+
+  r += '<p class="eyebrow">Rag‘bat tizimi va kim foydalanyapti</p><div class="grid g2">' +
+    '<div class="card"><h3>Bilig va do‘kon</h3>' +
+    '<p class="hint">Sovg‘a qo‘ygan ota-ona — ilovaga jiddiy qaragan ota-ona.</p>' +
+    '<div class="grid g4" style="gap:10px">' +
+    kpi("gold", "Yig‘ilgan Bilig", fmt(D.store.earned), "sarflangan " + fmt(D.store.spent)) +
+    kpi("", "Sovg‘alar", fmt(D.store.items), D.store.parents + " ota-ona qo‘ygan") +
+    kpi("green", "Berilgan sovg‘a", fmt(D.store.given), D.store.waiting + " tasi kutilmoqda") +
+    kpi("brand", "Qoldiq Bilig", fmt(D.store.balance), "bolalar hamyonida") +
+    '</div></div>' +
+
+    '<div class="card"><h3>Bolalar yoshi</h3>' +
+    '<p class="hint">Reklama va kitob tanlovini shu taqsimotga qarab yo‘naltiring.</p>' +
+    (ageKeys.length
+      ? '<div class="tbl"><table>' + ageKeys.sort().map(function (a) {
+          return '<tr><td class="tw"><i style="width:' + (D.ages[a] / ageMax * 90) + '%"></i>' +
+            '<span>' + a + ' yosh</span></td><td class="num">' + D.ages[a] + '</td></tr>';
+        }).join("") + '</table></div>'
+      : '<div class="miss">Ma\'lumot yo‘q</div>') +
+    '</div></div>';
+
+  r += '<p class="foot">Bilig AI · panel faqat token bilan ochiladi</p>';
+  document.getElementById("root").innerHTML = r;
+}
+
+function load() {
+  var token = new URLSearchParams(location.search).get("token") || "";
+  fetch("/api/panel/data?token=" + encodeURIComponent(token))
+    .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+    .then(function (d) {
+      if (d.error) throw d.error;
+      D = d; render();
+    })
+    .catch(function (e) {
+      document.getElementById("root").innerHTML =
+        '<div class="miss">Ma\'lumotni olib bo‘lmadi: ' + e + '</div>';
+    });
+}
+load();
+</script>
+</body>
+</html>

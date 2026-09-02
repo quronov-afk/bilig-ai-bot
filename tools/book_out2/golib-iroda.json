@@ -1,0 +1,479 @@
+{
+ "title": "G‘olib iroda",
+ "author": "Ali Fuad Bashgil",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "iroda tarbiyasi",
+   "ilm olish",
+   "odob-axloq",
+   "mehnatsevarlik",
+   "shaxsiy rivojlanish"
+  ],
+  "theme": "Asarning bosh g‘oyasi — inson hayotida erishiladigan haqiqiy muvaffaqiyat va baxt boylik yoki mansabda emas, balki mustahkam iroda, halol mehnat, go‘zal axloq va o‘z fe’l-atvorini tarbiyalashda ekanini ko‘rsatishdan iborat.",
+  "summary": "Kitob akademik Ali Fuad Bashgilning yoshlarga bag‘ishlangan hayotiy va ilmiy o‘gitlaridan tashkil topgan. Muallif Parijda talabalik yillarida Alp tog‘lari etagidagi Revel qishlog‘ida ruhoniy Jirard afandi bilan tanshgani va uning tavsiyasi bilan Jyul Payoning «Iroda tarbiyasi» kitobini o‘qiganini eslaydi. O‘zi yoshlikda yo‘l qo‘ygan xatolar va kechikishlardan afsuslanib, keyinchalik turli jamoat markazlarida «Yoshlarga o‘gitlarim» hamda «Tarbiyaning fe’l-atvorga ta’siri» mavzularida ma’ruzalar o‘qiydi va ushbu kitobni yozadi.\n\nKitobda muvaffaqiyat yo‘lidagi asosiy dushmanlar sifatida dangasalik, yomon do‘st va yomon illatlar ko‘rsatiladi. Dangasalikning makkor qiyofalari, yomon do‘stning inson shijoatini so‘ndirishi va xudbinlikka asoslangan yomon illatlarning zarari atroflicha tahlil qilinadi. Muallif iroda tushunchasini, g‘ayriixtiyoriy harakatlar (instinkt, odat, tavsiya harakatlar) hamda axloqiy irodaning mohiyatini tushuntiradi. Inson fe’l-atvorining shakllanishi, to‘rt xil mazoj (sangvinik, flegmatik, xolerik, melanxolik) va tarbiya orqali fe’l-atvorni go‘zallashtirish imkoniyati atroflicha bayon etiladi.\n\nSo‘ngra samarali mehnat qilishning uchta sharti — jismoniy (salomatlik), hissiy (kasbni sevish) va aqliy (usulini bilish) shartlari tushuntiriladi. Asar yakunida muallif yoshlarga aqliy va amaliy faoliyatda, odob-axloqda, ota-ona va keksalar bilan munosabatda, do‘stlikda hamda qaror qabul qilishda amal qilinishi lozim bo‘lgan o‘nlab amaliy o‘git va qoidalarni taqdim etadi.",
+  "characters": "Ali Fuad Bashgil — kitob muallifi, tajribali huquqshunos-akademik va mehribon ustoz. Jirard afandi — Alp tog‘laridagi Revel qishlog‘i ruhoniysi, dunyoqarashi keng, bag‘rikeng va ma’rifatparvar inson. Jirard afandining opasi — Revel qishlog‘idagi mehmonxona egasi, mehribon keksa ayol.",
+  "conclusion": "Asar kitobxonni o‘z ustida ishlashga, vaqtni qadrlashga va irodani mustahkamlashga undaydi. Bola ushbu kitobdan halol mehnatning qadrini, yomon odatlar va yomon ulfatlardan yiroq yurish lozimligini o‘rganadi. Shuningdek, ota-ona va kattalarga hurmat, kamtarlik hamda sabr-toqat kabi eng oliy insoniy fazilatlarni o‘zida shakllantirish uchun amaliy qo‘llanma oladi.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, da'vatkor",
+  "for_whom": "Ilm olishda tartib-intizomni va mustahkam irodani shakllantirishni, o‘z fe’l-atvorini yaxshilashni xohlaydigan o‘smirlar va yoshlar uchun.",
+  "events": [
+   "Ali Fuad Bashgil do‘sti bilan Alp tog‘lari etagidagi Revel qishlog‘iga boradi va ruhoniy Jirard afandining mehmonxonasiga joylashadi.",
+   "Jirard afandi musulmon talabani imonli inson sifatida samimiy kutib oladi va talabalarga ma’rifiy suhbatlar uyushtiradi.",
+   "Jirard afandi muallifga Jyul Payoning «Iroda tarbiyasi» kitobini o‘qishni tavsiya qiladi.",
+   "Muallif eman daraxti tagida kitobni o‘qib chiqib, iroda tarbiyasini erta boshlamaganidan afsuslanadi.",
+   "1943–1944-yillarda muallif Emino‘nu jamoat markazida «Yoshlarga o‘gitlarim» mavzusida ma’ruza qiladi.",
+   "1947-yili Uskudar jamoat markazida «Tarbiyaning fe’l-atvorga ta’siri» mavzusida ikkinchi ma’ruzani o‘qiydi va ushbu asar shakllanadi.",
+   "Muallif muvaffaqiyat yo‘lidagi birinchi dushman — dangasalik va uning turli makkor bahonalarini fosh etadi.",
+   "Muvaffaqiyatning ikkinchi dushmani — yomon do‘st va uning inson shijoatini so‘ndiruvchi ta’siri tushuntiriladi.",
+   "Uchinchi dushman — xudbinlik va firibgarlikka asoslangan yomon illatlar ekani ko‘rsatiladi.",
+   "Iroda tushunchasi va axloqiy irodaning ezgulik yo‘lidagi o‘rni tahlil qilinadi.",
+   "G‘ayriixtiyoriy harakatlarning uch shakli: instinkt, odat va tavsiya harakatlar tushuntiriladi.",
+   "Asalari misolida instinktlarning o‘zgarmas tabiatga ega ekani ko‘rsatib beriladi.",
+   "Inson fe’l-atvori to‘g‘risidagi pessimistik va pozitiv yondashuvlar solishtiriladi.",
+   "To‘rt xil mazoj: sangvinik, flegmatik, xolerik va melanxolik xususiyatlari bayon qilinadi.",
+   "Yomon odatlarga ilk bor qadam qo‘ymaslik va ularning oldini olish muhimligi ta’kidlanadi.",
+   "Samarali mehnatning uchta sharti: jismoniy, hissiy va aqliy shartlar tushuntiriladi.",
+   "Mehnatni sevish va kasbni to‘g‘ri tanlash muvaffaqiyat formulasi sifatida ko‘rsatiladi.",
+   "Buyuk mutafakkirlar va yozuvchilarning kunlik tartibli mehnati misol qilib keltiriladi.",
+   "Muallif yoshlarga aqliy mehnat, sabr-toqat va rejalashtirish bo‘yicha amaliy maslahatlar beradi.",
+   "Nutqni o‘stirish uchun har kuni kitobni ovoz chiqarib o‘qish va go‘zal parchalarni yodlash o‘rgatiladi.",
+   "Kamtarlik, halollik, ota-onaga hurmat va do‘stlikka sadoqat qoidalari bayon etiladi.",
+   "Ali Fuad Bashgilning Parijda ta’lim olgani, huquq doktori bo‘lgani va Turkiya senatori sifatidagi faoliyati keltiriladi."
+  ],
+  "quotes": [
+   "Modomiki musulmon ekansiz, demak, imonlisiz, mehmonxonamizda bemalol qolishingiz mumkin.",
+   "Chunki bilim manbai aql, harakat manbai esa irodadir.",
+   "Baxt-saodat o‘z ichimizda ekan. Uni boshqa joydan izlash, faqat boylik, qudrat va shon-shuhratda ko‘rish sahrodagi sarobni buloq bilan adashtirishga o‘xshaydi.",
+   "Muvaffaqiyatga erishish yo‘lidagi eng katta dushman dangasalikdir...",
+   "Irodali bo‘lish – yomon o‘rnak, yomon illatlarning quliga aylanmay, o‘z harakatlarimizning yaratuvchisi, yo‘lboshchisi va boshqaruvchisi bo‘lish demakdir.",
+   "Kamtar bo‘ling. Kamtar odam mevali daraxt misoli: shoxi yerga egilishining sababi mevasining ko‘pligidandir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif Fransiyada dam olish uchun qaysi qishloqqa bordi?",
+   "options": [
+    "A) Revel qishlog‘iga",
+    "B) Parij atrofiga",
+    "C) Grenobl shahriga",
+    "D) Gaaga qishlog‘iga"
+   ],
+   "answer": "A) Revel qishlog‘iga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jirard afandi musulmon talabani qanday kutib oldi?",
+   "options": [
+    "A) Bag‘rikenglik va samimiyat bilan",
+    "B) Shubha va xavotir bilan",
+    "C) Yomon qarshilab haydab yubordi",
+    "D) Boshqa mehmonxonaga jo‘natdi"
+   ],
+   "answer": "A) Bag‘rikenglik va samimiyat bilan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jirard afandi talabalarga o‘qishni tavsiya qilgan kitob muallifi kim?",
+   "options": [
+    "A) Jyul Payo",
+    "B) Emil Zolya",
+    "C) Ibn Sino",
+    "D) Spenser"
+   ],
+   "answer": "A) Jyul Payo"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallifning ta’kidlashicha, muvaffaqiyatning eng birinchi dushmani nima?",
+   "options": [
+    "A) Dangasalik",
+    "B) Yomon ustoz",
+    "C) Kitob yetishmasligi",
+    "D) Vaqt kamligi"
+   ],
+   "answer": "A) Dangasalik"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif muvaffaqiyat yo‘lidagi asosiy dushmanlarni qanday guruhlaydi?",
+   "options": [
+    "A) Dangasalik, yomon do‘st, yomon illatlar",
+    "B) Kambag‘allik, kasallik, uyqusizlik",
+    "C) Yomon ob-havo, charchoq, jaholat",
+    "D) Urush, yolg‘izlik, omadsizlik"
+   ],
+   "answer": "A) Dangasalik, yomon do‘st, yomon illatlar"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jirard afandi musulmon talabani nega bajandillik bilan qabul qildi?",
+   "options": [
+    "A) Imonli insonlarni dushman bilmagani uchun",
+    "B) Musulmonlar ko‘p haq to‘lagani uchun",
+    "C) U Parijdan kelganini xohlagani uchun",
+    "D) Mehmonxonada joy juda ko‘pligi uchun"
+   ],
+   "answer": "A) Imonli insonlarni dushman bilmagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega yomon do‘st dangasalikdan ham xavfliroq dushman hisoblanadi?",
+   "options": [
+    "A) Insonni o‘z yo‘liga tezroq sudragani uchun",
+    "B) Ko‘p pul talab qilgani uchun",
+    "C) Darslarni qilishga majburlagani uchun",
+    "D) Doim yolg‘iz qoldirgani uchun"
+   ],
+   "answer": "A) Insonni o‘z yo‘liga tezroq sudragani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning yomon do‘st haqidagi ogohlantirishini qanday baholaysan?",
+   "options": [
+    "A) O‘rinli va o‘smirlar uchun foydali",
+    "B) Keraksiz va ortiqcha xavotir",
+    "C) Faqat kattalar uchun tegishli",
+    "D) Asossiz va noto‘g‘ri fikr"
+   ],
+   "answer": "A) O‘rinli va o‘smirlar uchun foydali"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif dangasalikni «ming bir qiyofaga kiruvchi qo‘rqoq ag‘yor» deb nimani anglatadi?",
+   "options": [
+    "A) Dangasalik turli bahonalar ortiga yashirinishini",
+    "B) Dangasalik insonni doim qo‘rqitishini",
+    "C) Dangasalik faqat tushda ko‘rinishini",
+    "D) Dangasalik doim ochiq kurashishini"
+   ],
+   "answer": "A) Dangasalik turli bahonalar ortiga yashirinishini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif kitob yaratilishida qaysi ma’ruzalari materiallaridan foydalangan?",
+   "options": [
+    "A) Emino‘nu va Uskudardagi ma’ruzalaridan",
+    "B) Parij va Grenobldagi nutqlaridan",
+    "C) Anqara va Istanbul darslaridan",
+    "D) Charshamba va Kadiko‘y uchrashuvlaridan"
+   ],
+   "answer": "A) Emino‘nu va Uskudardagi ma’ruzalaridan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif fikricha, inson fe’l-atvorida xatti-harakat va amallarni idora etuvchi kuch nima?",
+   "options": [
+    "A) Iroda",
+    "B) Omad",
+    "C) Tasodif",
+    "D) Boylik"
+   ],
+   "answer": "A) Iroda"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ming yillar davomida o‘zgarmaydigan xatti-harakat shakli nima deb ataladi?",
+   "options": [
+    "A) Savqi tabiiy harakatlar",
+    "B) Orttirilgan odatlar",
+    "C) Axloqiy qarorlar",
+    "D) Qat’iyatli intilishlar"
+   ],
+   "answer": "A) Savqi tabiiy harakatlar"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif keltirgan doimiy instinktiv mehnatga qaysi jonzot misol bo‘ladi?",
+   "options": [
+    "A) Asalari",
+    "B) Qashqir",
+    "C) Burgut",
+    "D) Chaqqon tulki"
+   ],
+   "answer": "A) Asalari"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Samarali mehnatning hissiy sharti nima deb ko‘rsatilgan?",
+   "options": [
+    "A) Mehnatni va ishni sevish",
+    "B) Tan jismoniy salomatligi",
+    "C) Ish qurollarini yaxshi bilish",
+    "D) Ko‘p pul ishlab topish"
+   ],
+   "answer": "A) Mehnatni va ishni sevish"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Samarali mehnatning uchta asosiy sharti qaysi javobda to‘g‘ri ajratilgan?",
+   "options": [
+    "A) Jismoniy, hissiy va aqliy shartlar",
+    "B) Moddiy, ma’naviy va ruhiy shartlar",
+    "C) Oila, maktab va jamiyat shartlari",
+    "D) Sabr, omad va vaqt shartlari"
+   ],
+   "answer": "A) Jismoniy, hissiy va aqliy shartlar"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega irodani faqat kuch deb emas, axloqiy manba deb bilish kerak?",
+   "options": [
+    "A) Iroda ezgulikka xizmat qilishi zarurligi uchun",
+    "B) Iroda insonga tabiatan berilmagani uchun",
+    "C) Irodasiz odam boy bo‘la olmagani uchun",
+    "D) Iroda faqat dars qilishda kerakligi uchun"
+   ],
+   "answer": "A) Iroda ezgulikka xizmat qilishi zarurligi uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega yomon odatga qarshi kurashgandan ko‘ra unga yaqinlashmaslik afzal?",
+   "options": [
+    "A) Yomon odatdan qutulish juda qiyinligi uchun",
+    "B) Yomon odat insonga zarracha ta’sir qilmagani uchun",
+    "C) Yomon odat tezda unutilishi uchun",
+    "D) Yomon odat insonni kuchli qilgani uchun"
+   ],
+   "answer": "A) Yomon odatdan qutulish juda qiyinligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Inson o‘z fe’l-atvorini tarbiya bilan o‘zgartira olishi haqidagi qarash to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, tarbiya va iroda bilan o‘zgartirsa bo‘ladi",
+    "B) Noto‘g‘ri, inson o‘zgarishga mutlaqo qodir emas",
+    "C) Faqat boy odamlar fe’lini o‘zgartira oladi",
+    "D) Bu faqat yosh bolalarga tegishli xolos"
+   ],
+   "answer": "A) To‘g‘ri, tarbiya va iroda bilan o‘zgartirsa bo‘ladi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kasbni sevmasdan tartibsiz ishlashning oqibatini muallif qanday baholaydi?",
+   "options": [
+    "A) Insonni charchatadi va ishdan bezdiradi",
+    "B) Insonni darrov muvaffaqiyatga olib keladi",
+    "C) Insonning vaqtini tejashga yordam beradi",
+    "D) Insonni tezda boy-badavlat qiladi"
+   ],
+   "answer": "A) Insonni charchatadi va ishdan bezdiradi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Jon kuydirmasang, jonona qayda» maqolini qaysi maqsadda ishlatgan?",
+   "options": [
+    "A) Mehnat va zahmat muvaffaqiyat kaliti ekanini uqtirish uchun",
+    "B) Faqat tog‘ga chiqib meva terishni o‘rgatish uchun",
+    "C) Dam olishning foydasini ko‘rsatish uchun",
+    "D) Do‘stlikning ahamiyatini tushuntirish uchun"
+   ],
+   "answer": "A) Mehnat va zahmat muvaffaqiyat kaliti ekanini uqtirish uchun"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kitob oxirida aqliy mehnatda charchamaslik uchun qanday usul tavsiya etiladi?",
+   "options": [
+    "A) Vazifalar ketma-ketligini o‘zgartirib turish",
+    "B) Ishni butunlay tashlab dam olish",
+    "C) Boshqa shaharga ko‘chib o‘tish",
+    "D) Faqat tunda mashq qilish"
+   ],
+   "answer": "A) Vazifalar ketma-ketligini o‘zgartirib turish"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nutq va so‘z boyligini oshirish uchun har kuni nima qilish lozim?",
+   "options": [
+    "A) Kitobni ovoz chiqarib o‘qish",
+    "B) Ko‘p vaqt do‘stlar bilan tortishish",
+    "C) Musiqani baland tinglash",
+    "D) Ko‘chada ko‘p aylanish"
+   ],
+   "answer": "A) Kitobni ovoz chiqarib o‘qish"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kunning qaysi vaqtida o‘tgan kunni sarhisob qilish va reja tuzish kerak?",
+   "options": [
+    "A) Har kuni uyquga ketishdan oldin",
+    "B) Har kuni tushlik vaqtida",
+    "C) Faqat dam olish kunlari ertalab",
+    "D) Har safar dars tugaganida"
+   ],
+   "answer": "A) Har kuni uyquga ketishdan oldin"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ali Fuad Bashgil huquqshunoslik doktori ilmiy unvonini qaysi shaharda olgan?",
+   "options": [
+    "A) Parijda",
+    "B) Anqarada",
+    "C) Istanbulda",
+    "D) Samsunda"
+   ],
+   "answer": "A) Parijda"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallifning keksalar va bolalarga munosabat bo‘yicha o‘gitlari qanday jamlangan?",
+   "options": [
+    "A) Keksalarni hurmat qilish, bolalarga mehr ko‘rsatish",
+    "B) Keksalar bilan tortishish, bolalarni erkalash",
+    "C) Har ikkala guruhga e’tibor bermaslik",
+    "D) Faqat o‘z tengdoshlari bilan muloqot qilish"
+   ],
+   "answer": "A) Keksalarni hurmat qilish, bolalarga mehr ko‘rsatish"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega muallif katta topshiriqlarni bo‘laklarga ajratib bajarishni maslahat beradi?",
+   "options": [
+    "A) Ishni oson va puxta bajarish uchun",
+    "B) Vaqtni iloji boricha cho‘zish uchun",
+    "C) Boshqalarga yordam bermaslik uchun",
+    "D) Kitobni tezda yoqib yuborish uchun"
+   ],
+   "answer": "A) Ishni oson va puxta bajarish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega g‘azablangan paytda qaror qabul qilishdan tiyilish kerak?",
+   "options": [
+    "A) Jahl bilan qilingan qaror zarar keltirgani uchun",
+    "B) G‘azab insonga qo‘shimcha kuch bergani uchun",
+    "C) Inson tezda qaror qabul qilishi shartligi uchun",
+    "D) Boshqalar g‘azablanishni yoqtirmagani uchun"
+   ],
+   "answer": "A) Jahl bilan qilingan qaror zarar keltirgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Birovning yuziga aytolmaydigan gapni ortidan gapirishni muallif qanday baholaydi?",
+   "options": [
+    "A) Qo‘rqoqlikning eng jirkanch ko‘rinishi deb",
+    "B) Donolik va ehtiyotkorlik belgisi deb",
+    "C) Do‘stlikni mustahkamlaydigan holat deb",
+    "D) Odatiy va ahamiyatsiz ish deb"
+   ],
+   "answer": "A) Qo‘rqoqlikning eng jirkanch ko‘rinishi deb"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif sabr va qat’iyatni qaysi tabiat hodisasiga o‘xshatadi?",
+   "options": [
+    "A) Marmarni teshadigan suv tomchisiga",
+    "B) Tog‘larni o‘poradigan kuchli shamolga",
+    "C) Muzlarni eritadigan issiq quyoshga",
+    "D) Daryolarni toshiradigan bahor yomg‘iriga"
+   ],
+   "answer": "A) Marmarni teshadigan suv tomchisiga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif kamtar insonni qaysi timsol bilan tasvirlagan?",
+   "options": [
+    "A) Mevasi ko‘pligidan shoxi egilgan daraxtga",
+    "B) Baland tog‘ tepasidagi yakka archaga",
+    "C) Dengiz tubidagi yashirin qimmatbaho durga",
+    "D) Sahrodagi suvli va salqin oazisga"
+   ],
+   "answer": "A) Mevasi ko‘pligidan shoxi egilgan daraxtga"
+  }
+ ]
+}

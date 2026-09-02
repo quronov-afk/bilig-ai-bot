@@ -1,0 +1,337 @@
+{
+ "title": "Mezon uz-zamon",
+ "author": "Is'hoqxon Ibrat",
+ "genre": "risola",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "ilm-fan",
+   "islohot",
+   "zamon va jamiyat",
+   "ma'rifat",
+   "din va shariat",
+   "tarbiya"
+  ],
+  "theme": "Is'hoqxon Ibratning ushbu risolasida zamonaviy ilm-fan, texnika va Islom shariatining asl mohiyatini anglab, jaholat, bid'at va behuda dabdabalardan voz kechish, jamiyatni ma'rifat, ittifoq hamda taraqqiyot yo‘liga boshlash g‘oyasi ilgari suriladi.",
+  "summary": "«Mezon uz-zamon» risolasi jamiyatdagi ma'rifiy, ijtimoiy va diniy muammolarni to‘qqizta mezon (tarozi) vositasida tahlil qiladi.\n\nMuqaddimada muallif amri ma'rufning muhimligini, og‘zaki nasihat bir eshitilib tamom bo‘lishi, qalam bilan yozilgan ma'rifat esa qiyomatgacha millatga xizmat qilishini ta'kidlaydi.\n\nBirinchi mezonda o‘z asri va zamonasi vazn qilinadi. Temir yo‘l, elektr chirog‘i kabi yangi ixtirolar odamlarga osonlik yaratish uchun Berilgan ne'matlar ekani, ilmu hunarsizlik esa mashaqqatlarga sabab bo‘lishi uqtiriladi.\n\nIkkinchi mezonda Islom dini va shariatning asosi birlik hamda ittifoq ekani uqdiriladi. Qundon, nifoq va ixtiloflar jamiyatni halokatga olib kelishi, har bir ishda mashvarat (maslahatlashuv) zarurligi Qur'on va hadislar bilan asoslanadi.\n\nUchinchi mezonda soxta dindorlik, hiylai shar'iy ishlatish, tarozidan urish va faqirlarga zulm qilish kabi illatlar qoralanadi. Ulamo va avomning mas'uliyatsizligi tahlil qilinadi.\n\nTo‘rtinchi mezonda yangi ixtirolarni (samovar, gugurt, chiroq, paraxod) avval bid'at yoki harom deb hurkib, keyin o‘zlari tutgan johil kimsalar tanqid qilinadi. Marg‘inonda usuli jadid maktabining imtihon qilinishi va uning foydasi tan olingani hikoya qilinadi.\n\nBeshinchi mezonda Turkiston xalqining 1290-hijriydan keyingi harakatlari, tijorat va ilmu hunarga intilishi ko‘rsatiladi. Bu asr turmoq emas, harakat va o‘rganish asri ekani uqtiriladi.\n\nOltinchi mezonda o‘likka sarflanadigan behuda xayrotlar, fidya va isqot hiylalari, to‘ylardagi dabdaba hamda choyxonalardagi g‘iybatxo‘rliklar qoralanib, ma'rifat va xayriya muassasalari ochish taklif etiladi.\n\nYettinchi mezonda zamonning o‘zi bir faol muallim va hokim ekani, zamona ravishiga moslashib madaniyat va intizomni egallash zarurligi uqtiriladi.\n\nSakkizinchi mezonda tashqi kiyim va ko‘rinishga binoan baho berish soddaligi hamda rasm bilan suratni farqlamay odamlarni qiyinchilikka solgan ulamolar taassubi tanqid qilinadi.\n\nTo‘qqizinchi mezonda bir asr ilgari yashagan odamlarning sodda turmushi va hozirgi zamon o‘zgarishlari solishtirilib, zamonga mos ma'rifat egallash zarurligi ta'kidlanadi.\n\nAsar oxirida qo‘lyozmani 1950-yilda topib saqlagan Jo‘ra Zokiriyning xotirasi keltiriladi.",
+  "characters": "Is'hoqxon Ibrat (muallif va roviy, jadid ma'rifatparvari, o‘z masjiddida usuli jadid maktabi ochgan va ma'rifat tarqatgan), Marg‘inondagi usuli jadid muallimi (o‘z darslarini siyazdda ulamolar va qozilar oldida imtihondan o‘tkazib bera olgan ma'rifatparvar), Xo‘qandlik mudarris va a'lam (rasm va suratni farqlay olmay taassub qilgan ulamolar vakillari), Jo‘ra Zokiriy (Axsi-Kirovlik ziyoli, 1950-yilda Ibratning qo‘lyozmasini topib saqlagan shaxs).",
+  "conclusion": "Ushbu risola kitobxonga zamonaviy ilm-fan va texnika yutuqlarini egallash, bid'at hamda soxta urf-odatlardan voz kechish va har bir ishda aql hamda ma'rifatga tayanish sabog‘ini beradi. Bola ushbu asar orqali jadidchilik harakati tarixi, milliy o‘zlik va jamiyatni rivojlantirishda birlik hamda ta'limning o‘rni nechog‘lik yuqori ekanini anglab yetadi.",
+  "difficulty": "qiyin",
+  "mood": "o‘ylantiruvchi, ma'rifiy",
+  "for_whom": "Jamiyat tarixi, ma'rifatparvarlik, jadidchilik davri hamda ilm-fan va din nisbati haqida o‘ylaydigan o‘smirlar uchun.",
+  "events": [
+   "Muallif amri ma'rufni og‘zaki emas, qalam bilan yozib qoldirishning abadiy afzalligini tushuntiradi.",
+   "Birinchi mezonda zamon vazn qilinib, poyezd va chiroq kabi ixtirolar insonlarga osonlik uchun berilgan ne'mat ekani ko‘rsatiladi.",
+   "Muallif ilm va hunarsizlik barcha qiyinchiliklarning asosiy sababi ekanini ta'kidlaydi.",
+   "Ikkinchi mezonda Qur'on va hadislar asosida Islom dini birlik, ittifoq va mashvarat dini ekani uqtiriladi.",
+   "Uchinchi mezonda ba'zi boylar va tujjorlarning hiylai shar'iy ishlatib, faqirlarni aldashlari qoralanadi.",
+   "To‘rtinchi mezonda samovar, gugurt va lampochka kabi yangi buyumlarni avval bid'at deb hurkib, keyin tutgan sodda kimsalar tanqid qilinadi.",
+   "Marg‘inonda usuli jadid muallimi o darslarini siyazd majlisida ulamolarga namoyish etib, ularning tahsiniga sazovor bo‘ladi.",
+   "Muallif o‘z masjidida maktab ochib, qisqa fursatda yoshlar va tujjorlarning xat-savodini chiqarganini eslaydi.",
+   "Beshinchi mezonda 1290-hijriydan keyin xalq harakat va tijoratga kirishgani, turmoq asri emas, harakat asri kelgani ko‘rsatiladi.",
+   "Oltinchi mezonda dafn marosimlaridagi isqot va fidya hiylalari hamda sag‘irlarning haqiga xiyonat qilinishi tanqid qilinadi.",
+   "Fotiha va nikoh to‘ylaridagi dabdabali behuda sarf-harajatlar qoralanadi.",
+   "Amerika miltonerining o‘z boyligini xayriya muassasasiga topshirgani ibratli misol sifatida keltiriladi.",
+   "Choyxonalarda qish bo‘yi befoyda o‘tirib g‘iybat qilish o‘rniga kitob o‘qish va hunar o‘rganish taklif etiladi.",
+   "Yettinchi mezonda zamonning o‘zi faol muallim va hokim ekani tushuntiriladi.",
+   "Sakkizinchi mezonda xalqning faqat tashqi kiyim va salla-to‘nga qarab ixlos qilishi soddalik deb baholanadi.",
+   "Eshoni a'lam va mudarrisning samovar hamda piyolalardagi naqshlarni surat deb o‘ylab egovlatishga buyurgani va ularning jaholati fosh etiladi.",
+   "Rasm (soyasiz chizgi) bilan surat (soyali haykal) o‘rtasidagi lug‘aviy farq tushuntiriladi.",
+   "To‘qqizinchi mezonda bir asr ilgari odamlar sodda va sofdil yashagani solishtiriladi.",
+   "Muallif avlodlarni kelajak zamon ilmi bilan tarbiyalash zarurligini uqtiradi.",
+   "1950-yilda Axsilik Jo‘ra Zokiriy (Idris) ushbu qo‘lyozmani Ibrat hovlisidan topib saqlab qo‘yganini yozadi."
+  ],
+  "quotes": [
+   "Qalam bila bo‘lsa, qiyomatgacha xizmat bo‘lur, har bir ahli savod ko‘rub o‘qusa, amri ma'ruf bo‘ladur.",
+   "Avvaldin biz – ahli islom ulamosini juz'iy so‘zlarga kulli janjal qilinib, baynalulamo ixtilof bo‘lub yurgandur.",
+   "Usuli jadid demak – yangi qoida, yangi tartib demakdur...",
+   "Hosili kalomul-muddao val-marom asrimiz ilmu hunar, harakat asridur. Turmoq asri emas.",
+   "Zamona bo tu nasozad, Tu ba zamona basoz."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallifning fikricha, qalam bilan qilingan amri ma'rufning afzalligi nimada?",
+   "options": [
+    "A) Qiyomatgacha xizmat qilib saqlanib qoladi",
+    "B) Faqat bir kishi eshitib biladi",
+    "C) Ko‘p vaqt talab qilmaydi",
+    "D) Faqat ulamolar uchun mo‘ljallangan bo‘ladi"
+   ],
+   "answer": "A) Qiyomatgacha xizmat qilib saqlanib qoladi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "\"Mezon uz-zamon\" asarida muallif birinchi mezonda nimani vazn qiladi?",
+   "options": [
+    "A) O‘z asri va zamonasini",
+    "B) Qadimiy kitoblar va matnlarni",
+    "C) Turli davlatlar chegaralarini",
+    "D) Bozorlardagi mahsulotlar narxini"
+   ],
+   "answer": "A) O‘z asri va zamonasini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Birinchi mezonda insonlar ma'ishatidagi mashaqqatlar sababi sifatida nima ko‘rsatilgan?",
+   "options": [
+    "A) Ilmu hunarsizlik va qiyinchiliklar",
+    "B) Safar qilish imkoniyati yo‘qligi",
+    "C) Dunyoviy boylikka berilib ketish",
+    "D) Yangi texnikalarning ko‘pligi"
+   ],
+   "answer": "A) Ilmu hunarsizlik va qiyinchiliklar"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun muallif jamiyatda ixtilof o‘rniga ittifoq bo‘lishi shart deydi?",
+   "options": [
+    "A) Birlik taraqqiyot va kuch bag‘ishlaydi",
+    "B) Ixtilof faqat boylarga foyda keltiradi",
+    "C) Avom xalq shunday xohlagani uchun",
+    "D) Safarga chiqish oson bo‘lishi uchun"
+   ],
+   "answer": "A) Birlik taraqqiyot va kuch bag‘ishlaydi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ikkinchi mezonda keltirilgan mashvarat (maslahat) qilishdan asosiy maqsad nima?",
+   "options": [
+    "A) To‘g‘ri qarorga kelib ittifoq bo‘lish",
+    "B) Boshqalarga o‘z kuchini ko‘rsatish",
+    "C) Ishni orqaga surish va kechiktirish",
+    "D) Boylikni teng bo‘lib olish"
+   ],
+   "answer": "A) To‘g‘ri qarorga kelib ittifoq bo‘lish"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ulamolarning mayda masalalarda janjallashib, ummat farzlarini unutishiga muallif qanday baho beradi?",
+   "options": [
+    "A) Bu holatni xato va nojo‘ya deydi",
+    "B) Bu ishni to‘g‘ri va foydali deydi",
+    "C) Buni zamona talabi deb maqtaydi",
+    "D) Bunga umuman e'tibor bermaydi"
+   ],
+   "answer": "A) Bu holatni xato va nojo‘ya deydi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Kuntum xayra ummatin...\" oyatini keltirib, qanday tuyg‘uni ifodalashni maqsad qilgan?",
+   "options": [
+    "A) Ummatning mas'uliyati va ma'rifatga burchliligini",
+    "B) Insonlarning dunyodan kechishi kerakligini",
+    "C) O‘zbekiston tabiatining go‘zalligini",
+    "D) Faqat ibodat bilan cheklanish zarurligini"
+   ],
+   "answer": "A) Ummatning mas'uliyati va ma'rifatga burchliligini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘rtinchi mezonda Marg‘inon shahrida muallim o‘z maktabini qayerda imtihon qildiradi?",
+   "options": [
+    "A) Siyazd va ulamolar majlisida",
+    "B) Qadimiy madrasa hovlisida",
+    "C) Katta shahar bozorida",
+    "D) Qo‘qon xonining saroyida"
+   ],
+   "answer": "A) Siyazd va ulamolar majlisida"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif usuli jadid maktabiga qarshilik qilgan mullalarning niyatini qanday tushuntiradi?",
+   "options": [
+    "A) Eski muallimlarning daromadi yo‘qolishidan qo‘rqishgan",
+    "B) O‘quvchilar soni kamayib ketishidan qo‘rqishgan",
+    "C) Maktab binolari juda torligidan xavotirlanishgan",
+    "D) Darsliklar yetishmasligidan tashvishga tushishgan"
+   ],
+   "answer": "A) Eski muallimlarning daromadi yo‘qolishidan qo‘rqishgan"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "To‘rtinchi mezonda qaysi yangi ma'rifiy hodisa jamiyatda keng yoyila boshlagani aytiladi?",
+   "options": [
+    "A) Usuli jadid maktablarining ochilishi",
+    "B) Qadimiy qo‘lyozmalarning ko‘payishi",
+    "C) Chet elga sayohatlar uyushtirilishi",
+    "D) Har bir mahalla masjidining yopilishi"
+   ],
+   "answer": "A) Usuli jadid maktablarining ochilishi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Beshinchi mezonda muallif \"zamona tarozusi\" deganda nimani nazarda tutadi?",
+   "options": [
+    "A) Davrning bilim va harakat asriligini",
+    "B) Bozorlardagi tarozi toshlarining to‘g‘riligini",
+    "C) Eskilikka butunlay qaytish zarurligini",
+    "D) Faqat tijorat bilan shug‘ullanishni"
+   ],
+   "answer": "A) Davrning bilim va harakat asriligini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oltinchi mezonda muallif dafn va to‘y marosimlaridagi sarf-harajatlarni nega tanqid qiladi?",
+   "options": [
+    "A) Bu sarflar isrofgarchilik va bid'atdir",
+    "B) Odamlar yetarlicha pul topolmagani uchun",
+    "C) Oila a'zolari kamayib ketgani uchun",
+    "D) Hukumat buni taqiqlab qo‘ygani uchun"
+   ],
+   "answer": "A) Bu sarflar isrofgarchilik va bid'atdir"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif choyxonalarda befoyda o‘tirish o‘rniga nima bilan mashg‘ul bo‘lishni taklif etadi?",
+   "options": [
+    "A) Kitob o‘qish va hunar o‘rganishni",
+    "B) To‘ylarda xizmat qilib pul topishni",
+    "C) Uyda uxlab vaqt o‘tkazishni",
+    "D) Boshqa shaharlarga ko‘chib ketishni"
+   ],
+   "answer": "A) Kitob o‘qish va hunar o‘rganishni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning Amerikadagi millionerning o‘z boyligini xayriyaga bergani haqidagi misoliga munosabati qanday?",
+   "options": [
+    "A) Buni ibratli va foydali ish deydi",
+    "B) Buni ahmoqlik va isrofgarchilik deydi",
+    "C) Bu voqeaga umuman ishonmaydi",
+    "D) Buni boylikni yo‘qotish deb baholaydi"
+   ],
+   "answer": "A) Buni ibratli va foydali ish deydi"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yettinchi mezonda zamon insonlar uchun qanday vazifani bajaruvchi deb tasvirlanadi?",
+   "options": [
+    "A) Faol muallim va tarbiyachi sifatida",
+    "B) Faqat qattiqqo‘l jazolovchi sifatida",
+    "C) Boylik toplaydigan tujjor sifatida",
+    "D) Eskilikni saqlovchi posbon sifatida"
+   ],
+   "answer": "A) Faol muallim va tarbiyachi sifatida"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sakkizinchi mezonda muallif xalqning soddaligini ko‘rsatish uchun qaysi holatni misol qiladi?",
+   "options": [
+    "A) Odamlar kiyimga qarab ixlos qilishini",
+    "B) Odamlar faqat ilmga intilishini",
+    "C) Hamma chet tillarini o‘rganayotganini",
+    "D) Barcha bozorlar yopilib ketganini"
+   ],
+   "answer": "A) Odamlar kiyimga qarab ixlos qilishini"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sakkizinchi mezonda rasm bilan surat o‘rtasidagi farq lug‘atda qanday tushuntirilgan?",
+   "options": [
+    "A) Surat soyali, rasm esa soyasizdir",
+    "B) Surat qog‘ozda, rasm esa yog‘ochda",
+    "C) Rasm bilan surat bir xildir",
+    "D) Rasm rangli, surat esa rangsizdir"
+   ],
+   "answer": "A) Surat soyali, rasm esa soyasizdir"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘qqizinchi mezonda bir asr ilgari yashagan odamlarning turmush tarzi qanday bo‘lgan?",
+   "options": [
+    "A) Sodda, sofdil va kamtarona yashashgan",
+    "B) Qashshoq va doimiy urushda bo‘lishgan",
+    "C) Faqat dabdabali to‘ylar qilishgan",
+    "D) Hamma zamonaviy uyda yashagan"
+   ],
+   "answer": "A) Sodda, sofdil va kamtarona yashashgan"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar oxiridagi xotimada ushbu qo‘lyozmani topib, saqlab qo‘ygan shaxs kim edi?",
+   "options": [
+    "A) Axsilik Jo‘ra Zokiriy (Idris)",
+    "B) Marg‘inonlik mashhur qozi",
+    "C) Qo‘qonlik boy tijoratchi",
+    "D) Namanganlik usuli jadid muallimi"
+   ],
+   "answer": "A) Axsilik Jo‘ra Zokiriy (Idris)"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Zamona bo tu nasozad, tu ba zamona basoz\" bayti bilan nima demoqchi?",
+   "options": [
+    "A) Zamon taraqqiyotiga moslashib, ilm egallashni",
+    "B) Zamona bilan doimo urushib yashashni",
+    "C) O‘tmish odatlarini hech qachon o‘zgartirmaslikni",
+    "D) Hamma narsani taqdirga tashlab qo‘yishni"
+   ],
+   "answer": "A) Zamon taraqqiyotiga moslashib, ilm egallashni"
+  }
+ ]
+}

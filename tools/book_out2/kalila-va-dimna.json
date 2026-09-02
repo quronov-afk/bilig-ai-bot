@@ -1,0 +1,481 @@
+{
+ "title": "Kalila va Dimna",
+ "author": "Hind xalq eposi",
+ "genre": "epos",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "do‘stlik",
+   "aql va hikmat",
+   "to‘g‘rilik",
+   "adolat",
+   "halollik"
+  ],
+  "theme": "Asar insonlarni aql-idrok, adolat, halollik va to‘g‘rilik bilan yashashga chorlaydi. Davlat boshqaruvi va o‘zaro munosabatlarda fitna, g‘araz hamda mansabparastlikning fojiali oqibatlari majoziy obrazlar va ibratli masallar orqali ochib beriladi.",
+  "summary": "Hind podshohi Dobshalim taxtga o‘tirgach, g‘ururga berilib raiyatga zulm qila boshlaydi. Brahman faylasufi Beydabo shohni adolatga chaqirish uchun saroyga boradi va uni to‘g‘ri yo‘lga solmoqchi bo‘ladi. Dobshalim dastlab g‘azablanib Beydaboni zindonga tashlaydi, ammo keyinchalik o‘z xatosini tushunib, donishmandni ozod qiladi va davlatni adolat bilan idora etish uchun undan pand-nasihatlar to‘plami bo‘lgan «Kalila va Dimna» kitobini yozishni so‘raydi.\n\nKitobning asosiy qismini hayvonlar va qushlar tilidan naql qilingan majoziy hikoyalar tashkil etadi. Uning eng markaziy qismi «Sher va ho‘kiz» bobidir. Bu yerda Shatraba ismli ho‘kiz va Sher o‘rtasidagi samimiy do‘stlik, fitnachi shoqol Dimnaning hasadi hamda makri tufayli buziladi. Dimna ikki do‘st orasiga sovuqchilik tushirib, ularni bir-biriga g‘nim qiladi va oxir-oqibat Sher Shatrabani o‘ldiradi. Keyinchalik Dimnaning kirdikorlari fosh bo‘lib, u munosib jazoga tortiladi.\n\nAsarda yana ko‘plab ibratli masallar keltirilgan: «Chinkabutar, qarg‘a, sichqon, toshbaqa va ohu» bobida hamjihatlik va haqiqiy do‘stlik har qanday balodan qutqara olishi ko‘rsatiladi. «Boyqush va qarg‘alar» bobida tadbirkorlik va sabr-toqat bilan dushman ustidan g‘alaba qozonish yo‘llari tasvirlanadi. Zohid va latcha, maymun va toshbaqa, mushuk va kalamush kabi hikoyatlarda ham hushyorlik, va'daga vafo va fitnadan yiroq bo‘lish uqtiriladi. Asar oxirida sichqonlar podshohining vazirlari aql va tadbir bilan mushuklar balosidan qutulgani hamda har qanday murakkab muammo aql va birdamlik bilan hal etilishi hayotiy haqiqat sifatida xulosa qilinadi.",
+  "characters": "Beydabo — hind faylasufi, adolatli va zakovatli donishmand, shohni to‘g‘ri yo‘lga solgan. Dobshalim — hind podshohi, dastlab zolim bo‘lgan, keyin faylasuf nasihatiga kirgan. Sher — o‘rmon podshohi, sodda lekin serjahl hukmdor. Shatraba — mehnatchi va halol ho‘kiz, Sherning sadoqatli do‘sti. Dimna — fitnachi va amallaparast shoqol. Kalila — Dimnaning insofli va aqlli birodari. Barzuya — eronlik hakim, kitobni Hindistondan olib kelgan.",
+  "conclusion": "Bu asar farzandingizga insoniy fazilatlar, aql-idrok va to‘g‘rilikning har qanday kuch va boylikdan ustun ekanini o‘rgatadi. Bola do‘st tanlashda hushyor bo‘lish, fitna hamda yolg‘onga uchmaslik sabog‘ini oladi. Shuningdek, kattalarga hurmat, adolatparvarlik va birdamlik qadriyatlarini majoziy hikoyalar orqali chuqur anglaydi.",
+  "difficulty": "o‘rta",
+  "mood": "hikmatli, o‘ylantiruvchi",
+  "for_whom": "Majoziy hikoyalar va hayvonlar haqidagi masallarga qiziqadigan, aql va odob saboqlarini o‘rganishni istagan bolalarga tavsiya etiladi.",
+  "events": [
+   "Iskandar Zulqarnayn misdan suvorilar yasatib Hindistondagi fillarni mag‘lub etadi.",
+   "Dobshalim taxtga o‘tirib g‘ururga beriladi va raiyatga zulm qila boshlaydi.",
+   "Beydabo shohni adolatga da'vat etish uchun o‘z shogirdlari bilan maslahatlashadi.",
+   "To‘rg‘ay va qurbaqalar birgalikda filning ko‘zini o‘yib, uni chuqurga yiqitib halok etadilar.",
+   "Beydabo podshoh huzuriga borib, dastlab indamay ta'zim qilib turadi.",
+   "Dobshalim g‘azablanib Beydaboni zindonga tashlashga farmon beradi.",
+   "Shoh kechasi yulduzlar harakatini kuzatib o‘z xatosini tushunadi va Beydaboni ozod etadi.",
+   "Barzuya hakim Hindistonga yashirincha borib, «Kalila va Dimna» kitobini ko‘chirib Eronga keltiradi.",
+   "Dimna martabaga erishish uchun Sher xizmatiga kirishga qaror qiladi.",
+   "Dimna Sher bilan ho‘kiz Shatrabani do‘stlashtirishga muvaffaq bo‘ladi.",
+   "Baliqchi qush baliqlarni aldab tepalikka olib borib yeydi, ammo qisqichbaqa uni bo‘g‘ib o‘ldiradi.",
+   "Dimna hasad tufayli Sher va Shatraba o‘rtasiga fitna urug‘ini sepadi.",
+   "Sher fitnaga ishonib Shatrabani o‘ldiradi, so‘ngra qilgan ishidan pushaymon bo‘ladi.",
+   "O‘rdak suvda oy aksini baliq gumon qilib, keyinchalik haqiqiy baliqlarni ham tutmay Och qoladi.",
+   "Maymunlar yaltiroq qurtni olov deb o‘ylashadi va ularga nasihat qilgan qushni o‘ldirishadi.",
+   "Dimnaning kirdikorlari fosh etilib, u qozilar tomonidan so‘roq qilinadi va jazolanadi.",
+   "Suvori ilonni olovdan qutqaradi, ilon esa uni chaqmoqchi bo‘ladi; tulki hiyla bilan ilonni qopga kiritadi.",
+   "Qarg‘a, sichqon, toshbaqa va ohu qalin do‘st bo‘lib, bir-birlariga baloda yordam berishadi.",
+   "Qarg‘alar g‘or og‘ziga o‘tin qalab, boyqushlarni tutun va olov bilan mahv etadilar.",
+   "Maymun toshbaqaga «yuragimni uyda qoldirganman» deb hiyla ishlatib, o‘limdan qutulib qoladi.",
+   "Mushuk to‘rga tushganda kalamush uni qutqaradi, ammo keyin uning do‘stlik taklifini rad etadi.",
+   "Shoqol zohidlik yo‘lini tutib Sher saroyida halol xizmat qiladi.",
+   "Ona sher ovchi tomonidan bolasining o‘ldirilganini ko‘rib ibrat oladi.",
+   "Bilor vazir shohning tushlarini ta'birlab, mamlakatni balodan saqlab qoladi.",
+   "Sichqonlar podshohining vaziri aql ishlatib, odamlarning o‘zi mushuklarni quvishiga erishadi."
+  ],
+  "quotes": [
+   "Hikmat – bitmas va tuganmas xazinadir, xarjlaganing bilan u kamaymaydi, asraganing bilan unga nuqson yetmaydi.",
+   "Tilingni saqla, boshing salomat bo‘ladi, o‘rinsiz so‘zlamoqning natijasi pushaymonlikdir.",
+   "Dushmanning tilyog‘lamaligiga uchib, unga ishonganlarning jazosi shunaqa bo‘ladi.",
+   "Do‘stlar qancha ko‘p bo‘lsa, balo shuncha kam yopishadi.",
+   "Ganj ranjsiz qo‘lga kirmaydi, gul tikansiz bo‘lmaydi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Iskandar Zulqarnayn dushman fillarini yengish uchun nima yasattirdi?",
+   "options": [
+    "A) Misdan suvorilar yasattirdi",
+    "B) Temir qal‘alar qurdirdi",
+    "C) Katta manjaniqlar yasattirdi",
+    "D) Chohlar qazdirib qo‘ydi"
+   ],
+   "answer": "A) Misdan suvorilar yasattirdi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Fil to‘rg‘ayning inini toptaganda, to‘rg‘ay avval kimdan yordam so‘radi?",
+   "options": [
+    "A) Boshqa qushlardan",
+    "B) Qurbaqalardan",
+    "C) Tulkidan",
+    "D) Sherdan"
+   ],
+   "answer": "A) Boshqa qushlardan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Beydabo podshoh Dobshalimni to‘g‘ri yo‘lga solish uchun saroyga borganida nima qildi?",
+   "options": [
+    "A) Dastlab so‘zlamay jim turdi",
+    "B) Darhol shohga sovg‘a berdi",
+    "C) Baland ovozda shior aytdi",
+    "D) Shohdan in‘om talab qildi"
+   ],
+   "answer": "A) Dastlab so‘zlamay jim turdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dobshalim faylasuf Beydaboni dastlab qanday jazoga mahkum etdi?",
+   "options": [
+    "A) Zindonga tashlashga buyurdi",
+    "B) Mamlakatdan quvib yubordi",
+    "C) Mol-mulkini musodara qildi",
+    "D) Saroydan haydab chiqardi"
+   ],
+   "answer": "A) Zindonga tashlashga buyurdi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "To‘rg‘ay va qurbaqalarning harakatlari filning halokatiga qanday tartibda olib keldi?",
+   "options": [
+    "A) Ko‘zi o‘yildi, chuqurga yiqildi",
+    "B) Chuqurga tushdi, keyin ko‘r bo‘ldi",
+    "C) Suvda cho‘kdi, so‘ng ko‘zidan ayrildi",
+    "D) Qushlar quvdi, qurbaqa uni chaqdi"
+   ],
+   "answer": "A) Ko‘zi o‘yildi, chuqurga yiqildi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Iskandar mis suvorilar ichiga neft to‘ldirib o‘t yoqishdan nima maqsad qilgan?",
+   "options": [
+    "A) Fillarning xartumlarini kuydirib qochirish",
+    "B) Jang maydonini yoritib turish",
+    "C) Askarlarni sovuqdan isitib olish",
+    "D) Dushman qo‘shinini qo‘rqitib qochirish"
+   ],
+   "answer": "A) Fillarning xartumlarini kuydirib qochirish"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Beydabo o‘z hayotini xavfga qo‘yib shohga nasihat qilishining sababi nima edi?",
+   "options": [
+    "A) Xalqni zulmdan qutqarish istagi",
+    "B) Shoh taxtini egallash niyati",
+    "C) O‘z maqtoviga erishish arzulari",
+    "D) Boylik va in‘om olish"
+   ],
+   "answer": "A) Xalqni zulmdan qutqarish istagi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dimnaning xavf-xatarga qaramay shoh xizmatiga intilishi to‘g‘ri harakatmi?",
+   "options": [
+    "A) Noto‘g‘ri — manfaat uchun tavakkal qildi",
+    "B) To‘g‘ri — har doim amaldor bo‘lish kerak",
+    "C) To‘g‘ri — sherga yordam bermoqchi edi",
+    "D) Noto‘g‘ri — u saroydan qo‘rqardi"
+   ],
+   "answer": "A) Noto‘g‘ri — manfaat uchun tavakkal qildi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Tilingni saqla, boshing salomat bo‘ladi\" maqolini qaysi maqsadda keltirgan?",
+   "options": [
+    "A) O‘rinsiz so‘z pushaymonlik keltirishini ko‘rsatish",
+    "B) Inson doim jim yurishi shartligini",
+    "C) Shohlar bilan so‘zlashish taqiqlanganini",
+    "D) Ko‘p gapirish bilimdonlik belgisi ekanini"
+   ],
+   "answer": "A) O‘rinsiz so‘z pushaymonlik keltirishini ko‘rsatish"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Rum shohining \"Aytmagan so‘zimdan pushaymon bo‘lmadim\" deyishi nimani anglatadi?",
+   "options": [
+    "A) Vazminlik va bosiqlikning afzalligini",
+    "B) Kamgap odam ojiz bo‘lishini",
+    "C) Shohlar faqat sukut saqlashini",
+    "D) Rost so‘zlash zarar keltirishini"
+   ],
+   "answer": "A) Vazminlik va bosiqlikning afzalligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Baliqchi qush baliqlarni aldash uchun qanday bahona topdi?",
+   "options": [
+    "A) Ovchilar kelib baliqlarni tutishini aytdi",
+    "B) Ko‘l suvi qurib qolishini aytdi",
+    "C) Suvga zahar tushganini aytdi",
+    "D) Sher baliqlarni yeyishini aytdi"
+   ],
+   "answer": "A) Ovchilar kelib baliqlarni tutishini aytdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Suvda oyning aksini baliq deb o‘ylagan o‘rdak keyinchalik nima qildi?",
+   "options": [
+    "A) Haqiqiy baliqlarni ham tutmay och qoldi",
+    "B) Boshqa ko‘lga uchib ketdi",
+    "C) Oyni ushlab olishga erishdi",
+    "D) Suv ostida yashay boshladi"
+   ],
+   "answer": "A) Haqiqiy baliqlarni ham tutmay och qoldi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sodda va hiylagar o‘rtoqlar topib olgan tillani qayerga ko‘mdilar?",
+   "options": [
+    "A) Bir daraxt ostiga ko‘mdilar",
+    "B) Uyning poydevoriga yashirdilar",
+    "C) Quduq ichiga tashladilar",
+    "D) G‘orning burchagiga bekitdilar"
+   ],
+   "answer": "A) Bir daraxt ostiga ko‘mdilar"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Suvori ilonni olovdan qutqargach, ilon nimani talab qildi?",
+   "options": [
+    "A) Suvorini chaqib o‘ldirishni",
+    "B) Unga ovqat berishini",
+    "C) Uni uyiga olib borishini",
+    "D) Otini berib ketishini"
+   ],
+   "answer": "A) Suvorini chaqib o‘ldirishni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Suvori va ilon bahsida kimlar ketma-ket guvohlik berishdi?",
+   "options": [
+    "A) Sigir, daraxt va tulki",
+    "B) Qarg‘a, sichqon va toshbaqa",
+    "C) Qarchig‘ay, to‘tiqush va o‘rdak",
+    "D) Sher, ho‘kiz va shoqol"
+   ],
+   "answer": "A) Sigir, daraxt va tulki"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dimna sher bilan Shatraba do‘stligini buzishda qanday yo‘l tutdi?",
+   "options": [
+    "A) Ikkoviga ham yolg‘on fitna aytdi",
+    "B) Ularni kuch bilan urishtirib qo‘ydi",
+    "C) Shoqollardan yordam so‘radi",
+    "D) Shohga oshkora hujum qildi"
+   ],
+   "answer": "A) Ikkoviga ham yolg‘on fitna aytdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tulki ilonga to‘rvaga kirib ko‘rsatishni taklif qilishdan maqsadi nima edi?",
+   "options": [
+    "A) Ilonni qopga solib yo‘q qilish",
+    "B) Ilonning kattaligini sinab ko‘rish",
+    "C) Suvorining yolg‘onini oshkor qilish",
+    "D) Ilon bilan do‘stlashib olish"
+   ],
+   "answer": "A) Ilonni qopga solib yo‘q qilish"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Maymunlar yaltiroq qurtni olov deb o‘ylashganda, qush nega halok bo‘ldi?",
+   "options": [
+    "A) Nasihatga quloq solmay tushgani uchun",
+    "B) Olovga tushib ketgani uchun",
+    "C) Izg‘irin sovuqda muzlab qolgani uchun",
+    "D) Yaltiroq qurt uni chaqqani uchun"
+   ],
+   "answer": "A) Nasihatga quloq solmay tushgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Suvorining ilonga yordam berib, keyin baloga qolishi nimadan ogoh etadi?",
+   "options": [
+    "A) Yovuz va dushmanga ishonmaslik kerakligidan",
+    "B) Jonivorlarga hech qachon rahm qilmaslikdan",
+    "C) Har doim yolg‘iz yurish kerakligidan",
+    "D) Quduqdan suv olmaslik kerakligidan"
+   ],
+   "answer": "A) Yovuz va dushmanga ishonmaslik kerakligidan"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Qushning \"Nasihat qilish — qilichni toshga urishdir\" deyishi nimani anglatadi?",
+   "options": [
+    "A) Nodon va gap uqmasga nasihat zoye ketishini",
+    "B) Toshni qilich bilan kesish osonligini",
+    "C) Maymunlar qilichdan qo‘rqishini",
+    "D) Har bir nasihat oltin ekanini"
+   ],
+   "answer": "A) Nodon va gap uqmasga nasihat zoye ketishini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qarg‘alar boyqushlar ustidan g‘alaba qozonish uchun g‘or og‘ziga nima qaladilar?",
+   "options": [
+    "A) Quruq o‘tin yig‘ib o‘t qo‘ydilar",
+    "B) Bahaybat toshlar bostirib qo‘ydilar",
+    "C) Katta to‘r tortib bekitdilar",
+    "D) Suv to‘ldirib oqizib yubordilar"
+   ],
+   "answer": "A) Quruq o‘tin yig‘ib o‘t qo‘ydilar"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maymun toshbaqaning daryo o‘rtasida aytgan niyatini eshitgach, qanday hiyla ishlatdi?",
+   "options": [
+    "A) Yuragimni uyda qoldirganman dedi",
+    "B) Suvga sakrab suzib ketdi",
+    "C) Toshbaqaning ustiga minib oldi",
+    "D) Daraxt shoxiga sakrab chiqdi"
+   ],
+   "answer": "A) Yuragimni uyda qoldirganman dedi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sichqonlar podshohi mushuklar balosidan qutulish uchun vazir maslahati bilan nima qildi?",
+   "options": [
+    "A) Buyumlarni chaynab, mushuklarni aybdor ko‘rsatishdi",
+    "B) Barchalari sahroga ko‘chib ketishdi",
+    "C) Mushuklarning bo‘yniga qo‘ng‘iroq taqishdi",
+    "D) Mushuklar bilan sulh tuzib olishdi"
+   ],
+   "answer": "A) Buyumlarni chaynab, mushuklarni aybdor ko‘rsatishdi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kaklik va tihu o‘rtasidagi uy nizosida mushuk nima qildi?",
+   "options": [
+    "A) Ikkalasini ham tutib yeb qo‘ydi",
+    "B) Uyga kaklikni kiritib qo‘ydi",
+    "C) Ularni odil jazoladi va haydadi",
+    "D) Tihuning foydasiga hukm chiqardi"
+   ],
+   "answer": "A) Ikkalasini ham tutib yeb qo‘ydi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Do‘stlar tuzoqqa tushgan ohuni qanday tartibda qutqardilar?",
+   "options": [
+    "A) Qarg‘a topdi, sichqon to‘rni kesti",
+    "B) Toshbaqa to‘rni kesti, sichqon qochdi",
+    "C) Ohu o‘zi to‘rni uzib qochdi",
+    "D) Qarg‘a ovchini cho‘qib quvdi"
+   ],
+   "answer": "A) Qarg‘a topdi, sichqon to‘rni kesti"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kalamush mushukni to‘rdan qutqargach, nega uning do‘stlik taklifini rad etdi?",
+   "options": [
+    "A) Mushuk baribir unga dushmanligini bilgani uchun",
+    "B) Ovchidan qo‘rqqani uchun qochib ketdi",
+    "C) Boshqa in topgani uchun ketdi",
+    "D) Mushukning qarib qolganini ko‘rgani uchun"
+   ],
+   "answer": "A) Mushuk baribir unga dushmanligini bilgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sichqonlar podshohining uchinchis vaziri bergan maslahati nega eng to‘g‘ri chiqdi?",
+   "options": [
+    "A) Insonlarning o‘zi mushuklarni haydashiga erishgani uchun",
+    "B) Sichqonlar sahroga qochib qutulgani uchun",
+    "C) Mushuklarga qo‘ng‘iroq taqish oson bo‘lgani uchun",
+    "D) Mushuklar bilan do‘stlashib olgani uchun"
+   ],
+   "answer": "A) Insonlarning o‘zi mushuklarni haydashiga erishgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Toshbaqaning maymunga xiyonat qilmoqchi bo‘lganini qanday baholash kerak?",
+   "options": [
+    "A) Noto‘g‘ri — do‘stlikka xiyonat kechirilmaydi",
+    "B) To‘g‘ri — xotinini saqlashi kerak edi",
+    "C) To‘g‘ri — maymunlar foydasiz jonivor",
+    "D) Noto‘g‘ri — u daryoda suzmasligi kerak edi"
+   ],
+   "answer": "A) Noto‘g‘ri — do‘stlikka xiyonat kechirilmaydi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sichqonlar podshohining dushmanga qarshi hiyla ishlatishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — elini balodan qutqardi",
+    "B) Noto‘g‘ri — mushuklar bilan urishish kerak edi",
+    "C) Noto‘g‘ri — sahroga ko‘chish kerak edi",
+    "D) To‘g‘ri — barcha kiyimlar teshildi"
+   ],
+   "answer": "A) To‘g‘ri — elini balodan qutqardi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Darvishning ko‘r haqidagi masalni aytishi orqali muallif nimani uqtirmoqchi?",
+   "options": [
+    "A) Dunyo hirsi insonni halokatga yetkazadi",
+    "B) Ko‘r odamlar safarga chiqmasligi kerak",
+    "C) Qamchi sovg‘a qilish yaxshi odat",
+    "D) Ilonlar har doim do‘st bo‘ladi"
+   ],
+   "answer": "A) Dunyo hirsi insonni halokatga yetkazadi"
+  }
+ ]
+}

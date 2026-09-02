@@ -1,0 +1,477 @@
+{
+ "title": "Zukkolar va landavurlar",
+ "author": "Malkolm Gladuell",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "muvaffaqiyat",
+   "mehnatsevarlik",
+   "imkoniyatlar",
+   "madaniyat",
+   "ilm-fan"
+  ],
+  "theme": "Muvaffaqiyat faqat shaxsiy iste'dod va tirishqoqlikka emas, balki insonga berilgan imkoniyatlar, u o‘sgan muhit, madaniy meros va tarixiy sharoitlarga ham chambarchas bog‘liqdir.",
+  "summary": "Kitob Rozeto qishlog‘i aholisining g‘aroyib salomatligi siri bilan boshlanadi: ularni infarktdan saqlagan narsa parhez yoki genlar emas, balki ahil, o‘zaro yordamga asoslangan va tinch ijtimoiy muhit bo‘lgan. Keyin muallif Kanada xokkey ligasi misolida «Matfey effekti»ni tushuntiradi: yilning dastlabki oylarida tug‘ilgan bolalar jismonan ertaroq rivojlangani uchun ko‘proq imkoniyatga ega bo‘lishadi va sara jamoalarga saralanadi. Bill Joy va Bill Geyts misolida muvaffaqiyat kaliti kamida 10 000 soatlik doimiy mashq hamda to‘g‘ri vaqtda paydo bo‘lgan imkoniyatlar ekani ko‘rsatiladi. Lyuis Terman o‘tkazgan tadqiqot hamda Kris Langan va Robert Oppengeymer taqdiri qiyoslanib, faqat yuqori IQ darajasi yetarli emasligi, amaliy intellekt va ijtimoiy muloqot ko‘nikmalari juda muhimligi isbotlanadi. Jo Flom hamda Nyu-Yorkdagi yahudiy advokatlar tarixi orqali demografik omillar, to‘g‘ri sohada tirishqoqlik bilan ishlash muvaffaqiyat keltirishi tushuntiriladi. AQSHning Janubiy shtatlaridagi «nomus madaniyati» hamda Korean Air va Avianca samolyotlarining halokatlari misolida muloqot madaniyati, tili va iyerarxiyaga munosabat Inson taqdiriga qanday ta'sir qilishi ochib beriladi. Kitob oxirida osiyolik dehqonlarning sholi yetishtirishdagi mashaqqatli mehnati va KIPP akademiyasi tartibi orqali mehnatsevarlikning matematikani o‘zlashtirishga ta'siri, shuningdek muallifning Yamaykadagi o‘z oilaviy tarixi tahlil qilinadi. Muvaffaqiyat ortida doimo jamiyat va tarix taqdim etgan ko‘rinmas imkoniyatlar turishi xulosa qilinadi.",
+  "characters": "Styuart Vulf va Jon Brun — Rozeto shaharchasining salomatlik sirini o‘rgangan shifokor va sotsiolog; Bill Joy — kompyuter markazidagi imkoniyat tufayli o‘z dasturlash iqtidorini rivojlantirgan daho; Kris Langan — o‘ta yuqori IQga ega, ammo ijtimoiy muloqot va ko‘mak yo‘qligi sababli akademik muvaffaqiyatga erisha olmagan odam; Robert Oppengeymer — amaliy intellekti va muloqot mahorati yuqori bo‘lgan mashhur fizik olim; Marita — KIPP akademiyasida kelajagi uchun tirishqoqlik bilan ta'lim olayotgan o‘smir qiz; Deyzi Ford — muallifning momosi, Yamaykadagi imkoniyatlardan unumli foydalangan ziyoli ayol.",
+  "conclusion": "Ushbu kitob o‘smirga muvaffaqiyat faqat bir kishining xizmati emas, balki sabr-toqat, doimiy mehnat va berilgan imkoniyatlar mahsuli ekanini anglatadi. Bola undan kamtarlik, mehnatsevarlik va atrofdagi odamlar bilan to‘g‘ri muloqot qilishning ahamiyatini o‘rganadi. Ota-ona farzandiga imkoniyat va to‘g‘ri muhit yaratish naqadar muhimligini tushunadi. Asar insonni omadsizlikda tushkunlikka tushmaslikka va doimiy izlanishga undaydi.",
+  "difficulty": "qiyin",
+  "mood": "o‘ylantiruvchi, ilmiy-ommabop, tahliliy",
+  "for_whom": "Muvaffaqiyat sirlari, psixologiya va jamiyat qonuniyatlariga qiziqadigan, mehnatsevarlik hamda hayotiy imkoniyatlar haqida chuqur fikrlamoqchi bo‘lgan o‘smirlar uchun.",
+  "events": [
+   "1. Rozeto shaharchasi aholisida infarkt kasalligi deyarli uchramasligi shifokor Styuart Vulfning e'tiborini tortadi.",
+   "2. Shifokor Vulf va sotsiolog Brun Rozeto aholisining salomatlik siri ahil ijtimoiy muhitda ekanini aniqlaydilar.",
+   "3. Kanada xokkey jamoalarida o‘yinchilarning aksariyati yilning birinchi choragida tug‘ilgani ma'lum bo‘ladi.",
+   "4. Rojer Barnsli xokkeychilar orasidagi nisbiy yosh fenomenini tahlil qilib, qonuniyatni kashf etadi.",
+   "5. Bill Joy Michigan universitetida kompyuter texnikasidan cheksiz foydalanish imkoniyatiga ega bo‘ladi.",
+   "6. Bill Joy tunlari bilan dasturlashni mashq qilib, 10 000 soatlik mardona mehnat tajribasini to‘playdi.",
+   "7. Lyuis Terman Kaliforniya maktablaridan o‘ta yuqori IQga ega bo‘lgan «termitlar» guruhini yig‘adi.",
+   "8. Terman yillar davomida aqlli bolalarning hayot yo‘lini kuzatib, faqat IQ muvaffaqiyat keltirmasligini ko‘radi.",
+   "9. Kris Langan o‘ta yuqori intellektga ega bo‘lishiga qaramay, hujjat topshirish va muloqot muammolari sabab kollejni tashlaydi.",
+   "10. Robert Oppengeymer Kembrijdagi inqirozli vaziyatda amaliy intellekti va muomala san'ati orqali jazodan qutilib qoladi.",
+   "11. Jo Flom va uning hamkorlari yirik yuridik firmalar rad etgan ishlarni bajarib, tajribali advokatlarga aylanadilar.",
+   "12. 1930-yillar inqirozi davrida tug‘ilgan oz sonli avlod ta'lim va ishda ulkan imkoniyatlarga ega bo‘ladi.",
+   "13. Luis Borgenixt va uning ayoli Nyu-Yorkda bolalar ko‘ylagini tikib, shaxsiy bizneslarini yo‘lga qo‘yadilar.",
+   "14. Kentukki shtatining Xarlan shaharchasida Hovard va Terner oilalari o‘rtasida arzimas sabab tufayli adovat alovlanadi.",
+   "15. Olimlar Amerika Janubida shakllangan «nomus madaniyati» va uning shafqatsiz oqibatlarini o‘rganadilar.",
+   "16. Korean Air va Avianca samolyotlarining halokatga uchrashiga ekipajdagi charchoq va o‘zaro muloqot xatolari sabab bo‘ladi.",
+   "17. Osiyo mamlakatlarida asrlar davomida sholi yetishtirish o‘ta mashaqqatli va puxta mehnatni talab qiladi.",
+   "18. Sholi dalalaridagi doimiy va mazmunli mehnat osiyoliklarning tirishqoqligi va matematikaga qobiliyatini shakllantiradi.",
+   "19. KIPP akademiyasida qashshoq oila bolalari ertalabdan kechgacha tinimsiz ta'lim olib, yuksak natijalarga erishadilar.",
+   "20. Marita ismli o‘quvchi qiz kelajakdagi muvaffaqiyati uchun kunlik qattiq tartib-intizomga amal qiladi.",
+   "21. Muallif Malcolm Gladwell Yamaykadagi o‘z ajdodlari va momosi Deyzi Fordning erishgan muvaffaqiyati tarixini so‘zlab beradi."
+  ],
+  "quotes": [
+   "Rozeto aholisi uchun ularning mo‘jaz, ammo hamma narsa yetarli bo‘lgan shaharchasi butun dunyoga teng edi.",
+   "Biz yashayotgan dunyoning qadriyatlari va atrofimizdagi odamlar bizning shaxsimizda chuqur iz qoldirishini qabul qilishimiz kerak.",
+   "Bu kitob yuksak daraxt haqida emas. Bu u o‘sgan o‘rmon haqidagi kitobdir.",
+   "Madaniy meros inson xulq-atvori shakllanishida va atrofni qabul qilishida shu qadar muhim o‘ringa egaki, biz atrofimizdagi dunyoni usiz tasavvur qila olmaymiz.",
+   "Chuniki muvaffaqiyatni haqqoniy tushunish boshqa narsalar bilan birga kamtarlikni ham taqozo etadi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rozeto shaharchasi qaysi mamlakatda joylashgan?",
+   "options": [
+    "A) Italiyada",
+    "B) Amerikada",
+    "C) Angliyada",
+    "D) Germaniyada"
+   ],
+   "answer": "A) Italiyada"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rozetoga 1896-yilda kelgan ruhoniyning ismi kim edi?",
+   "options": [
+    "A) Paskual de Nisko",
+    "B) Styuart Vulf",
+    "C) Jon Brun",
+    "D) Gordon Kempbell"
+   ],
+   "answer": "A) Paskual de Nisko"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kanadalik ruhshunos Rojer Barnsli nimani payqab qoldi?",
+   "options": [
+    "A) Xokkeychilarning tug‘ilgan oylarini",
+    "B) O‘yinchilarning bo‘yini",
+    "C) Kiyimlar rangini",
+    "D) Konki turlarini"
+   ],
+   "answer": "A) Xokkeychilarning tug‘ilgan oylarini"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bill Joy qaysi universitetda ta'lim olgan edi?",
+   "options": [
+    "A) Michigan universitetida",
+    "B) Garvard universitetida",
+    "C) Stenford universitetida",
+    "D) Oklaxoma universitetida"
+   ],
+   "answer": "A) Michigan universitetida"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kanadadagi sara xokkeychilarning aksariyati qaysi oylarda tug‘ilgan?",
+   "options": [
+    "A) Yanvar va mart o‘rtasida",
+    "B) Iyul va avgustda",
+    "C) Noyabr va dekabrda",
+    "D) Faqat sentyabr oyida"
+   ],
+   "answer": "A) Yanvar va mart o‘rtasida"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun rozetoliklar orasida infarkt kasalligi kam uchragan?",
+   "options": [
+    "A) Ahil va tinch ijtimoiy muhit sabab",
+    "B) Maxsus parhez qilganlari uchun",
+    "C) Sport bilan shug‘ullangani uchun",
+    "D) Tog‘ havosi juda toza bo‘lganidan"
+   ],
+   "answer": "A) Ahil va tinch ijtimoiy muhit sabab"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun yosh xokkeychilarni tanlashda tug‘ilgan oy muhim?",
+   "options": [
+    "A) Yil boshida tug‘ilganlar jismonan ulug‘roq",
+    "B) Ular aqlliroq bo‘ladi",
+    "C) Murabbiylar ularni yaxshi ko‘radi",
+    "D) Ular ko‘proq mashq qiladi"
+   ],
+   "answer": "A) Yil boshida tug‘ilganlar jismonan ulug‘roq"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Paskual de Nisko otaning shaharchada bog‘lar yaratishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, odamlarni birlashtirib mehnatga undadi",
+    "B) Noto‘g‘ri, bu cherkov vazifasi emas",
+    "C) Ziyon keltirdi, odamlar toliqdi",
+    "D) Natijasiz bo‘ldi, hech narsa o‘smadi"
+   ],
+   "answer": "A) To‘g‘ri, odamlarni birlashtirib mehnatga undadi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Bu u o‘sgan o‘rmon haqidagi kitobdir\" deb nimaga shama qiladi?",
+   "options": [
+    "A) Muvaffaqiyatda muhitning o‘rni kattaligiga",
+    "B) Tabiatni asrash kerakligiga",
+    "C) O‘rmonlar kamayib borayotganiga",
+    "D) Daraxtlar tez o‘sishiga"
+   ],
+   "answer": "A) Muvaffaqiyatda muhitning o‘rni kattaligiga"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Rozetodagi hayotni \"Hayratga soladigan tomosha\" deb nimani ta'riflaydi?",
+   "options": [
+    "A) Uch avlodning birga ahil yashashini",
+    "B) Odamlarning teatrga borishini",
+    "C) Sport musobaqalari o‘tkazilishini",
+    "D) Bino va saroylar chiroyini"
+   ],
+   "answer": "A) Uch avlodning birga ahil yashashini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lyuis Terman o‘tkazgan tadqiqot qatnashchilari qanday nomlandi?",
+   "options": [
+    "A) Termitlar",
+    "B) Zukkolar",
+    "C) Landavurlar",
+    "D) Daho bolalar"
+   ],
+   "answer": "A) Termitlar"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Robert Oppengeymer qaysi loyihaning ilmiy rahbari bo‘lgan?",
+   "options": [
+    "A) Manxetten loyihasining",
+    "B) Apollon loyihasining",
+    "C) Garvard loyihasining",
+    "D) Kembrij loyihasining"
+   ],
+   "answer": "A) Manxetten loyihasining"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xarlan shahridagi dushmanlik qaysi ikki oila o‘rtasida bo‘lgan?",
+   "options": [
+    "A) Hovardlar va Ternerlar",
+    "B) Bikel va Borgenixt",
+    "C) Langan va Terman",
+    "D) Vulf va Brun"
+   ],
+   "answer": "A) Hovardlar va Ternerlar"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Luis Borgenixt Nyu-Yorkda qaysi sohada biznes boshlagan?",
+   "options": [
+    "A) Tikuvchilik va kiyim sotishda",
+    "B) Konchilik va marmar qazishda",
+    "C) Restoran va nonvoyxona ochishda",
+    "D) Avtomobil ishlab chiqarishda"
+   ],
+   "answer": "A) Tikuvchilik va kiyim sotishda"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Florens va Pulning g‘isht haqidagi javoblari nimasi bilan farqlundi?",
+   "options": [
+    "A) Pul ijodiy va kengroq o‘yladi",
+    "B) Florens ko‘proq javob berdi",
+    "C) Ikkisi ham bir xil aytdi",
+    "D) Pul javob bera olmadi"
+   ],
+   "answer": "A) Pul ijodiy va kengroq o‘yladi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oppengeymer va Kris Langan taqdiridagi asosiy farq nimada edi?",
+   "options": [
+    "A) Oppengeymer amaliy intellektga ega edi",
+    "B) Langan aqlliroq bo‘lgan",
+    "C) Langan boy oiladan edi",
+    "D) Oppengeymer maktabda o‘qimagan"
+   ],
+   "answer": "A) Oppengeymer amaliy intellektga ega edi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Kris Langan oliy ta'limni oxirigacha davom ettira olmadi?",
+   "options": [
+    "A) Ijtimoiy muloqot va qo‘llab-quvvatlov yetmadi",
+    "B) Uning zakovati yetarli emas edi",
+    "C) U o‘qishni xohlamadi",
+    "D) Unga hamma xalaqit berdi"
+   ],
+   "answer": "A) Ijtimoiy muloqot va qo‘llab-quvvatlov yetmadi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nyu-Yorkda yahudiy advokatlarning muvaffaqiyatga erishishiga nima sabab bo‘ldi?",
+   "options": [
+    "A) Ular qiyin ishlarni bajardi",
+    "B) Ularga tayyor boylik berildi",
+    "C) Ular raqobatsiz yashadi",
+    "D) Ularga hech kim xalaqit bermadi"
+   ],
+   "answer": "A) Ular qiyin ishlarni bajardi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Oppengeymerning muammoli vaziyatdan chiqa olishini qanday baholash mumkin?",
+   "options": [
+    "A) Muomala va muloqot qobiliyati yuqoriligi",
+    "B) Faqat omad chopgani",
+    "C) Qoidasizlik va kuch ishlatgani",
+    "D) Kattalarga bo‘ysunmagani"
+   ],
+   "answer": "A) Muomala va muloqot qobiliyati yuqoriligi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Xarlangacha yetgan \"nomus madaniyati\"ni qanday tasvirlaydi?",
+   "options": [
+    "A) Avloddan-avlodga o‘tadigan odat sifatida",
+    "B) Zamonaviy va qulay qoida sifatida",
+    "C) Faqat qonun bilan boshqariladigan",
+    "D) Uydirma hikoya sifatida"
+   ],
+   "answer": "A) Avloddan-avlodga o‘tadigan odat sifatida"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Korean Air 801-reysi qaysi orolga qo‘nayotganda fojia yuz berdi?",
+   "options": [
+    "A) Guam oroliga",
+    "B) Gavayi oroliga",
+    "C) Yamayka oroliga",
+    "D) Yaponiya oroliga"
+   ],
+   "answer": "A) Guam oroliga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sholi yetishtirishda dehqonlar yiliga taxminan necha soat ishlaydi?",
+   "options": [
+    "A) 3000 soat",
+    "B) 1000 soat",
+    "C) 500 soat",
+    "D) 10000 soat"
+   ],
+   "answer": "A) 3000 soat"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "KIPP akademiyasining asoschilari kimlar edi?",
+   "options": [
+    "A) Devid Levin va Maykl Faynberg",
+    "B) Suren Ratvatt va Brenner",
+    "C) Jon Ford va Charlz Ford",
+    "D) Edvard Jarvis va Kennet Gold"
+   ],
+   "answer": "A) Devid Levin va Maykl Faynberg"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallifning ona tomondan katta bobosi kim edi?",
+   "options": [
+    "A) Jon Ford",
+    "B) Kolin Pauell",
+    "C) Uilyam Fislvud",
+    "D) Orlando Patterson"
+   ],
+   "answer": "A) Jon Ford"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Avianca va Korean Air samolyot halokatlarining o‘xshash sabablari qaysilar?",
+   "options": [
+    "A) Charchoq, yomon ob-havo va muloqot",
+    "B) Faqat texnik nosozlik",
+    "C) Faqat dvigatel yonishi",
+    "D) Dushmanlar hujum qilishi"
+   ],
+   "answer": "A) Charchoq, yomon ob-havo va muloqot"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Osiyolik bolalarning matematikada ustunligiga nima sabab bo‘ladi?",
+   "options": [
+    "A) Mehnatsevarlik madaniyati va til xususiyati",
+    "B) Maxsus genlar mavjudligi",
+    "C) Ular kamroq dars qilishi",
+    "D) Faqat zamonaviy kompyuterlar"
+   ],
+   "answer": "A) Mehnatsevarlik madaniyati va til xususiyati"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "KIPP akademiyasida dars kuni nega ertalabdan kechgacha davom etadi?",
+   "options": [
+    "A) O‘quvchilarga ko‘proq bilim va imkon berish uchun",
+    "B) Bolalarni jazolash uchun",
+    "C) Ota-onalar topshirig‘i bo‘lgani uchun",
+    "D) Bino bo‘sh qolmasligi uchun"
+   ],
+   "answer": "A) O‘quvchilarga ko‘proq bilim va imkon berish uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Marita kabi o‘quvchilarning og‘ir tartibda o‘qishini qanday baholash mumkin?",
+   "options": [
+    "A) Kelajak uchun foydali va mas'uliyatli",
+    "B) Bemani va keraksiz qiynoq",
+    "C) Faqat o‘yin-kulgi uchun",
+    "D) Sog‘liqqa faqat zarar"
+   ],
+   "answer": "A) Kelajak uchun foydali va mas'uliyatli"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning o‘z muvaffaqiyatida oilasi tarixini tan olishi qanday fazilat?",
+   "options": [
+    "A) Kamtarlik va haqiqatni tan olish",
+    "B) Kibr va o‘zini ko‘rsatish",
+    "C) Ota-onasidan shikoyat qilish",
+    "D) Omadsizlikni boshqalarga ag‘darish"
+   ],
+   "answer": "A) Kamtarlik va haqiqatni tan olish"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning \"Hammamiz ham tirishqoqlik bilan mehnat qila olamiz\" degan fikri nimaga undaydi?",
+   "options": [
+    "A) Harakat qilish va sabr-toqatli bo‘lishga",
+    "B) Ishlamay omad kutishga",
+    "C) Boshqalarga hasad qilishga",
+    "D) Hammasini taqdirga tashlashga"
+   ],
+   "answer": "A) Harakat qilish va sabr-toqatli bo‘lishga"
+  }
+ ]
+}

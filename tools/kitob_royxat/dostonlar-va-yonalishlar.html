@@ -1,0 +1,228 @@
+<title>Dostonlar va uch yo‘nalish</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#F2F4F1; --surface:#FFFFFF; --raised:#FAFBF9;
+  --ink:#151F1C; --ink-soft:#4E5C57; --ink-faint:#77837E;
+  --line:#DBE0DB; --line-soft:#E9EDE9;
+  --accent:#23527C; --accent-soft:#E4ECF3;
+  --bor:#2C6A4E; --bor-bg:#E1EEE7;
+  --mut:#8A5712; --mut-bg:#F5EAD6;
+  --yoq:#982C2C; --yoq-bg:#F6E3E3;
+  --noa:#57565F; --noa-bg:#E9E9ED;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#111715; --surface:#19211F; --raised:#1E2725;
+    --ink:#E9EEEB; --ink-soft:#A6B2AD; --ink-faint:#7C8781;
+    --line:#2B3532; --line-soft:#232C2A;
+    --accent:#89B6DE; --accent-soft:#1C2A36;
+    --bor:#7ECBA3; --bor-bg:#1B3128;
+    --mut:#E0B461; --mut-bg:#332913;
+    --yoq:#E58B8B; --yoq-bg:#341D1D;
+    --noa:#B0B0BA; --noa-bg:#26262B;
+  }
+}
+:root[data-theme="dark"]{
+    --paper:#111715; --surface:#19211F; --raised:#1E2725;
+    --ink:#E9EEEB; --ink-soft:#A6B2AD; --ink-faint:#7C8781;
+    --line:#2B3532; --line-soft:#232C2A;
+    --accent:#89B6DE; --accent-soft:#1C2A36;
+    --bor:#7ECBA3; --bor-bg:#1B3128;
+    --mut:#E0B461; --mut-bg:#332913;
+    --yoq:#E58B8B; --yoq-bg:#341D1D;
+    --noa:#B0B0BA; --noa-bg:#26262B;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1040px; margin:0 auto; padding:48px 24px 96px; display:flex; flex-direction:column; gap:56px}
+header{display:flex; flex-direction:column; gap:18px; border-bottom:2px solid var(--ink); padding-bottom:32px}
+.eyebrow{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:600}
+h1{
+  font-family:Literata,Georgia,serif; font-weight:700; font-size:clamp(30px,5vw,46px);
+  line-height:1.15; margin:0; text-wrap:balance; letter-spacing:-.01em;
+}
+.lead{font-family:Literata,Georgia,serif; font-size:18px; color:var(--ink-soft); max-width:62ch; margin:0}
+.meta{font-size:13px; color:var(--ink-faint); display:flex; flex-wrap:wrap; gap:6px 18px}
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:2px; background:var(--line); border:1px solid var(--line)}
+.stat{background:var(--surface); padding:22px 20px; display:flex; flex-direction:column; gap:6px}
+.stat .n{font-family:Literata,Georgia,serif; font-size:38px; font-weight:700; line-height:1; font-variant-numeric:tabular-nums}
+.stat .k{font-size:13px; color:var(--ink-soft)}
+.stat.s-bor .n{color:var(--bor)} .stat.s-mut .n{color:var(--mut)} .stat.s-yoq .n{color:var(--yoq)}
+section{display:flex; flex-direction:column; gap:20px}
+h2{font-family:Literata,Georgia,serif; font-size:26px; font-weight:600; margin:0; letter-spacing:-.01em; text-wrap:balance}
+h2 .sub{display:block; font-family:"IBM Plex Sans",sans-serif; font-size:13px; font-weight:500; color:var(--ink-faint); letter-spacing:.02em; margin-top:6px}
+h3{font-family:Literata,Georgia,serif; font-size:18px; margin:0 0 6px; font-weight:600}
+p{margin:0; max-width:70ch}
+.note{background:var(--raised); border:1px solid var(--line); border-left:3px solid var(--accent); padding:18px 20px; display:flex; flex-direction:column; gap:8px}
+.note p{color:var(--ink-soft); font-size:15px}
+.tbox{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14.5px}
+thead th{
+  text-align:left; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-faint); font-weight:600; padding:12px 14px; border-bottom:1px solid var(--line);
+  background:var(--raised); position:sticky; top:0;
+}
+td{padding:11px 14px; border-bottom:1px solid var(--line-soft); vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:var(--raised)}
+.num{color:var(--ink-faint); font-variant-numeric:tabular-nums; width:38px}
+.asar{font-family:Literata,Georgia,serif; font-weight:600; min-width:230px}
+.mual{color:var(--ink-soft); white-space:nowrap}
+.yosh{font-variant-numeric:tabular-nums; white-space:nowrap; font-weight:600}
+.izoh{color:var(--ink-soft); font-size:13.5px; min-width:200px}
+.chip{display:inline-block; white-space:nowrap; font-size:12px; font-weight:600; padding:3px 9px; border-radius:2px}
+.chip.bor{color:var(--bor); background:var(--bor-bg)}
+.chip.mut{color:var(--mut); background:var(--mut-bg)}
+.chip.yoq{color:var(--yoq); background:var(--yoq-bg)}
+.chip.noaniq{color:var(--noa); background:var(--noa-bg)}
+.legend{display:flex; flex-wrap:wrap; gap:10px 22px; font-size:13.5px; color:var(--ink-soft)}
+.legend span b{font-weight:600}
+.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px}
+.card{background:var(--surface); border:1px solid var(--line); padding:20px; display:flex; flex-direction:column; gap:8px}
+.card p{font-size:14.5px; color:var(--ink-soft)}
+.steps{display:flex; flex-direction:column; gap:0; border:1px solid var(--line); background:var(--surface)}
+.step{display:grid; grid-template-columns:56px 1fr; gap:18px; padding:20px; border-bottom:1px solid var(--line-soft)}
+.step:last-child{border-bottom:none}
+.step .no{font-family:Literata,Georgia,serif; font-size:24px; font-weight:700; color:var(--accent); line-height:1.1}
+.step p{font-size:14.5px; color:var(--ink-soft)}
+footer{border-top:1px solid var(--line); padding-top:24px; font-size:13px; color:var(--ink-faint)}
+@media (max-width:600px){ .wrap{padding:32px 16px 64px; gap:44px} .step{grid-template-columns:40px 1fr; gap:12px} }
+
+.chip.audio{color:var(--noa); background:var(--noa-bg)}
+.chip.ogoh{color:var(--yoq); background:var(--yoq-bg)}
+.kirish{font-family:Literata,Georgia,serif; font-size:17px; color:var(--ink-soft); max-width:66ch}
+.jam{display:flex; flex-wrap:wrap; gap:0; border:1px solid var(--line); background:var(--surface)}
+.jam div{flex:1 1 150px; padding:18px 20px; border-right:1px solid var(--line-soft)}
+.jam div:last-child{border-right:none}
+.jam b{display:block; font-family:Literata,Georgia,serif; font-size:30px; line-height:1.1; font-variant-numeric:tabular-nums}
+.jam span{font-size:13px; color:var(--ink-soft)}
+</style>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Bilig AI · kitob bazasini kengaytirish</div>
+  <h1>Dostonlar va uch yo‘nalish</h1>
+  <p class="lead">Davlat tanlovi ro‘yxatidan tashqari taklif. Mutolaa katalogidagi 3 292 ta kitob ko‘rib chiqilib, siz aytgan to‘rt yo‘nalish bo‘yicha saralandi: xalq dostonlari, jahon klassikasi, shaxsiy rivojlanish va o‘zbek klassikasi.</p>
+  <div class="meta"><span>2026-yil 1-sentabr</span><span>Kichik hajmli ertak, hikoya va masallar ro‘yxatga kiritilmadi — ularni o‘zingiz saralaysiz</span></div>
+</header>
+
+<section>
+  <div class="jam">
+    <div><b>18</b><span>Xalq dostoni</span></div>
+    <div><b>14</b><span>Jahon klassikasi</span></div>
+    <div><b>8</b><span>Shaxsiy rivojlanish</span></div>
+    <div><b>15</b><span>O‘zbek klassikasi</span></div>
+    <div><b>51</b><span>Matni Mutolaa'da tayyor</span></div>
+  </div>
+  <div class="note">
+    <p><b>Bazadagi bo‘shliq shu yerda ko‘rinadi:</b> 130 ta asar orasida bironta xalq dostoni, Abdulla Qodiriydan bironta asar, Cho‘lpondan bironta asar va shaxsiy rivojlanish yo‘nalishidan bironta kitob yo‘q. Bazamiz sarguzasht va hayvonlar haqidagi qissalarga og‘ib ketgan.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Xalq dostonlari<span class="sub">Siz kutgan ro‘yxat · 18 ta doston</span></h2>
+  <p class="kirish">Dostonlarni ikkiga ajratdim. 11-13 yosh uchun sarguzasht ohangi kuchli, syujeti tez harakatlanadigan dostonlar; 14-16 uchun ishqiy chizgisi bor yoki tili og‘irroq bo‘lganlari. Yosh chegarasi tildan emas, mazmundan kelib chiqib qo‘yildi.</p>
+  <div class="tbox"><table><thead><tr><th>Asar</th><th>Muallif</th><th>Taklif yosh</th><th>Manba</th><th>Izoh</th></tr></thead><tbody><tr><td class="asar">«Alpomish»</td><td class="mual">O‘zbek xalq eposi</td><td class="yosh">11-13 / 14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Milliy eposimiz. Bolalar uchun «Alpomish botir» nashri ham bor — ikkalasi ham Mutolaa'da</td></tr>
+<tr><td class="asar">«Ravshan»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">«Go‘ro‘g‘li» turkumi · davlat ro‘yxatida bor</td></tr>
+<tr><td class="asar">«Malika Husnobod»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Ikki nashri bor · davlat ro‘yxatida bor</td></tr>
+<tr><td class="asar">«Yunus va Misqol pari»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Davlat ro‘yxatida bor</td></tr>
+<tr><td class="asar">«Go‘ro‘g‘lining tug‘ilishi»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Qisqartirilgan nashrda 11-13 ham bo‘ladi · davlat ro‘yxatida bor</td></tr>
+<tr><td class="asar">«Yusuf va Ahmad»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Qahramonlik dostoni</td></tr>
+<tr><td class="asar">«Rustamxon»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Sarguzasht ohangi kuchli — bolaga yengil kiradi</td></tr>
+<tr><td class="asar">«Avazxon»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">«Go‘ro‘g‘li» turkumi</td></tr>
+<tr><td class="asar">«Malika Ayyor»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">«Go‘ro‘g‘li» turkumi</td></tr>
+<tr><td class="asar">«Zulfizar»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">«Go‘ro‘g‘li» turkumi · ishqiy chizgilar bor</td></tr>
+<tr><td class="asar">«Xoldorxon»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Davlat ro‘yxatining 20-30 toifasida</td></tr>
+<tr><td class="asar">«Bo‘tako‘z»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Uch nashri bor</td></tr>
+<tr><td class="asar">«Kuntug‘mish»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Ishqiy-qahramonlik dostoni, matni og‘irroq</td></tr>
+<tr><td class="asar">«Tohir va Zuhra»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Ishqiy doston, fojiali yakun — kichik yoshga bermaslik kerak</td></tr>
+<tr><td class="asar">«Dada Qo‘rqut hikoyalari»</td><td class="mual">Turkiy xalqlar eposi</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Davlat ro‘yxatida «Qo‘rqut Ota kitobi» nomi bilan</td></tr>
+<tr><td class="asar">«Farhod va Shirin» (nasriy bayon)</td><td class="mual">Alisher Navoiy</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Yozma doston — xalq dostoni emas, lekin shu javonga yaqin</td></tr>
+<tr><td class="asar">«Shirin bilan Shakar»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip yoq">Topilmadi</span></td><td class="izoh">Davlat ro‘yxatida bor, Mutolaa'da topilmadi</td></tr>
+<tr><td class="asar">«Murodxon»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip yoq">Topilmadi</span></td><td class="izoh">Davlat ro‘yxatining 20-30 toifasida, Mutolaa'da topilmadi</td></tr></tbody></table></div>
+  <div class="note">
+    <p><b>Qaror sizniki:</b> har bir doston uchun to‘liq matnmi yoki bolalar uchun qayta hikoya qilingan nashrmi — shuni aytishingiz kerak. Masalan «Alpomish» ning ikkala nashri ham Mutolaa'da turibdi.</p>
+    <p><b>Boshlash tavsiyam:</b> uchtadan — «Alpomish», «Ravshan», «Rustamxon». Ular yengil kiradi va bolada dostonga qiziqish uyg‘otadi; qolganlari shundan keyin.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Jahon klassikasi<span class="sub">11-13 dan 17-19 gacha · 14 ta asar</span></h2>
+  <p class="kirish">Bazada Jyul Vern va Seton-Tompson ko‘p, lekin jahon adabiyotining tayanch asarlari yo‘q. Quyidagilar shu bo‘shliqni yopadi. Tarjima asar bo‘lgani uchun har biriga bir yosh qo‘shildi.</p>
+  <div class="tbox"><table><thead><tr><th>Asar</th><th>Muallif</th><th>Taklif yosh</th><th>Manba</th><th>Izoh</th></tr></thead><tbody><tr><td class="asar">«Robinzon Kruzoning sarguzashtlari»</td><td class="mual">Daniel Defo</td><td class="yosh">11-13</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Mehnat va matonat — bizning javonimizga aynan mos</td></tr>
+<tr><td class="asar">«Oq so‘yloq»</td><td class="mual">Jek London</td><td class="yosh">11-13</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Davlat ro‘yxatida ham bor</td></tr>
+<tr><td class="asar">«Sherlok Xolms sarguzashtlari»</td><td class="mual">Artur Konan Doyl</td><td class="yosh">11-13</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Mantiq va kuzatuvchanlik; test tuzishga juda qulay</td></tr>
+<tr><td class="asar">«Vaqt mashinasi»</td><td class="mual">Gerbert Uells</td><td class="yosh">11-13</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Ilmiy fantastika</td></tr>
+<tr><td class="asar">«Uch mushketyor»</td><td class="mual">Aleksandr Dyuma</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Do‘stlik va sadoqat</td></tr>
+<tr><td class="asar">«Graf Monte-Kristo» (2 kitob)</td><td class="mual">Aleksandr Dyuma</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Ikki nashri bor; hajmi katta — bosqichli test uchun yaxshi</td></tr>
+<tr><td class="asar">«Don Kixot»</td><td class="mual">Migel de Servantes</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Jahon klassikasining tayanchi</td></tr>
+<tr><td class="asar">«Chol va dengiz»</td><td class="mual">Ernest Xeminguey</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Qisqa, lekin g‘oyasi chuqur</td></tr>
+<tr><td class="asar">«Oq kema»</td><td class="mual">Chingiz Aytmatov</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Yakuni og‘ir — ota-onaga eslatma bilan berilsin</td></tr>
+<tr><td class="asar">«Martin Iden»</td><td class="mual">Jek London</td><td class="yosh">17-19</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">O‘z ustida ishlash mavzusi; yakuni og‘ir</td></tr>
+<tr><td class="asar">«Hamlet»</td><td class="mual">Uilyam Shekspir</td><td class="yosh">17-19</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Dramaturgiya — testi boshqacha tuziladi</td></tr>
+<tr><td class="asar">«Dorian Greyning portreti»</td><td class="mual">Oskar Uayld</td><td class="yosh">17-19</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Axloqiy tanazzul mavzusi</td></tr>
+<tr><td class="asar">«Buyuk Getsbi»</td><td class="mual">Frensis Fitsjerald</td><td class="yosh">17-19</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Jenni Gerxardt»</td><td class="mual">Teodor Drayzer</td><td class="yosh">17-19</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh"></td></tr></tbody></table></div>
+</section>
+
+<section>
+  <h2>Shaxsiy rivojlanish<span class="sub">14-16 yosh · 8 ta kitob</span></h2>
+  <p class="kirish">Yo‘nalish bazada umuman yo‘q edi. G‘arb kitoblariga muvozanat bo‘lsin deb ro‘yxatga «Turkiy guliston yoxud axloq» va «Qobusnoma» ni ham qo‘shdim — ular ham aynan shu vazifani bajaradi, lekin o‘z zaminimizda.</p>
+  <div class="tbox"><table><thead><tr><th>Asar</th><th>Muallif</th><th>Taklif yosh</th><th>Manba</th><th>Izoh</th></tr></thead><tbody><tr><td class="asar">«Atom odatlar»</td><td class="mual">Jeyms Klir</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">O‘zingiz misol qilib keltirgan asar; ilovaning odat g‘oyasiga aynan mos</td></tr>
+<tr><td class="asar">«Muvaffaqiyatli insonlarning 7 ko‘nikmasi»</td><td class="mual">Stiven Kovi</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">O‘smir uchun moslashtirilgan bo‘limlari bor</td></tr>
+<tr><td class="asar">«Diqqat: chalg‘ituvchi dunyoda muvaffaqiyat sirlari»</td><td class="mual">Kal Nyuport</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Telefon va e'tibor mavzusi — bugungi o‘smirning eng og‘riqli joyi</td></tr>
+<tr><td class="asar">«Maqsad qudrati»</td><td class="mual">—</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Maqsad qo‘yish ko‘nikmasi</td></tr>
+<tr><td class="asar">«Pul psixologiyasi»</td><td class="mual">Morgan Hauzel</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Bazadagi «Bola va pul» ning davomi bo‘ladi</td></tr>
+<tr><td class="asar">«Iroda tarbiyasi»</td><td class="mual">—</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Sabr va o‘zini boshqarish</td></tr>
+<tr><td class="asar">«Turkiy guliston yoxud axloq»</td><td class="mual">Abdurauf Fitrat</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Milliy axloq darsligi — g‘arb kitoblariga muvozanat</td></tr>
+<tr><td class="asar">«Qobusnoma»</td><td class="mual">Kaykovus</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Davlat ro‘yxatida ham bor; bo‘limlarga bo‘lib berish qulay</td></tr></tbody></table></div>
+</section>
+
+<section>
+  <h2>O‘zbek klassikasi<span class="sub">14-16 va 17-19 · 15 ta asar</span></h2>
+  <p class="kirish">Eng katta bo‘shliq shu yerda edi. Qodiriy, Cho‘lpon, Oybekning romanlari — 16 yoshli o‘quvchi uchun bazamizning o‘zagi bo‘lishi kerak.</p>
+  <div class="tbox"><table><thead><tr><th>Asar</th><th>Muallif</th><th>Taklif yosh</th><th>Manba</th><th>Izoh</th></tr></thead><tbody><tr><td class="asar">«O‘tkan kunlar»</td><td class="mual">Abdulla Qodiriy</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">O‘zingiz aytgan asar. Bazada Qodiriydan bironta asar yo‘q edi</td></tr>
+<tr><td class="asar">«Mehrobdan chayon»</td><td class="mual">Abdulla Qodiriy</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Roman va radiospektakl nashri bor</td></tr>
+<tr><td class="asar">«Obid ketmon»</td><td class="mual">Abdulla Qodiriy</td><td class="yosh">17-19</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Ijtimoiy fon murakkab</td></tr>
+<tr><td class="asar">«Navoiy»</td><td class="mual">Oybek</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Bazada Navoiyning o‘zi ham, u haqda roman ham yo‘q</td></tr>
+<tr><td class="asar">«Yulduzli tunlar»</td><td class="mual">Pirimqul Qodirov</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Bobur haqidagi roman; bazadagi bolalar kitobining kattalar varianti</td></tr>
+<tr><td class="asar">«Ulug‘bek xazinasi»</td><td class="mual">Odil Yoqubov</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Ilm va hokimiyat mavzusi</td></tr>
+<tr><td class="asar">«Kecha va kunduz»</td><td class="mual">Abdulhamid Cho‘lpon</td><td class="yosh">17-19</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Jadid adabiyotining cho‘qqisi</td></tr>
+<tr><td class="asar">«Qutlug‘ qon»</td><td class="mual">Oybek</td><td class="yosh">17-19</td><td><span class="chip audio">Faqat ovozli</span></td><td class="izoh">Mutolaa'da faqat ovozli nashri bor — matnini alohida topish kerak</td></tr>
+<tr><td class="asar">«Diyonat»</td><td class="mual">Odil Yoqubov</td><td class="yosh">17-19</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Ikki eshik orasi»</td><td class="mual">O‘tkir Hoshimov</td><td class="yosh">17-19</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Urush va taqdir mavzusi</td></tr>
+<tr><td class="asar">«Ufq» trilogiyasi (3 kitob)</td><td class="mual">Said Ahmad</td><td class="yosh">17-19</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Uch kitob — bosqichma-bosqich beriladi</td></tr>
+<tr><td class="asar">«Sarob»</td><td class="mual">Abdulla Qahhor</td><td class="yosh">17-19</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Bazada Qahhorning bolalar hikoyalari bor, romani yo‘q</td></tr>
+<tr><td class="asar">«Otamdan qolgan dalalar»</td><td class="mual">Tog‘ay Murod</td><td class="yosh">17-19</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Bazada shu muallifning bolalar qissasi bor</td></tr>
+<tr><td class="asar">«Temur tuzuklari»</td><td class="mual">Amir Temur</td><td class="yosh">14-16</td><td><span class="chip mut">Mutolaa'da bor</span></td><td class="izoh">Tarixiy hujjat; bo‘limlarga bo‘lib berish qulay</td></tr>
+<tr><td class="asar">«Shaytanat» (5 kitob)</td><td class="mual">Tohir Malik</td><td class="yosh">—</td><td><span class="chip ogoh">Tavsiya qilmayman</span></td><td class="izoh">Jinoyat olami batafsil tasvirlangan — bolalar ilovasiga tavsiya qilmayman</td></tr></tbody></table></div>
+</section>
+
+<section>
+  <h2>Ish hajmi — ochiq aytganda<span class="sub">Nima qancha vaqt oladi</span></h2>
+  <div class="cards">
+    <div class="card">
+      <h3>114 ta yangi asar</h3>
+      <p>Davlat ro‘yxatidan 62 ta + shu ro‘yxatdan 52 ta (topilmagan ikki doston va tavsiya qilmagan «Shaytanat» hisobga olinmadi). Baza 130 tadan 244 taga chiqadi — ikki baravardan ko‘p.</p>
+    </div>
+    <div class="card">
+      <h3>Asosiy to‘siq — matn</h3>
+      <p>Pasport va test tuzish uchun asarning to‘liq matni kerak. Ular Mutolaa'da bor, lekin bizning qo‘limizda yo‘q. Matnlarni qanday olishimizni siz hal qilasiz — bu eng birinchi hal bo‘lishi kerak bo‘lgan masala.</p>
+    </div>
+    <div class="card">
+      <h3>AI xarajati kichik</h3>
+      <p>Bir asarga pasport va 30 ta savol taxminan 250 so‘m turadi. 114 ta asar — 30 ming so‘m atrofida. Ya'ni pul emas, vaqt masalasi.</p>
+    </div>
+  </div>
+</section>
+
+<footer>Bilig AI · kitob bazasini kengaytirish taklifi · 2026-yil 1-sentabr. Mavjudlik mutolaa.com katalogi bo‘yicha tekshirildi; ayrim asarlarning nashri (to‘liq matn yoki moslashtirilgan variant) qo‘lda aniqlanishi kerak.</footer>
+
+</div>

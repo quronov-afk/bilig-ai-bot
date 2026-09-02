@@ -320,6 +320,62 @@ DEMO_TASK_QUESTIONS = [
      "options": ["Mehnat va aql g‘alaba keltiradi", "Kuchli bo‘lgan yutadi",
                  "Omad hal qiladi"], "answer": "Mehnat va aql g‘alaba keltiradi"},
 ]
+# OTA-ONA TAHRIRLAYDIGAN TAYYOR TEST (2026-09-02 imkoniyati).
+# Namoyishda ota-ona kitob oynasidan «Savollarni ko‘rish va tahrirlash» ni
+# bossa, bo‘sh emas — tayyor 12 ta savol chiqadi va ularni tuzatib ko‘rsatadi.
+# Qolgan kitoblarga test umumiy bankdan olinadi (pastdagi halqa).
+DEMO_BOOK_TEST_TITLE = "Tom Soyerning boshidan kechirganlari"
+DEMO_BOOK_TEST = [
+    {"id": 1, "part": 1, "category": "factual",
+     "question": "Tom kim bilan birga yashaydi?",
+     "options": ["Polli xolasi bilan", "Otasi bilan", "Yolg‘iz"],
+     "answer": "Polli xolasi bilan"},
+    {"id": 2, "part": 1, "category": "logic",
+     "question": "Tom devor bo‘yashni qanday qildirib oldi?",
+     "options": ["Ishni qiziqarli ko‘rsatib", "Pul berib", "Yig‘lab"],
+     "answer": "Ishni qiziqarli ko‘rsatib"},
+    {"id": 3, "part": 1, "category": "factual",
+     "question": "Tomning eng yaqin do‘sti kim?",
+     "options": ["Geklberri Finn", "O‘qituvchisi", "Polli xola"],
+     "answer": "Geklberri Finn"},
+    {"id": 4, "part": 1, "category": "factual",
+     "question": "Tom maktabda kimni yoqtirib qoladi?",
+     "options": ["Bekkini", "Polli xolani", "Hech kimni"],
+     "answer": "Bekkini"},
+    {"id": 5, "part": 2, "category": "factual",
+     "question": "Tom va do‘stlari qayerga qochib ketishadi?",
+     "options": ["Orolga", "Tog‘ga", "Boshqa shaharga"],
+     "answer": "Orolga"},
+    {"id": 6, "part": 2, "category": "logic",
+     "question": "Bolalar yo‘qolganda shahar nima deb o‘ylaydi?",
+     "options": ["Halok bo‘lishgan deb", "Uxlab qolishgan deb", "Sayohatga ketishgan deb"],
+     "answer": "Halok bo‘lishgan deb"},
+    {"id": 7, "part": 2, "category": "factual",
+     "question": "Tom o‘z motam marosimida nima qiladi?",
+     "options": ["Tirik holda paydo bo‘ladi", "Yashirinib qoladi", "Uyga qaytmaydi"],
+     "answer": "Tirik holda paydo bo‘ladi"},
+    {"id": 8, "part": 2, "category": "conclusion",
+     "question": "Sudda Tom nima qilishga jur\'at qildi?",
+     "options": ["Haqiqatni aytdi", "Jim turdi", "Qochib ketdi"],
+     "answer": "Haqiqatni aytdi"},
+    {"id": 9, "part": 3, "category": "factual",
+     "question": "Tom va Bekki qayerda adashib qolishadi?",
+     "options": ["G‘orda", "O‘rmonda", "Daryoda"],
+     "answer": "G‘orda"},
+    {"id": 10, "part": 3, "category": "logic",
+     "question": "Tom Bekkini qanday qutqaradi?",
+     "options": ["Chiqish yo‘lini topib", "Baqirib chaqirib", "Kutib o‘tirib"],
+     "answer": "Chiqish yo‘lini topib"},
+    {"id": 11, "part": 3, "category": "factual",
+     "question": "Bolalar oxirida nimani topib olishadi?",
+     "options": ["Xazinani", "Kemani", "Xatni"],
+     "answer": "Xazinani"},
+    {"id": 12, "part": 3, "category": "conclusion",
+     "question": "Asar o‘quvchiga nimani o‘rgatadi?",
+     "options": ["Jasorat va halollikni", "Boylik izlashni", "Dangasalikni"],
+     "answer": "Jasorat va halollikni"},
+]
+
 # Namoyishda musobaqa yarim yo‘lda turadi: kimdir tugatgan, kimdir o‘qiyapti.
 # (raqami, o‘qigan beti, tugatganmi, testdagi to‘g‘ri javob, ovozli xulosa Biligi)
 DEMO_TASK_RACERS = [(-9001, 176, 1, 4, 3), (-9002, 138, 0, 3, 2),
@@ -469,6 +525,25 @@ def fill_demo_child(parent_id, child_id):
             (parent_id, child_id)
         )
         book_ids[b[0]] = _add_book(cursor.lastrowid, b)
+
+    # Namoyishda test «topshirilgan» deb turgan kitobning ORQASIDA
+    # haqiqiy savollar bo‘lsin — ota-ona ularni ochib, tahrirlab
+    # ko‘rsata olsin. Avval umumiy bankdan olinadi (u yerda bor).
+    for _t, _bid in book_ids.items():
+        cursor.execute("SELECT questions_json FROM Test_Bank WHERE title = ? LIMIT 1", (_t,))
+        _r = cursor.fetchone()
+        if _r and _r[0]:
+            cursor.execute(
+                "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
+                (_bid, _r[0]))
+
+    # Bitta kitobda test bankdan qat'i nazar kafolatlangan bo‘lsin —
+    # namoyish har qanday serverda bir xil ko‘rinishi kerak.
+    _tid = book_ids.get(DEMO_BOOK_TEST_TITLE)
+    if _tid:
+        cursor.execute(
+            "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
+            (_tid, json.dumps(DEMO_BOOK_TEST, ensure_ascii=False)))
 
     # 3. Mutolaa tarixi — 45 kun davomidagi kunlik yozuvlar
     schedule = [

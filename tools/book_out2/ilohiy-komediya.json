@@ -1,0 +1,481 @@
+{
+ "title": "Ilohiy komediya",
+ "author": "Dante Aligyeri",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "17-19",
+  "age_hint": "16+",
+  "topics": [
+   "adolat",
+   "yovuzlik oqibati",
+   "falsafa",
+   "ma'naviyat",
+   "sabr",
+   "ustoz va shogird"
+  ],
+  "theme": "Inson o‘z qilmishlari va gunohlari uchun mangu javobgardir; ma'naviy poklanish va to‘g‘ri yo‘lni topish uchun sabr, ilm va e'tiqod zarur.",
+  "summary": "Asarda shoir Dante o‘z umrining yarim yo‘lida zulmatli va dahshatli o‘rmonda adashib qolgani tasvirlanadi. Unga qadimgi dunyo shoiri Vergiliy hamrohlik qiladi va ulkan ma'naviy safarga boshlaydi. Ular Do‘zaxning to‘qqiz doirasi bo‘ylab harakatlanib, har bir qabatda turli gunohlar uchun beriladigan dahshatli jazolarga guvoh bo‘ladilar. Dastlabki doiralarda Yevropa va Sharq donishmandlari (shu jumladan Ibn Sino va Ibn Rushd) joylashgan Limbo, keyin shahvatparastlar, ochko‘zlar, isrofgarlar va g‘azabnoklar jazolanadi. Do‘zax qa'rida esa makkorlar, o‘g‘rilar, nifoq urug‘ini sochuvchilar hamda xiyonatkorlar og‘ir uqubat chekadi. Dante bu safarda ko‘plab tarixiy va o‘z zamondoshlari bo‘lgan shaxslar bilan suhbatlashib, insoniyatning tanazzuli va ma'naviy halokati sabablarini anglab yetadi.",
+  "characters": "Dante — asar muallifi va bosh qahramoni, to‘g‘ri yo‘lni izlayotgan sayyoh; Vergiliy — Dantening piri va yo‘lboshchisi, donishmand shoir; Beatriche — Dantening ilhomchisi, uni qutqarish uchun Vergiliyni yuborgan pokiza ruh; Xaron — Do‘zax daryosi Axeronda arvohlarni o‘tkazuvchi qayiqchi; Minos — gunohkorlarni so‘roq qiluvchi va jazosini tayinlovchi Do‘zax hakam; Francheska — taqiqlangan sevgi va shahvat qurboni bo‘lgan ruh.",
+  "conclusion": "Ushbu asar insonni o‘z harakatlari va niyatlariga mas'uliyat bilan qarashga o‘rgatadi. Bola kitobdan halollik, to‘g‘rilik, nafsoniy istaklarni tiyish va adolat tamoyillarini anglaydi. Kattalar va ustozlarga hurmat ko‘rsatish, to‘g‘ri yo‘ldan adashmaslik naqadar muhimligini tushunib yetadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Falsafiy va majoziy asarlarga qiziquvchi, hayot va adolat haqida chuqur o‘ylaydigan o‘smirlar uchun.",
+  "events": [
+   "Dante zulmatli o‘rmonda adashib qoladi.",
+   "Dantening yo‘lini qoplon, arslon va qashqir to‘sadi.",
+   "Dantening ro‘parasida qadimgi dunyo shoiri Vergiliy paydo bo‘ladi.",
+   "Vergiliy Beatriche xohishi bilan Danteni Do‘zax bo‘ylab olib o‘tishini aytadi.",
+   "Ular Do‘zax darvozasidagi ogohlantiruvchi yozuvni o‘qib ichkariga kirishadi.",
+   "Do‘zax daryosi Axeron bo‘yida qayiqchi Xaron bilan to‘qnash kelishadi.",
+   "Birinchi doira — Limboda cho‘qintirilmagan go‘daklar va qadimgi donishmandlar (Ibn Sino, Ibn Rushd) ko‘riladi.",
+   "Ikkinchi doirada Minos gunohkorlarni so‘roq qilib Do‘zax qabatlariga itqitadi.",
+   "Dante shahvatparastlar quyunida aylanayotgan Francheska va Paolo bilan suhbatlashadi.",
+   "Uchinchi doirada ochko‘zlar ustidan Serber maxluqi hukmronlik qiladi va Ularni Chakko bilan ko‘rishadi.",
+   "To‘rtinchi doirada isrofgarlar va ziqnalar tosh surib bir-birini so‘kadi.",
+   "Beshinchi doirada g‘azabnoklar Stiks botqog‘ida bir-birini g‘ajiydi.",
+   "Samo elchisi kelib Temir shahar (Dis) darvozasini shoirlarga ochib beradi.",
+   "Yettinchi doirada qaynoq qon daryosi Phlegethonda zolimlar va qotillar jazolanadi, Kentavrlar olib o‘tadi.",
+   "Xudkashlar qabristonida insonlar daraxtga aylanganiga guvoh bo‘lishadi.",
+   "Kapaney olovli yomg‘ir ostida ham Zevsga bo‘ysunmasdan mag‘rur turadi.",
+   "Shoirlar Yovuz G‘or (Malebolge) xandaqlariga tushishadi.",
+   "O‘g‘rilar jarligida Vanni Fuchchi ilon chaqishidan kulga aylanib, qayta tiklanadi.",
+   "Sakkizinchi jarlikda Uliss (Odissey) alanga ichida oxirgi dengiz safari haqida so‘zlaydi.",
+   "Tvido da Montefeltro papa Bonifatsiyning makkorona da'vati bilan gunohga botganini aytadi.",
+   "To‘qqizinchi jarlikda nifoq soluvchilar tana a'zolari tilkalangan holda jazolanadi.",
+   "Bertrand de Born o‘z kallasini qo‘lida mash'aldek ko‘tarib yurganiga guvoh bo‘lishadi.",
+   "O‘ninchi jarlikda alximiklar va qalbaki ma'dan yasovchilar tanasi qashlanib azob chekadi."
+  ],
+  "quotes": [
+   "Yerdagi umrimning yarmini yurib, Zulmat vodiysida adashib qoldim.",
+   "Kirsang, umidlaring tashlab kir shu choq.",
+   "Ularga hattoki ajal ham boqmas, Har qanday kulfat ham bu holdan sozroq...",
+   "Ishq bu — faqat ishqni chorlovchi tuyg‘u, Men ham ko‘ngil berdim unga shu asno...",
+   "Qandoq yashaganman — shundoqman borho.",
+   "Yaralgan emassiz nafs uchun faqat, Tafakkur va shavkat insonga chiroy."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dante qaysi joyda adashib qolgan edi?",
+   "options": [
+    "A) Zulmatli o‘rmonda",
+    "B) Qorong‘i g‘orda",
+    "C) Baland tog‘da",
+    "D) Kimsasiz sahroda"
+   ],
+   "answer": "A) Zulmatli o‘rmonda"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dantening yo‘lini qaysi hayvonlar to‘shdi?",
+   "options": [
+    "A) Qoplon, arslon va qashqir",
+    "B) Ayiq, bo‘ri va tulki",
+    "C) Qoplon, yo‘lbars va ilon",
+    "D) Arslon, qoplon va ayiq"
+   ],
+   "answer": "A) Qoplon, arslon va qashqir"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dantega yo‘lboshchilik qilish uchun kim paydo bo‘ldi?",
+   "options": [
+    "A) Qadimgi shoir Vergiliy",
+    "B) Shoir Gomer",
+    "C) Shoir Ovidiy",
+    "D) Avliyo Pyotr"
+   ],
+   "answer": "A) Qadimgi shoir Vergiliy"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vergiliyni Dantening qoshiga kim yuborgan edi?",
+   "options": [
+    "A) Beatriche",
+    "B) Lyuchiya",
+    "C) Mikoil",
+    "D) Rahm-shafqatli ayol"
+   ],
+   "answer": "A) Beatriche"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Do‘zaxning birinchi doirasidagi donishmandlarni guruhlang.",
+   "options": [
+    "A) Ibn Sino va Ibn Rushd",
+    "B) Minos va Xaron",
+    "C) Chakko va Plutos",
+    "D) Uliss va Diomed"
+   ],
+   "answer": "A) Ibn Sino va Ibn Rushd"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dante nega Do‘zaxga kirishdan ikkilanib qoldi?",
+   "options": [
+    "A) O‘zini safarga munosib bilmagani uchun",
+    "B) O‘rmondan chiqishni xohlamagani uchun",
+    "C) Vergiliyga ishonmagani uchun",
+    "D) Yo‘lni yaxshi bilgani uchun"
+   ],
+   "answer": "A) O‘zini safarga munosib bilmagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Xaron nega Danteni qayig‘iga chiqarishni xohlamadi?",
+   "options": [
+    "A) Dante tirik inson bo‘lgani uchun",
+    "B) Qayiqda joy yo‘qligi uchun",
+    "C) Dante pul bermagani uchun",
+    "D) Qayiq juda eski bo‘lgani uchun"
+   ],
+   "answer": "A) Dante tirik inson bo‘lgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dantening Vergiliyga ergashish qarori to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, chunki u donishmand ustoz",
+    "B) Noto‘g‘ri, u yolg‘iz yurishi kerak",
+    "C) Noto‘g‘ri, chunki qorong‘i edi",
+    "D) To‘g‘ri, chunki u yo‘lni yo‘qotdi"
+   ],
+   "answer": "A) To‘g‘ri, chunki u donishmand ustoz"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Kirsang, umidlaring tashlab kir» iborasi nimani bildiradi?",
+   "options": [
+    "A) Do‘zaxdan qutulish umidi yo‘qligini",
+    "B) Eshik juda tor ekanligini",
+    "C) Barcha buyumlarni qoldirish kerakligini",
+    "D) Qaytib chiqish juda osonligini"
+   ],
+   "answer": "A) Do‘zaxdan qutulish umidi yo‘qligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Minos gunohkorlarga jazoni qanday tayinlaydi?",
+   "options": [
+    "A) Duminining buralish soni bilan",
+    "B) Qo‘lidagi hassa bilan",
+    "C) Baland ovozda aytish bilan",
+    "D) Toshga yozib qo‘yish bilan"
+   ],
+   "answer": "A) Duminining buralish soni bilan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uchinchi doirada ochko‘zlarni qaysi maxluq qiynaydi?",
+   "options": [
+    "A) Uch halqumli Serber",
+    "B) Qanotli Garpiyalar",
+    "C) Quturgan itlar",
+    "D) Shoxdor iblislar"
+   ],
+   "answer": "A) Uch halqumli Serber"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Florensiyalik Chakko Do‘zaxda qanday gunohi uchun yotibdi?",
+   "options": [
+    "A) Ochko‘zlik qilgani uchun",
+    "B) O‘g‘rilik qilgani uchun",
+    "C) Urush chiqargani uchun",
+    "D) Kibrga berilgani uchun"
+   ],
+   "answer": "A) Ochko‘zlik qilgani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘rtinchi doirada qanday kimsalar jazolanadi?",
+   "options": [
+    "A) Isrofgarlar va ziqnalar",
+    "B) Yolqinchi va alxatiblar",
+    "C) O‘g‘rilar va qaroqchilar",
+    "D) Qotillar va zolimlar"
+   ],
+   "answer": "A) Isrofgarlar va ziqnalar"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qaynoq qon daryosida kechuvni ko‘rsatgan kentavr kim?",
+   "options": [
+    "A) Ness",
+    "B) Xiron",
+    "C) Xaron",
+    "D) Plutos"
+   ],
+   "answer": "A) Ness"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Do‘zaxdagi xudkashlar qanday shaklga kirib qolgan?",
+   "options": [
+    "A) Daraxt shakliga",
+    "B) Ilon shakliga",
+    "C) Tosh shakliga",
+    "D) Qush shakliga"
+   ],
+   "answer": "A) Daraxt shakliga"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kapaney nega olovli yomg‘ir ostida ham mag‘rur turardi?",
+   "options": [
+    "A) Xudolarga bo‘ysunmasligini ko‘rsatish uchun",
+    "B) Yomg‘ir issiq bo‘lmagani uchun",
+    "C) Vergiliydan qo‘rqqani uchun",
+    "D) Jazosini tugatmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Xudolarga bo‘ysunmasligini ko‘rsatish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Temir darvoza oldida iblislar nega Danteni to‘shdi?",
+   "options": [
+    "A) Shaharga tirik insonni kiritmaslik uchun",
+    "B) Tunda kirish taqiqlangani uchun",
+    "C) Parol aytilmagani uchun",
+    "D) Ularga joy yetmagani uchun"
+   ],
+   "answer": "A) Shaharga tirik insonni kiritmaslik uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Vergiliyning o‘z shogirdiga qilgan g‘amxo‘rligi qanday baholanadi?",
+   "options": [
+    "A) Oqilona va mehribon ustozlik",
+    "B) Beg‘am va loqayd munosabat",
+    "C) Mag‘rur va kibrli xulq",
+    "D) Qat'iyatsiz va qo‘rqoq harakat"
+   ],
+   "answer": "A) Oqilona va mehribon ustozlik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Ochko‘zlar azobini yomg‘ir va loy bilan tasvirlash maqsadi ne?",
+   "options": [
+    "A) Ochko‘zlikning jirkanchligini ko‘rsatish",
+    "B) Yomg‘ir yog‘ishini yaxshi ko‘rgani",
+    "C) Yerning yumshoqligini bildirish",
+    "D) Ob-havoni tasvirlash"
+   ],
+   "answer": "A) Ochko‘zlikning jirkanchligini ko‘rsatish"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Venediko Kachchanemiko Do‘zaxda qanday qilmishi uchun jazolanmoqda?",
+   "options": [
+    "A) Qushmachilik qilgani uchun",
+    "B) O‘g‘rilik qilgani uchun",
+    "C) Qotillik qilgani uchun",
+    "D) Sehrgarlik qilgani uchun"
+   ],
+   "answer": "A) Qushmachilik qilgani uchun"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yettinchi jarlikda o‘g‘rilar qanday mahluqlar orasida jazolanadi?",
+   "options": [
+    "A) Ilonlar va kaltakesaklar",
+    "B) Quturgan itlar",
+    "C) Yirtqich qushlar",
+    "D) Vahshiy bo‘rilar"
+   ],
+   "answer": "A) Ilonlar va kaltakesaklar"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ilon chaqqan Vanni Fuchchi bilan nima sodir bo‘ldi?",
+   "options": [
+    "A) Yonib kulga aylandi va qayta tiklandi",
+    "B) Toshga aylanib qoldi",
+    "C) Suvga cho‘kib ketdi",
+    "D) Qush bo‘lib uchib ketdi"
+   ],
+   "answer": "A) Yonib kulga aylandi va qayta tiklandi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sakkizinchi jarlikda makkor maslahatchilar nimaga o‘ralgan?",
+   "options": [
+    "A) Alanga tillariga",
+    "B) Muz parchalariga",
+    "C) Temir zanjirlarga",
+    "D) Qora bulutlarga"
+   ],
+   "answer": "A) Alanga tillariga"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Uliss va Diomed qaysi olov ichida birga yonmoqda?",
+   "options": [
+    "A) Qushaloq alanga ichida",
+    "B) Moviy alanga ichida",
+    "C) Yashil alanga ichida",
+    "D) Kichik tutun ichida"
+   ],
+   "answer": "A) Qushaloq alanga ichida"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Uliss o‘z hamrohlarini oxirgi safarga nega chorladi?",
+   "options": [
+    "A) Yangilik va bilim izlash uchun",
+    "B) Boylik yig‘ish uchun",
+    "C) Urush qilish uchun",
+    "D) Qasos olish uchun"
+   ],
+   "answer": "A) Yangilik va bilim izlash uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tvido da Montefeltro nega papaga makkorona maslahat berdi?",
+   "options": [
+    "A) Papa gunohidan kechishni va'da qilgani uchun",
+    "B) Papadan qo‘rqqani uchun",
+    "C) Pul olgani uchun",
+    "D) Do‘zaxni ko‘rmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Papa gunohidan kechishni va'da qilgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ota-bola aralashuviga nifoq solgan Bertramning jazosi mosmi?",
+   "options": [
+    "A) Mos, chunki oilaviy rishtalarni uzgan",
+    "B) Noto‘g‘ri, ota-bola o‘zi aybdor",
+    "C) Juda yengil jazo berilgan",
+    "D) U umuman aybdor emas"
+   ],
+   "answer": "A) Mos, chunki oilaviy rishtalarni uzgan"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Nifoq soluvchilarning tana a'zolari tilkalanishi nimani anglatadi?",
+   "options": [
+    "A) Jamiyatni bo‘lgani kabi tani bo‘linadi",
+    "B) Ular tezroq yugurishi uchun",
+    "C) Iblislar o‘yin kulgusi uchun",
+    "D) Tana kuchayishi uchun"
+   ],
+   "answer": "A) Jamiyatni bo‘lgani kabi tani bo‘linadi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Bertrand de Born kallasini ko‘tarib yurishi qanday tasvirlangan?",
+   "options": [
+    "A) Mash'al kabi dahshatli va majoziy",
+    "B) Kulgili va engil",
+    "C) Quvonchli va bayramona",
+    "D) Oddiy va e'tiborsiz"
+   ],
+   "answer": "A) Mash'al kabi dahshatli va majoziy"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Alximiklarning terisi qashlanishi nimani anglatadi?",
+   "options": [
+    "A) Qalbaki ishlarning achchiq oqibatini",
+    "B) Ularning toza havoni yaxshi ko‘rishini",
+    "C) Suv yetishmasligini",
+    "D) Kiyimlarining eskiligini"
+   ],
+   "answer": "A) Qalbaki ishlarning achchiq oqibatini"
+  }
+ ]
+}

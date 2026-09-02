@@ -1,0 +1,478 @@
+{
+ "title": "Malika ayyor",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "jasorat",
+   "sadoqat",
+   "vatanparvarlik",
+   "ishq-muhabbat",
+   "halollik",
+   "ustoz-shogird"
+  ],
+  "theme": "Asarda sadoqat, mardlik, ota va farzand o‘rtasidagi mehr-oqibat hamda halollik va to‘g‘rilikning yomonlik va hasad ustidan erishgan g‘alabasi kuylanadi.",
+  "summary": "Go‘ro‘g‘li sulton safar oyida ovga chiqib, Shakar ko‘lida ko‘k kaptar qiyofasida kelgan Torkiston malikasi Malika ayyorni ko‘rib, unga oshiq bo‘lib qoladi. Pari uchib ketgach, Go‘ro‘g‘li qayg me uga batib chillaxonaga kirib yotadi. Yurt boshqaruvi izdan chiqmasligi va otasining ko‘nglini ko‘tarish uchun Avazxon Torkistonga borib Malika parini olib kelishga va'da beradi hamda o altmish oy o‘rniga o‘n olti oy muhlat so‘raydi. Otasi Avazga G‘irot otni berib fotiha beradi.\n\nBiroq Chambildagi Ahmad tog‘a va uning merganlari (Asad va Shodmon) Avazxonning ortidan poyloqchi bo‘lib tushib, uni o‘ldirish va Malikani o‘zlariga peshkash qilish rejasini tuzadilar. Polopon tog‘ida merganlar Avazga o me q uzadilar, ammo G‘irotning sezgirligi sababli Avaz omon qoladi. Merganlar «hazil qildik» deb Avazning ishonchiga kirib, unga hamroh bo‘lishadi.\n\nYo‘lda Ochgaza Darband tog‘i va devlar makonidan o‘tishadi. Avazxon g‘orga kirib Yaproq dev va uning odamlarini yengadi. Keyin Gulshan bog‘ida Gulqiz oyim bilan uchrashadi. U yerdan Torkiston shahriga yo‘l olib, uch qalandar qiyofasida shahar darvozasiga yetishadi. Hamrohlardan biri Shoqalandar (aslida qalandar libosidagi Go‘ro‘g‘lining o‘zi) Malikaning sherini o‘ldiradi. Qosimshoh ulardan sherning xunini talab qilganda, ikkinchi hamroh Shozargar tilladan ichiga odam sig‘adigan sher yasaydi. Avazxon sher ichiga yashirinib Malikaning saroyiga kiradi.\n\nBarcha tilsimlar va jodular yengilgach, Tillaqiz Shozargarga, Gulqiz shahzoda Mahmudga va Malika ayyor Avazxonga yor bo‘ladi. Qaytish yo‘lida badniyat merganlar yana Avazning yo‘lini to me sib uni o‘ldirmoqchi bo‘lganda, Shoqalandar qalandar kiyimini yechib, o‘zini Go‘ro‘g‘li sulton deb tanitadi. Sharmanda bo‘lgan merganlarni Avazxonning iltimosi bilan Go‘ro‘g‘li kechiradi. Chambilga qaytib, qirq kun va qirq kecha to‘y-tomosha berilib, Avazxon bilan Malika ayyorning nikohi o‘qiladi.",
+  "characters": "Go‘ro‘g‘li sulton — Chambil elining mard va adolatli hukmdori, Avazxonning otasi. Avazxon — Go‘ro‘g‘lining botiro‘g‘li, va'dasiga vafo qiluvchi va mard polvon. Malika ayyor — Torkiston shahrining go‘zal va topqir parizod malikasi. Shoqalandar — Avazga yashirincha yordam berib yurgan qalandar qiyofasidagi Go‘ro‘g‘li sulton. Shozargar — tilsimot va zargarlik san'atini mukammal egallagan usta. Asad va Shodmon — Chambillik badniyat va hasadgo‘y merganlar.",
+  "conclusion": "Asar bolalarga har qanday vaziyatda va'daga vafo qilish, ota-ona fotihasini olish va mardlik ko‘rsatishni o‘rgatadi. Hasad va xiyonat insonni tubanlikka yetaklashi, halollik hamda to‘g‘rilik esa har doim g‘alaba qozonishi uqtiriladi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, mardona, ko‘tarinki",
+  "for_whom": "Xalq og‘zaki ijodi, qahramonlik dostonlari va sarguzashtlarga qiziquvchi, mardlik va va'daga vafo haqida o‘qishni xohlaydigan kitobxonlarga.",
+  "events": [
+   "Go‘ro‘g‘li safar oyida ovga chiqmoqchi bo‘lganda Soqibulbul uni safar oyining xatarlaridan ogohlantiradi.",
+   "Go‘ro‘g‘li Shakar ko‘lida ko‘k kaptar qiyofasida kelgan Malika ayyor parini ko‘rib unga oshiq bo‘ladi.",
+   "Malika ayyor o‘zini Torkistonlik deb aytib falakka uchib ketadi.",
+   "Go‘ro‘g‘li g‘amgin holda Chambilga qaytib chillaxonaga kirib yotadi.",
+   "Avazxon otasining ahvolini ko‘rib, Torkistondan Malikani olib kelishga qasam ichadi.",
+   "Avazxon otasidan o‘n olti oy muhlat so‘raydi va G‘irot otni minib yo‘lga tushadi.",
+   "Ahmad sardor Avazxonning ortidan Asad va Shodmon merganlarni poyloqchi qilib yuboradi.",
+   "Polopon tog‘ida merganlar Avazxonni otmoqchi bo‘lganda G‘irot balandga sachrab Avazni omon saqlaydi.",
+   "Merganlar «hazil qildik» deb Avazxon bilan birga yo yo‘lga kiradi.",
+   "Ochgaza Darband tog‘ida Avazxon Yaproq dev va uning devlari bilan savashib ularni yengadi.",
+   "Gulshan bog‘ida Avazxon Gulqiz oyim bilan uchrashadi va Qizil devdan yashirinadi.",
+   "Shoqalandar (Go‘ro‘g‘li) Torkistonda Malikaning o‘ynatib yurgan sherini o‘ldiradi.",
+   "Qosimshoh sher xunini talab qilganda Shozargar tilladan sun'iy sher yasaydi.",
+   "Avazxon tilla sher ichiga yashirinib Malika parining saroyiga kirib boradi.",
+   "Shozargar sichqon va yuzuk tilsimi orqali devlar qudug‘idan qutulib chiqadi.",
+   "Shoqalandar tilsimot olovini so‘tasi bilan urib devlar g‘ovurini yo me q qiladi.",
+   "Shozargar Tillaqizni olib Rum eliga qarab jo‘nab ketadi.",
+   "Darband tog‘ida Asad va Shodmon merganlar Avazxonning yo‘lini to‘sib uni o‘ldirmoqchi bo‘lishadi.",
+   "Shoqalandar o‘zini Go‘ro‘g‘li sulton deb tanitib merganlarni sharmanda qiladi.",
+   "Avazxon otasidan merganlarning gunohini o‘tishni so‘raydi va ularni kechirtiradi.",
+   "Chambil elida qirq kun va qirq kecha to‘y berilib, Avazxon bilan Malika ayyor nikohlanadi."
+  ],
+  "quotes": [
+   "Tekkan omon qolmasin, deb zaharning suvin yalatgan, Chambilda davronni surib yotar Go‘ro‘g‘li sulton.",
+   "O‘zim o‘lmay, kim keladi yurtima, Kelgan dushmanlarni bayon aylagin, Bolam, menga xabar bergin dushmanni.",
+   "Sog‘ borib salomat kelgin, Avazjon, Ko‘rar ko‘zim, bolam, haqqa topshirdim.",
+   "Yaxshi to‘g‘rilik bilan maqsadga otar. Yomonlik bilan hech kim hech nima bo‘lmaydi, Axiri, yoronlar, to‘g‘rilik o‘tar.",
+   "Har kim bo‘lsa, to‘g‘ri bo‘lsa, yoronlar, To‘g‘ri odam xor bo‘lmas, murodga yetar."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li ovga chiqmoqchi bo‘lganda Soqibulbul nima haqida ogohlantirdi?",
+   "options": [
+    "A) Safar oyida safar qilish xatarliligi",
+    "B) Shakar ko‘lida suv quriganligi",
+    "C) Dushmanlar Chambilga hujum qilgani",
+    "D) G‘irot kasal bo‘lib qolgani"
+   ],
+   "answer": "A) Safar oyida safar qilish xatarliligi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shakar ko‘lida Go‘ro‘g‘li qarshisida qanday sirli bino paydo bo‘ldi?",
+   "options": [
+    "A) Baland minora va karvonsaray",
+    "B) Po‘lat kungirali azim qo‘rg‘on",
+    "C) Yog‘ochdan yasalgan kichik qasr",
+    "D) Qadimiy tosh ko‘prik"
+   ],
+   "answer": "B) Po‘lat kungirali azim qo‘rg‘on"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li uchratgan pari o‘zini qaysi shahardan deb aytdi?",
+   "options": [
+    "A) Isfahon shahridan",
+    "B) Torkiston shahridan",
+    "C) Misr shahridan",
+    "D) Bag‘dod shahridan"
+   ],
+   "answer": "B) Torkiston shahridan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avazxon Malikani olib kelish uchun otasidan qancha muhlat so‘radi?",
+   "options": [
+    "A) O‘n olti oy",
+    "B) Uch yil",
+    "C) Oltmish kun",
+    "D) Yetti oy"
+   ],
+   "answer": "A) O‘n olti oy"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Go‘ro‘g‘li Avazxonni safarga jo‘natishda qanday tayyorgarlik ko‘rdi?",
+   "options": [
+    "A) Avazga G‘irotni berib, fotiha berdi",
+    "B) Uni yolg‘iz piyoda jo‘natdi",
+    "C) Qo‘shin to‘plab birga yo‘lga tushdi",
+    "D) Ahmad tog‘ani birga yubordi"
+   ],
+   "answer": "A) Avazga G‘irotni berib, fotiha berdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ahmad sardor nega merganlarni Avazxonning ortidan yubordi?",
+   "options": [
+    "A) Avazni o‘ldirib, hokimiyatni egallash uchun",
+    "B) Avazga yo‘lda yordam berish uchun",
+    "C) Malikaga sovg‘a olib borish uchun",
+    "D) Chambilni dushmandan qo‘rqlash uchun"
+   ],
+   "answer": "A) Avazni o‘ldirib, hokimiyatni egallash uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "G‘irot ot Polopon tog‘ida nega favqulodda balandga sachradi?",
+   "options": [
+    "A) Mergan otgan o‘qdan Avazni saqladi",
+    "B) Yo‘ldagi chuqurdan qo‘rqib ketgani uchun",
+    "C) Avazning buyrug‘ini bajargani uchun",
+    "D) Kiyikni quvib yetish uchun"
+   ],
+   "answer": "A) Mergan otgan o‘qdan Avazni saqladi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Avazxon merganlarning yolg‘on bahonasiga ishonib ularni kechirgani qanday fazilat?",
+   "options": [
+    "A) Bag‘rikenglik va oqko‘ngillik",
+    "B) Qo‘rqoqlik va ojizlik",
+    "C) E'tiborsizlik va loqaydlik",
+    "D) Manmanlik va maqtanchoqlik"
+   ],
+   "answer": "A) Bag‘rikenglik va oqko‘ngillik"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif G‘irot ot uzangisini «yarkillatib ikni yoqqa tushirdi» deb nimani tasvirlagan?",
+   "options": [
+    "A) Egarning va abzallarning juda ziynatli ekanini",
+    "B) Otning juda keksayib qolganini",
+    "C) Yo‘lning juda loy va buzuqligini",
+    "D) Avazning ot minishni bilmasligini"
+   ],
+   "answer": "A) Egarning va abzallarning juda ziynatli ekanini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Polopon tog‘ida sodir bo‘lgan voqealarning to‘g‘ri ketma-ketligini aniqlang.",
+   "options": [
+    "A) Merganlar poylagan, o‘q otilgan, ot sakragan",
+    "B) Ot sakragan, Avaz yiqilgan, mergan qochgan",
+    "C) Avaz o‘q otgan, merganlar yaralangan",
+    "D) Merganlar taslim bo‘lgan, ot o‘lgan"
+   ],
+   "answer": "A) Merganlar poylagan, o‘q otilgan, ot sakragan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avazxon Ochgaza Darband tog‘idagi g‘orda kimlarga duch keldi?",
+   "options": [
+    "A) Yaproq dev va uning devlariga",
+    "B) Qosimshoh va uning askarlariga",
+    "C) Chambillik qirq yigitga",
+    "D) Torkistonlik savdogarlarga"
+   ],
+   "answer": "A) Yaproq dev va uning devlariga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gulshan bog‘ida Gulqiz oyim Avazxonni devlardan yashirish uchun qayerga soldi?",
+   "options": [
+    "A) Katta sandiq ichiga",
+    "B) Chuqur g‘or ichiga",
+    "C) Daraxtning kovagiga",
+    "D) Hovuzning tagiga"
+   ],
+   "answer": "A) Katta sandiq ichiga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Torkistonda Malikaning sherini o‘ldirgani uchun kimlar gunohkor qilindi?",
+   "options": [
+    "A) Uch qalandar",
+    "B) Chambillik merganlar",
+    "C) Qizil dev va odamlari",
+    "D) Torkistonlik savdogarlar"
+   ],
+   "answer": "A) Uch qalandar"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shozargar yasagan tilla sherning ichiga kim yashirindi?",
+   "options": [
+    "A) Avazxon",
+    "B) Shoqalandar",
+    "C) Asad mergan",
+    "D) Qosimshoh"
+   ],
+   "answer": "A) Avazxon"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tilla sher bilan bog‘liq voqealar tartibini ko‘rsating.",
+   "options": [
+    "A) Sher yasaldi, Avaz kirdi, Malika mindi",
+    "B) Malika mindi, sher sindi, Avaz qochdi",
+    "C) Avaz qochdi, sher yasaldi, podsho quvdi",
+    "D) Podsho mindi, sher uchdi, Avaz yutdi"
+   ],
+   "answer": "A) Sher yasaldi, Avaz kirdi, Malika mindi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shozargar nega aynan ichiga odam sig‘adigan tilla sher yasadi?",
+   "options": [
+    "A) Avazni Malikaning saroyiga bildirmay kirgizish uchun",
+    "B) Qosimshohga sovg‘a qilib pul ishlash uchun",
+    "C) Devlarni qo‘rqitib qochirish uchun",
+    "D) Chambilga tezroq qaytib ketish uchun"
+   ],
+   "answer": "A) Avazni Malikaning saroyiga bildirmay kirgizish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tillaqiz yuzukni tilsimlab, devlarga quduqqa tashlatishdan maqsadi nima edi?",
+   "options": [
+    "A) Oshiq Shozargardan butkul qutulish uchun",
+    "B) Quduqdan toza suv chiqarish uchun",
+    "C) Yuzukni devlarga sovg‘a qilish uchun",
+    "D) Malikaning amrini bajarish uchun"
+   ],
+   "answer": "A) Oshiq Shozargardan butkul qutulish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shozargarning har qanday qiyinchilikda ham topqirlik qilishi qanday baholanadi?",
+   "options": [
+    "A) Aql-idrok va hunarmandlik namunasi",
+    "B) Yengiltaklik va bemantiqlik",
+    "C) Manmanlik va maqtanchoqlik",
+    "D) Boshqalarga zarar yetkazish istagi"
+   ],
+   "answer": "A) Aql-idrok va hunarmandlik namunasi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dostonda Torkiston shahri tasvirida «tuproq o‘rniga za'faron yoyilgan» deyilishi nimani anglatadi?",
+   "options": [
+    "A) Shaharning nihoyatda go‘zal va go‘zalligini",
+    "B) Shaharda tuproq umuman yo‘qligini",
+    "C) Odamlar za'faron yetishtirish bilan yashashini",
+    "D) Shaharda faqat dori tayyorlanishini"
+   ],
+   "answer": "A) Shaharning nihoyatda go‘zal va go‘zalligini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Torkiston shahrida bo‘lib o‘tgan voqealarni guruhlang.",
+   "options": [
+    "A) Sher xuni, tilla sher, saroy sayri",
+    "B) Urush, devlar jangi, Chambilga qochish",
+    "C) Uloq chopish, to‘y, beklarni jazolash",
+    "D) Quduq qazish, kechirim so‘rash, ovga chiqish"
+   ],
+   "answer": "A) Sher xuni, tilla sher, saroy sayri"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shoqalandar tilsimot olovini o‘chirish uchun so‘tasini nimaga urdi?",
+   "options": [
+    "A) Yonib turgan olovga",
+    "B) Katta qora toshga",
+    "C) Boymoq devning boshiga",
+    "D) Yonidagi quruq yog‘ochga"
+   ],
+   "answer": "A) Yonib turgan olovga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shozargar va Tillaqiz qaysi elga qarab jo‘nab ketishdi?",
+   "options": [
+    "A) Hurum (Rum) eliga",
+    "B) Misr eliga",
+    "C) Eram eliga",
+    "D) Zangor eliga"
+   ],
+   "answer": "A) Hurum (Rum) eliga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Darband tog‘ida Avazning yo‘lini yana to‘sib chiqqan merganlar kim edi?",
+   "options": [
+    "A) Asad va Shodmon",
+    "B) Gajdim va Majdim",
+    "C) Yaproq va Boymoq",
+    "D) Yusufbek va Soqi"
+   ],
+   "answer": "A) Asad va Shodmon"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shoqalandar o‘zining aslida kimligini merganlarga oshkor qilganida kim bo‘lib chiqdi?",
+   "options": [
+    "A) Go‘ro‘g‘li sulton",
+    "B) Qosimshoh podsho",
+    "C) Oqdev shoh",
+    "D) Soqibulbul sayis"
+   ],
+   "answer": "A) Go‘ro‘g‘li sulton"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Go‘ro‘g‘li nega Avazning ortidan qalandar qiyofasida yashirincha yo‘lga chiqqan edi?",
+   "options": [
+    "A) O‘g‘liga xavfli yo‘lda yashirincha yordam berish uchun",
+    "B) Avazning Malikani olib kelishiga ishonmagani uchun",
+    "C) Chambil elidan qochib ketish uchun",
+    "D) Torkiston taxtini egallash uchun"
+   ],
+   "answer": "A) O‘g‘liga xavfli yo‘lda yashirincha yordam berish uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Avazxon otasidan ikki mergan Asad va Shodmonni kechirishni nega so‘radi?",
+   "options": [
+    "A) Va'da bergani va rahmdillik ko‘rsatgani uchun",
+    "B) Merganlar unga oltin sovg‘a qilgani uchun",
+    "C) Ularning qilgan ishidan xabari bo‘lmagani uchun",
+    "D) Merganlardan qo‘rqqani uchun"
+   ],
+   "answer": "A) Va'da bergani va rahmdillik ko‘rsatgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Go‘ro‘g‘lining o‘g me lining ra me yiga qarab merganlarni kechirishi qanday saboq beradi?",
+   "options": [
+    "A) Kattalarning bag‘rikengligi va afv etish oilyjanoblikdir",
+    "B) Xiyonatkorlarni doimo mukofotlash kerak",
+    "C) Nohaqlikka qarshi kurashmaslik lozim",
+    "D) Dushmanlar bilan kelishib yashash shart"
+   ],
+   "answer": "A) Kattalarning bag‘rikengligi va afv etish oilyjanoblikdir"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Doston oxirida baxshi «Har kim to‘g‘ri bo‘lsa, murodiga yetadi» deyishi nimani uqtiradi?",
+   "options": [
+    "A) Halollik va to‘g‘rilik pirovardida zafar qozonadi",
+    "B) Hiyla va aldov bilan maqsadga erishiladi",
+    "C) Boylik har qanday muammoni hal qiladi",
+    "D) Kuchli odam doimo haq bo‘lib chiqadi"
+   ],
+   "answer": "A) Halollik va to‘g‘rilik pirovardida zafar qozonadi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dostondagi «Yomonlikning hech elda yo‘q rivoji» degan misra nimaga urg‘u beradi?",
+   "options": [
+    "A) Yomon qilmishlar baribir inqirozga yuz tutishiga",
+    "B) Yomon odamlar har joyda ko‘payib borishiga",
+    "C) Elatda faqat yomonlar yashashiga",
+    "D) Yomonlikni yo‘qotib bo‘lmasligiga"
+   ],
+   "answer": "A) Yomon qilmishlar baribir inqirozga yuz tutishiga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Go‘ro‘g‘li haqida «O‘zi o‘lsa ham so‘zi qoldi jahonga» deyilishi muallifning qanday tuyg‘usini aks ettiradi?",
+   "options": [
+    "A) Qahramonning el-yurt xotirasidagi boqiy izzatiga hurmat",
+    "B) Asar tugaganidan afsuslanish tuyg‘usini",
+    "C) Chambil elining kambag‘allashganidan kayfiyatini",
+    "D) Avazning hali yoshligiga nisbatan xavotirni"
+   ],
+   "answer": "A) Qahramonning el-yurt xotirasidagi boqiy izzatiga hurmat"
+  }
+ ]
+}

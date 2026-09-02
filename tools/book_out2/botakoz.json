@@ -1,0 +1,481 @@
+{
+ "title": "Bo‘tako‘z",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14 yoshdagilar uchun",
+  "topics": [
+   "jasorat",
+   "doston",
+   "vatanparvarlik",
+   "oila",
+   "muhabbat",
+   "oqibat"
+  ],
+  "theme": "Asarning bosh g‘oyasi — mardlik, otaga hamda kattalarga hurmat, ahdga vafo qilish, el-yurt tinchligi va elat el oqibatini shaxsiy or-nomus hamda manfaatlardan ustun qo‘yishdir.",
+  "summary": "Go‘ro‘g‘li Chambil yurtida bek bo‘lib, o‘n ikki xotini bo‘lsa-da, farzand ko‘rmaydi va qirqta yetim o‘g‘ilni asrab oladi. Ular orasida Avazxon va Hasanxon alohida ajralib turadi. Turkman elida yashaydigan ro‘gay boy Oqchishboyning qirq o‘g‘li va Bo‘tako‘z ismli aqlli, polvon va sohibjamol bir qizi bor edi. Bo‘tako‘zning maslahati bilan Oqchishboy eng kichik o‘g‘li Yusufjonning xatna to‘yini juda katta qiladi va to‘yga Go‘ro‘g‘lini ham chaqirish uchun xat jo‘natadi. Xatni olib ketgan bema’ni yigit yo‘lda Go‘ro‘g‘lining otini bo‘g‘izlaydi, biroq Go‘ro‘g‘li to‘y sababli uning gunohidan kechadi. Go‘ro‘g‘li to‘yga borolmay, sakkiz o‘g‘lini yuboradi. Avazxon yo‘lda charchab, uyquga ketib qoladi. To‘yda boy yashar tuya so‘yib, kechasi uloq (buzkashi) uyoqlaydi. Hasanxon uloqni o‘ngarib olib qochadi. Axtabo‘z otini mingan Bo‘tako‘z Hasanxon va Soqining ortidan quvib yetadi va keyinchalik Avazxon bilan uchrashadi. Avaz bilan kuch sinashib, uning mardligiga tan bergan Bo‘tako‘z uloqni pakkaga tashlashda Avazga yordam beradi hamda Chambilga birga qochishga ahd qiladi. Avazxon Bo‘tako‘zni Chambilga olib qochib ketgach, turkman ulug‘lari bundan orlanib, Go‘ro‘g‘liga arz qiladi. Go‘ro‘g‘lining g‘azabidan cho‘chigan va arazlagan Avazxon Chambildan ketib, Xunxor podshoh huzuriga boradi. Xunxor Chambilga qarshi o‘n ming lashkar tortadi. Biroq Avaz elatiga va otasiga sadoqat saqlab, Soqi orqali Go‘ro‘g‘lini oldindan ogohlantiradi. Maydonda otasining mehribonligini ko‘rgan Avaz ta’zim qilib, gunohini tilaydi. Go‘ro‘g‘li Xunxor shohni izzat-ikrom bilan kutib olib, mehmondo‘stlik ko‘rsatadi va urushning oldi olinadi. Xunxor eson-omon qaytgach, Go‘ro‘g‘li Oqchishboyga sovchi (Ahmadbek) yuboradi. Oqchishboy katta qalin so‘rab, o‘z oriyatini saqlaydi. Go‘ro‘g‘li va yigitlar to‘y-tomosha bilan Bo‘tako‘zni kelin qilib Chambilga olib kelishadi va Avazxon murodiga yetadi.",
+  "characters": "Go‘ro‘g‘li — Chambil yurtining odil va bag‘rikeng begi. Bolalariga mehribon, donishmand va el tinchligini hamma narsadan ustun qo‘yadigan yetakchi.\nBo‘tako‘z — Oqchishboyning yagona qizi. Idrokli, polvon, ot chopish va kurashda tengsiz, o‘z ahdiga vafo qiluvchi mard qiz.\nAvazxon — Go‘ro‘g‘lining asrandi o o‘g‘illaridan biri. Shijoatli, oriyatli va el-yurtiga bo‘lgan sadoqatini sinovlarda ko‘rsatadigan er yigit.\nHasanxon — Go‘ro‘g‘lining katta o‘g‘li. Mulohazali, ukalariga bosh-qosh bo‘ladigan va ularni himoya qiladigan yetakchi.\nOqchishboy — Turkman elatining katta boyi. Qizini juda yaxshi ko‘radigan, el-yurt oldida obro‘sini o‘ylaydigan g‘ururli ota.\nSoqijon — Avazning sadoqatli do‘sti va ukasi. Qiyin damlarda xabar tashuvchi va ko‘makchi yigit.\nXunxorshoh — Xunxor mamlakatining podshohi. Avazga mehri baland, biroq do‘stlik va tinchlikni qadrlaydigan hukmdor.",
+  "conclusion": "Kitob bolaga oilada otaga hurmat ko‘rsatish, har qanday araz va xafagarchilikda ham sadoqat hamda shukronalikni yo‘qotmaslik zarurligini o‘rgatadi. Harakatlar natijasida kelib chiqadigan mas’uliyatni his qilish, mardlik va bag‘rikenglik orqali nizolarni tinchlik bilan hal etish mumkinligini uqtiradi.",
+  "difficulty": "o‘rta",
+  "mood": "shijoatli, tarixiy, o‘ylantiruvchi",
+  "for_whom": "Xalq dostonlari, qahramonlik va sarguzashtlarga qiziqadigan, mardlik hamda odamiylik haqida saboq olmoqchi bo‘lgan o‘quvchilar uchun.",
+  "events": [
+   "Oqchishboy kenja o‘g‘li Yusufjonning to‘yi haqida qizi Bo‘tako‘z bilan maslahatlashadi.",
+   "Bo‘tako‘z otasiga el obro‘si uchun to‘yni seroblik va katta tomosha bilan o‘tkazishni uqtiradi.",
+   "Boy to‘yga Chambil begi Go‘ro‘g‘lini va butun elni taklif etib xat yozdiradi.",
+   "Bema’ni bir yigit xatni olib qochib, yo‘lda Go‘ro‘g‘lining otini so‘yib tashlaydi.",
+   "Go‘ro‘g‘li to‘y xatining hurmati uchun haligi yigitning gunohidan kechadi.",
+   "Go‘ro‘g‘li to‘yga o‘zi borolmay, Hasanxon boshliq sakkiz o‘g‘lini yuboradi.",
+   "Avazxon yo‘lda charchagani uchun O‘rtabel adirida uyquga ketib qoladi.",
+   "Hasanxon ukalari bilan to‘yxonaga yetib keladi va Oqchishboy ularni yetti o o‘tovga joylashtiradi.",
+   "Oqchishboy to‘yda bir yashar tuyani so‘yib kechasi uloq (buzkashi) o‘tkazadi.",
+   "Hasanxon va Soqi uloqni yerdan ko‘tarib olib qochadi.",
+   "Bo‘tako‘z Axtabo‘z otida Hasanxon hamda Soqining ortidan quvib yetadi.",
+   "Bo‘tako‘z adirda Avazxon bilan uchrashib, uning kuchini sinaydi va birga qochishga kelishadi.",
+   "Avazxon Bo‘tako‘zning yordami bilan uloqni pakkaga tashlaydi va mukofotni boyga qaytaradi.",
+   "Avazxon Bo‘tako‘zni Chambilga olib qochib keladi.",
+   "Turkman ulug‘lari Go‘ro‘g‘liga kelib Avazxon ustidan shikoyat va arz qilishadi.",
+   "Otasi g‘azablanishidan va jazo berishidan cho‘chigan Avazxon Chambildan ketib Xunxor shoh huzuriga boradi.",
+   "Xunxor shoh Avazga qo‘shilib Chambilga qarshi o‘n ming lashkar tortadi.",
+   "Avaz Soqini yuborib Go‘ro‘g‘lini dushmanning kelishidan secretly ogohlantiradi.",
+   "Bolqon adirida Go‘ro‘g‘li va Avazxon uchrashadi; Avaz otasining oyog‘iga yiqilib tavba qiladi.",
+   "Go‘ro‘g‘li Xunxor shohni uch kun davomida izzat-ikrom bilan ziyofat qiladi va urush kelib chiqmaydi.",
+   "Go‘ro‘g‘li Ahmadbekni Oqchishboy huzuriga sovchilikka yuboradi.",
+   "Oqchishboy qizi uchun katta qalin va tuyalar so‘raydi, Go‘ro‘g‘li buni tushunib qabul qiladi.",
+   "Bo‘tako‘z tantana va allayor qo‘shiqlari bilan Chambilga kelin bo‘lib keladi."
+  ],
+  "quotes": [
+   "Mening davlatim, xonlarning davlatidan kam emas.",
+   "Yomon odam yaxshi bo‘lmas o‘lguncha.",
+   "Otdan tushmay turmangizlar gerdayib.",
+   "Qochoqbek atandik turkman yurtida.",
+   "Er yigitga isnod o‘limdan yomon.",
+   "Oqil bo‘lmoq oq sut bergan onadir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li Chambilda necha nafar asrandi o‘g‘il boqqan edi?",
+   "options": [
+    "A) Qirqta o‘g‘il",
+    "B) O‘nta o‘g‘il",
+    "C) Yetti o‘g‘il",
+    "D) Sakkiz o‘g‘il"
+   ],
+   "answer": "A) Qirqta o‘g‘il"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oqchishboyning eng kichik o‘g‘lining oti nima edi?",
+   "options": [
+    "A) Yusufjon",
+    "B) Avazxon",
+    "C) Hasanxon",
+    "D) Soqijon"
+   ],
+   "answer": "A) Yusufjon"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bo‘tako‘z otasiga nega to‘yni katta qilishni maslahat berdi?",
+   "options": [
+    "A) El ichida obro‘ni saqlash uchun",
+    "B) Go‘ro‘g‘lini chorlash uchun",
+    "C) Avazxonni ko‘rish uchun",
+    "D) Mol-dunyo ko‘pligini ko‘rsatish uchun"
+   ],
+   "answer": "A) El ichida obro‘ni saqlash uchun"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oqchishboy to‘yni necha kun osh-go‘sht tortib berdi?",
+   "options": [
+    "A) O‘n besh kun",
+    "B) Besh kun",
+    "C) O‘ttiz kun",
+    "D) Qirq kun"
+   ],
+   "answer": "A) O‘n besh kun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "To‘y xatini olib qochgan yigit Go‘ro‘g‘li otini nima qildi?",
+   "options": [
+    "A) Pichoq bilan bo‘g‘izlab o‘ldirdi",
+    "B) Minib qochib ketdi",
+    "C) Davolash uchun olib ketdi",
+    "D) Sotib yubordi"
+   ],
+   "answer": "A) Pichoq bilan bo‘g‘izlab o‘ldirdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Go‘ro‘g‘lining otini so‘ygan bolani o‘ldirmasligi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, badnom bo‘lmaslik uchun",
+    "B) Noto‘g‘ri, jazolashi kerak edi",
+    "C) Noto‘g‘ri, otining qasosi qoldi",
+    "D) To‘g‘ri, undan qo‘rqqani uchun"
+   ],
+   "answer": "A) To‘g‘ri, badnom bo‘lmaslik uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li to‘yga o‘zi bormay necha o‘g‘lini yubordi?",
+   "options": [
+    "A) Sakkiz o‘g‘lini",
+    "B) Qirq o‘g‘lini",
+    "C) Ikkita o‘g‘lini",
+    "D) O‘n o‘g‘lini"
+   ],
+   "answer": "A) Sakkiz o‘g‘lini"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Avazxon nega O‘rtabel adirida yotib qoldi?",
+   "options": [
+    "A) Qirq kun uxlamay mast bo‘lgani",
+    "B) Oti oyog‘idan yaralangani uchun",
+    "C) Otasiga zardalangani uchun",
+    "D) Yo‘lni yo‘qotib qo‘ygani uchun"
+   ],
+   "answer": "A) Qirq kun uxlamay mast bo‘lgani"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Yomon odam yaxshi bo‘lmas» deb nimaga ishora qilgan?",
+   "options": [
+    "A) Odobsiz va qo‘rs yigit fe’liga",
+    "B) Oqchishboyning baxilligiga",
+    "C) Avazxonning dangasaligiga",
+    "D) Qirq yigitning harakatiga"
+   ],
+   "answer": "A) Odobsiz va qo‘rs yigit fe’liga"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Oqchishboy Go‘ro‘g‘lining o‘g‘illari kelganda nega ichida pushaymon bo‘ldi?",
+   "options": [
+    "A) Go‘ro‘g‘lining o‘zi kelmagani uchun",
+    "B) Ularga joy yetmagani uchun",
+    "C) Hasanxon to‘yni buzgani uchun",
+    "D) Ovqat kam bo‘lgani uchun"
+   ],
+   "answer": "A) Go‘ro‘g‘lining o‘zi kelmagani uchun"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oqchishboy mehmonlar uchun necha qavatli o‘tovlar yasatgan edi?",
+   "options": [
+    "A) Yetti o‘tov yasatgan edi",
+    "B) O‘n o‘tov yasatgan edi",
+    "C) Qirq o‘tov yasatgan edi",
+    "D) Ikkita o‘tov yasatgan edi"
+   ],
+   "answer": "A) Yetti o‘tov yasatgan edi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘ydagi kechasi chopilgan uloqqa nima so‘yilgan edi?",
+   "options": [
+    "A) Bir yashar tuya",
+    "B) Semiz qo‘y",
+    "C) Qora bo‘ra",
+    "D) Yosh buzoq"
+   ],
+   "answer": "A) Bir yashar tuya"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Soqi tunda shovqin eshitib, kimdan uloq haqida so‘radi?",
+   "options": [
+    "A) Uloq haydagan boladan",
+    "B) Oqchishboyning o‘zidan",
+    "C) Bo‘tako‘z qizdan",
+    "D) Hasanxon akasidan"
+   ],
+   "answer": "A) Uloq haydagan boladan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘tako‘z minib olgan uchqur otning nomi nima edi?",
+   "options": [
+    "A) Axtabo‘z",
+    "B) G‘irot",
+    "C) Majnunko‘k",
+    "D) Sariq saman"
+   ],
+   "answer": "A) Axtabo‘z"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Soqi Hasanga Bo‘tako‘z haqida gapirganda nega ehtiyotkorlikka chaqirdi?",
+   "options": [
+    "A) Qizning tili va bilagi o‘tkirligidan",
+    "B) Qo‘shinga boshchilik qilgani uchun",
+    "C) Ularga zahar bergani uchun",
+    "D) Otni tortib olgani uchun"
+   ],
+   "answer": "A) Qizning tili va bilagi o‘tkirligidan"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Avazxon Bo‘tako‘zning taklifiga ko‘nib uloqni pakkaga tashlagani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, obro‘ saqlanib qoldi",
+    "B) Noto‘g‘ri, uloqni bermasligi kerak",
+    "C) Noto‘g‘ri, qizdan qochishi kerak",
+    "D) To‘g‘ri, boyni jazolash uchun"
+   ],
+   "answer": "A) To‘g‘ri, obro‘ saqlanib qoldi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘tako‘z Avazxon bilan qaerdagi adirda ko‘rishishga ahdlashdi?",
+   "options": [
+    "A) Oqtepada",
+    "B) Bolqonda",
+    "C) O‘rtabelda",
+    "D) Havdakda"
+   ],
+   "answer": "A) Oqtepada"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Turkmanlar Avaz ustidan Go‘ro‘g‘liga arz qilish uchun necha kishi bo‘lishdi?",
+   "options": [
+    "A) Uch yuz kishi",
+    "B) Qirq kishi",
+    "C) Yuz kishi",
+    "D) Ming kishi"
+   ],
+   "answer": "A) Uch yuz kishi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Avazxon Xunxorga ketayotib nega G‘irot otini minmadi?",
+   "options": [
+    "A) Otasiga ot o‘g‘risi bo‘lmaslik uchun",
+    "B) G‘irot oqsoqlanib qolgani uchun",
+    "C) G‘irotni Soqi olib qo‘ygani uchun",
+    "D) Ot juda charchagani uchun"
+   ],
+   "answer": "A) Otasiga ot o‘g‘risi bo‘lmaslik uchun"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Avazning «Go‘ro‘g‘li qilgan mehnatim qadrini bilmadi» degan arazida nima bor?",
+   "options": [
+    "A) Yigitning ko‘ngli og‘riganligi",
+    "B) Otasiga bo‘lgan nafrat",
+    "C) Gurjistonga qochish istagi",
+    "D) Bo‘tako‘zdan vos kechishi"
+   ],
+   "answer": "A) Yigitning ko‘ngli og‘riganligi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xunxor podshoh Chambilga qarshi necha ming lashkar to‘pladi?",
+   "options": [
+    "A) O‘n ming lashkar",
+    "B) Qirq ming lashkar",
+    "C) Besh ming lashkar",
+    "D) Yigirma ming lashkar"
+   ],
+   "answer": "A) O‘n ming lashkar"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Avaz Soqi miroxo‘rni Go‘ro‘g‘li huzuriga nega yubordi?",
+   "options": [
+    "A) Tinchlik va ogohlantirish uchun",
+    "B) Xunxordan qochib ketish uchun",
+    "C) Otasidan mol-dunyo so‘rash uchun",
+    "D) Bo‘tako‘zni olib chiqish uchun"
+   ],
+   "answer": "A) Tinchlik va ogohlantirish uchun"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Avazning Go‘ro‘g‘lini oldindan ogohlantirishi uning qaysi sifatini ko‘rsatadi?",
+   "options": [
+    "A) El va otaga sadoqatini",
+    "B) Dushmandan qo‘rqishini",
+    "C) Jangdan qochishini",
+    "D) Maqtanmoqchi bo‘lganini"
+   ],
+   "answer": "A) El va otaga sadoqatini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li Avazning yig‘laganini ko‘rib nima qildi?",
+   "options": [
+    "A) Quchog‘iga olib peshonasidan o‘pdi",
+    "B) Qilichini qinidan chiqardi",
+    "C) Xunxorga qarshi ot chopdi",
+    "D) Lashkarga chekinishni buyurdi"
+   ],
+   "answer": "A) Quchog‘iga olib peshonasidan o‘pdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li Xunxorshohni necha kun adirda ziyofat qildi?",
+   "options": [
+    "A) Uch kecha-yu kunduz",
+    "B) Yetti kecha-yu kunduz",
+    "C) Bir kecha-kunduz",
+    "D) O‘n kecha-kunduz"
+   ],
+   "answer": "A) Uch kecha-yu kunduz"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Go‘ro‘g‘li Oqchishboy huzuriga kimni sovchi qilib yubordi?",
+   "options": [
+    "A) Ahmadbek tog‘asini",
+    "B) Soqibulbul sayisni",
+    "C) Chaqqonbekni",
+    "D) Avazxonning o‘zini"
+   ],
+   "answer": "A) Ahmadbek tog‘asini"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oqchishboy qizi uchun qancha tilla qalin so‘radi?",
+   "options": [
+    "A) Qirq ming tilla",
+    "B) Yuz ming tilla",
+    "C) O‘n ming tilla",
+    "D) Qirq tilla"
+   ],
+   "answer": "A) Qirq ming tilla"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Go‘ro‘g‘li Oqchishboyning og‘ir shartlarini eshitib nega kuldi?",
+   "options": [
+    "A) Boy ilojsizlikdan shunday deganini bildi",
+    "B) Boyni masxara qilmoqchi bo‘ldi",
+    "C) Qalinni to‘lay olmasligini bildi",
+    "D) Ahmadbek yomon xabar keltirgani uchun"
+   ],
+   "answer": "A) Boy ilojsizlikdan shunday deganini bildi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Xoldonaning allayor qo‘shig‘ida Bo‘tako‘zning qaysi fazilati madh etilgan?",
+   "options": [
+    "A) Va’dali va mardligi",
+    "B) Kibri va manmanligi",
+    "C) Uloqni yutib olgani",
+    "D) Otasini tashlab ketgani"
+   ],
+   "answer": "A) Va’dali va mardligi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Asardagi voqealar yechimi kitobxonga qanday saboq beradi?",
+   "options": [
+    "A) Tinchlik va oqibat barqaror bo‘ladi",
+    "B) Har bir narsani urush yechadi",
+    "C) Kattalarga qarshi borish kerak",
+    "D) Boylik hamma narsadan ustun"
+   ],
+   "answer": "A) Tinchlik va oqibat barqaror bo‘ladi"
+  }
+ ]
+}

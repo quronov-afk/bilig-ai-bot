@@ -1,0 +1,478 @@
+{
+ "title": "Hayrat ul-abror",
+ "author": "Alisher Navoiy",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "halollik",
+   "ilm",
+   "odob-axloq",
+   "saxovat",
+   "falsafa",
+   "kamolot"
+  ],
+  "theme": "Insonning ruhiy va ma'naviy kamoloti, adolat, saxovat, kamtarlik hamda pokiza axloq orqali ikki dunyo saodatiga erishish g‘oyasi ilgari surilgan.",
+  "summary": "«Hayrat ul-abror» (Yaxshi kishilarning hayratlanishi) — Alisher Navoiy «Xamsa»sining birinchi dostoni bo‘lib, falsafiy-ta'limiy va pand-nasihat ruhidagi yirik asardir. Doston an'anaviy hamd, munojot, na't va me'roj boblari bilan boshlanadi. Muallif Bismilloh harflarining ramziy ma'nolarini izohlaydi, Xudoning qudrati va olamning yaratilishini tasvirlaydi. Keyinchalik imon, adolat, saxovat, adab, ilm, qanoat, vafo va kamtarlik kabi insoniy fazilatlar haqida ma'rifiy maqolalar beriladi. Har bir maqolat mazmuni bittadan ibratli hikoyat bilan dalillanadi. Masalan, sher va durroj hikoyatida yolg‘onchilikning ayanchli oqibati, Iskandar hikoyatida dunyo molining o‘tkinchiligi va o‘lim oldida hamma tengligi, saxiylik qilgan shoh va qul hikoyatida esa afv va bag‘rikenglikning ulug‘vorligi ko‘rsatiladi. Asar oxirida shoir o‘zining ijodiy mehnatini, insoniy ojizligini kamtarona ta'riflaydi hamda dostonni hijriy 888-yilda yakunlaganini aytib, o‘quvchilar va soqiydan duolar so‘raydi.",
+  "characters": "Alisher Navoiy — asar muallifi va roviy, insoniyatni ma'naviy poklikka chorlaydi.\nIskandar Zulkanayniy — jahongir shoh, o‘lim oldida dunyodan qo‘li bo‘sh ketishini anglagan hukmdor.\nSher va Durroj — yolg‘onchilik oqibatida halokatga uchragan qush va unga ishonmay qo‘ygan sher.\nSaxiylik qilgan shoh va qul — tasodifan boshiga issiq osh to‘kib yuborgan qulni kechirib, uni ozod qilgan olijanob shoh.\nXoja Muhammad Porso va Xoja Abu Nasr — haj safarida kamtarlik va samimiyat bilan duo qilgan ustoz va shogird.",
+  "conclusion": "Kitob kitobxonga insoniylik, halollik, adolat va kamtarlik darsini beradi. Yoshlar dunyo moliga hirs qo‘ymaslikni, har bir so‘zda rostgo‘y bo‘lishni hamda kattalarga va ustozlarga hurmat ko‘rsatishni o‘rganadilar.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Mumtoz adabiyotga, falsafiy va ma'rifiy asarlarga qiziquvchi, odob-axloq va ma'naviyat haqida mushohada yuritadigan o‘smirlarga mo‘ljallangan.",
+  "events": [
+   "1. Muallif «Bismilloh» kalimasining harflariga falsafiy va ramziy ma'nolar beradi.",
+   "2. Olam va odamning yaratilishi hamda Xudoning qudrati madh etiladi.",
+   "3. Qiyomat kunining dahshatlari va hisob-kitob jarayoni tasvirlanadi.",
+   "4. Muhammad Payg‘ambar (s.a.v.)ning shafaqat va ma'rifat nuri ulug‘lanadi.",
+   "5. Me'roj kechasi va Payg‘ambarning falaklarga ko‘tarilishi bayon qilinadi.",
+   "6. Ko‘ngil ta'rifi berilib, u oddiy yurak emas, balki ruhiy marfiyat ekani uqtiriladi.",
+   "7. Imonning mohiyati va uning sabr, shukr hamda hayo bilan bog‘liqligi tushuntiriladi.",
+   "8. Namoz, zakot va ro‘zaning zohiriy hamda botiniy ma'nolari sharhlanadi.",
+   "9. Xoja Abdulloh Ansoriyning ixlos va xolis ibodat haqidagi qarashlari keltiriladi.",
+   "10. Saxovat va karamning fazilati hamda isrof va baxillikning ziyoni bayon etiladi.",
+   "11. Adab, tavozu' va behuda kulguning zarari haqida so‘z yuritiladi.",
+   "12. Ikki vafodor do‘stning bir-biri uchun jon berishga tayyorligi hikoya qilinadi.",
+   "13. Shayxi Iroqiyning Shom shahrida husn sham'ini ko‘rib hayratlanishi tasvirlanadi.",
+   "14. Durrojning doim yolg‘on gapirgani sababli sher uning rost dodiga ishonmaydi va durroj halok bo‘ladi.",
+   "15. Ilmning insonni yuksaltirishi va jaholatning xorlikka yetaklashi uqtiriladi.",
+   "16. Iskandar o‘limi oldidan na'shidan bir qo‘lini chiqarib qo‘yishni vasiyat qiladi.",
+   "17. Kibr va manmanlikka berilgan kishilarning xatolari fosh etiladi.",
+   "18. Xoja Muhammad Porso va o‘g‘li Abu Nasrning hajda bir-birini ulug‘lab duo qilgani aytiladi.",
+   "19. Qul shohning boshiga issiq osh to‘kib yuboradi, shoh esa uni kechirib ozod qiladi.",
+   "20. Navoiy dostonni hijriy 888-yilda tugatganini aytib, o‘quvchilar duosini so‘raydi."
+  ],
+  "quotes": [
+   "Yo‘l yomonu yaxshisidin yema g‘am, Bismilloh, degilu qo‘yg‘il qadam.",
+   "Kimki jahon ahlida inson erur, Bilki nishoni anga imon erur.",
+   "Odami ersang demagil odami, Oniki yo‘q xalq g‘amidin g‘ami.",
+   "Kulguki o‘z haddidin o‘ldi yiroq, Yig‘lamoq andin ko‘p erur yaxshiroq.",
+   "So‘zda, Navoiy, ne desang, chin degil, Rost navo nag‘mag‘a taxsin degil.",
+   "Har kishi xalq ichra gunaxkorroq, Afvu inoyatga sazovorroq."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dostonda avval bodiya qat'iga qaysi sozlar bilan qadam qo‘yiladi?",
+   "options": [
+    "A) Bismilloh degil va qadam qo‘yg‘il",
+    "B) Alhamdu lilloh deb yo‘lga chiq",
+    "C) Subhonalloh deb safar qil",
+    "D) Allohu akbar deb olg‘a bos"
+   ],
+   "answer": "A) Bismilloh degil va qadam qo‘yg‘il"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif inson jismiga berilgan ma'naviy ganj tilismini nima deydi?",
+   "options": [
+    "A) Karramano va Ahsani taqvim",
+    "B) Mulku malak va saltanat",
+    "C) Hikmatu doiralik",
+    "D) Durru gavhar va davlat"
+   ],
+   "answer": "A) Karramano va Ahsani taqvim"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy Payg‘ambar mu'jizasi haqida gapirganda qaysi hodisani eslaydi?",
+   "options": [
+    "A) Oyni ikki bo‘lish ishorasini",
+    "B) Quyoshni orqaga qaytarishni",
+    "C) Toshlarning kalom aytishini",
+    "D) Suvni sharbatga aylantirishni"
+   ],
+   "answer": "A) Oyni ikki bo‘lish ishorasini"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Payg‘ambar g‘orda yashiringanda eshikda nima parda bo‘ldi?",
+   "options": [
+    "A) O‘rgamchi to‘ri",
+    "B) Zich daraxt shoxlari",
+    "C) Qalin devor toshlari",
+    "D) Qattiq qor uyumi"
+   ],
+   "answer": "A) O‘rgamchi to‘ri"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnga ko‘ra, Me'roj kechasidagi voqealar tartibi qanday ko‘rsatilgan?",
+   "options": [
+    "A) Buraqqa minish, falaklarni o‘tish",
+    "B) Arshga chiqish, so‘ng otlanish",
+    "C) Oyga borish, so‘ng g‘orga kirish",
+    "D) Yerda qolish, so‘ng tush ko‘rish"
+   ],
+   "answer": "A) Buraqqa minish, falaklarni o‘tish"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif doston boshida qanday fasllar va boblarni ketma-ket joylagan?",
+   "options": [
+    "A) Bismilloh sharhi, Hamd, Munojotlar",
+    "B) Maqolatlar, Hikoyatlar, Yakun",
+    "C) Hikoyatlar, Na'tlar, Hamd",
+    "D) Xotima, Na't, Munojot"
+   ],
+   "answer": "A) Bismilloh sharhi, Hamd, Munojotlar"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Payg‘ambar g‘orda turganda qush bayzasi tugma bo‘ldi?",
+   "options": [
+    "A) Dushmanlarni chalg‘itib asrash uchun",
+    "B) G‘or ichini yoritish uchun",
+    "C) Qushlarga in qurish uchun",
+    "D) Yo‘lovchilarga belgi berish uchun"
+   ],
+   "answer": "A) Dushmanlarni chalg‘itib asrash uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun shoir Allohga yolvorib, qiyomatda afv so‘ramoqda?",
+   "options": [
+    "A) Gunohlari va ojizligi sababli",
+    "B) Dunyoda boylik orttirish uchun",
+    "C) Shohlik taxtiga erishish uchun",
+    "D) Maqtanchoqlik qilish uchun"
+   ],
+   "answer": "A) Gunohlari va ojizligi sababli"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning Bismilloh harflariga bergan ta'vilini qanday baholash mumkin?",
+   "options": [
+    "A) Teran falsafiy va ramziy ma'noli",
+    "B) Oddiy va e'tiborsiz matn",
+    "C) Tushunarsiz va keraksiz so‘zlar",
+    "D) Faqat shunchaki she'riy san'at"
+   ],
+   "answer": "A) Teran falsafiy va ramziy ma'noli"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Yo‘l yomonu yaxshisidin yema g‘am» bayti qanday tuyg‘u beradi?",
+   "options": [
+    "A) Ezgu ishni tavakkal boshlash",
+    "B) Qo‘rquv va ikkilanib turish",
+    "C) Yo‘ldan orqaga qaytib ketish",
+    "D) Bevafo do‘stlardan nolib yashash"
+   ],
+   "answer": "A) Ezgu ishni tavakkal boshlash"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Inson imoni va odamiyligi nishoni qaysi uch narsada deyilgan?",
+   "options": [
+    "A) Sabr, shukr va hayo",
+    "B) Boylik, kuch va shohlik",
+    "C) Manmanlik, kulgu va ziynat",
+    "D) G‘azab, kibr va saxovat"
+   ],
+   "answer": "A) Sabr, shukr va hayo"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Durroj nima sababdan halokatga uchradi va o‘ldi?",
+   "options": [
+    "A) Doim yolg‘on gapirgani uchun",
+    "B) Qattiq sovuq bo‘lgani uchun",
+    "C) Sher bilan urushgani uchun",
+    "D) Ozuqa topa olmagani uchun"
+   ],
+   "answer": "A) Doim yolg‘on gapirgani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Behuda va me'yordan ortiq kulgu nimaga o‘xshatilgan?",
+   "options": [
+    "A) G‘unchaning sochilib barbod bo‘lishiga",
+    "B) Bahoriy yomg‘irning yog‘ishiga",
+    "C) Quyoshning charqlab chiqishiga",
+    "D) Daryoning toshib oqishiga"
+   ],
+   "answer": "A) G‘unchaning sochilib barbod bo‘lishiga"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ko‘ngul ta'rifida u oddiy nimadan farqlanadi?",
+   "options": [
+    "A) Odatiy go‘sht bo‘lgan yurakdan",
+    "B) Insonning harakatlanuvchi tilidan",
+    "C) Boshdagi aql va xayoldan",
+    "D) Ko‘zning ko‘ruvchilik quvvatidan"
+   ],
+   "answer": "A) Odatiy go‘sht bo‘lgan yurakdan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Durroj hikoyatida voqealar tartibi qanday kechdi?",
+   "options": [
+    "A) Yolg‘on faryod, tuzoqqa tushish, yordamsiz xalok",
+    "B) Sherga yordam, tuzoqni buzish, erkinlik",
+    "C) Tuzoqqa tushish, sher kelishi, qutulish",
+    "D) Ovchidan qochish, sher bilan urushish"
+   ],
+   "answer": "A) Yolg‘on faryod, tuzoqqa tushish, yordamsiz xalok"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Maqolatlarda ilgari surilgan fazilatlar guruhi qaysi?",
+   "options": [
+    "A) Saxovat, adab, qanoat, vafo",
+    "B) Kibr, baxillik, g‘azab, yolg‘on",
+    "C) Dangasalik, nodonlik, ayyorlik, kibr",
+    "D) Zulum, isrof, xiyonat, riyo"
+   ],
+   "answer": "A) Saxovat, adab, qanoat, vafo"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega sher durroj rostakamiga tuzoqqa tushganda kelmadi?",
+   "options": [
+    "A) Ilgari ko‘p yolg‘on gapirgani sababli",
+    "B) Sher uxlab qolgani sababli",
+    "C) Sher uzoq safarga ketgani sababli",
+    "D) Sher ovchidan qo‘rqqani sababli"
+   ],
+   "answer": "A) Ilgari ko‘p yolg‘on gapirgani sababli"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "«Odami ersang demagil odami...» misrasining ma'nosi nima?",
+   "options": [
+    "A) Xalq g‘amida yashash insonlikdir",
+    "B) Barcha odamlar bir xil yashaydi",
+    "C) Faqat o‘zini o‘ylash to‘g‘ridir",
+    "D) Odam bo‘lish juda oson ish"
+   ],
+   "answer": "A) Xalq g‘amida yashash insonlikdir"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Durrojning yolg‘onchilik odatini qanday baholash kerak?",
+   "options": [
+    "A) Salbiy, chunki u halokatga yetaklaydi",
+    "B) Ijobiy, chunki u ko‘ngil xushlaydi",
+    "C) To‘g‘ri, chunki do‘stni sinaydi",
+    "D) Oqilona, chunki xavfni kamaytiradi"
+   ],
+   "answer": "A) Salbiy, chunki u halokatga yetaklaydi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Navoiyning «So‘zda, Navoiy, ne desang, chin degil» degan da'vati nimaga o‘rgatadi?",
+   "options": [
+    "A) Har qanday holatda rostgo‘y bo‘lishga",
+    "B) Kam gapirib, ko‘p uxlashga",
+    "C) Chiroyli va baland gapirishga",
+    "D) Shoirlik san'atini maqtashga"
+   ],
+   "answer": "A) Har qanday holatda rostgo‘y bo‘lishga"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Iskandar o‘layotib na'shidan nimani chiqarishni vasiyat qildi?",
+   "options": [
+    "A) Bir qo‘lini",
+    "B) Ikkala oyog‘ini",
+    "C) Olmos uzuklarini",
+    "D) Toju taxtini"
+   ],
+   "answer": "A) Bir qo‘lini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shohning boshiga issiq oshni to‘kib yuborgan kim edi?",
+   "options": [
+    "A) Xizmatkor qul",
+    "B) Vazirning o‘g‘li",
+    "C) Chet ellik elchi",
+    "D) Saroy oshpazi"
+   ],
+   "answer": "A) Xizmatkor qul"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saxiylik qilgan shoh aybdor qulga qanday munosabat bildirdi?",
+   "options": [
+    "A) Uni afv etib ozod qildi",
+    "B) Uni zindonga tashlashni buyurdi",
+    "C) Saroydan haydab chiqardi",
+    "D) Unga jazo tariqasida jarima soldi"
+   ],
+   "answer": "A) Uni afv etib ozod qildi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alisher Navoiy dostonni qaysi hijriy yilda yakunlaganini aytadi?",
+   "options": [
+    "A) Sekiz yuz seksan sekiz (888)",
+    "B) Yetti yuz yetmish yetti (777)",
+    "C) To‘qqiz yuz to‘qqiz (909)",
+    "D) Boshqa yilda"
+   ],
+   "answer": "A) Sekiz yuz seksan sekiz (888)"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Iskandar nima uchun qo‘lini tobutdan chiqarib qo‘yishni so‘radi?",
+   "options": [
+    "A) Dunyodan bo‘sh ketganini ko‘rishsin deb",
+    "B) O‘zining kuchli qo‘llarini ko‘rsatish uchun",
+    "C) Odamlar bilan xayrlashish uchun",
+    "D) Tillarini duoga ochish uchun"
+   ],
+   "answer": "A) Dunyodan bo‘sh ketganini ko‘rishsin deb"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoh nima uchun xato qilgan qulni o‘ldirmasdan kechirdi?",
+   "options": [
+    "A) Qul xijolatdan o‘lib bo‘lgani uchun",
+    "B) Shoh oshni yoqtirmagani uchun",
+    "C) Vazir shunday qil degangani uchun",
+    "D) Qul shohga qarindosh bo‘lgani uchun"
+   ],
+   "answer": "A) Qul xijolatdan o‘lib bo‘lgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Saxiylik qilgan shohning qulni ozod etishini qanday baholaysiz?",
+   "options": [
+    "A) Haqiqiy olijanoblik va buyuk afv",
+    "B) Hukmdorga munosib bo‘lmagan zaiflik",
+    "C) Noto‘g‘ri va xatoga yo‘l qo‘yish",
+    "D) Quldan qo‘rqish oqibati"
+   ],
+   "answer": "A) Haqiqiy olijanoblik va buyuk afv"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Iskandar hikoyatidan olinadigan eng muhim xulosa nima?",
+   "options": [
+    "A) Dunyo mol-dunyosi o‘tkinchidir",
+    "B) Yetti iqlimni bosib olish shart",
+    "C) O‘limdan qutulishning yo‘li bor",
+    "D) Hukmdor doim shafqatsiz bo‘lishi kerak"
+   ],
+   "answer": "A) Dunyo mol-dunyosi o‘tkinchidir"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Navoiyning asar oxiridagi kamtarona afv so‘rashidan nima seziladi?",
+   "options": [
+    "A) Shoirning yuksak hokisorligi va odobi",
+    "B) O‘z dostonidan qoniqmaganligi",
+    "C) Shoirlik tajribasi yo‘qligi",
+    "D) Kitobxonlardan qo‘rqishi"
+   ],
+   "answer": "A) Shoirning yuksak hokisorligi va odobi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Hayrat ul-abror» nomi o‘quvchida qanday tushuncha uyg‘otadi?",
+   "options": [
+    "A) Yaxshi kishilarning ma'rifatdan hayratlanishi",
+    "B) Qahramonlarning qo‘rquv va sarosimasi",
+    "C) Urush va janglarning dahshati",
+    "D) Dunyo go‘zalligidan hayratda qolish"
+   ],
+   "answer": "A) Yaxshi kishilarning ma'rifatdan hayratlanishi"
+  }
+ ]
+}

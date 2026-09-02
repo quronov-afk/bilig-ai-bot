@@ -1304,6 +1304,14 @@ document.addEventListener("click", async function (e) {
         }
         break;
       case "open-generate-test": openGenerateTestModal(Number(el.dataset.id)); break;
+      case "open-book-test-edit": await BookTest.open(Number(el.dataset.id)); break;
+      case "btest-add": BookTest.editQ(null); break;
+      case "btest-edit": BookTest.editQ(Number(el.dataset.i)); break;
+      case "btest-del": BookTest.del(Number(el.dataset.i)); break;
+      case "btest-back": BookTest.paint(); break;
+      case "btest-q-save": BookTest.saveQ(); break;
+      case "btest-save": await BookTest.save(); break;
+      case "btest-close": await openBookModal(BookTest.bookId); break;
       case "shot-add": TestShots.add(); break;
       case "shot-del": TestShots.remove(Number(el.dataset.i)); break;
       case "shot-submit": await TestShots.submit(); break;
@@ -1413,6 +1421,7 @@ document.addEventListener("click", async function (e) {
                         State.me && State.me.voice_prefer === "asl");
         break;
       case "open-test": await openTestModal(Number(el.dataset.id), el.dataset.stage); break;
+      case "open-talk-list": await openTalkList(Number(el.dataset.id)); break;
       case "select-test-opt": Test.select(el.dataset.qid, el.dataset.val); break;
       case "submit-test": await Test.submit(Number(el.dataset.book)); break;
 
@@ -2735,6 +2744,92 @@ const TestShots = {
 function openGenerateTestModal(bookId) { TestShots.open(bookId); }
 
 // ==========================================================
+// KITOB TESTINI QO‘LDA TUZISH VA TAHRIRLASH — OTA-ONA
+// ----------------------------------------------------------
+// Guruh musobaqasidagi tahrirchining aynan o‘zi, faqat bu yerda u
+// oyna ichida ishlaydi va natija bitta kitobga saqlanadi. Ota-ona
+// AI tuzgan savollarni tuzatishi ham, noldan o‘zi yozishi ham mumkin.
+// ==========================================================
+const BookTest = {
+  bookId: null,
+  qs: [],
+  idx: null,
+
+  open: async function (bookId) {
+    this.bookId = bookId;
+    this.idx = null;
+    const r = await api("/api/parent/books/" + bookId + "/test");
+    this.qs = (r.questions || []).map(function (q) {
+      return {
+        question: q.question || "", options: (q.options || []).slice(),
+        answer: q.answer || "", part: q.part, category: q.category
+      };
+    });
+    this.paint();
+  },
+
+  paint: function () {
+    const qs = this.qs;
+    let out =
+      '<button class="back-link" style="margin-bottom:10px" data-action="btest-close">' +
+        icon("arrow-left", 17, 2.2) + ' Kitob</button>' +
+      '<div class="notice-ai"><span class="n-ic">' + icon("clipboard-list", 18, 2) + '</span>' +
+      '<span><b>' + (qs.length ? "Test savollari — " + qs.length + " ta" : "Test hali bo‘sh") + '</b>' +
+      (qs.length
+        ? "Har savolni tahrirlashingiz, o‘chirishingiz yoki yangisini qo‘shishingiz mumkin."
+        : "Savollarni o‘zingiz yozasiz. Kamida uchta savol kerak.") +
+      '</span></div>';
+
+    out += '<div class="card">' + (qs.length ? qs.map(function (q, i) {
+      return '<div class="q-row"><span class="q-n">' + (i + 1) + '</span>' +
+        '<div class="q-main"><p class="q-text">' + escapeHtml(q.question || "") + '</p>' +
+        '<p class="q-ans">' + icon("check", 13, 2.4) + ' ' +
+        escapeHtml(q.answer || (q.options || [])[0] || "") + '</p></div>' +
+        '<span class="q-btns">' +
+        '<button class="icon-btn" data-action="btest-edit" data-i="' + i + '" aria-label="Tahrirlash">' + icon("edit", 15, 2.2) + '</button>' +
+        '<button class="icon-btn" data-action="btest-del" data-i="' + i + '" aria-label="O‘chirish">' + icon("x", 15, 2.4) + '</button>' +
+        '</span></div>';
+    }).join("") : '<p class="section-sub" style="margin:0">Hali savol yo‘q.</p>') + '</div>';
+
+    out += '<button class="btn btn-secondary btn-block" data-action="btest-add">+ Savol qo‘shish</button>' +
+      '<button class="btn btn-primary btn-block" style="margin-top:10px" data-action="btest-save">Saqlash</button>' +
+      '<p class="g-note">Savol 12 tadan kam bo‘lsa, farzandingizga bitta yakuniy ' +
+      'test beriladi. Ko‘proq bo‘lsa, test uch bosqichga bo‘linadi.</p>';
+    openModal("Kitob testi", out, "modal-tall");
+  },
+
+  editQ: function (i) {
+    this.idx = i;
+    const q = i === null
+      ? { question: "", options: ["", "", ""], answer: "" }
+      : this.qs[i];
+    openModal(i === null ? "Yangi savol" : "Savolni tahrirlash",
+      '<button class="back-link" style="margin-bottom:10px" data-action="btest-back">' +
+        icon("arrow-left", 17, 2.2) + ' Test savollari</button>' +
+      questionFormHtml(q) +
+      '<button class="btn btn-primary btn-block" data-action="btest-q-save">Saqlash</button>');
+  },
+
+  saveQ: function () {
+    const q = readTaskQuestionModal();
+    if (!q.question || q.options.length < 2) { toast("Savol va kamida ikkita javob kerak"); return; }
+    if (this.idx === null) this.qs.push(q);
+    else this.qs[this.idx] = Object.assign({}, this.qs[this.idx], q);
+    this.paint();
+  },
+
+  del: function (i) { this.qs.splice(i, 1); this.paint(); },
+
+  save: async function () {
+    if (this.qs.length < 3) { toast("Kamida uchta savol kerak"); return; }
+    await api("/api/parent/books/" + this.bookId + "/test",
+      { method: "POST", body: { questions: this.qs } });
+    toast("Test saqlandi");
+    await openBookModal(this.bookId);
+  }
+};
+
+// ==========================================================
 // TAB 2: REJALAR — BOLA
 // ==========================================================
 async function renderChildPlans() {
@@ -2772,6 +2867,26 @@ async function renderChildPlans() {
   html += doneShelfHtml(done);
   document.getElementById("app-main").innerHTML = html;
 }
+
+// Diniy-ma'rifiy kitobning suhbat savollari. Test emas: to‘g‘ri javob
+// yo‘q, ball qo‘yilmaydi. Har savol kitobning AYNAN o‘z parchasiga
+// tayanadi — bola parchani o‘qiydi va o‘z fikrini aytadi.
+async function openTalkList(bookId) {
+  const b = await api("/api/child/book/" + bookId + asChildQuery());
+  const list = b.talk_questions || [];
+  if (!list.length) { toast("Savollar hali tayyor emas"); return; }
+  const body = list.map(function (q, i) {
+    return '<div class="talkq">' +
+      '<p class="talkq-num">' + (i + 1) + '-savol</p>' +
+      '<p class="talkq-ctx">' + escapeHtml(q.context || "") + '</p>' +
+      '<p class="talkq-q">' + escapeHtml(q.question || "") + '</p>' +
+      '</div>';
+  }).join("");
+  openModal("Suhbat savollari",
+    '<p class="section-sub" style="margin-top:-4px">Bu savollarga to‘g‘ri ' +
+    'javob yo‘q. O‘qi, o‘yla va o‘z fikringni ayt.</p>' + body, "modal-tall");
+}
+
 
 async function openBookModal(bookId) {
   const b = await api("/api/child/book/" + bookId + asChildQuery());
@@ -2856,6 +2971,19 @@ async function openBookModal(bookId) {
       stageBtn("mid_test_2", "2-oraliq") +
       stageBtn("final_test", "Yakuniy") +
       '</div>' + hint;
+  } else if (b.no_test && (b.talk_questions || []).length) {
+    // DINIY-MA'RIFIY KITOB (ega qarori, 2026-09-01): test tuzilmaydi —
+    // AI diniy matnni talqin qilishda xato qilishi mumkin. O‘rniga
+    // kitobning AYNAN o‘z parchasiga tayangan ochiq savollar beriladi.
+    // Ular baholanmaydi: bola o‘qiydi va o‘ylaydi.
+    testsHtml = '<p class="eyebrow" style="margin-top:6px">Suhbat savollari</p>' +
+      '<button class="choice-card compact" data-action="open-talk-list" data-id=' +
+      '"' + bookId + '">' +
+      '<span class="cc-ic">' + icon("talk", 18, 2) + '</span>' +
+      '<span class="cc-body"><span class="cc-title">' +
+      b.talk_questions.length + ' ta savol</span>' +
+      '<span class="cc-sub">Kitobdan parcha va o‘ylantiruvchi savol</span></span>' +
+      '</button>';
   } else {
     // Bolaga test qanday paydo bo‘lishini AYTMAYMIZ — aks holda u sahifa
     // rasmini test uchun yig‘adigan bo‘lib qoladi, o‘qish uchun emas.
@@ -3000,9 +3128,10 @@ function openParentBookModal(bookId, b, head) {
   let testLines;
   if (!b.has_test) {
     testLines = statusRow("Bilim testi", false, "", "hali tuzilmagan") +
-      '<p class="section-sub" style="margin:8px 0 0">Testni o‘zingiz ' +
-      'tuzishingiz mumkin (pastdagi tugma), yoki farzandingiz sahifalarni ' +
-      'rasmga olib borgani sari test o‘z-o‘zidan tuziladi.</p>';
+      '<p class="section-sub" style="margin:8px 0 0">Savollarni o‘zingiz ' +
+      'yozishingiz yoki kitob sahifalarini suratga olib AI tuzib berishi ' +
+      'mumkin (pastdagi tugmalar). Farzandingiz sahifalarni rasmga olib ' +
+      'borgani sari test o‘z-o‘zidan ham tuziladi.</p>';
   } else if (b.test_final_only) {
     testLines = statusRow("Yakuniy test", b.final_test_done, "topshirilgan", "kutilmoqda");
   } else {
@@ -3024,8 +3153,16 @@ function openParentBookModal(bookId, b, head) {
 
     baseHtml +
     '<p class="eyebrow" style="margin-top:18px">Siz nima qilishingiz mumkin</p>' +
+    // TARTIB (ega qarori, 2026-09-02): test tayyor bo‘lsa, birinchi tugma —
+    // uni ko‘rish va tahrirlash. Rasmdan qaytadan tuzish undan keyin turadi.
+    // Test hali yo‘q bo‘lsa, tavsiya etilgani (rasmdan tuzish) tepada qoladi.
     (b.has_test
       ? choiceCard({
+          ic: "edit", action: "open-book-test-edit", data: { id: bookId },
+          title: "Testni ko‘rish va tahrirlash",
+          desc: "Tayyor savollarni tuzatasiz, o‘chirasiz yoki yangisini qo‘shasiz."
+        }) +
+        choiceCard({
           ic: "help", tone: "soft", action: "open-generate-test", data: { id: bookId },
           title: "Testni qaytadan tuzish",
           desc: "Savollar mos kelmasa, kitob sahifalarini suratga olib yangisini tuzasiz."
@@ -3034,13 +3171,12 @@ function openParentBookModal(bookId, b, head) {
           ic: "help", action: "open-generate-test", data: { id: bookId }, tag: "Tavsiya",
           title: "Test tuzish",
           desc: "Kitobning 5-10 ta sahifasini suratga oling — AI savollarni o‘zi tuzadi."
+        }) +
+        choiceCard({
+          ic: "edit", tone: "soft", action: "open-book-test-edit", data: { id: bookId },
+          title: "Testni o‘zim tuzaman",
+          desc: "Rasm kerak emas — savol va javoblarni qo‘lda yozib chiqasiz."
         })) +
-    choiceCard({
-      ic: "users", tone: "gold", action: "enter-bolaxona",
-      data: { id: State.selectedChildId, name: childName },
-      title: "Bolaxonaga kirish",
-      desc: escapeHtml(childName) + " nomidan sahifa belgilash yoki ovozli xulosa yuborish."
-    }) +
     choiceCard({
       ic: "trash", tone: "soft", action: "delete-book", data: { id: bookId },
       title: "Kitobni o‘chirish",
@@ -4687,11 +4823,10 @@ function renderTaskQuestions(content, t) {
   content.innerHTML = out;
 }
 
-function openTaskQuestionModal(idx) {
-  const q = idx === null
-    ? { question: "", options: ["", "", ""], answer: "" }
-    : State.taskQuestions[idx];
-  State.taskQIndex = idx;
+// Bitta savolni tahrirlash shakli. Ikki joyda ishlatiladi: guruh
+// musobaqasida va ota-onaning kitob testida — shuning uchun saqlash
+// tugmasi chaqiruvchi tomonidan qo‘shiladi.
+function questionFormHtml(q) {
   const right = (q.options || []).indexOf(q.answer);
   const rightIdx = right < 0 ? 0 : right;
   const opts = (q.options || []).map(function (o, i) {
@@ -4702,13 +4837,21 @@ function openTaskQuestionModal(idx) {
       '<button class="q-del" data-action="task-q-opt-del" data-i="' + i + '" aria-label="O‘chirish">' + icon("x", 13, 2.4) + '</button>' +
       '</div>';
   }).join("");
-  openModal(idx === null ? "Yangi savol" : "Savolni tahrirlash",
-    '<p class="eyebrow">Savol</p>' +
+  return '<p class="eyebrow">Savol</p>' +
     '<textarea id="q-text" class="g-input wide" rows="2" placeholder="Savol matni">' + escapeHtml(q.question || "") + '</textarea>' +
     '<p class="eyebrow" style="margin-top:14px">Javoblar</p>' +
     '<div id="q-opts">' + opts + '</div>' +
     '<button class="btn btn-secondary btn-block" data-action="task-q-opt-add">+ Javob qo‘shish</button>' +
-    '<p class="section-sub" style="margin:10px 0 12px">To‘g‘ri javobni belgilash uchun chapdagi doirani bosing.</p>' +
+    '<p class="section-sub" style="margin:10px 0 12px">To‘g‘ri javobni belgilash uchun chapdagi doirani bosing.</p>';
+}
+
+function openTaskQuestionModal(idx) {
+  const q = idx === null
+    ? { question: "", options: ["", "", ""], answer: "" }
+    : State.taskQuestions[idx];
+  State.taskQIndex = idx;
+  openModal(idx === null ? "Yangi savol" : "Savolni tahrirlash",
+    questionFormHtml(q) +
     '<button class="btn btn-primary btn-block" data-action="task-q-save">Saqlash</button>');
 }
 
@@ -5652,7 +5795,7 @@ const Wizard = {
 // Ya'ni AI chaqirilmaydi — kitob bir zumda qo‘shiladi.
 const Catalog = {
   all: [],          // barcha kitoblar (bir marta yuklanadi)
-  ageKey: "8",      // tanlangan yosh guruhi ("all" — barchasi)
+  ageKey: "9-10",   // tanlangan yosh toifasi ("all" — barchasi)
   query: "",
   // Ikki rejim bor:
   //   "wizard" — kitob qo‘shish sehrgari ichida: bosilgan kitob darrov
@@ -5662,19 +5805,28 @@ const Catalog = {
   //              hamma kitobni shunchaki ko‘rib chiqish mumkin bo‘lsin.
   mode: "wizard",
 
+  // Yosh toifalari — kitobning toifasini AI belgilaydi (2026-09-01 da
+  // «17-19» qo‘shildi). Ko‘rinish kumulyativ: toifa tanlansa, undan
+  // pastdagi kitoblar ham chiqadi — katta bola kichik kitobni ham oladi.
   AGE_TABS: [
-    { key: "3", label: "3-5 yosh" },
-    { key: "6", label: "6-7 yosh" },
-    { key: "8", label: "8-11 yosh" },
-    { key: "12", label: "12+ yosh" },
+    { key: "4-6", label: "4-6" },
+    { key: "7-8", label: "7-8" },
+    { key: "9-10", label: "9-10" },
+    { key: "11-13", label: "11-13" },
+    { key: "14-16", label: "14-16" },
+    { key: "17-19", label: "17-19" },
     { key: "all", label: "Barchasi" }
   ],
 
+  BAND_ORDER: ["4-6", "7-8", "9-10", "11-13", "14-16", "17-19"],
+
   ageKeyFor: function (age) {
-    if (age <= 5) return "3";
-    if (age <= 7) return "6";
-    if (age <= 11) return "8";
-    return "12";
+    if (age <= 6) return "4-6";
+    if (age <= 8) return "7-8";
+    if (age <= 10) return "9-10";
+    if (age <= 13) return "11-13";
+    if (age <= 16) return "14-16";
+    return "17-19";
   },
 
   load: async function () {
@@ -5738,7 +5890,12 @@ const Catalog = {
   filtered: function () {
     const self = this;
     return this.all.filter(function (b) {
-      if (self.ageKey !== "all" && b.age !== self.ageKey) return false;
+      if (self.ageKey !== "all") {
+        // Kumulyativ: tanlangan toifa VA undan pastdagilar ko‘rinadi.
+        const want = self.BAND_ORDER.indexOf(self.ageKey);
+        const has = self.BAND_ORDER.indexOf(b.age);
+        if (has === -1 || has > want) return false;
+      }
       if (!self.query) return true;
       return (b.title + " " + b.author).toLowerCase().indexOf(self.query) !== -1;
     });

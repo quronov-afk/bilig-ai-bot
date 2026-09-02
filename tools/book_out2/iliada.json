@@ -1,0 +1,478 @@
+{
+ "title": "Iliada",
+ "author": "Homer",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "qahramonlik",
+   "urush va tinchlik",
+   "sadoqat",
+   "taqdir",
+   "or-nomus"
+  ],
+  "theme": "Urushning insoniyatga keltiradigan behisob kulfatlarini hamda qahramonlik, or-nomus va insonparvarlikning yuksak qadrini ko‘rsatish.",
+  "summary": "Troya urushi Sparta malikasi Yelenaning Troya shahzodasi Paris tomonidan olib qochilishi bilan boshlanadi. Menelay va uning akasi Agamemnon boshchiligidagi yunon qo‘shini Troyani o‘n yil davomida qamal qiladi. Doston urushning o‘ninchi yilidagi voqealarni va Axillesning g‘azabini tasvirlaydi. Agamemnon Axillesning asirasi Briseidani tortib olgani uchun Axilles jang qilishdan bosh tortadi. Yunonlar og‘ir ahvolda qoladi, troyaliklar ularni kemalarigacha quvib boradi. Axillesning qadrdon do‘sti Patrokl Axillesning sovutini kiyib jangga kiradi va Troya qahramoni Hektor tomonidan o‘ldiriladi. Do‘stining o‘limidan g‘azablangan Axilles jangga qaytadi, troyaliklar qo‘shinini tor-mor etadi va Hektorni yakkama-yakka jangda o‘ldiradi. Axilles Hektorning murdasini ma'lum vaqt tahqirlaydi, ammo Hektorning otasi — Troya shohi Priam tun yarmida uning chodiriga yolborib kelganida, Axillesning rahmi kelib, murdasini otasiga topshiradi. Hektorning dafn marosimi bilan doston yakunlanadi, so‘ngra yunonlar yog‘och ot hiylasi bilan Troyani zabt etadilar.",
+  "characters": "Axilles — mirmidonlar sardori, tengsiz yunon pahlavoni; Hektor — Troya shahzodasi, shahrining bosh himoyachisi; Agamemnon — yunon qo‘shinining oliy qo‘mondoni; Paris — Yelenani olib qochgan Troya shahzodasi; Menelay — Sparta shohi, Yelenaning eri; Priam — Troya shohi, Hektor va Parisning otasi; Patrokl — Axillesning eng yaqin do‘sti; Yelena — Menelayning xotini, sohibjamol ayol.",
+  "conclusion": "Kitob kitobxonga vafo, or-nomus va mardlik kabi insoniy fazilatlarni o‘rgatadi. Urush va adovat faqat kulfat keltirishini, hatto dushmanga ham insoniy shafqat va hurmat ko‘rsatish lozimligini anglatadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tarixiy afsonalar, qadimiy sarguzashtlar va qahramonlik dostonlariga qiziqadigan o‘smirlar uchun.",
+  "events": [
+   "1. Paris ma'budalar o‘rtasidagi bahsda oltin olmani Afroditaga beradi.",
+   "2. Paris Spartadan sohibjamol Yelenani va xazinalarni o‘g‘irlab Troyaga qochadi.",
+   "3. Menelay va Agamemnon yunon qabilalarini to‘plab Troyaga qarshi yurish boshlaydi.",
+   "4. Yunonlar Troyani o‘n yil davomida qamal qiladilar.",
+   "5. Agamemnon Axillesning asirasi Briseidani tortib oladi.",
+   "6. Axilles haqoratlanib, jangda qatnashishdan bosh tortadi.",
+   "7. Troyaliklar Hektor boshchiligida yunonlarni kemalari tomon surib boradi.",
+   "8. Patrokl Axillesdan uning sovutini so‘rab oladi va jangga kiradi.",
+   "9. Hektor yakkama-yakka jangda Patroklni o‘ldiradi.",
+   "10. Do‘stining o‘limini eshitgan Axilles chuqur qayg‘u va g‘azabga tushadi.",
+   "11. Ma'bud Fetida o‘g‘li Axilles uchun Hefestdan yangi sovut yasatib keladi.",
+   "12. Axilles Agamemnon bilan yarashib, jangga qaytadi.",
+   "13. Axilles troyaliklarni quvib, Troya devorlari oldiga yetib keladi.",
+   "14. Axilles va Hektor Troya devori ostida yakkama-yakka olishadilar.",
+   "15. Axilles Hektorni o‘ldiradi va uning murdasini g‘ildirakka bog‘lab sudragancha chodiriga olib ketadi.",
+   "16. Shoh Priam xudolar yordamida tunda xufiyona Axillesning chodiriga kirib boradi.",
+   "17. Priam Axillesning oyog‘iga yiqilib, o‘g‘lining murdasini qaytarishni so‘raydi.",
+   "18. Axillesning rahmi kelib, Hektorning murdasini otasiga topshiradi.",
+   "19. Troyada Hektor uchun dafn marosimi o‘tkaziladi.",
+   "20. Yunonlar mahobatli yog‘och ot yasab, uning ichiga jangchilarni yashiradilar.",
+   "21. Troyaliklar otni shahar ichiga olib kiradilar va kechasi shahar g‘orat qilinadi."
+  ],
+  "quotes": [
+   "Vatan uchun mardona jang qilmoqlikdir – eng zo‘r alomat!",
+   "Axloqiy pozitsiyaning bunday mustahkamligi, hayotbaxshligi, ezgulik va halollikka, jahoniy uyg‘unlik va mangu go‘zallikka intilish – bu dostonlarning umrboqiyligini ta’min etgan.",
+   "Vaholanki, u-la birga halok bo‘lgay Priam ham, butun xalqi ham...",
+   "O‘pmoqdaman farzandlarim qotilining qonli qo‘lini!",
+   "Yuragingga solgan g‘azab eng bema'ni qaysarlik erur!",
+   "Jang yong‘indek avj olardi; ko‘rgan kimsa, samoda oy va Quyosh ko‘rgan bo‘lsa kerak talafot, deb aytgan bo‘lardi..."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yelena dastlab kimning xotini edi?",
+   "options": [
+    "A) Menelayning",
+    "B) Parisning",
+    "C) Agamemnonning",
+    "D) Hektorning"
+   ],
+   "answer": "A) Menelayning"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Paris oltin olmani qaysi ma'budaga berdi?",
+   "options": [
+    "A) Afroditaga",
+    "B) Heraga",
+    "C) Afinaga",
+    "D) Artemisga"
+   ],
+   "answer": "A) Afroditaga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Paris Troyaga kimni olib qochdi?",
+   "options": [
+    "A) Menelayning xotini Yelenani",
+    "B) Priamning xotini Hekubani",
+    "C) Nestorning qizi Penelepani",
+    "D) Agamemnonning qizi Ifigeniyani"
+   ],
+   "answer": "A) Menelayning xotini Yelenani"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Agamemnon Axillesdan kimni tortib oldi?",
+   "options": [
+    "A) Briseidani",
+    "B) Yelenani",
+    "C) Kassandrani",
+    "D) Hekubani"
+   ],
+   "answer": "A) Briseidani"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Urush kelib chiqishidagi voqealar ketma-ketligi qaysi?",
+   "options": [
+    "A) Olma topshirilishi, o‘g‘rilik, qamal",
+    "B) Qamal, olma topshirilishi, o‘g‘rilik",
+    "C) O‘g‘rilik, qamal, olma topshirilishi",
+    "D) Qamal, o‘g‘rilik, olma topshirilishi"
+   ],
+   "answer": "A) Olma topshirilishi, o‘g‘rilik, qamal"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tindar nechun kuyovlarga qasam ichdirdi?",
+   "options": [
+    "A) Nifoq va urushning oldini olishga",
+    "B) O‘zi podsho bo‘lib qolishga",
+    "C) Parisni jazolash uchun",
+    "D) Odisseyga yordam berish uchun"
+   ],
+   "answer": "A) Nifoq va urushning oldini olishga"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Axilles nega jang qilishdan bosh tortdi?",
+   "options": [
+    "A) Agamemnon uni tahqirlagani uchun",
+    "B) Hektordan qo‘rqgani uchun",
+    "C) Troyaga rahm qilgani uchun",
+    "D) Kemasi buzilgani uchun"
+   ],
+   "answer": "A) Agamemnon uni tahqirlagani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Agamemnonning Axilles bilan urushib qolishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, qo‘shiniga zarar yetkazdi",
+    "B) To‘g‘ri, u podsho edi",
+    "C) To‘g‘ri, Axilles aybdor edi",
+    "D) Farqi yo‘q, baribir bo‘lardi"
+   ],
+   "answer": "A) Noto‘g‘ri, qo‘shiniga zarar yetkazdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Parisning o‘zganing xotinini olib qochishi qanday harakat?",
+   "options": [
+    "A) Xiyonat va mas'uliyatsizlik",
+    "B) Mardlik va jasorat",
+    "C) Odil va to‘g‘ri qaror",
+    "D) Oddiy va to‘g‘ri ish"
+   ],
+   "answer": "A) Xiyonat va mas'uliyatsizlik"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif doston boshida urushni qanday tasvirlaydi?",
+   "options": [
+    "A) Kulfat va fojia keltiruvchi",
+    "B) Faqat quvonchli va yengil",
+    "C) Qiziqarli va beziyon o‘yin",
+    "D) Oson va tez tugaydigan"
+   ],
+   "answer": "A) Kulfat va fojia keltiruvchi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Patrokl kimning sovutini kiyib jangga kirdi?",
+   "options": [
+    "A) Axillesning sovutini",
+    "B) Agamemnonning sovutini",
+    "C) Hektorning sovutini",
+    "D) Menelayning sovutini"
+   ],
+   "answer": "A) Axillesning sovutini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Patroklni yakkama-yakka jangda kim o‘ldirdi?",
+   "options": [
+    "A) Hektor",
+    "B) Paris",
+    "C) Eney",
+    "D) Priam"
+   ],
+   "answer": "A) Hektor"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Axilles uchun yangi sovutni kim yasab berdi?",
+   "options": [
+    "A) Hefest",
+    "B) Zevs",
+    "C) Apollon",
+    "D) Poseydon"
+   ],
+   "answer": "A) Hefest"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Troya shahrining bosh himoyachisi kim edi?",
+   "options": [
+    "A) Hektor",
+    "B) Paris",
+    "C) Priam",
+    "D) Agenor"
+   ],
+   "answer": "A) Hektor"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Patrokl halok bo‘lgach, Axilles nima qildi?",
+   "options": [
+    "A) Qayg‘urdi va yangi sovut oldi",
+    "B) Qochib ketdi va yashirindi",
+    "C) Hektor bilan do‘stlashdi",
+    "D) Agamemnonni o‘ldirdi"
+   ],
+   "answer": "A) Qayg‘urdi va yangi sovut oldi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qaysi juftlik to‘g‘ri ajratilgan?",
+   "options": [
+    "A) Axilles-yunon, Hektor-troyalik",
+    "B) Axilles-troyalik, Hektor-yunon",
+    "C) Ikkala qahramon ham troyalik",
+    "D) Ikkala qahramon ham yunon"
+   ],
+   "answer": "A) Axilles-yunon, Hektor-troyalik"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Patrokl nega Axillesning sovutini kiyib jangga kirdi?",
+   "options": [
+    "A) Yunonlarni ruhlantirish uchun",
+    "B) Axillesdan sovutni o‘g‘irlash uchun",
+    "C) Hektordan qochish uchun",
+    "D) O‘z sovuti eskirgani uchun"
+   ],
+   "answer": "A) Yunonlarni ruhlantirish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hektor nega vatanini oxirigacha himoya qildi?",
+   "options": [
+    "A) Burchi va or-nomusi uchun",
+    "B) Shoh bo‘lishni xohlagani uchun",
+    "C) Yelenaga uylanish uchun",
+    "D) Axillesdan qo‘rqgani uchun"
+   ],
+   "answer": "A) Burchi va or-nomusi uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Patroklning xalqi uchun jangga kirishi qanday sifat?",
+   "options": [
+    "A) Fidoyilik va dostona mardlik",
+    "B) Manmanlik va kalaka",
+    "C) Qo‘rqoqlik va xiyonat",
+    "D) Behuda va xato ish"
+   ],
+   "answer": "A) Fidoyilik va dostona mardlik"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Hektorning xotini va farzandi bilan xayrlashuvi nimani ko‘rsatadi?",
+   "options": [
+    "A) Qahramonning insoniy va mehribon qalbini",
+    "B) Uning jangga kirishdan qo‘rqayotganini",
+    "C) Xotiniga g‘azab qilayotganini",
+    "D) Oila unga muhim emasligini"
+   ],
+   "answer": "A) Qahramonning insoniy va mehribon qalbini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Axilles Hektorni qayerda o‘ldirdi?",
+   "options": [
+    "A) Troya devorlari oldida",
+    "B) Daryo ortida",
+    "C) Chodir ichida",
+    "D) Kema bortida"
+   ],
+   "answer": "A) Troya devorlari oldida"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hektorning murdasini so‘rab Axilles chodiriga kim keldi?",
+   "options": [
+    "A) Priam",
+    "B) Paris",
+    "C) Hekuba",
+    "D) Andromaxa"
+   ],
+   "answer": "A) Priam"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Priam Axillesning chodiriga kimning yordamida kirdi?",
+   "options": [
+    "A) Hermesning yordamida",
+    "B) Apollonning yordamida",
+    "C) Hektorning yordamida",
+    "D) Afroditaning yordamida"
+   ],
+   "answer": "A) Hermesning yordamida"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yunonlar Troyaga kirish uchun qanday hiyla ishlatishdi?",
+   "options": [
+    "A) Yog‘och ot yasadilar",
+    "B) Yer ostidan yo‘l kazdilar",
+    "C) Devorni portlatdilar",
+    "D) Dengizni quritdilar"
+   ],
+   "answer": "A) Yog‘och ot yasadilar"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Doston oxiridagi voqealar tartibi qaysi?",
+   "options": [
+    "A) Hektor o‘limi, Priam kelishi, dafn",
+    "B) Priam kelishi, Hektor o‘limi, dafn",
+    "C) Dafn, Hektor o‘limi, Priam kelishi",
+    "D) Priam kelishi, dafn, Hektor o‘limi"
+   ],
+   "answer": "A) Hektor o‘limi, Priam kelishi, dafn"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Axilles nega Priamga Hektorning murdasini qaytarib berdi?",
+   "options": [
+    "A) Cholning dardi va otalik mehri uchun",
+    "B) Priam unga podsholikni bergani uchun",
+    "C) Agamemnon shuni buyurgani uchun",
+    "D) Hektordan qo‘rqgani uchun"
+   ],
+   "answer": "A) Cholning dardi va otalik mehri uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Troyaliklar yog‘och otni nega shahar ichiga olib kirishdi?",
+   "options": [
+    "A) G‘alaba belgisi va sovg‘a deb bilib",
+    "B) Ichida odam borligini bilgani uchun",
+    "C) Yoqib yubormoqchi bo‘lgani uchun",
+    "D) Axilles buyurgani uchun"
+   ],
+   "answer": "A) G‘alaba belgisi va sovg‘a deb bilib"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Priamning dushmanning chodiriga borishi qanday harakat?",
+   "options": [
+    "A) Yuksak otalik mehri va jasorat",
+    "B) Qo‘rqoqlik va ojizlik",
+    "C) Xiyonat va manmanlik",
+    "D) Behuda va ma'nosiz xato"
+   ],
+   "answer": "A) Yuksak otalik mehri va jasorat"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Priam va Axillesning birga yig‘lashi nimani anglatadi?",
+   "options": [
+    "A) Umuminsoniy g‘am va yarashuvni",
+    "B) Ikkisining ham kuchsizligini",
+    "C) Urush hali tugamaganini",
+    "D) Axillesning mag‘lub bo‘lganini"
+   ],
+   "answer": "A) Umuminsoniy g‘am va yarashuvni"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "\"Vatan uchun mardona jang qilmoqlikdir – eng zo‘r alomat!\" iborasida nima ulug‘lanadi?",
+   "options": [
+    "A) Vatanparvarlik va or-nomus",
+    "B) Boylik va mol-dunyo",
+    "C) Mansab va shohlik",
+    "D) Boshqa yurtga qochish"
+   ],
+   "answer": "A) Vatanparvarlik va or-nomus"
+  }
+ ]
+}

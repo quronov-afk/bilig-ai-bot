@@ -1,0 +1,57 @@
+{
+ "title": "Oq so‘yloq",
+ "author": "Jek London",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "tabiat va hayvonot olami",
+   "mehr-muhabbat",
+   "sadoqat",
+   "ezgulik va yovuzlik",
+   "tarbiya va muhit"
+  ],
+  "theme": "Asarning bosh g‘oyasi — shafqatsizlik va adolatsizlik har qanday tirik jonni yovuzga aylantirishi, faqat samimiy mehr-muhabbat, sabr va adolatgina hatto eng yaralangan qalbni ham ezgulikka, sadoqatga qaytara olishidir. Muhit va insoniy munosabatlar mavjudotning tiynatini shakllantiradi.",
+  "summary": "Shimolning qahraton o‘rmonlarida och bo‘rilar to‘dasi izg‘ib yuradi. Shu to‘dada tug‘ilgan Kulrang bo‘ri bolasi tabiatning ayovsiz qonunlarini o‘rganib ulg‘ayadi. Keyinchalik u onasi Kichi bilan hindular qarorgohiga tushib qoladi va Kulrang Qunduz unga Oq So‘yloq deb nom beradi. Hindular orasida u odamlarning qudratiga tan beradi, ammo itlarning ta'qibi va shafqatsiz muhit sababli barchadan nafratlanadigan, ayyor va yovuz bo‘riga aylanadi.\n\nKulrang Qunduz Oq So‘yloqni ichkilik evaziga Xushro‘y Smit degan manfur odamga sotadi. Smit uni zanjirlab qiynaydi va daromad topish uchun shafqatsiz itlar jangiga soladi. Oq So‘yloq shafqatsiz buldog Cheroki bilan jangda o‘lim yoqasiga kelganda, uni oliyjanob muhandis Uidon Skott qutqarib oladi. Skott uni sotib olib, o‘z uyiga olib boradi. Uidon va uning yordamchisi Mett Oq So‘yloqqa cheksiz sabr va mehr ko‘rsatishadi. Yillab ko‘rgan zulmi evaziga dildan o‘zgargan Oq So‘yloq xo‘jayiniga sodiq do‘stga aylanadi.\n\nSkott Oq So‘yloqni o‘zi bilan Kaliforniyadagi Siyerra-Vista hovlisiga olib ketadi. U yerda Oq So‘yloq yangi hayot qoidalariga moslashadi, tovuqlarga tegmaslikni va oilani asrashni o‘rganadi. Qamoqdan qochgan yovuz jinoyatchi Jim Xoll sudyaning uyiga bostirib kirganda, Oq So‘yloq o‘z hayotini xavfga qo‘yib xo‘jayinining oilasini qutqaradi va og‘ir yaralanadi. Shifokorlar va oilaning parvarishi bilan tuzalib, u Kolli bilan bolalagan kuchukchalari davrasida tinch va baxtli hayot kechiradi.",
+  "characters": "Oq So‘yloq — otasi bo‘ri, onasi it bo‘lgan bosh qahramonjonivor; shafqatsiz muhitda yovuzlashgan, ammo mehr ko‘rib sodiq do‘stga aylangan. Uidon Skott — oliyjanob, sabrli va mehribon muhandis; Oq So‘yloqni o‘limdan qutqarib, unga mehr va ikkinchi hayot beradi. Kulrang Qunduz — Oq So‘yloqning birinchi hindu xo‘jayini; adolatli, lekin sovuqqon. Xushro‘y Smit — yovuz, shafqatsiz kimsa; Oq So‘yloqni qiynab, itlar jangida foydalanadi. Kichi — Oq So‘yloqning onasi, qo‘lga o‘rgatilgan yarim bo‘ri, yarim it.",
+  "conclusion": "Asar bola ma'naviyatiga chuqur ta'sir ko‘rsatib, zulm va g‘azab faqat nafrat tug‘dirishini, haqiqiy mehr-muhabbat va adolat esa hatto eng yovuz va yaralangan qalblarni ham tuzatishga qodirligini ko‘rsatadi. Bola ushbu qissadan jonivorlarga va atrofdagilarga g‘amxo‘rlik qilish, sabr-toqat, sadoqat va mas'uliyat kabi oliyjanob fazilatlarni o‘rganadi. Shuningdek, kattalarga va ezgulikka bo‘lgan ishonch har qanday qiyinchilikni yengishga yordam berishini anglaydi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tabiat va jonivorlar haqidagi ta'sirli sarguzashtlarni sevadigan, mehr, adolat va sadoqat qadri haqida fikr yuritishni istaydigan bolalar uchun.",
+  "events": [
+   "1. Shimolning qahraton ayozida Bill va Genri ismli yo‘lovchilar bo‘rilar ta'qibida vafot etgan sherigining tobutini chanada olib borishadi.",
+   "2. Och bo‘rilar to‘dasi yo‘lovchilarning itlarini birma-bir aldab olib qochadi va oxirida Bill bo‘rilarga yem bo‘ladi.",
+   "3. Urg‘ochi bo‘ri Kichi va Birko‘z g‘orda Kulrang bo‘ri bolasini dunyoga keltirishadi.",
+   "4. Bo‘ri bolasi g‘ordan tashqariga chiqib, tabiat qonunlarini hamda ov qilish sir-asrorlarini o‘rganadi.",
+   "5. Kulrang Qunduz boshchiligidagi hindular Kichini va bo‘ri bolasini uchratib, unga Oq So‘yloq deb nom berishadi.",
+   "6. Hindular qarorgohida Oq So‘yloq boshqa itlarning dushmanligi va shafqatsiz muhit sababli yovuz, yolg‘iz jonzotga aylanadi.",
+   "7. Kulrang Qunduz Oq So‘yloqni ichkilik evaziga shafqatsiz Xushro‘y Smitga sotib yuboradi.",
+   "8. Xushro‘y Smit Oq So‘yloqni zanjirlab qiynaydi va uni daromad manbayi sifatida shafqatsiz itlar jangiga soladi.",
+   "9. Buldog Cheroki bilan jangda Oq So‘yloq halok bo‘lish yoqasiga kelganda, oliyjanob muhandis Uidon Skott uni qutqarib oladi.",
+   "10. Uidon Skott va uning yordamchisi Mett Oq So‘yloqning jarohatlarini davolaydi hamda unga samimiy mehr ko‘rsatadi.",
+   "11. Skottning sabri va iliq muomalasi sababli Oq So‘yloqning qalbidagi g‘azab eriydi va u xo‘jayiniga cheksiz sadoqat bag‘ishlaydi.",
+   "12. Oq So‘yloq sobiq xo‘jayini Xushro‘y Smitning tunda uni o‘g‘irlashga qilgan urinishini bartaraf etib, xo‘jayinining mulkini himoya qiladi.",
+   "13. Uidon Skott Oq So‘yloqni o‘zi bilan birga Kaliforniyadagi ota-onasining Siyerra-Vista hovlisiga olib keladi.",
+   "14. Oq So‘yloq yangi muhitda uy hayvonlariga va tovuqlarga tegmaslik qoidalarini o‘zlashtiradi.",
+   "15. Skott otdan yiqilib oyog‘ini sindirganda, Oq So‘yloq birinchi marta hurib oila a'zolariga xabar beradi va xo‘jayinini qutqaradi.",
+   "16. Qamoqdan qochgan va sudyadan o‘ch olmoqchi bo‘lgan vahshiy jinoyatchi Jim Xoll xonadonga bostirib kiradi.",
+   "17. Oq So‘yloq o‘z hayotini xavfga qo‘yib Jim Xollga tashlanadi va uni zararsizlantiradi, lekin o‘zi bir nechta jarohat oladi.",
+   "18. Oila a'zolarining va shifokorlarning katta g‘amxo‘rligi sababli Oq So‘yloq mo‘jizaviy tarzda tuzalib ketadi.",
+   "19. Tuzalgan Oq So‘yloq hovliga chiqib, Kolli va o‘zining jajjigina kuchukchalari bilan baxtli uchrashadi."
+  ],
+  "quotes": [
+   "Oq So‘yloq o‘z ixtiyori bilan, o‘zi xohlab vahshiyona hayot tarzini tanlamagan.",
+   "Odamlar mehribonroq bo‘lishganda, u sadoqatli it bo‘lib o‘sardi.",
+   "Bilgani birgina qonun – zo‘rga itoat et, zaifni ez, xo‘rla!",
+   "Shu muhit ta'sirida uning tiynatidagi shafqatsizlik o‘rnini yumshoqlik egallay boshladi.",
+   "Hayotda yaxshini yomonga aylantirish, yomonni yaxshi inson qilib tarbiyalashdan ming karra osonligini hammamiz bilamiz.",
+   "Barcha illatlarga xotima berish mumkinmi? Yo‘q! Lekin buni ramkaga solish, zulm payini qirqish mumkin. Bu ulug‘ mehr, rahmdillik, shafqat orqali amalga oshiriladi."
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Oq So‘yloq hayotida shafqatsizlikka uchraganida yovuz bo‘lib qolgan edi, lekin Uidon Skottning mehri va sabri uni o‘zgartirdi. Seningcha, insonning atrofdagilarga ko‘rsatadigan mehri va adolati nima uchun muhim? O‘zing hayotingda biror marta mehribonlik ko‘rsatib, kimningdir ko‘nglini ko‘targanmisan?"
+}

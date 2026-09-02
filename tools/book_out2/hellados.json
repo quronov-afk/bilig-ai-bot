@@ -1,0 +1,337 @@
+{
+ "title": "Hellados",
+ "author": "Nodar Dumbadze",
+ "genre": "hikoya",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "do‘stlik",
+   "vatanparvarlik",
+   "vafo",
+   "burch",
+   "shaxsiyat"
+  ],
+  "theme": "O‘z tug‘ilib o‘sgan tuprog‘iga bo‘lgan samimiy muhabbat va sadoqat insondagi eng oliy tuyg‘udir. Vatan — faqat ajdodlar yurti emas, balki insonning qalbi, bolaligi va do‘stlari qolgan mehrli go‘shadir.",
+  "summary": "Tbilisidan Suxumiga xolasi Ninaning uyiga ko‘chib kelgan yetim bola Jamol musiqa muallimi Yelena Navrodskayanikida dars ola boshlaydi. Tasodifan u muallimaning akvariumidagi baliqlarga qora non va pishloq berib, ularni zaharlab qo‘yadi. Jahli chiqqan muallima Jamolni haydaydi va yuziga tarsaki tushiradi. Alamzada Jamol uyiga qaytayotib, Venetsian ko‘chasining bezori sardori, 14 yoshli grek bolasi Yanguli Aleksandridi va uning to‘dasiga duch keladi. Yanguli Jamolning skripkasini tortib olib, uning boshi ustida urib sindiradi. Jamol uning chinasi ostiga musht tushirib ketadi.\n\nErtasiga Yanguli Jamolni ko‘prik ostiga taklif qilib, halol mushtlashuv taklif etadi. Ular mushtlashadi va Yanguli Jamolni yengadi. Ammo keyingi kunlarda Jamolning mag‘rur va mardona tutumi Yangulining unga bo‘lgan hurmatini oshiradi. Mushtlashishlar o‘rnini dahanaki jang va hazil-sutoq so‘kinishlar egallaydi. Kokaning aytishicha, Jamolning onasi vafot etganini bilgan Yanguli boshqa uning onasini so‘kmay qo‘yadi va bolalar o‘rtasida o‘ziga xos do‘stlik, bir-birini tushunish paydo bo‘ladi.\n\nBir kuni Yanguli yuzi mo‘mataloq bo‘lib keladi. Ma'lum bo‘lishicha, otasi Xristo Gretsiyaga (Elladaga) qaytishga qaror qilgan va unga qarshi chiqqan Yangulini kaltaklagan. Yanguli o‘zining haqiqiy Vatani ajdodlar yurti Gretsiya emas, balki u o‘sgan Suxumi, ko‘chasi, daryosi va do‘stlari ekanini aytadi. Jo‘nash kuni u sevimli eshagi Apollonni Jamolga topshiradi. Kechqurun kema jo‘nayotganda Yanguli dengizga sakraydi. Bir kundan so‘ng Kelasuri daryosi bo‘yida uning jasadini topishadi. Jamol ko‘ksiga o‘yilgan \"Hellados\" yozuvidan o‘z do‘sti Yangulini tanib oladi.",
+  "characters": "Jamol — asar roviysi, Tbilisidan kelgan mehrga muhtoj, g‘ururli va mard yetim bola.\nYanguli Aleksandridi — Suxumidagi grek bolasi, Venetsian ko‘chasining bezori, lekin alparvar va oriyatli sardori.\nNina xola — Jamolning mehribon, bir oz jahldor va kuynuvchi xolasi.\nYelena Mixaylovna — Suxumilik qat'iyatli, baliqlarini jonidan ortiq ko‘radigan musiqa muallimi.\nKoka — Jamolning kichik yoshli xolavachchasi, Yangulidan qo‘rqadigan quvroq bola.\nXristo Aleksandridi — Yangulining otasi, mehnatkash, qattiqqo‘l va vataniga qaytishni istagan grek.",
+  "conclusion": "Asar bolaga haqiqiy Vatan inson tug‘ilib o‘sgan, do‘stlar orttirgan va mehr ko‘rgan maskan ekanini uqtiradi. Sadoqat, oriyat va mardlik kabi insoniy fazilatlar har qanday kelishmovchilikdan ustun turishini o‘rgatadi. Bola kitobdan do‘stlikning qadriga yetish va har qanday sharoitda ham o‘zligiga soyasiz qarash sabog‘ini oladi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Vatan, haqiqiy do‘stlik va insoniy qadr-qimmat haqida chuqur o‘yga tolmaydigan, ta'sirchan asarlarni xush ko‘radigan kitobxonlar uchun.",
+  "events": [
+   "Jamol Tbilisidan Suxumiga xolasi Nina nikiga ko‘chib keladi va musiqa darsiga boradi.",
+   "Jamol va xolasi yo‘lda bezori grek bolasi Yangulini uchratishadi.",
+   "Jamol Yelena Mixaylovnaning akvariumidagi baliqlarni bilmasdan zaharlab qo‘yadi.",
+   "Jahli chiqqan Yelena Mixaylovna Jamolni uyidan haydab yuboradi.",
+   "Yanguli Jamolning skripkasini sindirib tashlaydi, Jamol esa uning chinasi ostiga uradi.",
+   "Petya Majaqlangan skripkani Jamolning uyiga olib kelib beradi.",
+   "Yanguli va Jamol ko‘prik ostida halol mushtlashib, Yanguli g‘olib chiqadi.",
+   "Jamolning Nina xolasi Xristo Aleksandridining boshiga qatiq xurmachasini urib sindiradi.",
+   "Yanguli bir qo‘lini bog‘lab Jamol bilan mushtlashmoqchi bo‘ladi, ammo Jamol jang qilishdan bosh tortadi.",
+   "Jamol ertalab Aleksandridilar darvozasi oldiga borib, Yanguliga uchrashuv belgilaydi.",
+   "Ko‘prik tagidagi ikkinchi mushtlashuvda ikkala bola ham jiddiy jarohat oladi va durang bo‘ladi.",
+   "Bolalar mushtlashish o‘rniga har kuni dahanaki jang qilishga kelishib olishadi.",
+   "Jamol Yangulining onasini so‘kgach, Yanguli unga sekin ma'noli so‘zlar bilan javob qaytaradi.",
+   "Koka Jamolning onasi o‘lganini aytgach, Yanguli boshqa Jamolning onasini so‘kmay qo‘yadi.",
+   "Yanguli va Jamol o‘rtasida g‘animlik tugab, o‘zaro hurmat va do‘stlik paydo bo‘ladi.",
+   "Yanguli yuzi mo‘mataloq bo‘lib keladi va otasi Gretsiyaga ketish uchun urganini aytadi.",
+   "Yanguli o‘zining haqiqiy Vatani Suxumi va shu yerdagi do‘stlari ekanini ta'kidlaydi.",
+   "Yanguli Gretsiyaga jo‘nashdan oldin sevimli eshagi Apollonni Jamolga topshiradi.",
+   "Portda \"Poseydon\" kemasi jo‘nayotganda Yanguli dengizga sakrab qochishga urinadi.",
+   "Sohilga chiqarib tashlangan jasad ko‘ksidagi \"Hellados\" yozuvidan Jamol do‘sti Yangulini tanib oladi."
+  ],
+  "quotes": [
+   "Sheni deda vatire, Yanguli!",
+   "Imana su ine prostikasa ineka, Jamol!",
+   "Mening vatanim, mening Elladam bu – Suxumi, ko‘cha, Chalbash...",
+   "Bu – naqsh, Jamol. Vatan – ichkariroqda, naqd yurakning o‘zida!",
+   "Jamol, ego agapo imana su!",
+   "Nina xola... Yanguli qaytib keldi..."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yangulining otasi qaysi milatga mansub edi?",
+   "options": [
+    "A) Grek",
+    "B) Gruzin",
+    "C) Rus",
+    "D) Arman"
+   ],
+   "answer": "A) Grek"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jamol musiqa darsida qaysi asarni chalib berdi?",
+   "options": [
+    "A) Betxovenning Surka asarini",
+    "B) Motsartning simfoniyasini",
+    "C) Baxning kantatasini",
+    "D) Chaykovskiy kuylarini"
+   ],
+   "answer": "A) Betxovenning Surka asarini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jamol akvariumdagi baliqlarga nima bergan edi?",
+   "options": [
+    "A) Qora non va pishloq",
+    "B) Oq non usshoqlari",
+    "C) Maxsus baliq yemi",
+    "D) Qand va pechenye"
+   ],
+   "answer": "A) Qora non va pishloq"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jamolning skripkasi qanday ketma-ketlikda pachoq bo‘ldi?",
+   "options": [
+    "A) Yanguli urib sindirdi, Petya keltirdi",
+    "B) Yelena sindirdi, Xristo olib keldi",
+    "C) Koka sindirdi, Jamol tashlab yubordi",
+    "D) Nina xola g‘ilofdan olib sindirdi"
+   ],
+   "answer": "A) Yanguli urib sindirdi, Petya keltirdi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yelena Mixaylovna nega Jamolning yuziga tarsaki tushirdi?",
+   "options": [
+    "A) Oltin baliqchalari o‘lib qolgani uchun",
+    "B) Skripka mashqini bajarmagani uchun",
+    "C) Darsga kechikib kelgani uchun",
+    "D) Unga nsas xushomad qilgani uchun"
+   ],
+   "answer": "A) Oltin baliqchalari o‘lib qolgani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yanguli Jamolga birinchi bor nega tashlandi?",
+   "options": [
+    "A) Mahallaga yangi kelib bo‘ysunmagani uchun",
+    "B) Uning pulini o‘g‘irlagani uchun",
+    "C) Ko‘prik ustida xaqorat qilgani uchun",
+    "D) Eshagiga tosh otgani uchun"
+   ],
+   "answer": "A) Mahallaga yangi kelib bo‘ysunmagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jamolning skripkasi singach, unga berilgan baho to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, uning azobli darslari tugadi",
+    "B) Noto‘g‘ri, u buyuk musiqachi bo‘lardi",
+    "C) Noto‘g‘ri, skripkani sotish kerak edi",
+    "D) To‘g‘ri, u yangi skripka oldi"
+   ],
+   "answer": "A) To‘g‘ri, uning azobli darslari tugadi"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yangulining ko‘kragiga qanday so‘z yozilgan edi?",
+   "options": [
+    "A) Hellados",
+    "B) Suxumi",
+    "C) Poseydon",
+    "D) Aleksandridi"
+   ],
+   "answer": "A) Hellados"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nina xola Xristoning boshiga nima urib sindirdi?",
+   "options": [
+    "A) Qatiq to‘la xurmachani",
+    "B) Yog‘och skripka g‘ilofini",
+    "C) Katta sopol ko‘zani",
+    "D) Bir dona qizil g‘ishtni"
+   ],
+   "answer": "A) Qatiq to‘la xurmachani"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yanguli mushtlashish oldidan nimani shart qilib qo‘ydi?",
+   "options": [
+    "A) Halol mushtlashish va tosh ishlatmaslikni",
+    "B) Boshqalardan yordam so‘rab turishni",
+    "C) Faqat kaltak bilan urishishni",
+    "D) Mag‘lubning pulini tortib olishni"
+   ],
+   "answer": "A) Halol mushtlashish va tosh ishlatmaslikni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolalar o‘rtasidagi munosabat qanday bosqichda o‘zgardi?",
+   "options": [
+    "A) Mushtlashuvdan so‘kinishga, keyin do‘stlikka o‘tdi",
+    "B) Do‘stlikdan dushmanlikka va urushga o‘tdi",
+    "C) Urushdan e'tiborsizlikka va nafratga o‘tdi",
+    "D) Hazildan boshlanib jiddiy dushmanlikka aylandi"
+   ],
+   "answer": "A) Mushtlashuvdan so‘kinishga, keyin do‘stlikka o‘tdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yanguli nega Jamolning onasini so‘kishdan to‘xtadi?",
+   "options": [
+    "A) Jamolning onasi vafot etganini bilgani uchun",
+    "B) Nina xoladan judayam qo‘rqqani uchun",
+    "C) Boshqa so‘kishni bilmagani uchun",
+    "D) Jamol unga pul bergani uchun"
+   ],
+   "answer": "A) Jamolning onasi vafot etganini bilgani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yanguli bir qo‘lini bog‘lab chiqqanda Jamol nega urishmadi?",
+   "options": [
+    "A) Uning bunday nayrangini mardlik deb bilmadi",
+    "B) Yangulidan qo‘rqib qochib ketgani uchun",
+    "C) Yangulining qo‘li og‘riyotgani uchun",
+    "D) Koka uni urishga qo‘ymagani uchun"
+   ],
+   "answer": "A) Uning bunday nayrangini mardlik deb bilmadi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Yangulining aytgan so‘zlarini nima uchun qo‘shiqqa o‘xshatdi?",
+   "options": [
+    "A) Uning ovozida samimiyat va go‘zallik bor edi",
+    "B) Yanguli haqiqatan baland ovozda kuylagani uchun",
+    "C) Jamol musiqa asboblarini yaxshi ko‘rgani uchun",
+    "D) Boshqa bolalar hushtak chalib turgani uchun"
+   ],
+   "answer": "A) Uning ovozida samimiyat va go‘zallik bor edi"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yangulining sevimli eshagining ismi nima edi?",
+   "options": [
+    "A) Apollon",
+    "B) Poseydon",
+    "C) Surka",
+    "D) Koka"
+   ],
+   "answer": "A) Apollon"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Greklar qaysi kemaga chiqib Gretsiyaga jo‘nab ketishdi?",
+   "options": [
+    "A) Poseydon",
+    "B) Hellados",
+    "C) Suxumi",
+    "D) Tbilisi"
+   ],
+   "answer": "A) Poseydon"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Yanguli Gretsiyaga ketish oldidan nima ishlarni qildi?",
+   "options": [
+    "A) Eshagini Jamolga berib, xayrlashib ketdi",
+    "B) Eshagini sotdi va hamma do‘stlarini to‘pladi",
+    "C) Jamolni uyiga taklif qilib ziyofat berdi",
+    "D) Uyini va sigirini Jamolga sovg‘a qildi"
+   ],
+   "answer": "A) Eshagini Jamolga berib, xayrlashib ketdi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yanguli nega Gretsiyaga ketishni mutlaqo xohlamas edi?",
+   "options": [
+    "A) Suxumini va do‘stlarini chinakam Vatani bilgani uchun",
+    "B) Kemada suzishdan juda qattiq qo‘rqqani uchun",
+    "C) Otasi bilan urishib qolgani uchun",
+    "D) Grek tilini umuman bilmagani uchun"
+   ],
+   "answer": "A) Suxumini va do‘stlarini chinakam Vatani bilgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Yangulining kemadan sakrab qolishini qanday baholash mumkin?",
+   "options": [
+    "A) O‘z Vataniga sadoqati va cheksiz muhabbati",
+    "B) Otasiga jahli chiqib qilgan childish harakati",
+    "C) Suvda yaxshi suzishini ko‘z-ko‘z qilishi",
+    "D) Suxumidagi qizga uylanish istagi"
+   ],
+   "answer": "A) O‘z Vataniga sadoqati va cheksiz muhabbati"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Vatan tuyg‘usini Yanguli tili bilan qanday tasvirlaydi?",
+   "options": [
+    "A) Vatan naqsh emas, yurakning o‘zidadir",
+    "B) Vatan faqat ajdodlar tug‘ilgan yerdir",
+    "C) Vatan inson boylik orttirgan makandir",
+    "D) Vatan paroxodlar suzadigan keng dengizdir"
+   ],
+   "answer": "A) Vatan naqsh emas, yurakning o‘zidadir"
+  }
+ ]
+}

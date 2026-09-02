@@ -1,0 +1,479 @@
+{
+ "title": "Qobusnoma",
+ "author": "Kaykovus",
+ "genre": "didaktik asar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "odob-axloq",
+   "ilm-fan",
+   "tarbiya",
+   "halollik",
+   "davlat boshqaruvi"
+  ],
+  "theme": "Inson hayoti va jamiyatda o‘z o‘rnini topishi uchun zarur bo‘lgan odob-axloq, halollik, ilm va kasb-hunar egallashning ahamiyatini uqtirish hamda adolatli bo‘lishga da'vat etish.",
+  "summary": "«Qobusnoma» — XI asrda Eron hukmdori Kaykovus tomonidan o‘z o‘g‘li Gilonshohga bag‘ishlab yozilgan ensiklopedik pandnoma va didaktik asardir. Muallif o‘zining umr tajribasi va hayotiy xulosalariga tayanib, farzandiga hayotning turli sohalarida to‘g‘ri yo‘l tutish bo‘yicha maslahatlar beradi. Asar Yaratganni tanimoq, payg‘ambarlar xilqati hamda ota-ona va Yaratganga shukronalik keltirish boblari bilan boshlanadi. So‘ngra insoniy fazilatlar, ya'ni hunar va suxandonlikning qadri, qarilik va yigitlik xususiyatlari, ovqatlanish hamda mehmon kutish odoblari atroflicha bayon etiladi. Keyingi qismlarda mol-dunyoni halol yo‘l bilan topish, omonatdorlik, uy-joy va ulov sotib olish mezonlari, oila qurish hamda farzand tarbiyasi masalalari yoritiladi. Shuningdek, turli kasb va soha vakillari — tabiblar, shoirlar, sozandalar, savdogarlar, qozilar, vazirlar va lashkarbashilar amal qilishi lozim bo‘lgan odob va qoidalar keltiriladi. Asar yakunida dehqonchilik, hunarmandchilik hamda eng oliy insoniy fazilat hisoblangan juvonmardlik tushunchalari chuqur tahlil qilinadi va inson har bir holatda qanoatli bo‘lishi lozimligi uqtiriladi.",
+  "characters": "Kaykovus — asar muallifi, tajribali hukmdor va mehribon ota, o‘g‘liga hayotiy nasihatlar beradi. Gilonshoh — Kaykovusning o‘g‘li, nasihatlar qaratilgan asosiy shaxs. Muhammad Rizo Ogahiy — asarni o‘zbek tiliga mahorat bilan tarjima qilgan atoqli adib. Sulton Mahmud G‘aznaviy — asardagi rivoyatlarda adolat va ibrat timsoli sifatida keltirilgan hukmdor. Fath — Dajla daryosida xalos bo‘lib, Xudoning marhamatiga sazovor bo‘lgan yigitcha.",
+  "conclusion": "Bu kitob kitobxonga insoniy va axloqiy qadriyatlarni, kattalarga hurmat va halol mehnatning qadrini o‘rgatadi. Farzandlarda ilm-fan, kasb-hunar egallashga bo‘lgan qiziqishni oshiradi hamda jamiyatda adolatli va sabr-qanoatli bo‘lish ko‘nikmasini shakllantiradi. Ota-onalar uchun esa farzand tarbiyasida beqiyos va bebaho qo‘llanma bo‘lib xizmat qiladi.",
+  "difficulty": "qiyin",
+  "mood": "jiddiy, nasihatomuz, o‘ylantiruvchi",
+  "for_whom": "Hayotda o‘z o‘rnini topishga intilayotgan, odob-axloq, falsafa hamda milliy va umuminsoniy qadriyatlarga qiziqqan o‘smirlar va yoshlar uchun.",
+  "events": [
+   "Kaykovus qarilik yoshiga yetib, farzandi Gilonshohga nasihatnoma yozishga qaror qiladi.",
+   "Ogahiy shahzoda Muhammad Rahimxon topshirig‘i bilan asarni o‘zbek tiliga tarjima qiladi.",
+   "Muallif Yaratganni tanish va Unung ne'matlariga shukr qilish lozimligini uqtiradi.",
+   "Payg‘ambarlarning xaloyiqqa to‘g‘ri yo‘l ko‘rsatuvchi rahnamo ekani bayon qilinadi.",
+   "Ota-onani hurmat qilish va ularning haqini ado etish zarurligi ta'kidlanadi.",
+   "Inson nasl-nasabi bilan emas, balki o‘z hunari va ilmi bilan qadr topishi aytiladi.",
+   "Suxandonlik hamda faqat rost so‘zlash odobi haqida nasihatlar beriladi.",
+   "Dajla daryosida oqib ketgan Fath ismli yigitning mo‘jizaviy tarzdagi xilqati va najot topishi hikoya qilinadi.",
+   "Yigitlik va qarilik xususiyatlari hamda har bir yoshning o‘z tartibi tushuntiriladi.",
+   "Mehmon kutish hamda mehmonbozlik odoblariga rioya qilish qoidalari keltiriladi.",
+   "Mol-mulkni halol yo‘l bilan jamlash va omonatga xiyonat qilmaslik shartlari aytiladi.",
+   "Uy-joy, ulov hamda ot sotib olayotganda e'tibor berish kerak bo‘lgan belgilar sanaladi.",
+   "Oila qurishda begonadin xotin olib, qarindoshlik rishtalarini kengaytirish maslahat beriladi.",
+   "Farzandga yaxshi tarbiya berish va unga kasb-hunar o‘rgatish otaning burchi ekani ta'kidlanadi.",
+   "Qozilik va shariat ilmini egallashda diyonatli va parhezkor bo‘lish uqtiriladi.",
+   "Tijorat va bozorgonlikda halollik, to‘g‘ri tarozi va rostso‘zlik asosiy shart ekani aytiladi.",
+   "Tibbiyot ilmining asoslari hamda inson salomatligini saqlash usullari tushuntiriladi.",
+   "Shoirlik va sozandalik san'atining odoblari hamda badiiy qoidalari yoritiladi.",
+   "Podshohga xizmat qilish, vazirlik va sipohsolarlik shartlari bayon etiladi.",
+   "Dehqonchilik va bozordagi hunarmandchilik ishlarini sidqidildan bajarish uqtiriladi.",
+   "Juvonmardlikning uch ma'nosi: so‘zida turish, rostso‘zlik va yaxshilik qilish ekani xulosa qilinadi.",
+   "Shayx Shibliyning beqanoat va tamagirdan yiroq bo‘lish haqidagi hikoyati keltiriladi."
+  ],
+  "quotes": [
+   "Ulug‘lik aql va bilim biladur; nasl-nasab bila emas.",
+   "Inson vujudining tarkibin aqlu donish zevari bila tuzdi.",
+   "Bu jahon bir ziroatgohdur, har nima eksang, shuni o‘rasan.",
+   "Har ishda mashvarat qil, nedinkim mashvarat qilmoqni ayb bilmag‘il.",
+   "Dononing pand-nasihati ko‘ngil ko‘zin ravshan qilur.",
+   "Juvonmardlik asli uch narsadur: biri ulkim, aytg‘on so‘zingni o‘zing qilsang, ikkinchisi ulkim, rostlikka xilof qilmasang, uchinchisi ulki, xayr ishini ilgari tutsang."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kaykovus nasihatnomani kimga bag‘ishlab yozgan?",
+   "options": [
+    "A) O‘z o‘g‘li Gilonshohga",
+    "B) Sulton Mahmud G‘aznaviyga",
+    "C) Shoir Muhammad Rizo Ogahiyga",
+    "D) Bobosi Shamsulmaoliy Qobusga"
+   ],
+   "answer": "A) O‘z o‘g‘li Gilonshohga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Qobusnoma»ni o‘zbek tiliga kim tarjima qilgan?",
+   "options": [
+    "A) Alisher Navoiy",
+    "B) Muhammad Rizo Ogahiy",
+    "C) Nosiriddin Rabg‘uziy",
+    "D) Muslihiddin Sa'diy"
+   ],
+   "answer": "B) Muhammad Rizo Ogahiy"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qaysi asarlar «Qobusnoma» kabi tarbiyaviy ahamiyatga ega?",
+   "options": [
+    "A) «Kalila va Dimna», «Guliston»",
+    "B) FAQAT she'riy devonlar",
+    "C) Tarixiy jangnoma dostonlari",
+    "D) Shifokorlikka oid ilmiy risolalar"
+   ],
+   "answer": "A) «Kalila va Dimna», «Guliston»"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif fikricha, insoniy ulug‘lik nimaga bog‘liq?",
+   "options": [
+    "A) Nasl-nasab va boylikka",
+    "B) Aql va bilimga",
+    "C) Hukmdorlarning iltifotiga",
+    "D) Yoshning ulug‘ligiga"
+   ],
+   "answer": "B) Aql va bilimga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Fath daryoda oqib ketgach, qayerda saqlanib qoldi?",
+   "options": [
+    "A) Qirg‘oqdagi g‘or o‘ngurida",
+    "B) Kemachilarning katta qayig‘ida",
+    "C) Daryodagi kichik orolda",
+    "D) Dehqonning somonxona kulbasida"
+   ],
+   "answer": "A) Qirg‘oqdagi g‘or o‘ngurida"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun oqil kishi boshqalar bilan mashvarat qiladi?",
+   "options": [
+    "A) Birovlarning g‘oyasini o‘zlashtirish uchun",
+    "B) Bir kishi ra'yi ojiz bo‘lgani uchun",
+    "C) Vaqtni cho‘zish va kechiktirish uchun",
+    "D) Mas'uliyatdan o‘zini olib qochish uchun"
+   ],
+   "answer": "B) Bir kishi ra'yi ojiz bo‘lgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun nodonlarcha otaning kimligini ko‘z-ko‘z qilmaslik kerak?",
+   "options": [
+    "A) Inson o‘z hunari bilan tanilishi lozim",
+    "B) Otaning obro‘si doim pasayadi",
+    "C) Jamiyatda otaning roli yo‘q",
+    "D) Nasl-nasab odamni barbod qiladi"
+   ],
+   "answer": "A) Inson o‘z hunari bilan tanilishi lozim"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Rostgo‘ylik qoidasiga ko‘ra, qanday rostni aytish nomaqbul?",
+   "options": [
+    "A) Yolg‘onga o‘xshagan rostni",
+    "B) Faqirga aytilgan rostni",
+    "C) Kattalarga aytilgan rostni",
+    "D) Kitobdan o‘qilgan rostni"
+   ],
+   "answer": "A) Yolg‘onga o‘xshagan rostni"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif adolatli podshohni nimaga o‘xshatib tasvirlaydi?",
+   "options": [
+    "A) Nurlarini teng sochuvchi quyoshga",
+    "B) Qorong‘i tunda yongan chiroqqa",
+    "C) Meva beradigan ulug‘ daraxtga",
+    "D) Toza suvli oqar daryoga"
+   ],
+   "answer": "A) Nurlarini teng sochuvchi quyoshga"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «dunyo bir ziroatgohdur» degan ibora bilan nimani anglatadi?",
+   "options": [
+    "A) Nima eksang, shuni o‘rasan",
+    "B) Barcha dehqonchilik qilish shart",
+    "C) Yerdan unumli foydalanish kerak",
+    "D) Dunyoda faqat ekin ekiladi"
+   ],
+   "answer": "A) Nima eksang, shuni o‘rasan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Inson yigitlik va qarilikda qanday yo‘l tutishi kerak?",
+   "options": [
+    "A) Qarilikda mutamakkin bo‘lib o‘tirishi kerak",
+    "B) Qarilikda ko‘proq safar qilishi kerak",
+    "C) Yigitlikda faqat dam olishi kerak",
+    "D) Ikkala yoshda ham doim kezishi kerak"
+   ],
+   "answer": "A) Qarilikda mutamakkin bo‘lib o‘tirishi kerak"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nasr ibn Muqlaning uyida qaysi oyda mehmon bo‘ldi?",
+   "options": [
+    "A) Ramazon oyida",
+    "B) Muharram oyida",
+    "C) Rajab oyida",
+    "D) Sha'bon oyida"
+   ],
+   "answer": "A) Ramazon oyida"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dushmanlik va do‘stlik munosabatlarida muallif qanday o‘zgarishni ta'kidlaydi?",
+   "options": [
+    "A) Do‘stlik dushmanlikka, dushmanlik do‘stlikka aylanishi mumkin",
+    "B) Dushman hech qachon do‘st bo‘lmaydi",
+    "C) Do‘st har doim sobiq dushmandir",
+    "D) Munosabatlar hech qachon o‘zgarmaydi"
+   ],
+   "answer": "A) Do‘stlik dushmanlikka, dushmanlik do‘stlikka aylanishi mumkin"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mulk va molni saqlash bo‘yicha muallif qanday nasihat beradi?",
+   "options": [
+    "A) Saqlamoq yig‘ishdan ko‘ra mushkuldur",
+    "B) Yig‘ish saqlashdan ko‘ra mushkuldur",
+    "C) Molni doim birovga topshirish kerak",
+    "D) Mol-mulkni tezda sarflash kerak"
+   ],
+   "answer": "A) Saqlamoq yig‘ishdan ko‘ra mushkuldur"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Harbiy ishga layoqatli qulning qanday belgisi bor?",
+   "options": [
+    "A) Mustahkam suyakli va chidamli",
+    "B) Yumshoq kaftli va ozg‘in",
+    "C) Zaif ovozli va bukchaygan",
+    "D) Sergo‘sht yuzli va sekin"
+   ],
+   "answer": "A) Mustahkam suyakli va chidamli"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun qiz farzandni begonaga erga berish kerak?",
+   "options": [
+    "A) Qarindoshlik rishtalari va quvvatni ko‘paytirish uchun",
+    "B) Qizdan tezroq qutulish uchun",
+    "C) Qarindoshlar bilan urushmaslik uchun",
+    "D) Begona yurtga ko‘chib ketish uchun"
+   ],
+   "answer": "A) Qarindoshlik rishtalari va quvvatni ko‘paytirish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sulton Mahmud nima uchun Sayyida xotinning mulkiga hujum qilmadi?",
+   "options": [
+    "A) Xotin kishiga g‘olib kelish sharaf keltirmasligi uchun",
+    "B) Sayyidaning qo‘shunidan qo‘rqqani uchun",
+    "C) O‘z qo‘shinining soni kamligi uchun",
+    "D) Uzoq yo‘lga chiqishni xohlamagani uchun"
+   ],
+   "answer": "A) Xotin kishiga g‘olib kelish sharaf keltirmasligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Favqulodda vaziyatlarda pesha va hunar egallashning qanday foydasi bor?",
+   "options": [
+    "A) Qiyin ahvolda insonni muhtojlikdan qutqaradi",
+    "B) Insonni kibrli va mag‘rur qiladi",
+    "C) Faqat davlat amaldorlariga xizmat qiladi",
+    "D) Hech qanday amaliy foydasi yo‘q"
+   ],
+   "answer": "A) Qiyin ahvolda insonni muhtojlikdan qutqaradi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif behuda va bevaqt kulguning sababini nimaga bog‘laydi?",
+   "options": [
+    "A) G‘am va kibr vaqtida voqe bo‘lishiga",
+    "B) O‘ta xursandchilik va shodlikka",
+    "C) Atrofdagilarning hazil-mutoyibasiga",
+    "D) Yaxshi taom va ichimlikka"
+   ],
+   "answer": "A) G‘am va kibr vaqtida voqe bo‘lishiga"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif diram (pul)ning umrini nimaga o‘xshatadi?",
+   "options": [
+    "A) Gulning bebaqo umriga",
+    "B) Oqib ketadigan daryo suviga",
+    "C) Osmondagi chaqnab o‘tgan chaqmoqqa",
+    "D) Yonib bitadigan kichik shamga"
+   ],
+   "answer": "A) Gulning bebaqo umriga"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tijoratda bozorgonlik zararining asli nimadan kelib chiqadi?",
+   "options": [
+    "A) Behuda va ortiqcha xarj qilishdan",
+    "B) Naqd pul bilan savdo qilishdan",
+    "C) Molni arzon narxda sotishdan",
+    "D) Xaridorlar soni ko‘payib ketishidan"
+   ],
+   "answer": "A) Behuda va ortiqcha xarj qilishdan"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shoirlikda so‘z va she'r aytishning asosiy qoidasi nima?",
+   "options": [
+    "A) So‘z oson va foydali bo‘lishi",
+    "B) So‘z faqat lof va maqtovdan iborat bo‘lishi",
+    "C) So‘z bag‘oyat mushkul bo‘lishi",
+    "D) She'r faqat bir vaznda yozilishi"
+   ],
+   "answer": "A) So‘z oson va foydali bo‘lishi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Juvonmardlikning uch asosiy shartiga qaysilar kiradi?",
+   "options": [
+    "A) So‘zida turish, rostlik, yaxshilik qilish",
+    "B) Mol yig‘ish, urushish, maqtanish",
+    "C) Safar qilish, kulish, dam olish",
+    "D) Amaldor bo‘lish, buyruq berish, hukmronlik"
+   ],
+   "answer": "A) So‘zida turish, rostlik, yaxshilik qilish"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bag‘dod xalifasi maktubidagi alif, lom, mimning ma'nosini kim tushuntirdi?",
+   "options": [
+    "A) Abu Bakr Qahnoniy",
+    "B) Sulton Mahmud G‘aznaviy",
+    "C) Abu Ali Samjur",
+    "D) Abdujabbor Xo‘joniy"
+   ],
+   "answer": "A) Abu Bakr Qahnoniy"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shayx Shibliy masjidda bolaning itdek hurganini ko‘rib nega yig‘ladi?",
+   "options": [
+    "A) Beqanoatlik va tamagirlik oqibatini ko‘rib",
+    "B) Bolaning qornining ochligiga achinib",
+    "C) Masjid ichida shovqin bo‘lgani uchun",
+    "D) Bolalarning o‘qishni tashlab qo‘ygani uchun"
+   ],
+   "answer": "A) Beqanoatlik va tamagirlik oqibatini ko‘rib"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif ta'riflagan aql turlari qaysilar?",
+   "options": [
+    "A) Tug‘ma aql va kasbiy aql",
+    "B) Dunyoviy aql va harbiy aql",
+    "C) Tijorat aql va siyosiy aql",
+    "D) Kitobiy aql va amaliy aql"
+   ],
+   "answer": "A) Tug‘ma aql va kasbiy aql"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun podshoh amrini xor tutishga yo‘l qo‘ymaslik kerak?",
+   "options": [
+    "A) Farmon xor bo‘lsa, podshoh xor bo‘ladi",
+    "B) Xalq sovg‘a so‘ramay qo‘yishi uchun",
+    "C) Boshqa mamlakatlar urush qilishi uchun",
+    "D) Podshohning boyligi kamayishi uchun"
+   ],
+   "answer": "A) Farmon xor bo‘lsa, podshoh xor bo‘ladi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun donishmand doim o‘zini nodon va ojiz hisoblaydi?",
+   "options": [
+    "A) Bilim ummoni cheksiz bo‘lgani uchun",
+    "B) O‘zini pastga urishni yaxshi ko‘gani uchun",
+    "C) Boshqalardan qo‘rqqani va qochgani uchun",
+    "D) Ilm o‘rganishdan charchagani uchun"
+   ],
+   "answer": "A) Bilim ummoni cheksiz bo‘lgani uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Inson g‘am-anduhdan xali bo‘lishi uchun qaysi sifatga ega bo‘lishi kerak?",
+   "options": [
+    "A) Qanoatli va hasadsiz bo‘lishi",
+    "B) Ko‘p mol va dunyo yig‘ishi",
+    "C) Barcha odamlarga hukm o‘tkazishi",
+    "D) O‘z ota-onasidan uzoqroq yashashi"
+   ],
+   "answer": "A) Qanoatli va hasadsiz bo‘lishi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "«Qobusnoma» asarini o‘qigan inson o‘ziga qanday xulosa chiqaradi?",
+   "options": [
+    "A) Ilm, halollik va adolat bilan yashash zarur",
+    "B) Manmanlik va kibr bilan yashash kerak",
+    "C) Faqat mol-dunyoni ko‘paytirish kerak",
+    "D) Kattalarning nasihatiga quloq solmaslik kerak"
+   ],
+   "answer": "A) Ilm, halollik va adolat bilan yashash zarur"
+  }
+ ]
+}

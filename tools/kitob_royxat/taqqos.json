@@ -1,0 +1,765 @@
+{
+ "10-14 yosh toifasi": [
+  {
+   "n": 1,
+   "t": "Malika Husnobod",
+   "a": "Xalq og‘zaki ijodi",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": "malika-husnobod"
+  },
+  {
+   "n": 2,
+   "t": "Ravshan",
+   "a": "Xalq og‘zaki ijodi",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": "ravshan"
+  },
+  {
+   "n": 3,
+   "t": "Yunus va Misqol pari",
+   "a": "Xalq og‘zaki ijodi",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": "yunus-va-misqol-pari"
+  },
+  {
+   "n": 4,
+   "t": "Xalq bo‘l, elim",
+   "a": "Muhammad Yusuf",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 5,
+   "t": "Bolajon, bolajonim",
+   "a": "Po‘lat Mo‘min",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 6,
+   "t": "Quyosh bola, oy bola",
+   "a": "Qambar Ota",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 7,
+   "t": "Yashasin quyoshli kun",
+   "a": "Rustam Nazar",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 8,
+   "t": "Hirotga sayohat",
+   "a": "Yo‘ldosh Sulaymon",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 9,
+   "t": "Saylanma",
+   "a": "Mirkarim Osim",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": "saylanma"
+  },
+  {
+   "n": 10,
+   "t": "Mo‘ttivoymisan, Mittivoymisan",
+   "a": "Anvar Obidjon",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": "mo-ttivoymisan-mittivoymisan"
+  },
+  {
+   "n": 11,
+   "t": "Qaydalardasan, bolaligim",
+   "a": "Xudoyberdi To‘xtaboyev",
+   "mutbelgi": false,
+   "bizda": [
+    "Qaylardasan, bolaligim",
+    "Xudoyberdi To‘xtaboyev"
+   ],
+   "mutsayt": "qaylardasan-bolaligim"
+  },
+  {
+   "n": 12,
+   "t": "Akramning sarguzashtlari",
+   "a": "Pirimqul Qodirov",
+   "mutbelgi": false,
+   "bizda": [
+    "Akramning sarguzashtlari",
+    "Pirimqul Qodirov"
+   ],
+   "mutsayt": "akramning-sarguzashtlari"
+  },
+  {
+   "n": 13,
+   "t": "Ming bir kitob",
+   "a": "Sharifjon Ahmad",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 14,
+   "t": "O‘tkirjonning o‘nta o‘rdak ukasi",
+   "a": "Qobiljon Shermatov",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 15,
+   "t": "Nabiralarimga maktublar",
+   "a": "Erkin Malik",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 16,
+   "t": "Changalzor iti",
+   "a": "Normurod Norqobilov",
+   "mutbelgi": true,
+   "bizda": [
+    "Changalzor iti",
+    "Normurod Norqobilov"
+   ],
+   "mutsayt": "changalzor-iti"
+  },
+  {
+   "n": 17,
+   "t": "Qaysar bolaning hayoti",
+   "a": "Mirzakalon Ismoiliy",
+   "mutbelgi": true,
+   "bizda": [
+    "Qaysar bolaning hayoti",
+    "Mirzakalon Ismoiliy"
+   ],
+   "mutsayt": "qaysar-bolaning-hayoti"
+  },
+  {
+   "n": 18,
+   "t": "Shum bola",
+   "a": "G‘afur G‘ulom",
+   "mutbelgi": true,
+   "bizda": [
+    "Shum bola",
+    "G‘afur G‘ulom"
+   ],
+   "mutsayt": "shum-bola"
+  },
+  {
+   "n": 19,
+   "t": "Shunaqa bolani qidirib yuribman",
+   "a": "Latif Mahmudov",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": "shunaqa-bolani-qidirib-yuribman"
+  },
+  {
+   "n": 20,
+   "t": "Bolalik xotiralarim",
+   "a": "Oybek",
+   "mutbelgi": false,
+   "bizda": [
+    "Bolalik xotiralarim",
+    "Oybek"
+   ],
+   "mutsayt": "bolalik-xotiralarim"
+  },
+  {
+   "n": 21,
+   "t": "O‘tmishdan ertaklar",
+   "a": "Abdulla Qahhor",
+   "mutbelgi": false,
+   "bizda": [
+    "O‘tmishdan ertaklar",
+    "Abdulla Qahhor"
+   ],
+   "mutsayt": "o-tmishdan-ertaklar"
+  },
+  {
+   "n": 22,
+   "t": "Olamlar kurashi",
+   "a": "Baxtiyor Abdug‘afur",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 23,
+   "t": "Galaktikada bir kun",
+   "a": "Sa’dulla Quronov",
+   "mutbelgi": true,
+   "bizda": [
+    "Galaktikada bir kun 2-kitob",
+    "Saʼdullo Quronov"
+   ],
+   "mutsayt": "galaktikada-bir-kun-1-kitob"
+  },
+  {
+   "n": 24,
+   "t": "Dunyoning ishlari",
+   "a": "O‘tkir Hoshimov",
+   "mutbelgi": true,
+   "bizda": [
+    "Dunyoning ishlari",
+    "O‘tkir Hoshimov"
+   ],
+   "mutsayt": "dunyoning-ishlari"
+  },
+  {
+   "n": 25,
+   "t": "Bir qultum buloq suvi",
+   "a": "Farhod Musajonov",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "bir-qultum-buloq-suvi"
+  },
+  {
+   "n": 26,
+   "t": "Qorxat",
+   "a": "Nosir Fozilov",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": "qorxat"
+  },
+  {
+   "n": 27,
+   "t": "Uch baqaloq",
+   "a": "Yuriy Olesha",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "uch-baqaloq"
+  },
+  {
+   "n": 28,
+   "t": "Oq so‘yloq",
+   "a": "Jek London",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "oq-so-yloq"
+  },
+  {
+   "n": 29,
+   "t": "Nilsning yovvoyi g‘ozlar bilan ajoyib sayohati",
+   "a": "Selma Lagerlyof",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 30,
+   "t": "Hellados",
+   "a": "Nodar Dumbadze",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": "hellados"
+  },
+  {
+   "n": 31,
+   "t": "Imperatorning tug‘ilishi. Boburning bolaligi",
+   "a": "Durbek Qo‘ldoshev",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 32,
+   "t": "Geklberri Finning boshidan kechirganlari",
+   "a": "Mark Tven",
+   "mutbelgi": true,
+   "bizda": [
+    "Tom Soyerning boshidan kechirganlari",
+    "Mark Tven"
+   ],
+   "mutsayt": null
+  },
+  {
+   "n": 33,
+   "t": "Buyuk Akbar va Roja Birbol",
+   "a": "Hind xalq og’zaki ijodi",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 34,
+   "t": "Tolzordan esgan shamol",
+   "a": "Kennet Grehem",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 35,
+   "t": "Yovvoyi yo‘rg‘a",
+   "a": "E.Seton-Tompson",
+   "mutbelgi": true,
+   "bizda": [
+    "Yovvoyi yo‘rg‘a",
+    "Ernest Seton-Tompson"
+   ],
+   "mutsayt": null
+  },
+  {
+   "n": 36,
+   "t": "Bolaligim",
+   "a": "Chingiz Aytmatov",
+   "mutbelgi": true,
+   "bizda": [
+    "Bolaligim",
+    "Chingiz Aytmatov"
+   ],
+   "mutsayt": "bolaligim"
+  },
+  {
+   "n": 37,
+   "t": "Dunyo bo‘ylab sakson kun",
+   "a": "Jyul Vern",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 38,
+   "t": "Qanday xatolar bo‘ladi",
+   "a": "Janni Rodari",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 39,
+   "t": "Mio, bolajonim Mio",
+   "a": "Astrid Lindgren",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 40,
+   "t": "Britannika ensiklopediyasi",
+   "a": "Kristofer Lloyd",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  }
+ ],
+ "15-19 yosh toifasi": [
+  {
+   "n": 1,
+   "t": "Go‘ro‘g‘lining tug‘ilishi",
+   "a": "Xalq og‘zaki ijodi",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": "go-ro-g-lining-tug-ilishi"
+  },
+  {
+   "n": 2,
+   "t": "Shirin bilan Shakar",
+   "a": "Xalq og‘zaki ijodi",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 3,
+   "t": "Kalila va Dimna",
+   "a": "Hind xalq eposi",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "kalila-va-dimna"
+  },
+  {
+   "n": 4,
+   "t": "Qobusnoma",
+   "a": "Kaykovus",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "qobusnoma"
+  },
+  {
+   "n": 5,
+   "t": "Boburnoma",
+   "a": "Zahiriddin Muhammad Bobur",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "boburnoma"
+  },
+  {
+   "n": 6,
+   "t": "Lison ut-tayr",
+   "a": "Alisher Navoiy",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 7,
+   "t": "Mezon uz-zamon",
+   "a": "Is’hoqxon Ibrat",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "mezon-uz-zamon"
+  },
+  {
+   "n": 8,
+   "t": "",
+   "a": "G‘afur G‘ulom",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 9,
+   "t": "",
+   "a": "Oybek",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 10,
+   "t": "Umr manzillari",
+   "a": "Abdulla Oripov",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "umr-manzillari"
+  },
+  {
+   "n": 11,
+   "t": "Zamon qasri",
+   "a": "Sirojiddin Sayyid",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 12,
+   "t": "Qoraqalpoqnoma",
+   "a": "To‘lepbergen Qaipbergenov",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 13,
+   "t": "Muqaddas",
+   "a": "Odil Yoqubov",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "muqaddas"
+  },
+  {
+   "n": 14,
+   "t": "Amir Temur siymosi",
+   "a": "Pirimqul Qodirov",
+   "mutbelgi": false,
+   "bizda": [
+    "Amir Temur",
+    "Qilichsiz g‘alaba. Qobiljon Shermatov"
+   ],
+   "mutsayt": "amir-temur-siymosi"
+  },
+  {
+   "n": 15,
+   "t": "Mungli ko‘zlar",
+   "a": "Xudoyberdi To‘xtaboyev",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "mungli-ko-zlar"
+  },
+  {
+   "n": 16,
+   "t": "Qorako‘z Majnun",
+   "a": "Said Ahmad",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "qorako-z-majnun"
+  },
+  {
+   "n": 17,
+   "t": "Spitamen",
+   "a": "Maqsud Qoriyev",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "spitamen"
+  },
+  {
+   "n": 18,
+   "t": "Yoz yomg‘iri",
+   "a": "O‘lmas Umarbekov",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 19,
+   "t": "Yulduzlar mangu yonadi",
+   "a": "Tog‘ay Murod",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "yulduzlar-mangu-yonadi"
+  },
+  {
+   "n": 20,
+   "t": "Daftar hoshiyasidagi bitiklar",
+   "a": "O‘tkir Hoshimov",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "daftar-hoshiyasidagi-bitiklar"
+  },
+  {
+   "n": 21,
+   "t": "Odamlardan tinglab",
+   "a": "Xayriddin Sulton",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "odamlardan-tinglab-hikoya"
+  },
+  {
+   "n": 22,
+   "t": "Ozodlik",
+   "a": "Shukur Xolmirzayev",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "ozodlik"
+  },
+  {
+   "n": 23,
+   "t": "Og‘abiy",
+   "a": "Kengisboy Karimov",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "og-abiy"
+  },
+  {
+   "n": 24,
+   "t": "Panoh",
+   "a": "Xurshid Do‘stmuhammad",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "panoh"
+  },
+  {
+   "n": 25,
+   "t": "Qoyalar ham yig‘laydi",
+   "a": "Normurod Norqobilov",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "qoyalar-ham-yig-laydi"
+  },
+  {
+   "n": 26,
+   "t": "Boboso‘z izidan",
+   "a": "Eshqobil Shukur",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "boboso-z-izidan"
+  },
+  {
+   "n": 27,
+   "t": "Mezon",
+   "a": "Shomirza Turdimov",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "mezon"
+  },
+  {
+   "n": 28,
+   "t": "Jaziramadagi odamlar",
+   "a": "Luqmon Bo‘rixon",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "jaziramadagi-odamlar"
+  },
+  {
+   "n": 29,
+   "t": "Sho‘rodan qolgan odamlar",
+   "a": "Shoyim Bo‘tayev",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "sho-rodan-qolgan-odamlar"
+  },
+  {
+   "n": 30,
+   "t": "Gudbay, Amerika",
+   "a": "Abduqayum Yo‘ldoshev",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 31,
+   "t": "Ma’suma",
+   "a": "Isajon Sulton",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "masuma"
+  },
+  {
+   "n": 32,
+   "t": "Azal muhri",
+   "a": "Baxtiyor Abdug‘afur",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 33,
+   "t": "Mo‘ysafid Biyobonim",
+   "a": "Shahodat Ulug‘",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 34,
+   "t": "Munavvar Qorining so‘nggi nidosi",
+   "a": "Abbos Said",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 35,
+   "t": "Maqar",
+   "a": "Shuhrat Matkarim",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 36,
+   "t": "Tongotar",
+   "a": "Raxshona Ahmedova",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 37,
+   "t": "Suyumbika",
+   "a": "Risolat Haydarova",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 38,
+   "t": "Mening Dog‘istonim",
+   "a": "Rasul Hamzatov",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": "mening-dog-istonim"
+  },
+  {
+   "n": 39,
+   "t": "Yevgeniya Grande",
+   "a": "Onore de Balzak",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": "yevgeniya-grande"
+  },
+  {
+   "n": 40,
+   "t": "Iqrornoma",
+   "a": "Lev Tolstoy",
+   "mutbelgi": true,
+   "bizda": null,
+   "mutsayt": "iqrornoma"
+  },
+  {
+   "n": 41,
+   "t": "Bu yerda hamma narsa bo‘lishi mumkin",
+   "a": "Jianna Molinari",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 42,
+   "t": "Farengeyt bo‘yicha 451 daraja",
+   "a": "Rey Bredberi",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "farengeyt-bo-yicha-451-daraja"
+  },
+  {
+   "n": 43,
+   "t": "Kambag‘allar",
+   "a": "Dostoyevskiy",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "kambag-allar"
+  },
+  {
+   "n": 44,
+   "t": "Choliqushi",
+   "a": "Rashod Nuri Guntekin",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "choliqushi"
+  },
+  {
+   "n": 45,
+   "t": "Klod Gyo",
+   "a": "Viktor Gyugo",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "klod-gyo"
+  },
+  {
+   "n": 46,
+   "t": "Yulduzlararo sargardon",
+   "a": "Jek London",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 47,
+   "t": "Kon-Tikida safar",
+   "a": "Tur Xeyerdal",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "kon-tikida-safar"
+  },
+  {
+   "n": 48,
+   "t": "Mening hayotim",
+   "a": "Henri Ford",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": "mening-hayotim"
+  },
+  {
+   "n": 49,
+   "t": "Jasorat” to‘plami",
+   "a": "Mualliflar jamoasi",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  },
+  {
+   "n": 50,
+   "t": "Yoshlik” jurnali 2026-yil sonlari",
+   "a": "",
+   "mutbelgi": false,
+   "bizda": null,
+   "mutsayt": null
+  }
+ ]
+}

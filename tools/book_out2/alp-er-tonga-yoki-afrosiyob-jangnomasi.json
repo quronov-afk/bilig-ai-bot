@@ -1,0 +1,481 @@
+{
+ "title": "Alp Er To‘nga yoki Afrosiyob jangnomasi",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "jasorat",
+   "vatanparvarlik",
+   "mardlik",
+   "tarix",
+   "sadoqat"
+  ],
+  "theme": "Asarning bosh g‘oyasi — o‘z xalqi va yurtining birligi, tinchligi yo‘lida kurashgan mard hukmdorning jasoratini ulug‘lash hamda dushmanning makkorligi va xiyonatining fojiali oqibatlarini ko‘rsatib berishdir.",
+  "summary": "Doston qadimgi Turon hukmdori, buyuk xoqon Alp Er To‘nganing (Afrosiyobning) qahramonliklari va fojiali taqdiri haqida hikoya qiladi. Asar Tangri taologa olqish va shukronalik keltirish hamda Alp Er To‘nga va uning uchqur otini ta'riflash bilan boshlanadi. Xoqon o‘z eliga va farzandlariga mehmonni aziz tutish, kamtar bo‘lish, sabr-toqatli va halol yashash bo‘yicha dono nasihatlar beradi. Alp Er To‘nga chaqqon ovchi va tengsiz bahodir bo‘lib, el tinchligini buzgan qabilalarga va chegarani buzgan tangutlarga qarshi shafqatsiz zarbalar beradi, ularni bo‘ysundiradi. Uyg‘urlar, yaboqular hamda boshqa qabilalarni jangga kirib mag‘lub etadi va turkiy xalqlarni o‘z bayrog‘i ostida birlashtiradi. Mamlakatda osoyishtalik o‘rnatilib, Turon eliga bahoriy vaqt, mo‘l-ko‘lchilik keladi. Biroidrok, Eron hukmdori Kayxusrav Alp Er To‘ngani to‘g‘ridan-to‘g‘ri jangda yenga olmasligini bilib, makkorlik yo‘lini tutadi. U Turon xoqonini yarashish va do‘stlik bahonasi bilan shohona ziyofatga taklif etadi. Ziyofatda Kayxusrav va Alp Er To‘nga o‘rtasida Qish va Yoz kabi majoziy tortshuv hamda nutq kechadi. Ziyofat avjida Kayxusrav Alp Er To‘nganing oxirgi qadahiga zahar solib, uni nomardlarcha zaharlaydi. O‘limi yaqinlashganini sezgan xoqon so‘nggi so‘zlarini so‘zlab, sevikli yori Turkon xotunga va xalqiga salom yo‘llaydi. Alp Er To‘nganing vafotidan so‘ng Eron qo‘shini turk askarlarini mag‘lub etadi. Turon elida buyuk motam boshlanadi, xalq va malika ko‘z yosh to‘kib, «Alp Er To‘nga o‘ldimu...» deb marsiya aytadi. Zamon xarob bo‘lib, el tarqoqlikka uchraydi. Yillar o‘tib, asirlikdan ozod bo‘lgan turklar o‘z yurtiga qaytadi, tabiat yana yashnab, elda umid va dono o‘gitlar qayta tiklanadi.",
+  "characters": "Alp Er To‘nga (Afrosiyob) — Turon davlatining mard, adolatli va yengilmas xoqoni. Kayxusrav — Eron shohi, makkor va ayyor dushman. Turkon xotun — Alp Er To‘nganing sevikli rafiqasi. Tabdu va Utar — Ug‘roq qabilasining boshliqlari, va'dasiga vafo qilmagan kishilar.",
+  "conclusion": "Kitob bolaga mardlik, vatanparvarlik va do‘stlikka sadoqat kabi oliyjanob fazilatlarni uqtiradi. Dushmanning har qanday makkorligi va laganbardorligidan ogoh bo‘lishni o‘rgatadi. Ota-ona va kattalarning nasihatlariga amal qilish, mehmondo‘st hamda halol bo‘lish lozimligini uqtiradi. Farzand tariximiz va ajdodlarimizning buyuk merosini faxr bilan o‘rganadi.",
+  "difficulty": "o‘rta",
+  "mood": "shukuhli, fojiali, o‘ylantiruvchi",
+  "for_whom": "Qahramonlik dostonlari, tarixiy voqealar va ajdodlarimiz matonati haqida o‘qishni xush ko‘radigan kitobxonlar uchun.",
+  "events": [
+   "Tangri taologa osmon va koinotni yaratgani uchun olqish aytildi.",
+   "Alp Er To‘nga va uning chaqqon otining sifati ta'riflandi.",
+   "Xoqon o‘z eliga mehmondo‘stlik va kamtarlik haqida nasihat qildi.",
+   "Alp Er To‘nga ovga chiqib, arqar va kiyik tutdi.",
+   "Tabdu va Utar va'dasiga xilof ish tutib, xoqonning molini sotdi.",
+   "Qabila boshliqlari o‘rtasidagi kelishmovchilik urushga sabab bo‘ldi.",
+   "Alp Er To‘nga g‘azablanib, dushman beklarini mag‘lub etdi.",
+   "Xoqon kechalari el osoyishtaligini saqlash uchun chegarani aylandi.",
+   "Tangutlar chegarani buzib kirganida, ularga qarshi zarba berildi.",
+   "Tangut xoni mag‘lub bo‘lib, o‘z aybini tan oldi.",
+   "Yaboqular va basmillarga qarshi yangi harbiy yurish boshlandi.",
+   "Alp Er To‘nga qo‘shiniga adolat va mardlik haqida ko‘rsatma berdi.",
+   "Uyg‘urlarga qarshi jangda dushman qal'alari va butxonalari tor-mor qilindi.",
+   "Turon mamlakatiga bahor kelib, elda mo‘l-ko‘lchilik bo‘ldi.",
+   "Eron shohi Kayxusrav Alp Er To‘ngani tinchlik ziyofatiga taklif etdi.",
+   "Ziyofatda Kayxusrav va Alp Er To‘nga Qish va Yoz obrazida tortishdi.",
+   "Kayxusrav pinhona ravishda xoqonning qadahiga zahar soldi.",
+   "Alp Er To‘nga zaharlanib, makkorlikni kech angladi.",
+   "Xoqon o‘limi oldidan Turkon xotunga so‘nggi so‘zlarini yo‘lladi.",
+   "Alp Er To‘nga vafot etgach, Eron qo‘shini turk askarlariga hujum qildi.",
+   "Turon malikasi va xalqi chuqur g‘amga batib, faryod chekdi.",
+   "Xalq buyuk xoqon xotirasiga «Alp Er To‘nga o‘ldimu» marsiyasini aytdi.",
+   "Alp Er To‘nga o‘lgach, mamlakatda tartibsizlik va inqiroz yuz berdi.",
+   "Yillar o‘tib, asirlikdagi turklar o‘z yurtiga qaytib keldilar.",
+   "Doston aytuvchi qadimiy donolarning o‘gitlarini eslab asarni yakunladi."
+  ],
+  "quotes": [
+   "Tangri ajun turutti, Chig‘ri izi tezgino‘r.",
+   "Kulsa kishi yuzingga, Ko‘rklug yuzin ko‘rungil.",
+   "Alp Er To‘nga o‘ldimu, Esiz ajun qoldimu...",
+   "O‘zlak o‘chin aldimu, Emdi yurak yirtilur.",
+   "Yoz ko‘rkingga ishonma, Suvlar uza tayanma."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alp Er To‘nganing asl ismi nima bo‘lgan?",
+   "options": [
+    "A) Maday",
+    "B) Tabdu",
+    "C) Utar",
+    "D) Buzruj"
+   ],
+   "answer": "A) Maday"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ota nasihatida kishi yuzingga kulsa nima qilish kerak?",
+   "options": [
+    "A) Ko‘rkli bo‘lib ko‘rinish kerak",
+    "B) Yuzingni o‘girib ketish kerak",
+    "C) Indamay orqaga qaytish kerak",
+    "D) Boshqa tomonga qarash kerak"
+   ],
+   "answer": "A) Ko‘rkli bo‘lib ko‘rinish kerak"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dostonda keltirilgan qabilalarni to‘g‘ri ajrating.",
+   "options": [
+    "A) Ug‘roq, Tangut, Uyg‘ur",
+    "B) Eron, Rim, Yunon",
+    "C) Arab, Fors, Xitoy",
+    "D) Misr, Hind, Babil"
+   ],
+   "answer": "A) Ug‘roq, Tangut, Uyg‘ur"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alp Er To‘nga ovda nima bilan kiyik tutardi?",
+   "options": [
+    "A) Tozi it va lochin bilan",
+    "B) Faqat tuzoq va arqon bilan",
+    "C) Katta to‘r va nayza bilan",
+    "D) Ot va og‘ir qilich bilan"
+   ],
+   "answer": "A) Tozi it va lochin bilan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ug‘roq boshliqlari Tabdu va Utar nima qilishdi?",
+   "options": [
+    "A) Do‘stlikka xilof ish tutishdi",
+    "B) Xoqonga sovg‘alar keltirishdi",
+    "C) Yangi shahar qurishdi",
+    "D) Chegarani qo‘riqlab turishdi"
+   ],
+   "answer": "A) Do‘stlikka xilof ish tutishdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Alp Er To‘nga nega kechalari uyqu bilmay yurardi?",
+   "options": [
+    "A) El osoyishtaligini saqlash uchun",
+    "B) Kiyik oviga chiqish uchun",
+    "C) Yulduzlarni tomosha qilish uchun",
+    "D) Otini o‘ynatib chopish uchun"
+   ],
+   "answer": "A) El osoyishtaligini saqlash uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tangutlar dushmanlik qilganda nima uchun qochishga tushdi?",
+   "options": [
+    "A) Xoqon tazyiqidan ayblarini sezib",
+    "B) Otlari charchab qolgani uchun",
+    "C) Yomon ob-havo boshlangani uchun",
+    "D) Qal'aga yashirinish maqsadida"
+   ],
+   "answer": "A) Xoqon tazyiqidan ayblarini sezib"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Alp Er To‘nganing ota nasihatlariga amal qilish to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, ular halollikka o‘rgatadi",
+    "B) Noto‘g‘ri, faqat urushni o‘rgatadi",
+    "C) Keraksiz, zamonga mos kelmaydi",
+    "D) Noto‘g‘ri, unga amal qilmaydilar"
+   ],
+   "answer": "A) To‘g‘ri, ular halollikka o‘rgatadi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif osmonning yaratilishini qanday ta'riflaydi?",
+   "options": [
+    "A) Yashil ko‘k va yulduzlar sochildi",
+    "B) Faqat qorong‘u tun bo‘ldi",
+    "C) Bulutlar osmonni butunlay yopdi",
+    "D) Quyosh umuman ko‘rinmay qoldi"
+   ],
+   "answer": "A) Yashil ko‘k va yulduzlar sochildi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Alp Er To‘nganing jangdagi ketma-ketligini belgilang.",
+   "options": [
+    "A) Ogohlantirdi, jangga kirdi, yengdi",
+    "B) Qochdi, yashirindi, so‘ng keldi",
+    "C) Taslim bo‘ldi, so‘ng kelishdi",
+    "D) Sulh tuzdi, keyin chekindi"
+   ],
+   "answer": "A) Ogohlantirdi, jangga kirdi, yengdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eron shohi Kayxusrav xoqonni qayerga taklif etdi?",
+   "options": [
+    "A) Yarashish ziyofatiga",
+    "B) Ov qilish maydoniga",
+    "C) Chegara bo‘yidagi jangga",
+    "D) Katta savdo bozorigiga"
+   ],
+   "answer": "A) Yarashish ziyofatiga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ziyofatda Kayxusrav va xoqon kimlarga qiyoslandi?",
+   "options": [
+    "A) Qish va Yozga",
+    "B) Olovalarga va Suvlarga",
+    "C) Kecha va Kunduzga",
+    "D) Tog‘ va Daryoga"
+   ],
+   "answer": "A) Qish va Yozga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kayxusrav Alp Er To‘ngaga qanday munosabatda bo‘ldi?",
+   "options": [
+    "A) Bildirmay zahar berdi",
+    "B) Ochiq mardona jang qildi",
+    "C) Unga barcha taxtni berdi",
+    "D) Qal'adan quvib chiqardi"
+   ],
+   "answer": "A) Bildirmay zahar berdi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alp Er To‘nga o‘limi oldidan kimmga xabar yo‘lladi?",
+   "options": [
+    "A) Sevikli xotini Turkon xotunga",
+    "B) Eron shohi Kayxusravga",
+    "C) Qabilaning eng keksa oqsoqoliga",
+    "D) Qo‘shni yurtning hukmdoriga"
+   ],
+   "answer": "A) Sevikli xotini Turkon xotunga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kayxusrav nega ochiq jang qilmay ziyofat uyushtirdi?",
+   "options": [
+    "A) Makkorlik bilan yengmoqchi bo‘ldi",
+    "B) Xoqonni dildan yaxshi ko‘rardi",
+    "C) Jang qilishni bilmas edi",
+    "D) Armiyasi umuman yo‘q edi"
+   ],
+   "answer": "A) Makkorlik bilan yengmoqchi bo‘ldi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Alp Er To‘nga ziyofatni nimaga o‘xshatib afsuslandi?",
+   "options": [
+    "A) Muzni javohir deb bilishga",
+    "B) Suvni sharbat deb o‘ylashga",
+    "C) Tushni o‘ng deb hisoblashga",
+    "D) Toshni oltin deb o‘ylashga"
+   ],
+   "answer": "A) Muzni javohir deb bilishga"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kayxusravning qilgan bu hatti-harakatini qanday baholash mumkin?",
+   "options": [
+    "A) Nomardlik va xiyonat deb",
+    "B) Jasorat va adolat deb",
+    "C) Haqiqiy do‘stlik deb",
+    "D) Katta dono aql deb"
+   ],
+   "answer": "A) Nomardlik va xiyonat deb"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Alp Er To‘nganing dushmanga ishonishi to‘g‘ri edimi?",
+   "options": [
+    "A) Xato edi, dushman makkor chiqli",
+    "B) To‘g‘ri edi, u do‘stlashdi",
+    "C) Juda oqilona qaror edi",
+    "D) Boshqa iloji yo‘q edi"
+   ],
+   "answer": "A) Xato edi, dushman makkor chiqli"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Kayxusravning pinhona xursandchiligi donda qanday tasvirlangan?",
+   "options": [
+    "A) Unga o‘lim zahrin ichirdim",
+    "B) Unga shohlik tojin kiygizdim",
+    "C) U bilan birga raqsga tushdim",
+    "D) Unga do‘stlik qo‘lini uzatdim"
+   ],
+   "answer": "A) Unga o‘lim zahrin ichirdim"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ziyofatdagi voqealar tartibini to‘g‘ri ko‘rsating.",
+   "options": [
+    "A) Taklif, munozara, zaharlanish, vafot",
+    "B) Zaharlanish, taklif, munozara, urush",
+    "C) Urush, taklif, vafot, munozara",
+    "D) Munozara, vafot, taklif, urush"
+   ],
+   "answer": "A) Taklif, munozara, zaharlanish, vafot"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alp Er To‘nga o‘lgach turk askarlari nima bo‘ldi?",
+   "options": [
+    "A) Mag‘lub bo‘lib, asir tushdi",
+    "B) Darhol Eronni bosib oldi",
+    "C) Kayxusravni podshoh qilib sayladi",
+    "D) Barcha qo‘shin tinch berkitildi"
+   ],
+   "answer": "A) Mag‘lub bo‘lib, asir tushdi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xalq va malika xoqon uchun qanday marsiya aytdi?",
+   "options": [
+    "A) Alp Er To‘nga o‘ldimu",
+    "B) Bahor kelib gul ochildi",
+    "C) Urush tugab tinchlik bo‘ldi",
+    "D) Yangi xoqon taxtga o‘tirdi"
+   ],
+   "answer": "A) Alp Er To‘nga o‘ldimu"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alp Er To‘nganing vafotidan so‘ng zamonda nima o‘zgardi?",
+   "options": [
+    "A) Ezgu ishlar va bilimdonlar kamaydi",
+    "B) Mamlakat yanada boyib ketdi",
+    "C) Barcha insonlar baxtli bo‘ldi",
+    "D) Hech qanday o‘zgarish bo‘lmadi"
+   ],
+   "answer": "A) Ezgu ishlar va bilimdonlar kamaydi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Asirga tushgan turklar yillar o‘tib nima qilishdi?",
+   "options": [
+    "A) Ozod bo‘lib yurtiga qaytdi",
+    "B) Mangu Eronda qolib ketdi",
+    "C) Boshqa uzoq o‘lkaga ko‘chdi",
+    "D) Urush qilishni butunlay unutdi"
+   ],
+   "answer": "A) Ozod bo‘lib yurtiga qaytdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Alp Er To‘ngadan so‘ng yurt holatini guruhlang.",
+   "options": [
+    "A) Motam, tarqoqlik, so‘ng tiklanish",
+    "B) Shodlik, boylik, doimiy tinchlik",
+    "C) Urush, g‘alaba, mamlakat kengayishi",
+    "D) Tinchlik, do‘stlik, boylik ortishi"
+   ],
+   "answer": "A) Motam, tarqoqlik, so‘ng tiklanish"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega xalq xoqon o‘limiga yuragi yirtilib yig‘ladi?",
+   "options": [
+    "A) Suyakli, adolatli rahbaridan ayrildi",
+    "B) Eronliklardan rostdan qo‘rqqanidan",
+    "C) Oziq-ovqatsiz qolib ketganidan",
+    "D) Yangi xoqonni tanimagani uchun"
+   ],
+   "answer": "A) Suyakli, adolatli rahbaridan ayrildi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "«Yoz ko‘rkingga ishonma» misrasi nimani anglatadi?",
+   "options": [
+    "A) O‘tkinchi narsalarga havoyilik qilmaslikni",
+    "B) Yozda umuman ishlamaslikni",
+    "C) Faqat qishni yaxshi ko‘rishni",
+    "D) Daryoga yaqin bormaslikni"
+   ],
+   "answer": "A) O‘tkinchi narsalarga havoyilik qilmaslikni"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Xalqning Alp Er To‘ngani unutmay marsiya aytgani nimani ko‘rsatadi?",
+   "options": [
+    "A) Xoqonga bo‘lgan cheksiz hurmatini",
+    "B) Faqat she'r aytishni yoqtirishini",
+    "C) Boshqa qiladigan ishi yo‘qligini",
+    "D) Qo‘rquvdan yig‘lashga majburligini"
+   ],
+   "answer": "A) Xoqonga bo‘lgan cheksiz hurmatini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Marsiyada xoqon o‘limi qanday hayajonli ta'riflangan?",
+   "options": [
+    "A) Emdi yurak yirtilur",
+    "B) Qayg‘ular butunlay yo‘qoldi",
+    "C) Barcha odamlar kulfatdan qutuldi",
+    "D) Tog‘lar o‘rnidan jildi"
+   ],
+   "answer": "A) Emdi yurak yirtilur"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston aytuvchisining so‘nggi baytidagi ma'no nima?",
+   "options": [
+    "A) Donolar o‘giti dilda quvonch bag‘ishlaydi",
+    "B) O‘tmishni eslash keraksiz ishdir",
+    "C) Faqat urush haqida o‘ylash kerak",
+    "D) Kitob o‘qish foydasiz mashg‘ulotdir"
+   ],
+   "answer": "A) Donolar o‘giti dilda quvonch bag‘ishlaydi"
+  }
+ ]
+}

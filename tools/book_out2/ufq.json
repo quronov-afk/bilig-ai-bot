@@ -1,0 +1,476 @@
+{
+ "title": "Ufq",
+ "author": "Said Ahmad",
+ "genre": "roman-trilogiya",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "vatanparvarlik",
+   "mehnat va matonat",
+   "oila va tarbiya",
+   "urush va uning oqibatlari",
+   "sadoqat va xiyonat"
+  ],
+  "theme": "Asar XX asrning mashaqqatli yillarida o‘zbek xalqining mislsiz matonati, mehnatsevarligi, halolligi hamda ota-ona tarbiyasi va el-yurt oldidagi mas'uliyat haqida hayotiy va falsafiy saboq beradi.",
+  "summary": "Trilogiya XX asrning 30-40-yillaridagi O‘zbekiston hayotini, Farg‘ona vodiysidagi o‘zgarishlarni va Ikkinchi jahon urushi davri voqealarini kamolga yetkazadi. Asar markazida og‘ir sinovlarni boshdan kechirgan dehqon Ikromjon va uning oilasi turadi. Ikromjon va Jannat xolaning yagona tirik qolgan o‘g‘li Tursunboy erka va dangasa bo‘lib o‘sadi. Farg‘ona kanali qurilishi boshlanganda butun el bir yoqadan bosh chiqarib, hashar yo‘li bilan ulkan kanalni barpo etadi. Yosh va g‘ayratli yigit Azizxon daryoga sepoya tashlash va kanal qazishda alohida mardlik ko‘rsatib el og‘ziga tushadi. Keyinchalik urush boshlangach, ko‘plab azamatlar frontga jo‘naydi. Azizxon urushda jasorat ko‘rsatib, Sovet Ittifoqi Qahramoni unvoniga sazovor bo‘ladi. Biroq erka o‘sgan Tursunboy frontdan qochib, armiya xaini bo‘lib qishloqqa yashirincha qaytib keladi. Bu hodisa uning ota-onasi uchun eng og‘ir va xorlik keltiruvchi fojiaga aylanadi. Ikromjon o‘g‘lining xiyonatidan el oldida yuzi egilib, chuqur iztirobga tushadi. Jannat xola va Tursunboy hayotdan ko‘z yumadilar. Urushdan keyin el-yurt cho‘llarni o‘zlashtirish, yangi hayot qurish yo‘lida mehnat qilishda davom etadi. Ikromjon hamqishlog‘i Nizomjon va uning oilasiga suyanib yashaydi. Nizomjon va Dildor kabi mehnatkash insonlar barcha qiyinchiliklarni yengib, yangi turmush barpo etadilar. Asar so‘ngida sobitqadam chol Ikromjon o‘zining hayotiy e'tiqodi va kelajakka bo‘lgan ishonchi timsoli bo‘lmish ufqqa tikilgancha vafot etadi.",
+  "characters": "Ikromjon — halol, mehnatkash, o‘g‘lining xiyonatidan qattiq iztirob chekkan, lekin bukilmagan matonatli ota. Jannat xola — Tursunboyni haddan tashqari erkalatib yuborgan, mehribon va mushtipar ona. Tursunboy — erka, mas'uliyatsiz, frontdan qochib el-yurtdan badnom bo‘lgan o‘g‘il. Azizxon — sho‘x va asov, biroq mehnatda ham, urushda ham haqiqiy qahramonlik ko‘rsatgan mard yigit. Nizomjon — barcha qiyinchiliklarni mardona yengib, Ikromjonga tayanch bo‘lgan sadoqatli va halol yigit. Dildor — qiyinchiliklarga boy bermay, mehnatda chiniqqan irodali o‘zbek ayoli.",
+  "conclusion": "Asar kitobxonga farzand tarbiyasida hushyor bo‘lish, el-yurtga va Vatanga sadoqat ko‘rsatish, har qanday og‘ir sinovda ham insoniylikni yo‘qotmaslik sabog‘ini beradi. Ota-onaga va kattalarga hurmat, halol mehnat va sabr-toqat orqali inson o‘z qadr-qimmatini saqlab qolishi uqtiriladi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tarixiy voqealar, xalqimiz matonati, ota-ona tarbiyasi va insoniy munosabatlar haqida o‘ylashni xush ko‘radigan o‘smirlar va kattalar uchun.",
+  "events": [
+   "1. Ikromjon yo‘lda Rasul buvaga uchrashib, unga yangi uzilgan handalak sovg‘a qildi.",
+   "2. Jannat xola homilador holida o‘g‘liga ovqat tayyorlash uchun o‘tin yormoqchi bo‘lib qiynaldi.",
+   "3. Ikromjon uyiga kelib, uxlab yotgan o‘g‘li Tursunboyni o‘rnidan turg‘izdi.",
+   "4. Rasul buva olamdan o‘tib, butun qishloq ahli va Yo‘ldosh Oxunboboyev janozaga yig‘ildi.",
+   "5. Azizxon egasiz qolgan ot-aravalarni o‘ynab, aravakashlar bilan urishib ketdi.",
+   "6. Katta Farg‘ona kanali qurilishi boshlanib, minglab odamlar hashar bilan ishga kirishdi.",
+   "7. Azizxon daryoga sepoya tashlash va sim bilan bog‘lashda favqulodda jasorat ko‘rsatdi.",
+   "8. Kanal qurilishi qirq besh kunda birorta talofatsiz bitkazildi.",
+   "9. Ikkinchi jahon urushi boshlanib, qishloq yigitlari frontga jo‘natildi.",
+   "10. Azizxon frontda mardlik ko‘rsatib, Sovet Ittifoqi Qahramoni unvoniga sazovor bo‘ldi.",
+   "11. Tursunboy armiyadan qochib kelib, qishloqda yashirinib yurdi.",
+   "12. Tog‘a majlisda Nayman cho‘lini o‘zlashtirish va frontga yordam berish haqida gapirdi.",
+   "13. Tursunboyning armiyadan qochgani ma'lum bo‘lib, Ikromjon el oldida maza qilmadi va boshi egildi.",
+   "14. Lutfinisa baxtsiz hodisa sababli vafot etib, Azizxon va yaqinlari chuqur qayg‘uga batgan edi.",
+   "15. Urush tugab, frontdan qaytgan yigitlar va qishloq ahli Nayman cho‘lida yangi yerlar ochishdi.",
+   "16. Dildor va boshqa ayollar traktor haydab, paxta va sholi yetishtirishda jonbozlik ko‘rsatishdi.",
+   "17. Qishloqda birinchi hosil munosabati bilan katta sholi to‘yi o‘tkazildi va To‘lanboy baytlar aytdi.",
+   "18. Risolat otasidan qolgan meros va mollarni deb ukalari bilan janjallashib ketdi.",
+   "19. To‘qaydagi qamishlarga o‘t ketib, Tursunboyning qabri va atrofidagi giyohlar yondi.",
+   "20. Ikromjon o‘zining kelajakka va ezgulikka bo‘lgan ishonchi timsoli bo‘lgan ufqqa tikilib jon berdi."
+  ],
+  "quotes": [
+   "Nizomjon, seni o‘zim yaratdim. Yaratdim-u boshingga kulfatlar soldim. Olovlardan olib o‘tdim.",
+   "O‘lish oson, o‘lib ketish oson. Yashash qiyin. O‘lish nomardning ham qo‘lidan keladi. Mard yashaydi.",
+   "Siz matbuot kishilari har qanday dabdabali so‘zdan ko‘ra haqiqat yuzini ravshan ko‘rsatadigan raqamlarni afzal ko‘rasiz.",
+   "Ko‘ryapsanmi. Tovlanishini, odam bolasini imlab chaqirishini ko‘ryapsanmi. Yur, yur, o‘shaqqa boramiz.",
+   "Hayot to‘lqini ojizlarni qirg‘oqqa irg‘itib tashlaydi. Oqimga qarshi suza olganlar, to‘lqinni egarlaganlargina ertangi kunga yetib keladi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ikromjon cholga nima sovg‘a qildi?",
+   "options": [
+    "A) Handalak",
+    "B) Qatlama",
+    "C) Choy",
+    "D) Non"
+   ],
+   "answer": "A) Handalak"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jannat xola nima uchun o‘tin yormoqchi bo‘ldi?",
+   "options": [
+    "A) O‘g‘liga ovqat qilish uchun",
+    "B) Isinish uchun",
+    "C) Qudasinikiga yuborish uchun",
+    "D) Qo‘shnisiga berish uchun"
+   ],
+   "answer": "A) O‘g‘liga ovqat qilish uchun"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yo‘ldosh Oxunboboyev qaysi marosimga yetib keldi?",
+   "options": [
+    "A) Rasul buvaning janozasiga",
+    "B) Azizxonning to‘yiga",
+    "C) Kolxoz majlisiga",
+    "D) Kanal ochilishiga"
+   ],
+   "answer": "A) Rasul buvaning janozasiga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Azizxon aravakashlar bilan nega urishib ketdi?",
+   "options": [
+    "A) Otlarni minib olgani uchun",
+    "B) Pulni bermagani uchun",
+    "C) Yo‘lini kesgani uchun",
+    "D) Nonni tortib olgani uchun"
+   ],
+   "answer": "A) Otlarni minib olgani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tursunboyning fe’l-atvoridagi asosiy qusur nima edi?",
+   "options": [
+    "A) Erka va dangasaligi",
+    "B) Qo‘rqoqligi va ziqnaligi",
+    "C) Qahri qattiqligi",
+    "D) O‘g‘riligi"
+   ],
+   "answer": "A) Erka va dangasaligi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ikromjon o‘g‘li Tursunboyga nega achchiqlandi?",
+   "options": [
+    "A) Onasini ishlatib uxlab yotgani uchun",
+    "B) Dalaga chiqib ketgani uchun",
+    "C) Uyga kelmagani uchun",
+    "D) Choyni to‘kib yuborgani uchun"
+   ],
+   "answer": "A) Onasini ishlatib uxlab yotgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Azizxon daryoga nega qaytadan tushdi?",
+   "options": [
+    "A) Sepoyalarni sim bilan bog‘lash uchun",
+    "B) Suzishni mashq qilish uchun",
+    "C) Mirobboshidan qochish uchun",
+    "D) Kiyimini yuvish uchun"
+   ],
+   "answer": "A) Sepoyalarni sim bilan bog‘lash uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tursunboyning ota-onasiga munosabatini qanday baholash mumkin?",
+   "options": [
+    "A) Bepisandlik va loqaydlik",
+    "B) Hurmat va izzat",
+    "C) Samimiyat va mehribonlik",
+    "D) Tavoze va odoblilik"
+   ],
+   "answer": "A) Bepisandlik va loqaydlik"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Azizxonning daryoda ko‘rsatgan jasoratini qanday baholaysiz?",
+   "options": [
+    "A) El-yurt uchun fidoyilik",
+    "B) O‘zini ko‘rsatish xohishi",
+    "C) Majburiyatdan qilingan ish",
+    "D) Shunchaki sho‘xlik"
+   ],
+   "answer": "A) El-yurt uchun fidoyilik"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Rasul buva o‘limi tasviri kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Tabarruk umrga hurmat va qayg‘u",
+    "B) Kutilmagan quvonch",
+    "C) Qahramonga nisbatan nafrat",
+    "D) Befarq kayfiyat"
+   ],
+   "answer": "A) Tabarruk umrga hurmat va qayg‘u"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Farg‘ona kanali qurilishi qaysi usulda amalga oshirildi?",
+   "options": [
+    "A) Hashar yo‘li bilan",
+    "B) Yollanma ishchilar bilan",
+    "C) Chet el texnikasi bilan",
+    "D) Majburiy mehnat bilan"
+   ],
+   "answer": "A) Hashar yo‘li bilan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lutfinisa qanday fojia sababli vafot etdi?",
+   "options": [
+    "A) Baxtsiz hodisa natijasida",
+    "B) Og‘ir xastalikdan",
+    "C) Urush maydonida",
+    "D) Suvga cho‘kib"
+   ],
+   "answer": "A) Baxtsiz hodisa natijasida"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tog‘a qaysi cho‘lni o‘zlashtirish uchun da’vat qildi?",
+   "options": [
+    "A) Nayman cho‘lini",
+    "B) Mirzacho‘lni",
+    "C) Yozyovon cho‘lini",
+    "D) Qizilqumni"
+   ],
+   "answer": "A) Nayman cho‘lini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Azizxonga frontda ko‘rsatgan jasorati uchun qanday unvon berildi?",
+   "options": [
+    "A) Sovet Ittifoqi Qahramoni",
+    "B) Mehnat Qahramoni",
+    "C) Generallik unvoni",
+    "D) Polk komandiri"
+   ],
+   "answer": "A) Sovet Ittifoqi Qahramoni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Urush yillarida qishloq ahlining asosiy maqsadi nima edi?",
+   "options": [
+    "A) Frontni oziq-ovqat bilan ta’minlash",
+    "B) Shaharga ko‘chib o‘tish",
+    "C) Shaxsiy boylik orttirish",
+    "D) Dam olishga chiqish"
+   ],
+   "answer": "A) Frontni oziq-ovqat bilan ta’minlash"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ikromjon va qishloq xalqini xijolatga qo‘ygan hodisa nima?",
+   "options": [
+    "A) Tursunboyning armiyadan qochib kelishi",
+    "B) Hosilning kam bo‘lgani",
+    "C) Kanalning buzilishi",
+    "D) Texnikaning buzilishi"
+   ],
+   "answer": "A) Tursunboyning armiyadan qochib kelishi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Zebixon Tursunboyga nisbatan nega nafrat his qildi?",
+   "options": [
+    "A) Uning nomard va qochqoqligi uchun",
+    "B) U bilan urishib qolgani uchun",
+    "C) Boshqa qizga uylangani uchun",
+    "D) Qishloqdan ketib qolgani uchun"
+   ],
+   "answer": "A) Uning nomard va qochqoqligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ikromjon o‘g‘lining qilmishini bilgach, holati qanday bo‘ldi?",
+   "options": [
+    "A) El oldida boshi egilib ezildi",
+    "B) O‘g‘lini qidirishga tushdi",
+    "C) Qishloqdan ko‘chib ketdi",
+    "D) Xursand bo‘lib bayram qildi"
+   ],
+   "answer": "A) El oldida boshi egilib ezildi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tursunboyning frontdan qochib kelishi qanday qilmish?",
+   "options": [
+    "A) Vatan va elga xiyonat",
+    "B) Oqilona qaror",
+    "C) Shunchaki qo‘rqoqlik",
+    "D) Majburiy chora"
+   ],
+   "answer": "A) Vatan va elga xiyonat"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Nayman cho‘lining bahorgi tasvirida nimani ta’kidlaydi?",
+   "options": [
+    "A) Umid va yangilanish hissini",
+    "B) Cho‘lning vahimali ko‘rinishini",
+    "C) Insonlarning chorasizligini",
+    "D) Tabiatning shafqatsizligini"
+   ],
+   "answer": "A) Umid va yangilanish hissini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sholi yanchish marosimida kim bayt va ashula aytdi?",
+   "options": [
+    "A) To‘lanboy",
+    "B) Nizomjon",
+    "C) Ikromjon",
+    "D) A’zamjon"
+   ],
+   "answer": "A) To‘lanboy"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Risolat kelib nima sababdan ukalari bilan janjallashdi?",
+   "options": [
+    "A) Otasidan qolgan meros uchun",
+    "B) Uy sotilgani uchun",
+    "C) Sholi kam berilgani uchun",
+    "D) Qo‘shni bilan urishgani uchun"
+   ],
+   "answer": "A) Otasidan qolgan meros uchun"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ikromjon Toshkentdan qaytgach to‘qayda nimani ko‘rdi?",
+   "options": [
+    "A) Qamish va qabr yonayotganini",
+    "B) Yangi bino qurilayotganini",
+    "C) Odamlar bayram qilayotganini",
+    "D) Kanal suvi toshganini"
+   ],
+   "answer": "A) Qamish va qabr yonayotganini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ikromjon kimning yelkasiga bosh qo‘yib jon berdi?",
+   "options": [
+    "A) Nizomjonning yelkasiga",
+    "B) Zebixonning yelkasiga",
+    "C) To‘lanboyning yelkasiga",
+    "D) Tog‘aning yelkasiga"
+   ],
+   "answer": "A) Nizomjonning yelkasiga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ikromjonning hayot yo‘li oxirida unga kim tayanch bo‘ldi?",
+   "options": [
+    "A) Nizomjon va uning oilasi",
+    "B) O‘z o‘g‘li Tursunboy",
+    "C) Qizi Risolat",
+    "D) Shahardagi qarindoshlari"
+   ],
+   "answer": "A) Nizomjon va uning oilasi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nizomjon nima uchun otasining qabriga daraxt ektirmadi?",
+   "options": [
+    "A) Ufq yo‘lini to‘smasligi uchun",
+    "B) Suv yo‘qligi uchun",
+    "C) Yer qattiq bo‘lgani uchun",
+    "D) Vaqti bo‘lmagani uchun"
+   ],
+   "answer": "A) Ufq yo‘lini to‘smasligi uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Risolatning xatti-harakati oqibatda nimaga olib keldi?",
+   "options": [
+    "A) Jigarlaridan uzilib, badnom bo‘lishga",
+    "B) Boylikka erishishga",
+    "C) Hamma bilan yarashishga",
+    "D) Hurmat qozonishga"
+   ],
+   "answer": "A) Jigarlaridan uzilib, badnom bo‘lishga"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ikromjonning butun umri va sabrini qanday baholash mumkin?",
+   "options": [
+    "A) Haqiqiy matonat va bukilmaslik",
+    "B) Chorasizlik va mag‘lubiyat",
+    "C) Manfaatsizlik va loqaydlik",
+    "D) Shunchaki omadsizlik"
+   ],
+   "answer": "A) Haqiqiy matonat va bukilmaslik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Ikromjonning «Ufqqa bormay o‘lishim mumkin emas» gapi nimani anglatadi?",
+   "options": [
+    "A) Kelajakka va ezgulikka intilishni",
+    "B) Safarga chiqish istagini",
+    "C) Ufqda boylik borligini",
+    "D) Shunchaki xayolparastlikni"
+   ],
+   "answer": "A) Kelajakka va ezgulikka intilishni"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning «So‘nggi so‘z» bo‘limida yozganlari kitobxonda qanday tuyg‘u qoldiradi?",
+   "options": [
+    "A) Qahramonlarga bo‘lgan samimiy muhabbat",
+    "B) Yozuvchining charchagani haqida fikr",
+    "C) Asar tugagani haqida afsus",
+    "D) Voqealarga befarqlik"
+   ],
+   "answer": "A) Qahramonlarga bo‘lgan samimiy muhabbat"
+  }
+ ]
+}

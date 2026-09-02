@@ -1,0 +1,478 @@
+{
+ "title": "Sab'ayi sayyor",
+ "author": "Alisher Navoiy",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "ishq va sadoqat",
+   "nafs va g‘azab",
+   "adolat va sabr",
+   "hikmat va ma'rifat",
+   "so‘z qadri"
+  ],
+  "theme": "Asarning bosh g‘oyasi — g‘azab va nafs ustidan aql hamda sabr bilan g‘alaba qozonish, adolatli va xushxulq bo‘lish, hayotiy sinovlarda sabr-toqat ko‘rsatib, faqat yaxshi nom hamda ezgu amallar qoldirishdir.",
+  "summary": "Alisher Navoiyning «Sab'ayi sayyor» dostoni «Xamsa»ning to‘rtinchi kitobi bo‘lib, shoh Bahrom va uning go‘zal mahbubasi Dilorom o‘rtasidagi ishqiy-falsafiy sarguzashtlarni tasvirlaydi. Doston Xudoga hamd, Rasulloh na'ti, so‘z ta'rifi hamda ustozlar xotirasi bilan boshlanadi. Yosh shahzoda Bahrom Yamanda Nu'mon va Munzir tarbiyasida o‘sadi. Me'mor Sinmor u uchun muhtasham Xavarnaq qasrini barpo etadi. Bahrom ovga ishqiboz, jasur va do‘stparvar hukmdor bo‘lib voyaga etadi. U Xavarnaqdagi tasvirlar orqali Diloromni uchratib, unga ko‘ngil qo‘yadi va saroyiga olib keladi. Navbatdagi ov jarayonida Bahrom kiyikning oyoqlarini kamon bilan bog‘lab, bo‘g‘zidan otib tushiradi. Bunga tanshiq o‘rniga Dilorom «Bu kabi mahorat uzoq mashq va odatlanish natijasidir» deydi. Jahli chiqqan shoh Diloromni sahroga olib borib tashlashni buyuradi. Keyinchalik qilmishidan afsuslangan Bahrom g‘am-alamdan devona holatga tushadi. Shohning dardiga davo topish uchun yetti iqlimdan kelgan me'morlar yetti turli rangda yetti qasr quradilar. Bahrom har kuni bir qasrda o‘tirib, yetti go‘zal parining sabr, halollik, sadoqat va ishq haqidagi ibratli hikoyalarini tinglaydi. Hikoyalar orqali u sabr qilishni va adolatli bo‘lishni o‘rganadi. Oqibatda Bahrom bir chinor kovagida sahar chog‘i chang chalib navo qilayotgan Diloromni uchratib, visolga erishadi. Doston oxirida muallif tushida Bahrom bilan muloqot qilganini, shoh Sulton Husayn Bayqaroga bag‘ishlab turkiy tilda ushbu durdonani yozganini ta'kidlaydi va insonni nafsga berilmaslikka, ezgulik qoldirishga chorlaydi.",
+  "characters": "Bahrom — dostonning bosh qahramoni, jasur, ovga va maishatga ishqiboz, lekin jahldor va hissiyotga beriluvchan shoh; Dilorom — Bahromning sevgilisi, sohir sozanda, oqila, rostdan ham haqiqatni aytuvchi go‘zal pari; Nu'mon va Munzir — Bahromga ustozlik va otalik qilgan Yaman hukmdorlari; Sinmor — Xavarnaq qasrini qurgan tengsiz me'mor; Yetti iqlim go‘zallari — Bahromga ibratli hikoyalar so‘zlab beruvchi qasr malikalari.",
+  "conclusion": "Doston insonni g‘azab va nafsga berilmaslikka, har bir xatti-harakatda aql va sabrga tayanishga o‘rgatadi. Bola ushbu asardan kechirimli bo‘lish, amonatga xiyonat qilmaslik va adolatni ulug‘lash saboqlarini oladi. Ota-ona uchun bu kitob farzandida yuksak ma'naviy-axloqiy fazilatlarni, so‘z mas'uliyatini hamda klassik adabiyotga ehtiromni shakllantirishda tengsiz manbadir.",
+  "difficulty": "qiyin",
+  "mood": "falsafiy, ishqiy, hazin va ibratli",
+  "for_whom": "Mulk va qudrat egasi bo‘lganda ham kamtarin bo‘lishni istaydigan, mumtoz sheriyat va ibratli qissalarga qiziquvchi, o‘tmish shohlari taqdiridan saboq oladigan o‘smirlar uchun.",
+  "events": [
+   "1. Alisher Navoiy Olamlar Parvardigoriga hamd-u sano aytib, so‘z va nutqning qadrini ulug‘laydi.",
+   "2. Rasulullohga salovatchilik va me'roj kechasi ta'rifi keltiriladi.",
+   "3. Musannif doston yozish sababi hamda o‘zidan oldingi o‘tgan so‘z ustozlariga bo‘lgan ehtiromini izhor etadi.",
+   "4. Shoh Bahrom yoshligida Yamanda Nu'mon va Munzir qo‘lida har tomonlama ta'lim va tarbiya oladi.",
+   "5. Me'mor Sinmor Bahrom uchun betakror va san'atkorona Xavarnaq qasrini bino qiladi.",
+   "6. Bahrom mohir ovchi bo‘lib yetishib, sher va kiyiklarni bexato otib ovlashni odat qiladi.",
+   "7. Bahrom Xavarnaq qasridagi devoriy tasvirlarda Diloromning jamolini ko‘rib, unga ko‘ngil bog‘laydi.",
+   "8. Dilorom saroyga keltiriladi va Bahrom uning husni hamda sozandalik mahoratiga maftun bo‘ladi.",
+   "9. Ov vaqtida Bahrom kiyikning ikki qo‘lini kamon bilan bog‘lab, bo‘g‘zidan urib yiqitadi.",
+   "10. Dilorom shohning bu xatti-harakatini ilohiy mo‘jiza emas, balki «idmon» (ko‘p mashq qilish) natijasi deydi.",
+   "11. G‘azabga mingan Bahrom Diloromni sahroga olib borib tashlash to‘g‘risida farmon beradi.",
+   "12. Dilorom sahrodan omon qutqarilib, mehribon insonlar panohida yashirincha parvarish qilinadi.",
+   "13. Diloromdan ayrilgan Bahrom qattiq afsus va pushaymonlikda devona bo‘lib, hushi va oromini yo‘qotadi.",
+   "14. Shohni muolaja qilish uchun yetti iqlimdan kelgan me'morlar yetti xil rangda yetti qasr barpo etadilar.",
+   "15. Bahrom haftaning har bir kunida tegishli rangdagi qasrga kirib, yetti pari so‘zlagan hikoyalarni tinglaydi.",
+   "16. Hikoyalarda sadoqat, sabr, halollik, fitnalarni yengish va adolat tantanasi kabi g‘oyalar talqin qilinadi.",
+   "17. Bahrom sabr qilishni va aql bilan ish tutishni o‘rganib, ruhiy xastalikdan asta-sekin tuzaladi.",
+   "18. Navbatdagi ov jarayonida Bahrom chinor kovagida chang chalib kuylayotgan Diloromni uchratib qoladi.",
+   "19. Bahrom va Dilorom bir-birlarini kechirib, qayta visolga erishadilar va saroyda katta bazm uyushtiriladi.",
+   "20. Muallif tushida shoh Bahrom bilan muloqotda bo‘lib, undan ezgu nasihatlar va duolar oladi.",
+   "21. Navoiy dostonni turkiy tilda yozib, el-ulushga ulkan ma'naviy xazina qoldirganini va shoh Sulton Husayn Bayqaroga bag‘ishlaganini ma'lum qiladi."
+  ],
+  "quotes": [
+   "Yo‘q edi odamiki bor etting, Kishilik birla e'tibor etting.",
+   "So‘z kelib avvalu jahon so‘ngra, Ne jahon, kavn ila makon so‘ngra.",
+   "Hajr o‘ti necha qo‘ysa jonig‘a dog‘, Sabr qilmoq erur ul o‘t uza yog‘.",
+   "Kishidekkim, haramg‘a azm etgay, Umr etib sarf dayr aro yetgay.",
+   "Sen chu nazmingni turktoz etting, Forsiy tildin ehtiroz etting.",
+   "Jahon kimsaga vafo qilmas, Shohlig‘ tarkiga kiro qilmas."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bahrom yoshligida qaysi o‘lkada Nu'mon tarbiyasida o‘sdi?",
+   "options": [
+    "A) Yaman o‘lkasida",
+    "B) Rum shahrida",
+    "C) Xitoy mulkida",
+    "D) Xorazm zaminida"
+   ],
+   "answer": "A) Yaman o‘lkasida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bahrom uchun Xavarnaq qasrini qaysi me'mor barpo etdi?",
+   "options": [
+    "A) Sinmor ismli me'mor",
+    "B) Moniy ismli naqqosh",
+    "C) Zayd ismli zargar",
+    "D) Paylaqus ismli hakim"
+   ],
+   "answer": "A) Sinmor ismli me'mor"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bahrom ovda kiyikni qanday mahorat bilan urdi?",
+   "options": [
+    "A) Qo‘lini bog‘lab, bo‘g‘zidan otib",
+    "B) Ko‘zidan otib yiqitib",
+    "C) Yugurib borib ushlab",
+    "D) Qopqon qo‘yib tutib"
+   ],
+   "answer": "A) Qo‘lini bog‘lab, bo‘g‘zidan otib"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dilorom Bahromning ovdagi mahoratini nimaga bog‘ladi?",
+   "options": [
+    "A) Mashq va odatlanishga",
+    "B) Buyuk ilohiy mo‘jizaga",
+    "C) Tasodifiy omad kelishiga",
+    "D) Sehrli kamon kuchiga"
+   ],
+   "answer": "A) Mashq va odatlanishga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Diloromning javobidan so‘ng voqealar qanday tartibda kechdi?",
+   "options": [
+    "A) Shoh g‘azablandi va sahroga yubordi",
+    "B) Shoh xursand bo‘lib in'om berdi",
+    "C) Shoh uni saroydan haydamadi",
+    "D) Dilorom o‘zi qochib ketdi"
+   ],
+   "answer": "A) Shoh g‘azablandi va sahroga yubordi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoh Bahrom Diloromning gapidan nega g‘azabga tushdi?",
+   "options": [
+    "A) Maqtov o‘rniga idmon deyilganiga",
+    "B) Dilorom ovga chiqishni xohlamagani uchun",
+    "C) Kiyikka rahmi kelgani uchun",
+    "D) Dilorom qasrdan qochgani uchun"
+   ],
+   "answer": "A) Maqtov o‘rniga idmon deyilganiga"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dilorom sahroga haydalganidan so‘ng Bahromda nima o‘zgardi?",
+   "options": [
+    "A) Qattiq afsuslanib devona bo‘ldi",
+    "B) Darhol boshqa xotin oldi",
+    "C) Ovga chiqishni butunlay unutdi",
+    "D) Taxtni ukasiga topshirib ketdi"
+   ],
+   "answer": "A) Qattiq afsuslanib devona bo‘ldi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bahromning g‘azab ustida Diloromni sahroga haydashi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, jahlni aql bilan yengish kerak",
+    "B) To‘g‘ri, shohga e'tiroz bildirilmaydi",
+    "C) To‘g‘ri, chunki Dilorom aybdor edi",
+    "D) Noto‘g‘ri, uni zindonga solish kerak edi"
+   ],
+   "answer": "A) Noto‘g‘ri, jahlni aql bilan yengish kerak"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif hajr o‘ti haqida qanday o‘xshatish keltirgan?",
+   "options": [
+    "A) Sabr qilmoq ul o‘t uza yog‘dir",
+    "B) Sabr qilmoq muzdek suvdir",
+    "C) Sabr qilmoq shamoldir",
+    "D) Sabr qilmoq yomg‘irdir"
+   ],
+   "answer": "A) Sabr qilmoq ul o‘t uza yog‘dir"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Navoiy so‘zning qadri haqida qanday fikr bildiradi?",
+   "options": [
+    "A) So‘z avval kelgan, jahon so‘ngra",
+    "B) Jahon avval yaratilgan",
+    "C) So‘z va jahon teng Yaratilgan",
+    "D) So‘zsiz ham yashash mumkin"
+   ],
+   "answer": "A) So‘z avval kelgan, jahon so‘ngra"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bahromning savdosi daf'i uchun nima barpo etildi?",
+   "options": [
+    "A) Yetti iqlimda yetti qasr",
+    "B) Yangi katta bog‘ va xandak",
+    "C) Dengiz o‘rtasida harbiy qal'a",
+    "D) Shahar atrofiga baland devor"
+   ],
+   "answer": "A) Yetti iqlimda yetti qasr"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jasratxonning o‘g‘li Farrux qaysi yo‘lni tanladi?",
+   "options": [
+    "A) Saltanatni rad etib faqr yo‘lini",
+    "B) Boshqa yurtga qo‘shin tortishni",
+    "C) Otasiga qarshi isyon ko‘tarishni",
+    "D) Savdogar bo‘lib mol yig‘ishni"
+   ],
+   "answer": "A) Saltanatni rad etib faqr yo‘lini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zayd Zahhob Rum shahrida qaysi kasb egasi edi?",
+   "options": [
+    "A) Zargar va xazinador edi",
+    "B) Tabib va dori sotuvchi edi",
+    "C) Navoy va dehqon edi",
+    "D) Kema kapitani edi"
+   ],
+   "answer": "A) Zargar va xazinador edi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sa'd tog‘dagi g‘orda kimga yo‘liqdi?",
+   "options": [
+    "A) Paylaqus hakimga",
+    "B) Jasratxonga",
+    "C) Zangiy Qatronga",
+    "D) Sinmor me'morga"
+   ],
+   "answer": "A) Paylaqus hakimga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sa'd bilan Zangiy o‘rtasidagi olishuv qanday yakunlandi?",
+   "options": [
+    "A) Sa'd suv sepib uni yerga urdi",
+    "B) Zangiy Sa'dni g‘orga qamadi",
+    "C) Ikkalasi do‘st bo‘lib tarqaldi",
+    "D) Sa'd qochib qutuldi"
+   ],
+   "answer": "A) Sa'd suv sepib uni yerga urdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mas'ud chohga tushgach, uni kim qutqarib oldi?",
+   "options": [
+    "A) Mahram kanizaklar va sevgilisi",
+    "B) Shoh Nu'mon va harbiy posbonlar",
+    "C) Shahr hokimi va vaziri",
+    "D) Begona savdogarlar guruhi"
+   ],
+   "answer": "A) Mahram kanizaklar va sevgilisi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Farrux nega otasining taxtini qabul qilishni xohlamadi?",
+   "options": [
+    "A) Dunyo molidan ko‘ra ma'naviyatni ustun bildi",
+    "B) Otasidan qattiq qo‘rqardi",
+    "C) Shohlik qilishni umuman bilmasdi",
+    "D) Boshqa yurtga shoh bo‘lmoqchi edi"
+   ],
+   "answer": "A) Dunyo molidan ko‘ra ma'naviyatni ustun bildi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qasrlarda aytilgan hikoyalarning asosiy maqsadi nima edi?",
+   "options": [
+    "A) Bahromga sabr va ibrat o‘rgatish",
+    "B) Shohni uyquga ketkazib o‘ldirish",
+    "C) Shohdan ko‘p oltin olib ketish",
+    "D) Boshqa mamlakatlarni maqtash"
+   ],
+   "answer": "A) Bahromga sabr va ibrat o‘rgatish"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mas'udning adolatli shoh davlatida xotirjam yashashi nimani ko‘rsatadi?",
+   "options": [
+    "A) Adolat bor joyda obodlik va tinchlik bo‘lishini",
+    "B) Faqat boylar tinch yashay olishini",
+    "C) Qoidasiz jamiyat yaxshi ekanini",
+    "D) Mehnat qilmasdan yashash mumkinligini"
+   ],
+   "answer": "A) Adolat bor joyda obodlik va tinchlik bo‘lishini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Zayd Zahhob hikoyatida insoning qaysi illati qoralanadi?",
+   "options": [
+    "A) Amonatga xiyonat qilish",
+    "B) Kam gapirish va tortinchoqlik",
+    "C) Sayohat qilishga qiziqish",
+    "D) Ilm-fan bilan shug‘ullanish"
+   ],
+   "answer": "A) Amonatga xiyonat qilish"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bahrom Diloromni qayerda va nima qilayotganida topdi?",
+   "options": [
+    "A) Chinor kovagida chang chalib kuylayotganda",
+    "B) Qasr ichida uyqlayotganda",
+    "C) Sahroda kema kutayotganda",
+    "D) Tog‘ tepasida gul terayotganda"
+   ],
+   "answer": "A) Chinor kovagida chang chalib kuylayotganda"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy tushida shoh Bahromdan qanday payom oldi?",
+   "options": [
+    "A) Yaxshi ot va ezgu nom qoldirish",
+    "B) Ko‘p oltin va xazinani ko‘mish",
+    "C) Yangi saroylar va qasrlar qurish",
+    "D) Barcha dushmanlarga urush ochish"
+   ],
+   "answer": "A) Yaxshi ot va ezgu nom qoldirish"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy ushbu dostonni qaysi tilda yozganini ta'kidlaydi?",
+   "options": [
+    "A) Turkiy tilda yozganini",
+    "B) Forsiy tilda yozganini",
+    "C) Arabiy tilda yozganini",
+    "D) Yunoniy tilda yozganini"
+   ],
+   "answer": "A) Turkiy tilda yozganini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Doston oxirida Navoiy qaysi shohga maqtov va duo yo‘llaydi?",
+   "options": [
+    "A) Sulton Husayn Bayqaroga",
+    "B) Shoh Nu'monga",
+    "C) Jasratxonga",
+    "D) Kaykovusga"
+   ],
+   "answer": "A) Sulton Husayn Bayqaroga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bahrom va Diloromning qayta topishishi qanday amalga oshdi?",
+   "options": [
+    "A) Ovdagi chashma va chinor yonida uchrashib",
+    "B) Yetti qasrning birida uchrashib",
+    "C) Yaman bozorida tasodifan uchrashib",
+    "D) Xitoy elchisi olib kelganidan so‘ng"
+   ],
+   "answer": "A) Ovdagi chashma va chinor yonida uchrashib"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Navoiy dostonda nima uchun turkiy tilni tanlaganini aytadi?",
+   "options": [
+    "A) Turk ulusi va sultonlar tushunishi uchun",
+    "B) Forsiy tilni hech kim bilmagani uchun",
+    "C) Boshqa tilda yozish taqiqlangani uchun",
+    "D) Kitobni tezroq yozib tugatish uchun"
+   ],
+   "answer": "A) Turk ulusi va sultonlar tushunishi uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoh Bahrom tushida nima uchun ganj qo‘ymaganini tushuntiradi?",
+   "options": [
+    "A) Barchasini ehson qilib sarf etgani uchun",
+    "B) Oltin va kumushni yoqtirmagani uchun",
+    "C) Dushmanlari tortib olgani uchun",
+    "D) Xazinasi mutlaqo bo‘lmagani uchun"
+   ],
+   "answer": "A) Barchasini ehson qilib sarf etgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Doston oxiridagi «Jahon kimsaga vafo qilmas» fikridan nima xulosa qilinadi?",
+   "options": [
+    "A) Insoflik va yaxshi nom qoldirish muhim",
+    "B) Mol-dunyo yig‘ish eng oily maqsad",
+    "C) Odamlar bilan muloqot qilmaslik kerak",
+    "D) Faqat shohlar baxtli yashay oladi"
+   ],
+   "answer": "A) Insoflik va yaxshi nom qoldirish muhim"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bahrom va Diloromning kechirim va visolga erishishi qanday qadriyatni ulug‘laydi?",
+   "options": [
+    "A) Kechirimli bo‘lish va samimiy ishqni",
+    "B) Qasos olish va g‘azabda davom etishni",
+    "C) Mansab va kuch-qudratni",
+    "D) Mol-dunyo va shon-shuhratni"
+   ],
+   "answer": "A) Kechirimli bo‘lish va samimiy ishqni"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Shoh Bahrom Navoiyga qarata yozgan dostoniga qanday baho beradi?",
+   "options": [
+    "A) Esaviy va jonbaxsh nazm deb",
+    "B) Faqat qiziqarli ertak deb",
+    "C) O‘ta murakkab va tushunarsiz deb",
+    "D) Qisqa va kamchilikka boy deb"
+   ],
+   "answer": "A) Esaviy va jonbaxsh nazm deb"
+  }
+ ]
+}

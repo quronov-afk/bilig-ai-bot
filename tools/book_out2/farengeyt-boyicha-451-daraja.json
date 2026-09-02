@@ -1,0 +1,481 @@
+{
+ "title": "Farengeyt bo‘yicha 451 daraja",
+ "author": "Rey Bredberi",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "kitobxonlik",
+   "ma'naviyat",
+   "ozodlik",
+   "jamiyat",
+   "kelajak",
+   "insoniylik"
+  ],
+  "theme": "Kitoblar va fikrlash taqiqlangan jamiyatda ma'naviyat hamda insoniylik barbod bo‘ladi. Asar kitobxonlik va erkin fikrlash insoniyat kelajagi va ma'naviy uyg‘onishi uchun naqadar muhimligini ko‘rsatadi.",
+  "summary": "Kelajakdagi antiutopik jamiyatda kitoblar taqiqlangan bo‘lib, o‘t o‘chiruvchilarning asosiy vazifasi kitoblarni topib, ularni uylar bilan qo‘shib yoqib yuborishdan iborat. Bosh qahramon Gay Monteg — tajribali o‘t o‘chiruvchi. U o‘z ishini zavq bilan bajarib keladi. Ammo bir kuni u qo‘shnisi, atrof-muhitni va hayotni o‘zgacha kuzatadigan 17 yoshli Klarissa Maklellan bilan tanishib qoladi. Klarissaning «Siz baxtlimisiz?» degan savoli Montegning ichki dunyosini ostun-ustun qilib yuboradi.\n\nMonteg uyiga qaytib, xotini Mildredning ko‘p miqdorda uyqu dorisi ichib, hushsiz yotganini ko‘radi. Sanitarlar kelib ayolning qonini almashtirishadi, lekin Mildred ertasi kuni bu voqeani eslay olmaydi va jo‘n tele-ko‘rsatuvlarga berilib yashashda davom etadi. Klarissa bilan suhbatlar hamda bir keksa ayolning o‘z kitoblari bilan birga jonli alanga ichida yonib ketishi Montegga qattiq ta'sir qiladi. U yashirincha kitoblarni o‘g‘irlab, uyida to‘play boshlaydi.\n\nMonteg ruhiy inqirozga tushib, ishga chiqmay qo‘yadi. O‘t o‘chirish bo‘limi kapitani Bitti uning uyiga kelib, kitoblar nega taqiqlangani va o‘t o‘chiruvchilar jamiyat osudaligi posboni ekani haqida leksiya o‘qiydi. Bitti ketgach, Monteg xotiniga yashirgan kitoblarini ko‘rsatadi. U o‘ziga yo‘l-yo‘riq ko‘rsatishi uchun sobiq adabiyot professori Faberning oldiga boradi. Faber unga mitti aloqa moslamasini berib, qo‘llab-quvvatlaydi.\n\nMonteg uyiga kelgan Mildredning dugonalariga she'r o‘qib beradi va ularning ma'naviy bo‘shlig‘ini yuziga soladi. Mildred va uning dugonalari politsiyaga xabar berishadi. Navbatdagi chaqiruv Montegning o‘z uyiga tushadi. Bitti Montegni o‘z uyini o‘t purkagich bilan yoqishga majbur qiladi. Monteg g‘azab ustida Bittini o‘t purkagich bilan yoqib o‘ldiradi va mexanik ko‘ppakni ham yoqib yuborib, qochishga tushadi.\n\nButun shahar bo‘ylab Montegni taqib qilishadi. U Faberning maslahatiga ko‘ra daryoga yetib oladi va suv orqali qochib, o‘rmonga o‘tadi. U yerda kitoblarni yod olgan va kelajak avlod uchun xotirasida saqlab yurgan qochqin ziyolilar guruhi (Grenjer va uning hamrohlari) bilan uchrashadi. Shu payt shaharga atom bombasi tashlanib, u bir zumda kultepaga aylanadi. Monteg va ziyolilar yangi jamiyatni ma'rifat bilan qayta qurish uchun yo‘lga tushishadi.",
+  "characters": "Gay Monteg — o‘t o‘chiruvchi, asar davomida hayot ma'nosini va kitoblar qadrini anglab isyon ko‘taradi.\nKlarissa Maklellan — 17 yoshli qiz, atrofdagi mo‘jizalarni sezadigan, Montegning qalbida shubha va o‘y uyg‘otgan qahramon.\nMildred — Montegning xotini, tele-devorlar va yuza ko‘ngilochar narsalarga mukkasidan ketgan, ma'naviy qashshoq ayol.\nKapitan Bitti — o‘t o‘chirish bo‘limi boshlig‘i, kitoblarni yaxshi bilsa-da, ularni yoqish tartibiga qat'iy va ayovsiz xizmat qiladi.\nProfessor Faber — keksa adabiyot professori, Montegga yo‘l ko‘rsatib, yashirincha yordam beradi.\nGrenjer — o‘rmondagi qochqin ziyolilar yetakchisi, kitoblarni xotirada saqlab, kelajakni tiklashga ishonadi.",
+  "conclusion": "Ushbu asar farzandingizga kitobxonlik va erkin fikrlash eng buyuq ma'naviy ne'mat ekanini tushuntiradi. U yuzaki ko‘ngilxushlik va texnologiyaga qaramlik insonni ruhan qashshoqlashtirishini ko‘rsatib beradi. Ota-onalar ushbu kitob orqali bolada chinakam insoniy qadriyatlar, ma'rifatga intilish va mustaqil fikrlash hissini shakllantirishlari mumkin.",
+  "difficulty": "qiyin",
+  "mood": "o‘ylantiruvchi, jiddiy, hayajonli",
+  "for_whom": "Dystopiya va fantastika janrini yoqtiradigan, hayotning ma'nosi va jamiyat kelajagi haqida fikrlaydigan o‘smirlar uchun.",
+  "events": [
+   "Gay Monteg o‘t o‘chiruvchi bo‘lib ishlaydi va kitoblarni yoqishdan zavqlanadi.",
+   "Monteg tunda uyiga qaytayotganda yangi qo‘shnisi Klarissa Maklellan bilan tanishadi.",
+   "Klarissa Montegga «Siz baxtlimisiz?» degan g‘alati savolni beradi.",
+   "Monteg uyiga kirib, xotini Mildredning ko‘p dori ichib hushsiz yotganini ko‘radi.",
+   "Tunda kelgan ikki sanitariya texniki Mildredning qonini almashtirib, uni qutqaradi.",
+   "O‘t o‘chirish bo‘limidagi mexanik ko‘ppak Montegga irillab, xavf soladi.",
+   "Klarissa g‘oyib bo‘ladi va Monteg uni sog‘ina boshlaydi.",
+   "Noma'lum bir uyda keksa ayol o‘z kitoblari va uyi bilan birga jonli alangasida yonib ketadi.",
+   "Monteg yong‘in joyidan yashirincha bitta kitobni o‘g‘irlab keladi.",
+   "Monteg kasal bo‘lib yotib oladi va kapitan Bitti uning uyiga kelib leksiya o‘qiydi.",
+   "Bitti ketgach, Monteg xotiniga havo panjarasi ortiga yashirgan kitoblarini ko‘rsatadi.",
+   "Monteg sobiq professor Faberning uyiga borib, undan kitoblarni tushunishda yordam so‘raydi.",
+   "Faber Montegga uzoqdan muloqot qilish uchun mitti chig‘anoq-quloqchin beradi.",
+   "Monteg uyida Mildred va uning dugonalariga she'r o‘qib berib, ularni yig‘latadi.",
+   "O‘t o‘chirish bo‘limining navbatdagi chaqiruvi Montegning o‘z uyiga tushadi.",
+   "Mildred eriga xiyonat qilib, buyumlarini olib taksida qochib ketadi.",
+   "Monteg kapitan Bittini o‘t purkagich bilan yoqib o‘ldiradi va mexanik ko‘ppakni yoqib yuboradi.",
+   "Oqsoqlanib qochgan Monteg Faberning uyiga kirib, pul beradi va daryo tomon yo‘l oladi.",
+   "Monteg daryodan o‘tib, o‘rmonda kitoblarni yod olgan qochqin ziyolilar guruhiga qo‘shiladi.",
+   "Ayg‘oqchilar tele-ko‘rsatuvda Monteg o‘rniga boshqa bir begunoh odamni ushlab o‘ldirishadi.",
+   "Shaharga atom bombasi tushib, u bir zumda to‘liq vayron bo‘ladi.",
+   "Monteg va ziyolilar yangi jamiyatni tiklash uchun shahar xarobalari tomon yo‘lga tushishadi."
+  ],
+  "quotes": [
+   "Olov yonayotgan narsalarni o‘z domiga olib, ularni qoraytirib, kuydirishini va shaklini o‘zgartira borishini tomosha qilish zavqli edi.",
+   "Qachonlardir o‘t o‘chiruvchilar o‘t qo‘yish o‘rniga o‘t o‘chirganlari rostmi?",
+   "Inson odatiy chegaralardan chiqqanlarga toqat qila olmaydi.",
+   "Biz bir xil bo‘lishimiz kerak. Konstitutsiyada aytilganidek, ozod va teng emas, aynan bir xil bo‘lishimiz kerak.",
+   "Kitob esa qo‘shni uydagi o‘qlangan quroldir. Uni yoqib, yo‘q qilish kerak.",
+   "Najotni o‘zingiz yarating va agar shu yo‘lda cho‘kib ketsangiz, hech bo‘lmasa sohil tomon ketayotganingizni bilib halok bo‘lasiz.",
+   "Muhimi biz emas, biz saqlayotgan narsa."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gay Monteg jamiyatda qanday kasb egasi edi?",
+   "options": [
+    "A) O‘t o‘chiruvchi",
+    "B) Shifokor",
+    "C) O‘qituvchi",
+    "D) Quruvchi"
+   ],
+   "answer": "A) O‘t o‘chiruvchi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Monteg kechasi ko‘chada kim bilan tanishib qoladi?",
+   "options": [
+    "A) Klarissa Maklellan bilan",
+    "B) Kapitan Bitti bilan",
+    "C) Professor Faber bilan",
+    "D) Grenjer bilan"
+   ],
+   "answer": "A) Klarissa Maklellan bilan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Klarissa Montegga qanday g‘alati savol beradi?",
+   "options": [
+    "A) Siz baxtlimisiz?",
+    "B) Qayerda ishlaysiz?",
+    "C) Kitob o‘qiysizmi?",
+    "D) Necha yoshdasiz?"
+   ],
+   "answer": "A) Siz baxtlimisiz?"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mildred xonasida qanday holatda topildi?",
+   "options": [
+    "A) Dori ichib hushsiz yotgan",
+    "B) Kitob o‘qib o‘tirgan",
+    "C) Tele-devor ko‘rib o‘tirgan",
+    "D) Uyquda tush ko‘rayotgan"
+   ],
+   "answer": "A) Dori ichib hushsiz yotgan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mildredni qutqarish uchun kimlar yetib keldi?",
+   "options": [
+    "A) Ikki nafar sanitariya texniki",
+    "B) Tajribali shifokorlar jamoasi",
+    "C) O‘t o‘chirish bo‘limi xodimlari",
+    "D) Klarissa va uning amakisi"
+   ],
+   "answer": "A) Ikki nafar sanitariya texniki"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Monteg Klarissa bilan suhbatdan so‘ng o‘ylanib qoldi?",
+   "options": [
+    "A) O‘zining baxtsizligini his qilgani uchun",
+    "B) Qizdan juda qo‘rqib ketgani uchun",
+    "C) Kasbidan darhol voz kechgani uchun",
+    "D) Xotinini yoqtirmay qolgani uchun"
+   ],
+   "answer": "A) O‘zining baxtsizligini his qilgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mexanik ko‘ppak nega Montegga irillab xavf soldi?",
+   "options": [
+    "A) Montegning ichki shubhasi sababli",
+    "B) Monteg uni urgani uchun",
+    "C) Unga noto‘g‘ri buyruq berilgani uchun",
+    "D) Ko‘ppak buzilib qolgani uchun"
+   ],
+   "answer": "A) Montegning ichki shubhasi sababli"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Klarissaning tabiatni va hayotni kuzatishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, u tevarakni his qiladi",
+    "B) Noto‘g‘ri, u vaqtini bekor sarflaydi",
+    "C) Noto‘g‘ri, bu odamlarga xalaqit beradi",
+    "D) To‘g‘ri, chunki u dars tayyorlaydi"
+   ],
+   "answer": "A) To‘g‘ri, u tevarakni his qiladi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Mildred quloqchinlarini nimaga o‘xshatadi?",
+   "options": [
+    "A) Elektron arilarga",
+    "B) Kichik kapalaklarga",
+    "C) Qora qushlarga",
+    "D) Oltin qo‘ng‘izlarga"
+   ],
+   "answer": "A) Elektron arilarga"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Klarissaning yuzini nimaga o‘xshatib tasvirlaydi?",
+   "options": [
+    "A) Sokin sham yorug‘iga",
+    "B) Yaltiroq elektr chiroqqa",
+    "C) Qip-qizil olov alangasiga",
+    "D) Xira quyosh nuriga"
+   ],
+   "answer": "A) Sokin sham yorug‘iga"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yong‘in paytida keksa ayol qanday yo‘l tutdi?",
+   "options": [
+    "A) Kitoblari bilan birga yondi",
+    "B) Darhol ko‘chaga qochib chiqdi",
+    "C) O‘t o‘chiruvchilardan yordam so‘radi",
+    "D) Kitoblarini yerto‘laga yashirdi"
+   ],
+   "answer": "A) Kitoblari bilan birga yondi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Monteg yong‘in joyidan yashirincha nima olib keldi?",
+   "options": [
+    "A) Bitta kitob olib keldi",
+    "B) Qimmatbaho tilla uzuk",
+    "C) Kerosin to‘la idish",
+    "D) Maxsus o‘t purkagich"
+   ],
+   "answer": "A) Bitta kitob olib keldi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kapitan Bitti Montegning uyiga nega keldi?",
+   "options": [
+    "A) Kasal Montegdan xabar olgani",
+    "B) Kitobni tortib olgani uchun",
+    "C) Mildred bilan ko‘rishgani uchun",
+    "D) Uni ishdan bo‘shatgani uchun"
+   ],
+   "answer": "A) Kasal Montegdan xabar olgani"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Monteg yordam so‘rab kimning uyiga bordi?",
+   "options": [
+    "A) Professor Faberning uyiga",
+    "B) Klarissaning amakisi oldiga",
+    "C) Kapitan Bitti xonadoniga",
+    "D) Shifoxona bosh shifokoriga"
+   ],
+   "answer": "A) Professor Faberning uyiga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bitti tushuntirishicha, kitoblar nega taqiqlangan edi?",
+   "options": [
+    "A) Odamlarni teng va baxtli qilish uchun",
+    "B) Qog‘oz tanqisligi yuzaga kelgani uchun",
+    "C) Kitoblar juda qimmat bo‘lgani uchun",
+    "D) Yong‘inlar sonini kamaytirish uchun"
+   ],
+   "answer": "A) Odamlarni teng va baxtli qilish uchun"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Faber Montegga yordam berish uchun nima berdi?",
+   "options": [
+    "A) Kichik aloqa moslamasini",
+    "B) Yangi kitoblar to‘plamini",
+    "C) Katta miqdorda pul",
+    "D) Maxsus qurol va kiyim"
+   ],
+   "answer": "A) Kichik aloqa moslamasini"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Keksa ayolning o‘zini yoqishi Montegga qanday ta'sir qildi?",
+   "options": [
+    "A) Kitoblar qadrini tushunishga majbur qildi",
+    "B) Uni dahshatli qo‘rquvga soldi",
+    "C) O‘t o‘chirishni yanada sevdirdi",
+    "D) Xotiniga bo‘lgan mehrini oshirdi"
+   ],
+   "answer": "A) Kitoblar qadrini tushunishga majbur qildi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Monteg Mildred va dugonalariga nega she'r o‘qidi?",
+   "options": [
+    "A) Ularning ma'naviy bo‘shlig‘ini ko‘rsatish uchun",
+    "B) Ularni quvontirib kuldirish uchun",
+    "C) Bittining buyrug‘ini bajarish uchun",
+    "D) O‘zining shoir ekanini bildirish uchun"
+   ],
+   "answer": "A) Ularning ma'naviy bo‘shlig‘ini ko‘rsatish uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Montegning kitoblarni o‘rganishga intilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, haqiqatni bilishga intildi",
+    "B) Noto‘g‘ri, qonunni buzmaslik kerak",
+    "C) Noto‘g‘ri, bu sog‘liqqa ziyon",
+    "D) To‘g‘ri, pul topish uchun zarur"
+   ],
+   "answer": "A) To‘g‘ri, haqiqatni bilishga intildi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "She'r o‘qilganda missis Felpsning yig‘lashi nimani bildiradi?",
+   "options": [
+    "A) Qalbida hali his-tuyg‘u borligini",
+    "B) She'r juda kulgili bo‘lganini",
+    "C) Ko‘zi og‘rib ketganini",
+    "D) Montegdan qattiq qo‘rqqanini"
+   ],
+   "answer": "A) Qalbida hali his-tuyg‘u borligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘t o‘chiruvchilar oxirgi chaqiruvda kimning uyiga kelishdi?",
+   "options": [
+    "A) Montegning o‘z uyiga",
+    "B) Faberning kichik uyiga",
+    "C) Klarissaning yorug‘ uyiga",
+    "D) Shahar hokimi saroyiga"
+   ],
+   "answer": "A) Montegning o‘z uyiga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Montegga kim xiyonat qilib chaqiruv yuborgan edi?",
+   "options": [
+    "A) Xotini Mildred va dugonalari",
+    "B) Professor Faber va shogirdlari",
+    "C) Kapitan Bitti va yordamchilari",
+    "D) Qo‘shni uyda yashovchi bolalar"
+   ],
+   "answer": "A) Xotini Mildred va dugonalari"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Monteg Kapitan Bittiga qarshi nimani ishlatdi?",
+   "options": [
+    "A) Qo‘lidagi o‘t purkagich moslamasini",
+    "B) Maxsus tayyorlangan kichik toptanchani",
+    "C) Og‘ir yog‘och tayoqni",
+    "D) O‘tkir po‘lat pichoqni"
+   ],
+   "answer": "A) Qo‘lidagi o‘t purkagich moslamasini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Monteg qochib ketayotganda qaysi tomonga yo‘l oldi?",
+   "options": [
+    "A) Daryo va eski temir yo‘lga",
+    "B) Boshqa katta shaharga",
+    "C) Faberning yerto‘lasiga",
+    "D) O‘t o‘chirish stansiyasiga"
+   ],
+   "answer": "A) Daryo va eski temir yo‘lga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Grenjer va uning hamrohlari kimlar edi?",
+   "options": [
+    "A) Kitoblarni yod olgan qochqinlar",
+    "B) Shaharni vayron qilgan bombalagichlar",
+    "C) Politsiyaning maxfiy ayg‘oqchilari",
+    "D) O‘t o‘chiruvchilarning yangi guruhi"
+   ],
+   "answer": "A) Kitoblarni yod olgan qochqinlar"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bitti nega Montegni ataylab g‘azablantirib, qarshilik qilmadi?",
+   "options": [
+    "A) Ich-ichidan o‘lishni istagani uchun",
+    "B) Montegdan juda qo‘rqani uchun",
+    "C) Ko‘ppak yetib kelishini kutgani uchun",
+    "D) O‘t purkagich buzilgan deb o‘ylagani uchun"
+   ],
+   "answer": "A) Ich-ichidan o‘lishni istagani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "O‘rmondagi ziyolilar nega kitoblarni yodlab olishardi?",
+   "options": [
+    "A) Kelajak avlodga yetkazish uchun",
+    "B) Qonundan umuman qo‘rqishmagani uchun",
+    "C) Kitoblarni sotib pul qilish uchun",
+    "D) Vaqtni tezroq o‘tkazish uchun"
+   ],
+   "answer": "A) Kelajak avlodga yetkazish uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Grenjer guruhining ezgu maqsadi qanday baholanadi?",
+   "options": [
+    "A) Yuksak va ma'rifatparvarlik harakati",
+    "B) Befoyda va xavfli urinish",
+    "C) Shunchaki vaqtichog‘lik va o‘yin",
+    "D) Xudbinlik va manfaatsizlik"
+   ],
+   "answer": "A) Yuksak va ma'rifatparvarlik harakati"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shaharning atom bombasidan yo‘q bo‘lishi nimadan ogohlantiradi?",
+   "options": [
+    "A) Ma'naviyatsizlik jamiyatni halokatga yetaklashidan",
+    "B) Urushda texnika muhim emasligidan",
+    "C) Shaharlarda yashash xavfli ekanligidan",
+    "D) Kitoblarsiz ham yashash mumkinligidan"
+   ],
+   "answer": "A) Ma'naviyatsizlik jamiyatni halokatga yetaklashidan"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Grenjer insoniyat tiklanishini qaysi afsonaviy qushga o‘xshatadi?",
+   "options": [
+    "A) Kuldan qayta tiriladigan Qaqnusga",
+    "B) Samoda uchuvchi Humo qushiga",
+    "C) Tez uchadigan Semurg‘ qushiga",
+    "D) Oq rangli tinchlik kabutariga"
+   ],
+   "answer": "A) Kuldan qayta tiriladigan Qaqnusga"
+  }
+ ]
+}

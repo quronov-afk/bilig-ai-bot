@@ -95,6 +95,14 @@ _COLUMN_MIGRATIONS = (
     "ALTER TABLE Book_Base ADD COLUMN for_whom TEXT",
     "ALTER TABLE Book_Base ADD COLUMN difficulty TEXT",
     "ALTER TABLE Book_Base ADD COLUMN mood TEXT",
+    # 2026-09-01: kengaytirilgan pasport. «events» — asar voqealari
+    # ro‘yxati, «quotes» — asl matndan parchalar. Ikkalasi kelajakda
+    # yangi test tuzishda kitobni qayta o‘qimaslik uchun kerak.
+    "ALTER TABLE Book_Base ADD COLUMN events TEXT",
+    "ALTER TABLE Book_Base ADD COLUMN quotes TEXT",
+    # Diniy-ma'rifiy kitob: test tuzilmaydi, ochiq savollar beriladi.
+    "ALTER TABLE Book_Base ADD COLUMN no_test INTEGER DEFAULT 0",
+    "ALTER TABLE Book_Base ADD COLUMN talk_questions TEXT",
     # Ota-ona kitob muqovasini rasmga olsa — o‘sha rasm fayli nomi.
     # Bo‘sh bo‘lsa, muqova katalogdan nomi bo‘yicha topiladi.
     "ALTER TABLE Plan_Books ADD COLUMN cover_file TEXT",
@@ -131,6 +139,14 @@ _COLUMN_MIGRATIONS = (
     "ALTER TABLE Group_Tasks ADD COLUMN finished_at TEXT",
     "ALTER TABLE Group_Tasks ADD COLUMN prize_given INTEGER DEFAULT 0",
     "ALTER TABLE Group_Task_Members ADD COLUMN test_seconds INTEGER DEFAULT 0",
+    # Foydalanuvchi qachon qo‘shilgani — o‘sish grafigi uchun. Eski
+    # yozuvlarda bo‘sh qoladi; panel bunday holda birinchi faollik
+    # kunini oladi.
+    "ALTER TABLE Users ADD COLUMN created_at TEXT",
+    # MANBA BELGISI (ega qarori, 2026-09-02) — pastdagi «MANBALAR» izohiga
+    # qarang. Testning qayerdan kelgani yozib boriladi.
+    "ALTER TABLE Test_Bank ADD COLUMN source TEXT",
+    "ALTER TABLE Book_Tests ADD COLUMN source TEXT",
 )
 
 
@@ -720,6 +736,26 @@ def strip_option_prefix(text):
     return _OPT_PREFIX.sub("", text).strip()
 
 
+# ==========================================================
+# MANBALAR — test va kitob pasporti qayerdan kelgan?
+# ----------------------------------------------------------
+# Ega qarori (2026-09-02): ilovani test va kitob pasporti bilan
+# to‘ldirish huquqi hammaga berilmaydi — aks holda baza chiqindiga
+# to‘lib ketadi. Shuning uchun har bir yozuvning MANBASI belgilanadi:
+#
+#   'seed'   — ilova asoschilari tayyorlagan rasmiy baza. Eng ishonchli.
+#   'photo'  — ota-ona kitob sahifalarini suratga olib tuzdirgan.
+#   'notes'  — bola o‘qish davomida yuborgan sahifalardan yig‘ilgan.
+#   'parent' — ota-ona SAVOLLARNI O‘Z QO‘LI bilan yozgan yoki tuzatgan.
+#   'task'   — guruh musobaqasi testi (admin tuzgan, bitta musobaqaga xos).
+#
+# QOIDA: rasmiy baza kelganda, ota-ona rasmlaridan va bola yozuvlaridan
+# shakllangan yozuvlar BEKOR bo‘ladi — rasmiysi ustidan yoziladi.
+# Ota-ona O‘Z QO‘LI bilan yozgan test ('parent') esa saqlanib qoladi:
+# u tasodifiy emas, ataylab qilingan mehnat.
+# ==========================================================
+
+
 def normalize_questions(questions):
     """Savollar ro‘yxatini ko‘rsatishga tayyor holga keltiradi."""
     if not isinstance(questions, list):
@@ -765,14 +801,15 @@ def _attach_test_from_bank(book_id, title, author):
     key = book_key(title, author)
     try:
         cursor.execute(
-            "SELECT questions_json, book_key, from_notes FROM Test_Bank WHERE book_key = ?", (key,))
+            "SELECT questions_json, book_key, from_notes, COALESCE(source, 'photo') "
+            "FROM Test_Bank WHERE book_key = ?", (key,))
         row = cursor.fetchone()
         # Muallif noma'lum bo‘lsa, kalit "kitob nomi|" ko‘rinishida bo‘ladi —
         # bunda bankdagi ayni shu nomli kitobni muallifidan qat'i nazar topamiz.
         if not row and key.endswith("|"):
             cursor.execute(
-                "SELECT questions_json, book_key, from_notes FROM Test_Bank "
-                "WHERE book_key LIKE ? LIMIT 1", (key + "%",))
+                "SELECT questions_json, book_key, from_notes, COALESCE(source, 'photo') "
+                "FROM Test_Bank WHERE book_key LIKE ? LIMIT 1", (key + "%",))
             row = cursor.fetchone()
     except Exception:
         return 0
@@ -787,8 +824,9 @@ def _attach_test_from_bank(book_id, title, author):
         return 0
     with db_lock:
         cursor.execute(
-            "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
-            (book_id, row[0])
+            "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json, source) "
+            "VALUES (?, ?, ?)",
+            (book_id, row[0], row[3] if len(row) > 3 else "photo")
         )
         cursor.execute("UPDATE Test_Bank SET use_count = use_count + 1 WHERE book_key = ?", (key,))
         # Bankdagi test yozuvlardan tuzilgan bo‘lsa, bu kitobda ham faqat
@@ -803,7 +841,7 @@ def _attach_test_from_bank(book_id, title, author):
     return count
 
 
-def _save_test_to_bank(title, author, raw_json, from_notes=0):
+def _save_test_to_bank(title, author, raw_json, from_notes=0, source="photo"):
     """Yangi tuzilgan testni umumiy bankka qo‘shadi.
 
     from_notes=1 — test o‘qish davomida yig‘ilgan sahifa yozuvlaridan
@@ -822,9 +860,9 @@ def _save_test_to_bank(title, author, raw_json, from_notes=0):
             return
         cursor.execute(
             "INSERT OR REPLACE INTO Test_Bank (book_key, title, author, questions_json, "
-            "use_count, created_at, from_notes) VALUES (?, ?, ?, ?, 1, ?, ?)",
+            "use_count, created_at, from_notes, source) VALUES (?, ?, ?, ?, 1, ?, ?, ?)",
             (key, title, author, raw_json,
-             datetime.now().strftime("%Y-%m-%d %H:%M:%S"), int(from_notes))
+             datetime.now().strftime("%Y-%m-%d %H:%M:%S"), int(from_notes), source)
         )
         conn.commit()
 
@@ -1113,7 +1151,10 @@ def prepare_talk_questions(title, author, base):
 BASE_COLS = ("summary, characters, theme, age_hint, COALESCE(short_form, 0), "
              "COALESCE(conclusion, ''), COALESCE(age_band, ''), "
              "COALESCE(topics, ''), COALESCE(for_whom, ''), "
-             "COALESCE(difficulty, ''), COALESCE(mood, '')")
+             "COALESCE(difficulty, ''), COALESCE(mood, ''), "
+             # 2026-09-01: diniy-ma'rifiy kitobga test tuzilmaydi,
+             # o‘rniga kitob parchasiga tayangan suhbat savollari beriladi.
+             "COALESCE(no_test, 0), COALESCE(talk_questions, '')")
 
 
 def get_book_base(title, author):
@@ -1136,10 +1177,15 @@ def get_book_base(title, author):
         topics = json.loads(row[7]) if row[7] else []
     except Exception:
         topics = []
+    try:
+        talk_qs = json.loads(row[12]) if row[12] else []
+    except Exception:
+        talk_qs = []
     return {"summary": row[0], "characters": row[1], "theme": row[2],
             "age_hint": row[3], "short_form": bool(row[4]), "conclusion": row[5],
             "age_band": row[6], "topics": topics, "for_whom": row[8],
-            "difficulty": row[9], "mood": row[10]}
+            "difficulty": row[9], "mood": row[10],
+            "no_test": bool(row[11]), "talk_questions": talk_qs}
 
 
 # ==========================================================
@@ -1205,8 +1251,8 @@ def _import_book_seed():
         # yagona obyekt — halqa ichida so‘rov yuborsak, kutib turgan
         # natija o‘chib ketardi. Shuning uchun avval hammasini o‘qib olamiz.
         try:
-            cursor.execute("SELECT book_key FROM Book_Base")
-            have_base = {r[0] for r in cursor.fetchall()}
+            cursor.execute("SELECT book_key, COALESCE(source, '') FROM Book_Base")
+            have_base = {r[0]: r[1] for r in cursor.fetchall()}
             cursor.execute("SELECT book_key, COALESCE(from_notes, 0) FROM Test_Bank")
             have_test = {r[0]: r[1] for r in cursor.fetchall()}
         except Exception:
@@ -1215,20 +1261,27 @@ def _import_book_seed():
 
         now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         added_base = added_test = 0
+        seed_keys = set()          # rasmiy test kelgan kitoblar
         for b in books:
             key = b.get("key")
             if not key:
                 continue
             p = b.get("passport") or {}
 
-            if key not in have_base and (p.get("summary") or "").strip():
+            # Rasmiy pasport (ega qarori, 2026-09-02) ota-ona rasmlaridan yoki
+            # bola yozuvlaridan tuzilganini BEKOR qiladi — «MANBALAR» izohiga
+            # qarang. Rasmiy pasport ustidan esa yozilmaydi.
+            _old_src = have_base.get(key)
+            if (_old_src is None or _old_src != "seed") and (p.get("summary") or "").strip():
                 try:
                     cursor.execute(
-                        "INSERT INTO Book_Base (book_key, title, author, summary, "
+                        "INSERT OR REPLACE INTO Book_Base (book_key, title, author, summary, "
                         "characters, theme, conclusion, age_hint, age_band, topics, "
-                        "for_whom, difficulty, mood, source, short_form, "
+                        "for_whom, difficulty, mood, events, quotes, no_test, "
+                        "talk_questions, source, short_form, "
                         "use_count, created_at, updated_at) "
-                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'seed', ?, 0, ?, ?)",
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
+                        "'seed', ?, 0, ?, ?)",
                         (key, b.get("title"), b.get("author"),
                          (p.get("summary") or "").strip(),
                          (p.get("characters") or "").strip(),
@@ -1240,6 +1293,10 @@ def _import_book_seed():
                          (p.get("for_whom") or "").strip(),
                          (p.get("difficulty") or "").strip(),
                          (p.get("mood") or "").strip(),
+                         json.dumps(p.get("events") or [], ensure_ascii=False),
+                         json.dumps(p.get("quotes") or [], ensure_ascii=False),
+                         int(b.get("no_test") or 0),
+                         json.dumps(b.get("talk_questions") or [], ensure_ascii=False),
                          int(b.get("short_form") or 0), now, now))
                     added_base += 1
                 except Exception:
@@ -1254,15 +1311,52 @@ def _import_book_seed():
                 try:
                     cursor.execute(
                         "INSERT OR REPLACE INTO Test_Bank (book_key, title, author, "
-                        "questions_json, use_count, created_at, from_notes) "
+                        "questions_json, use_count, created_at, from_notes, source) "
                         "VALUES (?, ?, ?, ?, "
                         "COALESCE((SELECT use_count FROM Test_Bank WHERE book_key = ?), 0), "
-                        "?, 0)",
+                        "?, 0, 'seed')",
                         (key, b.get("title"), b.get("author"),
                          json.dumps(questions, ensure_ascii=False), key, now))
                     added_test += 1
+                    seed_keys.add(key)
                 except Exception:
                     traceback.print_exc()
+
+        # RASMIY TEST ESKISINI BEKOR QILADI (ega qarori, 2026-09-02).
+        # Ota-ona rasmlaridan ('photo') yoki bola yozuvlaridan ('notes')
+        # tuzilgan test rasmiysi bilan almashtiriladi. Ota-onaning O‘Z
+        # QO‘LI bilan yozgani ('parent') va musobaqa testi ('task')
+        # tegilmaydi — ular ataylab qilingan ish.
+        if seed_keys:
+            try:
+                cursor.execute(
+                    "SELECT pb.book_id, pb.title, pb.author, COALESCE(bt.source, 'photo') "
+                    "FROM Plan_Books pb JOIN Book_Tests bt ON bt.book_id = pb.book_id")
+                _books = cursor.fetchall()
+            except Exception:
+                _books = []
+            _fresh = {}
+            for _bid, _t, _a, _src in _books:
+                if _src in ("seed", "parent", "task"):
+                    continue
+                _k = book_key(_t or "", _a or "")
+                if _k in seed_keys:
+                    _fresh[_bid] = _k
+            for _bid, _k in _fresh.items():
+                try:
+                    cursor.execute("SELECT questions_json FROM Test_Bank WHERE book_key = ?", (_k,))
+                    _r = cursor.fetchone()
+                    if not _r or not _r[0]:
+                        continue
+                    cursor.execute(
+                        "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json, source) "
+                        "VALUES (?, ?, 'seed')", (_bid, _r[0]))
+                    # Rasmiy test to‘liq — u oraliq bosqichlarga bo‘linadi.
+                    cursor.execute("DELETE FROM Auto_Test_State WHERE book_id = ?", (_bid,))
+                except Exception:
+                    traceback.print_exc()
+            if _fresh:
+                print("[seed] %d ta kitobda eski test rasmiysi bilan almashtirildi" % len(_fresh))
 
         try:
             cursor.execute(
@@ -1282,8 +1376,57 @@ def _import_book_seed():
             pass
 
 
+def _stamp_old_seed_sources():
+    """Manba belgisi joriy etilgunga qadar yig‘ilgan yozuvlarni belgilaydi.
+
+    Bankdagi eski testlarning ko‘pi aslida RASMIY bazadan kelgan — shunchaki
+    o‘shanda belgi qo‘yiladigan ustun yo‘q edi. Ularni «manbasi yozilmagan»
+    deb qoldirsak, panel yolg‘on ko‘rsatadi va rasmiy baza yangilanganda
+    ular bekorga qayta yoziladi. Shuning uchun bir marta tekshirib
+    chiqamiz: tayyor baza faylida bor bo‘lsa — «rasmiy» deb belgilanadi.
+
+    Bir marta ishlaydi: belgisiz yozuv qolmagach, fayl umuman ochilmaydi.
+    """
+    try:
+        cursor.execute("SELECT COUNT(*) FROM Test_Bank WHERE source IS NULL OR source = ''")
+        if not (cursor.fetchone() or [0])[0]:
+            return
+        if not os.path.exists(BOOK_SEED_FILE):
+            return
+        with open(BOOK_SEED_FILE, "rb") as fh:
+            data = json.loads(gzip.decompress(fh.read()).decode("utf-8"))
+        keys = {b.get("key") for b in (data.get("books") or []) if b.get("questions")}
+        if not keys:
+            return
+        cursor.execute("SELECT book_key FROM Test_Bank WHERE source IS NULL OR source = ''")
+        old_keys = [r[0] for r in cursor.fetchall()]
+        hit = [k for k in old_keys if k in keys]
+        if not hit:
+            return
+        # Kitoblardagi belgisiz testlardan FAQAT rasmiy bazada bori
+        # belgilanadi. Qolganlari — ota-ona rasmlaridan tuzilganlari —
+        # belgisiz qoladi va rasmiy baza kelganda almashtiriladi.
+        cursor.execute(
+            "SELECT pb.book_id, pb.title, pb.author FROM Plan_Books pb "
+            "JOIN Book_Tests bt ON bt.book_id = pb.book_id "
+            "WHERE bt.source IS NULL OR bt.source = ''")
+        mine = [(r[0], book_key(r[1] or "", r[2] or "")) for r in cursor.fetchall()]
+        book_hits = [bid for bid, k in mine if k in keys]
+        with db_lock:
+            for k in hit:
+                cursor.execute("UPDATE Test_Bank SET source = 'seed' WHERE book_key = ?", (k,))
+            for bid in book_hits:
+                cursor.execute("UPDATE Book_Tests SET source = 'seed' WHERE book_id = ?", (bid,))
+            conn.commit()
+        ai_service.log_line("[kitob_bazasi] %d ta ombor yozuvi va %d ta kitob testi "
+                            "«rasmiy» deb belgilandi" % (len(hit), len(book_hits)))
+    except Exception:
+        traceback.print_exc()
+
+
 try:
     _import_book_seed()
+    _stamp_old_seed_sources()
 except Exception:
     traceback.print_exc()
 
@@ -1961,7 +2104,9 @@ def api_register_role():
     name = g.tg_user.get("first_name", "Foydalanuvchi")
     with db_lock:
         cursor.execute(
-            "INSERT OR IGNORE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)", (uid, name)
+            "INSERT OR IGNORE INTO Users (user_id, name, is_approved, created_at) "
+            "VALUES (?, ?, 1, ?)",
+            (uid, name, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         )
         cursor.execute("UPDATE Users SET role = ? WHERE user_id = ?", (role, uid))
         conn.commit()
@@ -2281,9 +2426,10 @@ def parent_add_child():
     with db_lock:
         child_id = _new_local_child_id()
         cursor.execute(
-            "INSERT INTO Users (user_id, role, name, is_approved, avatar_id, profile_done, child_code) "
-            "VALUES (?, 'child', ?, 1, ?, 1, ?)",
-            (child_id, name, avatar_id, code)
+            "INSERT INTO Users (user_id, role, name, is_approved, avatar_id, profile_done, "
+            "child_code, created_at) VALUES (?, 'child', ?, 1, ?, 1, ?, ?)",
+            (child_id, name, avatar_id, code,
+             datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         )
         cursor.execute(
             "INSERT INTO Family_Link (parent_id, child_id, child_age) VALUES (?, ?, ?)",
@@ -2378,6 +2524,46 @@ def _child_titles(child_id):
 
 AGE_LABELS = {"3": "3-5 yosh", "6": "6-7 yosh", "8": "8-11 yosh", "12": "12+ yosh"}
 
+# ----------------------------------------------------------
+# YOSH TOIFALARI (ega qarori 2026-08-28, 17-19 qo‘shildi 2026-09-01)
+# Kitobning toifasini AI belgilaydi — katalogdagi eski guruh emas.
+# Ko‘rinish KUMULYATIV: past toifadagi asar yuqori toifalarda ham chiqadi.
+# ----------------------------------------------------------
+BANDS = ("4-6", "7-8", "9-10", "11-13", "14-16", "17-19")
+BAND_ORDER = {b: i for i, b in enumerate(BANDS)}
+# Eski katalog guruhlaridan yangi toifaga ko‘prik (pasporti yo‘q kitoblar uchun)
+OLD_GROUP_BAND = {"3": "4-6", "6": "7-8", "8": "9-10", "12": "11-13"}
+
+
+def band_for_age(age):
+    """Bolaning yoshi -> yosh toifasi."""
+    try:
+        age = int(age or 0)
+    except Exception:
+        age = 0
+    if age <= 6:
+        return "4-6"
+    if age <= 8:
+        return "7-8"
+    if age <= 10:
+        return "9-10"
+    if age <= 13:
+        return "11-13"
+    if age <= 16:
+        return "14-16"
+    return "17-19"
+
+
+def clean_band(value, fallback="11-13"):
+    """AI yozgan toifani ro‘yxatdagi qiymatga keltiradi."""
+    v = (value or "").strip()
+    if v in BAND_ORDER:
+        return v
+    for b in BANDS:                       # «11-13 yosh (tarjima...)» kabi holat
+        if v.startswith(b):
+            return b
+    return fallback
+
 
 def _recommend_for(child_id, age, limit=12):
     """Yoshga mos, hali rejada bo‘lmagan kitoblar.
@@ -2386,33 +2572,22 @@ def _recommend_for(child_id, age, limit=12):
     mazmuni ham qo‘shiladi. Baza to‘lgani sari kitob oynasi boyib boradi.
     """
     have = _child_titles(child_id)
-    key = get_age_category_key(age)
-    out = []
-    for raw in RECOMMENDED_BOOKS.get(key, []):
-        b = _split_book(raw)
-        if not b or b["title"].strip().lower() in have:
-            continue
-        b["age_label"] = AGE_LABELS.get(key, "")
-        out.append(b)
-        if len(out) >= limit:
-            break
+    my_band = band_for_age(age)
+    my_i = BAND_ORDER[my_band]
 
-    # Pasportlar alohida so‘rov bilan — asosiy ro‘yxat tayyor bo‘lgach.
-    for b in out:
-        try:
-            cursor.execute(
-                "SELECT theme, summary, age_band, mood FROM Book_Base WHERE book_key = ?",
-                (book_key(b["title"], b["author"]),))
-            row = cursor.fetchone()
-            if row:
-                b["theme"] = row[0] or ""
-                b["summary"] = row[1] or ""
-                if row[2]:
-                    b["age_label"] = row[2] + " yosh"
-                b["mood"] = row[3] or ""
-        except Exception:
-            pass
-    return out
+    # Kumulyativ: bolaning toifasi va undan pastdagilar. Avval o‘z
+    # toifasidagilar, keyin bir pog‘ona pastdagilar — ya'ni yoshiga eng
+    # yaqin kitob tepada turadi (ega qarori, 2026-08-28).
+    picked = []
+    for b in _build_catalog():
+        if b["title"].strip().lower() in have:
+            continue
+        i = BAND_ORDER.get(b.get("age") or "", 3)
+        if i > my_i:
+            continue
+        picked.append((my_i - i, b))
+    picked.sort(key=lambda x: x[0])
+    return [b for _, b in picked[:limit]]
 
 
 @app.route("/api/parent/family_reading", methods=["GET"])
@@ -2531,15 +2706,31 @@ def _build_catalog():
     base = {}
     try:
         cursor.execute(
-            "SELECT book_key, COALESCE(theme, ''), COALESCE(summary, ''), "
-            "COALESCE(age_band, ''), COALESCE(mood, '') FROM Book_Base")
+            "SELECT book_key, COALESCE(title, ''), COALESCE(author, ''), "
+            "COALESCE(theme, ''), COALESCE(summary, ''), "
+            "COALESCE(age_band, ''), COALESCE(mood, ''), "
+            "COALESCE(no_test, 0) FROM Book_Base")
         for r in cursor.fetchall():
-            base[r[0]] = {"theme": r[1], "summary": r[2],
-                          "age_band": r[3], "mood": r[4]}
+            base[r[0]] = {"title": r[1], "author": r[2], "theme": r[3],
+                          "summary": r[4], "age_band": r[5], "mood": r[6],
+                          "no_test": r[7]}
     except Exception:
         base = {}
 
-    books = []
+    # 1) Pasporti bor kitoblar — yosh toifasini AI belgilagan.
+    books, seen = [], set()
+    for key, info in base.items():
+        if not (info["title"] or "").strip() or not (info["summary"] or "").strip():
+            continue
+        band = clean_band(info["age_band"])
+        seen.add(key)
+        books.append({"title": info["title"], "author": info["author"],
+                      "age": band, "age_label": band + " yosh",
+                      "theme": info["theme"], "summary": info["summary"],
+                      "mood": info["mood"],
+                      "no_test": 1 if info["no_test"] else 0})
+
+    # 2) Eski katalogdagi, hali pasporti yo‘q kitoblar — yo‘qolib qolmasin.
     for age_key, titles in RECOMMENDED_BOOKS.items():
         for raw in titles:
             text = (raw or "").strip().rstrip(".")
@@ -2552,16 +2743,11 @@ def _build_catalog():
             else:
                 title, author = text, ""
             title, author = title.strip(), author.strip()
-            b = {"title": title, "author": author, "age": age_key,
-                 "age_label": AGE_LABELS.get(age_key, "")}
-            info = base.get(book_key(title, author))
-            if info:
-                b["theme"] = info["theme"]
-                b["summary"] = info["summary"]
-                b["mood"] = info["mood"]
-                if info["age_band"]:
-                    b["age_label"] = info["age_band"] + " yosh"
-            books.append(b)
+            if book_key(title, author) in seen:
+                continue
+            band = OLD_GROUP_BAND.get(age_key, "11-13")
+            books.append({"title": title, "author": author, "age": band,
+                          "age_label": band + " yosh"})
     books.sort(key=lambda x: x["title"].lower())
     return books
 
@@ -2740,6 +2926,98 @@ def parent_delete_book(book_id):
     return jsonify({"ok": True})
 
 
+# ==========================================================
+# OTA-ONA QO‘LDA TUZGAN TEST
+# ----------------------------------------------------------
+# Rasm ham, AI ham shart emas: ota-ona savollarni o‘zi yozadi yoki
+# AI tuzganini tuzatadi. Guruh musobaqasidagi tahrirchining aynan
+# o‘zi — endi oddiy kitobga ham ulandi.
+# ==========================================================
+PARENT_TEST_MIN = 3          # kamida shuncha savol bo‘lsin
+PARENT_TEST_STAGED = 12      # shundan kam bo‘lsa faqat yakuniy test beriladi
+
+
+@app.route("/api/parent/books/<int:book_id>/test", methods=["GET"])
+@require_auth
+def parent_get_test(book_id):
+    """Tahrirlash uchun savollar — to‘g‘ri javobi bilan birga.
+
+    Bu kitobda test yo‘q bo‘lsa, avval umumiy bank tekshiriladi: kimdir
+    (yoki shu oilaning o‘zi ilgari) bu kitobga test tuzgan bo‘lsa, u
+    AI'siz va rasmsiz qaytariladi.
+    """
+    cursor.execute("SELECT questions_json FROM Book_Tests WHERE book_id = ?", (book_id,))
+    row = cursor.fetchone()
+    if not row:
+        cursor.execute("SELECT title, author FROM Plan_Books WHERE book_id = ?", (book_id,))
+        b = cursor.fetchone()
+        if b and _attach_test_from_bank(book_id, b[0] or "", b[1] or ""):
+            cursor.execute("SELECT questions_json FROM Book_Tests WHERE book_id = ?", (book_id,))
+            row = cursor.fetchone()
+    questions = []
+    if row and row[0]:
+        try:
+            questions = normalize_questions(json.loads(row[0]))
+        except Exception:
+            questions = []
+    cursor.execute("SELECT book_id FROM Auto_Test_State WHERE book_id = ?", (book_id,))
+    return jsonify({"questions": questions, "final_only": cursor.fetchone() is not None})
+
+
+@app.route("/api/parent/books/<int:book_id>/test", methods=["POST"])
+@require_auth
+def parent_save_test(book_id):
+    """Ota-ona yozgan yoki tuzatgan savollarni saqlash.
+
+    Bu test UMUMIY BANKKA yozilmaydi: u bitta oilaning o‘z testi,
+    boshqa oilalarga tarqalmasligi kerak.
+    """
+    data = request.get_json(force=True) or {}
+    clean = []
+    for q in (data.get("questions") or []):
+        if not isinstance(q, dict):
+            continue
+        text = (q.get("question") or "").strip()
+        opts = [str(o).strip() for o in (q.get("options") or []) if str(o).strip()]
+        if not text or len(opts) < 2:
+            continue
+        answer = (q.get("answer") or "").strip() or opts[0]
+        if answer not in opts:
+            opts.insert(0, answer)
+        item = {"id": len(clean) + 1, "question": text, "options": opts, "answer": answer}
+        # AI tuzgan savolning kitob qismi va turkumi saqlanib qolsin —
+        # ota-ona faqat matnini tuzatgan bo‘lishi mumkin.
+        if q.get("part") in (1, 2, 3, "1", "2", "3"):
+            item["part"] = int(q["part"])
+        if q.get("category"):
+            item["category"] = q["category"]
+        clean.append(item)
+
+    if len(clean) < PARENT_TEST_MIN:
+        return jsonify({"error": "Kamida %d ta savol kerak" % PARENT_TEST_MIN}), 400
+
+    final_only = len(clean) < PARENT_TEST_STAGED
+    with db_lock:
+        cursor.execute(
+            "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json, source) "
+            "VALUES (?, ?, 'parent')",
+            (book_id, json.dumps(clean, ensure_ascii=False))
+        )
+        # Savol kam bo‘lsa uchta bosqichga bo‘lish ma'nosiz: har bosqichga
+        # bir-ikkitadan tushardi. Bunday holda bitta yakuniy test beriladi.
+        if final_only:
+            # notes_used = -1 — «ota-ona qo‘lda tuzgan» belgisi. Yozuvlardan
+            # tuzilgan testdan (0) shu bilan ajraladi: kelajakda avtomatik
+            # tuzuvchi qo‘shilsa, ota-ona testiga tegmasligi kerak.
+            cursor.execute(
+                "INSERT OR REPLACE INTO Auto_Test_State (book_id, notes_used, updated_at) "
+                "VALUES (?, -1, ?)", (book_id, datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+        else:
+            cursor.execute("DELETE FROM Auto_Test_State WHERE book_id = ?", (book_id,))
+        conn.commit()
+    return jsonify({"ok": True, "count": len(clean), "final_only": final_only})
+
+
 @app.route("/api/parent/books/<int:book_id>/generate_test", methods=["POST"])
 @require_auth
 def parent_generate_test(book_id):
@@ -2753,9 +3031,14 @@ def parent_generate_test(book_id):
     title = _row[0] if _row else ""
     author = _row[1] if _row else ""
 
-    count = _attach_test_from_bank(book_id, title, author)
-    if count:
-        return jsonify({"ok": True, "count": count, "from_bank": True})
+    # DIQQAT: bankdan olish faqat kitobda test UMUMAN bo‘lmaganda ishlaydi.
+    # Aks holda «qaytadan tuzish» ota-ona qo‘lda yozgan yoki tuzatgan
+    # savollarni jimgina bank nusxasi bilan almashtirib yuborardi.
+    cursor.execute("SELECT test_id FROM Book_Tests WHERE book_id = ?", (book_id,))
+    if cursor.fetchone() is None:
+        count = _attach_test_from_bank(book_id, title, author)
+        if count:
+            return jsonify({"ok": True, "count": count, "from_bank": True})
 
     files = request.files.getlist("photos")
     if not files:
@@ -2804,7 +3087,8 @@ def _start_test_job(book_id, title, author, photos_bytes):
             raw_json = normalize_questions_json(raw_json)
             with db_lock:
                 cursor.execute(
-                    "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
+                    "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json, source) "
+                    "VALUES (?, ?, 'photo')",
                     (book_id, raw_json)
                 )
                 # Ota-ona rasmlardan tuzgan test TO‘LIQ hisoblanadi — u oraliq
@@ -3687,6 +3971,9 @@ def child_book_detail(book_id):
         "stages": stages,
         "talk": talk,
         "short_form": short_form,
+        # Diniy-ma'rifiy kitob: test o‘rniga suhbat savollari.
+        "no_test": bool((base or {}).get("no_test")),
+        "talk_questions": (base or {}).get("talk_questions") or [],
         "talk_ready": talk_ready,
         "book_base": base
     })
@@ -5917,7 +6204,8 @@ def tasks_join(gid, tid):
                 book_id = cursor.lastrowid
             if t["questions"]:
                 cursor.execute(
-                    "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json) VALUES (?, ?)",
+                    "INSERT OR REPLACE INTO Book_Tests (book_id, questions_json, source) "
+                    "VALUES (?, ?, 'task')",
                     (book_id, t["questions"])
                 )
         cursor.execute(
@@ -6104,6 +6392,403 @@ def admin_stats():
         return jsonify({"error": "Ruxsat yo‘q"}), 403
     text = generate_admin_stats_text()
     return jsonify({"html": text})
+
+
+# ==========================================================
+# 5b) O‘SISH PANELI — loyiha egasi uchun
+# ----------------------------------------------------------
+# Marketing va o‘sish uchun raqamlar: nechta oila keldi, qanchasi
+# qoldi, nima qilishyapti, qayerda to‘xtab qolishyapti, qaysi kitob
+# ko‘p o‘qilyapti. Telegram orqali emas, oddiy brauzerda ochiladi —
+# shuning uchun himoya nosozlik jurnalidagi kabi LOG_TOKEN bilan.
+# Token qo‘yilmagan bo‘lsa, bu manzil umuman yo‘q (404).
+#
+# Diqqat: sahifa fayli webapp/ ichida EMAS (u yerda hamma fayl
+# ochiq tarqatiladi) — loyiha papkasining o‘zida turadi.
+# ==========================================================
+PANEL_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "panel.html")
+
+
+def _panel_token_ok():
+    token = os.getenv("LOG_TOKEN", "")
+    return bool(token) and request.args.get("token") == token
+
+
+def _rows(sql, args=()):
+    """So‘rov natijasini to‘liq o‘qib beradi. Jadval bo‘lmasa — bo‘sh."""
+    try:
+        cursor.execute(sql, args)
+        return cursor.fetchall()
+    except Exception:
+        return []
+
+
+def _num(sql, args=(), default=0):
+    r = _rows(sql, args)
+    if not r or r[0][0] is None:
+        return default
+    return r[0][0]
+
+
+def _pct(part, whole):
+    return round(part * 100.0 / whole, 1) if whole else 0.0
+
+
+def _day_list(n):
+    """Oxirgi n kun, eng eskisidan boshlab."""
+    base = datetime.now().date()
+    return [(base - timedelta(days=i)).strftime("%Y-%m-%d") for i in range(n - 1, -1, -1)]
+
+
+def _monday(day_str):
+    d = datetime.strptime(day_str, "%Y-%m-%d").date()
+    return (d - timedelta(days=d.weekday())).strftime("%Y-%m-%d")
+
+
+def _panel_payload():
+    """Panelga kerak bo‘lgan HAMMA raqam bitta javobda."""
+    now = datetime.now()
+    today = now.strftime("%Y-%m-%d")
+    d7 = (now - timedelta(days=6)).strftime("%Y-%m-%d")
+    d30 = (now - timedelta(days=29)).strftime("%Y-%m-%d")
+    horizon = (now - timedelta(days=180)).strftime("%Y-%m-%d")
+
+    # ---------- 1. FOYDALANUVCHILAR ----------
+    users = _rows("SELECT user_id, role, streak_days, balance_coins, avatar_id, "
+                  "created_at, last_read_date FROM Users")
+    parents = [u for u in users if u[1] == "parent"]
+    children = [u for u in users if u[1] == "child"]
+    no_role = [u for u in users if not u[1]]
+
+    links = _rows("SELECT parent_id, child_id, child_age FROM Family_Link")
+    fam_children = {}
+    for p, c, age in links:
+        fam_children.setdefault(p, []).append(c)
+
+    # ---------- 2. FAOLLIK KUNLARI ----------
+    # Har bir foydalanuvchining qaysi kunlarda ilovada iz qoldirgani.
+    # Bir nechta manbadan yig‘iladi — bola o‘qiydi, ota-ona sovg‘a beradi.
+    act = {}          # user_id -> {kun, ...}
+    first_seen = {}   # user_id -> eng erta kun
+
+    def mark(uid, day):
+        if not uid or not day:
+            return
+        day = day[:10]
+        if len(day) != 10:
+            return
+        act.setdefault(uid, set()).add(day)
+        if uid not in first_seen or day < first_seen[uid]:
+            first_seen[uid] = day
+
+    read_logs = _rows("SELECT child_id, substr(created_at,1,10), pages_added "
+                      "FROM Reading_Logs WHERE substr(created_at,1,10) >= ?", (horizon,))
+    for cid, day, pages in read_logs:
+        mark(cid, day)
+    for cid, day in _rows("SELECT child_id, substr(created_at,1,10) FROM Diagnostic_Logs "
+                          "WHERE substr(created_at,1,10) >= ?", (horizon,)):
+        mark(cid, day)
+    for pid, cid, day in _rows("SELECT parent_id, child_id, substr(created_at,1,10) "
+                               "FROM Purchases WHERE substr(created_at,1,10) >= ?", (horizon,)):
+        mark(pid, day)
+        mark(cid, day)
+    for pid, day in _rows("SELECT parent_id, substr(read_at,1,10) FROM Notifications "
+                          "WHERE read_at IS NOT NULL AND substr(read_at,1,10) >= ?", (horizon,)):
+        mark(pid, day)
+    for cid, day in _rows("SELECT child_id, substr(joined_at,1,10) FROM Group_Members "
+                          "WHERE substr(joined_at,1,10) >= ?", (horizon,)):
+        mark(cid, day)
+
+    # Ro‘yxatdan o‘tgan kun aniq yozilgan bo‘lsa — u ustun turadi.
+    for u in users:
+        if u[5]:
+            day = u[5][:10]
+            if u[0] not in first_seen or day < first_seen[u[0]]:
+                first_seen[u[0]] = day
+
+    child_ids = {u[0] for u in children}
+    parent_ids = {u[0] for u in parents}
+
+    def actives(ids, since):
+        return {uid for uid in ids if any(d >= since for d in act.get(uid, ()))}
+
+    dau = actives(child_ids, today)
+    wau = actives(child_ids, d7)
+    mau = actives(child_ids, d30)
+    p_wau = actives(parent_ids, d7)
+
+    # ---------- 3. KUNLIK QATORLAR ----------
+    days30 = _day_list(30)
+    pages_by_day = {d: 0 for d in days30}
+    readers_by_day = {d: set() for d in days30}
+    for cid, day, pages in read_logs:
+        if day in pages_by_day:
+            pages_by_day[day] += (pages or 0)
+            readers_by_day[day].add(cid)
+    new_by_day = {d: 0 for d in days30}
+    for uid, day in first_seen.items():
+        if day in new_by_day:
+            new_by_day[day] += 1
+
+    # ---------- 4. USHLAB QOLISH ----------
+    # Haftalik kogortalar: shu haftada kelganlarning qanchasi keyingi
+    # hafta va bir oydan keyin ham qaytgani.
+    cohorts = {}
+    for uid, day in first_seen.items():
+        if uid not in child_ids:
+            continue
+        cohorts.setdefault(_monday(day), []).append(uid)
+    cohort_rows = []
+    for wk in sorted(cohorts)[-8:]:
+        members = cohorts[wk]
+        start = datetime.strptime(wk, "%Y-%m-%d").date()
+
+        def back_in(week_no):
+            a = (start + timedelta(days=7 * week_no)).strftime("%Y-%m-%d")
+            b = (start + timedelta(days=7 * week_no + 6)).strftime("%Y-%m-%d")
+            return sum(1 for m in members if any(a <= d <= b for d in act.get(m, ())))
+
+        cohort_rows.append({
+            "week": wk, "size": len(members),
+            "w1": _pct(back_in(1), len(members)),
+            "w2": _pct(back_in(2), len(members)),
+            "w4": _pct(back_in(4), len(members)),
+        })
+
+    # Parvoz (ketma-ket kunlar) taqsimoti
+    streak_buckets = {"0": 0, "1-3": 0, "4-7": 0, "8-14": 0, "15+": 0}
+    for u in children:
+        s = u[2] or 0
+        key = "0" if s <= 0 else "1-3" if s <= 3 else "4-7" if s <= 7 else "8-14" if s <= 14 else "15+"
+        streak_buckets[key] += 1
+
+    def last_day(uid):
+        ds = act.get(uid)
+        return max(ds) if ds else None
+
+    sleeping, lost, never = 0, 0, 0
+    for cid in child_ids:
+        ld = last_day(cid)
+        if not ld:
+            never += 1
+        elif ld < d30:
+            lost += 1
+        elif ld < d7:
+            sleeping += 1
+
+    # ---------- 5. VORONKA ----------
+    books = _rows("SELECT pb.book_id, rp.child_id, pb.title, pb.author, pb.pages_read, "
+                  "pb.total_pages, pb.is_completed, pb.audio_count, pb.mid_test_1_done, "
+                  "pb.mid_test_2_done, pb.final_test_done, pb.talk_start_done, pb.talk_end_done "
+                  "FROM Plan_Books pb JOIN Reading_Plans rp ON pb.plan_id = rp.plan_id")
+    with_book, with_page, with_test, with_voice, with_done = set(), set(), set(), set(), set()
+    for b in books:
+        cid = b[1]
+        with_book.add(cid)
+        if (b[4] or 0) > 0:
+            with_page.add(cid)
+        if b[8] or b[9] or b[10]:
+            with_test.add(cid)
+        if (b[7] or 0) > 0:
+            with_voice.add(cid)
+        if b[6]:
+            with_done.add(cid)
+    nch = len(child_ids) or 1
+    funnel = [
+        {"name": "Ro‘yxatdan o‘tgan", "n": len(child_ids), "pct": 100.0},
+        {"name": "Kitob qo‘shilgan", "n": len(with_book & child_ids), "pct": _pct(len(with_book & child_ids), nch)},
+        {"name": "Birinchi bet o‘qilgan", "n": len(with_page & child_ids), "pct": _pct(len(with_page & child_ids), nch)},
+        {"name": "Ovozli xulosa bergan", "n": len(with_voice & child_ids), "pct": _pct(len(with_voice & child_ids), nch)},
+        {"name": "Test topshirgan", "n": len(with_test & child_ids), "pct": _pct(len(with_test & child_ids), nch)},
+        {"name": "Kitobni tugatgan", "n": len(with_done & child_ids), "pct": _pct(len(with_done & child_ids), nch)},
+    ]
+
+    # ---------- 6. KITOBLAR ----------
+    title_count, title_done, title_pages = {}, {}, {}
+    for b in books:
+        t = (b[2] or "").strip()
+        if not t:
+            continue
+        title_count[t] = title_count.get(t, 0) + 1
+        title_pages[t] = title_pages.get(t, 0) + (b[4] or 0)
+        if b[6]:
+            title_done[t] = title_done.get(t, 0) + 1
+    top_books = sorted(title_count.items(), key=lambda x: -x[1])[:12]
+    top_books = [{"title": t, "n": n, "done": title_done.get(t, 0),
+                  "pages": title_pages.get(t, 0)} for t, n in top_books]
+
+    total_pages = sum((b[4] or 0) for b in books)
+    done_books = sum(1 for b in books if b[6])
+    abandoned = sum(1 for b in books if not b[6] and (b[4] or 0) > 0
+                    and (b[5] or 0) > 0 and b[4] < b[5] * 0.2)
+
+    # ---------- 7. KONTENT BAZASI ----------
+    base_n = _num("SELECT COUNT(*) FROM Book_Base")
+    bank_n = _num("SELECT COUNT(*) FROM Test_Bank")
+    # MANBALAR — bazaning qaysi qismi rasmiy, qaysi qismi ota-onalardan
+    # yig‘ilgani. Ega buni kuzatib borishni so‘radi (2026-09-02).
+    # Manbasi yozilmagan eski yozuvlar «eskisi» deb ko‘rsatiladi — ular
+    # manba belgisi joriy qilingunga qadar yig‘ilgan.
+    src_base = dict(_rows(
+        "SELECT COALESCE(NULLIF(source, ''), 'eskisi'), COUNT(*) FROM Book_Base GROUP BY 1"))
+    src_bank = dict(_rows(
+        "SELECT COALESCE(NULLIF(source, ''), 'eskisi'), COUNT(*) FROM Test_Bank GROUP BY 1"))
+    src_tests = dict(_rows(
+        "SELECT COALESCE(NULLIF(source, ''), 'eskisi'), COUNT(*) FROM Book_Tests GROUP BY 1"))
+    bank_use = _num("SELECT SUM(use_count) FROM Test_Bank")
+    tests_n = _num("SELECT COUNT(*) FROM Book_Tests")
+    books_no_test = max(0, len(books) - tests_n)
+
+    # ---------- 8. AI SARFI ----------
+    ai_checks = _num("SELECT COUNT(*) FROM Page_Check_Log")
+    ai_cached = _num("SELECT COUNT(*) FROM Page_Check_Log WHERE from_cache = 1")
+    ai_30 = _num("SELECT COUNT(*) FROM Page_Check_Log WHERE substr(created_at,1,10) >= ?", (d30,))
+    diag = dict(_rows("SELECT type, COUNT(*) FROM Diagnostic_Logs GROUP BY type"))
+
+    # ---------- 9. DO‘KON VA BILIG ----------
+    store_items = _num("SELECT COUNT(*) FROM Store_Items")
+    store_parents = _num("SELECT COUNT(DISTINCT parent_id) FROM Store_Items")
+    buys = _num("SELECT COUNT(*) FROM Purchases")
+    buys_given = _num("SELECT COUNT(*) FROM Purchases WHERE given_at IS NOT NULL")
+    buys_wait = max(0, buys - buys_given)
+    earned = _num("SELECT SUM(amount) FROM Coin_Ledger WHERE amount > 0")
+    spent = abs(_num("SELECT SUM(amount) FROM Coin_Ledger WHERE amount < 0"))
+    balance = sum((u[3] or 0) for u in children)
+
+    # ---------- 10. GURUHLAR ----------
+    groups_n = _num("SELECT COUNT(*) FROM Groups")
+    gmembers = _rows("SELECT DISTINCT child_id FROM Group_Members")
+    in_group = {r[0] for r in gmembers}
+    tasks = dict(_rows("SELECT status, COUNT(*) FROM Group_Tasks GROUP BY status"))
+    kudos_n = _num("SELECT COUNT(*) FROM Group_Kudos")
+
+    pages_by_child = {}
+    for b in books:
+        pages_by_child[b[1]] = pages_by_child.get(b[1], 0) + (b[4] or 0)
+    g_in = [pages_by_child.get(c, 0) for c in child_ids if c in in_group]
+    g_out = [pages_by_child.get(c, 0) for c in child_ids if c not in in_group]
+    avg_in = round(sum(g_in) / len(g_in), 1) if g_in else 0
+    avg_out = round(sum(g_out) / len(g_out), 1) if g_out else 0
+
+    # ---------- 11. DEMOGRAFIYA ----------
+    ages = {}
+    for p, c, age in links:
+        if c in child_ids:
+            a = age or 0
+            key = "5-7" if a <= 7 else "8-10" if a <= 10 else "11-13" if a <= 13 else "14+" if a else "noma'lum"
+            ages[key] = ages.get(key, 0) + 1
+    avatars = {}
+    for u in children:
+        avatars[u[4] or "fox"] = avatars.get(u[4] or "fox", 0) + 1
+
+    # ---------- 12. AVTOMATIK SIGNALLAR ----------
+    signals = []
+    if mau:
+        st = _pct(len(dau), len(mau))
+        signals.append({
+            "tone": "good" if st >= 20 else "warn",
+            "title": "Yopishqoqlik " + str(st) + "%",
+            "text": "Oylik faol bolalarning shuncha qismi bugun ham kirdi. "
+                    "20% dan yuqorisi — kuchli odat belgisi."
+        })
+    if g_in and g_out and avg_out:
+        diff = round((avg_in - avg_out) * 100.0 / avg_out)
+        signals.append({
+            "tone": "good" if diff > 0 else "warn",
+            "title": "Guruhdagilar " + ("+" if diff > 0 else "") + str(diff) + "%",
+            "text": "Guruhga a'zo bola o‘rtacha " + str(avg_in) + " bet, a'zo bo‘lmagani "
+                    + str(avg_out) + " bet o‘qigan. Guruh — o‘sish dastagi."
+        })
+    drop = len(child_ids) - len(with_page & child_ids)
+    if len(child_ids):
+        signals.append({
+            "tone": "warn" if _pct(drop, nch) > 30 else "good",
+            "title": str(drop) + " bola hali bet o‘qimagan",
+            "text": "Ro‘yxatdan o‘tganlarning " + str(_pct(drop, nch)) +
+                    "% i birinchi betgacha yetmagan. Eng katta yo‘qotish shu yerda."
+        })
+    if sleeping or lost:
+        signals.append({
+            "tone": "warn",
+            "title": str(sleeping) + " uxlab qolgan, " + str(lost) + " yo‘qolgan",
+            "text": "7 kundan beri kirmaganlar va 30 kundan beri kirmaganlar. "
+                    "Qaytarish xabari uchun aniq ro‘yxat."
+        })
+    if ai_checks:
+        signals.append({
+            "tone": "good" if _pct(ai_cached, ai_checks) > 20 else "warn",
+            "title": "AI tejash " + str(_pct(ai_cached, ai_checks)) + "%",
+            "text": "Sahifa tekshiruvlarining shuncha qismi tayyor javobdan olindi — "
+                    "bu pul ketmagan chaqiruvlar."
+        })
+    if top_books:
+        signals.append({
+            "tone": "good",
+            "title": "Eng ko‘p o‘qilgan: " + top_books[0]["title"],
+            "text": str(top_books[0]["n"]) + " bolaning javonida. Nashriyot bilan "
+                    "gaplashish uchun birinchi nom."
+        })
+
+    return {
+        "generated_at": now.strftime("%Y-%m-%d %H:%M"),
+        "kpi": {
+            "families": len(fam_children), "parents": len(parents),
+            "children": len(children), "no_role": len(no_role),
+            "avg_children": round(len(children) / len(fam_children), 2) if fam_children else 0,
+            "dau": len(dau), "wau": len(wau), "mau": len(mau),
+            "parent_wau": len(p_wau),
+            "stickiness": _pct(len(dau), len(mau)),
+            "total_pages": total_pages, "books": len(books),
+            "done_books": done_books, "abandoned": abandoned,
+            "pages_today": pages_by_day.get(today, 0),
+            "avg_pages": round(total_pages / len(children), 1) if children else 0,
+        },
+        "days": days30,
+        "series": {
+            "pages": [pages_by_day[d] for d in days30],
+            "readers": [len(readers_by_day[d]) for d in days30],
+            "new_users": [new_by_day[d] for d in days30],
+        },
+        "cohorts": cohort_rows,
+        "streaks": streak_buckets,
+        "churn": {"sleeping": sleeping, "lost": lost, "never": never},
+        "funnel": funnel,
+        "top_books": top_books,
+        "content": {"base": base_n, "bank": bank_n, "bank_use": bank_use,
+                    "tests": tests_n, "no_test": books_no_test,
+                    "src_base": src_base, "src_bank": src_bank, "src_tests": src_tests},
+        "ai": {"checks": ai_checks, "cached": ai_cached, "last30": ai_30, "diag": diag},
+        "store": {"items": store_items, "parents": store_parents, "buys": buys,
+                  "given": buys_given, "waiting": buys_wait,
+                  "earned": earned, "spent": spent, "balance": balance},
+        "groups": {"n": groups_n, "members": len(in_group), "kudos": kudos_n,
+                   "tasks": tasks, "avg_in": avg_in, "avg_out": avg_out},
+        "ages": ages,
+        "avatars": avatars,
+        "signals": signals,
+    }
+
+
+@app.route("/api/panel/data", methods=["GET"])
+def panel_data():
+    if not _panel_token_ok():
+        return ("Topilmadi", 404)
+    try:
+        return jsonify(_panel_payload())
+    except Exception as e:
+        traceback.print_exc()
+        ai_service.log_line("[panel] XATO: %r" % (e,))
+        return jsonify({"error": ai_service.human_error(e)}), 500
+
+
+@app.route("/panel")
+def panel_page():
+    if not _panel_token_ok():
+        return ("Topilmadi", 404)
+    if not os.path.isfile(PANEL_FILE):
+        return ("panel.html topilmadi", 500)
+    return _no_cache(Response(io.open(PANEL_FILE, encoding="utf-8").read(),
+                              mimetype="text/html"))
 
 
 # ==========================================================

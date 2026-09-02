@@ -1,0 +1,480 @@
+{
+ "title": "O‘tkan kunlar",
+ "author": "Abdulla Qodiriy",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "sevgi",
+   "vafo",
+   "tarix",
+   "vatanparvarlik",
+   "oila",
+   "halollik"
+  ],
+  "theme": "Asarning bosh g‘oyasi — pok muhabbat, sadoqat hamda milliy birlik va totuvlikning qadriga yetishdir. Muallif o‘zaro nizo, xiyonat va hasad nafaqat oilalarni, balki butun el-yurtni halokatga yetaklashini, jaholat va istibdodga qarshi ma’rifat va hamjihatlik zarurligini ko‘rsatib beradi.",
+  "summary": "Toshkandlik a’yon Yusufbek hojining o‘g‘li Otabek savdo ishlari bilan Marg‘ilonga keladi. U bu yerda Ziyo shohichinikidagi majlisda qutidor Mirzakarim aka bilan tanishadi. Otabek qutidorning qizi Kumushbibini tasodifan ko‘rib, uni sevib qoladi va ularning nikohi qiyiladi. Biroq Marg‘ilondagi Homid xotinboz Kumushga ko‘z tikkani uchun Otabekka hasad qiladi va fitna uyushtirishga kirishadi.\n\nShu orasida Toshkand hokimi Azizbek zolimlik qilib xalqqa og‘ir soliq soladi, Yusufbek hoji esa xalqni isyonga boshlaydi. Qo‘qon xonligi bilan nizolar kuchayadi. Homidning chaqimchiligi ortidan Otabek va Qutidor Marg‘ilonda qamalib, dor tagiga olib chiqiladi, lekin Toshkanddan kelgan chopar va Yusufbek hojining obro‘si sababli ozod etiladilar.\n\nHomid rejasini o‘zgartirib, Toshkandga soxta xat yuboradi va Otabek hamda Kumush o‘rtasiga sovuqchilik tushiradi. Toshkandda Otabekning onasi O‘zbekoyim o‘g‘lini o‘z xohishi bilan Zaynabga uylantiradi. Otabek Zaynabga ko‘ngil qo‘ymaydi, Kumushni unutolmaydi. Homid esa Kumushni qo‘lga kiritish uchun Komilbekni o‘ldiradi va Qutidorning uyini teshishga urinadi. Otabek Homid va uning sheriklarini tanho kurashda mahv etadi va barcha haqiqat oydinlashadi.\n\nKumush Toshkandga keladi. O‘zbekoyim va Yusufbek hoji uni izzat-ikrom bilan kutib olishadi. Kumush va Zaynab kundash bo‘lib bir hovlida yashay boshlaydilar. Tez orada Kumush o‘g‘il ko‘radi. Rashk va kundashlik alangasida kuygan Zaynab ovqatga zahar qo‘shib Kumushga beradi. Kumush og‘ir azobda vafot etadi. Zaynab esdan og‘ib jinni bo‘lib qoladi. Chaqaloqqa Yodgorbek deb ism qo‘yiladi. Qalbi cheksiz g‘amga batamom to‘lgan Otabek Marg‘ilonga qaytib, so‘ngra vatanni himoya qilish uchun jangga ketadi va Olmaota yaqinida o‘rislar bilan bo‘lgan urushda mardlarcha shahid bo‘ladi.",
+  "characters": "Otabek — Yusufbek hojining o‘g‘li, mulohazali, oqil, mard va vatanparvar yigit. Kumushbibi — Mirzakarim qutidorning qizi, go‘zal, vafo va ibo timsoli bo‘lgan oqila qiz. Yusufbek hoji — Otabekning otasi, Toshkand a’yoni, el-yurt tinchligi va adolat uchun qayg‘uruvchi arbob. Homid — hasadgo‘y, ayyor va yovuz kishi, Otabek va Kumushning baxtiga zamin yaratgan fitnalar muallifi. Zaynab — Otabekning ikkinchi xotini, rashk hamda kundashlik oqibatida jinoyatga qo‘l urgan ayol. Hasanali — Otabeklar xonadonining sadoqatli, mehribon va dono xizmatkori.",
+  "conclusion": "Ushbu asar o‘quvchiga vafo, halollik va sadoqat kabi oliyjanob fazilatlarni o‘rgatadi. O‘smir bola o‘zaro fitna hamda hasadning naqadar og‘ir oqibatlarga olib kelishini anglaydi. Ota-onani va oilaviy qadriyatlarni e’zozlash, el-yurt tinchligi va birligi uchun mas’uliyatli bo‘lish tuyg‘usi shakllanadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi, fojialik",
+  "for_whom": "Tarixiy voqealarga qiziqadigan, adabiy tilning go‘zalligini his etadigan va samimiy muhabbat hamda vafo haqida o‘qishni xohlaydigan o‘smirlarga.",
+  "events": [
+   "1264-hijriy qish kunlarining birida Otabek Marg‘ilondagi Toshkand savdogarlari saroyiga tushadi.",
+   "Ziyo shohichining o‘g‘li Rahmat va Homidboy Otabekning hujrasiga mehmon bo‘lib kelishadi.",
+   "Hujradagi suhbatda uylanish, er va xotin munosabatlari haqida bahs bo‘lib o‘tadi.",
+   "Otabek Ziyo shohichining uyida otasining qadrdon do‘sti Mirzakarim qutidor bilan tanishadi.",
+   "Ziyofatda Otabek Shamay shahrida ko‘rgan tartib-qoidalari va yurtning orqada qolgani haqida gapiradi.",
+   "Homid Otabekning bilimdonligi va obro‘siga ichida hasad qila boshlaydi.",
+   "Otabek tasodifan Mirzakarim qutidorning qizi Kumushbibini ko‘rib, unga ko‘ngil qo‘yadi.",
+   "Toshkandda hokim Azizbek zolimlik qilib xalqqa og‘ir soliq soladi, Yusufbek hoji xalqni isyonga chorlaydi.",
+   "Homidning sotqinligi va chaqimchiligi ortidan Otabek va Qutidor Marg‘ilonda hibsga olinadi.",
+   "Otabek va Qutidor dorg‘a osilish hukmi chiqarilgan joyda Toshkand choparining xabari bilan o‘limdan qutilishadi.",
+   "Homid Otabek nomidan soxta taloq xati tayyorlab Kumush va Otabekning orasini buzadi.",
+   "Toshkandda O‘zbekoyim o‘g‘li Otabekni majburlab Zaynabga uylantiradi.",
+   "Homid Kumushga ega bo‘lish uchun Komilbekni o‘ldirtiradi va Qutidorning uyini teshishga buyuradi.",
+   "Otabek Homid va uning o‘g‘ri sheriklarini tanho jangda mag‘lub etib, haqiqatni yuzaga chiqaradi.",
+   "Yusufbek hoji o‘g‘li Otabek bilan tushunmovchiliklarni hal qilib, Kumushni Toshkandga olib kelishga ruxsat beradi.",
+   "Kumush Toshkandga kelib, O‘zbekoyim va Yusufbek hojining samimiy e’zoziga sazovor bo‘ladi.",
+   "Kumush va Zaynab bir hovlida kundash sifatida yashay boshlashadi.",
+   "Kumush o‘g‘il farzand dunyoga keltirib, unga xursandchilik bilan qaraydilar.",
+   "Zaynab rashk va hasad sababli atalaga zahar qo‘shib Kumushga beradi.",
+   "Kumush og‘ir zaharlanib vafot etadi, Zaynab esa ruhiy xastalikka chalinib jinni bo‘lib qoladi.",
+   "Otabekning o‘g‘liga Yodgorbek deb ism qo‘yiladi va u Marg‘ilondagi buvasi qaramog‘iga beriladi.",
+   "Otabek vatan himoyasi uchun janglarga ketib, Olmaota yaqinida dushman bilan urushda shahid bo‘ladi."
+  ],
+  "quotes": [
+   "Moziyg‘a qaytib ish ko‘rish xayrlik, deydilar.",
+   "Uylanishdek nozik bir ish dunyoda yo‘qdir.",
+   "Yurgan daryo, o‘lturgan bo‘ryo emish.",
+   "Darhaqiqat, mozoristonda “hayya alal falah” xitobini kim eshitar edi.",
+   "O‘zimizning ichimizdan buzilsaq, bizga na o‘ris va na boshqa dushman kerak emasdir.",
+   "Kundash – kundashdir, har qancha aslzoda bo‘lsa ham."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otabek Marg‘ilonda birinchi bo‘lib kimning saroyiga tushdi?",
+   "options": [
+    "A) Toshkandlik savdogarlar saroyiga",
+    "B) Marg‘ilonlik xon saroyiga",
+    "C) Ziyo shohichining hovlisiga",
+    "D) Mirzakarim qutidorning do‘koniga"
+   ],
+   "answer": "A) Toshkandlik savdogarlar saroyiga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hasanali Otabeklar xonadoniga qanday kelib qolgan edi?",
+   "options": [
+    "A) Turkmandan sotib olingan qul edi",
+    "B) Marg‘ilondan o‘zi kelgan edi",
+    "C) Yusufbek hojiga shogird tushgan edi",
+    "D) Qutidorga xizmatchi bo‘lib kirgan edi"
+   ],
+   "answer": "A) Turkmandan sotib olingan qul edi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otabek savdo ishlari bilan qaysi rus shahrida bo‘lgan?",
+   "options": [
+    "A) Shamay shahrida bo‘lgan",
+    "B) Moskva shahrida bo‘lgan",
+    "C) Orenburg shahrida bo‘lgan",
+    "D) Qozon shahrida bo‘lgan"
+   ],
+   "answer": "A) Shamay shahrida bo‘lgan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otabek mehmondorchilikda Ziyo shohichinikida kim bilan tanishdi?",
+   "options": [
+    "A) Mirzakarim qutidor va Akram hoji",
+    "B) Musulmonqul va Azizbek bilan",
+    "C) Normuhammad qushbegi va Homid bilan",
+    "D) Salim sharbatdor va Komilbek bilan"
+   ],
+   "answer": "A) Mirzakarim qutidor va Akram hoji"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dastlabki suhbatlarda Otabek, Homid va Rahmat nimani muhokama qilishdi?",
+   "options": [
+    "A) Uylanish va xotinlar haqidagi qarashlarni",
+    "B) Shamay shahridagi bozor narxlarini",
+    "C) Toshkanddagi qamal va urush holatini",
+    "D) Qo‘qon xonligidagi soliq miqdorini"
+   ],
+   "answer": "A) Uylanish va xotinlar haqidagi qarashlarni"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Otabek nima uchun Shamay idora usulini orzu qiladi?",
+   "options": [
+    "A) Yurtda tartib va taraqqiyot bo‘lishi uchun",
+    "B) O‘zi xon bo‘lib taxtga o‘tirish uchun",
+    "C) Toshkanddan savdoni ko‘chirish uchun",
+    "D) Chet elga ko‘chib ketish uchun"
+   ],
+   "answer": "A) Yurtda tartib va taraqqiyot bo‘lishi uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Homid majlisda Otabekka nega istehzo bilan gapirdi?",
+   "options": [
+    "A) Ichida hasad va adovat bo‘lgani uchun",
+    "B) Otabek uni mehmonga chaqirmagani uchun",
+    "C) Ziyo shohichi bilan urishgani uchun",
+    "D) Savdoda moli o‘tmay qolgani uchun"
+   ],
+   "answer": "A) Ichida hasad va adovat bo‘lgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Otabekning otasi haqida haqiqatni aytishi to‘g‘ri harakatmi?",
+   "options": [
+    "A) To‘g‘ri — halollik va haqiqatparvarlik alomati",
+    "B) Noto‘g‘ri — otasini fosh qilmasligi kerak edi",
+    "C) To‘g‘ri — Azizbekka xushomad qilish uchun",
+    "D) Noto‘g‘ri — mehmonlarni qo‘rqitib yuborgani uchun"
+   ],
+   "answer": "A) To‘g‘ri — halollik va haqiqatparvarlik alomati"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Otabekning Shamay haqidagi gaplarini qanday ataydi?",
+   "options": [
+    "A) Mozaristonda aytilgan chaqiriqqa o‘xshatadi",
+    "B) Quruq va ma’nosiz safsata deydi",
+    "C) Oddiy savdogarning maqtanishi deb baholaydi",
+    "D) Toshkand ahli uchun ermak deydi"
+   ],
+   "answer": "A) Mozaristonda aytilgan chaqiriqqa o‘xshatadi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Akram hoji Otabekning mulohazalarini eshitib unga qanday baho berdi?",
+   "options": [
+    "A) Yigitlar ichida eng aqllisi deb maqtadi",
+    "B) Manman va takabbur yigit ekan dedi",
+    "C) Savdoni bilmaydigan nodon ekan dedi",
+    "D) Xon saroyiga munosib emas dedi"
+   ],
+   "answer": "A) Yigitlar ichida eng aqllisi deb maqtadi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otabek va Qutidor Marg‘ilonda nima sababdan ushlanib qamoqqa olindi?",
+   "options": [
+    "A) Toshkand isyoni va fitnada ayblanib",
+    "B) Bozorda molni qimmat sotgani uchun",
+    "C) Homidning uyidan narsa o‘g‘irlagani uchun",
+    "D) Qo‘qon xoniga soliq to‘lamagani uchun"
+   ],
+   "answer": "A) Toshkand isyoni va fitnada ayblanib"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Marg‘ilonda Otabek va Qutidorni qanday jazo kutayotgan edi?",
+   "options": [
+    "A) Dorgan osish jazosi",
+    "B) Shahardan quvilish jazosi",
+    "C) Katta miqdorda jarima to‘lash",
+    "D) Buxoroga surgun qilinish jazosi"
+   ],
+   "answer": "A) Dorgan osish jazosi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Toshkandda kim xalqqa qarshi o‘ttiz ikki tanga soliq soldi?",
+   "options": [
+    "A) Azizbek soliq soldi",
+    "B) Yusufbek hoji soldi",
+    "C) Musulmonqul soldi",
+    "D) Normuhammad qushbegi soldi"
+   ],
+   "answer": "A) Azizbek soliq soldi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Toshkand xalqini Azizbekka qarshi kim qo‘zg‘atdi va isyon boshladi?",
+   "options": [
+    "A) Yusufbek hoji qo‘zg‘atdi",
+    "B) Otabek qo‘zg‘atdi",
+    "C) Musulmonqul qo‘zg‘atdi",
+    "D) Homidboy qo‘zg‘atdi"
+   ],
+   "answer": "A) Yusufbek hoji qo‘zg‘atdi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Otabek va Qutidor o‘limdan qanday qutulib qolishdi?",
+   "options": [
+    "A) Toshkanddan kelgan chopar xabari bilan",
+    "B) Homid kelib ularni ozod qildi",
+    "C) Zaynab qamoqxona kalitini o‘g‘irlagani uchun",
+    "D) Akram hoji katta pul to‘lagani uchun"
+   ],
+   "answer": "A) Toshkanddan kelgan chopar xabari bilan"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kumushning Otabekka yozgan achchiq maktubiga kim sababchi bo‘lgan edi?",
+   "options": [
+    "A) Homidning hiylasi va soxta maktubi",
+    "B) Zaynabning o‘zi yozgan xati",
+    "C) Hasanali aytgan noto‘g‘ri gaplar",
+    "D) O‘zbekoyimning Marg‘ilonga yuborgan sovg‘asi"
+   ],
+   "answer": "A) Homidning hiylasi va soxta maktubi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Homid Komilbekni o‘ldirish va uyni teshishdan qanday maqsad ko‘zlagan?",
+   "options": [
+    "A) Kumushga zorlik bilan ega bo‘lish",
+    "B) Toshkand xonini taxtdan ag‘darish",
+    "C) Otabek bilan savdo hamkorligi qilish",
+    "D) Qutidorning boyligini tonomoqchi bo‘lish"
+   ],
+   "answer": "A) Kumushga zorlik bilan ega bo‘lish"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Otabek o‘g‘rilar va Homid bilan nega tanho o‘zi kurashdi?",
+   "options": [
+    "A) Dushmani bilan mardona hisoblashish uchun",
+    "B) Yonida hech kim yo‘qligi uchun",
+    "C) Boshqalarga bildirishdan qo‘rqqani uchun",
+    "D) Usta Alim yordam bermagani uchun"
+   ],
+   "answer": "A) Dushmani bilan mardona hisoblashish uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Yusufbek hojining Azizbekka qarshi elni birlashtirishi qanday baholanadi?",
+   "options": [
+    "A) Yurt tinchligi va adolat uchun",
+    "B) O‘z manfaati va boyligi uchun",
+    "C) Musulmonqulga xushomad qilish uchun",
+    "D) Hokimlikni qo‘lga olish uchun"
+   ],
+   "answer": "A) Yurt tinchligi va adolat uchun"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Kumushning husnini xazon barglari fonida tasvirlashda nimani ko‘rsatadi?",
+   "options": [
+    "A) Uning nafis va g‘amgin holatini",
+    "B) Bahor fasli kelganini xabar qiladi",
+    "C) Kumushning boy va mag‘rurligini",
+    "D) Qishki sovuqning qattiqligini aytadi"
+   ],
+   "answer": "A) Uning nafis va g‘amgin holatini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kumush Toshkandga kelgach, O‘zbekoyim va hoji uni qanday kutdi?",
+   "options": [
+    "A) Izzo-ikrom va mehr bilan kutishdi",
+    "B) Uyga kiritmay haydab yuborishdi",
+    "C) Zaynabning uyiga qamab qo‘yishdi",
+    "D) Darhol Marg‘ilonga qaytarib yuborishdi"
+   ],
+   "answer": "A) Izzo-ikrom va mehr bilan kutishdi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kumushga kim zaharlangan atala berib uni o‘ldirdi?",
+   "options": [
+    "A) Zaynab zaharlangan atala berdi",
+    "B) Oybodoq yanglishib berib qo‘ydi",
+    "C) Doya xotin qasddan berdi",
+    "D) Oftoboyim bilmasdan berib qo‘ydi"
+   ],
+   "answer": "A) Zaynab zaharlangan atala berdi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kumush vafotidan so‘ng uning chaqalog‘iga nima ism qo‘yishdi?",
+   "options": [
+    "A) Yodgorbek deb ism qo‘yishdi",
+    "B) Otabek deb ism qo‘yishdi",
+    "C) Yusufbek deb ism qo‘yishdi",
+    "D) Hasanali deb ism qo‘yishdi"
+   ],
+   "answer": "A) Yodgorbek deb ism qo‘yishdi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otabek hayotining oxirida qayerda va qanday halok bo‘ldi?",
+   "options": [
+    "A) Olmaotada dushman bilan urushda",
+    "B) Toshkandda kasallikka chalinib o‘ldi",
+    "C) Marg‘ilonda Homidning odamlari o‘ldirdi",
+    "D) Qo‘qonda zindonda vafot etdi"
+   ],
+   "answer": "A) Olmaotada dushman bilan urushda"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kumush vafot etgach, uning chaqaloq o‘g‘li kimning qaramog‘ida ketdi?",
+   "options": [
+    "A) Oftoboyim va Qutidor qaramog‘ida",
+    "B) Zaynabning og‘asi olib ketdi",
+    "C) O‘zbekoyim Toshkandda olib qoldi",
+    "D) Hasanali tarbiyasiga berib yuborildi"
+   ],
+   "answer": "A) Oftoboyim va Qutidor qaramog‘ida"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Zaynab qilgan jinoyatidan so‘ng nega jazoga tortilmadi?",
+   "options": [
+    "A) Ruhiy xastalikka chalinib jinni bo‘lgani",
+    "B) Otabek uni kechirib yuborgani uchun",
+    "C) Qoziga katta pul bergani uchun",
+    "D) Toshkanddan qochib ketgani uchun"
+   ],
+   "answer": "A) Ruhiy xastalikka chalinib jinni bo‘lgani"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Otabek nima uchun Toshkandda qolmay, frontga — jangga ketdi?",
+   "options": [
+    "A) Sevglisiz hayot ma’nosiz bo‘lib qolgani",
+    "B) Otasi uni uydan haydalgani uchun",
+    "C) Toshkandda unga savdo berilmagani uchun",
+    "D) Marg‘ilondagilar uni ayblagani uchun"
+   ],
+   "answer": "A) Sevglisiz hayot ma’nosiz bo‘lib qolgani"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kumushning Qutidor va Oftoboyimga qilgan muomalasi qanday namuna bo‘ladi?",
+   "options": [
+    "A) Ota-onaga sadoqat va odob namunasi",
+    "B) Kibr va manmanlik namunasi",
+    "C) Loqaydlik va beparvolik ko‘rinishi",
+    "D) Itoatsizlik va o‘zboshimchalik alomati"
+   ],
+   "answer": "A) Ota-onaga sadoqat va odob namunasi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zaynabning hasad va rashk oqibatida qilgan ishi nimaga olib keldi?",
+   "options": [
+    "A) Oila fojiasi va o‘zining halokatiga",
+    "B) Otabekning mehrini qozonishga olib keldi",
+    "C) Toshkandda tinchlik o‘rnatilishiga sabab bo‘ldi",
+    "D) Qutidor oilasi bilan yarashishga keltirdi"
+   ],
+   "answer": "A) Oila fojiasi va o‘zining halokatiga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Kumushning qabrtoshiga bitilgan she’riy satrlarda nimani ifodalaydi?",
+   "options": [
+    "A) Cheksiz g‘am, alam va sevgini",
+    "B) Toshkand shahrining tarixiy o‘tmishini",
+    "C) Homidning ustidan qilingan g‘alabani",
+    "D) Yodgorbekning kelajakdagi baxtli hayotini"
+   ],
+   "answer": "A) Cheksiz g‘am, alam va sevgini"
+  }
+ ]
+}

@@ -1,0 +1,477 @@
+{
+ "title": "Robinzon Kruzoning sarguzashtlari",
+ "author": "Daniel Defo",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "sarguzasht",
+   "sabr-matonat",
+   "mehnatsevarlik",
+   "ota-ona hurmati",
+   "yolg‘izlik"
+  ],
+  "theme": "Ota-ona maslahatiga quloq solmaslik va o‘zboshimchalik insonni og‘ir sinovlarga giriftor etadi. Biroq har qanday murakkab sharoitda ham sabr, mehnatsevarlik, aql-idrok va umidni yo‘qotmaslik orqali barcha qiyinchiliklarni yengib o‘tish mumkin.",
+  "summary": "Robinzon Kruzo yoshligidanoq dengiz va safarlarni orzu qiladi. Otasining jiddiy ogohlantirishlariga va onasining o‘tinchlariga qaramay, u uydan qochib, Londonga ketayotgan kemaga tushadi. Dengizdagi birinchi safaridanoq daxshatli bo‘ronlarga duch kelib, qattiq pushaymon bo‘lsa-da, baribir o‘z aytganidan qaytmaydi. Navbatdagi safarlardan birida u dengiz qaroqchilariga asir tushib, Solih portida ikki yil qul bo‘lib yashaydi. So‘ng Ksuri ismli bola bilan qochib, portugal kemasi yordamida qutulib oladi va Braziliyaga yetib boradi. Keyinchalik Afrikaga yo‘l olganida, uning kemasi halokatga uchraydi va Robinzon kimsasiz orolga tushib qoladi. U yerda yolg‘iz qolgan Robinzon tushkunlikka tushmasdan, suv ostida qolgan kemadan asbob-uskunalar, oziq-ovqat va qurollarni tashib oladi. Orol markazida o‘ziga xavfsiz boshpana (g‘or va kapa) quradi, dehqonchilik va chorvachilikni yo‘lga qo‘yadi, kulolchilik va kiyim tikishni o‘rganadi. Yillar o‘tib, orolda odamxo‘r vahshiylar paydo bo‘ladi. Robinzon ularning qo‘lidan bir asirni qutqarib, unga Jumaboy deb nom beradi va uni o‘ziga sodiq do‘st hamda yordamchi qilib tarbiyalaydi. Birlashib, ular boshqa asirlarni (shu jumladan Jumaboyning otasini va bir ispaniyalikni) ham qutqarishadi. Oxir-oqibat, orolga isyonchilar egallab olgan ingliz kemasi keladi. Robinzon va uning safdoshlari kapitanga kemasini qaytarib olishga yordam berishadi. Minnatdor kapitan Robinzonni va Jumaboyni Angliyaga olib ketadi. Robinzon 28 yildan ortiq vaqt davomida orolda kechirgan hayotidan so‘ng o‘z yurtiga eson-omon qaytib keladi.",
+  "characters": "Robinzon Kruzo — sarguzashtsevar, sabr-matonatli va mehnatkash bosh qahramon; oroldagi og‘ir va yolg‘iz hayotida aql va mehnat evaziga o‘z turmushini yo‘lga qo‘yadi.\nRobinzonning otasi — o‘g‘lining kelajagiga g‘amxo‘r, dono va tajribali keksa kishi; o‘g‘lini o‘zboshimchalikdan qaytarishga harakat qiladi.\nKsuri — Robinzon bilan birga asirlikdan qochgan sofdil va sodiq bola.\nJumaboy — Robinzon odamxo‘rlardan qutqargan, unga sodiq do‘st va yordamchiga aylangan mahalliy yigitcha.\nKema kapitani — isyonchilar tufayli orolga tashlab ketilgan, Robinzon yordamida kemasini qaytarib olgan va uni vataniga olib ketgan inson.",
+  "conclusion": "Asar kitobxonga ota-ona va kattalar maslahatiga amal qilish, har qanday og‘ir vaziyatda ham tushkunlikka tushmaslik va halol mehnat qilish lozimligini o‘rgatadi. Bola ushbu kitobdan sabr-toqat, mustaqil qaror qabul qilish, tabiat va hayot bilan murosa qilish ko‘nikmalarini oladi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, o‘ylantiruvchi, sabr-matonatli",
+  "for_whom": "Sarguzashtlarni xush ko‘radigan, qahramonning qiyinchiliklarni yengib o‘tishiga va sabr-matonatiga havasi keladigan bolalar uchun.",
+  "events": [
+   "Robinzon otasining nasihatiga qarshi borib, uydan qochadi va Londonga ketayotgan kemaga o‘tiradi.",
+   "Kema kuchli bo‘ronga duch keladi va Robinzon birinchi marta o‘z qilmishidan pushaymon bo‘ladi.",
+   "Boshqa kema matroslari ularni qutqarib, Yarmut qirg‘og‘iga olib chiqishadi.",
+   "Robinzon Kanar orollari yaqinida Solih qaroqchilariga asir tushib, qulga aylanadi.",
+   "U Ksuri ismli bola bilan birga qayiqda qaroqchilardan qochib ketadi.",
+   "Ularni portugal kemasi qutqarib oladi va Braziliyaga olib boradi.",
+   "Navbatdagi safarda Robinzon tushgan kema halokatga uchraydi va u kimsasiz orolga chiqib qoladi.",
+   "Robinzon birinchi kechani yirtqichlardan saqlanish uchun daraxt shoxida o‘tkazadi.",
+   "U suvda tikka turgan kemadan turli buyumlar, qurollar va oziq-ovqatlarni sohilga tashib oladi.",
+   "Robinzon o‘ziga g‘or va chodirdan iborat xavfsiz boshpana quradi.",
+   "Orolda kuchli zilzila sodir bo‘ladi va Robinzonni qattiq qo‘rqitadi.",
+   "Robinzon g‘alla urug‘larini ekib, dehqonchilik qilishni va non pishirishni o‘rganadi.",
+   "U qushlardan ekinni saqlash uchun bir necha o‘lik qushni balandga osib qo‘yadi.",
+   "Robinzon kulolchilikni yo‘lga qo‘yib, o‘ziga idishlar va kashanda trubkasi yasaydi.",
+   "U qumda odam oyoq izini ko‘rib, daxshatga tushadi va mudofaani kuchaytiradi.",
+   "Odamxo‘r vahshiylardan qochgan asir yigitchani qutqarib, unga Jumaboy deb nom beradi.",
+   "Jumaboyga ingliz tilini, miltiq otishni va kiyim kiyishni o‘rgatadi.",
+   "Robinzon va Jumaboy boshqa asirlarni ham odamxo‘rlar qo‘lidan qutqarib olishadi.",
+   "Orolga kelgan ingliz kemasidagi isyonchilarni yengib, kapitanga kemani qaytarib berishadi.",
+   "Robinzon 28 yildan so‘ng orolni tark etib, Angliyaga qaytib ketadi."
+  ],
+  "quotes": [
+   "Men bolalik chog‘imdanoq dengizni olamdagi hamma narsadan ham yaxshi ko‘rib qoldim.",
+   "Otasining roziligini olmasdan sayohat qilgan kishi baxt topa olmaydi.",
+   "Qullikdan ham, o‘lim vahimasidan ham qutuldim!",
+   "Keraksiz axlat, sening menga endi nima hojating bor?",
+   "Xavf-xatar to‘g‘risida o‘ylamoq hamisha xatarning o‘zidan ko‘ra qo‘rqinchlidir, yovuzlik to‘g‘risida o‘ylamoq yovuzlikning o‘zidan o‘n ming baravar yomonroqdir.",
+   "Qimmatli do‘stim! Xaloskorim! Sizning kemangiz ana."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otasi Robinzonning qanday kasb egasi bo‘lishini xohlagan edi?",
+   "options": [
+    "A) Qirol mahkamasida katta amaldor",
+    "B) Tajribali dengiz kapitani",
+    "C) Muvaffaqiyatli savdogar",
+    "D) Mashhur dengiz sayyohi"
+   ],
+   "answer": "A) Qirol mahkamasida katta amaldor"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Robinzon birinchi marta dengizga qaysi shahar sari yo‘l oldi?",
+   "options": [
+    "A) Londonga",
+    "B) Hullga",
+    "C) Yarmutga",
+    "D) Solihga"
+   ],
+   "answer": "A) Londonga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Robinzon va uning do‘stlarini birinchi bo‘ronda kimlar qutqardi?",
+   "options": [
+    "A) Boshqa kema matroslari",
+    "B) Solih shahri dengizchilari",
+    "C) Qirol mahkamasi xizmatchilari",
+    "D) Mahalliy baliqchilar"
+   ],
+   "answer": "A) Boshqa kema matroslari"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qaroqchilar Robinzon va uning hamrohsiz kemasiga qayerda hujum qildi?",
+   "options": [
+    "A) Kanar orollari yaqinida",
+    "B) Yarmut reydida",
+    "C) Hamber mansabida",
+    "D) London qirg‘oqlarida"
+   ],
+   "answer": "A) Kanar orollari yaqinida"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Robinzon asirlikdan qochganda qayiqqa nimalarni g‘amlab oldi?",
+   "options": [
+    "A) Patir, suv, vino va dori",
+    "B) Tilla pullar va qurollar",
+    "C) Kiyimlar va kitoblar",
+    "D) Faqat tuzlangan go‘sht"
+   ],
+   "answer": "A) Patir, suv, vino va dori"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Robinzon birinchi bo‘rondan so‘ng nega uyiga qaytmadi?",
+   "options": [
+    "A) Odamlarning ustidan kulishidan uyaldi",
+    "B) Otasi uni kechirmaydi deb o‘yladi",
+    "C) Dengiz sayohatidan tamomila bezdi",
+    "D) Pul va boylik to‘plamoqchi edi"
+   ],
+   "answer": "A) Odamlarning ustidan kulishidan uyaldi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Robinzon arab mullasini dengizga uloqtirishining sababi nima edi?",
+   "options": [
+    "A) U xojasiga o‘ta sodiq edi",
+    "B) U suzishni umuman bilmas edi",
+    "C) U qayiqni egallab olgan edi",
+    "D) U miltiqdorilarni yashirgan edi"
+   ],
+   "answer": "A) U xojasiga o‘ta sodiq edi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Otasining galdagi nasihatiga kirmay uydan qochish to‘g‘ri qarormidi?",
+   "options": [
+    "A) Noto‘g‘ri, chunki boshiga kulfatlar tushdi",
+    "B) To‘g‘ri, chunki u birdan boyidi",
+    "C) To‘g‘ri, chunki u erkin bo‘ldi",
+    "D) Noto‘g‘ri, chunki dengizni yoqtirmas edi"
+   ],
+   "answer": "A) Noto‘g‘ri, chunki boshiga kulfatlar tushdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Otasining «baxtsizlik balosi ana shu bo‘lsa kerak» degan fikri nimani bildiradi?",
+   "options": [
+    "A) Ota nasihatini olmaslik oqibatini",
+    "B) Dengizchilikning qiziqarli ekanini",
+    "C) Toleyining juda balandligini",
+    "D) Londonning go‘zal shahar ekanini"
+   ],
+   "answer": "A) Ota nasihatini olmaslik oqibatini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Matnda Robinzonning tavbalari nimani ifodalaydi?",
+   "options": [
+    "A) Qilmishidan qattiq pushaymon bo‘lganini",
+    "B) Qaroqchilardan qo‘rqmay qo‘yganini",
+    "C) Otasiga jahli chiqqanini",
+    "D) Safarni davom ettirmoqchi ekanini"
+   ],
+   "answer": "A) Qilmishidan qattiq pushaymon bo‘lganini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Robinzon orolga tushgan birinchi kechani qayerda o‘tkazdi?",
+   "options": [
+    "A) Daraxt shoxlari ustida",
+    "B) Chuqur g‘or ichida",
+    "C) Kemadan qolgan qayiqda",
+    "D) Qumdagi xavfsiz kapada"
+   ],
+   "answer": "A) Daraxt shoxlari ustida"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Robinzon kemadan topgan pullarni ko‘rganda nima qildi?",
+   "options": [
+    "A) Keraksiz axlat deb atadi",
+    "B) Xursand bo‘lib sanay ketdi",
+    "C) Darhol dengizga surib tashladi",
+    "D) Ularni yerto‘laga yashirdi"
+   ],
+   "answer": "A) Keraksiz axlat deb atadi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Robinzon ekinga tushgan parrandalarni qanday haydadi?",
+   "options": [
+    "A) Bir nechtasini osib qo‘ydi",
+    "B) Qopqonlar o‘rnatib chiqdi",
+    "C) Ular uchun maxsus qo‘riqchi qo‘ydi",
+    "D) Ekinni mato bilan yopdi"
+   ],
+   "answer": "A) Bir nechtasini osib qo‘ydi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Robinzon orolda qanday hayvonlarni o‘rgatib asradi?",
+   "options": [
+    "A) Echki va uloqlarni",
+    "B) Yirtqich bo‘rilarni",
+    "C) Yovvoyi ayiqlarni",
+    "D) Yovvoyi to‘ng‘izlarni"
+   ],
+   "answer": "A) Echki va uloqlarni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Robinzonning orolda uy solishda e'tibor bergan talablari qaysilar?",
+   "options": [
+    "A) Salqin, xavfsiz va suvga yaqin",
+    "B) Baland, issiq va orol markazida",
+    "C) Chuqur, qorong‘i va dengizdan olis",
+    "D) Keng, tekis va botqoqlikda"
+   ],
+   "answer": "A) Salqin, xavfsiz va suvga yaqin"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Robinzon oroldagi yolg‘izligida qaysi jonivorlar bilan ovundi?",
+   "options": [
+    "A) To‘ti, it va mushuklar",
+    "B) Maymun va yovvoyi qushlar",
+    "C) Del'finlar va baliqlar",
+    "D) Tulki va toshbaqalar"
+   ],
+   "answer": "A) To‘ti, it va mushuklar"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Robinzon nega bitta taxta uchun kunsayin mehnat qildi?",
+   "options": [
+    "A) Chunki uning boshqa iloji yo‘q edi",
+    "B) Chunki u ko‘p taxtalarni yoqtirmasdi",
+    "C) Chunki unga har xil taxtalar kerak edi",
+    "D) Chunki terak yog‘ochi yumshoq edi"
+   ],
+   "answer": "A) Chunki uning boshqa iloji yo‘q edi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Robinzon qumda odam oyoq izini ko‘rganda nega vahimaga tushdi?",
+   "options": [
+    "A) Vahshiy odamlar hujumidan qo‘rqdi",
+    "B) Kemasi buzilib ketishidan qo‘rqdi",
+    "C) Uyini topa olmaslikdan qo‘rqdi",
+    "D) Echkilar qochib ketishidan qo‘rqdi"
+   ],
+   "answer": "A) Vahshiy odamlar hujumidan qo‘rqdi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Robinzonning har kuni mehnat qilib buyumlar yasashi qanday fazilat?",
+   "options": [
+    "A) Sabr-matonat va mehnatsevarlik",
+    "B) Manmanlik va maqtanchoqlik",
+    "C) Beg‘amlik va dangasalik",
+    "D) Qo‘rqoqlik va shoshqaloqlik"
+   ],
+   "answer": "A) Sabr-matonat va mehnatsevarlik"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Robinzonning «kulolchilikda o‘z ixtirolarimdan quvondim» deyishi nimani beradi?",
+   "options": [
+    "A) Mehnat samarasidan g‘ururlanish tuyg‘usini",
+    "B) Kulolchilik oson ish ekanini",
+    "C) Kulolchilikni yoqtirmasligini",
+    "D) Idishlarning yaroqsizligini"
+   ],
+   "answer": "A) Mehnat samarasidan g‘ururlanish tuyg‘usini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Robinzon qutqargan yovvoyi yigitga qanday nom berdi?",
+   "options": [
+    "A) Jumaboy",
+    "B) Ksuri",
+    "C) Ismail",
+    "D) Bill Atkins"
+   ],
+   "answer": "A) Jumaboy"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Robinzon Jumaboyga dastlab qanday quroldan foydalanishni o‘rgatdi?",
+   "options": [
+    "A) Miltiqdan otishni",
+    "B) Kamondan otishni",
+    "C) Qilich chopishni",
+    "D) Nayza otishni"
+   ],
+   "answer": "A) Miltiqdan otishni"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oroldan qutulish uchun kelgan kemada kimlar isyon ko‘targan edi?",
+   "options": [
+    "A) Kemaning muttaham matroslari",
+    "B) Solihdan kelgan qaroqchilar",
+    "C) Ispaniyalik asirlar",
+    "D) Mahalliy yovvoyi qabilalar"
+   ],
+   "answer": "A) Kemaning muttaham matroslari"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Robinzon oroldan jo‘nashda o‘zi bilan nimani xotira qilib oldi?",
+   "options": [
+    "A) Tikkan shapkasi va to‘tisini",
+    "B) Yasagan barcha sopol idishlarini",
+    "C) Og‘ir yerto‘la ustunlarini",
+    "D) Ekinga osilgan o‘lik qushlarni"
+   ],
+   "answer": "A) Tikkan shapkasi va to‘tisini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Robinzon va kapitan kemani egallashda qanday hiyla ishlatishdi?",
+   "options": [
+    "A) Asirlarni ajratib, garovga olishdi",
+    "B) Oroldagi hamma echkilarni haydashdi",
+    "C) Qaroqchilarga zaharlangan ovqat berishdi",
+    "D) Kemaga olov qo‘yib yuborishdi"
+   ],
+   "answer": "A) Asirlarni ajratib, garovga olishdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Robinzon nega qaroqchilarning battollarini orolda qoldirib ketdi?",
+   "options": [
+    "A) Angliyada ularni dor kutardi",
+    "B) Ular orolga juda o‘rganishgan edi",
+    "C) Ular Robinzondan shuni o‘tindi",
+    "D) Kapitan ularga rahm qilgan edi"
+   ],
+   "answer": "A) Angliyada ularni dor kutardi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jumaboy nega Robinzonga umrbod sodiq qoldi?",
+   "options": [
+    "A) Robinzon uni o‘limdan qutqardi",
+    "B) Robinzon unga ko‘p pul berdi",
+    "C) Robinzon uni vataniga olib bordi",
+    "D) Robinzon undan qo‘rqitgan edi"
+   ],
+   "answer": "A) Robinzon uni o‘limdan qutqardi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Robinzonning kema kapitaniga ko‘rsatgan yordamini qanday baholash mumkin?",
+   "options": [
+    "A) Olijanoblik va o‘zaro yordam",
+    "B) O‘z manfaatinigina o‘ylash",
+    "C) Qaroqchilarga nisbatan shafqatsizlik",
+    "D) Yengiltaklik va shoshqaloqlik"
+   ],
+   "answer": "A) Olijanoblik va o‘zaro yordam"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jumaboyning o‘z otasini ko‘rgandagi xursandchiligi nimani ko‘rsatadi?",
+   "options": [
+    "A) Farzandlik mehr va oqibatini",
+    "B) Dengiz sayohatidan charchaganini",
+    "C) Robinzondan qutulganidan sevinganini",
+    "D) Oroldan ketishni istamaganini"
+   ],
+   "answer": "A) Farzandlik mehr va oqibatini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Kema kapitanining Robinzonni «Xaloskorim!» deb quchoqlashi qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Minnatdorlik va do‘stlik",
+    "B) Qo‘rquv va xavotir",
+    "C) Hasad va xafagarchilik",
+    "D) Hayrat va ikkilanish"
+   ],
+   "answer": "A) Minnatdorlik va do‘stlik"
+  }
+ ]
+}

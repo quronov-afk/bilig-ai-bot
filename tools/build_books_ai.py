@@ -153,8 +153,8 @@ Bu pasport ERTAGA ota-onaga kerak bo‘ladi: u AI ustozdan «bu kitob nima
 haqida?» deb so‘raganda, javob shu yerdan olinadi. Shuning uchun har bir
 maydon o‘zicha to‘liq va tushunarli bo‘lsin.
 
-  age_band    — YOSH TOIFASI. FAQAT shu beshtadan bittasini tanla:
-                "4-6" | "7-8" | "9-10" | "11-13" | "14-16"
+  age_band    — YOSH TOIFASI. FAQAT shu oltitadan bittasini tanla:
+                "4-6" | "7-8" | "9-10" | "11-13" | "14-16" | "17-19"
                 Bu asar ENG KAM qaysi yoshdan boshlab tushunarli bo‘lishini
                 bildiradi. Kattaroq bolalar ham o‘qiyveradi.
   age_hint    — batafsilroq izoh, masalan "9-13" yoki "12+" shaklida.
@@ -179,18 +179,29 @@ maydon o‘zicha to‘liq va tushunarli bo‘lsin.
   topics      — MAVZULAR: 4-6 ta teg (do‘stlik, jasorat, oila, tabiat,
                 halollik, mehnat, vatan, ilm...)
   theme       — G‘OYASI: muallif nima demoqchi, asarning bosh fikri.
-                ENG KO‘PI 200 BELGI. Bir-ikki jumla, aniq va lo‘nda.
+                ENG KO‘PI 500 BELGI. Ikki-uch jumla, aniq va lo‘nda.
   summary     — QISQACHA SYUJETI: asar voqealarining bayoni, boshidan
-                OXIRIGACHA, yechimi bilan. ENG KO‘PI 600 BELGI (asar qisqa).
+                OXIRIGACHA, yechimi bilan. ENG KO‘PI 1500 BELGI (asar qisqa).
                 Umumiy gap emas — aniq voqealar ketma-ketligi.
-  characters  — ASOSIY QAHRAMONLAR: har biri kim va asarda nima qiladi
+  characters  — ASOSIY QAHRAMONLAR: har biriga bir-ikki jumla — kim, qanday
+                odam va asarda nima qiladi. Ikkinchi darajali qahramonlar ham
+                kirsin, agar voqeaga ta'sir qilgan bo‘lsa.
   conclusion  — XULOSASI: asar nima bilan tugaydi va bola undan nima oladi.
                 Ota-onaga «bu kitob farzandimga nima beradi?» degan savolga
-                javob bo‘ladigan 2-4 jumla.
+                javob bo‘ladigan 3-6 jumla, ENG KO‘PI 800 BELGI.
   difficulty  — "oson" | "o‘rta" | "qiyin"
   mood        — kayfiyati (masalan: "kulgili, yengil" yoki "hazin, o‘ylantiruvchi")
   for_whom    — QANDAY bolaga mos kelishi, uning qiziqishi tilida. AI ustoz
                 shu qatorga qarab kitob tavsiya qiladi.
+  events      — VOQEALAR TAFSILOTI: asar epizodlarining RO‘YXATI, ketma-ket.
+                Har band — bitta to‘liq jumla, aniq voqea (kim nima qildi,
+                nima bo‘ldi). Uzun asarda KAMIDA 20 band, qisqa asarda 6-10.
+                Bu ro‘yxat kelajakda yangi test tuzish uchun ishlatiladi:
+                shuning uchun kitobning boshidan oxirigacha bo‘lgan barcha
+                muhim burilishlar shu yerda bo‘lishi SHART.
+  quotes      — MUHIM PARCHALAR: asl matndan 5-8 ta jumla, AYNAN ko‘chirilsin
+                (o‘zgartirmasdan). Asarning eng kuchli, eng ma'noli joylari
+                tanlansin — keyinchalik savol va suhbat uchun asos bo‘ladi.
 
 ═══ 2) OG‘ZAKI SAVOL ═══
 Asar qisqa — bola uni bir o‘tirishda o‘qiydi. Shuning uchun test tuzilmaydi.
@@ -215,7 +226,9 @@ Natijani FAQAT quyidagi JSON formatida qaytar:
 {{
  "passport": {{"age_band": "9-10", "age_hint": "...", "topics": ["..."], "theme": "...",
    "summary": "...", "characters": "...", "conclusion": "...",
-   "difficulty": "...", "mood": "...", "for_whom": "..."}},
+   "difficulty": "...", "mood": "...", "for_whom": "...",
+   "events": ["1-voqea...", "2-voqea...", "..."],
+   "quotes": ["asl matndan jumla", "..."]}},
  "talk_question": "Savol matni?"
 }}
 {fix}
@@ -274,8 +287,8 @@ Bu pasport ERTAGA ota-onaga kerak bo‘ladi: u AI ustozdan «bu kitob nima
 haqida?» deb so‘raganda, javob shu yerdan olinadi. Shuning uchun har bir
 maydon o‘zicha to‘liq va tushunarli bo‘lsin.
 
-  age_band    — YOSH TOIFASI. FAQAT shu beshtadan bittasini tanla:
-                "4-6" | "7-8" | "9-10" | "11-13" | "14-16"
+  age_band    — YOSH TOIFASI. FAQAT shu oltitadan bittasini tanla:
+                "4-6" | "7-8" | "9-10" | "11-13" | "14-16" | "17-19"
                 Bu asar ENG KAM qaysi yoshdan boshlab tushunarli bo‘lishini
                 bildiradi. Kattaroq bolalar ham o‘qiyveradi.
   age_hint    — batafsilroq izoh, masalan "9-13" yoki "12+" shaklida.
@@ -300,18 +313,30 @@ maydon o‘zicha to‘liq va tushunarli bo‘lsin.
   topics      — MAVZULAR: 4-6 ta teg (do‘stlik, jasorat, oila, tabiat,
                 halollik, mehnat, vatan, ilm...)
   theme       — G‘OYASI: muallif nima demoqchi, asarning bosh fikri.
-                ENG KO‘PI 200 BELGI. Bir-ikki jumla, aniq va lo‘nda.
+                ENG KO‘PI 500 BELGI. Ikki-uch jumla, aniq va lo‘nda.
   summary     — QISQACHA SYUJETI: asar voqealarining bayoni, boshidan
-                OXIRIGACHA, yechimi bilan. ENG KO‘PI 1000 BELGI.
-                Umumiy gap emas — aniq voqealar ketma-ketligi.
-  characters  — ASOSIY QAHRAMONLAR: har biri kim va asarda nima qiladi
+                OXIRIGACHA, yechimi bilan. 1500-3000 BELGI — batafsil yoz,
+                hech bir muhim voqeani tushirib qoldirma. Umumiy gap emas —
+                aniq voqealar ketma-ketligi, sabab-oqibati bilan.
+  characters  — ASOSIY QAHRAMONLAR: har biriga bir-ikki jumla — kim, qanday
+                odam va asarda nima qiladi. Ikkinchi darajali qahramonlar ham
+                kirsin, agar voqeaga ta'sir qilgan bo‘lsa.
   conclusion  — XULOSASI: asar nima bilan tugaydi va bola undan nima oladi.
                 Ota-onaga «bu kitob farzandimga nima beradi?» degan savolga
-                javob bo‘ladigan 2-4 jumla.
+                javob bo‘ladigan 3-6 jumla, ENG KO‘PI 800 BELGI.
   difficulty  — "oson" | "o‘rta" | "qiyin"
   mood        — kayfiyati (masalan: "kulgili, yengil" yoki "hazin, o‘ylantiruvchi")
   for_whom    — QANDAY bolaga mos kelishi, uning qiziqishi tilida. AI ustoz
                 shu qatorga qarab kitob tavsiya qiladi.
+  events      — VOQEALAR TAFSILOTI: asar epizodlarining RO‘YXATI, ketma-ket.
+                Har band — bitta to‘liq jumla, aniq voqea (kim nima qildi,
+                nima bo‘ldi). Uzun asarda KAMIDA 20 band, qisqa asarda 6-10.
+                Bu ro‘yxat kelajakda yangi test tuzish uchun ishlatiladi:
+                shuning uchun kitobning boshidan oxirigacha bo‘lgan barcha
+                muhim burilishlar shu yerda bo‘lishi SHART.
+  quotes      — MUHIM PARCHALAR: asl matndan 5-8 ta jumla, AYNAN ko‘chirilsin
+                (o‘zgartirmasdan). Asarning eng kuchli, eng ma'noli joylari
+                tanlansin — keyinchalik savol va suhbat uchun asos bo‘ladi.
 
 ═══ 2) {total} TA SAVOL ═══
 {qism_izoh}
@@ -388,12 +413,85 @@ Natijani FAQAT quyidagi JSON formatida qaytar:
 {{
  "passport": {{"age_band": "9-10", "age_hint": "...", "topics": ["..."], "theme": "...",
    "summary": "...", "characters": "...", "conclusion": "...",
-   "difficulty": "...", "mood": "...", "for_whom": "..."}},
+   "difficulty": "...", "mood": "...", "for_whom": "...",
+   "events": ["1-voqea...", "2-voqea...", "..."],
+   "quotes": ["asl matndan jumla", "..."]}},
  "talk_question": "(faqat 4-6 toifasi uchun; aks holda bo‘sh satr)",
  "questions": [
    {{"id": 1, "part": 1, "category": "factual", "barrett": "literal",
      "question": "...", "options": ["A) ...","B) ...","C) ...","D) ..."],
      "answer": "A) ..."}}
+ ]
+}}
+{fix}
+
+═══ KITOB MATNI ═══
+{text}"""
+
+
+# ----------------------------------------------------------------------
+
+def build_diniy_prompt(book, text, errors=None):
+    """Diniy-ma'rifiy kitob: pasport + 5 ta ochiq savol, TEST YO‘Q.
+
+    Ega qarori (2026-09-01): diniy kitobdan test tuzilmaydi — AI diniy
+    matnni talqin qilishda xato qilishi mumkin, xato savol esa bolaga
+    noto‘g‘ri bilim beradi. O‘rniga bola o‘qigan ANIQ PARCHAGA tayangan
+    ochiq savol beriladi; ota-ona xohlasa testni o‘zi tuzadi.
+    """
+    fix = ""
+    if errors:
+        fix = ("\n\nDIQQAT: oldingi javobingda quyidagi xatolar bor edi, tuzat:\n" +
+               "\n".join("· " + e for e in errors[:8]))
+    return f"""Sen o‘zbek oilalari uchun mo‘ljallangan bolalar ilovasida ishlaydigan
+muharrirsan. Quyida «{book['title']}» kitobi ({book['author']}) matni berilgan.
+Bu — DINIY-MA'RIFIY kitob.
+
+ENG MUHIM QOIDA: sen bu kitobga TEST TUZMAYSAN va diniy hukm chiqarmaysan.
+Matnni o‘zingdan sharhlama, unga yangi ma'no qo‘shma. Vazifang — kitobning
+pasportini yozish va matndagi ANIQ parchalarga tayangan ochiq savollar tuzish.
+
+═══ 1) PASPORT ═══
+  age_band    — "14-16" yoki "17-19" (kitobning og‘irligiga qarab)
+  age_hint    — qisqa izoh, masalan "14+"
+  topics      — 4-6 ta teg (odob, oila, halollik, sabr, ilm...)
+  theme       — kitob nima haqida, bosh maqsadi. ENG KO‘PI 500 BELGI.
+  summary     — kitob MAZMUNI: qaysi mavzular, qaysi tartibda yoritilgan.
+                1500-3000 BELGI. O‘zingdan hukm qo‘shma, faqat bayon qil.
+  characters  — kitobda tilga olingan asosiy shaxslar (bo‘lmasa: "yo‘q").
+  conclusion  — o‘quvchi bu kitobdan nima oladi. 3-6 jumla, 800 belgigacha.
+  difficulty  — "oson" | "o‘rta" | "qiyin"
+  mood        — ohangi (masalan: "vazmin, nasihatomuz")
+  for_whom    — qanday o‘quvchiga mos
+  events      — KITOB TUZILISHI: boblar yoki mavzular ro‘yxati, ketma-ket.
+                Har band bitta jumla. KAMIDA 15 band.
+  quotes      — matndan AYNAN ko‘chirilgan 5-8 ta jumla, o‘zgartirmasdan.
+
+═══ 2) 5 TA OCHIQ SAVOL ═══
+Har savol shunday tuziladi:
+  · "context" — kitobdan AYNAN ko‘chirilgan parcha (2-5 jumla). Savol
+    faqat shu parchaga tayanadi. Parchani o‘zgartirma, qisqartirma.
+  · "question" — shu parchani o‘qigan o‘smirga beriladigan ochiq savol.
+    Javobi "ha/yo‘q" bo‘lmasin; o‘quvchi o‘z fikrini aytsin yoki hayotidan
+    misol keltirsin. Savolda diniy hukm so‘ralmasin («bu savobmi?» kabi).
+    MUROJAAT: bolaga «SEN» deb murojaat qilinadi («sizningcha» emas —
+    «sencha», «hayotingdan misol keltir»). Ilovaning hamma joyida
+    shunday, savol ham shu ohangda bo‘lsin.
+    To‘g‘ri-noto‘g‘ri javob yo‘q — savol o‘ylantirish uchun.
+  · "part" — 1, 2 yoki 3 (kitobning boshi, o‘rtasi, oxiri).
+
+IMLO: faqat O‘, o‘, G‘, g‘ belgilaridan foydalan. Hech qachon O', o', G', g'.
+TIL: toza o‘zbek tilida, lotin yozuvida. Kirill harfi ishlatilmasin.
+
+Natijani FAQAT quyidagi JSON formatida qaytar:
+{{
+ "passport": {{"age_band": "14-16", "age_hint": "...", "topics": ["..."],
+   "theme": "...", "summary": "...", "characters": "...", "conclusion": "...",
+   "difficulty": "...", "mood": "...", "for_whom": "...",
+   "events": ["..."], "quotes": ["..."]}},
+ "talk_questions": [
+   {{"part": 1, "context": "kitobdan aynan ko‘chirilgan parcha",
+     "question": "Ochiq savol?"}}
  ]
 }}
 {fix}
@@ -429,10 +527,15 @@ async def one_book(book, usage):
     out_path = os.path.join(OUT, book["work_file"][:-4] + ".json")
     errors = None
 
-    short = profile_for(book["chars"], book.get("pages", 0), book.get("age_group")) == 0
+    diniy = book.get("mode") == "diniy"
+    short = (not diniy and
+             profile_for(book["chars"], book.get("pages", 0), book.get("age_group")) == 0)
     for attempt in (1, 2, 3):
-        prompt = (build_short_prompt(book, text, errors) if short
-                  else build_prompt(book, text, errors))
+        if diniy:
+            prompt = build_diniy_prompt(book, text, errors)
+        else:
+            prompt = (build_short_prompt(book, text, errors) if short
+                      else build_prompt(book, text, errors))
         try:
             resp = await ai_service._ask("kitob_pasporti", [prompt],
                                          json_mode=True, attempts=1)
@@ -458,10 +561,14 @@ async def one_book(book, usage):
             "genre": book["genre"], "age_group": book["age_group"],
             "coverage": book["coverage"],
             "passport": data.get("passport", {}),
-            "questions": [] if short else data.get("questions", []),
+            "questions": [] if (short or diniy) else data.get("questions", []),
         }
         band = (full["passport"] or {}).get("age_band")
-        if short or band == "4-6":
+        if diniy:
+            full["no_test"] = True
+            full["questions"] = []
+            full["talk_questions"] = data.get("talk_questions") or []
+        elif short or band == "4-6":
             full["short_form"] = True
             full["questions"] = []
             full["talk_question"] = (data.get("talk_question") or "").strip()
@@ -485,8 +592,16 @@ async def run(day, limit, dry):
     """`day = 0` — kunlarga bo‘lmasdan, qolgan HAMMA kitobni ketma-ket qiladi."""
     with open(INDEX, encoding="utf-8") as fh:
         books = json.load(fh)
+    only = None
+    if "--kitob" in sys.argv:
+        only = sys.argv[sys.argv.index("--kitob") + 1]
+    band = None
+    if "--toifa" in sys.argv:
+        band = sys.argv[sys.argv.index("--toifa") + 1]
     todo = [b for b in books
-            if (day == 0 or b.get("day") == day)
+            if (only is None or b["work_file"].startswith(only))
+            and (band is None or b.get("band") == band)
+            and (day == 0 or b.get("day") == day)
             and not os.path.exists(os.path.join(OUT, b["work_file"][:-4] + ".json"))]
     if limit:
         todo = todo[:limit]
@@ -531,7 +646,14 @@ async def run(day, limit, dry):
 
 
 def main():
+    global WORK, OUT, INDEX, LOG
     args = sys.argv[1:]
+    # `--yangi` — 2026-09-01 dagi yangi ro‘yxat (book_work2 / book_out2)
+    if "--yangi" in args:
+        WORK = os.path.join(ROOT, "tools", "book_work2")
+        OUT = os.path.join(ROOT, "tools", "book_out2")
+        INDEX = os.path.join(WORK, "index.json")
+        LOG = os.path.join(OUT, "_log.txt")
     # `--hammasi` — kunlarga bo‘lmay, qolgan barcha kitoblarni bir yo‘la
     day = 0 if "--hammasi" in args else \
         (int(args[args.index("--kun") + 1]) if "--kun" in args else 1)

@@ -1,0 +1,480 @@
+{
+ "title": "Atom odatlar",
+ "author": "Jeyms Klir",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "shaxsiy rivojlanish",
+   "odatlar",
+   "intizom",
+   "mehnatsevarlik",
+   "maqsad"
+  ],
+  "theme": "Kichik, mitti o‘zgarishlar va kundalik odatlar vaqt o‘tishi bilan inson hayotida ulkan muvaffaqiyatlar va ijobiy natijalarga olib keladi.",
+  "summary": "Jeyms Klir maktab davrida beysbol tayoqchasi tegishi natijasida og‘ir jarohat oladi. U uzoq vaqt davomida davolanib, sog‘lig‘ini tiklaydi. Universitetga kirgach, u o‘z hayotini tartibga solish uchun barvaqt uxlash, xonasini ozoda tutish va har kuni mashq qilish kabi kichik odatlarni shakllantiradi. Bu kichik odatlar unga o‘qishda va sportda yuqori natijalarga erishishga yordam beradi. Muallif o‘z tajribasi va ilmiy izlanishlariga tayanib, atom odatlarning kuchini tushuntiradi. Odatlarni shakllantirishning to‘rt bosqichi (signal, istak, javob, mukofot) va xulq-atvor o‘zgarishining to‘rt qoidasini (ko‘rinarli, jozibali, oson va qoniqarli qilish) batafsil bayon etadi. Kitob oxirida bu qoidalar orqali har bir inson o‘z hayotini va shaxsiyatini yaxshilashi mumkinligi ko‘rsatiladi.",
+  "characters": "Jeyms Klir — kitob muallifi, og‘ir jarohatni yengib o‘tib, kichik odatlar orqali muvaffaqiyatga erishgan yozuvchi. Deyv Breylsford — Britaniya velosport jamoasi murabbiysi, 1 foizlik yaxshilanishlar strategiyasini qo‘llab jamoani g‘alabaga yetaklagan. Stiv Martin — mashhur aktyor va so‘z ustasi, yillar davomida tinimsiz mashq qilib muvaffaqiyatga erishgan.",
+  "conclusion": "Asar o‘quvchiga ulkan natijalarga erishish uchun bir kechada emas, balki har kuni kichik va doimiy adolatli harakatlar qilish kerakligini o‘rgatadi. Bola va o‘smir o‘z vaqtini, intizomini va kundalik tartibini to‘g‘ri yo‘lga qo‘yish orqali har qanday qiyinchilikni yengish mumkinligini anglaydi.",
+  "difficulty": "o‘rta",
+  "mood": "ilhomlantiruvchi, o‘ylantiruvchi",
+  "for_whom": "O‘z vaqtini va tartibini yo‘lga qo‘yishni, o‘z ustida ishlashni hamda maqsadlariga doimiy mehnat bilan erishishni istagan o‘smirlarga.",
+  "events": [
+   "Jeyms Klir maktabda beysbol tayoqchasi tegishi tufayli og‘ir jarohat oladi va komaga tushadi.",
+   "Kasalxonada uzoq muddat davolanganidan so‘ng Jeyms sekin-asta oyoqqa turadi.",
+   "Universitetga o‘qishga kirib, u barvaqt uxlash va xonasini tartibda tutish odatlarini shakllantiradi.",
+   "Doimiy mashg‘ulotlar sababli u universitetning eng yaxshi sportchilaridan biriga aylanadi.",
+   "Jeyms o‘z tajribalarini veb-saytida maqola sifatida e'lon qila boshlaydi va ko‘plab obunachilar yig‘adi.",
+   "Deyv Breylsford Britaniya velosport jamoasiga murabbiy bo‘lib keladi va 1 foizlik yaxshilanishlar strategiyasini qo‘llaydi.",
+   "Britaniya velosipedchilari Olimpiada va Tur de Frans musobaqalarida ketma-ket g‘alaba qozonadi.",
+   "Muallif odatlarning shakllanish jarayonini to‘rt bosqichga (signal, istak, javob, mukofot) bo‘lib tushuntiradi.",
+   "Inson shaxsiyati uning takrorlanuvchi odatlaridan shakllanishi ko‘rsatib beriladi.",
+   "Didro effekti orqali bitta xarid boshqa xaridlarga sabab bo‘lishi bayon etiladi.",
+   "Shipol aeroportida pashsha stikeri yordamida hojatxona tozaligi oshirilgani misol qilinadi.",
+   "Muallif olmalarni muzlatkichdan olib stol ustiga qo‘yish orqali ularni har kuni yeyishni odat qiladi.",
+   "Ronan Birn velotrenajyorni kompyuterga ulab, mashq paytida Netflix ko‘rish usulini o‘ylab topadi.",
+   "Solomon Ash tajribasi orqali odamlarning ko‘pchilik fikriga ergashishi isbotlanadi.",
+   "Aravachadagi inson o‘z holatiga ijobiy baho berib, uni erkinlik manbai deb biladi.",
+   "Ikki daqiqa qoidasi yordamida har qanday yangi odatni boshlash osonlashtiriladi.",
+   "Jon Patterson kassa apparatini sotib olib, do‘kondagi o‘g‘riliklarga chek qo‘yadi.",
+   "Wrigley kompaniyasi saqichlarga yoqimli ta'm qo‘shib ularni jozibali qiladi.",
+   "Jerri Saynfeld har kuni latifa yozib, kalendardagi zanjirni uzmaslik usulini qo‘llaydi.",
+   "Stiv Martin yillar davomida tinimsiz mashq qilib, so‘z ustasi darajasiga yetishadi.",
+   "Pat Rayli Leykers jamoasida har bir o‘yinchining natijasini bir foizga oshirish dasturini kiritadi.",
+   "Kitob oxirida atom odatlarning ulkan natijalarga olib kelishi jamlab xulosa qilinadi."
+  ],
+  "quotes": [
+   "O‘ta kichik miqdordagi modda; tizimning eng kichik, bo‘linmaydigan qismi.",
+   "Kichik va ahamiyatsiz ko‘ringan o‘zgarishlar ham, agar doimiy ravishda takrorlansa, yillar davomida hayratli natijalarga olib keladi.",
+   "Avvalgi odatlaringiz bilan avvalgidek natijalarga erishasiz.",
+   "Odatlar erkinlikni cheklamaydi, aksincha uning uchun sharoit yaratadi.",
+   "O‘z-o‘zini nazorat qilish va kuchli irodaning siri ham shunda.",
+   "Bitta signalni muhitdan olib tashlasangiz, butun boshli odat yo‘qolib ketishi mumkin.",
+   "Kichik odatlar bir-biriga shunchaki qo‘shilmaydi, ular bir-birini kuchaytiradi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jeyms Klir maktabda sport maydonchasida qanday jarohat oldi?",
+   "options": [
+    "A) Beysbol tayoqchasi tegishi tufayli",
+    "B) Yugurib kelib yiqilishi tufayli",
+    "C) To‘p bilan urilishi tufayli",
+    "D) Velosipeddan yiqilishi tufayli"
+   ],
+   "answer": "A) Beysbol tayoqchasi tegishi tufayli"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif Denison universitetida qaysi sport turi bilan shug‘ullandi?",
+   "options": [
+    "A) Beysbol sporti bilan",
+    "B) Futbol sporti bilan",
+    "C) Tennis sporti bilan",
+    "D) Yengil atletika bilan"
+   ],
+   "answer": "A) Beysbol sporti bilan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Deyv Breylsford Britaniya velosport jamoasiga qanday murabbiy bo‘ldi?",
+   "options": [
+    "A) Natijalar bo‘yicha yangi direktor",
+    "B) Jismoniy tayyorgarlik bo‘yicha yordamchi",
+    "C) Velosiped ta'mirlash bo‘yicha usta",
+    "D) Yoshlar jamoasi bosh murabbiyi"
+   ],
+   "answer": "A) Natijalar bo‘yicha yangi direktor"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Deyv Breylsford jamoada qanday ish uslubini qo‘lladi?",
+   "options": [
+    "A) Mayda ustunliklarni jamlash strategiyasini",
+    "B) Faqat og‘ir mashg‘ulotlar o‘tkazishni",
+    "C) Yangi sportchilarni sotib olishni",
+    "D) Kunlik masofani ikki barobar oshirishni"
+   ],
+   "answer": "A) Mayda ustunliklarni jamlash strategiyasini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Odat shakllanishining to‘rt bosqichi qaysi to‘g‘ri tartibda berilgan?",
+   "options": [
+    "A) Signal, istak, javob, mukofot",
+    "B) Mukofot, signal, javob, istak",
+    "C) Istak, javob, mukofot, signal",
+    "D) Javob, signal, istak, mukofot"
+   ],
+   "answer": "A) Signal, istak, javob, mukofot"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun muallif universitetda barvaqt uxlashni odat qildi?",
+   "options": [
+    "A) Kun tartibini nazorat qilish uchun",
+    "B) Mashg‘ulotlardan juda charchagani uchun",
+    "C) Yotoqxonada chiroq o‘chgani uchun",
+    "D) Darslar ertalab barvaqt boshlangani uchun"
+   ],
+   "answer": "A) Kun tartibini nazorat qilish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Britaniya velosipedchilari nega qo‘llarini to‘g‘ri yuvishni o‘rgandi?",
+   "options": [
+    "A) Tumov yuqtirish xavfini kamaytirish uchun",
+    "B) Velosipedni toza ushlash uchun",
+    "C) Musobaqaga kirish qoidasi bo‘lgani uchun",
+    "D) Teri kasalliklaridan saqlanish uchun"
+   ],
+   "answer": "A) Tumov yuqtirish xavfini kamaytirish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning kichik odatlarga tayanib sog‘lig‘ini tiklashi qanday baholanadi?",
+   "options": [
+    "A) Sabr va intizomli yondashuv",
+    "B) Tasodifiy va omadli holat",
+    "C) Noto‘g‘ri va xavfli tajriba",
+    "D) Vaqtni behuda sarflash yo‘li"
+   ],
+   "answer": "A) Sabr va intizomli yondashuv"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Atom odat» tushunchasi orqali muallif nimani tasvirlamoqchi bo‘lgan?",
+   "options": [
+    "A) O‘ta mitti, lekin quvvatli manbani",
+    "B) Yadro qurolining fizik xususiyatini",
+    "C) Murakkab ilmiy va kimyoviy jarayonni",
+    "D) Katta va og‘ir toshlarni"
+   ],
+   "answer": "A) O‘ta mitti, lekin quvvatli manbani"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jeyms Klir odatlar haqida yozgan maqolalarini qayerda e'lon qildi?",
+   "options": [
+    "A) O‘zining shaxsiy veb-saytida",
+    "B) Mahalliy kundalik gazetada",
+    "C) Universitetning ilmiy jurnalida",
+    "D) Sport yangiliklari xabarida"
+   ],
+   "answer": "A) O‘zining shaxsiy veb-saytida"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Didro effekti deb nimaga aytiladi?",
+   "options": [
+    "A) Bitta xarid boshqa xaridlarga sabab bo‘lishiga",
+    "B) Inson tejamkor bo‘lib qolishiga",
+    "C) Eski buyumlarni sotib yuborishga",
+    "D) Uyga keraksiz mebel qo‘ymaslikka"
+   ],
+   "answer": "A) Bitta xarid boshqa xaridlarga sabab bo‘lishiga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shipol aeroportida hojatxonadagi sachrashlarni kamaytirish uchun nima yopishtirildi?",
+   "options": [
+    "A) Pashsha tasviri tushirilgan stiker",
+    "B) Diqqat qiluvchi qizil belgi",
+    "C) Maxsus ogohlantiruvchi yozuvli qog‘oz",
+    "D) Suv belgisini ko‘rsatuvchi rasm"
+   ],
+   "answer": "A) Pashsha tasviri tushirilgan stiker"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif olmalarni muzlatkichdan olib stolga qo‘ygach nima o‘zgardi?",
+   "options": [
+    "A) Ularni har kuni yeya boshladi",
+    "B) Olmalar tezroq ayniydigan bo‘lib qoldi",
+    "C) Mevalarni boshqa xarid qilmadi",
+    "D) Stol ustida joy qolgani yo‘q"
+   ],
+   "answer": "A) Ularni har kuni yeya boshladi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ronan Birn velotrenajyorini kompyuterga ulab nimani tomosha qilardi?",
+   "options": [
+    "A) Netflix seriallarini tomosha qilardi",
+    "B) Beysbol va futbol musobaqalarini",
+    "C) Ilmiy ma'ruzalar va hujjatli filmlarni",
+    "D) Yangiliklar va ob-havo ko‘rsatuvini"
+   ],
+   "answer": "A) Netflix seriallarini tomosha qilardi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Xulq-atvorni o‘zgartirishning birinchi va ikkinchi qoidalari qanday?",
+   "options": [
+    "A) Ko‘rinarli va jozibali qilish",
+    "B) Qiyin va ko‘zdan yiroq qilish",
+    "C) Qoniqarsiz va murakkablashtirish",
+    "D) Yashirin va yoqimsiz qilish"
+   ],
+   "answer": "A) Ko‘rinarli va jozibali qilish"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega gitara chalishni mashq qilmoqchi bo‘lgan odam uni xona o‘rtasiga qo‘yishi kerak?",
+   "options": [
+    "A) Signal doim ko‘zga tashlanishi uchun",
+    "B) Gitara buzilib qolmasligi uchun",
+    "C) Xonada joy tejash uchun",
+    "D) Boshqalar ko‘rib havas qilishi uchun"
+   ],
+   "answer": "A) Signal doim ko‘zga tashlanishi uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Solomon Ash tajribasida odamlar nega noto‘g‘ri javobni tanladi?",
+   "options": [
+    "A) Ko‘pchilikning fikriga erashgani uchun",
+    "B) To‘g‘ri javobni umuman bilmagani uchun",
+    "C) Kartochkadagi chiziqlar o‘xshash bo‘lgani uchun",
+    "D) Tajriba sharti shunday bo‘lgani uchun"
+   ],
+   "answer": "A) Ko‘pchilikning fikriga erashgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Aravachadagi insonning «U meni ozod qildi» deyishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Vaziyatga ijobiy va to‘g‘ri qarashni",
+    "B) O‘z taqdiriga loqayd bo‘lishni",
+    "C) Aravachani yoqtirib qolganini",
+    "D) Haqiqatdan qochib yashashni"
+   ],
+   "answer": "A) Vaziyatga ijobiy va to‘g‘ri qarashni"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«O‘zgarmaydigan hayot bo‘lmaydi» degan fikr orqali nima anglashiladi?",
+   "options": [
+    "A) Har qanday odatni o‘zgartirish mumkinligi",
+    "B) Inson o‘zgarishga qodir emasligi",
+    "C) Hayot har doim bir xil o‘tishi",
+    "D) Taqdirni o‘zgartirib bo‘lmasligi"
+   ],
+   "answer": "A) Har qanday odatni o‘zgartirish mumkinligi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Odatlarning ijobiy va salbiy tomonlarini tahlil qilish uchun nima zarur?",
+   "options": [
+    "A) Odatlar tabelini muntazam yuritish",
+    "B) Har kuni yangi buyum sotib olish",
+    "C) Faqat natijalarga e'tibor berish",
+    "D) Do‘stlar maslahatiga amal qilish"
+   ],
+   "answer": "A) Odatlar tabelini muntazam yuritish"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Wrigley kompaniyasi saqichlarni yanada jozibali qilish uchun nima qo‘shdi?",
+   "options": [
+    "A) Yoqimli va mazali ta'mlarni",
+    "B) Ko‘proq shakar va vitaminlarni",
+    "C) Shifobaxsh dorivor o‘tlarni",
+    "D) Rangli va yaltiroq qog‘ozlarni"
+   ],
+   "answer": "A) Yoqimli va mazali ta'mlarni"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jerri Saynfeld har kuni latifa yozish odatida nimaga intilardi?",
+   "options": [
+    "A) Kalendardagi zanjirni uzmaslikka",
+    "B) Ko‘proq pul ishlab topishga",
+    "C) Gazetalarda mashhur bo‘lishga",
+    "D) Sahnada doim kuldirishga"
+   ],
+   "answer": "A) Kalendardagi zanjirni uzmaslikka"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jon Patterson xodimlari pul o‘marishini to‘xtatish uchun qaysi moslamani sotib oldi?",
+   "options": [
+    "A) Birinchi kassa apparatini",
+    "B) Maxsus qulfli seyfni",
+    "C) Temir eshik va qulfni",
+    "D) Videokamera va signalizatsiyani"
+   ],
+   "answer": "A) Birinchi kassa apparatini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Odatni shakllantirishda e'tibor beriladigan to‘rt qoida guruhiga qaysi kiradi?",
+   "options": [
+    "A) Ko‘rinarli, jozibali, oson, qoniqarli",
+    "B) Qiyin, qimmat, yashirin, zerikarli",
+    "C) Tez, arzon, vaqtinchalik, tasodifiy",
+    "D) Murakkab, uzuk-yuluk, og‘ir, foydasiz"
+   ],
+   "answer": "A) Ko‘rinarli, jozibali, oson, qoniqarli"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Stiv Martin nima uchun yillar davomida sahnada chiqish qilishdan to‘xtamadi?",
+   "options": [
+    "A) Yengib o‘tiladigan qiyinchilik ishtiyoq bergani uchun",
+    "B) Boshqa kasbi bo‘lmagani uchun",
+    "C) Faqat do‘stlari so‘ragani uchun",
+    "D) Tezgina boyib ketishni xohlagani uchun"
+   ],
+   "answer": "A) Yengib o‘tiladigan qiyinchilik ishtiyoq bergani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Leykers basketbol jamoasi murabbiyi nega «1 foizlik» yaxshilanish dasturini tuzdi?",
+   "options": [
+    "A) Har bir o‘yinchining imkoniyatini oshirish uchun",
+    "B) Yangi o‘yinchilarni jazolash uchun",
+    "C) Musobaqa qoidalarini o‘zgartirish uchun",
+    "D) Boshqa murabbiylarga havola qilish uchun"
+   ],
+   "answer": "A) Har bir o‘yinchining imkoniyatini oshirish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Pat Raylining o‘yinchilarga «aytilmagan qahramonliklar» uchun ball bergani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, chunki jamoaviy mehnat rag‘batlantirildi",
+    "B) Noto‘g‘ri, faqat ochkolar sanalishi kerak",
+    "C) Xato, chunki o‘yinchilar charchab qoladi",
+    "D) Keraksiz, bu o‘yinga ta'sir qilmaydi"
+   ],
+   "answer": "A) To‘g‘ri, chunki jamoaviy mehnat rag‘batlantirildi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Odatlarni har kuni daftarga qayd etib borish foydalimi?",
+   "options": [
+    "A) Ha, chunki natijalar aniq ko‘rinadi",
+    "B) Yo‘q, bu vaqtni behuda sarflash",
+    "C) Faqat bolalar uchun foydali",
+    "D) Bu faqat xotirani susaytiradi"
+   ],
+   "answer": "A) Ha, chunki natijalar aniq ko‘rinadi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning «Kichik o‘zgarishlar, katta natijalar» iborasi asar ruhini qanday ochadi?",
+   "options": [
+    "A) Mitti odatlarning ulkan kuchini ko‘rsatadi",
+    "B) Faqat tezkor muvaffaqiyatni va'da qiladi",
+    "C) Qiyin mashqlardan qochishni targ‘ib qiladi",
+    "D) Omadga suyanib yashashni o‘rgatadi"
+   ],
+   "answer": "A) Mitti odatlarning ulkan kuchini ko‘rsatadi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Atom odat» birikmasida muallif qanday badiiy o‘xshatish va ma'no qo‘llagan?",
+   "options": [
+    "A) Bo‘linmas mitti qism va quvvat manbai",
+    "B) Og‘ir va qorong‘u portlash kuchi",
+    "C) Faqat ilmiy tajriba va formulalar",
+    "D) Vaqtinchalik va o‘tkinchi oddiy hodisa"
+   ],
+   "answer": "A) Bo‘linmas mitti qism va quvvat manbai"
+  }
+ ]
+}

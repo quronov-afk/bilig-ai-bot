@@ -1,0 +1,401 @@
+<title>Bilig kutubxonasi ro‘yxati</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#F2F4F1; --surface:#FFFFFF; --raised:#FAFBF9;
+  --ink:#151F1C; --ink-soft:#4E5C57; --ink-faint:#77837E;
+  --line:#DBE0DB; --line-soft:#E9EDE9;
+  --accent:#23527C; --accent-soft:#E4ECF3;
+  --bor:#2C6A4E; --bor-bg:#E1EEE7;
+  --mut:#8A5712; --mut-bg:#F5EAD6;
+  --yoq:#982C2C; --yoq-bg:#F6E3E3;
+  --noa:#57565F; --noa-bg:#E9E9ED;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#111715; --surface:#19211F; --raised:#1E2725;
+    --ink:#E9EEEB; --ink-soft:#A6B2AD; --ink-faint:#7C8781;
+    --line:#2B3532; --line-soft:#232C2A;
+    --accent:#89B6DE; --accent-soft:#1C2A36;
+    --bor:#7ECBA3; --bor-bg:#1B3128;
+    --mut:#E0B461; --mut-bg:#332913;
+    --yoq:#E58B8B; --yoq-bg:#341D1D;
+    --noa:#B0B0BA; --noa-bg:#26262B;
+  }
+}
+:root[data-theme="dark"]{
+    --paper:#111715; --surface:#19211F; --raised:#1E2725;
+    --ink:#E9EEEB; --ink-soft:#A6B2AD; --ink-faint:#7C8781;
+    --line:#2B3532; --line-soft:#232C2A;
+    --accent:#89B6DE; --accent-soft:#1C2A36;
+    --bor:#7ECBA3; --bor-bg:#1B3128;
+    --mut:#E0B461; --mut-bg:#332913;
+    --yoq:#E58B8B; --yoq-bg:#341D1D;
+    --noa:#B0B0BA; --noa-bg:#26262B;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1040px; margin:0 auto; padding:48px 24px 96px; display:flex; flex-direction:column; gap:56px}
+header{display:flex; flex-direction:column; gap:18px; border-bottom:2px solid var(--ink); padding-bottom:32px}
+.eyebrow{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:600}
+h1{
+  font-family:Literata,Georgia,serif; font-weight:700; font-size:clamp(30px,5vw,46px);
+  line-height:1.15; margin:0; text-wrap:balance; letter-spacing:-.01em;
+}
+.lead{font-family:Literata,Georgia,serif; font-size:18px; color:var(--ink-soft); max-width:62ch; margin:0}
+.meta{font-size:13px; color:var(--ink-faint); display:flex; flex-wrap:wrap; gap:6px 18px}
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:2px; background:var(--line); border:1px solid var(--line)}
+.stat{background:var(--surface); padding:22px 20px; display:flex; flex-direction:column; gap:6px}
+.stat .n{font-family:Literata,Georgia,serif; font-size:38px; font-weight:700; line-height:1; font-variant-numeric:tabular-nums}
+.stat .k{font-size:13px; color:var(--ink-soft)}
+.stat.s-bor .n{color:var(--bor)} .stat.s-mut .n{color:var(--mut)} .stat.s-yoq .n{color:var(--yoq)}
+section{display:flex; flex-direction:column; gap:20px}
+h2{font-family:Literata,Georgia,serif; font-size:26px; font-weight:600; margin:0; letter-spacing:-.01em; text-wrap:balance}
+h2 .sub{display:block; font-family:"IBM Plex Sans",sans-serif; font-size:13px; font-weight:500; color:var(--ink-faint); letter-spacing:.02em; margin-top:6px}
+h3{font-family:Literata,Georgia,serif; font-size:18px; margin:0 0 6px; font-weight:600}
+p{margin:0; max-width:70ch}
+.note{background:var(--raised); border:1px solid var(--line); border-left:3px solid var(--accent); padding:18px 20px; display:flex; flex-direction:column; gap:8px}
+.note p{color:var(--ink-soft); font-size:15px}
+.tbox{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14.5px}
+thead th{
+  text-align:left; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-faint); font-weight:600; padding:12px 14px; border-bottom:1px solid var(--line);
+  background:var(--raised); position:sticky; top:0;
+}
+td{padding:11px 14px; border-bottom:1px solid var(--line-soft); vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:var(--raised)}
+.num{color:var(--ink-faint); font-variant-numeric:tabular-nums; width:38px}
+.asar{font-family:Literata,Georgia,serif; font-weight:600; min-width:230px}
+.mual{color:var(--ink-soft); white-space:nowrap}
+.yosh{font-variant-numeric:tabular-nums; white-space:nowrap; font-weight:600}
+.izoh{color:var(--ink-soft); font-size:13.5px; min-width:200px}
+.chip{display:inline-block; white-space:nowrap; font-size:12px; font-weight:600; padding:3px 9px; border-radius:2px}
+.chip.bor{color:var(--bor); background:var(--bor-bg)}
+.chip.mut{color:var(--mut); background:var(--mut-bg)}
+.chip.yoq{color:var(--yoq); background:var(--yoq-bg)}
+.chip.noaniq{color:var(--noa); background:var(--noa-bg)}
+.legend{display:flex; flex-wrap:wrap; gap:10px 22px; font-size:13.5px; color:var(--ink-soft)}
+.legend span b{font-weight:600}
+.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px}
+.card{background:var(--surface); border:1px solid var(--line); padding:20px; display:flex; flex-direction:column; gap:8px}
+.card p{font-size:14.5px; color:var(--ink-soft)}
+.steps{display:flex; flex-direction:column; gap:0; border:1px solid var(--line); background:var(--surface)}
+.step{display:grid; grid-template-columns:56px 1fr; gap:18px; padding:20px; border-bottom:1px solid var(--line-soft)}
+.step:last-child{border-bottom:none}
+.step .no{font-family:Literata,Georgia,serif; font-size:24px; font-weight:700; color:var(--accent); line-height:1.1}
+.step p{font-size:14.5px; color:var(--ink-soft)}
+footer{border-top:1px solid var(--line); padding-top:24px; font-size:13px; color:var(--ink-faint)}
+@media (max-width:600px){ .wrap{padding:32px 16px 64px; gap:44px} .step{grid-template-columns:40px 1fr; gap:12px} }
+
+.chip.tayyor{color:var(--bor); background:var(--bor-bg)}
+.chip.kutish{color:var(--mut); background:var(--mut-bg)}
+.kirish{font-family:Literata,Georgia,serif; font-size:16.5px; color:var(--ink-soft); max-width:68ch}
+.sechead{display:flex; flex-wrap:wrap; align-items:baseline; gap:12px; justify-content:space-between}
+.count{font-size:13px; color:var(--ink-faint); font-variant-numeric:tabular-nums; white-space:nowrap}
+.jam{display:flex; flex-wrap:wrap; border:1px solid var(--line); background:var(--surface)}
+.jam div{flex:1 1 170px; padding:20px; border-right:1px solid var(--line-soft)}
+.jam div:last-child{border-right:none}
+.jam b{display:block; font-family:Literata,Georgia,serif; font-size:34px; line-height:1.1; font-variant-numeric:tabular-nums}
+.jam span{font-size:13px; color:var(--ink-soft)}
+.pasport{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:2px; background:var(--line); border:1px solid var(--line)}
+.pasport div{background:var(--surface); padding:16px 18px}
+.pasport h4{margin:0 0 4px; font-family:Literata,Georgia,serif; font-size:15px; font-weight:600}
+.pasport p{font-size:13.5px; color:var(--ink-soft)}
+.pasport .eski{color:var(--ink-faint); text-decoration:line-through; margin-right:6px}
+.pasport .yangi{color:var(--bor); font-weight:600}
+</style>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Bilig AI · kitob bazasini kengaytirish · yakuniy ro‘yxat</div>
+  <h1>Bazaga qo‘shiladigan kitoblar</h1>
+  <p class="lead">Davlat tanlovi ro‘yxati, xalq dostonlari va to‘rt yo‘nalish bir ro‘yxatga jamlandi. Har bir asar kompyuteringizdagi «Mutolaa Word» papkasi bo‘yicha tekshirildi: matni bormi yoki kutish ro‘yxatiga tushadimi.</p>
+  <div class="meta"><span>2026-yil 1-sentabr</span><span>Manba: gov.uz ro‘yxati · «Mutolaa Word 28.08.2026» papkasi (3 407 fayl) · Bilig AI bazasi (130 asar)</span></div>
+</header>
+
+<section>
+  <div class="jam">
+    <div><b>183</b><span>Qo‘shiladigan asar</span></div>
+    <div><b>149</b><span>Matni papkada tayyor</span></div>
+    <div><b>34</b><span>Kutish ro‘yxati</span></div>
+    <div><b>313</b><span>Bazadagi umumiy son</span></div>
+  </div>
+  <div class="note">
+    <p><b>Eng katta yangilik:</b> matn masalasi hal bo‘ldi. Papkangizda 3 407 ta Word fayli bor va ro‘yxatdagi 149 ta asarning matni o‘sha yerda turibdi — hech narsani qidirishning hojati yo‘q. Faqat 33 tasi topilmadi.</p>
+    <p><b>Papkadagi fayl nomida janr ham yozilgan</b> (doston, diniy-ma'rifiy, shaxsiy rivojlanish…) — shu tufayli tanlash aniq bo‘ldi: papkada 48 ta doston, 63 ta diniy-ma'rifiy va 88 ta shaxsiy rivojlanish kitobi bor ekan.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sechead"><h2>Davlat tanlovi · 10-14 yosh</h2><div class="count">30 ta asar · matni tayyor 12 ta</div></div>
+  <p class="kirish">Davlat ro‘yxatidagi 40 ta asardan bazamizda bo‘lmagan 30 tasi. Yoshi kichik toifa — ilovaning bugungi asosiy foydalanuvchisi shular.</p>
+  <div class="tbox"><table><thead><tr><th>Asar</th><th>Muallif</th><th>Yosh</th><th>Matn</th><th>Izoh</th></tr></thead><tbody><tr><td class="asar">«Malika Husnobod» dostoni</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Doston; bolalar uchun qisqartirilgan nashri kerak</td></tr>
+<tr><td class="asar">«Ravshan» dostoni</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">«Go‘ro‘g‘li» turkumidan</td></tr>
+<tr><td class="asar">«Yunus va Misqol pari» dostoni</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Doston</td></tr>
+<tr><td class="asar">«Xalq bo‘l, elim»</td><td class="mual">Muhammad Yusuf</td><td class="yosh">11-13</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">She'riy to‘plam — testga mos emas</td></tr>
+<tr><td class="asar">«Bolajon, bolajonim»</td><td class="mual">Po‘lat Mo‘min</td><td class="yosh">7-8</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">She'riy to‘plam — testga mos emas</td></tr>
+<tr><td class="asar">«Quyosh bola, oy bola»</td><td class="mual">Qambar Ota</td><td class="yosh">7-8</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">She'riy to‘plam — testga mos emas</td></tr>
+<tr><td class="asar">«Yashasin quyoshli kun»</td><td class="mual">Rustam Nazar</td><td class="yosh">7-8</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">She'riy to‘plam — testga mos emas</td></tr>
+<tr><td class="asar">«Hirotga sayohat»</td><td class="mual">Yo‘ldosh Sulaymon</td><td class="yosh">9-10</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">She'riy to‘plam — testga mos emas</td></tr>
+<tr><td class="asar">«Saylanma» (qissalar)</td><td class="mual">Mirkarim Osim</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Bazada shu muallifning uchta qissasi bor, saylanma yo‘q</td></tr>
+<tr><td class="asar">«Mo‘ttivoymisan, Mittivoymisan»</td><td class="mual">Anvar Obidjon</td><td class="yosh">9-10</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Ming bir kitob»</td><td class="mual">Sharifjon Ahmad</td><td class="yosh">11-13</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="asar">«O‘tkirjonning o‘nta o‘rdak ukasi»</td><td class="mual">Qobiljon Shermatov</td><td class="yosh">9-10</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="asar">«Nabiralarimga maktublar…»</td><td class="mual">Erkin Malik</td><td class="yosh">11-13</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="asar">«Shunaqa bolani qidirib yuribman»</td><td class="mual">Latif Mahmudov</td><td class="yosh">9-10</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Olamlar kurashi»</td><td class="mual">Baxtiyor Abdug‘afur</td><td class="yosh">9-10</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="asar">«Galaktikada bir kun» (3-kitob)</td><td class="mual">Sa'dullo Quronov</td><td class="yosh">9-10</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Bazada 2-kitob bor; 1- va 3-kitobi Mutolaa'da turibdi</td></tr>
+<tr><td class="asar">«Bir qultum buloq suvi»</td><td class="mual">Farhod Musajonov</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Qorxat»</td><td class="mual">Nosir Fozilov</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Uch baqaloq»</td><td class="mual">Yuriy Olesha</td><td class="yosh">9-10</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Tarjima asar</td></tr>
+<tr><td class="asar">«Oq so‘yloq»</td><td class="mual">Jek London</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Bazada Jek Londonning hikoyalari bor, bu qissa yo‘q</td></tr>
+<tr><td class="asar">«Nilsning yovvoyi g‘ozlar bilan sayohati»</td><td class="mual">Selma Lagerlyof</td><td class="yosh">9-10</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="asar">«Hellados»</td><td class="mual">Nodar Dumbadze</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Bazada shu muallifning ikki asari bor</td></tr>
+<tr><td class="asar">«Imperatorning tug‘ilishi. Boburning bolaligi»</td><td class="mual">Durbek Qo‘ldoshev</td><td class="yosh">9-10</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="asar">«Geklberri Finning boshidan kechirganlari»</td><td class="mual">Mark Tven</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Bazada Tom Soyer bor, Geklberri yo‘q</td></tr>
+<tr><td class="asar">«Buyuk Akbar va Roja Birbol»</td><td class="mual">Hind xalq og‘zaki ijodi</td><td class="yosh">9-10</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Mutolaa'da «Shoh Akbar va dono Birbal» nomi bilan</td></tr>
+<tr><td class="asar">«Tolzordan esgan shamol»</td><td class="mual">Kennet Grehem</td><td class="yosh">9-10</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Tarjima asar</td></tr>
+<tr><td class="asar">«Dunyo bo‘ylab sakson kun»</td><td class="mual">Jyul Vern</td><td class="yosh">11-13</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Bazada Jyul Vernning to‘rt asari bor, bu yo‘q</td></tr>
+<tr><td class="asar">«Qanday xatolar bo‘ladi»</td><td class="mual">Janni Rodari</td><td class="yosh">7-8</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Ertaklar — kichik hajmli, o‘zingiz saralaysiz</td></tr>
+<tr><td class="asar">«Mio, bolajonim Mio»</td><td class="mual">Astrid Lindgren</td><td class="yosh">9-10</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Tarjima asar</td></tr>
+<tr><td class="asar">«Britannika ensiklopediyasi»</td><td class="mual">Kristofer Lloyd</td><td class="yosh">—</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Ma'lumotnoma — boshdan-oxir o‘qiladigan asar emas</td></tr></tbody></table></div>
+</section>
+<section>
+  <div class="sechead"><h2>Davlat tanlovi · 15-19 yosh</h2><div class="count">50 ta asar · matni tayyor 35 ta</div></div>
+  <p class="kirish">Ellikta asarning bittasi ham bazamizda yo‘q edi. Ularni «14-16» va yangi «17-19» toifalariga ajratdim.</p>
+  <div class="tbox"><table><thead><tr><th>Asar</th><th>Muallif</th><th>Yosh</th><th>Matn</th><th>Izoh</th></tr></thead><tbody><tr><td class="asar">«Go‘ro‘g‘lining tug‘ilishi» dostoni</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Doston; qisqartirilgan nashrda 11-13 ham bo‘ladi</td></tr>
+<tr><td class="asar">«Shirin bilan Shakar» dostoni</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="asar">«Kalila va Dimna»</td><td class="mual">Hind xalq eposi</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Masal shaklidagi hikmat</td></tr>
+<tr><td class="asar">«Qobusnoma»</td><td class="mual">Kaykovus</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Pand-nasihat; bo‘limlarga bo‘lib berish qulay</td></tr>
+<tr><td class="asar">«Boburnoma»</td><td class="mual">Zahiriddin Muhammad Bobur</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">To‘liq matni og‘ir; moslashtirilgan nashrda 14-16</td></tr>
+<tr><td class="asar">«Lison ut-tayr»</td><td class="mual">Alisher Navoiy</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Mutolaa'da nasriy bayoni bor — bizga o‘shasi kerak</td></tr>
+<tr><td class="asar">«Mezon uz-zamon»</td><td class="mual">Is'hoqxon Ibrat</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Ilmiy-tarixiy asar</td></tr>
+<tr><td class="asar">«She'rlar»</td><td class="mual">G‘afur G‘ulom</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">She'riy to‘plam — qaysi nashr ekani aniqlanishi kerak</td></tr>
+<tr><td class="asar">«She'rlar»</td><td class="mual">Oybek</td><td class="yosh">14-16</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">She'riy to‘plam — qaysi nashr ekani aniqlanishi kerak</td></tr>
+<tr><td class="asar">«Umr manzillari»</td><td class="mual">Abdulla Oripov</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">She'riy to‘plam — testga mos emas</td></tr>
+<tr><td class="asar">«Zamon qasri»</td><td class="mual">Sirojiddin Sayyid</td><td class="yosh">14-16</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">She'riy to‘plam; Mutolaa'da topilmadi</td></tr>
+<tr><td class="asar">«Qoraqalpoqnoma»</td><td class="mual">To‘lepbergen Qaipbergenov</td><td class="yosh">17-19</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="asar">«Muqaddas»</td><td class="mual">Odil Yoqubov</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Amir Temur siymosi»</td><td class="mual">Pirimqul Qodirov</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Ilmiy badia; bazadagi «Amir Temur» bolalar kitobi — boshqa asar</td></tr>
+<tr><td class="asar">«Mungli ko‘zlar»</td><td class="mual">Xudoyberdi To‘xtaboyev</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Qorako‘z Majnun»</td><td class="mual">Said Ahmad</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Spitamen»</td><td class="mual">Maqsud Qoriyev</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Tarixiy roman</td></tr>
+<tr><td class="asar">«Yoz yomg‘iri»</td><td class="mual">O‘lmas Umarbekov</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Kattalar munosabatlari; Mutolaa'da ovozli nashri bor</td></tr>
+<tr><td class="asar">«Yulduzlar mangu yonadi»</td><td class="mual">Tog‘ay Murod</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Daftar hoshiyasidagi bitiklar»</td><td class="mual">O‘tkir Hoshimov</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Qaydlar to‘plami</td></tr>
+<tr><td class="asar">«Odamlardan tinglab hikoya»</td><td class="mual">Xayriddin Sulton</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Ozodlik»</td><td class="mual">Shukur Xolmirzayev</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Og‘abiy»</td><td class="mual">Kengisboy Karimov</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Panoh»</td><td class="mual">Xurshid Do‘stmuhammad</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Qoyalar ham yig‘laydi»</td><td class="mual">Normurod Norqobilov</td><td class="yosh">14-16</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Boboso‘z izidan»</td><td class="mual">Eshqobil Shukur</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Ilmiy-badiiy izlanish</td></tr>
+<tr><td class="asar">«Mezon»</td><td class="mual">Shomirza Turdimov</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Jaziramadagi odamlar»</td><td class="mual">Luqmon Bo‘rixon</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Sho‘rodan qolgan odamlar»</td><td class="mual">Shoyim Bo‘tayev</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Gudbay, Amerika»</td><td class="mual">Abduqayum Yo‘ldoshev</td><td class="yosh">17-19</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Mutolaa'da topilmadi</td></tr>
+<tr><td class="asar">«Ma'suma»</td><td class="mual">Isajon Sulton</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Azal muhri»</td><td class="mual">Baxtiyor Abdug‘afur</td><td class="yosh">17-19</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Mo‘ysafid Biyobonim»</td><td class="mual">Shahodat Ulug‘</td><td class="yosh">17-19</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Munavvar Qorining so‘nggi nidosi»</td><td class="mual">Abbos Said</td><td class="yosh">17-19</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Maqar»</td><td class="mual">Shuhrat Matkarim</td><td class="yosh">17-19</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Tongotar»</td><td class="mual">Raxshona Ahmedova</td><td class="yosh">17-19</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Suyumbika»</td><td class="mual">Risolat Haydarova</td><td class="yosh">17-19</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Mening Dog‘istonim»</td><td class="mual">Rasul Hamzatov</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Yevgeniya Grande»</td><td class="mual">Onore de Balzak</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Tarjima asar; pul va oila mavzusi</td></tr>
+<tr><td class="asar">«Iqrornoma»</td><td class="mual">Lev Tolstoy</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Diniy-falsafiy iqrornoma — ehtiyot bilan</td></tr>
+<tr><td class="asar">«Bu yerda hamma narsa bo‘lishi mumkin»</td><td class="mual">Jianna Molinari</td><td class="yosh">17-19</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Mutolaa'da topilmadi; mazmuni tekshirilsin</td></tr>
+<tr><td class="asar">«Farengeyt bo‘yicha 451 daraja»</td><td class="mual">Rey Bredberi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Kambag‘allar»</td><td class="mual">Fyodor Dostoyevskiy</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Choliqushi»</td><td class="mual">Rashod Nuri Guntekin</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Klod Gyo»</td><td class="mual">Viktor Gyugo</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Qatl mavzusi</td></tr>
+<tr><td class="asar">«Yulduzlararo sargardon»</td><td class="mual">Jek London</td><td class="yosh">17-19</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Qamoq va qiynoq tasviri; Mutolaa'da topilmadi</td></tr>
+<tr><td class="asar">«Kon-Tikida safar»</td><td class="mual">Tur Xeyerdal</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Mening hayotim»</td><td class="mual">Henri Ford</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Shaxsiy rivojlanish yo‘nalishiga mos</td></tr>
+<tr><td class="asar">«Jasorat» to‘plami</td><td class="mual">Mualliflar jamoasi</td><td class="yosh">14-16</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Qaysi to‘plam ekani aniqlanishi kerak</td></tr>
+<tr><td class="asar">«Yoshlik» jurnali, 2026-yil sonlari</td><td class="mual">—</td><td class="yosh">—</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Jurnal — kitob bazasiga kirmaydi</td></tr></tbody></table></div>
+</section>
+<section>
+  <div class="sechead"><h2>Xalq dostonlari va eposlar</h2><div class="count">21 ta asar · matni tayyor 21 ta</div></div>
+  <p class="kirish">Bazada bironta doston yo‘q edi. To‘liq matni ham, nasriy bayoni ham bo‘lsa — ikkalasi olinadi, nomiga «(nasriy bayoni)» qo‘shib qo‘yiladi.</p>
+  <div class="tbox"><table><thead><tr><th>Asar</th><th>Muallif</th><th>Yosh</th><th>Matn</th><th>Izoh</th></tr></thead><tbody><tr><td class="asar">«Alpomish»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Milliy eposimiz — javonning boshida turishi kerak</td></tr>
+<tr><td class="asar">«Ravshan»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">«Go‘ro‘g‘li» turkumi · davlat ro‘yxatida ham bor</td></tr>
+<tr><td class="asar">«Go‘ro‘g‘lining tug‘ilishi»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Davlat ro‘yxatida ham bor</td></tr>
+<tr><td class="asar">«Malika Husnobod»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Davlat ro‘yxatida ham bor</td></tr>
+<tr><td class="asar">«Yunus va Misqol pari»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Davlat ro‘yxatida ham bor</td></tr>
+<tr><td class="asar">«Yusuf va Ahmad»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Qahramonlik dostoni</td></tr>
+<tr><td class="asar">«Avazxon»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">«Go‘ro‘g‘li» turkumi</td></tr>
+<tr><td class="asar">«Malika ayyor»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">«Go‘ro‘g‘li» turkumi</td></tr>
+<tr><td class="asar">«Rustamxon»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Sarguzasht ohangi kuchli</td></tr>
+<tr><td class="asar">«Xoldorxon»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Davlat ro‘yxatining 20-30 toifasida</td></tr>
+<tr><td class="asar">«Bo‘tako‘z»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Kuntug‘mish»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Ishqiy-qahramonlik dostoni</td></tr>
+<tr><td class="asar">«Shirin bilan Shakar»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Davlat ro‘yxatida ham bor</td></tr>
+<tr><td class="asar">«Mashriqo»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Bozirgon»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Alp Er To‘nga yoki Afrosiyob jangnomasi»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Eng qadimgi turkiy qahramonlik dostoni</td></tr>
+<tr><td class="asar">«Tohir va Zuhra»</td><td class="mual">Xalq og‘zaki ijodi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Papkada ertak shaklida turibdi; fojiali yakun</td></tr>
+<tr><td class="asar">«Dada Qo‘rqut hikoyalari»</td><td class="mual">Turkiy xalqlar eposi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Davlat ro‘yxatida «Qo‘rqut Ota kitobi» nomi bilan</td></tr>
+<tr><td class="asar">«Kalila va Dimna»</td><td class="mual">Hind xalq eposi</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Davlat ro‘yxatida ham bor</td></tr>
+<tr><td class="asar">«Manas»</td><td class="mual">Qirg‘iz xalq eposi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Masposhsho»</td><td class="mual">Qoraqalpoq xalq eposi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr></tbody></table></div>
+</section>
+<section>
+  <div class="sechead"><h2>Navoiy va Sharq dostonlari</h2><div class="count">8 ta asar · matni tayyor 8 ta</div></div>
+  <p class="kirish">Yozma dostonlar. Navoiyning uch asarining nasriy bayoni papkada tayyor turibdi — o‘smir uchun aynan o‘shalari olinadi.</p>
+  <div class="tbox"><table><thead><tr><th>Asar</th><th>Muallif</th><th>Yosh</th><th>Matn</th><th>Izoh</th></tr></thead><tbody><tr><td class="asar">«Farhod va Shirin»</td><td class="mual">Alisher Navoiy</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Papkada she'riy matni bor; nasriy bayoni ham qidiriladi</td></tr>
+<tr><td class="asar">«Layli va Majnun»</td><td class="mual">Alisher Navoiy</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Hayrat ul-abror» (nasriy bayon)</td><td class="mual">Alisher Navoiy</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Nasriy bayoni papkada bor</td></tr>
+<tr><td class="asar">«Lison ut-tayr» (nasriy bayon)</td><td class="mual">Alisher Navoiy</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Davlat ro‘yxatida ham bor; moslashtirilgan matni ham bor</td></tr>
+<tr><td class="asar">«Saddi Iskandariy» (nasriy bayon)</td><td class="mual">Alisher Navoiy</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Davlat ro‘yxatining 20-30 toifasida</td></tr>
+<tr><td class="asar">«Sab'ayi sayyor»</td><td class="mual">Alisher Navoiy</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Qutadg‘u bilig»</td><td class="mual">Yusuf Xos Hojib</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Turkiy pand-nasihat dostoni</td></tr>
+<tr><td class="asar">«Mantiq ut-tayr»</td><td class="mual">Fariduddin Attor</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Navoiy «Lison ut-tayr»ining manbai</td></tr></tbody></table></div>
+</section>
+<section>
+  <div class="sechead"><h2>O‘zbek klassikasi</h2><div class="count">16 ta asar · matni tayyor 16 ta</div></div>
+  <p class="kirish">Eng katta bo‘shliq shu yerda edi: Qodiriy, Cho‘lpon, Oybek — bittasi ham yo‘q edi.</p>
+  <div class="tbox"><table><thead><tr><th>Asar</th><th>Muallif</th><th>Yosh</th><th>Matn</th><th>Izoh</th></tr></thead><tbody><tr><td class="asar">«O‘tkan kunlar»</td><td class="mual">Abdulla Qodiriy</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Siz aytgan asar. Bazada Qodiriydan bironta asar yo‘q edi</td></tr>
+<tr><td class="asar">«Mehrobdan chayon»</td><td class="mual">Abdulla Qodiriy</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Obid ketmon»</td><td class="mual">Abdulla Qodiriy</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Navoiy»</td><td class="mual">Oybek</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Qutlug‘ qon»</td><td class="mual">Oybek</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Kecha va kunduz»</td><td class="mual">Abdulhamid Cho‘lpon</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Jadid adabiyotining cho‘qqisi</td></tr>
+<tr><td class="asar">«Yulduzli tunlar»</td><td class="mual">Pirimqul Qodirov</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Bobur haqidagi roman</td></tr>
+<tr><td class="asar">«Ulug‘bek xazinasi»</td><td class="mual">Odil Yoqubov</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Ilm va hokimiyat mavzusi</td></tr>
+<tr><td class="asar">«Diyonat»</td><td class="mual">Odil Yoqubov</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Ikki eshik orasi»</td><td class="mual">O‘tkir Hoshimov</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Urush va taqdir mavzusi</td></tr>
+<tr><td class="asar">«Ufq» (3 kitob)</td><td class="mual">Said Ahmad</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Trilogiya — bosqichma-bosqich beriladi</td></tr>
+<tr><td class="asar">«Sarob»</td><td class="mual">Abdulla Qahhor</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Otamdan qolgan dalalar»</td><td class="mual">Tog‘ay Murod</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Boburnoma» (tabdil)</td><td class="mual">Zahiriddin Muhammad Bobur</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Siz so‘ragan nasriy bayoni papkada bor</td></tr>
+<tr><td class="asar">«Temur tuzuklari»</td><td class="mual">Amir Temur</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Bo‘limlarga bo‘lib berish qulay</td></tr>
+<tr><td class="asar">«Turkiston qayg‘usi»</td><td class="mual">Alixonto‘ra Sog‘uniy</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Siz eslatgan asar</td></tr></tbody></table></div>
+</section>
+<section>
+  <div class="sechead"><h2>Jahon klassikasi</h2><div class="count">16 ta asar · matni tayyor 16 ta</div></div>
+  <p class="kirish">Bazada sarguzasht asarlari ko‘p, jahon adabiyotining tayanch asarlari yo‘q. Tarjima bo‘lgani uchun har biriga bir yosh qo‘shildi.</p>
+  <div class="tbox"><table><thead><tr><th>Asar</th><th>Muallif</th><th>Yosh</th><th>Matn</th><th>Izoh</th></tr></thead><tbody><tr><td class="asar">«Robinzon Kruzoning sarguzashtlari»</td><td class="mual">Daniel Defo</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Mehnat va matonat</td></tr>
+<tr><td class="asar">«Sherlok Xolms sarguzashtlari»</td><td class="mual">Artur Konan Doyl</td><td class="yosh">11-13</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Mantiq va kuzatuvchanlik; test tuzishga qulay</td></tr>
+<tr><td class="asar">«Shohnoma» (2 kitob)</td><td class="mual">Abulqosim Firdavsiy</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Sharq eposi</td></tr>
+<tr><td class="asar">«Iliada»</td><td class="mual">Homer</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Odisseya»</td><td class="mual">Gomer</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Sarguzasht — o‘smirga yengil kiradi</td></tr>
+<tr><td class="asar">«Uch mushketyor»</td><td class="mual">Aleksandr Dyuma</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Do‘stlik va sadoqat</td></tr>
+<tr><td class="asar">«Graf Monte-Kristo» (2 kitob)</td><td class="mual">Aleksandr Dyuma</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Don Kixot»</td><td class="mual">Migel de Servantes</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Chol va dengiz»</td><td class="mual">Ernest Xeminguey</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Qisqa, g‘oyasi chuqur</td></tr>
+<tr><td class="asar">«Oq kema»</td><td class="mual">Chingiz Aytmatov</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Yakuni og‘ir — ota-onaga eslatma bilan</td></tr>
+<tr><td class="asar">«Ilohiy komediya»</td><td class="mual">Dante Aligyeri</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Martin Iden»</td><td class="mual">Jek London</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">O‘z ustida ishlash mavzusi</td></tr>
+<tr><td class="asar">«Hamlet»</td><td class="mual">Uilyam Shekspir</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Dramaturgiya — testi boshqacha tuziladi</td></tr>
+<tr><td class="asar">«Dorian Greyning portreti»</td><td class="mual">Oskar Uayld</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Buyuk Getsbi»</td><td class="mual">Frensis Fitsjerald</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Jenni Gerxardt»</td><td class="mual">Teodor Drayzer</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr></tbody></table></div>
+</section>
+<section>
+  <div class="sechead"><h2>Shaxsiy rivojlanish</h2><div class="count">18 ta asar · matni tayyor 18 ta</div></div>
+  <p class="kirish">Yo‘nalish umuman yo‘q edi. Tez boyish va'da qiladigan kitoblarni ataylab tanlamadim — o‘smirga ular emas, mehnat va odat haqidagilari kerak.</p>
+  <div class="tbox"><table><thead><tr><th>Asar</th><th>Muallif</th><th>Yosh</th><th>Matn</th><th>Izoh</th></tr></thead><tbody><tr><td class="asar">«Atom odatlar»</td><td class="mual">Jeyms Klir</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Siz misol qilib keltirgan asar</td></tr>
+<tr><td class="asar">«Muvaffaqiyatli insonlarning 7 ko‘nikmasi»</td><td class="mual">Stiven Kovi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Diqqat. Chalg‘ituvchi dunyoda muvaffaqiyat sirlari»</td><td class="mual">Kel Nyuport</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Telefon va e'tibor mavzusi</td></tr>
+<tr><td class="asar">«Maqsad qudrati»</td><td class="mual">Richard Leider, Devid Shapiro</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Pul psixologiyasi»</td><td class="mual">Morgan Hauzel</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">«Bola va pul»ning davomi bo‘ladi</td></tr>
+<tr><td class="asar">«G‘olib iroda»</td><td class="mual">Ali Fuad Bashgil</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Iroda tarbiyasi</td></tr>
+<tr><td class="asar">«Turkiy guliston yoxud axloq»</td><td class="mual">Abdulla Avloniy</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Milliy axloq darsligi</td></tr>
+<tr><td class="asar">«Qobusnoma»</td><td class="mual">Kaykovus</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Davlat ro‘yxatida ham bor</td></tr>
+<tr><td class="asar">«Do‘stlar orttirish va odamlarga ta'sir o‘tkazish xususida»</td><td class="mual">Deyl Karnegi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Muomala ko‘nikmasi</td></tr>
+<tr><td class="asar">«Raqamlar uchun yaralgan idrok»</td><td class="mual">Barbara Oukli</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Qanday o‘qish va o‘rganish kerakligi — o‘quvchiga aynan mos</td></tr>
+<tr><td class="asar">«Samaradorlikning yigirma bir yo‘li»</td><td class="mual">Brayan Treysi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Vaqtni boshqarish</td></tr>
+<tr><td class="asar">«Guliston»</td><td class="mual">Sa'diy Sheroziy</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Sharq pand-nasihati</td></tr>
+<tr><td class="asar">«Xavotirlanishni bas qilish va yashay boshlash yo‘llari»</td><td class="mual">Deyl Karnegi</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Imtihon va kelajak xavotiri</td></tr>
+<tr><td class="asar">«Hayot uchun 12 qoida»</td><td class="mual">Jordan Piterson</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Mas'uliyat va tartib</td></tr>
+<tr><td class="asar">«Ego — dushmaning»</td><td class="mual">Rayan Holidey</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Kibr va muvaffaqiyat</td></tr>
+<tr><td class="asar">«Zukkolar va landavurlar»</td><td class="mual">Malkolm Gladuell</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Muvaffaqiyat qanday shakllanadi</td></tr>
+<tr><td class="asar">«Factfulness»</td><td class="mual">Hans Rosling</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Dunyoni raqamlar bilan to‘g‘ri ko‘rish</td></tr>
+<tr><td class="asar">«O‘zlikni qayta kashf etish»</td><td class="mual">Jon Gardner</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr></tbody></table></div>
+</section>
+<section>
+  <div class="sechead"><h2>Diniy-ma'rifiy</h2><div class="count">24 ta asar · matni tayyor 23 ta</div></div>
+  <p class="kirish">Yangi yo‘nalish. Qisqa risolalardan boshlanadi — «Keksalarni e'zozlash», «Yolg‘on», «Isrof» kabi bir mavzuga bag‘ishlangan kichik kitoblar o‘smirga oson kiradi. <b>Bu bo‘limdagi kitoblardan test tuzilmaydi</b> — AI diniy matnda xato qilishi mumkin.</p>
+  <div class="tbox"><table><thead><tr><th>Asar</th><th>Muallif</th><th>Yosh</th><th>Matn</th><th>Izoh</th></tr></thead><tbody><tr><td class="asar">«Ijtimoiy odoblar»</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Siz aytgan kitob</td></tr>
+<tr><td class="asar">«Odoblar xazinasi» (4 juz)</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Juzlarga bo‘lingan — bosqichma-bosqich beriladi</td></tr>
+<tr><td class="asar">«Keksalarni e'zozlash»</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Qisqa risola — boshlash uchun qulay</td></tr>
+<tr><td class="asar">«Yolg‘on»</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Qisqa risola</td></tr>
+<tr><td class="asar">«Isrof»</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Qisqa risola</td></tr>
+<tr><td class="asar">«Yaxshilik va silai rahm» (2 juz)</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Iymon»</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Aqida asoslari</td></tr>
+<tr><td class="asar">«101 ulug‘ sahobiy»</td><td class="mual">Moturidiy markazi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Qissalar shaklida — bolaga yengil kiradi</td></tr>
+<tr><td class="asar">«Imom Buxoriydan qirq hadis»</td><td class="mual">Moturidiy markazi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Buyuk ajdodlarimiz»</td><td class="mual">Mualliflar jamoasi</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Vatan tarixi bilan bog‘lanadi</td></tr>
+<tr><td class="asar">«Halol nima-yu, harom nima»</td><td class="mual">Tohir Malik</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">O‘smirga tushunarli tilda</td></tr>
+<tr><td class="asar">«Internet fiqhi»</td><td class="mual">Nuriddin Yildiz</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Bugungi o‘smirning ayni muammosi</td></tr>
+<tr><td class="asar">«Ruhiy tarbiya» (3 juz)</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Islom tarixi» (2 kitob)</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Hadis va Hayot» (1-juz)</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">22 juzdan iborat — birinchisidan boshlanadi</td></tr>
+<tr><td class="asar">«Qulog‘im senda, qizim»</td><td class="mual">Abdulloh Abdulmu'tiy</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Qizlar uchun</td></tr>
+<tr><td class="asar">«Bu ummatning qizi»</td><td class="mual">Nuriddin Yildiz</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Qizlar uchun</td></tr>
+<tr><td class="asar">«Tarixi Muhammadiy»</td><td class="mual">Alixonto‘ra Sog‘uniy</td><td class="yosh">14-16</td><td><span class="chip kutish">Matn yo‘q</span></td><td class="izoh">Siz aytgan kitob. Papkada yo‘q, saytda bor — faylini alohida berasiz</td></tr>
+<tr><td class="asar">«Sunniy aqiydalar»</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">14-16</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Siz aytgan kitob</td></tr>
+<tr><td class="asar">«Baxtiyor oila»</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Siz aytgan kitob</td></tr>
+<tr><td class="asar">«Mo‘minning me'roji»</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh">Namoz haqida</td></tr>
+<tr><td class="asar">«Mukammal saodat yo‘li»</td><td class="mual">Shayx Muhammad Sodiq Muhammad Yusuf</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Islomda Vatan tushunchasi»</td><td class="mual">Muftiy Nuriddin Xoliqnazarov</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr>
+<tr><td class="asar">«Biz bilgan va bilmagan Imom Moturidiy»</td><td class="mual">So‘nmas Qutlug‘</td><td class="yosh">17-19</td><td><span class="chip tayyor">Matn tayyor</span></td><td class="izoh"></td></tr></tbody></table></div>
+</section>
+
+<section>
+  <h2>Kitob pasportini kengaytirish<span class="sub">Siz aytgan mulohaza bo‘yicha taklif</span></h2>
+  <p class="kirish">Haqsiz: hozirgi chegara bilan kelajakda yangi test kerak bo‘lganda kitobni boshqatdan o‘qishga to‘g‘ri keladi. Yechim — pasportga asarning voqealar tafsilotini yozib qo‘yish. Shunda yangi test uchun kitob emas, pasportning o‘zi yetadi.</p>
+  <div class="pasport">
+    <div><h4>Qisqacha mazmun</h4><p><span class="eski">1 000 belgi</span><span class="yangi">3 000 belgi</span></p></div>
+    <div><h4>Asar g‘oyasi</h4><p><span class="eski">200 belgi</span><span class="yangi">500 belgi</span></p></div>
+    <div><h4>Xulosa</h4><p><span class="eski">qisqa</span><span class="yangi">800 belgi</span></p></div>
+    <div><h4>Qahramonlar</h4><p><span class="eski">faqat ism</span><span class="yangi">har biriga bir jumla ta'rif</span></p></div>
+    <div><h4>Voqealar tafsiloti <span class="yangi">yangi</span></h4><p>Asarning 20-40 ta asosiy epizodi ketma-ketligi bilan. Kelajakdagi barcha yangi testlar shundan tuziladi.</p></div>
+    <div><h4>Muhim parchalar <span class="yangi">yangi</span></h4><p>Asl matndan 5-8 ta muhim jumla. Ovozli xulosani baholash va AI ustoz savoli uchun kerak bo‘ladi.</p></div>
+  </div>
+  <div class="note">
+    <p>Xarajat: pasport uch barobar kattalashadi, bu bitta kitobga 250 so‘m o‘rniga 600 so‘m degani. 181 ta kitob — 110 ming so‘m atrofida. Bazadagi eski 130 ta kitobni ham shu andaza bo‘yicha qayta ishlash mumkin, lekin buni keyinga qoldirsak bo‘ladi.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Ish tartibi<span class="sub">To‘rt to‘lqin</span></h2>
+  <div class="steps">
+    <div class="step"><div class="no">1</div><div>
+      <h3>Kichik yosh — 11-13 · taxminan 40 ta kitob</h3>
+      <p>Davlat ro‘yxatining 10-14 qismi va yengil kiradigan dostonlar: «Ravshan», «Rustamxon», «Avazxon», «Malika ayyor». Bular ilovaning bugungi foydalanuvchisiga darrov ko‘rinadi.</p>
+    </div></div>
+    <div class="step"><div class="no">2</div><div>
+      <h3>O‘rta yosh — 14-16 · taxminan 70 ta kitob</h3>
+      <p>«O‘tkan kunlar», «Alpomish», jahon klassikasi, shaxsiy rivojlanish va diniy-ma'rifiy kitoblarning katta qismi shu bosqichda kiradi.</p>
+    </div></div>
+    <div class="step"><div class="no">3</div><div>
+      <h3>Yangi «17-19» toifasi · taxminan 40 ta kitob</h3>
+      <p>Avval ilovada yangi yosh toifasi ochiladi (bu kod ishi, kichik hajmli), keyin unga mos asarlar to‘ldiriladi: «Kecha va kunduz», «Ufq», «Ilohiy komediya», «Baxtiyor oila».</p>
+    </div></div>
+    <div class="step"><div class="no">4</div><div>
+      <h3>Kutish ro‘yxati · 33 ta kitob</h3>
+      <p>Matni papkada yo‘q. Ular alohida saqlanadi; matni qo‘lga kirgan sayin qo‘shib boriladi.</p>
+    </div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Diniy kitoblar uchun alohida qoida<span class="sub">Siz belgilagan shart</span></h2>
+  <div class="note">
+    <p><b>Diniy-ma'rifiy bo‘limdagi kitoblardan test tuzilmaydi.</b> Sabab aniq: AI diniy matnni talqin qilishda xato qilishi mumkin, xato savol esa bolaga noto‘g‘ri bilim beradi.</p>
+    <p>O‘rniga bola o‘qigan aniq parchadan kelib chiqadigan <b>ochiq savol</b> beriladi. Ota-ona xohlasa, testni o‘zi tuzib qo‘shishi mumkin.</p>
+  </div>
+</section>
+
+<footer>Bilig AI · yakuniy kitob ro‘yxati · 2026-yil 1-sentabr. Yosh chegaralari taklif tariqasida qo‘yildi — oxirgi so‘z sizniki. Kichik hajmli ertak, hikoya va masallar ro‘yxatga kiritilmadi.</footer>
+
+</div>

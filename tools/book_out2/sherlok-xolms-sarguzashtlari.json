@@ -1,0 +1,483 @@
+{
+ "title": "Sherlok Xolms sarguzashtlari",
+ "author": "Artur Konan Doyl",
+ "genre": "hikoyalar va qissalar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "mantiq va tahlil",
+   "do‘stlik",
+   "adolat",
+   "sirli voqealar",
+   "topqirlik"
+  ],
+  "theme": "Mantiqiy fikrlash, chuqur diqqat-e'tibor va adolatga bo‘lgan ishonch har qanday murakkab jumboq va jinoyatlarni fosh etishga xizmat qiladi. Chinakam do‘stlik va sadoqat esa eng og‘ir sinovlarda ham insonlarga ruhiy tayanch bo‘ladi.",
+  "summary": "Kitob mashhur izquvar Sherlok Xolms va uning sadoqatli do‘sti doktor Uotsonning bir qancha murakkab jinoyat va jumboqlarni yechish bo‘yicha sarguzashtlaridan tashkil topgan. «Raqqos odamchalar» hikoyasida Norfolk zamindori Xilton Kyubitt uyida paydo bo‘layotgan sirli alomat raqs tushuvchi odamchalar surati haqida Xolmsga murojaat qiladi. Xolms ushbu maxfiy shifrni mantiqiy yo‘l bilan deshifrovka qiladi, ammo fojianing oldini olishga kechikadi. Shunga qaramay, u jinoyatchini mantiqiy yo‘l bilan tuzoqqa tushirib, haqiqatni tiklaydi.\n\n«Tilla bandli pensne» va «Tovlamachining tugatilishi» kabi hikoyalarda ham Xolms kutilmagan detallar, kichik ashyoviy dalillar va inson ruhiyatini bilish orqali eng chigal jinoyatlar tugunini yechadi. «Sherlok Xolms o‘lim to‘shagida...» hikoyasida u o‘zini og‘ir xasta qilib ko‘rsatib, aybdor Kelverton Smitni o‘z aybiga iqror bo‘lishga va aybini tan olishga majbur qiladi.\n\n«To‘rtlar belgisi» qissasida Mary Morsten ismli qiz otasining yo‘qolishi va har yili unga yuboriladigan qimmatbaho dur haqidagi sirni yechishni so‘rab keladi. Xolms va Uotson Agra xazinasi, qasamyod qilgan to‘rt kishi va yog‘och oyoqli Jonatan Smoll bilan bog‘liq murakkab xazinani qidirish voqealariga aralashadilar.\n\n«Baskervillar iti» qissasida esa qadimiy Baskervillar avlodiga tahdid solib kelayotgan va botqoqlikda izg‘ib yurgan vahimali it haqidagi afsona fosh etiladi. Steplton ismli ayyor kimsa mol-mulkka ega bo‘lish uchun mahfiy yirtqich itdan foydalangan bo‘lib chiqadi. Xolms o‘zining deduktiv usuli, ehtiyotkorligi va jasorati bilan Stepltonning yovuz rejasini barbod qiladi hamda ser Genri Baskervilning hayotini saqlab qoladi.",
+  "characters": "Sherlok Xolms — o‘tkir zukkoli va mantiqiy fikrlaydigan mashhur detektiv. Doktor Uotson — Xolmsning sodiq do‘sti, uning sarguzashtlarini yozib boruvchi shifokor. Xilton Kyubitt — Norfolkdagi halol va sodda zamindor. Steplton — kapalak ovi niqobi ostida jinoyat sodir etgan ayyor kishi.",
+  "conclusion": "Ushbu kitob kitobxonda mantiqiy va tahliliy fikrlash, kuzatuvchanlik hamda voqealarning sabab-oqibat zanjirini ko‘ra bilish ko‘nikmasini shakllantiradi. Bola qahramonlar timsolida do‘stlikka sadoqat, halollik va adolat tarafdori bo‘lish qanchalik muhimligini anglaydi. Ota-ona uchun bu kitob farzandida zakovat va ziyraklikni oshirishda ajoyib vositadir.",
+  "difficulty": "o‘rta",
+  "mood": "sirli, hayajonli, mantiqiy",
+  "for_whom": "Mantiqiy jumboqlarni yechishni, sirlarni fosh etishni va izquvarlik sarguzashtlarini yoqtiradigan kitobxonlar uchun.",
+  "events": [
+   "Sherlok Xolms Uotsonning qo‘lidagi bo‘r iziga qarab uning o‘y-xayollarini topib beradi.",
+   "Xilton Kyubitt Xolmsga raqqos odamchalar tasvirlangan sirli qog‘ozni topib ko‘rsatadi.",
+   "Kyubittning xotini Ilsi Amerikadan kelgan xat va rasmlardan qattiq vahimaga tushadi.",
+   "Xolms raqqos odamchalar shifrini yechish uchun muraddab hisoblarni amalga oshiradi.",
+   "Ridling-Torp-Menorda otishma sodir bo‘lib, Xilton Kyubitt halok bo‘ladi.",
+   "Xolms voqea joyiga kelib, guvohlar va xonadagi dalillarni sinchiklab o‘rganadi.",
+   "Xolms raqqos odamchalar tilida xat yozib, jinoyatchi Abe Slanini qo‘lga tushiradi.",
+   "Syuzen Tarlton professor uyidagi mudhish chinqiriq va shovqin haqida so‘zlab beradi.",
+   "Anna ismli ayol erining qilmishlari va adolatni tiklash uchun qilgan ishlarini so‘zlaydi.",
+   "Milverton va sirli ayol o‘rtasidagi tunda bo‘lib o‘tgan uchrashuv fojia bilan tugaydi.",
+   "Xolms o‘zini og‘ir kasalga solib, Kelverton Smitni o‘z aybiga iqror bo‘lishga majbur qiladi.",
+   "Inspektor Morton gaz chirog‘i ishorasidan so‘ng Kelverton Smitni hibsga oladi.",
+   "Miss Morsten Xolmsga otasining yo‘qolishi va har yili olinadigan dur haqida aytadi.",
+   "Taddeush Sholto mehmonlarga Agra xazinasi va otasining siri haqida so‘zlab beradi.",
+   "Pondisheri-lojda Bartolomyu Sholtoning o‘ldirilgani va xazinaning o‘g‘irlangani ma'lum bo‘ladi.",
+   "Xolms va Uotson daryo bo‘ylab «Avrora» katerida qochayotgan jinoyatchilarni quvib yetadi.",
+   "Jonatan Smoll sud oldida Agra xazinasi tarixi va «To‘rtlar belgisi» haqida so‘zlaydi.",
+   "Doktor Mortimer Xolmsga Baskervillar avlodi afsonasi yozilgan manuskriptni o‘qib beradi.",
+   "Ser Genri Baskervil Londonda o‘zining yangi poyabzali yo‘qolganini payqaydi.",
+   "Uotson va ser Genri Baskervil-xollga yetib kelib, yerlik sharoit bilan tanishadi.",
+   "Uotson botqoqlikda yashirinib yurgan qochqin mahbus Selden haqida bilib oladi.",
+   "Uotson Kumbi-Tresida Laura Layons bilan uchrashib, sirli xat tafsilotlarini surishtiradi.",
+   "Xolms botqoqlikdagi g‘orda yashirincha tadqiqot olib borayotgani oshkor bo‘ladi.",
+   "Stepltonning aslida maktab direktori bo‘lgani va uylanganligi fosh etiladi.",
+   "Tumanda Baskervillar xonadoniga daxshatli yirtqich it hujum qiladi va otib o‘ldiriladi.",
+   "Steplton botqoqlikka qochib ketadi va botqoqlik bag‘rida halok bo‘ladi.",
+   "Xolms butun Baskervil fojiasining batafsil tahlilini Uotsonga so‘zlab beradi."
+  ],
+  "quotes": [
+   "Fikr yuritilganda erishilgan har bir xulosa o‘zidan oldingi xulosadan kelib chiqadi; shu zaylda xulosalar zanjirini osongina vujudga keltirish mumkin.",
+   "Har qanday jumboq ham, to‘qqiz puldek tushuntirilgandan keyin oson bo‘lib ko‘rinadi-da.",
+   "Rolni yaxshi o‘ynash uchun, uni hayotga singdirib yuborish kerak.",
+   "Biroq amaliyot kishisi sifatida siz benazirsiz – buni hamma e'tirof qilgan.",
+   "Biror detal sizga qanchalik bema'ni va beso‘naqay bo‘lib ko‘rinsa, unga shu qadar ko‘p e'tibor berish kerak."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xolms Uotsonning Janubiy Afrika zayomiga pul sarflamasligini qanday bildi?",
+   "options": [
+    "A) Barmog‘idagi bo‘r yuqiga qarab",
+    "B) Gazetadagi maqolani o‘qib",
+    "C) Uotsonning xatidan bilib",
+    "D) Bankdagi hisobni tekshirib"
+   ],
+   "answer": "A) Barmog‘idagi bo‘r yuqiga qarab"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xilton Kyubitt qaysi hududdan Londonga Xolms huzuriga kelgan edi?",
+   "options": [
+    "A) Norfolkdagi Ridling-Torp-Menordan",
+    "B) Dartmurdagi Baskervil-xolldan",
+    "C) Chatamdagi kottejdan",
+    "D) Kumbi-Tresi qishlog‘idan"
+   ],
+   "answer": "A) Norfolkdagi Ridling-Torp-Menordan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xilton Kyubittning xotini Ilsi qaysi mamlakatdan kelgan edi?",
+   "options": [
+    "A) Amerikadan",
+    "B) Fransiyadan",
+    "C) Hindistondan",
+    "D) Avstraliyadan"
+   ],
+   "answer": "A) Amerikadan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Raqqos odamchalar rasmi ikkinchi marta qayerga chizilgan edi?",
+   "options": [
+    "A) Pichanxonaning qora taxta eshigiga",
+    "B) Uyning kirish eshigiga",
+    "C) Mehmonxonaning devoriga",
+    "D) Daryo bo‘yidagi toshga"
+   ],
+   "answer": "A) Pichanxonaning qora taxta eshigiga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Raqqos odamchalar yozuvi paydo bo‘lgan joylarni ketma-ket aniqlang.",
+   "options": [
+    "A) Deraza raxi, pichanxona, quyosh soati",
+    "B) Quyosh soati, pichanxona, deraza raxi",
+    "C) Pichanxona, deraza raxi, quyosh soati",
+    "D) Uy eshigi, pichanxona, deraza raxi"
+   ],
+   "answer": "A) Deraza raxi, pichanxona, quyosh soati"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Ilsi Amerikadan kelgan xatni o‘qib kaminda yoqib yubordi?",
+   "options": [
+    "A) O‘tmishdagi sirlari oshkor bo‘lishidan qo‘rqdi",
+    "B) Xat noto‘g‘ri manzilga kelgani uchun",
+    "C) Xatda hech qanday ma'no yo‘qligi uchun",
+    "D) Erining jahli chiqishini xohlamagani uchun"
+   ],
+   "answer": "A) O‘tmishdagi sirlari oshkor bo‘lishidan qo‘rqdi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Xilton Kyubitt xotinidan o‘tmishi haqida so‘rab-surishtirmasdi?",
+   "options": [
+    "A) To‘ydan oldin shunday va'da bergani uchun",
+    "B) Xotinining o‘tmishi uni qiziqtirmagani uchun",
+    "C) Xotini undan buni qattiq talab qilgani uchun",
+    "D) Politsiyadan qo‘rqqani uchun"
+   ],
+   "answer": "A) To‘ydan oldin shunday va'da bergani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Xilton Kyubittning xotiniga bergan va'dasida turishi qanday sifatni ko‘rsatadi?",
+   "options": [
+    "A) Halollik va mardlikni",
+    "B) Qo‘rqoqlik va loqaydlikni",
+    "C) Manmanlik va takabburlikni",
+    "D) Shoshqaloqlikni"
+   ],
+   "answer": "A) Halollik va mardlikni"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Xolmsning jumboqni darhol yechishga kirishishi haqida qanday xulosa qilish mumkin?",
+   "options": [
+    "A) U o‘z kasbiga nihoyatda mas'uliyatli edi",
+    "B) U faqat pul uchun ishlardi",
+    "C) U do‘stining so‘ziga ishonmasdi",
+    "D) U zerikkandan ish qilardi"
+   ],
+   "answer": "A) U o‘z kasbiga nihoyatda mas'uliyatli edi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Xolmsning «Har qanday jumboq ham tushuntirilgach oson bo‘ladi» deyishi nimani anglatadi?",
+   "options": [
+    "A) Mantiqiy sabablar oydinlashgach, sir yo‘qolishini",
+    "B) Hamma jumboqlar bema'ni ekanini",
+    "C) Odamlar doim adashishini",
+    "D) Hayotda sir qolmaganini"
+   ],
+   "answer": "A) Mantiqiy sabablar oydinlashgach, sir yo‘qolishini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oqsoch Syuzen kabinetdan qanday tovush eshitib pastga yugurdi?",
+   "options": [
+    "A) Mudhish va xirillagan chinqiriqni",
+    "B) To‘pponcha otilgan ovozni",
+    "C) Eshik taqillashini",
+    "D) Oyna sinishini"
+   ],
+   "answer": "A) Mudhish va xirillagan chinqiriqni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anna ismli ayol erining sekreteridan nimani o‘g‘irlamoqchi edi?",
+   "options": [
+    "A) Kundalik va maktublarni",
+    "B) Tilla pullarni",
+    "C) Qimmatbaho uzukni",
+    "D) Uyning hujjatlarini"
+   ],
+   "answer": "A) Kundalik va maktublarni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kelverton Smit Xolmsni zaharlash uchun nima yuborgan edi?",
+   "options": [
+    "A) O‘tkir prujinali quticha",
+    "B) Maktupli konvert",
+    "C) Bir shisha zaharli suv",
+    "D) Zahrli papiros"
+   ],
+   "answer": "A) O‘tkir prujinali quticha"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Miss Morsten Xolmsga topshirgan qog‘ozda qanday yozuv bor edi?",
+   "options": [
+    "A) To‘rtlar belgisi",
+    "B) Raqqos odamchalar",
+    "C) Baskervil gerbi",
+    "D) Qirol muhrining surati"
+   ],
+   "answer": "A) To‘rtlar belgisi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Xolmsning Kelverton Smitni tutishdagi harakatlar ketma-ketligini ko‘rsating.",
+   "options": [
+    "A) Ochlik e'lon qildi, Smitni chaqirdi, chiroq yoqildi",
+    "B) Chiroq yoqdi, militsiyaga aytdi, qutini ochdi",
+    "C) Smitni urdi, politsiya chaqirdi, chiroqni o‘chirdi",
+    "D) Suv ichdi, uyga qamalib oldi, do‘stini chaqirdi"
+   ],
+   "answer": "A) Ochlik e'lon qildi, Smitni chaqirdi, chiroq yoqildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "To‘rtlar belgisi hujjatida qaysi nomlar birga yozilgan edi?",
+   "options": [
+    "A) Jonatan Smoll, Muhammad Singx, Abdulla Xon",
+    "B) Sherlok Xolms, Uotson, Morsten",
+    "C) Sholto, Smoll, Kelverton Smit",
+    "D) Martin, Berrimor, Steplton"
+   ],
+   "answer": "A) Jonatan Smoll, Muhammad Singx, Abdulla Xon"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Xolms uch kun davomida ovqat yemadi va chekmadi?",
+   "options": [
+    "A) Kasal rolini ishonchli o‘ynash uchun",
+    "B) Uyida ovqati qolmagani uchun",
+    "C) Uotsondan xafa bo‘lgani uchun",
+    "D) Shifokor shuni buyurgani uchun"
+   ],
+   "answer": "A) Kasal rolini ishonchli o‘ynash uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Kelverton Smit xonadagi gaz chirog‘ining olovini ko‘tardi?",
+   "options": [
+    "A) Xolms o‘layotganini yaxshiroq ko‘rish uchun",
+    "B) Uotson xonaga kirishi uchun",
+    "C) Xona juda sovuq bo‘lgani uchun",
+    "D) Politsiyaga qochishini bildirish uchun"
+   ],
+   "answer": "A) Xolms o‘layotganini yaxshiroq ko‘rish uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Xolmsning aybdorni tutish uchun o‘zini xatarga qo‘yishi haqida qanday fikrdasiz?",
+   "options": [
+    "A) Adolat qaror topishi uchun jasorat ko‘rsatdi",
+    "B) O‘ylamay va bekorga tavakkal qildi",
+    "C) Do‘stlarini mensimadi",
+    "D) Uotsonga bergan va'dasini buzdi"
+   ],
+   "answer": "A) Adolat qaror topishi uchun jasorat ko‘rsatdi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Rolni yaxshi o‘ynash uchun uni hayotga singdirish kerak» iborasi nimani ifodalaydi?",
+   "options": [
+    "A) Har bir ishga chuqur kirishish lozimligini",
+    "B) Aktyorlik eng yaxshi kasb ekanini",
+    "C) Boshqalarni doim aldash kerakligini",
+    "D) O‘yin o‘ynash hayotning mazmuni ekanini"
+   ],
+   "answer": "A) Har bir ishga chuqur kirishish lozimligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Doktor Mortimer Xolmsga qaysi asrga oid manuskriptni keltirgan edi?",
+   "options": [
+    "A) O‘n sakkizinchi asr boshiga oid",
+    "B) O‘n beshinchi asrga oid",
+    "C) Yigirmanchi asrga oid",
+    "D) O‘n uchinch asrga oid"
+   ],
+   "answer": "A) O‘n sakkizinchi asr boshiga oid"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ser Genri Baskervilning mehmonxonada qaysi buyumi yo‘qolgan edi?",
+   "options": [
+    "A) Eski oyoq kiyimi",
+    "B) Qimmatbaho soati",
+    "C) Tilla uzugi",
+    "D) Charm hamyoni"
+   ],
+   "answer": "A) Eski oyoq kiyimi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Botqoqlikda yashirinib yurgan Selden kim edi?",
+   "options": [
+    "A) Turmadan qochgan qotil mahbus",
+    "B) Sherlok Xolmsning maxfiy yordamchisi",
+    "C) Baskervil-xollning yangi egasi",
+    "D) Local qishloq shifokori"
+   ],
+   "answer": "A) Turmadan qochgan qotil mahbus"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Steplton bahaybat itning ko‘zi va og‘ziga nima surtagan edi?",
+   "options": [
+    "A) Yarqiraydigan fosforli modda",
+    "B) Qora bo‘yoq",
+    "C) Oddiy suv",
+    "D) O‘tkir zahar"
+   ],
+   "answer": "A) Yarqiraydigan fosforli modda"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Baskervillar iti voqeasidagi asosiy guvohlarni ko‘rsating.",
+   "options": [
+    "A) Doktor Mortimer, Berrimor, Laura Layons",
+    "B) Kelverton Smit, Abe Slani, Ilsi",
+    "C) Jonatan Smoll, Syuzen, Anna",
+    "D) Taddeush, Bartolomyu, Martin"
+   ],
+   "answer": "A) Doktor Mortimer, Berrimor, Laura Layons"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Steplton ser Genrining aynan eski oyoq kiyimini o‘g‘irlatdi?",
+   "options": [
+    "A) Itga ser Genrining hidini sezdirish uchun",
+    "B) O‘zi kiyib yurish uchun",
+    "C) Pulga sotish uchun",
+    "D) Shunchaki hazillashish uchun"
+   ],
+   "answer": "A) Itga ser Genrining hidini sezdirish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun missis Steplton erining rejasiga qarshi chiqdi?",
+   "options": [
+    "A) Odam o‘ldirishda sherik bo‘lishni istamagani uchun",
+    "B) Ser Genrini yaxshi ko‘rib qolgani uchun",
+    "C) Erining pullarini tortib olmoqchiligi uchun",
+    "D) Londonga ketmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Odam o‘ldirishda sherik bo‘lishni istamagani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Xolmsning botqoqlikdagi g‘orda yashirincha izlanish olib borishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — bu dushmanini ehtiyotkor qildi",
+    "B) Xato — u do‘stini tashlab ketdi",
+    "C) Noto‘g‘ri — u vaqtni behuda o‘tkazdi",
+    "D) Keraksiz — u politsiyani kutishi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri — bu dushmanini ehtiyotkor qildi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Biror detal qanchalik beso‘naqay bo‘lsa, unga ko‘proq e'tibor berish kerak» nimani uqtiradi?",
+   "options": [
+    "A) Kichik narsalar ortida katta haqiqat yotishini",
+    "B) Mayda tafsilotlar muhim emasligini",
+    "C) Faqat katta narsalarga qarash kerakligini",
+    "D) Ishni tezroq tugatish lozimligini"
+   ],
+   "answer": "A) Kichik narsalar ortida katta haqiqat yotishini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning Baskervil botqoqligini quyuq va vahimali tasvirlashdan maqsadi nima?",
+   "options": [
+    "A) Sirlilik va xavf muhitini kuchaytirish",
+    "B) O‘quvchini zeriktirish",
+    "C) Tabiat haqida dars berish",
+    "D) Voqeani tezroq tugatish"
+   ],
+   "answer": "A) Sirlilik va xavf muhitini kuchaytirish"
+  }
+ ]
+}

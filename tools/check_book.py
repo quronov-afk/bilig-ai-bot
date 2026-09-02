@@ -33,11 +33,17 @@ PASSPORT_FIELDS = ["age_band", "age_hint", "topics", "theme", "summary",
 
 # Ega belgilagan yosh toifalari (2026-08-28). «3 yosh» toifasi bekor
 # qilindi — eng kichik asarlar ham 4 yoshdan boshlanadi.
-AGE_BANDS = ("4-6", "7-8", "9-10", "11-13", "14-16")
+AGE_BANDS = ("4-6", "7-8", "9-10", "11-13", "14-16", "17-19")
 
 # Uzunlik chegaralari — ega belgilagan
-THEME_MAX = 200        # g‘oyasi
-SUMMARY_MAX = 1000     # qisqacha syujeti
+# Ega qarori (2026-09-01): pasport kengaytirildi. Sabab — eski chegara
+# bilan kelajakda yangi test kerak bo‘lganda kitobni qaytadan o‘qishga
+# to‘g‘ri kelardi. Endi pasportning o‘zi yetadi.
+THEME_MAX = 500        # g‘oyasi
+SUMMARY_MAX = 3000     # qisqacha syujeti
+EVENTS_MIN = 15        # voqealar tafsiloti (qisqa asarda 6)
+EVENTS_MIN_SHORT = 6
+QUOTES_MIN = 4         # asl matndan olingan muhim jumlalar
 
 # Barrett taksonomiyasi — o‘qib tushunishni baholash uchun tayyor metod.
 # «literal» — xotira (40%), qolgan to‘rttasi — tushunish (60%).
@@ -159,6 +165,23 @@ def check(path):
             errs.append("pasportda «%s» yo‘q yoki juda qisqa" % key)
     if isinstance(p.get("topics"), list) and len(p["topics"]) < 3:
         errs.append("mavzular 3 tadan kam")
+    # Kengaytirilgan pasport faqat YANGI ro‘yxatda (book_out2) majburiy —
+    # eski 130 ta kitob boshqa qolipda tayyorlangan.
+    new_format = ("book_out2" in path.replace("\\", "/"))
+    ev = p.get("events")
+    if new_format and not isinstance(ev, list):
+        errs.append("«events» (voqealar tafsiloti) ro‘yxat emas")
+    elif new_format:
+        need = EVENTS_MIN_SHORT if d.get("short_form") else EVENTS_MIN
+        if len(ev) < need:
+            errs.append("voqealar tafsiloti %d ta band (kamida %d bo‘lsin)"
+                        % (len(ev), need))
+        if any(len(str(x).strip()) < 15 for x in ev):
+            errs.append("voqealar tafsilotida juda kalta band bor")
+    qt = p.get("quotes")
+    if new_format and (not isinstance(qt, list) or len(qt) < QUOTES_MIN):
+        errs.append("muhim parchalar %s ta (kamida %d bo‘lsin)"
+                    % (len(qt) if isinstance(qt, list) else "?", QUOTES_MIN))
     if p.get("age_band") not in AGE_BANDS:
         errs.append("yosh toifasi noto‘g‘ri (%r) — %s dan biri bo‘lsin"
                     % (p.get("age_band"), "/".join(AGE_BANDS)))
@@ -174,6 +197,25 @@ def check(path):
         errs.append("xulosasi yo‘q yoki juda kalta")
 
     qs = d.get("questions") or []
+
+    # Ega qarori (2026-09-01): DINIY-MA'RIFIY kitobdan test tuzilmaydi —
+    # AI diniy matnni talqin qilishda xato qilishi mumkin. O‘rniga aniq
+    # parchaga tayangan ochiq savollar beriladi.
+    if d.get("no_test"):
+        if qs:
+            errs.append("diniy kitobga test tuzilmasligi kerak edi (%d ta savol)" % len(qs))
+        tqs = d.get("talk_questions") or []
+        if len(tqs) < 3:
+            errs.append("ochiq savollar %d ta (kamida 3 ta bo‘lsin)" % len(tqs))
+        for i, t in enumerate(tqs, 1):
+            ctx = str((t or {}).get("context", "")).strip()
+            qq = str((t or {}).get("question", "")).strip()
+            if len(ctx) < 40:
+                errs.append("%d-savol: parcha (context) yo‘q yoki juda kalta" % i)
+            if len(qq) < 25 or "?" not in qq:
+                errs.append("%d-savol: savol yo‘q yoki savol shaklida emas" % i)
+        errs += language_errors(d)
+        return errs
 
     # Test o‘rniga og‘zaki savol beriladigan holatlar:
     #   · asar 5 betdan qisqa, yoki
@@ -219,6 +261,10 @@ def check(path):
             errs.append("%s-savol: variantlar soni %d ta" % (qid, len(opts)))
         # Soddalik chegarasi: uzun savol bolani javobdan emas, O‘QISHDAN
         # qiynaydi. Ko‘rsatmada 12/6 so‘z so‘raladi, bu yerda biroz erkinlik.
+        # Ega qoidasi: mayda tafsilot so‘ralmasin («nechta edi», «necha yoshda»)
+        if re.search(r"\bnecha", (q.get("question") or ""), re.I):
+            errs.append("%s-savol: mayda tafsilot so‘ralgan («necha...»): %r"
+                        % (qid, (q.get("question") or "")[:50]))
         nw = len((q.get("question") or "").split())
         if nw > 16:
             errs.append("%s-savol: %d so‘z — juda uzun (16 dan oshmasin)" % (qid, nw))

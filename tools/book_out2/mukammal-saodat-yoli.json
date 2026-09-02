@@ -1,0 +1,81 @@
+{
+ "title": "Mukammal saodat yo‘li",
+ "author": "Shayx Muhammad Sodiq Muhammad Yusuf",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14 yoshdan katta o‘smirlar va yoshlar uchun",
+  "topics": [
+   "odob-axloq",
+   "oila va jamiyat",
+   "halollik",
+   "ruhiy tarbiya",
+   "ma'rifat",
+   "inson qadri"
+  ],
+  "theme": "Kitob Islom dinining asl mohiyati, insonning yaratilish maqsadi, saodatli hayot kechirish omillari hamda islomiy e'tiqod, shariat va axloq tizimini har tomonlama yoritishga bag‘ishlangan. Asar insoniyat uchun ikki dunyo saodati manbai bo‘lgan ilohiy ko‘rsatmalar va islomiy hayot tarzining mukammalligini sodda hamda dalillar asosida tushuntirib beradi.",
+  "summary": "Kitob muqaddima, e'tiqod (iymon), shariat (ahkomlar va fiqh), axloq (ehson va ruhiy tarbiya) hamda amaliy hayot tartibiga bag‘ishlangan bo‘limlardan tashkil topgan. Muqaddimada muallif zamonaviy dunyoda insonlarning baxt va saodat izlab turli ta'limotlar hamda oqimlarga ko‘r-ko‘rona ergashib ketayotganini, aslida esa baxtiyor hayot dasturi Islom ta'limotida mavjudligini ta'kidlaydi. Birinchi qismda insonning yaratilishi, uning borliqdagi o‘rni va mas'uliyati yoritiladi. Islom aqiydasiga ko‘ra, inson Oliy Zot tomonidan aziz va mukarram qilib yaratilgan maxluqotdir. Koinotdagi barcha narsa inson manfaatiga bo‘ysundirilgani ko‘rsatib o‘tiladi. Keyingi bo‘limlarda Islom shariatining inson hayotini, aqlini, naslini va mol-mulkini muhofaza qilishga qaratilgan tamoyillari atroflicha bayon qilinadi. Zukko ulamolar va faqihlar yaratgan fiqhiy meros, ibodatlarning (namoz, ro‘za, zakot, haj) inson ruhiyati hamda jamiyat iqtisodiy va ijtimoiy hayotidagi foydalari tushuntiriladi. Masalan, zakot va sadaqa jamiyatda boy va kambag‘al o‘rtasidagi tenglikni ta'minlashi, ro‘za jismoniy va ruhiy poklanish manbai ekani alohida ta'kidlanadi. Asarda ruhiy tarbiya, ya'ni axloqiy kamolot masalalariga ham keng o‘rin ajratilgan. Kibr, manmanlik, baxillik kabi illatlardan xalos bo‘lish hamda sabr, shukr, tavoze' kabi go‘zal fazilatlarni shakllantirish yo‘llari ko‘rsatiladi. Kitob yakunida saodatli hayot kechirishni istagan insonning kun tartibi va o‘zgalar bilan muomala odoblari, shuningdek, e'tiqod va iymon bilan umr kechirgan kishilarning hayotiy qissalari keltiriladi.",
+  "characters": "Deyl Karnegi, Mark Siljender, R. V. S. Bodli, Sarob (shifoxonadagi qiz), shifokor va boshqa tarixiy hamda diniy shaxslar.",
+  "conclusion": "O‘quvchi ushbu kitobni o‘qish orqali insonning borliqdagi o‘rni va qadr-qimmati haqida teran tasavvurga ega bo‘ladi. Islom ta'limotining shunchaki ibodatlardan emas, balki butun hayotni tartibga soluvchi mukammal tizim ekanini tushunib yetadi. Shuningdek, insoniy munosabatlar, odob-axloq va ruhiy poklanishning shaxsiy baxt-saodatga ta'sirini anglaydi. Kitob kitobxonda hayotga, ilmga hamda o‘zgalarga bo‘lgan hurmat va mas'uliyat tuyg‘usini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, nasihatomuz, samimiy",
+  "for_whom": "Insoniyatning yaralish maqsadi, hayotiy saodat va odob-axloq masalalariga qiziquvchi, o‘z dunyoqarashini kengaytirmoqchi bo‘lgan o‘smirlar va yoshlar uchun.",
+  "events": [
+   "Kitob muqaddimasida baxtiyor hayot kechirish istagi va uning yo‘llari haqida dildan suhbat boshlanadi.",
+   "Insonlarning turli ta'limotlar va oqimlarga ko‘r-ko‘rona ergashishi sabablari va oqibatlari tahlil qilinadi.",
+   "Qur'oni Karim va Islom haqiqatlarini bilmaslik salbiy munosabatlarga sabab bo‘lishi hayotiy misollar bilan ko‘rsatiladi.",
+   "Insonning yaratilishi, uning borliqdagi oliy maqomi va azizu mukarram etilgani bayon qilinadi.",
+   "Borliqdagi jamiki narsalar inson saodati va manfaati uchun bo‘ysundirilgani ta'kidlanadi.",
+   "Insonning saodat va ma'rifat izlashdagi tabiiy tuyg‘ulari hamda aql va ilmning o‘rni yoritiladi.",
+   "Islom shariatining inson hayotini, aqlini va naslini muhofaza qilishga qaratilgan maqsadlari tushuntiriladi.",
+   "Aqlga zarar yetkazuvchi xamr va giyohvandlik kabi illatlarning harom qilinishi va ularning zararlari ko‘rsatiladi.",
+   "Mol-mulk va jamiyat manfaatlarini muhofaza qilish borasidagi shar'iy qoidalar bayon etiladi.",
+   "Shar'iy amallar, poklik va fiqhiy masalalarning mundarijasi hamda tartibi tushuntiriladi.",
+   "Namoz, ro‘za, zakot va haj ibodatlarining shaxsiy va ijtimoiy hayotdagi hikmatlari bayon qilinadi.",
+   "Zakot va sadaqaning jamiyatdagi tenglik hamda iqtisodiy barqarorlikka ta'siri ko‘rsatiladi.",
+   "Ruhiy tarbiya va axloqiy kamolot, ya'ni kibr, baxillik kabi illatlarni davolash yo‘llari beriladi.",
+   "Sabr, shukr va tavoze' kabi insoniy fazilatlarning saodatga erishishdagi o‘rni ko‘rsatiladi.",
+   "Saodatli hayot sohibining kun tartibi va insonlar bilan muomala qilish odoblari tushuntiriladi.",
+   "Kitob so‘ngida e'tiqodli insonlarning so‘nggi damlaridagi sabr-bardi va go‘zal xotimasi haqida hayotiy qissa keltiriladi."
+  ],
+  "quotes": [
+   "Chunki saodatli hayot kechirish istagi har bir insonning asl va sof tabiatida bordir.",
+   "Biror narsaga qarshi chiqish yoki uni qabul qilishdan avval o‘sha narsa bilan tanishib chiqish kerakligi hamma bilgan va amal qilib kelgan haqiqatlardan biridir.",
+   "Islom aqiydasiga ko‘ra esa inson Alloh O‘z qo‘li bilan yaratgan, O‘z ruhidan jon puflagan, maxluqotlarning afzali va mukarrami etgan, yer yuzida O‘zining o‘rinbosari qilib qo‘ygan oliyjanob bir zotdir.",
+   "Faqat aql ishlatish, tafakkur qilish orqaligina borliqdagi barcha narsalarning inson uchun bo‘ysundirilgani anglab yetiladi va inson ulardan foyda oladi.",
+   "Ilm talab qilish har bir muslimga farzdir.",
+   "Musulmon kishi molini obro‘sidan ustun qo‘ymaydi."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Biror narsaga qarshi chiqish yoki uni qabul qilishdan avval o‘sha narsa bilan tanishib chiqish kerakligi hamma bilgan va amal qilib kelgan haqiqatlardan biridir. Aks holda yaxshilikdan bebahra qolish, bilmasdan, yomonlikka qo‘l urib qo‘yish turgan gap. Shuningdek, ko‘r-ko‘rona ish yuritish sababli yaxshilikka qarshi chiqish yoki yomonlikni oqlash ham sodir bo‘lishi mumkin.",
+   "question": "Biror voqea yoki ma'lumot haqida to‘liq bilmay turib xulosa chiqarish inson hayotida qanday anglashilmovchiliklarga olib kelishi mumkin? O‘z hayotingdan yoki kuzatganlaringdan misol keltira olasanmi?"
+  },
+  {
+   "part": 1,
+   "context": "Faqat aql ishlatish, tafakkur qilish orqaligina borliqdagi barcha narsalarning inson uchun bo‘ysundirilgani anglab yetiladi va inson ulardan foyda oladi. Aql yuritish o‘z navbatida borliqdagi barcha mavjudot va ashyolarni insonga bo‘ysundirib bergan Zotga iymon keltirib, ibodat qilishga olib keladi. Iymonsiz, quruq ilm esa foyda emas, zarar keltiradi.",
+   "question": "Atrof-muhit va tabiatdagi tartib hamda go‘zallik haqida tafakkur qilish insonning dunyoqarashini va mas'uliyatini qanday o‘zgartiradi deb o‘ylaysan?"
+  },
+  {
+   "part": 2,
+   "context": "Ushbu hadisi sharifga binoan, iste'mol qilganda aqlni, tanani, a'zolarni, asabni va boshqa joylarni bo‘shashtiruvchi har qanday narsa harom bo‘ldi. Xuddi mana shu hadisi sharifda aytilayotgan “bo‘shashtiruvchi”lik sifati ajnabiy tillarda “narkotik” deb nomlanayotgan giyohvandlik moddalarining alohida vasfidir.",
+   "question": "Aql va salomatlikni saqlash insonning o‘z kelajagi hamda jamiyat oldidagi mas'uliyati bilan qanday bog‘liq deb hisoblaysan?"
+  },
+  {
+   "part": 2,
+   "context": "O‘zi yeb-ichadigan va istinjo qiladigan bo‘lgan o‘g‘il bola otasiga beriladi. Chunki u erkaklarga xos narsalarni otasidan o‘rganishi zarur. Qiz bolalar esa hayz ko‘radigan bo‘lguncha onalari bilan qoladilar. Chunki ular ayollarga xos narsalarni onalaridan o‘rganishlari lozim.",
+   "question": "Yosh ulg‘aygani sari ota-onadan va ulug‘lardan o‘rganiladigan hayotiy saboqlar hamda tajribalarning ahamiyati haqida sen qanday fikrdasan?"
+  },
+  {
+   "part": 3,
+   "context": "Faqat xursandchiliklarda do‘st bo‘ladiganlardan ehtiyot bo‘ladi. Chunki unday kishilar dushmanlarning dushmani bo‘ladi. Musulmon kishi molini obro‘sidan ustun qo‘ymaydi. Majlisga kirganda avval salom beradi va o‘tirganlarning orasini yorib o‘tmaydi. Qayerda bo‘sh joy bo‘lsa, o‘sha yerga o‘tiradi.",
+   "question": "Haqiqiy do‘stlik va kishilar orasidagi samimiy munosabatlar qanday sifatlar bilan o‘lchanadi deb o‘ylaysan? O‘zing do‘st tanlashda nimalarga e'tibor berasan?"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "title": "Mening Dog‘istonim",
+ "author": "Rasul Hamzatov",
+ "genre": "badia",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14-18 yosh (falsafiy va milliy o‘zlik haqidagi asar)",
+  "topics": [
+   "vatan",
+   "ona tili",
+   "urf-odat",
+   "ijod",
+   "odob-axloq"
+  ],
+  "theme": "Asarning bosh g‘oyasi — insonda o‘z ona yurtiga, tili va madaniyatiga sadoqatni shakllantirishdir. Muallif har bir inson o‘z xalqining munosib vakili bo‘lishi, o‘zligini yo‘qotmasligi va kattalardan qolgan poydor qadriyatlarni asrab-avf etishi kerakligini ta’kidlaydi.",
+  "summary": "Shoir Rasul Hamzatov o‘zining nasriy badiasida tug‘ilib o‘sgan o‘lkasi Dog‘iston, o‘z ovuli Sada va xalqining boy urf-odatlari haqida chuqur mushohada yuritadi. Jurnal muharriri undan topshiriq bo‘yicha maqola yozishni so‘raganda, shoir shoshmadorlik bilan yuzaki asar yozishdan bosh tortib, qadrdon ovuliga yo‘l oladi. U yerda o‘z bolaligi, otasi Hamzat Sadasaning ibratli saboqlari, unga ism qo‘yilgan kun hamda donishmand chollarning hikmatlarini eslaydi. Shoir chet eldagi anjumanlarda o‘z xalqining vakili sifatida qatnashganini, har bir ijodkor eng avvalo o‘z ildiziga tayanmog‘i lozimligini uqtiradi. Asarda ona tilini e’zozlash, el-yurt oldidagi mas’uliyat va ijoddagi halollik mavzulari xalqiy rivoyat va latifalar orqali yoritib beriladi.",
+  "characters": "Rasul Hamzatov — asar muallifi va bosh qahramon; o‘z el-yurti, ona tili va madaniyatiga sodiq shoir.\nHamzat Sadasa — Rasulning otasi; donishmand, talabchan va hayotiy saboqlar beruvchi el shoiri.\nAbutolib — Rasulning shoir do‘sti; hozirjavob, quvnoq va xalqona hikmatlar sohibi.\nOnasi — shoirga mehr-muhabbat ko‘rsatgan, ona tili va urf-odatlarning sofligini saqlagan ayol.",
+  "conclusion": "Asar o‘quvchini o‘z ildizlarini unutmaslikka, ona tilini muqaddas bilishga hamda ota-ona va kattalar o‘gitiga amal qilishga o‘rgatadi. Bola undan o‘z xalqi bilan faxrlanishni, har bir qilingan ishda mas’uliyatli va halol bo‘lishni hamda o‘zining shaxsiy dunyoqarashiga ega bo‘lish lozimligini anglab yetadi.",
+  "difficulty": "qiyin",
+  "mood": "o‘ylantiruvchi, samimiy, ilhomlantiruvchi",
+  "for_whom": "Vatanparvarlik, adabiyot, ona tili hamda hayotiy falsafa va urf-odatlarga qiziqadigan o‘smirlar uchun mos.",
+  "events": [
+   "Shoir kitobga muqaddima yozish va so‘z tanlashning mas’uliyati haqida mushohada yuritadi.",
+   "Jurnal muharriri Rasul Hamzatovga Dog‘iston haqida ocherk yozishni so‘rab murojaat qiladi.",
+   "Rasul yuzaki topshiriqdan ko‘ra o‘z qadrdon ovuli Sadaga qaytib, bolaligi va o‘tmishini eslashni afzal ko‘radi.",
+   "Shoir o‘ziga qanday qilib donishmand chol tomonidan 'Rasul' deb ism qo‘yilgani va bu nomning mas’uliyati haqida hikoya qiladi.",
+   "Shoir Belgiyadagi xalqaro anjumanda har bir ijodkor eng avvalo o‘z xalqining vakili bo‘lishi kerakligini ta’kidlaydi.",
+   "Otasi Hamzat Sadasaning Xunzaxga o‘zi ochgan alohida so‘qmoqdan yurishi va ijoddagi o‘ziga xoslik haqida so‘z boradi.",
+   "Kitob nomlanishi va uning g‘oyasi bo‘yicha turli kishilar va ministrlar o‘rtasidagi bahs-munozaralar tasvirlanadi.",
+   "Ona tilining muqaddasligi, uni saqlab qolish va o‘z ona tilidan tonmaslik haqida hayotiy misollar keltiriladi.",
+   "Shoir ijodda mavzu tanlash, birovning uslubiga taqlid qilmaslik hamda zamon va adabiyot mas’uliyati haqida mulohaza qiladi."
+  ],
+  "quotes": [
+   "Sen o‘tmishga to‘pponcha otsang, Kelajak seni zambarak bilan otadi.",
+   "Gapirishni o‘rganish uchun odam bolasiga ikki yil kifoya. Tilni tiyishga o‘rganish uchun oltmish yil kerak.",
+   "Tog‘lik ikki narsani ehtiyot qilishi kerak: papog‘ini va nomini.",
+   "Har bir odam dunyoga kelganda shu narsani bilishi kerak: u dunyoga o‘z xalqining vakili bo‘lmoq uchun kelgan.",
+   "Birovlarning otiga mingashmang, faqat o‘z otingizni mining.",
+   "Iloyim bolalaring ona tilidan judo bo‘lsin, – deyishadi."
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Muallif kitobda ona tilini yo‘qotishni eng og‘ir baxtsizlik va qarg‘ish deb biladi. Sen o‘z ona tilingni asrash va boyitish uchun kundalik hayotingda nimalar qilasan? Ota-onang yoki ustozlaringdan eshitgan qaysi o‘git senga o‘zligingni anglashda yordam bergan?"
+}

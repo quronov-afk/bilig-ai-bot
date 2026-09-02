@@ -1,0 +1,80 @@
+{
+ "title": "Imom Buxoriydan qirq hadis",
+ "author": "Moturidiy markazi",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+ yoshdagi o‘smirlar va talabalar uchun",
+  "topics": [
+   "odob-axloq",
+   "vatanga muhabbat",
+   "tinchlik",
+   "ilm olish",
+   "halol mehnat",
+   "saxovat"
+  ],
+  "theme": "Risola Imom Buxoriy to‘plagan hadislar va ularning sodda sharhlari orqali insoniy fazilatlar, odob-axloq, vatanparvarlik, tinchlik, ilm egallash hamda halol mehnatning jamiyat hayotidagi o‘rnini yoritib beradi.",
+  "summary": "Ushbu kitob Movarounnahrning buyuk muhaddisi Imom Buxoriy hayoti va faoliyati haqidagi qisqacha ma'lumot bilan boshlanadi. Muqaddimada allomaning ilmiy safarlari, ustozlari, shogirdlari va qoldirgan ma'naviy merosi, xususan «al-Jome' as-sahih» hamda «al-Adab al-mufrad» asarlarining ahamiyati ochib beriladi. So‘ngra kitobda insoniy kamolot va jamiyat farovonligi uchun xizmat qiladigan qirqta muhim mavzu tartib bilan yoritiladi.\n\nDastlabki boblarda Vatanni sevish, uni ko‘z qorachig‘idek asrash va obod qilish inson fitratidagi azaliy tuyg‘u ekani ta'kidlanadi. Tinchlik va salomatlikning ulug‘ ne'matligi, insonlar o‘rtasida salomlashish odobini keng yoyish, o‘zaro mehr-oqibat va bag‘rikenglikni qaror toptirish masalalariga alohida e'tibor qaratiladi.\n\nRisolada ilm olish va o‘rgatishning qadri yuqori baholanib, Muso va Xizr alayhissalomlar qissasi misolida ilm yo‘lidagi sabr va kamtarinlik yoritiladi. Ilm izlovchilar erishadigan ma'naviy mukofotlar, ularning jamiyatdagi o‘rni va ilmsizlikning zararlari bayon etiladi.\n\nShuningdek, odob-axloq masalalariga bag‘ishlangan qismlarda insonlarga rahmli bo‘lish, yoshi kattalarni hurmat qilish, kichiklarga shafqat ko‘rsatish, kishilarning hojatini chiqarish, kasallarni borib ko‘rish va bir-biriga hadya berish singari ezgu amallar bayon qilingan. Kitobda salbiy illatlar — g‘iybat, chaqimchilik, badgumonlik, behuda safsata sotish, kibr va sudxo‘rlikning jamiyat hamda inson ruhiyatiga yetkazadigan zararlari atroflicha tushuntiriladi.\n\nOxirgi qismlarda esa qanoat, shukronalik, og‘ir damlarda sabr qilish, yo‘ldan ozor beruvchi narsalarni olib tashlash, halol mehnat va kasb-hunar egallashning sharafi haqida so‘z yuritiladi. Ko‘chat o‘tqazish hamda atrofdagilarga manfaat yetkazish kabi ezgu ishlar jamiyat ravnaqining asosi ekani ko‘rsatib beriladi.",
+  "characters": "Imom Buxoriy, Muso alayhissalom, Xizr alayhissalom, Oisha bint Abu Bakr, Umar ibn Xattob, Anas ibn Molik, Ibn Abbos, Luqmoni hakim",
+  "conclusion": "Kitobni o‘qigan o‘quvchi o‘zida vatanparvarlik, tinchlikni qadrlash va halol mehnatga intilish kabi fazilatlarni shakllantiradi. Yoshi kattalarga hurmat, kichiklarga izzat ko‘rsatish hamda o‘zaro muomalada samimiy va xushfe'l bo‘lish ko‘nikmalarini egallaydi. Salbiy illatlar va behuda so‘zlardan tiqilib, odamlarga ezgulik urug‘ini sochish, ko‘chat o‘tqazish va ilm egallash hayotning tub mazmuni ekanini anglab yetadi.",
+  "difficulty": "oson",
+  "mood": "vazmin, nasihatomuz, ma'rifiy",
+  "for_whom": "Odob-axloq, halollik va milliy-ma'naviy qadriyatlarga qiziquvchi o‘smirlar va yoshlar uchun",
+  "events": [
+   "Kitob Imom Buxoriyning hayoti, ilmiy safarlari va qoldirgan ma'naviy merosi haqidagi ma'lumotlar bilan boshlanadi.",
+   "Vatanni sevish va uni obod qilish inson fitratidagi azaliy tuyg‘u ekani rivoyatlar va oyatlar vositasida yoritiladi.",
+   "Tinchlik va salomatlik insoniyatga berilgan eng buyuk ne'matlardan biri ekani ta'kidlanadi.",
+   "Jamiyatda o‘zaro tinchlik va totuvlikni qaror toptirish uchun salomlashish odobiga amal qilish ko‘rsatib o‘tiladi.",
+   "Ilm egallash va o‘rgatishning jamiyat taraqqiyotidagi o‘rni Muso hamda Xizr alayhissalomlar qissasi orqali bayon qilinadi.",
+   "Ilm izlovchi insonlarga beriladigan ma'naviy mukofotlar va olimlarning jamiyatdagi yuksak darajasi tushuntiriladi.",
+   "Atrofdagi insonlarga va jonzotlarga rahmli bo‘lish hamda yaxshilikka dalolat qilishning fazilati ko‘rsatiladi.",
+   "Kattalarni hurmat qilish, kichiklarga shafqat ko‘rsatish va xushfe'l muomalada bo‘lish odoblari yoritiladi.",
+   "Musibat va qiyinchiliklar kelganda sabr qilish hamda xotirjamlikni saqlashning ahamiyati uqtiriladi.",
+   "Arazlashgan kishilarning orasini isloh qilish va yo‘ldan ozor beruvchi narsalarni olib tashlash fazilati bayon etiladi.",
+   "Bemorlarni ko‘rgani borish, muhtojlarga yordam berish hamda o‘zaro hadya ulashish jamiyatda mehr-oqibatni oshirishi ta'kidlanadi.",
+   "Behuda gapirish, chaqimchilik, badgumonlik va g‘iybat kabi illatlarning inson ruhiyatiga zarari tushuntiriladi.",
+   "Har bir ishda xolis niyat qilish hamda ibo-hayo sifatiga ega bo‘lishning ahamiyati ko‘rsatib beriladi.",
+   "Inson o‘zgalarga yengillik yaratishi, kibr va sudxo‘rlik kabi illatlardan saqlanishi zarurligi ta'kidlanadi.",
+   "Halol mehnat qilish, o‘z qo‘l mehnati bilan kun ko‘rish hamda ko‘chat o‘tqazib obodonchilikka hissa qo‘shish haqida so‘z yuritiladi."
+  ],
+  "quotes": [
+   "Vatanga bo‘lgan muhabbat Alloh taolo tomonidan insoniyat fitratiga solib qo‘yilgandir.",
+   "Ikki ne'matni aksariyat insonlar qo‘ldan boy berib qo‘yadilar: sog‘liq va bo‘sh vaqt.",
+   "Mo‘min kishi o‘zgalarga aziyat yetkazadigan narsalarni doimo bartaraf qilishga harakat qiladi.",
+   "Darhaqiqat, hadya berib turish insonlar o‘rtasida mehr-muruvvatni kuchaytiradi, natijada butun jamiyat a'zolari o‘rtasida mehr-oqibat, totuvlik paydo bo‘ladi.",
+   "Musulmon kishi aniq xabarga asoslanib gapiradi.",
+   "Rizq topish uchun qilinadigan halol mehnatning katta-kichigi, obro‘li-obro‘sizi bo‘lmaydi."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Yosh Muhammad bolaligida otasidan yetim qolib, onasining tarbiyasini olgan. Boshlang‘ich ta'limni olish vaqtidayoq otasi kabi muhaddis bo‘lish orzusida bo‘lib, Doxiliy kabi mashhur hadis olimlaridan rivoyatlarni eshitib, ularni yodlagan. Bolaligidan o‘ta ziyrakligi, quvvai hofizasi, ya'ni yodlash xotirasining kuchliligi va favqulodda noyob qobiliyati bilan o‘z tengqurlaridan ajralib turgan Buxoriy diniy va dunyoviy fanlar, ayniqsa, hadis ilmini alohida qiziqish bilan egallagan.",
+   "question": "O‘zing yoqtirgan sohaga erishish uchun yoshlikdan qanday harakatlar qilish kerak deb o‘ylaysan? O‘z hayotingdan biror misol keltira olasanmi?"
+  },
+  {
+   "part": 1,
+   "context": "Alloh taolo yer yuzini obod qilishi uchun insoniyatga o‘zi tug‘ilib o‘sgan Vatanni sevimli qilib qo‘ydi. Umar ibn Xattob roziyallohu anhu bu haqda shunday deganlar: “Vatanga muhabbat bo‘lmaganida yomon diyorlar xarobaga aylanar edi. Vatanning muhabbati bilan diyorlar obod bo‘ladi”.",
+   "question": "Seningcha, o‘zing yashab turgan mahalla yoki shaharni obod qilish uchun har bir inson qanday hissa qo‘shishi mumkin?"
+  },
+  {
+   "part": 2,
+   "context": "Mo‘min kishi o‘zgalarga aziyat yetkazadigan narsalarni doimo bartaraf qilishga harakat qiladi. Mo‘min tili bilan ham, biror a'zosi bilan ham o‘zgalar ozorlanishini xohlamaydi. Mazkur hadisi sharifda yo‘lda yotgan tikonli shox-shabbani olib tashlagan kishidan Alloh rozi bo‘ladi, deyilmoqda.",
+   "question": "Atrofdagi odamlarga ozor bermaslik va ularga qulaylik yaratish uchun kundalik hayotda sen qanday tartib-qoidalarga amal qilasan?"
+  },
+  {
+   "part": 2,
+   "context": "Darhaqiqat, hadya berib turish insonlar o‘rtasida mehr-muruvvatni kuchaytiradi, natijada butun jamiyat a'zolari o‘rtasida mehr-oqibat, totuvlik paydo bo‘ladi. Ijtimoiy aloqalar mustahkamlanadi.",
+   "question": "Yaqinlaringga yoki do‘stlaringga kutilmagan xursandchilik va sovg‘a ulashganingda o‘zingda qanday tuyg‘ularni his qilgansan?"
+  },
+  {
+   "part": 3,
+   "context": "Rizq topish uchun qilinadigan halol mehnatning katta-kichigi, obro‘li-obro‘sizi bo‘lmaydi. Eng haqiqiy obro‘ mehnat ila halol rizq topishdir. Eng yomon obro‘sizlik esa, boshqalarning topganidan kun ko‘rishdir.",
+   "question": "Nima uchun har qanday mehnatni, hatto eng oddiy kasblarni ham hurmat qilishimiz kerak deb o‘ylaysan?"
+  }
+ ]
+}

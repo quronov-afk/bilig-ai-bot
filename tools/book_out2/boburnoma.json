@@ -1,0 +1,476 @@
+{
+ "title": "Boburnoma",
+ "author": "Zahiriddin Muhammad Bobur",
+ "genre": "avtobiografik asar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tarix",
+   "vatanparvarlik",
+   "sardorlik",
+   "tabiat",
+   "halollik"
+  ],
+  "theme": "«Boburnoma» — insonning o‘z bosib o‘tgan murakkab hayot yo‘lini, taxt uchun kurashlarini, mag‘lubiyat va g‘alabalarini, shuningdek, O‘rta Osiyo, Afg‘oniston va Hindistonning jug‘rofiyasi hamda tabiatini biron bir bo‘yoqsiz, xolis va rostdan bayon etuvchi avtobiografik shohasardir.",
+  "summary": "Asar Zahiriddin Muhammad Boburning Farg‘ona taxtiga o‘tirganidan to hayotining oxirgi yillarigacha bo‘lgan voqealarni qamrab oladi. 1494-yilda otasi Umarshayx mirzo vafot etgach, 12 yoshli Bobur Farg‘ona hukumdoriga aylanadi. Yosh podshoh dastlab Samarqand va Andijon uchun qarindoshlari hamda tashqi dushmanlarga qarshi shiddatli kurashlar olib boradi. Taxtdan mahrum bo‘lib, qiyinchilik va sargardonliklarni boshidan kechirgan Bobur bir necha bor O‘ratepa, Daxkat va Toshkandda panoh topadi. Har safar mag‘lubiyatga uchrasa ham, matonat va sabr bilan qayta qo‘shin toplaydi. Keyinchalik u Kobulni egallaydi va Afg‘onistonda o‘z mavqeyini mustahkamlaydi. Bobur ushbu o‘lkalarning tabiati, hayvonot olami, qabilalari va urf-odatlarini mufassal tasvirlaydi. Shundan so‘ng Hindiston sari yuzlanib, Ponipat jangida Sulton Ibrohim Ludiyning bahaybat qo‘shinini mag‘lub etadi. Rum dasturi bo‘yicha arobalarni zanjirlab, to‘p va tufaklardan unumli foydalanish unga buyuk g‘alaba keltiradi. Konvo jangida esa Rono Sango boshchiligidagi hind rojalari birlashmasini batamom tor-mor qiladi. Asar oxirida g‘alaba Fathnomasi keltirilib, Boburning buyuk saltanat barpo etgani va Tangriga shukronaligi bayon etiladi.",
+  "characters": "Zahiriddin Muhammad Bobur — asar muallifi va bosh qahramon, shijoatli hukmdor, shoir va xolis muarrix. Umarshayx mirzo — Boburning otasi, baland himmatli va adolatli Farg‘ona podshohi. Qutluq Nigorxonim — Boburning onasi, qiyinchiliklarda o‘g‘liga hamroh bo‘lgan sabrli ayol. Rono Sango — Hindistondagi qudratli kofir rojalari sardori. Sulton Ibrohim Ludiy — Dehli podshohi, xasisligi sabab qo‘shinining mehrini qozonolmagan hukmdor. Ustod Aliquli — Boburning to‘pchi boshlig‘i, Ponipat va Konvo janglari qahramoni.",
+  "conclusion": "Bola ushbu asardan rostgo‘ylik, matonat va har qanday og‘ir vaziyatda ham taslim bo‘lmaslik sabog‘ini oladi. Boburning o‘z xatolarini ham yashirmay xolis yozishi kitobxonda halollik va o‘z-o‘ziga tanqidiy qarash ko‘nikmasini shakllantiradi. Kitobxon tariximiz, ajdodlarimiz jasorati va Sharq davlatchilik madaniyati haqida teran bilimga ega bo‘ladi.",
+  "difficulty": "qiyin",
+  "mood": "siddiqona, o‘ylantiruvchi, shiddatli",
+  "for_whom": "Tarix, harbiy san'at, geografiya va buyuk shaxslar hayotiga qiziqadigan o‘smirlar uchun.",
+  "events": [
+   "Zahiriddin Muhammad Bobur Farg‘ona viloyatida podshoh bo‘ldi.",
+   "Bobur Farg‘ona viloyatining shaharlari va uning boy tabiatini tasvirladi.",
+   "Umarshayx mirzo Axsida kabutarxonadan qulab halok bo‘ldi.",
+   "Boburning qarindoshlari va beklar taxt uchun kurashlar boshladi.",
+   "Bobur Samarqand va Andijon uchun shiddatli janglar olib bordi.",
+   "Qiyinchiliklar va mag‘lubiyatlardan so‘ng Bobur Daxkat va Dizakda panoh topdi.",
+   "Bobur onasi va yaqinlari bilan Toshkandga borib xon qarindoshlarini ko‘rdi.",
+   "Bobur do‘stlari va oz sonli yigitlari bilan tog‘ va daralardan o‘tdi.",
+   "Bobur Kobul tomon azimat qilib, Afg‘oniston viloyatlarini egalladi.",
+   "Bobur Lamg‘onot va boshqa tumanlarning tabiati va ajoyibotlarini yozdi.",
+   "Bobur Obi Istoda daryosidagi qizil tog‘lon qozlarni va tabiatni kuzatdi.",
+   "Bobur Badiuzzamon mirzo bilan uchrashib, Xuroson majlislarida bo‘ldi.",
+   "Bobur Hindistonga yurishlar boshladi va yangi yerlarni egalladi.",
+   "Bobur majlislar va safarlar davomidagi voqealarni atroflicha bayon etdi.",
+   "Ponipat jangida Bobur Ibrohim Ludiyni mag‘lub etib Hindistonni oldi.",
+   "Bobur Hindistondagi anba, kayla kabi mevalar va hayvonlarni tasvirladi.",
+   "Konvo jangida Bobur Rono Sango boshchiligidagi katta qo‘shin bilan to‘qnashdi.",
+   "Ustod Aliquli va Mustafo Rumiy to‘plar va tufaklar bilan dushmanni yengdi.",
+   "Bobur g‘alabadan so‘ng rasmiy Fathnoma yozdirib, zafarni e’lon qildi.",
+   "Bobur bosib o‘tgan hayot yo‘li va ko‘rgan-kechirganlarini xolis xotira qildi."
+  ],
+  "quotes": [
+   "Tengri taoloning inoyati bilan va hazrati on Sarvari koinotning shafoati bilan va chahoryori bosafolarning himmati bilan seshanba kuni ramazon oyining beshida tarix sakkiz yuz to‘qson to‘qquzda Farg‘ona viloyatida o‘n ikki yoshta podshoh bo‘ldum.",
+   "Farg‘ona viloyatining hosili bila, agar adl qilsalar, uch-to‘rt ming kishi saxlasa bo‘lur.",
+   "Korhoro ba vaqt boyad just, Kori be vaqt sust boshad, sust.",
+   "Ishrat usrattin so‘ng, farog‘at mashaqqattin keyin lazzatliqroq va yaxshiroq ko‘runur.",
+   "Vahmu usrattin amone toptuq, Yangi jon, toza jahone toptuq."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Farg‘ona viloyatining poytaxti qaysi shahar edi?",
+   "options": [
+    "A) Andijon",
+    "B) O‘sh",
+    "C) Marg‘inon",
+    "D) Axsikat"
+   ],
+   "answer": "A) Andijon"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘sh qasabasining yonidagi mashhur tog‘ nomi nima?",
+   "options": [
+    "A) Baroko‘h",
+    "B) Munug‘il",
+    "C) Sox",
+    "D) Hushyor"
+   ],
+   "answer": "A) Baroko‘h"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Umarshayx mirzo qayerda kabutarxona bilan uchib halok bo‘ldi?",
+   "options": [
+    "A) Axsi qo‘rg‘onida",
+    "B) Andijon arki ichida",
+    "C) O‘sh qal’asida",
+    "D) Marg‘inon kentida"
+   ],
+   "answer": "A) Axsi qo‘rg‘onida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Umarshayx mirzo qaysi mashhur dostonni ko‘p o‘qir edi?",
+   "options": [
+    "A) Shohnoma dostonini",
+    "B) Xamsa asorini",
+    "C) Volidiya kitobini",
+    "D) Mubayyin risolasini"
+   ],
+   "answer": "A) Shohnoma dostonini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Boburning ona va ota tomondan qarindoshlarini ajrating.",
+   "options": [
+    "A) Onasi chig‘atoy, otasi temuriydir",
+    "B) Onasi Eroniy, otasi O‘zbekdir",
+    "C) Onasi arab, otasi turkdir",
+    "D) Onasi hind, otasi mo‘g‘uldur"
+   ],
+   "answer": "A) Onasi chig‘atoy, otasi temuriydir"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Umarshayx mirzo Samarqand podshohi bilan tez-tez urushardi?",
+   "options": [
+    "A) Mulkni kengaytirish ishtiyoqi sababli",
+    "B) Diniy kelishmovchilik borligi uchun",
+    "C) Qo‘shiniga maosh yetmagani uchun",
+    "D) Samarqand unga sovg‘a qilingani uchun"
+   ],
+   "answer": "A) Mulkni kengaytirish ishtiyoqi sababli"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Xitoy korvonining mollari egalariga qaytarildi?",
+   "options": [
+    "A) Umarshayx adolatli hukmdor bo‘lgani uchun",
+    "B) Korvon egalari qo‘rqitgani uchun",
+    "C) Mollarning sifati yomonligi uchun",
+    "D) Samarqand podshohi amr qilgani uchun"
+   ],
+   "answer": "A) Umarshayx adolatli hukmdor bo‘lgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Umarshayxning halok bo‘lgan korvon molini saqlashi qanday xulq?",
+   "options": [
+    "A) Yuksak adolat va halollik nishoni",
+    "B) Odatiy va majburiy vazifa",
+    "C) Qat'iy va shafqatsiz qaror",
+    "D) Foydasiz va keraksiz xatti-harakat"
+   ],
+   "answer": "A) Yuksak adolat va halollik nishoni"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Boburning Farg‘ona shaharlariga bergan ta'rifini qanday baholaysiz?",
+   "options": [
+    "A) Aniq va xolis berilgan ta'rif",
+    "B) Oshirib yuborilgan mubolag‘ali ta'rif",
+    "C) Faqat salbiy tomonlari ko‘rsatilgan",
+    "D) Boshqa manbalardan ko‘chirilgan ta'rif"
+   ],
+   "answer": "A) Aniq va xolis berilgan ta'rif"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Deh kujov-u daraxton kujo» masali Axsiga nisbatan nimani anglatadi?",
+   "options": [
+    "A) Shaharning bog‘lardan yiroqligini",
+    "B) Axsining juda go‘zalligini",
+    "C) Axsida meva yo‘qligini",
+    "D) Axsining juda torligini"
+   ],
+   "answer": "A) Shaharning bog‘lardan yiroqligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bobur dushman ta’qibidan qochib qaysi kentga keldi?",
+   "options": [
+    "A) Xaliliya kentiga",
+    "B) Axsi qal’asiga",
+    "C) O‘sh qasabasiga",
+    "D) Marg‘inon kentiga"
+   ],
+   "answer": "A) Xaliliya kentiga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lamg‘onotda mast bo‘lgan xizmatkor kim edi?",
+   "options": [
+    "A) Gadoyi Muhammad",
+    "B) Qosimbek",
+    "C) Ibrohim soru",
+    "D) Tanbal"
+   ],
+   "answer": "A) Gadoyi Muhammad"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Obi Istoda daryosi yoqasida qanday qushlar ko‘rindi?",
+   "options": [
+    "A) Qip-qizil tog‘lon qozlar",
+    "B) Bahaybat oq burgutlar",
+    "C) Ko‘p sonli qashqaldaqlar",
+    "D) Rank-barang to‘tiqushlar"
+   ],
+   "answer": "A) Qip-qizil tog‘lon qozlar"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Badiuzzamon mirzoning uyidagi majlisda kim raqsga tushdi?",
+   "options": [
+    "A) Yusuf Ali ko‘kaltosh",
+    "B) Hofiz Hoji",
+    "C) Jaloliddin Mahmud",
+    "D) Shodi bacha"
+   ],
+   "answer": "A) Yusuf Ali ko‘kaltosh"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bobur hayotidagi qiyinchilik va rohat holatlarini guruhlang.",
+   "options": [
+    "A) Mashaqqatdan so‘ng farog‘at keladi",
+    "B) Doim rohatda yashagandir",
+    "C) Doim mag‘lubiyatga uchragandir",
+    "D) Faqat safarlarda bo‘lgandir"
+   ],
+   "answer": "A) Mashaqqatdan so‘ng farog‘at keladi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Boburning Kobulgacha bo‘lgan safarlarida qanday to‘siqlar uchradi?",
+   "options": [
+    "A) Ochlik va otlar horishi",
+    "B) Faqat dushman kemalari",
+    "C) Doimiy qalin qorlar",
+    "D) Mahalliylarning isyoni"
+   ],
+   "answer": "A) Ochlik va otlar horishi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bobur nega Badiuzzamonning uyida darrov chog‘ir ichmadi?",
+   "options": [
+    "A) Katta mirzoga xushomad qilmaslik uchun",
+    "B) Chog‘ir tatib ko‘rmagani uchun",
+    "C) Salomatligi yomonlashgani uchun",
+    "D) Boshqa mehmonlardan qo‘rqgani uchun"
+   ],
+   "answer": "A) Katta mirzoga xushomad qilmaslik uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qiyinchiliklardan so‘ng Dizakda to‘xtagan Bobur nima uchun xursand bo‘ldi?",
+   "options": [
+    "A) O‘lim xavfidan qutulgani uchun",
+    "B) Katta boylik topgani uchun",
+    "C) Yangi qo‘shin toplagani uchun",
+    "D) Samarqandni qayta olgani uchun"
+   ],
+   "answer": "A) O‘lim xavfidan qutulgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Boburning yolg‘iz qolganda ham taslim bo‘lmasligini qanday baholaysiz?",
+   "options": [
+    "A) Yuksak mardlik va matonat",
+    "B) O‘ylamay qilingan tavakkalchilik",
+    "C) Qo‘rqoqlik va ikkilanib turish",
+    "D) Umidsizlikka tushish alomati"
+   ],
+   "answer": "A) Yuksak mardlik va matonat"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Vahmu usrattin amone toptuq» bayti qanday kayfiyatni beradi?",
+   "options": [
+    "A) Qutilish va yengillik hissini",
+    "B) Qayg‘u va umidsizlikni",
+    "C) G‘azab va nafratni",
+    "D) Qo‘rquv va xavotirni"
+   ],
+   "answer": "A) Qutilish va yengillik hissini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ponipat jangida dushmanga qarshi qanday mudofaa usuli qo‘llanildi?",
+   "options": [
+    "A) Arobalarni zanjirlab bog‘lash usuli",
+    "B) Otliqlar bilan birdan hujum",
+    "C) Qal’a devori ortida bekinish",
+    "D) Daryoga suv toshirish usuli"
+   ],
+   "answer": "A) Arobalarni zanjirlab bog‘lash usuli"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hindustondagi qaysi meva «nag‘zak» deb ham ataladi?",
+   "options": [
+    "A) Anba mevasi",
+    "B) Kayla mevasi",
+    "C) Anor mevasi",
+    "D) Bodom mevasi"
+   ],
+   "answer": "A) Anba mevasi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Konvo jangida Boburning asosiy raqibi kim edi?",
+   "options": [
+    "A) Rono Sango",
+    "B) Sulton Ibrohim",
+    "C) Fathxon Sarvoniy",
+    "D) Bahodurshoh"
+   ],
+   "answer": "A) Rono Sango"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ustod Aliquli jangda qaysi qurolni ishlatib jasorat ko‘rsatdi?",
+   "options": [
+    "A) Katta jussali tosh otar to‘pni",
+    "B) O‘tkir qilich va qalqonni",
+    "C) Yengil va uzun nayzani",
+    "D) Og‘ir bolta va gurzini"
+   ],
+   "answer": "A) Katta jussali tosh otar to‘pni"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Boburning Hindistonda uchratgan g‘aroyibotlarini tartiblang.",
+   "options": [
+    "A) Hayvonlar, mevalar va suv maxluqlari",
+    "B) Faqat tog‘lar va daryolar",
+    "C) Faqat qadimiy bino va saroylar",
+    "D) Cho‘llar va issiq shamollar"
+   ],
+   "answer": "A) Hayvonlar, mevalar va suv maxluqlari"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Rono Sangoga qarshi urush «Fathnoma»da diniy g‘azot deyilgan?",
+   "options": [
+    "A) Dushman kofirlarga boshchilik qilgani uchun",
+    "B) Rono Sango sulh tuzgani uchun",
+    "C) Bobur Hindistondan ketmoqchi bo‘lgani uchun",
+    "D) Chegara buzilgani uchun"
+   ],
+   "answer": "A) Dushman kofirlarga boshchilik qilgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sulton Ibrohim nega o‘z qo‘shinini rozi qila olmadi?",
+   "options": [
+    "A) Tabiatan juda xasis bo‘lgani uchun",
+    "B) Qo‘shini oziq-ovqatsiz qolgani uchun",
+    "C) Xazinasi bo‘sh bo‘lgani uchun",
+    "D) Jang qilishni xohlamagani uchun"
+   ],
+   "answer": "A) Tabiatan juda xasis bo‘lgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Boburning zafardan so‘ng Xudoga shukronalik keltirishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Kamtarlik va e’tiqodi mustahkamligini",
+    "B) Maqtanchoqlik va mag‘rurlikni",
+    "C) Zaiflik va qo‘rqoqlikni",
+    "D) Rasmiyatchilik va majburiylikni"
+   ],
+   "answer": "A) Kamtarlik va e’tiqodi mustahkamligini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Fathnoma»da g‘oziylarning saflari nimaga o‘xshatilgan?",
+   "options": [
+    "A) Iskandar devoridek temir saflarga",
+    "B) Yengil uchuvchi qushlar galasiga",
+    "C) To‘lqinlanayotgan moviy daryoga",
+    "D) Bahordagi yam-yashil daraxtzorga"
+   ],
+   "answer": "A) Iskandar devoridek temir saflarga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Rono Sango qo‘shinining mag‘lubiyatini qanday tasvirlagan?",
+   "options": [
+    "A) Titilgan va to‘zigan palosdek",
+    "B) Shiddatli esgan shamoldek",
+    "C) Sekin oqayotgan daryodek",
+    "D) Yonganda chiqadigan tutundek"
+   ],
+   "answer": "A) Titilgan va to‘zigan palosdek"
+  }
+ ]
+}

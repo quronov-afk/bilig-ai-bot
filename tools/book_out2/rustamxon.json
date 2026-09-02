@@ -1,0 +1,477 @@
+{
+ "title": "Rustamxon",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15",
+  "topics": [
+   "jasorat",
+   "adolat",
+   "oila sadoqati",
+   "vatanparvarlik",
+   "yovuzlik ustidan g‘alaba"
+  ],
+  "theme": "Asarning bosh g‘oyasi — adolat va haqiqatning har qanday hiyla va xiyonat ustidan g‘alaba qozonishidir. Farzandning ota-onaga bo‘lgan sadoqati, kechirimli bo‘lish hamda ezgulik va mardlik yo‘lida matonat ko‘rsatish ulug‘lanadi.",
+  "summary": "Oqtosh viloyatining podshohi Sultonxon farzandsizlikdan siqilib, taxtni amaldorlarga topshirib, tarki dunyo qilmoqchi bo‘ladi. Amaldorlar maslahati bilan namozjuma kuni fotiha olgach, o‘rtancha xotini Huroyim homilador bo‘ladi. Sultonxon tushida Qurudim mamlakatiga 14 yillik safarga chiqishi kerakligini ko‘radi va taxtni Huroyimga topshirib jo‘naydi. Huroyim Rustamxon ismli o‘g‘il tuqadi. Sultonxonning ikki hasadgo‘y xotini (kundoshlar) Momagul maston kampirga to‘rt qop tillo berib, Huroyimga tuhmat xat tayyorlatadi. Kampir yog‘och otda uchib, Sultonxonning oldiga boradi va soxta xatni beradi. G‘azablangan Sultonxon Huroyimni Mansur doriga osish uchun 360 jallod yuboradi. Huroyimning sadoqatli kanizi Ximchaoyim qo‘rg‘onni saqlashga urinadi, lekin jallodlar hiyla bilan kirib Huroyimni olib ketishadi. Buni bilgan yosh Rustamxon yetib kelib, jallodlarni tor-mor qiladi va enasini qutqaradi. Rustam va enasi tog‘dagi dev makonini egallab yashay boshlaydi. Rustam tuz va sovun keltirish uchun Bujul shahriga boradi va u yerni vaqron qilayotgan ajdaharni o‘ldiradi, Xisravshohning qizi Oftoboyga uylanadi. Yovuz maston kampir ayyorlik bilan Rustamxonning ko‘zini ko‘r qilib, Huroyimni zindonga soladi. Oftoboy Rustamning ko‘zini davolaydi, ular Huroyimni qutqarib olishadi. Sultonxon esa qilgan xatosini tushunib, qalandar kiyimida pushaymon bo‘lib keladi. Rustam otasini kechiradi. Tuhmatchi ikki kundosh munosib jazosini oladi. Rustamxon Oqtoshga qaytib, el-yurt tinchligini saqlab, mardlik ko‘rsatib yashaydi.",
+  "characters": "Sultonxon — Oqtosh xoni, shoshqaloqlik bilan nohaq hukm chiqargan, so‘ng pushaymon bo‘lgan ota. Huroyim — Sultonxonning sadoqatli, sabrli xotini va Rustamxonning onasi. Rustamxon — jasur, mard, onasini va elini kulfatdan qutqargan pahlavon yigit. Oftoboy — Xisravshohning qizi, aqli va zakovati bilan Rustamga yordam bergan vafozor yor. Momagul maston — ikki kundoshning puliga uchib, tuhmat uyushtirgan yovuz kampir. Ximchaoyim — Huroyimga vafo qilgan jasur kaniz.",
+  "conclusion": "Asar o‘quvchini sabr-toqatli bo‘lishga, ota-ona va oilaga sadoqat ko‘rsatishga o‘rgatadi. Shoshma-shosharlik bilan chiqarilgan qaror va birovning gapiga ko‘r-ko‘rona ishonish og‘ir kulfatlarga sabab bo‘lishi uqtiriladi. Bola ushbu doston orqali mardlik, adolat, kechirimli bo‘lish va el-yurt tinchligi uchun kurashish kabi yuksak insoniy fazilatlarni anglab yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, hayajonli, shukuhli",
+  "for_whom": "Xalq dostonlarini, mardlik va bahodirlik haqidagi sarguzashtli qissalarni xush ko‘radigan, qahramonlik voqealariga qiziqadigan kitobxonlar uchun.",
+  "events": [
+   "Sultonxon befarzandlikdan siqilib, Oqtosh yurtining taxtini topshirmoqchi bo‘ladi.",
+   "Namozjuma kuni olingan fotihadan so‘ng Huroyim homilador bo‘ladi.",
+   "Sultonxon tush ko‘rib, Qurudim yurtiga 14 yillik safarga otlanadi va taxtni Huroyimga topshiradi.",
+   "Huroyim Rustamxon ismli o‘g‘il tug‘adi.",
+   "Sultonxonning ikki xotini Huroyimga hasad qilib, Momagul maston kampirga murojaat qiladi.",
+   "Maston kampir to‘rt qop tillo evaziga mullalarga Huroyim haqida soxta tuhmat xat yozdiradi.",
+   "Maston kampir yog‘och otda havoga ko‘tarilib, Sultonxon huzuriga boradi va tuhmat xatni beradi.",
+   "Sultonxon g‘azablanib, Huroyimni dorga osish uchun 360 jallodni Oqtoshga yuboradi.",
+   "Ximchaoyim erkak kiyimini kiyib, qo‘rg‘on darvozasini qulflaydi va jallodlarga qarshilik ko‘rsatadi.",
+   "Jallodlar hiyla ishlatib darvozani ochdiradi va Huroyimni ushlab olib ketadi.",
+   "Rustamxon voqeadan xabar topib, jallodlar ketidan otlanadi va ularni tor-mor qilib enasini qutqaradi.",
+   "Rustamxon enasi bilan Bahra tog‘idagi dev makonini egallab, u yerda yashay boshlaydi.",
+   "Rustamxon enasining iltimosi bilan tuz va sovun keltirish uchun Bujul shahriga yo‘l oladi.",
+   "Bujul shahrida ajdaharga qarshi kurashib, uni o‘ldiradi hamda Xisravshohning qizi Oftoboyni qutqaradi.",
+   "Xisravshoh to‘y qilib, Oftoboyni Rustamxonga beradi.",
+   "Momagul maston Bahra tog‘iga kelib, Rustamxonning ko‘ziga dam solingan turpoq sepib ko‘r qiladi.",
+   "Oftoboy Rustamxonni topib, uning ko‘zini davolaydi va zindondagi Huroyimni qutqarib olishadi.",
+   "Sultonxon qilgan ishiga pushaymon bo‘lib, qalandar kiyimida Huroyim va Rustamxonni izlab keladi.",
+   "Rustamxon otasini kechiradi va ular Oqtosh shahriga birga qaytib kelishadi.",
+   "Tuhmat qilgan ikki kundosh munosib jazosini oladi, Rustamxon esa el-yurtida botirlik qilib murod-maqsadiga yetadi."
+  ],
+  "quotes": [
+   "Xalq dostonlari – ajdodlarimizning ming yillardan buyon asrab, avaylab kelayotgan muqaddas merosidir.",
+   "Huroyimning bo‘yida bir homila-gumona bo‘lsa, o‘g‘il ham bo‘lsa – o‘g‘il, qiz ham bo‘lsa – o‘g‘il, shariat otaning taxtu baxtini o‘g‘ilga hukm qiladi.",
+   "O‘g‘il tug‘sang otin qo‘ygin Rustamxon, qiz tug‘sang gul yuzli, o‘zing bilasan.",
+   "Birovning ko‘nglini olmoq savobdir.",
+   "Poshsho edi, shunday bo‘pti xor-zor, ishqimizdan kuloh kiygan qalandar...",
+   "Qanday farzand otasiga tig‘ tortar? Egilgan bo‘yinni kesmaydi xanjar."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sultonxon taxtini kimga topshirib safarga jo‘nadi?",
+   "options": [
+    "A) O‘rtancha xotini Huroyimga",
+    "B) Katta xotiniga",
+    "C) Bosh vaziriga",
+    "D) Qozikalonga"
+   ],
+   "answer": "A) O‘rtancha xotini Huroyimga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Huroyimning sodiq kanizining ismi nima edi?",
+   "options": [
+    "A) Ximchaoyim",
+    "B) Oftoboy",
+    "C) Momagul",
+    "D) Guloyim"
+   ],
+   "answer": "A) Ximchaoyim"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kundoshlar Huroyimga qarshi kimdan yordam so‘rashdi?",
+   "options": [
+    "A) Momagul mastondan",
+    "B) Qozikalondan",
+    "C) Xisrav shohdan",
+    "D) Cho‘ntoq jalloddan"
+   ],
+   "answer": "A) Momagul mastondan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ikki kundosh nega Huroyimga yomonlik qilishni rejalashtirdi?",
+   "options": [
+    "A) Huroyim hokimiyatni qo‘lga olgani uchun",
+    "B) Huroyim shaharni tark etgani uchun",
+    "C) Sultonxon ularni haydagani uchun",
+    "D) Huroyim unvonini so‘ragani uchun"
+   ],
+   "answer": "A) Huroyim hokimiyatni qo‘lga olgani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maston kampir Sultonxon huzuriga nima bilan uchib bordi?",
+   "options": [
+    "A) Yog‘och ot bilan",
+    "B) Uchar gilam bilan",
+    "C) Bahaybat qushda",
+    "D) Tezkor tulporda"
+   ],
+   "answer": "A) Yog‘och ot bilan"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ximchaoyimning erkak kiyimida darvozani berkitishi qanday baholanadi?",
+   "options": [
+    "A) Sadoqat va jasorat namunasi",
+    "B) Qo‘rqoqlik va nodonlik belgisi",
+    "C) Qonunga qarshi chiquvchi amal",
+    "D) Behudagarchilik va xatolik"
+   ],
+   "answer": "A) Sadoqat va jasorat namunasi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Oqtosh elda Huroyimi qurisin» jumlasi qanday kayfiyatni beradi?",
+   "options": [
+    "A) Tuhmat va yovuzlik nafratini",
+    "B) Quvonch va shodlik tuyg‘usini",
+    "C) Afsus va qayg‘u hissini",
+    "D) Do‘stona maslahat ma'nosini"
+   ],
+   "answer": "A) Tuhmat va yovuzlik nafratini"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sultonxon tuhmat xatni o‘qigach qanday buyruq berdi?",
+   "options": [
+    "A) Huroyimni dorga osishni",
+    "B) Huroyimni zindonga tashlashni",
+    "C) Huroyimni yurtidan quvishni",
+    "D) Huroyim bilan yarashishni"
+   ],
+   "answer": "A) Huroyimni dorga osishni"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jallod Cho‘ntoq nima uchun darvozani aldov bilan ochtirdi?",
+   "options": [
+    "A) Kuch ishlatib kirolmagani uchun",
+    "B) Sultonxon shunday buyurgani uchun",
+    "C) Huroyim uni chaqirgani uchun",
+    "D) Darvoza kaliti yo‘qolgani uchun"
+   ],
+   "answer": "A) Kuch ishlatib kirolmagani uchun"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sultonxonning tekshirmay o‘lim hukmini berishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, shoshqaloqlik kulfat keltirdi",
+    "B) To‘g‘ri, xatda hammasi yozilgandi",
+    "C) To‘g‘ri, u xon edi",
+    "D) Noto‘g‘ri, jallodlar rad etishi kerakdi"
+   ],
+   "answer": "A) Noto‘g‘ri, shoshqaloqlik kulfat keltirdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rustamxon enasini kimlarning qo‘lidan qutqarib oldi?",
+   "options": [
+    "A) Jallodlar qo‘lidan",
+    "B) Devlar qo‘lidan",
+    "C) Qalandarlar qo‘lidan",
+    "D) Qaroqchilar qo‘lidan"
+   ],
+   "answer": "A) Jallodlar qo‘lidan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Rustamxon va enasi panoh topgan maskan kimniki edi?",
+   "options": [
+    "A) Devning makoni edi",
+    "B) Xisravshohning saroyi edi",
+    "C) Sultonxonning qarorgohi edi",
+    "D) Tog‘ayning uyi edi"
+   ],
+   "answer": "A) Devning makoni edi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rustamxon Bujul shahriga nima izlab bordi?",
+   "options": [
+    "A) Tuz bilan sovun",
+    "B) Otu ulov",
+    "C) Qimmatbaho javohirlar",
+    "D) Dori-darmonlar"
+   ],
+   "answer": "A) Tuz bilan sovun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bujul shahri aholisi nega qora va ko‘k kiyingandi?",
+   "options": [
+    "A) Ajdahar qo‘rquvi va motamdan",
+    "B) Xonning maxsus buyrug‘i bilan",
+    "C) Bayramga tayyorgarlik ko‘rib",
+    "D) Havo sovib ketgani uchun"
+   ],
+   "answer": "A) Ajdahar qo‘rquvi va motamdan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tog‘ayning kambag‘al jo‘ralarini amaldor qilgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, oddiy xalqni tushunishardi",
+    "B) Noto‘g‘ri, boylar xafa bo‘lishdi",
+    "C) Noto‘g‘ri, ular savodsiz edi",
+    "D) To‘g‘ri, podsho shunday buyurdi"
+   ],
+   "answer": "A) To‘g‘ri, oddiy xalqni tushunishardi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Rustamning ajdaharga qarshi mardona chiqishi qanday tasvirlangan?",
+   "options": [
+    "A) Qahramonlik va qo‘rqmaslik bilan",
+    "B) Hayajon va xavotir bilan",
+    "C) Hiyla va ayyorlik bilan",
+    "D) Yig‘i va nolalar bilan"
+   ],
+   "answer": "A) Qahramonlik va qo‘rqmaslik bilan"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rustamxon ajdaharni mag‘lub etgach kimga uylandi?",
+   "options": [
+    "A) Oftoboyga",
+    "B) Huroyimga",
+    "C) Ximchaga",
+    "D) Gulchehraga"
+   ],
+   "answer": "A) Oftoboyga"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Xisravshoh ajdaharni o‘ldirgan pahlavonga nima va'da qilgandi?",
+   "options": [
+    "A) Qizini va taxtini",
+    "B) Oltin va kumush",
+    "C) Ot va qurol-yaroq",
+    "D) Bitta qo‘rg‘onni"
+   ],
+   "answer": "A) Qizini va taxtini"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Rustamxon nega Xisravshoh bergan taxtdan voz kechdi?",
+   "options": [
+    "A) Enasiga yordam berish uchun",
+    "B) Shaharni yoqtirmagani uchun",
+    "C) Boshqa xotini bo‘lgani uchun",
+    "D) Qaynotasi bilan urishgani uchun"
+   ],
+   "answer": "A) Enasiga yordam berish uchun"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rustamxon va Oftoboy qaysi joyda uchrashishgan edi?",
+   "options": [
+    "A) Ajdahar tasmaga boylagan joyda",
+    "B) Bujul shahri darvozasida",
+    "C) Xisravshohning saroyida",
+    "D) Bahra tog‘idagi saroyda"
+   ],
+   "answer": "A) Ajdahar tasmaga boylagan joyda"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maston kampir Rustamxonni qanday qilib ko‘r qildi?",
+   "options": [
+    "A) Dam solingan turpoq sochib",
+    "B) Ko‘ziga zahar tomizib",
+    "C) Sehrli qilich bilan urib",
+    "D) Olov bilan ko‘zini kuydirib"
+   ],
+   "answer": "A) Dam solingan turpoq sochib"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oftoboy Rustamxon va Huroyimni qayerdan izlab topdi?",
+   "options": [
+    "A) Bahra tog‘idagi saroydan",
+    "B) Oqtosh shahrining qal'asidan",
+    "C) Bujul shahri zindonidan",
+    "D) Qurudim daryosi bo‘yidan"
+   ],
+   "answer": "A) Bahra tog‘idagi saroydan"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sultonxon nega poshsholikni tashlab qalandar bo‘lib ketdi?",
+   "options": [
+    "A) Qilgan xatosidan pushaymon bo‘lib",
+    "B) Dushmanlar taxtni tortib olgani uchun",
+    "C) Rustam unga urush ochgani uchun",
+    "D) Yurtda qahatchilik boshlangani uchun"
+   ],
+   "answer": "A) Qilgan xatosidan pushaymon bo‘lib"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Rustamxonning otasini kechirishi qanday insoniy fazilat?",
+   "options": [
+    "A) Ota-onaga hurmat va bag‘rikenglik",
+    "B) Qo‘rqoqlik va ojizlik ko‘rinishi",
+    "C) Amal va taxtga o‘chlik",
+    "D) Majburlikdan qilingan amal"
+   ],
+   "answer": "A) Ota-onaga hurmat va bag‘rikenglik"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Mening Ka'bam u yerda tayyor» iborasi nimani anglatadi?",
+   "options": [
+    "A) Oila va farzandning muqaddasligini",
+    "B) Safarning tugaganini",
+    "C) Shaharning chiroyliligini",
+    "D) Boylik va taxtni"
+   ],
+   "answer": "A) Oila va farzandning muqaddasligini"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sultonxon Oqrabotga qanday ulovda qaytib keldi?",
+   "options": [
+    "A) Katta bo‘z eshakda",
+    "B) Cho‘ponning otida",
+    "C) Yuyrik tulporda",
+    "D) Piyoda holda"
+   ],
+   "answer": "A) Katta bo‘z eshakda"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sultonxon tuhmatchi ikki xotinini nega jazoladi?",
+   "options": [
+    "A) Yurtni buzib tuhmat qilishgani uchun",
+    "B) Unga ovqat pishirishmagani uchun",
+    "C) Sultonxonga xat yozishmagani uchun",
+    "D) Yurtga poshsho bo‘lishgani uchun"
+   ],
+   "answer": "A) Yurtni buzib tuhmat qilishgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rustamxon Oqtosh shahriga qaytgach poshsholikka rozi bo‘ldimi?",
+   "options": [
+    "A) Yo‘q, botirlikni afzal bildi",
+    "B) Ha, darrov taxtga o‘tirdi",
+    "C) Ha, lekin vaqtincha bo‘ldi",
+    "D) Yo‘q, Bujulga ketib qoldi"
+   ],
+   "answer": "A) Yo‘q, botirlikni afzal bildi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dostonning «murod-maqsadiga yetdi» deb tugashi o‘quvchida qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Yengillik va adolat g‘alabasini",
+    "B) Chuqur qayg‘u va g‘amni",
+    "C) Ajablanish va taajjubni",
+    "D) Qo‘rquv va xavotirni"
+   ],
+   "answer": "A) Yengillik va adolat g‘alabasini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rustamxon oxirida qanday mashg‘ulot bilan yashay boshladi?",
+   "options": [
+    "A) Polvonlik va botirlik mashqida",
+    "B) Dehqonchilik va bog‘dorchilikda",
+    "C) Savdo-sotiq va jalloblikda",
+    "D) Boshqa ellarni zabt etishda"
+   ],
+   "answer": "A) Polvonlik va botirlik mashqida"
+  }
+ ]
+}

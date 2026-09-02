@@ -1,0 +1,477 @@
+{
+ "title": "Mashriqo",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15 yosh",
+  "topics": [
+   "jasorat",
+   "sarguzasht",
+   "xalq og‘zaki ijodi",
+   "sadoqat",
+   "vatanparvarlik"
+  ],
+  "theme": "Asar mardlik, ota va farzand o‘rtasidagi sadoqat, do‘stlik hamda og‘ir sinovlarda aql va jasorat bilan g‘alaba qozonish g‘oyasini ilgari suradi. Ezgulik va hamjihatlik har qanday yovuzlik hamda joduni yengishga qodir.",
+  "summary": "Shahrizar hukumdori Mashriqo Chambil elining va Go‘ro‘g‘lining zo‘rligini eshitib, uni sinashni ko‘ngliga tugadi. Go‘ro‘g‘li esa tushida Mashriqoni ko‘rib, uni izlab yolg‘iz safarga otlanadi. Soqibulbul va Og‘a Yunusning ogohlantirishlariga qaramay yo‘lga chiqqan Go‘ro‘g‘li Izg‘or cho‘lida tuya qiyofasidagi jodugar devlarning hiylasiga uchraydi. Devlar uni osmonga ko‘tarib, Shahrizarga olib ketishadi. G‘irot esa Chambilga egarsiz va yalang‘och holda qaytib keladi. Chambilda xavfni sezgan Og‘a Yunus va botirlar Avazxon hamda Soqibulbul boshchiligida Go‘ro‘g‘lini izlashga jo‘naydilar. Yo‘lda ular Go‘ro‘g‘lining buyumlarini topadilar va Kashmiriy jodugar kampirning makoniga duch kelishadi. Avazxon abjirlik bilan Kashmiriy kampirni ushlab oladi. Kampir Avazga otasining Shahrizarda ekanini aytib, yo‘l ko‘rsatishga majbur bo‘ladi. Avazxon, Asad va Shodmon devlar bilan ayovsiz savashib, xatarli to‘qishadigan tog‘lardan kampir va uning choli yordamida o‘tadilar. Shahrizarga yetib borib, Mashriqoning chorbog‘idagi devlar lashkarini va posbonlarini tor-mor keltirishadi. Go‘ro‘g‘li ham ozod bo‘lib, dushman bilan savashadi. Qilmishiga va Go‘ro‘g‘lining qudratiga tan bergan Mashriqo Kashmiriy kampir orqali sulh xatini yuboradi. Go‘ro‘g‘li va Avaz Mashriqoni o‘zlariga bo‘ysundirib, uni Chambilga olib qaytadilar. Chambilga kelgach, dabdabali to‘y berilib, Mashriqo Avazxonga nikohlanadi.",
+  "characters": "Go‘ro‘g‘li — Chambil elining dovyurak va adolatli hukmdori, savashlarda yengilmas botir. Avazxon — Go‘ro‘g‘lining sodiq, aql-idrokli va botir o‘g‘li. Mashriqo — Shahrizarning yetti qavat temir qal'a egasi, dev va parilar to‘rasi. Soqibulbul — Chiltan tarbiyasini ko‘rgan xizmatkor, dojo‘sh va donishmand yo‘lboshchi. Kashmiriy kampir — ayyor va jodugar momo, Avazga mag‘lub bo‘lib xizmat qiladi. Asad va Shodmon — Avazxonga sadoqatli mergan botirlar.",
+  "conclusion": "Kitob o‘quvchini jasoratli bo‘lishga, ota-onaga sadoqat va hurmat ko‘rsatishga o‘rgatadi. Qiyin vaziyatlarda aql-idrok, sabr va hamjihatlik bilan harakat qilish lozimligini uqtiradi. Xalq dostonining boy tili va milliy qadriyatlari kitobxonda vatanparvarlik hamda mardlik tuyg‘ularini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, hayajonli, shiddatli",
+  "for_whom": "Mifologik qahramonlar, dev va parilar, mardlik va sarguzashtlarga boy xalq dostonlarini sevib o‘qiydigan bolalar uchun.",
+  "events": [
+   "1. Mashriqo Shahrizarda podsholik qilib, Go‘ro‘g‘lining shon-shuhratini eshitadi.",
+   "2. Go‘ro‘g‘li tushida Mashriqoni ko‘rib, uni izlab Shahrizarga borishni niyat qiladi.",
+   "3. Soqibulbul Go‘ro‘g‘liga Shahrizar yo‘lining xatarli ekanini aytib maslahat beradi.",
+   "4. Go‘ro‘g‘li Soqining so‘ziga quloq solmay, G‘irotni egarlashni buyuradi.",
+   "5. Go‘ro‘g‘li Chambil hokimligini o‘g‘li Avazxonga topshirib yo‘lga otlanadi.",
+   "6. Yo‘lda Og‘a Yunus parizod Go‘ro‘g‘lini uchratib, uning yolg‘iz ketayotganidan gumonsiraydi.",
+   "7. Go‘ro‘g‘li Izg‘or cho‘lidan o‘tib, tog‘lar orasida tuya qiyofasidagi devlarga duch keladi.",
+   "8. Devlar Go‘ro‘g‘lini osmonga ko‘tarib, Shahrizarga olib ketishadi.",
+   "9. G‘irot Chambilga egarsiz, yalang‘och holda kishnab qaytib keladi.",
+   "10. Og‘a Yunus Chambil botirlarini va Avazxonni Go‘ro‘g‘lini qutqarishga jo‘natadi.",
+   "11. Avazxon va Soqibulbul tog‘da Go‘ro‘g‘lining egar-abzali va sallasini topib olishadi.",
+   "12. Avazxon Kashmiriy jodugar kampirning saroyiga kirib, uni abjirlik bilan ushlaydi.",
+   "13. Kashmiriy kampir Avazga otasining Shahrizarda ekanini aytib, unga yo‘lboshchilik qilishga rozi bo‘ladi.",
+   "14. Avazxon, Asad va Shodmon devlar bilan jang qilib, ularni mag‘lub etishadi.",
+   "15. Kashmiriy kampir va uning choli ayyorlik charxini burab, to‘qishadigan xatarli tog‘larni to‘xtatishadi.",
+   "16. Avazxon va botirlar Shahrizar darvozasidagi Mashriqoning chorbog‘iga yetib borishadi.",
+   "17. Bog‘dagi posbon devlar bilan savash boshlanib, Go‘ro‘g‘li ham otlanib jangga kiradi.",
+   "18. Mashriqo Go‘ro‘g‘lining g‘azabidan qo‘rqib, Kashmiriy kampir orqali unga sulh va tavba xatini yuboradi.",
+   "19. Beklar Mashriqoning ko‘shkida mehmon bo‘lib, sharob ichib suhbatlashishadi.",
+   "20. Go‘ro‘g‘li va Avazxon Mashriqoni G‘irotga mindirib Chambilga olib kelishadi va katta to‘y qilib Avazga nikohlaydilar."
+  ],
+  "quotes": [
+   "Yetti qavat temirdandir qal'asi, Mashriqodir ul qizlarning to‘rasi...",
+   "Borganda ko‘rasan adadsiz ayyor, Qancha dev-u pari unga xizmatkor.",
+   "Osha elga oshgan tortar xorlikni, Xon Go‘ro‘g‘li qilar bugun erlikni...",
+   "Izlab topmasak uyatdir, Soqibulbul qabatida, Birga qistar Majnun otni.",
+   "Dushman tob bermas otangning ishiga, Tanho o‘zi tegar yuz lak kishiga...",
+   "Nikoh qilib Mashriqoday dilbardi, Ko‘ring xon Go‘ro‘g‘li Avazga berdi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li Shahrizardagi kimni tushida ko‘rgan edi?",
+   "options": [
+    "A) Og‘a Yunusni",
+    "B) Mashriqoni",
+    "C) Misqol parini",
+    "D) Kashmir kampirni"
+   ],
+   "answer": "B) Mashriqoni"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘liga birinchi bo‘lib kim maslahat berdi?",
+   "options": [
+    "A) Avazxon",
+    "B) Hasan",
+    "C) Soqibulbul",
+    "D) Bektosh"
+   ],
+   "answer": "C) Soqibulbul"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li jo‘nayotganda Chambilni kimga topshirdi?",
+   "options": [
+    "A) Soqibulbulga",
+    "B) Avazxonga",
+    "C) Hasanga",
+    "D) Sardorga"
+   ],
+   "answer": "B) Avazxonga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘irot Chambilga qanday holatda qaytib keldi?",
+   "options": [
+    "A) Egar-abzalli",
+    "B) Yaralangan holda",
+    "C) Yalang‘och, egarsiz",
+    "D) Qon qushgan holda"
+   ],
+   "answer": "C) Yalang‘och, egarsiz"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Go‘ro‘g‘li jo‘nashda qaysi tartibda tayyorgarlik ko‘rdi?",
+   "options": [
+    "A) Ot egarladi, maslahatlashdi, jo‘nadi",
+    "B) Tush ko‘rdi, ot egarlandi, fotiha berildi",
+    "C) Fotiha oldi, tush ko‘rdi, otlandi",
+    "D) Qamchi urdi, egar yechdi, o‘ylandi"
+   ],
+   "answer": "B) Tush ko‘rdi, ot egarlandi, fotiha berildi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Soqibulbul nega Shahrizarga borishni tavsiya etmadi?",
+   "options": [
+    "A) Yo‘l va qal'a qiyin bo‘lgani uchun",
+    "B) G‘irot kasal bo‘lgani uchun",
+    "C) Chambilda to‘y bo‘layotgani uchun",
+    "D) Avaz ruxsat bermagani uchun"
+   ],
+   "answer": "A) Yo‘l va qal'a qiyin bo‘lgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Og‘a Yunus G‘irotni yalang‘och ko‘rib nega tashvishlandi?",
+   "options": [
+    "A) Ot o‘g‘irlangan deb o‘yladi",
+    "B) Xonga kulfat yetganini sezdi",
+    "C) Dushman bostirib keldi dedi",
+    "D) Avaz qochib ketdi deb o‘yladi"
+   ],
+   "answer": "B) Xonga kulfat yetganini sezdi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Go‘ro‘g‘lining Soqi maslahatiga quloq solmay ketishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — kuchi yetardi",
+    "B) Noto‘g‘ri — kulfatga yo‘liqqani sababli",
+    "C) To‘g‘ri — tushi rost edi",
+    "D) Noto‘g‘ri — otini yo‘qotgani uchun"
+   ],
+   "answer": "B) Noto‘g‘ri — kulfatga yo‘liqqani sababli"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "G‘irot «taraqqos baylab turibdi» tasviri nimani anglatadi?",
+   "options": [
+    "A) Otning juda chaqqonligini",
+    "B) Otning kasalligini",
+    "C) Otning qariganligini",
+    "D) Uning sekin yurishini"
+   ],
+   "answer": "A) Otning juda chaqqonligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Go‘ro‘g‘li izidan to‘zon tutganini muallif qanday ta'riflagan?",
+   "options": [
+    "A) Cho‘lda shamol bo‘ldi",
+    "B) G‘irotning juda tez chopganini",
+    "C) Yurtda yong‘in chiqqanini",
+    "D) Yo‘lda dushman uchraganini"
+   ],
+   "answer": "B) G‘irotning juda tez chopganini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avaz bilan Soqibulbul tog‘da nimani topishdi?",
+   "options": [
+    "A) Devlarning oltinini",
+    "B) Go‘ro‘g‘lining egar-abzali va sallasini",
+    "C) Mashriqoning xatlarini",
+    "D) G‘irotning taqasini"
+   ],
+   "answer": "B) Go‘ro‘g‘lining egar-abzali va sallasini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kashmiriy jodugar kampir qizlarga nimani o‘rgatgandi?",
+   "options": [
+    "A) Kashta tikishni",
+    "B) Jodugarlik va odamni mol qilishni",
+    "C) Ovqat pishirishni",
+    "D) Ot chopishni"
+   ],
+   "answer": "B) Jodugarlik va odamni mol qilishni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kashmiriy kampir kim haqida «u mendan hiylagar» dedi?",
+   "options": [
+    "A) Soqibulbul",
+    "B) Avazxon",
+    "C) Go‘ro‘g‘li",
+    "D) Shodmon"
+   ],
+   "answer": "B) Avazxon"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avazxon bilan birga devlarga qarshi kimlar savashdi?",
+   "options": [
+    "A) Soqibulbul va Hasan",
+    "B) Asad va Shodmon",
+    "C) Yunus va Misqol",
+    "D) Bektosh va Sardor"
+   ],
+   "answer": "B) Asad va Shodmon"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Avaz Kashmiriy kampirni qanday tartibda bo‘ysundirdi?",
+   "options": [
+    "A) Eshikda ushladi, qilich do‘q qildi",
+    "B) Suvga cho‘ktirdi, quvib yetdi",
+    "C) Tushida ko‘rdi, aldab ushladi",
+    "D) Ot bilan urdi, bog‘lab qo‘ydi"
+   ],
+   "answer": "A) Eshikda ushladi, qilich do‘q qildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Yo‘ldagi to‘siqlar ketma-ketligi qanday berilgan?",
+   "options": [
+    "A) Cho‘l, jodugar kampir, to‘qishadigan tog‘lar",
+    "B) Daryo, devlar, oltin saroy",
+    "C) Qal'a, bog‘, Mashriqo saroyi",
+    "D) Muzlik, yong‘in, qaroqchilar"
+   ],
+   "answer": "A) Cho‘l, jodugar kampir, to‘qishadigan tog‘lar"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kashmiriy kampir nega Avazga yordam berishga majbur bo‘ldi?",
+   "options": [
+    "A) Avazdan va uning qilichidan qo‘rqib",
+    "B) Oltin bergani uchun",
+    "C) Go‘ro‘g‘lini yaxshi ko‘rgani uchun",
+    "D) O‘z xohishi bilan"
+   ],
+   "answer": "A) Avazdan va uning qilichidan qo‘rqib"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "To‘qishadigan tog‘lar nega to‘xtab qoldi?",
+   "options": [
+    "A) Avaz sehr o‘qigani uchun",
+    "B) Chol ayyorlik charxini burab to‘xtatgani uchun",
+    "C) Tog‘lar o‘z-o‘zidan yiqilgani uchun",
+    "D) Shodmon kamondan otgani uchun"
+   ],
+   "answer": "B) Chol ayyorlik charxini burab to‘xtatgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Avazxonning jodugar kampirni maslahatchi qilgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — yo‘lni bilgani uchun",
+    "B) Noto‘g‘ri — uni o‘ldirish kerak edi",
+    "C) Noto‘g‘ri — u qochib ketdi",
+    "D) To‘g‘ri — u oltin berdi"
+   ],
+   "answer": "A) To‘g‘ri — yo‘lni bilgani uchun"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dostonda botirlarning «sherday» tasvirlanishi nimani anglatadi?",
+   "options": [
+    "A) Ularning juda haybatli va mardligini",
+    "B) Ularning hayvonga aylanganini",
+    "C) Ularning qo‘rqib bo‘kirganini",
+    "D) Sher tutib olganini"
+   ],
+   "answer": "A) Ularning juda haybatli va mardligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shahrizar darvozasidagi bog‘da kimlarning qo‘shini turgan edi?",
+   "options": [
+    "A) Mashriqoning posbon devlari",
+    "B) Chambil botirlari",
+    "C) Kashmir kampirning qizlari",
+    "D) Bektosh lashkari"
+   ],
+   "answer": "A) Mashriqoning posbon devlari"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li dushman lashkarini ko‘rib nima qildi?",
+   "options": [
+    "A) Ortga qochdi",
+    "B) G‘irotni minib savashga kirdi",
+    "C) Mashriqoga xat yazdi",
+    "D) Devlardan afv so‘radi"
+   ],
+   "answer": "B) G‘irotni minib savashga kirdi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mashriqo pushaymon bo‘lib xatni kimdan berib yubordi?",
+   "options": [
+    "A) Soqibulbuldan",
+    "B) Kampir momodan",
+    "C) Avazxondan",
+    "D) Shodmondan"
+   ],
+   "answer": "B) Kampir momodan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mashriqo Chambilga borganida u kimga nikohlandi?",
+   "options": [
+    "A) Go‘ro‘g‘liga",
+    "B) Avazxonga",
+    "C) Shodmonga",
+    "D) Hasanga"
+   ],
+   "answer": "B) Avazxonga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shahrizardagi voqealar tartibi qaysi javobda to‘g‘ri berilgan?",
+   "options": [
+    "A) Bog‘ga kirish, savash, xat kelishi, ziyofat",
+    "B) Ziyofat, savash, Chambilga qochish",
+    "C) Xat yozish, bog‘ni ko‘rish, to‘y",
+    "D) Savash, Qal'adan qochish, to‘y"
+   ],
+   "answer": "A) Bog‘ga kirish, savash, xat kelishi, ziyofat"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mashriqo nega Go‘ro‘g‘liga qarshi urushishdan voz kechdi?",
+   "options": [
+    "A) Go‘ro‘g‘lining zo‘rligini va qirg‘inini ko‘rib",
+    "B) Chambilga bormoqchi bo‘lgani uchun",
+    "C) Kampir uni aldagani uchun",
+    "D) Qo‘shini qochib ketgani uchun"
+   ],
+   "answer": "A) Go‘ro‘g‘lining zo‘rligini va qirg‘inini ko‘rib"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Go‘ro‘g‘li Mashriqoni o‘zi olmay nega Avazga berdi?",
+   "options": [
+    "A) O‘ziga qilgan izzatsizligidan xafa bo‘lib",
+    "B) Mashriqo qarib qolgani uchun",
+    "C) Avaz uni yaxshi ko‘rgani uchun",
+    "D) Yunus pari ruxsat bermagani uchun"
+   ],
+   "answer": "A) O‘ziga qilgan izzatsizligidan xafa bo‘lib"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mashriqoning xatosini tushunib sulh so‘rashi qanday baholanadi?",
+   "options": [
+    "A) Aql bilan qilingan to‘g‘ri qaror",
+    "B) Qo‘rqoqlik va ojizlik",
+    "C) Chambilni bosib olish hiylasi",
+    "D) Noto‘g‘ri, oxirigacha urushish kerak edi"
+   ],
+   "answer": "A) Aql bilan qilingan to‘g‘ri qaror"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Go‘ro‘g‘lining Chambilda to‘y berib elni to‘ydirgani nimani ko‘rsatadi?",
+   "options": [
+    "A) Saxovat va elparvarlikni",
+    "B) Keraksiz isrofgarchilikni",
+    "C) Dushmanini qo‘rqitishni",
+    "D) Maqtanchoqlikni"
+   ],
+   "answer": "A) Saxovat va elparvarlikni"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Shahrizar ko‘chasi qonga to‘ladi» iborasi nimani tasvirlaydi?",
+   "options": [
+    "A) Urushning shiddati va qirg‘inini",
+    "B) Qizil bo‘yoq sepilganini",
+    "C) Yomg‘ir yog‘ganini",
+    "D) Shaharning go‘zalligini"
+   ],
+   "answer": "A) Urushning shiddati va qirg‘inini"
+  }
+ ]
+}

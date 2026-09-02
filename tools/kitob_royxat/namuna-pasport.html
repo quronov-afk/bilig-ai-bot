@@ -1,0 +1,194 @@
+<title>Yangi pasport namunasi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#F2F4F1; --surface:#FFFFFF; --raised:#FAFBF9;
+  --ink:#151F1C; --ink-soft:#4E5C57; --ink-faint:#77837E;
+  --line:#DBE0DB; --line-soft:#E9EDE9;
+  --accent:#23527C; --accent-soft:#E4ECF3;
+  --bor:#2C6A4E; --bor-bg:#E1EEE7;
+  --mut:#8A5712; --mut-bg:#F5EAD6;
+  --yoq:#982C2C; --yoq-bg:#F6E3E3;
+  --noa:#57565F; --noa-bg:#E9E9ED;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#111715; --surface:#19211F; --raised:#1E2725;
+    --ink:#E9EEEB; --ink-soft:#A6B2AD; --ink-faint:#7C8781;
+    --line:#2B3532; --line-soft:#232C2A;
+    --accent:#89B6DE; --accent-soft:#1C2A36;
+    --bor:#7ECBA3; --bor-bg:#1B3128;
+    --mut:#E0B461; --mut-bg:#332913;
+    --yoq:#E58B8B; --yoq-bg:#341D1D;
+    --noa:#B0B0BA; --noa-bg:#26262B;
+  }
+}
+:root[data-theme="dark"]{
+    --paper:#111715; --surface:#19211F; --raised:#1E2725;
+    --ink:#E9EEEB; --ink-soft:#A6B2AD; --ink-faint:#7C8781;
+    --line:#2B3532; --line-soft:#232C2A;
+    --accent:#89B6DE; --accent-soft:#1C2A36;
+    --bor:#7ECBA3; --bor-bg:#1B3128;
+    --mut:#E0B461; --mut-bg:#332913;
+    --yoq:#E58B8B; --yoq-bg:#341D1D;
+    --noa:#B0B0BA; --noa-bg:#26262B;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1040px; margin:0 auto; padding:48px 24px 96px; display:flex; flex-direction:column; gap:56px}
+header{display:flex; flex-direction:column; gap:18px; border-bottom:2px solid var(--ink); padding-bottom:32px}
+.eyebrow{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:600}
+h1{
+  font-family:Literata,Georgia,serif; font-weight:700; font-size:clamp(30px,5vw,46px);
+  line-height:1.15; margin:0; text-wrap:balance; letter-spacing:-.01em;
+}
+.lead{font-family:Literata,Georgia,serif; font-size:18px; color:var(--ink-soft); max-width:62ch; margin:0}
+.meta{font-size:13px; color:var(--ink-faint); display:flex; flex-wrap:wrap; gap:6px 18px}
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:2px; background:var(--line); border:1px solid var(--line)}
+.stat{background:var(--surface); padding:22px 20px; display:flex; flex-direction:column; gap:6px}
+.stat .n{font-family:Literata,Georgia,serif; font-size:38px; font-weight:700; line-height:1; font-variant-numeric:tabular-nums}
+.stat .k{font-size:13px; color:var(--ink-soft)}
+.stat.s-bor .n{color:var(--bor)} .stat.s-mut .n{color:var(--mut)} .stat.s-yoq .n{color:var(--yoq)}
+section{display:flex; flex-direction:column; gap:20px}
+h2{font-family:Literata,Georgia,serif; font-size:26px; font-weight:600; margin:0; letter-spacing:-.01em; text-wrap:balance}
+h2 .sub{display:block; font-family:"IBM Plex Sans",sans-serif; font-size:13px; font-weight:500; color:var(--ink-faint); letter-spacing:.02em; margin-top:6px}
+h3{font-family:Literata,Georgia,serif; font-size:18px; margin:0 0 6px; font-weight:600}
+p{margin:0; max-width:70ch}
+.note{background:var(--raised); border:1px solid var(--line); border-left:3px solid var(--accent); padding:18px 20px; display:flex; flex-direction:column; gap:8px}
+.note p{color:var(--ink-soft); font-size:15px}
+.tbox{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14.5px}
+thead th{
+  text-align:left; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-faint); font-weight:600; padding:12px 14px; border-bottom:1px solid var(--line);
+  background:var(--raised); position:sticky; top:0;
+}
+td{padding:11px 14px; border-bottom:1px solid var(--line-soft); vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:var(--raised)}
+.num{color:var(--ink-faint); font-variant-numeric:tabular-nums; width:38px}
+.asar{font-family:Literata,Georgia,serif; font-weight:600; min-width:230px}
+.mual{color:var(--ink-soft); white-space:nowrap}
+.yosh{font-variant-numeric:tabular-nums; white-space:nowrap; font-weight:600}
+.izoh{color:var(--ink-soft); font-size:13.5px; min-width:200px}
+.chip{display:inline-block; white-space:nowrap; font-size:12px; font-weight:600; padding:3px 9px; border-radius:2px}
+.chip.bor{color:var(--bor); background:var(--bor-bg)}
+.chip.mut{color:var(--mut); background:var(--mut-bg)}
+.chip.yoq{color:var(--yoq); background:var(--yoq-bg)}
+.chip.noaniq{color:var(--noa); background:var(--noa-bg)}
+.legend{display:flex; flex-wrap:wrap; gap:10px 22px; font-size:13.5px; color:var(--ink-soft)}
+.legend span b{font-weight:600}
+.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px}
+.card{background:var(--surface); border:1px solid var(--line); padding:20px; display:flex; flex-direction:column; gap:8px}
+.card p{font-size:14.5px; color:var(--ink-soft)}
+.steps{display:flex; flex-direction:column; gap:0; border:1px solid var(--line); background:var(--surface)}
+.step{display:grid; grid-template-columns:56px 1fr; gap:18px; padding:20px; border-bottom:1px solid var(--line-soft)}
+.step:last-child{border-bottom:none}
+.step .no{font-family:Literata,Georgia,serif; font-size:24px; font-weight:700; color:var(--accent); line-height:1.1}
+.step p{font-size:14.5px; color:var(--ink-soft)}
+footer{border-top:1px solid var(--line); padding-top:24px; font-size:13px; color:var(--ink-faint)}
+@media (max-width:600px){ .wrap{padding:32px 16px 64px; gap:44px} .step{grid-template-columns:40px 1fr; gap:12px} }
+
+.kirish{font-family:Literata,Georgia,serif; font-size:16.5px; color:var(--ink-soft); max-width:68ch}
+.book{border:1px solid var(--line); background:var(--surface)}
+.bhead{padding:22px 24px; border-bottom:1px solid var(--line); display:flex; flex-wrap:wrap; gap:6px 16px; align-items:baseline}
+.bhead h3{font-family:Literata,Georgia,serif; font-size:22px; margin:0; font-weight:700}
+.bhead .au{color:var(--ink-soft); font-size:14px}
+.bhead .band{margin-left:auto; font-size:12px; font-weight:600; color:var(--accent); background:var(--accent-soft); padding:3px 10px; border-radius:2px; white-space:nowrap}
+.fields{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1px; background:var(--line-soft)}
+.f{background:var(--surface); padding:18px 24px}
+.f.wide{grid-column:1/-1}
+.f h4{margin:0 0 8px; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); font-weight:600}
+.f p{font-size:14.5px; color:var(--ink); line-height:1.65}
+.f .len{float:right; font-size:11px; color:var(--ink-faint); font-variant-numeric:tabular-nums; letter-spacing:0; text-transform:none}
+ol.ev{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:6px}
+ol.ev li{font-size:14px; color:var(--ink-soft)}
+.quote{border-left:2px solid var(--mut); padding:2px 0 2px 14px; margin:0 0 12px; font-family:Literata,Georgia,serif; font-size:14.5px; color:var(--ink-soft)}
+.q{background:var(--raised); border:1px solid var(--line); padding:16px 18px; display:flex; flex-direction:column; gap:8px}
+.q .qq{font-weight:600; font-size:15px}
+.q ul{margin:0; padding-left:18px; display:flex; flex-direction:column; gap:4px}
+.q li{font-size:14px; color:var(--ink-soft)}
+.q li.ok{color:var(--bor); font-weight:600}
+.qs{display:flex; flex-direction:column; gap:12px; padding:18px 24px}
+.yangi{color:var(--bor); font-weight:600; font-size:11px; letter-spacing:.06em; margin-left:6px}
+</style>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Bilig AI · kitob bazasi · namuna</div>
+  <h1>Yangi pasport qanday chiqdi</h1>
+  <p class="lead">Kengaytirilgan pasport va diniy kitob qoidasi ikkita haqiqiy kitobda sinab ko‘rildi. Quyida — AI chiqargan natijaning o‘zi, hech narsa tahrirlanmagan.</p>
+  <div class="meta"><span>2026-yil 1-sentabr</span><span>Bittasi 44 soniya, ikkinchisi 37 soniya vaqt oldi · jami 8 sentga tushdi</span></div>
+</header>
+
+<section>
+  <h2>1. Oddiy kitob — test bilan<span class="sub">Xalq dostoni, 11-13 yosh</span></h2>
+  <p class="kirish">Eski pasportda mazmun 1 000 belgi bilan cheklangan edi va voqealar ro‘yxati umuman yo‘q edi. Endi mazmun ikki barobar to‘liq, ustiga 20 bandlik voqealar tafsiloti va asl matndan olingan parchalar qo‘shildi.</p>
+  <div class="book">
+    <div class="bhead"><h3>Malika Husnobod</h3><span class="au">Xalq og‘zaki ijodi</span><span class="band">9-10 yosh</span></div>
+    <div class="fields">
+ <div class="f"><h4>Yosh toifasi</h4><p>9-10</p></div>
+ <div class="f"><h4>Mavzular</h4><p>jasorat, adolat, mehnatsevarlik, kechirimlilik, oqibat</p></div>
+ <div class="f"><h4>Kayfiyati · murakkabligi</h4><p>sarguzashtli, ta&#x27;sirchan, ibratli · o‘rta</p></div>
+ <div class="f wide"><h4>G‘oyasi<span class="len">183 belgi</span></h4><p>Asar adolat, mehnatsevarlik, sabr va kechirimlilik g‘oyasini ilgari suradi. Inson halol mehnat va oqillik orqali har qanday qiyinchilikni yengib, murod-maqsadiga yetishi ko‘rsatiladi.</p></div>
+ <div class="f wide"><h4>Qisqacha mazmuni<span class="len">1511 belgi</span></h4><p>Zolim podshoh bir kuni taxti tepasidagi qarg‘aning qag‘illashiga tushunmay, to‘rt yuz ulamoni qatl etmoqchi bo‘ladi. Podshohning qizi Malikai Husnobod jumboqni yechib, ulamolarni o‘limdan saqlab qoladi. Biroid, qizning «erni bor qiladigan ham, yo‘q qiladigan ham xotin» degan gapi otasiga yoqmaydi va u qizini zindonga tashlaydi. Mehribon vazir qizni zindondan qutqarib, sandiqqa solib daryoga oqizib yuboradi.
+
+Sandiq uch oy oqib, boshqa bir mamlakatga boradi. Sandiqni topgan o‘tinchi chol uni shaharga olib boradi. Yo‘lda podshoh cholni o‘ldirib, sandiqni saroyga keltirib ochadi. Malikaning husniga oshiq bo‘lib, uylanmoqchi bo‘ladi. Qiz bir kunlik muhlat olib, bog‘dagi daryoga o‘zini tashlaydi va uni katta jayxun baliq yutib ketadi.
+
+Baliqchi to‘riga tushgan ushbu baliqni bir podachining o‘g‘li uyiga olib keladi. Baliqning qornidan qiz eshon-omonsiz chiqadi. Malika podachining mehnatkash o‘g‘liga turmushga chiqadi. U o‘zining baldoqlarini sotdirib, katta boylik to‘playdi va o‘n besh kunda yangi va muazzam Husnobod shahrini bino ettiradi. Shaharga kelib zo‘ravonlik qilmoqchi bo‘lgan ikki zolim podshohni ham zindonga tashlaydi.
+
+So‘ngra Malika yetti lak lashkar yig‘ib, o‘zining ota yurtiga yo‘l oladi. Zolim otasi tush ko‘rib, dushman xavfidan qo‘rqib qoladi. Sadoqatli vazir elchi bo‘lib Husnobod huzuriga keladi va qizini tanib oladi. Malika ota yurtiga kirib boradi, somonxonaga yashiringan zolim otasini kechiradi. Podachi yigitni podshoh qilib taxtga o‘tqazadi va mamlakatda adolat o‘rnatadi.</p></div>
+ <div class="f wide"><h4>Qahramonlar</h4><p>Malikai Husnobod — aqlli, jasur va adolatli malika, qiyinchiliklardan qrqmaydi va mehnatkash yigitga turmushga chiqadi.
+Zolim podshoh — qizning otasi, shafqatsiz va mag‘rur hukmdor, oxirida qilgan ishidan pushaymon bo‘ladi.
+Mehribon vazir — adolatparvar, qizni o‘limdan saqlab sandiqda daryoga oqizgan va keyinchalik elchi bo‘lgan oqil inson.
+Podachi yigit — kamtarin, mehnatsevar va halol yigit, Malikaning turmush o‘rtog‘i va yangi podshoh.
+Podachi chol — podachi yigitning otasi, mehmondo‘st va halol mehnat bilan kun kechiruvchi keksa kishi.</p></div>
+ <div class="f wide"><h4>Xulosasi</h4><p>Ertak bolaga har qanday vaziyatda ham aql, sabr va halollik bilan to‘g‘ri yo‘l topish mumkinligini o‘rgatadi. Manmanlik va zolimlik insonni tanazzulga yetaklashini, kamtarlik va mehnatsevarlik esa yuksaltirishini ko‘rsatadi. Shuningdek, kattalarga nisbatan kechirimli bo‘lish hamda adolatni ustun qo‘yish kabi fazilatlarni shakllantiradi.</p></div>
+ <div class="f wide"><h4>Kimga mos</h4><p>Ertaklar, sarguzashtlar va adolat o‘rnatish haqidagi voqealarga qiziqadigan, to‘g‘ri va halol yashashni xohlaydigan bolalar uchun.</p></div>
+ <div class="f wide"><h4>Voqealar tafsiloti<span class="yangi">YANGI</span><span class="len">20 band</span></h4><ol class="ev"><li>Zolim podshoh qarg‘aning qag‘illashini tushunmagani uchun to‘rt yuz ulamoni qatl etmoqchi bo‘ldi.</li><li>Malikai Husnobod jumboqni yechib, to‘rt yuz ulamoning jonini saqlab qoldi.</li><li>Podshoh g‘azablanib, o‘z qizini yetti yilga zindonga tashladi.</li><li>Mehribon vazir qizni zindondan yashirincha qutqarib, sandiqda daryoga oqizdi.</li><li>Sandiqni daryodan tutib olgan o‘tinchi cholni zolim podshoh o‘ldirdi va sandiqni saroyga olib ketdi.</li><li>Malika podshohdan bir kunga javob olib, daryoga sakradi va uni jayxun baliq yutib ketadi.</li><li>Podachi bola baliqchilar to‘riga tushgan katta baliqni uyiga olib bordi.</li><li>Podachi chol baliqning qornini yorganida, ichidan tirik Malika chiqdi.</li><li>Malika podachining halol va mehnatkash o‘g‘liga o‘z xohishi bilan turmushga chiqdi.</li><li>Malika o‘zining baldoqlarini sotdirib, topilgan oltinlar bilan uy-ro‘zg‘orni butladi.</li><li>Malika ko‘plab ustalar to‘plab, o‘n besh kunda Husnobod shahrini bino qildirdi.</li><li>Jurjon podshohi kelib malikaga zo‘ravonlik qilmoqchi bo‘lgach, zindonga tashlandi.</li><li>Bir kunga muhlat bergan podshoh ham qalandar kiyimi bilan kelib, zindonga tushdi.</li><li>Malika yetti lak lashkar to‘plab, ota yurtiga tomon yo‘lga chiqdi.</li><li>Malikaning otasi vahimali tush ko‘rib, tush ta&#x27;birini aytgan vazirini zindonga soldirdi.</li><li>Husnobod elchi bo‘lib kelgan mehribon vazir bilan ko‘rishib, uni tanidi.</li><li>Malika ota yurtiga kirib, somonxonada yashiringan otasini topdi.</li><li>Malika otasining gunohidan o‘tib, uni o‘limdan saqlab qoldi.</li><li>Podachi yigit taxtga o‘tkazilib, podshoh deb e&#x27;lon qilindi.</li><li>Malika eri bilan barcha zindondagilarni ozod qilib, adolatli umr kechirdi.</li></ol></div>
+ <div class="f wide"><h4>Muhim parchalar<span class="yangi">YANGI</span><span class="len">7 ta</span></h4><p class="quote">Erni bor qiladigan ham xotin, yo‘q qiladigan ham xotin.</p><p class="quote">Podshoh qilichidan o‘lganingdan ko‘ra, sahroda cho‘pon bo‘lib yurganing yaxshi.</p><p class="quote">Men bir kambag‘alga tegib, uni podshoh qilib, zolim otamning tepasiga lashkar tortib borib, uning taxtini ko‘kka sovuraman.</p><p class="quote">Mening joyim yo‘q.</p><p class="quote">Bu yurtning nomi Husnobod. Har kimga oshlik-nonlik kerak bo‘lsa, kelib xizmat qilsin.</p><p class="quote">Kishi o‘z farzandidan ham qo‘rqadimi?</p><p class="quote">Har nechuk bo‘lsa ham otam qilgan gunohiga tavba qildi, o‘lmasin.</p></div>
+ 
+</div>
+    <div class="qs"><h4 style="margin:0;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)">Testdan uchta savol (20 tadan)</h4><div class="q"><div class="qq">Podshoh nechta ulamoning boshini kesmoqchi bo‘ldi?</div><ul><li class="">A) Yetti yuz kishining</li><li class="ok">B) To‘rt yuz kishining</li><li class="">C) Qirq kishining</li><li class="">D) Yuz kishining</li></ul></div><div class="q"><div class="qq">Malika Husnobod jumboqni kim uchun yechib berdi?</div><ul><li class="ok">A) Ulamolarni qutqarish uchun</li><li class="">B) O‘ziga oltin olish uchun</li><li class="">C) Vazirlarni sinash uchun</li><li class="">D) Shaharni tark etish uchun</li></ul></div><div class="q"><div class="qq">Vazir Malikani daryoga oqizishdan oldin nima tayyorladi?</div><ul><li class="ok">A) Mustahkam sandiq va ovqat</li><li class="">B) Katta kema va otlar</li><li class="">C) Oltin kalit va qilich</li><li class="">D) Qirqta navkarlik kiyim</li></ul></div></div>
+  </div>
+</section>
+
+<section>
+  <h2>2. Diniy kitob — testsiz<span class="sub">Siz belgilagan qoida amalda</span></h2>
+  <p class="kirish">Bu kitobga test tuzilmadi. AI matnni sharhlamadi va hukm chiqarmadi — u kitobdan parchani aynan ko‘chirib oldi va faqat shu parchaga tayangan ochiq savol berdi. Savolning to‘g‘ri javobi yo‘q: bola o‘z fikrini aytadi.</p>
+  <div class="book">
+    <div class="bhead"><h3>101 ulug‘ sahobiy</h3><span class="au">Moturidiy markazi</span><span class="band">14-16 yosh · testsiz</span></div>
+    <div class="fields">
+ <div class="f"><h4>Yosh toifasi</h4><p>14-16</p></div>
+ <div class="f"><h4>Mavzular</h4><p>tarix, odob, ilm, sabr, fidoyilik, shaxsiyat</p></div>
+ <div class="f"><h4>Kayfiyati · murakkabligi</h4><p>vazmin, ma&#x27;rifiy, nasihatomuz · o‘rta</p></div>
+ <div class="f wide"><h4>G‘oyasi<span class="len">205 belgi</span></h4><p>Ushbu kitob Islom tarixida o‘chmas iz qoldirgan 101 nafar mashhur sahobiy hamda sahobiya ayollarning hayoti, e&#x27;tiqodi, axloqi, ilm va jamiyat rivojiga qo‘shgan ulkan hissasi haqida qomusiy ma&#x27;lumot beradi.</p></div>
+ <div class="f wide"><h4>Qisqacha mazmuni<span class="len">1727 belgi</span></h4><p>Kitob muqaddimasida sahobiylarning Islom tarixidagi va ma&#x27;naviy tarbiyadagi o‘rni haqida atroflicha so‘z yuritiladi. Unda sahobiylarning Qur&#x27;on va Sunnatni keyingi avlodlarga yetkazishdagi fidoyiligi, ularning hayoti komil insonni tarbiyalashda namuna ekani ta&#x27;kidlanadi. Asarda «sahobiy» tushunchasining lug‘aviy va istilohiy ma&#x27;nolari tahlil qilinadi. Muhaddislar, faqihlar hamda usulchi olimlarning ushbu atamaga bergan ta&#x27;riflari keltirilib, ularning eng ishonchli jihatlari ko‘rsatiladi. Shuningdek, sahobiylarni aniqlash mezonlari hamda ularning martabalari xususida ma&#x27;lumot beriladi. Kitobning asosiy qismida 101 nafar mashhur sahobiy va sahobiya ayollarning tarjimai holi xronologik va alifbo tartibida taqdim etiladi. Birinchi navbatda, to‘rt roshid xalifa — Abu Bakr Siddiq, Umar ibn Xattob, Usmon ibn Affon va Ali ibn Abu Tolib roziyallohu anhularning hayoti, davlat boshqaruvi, adolatli islohotlari va Islom jamiyatiga qo‘shgan hissasi yoritiladi. Qolgan 76 nafar erkak sahobiy alifbo tartibida joylashtirilgan bo‘lib, ularning nasabi, Islomni qabul qilish tarixi, g‘azotlardagi ishtiroki, ilm va fiqhdagi o‘rni, shuningdek, vafot etgan joylari hamda hikmatli so‘zlari keltiriladi. Shuningdek, kitobda 21 nafar sahobiya ayol, jumladan, mo‘minlarning onalari, Payg‘ambar alayhissalomning qizlari va boshqa mashhur muslima ayollarning ma&#x27;naviy matanati bayon qilingan. Kitob yakunida tarixiy atamalar, voqealar va nomlar izohlangan keng ko‘lamli lug‘at berilgan. Bu lug‘at o‘quvchiga o‘sha davrdagi ijtimoiy-siyosiy hamda diniy muhitni, harbiy yurishlarni va geografik joylarni chuqurroq anglashga yordam beradi. Umuman olganda, asar tarixiy manbalarga tayangan holda sahobiylar hayotini qomusiy tarzda bayon qiladi.</p></div>
+ <div class="f wide"><h4>Qahramonlar</h4><p>Abu Bakr Siddiq, Umar ibn Xattob, Usmon ibn Affon, Ali ibn Abu Tolib, Xadicha bintu Xuvaylid, Oisha bintu Abu Bakr, Fotima bintu Muhammad</p></div>
+ <div class="f wide"><h4>Xulosasi</h4><p>Ushbu kitobni o‘qigan o‘quvchi tarixdagi buyuk shaxslarning hayot yo‘li, ularning qiyinchiliklar qarshisida ko‘rsatgan sabri hamda ilmga bo‘lgan intilishi haqida bilimlarga ega bo‘ladi. Kitobdagi ibratli voqealar insoniy fazilatlarni, o‘zaro hurmat va sadoqatni anglashga ko‘maklashadi. O‘smirlar hayotda to‘g‘ri qarorlar qabul qilishda teran fikrlash hamda zamon bilan hamnafas yashashning muhimligini tushunib yetadilar.</p></div>
+ <div class="f wide"><h4>Kimga mos</h4><p>Tarix, Islom madaniyati hamda buyuk shaxslar hayotiga qiziquvchi 14 yoshdan katta o‘smirlar va keng kitobxonlar ommasi.</p></div>
+ <div class="f wide"><h4>Voqealar tafsiloti<span class="yangi">YANGI</span><span class="len">15 band</span></h4><ol class="ev"><li>Kitob so‘zboshisida sahobiylarning Islom tarixidagi o‘rni hamda komil inson tarbiyasidagi ahamiyati bayon etiladi.</li><li>Sahobiy atamasiga turli islomiy ilmlar va olimlar nuqtayi nazaridan berilgan ta&#x27;riflar keltiriladi.</li><li>Sahobiylarning jamiyatdagi hamda e&#x27;tiqoddagi martabalari va darajalari tushuntiriladi.</li><li>Qur&#x27;oni Karim va hadislarda bayon etilgan sahobiylarning ulkan fazilatlari yoritiladi.</li><li>Fiqh ilmining shakllanishida va tarqalishida faqih sahobiylarning tutgan o‘rni ko‘rsatib beriladi.</li><li>Sahobiylarning turli mezonlarga ko‘ra guruhlarga ajratilishi hamda ularning soni haqida ma&#x27;lumot beriladi.</li><li>Islom dinini birinchilardan bo‘lib qabul qilgan ilk sahobiylar hayoti yodga olinadi.</li><li>Sahobiylar davrida bo‘lib o‘tgan muhim g‘azot va janglar qisqacha bayon qilinadi.</li><li>Islom jamiyatida alohida o‘rin tutgan sahobiya ayollarning jasorati va fazilatlari haqida so‘z yuritiladi.</li><li>Eng so‘nggi vafot etgan sahobiylar va ularning Islom tarqalishidagi oxirgi xizmatlari sanab o‘tiladi.</li><li>Birinchi xalifa Abu Bakr Siddiqning hayoti, xalifalik davri va hikmatli so‘zlari keltiriladi.</li><li>Ikkinchi xalifa Umar ibn Xattobning davlat boshqaruvi va adolatli islohotlari yoritiladi.</li><li>Uchinchi xalifa Usmon ibn Affonning saxovati hamda Qur&#x27;onni jamlashdagi xizmatlari bayon etiladi.</li><li>To‘rtinchi xalifa Ali ibn Abu Tolibning ilmi, shijoati hamda purhikmat so‘zlari taqdim etiladi.</li><li>Kitob so‘ngida tarixiy voqealar, atamalar hamda atoqli nomlarning izohli lug‘ati beriladi.</li></ol></div>
+ <div class="f wide"><h4>Muhim parchalar<span class="yangi">YANGI</span><span class="len">6 ta</span></h4><p class="quote">Islom olamida, xususan, yurtimizda komil insonni tarbiyalash masalasi doimo dolzarb hisoblangan.</p><p class="quote">Sahobiylar o‘z davrining eng peshqadam kishilari bo‘lib, barcha sohalarda ilg‘or bo‘lishga intilganlar.</p><p class="quote">Sahobiylarga ehtirom ko‘rsatish azaldan xalqimiz qon-qoniga singib ketganini tarix ham tasdiqlaydi.</p><p class="quote">Kim dunyoga muhabbatni tark qilsa, uni Alloh yaxshi ko‘radi, kim gunohlarni tark qilsa, uni farishtalar va musulmonlar yaxshi ko‘radi.</p><p class="quote">Dihya Kalbiy roziyallohu anhu Islom tarixida asosan ikki narsa bilan chuqur iz qoldirgan.</p><p class="quote">“Sahobiy” so‘zi arab tilida “suhbatdosh”, “safdosh”, “tarafdor”, “hamroh” kabi ma&#x27;nolarni anglatadi.</p></div>
+ 
+</div>
+    <div class="qs"><h4 style="margin:0;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)">Ochiq savollardan uchtasi (5 tadan)</h4><div class="q"><p class="quote">Sahobiylar o‘z davrining eng peshqadam kishilari bo‘lib, barcha sohalarda ilg‘or bo‘lishga intilganlar. Tarix kitoblarida dinni tushunishda sahobiylar voqelikni e&#x27;tiborga olishlari, teran fikrlab zamon va makon bilan hisoblashishlari, turli vaziyatni hisobga olib, unga munosib yechim topishlari qayd etilgan. Ularning bu jihatlari hozirgi ayrim fikri turg‘un shaxslarga ham o‘rnak bo‘la oladi.</p><div class="qq">Ushbu parchada insondan zamon va sharoitni hisobga olib fikrlash talab etilishi haqida aytilgan. Sizningcha, kundalik hayotda yoki o‘qishda o‘zgaruvchan vaziyatlarga moslashib, to‘g‘ri qaror qabul qilish nima uchun muhim?</div></div><div class="q"><p class="quote">Qays ibn Sorma bir kuni bog‘da ko‘p ishlaganidan charchab, toliqib iftor mahali uxlab qoladi va yegulik yeyishga madori qolmaydi. Ertasiga tush mahali Qays ibn Sorma ishlab turgan joyida holsizlanib, hushidan ketadi. Bu hodisa Rasululloh alayhissalomga yetib bordi.</p><div class="qq">Odamlar o‘z imkoniyatidan ortiqchasi bilan majburlanganda yoki qiyinchilikka duch kelganda atrofidagilar tomonidan ko‘rsatilgan yengillik va g‘amxo‘rlik inson hayotida qanday rol o‘ynaydi? O‘z hayotingizdan misol keltiring.</div></div><div class="q"><p class="quote">Asmo roziyallohu anho. Abu Bakr Siddiqning Zubayr ibn Avvom roziyallohu anhuga uzatgan qizlari. Hijratdan so‘ng muhojirlar orasida tug‘ilgan birinchi chaqaloq Abdulloh ibn Zubayr roziyallohu anhuning onasi. Birinchilardan bo‘lib musulmon bo‘lgan, Madinaga hijrat qilgan. Hijrat kuni Rasululloh va Abu Bakrning yuklarini bog‘lashga arqon topilmaganida o‘z belbog‘ini ikkiga bo‘lib bergani uchun “Ikki belbog‘ sohibasi” (“Zotun-nitoqayn”) kunyasiga sazovor bo‘lgan.</p><div class="qq">Kichik bo‘lsa-da, o‘z vaqtida va topqirlik bilan qilingan yordam inson hayotida qanday katta o‘zgarishlarga sabab bo‘lishi mumkin? O‘zingiz shunday vaziyatga duch kelganmisiz?</div></div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Ma'qul bo‘lsa — nima bo‘ladi<span class="sub">Keyingi qadam</span></h2>
+  <div class="note">
+    <p>Papkangizdan <b>141 ta kitob matni</b> ajratib olindi va navbatda turibdi. Siz ma'qullaganingizdan keyin hammasi shu andaza bo‘yicha ishlanadi — taxminan 6-7 dollar va bir necha soat vaqt oladi. Har bir kitob avtomatik tekshiruvdan o‘tadi: chiqmagani chetga suriladi va qo‘lda ko‘riladi.</p>
+    <p>Undan keyin ikkita ish qoladi: yangi «17-19» yosh toifasini ilovaga qo‘shish va tayyor kitoblarni bazaga ko‘chirish.</p>
+  </div>
+</section>
+
+<footer>Bilig AI · pasport namunasi · 2026-yil 1-sentabr. Matnlar AI chiqarganidek, o‘zgartirilmagan holda ko‘rsatilgan.</footer>
+
+</div>
