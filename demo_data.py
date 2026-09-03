@@ -746,20 +746,11 @@ def fill_demo_child(parent_id, child_id):
         ("gift_wait", f"«{pend_name}» sovg‘asi hali berilmadi",
          f"{name} uni {pend_price} Bilig yig‘ib qo‘lga kiritgan edi. "
          f"Va'daga vafo — eng katta saboq.", pend_id, 0, 12),
-        ("badge", f"{name} «Chaqmoq kitobxon» nishonini qo‘lga kiritdi",
-         "Bir o‘tirishda 30 va undan ortiq bet o‘qiganda beriladi. "
-         "Bugun uni bir maqtab qo‘ying.", None, 1, 20),
         ("book_done", f"{name} «Tom Soyerning boshidan kechirganlari» kitobini tugatdi",
          "208 bet. Javonida endi 3 ta tugatilgan kitob bor.", None, 1, 21),
-        ("test", f"{name} yakuniy testni topshirdi",
-         "10 savoldan 9 tasi to‘g‘ri (90%). 3 Bilig oldi.", None, 2, 18),
-        ("voice", f"{name} «Sariq devni minib» bo‘yicha ovozli xulosa yubordi",
-         DEMO_REPORTS[0]["summary"], None, 3, 20),
         ("book_request", f"{name} «Qasoskorning oltin boshi» kitobini so‘rayapti",
          "Muallif: Xudoyberdi To‘xtaboyev. Kitobxona bo‘limidan bir bosishda "
          "rejasiga qo‘shasiz.", None, 3, 17),
-        ("shield_used", f"{name} bir Qanot sarfladi",
-         "O‘sha kuni o‘qimagan edi — parvozi shu bilan saqlanib qoldi.", None, 6, 20),
     ]
     for kind, title, body, ref, days_ago, hour in parent_feed:
         cursor.execute(
@@ -767,7 +758,12 @@ def fill_demo_child(parent_id, child_id):
             "to_user, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
             (parent_id, child_id, kind, title, body, ref, parent_id, _iso(days_ago, hour=hour)))
 
+    # BOLANING lentasi ataylab to‘q: unga xabar — mukofot va sabab
+    # (ega qarori, 2026-09-03). Ota-onanikida esa faqat ish talab
+    # qiladigan to‘rt-besh kartochka bo‘ladi.
     child_feed = [
+        ("badge", "«Chaqmoq kitobxon» nishonini qo‘lga kiriting",
+         "Bir o‘tirishda 30 va undan ortiq bet o‘qiganingda beriladi.", 1, 20),
         ("shield_used", "Qanot ishlatildi",
          "O‘tgan hafta bir kun o‘qimagan eding, lekin bir Qanot sarflandi — "
          "parvozing uzilmadi.", 6, 20),
@@ -776,6 +772,8 @@ def fill_demo_child(parent_id, child_id):
          "Buni o‘z mehnating bilan qozonding.", 5, 19),
         ("coins", f"Ota-onang senga {DEMO_PARENT_BONUS} Bilig qo‘shdi",
          f"Hamyoningda endi {balance} Bilig bor.", 2, 21),
+        ("kudos", "Guruhdan olqish",
+         "Nilufar: «Sen zo‘rsan!»", 3, 19),
         ("new_book", "Senga yangi kitob: «Shum bola»",
          "Ota-onang qo‘ydi. Birinchi sahifadan boshlaymizmi?", 4, 18),
     ]

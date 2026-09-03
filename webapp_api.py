@@ -1627,11 +1627,85 @@ def require_auth(f):
     return wrapper
 
 
-def send_telegram_message(chat_id: int, text: str):
-    """Botdan foydalanuvchiga oddiy Telegram xabari yuborish (masalan,
-    ota-onaga 'farzandingiz sovg‘a so‘radi' degan bildirishnoma)."""
+# ==========================================================
+# BILDIRISHNOMA SIYOSATI — 2026-09-03
+# ----------------------------------------------------------
+# Ega e'tirozi: «xabarlar juda ko‘p, hatto yarim tunda ham kelayapti».
+# Ikki sabab bor edi va ikkalasi ham tuzatildi:
+#
+# 1. VAQT. Server UTC da ishlardi, O‘zbekiston esa UTC+5. «Kechqurun
+#    20:00 da yubor» degan qoida Toshkent vaqti bilan 01:00 da ishlagan.
+#    Tuzatildi: `config.py` da jarayon Toshkent vaqtiga o‘tkazildi.
+#
+# 2. SON. Har bir mayda voqea uchun alohida Telegram xabari ketardi.
+#    Endi xabarlar ikki turga bo‘linadi:
+#      «muhim»   — ota-ona biror ish qilishi kerak (sovg‘a berish,
+#                  kitob qo‘yish, parvoz uzilishi) — Telegramga ketadi;
+#      «hisobot» — AI tahlili, nishonlar kabi xabar — Telegramga
+#                  KETMAYDI, ilova ichidagi lentada qoladi va uch
+#                  kunlik xulosada eslatiladi.
+#    Ustiga ikki chegara: tunda umuman yuborilmaydi va bir kunda
+#    bir odamga ENG KO‘PI 4 ta xabar.
+# ==========================================================
+NOTIFY_QUIET_FROM = 22       # shu soatdan keyin yuborilmaydi
+NOTIFY_QUIET_TO = 8          # shu soatgacha yuborilmaydi
+NOTIFY_DAILY_MAX = 4         # ota-onaga kuniga eng ko‘pi shuncha xabar
+NOTIFY_CHILD_DAILY_MAX = 2   # bolaga kuniga eng ko‘pi 2 ta turtki
+
+_notify_seen = {}            # (kim, sana) -> nechta yuborildi
+_notify_lock = threading.Lock()
+
+
+def _notify_allowed(chat_id, limit=None):
+    """Hozir bu odamga xabar yuborsa bo‘ladimi?
+
+    Tunda hech kimga yuborilmaydi — bolaga ham. Kunlik chegara esa
+    bolada kattaroq: unga xabar mukofot, ota-onaga esa shovqin.
+    """
+    limit = NOTIFY_DAILY_MAX if limit is None else limit
+    now = datetime.now()
+    if now.hour >= NOTIFY_QUIET_FROM or now.hour < NOTIFY_QUIET_TO:
+        return False, "tun"
+    key = (chat_id, now.strftime("%Y-%m-%d"))
+    with _notify_lock:
+        # Eski kunlarni tozalab turamiz — xotira o‘smasin
+        if len(_notify_seen) > 4000:
+            _notify_seen.clear()
+        n = _notify_seen.get(key, 0)
+        if n >= limit:
+            return False, "kunlik chegara"
+        _notify_seen[key] = n + 1
+    return True, ""
+
+
+def send_telegram_message(chat_id: int, text: str, kind="hisobot", force=False):
+    """Botdan foydalanuvchiga Telegram xabari yuborish.
+
+    EGA QARORI (2026-09-03): botga FAQAT IKKI XIL xabar boradi —
+    (1) bola kitobni o‘qib tugatganda, (2) uch kunda bir marta
+    natijalar hisoboti. Boshqa hamma narsani ota-ona ilovani ochib
+    ko‘radi: «har bir amalni xabar qilib yuborish mantig‘i noto‘g‘ri».
+
+    Shuning uchun SUKUT BO‘YICHA hech narsa yuborilmaydi. Yuborilishi
+    kerak bo‘lgan xabar ataylab `kind="muhim"` deb belgilanadi. Kelajakda
+    kimdir yangi xabar qo‘shsa, u o‘z-o‘zidan JIM bo‘ladi — bu xavfsiz
+    tomon.
+
+    `force=True` — chegaralardan qat'i nazar yuboriladi (faqat loyiha
+    egasiga ketadigan texnik murojaatlar uchun).
+    """
     if not BOT_TOKEN:
         return
+    if not force:
+        # «bola» — bolaning o‘ziga atalgan turtki: nishon, Bilig, sovg‘a,
+        # parvoz. Ega talabi bo‘yicha bular yuboriladi.
+        if kind not in ("muhim", "bola"):
+            return
+        ok, sabab = _notify_allowed(
+            chat_id, NOTIFY_CHILD_DAILY_MAX if kind == "bola" else NOTIFY_DAILY_MAX)
+        if not ok:
+            ai_service.log_line("[xabar] yuborilmadi (%s): %s" % (sabab, chat_id))
+            return
     try:
         requests.post(
             f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
@@ -1642,7 +1716,23 @@ def send_telegram_message(chat_id: int, text: str):
         print("Telegram xabar yuborishda xatolik:", e)
 
 
-def notify_parent(child_id: int, text: str, feed=None):
+def push_child(child_id: int, text: str):
+    """Bolaning O‘ZIGA turtki — BOTGA chiqadigan xabar.
+
+    Ega qarori (2026-09-03): botga faqat IKKI xabar boradi —
+    parvoz uzilay deganda va guruhdan olqish kelganda. Kuniga eng
+    ko‘pi 2 ta. Qolgan hamma yangilik (nishon, Bilig, sovg‘a, yangi
+    kitob) bolaning ilova ichidagi lentasida ko‘rinadi.
+
+    Faqat o‘z Telegram hisobi bor bolaga boradi: ota-ona qo‘shgan,
+    lekin telefonini ulamagan bolaning raqami manfiy bo‘ladi — unga
+    xabar yuborib bo‘lmaydi, ilova lentasidagi kartochka yetarli.
+    """
+    if child_id and child_id > 0:
+        send_telegram_message(child_id, text, kind="bola")
+
+
+def notify_parent(child_id: int, text: str, feed=None, kind="hisobot"):
     """Farzandning ota-onasiga xabar yuboradi.
 
     HOZIR bu Telegram orqali ketadi. Kelajakda o‘z ilovamiz chiqqanda
@@ -1655,7 +1745,7 @@ def notify_parent(child_id: int, text: str, feed=None):
     try:
         parent_id = get_parent_id(child_id)
         if parent_id:
-            send_telegram_message(parent_id, text)
+            send_telegram_message(parent_id, text, kind=kind)
             if feed:
                 _feed(parent_id, child_id, feed[0], feed[1], feed[2],
                       feed[3] if len(feed) > 3 else None)
@@ -1663,8 +1753,41 @@ def notify_parent(child_id: int, text: str, feed=None):
         pass
 
 
+# ==========================================================
+# XABARLAR: OTA-ONA VA BOLA UCHUN IKKI XIL QOIDA
+# ----------------------------------------------------------
+# Ega qarori (2026-09-03): «Bolalarga push yoqadi, hissiyot beradi.
+# Ota-ona esa bu ilovaga faqat nazorat uchun kiradi.»
+#
+# OTA-ONA — kam va faqat ish talab qiladigani. U natijani ilovani
+# ochib ko‘radi, har bir mayda voqea uchun turtki kerak emas.
+# BOLA — ko‘p va iliq. Nishon, Bilig, olqish, parvoz — bularning
+# har biri unga mukofot va sabab. Bola uchun xabar — o‘yinning bir
+# qismi, ota-ona uchun esa shovqin.
+# ==========================================================
+FEED_KINDS_PARENT = {
+    "gift",           # farzand sovg‘a sotib oldi — berish kerak
+    "gift_wait",      # kutilayotgan sovg‘a eslatmasi
+    "book_request",   # farzand kitob so‘rayapti — qo‘yish kerak
+    "book_done",      # kitob tugatildi
+    "talk_check",     # kechki suhbat savoli — javob berish kerak
+    "child_linked",   # farzand o‘z telefonidan ulandi
+    "group_request",  # guruhga kirish so‘rovi — tasdiqlash kerak
+    "plus",           # obuna holati
+}
+
+# Bolada deyarli hammasi qoladi — bu uning mukofot lentasi.
+FEED_KINDS_CHILD = {
+    "gift_given", "new_book", "coins", "badge", "streak", "streak_warn",
+    "shield_used", "kudos", "task_end", "task_win", "group_task",
+    "group_join", "test", "voice", "talk",
+}
+
+
 def _feed(parent_id, child_id, kind, title, body="", ref_id=None, to_child=False, at=None):
     """Bosh sahifadagi xabarlar lentasiga bitta yozuv qo‘shadi.
+
+    Ro‘yxatda yo‘q turdagi xabar YOZILMAYDI — `FEED_KINDS` ga qarang.
 
     Matn ilova uchun yoziladi: emoji va HTML teglarsiz, qisqa. Telegramdagi
     xabar boshqacha bo‘lishi mumkin — u yerda emoji o‘rinli.
@@ -1676,6 +1799,9 @@ def _feed(parent_id, child_id, kind, title, body="", ref_id=None, to_child=False
     yo‘l bilan kechqurun chiqadi: yozuv darrov yaratiladi, lekin lentada
     vaqti kelgunicha ko‘rinmaydi.
     """
+    allowed = FEED_KINDS_CHILD if to_child else FEED_KINDS_PARENT
+    if kind not in allowed:
+        return
     try:
         with db_lock:
             cursor.execute(
@@ -1731,17 +1857,20 @@ def announce_badges(child_id: int, names):
     if not names:
         return
     name = child_name_of(child_id)
+    # Nishon — BOLANING mukofoti. Ota-onaning lentasiga tushmaydi
+    # (u nishonlarni ilovadagi nishonlar bo‘limida ko‘radi), bolaning
+    # lentasida esa kartochka bo‘lib qoladi. Turtki yuborilmaydi:
+    # nishon odatda bola ilovada turganda beriladi va o‘sha zahoti
+    # ekranda tabrik chiqadi — ustiga xabar yuborish ortiqcha.
+    parent_id = get_parent_id(child_id) or 0
     if len(names) == 1:
         cond = badge_cond(names[0])
-        notify_parent(child_id, f"🏅 <b>{name}</b> «{names[0]}» nishonini qo‘lga kiritdi.\n"
-                                f"{cond}. Bugun uni bir maqtab qo‘ying.",
-                      feed=("badge", f"{name} «{names[0]}» nishonini qo‘lga kiritdi",
-                            f"{cond}. Bugun uni bir maqtab qo‘ying."))
+        _feed(parent_id, child_id, "badge", f"«{names[0]}» nishonini qo‘lga kiritding",
+              cond + ".", to_child=True)
     else:
-        lst = "\n".join("• " + n for n in names)
-        notify_parent(child_id, f"🏅 <b>{name}</b> birdaniga {len(names)} ta nishon oldi:\n{lst}",
-                      feed=("badge", f"{name} birdaniga {len(names)} ta nishon oldi",
-                            ", ".join(names)))
+        _feed(parent_id, child_id, "badge",
+              f"Birdaniga {len(names)} ta nishon olding",
+              ", ".join(names), to_child=True)
 
 
 def unseen_badges(child_id: int):
@@ -3238,7 +3367,10 @@ def parent_manage_coins(child_id):
         conn.commit()
         cursor.execute("SELECT balance_coins FROM Users WHERE user_id = ?", (child_id,))
         new_balance = cursor.fetchone()[0]
-    send_telegram_message(child_id, f"🔅 Ota-onangiz balansingizga o‘zgartirish kiritdi. Joriy balans: {new_balance}")
+    # Bilig o‘zgarishi — botga chiqmaydi, bolaning lentasida ko‘rinadi
+    # (ega qarori: botga faqat parvoz ogohlantirishi va olqish).
+    send_telegram_message(child_id,
+        f"🔅 Ota-onangiz balansingizga o‘zgartirish kiritdi. Joriy balans: {new_balance}")
     if delta > 0:
         _feed(g.user_id, child_id, "coins", f"Ota-onang senga {delta} Bilig qo‘shdi",
               f"Hamyoningda endi {new_balance} Bilig bor.", to_child=True)
@@ -3637,6 +3769,7 @@ def parent_purchase_given(purchase_id):
         cursor.execute("UPDATE Purchases SET status = 'given', given_at = ? "
                        "WHERE purchase_id = ?", (datetime.now().isoformat(), purchase_id))
         conn.commit()
+    # Sovg‘a xabari ham lentada qoladi — botga chiqmaydi.
     send_telegram_message(
         child_id,
         f"🎁 <b>«{item_name}»</b> sovg‘ang qo‘lingga tegdi! "
@@ -3661,7 +3794,7 @@ def parent_contact():
         row = cursor.fetchone()
         sender_name = row[0] if row else "Foydalanuvchi"
         send_telegram_message(
-            OWNER_ID,
+            OWNER_ID, force=True, text=
             f"📞 <b>Yangi murojaat (Mini App)</b>\n👤 {sender_name} (ID: <code>{g.user_id}</code>)\n\n{text}"
         )
     return jsonify({"ok": True})
@@ -4383,7 +4516,7 @@ def _finish_voice(book_id, child_id, book_title, result, detail):
     if parent_id:
         pr = result.get("parent_report", {})
         send_telegram_message(
-            parent_id,
+            parent_id, text=
             f"🎙 <b>{book_title}</b> bo‘yicha farzandingizning ovozli hisobotini AI tahlil qildi!\n\n"
             f"📌 {pr.get('summary', '')}\n\n✅ {pr.get('strengths', '')}\n🌱 {pr.get('weaknesses', '')}\n\n"
             f"{pr.get('conversation_topic', '')}"
@@ -4576,7 +4709,7 @@ def _finish_talk(book_id, child_id, book_title, result, detail, stage, question)
               f"«{book_title}» — {nom}. " + (pr.get("summary", "") or ""))
         _start_talk_check(child_id, parent_id, book_id, pr.get("conversation_topic", ""))
         send_telegram_message(
-            parent_id,
+            parent_id, text=
             f"🎓 <b>{book_title}</b> — AI ustoz savoli ({nom})\n\n"
             f"❓ <i>{question}</i>\n\n"
             f"📌 {pr.get('summary', '')}\n\n"
@@ -4732,8 +4865,9 @@ def child_submit_test(book_id):
                 "WHERE rp.child_id = ? AND pb.is_completed = 1", (child_id,))
             done = cursor.fetchone()[0]
             _cname = child_name_of(child_id)
+            # BOTGA KETADIGAN 1-XABAR: kitob tugatildi (ega qarori)
             notify_parent(
-                child_id,
+                child_id, kind="muhim", text=
                 f"📖 <b>{_cname}</b> «{brow[0]}» kitobini tugatdi.\n"
                 f"{brow[1] or 0} bet. Javonida endi {done} ta tugatilgan kitob bor.",
                 feed=("book_done", f"{_cname} «{brow[0]}» kitobini tugatdi",
@@ -4953,7 +5087,7 @@ def check_streak_at_risk():
     kechqurun va kuniga bir marta bajariladi.
     """
     now = datetime.now()
-    if now.hour < STREAK_WARN_HOUR:
+    if now.hour < STREAK_WARN_HOUR or now.hour >= NOTIFY_QUIET_FROM:
         return 0
     today = now.strftime("%Y-%m-%d")
     try:
@@ -4986,7 +5120,7 @@ def check_streak_at_risk():
             # unga xabar yuborib bo‘lmaydi, lentadagi kartochka yetarli.
             if child_id > 0:
                 send_telegram_message(
-                    child_id,
+                    child_id, kind="bola", text=
                     "🔥 <b>Parvozing %d kun</b>\n%s" % (streak, body))
             sent += 1
         except Exception:
@@ -6026,6 +6160,8 @@ def group_kudos(gid):
     if pid:
         _feed(pid, to, "kudos", "Guruhdan olqish",
               "%s: «%s»" % (child_name_of(child_id), phrase), gid, to_child=True)
+    push_child(to, "👏 <b>Guruhdan olqish</b>\n%s: «%s»"
+                   % (child_name_of(child_id), phrase))
     return jsonify({"ok": True})
 
 
@@ -6341,9 +6477,14 @@ def build_summary(child_id: int, days: int = SUMMARY_EVERY_DAYS):
                    (child_id, since))
     best = cursor.fetchone()
 
-    cursor.execute("SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id = ? "
-                   "AND type = 'test' AND created_at >= ?", (child_id, since))
-    tests = cursor.fetchone()[0]
+    cursor.execute("SELECT COUNT(*), SUM(COALESCE(correct_count, 0)), "
+                   "SUM(COALESCE(total_count, 0)) FROM Diagnostic_Logs "
+                   "WHERE child_id = ? AND type = 'test' AND created_at >= ?",
+                   (child_id, since))
+    trow = cursor.fetchone() or (0, 0, 0)
+    tests = trow[0] or 0
+    # Ota-onaga foiz KO‘RSATILADI (bolaga emas — [[pedagogika-qoidasi]])
+    test_pct = round((trow[1] or 0) * 100.0 / trow[2]) if (trow[2] or 0) else None
 
     cursor.execute("SELECT streak_days FROM Users WHERE user_id = ?", (child_id,))
     r = cursor.fetchone()
@@ -6359,7 +6500,8 @@ def build_summary(child_id: int, days: int = SUMMARY_EVERY_DAYS):
     if pages:
         lines.append(f"• {pages} bet o‘qildi ({active_days} kun faol)")
     if tests:
-        lines.append(f"• {tests} ta test topshirdi")
+        lines.append(f"• {tests} ta test topshirdi"
+                     + (f" — to‘g‘ri javoblar {test_pct}%" if test_pct is not None else ""))
     lines.append(f"• Parvoz — {streak} kun")
     if best and best[1]:
         try:
@@ -6385,7 +6527,9 @@ def _summary_due(child_id: int) -> bool:
 def send_due_summaries():
     """Muddati kelgan barcha xulosalarni yuboradi."""
     now = datetime.now()
-    if now.hour < SUMMARY_HOUR:
+    # Tunga kirmaydi: xabar to‘silsa-yu «yuborildi» deb belgilansa,
+    # uch kunlik xulosa butunlay yo‘qolib ketardi.
+    if now.hour < SUMMARY_HOUR or now.hour >= NOTIFY_QUIET_FROM:
         return 0
     try:
         cursor.execute("SELECT DISTINCT child_id FROM Family_Link")
@@ -6399,7 +6543,8 @@ def send_due_summaries():
                 continue
             text = build_summary(child_id)
             if text:
-                notify_parent(child_id, text)
+                # BOTGA KETADIGAN 2-XABAR: uch kunlik natijalar (ega qarori)
+                notify_parent(child_id, text, kind="muhim")
             with db_lock:
                 cursor.execute("UPDATE Users SET last_summary_at = ? WHERE user_id = ?",
                                (now.strftime("%Y-%m-%d %H:%M:%S"), child_id))

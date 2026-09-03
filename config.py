@@ -1,4 +1,25 @@
 import os
+import time
+
+# ==========================================================
+# VAQT MINTAQASI — TOSHKENT (2026-09-03 da tuzatilgan)
+# ----------------------------------------------------------
+# MUAMMO: server Render'da UTC vaqtida ishlaydi, O‘zbekiston esa
+# UTC+5. Kod ichidagi «kechqurun soat 20 da xulosa yubor» degan
+# qoidalar server soatiga qarardi — natijada xabarlar Toshkent
+# vaqti bilan **soat 01:00 da** kelardi. Foydalanuvchilar buni
+# «yarim tunda xabar kelayapti» deb aytishdi.
+#
+# YECHIM: butun jarayon Toshkent vaqtida ishlaydi. Shu bir qator
+# hamma joyni to‘g‘rilaydi: xabar soatlari ham, «bugun» degan
+# hisob ham (kunlik parvoz, kunlik chegaralar) endi mahalliy
+# kun bo‘yicha hisoblanadi.
+# ==========================================================
+os.environ.setdefault("TZ", "Asia/Tashkent")
+try:
+    time.tzset()          # faqat Linux/Mac'da bor, Windows'da yo‘q
+except AttributeError:
+    pass
 
 # Render Environment Variables
 BOT_TOKEN = os.getenv("BOT_TOKEN")
