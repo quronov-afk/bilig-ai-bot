@@ -1,0 +1,476 @@
+{
+ "title": "Buyuk Getsbi",
+ "author": "Frensis Fitsjerald",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "17-19",
+  "age_hint": "16+",
+  "topics": [
+   "orzu va haqiqat",
+   "muhabbat",
+   "sadoqat",
+   "jamiyat va inson",
+   "hafsalatsizlik"
+  ],
+  "theme": "Asarda orzu va xomxayollar ketidan ko‘r-ko‘rona quvishning fojiali oqibatlari hamda soxta kiborlar jamiyatidagi ma'naviy tubanlik ko‘rsatib beriladi.",
+  "summary": "Hikoyachi Nik Karrauey Nyu-York yaqinidagi Uest-Egg qishlog‘ida mo‘jazgina uyga ko‘chib o‘tadi. Uning yon qo‘shnisi — har haftada dabdabali ziyofatlar beradigan, lekin o‘zi sirli bo‘lgan boy yigit Getsbi edi. Nik qarindoshi Dezi va uning eri Tom Byukenenlarnikiga boradi. U yerda Tomning xotining ustidan boshqa ayol bilan munosabati borligini hamda oiladagi sovuq muhitni payqaydi. Nik Getsbi bilan tanishadi. Ma'lum bo‘lishicha, Getsbi bundan besh yil avval Dezi bilan bir-birini sevishgan, lekin qashshoqligi sababli unga uylana olmagan. Getsbi butun boyligini va hashamatli koshonasini faqat Dezining e'tiborini tortish va unga erishish ilinjida to‘plagan edi. Nikning yordami bilan Getsbi va Dezi qayta uchrashadilar va ularning orasida eski tuyg‘ular qayta alangalanadi. Ammo issiq kunlarning birida mehmonxonada Tom va Getsbi o‘rtasida ochiqdan-ochiq dahanaki jang bo‘lib o‘tadi. Tom Getsbining boyligi qorong‘i va noqonuniy yo‘llar bilan topilganini fosh qiladi. Qaytish yo‘lida Dezi Getsbining mashinasini boshqarayotib, tasodifan Tomning ma'shuqasi Mirtlni urib yuboradi va voqea joyidan qochib ketadi. Tom Mirtlning eri Jorj Uilsonga mashina Getsbiniki ekanini aytib, uni Getsbiga qarshi qayraydi. Natijada Uilson Getsbini oz o‘zining havzasida otib o‘ldiradi va so‘ng o‘z joniga qasd qiladi. Getsbining dafn marosimiga ilgari uning koshonasida maishat qilgan yuzlab mehmonlardan hech kim kelmaydi. Nik bu jamiyatning bag‘ritoshligi va soxtaligidan hafsalasi pir bo‘lib, o‘zining qadrdon O‘rta G‘arbiga qaytib ketadi.",
+  "characters": "Getsbi — maqsadi sari intiluvchi, sevgisi uchun borini fido qiladigan sirli boyon; Nik Karrauey — bosiq va halol hikoyachi; Dezi Byukenen — boylikka o‘rgangan, beqaror ayol; Tom Byukenen — dimog‘dor va shafqatsiz boyon.",
+  "conclusion": "Kitob bolaga asil qadriyatlar boylik va soxta obro‘da emas, balki halollik va chinakam insoniylikda ekanini uqtiradi. O‘tmishni majburan qaytarib bo‘lmasligini hamda xomxayollar ortidan ko‘r-ko‘rona quvish fojia bilan tugashini tushuntiradi. Ota-onalar ushbu asar orqali farzandidan jamiyatdagi soxtalik va boylikka sig‘inish xususida fikr-mulohazalarini so‘rab, ma'naviy suhbat qurishlari mumkin.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Inson ruhiyati, jamiyat muammolari va hayotiy saboqlar haqida o‘ylashni xush ko‘radigan o‘smirlar uchun.",
+  "events": [
+   "Nik Nyu-York yaqinidagi Uest-Egg qishlog‘iga ko‘chib o‘tadi.",
+   "Nik qarindoshi Dezi va uning eri Tomning koshonasiga mehmon bo‘lib boradi.",
+   "Tomning Nyu-Yorkda boshqa xonim bilan munosabati borligi oshkor bo‘ladi.",
+   "Tom Nikni shaharchaga olib borib, ustaxona egasining ayoli Mirtl bilan tanishtiradi.",
+   "Nik ilk bor Getsbining dabdabali ziyofatiga taklifnoma oladi va u yerga boradi.",
+   "Ziyofatda Nik urushda birga bo‘lgan sobiq askar — Getsbining o‘zi bilan tanishadi.",
+   "Getsbi Nikni shaharga olib boradi va o‘z hayoti haqida gapirib beradi.",
+   "Jordan Beyker Nikka Getsbi va Dezining besh yil avvalgi muhabbati haqida so‘zlab beradi.",
+   "Nik Getsbining iltimosiga ko‘ra Dezini o‘z uyiga choyga taklif qiladi.",
+   "Getsbi va Dezi besh yillik ayriliqdan so‘ng Nikning uyida uchrashadilar.",
+   "Getsbi Dezini o‘zining hashamatli koshonasiga olib o‘tib, uyini ko‘rsatadi.",
+   "Tom va Dezi Getsbining navbatdagi kechki ziyofatida qatnashadilar.",
+   "Getsbi Dezining javobsiz muhabbatidan xafsalasi pir bo‘la boshlaydi.",
+   "Jazirama issiq kuni barcha qahramonlar mehmonxonada to‘planadilar.",
+   "Tom va Getsbi o‘rtasida Dezi ustida qattiq dahanaki janjal kelib chiqadi.",
+   "Getsbining boyligi qorong‘i yo‘llar bilan topilgani haqida Tom fosh qiladi.",
+   "Uyga qaytishda Dezi mashinada Mirtlni urib yuboradi va qochib ketadi.",
+   "Tom Mirtlning eriga mashina Getsbiniki ekanligini aytadi.",
+   "Jorj Uilson Getsbini havza ichida otib o‘ldiradi va o‘zini ham otadi.",
+   "Getsbining dafn marosimiga yaqinlaridan va mehmonlardan hech kim kelmaydi."
+  ],
+  "quotes": [
+   "Bosiqlik bilan fikr yuritish – katta imtiyoz.",
+   "Getsbi men nafratlanadigan va xush ko‘rmaydigan barcha narsalarni o‘zida mujassam etgan inson kabi tuyulardi, nazdimda.",
+   "Eng muhimi, insonga tirigida do‘st kerak.",
+   "O‘lgan odamga buning keragi yo‘q, shaxsan men shunday deb hisoblayman.",
+   "Uning orzusi bir umrga ortda – shahardan tashqaridagi tim qora uzoqlikda, ya'ni tim qora osmon ostida yastanib yotgan Amerika yerlarida qolganini u bilmas edi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nik kollejda o‘qiganida do‘stlari uni qanday atashardi?",
+   "options": [
+    "A) Ichidan pishgan deb",
+    "B) Mag‘rur deb",
+    "C) O‘ta quvnoq deb",
+    "D) Dangasa deb"
+   ],
+   "answer": "A) Ichidan pishgan deb"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nik Nyu-Yorkka ko‘chib kelgach, qaysi sohani o‘rganmoqchi edi?",
+   "options": [
+    "A) Kredit va moliya ishini",
+    "B) Avtomobil ta'mirlashni",
+    "C) Rassomlik san'atini",
+    "D) Mehmonxona biznesini"
+   ],
+   "answer": "A) Kredit va moliya ishini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dezining eri Tom qaysi sport turi bilan shug‘ullangan?",
+   "options": [
+    "A) Futbol va chavgon",
+    "B) Suvda suzish",
+    "C) Yengil atletika",
+    "D) Kriket o‘yini"
+   ],
+   "answer": "A) Futbol va chavgon"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nik Tomnikida Beyker xonim bilan ilk bor qayerda uchrashdi?",
+   "options": [
+    "A) Pushti rangli xonada",
+    "B) Hovlidagi atirgulzorda",
+    "C) Avtomobil ustaxonasida",
+    "D) Katta oshxonada"
+   ],
+   "answer": "A) Pushti rangli xonada"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Uilson ustaxonasiga kirganda Tom va Uilson nimani muhokama qilishdi?",
+   "options": [
+    "A) Mashina sotib olish masalasini",
+    "B) Yangi bino qurilishini",
+    "C) Shaharga ko‘chib o‘tishni",
+    "D) Ziyofatga taklifnomani"
+   ],
+   "answer": "A) Mashina sotib olish masalasini"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mirtl va Ketrin Nyu-Yorkdagi kvartirada nimalar haqida suhbatlashishdi?",
+   "options": [
+    "A) Oilaviy kelishmovchiliklar haqida",
+    "B) Yangi kitoblar haqida",
+    "C) Qishloqdagi hosil haqida",
+    "D) Chet el sayohati haqida"
+   ],
+   "answer": "A) Oilaviy kelishmovchiliklar haqida"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dezi Tomning harakatlaridan nega tez-tez xafa bo‘lardi?",
+   "options": [
+    "A) Erining qo‘polligi va e'tiborsizligidan",
+    "B) Kampir qarindoshlarining ko‘pligidan",
+    "C) Qishloqda yashashni xohlagani uchun",
+    "D) Nikning tez-tez kelishidan"
+   ],
+   "answer": "A) Erining qo‘polligi va e'tiborsizligidan"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Nik otasining maslahatiga amal qilishga harakat qilardi?",
+   "options": [
+    "A) Odamlarni darhol hukm qilmaslik uchun",
+    "B) Boylik orttirishni o‘rganish uchun",
+    "C) Mashhur yozuvchi bo‘lish uchun",
+    "D) Shahardan tezroq ketish uchun"
+   ],
+   "answer": "A) Odamlarni darhol hukm qilmaslik uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Nikning kishilarga xolis va bosiq munosabatda bo‘lishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, bu insoniylik va sabr-toqatdir",
+    "B) Noto‘g‘ri, hammaga baqirish kerak",
+    "C) Noto‘g‘ri, fosh qilish kerak",
+    "D) Buni hech qanday ahamiyati yo‘q"
+   ],
+   "answer": "A) To‘g‘ri, bu insoniylik va sabr-toqatdir"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Otasining maslahatini keltirish orqali nimani ta'kidlaydi?",
+   "options": [
+    "A) Bosiqlik bilan fikrlashning muhimligini",
+    "B) Har doim jahldor bo‘lishni",
+    "C) Ko‘p pul jamg‘arish zarurligini",
+    "D) Dabdabali hayot kechirishni"
+   ],
+   "answer": "A) Bosiqlik bilan fikrlashning muhimligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Getsbining ziyofatida Nik uni birinchi bo‘lib qanday tanidi?",
+   "options": [
+    "A) Urushdagi xizmatni eslashganida",
+    "B) Rasm chizib berganida",
+    "C) Raqsga tushayotgan paytida",
+    "D) Mashina tuzatayotgan paytida"
+   ],
+   "answer": "A) Urushdagi xizmatni eslashganida"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Getsbi Nikni shaharda kim bilan tanishtirdi?",
+   "options": [
+    "A) Meyer Vulfshim bilan",
+    "B) Jorj Uilson bilan",
+    "C) Den Kodi bilan",
+    "D) Ruhoniy bilan"
+   ],
+   "answer": "A) Meyer Vulfshim bilan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Getsbi va Dezi uchrashgan kuni havo qanday edi?",
+   "options": [
+    "A) Yomg‘ir shivalab yog‘ayotgan edi",
+    "B) Juda issiq va quyoshli edi",
+    "C) Qor bo‘roni bo‘layotgan edi",
+    "D) Kuchli shamol esayotgan edi"
+   ],
+   "answer": "A) Yomg‘ir shivalab yog‘ayotgan edi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Getsbi Nikning uyida qaysi buyumni beixtiyor qulatib yubordi?",
+   "options": [
+    "A) Devordagi eski soatni",
+    "B) Dasturxondagi gulli vazani",
+    "C) Javondagi qimmatbaho kitobni",
+    "D) Boshidagi chiroyli shlyapani"
+   ],
+   "answer": "A) Devordagi eski soatni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Getsbi o‘z koshonasida Deziga nimalarni ko‘rsatib faxrlandi?",
+   "options": [
+    "A) Kiyimlari va bahavo bog‘ini",
+    "B) Otasining eski uskunalarini",
+    "C) Yozgan ilmiy maqolalarini",
+    "D) Sotib olgan ustaxonasini"
+   ],
+   "answer": "A) Kiyimlari va bahavo bog‘ini"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jordan Beyker Nikka Getsbining o‘tmishi haqida nimani so‘zlab berdi?",
+   "options": [
+    "A) Dezi bilan samimiy muhabbatini",
+    "B) Ko‘p sayohat qilganini",
+    "C) Garajda ishlagan kunlarini",
+    "D) Universitetdagi a'lo baholarini"
+   ],
+   "answer": "A) Dezi bilan samimiy muhabbatini"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Getsbi nega aynan Uest-Eggdan villa sotib olgan edi?",
+   "options": [
+    "A) Dezining uyiga qarama-qarshi bo‘lganiga",
+    "B) Shaharga yaqin joyda joylashgani uchun",
+    "C) Narxi juda arzon bo‘lgani uchun",
+    "D) Nik bilan qo‘shni bo‘lish uchun"
+   ],
+   "answer": "A) Dezining uyiga qarama-qarshi bo‘lganiga"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Getsbi va Dezi qayta uchrashganda nega hayajonlanishdi?",
+   "options": [
+    "A) Besh yillik ayriliqdan so‘ng ko‘rishgani uchun",
+    "B) Nik ularga qattiq tegingani uchun",
+    "C) Yomg‘irda ivib ketishgani uchun",
+    "D) Tom ularni quvib kelgani uchun"
+   ],
+   "answer": "A) Besh yillik ayriliqdan so‘ng ko‘rishgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Getsbining muhabbati uchun borini fido qilishi tahsinga loyiqmi?",
+   "options": [
+    "A) Sadoqati tahsinga loyiq, lekin xomxayoldir",
+    "B) Yo‘q, u faqat pul to‘plagani uchun",
+    "C) Yo‘q, u do‘stlarini unutgani uchun",
+    "D) Ha, chunki u hammani aldadilar"
+   ],
+   "answer": "A) Sadoqati tahsinga loyiq, lekin xomxayoldir"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Sohildagi yashil chiroq obrazi nimaning ramzi hisoblanadi?",
+   "options": [
+    "A) Ushalmas orzu va umidning",
+    "B) Katta boylik va mol-mulkning",
+    "C) Dengizdagi xavf-xatarning",
+    "D) Oddiy chiroq va bezakning"
+   ],
+   "answer": "A) Ushalmas orzu va umidning"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mehmonxonadagi janjaldan keyin yo‘lda qanday falokat ro‘y berdi?",
+   "options": [
+    "A) Mirtl mashina ostida qoldi",
+    "B) Mashina ko‘prikdan tushib ketdi",
+    "C) Uilson ustaxonasi yonib ketdi",
+    "D) Nik poyezddan kechikib qoldi"
+   ],
+   "answer": "A) Mirtl mashina ostida qoldi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mirtlni urib yuborgan mashinani aslida kim boshqarayotgan edi?",
+   "options": [
+    "A) Dezi boshqarayotgan edi",
+    "B) Getsbi boshqarayotgan edi",
+    "C) Tom boshqarayotgan edi",
+    "D) Nik boshqarayotgan edi"
+   ],
+   "answer": "A) Dezi boshqarayotgan edi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Getsbining otasi Nikka o‘g‘lining qaysi buyumini ko‘rsatdi?",
+   "options": [
+    "A) Bolalikdagi kun tartibi daftarchasini",
+    "B) Urushda olgan oltin medalini",
+    "C) Oksforddagi diplom qog‘ozini",
+    "D) Qimmatbaho qo‘l soatini"
+   ],
+   "answer": "A) Bolalikdagi kun tartibi daftarchasini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Getsbining dafn marosimiga kimlar qatnashdi?",
+   "options": [
+    "A) Otasi, Nik va ko‘zoynakli kishi",
+    "B) Yuzlab kechki ziyofat mehmonlari",
+    "C) Tom va Dezi Byukenenlar",
+    "D) Meyer Vulfshim va uning do‘stlari"
+   ],
+   "answer": "A) Otasi, Nik va ko‘zoynakli kishi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Uilson Getsbining koshonasiga borib mashshoqqa o‘q uzdi?",
+   "options": [
+    "A) Tom uni Getsbiga qarshi qayragani uchun",
+    "B) Getsbi uning pulini olib qo‘ygani uchun",
+    "C) Getsbi ziyofatga chaqirmagani uchun",
+    "D) Ustaxonani sotib olmagani uchun"
+   ],
+   "answer": "A) Tom uni Getsbiga qarshi qayragani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega soxta do‘stlar Getsbining dafn marosimiga kelishmadi?",
+   "options": [
+    "A) Ularga faqat uning boyligi kerak edi",
+    "B) Dafn kunini bilishmagan edi",
+    "C) Barchasi uzoq shaharga ketgandi",
+    "D) Nik ularni taklif qilmadi"
+   ],
+   "answer": "A) Ularga faqat uning boyligi kerak edi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dezining aybini Getsbi o‘z bo‘yniga olgani to‘g‘ri bo‘ldimi?",
+   "options": [
+    "A) Yo‘q, bu fojiali va nohaq qurbonlik edi",
+    "B) Ha, chunki u aybdor edi",
+    "C) Ha, bu juda unumli ish bo‘ldi",
+    "D) Buni farqi yo‘q edi"
+   ],
+   "answer": "A) Yo‘q, bu fojiali va nohaq qurbonlik edi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Nikning soxta davradan kechib o‘z uyiga qaytishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, soxtalikdan uzoq bo‘lish halollikdir",
+    "B) Noto‘g‘ri, u boyib ketishi kerak edi",
+    "C) Noto‘g‘ri, shaharda qolishi kerak edi",
+    "D) Bu qarorning xatosi bor edi"
+   ],
+   "answer": "A) To‘g‘ri, soxtalikdan uzoq bo‘lish halollikdir"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Nikning so‘nggi xulosasi orqali muallif nimani yetkazmoqchi?",
+   "options": [
+    "A) Inson o‘tmish va orzular ketidan intilishini",
+    "B) Hamma odamlar baxtli yashashini",
+    "C) Pul bilan hamma narsani sotib olishni",
+    "D) Shahar hayotining ajoyibligini"
+   ],
+   "answer": "A) Inson o‘tmish va orzular ketidan intilishini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar so‘ngidagi ma'yuslik kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Soxtalikdan nafrat va samimiylikka intilish",
+    "B) Ziyofatlarga borish va maishat qilish",
+    "C) Tezroq boylik to‘plash istagi",
+    "D) Qimmatbaho mashina sotib olish"
+   ],
+   "answer": "A) Soxtalikdan nafrat va samimiylikka intilish"
+  }
+ ]
+}

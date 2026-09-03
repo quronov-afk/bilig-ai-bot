@@ -1,0 +1,478 @@
+{
+ "title": "Yulduzlar mangu yonadi",
+ "author": "Tog‘ay Murod",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "kurash",
+   "do‘stlik va xiyonat",
+   "or-nomus",
+   "pok sevgi",
+   "xalq an'analari"
+  ],
+  "theme": "Tog‘ay Murod ushbu qissada insoniy qadr-qimmat, or-nomus, do‘stlikka sadoqat va halollik tamoyillarini ulug‘laydi. Bo‘ri polvon timsolida el-yurt va davra oldidagi adolat har qanday shaxsiy manfaat hamda jigarbandlik tuyg‘usidan baland turishi ko‘rsatib beriladi.",
+  "summary": "Xo‘jasoat qishlog‘ida Zulfiqor polvonning sunnat to‘yi munosabati bilan eliy to‘y va kechki olish musobaqasi boshlanadi. Elning mo‘tabar polvoni Bo‘ri polvon bakovullik qiladi. Davrada u bolalikdagi qiyomatli do‘sti, hozirda ko‘zi ojiz bo‘lib qolgan Nasim polvonni ko‘rib, o‘tmish xotiralariga g‘arq bo‘ladi.\n\nYoshlikda Bo‘ri bilan Nasim ayrilmas do‘st bo‘lib o‘sgan edi. Bo‘ri pok ko‘ngil bilan Momoqizni sevib qoladi va bu sirini do‘sti Nasimga ishonib aytadi. Ammo Nasim do‘stiga xiyonat qilib, Momoqizga Bo‘ri haqida bo‘hton gaplar yetkazadi hamda qizni o‘zi xotinlikka oladi. Keyinchalik Nasim va Momoqiz boshqa joyga ko‘chib ketishadi.\n\nYillar o‘tib Bo‘ri polvon elga rais bo‘ladi, halol va adolatli mehnat qiladi, el-yurt hurmatini qozonadi. Onasi vafot etganda Nasim taziyaga keladi, lekin o‘tmishdagi yaralar unutilmaydi. Bo‘ri polvon o‘g‘li Tilovberdini mard va sadoqatli polvon qilib tarbiyalaydi.\n\nTo‘y davrasida Tilovberdi raqiblarini yiqitib, oxirida Nasim polvonning o‘g‘li Abray polvon bilan to‘qnashadi. Tilovberdi Abrayni odamlar ustiga yiqitganida, Bo‘ri polvon o‘z o‘g‘lining g‘alabasini halol emas deb topadi va uni qayta olishga majbur qiladi. Tilovberdi otasidan xafa bo‘lib, ikkinchi olishda Abrayga dangal yiqiladi.\n\nMag‘lubiyatdan so‘ng Bo‘ri polvon yolg‘iz qolib, hayot yo‘lini, birinchi muhabbatini hamda or-nomus burchini mulohaza qiladi. U xalq adolati va ezgulik yulduzi hech qachon o‘chmasligiga, uning avlodlari ushbu mardlik an’anasini mangu davom ettirishiga ishonch hosil qiladi.",
+  "characters": "Bo‘ri polvon — qissaning bosh qahramoni, adolatli, mag‘rur, or-nomusni hamma narsadan ustun qo‘yadigan va xalq urf-odatlariga sodiq polvon hamda sobiq kolxoz raisi.\nNasim polvon — Bo‘rining bolalikdagi qiyomatli do‘sti; yoshligida do‘stiga xiyonat qilib Momoqizga uylangan, keyinchalik kutilmagan falokat sabab ko‘zi ojiz bo‘lib qolgan murakkab obraz.\nMomoqiz — Bo‘ri polvonning birinchi pok muhabbati, keyinchalik Nasimga turmushga chiqqan dilbar qiz.\nTilovberdi polvon — Bo‘ri polvonning mard, g‘ururli va otasi yo‘lidan borayotgan polvon o‘g‘li.\nAbray polvon — Nasim polvonning o‘g‘li, davrada Tilovberdi bilan olishib g‘olib bo‘ladigan polvon.",
+  "conclusion": "Asar bolaga halollik, adolat va el-yurt oldidagi mas’uliyat shaxsiy manfaatlardan ustun turishini o‘rgatadi. Qahramonning o‘z o‘g‘liga yon bosmasdan odil hukm chiqarishi mardlik va haqiqiy e’tiqod namunasidir. Kitobxon do‘stlikka sadoqatli bo‘lish, xiyonatdan yiroq yurish va milliy qadriyatlarni e’zozlash sabog‘ini oladi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Milliy urf-odatlar, mardlik, or-nomus hamda hayotiy saboqlar haqida o‘qishni xohlaydigan o‘smirlarga.",
+  "events": [
+   "1) Xo‘jasoat qishlog‘ida Zulfiqor polvonning sunnat to‘yi munosabati bilan el-yurt to‘yga chorlanadi.",
+   "2) To‘yxonada bolalar turli milliy o‘yinlar o‘ynaydi, ayollar va erkaklar eliy sovg‘alar bilan keladi.",
+   "3) Tunda to‘y hovlisida olish musobaqasi boshlanadi va Bo‘ri polvon bosh bakovul etib saylanadi.",
+   "4) Bo‘ri polvon yosh bolalar va o‘smirlarni navbat bilan davraga chiqarib olishtiradi.",
+   "5) Davrada Bo‘ri polvon ko‘zi ojiz bo‘lib qolgan bolalik do‘sti Nasim polvonni ko‘rib qoladi.",
+   "6) Bo‘ri polvonning xayolidan bolalik yillari, Nasim bilan moyak urishtirib, podada birga yurgan kunlari o‘tadi.",
+   "7) Bo‘ri yoshligida Momoqizni sevib qoladi va ko‘nglidagi sirini do‘sti Nasimga ishonadi.",
+   "8) Nasim Momoqizga Bo‘ri haqida bo‘hton gapirib, do‘stiga xiyonat qiladi va qizga o‘zi uylanadi.",
+   "9) Nasim bilan Momoqiz boshqa brigadaga, so‘ngra boshqa tuman yovig‘iga ko‘chib ketadi.",
+   "10) Bo‘ri polvon mehnatsevarligi va halolligi bilan elda obro‘ topib, kolxoz raisi etib saylanadi.",
+   "11) Sobiq rais Bo‘rining onasi qabriga oppoq marmar sag‘ana qo‘ydiradi va evaziga ferma mudirligini oladi.",
+   "12) Bo‘ri polvonning onasi vafot etganida, Nasim polvon taziyaga keladi, lekin eski yaralar bitmaydi.",
+   "13) Bo‘ri polvon o‘g‘li Tilovberdini halol, mard va bilimli polvon qilib tarbiyalaydi.",
+   "14) To‘y davrasida Tilovberdi polvon sho‘rchilik Maksim polvon bilan olishib, o‘z mahoratini ko‘rsatadi.",
+   "15) Nasim polvonning o‘g‘li Abray polvon davraga chiqib, Tilovberdi bilan olishadi.",
+   "16) Tilovberdi Abrayni odamlar ustiga yiqitganida, Bo‘ri polvon buni bekor deb topib, qayta olish buyuradi.",
+   "17) Otasining adolatli lekin qattiq hukmidan xafa bo‘lgan Tilovberdi ikkinchi safar Abrayga dangal yiqiladi.",
+   "18) Abray polvon g‘olib bo‘lib, to‘y sovrini bo‘lgan ho‘kizni va to‘nni qo‘lga kiritadi.",
+   "19) Davradan chetga chiqqan Bo‘ri polvon qorong‘ida yolg‘iz o‘tirib, tasbeh o‘g‘iradi va o‘tmishini xotirlaydi.",
+   "20) Bo‘ri polvon o‘z avlodi va mardlik ruhining yulduzi mangu yonishiga ishonch hosil qilib uyiga qaytadi."
+  ],
+  "quotes": [
+   "Or-nomus uchun kurash bolalikdan boshlanadi!",
+   "Vatan – kindik qon tommish yerdan boshlanadi!",
+   "Polvon o‘zini uch balodan asrasagina polvon bo‘ladi. Birinchisi – ayoldan o‘zini tiyish!",
+   "Polvonmisan — yerning ustiga yiqit!",
+   "Odamda pokdomon tuyg‘ular ko‘p bo‘ladi, s‘onmas tuyg‘ular ko‘p bo‘ladi... Ammo birinchi... birinchi ko‘ngil!..",
+   "Yulduzim hali yonadi! Davralarim hali davom etadi!",
+   "Yulduzim mangu yonadi!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zulfiqor polvon qaysi qishloqda sunnat to‘yi berdi?",
+   "options": [
+    "A) Xo‘jasoat qishlog‘ida",
+    "B) Vaxshivor qishlog‘ida",
+    "C) Bodavo qishlog‘ida",
+    "D) Zardaqul qishlog‘ida"
+   ],
+   "answer": "A) Xo‘jasoat qishlog‘ida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olish paytida polvonlar sovuq qotsa qayerda isinishdi?",
+   "options": [
+    "A) Doshqozon yonida",
+    "B) Olov cho‘g‘i qoshida",
+    "C) O‘tov ichida",
+    "D) Samovar atrofida"
+   ],
+   "answer": "B) Olov cho‘g‘i qoshida"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Davrada bosh bakovullik vazifasi kimga topshirildi?",
+   "options": [
+    "A) Hotam polvonga",
+    "B) Zulfiqor polvonga",
+    "C) Bo‘ri polvonga",
+    "D) Amir polvonga"
+   ],
+   "answer": "C) Bo‘ri polvonga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘ri va Nasim bolalikda qanday o‘yin o‘ynashdi?",
+   "options": [
+    "A) Chillak o‘yini",
+    "B) Moyak urishtirish o‘yini",
+    "C) Varrak uchirish o‘yini",
+    "D) Xola-xola o‘yini"
+   ],
+   "answer": "B) Moyak urishtirish o‘yini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bo‘ri polvon davraga kimlarni ketma-ket chiqardi?",
+   "options": [
+    "A) Kattalarni, keyin bolalarni",
+    "B) Qariyalarni, keyin bolalarni",
+    "C) Bolalarni, keyin o‘smirlarni",
+    "D) Mehmonlarni, keyin ayollarni"
+   ],
+   "answer": "C) Bolalarni, keyin o‘smirlarni"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bo‘ri polvon ko‘zi ojiz Nasimni ko‘rib nega ma’yus tortdi?",
+   "options": [
+    "A) Bolalik do‘stiga rahmi kelgani uchun",
+    "B) Murosa qilolmay qochgani uchun",
+    "C) Davradan haydalgani uchun",
+    "D) Olishda yengilgani uchun"
+   ],
+   "answer": "A) Bolalik do‘stiga rahmi kelgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yosh bolalar olishganda nega davra kulib yubordi?",
+   "options": [
+    "A) Yechinmay olishgani uchun",
+    "B) Chappa tarafdan aylanishgani uchun",
+    "C) Yiqilib yig‘lashgani uchun",
+    "D) Qochib ketishgani uchun"
+   ],
+   "answer": "B) Chappa tarafdan aylanishgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qariya polvonlarning davrani ochib berishi qanday odat?",
+   "options": [
+    "A) Manmanlik va maqtanchoqlik",
+    "B) Yoshlarga yo‘l ochish va udum",
+    "C) Boshqalarni mensimaslik",
+    "D) Vaqtni bekor o‘tkazish"
+   ],
+   "answer": "B) Yoshlarga yo‘l ochish va udum"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif yulduzlar yongan tunni qanday tasvirlaydi?",
+   "options": [
+    "A) Yulduzlar g‘uj-guj yondi",
+    "B) Osmon qorong‘i va jimsit",
+    "C) Yulduzlar ketma-ket o‘chdi",
+    "D) Qorong‘ilik osmonni qopladi"
+   ],
+   "answer": "A) Yulduzlar g‘uj-guj yondi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Vatan – kindik qon tommish yerdan boshlanadi» deyilganda nima anglashiladi?",
+   "options": [
+    "A) O‘z tug‘ilgan yerini e’zozlash",
+    "B) Faqat tuman markazida yashash",
+    "C) Urushda doim g‘olib bo‘lish",
+    "D) O‘z uyini sotib ketish"
+   ],
+   "answer": "A) O‘z tug‘ilgan yerini e’zozlash"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘ri qaysi qizni yaxshi ko‘rib qolgan edi?",
+   "options": [
+    "A) Oyxol xolani",
+    "B) Momoqizni",
+    "C) Tamaraxonimni",
+    "D) Mingoy baychani"
+   ],
+   "answer": "B) Momoqizni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nasim Momoqizga Bo‘ri haqida qanday yolg‘on aytdi?",
+   "options": [
+    "A) Bo‘rining boshqa qizcha bor dedi",
+    "B) Bo‘ri seni mensimaydi dedi",
+    "C) Bo‘ri beadob gap aytdi dedi",
+    "D) Bo‘ri qishloqdan ketdi dedi"
+   ],
+   "answer": "C) Bo‘ri beadob gap aytdi dedi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eski rais Bo‘rining onasi qabriga nima qo‘ydirdi?",
+   "options": [
+    "A) Yog‘och belgi",
+    "B) Beqasam to‘n",
+    "C) Oppoq marmar sag‘ana",
+    "D) Oddiy g‘ishtin devor"
+   ],
+   "answer": "C) Oppoq marmar sag‘ana"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Toshkentdan kelgan Tamaraxonim kimning belbog‘iga cho‘k tushdi?",
+   "options": [
+    "A) Bakir mirobning belbog‘iga",
+    "B) Qobil sho‘roning belbog‘iga",
+    "C) Bo‘ri polvonning belbog‘iga",
+    "D) Samad hosilotning belbog‘iga"
+   ],
+   "answer": "C) Bo‘ri polvonning belbog‘iga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Nasim bilan Momoqizning turmush qurishi ketma-ketligi qanday bo‘ldi?",
+   "options": [
+    "A) Yolg‘on ishlatildi, so‘ng nikohlandi",
+    "B) Olishuv bo‘ldi, so‘ng sovchi keldi",
+    "C) Qochib ketishdi, so‘ng yarashishdi",
+    "D) Do‘stlashishdi, so‘ng arazlashishdi"
+   ],
+   "answer": "A) Yolg‘on ishlatildi, so‘ng nikohlandi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bo‘ri polvon rais bo‘lgach qanday tartibda ish tutdi?",
+   "options": [
+    "A) Elga xizmat qildi, adolat o‘rnatdi",
+    "B) Hammaga buyruq berdi, do‘stlashmadi",
+    "C) Qishloqni tark etib shaharga ketdi",
+    "D) Ishni tashlab polvonlik qildi"
+   ],
+   "answer": "A) Elga xizmat qildi, adolat o‘rnatdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nasim o‘z qilmishini tan olgach nega do‘stining yo‘lini to‘sdi?",
+   "options": [
+    "A) Bo‘ri Momoqizga yolvarmasligi uchun",
+    "B) Bo‘ri uni urib yubormasligi uchun",
+    "C) Hangi qochib ketmasligi uchun",
+    "D) Xirmonchi chollar ko‘rmasligi uchun"
+   ],
+   "answer": "A) Bo‘ri Momoqizga yolvarmasligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bo‘ri polvon nega sobiq raisga ferma mudirligini berdi?",
+   "options": [
+    "A) Onasi qabriga marmar qo‘ydirgani uchun",
+    "B) Rais undan qo‘rqqani uchun",
+    "C) Oldindan va’da bergani uchun",
+    "D) Boshqa odam topilmagani uchun"
+   ],
+   "answer": "A) Onasi qabriga marmar qo‘ydirgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Nasimning do‘stiga yolg‘on gapirib qizni qasddan ayirishi qanday xulq?",
+   "options": [
+    "A) Do‘stlikka xiyonat va g‘irromlik",
+    "B) Haqiqiy chaqqonlik va epchillik",
+    "C) To‘g‘ri va halol yo‘l",
+    "D) Kattalarga nisbatan hurmatsizlik"
+   ],
+   "answer": "A) Do‘stlikka xiyonat va g‘irromlik"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Bo‘ri polvonning ichki tug‘yonlarini qanday ifodalaydi?",
+   "options": [
+    "A) Yarasiga tig‘ tekkan bemorday ingradi",
+    "B) Boshqalarga baqirib g‘azabini sochdi",
+    "C) Shoshib qishloqdan qochib ketdi",
+    "D) Kulib do‘stini qutladi"
+   ],
+   "answer": "A) Yarasiga tig‘ tekkan bemorday ingradi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘ri polvon o‘g‘lini tarbiyalashda unga nima yuttirardi?",
+   "options": [
+    "A) Sut va asal",
+    "B) Tuxum yuttirardi",
+    "C) Mayiz va yong‘oq",
+    "D) Shirguruch berardi"
+   ],
+   "answer": "B) Tuxum yuttirardi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tilovberdi Abrayni qayerga yiqitgani uchun yutuq berilmadi?",
+   "options": [
+    "A) Odamlar ustiga yiqitgani uchun",
+    "B) Somon ustiga yiqitgani uchun",
+    "C) Olov ichiga yiqitgani uchun",
+    "D) Gilam ustiga yiqitgani uchun"
+   ],
+   "answer": "A) Odamlar ustiga yiqitgani uchun"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abray polvon kimsaning o‘g‘li edi?",
+   "options": [
+    "A) Bosh bakovulning o‘g‘li",
+    "B) Nasim polvonning o‘g‘li",
+    "C) Bakir mirobning o‘g‘li",
+    "D) Zulfiqor polvonning o‘g‘li"
+   ],
+   "answer": "B) Nasim polvonning o‘g‘li"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘ri polvon yolg‘iz qolganda qo‘lida nima o‘ynatib o‘tirdi?",
+   "options": [
+    "A) Qamchisini",
+    "B) Tasbehini",
+    "C) Beqasam to‘nini",
+    "D) Pichoqni"
+   ],
+   "answer": "B) Tasbehini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Olish yakunida voqealar qanday ketma-ketlikda sodir bo‘ldi?",
+   "options": [
+    "A) Tilovberdi mag‘lub bo‘ldi, Bo‘ri ketdi",
+    "B) Abray mag‘lub bo‘ldi, to‘y tugadi",
+    "C) Tilovberdi g‘olib bo‘ldi, bayram qilindi",
+    "D) Nasim mag‘lub bo‘ldi, duel bo‘ldi"
+   ],
+   "answer": "A) Tilovberdi mag‘lub bo‘ldi, Bo‘ri ketdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bo‘ri polvon o‘z o‘g‘lining yiqitganini nega bekor qildi?",
+   "options": [
+    "A) Xolis va halol bakovul bo‘lgani uchun",
+    "B) O‘g‘lini yomon ko‘rgani uchun",
+    "C) Nasimdan qo‘rqqani uchun",
+    "D) Sovrinni berishni xohlamagani uchun"
+   ],
+   "answer": "A) Xolis va halol bakovul bo‘lgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tilovberdi otasidan nega xafa bo‘lib yig‘ladi?",
+   "options": [
+    "A) Otasi uni g‘irrom deb hisoblagani uchun",
+    "B) Sovrin unga berilmagani uchun",
+    "C) Do‘stlari uning ustidan kulgani uchun",
+    "D) Ishga joylasholmagani uchun"
+   ],
+   "answer": "A) Otasi uni g‘irrom deb hisoblagani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bo‘ri polvonning o‘z o‘g‘liga yon bosmasdan odil hukm chiqarishi qanday xislat?",
+   "options": [
+    "A) Yuksak halollik va adolatparvarlik",
+    "B) Bag‘ritoshlik va beshafqatlik",
+    "C) Kibr va o‘zini ko‘rsatish",
+    "D) Tajribasizlik va nodonlik"
+   ],
+   "answer": "A) Yuksak halollik va adolatparvarlik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Asar so‘ngida Bo‘ri polvonning «Yulduzim mangu yonadi» deyishi nimani anglatadi?",
+   "options": [
+    "A) Ezgu nomi va avlodi davomiyligini",
+    "B) Haqiqatan osmondagi yulduzni",
+    "C) Boylik va mansabi saqlanishini",
+    "D) Kurashni butunlay tashlashini"
+   ],
+   "answer": "A) Ezgu nomi va avlodi davomiyligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Qissada xalqona iboralar va kurash ruhi asarga qanday fayz bag‘ishlagan?",
+   "options": [
+    "A) Milliy ruh va samimiyat bag‘ishlagan",
+    "B) Matnni tushunarsiz va og‘ir qilgan",
+    "C) Qahramonlarni xunuk ko‘rsatgan",
+    "D) Asar syujetini buzgan"
+   ],
+   "answer": "A) Milliy ruh va samimiyat bag‘ishlagan"
+  }
+ ]
+}

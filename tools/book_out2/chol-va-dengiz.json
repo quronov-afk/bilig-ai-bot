@@ -1,0 +1,479 @@
+{
+ "title": "Chol va dengiz",
+ "author": "Ernest Xeminguey",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "sabr-toqat",
+   "iroda va matonat",
+   "ustoz va shogird",
+   "mehnatsevarlik",
+   "tabiat bilan uyg‘unlik"
+  ],
+  "theme": "Asar insonning matonati, bukilmas irodasi va hayot sinovlariga qarshi mardona kurashini ulug‘laydi. Inson mag‘lubiyatga taslim bo‘lmasligi, mehnat va sabr orqali o‘z qadr-qimmati hamda ruhining ustunligini saqlab qolishi asarning bosh fikridir.",
+  "summary": "Kuba baliqchisi Santyago uzoq vaqt baliq tutolmay, omadsizlikka uchraydi. Shogirdi Manolinning ota-onasi bolani boshqa qayiqqa o‘tkazib yuborishadi, lekin bola cholga sadoqatli bo‘lib qoladi, unga g‘amxo‘rlik qiladi. Bir kuni Santyago yolg‘iz o‘zi okeanning juda uzoq joyiga ovga chiqadi. Uning qarmoq chilviriga g‘oyat ulkan marlin baliq ilinadi. Baliq qayiqni o‘zi bilan birga ochiq okean qa’riga sudrab ketadi. Santyago ikki kun-u ikki kecha ochiq dengizda ochlik, charchoq va qo‘llaridagi og‘riqqa chidab, baliq bilan olishadi. Nihoyat, u matonat ko‘rsatib, marlinni garpun bilan o‘ldiradi va qayiq yoniga bog‘laydi. Biroq ortga qaytayotganda, baliq qonining hidini sezgan akulalar ketma-ket hujum qila boshlaydi. Chol bor quroli — garpun, pichoq, to‘qmoq va hattoki rumpel (rul dastasining bo‘lagi) bilan oxirgi kuchi qolguncha kurashadi. Akulalar marlinning barcha go‘shtini g‘ajib ketadi, Santyago qirg‘oqqa faqat baliqning ulkan suyagini olib keladi. Qirg‘oqda kishilar va baliqchilar baliqning haybatidan hayratga tushishadi. Manolin cholning ahvolini ko‘rib yig‘laydi va endi har qanday holatda ham u bilan birga ovga chiqishga ahd qiladi. Santyago esa charchab uyquga ketadi va tushida yana Afrika sohillaridagi yosh arslonlarni ko‘radi.",
+  "characters": "Santyago — keksaygan, lekin irodali va tajribali baliqchi. U tabiatni va dengizni chuqur tushunadi hamda qiyinchiliklarga taslim bo‘lmaydi.\nManolin — Santyagoning sodiq shogirdi. U cholni chin ko‘ngildan hurmat qiladi, unga g‘amxo‘rlik qiladi va undan baliqchilik sirlarini o‘rganadi.\nMartin — Terras restorani xo‘jayini, chol va bolaga yordamlashib turadigan saxovatli odam.\nPedriko — Santyagoga qayiq hamda asboblarni qarashda yordam beradigan baliqchi.",
+  "conclusion": "Bu asar o‘quvchida matonat, sabr-toqat va aslo taslim bo‘lmaslik hissini shakllantiradi. Qahramonning qiyinchiliklar qarshisidagi mardligi bolani mehnatsevarlikka hamda ustozga hurmat bilan qarashga o‘rgatadi. Bola hayotda moddiy yutuqlardan ko‘ra insoniy qadr-qimmat va ruhiy iroda ustunroq ekanini anglab yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, mardona va ta’sirli",
+  "for_whom": "Kattalarga va tabiatga hurmat bilan qaraydigan, qahramonning mardligidan ilhomlanib, irodasini tobmoqchi bo‘lgan bolalarga.",
+  "events": [
+   "Chol uzoq vaqt baliq tutolmaydi, bolaning ota-onasi uni boshqa qayiqqa o‘tkazib yuboradi.",
+   "Manolin cholga yordamlashishda davom etadi va uni Terrasda pivo hamda ovqat bilan siylaydi.",
+   "Chol va bola beysbol hamda Afrika sohillaridagi yosh arslonlar haqida gurunglashishadi.",
+   "Santyago sahar mardonda yolg‘iz o‘zi okeanning uzoq va chuqur joyiga ovga jo‘naydi.",
+   "Chol qarmoqlarni aniq va puxta tartibda har xil chuqurlikka tushirib qo‘yadi.",
+   "Fregat qushining harakatlariga qarab, Santyago suv ostida yirtqich baliqlar borligini payqaydi.",
+   "Santyagoning uzun chilviriga g‘oyat ulkan marlin baliq ilinadi.",
+   "Ulkan baliq qayiqni dengiz qa’riga, ochiq okean bag‘riga qarab sudrab keta boshlaydi.",
+   "Santyago tun boyi va ertasi kuni chap qo‘li tomir tortishiga qaramay, chilvirni mahkam tutib turadi.",
+   "Chol kuch to‘plash uchun tutgan tunets va makrel baliqlarini xomlay yeydi.",
+   "Santyago baliqning qudrati va go‘zalligiga qoyil qolib, uni o‘ziga birodar deb biladi.",
+   "Uchinchi kuni baliq qayiq atrofida aylana boshlaydi va suv yuziga chiqadi.",
+   "Santyago bor kuchini to‘plab, marlinga garpun uradi va uni mag‘lub etadi.",
+   "Chol ulkan baliqni qayiq yoniga mustahkam qilib chandib bog‘laydi va qirg‘oqqa qarab suzadi.",
+   "Marlin qonining hidini sezib, birinchi dentuso akulasi hujum qiladi.",
+   "Santyago akulaga garpun urib o‘ldiradi, lekin garpun va arqondan ajraladi.",
+   "Keyinroq boshqa akulalar keladi, chol pichoqni eshkakka bog‘lab u bilan urushadi.",
+   "Pichoq sinib ketgach, Santyago to‘qmoq va rumpel bilan akulalarga qarshi olishadi.",
+   "Akulalar marlinning barcha go‘shtini yeb tugatishadi, faqat skeleti qoladi.",
+   "Santyago yarim kechada holdan toygan holda gavan sohiliga yetib keladi va kulbasiga chiqib uxlab qoladi.",
+   "Ertalab baliqchilar va Manolin qayiq yonida to‘planib, ulkan baliq suyagiga hayrat bilan qarashadi.",
+   "Manolin yig‘lab cholning kulbasiga kofe olib keladi va u bilan yana birga ovga chiqishga so‘z beradi."
+  ],
+  "quotes": [
+   "Odamzodni yanchib tashlash mumkin, lekin uni yengib bo‘lmaydi.",
+   "Dunyoda yaxshi baliqchilar kam emas, juda ajoyiblari ham bor. Lekin sening oldingga tushadigani yo‘q.",
+   "Baxt kelgan chog‘da, uni kutib olmoqqa tayyor turaman.",
+   "Chollar nega juda barvaqt turisharkin-a? Nahotki, buni qolgan umrlaridan bir kunini bo‘lsa ham cho‘zish niyatida qilishsa?",
+   "Har kunning o‘z taomili bor.",
+   "O‘ringa oyoq cho‘zish ayni hikmatning o‘zi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Manolin nima uchun Santyagoning qayig‘idan boshqa qayiqqa o‘tdi?",
+   "options": [
+    "A) Otasining topshirig‘i va majburlovi bilan",
+    "B) Chol uni o‘zi haydab yuborgani uchun",
+    "C) Boshqa qayiq egasi ko‘p pul bergani uchun",
+    "D) Dengizga chiqishdan qo‘rqib qolgani uchun"
+   ],
+   "answer": "A) Otasining topshirig‘i va majburlovi bilan"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bola Santyagoga va uning buyumlariga qayerda yordamlashardi?",
+   "options": [
+    "A) Dengiz sohilida va qirg‘oqda",
+    "B) Shahar markazidagi bozorda",
+    "C) Faqat kemasozlik ustaxonasida",
+    "D) Faqat shahar xastaxonasida"
+   ],
+   "answer": "A) Dengiz sohilida va qirg‘oqda"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Cholning tanasida nima eski emas, quvnoq va mardona edi?",
+   "options": [
+    "A) Moviy rangdagi ko‘zlari",
+    "B) Boshidagi kiygan shlyapasi",
+    "C) Qayiqdagi oqlangan yelkani",
+    "D) Qo‘lidagi chuqur chandiqlari"
+   ],
+   "answer": "A) Moviy rangdagi ko‘zlari"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Santyago va bola Terras restoranida o‘tirganda, ularga kim ovqat berardi?",
+   "options": [
+    "A) Restoran xo‘jayini Martin",
+    "B) Gavanadagi begona sayyoh",
+    "C) Cholning sobiq qo‘shnisi",
+    "D) Shahardagi tajribali shifokor"
+   ],
+   "answer": "A) Restoran xo‘jayini Martin"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Santyagoning kulbasidagi devorda qanday buyumlar osig‘liq edi?",
+   "options": [
+    "A) Muqaddas siymolar tushirilgan tasvirlar",
+    "B) Beysbol o‘yinchilarining katta suratlari",
+    "C) Dengiz xaritalari va durbinlar",
+    "D) Yangi garpunlar va chilvirlar"
+   ],
+   "answer": "A) Muqaddas siymolar tushirilgan tasvirlar"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Chol nima uchun xotinining suratini devordan olib bekitib qo‘ygan?",
+   "options": [
+    "A) Suratga ko‘zi tushsa juda ezilgani uchun",
+    "B) Surat eskirib, yirtilib ketgani uchun",
+    "C) Xotini shunday qilishni tayinlagani uchun",
+    "D) Kulba devorida joy qolmagani uchun"
+   ],
+   "answer": "A) Suratga ko‘zi tushsa juda ezilgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Santyago qarmoqlarni boshqa baliqchilardan ko‘ra aniqroq tashlardi?",
+   "options": [
+    "A) Ishini puxta va tartib bilan qilgani uchun",
+    "B) Qayig‘i boshqalarnikidan tez suzgani uchun",
+    "C) Ochiq dengiz xaritasiga qaragani uchun",
+    "D) Dengiz tubini aniq ko‘rgani uchun"
+   ],
+   "answer": "A) Ishini puxta va tartib bilan qilgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Cholning birovdan qarz olmaslik haqidagi fikri qanday fazilatni ko‘rsatadi?",
+   "options": [
+    "A) O‘z qadr-qimmatini baland tutishni",
+    "B) Odamlarga ishonmaslik va qo‘rqishni",
+    "C) Kibrli va manmansiraydigan fe’lni",
+    "D) Xasislik va tejamkorlikni"
+   ],
+   "answer": "A) O‘z qadr-qimmatini baland tutishni"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Santyagoning dengizga bo‘lgan munosabatini qanday ibora bilan tasvirlaydi?",
+   "options": [
+    "A) Unga muhabbat bilan la mar deydi",
+    "B) Uni doimo dushman deb biladi",
+    "C) Unga berahm va qahri qattiq deydi",
+    "D) Uni qo‘rqinchli va dahshatli deydi"
+   ],
+   "answer": "A) Unga muhabbat bilan la mar deydi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Santyagoning tushida Afrika sohillaridagi yosh arslonlarni ko‘rishi nimani anglatadi?",
+   "options": [
+    "A) Yoshlikdagi g‘ayrat va erkinlik hissini",
+    "B) Ovchi bo‘lishga bo‘lgan kuchli ishtiyoqni",
+    "C) Yirtqich hayvonlardan qattiq qo‘rqishni",
+    "D) Ochiq okeanda yolg‘iz qolganini"
+   ],
+   "answer": "A) Yoshlikdagi g‘ayrat va erkinlik hissini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Santyagoning qarmoq chilviriga qanday ulkan baliq ilindi?",
+   "options": [
+    "A) Kattakon marlin baliq",
+    "B) Ulkan elektr skat",
+    "C) Uzun va yirtqich ilonbaliq",
+    "D) Bahaybat zangori kit"
+   ],
+   "answer": "A) Kattakon marlin baliq"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Marlin ilingach, qayiq va chol bilan nima yuz berdi?",
+   "options": [
+    "A) Baliq qayiqni okeanga sudrab ketdi",
+    "B) Qayiq daryo toshidan ag‘darildi",
+    "C) Qayiq darhol sohilga qaytdi",
+    "D) Chilvir uzilib, baliq qochib ketdi"
+   ],
+   "answer": "A) Baliq qayiqni okeanga sudrab ketdi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Santyago charchoq va ochlikda kuchini saqlash uchun nima yedi?",
+   "options": [
+    "A) Xom tunets va makrel etini",
+    "B) Quritilgan nonto‘rg‘amchi bo‘laklarini",
+    "C) Konservalangan tayyor go‘shtni",
+    "D) Sohil bo‘yida pishirilgan bananni"
+   ],
+   "answer": "A) Xom tunets va makrel etini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Santyago ochiq dengizda qiynalganda tez-tez kimni eslardi?",
+   "options": [
+    "A) Yonida bo‘lishini xohlagan bolani",
+    "B) Terras restorani xo‘jayinini",
+    "C) Shahardagi tajribali shifokorni",
+    "D) Gavanadagi eski tanishlarini"
+   ],
+   "answer": "A) Yonida bo‘lishini xohlagan bolani"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dengizda yolg‘iz qolgan chol qaysi jonivorlarni o‘ziga hamroh bilardi?",
+   "options": [
+    "A) Uchar baliqlar va dengiz qaldirg‘ochlarini",
+    "B) Yirtqich akulalar va meduzalarni",
+    "C) Sohil bo‘yidagi yirtqich qushlarni",
+    "D) Dengiz tubidagi qisqichbaqalarni"
+   ],
+   "answer": "A) Uchar baliqlar va dengiz qaldirg‘ochlarini"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Santyago marlin bilan olishayotganda qanday jismoniy qiyinchiliklarga duch keldi?",
+   "options": [
+    "A) Qo‘li tomir tortishib, tili quridi",
+    "B) Isitmasi ko‘tarilib, shamollab qoldi",
+    "C) Ko‘zlari ko‘rmay, qulog‘i bitdi",
+    "D) Boshi aylanib, oyog‘i sindi"
+   ],
+   "answer": "A) Qo‘li tomir tortishib, tili quridi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Santyago nima uchun marlin baliqni «birodarim» deb ataydi?",
+   "options": [
+    "A) Uning qudrati va mardligini hurmat qilgani uchun",
+    "B) U bilan sohilga birga suzib kelgani uchun",
+    "C) Baliq cholning gaplariga tushungani uchun",
+    "D) Uni tutish juda oson bo‘lgani uchun"
+   ],
+   "answer": "A) Uning qudrati va mardligini hurmat qilgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Chol og‘riq va charchoqqa qaramay, nima uchun chilvirni qo‘yib yubormadi?",
+   "options": [
+    "A) Irodasi va burchiga sadoqati tufayli",
+    "B) Qayiqdan tushib ketishdan qo‘rqqani uchun",
+    "C) Bola uni urishishidan cho‘chigani uchun",
+    "D) Qirqib tashlashga pichog‘i bo‘lmagani uchun"
+   ],
+   "answer": "A) Irodasi va burchiga sadoqati tufayli"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Santyagoning ochiq okeanda yolg‘iz o‘zi kurashishi bola uchun qanday saboq?",
+   "options": [
+    "A) Har qanday sharoitda matonatli bo‘lish",
+    "B) Dengizga hech qachon chiqmaslik",
+    "C) Faqat oson ishlarni tanlash",
+    "D) Qiyinchilik paydo bo‘lganda chekinish"
+   ],
+   "answer": "A) Har qanday sharoitda matonatli bo‘lish"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif cholning irodasini ko‘rsatish uchun uning qaysi sadoqatli so‘zlarini keltirgan?",
+   "options": [
+    "A) Odam bolasini yengib bo‘lmaydi",
+    "B) Mening ovim tugadi, yengildim",
+    "C) Dengiz meni har doim qo‘rqitadi",
+    "D) Baliqchilik juda qiyin va foydasiz"
+   ],
+   "answer": "A) Odam bolasini yengib bo‘lmaydi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Marlin baliqni o‘ldirgandan so‘ng, Santyago uni qayerga joylashtirdi?",
+   "options": [
+    "A) Qayiqning yoniga mahkam bog‘ladi",
+    "B) Qayiqning ichiga arzon joyladi",
+    "C) Suv yuzida erkin oqizib qo‘ydi",
+    "D) Yelkan ostiga berkitib qo‘ydi"
+   ],
+   "answer": "A) Qayiqning yoniga mahkam bog‘ladi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Marlinning qon hidini sezib, cholga birinchi bo‘lib qanday yirtqich tashlandi?",
+   "options": [
+    "A) Dentuso nomli ulkan akula",
+    "B) Boshqa ulkan marlin baliq",
+    "C) To‘da bo‘lib suzgan makrellar",
+    "D) Dengiz tubidagi bahaybat kalmar"
+   ],
+   "answer": "A) Dentuso nomli ulkan akula"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pichog‘i va garpuni yo‘qolgan chol akulalarga qarshi nimadan foydalandi?",
+   "options": [
+    "A) To‘qmoq va rul dastasidan",
+    "B) Yelkan va yog‘och teshgichdan",
+    "C) Katta temir zanjir va zambildan",
+    "D) Suvli shisha va eski poyabzaldan"
+   ],
+   "answer": "A) To‘qmoq va rul dastasidan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Santyago tun yarmida sohilga qaytib kelganda, baliqdan nima qolgan edi?",
+   "options": [
+    "A) Faqat oppoq va ulkan skeleti",
+    "B) Faqat bosh qismi va dumi",
+    "C) Yarim bo‘lak dumsiz go‘shti",
+    "D) Butun va shikastlanmagan gavdasi"
+   ],
+   "answer": "A) Faqat oppoq va ulkan skeleti"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Santyagoga akulalar hujum qilganda, chol ketma-ket qanday qurollar bilan qarshilik ko‘rsatdi?",
+   "options": [
+    "A) Garpun, eshkakka bog‘langan pichoq, to‘qmoq va rumpel",
+    "B) Faqat miltiq, kamon, qilich va garpun",
+    "C) To‘r, tuzoq, suv va chiroq",
+    "D) Qayroq, qarmoq, pichoq va qilich"
+   ],
+   "answer": "A) Garpun, eshkakka bog‘langan pichoq, to‘qmoq va rumpel"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun baliqchilar va turistlar sohilga kelib marlin suyagiga hayratlanishdi?",
+   "options": [
+    "A) Baliqning misli ko‘rilmagan haybatli hajmidan",
+    "B) Qayiqning juda chiroyli va yangiligidan",
+    "C) Cholning sohilga tez kelganidan",
+    "D) Akulalarning suvda ko‘pligidan"
+   ],
+   "answer": "A) Baliqning misli ko‘rilmagan haybatli hajmidan"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Manolin cholning jarohatlangan qo‘llarini ko‘rib nima uchun yig‘ladi?",
+   "options": [
+    "A) Chol chekgan azoblarga rahm-shafqati kelganidan",
+    "B) Qayiq butunlay yaroqsiz bo‘lib qolganidan",
+    "C) Baliq go‘shtidan ushlab ko‘rolmaganidan",
+    "D) Ota-onasi uni urishishidan qo‘rqqanidan"
+   ],
+   "answer": "A) Chol chekgan azoblarga rahm-shafqati kelganidan"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Santyagoning mag‘lubiyatga uchraganiga qaramay ruhini tushirmasligi nimani o‘rgatadi?",
+   "options": [
+    "A) Haqiqiy g‘alaba ruhiy matonatda ekanini",
+    "B) Natijasiz mehnat doim befoyda ekanini",
+    "C) Omadsiz insonga yordam bermaslikni",
+    "D) Katta maqsaddan darrov voz kechishni"
+   ],
+   "answer": "A) Haqiqiy g‘alaba ruhiy matonatda ekanini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Manolinning ota-onasi qarshiligiga qaramay, Santyago bilan ovga chiqmoqchi bo‘lgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — u sadoqatli va mehribon shogird",
+    "B) Xato — u ota-onasiga umuman quloq solmaydi",
+    "C) Noto‘g‘ri — chol unga baliqchilikni o‘rgatolmaydi",
+    "D) Noma’lum — bola hali o‘z qaroriga ega emas"
+   ],
+   "answer": "A) To‘g‘ri — u sadoqatli va mehribon shogird"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida Santyagoning uyquda arslonlarni ko‘rishi kitobxonda qanday tuyg‘u qoldiradi?",
+   "options": [
+    "A) Umid, matonat va sinmas ruhiy quvvat",
+    "B) Chuqur qayg‘u va umidsizlik hissi",
+    "C) Hayvonot bog‘iga borish istagi",
+    "D) Dengizdan va baliqchilikdan bezish tuyg‘usi"
+   ],
+   "answer": "A) Umid, matonat va sinmas ruhiy quvvat"
+  }
+ ]
+}

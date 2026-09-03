@@ -1,0 +1,339 @@
+{
+ "title": "Dada Qo‘rqut hikoyalari",
+ "author": "Turkiy xalqlar eposi",
+ "genre": "toʻplam",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12 yosh",
+  "topics": [
+   "jasorat",
+   "vatanparvarlik",
+   "oila va sadoqat",
+   "el-yurt",
+   "mardlik"
+  ],
+  "theme": "Asar o‘g‘uz xalqining qahramonlik tarixi, oilaga sadoqat, el-yurt va Vatanni himoya qilish, mardlik, ota-onaga hurmat hamda insof va e'tiqod kabi oliyjanob qadriyatlarni ulug‘laydi.",
+  "summary": "To‘plam o‘g‘uz elining donishmandi Dada Qo‘rqut so‘zlagan qahramonlik va ibratli dostonlardan tashkil topgan. Dastlabki doston Dersaxonning farzandsizligi va Allohdan tilab olgan o‘g‘li Bo‘g‘ochxon haqida: Bo‘g‘ochxon 15 yoshida quturgan buqani yengib beklik oladi, otasining yovuz yigitlari fitnasi sabab otasi otgan o‘qdan yaralanib, onasining davolashi bilan tuzaladi va keyinchalik otasini dushmanlar qo‘lidan qutqaradi. Tepako‘z dostonida arslonlar orasida o‘sgan Basat ismli yigit o‘z xalqiga g‘anim bo‘lib, odamlarni yeyayotgan bir ko‘zli dev — Tepako‘zning ko‘zini qizdirilgan six bilan ko‘r qilib, uning boshini kesadi va elni balodan xalos etadi. Emren dostonida mard yigit otasining sinib qolgan oyog‘i sabab dushmanga qarshi jangga kiradi, Allohdan yordam so‘rab, dushman begini yengadi va uni islomga kiritadi. Segrek dostonida ukasi asirlikda yotgan akasi Ergekni qutqarish uchun yo‘lga chiqadi, aka-uka bir-birini tanib, birgalikda dushmanni mag‘lub etishadi. Telba Dumrul dostonida mag‘rur yigit Azroil bilan kurashmoqchi bo‘ladi, lekin Azroil kelganida Allohga tavba qilib iymon keltiradi va hayoti saqlab qolinadi. Yigenek dostonida 16 yil asirlikda yotgan otasini qutqarish uchun Yigenek pahlavonlik ko‘rsatib, Duzmurd qal'asini fath etadi. Kan Turali dostonida yigit Trabzon begining qizi Seljen Xotinga uylanish uchun buqa, sher va tuyani yengadi hamda qiz bilan birga dushman hujumini qaytaradi. Salur Qozon dostonida dushman Shukli Malik Salur Qozonning oilasini asir oladi; Qozon va uning ayoli Burla Xotun or-nomusini saqlab, dushmanga qarshi mardona kurashib g‘alaba qozonishadi. Bonu Chechak va Bamsi Bayrak dostonida Bayrak 16 yil dushman zindonida asir bo‘lib, so‘ngra yurtiga qaytib keladi va yolg‘onchi Yaltajukni fosh etib, sevgan qizi Bonu Chechakka uylanadi.",
+  "characters": "Dada Qo‘rqut — O‘g‘uz xalqining donishmand oqsoqoli, folbin va maslahatchisi, dostonlar aytib duo qiladi. Dersaxon va Bo‘g‘ochxon — Otasining ishonchini qozongan va uni yovuz odamlar qo‘lidan qutqargan jasur pahlavon o‘g‘il. Basat — Arslon uyasida o‘sgan, O‘g‘uz xalqini vahshiy Tepako‘z balosidan xalos etgan jasur yigit. Emren — Otasi Begilning sha'nini va yurtini himoya qilib, Allohning yordami bilan dushmanni yenggan sodiq o‘g‘il. Segrek va Ergek — Dushman zindonida qolgan akasini qutqarish uchun jangga kirgan va uni xalos etgan aka-uka. Telba Dumrul — Mag‘rurlikdan tavbaga kelgan, Allohga iymon keltirib jonini saqlab qolgan yigit. Kan Turali va Seljen Xotin — Trabzon begining qiyin shartlarini bajarib uylangan va birgalikda dushmanga qarshi kurashgan pahlavon er-xotin. Salur Qozon — O‘g‘uz elining bosh begi, dushman asirligiga tushgan oilasi va elini qutqargan mard hukmdor. Bamsi Bayrak va Bonu Chechak — O‘n olti yillik asirlik va sinovlardan so‘ng bir-biriga erishgan vafodor oshiq-ma'shuqlar.",
+  "conclusion": "Ushbu dostonlar to‘plami bolalarga mardlik, sabr-toqat va mardona kurashish saboqlarini beradi. Ota-onaga hurmat, va'daga vafo, do‘stlik va sadoqat kabi milliy hamda umuminsoniy qadriyatlarni singdiradi. Farzandda vatanparvarlik tuyg‘usini va qiyinchiliklar oldida taslim bo‘lmaslik idrokini shakllantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "shijoatli, hayajonli, ibratli",
+  "for_whom": "Qahramonlik dostonlariga, tarixiy sarguzashtlarga va mardlik haqidagi rivoyatlarga qiziqadigan bolalar uchun.",
+  "events": [
+   "Boyindirxon ziyofatda farzandsiz Dersaxonni qora chodirga o‘tirg‘izdi.",
+   "Dersaxon xotinining maslahati bilan elga osh berib, o‘g‘il farzand ko‘rdi.",
+   "Bo‘g‘ochxon o‘n besh yoshida quturgan buqani mushti bilan urib yengdi va Dada Qo‘rqutdan ot oldi.",
+   "Qirq yovuz yigit Dersaxonni aldab, o‘g‘lini kamon bilan otishga majbur qildi.",
+   "Onasi tog‘ guli va suti bilan tayyorlangan malham orqali Bo‘g‘ochxonni davoladi.",
+   "Bo‘g‘ochxon otasini dushmanlar qo‘lidan qutqarib, beklik maromiga erishdi.",
+   "Aro‘zning yo‘qolgan o‘g‘li Basatni arslon o‘stirgani ma'lum bo‘ldi.",
+   "Cho‘pon va paridan tug‘ilgan bir ko‘zli Tepako‘z O‘g‘uz eliga kulfat keltirdi.",
+   "Basat qizdirilgan six bilan Tepako‘zning ko‘zini ko‘r qilib, uning boshini tanasidan judo etdi.",
+   "Begil ovda kiyik ketidan quvib, oyog‘ini sindirib oldi va sirini xotiniga aytdi.",
+   "Begilning o‘g‘li Emren dushmanga qarshi jang qilib, Allohning yordami bilan g‘alaba qozondi.",
+   "Segrek asirlikda yotgan akasi Ergekni qutqarish uchun Alinja qal'asiga jo‘nadi.",
+   "Ergek ukasi Segrekni qo‘biz chalgan so‘zlaridan tanib oldi va dushmanni birgalikda yengishdi.",
+   "Telba Dumrul ko‘prik qurib, Azroil bilan kurashmoqchi bo‘ldi, lekin o‘lim kelganda Allohga tavba qildi.",
+   "Yigenek o‘n olti yil zindonda yotgan otasi Qozi Xo‘jani Duzmurd qal'asidan qutqardi.",
+   "Kan Turali Trabzon begining buqasi, sheri va tuyasini yengib, Seljen Xotinga uylandi.",
+   "Seljen Xotin va Kan Turali orqalaridan quvgan olti yuz dushman askarini tor-mor etdi.",
+   "Salur Qozonning uyini dushman Shukli Malik talab, oilasini asirga oldi.",
+   "Burla Xotun va Uruz or-nomusini saqlab, Qozon beg bilan birgalikda dushmanni yengishdi.",
+   "Bamsi Bayrak o‘n olti yillik asirlikdan qaytib, Yaltajukning yolg‘onini fosh etdi va Bonu Chechakka uylandi."
+  ],
+  "quotes": [
+   "O‘g‘il-qizi yo‘qlarni qora chodirga tushiring. Ularga qora qo‘yning go‘shtidan yediring.",
+   "Bu bola bir buqani o‘ldirdi. Ismi Bo‘g‘och bo‘lsin.",
+   "Qora tog‘ga baqirganingda javob qilsin! Qonli-qonli suvlardan o‘tish yo‘lini bersin.",
+   "Ey Allohim, faqat Senga sig‘indim! Menga yo‘l ko‘rsat! Yordam ber.",
+   "Buyuklarning buyugisan, O‘zing hamma narsaga Qodirsan!",
+   "Yerdagi tog‘lari yiqilmasin, baland daraxtlari yiqilmasin.",
+   "Qani hozir mard o‘g‘lonlar, dunyo manim deganlar. Foniy dunyo kimga qoldi?",
+   "Hech kimni o‘g‘li bilan qardoshidan ayirmasin. Omin!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Boyindirxon farzandsiz Dersaxonni qaysi rangli chodirga tushirdi?",
+   "options": [
+    "A) Oq chodirga",
+    "B) Qizil chodirga",
+    "C) Qora chodirga",
+    "D) Sariq chodirga"
+   ],
+   "answer": "C) Qora chodirga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bo‘g‘ochxon ismini olgunga qadar sodir bo‘lgan voqealarni ajrating.",
+   "options": [
+    "A) Ziyofat berildi, buqa o‘ldirildi",
+    "B) Otasi dushmanga asir tushdi",
+    "C) Tog‘da dushman bilan urishdi",
+    "D) Qal'ani fath etib qaytdi"
+   ],
+   "answer": "A) Ziyofat berildi, buqa o‘ldirildi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun qirq kishi Dersaxonga o‘g‘lini yomonladi?",
+   "options": [
+    "A) O‘g‘il ularni nazariga ilmasdi",
+    "B) O‘g‘il xazinani tortib olgandi",
+    "C) O‘g‘il ovga chiqishni yoqlamasdi",
+    "D) O‘g‘il eldan qochib ketgandi"
+   ],
+   "answer": "A) O‘g‘il ularni nazariga ilmasdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Basat Tepako‘zning ko‘zini nima bilan ko‘r qildi?",
+   "options": [
+    "A) O‘tkir nayza bilan",
+    "B) Qizdirilgan six bilan",
+    "C) Qilichning uchi bilan",
+    "D) Og‘ir yog‘och bilan"
+   ],
+   "answer": "B) Qizdirilgan six bilan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dushman begi nega Emrenga yengilgach musulmon bo‘ldi?",
+   "options": [
+    "A) Emrenning Xudosi kuchli ekanini bildi",
+    "B) O‘z xalqi uni tashlab qochgani uchun",
+    "C) Begil unga ko‘p oltin bergani uchun",
+    "D) Boyindirxon uni majbur qilgani uchun"
+   ],
+   "answer": "A) Emrenning Xudosi kuchli ekanini bildi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bo‘g‘ochxon o‘ziga o‘q otgan otasini qutqarganini qanday baholaysan?",
+   "options": [
+    "A) Ota-onaga hurmat va oqibat ko‘rsatdi",
+    "B) Qo‘rqoqlik qilib buyruqqa bo‘ysundi",
+    "C) Oltin va beklik uchun qutqardi",
+    "D) Xato qildi, otasidan qasos olmadi"
+   ],
+   "answer": "A) Ota-onaga hurmat va oqibat ko‘rsatdi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Begil ovda kiyik ketidan quvib qanday jarohat oldi?",
+   "options": [
+    "A) Qo‘li qilichdan kesildi",
+    "B) Oyog‘i qoyaga tegib sindi",
+    "C) Yelkasiga o‘q tegdi",
+    "D) Boshi toshga tegib yaralandi"
+   ],
+   "answer": "B) Oyog‘i qoyaga tegib sindi"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Segrek akasini qaysi qal'adan qutqarish uchun yo‘lga chiqdi?",
+   "options": [
+    "A) Boyburt qal'asidan",
+    "B) Duzmurd qal'asidan",
+    "C) Alinja qal'asidan",
+    "D) Trabzon qal'asidan"
+   ],
+   "answer": "C) Alinja qal'asidan"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ergek ukasi Segrekni qanday qilib tanib oldi?",
+   "options": [
+    "A) Qo‘biz chalib kuylagan so‘zlaridan",
+    "B) Belidagi oltin kamaridan",
+    "C) Barmog‘idagi kumush uzukdan",
+    "D) Otining poygasi va rangidan"
+   ],
+   "answer": "A) Qo‘biz chalib kuylagan so‘zlaridan"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Telba Dumrul nega Allohga yolvorib Azroildan panoh so‘radi?",
+   "options": [
+    "A) Azroil oldida ojizligini tushundi",
+    "B) Ko‘p oltin to‘plashni xohlardi",
+    "C) Ko‘prikni buzishdan qo‘rqdi",
+    "D) Otasi uni urishgani uchun"
+   ],
+   "answer": "A) Azroil oldida ojizligini tushundi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Telba Dumrulning o‘rniga kimlar jon berishga rozi bo‘lmadi?",
+   "options": [
+    "A) Qirq yigiti va do‘stlari",
+    "B) Otasi va onasi",
+    "C) Xotini va bolalari",
+    "D) Boyindirxon va beklar"
+   ],
+   "answer": "B) Otasi va onasi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Yigenekning o‘n olti yil asirlikdagi otasini qutqargani nimani ko‘rsatadi?",
+   "options": [
+    "A) Farzandlik burchiga sadoqatni",
+    "B) Shon-shuhratga o‘chlikni",
+    "C) Boylik to‘plash istagini",
+    "D) Dushmandan qo‘rqmaslikni"
+   ],
+   "answer": "A) Farzandlik burchiga sadoqatni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Qozi Xo‘janing o‘g‘liga otasi asir ekani aytilmagan edi?",
+   "options": [
+    "A) Onasi uni asrab-avaylamoqchi bo‘lgan",
+    "B) Boyindirxon buni taqiqlab qo‘ygan",
+    "C) Otasi o‘lib ketgan deb o‘ylashgan",
+    "D) U hali juda yosh bo‘lgan"
+   ],
+   "answer": "C) Otasi o‘lib ketgan deb o‘ylashgan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Pok qalb bilan duo qildik» iborasi o‘quvchida qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) E'tiqod va ezgulikka ishonch",
+    "B) Dushmandan qasos olish tuyg‘usi",
+    "C) Mol-dunyoga qiziqish hissi",
+    "D) O‘tmishdan afsuslanish tuyg‘usi"
+   ],
+   "answer": "A) E'tiqod va ezgulikka ishonch"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kan Turali Trabzon begining qiziga uylanish uchun qaysi hayvonlarni yengdi?",
+   "options": [
+    "A) Buqa, sher va tuyani",
+    "B) Arslon, bo‘ri va ayiqni",
+    "C) Yo‘lbars, ilon va buqani",
+    "D) Tuya, ot va bo‘rini"
+   ],
+   "answer": "A) Buqa, sher va tuyani"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Salur Qozon yurtiga qaytgach, oilasi asir tushganini kimdan bildi?",
+   "options": [
+    "A) Qoraja cho‘pondan",
+    "B) Dushman begidan",
+    "C) Boyindirxondan",
+    "D) Yaltajukdan"
+   ],
+   "answer": "A) Qoraja cho‘pondan"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Burla Xotun va qirq qiz birgalikda «Men!» deb javob berishdi?",
+   "options": [
+    "A) Salur Qozonning xotinini yashirish uchun",
+    "B) Dushman begiga xushomad qilish uchun",
+    "C) O‘zaro hazillashib ko‘ngil ochish uchun",
+    "D) Shukli Malikdan in'om olish uchun"
+   ],
+   "answer": "A) Salur Qozonning xotinini yashirish uchun"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dada Qo‘rqut Telba Karcharning qo‘lini qanday qilib o‘z holiga keltirdi?",
+   "options": [
+    "A) Allohga duo qilish bilan",
+    "B) Shifobaxsh giyohlar surish bilan",
+    "C) Qilichni tushirib qo‘yish bilan",
+    "D) Oltin va sovg‘alar berish bilan"
+   ],
+   "answer": "A) Allohga duo qilish bilan"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bayrak to‘y maydonida Yaltajukning nimasi nishonga olib urdi?",
+   "options": [
+    "A) Barmog‘idagi uzukni",
+    "B) Boshidagi qalpoqni",
+    "C) Qo‘lidagi kamonni",
+    "D) Otining egari va jilovini"
+   ],
+   "answer": "A) Barmog‘idagi uzukni"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston oxiridagi «Foniy dunyo kimga qoldi?» misralari kitobxonga nimani eslatadi?",
+   "options": [
+    "A) Dunyoning o‘tkinchiligini va ezgulik qolishini",
+    "B) Urushda g‘alaba qilish shartligini",
+    "C) Ko‘p boylik yig‘ish kerakligini",
+    "D) Qal'alar qurish zarurligini"
+   ],
+   "answer": "A) Dunyoning o‘tkinchiligini va ezgulik qolishini"
+  }
+ ]
+}

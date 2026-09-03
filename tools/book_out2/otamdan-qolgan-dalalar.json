@@ -1,0 +1,477 @@
+{
+ "title": "Otamdan qolgan dalalar",
+ "author": "Tog‘ay Murod",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tarix",
+   "vatan",
+   "mehnat",
+   "mustamlakachilik",
+   "sabr"
+  ],
+  "theme": "Asarning bosh g‘oyasi — o‘zbek dehqonining fojiali taqdiri, halol mehnati evaziga ko‘rgan zulmi va milliy o‘zlikni hamda ozodlikni anglash zaruratini ko‘rsatishdir.",
+  "summary": "Roman uch avlod — Jamoliddin ketmon, uning o‘g‘li Aqrab va nabirasi Dehqonqul taqdiri haqida so‘zlaydi. Birinchi qismda chor Rossiyasi istilosi davrida Jamoliddin ketmonning o‘z yerida begona bo‘lib qolishi, chor askarlarining zulmi va Yormozor masjidining to‘pga tutilishi tasvirlanadi. Ikkinchi qismda sho‘ro davri boshlanib, Aqrabning qizillar va bosmachilar o‘rtasidagi kurashlarda halok bo‘lishi ko‘rsatiladi. Uchinchi qismda Dehqonqulning butun umri paxta dalasida o‘tib, paxta yakkahokimligi tufayli oilasi va salomatligini yo‘qotishi, so‘ng soxta ayblovlar bilan zindonga tashlanishi bayon etiladi. Nihoyat, u zindondan qaytgach, o‘z dalalariga mehr bilan boqib, kelajakka va ozodlikka ishonch bildiradi.",
+  "characters": "Jamoliddin ketmon — halol dehqon, chor istilosi davrida o‘z yeridan ayrilgan birinchi avlod vakili. Aqrab — Jamoliddinning o‘g‘li, sho‘ro hokimiyati davrida halok bo‘lgan ikkinchi avlod vakili. Dehqonqul — bosh qahramon, paxta zahmatini chekkan, sho‘ro tuzumi tomonidan nohaq qamalgan uchinchi avlod dehqoni. Ivan Ivanovich — sovet tergovchisi, Dehqonqulni soxta ayblar bilan so‘roq qilgan shaxs.",
+  "conclusion": "Asar kitobxonga ozodlik va hurlikning qadrini, milliy qadriyatlarni asrash muhimligini o‘rgatadi. Bola halol mehnatning qadriga yetishni, tarixiy fojialardan saboq chiqarishni va o‘zligini unutmaslikni tushunib yetadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tarix, xalq taqdiri va insoniy fojialar haqida fikrlashni xohlaydigan, chuqur ma'noli asarlarga qiziquvchi o‘quvchiga.",
+  "events": [
+   "Jamoliddin ketmon sahar bilan dalaga borib, tahorat olib namoz o‘qiydi va halol ketmon chopadi.",
+   "Salohiddin bo‘yrachi Jamoliddin ketmonga chor qo‘shinlari Toshkent va Qo‘qonni egallaganini aytadi.",
+   "Chor askarlari Jamoliddinning kepak tuproq qilib tayyorlagan yerida yalang‘och holda toblanib yotishadi.",
+   "Mulla Namoz boshchiligidagi el Oqpodsho qarorgohiga hujum qilib zafar quchadi.",
+   "General Skobelev Farg‘onaga kelib, Yormozor masjid-madrasasini to‘pga tutdiradi.",
+   "Umarxon eshon general Skobelevga xalq qarg‘ishidan qo‘rqish kerakligini aytadi.",
+   "Ibodin soqov qatig‘ini Oqpodsho askariga sepgani uchun otib o‘ldiriladi.",
+   "Jamoliddin ketmon Farg‘ona dalasini tashlab, Qurbon qoraqirg‘izdan tog‘dan yer oladi.",
+   "Aqrab sho‘ro hokimiyati va bosmachilar o‘rtasidagi toqatsiz kurashlar ortida halok bo‘ladi.",
+   "El Aqrab shahid bo‘lgan joyni o‘rab, qabri poyida fotiha o‘qiydigan bo‘ladi.",
+   "Dehqonqul maktab o‘quvchisi bo‘la turib paxta frontiga safarbar etiladi.",
+   "Ziyod ismli bola dorilangan g‘o‘zapoyalar ichida zaharlanib halok bo‘ladi.",
+   "Dehqonqul paxta hosilini oshirish uchun tunu kun tinmay zahmat chekadi.",
+   "Dehqonqulning ayoli og‘ir mehnat va zaharli kimyoviy dorilar tufayli fojiali halok bo‘ladi.",
+   "Dehqonqul Toshkentdagi respublika anjumaniga kiyish uchun partkomdan qarzga kiyim oladi.",
+   "Tergovchi Ivan Ivanovich Dehqonqulni qo‘shib yozish va poraxo‘rlikda soxta ayblaydi.",
+   "Dehqonqul zindonda qiyinchiliklarga uchrab, Lenin mavzoleyiga umid bilan maktub bitadi.",
+   "Sayyor sud qarori bilan Dehqonqul ozodlikdan mahrum etiladi.",
+   "Dehqonqul ketish oldidan so‘nggi bor o‘zining paxta dalalarini ko‘rishni iltimos qiladi.",
+   "Dehqonqul ozodlikka va o‘z dalalariga albatta qaytib kelishiga qat'iy ishonadi."
+  ],
+  "quotes": [
+   "Bo‘laman degich el, bir-birini botirim deydi, bo‘lmayman degich el, bir-birini etini yeydi.",
+   "Men farg‘onachi Jamoliddin ketmon nabirasi bo‘laman.",
+   "Xalq bor – haq bor.",
+   "O‘zbak qo‘ynida bo‘ldi nima, qoraqirg‘iz qo‘ynida bo‘ldi nima.",
+   "Dini boshqa minba'd-minba'd el bo‘lmaydi! Tili boshqa minba'd-minba'd el bo‘lmaydi!",
+   "Men dalalarimni deya, qaytib kelaman!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jamoliddin ketmon sahar bilan dalaga borib birinchi bo‘lib nima qilardi?",
+   "options": [
+    "A) Darrov ketmon chopishni boshlardi",
+    "B) Tahorat olib, namoz o‘qirdi",
+    "C) Nonini choyga botirib yerdi",
+    "D) Qo‘shnilari bilan suhbatlashib o‘tirardi"
+   ],
+   "answer": "B) Tahorat olib, namoz o‘qirdi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jamoliddin ketmonga Oqpodsho kelganini birinchi bo‘lib kim aytdi?",
+   "options": [
+    "A) Mulla Namoz",
+    "B) Umarxon eshon",
+    "C) Salohiddin bo‘yrachi",
+    "D) Qurbon qoraqirg‘iz"
+   ],
+   "answer": "C) Salohiddin bo‘yrachi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "General Skobelev Farg‘onaga kelgach, qaysi muqaddas binoni to‘pga tutdiradi?",
+   "options": [
+    "A) Yormozor masjid-madrasasini",
+    "B) Shahar darvozasini",
+    "C) Guzardagi choyxonani",
+    "D) Mulla Namozning uyini"
+   ],
+   "answer": "A) Yormozor masjid-madrasasini"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jamoliddin ketmonga o‘z dalasini bergan saxiy inson kim edi?",
+   "options": [
+    "A) Salohiddin bo‘yrachi",
+    "B) Umarxon eshon",
+    "C) Mulla Namoz",
+    "D) Qurbon qoraqirg‘iz"
+   ],
+   "answer": "D) Qurbon qoraqirg‘iz"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jamoliddin ketmon nima uchun o‘zining eski dalasidan voz kechdi?",
+   "options": [
+    "A) Dalaning suvi qurib qoldi",
+    "B) Dala kofirlar tufayli haromlandi",
+    "C) Hokim dalani tortib oldi",
+    "D) Dala ekin bermay qo‘ydi"
+   ],
+   "answer": "B) Dala kofirlar tufayli haromlandi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jamoliddin ketmon Oqpodsho odamlariga nima uchun ters qarab ishlaydi?",
+   "options": [
+    "A) Ularning betini ko‘rmaslik uchun",
+    "B) Ulardan qo‘rqib qochgani uchun",
+    "C) Ularni tanimayman deyish uchun",
+    "D) Quyosh tushishidan qochish uchun"
+   ],
+   "answer": "A) Ularning betini ko‘rmaslik uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ibodin soqovning halok bo‘lishiga asosiy sabab nima edi?",
+   "options": [
+    "A) Askarning otini cho‘chitib yuborgani",
+    "B) Guzarda baqirib to‘polon qilgani",
+    "C) Qatig‘ini askarga sepib qochgani",
+    "D) Askarning buyrug‘iga bo‘ysunib turgani"
+   ],
+   "answer": "C) Qatig‘ini askarga sepib qochgani"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mulla Namoz va elning Oqpodsho qarorgohiga hujum qilishi qanday harakat?",
+   "options": [
+    "A) Behuda qilingan qo‘rqoqlik",
+    "B) Zulmga qarshi ko‘tarilgan isyon",
+    "C) Qat'iyatsizlik va ikkilanib turish",
+    "D) Faqat shaxsiy kibr ko‘rinishi"
+   ],
+   "answer": "B) Zulmga qarshi ko‘tarilgan isyon"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jamoliddin ketmonning Qurbon qoraqirg‘izga pul uzatishi qanday sifatni ko‘rsatadi?",
+   "options": [
+    "A) Halollik va minnatdorlikni",
+    "B) Qo‘rqoqlik va ojizlikni",
+    "C) Maqtanchoqlik va kibrni",
+    "D) Shoshqaloqlik va e'tiborsizlikni"
+   ],
+   "answer": "A) Halollik va minnatdorlikni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Saraton balolardan sariq bo‘ladi» degan tasvir o‘quvchida qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Yozning issiq va yoqimli kunlarini",
+    "B) Dehqonning quvonchli kayfiyatini",
+    "C) Tabiatning go‘zal va solimligini",
+    "D) Istilo davrining og‘ir muhitini"
+   ],
+   "answer": "D) Istilo davrining og‘ir muhitini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Odamlar Aqrab shahid bo‘lgan joyni qanday ajratib qo‘ydilar?",
+   "options": [
+    "A) Devor o‘rab, oppoq yalov qadadilar",
+    "B) Katta muhtasham maqbara qurdilar",
+    "C) Atrofiga ko‘plab mevali daraxt ekdilar",
+    "D) Chuqur qazib, suv bilan to‘ldirdilar"
+   ],
+   "answer": "A) Devor o‘rab, oppoq yalov qadadilar"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maktab direktori o‘quvchilarga paxta dalasi nima bo‘lishini aytdi?",
+   "options": [
+    "A) O‘yin va dam olish joyingiz",
+    "B) Daftaringiz va husni-xatingiz bo‘ladi",
+    "C) Faqat sinovdan o‘tish maydoni",
+    "D) Vaqtinchalik mehnat va jazo joyi"
+   ],
+   "answer": "B) Daftaringiz va husni-xatingiz bo‘ladi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Paxta dalasida kasallanib qolgan Ziyod tushida nimani haydadi?",
+   "options": [
+    "A) Katta yuk mashinasini boshqardi",
+    "B) Qizil rangli traktor haydadi",
+    "C) Samolyotni haydab ashula aytdi",
+    "D) Ot chopib dalani aylandi"
+   ],
+   "answer": "C) Samolyotni haydab ashula aytdi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dehqonqul paxta dalasiga begona o‘tlarga qarshi qanday dori sepdi?",
+   "options": [
+    "A) Oddiy sho‘r suv aralashmasini",
+    "B) Yuvish uchun toza oqar suv",
+    "C) Faqat maxsus tabiiy go‘ngni",
+    "D) Xlorfenidim va dalapon dorisini"
+   ],
+   "answer": "D) Xlorfenidim va dalapon dorisini"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Aqrab nima uchun qizillar va boshqa kuchlarning ikkalasini ham ma'qullamadi?",
+   "options": [
+    "A) Ikkalasi ham elni xarob qildi",
+    "B) Ikkalasi ham donga boy edi",
+    "C) Ikkalasi ham dehqonga yordam berdi",
+    "D) Ikkalasi ham tinchlik tarafdori edi"
+   ],
+   "answer": "A) Ikkalasi ham elni xarob qildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dehqonqul nima uchun gerbitsid dori ishlatishdan voz kechdi?",
+   "options": [
+    "A) Dori juda qimmat turgani uchun",
+    "B) Chigit o‘sishini ham to‘xtatgani uchun",
+    "C) Suvni toza saqlash maqsadida",
+    "D) Hasharotlarni ko‘paytirish uchun"
+   ],
+   "answer": "B) Chigit o‘sishini ham to‘xtatgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shlyapali hasharchi bolalarga achinib, maktab direktoriga nima demadi?",
+   "options": [
+    "A) Bolalarni zudlik bilan uylariga yuboring",
+    "B) Bolalarga ariqdan suv ichirmang",
+    "C) Bolalarga choy berish shart emas",
+    "D) Bolalarni zudlik bilan maqing"
+   ],
+   "answer": "B) Bolalarga ariqdan suv ichirmang"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Maktab bolalarining o‘qish o‘rniga paxtaga safarbar etilishi qanday holat?",
+   "options": [
+    "A) Bolalar huquqini buzuvchi adolatsizlik",
+    "B) To‘g‘ri va foydali tarbiya usuli",
+    "C) Bolalarga berilgan eng katta imkoniyat",
+    "D) Maktab rivojlanishi uchun zaruriy tadbir"
+   ],
+   "answer": "A) Bolalar huquqini buzuvchi adolatsizlik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Ziyodning o‘lim oldidan jilmayishini «beshikdagi chaqaloqday» deb nimani ko‘rsatgan?",
+   "options": [
+    "A) Uning bolalarcha harakterini va shoqligini",
+    "B) Uning pokiza va beozor ruhiyatini",
+    "C) Uning kasallikdan tuzalib ketayotganini",
+    "D) Uning hali yosh bola ekanligini"
+   ],
+   "answer": "B) Uning pokiza va beozor ruhiyatini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Tulki qiziga to‘y berdi» degan xalq iborasi matnda qanday holatni tasvirlaydi?",
+   "options": [
+    "A) Yoz ortidan darrov qish kelishini",
+    "B) Yuvilmagan dalaga suv kirishini",
+    "C) Quyosh charqlab turganda qor yog‘ishini",
+    "D) Paxta hosilining mo‘l bo‘lishini"
+   ],
+   "answer": "C) Quyosh charqlab turganda qor yog‘ishini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dehqonqulning ayoli nima uchun tushida va hayotda butifos hidini sezadi?",
+   "options": [
+    "A) Dalalarga ko‘p zahar sepilgani uchun",
+    "B) Atir-upa ko‘p ishlatgani uchun",
+    "C) Oshxonada ovqat kuyib ketgani uchun",
+    "D) Gulzordagi gullar hididan sarmast bo‘lgani uchun"
+   ],
+   "answer": "A) Dalalarga ko‘p zahar sepilgani uchun"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dehqonqul Toshkentga respublika anjumaniga borayotganda kiyimni kimdan oldi?",
+   "options": [
+    "A) Raisning o‘g‘lidan so‘rab oldi",
+    "B) Partkomdan qarzga olib kiydi",
+    "C) Bozorga borib yangi sotib oldi",
+    "D) Dala shiyponidagi xizmatchidan oldi"
+   ],
+   "answer": "B) Partkomdan qarzga olib kiydi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tergovchi Ivan Ivanovich Dehqonqulni so‘roq qilganda nimada ayblaydi?",
+   "options": [
+    "A) Yerini tashlab qochib ketganlikda",
+    "B) Traktorni bilmasdan buzib qo‘yganlikda",
+    "C) Qo‘shib yozish va poraxo‘rlikda",
+    "D) Ko‘p dam olib ishlamaganlikda"
+   ],
+   "answer": "C) Qo‘shib yozish va poraxo‘rlikda"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dehqonqul zindonda qiyinchilikka uchraganda kimga xat yozadi?",
+   "options": [
+    "A) Qishloqdagi onasiga xat yozadi",
+    "B) Tumandagi partkomga ariza yozadi",
+    "C) Kolxoz raisiga murojaat qiladi",
+    "D) Lenin mavzoleyiga atab yozadi"
+   ],
+   "answer": "D) Lenin mavzoleyiga atab yozadi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dehqonqul hayotidagi og‘ir sinovlarni qanday tartibda boshidan kechirdi?",
+   "options": [
+    "A) Paxta azobi, ayolining fojeasi, zindon",
+    "B) Zindon, ayolining fojeasi, paxta azobi",
+    "C) Toshkentga safar, zindon, uylanish",
+    "D) Zindon, Toshkentga safar, traktor haydash"
+   ],
+   "answer": "A) Paxta azobi, ayolining fojeasi, zindon"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dehqonqul romanning oxirida sud qaroridan so‘ng qayerga borishni so‘radi?",
+   "options": [
+    "A) Darhol uyiga borib dam olishni",
+    "B) O‘zining qadrli dalalarini ko‘rishni",
+    "C) Moskvaga borib shikoyat qilishni",
+    "D) Yangi traktor sotib olishga borishni"
+   ],
+   "answer": "B) O‘zining qadrli dalalarini ko‘rishni"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ivan Ivanovich Dehqonqul kabi halol dehqonlarni nima uchun jazoladi?",
+   "options": [
+    "A) Sovet tuzumining mustamlakachilik siyosati tufayli",
+    "B) Dehqonlar haqiqatan jinoyat sodir etgani uchun",
+    "C) Dehqonlar ishlashni xohlamaganliklari sababli",
+    "D) Dehqonlar poytaxtga ko‘chib ketgani sababli"
+   ],
+   "answer": "A) Sovet tuzumining mustamlakachilik siyosati tufayli"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dehqonqul roman oxirida zindonga ketayotib ham nima uchun dalalariga qaytaman deydi?",
+   "options": [
+    "A) Ivan Ivanovichdan qasos olish istagi sababli",
+    "B) Toshkentga qaytib borishni xohlamagani uchun",
+    "C) Yeringa bo‘lgan cheksiz mehr-muhabbatti tufayli",
+    "D) Rais unga ko‘p pul va'da qilgani uchun"
+   ],
+   "answer": "C) Yeringa bo‘lgan cheksiz mehr-muhabbatti tufayli"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dehqonqulning umri davomida paxta dalasida fidokorona mehnat qilishi qanday baholanadi?",
+   "options": [
+    "A) Oddiy va e'tiborsiz kundalik yumush",
+    "B) Faqat shaxsiy boylik orttirish yo‘li",
+    "C) O‘ylamay qilingan bekorchi harakat",
+    "D) Metin sabr va xalq fojiasi"
+   ],
+   "answer": "D) Metin sabr va xalq fojiasi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Romandagi «Oqpodsho va sovet tuzumi o‘zgardi, lekin dehqon taqdiri o‘zgarmadi» g‘oyasi nima beradi?",
+   "options": [
+    "A) Mustamlakachilik fojiasini teran anglashni",
+    "B) Dehqonchilik texnikasining rivojlanganini ko‘rishni",
+    "C) Faqat o‘tmish bilan yashash kerakligini",
+    "D) Mehnat qilishning keragi yo‘qligini"
+   ],
+   "answer": "A) Mustamlakachilik fojiasini teran anglashni"
+  }
+ ]
+}

@@ -1,0 +1,479 @@
+{
+ "title": "Temur tuzuklari",
+ "author": "Amir Temur",
+ "genre": "avtobiografik asar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tarix",
+   "davlat boshqaruvi",
+   "harbiy mahorat",
+   "odob-axloq",
+   "vatanparvarlik",
+   "hikmat"
+  ],
+  "theme": "Asarning bosh g‘oyasi — odillik, aql-idrok, maslahat va qat’iyat orqali qudratli davlat barpo etish, adolat va to‘ra-tuzuklar asosida jamiyatda intizom va farovonlikni ta’minlashdir.",
+  "summary": "«Temur tuzuklari» — buyuk sarkarda va davlat arbobi Amir Temurning hayot yo‘li, harbiy yurishlari hamda saltanatni boshqarish bo‘yicha qoldirgan o‘gitlari va qoidalaridan iborat avtobiografik asardir. Asarning birinchi qismida Amir Temur o‘zining yoshlik davridan boshlab hokimiyatni qo‘lga kiritishi, Movarounnahr va unga qo‘shni hududlardagi murakkab siyosiy jarayonlar, turli amirlarga qarshi olib borgan kurashlari va mashaqqatli kunlarini bayon qiladi. Pir Zayniddin Abubakr Toyobodiydan olgan vaoz-nasihatlari uning keyingi faoliyatida eng asosiy yo‘lboshchiga aylanadi: davlat ishlarining to‘qqiz ulushi kengash va tadbir, bir ulushi esa qilich bilan amalga oshirilishini anglab yetadi. Qiyin va og‘ir damlarda, tanholikda ham chidam va tadbirkorlik ko‘rsatib, Qarshi qal’asini oz sonli yigitlari bilan egallaydi, dushmanlarining fitnalarini fosh etadi va Movarounnahrda o‘z ta’sirini o‘rnatadi. Keyinchalik Xuroson, Bag‘dod, Dashti Qipchoq, Hindiston va Gurjistonga harbiy yurishlar qilib, ulkan imperiya barpo etadi. Asarning ikkinchi qismida esa saltanatni saqlab qolish, qo‘shin va raiyatni boshqarish, vazirlar va sarkardalarni tayinlash, soliq tizimini adolatli yo‘lga qo‘yish kabi o‘n ikki muhim qoida va tuzuklar batafsil bayon etiladi.",
+  "characters": "Amir Temur — asarning bosh qahramoni, adolatli hukmdor, mohir sarkarda va davlat arbobi;\nPir Zayniddin Abubakr Toyobodiy — Amir Temurga davlat va saltanat ishlarida maslahat hamda yo‘riqnoma bergan ruhiy ustoz;\nTug‘luq Temurxon — Jete hukumdori, Movarounnahrga bostirib kirgan va Amir Temur bilan murakkab siyosiy munosabatlarda bo‘lgan xon;\nAmir Husayn — Amir Temurning qaynog‘asi va vaqtincha ittifoqchisi, keyinchalik oralarida nifoq tushgan amir;\nAlibek Chun G‘urboniy — Amir Temurni og‘ir damlarda ushlab, tutqunlikda saqlagan va so‘ngra afv etilgan amir;\nMalik G‘iyosiddin — Xuroson hokimi, Amir Temur tomonidan bo‘ysundirilgan hukmdor.",
+  "conclusion": "Ushbu asar o‘sib kelayotgan yosh avlodda yetakchilik xislatlarini, mas’uliyatni, adolat va qat’iyatni shakllantiradi. Bola mardlik, sabr-toqat hamda har bir ishni o‘ylab, kengash bilan qilish hayotda qanchalik muhim ekanini tushunib yetadi. Ota-onalar uchun bu kitob farzandidagi strategik fikrlash, kattalarga hurmat va tarixiy xotirani mustahkamlashda beqiyos manba bo‘lib xizmat qiladi.",
+  "difficulty": "qiyin",
+  "mood": "o‘ylantiruvchi, jiddiy, ruhlantiruvchi",
+  "for_whom": "Tarix, davlat boshqaruvi va harbiy san’atga qiziqadigan, yetakchilik va mas’uliyatni o‘rganishni istagan o‘smirlar uchun.",
+  "events": [
+   "Amir Temur piri Zayniddin Abubakr Toyobodiydan saltanat ishlarini kengash va tadbir bilan yuritish haqida maktub oladi.",
+   "Amir Temur oz sonli sodiq yigitlari bilan Qarshi qal’asini adolat va puxta reja bilan egallaydi.",
+   "Tug‘luq Temurxon Movarounnahrga kelganida Amir Temur el-yurtni talon-torojdan saqlab qolish uchun maslahat beradi.",
+   "Amir Temur mazlumlarni zolimlardan qutqarish uchun Movarounnahr ulamolari va xalqidan fatvo va madad oladi.",
+   "Samoqanddan tog‘ga chekinib, o‘z atrofiga sadoqatli bahodirlarni to‘playdi.",
+   "Xorazm cho‘llarida Alibek Chun G‘urboniy uni tutqunlikda ushlaydi, lekin Temur o‘z jasorati bilan tutqunlikdan qutiladi.",
+   "Hirmand va Seiston viloyatlarida dushmanlarga qarshi jang qilib, qo‘l va oyog‘idan yaralanadi.",
+   "Balx tog‘larida sobiq navkarlari va amirlari kelib unga qo‘shiladilar va saf kengayadi.",
+   "Jete lashkarlarini Movarounnahrdan quvib chiqarib, yurtda tinchlik va adolatni tiklaydi.",
+   "Amir Husayn bilan do‘stlik qasamini ichadi, biroq keyinchalik oralarida kelishmovchilik kelib chiqadi.",
+   "Xuroson hokimi Malik G‘iyosiddinni harbiy hiyla va hushyorlik bilan taslim etadi.",
+   "Bag‘dod va Arab Iroqini o‘z tasarrufiga olib, adolat bayrog‘ini ko‘taradi.",
+   "Dashti Qipchoq xoni To‘xtamishxonning fitnalariga barham berish uchun shimolga yurish qiladi va g‘alaba qozonadi.",
+   "Hindiston poytaxti Dehlini egallab, u yerdagi turli toifalarni bo‘ysundiradi.",
+   "Gurjiston shaharlarini zabt etib, chegaralardagi tartibsizliklarga chek qo‘yadi.",
+   "Farzandlari va avlodlariga saltanatni boshqarish va saqlash bo‘yicha maxsus tuzuklar yozib qoldiradi.",
+   "Davlat va saltanat ishlarini adolat, to‘ra va tuzuklar hamda islom dini asosida yo‘lga qo‘yadi.",
+   "Vazirlar va amirlarni tayinlashda ularning nasl-nasabi, aqlli va sadoqatli bo‘lishi lozimligini belgilaydi.",
+   "Raiyat va dehqonlarga g‘amxo‘rlik qilish, yangi yer ochganlarga soliq yengilliklari berish haqida buyruq beradi.",
+   "Lashkarni jangga saflash, bayroq va nog‘ora berish hamda g‘animni sindirish tartiblarini aniq belgilab beradi."
+  ],
+  "quotes": [
+   "Davlat ishlarining to‘qqiz ulushi kengash, tadbir va mashvarat, qolgan bir ulushi esa qilich bilan bajo keltirilishini angladim.",
+   "Ishbilarmon, mardlik va shijoat sohibi, azmi qat’iy, tadbirkor va hushyor bir kishi, ming-minglab tadbirsiz, loqayd kishilardan yaxshidir.",
+   "G‘anim lashkarini yengish qo‘shinning ko‘pligi bilan emas, mag‘lub bo‘lish esa sipohining kamligidan bo‘lmaydi. Balki g‘olib bo‘lmoqlik Tangrining madadi va bandasining tadbiri bilandir.",
+   "Kengash ikki turli bo‘lur. Biri – til uchida aytilgani, ikkinchisi – yurakdan chiqqani.",
+   "Men o‘n ikki narsani o‘zimga shior qilib olib, saltanat martabasiga erishdim.",
+   "Davlat agar din-u oyin asosida qurilmas ekan, to‘ra-tuzukka bog‘lanmas ekan, unday saltanatning shukuhi, qudrati va tartibi yo‘qoladi.",
+   "Raiyatdan mol-u jihot olinayotganda, ularga jabr-zulm yetkazmaslik lozimdir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pir Zayniddin Abubakr Toyobodiy Temurga nima yubordi?",
+   "options": [
+    "A) Sovg‘a-salomlar",
+    "B) Saltanat haqida maktub",
+    "C) Harbiy qurollar",
+    "D) Qo‘shin uchun otlar"
+   ],
+   "answer": "B) Saltanat haqida maktub"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Temur Qarshi qal’asiga kim bilan bordi?",
+   "options": [
+    "A) Begona lashkar bilan",
+    "B) O‘zining sodiq yigitlari bilan",
+    "C) Xuroson hokimi bilan",
+    "D) Jete amirlari bilan"
+   ],
+   "answer": "B) O‘zining sodiq yigitlari bilan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Temur kiyinish va sovg‘a berishda yigitlariga qanday munosabatda bo‘ldi?",
+   "options": [
+    "A) Kiyim va kamarlarini in’om etdi",
+    "B) Faxriy unvonlar ulashdi",
+    "C) Ot va tuyalarni sotdi",
+    "D) Qo‘shindan chiqarib yubordi"
+   ],
+   "answer": "A) Kiyim va kamarlarini in’om etdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Temur xatarga duch kelganda nega bir xatarlisini tanladi?",
+   "options": [
+    "A) Katta zarardan saqlanish uchun",
+    "B) Jangdan qo‘rqqani uchun",
+    "C) Vaqtni cho‘zish uchun",
+    "D) Amirlarga yoqish uchun"
+   ],
+   "answer": "A) Katta zarardan saqlanish uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alibek Chun G‘urboniy Temurni qayerda tutib turdi?",
+   "options": [
+    "A) Hashamatli saroyda",
+    "B) Qorong‘i va burgali uyda",
+    "C) Harbiy qarorgohda",
+    "D) Baland qal’a minorasida"
+   ],
+   "answer": "B) Qorong‘i va burgali uyda"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Temur Samarqanddan tog‘ga chiqib ketishiga nima sabab bo‘ldi?",
+   "options": [
+    "A) Dushmandan qochish uchun",
+    "B) Qo‘shin to‘plash va tayyorlanish uchun",
+    "C) Ov qilish uchun",
+    "D) Dam olish uchun"
+   ],
+   "answer": "B) Qo‘shin to‘plash va tayyorlanish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Temurning Alibek oldidan jasorat bilan qutilishi qanday baholanadi?",
+   "options": [
+    "A) Shiddatli va aql bilan harakat",
+    "B) Shoshma-shosharlik va xatolik",
+    "C) Tasodifiy va samarasiz harakat",
+    "D) Qo‘rquv va chorasizlik alomati"
+   ],
+   "answer": "A) Shiddatli va aql bilan harakat"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «aytilgan maslahatni jon qulog‘im bilan eshitardim» deganda nimani anglatadi?",
+   "options": [
+    "A) Ixlos bilan tinglashni",
+    "B) Baland ovozda gapirishni",
+    "C) Maslahatni rad etishni",
+    "D) Yozib olishni"
+   ],
+   "answer": "A) Ixlos bilan tinglashni"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Seiston voliysi Temurdan nima so‘radi?",
+   "options": [
+    "A) Dushmanlarga qarshi yordam",
+    "B) Oltin va kumush",
+    "C) Yer va suv",
+    "D) Yangi qal’alar"
+   ],
+   "answer": "A) Dushmanlarga qarshi yordam"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temur muammoli vaziyatlarda qaysi kitobdan fol ochgan?",
+   "options": [
+    "A) Siyosatnoma kitobidan",
+    "B) Muqaddas Qur’ondan",
+    "C) Tarixiy yilnomalardan",
+    "D) Harbiy qo‘llanmalardan"
+   ],
+   "answer": "B) Muqaddas Qur’ondan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temur Xuroson hokimi G‘iyosiddinga qarshi qanday usul qo‘lladi?",
+   "options": [
+    "A) Harbiy hiyla va hushyorlikni so‘ndirish",
+    "B) Ochiqdan-ochiq sulh tuzish",
+    "C) Qal’ani uzoq qamal qilish",
+    "D) Dengizdan hujum qilish"
+   ],
+   "answer": "A) Harbiy hiyla va hushyorlikni so‘ndirish"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sulton Ahmad Jaloir Bag‘doddan qayerga qochdi?",
+   "options": [
+    "A) Samarqand tomonga",
+    "B) Karbalo tomonga",
+    "C) Dehli tomonga",
+    "D) Misr tomonga"
+   ],
+   "answer": "B) Karbalo tomonga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Temur davlatni boshqarishda kimlarga tayanib ish ko‘rgan?",
+   "options": [
+    "A) Bilimdon va sadoqatli toifalarga",
+    "B) Faqat chet el elchilariga",
+    "C) Tasodifiy savdogarlarga",
+    "D) Dushman ayg‘oqchilariga"
+   ],
+   "answer": "A) Bilimdon va sadoqatli toifalarga"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Temur Gurjistonga yurish qilishiga nima sabab bo‘ldi?",
+   "options": [
+    "A) Chegara buzilgani va fitna chiqqani",
+    "B) Yangi yerlar sotib olish",
+    "C) U yerdan sovg‘a kutish",
+    "D) Savdo yo‘llarini yopish"
+   ],
+   "answer": "A) Chegara buzilgani va fitna chiqqani"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temur qaysi shahar hokimi sulton Mahmudni yengdi?",
+   "options": [
+    "A) Dehli shahrining",
+    "B) Buxoro shahrining",
+    "C) Shiraz shahrining",
+    "D) Qandahor shahrining"
+   ],
+   "answer": "A) Dehli shahrining"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Temur To‘xtamishxonga qarshi nega ikkinchi bor yurish qildi?",
+   "options": [
+    "A) Mintaqada fitna ko‘targani uchun",
+    "B) Yordam so‘rab kelgani uchun",
+    "C) Quda bo‘lish uchun",
+    "D) Savdo shartnomasi tuzish uchun"
+   ],
+   "answer": "A) Mintaqada fitna ko‘targani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Temurning ozchilik bilan dushmanni yengishi nimadan dalolat beradi?",
+   "options": [
+    "A) Puxta tadbir va jasoratdan",
+    "B) Shunchaki tasodif va omaddan",
+    "C) Dushmanning qochishidan",
+    "D) Ob-havoning o‘zgarganidan"
+   ],
+   "answer": "A) Puxta tadbir va jasoratdan"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «shijoat — bir soatlik sabr demakdir» deganda nimani ta’kidlaydi?",
+   "options": [
+    "A) Sabr-toqatning buyuk kuchini",
+    "B) Shoshqaloqlikning afzalligini",
+    "C) Qo‘rquvning foydasini",
+    "D) Vaqtning tez o‘tishini"
+   ],
+   "answer": "A) Sabr-toqatning buyuk kuchini"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Badaxshon shohlari Temurning yaqinlashganini eshitib nima qildilar?",
+   "options": [
+    "A) Tinchlik bilan bo‘ysundilar",
+    "B) Qal’ani yoqib yubordilar",
+    "C) Qochib ketdilar",
+    "D) Dengizga sakradilar"
+   ],
+   "answer": "A) Tinchlik bilan bo‘ysundilar"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Temur amirlarning sadoqatini sinash uchun nima qilardi?",
+   "options": [
+    "A) Ularning maslahatini eshitardi",
+    "B) Sinov topshiriqlari berardi",
+    "C) Barcha molini tortib olardi",
+    "D) Chet elga yuborardi"
+   ],
+   "answer": "A) Ularning maslahatini eshitardi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temur o‘z tuzuklarida eng avvalo nimaga rivoj berganini aytadi?",
+   "options": [
+    "A) Din va shariatga",
+    "B) Savdo va tijoratga",
+    "C) Oltin to‘plashga",
+    "D) Dengiz flotiga"
+   ],
+   "answer": "A) Din va shariatga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vazir tutish tuzugida vazirda qanday sifat birinchi o‘rinda turadi?",
+   "options": [
+    "A) Asillik va toza nasllilik",
+    "B) Boylik va boy-badavlatlik",
+    "C) Yoshlik va shoxlik",
+    "D) Chetdan kelganlik"
+   ],
+   "answer": "A) Asillik va toza nasllilik"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dehqon va raiyatga yordam berish bo‘yicha Temur qanday buyruq bergan?",
+   "options": [
+    "A) Urug‘ va asboblar yetkazishni",
+    "B) Soliqlarni ikki baravar oshirishni",
+    "C) Yerlarni musodara qilishni",
+    "D) Ekin ekishni taqiqlashni"
+   ],
+   "answer": "A) Urug‘ va asboblar yetkazishni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Temur o‘z sohibiga xiyonat qilib kelgan navkarni nega yomon ko‘rgan?",
+   "options": [
+    "A) Vafosiz kishi ishonchsiz bo‘lgani uchun",
+    "B) Kuchli bo‘lgani uchun",
+    "C) Yurtiga qaytmoqchi bo‘lgani uchun",
+    "D) Dushmandan qo‘rqqani uchun"
+   ],
+   "answer": "A) Vafosiz kishi ishonchsiz bo‘lgani uchun"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yangi yer ochgan raiyatdan birinchi yili soliq olinadimi?",
+   "options": [
+    "A) Hech narsa olinmaydi",
+    "B) Yarim hosil olinadi",
+    "C) Ikki baravar olinadi",
+    "D) Barcha hosil olinadi"
+   ],
+   "answer": "A) Hech narsa olinmaydi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Temur lashkarni jangga kiritishda tartibni qanday belgilagan?",
+   "options": [
+    "A) Bosqichma-bosqich va tartib bilan",
+    "B) Aralashtirib, tartibsiz holda",
+    "C) Faqat bir tomondan hujum qilib",
+    "D) Hujum qilmasdan kutib turib"
+   ],
+   "answer": "A) Bosqichma-bosqich va tartib bilan"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bahrom Chubin voqeasidan Temur qanday xulosa chiqardi?",
+   "options": [
+    "A) Sarkardalar xizmatini munosib qadrlashni",
+    "B) Ayg‘oqchilarga to‘liq ishonishni",
+    "C) Hamma sovutlarni tarqatib yuborishni",
+    "D) Jang qilmaslikni"
+   ],
+   "answer": "A) Sarkardalar xizmatini munosib qadrlashni"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Temurning yetim-yesir va bemorlar uchun shifoxonalar qurdirishi qanday siyosat?",
+   "options": [
+    "A) Insonparvar va odil siyosat",
+    "B) Qat’iy va ayovsiz siyosat",
+    "C) Faqat harbiy siyosat",
+    "D) Samarasiz va ortiqcha siyosat"
+   ],
+   "answer": "A) Insonparvar va odil siyosat"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Temur to‘ra va tuzuksiz saltanatni nimaga o‘xshatadi?",
+   "options": [
+    "A) Yalang‘och odam yoki tomsiz uyga",
+    "B) Baland va mustahkam qal’aga",
+    "C) Teran va chuqur daryoga",
+    "D) Oltin bilan bezanmish taxtga"
+   ],
+   "answer": "A) Yalang‘och odam yoki tomsiz uyga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif tuzuksiz saltanatni tomsiz uyga o‘xshatishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Qonun va intizomning zarurligini",
+    "B) Uy qurishning osonligini",
+    "C) Yomon ob-havodan saqlanishni",
+    "D) Devorlarning balandligini"
+   ],
+   "answer": "A) Qonun va intizomning zarurligini"
+  }
+ ]
+}

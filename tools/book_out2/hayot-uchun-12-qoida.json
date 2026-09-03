@@ -1,0 +1,481 @@
+{
+ "title": "Hayot uchun 12 qoida",
+ "author": "Jordan Piterson",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "17-19",
+  "age_hint": "16+",
+  "topics": [
+   "mas'uliyat",
+   "shaxsiy rivojlanish",
+   "tarbiya",
+   "falsafa",
+   "psixologiya"
+  ],
+  "theme": "Tartibsizlik va qiyinchiliklarga to‘la dunyoda inson o‘z mas'uliyatini bo‘yniga olishi, o‘z uyi hamda botiniy dunyosini tartibga keltirishi va halollik bilan yashashi lozim.",
+  "summary": "Jordan Pitersonning «Hayot uchun 12 qoida» asari insonga hayotiy va ruhiy murakkabliklarni yengib o‘tishga yordam beruvchi universal qoidalarni ilgari suradi. Muallif qadimiy mifologiya, Bibliya hikoyalari, nevrologiya hamda psixologik tadqiqotlarni o‘zining klinik tajribasi bilan birlashtirib, xaos (tartibsizlik) va tartib o‘rtasidagi muvozanatni tushuntiradi. Kitob so‘zboshisida va uning davomida Muso payg‘ambar keltirgan o‘nta amr misolida qoidalar inson erkinligini cheklamasligi, aksincha uni past instinctlar quliga aylanishdan saqlashi ta'kidlanadi. Qisqichbaqalarning hudud uchun kurashi va neyrokimyosi misolida qad-qomatni rost tutish hamda iyerarxiyada munosib o‘rin egallash muhimligi ko‘rsatiladi. Askarlarningjangdagi holati, Soljenitsinning tajribalari orqali ezgulik va yovuzlik har bir inson kalbidan o‘tishi, xavf-xatardan bolani o‘ta muhofaza qilish uni ojiz qilib qo‘yishi bayon etiladi. Ota-onaning tarbiyadagi mas'uliyati, lazzatni ortga surish va kelajak uchun qurbonlik berish evolyutsiyasi, o‘zgalarni tinglash ile o‘z kelajagini kechagidan yaxshiroq qilish tamoyillari tahlil qilinadi.",
+  "characters": "Jordan Piterson — kitob muallifi, psixolog va professor, hayotiy tajribalari va ilmiy kuzatishlari bilan o‘rtoqlashadi. Vodek Shemberg va Estera Bekier — Pitersonning do‘stlari, ziyoli va ochiqko‘ngil mezbonlar. Kris — Pitersonning yoshlikdagi do‘sti, iqtidorli ammo fojiali taqdirga ega texnik va muhandis. Arunachalam Muruganantam — ayollar uchun arzon gigienik vositalar ixtiro qilgan hindistonlik fidoyi inson.",
+  "conclusion": "Bu kitob yoshlarga o‘z hayoti va qilmishlari uchun to‘liq mas'uliyatni o‘z zimmasiga olishni o‘rgatadi. U o‘quvchiga qiyinchiliklardan qochmay, rostso‘zlik, kamtarlik hamda ichki intizom orqali xaosni tartibga solish yo‘llarini ko‘rsatadi. Ota-onalar esa farzand tarbiyasida chegaralar belgilash va ularni hayotiy imtihonlarga tayyorlash saboqlarini oladi.",
+  "difficulty": "qiyin",
+  "mood": "jiddiy, o‘ylantiruvchi, ilhomlantiruvchi",
+  "for_whom": "Hayotda o‘z o‘rnini va maqsadini izlayotgan, shaxsiy rivojlanish hamda falsafiy-psixologik saboqlarga qiziqadigan yoshlar uchun.",
+  "events": [
+   "Muso payg‘ambarning Banu Isroilga o‘nta amrni olib tushishi va qoidalar haqidagi mulohazalar.",
+   "Vodek Shembergning xonadonida o‘tgan samimiy bazmda muallif va Jordan Pitersonning tanishuvi.",
+   "Pitersonning kovboy etiklarida asalarilardan cho‘chimay atrofdagilar bilan jiddiy suhbat qurishi.",
+   "Pitersonning uyida sotsial realistik va sovet propaganda rasmlarini to‘plaganining sababi.",
+   "«Ma'nolar xaritasi» kitobi va xaosdan tartib yaratish konsepsiyasining izohlanishi.",
+   "Okean tubidagi qisqichbaqalarning boshpana va hudud uchun kurashishi hamda uning neyrokimyosi.",
+   "Askarlarning jang maydonida o‘zidagi yovuzlikni kashf etib posttravmatik stressga tushishi.",
+   "Aleksandr Soljenitsinning ezgulik va yovuzlik inson yuragidan o‘tishi haqidagi fikri.",
+   "Feyrvyu shaharchasidagi qahraton souvq hamda Pitersonning do‘sti Kris haqidagi xotiralari.",
+   "Ichki tanqidchi va hayotdagi turli o‘yinlar hamda muvaffaqiyat va mag‘lubiyat tushunchalari.",
+   "Eski Ahddagi Xudo va tabiat qonunlarining qattiqqo‘lligi hamda inson mas'uliyati.",
+   "Bolalar maydonchasida kichik bolaning turnikda osilib turgan qizchaning qo‘liga bosishi epizodi.",
+   "Tarbiyada intizom, jazo va ota-onaning o‘z salbiy sifatlarini tan olishi zarurligi.",
+   "Lazzatni ortga surish va Xudoga qurbonlik keltirishning tarixiy hamda ruhiy ma'nosi.",
+   "Iso Masihning sahroda shayton vasvasasiga uchrashi va hukmronlik iyerarxiyasi.",
+   "Pitersonning Duglas shifoxonasida paranoik bemorga rost so‘zlash tajribasi.",
+   "Insonning hozirgi barqarorligi uchun yaxshiroq kelajakni qurbon qilmaslik tamoyili.",
+   "Karl Yung va Freydning erkin assotsiatsiya metodi hamda psixoanalitik suhbatlar.",
+   "Avtomobil buzilganda insonning o‘z idrokidagi cheklovlarni va murakkab dunyoni anglab yetishi.",
+   "Skeytbordchilar uchun qo‘yilgan skeytstopperlar va bolalar uchun xatarning zarurligi.",
+   "Arunachalam Muruganantamning ayollar uchun arzon tagliklar ixtiro qilishi va patriarxiya.",
+   "Jeyms Yang Simpsonning tug‘uruq paytida xloroform va anesteziyadan foydalanishi.",
+   "Supermen obrazining benuqsonga aylanib qolgani va odamlarning undan zerikishi.",
+   "Pitersonning Torontoga kelgan tushkun yigit bilan uchrashuvi va uning idish yuvuvchilikdan boshlagan faoliyati."
+  ],
+  "quotes": [
+   "Qoidalarsiz biz tezda hissiyotlarimizga qul bo‘lamiz – bu esa erkinlik emas.",
+   "Ezgulik va yovuzlikni bir-biridan ayirib turuvchi chiziq har bir insonning yuragidan o‘tadi.",
+   "Qaramog‘ingizdagi Mavjudliklarni qobiliyatli qilish ularni himoya qilishdan ancha yaxshiroq.",
+   "Nima qilishni bilmaganingizda nima qilishingiz kerak? Rost so‘zlash kerak.",
+   "Haddan tashqari ko‘p himoya ostida xavfli, kutilmagan va imkoniyatlarga to‘la hodisa to‘satdan yuz berganida muvaffaqiyatsizlikka uchraymiz.",
+   "Rivojlanishni doimo joriy holatingizdan ustun qo‘ying."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muso payg‘ambar tog‘dan qaysi lavhani olib tushgan edi?",
+   "options": [
+    "A) O‘nta amr bitilgan lavhani",
+    "B) Oltin buzoq haykalini",
+    "C) Yetti xil qoida kitobini",
+    "D) Qonunlar to‘plami tushirilgan daftarni"
+   ],
+   "answer": "A) O‘nta amr bitilgan lavhani"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jordan Piterson bilan muallif kimning uyida tanishgan?",
+   "options": [
+    "A) Vodek va Esteraning uyida",
+    "B) Muso payg‘ambarning uyida",
+    "C) Jozef Mengele xonadonida",
+    "D) Jon Miltonning hovlisida"
+   ],
+   "answer": "A) Vodek va Esteraning uyida"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Piterson qaysi mashhur universitetda professor bo‘lib ishlagan?",
+   "options": [
+    "A) Harvard universitetida",
+    "B) Oksford universitetida",
+    "C) Kembrij universitetida",
+    "D) Sorbonna universitetida"
+   ],
+   "answer": "A) Harvard universitetida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pitersonning uyida asosan qaysi davr rasmlari ilingan edi?",
+   "options": [
+    "A) SSSR sotsial realistik rasmlari",
+    "B) Uyg‘onish davri kartinalari",
+    "C) Fransuz impressionizmi asarlari",
+    "D) Qadimgi Misr devoriy rasmlari"
+   ],
+   "answer": "A) SSSR sotsial realistik rasmlari"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qaysi tartibda Vodek Shemberg mehmonlarni o‘ziga jalb qilardi?",
+   "options": [
+    "A) Samimiyat, ochiqlik va quchoqlash bilan",
+    "B) Cheklovlar va qattiq qoidalar bilan",
+    "C) Sukut saqlash va kuzatish bilan",
+    "D) Faqat musiqiy o‘yinlar o‘tkazish bilan"
+   ],
+   "answer": "A) Samimiyat, ochiqlik va quchoqlash bilan"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Piterson ma'ruzalarida qaysi sohalarni o‘zaro bog‘lab tushuntirardi?",
+   "options": [
+    "A) Evolyutsiya, psixologiya va qadimgi mifologiyani",
+    "B) Fizika, kimyo va matematikani",
+    "C) Siyosat, iqtisodiyot va sportni",
+    "D) Geografiya, biologiya va astronomiyani"
+   ],
+   "answer": "A) Evolyutsiya, psixologiya va qadimgi mifologiyani"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Piterson uyiga sovet propaganda rasmlarini osib qo‘ygan edi?",
+   "options": [
+    "A) Utopiya sababli yuz bergan fojialarni unutmaslik uchun",
+    "B) Kommunizm g‘oyalariga sodiq bo‘lgani uchun",
+    "C) Uylarini bezash uchun tekin rasmlar kerakligidan",
+    "D) Mehmonlarni qo‘rqitish va qochirish uchun"
+   ],
+   "answer": "A) Utopiya sababli yuz bergan fojialarni unutmaslik uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega muallif hayotda azob-uqubat muqarrar deb hisoblaydi?",
+   "options": [
+    "A) Inson bo‘lib tug‘ilishning o‘zi azob kafolatlagani uchun",
+    "B) Jamiyatdagi siyosatchilar yomon bo‘lgani uchun",
+    "C) Odamlar yetarlicha bilim olmagani uchun",
+    "D) Dunyoda adolat umuman yo‘qligi uchun"
+   ],
+   "answer": "A) Inson bo‘lib tug‘ilishning o‘zi azob kafolatlagani uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "G‘olib qahramon notanish joyga borib tavakkal qilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — u qiyinchilik orqali qayta tug‘iladi",
+    "B) Noto‘g‘ri — xavf-xatarga borish ahmoqlikdir",
+    "C) To‘g‘ri — faqat boylik orttirish uchun",
+    "D) Noto‘g‘ri — inson uyida o‘tirgani ma'qul"
+   ],
+   "answer": "A) To‘g‘ri — u qiyinchilik orqali qayta tug‘iladi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Pitersonning nutqini «jaz mashshog‘idek so‘zlardi» deya tasvirlab nimani uqtiradi?",
+   "options": [
+    "A) Uning erkin va jo‘shqin nutqini",
+    "B) Musiqa chalib ma'ruza qilganini",
+    "C) Juda sekin va zerikarli gapirganini",
+    "D) Faqat qo‘shiq matnlarini o‘qiganini"
+   ],
+   "answer": "A) Uning erkin va jo‘shqin nutqini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Okean tubida yashovchi qisqichbaqalar nima uchun o‘zaro kurashadi?",
+   "options": [
+    "A) Xavfsiz boshpana va hudud uchun",
+    "B) Dengiz o‘tlarini yeyish uchun",
+    "C) Suv haroratini oshirish uchun",
+    "D) Orolga chiqib olish uchun"
+   ],
+   "answer": "A) Xavfsiz boshpana va hudud uchun"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yangi askarlar jangda o‘zi haqida nimani bilib dahlizga tushadi?",
+   "options": [
+    "A) O‘zida ham yovuzlik salohiyati borligini",
+    "B) Urushda g‘olib bo‘la olmasligini",
+    "C) Qurol ishlatishni bilmasligini",
+    "D) Oila a'zolarini sog‘inganini"
+   ],
+   "answer": "A) O‘zida ham yovuzlik salohiyati borligini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Aleksandr Soljenitsin ezgulik va yovuzlik chizig‘i qayerdan o‘tadi degan?",
+   "options": [
+    "A) Har bir insonning yuragidan",
+    "B) Davlatlar o‘rtasidagi chegaradan",
+    "C) Boy va kambag‘allar orasidan",
+    "D) Yaxshi va yomon kitoblardan"
+   ],
+   "answer": "A) Har bir insonning yuragidan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Feyrvyu shaharchasida do‘sti Kris bilan muallif nima haqida ko‘p o‘qir edi?",
+   "options": [
+    "A) Ilmiy fantastik kitoblar haqida",
+    "B) Tarixiy she'rlar to‘plamini",
+    "C) Biologiya darsliklarini",
+    "D) Siyosiy gazeta makolalarini"
+   ],
+   "answer": "A) Ilmiy fantastik kitoblar haqida"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Lazzatni ortga surish tushunchasi insoniyatda qanday rivojlanib borgan?",
+   "options": [
+    "A) Qurbonlikdan boshlanib, pul va banklargacha yetgan",
+    "B) Darhol yeyishdan boshlanib, umuman yemay qo‘yishgacha",
+    "C) Faqat urush paytida paydo bo‘lib yo‘qolgan",
+    "D) Qonunlar yozilishi bilan birdan shakllangan"
+   ],
+   "answer": "A) Qurbonlikdan boshlanib, pul va banklargacha yetgan"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif ota-onalarga farzand tarbiyasida qanday to‘rtta tamoyilni ko‘rsatadi?",
+   "options": [
+    "A) Intizom, chegaralar, sheriklik va o‘z nuqsonlarini anglash",
+    "B) Faqat erkinlik berish va jazolamaslik",
+    "C) Bolani yerto‘lada saqlash va asrash",
+    "D) Barcha istaklarini darhol bajarish"
+   ],
+   "answer": "A) Intizom, chegaralar, sheriklik va o‘z nuqsonlarini anglash"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega bolaga o‘ta xavfsiz o‘yin maydonchasi yoqmaydi?",
+   "options": [
+    "A) Bola xatarni nazorat qilishni istagani uchun",
+    "B) Katta maydonda yugura olmagani uchun",
+    "C) O‘yinchoqlar kam bo‘lgani uchun",
+    "D) Do‘stlari bilan urusha olmagani uchun"
+   ],
+   "answer": "A) Bola xatarni nazorat qilishni istagani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Eski Ahd Xudosi amrlariga bo‘ysunmaslik oqibati nega og‘ir bo‘lgan?",
+   "options": [
+    "A) Tabiat qonunlari beparvolikni kechirmagani uchun",
+    "B) Odamlar o‘sha paytda zaif bo‘lgani uchun",
+    "C) Qoidalar o‘zi ma'nosiz bo‘lgani uchun",
+    "D) Hech kim adolatga ishonmagani uchun"
+   ],
+   "answer": "A) Tabiat qonunlari beparvolikni kechirmagani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ota-onaning bolani har qanday xatardan berkitib o‘stirishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri — bola ojiz va foydasiz bo‘lib qoladi",
+    "B) To‘g‘ri — bola hech qachon qiynalmasligi kerak",
+    "C) Noto‘g‘ri — faqat o‘g‘il bolalarni berkitish kerak",
+    "D) To‘g‘ri — jamiyat juda xavfli joydir"
+   ],
+   "answer": "A) Noto‘g‘ri — bola ojiz va foydasiz bo‘lib qoladi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Ilon har birimizning qalbimizda yashaydi» iborasi bilan nima ifodalangan?",
+   "options": [
+    "A) Insonning ichki yovuzlikka moyilligi",
+    "B) Tabiatdagi haqiqiy sudralib yuruvchi ilonlar",
+    "C) Odamlarning zaharlanishdan qo‘rqishi",
+    "D) Adan bog‘idagi afsonaviy ertak"
+   ],
+   "answer": "A) Insonning ichki yovuzlikka moyilligi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Piterson Duglas shifoxonasida paranoik bemorga qanday javob bergan edi?",
+   "options": [
+    "A) Haqiqatni va vaziyatni rostdan aytdi",
+    "B) Yolg‘on ishlatib uni tinchlantirdi",
+    "C) Bemorning ustidan kulib javob bermadi",
+    "D) Uni darhol xonasidan quvib chiqardi"
+   ],
+   "answer": "A) Haqiqatni va vaziyatni rostdan aytdi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karl Yung va Freyd o‘rtasida inson ongini o‘rganishda qaysi usul qo‘llangan?",
+   "options": [
+    "A) Erkin assotsiatsiya va suhbat usuli",
+    "B) Gipnoz va majburiy uxlatish usuli",
+    "C) Faqat dori-darmon berish usuli",
+    "D) Bemorga doimiy buyruq berish usuli"
+   ],
+   "answer": "A) Erkin assotsiatsiya va suhbat usuli"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Arunachalam Muruganantam ayollar uchun nima ixtiro qilgan edi?",
+   "options": [
+    "A) Arzon va gigienik sanitary tagliklar",
+    "B) Uy ishlarini qiluvchi maxsus robot",
+    "C) Oshxona uchun qulay idishlar",
+    "D) Yangi turdagi kiyim-kechaklar"
+   ],
+   "answer": "A) Arzon va gigienik sanitary tagliklar"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Supermen obrazidan odamlar nega zerika boshlagan edi?",
+   "options": [
+    "A) U benuqson va ojizliksiz bo‘lib qolgani uchun",
+    "B) Uning kiyimi eskirib qolgani uchun",
+    "C) U yovuzlarga yutqazib qo‘ygani uchun",
+    "D) U boshqa sayyoraga ketgani uchun"
+   ],
+   "answer": "A) U benuqson va ojizliksiz bo‘lib qolgani uchun"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega avtomobil buzilishi inson uchun ichki xaos va unutilgan murakkablikni ochadi?",
+   "options": [
+    "A) Dunyo haqidagi idrokimiz torligini ko‘rsatgani uchun",
+    "B) Mashina juda qimmat bo‘lgani uchun",
+    "C) Mexaniklar doim aldaydigani uchun",
+    "D) Yo‘llarda yurish xavfli bo‘lgani uchun"
+   ],
+   "answer": "A) Dunyo haqidagi idrokimiz torligini ko‘rsatgani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Piterson bilan uchrashgan tushkun yigit nega idish yuvishdan ish boshladi?",
+   "options": [
+    "A) Kamtarlik bilan real hayotga kirishish uchun",
+    "B) Boshqa hech qanday ish bilmagani uchun",
+    "C) Ota-onasi majbur qilib yuborgani uchun",
+    "D) Faqat ko‘p pul topishni xohlagani uchun"
+   ],
+   "answer": "A) Kamtarlik bilan real hayotga kirishish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Insonning biladigan narsalaridan ko‘ra bilishi mumkin bo‘lgan narsalariga intilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — shunda u rivojlanadi va yangilanadi",
+    "B) Noto‘g‘ri — boriga qanoat qilib yashash kerak",
+    "C) Noto‘g‘ri — yangi narsa doim xavflidir",
+    "D) To‘g‘ri — faqat mashhurlikka erishish uchun"
+   ],
+   "answer": "A) To‘g‘ri — shunda u rivojlanadi va yangilanadi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muruganantamning o‘z oilasi qarshiligiga qaramay ezgu ixtiro qilishi mardlikmi?",
+   "options": [
+    "A) Mardlik — jamiyat uchun foyda keltirdi",
+    "B) Xato — oilasini birinchi o‘ringa qo‘ymadi",
+    "C) Ahmoqlik — o‘z vaqtini bekorga sarfladi",
+    "D) Odatiy hol — har kim shunday qilishi kerak"
+   ],
+   "answer": "A) Mardlik — jamiyat uchun foyda keltirdi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Har bir saboq kichik o‘limdir» iborasi muallif tomonidan qanday ma'noda ishlatilgan?",
+   "options": [
+    "A) Eski tushunchaning parchalanishi va yangilanishi",
+    "B) Odamning jismonan vafot etishi",
+    "C) Kitob o‘qishning juda og‘irligi",
+    "D) Xatolar sababli tushkunlikka tushish"
+   ],
+   "answer": "A) Eski tushunchaning parchalanishi va yangilanishi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Nima qilishni bilmaganingizda rost so‘zlash kerak» deya nimaga urg‘u beradi?",
+   "options": [
+    "A) Halollik eng to‘g‘ri va qutqaruvchi yo‘lligiga",
+    "B) Yolg‘on gapirish qiyin jarayon ekanligiga",
+    "C) Har qanday vaziyatda jim turishga",
+    "D) Boshqalarga aql o‘rgatish zarurligiga"
+   ],
+   "answer": "A) Halollik eng to‘g‘ri va qutqaruvchi yo‘lligiga"
+  }
+ ]
+}

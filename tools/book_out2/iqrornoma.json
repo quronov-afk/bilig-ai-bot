@@ -1,0 +1,476 @@
+{
+ "title": "Iqrornoma",
+ "author": "Lev Tolstoy",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "17-19",
+  "age_hint": "16+",
+  "topics": [
+   "e‘tiqod",
+   "hayot ma‘nosi",
+   "falsafa",
+   "ma‘naviyat",
+   "o‘z-o‘zini anglash"
+  ],
+  "theme": "Inson hayotining haqiqiy ma‘nosi shon-shuhrat, boylik yoki zohiriy ilmlarda emas, balki Yaratganga bo‘lgan samimiy e‘tiqodda, ma‘naviy kamolotda va e‘tiqod bilan amaldagi birlikdadir.",
+  "summary": "Lev Tolstoy o‘zining «Iqrornoma» asarida bolaligidan boshlab kechirgan ruhiy va ma‘naviy izlanishlarini, inqirozlarini ochiq-oydin bayon qiladi. Muallif 16 yoshida bolaligida o‘rgatilgan pravoslav dinidan va ibodatlardan uzoqlashadi. U yoshligida komil inson bo‘lishga intiladi, ammo vaqt o‘tib bu intilish boshqalardan ustun bo‘lish, shuhrat va boylik orttirish vasvasasiga aylanadi. Adabiyot va yozuvchilar davrasiga kirib kelgach, u adiblar va san‘atkorlarning maqsadsiz, kibrli va faqat maqtov hamda pul ketidan quvuvchi hayotidan ko‘ngli qoladi. Chet elga safar qilishi, Parijdagi odam qatli va sevikli akasining og‘ir xastalikdan vafot etishi undagi «taraqqiyot» haqidagi xurofiy ishonchni yemiradi. Uylangach, 15 yil davomida oilasi va xo‘jaligi bilan band bo‘lib yashaydi. Ammo 50 yoshlarida Tolstoy chuqur ruhiy inqirozga uchraydi: u har bir qilayotgan ishidan va hayotidan «Nima uchun? Xo‘sh, keyin-chi?» deb ma‘no izlaydi va hech qanday tayanch topolmaydi. O‘zini osib qo‘ymaslik yoki miltiq bilan otib qo‘ymaslik uchun choralar ko‘radi. U falsafa, aniq ilmlar va o‘tmish donishmandlari (Sulaymon, Budda, Sokrat, Shopengauer) asarlaridan hayot ma‘nosini qidiradi, lekin barchasi «hayot — bu behuda yovuzlik» degan xulosaga olib keladi. Nihoyat, Tolstoy o‘zi mansub oliy tabaqa vakillarining riyokor e e‘tiqodidan yuz o‘girib, oddiy mehnatkash xalqqa yuzlanadi. Oddiy dehqonlar va mehnatkashlar hayotiy azoblar va o‘lim qarshisida tushkunlikka tushmay, xotirjam va mazmunli yashayotganini ko‘radi. Ularga bu quvvatni berayotgan narsa — samimiy iymon ekanini anglaydi. Xudoni izlash va Yaratganning irodasiga ko‘ra yashash hayotning yagona mazmuni ekanini anglab, ruhiy najot topadi.",
+  "characters": "Lev Tolstoy — asar muallifi va bosh qahramoni, o‘z hayotining ma‘nosini va Yaratganni izlayotgan buyuk adib va mutafakkir. Dmitriy — muallifning akasi, yoshligida dinga berilib, samimiy ibodat qilgani uchun atrofdagilar tomonidan mazax qilingan va «Nuh» deb atalgan. Volodenka M. — muallifning bolalikdagi tanishi, 11 yoshli Tolstoyga «Xudo yo‘q» degan gapni keltirgan gimnaziyachi. S. — muallifning do‘sti, akasining bir og‘iz gapi bilan ko‘p yillik odatiy ibodatini to‘xtatgan rostgo‘y odam.",
+  "conclusion": "Ushbu asar insonni hayotning o‘tkinchi hozu-havosiga berilmasdan, yashashning tub ma‘nosi haqida mushohada yuritishga undaydi. Kitobxon zohiriy boylik va shuhrat ruhiy halovat keltirmasligini, haqiqiy baxt ma‘naviy poklik va samimiy e e‘tiqodda ekanini anglaydi. Asar insonni ko‘r-ko‘rona emas, balki anglagan holda ezgulikka va Yaratganning roziligiga intilib yashashga o‘rgatadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Hayotning ma‘nosi, e‘tiqod va ma‘naviyat haqida teran o‘ylaydigan, falsafiy-biografik asarlarga qiziqadigan o‘smirlar va yoshlar uchun.",
+  "events": [
+   "Tolstoy bolaligida diniy ruhda tarbiya topadi.",
+   "Gimnaziyachi Volodenka M. bolalarga Xudo yo‘qligi haqida xabar keltiradi.",
+   "Akasi Dmitriy dinga berilib ibodat qila boshlaganda atrofdagilar uning ustidan kuladi.",
+   "16 yoshida muallif cherkovga qatnashni va ibodat qilishni bas qiladi.",
+   "Yoshlikda komillikka intilish o‘rnini boshqalardan ustun bo‘lish istagi egallaydi.",
+   "Urushdan keyin Tolstoy Peterburgda yozuvchilar davrasiga qo‘shiladi.",
+   "Adiblar jamoasidagi kibr, manmanlik va xudbinlikni ko‘rib yozuvchilardan ko‘ngli qoladi.",
+   "Parijda bo‘lganida odam qatli manzarasiga guvoh bo‘lib, taraqqiyot nazariyasidan shubhalanadi.",
+   "Aka-ukasi og‘ir xastalikdan vafot etadi va bu voqea unda chuqur iz qoldiradi.",
+   "Qishloqda dehqon bolalari uchun maktab ochib, erkin ta‘lim berishga urinadi.",
+   "Uylangach, diqqat-e‘tiborini oilasi va xo‘jaligini rivojlantirishga qaratadi.",
+   "Ellik yoshlarida muallifda hayotning to‘xtab qolishi va maqsadsizlik tuyg‘usi paydo bo‘ladi.",
+   "«Nima uchun? Xo‘sh, keyin-chi?» degan savollar unga tinchlik bermay qo‘yadi.",
+   "O‘zini bexosdan o‘ldirib qo‘ymaslik uchun xonasidan tizimchani olib tashlaydi va miltiqsiz ovga chiqadi.",
+   "Aniq va gumanitar ilmlardan hayot ma‘nosiga javob izlaydi, ammo topolmaydi.",
+   "Donishmandlar (Yekleziast, Budda, Sokrat, Shopengauer) asarlarini o‘rganib, hayotning ma‘nosizligi haqidagi xulosaga keladi.",
+   "Tolstoy insoniyatning ma‘nosizlikdan qutulish bo‘yicha to‘rtta chorasini tasvirlaydi.",
+   "Oliy tabaqa xudojo‘ylarining amali va e‘tiqodi bir-biriga zid ekanini anglaydi.",
+   "Oddiy mehnatkash xalqning samimiy e‘tiqodi ularga yashash va o‘limdan qo‘rqmaslik quvvatini berayotganini ko‘radi.",
+   "Xudoni tanish va Yaratgan irodasiga ko‘ra yashash hayotning yagona mazmuni ekanini anglab, ruhiy inqirozdan chiqadi."
+  ],
+  "quotes": [
+   "Men butun qalbim bilan yaxshi bo‘lishga intilgandim; ammo men yosh edim, hirslarimga asir edim, ammo yaxshi bo‘lish yo‘llarini izlaganimda yolg‘iz edim, mutlaqo yolg‘iz edim.",
+   "Haqiqat shunda ediki, yashashda hech qanday ma'no yo‘q edi.",
+   "O‘lim haq, men, albatta, bu dunyodan o‘taman. Mening yashashimda shunday ma'no bormiki, mening o‘limim uni mahv eta olmasa?",
+   "Xudoni tanimoq va yashamoq - aynan bir narsa. Xudo – hayotdir.",
+   "Quyidagi cheksizlik meni dahshatga soladi va o‘zidan bezdiradi, yuqoridagi cheksizlik esa o‘ziga tortadi va menga kuch beradi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gimnaziya talabasi Volodenka qanday yangilikni aytib bergan edi?",
+   "options": [
+    "A) Maktab yopilganini",
+    "B) Xudo yo‘qligi haqidagi gapni",
+    "C) Yangi kitob chiqqanini",
+    "D) Imtihonlar bekor bo‘lganini"
+   ],
+   "answer": "B) Xudo yo‘qligi haqidagi gapni"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akasi Dmitriy dinga berilganda, boshqalar uni nima deb atashdi?",
+   "options": [
+    "A) Sulaymon deb",
+    "B) Nuh deb",
+    "C) Dovud deb",
+    "D) Avliyo deb"
+   ],
+   "answer": "B) Nuh deb"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif urushdan keyin Peterburgga kelib, kimlar bilan topishdi?",
+   "options": [
+    "A) Harbiylar bilan",
+    "B) Yozuvchilar bilan",
+    "C) Dehqonlar bilan",
+    "D) Savdogarlar bilan"
+   ],
+   "answer": "B) Yozuvchilar bilan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Parijda bo‘lganida qanday voqea muallifga kuchli ta‘sir qildi?",
+   "options": [
+    "A) Teatr tomoshasi",
+    "B) Qatl manzarasini ko‘rishi",
+    "C) Katta yong‘in",
+    "D) Qirolning nutqi"
+   ],
+   "answer": "B) Qatl manzarasini ko‘rishi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Yoshlikdagi qaysi ikki voqea taraqqiyot e‘tiqodini tebrata boshladi?",
+   "options": [
+    "A) Parijdagi qatl va aka o‘limi",
+    "B) Urush va dehqonlar qo‘zg‘oloni",
+    "C) Uylanish va chet elga safar",
+    "D) Maktab ochilishi va kasallik"
+   ],
+   "answer": "A) Parijdagi qatl va aka o‘limi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif nega dehqon bolalariga erkin ta‘lim berishni xohladi?",
+   "options": [
+    "A) Ularga rahm qilgani uchun",
+    "B) Nima o‘rgatishni o‘zi bilmagani uchun",
+    "C) Hukumat shunday buyurgani uchun",
+    "D) Kitoblar yetishmagani uchun"
+   ],
+   "answer": "B) Nima o‘rgatishni o‘zi bilmagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yozuvchilar nega doimo bir-birini maqtash va yozish bilan band edi?",
+   "options": [
+    "A) Haqiqatni tarqatish uchun",
+    "B) Pul va maqtov olish uchun",
+    "C) Bolalarga yordam berish uchun",
+    "D) Podsho buyrug‘ini bajarish uchun"
+   ],
+   "answer": "B) Pul va maqtov olish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning yoshlikda maqtov uchun yomon ishlarga berilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, chunki hamma shunday qilgan",
+    "B) Noto‘g‘ri, chunki ma‘naviy tubanlikka eltdi",
+    "C) To‘g‘ri, chunki shuhrat keltirgan",
+    "D) Noto‘g‘ri, chunki pul keltirmagan"
+   ],
+   "answer": "B) Noto‘g‘ri, chunki ma‘naviy tubanlikka eltdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif yozuvchilar jamiyatini jinnixonaga o‘xshatishi orqali nimani ko‘rsatgan?",
+   "options": [
+    "A) Yozuvchilarning kasalligini",
+    "B) Faoliyatning ma‘nasizligi va tartibsizligini",
+    "C) Ularning xursandchiligini",
+    "D) Bino qulayligini"
+   ],
+   "answer": "B) Faoliyatning ma‘nasizligi va tartibsizligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallifning ruhiy izlanishlari qaysi bosqichlarda kechdi?",
+   "options": [
+    "A) Dindan qaytish, yozuvchilik, inqiroz",
+    "B) Harbiy xizmat, tijorat, e‘tiqod",
+    "C) Dehqonchilik, sayohat, siyasat",
+    "D) O‘qituvchilik, tabobat, san‘at"
+   ],
+   "answer": "A) Dindan qaytish, yozuvchilik, inqiroz"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif hayotida «Nima uchun? Xo‘sh, keyin-chi?» savollari qayerda tug‘ildi?",
+   "options": [
+    "A) Samaradagi mulkida o‘ylaganda",
+    "B) Urush maydonida turganda",
+    "C) Chet elda yurganda",
+    "D) Maktabda dars berganda"
+   ],
+   "answer": "A) Samaradagi mulkida o‘ylaganda"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif o‘zini osib qo‘ymaslik uchun xonasidan nimani olib chiqdi?",
+   "options": [
+    "A) Miltiqni",
+    "B) Tizimchani",
+    "C) Pichoqni",
+    "D) Arqonni"
+   ],
+   "answer": "B) Tizimchani"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sulaymon payg‘ambar (Yekleziast) hayot haqida qanday xulosaga kelgan?",
+   "options": [
+    "A) Hamma narsa mangu va go‘zal",
+    "B) Bari behuda va ruhni qiynash",
+    "C) Faqat boylik to‘plash kerak",
+    "D) Ilm hamma narsani hal qiladi"
+   ],
+   "answer": "B) Bari behuda va ruhni qiynash"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hikoyatdagi yo‘lovchi jarlikda sichqonlar nima qilayotganini ko‘radi?",
+   "options": [
+    "A) In qaziyotganini",
+    "B) Shoxni kemirayotganini",
+    "C) Asal yeyayotganini",
+    "D) Ajdahodan qochayotganini"
+   ],
+   "answer": "B) Shoxni kemirayotganini"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hayotning ma‘nosizligidan qutilish uchun qanday to‘rtta chora sanaladi?",
+   "options": [
+    "A) Bepushlik, epikurizm, o‘zini o‘ldirish, ojizlik",
+    "B) Mehnat, ibodat, sabr, shukr",
+    "C) O‘qish, yozish, sayohat, do‘stlik",
+    "D) Boylik, mansab, shuhrat, bilim"
+   ],
+   "answer": "A) Bepushlik, epikurizm, o‘zini o‘ldirish, ojizlik"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega ilmiy bilimlar Tolstoyga hayot ma‘nosini topishga yordam bermadi?",
+   "options": [
+    "A) Ilm sohasini tushunmagani uchun",
+    "B) Ilm pirovard ma‘noni tushuntirmagani uchun",
+    "C) Kitoblar kam bo‘lgani uchun",
+    "D) Olimlar gaplashishni xohlamagani uchun"
+   ],
+   "answer": "B) Ilm pirovard ma‘noni tushuntirmagani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tolstoy nega o‘zini hayotdan mahrum qilishga shoshilmadi?",
+   "options": [
+    "A) O‘limdan juda qo‘rqqani uchun",
+    "B) Masalaga javob topmoqchi bo‘lgani uchun",
+    "C) Oilasi ruxsat bermagani uchun",
+    "D) Ishlari juda ko‘pligi uchun"
+   ],
+   "answer": "B) Masalaga javob topmoqchi bo‘lgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning baxtli oilasi bo‘la turib tushkunlikka tushishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Moddiy farovonlik ruhni to‘ydirmasligini",
+    "B) Uning noshukr va injiq odamligini",
+    "C) Boylik har doim kulfat keltirishini",
+    "D) Oilaning keraksiz narsa ekanligini"
+   ],
+   "answer": "A) Moddiy farovonlik ruhni to‘ydirmasligini"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Quduqdagilar asal yalaydi, lekin sichqonni ko‘rmaydi» majozi nimani ifodalaydi?",
+   "options": [
+    "A) Hayvonlarning tabiatini",
+    "B) O‘tkinchi lazzat uchun ajalni unutishni",
+    "C) Quduqning chuqurligini",
+    "D) Asalning juda shirinligini"
+   ],
+   "answer": "B) O‘tkinchi lazzat uchun ajalni unutishni"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tolstoy hayotiy inqiroz va uning sabablarini qanday ketma-ketlikda anglaydi?",
+   "options": [
+    "A) Maqsadsizlik, umidsizlik, sabab izlash",
+    "B) Boylik, quvonch, sayohat",
+    "C) Kasallik, davolanish, tuzalish",
+    "D) Dars berish, yozish, tinchlanish"
+   ],
+   "answer": "A) Maqsadsizlik, umidsizlik, sabab izlash"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif oxir-oqibat kimlarning hayotida haqiqiy ma‘noni ko‘rdi?",
+   "options": [
+    "A) Oliy tabaqa vakillarida",
+    "B) Oddiy mehnatkash xalq vakillarida",
+    "C) Chet ellik olimlarda",
+    "D) Saroy amaldorlarida"
+   ],
+   "answer": "B) Oddiy mehnatkash xalq vakillarida"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallifning dildagi ovozi Xudo haqida qanday xulosaga keladi?",
+   "options": [
+    "A) Xudo — bu quyoshdir",
+    "B) Xudo — hayotdir",
+    "C) Xudo — falsafadir",
+    "D) Xudo — qonundir"
+   ],
+   "answer": "B) Xudo — hayotdir"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tolstoy pravoslav cherkovidan uzil-kesil ko‘ngli qolishiga qaysi voqea sabab bo‘ldi?",
+   "options": [
+    "A) Cherkovning urush va qatllarni ma‘qullashi",
+    "B) Ibodatlarning juda uzunligi",
+    "C) Kitoblarning lotinchada yozilgani",
+    "D) Ruhoniylarning kamligi"
+   ],
+   "answer": "A) Cherkovning urush va qatllarni ma‘qullashi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif ko‘rgan tushida o‘zini qayerda his qiladi?",
+   "options": [
+    "A) Kema bortida",
+    "B) To‘r karavotda havoda osilib",
+    "C) O‘rmon o‘rtasida",
+    "D) Yuksak tog‘ uchida"
+   ],
+   "answer": "B) To‘r karavotda havoda osilib"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tolstoy nega oliy tabaqa xudojo‘ylarining iymoniga ishona olmadi?",
+   "options": [
+    "A) Ularning amali e‘tiqodiga mos emasligidan",
+    "B) Ular cherkovga kam borganidan",
+    "C) Ular lotincha bilmaganidan",
+    "D) Ularning kitobi bo‘lmaganidan"
+   ],
+   "answer": "A) Ularning amali e‘tiqodiga mos emasligidan"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega oddiy xalq o‘lim va azobdan qo‘rqmay xotirjam yashaydi?",
+   "options": [
+    "A) Ular hech narsani tushunmagani uchun",
+    "B) Ularda samimiy va jiddiy e‘tiqod bo‘lgani uchun",
+    "C) Ularning dardi bo‘lmagani uchun",
+    "D) Ular har kuni bayram qilgani uchun"
+   ],
+   "answer": "B) Ularda samimiy va jiddiy e‘tiqod bo‘lgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Cherkovning boshqalarni kofir deyishi va urushni oqlashini Tolstoy qanday baholaydi?",
+   "options": [
+    "A) Dinning asl sevgi mohiyatiga zid deb",
+    "B) Juda to‘g‘ri va shart bo‘lgan ish deb",
+    "C) Arzimas va ahamiyatsiz xato deb",
+    "D) Faqat podshoga kerakli ish deb"
+   ],
+   "answer": "A) Dinning asl sevgi mohiyatiga zid deb"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tolstoyning e‘tiqodni ongli qayta qabul qilishi bola uchun qanday saboq?",
+   "options": [
+    "A) Ko‘r-ko‘rona emas, anglab e‘tiqod qilish",
+    "B) Har qanday dindan voz kechish",
+    "C) Faqat dunyo va pul haqida o‘ylash",
+    "D) Kitob o‘qishni to‘xtatish"
+   ],
+   "answer": "A) Ko‘r-ko‘rona emas, anglab e‘tiqod qilish"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning tushida yuqoridagi tubsizlikka qaraganda tinchlanishi nimani anglatadi?",
+   "options": [
+    "A) Yuksak e‘tiqodga intilish ruhiy najotligini",
+    "B) Osmonning juda chiroyliligini",
+    "C) Qorong‘ulikdan qo‘rqishni",
+    "D) Uxlash va tush ko‘rish lazzatini"
+   ],
+   "answer": "A) Yuksak e‘tiqodga intilish ruhiy najotligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asarning «Iqrornoma» deb atalishi muallifning qaysi tuyg‘usini aks ettiradi?",
+   "options": [
+    "A) Samimiy va ochiq ko‘ngil izhorini",
+    "B) O‘z boyligi bilan maqtanishini",
+    "C) Boshqalarga aql o‘rgatish istagini",
+    "D) O‘tmishini yashirishga urinishini"
+   ],
+   "answer": "A) Samimiy va ochiq ko‘ngil izhorini"
+  }
+ ]
+}

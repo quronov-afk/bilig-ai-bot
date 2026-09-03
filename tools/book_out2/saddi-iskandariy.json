@@ -1,0 +1,48 @@
+{
+ "title": "Saddi Iskandariy",
+ "author": "Alisher Navoiy",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "odillik",
+   "jasorat",
+   "ilm",
+   "hikmat",
+   "el-yurt manfaati"
+  ],
+  "theme": "Asarning bosh g‘oyasi — adolatli hukmdor timsolini ko‘rsatish, ilm va ma’rifat orqali dunyoda tinchlik o‘rnatish hamda insoniyatni zulm va yovuzlikdan himoya qilishdir. Navoiy Iskandar timsolida adolat, kamtarlik va fozillikni ulug‘laydi.",
+  "summary": "Doston Iskandarning dunyoga kelishi va donishmand ustozlar qo‘lida ta’lim olishidan boshlanadi. Otasi Faylaqus vafot etgach, u taxtga o‘tiradi va mamlakatda adolat o‘rnatadi. Eron shohi Doro adolatsizlik va takabburlik qilib, Iskandarga qarshi urush ochadi, lekin mag‘lub bo‘ladi. Iskandar Misr, Shom, Hindiston va Xitoygacha bo‘lgan yerlarni zabt etadi, biroq buni jahongirlik uchun emas, adolat va ma’rifat tarqatish uchun qiladi. Ya’juj va Ma’juj qabilasi odamlarga zulm qilayotganini eshitib, ularning yo‘lini to‘sish uchun temir va misdan ulkan devor — Saddi Iskandariyni barpo etadi. Iskandar jahonni kezib, turli hikmatlar o‘rganadi, dengiz tubiga sho‘ng‘ib sir-asrorlarni kashf etadi. Umri poyoniga yetgach, u mol-dunyosining hech birini o‘zi bilan olib keta olmasligini anglaydi va qo‘llarini tobutdan chiqarib qo‘yishni vasiyat qiladi.",
+  "characters": "Iskandar — odil, bilimlarga chanqoq va el-yurt g‘amini yeydigan jahongir hukmdor. Arastu va Aflotun — Iskandarga yo‘l ko‘rsatuvchi, hikmat va adolatdan saboq beruvchi donishmand ustozlar. Doro — manmanlik va takabburlik oqibatida halokatga uchragan Eron shohi.",
+  "conclusion": "Asar inson umrining o‘tkinchi ekani, mol-dunyo va shon-shuhrat emas, balki qoladigan yaxshi nom, odillik va ma’rifat eng oliy qadriyat ekanini ko‘rsatadi. Bola ushbu dostondan adolatli bo‘lish, ilm olish, ustozlarni hurmat qilish hamda kamtarlik insonning eng go‘zal fazilatlari ekanini o‘rganadi.",
+  "difficulty": "qiyin",
+  "mood": "jiddiy, falsafiy, ilhomlantiruvchi",
+  "for_whom": "Tarix, falsafa, adolat hamda jahongirlik qissalariga qiziqadigan, buyuk shaxslar hayoti va hikmatli saboqlarni anglashni xohlaydigan o‘smirlar uchun.",
+  "events": [
+   "Iskandar dunyoga keladi va Arastu kabi buyuk daho va ustozlar qo‘lida har taraflama bilim oladi.",
+   "Faylaqus vafotidan so‘ng Iskandar taxtga o‘tirib, mamlakatda adolat va ma’rifatni qaror toptiradi.",
+   "Eron hukmdori Doro manmanlik qilib Iskandarga qarshi qo‘shin tortadi va mag‘lubiyatga uchraydi.",
+   "Iskandar jahon bo‘ylab yurish qilib, turli o‘lka xalqlarini zulmdan xalos etadi hamda ma’rifat tarqatadi.",
+   "Xitoy xoqoni bilan uchrashuvda Iskandar uning aql-idroki va diplomatik mahoratini ko‘rib, do‘stona bitim tuzadi.",
+   "Ya’juj va Ma’juj qabilasining bosqinlaridan el-yurtni saqlash uchun Iskandar ulkan temir devor (Saddi Iskandariy) bino qiladi.",
+   "Iskandar ilmga bo‘lgan qiziqishi sababli shisha kemada dengiz tubiga tushib, suv osti olamini kuzatadi.",
+   "Hayot suvi (Obi hayot)ni izlab Zulmat bag‘riga kiradi, biroq abadiy tiriklik faqat Xizrga nasib etganini anglaydi.",
+   "Umri poyoniga yetganini sezgan Iskandar dunyo molidan hech narsa olib ketolmasligini ko‘rsatish uchun qo‘llarini tobutdan chiqarib ko‘mishni vasiyat qiladi.",
+   "Iskandarning vafotidan so‘ng donishmandlar va onasi uning odilligi hamda qoldirgan yaxshi nomini yod etadilar."
+  ],
+  "quotes": [
+   "Jahonda yo‘qdurur el g‘amidin g‘amsiz kishi.",
+   "Birovkim, chu el g‘ami bo‘lsa bas, Onikim, kishi demagil odami.",
+   "Oltin bilan devor urmoq ne sud, Gar adl bila bo‘lmasa el xushnud.",
+   "Ilm o‘rgan, hunar o‘rgan, chunki ilm va hunar barcha ezgulikning kalitidir.",
+   "Siyosat adolat bila muqarrar bo‘lur, zulm bila poydor bo‘lmas.",
+   "Kishi elga yaxshilik qilmasa agar, Anga eldin ham yaxshilik kelmagay."
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Iskandar dunyoni egallagan jahongir bo‘lsa-da, hayotining oxirida barcha mol-mulkini qoldirib, tobutidan ikki qo‘lini chiqarib qo‘yishni vasiyat qildi. Sizningcha, u bu harakati bilan insonlarga qanday saboq bermoqchi bo‘lgan va bugungi kunda bu saboqning ahamiyati nimada?"
+}

@@ -1,0 +1,478 @@
+{
+ "title": "Masposhsho",
+ "author": "Qoraqalpoq xalq eposi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "vatanparvarlik",
+   "vafo va sadoqat",
+   "jasorat",
+   "muhabbat",
+   "xalq og‘zaki ijodi"
+  ],
+  "theme": "Ona yurtga va sadoqatli muhabbatga sodiq qolish, el-yurt ozodligi hamda or-nomusini har qanday yovuz dushmandan mardona himoya qilish.",
+  "summary": "Buxoroning Sarsabiz soyida yashovchi Kenagas urug‘idan bo‘lgan Abdukarim boy farzandsizlikdan oh-fig‘on chekadi. Bir kuni tushida yetti g‘oyib unga «Masposhsho» ismli pahlavon o‘g‘il ko‘rishini bashorat qiladi. Boyning yori Qorasoch yo‘lbars yuragiga boshqorong‘i bo‘lgach, boy sahroga chiqib, hiyla bilan yo‘lbarsni yengadi va uning yuragini olib keladi. Dunyoga kelgan Masposhsho ulg‘ayib, yurt ko‘radi va So‘fi bobodan Toma urug‘idagi Labaqboyning qizi suluv Oyparcha haqida eshitadi.\n\nMasposhsho va Oyparcha bir-birlarini ko‘rib, chin dildan sevib qolishadi. Labaqboy qizini uzatadi. Biroq tinch hayot uzoq davom etmaydi: qalmoq podshosi Boboxon va makkor Chordona bobo elga dushmanlik qiladi. Masposhsho hamda Oyparcha yovga qarshi mardona kurashadilar. Oyparcha o‘zining botirligi bilan Boboxon qo‘shiniga qarshi jang qiladi va podshoning kallasini kesib oladi. Masposhsho esa Olangqasar dev bilan jangda og‘ir yaralanib, tog‘da oyoqlaridan ayrilib qoladi.\n\nOyparcha dushman qo‘lida bandi bo‘lib, ikki farzandini yashirincha o‘stiradi. Masposhsho esa tog‘dagi yerto‘lada to‘tiqushlar va hayvonlar yordamida tirik qoladi. Yetti yildan so‘ng Abdukarim boy qirq yigit bilan o‘g‘lini izlab keladi. Oyparcha va uning ulg‘aygan farzandlari (Odilsho va uning singlisi) dushmanlardan otasining o‘chini olib, Masposhshoni yerto‘ladan sog‘-salomat topishadi. Oila qayta birlashib, Buxoroga qaytadi va elga katta to‘y-tomosha beriladi.",
+  "characters": "Masposhsho — el-yurt va muhabbat qo‘riqchisi, mard va pahlavon yigit, sinovlarda bukilmas iroda ko‘rsatadi. Oyparcha — Labaqboyning qizi, go‘zal, aql-idrokli, qilichboz va mard ayol, yovga qarshi tengsiz jang qiladi. Abdukarim boy — Buxoro sardori, saxovatli, farzand dohiysida harakat qiluvchi fidoyi ota. Chordona bobo — qalmoqlarning makkor, xiyonatkor va buzg‘unchi choli. Boboxon — zalolatli va zolim qalmoq podshosi.",
+  "conclusion": "Asar kitobxonda vatanparvarlik, do‘stlik va oila vafo-sadoqatini shakllantiradi. Sabr va matonat har qanday og‘ir sinovlarni yengishga xizmat qilishini ko‘rsatadi. Ota-onaga hurmat va oqibat kabi insoniy qadriyatlarni singdiradi.",
+  "difficulty": "o‘rta",
+  "mood": "hayajonli, ko‘tarinki, qahramonona",
+  "for_whom": "Xalq eposlari, botirlik, jasorat va sadoqat haqidagi qahramonlik dostonlariga qiziqadigan o‘smirlar uchun.",
+  "events": [
+   "Abdukarim boy farzandsizlikdan qayg‘urib xudoga yolvoradi.",
+   "Tushida yetti g‘oyib unga Masposhsho ismli o‘g‘il ko‘rishini aytadi.",
+   "Qorasoch yo‘lbars yuragiga boshqorong‘i bo‘ladi.",
+   "Abdukarim boy hiyla bilan yo‘lbarsni yengib, yuragini yorib oladi.",
+   "Masposhsho dunyoga keladi va alp bo‘lib ulg‘ayadi.",
+   "Masposhsho So‘fi boboni uchratib, Oyparcha haqida eshitadi.",
+   "So‘fi bobo Labaqboynikiga sovchilikka borib, kaltaklanib qaytadi.",
+   "Masposhsho Labaqboy ovuliga borib, Oyparcha bilan uchrashadi.",
+   "Labaqboy Masposhshoni munosib ko‘rib, qizini uzatadi.",
+   "Makkor Chordona bobo oshiqlar orasiga sovuqchilik solishga urinadi.",
+   "Qalmoq podshosi Boboxon elga xavf solib bostirib keladi.",
+   "Oyparcha sovut kiyib, Boboxon qo‘shiniga qarshi mardona jang qiladi.",
+   "Oyparcha Boboxon podshoning kallasini kesib, Masposhshoga keltirib beradi.",
+   "Masposhsho Olangqasar dev bilan olishib, og‘ir jarohat oladi.",
+   "Masposhsho tog‘da oyoqlaridan ayrilib, yerto‘lada qolib ketadi.",
+   "To‘tiqushlar va hayvonlar Masposhshoga shifobaxsh mevalar tashib yordam beradi.",
+   "Oyparcha bandilikda ikki farzandini yashirincha tarbiyalab ulg‘aytiradi.",
+   "Oyparchaning bolalari dushmanlarga qarshi otlanib, ularni mag‘lub etadi.",
+   "Abdukarim boy qirq yigit bilan o‘g‘li va kelinini izlab jo‘naydi.",
+   "Oyparcha va bolalari tog‘dagi yerto‘ladan Masposhshoni topishadi.",
+   "Oila qayta topishib, Buxoro yurtiga omon-eson qaytib keladi.",
+   "Abdukarim boy katta to‘y berib, Buxoro xalqini yayratadi."
+  ],
+  "quotes": [
+   "Yoshim qirqqa yetdi, gurullagan davrim o‘tdi.",
+   "Farzand ekan odamzodning mevasi.",
+   "Yaxshilarga bosh qo‘shgin, yaxshilarning ichida quvon, hayqirgin, jo‘shgin!",
+   "Ot minsa — ayovsiz oyjamol!",
+   "O‘chgandi mening unim, qayta tug‘di oy-kunim."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abdukarim boy tushida kimlarni ko‘rdi?",
+   "options": [
+    "A) Yetti g‘oyib bolani",
+    "B) Zolim qalmoq podshosini",
+    "C) Keksa So‘fi boboni",
+    "D) Buxoro xonining elchilarini"
+   ],
+   "answer": "A) Yetti g‘oyib bolani"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qorasoch nima yeyishga boshqorong‘i bo‘ldi?",
+   "options": [
+    "A) Yo‘lbarsning yuragini",
+    "B) Qashqirning go‘shtini",
+    "C) Kiyikning jigarini",
+    "D) Sherning suti"
+   ],
+   "answer": "A) Yo‘lbarsning yuragini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abdukarim boy yo‘lbarsni qanday yengdi?",
+   "options": [
+    "A) Maqtov va hiyla bilan",
+    "B) Oq nayza urib",
+    "C) O‘tkir qilich chopib",
+    "D) Tuzoqqa tushirib"
+   ],
+   "answer": "A) Maqtov va hiyla bilan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "So‘fi bobo Masposhshoga kim haqida aytib berdi?",
+   "options": [
+    "A) Labaqboyning qizi Oyparcha haqida",
+    "B) Boboxonning oltin xazinasi haqida",
+    "C) Qalmoqlar bostirib kelgani haqida",
+    "D) Sarsabiz degan soy haqida"
+   ],
+   "answer": "A) Labaqboyning qizi Oyparcha haqida"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asardagi voqealar tartibini belgilang.",
+   "options": [
+    "A) Tush ko‘rish, yo‘lbarsni yengish",
+    "B) Yor izlash, yo‘lbarsni yengish",
+    "C) Qiz uzatish, tush ko‘rish",
+    "D) Urush boshlash, yo‘lbarsni yengish"
+   ],
+   "answer": "A) Tush ko‘rish, yo‘lbarsni yengish"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Abdukarim boy va Labaqboy qaysi jihatdan o‘xshash?",
+   "options": [
+    "A) Ikkisi ham juda boy edi",
+    "B) Ikkisi ham zolim podsho edi",
+    "C) Ikkisi ham qalmoq podshosi edi",
+    "D) Ikkisi ham jirov edi"
+   ],
+   "answer": "A) Ikkisi ham juda boy edi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Abdukarim boy nega sahroga yo‘l oldi?",
+   "options": [
+    "A) Yori aytgan yegulikni topishga",
+    "B) Qalmoqlarga qarshi urushish uchun",
+    "C) Buxoroga savdo qilish uchun",
+    "D) Otlarni o‘tlatib kelish uchun"
+   ],
+   "answer": "A) Yori aytgan yegulikni topishga"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Labaqboy nega So‘fi boboga g‘azablandi?",
+   "options": [
+    "A) Sovchilik so‘zlaridan nomusi kelib",
+    "B) So‘fi uning otini o‘g‘irlagani uchun",
+    "C) Qo‘noq oshini yemagani uchun",
+    "D) Qalmoq podshosiga sotilgani uchun"
+   ],
+   "answer": "A) Sovchilik so‘zlaridan nomusi kelib"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Abdukarim boyning saxovatli ishlari haqida qanday baho berish mumkin?",
+   "options": [
+    "A) To‘g‘ri va ezgu ish",
+    "B) Manmanlik va maqtanchoqlik",
+    "C) Keraksiz xarajat va isrof",
+    "D) Qo‘rqoqlik va ojizlik"
+   ],
+   "answer": "A) To‘g‘ri va ezgu ish"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Beli yoyday bukilib» tasviri qaysi tuyg‘uni ifodalaydi?",
+   "options": [
+    "A) Chuqur qayg‘u va iztirobni",
+    "B) Qattiq g‘azab va nafratni",
+    "C) Cheksiz quvonch va shodlikni",
+    "D) Dangasalik va holsizlikni"
+   ],
+   "answer": "A) Chuqur qayg‘u va iztirobni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Masposhsho va Oyparchaning uchrashishiga kim yordam berdi?",
+   "options": [
+    "A) Qarchig‘ay yangasi",
+    "B) Chordona bobo",
+    "C) Boboxon podsho",
+    "D) Qoraboy amaki"
+   ],
+   "answer": "A) Qarchig‘ay yangasi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oyparchaga xiyonat qilmoqchi bo‘lgan makkor chol kim?",
+   "options": [
+    "A) Chordona bobo",
+    "B) So‘fi bobo",
+    "C) Labaqboy boy",
+    "D) Mambetniyoz jirov"
+   ],
+   "answer": "A) Chordona bobo"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Boboxon podshoning qo‘shiniga qarshi mardona kim jang qildi?",
+   "options": [
+    "A) Oyparchaning o‘zi",
+    "B) Chordona bobo",
+    "C) Abdukarim boy",
+    "D) Labaqboyning inisi"
+   ],
+   "answer": "A) Oyparchaning o‘zi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oyparcha Boboxon podshoni mag‘lub etib nimasini olib keldi?",
+   "options": [
+    "A) Uning kallasini kesib",
+    "B) Oltin tojini olib",
+    "C) Uchqur otini minib",
+    "D) Qimmatbaho qilichini olib"
+   ],
+   "answer": "A) Uning kallasini kesib"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dostondagi ezgu va yovuz qahramonlar to‘g‘ri ko‘rsatilgan qatorni toping.",
+   "options": [
+    "A) Masposhsho — ezgu, Chordona — yovuz",
+    "B) Boboxon — ezgu, Oyparcha — yovuz",
+    "C) Labaqboy — ezgu, Abdukarim — yovuz",
+    "D) Olangqasar — ezgu, Masposhsho — yovuz"
+   ],
+   "answer": "A) Masposhsho — ezgu, Chordona — yovuz"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qalmoqlarga qarshi mardona kurashgan qahramonlarni ajrating.",
+   "options": [
+    "A) Masposhsho va Oyparcha",
+    "B) Chordona va Boboxon",
+    "C) Labaqboy va Qoraboy",
+    "D) Abdukarim va So‘fi"
+   ],
+   "answer": "A) Masposhsho va Oyparcha"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oyparcha nega Boboxon podshoning kallasini kesib oldi?",
+   "options": [
+    "A) Masposhshoga g‘alabasini isbotlash uchun",
+    "B) Oltin jig‘asini sotish uchun",
+    "C) Chordona boboni qo‘rqitish uchun",
+    "D) Ota yurtiga sovg‘a qilishga"
+   ],
+   "answer": "A) Masposhshoga g‘alabasini isbotlash uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Chordona bobo nega Masposhshoni aldashga urindi?",
+   "options": [
+    "A) Oyparchani qo‘lga kiritish uchun",
+    "B) Buxoroga podsho bo‘lish uchun",
+    "C) Abdukarimdan mol olish uchun",
+    "D) Masposhshoga ustozlik qilish uchun"
+   ],
+   "answer": "A) Oyparchani qo‘lga kiritish uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Oyparchaning yovga qarshi yolg‘iz otlanishini qanday baholash kerak?",
+   "options": [
+    "A) Yuksak jasorat va vatanparvarlik",
+    "B) Kaltabinlik va nodonlik",
+    "C) Beparvolik va manmanlik",
+    "D) Qo‘rqoqlik va ojizlik"
+   ],
+   "answer": "A) Yuksak jasorat va vatanparvarlik"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Ot minsa — ayovsiz oyjamol» ta'rifi qaysi sifatni ochib bergan?",
+   "options": [
+    "A) Go‘zallik va botirlik uyg‘unligini",
+    "B) Qo‘rqinchli va zolimlikni",
+    "C) Mag‘rurlik va manmanlikni",
+    "D) Ojizlik va ojizligini"
+   ],
+   "answer": "A) Go‘zallik va botirlik uyg‘unligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yaralangan Masposhshoga tog‘da kimlar yordam berib turdi?",
+   "options": [
+    "A) To‘tiqushlar va yovvoyi hayvonlar",
+    "B) Qalmoq qal'asidagi soqchilar",
+    "C) Buxorodan kelgan karvonchilar",
+    "D) Qipchoq urug‘ining botirlari"
+   ],
+   "answer": "A) To‘tiqushlar va yovvoyi hayvonlar"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abdukarim boy o‘g‘lini izlab Qirq yigit bilan qayerga keldi?",
+   "options": [
+    "A) Parli tog‘larining bag‘riga",
+    "B) Buxoroning Sarsabiz soyiga",
+    "C) Labaqboyning mol qo‘rasiga",
+    "D) Chin-Mochin bozor maydoniga"
+   ],
+   "answer": "A) Parli tog‘larining bag‘riga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Masposhshoning bolalari dushmanlaridan kimning o‘chini oldi?",
+   "options": [
+    "A) Otasi va onasining",
+    "B) Chordona boboning",
+    "C) Boboxon podshoning",
+    "D) Labaqboy boyning"
+   ],
+   "answer": "A) Otasi va onasining"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dostonni eng birinchi bo‘lib to‘qigan jirov kim?",
+   "options": [
+    "A) Mambetniyoz jirov",
+    "B) G‘iyos jirov",
+    "C) Orzi jirov",
+    "D) Paleke jirov"
+   ],
+   "answer": "A) Mambetniyoz jirov"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Masposhsho yerto‘ladan kelganlarga nega oldin o‘q otdi?",
+   "options": [
+    "A) Dushman keldi deb o‘ylagani uchun",
+    "B) Ov qilmoqchi bo‘lgani uchun",
+    "C) Yerto‘lani berkitish uchun",
+    "D) Merganligini ko‘rsatish uchun"
+   ],
+   "answer": "A) Dushman keldi deb o‘ylagani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oyparcha yerto‘ladagining Masposhsho ekanini qanday seza oldi?",
+   "options": [
+    "A) Qalbidagi his va sezgi bilan",
+    "B) Uning kiyimidagi oltin tugmadan",
+    "C) Manjun otning kishnashidan",
+    "D) Abdukarim boyning aytganidan"
+   ],
+   "answer": "A) Qalbidagi his va sezgi bilan"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Oyparchaning turli qiyinchiliklarda sabr qilishi haqida nima deysiz?",
+   "options": [
+    "A) Vafo va sadoqat namunasi",
+    "B) Majburlikdan qilingan chorasizlik",
+    "C) Keraksiz va behuda sarsonlik",
+    "D) Manmanlik va o‘zboshimchalik"
+   ],
+   "answer": "A) Vafo va sadoqat namunasi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Masposhshoning to‘tiqushlar va hayvonlar bilan ahilligi nimani bildiradi?",
+   "options": [
+    "A) Uning pok va mehribon qalbi borligini",
+    "B) Uning sehrgar va jodugar ekanini",
+    "C) Hayvonlarning ovqatga muhtojligini",
+    "D) Tog‘da boshqa odam yo‘qligini"
+   ],
+   "answer": "A) Uning pok va mehribon qalbi borligini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dostondagi «O‘chgandi mening unim, qayta tug‘di oy-kunim» misrasi nimani ifodalaydi?",
+   "options": [
+    "A) Qaytadan umid va baxtga erishishni",
+    "B) Qorong‘i kecha yorishganini",
+    "C) Quyosh va oyning chiqishini",
+    "D) Yoshlik davri o‘tib ketganini"
+   ],
+   "answer": "A) Qaytadan umid va baxtga erishishni"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston yakunida Buxoroda to‘y berilishi kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Adolat va ezgulik g‘alabasidan quvonch",
+    "B) Zafar va urushlardan g‘am",
+    "C) Dushmanga nisbatan achinish",
+    "D) Kelajakka nisbatan xavotir"
+   ],
+   "answer": "A) Adolat va ezgulik g‘alabasidan quvonch"
+  }
+ ]
+}

@@ -1,0 +1,446 @@
+{
+ "title": "Galaktikada bir kun",
+ "author": "Sa'dullo Quronov",
+ "genre": "qissa",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "10-14 yoshli bolalar uchun",
+  "topics": [
+   "ilm-fan",
+   "koinot",
+   "do‘stlik",
+   "jasorat",
+   "vatanparvarlik"
+  ],
+  "theme": "Asarning bosh g‘oyasi — ilm-fan va insonning ma'naviy qudrati har qanday yovuz quroldan ustun turishini, chinakam mo‘jiza esa insonning o‘z qalbi va aqlida ekanini ko‘rsatishdir.",
+  "summary": "Andijonlik bilimdon o‘spirin Ahmad ikki yil oldingi koinot safaridan o‘zi bilan olib kelgan Moviy toshlarni o‘rganishga qaror qiladi. U toshga bolg‘a bilan urganida, butun Yerdagi vaqt to‘xtab, koinotga ulkan radioaktiv energiya tarqaladi. Bu energetik portlashni AQSHning Pentagon harbiy tizimlari hamda koinotdagi Xastik va Salmir sayyoralari darhol qayd etadi. AQSH josuslari Ahmadni topib yerto‘lada so‘roq qilishayotganda, Salmir xaloskori sifatida tanilgan Ahmadni qutqarish uchun Margolning evarasi Dumgom yetib keladi. Ular Moviy toshlarni xavfsiz joyga yashirish uchun Salmir sayyorasiga yo‘l olishadi. Biroq yovuz qirol Magistik XXIII boshchiligidagi xastiklar armiyasi galaktikani bosib olish va Moviy toshlarni qo‘lga kiritish uchun yurish boshlaydi. Ahmad do‘stlari Moki, Dumgom, O‘g‘rivachcha va xaker Mitnik bilan birga Qora tuynukning Hodisalar gorizontiga tushib, Koinot xaritasiga oid kvant zarralarini yig‘ib chiqishadi. Keyinchalik Ahmad qadimiy Meriya sayyorasiga sayohat qilib, superkompyuter vositasida o‘z miyasini birlashtiradi. Xastiklar \"Dahshat bo‘roni\" quroli bilan Salmirni yo‘q qilmoqchi bo‘lgan hal qiluvchi pallada Ahmad yetib keladi. U materiya va antimateriya to‘qnashuvi — annigilyatsiya hodisasini hosil qilib, dushman qo‘shinini tamomila yo‘q qiladi. Galaktikada tinchlik o‘rnatilgach, Ahmad Yerga qaytadi va o‘z uyida 2036-yilda uyg‘onadi. U koinotdagi eng buyuk mo‘jiza insonning o‘z qalbi va aqli ekanini anglab yetadi.",
+  "characters": "Ahmad — fizikaga qiziquvchi zakovatli va jasur o‘zbek bolasi, galaktika xaloskori. Magistik XXIII — koinotni egallamoqchi bo‘lgan yovuz xastiklar qiroli. Dumgom — Margolning evarasi, Ahmadning sodiq va jasur salmirlik do‘sti. Moki — marslik muhandislar yaratgan kvant-foton miyali noyob robot. Mitnik — jamoaga yordam beradigan to‘rt qo‘lli mohir xaker. O‘g‘rivachcha — o‘g‘riboshining o‘g‘li, do‘stlarga Ko‘kkezarni qaytarib bergan chaqqon bola.",
+  "conclusion": "Kitob bolaga ilm-fan, fizika va koinot sirlariga qiziqish uyg‘otadi. Har qanday murakkab vaziyatda ham aql, do‘stlik va fidoyilik orqali g‘alaba qozonish mumkinligini o‘rgatadi. Bola asardan eng buyuk kuch tashqi qurollarda emas, balki insonning o‘z bilimi, ma'naviyati va ezgu intilishlarida ekanini uqib oladi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, hayajonli, ilmiy-fantastik",
+  "for_whom": "Koinot sarguzashtlari, ilmiy ixtirolar va fantastikaga qiziqadigan barcha kitobxon bolalar uchun.",
+  "events": [
+   "Mayor Jekobson Pentagon hisobotlarida O‘zbekiston hududida o‘ta kuchli radioaktivlikni qayd etdi.",
+   "Ahmad o‘z xonasida Moviy toshni bolg‘a bilan urib, vaqt va makon to‘lqinlanishiga sabab bo‘ldi.",
+   "Xastiklar qiroli Magistik XXIII Quyosh tizimida Moviy tosh manbasi topilganini eshitdi.",
+   "Salmir prezidenti Yerdagi hodisadan xabar topib, Ahmadga yordam berish uchun guruh yubordi.",
+   "AQSH va Rossiya josuslari Andijonga kelib, Ahmadni tutib yerto‘laga bog‘lab qo‘yishdi.",
+   " yerto‘laga salmirlik Dumgom tushib kelib, Ahmadni josuslar qo‘lidan qutqardi.",
+   "Ahmad va Dumgom Moviy toshlarni olib Salmir sayyorasiga uchib ketishdi.",
+   "Salmirda Ahmadni \"Salmir xaloskori\" sifatida katta hurmat bilan kutib olishdi.",
+   "Ahmad va Dumgom omborxonadagi maxfiy kemani ko‘rish uchun 11 kilometr chuqurlikka tushishdi.",
+   "Bankir Louta urushayotgan taraflarga 34 foizlik og‘ir shartda kredit taklif qildi.",
+   "Ahmad majlisda to‘plangan rahbarlarni manfaatparastlikda va birlashmaslikda aybladi.",
+   "Ahmad do‘sti Mokini qidirib Kasmond sayyorasidagi bankka bordi.",
+   "O‘g‘rivachcha Ko‘kkezar kemasini otasidan oldin o‘g‘irlab, Ahmadga yordam berdi.",
+   "Xaker Mitnik Moki miyasini kompyuterga ulab, uning kvant-foton kompyuter ekanini aniqladi.",
+   "Ahmad va jamoasi Qora tuynukning Hodisalar gorizontiga tushib kvant zarralarini yig‘ishdi.",
+   "Ahmad qadimiy Meriya sayyorasiga borib, u yerdagi xotira tizimlariga ulindi.",
+   "Xastiklar qiroli Magistik \"Dahshat bo‘roni\" quroli bilan Salmirga hujum boshladi.",
+   "Ahmad nano-robotli mato yordamida o‘z miyasini bioneyronkompyuterga aylantirdi.",
+   "Ahmad materiya va antimateriyani urishtirib, annigilyatsiya portlashini hosil qildi va dushmanni yo‘qotdi.",
+   "Ahmad uyiga — 2036-yilga qaytib, haqiqiy mo‘jiza insonning o‘zida ekanini angladi."
+  ],
+  "quotes": [
+   "Ahmad bu toshlarni o‘zi bilan Yerga olib kelganidan qattiq afsuslanar, bu ishini koinot safaridagi eng katta xatosi deb bilardi.",
+   "U biror nimadan qo‘rqish uchun oldin o‘sha narsa haqida yaxshi bilish kerak deb hisoblardi.",
+   "Meni esa kimning g‘olib bo‘lishi qiziqtirmaydi... Unutmang, 34 foiz!",
+   "Manfaatparastlik, boylik ko‘zingizni ko‘r qilibdi.",
+   "U mo‘jizalarni koinotning olis yulduzlaridan emas, o‘zidan, qalbidan qidirishi kerakligini tushunib yetdi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mayor Jekobson Pentagon hisobotini olgach, birinchi kimning oldiga kirdi?",
+   "options": [
+    "A) Polkovnik Shvaykart huzuriga",
+    "B) Mudofaa vaziri huzuriga",
+    "C) Prezident Bolden huzuriga"
+   ],
+   "answer": "A) Polkovnik Shvaykart huzuriga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Radioaktivlik o‘chog‘i O‘zbekistonning qaysi viloyatida sodir bo‘lgan edi?",
+   "options": [
+    "A) Farg‘ona viloyatida",
+    "B) Andijon viloyatida",
+    "C) Namangan viloyatida"
+   ],
+   "answer": "B) Andijon viloyatida"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmad Moviy toshlarni qayerdan topib olgan edi?",
+   "options": [
+    "A) Ikki yil oldingi koinot safaridan",
+    "B) Universitetning laboratoriyasidan",
+    "C) Maktab hovlisidagi daraxt tagidan"
+   ],
+   "answer": "A) Ikki yil oldingi koinot safaridan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qirol Magistik XXIII qaysi sayyora va qavmning hukmdori edi?",
+   "options": [
+    "A) Xastik sayyorasi",
+    "B) Salmir sayyorasi",
+    "C) Miks sayyorasi"
+   ],
+   "answer": "A) Xastik sayyorasi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ahmad xonasida tajriba o‘tkazayotganda qanday voqealar ketma-ket sodir bo‘ldi?",
+   "options": [
+    "A) Bolg‘a urildi, to‘lqin tarqaldi, pufakday shishdi",
+    "B) Egov sindi, suv toshdi, devor quladi",
+    "C) Tosh portladi, chiroq o‘chdi, deraza sindi"
+   ],
+   "answer": "A) Bolg‘a urildi, to‘lqin tarqaldi, pufakday shishdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Pentagondagi yig‘ilishda ishtirok etgan harbiylarni to‘g‘ri ajrating.",
+   "options": [
+    "A) Shvaykart, Jekobson va Jon Lenuar",
+    "B) Magistik, Sagomastik va Dordon",
+    "C) Margol, Dumgom va Moki"
+   ],
+   "answer": "A) Shvaykart, Jekobson va Jon Lenuar"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ahmad Moviy toshni o‘rgandanda nega ehtiyotkorlikni yo‘qotdi?",
+   "options": [
+    "A) Charchoq va tosh nurining ta'siridan",
+    "B) Tosh mutlaqo xavfsiz bo‘lgani uchun",
+    "C) Dasturni tezroq tugatishni istaganidan"
+   ],
+   "answer": "A) Charchoq va tosh nurining ta'siridan"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Xastiklar qiroli N2G kristallini eshitib nega quvondi?",
+   "options": [
+    "A) Cheksiz hokimiyatga erishishini o‘ylab",
+    "B) Salmir bilan do‘stlashmoqchi bo‘lgani uchun",
+    "C) Urushni to‘xtatishga qaror qilgani uchun"
+   ],
+   "answer": "A) Cheksiz hokimiyatga erishishini o‘ylab"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ahmadning Moviy toshni uyda saqlagani to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, xavfni oldini olish kerak edi",
+    "B) To‘g‘ri, hamma bilishi shart edi",
+    "C) To‘g‘ri, uni darhol sotish kerak edi"
+   ],
+   "answer": "A) Noto‘g‘ri, xavfni oldini olish kerak edi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Ahmadning tosh nuriga tikilishini qanday tasvirlaydi?",
+   "options": [
+    "A) Tubi ko‘rinmas g‘aroyib girdobga tikilganday",
+    "B) Olov rangli mayoqqa qaraganday",
+    "C) Qorong‘i tundagi yulduzga qaraganday"
+   ],
+   "answer": "A) Tubi ko‘rinmas g‘aroyib girdobga tikilganday"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmadni yerto‘ladan qutqargan Dumgom kimning evarasi edi?",
+   "options": [
+    "A) Margolning evarasi",
+    "B) Mokining evarasi",
+    "C) Dordonning evarasi"
+   ],
+   "answer": "A) Margolning evarasi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Salmirda Ahmadning sharafiga qanday nom berilgan edi?",
+   "options": [
+    "A) Salmir xaloskori",
+    "B) Koinot qiroli",
+    "C) Qahramon uchuvchi"
+   ],
+   "answer": "A) Salmir xaloskori"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Salmir omborxonasining maxfiy eshiklari qanday qalinlikda edi?",
+   "options": [
+    "A) 5 metrdan keladigan po‘lat",
+    "B) 1 metrdan keladigan yog‘och",
+    "C) 10 metrdan keladigan beton"
+   ],
+   "answer": "A) 5 metrdan keladigan po‘lat"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmad do‘sti Mokini qaysi sayyoradagi bankda uchratdi?",
+   "options": [
+    "A) Kasmond sayyorasida",
+    "B) Xastik sayyorasida",
+    "C) Meriya sayyorasida"
+   ],
+   "answer": "A) Kasmond sayyorasida"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ahmad va Dumgomning Kasmondagi harakatlari tartibini belgilang.",
+   "options": [
+    "A) Qahvaxona suhbati, O‘g‘rivachchaga uchrashish, bankka kirish",
+    "B) Bankka kirish, xaker bilan uchrashish, qochish",
+    "C) Urushga kirish, kemani minish, uyga qaytish"
+   ],
+   "answer": "A) Qahvaxona suhbati, O‘g‘rivachchaga uchrashish, bankka kirish"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bankir Louta nega 34 foizlik kredit taklif qildi?",
+   "options": [
+    "A) Urushayotgan taraflarni o‘ziga tobe qilish uchun",
+    "B) Ularga yordam berishni istagani uchun",
+    "C) Salmir prezidentiga rahm qilgani uchun"
+   ],
+   "answer": "A) Urushayotgan taraflarni o‘ziga tobe qilish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "O‘g‘rivachcha nega Ko‘kkezarni otasidan oldin o‘g‘irladi?",
+   "options": [
+    "A) Kemani Ahmad va do‘stlariga qaytarish uchun",
+    "B) O‘zi koinotda sayohat qilish uchun",
+    "C) Uni xastiklarga qimmatga sotish uchun"
+   ],
+   "answer": "A) Kemani Ahmad va do‘stlariga qaytarish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ahmadning majlisda rahbarlarni manfaatparastlikda ayblashi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, chunki birikmaslik halokatga eltar edi",
+    "B) Noto‘g‘ri, u majlisga aralashmasligi kerak edi",
+    "C) Noto‘g‘ri, bankirning fikri to‘g‘ri edi"
+   ],
+   "answer": "A) To‘g‘ri, chunki birikmaslik halokatga eltar edi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif ekspert Porimanamani qanday tasvirlagan?",
+   "options": [
+    "A) Qumursqadan katta, chivindan kichikroq maxluqcha",
+    "B) Bahaybat, devsimon qora maxluq",
+    "C) Temir tanali baland bo‘yli robot"
+   ],
+   "answer": "A) Qumursqadan katta, chivindan kichikroq maxluqcha"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Mokining miyasini qanday tasvirlagan?",
+   "options": [
+    "A) To‘q ko‘k rangdagi yaxlit tosh",
+    "B) Murakkab chigal simlar to‘plami",
+    "C) Oltin rangli kichik shisha sharchalar"
+   ],
+   "answer": "A) To‘q ko‘k rangdagi yaxlit tosh"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmad va jamoasi kvant zarralarni qaysi joyda terib olishdi?",
+   "options": [
+    "A) Hodisalar gorizontida",
+    "B) Oydagi kraterda",
+    "C) Xastik saroyida"
+   ],
+   "answer": "A) Hodisalar gorizontida"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xastiklar Moviy toshlar asosida qanday qurol yasagan edilar?",
+   "options": [
+    "A) Dahshat bo‘roni",
+    "B) Qora chaqmoq",
+    "C) Koinot shamoli"
+   ],
+   "answer": "A) Dahshat bo‘roni"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmad bioneyronkompyuter hosil qilish uchun nimadan foydalandi?",
+   "options": [
+    "A) Nano-robotli qora matodan",
+    "B) Temir qalqondan",
+    "C) Sehrli uzukdan"
+   ],
+   "answer": "A) Nano-robotli qora matodan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmad uyiga qaytgach taqvim qaysi sanani ko‘rsatayotgan edi?",
+   "options": [
+    "A) 2036-yil 25-iyun",
+    "B) 2038-yil 18-aprel",
+    "C) 2050-yil 1-yanvar"
+   ],
+   "answer": "A) 2036-yil 25-iyun"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Galaktikadagi yakuniy jangdagi voqealar tartibini ko‘rsating.",
+   "options": [
+    "A) Dushman hujumi, Ahmad kelishi, annigilyatsiya",
+    "B) Ahmad kelishi, Salmir yutqazishi, tinchlik",
+    "C) Annigilyatsiya, dushman g‘alabasi, Ahmad qochishi"
+   ],
+   "answer": "A) Dushman hujumi, Ahmad kelishi, annigilyatsiya"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega dushman qo‘shini annigilyatsiya hodisasidan so‘ng g‘oyib bo‘ldi?",
+   "options": [
+    "A) Materiya va antimateriya to‘qnashuvi energiyasidan",
+    "B) Salmir harbiylari ularni qamal qilgani uchun",
+    "C) Qirol Magistik taslim bo‘lgani uchun"
+   ],
+   "answer": "A) Materiya va antimateriya to‘qnashuvi energiyasidan"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ahmad koinot xaritasini nega uch bo‘lakka bo‘lib saqlatdi?",
+   "options": [
+    "A) Yovuz kuchlar qo‘liga o‘tmasligi uchun",
+    "B) Muzeyda joy yetmagani uchun",
+    "C) Bo‘laklar juda og‘ir bo‘lgani uchun"
+   ],
+   "answer": "A) Yovuz kuchlar qo‘liga o‘tmasligi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ahmadning tajribalardan olgan eng katta sabog‘i nima bo‘ldi?",
+   "options": [
+    "A) Chinakam mo‘jiza inson qalbi va aqlida",
+    "B) Eng kuchli narsa yadroviy quroldir",
+    "C) Koinotga boshqa uchmaslik kerak"
+   ],
+   "answer": "A) Chinakam mo‘jiza inson qalbi va aqlida"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ahmadning uyga qaytgach ilm bilan shug‘ullanish qarori to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, inson bilimini ezgulikka qaratishi lozim",
+    "B) Noto‘g‘ri, u boylik to‘plashi kerak edi",
+    "C) Noto‘g‘ri, u harbiylarga qo‘shilishi lozim edi"
+   ],
+   "answer": "A) To‘g‘ri, inson bilimini ezgulikka qaratishi lozim"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif xastiklar bilan yakuniy to‘qnashuv sahnasini qanday tasvirlagan?",
+   "options": [
+    "A) Ulkan ari uyasining qo‘zg‘alishiga o‘xshab",
+    "B) Tinch dengiz toza suvidagidek",
+    "C) Qorong‘i o‘rmondagi shamol kabi"
+   ],
+   "answer": "A) Ulkan ari uyasining qo‘zg‘alishiga o‘xshab"
+  }
+ ]
+}

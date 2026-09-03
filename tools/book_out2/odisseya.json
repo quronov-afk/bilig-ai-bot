@@ -1,0 +1,482 @@
+{
+ "title": "Odisseya",
+ "author": "Gomer",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "vatanparvarlik",
+   "jasorat",
+   "sadoqat",
+   "oilaviy qadriyatlar",
+   "sabr-toqat",
+   "sarguzasht"
+  ],
+  "theme": "«Odisseya» dostonining bosh g‘oyasi — Vatan va oilaga bo‘lgan cheksiz sadoqat, har qanday mashaqqat va sinovlarni sabr hamda aql-idrok bilan yengib o‘tish mumkinligidir. Inson iroda va aqli bilan o‘z taqdiriga duch kelgan qiyinchiliklarni yengadi.",
+  "summary": "Troya urushi tugagach, Itaka shohi Odissey o‘z yurtiga qaytishda dengizlar tangrisi Poseydonning g‘azabiga uchrab, o‘n yil davomida turli orollarda sargardon bo‘ladi. Odisseyni ma'buda Kalipso o‘z orolida ushlab turadi. Bu vaqtda Itakada uning rafiqasi Penelopa va o‘g‘li Telemax xonavayronlikka duch keladi: bebosh kuyovlar Penelopaga uylanish va taxtni egallash niyatida Odisseyning mol-mulkini beavash sovurishadi. Ma'buda Afina ko‘magida Telemax otasini izlab Pilos va Spartaga safar qiladi. Zevsning amri bilan Kalipso Odisseyni ozod qiladi. Odissey feaklar yurtiga borib qoladi va ularga o‘z sarguzashtlarini — bir ko‘zli dev Polifem, afsungar Sirseya, o‘liklar saltanati (Aid) va boshqa xatarlarni so‘zlab beradi. Feaklar Odisseyni Itakaga yetkazib qo‘yishadi. U yerda Odissey Afina yordamida gado qiyofasiga kirib, sodiq cho‘chqaboqar Yevmey va o‘g‘li Telemax bilan uchrashadi. Saroyda o‘tkazilgan kamon otish musobaqasida Odissey Penelopaning kamonini bir o‘zi egib, darchalardan o‘q o‘tkazadi hamda Telemax va sodiq xizmatkorlar bilan birga barcha yovuz kuyovlarni mahv etadi. Shunday qilib, Odissey o‘z oilasi va taxtiga qaytadi, yurtdoshlari bilan tinchlik o‘rnatadi.",
+  "characters": "Odissey — Itaka shohi, aql-idrokli, jasur va sabrli pahlavon. Telemax — Odissey va Penelopaning sadoqatli, mard o‘g‘li. Penelopa — Odisseyning vafodor xotini, sohibi aqlli malika. Afina — Zevsning qizi, Odissey va uning oilasiga homiylik qiluvchi ma'buda. Poseydon — Odisseyga g‘azab qilgan dengizlar tangrisi. Yevmey — Odisseyning sodiq va mehribon cho‘chqaboqari.",
+  "conclusion": "Ushbu doston o‘quvchiga matonat, sabr-toqat va oilaga sadoqat ramzini ko‘rsatadi. Bola asardan har qanday mushkul holatda ham aql va bosiqlik bilan yo‘l topish mumkinligini o‘rganadi. Shuningdek, kattalarga hurmat, va'daga vafo va adolat oxir-oqibat g‘alaba qozonishini anglab yetadi.",
+  "difficulty": "qiyin",
+  "mood": "xatarlar va sarguzashtlarga boy, falsafiy va shijoatli",
+  "for_whom": "Qadimiy afsonalar, dengiz sarguzashtlari hamda qahramonlik va aql-idrok haqidagi asarlarga qiziqadigan o‘smirlar uchun.",
+  "events": [
+   "1. Ma'budlar kengashida Afina Zevsdan Odisseyni Itakaga qaytarishni so‘radi.",
+   "2. Afina Mentes qiyofasida Itakaga kelib, Telemaxga otasini izlashni maslahat berdi.",
+   "3. Telemax Itaka fuqarolarini majlisga yig‘ib, kuyovlarning beboshligini qoraladi.",
+   "4. Telemax otasidan darak topish uchun Pilosga shoh Nestor huzuriga yo‘l oldi.",
+   "5. Telemax Spartaga borib, shoh Menelaydan Odissey haqida xabar eshitdi.",
+   "6. Germes Zevsning amrini Kalipsoga yetkazib, Odisseyni ozod qilishni buyurdi.",
+   "7. Odissey sal yasab suzib ketdi va feaklar oroliga yetib bordi.",
+   "8. Feaklar malikasi Navsekaya sohilda Odisseyga yordam berdi va saroyga boshladi.",
+   "9. Feaklar shohi Alkinoy huzurida Odissey o‘zining kimligini va sarguzashtlarini so‘zlab berdi.",
+   "10. Odissey va uning odamlari bir ko‘zli dev Polifem g‘origa qamalib qolishdi.",
+   "11. Odissey Polifemning ko‘zini ko‘r qilib, ayyorlik bilan g‘ordan qochib chiqdi.",
+   "12. Odissey afsungar Sirseya oroliga borib, cho‘chqaga aylantirilgan hamrohlarini qutqardi.",
+   "13. Odissey Aid saltanatiga tushib, bashoratchi Tiresiy va onasining ruhi bilan gaplashdi.",
+   "14. Feaklar Odisseyni qimmatbaho sovg‘alar bilan Itaka sohiliga yetkazib qo‘yishdi.",
+   "15. Afina Odisseyni taninmaslik uchun musofir gado qiyofasiga kiritib qo‘ydi.",
+   "16. Odissey sodiq cho‘chqaboqar Yevmeyning kulbasida panoh topdi.",
+   "17. Telemax Pilosdan qaytib, Yevmeyning kulbasida otasi bilan ko‘rishdi.",
+   "18. Gado qiyofasidagi Odissey o‘z saroyiga borib, kuyovlarning haqoratlariga sabr qildi.",
+   "19. Enaga Yevrikleya Odisseyning oyog‘idagi chandig‘idan uni tanib qoldi.",
+   "20. Penelopa kamon chillasini tortib, halqalardan o‘q o‘tkazish musobaqasini e'lon qildi.",
+   "21. Kuyovlardan hech biri Odisseyning og‘ir kamonini egoltmadi.",
+   "22. Gado qiyofasidagi Odissey kamonni osongina egib, o‘qni barcha halqalardan o‘tkazdi.",
+   "23. Odissey va Telemax sodiq xizmatkorlar bilan birga badfe'l kuyovlarni mahv etishdi.",
+   "24. Penelopa Odisseyni o‘zlarining maxsus karavoti haqidagi sir orqali sinab, tanidi.",
+   "25. Odissey qarigan otasi Laert bilan ko‘rishdi va Itakada tinchlik qaror topdi."
+  ],
+  "quotes": [
+   "So‘yla, Muza, ul omilkor er haqida menga hikoyat.",
+   "Kim yovuzlik qilsa, shunday halokatga uchrar muhaqqaq!",
+   "Begona, yot o‘lkalarda ming-ming azob chekib bo‘lsa ham, Vatanimga eson-omon qaytish baxti afzaldir menga.",
+   "Har bir ishda me'yor shartdir, keragidan ortiq mulozamat ham, beparvolik ham yaxshi emas.",
+   "Ki Odissey dilovarlik quvvati va latofatiga erishgandi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Odissey qaysi shaharni xarob qilgandan so‘ng sargardon bo‘ldi?",
+   "options": [
+    "A) Sparta",
+    "B) Troya",
+    "C) Pilos",
+    "D) Miken"
+   ],
+   "answer": "B) Troya"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Telemaxga birinchi bo‘lib yordamga kelgan ma'buda kim edi?",
+   "options": [
+    "A) Afina",
+    "B) Kalipso",
+    "C) Artemida",
+    "D) Gera"
+   ],
+   "answer": "A) Afina"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Telemax otasining xabarini surishtirish uchun birinchi qayerga bordi?",
+   "options": [
+    "A) Spartaga",
+    "B) Pilosga",
+    "C) Troyaga",
+    "D) Lesbosga"
+   ],
+   "answer": "B) Pilosga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Telemax Pilosda qaysi nuroniy shoh bilan uchrashib suhbatlashdi?",
+   "options": [
+    "A) Menelay",
+    "B) Nestor",
+    "C) Priam",
+    "D) Egist"
+   ],
+   "answer": "B) Nestor"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Afina Mentes qiyofasida kelganida Telemax uni qanday kutib aldi?",
+   "options": [
+    "A) Haydab soldi",
+    "B) Izzat-ikrom bilan kutdi",
+    "C) Yuzlanmay o‘tib ketdi",
+    "D) Qo‘rqib yashirindi"
+   ],
+   "answer": "B) Izzat-ikrom bilan kutdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega kuyovlar Telemaxning saroyida to‘planib, mol-mulkini yeb yotishardi?",
+   "options": [
+    "A) Penelopaga uylanish uchun",
+    "B) Shoh Nestorga xizmat qilishga",
+    "C) Troyaga birga suzish uchun",
+    "D) Odisseyni kutib olish uchun"
+   ],
+   "answer": "A) Penelopaga uylanish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Penelopa xonandaning g‘amgin qo‘shig‘ini to‘xtatishni so‘radi?",
+   "options": [
+    "A) Qo‘shiq Odisseyni eslatib qiynardi",
+    "B) Qo‘shiq unga yoqmas edi",
+    "C) Kuyovlar shovqin solgani uchun",
+    "D) Uyqusi kelgani uchun"
+   ],
+   "answer": "A) Qo‘shiq Odisseyni eslatib qiynardi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Telemaxning majlisda el oldida so‘zlagan nutqini qanday baholash mumkin?",
+   "options": [
+    "A) Jur'atli va mas'uliyatli",
+    "B) Qo‘rqoq va tortinchoq",
+    "C) Mansabparast va xudbin",
+    "D) Yengiltak va ma'nosiz"
+   ],
+   "answer": "A) Jur'atli va mas'uliyatli"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Afina paydo bo‘lgach, Telemaxning ichki holati dostonda qanday tasvirlanadi?",
+   "options": [
+    "A) Yuragida jasorat ufurdi",
+    "B) Vahimaga tushib qochdi",
+    "C) Butunlay umidsizlanib qoldi",
+    "D) G‘azabdan o‘zini yo‘qotdi"
+   ],
+   "answer": "A) Yuragida jasorat ufurdi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Penelopaning sadoqatini tasvirlashda qaysi tuyg‘uga urg‘u beradi?",
+   "options": [
+    "A) Cheksiz sabr va qayg‘uga",
+    "B) Boylikka bo‘lgan xursandchilikka",
+    "C) Hukmronlik qilish istagiga",
+    "D) Shohona turmush zavqiga"
+   ],
+   "answer": "A) Cheksiz sabr va qayg‘uga"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Odisseyni o‘z orolida ushlab turgan ma'buda kim edi?",
+   "options": [
+    "A) Sirseya",
+    "B) Kalipso",
+    "C) Afrodita",
+    "D) Artemida"
+   ],
+   "answer": "B) Kalipso"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Odisseyning ko‘zini ko‘r qilgan bir ko‘zli devi kim?",
+   "options": [
+    "A) Polifem",
+    "B) Protey",
+    "C) Sizif",
+    "D) Tantal"
+   ],
+   "answer": "A) Polifem"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Odisseyning odamlarini cho‘chqaga aylantirib qo‘ygan afsungar kim edi?",
+   "options": [
+    "A) Kalipso",
+    "B) Sirseya",
+    "C) Yelena",
+    "D) Foosa"
+   ],
+   "answer": "B) Sirseya"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Odisseyni qaysi el ahli elchilik qilib Itakaga yetkazib qo‘ydi?",
+   "options": [
+    "A) Feaklar",
+    "B) Tafosliklar",
+    "C) Fesprotlar",
+    "D) Sintiylar"
+   ],
+   "answer": "A) Feaklar"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Odissey Polifem g‘oridan hamrohlarini qanday olib chiqib ketdi?",
+   "options": [
+    "A) Qo‘ylarning qorni ostiga berkitib",
+    "B) Devni o‘ldirib eshikni ochib",
+    "C) Devdan ruxsat so‘rab olib",
+    "D) G‘or devorini teshib o‘tib"
+   ],
+   "answer": "A) Qo‘ylarning qorni ostiga berkitib"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Odissey Aid saltanatiga tushganida birinchi bo‘lib kimdan bashorat oldi?",
+   "options": [
+    "A) Tiresiydan",
+    "B) Agamemnondan",
+    "C) Axillesdan",
+    "D) Onasidan"
+   ],
+   "answer": "A) Tiresiydan"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Odissey Polifemga o‘z ismini «Hech kim» deb aytdi?",
+   "options": [
+    "A) Devni chalg‘itib qutulish uchun",
+    "B) O‘z ismini unutib qo‘ygani uchun",
+    "C) Devdan juda qo‘rqqani uchun",
+    "D) Boshqa ismi bo‘lmagani uchun"
+   ],
+   "answer": "A) Devni chalg‘itib qutulish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Poseydon nechun Odisseyga g‘azab qilib, uni dengizda quvadi?",
+   "options": [
+    "A) O‘g‘li Polifemni ko‘r qilgani uchun",
+    "B) Troyani vayron qilgani uchun",
+    "C) Qurbonlik keltirmagani uchun",
+    "D) Feaklar yurtiga borgani uchun"
+   ],
+   "answer": "A) O‘g‘li Polifemni ko‘r qilgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Odisseyning Sirseya afsunini yengishdagi harakatini qanday baholash mumkin?",
+   "options": [
+    "A) Ehtiyotkorlik va aql-idrok",
+    "B) Qo‘rqoqlik va ikkilanib turish",
+    "C) O‘ylamay qilingan tavakkal",
+    "D) Hamrohlarga nisbatan beparvolik"
+   ],
+   "answer": "A) Ehtiyotkorlik va aql-idrok"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Odisseyning Vataniga bo‘lgan sog‘inchini qanday tasvirlaydi?",
+   "options": [
+    "A) Qirg‘oqda yig‘lab o‘tirgan holatda",
+    "B) Yangi orolda uy qurayotganda",
+    "C) Ziyofatlarda xursandchilik qilayotganida",
+    "D) Urushga tayyorgarlik ko‘rayotgan holatida"
+   ],
+   "answer": "A) Qirg‘oqda yig‘lab o‘tirgan holatda"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Afina Itakaga qaytgan Odisseyni qanday qiyofaga kirgizib qo‘ydi?",
+   "options": [
+    "A) Keksa gado",
+    "B) Yosh jangchi",
+    "C) Feak savdogari",
+    "D) Cho‘chqaboqar"
+   ],
+   "answer": "A) Keksa gado"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Odissey Itakaga qaytgach, birinchi bo‘lib kimning kulbasida panoh topdi?",
+   "options": [
+    "A) Cho‘chqaboqar Yevmeyning",
+    "B) Enaga Yevrikleyaning",
+    "C) Otasi Laertning",
+    "D) Shoh Antinoyning"
+   ],
+   "answer": "A) Cho‘chqaboqar Yevmeyning"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Enaga Yevrikleya Odisseyni qanday belgisidan tanib qoldi?",
+   "options": [
+    "A) Oyog‘idagi chandig‘idan",
+    "B) Qo‘lidagi uzukdan",
+    "C) Yuzidagi xolidan",
+    "D) Ovozi va so‘zidan"
+   ],
+   "answer": "A) Oyog‘idagi chandig‘idan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Penelopa kuyovlar uchun qanday musobaqa shartini qo‘ydi?",
+   "options": [
+    "A) Kamondan o‘q otish",
+    "B) Nayza uloqtirish",
+    "C) Yugurib bellashish",
+    "D) Qilichbozlik qilish"
+   ],
+   "answer": "A) Kamondan o‘q otish"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Odissey va Telemax kuyovlarga qarshi jangdan oldin nima qilishdi?",
+   "options": [
+    "A) Zalda turgan qurollarni yashirishdi",
+    "B) Saroy darvozasini ochiq qoldirishdi",
+    "C) Barcha shaharliklarni yordamga chaqirishdi",
+    "D) Kuyovlardan uzr so‘rashdi"
+   ],
+   "answer": "A) Zalda turgan qurollarni yashirishdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Odissey o‘z saroyiga birdaniga emas, gado qiyofasida kirdi?",
+   "options": [
+    "A) Dushmanlarini sinab reja tuzishga",
+    "B) Kiyimi yo‘qligi uchun",
+    "C) Penelopadan uyalgani uchun",
+    "D) O‘g‘lini topolmagani uchun"
+   ],
+   "answer": "A) Dushmanlarini sinab reja tuzishga"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Penelopa Odisseyni haqiqatan eri ekanini bilish uchun nimani so‘radi?",
+   "options": [
+    "A) Maxsus karavot siri haqida",
+    "B) Oltin uzuk haqida",
+    "C) Troyadagi janglar haqida",
+    "D) Otasi Laert haqida"
+   ],
+   "answer": "A) Maxsus karavot siri haqida"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Cho‘chqaboqar Yevmeyning Odisseyga bo‘lgan munosabatini qanday baholaysiz?",
+   "options": [
+    "A) Yuksak sadoqat va halollik",
+    "B) Yuzaki va manfaatparastlik",
+    "C) Qo‘rquv va majburiylik",
+    "D) Beparvolik va loqaydlik"
+   ],
+   "answer": "A) Yuksak sadoqat va halollik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Odisseyning badfe'l kuyovlarni jazolashini qanday baholash mumkin?",
+   "options": [
+    "A) Adolat qaror topishi",
+    "B) Shavqatsiz va nohaq",
+    "C) Tasodifiy bir voqea",
+    "D) Qonunlarga zid harakat"
+   ],
+   "answer": "A) Adolat qaror topishi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston oxirida Odissey va Laert uchrashuvi qanday tuyg‘uni uyg‘otadi?",
+   "options": [
+    "A) Samimiy mehribonlik va quvonch",
+    "B) Achchiq nafrat va xafa bo‘lish",
+    "C) Begonalik va sovuqqonlik",
+    "D) Qo‘rquv va xavotirlik"
+   ],
+   "answer": "A) Samimiy mehribonlik va quvonch"
+  }
+ ]
+}

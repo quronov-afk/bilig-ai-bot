@@ -1,0 +1,482 @@
+{
+ "title": "Mungli ko‘zlar",
+ "author": "Xudoyberdi To‘xtaboyev",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "halollik",
+   "oila",
+   "oqibat",
+   "tarbiya",
+   "jinoyat va jazo"
+  ],
+  "theme": "Mol-dunyoni va xudbinlikni har narsadan ustun qo‘ygan ota-onaning g‘ayriqonuniy qilmishlari oqibatida butun bir oilaning inqirozga uchrashi hamda farzandlarning fojeali taqdiri tasvirlanadi. Asar harom boylik soxta baxt berishini, faqat halol mehnat va pok vijdongina insonni haqiqiy baxtga yetkazishini uqtiradi.",
+  "summary": "Zafarning otasi Saidjon bazada omborchi, onasi Yoqutxon esa boylikka va qimmatbaho buyumlarga o‘ch ayol bo‘lib, ular noqonuniy yollar bilan katta boylik to‘plashadi. Zafar ham maktabda o‘zini boshqalardan ustun tutishga, ustozlar va maktab direktoriga qimmatbaho hadyalar berib imtiyozlar olishga o‘rganadi. Ammo kutilmaganda ota-onasi poraxo‘rlik va o‘g‘rilikda ayblanib, hibsga olinadi. Tintuv paytida ularning uyidan ulkan boylik, tilla va pullar musodara qilinadi. Bu fojialarni ko‘tarolmagan nogiron aka Akbar oilaning manmanligi va harom boyligi shu ko‘rgiliklarga sabab bo‘lganini aytib hayqiradi.\n\nOila taqdiri kun sayin inqirozga yuz tutadi. Zafarning onasi iztiroblar va sud mashmashalari sababli yurak xurujidan vafot etadi. Otasi esa uzoq muddatga qamoqqa hukm qilinadi. Ko‘p o‘tmay, uylarida sirli yong‘in chiqib, nogiron aka Akbar ham fojiali halok bo‘ladi. Yetim va chorasiz qolgan Zafar oilasining halokatida aybdor deb bilgan amaldor Sadir Badalovichdan o‘ch olish maqsadida uning uyiga o‘t qo‘yadi.\n\nKeyinchalik Zafar ammasining uyiga yuboriladi va u yerda ammavachchalari bilan halol mehnat qilishni o‘rgana boshlaydi. Biroq bozorda makka va behi sotayotganda, firibgar yigitlar uning cho‘ntagiga o‘g‘irlangan pasport va pulni solib, tuhmat uyushtirishadi. Zafar tuhmat oqibatida ayblanib, axloq tuzatish mehnat lageriga hukm qilinadi. Qamoqxonada u o‘z qilmishlarini, o‘tmishini va akasi Akbarning pokiza qarashlarini chuqur anglab yetadi. U yerda payvandchilik va bo‘yoqchilik kasbini egallaydi. Zafar kelajakda ozodlikka chiqqach, akasining ismini olib, faqat halol va adolatli yashashga qasam ichadi.",
+  "characters": "Zafar — asar roviysi va bosh qahramoni; boylik va kiborlik vasvasasidan o‘tib, hayotning achchiq sinovlari orqali halollikni anglab yetgan o‘smir.\nAkbar — Zafarning majruh (nogiron) akasi; ruhiy jihatdan pok, halol va vijdonli yigit, oilasining ma'naviy inqiroziga qarshi isyon qiladi.\nYoqutxon — Zafarning onasi; dunyoparast, kiyim va taqinchoqlarga o‘ch, oilasining halokatidan so‘ng yurak xurujidan vafot etadi.\nSaidjon — Zafarning otasi; bazaning bosh omborchisi, noqonuniy boylik orttirib, oilasini fojiaga yetaklaydi va qamaladi.\nAtaullo muallim — qo‘shni va usta; poklik va halollik timsoli, Akbarga murabbiylik qilib, uning iqtidorini yuzaga chiqaradi.",
+  "conclusion": "Asar kitobxonga nohalol yo‘l bilan topilgan mol-dunyo hech qachon baxt keltirmasligini, aksincha, oilani halokatga yetaklashini ko‘rsatib beradi. Ota-onalarga farzand tarbiyasida eng muhim narsa boylik emas, balki halollik va ma'naviy tarbiya ekanini uqtiradi. Yoshlar esa qiyinchiliklar va adolatsizliklar qarshisida o‘ch olish yo‘lini emas, poklik va halol mehnat yo‘lini tanlash kerakligini tushunib yetadilar.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Hayotiy saboqlar, oilaviy qadriyatlar va adolat haqida chuqur o‘yga tolmaydigan, psixologik va dramatik asarlarga qiziqadigan o‘smirlar uchun.",
+  "events": [
+   "Zafarning ota-onasi noqonuniy yo‘l bilan topilgan katta boylik va boy hayot kechirishi.",
+   "Zafar maktab direktori va o‘qituvchilarni tansiq taomlar va sovg‘alar bilan qo‘lga olib yurishi.",
+   "Ona tili o‘qituvchisi Chinoq muallimning Zafarning bilimsizligiga yon bermay, unga past baho qo‘yishi.",
+   "9-iyun kuni Zafarning ota-onasi militsiya tomonidan hibsga olinishi.",
+   "Uydan tintuv o‘tkazilib, ulkan miqdordagi pul, zayom va tilla taqinchoqlar ro‘yxatga olinishi.",
+   "Nogiron aka Akbarning familyasidagi ma'naviy tubanlik va harom boylikni yuziga solib hayqirishi.",
+   "Ataullo muallimning Akbarga g‘amxo‘rlik qilib, uni o‘z uyiga olib chiqishi.",
+   "Akbarning onasi Yoqutxon simvolik tarzda intilayotgan holat aks etgan suratlarni chizishi.",
+   "Sud va tintuv mashmashalariga chiday olmagan Yoqutxonning yurak xurujidan vafot etishi.",
+   "Otasi Saidjonning uzoq muddatga qamoqqa hukm qilinishi.",
+   "Zafarlarning uyida yong‘in chiqib, Akbarning fojiali ravishda halok bo‘lishi.",
+   "Zafar oilasining kasofatida aybdor deb bilgan Sadir Badalovichning huzuriga borishi.",
+   "Zafar o‘ch olish maqsadida Sadir Badalovichning uyiga o‘t qo‘yishi.",
+   "Zafarning ruhiy xastaliklar kasalxonasiga va so‘ngra ammasining qishlog‘iga yuborilishi.",
+   "Zafarning ammavachchalari bilan dehqonchilik va bog‘dorchilik ishlarida qatnashishi.",
+   "Zafarning bozorda makka va behi sotishga yordamlashishi.",
+   "Bozorda ikki firibgar yigit tomonidan Zafarga o‘g‘rilik tuhmati uyushtirilishi.",
+   "Zafarning o‘zini himoya qilish jarayonida militsiya xodimi bilan to‘qnashishi va ayblanishi.",
+   "Sud hukmi bilan Zafarning 5 yilga axloq tuzatish lageriga yuborilishi.",
+   "Lagerda Sulaymon (So‘laxmon) ismli mehribon va adolatli tarbiyachi bilan tanishishi.",
+   "Zafarning lagerda payvandchilik va bo‘yoqchilik sirlarini egallashi.",
+   "Sayfullo va Barotvoy kabi hamxonalarning fojiali taqdirlarini tinglashi.",
+   "Zafarning tushida va hayolida marhum akasi Akbar bilan muloqot qilishi.",
+   "Zafar kelajakda ozodlikka chiqib, halol va adolatli yashashga, akasining ismini olishga ahd qilishi."
+  ],
+  "quotes": [
+   "Mol-dunyoni har narsadan ustun bilgan va oxir-oqibatda guldek farzandlarining achchiq qismatiga sabab bo‘lgan ota-ona haqida hikoya qiluvchi mazkur asar...",
+   "Ota-onaga farzandining baxtidan bo‘lak ne'mat kerak emas. Xuddi shuningdek, farzand ham eng baxtiyor damlarida ota-ona yonida bo‘lgisi keladi.",
+   "Lekin bolalik deb atalmish g‘aroyib saltanat borki, u zinhor zavol ko‘rmaydi, sinalgan qonun-qoidalari asosida yashayveradi.",
+   "Biz hammadan boymiz, chiroyli kiyinamiz, baxtlimiz deb kerilib yurgan senlar emasmidilaring?",
+   "O‘zingni ehtiyot qilaman deb Saidjonning taqdiriga beparvo bo‘lgansiz, manavi bolalarning ahvolini o‘ylamagansiz.",
+   "Tog‘dan tomayotgan tomchi o‘zi ojizgina narsa, doimiy bo‘lgani uchun toshlarni teshib o‘tadi.",
+   "Bu yerdan eson-omon chiqsam, sen orzu qilgandek halol yashayman, eshityapsanmi, akajon, halol yashayman!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zafarning otasi qaysi lavozimda ishlagan?",
+   "options": [
+    "A) Bazaning bosh omborchisi",
+    "B) Maktab direktori",
+    "C) Bosh prokuror",
+    "D) Shahar meriyasi xodimi"
+   ],
+   "answer": "A) Bazaning bosh omborchisi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zafarning maktab direktori bilan munosabati nimaga asoslangan edi?",
+   "options": [
+    "A) Zafarning a'lo baholariga",
+    "B) Ota-onasining tansiq taom va hadyalariga",
+    "C) Sportdagi yutuqlariga",
+    "D) Qarindoshlik rishtalariga"
+   ],
+   "answer": "B) Ota-onasining tansiq taom va hadyalariga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oila ustiga fojiali kunlar kelganida birinchi kim yordamga keldi?",
+   "options": [
+    "A) Ataullo muallim",
+    "B) Pochchasi",
+    "C) Maktab direktori",
+    "D) Qo‘shni militsioner"
+   ],
+   "answer": "B) Pochchasi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akbar oiladagi barcha kulfatlarning sababi nimada deb bildi?",
+   "options": [
+    "A) Manmanlik va harom boylikka o‘chlikda",
+    "B) Maktabdagi yomon baholarda",
+    "C) Qo‘shnilarning hasadida",
+    "D) Avariyaga uchraganida"
+   ],
+   "answer": "A) Manmanlik va harom boylikka o‘chlikda"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tintuv paytida Yoqutxonning uyidan qanday mollar ro‘yxatga olindi?",
+   "options": [
+    "A) Pul, zayom va tilla taqinchoqlar",
+    "B) Faqat eski kitoblar",
+    "C) Faqat kiyim-kechaklar",
+    "D) Avtomobil va mototsikllar"
+   ],
+   "answer": "A) Pul, zayom va tilla taqinchoqlar"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Ona tili muallimi Chinoq Zafarning bahosini to‘g‘rilamadi?",
+   "options": [
+    "A) O‘quvchilari oldida vijdonini sotishni xohlamadi",
+    "B) Zafardan pul so‘ramaqchi edi",
+    "C) Maktab direktoridan qo‘rqardi",
+    "D) Zafarning otasini yomon ko‘rardi"
+   ],
+   "answer": "A) O‘quvchilari oldida vijdonini sotishni xohlamadi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Zafar maktabda a'lochi bolalarni yoqtirmas edi?",
+   "options": [
+    "A) Hasad va teng kelolmaslik alamidan",
+    "B) Ular Zafarni urgani uchun",
+    "C) Ular kiyim kiyishni bilmagani uchun",
+    "D) Ular juda qat'iy bo‘lgani uchun"
+   ],
+   "answer": "A) Hasad va teng kelolmaslik alamidan"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Akbarning oila a'zolariga aytgan achchiq gaplari haqida qanday baho berish mumkin?",
+   "options": [
+    "A) Bu – haqiqatni yuzga aytgan adolatli hayqiriq",
+    "B) Bu – og‘aning ukalariga nisbatan bemehrligi",
+    "C) Bu – otasiga qilgan xiyonati",
+    "D) Bu – shunchaki injiqlik xolos"
+   ],
+   "answer": "A) Bu – haqiqatni yuzga aytgan adolatli hayqiriq"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Zafarning import kiyimlarga mehrini tasvirlash orqali nimani ko‘rsatgan?",
+   "options": [
+    "A) Zohiriy pardoz bilan ichki bo‘shliqni niqoblashni",
+    "B) Chet el kiyimlarining sifatini",
+    "C) Zafarning nozik didli ekanini",
+    "D) Maktabdagi moda yo‘nalishini"
+   ],
+   "answer": "A) Zohiriy pardoz bilan ichki bo‘shliqni niqoblashni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«G‘aroyib saltanat» deb muallif nimani nazarda tutadi?",
+   "options": [
+    "A) Beg‘ubor va beg‘am bolalik dunyosini",
+    "B) Boy-badavlat kishilarning mol-dunyo saltanatini",
+    "C) Ertaklardagi sehrli podshohlikni",
+    "D) Maktabdagi tartib-qoidalarni"
+   ],
+   "answer": "A) Beg‘ubor va beg‘am bolalik dunyosini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akbar chizgan rasmda onasi Yoqutxon nimaga intilayotgan edi?",
+   "options": [
+    "A) Lolaga",
+    "B) Oltinga",
+    "C) Kitobga",
+    "D) Quyoshga"
+   ],
+   "answer": "A) Lolaga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yoqutxonning fojiali o‘limiga nima sabab bo‘ldi?",
+   "options": [
+    "A) Kuchli ruhiy iztirob va yurak xuruji",
+    "B) Og‘ir yuqumli xastalik",
+    "C) Yo‘l-transport hodisasi",
+    "D) Yig‘ilishdagi janjal"
+   ],
+   "answer": "A) Kuchli ruhiy iztirob va yurak xuruji"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Akbar qanday fojia oqibatida halok bo‘ldi?",
+   "options": [
+    "A) Uydagi yong‘in oqibatida",
+    "B) Og‘ir xastalikdan",
+    "C) Suvga cho‘kib ketib",
+    "D) Avariyaga uchrab"
+   ],
+   "answer": "A) Uydagi yong‘in oqibatida"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zafar qasoslash uchun kimning uyiga o‘t qo‘ydi?",
+   "options": [
+    "A) Sadir Badalovichning",
+    "B) Ataullo muallimning",
+    "C) Bosh muharrirning",
+    "D) Ammasining"
+   ],
+   "answer": "A) Sadir Badalovichning"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oila boshiga tushgan fojialar ketma-ketligi qanday yuz berdi?",
+   "options": [
+    "A) Qamoq, onaning o‘limi, uydagi yong‘in",
+    "B) Yong‘in, qamoq, onaning o‘limi",
+    "C) Onaning o‘limi, yong‘in, qamoq",
+    "D) Qamoq, yong‘in, onaning o‘limi"
+   ],
+   "answer": "A) Qamoq, onaning o‘limi, uydagi yong‘in"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Zafarning otasiga kelgan halokat manbalarini ko‘rsating.",
+   "options": [
+    "A) Nafs, poraxo‘rlik va mansabni suiste'mol qilish",
+    "B) Faqat qo‘shnilarning hasadi",
+    "C) Tajribasizlik va bilim yetishmasligi",
+    "D) Kasallik va charchoq"
+   ],
+   "answer": "A) Nafs, poraxo‘rlik va mansabni suiste'mol qilish"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ataullo muallim nega Akbarni o‘z uyiga ko‘tarib olib ketdi?",
+   "options": [
+    "A) Uni ruhiy va ma'naviy halokatdan qutqarish uchun",
+    "B) Uydagi buyumlarni sotib olish uchun",
+    "C) Akbarga dars berish uchun",
+    "D) Zafardan qasoslash uchun"
+   ],
+   "answer": "A) Uni ruhiy va ma'naviy halokatdan qutqarish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Zafar nega Sadir Badalovichdan o‘ch olmoqchi bo‘ldi?",
+   "options": [
+    "A) Uni oilasining halokatida aybdor deb bildi",
+    "B) Mashinasini tortib olgani uchun",
+    "C) Uniki ko‘p puli bo‘lgani uchun",
+    "D) U Zafarni urgani uchun"
+   ],
+   "answer": "A) Uni oilasining halokatida aybdor deb bildi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zafarning Badalovich uyiga o‘t qo‘yishi to‘g‘ri harakatmidi?",
+   "options": [
+    "A) Yo‘q, o‘ch olish jinoyatga olib keladi",
+    "B) Ha, xoinlarni faqat shunday jazolash kerak",
+    "C) Ha, bu adolatni qaror toptirish edi",
+    "D) Farqi yo‘q, baribir yong‘in o‘chirildi"
+   ],
+   "answer": "A) Yo‘q, o‘ch olish jinoyatga olib keladi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ataullo muallimning bolalarga mehribonlik qilishi haqida nima deysiz?",
+   "options": [
+    "A) U haqiqiy ustoz va insoniy burchini bajardi",
+    "B) U faqat o‘z obro‘yini o‘yladi",
+    "C) U Saidjon bilan urishgani uchun shunday qildi",
+    "D) Bu shunchaki qo‘shnichilik burchi edi"
+   ],
+   "answer": "A) U haqiqiy ustoz va insoniy burchini bajardi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bozorda Zafar va qarindoshlari nima sotishayotgan edi?",
+   "options": [
+    "A) Makka va behi",
+    "B) O‘rik va gilos",
+    "C) Kiyim-kechak",
+    "D) Gultuvaklar"
+   ],
+   "answer": "A) Makka va behi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bozorda Zafarga qanday tuhmat uyushtirildi?",
+   "options": [
+    "A) Pasport va pul o‘g‘irlashda",
+    "B) Makkalarni o‘g‘irlashda",
+    "C) Mashinani pachaqlashda",
+    "D) Qalbaki pul berishda"
+   ],
+   "answer": "A) Pasport va pul o‘g‘irlashda"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Axloq tuzatish lagerida Zafar qaysi kasbni o‘rgandi?",
+   "options": [
+    "A) Payvandchilik va bo‘yoqchilikni",
+    "B) Durladuvchilikni",
+    "C) Nonvoylikni",
+    "D) Haydovchilikni"
+   ],
+   "answer": "A) Payvandchilik va bo‘yoqchilikni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lagerdagi qaysi tarbiyachi bolalarga adolatli va mehribon edi?",
+   "options": [
+    "A) Sulaymon G‘ulomov",
+    "B) Turg‘un qassob",
+    "C) G‘oyib",
+    "D) Aziz Isroilov"
+   ],
+   "answer": "A) Sulaymon G‘ulomov"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Zafarning lagerdagi hamxonalari kimlar edi?",
+   "options": [
+    "A) Sayfullo va Barotvoy",
+    "B) Aziz va G‘oyib",
+    "C) Abdukarim va Abduhalim",
+    "D) Ilhom va Manzura"
+   ],
+   "answer": "A) Sayfullo va Barotvoy"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Zafar ozodlikka chiqqach akasi Akbarni ismini olmoqchi bo‘ldi?",
+   "options": [
+    "A) Akasining pok va halol nomini davom ettirish uchun",
+    "B) O‘z ismidan uyatda bo‘lgani uchun",
+    "C) Yangi hujjat olish osonroq bo‘lgani uchun",
+    "D) Otasiga yoqish uchun"
+   ],
+   "answer": "A) Akasining pok va halol nomini davom ettirish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sadir Badalovich nega Zafarni ko‘rganda militsiya chaqirdi?",
+   "options": [
+    "A) O‘zining jinoyatlari fosh bo‘lishidan qo‘rqib",
+    "B) Zafarga yordam bermoqchi bo‘lib",
+    "C) Zafar unga pul bergani uchun",
+    "D) Unikida o‘g‘rilik bo‘lgani uchun"
+   ],
+   "answer": "A) O‘zining jinoyatlari fosh bo‘lishidan qo‘rqib"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zafarning lagerdagi ruhiy o‘sishi va o‘zgarishi haqida bahoingiz qanday?",
+   "options": [
+    "A) U xatolarini anglab, halol yo‘lni tanladi",
+    "B) U shunchaki qasos olishni unutdi",
+    "C) U kurashishdan butunlay voz kechdi",
+    "D) U ilgari ham yaxshi bola edi"
+   ],
+   "answer": "A) U xatolarini anglab, halol yo‘lni tanladi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar so‘ngida Zafar va Akbar muloqotida qanday kayfiyat yetakchilik qiladi?",
+   "options": [
+    "A) Afsus, ruhiy poklanish va ezgu umid",
+    "B) Qo‘rquv va chorasizlik",
+    "C) Manmanlik va g‘azab",
+    "D) Quvnoqlik va yengillik"
+   ],
+   "answer": "A) Afsus, ruhiy poklanish va ezgu umid"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asardagi «asfaltni yorib chiqqan giyoh» o‘xshatishi nimani anglatadi?",
+   "options": [
+    "A) Qiyinchiliklarga qaramay ezgulikka intiluvchi insonni",
+    "B) Tabiatning go‘zalligi va bahor faslini",
+    "C) Asfalt yotqizish ishlarining sifatini",
+    "D) Qamoqxona devorlarining mustahkamligini"
+   ],
+   "answer": "A) Qiyinchiliklarga qaramay ezgulikka intiluvchi insonni"
+  }
+ ]
+}

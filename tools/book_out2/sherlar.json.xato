@@ -1,50 +1,50 @@
 {
  "title": "",
- "author": "G‘afur G‘ulom",
+ "author": "Oybek",
  "genre": "toʻplam",
  "age_group": "12",
  "coverage": "to‘liq",
  "passport": {
+  "title": "SHE'RLAR",
   "age_band": "14-16",
   "age_hint": "14+",
   "topics": [
-   "oila va oqibat",
-   "muhabbat",
-   "hayotiy saboqlar",
-   "e’tiqod",
-   "do‘stlik va sadoqat"
+   "vafo",
+   "mehr-oqibat",
+   "oila",
+   "ishq",
+   "tavba",
+   "do‘stlik"
   ],
-  "theme": "To‘plamda insoniy tuyg‘ular — akaga hurmat, otaga suyanish, ilk pok muhabbat, do‘st sotqinligidan alam, Yaratganga tavba va hayotiy mashaqqatlarga sabr qilish kabi samimiy va falsafiy g‘oyalar tarannum etiladi.",
-  "summary": "To‘plam turli hayotiy va ruhiy kechinmalarga bag‘ishlangan she’rlardan iborat. «Akamga» she’rida o‘z orzulari va yoshligini uka kamoli uchun fido qilgan fidoyi akaning jasorati madh etiladi. «Urushgim kelar» va «Men sevdimmi...» she’rlarida ilk muhabbat tuyg‘usi, rashk, iztirob va ma’shuqaga bo‘lgan samimiy intilish aks etadi. «Otajon» va «Xudoga maktub» she’rlarida shoir hayot sinovlaridan toliqib, otaning sabr-bardoshiga suyanishi hamda Yaratganga yuzlanib, xatolarini tan olishi, tavba qilishi va najot so‘rashi tasvirlanadi. «Sayyohman» va «Mening o‘rnimga...» she’rlarida esa insonning jamiyatdagi o‘rni, o‘zlikni anglash va hayot haqiqatlarini izlash falsafasi ochib beriladi. Yakuniy she’rlarda do‘st va ag‘yorlarning xiyonatidan kelgan og‘riq va hayotiy saboqlar bayon etiladi.",
-  "characters": "Lirik qahramon (shoir) — dilkash, hayotning achchiq-chuchug‘ini totgan, e’tiqodli va samimiy yigit. Aka — ukasi uchun yoshligini va orzularini ehson qilgan, unga tayanch bo‘lgan mard inson. Ota — hayotning barcha sinovlariga chidagan, farzandiga sabr va matonat timsoli bo‘lgan shaxs. Sevgilisi — lirik qahramonning qalbini junbushga keltirgan, goh azoblab, goh ilhom bergan go‘zal.",
-  "conclusion": "Ushbu she’riy to‘plam o‘spirin kitobxonda yaqinlarining, ayniqsa aka va otaning mehnatini qadrlash, samimiy muhabbat hamda do‘stlikka sadoqat tuyg‘ularini shakllantiradi. Inson hayotda xatolar qilishi tabiiy ekanini, ammo har doim tavba va halollik yo‘lini tanlash kerakligini anglatadi.",
+  "theme": "Insoniy tuyg‘ular, oila va qarindoshlik rishtalari, samimiy muhabbat, sabr hamda hayot qiyinchiliklarida imon va halollikni saqlash.",
+  "summary": "Ushbu she'riy to‘plamda shoirning turli mavzudagi poetik kechinmalari va falsafiy mushohadalari jamlangan. 'Akamga' she'rida o‘z orzularidan kechib, ukasining kamoli uchun yoshligini fido qilgan fidoiy aka madh etiladi. 'Otajon' va 'Xudoga maktub' asarlarida hayot mashaqqatlari, nomard do‘stlar xiyonati va Haqqa tavba qilish tuyg‘ulari samimiy yoritilgan. 'Urushgim kelar', 'Yana men...', 'Men sevdimmi...' turkum she'rlarida esa rashk, samimiy muhabbat va oshiqona iztiroblar tasvirlanadi. Shoir 'Sayyohman' va 'Mening o‘rnimga...' she'rlarida insoniy kamchiliklar hamda mas'uliyat haqida mushohada yuritadi. To‘plam yakunidagi 'Do‘stim, hech chaqqanmi labingdan ari?' she'rida eng og‘ir va ozorli jarohat do‘st xiyonati ekani ta'kidlanadi.",
+  "characters": "Shoir (lirik qahramon) — dilkash, rashkchi, samimiy, o‘tmish xatolaridan saboq oluvchi va Haqqa sig‘inuvchi inson; Aka — ukasi uchun o‘z orzularini va yoshligini qurbon qilgan fidoiy inson; Ota — hayot bo‘ronlarida panoh va sabr timsoli; Mahbuba — lirik qahramon ko‘nglini rom etgan va unga iztirob beruvchi go‘zal.",
+  "conclusion": "Ushbu to‘plam kitobxonda oilaga va yaqinlarga bo‘lgan mehr-oqibatni kuchaytiradi. Yoshlarni fidoyilik, samimiyat, o‘z xatolarini tan olish hamda shukronalik ruhida tarbiyalaydi. Do‘stlik hamda muhabbatning asl qadrini anglashga yordam beradi.",
   "difficulty": "o‘rta",
   "mood": "hazin, o‘ylantiruvchi",
-  "for_whom": "Oila, mehr-oqibat, ilk muhabbat va hayotiy kechinmalar haqida o‘yga tolmaydigan, she’riyatni va samimiy tuyg‘ularni xush ko‘radigan o‘spirinlar uchun.",
+  "for_whom": "She'riyatni xush ko‘radigan, insoniy munosabatlar, oilaviy qadriyatlar va hayot sirlari haqida mushohada yuritishni xohlaydigan o‘spirinlarga.",
   "events": [
-   "Lirik qahramon ukasi uchun o‘z orzularidan kechgan, yoshligini ehson qilgan mard akasiga minnatdorlik bildiradi.",
-   "Akaning fidoyiligi sabab uka ta’lim oladi va hayotda g‘oz yuradi.",
-   "Oshiq yigit sevgilisini boshqalardan va hattoki shamoldan ham rashk qilib, urushgisi kelayotganini aytadi.",
-   "Lirik qahramon sevgilisi oldiga yana qaytib kelib, o‘z sevgisini va taslimiyatini izhor etadi.",
-   "Dunyo g‘amlaridan toliqgan o‘g‘il otasiga yuzlanib, undan pana va sabr so‘raydi.",
-   "Hayot sinovlarida nodonlar qaddini bukkanda, otaning chidash haqidagi nasihatini eslaydi.",
-   "Insoniyat o‘tmishini xotirlab, chinor kabi matonatli ajdodlar va xalqiga ilingan saxovatli insonlarni qo‘msaydi.",
-   "Lirik qahramon Yaratganga maktub yozib, hayotdagi xatolarini, gunohlarini va bilmay qilgan ishlarini tan oladi.",
-   "Yoshlikda kosov bilan tepkilab itni o‘ldirib qo‘ygani uchun pushaymonlik chekadi va tavba qiladi.",
-   "Qiyinchiliklarga qaramay, faqat Yaratganga yig‘laganini va undan najot kutganini aytadi.",
-   "O‘z-o‘ziga sog‘lik va tinchlik tilab, dunyo yuz o‘girsa ham ruhi tushmasligini ta’kidlaydi.",
-   "Ishq o‘yinida yutqazganini tan olib, Samarqandga olib ketish orzusi bilan sevgilisiga ko‘ngil izhor qiladi.",
-   "O‘zini toshli yo‘llardan yurgan, izlanuvchan hamda xato va savoblarga ega sayyoh deb ataydi.",
-   "Dunyoning achchiq haqiqatlarini so‘zlash uchun o‘z mas’uliyatini anglab, boshqalar o‘rniga bo‘zlashga tayyorligini bildiradi.",
-   "Sevgilisidan moddiy narsa emas, hayitlik uchun bir tabassum so‘raydi.",
-   "Do‘stlarning xiyonati va yetkazgan ruhiy azobi arining chaqishidan ham og‘irroq ekanligini ta’kidlaydi."
+   "Lirik qahramon o‘zi uchun yoshligini va orzularini ehson qilgan mard akasiga minnatdorlik bildiradi.",
+   "Akasining sababi bilan u kiyim-boshli, bilimli bo‘lib, hayotda qo‘rqmasdan odimlamoqda.",
+   "Lirik qahramon mahbubasini shamol, xayol va hatto gulzordan qizg‘anib, hamma narsa bilan urushgisi kelishini aytadi.",
+   "Qahramon sevgan yorining oldiga yana va yana qaytib, jonini uning qo‘liga topshirishini bayon qiladi.",
+   "Hayot sinovlarida va nomard do‘stlar zarbasidan qiynalgan qahramon otasining bag‘ridan panoh va malham izlaydi.",
+   "Shoir o‘tmishdagi saxovatli shohlar, xalqiga qayishgan insonlarni va hozirgi dunyodagi faniylikni yodga oladi.",
+   "Lirik qahramon Xudoga maktub yozib, bolalikda qilgan xatosi — kosov bilan itni urib o‘ldirgani hamda boshqa gunohlari uchun tavba qiladi.",
+   "O‘zidan yo‘qotganlarini qaytarishni so‘rab, faqat Yaratganga nola qiladi.",
+   "Dunyo yuz o‘girganda inson o‘z-o‘ziga dalda berishi va sog‘lik tilashi haqida mushohada yuritadi.",
+   "Ishq o‘yinida yutqazganini tan olib, mahbubani Samarqandga olib ketish orzusida ekanini bildiradi.",
+   "O‘zini turlicha fe'lli oddiy inson va silliq ko‘prikdan yurmagan sayyoh deb ataydi.",
+   "Haqiqatni aytish va dunyo dardlarini kuylash borasida o‘z zimmasidagi burch haqida o‘ylaydi.",
+   "Bayram kunida mahbubadan hayitlik evaziga bitta tabassum so‘raydi.",
+   "Ari labdan yoki tildan chaqqanidan ko‘ra, do‘stning dildan chaqishi og‘riqliroq va davosizroq ekanini ta'kidlaydi."
   ],
   "quotes": [
    "Sen aka bo‘lolding kitobiga mos, Qalqisam yelkamga yelkangni tutding.",
-   "Sen sabab bilmadim chanqoqlik nima, Sen sabab bilmadim ochlik dardini.",
-   "Tushun, mening mulkimsan, dilbar, Bisyor bilan urushgim kelar.",
+   "Yonimda sendayin inson bor ekan – Qo‘rqish yo‘q, qaytish yo‘q, hayiqish nechun?!",
    "Dunyo shunday bag‘ri muz bo‘lsa, Siz bor yozga boray, otajon!",
-   "Tavba qilib yozmoqdaman xat, Xatolarim kechirgin endi.",
+   "Bismillahir rohmanir rohim, Rabbim, senga yuzlandim yana.",
+   "Samarqandga olib ketgali Keldim senday gulni quchoqlab!",
    "Do‘stim, hech chaqqanmi dildan do‘stlaring? Na shishib, na jonni olar bunday nish."
   ]
  },
@@ -54,133 +54,203 @@
    "part": 1,
    "category": "factual",
    "barrett": "literal",
-   "question": "«Akamga» she’rida uka kiygan kostyum nimaning misoli?",
+   "question": "\"Akamga\" she'rida aka uka uchun nimani ehson qilgan?",
    "options": [
-    "A) Akaning armoni misoli",
-    "B) Shon-shuhrat timsoli",
-    "C) Boylik ko‘rinishi",
-    "D) Yangi hayot belgisi"
+    "A) O‘z yoshligini va orzularini",
+    "B) Kattakon uy va mol-dunyosini",
+    "C) Otasidan qolgan barcha merosni",
+    "D) O‘zi uchun olingan qimmatbaho kiyimni"
    ],
-   "answer": "A) Akaning armoni misoli"
+   "answer": "A) O‘z yoshligini va orzularini"
   },
   {
    "id": 2,
    "part": 1,
    "category": "factual",
    "barrett": "literal",
-   "question": "Lirik qahramon kim bilan urushgisi kelishini aytadi?",
+   "question": "\"Urushgim kelar\" she'rida oshiq nimani ko‘rib xunob bo‘ladi?",
    "options": [
-    "A) Sevgilisining sochini titgan shamol bilan",
-    "B) Qishki sovuq qor bilan",
-    "C) Yo‘ldagi begona odamlar bilan",
-    "D) Qo‘shni mahalla yigitlari bilan"
+    "A) Shamol gulzorni to‘zg‘itganda",
+    "B) Jamol boshqalar diqqatini tortganda",
+    "C) Yo‘llar to‘rt tomonga qayrilganda",
+    "D) Qiz yig‘lab dengiz toshganda"
    ],
-   "answer": "A) Sevgilisining sochini titgan shamol bilan"
+   "answer": "B) Jamol boshqalar diqqatini tortganda"
   },
   {
    "id": 3,
    "part": 1,
    "category": "factual",
-   "barrett": "literal",
-   "question": "«Otajon» she’rida qahramon kimning sabriga tiz cho‘kadi?",
+   "barrett": "reorganization",
+   "question": "\"Akamga\" va \"Otajon\" she'rlarida lirik qahramon yaqinlarini kim deb biladi?",
    "options": [
-    "A) Otasining sabriga",
-    "B) Onasining sabriga",
-    "C) Ustozining sabriga",
-    "D) Do‘stining sabriga"
+    "A) Boshiga tushgan g‘amda panoh deb",
+    "B) Faqat moddiy yordam beruvchi deb",
+    "C) O‘zining muammolariga aybdor deb",
+    "D) Sirlarini yashirishi kerak bo‘lgan deb"
    ],
-   "answer": "A) Otasining sabriga"
+   "answer": "A) Boshiga tushgan g‘amda panoh deb"
   },
   {
    "id": 4,
    "part": 1,
-   "category": "factual",
-   "barrett": "reorganization",
-   "question": "«Akamga» she’rida aka uka uchun nimasini ehson qildi?",
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "\"Akamga\" she'rida uka nega bo‘yinbog‘dan bo‘g‘iladi?",
    "options": [
-    "A) Yoshligini va orzularini",
-    "B) Butun mol-dunyo va boyligini",
-    "C) O‘zining barcha kitoblarini",
-    "D) Imorat va uy-joylarini"
+    "A) Bo‘yinbog‘ juda tor bog‘langani uchun",
+    "B) Akasining amalga oshmagan armoni uchun",
+    "C) Kostyum-shim unga yoqmagani uchun",
+    "D) Akasi taqishni majbur qilgani uchun"
    ],
-   "answer": "A) Yoshligini va orzularini"
+   "answer": "B) Akasining amalga oshmagan armoni uchun"
   },
   {
    "id": 5,
    "part": 1,
    "category": "logic",
    "barrett": "inferential",
-   "question": "Lirik qahramon nega ozgina qo‘pollik qilsam o‘ksima deydi?",
+   "question": "\"Otajon\" she'rida lirik qahramon nega otasi yoniga shoshadi?",
    "options": [
-    "A) Akaning rahmini keltirmaslik uchun",
-    "B) Aka undan xafa bo‘lishi uchun",
-    "C) O‘z kuchini ko‘rsatish uchun",
-    "D) Aka bilan urushish uchun"
+    "A) Dunyo bag‘ri muz bo‘lgani uchun",
+    "B) Otasiga sovg‘alar olib berish uchun",
+    "C) Qishki sovuqdan saqlanish uchun",
+    "D) Bayramga taklif qilish uchun"
    ],
-   "answer": "A) Akaning rahmini keltirmaslik uchun"
+   "answer": "A) Dunyo bag‘ri muz bo‘lgani uchun"
   },
   {
    "id": 6,
    "part": 1,
-   "category": "logic",
-   "barrett": "inferential",
-   "question": "Ota o‘g‘liga g‘animlar qarshisida nima qilishni maslahat beradi?",
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Akasining ukasi uchun o‘z orzusidan kechishi qanday xulq?",
    "options": [
-    "A) Tishni tishga qo‘yib chidashni",
-    "B) Darhol qasos olishni",
-    "C) Shahardan qochib ketishni",
-    "D) Ularga xushomad qilishni"
+    "A) Oila uchun oliyhimmatli fidoiylik",
+    "B) Kelajagiga bo‘lgan befarqlik",
+    "C) Majburiyatdan qutilishga urinish",
+    "D) Ukasidan manfaat kutish"
    ],
-   "answer": "A) Tishni tishga qo‘yib chidashni"
+   "answer": "A) Oila uchun oliyhimmatli fidoiylik"
   },
   {
    "id": 7,
    "part": 1,
    "category": "conclusion",
-   "barrett": "evaluation",
-   "question": "Akaning uka uchun orzularidan kechishini qanday baholash mumkin?",
+   "barrett": "appreciation",
+   "question": "\"Sen tiniq dengizsan, men – kichik kema\" iborasi nimani bildiradi?",
    "options": [
-    "A) Oliyhimmatlik va fidoyilik deb",
-    "B) Yengiltaklik va xatolik deb",
-    "C) Majburiyat va chorasizlik deb",
-    "D) Qo‘rqoqlik va ojizlik deb"
+    "A) Akasining ulkan va bag‘rikeng panohligini",
+    "B) Dengizda suzishni yaxshi ko‘rishini",
+    "C) Kemaning suvda cho‘kib ketganini",
+    "D) Akasining cho‘milishni bilishini"
    ],
-   "answer": "A) Oliyhimmatlik va fidoyilik deb"
+   "answer": "A) Akasining ulkan va bag‘rikeng panohligini"
   },
   {
    "id": 8,
    "part": 2,
    "category": "factual",
    "barrett": "literal",
-   "question": "«Xudoga maktub» she’rida shoir necha bahorni ko‘rganini aytadi?",
+   "question": "\"Xudoga maktub\" she'rida qahramon bolaligida qanday xato qilgan?",
    "options": [
-    "A) Yigirma uch bahorni",
-    "B) O‘n sakkiz bahorni",
-    "C) Yigirma besh bahorni",
-    "D) O‘ttiz bahorni"
+    "A) Itni kosov bilan urib o‘ldirgan",
+    "B) Kitobni ruxsatsiz olib qo‘ygan",
+    "C) Qalamni sinib ketgunicha ishlatgan",
+    "D) Otasining so‘ziga kirmay qochgan"
    ],
-   "answer": "A) Yigirma uch bahorni"
+   "answer": "A) Itni kosov bilan urib o‘ldirgan"
   },
   {
    "id": 9,
    "part": 2,
    "category": "factual",
    "barrett": "literal",
-   "question": "Shoir yoshligida itvachchani nima bilan urib qo‘ygan edi?",
+   "question": "\"Xudoga maktub\" she'ri qanday muqaddas kalom bilan boshlanadi?",
    "options": [
-    "A) Kosov bilan",
-    "B) Tayoq bilan",
-    "C) Tosh bilan",
-    "D) Zanjir bilan"
+    "A) Bismillahir rohmanir rohim",
+    "B) Assalomu alaykum Ya Rabbim",
+    "C) Ey Tangrim, senga yuzlandim",
+    "D) Subhonalloh deb yozdim maktub"
    ],
-   "answer": "A) Kosov bilan"
+   "answer": "A) Bismillahir rohmanir rohim"
   },
   {
    "id": 10,
    "part": 2,
    "category": "factual",
    "barrett": "literal",
-   "question": "«Men sevdimmi...» she’rida qahramon sevgilisini qayerga olib ketmoqchi?",
+   "question": "\"Tilak\" she'rida qahramon o‘zi uchun nima tilaydi?",
+   "options": [
+    "A) Sog‘lik, tinchlik va quvonch",
+    "B) Ko‘p dunyo moli va boylik",
+    "C) Mansab va doimiy unvonlar",
+    "D) Oltin va qimmatbaho buyumlar"
+   ],
+   "answer": "A) Sog‘lik, tinchlik va quvonch"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qahramon Xudoga maktubida amallarini qanday baholaydi?",
+   "options": [
+    "A) Gunohlarini tan olib, tavba qiladi",
+    "B) Faqat savoblarini ko‘rsatib maqtanadi",
+    "C) Barcha aybni do‘stlariga ag‘daradi",
+    "D) O‘zini aybsiz deb hisoblaydi"
+   ],
+   "answer": "A) Gunohlarini tan olib, tavba qiladi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "\"Xudoga maktub\" she'rida qahramonning maktub yozishdan maqsadi nima?",
+   "options": [
+    "A) Gunohlariga tavba qilib, kechirim so‘rash",
+    "B) O‘zining shoir ekanini ko‘rsatish",
+    "C) Boshqalarga she'r o‘qib berish",
+    "D) Taqdiridan shikoyat qilib yig‘lash"
+   ],
+   "answer": "A) Gunohlariga tavba qilib, kechirim so‘rash"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "\"Azroilga jonini tutgan...\" she'rida qanday g‘oya ilgari suriladi?",
+   "options": [
+    "A) O‘tmishdagi mardlik va foniylik mushohadasi",
+    "B) Odamlarga yangi kiyimlar ulashish",
+    "C) Tarixni butunlay unutish haqida",
+    "D) Faqat boylik yig‘ishga da'vat"
+   ],
+   "answer": "A) O‘tmishdagi mardlik va foniylik mushohadasi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qahramonning Xudodan mag‘firat so‘rashi uning qaysi xislatini ko‘rsatadi?",
+   "options": [
+    "A) Imonli bo‘lib, xatosini anglay olishini",
+    "B) Chorasiz va qo‘rqoq ekanligini",
+    "C) Boshqalarni aldashga urinishini",
+    "D) O‘zini oqlashga harakat qilishini"
+   ],
+   "answer": "A) Imonli bo‘lib, xatosini anglay olishini"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "\"Men sevdimmi...\" she'rida oshiq yorini qayerga olib ketmoqchi?",
    "options": [
     "A) Samarqandga",
     "B) Buxoroga",
@@ -190,86 +260,16 @@
    "answer": "A) Samarqandga"
   },
   {
-   "id": 11,
-   "part": 2,
-   "category": "factual",
-   "barrett": "reorganization",
-   "question": "«Xudoga maktub» she’rida shoir Yaratganga qachon yuzlanganini aytadi?",
-   "options": [
-    "A) Tavba qilib xatosini tushunganda",
-    "B) Boylik va mol topganda",
-    "C) Do‘stlari bilan quvonganda",
-    "D) Yangi kiyimlar kiyganda"
-   ],
-   "answer": "A) Tavba qilib xatosini tushunganda"
-  },
-  {
-   "id": 12,
-   "part": 2,
-   "category": "logic",
-   "barrett": "inferential",
-   "question": "Shoir nega itvachcha voqeasini eslab tavba qilmoqda?",
-   "options": [
-    "A) Qilmishiga yarasha azob chekayotgani uchun",
-    "B) Itni juda sog‘ingani uchun",
-    "C) Otasi urishgani uchun",
-    "D) Boshqalarga maqtanish uchun"
-   ],
-   "answer": "A) Qilmishiga yarasha azob chekayotgani uchun"
-  },
-  {
-   "id": 13,
-   "part": 2,
-   "category": "logic",
-   "barrett": "inferential",
-   "question": "«Tilak» she’rida qahramon nega o‘ziga sog‘lik tilaydi?",
-   "options": [
-    "A) Dunyo yuz o‘girsa tushkunlikka tushmaslik uchun",
-    "B) Hammani hayron qoldirish uchun",
-    "C) Ko‘p mol-dunyo yig‘ish uchun",
-    "D) Boshqalardan ustun bo‘lish uchun"
-   ],
-   "answer": "A) Dunyo yuz o‘girsa tushkunlikka tushmaslik uchun"
-  },
-  {
-   "id": 14,
-   "part": 2,
-   "category": "conclusion",
-   "barrett": "appreciation",
-   "question": "«Qoni bilan yozyapman bugun» misrasi nimani anglatadi?",
-   "options": [
-    "A) Dildagi chuqur iztirob va samimiyatni",
-    "B) Qalbi jarohatlangani va kasalligini",
-    "C) Qalam siyohi tugab qolganini",
-    "D) Yozishni juda yoqtirishini"
-   ],
-   "answer": "A) Dildagi chuqur iztirob va samimiyatni"
-  },
-  {
-   "id": 15,
-   "part": 3,
-   "category": "factual",
-   "barrett": "literal",
-   "question": "«Sayyohman» she’rida qahramon qaysi ko‘prikka bormaganini aytadi?",
-   "options": [
-    "A) Silliq ko‘prikka",
-    "B) Yog‘och ko‘prikka",
-    "C) Tosh ko‘prikka",
-    "D) Baland ko‘prikka"
-   ],
-   "answer": "A) Silliq ko‘prikka"
-  },
-  {
    "id": 16,
    "part": 3,
    "category": "factual",
    "barrett": "literal",
-   "question": "«Hayitlik» she’rida oshiq yoridan hayitlik uchun nima so‘raydi?",
+   "question": "\"Hayitlik\" she'rida lirik qahramon mahbubasidan nima so‘raydi?",
    "options": [
     "A) Bir tabassum",
     "B) Oltin uzuk",
-    "C) Qimmatbaho kiyim",
-    "D) Shiringina kalom"
+    "C) Qimmatbaho libos",
+    "D) Shirin taom"
    ],
    "answer": "A) Bir tabassum"
   },
@@ -277,57 +277,57 @@
    "id": 17,
    "part": 3,
    "category": "factual",
-   "barrett": "reorganization",
-   "question": "She’rda ari chaqishi turlari qaysi tartibda tasvirlangan?",
+   "barrett": "literal",
+   "question": "\"Do‘stim, hech chaqqanmi labingdan ari?\" she'rida do‘st xiyonati qanday?",
    "options": [
-    "A) Labdan, tilingdan va dildan",
-    "B) Dildan, qo‘ldan va ko‘zdan",
-    "C) Tilingdan, labdan va dildan",
-    "D) Qo‘ldan, labdan va oyoqdan"
+    "A) Shishmaydi, lekin sanchig‘i ichda qoladi",
+    "B) Labni paxtaday ko‘pchitib qo‘yadi",
+    "C) Insonga darrov o‘lim olib keladi",
+    "D) Tezda tuzalib, unutilib ketadi"
    ],
-   "answer": "A) Labdan, tilingdan va dildan"
+   "answer": "A) Shishmaydi, lekin sanchig‘i ichda qoladi"
   },
   {
    "id": 18,
    "part": 3,
-   "category": "logic",
-   "barrett": "inferential",
-   "question": "Nega do‘stning dildan chaqishi ari chaqishidan og‘irroq?",
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shoir oxirgi she'rlarda o‘zini kim deb tasvirlaydi?",
    "options": [
-    "A) Qalbni azoblab mangu og‘ritgani uchun",
-    "B) Shish paydo qilgani uchun",
-    "C) Ovozni bo‘g‘ib qo‘ygani uchun",
-    "D) Tanga jismoniy og‘riq bergani uchun"
+    "A) Haqiqatni kuylaydigan va izlanadigan sayyoh",
+    "B) Barchadan ustun turuvchi shoh",
+    "C) Jamiyatdan butunlay uzilgan odam",
+    "D) Faqat o‘zini o‘ylaydigan shaxs"
    ],
-   "answer": "A) Qalbni azoblab mangu og‘ritgani uchun"
+   "answer": "A) Haqiqatni kuylaydigan va izlanadigan sayyoh"
   },
   {
    "id": 19,
    "part": 3,
-   "category": "conclusion",
-   "barrett": "evaluation",
-   "question": "«Mening o‘rnimga...» she’ridagi haqiqatni izlash chaqirig‘ini qanday baholaysiz?",
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega do‘stning xiyonati arining chaqishidan og‘irroq deb hisoblanadi?",
    "options": [
-    "A) Jamiyat oldidagi mas’uliyat deb",
-    "B) Shunchaki quruq maqtanchoqlik deb",
-    "C) Boshqalarga xalaqit berish deb",
-    "D) Foydasiz va bekorchi ish deb"
+    "A) Qalb jarohati mangu og‘rigani uchun",
+    "B) Ari chaqishi umuman og‘ritmagani uchun",
+    "C) Do‘stlar ariga qaraganda kuchliroq bo‘lgani",
+    "D) Ari faqat yozda chaqqani uchun"
    ],
-   "answer": "A) Jamiyat oldidagi mas’uliyat deb"
+   "answer": "A) Qalb jarohati mangu og‘rigani uchun"
   },
   {
    "id": 20,
    "part": 3,
    "category": "conclusion",
    "barrett": "appreciation",
-   "question": "«Ko‘ksingdan chiqmaydi sanchiq nishli tish» misrasi nimani tasvirlaydi?",
+   "question": "Do‘st xiyonatining ariga o‘xshatilishi o‘quvchida qanday tuyg‘u uyg‘otadi?",
    "options": [
-    "A) Do‘st xiyonatining qalbdagi og‘rig‘ini",
-    "B) Arining zahri juda kuchliligini",
-    "C) Tish og‘rig‘ining chidab bo‘lmasligini",
-    "D) Insonning jismoniy charchoq holatini"
+    "A) Do‘stlikdagi samimiyat va vafo qadrini",
+    "B) Arilardan ehtiyot bo‘lish kerakligini",
+    "C) Arilarning foydali ekanini anglashni",
+    "D) Do‘stlar bilan bahslashish istagini"
    ],
-   "answer": "A) Do‘st xiyonatining qalbdagi og‘rig‘ini"
+   "answer": "A) Do‘stlikdagi samimiyat va vafo qadrini"
   }
  ]
 }

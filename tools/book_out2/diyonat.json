@@ -1,0 +1,477 @@
+{
+ "title": "Diyonat",
+ "author": "Odil Yoqubov",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "diyonat va insof",
+   "halollik va mansab",
+   "ekologiya va tabiat",
+   "oila va oqibat",
+   "ustoz va shogird"
+  ],
+  "theme": "Asarning bosh g‘oyasi — mansab, shon-shuhrat va boylik o‘tkinchi ekanligi, inson hayotida diyonat, halollik, ma’naviy poklik hamda tabiatga g‘amxo‘rlik qilish eng oliy qadriyat ekanligini ko‘rsatishdan iborat.",
+  "summary": "Roman voqealari keksa olim, suv xo‘jaligi bo‘yicha taniqli mutaxassis Normurod Shomurodov va uning jiyani, mashhur kolxoz raisi Otaqo‘zi Umarov atrofida kechadi. Otaqo‘zi yangi raykom kotibi Abror Shukurovni tog‘asi Normurod otaning xonadoniga olib keladi. Suv va yer muammolari, qishloq hayoti va oilaviy munosabatlar asar markazida turadi. Otaqo‘zi uzoq yillar davomida erishgan obro‘-e’tibori va mansabidan havolanib, ba’zi xato va noqonuniy ishlarga yo‘l qo‘yadi. U o‘z manfaatlari va soxta shon-shuhrati yo‘lida tabiatga — Mingbuloq jiydazorlariga zaror yetkazadi, shuningdek, amaldor Jamol Bo‘riboyev bilan quda-andachilik rishtalarini bog‘lashga intiladi. Normurod ota esa prinsipial, halol va e’tiqodli inson sifatida jiyanining xatolarini hamda nohaqliklarni ochiq tanqid qiladi.\n\nNormurod otaning yetim o‘sgan, urushda halok bo‘lgan o‘g‘li Jabbor xotirasi, urush davri va undan keyingi adolatsizliklar xotiralarda namoyon bo‘ladi. Otaqo‘zining o‘g‘li Haydar dissertatsiya yoqlaydi, biroq ilmiy rahbar Vohid Mirobidov bilan Normurod ota o‘rtasida ilmiy va axloqiy prinsiplar borasida keskin ziddiyat kelib chiqadi. Normurod ota suv tarkibidagi sho‘rlanish darajasi xalq xo‘jaligiga va tabiatga ziyon yetkazishini ta’kidlab, ilmiy haqiqatni himoya qiladi. Otaqo‘zining rahbarlik uslubidagi xatolar, noqonuniy o‘g‘it va ehtiyot qismlar olishi, kolxoz mashinasini shaxsiy to‘y va maishatga ishlatishi oqibatida sodir bo‘lgan halokatlar partiya organlari tomonidan tekshiriladi.\n\nNormurod ota sog‘lig‘i og‘irlashganiga qaramay, Mingbuloqning payxon qilinishini to‘xtatish uchun u yerga boradi va iztirob ustida vafot etadi. Normurod otaning o‘limi Otaqo‘zi uchun kuchli ma’naviy zarba bo‘ladi. Raykom byurosi majlisida Otaqo‘zining xatolari ko‘rib chiqilib, u raislikdan olinadi. Otaqo‘zi tog‘asining qabri tepasida o‘z hayotiga, bosib o‘tgan yo‘liga chuqur nazar tashlaydi, manmanlik va soxta obro‘ ortidan quvgani uchun qattiq pushaymon bo‘ladi hamda qolgan umrini diyonat va halollik bilan yashashga ahd qiladi.",
+  "characters": "Normurod Shomurodov — keksa olim, suv muammolari bo‘yicha yirik mutaxassis, diyonatli va prinsipial inson. Otaqo‘zi Umarov — mashhur kolxoz raisi, Normurod otaning jiyani, mansab va shon-shuhratga berilib xatolarga yo‘l qo‘ygan rahbar. Abror Shukurov — yangi raykom kotibi, kamgap, adolatli va prinspial inson. Jamol Bo‘riboyev — xudbin va mansabparast amaldor. Haydar — Otaqo‘zining o‘g‘li, yosh olim. Proxor Polikarpov — Normurod otaning mardikorlik davridan beri sodiq do‘sti.",
+  "conclusion": "Asar kitobxonga har qanday sharoitda ham insoflik, halollik va diyonatni yo‘qotmaslik kerakligini o‘rgatadi. Mansab, boylik va shon-shuhrat o‘tkinchi, insoniy qadr-qimmat hamda ezgu amallar esa abadiydir. Ota-onaga va kattalarga hurmat, tabiatni asrash va el-yurt oldidagi mas’uliyat inson hayotining bosh mezoni ekanligi uqtiriladi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Insoniy munosabatlar, jamiyat muammolari, halollik va e'tiqod haqida chuqur o‘ylashni xohlaydigan yoshlar uchun.",
+  "events": [
+   "1. Otaqo‘zi yangi raykom kotibi Abror Shukurov va qizi Tohirani olib Normurod otaning uyiga keladi.",
+   "2. Otaqo‘zi Shukurovga tog‘asining boy kutubxonasini va o‘tmishdagi oilaviy voqealarni so‘zlab beradi.",
+   "3. Normurod ota o‘z kutubxonasini qishloqqa ko‘chirib borish va yoshlarga ziyo ulashish niyatini bildiradi.",
+   "4. Abror Shukurov Toshkentda turli idoralarga uchrab, tuman uchun qurilish materiallari va o‘g‘it masalasini hal qiladi.",
+   "5. Haydarning dissertatsiya himoyasidan so‘ng o‘tkazilgan ziyofatda tushunmovchiliklar va nizolar yuzaga keladi.",
+   "6. Ilmiy kengashda Sibir daryolari va yerlarni sug‘orish muammolari bo‘yicha bahs-munozara bo‘lib o‘tadi.",
+   "7. Normurod ota ilmiy kengashda suvdagi mineral tuzlar miqdori bo‘yicha xavfni ochiq aytib chiqadi.",
+   "8. Otaqo‘zi chigit ekish va xo‘jalik ishlarini jadallashtirish uchun favqulodda choralar ko‘radi.",
+   "9. Normurod ota o‘zining mardikorlik va yoshlik yillarini, o‘g‘li Jabbor va xotini Gulsarani xotirlaydi.",
+   "10. Otaqo‘zi Mingbuloqdagi yerlarni o‘zlashtirish va qurilish ishlariga oshiqadi.",
+   "11. Fazilatxon va uning qizi Latofat Normurod otaning uyiga kelib kitoblarni tartibga solishga yordam berishadi.",
+   "12. Qudratxo‘ja bilan Normurod ota o‘rtasida o‘tmishdagi voqealar va inqilob yillari haqida achchiq bahs bo‘ladi.",
+   "13. Otaqo‘zining o‘g‘li Haydar va qizi Tohiraning shaxsiy hayotidagi chigalliklar namoyon bo‘ladi.",
+   "14. Abror Shukurov va Otaqo‘zi tuman xo‘jaligi hamda ma’naviy masalalar yuzasidan samimiy suhbatlashishadi.",
+   "15. Otaqo‘zining buyrug‘i bilan Mingbuloqdagi jiydazorlar va archalarni kesish boshlanadi.",
+   "16. Normurod ota xastaligiga qaramay Proxor bilan birga Mingbuloqqa yetib boradi.",
+   "17. Mingbuloqdagi buzg‘unchilikni ko‘rgan Normurod ota Ali mo‘ylov va ishchilarni to‘xtatishga urinadi hamda ahvoli og‘irlashib vafot etadi.",
+   "18. Tuman partiya qo‘mitasi byurosi majlisida Otaqo‘zining yo‘l qo‘ygan xatolari va javobgarligi ko‘rib chiqiladi.",
+   "19. Abror Shukurov byuro majlisida professor Normurod Shomurodovning vafot etganini e’lon qiladi.",
+   "20. Otaqo‘zi tog‘asining qabri tepasida o‘z qilmishlaridan pushaymon bo‘lib, diyonat bilan yashashga ahd qiladi."
+  ],
+  "quotes": [
+   "“Diyonat” romani ijtimoiy talqin ustuvorlik qilgan asar hisoblanadi.",
+   "– Men kolxozingga tirik tovon bo‘lishni istamayman! – dedi keskin. – Ko‘chib boradigan bo‘lsam... o‘z pulimga uy-joy qurib olaman...",
+   "– Xalqimizda yetti o‘lchab bir kes, degan gap bor!",
+   "– Gumroh! – deb baqirdi. – Qachon bu el, bu yurt senday gumrohlardan qutuladi? Qachon?",
+   "– Dunyoda shunday odamlar bo‘ladiki, ularning hayoti, qilgan ishlari, bosib o‘tgan yo‘llari biz uchun abadulabad yuksak bir namuna bo‘lib qoladi.",
+   "Ha, odam bolasidan faqat yaxshilik qolarkan bu dunyoda!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otaqo‘zi Normurod domlaning hovlisiga kimlar bilan keldi?",
+   "options": [
+    "A) Tohira va Abror Shukurov bilan",
+    "B) Jamol Bo‘riboyev va Haydar bilan",
+    "C) Vohid Mirobidov va Fazilat bilan",
+    "D) Proxor va Ali mo‘ylov bilan"
+   ],
+   "answer": "A) Tohira va Abror Shukurov bilan"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abror Shukurov tuman partiya qo‘mitasida qanday lavozimda ishlaydi?",
+   "options": [
+    "A) Tuman ijroqo‘m raisi",
+    "B) Yangi raykom kotibi",
+    "C) Suv xo‘jaligi boshlig‘i",
+    "D) Institut direktori"
+   ],
+   "answer": "B) Yangi raykom kotibi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Normurod domlaning urushda halok bo‘lgan o‘g‘lining ismi nima?",
+   "options": [
+    "A) Haydar",
+    "B) Qodirjon",
+    "C) Jabbor",
+    "D) Naimjon"
+   ],
+   "answer": "C) Jabbor"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Normurod ota va uning xotini qayerga ko‘chib o‘tmoqchi?",
+   "options": [
+    "A) Toshkent markaziga",
+    "B) O‘z tug‘ilgan qishlog‘iga",
+    "C) Moskva shahriga",
+    "D) Surxondaryo viloyatiga"
+   ],
+   "answer": "B) O‘z tug‘ilgan qishlog‘iga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Otaqo‘zi so‘zlab bergan voqealarga ko‘ra, kimlar urushda qahramonlik ko‘rsatgan?",
+   "options": [
+    "A) Jabbor va Jamol Bo‘riboyev",
+    "B) Otaqo‘zi va Ali mo‘ylov",
+    "C) Abror Shukurov va Haydar",
+    "D) Vohid Mirobidov va Qudratxo‘ja"
+   ],
+   "answer": "A) Jabbor va Jamol Bo‘riboyev"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Otaqo‘zi va uning tog‘asi o‘rtasida pinhona sovuqchilik bor edi?",
+   "options": [
+    "A) Yer talashgani uchun",
+    "B) Qudachilik va qarashlar tufayli",
+    "C) Kitoblar bo‘lishilmagani uchun",
+    "D) Uy qurilishi sababli"
+   ],
+   "answer": "B) Qudachilik va qarashlar tufayli"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Abror Shukurov ilgarigi raykom kotibidan tubdan farq qilardi?",
+   "options": [
+    "A) Kamgap va ziyofatlarga bormasdi",
+    "B) Har kuni majlis qilardi",
+    "C) Mashinada yurishni yoqtirmasdi",
+    "D) Dehqonlarni doim so‘kardi"
+   ],
+   "answer": "A) Kamgap va ziyofatlarga bormasdi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Normurod otaning davlat yordamisiz o‘z puliga uy qurishi to‘g‘rimi?",
+   "options": [
+    "A) Yo‘q, kolxoz pulidan qurishi kerak",
+    "B) To‘g‘ri, halol va mustaqil yashaydi",
+    "C) Yo‘q, qarindoshlaridan olishi kerak",
+    "D) Noto‘g‘ri, davlat majburan quradi"
+   ],
+   "answer": "B) To‘g‘ri, halol va mustaqil yashaydi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Normurod otaning boshini yunon faylasuflariga o‘xshatib nimani ta’kidlagan?",
+   "options": [
+    "A) Uning donishmandligi va savlatini",
+    "B) Uning chet eldan kelganini",
+    "C) Uning kiyimining qimmatligini",
+    "D) Uning yunoncha gapirishini"
+   ],
+   "answer": "A) Uning donishmandligi va savlatini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Gulsara ayaning ko‘zlaridagi 'g‘amgin alomat' nimani ifodalagan?",
+   "options": [
+    "A) Umrining oxirigacha sadoqat va mehrni",
+    "B) Otaqo‘zidan qo‘rqish tuyg‘usini",
+    "C) Qishloqqa ko‘chishni xohlamaslikni",
+    "D) Ovqatning sovib qolganini"
+   ],
+   "answer": "A) Umrining oxirigacha sadoqat va mehrni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sibir daryolarini O‘rta Osiyoga burish bo‘yicha qaysi daryolar muhokama qilindi?",
+   "options": [
+    "A) Ob va Yenisey daryolari",
+    "B) Volga va Dnepr daryolari",
+    "C) Amudaryo va Sirdaryo daryolari",
+    "D) Neva va Ural daryolari"
+   ],
+   "answer": "A) Ob va Yenisey daryolari"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Haydarning dissertatsiya himoyasida amerikaliklar tajribasini kim eslatdi?",
+   "options": [
+    "A) Normurod Shomurodov",
+    "B) Vohid Mirobidov",
+    "C) Abror Shukurov",
+    "D) Jamol Bo‘riboyev"
+   ],
+   "answer": "A) Normurod Shomurodov"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otaqo‘zining topshirig‘iga ko‘ra Mingbuloqda kim ishchilarga bosh-qosh edi?",
+   "options": [
+    "A) Ali mo‘ylov",
+    "B) Proxor",
+    "C) Qudratxo‘ja",
+    "D) Naimjon"
+   ],
+   "answer": "A) Ali mo‘ylov"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Normurod ota o‘tmishda chor Rossiyasi davrida qayerga olib ketilgan edi?",
+   "options": [
+    "A) Mardikorlikka",
+    "B) Surgunga",
+    "C) Armiyaga",
+    "D) Chet elga"
+   ],
+   "answer": "A) Mardikorlikka"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Haydarning dissertatsiyasi borasida kimlar o‘zaro ilmiy bahsga kirishdi?",
+   "options": [
+    "A) Vohid Mirobidov va Normurod Shomurodov",
+    "B) Abror Shukurov va Jamol Bo‘riboyev",
+    "C) Otaqo‘zi va Ali mo‘ylov",
+    "D) Proxor va Qudratxo‘ja"
+   ],
+   "answer": "A) Vohid Mirobidov va Normurod Shomurodov"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Normurod ota Haydarning ilmiy ishiga e’tiroz bildirdi?",
+   "options": [
+    "A) Suvdagi tuz miqdori yuqoriligi uchun",
+    "B) Haydarni yomon ko‘rgani uchun",
+    "C) Mirobidovni yoqtirmagani uchun",
+    "D) Dissertatsiya mavzusi eskiligi uchun"
+   ],
+   "answer": "A) Suvdagi tuz miqdori yuqoriligi uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jamol Bo‘riboyevning majlisda Otaqo‘zini maqtashdan maqsadi nima edi?",
+   "options": [
+    "A) O‘z manfaatini va obro‘sini o‘ylash",
+    "B) Otaqo‘ziga chin dildan achinish",
+    "C) Abror Shukurovga yoqmaslik",
+    "D) Mingbuloqni saqlab qolish"
+   ],
+   "answer": "A) O‘z manfaatini va obro‘sini o‘ylash"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Normurod otaning haqiqatni ilmiy kengashda ochiq aytishi qanday baholanadi?",
+   "options": [
+    "A) Prinsipiallik va halollik namunasi",
+    "B) Yoshlarga xalaqit berish xatosi",
+    "C) Otaqo‘zidan o‘ch olish istagi",
+    "D) Ilmiy qoidalarga zid harakat"
+   ],
+   "answer": "A) Prinsipiallik va halollik namunasi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Mingbuloq tabiatini tasvirlash orqali kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Tabiatni asrash va mehr hissini",
+    "B) Sahroda yashash istagini",
+    "C) Texnikani ko‘paytirish xohishini",
+    "D) Qishloqdan qochish fikrini"
+   ],
+   "answer": "A) Tabiatni asrash va mehr hissini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Qudratxo‘janing o‘tmishdagi arazlarini eslashi qanday ifodalangan?",
+   "options": [
+    "A) Alamzada va o‘zgarmagan fe'li orqali",
+    "B) Uning juda mehribonligini ko‘rsatib",
+    "C) Uning olim bo‘lganini bildirish uchun",
+    "D) Uning xatosini tushunganini ko‘rsatib"
+   ],
+   "answer": "A) Alamzada va o‘zgarmagan fe'li orqali"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Normurod ota o‘limi oldidan oxirgi marta qayerga bordi?",
+   "options": [
+    "A) Mingbuloq jiydazorlariga",
+    "B) Toshkentga vazirlikka",
+    "C) Surxondaryo viloyatiga",
+    "D) Tuman partiya qo‘mitasiga"
+   ],
+   "answer": "A) Mingbuloq jiydazorlariga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Normurod otaning yonida doim birga bo‘lgan sodiq do‘sti kim edi?",
+   "options": [
+    "A) Proxor Polikarpov",
+    "B) Jamol Bo‘riboyev",
+    "C) Vohid Mirobidov",
+    "D) Ali mo‘ylov"
+   ],
+   "answer": "A) Proxor Polikarpov"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Raykom byurosi majlisida Normurod otaning vafoti haqida kim xabar berdi?",
+   "options": [
+    "A) Abror Shukurov",
+    "B) Otaqo‘zi",
+    "C) Haydar",
+    "D) Proxor"
+   ],
+   "answer": "A) Abror Shukurov"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otaqo‘zi tog‘asining dafn marosimidan keyin qayerda uzoq o‘yga toldi?",
+   "options": [
+    "A) Tog‘asining qabri tepasida",
+    "B) Kolxoz idorasida",
+    "C) Toshkentdagi uyida",
+    "D) Raykom binosi oldida"
+   ],
+   "answer": "A) Tog‘asining qabri tepasida"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar so‘ngida Otaqo‘zining hayotida qanday ketma-ket o‘zgarishlar yuz berdi?",
+   "options": [
+    "A) Xatolari ochildi, majlisda jazolandi, tavba qildi",
+    "B) Qahramon bo‘ldi, Toshkentga ko‘chdi, nafaqaga chiqdi",
+    "C) Vazir bo‘ldi, yangi uy qurdirdi, to‘y qildi",
+    "D) Chet elga ketdi, olim bo‘ldi, uy oldi"
+   ],
+   "answer": "A) Xatolari ochildi, majlisda jazolandi, tavba qildi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Proxor Polikarpov va O‘rozqul Normurod otani qanday xotirlashdi?",
+   "options": [
+    "A) Insof va adolat timsoli sifatida",
+    "B) Qattiqqo‘l va takabbur odam deb",
+    "C) Boy va obro‘li amaldor deb",
+    "D) Dunyoni tushunmagan sodda deb"
+   ],
+   "answer": "A) Insof va adolat timsoli sifatida"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Otaqo‘zi tog‘asining qabri tepasida o‘zini munofiq deb hisobladi?",
+   "options": [
+    "A) Soxta obro‘ uchun tog‘asini xafa qilgani uchun",
+    "B) Qabrga gul olib kelmagani uchun",
+    "C) Majlisga kechikib kelgani uchun",
+    "D) To‘yni to‘xtatgani uchun"
+   ],
+   "answer": "A) Soxta obro‘ uchun tog‘asini xafa qilgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Normurod ota xasta bo‘lishiga qaramay Mingbuloqqa oshiqdi?",
+   "options": [
+    "A) Tabiat payxon qilinishini to‘xtatish uchun",
+    "B) Otaqo‘zi bilan urishish uchun",
+    "C) Yangi kitob sotib olish uchun",
+    "D) Daryodan baliq tutish uchun"
+   ],
+   "answer": "A) Tabiat payxon qilinishini to‘xtatish uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Otaqo‘zining asar oxirida o‘z qilmishlaridan pushaymon bo‘lishi qanday baholanadi?",
+   "options": [
+    "A) Kechikkan, ammo vijdonning uyg‘onishi",
+    "B) Qayta rais bo‘lish uchun hiyla",
+    "C) Odamlardan qo‘rquv alomati",
+    "D) Hech qanday ma'nosi yo‘q holat"
+   ],
+   "answer": "A) Kechikkan, ammo vijdonning uyg‘onishi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Asarning 'Diyonat' deb nomlanishi asar g‘oyasiga qanchalik mos?",
+   "options": [
+    "A) To‘liq mos, insoniy e’tiqodni ifodalaydi",
+    "B) Qisman mos, faqat paxta haqida",
+    "C) Mos emas, faqat o‘tmish haqida",
+    "D) Mos emas, faqat to‘y haqida"
+   ],
+   "answer": "A) To‘liq mos, insoniy e’tiqodni ifodalaydi"
+  }
+ ]
+}

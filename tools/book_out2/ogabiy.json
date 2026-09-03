@@ -1,0 +1,478 @@
+{
+ "title": "Og‘abiy",
+ "author": "Kengisboy Karimov",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "vatan",
+   "tarix",
+   "sabr",
+   "jasorat",
+   "oila",
+   "birlik"
+  ],
+  "theme": "Asar o‘z xalqi va elining tinchligi, erkinligi hamda farovonligi uchun har qanday mashaqqatga chidagan uzoqni ko‘rar yo‘lboshchilar va mard insonlarning jasoratini ulug‘laydi.",
+  "summary": "XIX asr boshlarida Buxoro va Chimboy oralig‘ida yastanib yotgan bepoyon Qizilqum sahrolari orqali Qulchi biy boshchiligidagi qoraqalpoq urug‘larining buyuk ko‘chishi boshlanadi. Bu ko‘ch oddiy safar emas, balki elning o‘z ota yurtida tinch va erkin yashash ilinjidagi mashaqqatli va sinovli yo‘lidir. Ko‘chda Qulchi biyning yosh o‘g‘li Erejeb va uning tug‘ilgan kunida dunyoga kelgan nasldor To‘riqqashqa toychoq ham bor. Yo‘l bo‘yi odamlar va chorva mollari izg‘irin sovuqlarga, och bo‘rilar galasiga va suvsizlikka duch keladi.\n\nBiyning ishongan botir navkari Bektemir tunda ko‘chni bo‘rilar hujumidan mardlarcha qo‘riqlaydi. Bektemir ilgarilari Qoraqumda asirlikda bo‘lgan, do‘sti Hakimqul uchun ko‘p fidoiylik qilgan va sevgani Zulxumorni eslab iztirob chekadi. Boshqa bir tomonda, Tog‘abergan sayis parvarish qilgan ardoqli To‘riqqashqa ot dushman To‘lasin tomonidan zaharlab o‘ldiriladi. Bu fojia sayis va biy elida chuqur g‘am-alam uyg‘otadi. Tog‘abergan o‘z nomusini tiklash va dushmandan qasos olish uchun qalandar qiyofasiga kirib, xavfli safarga otlanadi.\n\nSahrodagi ko‘chish jarayonida suvsizlik eng buyuk fojiaga aylanadi. Keksa va tajribali quduqchi Tangjarboy o‘g‘li O‘rinboy bilan birga moyalish butalari va yer xususiyatlarini o‘rganib, quduq o‘rnini aniqlaydi. Ular mehnat qilib yangi quduq qazishadi va poyonida suv chiqarib, butun ko‘chni va chorvani halokatdan saqlab qolishadi.\n\nYo‘lda ko‘ch ahli kimsasiz ko‘hna qo‘rg‘onlar yonidan o‘tadi, savdo yo‘lidagi xitoylik sayyoh va savdogar Sunyang hamda uning uyg‘ur tilmochi Qaldan bilan uchrashib gurunglashadi. Qulchi biy uzoqni ko‘radigan, vazmin va dono rahbar sifatida Xiva bekining yasovullari va mahalliy oqsoqollar bilan bosiqlik bilan muzokaralar olib boradi. Oqibatda, xalq saratonning boshlarida o‘zining ko‘zlagan manzili — Chimboy shimolidagi Lar soyining bo‘yiga eson-omon yetib keladi va tinch osmon ostida yangi hayot boshlaydi.",
+  "characters": "Qulchi biy — ko‘ch boshlig‘i, dono, bosiq, uzoqni ko‘ra oladigan va el farovonligini o‘ylaydigan rahbar.\nErejeb (Og‘abiy) — Qulchi biyning o‘g‘li, dovyurak va chaqqon bola.\nBektemir — elning sodiq, dovyurak va tajribali botir navkari.\nQayirboy — Erepboyning o‘n uch yoshli o‘g‘li, ovchilikka qiziqadigan chaqqon bola.\nTog‘abergan sayis — otlarni ardoqlaydigan tajribali sayis.\nTangjarboy — tajribali keksa quduqchi, elni suvsizlikdan qutqargan inson.",
+  "conclusion": "Bu asar kitobxonga el-yurt va Vatan tuyg‘usi har qanday shaxsiy manfaatlardan ustun turishini ko‘rsatadi. Bola kitobdan sabr-toqat, qiyinchiliklarda tushkunlikka tushmaslik, kattalar maslahatiga amal qilish va do‘stlikka vafo qilish kabi ezgu fazilatlarni o‘rganadi. Shuningdek, asar qardosh xalqlarning tarixi va qadriyatlariga hurmat tuyg‘usini shakllantiradi.",
+  "difficulty": "qiyin",
+  "mood": "tarixiy, jiddiy, sinovli",
+  "for_whom": "Tarixiy asarlarni, sarguzashtli safarlarni va el-yurt taqdiri haqidagi qiziqarli kitoblarni sevib o‘qiydigan kitobxonlarga.",
+  "events": [
+   "Qulchi biy boshchiligidagi qoraqalpoq ko‘chi Qizilqum sahrolari bo‘ylab yo‘lga tushadi.",
+   "Och bo‘rining ulishi ko‘ch ahlini va itlarni sergaklantiradi.",
+   "Bektemir miltiq va o‘rma qamchisi bilan ko‘chni bo‘rilardan va xavf-xatardan qo‘riqlaydi.",
+   "Qayirboy iti Bo‘ribosar bilan quyon izlab ovga chiqadi va tuzoq qo‘yadi.",
+   "Qulchi biy odamlar va chorva hordiq chiqarishi uchun ko‘chni ikki kunga to‘xtatadi.",
+   "Tunda bo‘rilar galasi ko‘chga hamla qiladi, odamlar olov yoqib ularni daf etadi.",
+   "Bo‘ribosar va Erepboy yirtqich bo‘ri bilan olishib, uni yengadi.",
+   "Erejeb bilan bir vaqtda dunyoga kelgan zotdor To‘riqqashqa toychoq haqidagi xotiralar yodga olinadi.",
+   "To‘riqqashqa ot poygada g‘olib chiqqach, dushman To‘lasin tomonidan zaharlanadi.",
+   "Tog‘abergan sayis sevimli otining qasosi uchun darvesh va qalandar qiyofasiga kiradi.",
+   "Bektemir ilgari Qoraqumda asirlikda bo‘lgan kunlarini va do‘sti Hakimqulni eslaydi.",
+   "Bektemir sevgilisi Zulxumorni do‘sti Hakimqulga emonat topshirib safarga otlanganini xotirlaydi.",
+   "Amir saroyida josuslar va qushbegi o‘rtasida xavfli siyosiy vaziyatlar yuz beradi.",
+   "Bektemir tutqinlikdan Buyrul otga minib qochishga erishadi.",
+   "Erepboy o‘pqonga tushgan tuya yonida halok bo‘ladi, oti yolg‘iz qaytib keladi.",
+   "Ko‘chda suvsizlik avj olganda keksa quduqchi Tangjarboy va o‘g‘li O‘rinboy quduq qazishga kirishadi.",
+   "Quduq qazish jarayonida Absattor yigitni zaharli ilon chaqib oladi, Tangjarboy uni davolaydi.",
+   "Yangi quduqdan mo‘l suv chiqib, butun ko‘ch va chorva mollari suvsizlikdan qutqariladi.",
+   "Ko‘ch ahli kimsasiz ko‘hna qo‘rg‘onlarni uchratadi va xitoylik savdogar Sunyang hamda uyg‘ur Qaldan bilan muloqot qiladi.",
+   "Ko‘ch Chimboy shimolidagi Lar soyining bo‘yiga yetib kelib, yangi makonga o‘rnashadi."
+  ],
+  "quotes": [
+   "Ota makon, Ota yurt, Chimboy, Davqora degan so‘zlarni eshitgan, biroq u yerning olis-yaqinligini, qaysi tarafda ekanligini, qanday joyligini tasavvur qila olishmaydi.",
+   "Bosh bo‘lmasa, oyoq qayerdan bo‘lar edi...",
+   "Bor bo‘lsa ko‘rolmaymiz, yo‘q bo‘lsa berolmaymiz deganday, o‘zingiz aytgan yer dovi bilan biylikka da’vogarlik barakamizni qochiradi.",
+   "Kafan kiygan kelmas, kebenek kiygandan umid bor...",
+   "Xudo yo‘l bersin, omin!",
+   "Inson qoni zar uchun to‘kilganiga talay marta guvoh bo‘lgan josuslar sardori amirdan ketish uchun ruxsat olib... g‘oyib bo‘ldi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qulchi biy boshlagan ko‘ch qaysi sahro bo‘ylab harakatlandi?",
+   "options": [
+    "A) Qizilqum sahrosi",
+    "B) Qoraqum sahrosi",
+    "C) Moyunqum sahrosi",
+    "D) Betpakdala sahrosi"
+   ],
+   "answer": "A) Qizilqum sahrosi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tong bo‘zarib otayotganda ko‘ch ahlini qaysi hayvonning ulishi uyg‘otdi?",
+   "options": [
+    "A) Bo‘ri ulishi",
+    "B) Chiyabo‘ri ulishi",
+    "C) Ayiq bo‘kirishi",
+    "D) Tulki hushi"
+   ],
+   "answer": "A) Bo‘ri ulishi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qayirboy bilan birga ovga ergashgan itning oti nima edi?",
+   "options": [
+    "A) Bo‘ribosar",
+    "B) Qoplon",
+    "C) Oktop",
+    "D) Tarlon"
+   ],
+   "answer": "A) Bo‘ribosar"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ko‘ch ahli to‘xtaganda odamlar bajargan ishlarning to‘g‘ri ketma-ketligini toping.",
+   "options": [
+    "A) O‘tov tiklash va suv izlash",
+    "B) Poyga uyushtirish va oziq to‘plash",
+    "C) Buxoroga qaytish va qurol tayyorlash",
+    "D) Shahar qurish va yer haydash"
+   ],
+   "answer": "A) O‘tov tiklash va suv izlash"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qulchi biy nega odamlarga ikki kun dam olishni buyurdi?",
+   "options": [
+    "A) Odamlar va ulovlar charchagani uchun",
+    "B) Bayram qilish uchun",
+    "C) Yov bilan urushish uchun",
+    "D) Otlarni sotish uchun"
+   ],
+   "answer": "A) Odamlar va ulovlar charchagani uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tunda bo‘rilar hujumidan ko‘chni asragan asosiy vosita nima edi?",
+   "options": [
+    "A) Yorqin yonib turgan olov",
+    "B) Baland paxsa devor",
+    "C) Chuqur qazilgan xandak",
+    "D) Temir panjaralar"
+   ],
+   "answer": "A) Yorqin yonib turgan olov"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bektemirning suv va yaylov izlab yolg‘iz otlanishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, u tajribali va dovyurak edi",
+    "B) Noto‘g‘ri, u qo‘rqishi kerak edi",
+    "C) Noto‘g‘ri, biy qarshilik qildi",
+    "D) To‘g‘ri, u ko‘chdan qochmoqchi edi"
+   ],
+   "answer": "A) To‘g‘ri, u tajribali va dovyurak edi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif sahro tabiatini va ko‘ch mashaqqatini qanday uslubda tasvirlaydi?",
+   "options": [
+    "A) Jonli va ta’sirchan badiiy bo‘yoqlarda",
+    "B) Kulgili va hazil ohangda",
+    "C) Qisqa jadval va raqamlarda",
+    "D) Rasmiy hujjat tarzida"
+   ],
+   "answer": "A) Jonli va ta’sirchan badiiy bo‘yoqlarda"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bektemir bo‘rilarga qarshi kurashda qanday qurollardan foydalandi?",
+   "options": [
+    "A) Miltiq va o‘rma qamchin",
+    "B) Kamon va qalqon",
+    "C) Bolt va nayza",
+    "D) Qilich va xanjar"
+   ],
+   "answer": "A) Miltiq va o‘rma qamchin"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Cho‘lda bo‘rilarni hurkitish uchun cho‘ponlar qanday harakat qilishdi?",
+   "options": [
+    "A) Baqirib, po‘pisa va shovqin solishdi",
+    "B) Baraban chalib raqsga tushishdi",
+    "C) Qo‘shiq aytib uyquga ketishdi",
+    "D) Suxon urib ot choptirishdi"
+   ],
+   "answer": "A) Baqirib, po‘pisa va shovqin solishdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Erejeb bilan bir paytda tug‘ilgan otning oti nima edi?",
+   "options": [
+    "A) To‘riqqashqa",
+    "B) Jiyronayg‘ir",
+    "C) Boychibor",
+    "D) Qorabayir"
+   ],
+   "answer": "A) To‘riqqashqa"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘riqqashqa otni kim zaharlab nobud qildi?",
+   "options": [
+    "A) To‘lasin",
+    "B) Bektemir",
+    "C) Tangjarboy",
+    "D) Shaqshaq"
+   ],
+   "answer": "A) To‘lasin"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tog‘abergan sayis dushmanidan o‘ch olish uchun qanday qiyofaga kirdi?",
+   "options": [
+    "A) Qalandar va darvesh qiyofasiga",
+    "B) Xiva xonining navkari qiyofasiga",
+    "C) Buxoro savdogari qiyofasiga",
+    "D) Askeriy harbiy qiyofasiga"
+   ],
+   "answer": "A) Qalandar va darvesh qiyofasiga"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bektemir nega Hakimqulga Zulxumorni amanat qilib topshirgan edi?",
+   "options": [
+    "A) Hakimqul eng yaqin jon do‘sti bo‘lgani uchun",
+    "B) Hakimqul Buxoro amiri bo‘lgani uchun",
+    "C) Zulxumor Hakimqulning singlisi bo‘lgani uchun",
+    "D) Bektemir Zulxumorni yoqtirmagani uchun"
+   ],
+   "answer": "A) Hakimqul eng yaqin jon do‘sti bo‘lgani uchun"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Amir huzuriga qilich bilan kirgan qushbegidan amir nega seskandi?",
+   "options": [
+    "A) Shubhali va xavfli tuyulgani uchun",
+    "B) Qushbegi amirni xushlamagani uchun",
+    "C) Qilich oltindan bo‘lgani uchun",
+    "D) Amir soqchilariga ishongani uchun"
+   ],
+   "answer": "A) Shubhali va xavfli tuyulgani uchun"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bektemirning asirlikdan qochib o‘z eliga qaytishi qanday baholanadi?",
+   "options": [
+    "A) Matonat va elga sadoqat",
+    "B) Qo‘rqoqlik va xiyonat",
+    "C) Oson yo‘l izlash",
+    "D) Shaxsiy manfaatlarni o‘ylash"
+   ],
+   "answer": "A) Matonat va elga sadoqat"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qulchi biyning el orasida qon to‘kilishiga yo‘l qo‘ymasligi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, bu el birligini saqlaydi",
+    "B) Noto‘g‘ri, u urushishi kerak edi",
+    "C) Noto‘g‘ri, biylar uni masxaralashdi",
+    "D) To‘g‘ri, u Buxoroga qochmoqchi edi"
+   ],
+   "answer": "A) To‘g‘ri, bu el birligini saqlaydi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Tog‘aberganning otga bo‘lgan mehri va iztirobi qanday ochib berilgan?",
+   "options": [
+    "A) Chuqur ruhiy kechinmalar va sadoqatda",
+    "B) Yuzaki va kulgili voqealarda",
+    "C) Faqat poyga qoidalarida",
+    "D) Sahro o‘simliklari tasvirida"
+   ],
+   "answer": "A) Chuqur ruhiy kechinmalar va sadoqatda"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bektemir tutqindan qochishda qaysi otni tanlab mindi?",
+   "options": [
+    "A) Buyrul otni",
+    "B) To‘riq otni",
+    "C) Qora-ko‘k ayg‘irni",
+    "D) Oq tulporni"
+   ],
+   "answer": "A) Buyrul otni"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hakimqulning Bektemir tutqinga tushgach tutgan yo‘lini tartiblang.",
+   "options": [
+    "A) Avval kutdi, keyin sovchi yubordi",
+    "B) Darrov shahardan qochib ketdi",
+    "C) Bektemirni dushman deb e’lon qildi",
+    "D) Buxoro amiriga shikoyat qildi"
+   ],
+   "answer": "A) Avval kutdi, keyin sovchi yubordi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tangjarboy sahroda suv ko‘zini aniqlashda nimaga e’tibor berardi?",
+   "options": [
+    "A) Giyohlar tomiri va namlikka",
+    "B) Qumning rangi va balandligiga",
+    "C) Shamolning yo‘nalishiga va esishiga",
+    "D) Qushlarning uchish parvoziga"
+   ],
+   "answer": "A) Giyohlar tomiri va namlikka"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Quduq tozalashda Absattor yigitni nima chaqib oldi?",
+   "options": [
+    "A) Zaharli ilon",
+    "B) Chayon",
+    "C) Qoraqurt",
+    "D) Yirtqich bo‘ri"
+   ],
+   "answer": "A) Zaharli ilon"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tangjarboy ilon chaqqan yigitga tezda nima ichirishni buyurdi?",
+   "options": [
+    "A) Oqlik (ayron yoki qatiq)",
+    "B) Sho‘r qaynoq suv",
+    "C) Zamzam suvi",
+    "D) Achchiq qora choy"
+   ],
+   "answer": "A) Oqlik (ayron yoki qatiq)"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ko‘ch yo‘lida uchragan xitoylik savdogarning ismi kim edi?",
+   "options": [
+    "A) Sunyang",
+    "B) Qaldan",
+    "C) Anqaboy",
+    "D) Moylixo‘ja"
+   ],
+   "answer": "A) Sunyang"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tangjarboy ilon zahariga qarshi ketma-ket qanday yordam ko‘rsatdi?",
+   "options": [
+    "A) Barmog‘ini tildi, bo‘g‘di va oqlik berdi",
+    "B) Olovda kuydirdi va suvga bo‘ktdi",
+    "C) Qumga ko‘mdi va ukol qildi",
+    "D) Dori surtdi va uyquga yubordi"
+   ],
+   "answer": "A) Barmog‘ini tildi, bo‘g‘di va oqlik berdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tangjarboy nega quduq devorini saksovul shoxlari bilan cheganladi?",
+   "options": [
+    "A) Qum o‘pirilib tushmasligi uchun",
+    "B) Suvning ta’mi shirin bo‘lishi uchun",
+    "C) Ilonlar quduqqa tushmasligi uchun",
+    "D) Quduq chuqurligi bilinmasligi uchun"
+   ],
+   "answer": "A) Qum o‘pirilib tushmasligi uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qulchi biy nega Xiva bekining yasovuli bilan bosiqlik bilan gaplashdi?",
+   "options": [
+    "A) Elini tinch joylashtirish va xavfdan asrash uchun",
+    "B) Yasovuldan qo‘rqqani uchun",
+    "C) O‘zi Xiva bekiga xizmat qilgani uchun",
+    "D) Buxoroga tezroq qaytmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Elini tinch joylashtirish va xavfdan asrash uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tangjarboy va O‘rinboyning mehnatsevarligiga qanday baho beriladi?",
+   "options": [
+    "A) El umidini oqlagan ulkan qahramonlik",
+    "B) O‘z manfaati uchun qilingan harakat",
+    "C) Keraksiz va behuda sarflangan mehnat",
+    "D) Tasodifiy va ahamiyatsiz yumush"
+   ],
+   "answer": "A) El umidini oqlagan ulkan qahramonlik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif roman nihoyatida ko‘chning manzilga yetishini qanday hissiyot bilan yoritadi?",
+   "options": [
+    "A) Yengillik, shukronalik va umid tuyg‘usi bilan",
+    "B) Qayg‘u va umidsizlik bilan",
+    "C) Qo‘rqinch va vahima bilan",
+    "D) Kulgili va istehzoli ohang bilan"
+   ],
+   "answer": "A) Yengillik, shukronalik va umid tuyg‘usi bilan"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Sunyangning qog‘oz xaritani ko‘rsatib muloqot qilishi asarda qanday tasvirlangan?",
+   "options": [
+    "A) Qadimgi madaniyatlar va yo‘llarning ramzi sifatida",
+    "B) Kulgili va tushunarsiz mashg‘ulot sifatida",
+    "C) Faqat savdo foydasini ko‘zlash sifatida",
+    "D) Dushmanlik va xiyonat belgisi sifatida"
+   ],
+   "answer": "A) Qadimgi madaniyatlar va yo‘llarning ramzi sifatida"
+  }
+ ]
+}

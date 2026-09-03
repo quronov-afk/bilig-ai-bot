@@ -1,0 +1,478 @@
+{
+ "title": "Qorako‘z Majnun",
+ "author": "Said Ahmad",
+ "genre": "hikoyalar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tarix",
+   "insoniylik",
+   "sadoqat",
+   "oila",
+   "sabr",
+   "vatan"
+  ],
+  "theme": "Mustabid tuzum fojialari, inson qadr-qimmati, imon-e'tiqod va qiyinchiliklarda ham insoniylik hamda sadoqatni saqlab qolish g‘oyasi.",
+  "summary": "To‘plamda mustabid tuzum yillaridagi ayanchli fojialar, lager hayoti hamda insoniy qismatlar aks ettirilgan. «Sarob» hikoyasida otasiga sotqinlik qilgan va lagerda ayanchli halok bo‘lgan Kimsanboy hamda uning imonli otasi Olimjon domla taqdiri tasvirlanadi. «Oftob oyim» hikoyasida yapon asiri Dyun va Kamikadze burchidan qochgan Sudzening fojiasi yoritiladi. «Qorako‘z majnun»da esa e'tiqodidan kechib, o‘zga yurtda cherkov qo‘ng‘iroqchisiga aylangan Bo‘rixon va uning sho‘rlik onasi Saodat ayaning iztiroblari ko‘rsatiladi. Shuningdek, yozuvchi o‘zining va turmush o‘rtog‘i Saida Zunnunovaning og‘ir sinovli yillardagi sadoqatli sevgisi, matonati va adabiy hayotini xotirlaydi.",
+  "characters": "Olimjon domla — bilimdon, imon-e'tiqodli, lagerda ham matonat ko‘rsatgan ota. Kimsanboy — Pavlik Morozov g‘oyasiga uchib otasiga xiyonat qilgan o‘g‘il. Said Ahmad — og‘ir lager xotiralarini va insoniylikni tasvirlagan adib. Saida Zunnunova — yozuvchining vafo va matonatli turmush o‘rtog‘i. Jalol polvon — o‘g‘lining nojo‘ya qilmishlaridan ezilgan ota.",
+  "conclusion": "Ushbu asar o‘quvchiga mustabid tuzumning mudhish siyosati, otalar va bolalar o‘rtasidagi axloqiy ziddiyatlar hamda insoniy qadriyatlarning mohiyatini anglatadi. Bola ushbu hikoyalardan halollik, ota-onaga hurmat va har qanday vaziyatda e'tiqodni saqlash lozimligini o‘rganadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tarixiy fojialar, inson taqdiri, sadoqat va oilaviy qadriyatlar haqida o‘ylaydigan o‘smirlarga.",
+  "events": [
+   "Jezqozg‘on lageriga yangi va horgan mahbuslar etapi olib kelinadi.",
+   "Roviy kiyimlarga raqam va lak yozishga kirishadi.",
+   "Kimsanboy ismli sobiq pioner mahbuslar ro‘yxatida chiqadi.",
+   "GPU xodimi Mansurov Kimsanboyni otasiga qarshi ayblovlar yozishga majbur qiladi.",
+   "Olimjon domla o‘z o‘g‘lining lagerdagi ayanchli ahvolini ko‘rib yig‘laydi.",
+   "Kimsanboy vasiyat qilib ko‘kragiga Stalin suratini chizdiradi va vafot etadi.",
+   "Olimjon domla bejanoza ko‘miladigan o‘g‘liga achinish bilan qaraydi.",
+   "«Shahidlar xotirasi» xiyobonida qatag‘on qurbonlari xotirlanadi.",
+   "Yozuvchi lagerda qiynalib, turmush o‘rtog‘i Saidaxonga ajrashish haqida xat yozadi.",
+   "Saida Zunnunova erining taklifini rad etib, sadoqat xatini yo‘llaydi.",
+   "Barakda yong‘in chiqqanda soqchilar eshikni ochishmaydi.",
+   "Mahbuslar lagerda xo‘roz boqib, uydagi tinch hayotni eslaydilar.",
+   "Yapon asiri Dyun kamikadze Sudze va uning onasi Oftob oyim haqida so‘zlaydi.",
+   "Sudze burchini o‘tamagani uchun bo‘yniga g‘ildirak osilib xorlanadi.",
+   "Bo‘rixon o‘zga yurtda dinidan kechib cherkov qo‘ng‘iroqchisiga aylanadi.",
+   "Saodat aya o‘g‘li Bo‘rixonning cho‘qinayotganini ko‘rib iztirobga tushadi.",
+   "Jalol polvon kurashda yosh Ermatni yiqitadi, lekin uning yoshini ko‘rib o‘kinadi.",
+   "Jalol polvon badfe'l o‘g‘li Qo‘chqorning qilmishlaridan eziladi.",
+   "Saida Zunnunova Usmon Yusupovga ariza berib erini oqlashga harakat qiladi.",
+   "Nadira o‘z onasi Saida va otasi Said Ahmadning hayoti haqida so‘zlaydi."
+  ],
+  "quotes": [
+   "Ota qarg‘ishi misoli o‘q – u oxiratda emas, shu dunyoning o‘zida nishonga tegadi.",
+   "Bu vatan qanday vatandir, har go‘shasida turmalar, Qo‘ngani bir yer topolmay osmonda yig‘lar turnalar.",
+   "Siz asir bo‘lgan qafasni tishlarim birlan buzay, Buzmasam mahshar kuni bag‘rimni armon tirnalar.",
+   "Unga janoza lozim emas, ko‘kragida kofirning suvrati bor.",
+   "Odam bolasi yaxshilikni bilmaydi.",
+   "Otangizga la'nat deydigan farzandning yuzini Xudo teskari qilsin!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Roviy yozuvchining Jezqozg‘on lageridagi asosiy vazifasi nima edi?",
+   "options": [
+    "A) Ruda qazish",
+    "B) Kiyimlarga raqam va plakat chizish",
+    "C) Ovqat pishirish",
+    "D) Soqchilik qilish"
+   ],
+   "answer": "B) Kiyimlarga raqam va plakat chizish"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kimsanboy bolaligida qaysi mashhur sovet pioneriga taqlid qilgan?",
+   "options": [
+    "A) Pavlik Morozov",
+    "B) Timur",
+    "C) Valya Kotik",
+    "D) Oleg Koshevoy"
+   ],
+   "answer": "A) Pavlik Morozov"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kimsanboy kimning topshirig‘i bilan otasi ustidan xat yozib turgan?",
+   "options": [
+    "A) Maktab direktori",
+    "B) GPU xodimi Mansurov",
+    "C) Tuman hokimi",
+    "D) Harbiy komissar"
+   ],
+   "answer": "B) GPU xodimi Mansurov"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olimjon domla Buxorolik temirchining qaysi o‘gitini yaxshi bilardi?",
+   "options": [
+    "A) Mehnat insondan ulug‘dir",
+    "B) Ota qarg‘ishi nishonga tegadi",
+    "C) Sabr tagi oltindir",
+    "D) Vaqt eng buyuk hakamdir"
+   ],
+   "answer": "B) Ota qarg‘ishi nishonga tegadi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kimsanboyning bolaligi va lagerdagi yakunini qaysi ketma-ketlik ko‘rsatadi?",
+   "options": [
+    "A) Pioner-qahramon, otasiga xiyonat, lagerda o‘lim",
+    "B) Lagerda tug‘ilish, shifokorlik, oqlanish",
+    "C) Harbiy xizmat, mukofot, surgun",
+    "D) O‘qituvchilik, xiyonat, ozodlik"
+   ],
+   "answer": "A) Pioner-qahramon, otasiga xiyonat, lagerda o‘lim"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Olimjon domla o‘g‘liga janoza o‘qishni rad etdi?",
+   "options": [
+    "A) O‘g‘li xristian diniga kirgani uchun",
+    "B) Ko‘kragida kofirning suvrati bo‘lgani uchun",
+    "C) U lagerda vafot etgani uchun",
+    "D) Otasini tanimagani uchun"
+   ],
+   "answer": "B) Ko‘kragida kofirning suvrati bo‘lgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Mansurov Kimsanboyga otasi haqida bo‘hton va yolg‘on yozdirdi?",
+   "options": [
+    "A) Ziyolini xalq dushmani qilish uchun",
+    "B) Kimsanboyga soat sovg‘a qilish uchun",
+    "C) Maktabni yopish uchun",
+    "D) Moskvaga o‘qishga yuborish uchun"
+   ],
+   "answer": "A) Ziyolini xalq dushmani qilish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kimsanboyning otasini fosh etishi va sotishi qanday baholanadi?",
+   "options": [
+    "A) Haqiqiy vatanparvarlik va jasorat",
+    "B) Sog‘lom raqobat va burch",
+    "C) Mudhish tubbanlik va otaga xiyonat",
+    "D) Kichik yoshdagi beozor xato"
+   ],
+   "answer": "C) Mudhish tubbanlik va otaga xiyonat"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Olimjon domlaning xiyonatkor o‘g‘liga munosabatida qaysi tuyg‘u ustun?",
+   "options": [
+    "A) Kek-alash va g‘azab",
+    "B) Imon ustunligi va alamli iztirob",
+    "C) Befarq loqaydlik",
+    "D) Quvonch va g‘urur"
+   ],
+   "answer": "B) Imon ustunligi va alamli iztirob"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «ayanchli holda bekafan ko‘mildi» iborasi bilan nimani tasvirlaydi?",
+   "options": [
+    "A) Lagerda kafan yetishmasligini",
+    "B) Xiyonatkorning sharmandali va fojiali yakunini",
+    "C) Mahbuslarning sovuqdan o‘lishini",
+    "D) Qabrlar tor ekanligini"
+   ],
+   "answer": "B) Xiyonatkorning sharmandali va fojiali yakunini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yozuvchi Said Ahmad turmush o‘rtog‘i Saidaxonga lagerdan nima yozgan?",
+   "options": [
+    "A) Meni kutib yashang",
+    "B) Erimdan kechdim deb yozib bering",
+    "C) Moskvaga ariza yozing",
+    "D) Bolalarni ehtiyot qiling"
+   ],
+   "answer": "B) Erimdan kechdim deb yozib bering"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yong‘in chiqqan barakda soqchi Demyanov nega eshikni ochmadi?",
+   "options": [
+    "A) Kalitni yo‘qotib qo‘ygani uchun",
+    "B) Maxsus buyruq bo‘lmagani uchun",
+    "C) Yong‘indan qo‘rqqani uchun",
+    "D) Ichkarida hech kim yo‘qligi uchun"
+   ],
+   "answer": "B) Maxsus buyruq bo‘lmagani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yapon asiri Dyun kim haqida hikoya qilib beradi?",
+   "options": [
+    "A) Kamikadze Sudze va onasi haqida",
+    "B) Yaponiyadagi urush faxriylari haqida",
+    "C) Imperator saroyi haqida",
+    "D) Parij oshpazlari haqida"
+   ],
+   "answer": "A) Kamikadze Sudze va onasi haqida"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Qorako‘z majnun» hikoyasida Bo‘rixon qaysi ish bilan shug‘ullanadi?",
+   "options": [
+    "A) Cherkovda qo‘ng‘iroqchi bo‘lib ishlaydi",
+    "B) Buxoroda dehqonchilik qiladi",
+    "C) Toshkentda qurilishda ishlaydi",
+    "D) Lagerda shifokorlik qiladi"
+   ],
+   "answer": "A) Cherkovda qo‘ng‘iroqchi bo‘lib ishlaydi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Saida Zunnunovaning sadoqati va harakati qaysi tartibda berilgan?",
+   "options": [
+    "A) Erining ajrashish xatini rad etish, oqlash",
+    "B) Ajrashish, Toshkentdan ketish, unutish",
+    "C) Turmush qurish, arizani rad etish",
+    "D) Ariza berish, so‘ng erini ayblash"
+   ],
+   "answer": "A) Erining ajrashish xatini rad etish, oqlash"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Saidaxon erining «erimdan kechdim deb yozing» taklifini rad etdi?",
+   "options": [
+    "A) Qo‘rqqani va ilojsizligi uchun",
+    "B) Eriga bo‘lgan sadoqati va sevgisi uchun",
+    "C) Boshqa joyga ketmoqchi bo‘lgani uchun",
+    "D) Ishidan ayrilishni istamagani uchun"
+   ],
+   "answer": "B) Eriga bo‘lgan sadoqati va sevgisi uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Saodat aya o‘g‘li Bo‘rixonni ko‘rgach bir kechada qarib ketdi?",
+   "options": [
+    "A) O‘g‘li dindan va e'tiqoddan qaytgani uchun",
+    "B) O‘g‘li kasal bo‘lib qolgani uchun",
+    "C) Uzoq yo‘ldan charchagani uchun",
+    "D) Qizi uzatilmaga uchun"
+   ],
+   "answer": "A) O‘g‘li dindan va e'tiqoddan qaytgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sudzening Kamikadze burchidan qochishi Yaponiyada qanday baholangan?",
+   "options": [
+    "A) Qahramonlik va jasorat",
+    "B) Oqilona va to‘g‘ri qaror",
+    "C) Or-nomussizlik va millat xiyonati",
+    "D) Oddiy va arzigusiz holat"
+   ],
+   "answer": "C) Or-nomussizlik va millat xiyonati"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Yapon elchisi Kyoko Nakayama hikoyaga qanday baho bergan?",
+   "options": [
+    "A) Urushni targ‘ib qiluvchi asar",
+    "B) Insoniy tuyg‘ular va xotirani yoritgan hikoya",
+    "C) Tarixiy voqealarga to‘g‘ri kelmaydigan matn",
+    "D) Qiyin va tushunarsiz asar"
+   ],
+   "answer": "B) Insoniy tuyg‘ular va xotirani yoritgan hikoya"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Siz asir bo‘lgan qafasni tishlarim birlan buzay» misrasi nimani anglatadi?",
+   "options": [
+    "A) Qafasning temirdan ekanligini",
+    "B) Mahbusning tishi kuchli ekanligini",
+    "C) Yordam berishga bo‘lgan cheksiz intilishni",
+    "D) Qo‘shiqning ohangi buzg‘unchi ekanini"
+   ],
+   "answer": "C) Yordam berishga bo‘lgan cheksiz intilishni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Sumbul» hikoyasida Vahobjon do‘xtir kimni operatsiya qilib saqlab qoladi?",
+   "options": [
+    "A) Qosim akani",
+    "B) Cholni",
+    "C) Gulsumning otasini",
+    "D) Komissarni"
+   ],
+   "answer": "A) Qosim akani"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jalol polvon kurashda yosh Ermatni yiqitgach nega ichida o‘kinadi?",
+   "options": [
+    "A) Beli og‘rib qolgani uchun",
+    "B) Bolaning g‘ururi va shashtini sindirgani uchun",
+    "C) Tomoshabinlar qarsak chalmagani uchun",
+    "D) Mukofot ololmagani uchun"
+   ],
+   "answer": "B) Bolaning g‘ururi va shashtini sindirgani uchun"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jalol polvonning o‘g‘li Qo‘chqor qanday odam edi?",
+   "options": [
+    "A) Saxovatli va elsevar",
+    "B) Odamlarning malini o‘zlashtirgan badfe'l",
+    "C) Oqil va dindor",
+    "D) Mashhur sportchi va polvon"
+   ],
+   "answer": "B) Odamlarning malini o‘zlashtirgan badfe'l"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saida Zunnunova erini oqlash uchun kimning oldiga ariza olib bordi?",
+   "options": [
+    "A) Usmon Yusupovning",
+    "B) Stalining",
+    "C) Beriyaning",
+    "D) Uyg‘unning"
+   ],
+   "answer": "A) Usmon Yusupovning"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jalol polvon hayotidagi iztiroblar qanday ketma-ketlikda yuz beradi?",
+   "options": [
+    "A) Yosh polvonni yengish, o‘g‘lining qilmishlarini eshitish, iztirob",
+    "B) Buxoroga borish, shifokor bo‘lish, o‘g‘lini maqtash",
+    "C) Kurashni tashlash, kolxoz raisi bo‘lish, xursandchilik",
+    "D) Buxoroda davolanish, o‘g‘li bilan faxrlanish"
+   ],
+   "answer": "A) Yosh polvonni yengish, o‘g‘lining qilmishlarini eshitish, iztirob"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Saida Zunnunovaning hayotidagi muhim voqealar tartibi qaysi?",
+   "options": [
+    "A) Erining qamalishi, arizalar yozish, oqlanish va ijod",
+    "B) Toshkentdan ketish, boshqa turmush qurish, oqlash",
+    "C) Moskvada o‘qish, eridan kechish, kitob chiqarish",
+    "D) She'r yozish, majlisda mag‘lub bo‘lish, voz kechish"
+   ],
+   "answer": "A) Erining qamalishi, arizalar yozish, oqlanish va ijod"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Jalol polvon Buxoroda davolanayotganda kasali og‘irlashib ketdi?",
+   "options": [
+    "A) Shifokorlar unga qaramagani uchun",
+    "B) O‘g‘li Qo‘chqorning qarg‘ishli qilmishlarini eshitib ezilgani uchun",
+    "C) Ob-havo yoqmagani uchun",
+    "D) Dori-darmon topilmagani uchun"
+   ],
+   "answer": "B) O‘g‘li Qo‘chqorning qarg‘ishli qilmishlarini eshitib ezilgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Saida Zunnunova erining qo‘lyozmasini pechka dudburonidan qidirib topardi?",
+   "options": [
+    "A) O‘chirish uchun",
+    "B) Birinchi bo‘lib o‘qib, ruhiy dalda berish uchun",
+    "C) Uni yirtib tashlash uchun",
+    "D) Nashriyotga topshirish uchun"
+   ],
+   "answer": "B) Birinchi bo‘lib o‘qib, ruhiy dalda berish uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Said Ahmad va Saida Zunnunova oilasining sinovlardagi sabri nimani isbotlaydi?",
+   "options": [
+    "A) Haqiqiy muhabbat va sadoqat yengilmasligini",
+    "B) Qiyinchilikda bir-birini ayblash lozimligini",
+    "C) Amaldorlarga faqat ariza yozish kerakligini",
+    "D) Ijodiy hayot xavfli ekanligini"
+   ],
+   "answer": "A) Haqiqiy muhabbat va sadoqat yengilmasligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning qizi Nadiraning xotiralarida onasining siymosi qanday gavdalanadi?",
+   "options": [
+    "A) Qattiqqo‘l va talabchan rahbar sifatida",
+    "B) Sabrli, matonatli va sadoqatli ayol sifatida",
+    "C) Faqat uy ishlari bilan band xotin sifatida",
+    "D) Kam gapiradigan va xafa odam sifatida"
+   ],
+   "answer": "B) Sabrli, matonatli va sadoqatli ayol sifatida"
+  }
+ ]
+}

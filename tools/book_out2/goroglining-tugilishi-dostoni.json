@@ -1,0 +1,337 @@
+{
+ "title": "Go‘ro‘g‘lining tug‘ilishi",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14 yosh",
+  "topics": [
+   "jasorat",
+   "vatanparvarlik",
+   "sadoqat",
+   "ilm-fan va odob",
+   "qahramonlik"
+  ],
+  "theme": "Asar adolat, el-yurt ozodligi, ota-ona va farzand burchi hamda do‘stlik va sadoqat kabi oliy qadriyatlarni ulug‘laydi. Kibr va adolatsizlik halokatga olib kelishi, sabr va mardlik esa har qanday qiyinchilikni yengishi ko‘rsatib beriladi.",
+  "summary": "Yovmit elining odil podshosi Odilxon Mari yurtining bosqinchisi Qovishtixonni tor-mor etib, uning yetti yoshli odobli va aqlli o‘g‘li To‘liboyni o‘zi bilan olib keladi. To‘liboy voyaga yetib, otlarning sirini biladigan mohir sinchi bo‘ladi. Odilxon unga qizi Bibi Oyshani nikohlab beradi va ulardan Ravshanbek dunyoga keladi. Zargar shahrining zolim podshosi Shohdorxon vaziri Holmonning maslahatiga kirmay Yovmitga bostirib kiradi. Urushda Odilxon g‘olib chiqadi, biroq Shohdorxonning odami Hamza yosh Ravshanbekni yashirincha olib qochadi, Gajdumbek va uning singlisi Bibi Hilol ham Zargarga o‘lja bo‘lib tushadi. Zargarda ulg‘aygan Ravshanbek va Bibi Hilol bir-birlarini sevib qolishadi. Ravshanbek o‘zini sotdirib, Gajdumbekning xizmatiga kiradi. Shohdorxonning otlarini ko‘zdan kechirgan Ravshanbek podshoning otlarini emas, holvachining xarob otini tulpor deb maqtaydi. Bunga g‘azablangan Shohdorxon Ravshanbekning ko‘zini o‘yib oladi. Ravshanbek va Gajdumbek tulpor otda Yovmitga qochib ketishadi. Bibi Hilol Zargarda qolib, homilador holida vafot etadi va mozoristonga ko‘miladi. Uning go‘rida Mo‘jiza tufayli Go‘ro‘g‘li dunyoga keladi va har kuni mozorga keladigan baytalni emib, daxshatli sherdan Xizr yordamida omon qolib ulg‘ayadi. Rustambek jiyani Go‘ro‘g‘lini mozoristondan topib, o‘z uyiga olib keladi. Ulg‘aygan Go‘ro‘g‘li pahlavon bo‘lib, otasining yurti Yovmitga boradi, bobosi hamda tog‘alari bilan topishadi. Keyinchalik Rayhon arab Yovmitga xujum qilib Ahmadbekning xotini Xoljuvonni olib ketganidan so‘ng, Go‘ro‘g‘li Shirvonga borib, Rayhon arabning qizi Zaydinoyni olib qochadi. G‘irot ot bilan Tajan daryosidan yashinday sakrab o‘tib, dushmanni dog‘da qoldiradi va Zaydinoyni Ahmadbekka nikohlab beradi. Yovmitda katta to‘y-tomosha bo‘lib, el-yurt murod-maqsadiga yetadi.",
+  "characters": "Odilxon — Yovmit elining odil va saxovatli podshosi. To‘liboy sinchi — Maridan keltirilgan, otlarning sirini mukammal biladigan aqlli va odobli yigit. Shohdorxon — Zargar shahrining kibrli va zolim podshosi. Ravshanbek — To‘liboyning o‘g‘li, sinchi va mard pahlavon. Bibi Hilol — Gajdumbekning oqila va vafo-sadoqatli singlisi, Go‘ro‘g‘lining onasi. Gajdumbek — Bibi Hilolning akasi, Ravshanbekning sadoqatli do‘sti. Rustambek — Go‘ro‘g‘lini mozoristondan qutqarib ulg‘aytirgan tog‘asi. Go‘ro‘g‘li — go‘rda tug‘ilib, el-yurt xaloskori bo‘lib yetishgan afsonaviy xalq bahodiri.",
+  "conclusion": "Ushbu doston kitobxon bolalarda mardlik, vatanparvarlik, kattalarga hurmat va do‘stlikka sadoqat kabi fazilatlarni shakllantiradi. Kibr va adolatsizlikning oqibati xorlik ekani, sabr va mehnat kishini yuksaltirishi sodda va ta'sirli misollarda ko‘rsatiladi. Bola dostonni o‘qish orqali xalq og‘zaki ijodining boy tilini, milliy qadriyat va urf-odatlarni chuqur anglaydi.",
+  "difficulty": "o‘rta",
+  "mood": "ko‘tarinki, qahramonona",
+  "for_whom": "Xalq og‘zaki ijodi, botirlar haqidagi afsonalar va qahramonlik dostonlariga qiziqadigan kitobxonlar uchun.",
+  "events": [
+   "1. Odilxon Mari xoni Qovishtixonni mag‘lub etib, uning yetti yoshli o‘g‘li To‘liboyni o‘z xizmatiga oladi.",
+   "2. Odilxon To‘liboyning odob va sinchiligini ko‘rib, qizi Bibi Oyshani unga nikohlab beradi.",
+   "3. To‘liboy va Bibi Oyshadan Ravshanbek dunyoga keladi va u maktabda ta'lim oladi.",
+   "4. Zargar podshosi Shohdorxon vaziri Holmonning maslahatiga kirmay Yovmitga qo‘shin tortadi.",
+   "5. Shohdorxon Asqar tog‘ida o‘qishdan qaytayotgan Ravshanbek va boshqa bolalarni bandi qiladi.",
+   "6. Odilxon va Shohdorxon urushida Odilxon g‘olib keladi, lekin Hamza Ravshanbekni yashirincha olib qochadi.",
+   "7. Gajdumbek va uning singlisi Bibi Hilol Zargarga o‘lja bo‘lib tushadi.",
+   "8. Shohdorxon yomon tush ko‘rib, munajjim ta'biridan so‘ng Ravshanbek va Gajdumbekni ozod qiladi.",
+   "9. Ravshanbek va Bibi Hilol uchrashib, bir-birlariga ko‘ngil qo‘yishadi.",
+   "10. Bibi Hilolning maslahati bilan Ravshanbek o‘zini sotdiradi va uni Gajdumbek sotib oladi.",
+   "11. Shohdorxonning otlarini ko‘rgan Ravshanbek holvachining otini tulpor deb maqtaydi.",
+   "12. Shohdorxon g‘azablanib Ravshanbekning ko‘zini o‘yib oladi.",
+   "13. Ravshanbek va Gajdumbek tulpor otda Zargardan Yovmitga qochib ketishadi.",
+   "14. Bibi Hilol Zargarda vafot etib, mozorga ko‘miladi va go‘rda Go‘ro‘g‘li dunyoga keladi.",
+   "15. Rustambek go‘ristondan jiyani Go‘ro‘g‘lini topib, o‘z uyiga olib keladi va ulg‘aytiradi.",
+   "16. Go‘ro‘g‘li Badkir bilan kurashib g‘olib keladi va oshiqlarini mozorlarga tarqatadi.",
+   "17. Go‘ro‘g‘li otasining yurti Yovmitga borib, bobosi Urayxon va tog‘alari bilan topishadi.",
+   "18. Go‘ro‘g‘li Rayhon arab olib ketgan Xoljuvonning o‘chiga Shirvonga jo‘naydi.",
+   "19. Go‘ro‘g‘li Zaydinoyni olib qochib, G‘irot otda Tajan daryosidan sakrab o‘tadi.",
+   "20. Go‘ro‘g‘li Zaydinoyni Yovmitga olib kelib, Ahmadbekka nikohlaydi va elda katta to‘y bo‘ladi."
+  ],
+  "quotes": [
+   "Bormikan dunyoda bir bag‘ri butun, sinmagay-da uchqur bo‘lgan qanotim.",
+   "Mard kishi dushmanga qiladi qasddi, yaxshi odam qiladikan havasdi.",
+   "Mard yigit dushmandan olar o‘chini, chin suluvlar burab qo‘yar sochini.",
+   "Ota bilan ena o‘lmak merosdir, ko‘ngin bolam xudoning qudratiga.",
+   "G‘azoda bedovning dumi suzilib, azizlardan yurak-bag‘ri ezilib.",
+   "Mard degan maqsadiga yetadi, o‘z yo‘lingni bilib endi yurar yeringdan qolma!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Odilxon podsho Maridan keltirilgan To‘liboyga qanday munosabatda bo‘ldi?",
+   "options": [
+    "A) Uni zindonga tashladi",
+    "B) Gunohsiz bilib, xizmatkor qildi",
+    "C) O‘z yurtiga haydab yubordi",
+    "D) Boshqa elga sotib yubordi"
+   ],
+   "answer": "B) Gunohsiz bilib, xizmatkor qildi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shohdorxon Yovmitga hujum qilishdan oldin kimning maslahatiga quloq solmadi?",
+   "options": [
+    "A) Vaziri Holmonning maslahatiga",
+    "B) Butxonadagi poplar so‘ziga",
+    "C) Boshqa podsholar xatiga",
+    "D) Lashkarboshilarining talabiga"
+   ],
+   "answer": "A) Vaziri Holmonning maslahatiga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Odilxon dushmanga qarshi qo‘shin yig‘ish uchun qanday yo‘l tutdi?",
+   "options": [
+    "A) Qo‘shni yurtlardan yordam so‘radi",
+    "B) Beklariga xat yuborib chaqirdi",
+    "C) Dushman podshosiga elchi yubordi",
+    "D) Butxonaga borib duo qildi"
+   ],
+   "answer": "B) Beklariga xat yuborib chaqirdi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shohdorxon Asqar tog‘ida qo‘lga tushgan bolalarni nega o‘ldirmadi?",
+   "options": [
+    "A) Bolalarning yoshligiga rahmi kelgani uchun",
+    "B) Ularni qul qilib sotmoqchi bo‘lgani",
+    "C) Odilxondan qo‘rqqani uchun",
+    "D) Vaziri Holmon buyurgani uchun"
+   ],
+   "answer": "A) Bolalarning yoshligiga rahmi kelgani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shohdorxon ko‘rgan tushidan so‘ng nega vahimaga tushdi?",
+   "options": [
+    "A) Yurti suv ostida qolishi uchun",
+    "B) Yovmitdan kelganlar saltanatiga ziyon yetkazishidan",
+    "C) Lashkarlari isyon ko‘targani uchun",
+    "D) Taxtini topshirmoqchi bo‘lgani uchun"
+   ],
+   "answer": "B) Yovmitdan kelganlar saltanatiga ziyon yetkazishidan"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Odilxonning aybsiz To‘liboyga qizini berishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Odillik va halollikni qadrlashini",
+    "B) Majburlikdan qilingan qarorni",
+    "C) Dushmandan qo‘rqib qilingan ishni",
+    "D) Boylikka o‘chlikni"
+   ],
+   "answer": "A) Odillik va halollikni qadrlashini"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Shohdorxonning mag‘lubiyatini «manmanligidan bo‘ldi» deyishi nimani bildiradi?",
+   "options": [
+    "A) Kibr odamni halokatga yetaklashini",
+    "B) Urushda omad muhimligini",
+    "C) Lashkarning kamligini",
+    "D) Vazirning aybi borligini"
+   ],
+   "answer": "A) Kibr odamni halokatga yetaklashini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hamza Ravshanbekni sotish uchun qayerga olib bordi?",
+   "options": [
+    "A) Shohdorxonning saroyiga",
+    "B) Qul bozoriga",
+    "C) Asqar tog‘iga",
+    "D) Zargar madrasasiga"
+   ],
+   "answer": "B) Qul bozoriga"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ravshanbek Shohdorxonning otlari orasidan qaysi otni tulpor deb maqtadi?",
+   "options": [
+    "A) Podshoning saksoninchi otini",
+    "B) Holvachining horg‘in otini",
+    "C) Vazirning qora otini",
+    "D) Yasovulboshining baytalini"
+   ],
+   "answer": "B) Holvachining horg‘in otini"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bibi Hilol vafot etgach, tug‘ilgan bolaga kim xalaqit bermoqchi bo‘ldi?",
+   "options": [
+    "A) Bir quturgan bo‘ri",
+    "B) Mozoristondagi bir sher",
+    "C) Zargarlik ayyorlar",
+    "D) Shohdorxonning sarbozlari"
+   ],
+   "answer": "B) Mozoristondagi bir sher"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ravshanbek va Gajdumbek dushman taqibidan qanday qutulib qolishdi?",
+   "options": [
+    "A) Daryoga sakrab suzib o‘tishdi",
+    "B) Otlarini mozor va toshloqqa solib",
+    "C) Shohdorxonga taslim bo‘lib",
+    "D) Tog‘dagi g‘orga yashirinib"
+   ],
+   "answer": "B) Otlarini mozor va toshloqqa solib"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Go‘ro‘g‘li go‘ristonda qanday qilib tirik qoldi?",
+   "options": [
+    "A) Rustambek har kuni ovqat keltirdi",
+    "B) Har kuni mozorga kelgan baytalni emib",
+    "C) Holvachi unga non berib turdi",
+    "D) Saroydan qochgan xizmatkorlar boqdi"
+   ],
+   "answer": "B) Har kuni mozorga kelgan baytalni emib"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shohdorxon Ravshanbekning ko‘zini nega o‘yib oldi?",
+   "options": [
+    "A) Ravshanbek xazinani o‘g‘irlagani uchun",
+    "B) O‘zini dushman deb hisoblagani uchun",
+    "C) Shohdorxonning taxtini tortib olgani uchun",
+    "D) Shohdorxonga yolg‘on gapirgani uchun"
+   ],
+   "answer": "B) O‘zini dushman deb hisoblagani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bibi Hilol Rustambek bilan Yovmitga qochishdan nega bosh tortdi?",
+   "options": [
+    "A) Shohdorxonning saroyida qolmoqchi bo‘lgani uchun",
+    "B) Oqilaligi va el-yurt or-nomusini o‘ylagani uchun",
+    "C) Rustambekka ishonmagani uchun",
+    "D) Zargardan chiqishga qo‘rqgani uchun"
+   ],
+   "answer": "B) Oqilaligi va el-yurt or-nomusini o‘ylagani uchun"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li Badkir bilan kurashib g‘olib bo‘lgach, oshiqlarini nima qildi?",
+   "options": [
+    "A) Tog‘asi Rustambekka berdi",
+    "B) Mozoristondagi go‘rlarga bo‘lib qo‘ydi",
+    "C) Qul bozorida sotib yubordi",
+    "D) Ahmadbekka sovg‘a qildi"
+   ],
+   "answer": "B) Mozoristondagi go‘rlarga bo‘lib qo‘ydi"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li Rayhon arabning qizi Zaydinoy bilan qaysi daryodan sakradi?",
+   "options": [
+    "A) Asqar daryosidan",
+    "B) Tajan daryosidan",
+    "C) Zargar daryosidan",
+    "D) Bolli ko‘lidan"
+   ],
+   "answer": "B) Tajan daryosidan"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li Zaydinoyni Yovmitga olib kelgach, kimga nikohlab berishdi?",
+   "options": [
+    "A) Gajdumbekka",
+    "B) Ahmadbekka",
+    "C) Rustambekka",
+    "D) To‘liboy sinchiga"
+   ],
+   "answer": "B) Ahmadbekka"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Go‘ro‘g‘lining daryodan o‘tgach Rayhon arabni otmasligiga nima sabab bo‘ldi?",
+   "options": [
+    "A) O‘qi tugab qolgani uchun",
+    "B) Zaydinoyning ota haqidagi o‘tinchi uchun",
+    "C) Rayhon arabdan qo‘rqgani uchun",
+    "D) G‘irot charchab qolgani uchun"
+   ],
+   "answer": "B) Zaydinoyning ota haqidagi o‘tinchi uchun"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Go‘ro‘g‘lining Zaydinoyni olib kelib tog‘asiga topshirishini qanday baholaysiz?",
+   "options": [
+    "A) Yurt va oila sha'nini tiklash",
+    "B) Faqat o‘z manfaatini o‘ylash",
+    "C) Dushman bilan kelishuv tuzish",
+    "D) Kattalarga quloq solmaslik"
+   ],
+   "answer": "A) Yurt va oila sha'nini tiklash"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston oxirida Go‘ro‘g‘li va Ahmadbekning diydorlashuvi qanday tuyg‘u beradi?",
+   "options": [
+    "A) Qahramonlik va shodlik tuyg‘usini",
+    "B) Qayg‘u va umidsizlik tuyg‘usini",
+    "C) Qo‘rqinch va sarosimangiz tuyg‘usini",
+    "D) Og‘ir kulfat tuyg‘usini"
+   ],
+   "answer": "A) Qahramonlik va shodlik tuyg‘usini"
+  }
+ ]
+}

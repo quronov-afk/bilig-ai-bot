@@ -1,0 +1,478 @@
+{
+ "title": "Yevgeniya Grande",
+ "author": "Onore de Balzak",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "oila",
+   "boylik",
+   "muhabbat",
+   "xasislik",
+   "vafodorlik",
+   "saxovat"
+  ],
+  "theme": "Asarda mol-dunyoni va oltinni har narsadan ustun qo‘yish insoniy tuyg‘ularni va oilaviy baxtni barbod qilishi, haqiqiy pokiza muhabbat va oliyjanoblik esa har qanday sharoitda ham o‘z qadrini yo‘qotmasligi ko‘rsatiladi.",
+  "summary": "Voqealar Fransiyaning Somyur shahrida bo‘lib o‘tadi. Sobiq bochkasoz, nihoyatda xasis va makkor Grande ota behisob boylikka ega bo‘lsa-da, oilasini juda g‘aribona va ayanchli sharoitda ushlab turadi. Uning mehribon va pokiza qizi Yevgeniyaga shaharning eng obro‘li ikki oilasi — Kryusholar va Grassenlar sovchi qo‘yib, merosga ega chiqish uchun yashirin kurash olib borishadi. Kutilmaganda Parijdan Grande otaning ukasining o‘g‘li — olifta yigit Sharl keladi. Ko‘p o‘tmay, Sharlning otasi Parijda xonavayron bo‘lib, o‘zini otib o‘ldirgani haqida me'shum xabar keladi. Amakivachchasining dardi va nochor ahvoliga achingan Yevgeniyaning qalbida ilk muhabbat uyg‘onadi. U otasidan yashirincha to‘plagan bor tilla tangalarini Sharlga beradi, Sharl esa boylik orttirish uchun Ost-Indiyaga jo‘nab ketadi.\n\nQizining tillalarni Sharlga berganini bilib qolgan Grande ota g‘azabga minib, Yevgeniyani o‘z xonasiga qamab qo‘yadi va faqat nonu suv beradi. Bu shafqatsizlikka chiday olmagan Grande xonim og‘ir kasalga chalinadi va vafot etadi. Xotinining o‘limi va qizining merosidan mahrum bo‘lish xavfidan qo‘rqqan chol Yevgeniya bilan yarashadi. Vaqt o‘tib Grande ota ham vafot etadi va Yevgeniyaga katta boylik qoladi.\n\nYevgeniya yillar davomida Sharlni sadoqat bilan kutadi. Ammo Hindistondan boyib qaytgan Sharl so‘zida turmaydi: u unvon va martaba uchun markiz d'Obrionning qiziga uylanishga qaror qiladi hamda Yevgeniyaga sovuqqina xat yozadi. Yevgeniya amakivachchasining otasidan qolgan barcha qarzlarni to‘lab, uning nomini oqlaydi. So‘ng o‘z erkinligiga tegmaslik sharti bilan sud raisi de Bonfonga uzatiladi. Erining to‘satdan vafot etishidan keyin tul qolgan Yevgeniya o‘zining ulkan boyligini xasislik bilan emas, balki g‘aribxonalar, maktablar va cherkovlarga xayriya qilish bilan oliyjanoblikda sarflaydi.",
+  "characters": "Janob Grande (Grande ota) — Somyur shahrining nihoyatda badavlat va boylik to‘plashni hayot ma'nosi deb biladigan xasis vinochisi; Yevgeniya Grande — Grande otaning sodda, samimiy, saxiylik va sadoqat egasi bo‘lgan oliyjanob qizi; Sharl Grande — Parijdan kelgan xudbin va shuhratparast amakivachcha; Grande xonim — Yevgeniyaning ayanchli va xoksor onasi; Naneta — Grande oilasining sodiq va mehnatsevar keksa xizmatkori; Janob de Bonfon (Kryusho) — Yevgeniyaga uylanib, uning boyligiga ega bo‘lishni ko‘zlagan sud raisi.",
+  "conclusion": "Asar kitobxonga boylik va pul hayotdagi eng muhim narsa emasligini, uning ketidan quvish insonni ma'naviy tubanlikka yetaklashini ko‘rsatadi. Yevgeniya obrazi orqali sadoqat, oliyhimmatlik va saxovat kabi yuksak insoniy fazilatlar ulug‘lanadi. Kitobxon insoniy qadr-qimmat va sof tuyg‘ular har qanday oltindan ustun turishini tushunib yetadi.",
+  "difficulty": "qiyin",
+  "mood": "g‘amgin, o‘ylantiruvchi",
+  "for_whom": "Klassik adabiyotga, inson ruhiyati va jamiyat muammolariga qiziqadigan, qahramonlar taqdiridan saboq olmoqchi bo‘lgan o‘smirlar uchun.",
+  "events": [
+   "Somyur shahridagi Grande otaning eski uy va uning xasislikka to‘la turmush tarzi tasvirlanadi.",
+   "Grande otaning retsiprok tijorat hiylalari va ulkan boylik to‘plagani haqida so‘z yuritiladi.",
+   "Somyurda Kryusho va Grassen oilalari Yevgeniyaning boyligiga ega bo‘lish uchun kurashadilar.",
+   "Yevgeniyaning tug‘ilgan kunida Grande ota qiziga navbatdagi tilla tangasini sovg‘a qiladi.",
+   "Parijdan amakivachcha Sharl Grande kelib, xonadonga mehmon bo‘ladi.",
+   "Sharlning otasi xonavayron bo‘lib, o‘zini otib o‘ldirgani haqida shum xabar keladi.",
+   "Yevgeniya amakivachchasi Sharlga achinib, unga ko‘ngil qo‘ya boshlaydi.",
+   "Sharlning chet elga ketishi uchun Yevgeniya o‘zining bor tilla tangalarini unga sovg‘a qiladi.",
+   "Sharl va Yevgeniya bir-birlariga sadoqat saqlashga va'da berib xayrlashadilar.",
+   "Grande ota qizining tillalarni berib yuborganini bilib, uni xonasiga qamab qo‘yadi.",
+   "Qizining qamali va erining shafqatsizligidan iztirobdagi Grande xonim og‘ir kasalga chalinadi.",
+   "Otasining qahriga qaramay, Yevgeniya onasiga va o‘z sevgisiga sadoqatli qoladi.",
+   "Xotinining ahvoli og‘irlashgani va meros masalasi sababli Grande ota qizi bilan yarashadi.",
+   "Grande xonim vafot etadi, Yevgeniya chuqur g‘am-g‘ussaga botadi.",
+   "Grande ota vafot etadi va Yevgeniyaga o‘n yetti million franklik ulkan meros qoladi.",
+   "Sharl Ost-Indiyada nohalol yollar bilan kattakon boylik orttirib Parijga qaytadi.",
+   "Sharl unvon olish ilinjida Yevgeniyani unutib, markiz d'Obrionning qiziga uylanishini e'lon qiladi.",
+   "Yevgeniya Sharl otasining qarzlaridan qutulishi uchun barcha pullarni to‘lab, uning nomini oqlaydi.",
+   "Yevgeniya erkinligiga tegmaslik sharti bilan sud raisi de Bonfonga uzatilishga rozi bo‘ladi.",
+   "Eri vafot etgach tul qolgan Yevgeniya o‘z boyligini butunlay xayriya ishlariga sarflaydi."
+  ],
+  "quotes": [
+   "Motam libosda emas, kishining dilida bo‘ladi.",
+   "Oltin to‘plash uchun yaratilgan qo‘llar mana bunaqa bo‘ladi!",
+   "Ikkimizning ilk sevgimizni qurbon etgan o‘sha jamoatchilik muhitida baxtingiz ochilsin.",
+   "Ochlik bo‘rini ham o‘rmondan chiqishga majbur etadi.",
+   "Faqat sen yaxshi ko‘rasan meni...",
+   "Uning yuzi sutdek oppoq, toza va osoyishta edi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Grande ota 1789-yilda qaysi kasb egasi edi?",
+   "options": [
+    "A) Bochkasoz usta edi",
+    "B) Bankir edi",
+    "C) Sud raisi edi",
+    "D) O‘qituvchi edi"
+   ],
+   "answer": "A) Bochkasoz usta edi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Grande otaning yagona qizining ismi nima edi?",
+   "options": [
+    "A) Yevgeniya",
+    "B) Matilda",
+    "C) Florina",
+    "D) Anna"
+   ],
+   "answer": "A) Yevgeniya"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Somyurda kimlar Yevgeniyaga xaridor bo‘lib kurashardi?",
+   "options": [
+    "A) Kryusholar va Grassenlar",
+    "B) D'Obrionlar va Bonfonlar",
+    "C) Parijlik savdogarlar",
+    "D) Shahar hokimlari"
+   ],
+   "answer": "A) Kryusholar va Grassenlar"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Grande ota qizining tug‘ilgan kunida unga nima sovg‘a qilardi?",
+   "options": [
+    "A) Noyob tilla tanga",
+    "B) Qimmatbaho ko‘ylak",
+    "C) Gullar dastalari",
+    "D) Yangi kitob"
+   ],
+   "answer": "A) Noyob tilla tanga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Grande oilasining daromad va xarajatlarini kim boshqarardi?",
+   "options": [
+    "A) Grande otaning o‘zi",
+    "B) Grande xonim",
+    "C) Yevgeniya",
+    "D) Notarius Kryusho"
+   ],
+   "answer": "A) Grande otaning o‘zi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Grande ota nega o‘z fikrini ochiq aytmasdi?",
+   "options": [
+    "A) Savdoda ustunlikni saqlash uchun",
+    "B) Gapirishni bilmagani uchun",
+    "C) Odamlardan qo‘rqqani uchun",
+    "D) Vaqti bo‘lmagani uchun"
+   ],
+   "answer": "A) Savdoda ustunlikni saqlash uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kryusholar va Grassenlar nega Grandenikiga ko‘p kelishardi?",
+   "options": [
+    "A) Grandening boyligi va qizi uchun",
+    "B) Shaxmat o‘ynash uchun",
+    "C) Ovqatlanish uchun",
+    "D) Somyur xabarini eshitish uchun"
+   ],
+   "answer": "A) Grandening boyligi va qizi uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Yevgeniya tug‘ilgan kunida uyidagilarga qanday muomala qildi?",
+   "options": [
+    "A) Kamtar va mehribon bo‘ldi",
+    "B) Manmanlik qildi",
+    "C) Xafasalat bo‘lib o‘tirdi",
+    "D) Hammani uydan quvdi"
+   ],
+   "answer": "A) Kamtar va mehribon bo‘ldi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Balzak Somyur shahridagi uylarni qanday tasvirlaydi?",
+   "options": [
+    "A) Sukunatli va g‘amgin",
+    "B) Ochiq va quvnoq",
+    "C) Zamonaviy va hashamdor",
+    "D) Shovqinli va gavjum"
+   ],
+   "answer": "A) Sukunatli va g‘amgin"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Grande otaning ko‘zlarini nimaga o‘xshatadi?",
+   "options": [
+    "A) Boyqushnikiga o‘xshash sovuq ko‘zlar",
+    "B) Burgutnikiga o‘xshash o‘tkir ko‘zlar",
+    "C) Musichanikiga o‘xshash yuvosh ko‘zlar",
+    "D) Arslonnikiga o‘xshash haybatli ko‘zlar"
+   ],
+   "answer": "A) Boyqushnikiga o‘xshash sovuq ko‘zlar"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Parijdan kelgan mehmon Sharl Grandega kim edi?",
+   "options": [
+    "A) Amakivachchasi edi",
+    "B) Xolavachchasi edi",
+    "C) Qo‘shnisi edi",
+    "D) Do‘sti edi"
+   ],
+   "answer": "A) Amakivachchasi edi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sharlning otasi Parijda nima sababdan vafot etdi?",
+   "options": [
+    "A) Xonavayron bo‘lib, o‘zini o‘ldirdi",
+    "B) Kasallikdan vafot etdi",
+    "C) Urushda halok bo‘ldi",
+    "D) Kema halokatiga uchradi"
+   ],
+   "answer": "A) Xonavayron bo‘lib, o‘zini o‘ldirdi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yevgeniya amakivachchasi Sharlga nimani sovg‘a qildi?",
+   "options": [
+    "A) Jamg‘argan tilla pullarini",
+    "B) Onasining uzugini",
+    "C) Otasining soatini",
+    "D) Qimmatbaho kitobni"
+   ],
+   "answer": "A) Jamg‘argan tilla pullarini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Grande ota Yevgeniyani nega xonasiga qamab qo‘ydi?",
+   "options": [
+    "A) Tillalarni Sharlga bergani uchun",
+    "B) Cherkovga bormagani uchun",
+    "C) Ovqat tayyorlamagani uchun",
+    "D) Mehmonga chiqmagani uchun"
+   ],
+   "answer": "A) Tillalarni Sharlga bergani uchun"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sharl Parijdan kelganidan keyin voqealar qanday tartibda bo‘ldi?",
+   "options": [
+    "A) Qayg‘uli xabar, yordam, hijron",
+    "B) To‘y, safar, xonavayronlik",
+    "C) Urush, yarashish, safar",
+    "D) Safar, to‘y, xonavayronlik"
+   ],
+   "answer": "A) Qayg‘uli xabar, yordam, hijron"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Grande xonimning sog‘lig‘i nega birdan yomonlashdi?",
+   "options": [
+    "A) Qiziga qilingan zulm sababli",
+    "B) Shamollab qolgani uchun",
+    "C) Og‘ir mehnat qilgani uchun",
+    "D) Parijga borgani uchun"
+   ],
+   "answer": "A) Qiziga qilingan zulm sababli"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yevgeniya nega otasining dakkilariga chidadi?",
+   "options": [
+    "A) Sharlga bo‘lgan sevgisi uchun",
+    "B) Otasidan qo‘rqqani uchun",
+    "C) Pulni yaxshi ko‘rgani uchun",
+    "D) Uyda qolishni istagani uchun"
+   ],
+   "answer": "A) Sharlga bo‘lgan sevgisi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Grande ota nega oxiri Yevgeniya bilan yarashdi?",
+   "options": [
+    "A) Xotini o‘lar holatga kelgani uchun",
+    "B) Qizi pulni qaytargani uchun",
+    "C) Sharl qaytib kelgani uchun",
+    "D) Notarius so‘ragani uchun"
+   ],
+   "answer": "A) Xotini o‘lar holatga kelgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Yevgeniyaning Sharlga yordam berishi haqida nima deyish mumkin?",
+   "options": [
+    "A) Oliyjanob va samimiy harakat",
+    "B) O‘ylamay qilingan xato",
+    "C) Otasiga qarshi fitna",
+    "D) Manfaatli kelishuv"
+   ],
+   "answer": "A) Oliyjanob va samimiy harakat"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Grande otaning oltin to‘plashini qanday tasvirlaydi?",
+   "options": [
+    "A) Ehtiros va huzur-halovat deb",
+    "B) Zerikarli va og‘ir yumush deb",
+    "C) Vatanparvarlik va burch deb",
+    "D) Majburiy va alamli ish deb"
+   ],
+   "answer": "A) Ehtiros va huzur-halovat deb"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Grande otadan qiziga qancha meros qoldi?",
+   "options": [
+    "A) O‘n yetti million frank",
+    "B) Bir million frank",
+    "C) Yuz ming frank",
+    "D) Besh million frank"
+   ],
+   "answer": "A) O‘n yetti million frank"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sharl chet eldan qaytgach, kimga uylanmoqchi bo‘ldi?",
+   "options": [
+    "A) Mademuazel d'Obrionga",
+    "B) Yevgeniyaga",
+    "C) Nanetaga",
+    "D) De Grassen xonimga"
+   ],
+   "answer": "A) Mademuazel d'Obrionga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yevgeniya Sharlning otasining qarzlari uchun nima qildi?",
+   "options": [
+    "A) Barcha qarzlarni to‘liq to‘ladi",
+    "B) Qarzni to‘lashdan tonmadi",
+    "C) Kreditorlarni mahkamaga berdi",
+    "D) Otasiga aytdi"
+   ],
+   "answer": "A) Barcha qarzlarni to‘liq to‘ladi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yevgeniya janob de Bonfonga qanday shart bilan tegdi?",
+   "options": [
+    "A) Erkinligiga tegmaslik sharti bilan",
+    "B) Parijga ko‘chib o‘tish sharti bilan",
+    "C) Barcha pulni topshirish sharti bilan",
+    "D) Cherkovni tashlash sharti bilan"
+   ],
+   "answer": "A) Erkinligiga tegmaslik sharti bilan"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Yevgeniyaning hayotiy yo‘lidagi asosiy bosqichlar qaysilar?",
+   "options": [
+    "A) Soddalik, sevgi, yo‘qotish, saxovat",
+    "B) Boylik, manmanlik, urush, g‘alaba",
+    "C) Safar, shohlik, baxt, boylik",
+    "D) Qochish, mehnat, shatranj, boylik"
+   ],
+   "answer": "A) Soddalik, sevgi, yo‘qotish, saxovat"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sharl nega Yevgeniyaga bergan va'dasini unutdi?",
+   "options": [
+    "A) Boylik va martaba ketidan quvgani uchun",
+    "B) Xatni olmagani uchun",
+    "C) Yevgeniyani kambag‘al deb o‘ylagani uchun",
+    "D) Otasi majburlagani uchun"
+   ],
+   "answer": "A) Boylik va martaba ketidan quvgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yevgeniya nega o‘z boyligini xayriya ishlariga sarfladi?",
+   "options": [
+    "A) Qalbida mehr va saxiylik bo‘lgani uchun",
+    "B) Mashhur bo‘lish uchun",
+    "C) Erining buyrug‘i bo‘lgani uchun",
+    "D) Soliq to‘lamaslik uchun"
+   ],
+   "answer": "A) Qalbida mehr va saxiylik bo‘lgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Yevgeniyaning Sharlning qarzdorlik nomini oqlashi uning qaysi sifatini ko‘rsatadi?",
+   "options": [
+    "A) Yuksak axloq va oliyhimmatlikni",
+    "B) Sodda va lavhalikni",
+    "C) Manmanlik va g‘urlikni",
+    "D) Hisob-kitobli tadbirkorlikni"
+   ],
+   "answer": "A) Yuksak axloq va oliyhimmatlikni"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sharlning xatti-harakatini qanday baholash mumkin?",
+   "options": [
+    "A) Vafosizlik va manfaatparastlik",
+    "B) To‘g‘rilik va mardlik",
+    "C) Sabr va qanoat",
+    "D) Donolik va bilimdonlik"
+   ],
+   "answer": "A) Vafosizlik va manfaatparastlik"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida Yevgeniya obrazi kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Ehtirom va achiniq tuyg‘usi",
+    "B) Nafrat va g‘azab",
+    "C) Kulgili va yengil tuyg‘u",
+    "D) Qo‘rquv va hayrat"
+   ],
+   "answer": "A) Ehtirom va achiniq tuyg‘usi"
+  }
+ ]
+}

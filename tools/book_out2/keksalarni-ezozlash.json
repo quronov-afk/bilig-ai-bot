@@ -1,0 +1,79 @@
+{
+ "title": "Keksalarni e'zozlash",
+ "author": "Shayx Muhammad Sodiq Muhammad Yusuf",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "odob",
+   "oila",
+   "keksalar",
+   "hurmat",
+   "islomiy tarbiya",
+   "g‘amxo‘rlik"
+  ],
+  "theme": "Kitob keksalarni e'zozlash, ularga izzat-ikrom ko‘rsatish va ota-onaga yaxshilik qilishning ma'naviy-axloqiy hamda ijtimoiy ahamiyatini yoritishga qaratilgan.",
+  "summary": "Kitob \"So‘zboshi\" qismi bilan boshlanib, unda keksalar va o‘zidan kattalarni ehtirom qilish har bir jamiyatning eng ahamiyatli qadriyatlaridan biri ekani ta'kidlanadi. So‘ngra inson zotining aziz va mukarram qilib yaratilgani, unga aql va ilm berilgani hamda yer yuzida xalifa qilingani haqida so‘z yuritiladi. Inson umrining turli bosqichlari — go‘daklik, yoshlik va qarilik davrlari bayon etilib, qarilik ojizlik va zaiflik bosqichi ekani tushuntiriladi. Matnda keksayish alomatlari, suyaklarning mo‘rtlashishi hamda sochlarga oq tushishi kabi holatlar muqaddas manbalar misolida ko‘rib chiqiladi. Ezgulik yo‘lida uzoq umr ko‘rib keksayish va amallarni go‘zal qilish eng yaxshi fazilat ekani bayon etiladi. Islom dinida qarilar uchun yengilliklar berilgani, jumladan, Qur'onni o‘qish va ibodatlarni bajarishda keksa kishilarning imkoniyatlari e'tiborga olingani ko‘rsatiladi. Ota-onaga yaxshilik qilish, ularga \"uff\" demaslik, jerkimaslik va ko‘nglini olish farzandlik burchi ekani uqdiriladi. Farzand ota-onasiga shukronalik bildirishi, ularga tavoze ko‘rsatishi va nafaqalari bilan ta'minlashi lozimligi aytiladi. Ota-ona vafot etganidan keyin ham ularning do‘stlari, amakilar va emizgan onalar kabi yaqinlariga silai rahm qilish hamda ularni e'zozlash zarurligi uqdiriladi. Shuningdek, nafaqat musulmon keksalar, balki jamiyatdagi g‘ayrimusulmon keksalarga ham adolat va yaxshilik qilish dinimiz talabi ekani Hazrati Umar hayotidan keltirilgan misol orqali yoritiladi. Kichiklar kattalardan oldin gapirmasligi, taomga birinchi bo‘lib qo‘l uzatmasligi va yo‘lda ehtirom ko‘rsatishi kabi umumiy odob-axloq qoidalari keltiriladi. Mutaxassislar tomonidan keksa otaxon va onaxonlar bilan muomalada bo‘lishning 24 ta amaliy tavsiyasi berib o‘tiladi. Kitob yakunida keksalarni e'zozlash va ularning duolarini olish butun jamiyatga xayr-baraka keltirishi ta'kidlanadi.",
+  "characters": "Zakariyo alayhissalom, Yahyo alayhissalom, Hazrati Umar roziyallohu anhu, Rasululloh sollallohu alayhi vasallam, Jabroil alayhissalom",
+  "conclusion": "Ushbu kitobni o‘qish orqali o‘quvchi keksalar va ota-onalarga hurmat ko‘rsatishning jamiyatdagi hamda shaxsiy hayotdagi o‘rnini anglaydi. Kattalarning tajribasini qadrlash, ularga g‘amxo‘rlik qilish va shirin so‘zli bo‘lish odoblarini o‘rganadi. Kitob o‘smirda mas'uliyat, sabr, shukronalik va odamiylik fazilatlarini shakllantirishga xizmat qiladi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, nasihatomuz",
+  "for_whom": "Keksalarga hurmat ko‘rsatish, odob-axloq va oilaviy qadriyatlarni o‘rganishni istagan o‘smirlar hamda kitobxonlar uchun.",
+  "events": [
+   "Kitob so‘zboshida keksalarni e'zozlash har bir jamiyat uchun muhim qadriyat ekani bayon etiladi.",
+   "Inson zotining azizu mukarram qilib yaratilgani va yer yuzida xalifa qilingani haqida so‘z yuritiladi.",
+   "Insonning homilalikdan to qarilikgacha bo‘lgan umr bosqichlari tahlil qilinadi.",
+   "Qarilik chog‘ida insonga ojizlik yetishi va suyaklar mo‘rtlashishi Qur'on oyatlari asosida tushuntiriladi.",
+   "Ezgulik va go‘zal amallar bilan uzoq umr ko‘rib keksayish buyuk saodat ekani ko‘rsatib beriladi.",
+   "Keksa kishilar uchun ibodatlarda, jumladan Qur'on qiroatida yengilliklar yaratilgani bayon qilinadi.",
+   "Ota-onaga yaxshilik qilish va ularga \"uff\" demaslik farzandlarning asosiy burchi ekani ta'kidlanadi.",
+   "Farzandlar ota-onaning inoyatlariga shukr qilishi va ularga tavoze ko‘rsatishi lozimligi uqdiriladi.",
+   "Ota-onaning nafaqasi va ularga moddiy hamda ma'naviy yordam berish tartiblari tushuntiriladi.",
+   "Ota-ona dunyodan o‘tgach, ularning do‘stlariga va amakilarga silai rahm qilish zarurligi ko‘rsatiladi.",
+   "Kishini emizgan onaning haqqi ham tuqqan onanikidek ulug‘ ekani bayon etiladi.",
+   "Jamiyatda g‘ayrimusulmon keksalarga ham yaxshilik va adolat qilish zarurligi ta'kidlanadi.",
+   "Salom berish, taomga qo‘l uzatish va so‘zlashishda kichiklar kattalarni e'zozlashi lozimligi uqdiriladi.",
+   "Mutaxassislar tomonidan keksalar bilan munosabatda bo‘lish bo‘yicha amaliy tavsiyalar beriladi.",
+   "Kitob xulosasida keksalarni e'zozlash jamiyatga ravnaq va baraka keltirishi bayon etiladi."
+  ],
+  "quotes": [
+   "Keksalarni va o‘zidan kattalarni ehtirom qilish o‘z qadr-qiymatini bilgan har bir jamiyatning eng ahamiyatli qadriyatlaridir bir hisoblanadi.",
+   "Eng yaxshi keksayish yaxshilik bilan yashab, yaxshilik qilib yurib keksayishdir.",
+   "Har bir inson uchun unga Alloh taolo bergan ne'matlarga shukr qilish eng muhim ishdir.",
+   "Ota-onaga doimo muloyimlik bilan munosabatda bo‘lish, shirin so‘zlarni aytish farzand uchun vojibdir.",
+   "Kichik kattaga, piyoda o‘tirganga va ozchilik ko‘pchilikka salom beradi."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Keksalarni va o‘zidan kattalarni ehtirom qilish o‘z qadr-qiymatini bilgan har bir jamiyatning eng ahamiyatli qadriyatlaridir bir hisoblanadi. Bu qadriyatlar ularga amal qilgan jamiyatlarda o‘ziga munosib oliymaqom joy oladi. Mazkur jamiyatlarda har bir inson keksalarni e'zozlash bo‘yicha o‘zining mas'uliyatini yaxshi biladi va bajaradi.",
+   "question": "Seningcha, kattalar va keksalarga hurmat ko‘rsatish nima uchun har bir jamiyat uchun muhim? O‘z kunlik hayotingda keksaga ehtirom ko‘rsatganingda qanday tuyg‘uni his qilgansan?"
+  },
+  {
+   "part": 1,
+   "context": "Farishtalar bu yerda yuksak odob namunasiini ko‘rsatdilar. Bilmagan narsalarini “Bilmaymiz”, deb aytdilar. Bilmagan narsasini tan olib, vaqtida “Bilmayman”, deyish ham katta odob, ham katta ilm hisoblanadi.",
+   "question": "Biror narsani bilmasligingni vaqtida tan olish va \"bilmayman\" deyish insonga qanday foyda keltiradi deb o‘ylaysan? O‘zing bilmagan narsangni ochiq aytganingda qanday tajriba orttirgansan?"
+  },
+  {
+   "part": 2,
+   "context": "Farzand ota-onasiga biror og‘iz yoqimsiz so‘z aytmasligi, ota-onasinig yuragiga ozor yetkazmaslik uchun ularning oldida o‘zining g‘ami borligini bildiruvchi “uff” degan ovozni ham chiqarmasligi lozim. Ota-onaga nisbatan qo‘pol harakat qilish, ularning yuzlariga tik qarash shariatimizda qoralangan. Ota-onaga doimo muloyimlik bilan munosabatda bo‘lish, shirin so‘zlarni aytish farzand uchun vojibdir.",
+   "question": "Yaqinlaring va ota-onang bilan suhbatlashganda sabrli hamda shirin so‘zli bo‘lish senga qanday yordam beradi? Murakkab vaziyatlarda o‘z hissiyotlaringni jilovlash uchun nimalar qilasan?"
+  },
+  {
+   "part": 2,
+   "context": "Birov bir odamni so‘kadi, so‘kish eshitgan odam “Otangga falon”, “Onangga falon”, deb uning ota-onasini so‘kadi. Demak, boshqa odamning o‘z ota-onasini so‘kishiga sababchi bo‘lgan kimsa o‘z ota-onasini so‘kkan bo‘lar ekan. Bu ish esa gunohi kabiralardan sanaladi.",
+   "question": "O‘z harakatlaring va so‘zlaring boshqalarning munosabatiga sabab bo‘lishi haqida nima deya olasan? O‘z xulqing uchun mas'uliyatni his qilish kundalik muloqotingda qanchalik ahamiyatli?"
+  },
+  {
+   "part": 3,
+   "context": "Keksalardan o‘tmishlari, esdaliklari va yutuqlari haqida so‘zlab berishni so‘rash va so‘zlarini bo‘lmasdan, diqqat bilan tinglash. O‘tmishda bo‘lib o‘tgan voqealar doimo ularning ko‘z o‘ngidan o‘tib turadi. Shu bilan birga, qariyalar mazkur xotiralarni boshqalarga so‘zlab berishni yaxshi ko‘radilar.",
+   "question": "Oilangdagi bobong, momong yoki keksa tanishlaringning hayotiy xotiralarini eshitganingda ulardan qanday foydali saboqlar olgansan? Ularning tajribasi sening qaror qabul qilishingda qanday yordam bergan?"
+  }
+ ]
+}

@@ -1,0 +1,477 @@
+{
+ "title": "Samaradorlikning yigirma bir yo‘li",
+ "author": "Brayan Treysi",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "vaqtni boshqarish",
+   "samaradorlik",
+   "shaxsiy rivojlanish",
+   "maqsad qo‘yish",
+   "intizom"
+  ],
+  "theme": "Inson o‘z hayotida eng muhim va og‘ir vazifalarni birinchi o‘ringa qo‘yish, ularni kechiktirmasdan va chalg‘imasdan oxiriga yetkazish orqali yuksak muvaffaqiyat va baxtga erisha oladi.",
+  "summary": "Muallif Brayan Treysi o‘zining hayotiy tajribasi, savdo-sotiq va boshqaruv sohasidagi ko‘p yillik izlanishlari asosida shaxsiy samaradorlikni oshirish va vaqtni to‘g‘ri taqsimlashning 21 ta amaliy usulini taqdim etadi. Kitobdagi markaziy ramz — «qurbaqani yeyish» bo‘lib, u kun davomidagi eng og‘ir, eng muhim va ortga surilish ehtimoli yuqori bo‘lgan vazifani bildiradi.\n\nMuallif muvaffaqiyatga erishish uchun eng avvalo maqsadlarni aniq belgilash, ularni qog‘ozga tushirish hamda yetti bosqichli formula asosida harakat qilish zarurligini uqtiradi. 80/20 (Pareto) qoidasi va ABCDE metodidan foydalanib, muhim ishlarni ikkinchi darajali yumushlardan ajratish o‘rgatiladi. Har bir kun, hafta va oyni oldindan rejalashtirish, vaqtni behuda sovuradigan foydasiz ishlarga qat'iyat bilan «yo‘q» deyish tajribasi ko‘rsatib beriladi.\n\nShuningdek, asarda insonning ruhiy va jismoniy energiyasini saqlash, ovqatlanish va dam olish tartibiga rioya qilish, zamonaviy texnologiyalar tuzog‘iga tushib qolmaslik bo‘yicha muhim maslahatlar beriladi. Ishni qismlarga bo‘lib bajarish («dudlangan kolbasa» va «shvetsarcha pishloq» usullari) hamda har bir topshiriqqa chalg‘imay e'bor qaratish orqali yuqori natijadorlikka erishish mumkinligi ta'kidlanadi. Asar yakunida barcha 21 usul muxtasar umumlashtirilib, kitobxonga hoziroq harakatga kirishish tavsiya etiladi.",
+  "characters": "Brayan Treysi — kitob muallifi, shaxsiy rivojlanish va vaqtni boshqarish bo‘yicha tajribali mutaxassis va murabbiy.",
+  "conclusion": "Ushbu kitob kitobxonda vaqtni qadrlash, maqsadlarni aniq rejalashtirish hamda o‘z hayoti uchun mas'uliyatni zimmaga olish ko‘nikmalarini shakllantiradi. Bola o‘z vaqtini unumli tashkil etishni va eng muhim ishlarni kechiktirmasdan bajarishni o‘rganadi. Natijada u o‘qishda va kundalik hayotda intizomli hamda muvaffaqiyatli insonga aylanadi.",
+  "difficulty": "o‘rta",
+  "mood": "ilhomlantiruvchi, da'vatkor",
+  "for_whom": "O‘z vaqtini unumli taqsimlashni, o‘qish va ishda yuqori natijalarga erishishni xohlaydigan yoshlarga va o‘quvchilarga.",
+  "events": [
+   "Brayan Treysi yoshlikda uchragan qiyinchiliklari va dunyo bo‘ylab qilgan sayohati haqida so‘zlaydi.",
+   "Muallif savdo sohasidagi muvaffaqiyatli kishilardan ularning sirlarini so‘rab o‘rganadi.",
+   "Hayotda muvaffaqiyatga erishish uchun eng muhim vazifaga e'tibor qaratish lozimligi ta'kidlanadi.",
+   "«Qurbaqani yeyish» qoidasi — kunni eng og‘ir va muhim ishdan boshlash tamoyili tushuntiriladi.",
+   "Maqsadlarga erishishning yetti bosqichli formulasi bayon etiladi.",
+   "Fikrlarni har doim qog‘ozga tushirish va yozma reja tuzish qoidasi ilgari suriladi.",
+   "Har bir kun, hafta va oyni oldindan rejalashtirish usullari ko‘rsatiladi.",
+   "80/20 (Pareto) tamoyili orqali natijaning asosiy qismi kam sonli muhim ishlarga bog‘liqligi uqtiriladi.",
+   "Oqibati salbiy bo‘lishi mumkin bo‘lgan ishlarga nisbatan ustuvorlik belgilanadi.",
+   "Ahamiyatsiz va ikkinchi darajali vazifalarga «yo‘q» deyish ko‘nikmasi tushuntiriladi.",
+   "Har bir sohada natijaga erishishning asosiy omillari tahlil qilinadi.",
+   "Eng muhim uchta vazifaga bor e'tiborni qaratish usuli tavsiflanadi.",
+   "Ish o‘rnini va stol ustini tartibga keltirish samaradorlikni oshirishi ta'kidlanadi.",
+   "Katta vazifalarni bosqichma-bosqich, qadamma-qadam bajarish qoidasi tushuntiriladi.",
+   "Doimiy bilim olish va kasbiy ko‘nikmalarni rivojlantirish muhimligi ko‘rsatiladi.",
+   "Muvaffaqiyatga to‘sqinlik qiluvchi ichki va tashqi cheklovlarni bartaraf etish yo‘llari beriladi.",
+   "Jismoniy va ruhiy energiyani saqlash uchun to‘g‘ri ovqatlanish hamda dam olish qoidalari tushuntiriladi.",
+   "Zamonaviy texnologiyalar va gadjetlar tuzog‘iga tushmaslik chora-tadbirlari ko‘riladi.",
+   "Katta ishlarni bajarishda «Dudlangan kolbasa» va «Shvetsarcha pishloq» metodlari taklif etiladi.",
+   "Har bir topshiriqni chalg‘imasdan oxirigacha yetkazish intizomi muxtasar umumlashtiriladi."
+  ],
+  "quotes": [
+   "Fikrlaringizni qog‘ozga tushiring.",
+   "Agar bir vaqtda ikki qurbaqani paqqos tushirishga to‘g‘ri kelsa, birinchi bo‘lib eng xunugidan boshlang.",
+   "Rejasiz harakat barcha muvaffaqiyatsizlikning sababidir.",
+   "Hamma narsaga vaqt yetmaydi, lekin eng muhim narsalarga hamisha vaqt topiladi.",
+   "Mayda yumushlardan qanchalik voz kecha olsangiz, o‘z vaqtingiz va hayotingizni o‘sha darajada boshqara olasiz.",
+   "Qo‘rquvni yengishning yagona yo‘li — qo‘rqayotgan ishingizni bajarish hisoblanadi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif yoshligida qaysi kemada ish boshlagan edi?",
+   "options": [
+    "A) Yo‘lovchi tashuvchi kemada",
+    "B) Yuk tashuvchi kemada",
+    "C) Harbiy kemada",
+    "D) Baliqchi kemasida"
+   ],
+   "answer": "B) Yuk tashuvchi kemada"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif fikricha, «qurbaqangiz» nima hisoblanadi?",
+   "options": [
+    "A) Eng yengil yumush",
+    "B) Eng og‘ir va muhim yumush",
+    "C) Bajarilmaydigan orzu",
+    "D) Oson bajariladigan reja"
+   ],
+   "answer": "B) Eng og‘ir va muhim yumush"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Inson muhim ishni yakunlaganda miyada nima ajraladi?",
+   "options": [
+    "A) Endorfinlar ajraladi",
+    "B) Adrenalin ajraladi",
+    "C) Gormonlar kamayadi",
+    "D) Insulin ajraladi"
+   ],
+   "answer": "A) Endorfinlar ajraladi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Fikrlash va rejalashtirish uchun birinchi qoida nima?",
+   "options": [
+    "A) Rejani ichda o‘ylash",
+    "B) Fikrlarni qog‘ozga tushirish",
+    "C) Boshqalarga aytib berish",
+    "D) Tezda unutish"
+   ],
+   "answer": "B) Fikrlarni qog‘ozga tushirish"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Maqsadga erishish bosqichlari qanday ketma-ketlikda keladi?",
+   "options": [
+    "A) Aniqlash, yozish, muddat belgilash",
+    "B) Boshlash, yozish, kutish",
+    "C) Muddat qo‘yish, so‘ng aniqlash",
+    "D) Yozish, to‘xtash, aniqlash"
+   ],
+   "answer": "A) Aniqlash, yozish, muddat belgilash"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun rejaga muddat belgilash zarur?",
+   "options": [
+    "A) Ish ortga surilmasligi uchun",
+    "B) Reja tezroq unutilishi uchun",
+    "C) Boshqalar ko‘rib baholashi uchun",
+    "D) Ishni to‘xtatish uchun"
+   ],
+   "answer": "A) Ish ortga surilmasligi uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ertangi kun ro‘yxatini kechasi tuzish nimasi bilan foydali?",
+   "options": [
+    "A) Ongosti tuni bilan ishlaydi",
+    "B) Uyquni qochiradi",
+    "C) Ertalab vaqtni ko‘proq oladi",
+    "D) Ishni kechiktirishga yordam beradi"
+   ],
+   "answer": "A) Ongosti tuni bilan ishlaydi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning o‘z tajribasini boshqalarga o‘rgatishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, ularga ham naf tegadi",
+    "B) Xato, sirlarni saqlash kerak",
+    "C) Keraksiz, har kim o‘zi o‘rgansin",
+    "D) Bekorchi ish, foydasi yo‘q"
+   ],
+   "answer": "A) To‘g‘ri, ularga ham naf tegadi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muhim bo‘lmagan ishlarni birinchi qilish to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, osonidan boshlagan yaxshi",
+    "B) Noto‘g‘ri, vaqt isrof bo‘ladi",
+    "C) To‘g‘ri, hamma ish bir xil",
+    "D) Farqi yo‘q, baribir bir xil"
+   ],
+   "answer": "B) Noto‘g‘ri, vaqt isrof bo‘ladi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Mark Tvenning tirik qurbaqani tanovul qilish haqidagi iborasi nimani anglatadi?",
+   "options": [
+    "A) Kunni eng og‘ir ishdan boshlashni",
+    "B) Boqlikda hayvonlarni parvarish qilishni",
+    "C) Ertalab ovqatlanmasdan ishga borishni",
+    "D) Kun bo‘yi qiyinchilikdan qochishni"
+   ],
+   "answer": "A) Kunni eng og‘ir ishdan boshlashni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "80/20 tamoyilining ikkinchi nomi nima?",
+   "options": [
+    "A) Pareto tamoyili",
+    "B) Makkenzi qoidasi",
+    "C) Druker usuli",
+    "D) Kovi uslubi"
+   ],
+   "answer": "A) Pareto tamoyili"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vaqtni boshqarishda ishlatiladigan eng kuchli so‘z qaysi?",
+   "options": [
+    "A) Yo‘q so‘zi",
+    "B) Bajaraman so‘zi",
+    "C) Keyinroq so‘zi",
+    "D) Mayli so‘zi"
+   ],
+   "answer": "A) Yo‘q so‘zi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Insonning eng qimmatli aktivi nima hisoblanadi?",
+   "options": [
+    "A) Daromad olish qobiliyati",
+    "B) Faqat pul jamg‘armasi",
+    "C) Qimmatbaho avtomobili",
+    "D) Katta uyi"
+   ],
+   "answer": "A) Daromad olish qobiliyati"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qo‘rquvni yengishning yagona yo‘li nima?",
+   "options": [
+    "A) Qo‘rqayotgan ishni bajarish",
+    "B) Ishdan butunlay qochish",
+    "C) Uzoq vaqt kutish",
+    "D) Boshqalarga topshirish"
+   ],
+   "answer": "A) Qo‘rqayotgan ishni bajarish"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Turli muddatli ro‘yxatlar to‘g‘ri tartibda qanday tuziladi?",
+   "options": [
+    "A) Asosiy, oylik, haftalik, kunlik",
+    "B) Kunlik, asosiy, haftalik, oylik",
+    "C) Haftalik, kunlik, asosiy, oylik",
+    "D) Oylik, kunlik, asosiy, haftalik"
+   ],
+   "answer": "A) Asosiy, oylik, haftalik, kunlik"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mehnat samaradorligini oshirish tartibi qanday bosqichlardan iborat?",
+   "options": [
+    "A) Rejalash, tashkillashtirish, ijro etish",
+    "B) Kutish, o‘ylash, kechiktirish",
+    "C) Boshlash, to‘xtash, qayta rejalash",
+    "D) Ishlash, dam olish, tashlash"
+   ],
+   "answer": "A) Rejalash, tashkillashtirish, ijro etish"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun ahamiyati past vazifalarga «yo‘q» deyish kerak?",
+   "options": [
+    "A) Muhim ishlarga vaqt ajratish uchun",
+    "B) Ishlamay dam olish uchun",
+    "C) Boshqalarni xafa qilish uchun",
+    "D) Vazifalarni umuman qilmaslik uchun"
+   ],
+   "answer": "A) Muhim ishlarga vaqt ajratish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Stol ustini ozoda saqlash insonga qanday ta'sir qiladi?",
+   "options": [
+    "A) Ruhiyatni va samaradorlikni oshiradi",
+    "B) Ish vaqtini qisqartiradi",
+    "C) Xotirani pasaytiradi",
+    "D) Ishni murakkablashtiradi"
+   ],
+   "answer": "A) Ruhiyatni va samaradorlikni oshiradi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Konfutsiyning «Ming chaqirimli yo‘l birinchi qadamdan boshlanadi» g‘oyasi nimaga da'vat etadi?",
+   "options": [
+    "A) Harakatni darhol va kichik qadamdan boshlashga",
+    "B) Uzoq yo‘lga umuman chiqmaslikka",
+    "C) Faqat katta rejalarni kutishga",
+    "D) Boshqalarning harakatini kuzatishga"
+   ],
+   "answer": "A) Harakatni darhol va kichik qadamdan boshlashga"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning «Kilometrma-kilometr yo‘l bosish og‘ir, ammo qadamma-qadam mumkin» degan tasviri nimani ifodalaydi?",
+   "options": [
+    "A) Katta vazifani kichik bo‘laklarga bo‘lib bajarishni",
+    "B) Sport bilan muntazam shug‘ullanishni",
+    "C) Faqat piyoda yurish foydaliligini",
+    "D) Katta ishlarga hech qachon qo‘l urmaslikni"
+   ],
+   "answer": "A) Katta vazifani kichik bo‘laklarga bo‘lib bajarishni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ishni kichik bo‘laklarga bo‘lib bajarish usuli nima deyiladi?",
+   "options": [
+    "A) Dudlangan kolbasa bo‘lagi usuli",
+    "B) Non bo‘lagi usuli",
+    "C) Meva kesish usuli",
+    "D) Shokolad bo‘lagi usuli"
+   ],
+   "answer": "A) Dudlangan kolbasa bo‘lagi usuli"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Katta vazifada teshiklar hosil qilish usuli qanday ataladi?",
+   "options": [
+    "A) Shvetsariya pishlog‘i metodi",
+    "B) Gollandiya pishlog‘i metodi",
+    "C) Tuzlangan pishloq metodi",
+    "D) Qattiq pishloq metodi"
+   ],
+   "answer": "A) Shvetsariya pishlog‘i metodi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ruhiy va jismoniy energiyani saqlash uchun nima qilish kerak?",
+   "options": [
+    "A) Sifatli dam olish va to‘g‘ri ovqatlanish",
+    "B) Uzluksiz va dam olmasdan ishlash",
+    "C) Faqat qahva ichib turish",
+    "D) Jismoniy mashqlardan voz kechish"
+   ],
+   "answer": "A) Sifatli dam olish va to‘g‘ri ovqatlanish"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Samaradorlikni oshirish uchun muallif o‘ziga nima deyishni tavsiya qiladi?",
+   "options": [
+    "A) Buni hoziroq bajar!",
+    "B) Ertaga qilarsan!",
+    "C) Biroz dam ol!",
+    "D) Boshqaga topshir!"
+   ],
+   "answer": "A) Buni hoziroq bajar!"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ish unumdorligini saqlash va oshirish ketma-ketligi qaysi?",
+   "options": [
+    "A) Dam olish, to‘g‘ri ovqatlanish, badantarbiya",
+    "B) Shoshilish, charchash, ovqatlanishni unutish",
+    "C) Tun bo‘yi ishlash, so‘ng dam olish",
+    "D) Tayyorgarlikni o‘tkazib yuborish"
+   ],
+   "answer": "A) Dam olish, to‘g‘ri ovqatlanish, badantarbiya"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun gadjetlarni vaqti-vaqti bilan o‘chirib qo‘yish kerak?",
+   "options": [
+    "A) Diqqat chalg‘imasligi va charchamaslik uchun",
+    "B) Telefon batareyasi tejalsin deb",
+    "C) Odamlar izlab topolmasligi uchun",
+    "D) Ulardan butunlay voz kechish uchun"
+   ],
+   "answer": "A) Diqqat chalg‘imasligi va charchamaslik uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun ishni to‘xtatib qayta boshlash vaqtni ko‘p oladi?",
+   "options": [
+    "A) Har safar jarayonga qayta moslashish kerak",
+    "B) Miyada ma'lumotlar o‘chib ketadi",
+    "C) Ish qurollari yo‘qolib qoladi",
+    "D) Boshqa odamlar halaqit beradi"
+   ],
+   "answer": "A) Har safar jarayonga qayta moslashish kerak"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bir vaqtning o‘zida bir nechta chalg‘ituvchi ishni qilish to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, diqqat bo‘linib diqqat yo‘qoladi",
+    "B) To‘g‘ri, hamma narsaga ulguradi",
+    "C) To‘g‘ri, vaqt tejaladi",
+    "D) Farqi yo‘q, samaradorlik oshadi"
+   ],
+   "answer": "A) Noto‘g‘ri, diqqat bo‘linib diqqat yo‘qoladi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "O‘z-o‘zini intizomga solish inson kelajagiga ta'sir qiladimi?",
+   "options": [
+    "A) Ha, muvaffaqiyat va kafolatlangan kelajak beradi",
+    "B) Yo‘q, faqat charchoq keltirib chiqaradi",
+    "C) Yo‘q, kelajak omadga bog‘liq",
+    "D) Faqat maktab davrida ta'sir qiladi"
+   ],
+   "answer": "A) Ha, muvaffaqiyat va kafolatlangan kelajak beradi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Elbert Habbardning o‘z-o‘zini tarbiyalash ta'rifi qaysi hayotiy fazilatni ulug‘laydi?",
+   "options": [
+    "A) Metin iroda va sabr-toqatni",
+    "B) Yengiltaklik va xotirjamlikni",
+    "C) Boshqalarga buyruq berishni",
+    "D) Cheksiz orzu qilishni"
+   ],
+   "answer": "A) Metin iroda va sabr-toqatni"
+  }
+ ]
+}

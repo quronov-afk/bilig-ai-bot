@@ -1,0 +1,80 @@
+{
+ "title": "Hadis va Hayot",
+ "author": "Shayx Muhammad Sodiq Muhammad Yusuf",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "hadis",
+   "sunnat",
+   "ma'rifat",
+   "odob-axloq",
+   "islom tarixi",
+   "ilm"
+  ],
+  "theme": "Islom dinining ikkinchi asosiy manbai bo‘lmish Sunnat va Hadis ilmining mohiyati, tarixi, uning hayotdagi o‘rni hamda mashhur muhaddis va faqih imomlarning ilmiy merosini sodda va tushunarli tilda bayon etish.",
+  "summary": "Ushbu kitob «Hadis va Hayot» silsilasining birinchi juzi bo‘lib, Islom dinidagi ikkinchi asosiy manba hisoblangan Hadis va Sunnat ilmining tub mohiyati, tarixi va ahamiyatini tushuntirishga bag‘ishlangan. Asarda avvalo muallifning kitobni yozishdan ko‘zlagan mo‘tadil va ma'rifiy maqsadi, asarning manbalari va tuzilishi bayon qilinadi. So‘ngra Sunnat va Hadis tushunchalarining lug‘aviy hamda istilohiy ma'nolari, ularning o‘zaro munosabati va Islom shariatida Qur'oni Karimdan keyingi ikkinchi manba ekani dalillar bilan yoritiladi. Matnda Sunnatning oltita asosiy turi, ya'ni Payg‘ambar alayhissalomning gaplari, amallari, tahrirlari (ma'qullashlari), xalqiy (tana tuzilishi) va xulqiy sifatlari hamda siyratlari haqida batafsil ma'lumot berilib, har biriga aniq misollar keltiriladi. Keyingi bo‘limlarda hadislarning to‘planish tarixi, sahobalarning sunnatni saqlashdagi o‘rni va xalifa Umar ibn Abdulaziz davrida hadislarni rasmiy yozib olish jarayoni bayon etiladi. Muhaddislarning roviylar xotirasi va adolatini sinchiklab tekshirish usullari hamda matnlar salomatligini aniqlash bo‘yicha olib borgan ulkan ilmiy ishlari tushuntiriladi. Asarda Hadis to‘plamlarining turlari — «Sahih», «Sunan», «Jome'», «Musnad» va «Mo‘jam» kabi shakllarining farqli jihatlari va martabalari ko‘rsatib beriladi. Shuningdek, nosux va mansux hadislar, hadislarning aytilish sabablari, ulardagi majoziy va haqiqiy ma'nolar hamda fuqaholar va muhaddislarning vazifalari o‘rtasidagi farqlar yoritiladi. Kitobning salmoqli qismi Islom tarixida va Movarounnahrda o‘tgan ulug‘ muhaddis va faqihlar (Imom Buxoriy, Imom Nasoiy, Imom Ahmad ibn Hanbal, Imom Dorimiy, Imom Hokim, Imom Shofe'iy va boshqalar)ning hayoti va ilmiy merosiga bag‘ishlangan. Oxirida kitobning tuzilish mantig‘i, istilohlari va to‘rt asosiy qismdan iborat bo‘limlari haqida ma'lumot beriladi.",
+  "characters": "Payg‘ambar Muhammad sollallohu alayhi vasallam, sahobalar (Abu Bakr, Umar, Usmon, Ali, Mu'oz ibn Jabal, Abu Hurayra, Oisha, Xolid ibn Valid va boshqalar), buyuk muhaddislar hamda faqihlar (Imom Buxoriy, Imom Muslim, Imom Abu Dovud, Imom Termiziy, Imom Nasoiy, Imom Ibn Moja, Imom Ahmad ibn Hanbal, Imom Dorimiy, Imom Shofe'iy, Imom Hokim va boshqalar).",
+  "conclusion": "Kitob o‘quvchiga Islom madaniyati va manbalari haqida ilmiy hamda tarixiy tushuncha beradi. Hadis va Sunnatning inson hamda jamiyat hayotidagi o‘rni, odob-axloq va ma'naviyat mezonlarini tushunishga yordam beradi. Buyuk allomalarning ilm yo‘lidagi sabr-toqati va fidoyiligidan o‘rnak olish imkonini yaratadi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, ilmiy, nasihatomuz",
+  "for_whom": "Islom tarixi, hadis ilmi va odob-axloq masalalariga qiziquvchi o‘smirlar hamda yoshlar uchun.",
+  "events": [
+   "Muallif «Hadis va Hayot» kitobining yozilish tarixi va undan ko‘zlangan mo‘tadil ma'rifiy maqsadlarni bayon qiladi.",
+   "Sunnat va hadis tushunchalarining lug‘aviy hamda istilohiy ma'nolari tushuntiriladi.",
+   "Sunnatning oltita asosiy turi va ularning har biriga tegishli misollar keltiriladi.",
+   "Sunnatning Islom shariatida Qur'ondan keyingi ikkinchi manba ekani oyat va hadislar bilan ko‘rsatiladi.",
+   "Sahobalarning Payg‘ambar alayhissalom sunnatlariga iqtido qilishlari va ularni yodlab yetkazishdagi mas'uliyatlari bayon etiladi.",
+   "Hadislarni to‘plash va kitob shakliga keltirishning birinchi hijriy asrdan boshlangan tarixi yoritiladi.",
+   "Muhaddislarning roviylarni va hadis matnlarini tekshirishdagi noyob ilmiy uslublari tushuntiriladi.",
+   "Hadis to‘plamlarining «Sahih», «Sunan», «Jome'», «Musnad» va «Mo‘jam» kabi turlarga bo‘linishi ko‘rsatiladi.",
+   "Nosux va mansux hadislar tushunchasi hamda ularning shariy hukmlarga ta'siri tushuntiriladi.",
+   "Payg‘ambar alayhissalomdan sodir bo‘lgan amallarning insoniy va shariy turlari farqlab beriladi.",
+   "Sunnat va fiqhiy mazhablar o‘rtasidagi bog‘liqlik va ulamolarning o‘zaro hamkorligi bayon etiladi.",
+   "Hadislarni to‘g‘ri tushunish uchun ularning aytilish sababi va majoziy ma'nolarini bilish muhimligi uqtiriladi.",
+   "Imom Buxoriy, Imom Nasoiy va Imom Ahmad kabi ulug‘ muhaddislarning hayot yo‘li va ilmiy jasoratlari keltiriladi.",
+   "Imom Dorimiy, Imom Hokim va Imom Shofe'iylarning ilmiy faoliyati hamda qoldirgan asarlari haqida ma'lumot beriladi.",
+   "Kitobning tuzilishi, istilohlari va to‘rt asosiy qismdan iborat taqsimot qoidalari tushuntiriladi."
+  ],
+  "quotes": [
+   "Albatta, ishlar niyatga bog‘liqdir",
+   "Sizlarga ikki narsani qoldirdim. Agar ularni mahkam tutsangiz, hech adashmaysiz. Bular Allohning Kitobi va Mening Sunnatimdir",
+   "Mening gapimni eshitib, singdirib, yodlab, so‘ngra yetkazgan odamni Alloh ne'matlantirsin",
+   "Davolaninglar, Alloh qaysi bir dardni bergan bo‘lsa, albatta, uning davosini ham bergandir",
+   "Ilmga kelinadi, ilm hech qachon bormaydi",
+   "Siz uyqudan oldin ismid (surma)ni lozim tuting, u ko‘zni ravshan qilur va tukni o‘stirur"
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "“Hadis va Hayot”ni yozish jarayonida uning ko‘pchilik tushunadigan, sodda tilda bo‘lishiga alohida e'tibor berildi. Qolaversa, bu kitoblar yurtimizda asrlar osha musulmonlarning yagona va doimiy fiqhiy mazhabi bo‘lmish Hanafiy mazhabida bo‘lishi e'tiborimizda turdi.",
+   "question": "Murakkab mavzularni o‘rganayotganingda, axborotning sodda va tushunarli tilda berilishi senga qanchalik yordam beradi? Hayotingda shunday holatga duch kelgan bo‘lsang, misol keltir."
+  },
+  {
+   "part": 1,
+   "context": "1. “Gap” – bunga Payg‘ambarimiz sollallohu alayhi vasallamning turli holat va munosabatlarda aytgan gaplari kiradi. Misol uchun, u zot sollallohu alayhi vasallam “Albatta, ishlar niyatga bog‘liqdir”, deganlar.",
+   "question": "Har bir qilayotgan ishingda niyat va maqsadning aniq bo‘lishi sencha qanchalik muhim? O‘z hayotingdan biron harakating niyatingga qarab qanday natija berganini so‘zlab ber."
+  },
+  {
+   "part": 2,
+   "context": "Kishilarga da'vat, va'z-nasihat, tushuntirish ishlarini olib boruvchilarning hadis sahih bo‘lsa ham, hammasini aytaverishlari durust emas. Ular tinglovchilarning saviyasini, tushunish darajasini va o‘sha hadisdan qanday natija chiqishini ham e'tiborga olishlari kerak.",
+   "question": "Biror ma'lumotni boshqalarga yetkazayotganingda, ularning tushunish darajasini hisobga olish sencha nega muhim? O‘zing kimgadir biror narsani tushuntirishda qanday usul tutasan?"
+  },
+  {
+   "part": 2,
+   "context": "Xolid Imom Buxoriyga odam yuborib, saroyga kelib, amir va amaldorlarning farzandlariga dars berishni taklif etadi. Buxoriy bundan bosh tortadilar. Xolid yana elchi yuborib, kitoblari bilan tezda Amir huzuriga kelishini buyuradi. Buxoriy esa: “Ilmga kelinadi, ilm hech qachon bormaydi”, deb javob beradilar.",
+   "question": "Imom Buxoriyning «Ilmga kelinadi, ilm hech qachon bormaydi» degan qat'iy pozitsiyasi haqida sen qanday fikrdasan? Ilm va bilimning qadr-qimmati haqida o‘zingcha qanday xulosaga kelasan?"
+  },
+  {
+   "part": 3,
+   "context": "Onalari o‘qish-yozishni o‘rgatmoqchi bo‘ladilar, lekin maktabga to‘laydigan pullari bo‘lmaganligi uchun ko‘p qiynaladilar. Oxiri bir muallim Shofe'iydagi tug‘ma qobiliyatni bilganligi tufayli bepul o‘qitishga rozi bo‘ladi. Bu zot o‘qish-yozishni tez orada o‘rganib, yetti yoshlarida Qur'oni Karimni to‘la yod oladilar.",
+   "question": "Qiyinchiliklarga qaramay ilm va izlanishga intilish insonda qanday fazilatlarni shakllantiradi deb o‘ylaysan? O‘z maqsadingga erishishda qanday to‘siqlarni yengib o‘tishga to‘g‘ri kelgan?"
+  }
+ ]
+}

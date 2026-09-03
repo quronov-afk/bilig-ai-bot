@@ -1,0 +1,81 @@
+{
+ "title": "Biz bilgan va bilmagan Imom Moturidiy",
+ "author": "So‘nmas Qutlug‘",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "ilm",
+   "tarix",
+   "kalom",
+   "mantiq",
+   "odob",
+   "falsafa"
+  ],
+  "theme": "Ushbu risola Imom Abu Mansur Moturidiyning hayoti, ilmiy faoliyati, moturidiylik ta'limotining shakllanishi hamda islom tafakkuridagi o‘rni haqida atroflicha ma'lumot beruvchi ma'rifiy manbadir.",
+  "summary": "Ushbu risola turkiyalik taniqli olim So‘nmas Qutlug‘ning ilmiy ishi asosida tayyorlangan bo‘lib, moturidiylik ta'limotining asoschisi Imom Abu Mansur Moturidiyning hayoti, ilmiy faoliyati va ma'naviy merosini yoritib beradi.\n\nAsarda avvalo Movarounnahr va Samarqandning islom sivilizatsiyasidagi o‘rni hamda o‘sha davrdagi diniy-falsafiy muhit tasvirlanadi. Samarqand turli din va madaniyatlar tutashgan, ilmiy bahs va munozaralar rivojlangan yirik markaz bo‘lgan. Imom Moturidiy ushbu muhitda kamol topib, \"Dor al-Juzjoniya\" ta'lim maskanida hanafiy olimlaridan saboq olgan va keyinchalik ushbu markazga rahbarlik qilgan.\n\nRisolada allomaning ustozlari va shogirdlari, uning saqlanib qolgan va yo‘qolgan asarlari haqida atroflicha ma'lumot beriladi. Xususan, uning kalom ilmiga oid \"Kitob at-Tavhid\" va tafsir sohasidagi \"Ta'vilot al-Qur'on\" asarlarining ahamiyati alohida ta'kidlanadi. Moturidiy kalom ilmini chinakam tizimli fanga aylantirib, bilim olishning uchta asosiy manbasini ko‘rsatib bergan: sezgilar, to‘g‘ri xabar va aql. U dinni o‘rganish va e'tiqodni shakllantirishda aqliy istidlol hamda tafakkurning rolini yuqori baholagan.\n\nShuningdek, kitobda Moturidiyning mufassir va faqih sifatidagi o‘ziga xos yondashuvlari ko‘rib chiqiladi. Olim tafsir va ta'vil tushunchalarini bir-biridan farqlagan, din va shariat o‘rtasidagi farqni izohlab, dinning o‘zgarmas tavhidiy va aqliy asos bo‘lishini, shariat esa davrlarga qarab o‘zgaruvchi hukmlardan iboratligini ko‘rsatgan. Gunohi kabira sodir etgan kishining imondan chiqmasligi, amallarning imon sharti emas, balki uning natijasi ekani borasidagi qarashlar bayon etiladi.\n\nMuallif Imom Moturidiyning inson irodasi, Allohning takvin va hikmat sifatlari borasidagi mulohazalarini tahlil qiladi. Kitob yakunida allomaning biografik manbalarda kam zikr etilishi sabablari hamda uning islom tafakkur tarixida qoldirgan ulkan ta'siri haqida xulosalar beriladi.",
+  "characters": "Imom Moturidiy, Abu Hanifa, Abu Nasr Iyoziy, Abu Bakr Juzjoniy, Nusayr Balxiy, Muhammad Roziy, Abul Qosim Hakim Samarqandiy, Abul Hasan Rustufag‘niy, Abul Muin Nasafiy, Imom Ash'ariy",
+  "conclusion": "O‘quvchi ushbu kitob orqali buyuk ajdodimiz Imom Moturidiyning islom tafakkuri rivojiga qo‘shgan ulkan hissasini bilib oladi. Ilm olishda faqat ko‘r-ko‘rona taqlid qilmasdan, aql va tafakkurni ishlatish qanchalik muhimligini anglaydi. Kitob o‘smirlarda mantiqiy fikrlash, bilimga intilish hamda o‘z milliy va ma'naviy merosiga bo‘lgan hurmat tuyg‘usini rivojlantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "ilmiy-ma'rifiy, vazmin, nasihatomuz",
+  "for_whom": "Islom tarixi, kalom ilmi hamda Imom Moturidiyning ilmiy va ma'naviy merosiga qiziquvchi yoshlar hamda o‘smirlar uchun mo‘ljallangan.",
+  "events": [
+   "Turkiyashunos olim So‘nmas Qutlug‘ning ushbu risolasining maqsadi va ahamiyati haqida so‘z yuritiladi.",
+   "Movarounnahr va Samarqand hududidagi diniy va madaniyatlar tutashgan muhit bayon qilinadi.",
+   "Imom Moturidiyning to‘liq ismi, vafot etgan yili va nasabi haqidagi ma'lumotlar keltiriladi.",
+   "Allomaning \"Dor al-Juzjoniya\" ta'lim markazida tahsil olgan ustozlari sanab o‘tiladi.",
+   "Imom Moturidiyning yetishib chiqqan shogirdlari va uning ta'limotini davom ettirgan olimlar ko‘rsatiladi.",
+   "Olimning bizgacha yetib kelgan \"Ta'vilot al-Qur'on\" va \"Kitob at-Tavhid\" asarlari tahlil qilinadi.",
+   "Imom Moturidiyning hanafiy fiqhi va usul al-fiqh sohasidagi qarashlari yoritiladi.",
+   "Mutakallim sifatidagi faoliyati hamda bilish nazariyasining asosiy manbalari tushuntiriladi.",
+   "Bilim olish yo‘llari sifatida sezgilar, to‘g‘ri xabar va aqlning o‘rni ko‘rsatib beriladi.",
+   "Imom Moturidiy va Imom Ash'ariy ta'limotlarining o‘zaro solishtirilishi bayon etiladi.",
+   "Mufassir sifatidagi faoliyatida tafsir va ta'vil tushunchalariga berilgan farqlar izohlanadi.",
+   "Olimning tasavvuf va ilhomga bo‘lgan munosabati hamda sufiylar bilan bahslari haqida so‘z boradi.",
+   "Diyonat va siyosat masalasi hamda davlat hokimiyatiga bo‘lgan munosabat yoritiladi.",
+   "Imon tushunchasi, amallarning imondan ajratilishi va gunohi kabira masalasi tahlil qilinadi.",
+   "Din va shariat o‘rtasidagi farq hamda payg‘ambarlarning yuborilish sabablari tushuntiriladi.",
+   "Muqallid imoni, inson irodasi hamda Allohning takvin va hikmat sifatlari bayon qilinadi.",
+   "Imom Moturidiy merosining islom tafakkur tarixiga ko‘rsatgan ta'siri va uning sabablari xulosalanadi."
+  ],
+  "quotes": [
+   "Moturidiylik ta'limotining asoschisi, ulug‘ alloma Abu Mansur Moturidiy taxminan III/IX asr o‘rtalarida Samarqand shahrining Moturid nomli mahallasi yoki qishlog‘ida dunyoga kelgan.",
+   "Imom Moturidiy ham fiqhiy, ham aqidaviy masalalarda Abu Hanifaning peshvolik nufuzini ko‘r-ko‘rona qabul qilish bilan cheklanib qolmay, balki, uning fikrlari orasidan tushunilishi qiyin bo‘lganlarini sharhlagan va ularni yangi dalillar bilan quvvatlagan.",
+   "Islomga kirishning sharti amallar emas, Allohni tasdiq etishdir.",
+   "Dinda insonlar toqati yetmaydigan narsa bilan aslo so‘roqqa tutilmaydi.",
+   "Moturidiyning fikricha, koinotdagi hech bir narsa bekordan-bekorga yaratilmagan."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Moturidiy ustozlari va ularning asarlari bilan kifoyalanib qolmagan, o‘z davridagi din va mazhablarning matnlari, shuningdek, ayrim falsafiy asarlarni topib, ularni o‘rganib chiqqan va o‘z asarlarida ularning ba'zi fikrlarini himoya qilgan, ba'zilarini esa tanqid qilgan. Asarlarida keltirilgan iqtiboslarga nazar solinsa, u o‘rgangan asarlar orasida Arastuning “Mantiq” nomli asari ham bo‘lgani ko‘zga tashlanadi.",
+   "question": "Inson faqat bir soha bilan cheklanmay, boshqa turli ilmlar va asarlarni ham o‘rganishi uning dunyoqarashiga qanday ta'sir qiladi deb o‘ylaysan? Sen o‘z faoliyatingda turli sohalarni o‘rganishga harakat qilganmisan?"
+  },
+  {
+   "part": 2,
+   "context": "Inson maxluqotlarni boshqarish salohiyati bilan ustun hisoblanadi. Bu yo‘lda u mashaqqatlarga dosh berish, ular uchun aqlan eng munosib bo‘lganini izlab topish, yaxshi va go‘zal narsalarni afzal bilib, bularning aksidan chekinish ila ustun qilingandir. Bu xususiyatlarni bilishning yo‘li esa narsa va hodisalarni o‘rganish surati bilan aqlni ishlatishdan iboratdir, boshqa bir usulning o‘zi ham yo‘q.",
+   "question": "Qiyin va murakkab vaziyatga tushib qolganingda tafakkur qilish va aqlga tayanish senga qanday yordam bergan? Hayotingdan biror misol keltira olasanmi?"
+  },
+  {
+   "part": 2,
+   "context": "Moturidiyga ko‘ra, xabar bu ichida xato yoki yolg‘on bo‘lishi mumkin bo‘lgan so‘z demakdir. Shu sababdan, o‘ziga bir xabar yetib kelgan kishi toki uning to‘g‘ri yoki yolg‘on ekani oydinlashmaguncha, uni to‘g‘ri deyishi yoki yolg‘onga chiqarishi mumkin emas. Insonlarda mavjud bilimning katta qismining manbasi xabardan iborat bo‘lgani uchun uning bilim manbasi ekanida shubha yo‘q.",
+   "question": "Bugungi kunda har kuni turli manbalardan axborot olamiz. Har qanday xabarni eshitganda uni birdaniga haqiqat deb qabul qilmaslik va tekshirib ko‘rish nima uchun muhim deb hisoblaysan?"
+  },
+  {
+   "part": 3,
+   "context": "Moturidiy taqlid yo‘li bilan imon keltirgan kishining imoni haqiqiy imon emasligi, uning har on tahlikada ekani va boshqa din vakillari tarafidan to‘g‘ri yo‘ldan ozdirilish xavfi qarshisida turishini ta'kidlaydi. U asl imon – go‘zalligi va haqiqatini kishi o‘z aqli va tafakkuri bilan taniydigan imon ekani, bu kabi imonga hech kimsa zarar yetkaza olmasligini ilgari suradi.",
+   "question": "Biror narsaga ko‘r-ko‘rona taqlid qilish o‘rniga, u haqda o‘zing aql va tafakkur bilan mulohaza qilib ishonch hosil qilishing senga qanday ustunlik beradi?"
+  },
+  {
+   "part": 3,
+   "context": "Moturidiyning fikricha, koinotdagi hech bir narsa bekordan-bekorga yaratilmagan. Har narsaning yaratilish sababi, maqsadi va hikmati bor. Shu sababdan, Allohning maxluqotlari u joriy qilgan borliq qonunlari va aql tamoyillaridan tashqariga chiqa olmaydi.",
+   "question": "Atrofimizdagi hodisalar va inson hayotidagi voqealarda chuqur maqsad hamda hikmat borligi haqida o‘ylab ko‘rganmisan? O‘zing guvoh bo‘lgan biror voqea misolida buni qanday tushunganingni aytib ber."
+  }
+ ]
+}

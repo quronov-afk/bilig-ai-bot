@@ -1,0 +1,477 @@
+{
+ "title": "Jenni Gerxardt",
+ "author": "Teodor Drayzer",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "17-19",
+  "age_hint": "16+",
+  "topics": [
+   "oilaviy burch",
+   "ijtimoiy tengsizlik",
+   "sabr-toqat",
+   "mehr-oqibat",
+   "hayot sinovlari"
+  ],
+  "theme": "Asar insonning ichki pokligi va mehr-muhabbati ijtimoiy tengsizlik hamda boylik va mavqe hukmron bo‘lgan jamiyat qarshisida og‘ir sinovlarga duch kelishini ko‘rsatadi. Jenni Gerxardt barcha kulfatlarga qaramay o‘z ma'naviy pokligi, sabr-toqati va oliyjanobligini saqlab qoladi.",
+  "summary": "Gerxardtlar oilasi og‘ir qashshoqlikda yashaydi. Ota xasta bo‘lib qolgani sababli, ona va 18 yoshli qizi Jenni \"Kolumbus-Xauz\" mehmonxonasiga ishga kirishadi. U yerda Jenni saxovatli senator Brender bilan tanishadi. Brender oilaga moddiy yordam beradi va Jennini sevib qoladi, ammo to‘ydan oldin kutilmaganda vafot etadi. Jenni undan homilador bo‘lib, Vesta ismli qiz tug‘adi. Otasi dindor va qattiqqo‘l Gerxardt qizining bu holatidan g‘azablanib, uni uydan haydaydi. Keyinchalik oila Klivlendga ko‘chib o‘tadi.\n\nJenni bu yerda badavlat oila vakili Lester Keyn bilan tanishadi. Lester Jennini sevib qoladi va ular birga yashay boshlashadi. Biroq Lester jamiyat hamda oilasining tazyiqi sababli Jenniga rasman uylanishga shoshilmaydi. Jenni siri oshkor bo‘lishidan qo‘rqib, qizi Vestani yashirib yuradi, ammo keyinroq Lesterga buni oshkor qiladi. Yillar o‘tib, Lesterning otasi vasiyatnoma qoldirib, o‘g‘liga Jennidan voz kechishni shart qilib qo‘yadi, aks holda u merosdan mahrum bo‘lishi kerak edi. Jenni Lesterning kelajagiga g‘ov bo‘lmaslik uchun undan ajralishga rozi bo‘ladi.\n\nJenni birin-ketin yaqinlaridan ayriladi: avval onasi, so‘ng otasi, keyin esa qizi Vesta xastalikdan vafot etadi. Lester esa otasining merosini saqlab qolish va ijtimoiy mavqeyini tiklash uchun o‘zi kabi badavlat Letti Peysga uylanadi. Shunga qaramay, Lester Jennini moddiy ta'minlab turadi.\n\nYillar o‘tib, Lester og‘ir kasallikka chalinadi. O‘limi oldidan u Jennini chaqirib, faqat uni sevganini va ajrashganlari katta xato bo‘lganini tan oladi. Lester vafot etgach, Jenni uning tobutini Sinsinnatiga olib ketishayotganini vokzalda ma'yus kuzatib qoladi. U yolg‘izlikda, asrandi bolalarini tarbiyalab, sabr va shukronalik bilan yashashda davom etadi.",
+  "characters": "Jenni Gerxardt — asar bosh qahramoni, sabr-toqatli, beg‘ubor va mehribon qiz; Lester Keyn — badavlat, mulohazakor, lekin jamiyat fikri va merosga qaram boyvachcha; Senator Brender — oliyjanob, saxovatli siyosatchi, Jennining ilk muhabbati; Uilyam Gerxardt — Jennining dindor, qattiqqo‘l va insofli otasi; Missis Gerxardt — mehnatkash va mehribon ona; Sebastyan (Bass) — Jennining chaqqon va amaliyotchi akasi; Vesta — Jennining qizi.",
+  "conclusion": "Asar o‘quvchini har qanday hayotiy qiyinchiliklarda ham insoniylik, mehr va poklikni yo‘qotmaslikka chorlaydi. Boylik hamda ijtimoiy mavqe haqiqiy baxt keltirmasligini, eng oily qadriyat — samimiy tuyg‘ular va sofdillik ekanini ko‘rsatadi. Ota-onaga, oilaga nisbatan sadoqat hamda sabr-toqat tuyg‘ularini rivojlantiradi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Kattalar dunyosining murakkabliklari, inson taqdiri va ma'naviy qadriyatlar haqida chuqur o‘ylaydigan kitobxonlar uchun.",
+  "events": [
+   "1. Missis Gerxardt va Jenni Kolumbus-Xauz mehmonxonasiga ish so‘rab borishadi.",
+   "2. Ona-bola mehmonxonada zinapoyalarni yuvish ishiga qabul qilinishadi.",
+   "3. Jenni mehmonxonada senator Brender bilan tanishib qoladi.",
+   "4. Senator Brender Gerxardtlar oilasiga moddiy yordam ko‘rsatadi.",
+   "5. Senator Brender kutilmaganda vafot etadi.",
+   "6. Jenni senator Brenderdan homilador bo‘lib, Vesta ismli qiz tug‘adi.",
+   "7. Otasi Uilyam Gerxardt g‘azablanib, Jennini uydan haydaydi.",
+   "8. Gerxardtlar oilasi Klivlendga ko‘chib o‘tadi.",
+   "9. Jenni boyvachcha Lester Keyn bilan tanishadi.",
+   "10. Lester Jennini sevib qoladi va ular birga yashay boshlashadi.",
+   "11. Jenni Lesterga qizi Vesta borligini oshkor qiladi.",
+   "12. Lesterning singlisi Luiza ularning birga yashayotganidan xabar topadi.",
+   "13. Lesterning otasi o‘g‘liga Jennidan voz kechishni shart qilib qo‘yadi.",
+   "14. Jennining onasi missis Gerxardt vafot etadi.",
+   "15. Otasi Uilyam Gerxardt Jenni bilan yarashib, uning uyiga ko‘chib o‘tadi.",
+   "16. Uilyam Gerxardt vafot etadi va lyuteranlar qabristoniga dafn qilinadi.",
+   "17. Lester meros va ijtimoiy tazyiq sababli Letti Peysga uylanadi.",
+   "18. Jennining qizi Vesta xastalikdan dunyodan o‘tadi.",
+   "19. Lester og‘ir kasal bo‘lib, o‘limi oldidan Jennini yoniga chaqiradi.",
+   "20. Lester vafot etgach, Jenni uning tobutini vokzalda ma'yus kuzatib qoladi."
+  ],
+  "quotes": [
+   "Bu yerda odamning avvalo kiyinishiga qarab baho berishardi.",
+   "O‘zim uchun o‘zim javob beraman, mening tashvishimni tortma, iltimos qilaman.",
+   "U juda yaxshi odam edi, — derdi Jenni ichida. — Hammasining keti yaxshi chiqsin deb harakat qilardi.",
+   "Senga anchadan beri, bekorga ajrashdik-da, demoqchi bo‘lib yurardim.",
+   "Shunisi g‘alati ko‘rinadiki, sendan boshqa birorta ayolni chinakamiga sevmaganman.",
+   "Jenni shu chog‘gacha sira ham o‘z taqdirining sohibasi bo‘lmagandi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Missis Gerxardt va Jenni dastlab qayerga ish aralashib borishadi?",
+   "options": [
+    "A) Vagonsozlik ustaxonasiga",
+    "B) Kolumbus-Xauz mehmonxonasiga",
+    "C) Oyna zavodiga",
+    "D) Baqqollik do‘koniga"
+   ],
+   "answer": "B) Kolumbus-Xauz mehmonxonasiga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gerxardtlar oilasida nechta farzand bor edi?",
+   "options": [
+    "A) Oltita farzand",
+    "B) To‘rtta farzand",
+    "C) Ikkita farzand",
+    "D) Beshta farzand"
+   ],
+   "answer": "A) Oltita farzand"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gerxardtlar oilasining to‘ng‘ich o‘g‘li kim edi?",
+   "options": [
+    "A) Jorj",
+    "B) Uilyam",
+    "C) Sebastyan",
+    "D) Veronika"
+   ],
+   "answer": "C) Sebastyan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mehmonxonada Jenni va onasiga kiyim yuvishni kim beradi?",
+   "options": [
+    "A) Katta xizmatchi",
+    "B) Senator Brender",
+    "C) Mehmonxona noziri",
+    "D) General Gopkins"
+   ],
+   "answer": "B) Senator Brender"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Gerxardtlar oilasining dastlabki daromad manbalarini ko‘rsating.",
+   "options": [
+    "A) Bass maoshi, mehmonxona mehnati, qarz",
+    "B) Dehqonchilik va savdo-sotiq",
+    "C) Faqat shisha zavodi maoshi",
+    "D) Davlat tomonidan berilgan yordam"
+   ],
+   "answer": "A) Bass maoshi, mehmonxona mehnati, qarz"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Onasi nega Baumen do‘konidan qarzga oziq-ovqat so‘radi?",
+   "options": [
+    "A) Uyda yeyishga hech narsa qolmagandi",
+    "B) Mehmonlarga ovqat qilmoqchi edi",
+    "C) Pulini uyda unutgan edi",
+    "D) Bayram dasturxoni tuzmoqchi edi"
+   ],
+   "answer": "A) Uyda yeyishga hech narsa qolmagandi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Senator Brender nega Gerxardtlar oilasiga g‘amxo‘rlik qildi?",
+   "options": [
+    "A) Saxovati va Jenniga mehri sababli",
+    "B) Mehmonxona noziri majbur qilgani uchun",
+    "C) Gerxardt uning eski do‘sti edi",
+    "D) Xizmatkorlarini ko‘paytirish uchun"
+   ],
+   "answer": "A) Saxovati va Jenniga mehri sababli"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jennining oilasiga yordam berish uchun ishlashi qanday sifat?",
+   "options": [
+    "A) Oilasiga sadoqati va mehribonligi",
+    "B) Mehmonxonada yashash istagi",
+    "C) Ota-onasiga qarshi chiqishi",
+    "D) Yengil hayotga intilishi"
+   ],
+   "answer": "A) Oilasiga sadoqati va mehribonligi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Uilyam Gerxardtning halollik haqidagi qarashi qanday baholanadi?",
+   "options": [
+    "A) Diyonatli va sobitqadam mehnatkashlik",
+    "B) Faqat pul topishni o‘ylash",
+    "C) Mas'uliyatsizlik va loqaydlik",
+    "D) O‘z foydasini ko‘zlash"
+   ],
+   "answer": "A) Diyonatli va sobitqadam mehnatkashlik"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Jennining tabiatini tasvirlashda qaysi jihatga urg‘u beradi?",
+   "options": [
+    "A) Uning nazokati va beg‘uborligiga",
+    "B) Uning manman va takabburligiga",
+    "C) Uning qattiqqo‘l va fe'liga",
+    "D) Uning boylikka o‘chligiga"
+   ],
+   "answer": "A) Uning nazokati va beg‘uborligiga"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gerxardtlar oilasi Kolumbusdan qaysi shaharga ko‘chib o‘tdi?",
+   "options": [
+    "A) Klivlend shahri",
+    "B) Nyu-York shahri",
+    "C) Sinsinnati shahri",
+    "D) Chikago shahri"
+   ],
+   "answer": "A) Klivlend shahri"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jennining birinchi farzandi ismi nima edi?",
+   "options": [
+    "A) Vesta",
+    "B) Veronika",
+    "C) Marta",
+    "D) Imojin"
+   ],
+   "answer": "A) Vesta"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lesterning otasi o‘g‘liga qanday shart qo‘ydi?",
+   "options": [
+    "A) Jennidan ajralish yoki merosdan mahrumlik",
+    "B) Boshqa shaharga ko‘chib ketish",
+    "C) Zavodni sotib yuborish",
+    "D) Yevropaga o‘qishga borish"
+   ],
+   "answer": "A) Jennidan ajralish yoki merosdan mahrumlik"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lesterning singlisi Luiza Jenni haqida nima qildi?",
+   "options": [
+    "A) Oilasiga u haqida xabar yetkazdi",
+    "B) Jenniga sovg‘a berdi",
+    "C) Jennini mehmonga taklif qildi",
+    "D) U bilan do‘stlashib oldi"
+   ],
+   "answer": "A) Oilasiga u haqida xabar yetkazdi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Lester oilasi oldidagi ikkilanuvchi holatini qanday tartibda kechirdi?",
+   "options": [
+    "A) Muhabbat, ijtimoiy bosim, ajralish qarori",
+    "B) Ajralish, uylanish, so‘ng tanishuv",
+    "C) Boylikdan voz kechish va qochish",
+    "D) Nikoh, so‘ng Jennidan yashirinish"
+   ],
+   "answer": "A) Muhabbat, ijtimoiy bosim, ajralish qarori"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Klivlenddagi yangi xonadon daromadi kimlardan shakllandi?",
+   "options": [
+    "A) Bass, Jorj maoshi va otaning yordami",
+    "B) Faqat Jennining jamg‘armasi",
+    "C) Senator Brenderning merosi",
+    "D) Davlat bergan nafaqa puli"
+   ],
+   "answer": "A) Bass, Jorj maoshi va otaning yordami"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jenni nega qizi Vesta haqida Lesterga uzoq aytmadi?",
+   "options": [
+    "A) Lester uni tashlab ketishidan qo‘rqib",
+    "B) Qizini yaxshi ko‘rmagani uchun",
+    "C) Onasi ruxsat bermagani uchun",
+    "D) Qizi boshqa joyda yashagani uchun"
+   ],
+   "answer": "A) Lester uni tashlab ketishidan qo‘rqib"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Lester otasining vasiyatidan keyin nega chuqur o‘yga batdi?",
+   "options": [
+    "A) Kelajakdagi mavqeyi va boyligini o‘ylab",
+    "B) Jenni bilan darhol uylanmoqchi bo‘lib",
+    "C) Yangi uy sotib olmoqchi bo‘lib",
+    "D) Korxonani akasiga topshirish uchun"
+   ],
+   "answer": "A) Kelajakdagi mavqeyi va boyligini o‘ylab"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jennining Lester uchun undan ketishga roziligi qanday?",
+   "options": [
+    "A) O‘zini fido qilish va oliyjanoblik",
+    "B) Manmanlik va kaltafahm qaror",
+    "C) Qo‘rqoqlik va mas'uliyatsizlik",
+    "D) Lesterni yoqtirmaslik belgisi"
+   ],
+   "answer": "A) O‘zini fido qilish va oliyjanoblik"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Lester fe'l-atvorida qaysi zidlikni ko‘rsatadi?",
+   "options": [
+    "A) Mustaqil fikrlash va ijtimoiy qaramlik",
+    "B) Qattiqqo‘llik va doimiy saxovat",
+    "C) Dangasalik va tinimsiz mehnatsevarlik",
+    "D) Dindorlik va ateistlik qarashlari"
+   ],
+   "answer": "A) Mustaqil fikrlash va ijtimoiy qaramlik"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uilyam Gerxardt umrining oxirgi yillarida qayerda yashadi?",
+   "options": [
+    "A) Jenni va Lesterning uyida",
+    "B) Mehmonxona chordog‘ida",
+    "C) Shisha fabrikasi hovlisida",
+    "D) Sebastyan bilan birga"
+   ],
+   "answer": "A) Jenni va Lesterning uyida"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lester Jenni bilan ajrashgach kimga uylandi?",
+   "options": [
+    "A) Letti Peysga",
+    "B) Imojinga",
+    "C) Luizaga",
+    "D) Emiga"
+   ],
+   "answer": "A) Letti Peysga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lester o‘limi oldidan Jenniga nima dedi?",
+   "options": [
+    "A) Faqat uni sevganini e'tirof etdi",
+    "B) Undan qarzini qaytarishni so‘radi",
+    "C) Letti haqida gapirib berdi",
+    "D) Sinsinnatiga ko‘chib o‘tishni buyurdi"
+   ],
+   "answer": "A) Faqat uni sevganini e'tirof etdi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lester vafot etgach, jasad qaysi shaharga olib ketildi?",
+   "options": [
+    "A) Sinsinnati shahriga",
+    "B) Klivlend shahriga",
+    "C) Kolumbus shahriga",
+    "D) Nyu-York shahriga"
+   ],
+   "answer": "A) Sinsinnati shahriga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jenni hayotidagi yo‘qotishlarni to‘g‘ri ketma-ketlikda joylashtiring.",
+   "options": [
+    "A) Onasi, otasi, qizi Vesta, Lester",
+    "B) Lester, otasi, qizi Vesta, onasi",
+    "C) Qizi Vesta, onasi, Lester, otasi",
+    "D) Otasi, Lester, onasi, qizi Vesta"
+   ],
+   "answer": "A) Onasi, otasi, qizi Vesta, Lester"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Lester nega o‘lishidan oldin Jennini ko‘rishni istadi?",
+   "options": [
+    "A) Yagona haqiqiy muhabbati Jenni bo‘lganidan",
+    "B) Unga mol-mulkini topshirish uchun",
+    "C) Letti bilan urushib qolgani uchun",
+    "D) Davolanish uchun maslahat so‘rab"
+   ],
+   "answer": "A) Yagona haqiqiy muhabbati Jenni bo‘lganidan"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jenni nega Lesterning dafn marosimiga berkitinib bordi?",
+   "options": [
+    "A) Qarindoshlariga halaqit bermaslik uchun",
+    "B) U yerga borish taqiqlangani uchun",
+    "C) Poyezdga kechikib qolgani uchun",
+    "D) Mos kiyimi yo‘qligi sababli"
+   ],
+   "answer": "A) Qarindoshlariga halaqit bermaslik uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jennining kulfatlarga qaramay mehribon qolishi qanday baholanadi?",
+   "options": [
+    "A) Yuksak ma'naviy matonat va sabr",
+    "B) Jamiyatga nisbatan nafrat",
+    "C) Hayotdan butunlay ko‘ngli qolish",
+    "D) O‘z taqdiriga befarqlik"
+   ],
+   "answer": "A) Yuksak ma'naviy matonat va sabr"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Vokzaldagi temir panjara ramzi orqali nima ifodalangan?",
+   "options": [
+    "A) Boylik va ijtimoiy tengsizlik devori",
+    "B) Vokzalning arxitektura go‘zalligi",
+    "C) Poyezdlar harakati xavfsizligi",
+    "D) Jennining sayohat qilish istagi"
+   ],
+   "answer": "A) Boylik va ijtimoiy tengsizlik devori"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Jenni sira o‘z taqdirining sohibasi bo‘lmagandi» jumlasining ma'nosi nima?",
+   "options": [
+    "A) U doim boshqalar va sharoitga tobe yashadi",
+    "B) U o‘z xohishiga ko‘ra sayohat qildi",
+    "C) U hech qachon mehnat qilmadi",
+    "D) U o‘z uyiga egalik qilmadi"
+   ],
+   "answer": "A) U doim boshqalar va sharoitga tobe yashadi"
+  }
+ ]
+}

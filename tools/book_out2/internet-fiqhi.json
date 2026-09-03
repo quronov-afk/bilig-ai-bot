@@ -1,0 +1,82 @@
+{
+ "title": "Internet fiqhi",
+ "author": "Nuriddin Yildiz",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "odob",
+   "internet",
+   "mas'uliyat",
+   "axloq",
+   "zamonaviylik",
+   "tarbiya"
+  ],
+  "theme": "Kitob zamonaviy axborot texnologiyalari va internet vositalaridan musulmon kishining to‘g‘ri, mas'uliyatli hamda axloq qoidalariga mos ravishda foydalanishi haqida atalgan. Muallif internet va mobil telefonlar hayotimizga chuqur kirib kelganini ta'kidlab, ularni ne'mat o‘laroq ezgulik va odob doirasida qo‘llash, vaqt hamda ma'naviyatni isrof qilmaslik zarurligini tushuntiradi.",
+  "summary": "Kitob so‘zboshi va kirish qismida Islom dinining barcha zamon va makonlarga mosligi, internet va zamonaviy texnologiyalarning inson hayotidagi o‘rni haqida so‘z yuritadi. Muallif bugungi kunda internet va mobil telefonlar har bir oilaga, hatto yosh bolalar hayotiga ham chuqur kirib borganini ta'kidlaydi. Shu sababli, televizor ommalashgan davrda yo‘l qo‘yilgan kechikish xatolarini takrorlamasdan, internetdan foydalanish madaniyati hamda fiqhini bolalik chog‘idanoq o‘rgatish zarurligi bayon etiladi. Kitobda internetdan foydalanishdagi asosiy ma'naviy va axloqiy mezonlar sanab o‘tiladi: so‘z va harakatlar bilan boshqalarga zarar yetkazmaslik, o‘ziga taalluqli bo‘lmagan masalalarga aralashmaslik, sirlarni saqlash va yolg‘on tarqatmaslik. Mobil aloqa hamda ijtimoiy tarmoqlardagi munosabatlarda odob-axloq, masalan, muloqotni salom bilan boshlash, hazil-mutoyibada chegaradan chiqmaslik, birovlarning ayb va kamchiliklarini qidirmaslik hamda ularni yoymaslik tamoyillari ko‘rib chiqiladi. Shuningdek, tarmoqlarda uchraydigan yolg‘on xabarlar, tuhmat va ma'lumotlarni o‘zgartirish oqibatida oilalar buzilishi, insonga yetkaziladigan ma'naviy zararlar va qul haqqi masalalari tahlil qilinadi. Farzandlar tarbiyasi va ularning telefonga qaram bo‘lib qolishining oldini olish bo‘yicha amaliy tavsiyalar beriladi: ota-onaning o‘zi o‘rnak bo‘lishi, bolaning bo‘sh vaqtini foydali mashg‘ulotlar (sport, san'at va ilm) bilan to‘ldirishi zarurligi ko‘rsatiladi. So‘nggi bo‘limlarda sarf-xarajat hamda iste'mol madaniyati, moddiy va ma'naviy isrofning ko‘rinishlari yoritiladi. Vaqtni, imkoniyatlarni va so‘zlarimizni o‘rinsiz sarflashning zararlari tushuntirilib, har bir harakat va so‘z uchun mas'uliyat mavjudligi ta'kidlanadi.",
+  "characters": "yo‘q",
+  "conclusion": "Ushbu kitob o‘quvchiga texnologiyalardan ko‘r-ko‘rona vosita sifatida emas, balki mas'uliyat va odob bilan foydalanishni o‘rgatadi. Raqamli dunyoda muloqot madaniyati, vaqtni qadrlash va so‘z mas'uliyatini anglashga undaydi. Farzandlar tarbiyasida ota-onaning o‘rni va ularga to‘g‘ri yo‘nalish berish muhimligini ko‘rsatadi. Kitobni o‘qigan kishi internet muhitida o‘z xatti-harakatlarini qayta taftish qilish va ma'naviy mezonlarga amal qilish ko‘nikmasini hosil qiladi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, nasihatomuz",
+  "for_whom": "O‘smirlar, ota-onalar va zamonaviy texnologiyalardan mas'uliyat bilan foydalanishni istagan har bir o‘quvchi uchun.",
+  "events": [
+   "Kitob muallifning internet ne'mati va undan to‘g‘ri foydalanish haqidagi hamd-u salovoti hamda so‘zboshi bilan boshlanadi.",
+   "Zamonaviy dunyoda internet fiqhi tushunchasining zarurati va Islom dinining hamma zamonlarga mosligi tushuntiriladi.",
+   "Inson hayotining har bir lahzasida imtihon va sinovlar mavjudligi bayon qilinadi.",
+   "Fiqh ilmining ma'nosi va internet zamonida uning yangicha yo‘nalish sifatida o‘rganilishi zarurligi ko‘rib chiqiladi.",
+   "Farzandlarga yoshligidanoq internet va telefon fiqhini hamda odobini o‘rgatish majburiyati ko‘rsatib o‘tiladi.",
+   "Musulmon kishining aloqa vositalaridan foydalanishdagi asosiy rahbari va axloqiy mezonlari keltiriladi.",
+   "Qo‘li va tili bilan boshqalarga zarar yetkazmaslik tamoyili ijtimoiy tarmoqlar misolida tahlil qilinadi.",
+   "O‘ziga taalluqli bo‘lmagan masalalarga aralashmaslik va sirlarni oshkor qilmaslik odobi tushuntiriladi.",
+   "Yaxshi niyat yomon vositani oqlamasligi va ijtimoiy tarmoqlardagi soxta munosabatlarning xatarlari ko‘rsatiladi.",
+   "Internetda hazil-mutoyiba qilishning chegaralari hamda birovlarni masxara qilmaslik talabi bayon etiladi.",
+   "Muloqotni salom berish bilan boshlash va tarmoqda islomiy odobni saqlash tamoyillari beriladi.",
+   "Bolalarning telefonga bog‘lanib qolishi muammosi va bu boradagi pedagogik mulohazalar o‘rtaga tashlanadi.",
+   "Bolalarni telefondan uzoqlashtirish uchun ularning bo‘sh vaqtini sport hamda foydali mashg‘ulotlar bilan to‘ldirish tavsiya etiladi.",
+   "Iste'mol madaniyati va jamiyatda o‘rinsiz pul hamda ne'mat sarflash muammolari tahlil qilinadi.",
+   "Suv, vaqt, dori-darmon va so‘z isrofining oqibatlari haqida alohida so‘z yuritiladi.",
+   "Kitob yakunida insonning har bir bosgan tugmachasi va aytgan so‘zi uchun mas'uliyati borligi eslatib o‘tiladi."
+  ],
+  "quotes": [
+   "Bizga lutf etganlaring orasida uzog‘imizni yaqin, og‘irimizni yengil qiladigan, bizni ma'lumotlar bilan ta'minlaydigan internetni ham bebaho ne'matlaringdan biri deb bilamiz.",
+   "Fiqh – chuqur va nozik tushunish degan ma'noni bildiradi.",
+   "Haqiqiy musulmon – tilidan va qo‘lidan boshqalar zarar ko‘rmaydigan kishidir.",
+   "Kishining o‘ziga taalluqli bo‘lmagan masalalarga aralashmasligi uning risoladagidek musulmon ekanini ko‘rsatadi.",
+   "Musulmon kishi hazil qilishda chegaradan chiqmaydi.",
+   "Farzandimizning eng katta dushmani, bekorchilikdan o‘tirib olib nima qilishini bilmagan paytlaridir.",
+   "So‘zning isrofi mish-mish, g‘iybat, yolg‘on, chaqimchilikdir."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Insoniyat Yer yuzida Alloh taoloning shariatiga ko‘ra yashashga majbur ekan, namoz fiqhini bilish ham majburiy sanaladi. Xuddi shunday, haj fiqhi ham, hajning Alloh qullaridan istagan narsalar orasida bo‘lgani sababidan butun boyligi va imkoniyatlari boisidan umrida bir bor haj qilishga majbur bo‘lgan musulmonlar tarafidan bilinishi shartdir. Xoh siyosat, xoh tijorat, xoh dehqonchilik, xoh san'at bilan mashg‘ul bo‘lsin, har bir musulmon o‘z hayotini to‘liq qamrab oladigan dinining o‘z kasbi bilan bog‘liq hukmlarini bilishga mas'uldir.",
+   "question": "Har bir kasb yoki faoliyatda o‘ziga xos mas'uliyat va qoidalar borligi haqida o‘ylab ko‘rganmisan? Sen kelajakda tanlamoqchi bo‘lgan kasbingda qanday axloqiy va ma'naviy qoidalarga amal qilishni muhim deb hisoblaysan?"
+  },
+  {
+   "part": 1,
+   "context": "Haqiqiy musulmon – tilidan va qo‘lidan boshqalar zarar ko‘rmaydigan kishidir. Bu hadisi sharifdir. Alloh Payg‘ambarimizga koinotdagi zarrachalar adadicha salavot va salom yetkazsinki, sunnati nabaviyya qanchalar muhtasham standartdir. Mobil telefonda va internetda qo‘limiz yoki tilimiz bilan ish bajarishimizni unutmaylik. Bosilgan birgina tugmacha ham boshqa bir musulmonga zarar yetkazishi mumkin ekan, bu hadis doim yodimizda turishi kerak.",
+   "question": "Internetda yozilgan birgina izoh yoki xabar boshqa insonning kayfiyatiga va hayotiga qanday ta'sir ko‘rsatishi mumkinligini guvohi bo‘lganmisan? O‘zing ijtimoiy tarmoqlarda muloqot qilganda boshqalarga zarar yetkazmaslik uchun qanday qoidalarga amal qilasan?"
+  },
+  {
+   "part": 2,
+   "context": "Afsuski, Qur'oni karimning hukmiy jihatdan eng og‘ir oyatini eng ko‘p foydalanuvchisi bo‘lgan Twitterga yuklasak, bor-yo‘g‘i ellik-yuz ming kishi ko‘rsa, behayolik yoki kimgadir bosim o‘tkazish, haqorat qilish bilan bog‘liq narsalarni esa yuz minglab odam o‘sha ondayoq tomosha qilyapti. Musulmon kishi safsataboz bo‘lmaydi. To‘g‘ri kelgan narsani yumor ekan deb internetga yoyavermaydi.",
+   "question": "Nima uchun internetda foydasiz yoki salbiy kontentlar ko‘pincha tezroq ommalashib ketadi deb o‘ylaysan? Sen o‘zing ijtimoiy tarmoqlarda foydali va mazmunli ma'lumotlarni ko‘proq ulashish uchun nimalar qila olasan?"
+  },
+  {
+   "part": 2,
+   "context": "Farzandimizning eng katta dushmani, bekorchilikdan o‘tirib olib nima qilishini bilmagan paytlaridir. Dunyo uyga vazifalardan iborat emas, albatta. Mana shunday fikr shakllanadigan qilib katta qilingan bola uyga vazifasi tugagandanda keyin foydalanadi.",
+   "question": "Bo‘sh vaqtingni qanday o‘tkazishni rejalashtirasan? Telefon yoki kompyuter qarshisida maqsadsiz o‘tirish o‘rniga o‘z ustingda ishlash va qiziqishlaringni rivojlantirish uchun qanday mashg‘ulotlarni tanlagan bo‘larding?"
+  },
+  {
+   "part": 3,
+   "context": "So‘zning isrofi mish-mish, g‘iybat, yolg‘on, chaqimchilikdir. Shunday so‘zlar borki, bir novvoyxona to‘la nondan qadrlidir va jonga, dinga, imonga va insoniylikka naf yetkazadi. Shunday ekan, mana shunday o‘ta qadrli bo‘lgan so‘zidan kishi nonni isrof qilishdan ehtiyot bo‘lgandek ehtiyot bo‘lib foydalanishi zarur.",
+   "question": "Matnda so‘z isrofi haqida gapirilgan. Sencha, muloqotda kerakli va qadrli so‘zlarni gapirish insonga va uning atrofidagilarga qanday foyda keltiradi? Hayotingdan so‘zning qadrini his qilgan biror vaziyatni eslay olasanmi?"
+  }
+ ]
+}

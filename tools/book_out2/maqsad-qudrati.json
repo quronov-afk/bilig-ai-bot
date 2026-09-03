@@ -1,0 +1,479 @@
+{
+ "title": "Maqsad qudrati",
+ "author": "Richard Leider, Devid Shapiro",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "17-19",
+  "age_hint": "16+",
+  "topics": [
+   "maqsad",
+   "shaxsiy rivojlanish",
+   "hayot mazmuni",
+   "sog‘lom turmush",
+   "saxovat",
+   "ezgulik"
+  ],
+  "theme": "Asarning bosh fikri — har bir inson o‘zining tug‘ma iste'dodlarini kashf etib, har kuni o‘sish va boshqalarga yaxshilik qilish (baxshida etish) orqali to‘kis, mazmunli va baxtli umr kechirishi mumkin.",
+  "summary": "Richard Leider va Devid Shapiro muallifligidagi «Maqsad qudrati» kitobi shaxsiy rivojlanish va hayotiy maqsadni anglash mavzusiga bag‘ishlangan. Mualliflar ko‘plab keksa insonlar bilan o‘tkazilgan suhbatlar va ilmiy tadqiqotlarga tayanib, insonda har tong uyg‘onish uchun sabab va maqsad bo‘lishi naqadar muhimligini tushuntiradilar. Kitobda maqsad ikki darajaga bo‘lib ko‘rsatiladi: «Katta M» — insonning umumiy hayotiy yo‘li va oliy maqsadi; «kichik m» — har kuni boshqalarga yaxshilik qilish va amaliy xizmat ko‘rsatish. Terri Foks va Viktor Frankl kabi shaxslarning og‘ir sinovlarni yengib o‘tib, boshqalarga yordam berish orqali hayot mazmunini topganlari ta'sirli misollar bilan yoritiladi. Shuningdek, kitobda inson o‘z iste'dod va qadriyatlarini aniqlashi uchun «Chaqiriq kartalari» mashqi hamda «Maqsad tekshiruvi» usulidan foydalanish taklif etiladi. «Moviy zonalar» loyihasi va Albert Lee shahridagi tajriba orqali maqsadi bor insonlar uzoqroq, sog‘lomroq hamda depressiyaga kamroq chalinib yashashi ilmiy jihatdan isbotlanadi. Asar yakunida mualliflar har bir kitobxonni o‘z maqsad bayonotini yozishga hamda har kuni boshqalarga rahm-shafqat va mehr ulashib yashashga chorlaydilar.",
+  "characters": "Richard Leider — xalqaro murabbiy va yozuvchi, insonlarga har tong uyg‘onish sababini topishda yordam beradi. Devid Shapiro — faylasuf va profesor, yoshlar va kattalar o‘rtasida fikrlash hamda muloqotni rivojlantiradi. Terri Foks — yoshligida saratonga uchrab oyog‘idan ayrilgan, ammo «Umid marafoni» orqali millionlab insonlarga ilhom bergan kanadalik qahramon. Viktor Frankl — psixiatr va faylasuf, inson hayotidagi eng buyuk ehtiyoj ma'no izlash ekanini ko‘rsatgan donishmand.",
+  "conclusion": "Ushbu kitob kitobxonga o‘zining kuchli va noyob iste'dodlarini anglashga yordam beradi. Bola va o‘smir hayotda faqat shaxsiy manfaat emas, balki boshqalarga foyda keltirish va el-yurtga xizmat qilish eng oliy baxt ekanini tushunib yetadi. Ota-onalar va farzandlar o‘rtasida hayotiy qadriyatlar, halollik hamda maqsadlilik haqida chuqur va samimiy suhbatlar qurish uchun ajoyib manba bo‘ladi.",
+  "difficulty": "o‘rta",
+  "mood": "ilhomlantiruvchi, o‘ylantiruvchi",
+  "for_whom": "Hayotda o‘z yo‘lini izlayotgan, o‘z ustida ishlashni xush ko‘radigan va boshqalarga yaxshilik qilishni maqsad qilgan yoshlar uchun.",
+  "events": [
+   "1. Richard va Devid kitobning to‘rtinchi nashrida hamkorlikda yangi yondashuvlarni ilgari surishdi.",
+   "2. Keksa insonlar o‘rtasida o‘tkazilgan so‘rovnomada ko‘pchilik hayotni boshidan boshlasa, ko‘proq fikr yuritishi va jasur bo‘lishini aytdi.",
+   "3. Mualliflar maqsadni yuksak yo‘l bo‘lgan «Katta M» va kundalik amaliyot bo‘lgan «kichik m» tushunchalariga ajratdilar.",
+   "4. «Pixar» studiyasining «Ruh» va Brodveyning «Q ko‘chasi» asarlari orqali maqsad har bir insonda mavjudligi tushuntirildi.",
+   "5. Maqsadni aniqlash va ruh sog‘lomligini baholash uchun «Maqsad tekshiruv» savolnomasi taqdim etildi.",
+   "6. Zamonaviy jamiyatda keng tarqalgan yolg‘izlik muammosiga eng yaxshi davo boshqalarga xizmat qilish ekani ko‘rsatildi.",
+   "7. Richard Shveysariyada kutilmagan sog‘liq inqiroziga duch kelib, o‘z maqsadini qayta anglab yetdi.",
+   "8. Kanadalik yosh yigit Terri Foks saraton kasalligiga qaramay, boshqalarga yordam berish uchun marafon boshladi.",
+   "9. Piter Drakker inson hayotida tanlagan birinchi kasbi to‘g‘ri chiqish ehtimoli juda kamligini ta'kidladi.",
+   "10. Mualliflar maqsadni kashf etishning uch bosqichini yoritib berishdi: Ochish, Kashf etish va Azoblanish orqali anglash.",
+   "11. Rolli ismli mutaxassis boshqalarni tinglash sovg‘asi orqali o‘z hayotiy chaqirig‘ini topgani aytib o‘tildi.",
+   "12. Inson o‘z tabiiy moyilligini aniqlashi uchun 52 ta iste'dod aks etgan Chaqiriq kartochkalari taqdim etildi.",
+   "13. Inson ishida, ko‘ngilli loyihalarida yoki nafaqada ham o‘z chaqirig‘ini ro‘yobga chiqarishi mumkinligi uqtirildi.",
+   "14. Insonning ruhiy so‘nishi va ichki chirish jarayoni maqsadsizlik hamda befarqlikdan kelib chiqishi tushuntirildi.",
+   "15. Zamonaviy raqamli texnologiyalar va shoshqaloqlik insoniy muloqotlarni siqib chiqarayotgani tanqid qilindi.",
+   "16. Albert Lee shahridagi «Moviy zonalar» loyihasi orqali aholining o‘rtacha umri 2,9 yilga uzaygani qayd etildi.",
+   "17. Devid Rainier Beach o‘rta maktabida o‘quvchilar bilan falsafa darslarini tashkil etish maqsad loyihasini amalga oshirdi.",
+   "18. Diana Tay musiqa va xorda kuylash orqali miya salomatligini saqlash loyihasini boshladi.",
+   "19. Doktor Majid Fotuhi maqsadi bor insonlarda Altsgeymer va insult xavfi ikki baravar kamayishini ilmiy isbotladi.",
+   "20. Kitob yakunida har bir inson uchun o‘z maqsad bayonotini tuzish va rahm-shafqat bilan yashash bo‘yicha ko‘rsatmalar berildi."
+  ],
+  "quotes": [
+   "Insonning eng buyuk va ulug‘vor san'ati – maqsadga ko‘ra yashashni bilishdir.",
+   "Maqsad – bu bizning kimligimizning, borlig‘imizning eng asl mohiyati, har bir kunimizni quvonch va ma'no bilan boshlashga turtki bo‘luvchi ichki kuchdir.",
+   "Kimda yashash uchun sabab bo‘lsa, u deyarli har qanday mashaqqatga dosh bera oladi.",
+   "Yolg‘izlikka eng samarali davo – bu boshqalarga xizmat qilishdir.",
+   "Baxtli bo‘lishning eng oddiy yo‘li – yaxshilik qilishdir.",
+   "Biz kunlarimizni qanday o‘tkazsak, butun umrimiz ham shunday o‘tadi.",
+   "Rahm-shafqat – maqsadning yuragidir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kitobning to‘rtinchi nashriga kim hammuallif sifatida qo‘shildi?",
+   "options": [
+    "A) Devid Shapiro",
+    "B) Terri Foks",
+    "C) Viktor Frankl",
+    "D) Den Byutner"
+   ],
+   "answer": "A) Devid Shapiro"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Richard Leiderning «katta M» maqsadi nima haqida?",
+   "options": [
+    "A) O‘sish va boshqalarga foyda keltirish",
+    "B) Faqat dunyo bo‘ylab sayohat qilish",
+    "C) Faqat moliyaviy boylikka erishish",
+    "D) Sport musobaqalarida g‘alaba qozonish"
+   ],
+   "answer": "A) O‘sish va boshqalarga foyda keltirish"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Fridrix Nitsshe yashash sababi bor inson haqida nima degan?",
+   "options": [
+    "A) Har qanday mashaqqatga dosh beradi",
+    "B) Har doim baxtli va boy bo‘ladi",
+    "C) Hech qachon kasal bo‘lmaydi",
+    "D) Barcha insonlarga rahbarlik qiladi"
+   ],
+   "answer": "A) Har qanday mashaqqatga dosh beradi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shifokorlar maqsadi bor insonlar haqida nimani aniqlagan?",
+   "options": [
+    "A) 7-10 yil ko‘proq umr ko‘radi",
+    "B) Umuman dori ichishi shart emas",
+    "C) Faqat tushda dam oladi",
+    "D) Kamroq kitob o‘qiydi"
+   ],
+   "answer": "A) 7-10 yil ko‘proq umr ko‘radi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "«Katta M» va «kichik m» maqsadlar bir-biridan qanday farqlanadi?",
+   "options": [
+    "A) Biri yo‘l, ikkinchisi amaliyotdir",
+    "B) Biri boylik, ikkinchisi unvon",
+    "C) Biri o‘tmish, ikkinchisi kelajak",
+    "D) Biri kitob, ikkinchisi mashq"
+   ],
+   "answer": "A) Biri yo‘l, ikkinchisi amaliyotdir"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Inson nega «kichik m» maqsad amaliyotini har kuni bajarishi kerak?",
+   "options": [
+    "A) Hayotida ma'no va ezgulik ko‘payishi uchun",
+    "B) Ko‘proq pul ishlab topish uchun",
+    "C) Mashhur bo‘lib tanilish uchun",
+    "D) Boshqalardan ustun bo‘lish uchun"
+   ],
+   "answer": "A) Hayotida ma'no va ezgulik ko‘payishi uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Odamlar nega ko‘pincha hayotiy maqsad haqida o‘ylashdan uzoqlashadi?",
+   "options": [
+    "A) Kunlik tirikchilik tashvishlari band qilgani uchun",
+    "B) Maqsad tushunchasi mavjud bo‘lmagani uchun",
+    "C) Kitoblar o‘qish taqiqlangani uchun",
+    "D) Insonlar bir-birini tushunmagani uchun"
+   ],
+   "answer": "A) Kunlik tirikchilik tashvishlari band qilgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Richardning keksa insonlardan olgan javoblarini qanday baholash mumkin?",
+   "options": [
+    "A) Haqiqiy hayotiy donishmandlik va saboqdir",
+    "B) Unchalik muhim bo‘lmagan oddiy gaplar",
+    "C) Faqat ilm-fanga qarshi fikrlar",
+    "D) Shunchaki vaqt o‘tkazish uchun suhbat"
+   ],
+   "answer": "A) Haqiqiy hayotiy donishmandlik va saboqdir"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Zamon qumida iz qoldirish» iborasi orqali nimani tasvirlagan?",
+   "options": [
+    "A) Hayotda ezgu va ma'noli iz qoldirishni",
+    "B) Sahroda uzoq sayohat qilishni",
+    "C) Vaqtni bekorga sarflashni",
+    "D) Faqat mashhur bo‘lishga intilishni"
+   ],
+   "answer": "A) Hayotda ezgu va ma'noli iz qoldirishni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Insonning hayoti ikki marta boshlanadi» degan fikr qanday tuyg‘u beradi?",
+   "options": [
+    "A) Mas'uliyat va o‘zligini anglash tuyg‘usini",
+    "B) Qo‘rquv va xavotir hissini",
+    "C) Shubhali va bekorchi o‘ylarni",
+    "D) Qayg‘uli va hazin kayfiyatni"
+   ],
+   "answer": "A) Mas'uliyat va o‘zligini anglash tuyg‘usini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Terri Foks 18 yoshida qanday kasallikka chalindi?",
+   "options": [
+    "A) Saraton kasalligiga",
+    "B) Yurak xastaligiga",
+    "C) Ko‘z ojizligiga",
+    "D) Surunkali grippga"
+   ],
+   "answer": "A) Saraton kasalligiga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Piter Drakker tanlangan ilk kasb haqida nima degan?",
+   "options": [
+    "A) To‘g‘ri chiqish ehtimoli milliondan birgina",
+    "B) Har doim eng to‘g‘ri tanlov bo‘ladi",
+    "C) Faqat ota-onalar belgilashi kerak",
+    "D) Oltmish yoshdan so‘ng tanlanadi"
+   ],
+   "answer": "A) To‘g‘ri chiqish ehtimoli milliondan birgina"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yolg‘izlikka qarshi eng samarali davo nima deb ko‘rsatilgan?",
+   "options": [
+    "A) Boshqalarga xizmat qilish va yordam berish",
+    "B) Uyda yolg‘iz kompyuter o‘ynash",
+    "C) Faqat xorijga sayohat qilish",
+    "D) Ko‘proq uxlash va dam olish"
+   ],
+   "answer": "A) Boshqalarga xizmat qilish va yordam berish"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maqsadni kashf etishning birinchi bosqichi qanday nomlanadi?",
+   "options": [
+    "A) Ochish – «Bu men haqimda»",
+    "B) Yakunlash – «Hammasi tugadi»",
+    "C) Kutish – «Hech narsa qilma»",
+    "D) Boshqarish – «Hamma bo‘ysunsin»"
+   ],
+   "answer": "A) Ochish – «Bu men haqimda»"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mualliflar aytgan «Iste'dod, ehtiros va qadriyatlar» nimani ochadi?",
+   "options": [
+    "A) Insonning chinakam hayotiy maqsadini",
+    "B) Faqat uning moddiy daromadini",
+    "C) Uning do‘stlari sonini",
+    "D) Uning unvon va martabasini"
+   ],
+   "answer": "A) Insonning chinakam hayotiy maqsadini"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Chaqiriq kartochkalari ro‘yxatida nechta iste'dod keltirilgan?",
+   "options": [
+    "A) 52 ta iste'dod",
+    "B) 10 ta iste'dod",
+    "C) 100 ta iste'dod",
+    "D) 25 ta iste'dod"
+   ],
+   "answer": "A) 52 ta iste'dod"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Terri Foks oyog‘i kesilgach ham tushkunlikka tushmadi?",
+   "options": [
+    "A) Boshqalarga yordam berish maqsadini topgani uchun",
+    "B) Sportni butunlay yomon ko‘rib qolgani uchun",
+    "C) Shifokorlar unga ko‘p pul bergani uchun",
+    "D) Uyda o‘tirishni xohlagani uchun"
+   ],
+   "answer": "A) Boshqalarga yordam berish maqsadini topgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoshqaloqlik va bandlik inson hayotiga qanday salbiy ta'sir qiladi?",
+   "options": [
+    "A) Chuqur muloqot va fikrlashni o‘g‘irlaydi",
+    "B) Insonni juda boy qilib qo‘yadi",
+    "C) Barcha kasalliklarni birdan davolaydi",
+    "D) Vaqtni sekinlashtirib qo‘yadi"
+   ],
+   "answer": "A) Chuqur muloqot va fikrlashni o‘g‘irlaydi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Rolli xarakteridagi tinglash sovg‘asini qanday baholash mumkin?",
+   "options": [
+    "A) Boshqalarga mehr va yordam beruvchi fazilat",
+    "B) Zerikarli va keraksiz fazilat",
+    "C) Faqat pul uchun qilinadigan harakat",
+    "D) Insonni charchatuvchi ortiqcha yuk"
+   ],
+   "answer": "A) Boshqalarga mehr va yordam beruvchi fazilat"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Helen Kellerning «Hayot – jasoratli sarguzasht yoki hech narsa» g‘oyasi nima uyg‘otadi?",
+   "options": [
+    "A) Maqsad sari dadil harakat qilish tuyg‘usini",
+    "B) Tinchgina hech narsa qilmaslik istagini",
+    "C) Insonlardan qochish kayfiyatini",
+    "D) Faqat moddiy narsalarga intilishni"
+   ],
+   "answer": "A) Maqsad sari dadil harakat qilish tuyg‘usini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Albert Lee shahridagi loyihada odamlarning umri qancha uzaydi?",
+   "options": [
+    "A) O‘rtacha 2,9 yilga",
+    "B) O‘rtacha 10 yilga",
+    "C) O‘rtacha 1 oyga",
+    "D) Umri umuman o‘zgarmadi"
+   ],
+   "answer": "A) O‘rtacha 2,9 yilga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Devid Shapiro o‘zining maqsad loyihasini qaysi maktabda o‘tkazdi?",
+   "options": [
+    "A) Rainier Beach o‘rta maktabida",
+    "B) Sietl boshlang‘ich maktabida",
+    "C) London kollejida",
+    "D) Minnesota universitetida"
+   ],
+   "answer": "A) Rainier Beach o‘rta maktabida"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Doktor Majid Fotuhi fikricha, maqsad nima xavfini kamaytiradi?",
+   "options": [
+    "A) Altsgeymer va insult xavfini",
+    "B) Yiqilib tushish xavfini",
+    "C) Uyqusizlikni butunlay yo‘qotishni",
+    "D) Ko‘z o‘tkirlashib ketishini"
+   ],
+   "answer": "A) Altsgeymer va insult xavfini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mayo klinikasi ruhiyatni qanday ta'riflagan?",
+   "options": [
+    "A) Ma'no va maqsad baxsh etuvchi donolik",
+    "B) Faqat kitob o‘qish san'ati",
+    "C) Boshqalarni majburlash kuchi",
+    "D) Moddiy boylik yig‘ish usuli"
+   ],
+   "answer": "A) Ma'no va maqsad baxsh etuvchi donolik"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Richard taklif etgan «uchta S» tamoyiliga qaysi so‘zlar kiradi?",
+   "options": [
+    "A) Soddalik, Qisqalik, Sadoqat",
+    "B) Tezlik, Kuch, Boylik",
+    "C) Sabr, Sukut, Sayohat",
+    "D) Bilim, San'at, Sezgi"
+   ],
+   "answer": "A) Soddalik, Qisqalik, Sadoqat"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun Rabbi Shneerson yigitga «shunchaki boshla» deb maslahat berdi?",
+   "options": [
+    "A) Maqsad ezgu amallar orqali ochilgani uchun",
+    "B) Kitob o‘qish befoyda bo‘lgani uchun",
+    "C) Yigit uzoqqa safar qila olmagani uchun",
+    "D) Vaqt juda ko‘p bo‘lgani uchun"
+   ],
+   "answer": "A) Maqsad ezgu amallar orqali ochilgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun musiqa bilan shug‘ullanish keksa insonlar uchun foydali?",
+   "options": [
+    "A) Xotira va miya faoliyatini yaxshilagani uchun",
+    "B) Faqat pul tejashga yordam bergani uchun",
+    "C) Ko‘p uxlamaslikka imkon bergani uchun",
+    "D) Boshqa ishlardan ozod qilgani uchun"
+   ],
+   "answer": "A) Xotira va miya faoliyatini yaxshilagani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Viktor Franklning «Insonni inson qiladigan narsa – ma'noni izlashdir» fikri to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, chunki ma'no hayotni boyitadi",
+    "B) Noto‘g‘ri, chunki ma'no muhim emas",
+    "C) Xato, chunki faqat pul muhim",
+    "D) Shubhali, chunki inson faqat ishlaydi"
+   ],
+   "answer": "A) To‘g‘ri, chunki ma'no hayotni boyitadi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tugallanmagan manifestda «Rahm-shafqat – maqsadning yuragidir» deyilganini qanday baholash mumkin?",
+   "options": [
+    "A) Insoniy va olijanob qadriyat deb",
+    "B) Keraksiz va zaif tuyg‘u deb",
+    "C) Faqat yosh bolalarga xos deb",
+    "D) Vaqtinchalik va o‘tkinchi tuyg‘u deb"
+   ],
+   "answer": "A) Insoniy va olijanob qadriyat deb"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«O‘sish va boshqalarga baxshida qilish» shiori kitobxonda qanday hissiyot uyg‘otadi?",
+   "options": [
+    "A) Boshqalarga yaxshilik qilish va ezgulik tuyg‘usini",
+    "B) Faqat o‘zini o‘ylash va xudbinlikni",
+    "C) Hayotdan ko‘ngli qolish hissini",
+    "D) Bevaqt shoshilish va tushkunlikni"
+   ],
+   "answer": "A) Boshqalarga yaxshilik qilish va ezgulik tuyg‘usini"
+  }
+ ]
+}

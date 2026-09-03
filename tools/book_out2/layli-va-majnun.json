@@ -1,0 +1,477 @@
+{
+ "title": "Layli va Majnun",
+ "author": "Alisher Navoiy",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "vafo va sadoqat",
+   "pok muhabbat",
+   "tasavvuf va falsafa",
+   "sabru toqat",
+   "ilm va odob"
+  ],
+  "theme": "Asarning bosh g‘oyasi — pok va samimiy muhabbatning inson ruhiyatini yuksaltirishi, dunyoviy va ilohiy ishqning muqaddasligi hamda sadoqat, sabr va insoniy kamolotning oliy qadriyat ekanligini ko‘rsatishdir.",
+  "summary": "Alisher Navoiyning «Layli va Majnun» dostoni pok va oliy ishq fojiasiga bag‘ishlangan. Qays ismli yigit maktabda Layli degan qizni ko‘rib, unga beqiyos ko‘ngil qo‘yadi. Ularning o‘zaro muhabbati tezda el orasida doston bo‘ladi. Qaysning Layliga bo‘lgan beqiyos oshiqligi sababli uni «Majnun» (telba) deb atay boshlashadi. Qaysning otasi Laylining qabilasiga sovchi yuboradi, ammo Laylining otasi Majnunni devona deb bilib, qizini berishdan bosh tortadi. Hajr azaobiga chiday olmagan Majnun sahrolarga chiqib ketadi, wild kiyiklar va hayvonlar bilan do‘stlashadi. Layli esa o‘z xohishisiz badavlat kishi Ibni Salomga uzatiladi, ammo u vafo va ibosini saqlab, yangi eriga yaqinlashmaydi. Sardor Navfal Majnunga yordam berish uchun Laylining qabilasiga qarshi qo‘shin tortadi, ammo keyinchalik urushda bekorga qon to‘kilmasligi uchun sulh tuzadi. Majnun sahroda zanjirga solinadi, otasi uni Ka'baga olib borib xudodan shifo so‘rashni aytganda, Majnun ishqini yanada ziyoda qilishni so‘raydi. Majnun ota-onasi vafot etganini eshitib, ularning qabrini ziyorat qiladi. Layli firoqda og‘ir xastalikka chalinib, dunyodan ko‘z yumadi. Majnun Laylining vafot etganini eshitib, uning qabri ustida jon beradi. Vafotidan so‘ng oshiq va ma'shuqa bitta qabrga yonma-yon dafn etiladi, ularning fojiali va pokizali muhabbati abadiylikka daxldor bo‘lib qoladi.",
+  "characters": "Qays (Majnun) — Layliga oshiq bo‘lib, ishq savdosida o‘zidan kechgan, sahrolarda hayvonlar bilan yashovchi pokiza oshiq.\nLayli — Qaysga samimiy va vafo bilan ko‘ngil qo‘ygan, iboli va sabrli arab qizi.\nMajnunning otasi — o‘g‘lining dardiga chora izlab, uni Ka'baga olib borgan va so‘ngida firoqda vafot etgan mehribon ota.\nLaylining otasi — el-yurt va or-nomusni deb Qaysga qizini berishni xohlamagan qabila boshlig‘i.\nNavfal — mard va saxovatli arab sardori, Majnunga achinib, unga yordam berishga urinadi.\nIbni Salom — Layliga uylangan, ammo uning qalbiga yo‘l topolmagan badavlat kishi.",
+  "conclusion": "Doston kitobxonga chinakam vafo, sabr va ma'naviy poklik sabog‘ini beradi. Ota-onaga hurmat va ularning nasihatiga quloq tutish insoniy burch ekanligi uqtiriladi. Kitobni o‘qigan bola tuyg‘ularning sofligi va majoziy ishq orqali ilohiy va unumli ma'nolarni anglashni o‘rganadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Mumuqiy mumtoz adabiyotga, chuqur his-tuyg‘ular va falsafiy dostonlarga qiziqadigan o‘quvchilar uchun.",
+  "events": [
+   "Navoiy Xudoga hamdu sano va Payg‘ambarga na't aytib asarni boshlaydi.",
+   "Qays maktabda Laylini ko‘rib, unga ko‘ngil qo‘yadi.",
+   "Qaysning oshiq bo‘lib devona bo‘lgani sababli el uni Majnun deb ataydi.",
+   "Majnunning otasi Laylining qabilasiga sovchilikka boradi.",
+   "Laylining otasi Majnunni devona deb bilib, sovchilarni rad etadi.",
+   "Majnun hajr azaobidan o‘zini sahrolarga uradi.",
+   "Majnunning otasi uni shifo topsin deb Ka'ba tavofiga olib boradi.",
+   "Majnun Ka'bada ishqining kamayishini emas, aksincha ziyoda bo‘lishini so‘raydi.",
+   "Ibni Salom Layliga uylanish maqsadida sovg‘a-salomlar bilan keladi.",
+   "Laylining otasi Ibni Salomning sovchiligini qabul qiladi.",
+   "Sahroda arab sardori Navfal Majnunni uchratib, uning holiga achinadi.",
+   "Navfal Majnunga yordam berish uchun Laylining qabilasiga urush e'lon qiladi.",
+   "Urushda ko‘p qon to‘kilishini ko‘rgan Majnun qabiladoshlariga achinadi.",
+   "Qabilalar o‘rtasida sulh tuziladi va Navfal urushni to‘xtatadi.",
+   "Majnun cho‘pon bilan uchrashib, qo‘y terisini yopinib Layli yoniga boradi.",
+   "Layli Ibni Salomga uzatilsa-da, unga ko‘ngil bermaydi va ibosini saqlaydi.",
+   "Majnun ota-onasining vafot etganini eshitib, ularning qabrini ziyorat qiladi.",
+   "Layli og‘ir xastalikka chalinib, dunyodan ko‘z yumadi.",
+   "Majnun Laylining vafotini eshitib, uning qabri ustida jon beradi.",
+   "Ikki oshiq el tomonidan bitta qabrga yonma-yon dafn qilinadi."
+  ],
+  "quotes": [
+   "Ey ishq o‘tin aylagan jahonso‘z, Har bir shararini xonumonso‘z.",
+   "G‘am tufrog‘i suyidin sirishti, Ishq o‘ti-yu yeli sarnavishti.",
+   "Beishq ulusqa kom uyqu, Ishq ahlig‘adur harom uyqu.",
+   "Bo‘l banda ato-anog‘a yakson Kim, haq dedi volidayn ehson.",
+   "Ul tengri oti bila bu noma Kim, ishq elidin ko‘tardi xoma.",
+   "Zinhorki zulm rishtasin uz, Insof ila adl qasrini tuz."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qays bilan Layli qayerda bir-birini ko‘rib ko‘ngil qo‘yishgan?",
+   "options": [
+    "A) Maktabda",
+    "B) Bozorda",
+    "C) Ka'bada",
+    "D) Sahroda"
+   ],
+   "answer": "A) Maktabda"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qaysga oshiq bo‘lib qolgani uchun qanday laqab berishdi?",
+   "options": [
+    "A) Majnun",
+    "B) Farhod",
+    "C) Navfal",
+    "D) Sa'd"
+   ],
+   "answer": "A) Majnun"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Laylining otasi Majnunning otasiga sovchilikda nima dedi?",
+   "options": [
+    "A) Qizim hali juda yosh",
+    "B) O‘g‘lingiz devona, qiz bermayman",
+    "C) Ko‘p mol-dunyoyingiz yo‘q",
+    "D) Qizim boshqaga unnashtirilgan"
+   ],
+   "answer": "B) O‘g‘lingiz devona, qiz bermayman"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Majnunning otasi uni shifo topsin deb qayerga olib bordi?",
+   "options": [
+    "A) Ka'ba ziyoratiga",
+    "B) Shom shahriga",
+    "C) Navfalning saroyiga",
+    "D) Boshqa qabilaga"
+   ],
+   "answer": "A) Ka'ba ziyoratiga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Doston boshida Navoiy Yaratganga murojaat qilib nimani so‘raydi?",
+   "options": [
+    "A) Sabr va gunohlarga mag‘firat",
+    "B) Boylik va baland martaba",
+    "C) Uzun va beparvo umr",
+    "D) Dushmanlar ustidan buyuk g‘alaba"
+   ],
+   "answer": "A) Sabr va gunohlarga mag‘firat"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qays nega o‘zini sahrolarga va cho‘llarga urdi?",
+   "options": [
+    "A) Laylining hajrida sabri tugagani uchun",
+    "B) Cho‘lda ov qilishni xohlagani uchun",
+    "C) Ota-onasidan xafa bo‘lgani uchun",
+    "D) Yangi yerlarni ko‘rmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Laylining hajrida sabri tugagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Majnun Ka'bada nega ishqining kamayishini so‘ramadi?",
+   "options": [
+    "A) Ishq uning hayot ma'nosi edi",
+    "B) Otasining gapi unga yoqmadi",
+    "C) Ka'ba qoidalarini bilmas edi",
+    "D) Kasallikdan butunlay qutulmoqchi edi"
+   ],
+   "answer": "A) Ishq uning hayot ma'nosi edi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Majnunning otasining o‘g‘li uchun harakatlari qanday baholanadi?",
+   "options": [
+    "A) Otalik mehrining yuksak namunasi",
+    "B) Keraksiz va foydasiz urf-odat",
+    "C) Qabila obro‘sini o‘ylash xolos",
+    "D) O‘g‘lini Majnunlikdan qo‘rqitish"
+   ],
+   "answer": "A) Otalik mehrining yuksak namunasi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif donda «Ey ishq o‘tin aylagan jahonso‘z» deb nimani ko‘rsatgan?",
+   "options": [
+    "A) Ishqning buyuk va kuydiruvchi kuchini",
+    "B) Dunyodagi haqiqiy olovni",
+    "C) Sahrodagi issiq havo haroratini",
+    "D) Insonlarning o‘zaro kelishmovchiligini"
+   ],
+   "answer": "A) Ishqning buyuk va kuydiruvchi kuchini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Navoiy tun va yulduzlar tasvirida qanday badiiy san'atdan foydalangan?",
+   "options": [
+    "A) Go‘zal va yorqin tashbehlar",
+    "B) Faqat oddiy xabarlardan",
+    "C) Quruq va tushunarsiz so‘zlar",
+    "D) Achchiq va pichingli so‘zlar"
+   ],
+   "answer": "A) Go‘zal va yorqin tashbehlar"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sahroda Majnunga duch kelgan mard va saxovatli sardor kim?",
+   "options": [
+    "A) Navfal",
+    "B) Ibni Salom",
+    "C) Zayd",
+    "D) Qays"
+   ],
+   "answer": "A) Navfal"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Layliga kim sovchi yuborib, unga uylanishni xohladi?",
+   "options": [
+    "A) Ibni Salom",
+    "B) Navfal",
+    "C) Qays",
+    "D) Zayd"
+   ],
+   "answer": "A) Ibni Salom"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navfal Majnunga yordam berish uchun qanday chora ko‘rdi?",
+   "options": [
+    "A) Laylining qabilasiga urush ochdi",
+    "B) Layliga ko‘p oltin yubordi",
+    "C) Majnunni shaharga olib ketdi",
+    "D) Laylining otasini ko‘ndirishga urindi"
+   ],
+   "answer": "A) Laylining qabilasiga urush ochdi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Majnun kimning kiyimini yopinib Laylining haymasi yoniga bordi?",
+   "options": [
+    "A) Cho‘ponning qo‘y terisini",
+    "B) Navfalning harbiy kiyimini",
+    "C) Otasining qimmatbaho choponini",
+    "D) Savdogarning choponini"
+   ],
+   "answer": "A) Cho‘ponning qo‘y terisini"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Layli Ibni Salomning uyiga borganda o‘zini qanday tutdi?",
+   "options": [
+    "A) Eriga yaqinlashmay vafosini saqladi",
+    "B) Tezda yangi hayotga ko‘nikdi",
+    "C) Katta bayramlar tashkil etdi",
+    "D) Majnunni butunlay unutdi"
+   ],
+   "answer": "A) Eriga yaqinlashmay vafosini saqladi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Navfal urushni to‘xtatishga nega qaror qildi?",
+   "options": [
+    "A) Behudaga qon to‘kilmasligi uchun",
+    "B) Qo‘shini yengilib bo‘lgani uchun",
+    "C) Majnun unga shunday buyurgani",
+    "D) Laylining otasi qochib ketgani"
+   ],
+   "answer": "A) Behudaga qon to‘kilmasligi uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Majnun Navfal urush qilganda nega g‘alaba qozonishni xohlamadi?",
+   "options": [
+    "A) Urushda begunohlar o‘lishini xohlamagani",
+    "B) Navfalning mag‘lub bo‘lishini xohlagani",
+    "C) Layliga yetishishni xohlamagani uchun",
+    "D) Urush qoidalarini bilmagani uchun"
+   ],
+   "answer": "A) Urushda begunohlar o‘lishini xohlamagani"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Laylining onasi qizining holatidan nega qayg‘uga tushdi?",
+   "options": [
+    "A) Qizi firoqda yonayotganini ko‘rib",
+    "B) Ibni Salom juda kambag‘allashgani",
+    "C) Majnun shahardan ko‘chib ketgani",
+    "D) Qizi maktabga bormagani uchun"
+   ],
+   "answer": "A) Qizi firoqda yonayotganini ko‘rib"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Laylining o‘z vafo va ibosini saqlashi uning qaysi sifatini ko‘rsatadi?",
+   "options": [
+    "A) Yuksak ma'naviy pokligini",
+    "B) Mag‘rurlik va manmanligini",
+    "C) Otasiga qarshi nafratini",
+    "D) Turmush tajribasi yo‘qligini"
+   ],
+   "answer": "A) Yuksak ma'naviy pokligini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Beishq ulusqa kom uyqu, Ishq ahlig‘adur harom uyqu»da nimani uqtiradi?",
+   "options": [
+    "A) Oshiqlar doim iztirobda bo‘lishini",
+    "B) Insonlar kechasi uxlashi kerakligini",
+    "C) Tunda sahroda yurish xavfliligini",
+    "D) Uyqu eng muhim nematligini"
+   ],
+   "answer": "A) Oshiqlar doim iztirobda bo‘lishini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Majnun sahrodan qaytib kelib kimlarning qabrini ziyorat qildi?",
+   "options": [
+    "A) Ota-onasining qabrini",
+    "B) Navfalning qabrini",
+    "C) Ibni Salomning qabrini",
+    "D) Ustozining qabrini"
+   ],
+   "answer": "A) Ota-onasining qabrini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Layli vafot etishidan oldin onasiga kim haqida vasiyat qildi?",
+   "options": [
+    "A) Majnun haqida",
+    "B) Ibni Salom haqida",
+    "C) Navfal haqida",
+    "D) Cho‘pon haqida"
+   ],
+   "answer": "A) Majnun haqida"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Laylining vafot etganini eshitgan Majnun nima qildi?",
+   "options": [
+    "A) Laylining eshigiga borib jon berdi",
+    "B) Yangi yurtga ko‘chib ketdi",
+    "C) Sahroga borib hayvonlarni haydadi",
+    "D) Boshqa qizga uylanishga rozi"
+   ],
+   "answer": "A) Laylining eshigiga borib jon berdi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qabila ahli ikki oshiqni qanday dafn etishdi?",
+   "options": [
+    "A) Bitta qabrga yonma-yon dafn",
+    "B) Ikki alohida shaharga ko‘mishdi",
+    "C) Sahro o‘rtasiga alohida qo‘yishdi",
+    "D) Tog‘ cho‘qqisiga olib borishdi"
+   ],
+   "answer": "A) Bitta qabrga yonma-yon dafn"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Doston oxirida Sulton Uvaysga qanday maslahat beriladi?",
+   "options": [
+    "A) Adolatli va g‘amxo‘r hukmdor bo‘lish",
+    "B) Faqat mol-dunyoni ko‘paytirish",
+    "C) Dushmanlarga qarsha doim urushish",
+    "D) Saroydan tashqariga chiqmay yashash"
+   ],
+   "answer": "A) Adolatli va g‘amxo‘r hukmdor bo‘lish"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Majnun ota-onasining qabri ustida nega achchiq ko‘z yosh to‘kdi?",
+   "options": [
+    "A) Ularning pand-nasihatiga bo‘ysunmaganidan afsuslanib",
+    "B) Ota-onasi unga meros qoldirmagani uchun",
+    "C) Sahroda yakka-yolg‘iz qolganidan qo‘rqib",
+    "D) Layli uni izlab kelmagani uchun"
+   ],
+   "answer": "A) Ularning pand-nasihatiga bo‘ysunmaganidan afsuslanib"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega xalq Layli va Majnunni bir qabrga ko‘mishga qaror qildi?",
+   "options": [
+    "A) Ularning pok va abadiy ishqiga hurmat ko‘rsatib",
+    "B) Alohida qabr qazishga vaqt bo‘lmagani uchun",
+    "C) Qabila urf-odati shunday bo‘lgani uchun",
+    "D) Otasining buyrug‘ini bajarish uchun"
+   ],
+   "answer": "A) Ularning pok va abadiy ishqiga hurmat ko‘rsatib"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Layli va Majnun fojiasining asosiy sababi nima edi?",
+   "options": [
+    "A) Qabilalar orasidagi kaltafahm va zolim qarashlar",
+    "B) Majnunning mehnat qilishni xohlamasligi",
+    "C) Laylining ota-onasini yaxshi ko‘rmasligi",
+    "D) Navfalning xiyonat qilib qo‘yishi"
+   ],
+   "answer": "A) Qabilalar orasidagi kaltafahm va zolim qarashlar"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning Sulton Uvaysga qarata aytgan nasihatlari bugun ham qadrlimi?",
+   "options": [
+    "A) Ha, adolat va insof doimiy qadriyatlardir",
+    "B) Yo‘q, hozir zamon butunlay o‘zgargan",
+    "C) Faqat podshohlar uchun foydali xolos",
+    "D) Uncha muhim emas, shunchaki shoirona"
+   ],
+   "answer": "A) Ha, adolat va insof doimiy qadriyatlardir"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Navoiy dostonda turkiy til haqida qanday fikr bildiradi?",
+   "options": [
+    "A) Turkiy tilda ham go‘zal dostonlar yaratish mumkinligini",
+    "B) Faqat forsiy tilda doston yozish kerakligini",
+    "C) Turkiy til adabiyot uchun to‘g‘ri kelmasligini",
+    "D) Barcha dillarni unutmoq kerakligini"
+   ],
+   "answer": "A) Turkiy tilda ham go‘zal dostonlar yaratish mumkinligini"
+  }
+ ]
+}

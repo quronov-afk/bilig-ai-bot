@@ -1,0 +1,480 @@
+{
+ "title": "Diqqat. Chalg‘ituvchi dunyoda muvaffaqiyat sirlari",
+ "author": "Kel Nyuport",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "15+",
+  "topics": [
+   "diqqat",
+   "vaqtni boshqarish",
+   "mehnatsevarlik",
+   "muvaffaqiyat",
+   "shaxsiy rivojlanish"
+  ],
+  "theme": "Sershovqin va chalg‘ituvchi zamonaviy dunyoda yuksak muvaffaqiyatga erishishning kaliti — bor diqqatni jamlab, chuqur va chalg‘imasdan (teran) mehnat qilishdir.",
+  "summary": "Kitob zamonaviy axborot xuruji davrida diqqatni jamlash va unumli mehnat qilish sirlariga bag‘ishlangan. Muallif Kel Nyuport psixiatr Karl Yung, yozuvchi Mark Tven, tadbirkor Bill Geyts kabi mashhur shaxslar hayotidan misollar keltirib, ularning muvaffaqiyati zamirida 'teran ish' (deep work) yotganini ko‘rsatadi. Teran ish — bu hech narsaga chalg‘imay, bor aqliy imkoniyatni ishga solgan holda chuqur diqqat bilan bajariladigan faoliyatdir. Bunga qarama-qarshi o‘laroq, 'sayoz ish' — aqliy zo‘riqish talab qilmaydigan, ijtimoiy tarmoqlar va keraksiz elektron xatlar bilan bog‘liq chalg‘ituvchi mashg‘ulotdir. Kitobda Jeyson Benning moliyaviy maslahatchilikdan dasturchilikka o‘tishi va teran ishlash orqali maoshini keskin oshirgani bayon qilinadi. Muallif teran ishlashning to‘rt qoidasini taklif etadi: teran mehnat qilishni odatga aylantirish, zerikishga chidash va diqqatni mashq qildirish, ijtimoiy tarmoqlardan voz kechish hamda sayoz ishlarni kamaytirish. Kitob oxirida muallif o‘z tajribasi va Bill Geytsning 'Altair' kompyuteri uchun qisqa fursatda dastur yaratgani misolida diqqatni jamlash inson hayotini qanchalik mazmunli va mahsuldor qilishini isbotlaydi.",
+  "characters": "Karl Yung — Shveysariyalik psixiatr, 'Minora' uzlatxonasida chalg‘imay teran ishlagan. Kel Nyuport — kitob muallifi, MTI bitiruvchisi va Jorjtaun universiteti professori. Jeyson Ben — teran ish usulini qo‘llab, qisqa fursatda dasturchilikni o‘rgangan va yuqori daromadli ishga kirgan. Bill Geyts — 'Microsoft' asoschisi, diqqatni jamlash va 'Tafakkur haftaligi' orqali ulkan muvaffaqiyatga erishgan.",
+  "conclusion": "Kitob kitobxonga zamonaviy texnologiyalar va chalg‘ituvchi omillar qurshovida o‘z diqqatini vaqtida jilovlashni o‘rgatadi. Bola yoki o‘smir undan vaqtni to‘g‘ri taqsimlash, o‘qish va ishda yuqori natijalarga erishishning ilmiy qoidalarini o‘zlashtiradi. Asar insonni sabr-toqatli bo‘lishga, ijtimoiy tarmoqlardagi bekorchi vaqtlardan voz kechib, chinakam bilim va mahorat egasi bo‘lishga undaydi.",
+  "difficulty": "o‘rta",
+  "mood": "jiddiy, ilhomlantiruvchi, o‘ylantiruvchi",
+  "for_whom": "O‘qish va ishda yuqori natijalarga erishmoqchi bo‘lgan, diqqatini jamlashga va vaqtini to‘g‘ri boshqarishga intiladigan o‘smirlar uchun.",
+  "events": [
+   "1. Karl Yung 1922-yilda Bollingen qishlog‘ida o‘zi uchun 'Minora' nomli uzlatxona binosini qurdi.",
+   "2. Yung har kuni ertalab 2 soat davomida hech narsaga chalg‘imay ijodiy yozuv ishlari bilan shug‘ullandi.",
+   "3. Muallif 'teran ish' va 'sayoz ish' tushunchalariga ilmiy ta'rif berdi.",
+   "4. Mark Tven, Vudi Allen va J. K. Rouling kabi mashhur ijodkorlarning chalg‘ituvchi vositalardan olisda ishlagani ko‘rsatildi.",
+   "5. Bill Geyts yiliga ikki marta 'Tafakkur haftaligi' o‘tkazib, katta g‘oyalar ustida ishlagani aytildi.",
+   "6. Jeyson Ben 'Excel' makroslarini yaratib, 6 soatlik ishini 1 soatga qisqartirdi.",
+   "7. Ben xonasiga kompyutersiz qamalib, 18 ta dasturlash kitobini o‘qib chiqdi va yuqori maoshli dasturchiga aylandi.",
+   "8. Neyt Silver SQL va 'Stata' dasturlari orqali murakkab statistik tahlillar o‘tkazishi misol qilindi.",
+   "9. Sofi Leroy 'e'tibor qoldig‘i' effektini tadqiq qilib, bir ishdan boshqasiga o‘tganda diqqat bo‘linishini isbotladi.",
+   "10. Tom Koxran bir haftada 511 ta elektron xat olib, vaqti samarasiz ketayotganini hisoblab chiqdi.",
+   "11. Uinifred Gallager og‘ir saraton tashxisidan so‘ng diqqatini yaxshi narsalarga qaratish orqali baxt topganini yozdi.",
+   "12. Dreyfus va Kelli hunarmandlik mashg‘ulotining inson hayotidagi ma'nosi haqida fikr bildirdi.",
+   "13. Brayen Chappel ritmik falsafani qo‘llab, har tong soat 5:30 da turib dissertatsiyasini muvaffaqiyatli yozib tugatdi.",
+   "14. Pitr Shenkmen samolyotda uchish vaqtida chalg‘ituvchi omillar yo‘qligi uchun samarali ijod qildi.",
+   "15. Michigandagi Ann Arbor kampusida o‘tkazilgan tajriba tabiatda sayr qilish diqqatni tiklashini ko‘rsatdi.",
+   "16. Clifford Nass bir vaqtda ko‘p ish qiluvchilarning miyasi surunkali chalg‘ishga o‘rganib qolishini aniqladi.",
+   "17. Baratunde Turston 25 kun davomida ijtimoiy tarmoqlar va internetdan uzilib tajriba o‘tkazdi.",
+   "18. Rayen Nikodem uydagi buyumlarini qutilarga joylab, ortiqcha narsalardan xalos bo‘ldi.",
+   "19. 37signal kompaniyasi yozda 4 kunlik ish haftasini joriy qilib, xodimlarning unumdorligini oshirdi.",
+   "20. Radxika Nagpal yillik xizmat safarlarini 5 taga cheklab, teran faoliyatga vaqt ajratdi.",
+   "21. MTI professorlari keraksiz va mujmal elektron xatlarga javob bermaslik odatini qo‘lladi.",
+   "22. Bill Geyts va Pol Allen 1974-yilda 8 hafta davomida intensiv ishlab, Altair kompyuteri uchun BASIC dasturini yaratdi.",
+   "23. Kel Nyuport teran ish usullarini takomillashtirib, bir yilda 9 ta ilmiy maqola nashr ettirdi va doimiy professorlikka erishdi."
+  ],
+  "quotes": [
+   "Teran ish – hech narsaga chalg‘imasdan, bor aqliy imkoniyatni ishga solgan holda, chuqur diqqat bilan bajarilgan ishdir.",
+   "Sayoz ish: Aqliy zo‘riqish talab qilmaydigan, logistik xarakterdagi, ko‘pincha chalg‘ishlar bilan ham bajariladigan ish.",
+   "Teran mehnat qilish qobiliyati tobora noyoblashayotgani bilan bir vaqtda iqtisodiyotda o‘ta qiymatli bo‘lib bormoqda.",
+   "diqqatni mohirona boshqarish yaxshi hayot kechirishning tamal toshi va tajribangizni har jihatdan boyitishning haqiqiy kaliti ekanini ta'kidlaydi",
+   "Kichik noxushliklar bo‘lib turishiga odatlaning. Agar shunday yo‘l tutmasangiz, hayotni o‘zgartiradigan buyuk ishlarga vaqt topolmaysiz.",
+   "men maqsadli hayot kechirmoqchiman, chunki shu eng yaxshi hayotdir"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karl Yung Bollingenda qurgan binosini nima deb atagan?",
+   "options": [
+    "A) Minora",
+    "B) Hujra",
+    "C) Qasr",
+    "D) Uzlatxona"
+   ],
+   "answer": "A) Minora"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karl Yung Bollingendagi minorasida soat nechada turardi?",
+   "options": [
+    "A) Soat oltida",
+    "B) Soat yettida",
+    "C) Soat sakkizda",
+    "D) Soat to‘qqizda"
+   ],
+   "answer": "B) Soat yettida"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vudi Allen ssenariy yozishda qaysi yozuv mashinkasidan foydalangan?",
+   "options": [
+    "A) Olympia SM3",
+    "B) Remington 10",
+    "C) Underwood 5",
+    "D) Royal Quiet"
+   ],
+   "answer": "A) Olympia SM3"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jeyson Ben dasturlashni o‘rganish uchun nechta kitob o‘qib tugatdi?",
+   "options": [
+    "A) 10 ta kitob",
+    "B) 15 ta kitob",
+    "C) 18 ta kitob",
+    "D) 25 ta kitob"
+   ],
+   "answer": "C) 18 ta kitob"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sayoz ish va teran ishning asosiy farqi nimada?",
+   "options": [
+    "A) Aqliy zo‘riqish va diqqat darajasida",
+    "B) Ishlash uchun ketadigan vaqt miqdorida",
+    "C) Ishlatiladigan kompyuter dasturlari turida",
+    "D) Bajariladigan joy va sharoit xususiyatida"
+   ],
+   "answer": "A) Aqliy zo‘riqish va diqqat darajasida"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Karl Yung nega Syurixdan Bollingendagi o‘rmonga chekingan edi?",
+   "options": [
+    "A) Kasbidan qochish uchun",
+    "B) Chuqur mushohada va teran ishlash uchun",
+    "C) Bemorlardan yashirinish uchun",
+    "D) Oila a'zolaridan uzoqlashish uchun"
+   ],
+   "answer": "B) Chuqur mushohada va teran ishlash uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jeyson Ben xonasiga kompyutersiz kirib, ichkaridan qulflab olishdan niyat nima edi?",
+   "options": [
+    "A) Chalg‘ituvchi vositalardan xalos bo‘lib o‘rganish",
+    "B) Ota-onasidan o‘zini olib qochish",
+    "C) Uyda tejamkorlik tartibini o‘rnatish",
+    "D) Dasturlash kursidan butunlay voz kechish"
+   ],
+   "answer": "A) Chalg‘ituvchi vositalardan xalos bo‘lib o‘rganish"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bill Geytsning \"Tafakkur haftaligi\" o‘tkazishi uning faoliyatiga qanday ta'sir ko‘rsatgan?",
+   "options": [
+    "A) Muhim strategik g‘oyalar shakllanishiga yordam bergan",
+    "B) Kompaniya ishini orqaga tortib yuborgan",
+    "C) Xodimlarning unga bo‘lgan ishonchini yo‘qotgan",
+    "D) Faqat xarajatlarni ko‘paytirishga olib kelgan"
+   ],
+   "answer": "A) Muhim strategik g‘oyalar shakllanishiga yordam bergan"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"teran ish\"ni 21-asrda nima deb ataydi?",
+   "options": [
+    "A) 21-asr gegemoni",
+    "B) Davr fojiasi",
+    "C) Sanoat inqilobi",
+    "D) Vaqt o‘g‘risi"
+   ],
+   "answer": "A) 21-asr gegemoni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Nil Stefensonning Barhayot roman va elektron xatlar haqidagi fikri nimani anglatadi?",
+   "options": [
+    "A) Arzirli natija uchun diqqat zarurligini",
+    "B) Xat yozish roman yozishdan muhimligini",
+    "C) Texnologiya yozuvchiga faqat yordam berishini",
+    "D) Roman yozish mutlaqo foydasizligini"
+   ],
+   "answer": "A) Arzirli natija uchun diqqat zarurligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sofi Leroy kiritgan ilmiy atama qaysi?",
+   "options": [
+    "A) E'tibor qoldig‘i effekti",
+    "B) Sayozlik effekti",
+    "C) Vaqt yetishmovchiligi",
+    "D) Intellektual toliqish"
+   ],
+   "answer": "A) E'tibor qoldig‘i effekti"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tom Koxran bir haftada nechta elektron xat olganini aniqladi?",
+   "options": [
+    "A) 511 ta xat",
+    "B) 284 ta xat",
+    "C) 160 ta xat",
+    "D) 300 ta xat"
+   ],
+   "answer": "A) 511 ta xat"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uinifred Gallager o‘zining 2009-yilgi kitobini nima deb atagan?",
+   "options": [
+    "A) Zavq",
+    "B) Diqqat",
+    "C) Minora",
+    "D) Sayozlar"
+   ],
+   "answer": "A) Zavq"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Brayen Chappel har tong soat nechada o‘rindan turib ishlardi?",
+   "options": [
+    "A) Soat besh yarimda",
+    "B) Soat yettida",
+    "C) Soat to‘qqizda",
+    "D) Soat to‘rtta"
+   ],
+   "answer": "A) Soat besh yarimda"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ann Arbor kampusidagi tajribada tabiatda sayr qilgan guruh qanday natija ko‘rsatdi?",
+   "options": [
+    "A) Topshiriqni 20 foizga yaxshiroq bajardi",
+    "B) Shaharda yurganlar bilan bir xil bo‘ldi",
+    "C) Topshiriqni bajarishda mutlaqo qiynaldi",
+    "D) Natijalari keskin yomonlashib ketdi"
+   ],
+   "answer": "A) Topshiriqni 20 foizga yaxshiroq bajardi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Clifford Nass tadqiqotiga ko‘ra bir vaqtda ko‘p ish qiluvchilar holati qanday?",
+   "options": [
+    "A) Surunkali tarzda chalg‘ib yuradi",
+    "B) Qisqa muddatli xotirasi kuchayadi",
+    "C) Ish sifatini keskin oshiradi",
+    "D) Diqqatini darhol jamlay oladi"
+   ],
+   "answer": "A) Surunkali tarzda chalg‘ib yuradi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega ko‘plab aqliy mehnat xodimlari zohiriy bandlikka intilishadi?",
+   "options": [
+    "A) Samaradorlikni ko‘rsatadigan aniq mezon yo‘qligidan",
+    "B) Ishlari juda ko‘pligi va ulgurishmaganidan",
+    "C) Rahbariyat ularga ko‘p maosh to‘lagani uchun",
+    "D) Texnologiyalardan foydalanishni bilmasliklaridan"
+   ],
+   "answer": "A) Samaradorlikni ko‘rsatadigan aniq mezon yo‘qligidan"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tabiat bag‘rida sayr qilish diqqatni tiklashga nega yordam beradi?",
+   "options": [
+    "A) Diqqatni zo‘riqtirmasdan qayta quvvatlanishga imkon beradi",
+    "B) Insonni butunlay uyquga ketkazishi sababli",
+    "C) Shahardagi shovqinni unutishga majbur qilgani uchun",
+    "D) Jismoniy harakat aqliy ishni almashtirgani uchun"
+   ],
+   "answer": "A) Diqqatni zo‘riqtirmasdan qayta quvvatlanishga imkon beradi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "A vazifadan B vazifaga tez-tez o‘tish ish sifatiga qanday ta'sir qiladi?",
+   "options": [
+    "A) Diqqat bo‘linib, natija yomonlashadi",
+    "B) Mehnat unumdorligi keskin oshadi",
+    "C) Yangi g‘oyalar paydo bo‘ladi",
+    "D) Hech qanday salbiy ta'sir ko‘rsatmaydi"
+   ],
+   "answer": "A) Diqqat bo‘linib, natija yomonlashadi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dreyfus va Kelli hunarmandlik haqida qanday xulosaga kelishgan?",
+   "options": [
+    "A) Hunarmandlik mavjud ma'noni anglashni sayqallaydi",
+    "B) Hunarmandlik mutlaqo zamondan orqada qolgan",
+    "C) Har bir inson hunarmand bo‘lishi shart",
+    "D) Hunarmandlik insonni qashshoqlikka yetaklaydi"
+   ],
+   "answer": "A) Hunarmandlik mavjud ma'noni anglashni sayqallaydi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Baratunde Turston ijtimoiy tarmoqlarsiz necha kun yashab tajriba o‘tkazdi?",
+   "options": [
+    "A) Yigirma besh kun",
+    "B) O‘n kun",
+    "C) Bir oy",
+    "D) Qirq kun"
+   ],
+   "answer": "A) Yigirma besh kun"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "37signal kompaniyasi yozda ish haftasini necha kunga qisqartirdi?",
+   "options": [
+    "A) To‘rt kunga",
+    "B) Uch kunga",
+    "C) Ikki kunga",
+    "D) Besh kunga"
+   ],
+   "answer": "A) To‘rt kunga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Radxika Nagpal yillik safarlar sonini ko‘pi bilan nechagacha chekladi?",
+   "options": [
+    "A) Beshtadan oshirmaslikka",
+    "B) O‘nta safarga",
+    "C) Yo‘lga chiqmaslikka",
+    "D) Yigirmata safarga"
+   ],
+   "answer": "A) Beshtadan oshirmaslikka"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bill Geyts va Pol Allen Altair uchun qancha vaqtda dastur yaratishdi?",
+   "options": [
+    "A) Sakkiz hafta ichida",
+    "B) Bir yil davomida",
+    "C) Ikki hafta ichida",
+    "D) Olti oy davomida"
+   ],
+   "answer": "A) Sakkiz hafta ichida"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Rayen Nikodem o‘z uyidagi ortiqcha buyumlardan qanday qutulgan edi?",
+   "options": [
+    "A) Bir oy ishlatilmaganlarini tashlab yubordi",
+    "B) Hammasini qo‘shnilariga bo‘lib berdi",
+    "C) Bozorda arzon narxga sotib yubordi",
+    "D) Uydagi barcha narsalarni yoqib yubordi"
+   ],
+   "answer": "A) Bir oy ishlatilmaganlarini tashlab yubordi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jarayonmarkazli elektron pochta yozishmalarining asosiy afzalligi nimada?",
+   "options": [
+    "A) Yozishmalar sonini va stressni kamaytiradi",
+    "B) Xatga tezroq va qisqa javob beriladi",
+    "C) Do‘stona munosabatlarni mustahkamlaydi",
+    "D) Kompyuterdan foydalanishni to‘xtatadi"
+   ],
+   "answer": "A) Yozishmalar sonini va stressni kamaytiradi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Garvardda Bill Geytsning muvaffaqiyatida qaysi xususiyati hal qiluvchi rol o‘ynagan?",
+   "options": [
+    "A) Had-hesabsiz teran ishlay olish qobiliyati",
+    "B) Juda ko‘p do‘stlar orttirgani",
+    "C) Faqat kompyuter o‘yinlarini o‘ynagani",
+    "D) Darslarni tez-tez qoldirib yurgani"
+   ],
+   "answer": "A) Had-hesabsiz teran ishlay olish qobiliyati"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "MTI professorlarining mujmal xatlarga javob bermasligi to‘g‘ri qarormi?",
+   "options": [
+    "A) To‘g‘ri, vaqtni muhim ishlarga tejaydi",
+    "B) Noto‘g‘ri, barcha xatlarga javob shart",
+    "C) Noto‘g‘ri, bu odobsizlik hisoblanadi",
+    "D) To‘g‘ri, lekin faqat do‘stlarga taalluqli"
+   ],
+   "answer": "A) To‘g‘ri, vaqtni muhim ishlarga tejaydi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "4 kunlik ish haftasida kamroq vaqt berilishi xodimlarga qanday ta'sir qiladi?",
+   "options": [
+    "A) Vaqtni qadrlab, mayda narsalarga sarflamaydi",
+    "B) Ishni umuman bajarmay qo‘ya qoladi",
+    "C) Doimiy charchoq va tushkunlikka tushadi",
+    "D) Ish sifatini keskin pasaytirib yuboradi"
+   ],
+   "answer": "A) Vaqtni qadrlab, mayda narsalarga sarflamaydi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Kitob oxirida keltirilgan Uinifred Gallagerning g‘oyasi nimadan iborat?",
+   "options": [
+    "A) Maqsadli hayot kechirish eng yaxshisidir",
+    "B) Boylik yig‘ish hayotning yagona maqsadi",
+    "C) Sayohat qilish eng muhim mashg‘ulotdir",
+    "D) Ijtimoiy tarmoqlar insonga baxt beradi"
+   ],
+   "answer": "A) Maqsadli hayot kechirish eng yaxshisidir"
+  }
+ ]
+}

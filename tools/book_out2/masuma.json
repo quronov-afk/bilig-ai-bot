@@ -1,0 +1,477 @@
+{
+ "title": "Ma'suma",
+ "author": "Isajon Sulton",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "jadidchilik",
+   "teatr tarixi",
+   "qatag‘on yillari",
+   "vatanparvarlik",
+   "oilaviy fojia"
+  ],
+  "theme": "Asar XX asr boshlarida Turkistondagi jadidchilik harakati, milliy teatrning shakllanishi hamda sho‘ro tuzumining mudhish qatag‘onlari oqibatida birinchi o‘zbek aktrisasi Ma'suma Qoriyeva va uning oilasi boshiga tushgan fojiali taqdir haqida hikoya qiladi. Asosiy g‘oya — millat va vatan erki yo‘lida fido bo‘lgan ziyolilar va oddiy insonlar matonatining boqiy xotirasini tiklash va qadrlashdir.",
+  "summary": "Asar XX asr boshlaridagi Toshkent hayoti, Eski Jo‘va mahallasidagi sodda va samimiy muhit tasviri bilan boshlanadi. Yetim qolgan Sa'diya ismli qizaloqni Maxsum pochcha va O‘lmas kelinoyi asrab olib, unga Ma'suma deb ism berishadi. Ma'suma xudojoy va fidoiy inson Abduvohid qorining to‘ng‘ich o‘g‘li, san'atga oshiq Bositxon Qoriyevga uzatiladi. Abduvohid qori jadidlikning «qadimchilar» qanotiga mansub, yurt ravnaqi va Usmon Qur'onini elga qaytarish yo‘lida xizmat qilayotgan ulug‘ zot edi. Uning o‘rtancha o‘g‘li Boisxon (Oltoy) esa maorif sohasida ishlaydigan «yangilikchi» shoir edi.\n\nMannon Uyg‘ur (Og‘a) milliy o‘zbek teatrini oyoqqa turg‘azish jarayonida sahnaga ayol aktrisa zarurligini anglaydi va Ma'sumadagi tug‘ma iste'dodni ko‘rib, uni teatrga taklif etadi. Ma'suma «Halima», «Layli va Majnun» kabi spektakllarda asosiy rollarni ijro etib, «o‘zbek teatri malikasi»ga aylanadi. Biroq sho‘ro tuzumining qatag‘on mashinasi ishga tushishi bilan oila boshiga mudhish kunlar keladi. Avval shoir Oltoy «Narkompros ishi» bo‘yicha, so‘ngra Abduvohid qori va Bosit Qoriyev «xalq dushmani» tuhmati bilan qamoqqa olinib, otib tashlanadi.\n\nInqilobiy ta'qiblar va jamiyatning nafratli qarashlariga qaramay, Ma'sumaning ikki o‘g‘li — Botirxon va Shavkatxon o‘z oilasi nomini oqlash hamda vatanni himoya qilish uchun Ikkinchi jahon urushiga ixtiyoriy ravishda jo‘nab ketishadi. Urush yillarida teatr repertuarlari cheklanib, do‘stlar yuz o‘girganda ham Ma'suma teatrga ajratilgan Qorasaroydagi bog‘da fidoyilik bilan ekin yetishtirib, jamoani oziq-ovqat bilan ta'minlaydi.\n\nUrush tugagach, o‘g‘illaridan xat-xabar kelmagach, Ma'suma Moskvaga otlanadi va u yerda ayanchli haqiqatni biladi: eri va qaynotasi 1938-yildayoq qatl etilgan, ikki jasur o‘g‘li esa frontda halok bo‘lgan edi. Farzandlaridan faqat «Qizil yulduz» va «Qizil bayroq» ordenlari qolgan edi. Bu og‘ir judoliklarga bardosh berolmagan Ma'suma Moskvada xastalanib vafot etadi. Jasadni poyezd yoki uchoqda olib ketishga ruxsat berilmagani sababli, u kuydirilib, kuli solingan idishcha Toshkentga olib kelinadi. Aziz Sobirov va teatr jamoasi bu kulni to‘rt kishi — Bositxon, Botirxon, Shavkatxon va Ma'suma nomidan qabrga qo‘yadilar. Shunday qilib, mustabid tuzum butun bir ma'rifatli oilani tamomila yo‘q qiladi.",
+  "characters": "Ma'suma Qoriyeva — birinchi o‘zbek aktrisasi, matonatli, pok qalb va yuksak iste'dod sohibasi. Bositxon Qoriyev — Ma'sumaning eri, madaniyat arbobi. Abduvohid qori — diniy va jamoat arbobi, oila boshlig‘i. Boisxon (Oltoy) — «yangilikchi» shoir, Maorif vazirligi xodimi. Mannon Uyg‘ur (Og‘a) — milliy teatr reissori va asoschilaridan biri. Botirxon va Shavkatxon — Ma'sumaning vatanparvar, jasur o‘g‘illari. Aziz Sobirov — Ma'sumaning iste'dodi va matonatiga hurmat bilan qaragan teatr fidoiysi.",
+  "conclusion": "Ushbu asar kitobxonga tariximizning qorong‘u sahifalari va millat ma'rifatparvarlarining chekkan iztiroblari haqida haqqoniy saboq beradi. Bola undan halollik, vatanparvarlik, sodiqlik va har qanday og‘ir sharoitda ham insoniylikni yo‘qotmaslik tuyg‘ularini o‘rganadi. Ota-onalar uchun bu kitob farzandda milliy xotira va tarixiy adolatga nisbatan chuqur hurmat shakllantirishda tengsiz manba bo‘lib xizmat qiladi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tarix va teatr san'atiga qiziqadigan, millat fidoyilarining taqdiri va oilaviy qadriyatlar haqida mushohada yuritishni xohlaydigan o‘smirlarga.",
+  "events": [
+   "1. Yetim qolgan Sa'diyani Maxsum pochcha va O‘lmas kelinoyi asrab olib, unga Ma'suma deb ism berishadi.",
+   "2. Ma'suma xotinlar davrasida xonanda va aktrisalik iqtidorini namoyon qiladi.",
+   "3. Abduvohid qori xonadoniga Ma'suma kelin bo‘lib tushadi va ro‘zg‘or ishlariga kirishadi.",
+   "4. Ufa shahridan muqaddas Osmon Qur'onini elga qaytarish bo‘yicha sa'y-harakatlar bo‘lib o‘tadi.",
+   "5. Mannon Uyg‘ur Ma'sumani teatrga taklif qiladi va u birinchi o‘zbek aktrisasi sifatida sahnaga chiqadi.",
+   "6. Ma'suma «Halima» va «Layli va Majnun» spektakllarida bosh rollarni mahorat bilan ijro etadi.",
+   "7. Katta oyi og‘ir xastalikdan so‘ng eri Abduvohid qorining roziligini olib vafot etadi.",
+   "8. Sahnada yuzini ochgan aktrisa Tursunoy eri tomonidan vahshiyona o‘ldiriladi va Hamza unga marsiya o‘qiydi.",
+   "9. Shoir Boisxon (Oltoy) «Narkompros ishi» bo‘yicha hibsga olinib surgun qilinadi.",
+   "10. Sho‘ro hukumati tomonidan Abduvohid qori va Bositxon Qoriyev «xalq dushmani» deb qamoqqa olinadi.",
+   "11. Teatr repertuaridan jadidlar va milliy ziyolilarning barcha asarlari taqiqlab olib tashlanadi.",
+   "12. Ma'suma «Otello» spektaklida Emiliya rolini qalb amri bilan ijro etadi.",
+   "13. Ikkinchi jahon urushi boshlangach, Ma'sumaning o‘g‘illari Botirxon va Shavkatxon frontga ixtiyoriy jo‘naydi.",
+   "14. Urush yillarida Ma'suma Qorasaroydagi bog‘da sabzavot yetishtirib, teatr jamoasini oziq-ovqat bilan ta'minlaydi.",
+   "15. Urush tugaganidan so‘ng o‘g‘illaridan darak bo‘lmagach, Ma'suma ularni izlab Moskvaga boradi.",
+   "16. Ma'suma Moskvada eri va qaynotasi otib tashlangani, o‘g‘illari urushda halok bo‘lgani haqidagi mash'um xabarni topadi.",
+   "17. Og‘ir judolikka bardosh berolmagan Ma'suma Moskvadagi mehmonxonada vafot etadi.",
+   "18. Jasadni olib ketish imkoni bo‘lmagani uchun u kuydirilib, kuli solingan idishcha Toshkentga keltiriladi.",
+   "19. Aziz Sobirov va teatr jamoasi Ma'sumaning kulini to‘rt kishi nomidan qabrga dafn etadilar.",
+   "20. Aradan bir yil o‘tib Aziz Sobirov Ma'sumaning qabri ustiga xotira marmar lavhini o‘rnatadi."
+  ],
+  "quotes": [
+   "Mustabid tuzum davrida yurtimiz ozodligi uchun kurashgan 100 mingdan ortiq vatandoshlarimiz qatag‘onga uchragan.",
+   "Siyosiy tuzum bir oilaning kulini shu taxlit “ko‘klarga sovurib” yuboradi.",
+   "Biz shu vaqtgacha tarixning o‘zimizga yoqqan joylarini olib, yoqmagan tomonini yashirib o‘tdik.",
+   "Ey voh, agar o‘z davlatimiz bo‘lganida edi, bu ishlarga hojat qolmas, davlat xalq ravnaqi uchun kerakli bo‘lgan barcha ishlarni bajarar edi...",
+   "Mana, bolalarim... Nomimiz ham oqlandi...",
+   "Senga mehr qo‘ygan edim, Ma'suma xonim!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sa'diya asrab olingach, unga qanday yangi ism beriladi?",
+   "options": [
+    "A) Ma'suma",
+    "B) Halima",
+    "C) Munis",
+    "D) Saida"
+   ],
+   "answer": "A) Ma'suma"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Katta oyi uchun Qashqardan har safar nima keltirilardi?",
+   "options": [
+    "A) Nofa mushki",
+    "B) Qimmatbaho duxoba",
+    "C) Ipak ro‘mol",
+    "D) Maxsus choy"
+   ],
+   "answer": "A) Nofa mushki"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Og‘a Ma'sumani birinchi marta qaysi spektaklga taklif qiladi?",
+   "options": [
+    "A) Halima spektakliga",
+    "B) Otello spektakliga",
+    "C) Hamlet spektakliga",
+    "D) Revizor spektakliga"
+   ],
+   "answer": "A) Halima spektakliga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ma'suma bolaligida qaysi operaning qo‘shiqlarini yodlab olgan edi?",
+   "options": [
+    "A) Layli va Majnun",
+    "B) Farhod va Shirin",
+    "C) Tohir va Zuhra",
+    "D) Arshin mal alan"
+   ],
+   "answer": "A) Layli va Majnun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Abduvohid qori xonadoni vakillari qanday toifalardan iborat edi?",
+   "options": [
+    "A) Qadimchilar, yangilikchilar va teatr san'atkorlari",
+    "B) Faqat harbiy va dehqonlar",
+    "C) Faqat savdogar hamda dehqonlar",
+    "D) Faqat shifokor va muallimlar"
+   ],
+   "answer": "A) Qadimchilar, yangilikchilar va teatr san'atkorlari"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Abduvohid qorining to‘ng‘ich va o‘rtancha o‘g‘li qaysi sohalarda ishlardi?",
+   "options": [
+    "A) Biri san'atda, biri maorifda",
+    "B) Ikkovi ham tijorat sohasida",
+    "C) Ikkovi ham harbiy sohada",
+    "D) Biri dehqonchilikda, biri tibbiyotda"
+   ],
+   "answer": "A) Biri san'atda, biri maorifda"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Katta oyi o‘limi oldidan nega tatar doktorini ko‘rishni xohlamadi?",
+   "options": [
+    "A) Begona erkak ko‘ziga qarashni istamagani uchun",
+    "B) Tatar doktorini tanimagani uchun",
+    "C) Shifokor kelishiga kech bo‘lgani uchun",
+    "D) Kassalligi tuzalib bo‘lgani uchun"
+   ],
+   "answer": "A) Begona erkak ko‘ziga qarashni istamagani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Abduvohid qori nega yangi davlat tuzumidan xavfsiraydi?",
+   "options": [
+    "A) Xalq mutelikka ko‘nikib qolishidan qo‘rqib",
+    "B) O‘z mol-mulkini yo‘qotishdan qo‘rqib",
+    "C) Tijorat ishlari to‘xtab qolishidan qo‘rqib",
+    "D) Boshqa shaharga ko‘chishni xohlamagani uchun"
+   ],
+   "answer": "A) Xalq mutelikka ko‘nikib qolishidan qo‘rqib"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ma'sumaning teatr sahnasiga chiqishi qanday jasorat edi?",
+   "options": [
+    "A) Milliy ayol san'atkorining ma'rifatparvarlik qadami",
+    "B) Faqat moliyaviy ehtiyoj majburiyati",
+    "C) Shunchaki vaqtinchalik qiziqish oqibati",
+    "D) Kattalarning qarshiligiga pinhona isyon"
+   ],
+   "answer": "A) Milliy ayol san'atkorining ma'rifatparvarlik qadami"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif gulto‘kar shamolni qanday obraz sifatida tasvirlaydi?",
+   "options": [
+    "A) Ham qo‘shiqchi, ham shoir",
+    "B) Begona va sovuq kimsaday",
+    "C) Faqat dahshatli va destruktiv",
+    "D) Sukunat va xotirjamlik elchisi"
+   ],
+   "answer": "A) Ham qo‘shiqchi, ham shoir"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tursunoy fojiasidan so‘ng Hamza Hakimzoda qanday asar o‘qidi?",
+   "options": [
+    "A) Tursunoy marsiyasini o‘qidi",
+    "B) Yangi komediya asarini o‘qidi",
+    "C) Sahna maqolasini o‘qib berdi",
+    "D) Gazeta xabarini o‘qib berdi"
+   ],
+   "answer": "A) Tursunoy marsiyasini o‘qidi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bositxonning inisi Boisxon qaysi bahona bilan qamoqqa olindi?",
+   "options": [
+    "A) Narkompros ishi sababli",
+    "B) Tijorat qoidalarini buzgani uchun",
+    "C) Teatr binosiga o‘t qo‘ygani uchun",
+    "D) Chet elga qochishga urinishi uchun"
+   ],
+   "answer": "A) Narkompros ishi sababli"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ma'suma Otello spektaklida qaysi rolni mahorat bilan o‘ynadi?",
+   "options": [
+    "A) Emiliya rolini",
+    "B) Dezdemona rolini",
+    "C) Halima rolini",
+    "D) Opeliya rolini"
+   ],
+   "answer": "A) Emiliya rolini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Botir va Shavkat nega frontga o‘z ixtiyori bilan ketdi?",
+   "options": [
+    "A) Nomlarini oqlash hamda vatanparvarlik uchun",
+    "B) Majburiy harbiy xizmat chaqiruvi sababli",
+    "C) Teatrdan qutulish va sayohat qilish uchun",
+    "D) Ota-onasining topshirig‘ini bajarish uchun"
+   ],
+   "answer": "A) Nomlarini oqlash hamda vatanparvarlik uchun"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Teatr repertuaridagi sara asarlar nega birdaniga taqiqqa uchradi?",
+   "options": [
+    "A) Ziyolilarga millatchilik tuhmati qo‘yilgani uchun",
+    "B) Tomoshabinlar bu spektakllarni yoqtirmagani uchun",
+    "C) Sahnadagi liboslar yetishmay qolgani uchun",
+    "D) Rejissyor ishdan o‘z xohishi bilan ketgani uchun"
+   ],
+   "answer": "A) Ziyolilarga millatchilik tuhmati qo‘yilgani uchun"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Og‘a nega Ma'sumaga birdaniga sovuq muomala qila boshladi?",
+   "options": [
+    "A) Uni dushmanlar ta'qibidan asrash uchun",
+    "B) Ma'sumaning aktrisaligidan ko‘ngli qolgani uchun",
+    "C) Boshqa aktrisani ishga olgani uchun",
+    "D) Ma'suma ishga kechikib kelgani uchun"
+   ],
+   "answer": "A) Uni dushmanlar ta'qibidan asrash uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ma'suma urush yillarida teatr uchun qanday yumushni bajardi?",
+   "options": [
+    "A) Qorasaroy bog‘ida sabzavotlar yetishtirdi",
+    "B) Kiyim-kechak tikuvchisi bo‘lib ishladi",
+    "C) Teatr chiptalarini ko‘chada sotdi",
+    "D) Boshqa shahardan tomoshabinlar chaqirdi"
+   ],
+   "answer": "A) Qorasaroy bog‘ida sabzavotlar yetishtirdi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ma'sumaning o‘g‘illarini urushga kuzatishdagi harakati qanday baholanadi?",
+   "options": [
+    "A) Yuksak matonat va vatanparvarlik namunasi",
+    "B) Oqibatni o‘ylamay qilingan shoshma-shosharlik",
+    "C) Hukumat buyrug‘iga ko‘r-ko‘rona bo‘ysunish",
+    "D) Faqat o‘z sha'nini o‘ylash harakati"
+   ],
+   "answer": "A) Yuksak matonat va vatanparvarlik namunasi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Teatr jamoasining og‘ir yillarda ekin yetishtirishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Murakkab sharoitdagi hamjihatlik va matonatni",
+    "B) Aktyorlarning dehqonchilikka bo‘lgan ishtiyoqini",
+    "C) Sahnada rol o‘ynashdan beziganligini",
+    "D) Hukumatning maxsus majburiy qishloq xo‘jalik rejasini"
+   ],
+   "answer": "A) Murakkab sharoitdagi hamjihatlik va matonatni"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Ma'sumaning Emiliya rolidagi isyonini qanday ta'riflaydi?",
+   "options": [
+    "A) O‘z taqdiridagi adolatsizlikka qarshi faryod",
+    "B) Shunchaki pyesa matnini yoddan aytish",
+    "C) Sahnadagi makkorlik va hasad ko‘rinishi",
+    "D) Tomoshabinlarni kuldirish uchun qilingan harakat"
+   ],
+   "answer": "A) O‘z taqdiridagi adolatsizlikka qarshi faryod"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ma'suma urush tugagach nimani bilish uchun Moskvaga boradi?",
+   "options": [
+    "A) Urushda yo‘qolgan o‘g‘illarining taqdirini",
+    "B) Yangi teatr spektaklida o‘ynashni",
+    "C) Eri Bositxonni topib kelishni",
+    "D) Davolanish uchun shifoxona izlashni"
+   ],
+   "answer": "A) Urushda yo‘qolgan o‘g‘illarining taqdirini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qahramon o‘g‘illardan onaizorga yodgor bo‘lib nima qoldi?",
+   "options": [
+    "A) Qizil yulduz va Qizil bayroq ordenlari",
+    "B) Harbiy kiyim va charm etiklar",
+    "C) Frontdan yozilgan bir nechta suratlar",
+    "D) Oltin soat va kumush uzuk"
+   ],
+   "answer": "A) Qizil yulduz va Qizil bayroq ordenlari"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ma'sumaning jasadini Toshkentga olib kelish uchun nima qilishadi?",
+   "options": [
+    "A) Jasadni kuydirib, kulini idishga solishadi",
+    "B) Maxsus harbiy poyezdda olib kelishadi",
+    "C) Uchoqda maxsus tobutda olib kelishadi",
+    "D) Moskva qabristoniga dafn etib qaytishadi"
+   ],
+   "answer": "A) Jasadni kuydirib, kulini idishga solishadi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Toshkentdagi dafn marosimida xoki kimlar nomidan tuproqqa beriladi?",
+   "options": [
+    "A) Ma'suma, Bositxon, Botirxon va Shavkatxon",
+    "B) Faqat Ma'suma Qoriyevaning o‘z nomidan",
+    "C) Barcha teatr aktyorlari nomidan",
+    "D) Abduvohid qori va Katta oyi nomidan"
+   ],
+   "answer": "A) Ma'suma, Bositxon, Botirxon va Shavkatxon"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar so‘ngida Ma'sumaning xotirasini abadiylashtirish uchun nima qilindi?",
+   "options": [
+    "A) Qabri ustiga kulrang marmar lavh o‘rnatildi",
+    "B) Teatr binosiga uning busti qo‘yildi",
+    "C) U haqida yangi hujjatli film olindi",
+    "D) Mahallasiga uning nomi berildi"
+   ],
+   "answer": "A) Qabri ustiga kulrang marmar lavh o‘rnatildi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Aziz Sobirov nega Ma'sumaning xokini keltirishga fidoyilik ko‘rsatdi?",
+   "options": [
+    "A) Pok qalbini hamda matonatining hurmati uchun",
+    "B) Hukumatning maxsus buyrug‘ini bajarish uchun",
+    "C) Ma'sumni o‘z yaqin qarindoshi deb bilgani uchun",
+    "D) Teatr rahbariyati unga mo‘may haq to‘lagani uchun"
+   ],
+   "answer": "A) Pok qalbini hamda matonatining hurmati uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ma'suma tushidagi adolat mahkamasida nega intiqom olishni xohlamadi?",
+   "options": [
+    "A) Intiqom yo‘qotilgan azizlarini qaytara olmasligi uchun",
+    "B) Zolimlarga rahmi kelgani hamda ularni ayagani uchun",
+    "C) O‘z ayblarini tan olib tavba qilgani uchun",
+    "D) Mahkama qoidalariga qarshi chiqishdan qo‘rqqani uchun"
+   ],
+   "answer": "A) Intiqom yo‘qotilgan azizlarini qaytara olmasligi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ma'suma taqdiri orqali muallif qanday ayol siymosini yaratgan?",
+   "options": [
+    "A) Boshiga tushgan fojialarga bardosh bergan Ona",
+    "B) O‘z manfaati uchun har narsaga tayyor shaxs",
+    "C) Siyosiy kurashlarga faol aralashgan arbob",
+    "D) Faqat san'at shuhratiga intilgan aktrisa"
+   ],
+   "answer": "A) Boshiga tushgan fojialarga bardosh bergan Ona"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Aziz Sobirov qabr tepasida Ma'sumani qanday ta'riflab xayrlashadi?",
+   "options": [
+    "A) Musaffo xayol chechagi eding deb",
+    "B) Buyuk teatr qirolichasi eding deb",
+    "C) Mashhur va omadli san'atkor eding deb",
+    "D) Yengilmas harbiy qahramon eding deb"
+   ],
+   "answer": "A) Musaffo xayol chechagi eding deb"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar xotimasida muallif zulm qilgan kimsalar haqida qanday xulosa beradi?",
+   "options": [
+    "A) Nomsizlik jahannamiga cho‘kib unutiladi",
+    "B) Tarix sahifalarida abadiy maqtovga sazovor bo‘ladi",
+    "C) Avlodlar tomonidan har doim e'zozlanib kelinadi",
+    "D) O‘z qilmishlari uchun doim kechirim oladi"
+   ],
+   "answer": "A) Nomsizlik jahannamiga cho‘kib unutiladi"
+  }
+ ]
+}
