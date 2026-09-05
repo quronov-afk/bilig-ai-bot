@@ -1,0 +1,81 @@
+{
+ "title": "Islom tarixi",
+ "author": "Shayx Muhammad Sodiq Muhammad Yusuf",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tarix",
+   "islom tarixi",
+   "ma’rifat",
+   "ibrat",
+   "payg‘ambarlar",
+   "xalifalar"
+  ],
+  "theme": "Asar insoniyatning yaratilishidan boshlab, payg‘ambarlar tarixi, Muhammad alayhissalomning siyratlari va roshid xalifalar davridagi Islom jamiyatining shakllanishi hamda rivojlanish bosqichlarini muxtasar yoritishga qaratilgan.",
+  "summary": "Ushbu kitob Islom tarixining qadimgi davrlardan to roshid xalifalar xilofatining nihoyasigacha bo‘lgan bosqichlarini qisqacha va tartibli tarzda bayon etadi. Asar so‘zboshi bilan boshlanib, unda tarix ilmini o‘rganishning inson umrini uzaytirishi va o‘tmish hodisalaridan ibrat olishdagi ahamiyati ko‘rsatib o‘tiladi. Shuningdek, musulmon tarixchilarining tarix bitishda Qur'oni Karim va hadislarga tayangani hamda tarix yozishdagi rivoyat va tahlil uslublari haqida ma'lumot beriladi.\n\nKitobning birinchi qismida Islom shariatidan oldingi qadimgi tarix yoritiladi. Unda ilk inson va ilk payg‘ambar Odam alayhissalomning yaratilishi, farishtalarning sajda qilishi va insoniyatning yer yuzidagi xalifalik mas'uliyati bayon etiladi. So‘ngra Iroq, Shom, Misr va Arabiston yarimorolida yashab o‘tgan payg‘ambarlar (Nuh, Ibrohim, Ismoil, Muso, Solih, Shuayb va boshqalar) hamda qadimgi qabilalar va davlatlar (Sumariya, Bobil, Misr fir'avnlari, Od, Samud, Yaman podshohliklari) tarixi ketma-ketlikda ko‘rib chiqiladi.\n\nBeshinchi fasldan e'tiboran Muhammad sollallohu alayhi vasallamning muborak hayotlari — nabaviy siyrat davri boshlanadi. Bu bo‘limda Makka muhiti, Payg‘ambarimizning tug‘ilishlari, yoshlik yillari, Ilk Vahiyning nozil bo‘lishi, islomiy da'vatning boshlanishi, musulmonlarning azoblanishi hamda Habashiston va Madinaga qilingan hijratlar atroflicha hikoya qilinadi. Shuningdek, Madina davridagi Badr, Uhud, Xandaq, Xaybar kabi muhim g‘azotlar, Hudaybiya sulhi, Makka fathi va Vidolashuv haji tafsilotlari keltiriladi.\n\nKitobning so‘nggi qismi Roshid xalifalar davriga bag‘ishlangan. Bu yerda Abu Bakr roziyallohu anhuning xalifaligi, murtadlarga qarshi ridda urushlari va Qur'onni jamlash ishlari; Umar roziyallohu anhuning adolatli boshqaruvi, Shom, Iroq, Misr fathlari, devon tizimi va Kufa hamda Basra shaharlarining qurilishi; Usmon roziyallohu anhu davridagi Mus'haflarning nusxalanib turli markazlarga tarqatilishi va harbiy-dengiz fathlari; Aliy roziyallohu anhu davridagi murakkab siyosiy jarayonlar va fitnalar atroflicha bayon etiladi. Yakunda Islom tamaddunining ilk qirq yildagi yuksak rivoji va uning sabablari tahlil qilinadi.",
+  "characters": "Odam alayhissalom, Nuh alayhissalom, Ibrohim alayhissalom, Muso alayhissalom, Muhammad sollallohu alayhi vasallam, Abu Bakr Siddiq, Umar ibn Xattob, Usmon ibn Affon, Aliy ibn Abu Tolib",
+  "conclusion": "O‘quvchi ushbu kitob orqali insoniyat tarixi va Islom davlatining shakllanish bosqichlari haqida yaxlit tasavvurga ega bo‘ladi. O‘tmishda yashagan payg‘ambarlar va ulug‘ shaxslar hayotidan sabot, adolat va fidoyilik kabi insoniy fazilatlarni o‘rganadi. Shuningdek, tarixiy voqea-hodisalarni tahlil qilish, sabab va oqibat aloqalarini anglash ko‘nikmasini shakllantiradi. Kitob o‘quvchida o‘tmishga va o‘zligiga nisbatan chuqur hurmat hamda ma'rifiy qarashni tarbiyalaydi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, ma’rifiy, nasihatomuz",
+  "for_whom": "Tarix, insoniyat o‘tmishi hamda Islom madaniyati va taraqqiyotiga qiziquvchi 14 va undan katta yoshdagi o‘smirlar uchun.",
+  "events": [
+   "Tarix ilmining inson umrini uzaytirishi va o‘tmishdan ibrat olishdagi o‘rni tushuntiriladi.",
+   "Musulmon tarixchilarining Qur'oni Karim va hadislarga tayanib tarix bitish uslublari yoritiladi.",
+   "Ilk inson va payg‘ambar Odam alayhissalomning yaratilishi hamda yer yuzidagi xalifalik mas'uliyati bayon etiladi.",
+   "Iroq va Shom hududlarida yashagan Nuh va Ibrohim alayhissalomlarning da'vatlari hamda qadimgi tamaddunlar ko‘rib chiqiladi.",
+   "Banu Isroil payg‘ambarlari va Shom yurtining qadimgi tarixi haqida ma'lumot beriladi.",
+   "Misr fir'avnlari davri hamda Muso alayhissalom va Banu Isroil qavmining tarixi hikoya qilinadi.",
+   "Arabiston yarimorolidagi Od, Samud, Madyan qavmlari hamda Yaman podshohliklari tarixi bayon qilinadi.",
+   "Muhammad sollallohu alayhi vasallamning tug‘ilishlari va payg‘ambarlik berilishidan oldingi Makkadagi muhit yoritiladi.",
+   "Ilk vahiy nozil bo‘lishi hamda Makkada Islom da'vatining boshlanishi va ilk musulmonlarning azoblanishi ko‘rsatiladi.",
+   "Musulmonlarning Habashiston va Madinaga hijrat qilishlari hamda Madina islom jamiyatining barpo etilishi hikoya qilinadi.",
+   "Badr, Uhud, Xandaq, Xaybar g‘azotlari va Makka fathi kabi muhim tarixiy burilishlar bayon etiladi.",
+   "Vidolashuv haji va Payg‘ambarimiz alayhissalom keltirgan islomiy ta'limotlarning insoniyatga ta'siri tahlil qilinadi.",
+   "Abu Bakr Siddiq roziyallohu anhuning xalifaligi, murtadlarga qarshi kurash va Qur'onni jamlash ishlari yoritiladi.",
+   "Umar ibn Xattob roziyallohu anhu davridagi ulkan fathlar, adolatli boshqaruv va shahar qurilishlari ko‘rib chiqiladi.",
+   "Usmon ibn Affon roziyallohu anhu davrida Mus'haf nusxalarining ko‘paytirilishi va dengiz fathlari bayon etiladi.",
+   "Aliy ibn Abu Tolib roziyallohu anhu davridagi siyosiy voqealar va roshid xalifalik davrining yakunlanishi xulosa qilinadi."
+  ],
+  "quotes": [
+   "Tarix barcha o‘tgan avlodlarning hayot madrasasidir.",
+   "Tarixni o‘rgangan kishining umri uzayadi.",
+   "Tarix bir ummat o‘zining o‘tmishiga borib keladigan va hoziri bilan o‘tmishi o‘rtasidan joy olgan ko‘prikdir.",
+   "Albatta, Allohning huzuridagi din Islomdir.",
+   "Vahiy – Alloh taoloning bandalari ichidan O‘zi tanlab olgan shaxsga O‘zi iroda qilgan hidoyatni tez va maxfiy ravishda bildirishidir.",
+   "Eng yaxshilaringiz mening asrimdagilar, so‘ng ulardan keyin keladiganlar, so‘ng ulardan keyin keladiganlar."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Mashhur tarixchilardan Ibn Asir aytadi: “Amri ma'ruf, nahyi munkar qiladigan odamlar tarix voqealaridan voqif bo‘lsalar, jabr va dushmanlik qiluvchilarning hayotlarini, ularning oqibatida kelib chiqqan buzuqchilik, xarobchilik va halokatlarni o‘rgansalar, ularning qabih ekanini tushunib yetadilar hamda mazkur ishlardan yuz o‘girishni o‘zlariga lozim deb biladilar. Agar odil voliylarning, go‘zal ishlar qilgan insonlarning tarixini o‘rgansalar, ularda go‘zal eslatmalar borligi, insonlar o‘sha tarixiy shaxslarni yaxshilik bilan eslayotganini ko‘rsalar, ularning yurtlari obod, turmushlari farovon bo‘lganini bilsalar, sanab o‘tilganlarni ma'qul sanab, ularga rag‘bat qiladilar, o‘zlari ham ulardan ibrat olishga intiladilar”.",
+   "question": "Tarixdagi yaxshi va yomon insonlarning hayotini o‘rganish sening bugungi qarorlaring va kelajakdagi maqsadlaringga qanday ta'sir ko‘rsatishi mumkin deb o‘ylaysan?"
+  },
+  {
+   "part": 1,
+   "context": "Shayx Hasan ibn Abdulloh rahmatullohi alayh tarixni o‘rganishga targ‘ib qilib, shunday deydi: “Tarix barcha o‘tgan avlodlarning hayot madrasasidir. Tarix orqali tiriklar o‘zlari uchun manfaatli narsani o‘rganib, unga amal qiladilar. Shuningdek, o‘zlariga zarar yetadigan narsalardan voqif bo‘lib, undan chetda bo‘ladilar. Tarix bir ummat o‘zining o‘tmishiga borib keladigan va hoziri bilan o‘tmishi o‘rtasidan joy olgan ko‘prikdir”.",
+   "question": "Muallif tarixni «ko‘prik» va «hayot madrasasi» deb atagan. Sen o‘z hayotingda o‘tmishdagi qaysi xato yoki tajribani o‘zing uchun muhim dars deb bilasan?"
+  },
+  {
+   "part": 2,
+   "context": "Kemachi unga qarab: “Bu shaharning nomimi, odamningmi?” dedi. Shu yerga kelganda yoshlar o‘zlarini tuta olmay, kulib yuborishdi. Ularning qahqahasi atrofga tarqaldi. “Yoshingiz nechada?” deyishdi kulib bo‘lib. “Qirqqa kirib qoldim”, dedi u. “Umringizning teng yarmini zoye qilibsiz-da, amaki!” deyishdi yoshlar. Savodsiz kemachi mayus holda jim qoldi. U o‘z navbatini kutardi.",
+   "question": "Hikoyadagi yoshlarning kemachiga qilgan muomalasi haqida nima deya olasan? Insonning bilimi yoki kasbiga qarab unga baho berish qanday oqibatlarga olib kelishi mumkinligi haqida mushohada yurit."
+  },
+  {
+   "part": 3,
+   "context": "Elchilar lol bo‘lib, turib qolishdi. Bir juldur kiyingan “vakil”ga, bir yerda o‘tirgan “amir”ga qarashdi. O‘zaro bir nimalarni gaplashdilar-da, nihoyat, kattalari Sa'd ibn Abu Vaqqos roziyallohu anhuga: “Bundan ko‘ra tuzukroq odam yo‘qmi?” dedi.",
+   "question": "Fors elchilarining odamlarga kiyim-bosh va tashqi ko‘rinishiga qarab baho berishi senga qanday saboq beradi? Sen odamlarning ichki dunyosi va asl qiymatini tushunish uchun nimaga e'tibor berasan?"
+  },
+  {
+   "part": 3,
+   "context": "Shayx Abul Hasan Nadaviy rahmatullohi alayh roshid xalifalar davri haqida quyidagilarni yozadi: “Islom jamiyatiga – va bilvosita olamga – yo‘lboshchilik qilish iymon, e'tiqod, amal, axloq, tarbiya, tartib, nafs pokligi, hayot tarzining yuksakligi, komillik va mo‘tadillik jihatidan har birlari Muhammad sollallohu alayhi vasallamning yuksak “mo‘jiza”lari bo‘lgan shaxslarning qo‘llarida turgan edi. Ularni Nabiy sollallohu alayhi vasallam shakllantirgan va Islomning qolipiga solib qo‘ygan edilar. Shuning uchun ham ularning jismlari, ko‘ngil istaklari, harakatlari, rag‘batlari va hoyu havaslari mutlaqo o‘zlarinikiga o‘xshamaydigan bo‘lib qolgandi.”",
+   "question": "Insonning o‘zi ustida ishlashi va go‘zal tarbiya topishi uning jamiyatdagi mas'uliyatiga va rahbarlik sifatlariga qanday ta'sir qilishini o‘ylaysan? O‘zingda qaysi ijobiy sifatlarni rivojlantirishni xohlaysan?"
+  }
+ ]
+}

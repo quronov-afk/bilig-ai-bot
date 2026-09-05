@@ -257,11 +257,10 @@ async def process_reading_photo(message: types.Message, state: FSMContext):
         await state.set_state(None)
         await message.answer(reply_text, parse_mode="HTML", reply_markup=appropriate_kb)
         
-        parent_id = get_parent_id(child_id)
-        if not parent_id:
-            parent_id = data.get('bolaxona_parent_id')
-        if parent_id:
-            await message.bot.send_message(parent_id, f"📖 Farzandingiz <b>'{book_title}'</b> kitobidan {pages_read_now} bet o‘qidi. (Jami: {new_page_num} bet).", parse_mode="HTML")
+        # ESLATMA (2026-09-03): bu yerda ota-onaga HAR SAHIFA uchun xabar
+        # yuborilardi — kuniga o‘nlab xabar. Ega qarori bo‘yicha olib
+        # tashlandi: ota-ona botdan faqat kitob tugagani va uch kunlik
+        # hisobotni oladi, qolganini ilovani ochib ko‘radi.
     except Exception as e:
         print(f"XATOLIK [process_reading_photo]: {e}")
         await processing_msg.delete()
@@ -485,7 +484,9 @@ async def process_audio_summary(message: types.Message, state: FSMContext):
                 f"☕️ <b>BUGUNGI 10 DAQIQALIK SUHBAT UCHUN MAVZU:</b>\n"
                 f"<i>{parent_rep.get('conversation_topic', 'Farzandingiz bilan asar qahramonining xatti-harakatlari haqida fikrlashing.')}</i>"
             )
-            await message.bot.send_message(parent_id, parent_text, parse_mode="HTML")
+            # Ota-onaga yuborilmaydi (ega qarori 2026-09-03) — tahlil
+            # ilovadagi farzand sahifasida ko‘rinadi.
+            pass
     except Exception as e:
         print(f"XATOLIK [process_audio_summary]: {e}")
         await processing_msg.delete()
@@ -596,7 +597,9 @@ async def render_active_test_question(callback: types.CallbackQuery, state: FSMC
                 f"☕️ <b>BUGUNGI 10 DAQIQALIK SUHBAT UCHUN MAVZU:</b>\n"
                 f"<i>Kechki ovqat paytida farzandingizdan so‘rang: 'Asar qahramoni bu vaziyatda boshqacha yo‘l tutsa bo‘larmidi?'</i>"
             )
-            await callback.bot.send_message(parent_id, parent_msg, parse_mode="HTML")
+            # Ota-onaga yuborilmaydi (ega qarori 2026-09-03) — natija
+            # ilovadagi farzand sahifasida ko‘rinadi.
+            pass
         await state.set_state(None)
         return
 

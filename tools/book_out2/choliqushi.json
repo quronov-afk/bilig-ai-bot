@@ -1,0 +1,482 @@
+{
+ "title": "Choliqushi",
+ "author": "Rashod Nuri Guntekin",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "oila",
+   "sabr",
+   "halollik",
+   "mehnat",
+   "vafo",
+   "ilm-ma'rifat"
+  ],
+  "theme": "Asar insonning hayotiy sinovlar oldida bukilmasligi, pok vafo, sabr-toqat hamda halol mehnat orqali haqiqiy baxt va qadr-qimmatga erishishi mumkinligini ulug‘laydi.",
+  "summary": "Roman bosh qahramoni Feride yoshligida onasidan, so‘ngra otasidan ayrilib, buvisi va xolalari tarbiyasida o‘sadi. U sho‘x, bebosh va erkatak fe'li uchun «Choliqushi» laqabini oladi. Yillar o‘tib, u xolavachchasi Komronni sevib qoladi va ularning unashtiriruvi bo‘lib o‘tadi. Biroq to‘y arafasida Feride Komronning Yevropada boshqa bir xotin bilan munosabatda bo‘lganini xat orqali bilib oladi. G‘ururi va or-nomusi sababli u uyidan qochib, Anatoliyaga o‘qituvchi bo‘lib ketadi. Feride chekka qishloqlarda, xususan Zaynilarda og‘ir sharoitlarda bolalarga dars beradi, u yerda yetim qizcha Munisani o‘z qiziday asrab oladi. Keyinchalik turli shaharlarda fransuz tili o‘qituvchisi bo‘lib ishlaydi. Lekin uning go‘zalligi va yolg‘izligi turli g‘iybat va tuhmatlarga sabab bo‘ladi. Qushadasida harbiy shifokor, mehribon va keksa doktor Xayrullobey Feridega ota kabi g‘amxo‘rlik qiladi. Munisa og‘ir xastalikdan vafot etgach, Ferideni g‘iybatlardan asrash uchun doktor u bilan rasman nikohdan o‘tadi, ammo ular ota va qizdek yashaydilar. Xayrullobey vafot etishidan oldin Feridening xotira daftarini Komronga yetkazishni vasiyat qiladi. Yillar o‘tib, Feride xolasinikiga qaytganida, Komron uning barcha dardu hasratlarini xotira daftaridan o‘qib chiqqanini va hamon uni jondan ortiq sevishini tushunadi. Yakunda ikki yosh bir-birini kechirib, baxtli hayotga qadam qo‘yadilar.",
+  "characters": "Feride (Choliqushi) — samimiy, g‘ururli, mehnatsevar va irodali qiz; Komron — Feridening xolavachchasi, nozik tabiatli, hayotda adashgan bo‘lsa-da, Ferideni sadoqat bilan sevadigan yigit; Munisa — Zaynilarda Feride asrab olgan ma'sum yetim qizcha; Xayrullobey — Feridega ota o‘rnida panoh bo‘lgan olijanob va mehmondo‘st shifokor; Mujgon — Feridening og‘ir-bosiq va sirdosh opasi.",
+  "conclusion": "Asar kitobxonga hayotdagi har qanday qiyinchilikni sabr va halol mehnat bilan yengish mumkinligini ko‘rsatadi. Kattalarga hurmat, yetim va muhtojlarga mehr ko‘rsatish, vafo va or-nomusni saqlash eng oliy insoniy fazilatlardan ekani uqtiriladi. Bola ushbu kitobdan haqiqiy sevgi, sadoqat va ma'rifatning qadrini o‘rganadi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Hayotiy sinovlarda iroda ko‘rsatishni, sadoqat va halollik qadrini anglashni xohlaydigan o‘smirlar uchun.",
+  "events": [
+   "1. Feride pansionatda fransuz tili o‘qituvchisi topshirig‘i bilan ilk bolalik xotiralarini yozadi.",
+   "2. Musulda tug‘ilgan Ferideni kichikligida arab xotini Fotima mehr bilan parvarish qiladi.",
+   "3. Enagasi Fotimadan so‘ng xizmatchi askar Husayn Feridega hamroqlik qilib, unga mehribonlik ko‘rsatadi.",
+   "4. Feridening onasi kasallik sababli Bayrutda vafot etadi.",
+   "5. Otasi Nizomiddinbey Ferideni Istanbulga, buvisining chorbog‘iga yuboradi.",
+   "6. Feride buvisining chorbog‘ida sho‘xliklar qilib, daraxtlarga chiqib Choliqushi laqabini oladi.",
+   "7. Buvining vafotidan so‘ng Feride Fransuz pansionatiga o‘qishga beriladi.",
+   "8. Feride xolavachchasi Komron bilan uchrashib turadi va orasida pinhona tuyg‘ular uyg‘onadi.",
+   "9. Komron bilan Feridening unashtiruv marosimi bo‘lib o‘tadi.",
+   "10. To‘y arafasida noma'lum xotin Feridega Komronning Yevropadagi boshqa bir ayol bilan munosabati haqida xat keltirib beradi.",
+   "11. G‘ururi topshalangan Feride uyidan qochib, Anatoliyaga o‘qituvchi bo‘lib ketadi.",
+   "12. Feride Zaynilar qishlog‘idagi qashshoq maktabda dars bera boshlaydi.",
+   "13. Zaynilarda qahraton qishda maktabga kelgan yetim qizcha Munisani Feride o‘z qiziday asrab oladi.",
+   "14. Maktab yopilgach, Feride B... va Ch... shaharlarida fransuz tili o‘qituvchisi bo‘lib ishlaydi.",
+   "15. Feridening husni va yolg‘izligi sababli atrofda turli fisqi-fasod va g‘iybatlar ko‘payadi.",
+   "16. Feride Izmir va Qushadasiga ko‘chib o‘tib, u yerda harbiy gospitalda faoliyat ko‘rsatadi.",
+   "17. Mehribon va keksa shifokor Xayrullobey Feridega ota kabi panoh bo‘ladi.",
+   "18. Asrab olgan qizi Munisa og‘ir kasallikdan vafot etadi.",
+   "19. Xayrullobey g‘iybatlarga chek qo‘yish uchun Feride bilan soxta nikoh tuzadi va ota-qizdek yashaydi.",
+   "20. Xayrullobey vafot etishidan oldin Feridening xotira daftarini Komronga topshirishni buyuradi.",
+   "21. Feride xolasi va Mujgonning uyiga qarindoshlik haqqi yuzasidan ziyoratga qaytadi.",
+   "22. Komron va Azizpochcha xotira daftarini o‘qib, Feridening barcha haqiqatlari va pokligidan xabardor bo‘lishadi.",
+   "23. Komron va qarindoshlari Ferideni sir tutib, Komron bilan qayta nikohlaydilar.",
+   "24. Feride va Komron barcha gina-kuduratlarni unutib, bir-birlarini kechiradilar hamda baxtga erishadilar."
+  ],
+  "quotes": [
+   "Inshom sinfda o‘qilganda, dugonalarim men tomonga o‘girilishib, qahqaha urib kulib yuborishdi.",
+   "Menda doimo buning aksi bo‘ladi. Qachon og‘ir qayg‘uga cho‘ksam, ko‘zlarim porlaydi, chehram ochiladi, terimga sig‘may ketaman.",
+   "Dunyoda kichkinagina yaxshilik qilishdan ham ajoyib narsa yo‘q.",
+   "Meningcha, ko‘ngil go‘zalligi yuz-ko‘z go‘zalligidan ming chandon yaxshiroq!",
+   "Choliqushi bugun o‘zining ko‘z yoshlari bilan ivitgan daftar sahifalariga to‘kilgan kuz yaproqlari orasiga abadiy ko‘miladi.",
+   "Hechqisi yo‘q, “Choliqushi”ga bo‘lgan butun muhabbatimni boshqasiga, “Gulbashakar”ga berdim..."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Aleksi opa o‘quvchilarga insho uchun qanday mavzu bergan edi?",
+   "options": [
+    "A) Hayotdagi ilk xotiralarni yozish",
+    "B) Kelajakdagi orzular haqida yozish",
+    "C) Oila va qarindoshlar haqida insho",
+    "D) Yozgi ta'til taassurotlari haqida"
+   ],
+   "answer": "A) Hayotdagi ilk xotiralarni yozish"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ferideni Musulda qaysi arab xotini parvarish qilgan edi?",
+   "options": [
+    "A) Nevrik xonim",
+    "B) Fotima xotin",
+    "C) Huriya xonim",
+    "D) Muruvvat xonim"
+   ],
+   "answer": "B) Fotima xotin"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ferideni Istanbulga kim olib kelib topshirgan edi?",
+   "options": [
+    "A) Otasi Nizomiddinbey",
+    "B) Xizmatchi askar Husayn",
+    "C) Basima xola",
+    "D) Doktor Xayrullobey"
+   ],
+   "answer": "B) Xizmatchi askar Husayn"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Komron kimning o‘g‘li edi?",
+   "options": [
+    "A) Oysha xolaning",
+    "B) Basima xolaning",
+    "C) Aziz pochchaning",
+    "D) Hoji xalfaning"
+   ],
+   "answer": "B) Basima xolaning"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Feridening bolaligida unga qaragan insonlar ketma-ketligi qaysi javobda to‘g‘ri?",
+   "options": [
+    "A) Fotima, so‘ng Husayn, so‘ng buvisi",
+    "B) Buvisi, so‘ng Fotima, so‘ng Husayn",
+    "C) Husayn, so‘ng Fotima, so‘ng buvisi",
+    "D) Fotima, so‘ng buvisi, so‘ng Husayn"
+   ],
+   "answer": "A) Fotima, so‘ng Husayn, so‘ng buvisi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Feride og‘ir qayg‘uga tushganda kulib sho‘xlik qilardi?",
+   "options": [
+    "A) Dardini boshqalarga ko‘rsatmaslik uchun",
+    "B) Qayg‘uni umuman his qilmagani uchun",
+    "C) Boshqalarni masxara qilish uchun",
+    "D) O‘qituvchilari shuni talab qilgani uchun"
+   ],
+   "answer": "A) Dardini boshqalarga ko‘rsatmaslik uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Feridening onasi nega eridan kasalligini yashirishga harakat qilgan?",
+   "options": [
+    "A) Eridan ajratib qo‘yishlaridan qo‘rqqani uchun",
+    "B) Davolanishni xohlamagani uchun",
+    "C) Istanbulga borishni istamagani uchun",
+    "D) Shifokorlarga ishonmagani uchun"
+   ],
+   "answer": "A) Eridan ajratib qo‘yishlaridan qo‘rqqani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Husaynning Feridega qilgan g‘amxo‘rligini qanday baholash mumkin?",
+   "options": [
+    "A) Sadoqatli va mehirli burch bajarish",
+    "B) Faqat buyruqni bajarish xolos",
+    "C) Majburiyatdan qilingan yumush",
+    "D) Be'tibor va sovuqqon munosabat"
+   ],
+   "answer": "A) Sadoqatli va mehirli burch bajarish"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Feridening sho‘xligini «Choliqushi» deb tasvirlashi nimani anglatadi?",
+   "options": [
+    "A) Uning chaqqon va erkin tabiatini",
+    "B) Uning faqat qushlarni yaxshi ko‘rishini",
+    "C) Uning daraxtda yashashini",
+    "D) Uning gapirmasligini"
+   ],
+   "answer": "A) Uning chaqqon va erkin tabiatini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Inshoda Feridening samimiy xotiralari sinfda qanday kutib olindi?",
+   "options": [
+    "A) Qahqaha va kulgi bilan",
+    "B) Chuqur sukunat bilan",
+    "C) Hamma yig‘lab yubordi",
+    "D) O‘qituvchi uni jazoladi"
+   ],
+   "answer": "A) Qahqaha va kulgi bilan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Feride Zaynilar qishlog‘ida kimni o‘z qizidek asrab oladi?",
+   "options": [
+    "A) Munisani",
+    "B) Narimonni",
+    "C) Mujgonni",
+    "D) Kristinani"
+   ],
+   "answer": "A) Munisani"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Feride qaysi fandan dars berish uchun imtihon topshirdi?",
+   "options": [
+    "A) Fransuz tili",
+    "B) Tarix",
+    "C) Matematika",
+    "D) Geografiya"
+   ],
+   "answer": "A) Fransuz tili"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qushadasida Feridega ota kabi panoh bo‘lgan shifokor kim edi?",
+   "options": [
+    "A) Doktor Xayrullobey",
+    "B) Hafiz Qurbon afandi",
+    "C) Rashidbey afandi",
+    "D) Rajab afandi"
+   ],
+   "answer": "A) Doktor Xayrullobey"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Feride va Xayrullobey yetimxona tashkil etmoqchi bo‘lgan joy qayer edi?",
+   "options": [
+    "A) Olajaqoyadagi chorbog‘",
+    "B) Zaynilardagi maktab",
+    "C) Istanbuldagi pansionat",
+    "D) Bayrutdagi hovli"
+   ],
+   "answer": "A) Olajaqoyadagi chorbog‘"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Feridening Anatoliyada ishlagan joylari tartibi qaysi javobda to‘g‘ri?",
+   "options": [
+    "A) Zaynilar, B..., Ch..., Qushadasi",
+    "B) Qushadasi, Zaynilar, B..., Ch...",
+    "C) B..., Zaynilar, Qushadasi, Ch...",
+    "D) Ch..., Zaynilar, B..., Qushadasi"
+   ],
+   "answer": "A) Zaynilar, B..., Ch..., Qushadasi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Xayrullobey Feride bilan rasman nikohdan o‘tishga qaror qildi?",
+   "options": [
+    "A) Ferideni nohaq g‘iybatlardan asrash uchun",
+    "B) Haqiqatda uylanmoqchi bo‘lgani uchun",
+    "C) Istanbulga qaytarish uchun",
+    "D) Maktabga mudir qilish uchun"
+   ],
+   "answer": "A) Ferideni nohaq g‘iybatlardan asrash uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Munisa vafot etganda Feride nega o‘zini yo‘qotib qo‘ydi?",
+   "options": [
+    "A) Munisa uning yagona ovunchoq joni edi",
+    "B) Maktabdan bo‘shatishgani uchun",
+    "C) Istanbulga borolmagani uchun",
+    "D) Xayrullobey ketib qolgani uchun"
+   ],
+   "answer": "A) Munisa uning yagona ovunchoq joni edi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Feridening qishloqlarda o‘qituvchilik qilib chekkan zahmatlarini qanday baholaysiz?",
+   "options": [
+    "A) Ma'rifatli va matonatli olijanoblik",
+    "B) Maqsadsiz va bekorchi urinish",
+    "C) Faqat pul topish vositasi",
+    "D) Kibr va manmanlik belgisi"
+   ],
+   "answer": "A) Ma'rifatli va matonatli olijanoblik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Dunyoda kichkinagina yaxshilik qilishdan ham ajoyib narsa yo‘q» jumlasida nima uqtiriladi?",
+   "options": [
+    "A) Beg‘araz mehr inson qalbini yoritishi",
+    "B) Yaxshilik evaziga mukofot kutish",
+    "C) Kichik ishlarga e'tibor bermaslik",
+    "D) Faqat boy odamlarga yaxshilik qilish"
+   ],
+   "answer": "A) Beg‘araz mehr inson qalbini yoritishi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": " Feride «ko‘ngil go‘zalligi yuz-ko‘z go‘zalligidan ming chandon yaxshiroq» deyganda nimani ko‘zda tutgan?",
+   "options": [
+    "A) Insonning ichki dunyosi va samimiyatini",
+    "B) Tashqi kiynish madaniyatini",
+    "C) Boylik va obro‘-e'tiborni",
+    "D) Yuzdagi chiroy va yoshlikni"
+   ],
+   "answer": "A) Insonning ichki dunyosi va samimiyatini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xayrullobey vafotidan oldin Feridening qaysi buyumini Komronga yuborgan edi?",
+   "options": [
+    "A) Xotira daftarini",
+    "B) Nikoh uzugini",
+    "C) Suratini",
+    "D) Maktubini"
+   ],
+   "answer": "A) Xotira daftarini"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Komron Ferideni noz bilan nima deb chaqirishni so‘ragan edi?",
+   "options": [
+    "A) Gulbashakar",
+    "B) Choliqushi",
+    "C) Erkatak",
+    "D) Asalim"
+   ],
+   "answer": "A) Gulbashakar"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Feridening xotira daftarini o‘qib, fatvo bergan shaxs kim edi?",
+   "options": [
+    "A) Qozi",
+    "B) Azizpochcha",
+    "C) Komron",
+    "D) Maorif mudiri"
+   ],
+   "answer": "A) Qozi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Feridening sirdosh opasi Mujgon unga qanday yordam berdi?",
+   "options": [
+    "A) Komron bilan yarashishiga ko‘maklashdi",
+    "B) Uni chet elga jo‘natib yubordi",
+    "C) Maktab ochishga pul berdi",
+    "D) Xotira daftarini yashirib qo‘ydi"
+   ],
+   "answer": "A) Komron bilan yarashishiga ko‘maklashdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar yakunida voqealar qanday tartibda yechim topadi?",
+   "options": [
+    "A) Daftar o‘qiladi, fatvo olinadi, ikki yosh qovushadi",
+    "B) Ikki yosh urishadi, Feride ketadi, daftar yoqiladi",
+    "C) Feride erga tegadi, Komron Yevropaga ketadi",
+    "D) Komron keladi, Feride uni haydaydi, daftar yo‘qoladi"
+   ],
+   "answer": "A) Daftar o‘qiladi, fatvo olinadi, ikki yosh qovushadi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Feridening xotira daftari kimlar orqali Komronning qo‘liga yetib bordi?",
+   "options": [
+    "A) Xayrullobey va Azizpochcha orqali",
+    "B) Mujgon va Munisa orqali",
+    "C) Basima xola va Hoji xalfa orqali",
+    "D) Huriya xonim va Rajab afandi orqali"
+   ],
+   "answer": "A) Xayrullobey va Azizpochcha orqali"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Komron Feridening daftarini o‘qigach, uni qo‘ldan boy bermaslikka qaror qildi?",
+   "options": [
+    "A) Feridening pokligi va sadoqatini anglagani uchun",
+    "B) Feridedan qasos olmoqchi bo‘lgani uchun",
+    "C) Azizpochchaning majburlovi sababli",
+    "D) Feride unga yolvorgani uchun"
+   ],
+   "answer": "A) Feridening pokligi va sadoqatini anglagani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Feride nima uchun oxir-oqibat Komronni kechirdi?",
+   "options": [
+    "A) Qalbida unga bo‘lgan sevgi yashagani uchun",
+    "B) Qutulishga boshqa chorasi qolmagani uchun",
+    "C) Mujgon uni majburlagani uchun",
+    "D) Xolasi buyurgani uchun"
+   ],
+   "answer": "A) Qalbida unga bo‘lgan sevgi yashagani uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Xayrullobeyning xotira daftarini Komronga yuborish qarorini qanday baholaysiz?",
+   "options": [
+    "A) Ikki yoshning baxtini o‘ylagan adolatli ish",
+    "B) Feridening sirini sotish va xiyonat",
+    "C) Shunchaki e'tiborsizlik va xatolik",
+    "D) O‘z manfaati uchun qilingan hiyla"
+   ],
+   "answer": "A) Ikki yoshning baxtini o‘ylagan adolatli ish"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Asarning yakuniy yechimidan bola qanday saboq oladi?",
+   "options": [
+    "A) Haqiqat, sabr va vafo hamisha zafar qozonadi",
+    "B) Qiyinchilik uchrasa uzlatga chekinish kerak",
+    "C) Oila a'zolaridan uzoq yashash afzal",
+    "D) O‘tmish xatolarini hech qachon kechirmaslik kerak"
+   ],
+   "answer": "A) Haqiqat, sabr va vafo hamisha zafar qozonadi"
+  }
+ ]
+}

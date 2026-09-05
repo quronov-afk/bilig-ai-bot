@@ -1,0 +1,476 @@
+{
+ "title": "Navoiy",
+ "author": "Oybek",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tarix",
+   "adabiyot",
+   "vatanparvarlik",
+   "adolat",
+   "ma‘rifat"
+  ],
+  "theme": "Asarning bosh g‘oyasi — xalq farovonligi, adolatli jamiyat, ma‘rifat va san‘atning inson hayotidagi buyuk o‘rni hamda Navoiyning vatan va el-yurt oldidagi fidokorona xizmatlarini ko‘rsatishdir.",
+  "summary": "Roman voqealari 18 yoshli Alisher Navoiyning Samarqanddan Hirotga qaytishi bilan boshlanadi. Hirotdagi Gavharshod begim madrasasida Alovuddin Mashhadiy, Zayniddin, Sultonmurod kabi talabalar va jasoratli To‘g‘onbek istiqomat qiladi. Navoiy shahrga qaytgach, o‘zining yuksak ma‘rifati va shoirlik daqiqati bilan el-yurt va saroy e‘tiborini qozonadi. Husayn Boyqaro taxtga o‘tirgach, Navoiyni davlat ishlariga taklif etadi va uni muhrdor, so‘ngra vazir etib tayinlaydi. Navoiy mansabda turib xalqni amaldorlarning zulmidan himoya qiladi, doim adolat va haqiqat tomonda turadi. U Xurosonni obod qilish uchun Injil daryosi bo‘yida madrasa, xonaqoh, kutubxona, shifoxona kabi ulug‘ Inshootlar qurdiradi. Biroq saroydagi Majididdin, Nizomulmulk kabi hasadgo‘y va munofiq amaldorlar Navoiyga va uning yaqinlariga qarshi fitna uyushtiradilar. Navoiyni saroydan uzoqlashtirish uchun uni Astrobodga hokim qilib yuborishadi. Fitnalar oqibatida Husayn Boyqaroning nabirasi Mo‘min Mirzo fojeali ravishda qatl qilinadi. Navoiyga qarshi zahar berish orqali suiqasd ham uyushtiriladi. Navoiy o‘zining sodiq shogirdlari, Behzod, Jomiy kabi san‘atkor va olim do‘stlari bilan birga umrining oxirigacha el-yurt ravnaqi va adabiyot rivojiga xizmat qiladi.",
+  "characters": "Alisher Navoiy — buyuk shoir va mutafakkir, adolatli davlat arbobi; Husayn Boyqaro — Xuroson hukmdori, Navoiyning do‘sti va shoir; Sultonmurod — ma‘rifatga intiluvchi yosh talaba; Zayniddin — havoyi va san‘atsevar mullabachcha; To‘g‘onbek — jahongashta va manfaattalab jangchi; Dildor — sadoqatli va ma‘sum qiz; Majididdin — fitnachi va xalqqa zulm o‘tkazuvchi vazir; Abdurahmon Jomiy — Navoiyning ulug‘ ustozi va do‘sti; Kamoliddin Behzod — mavlono va daho musavvir.",
+  "conclusion": "Bu roman kitobxonga buyuk ajdodimiz Alisher Navoiyning insoniy fazilatlari, vatanparvarligi va adolat yo‘lidagi sabr-matonatidan saboq beradi. Bola ushbu kitob orqali rostgo‘ylik, ma‘rifat va halollik har qanday manfaatlardan ustun turishini anglab yetadi. Ota-ona uchun bu kitob farzandida milliy g‘urur va odamiylik tuyg‘ularini shakllantirishda eng yaxshi manbadir.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tarix, adabiyot va buyuk shaxslar hayotiga qiziqadigan, ma‘naviy va falsafiy fikrlashga intiladigan o‘smirlar uchun.",
+  "events": [
+   "18 yashar Alisher Navoiy Samarqanddan Hirotga qaytib keladi.",
+   "Gavharshod madrasasining zax hujrasida Alovuddin, Zayniddin, Sultonmurod va To‘g‘onbek gurunglashadi.",
+   "Talabalar Chorsudagi Turobiy halvofurushning do‘koniga borib g‘azalxonlik qilishadi.",
+   "Husayn Boyqaro Hirot taxtiga o‘tirib, Navoiyni saroyga taklif etadi.",
+   "Sultonmurod ustoz Abdulahadning kimyoxonasiga borib ilm amaliyotini kuzatadi.",
+   "To‘g‘onbek jabrdiydalardan tortib olingan Dildorni Majididdin parvonachining saroyiga olib keladi.",
+   "Sultonmurod o‘zining dardi va Dildorga bo‘lgan muhabbatini Zayniddinga maktub orqali ochadi.",
+   "Navoiy xalq ustidan bo‘layotgan zulm va poraxo‘rlikka qarshi amaldorlarni tartibga chaqiradi.",
+   "Husayn Boyqaro dushmandan qochib Hirotga yaqinlashganda, shahar kapitanlari xiyonat qilib darvozani yopishadi.",
+   "Navoiy ko‘chada oti va eshagidan ayrilgan dehqonning arzini eshitib, eshak pulini o‘z yonidan to‘laydi.",
+   "Dildor saroy dabdabasini rad etib, o‘z erki va sevgisi uchun qochish choralarini izlaydi.",
+   "Navoiy mavlono Jomiy huzuriga borib tasavvufiy kitob yozish haqida suhbatlashadi.",
+   "Shaharda fojeali qotillik sodir bo‘lgach, Navoiy adolat qaror topishi uchun dorug‘a mahkamasiga boradi.",
+   "Navoiy Injil daryosi yoqasida madrasa, xonaqoh va kutubxonadan iborat majmualar qurdiradi.",
+   "Injil bo‘yidagi majmuaning ochilish marosimi yaqin atrofdagi el-yurt ishtirokida tantanali o‘tkaziladi.",
+   "Fitnachilar Navoiyga sho‘rbo orqali zahar berishga urinishadi, lekin sir oshkor bo‘ladi.",
+   "Navoiy mashhur musavvir Kamoliddin Behzod bilan ko‘rishib, uning asarlarini va «Zanjirband sher» rasmini tomosha qiladi.",
+   "Navoiy Balxga hokim qilib tayinlanadi va ukasi Darveshali qamalganidan xabar topadi.",
+   "Xadichabegim va fitnachilar Mo‘min Mirzoni qatl qilish haqida soxta farmon tayyorlaydilar.",
+   "To‘g‘onbek qatl farmonini Ixtiyoriddin qal‘asiga yetkazib, mash‘um jinoyatga sherik bo‘ladi.",
+   "Hirot qal‘asi mudofaasida Arslonqul va yoshlar el-yurt tinchligi uchun kurashadilar."
+  ],
+  "quotes": [
+   "Inson barcha maxluqotning tojidir. U sharafli, sof, go‘zal yashamog‘i kerak.",
+   "Zolimlar bilan murosa qilmoq jinoyatdir.",
+   "Har yerda jabrning tig‘ini sindirmoq zarur.",
+   "Vatanning nobod viloyatini, mohir bog‘bon kabi, mehnat va hafsala bilan gullatmog‘imiz kerak."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alovuddin Mashhadiy madrasada asosan qaysi mashg‘ulot bilan band edi?",
+   "options": [
+    "A) She‘r va qasidalar yozardi",
+    "B) Faqat savdo bilan shug‘ullanardi",
+    "C) Binolarni ta‘mirlash bilan band edi",
+    "D) Dehqonchilik sirlarini o‘rganar edi"
+   ],
+   "answer": "A) She‘r va qasidalar yozardi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sultonmurodning otasi tiriklik vaqtida qaysi kasb bilan shug‘ullangan?",
+   "options": [
+    "A) Sangtarosh usta bo‘lgan",
+    "B) Zargarlik bilan shug‘ullangan",
+    "C) Madrasada mudarrislik qilgan",
+    "D) Bozorida halvofurushlik qilgan"
+   ],
+   "answer": "A) Sangtarosh usta bo‘lgan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "To‘g‘onbek madrasadagi talabalarga qanday yordam berar edi?",
+   "options": [
+    "A) Ovqat uchun masalliq topardi",
+    "B) Kitoblarni ko‘chirib berardi",
+    "C) Arab tilidan dars berardi",
+    "D) Kiyimlarni yuvib berardi"
+   ],
+   "answer": "A) Ovqat uchun masalliq topardi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Turobiy halvofurush qaysi san‘at turi bilan ham shug‘ullanardi?",
+   "options": [
+    "A) She‘riyat va g‘azalnavislik bilan",
+    "B) Rassomchilik va naqqoshlik bilan",
+    "C) G‘ijjak chalish va kuylash bilan",
+    "D) Xattotlik va muqovachilik bilan"
+   ],
+   "answer": "A) She‘riyat va g‘azalnavislik bilan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Madrasa hujrasida to‘plangan to‘rt ulfatni yosh jihatidan saralang.",
+   "options": [
+    "A) Alovuddin, To‘g‘onbek, Zayniddin, Sultonmurod",
+    "B) Sultonmurod, Zayniddin, To‘g‘onbek, Alovuddin",
+    "C) To‘g‘onbek, Alovuddin, Sultonmurod, Zayniddin",
+    "D) Zayniddin, Sultonmurod, Alovuddin, To‘g‘onbek"
+   ],
+   "answer": "A) Alovuddin, To‘g‘onbek, Zayniddin, Sultonmurod"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Alovuddin nima uchun boshqalarning qasida haqidagi gapidan ranjidi?",
+   "options": [
+    "A) O‘z shoirlik mahoratiga shubha qilindi",
+    "B) Uni majlisdan haydashmoqchi bo‘lishgani uchun",
+    "C) She‘rlarini o‘g‘irlatib qo‘ygani uchun",
+    "D) Uni madrasadan haydashgani uchun"
+   ],
+   "answer": "A) O‘z shoirlik mahoratiga shubha qilindi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sultonmurod nima uchun ilmlarni mukammal egallashga intilardi?",
+   "options": [
+    "A) Buyuk olim darajasiga erishish uchun",
+    "B) Ko‘p boylik to‘plash uchun",
+    "C) Yuqori amaldor bo‘lish uchun",
+    "D) Shaharni tark etish uchun"
+   ],
+   "answer": "A) Buyuk olim darajasiga erishish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sultonmurodning ilmga intilishi haqida qanday xulosa qilish mumkin?",
+   "options": [
+    "A) Yuksak g‘oyali va sabrli yigit",
+    "B) Faqat manfaattalab shaxs",
+    "C) Dangasa va sustain talaba",
+    "D) Shon-shuhrat ketidan quvuvchi"
+   ],
+   "answer": "A) Yuksak g‘oyali va sabrli yigit"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif madrasa hujralarini «zaxkash va nim qorong‘i» tasvirlab nimani ko‘rsatgan?",
+   "options": [
+    "A) Talabalarning og‘ir turmush sharoitini",
+    "B) Madrasaning boy va dabdabaliligini",
+    "C) Hujralarning juda shinamligini",
+    "D) Talabalarning dangasaligini"
+   ],
+   "answer": "A) Talabalarning og‘ir turmush sharoitini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Hirot chashmu charog‘i jamii buldon ast» misrasi nimani anglatadi?",
+   "options": [
+    "A) Hirot shahri barcha shaharlar chirog‘idir",
+    "B) Hirot faqat bozorlari bilan mashhur",
+    "C) Hirotda tunlari chiroqlar yonmaydi",
+    "D) Hirot kichik va xarob shahardir"
+   ],
+   "answer": "A) Hirot shahri barcha shaharlar chirog‘idir"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sultonmurod kimyoxonaga kirgach, ustoz Abdulahad qanday ish bilan band edi?",
+   "options": [
+    "A) O‘choqda idishdagi moddani kavlayotgan edi",
+    "B) Qimmatbaho kitob ko‘chirib o‘tirgan edi",
+    "C) Talabalarga baland ovozda dars berardi",
+    "D) Hovlida yangi bino kurayotgan edi"
+   ],
+   "answer": "A) O‘choqda idishdagi moddani kavlayotgan edi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dildorni saroyga va Majididdinga kim olib kelgan edi?",
+   "options": [
+    "A) To‘g‘onbek olib kelgan edi",
+    "B) Sultonmurod olib kelgan edi",
+    "C) Zayniddin olib kelgan edi",
+    "D) Hasan Sayyoh olib kelgan edi"
+   ],
+   "answer": "A) To‘g‘onbek olib kelgan edi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sultonmurod Zayniddinga ko‘rsatgan maktubida qanday dardini bayon etgan edi?",
+   "options": [
+    "A) Dildorga bo‘lgan sevgisi va hasratini",
+    "B) Madrasadan haydalgani haqidagi shikoyatini",
+    "C) Kamoliddin Behzod bilan bo‘lgan bahsini",
+    "D) Pul yetishmasligi haqidagi daryosini"
+   ],
+   "answer": "A) Dildorga bo‘lgan sevgisi va hasratini"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy va Jomiy uchrashganda qaysi mavzuda suhbatlashishdi?",
+   "options": [
+    "A) Tasavvuf va tasavvufiy asar haqida",
+    "B) Qo‘shinni tartibga solish haqida",
+    "C) Bozor narxlarini tushirish haqida",
+    "D) Yangi binolar qurilishi haqida"
+   ],
+   "answer": "A) Tasavvuf va tasavvufiy asar haqida"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Navoiy huzuriga kelgan dehqon uchragan kulfatlarni ketma-ketlikda joylashtiring.",
+   "options": [
+    "A) Oti firibgarlikda ketdi, eshagi o‘g‘irlandi",
+    "B) Eshagi o‘g‘irlandi, so‘ng oti sotildi",
+    "C) Uyidan puli yo‘qoldi, so‘ng oti ketdi",
+    "D) Hosili kuydi, so‘ng oti yo‘qoldi"
+   ],
+   "answer": "A) Oti firibgarlikda ketdi, eshagi o‘g‘irlandi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sultonmurod va Zayniddin suhbatidagi voqealarni to‘g‘ri tartibda ko‘rsating.",
+   "options": [
+    "A) Maktub o‘qildi, so‘ng eshak haqida gapirildi",
+    "B) Eshak haqida gapirildi, so‘ng maktub yozildi",
+    "C) Ovqat yeyildi, so‘ng Zayniddin ketib qoldi",
+    "D) Sultonmurod uxladi, so‘ng Zayniddin keldi"
+   ],
+   "answer": "A) Maktub o‘qildi, so‘ng eshak haqida gapirildi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Navoiy dehqonga eshakning pulini o‘z yonidan berishining sababi nima?",
+   "options": [
+    "A) Xalqqa adolat va muruvvat ko‘rsatish",
+    "B) Dehqondan otini sotib olish",
+    "C) Qilichbekni jazolashni istamaslik",
+    "D) Shahardan dehqonni haydab chiqarish"
+   ],
+   "answer": "A) Xalqqa adolat va muruvvat ko‘rsatish"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dildor Majididdin saroyida nima uchun biror narsa yemadi?",
+   "options": [
+    "A) Qo‘rquv va fojiali taqdirdan bo‘g‘ilgani uchun",
+    "B) Taomlar yoqmagani va sovuqligi uchun",
+    "C) O‘zini kasallikka solgani uchun",
+    "D) Ramazon ro‘zasini tutgani uchun"
+   ],
+   "answer": "A) Qo‘rquv va fojiali taqdirdan bo‘g‘ilgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Navoiyning jabrlangan dehqonga qilgan muomalasini qanday baholash mumkin?",
+   "options": [
+    "A) Saxovatli va rahm-shafqatli rahbarlik",
+    "B) Xasislik va loqaydlarcha munosabat",
+    "C) Mansabini ko‘zlash va maqtanchoqlik",
+    "D) Qo‘rqoqlik va ehtiyotkorlik qilish"
+   ],
+   "answer": "A) Saxovatli va rahm-shafqatli rahbarlik"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dildorning oliy saroy dabdabasidan ko‘ra toza sevgini ustun qo‘yishi...",
+   "options": [
+    "A) Uning sadoqati va yuksak ma‘naviyatidir",
+    "B) Uning aqlsizligi va bilimdon emasligidir",
+    "C) Faqat vaqtinchalik o‘zboshimchalik va injiqlikdir",
+    "D) Uning mol-dunyoni yoqtirmaslik bahonasidir"
+   ],
+   "answer": "A) Uning sadoqati va yuksak ma‘naviyatidir"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy Injil yoqasida qurdirgan majmuada Arslonqul qanday vazifada edi?",
+   "options": [
+    "A) Bog‘bon va gulchilar orasida edi",
+    "B) Kutubxonada xattotlik qilar edi",
+    "C) Madrasada mudarris bo‘lib ishlar edi",
+    "D) Kasalxonada tabiblik qilar edi"
+   ],
+   "answer": "A) Bog‘bon va gulchilar orasida edi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiyga zaharli sho‘rbo berishga kim harakat qilgan edi?",
+   "options": [
+    "A) Abdusamad degan shaxs",
+    "B) Hasan Sayyoh degan kishi",
+    "C) Shayx Bahlul degan kishi",
+    "D) Qilichbek degan navkar"
+   ],
+   "answer": "A) Abdusamad degan shaxs"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kamoliddin Behzod Navoiy huzurida qaysi san‘at turi bilan shug‘ullanardi?",
+   "options": [
+    "A) Musavvirlik va tasviriy san‘at bilan",
+    "B) Musiqa va g‘ijjak chalish bilan",
+    "C) Sangtaroshlik va o‘ymakorlik bilan",
+    "D) Gilamchilik va to‘qimachilik bilan"
+   ],
+   "answer": "A) Musavvirlik va tasviriy san‘at bilan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mo‘min Mirzoni qatl qilish haqidagi farmonni Kim Hirotga yetkazdi?",
+   "options": [
+    "A) To‘g‘onbek yetkazib bordi",
+    "B) Arslonqul yetkazib bordi",
+    "C) Qilichbek yetkazib bordi",
+    "D) Amidalmulk yetkazib bordi"
+   ],
+   "answer": "A) To‘g‘onbek yetkazib bordi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sho‘rbo voqeasidagi hodisalarni to‘g‘ri tartibda joylashtiring.",
+   "options": [
+    "A) Ovqat keltirildi, shubhalanildi, itga to‘kildi",
+    "B) Itga to‘kildi, ovqat pishirildi, poylandi",
+    "C) Abdusamad ushlandi, so‘ng zahar tayyorlandi",
+    "D) Navoiy ichdi, so‘ng zahar sezildi"
+   ],
+   "answer": "A) Ovqat keltirildi, shubhalanildi, itga to‘kildi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hasan Sayyoh sho‘rboni nima uchun birinchi bo‘lib itga berdi?",
+   "options": [
+    "A) Ovqatda zahar borligini tekshirish uchun",
+    "B) It juda och qolgani uchun",
+    "C) Sho‘rbo sovuq bo‘lib qolgani uchun",
+    "D) Navoiy itga berishni buyurgani uchun"
+   ],
+   "answer": "A) Ovqatda zahar borligini tekshirish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "To‘g‘onbek nima uchun xiyonatkorona farmonni eltishga rozi bo‘ldi?",
+   "options": [
+    "A) Mansab va mol-dunyoni o‘ylagani uchun",
+    "B) Navoiyni juda yaxshi ko‘rgani uchun",
+    "C) Mo‘min Mirzoga achingani uchun",
+    "D) Shoir bo‘lishni istagani uchun"
+   ],
+   "answer": "A) Mansab va mol-dunyoni o‘ylagani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Navoiyning el uchun shifoxona va madrasalar qurdirishini qanday baholaysiz?",
+   "options": [
+    "A) Xalqparvarlik va yuksak ma‘rifatparvarlik",
+    "B) Shaxsiy boylik to‘plash ilandasi",
+    "C) Mansabini saqlab qolish chorasi",
+    "D) Podshohga xushomad qilish usuli"
+   ],
+   "answer": "A) Xalqparvarlik va yuksak ma‘rifatparvarlik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Zanjirband sher» obrazi va rasmi orqali qanday g‘oya ifodalangan?",
+   "options": [
+    "A) Erk va adolatga intilish g‘oyasi",
+    "B) Yirtqich hayvonlarni ovlash usuli",
+    "C) Podshohning ovdagi jasorati va kuchi",
+    "D) Hayvonot bog‘ining go‘zal manzarasi"
+   ],
+   "answer": "A) Erk va adolatga intilish g‘oyasi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Navoiy va Behzod uchrashuvini tasvirlab nimani ko‘rsatmoqchi?",
+   "options": [
+    "A) Ustoz va shogirdning ruhiy yaqinligini",
+    "B) Podshoh va fuqaroning kelishmovchiligini",
+    "C) Ikki dushmanning o‘zaro nifaqini",
+    "D) Rassom va savdogarning savdosini"
+   ],
+   "answer": "A) Ustoz va shogirdning ruhiy yaqinligini"
+  }
+ ]
+}

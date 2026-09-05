@@ -1,0 +1,480 @@
+{
+ "title": "Shirin bilan Shakar",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-14",
+  "topics": [
+   "birodarlik",
+   "sadoqat",
+   "jasorat",
+   "adolat",
+   "xalq og‘zaki ijodi"
+  ],
+  "theme": "Asarning bosh g‘oyasi — birodarlik va opa-uka inoqligi, oqko‘ngillik hamda adolat har qanday tuhmat va zulm ustidan g‘alaba qozonishidir. Kattalarga hurmat, pirlar nasihatiga amal qilish va mehr-oqibat insonni har qanday kulfatdan qutqarishi ko‘rsatiladi.",
+  "summary": "Quyonqi shahri podshosi Qosimxon va uning vaziri bir kunda o‘g‘il ko‘radilar. Podshoning xotini Bo‘tako‘z oyim har ikkala go‘dakni emizib katta qiladi. Podshoning o‘g‘li Shakarbek, vazirning o‘g‘li Shirinbek bo‘lib, birga ulg‘ayadilar. Yetti yoshga kirgach, barcha amaldorlardan yashirincha ovga chiqadilar. Cho‘lda hech narsa topolmay, sarhovuzda yuzib yurgan g‘ozni otadilar. G‘oz Kenja oyimning otasi yurtidan keltirilgan enchi g‘ozi bo‘lib chiqadi. Shirin va Shakar g‘ozni undan tortib oladilar. Arazlagan Kenja oyim shumlik o‘ylab, o‘z kiyimini kesib, Qosimxonga bolalar meni sharmanda qildi deb soxta tuhmat qiladi. G‘azablangan Qosimxon jallodlarga o‘g‘illarini o‘ldirishni buyuradi. Alovxo‘ja eshon karomati bilan buni bilib, oraga tushadi va jallodlarni bolalarni Haqiq tog‘iga boylab kelishga, kiyimlarini hayvon qoniga bo‘yab shohga ko‘rsatishga ko‘ndiradi. Tog‘da qolgan aka-uka zanjirdan bo‘shab, sarguzashtli yoYo‘lga tushadilar. Shakarbek Zil tog‘ida Xolyor cholni uchratadi, Chibich ko‘ldagi daxshatli ajdahorni o‘ldirib, Gulgunoy (Gulgun pari)ni ozod qiladi. Qoraxonshoh lashkarlarini mag‘lub etadi. Ammo jodugar kampir ayyorlik bilan Shakar va Gulgunoyni mast qilib, qizni Qoraxonga olib ketadi. Akasini yo‘qotgan Shirinbek qalandar kiyimini kiyib, qirq qalandarga sardor bo‘lib izlab yuradi. Shirinbek va uning qalandarlari Qoraxonshoh yurtiga borib, Gulgunoy bilan topishadilar va Qoraxonni mahv etadilar. Gulgunoy ajdahorning ikkita shoxini Shirinbekka beradi. Shirinbek tog‘ni ochib, Shakarbekni topadi. Shirinbek Qoraxonning qizi Oqbadanga uylanadi. Shakarbek Zil tog‘idagi sarchashmadan devlarning joni yashiringan sandiqni olib keladi. Devlar unga bo‘ysunib, po‘latdan uchar qo‘rg‘on-taxt yasab berishadi. Barcha Quyonqiga uchib qaytadi. Shakarbek otasiga tig‘ tortmoqchi bo‘lganda Alovxo‘ja pir uni nasihat bilan to‘xtatadi. Qosimxon va Bo‘tako‘z bolalarini ko‘rib quvonadi, Kenja oyimning tuhmati fosh bo‘lib, u jazolanadi. Yurtda katta to‘y-tomosha bo‘lib, Shirin va Shakar adolat bilan yurt so‘raydilar.",
+  "characters": "Shakarbek — Qosimxonning o‘g‘li, mard, shijoatli, qilichboz va sodda dillik qahramon.\nShirinbek — vazirning o‘g‘li, Shakarning emikdoshi, mulohazali, aqlli va sodiq birodar.\nBo‘tako‘z oyim — Qosimxonning xotini, ikki bolani emizgan mehribon va mushtipar ona.\nQosimxon — Quyonqi shahri xoni, shoshqaloqlik bilan tuhmatga ishonib farzandlarini o‘limga buyurgan shoh.\nKenja oyim — Qosimxonning kichik xotini, xasiyatli g‘ozini otishgani uchun bolalarga og‘ir tuhmat qilgan shum ayol.\nAlovxo‘ja eshon — karomatli pir, adolatparvar va bolalarning hayotini saqlab qolgan valiy inson.\nGulgunoy (Gulgun pari) — Zil tog‘ida ajdahor asorati va Qoraxon zafari ostida qolgan, Shakarbekka sadoqatli malika.",
+  "conclusion": "Doston farzandlarni mardlik, to‘g‘rilik va birodarlik rishtalarini mustahkam tutishga o‘rgatadi. Bola kitobdan ota-ona va kattalarning nasihatiga quloq solish, tuhmat va yolg‘ondan yiroq bo‘lish, do‘stga hamda emikdoshga sadoqat saqlash yuksak insoniy fazilat ekanini uqib oladi. Shuningdek, asar shoshqaloqlik bilan xulosa chiqarishning og‘ir oqibatlarini ko‘rsatib, sabr va adolatga da'vat etadi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, hayajonli, shukuhli",
+  "for_whom": "Xalq og‘zaki ijodi, dostonlar va sehrli sarguzashtlarga qiziqadigan, qahramonlik va adolat g‘alabasiga ishonadigan bolalar uchun.",
+  "events": [
+   "1. Qosimxon va uning vaziri bir kunda o‘g‘il ko‘rib, ularni Bo‘tako‘z oyim birga emizib kattalashtiradi.",
+   "2. Shirin va Shakar yetti yoshga kirgach, maslahatlashib kattalardan yashirincha ovga jo‘naydilar.",
+   "3. Cho‘lda uch kun halok bo‘lib, hech narsa topolmagach, Quyonqi chetidagi sarhovuzda yuzgan g‘ozni otadilar.",
+   "4. Yarador g‘oz Kenja oyimning o‘rdasiga borib tushadi, bolalar g‘ozni undan tortib oladilar.",
+   "5. Kenja oyim g‘ozining o‘ldirilganidan g‘azablanib, o‘z choponini kesadi va Qosimxonga soxta tuhmat qiladi.",
+   "6. Qosimxon tuhmatga ishonib, jallodlarga ikki o‘g‘lining boshini kesib, kiyimlarini qonga bo‘yab kelishni buyuradi.",
+   "7. Alovxo‘ja eshon karomati bilan buni bilib, Qosimxondan bolalarni so‘raydi, ammo rad javobini olgach, jallodlar yo‘lini kesadi.",
+   "8. Eshon jallodlarni bolalarni Haqiq tog‘iga boylab kelishga va hayvon qoni bilan shohni aldashga ko‘ndiradi.",
+   "9. Jallodlar Shirin va Shakarni Haqiq tog‘iga boylab, hayvon qoniga bo‘yalgan kiyimlarni shohga olib borib beradilar.",
+   "10. Haqiq tog‘ida boylovli qolgan aka-uka bir-birini chorlab yig‘laydilar va arqondan xalos bo‘ladilar.",
+   "11. Shakarbek Zil tog‘iga borib, Qoraxonshoh xizmatkor bo‘lgan Xolyor cholni uchratadi.",
+   "12. Shakarbek Chibich ko‘ldagi zo‘r ajdahorni o‘ldirib, Gulgunoy parini balodan xalos qiladi.",
+   "13. Qoraxonshoh lashkarlari tog‘ni lahmlab kelganda, Shakarbek ularga qarshi yolg‘iz jangga kirib, yengadi.",
+   "14. Jodugar kampir palang otda uchib kelib, soxta yig‘i bilan Shakarbekni va Gulgunoyni arog‘li sharob berib mast qiladi.",
+   "15. Kampir Gulgunoyni palang otga mindirib, Qoraxonshoh saroyiga olib qochadi.",
+   "16. Shirinbek akasini izlab qalandar kiyimini kiyadi va qirq qalandarga sardor bo‘lib shaharma-shahar kezadi.",
+   "17. Shirinbek va qalandarlar Gulgunoy o‘tirgan ko‘shkka yetib kelib, Qoraxonshoh va jodugar kampirni mahv etadilar.",
+   "18. Shirinbek Gulgunoy bergan ajdahor shoxlari yordamida Zil tog‘ini ochib, Shakarbekni toza havo va salomatlikda topadi.",
+   "19. Shirinbek Qoraxonshohning qizi Oqbadanga uylanish uchun to‘y beradi.",
+   "20. Shakarbek Zil tog‘i sarchashmasidagi sandiqdan devlarning jonini oladi va devlarni o‘ziga bo‘ysundiradi.",
+   "21. Devlar po‘latdan uchar qo‘rg‘on-taxt yasab, barchani Quyonqi shahriga elatib qo‘yadilar.",
+   "22. Alovxo‘ja pir Shakarbekni otasi Qosimxonga tig‘ tortishdan qaytaradi, Kenja oyimning tuhmati fosh bo‘lib, elda tinchlik va adolat qaror topadi."
+  ],
+  "quotes": [
+   "Xudo deyik, yaratganga yig‘layik, Omin desa farishtayi maloyik, Sarhovuzda yuzgan g‘ozni urayik, Bek otamga ov boshi qip borayik.",
+   "Egam rahm qilsin qonli yoshimga, Falak jabri zahar qo‘shib oshima, Shul yolg‘iz g‘oz yetar sening boshingga.",
+   "Jallod, eshit mening aytgan so‘zimni, Sen bog‘lading qo‘lim bilan ko‘zimni, Gunohkor qilibsan mening o‘zimni",
+   "Zulm qilma Shirin, Shakar to‘raga, Alovxo‘ja piring tushdi oraga, Bunday tuhmat qilma ikki bolaga.",
+   "Shakar og‘a, kelib yechgin qo‘limni, O‘lar vaqtda sen so‘ragin holimni.",
+   "Ajdahordan o‘ldi Shakar, Emikdoshim topmay xabar, Qalandar bo‘lganim-bo‘lgan.",
+   "Bo‘lmagaysan mahshar kuni gunohkor, Tig‘ tortgan bo‘ladi ul oqpadar!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shirin va Shakarni kim emizib katta qildi?",
+   "options": [
+    "A) Kenja oyim",
+    "B) Bo‘tako‘z oyim",
+    "C) Qoraxon xotini",
+    "D) Oqqiz kaniz"
+   ],
+   "answer": "B) Bo‘tako‘z oyim"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Boshida aka-ukalar ovdan nima otib kelishdi?",
+   "options": [
+    "A) Kiyik",
+    "B) Yolg‘iz g‘oz",
+    "C) Qashqaldoq",
+    "D) Yoboyi o‘rdak"
+   ],
+   "answer": "B) Yolg‘iz g‘oz"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qosimxon bolalarni jallodlarga topshirishiga nima sabab bo‘ldi?",
+   "options": [
+    "A) Taxtni tortib olishgani",
+    "B) Kenja oyimning tuhmati",
+    "C) Ovga ruxsatsiz borishgani",
+    "D) Saroydan qochib ketishgani"
+   ],
+   "answer": "B) Kenja oyimning tuhmati"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Voqealarning to‘g‘ri tartibini aniqlang.",
+   "options": [
+    "A) Ov, tuhmat, dor, tog‘",
+    "B) Tuhmat, ov, tog‘, dor",
+    "C) Tog‘, dor, ov, tuhmat",
+    "D) Dor, tog‘, tuhmat, ov"
+   ],
+   "answer": "A) Ov, tuhmat, dor, tog‘"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shirinbek nega sarhovuzdagi g‘ozni otishga qarshi bo‘ldi?",
+   "options": [
+    "A) Egasi zo‘ravonligidan qo‘rqib",
+    "B) O‘qi kamligi uchun",
+    "C) Ovni yomon ko‘rgani uchun",
+    "D) Otasi urishishini bilgani uchun"
+   ],
+   "answer": "A) Egasi zo‘ravonligidan qo‘rqib"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Alovxo‘ja eshon nega jallodlarni to‘xtatib qoldi?",
+   "options": [
+    "A) Shoh buyrug‘iga qarshi bo‘lib",
+    "B) Bolalarning begunohligini bilib",
+    "C) Jallodlardan pul olib",
+    "D) O‘zi shoh bo‘lmoqchi bo‘lib"
+   ],
+   "answer": "B) Bolalarning begunohligini bilib"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shirinbekning jallodga «avval meni so‘y» deyishi qanday fazilat?",
+   "options": [
+    "A) Yuksak birodarlik mehr-oqibati",
+    "B) Qo‘rqoqlik va shoshqaloqlik",
+    "C) Otasiga jahli chiqqani",
+    "D) Taqdirga loqayd qaragani"
+   ],
+   "answer": "A) Yuksak birodarlik mehr-oqibati"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Falak jabri zahar qo‘shib oshima» misrasida qanday kayfiyat bor?",
+   "options": [
+    "A) Qayg‘u va umidsizlik",
+    "B) Shodlik va quvonch",
+    "C) Qahr va g‘azab",
+    "D) Hazil va kulgu"
+   ],
+   "answer": "A) Qayg‘u va umidsizlik"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dastlabki parchada Alovxo‘ja pir timsoli qanday ta'riflangan?",
+   "options": [
+    "A) Karomatli va adolatli xilkat",
+    "B) Qahri qattiq va zolim",
+    "C) Bevafo va mol-parast",
+    "D) Qo‘rqoq va ojiz odam"
+   ],
+   "answer": "A) Karomatli va adolatli xilkat"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jallodlar shohga nimani ko‘rsatib aldashdi?",
+   "options": [
+    "A) Qonga bo‘yalgan kiyimni",
+    "B) O‘ldirilgan g‘ozni",
+    "C) Uzilgan uzukni",
+    "D) Buzilgan qilichni"
+   ],
+   "answer": "A) Qonga bo‘yalgan kiyimni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zil tog‘ida yashaydigan cholning ismi nima edi?",
+   "options": [
+    "A) Xolyor chol",
+    "B) Alovxo‘ja",
+    "C) Qosimxon",
+    "D) Zaqchagir"
+   ],
+   "answer": "A) Xolyor chol"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shakarbek Gulgunoyni qanday balodan qutqardi?",
+   "options": [
+    "A) Devlardan",
+    "B) Zo‘r ajdahordan",
+    "C) Qoraxon lashkaridan",
+    "D) Jodugar kampirdan"
+   ],
+   "answer": "B) Zo‘r ajdahordan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shirinbek akasini izlab kimlarga sardor bo‘ldi?",
+   "options": [
+    "A) Qirq qalandarga",
+    "B) Qirq navkarga",
+    "C) Qirq devga",
+    "D) Qirq merganga"
+   ],
+   "answer": "A) Qirq qalandarga"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shakarbekning Zil tog‘idagi voqealari tartibini ko‘rsating.",
+   "options": [
+    "A) Ajdahor, Qoraxon, jodugar kampir",
+    "B) Jodugar kampir, ajdahor, Qoraxon",
+    "C) Qoraxon, jodugar kampir, ajdahor",
+    "D) Ajdahor, jodugar kampir, Qoraxon"
+   ],
+   "answer": "A) Ajdahor, Qoraxon, jodugar kampir"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shirinbek va Shakarbek qismatidagi umumiy jihat nima?",
+   "options": [
+    "A) Muvaffaqiyatli ov qilishlari",
+    "B) Tuhmatga uchrab, yurtidan ayrilishlari",
+    "C) Faqat shaharda yashashlari",
+    "D) Otalariga qarshi urushishlari"
+   ],
+   "answer": "B) Tuhmatga uchrab, yurtidan ayrilishlari"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jodugar kampir Shakarbekni aldash uchun nima qildi?",
+   "options": [
+    "A) O‘g‘illarining kallasi deb yig‘ladi",
+    "B) Kasal bo‘lib yo‘lda yotdi",
+    "C) Yordam so‘rab baqirdi",
+    "D) Yo‘lda xazina ko‘rsatdi"
+   ],
+   "answer": "A) O‘g‘illarining kallasi deb yig‘ladi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Gulgunoy nega Qoraxonshohga darrov turmushga chiqmadi?",
+   "options": [
+    "A) Shakarbekni kutib, fursat so‘radi",
+    "B) Qoraxonning kambag‘alligi uchun",
+    "C) Otasi ruxsat bermagani uchun",
+    "D) O‘z yurtiga qochib ketgani uchun"
+   ],
+   "answer": "A) Shakarbekni kutib, fursat so‘radi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shakarbekning dushman lashkariga yolg‘iz qarshi chiqishi qanday baholanadi?",
+   "options": [
+    "A) Shijoat va yuksak mardlik",
+    "B) Yengiltaklik va nodonlik",
+    "C) Qo‘rqoqlik va ojizlik",
+    "D) Beparvolik va loqaydlik"
+   ],
+   "answer": "A) Shijoat va yuksak mardlik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Shakarbekning «Gulgunoyni izlab bunda kelibsan» xitobi nimani ifodalaydi?",
+   "options": [
+    "A) Yovga qarshi mardona na'ra",
+    "B) Yo‘ldoshiga qilgan arzi",
+    "C) Enasiga aytgan xabari",
+    "D) Piringa qilgan iltijosi"
+   ],
+   "answer": "A) Yovga qarshi mardona na'ra"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kampir Shakarbek va Gulgunoyni qanday behush qildi?",
+   "options": [
+    "A) Arog‘li sharob ichirib",
+    "B) Uyqu dori berib",
+    "C) Sehrli tayoqcha bilan",
+    "D) Ko‘ziga tutun purkab"
+   ],
+   "answer": "A) Arog‘li sharob ichirib"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shirinbek kimning qizi Oqbadanga uylandi?",
+   "options": [
+    "A) Qoraxonshohning",
+    "B) Qosimxonning",
+    "C) Alovxo‘janing",
+    "D) Xolyor cholning"
+   ],
+   "answer": "A) Qoraxonshohning"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zil tog‘idagi sandiqda nima yashiringan edi?",
+   "options": [
+    "A) Devlarning joni",
+    "B) Qoraxonning xazinasi",
+    "C) Tilla qilich",
+    "D) Sehrli uzuk"
+   ],
+   "answer": "A) Devlarning joni"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Devlar Quyonqiga borish uchun nima yasashdi?",
+   "options": [
+    "A) Po‘latdan qo‘rg‘on-taxt",
+    "B) Katta yog‘och kema",
+    "C) Sehrli gilam",
+    "D) Oltin araba"
+   ],
+   "answer": "A) Po‘latdan qo‘rg‘on-taxt"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Doston oxiridagi xushvoq voqealar ketma-ketligini toping.",
+   "options": [
+    "A) Uylanish, Quyonqiga qaytish, yarashish",
+    "B) Quyonqiga qaytish, uylanish, yarashish",
+    "C) Yarashish, uylanish, Quyonqiga qaytish",
+    "D) Uylanish, yarashish, Quyonqiga qaytish"
+   ],
+   "answer": "A) Uylanish, Quyonqiga qaytish, yarashish"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Alovxo‘ja pir Shakarbekni otasiga tig‘ tortishdan nega qaytardi?",
+   "options": [
+    "A) Otaga qo‘l ko‘tarish oqpadarlikdir",
+    "B) Otasining qo‘shini kuchliligi uchun",
+    "C) Quyonqi shahriga achingani uchun",
+    "D) O‘zi shoh bo‘lmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Otaga qo‘l ko‘tarish oqpadarlikdir"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shakarbek o‘zi oz eldan yangi shoh saylashni nega maslahat berdi?",
+   "options": [
+    "A) Katta el ozini ezmasligi uchun",
+    "B) O‘sha el unga qarindoshligi uchun",
+    "C) Kattalar urushdan charchagani uchun",
+    "D) O‘ziga sadoqatli bo‘lgani uchun"
+   ],
+   "answer": "A) Katta el ozini ezmasligi uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shakarbekning eshon nasihatiga kirib otasini kechirishi qanday fazilat?",
+   "options": [
+    "A) Kattalarga hurmat va bag‘rikenglik",
+    "B) Qo‘rqoqlik va ojizlik",
+    "C) Loqaydlik va beparvolik",
+    "D) Manmanlik va takabburlik"
+   ],
+   "answer": "A) Kattalarga hurmat va bag‘rikenglik"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tuhmatchi Kenja oyimning qilmishiga yarasha jazolanishi nimani anglatadi?",
+   "options": [
+    "A) Adolat qaror topganini",
+    "B) Tasodifiy hodisa bo‘lganini",
+    "C) Shaxsiylashtirilgan o‘chni",
+    "D) Zulmning g‘alabasini"
+   ],
+   "answer": "A) Adolat qaror topganini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Bo‘tako‘z oyimning «Yuragimdan ketdi armon» demashi nimadan dalolat beradi?",
+   "options": [
+    "A) Farzand diydoriga yetish quvonchidan",
+    "B) Taxtga ega bo‘lganidan",
+    "C) Dushman yengilganidan",
+    "D) Yurt obod bo‘lganidan"
+   ],
+   "answer": "A) Farzand diydoriga yetish quvonchidan"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Doston oxirida shaharda qanday marosim o‘tkazildi?",
+   "options": [
+    "A) Katta to‘y va ko‘pkari",
+    "B) Sayil va musobaqa",
+    "C) Ovchilar bellashuvi",
+    "D) Qalandarlar majlisi"
+   ],
+   "answer": "A) Katta to‘y va ko‘pkari"
+  }
+ ]
+}

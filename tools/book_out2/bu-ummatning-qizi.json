@@ -1,0 +1,79 @@
+{
+ "title": "Bu ummatning qizi",
+ "author": "Nuriddin Yildiz",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "odob",
+   "oila",
+   "iffat",
+   "tarbiya",
+   "ilm",
+   "mas'uliyat"
+  ],
+  "theme": "Kitob musulmon qizlarining jamiyat, oila va din oldidagi o‘rni, ularning ma'naviy mas'uliyati, iffat va odob tamoyillari hamda Islom tarixidagi soliha ayollar o‘rnagini ko‘rsatishga bag‘ishlangan.",
+  "summary": "Kitob kirish qismida ayol kishining insoniyat va Islom ummatidagi o‘rni hamda mas'uliyatini ta'kidlashdan boshlanadi. Muallif tarixiy va diniy namunalarni (Osiyo, Maryam, Xadicha va boshqa onalarimiz) keltirib, ayol kishining jamiyat ma'naviyatini shakllantirishdagi rolini yoritadi. Matnda o‘quvchilar va muslimalarning muallifga yo‘llagan maktublari hamda unga berilgan nasihatomuz javoblar keltirilgan. Bu maktublarda Yevropada va boshqa joylarda yashayotgan oilalardagi farzand tarbiyasi, namoz va ro‘za ibodatidagi qiyinchiliklar, yosh qizlarning bilim olishi, tibbiyot va boshqa sohalarda halol mehnat qilishi borasidagi savollar ko‘rib chiqiladi. Shuningdek, oilaviy munosabatlar, er-xotin o‘rtasidagi mas'uliyat va sabr-toqat, qiz farzandlarning ota-ona oldidagi va ota-onaning qizlar oldidagi burchlari bayon etiladi. Boblarda ilm olish, xususan, Qur'on o‘rganish va o‘rgatish, qoriyalik, shuningdek, to‘y va kiyinish madaniyati, kibrdan uzoq bo‘lish, vaqt va salomatlik ne'matini qadrlash mavzulari ketma-ket yoritiladi. Muallif har bir qizni o‘z e'tiqodi va iffatini asrab-avaylashga, zamonaviy fitnalarga berilmaslikka hamda ma'naviy yuksalishga chorlaydi. Kitob yakunida muslima qizlarga yo‘llangan ruhiy da'vat va nasihatlardan iborat \"Qizlar xutbasi\" keltiriladi.",
+  "characters": "Momo Havvo, Osiyo, Maryam, Xadicha binti Xuvaylid, Nuh alayhissalom, Ibrohim alayhissalom, Abu Bakr roziyallohu anhu, Mus'ab ibn Umayr",
+  "conclusion": "Ushbu kitob o‘quvchiga o‘z ma'naviy mas'uliyatini anglashga va o‘zligini anglashga yordam beradi. Insonning jamiyat va oiladagi o‘rni xususida fikr yuritishga chorlaydi. Islom tarixidagi buyuk ayollarning hayoti va sabr-toqatidan o‘rnak olish tuyg‘usini shakllantiradi. Vaqtni to‘g‘ri taqsimlash, ilmga intilish va odob-axloq qoidalariga rioya qilishga undaydi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, nasihatomuz, samimiy",
+  "for_whom": "14 yoshdan oshgan o‘smir qizlar, ularning ota-onalari va tarbiyachilari uchun mo‘ljallangan.",
+  "events": [
+   "Kitob muallif va uning faoliyati haqidagi ma'lumotlar hamda asarning muqaddimasi bilan boshlanadi.",
+   "Muallif Ummat qizining Islom jamiyatidagi va tarixidagi buyuk o‘rni haqida fikr yuritadi.",
+   "Germaniyadagi mushfiq onaning farzand tarbiyasi va namoz borasidagi xavotirli maktubiga javob beriladi.",
+   "Tarixiy shaxslar va payg‘ambarlarning sabr-toqati misolida yolg‘izlik va imtihonlar mohiyati tushuntiriladi.",
+   "Sahobalarning diniy va dunyoviy hayotdagi yaxlitligi hamda ulardan o‘rnak olish zarurati ko‘rsatiladi.",
+   "Akusherlik sohasida o‘qiyotgan talaba qizning kasb va oila o‘rtasidagi tanlovi borasidagi savoliga atroflicha javob qaytariladi.",
+   "Qiz farzandning ota-onasi va jamiyat uchun jannat sababchisi ekani va uning qadri ta'kidlanadi.",
+   "Muomala va munosabatlarda ibo, ko‘zni tiyish hamda odob qoidalariga amal qilish masalasi yoritiladi.",
+   "Oila munosabatlarida sabr-toqat, muammolarni bamaslahat hal etish va duoning o‘rni tushuntiriladi.",
+   "Olima va murabbiya ayollarni yetishtirish hamda jamiyatga diniy-ma'rifiy xizmat ko‘rsatish ahamiyati bayon qilinadi.",
+   "Tibbiyot fakulteti talabasining ixtisoslik va turmush qurish masalasidagi ikkilanmalariga maslahatlar beriladi.",
+   "Diniy majburiyatlar va buyuk niyatlar yo‘lida mas'uliyatni his qilish zarurati ifodalanadi.",
+   "Ro‘za, haj, zakot va sadaqa kabi ibodatlarni yoshlikdan ado etishning ahamiyati ta'kidlanadi.",
+   "Vaqt va salomatlik ne'matidan unumli foydalanish hamda kibr va takabburlikdan saqlanish chorasi ko‘rsatiladi.",
+   "Qur'on muallimalarining mas'uliyati, to‘y madaniyati va \"Qizlar xutbasi\" bilan kitob yakunlanadi."
+  ],
+  "quotes": [
+   "Odam bolasini ayol dunyoga keltiradi.",
+   "Mo‘min kishi to umrining oxirigacha, mo‘mindek yashashga mas'ul ekaniga imon keltirgan vaqtidan boshlab, imoni uning zimmasiga yuklagan majburiyatni poymol qildirib qo‘ymaydi.",
+   "Farzand tarbiyasi ona uchun eng oliy maqsaddir.",
+   "Bu ummatning qizlari otalari va onalarining jannatidir.",
+   "Duo quroldir."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "– Farzandlaringizdan xavotirlaning, lekin bu xavotir vasvasaga aylanib ketmasin. Turmush o‘rtog‘ingiz bilan bu borada davomli ravishda muvozanatni saqlang. Bir siz, bir u tashabbusni qo‘lga olinglar. Shunda hayotda qoqilmay, olg‘a ketasiz;",
+   "question": "Ushbu parchada muallif xavotir va vasvasa o‘rtasidagi muvozanat haqida gapiradi. Sencha, kunlik hayotingda biror narsadan me'yoridan ortiq xavotirlanishing xalaqit bergan holat bo‘lganmi va o‘shanda qanday yo‘l tutgansan?"
+  },
+  {
+   "part": 2,
+   "context": "Ilk insondan boshlab yer yuzidagi odamzod mojarosini oyatma-oyat izohlab bergan Qur'on hayotimizning qamrab olgan darajasi ham mana shudir. Oyatlari orasida tarix, kelajak, jo‘g‘rofiya, inson, hayvonot, koinot, jin va farishtalar bilan bog‘liq mavzularni sochib yuborgan Qur'on bizning rahbarimizdir. Uning rahbarligi ibodat sifatida uni o‘qishimizdan boshlanib, hayotda yo‘l-yo‘riq ko‘rsatadigan belgilargacha bo‘lgan juda keng doirani qamrab oladi.",
+   "question": "Matnda har qanday bilim va tajriba inson hayotida to‘g‘ri yo‘nalish ko‘rsatuvchi rahbar bo‘lishi mumkinligi ta'kidlanadi. Sen o‘z hayotingda qaysi ustoz, kitob yoki maslahatni o‘zingga asosiy yo‘l-yo‘riq ko‘rsatuvchi deb bilasan va nega?"
+  },
+  {
+   "part": 2,
+   "context": "Ishonchning eng muhim bosqichi bandaning Allohga nisbatan ishonch hosil qilishidir. Banda o‘zini mo‘min ekanini aytishi orqali Allohga imon keltirishi bilan o‘zida bir xulqni kasb etadi. Allohga imonni saqlash, Uning taqiqlaganlaridan qochish, buyruqlarini ado etish va do‘stlarini do‘st, dushmanlarini dushman deb bilishi omonatning talabidir.",
+   "question": "Atrofdagilarning ishonchini qozonish va omonatdor bo‘lish inson xarakterida qanchalik muhim deb o‘ylaysan? O‘z hayotingdan birovning ishonchini oqlagan holatingga misol keltir."
+  },
+  {
+   "part": 3,
+   "context": "Buxoriyda kelgan hadisda Rasululloh sollallohu alayhi va sallam shunday marhamat qiladilar: “Ikki ne'mat borki, ko‘pchilik odamlar u ikkisida aldanib qolishadi: salomatlik va bo‘sh vaqt”. Aldanganlardanmisan yoki aldanishga qarshi turuvchi ogohlardanmisan? Atrofga nazar tashlaganingda, ushbu hadis qanday mo‘jizaviy ma'noga ega ekanini ko‘rasan.",
+   "question": "Bo‘sh vaqtni bekorga sovurmaslik va undan unumli foydalanish borasida o‘zingda qanday tartib yoki tajriba bor? Kuningni unumli tashkil etishda senga nima eng ko‘p yordam beradi?"
+  },
+  {
+   "part": 3,
+   "context": "Qur'on muallimalari talabalar haqida qaror qabul qilishda, albatta, hamkasblari va ruhiyatshunoslar bilan maslahatlashishlari lozim. Har qanday qarorga ota-onalarni ishontira olish juda muhim. Berilgan qarorlarni ota-onalarga tasdiqlatib olish Qur'on ta'limida jiddiy jarohatlar qoldirgan.",
+   "question": "Muallif muhim qarorlar qabul qilishda mutaxassislar va tajribali insonlar bilan maslahatlashish muhimligini aytadi. Sen hayotingdagi mas'uliyatli qarorlarni qabul qilishda kimlar bilan bamaslahat ish tutasan?"
+  }
+ ]
+}

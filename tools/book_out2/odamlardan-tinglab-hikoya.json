@@ -1,0 +1,46 @@
+{
+ "title": "Odamlardan tinglab",
+ "author": "Xayriddin Sulton",
+ "genre": "hikoyalar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "hayotiy saboqlar",
+   "sabr-matonat",
+   "insoniylik",
+   "oila va oqibat",
+   "vatanparvarlik",
+   "shukronalik"
+  ],
+  "theme": "Asarning bosh g‘oyasi — insonga berilgan umrning o‘tkinchiligini anglash, har qanday qiyinchilik va mashaqqatlarda ham sabr-matonat, halollik va insoniylikni saqlab qolish hamda yaqinlar va el-yurt xizmatida bo‘lishning yuksak qadrini ko‘rsatishdan iborat.",
+  "summary": "To‘plam muallifning turli kasb va taqdir egalari bilan bo‘lgan samimiy suhbatlari hamda xotiralari asosida yozilgan hayotiy hikoyalardan iborat. Unda oddiy odamlarning og‘ir hayot yo‘llari, urush va sovet tuzumi davridagi iztiroblar, el-yurt uchun fidoyilik qilgan insonlar taqdiri yoritiladi. Masalan, Nisoxon momoning sho‘ro davri tazyiqlari, urush va turmush qiyinchiliklariga qaramay sakkiz farzandni halol o‘stirishdagi sabri; imom-xatib aytib bergan go‘rkov yigitning kutilmagan omadsiz taqdiri; vatanparvar shifokor Qobil Shonazarovning pandemiya davridagi fidoyiligi kabi teran xotiralar bayon etiladi. Asar insoniy mehr-oqibat, halol mehnat va shukronalik g‘oyalari bilan yo‘g‘rilgan.",
+  "characters": "Nisoxon Ahmedova — hayotning og‘ir sinovlarini matonat bilan yenggan, ibodatli va donishmand o‘zbek onasi; Qobil Shonazarov — vatanparvar, o‘z kasbiga fidoiy, bemorlar hayoti uchun oxirigacha kurashgan shifokor; Botirbek — sodda, go‘rkovlikka tayinlangan, lekin omadi chopmagan yigit; Abbos Matlabov — xorijda elchixonada ishlagan, hayotiy kuzatuvlarga boy tajribali diplomat.",
+  "conclusion": "Kitob kitobxonda insoniy qadr-qimmat, mehr-oqibat va shukronalik hissini singdiradi. Hayotning har bir lahzasi va yaqin kishilarimizning borligi buyuk ne'mat ekanini anglatadi. Bola ushbu asar orqali qiyinchiliklar oldida taslim bo‘lmaslikni, ota-ona va kattalarni e'zozlashni hamda halol mehnat va ilm bilan komillikka erishish mumkinligini uqib oladi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi va shukronalik uyg‘otuvchi",
+  "for_whom": "Insonlar taqdiri, hayotiy saboqlar, samimiy va ta'sirchan xotira-hikoyalarga qiziqadigan, teran fikrlashni xohlaydigan o‘smirlar va yoshlar uchun mos.",
+  "events": [
+   "Anvar qori Tursunov Qorasuvga borib, shogirdi Botirbekka qishloq machitida go‘rkovlik ishini topib beradi.",
+   "Bir yildan keyin Botirbek qori akaga uchrashib, bir yil davomida qishloqda hech kim o‘lmagani sababli boshqa ish so‘raydi.",
+   "Nisoxon momo quloq qilingan otasi bilan og‘ir yerto‘lalarda yashab, urush va mashaqqatli yillarda sakkiz farzandni boqib o‘stiradi.",
+   "Nisoxon momo umrining so‘ngida farzandlariga ahil bo‘lishni, mehnat va ilm ortidan halol kun kechirishni nasihat qiladi.",
+   "Tergovchi Xumoyun Xurshidov o‘likning ustidan yechib olingan shubani xotiniga sovg‘a qilgan xodimning qilmishini fosh etadi.",
+   "Afg‘onistonda ekspeditsiya paytida xavfli tank ichidan harbiy emas, yer chopgani ketayotgan oddiy afg‘on dehqoni chiqadi.",
+   "Diplomat Abbos Matlabov Bayrutdagi elchixonada o‘zbekcha 'fil' so‘zi sababli yuzaga kelgan qiziqarli voqeani xotirlaydi.",
+   "Shifokor Qobil Shonazarov pandemiya paytida o‘z hayotini xavfga qo‘yib, bemorlarni davolaydi va o‘zi ham vafot etadi."
+  ],
+  "quotes": [
+   "Odamzodda hamma narsa bo‘lsa-yu, lekin omadi kelmasa, qolgani bir pul ekan.",
+   "O‘liklar sizga hech qanday yomonlik qilolmaydi. O‘lik nima? Bamisoli uxlab yotgan odam, tiriklar chatoq, har balo-yu ofat shulardan keladi.",
+   "Bolalarim, ahil bo‘linglar – yengilmaysiz, mehnatdan qo‘rqmanglar, mehnatdan qochmanglar – xor bo‘lmaysiz.",
+   "O‘qib, olim-u dono bo‘linglar – butun dunyo sizniki bo‘ladi. Lekin qo‘lingizda albatta bir hunaringiz bo‘lsin – hech qachon nochor qolmaysiz.",
+   "Mening tanishim yo‘q, ishonganimiz – bolalarning kitobi, kitob o‘qiting..."
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Asardagi Nisoxon momoning farzandlariga qilgan nasihatlarida ahillik, mehnatsevarlik va ilm egallash hayotdagi eng buyuk najot deb ko‘rsatiladi. Sen o‘z hayotingda ushbu uchta qadriyatdan qaysi birini eng muhim deb bilasan va oilangdagi kattalardan eshitgan qaysi nasihat senga qiyin damlarda kuch bergan?"
+}

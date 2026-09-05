@@ -1,0 +1,50 @@
+{
+ "title": "Kambag‘allar",
+ "author": "Fyodor Dostoyevskiy",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "15+",
+  "topics": [
+   "kambag‘allik",
+   "mehr-oqibat",
+   "insoniylik",
+   "fidoiylik",
+   "taqdir",
+   "ijtimoiy tengsizlik"
+  ],
+  "theme": "Inson qanchalik qashshoq va chorasiz bo‘lmasin, unda yuksak ma'naviyat, mehr-muhabbat va insoniy qadr-qimmat saqlanib qoladi. Jamiyatdagi tengsizlik va shafqatsizlik qarshisida bir-biriga suyangan ikki nochor insonning samimiy tuyg‘ulari hamda ayanchli taqdiri orqali fidoiylik va oqibat ulug‘lanadi.",
+  "summary": "Keksa va kamtarin amaldor Makar Devushkin hamda uning uzoq qarindoshi, yetim qolgan qiz Varvara Dobroselova bir-birlariga qarama-qarshi uylarda yashab, maktublar orqali xatishadilar. Makar o‘zining ozgina maoshi va nochor ahvoliga qaramay, Varenkaga g‘amxo‘rlik qilishga, unga xursandchilik ulashishga hamda moddiy ko‘maklashishga harakat qiladi. Varenka o‘z xotiralarida o‘tmishdagi og‘ir kunlari, birinchi muhabbati bo‘lmish talaba Pokrovskiy va uning fojiali o‘limi haqida yozadi. Ikkala qahramon ham o‘ta qashshoqlik, jamiyatning sovuq munosabati va g‘iybatlardan azob chekishadi. Makar xizmat joyida xo‘rlik va kiyim-kechagi eskiligi sababli qiynaladi, lekin o‘z sha'nini saqlashga urinadi. Bir kuni boshlig‘ining kutilmagan iltifoti va bergan yuz rubl puli Makarni vaqtincha og‘ir ahvoldan qutqaradi. Biroq Varenkaning hayotida tub burilish sodir bo‘ladi: uning o‘tmishdagi kulfatlariga sababchi bo‘lgan badavlat pomeshchik Bikov unga uylanish taklifini bildiradi. Varenka nochorlikdan qutulish va Makarga ortiqcha yuk bo‘lmaslik uchun Bikovga turmushga chiqishga majbur bo‘ladi. Asar Makarning Varenkadan ayrilish oldidagi chuqur iztiroblari va unga bitgan ayanchli so‘nggi maktubi bilan yakunlanadi.",
+  "characters": "Makar Devushkin — yoshi o‘tib qolgan, xoksor va kamtarin amaldor; Varenkani chin dildan sevuvchi, g‘amxo‘r va fidoiy inson.\nVarvara Dobroselova (Varenka) — og‘ir sinovlarni boshdan kechirgan, nozik qalb egasi va pokiza fe'lli yetim qiz.\nJanob Bikov — badavlat, bag‘ritosh va qo‘pol pomeshchik; Varenkaning taqdiriga salbiy ta'sir ko‘rsatgan va oxirida unga uylanib olib ketgan kishi.\nPokrovskiy — Varenkaning birinchi muhabbati, fojiali vafot etgan kambag‘al va bilimdon talaba.\nChol Pokrovskiy — talaba Pokrovskiyning ichkilikka berilgan, ammo o‘g‘lini jonidan ortiq ko‘radigan ayanchli otasi.\nGorshkov — Makarning uydagi qashshoq qo‘shnisi; sudda oqlanib adolat qaror topgan kuni to‘satdan vafot etadi.",
+  "conclusion": "Asar kitobxonda mehr-shafqat, kamtarlik va o‘zgalar dardiga hamdard bo‘lish tuyg‘ularini shakllantiradi. Bola moddiy qashshoqlik insonning ma'naviy boyligi va qadr-qimmatini kamsita olmasligini, samimiy g‘amxo‘rlik hamda fidoiylik eng yuksak insoniy fazilat ekanini tushunib yetadi. Qahramonlarning achchiq taqdiri orqali sabr-toqat, halollik va yaqinlarga sodiqlik saboqlari beriladi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Ruhiyat, chuqur kechinmalar, insoniy taqdirlar va mumtoz adabiyotga qiziqadigan o‘smirlar uchun.",
+  "events": [
+   "Makar va Varenka bir-birlariga qarama-qarshi uylarda yashab, maktub orqali muloqot qilishni boshlaydilar.",
+   "Makar Varenkaga quvonch ulashish uchun o‘zining ozgina puliga gullar va shirinliklar sovg‘a qiladi.",
+   "Varenka o‘z xotira daftari orqali yetimlik yillari, talaba Pokrovskiy bilan tanishuvi va uning vafot etishini tasvirlaydi.",
+   "Makar o‘zining nochor xonasi, shovqin-suronli muhiti va kambag‘allikdagi hayotini maktubda bayon etadi.",
+   "Varenka kasal bo‘lib qolganda Makar bor-yo‘g‘ini sarflab unga g‘amxo‘rlik ko‘rsatadi.",
+   "Makarning kiyim-kechagi eskirib, qashshoqligi ortishi natijasida idoradagilar va qo‘shnilar orasida izzat-nafsi kamsitiladi.",
+   "Qo‘shnisi Gorshkov uzoq davom etgan sudda oqlanib, adolat qaror topgan paytda to‘satdan vafot etadi.",
+   "Makar xizmatda xatoga yo‘l qo‘ygach, boshliq uning nochorligini ko‘rib rahm qiladi va yuz rubl pul yordam beradi.",
+   "Varenkaning hayotida u bilan ilgaridan tanish bo‘lgan badavlat Bikov paydo bo‘lib, unga uylanish taklifini kiritadi.",
+   "Varenka chorasizlikdan va Makarga og‘irligi tushmasligi uchun Bikovga turmushga chiqishga rozi bo‘ladi.",
+   "Makar Varenkaning to‘y va yo‘l hozirliklarida ko‘maklashib, ayriliq dardi hamda umidsizlik bilan so‘nggi iztirobli maktubini yozadi."
+  ],
+  "quotes": [
+   "Ko‘z yoshi qayg‘uga yordam berolmaydi; men buni bilaman, onajon, bu narsa boshimdan o‘tgan.",
+   "Biz keksalar, ya'ni qari odamlar, eski narsalarga xuddi o‘zimizning qadrdon bir narsamizga o‘rganganday o‘rganib, ko‘nikib qolamiz.",
+   "Nega shunaqa ekan-a: yaxshi odam aftodahol bo‘ladi-da, boshqalarga baxt doim kulib qaraydi?",
+   "Savob ishlar beajr qolmaydi, ertami, kechmi, savob ish qilganning boshiga Xudoyim har doim adolat tojini kiydiradi.",
+   "Mening birgina tabassumimdan, mening birgina satr xatimdan o‘zingizni baxtli sezar edingiz.",
+   "Sizni quyoshni sevganday sevardim, onajon, azizim, o‘z qizimni sevganday sevardim, jism-u joningiz bilan sevardim!"
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Makar Devushkin o‘zi juda qiyin va nochor ahvolda yashasa ham, har doim Varenkaga yordam berishga, uning ko‘nglini ko‘tarishga harakat qildi. Seningcha, inson o‘zi muhtoj bo‘la turib boshqalarga mehr-muruvvat ko‘rsatishi uchun unda qanday xislatlar bo‘lishi kerak? O‘z hayotingda yoki atrofingda shunday fidoiy insonlarni uchratganmisan?"
+}

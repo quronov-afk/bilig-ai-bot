@@ -1,0 +1,50 @@
+{
+ "title": "Shohnoma",
+ "author": "Abulqosim Firdavsiy",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "vatanparvarlik",
+   "jasorat",
+   "ezgulik va yovuzlik",
+   "adolat",
+   "hikmat"
+  ],
+  "theme": "Asarning bosh g‘oyasi – ezgulik va yovuzlik o‘rtasidagi abadiy kurash, Vatan va el-yurt ozodligini ulug‘lash, adolatli hukmdorlik hamda nafs, kibr va g‘azabning fojiali oqibatlarini ko‘rsatishdan iborat.",
+  "summary": "«Shohnoma» dostoni qadimiy Eron va O‘rta Osiyo xalqlarining afsonaviy hamda tarixiy shohlari, pahlavonlari haqidagi buyuk epopeyadir. Unda dunyoning yaralishi, adolatli va zolim shohlar (Jamshid, Zahhok, Faridun, Kaykovus) davridagi voqealar aks etadi. Zol va Rudobaning samimiy muhabbati, ulardan tug‘ilgan afsonaviy pahlavon Rustami Dostonning el-yurt va Vatan yo‘lidagi mislsiz mardliklari hamda Yetti sarguzashti tasvirlanadi. Rustam va uning fojiali tarzda halok bo‘lgan o‘g‘li Suhrob, shuningdek, tuhmat va nafs qurboni bo‘lgan pokdomon shahzoda Siyovush qissalari orqali urush va adovatning og‘ir oqibatlari ko‘rsatib beriladi.",
+  "characters": "Rustam – el-yurt va Vatan tayanchi, yengilmas va sadoqatli pahlavon. Suhrob – Rustamning yosh va mard o‘g‘li, fitna sabab fojiali ravishda otasi qo‘lida halok bo‘ladi. Kova – zolim Zahhokga qarshi xalqni chorlagan jasur temirchi. Siyovush – pokiza va adolatli shahzoda, tuhmatga uchrab Vatanini tark etadi. Zahhok – Ahriman yo‘lidan yurgan shafqatsiz va zolim hukmdor.",
+  "conclusion": "Doston kitobxonga ezgulik va yorug‘lik har doim yovuzlik hamda zulmat ustidan g‘alaba qozonishini, adolat va halollik insoniyatning eng oliy fazilati ekanini o‘rgatadi. Kiyinliklar va sinovlarda sabr-toqatli bo‘lish, kattalar va ustozlar maslahatiga quloq tutish, nafs hamda kibr tuzog‘iga tushmaslik lozimligi uqtiriladi. Bola ushbu asar orqali Vatan va el-yurt oldidagi burch va mas'uliyatni chuqur anglaydi.",
+  "difficulty": "qiyin",
+  "mood": "ulug‘vor, falsafiy, hazin",
+  "for_whom": "Tarixiy dostonlar, qahramonlik va mardlik haqidagi qissalarga, sharqona falsafa va adolat uchun kurash voqealariga qiziquvchi o‘smirlar uchun mos.",
+  "events": [
+   "Dunyoning va insonning yaralishi hamda ilm, aql, mehnat va ma'rifatning inson hayotidagi o‘rni falsafiy tushuntiriladi.",
+   "Jamshid taxtga o‘tirib, elni tabaqalarga ajratadi va ma'murchilik, tikuvchilik va uy-ro‘zg‘or ishlarini yo‘lga qo‘yadi.",
+   "Kibrga berilgan Jamshid baxtidan ayriladi va Ahriman tuzog‘iga tushgan zolim Zahhok taxtni egallab, elga zulm o‘tkazadi.",
+   "Temirchi Kova o‘zining temirchilik peshbandini bayroq qilib, xalqni zolim Zahhokga qarshi isyonga chorlaydi.",
+   "Faridun adolat tiklab, Zahhokni mag‘lub etadi va mamlakatda tinchlik ile ma'murchilik o‘rnatadi.",
+   "Somning o‘g‘li Zol oq sochli bo‘lib tug‘iladi va Semurg‘ qanotida ulg‘ayib, Kobul malikasi Rudobaga ko‘ngil qo‘yadi.",
+   "Zol va Rudobaning nikohidan Eronning eng qudratli va sadoqatli pahlavoni Rustami Doston dunyoga keladi.",
+   "Kaykovus Mozandaron devlariga qarshi jangga kirib asir tushadi, Rustam Yetti sarguzashtni boshdan kechirib uni qutqaradi.",
+   "Rustam Samangon malikasi Tahminaga uylanadi va ulardan Suhrob ismli jasur o‘g‘il dunyoga keladi.",
+   "Suhrob otasini izlab Eronga qo‘shin tortadi, ammo fitna va hiyla sababli ota-o‘g‘il bir-birini tanimay jangga kirishadi.",
+   "Rustam bilmasdan o‘z o‘g‘li Suhrobni og‘ir yaralaydi va uning bilagidagi nishonni ko‘rib, chuqur motamga batmon bo‘ladi.",
+   "Kaykovusning o‘g‘li Siyovush Sudobaning fitnasiga uchraydi va o‘z pokligini ko‘rsatish uchun olovdan o‘tib, Turonga ketishga majbur bo‘ladi."
+  ],
+  "quotes": [
+   "Har kimning o‘z nomi, shon-orzusi bor, Jangdan sulh afzalroq keladi ming bor...",
+   "Bilib qo‘y, yaxshimas qon to‘kish aslo, Begunohlarga hech keltirma balo!",
+   "Insondan yaxshilik, nur va ravshanlik Insonsiz dunyoda yo‘q farovonlik...",
+   "Kim odamiylikdan chekinsa agar, Uni dev, jin degil, emasdir bashar.",
+   "Aql berdi, o‘ylab so‘zlasin deya, Faqat ezgulikni ko‘zlasin deya.",
+   "Diling shod etmaklik kelsa gar qo‘ldan, Qo‘lingdan kelgancha qaytma bu yo‘ldan."
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "«Shohnoma» dostonida adolatli va xalqiga mehribon shohlar bilan birga, manmanlik va kibrga berilib eliga kulfat keltirgan hukmdorlarni ham ko‘rdik. Seningcha, inson har qanday yutug‘ida kibrga berilmasligi uchun o‘zida qaysi fazilatlarni tarbiyalashi kerak va asardagi qaysi voqea senga eng katta saboq bo‘ldi?"
+}

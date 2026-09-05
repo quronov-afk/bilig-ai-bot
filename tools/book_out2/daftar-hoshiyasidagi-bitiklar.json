@@ -1,0 +1,479 @@
+{
+ "title": "Daftar hoshiyasidagi bitiklar",
+ "author": "O‘tkir Hoshimov",
+ "genre": "badiiy-publitsistik",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "ma'naviyat",
+   "oila va ota-ona",
+   "insof va iymon",
+   "halollik",
+   "vatanparvarlik",
+   "hayotiy saboqlar"
+  ],
+  "theme": "Insoniylik, ota-onaga va Vatanga sadoqat, iymon hamda halollik – hayotning eng oliy ma'naviy qadriyatlaridir. Asar insonni o‘z o‘tmishi, fe'li va amallariga hushyor qarashga chorlaydi.",
+  "summary": "«Daftar hoshiyasidagi bitiklar» — yozuvchi O‘tkir Hoshimovning qariyb qirq yil davomida to‘plagan hayotiy kuzatuvlari, o‘ylari va xulosalaridan iborat badiiy-publitsistik asardir. Kitob turli mavzulardagi qisqa va teran bitiklardan tashkil topgan. Muallif unda inson jamiyatidagi turli illatlar hamda fazilatlarni, ota-ona va farzand o‘rtasidagi rishtalarni, mehr va adolat tushunchalarini chuqur tahlil qiladi.\n\nAsarning birinchi qismida inson va tabiat munosabatlari, ma'naviyat tushunchasi, sho‘ro zamonidagi «o‘zbek ishi» va «paxta ishi» qatag‘onlarining achchiq oqibatlari, milliy g‘urur hamda andisha tuyg‘ulari haqida so‘z boradi. Muallif onasining tarnov tuzatayotgandagi va laylak haqidagi voqealari orqali ota-onaga bo‘lgan cheksiz mehr va e'tiborsizlik armonlarini ta'sirchan ifodalaydi. Shuningdek, Yaponiya mehmoni va «Girgitton buvi» obrazlari orqali halollik hamda birovning haqqidan qo‘rqish tuyg‘usini qiyoslaydi.\n\nIkkinchi qismda ijtimoiy hayotdagi ziddiyatlar, bozor iqtisodiyoti davridagi evrilishlar, adolatsizliklar, neofashistlar va Gdlyan guruhining zulmi, yolg‘onchilik hamda mehrga muhtojlik mavzulari yoritiladi. Ota-onani shunchaki «vositachi» deb bilgan nodon yigit, tovusni ko‘rib faqat uning go‘shtini o‘ylagan nafs bandasi va bozorda sabzi sotayotgan halol dehqon epizodlari orqali insoniy insof darajalari ko‘rsatiladi.\n\nUchinchi qism yozuvchining ijodkor do‘stlari — Said Ahmad, Ozod Sharafiddinov, Bahodir G‘ulomov va Erkin Vohidovlar bilan bog‘liq samimiy, kulgili va shu bilan birga o‘ylantiruvchi hangomalardan iborat. Har bir voqea zamirida insoniy beg‘uborlik, do‘stlik va soddalik ulug‘lanadi. Asar yakunida muallif hayotiy hikmatlar, so‘z qadri va ijodkor mas'uliyati haqida xulosalar beradi.",
+  "characters": "Muallif (O‘tkir Hoshimov) — kuzatuvchi, samimiy va kuynchak adib. Onasi — o‘g‘liga mehribon, kamtarin o‘zbek ayoli. Girgitton buvi — birovning haqqidan qo‘rqadigan halol momo. Said Ahmad — hozirjavob, quv va samimiy adib. Ozod Sharafiddinov — to‘g‘riso‘z, talabchan olim. Bahodir G‘ulomov — beg‘ubor, sodda va bag‘ri keng professor. Erkin Vohidov — zukko va topqir shoir.",
+  "conclusion": "Ushbu asar kitobxon farzandga ota-onani e'zozlash, birovning haqqiga xiyonat qilmaslik, har bir amalga insof va iymon mezoni bilan qarashni o‘rgatadi. Bola undan do‘stlikning qadriga yetish, milliy g‘urur va andishani saqlash hamda hayotiy sinovlarda sabr-toqatli bo‘lish sabog‘ini oladi.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, hazin, samimiy, yumoristik",
+  "for_whom": "Insoniylik, hayot saboqlari, ota-ona hurmati va ma'naviy poklik haqida o‘ylaydigan, samimiy hikoyalarni yoqtiradigan yoshlar uchun.",
+  "events": [
+   "Muallif kitobdagi bitiklarni qariyb qirq yil davomida yozganini ta'kidlaydi.",
+   "Girgitton buvi yerga to‘kilgan yong‘oqlarni birovniki bo‘lishi mumkin deb devor ortiga uloqtiradi.",
+   "Samarqandga kelgan Yaponiya mehmoni egasidan so‘ralmay uzilgan shaftolini yeyishdan bosh tortadi.",
+   "Bola chinordagi laylakni ko‘rib hayratlanadi, oradan yillar o‘tib onasi so‘raganda esa unga jerkib javob beradi.",
+   "Ona yomg‘ir ostida tarnov tuzatayotgan o‘g‘liga to‘n tutib, narvonni ushlab turadi.",
+   "Matematik olim do‘stining «Otchopar» bozorida sigaret sotib o‘tirgani ko‘rsatiladi.",
+   "Bozorda sabzi sotayotgan keksa dehqonni yolg‘onchilikda ayblashganda, u qopini shapatilab xafa bo‘ladi.",
+   "Sarbon o‘limi oldidan tuyasidan rozilik so‘raydi, tuya esa jilovi eshakka bog‘langanidan ranjiganini aytadi.",
+   "Aqlli yigit ota-onasini shunchaki «vositachi» deb bilishini aytib muallifni tanbehga uchratadi.",
+   "Dendrariyda tovusni ko‘rgan hamxona uning go‘shtidan tabaka qilish haqida o‘ylaydi.",
+   "Safardan qaytgan Hoji aka konyakni «suvini ichdim, makruhi tagida qoldi» deb o‘zini oqlaydi.",
+   "Marat garajdagi mashinani pachaqlagan alvasti deb o‘ylab bolg‘a zarbasidan yaralanadi.",
+   "Said Ahmad aka poyezdda yarim kechasi sherigining guruchini o‘z qopiga solib oladi.",
+   "Erkin Vohidov va do‘stlari Said Ahmadnikiga Oltiariq piyozi bahonasida tekin osh yegani borishadi.",
+   "Ozod Sharafiddinov to‘yga pomidor olib kelib, tilxat yozdirib oladi.",
+   "Said Ahmad aka to‘ydagi pomidorni «ituzum» deb ataydi.",
+   "Said Ahmad aka behilarni ko‘p uzgan muallifga hazillashib katta arra ko‘tarib keladi.",
+   "Do‘stlari Bahodir G‘ulomovning pasportini «o‘g‘irlab», uni militsiya orqali qo‘rqitishadi.",
+   "Do‘stlari poyezdda Bahodir akaning do‘ppisini yashirib, o‘ziga qayta sotishadi.",
+   "Do‘stlari o‘tovda Bahodir akaning portfeliga pishgan go‘sht solib qo‘yib, uni «o‘g‘ri»ga chiqarishadi."
+  ],
+  "quotes": [
+   "Odamzodni hayvonotdan ajratib turadigan chegara bor. Bu chegaraning nomi Ma'naviyat deb ataladi!",
+   "Insof iymon darvozasining posbonidir!",
+   "Dunyoda xalq duosini olishdan ortiq savob yo‘q. Dunyoda xalq qarg‘ishiga qolishdan ortiq gunoh yo‘q.",
+   "Kambag‘allik dononi ham «nodon», boylik nodonni ham «dono» qilib qo‘yishi mumkin ekan.",
+   "Ayol go‘dak isini birinchi farzandi tug‘ilganidayoq his etadi. Erkak esa go‘dak isi nimaligini nevarali bo‘lganidan keyin anglaydi!",
+   "Yaxshi sarbon yuk ortadigan tuyasini eshakka teptirib qo‘ymaydi...",
+   "Sevgi insonning tug‘ilishiga sababchi bo‘ladi. Mehr esa insoniyatni saqlab qoladi!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif kitobdagi bitiklarni qancha vaqt davomida yozganini aytadi?",
+   "options": [
+    "A) Qariyb qirq yil",
+    "B) O‘n yil davomida",
+    "C) Bir yil ichida",
+    "D) Yigirma yil davomida"
+   ],
+   "answer": "A) Qariyb qirq yil"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif fikricha, insonni hayvonotdan ajratib turadigan chegara nima?",
+   "options": [
+    "A) Ma'naviyat",
+    "B) Boylik",
+    "C) Kuch-quvvat",
+    "D) Kiyim-kechak"
+   ],
+   "answer": "A) Ma'naviyat"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Girgitton buvi yerda yotgan yong‘oqlarni devor ortiga uloqtirdi?",
+   "options": [
+    "A) Qo‘shnining yong‘og‘i bo‘lishi mumkinligi uchun",
+    "B) Yong‘oqlar chirigan va sassiq bo‘lgani uchun",
+    "C) Bolani xafa qilishni xohlagani uchun",
+    "D) Yong‘oqlarni yomon ko‘rgani uchun"
+   ],
+   "answer": "A) Qo‘shnining yong‘og‘i bo‘lishi mumkinligi uchun"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Samarqandda yapon mehmoni nimani qat'iyan rad etdi?",
+   "options": [
+    "A) Egasiga haq to‘lanmagan shaftolini yeyishni",
+    "B) Mashinaga o‘tirib sayr qilishni",
+    "C) Suvdan ichib chanqog‘ini bosishni",
+    "D) Tanishlar bilan ko‘rishib muloqot qilishni"
+   ],
+   "answer": "A) Egasiga haq to‘lanmagan shaftolini yeyishni"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Laylak hikoyasida bola birinchi marta nimani ko‘rib ajablandi?",
+   "options": [
+    "A) Chinor uyasidagi laylakni",
+    "B) Kattakon bino va uylarni",
+    "C) Yo‘ldagi tezyurar mashinalarni",
+    "D) Daryodagi katta kemalarni"
+   ],
+   "answer": "A) Chinor uyasidagi laylakni"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yillardan keyin onasi laylakni so‘raganda, o‘g‘il nega jerkib berdi?",
+   "options": [
+    "A) Yumushi ko‘pligi va shoshayotgani uchun",
+    "B) Onasining savolini eshitmagani uchun",
+    "C) Laylak uchib ketgani uchun",
+    "D) Onasidan xafa bo‘lgani uchun"
+   ],
+   "answer": "A) Yumushi ko‘pligi va shoshayotgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tarnovni tuzatish lavhasida ona o‘g‘liga nima berishga urindi?",
+   "options": [
+    "A) To‘n",
+    "B) Soyabon",
+    "C) Issiq choy",
+    "D) Dori"
+   ],
+   "answer": "A) To‘n"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning «Har kim o‘z aravasini tortsin» degan fikri to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, har kim o‘z ishini qilishi ma'qul",
+    "B) Noto‘g‘ri, hamma bir ishni qilgani yaxshi",
+    "C) To‘g‘ri, lekin birovga yordam bermaslik kerak",
+    "D) Noto‘g‘ri, inson ish tanlamasligi kerak"
+   ],
+   "answer": "A) To‘g‘ri, har kim o‘z ishini qilishi ma'qul"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Milliy g‘ururi bor odam bag‘ri keng bo‘ladi» deganda nimani ko‘rsatgan?",
+   "options": [
+    "A) O‘z millatini sevib, boshqalarni kamsitmaslikni",
+    "B) Faqat o‘z millatini ulug‘lashni",
+    "C) Boshqa millatlarni yoqtirmaslikni",
+    "D) O‘z yurtidan chiqib ketishni"
+   ],
+   "answer": "A) O‘z millatini sevib, boshqalarni kamsitmaslikni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qaysi qatorda muallif tilga olgan insoniy fazilatlar berilgan?",
+   "options": [
+    "A) Insof, iymon va andisha",
+    "B) Hasad, xudbinlik va manmanlik",
+    "C) Qizg‘anchiqik va loqaydlik",
+    "D) Dangasalik hamda qo‘rqoqlik"
+   ],
+   "answer": "A) Insof, iymon va andisha"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif bozorda matematik olim do‘stini ko‘rganda u nima qilayotgan edi?",
+   "options": [
+    "A) Sigaret sotib o‘tirgan edi",
+    "B) Kitob sotayotgan edi",
+    "C) Meva savdo qilayotgan edi",
+    "D) Mashina tuzatayotgan edi"
+   ],
+   "answer": "A) Sigaret sotib o‘tirgan edi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Maymunlar yo‘lbarsga nega yopirilib tashlanishdi?",
+   "options": [
+    "A) Maymun bolasini qutqarish uchun",
+    "B) Yo‘lbarsning go‘shtini yeyish uchun",
+    "C) O‘zaro urishib qolishgani uchun",
+    "D) Yo‘lbars uning mevasini olgani uchun"
+   ],
+   "answer": "A) Maymun bolasini qutqarish uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sabzi sotayotgan keksa dehqon qopni nega shapatiladi?",
+   "options": [
+    "A) Yolg‘onchi deyishganidan xafa bo‘lib",
+    "B) Qopdagi changni qoqish uchun",
+    "C) Qop teshilib qolgani uchun",
+    "D) Xaridorni shoshirish uchun"
+   ],
+   "answer": "A) Yolg‘onchi deyishganidan xafa bo‘lib"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sarbon nima uchun o‘limi oldidan tuyasidan rozilik so‘radi?",
+   "options": [
+    "A) Og‘ir yuk va suvsizlikka uchratgani uchun",
+    "B) Tuyani sotib yuborgani uchun",
+    "C) Tuyasini birovga bergani uchun",
+    "D) Tuyani urib o‘ldirgani uchun"
+   ],
+   "answer": "A) Og‘ir yuk va suvsizlikka uchratgani uchun"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sarbonning tuyasi qaysi voqeadan qattiq ranjiganini aytdi?",
+   "options": [
+    "A) Jilovi eshakka bog‘langanda",
+    "B) Unga kam ovqat berilganda",
+    "C) Yo‘lda qolib ketganida",
+    "D) Usti og‘ir bo‘lganda"
+   ],
+   "answer": "A) Jilovi eshakka bog‘langanda"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Soqolli yigit nega «Meni ota-onam emas, Xudo yaratgan» dedi?",
+   "options": [
+    "A) Tushunchasi zaharlanib adashgani uchun",
+    "B) Ota-onasi yo‘qligi uchun",
+    "C) Juda bilimdon bo‘lgani uchun",
+    "D) Ota-onasi uni tashlab ketgani uchun"
+   ],
+   "answer": "A) Tushunchasi zaharlanib adashgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dendrariyda tovusni ko‘rgan hamxona nima haqida o‘yladi?",
+   "options": [
+    "A) Go‘shtidan tabaka qilish haqida",
+    "B) Uning pati haqida",
+    "C) Uning chiroyliligi haqida",
+    "D) Uyga olib ketish haqida"
+   ],
+   "answer": "A) Go‘shtidan tabaka qilish haqida"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Yolg‘onchi qop lavhasida dehqonning haqligiga qanday baho beriladi?",
+   "options": [
+    "A) Dehqon halol va to‘g‘ri so‘z edi",
+    "B) Dehqon xaridorni aldamoqchi bo‘ldi",
+    "C) Dehqon tarozini noto‘g‘ri tortdi",
+    "D) Dehqon savdoni bilmas edi"
+   ],
+   "answer": "A) Dehqon halol va to‘g‘ri so‘z edi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnda o‘zbek mentalitetiga qaysi holatlar misol qilib ko‘rsatilgan?",
+   "options": [
+    "A) Kelin va tobutkashlar haqidagi gaplar",
+    "B) Bozor narxlarini oshirish holati",
+    "C) Qo‘shni bilan urishish odati",
+    "D) Faqat o‘zini o‘ylash fe'li"
+   ],
+   "answer": "A) Kelin va tobutkashlar haqidagi gaplar"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Yaxshilik» daraxti haqidagi afsonda nimani tasvirlagan?",
+   "options": [
+    "A) Yaxshilikka yomonlik qaytishi mumkinligini",
+    "B) Daraxtlarga g‘amxo‘rlik qilish kerakligini",
+    "C) Meva terish usullarini",
+    "D) Yo‘lovchilarning saxiyligini"
+   ],
+   "answer": "A) Yaxshilikka yomonlik qaytishi mumkinligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Safardan qaytgan Hoji aka konyakni qanday «halollab» ichardi?",
+   "options": [
+    "A) Makruhi tagida qoladi deb",
+    "B) Suv qo‘shib ichish orqali",
+    "C) Non bilan yeb berib",
+    "D) Duolar o‘qib ichib"
+   ],
+   "answer": "A) Makruhi tagida qoladi deb"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Marat qanday qilib kasalxonaga tushib qoldi?",
+   "options": [
+    "A) Garajda bolg‘a bilan urishgani uchun",
+    "B) Avtomobil halokatiga uchrab",
+    "C) Zinadan yiqilib tushib",
+    "D) Bitta odam bilan mushtlashib"
+   ],
+   "answer": "A) Garajda bolg‘a bilan urishgani uchun"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Said Ahmad aka poyezdda nega sherigining guruchini o‘z qopiga solayotgan edi?",
+   "options": [
+    "A) O‘zini «jinni»likka solib tekin olmoqchi bo‘lib",
+    "B) Guruchlar aralashib ketgani uchun",
+    "C) Qop teshilib qolgani uchun",
+    "D) Sherigi bergani uchun"
+   ],
+   "answer": "A) O‘zini «jinni»likka solib tekin olmoqchi bo‘lib"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Erkin Vohidov va do‘stlari Said Ahmadnikiga nimadan xabar olgani borishardi?",
+   "options": [
+    "A) Oltiariq piyozi haqida",
+    "B) Bog‘dagi behilar haqida",
+    "C) Yangi yozilgan kitobdan",
+    "D) Yasalgan beshikdan"
+   ],
+   "answer": "A) Oltiariq piyozi haqida"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ozod Sharafiddinov to‘yga qanday sabzavot olib keldi?",
+   "options": [
+    "A) Pomidor",
+    "B) Sabzi",
+    "C) Piyoz",
+    "D) Bodring"
+   ],
+   "answer": "A) Pomidor"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Said Ahmad aka Ozod Sharafiddinov olib kelgan pomidorni nima deb atadi?",
+   "options": [
+    "A) Ituzum",
+    "B) Olcha",
+    "C) Olxo‘ri",
+    "D) Behi"
+   ],
+   "answer": "A) Ituzum"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Said Ahmad aka behilarni ko‘p uzgan muallifga nega arra ko‘tarib keldi?",
+   "options": [
+    "A) Hazillashib, behi novdasini kesmoqchi bo‘lib",
+    "B) Daraxtni butunlay kesib tashlash uchun",
+    "C) Muallifni bog‘dan haydab solish uchun",
+    "D) Behilarni yerga to‘kish uchun"
+   ],
+   "answer": "A) Hazillashib, behi novdasini kesmoqchi bo‘lib"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bahodir G‘ulomov do‘stlari bilan bog‘liq voqealarda qanday odam sifatida ko‘rinadi?",
+   "options": [
+    "A) Beg‘ubor, sodda va ko‘ngli ochiq",
+    "B) Qizg‘anchiq va jahldor",
+    "C) Aqlsiz va nodon",
+    "D) Barchaga shubha bilan qaraydigan"
+   ],
+   "answer": "A) Beg‘ubor, sodda va ko‘ngli ochiq"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Bahodir G‘ulomovning do‘ppi voqeasida muallif nimani ta'sirchan ko‘rsatgan?",
+   "options": [
+    "A) Bahodir akaning samimiy va ishonchuvchanligini",
+    "B) Do‘stlarning shafqatsiz xatti-harakatini",
+    "C) Do‘ppi juda qimmat bahoda sotilganini",
+    "D) Poyezd xodimlarining qo‘polligini"
+   ],
+   "answer": "A) Bahodir akaning samimiy va ishonchuvchanligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Asar oxirida berilgan bitiklar kitobxonga nima beradi?",
+   "options": [
+    "A) Hayotiy hikmat va insoniylik sabog‘ini",
+    "B) Faqat vaqtichog‘lik va kulgini",
+    "C) Tarixiy fanlar bo‘yicha bilimlarni",
+    "D) Tijorat qilish sirlarini"
+   ],
+   "answer": "A) Hayotiy hikmat va insoniylik sabog‘ini"
+  }
+ ]
+}

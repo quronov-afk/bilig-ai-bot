@@ -1,0 +1,447 @@
+{
+ "title": "Shunaqa bolani qidirib yuribman",
+ "author": "Latif Mahmudov",
+ "genre": "hikoya",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "8-11",
+  "topics": [
+   "mehnatsevarlik",
+   "dangasalik",
+   "oila",
+   "do‘stlik",
+   "hazil",
+   "maktab"
+  ],
+  "theme": "Asar dangasalik va ishyoqmaslikning kulgili va ayanchli oqibatlarini ko‘rsatib beradi. Inson mehnat va intilish orqaligina jamiyatda hurmatga erishishi hamda o‘zidagi illatlarni yengishi mumkinligi ilgari suriladi.",
+  "summary": "Hikoya muallifning maktabga borib, dangasalarning dangasasi bo‘lgan Dadavoy ismli bola bilan tanishuvidan boshlanadi. Muallif voleybol musobaqasini tomosha qilayotganida, Dadavoyning singlisi Oysha chaqqonlik bilan o‘ynayotganiga guvoh bo‘ladi. Dadavoy esa ariq bo‘yida, papkasiga bosh qo‘yib uxlab yotgan bo‘ladi. U sportga ham, kitobga ham qiziqmaydi, faqat shirinlik yeyish va tush ko‘rishni yaxshi ko‘radi. U barcha o‘quv qurollarini singlisi Oyshaning papkasiga solib qo‘yadi. Uydaligida ham Oysha va buvisining xizmatidan foydalanib, o‘ta dangasalik qiladi. Bir kuni Oysha uni maktabdagi ko‘rgazmaga uyg‘otish uchun Dadavoyning qo‘yniga jiringlayotgan budilnikni solib qo‘yadi. Dadavoy cho‘chib tushib, tushida budilnik yutib yuborganini aytadi. Keyin u qo‘shnisi Nusrat boboning tomdagi o‘rikda o‘sayotgan bahaybat qovog‘iga ko‘zi tushadi. Dadavoy o‘sha qovoqni uzib, maktab ko‘rgazmasiga olib borib maqtanmoqchi bo‘ladi. U ketmon bilan qovoqning bandini urganda, katta qovoq gumburlab Dadavoyning boshiga tushadi va yelkasigacha kirib qoladi. Qovoq ichida qolgan Dadavoy harakatlanganda, Nusrat bobo va uning kampiri buni «alvasti qovoq» deb o‘ylab, dahshatga tushishadi. Dadavoy qovoq ichida teshik ochib, oshxona mo‘risidan chiqadi va ko‘chaga yo‘l oladi. Yo‘lda ketayotgan aravakash Mardonqulni qo‘rqitib, uni Mardonboy deb ataydi va «Dadavoyning qovog‘i bu» deb ashula aytishga majbur qiladi. Oxiri buvisi va Nusrat bobo yetib kelib, Dadavoyni qovoq ichidan tortib olishadi. Dadavoy o‘zining bu qiliqlaridan so‘ng o‘zgara boshlaydi. Oradan bir-ikki yil o‘tib, muallif maktabga kelganda, Dadavoyning sport bilan shug‘ullanayotgan, chaqqon va mehnatsevar bolaga aylanganini ko‘radi.",
+  "characters": "Dadavoy — asar boshida o‘ta dangasa, xayolparast va ishyoqmas bola. Keyinchalik o‘z illatlarini anglab, mehnatsevar va chaqqon bolaga aylanadi.\nOysha — Dadavoyning singlisi. Chaqqon, mehnatsevar, sportchi va o‘tkir zexnga ega qiz.\nBuvisi — nevaralariga g‘amxo‘r, mehribon va ko‘ngilchan keksaygan ayol.\nNusrat bobo — Dadavoyning qo‘shnisi, mirishkor va xushchaqchaq chol.\nMardonqul (Mardonboy) — sodda aravakash kishi.",
+  "conclusion": "Asar bolaga dangasalikning oqibati kulgili va noqulay ahvollarga solishini ko‘rsatib beradi. Bola mehnatsevarlik, halollik hamda o‘z burchini mas'uliyat bilan bajarish eng oily qadriyat ekanini tushunib yetadi. Kitobxon farzand o‘z vaqtini qadrlashni va oila a'zolariga yordam berishni o‘rganadi.",
+  "difficulty": "oson",
+  "mood": "kulgili, yengil, saboq beruvchi",
+  "for_whom": "Dangasalikdan qutulishni xohlaydigan, kulgili sarguzashtlar va maktab hayoti haqida o‘qishni yoqtiradigan bolalar uchun.",
+  "events": [
+   "Muallif redaksiya topshirig‘i bilan maktabga borib, voleybol o‘yinini tomosha qildi.",
+   "Oyshaning chaqqon o‘yinidan so‘ng, muallif ariq bo‘yida uxlab yotgan Dadavoyni ko‘rib qoldi.",
+   "Dadavoy singlisi Oyshaga papkasidan non olib berishni buyurdi.",
+   "Muallif Dadavoy bilan suhbatlashib, uning qiziqishlari va kitoblar haqidagi g‘alati fikrlarini eshitdi.",
+   "Dadavoy o‘zi kiyinmay, derazadan jildini uloqtirib Oyshaga ovoz berdi.",
+   "Dadavoy hamma o‘quv qurollarini singlisining papkasiga solib qo‘yishini aytdi.",
+   "Buvisi Dadavoyning tarafi olib, Oyshaga ta'zir berdi.",
+   "Oysha Dadavoyni uyg‘otish uchun budilnik soatni uning qo‘yniga solib qo‘ydi.",
+   "Dadavoy cho‘chib turib, tushida budilnik yutib yuborganini aytib dod soldi.",
+   "Dadavoy Nusrat boboning tomdagi bahaybat qovog‘ini ko‘rib, uni maktab ko‘rgazmasiga olib borishni rejalashtirdi.",
+   "Dadavoy tomga chiqib, ketmon bilan qovoqning bandini urib uzdi.",
+   "Bahaybat qovoq Dadavoyning boshiga tushib, yelkasigacha kirib qoldi.",
+   "Nusrat bobo va kampiri oyog‘i bor qovoqni ko‘rib, uni alvasti deb o‘ylashdi.",
+   "Dadavoy qovoq ichida teshik ochib, oshxonaning mo‘risidan tomga chiqdi.",
+   "Dadavoy ko‘chada aravakash Mardonqulni uchratib, uni qo‘rqitdi.",
+   "Dadavoy aravakashning ismini Mardonboy deb o‘zgartirib, ashula aytishga majbur qildi.",
+   "Mardonboy aravadagi sabzavotlarni ag‘darib, Dadavoyning qovog‘ini ortib ketdi.",
+   "Buvisi va Nusrat bobo yetib kelib, Dadavoyni qovoq ichidan tortib olishdi.",
+   "Oysha va Nusrat bobo Dadavoyning bu ahvolidan kulib, uni mehnatga chorlashdi.",
+   "Oradan yillar o‘tib, muallif Dadavoyning futbol o‘ynayotgan chaqqon va mehnatsevar bolaga aylanganini ko‘rdi."
+  ],
+  "quotes": [
+   "Yalqov, dangasaning nimasini yozadi-yu, nimasidan huzur-halovat topadi odam.",
+   "Odam konfetni so‘rib uxlasa konfetga o‘xshagan shirin-shirin tush ko‘radi!",
+   "Yalqovlar tabiatan juda xayolparast bo‘larkan, hayotlari chalakam-chatti ertakka o‘xsharkan.",
+   "Mehrin qo‘ysin mehnatga, yetar shunda niyatga!",
+   "Siz yozgan Dadavoyni o‘sha «alvasti qovoq» allaqachon «yeb» qo‘ygan."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dadavoyning singlisining ismi kim edi?",
+   "options": [
+    "A) Oysha",
+    "B) Manzura",
+    "C) Robiya"
+   ],
+   "answer": "A) Oysha"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif Dadavoy bilan qayerda tanishib qoldi?",
+   "options": [
+    "A) Ko‘chada",
+    "B) Maktabda",
+    "C) Bog‘da"
+   ],
+   "answer": "B) Maktabda"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oysha maktabda qaysi sport o‘yinini o‘ynayotgan edi?",
+   "options": [
+    "A) Basketbol",
+    "B) Voleybol",
+    "C) Tennis"
+   ],
+   "answer": "B) Voleybol"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dadavoy uyg‘ongach buvisiga tushida nimani ko‘rganini aytdi?",
+   "options": [
+    "A) Budilnik yutib yuborganini",
+    "B) Koptok tepganini",
+    "C) Suvga tushib ketganini"
+   ],
+   "answer": "A) Budilnik yutib yuborganini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oysha uyni sarishtalab bo‘lgach qaysi ishlarni qildi?",
+   "options": [
+    "A) Gul uzib, tandirga o‘tin qaladi",
+    "B) Kitob o‘qib, uxlashga yatdi",
+    "C) Ovqat pishirib, ko‘chaga chiqdi"
+   ],
+   "answer": "A) Gul uzib, tandirga o‘tin qaladi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Dadavoy kitob-daftarlarini Oyshaning papkasiga solib qo‘yardi?",
+   "options": [
+    "A) Papkasi yo‘qligi uchun",
+    "B) O‘zi ko‘tarib yurmaslik uchun",
+    "C) Oysha so‘ragani uchun"
+   ],
+   "answer": "B) O‘zi ko‘tarib yurmaslik uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Oysha budilnik soatni Dadavoyning qo‘yniga solib qo‘ydi?",
+   "options": [
+    "A) Uni tezroq uyg‘otish uchun",
+    "B) Soatni yashirish uchun",
+    "C) Dadavoy so‘ragani uchun"
+   ],
+   "answer": "A) Uni tezroq uyg‘otish uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dadavoyning singlisiga ovqat ko‘tartirib yurishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, u kattalarga bo‘ysunsin",
+    "B) Noto‘g‘ri, aka g‘amxo‘r bo‘lishi kerak",
+    "C) Farqi yo‘q, singilning vazifasi"
+   ],
+   "answer": "B) Noto‘g‘ri, aka g‘amxo‘r bo‘lishi kerak"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif dangasalarning xayolparastligi haqida nima degan?",
+   "options": [
+    "A) Tushida amallarni bajarishadi",
+    "B) Juda ko‘p kitob o‘qishadi",
+    "C) Har doim haqiqatni gapirishadi"
+   ],
+   "answer": "A) Tushida amallarni bajarishadi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Oyshaning Dadavoyga aytgan she'ri qanday tuyg‘u beradi?",
+   "options": [
+    "A) Dangasalikni fosh qiluvchi kulgu",
+    "B) Qattiq qayg‘u va g‘am",
+    "C) Jiddiy va qo‘rqinchli xabar"
+   ],
+   "answer": "A) Dangasalikni fosh qiluvchi kulgu"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bahaybat qovoq kimning hovlisidagi o‘rikda o‘sayotgan edi?",
+   "options": [
+    "A) Nusrat boboning",
+    "B) Solijon domlaning",
+    "C) Mardonqulning"
+   ],
+   "answer": "A) Nusrat boboning"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dadavoy qovoq bandini urib uzish uchun nimadan foydalandi?",
+   "options": [
+    "A) Pichoqdan",
+    "B) Ketmondan",
+    "C) Boltadan"
+   ],
+   "answer": "B) Ketmondan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ketmon tegib uzilgan qovoq qayerga tushdi?",
+   "options": [
+    "A) Yerga yorildi",
+    "B) Dadavoyning boshiga tushdi",
+    "C) Ariqqa tushdi"
+   ],
+   "answer": "B) Dadavoyning boshiga tushdi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nusrat bobo va kampiri qovoqni nima deb o‘ylashdi?",
+   "options": [
+    "A) Alvasti deb",
+    "B) Qovun deb",
+    "C) O‘yinchoq deb"
+   ],
+   "answer": "A) Alvasti deb"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dadavoy qovoq ichiga tushib qolgach nima qildi?",
+   "options": [
+    "A) Teshik ochib, konfet yedi",
+    "B) Qovoqni yorib tashladi",
+    "C) Darrov uxlab qoldi"
+   ],
+   "answer": "A) Teshik ochib, konfet yedi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Dadavoy Nusrat boboning qovog‘ini olmoqchi bo‘ldi?",
+   "options": [
+    "A) Maktab ko‘rgazmasiga qo‘yish uchun",
+    "B) Qovoq somsa qilish uchun",
+    "C) Bozorga olib borish uchun"
+   ],
+   "answer": "A) Maktab ko‘rgazmasiga qo‘yish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Nusrat bobo alvasti qovoqni oshxonaga qamab qo‘ydi?",
+   "options": [
+    "A) O‘zlarini himoya qilish uchun",
+    "B) Qovoqni pishirish uchun",
+    "C) Mehmonlarga ko‘rsatish uchun"
+   ],
+   "answer": "A) O‘zlarini himoya qilish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dadavoyning birovning qovog‘iga so‘ramay tegishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, ko‘rgazma uchun mumkin",
+    "B) Noto‘g‘ri, so‘ramay olish yomon",
+    "C) Farqi yo‘q, o‘zi qo‘shnisi"
+   ],
+   "answer": "B) Noto‘g‘ri, so‘ramay olish yomon"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Nusrat boboning «Mehrin qo‘ysin mehnatga» degani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, mehnat insonni tuzatadi",
+    "B) Noto‘g‘ri, mehnat qilish shart emas",
+    "C) Fikrga qo‘shilib bo‘lmaydi"
+   ],
+   "answer": "A) To‘g‘ri, mehnat insonni tuzatadi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Chol-kampirning o‘zaro she'riy aytishuvi matnga qanday kayfiyat beradi?",
+   "options": [
+    "A) Samimiy va xushchaqchaq kayfiyat",
+    "B) G‘amgin va qo‘rqinchli kayfiyat",
+    "C) Zerikarli va og‘ir kayfiyat"
+   ],
+   "answer": "A) Samimiy va xushchaqchaq kayfiyat"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dadavoy aravakash Mardonqulning ismini nima deb o‘zgartirdi?",
+   "options": [
+    "A) Mardonboy",
+    "B) Mardonbek",
+    "C) Soliboy"
+   ],
+   "answer": "A) Mardonboy"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dadavoy aravakashga qaysi nom bilan ashula aytishni buyurdi?",
+   "options": [
+    "A) Dadavoyning qovog‘i bu",
+    "B) Nusrat boboning qovog‘i bu",
+    "C) Katta alvasti qovoq bu"
+   ],
+   "answer": "A) Dadavoyning qovog‘i bu"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dadavoyni qovoq ichidan kim sochidan tortib chiqardi?",
+   "options": [
+    "A) Buvisi",
+    "B) Nusrat bobo",
+    "C) Aravakash"
+   ],
+   "answer": "A) Buvisi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yillar o‘tib muallif Dadavoyni ko‘rganda u nima qilayotgan edi?",
+   "options": [
+    "A) Koptok tepayotgan edi",
+    "B) Uxlab yotgan edi",
+    "C) Konfet so‘rayotgan edi"
+   ],
+   "answer": "A) Koptok tepayotgan edi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Aravakash aravadagi sabzavotlarni pastga qanday ag‘darib tashladi?",
+   "options": [
+    "A) Eshakni ko‘tarib aravani ag‘dardi",
+    "B) Bittalab qo‘li bilan otdi",
+    "C) Ketmon bilan surib tushirdi"
+   ],
+   "answer": "A) Eshakni ko‘tarib aravani ag‘dardi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hikoyada alvasti qovoqdan kimlar ketma-ket qo‘rqib qochishdi?",
+   "options": [
+    "A) Nusrat bobo, kampir, aravakash",
+    "B) Oysha, buvisi, domla",
+    "C) Dadavoy, muallif, Oysha"
+   ],
+   "answer": "A) Nusrat bobo, kampir, aravakash"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Dadavoy aravakashdan yaxtagini ustiga yopishni so‘radi?",
+   "options": [
+    "A) Buvilari ko‘rib qolmasligi uchun",
+    "B) Sovotib qo‘ymaslik uchun",
+    "C) Yomon ko‘rinmaslik uchun"
+   ],
+   "answer": "A) Buvilari ko‘rib qolmasligi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega yillar o‘tib Dadavoy o‘zining o‘zgarganini aytdi?",
+   "options": [
+    "A) Dangasalikni tashlab, mehnatsevar bo‘lgani uchun",
+    "B) Ismini boshqa joyga yozdirgani uchun",
+    "C) Maktabni bitirib ketgani uchun"
+   ],
+   "answer": "A) Dangasalikni tashlab, mehnatsevar bo‘lgani uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dadavoyning keyinchalik sportga kirishib o‘zgargani qanday baholanadi?",
+   "options": [
+    "A) Ijobiy, dangasalikni yengibdi",
+    "B) Salbiy, o‘yin o‘ynash yomon",
+    "C) Farqsiz, hech narsa o‘zgarmagan"
+   ],
+   "answer": "A) Ijobiy, dangasalikni yengibdi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«O‘sha alvasti qovoq yeb qo‘ygan» iborasi nimani anglatadi?",
+   "options": [
+    "A) Eski dangasa Dadavoy yo‘qolganini",
+    "B) Qovoq haqiqatan odam yaganini",
+    "C) Dadavoy kasal bo‘lib qolganini"
+   ],
+   "answer": "A) Eski dangasa Dadavoy yo‘qolganini"
+  }
+ ]
+}

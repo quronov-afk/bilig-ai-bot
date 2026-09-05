@@ -1,0 +1,47 @@
+{
+ "title": "Mantiq ut-tayr",
+ "author": "Fariduddin Attor",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+ (Asar tasavvufiy ramzlar va falsafiy g‘oyalarga boy, shuningdek, fors tilidan tarjima qilingan. So‘zlari tushunarli bo‘lsa-da, ma'naviy va majoziy qatlami chuqur bo‘lgani uchun 14 yoshdan oshgan o‘quvchilar uchun mos).",
+  "topics": [
+   "nafs bilan kurash",
+   "ilm va ma'rifat",
+   "sabr va matonat",
+   "ruhiy poklanish",
+   "ustoz va shogird",
+   "o‘zlikni anglash"
+  ],
+  "theme": "Inson o‘z nafsini yengib, komillik va haqiqatni tashqaridan emas, balki o‘z qalbidan hamda ruhiy poklanishidan izlashingiz kerak. Asar ruhiy yuksalish, ma'rifat va Haqqa intilish yo‘lida sabr, ixlos hamda fidoyilik zarurligini uqtiradi.",
+  "summary": "Qushlar (inson nafslari va ruhlari) o‘zlariga podsho izlab to‘planadilar. Hudhud ularga adolatli hamda ulug‘ Hukmdor — Simurg‘ haqida xabar beradi va uni izlab uzoq hamda mashaqqatli yo‘lga otlanishni taklif etadi. Turli qushlar (Tovus, To‘ti, G‘oz, Kaklik, Shabparak) dunyoviy orzu-havaslari, qo‘rquvlari hamda qulayliklarini ro‘kach qilib, safardan bo‘yin tovlamoqchi bo‘ladilar. Hudhud har biriga ma'rifiy hikoyatlar va dono pandlar orqali javob berib, ularning bahonalarini rad etadi hamda to‘g‘ri yo‘lga soladi. Qushlar Hudhud boshchiligida yetti ma'naviy vodiy (Talab, Ishq, Ma'rifat, Istig‘no, Tavhid, Hayrat, Fano) bo‘ylab safarga chiqadilar. Yo‘ldagi qiyinchiliklar, ochlik, chanqoq va sinovlar sababli minglab qushlar halok bo‘ladi yoki yo‘ldan qaytadi. Oxir-oqibat, barcha sinovlarni yengib o‘tgan bor-yo‘g‘i o‘ttizta qush (si murg‘) manzilga yetib boradi. Ular Simurg‘ saroyiga kirganlarida, ma'lum bo‘ladiki, «Si murg‘» fors tilida «o‘ttiz qush» degan ma'noni bildiradi va ular izlagan ilohiy haqiqat hamda podsho aslida ularning o‘zida, poklangan qalblarida namoyon bo‘ladi.",
+  "characters": "Hudhud — qushlarning yo‘lboshchisi va rahnamosi, donolik hamda ma'rifat timsoli.\nSimurg‘ — haqiqat, ilohiy go‘zallik va komillik timsoli.\nTurli qushlar (Tovus, To‘ti, G‘oz, Kaklik, Shabparak va boshqalar) — insoniy nafs, ikkilanuvchanlik hamda dunyo matolariga bog‘lanib qolgan turli fe'l-atvorli kishilar simvolidir.\nShayx San'on (hikoyatda) — ishq va imon sinovlaridan o‘tib, oxir-oqibat to‘g‘ri yo‘lga qaytgan, sodiq shogirdlarining duosi sabab nicot topgan ustoz timsoli.",
+  "conclusion": "Asar o‘quvchiga har qanday ulug‘ va yuksak maqsadga erishish uchun sabr, matonat hamda doimiy mehnat zarurligini o‘rgatadi. Bola qiyinchiliklardan qo‘rqmaslikni, o‘zining salbiy odatlari va nafsiga qarshi kurashishni hamda haqiqiy baxt va donolik insonning o‘z ichki dunyosida ekanini anglaydi. Asar ustozga hurmat, do‘stlikda vafo va orzu yo‘lida qat'iyatli bo‘lish kabi yuksak insoniy qadriyatlarni shakllantiradi.",
+  "difficulty": "qiyin",
+  "mood": "falsafiy, o‘ylantiruvchi, ruhiy-ma'rifiy",
+  "for_whom": "Hayotning ma'nosi haqida fikrlaydigan, ramziy va majoziy hikoyalarga qiziqadigan, ruhiy kamolot hamda o‘z ustida ishlashni xohlaydigan o‘smirlar uchun.",
+  "events": [
+   "Qushlar o‘zlariga podsho topish uchun to‘planadilar va Hudhud ularga Simurg‘ haqida so‘zlab beradi.",
+   "Turli qushlar o‘zlarining dunyoviy bog‘liqliklari va qo‘rquvlarini ro‘kach qilib, safardan qolmoqchi bo‘ladilar.",
+   "Hudhud har bir qushning bahonasiga dono hikoyatlar va saboqlar orqali javob qaytarib, ularni safarga ilhomlantiradi.",
+   "Shayx San'on haqidagi hikoyada ishq va imon sinovlari hamda sodiq shogirdlarning ustozini qutqarish uchun fidoyilik ko‘rsatishi tasvirlanadi.",
+   "Qushlar Hudhud rahbarligida yetti ma'naviy vodiy (Talab, Ishq, Ma'rifat, Istig‘no, Tavhid, Hayrat, Fano) sari yo‘l oladilar.",
+   "Mashaqqatli safar va sinovlar jarayonida ko‘plab qushlar toqatsizlik qilib halok bo‘ladi yoki orqaga qaytadi.",
+   "Nihoyat, barcha sinov hamda mashaqqatlarni yengib o‘tgan o‘ttizta qush Simurg‘ dargohiga yetib keladi.",
+   "O‘ttiz qush (si murg‘) o‘z akslariga va qalb oynasiga boqib, izlagan Simurg‘ o‘zlari ekanini hamda haqiqat o‘z ichlarida yashashini anglab yetadilar."
+  ],
+  "quotes": [
+   "Arshni suv uzra bunyod ayladi, Odamiy umrin shamolga joyladi.",
+   "Sen o‘zingdin kech, kamol aslida shul, Bir yo‘la yo‘q bo‘l, visol aslida shul.",
+   "Yo‘lda ne past-u baland, ko‘rgaymisen? Bir asokash bo‘lmasa, yurgaymisen?",
+   "Mardi kull ersang, hamisha kullni ko‘r, Kullni izla, kull bo‘lib, butkulni ko‘r...",
+   "Do‘stki o‘lgay, nega do‘st dersan ani? Bas, o‘lib, g‘amlarga qo‘ygaydir seni.",
+   "Kimki insof aylagay, ul koni qut, Bo‘lmagay hargiz riyokor, esda tut."
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Qushlar Hudhudga har xil bahonalar aytib, Simurg‘ni izlash safaridan qolmoqchi bo‘lishdi. Sen ham biror muhim va yaxshi ishni qilishda qiyinchilikdan qo‘rqib yoki erinib bahona qilgan paytlaring bo‘lganmi? Asardagi o‘ttiz qushning matonati senga qanday saboq berdi?"
+}

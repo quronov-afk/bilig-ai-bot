@@ -1,0 +1,479 @@
+{
+ "title": "Manas",
+ "author": "Qirg‘iz xalq eposi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "vatanparvarlik",
+   "jasorat",
+   "do‘stlik",
+   "el-yurt birligi",
+   "sadoqat"
+  ],
+  "theme": "Ota-bobolar zaminini va el-yurt ozodligini asrash, dushmanlarga qarshi hamjihatlikda mardona kurashish hamda va'da va do‘stlikka sadoqatli bo‘lish.",
+  "summary": "Qadim zamonda dushman Aloke xon qirg‘iz elini tor-mor etib, xalqni har tarafga tarqatib yuboradi. Jaqip va Oqbolta boshliq bir guruh qirg‘izlar Oltoyga ko‘chib o‘tib, u yerda dehqonchilik va mehnat ortidan boy-badavlat bo‘lishadi. Ammo Jaqipning farzandi bo‘lmay, doimiy armonda yashaydi. Yaratganga zorlanib tilak tilagach, Jaqip, Chiyirdi va Baxtdavlat ajoyib tushlar ko‘rishadi. Chiyirdi boshqorong‘i bo‘lib, yo‘lbars yuragini yeydi va bahodir o‘g‘il — Manasni dunyoga keltiradi.\n\nManas yoshligidanoq favqulodda kuch-qudrat va jasorat ko‘rsatib, el-yurtining suyanchiq alpiga aylanadi. U Esonxon va Nesqora yuborgan yovlarni tor-mor etadi. Voyaga yetgach, tarqoq qirg‘iz urug‘larini va qardosh ellarni bir bayroq ostiga yig‘ib, uni xon qilib ko‘tarishadi. Manas keksaygan Qo‘shay alp bilan uchrashib, ota-bobolarining muqaddas makoni bo‘lmish Olatov va Tolas yerlarini dushmanlardan ozod qilishga ahd qiladi. U Tekesxon, Oxunbeshim va Ponusxon kabi shafqatsiz dushmanlarni yengib, qirg‘iz elini o‘z ota yurti Olatovga ko‘chirib keladi.\n\nKeyinchalik Manas huzuriga Xitoy xonligidan bezib, islomni qabul qilgan va do‘stlik izlagan jasur botir Almambet keladi. Manas va Almambet qiyomatli do‘st bo‘lishadi. Manas oqila va vafodor Xonikeyga uylanadi. Ulkan el-yurt yig‘ini bo‘lmish Ko‘katoyning oshida poygalar, yombi otish va polvonlar bellashuvi bo‘lib o‘tadi, unda Qo‘shay alp Jo‘lay devni yengadi, Manas esa ashaddiy yov Qo‘ng‘irboyni mag‘lub etadi.\n\nSo‘ngra Manas va uning qirq botiri Bejin tomonga Ulug‘ g‘azotga otlanishadi. Almambet va Sirg‘aq Bejinga ayg‘oqchilikka borib, dushman sirlarini o‘rganishadi. Shiddatli va uzoq davom etgan urushlarda ko‘plab botirlar halok bo‘ladi. Dushmanlar hiyla bilan Manasni og‘ir yarador qilishadi. Manas o‘z yurtiga qaytib kelib, el-yurti bilan xushlashadi va dunyodan o‘tadi. Uning jasorati va nomi avlodlar xotirasida mangu qoladi.",
+  "characters": "Manas — qirg‘iz xalqining afsonaviy bahodiri, tarqoq ellarni birlashtirgan va el-yurt ozodligi yo‘lida mardona kurashgan arslonmijoz sarkarda.\nJaqip — Manasning otasi, sabr-toqatli, dehqonchilik ortidan boylik orttirgan va uzoq vaqt farzand intizorida yashagan mo‘tabir chol.\nChiyirdi — Manasning onasi, alp o‘g‘ilga homiladorlik paytida yo‘lbars yuragini yeb, uni dunyoga keltirgan matonatli ayol.\nOqbolta — Jaqipning maslakdoshi va oqil maslahatgo‘yi, qiyin damlarda elni hamjihatlik va mehnatga chorlagan donishmand.\nAlmambet — Xitoy xonligidan chiqib islomni qabul qilgan, Manasga chin do‘st va eng yaqin yordamchi bo‘lgan jasur va bilagho‘r botir.\nXonikey — Manasning aqlli, vafodor va uzoqni ko‘ra oladigan rafiqasi, og‘ir damlarda botirlarga tayanch bo‘lgan oqila malika.\nQo‘ng‘irboy — qirg‘iz elining qasamxo‘r va ayyor dushmani, Manas va uning botirlariga qarshi doimiy hiyla va urush olib borgan Xitoy alpi.\nQo‘shay — qirg‘iz elining keksa avliyosimon alpi, Manasga oq yo‘l tilab, kurashda Jo‘lay devni yenggan donishmand pahlavon.",
+  "conclusion": "Ushbu doston o‘sib kelayotgan avlodda vatanparvarlik, mardlik va hamjihatlik kabi yuksak insoniy fazilatlarni shakllantiradi. Kitobxon farzand el-yurt tinchligi va erki eng oily qadriyat ekanini, qiyinchilikda sabr-toqat va halol mehnat insonni yuksaltirishini anglaydi. Shuningdek, asar chin do‘stlik, va'daga sadoqat va kattalarga hurmat ko‘rsatish saboqlarini beradi.",
+  "difficulty": "o‘rta",
+  "mood": "g‘ayratli, shiddatli, tarixiy",
+  "for_whom": "Tarixiy dostonlar, qahramonlik va jasorat haqidagi kitoblarni xush ko‘radigan, el-yurt taqdiriga befarq bo‘lmagan o‘smirlarga mo‘ljallangan.",
+  "events": [
+   "1. Aloke xon qirg‘iz yurtini talab, elni har tomonga ko‘chirib yubordi.",
+   "2. Jaqip va Oqbolta Oltoyga borib, dehqonchilik orqali boy-badavlat bo‘lishdi.",
+   "3. Farzandsizlikdan ezilgan Jaqip, Chiyirdi va Baxtdavlat ajoyib tushlar ko‘rishdi.",
+   "4. Chiyirdi boshqorong‘ilikda yo‘lbars yuragini pishirib yedi.",
+   "5. Chiyirdi yetti kun to‘lg‘oq tortib, alp o‘g‘il Manasni dunyoga keltirdi.",
+   "6. Mengliboy to‘qayda Tuuchunoq oti va o‘ldirilgan oq yo‘lbarsni topdi.",
+   "7. Jaqip katta ehson berib, Oqbolta tushni botir o‘g‘il tug‘ilishiga yo‘ydi.",
+   "8. Manas ulg‘ayib, Esonxon yuborgan alplarga qarshi mardona kurashdi.",
+   "9. Jaqip va uning og‘asi Boy uzoq yillik ayriliqdan so‘ng ko‘rishishdi.",
+   "10. Qirg‘iz va qardosh ellar yig‘ilib, yosh Manasni xon ko‘tarishdi.",
+   "11. Manas Qo‘shay alp huzuriga borib, ota-bobolar zaminini ozod qilishga ahd qildi.",
+   "12. Manas va uning qo‘shini Tekes xon hamda Oxunbeshimni mag‘lub etdi.",
+   "13. Manas jangda jasur Sayqal qiz bilan kuch sinashib, uni ortga chekinishga majbur qildi.",
+   "14. Oltoydagi qirg‘izlar o‘zlarining qadimiy makoni Olatovga ko‘chib kelishdi.",
+   "15. Almambet botir Ko‘kchaning huzuridan ketib, Manas bilan qiyomatli do‘st bo‘ldi.",
+   "16. Manas Qarabekning oqila qizi Xonikeyga saqlanib uylandi.",
+   "17. Bo‘qmurun otasi Ko‘katoy xotirasiga Qarqarada ulkan osh berdi.",
+   "18. Ko‘katoy oshida Qo‘shay alp Jo‘lay devni, Manas esa Qo‘ng‘irboyni yengdi.",
+   "19. Manas va uning qirq botiri Bejin qal'asiga Ulug‘ g‘azotga otlanishdi.",
+   "20. Almambet va Sirg‘aq Bejinga ayg‘oqchilikka borib, dushman yilqisini haydab kelishdi.",
+   "21. Madixon va Kunjangjung kabi dushman alplari jangda halok bo‘lishdi.",
+   "22. Xonikey yuborgan Toyburul ot va sovutni Baqay avliyo Manasga yetkazdi.",
+   "23. Yarador bo‘lgan Manas o‘z yurtiga qaror qilib qaytdi va el-yurti bilan xushlashib vafot etdi."
+  ],
+  "quotes": [
+   "Bolasig‘a otasi meros qilib ketgan so‘z.",
+   "Ellik yilda – el yangi, yuz yilda – butkul yer yangi.",
+   "Manglaydan ter oqizib, dehqon bo‘lib qolaylik, shuytib boylik topaylik.",
+   "Mol yig‘dim degani chala ekan, dunyoning egasi bola ekan.",
+   "Qiyomatlik otasi – Manasg‘a ketmish shu yerda."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jaqip va Oqbolta qaysi yerda dehqonchilik qilishdi?",
+   "options": [
+    "A) Oltoyda",
+    "B) Toshkentda",
+    "C) Farg‘onada",
+    "D) Urganchda"
+   ],
+   "answer": "A) Oltoyda"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chiyirdi boshqorong‘i bo‘lganda nima yeyishni xohladi?",
+   "options": [
+    "A) Yo‘lbars yuragini",
+    "B) Kiyik go‘shtini",
+    "C) Oq olmani",
+    "D) Biya qazisini"
+   ],
+   "answer": "A) Yo‘lbars yuragini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jaqip tushida qanday qushni ko‘rdi?",
+   "options": [
+    "A) Alp qoraqushni",
+    "B) Kichik bulbulni",
+    "C) Qora qarg‘ani",
+    "D) Oq kaptarni"
+   ],
+   "answer": "A) Alp qoraqushni"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mengliboy to‘qayda nimaning o‘lganini ko‘rdi?",
+   "options": [
+    "A) Oq yo‘lbarsni",
+    "B) Qora ayiqni",
+    "C) Yirtqich bo‘rini",
+    "D) Yovvoyi to‘ng‘izni"
+   ],
+   "answer": "A) Oq yo‘lbarsni"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jaqip elini yig‘ib, avval nima qildi?",
+   "options": [
+    "A) Dasturxon yozib, osh berdi",
+    "B) Birdan urushga otlandi",
+    "C) Boshqa yurtga ko‘chdi",
+    "D) Mol-mulkini bo‘lib berdi"
+   ],
+   "answer": "A) Dasturxon yozib, osh berdi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oqbolta Jaqipning tushini qanday yo‘ydi?",
+   "options": [
+    "A) Botir o‘g‘il tug‘ilishiga",
+    "B) Boyligi yo‘qolishiga",
+    "C) Yurtda qahatchilik bo‘lishiga",
+    "D) Uzoq safarga chiqishiga"
+   ],
+   "answer": "A) Botir o‘g‘il tug‘ilishiga"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Jaqip va uning odamlari Oltoyga ko‘chib o‘tdi?",
+   "options": [
+    "A) Dushman quvib yuborgani uchun",
+    "B) O‘z xohishi bilan",
+    "C) Savdo qilish uchun",
+    "D) Yangi yer izlab"
+   ],
+   "answer": "A) Dushman quvib yuborgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jaqipning qiyinchilikda dehqonchilik qilgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, mehnat elni qutqardi",
+    "B) Noto‘g‘ri, behuda vaqt ketdi",
+    "C) Noto‘g‘ri, urushish kerak edi",
+    "D) To‘g‘ri, lekin foyda bermadi"
+   ],
+   "answer": "A) To‘g‘ri, mehnat elni qutqardi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Doston boshlamasida qaysi fikrni ta'kidlaydi?",
+   "options": [
+    "A) Bobolar so‘zi unutilmay kelishini",
+    "B) Barcha voqealar yolg‘onligini",
+    "C) Doston faqat o‘yin ekanini",
+    "D) Qahramonlar mutlaqo bo‘lmaganini"
+   ],
+   "answer": "A) Bobolar so‘zi unutilmay kelishini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Jaqipning bola orzusida yig‘lagani qanday tuyg‘uni ko‘rsatadi?",
+   "options": [
+    "A) Farzandga bo‘lgan kuchli intizorlikni",
+    "B) Boyligiga achinish tuyg‘usini",
+    "C) Dushmandan qo‘rqish hissini",
+    "D) O‘z elidan bezishini"
+   ],
+   "answer": "A) Farzandga bo‘lgan kuchli intizorlikni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Almambet Manasning oldiga kelguncha kimnikida bo‘lgan edi?",
+   "options": [
+    "A) Ko‘kchaning huzurida",
+    "B) Ponusxonning saroyida",
+    "C) Tekesxonning qal'asida",
+    "D) Shovruqxonning o‘rdasida"
+   ],
+   "answer": "A) Ko‘kchaning huzurida"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Manas kimning qiziga uylandi?",
+   "options": [
+    "A) Qarabekning qizi Xonikeyga",
+    "B) Shovruqxonning qizi Oqiloyga",
+    "C) Qo‘ng‘irboyning qiziga",
+    "D) Esonxonning qizi Sayqalga"
+   ],
+   "answer": "A) Qarabekning qizi Xonikeyga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ko‘katoyning oshida qaysi ot poygada g‘olib bo‘ldi?",
+   "options": [
+    "A) Manasning Oqqulasi",
+    "B) Almambetning Saralasi",
+    "C) Ko‘kchaning Ko‘kolasi",
+    "D) Qo‘ng‘irboyning Olqorasi"
+   ],
+   "answer": "A) Manasning Oqqulasi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qo‘shay alp kim bilan kurash tushdi?",
+   "options": [
+    "A) Jo‘lay dev bilan",
+    "B) Qo‘ng‘irboy bilan",
+    "C) Madixon bilan",
+    "D) Ponusxon bilan"
+   ],
+   "answer": "A) Jo‘lay dev bilan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Almambetning Ko‘kchadan ketishiga nima sabab bo‘ldi?",
+   "options": [
+    "A) Qozoqlar orasidagi buhtu va rashk",
+    "B) Manasning chaqirig‘i",
+    "C) Urushda yengilgani",
+    "D) O‘z yurtiga qaytishi"
+   ],
+   "answer": "A) Qozoqlar orasidagi buhtu va rashk"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ko‘katoyning oshiga elchilar qanday yuborildi?",
+   "options": [
+    "A) Haydar Maanikerda har yoqqa chopdi",
+    "B) Manas o‘zi borib chaqirdi",
+    "C) Xat yozib xabarchi jo‘natildi",
+    "D) Dushmanlar orqali xabar berildi"
+   ],
+   "answer": "A) Haydar Maanikerda har yoqqa chopdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Manas Sayqal qiz bilan olishganda ehtiyot bo‘ldi?",
+   "options": [
+    "A) Ayol kishini yarador qilishni xohlamadi",
+    "B) Sayqaldan qattiq qo‘rqdi",
+    "C) Quroli yo‘q edi",
+    "D) Urushishni bilmas edi"
+   ],
+   "answer": "A) Ayol kishini yarador qilishni xohlamadi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bo‘qmurun nega ulkan osh berishga qaror qildi?",
+   "options": [
+    "A) Otasi Ko‘katoy xotirasini e'zozlash uchun",
+    "B) Dushmanlarga kuchini ko‘rsatish uchun",
+    "C) Boyligini yo‘qotish uchun",
+    "D) Manas bilan urushish uchun"
+   ],
+   "answer": "A) Otasi Ko‘katoy xotirasini e'zozlash uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Almambetning xolis va halol hakamlik qilgani qanday fazilat?",
+   "options": [
+    "A) Oqillik va adolatparvarlik",
+    "B) Qo‘rqoqlik va zaiflik",
+    "C) Manmanlik va kibr",
+    "D) Bevafo va xiyonatkorlik"
+   ],
+   "answer": "A) Oqillik va adolatparvarlik"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Ko‘katoy oshidagi musobaqalar tasviri nimani ifodalaydi?",
+   "options": [
+    "A) Xalqning milliy o‘yin va udumlarini",
+    "B) Dushmanning ustunligini",
+    "C) Qirg‘izlarning kambag‘alligini",
+    "D) Urushning dahshatini"
+   ],
+   "answer": "A) Xalqning milliy o‘yin va udumlarini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ulug‘ g‘azotda qo‘shin boshlig‘i etib kim saylandi?",
+   "options": [
+    "A) Almambet botir",
+    "B) Chuboq botir",
+    "C) Qirg‘ilchol",
+    "D) Jaqip xon"
+   ],
+   "answer": "A) Almambet botir"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bejinga ayg‘oqchilikka kimlar borgan edi?",
+   "options": [
+    "A) Almambet va Sirg‘aq",
+    "B) Chuboq va Baqay",
+    "C) Manas va Qo‘shay",
+    "D) Hojiboy va Serek"
+   ],
+   "answer": "A) Almambet va Sirg‘aq"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xonikey Baqay avliyo orqali Manasga qaysi otni yubordi?",
+   "options": [
+    "A) Toyburulni",
+    "B) Sarolani",
+    "C) Akmonozni",
+    "D) Ochbedovni"
+   ],
+   "answer": "A) Toyburulni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Chuboq bilan Almambet o‘rtasida nima uchun janjal chiqdi?",
+   "options": [
+    "A) Ayg‘oqchilikka tanlanmagani uchun",
+    "B) Otni bo‘lisha olmagani uchun",
+    "C) Xonikey sababli",
+    "D) Urushdan qochgani uchun"
+   ],
+   "answer": "A) Ayg‘oqchilikka tanlanmagani uchun"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bejin qal'asi oldida Manas qo‘shini qanday holatga tushdi?",
+   "options": [
+    "A) Dushman o‘rab olib, qamal qildi",
+    "B) Darhol g‘alaba qozondi",
+    "C) Qal'ani oson egalladi",
+    "D) Dushman taslim bo‘ldi"
+   ],
+   "answer": "A) Dushman o‘rab olib, qamal qildi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Xonikey Manasga Toyburul va sovut yubordi?",
+   "options": [
+    "A) Manasning xavf ostida ekanini sezgani",
+    "B) Ot ortiqcha bo‘lgani uchun",
+    "C) Urush tugagani uchun",
+    "D) Jaqip so‘ragani uchun"
+   ],
+   "answer": "A) Manasning xavf ostida ekanini sezgani"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qo‘ng‘irboy va Esonxon nega Bejin qal'asiga berkitindi?",
+   "options": [
+    "A) Manasning haybatidan qo‘rqishgani uchun",
+    "B) Qal'ada bayram qilish uchun",
+    "C) Qirg‘izlarni kutish uchun",
+    "D) Sulh tuzish uchun"
+   ],
+   "answer": "A) Manasning haybatidan qo‘rqishgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Almambet va Sirg‘aqning xavfli ayg‘oqchilikka borishi qanday baholanadi?",
+   "options": [
+    "A) Yurt uchun yuksak jasorat",
+    "B) Behudaga tavakkal qilish",
+    "C) Qo‘rqoqlik va qochish",
+    "D) O‘zini ko‘rsatish xohishi"
+   ],
+   "answer": "A) Yurt uchun yuksak jasorat"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Manasning so‘nggi damgacha el-yurt ozodligi uchun kurashgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, u haqiqiy el qahramoni",
+    "B) Noto‘g‘ri, o‘zini o‘ylashi kerak edi",
+    "C) Noto‘g‘ri, urushmaslik lozim edi",
+    "D) To‘g‘ri, lekin foydasiz bo‘ldi"
+   ],
+   "answer": "A) To‘g‘ri, u haqiqiy el qahramoni"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida Manasning dunyodan o‘tishi kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Chuqur qayg‘u va ehtirom",
+    "B) Yengil kulgu va quvonch",
+    "C) Beharakat loqaydlik",
+    "D) Dushmanga achiniq"
+   ],
+   "answer": "A) Chuqur qayg‘u va ehtirom"
+  }
+ ]
+}

@@ -1,0 +1,477 @@
+{
+ "title": "Panoh",
+ "author": "Xurshid Do‘stmuhammad",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "zilzila va sadoqat",
+   "ona tuproq",
+   "oila va oqibat",
+   "tarixiy xotira",
+   "vijdon va g‘urur"
+  ],
+  "theme": "Asarning asosiy g‘oyasi — ota-bobolardan qolgan muqaddas tuproqqa, o‘zlikka va milliy qadriyatlarga sadoqat saqlashdir. Har qanday qiyinchilik va tabiiy ofat qarshisida ham inson o‘z nasl-nasabi, sadoqati va ma'naviy ildizlaridan voz kechmasligi kerak.",
+  "summary": "Jo‘ba qishlog‘ida kuchli zilzila sodir bo‘ladi. Asar bosh qahramoni Ahmadali ko‘chada borayotganda qattiq silkinish va chang-to‘zonga duch keladi. U bir hovliga kirib, onasini to‘sin ostidan qutqarishga urinayotgan yigitga (Hafezga) yordamlashadi. Shundan so‘ng Ahmadali o‘z uyi va oilasi xavfsizligidan xavotirlanib yo‘lga tushadi. Yo‘lda u ko‘plab qishloq ahlining tashvishlariga guvoh bo‘ladi. Ahmadalining xotini Ma'rifat yangi qurilayotgan posyolkadagi ko‘p qavatli uyga ko‘chishni xohlaydi. Biroq Ahmadalining marhum otasi Abdiali aka va katta opasi ota-bobolaridan qolgan hovlini tashlab ketishni nomus deb bilishadi. Ahmadali yo‘l-yo‘lakay mushkullikda qolgan hamqishloqlariga yordam beradi: barmog‘i shikastlanishiga qaramay, Sayfillo boboning ustiga ag‘darilgan shkafni suradi, Gulgun bevaning uyiga yordamga shoshiladi. Yo‘lda yaralangan qushni ko‘rib, uni ehtiyotkorlik bilan xavfsiz joyga qo‘yadi. Shuningdek, Jo‘ba qishlog‘ining timsoli bo‘lgan, ag‘darilib tushgan Ona o‘rik daraxti va uning shivirlayotgan yaproqlari Ahmadali qalbidagi xotiralarni uyg‘otadi. O‘tmish xotiralarida Ahmadalining otasi Abdiali aka sobiq amaldor Appon zakun bilan to‘qnashgani aks etadi. Appon zakun o‘z vaqtida Abdiali akani hovlisidagi uch tup o‘rik (Gulinur/Toshdanak) uchun jamoat mulkini o‘zlashtirganlikda ayblagan va tuhmat qilgan edi. Endi esa Appon zakun o‘z uyida sarrov va shift ostida qolib, ojiz ahvolga tushadi. Uning nevarasi Ahmadalining jiyani Sadafga sovchi qo‘ygani ham oilada turli e'tirozlarga sabab bo‘ladi. Ahmadali tunda o‘z hovlisiga yetib kelganida, barcha jiyanlari va aka-opalari yig‘ilganini, hovli devorlari ag‘darilganini ko‘radi. Qizig‘i shundaki, zilzila oqibatida uch tup yuz yillik Gulinur o‘rik daraxti tuproq surilishi bilan aynan Abdiali akaning hovlisiga ko‘chib o‘tgan bo‘ladi. Qishloq ahli buni ota xonadonining halolligi va mo‘jizasi deb baholaydi. Zilziladan so‘ng Sibirdan kelgan vrach Ahmadaliga yo‘tali va changdan saqlanishi uchun vaqtincha boshqa joyga ketishni maslahat beradi. Ahmadalining ichki dunyosida ham evrilish ro‘y beradi: u o‘zining qo‘rqoq, faqat shaxsiy halovatini o‘ylaydigan sobiq «Kimsan»idan voz kechib, el-yurt, ona tuproq qadrini anglagan yangi «Kimsan» — ma'naviy matonat egasiga aylanadi. Ahmadali qishloqda qolib, Jo‘bani qayta tiklashga va o‘zligini saqlashga qaror qiladi.",
+  "characters": "Ahmadali — qissa bosh qahramoni, samimiy, mehnatkash va el-yurtiga sodiq inson. Zilzila paytida o‘zgalarga yordam beradi va ichki ruhiy kurash orqali ona tuproq qadrini teran anglaydi.\nAbdiali aka — Ahmadalining marhum otasi, tajribali va insofli pedagog. O‘z prinsiplariga sodiq, Appon zakunning adolatsizliklariga bo‘ysunmagan inson.\nMa'rifat — Ahmadalining xotini, posyolkadagi yangi domga ko‘chib o‘tishni va zamonaviy qulaylikni xohlaydigan ayol.\nAppon zakun — o‘z vaqtida vakolatini suiiste'mol qilgan, tuhmat va g‘irromlik bilan kun kechirgan sobiq amaldor; zilzilada shift ostida ojiz qoladi.\nSaidali — Ahmadalining akasi, ota vasiyatiga va oila an'analariga hurmat bilan qaraydigan bosiq inson.\nKimsan — Ahmadalining ichki ovozi, uning ikkilanuvchi va evriluvchi ruhiy qiyofasi hamda dunyoqarashi.",
+  "conclusion": "Asar insonni har qanday sinovli kunlarda ham o‘z ildizlariga, ona tuproqqa va ota-bobolar merosiga sadoqatli bo‘lishga o‘rgatadi. Bola ushbu qissadan ma'naviy matonat, halollik, o‘zgalarga xolis yordam qo‘lini cho‘zish va moddiy qulayliklardan ko‘ra oilaviy sharaf va qadr-qimmatni ustun qo‘yish sabog‘ini oladi.",
+  "difficulty": "qiyin",
+  "mood": "o‘ylantiruvchi, hazin va ruhiy-falsafiy",
+  "for_whom": "Insoniy qadriyatlar, milliy o‘zlik, oila tarixi va ruhiy kechinmalar haqida fikr yuritishni yoqtiradigan o‘smirlar uchun.",
+  "events": [
+   "1. Jo‘ba qishlog‘ida zilzila sodir bo‘lib, atrofni quyuq chang-to‘zon va tahlika qoplaydi.",
+   "2. Ahmadali vayron bo‘lgan hovliga kirib, Hafez ismli yigitga onasini to‘sin ostidan chiqarishga yordam beradi.",
+   "3. Ahmadalining xotini Ma'rifat posyolkadagi ko‘p qavatli uydan joy olish ishi haqida gapiradi.",
+   "4. Ahmadalining katta opasi og‘ir kasal bo‘lishiga qaramay, posyolkaga ko‘chish g‘oyasiga va Appon zakun nevarasining sovchiligiga qarshi chiqadi.",
+   "5. Ahmadali anhor tomonga yugurib borayotganda osmonda bezovta uchayotgan qarg‘alarga ko‘zi tushadi.",
+   "6. Yo‘lda ketayotgan «Tez yordam» va qizg‘ish «Volga» mashinalari aholini tahlikaga tushmaslikka chaqiradi.",
+   "7. Ahmadali yo‘l o‘rtasida yaralanib yotgan qushni (musichani) qo‘liga olib, avaylab aravachaga qo‘yadi.",
+   "8. Ahmadali Gulgun bevaning hovlisiga yugurib kirib, qamalib qolgan besh nafar bolani qutqarishda qatnashadi.",
+   "9. Saidali aka va Ahmadali opasining tanchada bosilib qolishi hamda zilzila paytidagi holatini muhokama qilishadi.",
+   "10. Sayfillo boboning ustiga shkaf ag‘darilib tushganida, Ahmadali Saydilloga yordamlashib shkafni suradi.",
+   "11. Ahmadali shkafni surayotganda bosh barmog‘ining tirnog‘i etdan ajralib, barmog‘i shikastlanadi.",
+   "12. Appon zakun o‘z uyida shift va sarrov ostida qolib, hayot va o‘lim yoqasida qo‘rquvdan tavba qiladi.",
+   "13. Jo‘ba qishlog‘ining timsoli bo‘lgan yuz yillik Ona o‘rik daraxti ag‘darilib, ko‘chani to‘sib qo‘yadi.",
+   "14. Ahmadali Ona o‘rik shoxiga chiqib o‘tirib, yaproqlarining shivirida o‘tmish ovozlarini eshitadi.",
+   "15. Ahmadali otasi Abdiali akaning o‘tmishda tergovchi va Appon zakun tomonidan uch tup o‘rik (Gulinur/Toshdanak) sababli so‘roq qilinganini eslaydi.",
+   "16. Ahmadali yo‘lda Ro‘zixon ayaga duch keladi va aya unga piyolada suv berib, ezgu duolar qiladi.",
+   "17. Ahmadali o‘z hovlisiga yetib kelganida, butun oilasi vayron bo‘lgan hovlida yig‘ilib turganini ko‘radi.",
+   "18. Zilzila oqibatida yer surilib, uch tup Gulinur o‘riklari aynan Abdiali akaning hovlisiga ko‘chib o‘tgani ma'lum bo‘ladi.",
+   "19. Sibirlik vrach Ahmadaliga yo‘tal va changdan davolanish uchun havosi toza joyga ketishni tavsiya qiladi.",
+   "20. Ahmadalining ichida sobiq Kimsan (qo‘rqoq va loqayd) g‘oyib bo‘lib, yangi Kimsan (matonatli va sadoqatli) qaror topadi va u Jo‘bada qolishga ahd qiladi."
+  ],
+  "quotes": [
+   "Ahmadali oyog‘ining ostida yer qattiq silkinganini sezdi, xayoli bo‘lindi, ikki-uch qadam yurdi, shunda yer tubida nimadir gursillab ketdi.",
+   "Ahmadali begona hovli sahnida qayoqqa yugurarini bilmay sarosimada turganida ro‘parasida o‘zining yarmicha keladigan ko‘laga paydo bo‘ldi.",
+   "Ota-bobong o‘tgan uydan ilon chiqdimi, posyolkaga ko‘chasan?! Yoki birov senlarni hovlidan quvib solyaptimi?!",
+   "Birodarlar! Tahlikaga tushmanglar!.. Tahlikaga tushmanglar! Hovliga, ko‘chaga chiqib turinglar!..",
+   "Ona o‘rik Jo‘ba qishloqning ona daraxti, qishloqdagi barcha o‘riklar shu daraxt mevasining danagidan undirilgan.",
+   "Uch tup yuz yillik o‘rik bir kechada o‘n besh quloch nariga surilib, qolganmish!.."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmadali chang bostirganda xuddi nimaga o‘xshash shaklni ko‘rdi?",
+   "options": [
+    "A) Bahaybat qora ayiqqa",
+    "B) Ikki o‘rkachli tuyaga",
+    "C) Katta oq bulutga",
+    "D) Qulayotgan baland minoraga"
+   ],
+   "answer": "B) Ikki o‘rkachli tuyaga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yangi vrach Ahmadaliga chuchkirishdan qutilish uchun nima maslahat berdi?",
+   "options": [
+    "A) Har kuni dori ichishni",
+    "B) Surunkasiga havo almashtirishni",
+    "C) Qishloqdan umuman chiqmaslikni",
+    "D) Og‘ir mehnat qilmaslikni"
+   ],
+   "answer": "B) Surunkasiga havo almashtirishni"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hovlida vahimaga tushgan yigit qutqarish uchun kimni chaqirdi?",
+   "options": [
+    "A) Otasini",
+    "B) Onasini",
+    "C) Ukasini",
+    "D) Qo‘shnisini"
+   ],
+   "answer": "B) Onasini"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmadalining xotini Ma'rifat u haqida qanday xushxabar aytdi?",
+   "options": [
+    "A) Yangi mashina olganlarini",
+    "B) Domga ko‘chishlari haqida",
+    "C) Maktabga mudir bo‘lganini",
+    "D) Katta maosh olganini"
+   ],
+   "answer": "B) Domga ko‘chishlari haqida"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ahmadalining opasi va xotini Ma'rifatning orzulari qanday farqlanadi?",
+   "options": [
+    "A) Opasi posyolkani, Ma'rifat hovlini xohlaydi",
+    "B) Opasi hovlini, Ma'rifat domni xohlaydi",
+    "C) Ikkalasi ham domga oshiqadi",
+    "D) Ikkalasi ham qishloqdan ketmoqchi"
+   ],
+   "answer": "B) Opasi hovlini, Ma'rifat domni xohlaydi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Katta opa nega posyolkaga ko‘chish xabaridan g‘azablandi?",
+   "options": [
+    "A) Posyolka juda uzoq bo‘lgani uchun",
+    "B) Ota-bobo hovlisini tashlashni istamagani uchun",
+    "C) Yangi uy kichik bo‘lgani uchun",
+    "D) Ahmadali bilan urushib qolgani uchun"
+   ],
+   "answer": "B) Ota-bobo hovlisini tashlashni istamagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ahmadalining otasi Abdiali aka nega posyolkada ishlashdan bosh tortdi?",
+   "options": [
+    "A) Maoshi kamligi uchun",
+    "B) Appon zakun obodonlashtirish boshlig‘i bo‘lgani uchun",
+    "C) Qishloqdan ketishni xohlamagani uchun",
+    "D) Kasalligi tufayli nafaqaga chiqqani uchun"
+   ],
+   "answer": "B) Appon zakun obodonlashtirish boshlig‘i bo‘lgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ahmadalining chang ostida qolgan ayolga yordamga otilishi uning qaysi sifatini ko‘rsatadi?",
+   "options": [
+    "A) Qo‘rqoqligini",
+    "B) Bag‘ritoshligini",
+    "C) Oqibatli va hamdardligini",
+    "D) Kibrli va manmansizligini"
+   ],
+   "answer": "C) Oqibatli va hamdardligini"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif chang to‘zonini «ikki o‘rkachli tuya»ga o‘xshatgani qanday tuyg‘u beradi?",
+   "options": [
+    "A) Qiziqarli va kulgili",
+    "B) Vahimali va og‘ir bosim",
+    "C) Yengil va quvonchli",
+    "D) Orzu va umid"
+   ],
+   "answer": "B) Vahimali va og‘ir bosim"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ahmadali hovliga kirgach, ketma-ketlikda qanday hodisalar yuz berdi?",
+   "options": [
+    "A) Yigitni ko‘rdi, to‘sinni ko‘tardi",
+    "B) Qizni urib yubordi, qochdi",
+    "C) Uyni tuzatdi, ovqat yedi",
+    "D) Otasini qidirdi, uxladi"
+   ],
+   "answer": "A) Yigitni ko‘rdi, to‘sinni ko‘tardi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmadali katta yo‘l ortida qanday yarador jonivorni qo‘liga oldi?",
+   "options": [
+    "A) Bedanani",
+    "B) Musichani",
+    "C) Qarg‘ani",
+    "D) Kaputerni"
+   ],
+   "answer": "B) Musichani"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sayfillo boboning ustiga zilzila paytida nima ag‘darilib tushgan edi?",
+   "options": [
+    "A) Yo‘g‘on to‘sin",
+    "B) Og‘ir shkaf",
+    "C) G‘isht devor",
+    "D) Katta sandiq"
+   ],
+   "answer": "B) Og‘ir shkaf"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Appon zakun zilzila paytida qanday xavf ostida qoldi?",
+   "options": [
+    "A) Binosi suvga g‘arq bo‘ldi",
+    "B) Sarrov va shift ostida qoldi",
+    "C) Daraxt tagida qolib ketdi",
+    "D) Anhorga tushib ketdi"
+   ],
+   "answer": "B) Sarrov va shift ostida qoldi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jo‘ba qishlog‘ida ko‘chani to‘sib ag‘darilgan qaysi daraxt edi?",
+   "options": [
+    "A) Yuz yillik chinor",
+    "B) Ona o‘rik",
+    "C) Katta tol",
+    "D) Sharq chinori"
+   ],
+   "answer": "B) Ona o‘rik"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ahmadalining otasini tergovchi qanday masalada so‘roq qilgan edi?",
+   "options": [
+    "A) Posyolka binosini buzgani uchun",
+    "B) Hovlidagi o‘riklar (Gulinur) masalasida",
+    "C) Yer solig‘ini to‘lamagani uchun",
+    "D) Qishloqdan qochib ketgani uchun"
+   ],
+   "answer": "B) Hovlidagi o‘riklar (Gulinur) masalasida"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Appon zakun nima uchun sobiq muallif Abdiali akaga tuhmat qilgandi?",
+   "options": [
+    "A) Hovlisidagi o‘riklarni kolxozniki deyish uchun",
+    "B) Uning maoshini tortib olish uchun",
+    "C) Uni qishloqdan haydash uchun",
+    "D) Maktabni yopib qo‘yish uchun"
+   ],
+   "answer": "A) Hovlisidagi o‘riklarni kolxozniki deyish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ahmadali Ona o‘rik shoxida o‘tirganida qalbidan nima kechdi?",
+   "options": [
+    "A) Qishloqdan tezroq qochish istagi",
+    "B) O‘tmish va sadoqat tuyg‘ulari",
+    "C) Uyni sotish haqidagi o‘ylar",
+    "D) Yangi ish izlash niyati"
+   ],
+   "answer": "B) O‘tmish va sadoqat tuyg‘ulari"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ahmadalining barmog‘i og‘rishiga qaramay Sayfillo boboga yordamlashishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri, o‘zini o‘ylashi kerak edi",
+    "B) To‘g‘ri, insoniylik va burch yo‘lidagi fidoyilik",
+    "C) Behudaga o‘ziga azob berdi",
+    "D) Boshqalar baribir yordam berardi"
+   ],
+   "answer": "B) To‘g‘ri, insoniylik va burch yo‘lidagi fidoyilik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Ro‘zixon ayaning Ahmadaliga suv berib duo qilishi qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Qishloq ahlining mehr-oqibatini ko‘rsatadi",
+    "B) Insonlar bir-biriga loqaydligini bildiradi",
+    "C) Ayanchli va umidsiz kayfiyat beradi",
+    "D) Kulagich va yengil tuyg‘u beradi"
+   ],
+   "answer": "A) Qishloq ahlining mehr-oqibatini ko‘rsatadi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ahmadali yo‘lda uchratgan odamlarni to‘g‘ri tartibda ko‘rsating.",
+   "options": [
+    "A) Gulgun beva, Sayfillo bobo, Ro‘zixon aya",
+    "B) Ro‘zixon aya, Appon zakun, yigit",
+    "C) Tergovchi, vrach, Ma'rifat",
+    "D) Saidali, Sadaf, doktor"
+   ],
+   "answer": "A) Gulgun beva, Sayfillo bobo, Ro‘zixon aya"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ahmadali o‘z hovlisiga kelganida qarindoshlari qayerda to‘plangan edi?",
+   "options": [
+    "A) Uyning ichida",
+    "B) Vayron bo‘lgan hovlida gulxan yonida",
+    "C) Anhor bo‘yida",
+    "D) Posyolkadagi yangi domda"
+   ],
+   "answer": "B) Vayron bo‘lgan hovlida gulxan yonida"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zilzila oqibatida uch tup Gulinur o‘riklari qayerga surilib qoldi?",
+   "options": [
+    "A) Posyolka markaziga",
+    "B) Abdiali akaning hovlisiga",
+    "C) Anhor ichiga",
+    "D) Katta ko‘cha o‘rtasiga"
+   ],
+   "answer": "B) Abdiali akaning hovlisiga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sibirlik yangi vrach Ahmadaliga qanday maslahat berdi?",
+   "options": [
+    "A) Zudlik bilan operatsiya qildirishni",
+    "B) Changsiz, havo toza joyga ketishni",
+    "C) Qishloqdan umuman chiqmaslikni",
+    "D) Har kuni ko‘p uyqu olishni"
+   ],
+   "answer": "B) Changsiz, havo toza joyga ketishni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gazetada Jo‘ba qishlog‘idagi zilzila haqida qaysi sana yozilgan edi?",
+   "options": [
+    "A) 1-yanvar kuni",
+    "B) 13-oktyabr kuni",
+    "C) 9-may kuni",
+    "D) 21-mart kuni"
+   ],
+   "answer": "B) 13-oktyabr kuni"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "O‘rik daraxtlarining Abdiali aka hovlisiga surilishi qishloqda nima deb baholandi?",
+   "options": [
+    "A) Ota xonadonining halolligi va mo‘jizasi",
+    "B) Tasodifiy oddiy hodisa",
+    "C) Appon zakunning g‘alabasi",
+    "D) Tabiatning xatosi"
+   ],
+   "answer": "A) Ota xonadonining halolligi va mo‘jizasi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ahmadali vrach maslahatiga qaramay nega qishloqda qolishga qaror qildi?",
+   "options": [
+    "A) Davolanishga puli bo‘lmagani uchun",
+    "B) Ona tuproq va qishloqni tiklash uchun",
+    "C) Posyolkaga ko‘chishni yoqtirmagani uchun",
+    "D) Xotini shuni talab qilgani uchun"
+   ],
+   "answer": "B) Ona tuproq va qishloqni tiklash uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ahmadalining o‘z ichidagi ikkilanuvchi sobiq Kimsandan voz kechishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, matonatli va sadoqatli inson bo‘ldi",
+    "B) Noto‘g‘ri, o‘z tinchligini yo‘qotdi",
+    "C) Farqi yo‘q, baribir do‘xtirga boradi",
+    "D) Xato, posyolkaga ko‘chishi kerak edi"
+   ],
+   "answer": "A) To‘g‘ri, matonatli va sadoqatli inson bo‘ldi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qishloq ahli vayronagarchilikka qaramay Jo‘bani tiklashga kirishishi nimani anglatadi?",
+   "options": [
+    "A) Qishloq ahlining birdamligi va bukilmas irodasini",
+    "B) Boshqa boradigan joyi yo‘qligini",
+    "C) Amaldorlardan qo‘rqishlarini",
+    "D) Becora va ojiz ekanliklarini"
+   ],
+   "answer": "A) Qishloq ahlining birdamligi va bukilmas irodasini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning «Gulinur ildizi but bo‘lsa, uni hech kuch ko‘chira olmaydi» degan fikri nimaga ishora qiladi?",
+   "options": [
+    "A) O‘rik daraxtining mustahkamligiga",
+    "B) Insonning o‘zligiga va ma'naviy ildizlariga",
+    "C) Zilzila kuchining kamligiga",
+    "D) Posyolka tuprog‘ining unumsizligiga"
+   ],
+   "answer": "B) Insonning o‘zligiga va ma'naviy ildizlariga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxiridagi yangi Kimsanning paydo bo‘lishi o‘quvchida qanday tuyg‘u qoldiradi?",
+   "options": [
+    "A) Qahramonning ruhiy yuksalishi va g‘ururini",
+    "B) Qahramonning tushkunlikka tushganini",
+    "C) Qishloqning batamom yo‘q bo‘lganini",
+    "D) Qo‘rquv va vahimani"
+   ],
+   "answer": "A) Qahramonning ruhiy yuksalishi va g‘ururini"
+  }
+ ]
+}

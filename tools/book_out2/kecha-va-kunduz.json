@@ -1,0 +1,57 @@
+{
+ "title": "Kecha va kunduz",
+ "author": "Abdulhamid Cho‘lpon",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+ (Asarning tili va voqealari sodda tuyulishi mumkin, lekin uning tagida yotgan ijtimoiy-siyosiy, falsafiy g‘oyalar, insoniy fojialar va davr ziddiyatlarini anglash uchun kitobxon muayyan hayotiy tajriba va tahliliy fikrlashga ega bo‘lishi kerak.)",
+  "topics": [
+   "ayollar qismati",
+   "jaholat va xurofot",
+   "mustamlakachilik va adolatsizlik",
+   "taqdir va erkinlik",
+   "o‘zbek klassik adabiyoti"
+  ],
+  "theme": "Cho‘lpon ushbu asarda chor Rossiyasi mustamlakasi davridagi xalqning og‘ir ahvoli, jaholat va xurofotning insonlar qismatiga ko‘rsatgan fojiali ta’sirini hamda erksizlik sabab boy berilgan sof tuyg‘ularni ochiq ko‘rsatib beradi. Bosh fikr — jaholat va ma’rifatsizlik insonni va jamiyatni halokatga yetaklashini anglatishdir.",
+  "summary": "Zebi — xushovoz, sodda va begubor qiz. Bahor kunlarida u dugonalari bilan qishloqqa yayrash uchun boradi. Buni eshitgan va sobiq zamon xurofotlariga berilgan qat’iy otasi Razzoq so‘fi hamda ayyor Miryoqubning hiylasi sabab, Zebi o‘zidan yoshi juda katta bo‘lgan amaldor Akbarali mingboshiga to‘rtinchi xotin qilib uzatiladi. Zebining fojiali hayoti shu tariqa boshlanadi. Mingboshining saroyidagi xotinlar o‘rtasidagi rashk va fitnalar oqibatida kutilmagan fojia yuz beradi: mingboshi zahar kiritilgan suvni ichib o‘ladi. Tuhmat va xato tergov natijasida bu jinoyatda aybsiz Zebi ayblanadi. Harbiy sud Zebini yetti yilga Sibirga surgun qilishga hukm etadi. Onasi Qurvonbibi bu ayriliqqa chidolmay aqldan ozadi. Razzoq so‘fi esa qilgan xatolarini anglab, ruhiy tushkunlikka tushadi va so‘ngida xurofot manbai bo‘lgan eshonni o‘ldirib, o‘zi ham dom-daraksiz yo‘qoladi.",
+  "characters": "Zebi — fojiali qismatga duchor bo‘lgan sodda, sof ko‘ngilli va xushovoz qiz; Razzoq so‘fi — Zebining otasi, zikna, xurofotga berilgan va qizining fojiasiga sababchi bo‘lgan odam; Qurvonbibi — Zebining mehribon, mushfiq onasi, fojiadan so‘ng aqldan ozadi; Akbarali mingboshi — boy, amaldor, Zebini to‘rtinchi xotinlikka olgan va fojiali o‘lgan kishi; Miryoqub — mingboshining harakatchan, ayyor va uddaburon mirzasi; Eshon bobo — soxta dindor, xurofot timsoli.",
+  "conclusion": "Asar kitobxonga jaholat, manmanlik va xurofotning inson hayotini qanchalik barbod etishini ko‘rsatadi. Bola undan ota-ona va farzand o‘rtasidagi samimiy munosabatlar, to‘g‘riso‘zlik va ma’rifatning qadrini anglaydi. Shuningdek, asar insonni har bir bosgan qadamida mas’uliyatli bo‘lishga va adolat yo‘lini tutishga o‘rgatadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, fojiali, o‘ylantiruvchi",
+  "for_whom": "Tarix, inson ruhiyati, jamiyat muammolari va badiiy adabiyotning chuqur falsafiy asarlariga qiziquvchi o‘smirlar uchun mos.",
+  "events": [
+   "Bahor kelishi bilan Zebi va uning dugonasi Saltanat qishloqqa borib yayrashni rejalashtirishadi.",
+   "Razzoq so‘fi hovliga kirib, o‘ynab yurgan qizlarning sho‘xligini ko‘rib baqirib beradi.",
+   "Razzoq so‘fining akasi qishloqdan kelib, uni shahardan qishloqqa ko‘chib o‘tishga va halol dehqonchilik qilishga undaydi.",
+   "Eshon bobo va uning muhiti sabab Razzoq so‘fi akasining samimiy taklifini rad etadi.",
+   "Miryoqub Zebining xushovozligi va go‘zalligi haqida eshitib, uni Akbarali mingboshiga olib berish rejasini qiladi.",
+   "Zebi va uning dugonalari qishloqda mehmonda bo‘lib, miriqib ashula aytishadi va vaqt o‘tkazishadi.",
+   "Akbarali mingboshi Zebini o‘z saroyiga chaqirtirib, uning ovozini eshitadi va uylanishga qaror qiladi.",
+   "Razzoq so‘fi va uning oilasiga sovchilar hamda to‘y buyumlari keladi, Zebi bo‘lajak fojiani sezib yig‘laydi.",
+   "Zebi amaldor Akbarali mingboshiga to‘rtinchi xotin bo‘lib uzatiladi.",
+   "Mingboshining saroyida kundoshlar o‘rtasida rashk va fitna muhiti hukm suradi.",
+   "Miryoqub poyezdda ketayotib rus xotini va jadid yigiti Sharafuddin bilan tanishib, fikrlash doirasini kengaytiradi.",
+   "Zebi yangi xonadonda ruhiy qiynalib, tez-tez tutqaloq kasaliga yo‘liqadi.",
+   "Bir kechasi mast bo‘lgan Akbarali mingboshi chanqab, Zebidan suv so‘raydi.",
+   "Zebi bilmasdan tabarruk suv deb o‘ylangan, aslida zahar solingan suvni mingboshiga uzatadi.",
+   "Mingboshi azoblanib, bo‘g‘ilib vafot etadi.",
+   "Tergov ishlari boshlanib, aybsiz Zebi amaldorni o‘ldirganlikda ayblanib qamoqqa olinadi.",
+   "Harbiy sud Zebining ishini ko‘rib chiqadi va uni Sibirga yetti yillik surgunga hukm qiladi.",
+   "Sud hukmidan so‘ng Zebi ota-onasini so‘raydi, ammo ularga ko‘risha olmay olib ketiladi.",
+   "Onasi Qurvonbibi qizining fojiasiga chidolmay, aqldan ozadi va ko‘chalarda bayt aytib yuradi.",
+   "Razzoq so‘fi o‘zining jaholati va eshonning xiyonatini anglab, eshonni o‘ldiradi va o‘zi ham dom-daraksiz yo‘qoladi."
+  ],
+  "quotes": [
+   "Har yil bir keladigan bahor sevinchi yana ko‘ngillarni qitiqlay boshladi.",
+   "Hayot nega bu qadar go‘zal va shirin bo‘ladi bahorda?",
+   "Og‘iz bilan til — bandaning jismida eng aziz va tabarruk a’zolar.",
+   "Yerdan aziz hech narsa yo‘q! Otamiz rahmatlik, bobolarimiz, undan naridagilar — hammasi bir shapaloq yerdan rizqini chiqarib kelgan...",
+   "Zebi, Zebi, Zebona, Men ko‘yingda devona. Seni sotdi o‘z otang, Men bo‘layin sadag‘ang!"
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Asarda Zebining taqdiri juda ayanchli kechadi. Otasi Razzoq so‘fining tutgan yo‘li va qarorlari haqida nima deya olasan? Agar sen uning o‘rnida bo‘lganingda, oilang va farzanding baxti uchun qanday yo‘l tutgan bo‘larding?"
+}

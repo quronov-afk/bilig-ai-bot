@@ -1,0 +1,481 @@
+{
+ "title": "Kon-Tikida safar",
+ "author": "Tur Xeyerdal",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "jasorat",
+   "sayohat",
+   "ilm-fan",
+   "tabiat",
+   "do‘stlik",
+   "tarix"
+  ],
+  "theme": "Insonning ilm-fan yo‘lidagi qat'iyati, jasorati hamda matonati orqali hatto eng qiyin va xatoli tuyulgan g‘oyalarni ham amalda isbotlash mumkinligi asarning bosh g‘oyasidir. Muallif ibtidoiy odamlarning aql-idroki, tabiat bilan uyg‘unligi hamda okean osha ko‘chib o‘tish imkoniyatlarini amaliy tajribada ko‘rsatib beradi.",
+  "summary": "Norvegiyalik olim Tur Xeyerdal Tinch okeanidagi Polineziya orollari aholisining kelib chiqishi haqida yangi nazariyani ilgari suradi. Uning fikricha, orollarning ilk aholisi sharqdan — Janubiy Amerikadan balza yog‘ochidan yasalgan sodda sollarda suzib kelgan. Biroq ilmiy dunyo va olimlar bu nazariyani rad etishadi hamda ibtidoiy sol okeanni bosib o‘tolmaydi deb hisoblashadi. O‘z g‘oyasini amalda isbotlash uchun Tur Xeyerdal besh nafar jasur hamrohi (Bengt, German, Erik, Knut, Torsteyn) bilan birga Peruga yo‘l oladi.\n\nUlar Peru harbiy portida qadimgi hindilar uslubida balza daraxti xodalaridan «Kon-Tiki» deb nomlangan sol yasashadi va hech qanday zamonaviy dvigatelsiz, faqat shamol va oqim yordamida Tinch okeani bo‘ylab xatarli safarga otlanishadi. Sayohat davomida ular ulkan to‘lqinlar, shiddatli bo‘ronlar, akulalar va kitlar bilan yuzma-yuz kelishadi. Okean o‘rtasida ucharbaliqlarni tutib oziqlanishadi, yulduzlarga qarab yo‘l mo‘ljallashadi hamda radiostansiya orqali dunyo bilan aloqada bo‘lishadi.\n\nUzoq va xatarli suzishdan so‘ng ekspeditsiya Tuamotu tizma orollariga yetib keladi va Raroia marjon rifiga borib uriladi. Sol vayron bo‘lsa-da, oltovlon sayyoh eson-omon quruqlikka chiqib olishadi. Orolning mahalliy polineziyalik aholisi ularni quchoq ochib kutib oladi. Olimlar bu yerda davolanib, orolliklarning hurmatiga sazovor bo‘lishadi hamda «Tamara» kemasida Taiti oroli orqali uylariga qaytishadi. Tur Xeyerdal o‘z amaliyoti bilan qadimgi odamlarning okean osha uzoq masofalarga suza olganini to‘liq isbotlaydi.",
+  "characters": "Tur Xeyerdal — ekspeditsiya tashkilotchisi va rahbari, jasur va qat'iyatli norveg olimi. German Vatsinger — muhandis-texnik, meteorologik kuzatuvlarga mas'ul puxta va mehnatsevar hamroh. Bengt Danielsson — sotsiolog va kitobxon, solning maishiy va oziq-ovqat ta'minotiga javobgar xotirjam inson. Erik Hesselberg — rassom va shturman, yelkanlar va xaritalar bilan shug‘ullanuvchi xushchaqchaq do‘st. Knut Xaugland va Torsteyn Robyu — radioaloqaga mas'ul, urushda qatnashgan tajribali aloqachilar. Tei Tetua — Fatu-Xiva orolidagi keksa polineziyalik, Kon-Tiki afsonasini so‘zlab bergan chol.",
+  "conclusion": "Ushbu asar kitobxonda yuksak maqsadi yo‘lida chekinmaslik, qat'iyat va mehnatsevarlik tuyg‘ularini shakllantiradi. Bola do‘stlik va ahillik har qanday xatarni yengishga yordam berishini, ilm-fan faqat nazariyadan emas, amaliy mardlikdan ham iborat ekanini tushunib yetadi. Shuningdek, asar tabiatga va turli madaniyatlarga bo‘lgan hurmatni oshiradi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, ilhomlantiruvchi, hayajonli",
+  "for_whom": "Sayohatlar, geografik kashfiyotlar, okean va mardona sarguzashtlarga qiziqadigan, jasur va izlanuvchan bolalar uchun mo‘ljallangan.",
+  "events": [
+   "Tur Xeyerdal Fatu-Xiva orolida keksa Tei Tetuadan Kon-Tiki afsonasini eshitadi.",
+   "Olim Polineziya aholisi Janubiy Amerikadan ko‘chib o‘tgan degan ilmiy g‘oyani ilgari suradi.",
+   "Nyu-Yorkda mutaxassis olimlar Tur Xeyerdalning nazariyasini rad etishadi.",
+   "Tur Xeyerdal o‘z g‘oyasini amalda isbotlash uchun solda safarga chiqishga qaror qiladi.",
+   "Sayyohlar klubida Arktika tadqiqotchisi Peter Freyxen ularning rejasini qo‘llab-quvvatlaydi.",
+   "Ekspeditsiya a'zolari Peruga borib, balza daraxti xodalarini to‘playdilar.",
+   "Peru Prezidenti Bustamente Rivero va harbiy rahbarlar sol qurishga ijozat berishadi.",
+   "Qadimgi hindilar uslubida «Kon-Tiki» soli yasaladi va barcha materiallar ortiladi.",
+   "1947-yil bahorida «Kon-Tiki» soli Perudagi Kalyao portidan Tinch okeaniga suzib chiqadi.",
+   "Dengizchilar okeanda ucharbaliqlar va oltin makrellarni tutib oziqlanib borishadi.",
+   "Sol atrofida ulkan kitlar va akulalar paydo bo‘lib, dengizchilarni hayratga soladi.",
+   "German va Knut akulalarni xavfsiz kuzatish uchun maxsus bambuk savat tayyorlashadi.",
+   "Ekspeditsiya a'zolari kechalari yulduzlar joylashuviga qarab yo‘nalishni aniqlashadi.",
+   "Okeandagi kuchli bo‘ron paytida solning yelkanlari va ba'zi arqonlari shikastlanadi.",
+   "Knut va Torsteyn har kuni radio orqali ob-havo ma'lumotlarini dunyoga uzatib borishadi.",
+   "Uzoq suzishdan so‘ng «Kon-Tiki» Angatau oroli sohillariga yetib boradi.",
+   "Knut orol sohiliga chiqib, mahalliy aholi bilan muloqot qiladi.",
+   "Sol kutilmaganda Tuamotu arxipelagidagi Raroia marjon rifiga borib uriladi va halokatga uchraydi.",
+   "Barcha olti dengizchi eson-omon marjon orolga chiqib oladi.",
+   "Raroia orolining polineziyalik aholisi dengizchilarni bayram bilan kutib oladi.",
+   "Dengizchilar penitsillin yordamida isitmalayotgan mahalliy qizaloq Xaumatani davolashadi.",
+   "Orol ahli norvegiyalik sayyohlarga qabila qahramonlarining ismlarini berishadi.",
+   "«Tamara» kemasi yetib kelib, ekspeditsiya a'zolarini Taiti oroliga olib ketadi.",
+   "Papeete shahrida sayyohlar tantanali ravishda kutib olinadi va vatanga jo‘natiladi."
+  ],
+  "quotes": [
+   "Ba’zida juda g‘alati ahvolga tushib qolasiz. Voqealar hammasi birin-ketin o‘z-o‘zidan sodir bo‘laveradi; bo‘lar ish bo‘lib, orqaga qaytishning imkoni qolmagan paytda esa, qanday qilib shu holatga tushib qolganingizni bilmay hayronsiz.",
+   "Tiki, ham Xudo, ham yo‘lboshchi edi, – bir maromda so‘zlardi chol. – Mening avlod-ajdodimni bu orollarga ana shu Tiki boshlab kelgan.",
+   "Fanning vazifasi – u yoki bu narsani isbotlash emas, balki oldi-qochdisiz, sof tadqiqotdir, – dedi chol xotirjamlik bilan.",
+   "Biz yashayapmiz – mana shuni juda aniq his etdik. Texnika asri kelgunga qadar ham hayot odamlar uchun to‘liq bo‘lganini angladik.",
+   "Biz, janubiy amerikaliklarning balza yog‘ochidan yasalgan soli, hozirgi zamon olimlari shu kungacha tasavvur etmagan xususiyatlarga ega ekanini, Tinch okeani orollari Perudan suzib ketgan tarixga qadar davrdagi kemalar yetib bora oladigan joyda ekanligiga isbot qiloldik, xolos."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tur Xeyerdalga Kon-Tiki afsonasini birinchi bo‘lib kim so‘zlab bergan?",
+   "options": [
+    "A) Keksa Tei Tetua",
+    "B) Olim Bengt",
+    "C) Prezident Rivero",
+    "D) Do‘sti German"
+   ],
+   "answer": "A) Keksa Tei Tetua"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kon-Tiki soli qanday yog‘ochdan yasalgan edi?",
+   "options": [
+    "A) Balza daraxtidan",
+    "B) Yevropa qarag‘ayidan",
+    "C) Bambuk xodalardan",
+    "D) Palma yog‘ochidan"
+   ],
+   "answer": "A) Balza daraxtidan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ekspeditsiya a'zolari safarga qaysi mamlakat sohilidan yo‘l olishdi?",
+   "options": [
+    "A) Perudan",
+    "B) Norvegiyadan",
+    "C) Ekvadordan",
+    "D) Taitidan"
+   ],
+   "answer": "A) Perudan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sayyohlar klubida sayyohlarga kim ruhiy dalda berdi?",
+   "options": [
+    "A) Peter Freyxen",
+    "B) Genrix Xarer",
+    "C) Fridtyof Nansen",
+    "D) Rual Amundsen"
+   ],
+   "answer": "A) Peter Freyxen"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tur Xeyerdal va uning jamoasi qanday tartibda tayyorgarlik ko‘rishdi?",
+   "options": [
+    "A) Nazariya, mablag‘, sol va safar",
+    "B) Sol, mablag‘, nazariya va safar",
+    "C) Safar, nazariya, sol va mablag‘",
+    "D) Mablag‘, safar, nazariya va sol"
+   ],
+   "answer": "A) Nazariya, mablag‘, sol va safar"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Olimlar Tur Xeyerdalning yangi g‘oyasini nega birdan qabul qilishmadi?",
+   "options": [
+    "A) Eski qarashlarga qattiq ishonishgani uchun",
+    "B) Xaritalar umuman yo‘qligi sababli",
+    "C) Peruda daraxtlar kamligi uchun",
+    "D) Kema juda qimmatligi sababli"
+   ],
+   "answer": "A) Eski qarashlarga qattiq ishonishgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Peru Prezidenti ekspeditsiyaga yordam berishga nega rozi bo‘ldi?",
+   "options": [
+    "A) Peruning qadimiy tarixiga bog‘liqligi uchun",
+    "B) Kema sovg‘a qilingani sababli",
+    "C) Norvegiyaga sayohat qilmoqchi bo‘lgani uchun",
+    "D) Boshqa mamlakatlar iltimos qilgani uchun"
+   ],
+   "answer": "A) Peruning qadimiy tarixiga bog‘liqligi uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Xatarli okean safariga solda chiqish qarorini qanday baholash mumkin?",
+   "options": [
+    "A) Ilm yo‘lidagi ulkan jasorat",
+    "B) Shunchaki o‘ylashtirilmagan tavakkalchilik",
+    "C) Boshqalarga o‘zini ko‘rsatish istagi",
+    "D) Xavfsiz va yengil sayohat"
+   ],
+   "answer": "A) Ilm yo‘lidagi ulkan jasorat"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif oroldagi hayotni «taraqqiyot balolaridan voz kechish» deb ataganda nimani nazarda tutgan?",
+   "options": [
+    "A) Tabiat bilan uyg‘un yashash afzalligini",
+    "B) Shaharlarda yashash imkonsizligini",
+    "C) Texnikani umuman yo‘q qilishni",
+    "D) Odamlardan butunlay qochib yurishni"
+   ],
+   "answer": "A) Tabiat bilan uyg‘un yashash afzalligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«O‘tmish nidosi tun sokinligini buzardi» iborasi qanday kayfiyat beradi?",
+   "options": [
+    "A) Sirli va tarixiy sir-sinoat",
+    "B) Vahimali va qo‘rqinchli tuyg‘u",
+    "C) Kulgili va yengil kayfiyat",
+    "D) Qayg‘uli va umidsiz holat"
+   ],
+   "answer": "A) Sirli va tarixiy sir-sinoat"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sayohat davomida palubada har kuni ertalab qanday baliqlar yig‘ib olinardi?",
+   "options": [
+    "A) Ucharbaliqlar",
+    "B) Akulalar",
+    "C) Oltin makrellar",
+    "D) Kalmarlar"
+   ],
+   "answer": "A) Ucharbaliqlar"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jamoa a'zosi German sol bortida qanday vazifani bajarardi?",
+   "options": [
+    "A) Meteorologik kuzatuvlar olib borardi",
+    "B) Faqat ovqat pishirish bilan shug‘ullanardi",
+    "C) Kema jurnalini yuritib borardi",
+    "D) Gitara chalib qo‘shiq aytardi"
+   ],
+   "answer": "A) Meteorologik kuzatuvlar olib borardi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dengizchilar akulalarni xavfsiz kuzatish uchun nimadan foydalanishdi?",
+   "options": [
+    "A) Maxsus bambuk savatdan",
+    "B) Katta temir qafasdan",
+    "C) Shisha oynavand qutidan",
+    "D) Yog‘ochdan yasalgan bochkadan"
+   ],
+   "answer": "A) Maxsus bambuk savatdan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tungi vaxtada turgan dengizchi xavfsizlik uchun qanday qoidaga amal qilardi?",
+   "options": [
+    "A) Beliga arqon bog‘lab olardi",
+    "B) Doim baland ovozda gapirardi",
+    "C) Faqat kayuta ichida o‘tirardi",
+    "D) Chiroqni o‘chirib o‘tirardi"
+   ],
+   "answer": "A) Beliga arqon bog‘lab olardi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sol a'zolari kundalik yumushlarni qanday guruhga bo‘lib bajarishgan?",
+   "options": [
+    "A) Maxsus mas'uliyat va umumiy navbatchilik",
+    "B) Hamma bir vaqtda bir ish qilgan",
+    "C) Faqat sardor hammani boshqargan",
+    "D) Tasodifiy ravishda ish taqsimlangan"
+   ],
+   "answer": "A) Maxsus mas'uliyat va umumiy navbatchilik"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sayohat davomida dengizchilar duch kelgan dengiz jonivorlarini tartiblang.",
+   "options": [
+    "A) Ucharbaliq, akula, kit va delfin",
+    "B) Fil, sher, qoplon va ayiq",
+    "C) Qushlar, kapalaklar, chumolilar va ilonlar",
+    "D) Faqat mayda sardin baliqlari"
+   ],
+   "answer": "A) Ucharbaliq, akula, kit va delfin"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Boshqaruv qiyin bo‘lishiga qaramay, solda suzish nega to‘xtatilmadi?",
+   "options": [
+    "A) Shamol va oqim orqaga qaytarishmasdi",
+    "B) Yonilg‘i tugab qolgani uchun",
+    "C) Solni to‘xtatish tormozi bor edi",
+    "D) Ular ortga qaytishni xohlashgandi"
+   ],
+   "answer": "A) Shamol va oqim orqaga qaytarishmasdi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dengizchilar qadimiy navigatsiyada yulduzlarga qarab nimani aniqlashgan?",
+   "options": [
+    "A) Harakat yo‘nalishi va joylashuvni",
+    "B) Bo‘ron kelish vaqtini va soatni",
+    "C) Suvning chuqurligi va haroratini",
+    "D) Baliqlarning ko‘p yoki ozligini"
+   ],
+   "answer": "A) Harakat yo‘nalishi va joylashuvni"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Akulalarga ovqat berib do‘stlashish harakatini qanday baholash mumkin?",
+   "options": [
+    "A) Tabiatni o‘rganish va moslashish",
+    "B) Behudaga vaqt sarflash va o‘yin",
+    "C) O‘ta xavfli va mas'uliyatsiz ish",
+    "D) Baliqlarni qirishga urinish"
+   ],
+   "answer": "A) Tabiatni o‘rganish va moslashish"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning «okean hukmidamiz» degan iborasi qanday ma'noni beradi?",
+   "options": [
+    "A) Insonning tabiat qarshisidagi ojizligini",
+    "B) Okeanda suzish juda osonligini",
+    "C) Dengizchilarning okeanni bo‘ysundirganini",
+    "D) Kemaning juda tez suzayotganini"
+   ],
+   "answer": "A) Insonning tabiat qarshisidagi ojizligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sol marjon rifga urilgach, ekspeditsiya a'zolari qaysi orolga tushishdi?",
+   "options": [
+    "A) Raroia oroliga",
+    "B) Fatu-Xiva oroliga",
+    "C) Gavay oroliga",
+    "D) Samoa oroliga"
+   ],
+   "answer": "A) Raroia oroliga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Boshi og‘rib isitmalagan mahalliy bolani dengizchilar qanday dori bilan davolashdi?",
+   "options": [
+    "A) Penitsillin tabletkasi bilan",
+    "B) Oddiy giyohlar suvi bilan",
+    "C) Dengiz sho‘r suvi bilan",
+    "D) Sharbat va asal bilan"
+   ],
+   "answer": "A) Penitsillin tabletkasi bilan"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Raroia oroli ahli norvegiyalik sayyohlarga qanday hurmat ko‘rsatishdi?",
+   "options": [
+    "A) Qabila qahramonlari nomini berishdi",
+    "B) Ularni oroldan tezda haydashdi",
+    "C) Kema qurishni talab qilishdi",
+    "D) Oltin va qimmatbaho buyum berishdi"
+   ],
+   "answer": "A) Qabila qahramonlari nomini berishdi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sayohat oxirida ekspeditsiya a'zolarini uyga olib ketish uchun qaysi kema keldi?",
+   "options": [
+    "A) «Tamara» kemasi",
+    "B) «Kon-Tiki» soli",
+    "C) «Maoae» paroxodi",
+    "D) «Viking» kemasi"
+   ],
+   "answer": "A) «Tamara» kemasi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sol halokatga uchragach, qanday tartibda qutqaruv ishlari amalga oshirildi?",
+   "options": [
+    "A) Odamlar, asbob-uskunalar va sol",
+    "B) Sol, kema, samolyot va do‘stlar",
+    "C) Oziq-ovqat, orol va yangi kema",
+    "D) Radiostansiya, xarita va uyga qaytish"
+   ],
+   "answer": "A) Odamlar, asbob-uskunalar va sol"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ekspeditsiya a'zolari Los Anjelesdagi shifokor bilan nega radio orqali bog‘lanishdi?",
+   "options": [
+    "A) Kasal bolaga to‘g‘ri doza belgilashga",
+    "B) Amerika haqida suhbatlashish uchun",
+    "C) Tibbiy kitoblarni sotib olishga",
+    "D) Ota-onalariga xabar berish uchun"
+   ],
+   "answer": "A) Kasal bolaga to‘g‘ri doza belgilashga"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Polineziyaliklarning mehmondo‘stligi va ochiqko‘ngilligi nimada ko‘rindi?",
+   "options": [
+    "A) Chet elliklarga chin dildan yordamida",
+    "B) Ularga katta uy berganida",
+    "C) Tilda so‘zlashishni rad etganida",
+    "D) Faqat sovg‘a kutib o‘tirganida"
+   ],
+   "answer": "A) Chet elliklarga chin dildan yordamida"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tur Xeyerdalning kasal bolaga yordam berish mas'uliyatini o‘ziga olishi — ...",
+   "options": [
+    "A) Insonparvarlik va yuksak odamiylik",
+    "B) Qahramonlik ko‘rsatish istagi",
+    "C) Majburiy va istamay qilingan ish",
+    "D) Tavakkalchilik va beparvolik"
+   ],
+   "answer": "A) Insonparvarlik va yuksak odamiylik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "«Kon-Tiki» ekspeditsiyasi fan tarixi uchun qanday ahamiyatga ega bo‘ldi?",
+   "options": [
+    "A) Amaliy tajriba imkoniyatini isbotladi",
+    "B) Insoniyat tarixini butunlay o‘zgartirdi",
+    "C) Hech qanday foyda keltirmadi",
+    "D) Okean xaritasini yo‘qqa chiqardi"
+   ],
+   "answer": "A) Amaliy tajriba imkoniyatini isbotladi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Xotimada muallif okean osha ko‘chish haqida qanday xulosaga keladi?",
+   "options": [
+    "A) Masofa emas, shamol va oqim muhim",
+    "B) Yog‘och solda suzish imkonsiz",
+    "C) Faqat zamonaviy kemalar suza oladi",
+    "D) Qadimda odamlar sayohat qilmagan"
+   ],
+   "answer": "A) Masofa emas, shamol va oqim muhim"
+  }
+ ]
+}

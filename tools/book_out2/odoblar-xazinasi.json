@@ -1,0 +1,80 @@
+{
+ "title": "Odoblar xazinasi",
+ "author": "Shayx Muhammad Sodiq Muhammad Yusuf",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "odob",
+   "oila",
+   "silai rahm",
+   "husni xulq",
+   "saxiylik"
+  ],
+  "theme": "Ushbu kitob Islom dinidagi go‘zal odob-axloq, ota-onaga va qarindoshlarga yaxshilik qilish, qo‘shnichilik hamda jamiyatda o‘zini tutish qoidalarini Imom Buxoriyning «Al-adab al-mufrad» asaridagi hadislar va ularning sharhi orqali tushuntirishga bag‘ishlangan.",
+  "summary": "Kitob muallif Shayx Muhammad Sodiq Muhammad Yusufning «Al-adab al-mufrad» asarini tarjima va sharh qilish tarixi hamda Imom Buxoriyning ilmiy siyratini bayon etish bilan boshlanadi. Unda Imom Buxoriyning yoshlik yillari, ilm yo‘lidagi safarlari, kuchli xotirasi, taqvodorligi hamda Samarqand va Bag‘doddagi sinovlari haqida batafsil ma'lumot beriladi. Shuningdek, asarning yozilish sabablari va uning Islom olamidagi tutgan o‘rni tushuntiriladi. Keyingi qismlarda islomiy odoblarga oid muayyan boblar va ulardagi hadislar ketma-ket sharhlanadi. Boshida ota-onaga yaxshilik qilish, ularga oq bo‘lmaslik, vafotidan so‘ng ham haqqiga duo va istig‘for aytib turish hamda ularning do‘stlariga ikrom ko‘rsatish odoblari yoritiladi. Shuningdek, silai rahm, qarindoshlik rishtalarini bog‘lash, qarindoshlarga moddiy va ma'naviy yordam berishning fazilatlari hamda jannatga kirishga sabab bo‘ladigan amallar tahlil qilinadi. Suhbatlar davomida farzand tarbiyasi, farzandlar o‘rtasida adolat qilish, qiz bolalarga alohida mehr ko‘rsatish, qo‘shnichilik haqlari va qo‘shniga yaxshilik qilish qoidalari ko‘rib chiqiladi. Qo‘l ostidagilar va xizmatchilarga shafqatli bo‘lish, ularni sababsiz urmaslik, yuzga urishning haromligi hamda qullik rishtalarini yumshatish masalalariga to‘xtalinadi. Kitobning oxirgi qismlarida husni xulq, ya'ni chiroyli axloqning jamiyatdagi va oxiratdagi darajasi, baxillik va saxiylikning farqi, har bir ma'ruf ish sadaqa ekani va odamlarga ochiq yuz bilan muloqot qilishning ahamiyati tushuntiriladi. Shuningdek, xamr (ichkilik)ning yomonligi, kishilar o‘rtasidagi o‘zaro muhabbat va jamiyat tinchligi kabi muhim axloqiy va ma'naviy mavzular har bir hadis va sharhlar asosida tartibli bayon qilinadi.",
+  "characters": "yo‘q",
+  "conclusion": "O‘quvchi ushbu kitobni o‘qish orqali kishilar bilan munosabatda chiroyli odob va husni xulqni shakllantirish yo‘llarini o‘rganadi. Ota-ona, qarindoshlar, qo‘shnilar va do‘stlarga qanday munosabatda bo‘lish kerakligini tushunib yetadi. Har bir kichik xayrli amal, ochiq yuzli muloqot va yomonlikdan saqlanish ham savobli ish ekanini anglaydi. Natijada hayotda sabrli, saxiy, halol va atrofdagilarga mehribon inson bo‘lishga intiladi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, nasihatomuz",
+  "for_whom": "Odob-axloq, islomiy ma'rifat va shaxsiy kamolotga qiziquvchi barcha o‘smirlar va yoshlar uchun.",
+  "events": [
+   "Muallif kitobning yozilish tarixi va «Al-adab al-mufrad» sharhining yuzaga kelish jarayonini so‘zlab beradi.",
+   "Imom Buxoriyning tug‘ilishi, oilasi va bolalikdan ilmga bo‘lgan ishtiyoqi bayon qilinadi.",
+   "Imom Buxoriyning turli o‘lkalarga qilgan ilmiy safarlari va kitob yozishdagi tirishqoqligi yoritiladi.",
+   "Imom Buxoriyning shaxsiy sifatlari, taqvosi, ibodatlari va zakovati haqida ma'lumot beriladi.",
+   "Imom Buxoriyning Samarqand va Bag‘dod shaharlarida muhaddislar tomonidan sinovdan o‘tkazilishi va vafoti hikoya qilinadi.",
+   "Ota-onaga yaxshilik qilish, ularga ma'siyat bo‘lmagan o‘rinlarda itoat etish va ularni hijronda qoldirmaslik qoidalari tushuntiriladi.",
+   "Farzand o‘tib ketgan ota-onasining haqqiga istig‘for aytib, ularning ahdiga vafo qilishi zarurligi ko‘rsatib beriladi.",
+   "Qarindoshlik rishtalarini bog‘lash, ya'ni silai rahm qilish va qarindoshlarga yordam berishning fazilati ta'riflanadi.",
+   "Farzandlarga mehribon bo‘lish va ularning o‘rtasida teng adolat qilish lozimligi uqtiriladi.",
+   "Qo‘shnilarga yaxshilik qilish, taomdan ularga ham ulashish va qo‘shnichilik haqlari bayon etiladi.",
+   "Qo‘l ostidagi xizmatchilarga insof bilan munosabatda bo‘lish va ularning yuziga urmaslik haqida ogohlantiriladi.",
+   "Har bir ma'ruf va chiroyli amal sadaqa o‘rnida o‘tishi, hatto kishining ochiq yuz bilan tabassum qilishi ham savob ekani aytiladi.",
+   "Xamr ichishning inson ruhiyatiga va jamiyatga keltiradigan og‘ir oqibatlari haqida so‘z yuritiladi.",
+   "Baxillikning inson obro‘sini tushiruvchi yomon illat ekani hamda saxiylikning fazilatlari tushuntiriladi.",
+   "Husni xulq va Allohga taqvo qilish jannatga kirishga eng ko‘p sabab bo‘ladigan amallar ekani ta'kidlanadi."
+  ],
+  "quotes": [
+   "Albatta men karamli axloqlarini mukammal qilish uchun yuborildim.",
+   "Men aqlimni taniganimdan buyon biron narsani ilmsiz qilgan emasman.",
+   "G‘iybat haromligini bilganimdan buyon biror kishini g‘iybat qilganim yo‘q.",
+   "Xoliqqa ma'siyat bo‘ladigan narsada maxluqqa itoat yo‘q.",
+   "Xamr bor joyda iymon bo‘lmas, iymon bor joyda xamr bo‘lmas.",
+   "Har bir yaxshilik sadaqadir.",
+   "Solih odamning qo‘lidagi mol qanday yaxshi!"
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Muhammad ibn Abu Hotim Varroq shunday eslaydi: “Abu Abdulloh bilan safarga chiqadigan bo‘lsak, faqat qattiq sovuqdagina bir uyda yotar edik. Men uning bir kechada o‘n besh, yigirma marta turib, chaqmoqni olib chiroq yoqqanini, so‘ngra hadislarni yozib, yana boshini yostiqqa qo‘yganini ko‘rar edim”.",
+   "question": "Imom Buxoriyning kechalari ham ilm yo‘lida ushbu darajada mehnat qilgani haqida o‘qib, nimani his qilding? O‘z maqsading yo‘lida sidqidildan harakat qilish borasida o‘z hayotingdan qanday misol keltira olasan?"
+  },
+  {
+   "part": 2,
+   "context": "“Birr nima?” degan savolga “Muhabbat va borini sarflash”, deb javob berildi. Ota-onaga muhabbat qilish ma'naviy amal. Ularga bor molini sarflash esa moddiy-moliyaviy amaldir. Shuningdek, “Oq bo‘lish nima?” degan savolga “Ikkovlarini mahrum va hijron qilishing”, deb javob berildi.",
+   "question": "Ota-onaga nisbatan e'tibor va sevgini nafaqat so‘zda, balki kundalik amallarda ham ko‘rsatish sencha nega muhim? Sen o‘z hayotingda ularga ma'naviy yoki amaliy jihatdan qanday quvonch ulasha olasan?"
+  },
+  {
+   "part": 2,
+   "context": "Demak, sizga yaxshi odam yaxshilik qilsa ham, yomon odam yaxshilik qilsa ham, yaxshilik qiling. Yaxshiga yaxshilik qilsangiz, sizga ham yaxshilik qiladi. Yomonga yaxshilik qilsangiz, eng ozi – uning yomonligidan omonda bo‘lasiz.",
+   "question": "O‘zingga nisbatan adolatsiz yoki yomon munosabatda bo‘lgan insonlarga ham yaxshilik bilan javob qaytarish inson fe'l-atvorini qanday o‘zgartiradi deb o‘ylaysan? Shu borada o‘z kuzatuvlaring bilan o‘rtoqlash."
+  },
+  {
+   "part": 3,
+   "context": "Yaxshilik, u qanday bo‘lmasin – kattami, kichikmi, nomi yaxshilik bo‘lsa, pulidan yoki molidan sadaqa qilib, savob olgandek bo‘laveradi. Bizda pul va mol sarflab, ovqat pishirib, odamlarni to‘plab yedirsam, savob olaman, degan fikr paydo bo‘lib qolgan. Lekin oddiy holatlarda qilinadigan yaxshiliklar uchun ham savob olish mumkinligi haqidagi bilimimiz kamroq.",
+   "question": "Kichik va oddiy ko‘ringan xayrli amallar (masalan, tabassum qilish, yaxshi so‘z aytish yoki yordam berish) insonlar o‘rtasidagi munosabatga qanday ta'sir qiladi? O‘zing oxirgi marta atrofdagilarga shunday kichik yaxshilik qilganingda nimalarni his etganding?"
+  },
+  {
+   "part": 3,
+   "context": "“Kim o‘z oilasida omonlikda, tani sihatlikda, kunlik taomi bo‘lgan holda tong ottirsa, xuddi unga butun dunyo jamlangandek bo‘ladi”, dedilar. Sharh: Demak, Nabiyimiz sollallohu alayhi vasallam uchta muhim narsani aytib o‘tibdilar: biri – omonlik, tinchlik, ikkinchisi – sog‘-salomatlik, uchinchisi – yetarli taom.",
+   "question": "Tinchlik, sog‘liq va kunlik ehtiyojlarning yetarli bo‘lishini eng ulug‘ baxt deb bilish insonda shukronalik hissini qanday rivojlantiradi? O‘zing har kuni ega bo‘lgan qaysi oddiy ne'matlarni qadrlaysan?"
+  }
+ ]
+}

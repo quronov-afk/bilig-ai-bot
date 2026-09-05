@@ -1,0 +1,477 @@
+{
+ "title": "Muqaddas",
+ "author": "Odil Yoqubov",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "halollik",
+   "muhabbat",
+   "oila",
+   "mehnat",
+   "vijdon"
+  ],
+  "theme": "Inson hayotda va muhabbatda hamisha halol bo‘lishi, o‘z manfaati uchun boshqalarning haqiga xiyonat qilmasligi kerak. Haqiqiy baxt faqat halol mehnat va pokiza vijdon evaziga keladi.",
+  "summary": "Sharif mashinasozlik zavodida ishlaydigan halol yigit. Onasi va o‘gay otasi Salim Karimovichning qistovi bilan u institutga hujjat topshiradi. Imtihon konsultatsiyasida u samimiy va pokiza qiz Muqaddas bilan tanishib, uni sevib qoladi. Fizika imtihoni kuni Muqaddas hayajonlangani sababli Sharifdan navbatini almashtirishni iltimos qiladi. Sharif birinchi bo‘lib kirib, a'lo baho oladi. Ular birga imtihonlarga tayyorlanishadi va yaqinlashishadi. Biroq Sharifning o‘gay otasi va onasi yashirincha institutdagilar bilan kelishib, Sharifning o‘rtamiyona yozilgan inshosini a'lo inshoga almashtirib qo‘yishadi. Natijada Sharif o‘qishga qabul qilinadi, 18 ball to‘plagan halol va bilimli Muqaddas esa ro‘yxatdan tushib qoladi. Yosharib kelayotgan o‘qituvchi Azizov Muqaddasga vaqtida adolatsizlik ro‘y berganini, Sharif uning o‘rnini nohalol egallaganini ochib beradi. Muqaddas bundan chuqur iztirobga tushib, Sharifdan ixlosini qaytaradi va yotoqxonadan unga xayrlashuv maktubini qoldirib, qishlog‘iga qaytib ketadi. Sharif o‘zining irodasizligi va nohalollikka ko‘z yumgani sababli eng buyuk baxtidan ajralganini anglaydi. U institutda o‘qishdan voz kechadi, rektorga uchrashishga urinadi hamda o‘z xatosini anglagan holda zavodga, halol mehnatga va do‘stlari davrasiga qaytadi.",
+  "characters": "Sharif — asar bosh qahramoni, zavod ishchisi. U sevgiga berilib, nohalollikka ko‘z yumadi, lekin keyin xatosini anglab, halol yo‘lni tanlaydi.\nMuqaddas — halol, g‘ururli va pokiza qiz. U adolatsizlikka va xiyonatga chiday olmaydi, nohalol kelgan o‘qishni rad etadi.\nSalim Karimovich — Sharifning o‘gay otasi, institut o‘qituvchisi. Sharifni o‘qishga kiritish uchun nohalol yo‘llarni qo‘llaydi.\nSulaymon aka — Sharifning otasining qadrdon do‘sti, zavod sex boshlig‘i. Halol va talabchan inson.\nAzizov — institutning yosh domlasi, haqiqatparvar va adolatli inson.",
+  "conclusion": "Asar har bir yoshni halollik, mas'uliyat va o‘z mehnati bilan muvaffaqiyatga erishishga o‘rgatadi. Boshqalarning haqini yeyish evaziga baxtga erishib bo‘lmasligini, xatoni tan olib, uni tuzatish uchun mardlik kerakligini uqtiradi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Hayotda halollik va do‘stlikni qadrlaydigan, ilk muhabbat hamda mas'uliyat haqida o‘ylaydigan o‘smirlar uchun.",
+  "events": [
+   "Sharif konsultatsiyada Muqaddas bilan tanishadi.",
+   "Muqaddas ximiya formulasida xato qilganida Sharif yordam beradi.",
+   "Sharif Muqaddasni yotoqxonasigacha kuzatib boradi.",
+   "Birinchi imtihonda Muqaddas qo‘rqqanidan Sharif bilan navbatini almashtiradi.",
+   "Sharif fizika imtihonidan besh baho oladi.",
+   "Muqaddas ham fizika imtihonini muvaffaqiyatli topshiradi.",
+   "Sharif o‘gay otasi va onasining janjallarini eslaydi.",
+   "Sharif zavoddagi ustoz-do‘sti Sulaymon akani xotirlaydi.",
+   "Matematika va yozma insho imtihonlari bo‘lib o‘tadi.",
+   "Sharif inshoda Yo‘lchi va Rizvon obrazi orqali Muqaddasga bo‘lgan sevgisini tasvirlaydi.",
+   "Sharif Muqaddas bilan Bo‘zsuv bo‘yida va parkda sayr qiladi.",
+   "Muqaddas qisqa muddatga uyiga ketayotib Sharifdan maktub kutilishini aytadi.",
+   "Sharifning o‘gay otasi va onasi yashirincha uning inshosini almashtirishadi.",
+   "Imtihon natijalari e'lon qilinadi: Sharif o‘qishga kiradi, Muqaddas esa kirolmaydi.",
+   "Azizov Muqaddasga Sharif uning o‘rnini egallaganini aytib beradi.",
+   "Muqaddas ko‘z yosh to‘kib, Sharifdan butunlay ixlosidan qaytadi.",
+   "Sharif adolatni tiklash uchun rektor oldiga kirishga urinadi.",
+   "Muqaddas yotoqxonadan Sharifga xayrlashuv maktubini berib yuboradi.",
+   "Sharif parkdagi chirmovuq soyabonida o‘z qilmishidan chuqur afsuslanib yig‘laydi.",
+   "Sharif institutdan voz kechib, zavodga va halol mehnatga qaytishga qaror qiladi."
+  ],
+  "quotes": [
+   "Rahmat sizga!",
+   "Ozgina surilish shuncha qiyinmi?",
+   "Endi mening ham besh olishimni tilab turing!",
+   "Siz meni kim deb o‘yladingiz?",
+   "Insofli odam oshini yer; insofsiz boshini.",
+   "Men endi o‘qimayman! Men ishchining qiziman!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sharif va Muqaddas birinchi marta qayerda uchrashishgan?",
+   "options": [
+    "A) Institut konsultatsiyasida",
+    "B) Zavod sexida",
+    "C) Shahar parkida",
+    "D) Yotoqxona oldida"
+   ],
+   "answer": "A) Institut konsultatsiyasida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muqaddas ximiyadan qaysi element valentligini xato yozgan edi?",
+   "options": [
+    "A) Vodorod",
+    "B) Kislorod",
+    "C) Azot",
+    "D) Sink"
+   ],
+   "answer": "A) Vodorod"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Birinchi imtihonda Muqaddas Sharifdan nimani iltimos qildi?",
+   "options": [
+    "A) Navbatni almashtirishni",
+    "B) Masalani yechib berishni",
+    "C) Kitobini berib turishni",
+    "D) Uyigacha kuzatib qo‘yishni"
+   ],
+   "answer": "A) Navbatni almashtirishni"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sharif fizika imtihonidan qanday baho oldi?",
+   "options": [
+    "A) Besh",
+    "B) To‘rt",
+    "C) Uch",
+    "D) Yiqildi"
+   ],
+   "answer": "A) Besh"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Voqealar tartibini belgilang: 1) Konsultatsiya, 2) Navbat almashtirish, 3) Bilet olish.",
+   "options": [
+    "A) 1, 2, 3",
+    "B) 2, 1, 3",
+    "C) 3, 1, 2",
+    "D) 1, 3, 2"
+   ],
+   "answer": "A) 1, 2, 3"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muqaddas imtihonga birinchi kirishdan nega qo‘rqdi?",
+   "options": [
+    "A) Hayajonlangani va xavfsiragani uchun",
+    "B) Tayyorlanmay kelgani uchun",
+    "C) Domladan qo‘rqgani uchun",
+    "D) Kechikib kelgani uchun"
+   ],
+   "answer": "A) Hayajonlangani va xavfsiragani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sharifning imtihonga dadil kirishiga nima sabab bo‘ldi?",
+   "options": [
+    "A) Muqaddasning minnatdor qarashi",
+    "B) Salim Karimovichning buyrug‘i",
+    "C) Sulaymon akaning maslahati",
+    "D) Biletlarning osonligi"
+   ],
+   "answer": "A) Muqaddasning minnatdor qarashi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sharifning Muqaddasga o‘rnini bo‘shatib berishi qanday xulq?",
+   "options": [
+    "A) Oqko‘ngillik va g‘amxo‘rlik",
+    "B) O‘ylamay qilingan qo‘rqoqlik",
+    "C) Manfaatparastlik va kibr",
+    "D) Dangasalik va loqaydlik"
+   ],
+   "answer": "A) Oqko‘ngillik va g‘amxo‘rlik"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Muqaddasning tashqi ko‘rinishini qanday ibora bilan tasvirlaydi?",
+   "options": [
+    "A) Gard yuqmagan beg‘ubor iffat",
+    "B) Kibrli va mag‘rur boqish",
+    "C) O‘ychan va g‘amgin chehra",
+    "D) Sho‘x va o‘lovchi qarash"
+   ],
+   "answer": "A) Gard yuqmagan beg‘ubor iffat"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Sharifning ko‘ngli yomg‘irdan keyingi osmonga o‘xshatilishi nimani bildiradi?",
+   "options": [
+    "A) Qalbining charaqlab, quvonganini",
+    "B) Kayfiyatining buzilib, ma'yuslanganini",
+    "C) Yaratgandan panoh so‘raganini",
+    "D) Imtihondan qo‘rqib ketganini"
+   ],
+   "answer": "A) Qalbining charaqlab, quvonganini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sharif zavoddagi qaysi ustozi va sex boshlig‘ini eslaydi?",
+   "options": [
+    "A) Sulaymon aka",
+    "B) Salim aka",
+    "C) Azizov",
+    "D) Kuloyans"
+   ],
+   "answer": "A) Sulaymon aka"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sharif va Muqaddas qaysi transportda Bo‘zsuv tomonga ketishdi?",
+   "options": [
+    "A) Avtobusda",
+    "B) Tramvayda",
+    "C) Poezdda",
+    "D) Moshinada"
+   ],
+   "answer": "A) Avtobusda"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muqaddas yozma inshoda qaysi mavzuni tanlagan edi?",
+   "options": [
+    "A) Shohi so‘zana",
+    "B) Qutlug‘ qon",
+    "C) O‘tkan kunlar",
+    "D) Mehrobdan chayon"
+   ],
+   "answer": "A) Shohi so‘zana"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sharifning o‘gay otasi Salim Karimovich institutda kim bo‘lib ishlardi?",
+   "options": [
+    "A) Oddiy o‘qituvchi",
+    "B) Dekan",
+    "C) Rektor",
+    "D) Laborant"
+   ],
+   "answer": "A) Oddiy o‘qituvchi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sharif topshirgan imtihonlar ketma-ketligi qaysi javobda to‘g‘ri berilgan?",
+   "options": [
+    "A) Fizika, matematika, insho",
+    "B) Insho, fizika, matematika",
+    "C) Matematika, fizika, insho",
+    "D) Fizika, insho, matematika"
+   ],
+   "answer": "A) Fizika, matematika, insho"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sharif insho yozayotib nega o‘z sevgisini esladi?",
+   "options": [
+    "A) Asar qahramonlari ruhiyatini his qilgani",
+    "B) Insho mavzusini bilmagani uchun",
+    "C) Muqaddas undan ko‘chirgani uchun",
+    "D) Domla shuni talab qilgani uchun"
+   ],
+   "answer": "A) Asar qahramonlari ruhiyatini his qilgani"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sharifning onasi va o‘gay otasi nega inshoni almashtirishdi?",
+   "options": [
+    "A) Sharif o‘qishga kirishini istashgani",
+    "B) Sulaymon aka so‘ragani uchun",
+    "C) Sharif ulardan o‘tingani uchun",
+    "D) Muqaddasga yordam berish uchun"
+   ],
+   "answer": "A) Sharif o‘qishga kirishini istashgani"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sharifning nohalol yo‘l bilan inshoni to‘g‘rilatishiga ko‘nishi qanday?",
+   "options": [
+    "A) Irodasizlik va katta ma'naviy xato",
+    "B) Ota-onaga bo‘lgan yuksak hurmat",
+    "C) Zamonaviy va chaqqon tadbirkorlik",
+    "D) To‘g‘ri va mantiqiy qaror"
+   ],
+   "answer": "A) Irodasizlik va katta ma'naviy xato"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Sharifning hayot haqidagi «o‘ng qo‘li bilan...» iborasi nimani bildiradi?",
+   "options": [
+    "A) Hayotning quvonch va tashvishlarini",
+    "B) Ota-onaning doimiy g‘amxo‘rligini",
+    "C) Mehnatning insonni chiniqtirishini",
+    "D) Muhabbatning hamisha g‘alaba qilishini"
+   ],
+   "answer": "A) Hayotning quvonch va tashvishlarini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muqaddasning «men ishchining qiziman» degani nimani anglatadi?",
+   "options": [
+    "A) Halol mehnat va g‘ururni",
+    "B) Kambag‘allikdan uyalishini",
+    "C) O‘qishni xohlamasligini",
+    "D) Sharifga kinoya qilishini"
+   ],
+   "answer": "A) Halol mehnat va g‘ururni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Imtihonda Muqaddas necha ball to‘plagan edi?",
+   "options": [
+    "A) O‘n sakkiz ball",
+    "B) O‘n olti ball",
+    "C) Yigirma ball",
+    "D) O‘n besh ball"
+   ],
+   "answer": "A) O‘n sakkiz ball"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sharifning o‘rniga kirganini Muqaddasga kim aytib berdi?",
+   "options": [
+    "A) Azizov",
+    "B) Sulaymon aka",
+    "C) Salim Karimovich",
+    "D) Yotoqxona komendanti"
+   ],
+   "answer": "A) Azizov"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muqaddas yotoqxonadan Sharifga nima berib yubordi?",
+   "options": [
+    "A) Xayrlashuv maktubini",
+    "B) Darslik kitoblarini",
+    "C) Oq shoyi ko‘ylagini",
+    "D) Imtihon varaqasini"
+   ],
+   "answer": "A) Xayrlashuv maktubini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sharif ajralishdan so‘ng qaysi joyda o‘tirib yig‘ladi?",
+   "options": [
+    "A) Parkdagi chirmovuq soyabonida",
+    "B) Institut xiyobonida",
+    "C) Zavod sexida",
+    "D) Uyidagi supada"
+   ],
+   "answer": "A) Parkdagi chirmovuq soyabonida"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sharifning haqiqatni bilganidan keyingi harakatlari tartibi qanday?",
+   "options": [
+    "A) Rektorga yugurish, maktub, park, zavod",
+    "B) Zavodga borish, park, rektor, maktub",
+    "C) Park, zavod, maktub, rektor",
+    "D) Maktub, zavod, rektor, park"
+   ],
+   "answer": "A) Rektorga yugurish, maktub, park, zavod"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muqaddasning maktubida ta'kidlangan fikrlar ketma-ketligini aniqlang.",
+   "options": [
+    "A) Rahmat, o‘qimayman, ishlayman, xayr",
+    "B) Xayr, rahmat, ishlayman, o‘qiyman",
+    "C) O‘qiyman, rahmat, xayr, ishlayman",
+    "D) Ishlayman, xayr, o‘qiyman, rahmat"
+   ],
+   "answer": "A) Rahmat, o‘qimayman, ishlayman, xayr"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muqaddas nega Sharif erishgan o‘qishni va yordamni rad etdi?",
+   "options": [
+    "A) Nohaqlik va xiyonatni qabul qilmagani",
+    "B) Boshqa shaharga ketmoqchi bo‘lgani",
+    "C) Sharifdan qo‘rqib qolgani uchun",
+    "D) Balining kamligidan uyalgani uchun"
+   ],
+   "answer": "A) Nohaqlik va xiyonatni qabul qilmagani"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sharif oxirida nega institutni tashlab zavodga qaytishni tanladi?",
+   "options": [
+    "A) Vijdonini qiynagan xatoni tuzatish",
+    "B) Otasi shuni talab qilgani uchun",
+    "C) O‘qish o‘ta qiyin bo‘lgani uchun",
+    "D) Muqaddas shunday buyurgani uchun"
+   ],
+   "answer": "A) Vijdonini qiynagan xatoni tuzatish"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sharifning xatosini tan olib zavodga qaytishi haqida nima deysiz?",
+   "options": [
+    "A) Mardona va to‘g‘ri ma'naviy qaror",
+    "B) Zaiflik va ojizlik belgisi",
+    "C) Keraksiz va befoyda harakat",
+    "D) Ota-onaga nisbatan hurmatsizlik"
+   ],
+   "answer": "A) Mardona va to‘g‘ri ma'naviy qaror"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "«Insofli odam oshini yer; insofsiz boshini» maqoli asarga mosmi?",
+   "options": [
+    "A) Ha, halollik va adolatni ko‘rsatadi",
+    "B) Yo‘q, asar voqealariga aloqasiz",
+    "C) Faqat o‘qishga kirishga tegishli",
+    "D) Faqat zavod ishchilariga tegishli"
+   ],
+   "answer": "A) Ha, halollik va adolatni ko‘rsatadi"
+  }
+ ]
+}

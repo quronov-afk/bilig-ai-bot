@@ -237,6 +237,31 @@ Natijani FAQAT quyidagi JSON formatida qaytar:
 {text}"""
 
 
+# Voqeasiz kitoblar uchun qo‘shimcha ko‘rsatma (2026-09-03).
+# Sabab: «Shaxsiy rivojlanish» turkumidagi 5 ta kitob sifat tekshiruvidan
+# o‘tmadi. Ularda syujet yo‘q — faqat fikr va maslahat bor. AI voqea
+# izlab topolmagach, beixtiyor mayda tafsilotga o‘tib ketardi:
+# «muallif nechta qoida sanaydi», «necha bosqich bor». Ega esa bunday
+# savolni qat'iy taqiqlagan.
+FIKRIY_QOSHIMCHA = """
+═══ BU KITOBDA SYUJET YO‘Q — ALOHIDA QOIDA ═══
+Bu asar hikoya emas: unda qahramon ham, voqealar zanjiri ham yo‘q.
+Muallif fikr aytadi, dalil keltiradi, maslahat beradi. Shuning uchun:
+
+· SAVOLLAR MUALLIFNING FIKRI haqida bo‘lsin — «muallif nima demoqchi»,
+  «nega shunday deydi», «bu maslahat qayerda asqotadi».
+· RAQAM SO‘RAMA. «Nechta qoida», «necha bosqich», «nechanchi bobda» —
+  bular QAT'IY TAQIQ. Bunday savol kitobni tushunganini emas, sanashni
+  tekshiradi.
+· Muallif keltirgan MISOL va HIKOYAChALAR eng yaxshi savol manbai:
+  ular yodda qoladi va ular haqida savol berish tabiiy.
+· «events» maydoniga voqea emas, MUALLIFNING ASOSIY FIKRLARI ketma-ket
+  yoziladi — kitob qanday boshlanib, qanday xulosaga kelishi.
+· «part» bo‘limlari kitobning boshi, o‘rtasi va oxiridagi mavzular
+  bo‘yicha taqsimlanadi.
+"""
+
+
 def build_prompt(book, text, errors=None):
     # Savollar soni kitob uzunligiga qarab: bir sahifalik hikoyadan 30 ta
     # savol chiqarib bo‘lmaydi — AI matndan so‘z terishga majbur bo‘ladi.
@@ -275,6 +300,10 @@ def build_prompt(book, text, errors=None):
         fix = ("\n\nDIQQAT: oldingi javobing quyidagi xatolar bilan qaytdi. "
                "Ularni tuzatib, TO‘LIQ javobni qaytadan yoz:\n" +
                "\n".join("· " + e for e in errors[:10]))
+
+    # Syujeti yo‘q kitoblar (shaxsiy rivojlanish) — alohida ko‘rsatma
+    if (book.get("section") or "") == "Shaxsiy rivojlanish":
+        fix = FIKRIY_QOSHIMCHA + fix
 
     return f"""Sen bolalar adabiyoti bo‘yicha mutaxassis va tajribali pedagogsan.
 Quyida «{book['title']}» kitobi ({book['author'] or "muallif noma'lum"},

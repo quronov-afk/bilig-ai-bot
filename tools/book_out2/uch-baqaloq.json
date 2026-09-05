@@ -1,0 +1,446 @@
+{
+ "title": "Uch baqaloq",
+ "author": "Yuriy Olesha",
+ "genre": "Roman-ertak",
+ "age_group": "8",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "9-10",
+  "age_hint": "9-12 yoshli bolalar uchun",
+  "topics": [
+   "do‘stlik",
+   "jasorat",
+   "adolat",
+   "mehnatsevarlik",
+   "birlik"
+  ],
+  "theme": "Zulm va adolatsizlik ustidan birlik, mardlik hamda samimiy do‘stlik orqali g‘alaba qozonish mumkinligi. Insoniy mehr va tirik yurak har qanday soxte boylik va temir qalb ustidan g‘alaba qiladi.",
+  "summary": "Sehrgarlar zamoni o‘tgan bo‘lsa-da, donishmand va olim doktor Gaspar Arneri yuzga yaqin ilmni bilardi. Mamlakatni esa ochko‘z, shafqatsiz Uch Baqaloq va ularning ministrlari idora qilardi. Xalq zolimlarga qarshi mard qurolsoz Prospero va mohir dorboz Tibul boshchiligida qo‘zg‘olon ko‘taradi, ammo birinchi to‘qnashuvda mag‘lub bo‘lib, Prospero asirga olinadi.\n\nDoktor Gaspar tasodifan bu voqealar markazida qolib, ko‘zoynagi va buyumlarini yo‘qotadi. Uyiga qaytgach, uning yoniga qidiruvda bo‘lgan gimnast Tibul berkinadi. Shu bilan birga, Baqaloqlar valiahdi Tuttining buzib qo‘yilgan sevimli qo‘g‘irchog‘ini ertagacha tuzatish doktor Gasparga topshiriladi. Biroq qo‘g‘irchoqning tishli g‘ildirakchasi darz ketgani sababli, uni bir kunda tuzatishning imkoni bo‘lmaydi. Ustiga-ustak, yo‘lda ketayotganda bu qo‘g‘irchoq yo‘qolib qoladi.\n\nDoktor Gaspar qidiruv jarayonida sirk artistlari bilan uchrashadi va u yerda buzilgan qo‘g‘irchoqqa juda o‘xshash Suok ismli tirik qizaloqni uchratadi. Tibul va doktor ajoyib reja tuzishadi: Suok saroyga tirik qo‘g‘irchoq bo‘lib kiradi va temir qafasda saqlanayotgan xalq qahramoni Prosperoni qutqarish uchun kalitni qo‘lga kiritadi. Suok o‘z rolini qahramonona ijro etib, Prosperoni yerosti yo‘li orqali qochirishga erishadi.\n\nBiroq Suok saroyda chaqimchi to‘tiqush sababli ushlanib qoladi va o‘limga hukm qilinadi. Gvardiyachilar va xalqning xaloskorlari ayyorlik ishlatib, Suokning o‘rniga o‘sha jonsiz buzilgan qo‘g‘irchoqni yo‘lbarslar oldiga tashlashadi. Shu payt qurollangan xalq va xalq tomonga o‘tgan gvardiyachilar saroyga bostirib kirib, Baqaloqlar hokimiyatini ag‘daradi. Oxirida Suok va Tutti aslida bir-biridan ayrib tashlangan egizak opa-uka ekani va Tuttining yuragi temir emas, balki tirik insoniy yurak ekani ma'lum bo‘ladi.",
+  "characters": "Doktor Gaspar Arneri — yuzta ilmdan xabardor, mehribon, donishmand olim.\nGimnast Tibul — dovyurak, epchil va mard sirk artisti, xalq yetakchisi.\nQurolsoz Prospero — zolimlarga qarshi kurashgan mard va jasur xalq qahramoni.\nSuok — aqlli, dovyurak va iste'dodli sirk raqqosasi, Tuttining opasi.\nValiahd Tutti — Baqaloqlar qo‘lida tarbiyalangan, yuragi tosh deb uqtirilgan, lekin aslida mehribon bola.\nUch Baqaloq — mamlakatni egallab olgan, ochko‘z va zolim hukmdorlar.",
+  "conclusion": "Ushbu asar bolalarga haqiqiy do‘stlik, mardlik va adolat uchun kurashishning naqadar muhimligini ko‘rsatadi. Bola kitobdan insoniy qalb va mehr-muhabbatni hech qanday boylikka almashtirib bo‘lmasligini, birlik bor joyda har qanday adolatsizlik mag‘lub bo‘lishini o‘rganadi.",
+  "difficulty": "o‘rta",
+  "mood": "hayajonli, sarguzashtli, quvnoq",
+  "for_whom": "Sarguzashtlarni, ayyorona rejalarni va do‘stlik hamda adolat haqidagi ertak-romanlarni sevib o‘qiydigan bolalar uchun.",
+  "events": [
+   "1. Doktor Gaspar Arneri yoz kunida o‘simlik va qo‘ng‘izlar tergani sayrga chiqdi.",
+   "2. Shahar darvozasi oldida Qurolsoz Prospero va xalqning Uch Baqaloq qasrigiga hujum qilgani ma'lum bo‘ldi.",
+   "3. Gvardiyachilar xalqni yengib, Qurolsoz Prosperoni bo‘ynidan sirtmoq solib asirga olishdi.",
+   "4. Minoradan kuzatayotgan doktor Gaspar durbini va ko‘zoynagini yo‘qotib qo‘ydi.",
+   "5. Shahar bo‘ylab duradgorlar isyonchilarni qatl etish uchun kundalar o‘rnatgani ketishdi.",
+   "6. Gimnast Tibul Yulduz maydonidagi ulkan fonus chirog‘ini o‘chirib, gumbazdagi tuynukdan qochib ketdi.",
+   "7. Tibul doktor Gasparning uyiga kelib, kamin ichiga berkinib oldi.",
+   "8. Shar sotuvchi amaki sharlar bilan uchib, saroyning shirapazlik xonasiga tushdi.",
+   "9. Valiahd Tuttining sevimli qo‘g‘irchog‘i gvardiyachilar tomonidan shikastlandi.",
+   "10. Baqaloqlar doktor Gasparga qo‘g‘irchoqni ertagacha tuzatishni buyurishdi.",
+   "11. Qo‘g‘irchoqning tishli g‘ildirakchasi darz ketgani uchun doktor uni tuzata olmadi va yo‘lda yo‘qotib qo‘ydi.",
+   "12. Doktor Gaspar sirk joyida qo‘g‘irchoqqa juda o‘xshash Suok ismli qizaloqni uchratdi.",
+   "13. Tibul, doktor va Suok saroyga tirik qo‘g‘irchoq bo‘lib kirish rejasini tuzishdi.",
+   "14. Suok saroyga kirib, valiahd Tuttining ishonchiga kirdi va qafas kalitini oldi.",
+   "15. Suok tunda Prosperoni qafasdan ozod qildi va ular tagi yo‘q kastryul orqali qochishdi.",
+   "16. Chaqimchi to‘tiqush Suokning siri haqida zoolog va Baqaloqlarga aytib berdi.",
+   "17. Sud Suokni vahshiy yo‘lbarslarga tashlash hukmini chiqardi.",
+   "18. Gvardiyachilar Suokning o‘rniga uvadasi chiqqan jonsiz qo‘g‘irchoqni yo‘lbarslar oldiga qo‘yishdi.",
+   "19. Qo‘zg‘olon ko‘targan xalq va gvardiyachilar saroyga bostirib kirib, g‘alaba qozondi.",
+   "20. Uch Baqaloq qafasga solindi, Suok va Tutti birlashib, olim Tubning vasiyatnomasini o‘qishdi."
+  ],
+  "quotes": [
+   "Yulduzlarga qanday uchmoqni, Shum tulkini qay xil tutmoqni, Toshni qanday eritmoqni ham Bilar bizning doktor Gaspar, ha!",
+   "Duradgorlar qatl kundalari o‘rnatgani ketishyapti! Tushundingmi? Ular o‘nta qatl kundasi o‘rnatishadi!",
+   "Sizlarga qarashdan jirkanaman.",
+   "Bamisoli uch naq bug‘doy non – Ag‘darildi uchta Baqaloq! Ular uchun qorindan o‘zga Muhim tashvish ko‘rinmas ko‘zga!",
+   "Endi bizlar bundan buyon o‘zimiz uchun mehnat qilamiz, hammamiz teng huquqli bo‘lamiz."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Doktor Gaspar Arneri nechta ilmdan xabardor edi?",
+   "options": [
+    "A) Salkam yuzta ilmdan",
+    "B) O‘nta ilmdan",
+    "C) Faqat bitta ilmdan"
+   ],
+   "answer": "A) Salkam yuzta ilmdan"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Doktor Gaspar nima yig‘ish uchun sayrga chiqdi?",
+   "options": [
+    "A) Qo‘ng‘izlar va o‘simliklar",
+    "B) Mevalar va sabzavotlar",
+    "C) Dori-darmon giyohlar"
+   ],
+   "answer": "A) Qo‘ng‘izlar va o‘simliklar"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shahar darvozasi oldida kim asirga olindi?",
+   "options": [
+    "A) Qurolsoz Prospero",
+    "B) Doktor Gaspar",
+    "C) Gimnast Tibul"
+   ],
+   "answer": "A) Qurolsoz Prospero"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Doktor minoradan nimani tushirib yubordi va yo‘qotdi?",
+   "options": [
+    "A) Durbinni tushirdi, poshnasini yo‘qotdi",
+    "B) Kitobni tushirdi, soatni yo‘qotdi",
+    "C) Xatni tushirdi, shlyapasini topdi"
+   ],
+   "answer": "A) Durbinni tushirdi, poshnasini yo‘qotdi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Duradgorlar nimani o‘rnatish uchun ketayotgan edi?",
+   "options": [
+    "A) Qatl kundalarini o‘rnatgani",
+    "B) Bayram sahnasini qurgani",
+    "C) Shahar darvozasini tuzatgani"
+   ],
+   "answer": "A) Qatl kundalarini o‘rnatgani"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega xonim Qurolsoz Prosperoga achinish kerak emas dedi?",
+   "options": [
+    "A) Ular bizga yomonlik qilmoqchiydi",
+    "B) U juda boy odam edi",
+    "C) U shahardan qochib ketgandi"
+   ],
+   "answer": "A) Ular bizga yomonlik qilmoqchiydi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gimnast Tibul Yulduz maydonidan qanday qochib ketdi?",
+   "options": [
+    "A) Gumbazdagi tuynuk orqali",
+    "B) Yerosti yo‘li orqali",
+    "C) Katta darvoza orqali"
+   ],
+   "answer": "A) Gumbazdagi tuynuk orqali"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tibul fonus chirog‘ini nega o‘chirib qo‘ydi?",
+   "options": [
+    "A) Qorong‘ida qochib qutulish uchun",
+    "B) Chiroq ko‘zini qamashtirgani uchun",
+    "C) Odamlarga hazil qilish uchun"
+   ],
+   "answer": "A) Qorong‘ida qochib qutulish uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Doktorning xalq azobini ko‘rib qayg‘urishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Uning rahmdil va mehribonligini",
+    "B) Uning qo‘rqoq odamligini",
+    "C) Uning shohga sodiqligini"
+   ],
+   "answer": "A) Uning rahmdil va mehribonligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «fonuslar qaynayotgan sutli sharlarga o‘xshardi» deya nimani bildiradi?",
+   "options": [
+    "A) Chiroqlarning yorqin appoq nurini",
+    "B) Tungi havoning sovuqligini",
+    "C) Sut pishirilayotgan idishni"
+   ],
+   "answer": "A) Chiroqlarning yorqin appoq nurini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shar sotuvchi amaki saroyning qaysi xonasiga tushdi?",
+   "options": [
+    "A) Shirapazlik xonasiga",
+    "B) Shohning yotoqxonasiga",
+    "C) Saroy kutubxonasiga"
+   ],
+   "answer": "A) Shirapazlik xonasiga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Suok qaysi rolni o‘ynash uchun tanlab olindi?",
+   "options": [
+    "A) Valiahd Tuttining qo‘g‘irchog‘i rolini",
+    "B) Sirkdagi masxaraboz rolini",
+    "C) Qasr xizmatkori rolini"
+   ],
+   "answer": "A) Valiahd Tuttining qo‘g‘irchog‘i rolini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Doktor Gaspar do‘konda uchratgan qizcha kim edi?",
+   "options": [
+    "A) Sirk artisiti Suok",
+    "B) Qasr malikasi",
+    "C) Izvoshchining qizi"
+   ],
+   "answer": "A) Sirk artisiti Suok"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tibul va doktor Gaspar Suokka qanday vazifa topshirdi?",
+   "options": [
+    "A) Saroyga kirib Prosperoni qutqarishni",
+    "B) Baqaloqlarga shirinlik pishirib berishni",
+    "C) Sirkda yangi tomosha ko‘rsatishni"
+   ],
+   "answer": "A) Saroyga kirib Prosperoni qutqarishni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Valiahd Tutti ehtiyot qilish uchun Suokka nimani berdi?",
+   "options": [
+    "A) Temir qafasning kalitini",
+    "B) Oltin uzukni",
+    "C) Kichkina pichoqchani"
+   ],
+   "answer": "A) Temir qafasning kalitini"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Suok pirojniy yeganda xizmatkor nega ajablanib qoldi?",
+   "options": [
+    "A) Qo‘g‘irchoq ovqat yemaydi deb o‘yladi",
+    "B) Pirojniy juda kam qolgandi",
+    "C) Suok ovqatni yerga to‘kdi"
+   ],
+   "answer": "A) Qo‘g‘irchoq ovqat yemaydi deb o‘yladi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Suok valiahd Tuttining kalitini qayeriga solib qo‘ydi?",
+   "options": [
+    "A) Ko‘ylagining cho‘ntagiga",
+    "B) Poyabzalining ichiga",
+    "C) Sochining tasmasiga"
+   ],
+   "answer": "A) Ko‘ylagining cho‘ntagiga"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega doktor singan qo‘g‘irchoqni bir kunda tuzata olmadi?",
+   "options": [
+    "A) Tishli g‘ildirakchasi darz ketgani uchun",
+    "B) Asbob-uskunalari yo‘qolgani uchun",
+    "C) Ishlashni xohlamagani uchun"
+   ],
+   "answer": "A) Tishli g‘ildirakchasi darz ketgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Suokning Prosperoni qutqarish uchun saroyga borishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Uning dovyurak va sodiqligini",
+    "B) Uning maqtanishni yaxshi ko‘rishini",
+    "C) Uning o‘yinqaroq qiz ekanini"
+   ],
+   "answer": "A) Uning dovyurak va sodiqligini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Suok sochlarini qush patiga o‘xshatib nimani ko‘rsatgan?",
+   "options": [
+    "A) Sochining judayam nafisligini",
+    "B) Qizchaning sochi kirligini",
+    "C) Qizcha qushlarni yaxshi ko‘rishini"
+   ],
+   "answer": "A) Sochining judayam nafisligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Suok va Prosperoning qochishiga qaysi buyum yordam berdi?",
+   "options": [
+    "A) Tagi yo‘q kastryul",
+    "B) Shirapazlikdagi katta deraza",
+    "C) Saroyning yog‘och eshigi"
+   ],
+   "answer": "A) Tagi yo‘q kastryul"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Suok haqidagi haqiqatni kim chaqimchilik qilib aytib berdi?",
+   "options": [
+    "A) Zoologning qizil soqolli to‘tiqushi",
+    "B) Saroyning keksa oshpazi",
+    "C) Gvardiya kapitani Bonaventura"
+   ],
+   "answer": "A) Zoologning qizil soqolli to‘tiqushi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yo‘lbarslar yerda yotgan Suokka nega tegishmadi?",
+   "options": [
+    "A) U tirik qiz emas qo‘g‘irchoq edi",
+    "B) Yo‘lbarslar to‘q edi",
+    "C) Yo‘lbarslar qizdan qo‘rqishdi"
+   ],
+   "answer": "A) U tirik qiz emas qo‘g‘irchoq edi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Gvardiyachilarning xalq tomonga o‘tishi to‘g‘ri qarormidi?",
+   "options": [
+    "A) Ha adolat va xalq yonida bo‘lishdi",
+    "B) Yo‘q boylarga xizmat qilish kerak edi",
+    "C) Yo‘q urushmasdan qochish kerak edi"
+   ],
+   "answer": "A) Ha adolat va xalq yonida bo‘lishdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "G‘alabadan keyin Uch Baqaloq qayerga qamab qo‘yildi?",
+   "options": [
+    "A) Qurolsoz Prospero yotgan qafasga",
+    "B) Minora yerto‘lasiga",
+    "C) Shahar tashqarisidagi uyga"
+   ],
+   "answer": "A) Qurolsoz Prospero yotgan qafasga"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega olim Tub Tuttining yuragini temir qilishga rozi bo‘lmadi?",
+   "options": [
+    "A) Insonni insoniy yurakdan mahrum etib bo‘lmaydi",
+    "B) Temir moddasi yetishmagani uchun",
+    "C) Baqaloqlarga achingani uchun"
+   ],
+   "answer": "A) Insonni insoniy yurakdan mahrum etib bo‘lmaydi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Suok» va «Tutti» ismlariga qanday ma'no bergan?",
+   "options": [
+    "A) Mangu hayot va Judo etilgan",
+    "B) Oltin va Kumush",
+    "C) Quyosh va Oylam"
+   ],
+   "answer": "A) Mangu hayot va Judo etilgan"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega boylar gavan tomonga qarab qochishdi?",
+   "options": [
+    "A) Xalq g‘alaba qozonib hokimiyatni olgani uchun",
+    "B) Sirk tomoshasini ko‘rish uchun",
+    "C) Shaharda yong‘in o‘chirilgani uchun"
+   ],
+   "answer": "A) Xalq g‘alaba qozonib hokimiyatni olgani uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Olim Tubning vasiyatnomasi bola ma'naviyatiga qanday ta'sir qiladi?",
+   "options": [
+    "A) Mehr va insoniy yurak qadrini o‘rgatadi",
+    "B) Qasos olish kerakligini uqtiradi",
+    "C) Boy bo‘lish muhimligini ko‘rsatadi"
+   ],
+   "answer": "A) Mehr va insoniy yurak qadrini o‘rgatadi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida xalqning quvonchi qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Adolat qaror topganidan faxr tuyg‘usini",
+    "B) Zullmkorlarga achinish tuyg‘usini",
+    "C) Qorong‘ulikdan qo‘rquv tuyg‘usini"
+   ],
+   "answer": "A) Adolat qaror topganidan faxr tuyg‘usini"
+  }
+ ]
+}

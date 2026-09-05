@@ -1,0 +1,477 @@
+{
+ "title": "Hamlet",
+ "author": "Uilyam Shekspir",
+ "genre": "tragediya",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "qasos",
+   "vijdon",
+   "xiyonat",
+   "haqiqat",
+   "burch"
+  ],
+  "theme": "Asarning bosh g‘oyasi — adolat, vijdon amri va burch masalalarini chuqur mushohada qilishdir. Muallif yovuzlik va xiyonatning baribir fojiali oqibatlarga olib kelishini, inson o‘z qaddini va nomusini har qanday sharoitda ham saqlab qolishi lozimligini ko‘rsatadi.",
+  "summary": "Elsinor qasrida posbonlar va Goratsio marhum qirol Hamletning arvohini ko‘radilar. Goratsio bu haqda shahzoda Hamletga xabar beradi. Yangi qirol Klavdiy marhum og‘asining xotirasini yod etib, uning beva xotini Gertrudaga uylanganini e'lon qiladi. Shahzoda Hamlet otasining o‘limi va onasining shoshilinch nikohidan chuqur g‘amda yuradi. Laert Fransiyaga jo‘nab ketish oldidan singlisi Ofeliyaga Hamletning sevgisiga ehtiyotkor bo‘lishni uqtiradi, otasi Poloniy ham Ofeliyaga Hamlet bilan ko‘rishishni taqiqlaydi.\n\nTunda Hamlet arvoh bilan uchrashadi. Arvoh otasini amakisi Klavdiy quloqqa zahar quyib o‘ldirganini aytadi va qasos olishni topshiradi. Hamlet do‘stlariga bu haqda jim turishga qasamyod qildiradi va dushmanni chalg‘itish uchun o‘zini devonalikka solishga qaror qiladi. Poloniy Hamletning jinniligini Ofeliyaga bo‘lgan muhabbatdan deb o‘ylaydi. Klavdiy va Gertruda Hamletning ahvolini bilish uchun uning do‘stlari Rozenkrans va Gildensternni yuborishadi.\n\nSaroyga aktyorlar keladi. Hamlet ularga otasining o‘limiga o‘xshash sahna («Gonzagoning o‘limi»)ni ijro ettirib, Klavdiyning reaksiyasini kuzatadi. Tomosha paytida Klavdiy zaharlash sahnasini ko‘rib, chiday olmay ketib qoladi. Hamlet amakisining aybdorligiga to‘liq ishonch hosil qiladi. Malika bilan suhbat chog‘ida gilam ortida poylab turgan Poloniyni Hamlet kalamush deb o‘ylab, qilich urib o‘ldiradi.\n\nKlavdiy Hamletni Angliyaga jo‘natib, u yerda uni qatl ettirish haqida maxfiy maktub beradi. Lekin Hamlet maktubni almashib, Rozenkrans va Gildensternni o‘limga mahkum etadi va o‘zi Daniyaga qaytadi. Otasining o‘limi va Hamletning ketishidan Ofeliya aqlini yo‘qotib, daryoga cho‘kib halok bo‘ladi. Fransiyadan qaytgan Laert otasi va singlisining qasosini olmoqchi bo‘ladi. Klavdiy va Laert Hamletga qarshi xoinona reja tuzadilar: qilichbozlik musobaqasida Laert zaharli qilich bilan urishadi, shuningdek zaharli sharob tayyorlanadi.\n\nQabristonda Ofeliyaning dafn marosimida Hamlet va Laert toqatsizlanadi. Sahnada qilichbozlik musobaqasi bo‘lib o‘tadi. Malika Gertruda bilmasdan zaharli sharobni ichib o‘ladi. Laert Hamletni zaharli qilich bilan yaralaydi, urush davomida qilichlar almashib, Hamlet ham Laertni yaralaydi. O‘layotgan Laert Klavdiyning fitnasini ochib beradi. Hamlet Klavdiyga zaharli qilich urib va zaharli sharobni ichirib, otasining qasosini oladi. Hamlet o‘limi oldidan do‘sti Goratsyoga haqiqatni aytib berishni va Norvegiya shahzodasi Fortinbrasni qirol etib saylashni topshiradi. Fortinbras kelib, Hamletni harbiy izzat-ikrom bilan dafn etishni buyuradi.",
+  "characters": "Hamlet – Daniya shahzodasi, otasining qasosini olish uchun vijdoniy va falsafiy qiynoqlar ichida yashaydigan oqil yigit.\nKlavdiy – Daniyaning yangi qiroli, Hamletning amakisi, taxt va hokimiyat uchun o‘z og‘asini o‘ldirgan ayyor va zolim kimsa.\nGertruda – Daniya malikasi, Hamletning onasi, eri o‘lgach shoshilinch ravishda uning ukasiga turmushga chiqqan ayol.\nPoloniy – Saroy vaziri, xushomadg‘oy va gapdon qariya, Ofeliya va Laertning otasi.\nGoratsio – Hamletning sadoqatli, bosiq va mard do‘sti.\nLaert – Poloniyning o‘g‘li, otasi va singlisining qasosi uchun Klavdiyning hiylasiga uchragan o‘tli yigit.\nOfeliya – Poloniyning qizi, Hamletni sevgan, lekin ketma-ket fojialardan aqldan ozib halok bo‘lgan ma'suma qiz.",
+  "conclusion": "Ushbu asar kitobxonga sadoqat, vijdon va adolatning qanchalik muhimligini ko‘rsatadi. Xiyonat va hiyla-nayrang doimo fojia bilan tugashini, oqibatda inson o‘z qilmishiga yarasha jazo olishini anglatadi. Asar yoshlarni har bir bosgan qadamini mushohada qilishga, do‘stlikka sadoqatli bo‘lishga va har qanday sharoitda ham insoniylikni yo‘qotmaslikka chorlaydi.",
+  "difficulty": "qiyin",
+  "mood": "fojiaviy, o‘ylantiruvchi, hazin",
+  "for_whom": "Inson ruhiyati, hayot va o‘lim hamda adolat haqida falsafiy mushohada yuritishni xohlaydigan o‘smirlar uchun.",
+  "events": [
+   "Elsinor qasri soqchilari va Goratsio yarim kechasi marhum qirolning arvohini ko‘radilar.",
+   "Qirol Klavdiy Gertrudaga uylanganini e'lon qiladi va elchilarni Norvegiyaga yuboradi.",
+   "Laert va Poloniy Ofeliyaga Hamletning sevgisiga ishonmaslikni tayinlaydilar.",
+   "Hamlet tunda arvoh bilan uchrashib, otasining zaharlab o‘ldirilganini bilib oladi.",
+   "Hamlet arvohni ko‘rgani haqida hech kimga aytmaslikka do‘stlariga qasamyod qildiradi.",
+   "Hamlet dushmanni chalg‘itish uchun o‘zini jinnilikka solishga qaror qiladi.",
+   "Poloniy va qirol Hamletning jinniligi muhabbatdan deb o‘ylab, uni poylashadi.",
+   "Saroyga aktyorlar guruhi keladi va Hamlet pyesa sahnalashtirishni so‘raydi.",
+   "Aktyorlar otasining o‘limiga o‘xshash sahna ijro etganda Klavdiy chidamay ketib qoladi.",
+   "Hamlet amakisining aybdor ekanligiga to‘liq ishonch hosil qiladi.",
+   "Hamlet onasining xonasida gilam ortida berkinib turgan Poloniyni kalamush deb o‘ylab o‘ldiradi.",
+   "Klavdiy Hamletni Angliyaga qatl ettirish uchun maxfiy maktub bilan yuboradi.",
+   "Hamlet maktubni almashib, o‘zi Daniyaga qaytadi, hamrohlari esa qatlga hukm qilinadi.",
+   "Ofeliya otasining o‘limi va ayriliq sabab aqldan ozib, daryoga cho‘kib o‘ladi.",
+   "Fransiyadan qaytgan Laert otasi va singlisi uchun qasos olishga jazm qiladi.",
+   "Klavdiy va Laert Hamletga qarshi zaharli qilich va zaharli sharob fitnasini tuzishadi.",
+   "Qabristonda Ofeliyaning dafn marosimida Hamlet va Laert yoqalashib qolishadi.",
+   "Sahnada qilichbozlik musobaqasi boshlanadi va malika Gertruda zaharli sharobni ichib qo‘yadi.",
+   "Laert va Hamlet zaharli qilich bilan bir-birlarini yaralaydilar.",
+   "Hamlet Klavdiylikni zaharli qilich va sharob bilan o‘ldiradi, o‘zi ham halok bo‘ladi."
+  ],
+  "quotes": [
+   "Zamonlarni ulagan iplar uzildi.",
+   "Onam, onam, u xotin... yorab, ilohim, Onssiz hayvon er uchun shuncha shoshilmas...",
+   "Odamlar taniladi ust-boshi bilan...",
+   "Daniya davlatiga bir balo yuqqan.",
+   "Mening faqat g‘arbi-shimoliy shamollari esgandagina jinniligim tutadi.",
+   "Chumchuq ham o‘lsa amri haq-la o‘ladi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qasr oldida yarim kechasi birinchi kim poyloqda turgan edi?",
+   "options": [
+    "A) Fransisko",
+    "B) Goratsio",
+    "C) Bernardo",
+    "D) Hamlet"
+   ],
+   "answer": "A) Fransisko"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Arvoh birinchi marta ko‘ringanda egnida nima bor edi?",
+   "options": [
+    "A) Shohona toji",
+    "B) Harbiylarning sovut-anjomi",
+    "C) Qora kiyim",
+    "D) Oltin zanjir"
+   ],
+   "answer": "B) Harbiylarning sovut-anjomi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Klavdiy marhum og‘asining xotiniga uylanganini qayerda e'lon qildi?",
+   "options": [
+    "A) Ibodatxonada",
+    "B) Qasrda qabulxona zalida",
+    "C) Maydonda",
+    "D) Qabristonda"
+   ],
+   "answer": "B) Qasrda qabulxona zalida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Poloniy o‘g‘li Laertga safarga chiqish oldidan nima berdi?",
+   "options": [
+    "A) Qilich va sovut",
+    "B) O‘git va nasihat",
+    "C) Ot va xizmatkor",
+    "D) Tilla uzuk"
+   ],
+   "answer": "B) O‘git va nasihat"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Goratsio arvohning paydo bo‘lishini qanday sababga bog‘laydi?",
+   "options": [
+    "A) Norvegiya bilan urush xavfiga",
+    "B) Tinchlik o‘rnatilganiga",
+    "C) To‘y bo‘layotganiga",
+    "D) Qasrdagi bazmga"
+   ],
+   "answer": "A) Norvegiya bilan urush xavfiga"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hamlet nega amakisi va onasining nikohidan g‘amda edi?",
+   "options": [
+    "A) Onasi otasiga bevafo bo‘lganiga",
+    "B) Amakisi unga taxt bermaganiga",
+    "C) Vittenbergga keta olmaganiga",
+    "D) Goratsio kelganiga"
+   ],
+   "answer": "A) Onasi otasiga bevafo bo‘lganiga"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Arvoh Hamletga o‘zi haqida qanday sironi ochdi?",
+   "options": [
+    "A) Amakisi qulog‘iga zahar quyganini",
+    "B) U urushda halok bo‘lganini",
+    "C) U o‘zini o‘zi o‘ldirganini",
+    "D) Uni saroybon zaharlaganini"
+   ],
+   "answer": "A) Amakisi qulog‘iga zahar quyganini"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Poloniyning Ofeliyaga Hamlet bilan ko‘rishishni taqiqlashi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — qizining nomusini o‘yladi",
+    "B) Xato — u Hamletni yaxshi ko‘rardi",
+    "C) Noto‘g‘ri — shahzodaga qarshi chiqdi",
+    "D) Muhim emas edi"
+   ],
+   "answer": "A) To‘g‘ri — qizining nomusini o‘yladi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Hamlet «Zamonlarni ulagan iplar uzildi» deganda nimani nazarda tutgan?",
+   "options": [
+    "A) Mamlakatdagi adolatsizlik va tartibsizlikni",
+    "B) Qasrdagi chilchiroq uzilganini",
+    "C) Do‘stlik rishtalari uzilganini",
+    "D) Kemalar qatnovi to‘xtaganini"
+   ],
+   "answer": "A) Mamlakatdagi adolatsizlik va tartibsizlikni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Goratsioning arvoh bilan gaplashishini qanday ko‘rsatgan?",
+   "options": [
+    "A) Uning bilimi va mardligini ta'kidlab",
+    "B) Uning aqlsizligini ko‘rsatib",
+    "C) Uning arvohga ishonmasligini ko‘rsatib",
+    "D) Uning qochib ketganini yozib"
+   ],
+   "answer": "A) Uning bilimi va mardligini ta'kidlab"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Poloniy Parijga kelgan Reynaldoga qanday topshiriq berdi?",
+   "options": [
+    "A) Laertning xatti-harakatini surishtirishni",
+    "B) Fransiyadan kiyim sotib olishni",
+    "C) Hamletga xat eltishni",
+    "D) Parijdan uy sotib olishni"
+   ],
+   "answer": "A) Laertning xatti-harakatini surishtirishni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hamlet Poloniyni kim deb atadi?",
+   "options": [
+    "A) Baliqfurush",
+    "B) Deyli vazir",
+    "C) Zargar",
+    "D) Saroybon"
+   ],
+   "answer": "A) Baliqfurush"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saroyga kelgan aktyorlar Hamlet uchun qaysi pyesani ijro etishdi?",
+   "options": [
+    "A) Gonzagoning o‘limi",
+    "B) Yuliy Sezar",
+    "C) Qirol Lir",
+    "D) Otello"
+   ],
+   "answer": "A) Gonzagoning o‘limi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hamlet gilam ortida berkingan Poloniyni kim deb o‘yladi?",
+   "options": [
+    "A) Kalamush",
+    "B) Mushuk",
+    "C) Soqchi",
+    "D) Ayg‘oqchi"
+   ],
+   "answer": "A) Kalamush"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hamlet amakisining aybini tekshirish uchun nima rejalashtirdi?",
+   "options": [
+    "A) Aktyorlarga zaharlash sahnasini qo‘ydirdi",
+    "B) Amakisiga bevosita zahar berdi",
+    "C) Arvohni hammaning oldiga olib keldi",
+    "D) Klavdiylikni xalqqa e'lon qildi"
+   ],
+   "answer": "A) Aktyorlarga zaharlash sahnasini qo‘ydirdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Klavdiy tomoshani ko‘rgach qanday munosabat bildirdi?",
+   "options": [
+    "A) O‘rnidan turib, chiroq so‘radi",
+    "B) Aktyorlarni mukofotladi",
+    "C) Qah-qah urib kuldi",
+    "D) Hamletni quchoqladi"
+   ],
+   "answer": "A) O‘rnidan turib, chiroq so‘radi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Klavdiy nega Hamletni darhol oshkora qatl qildirmadi?",
+   "options": [
+    "A) Xalq va malika Hamletni sevgandi",
+    "B) Angliya shahzodasiga topshirmoqchi edi",
+    "C) Hamletdan qo‘rqmas edi",
+    "D) Kasalini davolatmoqchi edi"
+   ],
+   "answer": "A) Xalq va malika Hamletni sevgandi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hamlet onasi bilan suhbatda nega ikkita suratni ko‘rsatdi?",
+   "options": [
+    "A) Marhum eri va Klavdiylikni solishtirishga",
+    "B) O‘zining va Laertning suratini solishtirishga",
+    "C) Ofeliya va malikani solishtirishga",
+    "D) Saroydagi rasmlarni maqtashga"
+   ],
+   "answer": "A) Marhum eri va Klavdiylikni solishtirishga"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Hamletning o‘zini devonalikka solishi to‘g‘ri tadbir edimi?",
+   "options": [
+    "A) Ha — dushmanning e'tiborini chalg‘itdi",
+    "B) Yo‘q — haqiqatan ham jinni bo‘ldi",
+    "C) Xato — hamma undan yuz o‘girdi",
+    "D) Besamar ish edi"
+   ],
+   "answer": "A) Ha — dushmanning e'tiborini chalg‘itdi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Hamletning kalamush deb o‘ylash tasviri bilan nimani ko‘rsatgan?",
+   "options": [
+    "A) Fojiali tasodif va chalg‘ishni",
+    "B) Hamletning kalamushdan qo‘rqishini",
+    "C) Qasrdagi ifloslikni",
+    "D) Poloniyning ko‘rinishini"
+   ],
+   "answer": "A) Fojiali tasodif va chalg‘ishni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qabristonda go‘rkov Hamletga ko‘rsatgan bosh suyagi kimniki edi?",
+   "options": [
+    "A) Qiziqchi Iorikniki",
+    "B) Qadimiy qirolniki",
+    "C) Saroy vaziriniki",
+    "D) Asilzoda xonimniki"
+   ],
+   "answer": "A) Qiziqchi Iorikniki"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ofeliya qanday halok bo‘ldi?",
+   "options": [
+    "A) Suvga cho‘kib o‘ldi",
+    "B) Zaharlanib o‘ldi",
+    "C) Miltiq o‘qidan o‘ldi",
+    "D) Kasallikdan o‘ldi"
+   ],
+   "answer": "A) Suvga cho‘kib o‘ldi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Laert qilichining damiga nima surkagan edi?",
+   "options": [
+    "A) Zaharli moy",
+    "B) Qizil bo‘yoq",
+    "C) Asal",
+    "D) Suv"
+   ],
+   "answer": "A) Zaharli moy"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zaharli qadahdagi sharobni bilmasdan kim ichib qo‘ydi?",
+   "options": [
+    "A) Malika Gertruda",
+    "B) Goratsio",
+    "C) Ozrik",
+    "D) Fortinbras"
+   ],
+   "answer": "A) Malika Gertruda"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Yakuniy olishuvda qaysi voqea birinchi sodir bo‘ldi?",
+   "options": [
+    "A) Malika zaharli sharobni ichdi",
+    "B) Hamlet Klavdiylikni o‘ldirdi",
+    "C) Fortinbras kirib keldi",
+    "D) Goratsio qadahni oldi"
+   ],
+   "answer": "A) Malika zaharli sharobni ichdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Laert o‘limi oldidan nega Hamletdan kechirim so‘radi?",
+   "options": [
+    "A) Klavdiyning fitnasini tushunib yetgani uchun",
+    "B) Qilichbozlikda yutqazgani uchun",
+    "C) Onasiga achingani uchun",
+    "D) Goratsiodan qo‘rqgani uchun"
+   ],
+   "answer": "A) Klavdiyning fitnasini tushunib yetgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hamlet o‘limi oldidan Goratsyoga nega tirik qolishni tayinladi?",
+   "options": [
+    "A) Haqiqatni kelgusi avlodga aytishi uchun",
+    "B) Qasrga egalik qilishi uchun",
+    "C) Angliyaga elchi bo‘lishi uchun",
+    "D) Yangi kitob yozishi uchun"
+   ],
+   "answer": "A) Haqiqatni kelgusi avlodga aytishi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Fortinbrasning Hamletni harbiy izzat bilan dafn etishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — Hamlet mard va loyiq edi",
+    "B) Noto‘g‘ri — u shahzoda emas edi",
+    "C) Xato — u urushda qatnashmagandi",
+    "D) Ahamiyatsiz edi"
+   ],
+   "answer": "A) To‘g‘ri — Hamlet mard va loyiq edi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Klavdiyning o‘z qilmishlari oqibatida halok bo‘lishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Yovuzlik va xiyonat jazosiz qolmasligini",
+    "B) Tasodifiy omadsizlikni",
+    "C) Qilichbozlik xavfli ekanini",
+    "D) Zahar ishlatmaslik kerakligini"
+   ],
+   "answer": "A) Yovuzlik va xiyonat jazosiz qolmasligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Tinib qoldi ko‘p nodir bir yurak» deb kimni ta'riflagan?",
+   "options": [
+    "A) Uning ulug‘ va oliyjanob insonligini",
+    "B) Uning yuragi kasalligini",
+    "C) Uning do‘stini tark etganini",
+    "D) Uning zaifligini"
+   ],
+   "answer": "A) Uning ulug‘ va oliyjanob insonligini"
+  }
+ ]
+}

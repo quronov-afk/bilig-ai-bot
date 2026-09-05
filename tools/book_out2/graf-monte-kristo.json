@@ -1,0 +1,477 @@
+{
+ "title": "Graf Monte-Kristo",
+ "author": "Aleksandr Dyuma",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "sadoqat",
+   "sabot",
+   "adolat",
+   "halollik",
+   "ilm-fan",
+   "ota-onaga hurmat"
+  ],
+  "theme": "Asarning bosh g‘oyasi — adolat, sabr va mehnat insonni har qanday kulfatdan qutqara olishi, xiyonat va hasad esa baribir fosh bo‘lib, o‘z jazosini olishida aks etadi. Halol va sabrli bo‘lish, ustozni e'zozlash hamda nohaqlikka uchraganda ham iymon va ilmga suyanish ulug‘lanadi.",
+  "summary": "1815-yilda «Faraon» kemasining yosh va mohir dengizchisi Edmon Dantes Marselga qaytib keladi. Kemada vafot etgan kapitan Leklerning topshirig‘iga ko‘ra, u Elba oroliga kirib o‘tgan edi. Kema egasi janob Morrel Edmonni kapitan etib tayinlashni rejalashtiradi. Edmon o‘zining keksa otasini ko‘rishga oshiqadi hamda go‘zal Mersedes bilan to‘yga hozirlik ko‘radi. Lekin uning muvaffaqiyatiga hasad qilgan buxgalter Danglar va Mersedesga ko‘z tikkan Fernan fitna uyushtirib, Edmondni siyosiy fitnachilikda ayblaydilar.\n\nTo‘y kuni Edmon hibsqa olinadi. Qirol prokurorining yordamchisi Vilfor o‘z otasi Nuarte bilan bog‘liq sir oshkor bo‘lishidan qo‘rqib, mutlaqo begunoh Dantesni dahshatli If qal'asiga umrbod qamaydi. Zindonda o‘tgan yillarda Dantes dahshatli tushkunlikka tushadi. Keyinchalik u qo‘shni kameradagi dono va ilmli dindor abbat Faria bilan tanishadi. Abbat Edmondga ilm, tillar va falsafani o‘rgatadi, unga xiyonat qilgan kishilarning qilmishlarini mantiqan ochib beradi va o‘limi oldidan Monte-Kristo orolidagi pinhona xazinaning siri haqida aytadi.\n\nAbbat vafot etgach, Edmon uning murdasi solingan qopga kirib olib, qamoqdan qochadi. U dengizdan omon chiqib, kontrabandachilar yordamida Monte-Kristo oroliga yetib boradi va cheksiz xazinani topadi. Endi u «Graf Monte-Kristo» nomi bilan jamiyatga qaytadi. Graf o‘ziga ezgulik qilgan kishilarga — xususan, inqirozga uchragan armator Morrel va uning oilasiga saxiylik bilan yordam berib, ularni halokatdan qutqaradi. Shu bilan birga, unga xiyonat qilgan va begunoh qamatgan barcha kimsalarni adolatli jazo bilan yuzlashtiradi. Yakunda u Maksimilian Morrel va Valentina de Vilforning baxtini ta'minlab, ezgulik va adolat tantanasini qaror toptiradi.",
+  "characters": "Edmon Dantes (Graf Monte-Kristo) — halol, mard va sabrli dengizchi, so‘ngra ilmli va adolatli graf. Abbat Faria — zindondagi dono va oqil murabbiy, Edmonga ilm o‘rgatgan ustoz. Keksa Dantes — Edmonning kamtar va mag‘rur otasi. Morrel — halol armator, Edmonga g‘amxo‘rlik qilgan saxovatli inson. Maksimilian Morrel — armatorning mard va sodiq o‘g‘li. Valentina de Vilfor — mehribon va fidoiy qiz.",
+  "conclusion": "Bu kitob farzandga sabr-toqat, halollik va sadoqatning naqadar muhimligini ko‘rsatadi. Asar orqali bola inson bilim va mehnat evaziga har qanday qiyinchilikni yengishi mumkinligini uqib oladi. Shuningdek, ota-onaga hurmat va ustozga sadoqat insoniy xulqning eng go‘zal namunasidir degan xulosaga keladi.",
+  "difficulty": "qiyin",
+  "mood": "sardobali, hayajonli, o‘ylantiruvchi va hikmatli",
+  "for_whom": "Sarguzasht, tarix, adolat va qahramonlik haqida o‘qishni xush ko‘radigan, qahramonlarning taqdiriga kuyinadigan o‘smirlar uchun.",
+  "events": [
+   "1. «Faraon» kemasi Marsel portiga kapitan Leklerning o‘limi haqidagi g‘amgin xabar bilan kirib keldi.",
+   "2. Armator Morrel yosh Edmon Dantesni kapitanlik lavozimiga munosib deb topdi.",
+   "3. Edmon Dantes uzoq safardan qaytgach, o‘zining keksa va kambag‘al otasi huzuriga oshiqdi.",
+   "4. Qo‘shni Kadruss Dantesning otasidan ilgari berilgan qarzini to‘liq qaytarib oldi.",
+   "5. Danglar hamda Fernan Edmonga qarshi hasad bilan xiyonatkorona fitna xati yozishdi.",
+   "6. Edmon va Mersedesning nikoh to‘yi kuni kutilmaganda soqchilar yetib kelib, Edmonni hibsga olishdi.",
+   "7. Qirol prokurori yordamchisi Vilfor o‘z manfaati uchun Dantesni sirlarni yashirishga majbur etib, If qal'asiga yubordi.",
+   "8. Dantes If qal'asining qorong‘i va zax zindonida yillar davomida tanho azob chekdi.",
+   "9. Edmon devor teshigi orqali qo‘shni kameradagi dono abbat Faria bilan tanishib oldi.",
+   "10. Abbat Faria Dantesga turli ilmlarni, xorijiy tillarni va hayot falsafasini o‘rgatdi.",
+   "11. Abbat Faria o‘limi oldidan Monte-Kristo orolidagi sirli xazina joyini Edmondga vasiyat qildi.",
+   "12. Abbat vafot etgach, Edmon murda qopiga yashirinib, dengizga uloqtirilishi evaziga qutulib qoldi.",
+   "13. Edmon dengizdan suzib chiqib, Tibulen orolida kontrabandachilar tomonidan qutqarildi.",
+   "14. Monte-Kristo oroliga yetib kelgan Dantes xarsanglar ostidan boylik bilan to‘la sandiqni topdi.",
+   "15. Edmon graf Monte-Kristo qiyofasida Marselga qaytib, Kadrussdan o‘tmish haqiqatlarini bilib oldi.",
+   "16. Inqirozga uchrab, o‘z joniga qasd qilmoqchi bo‘lgan armator Morrelga Dantes pinhona yordam berdi.",
+   "17. Morrel oilasiga «Faraon» kemasi va barcha qarzlari to‘langani haqida sovg‘a yetkazildi.",
+   "18. Graf Monte-Kristo Parij jamiyatiga kirib borib, o‘zining donoligi bilan hammada hayrat uyg‘otdi.",
+   "19. Maksimilian Morrel va Valentina de Vilfor bir-birlariga bo‘lgan pokizal muhabbatlarini saqlab qolishdi.",
+   "20. Graf Monte-Kristo barcha ezgu insonlarni mukofotlab, ularga tinch va baxtli hayot tiladi."
+  ],
+  "quotes": [
+   "– Men senga qarz bergandim, uni qaytarib berding. Yaxshi qo‘shnilar shunaqa bo‘ladi.",
+   "– Senga yordam bergan kishi bilan orang hech vaqt ochiq bo‘lmaydi, – dedi Dantes.",
+   "– Maksimilian, shuni uqib olginki, men o‘lganda ham bir baxtsiz, lekin halol, vijdoni pok inson sifatida o‘laman.",
+   "– Biz tinchgina o‘tirishimiz, og‘zimizga mahkam bo‘lishimiz kerak, ana shunda balo-qazo bizni chetlab o‘tib ketadi.",
+   "– Eng xavfli narsa harakatsizlik, hafsalasizlik. Tinmay mashq qilib kuchingizga kuch qo‘shing."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Faraon» kemasining marhum kapitani kim edi?",
+   "options": [
+    "A) Kapitan Lekler",
+    "B) Kapitan Dantes",
+    "C) Kapitan Morrel",
+    "D) Kapitan Danglar"
+   ],
+   "answer": "A) Kapitan Lekler"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Edmon Dantes otasining uyida kimni uchratdi?",
+   "options": [
+    "A) Qo‘shnisi Kadrussni",
+    "B) Buxgalter Danglarni",
+    "C) Prokuror Vilforni",
+    "D) Do‘sti Fernanni"
+   ],
+   "answer": "A) Qo‘shnisi Kadrussni"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Edmon Elbaga kimning topshirig‘i bilan bordi?",
+   "options": [
+    "A) Kapitan Leklerning topshirig‘i bilan",
+    "B) Armator Morrelning buyrug‘i bilan",
+    "C) Buxgalter Danglarning taklifi bilan",
+    "D) Otasining iltimosi bilan"
+   ],
+   "answer": "A) Kapitan Leklerning topshirig‘i bilan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Edmon Dantes qaysi shahardan Marselga suzib keldi?",
+   "options": [
+    "A) Smirnadan",
+    "B) Parijdan",
+    "C) Rimdan",
+    "D) Neapoldan"
+   ],
+   "answer": "A) Smirnadan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dantes kemadan tushgach, avval qayerga bordi?",
+   "options": [
+    "A) Otasining huzuriga bordi",
+    "B) Katalaniga Mersedes oldiga bordi",
+    "C) Morrelning uyiga mehmonlikka bordi",
+    "D) Qovoqxonaga ovqatlangani bordi"
+   ],
+   "answer": "A) Otasining huzuriga bordi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Danglar nega Dantesga nafrat bilan qarardi?",
+   "options": [
+    "A) Uning o‘rniga hasad qilgani uchun",
+    "B) Dantes xato ish qilgani uchun",
+    "C) Dantes pulini o‘g‘irlagani uchun",
+    "D) Dantes uni xaqorat qilgani uchun"
+   ],
+   "answer": "A) Uning o‘rniga hasad qilgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dantes nega Elbaga tushganini birdan aytdi?",
+   "options": [
+    "A) U halol va sodda bo‘lgani uchun",
+    "B) Qonunni buzishni xohlagani uchun",
+    "C) Morreldan qo‘rqqani uchun",
+    "D) Danglarga maqtanmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) U halol va sodda bo‘lgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dantesning otasiga yordam bergani qanday xatti-harakat?",
+   "options": [
+    "A) Ota-onaga g‘amxo‘rlik va hurmat",
+    "B) O‘zini ko‘rsatish va maqlanish",
+    "C) Manfaatparastlik va hisob-kitob",
+    "D) Majburiyatdan qutilish yo‘li"
+   ],
+   "answer": "A) Ota-onaga g‘amxo‘rlik va hurmat"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Dantesning yuzidagi xotirjamlikni nimaga bog‘laydi?",
+   "options": [
+    "A) Xavf-xatarga odatlangani bilan",
+    "B) Kibrli va manqurtligiga",
+    "C) Befarq va loqaydligiga",
+    "D) Yoshi va tajribasizligiga"
+   ],
+   "answer": "A) Xavf-xatarga odatlangani bilan"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Morrel Dantesga qaysi lavozimni va'da qildi?",
+   "options": [
+    "A) «Faraon» kemasi kapitanligini",
+    "B) Bosh buxgalterlik vazifasini",
+    "C) Port nazoratchisi lavozimini",
+    "D) Kema soqchisi vazifasini"
+   ],
+   "answer": "A) «Faraon» kemasi kapitanligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dantes If qal'asida kim bilan do‘stlashdi?",
+   "options": [
+    "A) Abbat Faria bilan",
+    "B) Turma komendanti bilan",
+    "C) Qamoqxona nazoratchisi bilan",
+    "D) Asir bo‘lgan kontrabandachi bilan"
+   ],
+   "answer": "A) Abbat Faria bilan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abbat Faria Dantesga nimaning siri haqida aytdi?",
+   "options": [
+    "A) Monte-Kristo orolidagi xazina",
+    "B) Qirol saroyidagi boyliklar",
+    "C) Dengiz ostidagi kema xazinasi",
+    "D) Parij bankidagi oltinlar"
+   ],
+   "answer": "A) Monte-Kristo orolidagi xazina"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dantes If qal'asidan qanday qilib qochdi?",
+   "options": [
+    "A) Murda qopiga kirib olib",
+    "B) Soqchini qurolsizlantirib qochib",
+    "C) Zindon eshigini buzib",
+    "D) Nazoratchiga pul berib"
+   ],
+   "answer": "A) Murda qopiga kirib olib"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dantes xazinani qaysi oroldan topdi?",
+   "options": [
+    "A) Monte-Kristo orolidan",
+    "B) Elba orolidan",
+    "C) Rion orolidan",
+    "D) Tibulen orolidan"
+   ],
+   "answer": "A) Monte-Kristo orolidan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dantes qal'adan qochgach, birinchi nima qildi?",
+   "options": [
+    "A) Tibulen oroliga suzib chiqdi",
+    "B) Marsel portiga qaytib bordi",
+    "C) Otasining kulbasiga chopdi",
+    "D) Qirol prokuroriga xat yozdi"
+   ],
+   "answer": "A) Tibulen oroliga suzib chiqdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dantes nega o‘zini graf Monte-Kristo deb atadi?",
+   "options": [
+    "A) Haqiqiy qiyofasini yashirish uchun",
+    "B) Shohona unvonga qiziqqani uchun",
+    "C) Dengizchilikni unutgani uchun",
+    "D) Ismidan uyalgani uchun"
+   ],
+   "answer": "A) Haqiqiy qiyofasini yashirish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Abbat Faria nega Dantesga xazinani vasiyat qildi?",
+   "options": [
+    "A) Dantesni sodiq do‘st deb bilgani uchun",
+    "B) O‘zining qarindoshi bo‘lgani uchun",
+    "C) Xazinani yo‘qotishni xohlagani uchun",
+    "D) Zindon soqchilaridan o‘ch olgani uchun"
+   ],
+   "answer": "A) Dantesni sodiq do‘st deb bilgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Abbat Farianing Dantesga ilm o‘rgatishi qanday baholanadi?",
+   "options": [
+    "A) Ustozlik va ezgu murabbiylik",
+    "B) Bekorchi va ma'nosiz mashg‘ulot",
+    "C) Zindonda vaqt o‘tkazish usuli",
+    "D) Shaxsiy manfaatini o‘ylash"
+   ],
+   "answer": "A) Ustozlik va ezgu murabbiylik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Dantesning xazinani ko‘rgandagi holatini qanday tasvirlaydi?",
+   "options": [
+    "A) Tush yoki o‘ngligiga ishonmay",
+    "B) Qo‘rqib hamda xafa bo‘lib",
+    "C) Loqayd hamda befarq bo‘lib",
+    "D) Darhol boylikni mensimay"
+   ],
+   "answer": "A) Tush yoki o‘ngligiga ishonmay"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dantes boylikni topgach, birinchi bo‘lib kimga yordam berdi?",
+   "options": [
+    "A) Morrel va uning oilasiga",
+    "B) Qirol prokuroriga",
+    "C) Buxgalter Danglarga",
+    "D) Turma nazoratchisiga"
+   ],
+   "answer": "A) Morrel va uning oilasiga"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maksimilian Morrel kimni chin dildan sevardi?",
+   "options": [
+    "A) Valentina de Vilforni",
+    "B) Mademuazel Danglarni",
+    "C) Mersedesni",
+    "D) Luiza d'Armilini"
+   ],
+   "answer": "A) Valentina de Vilforni"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Valentina bilan Maksimilian qayerda uchrashishardi?",
+   "options": [
+    "A) Bog‘dagi taxta devor yonida",
+    "B) Katta mehmonxona zalida",
+    "C) Shahar markaziy xiyobonida",
+    "D) Kema borti ustida"
+   ],
+   "answer": "A) Bog‘dagi taxta devor yonida"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maksimilian yutib olgan puliga nima sotib oldi?",
+   "options": [
+    "A) Medea nomli otni",
+    "B) Yelisey maydonidagi uyni",
+    "C) Qimmatbaho javohirlarni",
+    "D) Kichik savdo kemasini"
+   ],
+   "answer": "A) Medea nomli otni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Valentina suhbat davomida Maksimilianga kim haqida aytdi?",
+   "options": [
+    "A) O‘z bobosi Nuarte haqida",
+    "B) Shahar hákimi haqida",
+    "C) Kema matroslari haqida",
+    "D) Parij bankirlari haqida"
+   ],
+   "answer": "A) O‘z bobosi Nuarte haqida"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Valentina nega monastirga ketish fikridan voz kechdi?",
+   "options": [
+    "A) Bobosini yolg‘iz qoldirmaslik uchun",
+    "B) Boyligini yo‘qotishdan qo‘rqib",
+    "C) O‘gay onasining tazyiqi sababli",
+    "D) Parijni yaxshi ko‘rgani uchun"
+   ],
+   "answer": "A) Bobosini yolg‘iz qoldirmaslik uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Maksimilian nega Graf Monte-Kristoga ishondi?",
+   "options": [
+    "A) Grafning ezgu ishlarini sezgani uchun",
+    "B) Graf unga ko‘p pul bergani uchun",
+    "C) Graf uning qarindoshi bo‘lgani uchun",
+    "D) Grafdan judayam qo‘rqqani uchun"
+   ],
+   "answer": "A) Grafning ezgu ishlarini sezgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Valentinaning bobosiga bo‘lgan mehri qanday xulq?",
+   "options": [
+    "A) Kattalarga g‘amxo‘rlik va hurmat",
+    "B) O‘z manfaatini o‘ylash",
+    "C) Boshqalarga taqlid qilish",
+    "D) Majburiy burch o‘tash"
+   ],
+   "answer": "A) Kattalarga g‘amxo‘rlik va hurmat"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Maksimilianning sadoqatli sevgisi qanday baholanadi?",
+   "options": [
+    "A) Va'daga vafo va yuksak odamiylik",
+    "B) Xayolparastlik va yengiltaklik",
+    "C) Xudbinlik va manmanlik",
+    "D) Yoshi kichiklik alomati"
+   ],
+   "answer": "A) Va'daga vafo va yuksak odamiylik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Valentinaning tuyg‘ularini qanday tasvirlaydi?",
+   "options": [
+    "A) Samimiy va fidoiylik bilan",
+    "B) Qahri qattiq va shafqatsiz",
+    "C) Sun'iy va soxta holda",
+    "D) G‘azab hamda nafrat bilan"
+   ],
+   "answer": "A) Samimiy va fidoiylik bilan"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Maksimilianning quvonchini qanday ko‘rsatadi?",
+   "options": [
+    "A) Samimiy hayajon va shukronalik bilan",
+    "B) Manmanlik va kibr bilan",
+    "C) Befarqlik va sovuqqonlik bilan",
+    "D) Afsus va nadomat bilan"
+   ],
+   "answer": "A) Samimiy hayajon va shukronalik bilan"
+  }
+ ]
+}

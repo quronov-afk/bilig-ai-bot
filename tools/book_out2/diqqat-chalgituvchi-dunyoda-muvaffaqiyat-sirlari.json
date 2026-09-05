@@ -1,0 +1,481 @@
+{
+ "title": "Diqqat. Chalg‘ituvchi dunyoda muvaffaqiyat sirlari",
+ "author": "Kel Nyuport",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "17-19",
+  "age_hint": "17+",
+  "topics": [
+   "diqqat va ta'sir",
+   "shaxsiy rivojlanish",
+   "vaqtni boshqarish",
+   "mehnat madaniyati",
+   "muvaffaqiyat sirlari"
+  ],
+  "theme": "Asar zamonaviy chalg‘ituvchi texnologiyalar asrida to‘liq diqqat bilan ishlash — teran mehnatning muvaffaqiyat va shaxsiy rivojlanishdagi hal qiluvchi o‘rnini ko‘rsatib beradi.",
+  "summary": "Kel Nyuportning «Diqqat. Chalg‘ituvchi dunyoda muvaffaqiyat sirlari» kitobi zamonaviy axborot jamiyatida inson diqqatining bo‘linishi va buning oqibatlari haqida atroflicha mushohada yuritadi. Kitobning kirish qismida mashhur psixiatr Karl Yungning Syurix ko‘li bo‘yida barpo etgan «Minora» uzlatxonasi misol qilib keltiriladi. Yung o‘zining ilmiy nazariyalarini yaratish va Zigmund Freyd g‘oyalariga munosib ilmiy javob berish uchun shahar shovqinidan qochib, elektr simi ham tortilmagan sokin maskanda bor diqqatini jamlab ijod qilgan. Muallif ushbu misol orqali «teran ish» (deep work) tushunchasini kiritadi. Teran ish — hech narsaga chalg‘imay, bor aqliy imkoniyatni ishga solgan holda bajariladigan, yuqori qiymat yaratuvchi faoliyatdir. Uning qarama-qarshisi esa «sayoz ish» (shallow work) bo‘lib, u aqliy zo‘riqish talab qilmaydigan, osongina almashtiriladigan va kam qiymat yaratadigan logistik mashg‘ulotdir.\n\nMuallif Jeyson Ben ismli moliyaviy maslahatchining hayotini misol qilib keltiradi. Jeyson o‘z ishining asosiy qismi dasturiy vositalar orqali avtomatlashib borayotganini ko‘rib, kompyuter dasturchisi bo‘lishga qaror qiladi. U xonasiga qamalib, barcha chalg‘ituvchi vositalarni chetga surgan holda 18 ta darslikni intensiv o‘rganib chiqadi va qisqa fursatda yetuk dasturchiga aylanadi. Bu holat axborot iqtisodiyotida teran ishlay olish mahorati tobora noyoblashib, ayni paytda eng qadrli fazilatga aylanib borayotganini isbotlaydi.\n\nKitobda teran ishning foydalari neyrologik, psixologik va falsafiy jihatdan asoslab beriladi. Sofi Leroyning «e'tibor qoldig‘i» nazariyasiga ko‘ra, bir vazifadan ikkinchisiga tez-tez o‘tish diqqatni to‘liq joyiga keltirishga yo‘l qo‘ymaydi. Shuningdek, «37signals» kompaniyasining 4 kunlik ish haftasi tajribasi hamda Radhika Nagpalning xizmat safarlarini cheklash strategiyasi orqali sayoz ishlarni qisqartirish yo‘llari ko‘rsatiladi. Baratunde Turston va Rayen Nikodem tajribalari orqali ijtimoiy tarmoqlar hamda ortiqcha vositalardan voz kechish usullari tushuntiriladi. Oxirida Bill Geytsning «Altair» kompyuteri uchun dastur yaratishdagi mislsiz diqqat jamlash mahorati keltirilib, teran hayot kechirish inson mehnatini unumdor va mazmunli qilishning asosiy kaliti ekani uqtiriladi.",
+  "characters": "Karl Yung — shveysariyalik mashhur psixiatr, teran ishlash uchun o‘rmonda uzlatxona qurgan; Jeyson Ben — moliyaviy maslahatchilikdan qisqa fursatda yetuk dasturchilikka o‘tgan izlanuvchan yosh; Baratunde Turston — ijtimoiy tarmoqlardan vaqtincha uzilib, sokin hayot ritmini kashf etgan yozuvchi; Bill Geyts — «Microsoft» asoschisi, jiddiy diqqat jamlash mahorati bilan ulkan muvaffaqiyatga erishgan tadbirkor.",
+  "conclusion": "Ushbu kitob kitobxonga zamonaviy axborot va tarmoq chalg‘ituvchilaridan holi bo‘lish, vaqtni va aqliy energiyani to‘g‘ri boshqarish ko‘nikmasini beradi. Yoshlar bu orqali yuzaki band bo‘lish va haqiqiy samaradorlik o‘rtasidagi farqni anglab yetishadi. Kitob doimiy diqqatni bir joyga jamlash, murakkab bilimlarni tez va sifatli o‘zlashtirish hamda shaxsiy hayotda ham halovat topishga yordam beradi.",
+  "difficulty": "o‘rta",
+  "mood": "jiddiy, o‘ylantiruvchi, ilhomlantiruvchi",
+  "for_whom": "O‘z vaqtini to‘g‘ri taqsimlashni, chalg‘ituvchi texnologiyalardan xalos bo‘lib, o‘qish va ishda yuqori natijalarga erishishni xohlaydigan yoshlar uchun.",
+  "events": [
+   "Karl Yung Syurix ko‘li bo‘yida Bollingen qishlog‘ida o‘zi uchun «Minora» nomli uzlatxona barpo etdi.",
+   "Yung shahardagi olatasir hayotdan uzoqlashib, bor diqqatini analitik psixologiya ta'limotiga qaratdi.",
+   "Mark Tven, Vudi Allen va J. K. Rouling kabi ijodkorlar chalg‘ituvchi vositalardan xoli muhitda barhayot asarlar yaratgani keltirildi.",
+   "Bill Geyts har yili «Tafakkur haftaligi» ajratib, o‘zini tashqi aloqalardan to‘liq ihotalashi ta'kidlandi.",
+   "Teran ish va sayoz ish o‘rtasidagi asosiy tafovutlar hamda ularning iqtisodiy qiymati tushuntirildi.",
+   "Jeyson Ben o‘z ishining avtomatlashib borayotganini anglab, kompyuter dasturchisi bo‘lishga qaror qildi.",
+   "Jeyson Ben xonasiga qamalib, kompyutersiz faqat darsliklar va rangli qalamlar bilan intensiv tahsil oldi.",
+   "Ben qisqa fursatda murakkab dasturlashni egallab, yuqori daromadli texnologik startapga ishga kirdi.",
+   "Teran ish gipotezasi ilgari surildi: diqqat bilan ishlash kabilyati tobora noyoblashib, qadri oshib bormoqda.",
+   "Neyt Silver statistik tahlil va SQL ma'lumotlar bazasi orqali murakkab bashoratlarni amalga oshirgani aytildi.",
+   "Sofi Leroy bir vazifadan ikkinchisiga o‘tganda yuzaga keladigan «e'tibor qoldig‘i» effektini tadqiq qildi.",
+   "Tom Koxran kompaniyadagi elektron xatlar hajmini hisoblab, vaqtning ko‘p qismi yuzaki muloqotga ketayotganini aniqladi.",
+   "Aqliy mehnatda «Bandlik samaradorlik mezoni sifatida» degan eskirgan qarash tahlil qilindi.",
+   "Uinifred Gallager og‘ir tashxisga qaramay, bor e'tiborini hayotning rohatbaxsh lahzalariga qaratdi.",
+   "Yog‘ochdan g‘ildirak yasovchi usta misolida hunarmandlikning ma'naviy manbai ko‘rsatib berildi.",
+   "Brayen Chappel har kuni ertalab barvaqt turib ishlash orqali dissertatsiyasini muvaffaqiyatli yozib tugatdi.",
+   "Alan Laytman va Pitr Shenkmen teran ishlash uchun «muhim qadam» strategiyasidan foydalanganlari aytildi.",
+   "Baratunde Turston 25 kun davomida ijtimoiy tarmoqlardan voz kechib, hayotning sokin ritmini his qildi.",
+   "Rayen Nikodem ortiqcha buyumlardan xalos bo‘lish uchun «qutilarga joylash» usulini qo‘lladi.",
+   "«37signals» kompaniyasi yozgi mavsumda ish soatlarini qisqartirish orqali sayoz ishlarni siqib chiqardi.",
+   "Radhika Nagpal rejalangan samaradorlik orqali xizmat safarlari va keraksiz vazifalarni chekladi.",
+   "Muallif elektron xatlarga javob berishda «jarayonmarkazli yondashuv»ni tatbiq etishni taklif qildi.",
+   "Bill Geyts va Pol Allen «Altair» uchun BASIC tilida dastur yaratishda tinimsiz va intensiv mehnat qilishdi.",
+   "Muallif Kel Nyuport o‘z tajribasida kechalari ishlamay, teran ish soatlari evaziga yuqori unumdorlikka erishganini ko‘rsatdi."
+  ],
+  "quotes": [
+   "Teran ish – hech narsaga chalg‘imasdan, bor aqliy imkoniyatni ishga solgan holda, chuqur diqqat bilan bajarilgan ishdir.",
+   "Sayoz ish: Aqliy zo‘riqish talab qilmaydigan, logistik xarakterdagi, ko‘pincha chalg‘ishlar bilan ham bajariladigan ish.",
+   "Teran mehnat shu qadar muhimki, biz uni Erik Barkerning so‘zlari bilan '21-asr gegemoni' deb atashimiz mumkin.",
+   "Miyamiz dunyoqarashimizni nimaga e'tibor berishimizga asosan shakllantiradi.",
+   "Hunarmandning vazifasi ma'no yaratish emas, balki allaqachon o‘zida mavjud bo‘lgan ma'noni anglash mahoratini sayqallashdir.",
+   "Kam sonli aniq maqsadlilar jamoasiga qo‘shilib, ko‘p sonli chalg‘iganlar toifasini tark etish – ana shu aniq o‘zgarishlar qiladigan tajribadir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karl Yung «Minora» nomli uyini qaysi qishloqda qurgan?",
+   "options": [
+    "A) Bollingen qishlog‘ida",
+    "B) Syurix shahri markazida",
+    "C) Jeneva qirg‘og‘ida",
+    "D) Parij chekkasida"
+   ],
+   "answer": "A) Bollingen qishlog‘ida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mark Tven «Tom Soyerning sarguzashtlari» asarini qayerda yozgan?",
+   "options": [
+    "A) Ferma yaqinidagi hujrada",
+    "B) Shahardagi shovqinli idorada",
+    "C) Katta kemaning palubasida",
+    "D) Kutubxonaning umumiy zalida"
+   ],
+   "answer": "A) Ferma yaqinidagi hujrada"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jeyson Ben moliya firmasida ishini yengillashtirish uchun nimadan foydalandi?",
+   "options": [
+    "A) Dasturning makroslar xususiyatidan",
+    "B) Maxsus sun'iy intellektdan",
+    "C) Yangi sotib olingan kompyuterdan",
+    "D) Yollangan yordamchi xizmatidan"
+   ],
+   "answer": "A) Dasturning makroslar xususiyatidan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jeyson Ben dasturlashni o‘rganish uchun xonasida nimalarni qoldirdi?",
+   "options": [
+    "A) Faqat darslik va qalamlarni",
+    "B) Internetga ulangan barcha vositalarni",
+    "C) Telefon va televizor apparatini",
+    "D) Kompyuter va elektron jadvallarni"
+   ],
+   "answer": "A) Faqat darslik va qalamlarni"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif «teran ish» va «sayoz ish» tushunchalarini qanday farqlaydi?",
+   "options": [
+    "A) Teran ish aqliy diqqat talab qiladi",
+    "B) Sayoz ish ko‘proq daromad keltirishi mumkin",
+    "C) Teran ish har bir insonga mos keladi",
+    "D) Sayoz ish ancha ko‘p vaqt oladi"
+   ],
+   "answer": "A) Teran ish aqliy diqqat talab qiladi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Karl Yung nega shahar shovqinidan uzoqlashib, uzlatga chekinishga qaror qildi?",
+   "options": [
+    "A) Chuqur mushohada va yozish uchun",
+    "B) Bemorlarni davolashdan batamom bezgani uchun",
+    "C) Sayohatchilar bilan kamroq muloqot qilish uchun",
+    "D) Shaharda uy narxi qimmatligi uchun"
+   ],
+   "answer": "A) Chuqur mushohada va yozish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jeyson Ben nega moliyaviy maslahatchilik ishidan bo‘shashga qaror qildi?",
+   "options": [
+    "A) Ishi avtomatlashib, qadri tushganini angladi",
+    "B) Boshliqlari bilan urishib qolgani uchun",
+    "C) Dasturchilar ko‘p dam olishini bilgani uchun",
+    "D) Firmadagilar uni ishdan bo‘shatgani uchun"
+   ],
+   "answer": "A) Ishi avtomatlashib, qadri tushganini angladi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Nil Stefensonning elektron pochta va tarmoqlardan voz kechishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, bu unga roman yozish imkonini berdi",
+    "B) Noto‘g‘ri, chunki zamondan ortda qoldi",
+    "C) Xato, chunki o‘quvchilari undan xafa bo‘ldi",
+    "D) Yomon, chunki do‘stlaridan ajralib qoldi"
+   ],
+   "answer": "A) To‘g‘ri, bu unga roman yozish imkonini berdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif teran mehnatni «21-asr gegemoni» deb ataganda nimani nazarda tutadi?",
+   "options": [
+    "A) U bugungi iqtisodiyotda hal qiluvchi kuchdir",
+    "B) U faqat olimlar uchun kerakli odatdir",
+    "C) U eskirgan va foydasiz tushunchadir",
+    "D) U hamma odamlarga bir xil tegishlidir"
+   ],
+   "answer": "A) U bugungi iqtisodiyotda hal qiluvchi kuchdir"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Diqqat bo‘lingan joyda sifatli samaraga erishib bo‘lmaydi» fikri nimani anglatadi?",
+   "options": [
+    "A) Chalg‘ish ish unumini pasaytiradi",
+    "B) Tez ishlash har doim foydalidir",
+    "C) Bir vaqtda ko‘p ish qilish yaxshidir",
+    "D) Texnologiyalar insonni dono qiladi"
+   ],
+   "answer": "A) Chalg‘ish ish unumini pasaytiradi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Neyt Silver statistik tahlillar uchun qaysi dasturiy tizimdan foydalanadi?",
+   "options": [
+    "A) «Stata» dasturiy tizimidan",
+    "B) Oddiy hisob mashinasidan",
+    "C) Tayyor matn tahrirchisidan",
+    "D) «Excel» boshlang‘ich jadvalidan"
+   ],
+   "answer": "A) «Stata» dasturiy tizimidan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sofi Leroy tadqiqotlarida diqqatning bo‘linishi haqida qanday ibora ishlatgan?",
+   "options": [
+    "A) «E'tibor qoldig‘i» effekti",
+    "B) «Miya toliqishi» qoidasi",
+    "C) «Vaqt yo‘qotilishi» xatosi",
+    "D) «Kutilmagan chalg‘ish» holati"
+   ],
+   "answer": "A) «E'tibor qoldig‘i» effekti"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uinifred Gallager og‘ir xastalikka uchragach, bor e'tiborini nimaga qaratdi?",
+   "options": [
+    "A) Hayotdagi yoqimli va rohatbaxsh lahzalarga",
+    "B) Kasalligi haqidagi tibbiy kitoblarga",
+    "C) Shifokorlar bilan mutassil bahslashishga",
+    "D) Uyda yolg‘iz o‘tirib yig‘lashga"
+   ],
+   "answer": "A) Hayotdagi yoqimli va rohatbaxsh lahzalarga"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pitr Shenkmen samolyotda uchish vaqtidan nima maqsadda foydalanardi?",
+   "options": [
+    "A) Chalg‘imay teran fikrlash uchun",
+    "B) Mazza qilib uxlab olish uchun",
+    "C) Boshqa yo‘lovchilar bilan suhbatlashishga",
+    "D) Filmlar tomosha qilib hordiq chiqarishga"
+   ],
+   "answer": "A) Chalg‘imay teran fikrlash uchun"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Brayen Chappel va Donald Knutning ishlash falsafasida qanday umumiy jihat bor?",
+   "options": [
+    "A) Ikkalasi ham teranlikni birinchi o‘ringa qo‘ygan",
+    "B) Ikkalasi ham faqat tunda ishlagan",
+    "C) Ikkalasi ham har kuni sayr qilgan",
+    "D) Ikkalasi ham kompyuterdan voz kechgan"
+   ],
+   "answer": "A) Ikkalasi ham teranlikni birinchi o‘ringa qo‘ygan"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Hunarmandning g‘ildirak yasashi va teran ish o‘rtasida qanday o‘xshashlik bor?",
+   "options": [
+    "A) Har ikkisi ham ishda chuqur ma'no topadi",
+    "B) Har ikkisi ham jismoniy kuch talab qiladi",
+    "C) Har ikkisi ham ko‘p mablag‘ keltirmaydi",
+    "D) Har ikkisi ham tezda tugallanadi"
+   ],
+   "answer": "A) Har ikkisi ham ishda chuqur ma'no topadi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sofi Leroy fikricha, bir vazifadan ikkinchisiga tez-tez o‘tish nimaga olib keladi?",
+   "options": [
+    "A) Diqqat ikkinchi vazifaga to‘liq o‘tmaydi",
+    "B) Ishning unumdorligi birdan keskin ortadi",
+    "C) Inson tezda yangi bilimlarni egallaydi",
+    "D) Vazifalar bir-biriga xalaqit bermaydi"
+   ],
+   "answer": "A) Diqqat ikkinchi vazifaga to‘liq o‘tmaydi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Aqliy mehnatda «bandlik» nega har doim samaradorlikni anglatmaydi?",
+   "options": [
+    "A) Zohiriy bandlik sifatli natija bermaydi",
+    "B) Band odamlar har doim ko‘p uqlaydi",
+    "C) Ko‘p ishlash doimo muvaffaqiyat keltirmaydi",
+    "D) Bandlik faqat zavod va fabrikalarga xos"
+   ],
+   "answer": "A) Zohiriy bandlik sifatli natija bermaydi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Brayen Chappelning har tong barvaqt turib ishlash usulini qanday baholaysiz?",
+   "options": [
+    "A) Oqilona, chunki bu doimiy natija beradi",
+    "B) Noto‘g‘ri, chunki inson salomatligiga zarar",
+    "C) Befoyda, chunki kun davomida toliqadi",
+    "D) Xato, chunki tunda ishlash samaraliroq"
+   ],
+   "answer": "A) Oqilona, chunki bu doimiy natija beradi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Endi Grovning «nima qilish» emas, «qay yo‘sinda qilish»ga urg‘u bergani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, chunki ijro strategiyadan muhimroq",
+    "B) Noto‘g‘ri, chunki faqat g‘oya muhim",
+    "C) Xato, chunki rejaga ehtiyoj yo‘q",
+    "D) Yomon, chunki bu vaqtni yo‘qotadi"
+   ],
+   "answer": "A) To‘g‘ri, chunki ijro strategiyadan muhimroq"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Baratunde Turston ijtimoiy tarmoqlardan vaqtincha uzilgach, o‘ziga nima sotib oldi?",
+   "options": [
+    "A) Yangi velosiped sotib oldi",
+    "B) Zamonaviy kompyuter xarid qildi",
+    "C) Uyiga yangi televizor qo‘ydi",
+    "D) Katta kutubxona barpo etdi"
+   ],
+   "answer": "A) Yangi velosiped sotib oldi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rayen Nikodem ortiqcha buyumlardan xalos bo‘lish uchun qanday usul qo‘lladi?",
+   "options": [
+    "A) Hammasini qutilarga joylab chiqdi",
+    "B) Barini qo‘shnilariga tarqatib yubordi",
+    "C) Uyidagi hamma narsani yoqib yubordi",
+    "D) Narsalarini ko‘chaga chiqarib sotdi"
+   ],
+   "answer": "A) Hammasini qutilarga joylab chiqdi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«37signals» kompaniyasi asoschisi Jeyson Frayd ish vaqtini qisqartirishdan nima kutgan?",
+   "options": [
+    "A) Sayoz ishlarning siqib chiqarilishini",
+    "B) Xodimlarning maoshini kamaytirishni",
+    "C) Mijozlar sonining ko‘payishini",
+    "D) Yangi ofisga ko‘chib o‘tishni"
+   ],
+   "answer": "A) Sayoz ishlarning siqib chiqarilishini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bill Geyts va Pol Allen «Altair» kompyuteri uchun qaysi dasturlash tilini yaratdi?",
+   "options": [
+    "A) BASIC dasturlash tilini",
+    "B) Python zamonaviy tilini",
+    "C) C++ mukammal tilini",
+    "D) Pascal sodda tilini"
+   ],
+   "answer": "A) BASIC dasturlash tilini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif elektron xatlarga «jarayonmarkazli» javob berish orqali nimaga erishishni taklif etadi?",
+   "options": [
+    "A) Yozishmalar sonini keskin kamaytirishga",
+    "B) Boshqalarga doimo xat yuborib turishga",
+    "C) Xatga tezda javob qaytarishga",
+    "D) Pochta qutisini doimiy to‘ldirishga"
+   ],
+   "answer": "A) Yozishmalar sonini keskin kamaytirishga"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Baratunde Turstonning tarmoqlardan uzilishi uning hayotiga qanday ta'sir ko‘rsatdi?",
+   "options": [
+    "A) Hayotining sokin ritmini his qildi",
+    "B) Do‘stlarining hammasi undan yuz o‘girdi",
+    "C) Biznesidagi barcha hamkorlarini yo‘qotdi",
+    "D) Zerikishdan ruhiy tushkunlikka tushdi"
+   ],
+   "answer": "A) Hayotining sokin ritmini his qildi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Radhika Nagpal nega xizmat safarlari va taqrizlar sonini cheklab qo‘ydi?",
+   "options": [
+    "A) Teran ilmiy faoliyatga vaqt ajratishga",
+    "B) Universitet unga kam maosh bergani uchun",
+    "C) Sog‘lig‘i birdaniga yomonlashgani sababli",
+    "D) Boshqa mamlakatlarga borishni yoqtirmagani uchun"
+   ],
+   "answer": "A) Teran ilmiy faoliyatga vaqt ajratishga"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ish kunining har bir daqiqasini avvaldan rejalashtirish to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, bu sayoz ishlardan saqlaydi",
+    "B) Noto‘g‘ri, bu insonni erkinlikdan mahrum etadi",
+    "C) Xato, chunki rejalar baribir buziladi",
+    "D) Yomon, chunki miya tezda charchaydi"
+   ],
+   "answer": "A) To‘g‘ri, bu sayoz ishlardan saqlaydi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Bill Geytsning muvaffaqiyati haqida gapirganda qaysi hislatini alohida ta'kidlaydi?",
+   "options": [
+    "A) Hadsi-hisobsiz teran ishlay olishini",
+    "B) Odamlar bilan tez do‘stlashishini",
+    "C) Tarmoqlarda faol post qoldirishini",
+    "D) Pulni tejab ishlatish mahoratini"
+   ],
+   "answer": "A) Hadsi-hisobsiz teran ishlay olishini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Kam sonli aniq maqsadlilar jamoasiga qo‘shiling» da'vati nimaning belgisi?",
+   "options": [
+    "A) Chalg‘ituvchi dunyoda teran mehnatni tanlash",
+    "B) Ko‘pchilik qilayotgan har bir ishni takrorlash",
+    "C) Jamiyatdan butunlay ajralib yolg‘iz yashash",
+    "D) Barcha texnologiyalardan umrbod voz kechish"
+   ],
+   "answer": "A) Chalg‘ituvchi dunyoda teran mehnatni tanlash"
+  }
+ ]
+}

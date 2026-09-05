@@ -1,0 +1,477 @@
+{
+ "title": "Ego — dushmaning",
+ "author": "Rayan Holidey",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "17-19",
+  "age_hint": "17+",
+  "topics": [
+   "kamtarlik",
+   "shaxsiy rivojlanish",
+   "nafs bilan kurash",
+   "stoitsizm",
+   "muvaffaqiyat"
+  ],
+  "theme": "Asar insonning eng katta dushmani uning o‘z egosi (nosog‘lom kibri va manmanligi) ekanini ko‘rsatib, hayotning har bir bosqichida — intilish, muvaffaqiyat hamda omadsizlikda kamtarlik, intizom va sovuqqonlik orqali o‘zini boshqarishga chorlaydi.",
+  "summary": "Asar muallifning shaxsiy hayotidagi yuksalish va inqiroz tajribalari hamda mashhur tarixiy shaxslar hayotidan olingan saboqlar asosida qurilgan. Kitob kirish qismida ego — insonning o‘z ahamiyati haqidagi nosog‘lom va oshirilgan ishonchi deb ta'riflanadi. Asar uch asosiy qismga bo‘lingan: 'Harakat', 'Muvaffaqiyat' va 'Omadsizlik'. Birchinchi qismda (Harakat) endigina yo‘lga chiqqan inson uchun kibru havo va quruq ehtiros eng katta g‘ov ekani ko‘rsatiladi. Jon Boyd, Sherman va Kirk Hammet misolida shon-shuhrat ortidan quvmay, doim o‘quvchi bo‘lib qolish, mashaqqatli mehnat qilish hamda 'xolst strategiyasi' (boshqalarga yordam berish orqali o‘sish) muhimligi uqtiriladi. Ikkinchi qismda (Muvaffaqiyat) cho‘qqiga erishganda kibrga berilmaslik, 'men qoidalardan ustunman' degan xomxayolga bormaslik zarurligi ta'kidlanadi. Bill Uolsh, Angela Merkel va Jorj Marshall misollarida kamtarona yetakchilik, o‘z yo‘lidan (evtyumiya) chalg‘imaslik va natijaga e'tibor berish lozimligi tushuntiriladi. Uchinchi qismda (Omadsizlik) qiyinchilik yoki mag‘lubiyatga uchraganda egoga berilib nafrat saqlamaslik, g‘ururni sindirib xatolardan xolis saboq chiqarish zarurligi uqtiriladi. Velisariy va Tom Breydi misolida o‘z burchiga sodiq qolish va o‘z ustida ishlash hayotiy qoida ekani ko‘rsatiladi. Epilogda muallif ego bilan kurashish har kuni polni supurish dek uzluksiz jarayon ekani haqidagi xulosaga keladi.",
+  "characters": "Rayan Holidey — kitob muallifi, o‘z tajribasi va tarixiy misollar orqali ego ta'sirini tahlil qiladi.\nJon Boyd — Pentagonda ishlagan harbiy strateg, shon-shuhrat va unvondan ko‘ra haqiqiy natijani ustun qo‘ygan shaxs.\nJorj Marshall — amerikalik general, shaxsiy manfaat va e'tirofdan ko‘ra umumiy maqsadni ustun qo‘yib, qo‘mondonlikni boshqaga topshirgan.\nVelisariy — Vizantiya sarkardasi, imperatorning adolatsizliklariga qaramay o‘z burchiga va eliga sodiq qolgan kamtar inson.\nAngela Merkel — Germaniya kansleri, shovqinsiz, vazmin va ehtiyotkor qarorlari bilan muvaffaqiyatga erishgan rahbar.",
+  "conclusion": "Bu kitob kitobxonga kibru havo va manmanlik ortidagi xavflarni ko‘rsatib, har qanday vaziyatda kamtarlik, burchga sodiqlik va sovuqqonlikni saqlashni o‘rgatadi. U hayotiy muvaffaqiyat hamda mag‘lubiyatlarda o‘z 'men'ini jilovlash, uzluksiz o‘rganish va mas'uliyatni o‘z zimmasiga olish ruhiyatini shakllantiradi. Ota-onalar uchun bu kitob farzandlarida to‘g‘ri hayotiy qadriyatlar va ma'naviy intizomni tarbiyalashda eng yaxshi qo‘llanma bo‘lib xizmat qiladi.",
+  "difficulty": "qiyin",
+  "mood": "jiddiy, o‘ylantiruvchi, falsafiy",
+  "for_whom": "Shaxsiy rivojlanish, yetakchilik va falsafa bilan qiziqadigan, o‘z maqsadlariga erishishda kibru havoni yengib, intizomli bo‘lishni xohlaydigan yoshlarga.",
+  "events": [
+   "Muallif o‘zining 19 yoshida erishgan omadi va keyinchalik duch kelgan moliyaviy hamda ruhiy inqirozlarini so‘zlab beradi.",
+   "Ego — insonning o‘z ahamiyati haqidagi nosog‘lom va oshirilgan ishonchi deb ta'riflanadi.",
+   "Hayot uch bosqichdan iborat ekani ko‘rsatiladi: harakat, muvaffaqiyat va omadsizlik.",
+   "Harakat bosqichida manmanlik va quruq ehtiros o‘rniga sovuqqonlik va aniq maqsad kerakligi ta'kidlanadi.",
+   "Jon Boyd misolida shaxsiy martaba va shon-shuhratdan ko‘ra buyuk ishlarni qilish muhimligi uqtiriladi.",
+   "Kirk Hammet va Frank Shemrok misolida har doim o‘quvchi bo‘lib qolish hamda ustoz va teng raqiblar bilan ishlashning zarurligi tushuntiriladi.",
+   "Xolst strategiyasi — boshqalarning rivojlanishiga imkon yaratish orqali o‘z kelajagini qurish usuli sifatida ko‘rsatiladi.",
+   "Balandparvoz xayollarga berilish insonni real harakat qilishdan chalg‘itishi ta'kidlanadi.",
+   "Chingizxon va Rokfeller misolida g‘urur hamda kibrni erta o‘ldirish zarurligi uqtiriladi.",
+   "Muvaffaqiyat bosqichida ego insonni 'men qoidalardan ustunman' degan yanglish fikrga yetaklashi aytiladi.",
+   "Bill Uolsh jamoada natijadan ko‘ra faoliyat standartlari va intizom muhimligini isbotlagani keltiriladi.",
+   "Senekaning 'evtyumiya' tushunchasi orqali boshqalarga chalg‘imay, o‘z yo‘lidan borish tinchlik keltirishi tushuntiriladi.",
+   "Eyzenxauer misolida to‘g‘ri va tartibli tizim yaratish va vakolatlarni bo‘lishish muhimligi ko‘rsatiladi.",
+   "Jon Delorean va Govard Xyuz kabi shaxslarning kibri sababli inqirozga uchragani bayon qilinadi.",
+   "Jorj Marshall shaxsiy shon-shuhratdan ko‘ra jamiyat va davlat manfaatini ustun qo‘ygani ta'riflanadi.",
+   "Angela Merkelning shovqin-suronsiz, vazmin va intizomli yetakchilik uslubi e'tirof etiladi.",
+   "Omadsizlik bosqichida adolatsizliklarga duch kelganda ham Velisariy kabi o‘z burchiga sodiq qolish lozimligi ta'kidlanadi.",
+   "Nafrat va g‘azab insonning o‘zini yemiruvchi achchiq kislota ekani Martin Lyuter King so‘zlari bilan uqtiriladi.",
+   "Tom Breydi va 'Patriots' jamoasi misolida har doim o‘z xatolarini xolis tahlil qilib borish zarurligi ko‘rsatiladi.",
+   "Epilogda ego bilan kurashish har kuni polni supurishdek uzluksiz jarayon ekani uqtiriladi."
+  ],
+  "quotes": [
+   "O‘zingni ahmoq qilma. Bu esa eng osoni.",
+   "Qayerda bo‘lmang, nima qilmang, eng yomon dushmaningiz ichingizda yashaydi: bu sizning egoyingiz.",
+   "Anglash jasoratning boshlanishidir, mardlik uning tugallanishi.",
+   "Havoyi nafs bizni ortga tortsa, qadriyatlar bizni oldinga itaradi.",
+   "Agar g‘ururingizni yengmasangiz, qo‘mondonlik qila olmaysiz.",
+   "Nafrat – bu yuk, sevgi esa ozodlikdir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif ta'rificha, ego nima?",
+   "options": [
+    "A) O‘zining nosog‘lom va oshirilgan kibri",
+    "B) Odamning tabiatga bo‘lgan sevgisi",
+    "C) Kelajakka tuzilgan aniq reja",
+    "D) Boshqalarga yordam berish istagi"
+   ],
+   "answer": "A) O‘zining nosog‘lom va oshirilgan kibri"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "\"Xolst strategiyasi\" nimaga asoslangan?",
+   "options": [
+    "A) Boshqalarga yordam berish orqali rivojlanishga",
+    "B) Barcha pulni bir joyga tikishga",
+    "C) Faqat shaxsiy manfaatlarni ko‘zlashga",
+    "D) Mashhur bo‘lish uchun harakat qilishga"
+   ],
+   "answer": "A) Boshqalarga yordam berish orqali rivojlanishga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jon Boyd yosh harbiylarga nima qilishni maslahat berar edi?",
+   "options": [
+    "A) Buyuk ish qilishni tanlashni",
+    "B) Katta pul topishni",
+    "C) Yuqori unvonlar olishni",
+    "D) Shon-shuhrat ortidan quvishni"
+   ],
+   "answer": "A) Buyuk ish qilishni tanlashni"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Frank Shemrok jangchilarga qanday tizimni taklif qilgan?",
+   "options": [
+    "A) Plyus, minus va barobar tizimini",
+    "B) Faqat kuchlilar bilan olishishni",
+    "C) Zaiflarga doim yordam berishni",
+    "D) Chempionlik unvonini ketma-ket yutishni"
+   ],
+   "answer": "A) Plyus, minus va barobar tizimini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar bo‘yicha, inson bosib o‘tadigan uch bosqichni ajrating.",
+   "options": [
+    "A) Harakat, muvaffaqiyat va omadsizlik",
+    "B) Bolalik, yoshlik va qarilik",
+    "C) O‘qish, ishlash va dam olish",
+    "D) Qiyinchilik, boylik va erkinlik"
+   ],
+   "answer": "A) Harakat, muvaffaqiyat va omadsizlik"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif nega ishtiyoqni paradoks deb ataydi?",
+   "options": [
+    "A) Band bo‘lib hech narsaga erishmagani uchun",
+    "B) U insonga ko‘p kuch bergani uchun",
+    "C) U tezda tugab qolgani uchun",
+    "D) Barcha odamlarda uchragani uchun"
+   ],
+   "answer": "A) Band bo‘lib hech narsaga erishmagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega doim o‘quvchi bo‘lib qolish muhim?",
+   "options": [
+    "A) Bilimga da'vo kibrga olib keladi",
+    "B) Imtihonlardan o‘tish osonroq bo‘ladi",
+    "C) Ustozlar maqtoviga sazovor bo‘lish uchun",
+    "D) Boshqalarga aql o‘rgatish imkoni beradi"
+   ],
+   "answer": "A) Bilimga da'vo kibrga olib keladi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Maqsad sari sokin harakat qilish — to‘g‘rimi?",
+   "options": [
+    "A) Ha, kibrga berilmay natijaga erishiladi",
+    "B) Yo‘q, darhol jar solish kerak",
+    "C) Yo‘q, bu sustkashlikning belgisidir",
+    "D) Ha, chunki mehnat qilish shart emas"
+   ],
+   "answer": "A) Ha, kibrga berilmay natijaga erishiladi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Demosfenning \"Anglash jasoratning boshlanishidir\" degan jumlasi nimani anglatadi?",
+   "options": [
+    "A) O‘z xatosini tushunish o‘zgarishga yo‘l",
+    "B) Inson har doim haqligini bilishi",
+    "C) Qo‘rqmasdan jangga kirish zarurligi",
+    "D) So‘zlash mahoratining yuqoriligi"
+   ],
+   "answer": "A) O‘z xatosini tushunish o‘zgarishga yo‘l"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Richard Faynman so‘zi bilan nimani uqtirmoqchi?",
+   "options": [
+    "A) O‘zini aldamaslik eng muhim qoidadir",
+    "B) Ilm bilan shug‘ullanish qiyin emas",
+    "C) Hamma odamlar bir xil fikrlaydi",
+    "D) Ahmoqlikni yengish imkonsizdir"
+   ],
+   "answer": "A) O‘zini aldamaslik eng muhim qoidadir"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bill Uolsh jamoada birinchi navbatda nimani yo‘lga qo‘ydi?",
+   "options": [
+    "A) Aniq faoliyat standartlarini",
+    "B) Yuqori oylik maoshlarni",
+    "C) Cheksiz erkinlik tizimini",
+    "D) Mashhur o‘yinchilar safdorligini"
+   ],
+   "answer": "A) Aniq faoliyat standartlarini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Seneka tilga olgan \"evtyumiya\" tushunchasi nimani anglatadi?",
+   "options": [
+    "A) O‘z yo‘lini his qilib borishni",
+    "B) Dushman ustidan g‘alaba qozonishni",
+    "C) Katta boylik to‘plashni",
+    "D) Doimiy ravishda sayohat qilishni"
+   ],
+   "answer": "A) O‘z yo‘lini his qilib borishni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Prezident Eyzenxauer rahbarlikda nimaga alohida e'tibor berdi?",
+   "options": [
+    "A) Vazifalarni to‘g‘ri taqsimlashga",
+    "B) Hamma xatlarni shaxsan o‘qishga",
+    "C) Xodimlarni doimiy nazorat qilishga",
+    "D) Matbuotda tez-tez chiqish qilishga"
+   ],
+   "answer": "A) Vazifalarni to‘g‘ri taqsimlashga"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Angela Merkelning yetakchilik uslubi qanday edi?",
+   "options": [
+    "A) Sokin, ehtiyotkor va intizomli",
+    "B) Agressiv va shovqinli",
+    "C) Qat'iyatsiz va qo‘rqoq",
+    "D) Faqat va'dalar berishga asoslangan"
+   ],
+   "answer": "A) Sokin, ehtiyotkor va intizomli"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jorj Marshall shaxsiy manfaati va burch o‘rtasida qanday yo‘l tutdi?",
+   "options": [
+    "A) Shaxsiy shon-shuhratni burchga qurbon qildi",
+    "B) Yuqori lavozimni talab qilib oldi",
+    "C) Urushga borishdan butunlay voz kechdi",
+    "D) Faqat shaxsiy obro‘sini o‘yladi"
+   ],
+   "answer": "A) Shaxsiy shon-shuhratni burchga qurbon qildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kibrga berilgan rahbarlar va kamtar rahbarlar farqi nimada?",
+   "options": [
+    "A) Kamtarlar ishga, kibrlilar maqtovga intiladi",
+    "B) Kibrlilar ko‘proq g‘alabaga erishadi",
+    "C) Kamtarlar doim omadsizlikka uchraydi",
+    "D) Ularning o‘rtasida hech qanday farq yo‘q"
+   ],
+   "answer": "A) Kamtarlar ishga, kibrlilar maqtovga intiladi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega cho‘qqiga chiqqanda o‘rganishni to‘xtatmaslik kerak?",
+   "options": [
+    "A) Barchasini bilaman deyish inqirozga elatadi",
+    "B) Ustozlar xafa bo‘lishi mumkin",
+    "C) Yangi lavozim berilmay qoladi",
+    "D) Raqiblar ustidan kulmasligi uchun"
+   ],
+   "answer": "A) Barchasini bilaman deyish inqirozga elatadi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jon Delorean kompaniyasining qulashiga nima sabab bo‘ldi?",
+   "options": [
+    "A) Rahbarning kibri va tartibsizligi",
+    "B) Mablag‘ yetishmovchiligi va urush",
+    "C) Xodimlarning ish tashlashi",
+    "D) Avtomobillarning xaridorsiz qolgani"
+   ],
+   "answer": "A) Rahbarning kibri va tartibsizligi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bill Uolshning g‘alabadan ko‘ra tartibga e'tibor qaratishi to‘g‘rimi?",
+   "options": [
+    "A) Ha, to‘g‘ri intizom natijani keltiradi",
+    "B) Yo‘q, faqat g‘alaba muhim",
+    "C) Yo‘q, tartib o‘yinni buzadi",
+    "D) Ha, chunki g‘alaba kerak emas"
+   ],
+   "answer": "A) Ha, to‘g‘ri intizom natijani keltiradi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "\"Havoyi nafs ortga tortsa, qadriyatlar oldinga itaradi\" iborasi nimani anglatadi?",
+   "options": [
+    "A) Qadriyat insonga to‘g‘ri yo‘nalish beradi",
+    "B) Nafs har doim insonga yordam beradi",
+    "C) Qadriyatlar insonni to‘xtatib qoladi",
+    "D) Nafs va qadriyat bir xil narsadir"
+   ],
+   "answer": "A) Qadriyat insonga to‘g‘ri yo‘nalish beradi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Vizantiya sarkardasi Velisariy adolatsizlikka qanday javob qaytardi?",
+   "options": [
+    "A) Sadoqat va burchini bajarishda davom etdi",
+    "B) Imperatorga qarshi isyon ko‘tardi",
+    "C) Boshqa davlatga qochib ketdi",
+    "D) Barcha unvonlaridan voz kechib berindi"
+   ],
+   "answer": "A) Sadoqat va burchini bajarishda davom etdi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Martin Lyuter King nafrat haqida nima degan?",
+   "options": [
+    "A) Nafrat insonni zaiflashtiruvchi og‘ir yukdir",
+    "B) Nafrat insonga kuch va quvvat beradi",
+    "C) Nafrat dushmanni yengishning yagona yo‘li",
+    "D) Nafrat hayotni go‘zallashtiradigan tuyg‘u"
+   ],
+   "answer": "A) Nafrat insonni zaiflashtiruvchi og‘ir yukdir"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "\"New England Patriots\" jamoasi Tom Breydi masalasida nimani tahlil qildi?",
+   "options": [
+    "A) Iste'dodni vaqtida payqamay xato qilganliklarini",
+    "B) Uni jamoaga olib juda katta xatoga yo‘l qo‘yganlarini",
+    "C) Uning tezda boshqa sportga o‘tib ketishini",
+    "D) Uning o‘yin uslubi mutlaqo yaramasligini"
+   ],
+   "answer": "A) Iste'dodni vaqtida payqamay xato qilganliklarini"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif epilogda ego bilan kurashni nimaga o‘xshatadi?",
+   "options": [
+    "A) Har kuni polni supurishga",
+    "B) Katta imorat qurishga",
+    "C) Uzun daryoda suzishga",
+    "D) Masofaga yugurish musobaqasiga"
+   ],
+   "answer": "A) Har kuni polni supurishga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Omadsizlikka uchraganda insonning ikkita yo‘lini ko‘rsating.",
+   "options": [
+    "A) Saboq chiqarish yoki egoga berilish",
+    "B) Qasos olish yoki yurtni tark etish",
+    "C) Ishni tashlash yoki boylik yig‘ish",
+    "D) Dushman ortidan quvish yoki yashirinish"
+   ],
+   "answer": "A) Saboq chiqarish yoki egoga berilish"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega nafrat saqlash insonning o‘ziga zarar beradi?",
+   "options": [
+    "A) U ichki xotirjamlikni va o‘sishni yemiradi",
+    "B) Dushmanlar bundan xursand bo‘ladi",
+    "C) Bu ko‘p vaqt va pul talab qiladi",
+    "D) Boshqalar undan yuz o‘giradi"
+   ],
+   "answer": "A) U ichki xotirjamlikni va o‘sishni yemiradi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Velisariyning xatti-harakatidan qanday saboq olish mumkin?",
+   "options": [
+    "A) Tashqi bahodan ko‘ra burch muhim",
+    "B) Har qanday imperatorga qarshi chiqish kerak",
+    "C) Shon-shuhratsiz yashash imkonsiz",
+    "D) Har doim o‘ch olishga intilish lozim"
+   ],
+   "answer": "A) Tashqi bahodan ko‘ra burch muhim"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Omadsizlikdan saboq chiqarish to‘g‘rimi?",
+   "options": [
+    "A) Ha, bu kelajakdagi muvaffaqiyat garovidir",
+    "B) Yo‘q, omadsizlik haqida o‘ylamaslik kerak",
+    "C) Yo‘q, faqat g‘alabadan saboq olinadi",
+    "D) Ha, chunki omadsizlik hayotning maqsadi"
+   ],
+   "answer": "A) Ha, bu kelajakdagi muvaffaqiyat garovidir"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tanqidni eshitish va tahlil qilish to‘g‘ri qarormi?",
+   "options": [
+    "A) Ha, bu o‘z ustida ishlashga yordam beradi",
+    "B) Yo‘q, tanqid qilganlarni jazolash kerak",
+    "C) Yo‘q, boshqalarni eshitish zaiflikdir",
+    "D) Ha, chunki tanqid har doim mutlaq to‘g‘ri"
+   ],
+   "answer": "A) Ha, bu o‘z ustida ishlashga yordam beradi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Bismarkning \"Boshqalarning tajribasidan foydalanaman\" so‘zi nimani anglatadi?",
+   "options": [
+    "A) Aqli raso inson o‘zgalar xatosidan saboq oladi",
+    "B) Boshqalarning ishini o‘g‘irlash kerak",
+    "C) O‘z tajribasi hech qachon kerak bo‘lmaydi",
+    "D) Faqat mashhur odamlardan ta'lim olish lozim"
+   ],
+   "answer": "A) Aqli raso inson o‘zgalar xatosidan saboq oladi"
+  }
+ ]
+}

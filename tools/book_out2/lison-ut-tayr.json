@@ -1,0 +1,480 @@
+{
+ "title": "Lison ut-tayr",
+ "author": "Alisher Navoiy",
+ "genre": "nasriy bayon",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tasavvuf",
+   "ma'rifat",
+   "komillik",
+   "sabot",
+   "o‘zlikni anglash"
+  ],
+  "theme": "Asarning bosh g‘oyasi vahdati vujud (borliqning birbutunligi) va tajalliy bo‘lib, inson ilohiy zotning bir zarrasi ekani, Haqqa yetishish va o‘zlikni anglash uchun nafsni yengib, ma'naviy kamolot bosqichlaridan (yetti vodiy) o‘tishi kerakligini majoziy obrazlar orqali ko‘rsatishdir.",
+  "summary": "Alisher Navoiyning «Lison ut-tayr» dostoni ma'naviy kamolot va haqiqatni izlash yo‘liga bag‘ishlangan majoziy asardir. Asar Allohga hamd va Payg‘ambar (s.a.v.) madhi hamda Me'roj voqeasi bayoni bilan boshlanadi. So‘ngra olamdagi barcha qushlar o‘zlariga podshoh tanlash uchun yig‘iladilar. Ularga Hudhud rahbarlik qilib, g‘oyibdagi Simurg‘ podshoh haqida xabar beradi va uni izlab uzoq safarga chiqishga da'vat etadi. Qushlar turli bahonalar ko‘rsatib, yo‘l mashaqqatlaridan qo‘rqishadi: Bulbul gulga, Tovus jannat ziynatiga, Qumri va boshqa qushlar o‘z makonlariga bog‘lanib qolganliklarini aytishadi. Hudhud har bir qushga o‘tkir va hayotiy hikoyatlar (Bo‘yra shohi, Shayx San'on, Azozil va b.) orqali javob beradi, majoziy narsalarga bog‘lanish o‘tkinchi va befoyda ekanini uqtiradi. Hudhud qushlarga Simurg‘ga yetishish uchun yetti vodiydan — Talab, Ishq, Ma'rifat, Istig‘no, Tavhid, Hayrat hamda Faqru Fano vodiylaridan o‘tish zarurligini tushuntiradi. Mashaqqatli yo‘lda minglab qushlar havo va nafsiga mag‘lub bo‘lib, sovuq va issiqqa bardosh berolmay halok bo‘lishadi. Yo‘l azoblariga chidagan, sabr va ixlos ko‘rsatgan o‘ttizta qushgina (si murg‘) oxirgi manzilga yetib keladi. Ular Simurg‘ dargohiga kirganda, o‘zlaridan boshqa hech kimni ko‘rmaydilar — ko‘zguda o‘zlarining aksini ko‘rib, Simurg‘ deb izlaganlari Asl Haqiqat va uning zarrasi bo‘lmish o‘zlari ekanini anglab yetadilar. Asar oxirida muallif o‘zining bolalikdagi mutolaasi, keksalikda ushbu asarni «Foniy» taxallusi bilan yozib tugatgani hamda shoh Husayn Bayqaro adolati haqida so‘z yuritadi.",
+  "characters": "Hudhud — dono, bilimli va yo‘lboshchi qush, qushlarni haqiqat yo‘liga boshlaydi; Simurg‘ — oliy haqiqat va ilohiy zot timsoli; Shayx San'on — kibr va foniylik imtihonidan o‘tib, oxiri chin sadoqatga erishgan murshid; Azozil (Iblis) — kibri va g‘ururi sababli la'natga uchragan qahramon; Mahmud va Ayoz — o‘zligini mahv etib, do‘stida fano bo‘lish timsollari; Qushlar (Bulbul, Tovus, Qumri, Shunqor va b.) — insoniy nuqsonlar, dunyoviy havaslar va ma'naviy ojizliklar timsoli.",
+  "conclusion": "Bu asar o‘quvchiga o‘zlikni anglash, nafs va kibrni yengish hamda ma'naviy kamolotga erishish saboqlarini beradi. Kitobxon dunyoviy o‘tkinchi havaslarga berilmaslikni, sabr va sadoqat bilan oliy maqsadlar sari intilishni o‘rganadi. Ustoz va shogird munosabatlaridagi sadoqat va kamtarlik insonning eng yuksak fazilati ekani uqtiriladi.",
+  "difficulty": "qiyin",
+  "mood": "falsafiy, o‘ylantiruvchi, majoziy",
+  "for_whom": "Falsafiy va majoziy asarlarga qiziqadigan, hayotning ma'nosi va ma'naviy kamolot haqida o‘ylaydigan yuqori sinf o‘quvchilari uchun.",
+  "events": [
+   "Allohga hamd aytilib, koinot va insonning yaratilishi bayon qilinadi.",
+   "Shaytonning g‘ururi sababli insonga sajda qilmay, la'natlanishi aytiladi.",
+   "Shoir o‘z gunohlaridan tavba qilib, munojot qiladi.",
+   "Payg‘ambarimizning Me'roj kechasi Buroq otida ko‘kka ko‘tarilishi tasvirlanadi.",
+   "Abu Bakr Siddiq va Umar Faruqning adolati hamda sadoqati madh etiladi.",
+   "Olam qushlari yig‘ilib, o‘zlariga podshoh izlashga qaror qilishadi.",
+   "Hudhud qushlarga Simurg‘ haqida va uning dargohiga eltuvchi yo‘l haqida so‘zlaydi.",
+   "Tovus, Bulbul va boshqa qushlar uzoq safardan qochib, turli bahonalar keltirishadi.",
+   "Hudhud Shunqorga javoban Bo‘yra shohi haqidagi hikoyatni aytib beradi.",
+   "Hudhud qushlarga Simurg‘ning soyasi va ko‘zgudagi jilvasi ma'nosini tushuntiradi.",
+   "Shayx San'onning tarso qiziga oshiq bo‘lib, imtihonlarga duch kelishi hikoya qilinadi.",
+   "Sodiq shogirdning duosi va Payg‘ambar shafati bilan Shayx San'on to‘g‘ri yo‘lga qaytadi.",
+   "Hudhud nafs zulmi va unga tobe bo‘lishning fojiasi haqida ogohlantiradi.",
+   "Azozilning necha yillik ibodati kibr tufayli zoe ketgani uqtiriladi.",
+   "Asma'iy va chin oshiqning tosh uzra jon berishi haqidagi hikoyat keltiriladi.",
+   "Qushlarga Yetti vodiy (Talab, Ishq, Ma'rifat, Istig‘no, Tavhid, Hayrat, Fano) sifati bayon etiladi.",
+   "Mansur Hallojning tushida Rasululloh bilan muloqoti tasvirlanadi.",
+   "Mashaqqatli yo‘ldan o‘tgan o‘ttizta qush (si murg‘) manzilga yetib keladi.",
+   "O‘ttiz qush ko‘zguda o‘z aksini ko‘rib, Simurg‘ aslida ularning o‘zi ekanini anglaydi.",
+   "Shoh Mahmud va Ayoz o‘rtasidagi fanolik munosabati hikoya qilinadi.",
+   "Alisher Navoiy bolaligida «Mantiq ut-tayr»ni yod olgani va ota-onasi kitobni yashirganini eslaydi.",
+   "Navoiy oltmish yoshida ushbu dostonni «Foniy» taxallusi bilan yozib tugatganini va shoh Husayn Bayqaroni duo qilganini bildiradi."
+  ],
+  "quotes": [
+   "Yaratuvchi qudratli qalam bilan olamni aniq bir reja ostida bunyod qildi.",
+   "Osmonni betinim harakat qilishga bo‘ysundirdi, Yerni esa uning bo‘shlig‘ida tuig‘un qilib yaratdi.",
+   "Ammo har bir kishi o‘zini er degani bilan er bo‘laveradimi?!",
+   "Kishi bu xil go‘zallikka oshiq bo‘lmagani yaxshi, chunki u oshiq bo‘lishga loyiq emasdir.",
+   "Sen bilan Simurg‘ o‘rtasidagi nisbat ana shudir.",
+   "Ishq ichra foniy bo‘lish yo‘li ana shunday bo‘ladi.",
+   "Vahdat kimga bunday g‘avg‘o solsa, unda sultondan Ayozning farqi bo‘lmaydi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy bolaligida Farididdin Attorning qaysi asarini yod olgan?",
+   "options": [
+    "A) Mantiq ut-tayr",
+    "B) Guliston",
+    "C) Bo‘ston",
+    "D) Xamsa"
+   ],
+   "answer": "A) Mantiq ut-tayr"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shayton nega Allohning g‘azabiga va la'natiga uchradi?",
+   "options": [
+    "A) Inson haqida g‘iybat qilgani uchun",
+    "B) Insonga sajda qilishdan bosh tortgani",
+    "C) Osmonni tark etmoqchi bo‘lgani",
+    "D) Dunyo boyligiga o‘ch bo‘lgani"
+   ],
+   "answer": "B) Insonga sajda qilishdan bosh tortgani"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Payg‘ambarimiz Me'roj kechasida osmonga qaysi ulovda ko‘tarildi?",
+   "options": [
+    "A) Semurg‘ qushida",
+    "B) Buroq otida",
+    "C) Nurlik bulutda",
+    "D) Yashin nurlarida"
+   ],
+   "answer": "B) Buroq otida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Abu Bakr Siddiq g‘orda payg‘ambarga qanday sadoqat ko‘rsatgan?",
+   "options": [
+    "A) Dushmanlarga qarshi qilich chopdi",
+    "B) Ilon chaqqanda og‘riqqa chidadi",
+    "C) Payg‘ambarga oziq-ovqat keltirib turdi",
+    "D) Yo‘l xaritasini chizib berdi"
+   ],
+   "answer": "B) Ilon chaqqanda og‘riqqa chidadi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dastlabki boblarda inson va shayton fe'li qanday qarama-qarshilantiriladi?",
+   "options": [
+    "A) Inson kamtar, shayton kibrli",
+    "B) Inson kuchli, shayton kuchsiz",
+    "C) Inson boy, shayton gado",
+    "D) Inson dono, shayton nodon"
+   ],
+   "answer": "A) Inson kamtar, shayton kibrli"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Munojotda shoir nega o‘z gunohlaridan pushaymon bo‘lib yig‘laydi?",
+   "options": [
+    "A) Nafsga berilib, g‘aflatda qolgani uchun",
+    "B) Mol-dunyosini yo‘qotib qo‘ygani uchun",
+    "C) El orasida obro‘yi tushgani",
+    "D) Kasallikdan xalos bo‘la olmagani"
+   ],
+   "answer": "A) Nafsga berilib, g‘aflatda qolgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Payg‘ambar Me'rojda Allohdan birinchi navbatda nimani so‘radi?",
+   "options": [
+    "A) O‘ziga abadiy saltanat berishni",
+    "B) Gunohkor ummatining afv etilishini",
+    "C) Barcha dushmanlarni yo‘q qilishni",
+    "D) Dunyo xazinolarini qo‘lga kiritishni"
+   ],
+   "answer": "B) Gunohkor ummatining afv etilishini"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Umar Faruqning qorniga g‘isht bog‘lab yurishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Zohidlik va adolatli rahbarligini",
+    "B) Oziq-ovqat yetishmovchiligidan qiynalganini",
+    "C) Salomatligini mustahkamlashga harakat qilganini",
+    "D) Boshqalardan alohida ajralib turishini"
+   ],
+   "answer": "A) Zohidlik va adolatli rahbarligini"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Insonning boshqa mavjudotlardan ustun yaratilgani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, unga ilohiy sir berilgan",
+    "B) Noto‘g‘ri, farishtalar ustunroq yaratilgan",
+    "C) To‘g‘ri, u juda kuchli",
+    "D) Noto‘g‘ri, hamma mavjudot teng"
+   ],
+   "answer": "A) To‘g‘ri, unga ilohiy sir berilgan"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif osmondagi yangi oyni qanday badiiy o‘xshatish bilan tasvirlaydi?",
+   "options": [
+    "A) Osmon tirnog‘idan olingan bo‘lakka",
+    "B) Oltin lagandek porlagan quyoshga",
+    "C) Kumush kabi yaltiragan uzukka",
+    "D) Ko‘kdagi yorqin yonayotgan shamga"
+   ],
+   "answer": "A) Osmon tirnog‘idan olingan bo‘lakka"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Simurg‘ni izlash yo‘lida qushlarga kim yo‘lboshchi bo‘ldi?",
+   "options": [
+    "A) Hudhud qushi",
+    "B) Shohboz qushi",
+    "C) Bulbul qushi",
+    "D) Tovus qushi"
+   ],
+   "answer": "A) Hudhud qushi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘zini shoh deb hisoblagan Shunqorga Hudhud qaysi hikoyani aytdi?",
+   "options": [
+    "A) Bo‘yra shohi haqidagi hikoyatni",
+    "B) Iskandar elchiligi haqidagi hikoyatni",
+    "C) Boyazid Bistomiy haqidagi hikoyatni",
+    "D) Odam Safiy haqidagi hikoyatni"
+   ],
+   "answer": "A) Bo‘yra shohi haqidagi hikoyatni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shayx San'on qaysi kimsaning ishqiga giriftor bo‘lib dindan kechdi?",
+   "options": [
+    "A) Tarso sanamining ishqiga",
+    "B) Shoh qizining ishqiga",
+    "C) Parivash malikaning ishqiga",
+    "D) Misr hukmdorining qiziga"
+   ],
+   "answer": "A) Tarso sanamining ishqiga"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shayx San'onni to‘g‘ri yo‘lga qaytarishda kimning duosi sabab bo‘ldi?",
+   "options": [
+    "A) Sodiq shogirdining va Payg‘ambarning",
+    "B) Shoh Husayn Boyqaroning duosi",
+    "C) Makkadagi shayxlarning ommaviy duosi",
+    "D) Hudhudning maslahati va nasihati"
+   ],
+   "answer": "A) Sodiq shogirdining va Payg‘ambarning"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qushlarning yo‘ldan bo‘yin tovlashiga asosiy sabab nima edi?",
+   "options": [
+    "A) Nafs va dunyo narsalariga bog‘liqlik",
+    "B) Yo‘l xaritasining yo‘qligi",
+    "C) Oziq-ovqat yetishmasligi va ochlik",
+    "D) Hudhudning qattiqqo‘lligi va zulmi"
+   ],
+   "answer": "A) Nafs va dunyo narsalariga bog‘liqlik"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shayx San mehnati va qizning shartlari qaysi tartibda bajarildi?",
+   "options": [
+    "A) May ichish, zunnor bog‘lash, xinzirboqarlik",
+    "B) Xinzirboqarlik, so‘ng Makka safari",
+    "C) Ibodat qilish, so‘ng taxtga o‘tirish",
+    "D) Shogirdlaridan voz kechish, eldan qochish"
+   ],
+   "answer": "A) May ichish, zunnor bog‘lash, xinzirboqarlik"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hudhud nega qushlarga Simurg‘ning soyasi haqida gapirib berdi?",
+   "options": [
+    "A) Uning borligiga ishonch hosil qilish uchun",
+    "B) Ularni yo‘ldan qaytarish uchun",
+    "C) O‘z bilimini ko‘z-ko‘z qilish uchun",
+    "D) Qushlarni qo‘rqitib bo‘ysundirish uchun"
+   ],
+   "answer": "A) Uning borligiga ishonch hosil qilish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sodiq shogird nega Shayx San'onni tashlab ketmadi?",
+   "options": [
+    "A) Ustozga sadoqati va mehr-oqibati sababli",
+    "B) Boshqa boradigan joyi yo‘qligi uchun",
+    "C) Shohning buyrug‘idan qo‘rqgani uchun",
+    "D) Tarso qizini ko‘rmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Ustozga sadoqati va mehr-oqibati sababli"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bo‘yra kiyib o‘zini shoh deb e'lon qilgan kishining qilmishi qanday?",
+   "options": [
+    "A) Kichik va o‘tkinchi narsa bilan g‘urlanish",
+    "B) Haqiqiy jasorat va mardlik namunasi",
+    "C) Aqllilik va tadbirkorlik belgisi",
+    "D) Boshqalarga yaxshilik qilish istagi"
+   ],
+   "answer": "A) Kichik va o‘tkinchi narsa bilan g‘urlanish"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif majoziy go‘zallikni qanday moddalar bilan bog‘lab tasvirlaydi?",
+   "options": [
+    "A) Balg‘am va qon bilan",
+    "B) Oltin va kumush bilan",
+    "C) Gul va lolalar bilan",
+    "D) Shamol va suv bilan"
+   ],
+   "answer": "A) Balg‘am va qon bilan"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yo‘ldagi barcha qiyinchiliklarni yengib, qaysi qushlar oxirgi manzilga yetdi?",
+   "options": [
+    "A) Matonatli va sabrli o‘ttiz qush",
+    "B) Faqat Hudhud va Tovus qushi",
+    "C) Barcha yo‘lga chiqqan qushlar",
+    "D) Shohboz va uning qarindoshlari"
+   ],
+   "answer": "A) Matonatli va sabrli o‘ttiz qush"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Manzilga yetgan qushlar Simurg‘ni izlab, aslida kimni ko‘rishdi?",
+   "options": [
+    "A) O‘zlarining aksini va Simurg‘ligini",
+    "B) Katta oltin taxtni",
+    "C) Bo‘sh va kimsasiz saroyni",
+    "D) Nur sochayotgan ulkan quyoshni"
+   ],
+   "answer": "A) O‘zlarining aksini va Simurg‘ligini"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mahmud va Ayoz hikoyatida Ayoz nega o‘rnidan turmadi?",
+   "options": [
+    "A) O‘zligini yo‘qotib, shohda fano bo‘lgani",
+    "B) Shohdan g‘azablanib xafa bo‘lgani uchun",
+    "C) Qattiq uxlab qolgani uchun",
+    "D) Kasal bo‘lib madori yo‘qligi uchun"
+   ],
+   "answer": "A) O‘zligini yo‘qotib, shohda fano bo‘lgani"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alisher Navoiy \"Lison ut-tayr\" asarini umrining qaysi davrida tugatgan?",
+   "options": [
+    "A) Oltmish yoshga qadam qo‘yganda",
+    "B) Yoshlik va talabalik yillarida",
+    "C) Bolalik chog‘ida maktabda o‘qiganda",
+    "D) Hirotga birinchi marta kelganda"
+   ],
+   "answer": "A) Oltmish yoshga qadam qo‘yganda"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Doston oxirida tasvirlangan Yetti vodiy ketma-ketligi qaysi?",
+   "options": [
+    "A) Talab, Ishq, Ma'rifat, Istig‘no, Tavhid, Hayrat, Fano",
+    "B) Ishq, Talab, Fano, Tavhid, Ma'rifat, Hayrat, Istig‘no",
+    "C) Fano, Hayrat, Tavhid, Istig‘no, Ma'rifat, Ishq, Talab",
+    "D) Ma'rifat, Talab, Ishq, Tavhid, Fano, Hayrat, Istig‘no"
+   ],
+   "answer": "A) Talab, Ishq, Ma'rifat, Istig‘no, Tavhid, Hayrat, Fano"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mansur Halloj tushida Rasulullohdan qanday saboq oldi?",
+   "options": [
+    "A) Vahdatda \"menlik\" va \"senlik\" yo‘qligini",
+    "B) O‘z xatolarini hech qachon tan olmaslikni",
+    "C) Odamlardan uzoqlashib tanho yashashni",
+    "D) She'r yozishni to‘xtatish kerakligini"
+   ],
+   "answer": "A) Vahdatda \"menlik\" va \"senlik\" yo‘qligini"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Alisher Navoiy bu dostonda nega \"Foniy\" taxallusini qo‘lladi?",
+   "options": [
+    "A) Asar g‘oyasi fano bosqichiga bog‘liqligi uchun",
+    "B) Navoiy taxallusi esdan chiqqani uchun",
+    "C) Boshqa shoirlarga taqlid qilgani uchun",
+    "D) Shoh Husayn shunday buyurgani uchun"
+   ],
+   "answer": "A) Asar g‘oyasi fano bosqichiga bog‘liqligi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Yiqilgan devorga qarab husn topgan tolibning holatiga qanday baho beriladi?",
+   "options": [
+    "A) Har voqeadan ilohiy hikmat uqish",
+    "B) Behakot va ma'nosiz xursand bo‘lish",
+    "C) Devor sifatidan taajjublanib qo‘rqish",
+    "D) Odamlarning ustidan kulib xursand bo‘lish"
+   ],
+   "answer": "A) Har voqeadan ilohiy hikmat uqish"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif o‘z kamchiliklarini tan olib, Yaratuvchiga qanday murojaat qiladi?",
+   "options": [
+    "A) Tavba va kechirim so‘rab, ojizligini bildirib",
+    "B) O‘z yozgan asarlari bilan faxrlanib",
+    "C) Dunyo boyliklarini so‘rab duo qilib",
+    "D) Odamlardan yordam kutib nola qilib"
+   ],
+   "answer": "A) Tavba va kechirim so‘rab, ojizligini bildirib"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asarda qushlarning Simurg‘ni topishi qanday falsafiy xulosaga keladi?",
+   "options": [
+    "A) Haqiqatni izlagan inson o‘zligini anglaydi",
+    "B) Safar doimo behuda va samarasiz tugaydi",
+    "C) Qushlar hech qachon do‘st bo‘la olmaydi",
+    "D) Dunyodagi barcha qiyinchiliklar besamar ketadi"
+   ],
+   "answer": "A) Haqiqatni izlagan inson o‘zligini anglaydi"
+  }
+ ]
+}

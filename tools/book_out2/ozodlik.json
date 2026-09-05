@@ -1,0 +1,477 @@
+{
+ "title": "Ozodlik",
+ "author": "Shukur Xolmirzayev",
+ "genre": "hikoya",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14-16 yosh",
+  "topics": [
+   "ozodlik",
+   "tabiat",
+   "inson va jamiyat",
+   "mustaqillik",
+   "mas'uliyat"
+  ],
+  "theme": "Erkinlik va ozodlikka tayyor bo‘lish, o‘z xatti-harakatlari va tabiat oldida mas'uliyatni his qilish hamda mustaqillik qadriga yetish asarning bosh g‘oyasidir.",
+  "summary": "Mansur — o‘tmishda qamalib chiqqan («turemshik»), hozir esa tog‘ bag‘rida halol mehnat bilan turmush tebratayotgan yigit. U oila qurgan, Polvon ismli o‘g‘li bor, aloqa kabellarini tekshirish bilan shug‘ullanadi. Mansur qamoqdan chiqqanidan beri elga dasturxon yozmaganidan ko‘nglida armoni bor edi. Shu sababli Omon jo‘rasi yordamida uyida ziyofat-mavlud Uskuna qilib, qishloqdoshlarini va do‘stlarini mehmonga chaqiradi va ko‘ngli yorishadi.\n\nZiyofatdan so‘ng, qahraton qishda tog‘da oziq-ovqat topolmay ojiz qolgan yovvoyi kakliklar Mansurning o‘choqboshisiga tushib keladi. Mansur uyida qafasda boqib yurgan Qalamqosh (Xoyinbeka) ismli sayroqi kakligi borligini va yovvoyi qushlar uning ovoziga kelganini tushunadi.\n\nErtasi kuni Mansur Bo‘rijarga tushib, u yerda piyoda ovga chiqqan qishloqdoshlari — Shoto‘ra muallim, texnikum direktorining o‘rinbosari Olimboy va pochtachi qorovul chol bilan uchrashadi. Ular sovuqda ojiz qolgan kaklikni kaltak va chopon bilan tutib, vahshiylarcha so‘yib, kul kabob qilishadi. Mansur bu holatdan nafratlanadi, lekin muovin uning o‘tmishdagi «turemshik»ligini betiga solganda uni urib yuboradi. So‘ngra ular birga o‘tirib, inson fe'li, ozodlik va mustaqillik haqida samimiy gurung qilishadi.\n\nBahor kelganda Mansur va uning ulfatlari — Shoto‘ra, Olimboy, qorovul chol hamda haydovchi Abulqosim va fermer O‘tbosar bilan tog‘ga, Qiziljar bag‘riga sayrga chiqishadi. Mansur qafasdagi kakligi Qalamqoshni tabiat qo‘ynida ozodlikka qo‘yib yuborishga qaror qiladi. Ammo uzoq vaqt qafasda yashab, erkinlikka o‘rganmagan qush darhol tulkiga yem bo‘lish xavfiga duch keladi. Tulki hamlasidan arang qutulgan va bo‘ynidan yaralangan kaklik, kutilmaganda ketayotgan mashina ortidan uchib kelib, yana o‘z qafasiga kirib oladi.\n\nBu voqea barchani hayratga soladi. Mansur va uning hamrohlari ozodlik shunchaki qafasdan chiqish emasligi, erkin yashashga ham o‘rganish va moslashish kerakligi, aks holda tayyorgarliksiz ozodlik falokatga olib kelishi mumkinligi haqida chuqur xulosaga kelishadi. Mansur kaklikni erkinlikka o‘rgatishga va uni asrashga ahd qiladi.",
+  "characters": "Mansur — o‘tmishda qamalib chiqqan, hozir halol mehnat bilan yashayotgan, tabiatni va oilasini sevuvchi, sodda va mulohazali yigit.\nShoto‘ra muallim — musiqa o‘qituvchisi, hayotning past-balandini ko‘rgan, to‘g‘ri so‘z va mulohazakor ziyoli.\nOlimboy — texnikum direktorining muovini, zamonaviy tushunchalarga ega, rasmiyroq va mag‘rur yigit.\nO‘tbosar — yosh va uddaburon fermer, yer va vatan qadriga yetadigan mulkdor yigit.\nQorovul chol (Xattabich) — pochta qorovuli, qari va tajribali, hayotiy misollar va rivoyatlar bilan ma'no uqtiruvchi nuroniy.\nIpak — Mansurning mehribon, kamtar va ro‘zg‘orparvar rafiqasi.",
+  "conclusion": "Asar kitobxonga erkinlik va mas'uliyat tushunchalarining uzviy bog‘liqligini o‘rgatadi. Ozodlik faqat cheklovlarning yo‘qligi emas, balki mustaqil yashash va o‘z taqdiri uchun mas'uliyatni o‘z zimmasiga olish ekanligini anglatadi. Shuningdek, asarda tabiatga mehr-shafqat ko‘rsatish, insoniy qadr-qimmat va jamiyatdagi hamjihatlik g‘oyalari ilgari surilgan. O‘smir bola ushbu kitobdan sabr-toqat, halollik hamda o‘z Vatani va erkinligini qadrlash sabog‘ini oladi.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, samimiy, hazin",
+  "for_whom": "Falsafiy mushohada yuritishni, tabiat va inson taqdiri haqida o‘ylashni yaxshi ko‘radigan, erkinlik va mas'uliyat ma'nosini tushunishga qiziquvchan o‘smirlarga.",
+  "events": [
+   "1. Mansur qaxraton qishda mehmonxonada do‘st-yorlari va qishloqdoshlariga bag‘ishlab katta ziyofat uyushtiradi.",
+   "2. Ziyofat tugagach, Mansur omborxonadagi kakligi Qalamqoshni xonaga olib kirib, pechka yoniga qo‘yadi.",
+   "3. Ertalab sovuqda va oziq-ovqatsizlikda qiynalgan yovvoyi kakliklar Mansurning hovlisiga tushib keladi.",
+   "4. Mansur yovvoyi kakliklarni ko‘rib ovchilik ishtiyoqi tutadi, ammo qushlar uchib ketadi.",
+   "5. Mansur Bo‘rijarga borib, u yerda ov qilayotgan Shoto‘ra muallim, direktor muovini va pochta qorovuliga duch keladi.",
+   "6. Ovchilar qorga sanchilgan kaklikni tutib, vahshiylarcha so‘yishadi va kul kabob tayyorlashadi.",
+   "7. Direktor muovini Mansurni «turemshik» deb kamsitganda, Mansur uni ijagidan urib yiqitadi.",
+   "8. Ulfatlar birga o‘tirib, spirt ichishadi va inson fe'li ile ozodlik haqida bahslashishadi.",
+   "9. Qorovul chol kultivatsiya otining omochga o‘rganib qolib, erkinlikda to‘g‘ri yurolmay qolgani haqida hikoya qiladi.",
+   "10. Mansur va ulfatlar insoniyat hamda ozodlik to‘g‘risida bir to‘xtamga kelib, do‘stona ajralishadi.",
+   "11. Mansur uyiga qaytib, xotini Ipak bilan birga yangi tug‘ilgan qo‘zichoqni va sovliqni parvarish qiladi.",
+   "12. Mansurning taklifi va xotinining maslahati bilan ular qishloqdoshlariga og‘iz suti va sut ulashishadi.",
+   "13. Bahor kelganda Mansur, Shoto‘ra, Olimboy, qorovul va haydovchi Abulqosim yuk mashinasida tog‘ga yo‘l olishadi.",
+   "14. Yo‘lda ularni yosh fermer O‘tbosar va uning yordamchisi Eshquvvat qarshi oladi.",
+   "15. Qiziljar bag‘rida ulfatlar yashillik va archazorlar quynida toshkursilarga o‘tirib suhbatlashishadi.",
+   "16. Mansur qafasdagi kakligi Qalamqoshni ko‘tarib kelib, uni erkinlikka, tabiat qo‘yniga qo‘yib yuboradi.",
+   "17. Pisinib turgan qip-qizil tulki paydo bo‘lib, ozodlikka chiqqan kaklikka tashlanadi.",
+   "18. Kaklik tulkidan arang qutulib, yaralangan holda tepaga ko‘tarilib uchib ketadi.",
+   "19. Ketayotgan yuk mashinasi bortiga kutilmaganda o‘sha yarador kaklik uchib kelib, yana o‘z qafasiga kirib oladi.",
+   "20. Barcha hamrohlar ozodlikka o‘rganish va unga tayyor bo‘lish kerakligi haqida chuqur xulosaga kelishadi."
+  ],
+  "quotes": [
+   "Tashqarida shamol uvullar, burchakdagi tunuka pech otashxonasidan lop-lop etib alanga chiqar, shunda otashxona o‘t purkovchi afsonaviy ajdarning komiga o‘xshab ketardi.",
+   "G‘arib qizni uchratdi va ikki og‘iz gap asnosi uning o‘zini sirtdan kuzatib yurishini bilgach: «Ey, g‘arib! Men ham g‘arib. Menga tegmaysanmi?» deganda, u jilmayib yelka qisdi.",
+   "Shu ot jonivor o‘rganib qolgan ekan. Paykalning boshiga boradi – buriladi. Bu yoqqa kelib, yana buriladi. Shunday qilaverib, juvozning otiga o‘xshab qolgan ekan.",
+   "Biz, bizlar buni himoya qilmasak, saqlab qolmasak, u tamom bo‘ladi... Hamma narsa o‘zimizga bog‘liq.",
+   "Bizlar axir, odam bo‘laturib, arang o‘rganyapmizu ozodlikka...",
+   "O‘z ona-otasini sevmagan farzand o‘zga ota-onalarni hurmat qila bilmaydi. Va o‘z vatanini sevmagan kishi o‘zgalar vatanini hurmat qila olmaydi!"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mansur kabelni nazorat qilishda qanday ulovdan foydalanardi?",
+   "options": [
+    "A) Ot-aravadan",
+    "B) «Gaz-51» mashinasidan",
+    "C) Traktordan",
+    "D) Yengil mashinadan"
+   ],
+   "answer": "B) «Gaz-51» mashinasidan"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mansur kabel uzilishiga nima sabab bo‘lganini ko‘rdi?",
+   "options": [
+    "A) Kuchli shamol va bo‘ron",
+    "B) Ko‘rsichqonlar simni kemirgani",
+    "C) Odamlarning qasddan buzgani",
+    "D) Daraxt shoxlari yiqilgani"
+   ],
+   "answer": "B) Ko‘rsichqonlar simni kemirgani"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ziyofat uchun Mansur qanday hayvonlarni so‘ydirdi?",
+   "options": [
+    "A) Ikkita semiz buzoqni",
+    "B) To‘rtta yosh qo‘zini",
+    "C) Bitta qo‘chqor va serkani",
+    "D) Uchta semiz echkini"
+   ],
+   "answer": "C) Bitta qo‘chqor va serkani"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mansurning xonaki kakligining ismi nima edi?",
+   "options": [
+    "A) Qalamqosh",
+    "B) Oqto‘sh",
+    "C) Qorabo‘yin",
+    "D) Tarlan"
+   ],
+   "answer": "A) Qalamqosh"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mansur uyini tiklash uchun qanday ishlarni tartibda qildi?",
+   "options": [
+    "A) Dastlab uy qurdi, so‘ng ko‘chatlar o‘tqazdi",
+    "B) Ko‘chat o‘tqazib, so‘ng imorat tikladi",
+    "C) Avval chorva sotib oldi",
+    "D) Faqat tomorqani ijaraga berdi"
+   ],
+   "answer": "B) Ko‘chat o‘tqazib, so‘ng imorat tikladi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mansur nega o‘z uyida ziyofat qilishni bunchalik xohlardi?",
+   "options": [
+    "A) Boyligini ko‘z-ko‘z qilish uchun",
+    "B) El oldida yuzi yorug‘ bo‘lishi uchun",
+    "C) Yangi uyini sotish uchun",
+    "D) Qo‘shnilaridan qarzi borligi uchun"
+   ],
+   "answer": "B) El oldida yuzi yorug‘ bo‘lishi uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega yovvoyi kakliklar Mansurning o‘chog‘i yoniga kelishdi?",
+   "options": [
+    "A) Oziq-ovqat topolmay ojiz qolgani uchun",
+    "B) Mansur ularni chaqirgani uchun",
+    "C) Uyda boshqa parranda bo‘lgani uchun",
+    "D) Itdan qochib yashirinish uchun"
+   ],
+   "answer": "A) Oziq-ovqat topolmay ojiz qolgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mansurning mehmonlarga izzat ko‘rsatib dasturxon yozishi qanday xislat?",
+   "options": [
+    "A) Isrofgarchilik va maqtanchoqlik",
+    "B) Oqibatli va mehmondo‘st bo‘lish",
+    "C) Qaysarlik va takabburlik",
+    "D) Bepushmonlik va loqaydlik"
+   ],
+   "answer": "B) Oqibatli va mehmondo‘st bo‘lish"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif tutun chiqishini tasvirlaganda pechkani nimaga o‘xshatadi?",
+   "options": [
+    "A) Katta qozonga",
+    "B) Afsonaviy ajdar komiga",
+    "C) Yonayotgan samovarga",
+    "D) Tog‘dagi gulxanga"
+   ],
+   "answer": "B) Afsonaviy ajdar komiga"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Turemshik bo‘lganini birov ham eslatmaydi-ya!» jumlasida nima ifodalangan?",
+   "options": [
+    "A) Mansurning xursandchiligi va yengillashishi",
+    "B) Qishloqdoshlarining ayyorligi",
+    "C) Mansurning odamlardan g‘azablanishi",
+    "D) Ziyofatning bekorga o‘tgani"
+   ],
+   "answer": "A) Mansurning xursandchiligi va yengillashishi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bo‘rijarda ov qilayotgan sarg‘ish soqolli qariya kim edi?",
+   "options": [
+    "A) Pochta qorovuli",
+    "B) Maktab direktori",
+    "C) Bozor nazoratchisi",
+    "D) Qishloq shifokori"
+   ],
+   "answer": "A) Pochta qorovuli"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Musiqa muallimi tutgan kaklikni qanday so‘ydi?",
+   "options": [
+    "A) Pichoq bilan so‘ydi",
+    "B) Tishi bilan kekirdagini uzdi",
+    "C) Tayoq bilan urib o‘ldirdi",
+    "D) Ip bilan bo‘g‘ib qo‘ydi"
+   ],
+   "answer": "B) Tishi bilan kekirdagini uzdi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qariyaning aytishicha, ot nima uchun to‘g‘ri yurolmay qolgan edi?",
+   "options": [
+    "A) Oqsoqlanib qolgani uchun",
+    "B) Harakatga o‘rganib qolgani uchun",
+    "C) Qarib qolgani uchun",
+    "D) Ko‘zi ojiz bo‘lgani uchun"
+   ],
+   "answer": "B) Harakatga o‘rganib qolgani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mansur bilan ovchilar Bo‘rijarda nechta shisha ichishdi?",
+   "options": [
+    "A) Bitta shisha",
+    "B) Ikkita shisha",
+    "C) Uchta shisha",
+    "D) Umuman ichishmadi"
+   ],
+   "answer": "B) Ikkita shisha"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mansur va ovchilar suhbati qaysi ketma-ketlikda kechdi?",
+   "options": [
+    "A) Urushish, ovqatlanish, falsafiy suhbat",
+    "B) Urushish, yarashish, falsafiy suhbat",
+    "C) Kulish, urushish, birdan ajralish",
+    "D) Sukut saqlash va ketish"
+   ],
+   "answer": "B) Urushish, yarashish, falsafiy suhbat"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kaklik terisini shilishda qariya qaysi tartibda ish tutdi?",
+   "options": [
+    "A) Qornini yordi, so‘ng terisini shildi",
+    "B) Ketini yirtdi, terisini va ichaklarini oldi",
+    "C) Oyoqlarini kesdi, so‘ng pishirdi",
+    "D) Patini yuldi, so‘ng suvda yuvdi"
+   ],
+   "answer": "B) Ketini yirtdi, terisini va ichaklarini oldi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega direktor muovini Mansurni «turemshik» deb kamsitdi?",
+   "options": [
+    "A) Mansurning urganidan jahli chiqib",
+    "B) Mansur unga pul bermagani uchun",
+    "C) O‘zi ov qila olmagani uchun",
+    "D) Mansur uni ovga chaqirmagani uchun"
+   ],
+   "answer": "A) Mansurning urganidan jahli chiqib"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qariyaning ot haqidagi hikoyasi nimani anglatardi?",
+   "options": [
+    "A) Qashshoqlik va qiyinchilikni",
+    "B) Oslik va mehnatni",
+    "C) Qolipga o‘rganish va erkinlik qiyinchiligini",
+    "D) Traktorning afzalligini"
+   ],
+   "answer": "C) Qolipga o‘rganish va erkinlik qiyinchiligini"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mansurning kakliklar o‘ldirilishidan achinishi uning haqida nima deydi?",
+   "options": [
+    "A) Uning rahmdil va tabiat jonkuyari ekanini",
+    "B) Uning qo‘rqoq va ojizligini",
+    "C) Uning ovchilikni bilmasligini",
+    "D) Uning ovqatsiz qolganini"
+   ],
+   "answer": "A) Uning rahmdil va tabiat jonkuyari ekanini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Kemaga tushganning joni bir» maqoli davrada qanday ma'noda qo‘llandi?",
+   "options": [
+    "A) Barcha bir xil taqdirda ekanini",
+    "B) Kema suvda suzishini",
+    "C) Faqat bitta odam haqligini",
+    "D) Hammaning dushmanga aylanganini"
+   ],
+   "answer": "A) Barcha bir xil taqdirda ekanini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tog‘ga, Qiziljar bag‘riga ulfatlar nima bilan borishdi?",
+   "options": [
+    "A) Yengil mashinada",
+    "B) Yuk mashinasida",
+    "C) Ot-aravada",
+    "D) Piyoda yurib"
+   ],
+   "answer": "B) Yuk mashinasida"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qiziljarda paydo bo‘lgan fermer yigitning ismi kim edi?",
+   "options": [
+    "A) O‘tbosar",
+    "B) Eshquvvat",
+    "C) Abulqosim",
+    "D) Olimboy"
+   ],
+   "answer": "A) O‘tbosar"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kaklikni ozodlikka qo‘yib yuborganda unga qaysi hayvon tashlandi?",
+   "options": [
+    "A) Bo‘ri",
+    "B) Yovvoyi it",
+    "C) Tulki",
+    "D) Burgut"
+   ],
+   "answer": "C) Tulki"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tulkidan qutulgan kaklik oxirida qayerga kirib oldi?",
+   "options": [
+    "A) Archa shoxiga",
+    "B) Bortdagi o‘z qafasiga",
+    "C) Mansurning yengiga",
+    "D) Toshlar orasiga"
+   ],
+   "answer": "B) Bortdagi o‘z qafasiga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kaklik ozod qilingach sodir bo‘lgan voqealar tartibi qaysi?",
+   "options": [
+    "A) Tulki tashlandi, kaklik uchdi, qafasga qaytdi",
+    "B) Kaklik sayradi, tulki o‘ldi, uyga qaytdi",
+    "C) Kaklik qochdi, Mansur uni tutdi",
+    "D) Tulki qafasga kirdi, kaklik uchdi"
+   ],
+   "answer": "A) Tulki tashlandi, kaklik uchdi, qafasga qaytdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega kaklik ozodlikka chiqishi bilan darhol qafasga qaytib keldi?",
+   "options": [
+    "A) Qafasda yemish ko‘p bo‘lgani uchun",
+    "B) Erkin hayot xavf-xatarlariga tayyor bo‘lmagani uchun",
+    "C) Mansurni va qafasni sog‘ingani uchun",
+    "D) Uchishni umuman bilmagani uchun"
+   ],
+   "answer": "B) Erkin hayot xavf-xatarlariga tayyor bo‘lmagani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mansur kaklik uchun nega ko‘ziga yosh oldi?",
+   "options": [
+    "A) Kaklikdan ayrilgani uchun",
+    "B) Uning sadoqati va achinarli qismatidan ta'sirlanib",
+    "C) Qafasi singani uchun",
+    "D) Sheriklari uning ustidan kulgani uchun"
+   ],
+   "answer": "B) Uning sadoqati va achinarli qismatidan ta'sirlanib"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mansurning kaklikni erkinlikka o‘rgatishga ahd qilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, chunki har bir maxluq erkin yashashi kerak",
+    "B) Noto‘g‘ri, uni darhol so‘yish kerak edi",
+    "C) Noto‘g‘ri, qafasda saqlash xavfsizroq",
+    "D) Muhim emas, baribir tulki yeydi"
+   ],
+   "answer": "A) To‘g‘ri, chunki har bir maxluq erkin yashashi kerak"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "O‘tbosarning qabristonlar atrofini o‘rash haqidagi fikri haqida nima deysiz?",
+   "options": [
+    "A) Behudagarchilik va ortiqcha xarajat",
+    "B) Muqaddas joylar va o‘tganlar xotirasiga hurmat",
+    "C) Faqat fermerlik manfaatiga mos",
+    "D) Noto‘g‘ri va keraksiz tashabbus"
+   ],
+   "answer": "B) Muqaddas joylar va o‘tganlar xotirasiga hurmat"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Bizlar axir, odam bo‘laturib, arang o‘rganyapmizu ozodlikka...» jumlasining ma'nosi nima?",
+   "options": [
+    "A) Ozodlik va mustaqillik mas'uliyatini anglash oson emasligi",
+    "B) Odamlar qafasda yashashi kerakligi",
+    "C) Odamlar kakliklardan ko‘ra ojizroq ekani",
+    "D) Odamlar erkin bo‘lishni xohlamasligi"
+   ],
+   "answer": "A) Ozodlik va mustaqillik mas'uliyatini anglash oson emasligi"
+  }
+ ]
+}

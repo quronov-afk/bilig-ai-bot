@@ -1,0 +1,476 @@
+{
+ "title": "Ulug‘bek xazinasi",
+ "author": "Odil Yoqubov",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "ilm-fan",
+   "vatanparvarlik",
+   "tarix",
+   "sadoqat",
+   "ustoz-shogird"
+  ],
+  "theme": "Asarning bosh g‘oyasi — ma’rifat va ilm-fan jasoratining jaholat ile fojiali toqnashuvidir. Toju taxt uchun kurashgan hukmdorlar o‘tib ketadi, ammo xalq va ilm yo‘lida fido bo‘lgan fidoyilarning merosi abadiy yashaydi.",
+  "summary": "Roman ikki qismdan iborat bo‘lib, XV asr Movarounnahrida, Mirzo Ulug‘bek hukmronligining so‘nggi fojiali kunlarida kechadi. Birinchi qismda Ulug‘bekning o‘z o‘g‘li Abdullatif tomonidan taxtdan ag‘darilishi va hokimiyat uchun kechgan xiyonatlar tasvirlanadi. Ulug‘bek saltanat qo‘ldan ketayotganini sezgach, salkam qirq yil davomida to‘plangan ilmiy meros — rasadxona kutubxonasidagi nodir kitoblarni saqlab qolishni sadoqatli shogirdi Ali Qushchiga topshiradi. Ali Qushchi sobiq mudarris Qalandar Qarnoqiy va usta Temur Samarqandiy yordamida bebaho qo‘lyozmalarni Urgut tog‘laridagi «Ajdar g‘or»ga yashiradi. Ulug‘bek Makkaga haj safariga jo‘natiladi, biroq yo‘lda Abdullatifning xufyona amri bilan fojiali ravishda qatl etiladi. Ikkinchi qismda Ulug‘bekning shogirdlari olib borgan mardonovor kurash va ma’rifiy merosni asrash yo‘lidagi fidoiyliklari hikoya qilinadi. Qalandar Qarnoqiy va Mavlono Muhiddinning qizi Xurshida bonu o‘rtasidagi fojiali muhabbat ham asar syujetida muhim o‘rin tutadi: Xurshida bonu vafot etadi, Mavlono Muhiddin es-hushini yo‘qotadi, Qalandar esa halok bo‘ladi. Ali Qushchi Abdullatifning zindonidan ozod bo‘lgach, ta’qiblarga qaramay, kitoblarning nusxalarini ko‘chirib, xazinani saqlaydi. Yigirma yildan so‘ng, Ali Qushchi Ulug‘bekning ilmiy kashfiyotlarini jahon ilm ahliga yetkazish maqsadida Samarqandni tark etib, Turkiyaga yo‘l oladi. Asar ma’rifat va ma’naviy jasoratning jaholat ustidan qozongan ruhiy g‘alabasi bilan yakunlanadi.",
+  "characters": "Mirzo Ulug‘bek — buyuk olim va hukmdor, ma’rifatparvar, fojiali taqdir egasi. Ali Qushchi — Ulug‘bekning sadoqatli shogirdi, ilmiy xazinani saqlab qoluvchi fidoyi olim. Qalandar Qarnoqiy — iste’dodli shoir va mudarris, ma’rifat uchun kurashgan darveshnamo fidoyi. Xurshida bonu — Mavlono Muhiddinning oqila va xattot qizi, Qalandarning fojiali sevgilisi. Abdullatif — Ulug‘bekning taxtparast va johil o‘g‘li, padarkush. Mavlono Muhiddin — zaif irodali mudarris, ikkilanuvchi va fojiali shaxs.",
+  "conclusion": "Asar kitobxonga ilm va ma’rifatning chinakam qadrini anglatadi. Inson har qanday og‘ir sinovda ham o‘z e’tiqodi va ustoziga sadoqatli bo‘lib qolishi kerakligini ko‘rsatadi. Kitobni o‘qigan o‘quvchi tariximizdagi buyuk siymolar jasoratidan faxrlanishni va bilimni asrash mas’uliyatini o‘rganadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, salobatli, fojiali, o‘ylantiruvchi",
+  "for_whom": "Tarixiy asarlarni, ilm-fan fidoyilari haqidagi qissalarni va hayotiy dramalarni sevib o‘qiydigan kitobxonlarga tavsiya etiladi.",
+  "events": [
+   "1. Ali Qushchi tunda rasadxonada yulduzlarni kuzatayotganda Ko‘ksaroyga chaqirtiriladi.",
+   "2. Ulug‘bek Ali Qushchiga tushida ustodi Qozizoda Rumiyni ko‘rganini aytadi.",
+   "3. Ulug‘bek rasadxona va kutubxonadagi ilmiy xazinani saqlab qolishni Ali Qushchiga topshiradi.",
+   "4. Abdullatif otasiga qarshi qo‘shin tortib Keshga yaqinlashgani ma’lum bo‘ladi.",
+   "5. Ali Qushchi va Qalandar Qarnoqiy nodir kitoblarni saqlash choralarini ko‘radi.",
+   "6. Usta Temur Samarqandiy yordamida kitoblar Urgut tog‘idagi «Ajdar g‘or»ga yashiriladi.",
+   "7. Ulug‘bek va Abdullatif qo‘shinlari o‘rtasida toqnashuv va ichki xiyonatlar yuz beradi.",
+   "8. Ulug‘bek taxtdan voz kechishga va Makkaga haj safariga otlanishga majbur bo‘ladi.",
+   "9. Abdullatif Samarqandda taxtni egallaydi va qattiq tartib o‘rnatadi.",
+   "10. Haj yo‘liga chiqqan Ulug‘bek Abdullatifning amri bilan fojiali ravishda qatl etiladi.",
+   "11. Ali Qushchi va boshqa olimlar zindonga tashlanadi.",
+   "12. Abdullatif Ali Qushchidan saroyda xizmat qilishni talab qiladi, ammo rad javobini oladi.",
+   "13. Qalandar Qarnoqiy va uning hamrohlari Ali Qushchini qutqarib qolishadi.",
+   "14. Xurshida bonu otasi Mavlono Muhiddinning xiyonatkorona xatti-harakatlaridan iztirob chekadi.",
+   "15. Xurshida bonu og‘ir xastalikdan vafot etadi.",
+   "16. Mavlono Muhiddin qizining o‘limidan keyin es-hushini yo‘qotib aqlidan ozadi.",
+   "17. Qalandar Qarnoqiy toqqa qilingan toqnashuvda halok bo‘ladi va dafn etiladi.",
+   "18. Ali Qushchi shogirdlari Miram Chalabiy va Mansur Koshiy bilan kitoblarning nusxalarini ko‘chiradi.",
+   "19. Sakkiz yuz yetmish ikkinchi hijriy yili Ali Qushchi Samarqandni tark etishga ruxsat oladi.",
+   "20. Ali Qushchi «Ajdar g‘or»dagi xazinani shogirdlariga vasiyat qilib, yo‘lga tushadi."
+  ],
+  "quotes": [
+   "Fozillar aqli shohlar aqlidan ojiz bo‘lganidan emas, yo‘q! Bil'aks, haq taolo sizlarga shunday poklik ato etgankim, shohlar hayotining mislsiz razolatini idrok etishdan ojizdursiz!",
+   "Men saltanatdan ayrilishdan qo‘rqmaymen. Faqat bu elga qirq yil rahnamolik qilib orttirgan boyligim – madrasayu rasadxonam, nodir xazinam – to‘plagan kutubxonam va nihoyat yaratgan asarlarim – barcha poymol bo‘lishidan qo‘rqamen.",
+   "Eshikdagi yasovul hatto tahoratga ham chiqarmaydi, tahorat suvini ichkariga beradi.",
+   "Shoir, Qalandar?! Bu so‘zni qaydan topding, kampir?! Men kim, Xoja Salohiddin zargar, bo‘stonimning guli, yolg‘iz nabiramni o‘shal gado bilan bir yerga ko‘mamenmi?",
+   "Zero, ilm ahlining g‘animlari bo‘lmish mustabid shohlar kelib keta berar, ammo bu maskan, bu zahmatkash xalq abadul-abad hayotdur."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mavlono Ali Qushchi tunda qayerda yulduzlarni kuzatayotgan edi?",
+   "options": [
+    "A) Samarqanddagi Ulug‘bek rasadxonasida",
+    "B) Ko‘ksaroyning baland minorasida",
+    "C) Shohizinda daxmasining yaqinida",
+    "D) Ulug‘bek madrasasining hovlisida"
+   ],
+   "answer": "A) Samarqanddagi Ulug‘bek rasadxonasida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mirzo Ulug‘bek tushida kimni ko‘rganini Ali Qushchiga aytdi?",
+   "options": [
+    "A) Ustodi Qozizoda Rumiyni",
+    "B) Bobosi Amir Temurni",
+    "C) Otasi Shohruh Mirzoni",
+    "D) Shayxulislom Burhoniddinni"
+   ],
+   "answer": "A) Ustodi Qozizoda Rumiyni"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mirzo Ulug‘bek eng ko‘p nimaning poymol bo‘lishidan qo‘rqardi?",
+   "options": [
+    "A) Kutubxona va ilmiy asarlarining",
+    "B) Oltin va javohirlar xazinasining",
+    "C) Ko‘ksaroydagi serhasham binolarning",
+    "D) Shahar atrofidagi bog‘larning"
+   ],
+   "answer": "A) Kutubxona va ilmiy asarlarining"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qalandar Qarnoqiy madrasani tark etib qanday yo‘lni tutgan edi?",
+   "options": [
+    "A) Darveshlik kiyimini kiyib yurardi",
+    "B) Boshqa shaharga ko‘chib ketgan edi",
+    "C) Saroyda munajjimlik qilayotgan edi",
+    "D) Savdogarlarga qo‘shilib ketgan edi"
+   ],
+   "answer": "A) Darveshlik kiyimini kiyib yurardi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ulug‘bekning saroydagi xavotiri va maslahatining asosiy sababi nima edi?",
+   "options": [
+    "A) Abdullatifning isyon qilib kelayotgani",
+    "B) Rasadxona binosining nurab borayotgani",
+    "C) Hirotdan kelgan choparning xabari",
+    "D) Madrasada talabalar yetishmayotgani"
+   ],
+   "answer": "A) Abdullatifning isyon qilib kelayotgani"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Ulug‘bek kitoblar xazinasini aynan Ali Qushchiga topshirdi?",
+   "options": [
+    "A) Unga to‘liq ishonchi bo‘lgani uchun",
+    "B) U yosh va kuchli bo‘lgani uchun",
+    "C) U saroyda devonbegi bo‘lgani uchun",
+    "D) U harbiy kishi bo‘lgani uchun"
+   ],
+   "answer": "A) Unga to‘liq ishonchi bo‘lgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mavlono Muhiddin sovchilikka kelgan Qalandarni nega rad etgan edi?",
+   "options": [
+    "A) Mansabdor va boyga bergisi kelgani uchun",
+    "B) Qalandar ilmsiz odam bo‘lgani uchun",
+    "C) Qizining o‘zi rozi bo‘lmagani uchun",
+    "D) Qalandar Samarqanddan ketmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Mansabdor va boyga bergisi kelgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ulug‘bekning saltanatdan ko‘ra ilmni ustun qo‘yishi qanday fazilat?",
+   "options": [
+    "A) Yuksak ma’rifatparvarlik va donishmandlik",
+    "B) Qat’iyatsizlik va loqaydlik",
+    "C) Hukmdorlik tajribasi yetishmasligi",
+    "D) Faqat o‘zini o‘ylashlik"
+   ],
+   "answer": "A) Yuksak ma’rifatparvarlik va donishmandlik"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Ulug‘bekning tushini qanday tuyg‘u bilan tasvirlagan?",
+   "options": [
+    "A) Teran ruhiy iztirob va ma’yuslik bilan",
+    "B) Yengil va kulgili tarzda",
+    "C) Qahramonona va shiddatli ruhda",
+    "D) O‘ta befarq va loqayd holatda"
+   ],
+   "answer": "A) Teran ruhiy iztirob va ma’yuslik bilan"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Ulug‘bekning Ali Qushchini «o‘g‘lim» deyishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Ustoz va shogirdning samimiy mehrini",
+    "B) Saroydagi rasmiy munosabatni",
+    "C) Olimning yolg‘izlikdan qo‘rqishini",
+    "D) Qushchining yuqori mavqeyini"
+   ],
+   "answer": "A) Ustoz va shogirdning samimiy mehrini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nodir kitoblar qaysi tog‘dagi g‘orga yashirib qo‘yildi?",
+   "options": [
+    "A) Urgut tog‘idagi «Ajdar g‘or»ga",
+    "B) Hisor tog‘idagi chuqurlikka",
+    "C) Qoradog‘dagi ko‘hna g‘orga",
+    "D) Yassi yaqinidagi ungurga"
+   ],
+   "answer": "A) Urgut tog‘idagi «Ajdar g‘or»ga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kitoblarni ko‘mishda kim ustaligi bilan yordam berdi?",
+   "options": [
+    "A) Usta Temur Samarqandiy",
+    "B) Amir Sulton Jondor",
+    "C) Mavlono Mansur Koshiy",
+    "D) Dorug‘a Mironshoh"
+   ],
+   "answer": "A) Usta Temur Samarqandiy"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mirzo Ulug‘bek taxtdan ketgach qayoqqa otlangan edi?",
+   "options": [
+    "A) Makkaga haj safariga",
+    "B) Hirotga amakisining yoniga",
+    "C) Toshkentga qo‘shin to‘plashga",
+    "D) Turkiyaga ilm izlab"
+   ],
+   "answer": "A) Makkaga haj safariga"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mirzo Abdullatif Ali Qushchini zindondan chaqirtirib nimani taklif qildi?",
+   "options": [
+    "A) Saroyda xizmat qilishni va muarrixlikni",
+    "B) Lashkarga sarkarda bo‘lishni",
+    "C) Makkaga elchi bo‘lib borishni",
+    "D) Rasadxonani batamom buzib tashlashni"
+   ],
+   "answer": "A) Saroyda xizmat qilishni va muarrixlikni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ali Qushchining Abdullatifga bergan rad javobining ketma-ketligi qanday?",
+   "options": [
+    "A) Muarrixlikni ham, munajjimlikni ham rad etdi",
+    "B) Taklifni qabul qilib saroyda qoldi",
+    "C) Avval rozi bo‘lib so‘ng qochdi",
+    "D) Faqat munajjim bo‘lishga rozilik berdi"
+   ],
+   "answer": "A) Muarrixlikni ham, munajjimlikni ham rad etdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ali Qushchini zindonga va ta’qibga solgan asosiy omillar qaysilar?",
+   "options": [
+    "A) Ulug‘bekka sadoqati va kitoblarni bermagani",
+    "B) Saroy xazinasidagi oltinlarni olgani",
+    "C) Abdullatifga qarshi qo‘shin tuzgani",
+    "D) Shahardan qochishga uringani"
+   ],
+   "answer": "A) Ulug‘bekka sadoqati va kitoblarni bermagani"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Ali Qushchi Abdullatifning saroyida ishlashni xohlamadi?",
+   "options": [
+    "A) Ustodining qotiliga xizmat qilishni or bildi",
+    "B) Oylik maosh kam taklif qilingani uchun",
+    "C) Shoirlik va xattotlikni bilmagani uchun",
+    "D) Boshqa shaharga ko‘chmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Ustodining qotiliga xizmat qilishni or bildi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qalandar Qarnoqiy Ali Qushchini qutqarish uchun nimaga tayyor edi?",
+   "options": [
+    "A) O‘z jonini xatarga qo‘yishga",
+    "B) Abdullatifdan pul so‘rashga",
+    "C) Samarqanddan butunlay qochib ketishga",
+    "D) Zindonbonlarga pora berishga"
+   ],
+   "answer": "A) O‘z jonini xatarga qo‘yishga"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ali Qushchining zindondagi qiyinchiliklarga chidashi qanday baholanadi?",
+   "options": [
+    "A) Ilm va ustozga yuksak sadoqat",
+    "B) Manmanlik va o‘jarlik",
+    "C) Amaldan umidvorlik",
+    "D) Vaziyatni tushunmaslik"
+   ],
+   "answer": "A) Ilm va ustozga yuksak sadoqat"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Abdullatifning o‘z padariga qilgan munosabatini qanday baholash mumkin?",
+   "options": [
+    "A) Yevazsiz padarkushlik va razolat",
+    "B) Davlatni saqlashdagi zarurat",
+    "C) Odil hukmdorlik belgisi",
+    "D) Kichik bir adashish"
+   ],
+   "answer": "A) Yevazsiz padarkushlik va razolat"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xurshida bonu qanday og‘ir kulfat tufayli vafot etdi?",
+   "options": [
+    "A) Ruhiy iztirob va og‘ir xastalikdan",
+    "B) Saroydagi toqnashuvda jarohatlanib",
+    "C) Uzoq yo‘l mashaqqatiga chidamay",
+    "D) Tasodifiy fojia sababli"
+   ],
+   "answer": "A) Ruhiy iztirob va og‘ir xastalikdan"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qizining o‘limidan so‘ng Mavlono Muhiddinga nima bo‘ldi?",
+   "options": [
+    "A) Aqlidan ozib, es-hushini yo‘qotdi",
+    "B) Boshqa shaharga ko‘chib ketdi",
+    "C) Makkaga hajga jo‘nab ketdi",
+    "D) Saroyda qolib xizmat qildi"
+   ],
+   "answer": "A) Aqlidan ozib, es-hushini yo‘qotdi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qalandar Qarnoqiy qayerda va qanday dafn etildi?",
+   "options": [
+    "A) Tillabibi yonida, Urgutliklar yordamida",
+    "B) Registon maydonida dabdaba bilan",
+    "C) Ko‘ksaroy ichidagi daxmada",
+    "D) Moskvaga ketish yo‘lida"
+   ],
+   "answer": "A) Tillabibi yonida, Urgutliklar yordamida"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ali Qushchi Samarqandni tark etishiga kimlar yordam berdi?",
+   "options": [
+    "A) Alisher Navoiy va Abdurahmon Jomiy",
+    "B) Abdullatif va Mironshoh",
+    "C) Janob Nizomiddin Xomush",
+    "D) Mavlono Muhiddin va zargar"
+   ],
+   "answer": "A) Alisher Navoiy va Abdurahmon Jomiy"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ali Qushchi yo‘lga chiqishdan oldin «Ajdar g‘or»dan nimalar oldi?",
+   "options": [
+    "A) Risolalardan nusxalar va «Ziji Ko‘ragoniy»ni",
+    "B) Barcha oltin va javohirlarni",
+    "C) Saroy hujjatlarini va qurollarni",
+    "D) Faqat shaxsiy kiyim-kechaklarini"
+   ],
+   "answer": "A) Risolalardan nusxalar va «Ziji Ko‘ragoniy»ni"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Ali Qushchi bir siqim Samarqand tuprog‘ini beliga tugib oldi?",
+   "options": [
+    "A) Vatanga bo‘lgan cheksiz muhabbat sababli",
+    "B) Yo‘lda tabiblikda ishlatish uchun",
+    "C) Xazinaning o‘rnini belgilash uchun",
+    "D) Boshqa yurtda sotish uchun"
+   ],
+   "answer": "A) Vatanga bo‘lgan cheksiz muhabbat sababli"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Ali Qushchi keksa yoshida musofirlikni ixtiyor etdi?",
+   "options": [
+    "A) Ulug‘bek merosini jahonga taratish uchun",
+    "B) Tinch va boy yashash uchun",
+    "C) Hukmdorlardan qochish va yashirinish uchun",
+    "D) Yangi shogirdlar izlash uchun"
+   ],
+   "answer": "A) Ulug‘bek merosini jahonga taratish uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ali Qushchining xazinani shogirdlariga vasiyat qilishi qanday to‘xtam?",
+   "options": [
+    "A) Ma’rifat zanjirini uzmaslikka intilish",
+    "B) Mas’uliyatdan qutulish istagi",
+    "C) Tasodifiy va o‘ylanmagan qaror",
+    "D) Faqat shogirdlarini sinash usuli"
+   ],
+   "answer": "A) Ma’rifat zanjirini uzmaslikka intilish"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Ali Qushchining Samarqand bilan vidolashuvini qanday tasvirlagan?",
+   "options": [
+    "A) Chuqur ma’yuslik va unutilmas sog‘inch bilan",
+    "B) Shodlik va yengil kayfiyat bilan",
+    "C) Keskin va baqir-chaqir ruhida",
+    "D) Sovuqqon va loqayd holda"
+   ],
+   "answer": "A) Chuqur ma’yuslik va unutilmas sog‘inch bilan"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Mustabid shohlar kelib keta berar, ammo xalq abadul-abad hayotdur» jumlasi nimani anglatadi?",
+   "options": [
+    "A) Yovuz hokimiyat o‘tkinchi, el va ma’rifat boqiy",
+    "B) Shohlarning hukmi hamisha abadiy",
+    "C) Xalq siyosatga aralashmasligi kerak",
+    "D) Tarixda hech narsa o‘zgarmaydi"
+   ],
+   "answer": "A) Yovuz hokimiyat o‘tkinchi, el va ma’rifat boqiy"
+  }
+ ]
+}

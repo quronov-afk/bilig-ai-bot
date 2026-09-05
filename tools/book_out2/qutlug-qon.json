@@ -1,0 +1,59 @@
+{
+ "title": "Qutlug‘ qon",
+ "author": "Oybek",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tarix",
+   "adolat",
+   "mehnatsevarlik",
+   "sadoqat",
+   "vatanparvarlik",
+   "sabr"
+  ],
+  "theme": "Asarda adolat, halol mehnat va insoniy qadr-qimmat masalasi ilgari suriladi. Muallif zulm va xasislik ortidan keladigan fojialarni ko‘rsatib, xalqning erkinlik va adolat yo‘lidagi kurashini, pokiza sevgini hamda insoniy g‘ururni ulug‘laydi.",
+  "summary": "Xo‘jakentlik halol va mehnatkash yigit Yo‘lchi turmush qiyinchiliklari sababli Toshkentga — boy tog‘asi Mirzakarimboynikiga xizmatkor bo‘lib keladi. U yerda og‘ir mehnat qiladi, boyning xasisligi va adolatsizligiga guvoh bo‘ladi. Yo‘lchi Yormatning qizi Gulnor bilan bir-birini sevib qoladi, ammo Mirzakarimboy Gulnorga majburan uylanadi. Keyinchalik boyning o‘g‘li Salimboyvachcha xiyonat bilan Gulnorga zahar berib o‘ldiradi. Yo‘lchi singlisi Unsinni va o‘z haq-huquqlarini adolatsizlikdan hamda asoratdan qutqarishga intiladi. Birinchi jahon urushi davrida xalqdan mardikorlikka odam olish haqidagi chor podshosining farmoni sababli xalq isyoni ko‘tariladi. Yo‘lchi do‘stlari Qoratoy va O‘roz bilan birga adolatsizlikka va zulmga qarshi xalq safida mardona kurashadi. Politsiya mahkamasidagi toqnashuvda Yo‘lchi og‘ir yaralanib halok bo‘ladi. Do‘stlari va Shokir ota uni yashirincha dafn etishadi; Shokir ota Yo‘lchining to‘kilgan qonini el-yurt ozodligi yo‘lidagi qutlug‘ qon deb ataydi.",
+  "characters": "Yo‘lchi — halol, mard, g‘ururli va mehnatkash yigit; adolatsizlikka hamda zulmga qarshi bosh tiklaydi.\nMirzakarimboy — Yo‘lchining boy tog‘asi, dunyoparast, xasis va bag‘ritosh savdogar.\nGulnor — Yormatning iboli, pokiza va sadoqatli qizi, Yo‘lchining sevgilisi.\nQoratoy — mard va sadoqatli temirchi, Yo‘lchining eng yaqin do‘sti hamda maslakdoshi.\nShokir ota — donishmand va mehnatkash mahsido‘z chol, Yo‘lchiga otalarcha g‘amxo‘rlik qiladi.\nUnsin — Yo‘lchining mehribon, sabrli va sadoqatli singlisi.\nO‘roz — mard qirg‘iz yigiti, Yo‘lchining sodiq jo‘rasi.\nSalimboyvachcha — Mirzakarimboyning buzuq hamda ayyor o‘g‘li.",
+  "conclusion": "Asar o‘quvchiga halol mehnatning qadrini, adolat va insoniy g‘ururni har qanday boylikdan ustun qo‘yishni o‘rgatadi. Bola kitobdan sadoqat, mardlik va o‘z yaqinlariga g‘amxo‘r bo‘lish kabi oliyjanob fazilatlarni uqib oladi. Qahramonlarning fojiali qismati orqali to‘g‘rilik va insof har qanday sharoitda ham insonning eng bosh mezonidir degan xulosaga keladi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi, jiddiy",
+  "for_whom": "Tarixiy voqealarga, adolat va mardlik mavzulariga qiziquvchi, insoniy munosabatlar va hayotiy saboqlar haqida fikrlashni xush ko‘radigan o‘smirlar uchun.",
+  "events": [
+   "1. Yo‘lchi Xo‘jakentdan Toshkentga — boy tog‘asi Mirzakarimboyning xonadoniga ish so‘rab keladi.",
+   "2. Mirzakarimboy jiyaniga nasihatlar qilib, uni sinash uchun xizmatga qabul qiladi.",
+   "3. Yo‘lchi bedazorda Yormat bilan tanishib, og‘ir va halol mehnatga kirishadi.",
+   "4. Yo‘lchi guzarda mahsido‘z Shokir ota va temirchi Qoratoy bilan do‘stlashadi.",
+   "5. Mirzakarimboy xonadonida o‘tkazilgan to‘yda xizmatkorlarga bo‘lgan adolatsiz munosabat namoyon bo‘ladi.",
+   "6. Yo‘lchi Yormatning qizi Gulnor bilan tanishadi va ularning o‘rtasida samimiy tuyg‘ular uyg‘onadi.",
+   "7. Hakimboyvachcha va Salimboyvachchalarning maishatparast va xasis turmush tarzi ochib beriladi.",
+   "8. Mirzakarimboy kambag‘allikda yashayotgan Gulnorga sovchi qo‘yib, uni o‘ziga xotinlikka oladi.",
+   "9. Gulnor majburiy nikohdan so‘ng chuqur iztirobga tushadi.",
+   "10. Yo‘lchi singlisi Unsinni shaharga olib kelib, xavfsizroq joyga joylashtirishga harakat qiladi.",
+   "11. Salimboyvachcha o‘z manfaatlari yo‘lida shiyponga chiqib, Gulnorning ovqatiga zahar qo‘shadi.",
+   "12. Gulnor zaharlandiqdan so‘ng fojiali ravishda halok bo‘ladi.",
+   "13. Gulnorning o‘limi va ketma-ket kelgan adolatsizliklar Yo‘lchining qalbidagi g‘azab va kinni oshiradi.",
+   "14. Birinchi jahon urushi sababli xalqdan mardikor olish haqida podsho farmoni e'lon qilinadi.",
+   "15. Boylar va amaldorlar o‘z farzandlarini mardikorlikdan olib qolishga urinishadi.",
+   "16. Jabr-zulmdan to‘ygan Toshkent xalqi politsiya mahkamasi oldida qo‘zg‘olon ko‘taradi.",
+   "17. Yo‘lchi, Qoratoy va O‘roz xalq safida turib adolatsizlikka qarshi ochiq kurashga kirishadi.",
+   "18. Politsiya mahkamasida to‘palangan olomonga qarshi mirshablar o‘q uzadi.",
+   "19. Yo‘lchi mardona olishuvda dushmanning qilichini tortib oladi, ammo ko‘kragidan og‘ir yaralanadi.",
+   "20. Qoratoy va O‘roz yarador Yo‘lchini olib chiqishadi, u do‘stlari bag‘rida halok bo‘ladi va Shokir ota uning qonini qutlug‘ qon deb ataydi."
+  ],
+  "quotes": [
+   "Yer sotgan er bo‘lmaydi, er yer sotmaydi.",
+   "Qarz yomon narsa, jiyan. Qarzdan qutulish uchun yer tugul, kishi o‘zini qul qilib sotishi kerak.",
+   "Xalq borgan sari pachaqlanaveradi, boylar yashnayveradi, nega shunday?",
+   "Yo‘lchining o‘limi ancha-muncha o‘lim emas. Bu juda katta o‘lim.",
+   "Bu qon eng qutlug‘, eng muborak, eng sof qon...",
+   "Yo‘lchi o‘g‘limning qoni qutlug‘, uni yuzga, ko‘zga surish kerak..."
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Yo‘lchi boy tog‘asining xonadonida qanchalik og‘ir ishlamasin, har doim halollik va o‘z g‘ururini saqlab qolishga harakat qildi. Seningcha, inson har qanday qiyin sharoitda ham to‘g‘ri va halol bo‘lib qolishi uchun nimaga suyanishi kerak va Yo‘lchining fe'l-atvoridagi qaysi jihat senga eng ko‘p saboq bo‘ldi?"
+}

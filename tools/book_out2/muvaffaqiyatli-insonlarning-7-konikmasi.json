@@ -1,0 +1,483 @@
+{
+ "title": "Muvaffaqiyatli insonlarning 7 ko‘nikmasi",
+ "author": "Stiven Kovi",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "shaxsiy rivojlanish",
+   "fe‘l-atvor",
+   "muloqot",
+   "mas‘uliyat",
+   "vaqtni boshqarish"
+  ],
+  "theme": "Asar insonlarni yuzaki va vaqtincha usullar o‘rniga chuqur fe‘l-atvor va boqiy tamoyillarga tayanib, shaxsiy hamda jamoaviy samaradorlik va muvaffaqiyatga erishishga chorlaydi.",
+  "summary": "Kitob muvaffaqiyatga erishishning ikki xil yondashuvi: shaxs etikasi hamda fe‘l-atvor etikasini tahlil qilish bilan boshlanadi. Muallif so‘nggi yillarda keng tarqalgan yuzaki ruhiy usullarni tanqid qilib, haqiqiy muvaffaqiyat faqat halollik, kamtarlik va adolat kabi birlamchi tamoyillarga tayanib bunyod etilishini ta‘kidlaydi. Paradigma va uning o‘zgarishi tushunchasi Harvard talabalari hamda muallifning o‘z o‘g‘lini tarbiyalash tajribasi misolida tushuntiriladi.\n\nAsar uch bosqichli rivojlanishni o‘z ichiga oladi: qaramlikdan mustaqillikka o‘tish (shaxsiy g‘alaba), mustaqillikdan o‘zaro bog‘liqlikka o‘tish (ommaviy g‘alaba) va uzluksiz yangilanish. Birinchi ko‘nikma — proaktivlik bo‘lib, u stimul va reaksiya o‘rtasidagi tanlov erkinligiga asoslanadi. Ikkinchi ko‘nikma — yakunini yodda tutib ish boshlash bo‘lib, hamma narsa avval ruhiy, so‘ng jismoniy yaratilishini uqtiradi. Uchinchi ko‘nikma — muhim ishlarni birinchi o‘ringa qo‘yish bo‘lib, vaqtni boshqarish matritsasidagi ikkinchi kvadratga, ya‘ni shoshilinch bo‘lmagan, lekin muhim vazifalarga e‘tibor qaratishni talab qiladi.\n\nKeyingi qismda muallif ommaviy g‘alabalarga o‘tadi. To‘rtinchi ko‘nikma — Yutuq-yutuq paradigmasi bo‘lib, o‘zaro manfaatli kelishuvlarga asoslanadi. Beshinchi ko‘nikma — avval tushunishga, so‘ng tushunilishga intilish bo‘lib, empatik tinglash mahoratini talab qiladi. Oltinchi ko‘nikma — sinergiya, ya‘ni farqlarni qadrlash va birgalikda yangi imkoniyatlar yaratishdir. Yettinchi ko‘nikma esa yangilanishning to‘rt o‘lchami (jismoniy, aqliy, hissiy va ruhiy) bo‘yicha o‘z ustida ishlashni nazarda tutadi. Kitob yakunida muallif turmush o‘rtog‘i Sandra bilan kechirgan kechinmalari hamda Anvar Sadat misoli orqali ichkaridan tashqariga o‘zgarish avlodlar taqdirini ijobiy tomonga burishini ko‘rsatib beradi.",
+  "characters": "Stiven Kovi — kitob muallifi, tajribali pedagog va maslahatchi. Sandra — muallifning rafiqasi, oilaviy muammolarni hal qilishda uning maslakdoshi. Muallifning o‘g‘li — maktabda qiyinchiliklarga uchragan, ota-onasining qarashi o‘zgargach rivojlangan bola. Viktor Frankl — konslagerda qolib, stimul va reaksiya o‘rtasidagi erkinlikni kashf etgan psixolog. Anvar Sadat — Misr prezidenti, ichki e‘tiqodi va fe‘l-atvori orqali tinchlik o‘rnatgan arbob.",
+  "conclusion": "Ushbu kitob kitobxonga o‘z fe‘l-atvori va dunyoqarashini qayta ko‘rib chiqishga yordam beradi. U muammolarga yuzaki davo izlamay, ichki fe‘l-atvorni va ma‘naviy tamoyillarni rivojlantirish yo‘lini ko‘rsatadi. Ota-onalar va o‘smirlar o‘zaro munosabatlarni yaxshilash, vaqtni to‘g‘ri taqsimlash hamda qat‘iyatli bo‘lish ko‘nikmalarini egallaydilar.",
+  "difficulty": "o‘rta",
+  "mood": "jiddiy, o‘ylantiruvchi, ilhomlantiruvchi",
+  "for_whom": "O‘z ustida ishlashni, vaqtni to‘g‘ri boshqarishni va odamlar bilan samimiy munosabat o‘rnatishni istagan o‘smirlarga hamda ularning ota-onalariga.",
+  "events": [
+   "Muallif va uning rafiqasi o‘g‘lining o‘zlashtirishi pastligidan tashvishga tushadi.",
+   "Muallif shaxs etikasining yuzaki usullari va fe‘l-atvor etikasining fundamental tamoyillarini solishtiradi.",
+   "Paradigma tushunchasi noto‘g‘ri shahar xaritasi misolida tushuntiriladi.",
+   "Talabalar bilan Harvardda yosh va qari ayol surati orqali tajriba o‘tkaziladi.",
+   "Viktor Frankl konslagerda stimul va reaksiya o‘rtasidagi tanlov erkinligini kashf etadi.",
+   "Muallif Xavotir doirasi va Ta‘sir doirasi o‘rtasidagi farqni tushuntiradi.",
+   "Proaktiv odamlar bor kuchini Ta‘sir doirasiga qaratishi uqtiriladi.",
+   "Hamma narsa avval ruhiy, so‘ng jismoniy yaratilishi haqida g‘oya ilgari suriladi.",
+   "Duradgorlarning «Yetti o‘lchab, bir kes» qoidasi birinchi ijodga misol qilinadi.",
+   "Inson hayotidagi markazlar va ularning dunyoqarashga ta‘siri ko‘rib chiqiladi.",
+   "Oila vazifasi bayonotini tuzish va qo‘llash muhimligi ta‘kidlanadi.",
+   "Vaqtni boshqarish matritsasi va Ikkinchi kvadratning ahamiyati tushuntiriladi.",
+   "Muallif o‘g‘lining Kerol bilan ajrashish uchrashuvini rejalashtirganini so‘zlab beradi.",
+   "Hissiyot bankidagi hisob raqami va samimiy kechirim so‘rash xususida fikr yuritiladi.",
+   "Muallif o‘g‘li Devidga nisbatan sabrsizlik qilganini va sababini anglaganini eslaydi.",
+   "Insonlararo munosabatlarning olti paradigmasi tahlil qilinadi.",
+   "Yutuq-yutuq menejmenti mashg‘ulotlari bank dasturi misolida ko‘rsatiladi.",
+   "Empatik tinglash va boshqalarni chin dildan tushunish zarurati tushuntiriladi.",
+   "Ota va o‘g‘il o‘rtasidagi samimiy suhbat orqali empatik tinglash namoyish etiladi.",
+   "Sinergiya tushunchasi va sinfxonadagi jamoaviy ijodkorlik bayon qilinadi.",
+   "Kurt Levinning «Kuch maydoni tahlili» modeli tushuntiriladi.",
+   "Televizor ko‘rish odati va davomiy ta‘lim olishning o‘rni muhokama etiladi.",
+   "Muallif va Sandra mashinada sohil bo‘ylab aylanib samimiy suhbatlashishadi.",
+   "Sandra va «Frigider» maishiy texnikasi bilan bog‘liq hissiy sabab fosh bo‘ladi.",
+   "Anvar Sadatning 54-kamerasidagi ichki o‘zgarishi va dunyoga ta‘siri so‘zlab beriladi."
+  ],
+  "quotes": [
+   "Biz atrofni, undagi vaziyatlarni maxsus linza orqali ko‘ramiz.",
+   "Fe‘lingiz quloqlarim ostida shu qadar qattiq qichqiradiki, sizning nutqingizni tinglay olmayman.",
+   "Har bir bandaga ko‘rinmas kuch ato etilgan – u orqali inson o‘z hayotiga ta‘sir ko‘rsatadi.",
+   "Piter Druker ta‘rifi bilan aytganda, samarali odamlar – muammolar haqida emas, imkoniyatlar haqida bosh qotiradi.",
+   "Muloyimlik faqat kuchli insonlarning qo‘lidan keladi.",
+   "O‘z fikrlarini o‘zgartira olmaydigan inson hech qachon real voqelikni o‘zgartira olmaydi.",
+   "Doimiy ravishda bajaradigan ishlarimiz yengillashishiga vazifaning o‘zgarishi emas, balki bajarish qobiliyatimiz o‘sishi sabab bo‘ladi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif va uning rafiqasi o‘g‘liga yordam berish uchun avvalo nimani o‘zgartirdi?",
+   "options": [
+    "A) O‘z idroki va munosabatini",
+    "B) Maktab va o‘qituvchilarini",
+    "C) Beysbol murabbiyini",
+    "D) Yashash joyini"
+   ],
+   "answer": "A) O‘z idroki va munosabatini"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Noto‘g‘ri shahar xaritasi qaysi shahar uchun berilgan edi?",
+   "options": [
+    "A) Detroit shahri uchun",
+    "B) Nyu-York shahri uchun",
+    "C) Vashington shahri uchun",
+    "D) Boston shahri uchun"
+   ],
+   "answer": "A) Detroit shahri uchun"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif yuzaki tayyorgarlik bilan imtihonga kirishni nimaga o‘xshatadi?",
+   "options": [
+    "A) Shaxs etikasini qo‘llashga",
+    "B) Fermada hosil yig‘ishga",
+    "C) Birlamchi qudratga erishishga",
+    "D) Xaritani to‘g‘ri chizishga"
+   ],
+   "answer": "A) Shaxs etikasini qo‘llashga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnga ko‘ra, birinchi va ikkinchi ijod tartibi qanday?",
+   "options": [
+    "A) Avval ruhiy, so‘ng jismoniy",
+    "B) Avval jismoniy, so‘ng ruhiy",
+    "C) Ikkalasi bir vaqtda sodir bo‘ladi",
+    "D) Faqat jismoniy ijod mavjud"
+   ],
+   "answer": "A) Avval ruhiy, so‘ng jismoniy"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Viktor Franklning konslagerdagi tajribasidan qanday to‘g‘ri xulosa chiqarish mumkin?",
+   "options": [
+    "A) Inson tanlov erkinligiga ega",
+    "B) Tashqi muhit hammasini hal qiladi",
+    "C) Qiyinchilikda taslim bo‘lish kerak",
+    "D) Taqdirni o‘zgartirib bo‘lmaydi"
+   ],
+   "answer": "A) Inson tanlov erkinligiga ega"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Duradgorlar orasida qanday oltin qoida bor?",
+   "options": [
+    "A) Yetti o‘lchab, bir kes",
+    "B) Tez kesib, keyin o‘lcha",
+    "C) O‘lchamasdan darhol kes",
+    "D) Yog‘ochni faqat bir o‘lcha"
+   ],
+   "answer": "A) Yetti o‘lchab, bir kes"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Emersonning «Fe‘lingiz quloqlarim ostida qichqiradi» deyishi nimani anglatadi?",
+   "options": [
+    "A) Amallar so‘zlardan ko‘ra kuchliroq",
+    "B) Baland ovozda gapirish kerakligini",
+    "C) Muloqotda gapirish asosiy ekanini",
+    "D) Inson har doim qichqirishini"
+   ],
+   "answer": "A) Amallar so‘zlardan ko‘ra kuchliroq"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Proaktiv odamlar bor kuchini qaysi doiraga qaratadi?",
+   "options": [
+    "A) Ta‘sir doirasiga",
+    "B) Xavotir doirasiga",
+    "C) Tashqi doiraga",
+    "D) Tasodifiy doiraga"
+   ],
+   "answer": "A) Ta‘sir doirasiga"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega reaktiv odamlarning ta‘sir doirasi kichrayib boradi?",
+   "options": [
+    "A) Salbiy quvvatga berilganliklari uchun",
+    "B) Vaqtlari ko‘pligi uchun",
+    "C) Faqat o‘zini o‘ylaganliklari uchun",
+    "D) Ishlari ko‘pligi uchun"
+   ],
+   "answer": "A) Salbiy quvvatga berilganliklari uchun"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shaxsiy vazifa bayonotini yozish inson uchun nima beradi?",
+   "options": [
+    "A) Aniq hayotiy yo‘nalish beradi",
+    "B) Pulni tezroq ko‘paytiradi",
+    "C) Barcha muammolarni darhol yechadi",
+    "D) Boshqalarni boshqarishga yordam beradi"
+   ],
+   "answer": "A) Aniq hayotiy yo‘nalish beradi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Piter Druker ta‘rifiga ko‘ra, samarali odamlar nima haqida o‘ylaydi?",
+   "options": [
+    "A) Imkoniyatlar haqida",
+    "B) Muammolar haqida",
+    "C) O‘tmish xatolari haqida",
+    "D) Boshqalarning ojizligi haqida"
+   ],
+   "answer": "A) Imkoniyatlar haqida"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ikkinchi kvadratga qanday faoliyat turlari kiradi?",
+   "options": [
+    "A) Muhim, ammo shoshilinch bo‘lmagan",
+    "B) Shoshilinch hamda juda muhim",
+    "C) Shoshilinch, lekin muhim bo‘lmagan",
+    "D) Muhim emas hamda shoshilinchmas"
+   ],
+   "answer": "A) Muhim, ammo shoshilinch bo‘lmagan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega o‘g‘il Kerol bilan ajrashish suhbatini tezda tugata olmadi?",
+   "options": [
+    "A) Insoniy munosabat rejalashtirishga bo‘ysunmaydi",
+    "B) Telefon ishlamay qolgani uchun",
+    "C) Qiz suhbatga kelmagani uchun",
+    "D) Vaqt yetarli bo‘lgani uchun"
+   ],
+   "answer": "A) Insoniy munosabat rejalashtirishga bo‘ysunmaydi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Leo Roskin fikricha, muloyimlik kimlarning qo‘lidan keladi?",
+   "options": [
+    "A) Faqat kuchli insonlarning",
+    "B) Barcha boy odamlarning",
+    "C) Faqat ojiz kishilarning",
+    "D) Yosh bolalarning"
+   ],
+   "answer": "A) Faqat kuchli insonlarning"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif o‘g‘li Devidga nimaga sabrsizlik qilib g‘azablandi?",
+   "options": [
+    "A) Xonasi eshigini urib baqirgani uchun",
+    "B) Futbol o‘yinida yutqazgani uchun",
+    "C) Maktabga borishni xohlamagani uchun",
+    "D) Kitobni yirtib qo‘ygani uchun"
+   ],
+   "answer": "A) Xonasi eshigini urib baqirgani uchun"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Mag‘lubiyat-mag‘lubiyat paradigmasi qanday insonlarga xos?",
+   "options": [
+    "A) Boshqalarga o‘ta qaram insonlarga",
+    "B) Kuchli hamda mustaqil shaxslarga",
+    "C) Doim g‘alaba qozonadiganlarga",
+    "D) Muloqotni yaxshi biladiganlarga"
+   ],
+   "answer": "A) Boshqalarga o‘ta qaram insonlarga"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega bankdagi boshqaruvchilar amaliyotchi xodimlardan aniq natija ololmadi?",
+   "options": [
+    "A) Dastur natijaga emas usullarga tayangani",
+    "B) Amaliyotchilar ishlashni xohlamagani uchun",
+    "C) Pul yetarli ajratilmagani uchun",
+    "D) Amaliyot muddati o‘ta qisqaligi uchun"
+   ],
+   "answer": "A) Dastur natijaga emas usullarga tayangani"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Suhbatdoshni chin dildan tushunish uchun qanday tinglash zarur?",
+   "options": [
+    "A) Empatik tinglash",
+    "B) Yuzaki tinglash",
+    "C) Mantiqiy tinglash",
+    "D) Tanqidiy tinglash"
+   ],
+   "answer": "A) Empatik tinglash"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ota o‘g‘lining kollejni tashlash fikrini eshitgach, to‘g‘ri yo‘l tutdimi?",
+   "options": [
+    "A) Ha, empatik tinglab vaziyatni angladi",
+    "B) Yo‘q, darhol uni urishib berdi",
+    "C) Yo‘q, o‘g‘lining fikrini e‘tiborsiz qoldirdi",
+    "D) Ha, o‘g‘lini kollejdan darhol olindi"
+   ],
+   "answer": "A) Ha, empatik tinglab vaziyatni angladi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif sharq maqolidan ta‘zim haqida keltirgan jumla nimaga undaydi?",
+   "options": [
+    "A) Kechirim so‘rashda samimiy bo‘lishga",
+    "B) Boshqalardan doim ustun turishga",
+    "C) Kechirim so‘rashdan butkul voz kechishga",
+    "D) FAQAT buyruq berib yashashga"
+   ],
+   "answer": "A) Kechirim so‘rashda samimiy bo‘lishga"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kurt Levin ishlab chiqqan model qanday nomlanadi?",
+   "options": [
+    "A) Kuch maydoni tahlili",
+    "B) Vaqt matritsasi modeli",
+    "C) Sinergiya zanjiri modeli",
+    "D) Ruhiy rivojlanish modeli"
+   ],
+   "answer": "A) Kuch maydoni tahlili"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif oilasida televizor ko‘rish odati qanday tartibga solindi?",
+   "options": [
+    "A) Maxsus vaqt ajratib, saralandi",
+    "B) Televizor ko‘rish butkul taqiqlandi",
+    "C) Cheklovsiz har kuni ko‘rildi",
+    "D) Faqat dam olish kunlari ko‘rildi"
+   ],
+   "answer": "A) Maxsus vaqt ajratib, saralandi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Aqlni yangi ma‘lumotlar bilan boyitishning eng yaxshi usuli qaysi?",
+   "options": [
+    "A) Yaxshi kitoblarni o‘qishni odat qilish",
+    "B) Kun bo‘yi televizor ko‘rib o‘tirish",
+    "C) Faqat boshqalar bilan tortishish",
+    "D) Sport mashg‘ulotlari bilan shug‘ullanish"
+   ],
+   "answer": "A) Yaxshi kitoblarni o‘qishni odat qilish"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Sandra Frigider firmasining maishiy texnikasini afzal ko‘rardi?",
+   "options": [
+    "A) Otasi va o‘tmish xotiralari sababli",
+    "B) Ular eng arzon bo‘lgani uchun",
+    "C) Reklamasi juda chiroyli bo‘lgani uchun",
+    "D) Boshqa firmalar mavjud bo‘lmagani uchun"
+   ],
+   "answer": "A) Otasi va o‘tmish xotiralari sababli"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anvar Sadat o‘z ichki qudratini qayerda rivojlantirgan edi?",
+   "options": [
+    "A) Qohira Markaziy qamoqxonasining kamerasida",
+    "B) AQShdagi o‘quv-mashg‘ulot dasturida",
+    "C) Harvard Biznes Maktabi auditoriyasida",
+    "D) O‘z xususiy firmasi idorasida"
+   ],
+   "answer": "A) Qohira Markaziy qamoqxonasining kamerasida"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Anvar Sadat fikricha, inson nimani o‘zgartirmasa voqelikni o‘zgartira olmaydi?",
+   "options": [
+    "A) O‘z fikrlarini hamda qarashlarini",
+    "B) Tashqi muhit hamda odamlarni",
+    "C) Kiyinish uslubi hamda imijini",
+    "D) Hukumat qonunlari hamda qoidalarini"
+   ],
+   "answer": "A) O‘z fikrlarini hamda qarashlarini"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Inson avlodlariga salbiy ssenariylarni o‘zgartirib qoldirishi to‘g‘rimi?",
+   "options": [
+    "A) Ha, bu proaktiv va to‘g‘ri",
+    "B) Yo‘q, o‘tmishni o‘zgartirib bo‘lmaydi",
+    "C) Yo‘q, bu avlodlarga zarar yetkazadi",
+    "D) Ha, lekin faqat majburlab bo‘ladi"
+   ],
+   "answer": "A) Ha, bu proaktiv va to‘g‘ri"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif va Sandra muloqotida o‘rnatilgan birinchi qoida nima edi?",
+   "options": [
+    "A) Tergov qilmaslik qoidasi",
+    "B) Faqat bahslashish qoidasi",
+    "C) Har kuni gaplashmaslik qoidasi",
+    "D) Javob bermay jim turish qoidasi"
+   ],
+   "answer": "A) Tergov qilmaslik qoidasi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Emersonning «Bajaradigan ishlarimiz yengillashadi» degan so‘zi nimani anglatadi?",
+   "options": [
+    "A) Bajarish qobiliyatimiz o‘sib borishini",
+    "B) Ishlarning o‘zi osonlashib qolishini",
+    "C) Majburiyatlar kamayib borishini",
+    "D) Boshqalar yordamga kelishini"
+   ],
+   "answer": "A) Bajarish qobiliyatimiz o‘sib borishini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif to‘g‘ri tamoyillarning asl manbasini nimada ko‘radi?",
+   "options": [
+    "A) Yaratgan Parvardigorda va tabiiy qonunlarda",
+    "B) Davlat qonunlari va farmonlarida",
+    "C) Yuzaki psixologiya va reklamada",
+    "D) Tasodifiy hodisalar va omadda"
+   ],
+   "answer": "A) Yaratgan Parvardigorda va tabiiy qonunlarda"
+  }
+ ]
+}

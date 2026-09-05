@@ -1,0 +1,478 @@
+{
+ "title": "Guliston",
+ "author": "Sa'diy Sheroziy",
+ "genre": "toʻplam",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "odob-axloq",
+   "adolat",
+   "qanoat",
+   "hikmat",
+   "sabot",
+   "tarbiya"
+  ],
+  "theme": "Sa'diy Sheroziy ushbu asar orqali insonlarni halollik, adolat, sabr-qanoat, ilmga amal qilish va kamtarlikka chorlaydi. Dunyo o‘tkinchi, uning moddiy boyliklari bevafa bo‘lib, insoniyatdan faqat yaxshi nom, ezgu amallar hamda ma'naviy meros abadiy qoladi.",
+  "summary": "«Guliston» — Sharq mumtoz adabiyotining eng yuksak va mashhur pand-nasihat hamda hikmatlar to‘plamidir. Asar debocha, sakkizta asosiy bob va xotimadan tashkil topgan. Debochada muallif o‘z umrining ellik yilini sarf-hisob qilib, qolgan umrini xilvatda, toat-ibodatda kechirishni niyat qilganini bayon etadi. Biroq sadoqatli do‘stining talabi va do‘stlik xatiri sababli u bilan sayrga chiqadi. Bahor faslida do‘stining bog‘ida tunab qolganda, do‘sti etagini tez soladigan tabiat gullari bilan to‘ldirayotganini ko‘rib, unga xazon urmaydigan, doimiy bahoriy tarovat sochib turuvchi «Guliston» nomli ma'naviy kitob yaratishni va'da qiladi.\n\nKitob sakkiz bobga bo‘lingan bo‘lib, har bir bob insoniy hayotning muayyan jabhasini qamrab oladi. Birinchi bob podshohlar odati va adolatli davlat boshqaruvi haqida. Unda adolatsiz shohlar inqirozi, fuqarolarga shafqat qilish zarurligi, maslahatli yolg‘on va fitna qo‘zg‘atuvchi rost o‘rtasidagi farqlar turli hikoyatlar orqali ko‘rsatiladi. Ikkinchi bob darveshlar axloqi va ma'naviy poklikka bag‘ishlangan. Uchinchi bob qanoatning fazilati va nafsni tiyish haqida bo‘lib, uncha-muncha yetishmovchilikka sabr qilgan kishi minnatli to‘qlikdan afzalroq ekani uqtiriladi. To‘rtinchi bob sukunat saqlashning foydalari, o‘ylamay gapirishning zararlari haqida bahs yuritadi. Beshinchi bob ishq va yoshlik bobidir. Oltinchi bob keksalik va zaiflikdagi hayot saboqlarini bayon etadi. Yettinchi bob tarbiyaning ta'siri va odob-axloq haqida bo‘lsa, sakkizinchi bob suhbat hamda muomala qoidalaridan iborat qisqa hikmatlar to‘plamidir. Asar oxirida muallif kitobni o‘qiganlardan xayrli duo va rahmat umid qilish bilan o‘z fikrlarini yakunlaydi.",
+  "characters": "Sa'diy Sheroziy — asar muallifi va hikoyat qiluvchi dono faylasuf; Sa'diyning do‘sti — uni xilvatdan ajratib, kitob yozishga undagan sadoqatli hamrohi; Podshohlar — adolatli yoki zolim boshqaruvchilar timsoli; Vazirlar — oqil maslahatchi yoki hasadchi saroy xizmatchilari; Luqmoni hakim va Buzurjmehr — donishmandlik hamda hikmat namunalari; Darvesh va obidlar — qanoatli, ma'naviy pok insonlar.",
+  "conclusion": "Asar bolaga hayotda to‘g‘ri yo‘lni tanlash, adolatli va halol bo‘lish, nafs va g‘azabni jilovlash kabi muhim ma'naviy saboqlarni beradi. Bola ushbu kitob orqali so‘z mas'uliyatini anglaydi, kattalarga va atrofidagilarga hurmat bilan munosabatda bo‘lishni o‘rganadi. Shuningdek, «Guliston» o‘quvchida badiiy va falsafiy tafakkurni rivojlantirib, Sharq mumtoz adabiyoti va qadriyatlariga bo‘lgan hurmatni oshiradi.",
+  "difficulty": "qiyin",
+  "mood": "o‘ylantiruvchi, hikmatli, pand-nasihatomuz",
+  "for_whom": "Hayotiy hikmatlar, odob-axloq va donolik saboqlarini o‘rganishni istagan, mumtoz adabiyot va falsafaga qiziqadigan o‘smirlar uchun.",
+  "events": [
+   "1. Sa'diy Sheroziy ellik yillik umri behuda o‘tganidan afsuslanib, xilvatga chekinishga qaror qiladi.",
+   "2. Qadrdon do‘sti Sa'diyning hujrasiga kirib, uni sukunatdan chiqarishga va so‘zlashishga ko‘ndiradi.",
+   "3. Do‘stlar navbahor kunlarida shahar tashqarisidagi safobaxsh bog‘ga sayrga chiqadilar.",
+   "4. Do‘sti etagini gulto‘plamlar bilan to‘ldirayotganda, Sa'diy unga xazon bo‘lmaydigan «Guliston» kitobini yozishni taklif etadi.",
+   "5. Sa'diy asarni davlat hukmdori Abu Bakr ibn Abu Nasr hamda Sa'd bin Zangiga bag‘ishlab yozishni boshlaydi.",
+   "6. Kitob insoniy fe'l-atvor va jamiyat hayotini qamrab oluvchi sakkizta bobga ajratiladi.",
+   "7. Birinchi bobda o‘limga mahkum etilgan asirning shohni so‘kishi va vazirning shaffof muruvvati haqidagi hikoyat keltiriladi.",
+   "8. Sulton Mahmud Sabuktaginning tushda ko‘rilishi va yer ostida ham uning ko‘zlari tinchimayotgani haqida so‘zlanadi.",
+   "9. Pakana va ko‘rksiz shahzodaning mardligi hamda akalarining hasadi haqidagi voqea bayon etiladi.",
+   "10. Qaroqchilar g‘orida qo‘lga olingan yosh bolani vazir parvarish qilgani va baribir bo‘rilik qilgani ko‘rsatiladi.",
+   "11. Kemada birinchi marta bo‘lgan qulning vahimaga tushishi hamda donishmand tomonidan tinchitilishi aytiladi.",
+   "12. Zolim podshohga namozxon kishining «peshindagi uyqung eng afzal ibodat» deb javob bergani hikoya qilinadi.",
+   "13. Amir ibn Laysning qochgan quli va uni o‘ldirmoqchi bo‘lgan vazir o‘rtasidagi bahs keltiriladi.",
+   "14. Do‘stiga murojaat qilgan kishi va uning mansab egallash xavfi haqidagi suhbat bayon etiladi.",
+   "15. Ardasher Bobokon va arab hakimining ovqatlanish me'yori haqidagi hikmati aytiladi.",
+   "16. Safarga chiqmoqchi bo‘lgan yigit va uning otasi o‘rtasidagi sabr hamda qanoat haqidagi munozara keltiriladi.",
+   "17. Kamon otib uzuk halqasidan o‘tkazgan bola va uning o‘z shuhratini saqlash uchun qurolini yoqib yuborishi aytiladi.",
+   "18. Ko‘zi og‘rib baytorga borgan va ko‘r bo‘lib qolgan eshakfe'l kishi haqidagi voqea keltiriladi.",
+   "19. Sakkizinchi bobda suhbat qoidalari, ilmga amal qilish, sirlarni saqlash va dushmanga aldanmaslik haqida qisqa hikmatlar beriladi.",
+   "20. Sa'diy Sheroziy kitobni o‘zga shoirlardan shior va bayt qarzamasdan, o‘z qalbi va qalami bilan yakunlaganini ta'kidlaydi."
+  ],
+  "quotes": [
+   "Har nimarsaki, bevafodir – muhabbat qo‘yishga noravodur!",
+   "Mutolaa qilganlarga safo, tinglaganlarga shifo baxsh etadigan «Guliston» nomli kitob yozishim mumkin...",
+   "O‘ziga to‘g‘ri odamning hech nimadan xavotiri bo‘lmaydi.",
+   "Bir-birin muchasi bor barcha kishi, Bitta gavhardandir yaratilishi.",
+   "Harchand o‘qibsan, bilimdonsan, Agar amal qilmading, nodonsan.",
+   "Gavhar loyga tushsa ham avvalgidek qimmatbaho, chang osmonga ko‘tarilganida ham qadrsizdir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Do‘sti Sa‘diyni qayerga sayr qilishga taklif etdi?",
+   "options": [
+    "A) Shahar tashqarisiga",
+    "B) Podshoh saroyiga",
+    "C) Boshqa mamlakatga",
+    "D) Dengiz bo‘yiga"
+   ],
+   "answer": "A) Shahar tashqarisiga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sa‘diy va do‘sti tunab qolgan bog‘da uzumlar nimaga o‘xshatildi?",
+   "options": [
+    "A) Surayyo yulduzlariga",
+    "B) Qizil yoqutlarga",
+    "C) Tilla tangalarga",
+    "D) Yillik hosilga"
+   ],
+   "answer": "A) Surayyo yulduzlariga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sa‘diy yozajak kitobini qanday nomlashni taklif qildi?",
+   "options": [
+    "A) Bo‘ston",
+    "B) Guliston",
+    "C) Hikmatlar",
+    "D) Bahoriston"
+   ],
+   "answer": "B) Guliston"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Luqmoni hakim hikmatni kimlardan o‘rganganini aytdi?",
+   "options": [
+    "A) Olimlardan",
+    "B) Ko‘rlardan",
+    "C) Podshohlardan",
+    "D) Keksallardan"
+   ],
+   "answer": "B) Ko‘rlardan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sa‘diy bayon etgan ikki turli aqlsizlikka nimalar kiradi?",
+   "options": [
+    "A) Gapirmaslik va zarurda jim turmaslik",
+    "B) Ko‘p yeyish va uxlash",
+    "C) Yolg‘on gapirish va urishish",
+    "D) Kitob o‘qimaslik va dangasalik"
+   ],
+   "answer": "A) Gapirmaslik va zarurda jim turmaslik"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nochor qolgan asir o‘lim oldidan nega shohni so‘kdi?",
+   "options": [
+    "A) Umidi uzilgani uchun",
+    "B) Shohni ko‘rgisi kelgani uchun",
+    "C) Boshqa iloji bo‘lmagani uchun",
+    "D) Vazir aytgani uchun"
+   ],
+   "answer": "A) Umidi uzilgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoh nega vazirning maslahatli yolg‘onini ma‘qul ko‘rdi?",
+   "options": [
+    "A) Erimaganligi uchun",
+    "B) Xayrixohlik yuzasidan aytilgani uchun",
+    "C) Shunchaki hazil bo‘lgani uchun",
+    "D) Boshqa vazirni yomonlagani uchun"
+   ],
+   "answer": "B) Xayrixohlik yuzasidan aytilgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Pakana shahzodaning jasorati qanday baholanishi kerak?",
+   "options": [
+    "A) Savlatda emas, g‘ayratda",
+    "B) Qo‘rqoqlik va befahmlik",
+    "C) Shoshqaloqlik va nodonlik",
+    "D) Faqat tasodifiy omad"
+   ],
+   "answer": "A) Savlatda emas, g‘ayratda"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Hunar xazinasin kalitidur u» deganda nimani nazarda tutgan?",
+   "options": [
+    "A) Tilni",
+    "B) Oltinni",
+    "C) Qilichni",
+    "D) Kitobni"
+   ],
+   "answer": "A) Tilni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Sa‘diy «Guliston»ning bahoriga kuz qo‘li yetmasligini aytganda nimani tasvirlagan?",
+   "options": [
+    "A) Kitob hikmatlarining boqiy va umrboqiyligini",
+    "B) Gullarning tez solib qolishini",
+    "C) Ob-havoning o‘zgarib turishini",
+    "D) Bog‘dagi daraxtlar ko‘pligini"
+   ],
+   "answer": "A) Kitob hikmatlarining boqiy va umrboqiyligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qaroqchi bolani o‘limdan qutqarib tarbiyalagan kishi kim edi?",
+   "options": [
+    "A) Podshoh",
+    "B) Vazir",
+    "C) Qozi",
+    "D) Darvesh"
+   ],
+   "answer": "B) Vazir"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kemada vahimaga tushgan qulni kim tinchlantirish yo‘lini topdi?",
+   "options": [
+    "A) Donishmand",
+    "B) Kemachi",
+    "C) Podshoh",
+    "D) Jallod"
+   ],
+   "answer": "A) Donishmand"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bemorlikdan tuzalish uchun qaysi hayvonning qoni va a‘zosi so‘raldi?",
+   "options": [
+    "A) Maxsus sifatli bola qoni",
+    "B) Kiyik qoni va go‘shti",
+    "C) Bo‘ri jigari va ko‘zi",
+    "D) Arslon yuragi va qoni"
+   ],
+   "answer": "A) Maxsus sifatli bola qoni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Namozxon zolim podshohga qaysi vaqtdagi uyquni afzal dedi?",
+   "options": [
+    "A) Peshindagi uyquni",
+    "B) Tungi uyquni",
+    "C) Ertalabki uyquni",
+    "D) Shom paytidagi uyquni"
+   ],
+   "answer": "A) Peshindagi uyquni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shoh tomonidan tarbiyalangan qaroqchi bola ulg‘aygach nima qildi?",
+   "options": [
+    "A) Vazirni o‘ldirib, qaroqchilarga qo‘shildi",
+    "B) Shohga sadoqat bilan xizmat qildi",
+    "C) Boshqa yurtga ko‘chib ketdi",
+    "D) Olim bo‘lib elga tanildi"
+   ],
+   "answer": "A) Vazirni o‘ldirib, qaroqchilarga qo‘shildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Donishmand qulni avval suvga tashlashining sababi nima edi?",
+   "options": [
+    "A) Kemadagi tinchlik qadrini bilishi uchun",
+    "B) Uni cho‘ktirib yuborish uchun",
+    "C) Suzishni o‘rgatish uchun",
+    "D) Podshohni xursand qilish uchun"
+   ],
+   "answer": "A) Kemadagi tinchlik qadrini bilishi uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Amirzodaga dushmanlar nega xusumat va hasad qilishardi?",
+   "options": [
+    "A) Shoh huzurida barkamol bo‘lgani uchun",
+    "B) Yomon ishlar qilgani uchun",
+    "C) Mansabini tashlab ketgani uchun",
+    "D) Yurtni xarob qilgani uchun"
+   ],
+   "answer": "A) Shoh huzurida barkamol bo‘lgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ardasher Bobokonga hakim kuniga qancha yemak yeyishni maslahat berdi?",
+   "options": [
+    "A) Yuz diram og‘irligicha",
+    "B) Bir tovoq to‘la",
+    "C) Tuyaning yemi miqdoricha",
+    "D) Qorini to‘yguncha behisob"
+   ],
+   "answer": "A) Yuz diram og‘irligicha"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Daryo ichida foyda ko‘p bo‘lsa-da, tinchlik uchun qayer afzal?",
+   "options": [
+    "A) Qirg‘oqning o‘zi",
+    "B) Chuqur suv tubi",
+    "C) Kema usti",
+    "D) Tog‘ cho‘qqisi"
+   ],
+   "answer": "A) Qirg‘oqning o‘zi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sabr va qanoat bilan yashash qanday natijaga olib keladi?",
+   "options": [
+    "A) Kishi minnat va xorlikdan qutuladi",
+    "B) Kambag‘allik ortib ketadi",
+    "C) Hamma dushman bo‘lib qoladi",
+    "D) Odamlar hurmat qilmay qo‘yadi"
+   ],
+   "answer": "A) Kishi minnat va xorlikdan qutuladi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kamon otgan bola birinchi muvaffaqiyatidan so‘ng nima qildi?",
+   "options": [
+    "A) Kamon va o‘qlarini yoqib yubordi",
+    "B) Yana o‘q otishni davom ettirdi",
+    "C) Podshohga sovg‘alarni qaytarib berdi",
+    "D) Boshqa shaharga qochib ketdi"
+   ],
+   "answer": "A) Kamon va o‘qlarini yoqib yubordi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ko‘zi og‘rigan odam davolanish uchun kimning oldiga bordi?",
+   "options": [
+    "A) Baytorning oldiga",
+    "B) Tabibning oldiga",
+    "C) Qozining oldiga",
+    "D) Shohning oldiga"
+   ],
+   "answer": "A) Baytorning oldiga"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ilm olib unga amal qilmagan kishi nimaga o‘xshatilgan?",
+   "options": [
+    "A) Mash‘ala ko‘targan ko‘rga",
+    "B) Daryodagi baliqqa",
+    "C) Baland binoga",
+    "D) Qanotsiz qushga"
+   ],
+   "answer": "A) Mash‘ala ko‘targan ko‘rga"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Imom G‘azzoliy yuksak ilmga erishish sababini nimada ko‘rdi?",
+   "options": [
+    "A) So‘rab o‘rganishdan uyalmaganida",
+    "B) Ko‘p kitob sotib olganida",
+    "C) Safarlarga ko‘p chiqqanida",
+    "D) Uyda ko‘p o‘tirganida"
+   ],
+   "answer": "A) So‘rab o‘rganishdan uyalmaganida"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Oqil fikricha kim baxtiyor va kim baxtsizdir?",
+   "options": [
+    "A) Baxtiyor yeydi, baxtsiz yig‘ib o‘ladi",
+    "B) Baxtiyor uxlaydi, baxtsiz ishlaydi",
+    "C) Baxtiyor shoh, baxtsiz gado",
+    "D) Baxtiyor o‘qiydi, baxtsiz yozadi"
+   ],
+   "answer": "A) Baxtiyor yeydi, baxtsiz yig‘ib o‘ladi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kamon otgan bola nega qurollarini yoqib yubordi?",
+   "options": [
+    "A) Dastlabki shuhratini saqlab qolish uchun",
+    "B) Boshqa merganlik qilolmagani uchun",
+    "C) Shoh g‘azabidan qo‘rqgani uchun",
+    "D) Kamoni eskirib qolgani uchun"
+   ],
+   "answer": "A) Dastlabki shuhratini saqlab qolish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega johil bilan bahslashgan olim izzat kutmasligi kerak?",
+   "options": [
+    "A) Nodon baribir haqiqatni tushunmaydi",
+    "B) Olimning bilimi kam bo‘ladi",
+    "C) Johil tezda qochib ketadi",
+    "D) Podshoh ularni jazolagani uchun"
+   ],
+   "answer": "A) Nodon baribir haqiqatni tushunmaydi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dushman bilan do‘stlashgan kishining harakati qanday baholanadi?",
+   "options": [
+    "A) Do‘stlariga alam va xiyonat ravo ko‘rish",
+    "B) Oqilona va dono yo‘l tutish",
+    "C) Shohga sadoqat ko‘rsatish",
+    "D) Tinchlikni saqlab qolish"
+   ],
+   "answer": "A) Do‘stlariga alam va xiyonat ravo ko‘rish"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Gavhar loyga tushsa ham avvalgidek qimmatbaho» deganda nimani ko‘rsatgan?",
+   "options": [
+    "A) Asl fazilat beqadr bo‘lmasligini",
+    "B) Loyning qimmatli moddalikka aylanishini",
+    "C) Gavharning osongina sinib ketishini",
+    "D) Boylik har doim loyda yashirinishini"
+   ],
+   "answer": "A) Asl fazilat beqadr bo‘lmasligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Sa‘diy o‘z so‘zlarini qanday vosita bilan qorishtirganini aytadi?",
+   "options": [
+    "A) Shirin hazil-mutoyibalar boli bilan",
+    "B) Achchiq malomat va dakki bilan",
+    "C) Qattiq farmon va buyruq bilan",
+    "D) Qayg‘uli va hazin qo‘shiqlar bilan"
+   ],
+   "answer": "A) Shirin hazil-mutoyibalar boli bilan"
+  }
+ ]
+}

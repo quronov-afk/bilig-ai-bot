@@ -1,0 +1,477 @@
+{
+ "title": "Oq kema",
+ "author": "Chingiz Aytmatov",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "oila",
+   "tabiat",
+   "ezgulik va yovuzlik",
+   "afsona",
+   "mehr-shafqat"
+  ],
+  "theme": "Asarda ezgulik va yovuzlik o‘rtasidagi shafqatsiz toqnashuv, inson va tabiat o‘rtasidagi uzviy bog‘liqlik hamda beg‘ubor bolalik dunyosining kattalar shafqatsizligi oldidagi ojizligi ko‘rsatilgan.",
+  "summary": "Tog‘dagi San-Tosh o‘rmonchilik qorovulxonasida yetti yoshli yetim bola mehribon bobosi Mo‘min bilan yashaydi. Qorovulxonada uchta oila istiqomat qiladi: bola va bobosi, bolaning ichkilikka berilgan va fe’li og‘ir xolasi Bekey va uning eri O‘razqul, hamda yosh ishchi Seydahmad va uning oilasi. Bolaning do‘stlari yo‘q, u atrofini o‘rab turgan toshlar va o‘simliklar bilan tillashadi. Bolaning ikki ertagi bor: birinchisi bobosi so‘zlab bergan muaddas Shoxdor ona bug‘u haqidagi afsona, ikkinchisi esa o‘zining xayolidagi ertak — u baliqqa aylanib, Issiqko‘ldagi Oq kemada suzuvchi matros otasining yoniga suzib borishni orzu qiladi.\n\nKunlarning birida bobosi unga maktab portfeli sotib olib beradi. O‘razqul esa farzandsizligi sababli alamzoda, u doim xotini Bekeyni uradi va Mo‘min boboni kamsitadi. O‘rmonga bug‘ular (marallar) qaytib kelganda Mo‘min bobo behad quvonadi va Shoxdor ona bug‘uning ruhi qaytdi deb ishonadi.\n\nAncha vaqt o‘tib, O‘razqul va Seydahmad Mo‘min boboni qo‘rqitib, muqaddas bug‘uni otishga majbur qilishadi. O‘razqul bug‘uning kallasini boltada maydalab, katta ziyofat uyushtiradi va mast bo‘lib maqtanadi. Buni ko‘rgan va eshitgan bolaning isitmasi ko‘tarilib, yuragi parchalana di. U bobosining ichkilikdan hushsiz yotganini va muqaddas e’tiqod topdalanganini ko‘radi. Yovuzlikka, shafqatsizlikka toqat qila olmagan beg‘ubor bola daryo suviga o‘zini otadi va baliq kabi Oq kema sari suzib ketadi.",
+  "characters": "Bola — yetti yoshli beg‘ubor, xayolparast va pokiza qalbli yetim bola.\nMo‘min bobo (Mo‘min chaqqon) — bolaning mehribon, mehnatkash, biroq xaraktersiz va kamsitilgan bobosi.\nO‘razqul — o‘rmon qorovuli, O‘razqulning kuyovi, ichkilikboz, zolim va farzandsizligi sabab alamzoda odam.\nBekey xola — bolaning xolasi, O‘razqulning jabrdiylasi bo‘lgan farzandsiz ayol.\nQulibek — harbiy xizmatdan qaytgan, mard va mehribon yosh shofyor.",
+  "conclusion": "Kitob bolaga toza vijdon, halollik hamda tabiat va muqaddas qadriyatlarga xiyonat qilmaslik sabog‘ini beradi. U kattalar dunyosidagi shafqatsizlik va loqaydlikning dahshatli oqibatlarini ko‘rsatadi. Ota-onalar bu asar orqali farzand ruhiyatiga nihoyatda ehtiyotkorona va mehr bilan munosabatda bo‘lish zarurligini anglaydilar.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Falsafiy mushohada yuritishni, afsona va tabiat haqida o‘qishni xush ko‘radigan hamda hayotiy saboqlarga qiziquvchan bolalar uchun.",
+  "events": [
+   "Bobosi bolaga ko‘chma do‘kondan qora dermantin portfel sotib olib berdi.",
+   "Bola xarsang toshlarga 'tank', 'bo‘ri', 'tuya' deb nom qo‘yib o‘ynardi.",
+   "O‘razqul befarzandligi sababli mast bo‘lib, xotini Bekeyni urdi.",
+   "Bola tog‘ tepasida bobosining durbini bilan Issiqko‘l va hovlini tomosha qildi.",
+   "Mo‘min bobo bolaga Shoxdor ona bug‘u haqidagi afsonani so‘zlab berdi.",
+   "O‘razqul bilan Mo‘min tog‘dan og‘ir ho‘l yog‘ochni sudrab tushishdi.",
+   "Yog‘och ag‘darilib ketgan paytda o‘rmonda muqaddas bug‘ular paydo bo‘ldi.",
+   "Mo‘min bobo bug‘ularni ko‘rib, Shoxdor ona bug‘u qaytganiga quvondi.",
+   "Qor bo‘ronida qolgan yosh shofyorlar qorovulxonaga kelib tunashdi.",
+   "Bola baquvvat va mard shofyor Qulibek bilan do‘stlashib qoldi.",
+   "O‘razqul Mo‘min boboni maktabga borgani uchun haqoratlab, ishdan bo‘shatish bilan qo‘rqitdi.",
+   "Bola daryo bo‘yida uchta tirik bug‘uni yaqindan ko‘rib hayratda qoldi.",
+   "O‘razqul va Seydahmad Mo‘min boboni mast qilib, bug‘uni otishga majbur etishdi.",
+   "Mo‘min bobo O‘razqulning tahdididan qo‘rqib, bug‘uga miltiq uzdi.",
+   "O‘razqul boltasi bilan bug‘uning kallasini vahshiylarcha maydaladi.",
+   "O‘razqul va sheriklari bug‘u go‘shtidan katta ziyofat uyushtirishdi.",
+   "Kasal bo‘lib yotgan bola ziyofatdagi shafqatsiz guldirashtuvchi qahqahalarni eshitdi.",
+   "Bola hovliga chiqib, Mo‘min bobosining o‘choq yonida hushsiz yotganini ko‘rdi.",
+   "E’tiqodi va dunyosi yakson bo‘lgan bola daryoga qarab yo‘l oldi.",
+   "Bola daryo suviga kirib, o‘z ertagidagi baliq kabi Oq kema sari suzib ketdi."
+  ],
+  "quotes": [
+   "Uning ikki ertagi bo‘lardi. Biri o‘ziniki bo‘lib, uni hech kim bilmasdi. Ikkinchisini esa, bobosi so‘zlab bergandi.",
+   "Oqko‘ngil bo‘lma, yovuz bo‘l! Mana, senga oqibat! Yovuz bo‘l!",
+   "Biz, bug‘u avlodi, bosh onamiz – Shoxdor ona bug‘udan tarqalganimizdan buyon ana shundaymiz.",
+   "O, qudratingdan o‘rgilay, Shoxdor ona bug‘u! Bug‘ular bizning o‘rmonimizga qaytibdi.",
+   "Insondagi go‘daklik vijdoni xuddi urug‘dagi ilk kurtakning o‘zginasi, kurtaksiz urug‘ unib chiqmaydi.",
+   "Bo‘talog‘im, sen bilan vidolashar ekanman, sening so‘zingni yana bir bor takrorlayman: «Salom, oq kema, bu men!»"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bobosi bolaga ko‘chma do‘kondan nima sotib berdi?",
+   "options": [
+    "A) Qora portfel",
+    "B) Yangi kiyim",
+    "C) Durbin",
+    "D) Kitob"
+   ],
+   "answer": "A) Qora portfel"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qorovulxonada jami nechta oila yashardi?",
+   "options": [
+    "A) Uchta oila",
+    "B) Beshta oila",
+    "C) Ikkita oila",
+    "D) To‘rtta oila"
+   ],
+   "answer": "A) Uchta oila"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolaning eng sevimli xarsang toshi qanday atalardi?",
+   "options": [
+    "A) Tank",
+    "B) Tuya",
+    "C) Bo‘ri",
+    "D) Egar"
+   ],
+   "answer": "A) Tank"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Keksa Mo‘minni odamlar qanday laqab bilan atashardi?",
+   "options": [
+    "A) Mo‘min chaqqon",
+    "B) Mo‘min polvon",
+    "C) Mo‘min mergan",
+    "D) Mo‘min dono"
+   ],
+   "answer": "A) Mo‘min chaqqon"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bolaning do‘stlari va o‘yinchoqlarini ko‘rsatilgan tartibda guruhlang.",
+   "options": [
+    "A) Toshlar va o‘tlar",
+    "B) Mashinalar va kitoblar",
+    "C) O‘quvchilar va o‘qituvchilar",
+    "D) Shaharlik bolalar"
+   ],
+   "answer": "A) Toshlar va o‘tlar"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sotuvchi kelganda ayollar nega ko‘p narsa ololmadi?",
+   "options": [
+    "A) Pullari yo‘q edi",
+    "B) Mol yoqmadi",
+    "C) Sotuvchi urishdi",
+    "D) Vaqtlari bo‘lmadi"
+   ],
+   "answer": "A) Pullari yo‘q edi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "O‘razqul mast bo‘lganda nega xotinini urardi?",
+   "options": [
+    "A) Farzandi yo‘qligi uchun",
+    "B) Ovqat pishirmagani uchun",
+    "C) Puli yo‘qligi uchun",
+    "D) Uyda o‘tirmagani uchun"
+   ],
+   "answer": "A) Farzandi yo‘qligi uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mo‘min boboning hammaga xizmat qilishi to‘g‘rimi?",
+   "options": [
+    "A) Oqko‘ngillik, lekin qadrlashmagan",
+    "B) Noto‘g‘ri, u dangasa edi",
+    "C) To‘g‘ri, u pul olardi",
+    "D) Noto‘g‘ri, u qo‘rqoq edi"
+   ],
+   "answer": "A) Oqko‘ngillik, lekin qadrlashmagan"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif shiroljin o‘tini qanday tasvirlaydi?",
+   "options": [
+    "A) Sadoqatli do‘st kabi",
+    "B) Yovuz dushman kabi",
+    "C) Foydasiz o‘simlik kabi",
+    "D) Chiroyli gul kabi"
+   ],
+   "answer": "A) Sadoqatli do‘st kabi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif pechakgullarni nima uchun quvnoq deydi?",
+   "options": [
+    "A) Quyoshni birinchi kutib oladi",
+    "B) Tez o‘sib ketadi",
+    "C) Juda baland bo‘ladi",
+    "D) Xushbo‘y hid taratadi"
+   ],
+   "answer": "A) Quyoshni birinchi kutib oladi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bola durbin bilan tog‘da nimani tomosha qilardi?",
+   "options": [
+    "A) Atrofni va ko‘lni",
+    "B) Boshqa shaharni",
+    "C) Quyosh va oyni",
+    "D) Faqat qushlarni"
+   ],
+   "answer": "A) Atrofni va ko‘lni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Afsonaga ko‘ra yetim bolalarni kim qutqargan?",
+   "options": [
+    "A) Shoxdor ona bug‘u",
+    "B) Qari ovchi",
+    "C) Mehribon xon",
+    "D) Katta burgut"
+   ],
+   "answer": "A) Shoxdor ona bug‘u"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Pichan ortgan mashinalar haydovchisi kim edi?",
+   "options": [
+    "A) Qulibek",
+    "B) Seydahmad",
+    "C) O‘razqul",
+    "D) Ko‘katoy"
+   ],
+   "answer": "A) Qulibek"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘razqul bilan Mo‘min tog‘dan nima olib tushishardi?",
+   "options": [
+    "A) Og‘ir yog‘och",
+    "B) Katta xarsang",
+    "C) Pichan g‘arami",
+    "D) Yovvoyi meva"
+   ],
+   "answer": "A) Og‘ir yog‘och"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tog‘dagi hodisalarni to‘g‘ri tartibda ko‘rsating.",
+   "options": [
+    "A) Yog‘och ag‘darildi, bug‘ular ko‘rindi",
+    "B) Bug‘ular qochdi, yog‘och tushdi",
+    "C) Ot yiqildi, so‘ng yog‘och kesildi",
+    "D) Qulibek keldi, yog‘och tushdi"
+   ],
+   "answer": "A) Yog‘och ag‘darildi, bug‘ular ko‘rindi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bug‘uboy avlodi e’tiqod qilgan narsalarni ajrating.",
+   "options": [
+    "A) Bug‘ularni muqaddas bilish",
+    "B) O‘rmonni kesib tashlash",
+    "C) Bug‘ularni ovlab yurish",
+    "D) O‘tovni tashlab ketish"
+   ],
+   "answer": "A) Bug‘ularni muqaddas bilish"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "O‘razqul nega Mo‘minga doim g‘azab qilardi?",
+   "options": [
+    "A) Farzandsizligi va alamidan",
+    "B) Mo‘min ishlamagani uchun",
+    "C) Mo‘min pul so‘ragani uchun",
+    "D) Boshliqlar buyurgani uchun"
+   ],
+   "answer": "A) Farzandsizligi va alamidan"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega bola Qulibekni o‘ziga aka bilishni orzu qildi?",
+   "options": [
+    "A) U kuchli va mehribon edi",
+    "B) U mashina haydardi",
+    "C) U sovg‘alar berardi",
+    "D) U tog‘da yashardi"
+   ],
+   "answer": "A) U kuchli va mehribon edi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mo‘minning bolani maktabga olib borishi qanday xisoblanadi?",
+   "options": [
+    "A) Mas'uliyatli va mehribon bobo",
+    "B) Befarq va loqayd ota",
+    "C) Faqat vaqt o‘tkazish",
+    "D) O‘razquldan qochish yo‘li"
+   ],
+   "answer": "A) Mas'uliyatli va mehribon bobo"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif qor bo‘ronidagi shofyorlar ruhiyatini qanday tasvirlagan?",
+   "options": [
+    "A) Vahima va hamjihatlik bilan",
+    "B) Kulgili va yengil",
+    "C) Behudud g‘azab bilan",
+    "D) Mutlaq loqaydlik bilan"
+   ],
+   "answer": "A) Vahima va hamjihatlik bilan"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘razqul va Seydahmad Mo‘minni nimaga majbur qildi?",
+   "options": [
+    "A) Bug‘uni otishga",
+    "B) Uyni buzishga",
+    "C) Shaharga ketishga",
+    "D) Otni sotishga"
+   ],
+   "answer": "A) Bug‘uni otishga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘razqul bug‘u kallasini nima bilan urib maydaladi?",
+   "options": [
+    "A) Bolta bilan",
+    "B) Tosh bilan",
+    "C) Pichoq bilan",
+    "D) Zanjir bilan"
+   ],
+   "answer": "A) Bolta bilan"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ziyofat paytida Mo‘min bobo qayerda yotardi?",
+   "options": [
+    "A) O‘choq yonida hushsiz",
+    "B) Uyda uxlayotgan edi",
+    "C) O‘rmonda yurgandi",
+    "D) Daryoda cho‘milardi"
+   ],
+   "answer": "A) O‘choq yonida hushsiz"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bola oxirida qayerga qarab yurib ketdi?",
+   "options": [
+    "A) Daryo suvi ichiga",
+    "B) Maktab tomonga",
+    "C) Shahar yo‘liga",
+    "D) Qulibekning oldiga"
+   ],
+   "answer": "A) Daryo suvi ichiga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Fojiali voqealar ketma-ketligini to‘g‘ri aniqlang.",
+   "options": [
+    "A) Bug‘u otildi, ziyofat bo‘ldi",
+    "B) Ziyofat bo‘ldi, bug‘u keldi",
+    "C) Bola suzdi, bug‘u otildi",
+    "D) Bobo ichdi, bug‘u qochdi"
+   ],
+   "answer": "A) Bug‘u otildi, ziyofat bo‘ldi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Mo‘min bobo Shoxdor ona bug‘uni otdi?",
+   "options": [
+    "A) O‘razqul va qizidan qo‘rqib",
+    "B) Go‘sht yegisi kelgani uchun",
+    "C) Ovchilikni yaxshi ko‘rgani uchun",
+    "D) Bug‘u unga hujum qildi"
+   ],
+   "answer": "A) O‘razqul va qizidan qo‘rqib"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bola nega o‘zini baliq deb tasavvur qildi?",
+   "options": [
+    "A) Yovuzlikdan qutulib suzib ketishga",
+    "B) Cho‘milishni yaxshi ko‘rgani uchun",
+    "C) Otasini topib olgani uchun",
+    "D) Durbini yo‘qolgani uchun"
+   ],
+   "answer": "A) Yovuzlikdan qutulib suzib ketishga"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "O‘razqul va uning sheriklarining qilmishiga qanday baho beriladi?",
+   "options": [
+    "A) Shafqatsiz va yovuz ish",
+    "B) Qahramonlik va jasorat",
+    "C) Oddiy va to‘g‘ri ish",
+    "D) Kulgili va hazil voqea"
+   ],
+   "answer": "A) Shafqatsiz va yovuz ish"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bolaning yovuzlikka taslim bo‘lmasligi nimani anglatadi?",
+   "options": [
+    "A) Beg‘ubor qalbi saqlanganini",
+    "B) Uning qo‘rqoqligini",
+    "C) Aqlli emasligini",
+    "D) Bobosiga nafratini"
+   ],
+   "answer": "A) Beg‘ubor qalbi saqlanganini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning «Salom, oq kema, bu men!» degan so‘zida nima bor?",
+   "options": [
+    "A) Pokiza ruhga e'zoz",
+    "B) Qahr va nafrat tuyg‘usi",
+    "C) Yengil va kulgili xayol",
+    "D) Shunchaki oddiy gap"
+   ],
+   "answer": "A) Pokiza ruhga e'zoz"
+  }
+ ]
+}

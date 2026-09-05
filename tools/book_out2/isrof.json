@@ -1,0 +1,81 @@
+{
+ "title": "Isrof",
+ "author": "Shayx Muhammad Sodiq Muhammad Yusuf",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+ yoshdagilar va oilalar uchun",
+  "topics": [
+   "odob",
+   "halollik",
+   "tejamkorlik",
+   "oila",
+   "ma'rifat",
+   "mas'uliyat"
+  ],
+  "theme": "Kitob isrof va tabzirning mohiyati, ularning inson, oila va jamiyat hayotiga yetkazadigan zararlari hamda turmush sohalarida tejamkorlik va mo‘tadillikka erishish yo‘llari haqida ma'lumot beradi.",
+  "summary": "Shayx Muhammad Sodiq Muhammad Yusufning «Isrof» kitobi diniy-ma'rifiy yo‘nalishda bo‘lib, inson hayotidagi moddiy va ma'naviy ne'matlardan to‘g‘ri foydalanish hamda isrofgarchilikning oldini olish masalalariga bag‘ishlangan. Kitob boshi mol-mulk va farzandlar dunyo hayotining ziynati ekani, ammo insonning haqiqiy qiymati uning iymoni hamda boqiy qoluvchi solih amallari bilan o‘lchanishi haqidagi bayon bilan boshlanadi. Muallif Islom dini inson tabiatidagi dunyo matohlariga bo‘lgan muhabbatni taqiqlamay, balki uni tartibga solishi va jilovlashini ta'kidlaydi. Bandalarga yer yuzidagi halol-pok rizqlarni yeyish va shaytonning izidan ergashmaslik buyurilgani uqtiriladi.\n\nKitobda mol-mulkni muhofaza qilish, uni esipastlarga topshirmaslik va shariatdagi «hajr» qoidasining mazmun-mohiyati yoritiladi. So‘ngra isrof hamda tabzir so‘zlarining lug‘aviy va istilohiy ma'nolari, ularning o‘zaro farqlari ilmiy jihatdan tushuntiriladi. Qur'oni Karim oyatlari va Payg‘ambarimiz alayhissalomning hadislari keltirilib, hatto ibodat va tahorat jarayonida ham suvni isrof qilish qoralanishi ko‘rsatib beriladi.\n\nAsarda isrofning kelib chiqish sabablari atroflicha tahlil qilinadi. Diniy ma'rifatning yetishmasligi, manmanlik, shuhratparastlik, maqtanchlik va boshqalarga ko‘r-ko‘rona taqlid qilish kabi illatlar isrofgarchilikning asosiy omillari sifatida ko‘rsatiladi. Shuningdek, isrofning shaxs, oila va jamiyatga yetkazadigan ma'naviy hamda iqtisodiy zararlari sanab o‘tiladi. Qiyomat kunida har bir banda umri, ilmi, moli va jismini qanday sarflagani bo‘yicha alohida so‘roq-savol qilinishi eslatiladi.\n\nMuallif zamonaviy hayotdagi dolzarb muammolar, jumladan, ichimlik suvi taqchilligi, elektr va gaz energiyasini behuda sarflash holatlarini ham tahlil qiladi. Dinda bo‘lmagan bid'at marosimlar, nikoh to‘ylari hamda turli yig‘inlardagi ortiqcha xarajatlar isrofning ko‘rinishlari sifatida tanqid qilinadi. Kiyinish odobi, kiyimdagi mo‘tadillik va kibrga berilmaslik masalalariga alohida e'tibor qaratiladi. Kitob xotimasida jamiyatdagi barcha qatlamlarni isrofga qarshi birgalikda kurashishga va tejamkorlikni solih amalga aylantirishga da'vat etiladi.",
+  "characters": "Sahl ibn Abdulloh, Sa'd ibn Mu'oz, Abdulloh ibn Umar, Oisha roziyallohu anha, Alisher Navoiy",
+  "conclusion": "Ushbu kitob o‘quvchiga ne'matlarning qadriga yetish va tejamkorlik odatlarini shakllantirishda yordam beradi. Har bir sohada mo‘tadillik va mas'uliyat tamoyillarini tushunib yetishga undaydi. Isrof va bid'at xatti-harakatlardan saqlanish orqali shaxsiy hamda jamiyat farovonligini ta'minlash yo‘llarini ko‘rsatadi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, nasihatomuz",
+  "for_whom": "Oila a'zolari, o‘smirlar va o‘z hayotida tejamkorlik hamda odob qoidalariga amal qilishni xohlagan kitobxonlar uchun.",
+  "events": [
+   "Mol-mulk va farzandlar dunyo hayotining ziynati ekani bayon etiladi.",
+   "Halol-pok rizq yeyish va shaytonning izidan ergashmaslik da'vati keltiriladi.",
+   "Mol-mulkni muhofaza qilish va esipastlarga uni bermaslik qoidasi tushuntiriladi.",
+   "Isrof va tabzir so‘zlarining lug‘aviy hamda istilohiy ma'nolari tahlil qilinadi.",
+   "Qur'oni Karim oyatlarida isrofgarchilikning qoralanishi ko‘rsatiladi.",
+   "Hadisi shariflar orqali tahoratda ham suvni isrof qilmaslik lozimligi ta'kidlanadi.",
+   "Isrofga olib keluvchi sabablar va manmanlikning salbiy oqibatlari sanab o‘tiladi.",
+   "Isrofning shaxs hamda jamiyat uchun keltiradigan zararlari ko‘rib chiqiladi.",
+   "Qiyomat kuni umr, ilm, mol va jism haqida so‘roq-savol bo‘lishi eslatiladi.",
+   "Tahoratxonalarda suvni isrof qilish holatlari va ularga barham berish yo‘llari muhokama qilinadi.",
+   "Ichimlik suvi va energiya manbalarini tejashning zamonaviy ahamiyati ko‘rsatiladi.",
+   "Dinda bo‘lmagan bid'at marosimlar hamda ulardagi isrof turlari bayon etiladi.",
+   "Nikoh to‘ylari va boshqa marosimlardagi me'yor hamda odoblar tushuntiriladi.",
+   "Kiyinish odobi, kiyimdagi mo‘tadillik va kibrga berilmaslik qoidasi keltiriladi.",
+   "Umr, texnika vositalari va maishiy xizmatlardan foydalanishdagi isrof holatlari tahlil qilinadi.",
+   "Kitob xotimasida isrofga qarshi birgalikda kurashish choralariga da'vat etiladi."
+  ],
+  "quotes": [
+   "Mol-mulk, bola-chaqa dunyo hayotining ziynatidir.",
+   "Islomda boqiy qoluvchi solih amallargina qiymat sanaladi.",
+   "Inson qiladigan har bir ishda haddan oshish isrofdir.",
+   "Harom taomlarni yeyish va harom ichimliklarni ichish isrofning eng kattasidir.",
+   "Bir tomchi suvni ham isrof qilmaslik, elektr quvvatini tejash, uni bir lahza ham behuda sarflamaslik, isrof qilmaslik jamiyatda yashovchi har bir fuqaroning burchidir.",
+   "Umr inson zotiga berilgan eng aziz va qimmatbaho ne'mat ekanini unutmaylik."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "O‘tgan ahli solihlarimizdan Sahl ibn Abdulloh: “Najot uch narsada – halol yeyish, farzlarni ado etish va Nabiy alayhissalomga ergashishdadir”, deganlar. Oyati karimada shaytonning izidan ergashish halol-pok rizqlarni yeyishga zid qilib qo‘yilmoqda. Ya'ni bu “Shaytonning yo‘lida yurganlargina halol-pok yemaydilar”, deganidir.",
+   "question": "Seningcha, kundalik hayotimizda halol va pok narsalarni tanlash insonning xulq-atvori hamda qarorlariga qanday ta'sir ko‘rsatadi?"
+  },
+  {
+   "part": 2,
+   "context": "Isrofgarchilikning eng katta sabablaridan biri aynan mana shu banddagi gapdir. Ma'rifatsiz odamlar kimo‘zarga isrof qilishni o‘zlariga kasb qilib oladilar. Bunday toifalarning ichida “Falonchi unday qilibdi, men undan o‘tkazmasam, ismimni boshqa qo‘yaman” shiori baland ko‘tarilgan bo‘ladi.",
+   "question": "Boshqalarga kimo‘zarga taqlid qilish yoki maqtanish istagi kishini qanday qiyinchiliklarga solib qo‘yishi mumkin deb o‘ylaysan? Hayotingda shunday holatga guvoh bo‘lganmisan?"
+  },
+  {
+   "part": 2,
+   "context": "Isrofni turmushning hamma sohasida ko‘rish mumkin. Masalan, elektr chiroqlarni olaylik. E'tibor beradigan bo‘lsak, yoshlarimiz bir xonaga kirib, chiroqni yoqib, ishini bitiradi, lekin chiqib ketishda uni o‘chirib qo‘yishni unutishadi. Yoqilgan chiroq uch-to‘rt kungacha ham o‘chmay turaveradi.",
+   "question": "O‘z uyingda yoki maktabingda resurslarni (masalan, elektr energiyasini yoki suvni) tejash uchun shaxsan o‘zing qanday foydali odatlarni yo‘lga qo‘ya olasan?"
+  },
+  {
+   "part": 3,
+   "context": "Amerikalik teri kasalliklari mutaxassislari o‘tkazgan tadqiqotlar natijasida g‘arblik ayollar yosh bo‘laturib husn va jozibalarini tez yo‘qotayotganlari, barvaqt ajin tushishi va uning tez ko‘payishi, aksincha, muslima ayollarning yetmish-sakson yoshda ham yuzlari chiroyli, ajinsiz va nurli holda saqlanishi, ularda g‘arb ayollarida ko‘p uchraydigan teri saratoni (raki) xastaligi deyarli kuzatilmayotgani ayon bo‘ldi. Boshqa sohalarda bo‘lgani kabi, kiyinish borasida ham musulmon inson avvalo halol-haromga e'tibor berishi lozim bo‘ladi.",
+   "question": "Kiyinishdagi mo‘tadillik va me'yorga amal qilish kishining o‘ziga bo‘lgan hurmati hamda salomatligida qanday aks etadi deb hisoblaysan?"
+  },
+  {
+   "part": 3,
+   "context": "Bir avtoulov ustasi quyidagilarni aytdi: “Hozirgi paytda isrof ko‘payib ketdi. Ammo eng katta isrof texnikada bo‘lmoqda. Odamlar avtoulovni sotib olib, haydashni bilishadi, xolos. Ammo uni avaylashni xayollariga ham keltirishmaydi. Texnika asboblariga o‘z vaqtida qarab, kerakli xizmatlarni qilib turmasa, uvol bo‘ladi.”",
+   "question": "O‘zing foydalanadigan buyumlar yoki texnika vositalarini avaylab-asrash va ularga o‘z vaqtida g‘amxo‘rlik qilish nima uchun muhim? O‘z tajribangdan misol keltir."
+  }
+ ]
+}

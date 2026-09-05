@@ -1,0 +1,477 @@
+{
+ "title": "Do‘stlar orttirish va odamlarga ta'sir o‘tkazish xususida",
+ "author": "Deyl Karnegi",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "muloqot",
+   "do‘stlik",
+   "shaxsiy rivojlanish",
+   "rahbarlik",
+   "mushfiqlik"
+  ],
+  "theme": "Odamlar bilan samimiy va hurmatli munosabat o‘rnatish, ularning qadr-qimmatini tan olish hamda ehtiyojlarini tushunish orqali do‘st orttirish va jamiyatda ijobiy ta'sir ko‘rsatish mumkin.",
+  "summary": "Deyl Karnegining ushbu mashhur kitobi odamlar bilan muomala qilish, ularning mehrini qozonish va o‘z fikriga ko‘ndirish san'atini o‘rgatadi. Muallif amaliy misollar, tarixiy voqealar va shaxsiy tajribasiga tayanib, muloqotning oltin qoidalarini bayon etadi. Asar to‘rt asosiy bo‘limdan iborat: odamlar bilan muloqot qilishning asosiy usullari (tanqid qilmaslik, samimiy maqtash va boshqalarning ehtiyojlarini tushunish), odamlarga yoqishning olti usuli (samimiy qiziqish, tabassum, ismlarni yodda tutish, yaxshi tinglovchi bo‘lish), o‘z nuqtayi nazariga ishontirish yo‘llari va g‘azab uyg‘otmay odamlarni boshqarish usullari. Asarda Teodor Ruzvelt, Abraham Linkoln va Endryu Karnegi kabi mashhur shaxslarning hayotiy tajribalari orqali xatolardan saboq chiqarish va samimiyat yo‘li bilan muvaffaqiyatga erishish usullari ko‘rsatib beriladi.",
+  "characters": "Deyl Karnegi — kitob muallifi va tajribali murabbiy; Abraham Linkoln — bosiqlik va boshqalarni tanqid qilmaslik sabog‘ini bergan AQSH prezidenti; Teodor Ruzvelt — insonlarga samimiy e'tibor va hurmat ko‘rsatuvchi rahbar namunasi; Endryu Karnegi — odamlar ismini yodda tutish va ularni rag‘batlantirish orqali muvaffaqiyatga erishgan po‘lat qiroli.",
+  "conclusion": "Kitob o‘quvchida samimiyat, sabr-toqat, kamtarlik va o‘zgalar qadrini tan olish kabi yuksak insoniy fazilatlarni shakllantiradi. U yoshlarga g‘azab va bahslashish o‘rniga do‘stona hamkorlik va tinglay bilish ko‘nikmalarini singdiradi. Ota-onalar uchun ushbu kitob farzandidagi muloqot madaniyatini va yetakchilik xislatlarini o‘stirishda bebaho manba bo‘lib xizmat qiladi.",
+  "difficulty": "o‘rta",
+  "mood": "ilhomlantiruvchi, amaliy, o‘ylantiruvchi",
+  "for_whom": "Muloqot ko‘nikmalarini rivojlantirishni, odamlar bilan do‘stona munosabat o‘rnatishni va yetakchilik xislatlarini egallashni xohlaydigan yoshlar uchun.",
+  "events": [
+   "1. Muallif muloqot faol jarayon ekanini va faqat amaliyotda qo‘llangan bilimlar xotirada qolishini ta'kidlaydi.",
+   "2. Karnegi kurslarida to‘plangan amaliy tajribalar hamda ushbu kitobning yaratilish tarixi haqida so‘z yuritiladi.",
+   "3. Muloqot va yetakchilik qobiliyati har qanday texnik bilimlardan ko‘ra ko‘proq muvaffaqiyat keltirishi ko‘rsatiladi.",
+   "4. Boshqalarni tanqid qilish va ayblash o‘rniga ularni tushunishga urinish kerakligi uqtiriladi.",
+   "5. Linkolnning general Midga yozgan va jo‘natmagan maktubi misolida bosiqlik va sabr-toqat ko‘rsatiladi.",
+   "6. Odamlarda shaxsiy qadr va ahamiyat hissini uyg‘otish muloqotning katta siri ekani tushuntiriladi.",
+   "7. Boshqalarning ehtiyoj va qiziqishlariga e'tibor qaratish, xo‘rakni baliqning ta'biga qarab tanlash lozimligi aytiladi.",
+   "8. Odamlarga samimiy qiziqish bildirish va tabassum qilish orqali ularning mehrini qozonish yo‘li ko‘rsatiladi.",
+   "9. Insonning ismi u uchun eng yoqimli so‘z ekani va ismlarni yodda tutishning muhimligi uqtiriladi.",
+   "10. Yaxshi tinglovchi bo‘lish va suhbatdoshni o‘zi haqida gapirishga undash tamoyili tushuntiriladi.",
+   "11. Bahsda g‘olib bo‘lib bo‘lmasligi, eng yaxshi g‘alaba bahsdan qochish ekani ta'kidlanadi.",
+   "12. Boshqalarga nohaqligini yuziga solmay, ularning fikrini va obro‘sini hurmat qilish uqtiriladi.",
+   "13. Agar xato qilgan bo‘lsangiz, uni darhol va ochiqchasiga tan olish zarurligi politsiyachi bilan bo‘lgan voqea orqali ko‘rsatiladi.",
+   "14. Do‘stona yondashuv va bir tomchi asal odamlarni ko‘ndirishda tahdid va g‘azabdan ko‘ra kuchliroq ekani aytiladi.",
+   "15. Suqrot usuli orqali suhbatdoshdan dastlab ijobiy javoblarni olish texnikasi tushuntiriladi.",
+   "16. Boshqalarga o‘z fikrini aytishga va hamkorlik qilishga imkon berish muhimligi uqtiriladi.",
+   "17. Tanqidiy fikr bildirganda, avvalo maqtovdan va shaxsiy xatolarni eslashdan boshlash lozimligi ko‘rsatiladi.",
+   "18. Buyruq berish o‘rniga savollar berish orqali odamlar g‘ururini saqlab qolish va ularni ruhlantirish mumkinligi aytiladi.",
+   "19. Xatoni tuzatish oson degan tasavvur paydo qilish va kichik muvaffaqiyatni ham samimiy maqtash sabog‘i beriladi.",
+   "20. Iltimos va topshiriqlarni odamlar xursandchilik bilan bajarishlari uchun ularning shaxsiy manfaatlarini tushuntirish kerakligi uqtiriladi."
+  ],
+  "quotes": [
+   "O‘qish – faol jarayon. Biz amaliyotda o‘rganamiz.",
+   "Ta'limning buyuk maqsadi – bilim emas, balki harakatdir.",
+   "Maqtovlaringizni vijdonan va samimiy bildiring.",
+   "Unutmang, ismi qaysi tilda talaffuz qilinmasin, bu o‘sha inson uchun yoqimli va nihoyatda muhimdir.",
+   "Boshqa odamlarga samimiy qiziqish bildiring.",
+   "Odamga o‘z obro‘sini saqlab qolishiga imkoniyat bering."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bernard Shou bilimlarni egallash haqida nima degan edi?",
+   "options": [
+    "A) Inson faqat amaliyotda o‘rganadi",
+    "B) Kitob o‘qish eng muhim manbadir",
+    "C) O‘qitilgan odam hech narsa o‘rganolmaydi",
+    "D) Bilim olish doimiy mehnatdir"
+   ],
+   "answer": "C) O‘qitilgan odam hech narsa o‘rganolmaydi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jon D. Rokfeller odamlar bilan muloqot qilish qobiliyatini nimaga o‘xshatgan?",
+   "options": [
+    "A) Oltin yoki kumushga",
+    "B) Qand yoki qahvaga",
+    "C) Qimmatbaho javohirga",
+    "D) Kitob va bilimlarga"
+   ],
+   "answer": "B) Qand yoki qahvaga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Linkoln Gettisberg jangidan so‘ng general Midga yozgan maktubni nima qildi?",
+   "options": [
+    "A) Zudlik bilan pochtadan jo‘natdi",
+    "B) Maktubni yirtib tashladi",
+    "C) Jo‘natmadi, qog‘ozlari orasida qoldi",
+    "D) O‘g‘liga berib yubordi"
+   ],
+   "answer": "C) Jo‘natmadi, qog‘ozlari orasida qoldi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kitobdan eng yuqori manfaat olish uchun tavsiya etilgan amallarni ajrating.",
+   "options": [
+    "A) Diqqat bilan o‘qish va qo‘llash",
+    "B) Tezda ko‘zdan kechirib chiqish",
+    "C) Faqat qoidalar ro‘yxatini yodlash",
+    "D) Kitobni do‘stlarga sovg‘a qilish"
+   ],
+   "answer": "A) Diqqat bilan o‘qish va qo‘llash"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Linkoln general Midga yozgan achchiq maktubini jo‘natishdan tiqildi?",
+   "options": [
+    "A) Generalning xafa bo‘lishidan qo‘rqdi",
+    "B) Vaziyatni uning o‘rnida his qildi",
+    "C) Maktubni yo‘qotib qo‘ydi",
+    "D) Urush tugaganini eshitib qoldi"
+   ],
+   "answer": "B) Vaziyatni uning o‘rnida his qildi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega muallif odamlarni tanqid qilishni arixonani to‘ntarishga o‘xshatadi?",
+   "options": [
+    "A) Tanqid faqat salbiy oqibat beradi",
+    "B) Arixona juda foydali bo‘lgani uchun",
+    "C) Asal yig‘ish oson bo‘lgani uchun",
+    "D) Tanqid odamni darhol o‘zgartiradi"
+   ],
+   "answer": "A) Tanqid faqat salbiy oqibat beradi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Linkolnning g‘azablangan paytda maktubni jo‘natmagani haqida qanday baho berish mumkin?",
+   "options": [
+    "A) Bu bosiqlik va donolikdir",
+    "B) Bu qo‘rqoqlik va ikkilanishdir",
+    "C) Bu mas'uliyatsizlik ko‘rinishidir",
+    "D) Bu vaqtni behuda yo‘qotishdir"
+   ],
+   "answer": "A) Bu bosiqlik va donolikdir"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Spenserning «Ta'limning buyuk maqsadi – bilim emas, harakatdir» fikri nimani anglatadi?",
+   "options": [
+    "A) Nazariyani amalda qo‘llash muhimligini",
+    "B) Kitob o‘qish keraksiz ekanini",
+    "C) Faqat sport bilan shug‘ullanishni",
+    "D) Bilim olish asosiyligini"
+   ],
+   "answer": "A) Nazariyani amalda qo‘llash muhimligini"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Emerson va o‘g‘li buzoqni molxonaga kiritishda qanday xato qilishdi?",
+   "options": [
+    "A) Buzoqning istagini hisobga olmadi",
+    "B) Unga shirin yem berishdi",
+    "C) Boshqa odamlardan yordam so‘radi",
+    "D) Buzoqni erkin qo‘yib yubordi"
+   ],
+   "answer": "A) Buzoqning istagini hisobga olmadi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Uoll-strit banki prezidenti har shanba kuni o‘z faoliyatini qanday tahlil qilardi?",
+   "options": [
+    "A) Xatolar va yaxshi ishlarni saralab",
+    "B) Faqat daromadlarini hisoblab",
+    "C) Xodimlarni jazolash yo‘li bilan",
+    "D) Boshqalardan kamchilik qidirib"
+   ],
+   "answer": "A) Xatolar va yaxshi ishlarni saralab"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ko‘zboyloqchi Tyorston sahnaga chiqishdan oldin ichida nima deb takrorlardi?",
+   "options": [
+    "A) Men eng kuchli sehrgarman",
+    "B) Men tomoshabinlarimni yaxshi ko‘raman",
+    "C) Men ko‘p pul topishim kerak",
+    "D) Bugun tomosha zo‘r o‘tadi"
+   ],
+   "answer": "B) Men tomoshabinlarimni yaxshi ko‘raman"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Endryu Karnegi bolaligida quyonlariga o‘t terish uchun bolalarga nima va'da qilgan?",
+   "options": [
+    "A) Pul berishni va'da qildi",
+    "B) Quyonlarga ularning ismini qo‘yishni",
+    "C) Ularga shirinliklar berishni",
+    "D) O‘zi ham yordam berishni"
+   ],
+   "answer": "B) Quyonlarga ularning ismini qo‘yishni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Endryu Karnegi va Pulman o‘rtasidagi raqobat qanday kelishuv bilan tugadi?",
+   "options": [
+    "A) Bir-birini sudda yutib oldi",
+    "B) Birlashib yangi kompaniya tuzishdi",
+    "C) Pulman biznesdan butunlay ketdi",
+    "D) Karnegi o‘z zavodini sotib yubordi"
+   ],
+   "answer": "B) Birlashib yangi kompaniya tuzishdi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Odamlarga yoqishning olti usuliga kiradigan qoidalarni belgilang.",
+   "options": [
+    "A) Samimiy qiziqish va tabassum qilish",
+    "B) Boshqalarni doimiy tanqid qilish",
+    "C) O‘z muammolari haqida gapirish",
+    "D) Bahslarda doimo g‘olib bo‘lish"
+   ],
+   "answer": "A) Samimiy qiziqish va tabassum qilish"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega pochta xodimi muallifning sochlar haqidagi maqtovidan keyin juda quvondi?",
+   "options": [
+    "A) U pul mukofoti olgani uchun",
+    "B) Samimiy e'tirof va qadr his qilgani uchun",
+    "C) Ishdan ertaroq javob olgani uchun",
+    "D) Muallif u bilan bahslashgani uchun"
+   ],
+   "answer": "B) Samimiy e'tirof va qadr his qilgani uchun"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Endryu Karnegi po‘lat zavodiga Edgar Tomson nomini berdi?",
+   "options": [
+    "A) Edgar Tomson uning do‘sti edi",
+    "B) Undan rels buyurtmasini olish uchun",
+    "C) Zavodni u moliyalashtirgani uchun",
+    "D) Bu otasining ismi bo‘lgani uchun"
+   ],
+   "answer": "B) Undan rels buyurtmasini olish uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jorj Amakijonning keksa yoshida yangi do‘stlar orttirganiga qanday baho berish mumkin?",
+   "options": [
+    "A) Inson har yoshda rivojlanishi mumkin",
+    "B) Bu yoshda do‘st orttirish behuda",
+    "C) U faqat vaqtini yo‘qotgan",
+    "D) Bu faqat omad tufayli bo‘ldi"
+   ],
+   "answer": "A) Inson har yoshda rivojlanishi mumkin"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif samimiy tabassum haqida «u munosabatlar bozorida qimmat turadi» deganda nimani nazarda tutadi?",
+   "options": [
+    "A) Tabassum ulkan boylik va qadrga ega",
+    "B) Tabassum qilish uchun pul to‘lanadi",
+    "C) Faqat boy odamlar tabassum qiladi",
+    "D) Tabassum sotiladigan mahsulotdir"
+   ],
+   "answer": "A) Tabassum ulkan boylik va qadrga ega"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Barbara Uilson qizi Laura bilan munosabatini qanday yaxshilab oldi?",
+   "options": [
+    "A) Qizini qattiqroq jazolay boshladi",
+    "B) Qizini tinglab, do‘st bo‘lish orqali",
+    "C) Unga qimmatbaho sovg‘alar berdi",
+    "D) Uni boshqa maktabga o‘tkazdi"
+   ],
+   "answer": "B) Qizini tinglab, do‘st bo‘lish orqali"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Politsiyachi muallifning itini zanjirsiz ko‘rganda, muallif o‘zini qanday tutdi?",
+   "options": [
+    "A) Politsiyachi bilan bahslasha boshladi",
+    "B) O‘z aybini darhol va ochiq tan oldi",
+    "C) Itini olib qochib ketdi",
+    "D) Qoidalarni bilmasligini aytdi"
+   ],
+   "answer": "B) O‘z aybini darhol va ochiq tan oldi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Charlz Shvab oqsayotgan sex ishchilarini ruhlantirish uchun nima qildi?",
+   "options": [
+    "A) Polga smena natijasini yozib qo‘ydi",
+    "B) Hammaga ish haqini oshirib berdi",
+    "C) Yangi ishchilarni ishga qabul qildi",
+    "D) Sex boshlig‘ini ishdan bo‘shatdi"
+   ],
+   "answer": "A) Polga smena natijasini yozib qo‘ydi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Laymen Ebbot xotinining mayin shamasidan so‘ng xutba qo‘lyozmasini nima qildi?",
+   "options": [
+    "A) Xotinidan g‘azablanib uydan ketdi",
+    "B) Qo‘lyozmani yirtib, og‘zaki so‘zladi",
+    "C) Qo‘lyozmani o‘zgarmasdan o‘qib berdi",
+    "D) Boshqa ruhoniydan yordam so‘radi"
+   ],
+   "answer": "B) Qo‘lyozmani yirtib, og‘zaki so‘zladi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Odamlarni boshqarishda g‘azab uyg‘otmaslik uchun to‘g‘ri ketma-ketlik qanday?",
+   "options": [
+    "A) Avval maqtash, so‘ng xatoni bildirish",
+    "B) Avval jazolash, so‘ng maqtash",
+    "C) Darhol xatoni yuziga solish",
+    "D) Faqat shaxsiy xatolarni ko‘rsatish"
+   ],
+   "answer": "A) Avval maqtash, so‘ng xatoni bildirish"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Charlz Shvab sex poliga bo‘r bilan raqam yozib ketgan edi?",
+   "options": [
+    "A) Ishchilarda musobaqa ruhini uyg‘otish uchun",
+    "B) Polni tozalash kerakligini bildirish uchun",
+    "C) Smena boshlig‘iga xabar qoldirish uchun",
+    "D) Shunchaki zerikkani uchun shunday qildi"
+   ],
+   "answer": "A) Ishchilarda musobaqa ruhini uyg‘otish uchun"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega tanqidda «lekin» so‘zini «va» so‘ziga almashtirish tavsiya etiladi?",
+   "options": [
+    "A) Maqtovning qadrini saqlab qolish uchun",
+    "B) Gapni qisqaroq qilish uchun",
+    "C) Til qoidalariga rioya qilish uchun",
+    "D) Suhbatdoshni chalg‘itish uchun"
+   ],
+   "answer": "A) Maqtovning qadrini saqlab qolish uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Rahbarning majlisda xato qilgan xodimasini hamkasblari oldida qo‘llagani qanday samara berdi?",
+   "options": [
+    "A) Xodima yanada mas'uliyat bilan ishladi",
+    "B) Xodima ishdan bo‘shashga qaror qildi",
+    "C) Boshqa xodimlar rahbar g‘azablandi",
+    "D) Ishda hech qanday o‘zgarish bo‘lmadi"
+   ],
+   "answer": "A) Xodima yanada mas'uliyat bilan ishladi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ernest Jentning maysazorni payhon qiladigan bolani «izquvar» etib tayinlaganiga qanday baho beriladi?",
+   "options": [
+    "A) Bu mas'uliyat berish orqali tarbiyalashdir",
+    "B) Bu bolani behuda jazolash ko‘rinishidir",
+    "C) Bu noto‘g‘ri va samarasiz qarordir",
+    "D) Bu bolaning ustidan kulishdir"
+   ],
+   "answer": "A) Bu mas'uliyat berish orqali tarbiyalashdir"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Sent-Ekzyuperining «Odamning qadr-qimmatini haqoratlash – jinoyatdir» fikri nimaga undaydi?",
+   "options": [
+    "A) Boshqalarning obro‘sini doim saqlashga",
+    "B) Faqat o‘z manfaatingni o‘ylashga",
+    "C) Boshqalarning xatosini darhol aytishga",
+    "D) Odamlar bilan muloqotni to‘xtatishga"
+   ],
+   "answer": "A) Boshqalarning obro‘sini doim saqlashga"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Napoleonnning «Erkaklarga o‘yinchoqlar yoqadi» iborasi ushbu kitobda nimani anglatadi?",
+   "options": [
+    "A) Unvon va e'tirof odamlarni ruhlantirishini",
+    "B) Kattalarga o‘yinchoq sovg‘a qilish kerakligini",
+    "C) Urushda o‘yinchoqlar muhim rol o‘ynashini",
+    "D) Odamlar doimo bolaligicha qolishini"
+   ],
+   "answer": "A) Unvon va e'tirof odamlarni ruhlantirishini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Klerens Jon o‘g‘li Devidga matematikani o‘rganishga qanday yordam berdi?",
+   "options": [
+    "A) Kartochkalar o‘yini va maqtov orqali",
+    "B) Qattiq intizom va jazo qo‘llab",
+    "C) Qimmatbaho repetitor yollab",
+    "D) Maktabini o‘zgartirish orqali"
+   ],
+   "answer": "A) Kartochkalar o‘yini va maqtov orqali"
+  }
+ ]
+}

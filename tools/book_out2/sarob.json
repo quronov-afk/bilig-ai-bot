@@ -1,0 +1,476 @@
+{
+ "title": "Sarob",
+ "author": "Abdulla Qahhor",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "17-19",
+  "age_hint": "16+",
+  "topics": [
+   "orzu va sarob",
+   "hayot yo‘li",
+   "ma'naviy inqiroz",
+   "jamiyat va shaxs",
+   "muhabbat va xiyonat"
+  ],
+  "theme": "Asarda g‘oyaviy adashish, yengil shuhrat va maishatga berilish shaxsni ma'naviy halokatga hamda fojiaga olib kelishi ko‘rsatiladi.",
+  "summary": "Rahimjon Saidiy universitetga kirish jarayonida chiroyli qiz Munisxon bilan tanishadi. Uning sadoqatli do‘sti Ehson Moskvaga o‘qishga ketadi. Saidiy adabiyotga va shuhratparastlikka berilib, asta-sekin o‘z yo‘lidan adashadi. Munisxonning akasi Salimxon va Murodxo‘ja domla kabi soxta hamda qutquchi kishilar ta'siriga tushib qoladi. U Munisxondan uzoqlashib, Murodxo‘ja domlaning boyligiga uchadi va uning qizi Soraxonga uylanadi. Ammo bu maishat va soxta obro‘ unga baxt keltirmaydi. Kolxozlashtirish va tuzum o‘zgarishlari natijasida Murodxo‘ja domla va uning sheriklari inqirozga uchrashadi, noqonuniy kirdikorlari ochiladi. Saidiy o‘zining butun orzulari, shuhrati va bosib o‘tgan yo‘li xuddi sarob kabi puflangan pufak ekanini anglaydi. Ruhiy tushkunlik va umidsizlikka tushgan Saidiy qahraton qish chog‘ida uydan chiqib ketadi va izg‘irin bo‘ronda dashtda muzlab halok bo‘ladi.",
+  "characters": "Rahimjon Saidiy — ziddiyatli, xudbinlik va shuhratparastlikka berilib adashgan yosh yozuvchi; Munisxon — go‘zal, bilimdon, Saidiy xush ko‘rgan qiz; Ehson — Saidiyning samimiy, mehnatsevar va to‘g‘ri yo‘lni tanlagan do‘sti, shifokor; Murodxo‘ja domla — mol-dunyo va soxta maishatga berilgan, Saidiyni o‘z manfaatlari yo‘lida foydalangan kishi; Salimxon — Munisxonning akasi, Saidiyga salbiy ta'sir ko‘rsatgan boyvachcha; Soraxon — Murodxo‘ja domlaning qizi, Saidiyning turmush o‘rtog‘i.",
+  "conclusion": "Kitob kitobxonga hayotda to‘g‘ri va halol yo‘lni tanlash nechoqlik muhimligini o‘rgatadi. Yengil maishat va xudbinlik insonni halokatga yetaklashini ko‘rsatadi. Haqiqiy va soxta qadriyatlarni ajrata bilish sabog‘ini beradi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Murakkab taqdirlar va ruhiy kechinmalar haqida o‘ylaydigan, hayotiy saboq olmoqchi bo‘lgan yoshlarga.",
+  "events": [
+   " Saidiy universitet zallarida birinchi marta Munisxon bilan to‘qnash keladi.",
+   " Ehson do‘sti Saidiy bilan xayrlashib Moskvaga meditsina fakultetiga o‘qishga ketadi.",
+   " Saidiy Markazdan qog‘oz olib kelib universitetga o‘qishga qabul qilinadi.",
+   " Saidiy dars vaqtida keksa professorga va 'to‘ngak' studentga e'tiroz bildiradi.",
+   " Munisxon va Saidiy birga dars tayyorlab, yaqinroq munosabatda bo‘la boshlaydilar.",
+   " Saidiyning birinchi hikoyasi jurnalda bosilib chiqadi va u xursand bo‘ladi.",
+   " Saidiy yer islohoti komissiyasida ishlaydi va turli dehqonlar bilan uchrashadi.",
+   " Saidiy Salimxon va Murodxo‘ja domla kabi kishilar davrasiga qo‘shiladi.",
+   " Murodxo‘ja domla Saidiyni o‘z mehmonxonasiga ko‘chirib o‘tkazadi.",
+   " Saidiy Murodxo‘ja domlaning qizi Soraxon bilan tanishadi.",
+   " Ehson Moskvadan shifokor bo‘lib qaytadi va shahar sog‘liqni saqlash bo‘limida ishlaydi.",
+   " Saidiy Soraxonga uylanadi va domlaning qasriday uyida yashay boshlaydi.",
+   " Muhammadrajab soliq va moliyaviy muammolar tufayli qiyin ahvolda qoladi.",
+   " Siyosiy idora Mirza Muhiddin va Abbosxonni qamoqqa oladi.",
+   " Murodxo‘ja domla qishloqqa borib, kolxoz tuzilishidan tushkunlikda qaytadi.",
+   " Saidiy o‘zining hayoti va ijodi xato yo‘ldan ketganini his eta boshlaydi.",
+   " Saidiyning ruhiyati yomonlashadi va u o‘zini yolg‘iz hamda chorasiz his qiladi.",
+   " Saidiy xonasidagi katta ko‘zguni xrustal vaza bilan urib chilparchin qiladi.",
+   " Saidiy qahraton va bo‘ronli tunda uydan chiqib dasht tomonga piyoda ketadi.",
+   " Saidiy izg‘irinda ko‘ziga ko‘ringan xira sarob gulxanga intilib muzlab halok bo‘ladi."
+  ],
+  "quotes": [
+   "Boshga tushgandan keyin kishi suzishga emas, uchishga ham urinib ko‘radi.",
+   "Yashashdan charchabman...",
+   "Hayot jomin ko‘tarib yumuq ko‘z bilan, zar qirg‘oqlarga ko‘z yoshi to‘kamiz...",
+   "Olamda senga taalluqli hech narsa qolgani yo‘q, ketaver.",
+   "Akamning aytgani rost: O‘zingni hech narsa bilmagan, ko‘pchilikning ishiga uquvsiz qilib ko‘rsatsang, qulog‘ing tinch bo‘ladi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saidiy universitet koridorida birinchi kim bilan to‘qnash keldi?",
+   "options": [
+    "A) Munisxon bilan",
+    "B) Ehson bilan",
+    "C) Sharif bilan",
+    "D) Shafrin bilan"
+   ],
+   "answer": "A) Munisxon bilan"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ehson qaysi shaharga o‘qishga ketadigan bo‘ldi?",
+   "options": [
+    "A) Toshkentga",
+    "B) Moskvaga",
+    "C) Samarqandga",
+    "D) Orenburgga"
+   ],
+   "answer": "B) Moskvaga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ehson Moskvada qaysi fakultetda o‘qimoqchi edi?",
+   "options": [
+    "A) Adabiyot fakultetida",
+    "B) Meditsina fakultetida",
+    "C) Tarix fakultetida",
+    "D) Qishloq xo‘jalik fakultetida"
+   ],
+   "answer": "B) Meditsina fakultetida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saidiyning otasi o‘tmishda qanday kasb bilan shug‘ullangan edi?",
+   "options": [
+    "A) Muallim edi",
+    "B) Do‘kondor edi",
+    "C) Temirchi korxona ochgan edi",
+    "D) Shifokor edi"
+   ],
+   "answer": "C) Temirchi korxona ochgan edi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Saidiy va Munisxon darslarni qayerda tayyorlashga kelishib olishadi?",
+   "options": [
+    "A) Universitet bog‘ida",
+    "B) Saidiyning hujrasida",
+    "C) Kutubxonaning zallarida",
+    "D) Choyxonaning alohida xonasida"
+   ],
+   "answer": "B) Saidiyning hujrasida"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Saidiy nega Shafrinni hujrada xushlamay muomala qilardi?",
+   "options": [
+    "A) Unga qarzdor bo‘lgani uchun",
+    "B) O‘zini unga yaqin his qilmagani uchun",
+    "C) Shafrin unga adabiyotni o‘rgatgani uchun",
+    "D) Shafrin uydan narsalarini o‘g‘irlagani uchun"
+   ],
+   "answer": "B) O‘zini unga yaqin his qilmagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Pochchasi Muhammadrajab nega Saidiyga ilgarigidek yaxshi muomala qilmay qo‘ydi?",
+   "options": [
+    "A) Saidiy o‘qishga kirmoqchi bo‘lgani uchun",
+    "B) Saidiy boshqa shaharga ko‘chgani uchun",
+    "C) Saidiy uning savdosini buzgani uchun",
+    "D) Saidiy uning do‘konini yoqib yuborgani uchun"
+   ],
+   "answer": "A) Saidiy o‘qishga kirmoqchi bo‘lgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Saidiyning professorga e'tiroz bildirishi uning qanday xarakterini ko‘rsatadi?",
+   "options": [
+    "A) Kamtar va muloyimligini",
+    "B) Manmanlik va qo‘polligini",
+    "C) Sabr va chidamli ekanini",
+    "D) Mehnatsevar va halolligini"
+   ],
+   "answer": "B) Manmanlik va qo‘polligini"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Saidiyning Munisxonga intilishini qaysi o‘xshatish orqali ifodalaydi?",
+   "options": [
+    "A) Yetib bo‘lmas ufqqa o‘xshatib",
+    "B) Oqar daryoga o‘xshatib",
+    "C) Yonayotgan shamga o‘xshatib",
+    "D) Baland tog‘ga o‘xshatib"
+   ],
+   "answer": "A) Yetib bo‘lmas ufqqa o‘xshatib"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Munisxonning sirpanib yiqilayotgandagi holati matnda qanday ta'sirlantiruvchi tasvirlangan?",
+   "options": [
+    "A) U birdan baland qichqirdi",
+    "B) Vahima bilan nafasini ichiga yutdi",
+    "C) Saidiyga qarab qattiq kulib yubordi",
+    "D) Indamay o‘rnidan turib ketdi"
+   ],
+   "answer": "B) Vahima bilan nafasini ichiga yutdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saidiyning birinchi hikoyasi bosilgan jurnalni u qayerdan sotib oldi?",
+   "options": [
+    "A) Kutubxonadan",
+    "B) Gazeta budkasidan",
+    "C) Universitet do‘konidan",
+    "D) Do‘sti Kenjadan"
+   ],
+   "answer": "B) Gazeta budkasidan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saidiy yer islohoti vaqtida qaysi dehqon bilan suhbatlashdi?",
+   "options": [
+    "A) Yo‘lchiboy bilan",
+    "B) Sobir bilan",
+    "C) Jalol bilan",
+    "D) Rahmon bilan"
+   ],
+   "answer": "A) Yo‘lchiboy bilan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saidiy Murodxo‘ja domlaning uyida kim bilan tanishdi?",
+   "options": [
+    "A) Zamira bilan",
+    "B) Soraxon bilan",
+    "C) Maryam bilan",
+    "D) Salima bilan"
+   ],
+   "answer": "B) Soraxon bilan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Murodxo‘ja domlaning xonasida qaysi buyuk shaxsning kichik haykali bor edi?",
+   "options": [
+    "A) Navoiyning",
+    "B) Leninning",
+    "C) Pushkinning",
+    "D) Bedilning"
+   ],
+   "answer": "B) Leninning"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Saidiy va Murodxo‘ja domla munosabatlarida qanday bosqichlar yuz berdi?",
+   "options": [
+    "A) Dushmanlikdan do‘stlikka o‘tdi",
+    "B) Avval mehmonga keldi, so‘ng ko‘chdi",
+    "C) Avval urishdi, so‘ng yarashishdi",
+    "D) Birga o‘qidi, so‘ng ajralishdi"
+   ],
+   "answer": "B) Avval mehmonga keldi, so‘ng ko‘chdi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Soraxon Saidiy bilan qanday bemani o‘yin o‘ynadi?",
+   "options": [
+    "A) Qarta o‘ynadi",
+    "B) Pashshaning boshini kesib uchirdi",
+    "C) Kapalak quvladi",
+    "D) Qushlarni qafasga soldi"
+   ],
+   "answer": "B) Pashshaning boshini kesib uchirdi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Saidiy Munisxondan ko‘ra Murodxo‘ja domlaning uyini afzal ko‘rdi?",
+   "options": [
+    "A) Domla unga ilm bergani uchun",
+    "B) Boylik va maishatga berilgani uchun",
+    "C) Munisxon uni ko‘rishni xohlamagani uchun",
+    "D) Ehson shuni maslahat bergani uchun"
+   ],
+   "answer": "B) Boylik va maishatga berilgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muhammadrajabga to‘qqiz ming so‘m soliq chiqqanda u nima qildi?",
+   "options": [
+    "A) Darhol hamma soliqni to‘ladi",
+    "B) Inspektorga pora berishga urindi",
+    "C) Mamlakatdan qochib ketdi",
+    "D) Saidiyga borib shikoyat qildi"
+   ],
+   "answer": "B) Inspektorga pora berishga urindi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Saidiyning haqiqiy do‘sti Ehsonning maslahatlariga kirmagani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — u mustaqil bo‘ldi",
+    "B) Noto‘g‘ri — bu uni halokatga boshladi",
+    "C) To‘g‘ri — Ehson yomon odam edi",
+    "D) Noto‘g‘ri — Ehson o‘qimagan edi"
+   ],
+   "answer": "B) Noto‘g‘ri — bu uni halokatga boshladi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Jamol Karimiyning ko‘p ichishini va mastligini qanday tasvirlaydi?",
+   "options": [
+    "A) U juda aqlli ko‘rinardi",
+    "B) U zinasidan to‘ntarilib tushdi",
+    "C) U darhol uxlab qoldi",
+    "D) U hamma bilan urishdi"
+   ],
+   "answer": "B) U zinasidan to‘ntarilib tushdi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Murodxo‘ja domla qishloqdan qaytgach, kayfiyati qanday edi?",
+   "options": [
+    "A) Juda xursand va tetik",
+    "B) Xafa va tushkun ahvolda",
+    "C) O‘ta xotirjam va kulimsirab",
+    "D) Beparvo va uyqisirab"
+   ],
+   "answer": "B) Xafa va tushkun ahvolda"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mirza Muhiddin va Abbosxonni qaysi idora qamoqqa olgan edi?",
+   "options": [
+    "A) Siyosiy idora",
+    "B) Sud idorasi",
+    "C) Maktab idorasi",
+    "D) Sog‘liqni saqlash bo‘limi"
+   ],
+   "answer": "A) Siyosiy idora"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saidiy xonasini tark etishdan oldin nimani chilparchin qilib sindirdi?",
+   "options": [
+    "A) Deraza oynasini",
+    "B) Kattakon toshoynani (ko‘zguni)",
+    "C) Choynak va piyolani",
+    "D) Ish stolini"
+   ],
+   "answer": "B) Kattakon toshoynani (ko‘zguni)"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Saidiy qahraton tunda shahardan chiqib qayoqqa qarab yurdi?",
+   "options": [
+    "A) Qishloqqa qarab",
+    "B) Dasht va daryo tomonga",
+    "C) Universitet binosiga",
+    "D) Ehsonning uyiga"
+   ],
+   "answer": "B) Dasht va daryo tomonga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Murodxo‘ja domlaning rejalari barbod bo‘lishiga qaysi voqealar sabab bo‘ldi?",
+   "options": [
+    "A) Saidiyning o‘qishni bitirgani va ketgani",
+    "B) Kolxozlashish va sheriklarining qamalishi",
+    "C) Soraxonning boshqa shaharga ko‘chgani",
+    "D) Ehsonning unga qarshi maqola yozgani"
+   ],
+   "answer": "B) Kolxozlashish va sheriklarining qamalishi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Saidiy oxir-oqibat nega o‘z hayotini 'sarob' deb hisobladi?",
+   "options": [
+    "A) Pul topa olmagani uchun",
+    "B) Orzulari soxtalik ustiga qurilgani uchun",
+    "C) Moskvaga borolmagani uchun",
+    "D) Kitoblari sotilmagani uchun"
+   ],
+   "answer": "B) Orzulari soxtalik ustiga qurilgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Saidiy bo‘ronli tunda nega ortiga qaytmasdan dashtga ketdi?",
+   "options": [
+    "A) Daryodan suv olmoqchi edi",
+    "B) Yashashdan butunlay umidi uzilgani uchun",
+    "C) Bo‘ronda adashib qolgani uchun",
+    "D) Do‘sti Ehsonni qidirgani uchun"
+   ],
+   "answer": "B) Yashashdan butunlay umidi uzilgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Saidiyning ma'naviy inqirozi va fojiali o‘limidan qanday xulosa chiqarish mumkin?",
+   "options": [
+    "A) Shuhrat ketidan quvish baxt keltirmaydi",
+    "B) Har qanday yo‘l bilan boyish kerak",
+    "C) Kattalar maslahatiga kirish shart emas",
+    "D) Ilm olish insonni barbod qiladi"
+   ],
+   "answer": "A) Shuhrat ketidan quvish baxt keltirmaydi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Murodxo‘ja domlaning xatti-harakatlariga qanday baho berish mumkin?",
+   "options": [
+    "A) Halol va saxovatli inson",
+    "B) O‘z manfaatini o‘ylaydigan xudbin",
+    "C) Yoshlarga to‘g‘ri yo‘l ko‘rsatuvchi",
+    "D) El-yurt g‘amini yeydigan fidoyi"
+   ],
+   "answer": "B) O‘z manfaatini o‘ylaydigan xudbin"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar so‘ngida Saidiyning ko‘ziga ko‘ringan 'gulxan' nimaning ramzi hisoblanadi?",
+   "options": [
+    "A) Haqiqiy issiqlik va baxtning",
+    "B) Erishib bo‘lmaydigan aldamchi sarobning",
+    "C) Yoritqich va chiroqning",
+    "D) Qishloqdagi olovning"
+   ],
+   "answer": "B) Erishib bo‘lmaydigan aldamchi sarobning"
+  }
+ ]
+}

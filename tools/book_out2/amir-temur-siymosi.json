@@ -1,0 +1,476 @@
+{
+ "title": "Amir Temur siymosi",
+ "author": "Pirimqul Qodirov",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "tarix",
+   "Amir Temur",
+   "vatanparvarlik",
+   "adolat",
+   "Temur tuzuklari"
+  ],
+  "theme": "Amir Temur shaxsiyatining haqqoniy tarixiy qiyofasini, uning adolat, ozodlik hamda bunyodkorlikka asoslangan faoliyatini va «Temur tuzuklari» asarining jahon hamda milliy davlatoshlik tarixdagi ulkan ma'naviy manba ekanini ochib berish.",
+  "summary": "Pirimqul Qodirovning «Amir Temur siymosi» ilmiy badiasi buyuk sarkarda va davlat arbobi Sohibqiron Amir Temurning hayoti, ma'naviy dunyosi va davlatchilik faoliyatiga bag‘ishlangan. Asarda Temurbekning Kesh viloyatining Xo‘ja Ilg‘or qishlog‘ida tug‘ilishi, ma'rifatli ota-onasi Tarag‘ay bahodir hamda Tegina bibi tarbiyasida kamol topishi, maktab va madrasalarda chuqur bilim egallagani ta'kidlanadi. Yosh Temurbekning 24 yoshida Chig‘atoy ulusidagi mo‘g‘ul istibdodiga qarshi xalq-ozodlik harakatiga bosh bo‘lishi, Amir Qazag‘on va uning nevarasi O‘ljay Turkon og‘a bilan bog‘liq voqealar bayon etiladi. Temurbek mo‘g‘ul xonlari Tug‘luq Temur va Ilyosxo‘ja tajovuzlariga qarshi Puli Sangin hamda Loy janglarida mardona kurash olib boradi. Birlashgan ittifoqdosh Amir Husaynning ikkiyuzlamachiligi va xiyonatlariga qaramay, Temurbek 243 nafar botir yigiti bilan Qarshi qal'asini zabt etib, g‘alabaga erishadi. 1370-yilda Movarounnahrda Amir Husayn zulmi barham topgach, Amir Temur mustaqil va markazlashgan Turon davlatiga asos soladi. Asarda Amir Temurning Oltin O‘rda hukmdori To‘xtamishxon tajovuzlariga barham berishi, Kandircha jangidagi muvaffaqiyatlari orqali Yevro-Osiyo xalqlarini mustamlaka zulmidan qutqargani ilmiy dalillar bilan ko‘rsatiladi. Shuningdek, «Temur tuzuklari» asarining yaratilish tarixi, uning Boburiylar saltanatida Shohjahon va Afzal Buxoriy tomonidan tahrir qilinishi, keyinchalik ingliz mayori Vilyam Devi tomonidan Oksfordda nashr ettirilib, dunyo bo‘ylab tarqalishi batafsil tahlil qilinadi.",
+  "characters": "Amir Temur — Movarounnahrni mo‘g‘ul zulmidan ozod qilgan buyuk sarkarda, adolatli va ma'rifatli hukmdor; Tarag‘ay bahodir — Temurbekning otasi, Kesh viloyatining nufuzli va ma'rifatli amiri; Tegina bibi — Temurbekning onasi, Buxoro Sadri-Sharia oilasidan chiqqan dovyurak va fozila ayol; Amir Husayn — Temurbekning vaqtincha ittifoqdoshi, keyinchalik xiyonatkor va makkor raqibga aylangan hukmdor; To‘xtamishxon — Amir Temur yordami bilan Oltin O‘rda taxtiga chiqib, keyin unga xiyonat qilgan xon; William Devi — «Temur tuzuklari»ning «Sultoniya» nusxasini Oksfordda ingliz tilida nashr ettirgan harbiy mayor; Shohjahon — Boburiylar hukmdori, «Temur tuzuklari» tarjimasini asliyatga solishtirib tahrir qildirgan shaxs.",
+  "conclusion": "Bu asar kitobxonga milliy tarix va buyuk ajdodlarimiz siymosiga nisbatan yuksak g‘urur hamda ehtirom tuyg‘usini bag‘ishlaydi. Bola asarni o‘qish orqali adolat, rostgo‘ylik, sabr-toqat hamda Vatan ozodligi yo‘lidagi mardlik insoniy kamolotning oliy mezoni ekanini anglaydi. Shuningdek, «Temur tuzuklari» kabi nodir yozma meroslarimizning jahon davlatchilik va harbiy san'at tarixida tutgan o‘rnini chuqur tushunib yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "g‘ururli, ma'rifiy, fahrli",
+  "for_whom": "Tarixiy haqiqatga qiziqadigan, milliy qahramonlarimiz hayoti va «Temur tuzuklari»ning yaratilish tarixi haqida bilishni xohlaydigan o‘quvchilar uchun.",
+  "events": [
+   "Temurbek Hisor tog‘lari etagidagi Xo‘ja Ilg‘or qishlog‘ida Tarag‘ay bahodir va Tegina bibi oilasida dunyoga keladi.",
+   "Besh yoshida Mulla Alibek maktabida savod chiqarib, keyin Shayx Shamsiddin qoshida Qur'on va Hadisni o‘rganadi.",
+   "O‘n to‘rt yoshida Kesh shahridagi Abdulla Qutb madrasasiga kirib, Rumiy hamda Shabistariy asarlarini mutolaa qiladi.",
+   "Yigirma bir yoshida Amir Qazag‘on nazariga tushib, ming kishilik qo‘shin sarkardasi etib tayinlanadi.",
+   "Amir Qazag‘on o‘zining dovyurak nevarasi O‘ljay Turkon og‘ani Temurbekka nikohlab beradi.",
+   "Qazag‘on o‘ldirilgach, Tug‘luq Temurxon Movarounnahrga keladi va Temurbekni Kesh viloyati hokimi etib tayinlaydi.",
+   "Mo‘g‘ullar zulmi oshib ketgach, Temurbek 60 yigiti bilan qamoqxonaga bostirib borib, nohaq ushlanganlarni ozod qiladi.",
+   "Qoraqum sahrosida To‘kal bahodirning ming kishilik qo‘shiniga qarshi mardona jang qilib g‘alaba qozonadi.",
+   "Amir Temur rafiqasi O‘ljoy Turkon og‘a bilan Moxon hokimi Alibek Jonqurboniy tuzog‘idan chapdastlik bilan qutulib chiqadi.",
+   "Vaxsh daryosi bo‘yida Puli Sangin atroflarida Ilyosxo‘janing 30 ming kishilik mo‘g‘ul lashkarini tor-mor etadi.",
+   "Loy jangida mo‘g‘ul shomonlari Yada toshi orqali do‘l aralash jala yog‘dirib, jang sharoitini og‘irlashtiradi.",
+   "Temurbek Samarqandni mudofaa qilgan sarbadorlar yetakchisi Mavlonzodani Amir Husayn doridan qutqarib qoladi.",
+   "Temurbek 243 nafar botir yigiti bilan tunda tarnov orqali suv kechib, Qarshi qal'asini egallaydi.",
+   "1370-yilda Amir Husayn mag‘lub etilib, Amir Temur mustaqil Turon davlatining hukmdori sifatida taxtga o‘tiradi.",
+   "Amir Temur Oltin O‘rda taxtiga erishishda To‘xtamishga katta harbiy va ma'naviy yordam ko‘rsatadi.",
+   "To‘xtamishxon bergan va'dalarini buzib, Movarounnahr va Ozarbayjon hududlariga bosqinchilik yurishlarini uyushtiradi.",
+   "1391-yilda Kandircha daryosi bo‘yida Amir Temur To‘xtamishxonning ulkan qo‘shinini uzil-kesil tor-mor qiladi.",
+   "Ioann Grinlo va Kristofer Marlo kabi yevropaliklar Amir Temurning buyuk zafarlariga yuksak baho berishadi.",
+   "Boburiylar hukmdori Shohjahon topshirig‘i bilan Afzal Buxoriy «Temur tuzuklari» tarjimasini tahrir qilib takomillashtiradi.",
+   "1779-yilda ingliz mayori Vilyam Devi «Temur tuzuklari» qo‘lyozmasini Oksfordda ingliz tilida chop ettiradi."
+  ],
+  "quotes": [
+   "«Amir Sohibqiron maktabda o‘z tengqurlaridan saboqda o‘zib ketardi. Balog‘at yoshiga yetguncha ilm, adab, xat va suxanvorlik kasb etdi.»",
+   "«Temur Ko‘ragon – agarchi nazm aytmoqqa iltifot qilmaydurlar, ammo nazm va nasrni andoq xo‘b mahal va mavqe'da o‘qibdurlarkim, aningdek bir bayt o‘qig‘oni ming yaxshi bayt aytqonicha bor.»",
+   "«Ahvol juda og‘irlashdi. Lekin ko‘ngil to‘q edi. Bu ishni chakki qilgan ekanman deb o‘kinmasdim»",
+   "«Davlat ishlarining to‘qqiz ulushi kengash, tadbir, maslahat, qolgan bir ulushi qilich bilan amalga oshishini angladim»",
+   "«Agar mening vasiyatimga amal qilib adl-u ehson bilan olamni obod qilsangiz, ko‘p yillar davlat va mamlakat sizlarda qolg‘usidir.»"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temurbek qaysi qishloqda dunyoga kelgan?",
+   "options": [
+    "A) Xo‘ja Ilg‘or qishlog‘ida",
+    "B) Moxon qishlog‘ida",
+    "C) Shabistar qishlog‘ida",
+    "D) Soli Saroy qishlog‘ida"
+   ],
+   "answer": "A) Xo‘ja Ilg‘or qishlog‘ida"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temurbekning onasi Tegina bibi kimning qizi edi?",
+   "options": [
+    "A) Sadri-Sharia Ubaydulla Mahmudning qizi",
+    "B) Qozon Sultonning qizi",
+    "C) Amir Qazag‘onning qizi",
+    "D) Mulla Alibekning qizi"
+   ],
+   "answer": "A) Sadri-Sharia Ubaydulla Mahmudning qizi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Temurbek qaysi madrasada tahsil olgan?",
+   "options": [
+    "A) Abdulla Qutb madrasasida",
+    "B) Ulug‘bek madrasasida",
+    "C) Tillakori madrasasida",
+    "D) Mir Arab madrasasida"
+   ],
+   "answer": "A) Abdulla Qutb madrasasida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Qazag‘on Temurbekka kimni nikohlab berdi?",
+   "options": [
+    "A) O‘ljay Turkon og‘ani",
+    "B) Saroymulkxonimni",
+    "C) Shirinbeka og‘ani",
+    "D) Qutlug‘ Turkon og‘ani"
+   ],
+   "answer": "A) O‘ljay Turkon og‘ani"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Temurbek o‘qigan ta'lim maskanlari tartibini belgilang.",
+   "options": [
+    "A) Mulla Alibek, masjid, madrasa",
+    "B) Madrasa, Mulla Alibek, masjid",
+    "C) Masjid, madrasa, Mulla Alibek",
+    "D) Mulla Alibek, madrasa, masjid"
+   ],
+   "answer": "A) Mulla Alibek, masjid, madrasa"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnda keltirilgan shaxslarni to‘g‘ri guruhlang.",
+   "options": [
+    "A) Qazag‘on, Ilyosxo‘ja, Shabistariy",
+    "B) Bobur, Qazag‘on, Bartold",
+    "C) Yakubovskiy, Temurbek, Neru",
+    "D) Ibn Arabshoh, Bobur, Bartold"
+   ],
+   "answer": "A) Qazag‘on, Ilyosxo‘ja, Shabistariy"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Temurbek Tug‘luq Temurxon huzuriga borishga qaror qildi?",
+   "options": [
+    "A) El-yurtini dushman toptashidan asrash uchun",
+    "B) Mo‘g‘ullarga to‘liq bo‘ysunish uchun",
+    "C) Mansab va boylik orttirish uchun",
+    "D) Keshdan butunlay qochib ketish uchun"
+   ],
+   "answer": "A) El-yurtini dushman toptashidan asrash uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Temurbek nega oltmish yigiti bilan qamoqxonaga bostirib bordi?",
+   "options": [
+    "A) Nohaq qamalgan el-yurt odamlarini qutqarishga",
+    "B) Mo‘g‘ul xonidan qasos olish uchun",
+    "C) Samarqand taxtini egallash uchun",
+    "D) Do‘sti Iki Temurni ozod qilishga"
+   ],
+   "answer": "A) Nohaq qamalgan el-yurt odamlarini qutqarishga"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Temurbekning ozchilik yigitlari bilan jangga kirishini qanday baholash mumkin?",
+   "options": [
+    "A) Vatan ozodligi yo‘lidagi qahramonlik",
+    "B) Bekorga qilingan xatarli tavakkal",
+    "C) Hukmdorlikka intilishdagi xato adashish",
+    "D) Qashshoqlikdan qutulishning birdan-bir yo‘li"
+   ],
+   "answer": "A) Vatan ozodligi yo‘lidagi qahramonlik"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Alisher Navoiy Amir Temurning she'rxonligiga qanday baho bergan?",
+   "options": [
+    "A) Bir bayti ming baytga teng",
+    "B) U umuman she'r o‘qimagan",
+    "C) Faqat o‘zi she'r yozgan",
+    "D) Boshqa shoirlarni yoqtirmagan"
+   ],
+   "answer": "A) Bir bayti ming baytga teng"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Loy jangida Jete qo‘shini nimadan foydalandi?",
+   "options": [
+    "A) Yada toshidan",
+    "B) Olov halqalaridan",
+    "C) Og‘ir toshotarlardan",
+    "D) Maxsus kemalardan"
+   ],
+   "answer": "A) Yada toshidan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Temur qaysi qal'ani 243 yigit bilan zabt etdi?",
+   "options": [
+    "A) Qarshi qal'asini",
+    "B) Urganch qal'asini",
+    "C) Hinduvon qal'asini",
+    "D) Balx qal'asini"
+   ],
+   "answer": "A) Qarshi qal'asini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Husayn Balxda qurdirgan qal'a qanday nomlangan?",
+   "options": [
+    "A) Hinduvon qal'asi",
+    "B) Oqsaroy qal'asi",
+    "C) Soli Saroy",
+    "D) Qarshi qal'asi"
+   ],
+   "answer": "A) Hinduvon qal'asi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Temur bilan To‘xtamish o‘rtasidagi hal qiluvchi jang qayerda bo‘ldi?",
+   "options": [
+    "A) Kandircha degan joyda",
+    "B) Puli Sangin atroflarida",
+    "C) Qoraqum sahrosida",
+    "D) Kulikova maydonida"
+   ],
+   "answer": "A) Kandircha degan joyda"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qaysi javobda Amir Temur qurdirgan bog‘lar to‘g‘ri jamlangan?",
+   "options": [
+    "A) Naqshi Jahon, Bog‘i Bihisht",
+    "B) Oqsaroy, Hinduvon qal'asi",
+    "C) Soli Saroy, Xo‘ja Ilg‘or",
+    "D) Sabzavor, Puli Sangin"
+   ],
+   "answer": "A) Naqshi Jahon, Bog‘i Bihisht"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Amir Temur Mavlonzodani dor tagidan qutqarib qoldi?",
+   "options": [
+    "A) Sarbadorlar yetakchisini adolat bilan hurmat qilgani uchun",
+    "B) Amir Husaynning buyrug‘ini bajarish uchun",
+    "C) Sarbadorlardan ko‘p oltin olgani uchun",
+    "D) Ularni Samarqanddan haydash uchun"
+   ],
+   "answer": "A) Sarbadorlar yetakchisini adolat bilan hurmat qilgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega To‘xtamishxon bergan va'dalarini tezda buzdi?",
+   "options": [
+    "A) Chingiziylik odati hamda makkor vazirlar aldtovi tufayli",
+    "B) Amir Temur unga yordam bermagani uchun",
+    "C) Qo‘shini o‘ta kuchayib ketgani uchun",
+    "D) Boshqa iloji qolmagani uchun"
+   ],
+   "answer": "A) Chingiziylik odati hamda makkor vazirlar aldtovi tufayli"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Amir Temurning asir tushgan dushman navkarlarini ozod etishini qanday baholaysiz?",
+   "options": [
+    "A) Oliyjanoblik va ma'naviy ustunlik",
+    "B) Harbiy tajribasizlik hamda ojizlik",
+    "C) Dushmandan qo‘rqish oqibati",
+    "D) Shunchaki beparvolik va loqaydlik"
+   ],
+   "answer": "A) Oliyjanoblik va ma'naviy ustunlik"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Amir Temurning Oltin O‘rdani tor-mor etgani jahon tarixida qanday ahamiyat kasb etdi?",
+   "options": [
+    "A) Yevro-Osiyo xalqlarini mustamlaka zulmidan qutqardi",
+    "B) Faqat Movarounnahr chegaralarini kengaytirdi",
+    "C) Rossiyani Oltin O‘rdaga to‘liq bo‘ysundirdi",
+    "D) Chingiziylar imperiyasini yanada kuchaytirdi"
+   ],
+   "answer": "A) Yevro-Osiyo xalqlarini mustamlaka zulmidan qutqardi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Yevropalik ruhoniy Ioann Grinlo Amir Temurni qanday tasvirlagan?",
+   "options": [
+    "A) Didli, jozibali va mustahkam xotirali siymo",
+    "B) Shafqatsiz va nodon harbiy dohiy",
+    "C) O‘qish-yozishni bilmaydigan savodsiz hukmdor",
+    "D) Qahri qattiq va muloqotsiz odam"
+   ],
+   "answer": "A) Didli, jozibali va mustahkam xotirali siymo"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Temur tuzuklari»ning forscha tarjimasini kim Oksfordda nashr ettirdi?",
+   "options": [
+    "A) Mayor Vilyam Devi",
+    "B) Ioann Grinlo",
+    "C) Kristofer Marlo",
+    "D) V. Bartold"
+   ],
+   "answer": "A) Mayor Vilyam Devi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shohjahon topshirig‘i bilan «Temur tuzuklari»ni kim tahrir qildi?",
+   "options": [
+    "A) Afzal Buxoriy",
+    "B) Abutolib Husayniy",
+    "C) Alixon To‘ra Sog‘uniy",
+    "D) Xotif Xo‘jandiy"
+   ],
+   "answer": "A) Afzal Buxoriy"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Temur o‘z muhriga qaysi iborani yozdirgan edi?",
+   "options": [
+    "A) Rosti-rasti",
+    "B) Kuch — bilimdadir",
+    "C) Birlik — najotdir",
+    "D) Adolat — boylikdir"
+   ],
+   "answer": "A) Rosti-rasti"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Amir Temur 1405-yilning 18-fevralida qaysi shaharda vafot etdi?",
+   "options": [
+    "A) O‘tror shahri",
+    "B) Kesh shahri",
+    "C) Samarqand shahri",
+    "D) Balx shahri"
+   ],
+   "answer": "A) O‘tror shahri"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "«Temur tuzuklari»ni tarjima va tahrir qilgan shaxslarni ketma-ket joylashtiring.",
+   "options": [
+    "A) Abutolib Husayniy, Afzal Buxoriy, Vilyam Devi",
+    "B) Vilyam Devi, Abutolib Husayniy, Afzal Buxoriy",
+    "C) Afzal Buxoriy, Vilyam Devi, Abutolib Husayniy",
+    "D) Abutolib Husayniy, Vilyam Devi, Afzal Buxoriy"
+   ],
+   "answer": "A) Abutolib Husayniy, Afzal Buxoriy, Vilyam Devi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Boburiylar «Temur tuzuklari»ni uzoq vaqt maxfiy saqlaganlar?",
+   "options": [
+    "A) Saltanat sirlari raqiblar qo‘liga tushmasligi uchun",
+    "B) Asar turkiy tilda yozilgani uchun",
+    "C) Hukmdorlar uni o‘qishni xohlamagani uchun",
+    "D) Kitob juda qadimiy bo‘lgani uchun"
+   ],
+   "answer": "A) Saltanat sirlari raqiblar qo‘liga tushmasligi uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Amir Temur saltanat ishlarida kengashga ko‘proq suyangandir?",
+   "options": [
+    "A) Tadbir va maslahat muvaffaqiyat garovi bo‘lgani uchun",
+    "B) Qilich ishlatishni bilmagani uchun",
+    "C) Barcha ishlarni amirlarga topshirgani uchun",
+    "D) Urush qilishdan qo‘rqgani uchun"
+   ],
+   "answer": "A) Tadbir va maslahat muvaffaqiyat garovi bo‘lgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Amir Temurning davlat boshqaruvidagi 12 tamoyilini qanday baholash mumkin?",
+   "options": [
+    "A) Mintaqaviy davlatchilikning mukammal va dono tizimi",
+    "B) Vaqtinchalik va foydasiz harbiy tartib",
+    "C) Faqat mo‘g‘ullar uchun mos qoida",
+    "D) Mantiqsiz va asossiz o‘ylab topilgan g‘oya"
+   ],
+   "answer": "A) Mintaqaviy davlatchilikning mukammal va dono tizimi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Amir Temurning so‘nggi vasiyatlarini qanday baholaydi?",
+   "options": [
+    "A) Temuriylar sulolasining besh asrlik ma'naviy asosi",
+    "B) Shunchaki oddiy va ahamiyatsiz so‘zlar",
+    "C) Faqat bitta nevaraga atalgan xat",
+    "D) Harbiy yurishlarni to‘xtatish haqidagi chaqiriq"
+   ],
+   "answer": "A) Temuriylar sulolasining besh asrlik ma'naviy asosi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Kuch — adolatdadir» g‘oyasi asarda qanday aks ettirilgan?",
+   "options": [
+    "A) Butun hayotiy faoliyatning bosh mezoni sifatida",
+    "B) Faqat harbiy yurishlar vaqtidagi shior",
+    "C) Faqat elchilar bilan suhbatdagi ibora",
+    "D) Shunchaki muhrdagi bezak so‘z sifatida"
+   ],
+   "answer": "A) Butun hayotiy faoliyatning bosh mezoni sifatida"
+  }
+ ]
+}

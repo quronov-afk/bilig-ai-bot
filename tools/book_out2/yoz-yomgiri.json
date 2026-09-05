@@ -1,0 +1,476 @@
+{
+ "title": "Yoz yomg‘iri",
+ "author": "O‘lmas Umarbekov",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14-16 yosh",
+  "topics": [
+   "detektiv",
+   "vafo va sadoqat",
+   "oilaviy munosabatlar",
+   "ilm-fan",
+   "halollik"
+  ],
+  "theme": "Asar vafo, halollik hamda ilmiy kashfiyotlarni asrash masalalarini ilgari suradi. Moddiy boylik va hoyu havasga berilish insonni halokatga yetaklashini, haqiqiy sadoqat esa Vatan va ilm manfaati yo‘lida sodiq qolishda ekanini ko‘rsatadi.",
+  "summary": "1970-yillar avgustida Toshkentda erta tongda tramvay haydovchisi Munira bekat yaqinida ayol murdasini ko‘rib qoladi va militsiyaga xabar beradi. O‘ldirilgan ayol bioximik olim Rahim Saidovning rafiqasi Munisxon edi. Fojiadan bir kun oldin Rahim va Munisxon o‘rtasida qimmatbaho uzuk hamda oilaviy maishiy masalalar tufayli qattiq kelishmovchilik bo‘lib o‘tgan edi.\n\nJinoyatni militsiya kapitani Sobir Aliyev hamda uning yordamchilari o‘rganishga kirishadi. Murdaning yonidan va uydan qimmatbaho zargarlik buyumlari, jumladan, olmos zirak, yoqut ko‘zli uzuk hamda qimmatbaho dur marjon topiladi. Rahim Saidov xotinining o‘zidan yashirin holda ko‘plab qimmatbaho buyumlarga ega bo‘lganini va ba'zi shubhali kimsalar bilan uchrashib yurganini bilib, ruhiy iztirobga tushadi.\n\nOlib borilgan tergov harakatlari natijasida Munisxonning sirli hayoti ortida savdo xodimi Olloyorov turgani ma'lum bo‘ladi. Olloyorov Munisxonga qimmatbaho sovg‘alar berib, evaziga erining paxta vilt kasalligiga qarshi kashf etgan ilmiy preparati (I-109 S) sirini qo‘lga kiritishni talab qilgan. Ammo Munisxon moddiy narsalarga o‘ch bo‘lsa-da, erining ilmiy mehnatini va Vatanni sotishdan qat'iyan bosh tortadi. Natijada Olloyorov va uning sheriklari Munisxonni shafqatsizlarcha o‘ldirishadi.\n\nRahim Saidov barcha haqiqatni bilgach, Olloyorovning uyiga borib, unga dur marjonni qaytarib beradi. So‘ngra chuqur xayol va iztirob bilan ko‘chadan o‘tayotganda uni mashina urib ketadi. Kasalxonada kapitan Aliyev Rahimga xotinining eriga xiyonat qilmaganini, aksincha erining ilmiy kashfiyotini asrash yo‘lida jon berganini tushuntiradi. Qotillik quroli bo‘lgan pichoqni yashirgan Olloyorov va uning onasi javobgarlikka tortiladi. Rahim Saidov haqiqat qaror topganidan so‘ng xotirasini poklab, ilm-fan yo‘lidagi faoliyatiga qaytadi.",
+  "characters": "Rahim Saidov — bioximik olim, paxta viltiga qarshi yangi preparat ustida ishlaydigan kamtarin va halol inson.\nMunisxon — Rahimning rafiqasi, boylik va taqinchoqlarga o‘ch, lekin erining ilmiy kashfiyotini sotishdan bosh tortgan ayol.\nSobir Aliyev — militsiya kapitani, jinoyatni puxtalik va adolat bilan tergov qilgan tajribali xodim.\nOlloyorov — savdo xodimi, boylik evaziga ilmiy sirni o‘g‘irlashga urinib, qotillikka qo‘l urgan jinoyatchi.\nSaid aka — Rahimning otasi, og‘ir-bosiq, hayotiy tajribaga ega mehnatkash va mulohazali qariya.",
+  "conclusion": "Asar kitobxonni tashqi go‘zallik va moddiy boyliklarga ko‘r-ko‘rona berilmaslikka, ma'naviy poklik va halollikni har narsadan ustun qo‘yishga o‘rgatadi. Oilada o‘zaro ishonchning muhimligini hamda Vatan va ilm-fan oldidagi mas'uliyatni uqtiradi. Bola undan halollik, og‘ir-bosiqlik va kattalarga hurmat saboqlarini oladi.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, o‘ylantiruvchi, hayajonli",
+  "for_whom": "Detektiv, jumboqli voqealar hamda insoniy munosabatlar haqida o‘qishni xush ko‘radigan, haqiqat va adolatni qadrlaydigan o‘smirlarga.",
+  "events": [
+   "1. Tramvay haydovchisi Munira Chorsu bekatida na'matak butalari orasida ayol murdasini ko‘rib qoldi.",
+   "2. Munira va temiryo‘lchi amaki o‘ldirilgan ayolni ko‘rib, darhol militsiyaga xabar berishdi.",
+   "3. Rahim Saidov xotini Munisxon bilan uzuk va pul masalasida urishib qolganini esladi.",
+   "4. Rahim O‘rdadagi tilla do‘koniga kirib, brilliant ko‘zli uzukni ko‘rib chiqdi.",
+   "5. Militsiya xodimlari Rahim Saidovga xotini Munisxonning vafot etgani haqida me'shum xabarni yetkazishdi.",
+   "6. Kapitan Sobir Aliyev jinoyat joyini va tibbiy ekspertiza xulosalarini o‘rganishga kirishdi.",
+   "7. Tibbiy ekspertizada marhuma Munisxonning pichoqlangani va boshiga og‘ir zarba berilgani aniqlandi.",
+   "8. Marhumaning yonidan va sumkasidan qimmatbaho olmos zirak va tilla soat chiqdi.",
+   "9. Suv do‘konidagi guvoh ayol Samarqand darvozasida oq sumkali kelishgan ayolni ko‘rganini aytdi.",
+   "10. Rahim Saidov xotinining jasadini ko‘rib, chuqur iztirobga tushdi va o‘zini aybladi.",
+   "11. Rahim Saidov xotinini dafn etish uchun otasining eski hovlisiga va Minordagi qabristonga kelishdi.",
+   "12. Kapitan Aliyev Rahim Saidovni so‘roq qilib, xotinining taqinchoqlari haqida surishtirdi.",
+   "13. Rahim Saidov uydan yana bir qimmatbaho dur marjonni topib oldi.",
+   "14. Rahim qimmatbaho narsalarning manbasini bilish uchun Qo‘qonga, qaynatasi Ubaydulla aka oldiga bordi.",
+   "15. Operativ xodimlar Chorsuda pivo olgan 'Moskvich' haydovchisini va Olloyorovni kuzatuvga olishdi.",
+   "16. Kapitan Aliyev savdo xodimi Olloyorovni so‘roq qilib, uning yolg‘onlarini oshkor qildi.",
+   "17. Rahim Saidov ko‘chada bolalikdagi tanishi Svetani uchratib, u bilan suhbatlashdi.",
+   "18. Rahim Saidov Olloyorovning uyiga borib, uning yuziga dur marjonni topshirib qaytdi.",
+   "19. Xayol bilan ko‘chadan o‘tayotgan Rahim Saidovni tramvay bekatida mashina urib ketdi.",
+   "20. Kapitan Aliyev Olloyorovning uyida jinoyat quroli bo‘lgan pichoqni topdi va Munisxon erining ilmiy kashfiyotini asrab qolgani uchun o‘ldirilganini aniqladi."
+  ],
+  "quotes": [
+   "Er-xotinning urishi, doka ro‘molning qurishi...",
+   "Uning nazarida oiladagi urish-janjal bamisoli daraxtning ichidagi qurt.",
+   "Har qanday jinoyat izsiz bo‘lmaydi...",
+   "Aqlning chegarasi bor, ahmoqlik esa cheksiz...",
+   "Gulni gul dermu kishi gulning tikoni bo‘lmasa, Yorni yor dermu kishi yorning jafosi bo‘lmasa?.."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘likni birinchi bo‘lib kim ko‘rib qoldi?",
+   "options": [
+    "A) Tramvay haydovchisi Munira",
+    "B) Militsiya kapitani Aliyev",
+    "C) Olim Rahim Saidov",
+    "D) Temiryo‘lchi shopmo‘ylov amaki"
+   ],
+   "answer": "A) Tramvay haydovchisi Munira"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Fojia sodir bo‘lgan kun qaysi sana edi?",
+   "options": [
+    "A) 22-avgust",
+    "B) 1-sentyabr",
+    "C) 15-iyul",
+    "D) 10-oktyabr"
+   ],
+   "answer": "A) 22-avgust"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rahim Saidov qaysi sohada ilmiy xodim edi?",
+   "options": [
+    "A) Bioximiya sohasida",
+    "B) Tarix fanida",
+    "C) Chet tillarida",
+    "D) Qurilish sohasida"
+   ],
+   "answer": "A) Bioximiya sohasida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rahim Munisxon bilan birinchi marta qayerda uchrashgan?",
+   "options": [
+    "A) Dovondagi xarsang haykal yonida",
+    "B) Toshkentdagi kutubxonada",
+    "C) O‘rdadagi tilla do‘konida",
+    "D) Teatrdagi balet tomoshasida"
+   ],
+   "answer": "A) Dovondagi xarsang haykal yonida"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Munisxon qaysi oliygohda ta'lim olgan edi?",
+   "options": [
+    "A) Chet tillar institutida",
+    "B) Tibbiyot institutida",
+    "C) Qishloq xo‘jalik institutida",
+    "D) Politexnika institutida"
+   ],
+   "answer": "A) Chet tillar institutida"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Munisxon va Rahim tez-tez urishib turishardi?",
+   "options": [
+    "A) Moddiy va maishiy qarashlar tufayli",
+    "B) Bir-birini umuman yoqtirmagani uchun",
+    "C) Rahim ishlashni xohlamagani uchun",
+    "D) Qarindoshlar qarshilik qilgani uchun"
+   ],
+   "answer": "A) Moddiy va maishiy qarashlar tufayli"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Rahim tushida ko‘rgan uzuk nimaning belgisi edi?",
+   "options": [
+    "A) Oiladagi sir va ko‘ngilsizlik belgisi",
+    "B) Tez orada boyib ketish belgisi",
+    "C) Yangi uy sotib olish belgisi",
+    "D) Sayohatga chiqish belgisi"
+   ],
+   "answer": "A) Oiladagi sir va ko‘ngilsizlik belgisi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Rahimning xotiniga doim yon berishi to‘g‘rimidi?",
+   "options": [
+    "A) Tinchlik uchun yon bergani tushunarli",
+    "B) Mutlaqo xato, doim urishish kerak",
+    "C) U xotinidan qo‘rqani uchun shunday",
+    "D) Boshqa iloji yo‘qligidan shunday qilgan"
+   ],
+   "answer": "A) Tinchlik uchun yon bergani tushunarli"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif oilaviy janjalni nimaga o‘xshatadi?",
+   "options": [
+    "A) Daraxt ichidagi qurtga",
+    "B) Shiddatli tog‘ daryosiga",
+    "C) Yozgi qora bulutga",
+    "D) Kutilmagan qorong‘i tunga"
+   ],
+   "answer": "A) Daraxt ichidagi qurtga"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rahim dissertatsiya yoqlaganida o‘rtoqlari nima sovg‘a qilishgan?",
+   "options": [
+    "A) Yarqiroq temirli qora portfel",
+    "B) Qimmatbaho tilla soat",
+    "C) Katta ilmiy kitoblar to‘plami",
+    "D) Maxsus yozuvli ruchka"
+   ],
+   "answer": "A) Yarqiroq temirli qora portfel"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tergov ishlarini olib borgan militsiya kapitanining ismi kim?",
+   "options": [
+    "A) Sobir Aliyev",
+    "B) Sultonov",
+    "C) Ro‘ziyev",
+    "D) Qodirov"
+   ],
+   "answer": "A) Sobir Aliyev"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tibbiy ekspertiza xulosasiga ko‘ra marhuma qanday jarohatlangan?",
+   "options": [
+    "A) Pichoqlangan va boshiga urilgan",
+    "B) Faqat zahar ichirilgan",
+    "C) Suvga cho‘ktirib o‘ldirilgan",
+    "D) Balandlikdan tashlab yuborilgan"
+   ],
+   "answer": "A) Pichoqlangan va boshiga urilgan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Munisxonning sumkasidan qancha naqd pul chiqdi?",
+   "options": [
+    "A) O‘n uch so‘m",
+    "B) Yuz so‘m",
+    "C) Ellik so‘m",
+    "D) Besh yuz so‘m"
+   ],
+   "answer": "A) O‘n uch so‘m"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Munisxon hayoti davomida qaysi joylarda ishlagan?",
+   "options": [
+    "A) Maktab, Inturist va institutda",
+    "B) Faqat kasalxonada va dorixonada",
+    "C) Boshlang‘ich bog‘chada va kutubxonada",
+    "D) Faqat tilla do‘konida va tahririyatda"
+   ],
+   "answer": "A) Maktab, Inturist va institutda"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega kapitan Aliyev ta'tilga chiqolmay qoldi?",
+   "options": [
+    "A) Kutilmagan og‘ir jinoyat yuz bergani uchun",
+    "B) Putyovka muddati o‘tib ketgani uchun",
+    "C) Xotini borishni xohlamagani uchun",
+    "D) Sog‘lig‘i yomonlashib qolgani uchun"
+   ],
+   "answer": "A) Kutilmagan og‘ir jinoyat yuz bergani uchun"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Rahim xotinining taqinchoqlarini ko‘rib nega hayron bo‘ldi?",
+   "options": [
+    "A) Ularni o‘zi olib bermagani uchun",
+    "B) Ular juda arzon bo‘lgani uchun",
+    "C) Xotini taqinchoq taqmagani uchun",
+    "D) Taqinchoqlar singlisiniki bo‘lgani uchun"
+   ],
+   "answer": "A) Ularni o‘zi olib bermagani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Rahimning Qo‘qonga borib surishtirgani to‘g‘ri edimi?",
+   "options": [
+    "A) Haqiqatni bilish uchun to‘g‘ri qildi",
+    "B) Bormasligi va indamasligi kerak edi",
+    "C) Faqat militsiyaga ishonishi kerak edi",
+    "D) Qaynatasini ayblash uchun bordi"
+   ],
+   "answer": "A) Haqiqatni bilish uchun to‘g‘ri qildi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Kapitanning 'Aqlning chegarasi bor, ahmoqlik cheksiz' degani nimani anglatadi?",
+   "options": [
+    "A) Inson asossiz hoyu havasga berilishini",
+    "B) Hamma insonlar aqlli ekanini",
+    "C) Jinoyatchilar juda aqlli bo‘lishini",
+    "D) Pul hamma narsani hal qilishini"
+   ],
+   "answer": "A) Inson asossiz hoyu havasga berilishini"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rahim uydan topib olgan marjon nimadan yasalgan edi?",
+   "options": [
+    "A) Qimmatbaho durdan",
+    "B) Oddiy shishadan",
+    "C) Kumush zanjirdan",
+    "D) Qizil yoqutdan"
+   ],
+   "answer": "A) Qimmatbaho durdan"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Munisxonning xarakterida qanday salbiy illat bor edi?",
+   "options": [
+    "A) Yasan-tusan va boylikka o‘chlik",
+    "B) Odamlarga umuman gapirmaslik",
+    "C) Doim uyda yolg‘iz o‘tirish",
+    "D) Ishlashni mutlaqo yoqtirmaslik"
+   ],
+   "answer": "A) Yasan-tusan va boylikka o‘chlik"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olloyorov do‘kondan nima xarid qilgan edi?",
+   "options": [
+    "A) Bir yashik pivo",
+    "B) Katta quti shokolad",
+    "C) Yangi kiyim-kechak",
+    "D) Qimmatbaho soat"
+   ],
+   "answer": "A) Bir yashik pivo"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rahim ko‘chada bolaligidagi qaysi tanishini uchratdi?",
+   "options": [
+    "A) Svetani",
+    "B) Faridani",
+    "C) Zubaydani",
+    "D) Munirani"
+   ],
+   "answer": "A) Svetani"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Olloyorovning uyida qotillik qurolini kim yashirgan edi?",
+   "options": [
+    "A) Uning onasi",
+    "B) Uning ayoli",
+    "C) Uning o‘rtog‘i",
+    "D) Uning qo‘shnisi"
+   ],
+   "answer": "A) Uning onasi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Jinoyatchilar Munisxondan aslida nimani talab qilishgan edi?",
+   "options": [
+    "A) Erining ilmiy preparat kashfiyotini",
+    "B) Katta miqdordagi naqd pulni",
+    "C) Uyining kalitlari va hujjatlarini",
+    "D) Qimmatbaho tilla taqinchoqlarni"
+   ],
+   "answer": "A) Erining ilmiy preparat kashfiyotini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Munisxon Olloyorovning taklifini rad etdi?",
+   "options": [
+    "A) Erining ilmini sotishni xohlamagani uchun",
+    "B) Olloyorov kam pul taklif qilgani uchun",
+    "C) Preparat tayyor bo‘lmagani uchun",
+    "D) Militsiyadan juda qo‘rqqani uchun"
+   ],
+   "answer": "A) Erining ilmini sotishni xohlamagani uchun"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Rahim Olloyorovning uyiga borib durni qaytardi?",
+   "options": [
+    "A) Yomon xotiralardan batamom qutulish uchun",
+    "B) Olloyorovga rahmi kelgani uchun",
+    "C) Militsiya shuni talab qilgani uchun",
+    "D) Dur soxta ekanligini bilgani uchun"
+   ],
+   "answer": "A) Yomon xotiralardan batamom qutulish uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Munisxonning so‘nggi qarorini qanday baholash mumkin?",
+   "options": [
+    "A) Vatanga va eriga sadoqat ko‘rsatdi",
+    "B) Juda qo‘rqoq va qat'iyatsiz ish tutdi",
+    "C) O‘z manfaatinigina o‘ylaydi deb bo‘ladi",
+    "D) Kutilmagan tasodifiy qaror qabul qildi"
+   ],
+   "answer": "A) Vatanga va eriga sadoqat ko‘rsatdi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kapitan Aliyevning tergovdagi harakatlari qanday bo‘ldi?",
+   "options": [
+    "A) Juda puxta va adolatli harakat qildi",
+    "B) Shoshqaloqlik qilib xatoga yo‘l qo‘ydi",
+    "C) Bevaqt kelgan yomg‘irdan xafa bo‘ldi",
+    "D) Faqat do‘kondagi guvohga ishondi"
+   ],
+   "answer": "A) Juda puxta va adolatli harakat qildi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar so‘ngidagi yoz yomg‘iri nimani anglatadi?",
+   "options": [
+    "A) Poklanish va haqiqat qaror topishini",
+    "B) Qahramonning mutlaq barbod bo‘lishini",
+    "C) Tabiatning shunchaki o‘zgarib turishini",
+    "D) Izlar butunlay o‘chib ketishini"
+   ],
+   "answer": "A) Poklanish va haqiqat qaror topishini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif ushbu qissa orqali kitobxonga nima deymoqchi?",
+   "options": [
+    "A) Halollik va ma'naviyat har necha ustundir",
+    "B) Boylik ortidan quvish asosiy maqsaddir",
+    "C) Har qanday odamga ishonish lozimdir",
+    "D) Ilm-fan bilan shug‘ullanish shart emas"
+   ],
+   "answer": "A) Halollik va ma'naviyat har necha ustundir"
+  }
+ ]
+}

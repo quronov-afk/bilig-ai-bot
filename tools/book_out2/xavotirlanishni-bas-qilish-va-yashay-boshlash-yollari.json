@@ -1,0 +1,482 @@
+{
+ "title": "Xavotirlanishni bas qilish va yashay boshlash yo‘llari",
+ "author": "Deyl Karnegi",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "xavotirni yengish",
+   "ruhiy xotirjamlik",
+   "shaxsiy rivojlanish",
+   "vaqtdan unumli foydalanish",
+   "salomatlik va halovat"
+  ],
+  "theme": "Inson ortiqcha xavotir va kelajak qo‘rquvidan xalos bo‘lib, bugungi kun bilan yashashni o‘rganishi, muammolarni amaliy tahlil etib, ruhiy xotirjamlik va baxtga erishishi lozim.",
+  "summary": "Asarda Deyl Karnegi inson hayotidagi eng katta g‘ovlardan biri bo‘lmish asabiy xavotir va qo‘rquvni yengish usullarini ko‘rib chiqadi. Muallif o‘z hayotiy tajribasi va ko‘plab taniqli hamda oddiy kishilarning taqdirlari misolida xavotirsiz yashash tamoyillarini bayon etadi. Kitob o‘tmishdagi afsuslar va kelajakdagi mavhum qo‘rquvlardan ajralib, «bugungi kun oralig‘ida» yashash g‘oyasi bilan boshlanadi. Muallif vaziyatning eng yomon muqobiliga tan berish va uni yaxshilashga urinish formulasini taklif qiladi. Xavotirning oshqozon yarasi, artrit, tish kasalliklari va gipertoniya kabi jismoniy xastaliklarga sabab bo‘lishi ilmiy va hayotiy misollar bilan ko‘rsatiladi. Xavotirni bartaraf etish uchun doim biror foydali ish bilan band bo‘lish, ulkan sonlar qonuniga tayanish, muqarrar faktlarni qabul qilish hamda o‘tmish xatolariga qayta to‘xtalmaslik uqtiriladi. Shuningdek, atrofdagilar tanqidiga to‘g‘ri munosabatda bo‘lish, dushmanlarni kechirish, boshqalarga yaxshilik qilish va o‘zligini saqlab qolish ruhiy baxt kaliti sifatida e'tirof etiladi. Kitob yakunida charchoq va uyqusizlikni yengish, mushaklarni bo‘shashtirish va ish o‘rnida tartib o‘rnatish bo‘yicha amaliy maslahatlar beriladi.",
+  "characters": "Deyl Karnegi — kitob muallifi, o‘z tajribasi va kuzatuvlari bilan o‘rtoqlashuvchi master-notiq. Ser Uilyam Osler — «bugungi kun oralig‘ida yashash» tamoyilini tibbiyotda va hayotda qo‘llagan mashhur shifokor. Ted Bengermino — urush davridagi ruhiy zo‘riqishni qum soati usuli orqali yenggan askar. Galen Litchfield — xavotirlar sababini yozuv mashinkasida tahlil qilib, to‘g‘ri qaror qabul qilgan ishbilarmon. Semyuel Untermeyer — surunkali uyqusizlikni foydali mehnat va bilimlarga yo‘naltirib muvaffaqiyatga erishgan advokat.",
+  "conclusion": "Bu kitob o‘smir va yoshlarga ortiqcha xavotir hamda tushkunlikni yengish, vaqtdan unumli foydalanish va hayotga ijobiy nigoh bilan qarashni o‘rgatadi. Kitobxon har qanday og‘ir vaziyatda ham vazminlik bilan to‘g‘ri qaror qabul qilishni hamda shukronalik bilan yashashni shakllantiradi. Kitob bola ruhiyatini mustahkamlab, unda mas'uliyat va iroda sifatlarini rivojlantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, ilhomlantiruvchi",
+  "for_whom": "Doimiy xavotirga tushadigan, kelajakdan cho‘chiydigan, o‘ziga bo‘lgan ishonchni oshirishni va ruhiy xotirjamlikka erishishni xohlaydigan o‘smirlar uchun.",
+  "events": [
+   "1. Muallif o‘zining Nyu-Yorkdagi muvaffaqiyatsiz davri va hayotini o‘zgartirish haqidagi uzil-kesil qarorini eslaydi.",
+   "2. YONU kechki maktabida notiqlik san'atidan dars berish jarayonida insoniy munosabatlar qo‘llanmasi yaratiladi.",
+   "3. Ser Uilyam Osler talabalarga «bugungi kun oralig‘ida» yashash tamoyilini kemadagi suv o‘tmaydigan bo‘lmalar misolida tushuntiradi.",
+   "4. Ted Bengermino shifokor maslahati bilan hayotini qum soati bo‘g‘zidan ketma-ket o‘tadigan qum zarralariga o‘xshatib xavotirni yengadi.",
+   "5. Shilds xonim erining o‘limidan so‘ng kitob sotish jarayonida «quyosh botguncha yashash» tamoyilini o‘zlashtirib, umidsizlikdan chiqadi.",
+   "6. Uillis Kerriyer xavotirni hal qilish uchun eng yomon oqibatni tasavvur qilish va unga xayolan ko‘nikish qoidasini taklif etadi.",
+   "7. Xavotir va ruhiy zo‘riqish oshqozon yarasi, artrit hamda tish kasalliklarini keltirib chiqarishi ilmiy dalillar bilan ko‘rsatiladi.",
+   "8. Galen Litchfield Shanxayda yapon gestaposi xavf solganida yozuv mashinkasida masalani tahlil qilib, qutulish yo‘lini topadi.",
+   "9. Uinston Cherchil va boshqa rahbarlar o‘ta band bo‘lganliklari sababli xavotirlanishga vaqtlari yo‘qligini ta'kidlashadi.",
+   "10. Suv osti kemasidagi askarlar 15 soatlik bombardimon paytida tinch yotib, kichik tashvishlarning arzimasligini anglashadi.",
+   "11. Ulkan sonlar qonunini qo‘llash orqali xavfning ro‘y berish ehtimoli kamligi aniqlanadi va xotirjamlikka erishiladi.",
+   "12. Muqarrar hodisalarni qabul qilish va ularga moslashish zarurligi uqtiriladi.",
+   "13. Benjamin Franklin yoshligida hushtak uchun bor pulini berib qo‘yganini eslab, arzimagan narsaga ortiqcha to‘lamaslik sabog‘ini beradi.",
+   "14. Mark Avreliyning «Bizning hayotimiz — o‘zimiz u haqida nimalarni o‘ylayotganimizdir» degan hikmati tahlil qilinadi.",
+   "15. Laurence Jones va Avraam Linkoln misolida dushmanlarni kechirish hamda adovatdan xalos bo‘lish sabog‘i ko‘rsatiladi.",
+   "16. Aravachada o‘tirgan oyoqsiz yigitning tabassumi tushkunlikka tushgan kishiga o‘z imkoniyatlarini qadrlashni o‘rgatadi.",
+   "17. Kess Deyli tishlaridagi nuqsonni bekitishni bas qilib, uni o‘zining ijobiy va xarakterli belgisiga aylantiradi.",
+   "18. El Smit o‘zidagi bilimsizlikni kuniga 16 soat o‘qib yengadi va mashhur gubernatorga aylanadi.",
+   "19. Yeyts xonim Perl-Xarbor hujumi paytida boshqalarga yordam berish bilan band bo‘lib, o‘zining og‘ir xastaligini unutadi.",
+   "20. Admiral Piri va Jorj Vashington misolida tanqid xolislik emas, ko‘pincha hasad nishonasi ekani tushuntiriladi.",
+   "21. Vikki Baum va sobiq masxaraboz chol misolida mushaklarni bo‘shashtirish (relaksatsiya) usullari o‘rgatiladi.",
+   "22. Yozuv stolida tartib o‘rnatish va muammolarni darhol hal qilish orqali ruhiy zo‘riqish kamaytiriladi.",
+   "23. Kaltenborn Fransiyada tildan qiynalsa ham, ishiga nisbatan ishtiyoq va hayajon uyg‘otib katta muvaffaqiyatga erishadi.",
+   "24. Semyuel Untermeyer va Ayra Sender misolida uyqusizlikning o‘zi emas, balki u haqidagi xavotir zararli ekani isbotlanadi."
+  ],
+  "quotes": [
+   "Faqat hozirgi paytda qilish mumkin bo‘lgan va muayyan ishlarni ado eting. Sizning vazifangiz noaniq olis kelajakni ko‘rishga urinishda emas, balki ana shundan iboratdir.",
+   "Bir qum zarrasi ikkinchisining ortidan tushadi... Bir ish ikkinchisidan keyin.",
+   "Bizning hayotimiz – o‘zimiz u haqida nimalarni o‘ylayotganimizdir.",
+   "O‘zimni rasvo his etardim etigim yo‘qligidan, Oyoqlari yo‘q yigitni uchratmagunimcha.",
+   "Mening bahslashish, afsuslanish uchun vaqtim yo‘q edi. Meni hech kim nafratlanish darajasida past ketishga majbur qila olmaydi.",
+   "Avom xalq buyuk kishilar yo‘l qo‘ygan xatolar va ahmoqliklardan katta lazzat oladi.",
+   "Hayotimiz – biz u haqida nimaiki o‘ylasak, o‘shadir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Deyl Karnegi yoshligida Nyu-Yorkda qanday ish qilgan?",
+   "options": [
+    "A) Yuk mashinalari sotgan",
+    "B) Maktabda rahbar bo‘lgan",
+    "C) Bankda hisobchi bo‘lgan",
+    "D) Shifoxonada tabib bo‘lgan"
+   ],
+   "answer": "A) Yuk mashinalari sotgan"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Osler kelajak xavotiridan qutulish uchun nimani maslahat beradi?",
+   "options": [
+    "A) Bugungi kun oralig‘ida yashashni",
+    "B) O‘tmishni doim eslab yurishni",
+    "C) Ko‘proq boylik to‘plashni",
+    "D) Barcha ishlarni kechiktirishni"
+   ],
+   "answer": "A) Bugungi kun oralig‘ida yashashni"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shifokor Ted Bengerminoga inson hayotini nimaga o‘xshatib tushuntirdi?",
+   "options": [
+    "A) Qum soatiga",
+    "B) Tezkor poyezdga",
+    "C) Oqarsuv daryoga",
+    "D) Yonayotgan shamga"
+   ],
+   "answer": "A) Qum soatiga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shilds xonim eridan ayrilgach, qanday buyum sotgan?",
+   "options": [
+    "A) Geografik atlaslar",
+    "B) Bolalar o‘yinchoqlari",
+    "C) Uy-ro‘zg‘or idishlari",
+    "D) Kiyim-kechaklar"
+   ],
+   "answer": "A) Geografik atlaslar"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Urush paytida to‘g‘ri fikrlash nimaga olib keladi?",
+   "options": [
+    "A) Amaliy rejalashtirishga",
+    "B) Asabiy zo‘riqishga",
+    "C) Qo‘rquv va sarosimaga",
+    "D) Doimiy xavotirlanishga"
+   ],
+   "answer": "A) Amaliy rejalashtirishga"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Karnegi nega YONU kechki maktabida dars berishni tanladi?",
+   "options": [
+    "A) Kunduzi yozishga vaqt bo‘lgani uchun",
+    "B) Ko‘p pul berishgani uchun",
+    "C) U yerda suvaraklar yo‘qligi uchun",
+    "D) Boshqa ish topolmagani uchun"
+   ],
+   "answer": "A) Kunduzi yozishga vaqt bo‘lgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qum soati misolida qum zarralari nimani anglatadi?",
+   "options": [
+    "A) Bajaradigan ishlarni",
+    "B) O‘tgan yillarni",
+    "C) To‘plangan boylikni",
+    "D) Qilingan xatolarni"
+   ],
+   "answer": "A) Bajaradigan ishlarni"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Uillis Kerriyerning xavotirni yengish usuli to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, eng yomonga tayyorlanish tinchlantiradi",
+    "B) Noto‘g‘ri, bu tushkunlikka olib keladi",
+    "C) Noto‘g‘ri, har doim qochish kerak",
+    "D) Noto‘g‘ri, xavotir o‘z-o‘zidan yo‘qoladi"
+   ],
+   "answer": "A) To‘g‘ri, eng yomonga tayyorlanish tinchlantiradi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Inson faqat bugungi kun nonini so‘rashi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, ertangi xavotir kuchni kamaytiradi",
+    "B) Noto‘g‘ri, faqat kelajakni o‘ylash kerak",
+    "C) Noto‘g‘ri, o‘tmishni o‘ylash foydaliroq",
+    "D) Noto‘g‘ri, hamma narsadan voz kechiladi"
+   ],
+   "answer": "A) To‘g‘ri, ertangi xavotir kuchni kamaytiradi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «o‘lik o‘tgan kunlar o‘z murdalarini ko‘msin» deganda nimani nazarda tutgan?",
+   "options": [
+    "A) O‘tmish xatolarini unutish kerakligini",
+    "B) Qabristonga tez-tez borish kerakligini",
+    "C) Kelajakdan butunlay qo‘rqish kerakligini",
+    "D) Barcha do‘stlardan voz kechish kerakligini"
+   ],
+   "answer": "A) O‘tmish xatolarini unutish kerakligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Galen Litchfield xavotirga tushganda birinchi nima qilardi?",
+   "options": [
+    "A) Yozuv mashinkasida sabablarni yozardi",
+    "B) Darhol do‘stlariga qo‘ng‘iroq qilardi",
+    "C) Uxlash uchun dori ichardi",
+    "D) Ko‘chaga chiqib sayr qilardi"
+   ],
+   "answer": "A) Yozuv mashinkasida sabablarni yozardi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Suv osti kemasidagi askarlar xavotirdan qanday qutulishdi?",
+   "options": [
+    "A) Osma karavotlarda tinch yotishdi",
+    "B) Barchasi qochishga harakat qildi",
+    "C) Yaponlar bilan muzokara qilishdi",
+    "D) Baland ovozda ashula aytishdi"
+   ],
+   "answer": "A) Osma karavotlarda tinch yotishdi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Benjamin Franklin yoshligida bor puliga nima sotib olgan?",
+   "options": [
+    "A) Hushtak",
+    "B) Kitob",
+    "C) O‘yinchoq mashina",
+    "D) Shirinlik"
+   ],
+   "answer": "A) Hushtak"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mark Avreliy hayotimiz haqida qanday xulosa bergan?",
+   "options": [
+    "A) Hayotimiz — fikrlarimiz mahsulidir",
+    "B) Hayotimiz — doimiy azobdir",
+    "C) Hayotimiz — tasodiflar majmuidir",
+    "D) Hayotimiz — faqat boylikdir"
+   ],
+   "answer": "A) Hayotimiz — fikrlarimiz mahsulidir"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ruhiy siqilish va xavotir insonda qanday oqibatga olib keladi?",
+   "options": [
+    "A) A'zolarda kasalliklar paydo qiladi",
+    "B) Insonni kuchli va jasur qiladi",
+    "C) Ish unumdorligini keskin oshiradi",
+    "D) Do‘stlar sonini ko‘paytiradi"
+   ],
+   "answer": "A) A'zolarda kasalliklar paydo qiladi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Biron muammo tug‘ilganda uni hal etishning to‘g‘ri tartibi qanday?",
+   "options": [
+    "A) Tahlil qilish va chora ko‘rish",
+    "B) Darhol vahima va yig‘i ko‘tarish",
+    "C) Boshqalarga aybni to‘nkash",
+    "D) Muammoni ko‘rmazlikka olish"
+   ],
+   "answer": "A) Tahlil qilish va chora ko‘rish"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Cherchil urush paytida xavotirlanishga vaqti yo‘qligini aytgan?",
+   "options": [
+    "A) Juda band bo‘lgani uchun",
+    "B) Qo‘rqmagani uchun",
+    "C) Doim uxlagani uchun",
+    "D) Uydan chiqmagani uchun"
+   ],
+   "answer": "A) Juda band bo‘lgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega qipiqlarni qayta arralash mantiqsizlik hisoblanadi?",
+   "options": [
+    "A) O‘tmishni o‘zgartirib bo‘lmagani uchun",
+    "B) Qipiq yumshoq bo‘lgani uchun",
+    "C) Arra buzilib qolgani uchun",
+    "D) Vaqt juda ko‘p bo‘lgani uchun"
+   ],
+   "answer": "A) O‘tmishni o‘zgartirib bo‘lmagani uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Linkolnning dushmanlarini kechirish usuli qanday baholanadi?",
+   "options": [
+    "A) Yuksak odamiylik va aql-idrok",
+    "B) Qo‘rqoqlik va ojizlik",
+    "C) Yuzsizlik va beboshlik",
+    "D) Befarq va loqaydlilik"
+   ],
+   "answer": "A) Yuksak odamiylik va aql-idrok"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «limon bo‘lsa, undan limonad tayyorlang» deganda nimani ko‘rsatgan?",
+   "options": [
+    "A) Qiyinchilikdan foyda chiqarishni",
+    "B) Shirin ichimliklar tayyorlashni",
+    "C) Nordan mevalarni yoqtirishni",
+    "D) Bozordan limon sotib olishni"
+   ],
+   "answer": "A) Qiyinchilikdan foyda chiqarishni"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oyoqsiz yigitni uchratgan kishi nima haqida o‘ylab qoldi?",
+   "options": [
+    "A) O‘zining naqadar boyligini bildi",
+    "B) Unga rahm qilib yig‘ladi",
+    "C) O‘zining etiklarini sotib yubordi",
+    "D) Uyiga qaytib ketdi"
+   ],
+   "answer": "A) O‘zining naqadar boyligini bildi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kess Deyli xonanda sifatida qanday qilib muvaffaqiyatga erishdi?",
+   "options": [
+    "A) Tishlarini berkitmay kuylashni boshladi",
+    "B) Yangi kiyimlar sotib oldi",
+    "C) Sahnada Kamroq harakat qildi",
+    "D) Qo‘shiqlarni sekinroq aytdi"
+   ],
+   "answer": "A) Tishlarini berkitmay kuylashni boshladi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kaltenborn Fransiyada buyum sotishda qanday usuldan foydalangan?",
+   "options": [
+    "A) Shlyapasi ichidagi matnni ko‘rsatgan",
+    "B) Fransuzcha zo‘r gapirgan",
+    "C) Barchaga sovg‘alar ulashgan",
+    "D) Narxlarni juda arzonlatgan"
+   ],
+   "answer": "A) Shlyapasi ichidagi matnni ko‘rsatgan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Semyuel Untermeyer uyqusizlik vaqtini nimaga bag‘ishlagan?",
+   "options": [
+    "A) O‘qish va mehnat qilishga",
+    "B) Televizor tomosha qilishga",
+    "C) Ko‘chada keraksiz yurishga",
+    "D) Xavotirlanib yig‘lashga"
+   ],
+   "answer": "A) O‘qish va mehnat qilishga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ish stolida tartib o‘rnatish ishchiga qanday yordam beradi?",
+   "options": [
+    "A) Ruhiy zo‘riqishni kamaytiradi",
+    "B) Ish vaqtini ko‘paytiradi",
+    "C) Maoshni avtomati oshiradi",
+    "D) Xatolarni yashirishga yordam beradi"
+   ],
+   "answer": "A) Ruhiy zo‘riqishni kamaytiradi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Yeyts xonim bomba portlagach, o‘rnidan turib ketdi?",
+   "options": [
+    "A) Boshqalarga yordam berish bilan band bo‘ldi",
+    "B) Qo‘rquvdan uyini tashlab qochdi",
+    "C) Shifokorlar unga majbur qilishdi",
+    "D) Bomba uning karavotini sindirdi"
+   ],
+   "answer": "A) Boshqalarga yordam berish bilan band bo‘ldi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega uyqusizlikning o‘zi emas, xavotiri zararli hisoblanadi?",
+   "options": [
+    "A) Xavotir organizm kuchini yemirgani uchun",
+    "B) Uyqu umuman kerak bo‘lmagani uchun",
+    "C) Inson uyqusiz abadiy yashagani uchun",
+    "D) Xavotir insonni tez uxlatgani uchun"
+   ],
+   "answer": "A) Xavotir organizm kuchini yemirgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Masxarabozning «ezg‘ilangan eski paypoq» haqidagi maslahati to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, relaksatsiya mushaklarni bo‘shashtiradi",
+    "B) Noto‘g‘ri, mushaklar doim tarang bo‘lishi shart",
+    "C) Noto‘g‘ri, bu faqat bolalar uchun",
+    "D) Noto‘g‘ri, paypoqning bu ishga aloqasi yo‘q"
+   ],
+   "answer": "A) To‘g‘ri, relaksatsiya mushaklarni bo‘shashtiradi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «hech kim o‘lik itni urmaydi» degan ibora bilan nimani ko‘rsatgan?",
+   "options": [
+    "A) Muvaffaqiyatli odamlarni tanqid qilishlarini",
+    "B) Hayvonlarga shafqatsiz bo‘lmaslik kerakligini",
+    "C) Itlarni har doim asrash kerakligini",
+    "D) Tanqiddan doim qochish lozimligini"
+   ],
+   "answer": "A) Muvaffaqiyatli odamlarni tanqid qilishlarini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«O‘zimni rasvo his etardim etigim yo‘qligidan...» misrasi nimaga undaydi?",
+   "options": [
+    "A) Boriga shukr qilib yashashga",
+    "B) Yangi etik sotib olishga",
+    "C) Doim g‘amgin bo‘lib yurishga",
+    "D) Boshqalarga hasad qilishga"
+   ],
+   "answer": "A) Boriga shukr qilib yashashga"
+  }
+ ]
+}

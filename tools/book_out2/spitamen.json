@@ -1,0 +1,50 @@
+{
+ "title": "Spitamen",
+ "author": "Maqsud Qoriyev",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "vatanparvarlik",
+   "jasorat",
+   "tarixiy xotira",
+   "ozodlik",
+   "birlik"
+  ],
+  "theme": "Asarning bosh g‘oyasi — Vatan ozodligi va erki yo‘lidagi kurash har qanday qudratli bosqinchidan ustun turishidir. Tug‘ilgan tuproqni sevish, el-yurt birligini saqlash hamda xiyonatga yo‘l qo‘ymaslik har bir insonning muqaddas burchi ekani ko‘rsatiladi.",
+  "summary": "Makedoniyalik Iskandar dunyoni egallash niyatida Sug‘diyona va Baqtriya yerlariga bostirib kiradi, shahar hamda qishloqlarni vayron qiladi. Maroqand hokimi Namich va ko‘plab zodagonlar taslim bo‘lish yo‘lini tutgan bir paytda, jasur sug‘d sarkardasi Spitamen xalq qasoskorlarini to‘plab, dushmanga qarshi keskin ozodlik kurashini boshlaydi. Spitamen mohirona taktika va partizanlik urushi usulini qo‘llab, Iskandarning yengilmas hisoblangan qo‘shinlariga qattiq talafotlar yetkazadi hamda ularning rejasini chippakka chiqaradi. Biroq kurash davomida mahalliy zodagonlar (Oksiart va boshqalar) shaxsiy manfaat va qo‘rqoqlik sabab dushman tomoniga o‘tadilar hamda xalq kuchlarini parchalab yuboradilar. Massagetlar va ayrim doiralar xiyonati tufayli Spitamen fojiali ravishda halok bo‘ladi. Sarkarda vafot etsa-da, uning matonati va vatanparvarligi sug‘d xalqining mardlik va ozodlik ramziga aylanadi.",
+  "characters": "Spitamen — sug‘diyonalik jasur sarkarda, Vatan ozodligi yo‘lida unamay kurashgan tengsiz pahlavon. Iskandar — dunyoni zabt etish ishtiyoqidagi shafqatsiz va ayyor makedoniyalik jahongashta podshoh. Odatida — Spitamenning turmush o‘rtog‘i, rashk va noxush mish-mishlar ta'sirida fojiali qarorlarga keladigan ayol. Ravshanak — Oksiartning go‘zal va mard qizi, keyinchalik Iskandarga nikohlab beriladi. Dariyod — Maroqand ko‘chalarida xalqqa adolat va ma'rifat ulashuvchi dono mo‘ysafid. Sherdor — qoyalarga rasm chizuvchi iqtidorli yigit, malika Turonaning sevgilisi hamda Spitamenning sodiq navkari.",
+  "conclusion": "Ushbu asar kitobxonda Vatan tarixi bilan faxrlanish va g‘urur hissiyotlarini shakllantiradi. Bola ozodlik va tinchlikning nechoqli aziz va qimmatli ne'mat ekanligini, xalqning eng katta kuchi esa birlik hamda ahillikda ekanini anglab yetadi. Shuningdek, asar xiyonat va sotqinlikning illat ekanini, jasorat va imon esa mangu yashashini o‘rgatadi.",
+  "difficulty": "o‘rta",
+  "mood": "vatanparvarlik ruhidagi, shukuhli va fojiaviy",
+  "for_whom": "Tarixiy voqealarga, pahlavonlar va ajdodlarimizning jasoratiga qiziquvchi o‘smirlar uchun mo‘ljallangan.",
+  "events": [
+   "Makedoniyalik Iskandar Sug‘diyonani egallash uchun katta qo‘shin bilan bostirib keladi.",
+   "Maroqand poytaxtida Dariyod donishmand xalqqa Axuramazda va yaxshilik haqida rivoyatlar so‘zlaydi.",
+   "Sherdor ismli sahroyi ovchi yigit bozorda qush sotuvchini xor qilayotgan midiyalik zodagonni do‘pposlaydi.",
+   "Maroqand ko‘chasida oq fil ustida ketayotgan malikayi Turonani ko‘rib qolgan Sherdor unga oshiq bo‘lib qoladi.",
+   "Spitamen Maroqand hokimi Namich huzuriga borib, kelayotgan dushmanga qarshi birgalikda kurashishga chaqiradi.",
+   "Navro‘z bayramida Spitamen Xoriyen qoyalari yonida Oksiartning jasur qizi Ravshanak bilan uchrashadi.",
+   "Iskandar daryodan kechib o‘tib, Sug‘d tumanlarini bosib oladi va ko‘plab tinch aholini shafqatsizlarcha qiradi.",
+   "Iskandar o‘rmonda yo‘lbarsni ovlaydi va sug‘diyonalik ovchi Aspatdan Spitamenning tengsiz pahlavon ekanligini eshitadi.",
+   "Spitamen xalq qasoskorlarini to‘plab, Samarqanddagi dushman garnizonini va ularga yuborilgan jazo qo‘shinini tor-mor etadi.",
+   "Makedoniyalik jangchi Roma urushning ma'nosizligini anglab yetadi va Iskandarga qarshi so‘zlagani uchun qatl qilinadi.",
+   "Spitamen safdoshi Sherdor va malika Turonani uchratib, ularning boshini qasamyod va fotiha bilan qovushtiradi.",
+   "Sug‘d zodagonlari Oksiart va Xoriyen kurashdan voz kechib, Iskandarga taslim bo‘lishadi hamda Ravshanak Iskandarga nikohlanadi.",
+   "Mish-mishlar hamda ittifoqchilarning xiyonati tufayli Spitamen fojiali ravishda halok bo‘ladi."
+  ],
+  "quotes": [
+   "Sug‘diyona poytaxti Maroqand hamisha gavjum, notinch, ajoyibot, g‘aroyibotlarga to‘la.",
+   "Biz hammamiz yorug‘likning, Quyoshning farzandlarimiz.",
+   "Bizning elimiz mardlar makoni, hech narsaga muhtoj emas.",
+   "O, Quyosh, sen – hayot manbai, mening imonim, vijdonimsan.",
+   "Spitamen – o‘z Vatanining jonkuyar himoyachisi, jasur va tolmas kurashchi."
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Spitamen o‘z yurti va xalqining ozodligi uchun mardona kurashdi. Agar sen uning o‘rnida bo‘lganingda, el-yurtni birlashtirish va dushmandan himoya qilish uchun qanday yo‘l tutgan bo‘larding?"
+}

@@ -1,0 +1,481 @@
+{
+ "title": "Mehrobdan chayon",
+ "author": "Abdulla Qodiriy",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "sevgi",
+   "tarix",
+   "zulm va adolat",
+   "halollik",
+   "do‘stlik",
+   "vafo"
+  ],
+  "theme": "Asarda XIX asrdagi Qo‘qon xonligi davridagi feodal zulm, adolatsizlik va saroy fitnalari tasvirlanadi. Bosh g‘oya — har qanday zolim tuzum va sotqinlikka to‘la muhitda ham pok sevgi, adolat, sodiq do‘stlik hamda insoniy qadr-qimmat ustun kelishini ko‘rsatishdir.",
+  "summary": "Qo‘qonlik maktabdor Solih maxdumning xonadonida uning tarbiyasini olgan yetim yigit Anvar hamda maxdumning qizi Ra’no o‘rtasida samimiy va pok sevgi kurtak otadi. Anvar o‘zining zukkoligi va halol mehnatsevarligi orqali Qo‘qon xonligi saroyida mirzoboshi lavozimigacha ko‘tariladi. Biroq uning obro‘si va halolligi saroydagi fitnachi mullalar hamda amaldorlarga yoqmaydi. Solih maxdumning xasisligi va soddaligidan foydalangan sobiq imom Mulla Abdurahmon Ra’noga xaridor bo‘ladi, lekin rad etilgach, Anvarga nisbatan kek saqlaydi. Mulla Abdurahmon saroydagi hamtovoqlari bilan birgalikda ma’shuqaparast Xudoyorxonga Ra’noning husnu jamolini oshirib ko‘rsatishadi. Xudoyorxon Ra’noga sovchi yuborib, majburiy fotiha qildiradi. O‘z sevgisidan va adolatdan kechishni xohlamagan Anvar do‘sti Sultonali mirzo va bo‘zchi Safar aka yordamida Ra’noni olib qochish rejasini tuzadi. Xon bundan xabar topib, Sultonali mirzoni hibsga oladi va o‘limga hukm qiladi. Do‘stining o‘zi uchun qurbon bo‘lishiga chidash berolmagan Anvar o‘z oyoqlari bilan Xudoyorxon huzuriga kelib, jasorat bilan xonning zulmini yuziga soladi va Sultonalini qutqaradi. Xon Anvarni dorda osishga va jallodga topshirishga buyuradi. Dor ostida Anvar pok vijdon bilan o‘limni qarshilaydi, biroq uning sodiq og‘asi Qobilboy va do‘stlari to‘palon ko‘tarib, Anvarni jallod va yasovullar changalidan qutqarib qoladilar. Qo‘rg‘on devoridan oshib o‘tgan Anvar va Ra’no Toshkentga qochib kelishadi va shu yerda tinch, kamtarona hayot kechira boshlashadi.",
+  "characters": "Anvar — Salim bo‘yoqchining o‘g‘li, aqlli, halol, jasur va sodiq yigit; o‘rda mirzoboshisi.\nRa’no — Solih maxdumning qizi, oqila, shoira, pok qalb egalari bo‘lgan jasur qiz.\nSolih maxdum — maktabdor domla, picha xasis, shogirdlariga g‘amxo‘r, lekin saroy amaldorlaridan qo‘rqadigan kishi.\nNigor oyim — Solih maxdumning xotini, sabrli, mehribon ona.\nMulla Abdurahmon — hasadgo‘y, fitnachi imom, Ra’noga xaridor bo‘lib rad etilgach, Anvarga dushmanlik qiladi.\nSultonali mirzo — Anvarning eng yaqin, sodiq va mard do‘sti.\nSafar bo‘zchi — sodda, halol, Anvarga chin dildan yordam beruvchi kosib.\nXudoyorxon — Qo‘qonning zolim va ma’shuqaparast hukmdori.\nQobilboy — Anvarning jasur va fidoyi og‘asi.",
+  "conclusion": "Ushbu asar kitobxonga haqiqiy insoniy qadr-qimmat, adolat va halollik har qanday zulmdan baland turishini ko‘rsatib beradi. O‘quvchi Anvar va Ra’no timsolida pok sevgiga vafo qilishni, Sultonali va Qobilboy timsolida esa chin do‘stlik hamda fidoiylikni o‘rganadi. Asar bolada adolatsizlikka qarshi nafrat, sabr-toqat, ota-ona va ustozga hurmat hamda toza vijdon bilan yashash tuyg‘ularini shakllantiradi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tarixiy Voqealarga, o‘zbek mumtoz adabiyotiga, sevgi va jasorat haqidagi falsafiy asarlarga qiziqadigan o‘smirlar uchun.",
+  "events": [
+   "1. Solih maxdum bozordan go‘sht va piyoz sotib olib, manti pishirishni buyuradi.",
+   "2. Maxdum loy o‘ynayotgan qizi Ra’noni Koyib, uni o‘qish va odobga chaqiradi.",
+   "3. Amir Umarxon va Madalixon davridagi kanizak mojarosi hamda Solih maxdum otasining taqdiri bayon qilinadi.",
+   "4. Solih maxdum maktab ochadi, Nigorxonimga uylanadi va elda taniqli domla bo‘ladi.",
+   "5. Maxdumning xasisligi, kiyim va taom borasidagi tejamkorligi tasvirlanadi.",
+   "6. Salim bo‘yoqchining yetim qolgan o‘g‘li Anvar Maxdum maktabida savod chiqaradi.",
+   "7. Anvar o‘rda xizmatiga kirib, zukkoligi bilan mirzoboshi darajasiga ko‘tariladi.",
+   "8. Safar bo‘zchi Anvarning halolligini ko‘rib, unga minnatdorchilik bildiradi.",
+   "9. Mulla Abdurahmon Ra’noga sovchi qo‘yadi, lekin rad javobini oladi.",
+   "10. Anvar va Ra’no o‘rtasidagi samimiy va hazil-mutoyabaga boy sevgi ko‘rsatiladi.",
+   "11. Mulla Abdurahmon va saroy fitnachilari Ra’noning ta’rifini Xudoyorxonga yetkazishadi.",
+   "12. Xudoyorxon Tunqotar va Dasturxonchini Solih maxdumning uyiga sovchilikka yuboradi.",
+   "13. Maxdum qo‘rqganidan xonning fotihasiga rozi bo‘ladi.",
+   "14. Anvar va Ra’no fotiha xabarini eshitib, chuqur qayg‘uga batmon bo‘lishadi.",
+   "15. Anvar Sultonali va Safar bo‘zchi yordamida Ra’noni olib qochish rejasini tuzadi.",
+   "16. Ra’no maxfiy ravishda olib qochiladi va Karimboyning uyida yashiriladi.",
+   "17. Xudoyorxon g‘azablanib, Sultonali mirzoni hibsga oladi va o‘limga hukm etadi.",
+   "18. Anvar do‘stini qutqarish uchun o‘z ixtiyori bilan xon huzuriga kelib, haqiqatni aytadi.",
+   "19. Xudoyorxon Anvarni dorda osishga va jallodga topshirishga buyuradi.",
+   "20. Dor ostida Anvar Mulla Abdurahmonning yuziga uning tubanligini solib, tik so‘zlaydi.",
+   "21. Qobilboy va uning odamlari to‘palon ko‘tarib, Anvarni jallod changalidan qutqarishadi.",
+   "22. Anvar, Ra’no, Sultonali va Safar bo‘zchi yarim kechada qo‘rg‘on devoridan oshib qochishadi.",
+   "23. Anvar va Ra’no Toshkentga kelib, tinch va kamtarona hayot kechira boshlashadi."
+  ],
+  "quotes": [
+   "“Agar Farhodning Shirin, bo‘lsa Majnunlarning Laylosi, Nasib o‘lmish menga gulshan aro gullarning – Ra’nosi.”",
+   "“Oyni etak bilan yashirib bo‘lmaydir.”",
+   "“Ishq davosi avom o‘ylag‘ancha vasl emas – hajrdir. Zero, vasl ishq o‘tini so‘ndirg‘uchi, hajr esa kamolatka erishdirguchidir...”",
+   "“Meni dor ostig‘a kim keltirdi? Vijdon emasmi, taqsir?!”",
+   "“Dunyoda hayotidan qo‘l yuvg‘uchidek tili uzun kishi bo‘lmas.”",
+   "“Siz iflos vijdon bilan g‘olibsiz, men sof vijdon bilan mag‘lubman...”"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Solih maxdum bozordan nima sotib olib keldi?",
+   "options": [
+    "A) Bir tangalik go‘sht va piyoz",
+    "B) Ikki tangalik guruch va yog‘",
+    "C) Manti uchun maxsus un",
+    "D) Qassobdan faqat bir qop piyoz"
+   ],
+   "answer": "A) Bir tangalik go‘sht va piyoz"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anvar kimning oilasida dunyoga kelgan edi?",
+   "options": [
+    "A) Solih maxdumning",
+    "B) Salim bo‘yoqchining",
+    "C) Safar bo‘zchining",
+    "D) Shahodat muftining"
+   ],
+   "answer": "B) Salim bo‘yoqchining"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anvarga ismni kim qo‘ygan edi?",
+   "options": [
+    "A) Otasi Salim bo‘yoqchi",
+    "B) Onasi Anorbibi",
+    "C) Opasi Nodira",
+    "D) Solih maxdum"
+   ],
+   "answer": "C) Opasi Nodira"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Solih maxdumning xotini kim edi?",
+   "options": [
+    "A) Nigorxonim",
+    "B) Roziyaxonim",
+    "C) Naimaxonim",
+    "D) Mohlar oyim"
+   ],
+   "answer": "A) Nigorxonim"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Solih maxdum hayotidagi voqealar tartibini belgilang.",
+   "options": [
+    "A) Imom bo‘ldi, maktab ochdi, uylandi",
+    "B) Uylandi, imom bo‘ldi, maktab ochdi",
+    "C) Maktab ochdi, uylandi, imom bo‘ldi",
+    "D) Imom bo‘ldi, uylandi, maktab ochdi"
+   ],
+   "answer": "C) Maktab ochdi, uylandi, imom bo‘ldi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Solih maxdum qovoq va shalg‘amni nega ko‘p olardi?",
+   "options": [
+    "A) Juda mazali bo‘lgani uchun",
+    "B) Arzon va xosiyati ko‘p deb",
+    "C) Bolalari faqat shuni yoqlagani uchun",
+    "D) Bozorda boshqa narsa bo‘lmagani uchun"
+   ],
+   "answer": "B) Arzon va xosiyati ko‘p deb"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Safar bo‘zchi Anvarga nega bepul bo‘z bermoqchi bo‘ldi?",
+   "options": [
+    "A) Arzasini haqsiz yozib bergani uchun",
+    "B) Anvar uni qo‘rqitgani uchun",
+    "C) Anvar uning qarindoshi bo‘lgani uchun",
+    "D) Bo‘z sotib olmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Arzasini haqsiz yozib bergani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Maxdumning xasisligiga Nigor oyimning sabr qilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — oilasi omonligi uchun",
+    "B) Noto‘g‘ri — ajrashib ketishi kerak edi",
+    "C) Noto‘g‘ri — erini ko‘chaga haydashi kerak",
+    "D) To‘g‘ri — chunki u ham xasis"
+   ],
+   "answer": "A) To‘g‘ri — oilasi omonligi uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Anvarning Safar bo‘zchidan haq olmasligi nimani ko‘rsatadi?",
+   "options": [
+    "A) Uquvsizligini",
+    "B) Halolligi va xoksorligini",
+    "C) Boyligini",
+    "D) Qo‘rqoqligini"
+   ],
+   "answer": "B) Halolligi va xoksorligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Maxdum haqida «oldingi domlalardan» deganda nimani ko‘rsatadi?",
+   "options": [
+    "A) Ko‘plarni savodli qilgan nodir muallimligini",
+    "B) Uning juda boy domla bo‘lganini",
+    "C) Saroyda katta amaldor bo‘lganini",
+    "D) Faqat o‘zini o‘ylaydigan odamligini"
+   ],
+   "answer": "A) Ko‘plarni savodli qilgan nodir muallimligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mulla Abdurahmon o‘rdadan surilgach, kimga fitna boshladi?",
+   "options": [
+    "A) Solih maxdumga",
+    "B) Anvarga",
+    "C) Sultonali mirzoga",
+    "D) Safar bo‘zchiga"
+   ],
+   "answer": "B) Anvarga"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ra’noni xonga kimlar sovchi bo‘lib fotiha qildi?",
+   "options": [
+    "A) Tunqotar va Dasturxonchi",
+    "B) Safar bo‘zchi va Qobilboy",
+    "C) Sultonali va Anvar",
+    "D) Shahodat mufti va Kalonshoh"
+   ],
+   "answer": "A) Tunqotar va Dasturxonchi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anvar saroyda qanday mansabda xizmat qilar edi?",
+   "options": [
+    "A) Mirzoboshi",
+    "B) Jallod",
+    "C) Dasturxonchi",
+    "D) Qozikalon"
+   ],
+   "answer": "A) Mirzoboshi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xudoyorxonning suyukli xotini kim edi?",
+   "options": [
+    "A) Nigor oyim",
+    "B) Roziya xonim",
+    "C) Nozik",
+    "D) Tuhfa"
+   ],
+   "answer": "B) Roziya xonim"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Fitnachilarning Ra’noni xonga olib berish tartibini toping.",
+   "options": [
+    "A) Ra’noni maqtash, xonni qitiqlash, sovchi yuborish",
+    "B) Fotihaga borish, so‘ngra xonga aytish",
+    "C) Maxdumdan so‘rash, Anvardan ruxsat olish",
+    "D) Xonni majburlash, Ra’noni olib qochish"
+   ],
+   "answer": "A) Ra’noni maqtash, xonni qitiqlash, sovchi yuborish"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Solih maxdum xon sovchilariga nega rad deyolmadi?",
+   "options": [
+    "A) Xonning zulmidan qo‘rqqani uchun",
+    "B) Ra’noni xonga berishni xohlagani uchun",
+    "C) Anvardan nafratlangani uchun",
+    "D) Xondan katta pul olgani uchun"
+   ],
+   "answer": "A) Xonning zulmidan qo‘rqqani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Anvar va Ra’no xon fotihasidan nega qayg‘uga tushdi?",
+   "options": [
+    "A) Pok sevgilariga xavf tug‘ilgani uchun",
+    "B) Maxdum ularni ko‘chaga haydagani uchun",
+    "C) Qo‘qondan ko‘chishni xohlamagani uchun",
+    "D) Anvar amaldan bo‘shatilgani uchun"
+   ],
+   "answer": "A) Pok sevgilariga xavf tug‘ilgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Anvar va Ra’noning bir-biriga sadoqati qanday baholanadi?",
+   "options": [
+    "A) Yuksak insoniy tuyg‘u va vafo",
+    "B) Shunchaki yoshlik qaysarligi",
+    "C) Kattalarga hurmatsizlik",
+    "D) Asossiz qo‘rqinch"
+   ],
+   "answer": "A) Yuksak insoniy tuyg‘u va vafo"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Ishq davosi vasl emas — hajrdir» jumlasi nimani tasvirlaydi?",
+   "options": [
+    "A) Qiyinchiliklar sevgini yanada kamolatga yetkazishini",
+    "B) Odamlar ayriliqda tezroq unutishini",
+    "C) Birga bo‘lish doim yomonligini",
+    "D) Sevgi umuman kerak emasligini"
+   ],
+   "answer": "A) Qiyinchiliklar sevgini yanada kamolatga yetkazishini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Mulla Abdurahmon xarakterini tasvirlashda nimaga urg‘u beradi?",
+   "options": [
+    "A) Uning ichki hasadi va fitnachiligiga",
+    "B) Uning saxiy va mehribonligiga",
+    "C) Uning faqat bilimdonligiga",
+    "D) Uning jasoratiga"
+   ],
+   "answer": "A) Uning ichki hasadi va fitnachiligiga"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sultonali mirzo Anvarga yordam bergani uchun nimaga duch keldi?",
+   "options": [
+    "A) O‘lim cezasi xavfiga",
+    "B) Buxoroga surgun qilinishga",
+    "C) Katta jarima to‘lashga",
+    "D) Qassoblikka o‘tkazilishga"
+   ],
+   "answer": "A) O‘lim cezasi xavfiga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anvar nega o‘zi Xudoyorxon huzuriga keldi?",
+   "options": [
+    "A) Do‘sti Sultonalini qutqarish uchun",
+    "B) Xondan mukofot so‘rash uchun",
+    "C) Yangi mansab olish uchun",
+    "D) Maxdum bilan urishgani uchun"
+   ],
+   "answer": "A) Do‘sti Sultonalini qutqarish uchun"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anvarni dordan kimlar qutqarib qolishdi?",
+   "options": [
+    "A) Qobilboy va uning odamlari",
+    "B) Xudoyorxonning o‘zi rahm qilib",
+    "C) Solih maxdum pul berib",
+    "D) Mulla Abdurahmon tavba qilib"
+   ],
+   "answer": "A) Qobilboy va uning odamlari"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anvar bilan Ra’no Qo‘qondan qaysi shaharga qochishdi?",
+   "options": [
+    "A) Toshkentga",
+    "B) Samarqandga",
+    "C) Buxoroga",
+    "D) Marg‘ilonga"
+   ],
+   "answer": "A) Toshkentga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Anvarning dor ostidagi harakatlari tartibini ko‘rsating.",
+   "options": [
+    "A) Tahorat oldi, namoz o‘qidi, Abdurahmonga gapirdi",
+    "B) Namoz o‘qidi, qochib ketdi, tahorat oldi",
+    "C) Abdurahmonga gapirdi, tahorat oldi, yig‘ladi",
+    "D) Jallodni urdi, namoz o‘qidi, qochdi"
+   ],
+   "answer": "A) Tahorat oldi, namoz o‘qidi, Abdurahmonga gapirdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qochish kechasidagi voqealar ketma-ketligi qaysi javobda to‘g‘ri?",
+   "options": [
+    "A) Devorga chiqish, arqon bilan tushish, aravada ketish",
+    "B) Aravada ketish, devordan oshish, otga minish",
+    "C) Toshkentga yetish, devorga chiqish, xayrlashish",
+    "D) Arqonni kesish, xon bilan uchrashish, ketish"
+   ],
+   "answer": "A) Devorga chiqish, arqon bilan tushish, aravada ketish"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Anvarning o‘zini o‘limga tikib kelishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Yuksak mardlik va do‘stga sadoqatni",
+    "B) O‘z hayotini qadrlamasligini",
+    "C) Xon uni o‘ldirmasligiga ishonchini",
+    "D) Ra’nodan voz kechganini"
+   ],
+   "answer": "A) Yuksak mardlik va do‘stga sadoqatni"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mulla Abdurahmon dor ostida Anvarga qarasa nega iljaydi?",
+   "options": [
+    "A) O‘ch olganidan g‘olibman deb o‘ylagani uchun",
+    "B) Anvarga rahmi kelgani uchun",
+    "C) Xondan mukofot olgani uchun",
+    "D) Anvarning hazillaridan kulgani uchun"
+   ],
+   "answer": "A) O‘ch olganidan g‘olibman deb o‘ylagani uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Anvarning dor ostida Abdurahmonga tik gapirishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — pok vijdon va haqiqat qo‘rqmaydi",
+    "B) Noto‘g‘ri — kechirim so‘rashi kerak edi",
+    "C) Noto‘g‘ri — jim turgani ma’qul edi",
+    "D) To‘g‘ri — chunki uni urmoqchi edi"
+   ],
+   "answer": "A) To‘g‘ri — pok vijdon va haqiqat qo‘rqmaydi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Anvar taqdiri haqida ikki xil rivoyat berishdan maqsadi nima?",
+   "options": [
+    "A) Tarixiy haqiqat oldidagi xolisligini ko‘rsatish",
+    "B) Kitobni uzunroq qilish",
+    "C) O‘quvchini chalg‘itish",
+    "D) Xudoyorxonni oqlash"
+   ],
+   "answer": "A) Tarixiy haqiqat oldidagi xolisligini ko‘rsatish"
+  }
+ ]
+}

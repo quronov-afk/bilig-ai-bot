@@ -1,0 +1,80 @@
+{
+ "title": "Yaxshilik va silai rahm",
+ "author": "Shayx Muhammad Sodiq Muhammad Yusuf",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "odob",
+   "oila",
+   "yaxshilik",
+   "silai rahm",
+   "ota-ona va farzand",
+   "tarbiya"
+  ],
+  "theme": "Ota-onaga yaxshilik qilish, qarindosh-urug‘chilik rishtalarini mustahkamlash (silai rahm), farzand tarbiyasi hamda oila a'zolarining o‘zaro ma'naviy va moddiy mas'uliyatlarini o‘rganish.",
+  "summary": "Ushbu kitob Husayn ibn Hasan Marvaziyning «Kitabul birri vas-sila» asarining Shayx Muhammad Sodiq Muhammad Yusuf tomonidan qilingan yozma sharhidir. Kitob muqaddimasida asarning yozilish tarixi, qo‘lyozma manbalari va olim Doktor Muhammad Sa'id Buxoriyning tadqiqotchilik mehnatlari haqida ma'lumot beriladi. Shuningdek, ulug‘ muhaddis Abdulloh ibn Muborak Marvaziyning ilmiy merosi, zohidlik va tijoratni jamlagan hayot yo‘li atroflicha bayon etiladi.\n\nAsarning asosiy mazmuni «birr» (ya'ni har taraflama yaxshilik, muloyimlik, ehson ko‘rsatish) hamda «silai rahm» (qarindoshlik rishtalarini bog‘lash va ulardan xabar olish) tushunchalarini tushuntirishga qaratilgan. Kitob to‘rt qismdan iborat bo‘lib, birinchi qismda ota-onaga yaxshilik qilishning fazilatlari, ularning roziligini olish va ularga oq bo‘lishning og‘ir oqibatlari atroflicha yoritiladi. Ota-ona huzurida farzandning o‘zini tutish odoblari, jumladan, ularga tik qaramaslik, gaplashganda qo‘l ko‘tarmaslik va nafl ibodatlardan ko‘ra ularning xizmatini ustun qo‘yish kabi daqiq masalalar keltiriladi.\n\nIkkinchi qismda ota-ona vafot etganidan keyin ularga qilinadigan yaxshiliklar, ularning do‘stlari va qarindoshlariga silai rahm qilish tartibi bayon etiladi. Xola, amaki, emizgan ona va katta akaning oiladagi o‘rni hamda ularni ehtirom qilish lozimligi ko‘rsatiladi.\n\nUchinchi qism farzandlarga yaxshilik qilish va ularni tarbiyalash masalalariga bag‘ishlangan. Unda farzandning ota-onadagi haqlari, chunonchi, chiroyli ism qo‘yish, go‘zal odob berish va balog‘atga yetganda uylantirish vazifalari tushuntiriladi. Qiz farzandlar tarbiyasining alohida fazilati va bolalar o‘rtasida teng muomala qilish hamda adolatni saqlash lozimligi uqtiriladi.\n\nTo‘rtinchi qismda ota-ona, ahli ayol, farzandlar va qarindoshlarga nafaqa qilish tartibi ko‘rib chiqiladi. Infoq va nafaqa ishlarida isrofgarchilikka ham, xasislikka ham yo‘l qo‘ymasdan, doimo mo‘tadil yo‘l tutish zarurligi ta'kidlanadi.",
+  "characters": "Husayn ibn Hasan Marvaziy, Abdulloh ibn Muborak Marvaziy, Doktor Muhammad Sa'id Buxoriy, Ozod Munavvar, Sa'd ibn Abu Vaqqos, Abu Hurayra, Umar ibn Abdulaziz",
+  "conclusion": "Ushbu kitob o‘quvchiga ota-ona va qarindoshlar bilan go‘zal munosabat o‘rnatish madaniyatini tushuntiradi. Oila a'zolarining bir-biri oldidagi ma'naviy va moddiy burchlarini anglashga yordam beradi. Farzand tarbiyasi va oilaviy adolat tamoyillarini hayotga tatbiq etish yo‘llarini ko‘rsatadi. Har bir inson o‘z yaqinlariga nisbatan oqibatli va mehribon bo‘lishining ahamiyatini bayon etadi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, nasihatomuz, ma'rifiy",
+  "for_whom": "Oila a'zolari bilan munosabatlarini yaxshilashni, ota-ona va qarindoshlar oldidagi burchlarini chuqurroq anglashni istagan o‘smirlar va kitobxonlar uchun.",
+  "events": [
+   "Kitob muallifi Husayn ibn Hasan Marvaziy va tadqiqotchi Muhammad Sa'id Buxoriy haqida ma'lumot beriladi.",
+   "Shayx Muhammad Sodiq Muhammad Yusuf asarni yozma sharh shakliga keltirish jarayonini bayon qiladi.",
+   "Abdulloh ibn Muborakning hayoti, zohidligi va ilmiy merosi yoritiladi.",
+   "«Kitabul birri vas-sila» qo‘lyozmasining saqlanish tarixi va ilmiy qiymati tushuntiriladi.",
+   "«Birr» (yaxshilik) va «silai rahm» tushunchalarining lug‘aviy hamda amaliy ma'nolari izohlanadi.",
+   "Ota-onaga yaxshilik qilishning fazilatlari va uning ulug‘ savobli amal ekani ta'kidlanadi.",
+   "Ota-onaning roziligini olish va ularga oq bo‘lishning oqibatlari ko‘rib chiqiladi.",
+   "Ota-ona huzurida farzand o‘zini qanday tutishi va odob-axloq qoidalari bayon etiladi.",
+   "Ota-ona vafot etganidan so‘ng ularning do‘stlari va qarindoshlariga yaxshilik qilish tartibi tushuntiriladi.",
+   "Xola, amaki va katta akaning oiladagi o‘rni hamda ularga ko‘rsatiladigan hurmat haqida so‘z yuritiladi.",
+   "Farzandlarning ota-onadagi haqlari, jumladan chiroyli ism qo‘yish va go‘zal tarbiya berish ko‘rsatib o‘tiladi.",
+   "Qiz farzandlarni tarbiyalash va ularga mehribonlik ko‘rsatishning alohida fazilatlari ta'riflanadi.",
+   "Farzandlar o‘rtasida adolat qilish va ularga teng munosabatda bo‘lish lozimligi uqtiriladi.",
+   "Oila a'zolari va qarindoshlarga nafaqa qilish hamda moddiy ko‘mak berish tartibi tushuntiriladi.",
+   "Nafaqa va infoq ishlarida isrofgarchilik hamda xasislikdan saqlanish, mo‘tadil yo‘l tutish zarurligi bayon etiladi."
+  ],
+  "quotes": [
+   "Yaxshilik va taqvo yo‘lida hamkorlik qiling.",
+   "Nasablaringizni (ajdodlaringizni) qavm-u qarindoshchiligingiz rishtalarini bog‘lovchi ilmlarni o‘rganing.",
+   "Xoliqqa ma'siyat bo‘ladigan ishlarda maxluqqa itoat qilinmaydi.",
+   "Hech narsa qilmasdan, shunchaki onaning yuziga qarashning o‘zi ham ibodat.",
+   "Dunyoda musulmonlarchalik onasini boshiga ko‘taradigan qavmni ko‘rganimiz yo‘q.",
+   "Infoq qilganlarida isrof ham, xasislik ham qilmaslar, bu ikkisi o‘rtasida mo‘tadil bo‘lurlar."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Zohidlik dunyoni, halol kasbni, yaxshilik va xayr yo‘lida nafaqa qilishni bir yo‘la tark qilish degani emas. Bolaginam! Zohidlik haromni tark qilishdir. Zohidlik shubhali narsalarni tark qilishdir. Zohidlik har bir halol va mubohdan ortig‘ini tark qilishdir.",
+   "question": "Ushbu parchada zohidlik tushunchasining mazmuni bayon etilgan. Sen o‘z kundalik hayotingda keraksiz narsalardan tiyilish va qanoatli bo‘lishni qanday tushunasan?"
+  },
+  {
+   "part": 1,
+   "context": "Onasi uni zaiflik ustiga zaiflik bilan ko‘tardi. Ya'ni homiladorlik paytida onasi uni qornida zaifhol bo‘lib ko‘taradi. Borgan sari zaiflik ustiga zaiflik ortib boradi. Bu hol bola tug‘ilgunicha davom etadi.",
+   "question": "Onaning farzandni dunyoga keltirishdagi mashaqqatlari haqida o‘ylaganingda, uning mehnatini qadrlash uchun sen o‘z xatti-harakatlaringda nimalarga e'tibor berishing kerak deb o‘ylaysan?"
+  },
+  {
+   "part": 2,
+   "context": "O‘zini tuqqan insonga o‘qraygan yaxshilik qilgan bo‘lmaydi. Abdulloh: “Ko‘z qiri bilan”, dedi. Abdurrahmon: “Nazari bilan”, dedi. Sharh: Kim ota-onasiga o‘qrayib qaragan bo‘lsa, u odamni “ota-onasiga yaxshilik qiladigan odam”, deb aytib bo‘lmaydi.",
+   "question": "Ota-ona bilan muloqot qilganda qarash va muomala odobiga rioya qilish nega muhim deb hisoblaysan? O‘z hayotingdan ota-onaga hurmat ko‘rsatish bo‘yicha qanday misol keltira olasan?"
+  },
+  {
+   "part": 2,
+   "context": "Farzandning ota-onadagi haqqi: ismini chiroyli qo‘yish, balog‘atga yetganda uylantirish va go‘zal odob berishdir. Sharh: Ushbu rivoyatda farzandning ota-onadagi haqlaridan uchtasi zikr qilingan: Birinchisi: ota-ona farzandiga chiroyli, go‘zal, musulmoncha ism qo‘yishi kerak. Ikkinchisi: farzand balog‘atga yetganida uni uylantirib qo‘yishi kerak. Qiz bo‘lsa, turmushga chiqaradi, o‘g‘il bo‘lsa, uylantirib qo‘yadi. Uchinchisi: farzandiga go‘zal odob berib, tarbiyalab borishi kerak.",
+   "question": "Farzandning ota-ona oldidagi haqlari haqida o‘qiding. Seningcha, yoshlarga go‘zal odob-axloq tarbiyasi berilishining ularning kelajak hayotidagi o‘rni qanday?"
+  },
+  {
+   "part": 3,
+   "context": "Infoq qilganlarida isrof ham, xasislik ham qilmaslar, bu ikkisi o‘rtasida mo‘tadil bo‘lurlar (67-oyat). Sharh: Arab tilida “infoq” – “nafaqa” iboralari mol-pul sarflash ma'nosini anglatadi. Bizda “birovga sadaqa qilish”, “ehson qilish” ma'nosida ishlatish odat tusiga kirib qolganligi oyatni noto‘g‘ri tushunishga, xayr-ehson, sadaqa qilganda mo‘tadil bo‘lishi kerag-u, boshqa vaqtlarda nima qilsa, o‘zi biladi, degan xayolga olib kelmasligi lozim. Musulmon kishi mol-pul sarflashda doimo mo‘tadil bo‘lishi kerak.",
+   "question": "Mol-dunyoni sarflashda isrofgarchilikka ham, o‘ta xasislikka ham yo‘l qo‘ymay o‘rtacha yo‘l tutish nima uchun muhim? Sen o‘z xarajatlaringda mo‘tadillikni qanday saqlaysan?"
+  }
+ ]
+}

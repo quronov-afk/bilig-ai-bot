@@ -1,0 +1,478 @@
+{
+ "title": "Martin Iden",
+ "author": "Jek London",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "17-19",
+  "age_hint": "16+",
+  "topics": [
+   "mehnatsevarlik",
+   "ilm-fan",
+   "orzu va maqsad",
+   "sevgi va vafo",
+   "jamiyat va inson"
+  ],
+  "theme": "Asar halol va mashaqqatli mehnat, yuksak maqsaddan chekinmaslik hamda insoniy qadr-qimmatni soxta shon-shuhrat va moddiylikdan ustun qo‘yish g‘oyasini ilgari suradi. Shuningdek, inson ma'naviy jihatdan yuksalsa, soxta jamiyatning tubanligini tushunib yetishini ko‘rsatadi.",
+  "summary": "Martin Iden — oddiy, sodda va mehnatkash dengizchi yigit. Kunlarning birida u kiborlar oilasidan bo‘lgan Artur bilan tanishib, uning xonadoniga mehmon bo‘lib keladi. U yerda Arturning singlisi Rufni ko‘rib, uni ilohiy va pokiza xilqat deb biladi va sevib qoladi. Ruf va uning oliyjamiyat muhitiga munosib bo‘lish uchun Martin o‘z ustida tinimsiz ishlashga, bilim olishga va yozuvchi bo‘lishga ahd qiladi.\n\nMartin kutubxonalarga qatnab, dunyo adabiyoti, grammatika va falsafani puxta o‘rganadi. Herbert Spenser falsafasi uning dunyoqarashini butunlay o‘zgartiradi. U tun-kun mijja qoqmay hikoyalar, maqolalar va dostonlar yozadi, ammo tahririyatlar uning asarlarini muttasil rad etib, orqaga qaytaradi. Puli tugagach, u kirxonada Jo bilan birga og‘ir va dozoqiy mehnat qiladi, biroq baribir ijod qilishni to‘xtatmaydi. Ruf va uning oilasi Martinning yozuvchilik orzusini jiddiy qabul qilmaydi, uni tayinli ishga kirishga undaydi.\n\nMartin o‘ziga o‘xshagan shoir Brissenden bilan tanishadi. Brissenden uning yagona haqiqiy do‘stiga va ma'naviy suyanchig‘iga aylanadi. Biroq Brissenden vafot etadi. Qiyinchiliklar va ochlikka qaramay, Martin yozishdan to‘xtamaydi. Nihoyat, uning «Sharmanda bo‘lgan quyosh» kitobi hamda boshqa asarlari bosilib chiqadi va u butun mamlakatga mashhur bo‘lib ketadi.\n\nShon-shuhrat va boylik kelgach, ilgari uni mensimagan, uyidan quvgan kiborlar, jumladan Ruf va uning oilasi ham Martinga xushomad qila boshlaydi. Martin ularning aslida uning iste'dodi va shaxsiyatini emas, faqat mashhurligi va pulini hurmat qilayotganini tushunib yetadi. Bu soxtalik va ikkiyuzlamachilikdan uning hafsalasi pir bo‘ladi, hayotga va ijodga bo‘lgan qiziqishi so‘nadi. U topgan pullarini o‘ziga yordam bergan mehribon uy bekasi Mariyaga, do‘sti Joga va boshqalarga ulashib beradi. So‘ng «Maripoza» kemasiga o‘tirib, janubiy dengizlarga safarga chiqadi va tunda o‘zini okean bag‘riga otib, hayot bilan vidolashadi.",
+  "characters": "Martin Iden — qat'iyatli, irodali, ilmga va go‘zallikka intiluvchi sobiq dengizchi, iqtidorli yozuvchi.\nRuf Morz — kiborlar oilasidan bo‘lgan bilimli qiz, Martinning birinchi muhabbati, ammo jamiyat a'molari va boylikka qaram.\nBrissenden — iqtidorli shoir, Martinning sodiq ma'naviy do‘sti, jamiyat soxtaligini teran anglagan inson.\nJo — Martinning kirxonadagi mehnatkash va sodda do‘sti.\nMariya Silva — Martin ijod qilgan og‘ir kunlarda unga yordam bergan, bag‘rikeng va mehribon uy bekasi.\nMister Xigginbotam — Martinning kuyovi, faqat pul va manfaatni o‘ylaydigan xasis odam.",
+  "conclusion": "Ushbu asar kitobxonga haqiqiy ilm, tirishqoqlik va doimiy mehnatning qudratini ko‘rsatadi. Bola kitobdan soxta bezaklar va boylik emas, balki samimiylik, halollik va ma'naviy poklik ustun ekanligini uqib oladi. Shuningdek, maqsaddan og‘ishmaslik va qiyinchiliklar qarshisida bukilmaslik sabog‘ini beradi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Adabiyot va falsafaga qiziqadigan, inson taqdiri va jamiyat haqida chuqur o‘ylaydigan, mehnat va orzu yo‘lida ilhomlanishni istagan yoshlar uchun.",
+  "events": [
+   "1. Martin Iden Artur bilan birga uning dabdabali xonadoniga keladi va o‘zini noqulay his qiladi.",
+   "2. Martin xonadondagi kitoblar va Suinbernning she'riyat to‘plami bilan tanishadi.",
+   "3. Martin Arturning singlisi Ruf Morz bilan uchrashadi va uning go‘zalligiga oshiq bo‘ladi.",
+   "4. Martin o‘zining dengizdagi hayoti va bo‘ynidagi chandiqlari haqida so‘zlab beradi.",
+   "5. Martin o‘z ustida ishlashga va Rufga munosib bo‘lish uchun yozuvchi bo‘lishga qaror qiladi.",
+   "6. Martin opasining uyida yashab, kuyovi mister Xigginbotamning ta'nalariga chidaydi.",
+   "7. Ruf Martinga grammatika va adabiyotdan saboq beradi va Charlz Betler hayotini o‘rnak qilib ko‘rsatadi.",
+   "8. Martin kutubxonalarga qatnab, uzluksiz mutolaa qiladi va birinchi hikoyalarini yozadi.",
+   "9. Spenser falsafasi bilan tanishgan Martinning dunyoqarashi butunlay o‘zgaradi va yuksallikka erishadi.",
+   "10. Martin opasining uyidan ko‘chib, Mariya Silvaning uyida kichik xonani ijaraga oladi va kerosinka sotib oladi.",
+   "11. Martin puli tugagach, Jo bilan birga kirxonada og‘ir va mashaqqatli mehnat qiladi.",
+   "12. Rufning onasi missis Morz Martinning kambag‘alligi sababli bu nikohga qarshi chiqadi.",
+   "13. Martin jamiyatdagi tengsizlik va soxtalikni tushunib yetadi hamda Brissenden bilan tanishadi.",
+   "14. Brissenden «Efemerida» dostonini yozadi va uni Martinga ko‘rsatadi.",
+   "15. Morzlarnikida o‘tkazilgan kechki ovqatda Martin Sudya Blount bilan bahslashib, Spenser g‘oyalarini himoya qiladi.",
+   "16. Brissenden vafot etadi va uning dostoni sensatsiya bo‘lib nashr etiladi.",
+   "17. Martinning «Sharmanda bo‘lgan quyosh» kitobi bosilib chiqib, unga katta shon-shuhrat va boylik keltiradi.",
+   "18. Ilgari Martinni rad etgan tahririyatlar va kiborlar endi uni o‘z uylariga taklif qila boshlaydilar.",
+   "19. Ruf Martinga qaytib keladi, lekin Martin uning soxta tuyg‘ularini anglab, uni rad etadi.",
+   "20. Martin o‘z boyligini Mariyaga, Joga va muhtoj yaqinlariga bo‘lib beradi.",
+   "21. Martin «Maripoza» kemasiga o‘tirib, janubiy dengizlarga safarga jo‘naydi.",
+   "22. Hayotdan va soxtalikdan toliqqan Martin tunda illyuminatordan okeanga sakrab, chukur suvga cho‘kadi va halok bo‘ladi."
+  ],
+  "quotes": [
+   "Oldinda kelayotgan yigit yassi kalit bilan eshikni ochdi.",
+   "Buyuk shoirning asaridan bir misrasini ham olib tashlab bo‘lmaydi.",
+   "Muxbir bo‘lish – ertadan kechgacha kosiblik qilish, shu ishga butunlay sho‘ng‘ib ketish demakdir.",
+   "Bu – umrim oxirida yaratgan eng yuksak asarim.",
+   "Mana, nihoyat uning qa'rida zulmat ichiga qulab tushdi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Martin Artur nikiga kelganida nimani ko‘rib hayratda qoldi?",
+   "options": [
+    "A) Royal va kitoblarni",
+    "B) Qimmatbaho mashinani",
+    "C) Qadimgi qurollarni",
+    "D) Katak xonalarni"
+   ],
+   "answer": "A) Royal va kitoblarni"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Martin bo‘ynidagi chandiq haqida so‘rashganda nima deb javob berdi?",
+   "options": [
+    "A) Meksikalik pichoq urganini",
+    "B) Urushda yaralangani haqida",
+    "C) Yo‘lbars tirnaganini",
+    "D) Qurilishda yiqilganini"
+   ],
+   "answer": "A) Meksikalik pichoq urganini"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Martin Artur nikida qaysi shoirning kitobini o‘qiy boshladi?",
+   "options": [
+    "A) Suinbern kitobini",
+    "B) Pushkin kitobini",
+    "C) Shekspir pyesasini",
+    "D) Bayron dostonini"
+   ],
+   "answer": "A) Suinbern kitobini"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mister Xigginbotam Martindan qanday to‘lovni talab qilardi?",
+   "options": [
+    "A) Gaz va xona pulini",
+    "B) Kiyim va poyabzal pulini",
+    "C) Yo‘l kira haqini",
+    "D) Kitoblar ijarasini"
+   ],
+   "answer": "A) Gaz va xona pulini"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Martin va Rufning ilk uchrashuvidagi voqealar tartibi qaysi?",
+   "options": [
+    "A) Kitob o‘qishi, tanishuv, suhbat",
+    "B) Suhbat, ovqatlanish, xayrlashuv",
+    "C) Xat o‘qishi, urushish, ketish",
+    "D) Kutilmagan kelish, bahs, ketish"
+   ],
+   "answer": "A) Kitob o‘qishi, tanishuv, suhbat"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Martin nega o‘zini o‘rtacha davrada xijolatli his qildi?",
+   "options": [
+    "A) O‘z xulqi beso‘naqayligidan",
+    "B) Pulining yo‘qligi sababli",
+    "C) Kiymoqchi bo‘lgan kiyimidan",
+    "D) Muloqot qilishni xohlamagani uchun"
+   ],
+   "answer": "A) O‘z xulqi beso‘naqayligidan"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ruf nega Martinga Charlz Betler hayotini misol qildi?",
+   "options": [
+    "A) Mehnat bilan boyishni o‘rgatishga",
+    "B) Bosmaxonada ishlashga undash uchun",
+    "C) Bank kassiri bo‘lishga yetaklashga",
+    "D) Maktabni tashlashni maslahatlash uchun"
+   ],
+   "answer": "A) Mehnat bilan boyishni o‘rgatishga"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Martinning bilim olishga bo‘lgan intilishini qanday baholash mumkin?",
+   "options": [
+    "A) Tahsinga loyiq mardona intilish",
+    "B) Behuda va samorasiz harakat",
+    "C) Vaqtni besamar yo‘qotish",
+    "D) Sho‘xlik va vaqtichog‘lik"
+   ],
+   "answer": "A) Tahsinga loyiq mardona intilish"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Martinning hayajonini «xuddi hurkkan otdek» deb tasvirlab nimani ko‘rsatgan?",
+   "options": [
+    "A) Ichki sarosima va tortinchoqlikni",
+    "B) Qahramonning otdek chopganini",
+    "C) Qahramonning qo‘rqmas jasoratini",
+    "D) Uning tezda qochib ketganini"
+   ],
+   "answer": "A) Ichki sarosima va tortinchoqlikni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Rufning kulgisi «kumush qo‘ng‘iroqchalardek» deb tasvirlanishi qanday tuyg‘u beradi?",
+   "options": [
+    "A) Go‘zallik va nazokat tuyg‘usini",
+    "B) Qahramonning g‘azabini",
+    "C) Qorli qish manzarasini",
+    "D) Urush fojiasini"
+   ],
+   "answer": "A) Go‘zallik va nazokat tuyg‘usini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Martin qaysi olimning kitobini o‘qib dunyoqarashini kengaytirdi?",
+   "options": [
+    "A) Spenser kitobini",
+    "B) Nyuton asarini",
+    "C) Galiley qarashlarini",
+    "D) Platon falsafasini"
+   ],
+   "answer": "A) Spenser kitobini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Martin va Jo qaysi joyda og‘ir mehnat qilishdi?",
+   "options": [
+    "A) Kirxonada",
+    "B) Konchilikda",
+    "C) Bosmaxonada",
+    "D) Qurilishda"
+   ],
+   "answer": "A) Kirxonada"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Martin yangi kvartiraga ko‘chgach, nima sotib oldi?",
+   "options": [
+    "A) Kerosinka pishirgich",
+    "B) Yangi divan",
+    "C) Yozuv stoli",
+    "D) Radio apparat"
+   ],
+   "answer": "A) Kerosinka pishirgich"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Martinning yaqin do‘sti shoir Brissenden qaysi dostonni yozgan?",
+   "options": [
+    "A) Efemerida dostonini",
+    "B) Dengiz qo‘shig‘ini",
+    "C) Yulduzlar to‘zonini",
+    "D) Sharmanda quyoshni"
+   ],
+   "answer": "A) Efemerida dostonini"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Martin yozuvchi bo‘lish yo‘lida qanday bosqichlarni bosib o‘tdi?",
+   "options": [
+    "A) Mutolaa, tinimsiz yozish, rad etilish",
+    "B) Boylik, maktab ochish, shon-shuhrat",
+    "C) Safar, savdo qilish, shon-shuhrat",
+    "D) Ishsizlik, dam olish, muvaffaqiyat"
+   ],
+   "answer": "A) Mutolaa, tinimsiz yozish, rad etilish"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Rufning ota-onasi Martinga qanday munosabatda bo‘ldi?",
+   "options": [
+    "A) Rad etishdi va qabul qilishmadi",
+    "B) Qiziga darhol uylantirishdi",
+    "C) Unga katta pul berishdi",
+    "D) Birga yashashni taklif qilishdi"
+   ],
+   "answer": "A) Rad etishdi va qabul qilishmadi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Martin nega gazeta Muxbiri bo‘lishni xohlamadi?",
+   "options": [
+    "A) Uslubini buzishdan qo‘rqgani uchun",
+    "B) Oyligi kam bo‘lgani uchun",
+    "C) Ko‘p yurishni yoqtirmagani uchun",
+    "D) Tahririyat uzoq bo‘lgani uchun"
+   ],
+   "answer": "A) Uslubini buzishdan qo‘rqgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Brissenden nega dostonini jurnallarga berishni xohlamagan edi?",
+   "options": [
+    "A) Jurnal muharrirlarini nodon deb bildi",
+    "B) Doston tili juda soddaligi uchun",
+    "C) Ko‘p pul talab qilgani uchun",
+    "D) Doston tugallanmagan bo‘lgani uchun"
+   ],
+   "answer": "A) Jurnal muharrirlarini nodon deb bildi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Martinning och qolsa ham ijod qilishda davom etishi nimanikursatadi?",
+   "options": [
+    "A) Matonat va maqsadga sadoqatni",
+    "B) Yengiltaklik va mas'uliyatsizlikni",
+    "C) O‘z-o‘zini majburlashni",
+    "D) Keraksiz va behuda sarsonlikni"
+   ],
+   "answer": "A) Matonat va maqsadga sadoqatni"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Martinning mehnatini «aravaga qo‘shilgan otdek» deb qanday tasvirlagan?",
+   "options": [
+    "A) Juda og‘ir va mashaqqatli",
+    "B) Kulgili va qiziqarli",
+    "C) Yengil va zavqli",
+    "D) Tez va oson"
+   ],
+   "answer": "A) Juda og‘ir va mashaqqatli"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Martinning mashhur bo‘lgan birinchi kitobi qanday nomlandi?",
+   "options": [
+    "A) Sharmanda bo‘lgan quyosh",
+    "B) Yulduzlar to‘zoni",
+    "C) Dengiz to‘lqinlari",
+    "D) Hayot suralari"
+   ],
+   "answer": "A) Sharmanda bo‘lgan quyosh"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Martin topgan puliga Jo uchun nimani sotib olib berdi?",
+   "options": [
+    "A) Kirxonani sotib olib berdi",
+    "B) Kema sotib olib berdi",
+    "C) Uy va mashina berdi",
+    "D) Katta dukon ochib berdi"
+   ],
+   "answer": "A) Kirxonani sotib olib berdi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Martin qaysi kemada janubiy dengizlarga safarga chiqdi?",
+   "options": [
+    "A) Maripoza kemasida",
+    "B) Titaniq kemasida",
+    "C) Viktoriya kemasida",
+    "D) Brijit kemasida"
+   ],
+   "answer": "A) Maripoza kemasida"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Martin okeanga sakrashdan oldin qaysi shoirning she'rini o‘qidi?",
+   "options": [
+    "A) Suinbern she'rini",
+    "B) Longfello she'rini",
+    "C) Bayron she'rini",
+    "D) Pushkin she'rini"
+   ],
+   "answer": "A) Suinbern she'rini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Martin mashhur bo‘lgach, uning atrofidagi odamlar qanday o‘zgardi?",
+   "options": [
+    "A) Ilgari mensimaganlar taklif qila boshlashdi",
+    "B) Hammasi undan yuz o‘girib ketishdi",
+    "C) Faqat do‘sti Jo u bilan qoldi",
+    "D) Hech kim uning kitobini o‘qimadi"
+   ],
+   "answer": "A) Ilgari mensimaganlar taklif qila boshlashdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Martin Rufning qaytib kelish taklifini nega rad etdi?",
+   "options": [
+    "A) Ruf faqat shon-shuhratni sevganini tushundi",
+    "B) Boshqa qizga uylanmoqchi bo‘lgani uchun",
+    "C) Pulidan ajralishni xohlamagani uchun",
+    "D) Chet elga ketmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Ruf faqat shon-shuhratni sevganini tushundi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Martin shon-shuhratga erishgach nega hayotdan sovib ketdi?",
+   "options": [
+    "A) Odamlarning soxtaligi va ikkiyuzlamachiligini ko‘rib",
+    "B) Sog‘lig‘i birdan yomonlashib qolgani uchun",
+    "C) Kitoblari sotilmay qolgani sababli",
+    "D) Yozishga mavzu topa olmagani uchun"
+   ],
+   "answer": "A) Odamlarning soxtaligi va ikkiyuzlamachiligini ko‘rib"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Martinning Mariya va Joga qilgan muruvvatini qanday baholash mumkin?",
+   "options": [
+    "A) Oqko‘ngillik va samimiy minnatdorchilik",
+    "B) Pulini behuda sovurish",
+    "C) Maqtanchoqlik va o‘zini ko‘rsatish",
+    "D) Majburiyatdan qilingan ish"
+   ],
+   "answer": "A) Oqko‘ngillik va samimiy minnatdorchilik"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Martinning soxta jamiyatdan hafsalasi pir bo‘lishi nimanikursatadi?",
+   "options": [
+    "A) Moddiy manfaatlardan ma'naviyat yuksakligini",
+    "B) Uning zaif va qo‘rqoq ekanligini",
+    "C) Jamiyatning juda adolatli ekanligini",
+    "D) Yozuvchilikning befoyda ish ekanligini"
+   ],
+   "answer": "A) Moddiy manfaatlardan ma'naviyat yuksakligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida okean bag‘ridagi sukunat qanday tuyg‘uni uyg‘otadi?",
+   "options": [
+    "A) Teran qayg‘u va o‘ychanlik",
+    "B) Sho‘x va quvnoq kayfiyat",
+    "C) Qorqincli va vahimali tuyg‘u",
+    "D) Yengil va bee'tibor kayfiyat"
+   ],
+   "answer": "A) Teran qayg‘u va o‘ychanlik"
+  }
+ ]
+}

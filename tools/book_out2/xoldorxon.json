@@ -1,0 +1,477 @@
+{
+ "title": "Xoldorxon",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11-15",
+  "topics": [
+   "jasorat",
+   "vatanparvarlik",
+   "do‘stlik",
+   "xalq og‘zaki ijodi",
+   "mardlik"
+  ],
+  "theme": "Asar ona yurtni tashqi hamda ichki dushmanlardan himoya qilish, el-yurt birligi, mardlik, saxiylik va do‘stlikka sadoqat g‘oyalarini ulug‘laydi.",
+  "summary": "Qrim podshosi Xoldorxon Go‘ro‘g‘libekning dovrug‘i va kuchini sinab ko‘rish hamda sirini bilish maqsadida uni va butun Taka-Yovmit elini to‘yga taklif qiladi. Go‘ro‘g‘libek kengashib, to‘yga vakil qilib Avazxon, Soqibulbul, Shodmonbek va Hasan Ko‘lbarni yuboradi. Qrimda Hasan Ko‘lbar o‘zining pahlavonligini va beqiyos ishtahasini ko‘rsatib, ikki ming toboq oshni yeb tugatadi hamda ulkan qozonlarda ovqat pishirishni talab qiladi. Shodmonbek esa G‘irot otda ko‘pkarida tanho g‘olib chiqib, qrimliklarning hafsalasini pir qiladi.\n\nXoldorxon dushmanlikni ochiqqa chiqarib, hiyla bilan urush boshlaydi. Go‘ro‘g‘li el ehtiyotini o‘ylab, Ahmad Sardor tog‘asini o‘n ming qo‘shin bilan yurtni qo‘riqlashga qaytaradi. Qrimda shiddatli janglar boshlanadi. Taka solorining o‘g‘li Xoldorxon va Hasan Ko‘lbar dushman pahlavonlarini, jumladan zangi Afsarni mag‘lub etadi. Dumaloq degan hiylagor Hasan Ko‘lbarni aldaydi, ammo janglarda Go‘ro‘g‘li qo‘shini ustun keladi.\n\nChorasiz qolgan Xoldorxon Borsa kelmas shohi Qaysardan yordam so‘raydi. Shoh Qaysar katta qo‘shin bilan yetib keladi. Go‘ro‘g‘libek Borsa kelmas pahlavoni va Shoh Qaysar bilan yakkama-yakka jang qilib, ularni taslim etadi va to‘g‘ri yo‘lga soladi. Qrim elida tinchlik qaror topadi, Xoldorxon va Qaysar Go‘ro‘g‘lining buyukligiga tan berishadi. Go‘ro‘g‘libek Chambilga qaytib, barcha urug‘ va elat ko‘nglini topib, qirq kunlik ulkan shodiyona to‘y beradi va o‘zining serma'no umri hamda mardona jasoratlari haqida qo‘shiqlar kuylaydi.",
+  "characters": "Go‘ro‘g‘libek — Chambilbel hukmdori, adolatli, dovyurak, el-yurtiga g‘amxo‘r, pahlavonlar va devlarni yenggan afsonaviy bahodir.\nAvazxon — Go‘ro‘g‘lining sodiq o‘g‘li, jasur va odobli yigit, doim xavfli janglarga birinchi bo‘lib otlanadi.\nHasan Ko‘lbar — Go‘ro‘g‘lining bahaybat, ochofat, samimiy va yengilmas pahlavon tog‘asi, dushmanlarga qarshi shafqatsiz va do‘stlarga sodiq.\nShodmonbek — Chambil botirlaridan biri, ko‘pkarida G‘irotni minib tanho g‘oliblikni qo‘lga kiritgan mohir chavandoz.\nXoldorxon — Qrim podshosi, avvaliga Go‘ro‘g‘liga hasad va xavotir bilan qarab hiyla ishlatadi, lekin oxirida uning qudratiga tan beradi.\nShoh Qaysar — Borsa kelmas yurti podshosi, mag‘rur va kuchli pahlavon, Go‘ro‘g‘li bilan jangdan so‘ng o‘z xatosini anglab yetadi.",
+  "conclusion": "Doston kitobxonga mardlik, to‘g‘rilik, va'daga vafo va mehmondo‘stlik kabi oliyjanob fazilatlarni o‘rgatadi. Bola asardan kibr va hiyla doimo mag‘lubiyatga uchrashini, halollik va do‘stlik esa har qanday qiyinchilikni yengishini uqib oladi. Ota-onalar uchun bu kitob farzandida vatanparvarlik va kattalarga hurmat hissini shakllantirishda ajoyib manbadir.",
+  "difficulty": "o‘rta",
+  "mood": "vatanparvarlik, qahramonona, hayajonli",
+  "for_whom": "Xalq og‘zaki ijodi, qahramonlik dostonlari, bahodirlar va tarixiy sarguzashtlarga qiziqadigan bolalar uchun.",
+  "events": [
+   "Qrim podshosi Xoldorxon Go‘ro‘g‘lining dovrug‘ini eshitib, uning sirini bilish uchun to‘yga taklifnoma va elchilar yuboradi.",
+   "Go‘ro‘g‘libek elchilarni izzat-ikrom bilan kutib oladi va to‘yga vakil qilib Avazxon, Soqibulbul, Shodmonbek va Hasan Ko‘lbarni jo‘natadi.",
+   "Qrimga yetib borgan Hasan Ko‘lbar keltirilgan ikki ming toboq oshni bir o‘zi yeb tugatadi va ulkan qozonlarda ovqat talab qiladi.",
+   "Shodmonbek Nazarkarda G‘irot otda ko‘pkariga tushib, barcha takalarni yolg‘iz o‘zi yalovga eltib tashlaydi va g‘olib bo‘ladi.",
+   "Go‘ro‘g‘li yurt xavfsizligini o‘ylab, Ahmad Sardor tog‘asini o‘n ming qo‘shin bilan Chambilni qo‘riqlashga qaytaradi.",
+   "Qrim va Chambil qo‘shini o‘rtasida shiddatli va ayovsiz janglar boshlanadi.",
+   "Maydonda er Qubodga qarshi Taka solorining o‘g‘li Xoldorxon chiqib, mardona olishadi.",
+   "Hasan Ko‘lbar hiylagor Dumaloqning yarashish haqidagi yolg‘on gaplariga laqqa tushib, uni qo‘yib yuboradi.",
+   "Hasan Ko‘lbar zangi Afsar bilan uch kun kecha-kunduz olishib, uni siltab yerga uradi va mot qiladi.",
+   "Berdiyor pahlavon dushmanlar bilan olishuvda og‘ir yaralanadi va uning huzurida parilar motam tutadi.",
+   "Xoldorxon chorasiz qolgach, Borsa kelmas shohi Qaysarga yetti xachir zar bilan elchi va arza yuboradi.",
+   "Shoh Qaysar maktubni o‘qib g‘azablanadi va Go‘ro‘g‘liga qarshi katta qo‘shin tortadi.",
+   "Moydonda Beksara bahodir Shoh Qaysarga nasihat qilib, Go‘ro‘g‘liga qarshi chiqmaslikni uqtiradi.",
+   "Go‘ro‘g‘libek Shoh Qaysar bilan betma-bet uchrashib, uni insofga va to‘g‘ri yo‘lga chaqiradi.",
+   "Shoh Qaysar va Go‘ro‘g‘libek yakkama-yakka jang qiladi va Go‘ro‘g‘li uni mag‘lub etib, bo‘ysundiradi.",
+   "Xoldorxon va uning a'yonlari xatolarini tan olib, Go‘ro‘g‘libekka taslim bo‘lishadi va do‘stlashishadi.",
+   "Dushman qo‘shinining qoldiqlari uxlab yotgan Hasan Ko‘lbarni behushlik dorisi va po‘lat zanjirlar bilan asir oladi.",
+   "Go‘ro‘g‘li Chambilga zafar bilan qaytib keladi va Hasan Ko‘lbarni izlashga odam jo‘natadi.",
+   "Go‘ro‘g‘libek Qrim g‘alabasi munosabati bilan barcha urug‘lar va elatlar uchun qirq kunlik ulkan to‘y beradi.",
+   "Go‘ro‘g‘li elatning barcha vakillariga va xizmatchilarga qimmatbaho sarpoylar yopib, o‘z umri va jasoratlari haqida qo‘shiq aytadi."
+  ],
+  "quotes": [
+   "Go‘ro‘g‘lining ovozasi olamni tutdi, dong‘i Dog‘iston ketdi, haybati shu zamondagi podsholarni qo‘rqitdi.",
+   "Sog‘ borib, salomat kelgin, farzandim, Sen bilan oboddir Chambilning beli.",
+   "Omonat o‘ylasam odamning joni, O‘lmasa shuncha xalq hammasi qani...",
+   "Yaxshi so‘z bilan ilon indan chiqar, yomon so‘z bilan odam dindan chiqar.",
+   "To‘y bo‘lgan so‘ng tortishmayma, Kel, Qrimning bo‘z bolasi.",
+   "Tamom bo‘ldi Go‘ro‘g‘lining dostoni, O‘qisang shunda-da gapning tozasi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qrim podshosi Xoldorxon to‘yga kimni taklif qildi?",
+   "options": [
+    "A) Go‘ro‘g‘libek va uning elini",
+    "B) Faqat Eron shohini",
+    "C) Faqat Qora devni",
+    "D) Faqat Borsa kelmas shohini"
+   ],
+   "answer": "A) Go‘ro‘g‘libek va uning elini"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘libek to‘yga borish uchun kimlarni jo‘natdi?",
+   "options": [
+    "A) Avazxon va uch botirni",
+    "B) Barcha qirq yigitni",
+    "C) Faqat Og‘a Yunusparini",
+    "D) Faqat Ahmad Sardorni"
+   ],
+   "answer": "A) Avazxon va uch botirni"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qrimliklar keltirgan oshni kim eshik oldida yeb tugatdi?",
+   "options": [
+    "A) Hasan Ko‘lbar",
+    "B) Avazxon",
+    "C) Shodmonbek",
+    "D) Soqibulbul"
+   ],
+   "answer": "A) Hasan Ko‘lbar"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qrim safari oldidan yuz bergan voqealar ketma-ketligini aniqlang.",
+   "options": [
+    "A) Elchi keldi, vakillar tanlandi",
+    "B) To‘y bo‘ldi, elchilar o‘ldirildi",
+    "C) Urush boshlandi, so‘ng to‘y bo‘ldi",
+    "D) Avazxon qochdi, Go‘ro‘g‘li quvdi"
+   ],
+   "answer": "A) Elchi keldi, vakillar tanlandi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Xoldorxon nega Go‘ro‘g‘lini to‘yga taklif qildi?",
+   "options": [
+    "A) Kuchini va sirini bilish uchun",
+    "B) Unga taxtni berish uchun",
+    "C) Qizini unga bermoqchi bo‘lib",
+    "D) Undan yordam so‘rash uchun"
+   ],
+   "answer": "A) Kuchini va sirini bilish uchun"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Hasan Ko‘lbar nega oshpazlardan norozi bo‘ldi?",
+   "options": [
+    "A) Osh oz va mayda kelgani uchun",
+    "B) Osh juda sho‘r bo‘lgani uchun",
+    "C) Go‘sht umuman bo‘lmagani uchun",
+    "D) Choy berishmagani uchun"
+   ],
+   "answer": "A) Osh oz va mayda kelgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Shodmonbekning uloqda halol va tanho g‘olib bo‘lishi qanday sifat?",
+   "options": [
+    "A) Haqiqiy mardlik va mahorat",
+    "B) Manmanlik va maqtanchoqlik",
+    "C) Qaysarlik va qo‘pollik",
+    "D) Qo‘rqoqlik va ayyorlik"
+   ],
+   "answer": "A) Haqiqiy mardlik va mahorat"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Go‘ro‘g‘lining elchilar izzatini joyiga qo‘yishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, mehmondostlik va elchilik odobi",
+    "B) Noto‘g‘ri, ularni darhol hibs qilardi",
+    "C) Noto‘g‘ri, dushmanga izzat ko‘rsatmasdi",
+    "D) To‘g‘ri, chunki ulardan qo‘rqardi"
+   ],
+   "answer": "A) To‘g‘ri, mehmondostlik va elchilik odobi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston matnidagi «Qushday bo‘lib uchadi» o‘xshatmasi nimani ifodalaydi?",
+   "options": [
+    "A) Otning juda tez chopishini",
+    "B) Qushlarning ko‘p uchishini",
+    "C) Yigitlarning yengil kiyimini",
+    "D) Shamolning kuchli esishini"
+   ],
+   "answer": "A) Otning juda tez chopishini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Hasan Ko‘lbarning xarakteridagi bo‘rttirma tasvirlar kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Samimiy kulgi va hayrat",
+    "B) Chuqur qayg‘u va nafrat",
+    "C) Qo‘rqinch va vahima",
+    "D) Zerikish va loqaydlik"
+   ],
+   "answer": "A) Samimiy kulgi va hayrat"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li yurtni qo‘riqlash uchun kimni o‘n ming qo‘shin bilan qaytardi?",
+   "options": [
+    "A) Ahmad Sardor tog‘asini",
+    "B) Hasan Chopsonni",
+    "C) Avazxonni",
+    "D) Berdiyorni"
+   ],
+   "answer": "A) Ahmad Sardor tog‘asini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qrim polvoni er Qubodga kim qarshi chiqdi?",
+   "options": [
+    "A) Taka solorining o‘g‘li Xoldorxon",
+    "B) Hasan Yakdast",
+    "C) Soqibulbul",
+    "D) Rayhon arab"
+   ],
+   "answer": "A) Taka solorining o‘g‘li Xoldorxon"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hasan Ko‘lbar hiylasiga uchrab qaysi dushmanni qo‘yib yubordi?",
+   "options": [
+    "A) Dumaloqni",
+    "B) Qaysar shohni",
+    "C) Xoldorxonni",
+    "D) Afsarni"
+   ],
+   "answer": "A) Dumaloqni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Hasan Ko‘lbar bilan uch kun olishgan zangi polvon kim edi?",
+   "options": [
+    "A) Afsar",
+    "B) Qubod",
+    "C) Beksara",
+    "D) Bektosh"
+   ],
+   "answer": "A) Afsar"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qrim jangida yuz bergan voqealar tartibini ko‘rsating.",
+   "options": [
+    "A) Yakkama-yakka olishuv, so‘ng ommaviy jang",
+    "B) Tinchlik shartnomasi, so‘ng qochish",
+    "C) Qal'a portlashi, so‘ng to‘y",
+    "D) Go‘ro‘g‘lining taslim bo‘lishi"
+   ],
+   "answer": "A) Yakkama-yakka olishuv, so‘ng ommaviy jang"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Berdiyor yarador bo‘lganda unga kimlar motam tutdi?",
+   "options": [
+    "A) Ikki pari",
+    "B) Qirq yigit",
+    "C) Qrim amaldorlari",
+    "D) Ahmad Sardor"
+   ],
+   "answer": "A) Ikki pari"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Go‘ro‘g‘li nega Ahmad Sardorga elni topshirib ehtiyot bo‘lishni tayinladi?",
+   "options": [
+    "A) Dushman fursatdan foydalanmasligi uchun",
+    "B) Ahmad Sardor dushmanga qarindosh bo‘lganiga",
+    "C) O‘zi Qrimda qolib ketmoqchiligi uchun",
+    "D) Elchilar uni aldab ketgani uchun"
+   ],
+   "answer": "A) Dushman fursatdan foydalanmasligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dumaloq nega Hasan Ko‘lbarga yarashish haqida yolg‘on gapirdi?",
+   "options": [
+    "A) Qutulib qochish va hiyla ishlatish uchun",
+    "B) Go‘ro‘g‘liga chin dildan bo‘ysunmoqchi bo‘lib",
+    "C) Xoldorxondan o‘ch olmoqchi bo‘lib",
+    "D) Hasan Ko‘lbarni do‘st deb bilgani uchun"
+   ],
+   "answer": "A) Qutulib qochish va hiyla ishlatish uchun"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Avazxonning xavfli joyda doim birinchi bo‘lib maydonga so‘ranishi qanday fazilat?",
+   "options": [
+    "A) Jasorat va otaga sadoqat",
+    "B) Maqtanchoqlik va chidamsizlik",
+    "C) Kattalarga hurmatsizlik",
+    "D) Qasoskorlik va shafqatsizlik"
+   ],
+   "answer": "A) Jasorat va otaga sadoqat"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif janggohdagi qonli savashlarni «Daryoday bo‘lib toshadi» deb tasvirlab nimaga urg‘u bergan?",
+   "options": [
+    "A) Urushning shiddatli va dahshatli ekaniga",
+    "B) Daryo suvi ko‘payib ketganiga",
+    "C) Jangchilarning suvsaganinga",
+    "D) Ob-havoning yomg‘irli bo‘lganiga"
+   ],
+   "answer": "A) Urushning shiddatli va dahshatli ekaniga"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xoldorxon chorasiz qolgach kimdan yordam so‘rab elchi yubordi?",
+   "options": [
+    "A) Borsa kelmas shohi Qaysardan",
+    "B) Farangiston podshosidan",
+    "C) Xunxor shohidan",
+    "D) Gurjiston hokimidan"
+   ],
+   "answer": "A) Borsa kelmas shohi Qaysardan"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li bilan yakkama-yakka jangda uchrashgan hukmdor kim?",
+   "options": [
+    "A) Shoh Qaysar",
+    "B) Rayhon arab",
+    "C) To‘xtamish dev",
+    "D) Xidirali boy"
+   ],
+   "answer": "A) Shoh Qaysar"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dushmanlar uxlab yotgan Hasan Ko‘lbarni qanday qilib asir oldi?",
+   "options": [
+    "A) Behushlik dorisi va po‘lat zanjir bilan",
+    "B) Olov yoqib tutatish bilan",
+    "C) Chuqur qazib tushirish bilan",
+    "D) Qal'aga qamab qo‘yish bilan"
+   ],
+   "answer": "A) Behushlik dorisi va po‘lat zanjir bilan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Go‘ro‘g‘li Qrim g‘alabasidan so‘ng eliga qanday marosim o‘tkazdi?",
+   "options": [
+    "A) Katta shodiyona to‘y berdi",
+    "B) Darhol yangi urush boshladi",
+    "C) Barcha xazinani ko‘mib qo‘ydi",
+    "D) Borsa kelmasga jo‘nab ketdi"
+   ],
+   "answer": "A) Katta shodiyona to‘y berdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Doston oxiridagi asosiy voqealar ketma-ketligini belgilang.",
+   "options": [
+    "A) Qaysar yengildi, to‘y berildi, qo‘shiq aytildi",
+    "B) Go‘ro‘g‘li asir tushdi, Avaz qutqardi",
+    "C) Hasan Ko‘lbar shoh bo‘ldi, Qrim yoqildi",
+    "D) Xoldorxon qochdi, Chambil bel bo‘shadi"
+   ],
+   "answer": "A) Qaysar yengildi, to‘y berildi, qo‘shiq aytildi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoh Qaysar nega Beksaraning nasihatidan so‘ng o‘z qilmishiga afsuslandi?",
+   "options": [
+    "A) Begona urushga aralashib qo‘shinini qirdirganiga",
+    "B) Go‘ro‘g‘liga sovg‘a yubormagani uchun",
+    "C) Xoldorxon unga oltin bermagani uchun",
+    "D) Qrimga kechikib kelgani uchun"
+   ],
+   "answer": "A) Begona urushga aralashib qo‘shinini qirdirganiga"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Go‘ro‘g‘libek Xoldorxon va uning eliga nega shafqat qilib tinchlik tuzdi?",
+   "options": [
+    "A) Yomonlikka yaxshilik va oliyjanoblik ko‘rsatish uchun",
+    "B) Qo‘shini tugab qolgani uchun",
+    "C) Qrimliklardan qo‘rqqani uchun",
+    "D) Avazxon shuni talab qilgani uchun"
+   ],
+   "answer": "A) Yomonlikka yaxshilik va oliyjanoblik ko‘rsatish uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Go‘ro‘g‘lining el-yurt va barcha urug‘larga sarpoy berib to‘y qilishi qanday baholanadi?",
+   "options": [
+    "A) Birlik va saxovatning yorqin namunasi",
+    "B) Isrofgarchilik va kuch ko‘rsatish",
+    "C) Dushmanlarni qo‘rqitish hiylasi",
+    "D) Boshqa elatni kamsitish"
+   ],
+   "answer": "A) Birlik va saxovatning yorqin namunasi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Go‘ro‘g‘lining so‘nggi qo‘shiqlarida «Armonim yo‘q xafa falak» degan jumlalari qanday kayfiyat beradi?",
+   "options": [
+    "A) Munosib yashalgan umrdan mamnunlik",
+    "B) Tushkunlik va hayotdan bezish",
+    "C) Kibr-havo va manmanlik",
+    "D) Dushmanlardan qo‘rquv va sarasima"
+   ],
+   "answer": "A) Munosib yashalgan umrdan mamnunlik"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ergash Jumanbulbul o‘g‘li doston oxirida donolik haqida nima deydi?",
+   "options": [
+    "A) Gapni ayirmoqlik dononing ishi",
+    "B) Jim turish FAQAT nodonning ishi",
+    "C) Donolar har doim urushadi",
+    "D) Doston aytish oson ish"
+   ],
+   "answer": "A) Gapni ayirmoqlik dononing ishi"
+  }
+ ]
+}

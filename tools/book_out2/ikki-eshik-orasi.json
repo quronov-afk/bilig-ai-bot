@@ -1,0 +1,55 @@
+{
+ "title": "Ikki eshik orasi",
+ "author": "O‘tkir Hoshimov",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "halollik",
+   "oila va oqibat",
+   "urush fojiasi",
+   "vijdon va mas'uliyat",
+   "sabr",
+   "sadoqat"
+  ],
+  "theme": "Asar inson umri ikki eshik (tug‘ilish va o‘lim) oralaridagi qisqa safar ekanligini, bu oraliqda har bir odam vijdon va halollik bilan yashashi, urush va adolatsizlik yetkazgan jarohatlarga qaramay, o‘zining insoniylik qadrini yo‘qotmasligi kerakligini ilgari suradi.",
+  "summary": "Asarda voqealar urush yillari va undan keyingi davrlarni qamrab oladi. Bosh qahramon Muzaffar halol va vijdonli quruvchi bo‘lib, sifatsiz qurilish panellarini ishlatishdan bosh tortadi. Uning bolaligi ikkinchi jahon urushining og‘ir yillariga to‘g‘ri kelgan: amakisi Kimsan urushda bedarak yo‘qoladi, otasi Shomurod va onasi Robiya og‘ir mehnat bilan oilani tebrata di. Urush yillarida qishloqning ayrim nopok kimsalari (Umar zakunchi kabi) o‘z manfaati yo‘lida odamlar taqdirini o‘ynaydi. Muzaffar talabalik yillarida Munavvar degan qizni sevib qoladi. Biroq fojiali haqiqat oydinlashadi: Munavvar urush yillarida Muzaffarni emizgan Bashorat xolaning qizi, ya'ni Muzaffarning emikosh singlisi bo‘lib chiqadi. Bu haqiqatni eshitgan Muzaffar va Munavvarning dunyosi ostin-ustun bo‘ladi. 1966-yilgi Toshkent zilzilasi paytida Munavvar devor ostida qolib halok bo‘ladi. Muzaffar esa hayotning og‘ir zarbalaridan so‘ng ham o‘z vijdoniga va halollik prinsiplariga soyasiz ergashib, insoniy burchini anglab yetadi.",
+  "characters": "Muzaffar — halol, vijdoni pok, adolatsevar va printsipial yigit, asarda qurilish brigadiri; Shomurod aka — Muzaffarning otasi, urush nogironi, og‘ir bosiq va mehnatkash inson; Robiya opa — Muzaffarning onasi, mehribon, fidoiy va sabr-toqatli o‘zbek ayoli; Munavvar — Muzaffar sevgan, ammo keyinchalik emikosh singlisi ekani oshkor bo‘lgan va zilzilada halok bo‘lgan pokiza qiz; Umar zakunchi — sovet davri manfaatparasti, razil va o‘z manfaati uchun boshqalarni qurbon qiluvchi kimsa; Orif oqsoqol — qishloqning dono va adolatli rahnamosi.",
+  "conclusion": "Asar insonni har qanday vaziyatda ham halol va vijdoni pok bo‘lib qolishga o‘rgatadi. Bola kitobdan ota-onaga hurmat, va'daga vafo, mehnatsevarlik hamda hayotdagi qiyinchiliklarga sabr bilan bardosh berish eng oliy insoniy fazilatlar ekanini uqadi. Qolaversa, asar urushning dahshatli oqibatlarini va nopoklik hech qachon baxt keltirmasligini teran anglatadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi, ta'sirchan",
+  "for_whom": "Tarixiy-dramatik asarlarni yoqtiradigan, inson taqdiri, oqibat va vijdon masalalari haqida fikrlashni xohlaydigan 14 yoshdan katta o‘smirlar uchun mos.",
+  "events": [
+   "Muzaffar qurilishda sifatsiz harakat qilayotgan 'Kobra' taxallusli boshliq bilan tortishib, armaturali panelni qo‘yishdan bosh tortadi.",
+   "Muzaffar Qo‘qondan kelgan shoshilinch telegrammani olib, buvisining vafot etgani haqidagi xabarni eshitadi.",
+   "Muzaffar bolaligida otasi Shomurod bilan 'Qora amma'sining uyiga borishlarini va qishloqdagi qiyin hayotni eslaydi.",
+   "Urush yillari boshlanib, Muzaffarning amakisi Kimsan jangga jo‘natiladi.",
+   "Qishloqqa Kimsanning Kaluga ostonasidagi jangda bedarak yo‘qolgani haqida 'qoraxat' keladi.",
+   "Umar zakunchi urush orqasidagi vakolatlaridan foydalanib, qishloq odamlariga va Robiya opaga tazyiq o‘tkazadi.",
+   "Zuhra kelinning eri frontdan nogiron bo‘lib qaytganda, Umar zakunchi va militsiya uni olib ketmoqchi bo‘ladi, lekin Orif oqsoqol ularni to‘xtatadi.",
+   "Raykom vakili Abdurahmonov qishloqqa kelib, Umar zakunchining o‘zboshimchaligi va zulmini fosh qiladi.",
+   "Ra'no kelinoyining taqdiri va sobiq Umar zakunchining qilgan xiyonatlari keyinchalik oshkor bo‘ladi.",
+   "Muzaffar ulg‘ayib, dorishunoslik institutida Munavvar bilan tanishadi va uni chin dildan sevib qoladi.",
+   "Muzaffar va Munavvarning to‘yi taraddudida sovchilikka borilganda kutilmagan haqiqat yuzaga chiqadi.",
+   "Ota-onasi Muzaffarga Munavvar uning emikosh singlisi ekanini (urush yillarida Bashorat xola Muzaffarni emizganini) aytib beradi.",
+   "Muzaffar bu mudhish haqiqatdan qattiq iztirobga tushib, buni qabul qilolmaydi.",
+   "1966-yil 26-aprelda Toshkentda dahshatli zilzila ro‘y beradi.",
+   "Muzaffar xavotir olib Munavvarlarning uyiga yuguradi va devor bosib qolgan Munavvarni jonsiz holatda topadi.",
+   "Munavvarning onasi Bashorat xola qizining o‘limidan es-hushini yo‘qotadi.",
+   "Muzaffar hayotining eng og‘ir yo‘qotishini boshdan kechirib, taqdir zarbalariga qaramay insoniy burchini bajarishda davom etadi."
+  ],
+  "quotes": [
+   "Katta vijdonsizliklar kichkina nopoklikdan boshlanishini bilsam nima qilay axir?",
+   "Inson xotirasi – eshigi yopib qo‘yilgan omborga o‘xsharkan.",
+   "Bir kiprik qoqgulik qisqagina umringda tinch-totuv yashasalaring bo‘lmaydimi?",
+   "Yaxshilik ham, yomonlik ham javobsiz qolmaydi.",
+   "O‘zingga ravo ko‘rmagan narsani o‘zgalarga ravo ko‘rma!"
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Muzaffar qurilishda boshliqning talabiga qaramay, sifatsiz panelni ishlatishdan bosh tortdi va xalqning xavfsizligini o‘yladi. Sen o‘z hayotingda to‘g‘rilik va halollikni saqlash uchun qanday qaror qabul qilgan bo‘larding? Muzaffarning ushbu xatti-harakati senga insoniy mas'uliyat haqida nimalarni o‘rgatdi?"
+}

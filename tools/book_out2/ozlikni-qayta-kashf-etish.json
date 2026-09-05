@@ -1,0 +1,337 @@
+{
+ "title": "O‘zlikni qayta kashf etish",
+ "author": "Jon Gardner",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "17-19",
+  "age_hint": "16+",
+  "topics": [
+   "shaxsiy rivojlanish",
+   "hayot ma'nosi",
+   "mehnatsevarlik",
+   "sabr",
+   "o‘z ustida ishlash"
+  ],
+  "theme": "Asarning bosh g‘oyasi — inson har qanday yoshda o‘rganish va o‘sishdan to‘xtamasligi, hayotiy turg‘unlikka taslim bo‘lmay, o‘zligini tinimsiz qayta kashf etishi lozimligidir. Hayot mazmuni tayyor holda berilmaydi, uni inson o‘z e'tiqodi, sadoqati va mehnati orqali o‘zi bunyod etadi.",
+  "summary": "Jon Gardnerning ushbu ma'ruzasi insonning o‘z ustida ishlashi va hayot davomida o‘zligini qayta kashf etishi masalasiga bag‘ishlangan. Muallif nutqini dengiz chig‘anoqlari haqidagi o‘xshatish bilan boshlaydi: chig‘anoq bir marta joy tanlaydi va umrining oxirigacha toshga yopishib o‘tadi. Afsuski, ko‘plab insonlar ham hayotining yarim yo‘liga kelib, o‘rganish va o‘sishdan to‘xtaydi, ichki zerikish hamda o‘tmish asoratlari asiriga aylanadi.\n\nMuallif ta'kidlashicha, insonlar o‘zlariga zindon quradilar va unga o‘zlari qorovullik qiladilar. Bu zindonni barpo etishda ota-ona va jamiyat singdirgan tushunchalarning ham hissasi bor. Biroq yetuklik yoshiga yetgan kishi halokatli odatlardan, gina-kuduratlardan xoli bo‘lishni va boshqalar bilan murosa qilishni o‘rganishi kerak. Hayot yakuniy bir cho‘qqi yoki aniq javobga ega topishmoq emas, balki cheksiz takomillashib borish jarayonidir.\n\nNutqda motivatsiya va qiziquvchanlikning o‘rni alohida urg‘ulanadi. Inson atrofdagilar e'tiborida bo‘lishga emas, balki dunyoga va yangiliklarga qiziqish bilan qarashga intilishi lozim. Hayot mazmuni haqida fikr yuritar ekan, muallif sigirlar ruhiy tushkunlikka tushmasligini, ammo inson tabiatan hayotdan ma'no izlaydigan mavjudot ekanini aytadi. Hayot mazmuni insonning o‘z mas'uliyati, e'tiqodi, kasbi va yaqinlariga bo‘lgan sadoqati orqali shakllanadi.\n\nMa'ruza so‘ngida muallif sobitqadam optimizmning ahamiyatini uqtiradi va tarixiy misollarga murojaat qiladi. Servantes 53 yoshida, qamoqxonada bo‘la turib \"Don Kixot\" asarini yozganini, Uinston Cherchill esa 66 yoshidagina dunyo sahnasiga haqiqiy rahbar bo‘lib chiqqanini eslatadi. Yakunda muallif o‘zining avtohalokatda vafot etgan qizining hamyonidan topilgan bitigi haqidagi ta'sirli xotirani so‘zlab beradi: hayot mazmuni kutilmagan mukofot emas, balki inson o‘z mehnati, muhabbati va e'tiqodi bilan quradigan imoratdir.",
+  "characters": "Jon Gardner — ma'ruzachi, amerikalik siyosatchi va psixolog, insonlarni umr bo‘yi o‘sishga hamda o‘zligini kashf etishga undaydi.\nServantes — 53 yoshida og‘ir hayotiy sinovlar va qamoq sharoitida afsonaviy \"Don Kixot\" asarini yaratgan mashhur ispan yozuvchisi.\nUinston Cherchill — ko‘plab mag‘lubiyatlarni boshdan kechirib, 66 yoshida mamlakatni mushkul urushdan olib chiqqan buyuk davlat arbobi.",
+  "conclusion": "Ushbu asar kitobxonga hayotiy muammolar va turg‘unlik qarshisida taslim bo‘lmaslikni o‘rgatadi. U har bir inson ichida hali kashf etilmagan buyuk salohiyat borligini va o‘rganish yosh tanlamasligini uqtiradi. Ota-onalar va yoshlar ushbu kitobdan sabr, halol mehnat, qiziquvchanlik hamda o‘z hayot mazmunini mas'uliyat bilan qurish saboqlarini oladilar.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, ruhlantiruvchi",
+  "for_whom": "Hayotda o‘z yo‘lini izlayotgan, kelajakka ishonch bilan qaramoqchi bo‘lgan va shaxsiy rivojlanishga intiluvchi yoshlar hamda kattalar uchun.",
+  "events": [
+   "Jon Gardner ma'ruzaning asosiy maqsadi insonlarni o‘z ustida ishlashga undash ekanini ta'kidlaydi.",
+   "Dengiz chig‘anoqlarining bir marta joy tanlab, toshga yopishib o‘tishi insonlar turg‘unligiga o‘xshatiladi.",
+   "Aksariyat insonlar hayotining yarim yo‘liga kelib o‘sishdan to‘xtashi va zerikish iskanjasida qolishi aytiladi.",
+   "Muallif insonlar o‘zlari uchun zindon qurishini va unga jamiyat ham hissa qo‘shishini uqtiradi.",
+   "Inson 30 yoki 40 yoshga boribgina chinakamiga ulg‘ayishi va hayotiy darslarni anglay boshlashi ta'kidlanadi.",
+   "O‘qib-o‘rganish faqat yoshlarga emas, balki o‘rta va keksa yoshdagilarga ham birdek tegishli ekani ko‘rsatiladi.",
+   "Muallif 77 yoshida ham yangi ish boshlaganini va o‘rganishda davom etayotganini shaxsiy misolida keltiradi.",
+   "Yetuklik yoshida halokatli odatlardan va gina-kuduratlardan xoli bo‘lish san'ati o‘rganilishi uqtiriladi.",
+   "Inson atrofidagilarga qanday ta'sir o‘tkazayotganini anglab yetishi hayotni o‘zgartirishi ta'kidlanadi.",
+   "Jo Luisning \"Hamma yiqiladi, asosiysi qayta turishda\" degan fikri keltiriladi.",
+   "Hayot yakuniy cho‘qqi emas, balki cheksiz takomillashib borish jarayoni ekani tushuntiriladi.",
+   "Iqtidor va texnikadan ko‘ra ichki motivatsiya va shijoat ustunroq ekani ta'kidlanadi.",
+   "Qiziquvchan bo‘lish va yangiliklarga intilish insonga doimiy kuch berishi aytiladi.",
+   "Sigirlar ruhiy tushkunlikka tushmasligi, ammo inson tabiatan hayotdan ma'no izlashi ko‘rsatiladi.",
+   "Hayot mazmuni insonning o‘z sadoqati, e'tiqodi va mas mehnati orqali yaratilishi uqtiriladi.",
+   "Muallif o‘z iqtibosi jez lavhaga muhrlanganini ko‘rib, hayajon bilan uni sotib olganini eslaydi.",
+   "Kelajakni barpo etishda puch umidlar emas, balki sobitqadam optimizm kerakligi Cherchill misolida tushuntiriladi.",
+   "Servantes 53 yoshida qamoqxonada \"Don Kixot\" asarini yozgani buyuk matonat misoli sifatida keltiriladi.",
+   "Uinston Cherchillning 66 yoshida haqiqiy rahbar sifatida dunyo sahnasiga chiqqani eslatiladi.",
+   "Koloradolik otaning xati va uning vafot etgan qizi hamyonidan topilgan ta'sirli iqtibos bilan ma'ruza yakunlanadi."
+  ],
+  "quotes": [
+   "Biz o‘zimizga zindon quramiz va unga o‘zimiz qorovul bo‘lamiz.",
+   "Hayot — o‘chirgichsiz rasm chizish san'ati.",
+   "Dunyoni doim shijoatli insonlar, fidoyilar hamda biror narsaga chin dildan ishongan va unga astoydil intilgan erkak va ayollar harakatga keltiradi.",
+   "Dunyoda shunday insonlar borki, ular faqatgina o‘zlarining borligi bilan bu olamni go‘zallashtiradilar.",
+   "Faqat o‘z shaxsiyati bilan band bo‘lish — zindonda yashash bilan barobar.",
+   "Ma'no — siz hayotingizda quradigan imoratdir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dengiz chig‘anoqlari haqida maqolada qanday xulosa bor?",
+   "options": [
+    "A) Bir marta joy tanlab qotadi",
+    "B) Doim ummon bo‘ylab suzib yuradi",
+    "C) Toshlarni yemirib uy o‘yadi",
+    "D) Faqat chuqurlikda hayot kechiradi"
+   ],
+   "answer": "A) Bir marta joy tanlab qotadi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Yirik tashkilotlarni ichdan kemiruvchi yashirin dard nima?",
+   "options": [
+    "A) Tushkunlik va qashshoqlik",
+    "B) Ichki zerikish",
+    "C) Keskin raqobat",
+    "D) Shoshqaloqlik va xatolar"
+   ],
+   "answer": "B) Ichki zerikish"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif yetmish yetti yoshga to‘lgach nima qildi?",
+   "options": [
+    "A) Yangi ish boshladi",
+    "B) Nafaqaga chiqib dam oldi",
+    "C) Kitob yozishni to‘xtatdi",
+    "D) Chet elga ko‘chib ketdi"
+   ],
+   "answer": "A) Yangi ish boshladi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif fikricha, o‘qib-o‘rganish qaysi yoshga xos?",
+   "options": [
+    "A) Barcha yosh va davrlarga",
+    "B) Faqat bolalik va yoshlikka",
+    "C) Faqat keksalik davriga",
+    "D) Faqat talabalik yillariga"
+   ],
+   "answer": "A) Barcha yosh va davrlarga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Inson o‘zi uchun zindon qurishiga kimlar sababchi bo‘ladi?",
+   "options": [
+    "A) Ota-ona va jamiyat",
+    "B) Hamkasblar va do‘stlar",
+    "C) Begona va tasodifiy odamlar",
+    "D) Faqat dushmanlar"
+   ],
+   "answer": "A) Ota-ona va jamiyat"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Insonlar nega o‘rta yoshda turg‘unlik botqog‘iga botib qoladi?",
+   "options": [
+    "A) O‘rganish va o‘sishdan to‘xtagani uchun",
+    "B) Vaqti judayam ko‘pligi uchun",
+    "C) Pul va imkoniyat yo‘qligi uchun",
+    "D) Atrofdagilar unga qarshi chiqqani uchun"
+   ],
+   "answer": "A) O‘rganish va o‘sishdan to‘xtagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Insonning o‘tmishdagi gina-kuduratlar bilan kurashishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — o‘sishga to‘sqinlikni yo‘qotadi",
+    "B) Noto‘g‘ri — o‘tmishni o‘zgartirib bo‘lmaydi",
+    "C) To‘g‘ri — hammadan o‘ch olish uchun",
+    "D) Noto‘g‘ri — ginalar insonga kuch beradi"
+   ],
+   "answer": "A) To‘g‘ri — o‘sishga to‘sqinlikni yo‘qotadi"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Boks afsonasi Jo Luis yiqilish haqida nima degan?",
+   "options": [
+    "A) Hamma qachondir yiqilishi muqarrar",
+    "B) Kuchlilar hech qachon yiqilmaydi",
+    "C) Yiqilgan odam qayta turmaydi",
+    "D) G‘alaba faqat omadga bog‘liq"
+   ],
+   "answer": "A) Hamma qachondir yiqilishi muqarrar"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif sigirlarni kuzatib, ular haqida nimani o‘yladi?",
+   "options": [
+    "A) Ular ruhiy tushkunlikka tushmaydi",
+    "B) Ular juda aqlli jonivorlar",
+    "C) Ular doim tinchlikni xohlaydi",
+    "D) Ular ham hayotdan ma'no izlaydi"
+   ],
+   "answer": "A) Ular ruhiy tushkunlikka tushmaydi"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif o‘z iborasi muhrlangan jez lavhani ko‘rib nima qildi?",
+   "options": [
+    "A) Darrov unga buyurtma berdi",
+    "B) Mualliflik huquqini talab qildi",
+    "C) Do‘kon egalarini sudga berdi",
+    "D) E'tibor bermay o‘tib ketdi"
+   ],
+   "answer": "A) Darrov unga buyurtma berdi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif fikricha, hayot mazmuni nimalardan bunyod bo‘ladi?",
+   "options": [
+    "A) Sadoqat, e'tiqod va burchdan",
+    "B) Faqat moddiy boylik va mol-mulkdan",
+    "C) Shon-shuhrat va maqtovlardan",
+    "D) Tasodifiy omad va omillardan"
+   ],
+   "answer": "A) Sadoqat, e'tiqod va burchdan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega muallif motivatsiyani iqtidordan ko‘ra muhimroq deb biladi?",
+   "options": [
+    "A) Dunyoni shijoatli insonlar yuritgani uchun",
+    "B) Iqtidor insonni tez charchatgani uchun",
+    "C) Motivatsiya hammaga tekinga berilgani uchun",
+    "D) Iqtidorli odamlar kam uchragani uchun"
+   ],
+   "answer": "A) Dunyoni shijoatli insonlar yuritgani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Inson faqat o‘z shaxsiyati bilan band bo‘lib yashashi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri — bu zindonda yashashdir",
+    "B) To‘g‘ri — har kim o‘zini o‘ylasin",
+    "C) To‘g‘ri — bu baxtli bo‘lish yo‘li",
+    "D) Noto‘g‘ri — bu juda qimmatga tushadi"
+   ],
+   "answer": "A) Noto‘g‘ri — bu zindonda yashashdir"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Hayotni o‘chirgichsiz rasmga o‘xshatish nimani anglatadi?",
+   "options": [
+    "A) Xatolarni osongina o‘chirib bo‘lmasligini",
+    "B) Har bir inson rassom bo‘lishini",
+    "C) Hayotda faqat qora ranglar borligini",
+    "D) Rasm chizish oson mashg‘ulotligini"
+   ],
+   "answer": "A) Xatolarni osongina o‘chirib bo‘lmasligini"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Servantes Don Kixot asarini qanday joyda yozishga ahd qilgan?",
+   "options": [
+    "A) Qamoqxonada panjara ortida bo‘lganda",
+    "B) Hukmdor saroyida xizmat qilganda",
+    "C) Dengizda safarda yurgan vaqtida",
+    "D) Universitetda dars berayotganida"
+   ],
+   "answer": "A) Qamoqxonada panjara ortida bo‘lganda"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Cherchill urush pallasida xalqiga nimani va'da qilgan edi?",
+   "options": [
+    "A) Qon, mashaqqat va og‘ir mehnatni",
+    "B) Oson va tez erishiladigan g‘alabani",
+    "C) Katta boylik va tokinlikni",
+    "D) Urushsiz tinch hayot va rohatni"
+   ],
+   "answer": "A) Qon, mashaqqat va og‘ir mehnatni"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Servantes va Cherchill misollari qanday g‘oyani isbotlaydi?",
+   "options": [
+    "A) Har yoshda yuksalish mumkinligini",
+    "B) Faqat siyosat bilan shug‘ullanish lozimligini",
+    "C) Faqat qamoqda kitob yozish mumkinligini",
+    "D) Yoshlikda mashhur bo‘lish shartligini"
+   ],
+   "answer": "A) Har yoshda yuksalish mumkinligini"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Koloradolik ota nega muallifga minnatdorchilik xati yozdi?",
+   "options": [
+    "A) Qizining hamyonida iqtibosi topilgani uchun",
+    "B) Kitobni tekinga sotib olgani uchun",
+    "C) Unga yangi ish taklif qilgani uchun",
+    "D) Avtohalokatning oldi olingani uchun"
+   ],
+   "answer": "A) Qizining hamyonida iqtibosi topilgani uchun"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega muallif sobitqadam optimizmni o‘zlikni kashf etishda muhim deydi?",
+   "options": [
+    "A) Kelajak ishonchsizlar tomonidan qurilmagani uchun",
+    "B) Optimistlar hech qachon kasal bo‘lmagani uchun",
+    "C) Bu jamiyatda urfda bo‘lgani uchun",
+    "D) Xavf-xatarlarni butunlay yo‘qotgani uchun"
+   ],
+   "answer": "A) Kelajak ishonchsizlar tomonidan qurilmagani uchun"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Ma'no bu quriladigan imorat degan tasvir nimani anglatadi?",
+   "options": [
+    "A) Ma'noni inson o‘zi bunyod etishini",
+    "B) Uyni g‘ishtdan qurish kerakligini",
+    "C) Imoratlar doim poydor bo‘lishini",
+    "D) Tayyor ma'noni sotib olish mumkinligini"
+   ],
+   "answer": "A) Ma'noni inson o‘zi bunyod etishini"
+  }
+ ]
+}

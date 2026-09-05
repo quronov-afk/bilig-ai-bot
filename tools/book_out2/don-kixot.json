@@ -1,0 +1,59 @@
+{
+ "title": "Don Kixot",
+ "author": "Migel de Servantes",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14-16 yosh (va undan kattalar uchun)",
+  "topics": [
+   "xayol va haqiqat",
+   "do‘stlik",
+   "adolat",
+   "ezgulik",
+   "sadoqat"
+  ],
+  "theme": "Asarda xayoliy orzular bilan real hayot to‘qnashuvi, jamiyatdagi adolatsizliklarga nisbatan oliyjanob, ammo noto‘g‘ri usullar bilan kurashishning oqibatlari hamda do‘stlikning qadri tasvirlanadi. Muallif ezgu niyatning o‘zigina kifoya qilmasligini, dunyoni o‘zgartirish uchun bilak kuchi va xomxayoldan tashqari teran idrok hamda hayotiy haqiqat bilan hisoblashish zarurligini uqtiradi.",
+  "summary": "Lamanchlik qashshoq idalgo don Kexana ritsarlik romanlariga berilib, aqldan ozadi va o‘zini jahongashta ritsar don Kixot deb e’lon qiladi. U zanglagan qurol-aslahalarini tozalab, ozg‘in oti Rosinant va dehqon qizi Dulsineya nomiga sodiq qolib sarguzashtga otlanadi. Birinchi safarida karvonsaroy egasidan soxta ritsarlik unvonini oladi va kaltak yeb uyiga qaytadi. Ikkinchi safarida u sodda dehqon Sancho Pansani orol gubernatori qilish va’dasi bilan o‘ziga yaroqbardor qilib oladi. Ularning sarguzashtlari mobaynida don Kixot shamol tegirmonlarini devlar deb, qo‘y suruvlarini dushman qo‘shini deb o‘ylaydi, mis jomni sehrli dubulg‘a deb tortib oladi va zanjirband mahbuslarni ozod qilib, ulardan kaltak yeydi. Keyinchalik gersog qasrida ularni mazax qilib, Sanchoni soxta Baratariya oroliga gubernator qiladilar. Sancho odillik va donolik bilan hukm yurgizadi, ammo boshqaruv mashaqqatini anglab, bu lavozimdan o‘z ixtiyori bilan voz kechadi. Oxir-oqibat, Oq Oydin ritsari (o‘z qishloqdoshi Samson Karrasko) bilan jangda mag‘lub bo‘lgan don Kixot uyiga qaytishga va ritsarlikdan voz kechishga majbur bo‘ladi. Qishlog‘iga qaytgach, u isitmalab yotib qoladi, xayolot botqog‘idan qutulib, o‘zining eski idalgo Kexana ekanini anglaydi, ritsarlik romanlarini qoralaydi va tinch holda vafot etadi.",
+  "characters": "Don Kixot (don Kexana) — ritsarlik romanlariga berilib, dunyodagi adolatsizlikni yo‘qotmoqchi bo‘lgan oliyjanob, ammo xayolparast idalgo. Sancho Pansa — don Kixotning sodiq yaroqbardori, sodda, ro‘zg‘orparvar va xalqona donolikka ega dehqon. Rosinant — don Kixotning qarib-chuqurchasi chiqqan, ammo xo‘jayiniga sodiq oti. Dulsineya Tobosskaya — don Kixot xayolan oliyqadd xonim deb bilgan oddiy qishloq qizi Aldonsa Lorenso. Samson Karrasko — don Kixotni uyga qaytarish uchun Oq Oydin ritsari qiyofasiga kirgan bilimdon bakalavr.",
+  "conclusion": "«Don Kixot» romani bolaga hayotda haqiqat va xayol o‘rtasidagi chegarani ajrata bilishni hamda har qanday ezgu niyat hayotiy idrok va mas’uliyat bilan yo‘g‘rilgan bo‘lishi kerakligini o‘rgatadi. Bola kitobdan sadoqat, do‘stlik va kibrga berilmaslik saboqlarini oladi. Ota-onalar uchun bu asar farzandda soxta orzular ketidan quvmasdan, real hayotda halol va foydali mehnat qilish tuyg‘usini shakllantirishda ajoyib manbadir.",
+  "difficulty": "qiyin",
+  "mood": "hajviy, o‘ylantiruvchi, hazin",
+  "for_whom": "Katta yoshli, falsafiy mushohada yuritishni, mumtoz adabiyot va kulgi ortidagi teran ma’nolarni uqishni yoqtiradigan kitobxonlar uchun.",
+  "events": [
+   "Lamanchlik idalgo don Kexana ritsarlik romanlarini bedor o‘qib, aqldan ozadi.",
+   "Idalgo o‘ziga don Kixot nomini tanlab, eski qurol-aslahalarni tozalaydi va oti Rosinant bilan safarga chiqadi.",
+   "Don Kixot xayolida ma’shuqa yaratib, dehqon qizi Aldonsani Dulsineya Tobosskaya deb ataydi.",
+   "Karvonsaroyni qal’a deb o‘ylagan don Kixot uning egasidan o‘ziga ritsarlik unvoni berishini so‘raydi.",
+   "Hovlida qurol qo‘riqlayotgan don Kixot xachir haydovchilar bilan urushib, ularni yarador qiladi.",
+   "Karvonsaroy egasi kulgili marosim o‘tkazib, don Kixotni soxta ritsar deb e’lon qiladi va uyiga jo‘natadi.",
+   "Uyga qaytgan don Kixot sodda dehqon Sancho Pansaga orol gubernatorligini va’da qilib, yaroqbardor qilib oladi.",
+   "Don Kixot va Sancho Pansa birgalikda ikkinchi marotaba sarguzasht izlab yo‘lga tushadilar.",
+   "Don Kixot shamol tegirmonlarini bahaybat devlar deb o‘ylab, ularga qarshi jangga kiradi va nayzasi sinadi.",
+   "Ritsar yo‘lda uchragan qo‘y suruvlarini dushman qo‘shini deb hisoblab, ularga hamla qiladi.",
+   "Sartaroshning mis jomini Mambrinning sehrli oltin dubulg‘asi deb o‘ylab, uni tortib oladi.",
+   "Don Kixot zanjirband qilingan mahbuslarni ozod qiladi, ammo mahbuslar uning o‘zini toshbo‘ron qiladilar.",
+   "Don Kixot va Sancho Pansa gersog qasriga kelib tushadi va u yerda ularni dabdaba bilan kutib olishadi.",
+   "Gersog Sanchoni sinash va ermak qilish uchun uni soxta Baratariya oroliga gubernator qilib tayinlaydi.",
+   "Sancho Pansa orolni adolat va donolik bilan boshqaradi, ammo turli cheklovlar va sarsonliklardan bezib, amaldan kechadi.",
+   "Sancho gubernatorlikni tark etib, yana don Kixot xizmatiga va oddiy hayotiga qaytadi.",
+   "Qishloqdoshi bakalavr Samson Karrasko don Kixotni uyga qaytarish uchun Oq Oydin ritsari qiyofasida paydo bo‘ladi.",
+   "Oq Oydin ritsari don Kixotni yakkama-yakka olishuvda mag‘lub etadi va uni bir yilga uyiga qaytishga majbur qiladi.",
+   "Sarguzashtlardan toliqib uyiga qaytgan don Kixot qattiq betob bo‘lib yotib qoladi.",
+   "Isitma ichida don Kixot xatosini anglab yetadi, ritsarlik romanlaridan voz kechadi va o‘zining idalgo Kexana ekanini e’lon qiladi.",
+   "Kexana yaqinlari va do‘stlari qurshovida tinch va osuda holda vafot etadi."
+  ],
+  "quotes": [
+   "Lekin yo‘lga tushishga bo‘lgan kuchli ishtiyoqi uning ko‘nglidagi barcha shubhalardan ustun keldi.",
+   "Libosimdir sovut-qalqonim / Oromim-chi, qaynoq janglarda.",
+   "Bizning ishimiz jabrlanganlar va kuchsizlarga yordam berish.",
+   "Har qanday maqol tagida haqiqat bor, chunki bu hikmatlarning hammasi ilm-u fan onasi – turmush tajribasidan olingan.",
+   "Dunyoda o‘limdan boshqa hamma narsani to‘g‘rilasa bo‘ladi...",
+   "Uning o‘n kunlik gubernatorligidan faqat bitta manfaat ko‘rdi – bu ham bo‘lsa, birgina orolga emas, hatto butun dunyoga hokim bo‘lish sariq chaqaga ham arzimagan ish ekaniga ishonch hosil qildi."
+  ]
+ },
+ "questions": [],
+ "short_form": true,
+ "talk_question": "Don Kixot dunyodagi adolatsizlik va yomonliklarga qarshi kurashishni xohladi, lekin uning xatti-harakatlari ko‘pincha atrofidagilarga va o‘ziga zarar keltirdi. Seningcha, inson boshqalarga ezgulik va yordam berishda nimalarga e’tibor berishi kerak? Ota-onang yoki ustozlaringning qaysi maslahatlari senga to‘g‘ri qaror qabul qilishda yordam bergan?"
+}

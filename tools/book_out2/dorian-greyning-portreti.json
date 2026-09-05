@@ -1,0 +1,480 @@
+{
+ "title": "Dorian Greyning portreti",
+ "author": "Oskar Uayld",
+ "genre": "roman",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "17-19",
+  "age_hint": "16+",
+  "topics": [
+   "go‘zallik",
+   "axloq va vijdon",
+   "san'at",
+   "nafs va oqibat",
+   "do‘stlik"
+  ],
+  "theme": "Tashqi go‘zallik va abadiy yoshlik ortidan quvish insonni ma'naviy tubanlik va halokatga olib keladi. Haqiqiy go‘zallik hamda qadr-qimmat insondagi pokiza vijdon, axloq hamda ezgu amallarda aks etadi. Nafs xohishlariga qullik qilish va mas'uliyatsizlik insoniy fazilatlarni yemirib, oxir-oqibat o‘zini mahv etishga olib keladi.",
+  "summary": "Yosh va o‘ta jozibador Dorian Grey rassom Bezil Xolluordning ustaxonasida u bilan tanishadi. Bezil Dorianning betakror portretini chizib bitiradi. Shu yerda Dorian lord Genri Uotton bilan uchrashadi. Lord Genrining yoshlik va go‘zallik o‘tkinchi ekani, hayotda faqat huzur-halovat va rohat ketidan quvish kerakligi haqidagi falsafiy qarashlari Dorianga kuchli ta'sir qiladi. Dorian surati doim qarib, o‘zi esa mangu yosh bo‘lib qolishini orzu qilib, hatto bu uchun jonini berishga tayyorligini aytadi.\n\nVaqt o‘tib, Dorian teatrda iste'dodli va yosh aktrisa Sibila Veynni sevib qoladi. Ammo Sibila oshiq bo‘lgach, sahnada o‘z rolini ehtirossiz va yomon o‘ynaydi. Buni ko‘rgan Dorian uni shafqatsizlarcha tashlab ketadi. Uyiga qaytgan Dorian portretidagi yuz ifodasi o‘zgarganini — unda shafqatsizlik izi paydo bo‘lganini ko‘rib dahshatga tushadi. Sibila o‘zini o‘ldirganini eshitgan Dorian dastlab afsuslansa-da, Lord Genrining ta'siri bilan bu fojiani teatr sahnasidagi voqeadek qabul qiladi va portretni chordoqqa yashirib qo‘yadi.\n\nYillar o‘tgani sayin Dorian pinhona va buzuq hayot kechiradi, turli gunohlar hamda illatlarga botadi. Uning yuzi o‘zgarmay, yosh va sohibjamol qolaveradi, ammo chordoqdagi portret uning barcha qabohatlari va ajinlarini o‘zida aks ettirib, tobora badbashara bo‘lib boradi. Bir kuni rassom Bezil Dorianni insofga chaqirish uchun kelganda, Dorian unga yashirin portretni ko‘rsatadi va g‘azab ustida Bezilni pichoqlab o‘ldiradi. Keyin do‘sti Alan Kempbelni tahdid bilan majburlab, murdani kimyoviy yo‘l bilan yo‘qotadi.\n\nKeyinchalik Sibilaning akasi Jeyms Veyn qasos olmoqchi bo‘lib Dorianni ta'qib qiladi, lekin ov paytida tasodifan otilib o‘ladi. Dorian yangi va halol hayot boshlashga qaror qilib, bir qishloq qizini ayaydi va uni tark etadi. U portretdagi o‘zgarishni ko‘rish uchun chordoqqa chiqadi, ammo portret yanada jirkanch tus olganini ko‘radi. O‘zining munofiqligidan va vijdon azobidan qutula olmagan Dorian qotillik quroli bo‘lgan pichoqni suratga sanchadi. Qattiq faryod eshitilib, xizmatkorlar kirganida suratda yashnab turgan navqiron Dorianni, polda esa ko‘kragiga pichoq sanchilgan, ajin bosgan va badbashara qariya murdasini ko‘rishadi.",
+  "characters": "Dorian Grey — g‘oyat jozibador yigit, lord Genri ta'sirida ma'naviy tubanlashib, o‘z nafsi va istaklari quliga aylanadi.\nLord Genri Uotton — xushvaqt zodagon, hayotga va axloqqa yengil qaraydigan falsafachi, Dorianning ma'naviy buzilishiga sababchi bo‘ladi.\nBezil Xolluord — samimiy va iste'dodli rassom, Dorianning portretini chizadi va uning pokiza qolishini istaydi.\nSibila Veyn — yosh va iste'dodli aktrisa, Dorianni chin dildan sevib qoladi va rad etilgach o‘z joniga qasd qiladi.\nJeyms Veyn — Sibilaning akasi, singlisining o‘limi uchun Doriandan qasos olishga ahd qiladi.\nAlan Kempbel — Dorianning sobiq do‘sti, kimyogar, Dorian majburlashi bilan Bezilning murdasini yo‘qotadi.",
+  "conclusion": "Asar o‘quvchiga tashqi ko‘rinish va husn-jamol insonning ichki dunyosini hamda axloqini belgilay olmasligini uqtiradi. Vijdonni aldash, mas'uliyatsizlik va nafsoniy aysh-ishrat ketidan quvish oxir-oqibat inson ruhiyatining inqiroziga hamda halokatiga olib keladi. Kitobxon har bir qilingan qilmish va gunoh uchun ertagami-kechmi vijdon hamda qonun oldida javob berish muqarrarligini, haqiqiy go‘zallik faqat pokiza qalbda bo‘lishini anglab yetadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, falsafiy, o‘ylantiruvchi",
+  "for_whom": "Inson ruhiyati, axloqiy tanlovlar, san'at va hayot ma'nosi haqida fikrlashni xush ko‘radigan kitobxonlar uchun.",
+  "events": [
+   "Bezil Xolluord o‘z ustaxonasida Dorian Greyning go‘zal portretini chizib bitiradi.",
+   "Lord Genri ustaxonaga keladi va Bezil bilan san'at haqida suhbatlashadi.",
+   "Lord Genri Dorian Grey bilan tanishadi hamda yoshlik va go‘zallik haqidagi qarashlarini so‘zlab beradi.",
+   "Dorian portretga qarab, o‘zi mangu yosh qolishini va portret qarishini orzu qiladi.",
+   "Lord Genri tog‘asi lord Fermor bilan Dorianning kelib chiqishi haqida gaplashadi.",
+   "Dorian teatrda yosh aktrisa Sibila Veynni uchratib, unga oshiq bo‘lib qolganini Genriga aytadi.",
+   "Jeyms Veyn Avstraliyaga ketishdan oldin singlisi Sibilaga zarar yetkazgan odamni o‘ldirishga qasam ichadi.",
+   "Dorian, Lord Genri va Bezil teatrga Sibila ijrosini ko‘rish uchun borishadi.",
+   "Sibila sevgi tufayli rolni juda yomon va ehtirossiz o‘ynaydi.",
+   "Dorian Sibiladan hafsalasi pir bo‘lib, uni shafqatsizlik bilan tashlab ketadi.",
+   "Dorian uyga qaytgach, portretdagi yuzda shafqatsiz istehzo paydo bo‘lganini payqaydi.",
+   "Lord Genri Sibilaning o‘z joniga qasd qilgani haqidagi xabarni keltiradi.",
+   "Dorian portretni chordoqdagi eski xonaga berkitib qo‘yadi.",
+   "Yillar o‘tib Dorian turli buzuqlik va gunohlarga bota boshlaydi, portret esa tobora xunuklashadi.",
+   "Bezil Xolluord Dorianning uyiga kelib, uni yomon mish-mishlar haqida ogohlantiradi.",
+   "Dorian Bezilga chordoqdagi o‘zgargan portretni ko‘rsatadi va g‘azab bilan uni pichoqlaydi.",
+   "Dorian Alan Kempbelni tahdid qilib, Bezilning murdasini kimyoviy usulda yo‘qotishga majbur etadi.",
+   "Dorian afyun chekadigan tunda Jeyms Veyn bilan to‘qnash keladi, ammo yosh ko‘rinishi sababli qutulib qoladi.",
+   "Selbidagi ov paytida Jeyms Veyn tasodifan otib o‘ldiriladi va Dorian xavfdan xalos bo‘ladi.",
+   "Dorian yangi hayot boshlashga qaror qilib, qishloq qizi Gettini ayaydi va tark etadi.",
+   "Dorian chordoqqa chiqib portretni ko‘radi, ammo unda hech qanday ezgu o‘zgarish bo‘lmaganini anglaydi.",
+   "Dorian g‘azab bilan pichoqni portretga sanchadi va o‘zi halok bo‘ladi.",
+   "Xizmatkorlar xonaga kirganda, ko‘kragiga pichoq sanchilgan badbashara murda va yosh Dorian portretini ko‘rishadi."
+  ],
+  "quotes": [
+   "San'atkor – go‘zallik yaratuvchidir.",
+   "Har qanday san'at mutlaqo befoydadir.",
+   "Bu sening eng yaxshi asaring, Bezil.",
+   "Qalb dardini hamisha sezgilar bilan davolamoq kerak, sezgilarga esa qalb davo bo‘ladi.",
+   "Axloqsiz deb atalmish kitoblar jahonga uning illatlarini ko‘rsatib beradi xolos.",
+   "Suratda Dorian Greyning qiyofasida jamiki yashnagan navqironligi barq urib turardi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bezil ustaxonasida kimning portretini chizgan edi?",
+   "options": [
+    "A) Lord Genrining",
+    "B) Dorian Greyning",
+    "C) Ledi Brendonning",
+    "D) Alan Kempbelning"
+   ],
+   "answer": "B) Dorian Greyning"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lord Genri Dorian bilan qayerda birinchi marta ko‘rishdi?",
+   "options": [
+    "A) Restoranda",
+    "B) Teatrda",
+    "C) Bezilning ustaxonasida",
+    "D) Ko‘chada"
+   ],
+   "answer": "C) Bezilning ustaxonasida"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dorian Grey teatrda qaysi aktrisani sevib qoladi?",
+   "options": [
+    "A) Ledi Agatani",
+    "B) Getti Mertonni",
+    "C) Sibila Veynni",
+    "D) Ledi Brendonni"
+   ],
+   "answer": "C) Sibila Veynni"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bezil nima uchun portretni ko‘rgazmaga qo‘ymoqchi emas edi?",
+   "options": [
+    "A) Surat chala edi",
+    "B) O‘z sirlari singgani uchun",
+    "C) Surat sotilgan edi",
+    "D) Ramkasi yo‘q edi"
+   ],
+   "answer": "B) O‘z sirlari singgani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Birinchi qismda qaysi voqealar tartibda sodir bo‘ldi?",
+   "options": [
+    "A) Portret chizildi, Genri bilan uchrashuv",
+    "B) Sibila o‘ldi, keyin portret chizildi",
+    "C) Dorian uylandi, keyin teatrga bordi",
+    "D) Bezil o‘ldi, keyin portret chizildi"
+   ],
+   "answer": "A) Portret chizildi, Genri bilan uchrashuv"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dorian nima uchun mangu yosh qolishni istab qoldi?",
+   "options": [
+    "A) Genrining so‘zlari ta'sir qilgani uchun",
+    "B) Bezil undan shuni so‘ragani uchun",
+    "C) Kasal bo‘lishdan qo‘rqgani uchun",
+    "D) Teatrda o‘ynashni xohlagani uchun"
+   ],
+   "answer": "A) Genrining so‘zlari ta'sir qilgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jeyms Veyn nima uchun Avstraliyaga ketishdan oldin tashvishlandi?",
+   "options": [
+    "A) Pul topa olmagani uchun",
+    "B) Singlisining kelajagidan xavotir olgani uchun",
+    "C) Kemaga kechikkani uchun",
+    "D) Onasi kasal bo‘lgani uchun"
+   ],
+   "answer": "B) Singlisining kelajagidan xavotir olgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sibilaning yomon o‘ynashidan keyin Dorianning uni tashlashi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, u yomon aktrisa edi",
+    "B) Noto‘g‘ri, bu shafqatsiz xudbinlik edi",
+    "C) To‘g‘ri, Genri maslahat berdi",
+    "D) Noto‘g‘ri, u teatrni yomon ko‘rardi"
+   ],
+   "answer": "B) Noto‘g‘ri, bu shafqatsiz xudbinlik edi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Lord Genrining yoshlik haqidagi fikrlariga qanday baho beriladi?",
+   "options": [
+    "A) Juda to‘g‘ri va foydali",
+    "B) Insonni ma'naviy buzilishga yetaklaydi",
+    "C) Faqat san'atkorlarga mos keladi",
+    "D) Faqat ayollarga tegishli fikr"
+   ],
+   "answer": "B) Insonni ma'naviy buzilishga yetaklaydi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif ustaxonadagi gul hidlarini tasvirlab nimani ko‘rsatgan?",
+   "options": [
+    "A) Xonaning iflosligini",
+    "B) Go‘zal va osoyishta muhitni",
+    "C) Shovqinli shahar hayotini",
+    "D) Qahramonlarning qassobligini"
+   ],
+   "answer": "B) Go‘zal va osoyishta muhitni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dorian birinchi marta portretdagi qaysi o‘zgarishni payqadi?",
+   "options": [
+    "A) Sochlarining oqarganini",
+    "B) Lablarida shafqatsiz istehzo paydo bo‘lganini",
+    "C) Ko‘zlarining ko‘karganini",
+    "D) Yuziga ajin tushganini"
+   ],
+   "answer": "B) Lablarida shafqatsiz istehzo paydo bo‘lganini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dorian portretni uyining qaysi xonasiga yashirib qo‘ydi?",
+   "options": [
+    "A) Yong‘oq xonasiga",
+    "B) Chordoqdagi eski xonaga",
+    "C) Yerto‘ladagi omborxonaga",
+    "D) Mehmonxonadagi shkafga"
+   ],
+   "answer": "B) Chordoqdagi eski xonaga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sibila Veyn qanday halok bo‘ldi?",
+   "options": [
+    "A) Kasallikdan",
+    "B) Suvga cho‘kib",
+    "C) O‘ziga zahar ichirib",
+    "D) Avtohalokatda"
+   ],
+   "answer": "C) O‘ziga zahar ichirib"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dorian Bezil Xolluordni qaysi qurol bilan o‘ldirdi?",
+   "options": [
+    "A) To‘pponcha bilan",
+    "B) Pichoq bilan",
+    "C) Zahar bilan",
+    "D) Og‘ir kaltak bilan"
+   ],
+   "answer": "B) Pichoq bilan"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Sibilaning o‘limidan keyin Dorian qanday yo‘l tutdi?",
+   "options": [
+    "A) Politsiyaga borib iqror bo‘ldi",
+    "B) Fojiani teatr sahnasidagidek qabul qildi",
+    "C) Qishloqqa qochib ketdi",
+    "D) Teatrni sotib olib aktyor bo‘ldi"
+   ],
+   "answer": "B) Fojiani teatr sahnasidagidek qabul qildi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bezil o‘ldirilgach voqealar qanday tartibda yuz berdi?",
+   "options": [
+    "A) Alan Kempbel chaqirildi, murda yo‘qotildi",
+    "B) Politsiya keldi, Dorian qamaldi",
+    "C) Dorian qochdi, keyin qaytdi",
+    "D) Alan Kempbel Bezilni tiriltirdi"
+   ],
+   "answer": "A) Alan Kempbel chaqirildi, murda yo‘qotildi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dorian nima uchun Alan Kempbelni yordam berishga majbur qildi?",
+   "options": [
+    "A) Unga ko‘p pul va'da qildi",
+    "B) Sirini oshkor qilish bilan tahdid qildi",
+    "C) Ular yaqin do‘st edilar",
+    "D) Alan o‘zi yordam berishni so‘radi"
+   ],
+   "answer": "B) Sirini oshkor qilish bilan tahdid qildi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Bezil nima uchun Dorianning uyiga kechasi kelgan edi?",
+   "options": [
+    "A) Suratni olib ketish uchun",
+    "B) Yomon mish-mishlar haqida gaplashishga",
+    "C) Parijga birga ketishni taklif qilishga",
+    "D) Pul qarz so‘rab kelgani uchun"
+   ],
+   "answer": "B) Yomon mish-mishlar haqida gaplashishga"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dorianning Bezilni o‘ldirishi uning qaysi holatini ko‘rsatadi?",
+   "options": [
+    "A) U mutlaqo ma'naviy tubanlashganini",
+    "B) U juda mard bo‘lib qolganini",
+    "C) U o‘zini himoya qilganini",
+    "D) U adolatni tiklaganini"
+   ],
+   "answer": "A) U mutlaqo ma'naviy tubanlashganini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif portretdagi qonli dog‘lar orqali nimani ifodalagan?",
+   "options": [
+    "A) Bo‘yoqlarning sifatli ekanini",
+    "B) Gunohlarning dahshatli asoratini",
+    "C) Rassomning xatosini",
+    "D) Xonaning sovuqligini"
+   ],
+   "answer": "B) Gunohlarning dahshatli asoratini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jeyms Veyn Selbidagi ov paytida qanday halok bo‘ldi?",
+   "options": [
+    "A) O‘z to‘pponchasidan otilib",
+    "B) Tasodifiy o‘q tegishi natijasida",
+    "C) Ot bosib ketishi sababli",
+    "D) Yirtqich hujum qilgani uchun"
+   ],
+   "answer": "B) Tasodifiy o‘q tegishi natijasida"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Dorian qaysi qishloq qizini ayab, tark etdi?",
+   "options": [
+    "A) Sibila Veynni",
+    "B) Getti Mertonni",
+    "C) Ledi Agatani",
+    "D) Ledi Gvendolonni"
+   ],
+   "answer": "B) Getti Mertonni"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alan Kempbel Bezil murdasini yo‘qotgach, nima qildi?",
+   "options": [
+    "A) Chet elga qochib ketdi",
+    "B) O‘zini o‘zi otib o‘ldirdi",
+    "C) Politsiyaga xabar berdi",
+    "D) Dorian bilan do‘st bo‘lib qoldi"
+   ],
+   "answer": "B) O‘zini o‘zi otib o‘ldirdi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xizmatkorlar o‘lik odam Dorian ekanini qanday bilishdi?",
+   "options": [
+    "A) Yuz tuzilishidan",
+    "B) Boshidagi shlyapasidan",
+    "C) Qo‘lidagi uzuklaridan",
+    "D) Yonidagi hamyonidan"
+   ],
+   "answer": "C) Qo‘lidagi uzuklaridan"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar so‘ngida Dorian qanday yo‘l tutdi?",
+   "options": [
+    "A) Suratni pichoqladi, o‘zi o‘ldi",
+    "B) Qishloqqa ko‘chib o‘tdi",
+    "C) Tavba qilib monastirga ketdi",
+    "D) Genri bilan Parijga jo‘nadi"
+   ],
+   "answer": "A) Suratni pichoqladi, o‘zi o‘ldi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Jeyms Veyn afyunxona oldida Dorianni nega darhol otmadi?",
+   "options": [
+    "A) Dorianning yuzidagi yoshlikni ko‘rib",
+    "B) Uni tanimay qolgani uchun",
+    "C) Yonida quroli bo‘lmagani uchun",
+    "D) Politsiyadan qo‘rqqani uchun"
+   ],
+   "answer": "A) Dorianning yuzidagi yoshlikni ko‘rib"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dorian suratni pichoqlaganda nima uchun o‘zi halok bo‘ldi?",
+   "options": [
+    "A) Surat uning ruhi va hayoti edi",
+    "B) Pichoq uning qo‘lidan sirg‘aldi",
+    "C) Xizmatkorlar uni otib qo‘yishdi",
+    "D) Genri xonaga kirib pichoqladi"
+   ],
+   "answer": "A) Surat uning ruhi va hayoti edi"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Dorianning Gettini tark etishi haqiqiy poklanish edimi?",
+   "options": [
+    "A) Ha, u butunlay o‘zgardi",
+    "B) Yo‘q, bu qalloblik va manmanlik edi",
+    "C) Ha, u endi elda qoladi",
+    "D) Yo‘q, u qizni sevmas edi"
+   ],
+   "answer": "B) Yo‘q, bu qalloblik va manmanlik edi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Asar oxirida portret va murda qarama-qarshiligi nimani anglatadi?",
+   "options": [
+    "A) San'atning o‘tkinchiligini",
+    "B) Haqiqat va hayotning g‘alabasini",
+    "C) Bo‘yoqlarning o‘chib ketishini",
+    "D) Xizmatkorlarning bilimsizligini"
+   ],
+   "answer": "B) Haqiqat va hayotning g‘alabasini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Axloqsiz kitoblar illatlarni ko‘rsatadi\" deb nimani uqtirgan?",
+   "options": [
+    "A) Kitoblarni taqiqlash kerakligini",
+    "B) San'at jamiyat illatlarini aks ettirishini",
+    "C) Kitoblar odamlarni buzishini",
+    "D) O‘qishni to‘xtatish lozimligini"
+   ],
+   "answer": "B) San'at jamiyat illatlarini aks ettirishini"
+  }
+ ]
+}

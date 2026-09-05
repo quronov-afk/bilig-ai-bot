@@ -1,0 +1,479 @@
+{
+ "title": "Farhod va Shirin",
+ "author": "Alisher Navoiy",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "sadoqat",
+   "mehnatsevarlik",
+   "ilm-fan",
+   "kasb-hunar",
+   "vatanparvarlik",
+   "haqiqiy sevgi"
+  ],
+  "theme": "Asarning bosh g‘oyasi — komil inson insoniylik, halol mehnat, kasb-hunar egallash, sadoqat va ma’naviy poklik orqali ulug‘likka erishishidir. Haqiqiy ishq va vafo har qanday kibru zulmdan ustun turadi.",
+  "summary": "Chin xoqonining yakka-yagona farzandi Farhod yoshligidanoq mislsiz zakovat va iqtidorga ega bo‘lib o‘sadi. U qisqa vaqt ichida barcha ilm-fanlarni puxta egallaydi, so‘ngra tosh yo‘nish, naqqoshlik va harb san’ati kabi turli hunarlarni o‘rganadi. Biroy kun kelib, Farhodning ko‘ngliga sirli bir ishq va g‘am oralaydi. Otasi xoqon va vazir Mulkoro shahzodani chalg‘itish hamda unga darmon topish ilinjida xazinadagi tilsimlarni ochish safari yo‘liga tushadilar. Farhod jasorat ko‘rsatib, yo‘ldagi dahshatli ajdarni va Ahraman devni mag‘lub etadi, Sulaymon uzugini qo‘lga kiritadi hamda Suqrot hakim oromgohiga yetib borib, Jomi Jamshid orqali o‘z ma’shuqasi Shirinni ko‘radi. Shundan so‘ng u Armaniya o‘lkasiga yo‘l oladi. Armaniyada Shirin xalqi uchun toshli tog‘dan ariq qaziyotgan bo‘ladi. Farhod o‘zining tengsiz hunari va jasorati bilan toshlarni yorib, suv chiqarib beradi va Shirin bilan uchrashib, bir-birlariga ko‘ngil qo‘yadilar. Biroq Eron hukmdori Xusrav Parvez ham Shirinning husniga oshiq bo‘lib, Armaniyaga bostirib keladi. Farhod Shirinni va yurtdagilarni himoya qilib, Xusrav qo‘shiniga qarshi mardona kurashadi va uni so‘zda ham, mardlikda mot qiladi. Xusrav hiyla bilan Farhodni asir oladi hamda aldamchilik yo‘li bilan Shirinning o‘limi haqida soxta xabar yetkazib, Farhodning halok bo‘lishiga sabab bo‘ladi. Farhodning fojiali o‘limidan so‘ng Shirin ham vafo ko‘rsatib, uning ortidan jon beradi. Xusrav esa o‘z o‘g‘li Sheruya tomonidan taxtdan ag‘darilib, qatl etiladi. Asar oxirida muallif ilm, adolat va adabiyotning boqiy qadrini ta’kidlaydi.",
+  "characters": "Farhod — Chin shahzodasi, barcha ilmlar va hunarlarni egallagan komil inson, mard, mehnatsevar va vafodor oshiq. Shirin — Armaniya malikasi, go‘zal, odobli, vafodor va sabr-toqatli qahramon. Xoqon — Chin hukmdori, Farhodning mehribon va kuynukli otasi. Mulkoro — aql-idrokli, donishmand vazir. Mihinbonu — Armaniya shohi, Shirinning adolatli va mehribon xolasi. Xusrav Parvez — Eron hukmdori, manfur, kibrli va hiylagor shoh. Suqrot — hikmatli hakim, Farhodga yo‘l ko‘rsatuvchi daho. Sheruya — Xusravning taxtparast va zolim o‘g‘li.",
+  "conclusion": "Bu asar kitobxonga komil inson bo‘lib yetishish uchun ilm va kasb-hunar egallash naqadar muhimligini ko‘rsatadi. Bola doston orqali haqiqiy do‘stlik, vafo, sadoqat va halol mehnatning qadriga yetishni o‘rganadi. Asar insonda kibr va zolimlikka nafrat, ezgulik va mardlikka havas tuyg‘usini shakllantiradi.",
+  "difficulty": "qiyin",
+  "mood": "majoziy, mahzun, ruhiyatni boyituvchi",
+  "for_whom": "Muntazam mutolaa qiladigan, mumtoz adabiyot, jasorat, ilm-fan va haqiqiy ma’naviy qadriyatlar haqida o‘qishni xush ko‘radigan o‘spirinlarga.",
+  "events": [
+   "1. Chin xoqoni oilasida uzoq kutilgan Farhod ismli shahzoda dunyoga keladi.",
+   "2. Farhod yoshligidanoq zukkosi bilan ajralib turib, qisqa fursatda Qur’on va ilmlarni egallaydi.",
+   "3. Farhod Qorandan tosh yo‘nish va Moniydan tasvir chizish hunarini o‘rganadi.",
+   "4. Farhodning ko‘ngliga noma’lum ishq dardi tushib, u g‘amgin va xasta bo‘lib qoladi.",
+   "5. Xoqon o‘g‘lini chalg‘itish va davolash uchun tabiblar va vazirlarni yig‘adi.",
+   "6. Farhod otasi bilan tilsimlar xazinasini ochish uchun Yunon yurtiga yo‘l oladi.",
+   "7. Farhod yo‘lda vahimali ajdarni va Ahraman devni mardona yengadi.",
+   "8. Farhod Suqrot hakim g‘orini topib, Jomi Jamshid orqali Shirinning jamolini ko‘radi.",
+   "9. Farhod Armaniya o‘lkasiga borib, toshli tog‘ni yorib ariq qazishga kirishadi.",
+   "10. Farhod qaroqchilar kemasiga o‘q uzib, dengizdagi yo‘lovchilarni qutqaradi.",
+   "11. Shirin toshkesar Farhodning mehnatini va jamolini ko‘rib, unga ko‘ngil qo‘yadi.",
+   "12. Mihinbonu Farhodga hurmat ko‘rsatib, uni o‘z saroyiga va xizmatiga taklif etadi.",
+   "13. Eron hukmdori Xusrav Parvez Shiringa oshiq bo‘lib, Armaniyaga elchi yuboradi.",
+   "14. Mihinbonu Xusravning tahdidli va takabburona xatiga qat’iy rad javobini beradi.",
+   "15. Xusrav Parvez Armaniyaga katta qo‘shin tortib kelib, qal’ani qamal qiladi.",
+   "16. Farhod Xusrav bilan so‘zda va mardlikda bellashib, uni butunlay mot qiladi.",
+   "17. Xusrav Parvez va Buzurg Ummid hiyla ishlatib, Farhodni asirga oladilar.",
+   "18. Xusrav jo‘natgan aldamchi kampir Farhodga Shirin o‘ldi degan soxta xabarni yetkazadi.",
+   "19. Farhod qayg‘u va hasratdan fojiali ravishda jon beradi.",
+   "20. Shirin Farhodning vafo yo‘lidagi o‘limini eshitib, uning ortidan halok bo‘ladi.",
+   "21. Sheruya otasi Xusrav Parvezga qarshi isyon ko‘tarib, uni taxtdan ag‘daradi va o‘ldiradi.",
+   "22. Alisher Navoiy dostonni hijriy 889-yilda yakunlab, turkiy tilning qudratini madh etadi."
+  ],
+  "quotes": [
+   "Insonlarning birini biriga shaydo etgan ham shu – ishq bo‘ldi.",
+   "Taqdir Farhodining amri yo‘l ko‘rsatuvchi bo‘lib, osmonning Besutun tog‘i uning oldida hech gap emas.",
+   "Qalam shunday ko‘p yo‘l bosadigan bir chopqir otki, uning joyi azaldan falakning ustidadir.",
+   "Urug‘ni yaxshi yerga sepish kerak!",
+   "Mening so‘zlarimga turk joninigina emas, ko‘nglini ham bergan."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Farhod abjad hisobini kimga sovg‘a qildi?",
+   "options": [
+    "A) Otasiga",
+    "B) Ustoziga",
+    "C) Vazirga",
+    "D) Onasiga"
+   ],
+   "answer": "A) Otasiga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Farhod tosh yo‘nish hunarini kimdan o‘rgandi?",
+   "options": [
+    "A) Moniydan",
+    "B) Qorandan",
+    "C) Suqrotdan",
+    "D) Shopurdan"
+   ],
+   "answer": "B) Qorandan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xoqon o‘g‘lining dardi sabab kimni chaqirdi?",
+   "options": [
+    "A) Savdogarlarni",
+    "B) Tabiblarni",
+    "C) Shoirlarni",
+    "D) Askarlarni"
+   ],
+   "answer": "B) Tabiblarni"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Farhod g‘orda qaysi dahshatli mavjudotni yengdi?",
+   "options": [
+    "A) Ahraman devni",
+    "B) Bahaybat ajdarni",
+    "C) Yirtqich sherni",
+    "D) Qora qoplonni"
+   ],
+   "answer": "B) Bahaybat ajdarni"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Farhod egallagan hunarlarning to‘g‘ri ketma-ketligini aniqlang.",
+   "options": [
+    "A) Tosh yo‘nish, rasmsizlik, harb",
+    "B) Ilm, tosh yo‘nish, tasvir",
+    "C) Tasvir, dehqonchilik, savdo",
+    "D) Harb, dengizchilik, tikuvchilik"
+   ],
+   "answer": "B) Ilm, tosh yo‘nish, tasvir"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Xoqon nega o‘g‘lining shoh bo‘lishidan xavotirlandi?",
+   "options": [
+    "A) Farhod juda ko‘ngli yumshoq edi",
+    "B) Farhod harbni bilmas edi",
+    "C) Farhod mamlakatdan qochib ketdi",
+    "D) Farhod ilm olishni xohlamasdi"
+   ],
+   "answer": "A) Farhod juda ko‘ngli yumshoq edi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Farhod g‘ordagi xazinani nega otasiga topshirdi?",
+   "options": [
+    "A) O‘ziga mol-dunyo kerak emasdi",
+    "B) Otasi uni shunga majburladi",
+    "C) Xazina sehrli va xavfli edi",
+    "D) Qo‘shin xazinani tortib aldi"
+   ],
+   "answer": "A) O‘ziga mol-dunyo kerak emasdi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Farhodning barcha hunarlarni egallashi qanday fazilat?",
+   "options": [
+    "A) Mehnatsevarlik va komillikka intilish",
+    "B) Kibr va o‘zini ko‘rsatish",
+    "C) Otasining amridan qo‘rqish",
+    "D) Vaqtni bekorga o‘tkazish"
+   ],
+   "answer": "A) Mehnatsevarlik va komillikka intilish"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Farhodning bilimdon ustozini qanday tasvirlaydi?",
+   "options": [
+    "A) Olam ichida bir jahon kabi",
+    "B) Qattiq va bag‘ritosh odam",
+    "C) Faqat mol-dunyo ketidan quvgan",
+    "D) Zamonadan ortda qolgan kimsa"
+   ],
+   "answer": "A) Olam ichida bir jahon kabi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Navoiy doston debochasida so‘z sarmoyasini kimga tilaydi?",
+   "options": [
+    "A) So‘z va ishq ahliga",
+    "B) Bag‘ritosh podshohlarga",
+    "C) Xasis boylarga",
+    "D) Barcha dushmanlarga"
+   ],
+   "answer": "A) So‘z va ishq ahliga"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Farhod Suqrot hakim oromgohini qayerdan topdi?",
+   "options": [
+    "A) Chuqur daryo tubidan",
+    "B) Vahimali tog‘ g‘oridan",
+    "C) Yaman shahri markazidan",
+    "D) Chin mamlakat bog‘idan"
+   ],
+   "answer": "B) Vahimali tog‘ g‘oridan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Farhod kemada ketayotib qaysi dushmanlarga uchradi?",
+   "options": [
+    "A) Qaroqchilar to‘dasiga",
+    "B) Yunon askarlariga",
+    "C) Devlar qo‘shiniga",
+    "D) Yaman hukmdoriga"
+   ],
+   "answer": "A) Qaroqchilar to‘dasiga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shirin toshkesar yigitni qayerda ko‘rib qoldi?",
+   "options": [
+    "A) Tosh qazilayotgan joyda",
+    "B) Xoqon saroyining bazmida",
+    "C) Suqrotning tor g‘orida",
+    "D) Yaman dengizi bo‘yida"
+   ],
+   "answer": "A) Tosh qazilayotgan joyda"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Armaniya shohi va Shirinning xolasi kim edi?",
+   "options": [
+    "A) Mihinbonu",
+    "B) Dilorom",
+    "C) Zuhra",
+    "D) Dilbar"
+   ],
+   "answer": "A) Mihinbonu"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Farhodning Yunonga safaridagi hodisalarni tartiblang.",
+   "options": [
+    "A) Suqrot, ajdar, qaroqchilar, Yaman",
+    "B) Ajdar, Suqrot, qaroqchilar, Yaman",
+    "C) Qaroqchilar, ajdar, Suqrot, Yaman",
+    "D) Yaman, qaroqchilar, Ajdar, Suqrot"
+   ],
+   "answer": "B) Ajdar, Suqrot, qaroqchilar, Yaman"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shirin nega ariq qazish ishini Farhodga topshirdi?",
+   "options": [
+    "A) Farhodning hunariga tan bergani uchun",
+    "B) Farhodni charchatib o‘ldirish uchun",
+    "C) Otasining qat’iy amri bo‘lgani uchun",
+    "D) Boshqa usta topilmagani uchun"
+   ],
+   "answer": "A) Farhodning hunariga tan bergani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Farhod qaroqchilar kemasini qanday qilib mag‘lub etdi?",
+   "options": [
+    "A) Neftli idishlarga o‘q uzib",
+    "B) Dengizga sakrab suzib borib",
+    "C) Kemani qilich bilan bo‘lib",
+    "D) Suv parilaridan yordam so‘rab"
+   ],
+   "answer": "A) Neftli idishlarga o‘q uzib"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Farhodning Shirin uchun ariq qazishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Sadoqat va mehnatchilikni",
+    "B) Shohlikka erishish istagini",
+    "C) Mol-dunyoga bo‘lgan o‘chlikni",
+    "D) O‘z kuchini ko‘z-ko‘z qilishni"
+   ],
+   "answer": "A) Sadoqat va mehnatchilikni"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Mihinbonuning Farhodga ko‘rsatgan iltifoti qanday baholanadi?",
+   "options": [
+    "A) Mehmonnavozlik va mehnatsatashlik",
+    "B) Qo‘rqoqlik va ojizlik",
+    "C) Farhodni aldash hiylasi",
+    "D) Beparchalik va loqaydlik"
+   ],
+   "answer": "A) Mehmonnavozlik va mehnatsatashlik"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Shirinning ot ustida kelishini nimaga o‘xshatadi?",
+   "options": [
+    "A) Ko‘kda porlagan oftobga",
+    "B) Shiddatli va qorong‘i bo‘ronga",
+    "C) Tog‘dan tushayotgan selga",
+    "D) Uchayotgan qora qushga"
+   ],
+   "answer": "A) Ko‘kda porlagan oftobga"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xusrav Parvezning taxtgohi qaysi shaharda edi?",
+   "options": [
+    "A) Madoyin shahri",
+    "B) Shirmon shahri",
+    "C) Ray shahri",
+    "D) Ganja shahri"
+   ],
+   "answer": "A) Madoyin shahri"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xusrav kim bilan Farhodga qarshi hiyla rejalashtirdi?",
+   "options": [
+    "A) Buzurg Ummid bilan",
+    "B) Shopur bilan",
+    "C) Bahrom bilan",
+    "D) Mulkoro bilan"
+   ],
+   "answer": "A) Buzurg Ummid bilan"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xusrav Parvezni kim taxtdan ag‘darib qamadi?",
+   "options": [
+    "A) O‘z o‘g‘li Sheruya",
+    "B) Bahrom va Mulkoro",
+    "C) Armaniya qo‘shini",
+    "D) Farhodning otasi"
+   ],
+   "answer": "A) O‘z o‘g‘li Sheruya"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Navoiy dostonni qaysi hijriy yilda tugatganini aytadi?",
+   "options": [
+    "A) 889-yilda",
+    "B) 800-yilda",
+    "C) 900-yilda",
+    "D) 750-yilda"
+   ],
+   "answer": "A) 889-yilda"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dostondagi so‘nggi voqealarning to‘g‘ri ketma-ketligini ko‘rsating.",
+   "options": [
+    "A) Farhod fojiasi, Sheruya isyoni, xotima",
+    "B) Sheruya isyoni, Farhod fojiasi, xotima",
+    "C) Xotima, Farhod fojiasi, Sheruya isyoni",
+    "D) Farhod fojiasi, xotima, Sheruya isyoni"
+   ],
+   "answer": "A) Farhod fojiasi, Sheruya isyoni, xotima"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Xusrav va Shirin munosabatlaridagi voqealar tartibini toping.",
+   "options": [
+    "A) Qamal, elchi yuborish, Parvez halokati",
+    "B) Elchi yuborish, qamal, Parvez halokati",
+    "C) Parvez halokati, qamal, elchi yuborish",
+    "D) Qamal, Parvez halokati, elchi yuborish"
+   ],
+   "answer": "B) Elchi yuborish, qamal, Parvez halokati"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shirin nega Xusrav Parvezning taklifini qat’iyan rad etdi?",
+   "options": [
+    "A) Farhodga bo‘lgan vafo va sevgisi uchun",
+    "B) Xusravning boyligi kam bo‘lgani uchun",
+    "C) Mihinbonu unga ruxsat bermagani uchun",
+    "D) Shohlik ishlaridan qo‘rqqani uchun"
+   ],
+   "answer": "A) Farhodga bo‘lgan vafo va sevgisi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sheruya nega o‘z otasi Xusravni o‘ldirishga qaror qildi?",
+   "options": [
+    "A) Taxt va Shirin visoliga erishish uchun",
+    "B) Farhodning qasosini olish uchun",
+    "C) Mihinbonuning amrini bajarish uchun",
+    "D) Xo‘tan o‘lkasini saqlab qolish uchun"
+   ],
+   "answer": "A) Taxt va Shirin visoliga erishish uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Farhodning so‘nggi vasiyatida Bahromga aytgan so‘zlari qanday xislat?",
+   "options": [
+    "A) Mardlik va do‘stlikka sadoqat",
+    "B) Xiyonat va qo‘rqoqlik",
+    "C) Hasad va xasislik",
+    "D) Loqaydlik va umidsizlik"
+   ],
+   "answer": "A) Mardlik va do‘stlikka sadoqat"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Navoiy o‘zining turkiy tildagi ijodiy qudratini qanday ta’riflaydi?",
+   "options": [
+    "A) Turk ulusini qalam bilan egalladim",
+    "B) Qo‘shin tortib shaharlarni oldim",
+    "C) Faqat bir shaharda tanildim",
+    "D) O‘z tilimda yozishdan uyaldim"
+   ],
+   "answer": "A) Turk ulusini qalam bilan egalladim"
+  }
+ ]
+}

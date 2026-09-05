@@ -1,0 +1,478 @@
+{
+ "title": "Zukkolar va landavurlar",
+ "author": "Malkolm Gladuell",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "muvaffaqiyat sirlari",
+   "mehnatsevarlik",
+   "imkoniyatlar",
+   "ijtimoiy muhit",
+   "madaniy meros"
+  ],
+  "theme": "Muvaffaqiyat — faqat insonning tug‘ma iste'dodi yoki shaxsiy harakati mahsuli emas, balki unga berilgan imkoniyatlar, u o‘sgan jamiyat, madaniy meros va tinimsiz mehnatning uyg‘unlashuvi natijasidir.",
+  "summary": "Kitob insonlarning favqulodda muvaffaqiyatga erishish sabablarini tahlil qiladi. Dastlab Pensilvaniyadagi Rozeto shaharchasi misolida inson salomatligi va uzoq umr ko‘rishi faqat parhez yoki genlarga emas, balki ahil va barqaror ijtimoiy muhitga bog‘liq ekani ko‘rsatiladi. Keyin Kanada xokkeychilarining tug‘ilgan oylari tahlil qilinib, muvaffaqiyatda tizimli imkoniyatlar va yosh chegarasining o‘rni yoritiladi. Dasturchi Bill Joy, Microsoft asoschisi Bill Geyts va boshqalarning muvaffaqiyatida 10 000 soatlik amaliyot hamda zarur davrda to‘g‘ri joyda bo‘lish omili ochib beriladi. Lyuis Terman o‘tkazgan tadqiqotlar va Kris Langan hamda Robert Oppengeymer taqdiri orqali faqat yuqori IQ muvaffaqiyatni kafolatlamasligi, balki amaliy intellekt va muloqot ko‘nikmalari zarurligi isbotlanadi. Nyu-York advokatlari va Borgenixtlar oilasi misolida mehnatsevarlik hamda noqulay sharoitlarni imkoniyatga aylantirish san'ati ko‘rsatiladi. Xarlan shahridagi oilaviy nizolar orqali nomus madaniyati avloddan-avlodga o‘tishi tahlil qilinadi. Aviahalokatlar sabablari o‘rganilib, ierarxiya va muloqotdagi xatolar fojialarga olib kelishi tushuntiriladi. Osiyolik dehqonlarning sholi yetishtirishdagi mashaqqatli mehnati va KIPP akademiyasi tajribasi orqali sabr va tirishqoqlik matematikada yuqori natijalarga erishishga xizmat qilishi ta'kidlanadi. Oxirida muallif o‘z oilasi va Yamayka tarixini misol qilib, har bir insonning yutug‘i ortida o‘tmish va jamiyat bergan imtiyozlar turishini xulosa qiladi.",
+  "characters": "Styuart Vulf — Rozeto shaharchasi aholisining salomatlik sirini o‘rgangan shifokor; Jon Brun — Vulfga yordam bergan sotsiolog; Rojer Barnsli — Kanada xokkeychilarining tug‘ilgan oyi bo‘yicha qonuniyatni kashf etgan ruhshunos; Bill Joy — kompyuter dasturlashda minglab soat amaliyot orttirgan daho; Lyuis Terman — vunderkindlarni o‘rgangan olim; Kris Langan — dunyodagi eng yuqori IQga ega, ammo amaliy intellekti yetishmagan inson; Robert Oppengeymer — Manxetten loyihasi rahbari, muloqot va amaliy aqlga ega fizik; Deyzi Ford — muallifning momosi, oila muvaffaqiyatiga poydevor qo‘ygan ayol.",
+  "conclusion": "Ushbu kitob kitobxonga muvaffaqiyatga erishish uchun faqat iste'dod yetarli emasligini, balki tinimsiz mehnat va imkoniyatlardan to‘g‘ri foydalanish lozimligini o‘rgatadi. Bola atrofdagi ijtimoiy muhit, madaniy meros va o‘zaro yordamning qadrini anglaydi. Muvaffaqiyatli insonlarga kibr bilan emas, kamtarlik va minnatdorlik bilan qarashni, qiyinchiliklar qarshisida sabr va matonat ko‘rsatishni tushunib yetadi.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, ilhombaxsh",
+  "for_whom": "Muvaffaqiyat sirlari, psixologiya, jamiyat va inson imkoniyatlariga qiziqadigan, mehnatsevarlik va to‘g‘ri qarorlar qabul qilishni xohlaydigan o‘smirlar uchun.",
+  "events": [
+   "1. Pensilvaniyadagi Rozeto shaharchasi aholisida infarkt va yurak kasalliklari deyarli uchramasligi aniqlandi.",
+   "2. Shifokor Styuart Vulf va sotsiolog Jon Brun Rozeto aholisining uzoq umr ko‘rishi sababi ahil va barqaror jamiyat ekanini isbotladi.",
+   "3. Kanada xokkey ligasida eng muvaffaqiyatli o‘yinchilar asosan yilning birinchi choragida tug‘ilgani ma'lum bo‘ldi.",
+   "4. Ruhshunos Rojer Barnsli xokkeydagi yosh chegarasi nisbiy ustunlik yaratishini aniqladi.",
+   "5. Bill Joy Michigan universitetida kompyuter tizimidagi xatodan foydalanib minglab soat dasturlash amaliyotiga ega bo‘ldi.",
+   "6. Forbes milliarderlar ro‘yxati tahlil qilinib, boylik to‘plashda to‘g‘ri davrda tug‘ilish omili ko‘rsatildi.",
+   "7. Lyuis Terman yuqori IQga ega 'Termitlar' deb nomlangan vunderkindlar guruhini kuzatishni boshladi.",
+   "8. Liam Xadson tadqiqotida Pul va Florens misolida faqat IQ emas, balki ijodiy fikrlash muhimligi ko‘rsatildi.",
+   "9. Robert Oppengeymer muammolarga duch kelganda ham muloqot ko‘nikmalari tufayli Manxetten loyihasi rahbari bo‘ldi.",
+   "10. Kris Langan favqulodda yuqori IQga ega bo‘lsa-da, amaliy ko‘nikmalar yo‘qligi sababli akademik muvaffaqiyatga erisholmadi.",
+   "11. Nyu-Yorkdagi yahudiy advokatlar va Jo Flom qiyin sohalarni egallab, vaqti kelganda yetakchi advokatlarga aylanishdi.",
+   "12. Borgenixtlar oilasi Nyu-Yorkka ko‘chib kelib, kiyim tikish industriyasida halol va mustaqil mehnat qildi.",
+   "13. Xarlan shaharchasidagi Hovardlar va Ternerlar o‘rtasida nomus madaniyati sababli qonli adovat kelib chiqdi.",
+   "14. Korean Air va Avianca samolyotlari halokati tahlil qilinib, charchoq va ob-havo fojiaga sabab bo‘lgani ko‘rsatildi.",
+   "15. Aviatsiyada ierarxiya va muloqotdagi ortiqcha xushmuomalalik xavfni ochiq aytishga xalaqit berishi aniqlandi.",
+   "16. Xitoylik dehqonlar sholi yetishtirishda yiliga mashaqqatli mehnat qilishganini ko‘rsatildi.",
+   "17. Sholi yetishtirishdagi mehnat va intizom osiyoliklarning matematikani yaxshi o‘zlashtirishiga zamin yaratgani tushuntirildi.",
+   "18. KIPP akademiyasida kam ta'minlangan oila bolalari uzoq vaqt va intizom bilan o‘qib yuqori natija ko‘rsatdi.",
+   "19. Marita ismli o‘quvchi qiz har kuni ertalab barvaqt turib, o‘z kelajagi uchun mashaqqatli dars jarayonini tanladi.",
+   "20. Muallif Malcolm Gladwell o‘zining Yamaykadagi ajdodlari va momosi Deyzi Fordning tarixini so‘zlab berdi.",
+   "21. Gladwell muvaffaqiyat faqat shaxsiy xizmat emas, balki jamiyat, tarix va berilgan imkoniyatlar mahsuli degan xulosaga keldi."
+  ],
+  "quotes": [
+   "Rozeto aholisi uchun ularning mo‘jaz, ammo hamma narsa yetarli bo‘lgan shaharchasi butun dunyoga teng edi.",
+   "Biz yashayotgan dunyoning qadriyatlari va atrofimizdagi odamlar bizning shaxsimizda chuqur iz qoldirishini qabul qilishimiz kerak.",
+   "Jo‘shqinlik, iste'dod va tinimsiz mehnat – yuksak yutuqlarning tarkibiy qismlaridir.",
+   "Bu kitob yuksak daraxt haqida emas. Bu u o‘sgan o‘rmon haqidagi kitobdir.",
+   "Madaniy meros inson xulq-atvori shakllanishida va atrofni qabul qilishida shu qadar muhim o‘ringa egaki, biz atrofimizdagi dunyoni usiz tasavvur qila olmaymiz.",
+   "Chunki muvaffaqiyatni haqqoniy tushunish boshqa narsalar bilan birga kamtarlikni ham taqozo etadi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Rozeto shaharchasi aholisi asosan qaysi davlatdan ko‘chib kelgan edi?",
+   "options": [
+    "A) Italiyadan",
+    "B) Germaniyadan",
+    "C) Angliyadan",
+    "D) Fransiyadan"
+   ],
+   "answer": "A) Italiyadan"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shifokor Styuart Vulf Rozetoda qaysi kasallik deyarli uchramasligini payqadi?",
+   "options": [
+    "A) Yurak kasalligi",
+    "B) Ko‘z kasalligi",
+    "C) Jigar kasalligi",
+    "D) O‘pka kasalligi"
+   ],
+   "answer": "A) Yurak kasalligi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kanada xokkey ligasida eng ko‘p o‘yinchilar qaysi oylarda tug‘ilgan?",
+   "options": [
+    "A) Yilning birinchi choragida",
+    "B) Yilning oxirgi oylarida",
+    "C) Yozning issiq kunlarida",
+    "D) Faqat kuz oylarida"
+   ],
+   "answer": "A) Yilning birinchi choragida"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bill Joy Michigan universitetida qaysi soha bilan mukkasidan ketgan edi?",
+   "options": [
+    "A) Kompyuterda dasturlash bilan",
+    "B) Rasmlar chizish bilan",
+    "C) She'rlar yozish bilan",
+    "D) Sport bilan shug‘ullanishda"
+   ],
+   "answer": "A) Kompyuterda dasturlash bilan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Rozetodagi uzoq umr ko‘rish sabablarini to‘g‘ri tartibda birlashtiring.",
+   "options": [
+    "A) Ahillik va barqaror jamiyat",
+    "B) Maxsus parhez va sport",
+    "C) Tog‘ havosi va dori",
+    "D) Faqat genetik ustunlik"
+   ],
+   "answer": "A) Ahillik va barqaror jamiyat"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega xokkeyda yil boshida tug‘ilgan bolalar ko‘proq muvaffaqiyatga erishadi?",
+   "options": [
+    "A) Jismonan ulg‘aygan va ustunroq bo‘ladi",
+    "B) Ular ko‘proq mashq qiladi",
+    "C) Murabbiylar ularni qarindoshi deb biladi",
+    "D) Ular boyroq oiladan chiqadi"
+   ],
+   "answer": "A) Jismonan ulg‘aygan va ustunroq bo‘ladi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Rozeto aholisining salomatligi yaxshiligiga asosiy sabab nima edi?",
+   "options": [
+    "A) Jamoaviy mehr va ahil muhit",
+    "B) Qattiq sport mashg‘ulotlari",
+    "C) Kam kaloriya iste'mol qilish",
+    "D) Yevropadan keltirilgan dorilar"
+   ],
+   "answer": "A) Jamoaviy mehr va ahil muhit"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Xokkeydagi yosh chegara qoidasini adolatli deb baholash mumkinmi?",
+   "options": [
+    "A) Yo‘q, teng imkoniyat bermaydi",
+    "B) Ha, hamma uchun bir xil",
+    "C) Ha, chunki bolalar teng",
+    "D) Yo‘q, chunki muz yetmaydi"
+   ],
+   "answer": "A) Yo‘q, teng imkoniyat bermaydi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif 'Bu yuksak daraxt emas, o‘rmon haqida' deya nimani ta'kidlaydi?",
+   "options": [
+    "A) Atrofdagi muhitning muhimligini",
+    "B) Tabiatni muhofaza qilishni",
+    "C) Daraxtlar turini o‘rganishni",
+    "D) O‘rmonda yashash afzalligini"
+   ],
+   "answer": "A) Atrofdagi muhitning muhimligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Rozetodagi oilalar birdamligini tasvirlashda qanday tuyg‘uni uyg‘otadi?",
+   "options": [
+    "A) Insoniylik va iliqlik tuyg‘usini",
+    "B) Qo‘rqinch va xavf hissiyotini",
+    "C) Hayronlik va afsusni",
+    "D) Begonalik va sovuqlikni"
+   ],
+   "answer": "A) Insoniylik va iliqlik tuyg‘usini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lyuis Terman IQ darajasi yuqori bolalarni qanday nom bilan atadi?",
+   "options": [
+    "A) Termitlar",
+    "B) Zukkolar",
+    "C) Daholar",
+    "D) Chempionlar"
+   ],
+   "answer": "A) Termitlar"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Robert Oppengeymer qaysi yirik ilmiy loyihaga rahbarlik qilgan edi?",
+   "options": [
+    "A) Manxetten loyihasiga",
+    "B) Kosmos loyihasiga",
+    "C) Okean tadqiqotiga",
+    "D) Kompyuter yaratishga"
+   ],
+   "answer": "A) Manxetten loyihasiga"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Borgenixtlar oilasi Nyu-Yorkda qaysi sohada o‘z biznesini boshladi?",
+   "options": [
+    "A) Kiyim tikuvchilik sohasida",
+    "B) Oziq-ovqat savdosida",
+    "C) Qurilish ishlarida",
+    "D) Transport xizmatida"
+   ],
+   "answer": "A) Kiyim tikuvchilik sohasida"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xarlan shaharchasidagi oilalar o‘rtasida nima sababli nizo kelib chiqqan?",
+   "options": [
+    "A) Nomus va oilaviy adovat",
+    "B) Yer sotib olish masalasi",
+    "C) Suv taqsimoti bo‘yicha",
+    "D) Soliq to‘lash kelishmovchiligi"
+   ],
+   "answer": "A) Nomus va oilaviy adovat"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kris Langan va Oppengeymer hayotidagi farqlarni ajratib ko‘rsating.",
+   "options": [
+    "A) Oppengeymer amaliy muloqotni bilardi",
+    "B) Langan ko‘proq kitob yozgan",
+    "C) Ikkalasi ham bankir bo‘lgan",
+    "D) Oppengeymer diplomsiz qolgan edi"
+   ],
+   "answer": "A) Oppengeymer amaliy muloqotni bilardi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "1930-yillarda tug‘ilgan avlodning muvaffaqiyat omillarini guruhlang.",
+   "options": [
+    "A) Kichik sinflar va e'tibor",
+    "B) Qattiq qashshoqlik va urush",
+    "C) Maktablar yo‘qligi va imkoniyat",
+    "D) Ish o‘rinlari yetishmasligi"
+   ],
+   "answer": "A) Kichik sinflar va e'tibor"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega faqat yuqori IQ ko‘rsatkichi hayotda katta muvaffaqiyatni kafolatlamaydi?",
+   "options": [
+    "A) Amaliy aql va muloqot kerak",
+    "B) IQ testi noto‘g‘ri tuziladi",
+    "C) Odamlarga bilim kerak emas",
+    "D) Aqlli odamlar kam ishlaydi"
+   ],
+   "answer": "A) Amaliy aql va muloqot kerak"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Yahudiy advokatlar nega korporativ huquq sohasida yetakchiga aylanishdi?",
+   "options": [
+    "A) Boshqalar rad etgan ishni qilishdi",
+    "B) Ular katta maosh so‘rashmadi",
+    "C) Ular chet elda o‘qishgan edi",
+    "D) Ularga doim yordam berishgan"
+   ],
+   "answer": "A) Boshqalar rad etgan ishni qilishdi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Oppengeymerning xatosiga qaramay unga imkon berilishini qanday baholash mumkin?",
+   "options": [
+    "A) Uning iqtidoriga imkon berildi",
+    "B) U mutlaqo adolatsiz qaror edi",
+    "C) Rahbarlar qo‘rqib qaror qildi",
+    "D) Bu tasodifiy xatolik edi"
+   ],
+   "answer": "A) Uning iqtidoriga imkon berildi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Borgenixtlar oilasining halol mehnati va tadbirkorligini qanday baholaysiz?",
+   "options": [
+    "A) Sabr va mehnat bilan muvaffaqiyat",
+    "B) Tavakkalchilik va omadsiz urinish",
+    "C) Faqat oson yo‘l astaridilar",
+    "D) Boshqalarga qaram bo‘lib yashash"
+   ],
+   "answer": "A) Sabr va mehnat bilan muvaffaqiyat"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Korean Air samolyoti halokatiga sabab bo‘lgan omillardan biri nima?",
+   "options": [
+    "A) Uchuvchilarning o‘ta charchaganligi",
+    "B) Samolyot yoqilg‘isi o‘g‘irlanganligi",
+    "C) Yo‘lovchilarning tartibsizlik qilgani",
+    "D) Samolyot dvigateli yo‘qolgani"
+   ],
+   "answer": "A) Uchuvchilarning o‘ta charchaganligi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Osiyolik dehqonlar sholi yetishtirishda qanday mehnat qilishgan?",
+   "options": [
+    "A) Yil bo‘yi mashaqqatli mehnat",
+    "B) Yengil va kam vaqtli mehnat",
+    "C) Faqat dam olish kunlari",
+    "D) Texnika bilan oson mehnat"
+   ],
+   "answer": "A) Yil bo‘yi mashaqqatli mehnat"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "KIPP akademiyasining o‘quvchilaridan biri bo‘lgan Marita qanday qiz edi?",
+   "options": [
+    "A) Ertalab barvaqt turadigan o‘quvchi",
+    "B) Darsga qatnashmaydigan dangasa bola",
+    "C) Faqat sport bilan shug‘ullanuvchi",
+    "D) Maktabdan qochib yuradigan qiz"
+   ],
+   "answer": "A) Ertalab barvaqt turadigan o‘quvchi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif Malcolm Gladwellning momosi Deyzi Ford qayerda tug‘ilib o‘sgan?",
+   "options": [
+    "A) Yamayka orolida",
+    "B) London shahrida",
+    "C) Parij markazida",
+    "D) Nyu-York shahrida"
+   ],
+   "answer": "A) Yamayka orolida"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Aviahalokatlar sabablarini to‘g‘ri guruhga ajrating.",
+   "options": [
+    "A) Ob-havo, charchoq, muloqot xatosi",
+    "B) Dvigatel yo‘qligi va yo‘lovchilar",
+    "C) Qimmat chiptalar va joylar",
+    "D) Parvoz qilishni xohlamaslik"
+   ],
+   "answer": "A) Ob-havo, charchoq, muloqot xatosi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega sholi yetishtirish madaniyati matematikani yaxshi o‘zlashtirishga yordam beradi?",
+   "options": [
+    "A) Sabr va tirishqoqlikni shakllantiradi",
+    "B) Sholi yerda raqamlarni ko‘rsatadi",
+    "C) Dehqonlar faqat hisoblaydi",
+    "D) Suv quyish matematik amaldir"
+   ],
+   "answer": "A) Sabr va tirishqoqlikni shakllantiradi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Aviatsiyada uchuvchilar o‘rtasidagi ortiqcha ierarxiya va xushmuomalalik nimaga olib keladi?",
+   "options": [
+    "A) Xavf haqida ochiq aytolmaslikka",
+    "B) Parvozning tezroq tugashiga",
+    "C) Ish haqining oshishiga",
+    "D) Yo‘lovchilar xursandchiligiga"
+   ],
+   "answer": "A) Xavf haqida ochiq aytolmaslikka"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Maritaning kelajak uchun ko‘p vaqtini darsga ajratishini qanday baholaysiz?",
+   "options": [
+    "A) Maqsad sari matonatli intilish",
+    "B) Bekorga vaqt sarflash",
+    "C) Majburiyatdan qutilish harakati",
+    "D) Ota-onasiga yoqish istagi"
+   ],
+   "answer": "A) Maqsad sari matonatli intilish"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif 'Muvaffaqiyatni haqqoniy tushunish kamtarlikni taqozo etadi' deganda nimani nazarda tutadi?",
+   "options": [
+    "A) Yutuq ortida omad va muhit borligini",
+    "B) Kibrli bo‘lish kerakligini",
+    "C) Boshqalarga yordam bermaslikni",
+    "D) O‘z kuchiga ishonmaslikni"
+   ],
+   "answer": "A) Yutuq ortida omad va muhit borligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif otasining ishlayotgan jarayonini tasvirlash orqali qanday saboq beradi?",
+   "options": [
+    "A) Mehnatdan zavq va baxt olishni",
+    "B) Ko‘p pul topish muhimligini",
+    "C) Matematik bo‘lish shartligini",
+    "D) Doim uyda o‘tirishni"
+   ],
+   "answer": "A) Mehnatdan zavq va baxt olishni"
+  }
+ ]
+}

@@ -1,0 +1,337 @@
+{
+ "title": "Tohir va Zuhra",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "ertak",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "vafodorlik",
+   "sevgi",
+   "adolat",
+   "sabot",
+   "oqibat"
+  ],
+  "theme": "Asarning bosh g‘oyasi — chin muhabbat, va'daga vafo va sadoqat har qanday zulm hamda to‘siqlardan ustun turishini, shafqatsizlik hamda nafs esa fojiaviy oqibatlarga olib kelishini ko‘rsatishdir.",
+  "summary": "Bir mamlakatning befarzand podshohi va vaziri g‘am-hasratdan mol-dunyosini tashlab shahardan chiqib ketishadi. Yo‘lda bir so‘lim bog‘ga duch kelib, u yerda donishmand chol bilan uchrashishadi. Chol ularga ikkita qizil olma berib, xotinlari bilan baham ko‘rishni hamda tug‘ilajak farzandlarini bir-biridan ajratmay quda bo‘lishni shart qiladi. Vazirning xotini o‘g‘il (Tohir), podshohning xotini esa qiz (Zuhra) tug‘adi. Podshoh qiz ko‘rganidan g‘azablanib, uni o‘ldirishga buyruq beradi, lekin qizcha yashirincha saqlab qolinadi. Vazir esa yo‘lda otidan yiqilib vafot etadi. Yillar o‘tib Zuhra tirikligi ma'lum bo‘ladi. Tohir bir kampirdan o‘ziga unashtirilgan qiz Zuhra ekanini bilib oladi. Maktabda Tohir va Zuhra bir-biriga ko‘ngil qo‘yadi. Podshoh bundan xabar topib, Tohirni sandiqqa solib daryoga oqizdiradi. Zuhra ustalarga tilla berib, sandiqni suv o‘tmaydigan qilib yasattiradi. Sandiq Xorazmga oqib boradi. U yerda Xorazm shohining kichik qizi Tohirni olib, unga uylanmoqchi bo‘ladi, lekin Tohir Zuhraga bo‘lgan sadoqati sababli kelinga bir og‘iz ham gapirmaydi. Zuhra karvonboshi orqali Tohirni axtartiradi. Karvonboshi Tohirni topgach, Tohir Xorazm malikasi bilan xayrlashib, xatarli yo‘llardan va qaroqchilar zindonidan o‘tib, o‘z yurtiga qaytadi. U Zuhra bilan bog‘da yashirincha uchrashganda, Qorabotirning singlisi ko‘rib qolib podshohga xabar beradi. Podshoh g‘azablanib, Tohirni ikki nimta qilib o‘ldirishga buyuradi. Tohir fojiaviy tarzda qatl etiladi. Zuhra motam tutib, qirq kundan so‘ng qabristonga boradi, marvarid sochib kanizaklarni chalg‘itadi va Tohirning qabri tepasida peshanasiga oshpichoq urib, «Ochil, go‘r!» deydi. Qabr ochilib, Zuhra Tohirning bag‘riga otiladi va ikkisi birga ko‘miladi. Qorabotir ham hammasini ko‘rib o‘zini o‘ldiradi va ularning o‘rtasiga ko‘miladi. Tohirning qabridan qizil gul, Zuhraning qabridan oq gul, Qorabotirnikidan esa qora tikan o‘sib chiqadi.",
+  "characters": "Tohir — avvalgi vazirning o‘g‘li, mard, va'dasiga vafodor va munosib oshiqlik namunasini ko‘rsatgan yigit. Zuhra — podshohning qizi, Tohirga sadoqatli, o‘z sevgisi yo‘lida jasorat ko mehnatchilik ko‘rsatgan malika. Podshoh — Zuhraning otasi, bag‘ritosh, o‘z so‘zidan qaytmaydigan zolim hukmdor. Vazir — Tohirning otasi, podshohga sodiq do‘st. Chol — bog‘da donishmandlik qilgan, olmalarni ulashgan sirli shaxs. Qorabotir — Zuhraga zorlik qilgan, ichiqora podshohvachcha. Karvonboshi — Zuhraning topshirig‘ini bajarib, Tohirni topgan va unga yordam bergan sayyoh.",
+  "conclusion": "Asar o‘quvchini va'daga vafo qilishga, sadoqat va halollikni qadrlashga o‘rgatadi. Taqdir sinovlarida sabr-toqatli bo‘lish hamda zulmga bo‘y egmaslik g‘oyalarini ilgari suradi. Ota-onalar bu ertak orqali bolada to‘g‘ri so‘zlik va chin insoniylik fazilatlarini shakllantirishlari mumkin.",
+  "difficulty": "o‘rta",
+  "mood": "hazin, ta'sirli, fojiaviy",
+  "for_whom": "Sadoqat va muhabbat haqida ta'sirli afsonalarni o‘qishni xohlaydigan, qahramonlar taqdiriga hamdard bo‘la oladigan kitobxonlarga.",
+  "events": [
+   "1. Befarzand podshoh va vazir g‘am chekib, mol-dunyosini tashlab shahardan chiqib ketishadi.",
+   "2. Ularning yo‘lida bir so‘lim bog‘ uchraydi va bog‘da bir chol paydo bo‘ladi.",
+   "3. Chol podshoh bilan vazirga ikkita qizil olma berib, tug‘iladigan bolalarni quda qilish shartini qo‘yadi.",
+   "4. Vazir o‘g‘il ko‘rib suyunib kelayotganda otidan yiqilib vafot etadi, podshoh esa qiz ko‘rganidan g‘azablanadi.",
+   "5. Podshoh qizini o‘ldirishni buyuradi, ammo qizcha yashirincha tirik saqlanadi.",
+   "6. Yillar o‘tib podshoh qizining tirikligini biladi va qirq kun to‘y beradi.",
+   "7. Tohir bir kampirning charxiga yong‘oq tegizib qo‘yadi va kampir undan onasidan unashtirilgan qiz haqida so‘rashni o‘rgatadi.",
+   "8. Tohir qo‘g‘irmoch bahonasida onasining hovuchini qisib, o‘ziga unashtirilgan qiz Zuhra ekanini bilib oladi.",
+   "9. Maktabda Tohir bilan Zuhra so‘zlashib darsni buzgani uchun ularning o‘rtasiga devor uriladi.",
+   "10. Podshoh Tohirni sandiqqa solib daryoga oqizishga buyuradi.",
+   "11. Zuhra ustalarga tilla berib, sandiqni suv o‘tmaydigan puxta qilib yasattiradi.",
+   "12. Tohir daryoda olti oy oqib Xorazmga borib qoladi va Xorazm shohining kichik qizi u bilan to‘y qiladi.",
+   "13. Tohir Zuhraga sadoqati sabab Xorazm malikasiga umuman gapirmay yuradi.",
+   "14. Zuhra karvonboshiga bir lagan tilla berib, Tohirni izlashga yuboradi.",
+   "15. Karvonboshi g‘azal aytib Tohirni topadi, Tohir Xorazm malikasi bilan xayrlashib o‘z yurtiga qaytadi.",
+   "16. Tohir va karvon xatarli yo‘ldan yurib qaroqchilar zindoniga tushadi va hammaktab o‘rtog‘i yordamida ozod bo‘ladi.",
+   "17. Zuhra bilan yashirincha uchrashgan Tohirni Qorabotirning singlisi ko‘rib qolib, podshohga xabar beradi.",
+   "18. Podshohning buyrug‘i bilan jallodlar Tohirni ikki nimta qilib o‘ldirishadi.",
+   "19. Zuhra qirq kun motam tutgach, qabristonga borib marvaridlar sochib kanizaklarni chalg‘itadi va Tohirning qabriga kirib ketadi.",
+   "20. Qorabotir ham o‘zini o‘ldirib ikkisining ortiga ko‘miladi; qabrlardan qizil gul, oq gul va qora tikan o‘sib chiqadi."
+  ],
+  "quotes": [
+   "Men olmani sizlarga shu shart bilan berdimki, qaysi biringizning xotiningiz o‘g‘il tug‘sa, otini Tohir qo‘ying, qaysi biringizning xotiningiz qiz tug‘sa, otini Zuhra qo‘ying.",
+   "Shu tillani olinglar, sandiq shunday puxta bo‘lsinki, ichiga suv o‘tmasin, toki bechora yetimcha borgan joyida kun ko‘rsin...",
+   "Tohirni bu yerga keltirgan narsa – uning Zuhraga bo‘lgan muhabbatidir.",
+   "Uzoqdagi Zuhraxon Sizdan ham sulukkina...",
+   "Tohirjonni o‘ldirgan Bu dunyoda yashamas.",
+   "Tohir ustidan qizil gul, Zuhra ustidan oq gul, ular o‘rtasida yotgan Qorabotir ustidan esa qora tikan o‘sib chiqibdi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bog‘dagi chol podshoh va vazirga nima berdi?",
+   "options": [
+    "A) Ikkita qizil olma",
+    "B) Bitta oltin kalit",
+    "C) Ikkita sehrli uzuk",
+    "D) Qimmatbaho sarpo"
+   ],
+   "answer": "A) Ikkita qizil olma"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tohir unashtirilgan qiz haqida qanday bilib oldi?",
+   "options": [
+    "A) Kampir va onasidan so‘rab oldi",
+    "B) Podshohning saroyiga borib bildi",
+    "C) Devordagi yozuvdan o‘qib oldi",
+    "D) Tushida ko‘rib bilib oldi"
+   ],
+   "answer": "A) Kampir va onasidan so‘rab oldi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Podshoh yangi tug‘ilgan qizini nega o‘ldirmoqchi bo‘ldi?",
+   "options": [
+    "A) O‘g‘il ko‘rmagani uchun g‘azablanib",
+    "B) Qiz kasal bo‘lib tug‘ilgani uchun",
+    "C) Cholning shartini bajarish uchun",
+    "D) Vazirning maslahatiga kirib"
+   ],
+   "answer": "A) O‘g‘il ko‘rmagani uchun g‘azablanib"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Zuhraning ustalarga tilla berib sandiq yasattirishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — Tohirning hayotini saqladi",
+    "B) Noto‘g‘ri — behuda pul sarfladi",
+    "C) Noto‘g‘ri — otasiga qarshi chiqdi",
+    "D) To‘g‘ri — ustalar kambag‘al edi"
+   ],
+   "answer": "A) To‘g‘ri — Tohirning hayotini saqladi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zuhra sandiq suv o‘tmaydigan bo‘lishi uchun kimga tilla berdi?",
+   "options": [
+    "A) Sandiq yasagan ustalarga",
+    "B) Podshohning vaziriga",
+    "C) Tohirning onasiga",
+    "D) Jallodlar boshlig‘iga"
+   ],
+   "answer": "A) Sandiq yasagan ustalarga"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tohir suvda oqib ketayotganda Zuhra bilan nima qildi?",
+   "options": [
+    "A) Bir-biriga g‘azal aytib xayrlashdi",
+    "B) Urishib, bir-biridan ranjishdi",
+    "C) Jimgina bir-biriga qarab turishdi",
+    "D) Qirg‘oqda birga qolishga intildi"
+   ],
+   "answer": "A) Bir-biriga g‘azal aytib xayrlashdi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tohir solingan sandiq oqib qaysi shaharga borib qoldi?",
+   "options": [
+    "A) Xorazmga",
+    "B) Buxoroga",
+    "C) Samarqandga",
+    "D) Toshkentga"
+   ],
+   "answer": "A) Xorazmga"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Opa-singil sandiq va uning ichidagisini qanday bo‘lishdi?",
+   "options": [
+    "A) Kattasi sandiqni, kichigi Tohirni oldi",
+    "B) Kichigi sandiqni, kattasi Tohirni oldi",
+    "C) Ikkalasi ham sandiqni rad etdi",
+    "D) Sandiqni otalariga topshirishdi"
+   ],
+   "answer": "A) Kattasi sandiqni, kichigi Tohirni oldi"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tohir Xorazm malikasiga nega umuman gapirmay yurdi?",
+   "options": [
+    "A) Zuhraga bergan va'dasiga sodiq edi",
+    "B) Gapirishni bilmas edi",
+    "C) Malikadan juda qo‘rqar edi",
+    "D) Shohdan g‘azablanib yurgan edi"
+   ],
+   "answer": "A) Zuhraga bergan va'dasiga sodiq edi"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karvonboshi Xorazmga nima maqsadda kelgan edi?",
+   "options": [
+    "A) Tohirni axtarib topish uchun",
+    "B) Savdo-sotiq qilish uchun",
+    "C) Xorazm shohiga xat keltirish uchun",
+    "D) Daryodan baliq tutish uchun"
+   ],
+   "answer": "A) Tohirni axtarib topish uchun"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Tohirning «Zuhraxon sizdan ham sulukkina» deyishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Zuhraning go‘zalligi va sadoqatiga ishonchini",
+    "B) Xadichani mazax qilayotganini",
+    "C) O‘z yurtiga qaytishni xohlamayotganini",
+    "D) Kiyimlarning chiroyliligini"
+   ],
+   "answer": "A) Zuhraning go‘zalligi va sadoqatiga ishonchini"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tohir va karvonboshi uch yo‘ldan qaysinisini tanlashdi?",
+   "options": [
+    "A) Borsa xatar yo‘lini",
+    "B) Borsa kelmas yo‘lini",
+    "C) Borsa kelar yo‘lini",
+    "D) Tinch tekis yo‘lni"
+   ],
+   "answer": "A) Borsa xatar yo‘lini"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Tohirni qaroqchilar zindonidan kim qutqarib qoldi?",
+   "options": [
+    "A) Hammaktab sinfdosh o‘rtog‘i",
+    "B) Karvonboshining o‘zi",
+    "C) Qaroqchilarning boshlig‘i",
+    "D) Zuhra yuborgan askarlar"
+   ],
+   "answer": "A) Hammaktab sinfdosh o‘rtog‘i"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Tohirning sayohatidagi voqealar ketma-ketligi qaysi javobda to‘g‘ri?",
+   "options": [
+    "A) Xorazm, karvonboshi, qaroqchilar zindoni",
+    "B) Qaroqchilar zindoni, Xorazm, karvonboshi",
+    "C) Karvonboshi, qaroqchilar zindoni, Xorazm",
+    "D) Xorazm, qaroqchilar zindoni, karvonboshi"
+   ],
+   "answer": "A) Xorazm, karvonboshi, qaroqchilar zindoni"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qorabotirga Tohirning qaytib kelganini kim xabar qildi?",
+   "options": [
+    "A) Qorabotirning o‘z singlisi",
+    "B) Saroydagi ayg‘oqchi sarboz",
+    "C) Zuhraning kanizaklari",
+    "D) Qabristonning qorovuli"
+   ],
+   "answer": "A) Qorabotirning o‘z singlisi"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Podshohning Tohirni ikki nimta qilish buyrug‘i qanday qaror?",
+   "options": [
+    "A) Shafqatsiz va adolatsiz qaror",
+    "B) Odilona va to‘g‘ri qaror",
+    "C) Yurt tinchligi uchun zarur",
+    "D) Tohirning aybiga mos qaror"
+   ],
+   "answer": "A) Shafqatsiz va adolatsiz qaror"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Zuhra qabristonga ketayotib kanizaklarni qanday chalg‘itdi?",
+   "options": [
+    "A) Yo‘lga marvaridlar sochib",
+    "B) Ularni uyga qaytarib",
+    "C) Ularga berkinmachoq o‘ynatib",
+    "D) Ot chopib o‘zini berkitib"
+   ],
+   "answer": "A) Yo‘lga marvaridlar sochib"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Zuhra qabr tepasiga borib nima uchun peshanasiga urdi?",
+   "options": [
+    "A) Qabr ochilib Tohirga yetishish uchun",
+    "B) Oshpichoqni sinab ko‘rish uchun",
+    "C) Kanizaklarni qo‘rqitish uchun",
+    "D) Bosh og‘rig‘ini qoldirish uchun"
+   ],
+   "answer": "A) Qabr ochilib Tohirga yetishish uchun"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Qabrlardan qizil va oq gul o‘sib chiqishi nimani anglatadi?",
+   "options": [
+    "A) Ularning pok va abadiy sevgisini",
+    "B) Yoz fasli kelganligini",
+    "C) Qabriston obod bo‘lganini",
+    "D) Qorabotirning g‘alabasini"
+   ],
+   "answer": "A) Ularning pok va abadiy sevgisini"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qorabotirning qabri ustidan nima o‘sib chiqdi?",
+   "options": [
+    "A) Qora tikan",
+    "B) Sariq gul",
+    "C) Ko‘k maysa",
+    "D) Mevali daraxt"
+   ],
+   "answer": "A) Qora tikan"
+  }
+ ]
+}

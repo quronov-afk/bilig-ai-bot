@@ -1,0 +1,480 @@
+{
+ "title": "Qutadg‘u bilig",
+ "author": "Yusuf Xos Hojib",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14-16 yosh",
+  "topics": [
+   "adolat",
+   "davlatni boshqarish",
+   "ilm va aql",
+   "odob-axloq",
+   "qanoat"
+  ],
+  "theme": "Asarning bosh g‘oyasi — adolatli va fozil davlatni barpo etish hamda insonni bilim, aql-idrok, halollik, qanoat va ma'naviy kamolot orqali ikki jahon saodatiga yetkazishdir.",
+  "summary": "Yusuf Xos Hojibning «Qutadg‘u bilig» («Saodatga elatuvchi bilim») dostoni didaktik yo‘nalishda yozilgan bo‘lib, ramziy-majoziy obrazlar muloqoti orqali davlatni idora etish va insoniy fazilatlarni yoritadi. Asarda to‘rt ramziy obraz markaziy o‘rin tutadi: Adolat va qonun timsoli — podsho Kuntug‘di elig, Davlat va baxt timsoli — vazir Oyto‘ldi, Aql va zakovat timsoli — vazirning o‘g‘li O‘gdulmish hamda Qanoat va ofiyat timsoli — vazirning qarindoshi O‘zg‘urmish zohid.\n\nVoqealar Kuntug‘di eligning mamlakatda adolat o‘rnatishi va unga munosib yordamchilar izlashi bilan boshlanadi. Bilimli va fozil yigit Oyto‘ldi poytaxtga kelib, Kusamish va eshik og‘asi Ersig yordamida elig xizmatiga kiradi. Oyto‘ldi o‘z aqli va tadbirkorligi bilan martabaga erishadi. Bir kuni elig oldida to‘p (koptok) ustiga o‘tirib va ko‘zlarini yumib, davlatning (boylikning) o‘tkinchiligi hamda bevafo, ko‘ri ojizligini ko‘rsatadi. U eligni hushyorlikka chorlaydi. Oyto‘ldi xastalikka chalinib vafot etadi, lekin o‘limidan oldin o‘g‘li O‘gdulmishni eligga topshiradi.\n\nO‘gdulmish otasining o‘rnini bosib, saroyda xizmat qila boshlaydi. U Kuntug‘di elig so‘ragan barcha savollarga: vazir, lashkarboshi, xodimlar va turli tabaqa vakillarining burchlari haqida mukammal javob beradi. So‘ng eligga tog‘da ibodat va qanoat bilan yashayotgan zohid O‘zg‘urmishni chorlashni maslahat beradi. Elig O‘zg‘urmishga bir necha bor maktub va elchi yuboradi. O‘zg‘urmish saroyga kelishdan bosh tortsa-da, oxiri elig bilan uchrashib, unga odillik, o‘limni unutmaslik va el-yurtga g‘amxo‘rlik qilish bo‘yicha o‘gitlar beradi.\n\nKeyinchalik O‘zg‘urmish xastalanib vafot etadi. U O‘gdulmish va eligga esdalik sifatidagi tayoq va rakvani meros qoldiradi. Kuntug‘di elig tayoqni olib, kamtarlik va o‘limni yodda tutish kerakligini anglaydi. O‘gdulmish elig yonida qolib, mamlakatni adolat, aql va ilm bilan boshqarishda davom etadi. Asar el-yurtning farovonligi va ezgu nom qoldirish chaqirig‘i bilan yakunlanadi.",
+  "characters": "Kuntug‘di elig — mamlakat hukumdori, adolat va qonun ramzi; Oyto‘ldi — vazir, davlat va qut-baxt ramzi; O‘gdulmish — Oyto‘ldining o‘g‘li, aql va zakovat ramzi; O‘zg‘urmish — vazirning qarindoshi, tog‘da yashovchi zohid, qanoat va qanoatli hayot ramzi; Ersig — saroy eshik og‘asi; Yusuf Xos Hojib — asar muallifi va mutafakkir.",
+  "conclusion": "Bu asar o‘quvchiga davlat va jamiyat taraqqiyotida adolat hamda aqlning o‘rnini ko‘rsatib beradi. Bola ilm va odobning inson ko‘rki ekanini, tilni asrash boshga esonlik keltirishini va dunyoda eng oliy qadriyat ezgu nom qoldirish ekanligini anglaydi. Ota-onaga bu kitob farzandida mas'uliyat, kamtarlik va oqillik kabi sharqona fazilatlarni shakllantirishda beqiyos manba bo‘lib xizmat qiladi.",
+  "difficulty": "qiyin",
+  "mood": "falsafiy, nasihatomuz, jiddiy",
+  "for_whom": "Tarix, falsafa va sharqona odob-axloqqa qiziqadigan, fikrlash doirasi keng hamda teran mulohaza yuritishni xohlaydigan o‘quvchilar uchun.",
+  "events": [
+   "Yusuf Xos Hojib «Qutadg‘u bilig» dostonini yozib, Tavg‘och Qora Bug‘ra xonga taqdim etdi va Xos Hojib unvonini oldi.",
+   "Muallif bahor fasli madhida tabiatning uygonishi hamda go‘zalligini yuksak mahorat bilan tasvirladi.",
+   "Insonning qadri va ulug‘ligi bilim hamda aql-idrokda ekanligi uqtirildi.",
+   "Tilni avaylash, noo‘rin so‘zlamaslik va so‘zni tejash bo‘yicha hikmatlar keltirildi.",
+   "Adolatli hukmdor Kuntug‘di elig mamlakatni boshqarish uchun oqil yordamchilar izladi.",
+   "Oyto‘ldi ismli bilag‘on yigit elig xizmatiga kirish maqsadida poytaxtga yo‘l oldi.",
+   "Oyto‘ldi Kusamish bilan do‘stlashib, Ersig Hojib yordamida elig qabuliga erishdi.",
+   "Kuntug‘di elig Oyto‘ldining aql-zakovatini ko‘rib, uni saroy xizmatiga qabul qildi.",
+   "Oyto‘ldi koptok ustiga o‘tirib va ko‘zini yumib, davlatning bevafo hamda ko‘r ekanligini eligga tushuntirdi.",
+   "Oyto‘ldi xastalanib, vafot etishidan oldin o‘g‘li O‘gdulmishni eligga topshirdi.",
+   "Elig Oyto‘ldining o‘g‘li O‘gdulmishni huzuriga chaqirtirib, saroy xizmatiga tayyorladi.",
+   "O‘gdulmish o‘zining teran bilimi bilan eligni qanoatlantirib, saroyda vazirlik darajasiga ko‘tarildi.",
+   "O‘gdulmish eligga vazir, lashkarboshi va boshqa xodimlarning burch va fazilatlari haqida so‘zlab berdi.",
+   "O‘gdulmish eligga zohid va qanoatli kishi O‘zg‘urmish haqida xabar berdi.",
+   "Elig O‘zg‘urmishni saroyga taklif qilib, O‘gdulmish orqali maktub yo‘lladi.",
+   "O‘zg‘urmish dunyo matosidan kechganini aytib, saroyga borish taklifini rad etdi.",
+   "Elig ikkinchi bor maktub bitib, O‘zg‘urmishni el va davlat nafi uchun kelishga undadi.",
+   "O‘zg‘urmish elig huzuriga kelib, ung adolat va kamtarlik bo‘yicha o‘gitlar berdi.",
+   "O‘zg‘urmish tog‘dagi makoniga qaytib, qanoat bilan ibodatni davom ettirdi.",
+   "O‘zg‘urmish og‘ir xastalanib, o‘limi yaqinligini tush ko‘rib bildi va O‘gdulmishni chorladi.",
+   "O‘zg‘urmish vafot etdi va O‘gdulmish bilan eligga tayoq hamda rakvani xotira qilib qoldirdi.",
+   "Kuntug‘di elig Tayoqni qabul qilib, o‘lim hamda kulfatni unutmaslikka va adolatli bo‘lishga ahd qildi.",
+   "O‘gdulmish elig yonida qolib, mamlakatda adolat hamda farovonlikni barqaror etdi."
+  ],
+  "quotes": [
+   "Uquv qut beradi, bilim – sharaf-shon, Shu ikkov tufayli ulug‘dir inson.",
+   "Til arslon misoli yotar qafasda. Bexabar boshini u yer nafasda.",
+   "Tilingni avayla – omondir boshing. So‘zingni avayla – o‘zayar yoshing.",
+   "Ikki xil nom solar tilda begumon, Biri yaxshiligu birisi – yomon.",
+   "So‘zni so‘zlamasang sof oltin sana, Tildan chiqsa misga tengdir rosmana.",
+   "Tiriklikning chini ezgulik axir. Bu ezgu tiriklik demakdir axir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Qutadg‘u bilig» asari qaysi hukmdorga taqdim etilgan?",
+   "options": [
+    "A) Tavg‘och Qora Bug‘ra xonga",
+    "B) Afrosiyob xonga",
+    "C) Firdavsiy shohga",
+    "D) Alp Er To‘ngaga"
+   ],
+   "answer": "A) Tavg‘och Qora Bug‘ra xonga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Asarda adolat ramzi sifatida qaysi qahramon gavdalanadi?",
+   "options": [
+    "A) Oyto‘ldi elig",
+    "B) Kuntug‘di elig",
+    "C) O‘gdulmish vazir",
+    "D) O‘zg‘urmish zohid"
+   ],
+   "answer": "B) Kuntug‘di elig"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oyto‘ldi poytaxtga kelib kim bilan do‘stlashadi?",
+   "options": [
+    "A) Ersig bilan",
+    "B) Kusamish bilan",
+    "C) O‘zg‘urmish bilan",
+    "D) O‘gdulmish bilan"
+   ],
+   "answer": "B) Kusamish bilan"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oyto‘ldi Kuntug‘di elig huzurida nimaning ustiga o‘tiradi?",
+   "options": [
+    "A) To‘p ustiga",
+    "B) Ko‘rpacha ustiga",
+    "C) Tosh ustiga",
+    "D) Ot ustiga"
+   ],
+   "answer": "A) To‘p ustiga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif keltirgan to‘rt asosiy tushunchani tartibda ajrating.",
+   "options": [
+    "A) Adolat, davlat, aql, qanoat",
+    "B) Boylik, taxt, qo‘shin, bilim",
+    "C) Aql, sabr, kuch, adolat",
+    "D) Qanoat, shoh, vafo, bilim"
+   ],
+   "answer": "A) Adolat, davlat, aql, qanoat"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Oyto‘ldi Kuntug‘di kulganda nega ko‘zlarini yumib oldi?",
+   "options": [
+    "A) Qo‘rqib ketgani uchun",
+    "B) Davlat ko‘zi ko‘rligini ko‘rsatishga",
+    "C) Uyqusi kelgani uchun",
+    "D) Quyosh nuridan saqlanish uchun"
+   ],
+   "answer": "B) Davlat ko‘zi ko‘rligini ko‘rsatishga"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun muallif tilni arslonga o‘xshatadi?",
+   "options": [
+    "A) Til juda kuchli bo‘lgani uchun",
+    "B) Boshga kulfat keltirishi mumkinligi uchun",
+    "C) Til qafasda yashagani uchun",
+    "D) Shirin so‘z aytsa davolagani uchun"
+   ],
+   "answer": "B) Boshga kulfat keltirishi mumkinligi uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Oyto‘ldining Kuntug‘di oldidagi sinoviy xatti-harakatini qanday baholash mumkin?",
+   "options": [
+    "A) Odobsizlik — podshoni masxaraladi",
+    "B) Donolik — muhim hikmatni ko‘rsatdi",
+    "C) Qo‘rqoqlik — o‘zini yo‘qotib qo‘ydi",
+    "D) Xato — podshoni g‘azablantirib qo‘ydi"
+   ],
+   "answer": "B) Donolik — muhim hikmatni ko‘rsatdi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Insonning ulug‘ligi va qadri birinchi navbatda nimada?",
+   "options": [
+    "A) Boylik va mol-mulkida",
+    "B) Bilim hamda aql-idrokida",
+    "C) Baland martaba va taxtida",
+    "D) Chiroyli va harir kiyimida"
+   ],
+   "answer": "B) Bilim hamda aql-idrokida"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif bahorda olam kelinchakday bezanganini qanday badiiy tasvirlaydi?",
+   "options": [
+    "A) Chin karvoni mol yoygandek",
+    "B) Arslon qafasdan chiqqandek",
+    "C) Bo‘ron chang ko‘targandek",
+    "D) Qorong‘u tun tushgandek"
+   ],
+   "answer": "A) Chin karvoni mol yoygandek"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oyto‘ldi vafot etgach, elig saroyga kimni chaqirtiradi?",
+   "options": [
+    "A) O‘zg‘urmishni",
+    "B) O‘gdulmishni",
+    "C) Ersigni",
+    "D) Kusamishni"
+   ],
+   "answer": "B) O‘gdulmishni"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘gdulmish asarda qaysi sifat hamda tushunchani anglatadi?",
+   "options": [
+    "A) Adolatni",
+    "B) Qanoatni",
+    "C) Aql va zakovatni",
+    "D) Davlat va baxtni"
+   ],
+   "answer": "C) Aql va zakovatni"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘gdulmishning fikricha, vazir el boshlig‘ining nimasidir?",
+   "options": [
+    "A) O‘ng qo‘lidir",
+    "B) Chap ko‘zidir",
+    "C) Bosh kiyimidir",
+    "D) Qalqonidir"
+   ],
+   "answer": "A) O‘ng qo‘lidir"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lashkarboshining fe'li qanday bo‘lishi lozim deb aytiladi?",
+   "options": [
+    "A) Qo‘rqoq hamda shoshqaloq",
+    "B) Botir, saxiy hamda tadbirkor",
+    "C) Xasis va kamgap",
+    "D) Qahri qattiq va mag‘rur"
+   ],
+   "answer": "B) Botir, saxiy hamda tadbirkor"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asarda xodimlarga munosabat bo‘yicha qaysi qoida to‘g‘ri berilgan?",
+   "options": [
+    "A) Ularga xizmatiga loyiq haq to‘lash",
+    "B) Ularni doim ayblab turish",
+    "C) Ularga kamroq ovqat berish",
+    "D) Ularning mehnatini umuman taqdirlamaslik"
+   ],
+   "answer": "A) Ularga xizmatiga loyiq haq to‘lash"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kuntug‘di nega O‘zg‘urmishni saroyga taklif qilmoqchi bo‘ldi?",
+   "options": [
+    "A) Unga jazo berish uchun",
+    "B) El nafi uchun foydalanishga",
+    "C) Undan boylik so‘rash uchun",
+    "D) Saroyda oshzpaz qilish uchun"
+   ],
+   "answer": "B) El nafi uchun foydalanishga"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "O‘zg‘urmish nega tog‘da yashashni va saroyga bormaslikni tanladi?",
+   "options": [
+    "A) Shahardan qo‘rqqani uchun",
+    "B) Dunyo matosidan kechib, ibodat uchun",
+    "C) Eligning g‘azabidan qochgani uchun",
+    "D) Kasal bo‘lib qolgani uchun"
+   ],
+   "answer": "B) Dunyo matosidan kechib, ibodat uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "O‘gdulmishning podshoga sadoqat bilan xizmat qilishini qanday baholaysiz?",
+   "options": [
+    "A) Manfaatsizlik va burchga sadoqat",
+    "B) Qo‘rqoqlik va majburiylik",
+    "C) Manmansizlik hamda riyokorlik",
+    "D) Ota o‘chini olish niyati"
+   ],
+   "answer": "A) Manfaatsizlik va burchga sadoqat"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Boshliq siyosati — el-yurt odati» iborasi muallifning qaysi qarashini ko‘rsatadi?",
+   "options": [
+    "A) Boshliq xulqi elga o‘rnakligini",
+    "B) El boshliqni yomonlashini",
+    "C) Siyosat doim xato bo‘lishini",
+    "D) Odatlar o‘zgarmas bo‘lib qolishini"
+   ],
+   "answer": "A) Boshliq xulqi elga o‘rnakligini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "So‘zni poyxona va oltinga qiyoslash orqali muallif nimani uqtiradi?",
+   "options": [
+    "A) So‘zlanmagan so‘z qiymati balandligini",
+    "B) Oltin so‘zdan doim arzonligini",
+    "C) Ko‘p gapirgan odam boyishini",
+    "D) Mis buyumlar foydaliroq ekanini"
+   ],
+   "answer": "A) So‘zlanmagan so‘z qiymati balandligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘zg‘urmish vafot etishidan oldin nima sababli O‘gdulmishni xabardor qiladi?",
+   "options": [
+    "A) Tush ko‘rib, azali yetganini bilgach",
+    "B) Eligning maktubiga javob yozishga",
+    "C) Saroyga borishga rozi bo‘lgani uchun",
+    "D) Undan qarzini so‘rab olish uchun"
+   ],
+   "answer": "A) Tush ko‘rib, azali yetganini bilgach"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘zg‘urmish vafotidan so‘ng O‘gdulmish va eligga qanday esdaliklar qoladi?",
+   "options": [
+    "A) Oltin va kumush tangalar",
+    "B) Rakva hamda tayoq",
+    "C) Qimmatbaho chopon va ot",
+    "D) Toj hamda qilich"
+   ],
+   "answer": "B) Rakva hamda tayoq"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kuntug‘di elig O‘zg‘urmish merosidan qaysi buyumni tanlab oladi?",
+   "options": [
+    "A) Rakvani",
+    "B) Tayoqni",
+    "C) Choponni",
+    "D) Kitobni"
+   ],
+   "answer": "B) Tayoqni"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘gdulmish nafsni jilovlamaslikni qaysi hayvonga o‘xshatadi?",
+   "options": [
+    "A) Qoplonga",
+    "B) Tuyaga",
+    "C) Otga",
+    "D) Buloqqa"
+   ],
+   "answer": "B) Tuyaga"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar oxirida keltirilgan to‘rt falokat unsuridan qaysi biri to‘g‘ri?",
+   "options": [
+    "A) O‘t, yov, kasallik, bilimsizlik",
+    "B) Suv, shamol, yer, havo",
+    "C) Kibr, baxillik, o‘g‘rilik, g‘azab",
+    "D) Urush, ochlik, qahatchilik, g‘urbat"
+   ],
+   "answer": "A) O‘t, yov, kasallik, bilimsizlik"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "O‘zg‘urmish eligga bergan o‘gitida kimlarning o‘limini ibrat qilib ko‘rsatadi?",
+   "options": [
+    "A) Ota va onaning o‘limini",
+    "B) Qadimiy dushmanlar o‘limini",
+    "C) Barcha vazirlar o‘limini",
+    "D) Qo‘shni el xonlari o‘limini"
+   ],
+   "answer": "A) Ota va onaning o‘limini"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Kuntug‘di elig O‘zg‘urmishning tayoqchasini nega xotira qilib oldi?",
+   "options": [
+    "A) Tayoq bilan yurish uchun",
+    "B) Kamtarlik hamda o‘limni unutmaslik uchun",
+    "C) Yovdan himoyalanish uchun",
+    "D) Qurol sifatida ishlatish uchun"
+   ],
+   "answer": "B) Kamtarlik hamda o‘limni unutmaslik uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "O‘zg‘urmishning hayot tarzi insonlarga qanday saboq beradi?",
+   "options": [
+    "A) Faqat boylik yig‘ish kerakligini",
+    "B) Dunyo o‘tkinchi, qanoat oliy boylikligini",
+    "C) Barcha insonlar tog‘da yashashi lozimligini",
+    "D) Siyosatdan doim uzoq turish kerakligini"
+   ],
+   "answer": "B) Dunyo o‘tkinchi, qanoat oliy boylikligini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "O‘zg‘urmishning o‘lim oldidan O‘gdulmishga bergan nasihatlari to‘g‘rimi?",
+   "options": [
+    "A) Ha — to‘g‘ri yo‘l va halollikni ko‘rsatdi",
+    "B) Yo‘q — faqat o‘zini o‘yladi",
+    "C) Noto‘g‘ri — eligni xafa qildi",
+    "D) Bevaqt — e'tibor berish shart emasdi"
+   ],
+   "answer": "A) Ha — to‘g‘ri yo‘l va halollikni ko‘rsatdi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Tiriklikning chini ezgulik axir» baytida muallif nimani ulug‘laydi?",
+   "options": [
+    "A) Yaxshi nom va ezgu amallarni",
+    "B) Uzoq umr ko‘rishning o‘zini",
+    "C) Katta xazina to‘plashni",
+    "D) Yuksak amallarga erishishni"
+   ],
+   "answer": "A) Yaxshi nom va ezgu amallarni"
+  }
+ ]
+}

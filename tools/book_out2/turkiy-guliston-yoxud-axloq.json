@@ -1,0 +1,481 @@
+{
+ "title": "Turkiy guliston yoxud axloq",
+ "author": "Abdulla Avloniy",
+ "genre": "badiiy-publitsistik",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "axloq",
+   "tarbiya",
+   "ilm-fan",
+   "vatanparvarlik",
+   "yaxshi va yomon xulqlar"
+  ],
+  "theme": "Insonning ma'naviy va jismoniy tarbiyasi, go‘zal xulqlarni egallash hamda yomon xulqlardan saqlanish orqali shaxs va jamiyat taraqqiyotiga erishish g‘oyasi ilgarilari suriladi.",
+  "summary": "Abdulla Avloniyning «Turkiy guliston yoxud axloq» asari inson axloqi, tarbiyasi va ma'naviy kamoloti haqidagi publitsistik va ta'limiy qo‘llanmadir. Asar boshida muallif axloq ilmining mohiyatini tushuntirib, inson jasad va nafsdan iborat ekanini ta'kidlaydi. Yaxshi va yomon xulqlarning shakllanishida tarbiyaning o‘rni hal qiluvchi ekani uylar, maktablar va jamiyat misolida ko‘rsatiladi. Tarbiya turlari sifatida badan tarbiyasi, fikr tarbiyasi va axloq tarbiyasi batafsil bayon etiladi. Keyin muallif insonga ziynat beruvchi fatonat, diyonat, islomiyat, nazofat, sa'y-g‘ayrat, riyozat, shijoat, sabr, hilm, vijdon, vatanni suymak, hayo, idrok, viqor, sadoqat va adolat kabi go‘zal fazilatlarni birma-bir tahlil qiladi. Har bir fazilat Qur'on oyatlari, hadislar, shuningdek Suqrot, Aflotun, Ibn Sino kabi ulug‘ hakimlarning hikmatli so‘zlari hamda muallifning she'riy misralari bilan dalillanadi. Asarning ikkinchi qismida esa inson ma'naviyatiga va jamiyat ravnaqiga g‘ov bo‘luvchi g‘azab, shahvat, safohat, raxovat, anoniyyat, adovat, g‘iybat, haqorat, jibonat, nifoq, tama va zulm kabi yomon xulqlar, ularning salbiy oqibatlari va ulardan saqlanish yollari ochib beriladi. Avloniy har bir illat inson hayotini va millat kelajagini mahv etishini uqtirib, kitobxonni hushyorlikka va ma'rifatga chorlaydi.",
+  "characters": "Asar badiiy syujetga ega bo‘lmagani uchun unda muallif (Abdulla Avloniy / Hijron) asosiy va'zxon va pedagog sifatida namoyon bo‘ladi. Shuningdek, fikrlarni quvvatlash uchun Payg‘ambarimiz sallallohu alayhi vasallam, sahobalar, hazrati Ali, Suqrot, Aflotun, Ibn Sino va Sa'diy Sheroziy kabi ulug‘ mutafakkirlarning o‘git va tajribalaridan foydalaniladi.",
+  "conclusion": "Ushbu asar kitobxonda yoshlikdan go‘zal xulqlarni shakllantirish, o‘z nafsini tarbiyalash hamda yomon illatlardan saqlanish hissiyatini o‘stiradi. Bola halollik, mehnatsevarlik, vatanga muhabbat va ilmga intilish insoniy kamolotning asosi ekanini tushunib yetadi. Ota-onalar va ustozlarga esa farzand tarbiyasiga mas'uliyat bilan qarash borasida bebaho ma'naviy dasturilamal bo‘lib xizmat qiladi.",
+  "difficulty": "qiyin",
+  "mood": "o‘ylantiruvchi, da'vatkor",
+  "for_whom": "Insoniy fazilatlar, tarbiya, odob-axloq va shaxsiy rivojlanish haqida chuqur musohaba yuritishni xohlagan o‘smirlar uchun.",
+  "events": [
+   "1. Muallif axloq ilmini yaxshilikka chorlovchi va yomonlikdan qaytaruvchi fan deb ta'riflaydi.",
+   "2. Inson jasad va nafsdan murakkab topgani va xulq nafsning surati ekani uqtiriladi.",
+   "3. Tarbiya masalasi yo hayot – yo mamot, yo saodat – yo falokat masalasi sifatida qo‘yiladi.",
+   "4. Uy tarbiyasi, maktab va madrasa tarbiyasining jamiyatdagi o‘rni ko‘rsatiladi.",
+   "5. Badan tarbiyasi va sihatni saqlashning fikr hamda ibodatdagi ahamiyati uqtiriladi.",
+   "6. Fikr tarbiyasi muallimlarning eng muqaddas vazifasi ekani ta'kidlanadi.",
+   "7. Fatonat va aql insonni hayvondan ayirib turuvchi asosiy ne'mat sifatida baholanadi.",
+   "8. Diyonat va e'tiqod insonni saodat va salomat bo‘stoniga olib borishi aytiladi.",
+   "9. Nazofat va poklik musulmonlikning ildizi va salomatlik garovi deb beriladi.",
+   "10. Sa'y va g‘ayrat insonni mehnatsizlik va xorlikdan qutqaruvchi kuch ekani ta'kidlanadi.",
+   "11. Riyozat va adab insonni gunoh ishlardan saqlashi bayon qilinadi.",
+   "12. Shijoat va botirlik insoniyatning va millat taraqqiyotining tayanchi deb ko‘rsatiladi.",
+   "13. Sabr va matonat har bir mushkul ishni oson qiluvchi kalit ekani uqtiriladi.",
+   "14. Hilm va muloyimlik g‘azab hamda adovatni yo‘qotuvchi go‘zal sifat deb baholanadi.",
+   "15. Vatanni suymak imondan ekani va har bir kishi o‘z yurtini qadrlashi kerakligi aytiladi.",
+   "16. Hayo va iffat insonning ma'naviy husni hamda ziynati sifatida ta'riflanadi.",
+   "17. Viqor va kibrsizlik odamgarchilikning madori ekani uqtiriladi.",
+   "18. Sadoqat va haqqoniyat yo‘lida to‘g‘rilik ko‘rsatish lozimligi uqtiriladi.",
+   "19. Safohat va isrof umr hamda molni mahv etuvchi qora kunlar keltirishi ko‘rsatiladi.",
+   "20. Raxovat va tanparvarlik g‘ayratsizlikka va ma'yuslikka olib kelishi ta'kidlanadi.",
+   "21. Anoniyyat va manmanlik kishini har yerda xor qiluvchi illat deb beriladi.",
+   "22. Nifoq va ikkiyuzlamachilik jamiyat va do‘stlikka ziyon yetkazishi ko‘rsatiladi.",
+   "23. Tama va tilanchilik insonni xor va nomussiz qilishi uqtiriladi.",
+   "24. Zulm va sitamning oqibati inqiroz hamda jahannam azobi ekani bilan asar yakunlanadi."
+  ],
+  "quotes": [
+   "Insonlarni yaxshilikg‘a chaqirguvchi, yomonlikdan qaytarguvchi bir ilmdur.",
+   "Alhosil, tarbiya bizlar uchun yo hayot – yo mamot , yo najot – yo halokat, yo saodat – yo falokat masalasidur.",
+   "Jism ila ruh ikkisi bir choponning o‘ng ila terisi kabidur.",
+   "Hubbul vatani minal imoni – vatanni suymak imondandur.",
+   "G‘azabning avvali junun, oxiri nadomatdur.",
+   "To‘g‘rilikni ixtiyor qilingiz, garchi halokat kabi ko‘rinsa ham, najot to‘g‘rilikdadir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avloniy axloq ilmini qanday ta'riflaydi?",
+   "options": [
+    "A) Yaxshilikka chorlab, yomonlikdan qaytarguvchi",
+    "B) Faqat ibodat qilishni o‘rgatuvchi",
+    "C) Tarixiy voqealarni o‘rganuvchi fan",
+    "D) Inson tanasini davolaydigan soha"
+   ],
+   "answer": "A) Yaxshilikka chorlab, yomonlikdan qaytarguvchi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avloniy inson nimalardan murakkab topgan deydi?",
+   "options": [
+    "A) Jasad va nafsdan",
+    "B) Aql va bilimdan",
+    "C) Suv va tuproqdan",
+    "D) Fikr va tildan"
+   ],
+   "answer": "A) Jasad va nafsdan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Birinchi tarbiya, ya'ni uy tarbiyasi kimning vazifasi?",
+   "options": [
+    "A) Onaning vazifasi",
+    "B) Otaning vazifasi",
+    "C) Muallimning vazifasi",
+    "D) Hukumatning vazifasi"
+   ],
+   "answer": "A) Onaning vazifasi"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avloniy badan tarbiyasida tabibni kimga o‘xshatadi?",
+   "options": [
+    "A) Tarbiya qiluvchi kishiga",
+    "B) Ilmli olim kishiga",
+    "C) Ko‘chadagi oddiy odamga",
+    "D) Ishbilarmon savdogar kishiga"
+   ],
+   "answer": "A) Tarbiya qiluvchi kishiga"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Avloniy fikricha, insondagi qaysi ikki narsa bir-biriga boylangan?",
+   "options": [
+    "A) Dars va tarbiya",
+    "B) Boylik va amal",
+    "C) Shijoat va qo‘rqoqlik",
+    "D) Uloq va bazm"
+   ],
+   "answer": "A) Dars va tarbiya"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun inson yoshligidan yaxshi tarbiya olishi kerak?",
+   "options": [
+    "A) Ulug‘ bo‘lganda g‘am yemaslik uchun",
+    "B) Ko‘p boylik to‘plash uchun",
+    "C) Hamma ustidan hukmron bo‘lish uchun",
+    "D) Mansab va martabaga erishish uchun"
+   ],
+   "answer": "A) Ulug‘ bo‘lganda g‘am yemaslik uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Avloniy nima uchun badan salomatligini muhim deb hisoblaydi?",
+   "options": [
+    "A) O‘qub-o‘rganishga kuchli jasad kerakligi uchun",
+    "B) Tijoratda ko‘p pul topish uchun",
+    "C) Boshqalarga kuchini ko‘rsatib maqtanish uchun",
+    "D) Faqat chiroyli kiyimlar kiyish uchun"
+   ],
+   "answer": "A) O‘qub-o‘rganishga kuchli jasad kerakligi uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Tarbiyani «yo hayot – yo mamot» deb baholash to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, tarbiya millat kelajagini belgilaydi",
+    "B) Noto‘g‘ri, tarbiyasiz ham yashash mumkin",
+    "C) Noto‘g‘ri, faqat boylik muhimroq",
+    "D) To‘g‘ri, lekin faqat kattalar uchun"
+   ],
+   "answer": "A) To‘g‘ri, tarbiya millat kelajagini belgilaydi"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Qush uyasinda ko‘rganin qiladur» maqoli matnda qanday ta'sir beradi?",
+   "options": [
+    "A) Oila tarbiyasining muhimligini ko‘rsatadi",
+    "B) Qushlarni asrash kerakligini eslatadi",
+    "C) Tabiat haqida o‘ylashga chorlaydi",
+    "D) Maktabning foydasiz ekanini bildiradi"
+   ],
+   "answer": "A) Oila tarbiyasining muhimligini ko‘rsatadi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif dars va tarbiyani «jon ila tan»ga o‘xshatib nimani uqtiradi?",
+   "options": [
+    "A) Ularni bir-biridan ayrib bo‘lmasligini",
+    "B) Dars tarbiyadan ko‘ra muhimroq ekanini",
+    "C) Tarbiya faqat tanaga tegishliligini",
+    "D) Ikkala tushuncha ham eskirganini"
+   ],
+   "answer": "A) Ularni bir-biridan ayrib bo‘lmasligini"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shijoatning ziddi matnda nima deb ko‘rsatilgan?",
+   "options": [
+    "A) Qo‘rqoqlik",
+    "B) Yalqovlik",
+    "C) Nifoq",
+    "D) Isrof"
+   ],
+   "answer": "A) Qo‘rqoqlik"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Arabardagi «As-sabru miftohul-farah» iborasi qanday ma'noni anglatadi?",
+   "options": [
+    "A) Sabr shodlikning kalitidir",
+    "B) Sabr qashshoqlikning belgisidir",
+    "C) Sabr qo‘rqoqlikning natijasidir",
+    "D) Sabr faqat qariyalarga xosdir"
+   ],
+   "answer": "A) Sabr shodlikning kalitidir"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avloniy vatanni suymakni nimadan deb ta'kidlaydi?",
+   "options": [
+    "A) Imondan",
+    "B) Boylikdan",
+    "C) Ilmdan",
+    "D) Shijoatdan"
+   ],
+   "answer": "A) Imondan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ibn Sino insondagi qaysi ikkita sifatni doimiy husn degan?",
+   "options": [
+    "A) Hayo va iffatni",
+    "B) Boylik va martabani",
+    "C) Shijoat va g‘azabni",
+    "D) Kuch va chiroy oilyasini"
+   ],
+   "answer": "A) Hayo va iffatni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnga ko‘ra, hilm inson tabiatidan qaysi yomonliklarni yo‘qotadi?",
+   "options": [
+    "A) Xusumat, adovat va g‘azabni",
+    "B) Dangasalik va uyquchilikni",
+    "C) Qashshoqlik va muhtojlikni",
+    "D) Qo‘rqoqlik va uyatchanglikni"
+   ],
+   "answer": "A) Xusumat, adovat va g‘azabni"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun inson o‘z yurtidan boshqa joyda baxtli bo‘lolmaydi?",
+   "options": [
+    "A) Vatan mehr-muhabbati tortib turgoni uchun",
+    "B) Boshqa joyda ish topilmagani uchun",
+    "C) Boshqa mamlakatda havo yomonligi uchun",
+    "D) Faqat do‘stlari yo‘qligi uchun"
+   ],
+   "answer": "A) Vatan mehr-muhabbati tortib turgoni uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun g‘azab kelganda aql o‘z ixtiyorini yo‘qotadi?",
+   "options": [
+    "A) Qon qo‘zg‘alib dimog‘ga hujum qilgani uchun",
+    "B) Inson ko‘p uxlab qolgani uchun",
+    "C) Atrofdagilar unga xalaqit bergani uchun",
+    "D) Bilim va tajribasi kamligi uchun"
+   ],
+   "answer": "A) Qon qo‘zg‘alib dimog‘ga hujum qilgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Suqrotning «G‘azabning avvali junun, oxiri nadomatdur» fikrini qanday baholaysiz?",
+   "options": [
+    "A) Juda to‘g‘ri, g‘azab afsus keltiradi",
+    "B) Noto‘g‘ri, g‘azab har doim foydali",
+    "C) Noto‘g‘ri, g‘azab kishini kuchli qiladi",
+    "D) Faqat urushda to‘g‘ri keladi"
+   ],
+   "answer": "A) Juda to‘g‘ri, g‘azab afsus keltiradi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Avloniyning «Zolimlarning jazo va sazosini Alloh beradi» fikri nimani bildiradi?",
+   "options": [
+    "A) Adolat baribir qaror topishini",
+    "B) Zulm qilish zararsiz ekanini",
+    "C) Mazlumlar jim turishi kerakligini",
+    "D) Kuchlilar har doim haq ekanini"
+   ],
+   "answer": "A) Adolat baribir qaror topishini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Bedil so‘z va dillarni tosh hamda shishaga o‘xshatib nimani ko‘rsatgan?",
+   "options": [
+    "A) Yomon so‘z ko‘ngilni sindirishini",
+    "B) Toshning qattiqligini ko‘rsatishni",
+    "C) Shishadan ehtiyot bo‘lish kerakligini",
+    "D) Insonlar bir-biriga tosh otishini"
+   ],
+   "answer": "A) Yomon so‘z ko‘ngilni sindirishini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Safohat deb matnda nimaga aytiladi?",
+   "options": [
+    "A) Umr va molni buzuq joylarga sarflashga",
+    "B) Ko‘p bilim va hunar o‘rganishga",
+    "C) Vatanni himoya qilishga",
+    "D) Kattalarga hurmat ko‘rsatishga"
+   ],
+   "answer": "A) Umr va molni buzuq joylarga sarflashga"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Luqmon hakim tanparvarlikni nima deb ta'riflagan?",
+   "options": [
+    "A) Umid va muvaffaqiyatni kesuvchi maraz",
+    "B) Insonni baxtga eltuvchi yo‘l",
+    "C) Salomatlikni saqlaydigan yaxshi sifat",
+    "D) Faqat boylarga xos odat"
+   ],
+   "answer": "A) Umid va muvaffaqiyatni kesuvchi maraz"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ikki yuzlama, oldda bir xil, orqada boshqa xil gapiruvchi kishi kim?",
+   "options": [
+    "A) Munofiq",
+    "B) Fozil",
+    "C) Oqil",
+    "D) Sahiy"
+   ],
+   "answer": "A) Munofiq"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Avloniy fikricha, taning sog‘ bo‘la turib tama qilish qanday sanaladi?",
+   "options": [
+    "A) Harom",
+    "B) Halol",
+    "C) Farz",
+    "D) Sunnat"
+   ],
+   "answer": "A) Harom"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnga ko‘ra, raxovat insonni qanday holatga soladi?",
+   "options": [
+    "A) G‘ayratni yo‘qotib, ma'yuslikka soladi",
+    "B) Aqlni o‘stirib, boylik keltiradi",
+    "C) Obro‘ni oshirib, ulug‘ qiladi",
+    "D) Kasallikdan xalos etib, quvvatlaydi"
+   ],
+   "answer": "A) G‘ayratni yo‘qotib, ma'yuslikka soladi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Birovning hafsiga, iffatiga tegadigan so‘zlar bilan kishini kamsitish nima deyiladi?",
+   "options": [
+    "A) Haqorat",
+    "B) Sadoqat",
+    "C) Viqor",
+    "D) Qanoat"
+   ],
+   "answer": "A) Haqorat"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun munofiq kishilar do‘stlik va ittifoqning dushmani hisoblanadi?",
+   "options": [
+    "A) Sirlarni dushmanga yetkazib nifoq solgani uchun",
+    "B) Juda ko‘p kitob o‘qigani uchun",
+    "C) Ishlamasdan uyda o‘tirgani uchun",
+    "D) Faqat to‘g‘ri so‘zni gapirgani uchun"
+   ],
+   "answer": "A) Sirlarni dushmanga yetkazib nifoq solgani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun zolim hukumatlarning oqibati inqiroz bilan tugaydi?",
+   "options": [
+    "A) Zulm barakani yo‘qotib, xarobazor qilgani uchun",
+    "B) Ularning askarlari kam bo‘lgani uchun",
+    "C) Tijorat qilishni bilmagani uchun",
+    "D) Boyliklarini saqlay olmagani uchun"
+   ],
+   "answer": "A) Zulm barakani yo‘qotib, xarobazor qilgani uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Safohatga berilgan kishining «Oh, safohat baloyi mol ekansan» deyishi nimani anglatadi?",
+   "options": [
+    "A) Kechikkan pushaymonlik foyda bermasligini",
+    "B) Safohat juda foydali ekanini",
+    "C) Molni asrash shart emasligini",
+    "D) Kambag‘allik yaxshi ekanini"
+   ],
+   "answer": "A) Kechikkan pushaymonlik foyda bermasligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Avloniyning «Zulm ila bilod obod xarobazora do‘nur» misrasi nimani his qildiradi?",
+   "options": [
+    "A) Zulmning qanchalik yomon va vayronkorligini",
+    "B) Shaharlar tez qurilishini",
+    "C) Tabiat chiroyining yo‘qolishini",
+    "D) Boylik orttirish yo‘llarini"
+   ],
+   "answer": "A) Zulmning qanchalik yomon va vayronkorligini"
+  }
+ ]
+}

@@ -1,0 +1,477 @@
+{
+ "title": "Pul psixologiyasi",
+ "author": "Morgan Hauzel",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "moliya",
+   "sabr",
+   "tejamkorlik",
+   "kamtarlik",
+   "xulq-atvor"
+  ],
+  "theme": "Moliyaviy muvaffaqiyat insonning nechoqlik aql-idrokli yoki bilimdon ekaniga emas, balki uning xulq-atvori, his-tuyg‘ularini boshqara olishi, sabr-toqati va tejamkorligiga bog‘liqdir.",
+  "summary": "Morgan Hauzelning «Pul psixologiyasi» asari pul bilan to‘g‘ri munosabat o‘rnatishda matematik formulalar va moliyaviy nazariyalardan ko‘ra insoniy xulq-atvor va psixologiya hal qiluvchi rol o‘ynashini tushuntiradi. Muallif buni ikki xil hayot yo‘lini bosib o‘tgan shaxslar misolida ko‘rsatadi: kamtarin farrosh Ronald Rid umri davomida sabr bilan pul tejab va ishonchli kompaniyalarga sarmoya kiritib, 8 million dollar boylik to‘playdi va uni xayriyaga qoldiradi. Aksincha, Garvardni bitirgan, moliya sohasida katta yutuqlarga erishgan Richard Faskon esa dabdabali hayot va manmanlik sabab qarzga botib, bankrotlikka uchraydi. Muallif har bir insonning pul borasidagi qarorlari uning shaxsiy hayotiy tajribasi va o‘sgan muhitiga bog‘liq ekanini, hech kim pul masalasida unchalik telba emasligini ta'kidlaydi. Asarda uzoq muddatli sarmoya va kampaunding (murokab foiz) kuchi Uorren Baffet misolida ochib beriladi. Baffetning asosiy siri uning tengsiz investorligida emas, balki 10 yoshidanoq sarmoya kiritishni boshlab, o‘n yillar davomida bu jarayonni to‘xtatmaganidadir. Muallif pul beradigan eng buyuk ne'mat va dividend bu — o‘z vaqtini va hayotini erkin boshqarish imkoniyati deb biladi. Dabdabali mashina yoki qimmat soatlar atrofdagilarda hurmat uyg‘otmaydi, haqiqiy ehtiromga kamtarlik va mehribonlik bilan erishiladi. Kitob yakunida muallif o‘zining moliyaviy qarashlari va oilaviy hayot tarzini ochiqlaydi: u va rafiqasi sodda va tejamkor hayot kechirishadi, erkinlikni boylikdan ustun qo‘yishadi, qarzdan xoli shaxsiy uyga ega bo‘lishni hamda jamg‘armalarni past qiymatli indeks fondlarida uzoq muddat ushlab turishni afzal bilishadi.",
+  "characters": "Ronald Rid — kamtarin farrosh va yonilg‘i quyish shoxobchasi ishchisi; tejamkorlik va sabr orqali millionlab dollar to‘plagan filantrop.\nRichard Faskon — Garvard bitiruvchisi va nufuzli moliyachi; ochko‘zlik, manmanlik va dabdabali saroy uchun olingan qarzlar sabab bankrot bo‘lgan kishi.\nUorren Baffet — afsonaviy investor; muvaffaqiyatining bosh siri sarmoya kiritishni juda erta boshlab, unga o‘n yillar davomida xalaqit bermaganidadir.\nMorgan Hauzel — kitob muallifi; puldan asosiy maqsad deb boylikni emas, balki shaxsiy erkinlik va ruhiy xotirjamlikni biluvchi tejamkor va bosiq inson.",
+  "conclusion": "Ushbu kitob kitobxonga pul faqat raqamlar va formulalar emas, balki insoniy xulq-atvor va psixologiya ekanini aniq hayotiy misollar bilan uqtiradi. O‘smir bola undan manmanlik va dabdabaga uchmaslik, sabr-toqatli bo‘lish, o‘z xohish-istaklarini jilovlash va hayotda haqiqiy erkinlikka erishish uchun tejamkor bo‘lish sabog‘ini oladi. Asar kamtarlik, mehnati va vaqtining qadriga yetish kabi ijobiy xislatlarni shakllantirishga xizmat qiladi.",
+  "difficulty": "o‘rta",
+  "mood": "o‘ylantiruvchi, bosiq, hayotiy",
+  "for_whom": "Pulni to‘g‘ri boshqarishni, hayotda moliyaviy erkinlik va ruhiy xotirjamlikka erishishni hamda hayotiy saboqlar orqali o‘z xulq-atvorini shakllantirishni istagan o‘smirlar uchun.",
+  "events": [
+   "1. Morgan Hauzel mehmonxonada ishlayotganida boy va ehtiyotkor bo‘lmagan texnologiya rahbarining oltin tangalarni okeanga otganiga guvoh bo‘ladi.",
+   "2. Oltin tangalarni suvga otgan dabdabali yigit bir necha yildan so‘ng kasodga uchraydi.",
+   "3. Kamtarin farrosh Ronald Rid vafotidan so‘ng mahalliy kasalxona va kutubxonaga 6 million dollardan ortiq pul qoldirgani ma'lum bo‘ladi.",
+   "4. Garvardni bitirgan tajribali moliyachi Richard Faskon ulkan saroy qurib, qarzga botadi va inqiroz paytida bankrot bo‘ladi.",
+   "5. Muallif pul topish va uni boshqarishda bilimdan ko‘ra insonning xulq-atvori muhimroq degan xulosaga keladi.",
+   "6. Jon Kennedi Buyuk depressiya davrida ham oilasi boy bo‘lgani va faqat otasi qo‘shimcha bog‘bonlar yollaganini eslaydi.",
+   "7. Leyksayd maktabining Onalar klubi yig‘gan pul evaziga 13 yoshli Bill Geyts va Pol Allen kompyuterdan foydalanish imkoniga ega bo‘lishadi.",
+   "8. Temiryo‘l magnati Kornelius Vanderbilt qonunlarga e'tibor bermay harakat qilib misli ko‘rilmagan boylik orttiradi.",
+   "9. Uorren Baffet o‘z boyligining 99 foizidan ko‘pini 50 yoshidan keyin to‘plagani va uning siri vaqt hamda sabrda ekani ko‘rsatiladi.",
+   "10. «Sequoia Capital» rahbari Maykl Moris kompaniya muvaffaqiyatining siri har doim bankrot bo‘lishdan qo‘rqib yashashda deb biladi.",
+   "11. San'at asarlari savdogari Berggryun kolleksiyasidagi kamyob Pikasso suratlari orqali ulkan foyda ko‘radi.",
+   "12. Jeff Bezos Amazon yaratgan Fire Phone loyihasining omadsizligini rivojlanish va yangi izlanishlarning tabiiy bir qismi deb hisoblaydi.",
+   "13. Karl Pillemer keksalar o‘rtasida so‘rov o‘tkazib, ularning hech biri baxtni ko‘p pul yoki qimmat buyumlarda ko‘rmaganini aniqlaydi.",
+   "14. Muallif qimmat mashina haydaganda odamlar mashinaga havas qilishini, ammo haydovchining o‘ziga e'tibor bermasligini ta'kidlaydi.",
+   "15. AQSH 1970-yillardagi energiya inqirozidan yangi neft konlari topish orqali emas, balki energiyani tejash texnologiyalari orqali chiqib ketadi.",
+   "16. Vagner Yaureg isitma tananing infeksiyaga qarshi tabiiy himoyasi ekanini anglab, tibbiyotda Nobel mukofotini oladi.",
+   "17. Sendi Gottsman ishga kiruvchi nomzodlardan nimalarga egalik qilishlari va pulini nimaga sarflashlarini so‘raydi.",
+   "18. Professor Ken Merri shifokorlar og‘ir kasal bo‘lganida bemorlariga tavsiya etadigan qimmat operatsiyalardan voz kechishlarini yozadi.",
+   "19. Morgan Hauzel rafiqasi bilan birga 20 yoshida belgilagan sodda hayot tarzini saqlab, jamg‘armalarini «erkinlik fondi»ga yo‘naltiradi.",
+   "20. Muallif uy-joy kreditini barvaqt to‘lab uzadi va pullarini past qiymatli indeks fondlariga sarmoya qilib qo‘yadi."
+  ],
+  "quotes": [
+   "Atrofidagilar aqldan ozgan paytda ham bosiqlik bilan o‘zining kundalik ishlarini bajarishda davom etadigan odam dahodir.",
+   "Pul topish bobida muvaffaqiyat qozonish insonning aqllilik darajasiga emas, balki xulq-atvoriga va o‘zini qanday tutishiga bog‘liqdir.",
+   "Sizning pul bilan bog‘liq shaxsiy tajribangiz, balki, dunyoda sodir bo‘layotgan narsalarning bor-yo‘g‘i 0,00000001 foiziga teng bo‘lishi mumkindir, ammo ular dunyo haqidagi fikrlaringizning 80 foizini tashkil etadi.",
+   "Aslida hech narsa ko‘ringani kabi yaxshi ham, yo‘mon ham emas.",
+   "Odamlar mol-mulkingizga sizchalik qiziqish bildirmaydi.",
+   "Haqiqiy muvaffaqiyat boylik va hokimiyat uchun kechayotgan kuchli raqobatni tark etib, tinch hayot tarzini tanlashdadir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ronald Rid hayoti davomida asosan qaysi kasbda ishlagan?",
+   "options": [
+    "A) Farrosh va avtomobil tuzatuvchi",
+    "B) Universitetda moliya o‘qituvchisi",
+    "C) Katta bankda boshqaruvchi",
+    "D) Zargarlik do‘konida sotuvchi"
+   ],
+   "answer": "A) Farrosh va avtomobil tuzatuvchi"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Richard Faskon nega muvaffaqiyatdan keyin bankrotlikka uchradi?",
+   "options": [
+    "A) Dabdabali saroy uchun qarz olgani tufayli",
+    "B) O‘qishga ko‘p pul sarflagani uchun",
+    "C) Barcha pulini xayriyaga bergani tufayli",
+    "D) Kasalxonaga katta ehson qilgani uchun"
+   ],
+   "answer": "A) Dabdabali saroy uchun qarz olgani tufayli"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ronald Rid va Richard Faskon voqeasi nimani isbotlaydi?",
+   "options": [
+    "A) Xulq-atvor bilimdan muhimroq ekanini",
+    "B) Garvardda o‘qish doim foydaliligini",
+    "C) Ko‘p qarz olish muvaffaqiyat kalitligini",
+    "D) Kasb tanlash hayotni belgilashini"
+   ],
+   "answer": "A) Xulq-atvor bilimdan muhimroq ekanini"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bill Geytsga maktabda kompyuterdan foydalanish imkonini kim yaratgan?",
+   "options": [
+    "A) Maktabdagi Onalar klubi tashabbusi",
+    "B) Shahar hokimiyati yordami",
+    "C) Kompyuter ishlab chiqaruvchi kompaniya",
+    "D) Uning boy ota-onasi"
+   ],
+   "answer": "A) Maktabdagi Onalar klubi tashabbusi"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ronald Rid va Richard Faskonning xulqidagi asosiy farq nima edi?",
+   "options": [
+    "A) Rid sabrli, Faskon esa ochko‘z edi",
+    "B) Rid boy, Faskon kambag‘al edi",
+    "C) Rid bilimli, Faskon tajribasiz edi",
+    "D) Rid tavakkalchi, Faskon ehtiyotkor edi"
+   ],
+   "answer": "A) Rid sabrli, Faskon esa ochko‘z edi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif pulni nega «Yer yuzidagi eng ajoyib shou» deydi?",
+   "options": [
+    "A) U odamlarning fe'l-atvorini ochib beradi",
+    "B) U har kuni ko‘payib boradi",
+    "C) U faqat televizorda ko‘rsatiladi",
+    "D) U insonni mashhur qilib qo‘yadi"
+   ],
+   "answer": "A) U odamlarning fe'l-atvorini ochib beradi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Boy mehmonxona mijozi ko‘ngilxushlik uchun oltin tangalarni qayerga otdi?",
+   "options": [
+    "A) Tinch okeani dengiziga",
+    "B) Mehmonxona hovuziga",
+    "C) Ko‘cha chetidagi ariqqa",
+    "D) Do‘stining cho‘ntagiga"
+   ],
+   "answer": "A) Tinch okeani dengiziga"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega insonlar pul masalasida har xil qarorlar qabul qilishadi?",
+   "options": [
+    "A) Shaxsiy hayotiy tajribalari turlicha bo‘lganidan",
+    "B) Matematikani har xil bilishganidan",
+    "C) Turli universitetlarda o‘qishganidan",
+    "D) Aql darajalari har xil bo‘lganidan"
+   ],
+   "answer": "A) Shaxsiy hayotiy tajribalari turlicha bo‘lganidan"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Jon Kennedi Buyuk depressiya davri haqida nimani eslaydi?",
+   "options": [
+    "A) Otasi qo‘shimcha bog‘bonlar yollaganini",
+    "B) Oila a'zolari oziq-ovqatga zor bo‘lganini",
+    "C) Uy va xizmatchilarini yo‘qotganini",
+    "D) Maktabga tekin mashinada qatnagani"
+   ],
+   "answer": "A) Otasi qo‘shimcha bog‘bonlar yollaganini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kornelius Vanderbilt o‘z biznesida qanday yo‘l tutgan?",
+   "options": [
+    "A) Qonunlarga e'tibor bermay harakat qilgan",
+    "B) Barcha qonunlarga qat'iy amal qilgan",
+    "C) Faqat davlat grantlaridan foydalangan",
+    "D) Mulkini xayriya fondlariga topshirgan"
+   ],
+   "answer": "A) Qonunlarga e'tibor bermay harakat qilgan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Uorren Baffetning moliyaviy muvaffaqiyatidagi eng asosiy fakt qaysi?",
+   "options": [
+    "A) U juda erta sarmoya kiritishni boshlagan",
+    "B) U faqat qimmat aksiyalarni olgan",
+    "C) U bir necha oliygohni tugatgan",
+    "D) U doim katta xavfga qo‘l urgan"
+   ],
+   "answer": "A) U juda erta sarmoya kiritishni boshlagan"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Pul topish va pulni saqlab qolish o‘rtasidagi farq nimada?",
+   "options": [
+    "A) Pul saqlash tejamkorlik va kamtarlik talab qiladi",
+    "B) Pul topish doim qo‘rquvga asoslanadi",
+    "C) Pul saqlash uchun faqat tavakkal kerak",
+    "D) Ularning o‘rtasida hech qanday farq yo‘q"
+   ],
+   "answer": "A) Pul saqlash tejamkorlik va kamtarlik talab qiladi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Berggryun san'at asarlari to‘plamidan nega katta foyda ko‘rdi?",
+   "options": [
+    "A) Kolleksiyasidagi kamyob nusxalar katta qiymat bergani uchun",
+    "B) Barcha suratlarni arzon bahoda sotgani uchun",
+    "C) Suratlarning hammasini o‘zi chizgani uchun",
+    "D) Faqat bitta rassom ishini sotib olgani uchun"
+   ],
+   "answer": "A) Kolleksiyasidagi kamyob nusxalar katta qiymat bergani uchun"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Jeff Bezosning muvaffaqiyatsiz loyihalarga munosabati haqida qanday xulosa qilish mumkin?",
+   "options": [
+    "A) Mag‘lubiyat va izlanish rivojlanishning bir qismidir",
+    "B) Omadsiz loyiha kompaniyani halok qiladi",
+    "C) Har bir xato uchun xodimlar jazolanadi",
+    "D) Tavakkal qilish doim xatolikka olib keladi"
+   ],
+   "answer": "A) Mag‘lubiyat va izlanish rivojlanishning bir qismidir"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Karl Pillemer keksalar bilan suhbatlashganda ular nimani eng muhim deyishdi?",
+   "options": [
+    "A) Yaxshi insonlar va oila davrasida bo‘lishni",
+    "B) Juda ko‘p pul to‘plab boyishni",
+    "C) Qimmatbaho mashina va uylar sotib olishni",
+    "D) Katta kompaniyalarga rahbarlik qilishni"
+   ],
+   "answer": "A) Yaxshi insonlar va oila davrasida bo‘lishni"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Odamlar mol-mulkingizga sizchalik qiziqmaydi» iborasi nimani bildiradi?",
+   "options": [
+    "A) Odamlar boylikka emas, kamtarlikka havas qiladi",
+    "B) Qimmatbaho buyumlar darrov hurmat keltirishini",
+    "C) Barcha insonlar sizning mashinangizga qiziqishini",
+    "D) Boylikni doim ko‘z-ko‘z qilish kerakligini"
+   ],
+   "answer": "A) Odamlar boylikka emas, kamtarlikka havas qiladi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shifokor Vagner Yaureg isitma haqida qanday xulosaga kelgan?",
+   "options": [
+    "A) Isitma organizmning infeksiyaga qarshi himoya vositasidir",
+    "B) Isitmani darhol dori bilan tushirish kerak",
+    "C) Isitma inson uchun faqat zarar keltiruvchi omildir",
+    "D) Isitma faqat ruhiy kasallikda paydo bo‘ladi"
+   ],
+   "answer": "A) Isitma organizmning infeksiyaga qarshi himoya vositasidir"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dunyo energiya halokatidan saqlanib qolishiga eng asosiy sabab nima bo‘ldi?",
+   "options": [
+    "A) Energiyani tejaydigan texnologiyalar yaratilgani",
+    "B) Yangi neft konlari ko‘plab topilgani",
+    "C) Zavodlar faoliyati butunlay to‘xtatilgani",
+    "D) Barcha avtomobillardan voz kechilgani"
+   ],
+   "answer": "A) Energiyani tejaydigan texnologiyalar yaratilgani"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif fikricha o‘tmishdagi investitsiya tajribalari nega kelajakka to‘liq mos kelmaydi?",
+   "options": [
+    "A) Zamon, texnologiya va sharoitlar doim o‘zgaradi",
+    "B) O‘tmishda hech qanday inqiroz bo‘lmagani uchun",
+    "C) Eski qoidalar doim mukammal bo‘lib qoladi",
+    "D) Sarmoyadorlar hech qachon xato qilmagani uchun"
+   ],
+   "answer": "A) Zamon, texnologiya va sharoitlar doim o‘zgaradi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Inson maqsadlarining vaqt o‘tishi bilan o‘zgarishi nima uchun muhim?",
+   "options": [
+    "A) Rejalarni moslashtirib borish zarurligini ko‘rsatadi",
+    "B) Yoshlikdagi reja hech qachon o‘zgarmasligini",
+    "C) Kasbni tez-tez almashtirish shartligini",
+    "D) Pul tejash behuda ish ekanini"
+   ],
+   "answer": "A) Rejalarni moslashtirib borish zarurligini ko‘rsatadi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sendi Gottsman nomzodlar bilan suhbatda ularga qanday savol berar edi?",
+   "options": [
+    "A) Nimalarga egaliksiz va nima uchun?",
+    "B) Nechta kompaniya aksiyasini sotib olgansiz?",
+    "C) Qaysi sohada inqiroz kutilmoqda?",
+    "D) Qancha daromad olishni xohlaysiz?"
+   ],
+   "answer": "A) Nimalarga egaliksiz va nima uchun?"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shifokorlar og‘ir kasallikka chalinganda o‘zlari uchun qanday davoni tanlaydilar?",
+   "options": [
+    "A) Bosiqlik bilan oddiy va tinchlantiruvchi choralarni",
+    "B) Bemorlarga beriladigan eng og‘ir muolajalarni",
+    "C) Xorijdagi eng qimmat operatsiyalarni",
+    "D) Barcha dori-darmonlardan butkul voz kechishni"
+   ],
+   "answer": "A) Bosiqlik bilan oddiy va tinchlantiruvchi choralarni"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif Morgan Hauzel uchun moliyaviy hayotdagi eng oliy maqsad nima?",
+   "options": [
+    "A) Har kuni o‘z vaqtini erkin boshqarish",
+    "B) Dunyodagi eng boy insonga aylanish",
+    "C) Hashamatli saroylar va mashinalar olish",
+    "D) Katta kompaniyalarga rahbarlik qilish"
+   ],
+   "answer": "A) Har kuni o‘z vaqtini erkin boshqarish"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif o‘z uyining kreditini nega barvaqt uzishni ma'qul ko‘rdi?",
+   "options": [
+    "A) Ruhiy xotirjamlik va erkinlik hissi uchun",
+    "B) Matematik jihatdan juda foydali bo‘lganidan",
+    "C) Uy narxi tushib ketganligi uchun",
+    "D) Bank vakillari talab qilgani uchun"
+   ],
+   "answer": "A) Ruhiy xotirjamlik va erkinlik hissi uchun"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Moliya masalasida hamma uchun birdek to‘g‘ri keladigan yechim bormi?",
+   "options": [
+    "A) Yo‘q, har kim o‘ziga munosibini topadi",
+    "B) Ha, hamma bir xil formuladan foydalanadi",
+    "C) Ha, faqat bankirlar to‘g‘ri qaror qiladi",
+    "D) Yo‘q, moliya sohasida qoida umuman yo‘q"
+   ],
+   "answer": "A) Yo‘q, har kim o‘ziga munosibini topadi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning «Hech kim telba emas» degan fikri nimani bildiradi?",
+   "options": [
+    "A) Har kim o‘z tajribasidan kelib chiqib ish tutadi",
+    "B) Barcha odamlar bir xil fikrlaydi",
+    "C) Moliya sohasida xato qilmaydigan odam yo‘q",
+    "D) Pul sarflashda faqat aqlga tayaniladi"
+   ],
+   "answer": "A) Har kim o‘z tajribasidan kelib chiqib ish tutadi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif jamg‘armalarining katta qismini qaysi vositada saqlaydi?",
+   "options": [
+    "A) Past qiymatli indeks fondlarida",
+    "B) Qimmatbaho tilla tangalarda",
+    "C) Kichik xususiy kompaniya aksiyalarida",
+    "D) Xorijiy valyuta quticha hisobida"
+   ],
+   "answer": "A) Past qiymatli indeks fondlarida"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Muallif nega naqd pul jamg‘arishni juda muhim deb hisoblaydi?",
+   "options": [
+    "A) Kutilmagan qiyinchiliklarda aksiyalarni sotmaslik uchun",
+    "B) Uyga yangi mebellar sotib olish uchun",
+    "C) Yaqin atrofdagi do‘konlarni sotib olish uchun",
+    "D) Bozorga borib xaridlar qilish uchun"
+   ],
+   "answer": "A) Kutilmagan qiyinchiliklarda aksiyalarni sotmaslik uchun"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Nassim Talebning haqiqiy muvaffaqiyat haqidagi fikri nimaga chaqiradi?",
+   "options": [
+    "A) Raqobatni tark etib, tinch hayot kechirishga",
+    "B) Doim boshqalardan o‘zib ketishga urinishga",
+    "C) Katta hokimiyat uchun tinmay kurashishga",
+    "D) Barcha boylikni ko‘z-ko‘z qilib yashashga"
+   ],
+   "answer": "A) Raqobatni tark etib, tinch hayot kechirishga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif o‘zi va oilasi uchun qaysi investitsiya strategiyasini tanlagan?",
+   "options": [
+    "A) Indeks fondlariga uzoq muddat pul tikishni",
+    "B) Har kuni aksiyalarni sotib va sotishni",
+    "C) Faqat ko‘chmas mulkka sarmoya kiritishni",
+    "D) Pulni faqat uyda saqlab o‘tirishni"
+   ],
+   "answer": "A) Indeks fondlariga uzoq muddat pul tikishni"
+  }
+ ]
+}

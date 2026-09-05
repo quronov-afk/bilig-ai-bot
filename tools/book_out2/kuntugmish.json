@@ -1,0 +1,479 @@
+{
+ "title": "Kuntug‘mish",
+ "author": "Xalq og‘zaki ijodi",
+ "genre": "doston",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "12+",
+  "topics": [
+   "sevgi va sadoqat",
+   "jasorat",
+   "sabr va vafo",
+   "oila va ota-ona",
+   "adolat"
+  ],
+  "theme": "Asarda pokiza sevgi, sadoqat, sabr-toqat va adolat tuyg‘ulari ulug‘lanadi. Xiyonat, zulm va takabburlik esa oxir-oqibat mag‘lubiyatga uchrashi, ezgulik va mardlik har qanday sinovni yengib murod-maqsadga yetkazishi ko‘rsatiladi.",
+  "summary": "No‘g‘oy podshosi Avliyoyi Qoraxonning o‘g‘li Kuntug‘mish va Zangar shahri vazirining qizi Xolbeka tushlarida chiltonlar vositasida bir-birlarini ko‘rib, oshiq bo‘ladilar va uzuk almashtiradilar. Xolbeka o‘z suratini va to‘raning uzugini sandiqqa solib daryoga oqizadi. Sandiqni topib olgan Kuntug‘mish yorini izlab Zangar shahriga otlanadi. Zangarda turli sarguzashtlarni boshdan kechirib, Xolbeka bilan uchrashadi. Biqti-pinhona uchrashuvlardan xabar topgan podsho Buvraxon ularni tutdiradi. Oshiq-ma'shuqlarni cho‘lga badarg‘a qilishadi. Cho‘lda Xolbeka ikkita o‘g‘il tug‘adi (Mohiboy va Gurkiboy). Biroq karvonboshi Azbarxo‘ja Kuntug‘mishni aldab mast qiladi va Xolbekani olib qochadi, go‘daklar cho‘lda qoladi. Kuntug‘mish g‘amdan qalandar bo‘lib ketadi, bolalar esa ayri holda o‘sib-ulg‘ayadi. Yillar o‘tib, aka-uka Mohiboy va Gurkiboy bir-birini topib do‘stlashadi. Ular Zangar shahriga kelib, podsho yilqisini haydashadi. Ularni tutib dorg‘a tortmoqchi bo‘lishganida, Zangar taxtiga o‘tirgan Kuntug‘mish hamda Xolbeka o‘z farzandlarini tanib qolishadi. Oila qayta birlashadi, zolim Azbarxo‘ja munosib jazasini oladi. Kuntug‘mish Zangar taxtini Xolmo‘minga topshirib, o‘zi No‘g‘oy yurtiga qaytadi va otasining taxtiga o‘tirib, murod-maqsadiga yetadi.",
+  "characters": "Kuntug‘mish — No‘g‘oy podshosining o‘g‘li, mard, sadoqatli va jasur shahzoda. Xolbeka — Zangar vazirining qizi, go‘zal, oqila, vafo va sabr timsoli. Qoraxon — Kuntug‘mishning otasi, adolatli va mehribon podsho. Buvraxon — Zangar podshosi, mag‘rur va zolim hukmdor. Azbarxo‘ja — unvon-martaba ketidan quvgan hiylagor, bemehr va xiyonatkor karvonboshi. Mohiboy va Gurkiboy — Kuntug‘mish va Xolbekaning jasur, mard o‘g‘illari.",
+  "conclusion": "Ushbu doston kitobxonga vafo, sabr-toqat va mardlikning inson hayotidagi o‘rnini ko‘rsatib beradi. Ota-onaga bo‘lgan hurmat, oilaviy rishtalar va ezgulikka bo‘lgan ishonch har qanday mashaqqatni yengishga kuch berishini anglatadi. Bola asardan to‘g‘rilik va halollik har doim g‘alaba qozonishi haqidagi muhim hayotiy saboqni oladi.",
+  "difficulty": "o‘rta",
+  "mood": "sarguzashtli, ta'sirchan, hayajonli",
+  "for_whom": "Xalq og‘zaki ijodi, qahramonlik va sevgi dostonlariga qiziquvchi, mardlik hamda adolat haqida o‘qishni xohlaydigan kitobxonlar uchun.",
+  "events": [
+   "1. Kuntug‘mish to‘ra qirq yigiti bilan ov qilib, ilm va sipohlik san'atini egallaydi.",
+   "2. Xolbeka o‘ziga sovchi qo‘yganlarga nard o‘yinida yutish shartini qo‘yadi.",
+   "3. Buvraxon podsho Xolbekaning rad javobidan keyin uning otini aytishni taqiqlaydi.",
+   "4. Kuntug‘mish va Xolbeka tushlarida chiltonlar yordamida uchrashib uzuk almashtiradilar.",
+   "5. Xolbeka uzuk va suratini sandiqqa solib daryoga ravona qiladi.",
+   "6. Kuntug‘mish daryodan sandiqni olib, Xolbekaning suratini ko‘rib unga oshiq bo‘ladi.",
+   "7. Kuntug‘mish otasi Qoraxondan fotiha olib Zangar shahriga yo‘l oladi.",
+   "8. Darvozabon bobo Kuntug‘mishni xudoni o‘rtaga solgani uchun shaharga kirgizadi.",
+   "9. Kampir aldab o‘z qizi Zamongulni Kuntug‘mishga ro‘para qiladi, lekin to‘ra uni rad etadi.",
+   "10. Kuntug‘mish bazzoz kiyimida Xolbekaning ko‘shki ostida mata sotadi va uni ko‘radi.",
+   "11. Xolbeka Kuntug‘mishni saroyiga taklif qilib, izzat-ikrom ko‘rsatadi.",
+   "12. Mutavalli kal oshiq va ma'shuqning uchrashuvini podsho Buvraxonga chaqib beradi.",
+   "13. Buvraxon podsho Kuntug‘mish va Xolbekani ushlatib cho‘lga badarg‘a qildiradi.",
+   "14. Cho‘lda Xolbeka ikki farzand ko‘radi, lekin Kuntug‘mish va Xolbeka suvsizlikdan qiynaladi.",
+   "15. Karvonboshi Azbarxo‘ja Kuntug‘mishni aldab mast qiladi va Xolbekani olib qochadi.",
+   "16. Kuntug‘mish va Xolbeka farzandlaridan ajralib, to‘ra qalandar bo‘lib ketadi.",
+   "17. Ikki go‘dak Mohiboy va Gurkiboy ayri holda o‘sib-ulg‘ayadi.",
+   "18. Ikki og‘a-ini daryo bo‘yida uchrashib, bir-birini tanimay do‘stlashadi.",
+   "19. Aka-uka Mohiboy va Gurkiboy Zangar podshosining yilqisini haydab, yov bilan olishadi.",
+   "20. Bolalarni ushlab, dorg‘a tortmoqchi bo‘lishganda, Zangar podshosi bo‘lgan Kuntug‘mish va Xolbeka ularni tanib qoladi.",
+   "21. Oila jam bo‘ladi, xiyonatkor Azbarxo‘ja jazolanadi va Kuntug‘mish No‘g‘oy taxtiga egallaydi."
+  ],
+  "quotes": [
+   "Dostonda zulm va haqsizlik qoralangan, sevgi, vafo, sadoqat va adolat ulug‘langan.",
+   "Musofirchilikda yo zar yarar, yo zo‘r yarar kuningga.",
+   "Bir yor uchun yotarmikan mard kishi, Bir yor bo‘lsa, bolam, yordan g‘am yema.",
+   "O‘laman deb qaytarmikan mard kishi, O‘limdan qo‘rqmoqlik xumsaning ishi.",
+   "O‘zingni er bilsang, birovni sher bil.",
+   "O‘limdan qo‘rqmoqlik nomardning ishi, O‘laman, deb mard qaytarmas tilini.",
+   "Yaxshi yetsin murodga, Yomon qolsin uyatga."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kuntug‘mishning otasi qaysi yurtning podshosi edi?",
+   "options": [
+    "A) No‘g‘oy yurtining",
+    "B) Zangar shahri",
+    "C) Dog‘iston o‘lkasi",
+    "D) Chin-Mochin yurtining"
+   ],
+   "answer": "A) No‘g‘oy yurtining"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xolbeka o‘ziga sovchi bo‘lib kelganlarga qanday shart qo‘ydi?",
+   "options": [
+    "A) Nard o‘yinida yutish",
+    "B) Kamondan o‘q otish",
+    "C) Qilich chopish",
+    "D) Poygada g‘olib bo‘lish"
+   ],
+   "answer": "A) Nard o‘yinida yutish"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Buvraxon podsho Xolbekani ko‘rib nega jarchi qo‘ydirdi?",
+   "options": [
+    "A) Xolbeka otini aytishni taqiqlab",
+    "B) To‘y tayyorgarligini e'lon qilib",
+    "C) Barcha sovchilarni chorlab",
+    "D) Shaharni tark etishni buyurib"
+   ],
+   "answer": "A) Xolbeka otini aytishni taqiqlab"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Xolbeka o‘z suratini va uzukni qayerga solib daryoga oqizdi?",
+   "options": [
+    "A) Tillo bilan berkitilgan sandiqqa",
+    "B) Yog‘och qutichaga",
+    "C) Charm xaltaga",
+    "D) Kumush ko‘zaga"
+   ],
+   "answer": "A) Tillo bilan berkitilgan sandiqqa"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kuntug‘mish daryodan topilgan sandiqdagi buyumlardan nimani bildi?",
+   "options": [
+    "A) Xolbekaning husni va sevgisini",
+    "B) Otasining yaqin xabarini",
+    "C) Zangar podshosining buyrug‘ini",
+    "D) Yigitlarining maxfiy rejasini"
+   ],
+   "answer": "A) Xolbekaning husni va sevgisini"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Qoraxon podsho o‘g‘lining Zangarga borishiga fotiha berdi?",
+   "options": [
+    "A) O‘g‘lining ishqini tushungani uchun",
+    "B) Zangarni zabt etish uchun",
+    "C) Savdo ishlarini yuritish uchun",
+    "D) Yigitlarini sinash uchun"
+   ],
+   "answer": "A) O‘g‘lining ishqini tushungani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Darvozabon bobo Kuntug‘mishni nega ichkariga kirgazib yubordi?",
+   "options": [
+    "A) Xudoni o‘rtaga solgani uchun",
+    "B) Podshodan qo‘rqqani uchun",
+    "C) Qirq yigiti ko‘pligi uchun",
+    "D) Tungi vaqt bo‘lgani uchun"
+   ],
+   "answer": "A) Xudoni o‘rtaga solgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kuntug‘mishning yor ishqida uzoq yo‘lga chiqishi qanday sifat?",
+   "options": [
+    "A) Mardlik va sadoqat",
+    "B) Yengiltaklik va xatolik",
+    "C) Qo‘rqoqlik va ojizlik",
+    "D) Manmanlik va kibr"
+   ],
+   "answer": "A) Mardlik va sadoqat"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Qoraxonning «Bir yor uchun yotarmikan mard kishi» degani nimani anglatadi?",
+   "options": [
+    "A) G‘amga batamom taslim bo‘lmaslikni",
+    "B) Uydan chiqmay yotish kerakligini",
+    "C) Yordan voz kechish kerakligini",
+    "D) Kurashsiz taslim bo‘lishni"
+   ],
+   "answer": "A) G‘amga batamom taslim bo‘lmaslikni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kuntug‘mish va Xolbeka bir-birini qanday qilib tanib qolishdi?",
+   "options": [
+    "A) Tush va uzuklar orqali",
+    "B) Xat va elchilar orqali",
+    "C) Otalarining maslahati bilan",
+    "D) Tasodifiy uchrashuv tufayli"
+   ],
+   "answer": "A) Tush va uzuklar orqali"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bazzoz kiyimida kelgan Kuntug‘mishni kim Xolbekaga borib tasvirladi?",
+   "options": [
+    "A) Chaqqon va Bahragul",
+    "B) Zamongul va enasi",
+    "C) Mutavalli kal",
+    "D) Darvozabon bobo"
+   ],
+   "answer": "A) Chaqqon va Bahragul"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Oshiq-ma'shuqlarning uchrashganini podshoga kim chaqib berdi?",
+   "options": [
+    "A) Mutavalli kal",
+    "B) Bobo qo‘rboshi",
+    "C) Bahragul kaniz",
+    "D) Shoir vazir"
+   ],
+   "answer": "A) Mutavalli kal"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Azbarxo‘ja Kuntug‘mishni mag‘lub etish uchun qanday nayrang ishlatdi?",
+   "options": [
+    "A) Mast qiluvchi ichimlik berdi",
+    "B) Qilichbozlikda aldab urdi",
+    "C) Tunda unga hujum qildi",
+    "D) Zindonga solib qo‘ydi"
+   ],
+   "answer": "A) Mast qiluvchi ichimlik berdi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Azbarxo‘ja karvoni bilan Xolbekani olib qochgach Kuntug‘mish nima qildi?",
+   "options": [
+    "A) Qalandar bo‘lib yo‘lga tushdi",
+    "B) No‘g‘oyga qaytib ketdi",
+    "C) Zangar podshosiga taslim bo‘ldi",
+    "D) Cho‘lda qolib vafot etdi"
+   ],
+   "answer": "A) Qalandar bo‘lib yo‘lga tushdi"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kuntug‘mish va Xolbeka cho‘lda qanday og‘ir sinovlarga duch kelishdi?",
+   "options": [
+    "A) Suvsizlik va xiyonatga",
+    "B) Qattiq sovuq va qorga",
+    "C) Bo‘ron va toshqinga",
+    "D) Qaroqchilar va vabo kasaliga"
+   ],
+   "answer": "A) Suvsizlik va xiyonatga"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Xolbeka nega Kuntug‘mishga cho‘lda «ortangga qaramay keta ber» dedi?",
+   "options": [
+    "A) Uning hayotini saqlash uchun",
+    "B) Undan xafa bo‘lgani uchun",
+    "C) Yolg‘iz qolishni xohlagani uchun",
+    "D) Qalandarlarni kutayotgani uchun"
+   ],
+   "answer": "A) Uning hayotini saqlash uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega karvonboshi Qosim yo‘l bo‘yiga ovqat va suv qoldirdi?",
+   "options": [
+    "A) Kuntug‘mish o‘lmay yetib olishiga ko‘maklashishga",
+    "B) Azbarxo‘janing buyrug‘ini bajarish uchun",
+    "C) Tuyalarga oziq-ovqat yetkazish uchun",
+    "D) O‘z xatolarini berkitish uchun"
+   ],
+   "answer": "A) Kuntug‘mish o‘lmay yetib olishiga ko‘maklashishga"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Azbarxo‘janing Kuntug‘mishga qilgan xiyonatiga qanday baho berish mumkin?",
+   "options": [
+    "A) Oqibatsiz va tuban xiyonat",
+    "B) Donolik va to‘g‘ri tadbir",
+    "C) Zaruriy va majburiy chora",
+    "D) Kichik va kechirimli xato"
+   ],
+   "answer": "A) Oqibatsiz va tuban xiyonat"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Xolbekaning barcha qiyinchiliklarda sabr qilishi nimani ko‘rsatadi?",
+   "options": [
+    "A) Yuqori vafo va matonatni",
+    "B) Qo‘rqoqlik va ojizlikni",
+    "C) Taqdirga ko‘r-ko‘rona bo‘ysunishni",
+    "D) Tajribasizlik va soddalikni"
+   ],
+   "answer": "A) Yuqori vafo va matonatni"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Musofirchilikda yo zar yarar, yo zo‘r yarar» maqolining ma'nosi nima?",
+   "options": [
+    "A) Safarda imkoniyat va kuch kerakligini",
+    "B) Musofir odam doim yutqazishini",
+    "C) Pul bo‘lsa kuch shartmasligini",
+    "D) Safarga chiqmaslik kerakligini"
+   ],
+   "answer": "A) Safarda imkoniyat va kuch kerakligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Gurkiboy va Mohiboy bir-biri bilan qayerda uchrashib do‘stlashishdi?",
+   "options": [
+    "A) Daryoning ikki bo‘yida",
+    "B) Zangar bozori ichida",
+    "C) Podsho saroyi ayvonida",
+    "D) Cho‘ponlarning qarorgohida"
+   ],
+   "answer": "A) Daryoning ikki bo‘yida"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Mohiboy va Gurkiboy Olatog‘da kimlarning yilqisini haydab ketishdi?",
+   "options": [
+    "A) Zangar podshosining yilqisini",
+    "B) Qoraxon podshoning yilqisini",
+    "C) Azbarxo‘ja karvonining molini",
+    "D) Cho‘ponlar to‘dasining qo‘ylarini"
+   ],
+   "answer": "A) Zangar podshosining yilqisini"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ikki bolani dorga tortish haqida kim hukm chiqargan edi?",
+   "options": [
+    "A) Yangi podsho Kuntug‘mish",
+    "B) Buvraxon podsho",
+    "C) Xolmo‘min yasovulboshi",
+    "D) Azbarxo‘ja karvonboshi"
+   ],
+   "answer": "A) Yangi podsho Kuntug‘mish"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kuntug‘mish to‘ra dorg‘a tortilayotgan bolalarni qanday qilib qutqardi?",
+   "options": [
+    "A) Chopib kelib ipni bo‘shatdi",
+    "B) Jallodlarni qilich bilan chopdi",
+    "C) Askerlarga buyruq berib to‘xtatdi",
+    "D) Qal'adan qochib ketdi"
+   ],
+   "answer": "A) Chopib kelib ipni bo‘shatdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kuntug‘mish Zangar shahri taxtiga o‘tirgach birinchi bo‘lib nimani angladi?",
+   "options": [
+    "A) Ushlangan bolalar o‘z o‘g‘illari ekanini",
+    "B) Yovlar hujum qilayotganini",
+    "C) Xolbeka vafot etganini",
+    "D) Xolmo‘min xiyonat qilganini"
+   ],
+   "answer": "A) Ushlangan bolalar o‘z o‘g‘illari ekanini"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Gurkiboy bilan Mohiboy dorg‘a tortilish oldida bir-birini qutqarmoqchi bo‘ldi?",
+   "options": [
+    "A) Bir-biriga bo‘lgan chin mehrdan",
+    "B) Jallodlardan qo‘rqqanlari uchun",
+    "C) Podshoga xushomad qilish uchun",
+    "D) Taqdirga tan berishgani uchun"
+   ],
+   "answer": "A) Bir-biriga bo‘lgan chin mehrdan"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Kuntug‘mish Zangar podsholigini Xolmo‘minga topshirib No‘g‘oyga qaytdi?",
+   "options": [
+    "A) O‘z vatanini sog‘ngani uchun",
+    "B) Zangar xalqi haydagani uchun",
+    "C) Urushdan qochgani uchun",
+    "D) Otasi chaqirmagani uchun"
+   ],
+   "answer": "A) O‘z vatanini sog‘ngani uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kuntug‘mishning Azbarxo‘ja jazosini o‘g‘illariga topshirishi nimani anglatadi?",
+   "options": [
+    "A) Adolat va xiyonatga munosib jazo",
+    "B) Shafqatsizlik va berahmlik",
+    "C) Mas'uliyatdan qochish istagi",
+    "D) Qo‘rqoqlik va ikkilanuvchanlik"
+   ],
+   "answer": "A) Adolat va xiyonatga munosib jazo"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Doston so‘ngidagi «Yaxshi yetsin murodga, yomon qolsin uyatga» degan jumla nimaga chorlaydi?",
+   "options": [
+    "A) Yaxshilik va adolat g‘alabasiga",
+    "B) Faqat boylik orttirishga",
+    "C) Yovlar bilan urushmaslikka",
+    "D) Odamlardan uzoqlashishga"
+   ],
+   "answer": "A) Yaxshilik va adolat g‘alabasiga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Dostonda Kuntug‘mish va Xolbekaning boshidan kechirgan sinovlari kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Vafo va sabrga ehtirom",
+    "B) Qo‘rquv va umidsizlik",
+    "C) G‘azab va nafrat",
+    "D) Loqaydlik va befarqlik"
+   ],
+   "answer": "A) Vafo va sabrga ehtirom"
+  }
+ ]
+}

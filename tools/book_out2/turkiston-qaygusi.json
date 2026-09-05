@@ -1,0 +1,477 @@
+{
+ "title": "Turkiston qayg‘usi",
+ "author": "Alixonto‘ra Sog‘uniy",
+ "genre": "tarixiy-publitsistik asar",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "vatanparvarlik",
+   "tarix",
+   "mustaqillik",
+   "ilm-fan",
+   "adolat"
+  ],
+  "theme": "Asarning bosh g‘oyasi — Vatan va millat ozodligi, o‘zlikni va tarixni anglash, jaholat va mustamlakachilik zulmiga qarshi ilm-ma'rifat hamda birlik bilan kurashishdir. Muallif tarixiy xatolardan saboq chiqarishga va milliy g‘ururni asrashga chaqiradi.",
+  "summary": "«Turkiston qayg‘usi» — Alixonto‘ra Sog‘uniy va uning o‘g‘li Asilxon tomonidan yozilgan tarixiy-publitsistik manba bo‘lib, unda XX asrning birinchi yarmida Turkiston va Sharqiy Turkistonda bo‘lib o‘tgan fojeali voqealar yoritiladi. Asarning birinchi qismida sovet rejimining ilk yillarida xalqimizga o‘tkazilgan zulm-sitamlari, diniy va milliy huquqlarning poymol etilishi, dunganlar qirg‘ini hamda muallifning Koshg‘arga hijrat qilishi bayon etiladi. Muallif o‘tmish tarixni unutish millatni inqirozga va dushman yetakchiga tobe bo‘lishga olib kelishini alohida ta'kidlaydi.\n\nIkkinchi qismda Asilxonning ota sadosiga va Sharqiy Turkiston milliy-ozodlik harakatlariga oid voqealar davom ettiriladi. G‘ulja qo‘zg‘oloni, Sharqiy Turkiston Islom Jumhuriyatining tashkil topishi (1944), Alixonto‘raning mazkur respublika Prezidenti va Marshali etib saylanishi hamda milliy armiyaning dushman kuchlariga qarshi jangi atroflicha tasvirlanadi. Biroq sovet va xitoy imperiyalari ittifoqlikda milliy-ozodlik harakatini barbod etishga urinadilar. 1946-yili sovet maxfiy xizmatlari Alixonto‘rani Toshkentga maxfiy ravishda olib qochib, nazarband qiladilar. Asar so‘ngida vatan, millat va din qayg‘usida o‘tgan buyuk arbobning kelajak avlodga qilgan nido va nasihatlari yorqin aks etgan.",
+  "characters": "Alixonto‘ra Sog‘uniy — Sharqiy Turkiston Islom Jumhuriyatining birinchi Prezidenti va Marshali, yirik diniy olim, tabib va davlat arbobi; Asilxon Alixonto‘ra o‘g‘li — Alixonto‘raning ikkinchi o‘g‘li, harbiy zobit, inqilobiy harakatlar va otasining merosini davom ettiruvchi; Shen Shitsay (Shin duban) — Sharqiy Turkistondagi shafqatsiz xitoy harbiy diktatori; Majuying — Xitoy harbiy arbobi va qo‘mondoni.",
+  "conclusion": "Bu kitob o‘quvchiga o‘z o‘tmishini xolis anglash, Vatan erki va milliy mustaqillik qanchalik buyuk ne'mat ekanligini tushunib yetish sabog‘ini beradi. Bola undan tarixiy bilimlarni olish bilan birga, imon, sabr, halollik, ilmgohlik hamda ota-onaga va Vatanga sadoqat kabi oliy insoniy fazilatlarni o‘zlashtiradi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "Tarixga, siyosatga, Vatan taqdiri va milliy ozodlik harakatlariga qiziquvchan, teran fikrlaydigan va mulohazali o‘smirlar uchun.",
+  "events": [
+   "Alixonto‘ra Sog‘uniy o‘zi guvoh bo‘lgan voqealar va tarixiy haqiqatlarni yozishga kirishdi.",
+   "Sovet hokimiyati tomonidan boylar va dindorlarga nisbatan ommaviy tazyiqlar boshlandi.",
+   "1919-yili So‘quluq va Pishpak atrofida dunganlar va ruslar qo‘zg‘oloni shafqatsizlarcha bostirildi.",
+   "Alixonto‘ra tazyiqlardan saqlanish uchun Koshg‘ar tomonga hijrat qilishga majbur bo‘ldi.",
+   "Muallif Bolasog‘un shahrining qadimiy tarixi va madaniyati haqida qimmatli ma'lumotlar berdi.",
+   "Bolasog‘un xarobalaridan topilgan qadimiy arabcha bitikli qabrtosh rus ma'murlari tomonidan olib ketildi.",
+   "Sovet hukumatining dinsizlik va ma'rifatga qarshi yuritgan siyosati oqibatlari ochib berildi.",
+   "Alixonto‘ra va uning safdoshlari sovet xavfsizlik organlari tomonidan ta'qib qilindi va qamoqqa olindi.",
+   "Qamoqxonada sovuq va og‘ir sharoitlar tufayli mahbuslar ochlik va azoblarga duchar bo‘lishdi.",
+   "Sharqiy Turkistonga o‘tgach, G‘ulja va Kura shaharlaridagi ijtimoiy-siyosiy ahvol kuzatildi.",
+   "Qumul va Xo‘tan shaharlarida xitoy zulmiga qarshi yerlik musulmonlar qo‘zg‘olon ko‘tarishdi.",
+   "Qo‘zg‘olonchilar dushman askarlarining qurol-yarog‘ ortilgan aravalarini pistirmada qo‘lga kiritdilar.",
+   "Asilxon otasini ta'qibdan qutqarish uchun jasorat ko‘rsatib, jallodlarni chalg‘itdi.",
+   "Oroltepa va Kunas yaylovlarida erkin hayot va chorvadorlarning mehmondo‘stligi tasvirlandi.",
+   "G‘ulja shahrida ozodlik harakati alanga olib, xalq mustaqillik shiorlari bilan ko‘chaga chiqdi.",
+   "1944-yili Sharqiy Turkiston Islom Jumhuriyati e'lon qilindi.",
+   "Alixonto‘ra Sog‘uniyga Jumhuriyat rahbarligi topshirilib, Marshal unvoni berildi.",
+   "Yangi hukumat maorifni yo‘lga qo‘ydi, diniy va fuqarolik erkinliklarini ta'minladi.",
+   "Oqsuv qal'asiga hujum paytida Mahmud oxun dushman darvozasiga o‘t qo‘yib mardlik ko‘rsatdi.",
+   "Sovet va Xitoy siyosatdonlari til biriktirib, Sharqiy Turkiston respublikasini barbod etishdi.",
+   "1946-yili Alixonto‘ra sovet agentlari tomonidan maxfiy ravishda Toshkentga olib qochib ketildi va nazarband qilindi."
+  ],
+  "quotes": [
+   "O‘tmishdagi tarixini unutib, endigi tarixini tuymagan bir millat qorong‘uda qolgan, qo‘lida tayog‘i yo‘q ko‘r kishi kabi qayoqqa oyoq qo‘yishini bilmaganlikdan dushman yetakchisi keyinidan ketishga majbur bo‘ladi.",
+   "Qaysi bir millat o‘z milliy davlatidan ajrab, uning hukumati yo‘qolar ekan, hukumat egasi bo‘lgan kelgindilar hisobiga yil sayin nasllari ozayib borib, eng so‘nggida butunlay yutilib ketadi.",
+   "Ish – bilganniki, qilich – urganniki.",
+   "Vatanni suymak imondandur.",
+   "Ular esa hiylalar qildilar. Olloh ham ularning hiylalarini bekorga chiqardi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alixonto‘ra Sog‘uniy qaysi shahrida tug‘ilgan?",
+   "options": [
+    "A) Toshkentda",
+    "B) To‘qmoqda",
+    "C) Buxoroda",
+    "D) G‘uljada"
+   ],
+   "answer": "B) To‘qmoqda"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif ona tilini boshqa tillardan qanday ko‘rgan?",
+   "options": [
+    "A) Teng ko‘rgan",
+    "B) Ortiqroq ko‘rgan",
+    "C) Keyinga qo‘ygan",
+    "D) Quvonchsiz ko‘rgan"
+   ],
+   "answer": "B) Ortiqroq ko‘rgan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif insonga berilgan fazilatlardan qaysi birini tanlab oldi?",
+   "options": [
+    "A) Tibbiyot ilmini",
+    "B) Tarix ilmini",
+    "C) Harbiy sohani",
+    "D) Savdo ishini"
+   ],
+   "answer": "B) Tarix ilmini"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun o‘tmish tarixni unutish dushmanga tobe bo‘lishga olib keladi?",
+   "options": [
+    "A) Yozuvni yo‘qotgani uchun",
+    "B) Qorong‘uda ko‘r kabi qolgani uchun",
+    "C) Qurol yetishmagani uchun",
+    "D) Boylik tugagani uchun"
+   ],
+   "answer": "B) Qorong‘uda ko‘r kabi qolgani uchun"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "1919-yili So‘quluqda kimlar kommunistlarga qarshi qo‘zg‘olon ko‘tardi?",
+   "options": [
+    "A) Dunganlar va ruslar",
+    "B) O‘zbeklar va uyg‘urlar",
+    "C) Qirg‘izlar va qozoqlar",
+    "D) Xitoyliklar va tojiklar"
+   ],
+   "answer": "A) Dunganlar va ruslar"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Dushmanga qarshi qurol ko‘tarish uchun muallif qanday shartni zarur deydi?",
+   "options": [
+    "A) Faqat boylik bo‘lishini",
+    "B) Askar va qurol tengligini",
+    "C) Chet el yordamini",
+    "D) Tog‘da yashirinishni"
+   ],
+   "answer": "B) Askar va qurol tengligini"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qo‘zg‘olonda imkoniyat bo‘lmasa, vaqtincha sabr qilish to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, barcha kuchni saqlaydi",
+    "B) Noto‘g‘ri, darhol urishish kerak",
+    "C) Qo‘rqoqlik va befoyda ish",
+    "D) Dushmanga taslim bo‘lishdir"
+   ],
+   "answer": "A) To‘g‘ri, barcha kuchni saqlaydi"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Qutadg‘u bilik» dostonining muallifi qaysi shahardan bo‘lgan?",
+   "options": [
+    "A) Samarqandlik",
+    "B) Bolasog‘unlik",
+    "C) Buxorolik",
+    "D) Koshg‘arlik"
+   ],
+   "answer": "B) Bolasog‘unlik"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «vatan bolalariga ulgu bo‘lg‘udek» deb nimani nazarda tutgan?",
+   "options": [
+    "A) Kelajakka ibrat bo‘lishni",
+    "B) Boylik yig‘ib qoldirishni",
+    "C) Surgun bo‘lib yashashni",
+    "D) Chegarani yopib qo‘yishni"
+   ],
+   "answer": "A) Kelajakka ibrat bo‘lishni"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Bolasog‘un shahrining eski turkcha laqabi nima edi?",
+   "options": [
+    "A) Beshboliq",
+    "B) Moqulboliq",
+    "C) Oqsuv",
+    "D) Tiroz"
+   ],
+   "answer": "B) Moqulboliq"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alixonto‘ra qamoqqa olinganida unga hamxona bo‘lgan shaxs nima qildi?",
+   "options": [
+    "A) Qochishga harakat qildi",
+    "B) Ochlik e'lon qildi",
+    "C) Qorovul bilan urishdi",
+    "D) Jim o‘tira berdi"
+   ],
+   "answer": "B) Ochlik e'lon qildi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Payg‘ambarimiz ummatlarini saqlanishga buyurgan uch nuqsondan biri qaysi?",
+   "options": [
+    "A) Kambag‘allik",
+    "B) Ojizlik",
+    "C) Saxovat",
+    "D) Saxiylik"
+   ],
+   "answer": "B) Ojizlik"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Insonlar o‘z erkiga va vataniga ega bo‘lmasa, nima bo‘ladi?",
+   "options": [
+    "A) Boshqalar hisobiga yo‘qoladi",
+    "B) Boyligi tez ko‘payadi",
+    "C) Ilm-fani rivojlanadi",
+    "D) Madaniyati saqlanib qoladi"
+   ],
+   "answer": "A) Boshqalar hisobiga yo‘qoladi"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun sovet hukumati o‘zida qahatchilik bo‘lsa ham mollarni chetga chiqargan?",
+   "options": [
+    "A) Xalqni boyitish uchun",
+    "B) Boshqalarni tuzoqqa tortish uchun",
+    "C) Savdoni rivojlantirish uchun",
+    "D) Omborlar to‘lib ketgani uchun"
+   ],
+   "answer": "B) Boshqalarni tuzoqqa tortish uchun"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Koshg‘arga hijrat qilishda muallifga kim safardosh bo‘ldi?",
+   "options": [
+    "A) Asilxon",
+    "B) Dovudhoji",
+    "C) Turdi qori",
+    "D) Ahmedov"
+   ],
+   "answer": "B) Dovudhoji"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Qumul qo‘zg‘olonida musulmonlarga diniy ruh berilishining sababi nima edi?",
+   "options": [
+    "A) Diniy ulamolar iltimosi",
+    "B) Xalqni tezroq birlashtirish",
+    "C) Xitoy podshosining buyrug‘i",
+    "D) Tinchlik o‘rnatish istagi"
+   ],
+   "answer": "B) Xalqni tezroq birlashtirish"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qo‘zg‘olonchilar dushman aravalarini qanday qilib qo‘lga tushirishdi?",
+   "options": [
+    "A) Tog‘ qisig‘ida pistirma qo‘yib",
+    "B) Qal'aga olov yoqib",
+    "C) Tinch sulh tuzish orqali",
+    "D) Daryodan suzib o‘tib"
+   ],
+   "answer": "A) Tog‘ qisig‘ida pistirma qo‘yib"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Otani qamoqdan saqlab qolish uchun Asilxonning qilgan ishi qanday baholanadi?",
+   "options": [
+    "A) Ota oldidagi sadoqat",
+    "B) Qo‘rqoqlik va xiyonat",
+    "C) O‘ylamay qilingan xato",
+    "D) Befoyda va zararli ish"
+   ],
+   "answer": "A) Ota oldidagi sadoqat"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Payg‘ambarimiz tilidan «eng yomon ko‘r balo» deb nimani tasvirlagan?",
+   "options": [
+    "A) Urush va vayronagarchilikni",
+    "B) Johil nodonlarning hukmronligini",
+    "C) Qahatchilik va ocharchilikni",
+    "D) Kasallik va tabiat ofatini"
+   ],
+   "answer": "B) Johil nodonlarning hukmronligini"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Asilxon va hamrohlari Oroltepada qanday savdo bilan shug‘ullanishdi?",
+   "options": [
+    "A) G‘alla sotishdi",
+    "B) Teri ayirboshlashdi",
+    "C) Meva sotishdi",
+    "D) Qurol-yarog‘ tayyorlashdi"
+   ],
+   "answer": "B) Teri ayirboshlashdi"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sharqiy Turkiston Islom Jumhuriyatining birinchi Prezidenti kim bo‘lgan?",
+   "options": [
+    "A) Asilxon to‘ra",
+    "B) Alixonto‘ra Sog‘uniy",
+    "C) Yoqubbek",
+    "D) Mas'ud afandi"
+   ],
+   "answer": "B) Alixonto‘ra Sog‘uniy"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sharqiy Turkiston hukumatida Alixonto‘raga qanday harbiy unvon berildi?",
+   "options": [
+    "A) General",
+    "B) Marshal",
+    "C) Polkovnik",
+    "D) Mayor"
+   ],
+   "answer": "B) Marshal"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "G‘ulja qo‘zg‘oloni g‘alabasidan so‘ng davlatda qanday o‘zgarishlar bo‘ldi?",
+   "options": [
+    "A) Maorif va din rivojlandi",
+    "B) Savdo butunlay to‘xtatildi",
+    "C) Barcha maktablar yopildi",
+    "D) Aholi ko‘chirib yuborildi"
+   ],
+   "answer": "A) Maorif va din rivojlandi"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Sovet hukumati Sharqiy Turkiston mustaqilligini nima uchun xohlamadi?",
+   "options": [
+    "A) O‘z ta'sirini yo‘qotmaslik uchun",
+    "B) Diniy erkinlik berish uchun",
+    "C) Xalqni boyitish uchun",
+    "D) Xitoyga yordam berish uchun"
+   ],
+   "answer": "A) O‘z ta'sirini yo‘qotmaslik uchun"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Mahmud oxun dushman darvozasini ochish uchun qanday mardlik qildi?",
+   "options": [
+    "A) Xandakdan o‘tib o‘t qo‘ydi",
+    "B) Dushmanga sovg‘a berdi",
+    "C) Qal'a devorini buzdi",
+    "D) Qo‘shinni orqaga qaytardi"
+   ],
+   "answer": "A) Xandakdan o‘tib o‘t qo‘ydi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Alixonto‘raning diniy va ibodat erkinligini boshqa dinlarga ham bergani to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, adolatli rahbarlik belgisi",
+    "B) Noto‘g‘ri, faqat bir din bo‘lsin",
+    "C) Qonunga zid va xato ish",
+    "D) Dushmanga yon berishdir"
+   ],
+   "answer": "A) To‘g‘ri, adolatli rahbarlik belgisi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Vatan ozodligi yo‘lida birlashish va ilm olish shartmi?",
+   "options": [
+    "A) Shart, o‘zlik va erk omili",
+    "B) Keraksiz, faqat qurol yetarli",
+    "C) Zararli, tinchlikni buzadi",
+    "D) Dushman talabiga bog‘liq"
+   ],
+   "answer": "A) Shart, o‘zlik va erk omili"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Vatanni suymak imondandur» hadisi kitobda qaysi g‘oyani ulug‘laydi?",
+   "options": [
+    "A) Yurtga sadoqat va sevgini",
+    "B) Faqat ibodat qilishni",
+    "C) Dunyo boyligini to‘plashni",
+    "D) Yot ellarga hijrat qilishni"
+   ],
+   "answer": "A) Yurtga sadoqat va sevgini"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alixonto‘ra 1946-yili sovetlar tomonidan maxfiy ravishda qayerga olib qochildi?",
+   "options": [
+    "A) Pekinga",
+    "B) Toshkentga",
+    "C) Moskvaga",
+    "D) Olmaotaga"
+   ],
+   "answer": "B) Toshkentga"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Alixonto‘ra Sog‘uniy yozgan ushbu mashhur asarning nomi nima?",
+   "options": [
+    "A) Temur tuzuklari",
+    "B) Turkiston qayg‘usi",
+    "C) Tarixi Muhammadiy",
+    "D) Buxoro tarixi"
+   ],
+   "answer": "B) Turkiston qayg‘usi"
+  }
+ ]
+}

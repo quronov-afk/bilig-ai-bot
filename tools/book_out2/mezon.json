@@ -1,0 +1,479 @@
+{
+ "title": "Mezon",
+ "author": "Shomirza Turdimov",
+ "genre": "qissa",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "erkinlik",
+   "muhabbat",
+   "falsafa",
+   "tasavvuf",
+   "ozodlik",
+   "ramzlar"
+  ],
+  "theme": "Asarda insonning ruhiy erkinligi, ommaning tor va qat'iy mezonlari hamda majnunlik (devonalik) orqali haqiqiy ozodlik va ilohiy muhabbatga erishish g‘oyasi ramziy va majoziy tasvirlar vositasida ilgari suriladi.",
+  "summary": "Asar daryo bo‘yida taroziga suv quyayotgan ozg‘in yigit (Qays) obrazi bilan boshlanadi. Tarozi pallalarida suv va kelib tushayotgan narsalar tenglashadi. Sharshara yonida olti darvesh nay chalib, chilim chekib, soch-soqollarini qirqib tugunda daryoga oqizishadi. Daryoda oqib kelgan tugun ikki pallaga ajralgan oq-qizil olmaga aylanib, ikki otliqqa tegadi. Otliqlar ko‘zalarni olti aso-daraxt yoniga keltiradilar va chaqaloqlarning yig‘isi g‘ijjak kuyiga jo‘r bo‘lib tinchlanadi. Qays saboq paytida darslikdagi ALIF, LOM, MIM harflarining qushlarga aylanib uchganini ko‘rib devonalarcha raqs tushadi. Ustoz buni tushunmay, uni jinni deb qochib ketadi. Qays kosadagi suvda Laylini ko‘radi, ammo otasi kosani tortib olib itga beradi; Qays itni bag‘riga bosib Laylini quchganday bo‘ladi. Bolalar va odamlar uni 'Majnun' deb masxara qilishadi. Majnun daryodan paxta ustida yurganday bexavotir suv kechib o‘tadi. Cho‘lda chol yoqqan gulxan alangasida Laylining jamolini ko‘rib raqs tushadi va cho‘g‘ ustida kuymay uxlab qoladi. Odamlar uni ushlab daryoga tashlashadi, lekin otliq uni qutqaradi. Ota-onasi vafot etgach, Majnun kultepada kul sovurib, qumsoatdagi suratlarni kuzatadi. Kulol ustaxonasida loyning ko‘za va Layliga aylanishini xayolidan o‘tkazadi. Biydek dashtda bo‘m-bo‘sh ko‘zadan havoni simirib huzur oladi, qaroqchilar bilan gaplashadi. Qul bozorida zanjirband devona ayol bilan savdolashadi. Kaklik va kiyiklar bilan tillashib, soxta 'Laylimajnunchilar'ning bo‘yoq sepib urushayotganini kuzatadi. Quruq daraxt ostida soxta Majnun bilan to‘qnash kelib, ko‘zani otishi bilan daraxt yashnab ketadi. Ziyoratgohda Qo‘rboshi Majnunni ko‘rib tavba qiladi va kishanlaridan yechiladi. Layli Majnun toshga aylanganini eshitib, g‘orga boradi va sozandalar hamda maxsus surtmalar bilan uni qayta tiriltiradi. Qays tirilgach, 'Kimsan?' deb Laylini tanimay chiqib ketadi. Majnun sherni sichqonga aylantirib, uni kuydirib kulini sharsharaga sochadi. Oxirida daryo bo‘yida ot va itning yemishlarini almashtirib adolat o‘rnatadi va tarozining mis pallasidan qayiq qilib, shayinini eshkak qilib oqimga qarshi suzib ketadi.",
+  "characters": "Qays (Majnun) — bosh qahramon, ruhiy erkinlikka erishgan, olamning sir-sinoatini ko‘ra oladigan va ilohiy muhabbat yo‘lida devona bo‘lgan yigit. Layli — Majnunning ilohiy sevgi timsoli, uni qutqarish va tiriltirish uchun g‘orga borib turli vositalar bilan harakat qiladigan oqila qiz. Ustoz — Qaysga alifboni o‘rgatishga urinadigan, lekin uning ruhiy holatini tushunmay, 'jinni' deb qochadigan an'anaviy bilim egasi. Qaysning otasi — o‘g‘lining devonaligini tushunmay, uni zanjirband qilishga va kosasini itga berishga urinadigan dunyoviy kishi. Chol (O‘tparast) — tog‘da o‘tin yig‘ib o‘t yoqadigan va surnay chalan so‘fiyona siymo. Qo‘rboshi (Qora qaroqchi) — Majnun bilan dashtda va ziyoratgohda to‘qnash kelib, tavba qiladigan va kishanlaridan xalos bo‘ladigan qaroqchilar boshlig‘i.",
+  "conclusion": "Asar kitobxonga erkinlik, ma'naviy tozalik va moddiy dunyo mezonlaridan ustun turuvchi ilohiy qadriyatlar haqida chuqur falsafiy tushuncha beradi. Insondagi ruhiy erkinlik va sadoqat tashqi ko‘rinish yoki ommaning tor hukmi bilan o‘lchanmasligini uqtiradi. Bola undan ezgulik, sabr va ma'naviy poklik insonning eng oliy fazilati ekanligini o‘rganadi.",
+  "difficulty": "qiyin",
+  "mood": "falsafiy, hayajonli, ramziy, sirli",
+  "for_whom": "Falsafiy va ramziy asarlarga, mumtoz adabiyot hamda tasavvufiy obrazlarga qiziqadigan o‘smirlar uchun.",
+  "events": [
+   "Ozg‘in yigit (Qays) tizzasigacha suv kechib, tarozining bir pallasiga idishda suv quyadi.",
+   "Sharshara ichidan chiqqan olti darvesh soch-soqolini kesib, ro‘molga tugib daryoga tashlaydi.",
+   "Daryoda oqib kelgan tugun ikki pallaga ajralgan olma shaklida suvoriylarga yetib boradi.",
+   "Suvoriylar ko‘zalarni olti aso-daraxt yoniga qo‘yib, chaqaloqlar yig‘isini kuy bilan tinchlantirishadi.",
+   "Ustoz Qaysga 'Alif'ni o‘rgatmoqchi bo‘lganda, harflar qushlarga aylanib uchib ketadi.",
+   "Qays kosadagi suvda Laylini ko‘radi, otasi esa kosani tortib olib itga beradi.",
+   "Bolalar ko‘chada itni qiynab, Qaysning ustidan 'Majnun' deb kulishadi.",
+   "Majnun daryo ustidan paxta ustida yurgandek bexavotir kechib o‘tadi.",
+   "Chol o‘tin yoqadi, Majnun alanga ichida Laylini ko‘rib devonalarcha raqsga tushadi.",
+   "Odamlar cho‘g‘ ustida uxlab yotgan Majnunni ushlab daryoga otadilar, lekin suvoriy uni qutqaradi.",
+   "Ota-onasi vafot etgach, Majnun kultepa yonida qumsoatdagi rasmlarga tikilib o‘tiradi.",
+   "Kulol ustaxonasida Majnun loyning ko‘za va Layli shakliga kirishini xayol qiladi.",
+   "Majnun dashtda bo‘m-bo‘sh ko‘za bilan havoni simirib, qaroqchilar bilan gaplashadi.",
+   "Qul bozorida Majnun zanjirband ayol bilan savdolashadi va masjid tomonga yo‘l oladi.",
+   "Soxta 'Laylimajnunchilar' bir-birlariga rangli bo‘yoqlarni sepib jang qilishadi.",
+   "Quruq daraxt ostida Majnun soxta Majnun otgan ko‘za bilan daraxtni yashnatib yuboradi.",
+   "Qo‘rboshi ziyoratgohda Majnunni ko‘rib, kishanlaridan xalos bo‘ladi va tavba qiladi.",
+   "Layli g‘orga borib, sozandalar va maxsus surtmalar vositasida toshga aylangan Majnunni tiriltiradi.",
+   "Majnun sherni sichqonga aylantirib, kuydirib kulini sharshara suviga sochadi.",
+   "Majnun ot va itning yemishini almashtirib, tarozining mis pallasidan qayiq qilib suzib ketadi."
+  ],
+  "quotes": [
+   "Arab tilida QAYS – ulgu, mezon, tarozi degani.",
+   "So‘fiylar: “Devonalik – ozodlik, erkinlikdir”, – deyishadi.",
+   "Omma o‘z mezoniga sig‘maganni devona ataydi.",
+   "Ruhiy erkinlik junun badaliga beriladi.",
+   "Suvdan yurib o‘tdi, jodugar ekan, kelyapti, bu yerga kelyapti.",
+   "Da'vo yolg‘ondir! Da'vo yolg‘ondir! Da'vo yolg‘ondir!",
+   "Botinda ham birgasan, zohirda ham birgasan."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qays suv bo‘yida tarozining pallasiga nima quyardi?",
+   "options": [
+    "A) Sut",
+    "B) Suv",
+    "C) Sharbat",
+    "D) Yog‘"
+   ],
+   "answer": "B) Suv"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Darveshlar kesilgan soch-soqollarini qayerga tashlashdi?",
+   "options": [
+    "A) Olovga",
+    "B) Qabrga",
+    "C) Daryoga",
+    "D) G‘orga"
+   ],
+   "answer": "C) Daryoga"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Daryodagi tugun qanday meva bo‘lib suv yuziga chiqdi?",
+   "options": [
+    "A) Anor",
+    "B) Olma",
+    "C) Uzum",
+    "D) Behi"
+   ],
+   "answer": "B) Olma"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ustoz Qaysga qaysi harfni aytganda LOM va MIM paydo bo‘ldi?",
+   "options": [
+    "A) Alif",
+    "B) Be",
+    "C) Te",
+    "D) Jim"
+   ],
+   "answer": "B) Be"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Dars va kosa epizodlarida voqealar qanday tartibda sodir bo‘ldi?",
+   "options": [
+    "A) Dars bo‘ldi, keyin kosa berildi",
+    "B) Kosa berildi, keyin dars bo‘ldi",
+    "C) It keldi, keyin dars boshlandi",
+    "D) Dars bo‘lmay turib kosa sindi"
+   ],
+   "answer": "A) Dars bo‘ldi, keyin kosa berildi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ustoz nega 'Bu jinni!' deb xonadan qochib chiqdi?",
+   "options": [
+    "A) Qays u bilan urishgani uchun",
+    "B) Qaysning sirli raqsini tushunmagani uchun",
+    "C) Xonaga ilan kirgani uchun",
+    "D) Qays kitobni yirtib tashlagani uchun"
+   ],
+   "answer": "B) Qaysning sirli raqsini tushunmagani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Qays nega otasi ko‘zani bergan itni bag‘riga bosdi?",
+   "options": [
+    "A) Itni juda yaxshi ko‘rgani uchun",
+    "B) Kosadagi Layli tasviri uchun",
+    "C) Otasiga jahli chiqqani uchun",
+    "D) Bolalardan qo‘rqqani uchun"
+   ],
+   "answer": "B) Kosadagi Layli tasviri uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qaysning o‘quv jarayonida harflarni qush deb ko‘rishi to‘g‘rimi?",
+   "options": [
+    "A) Noto‘g‘ri — diqqatsizlik qilgan",
+    "B) To‘g‘ri — u harf mohiyatini tuygan",
+    "C) Noto‘g‘ri — ustozini mensimagan",
+    "D) To‘g‘ri — dars o‘tishni xohlamagan"
+   ],
+   "answer": "B) To‘g‘ri — u harf mohiyatini tuygan"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif 'Ruhiy erkinlik junun badaliga beriladi' deganda nimani nazarda tutadi?",
+   "options": [
+    "A) Erkinlik uchun aqldan ozish kerakligini",
+    "B) Haqiqiy erk omma qolipidan chiqishligini",
+    "C) Barcha insonlar devona bo‘lishini",
+    "D) Erkinlik faqat boylarda bo‘lishini"
+   ],
+   "answer": "B) Haqiqiy erk omma qolipidan chiqishligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif darveshlarning nay chalishini qanday hissiyot bilan tasvirlagan?",
+   "options": [
+    "A) G‘amgin va sokin ajralish ruhi",
+    "B) Kulgili va yengil kayfiyat",
+    "C) Qo‘rqinchli va vahimali sahna",
+    "D) Urush va g‘azab tuyg‘usi"
+   ],
+   "answer": "A) G‘amgin va sokin ajralish ruhi"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Majnun daryodan narigi qirg‘oqqa qanday o‘tib oldi?",
+   "options": [
+    "A) Qayiqda suzib o‘tdi",
+    "B) Suv ustida yurib o‘tdi",
+    "C) Ko‘prikdan yugurib o‘tdi",
+    "D) Otda sakrab o‘tdi"
+   ],
+   "answer": "B) Suv ustida yurib o‘tdi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Majnun gulxan alangasida kimning jamolini ko‘rib raqs tushdi?",
+   "options": [
+    "A) Onasining",
+    "B) Laylining",
+    "C) Ustozining",
+    "D) Cholning"
+   ],
+   "answer": "B) Laylining"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Majnun ota-onasi vafotidan so‘ng qo‘lida qaysi buyumni tutib o‘tirardi?",
+   "options": [
+    "A) Qumsoatni",
+    "B) Ko‘zani",
+    "C) Asoni",
+    "D) Ko‘zguni"
+   ],
+   "answer": "A) Qumsoatni"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Kulol ustaxonasida Majnun loydan nima hosil bo‘lganini ko‘rdi?",
+   "options": [
+    "A) Qush",
+    "B) Layli",
+    "C) Ot",
+    "D) Daraxt"
+   ],
+   "answer": "B) Layli"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Majnunning dashtdagi sarguzashtida qanday ketma-ketlik bo‘ldi?",
+   "options": [
+    "A) Olov, keyin kulol ustaxonasi",
+    "B) Daryo, keyin olov va qabriston",
+    "C) Bozor, keyin ota-onasi vafoti",
+    "D) Qabriston, keyin masjid"
+   ],
+   "answer": "B) Daryo, keyin olov va qabriston"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Cho‘pon nega Majnunni ko‘rib qo‘rqib qochib ketdi?",
+   "options": [
+    "A) Majnun unga hamla qilgani uchun",
+    "B) Majnun suv ustida yurgani uchun",
+    "C) Majnunning qo‘lida qurol borligi uchun",
+    "D) Majnun uni haqorat qilgani uchun"
+   ],
+   "answer": "B) Majnun suv ustida yurgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Majnun bo‘m-bo‘sh ko‘zadan 'havo quyib' nega huzur olardi?",
+   "options": [
+    "A) U ko‘zada Layli nafasini tuydi",
+    "B) Ko‘zada salqin suv bor edi",
+    "C) Qaroqchilarni qo‘rqitmoqchi edi",
+    "D) Issiqdan qiynalgan edi"
+   ],
+   "answer": "A) U ko‘zada Layli nafasini tuydi"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Majnunning cho‘g‘ ustida zarracha kuymay uxlashi qanday baholanadi?",
+   "options": [
+    "A) Oddiy ko‘zboyachilik",
+    "B) Uning ruhiy pokligi mo‘jizasi",
+    "C) Uxlashning yangi usuli",
+    "D) Tabiatning tasodifiy hodisasi"
+   ],
+   "answer": "B) Uning ruhiy pokligi mo‘jizasi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Niqobli olomonning bir-biriga bo‘yoq sepib urushishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri — bu haqiqiy muhabbat",
+    "B) Noto‘g‘ri — bu soxta da'vodir",
+    "C) To‘g‘ri — bu shunchaki o‘yin",
+    "D) Noto‘g‘ri — bo‘yoqlar qimmat edi"
+   ],
+   "answer": "B) Noto‘g‘ri — bu soxta da'vodir"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif soxta da'vo qilayotgan olomon jangini qanday tasvirlagan?",
+   "options": [
+    "A) Ma'nosiz va kulgili talato‘p",
+    "B) Qahramonona va sharafli jang",
+    "C) Go‘zal va tartibli raqs",
+    "D) Qo‘rqinchli va fojiali urush"
+   ],
+   "answer": "A) Ma'nosiz va kulgili talato‘p"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Soxta Majnun daraxtdagi inidan nimani olib sindirdi?",
+   "options": [
+    "A) Qushni",
+    "B) Tuxumni",
+    "C) Shoxni",
+    "D) Toshni"
+   ],
+   "answer": "B) Tuxumni"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Majnun soxta Majnunga otgan ko‘za daraxtga tegib nima bo‘ldi?",
+   "options": [
+    "A) Daraxt ko‘kardi",
+    "B) Daraxt yondi",
+    "C) Daraxt sindi",
+    "D) Daraxt quridi"
+   ],
+   "answer": "A) Daraxt ko‘kardi"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qo‘rboshi ziyoratgohda Majnunni ko‘rganda uning qaysi narsasi yechildi?",
+   "options": [
+    "A) Kamari",
+    "B) Kishani",
+    "C) Sallasi",
+    "D) Poshnasi"
+   ],
+   "answer": "B) Kishani"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Layli g‘orda toshga aylangan Majnunni tiriltirishda nimadan foydalandi?",
+   "options": [
+    "A) Suyuqlik va kuydan",
+    "B) Qilich va qalqondan",
+    "C) Non va suvdan",
+    "D) Olov va tutundan"
+   ],
+   "answer": "A) Suyuqlik va kuydan"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Majnun g‘ordan chiqqach, qaysi hayvon bilan ko‘rishdi va uni nima qildi?",
+   "options": [
+    "A) Sherni sichqonga aylantirdi",
+    "B) Otni ayiqqa aylantirdi",
+    "C) Kiyikni qushga aylantirdi",
+    "D) Itni bo‘riga aylantirdi"
+   ],
+   "answer": "A) Sherni sichqonga aylantirdi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Asar oxirida Majnun daryoda suzib ketish uchun nimadan foydalandi?",
+   "options": [
+    "A) Yog‘och tarozi pallasidan",
+    "B) Katta yog‘och qayiqdan",
+    "C) Somon bog‘ mevasidan",
+    "D) Chap tomondagi solg‘idan"
+   ],
+   "answer": "A) Yog‘och tarozi pallasidan"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Majnun nega otga beda, itga ilikni almashtirib berdi?",
+   "options": [
+    "A) Har biriga mos yemishni berish uchun",
+    "B) Hayvonlarni adashtirmoqchi bo‘lgani uchun",
+    "C) Ularni jazolamoqchi bo‘lgani uchun",
+    "D) Qo‘lida boshqa narsa bo‘lmagani uchun"
+   ],
+   "answer": "A) Har biriga mos yemishni berish uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Majnun tirilgach, nega Layliga 'Kimsan?' deb qarab ketib qoldi?",
+   "options": [
+    "A) U moddiy Laylidan ko‘ra ilohiy sevgida edi",
+    "B) Uning xotirasi butkul o‘chib ketgan edi",
+    "C) U Laylidan xafa bo‘lib yurgan edi",
+    "D) U sherni qidirib ketmoqchi edi"
+   ],
+   "answer": "A) U moddiy Laylidan ko‘ra ilohiy sevgida edi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Qo‘rboshining tavba qilib farzand so‘rashi qanday xatti-harakat?",
+   "options": [
+    "A) To‘g‘ri — u xatosini anglab tavba qildi",
+    "B) Noto‘g‘ri — qaroqchi tavba qilmasligi kerak",
+    "C) Qiziq — u shunchaki hazillashdi",
+    "D) Xato — u zanjirini yo‘qotib qo‘ydi"
+   ],
+   "answer": "A) To‘g‘ri — u xatosini anglab tavba qildi"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif Majnunning tarozi pallasida suvda suzib ketishini qanday yakunlagan?",
+   "options": [
+    "A) Oqimga qarshi erkin va ilohiy yo‘l",
+    "B) Qo‘rqinchli va halokatli fojia",
+    "C) Quruq va zerikarli yakun",
+    "D) Oddiy va tasodifiy hodisa"
+   ],
+   "answer": "A) Oqimga qarshi erkin va ilohiy yo‘l"
+  }
+ ]
+}

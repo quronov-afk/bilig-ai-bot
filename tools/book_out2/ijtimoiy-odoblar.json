@@ -1,0 +1,79 @@
+{
+ "title": "Ijtimoiy odoblar",
+ "author": "Shayx Muhammad Sodiq Muhammad Yusuf",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "odob",
+   "oila",
+   "muomala",
+   "tarbiya",
+   "jamiyat"
+  ],
+  "theme": "Kitob Islom dinidagi ijtimoiy odoblar, jamiyatda va oilada o‘zini tutish, so‘zlashuv, kiyinish, mehmondorchilik va boshqa turli hayotiy vaziyatlardagi odob-axloq qoidalarini bayon qilishga bag‘ishlangan.",
+  "summary": "Ushbu kitob Islom dinidagi ijtimoiy odoblarning nazariy va amaliy asoslarini har tomonlama yoritib beruvchi diniy-ma'rifiy manbadir. Kitob so‘zboshi bilan boshlanib, unda Islom dinining mukammal qilingani, odobning inson hayoti va ma'naviyatidagi o‘rni hamda Islomda har bir harakat va muomalaning o‘ziga xos tartib-qoidalari mavjudligi ta'kidlanadi. Muallif odob tushunchasiga atroflicha ta'rif berib, uning yaxshilik va fazilatlarga da'vat etuvchi ma'naviy manba ekanini tushuntiradi.\n\nAsarda islomiy odoblarning manbalari sifatida Qur'oni Karim oyatlari va Payg‘ambarimiz Muhammad alayhissalomning hadislari keltiriladi. Insonning yer yuzidagi xalifalik maqomi hamda unga berilgan aziz-u mukarramlik g‘oyasi muallif tomonidan atroflicha bayon etiladi. Kitobda turli ijtimoiy sohalarga oid odoblar ketma-ketlikda atroflicha yoritib berilgan. Jumladan, kalom va so‘zlashuv odoblari, tildan keladigan ofatlarning oldini olish, salomlashish va boshqa kishilarning maskaniga izn so‘rab kirish qoidalari bayon qilinadi.\n\nShuningdek, kitobda oilaviy hayot odoblari, er va xotinning o‘zaro huquq hamda majburiyatlari, tarbiya masalalari keng o‘rin olgan. Taomlanish, ichimlik ichish, mehmondorchilik va to‘y-marosimlarni dabdabasiz o‘tkazish odoblari haqida ko‘rsatmalar beriladi. Bayramlar, juma kuni hamda dam olish masalalaridagi shar'iy va xulqiy qoidalar ham tushuntirib o‘tiladi.\n\nAlohida boblar kiyinish odoblariga, erkak va ayollar liboslarining shar'iy talablariga, shaxsiy ozodalik hamda fitrat sunnatlariga bag‘ishlangan. Zamonaviy hayot talablaridan kelib chiqqan holda yo‘l harakati, naqliyot vositalaridan foydalanish, uyali telefon va internet orqali aloqa qilish odoblari ham kitobda atroflicha qamrab olingan. Yakuniy qismlarda esa matbuot, tijorat, masjid, qo‘shnichilik, ilm talab qilish, kasb-hunar egallash, bemorlarni ziyorat qilish hamda o‘lim, janoza va ta'ziya bildirish odoblari izchillik bilan bayon etiladi.",
+  "characters": "Muhammad alayhissalom, Abu Zarr, Abu Hurayra, Anas ibn Molik va boshqa sahobalar hamda ulamolar",
+  "conclusion": "Kitobni o‘qigan kitobxon ijtimoiy hayotdagi turli vaziyatlarda o‘zini qanday tutish, odamlar bilan chiroyli muomalada bo‘lish va oilada hamda jamiyatda odob-axloq qoidalariga rioya qilish bo‘yicha zaruriy ma'lumotlarni oladi. Bu asar insonning ma'naviy dunyosini boyitishga va shaxsiy intizomni shakllantirishga xizmat qiladi. O‘quvchi kundalik munosabatlarda yaxshilik va samimiyatni ustun qo‘yish tuyg‘usini rivojlantiradi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, nasihatomuz",
+  "for_whom": "Islomiy odoblar, jamiyatda go‘zal xulq-atvor va odob-axloq qoidalarini o‘rganishni istagan yoshlar hamda barcha kitobxonlar uchun.",
+  "events": [
+   "Kitob so‘zboshi bilan boshlanib, Islom dinining mukammalligi va odobning inson hayotidagi o‘rni haqida so‘z yuritiladi.",
+   "Odobning til va shariatdagi ta'riflari keltirilib, uning yaxshilik va fazilatlarga eltuvchi vosita ekani tushuntiriladi.",
+   "Odobning ahamiyati hamda uning nazariy va amaliy jihatlari atroflicha bayon qilinadi.",
+   "Islomiy odoblarning manbalari sifatida Qur'oni Karim va Hadisi shariflardan namunalar keltiriladi.",
+   "Insonning yer yuzidagi xalifalik vazifasi va unga berilgan aziz-u mukarramlik g‘oyasi ochib beriladi.",
+   "Kalom va so‘zlashish odoblari, tildan keladigan ofatlar va to‘g‘ri munosabat shakllari tushuntiriladi.",
+   "Maskan va hovli-haramni tutish, uyga kirishda izn so‘rash va oilaviy muomala odoblari ko‘rib chiqiladi.",
+   "Er-xotin va oila a'zolarining o‘zaro huquqlari hamda burchlariga oid odoblar bayon etiladi.",
+   "Taomlanish, ichimlik ichish, mehmondorchilik va to‘y-marosimlar o‘tkazish odoblari tushuntiriladi.",
+   "Bayramlar, juma kuni va dam olish joylarida o‘zini tutish tartib-qoidalari keltiriladi.",
+   "Erkaklar va ayollarga xos kiyinish hamda libos tanlash odoblari atroflicha yoritiladi.",
+   "Shaxsiy ozodalik, badan pokligi va fitrat sunnatlariga rioya qilish qoidalari tushuntiriladi.",
+   "Yo‘l harakati, naqliyot vositalaridan foydalanish, uyali telefon va internetdan foydalanish odoblari bayon etiladi.",
+   "Matbuot, axborot vositalari, tijorat hamda mol-dunyoga munosabat odoblari ko‘rib chiqiladi.",
+   "Masjidlar, jamoat namozlari, qo‘shnichilik va ilm olish odoblari bayon etiladi.",
+   "Kasb-hunar egallash, bemorlarni ziyorat qilish hamda o‘lim, janoza va ta'ziya bildirish odoblari bilan kitob yakunlanadi."
+  ],
+  "quotes": [
+   "Sizlar uchun Rasulullohda go‘zal o‘rnak bor",
+   "Kishi farzandini yoki biringiz farzandini odobli etib tarbiyalashi uning uchun har kuni yarim so‘ sadaqa qilishidan yaxshiroqdir",
+   "Ota-ona farzandiga go‘zal odobdan afzal ato bera olmaydi",
+   "Kim Allohga va oxirat kuniga iymon keltirgan bo‘lsa, mehmonini ikrom qilsin",
+   "Keng maskan, solih qo‘shni va yaxshi markab musulmon kishining saodatidandir"
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Mana shunday keng doiradagi sharafli odoblarga amal qilish avvalo kishining o‘zi uchun foydalidir. Misol uchun, choy ichadigan piyolamizni olib ko‘raylik. Kishi odobli bo‘lsa, o‘sha piyolani avaylab ishlatadi, toza tutadi. Natijada piyola uzoq vaqt unga ko‘ngildagidek xizmat qiladi.",
+   "question": "Piyola misolida keltirilgan fikrdan kelib chiqib, o‘zing ishlatadigan buyumlarga nisbatan odobli muomala qilish hayotingda qanday foyda berishini o‘ylaysan?"
+  },
+  {
+   "part": 2,
+   "context": "Abu Hurayra roziyallohu anhudan rivoyat qilinadi: “Rasululloh sollallohu alayhi vasallam: “Odamlar binoda kimo‘zarga kirishmaguncha, Qiyomat qoim bo‘lmaydi”, dedilar”. Buxoriy “Adabul mufrad”da rivoyat qilgan. Demak, bino qurishda kimo‘zarga borish, kim balandroq va dabdabaliroq qurishi ma'nosida musobaqalashish Qiyomatning alomatlaridan biri ekan.",
+   "question": "Nima uchun kishilar o‘rtasidagi dabdababazlik va kimo‘zarga bino qurish musobaqasi jamiyat uchun noqulayliklar tug‘dirishi mumkin deb hisoblaysan?"
+  },
+  {
+   "part": 2,
+   "context": "Yoshlarimiz o‘zlariga do‘st tanlashda juda ehtiyot bo‘lishlari, o‘ylab ish tutishlari darkor. Ular bilib-bilmay aroqxo‘r, qimorboz, buzuq kimsalar bilan do‘stlashib qolishmasin. Aks holda, “Qozonga yaqin yursang, qorasi yuqadi”, deganlaridek, yomon do‘stning kasofati urib qolishi turgan gap.",
+   "question": "Do‘st tanlash va uning inson fe'l-atvoriga ta'siri haqida o‘z hayotingdan yoki kuzatuvlaringdan qanday misollar keltira olasan?"
+  },
+  {
+   "part": 3,
+   "context": "Ammo “Sen istagancha bo‘lsa, buyoqdagi odamning ko‘zi og‘riydi-ku, unda nima bo‘ladi”, deyilsa, baqrayib, ko‘zini olaytiradi, jahl qiladi. Bu kabi beodobliklarga chek qo‘yilishi lozim. Hamma narsa odob doirasida, boshqalarga aziyat yetkazmagan, haqlari poymol qilinmagan tarzda amalga oshirilishi kerak.",
+   "question": "Jamoat joylarida suratga va videoga olishda boshqalarning tinchligi va qulayligini hurmat qilish sencha nega muhim?"
+  },
+  {
+   "part": 3,
+   "context": "Bir odam Alloh taolodan qo‘rqib, qo‘shnining haqqiga rioya etsa, uni hurmat qilsa, uning ahli-ayoliga, mol-mulkiga ko‘z olaytirmasa, bunday qilishni xayoliga ham keltirmasa, qo‘shnisi ham unga xuddi shunday munosabatda bo‘ladi. Bundan boshqa qo‘shnilar ham o‘rnak oladilar. Shu tariqa, butun jamiyat bir-biriga yaxshi munosabatda bo‘ladi, yuqoridagi gunoh ishlarga o‘rin qolmaydi, oxir-oqibat u baxtli-saodatli, tinch-totuv yashaydigan jamiyatga aylanadi.",
+   "question": "Qo‘shnilar o‘rtasidagi o‘zaro hurmat va yaxshi munosabat butun jamiyat tinchligiga qanday ta'sir ko‘rsatadi deb o‘ylaysan?"
+  }
+ ]
+}

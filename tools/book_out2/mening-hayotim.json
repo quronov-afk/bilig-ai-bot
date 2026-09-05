@@ -1,0 +1,478 @@
+{
+ "title": "Mening hayotim",
+ "author": "Henri Ford",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "mehnat",
+   "halollik",
+   "biznes",
+   "texnika",
+   "muvaffaqiyat",
+   "sanoat"
+  ],
+  "theme": "Asarning bosh g‘oyasi — halol va fidokorona mehnat, jamiyatga xizmat qilishni shaxsiy daromaddan yuqori qo‘yishdir. Muallif biznes va sanoatning asosiy maqsadi shunchaki boylik orttirish emas, balki insonlar turmushini yengillashtirish va dunyoni yashash uchun yaxshiroq makonga aylantirish ekanini isbotlaydi.",
+  "summary": "Kitob XX asrning mashhur sanoatchisi Henri Fordning hayot yo‘li va biznes falsafasi haqida hikoya qiladi. Ford Michigandagi fermada o‘sgan bo‘lib, yoshligidanoq og‘ir dehqonchilik mehnatini mexanizatsiyalashtirish, otlar o‘rnini bosuvchi mashinalar yaratish orzusi bilan yashaydi. U «Westinghouse» kompaniyasida lokomobillarni ta'mirlashdan ish boshlaydi va keyinchalik o‘zining ilk gaz dvigatelli avtomobilini va poyga mashinasini loyihalashtiradi.\n\nDetroyt avtomobil kompaniyasida ishlaganida, sheriklarining faqat qimmat narxda mashina sotib mo‘may daromad olishga intilishidan ko‘ngli qoladi va o‘z erkin faoliyatini boshlaydi. Ford Aleksandr Uinton ustidan poygada g‘alaba qozonib, o‘z dvigateli ishonchli ekanini ko‘rsatadi. Keyinchalik u mashhur Selden patenti sindikatiga qarshi uzoq yillar sudda kurashib, avtomobilsozlikda monopoliya o‘rnatilishiga yo‘l qo‘ymaydi.\n\nFord Motor Kompaniyasini tashkil etib, «Model T» avtomobilini ommaviy ishlab chiqarishni yo‘lga qo‘yadi. U Xaylend-park va River-Rujda ulkan zavodlar qurib, konveyer usulini va uzluksiz ishlab chiqarish texnologiyasini joriy etadi. Ford o‘z zavodida 8 soatlik ish kunini va kunlik minimal 5 dollar maoshni belgilab, sanoatda inqilob qiladi.\n\nBirinchi jahon urushi yillarida Ford korxonalari davlat buyurtmalarini bajaradi, Angliyaga «Fordzon» traktorlarini yetkazib beradi va harbiylar uchun po‘lat qayiqlar tayyorlaydi. Ford o‘z tajribalari va Tomas Edison bilan do‘stligi haqida so‘zlab, biznes, moliya, temiryo‘llar hamda xayriya ishlariga bo‘lgan o‘zining o‘zgacha va adolatli qarashlarini bayon qiladi.",
+  "characters": "Henri Ford — asar muallifi va bosh qahramon, mashhur ixtirochi hamda tadbirkor; Tomas Edison — elektrotexnika dahosi, Fordning yaqin do‘sti va ma'naviy maslakdoshi; Aleksandr Uinton — poygachi va avtomobil quruvchisi, Fordning ilk poygadagi raqibi; Jorj Selden — avtomobilsozlikda monopoliya o‘rnatmoqchi bo‘lgan patent egasi.",
+  "conclusion": "Ushbu asar o‘quvchiga halol va fidoyi mehnatning qadrini, har qanday qiyinchilikka qaramay maqsad sari chekinmasdan intilishni o‘rgatadi. Bola kitobdan tadbirkorlik mas'uliyati, tijoratda axloq va halollik, jamiyatga xizmat qilish haqiqiy muvaffaqiyat kaliti ekani haqida xulosa chiqaradi.",
+  "difficulty": "qiyin",
+  "mood": "ilhomlantiruvchi, o‘ylantiruvchi",
+  "for_whom": "Texnika va muvaffaqiyat sirlariga qiziqadigan, mehnatsevar va o‘z kelajagini o‘zi yaratishni xohlaydigan o‘smirlar uchun.",
+  "events": [
+   "1. Henri Ford Michigandagi fermada o‘sib-ulg‘ayadi va fermerlik ishlarini yengillashtirish haqida o‘ylaydi.",
+   "2. Ford «Westinghouse» kompaniyasida lokomobillarni ta'mirlash va yig‘ish bo‘yicha ish boshlaydi.",
+   "3. Ford ot qo‘shilmasdan harakatlanadigan arava va yengil bug‘ mashinasini yaratish ustida tajribalar o‘tkazadi.",
+   "4. Detroyt avtomobil kompaniyasida ishlab, boshqalarning faqat pul topishga intilishidan ko‘ngli qolib, ishdan ketadi.",
+   "5. Park-Pleysdagi ixcham ustaxonada to‘rt silindrli motorni mukammallashtirish ustida ishlaydi.",
+   "6. Grin-Poynt otchoparidagi poygada Aleksandr Uintonni mag‘lub etib, o‘z avtomobili tezligini isbotlaydi.",
+   "7. Jorj Selden va sindikat tomonidan ochilgan nohaq patent da'volariga qarshi uzoq yillar sudlashadi.",
+   "8. «Model T» avtomobilini yaratadi va har bir oila sotib ola oladigan arzon mashina chiqarishni e'lon qiladi.",
+   "9. Zavod ko‘lamini kengaytirish uchun Xaylend-parkdan katta yer maydoni sotib oladi.",
+   "10. Ishlab chiqarishda oqim-konveyer tizimini va qismlarni standartlashtirishni joriy etadi.",
+   "11. Zavodlarda «ekspertlar» fikriga tayanmay, imkonsiz tuyulgan texnik vazifalarni uddalaydi.",
+   "12. Ish kuni uzunligini 8 soatga tushirib, kunlik minimal maoshni 5 dollar qilib belgilaydi.",
+   "13. Ishga qabul qilishda xodimlarning o‘tmishini surishtirmaslik va ularga yangidan imkon berish qoidasini kiritadi.",
+   "14. River-Rujda ulkan zavod qurib, ko‘mir va metalldan chiqindisiz foydalanish texnologiyasini yo‘lga qo‘yadi.",
+   "15. Banklardan qarz olmay, o‘z mablag‘lari va ishlab chiqarish hisobiga kompaniya mustaqilligini saqlaydi.",
+   "16. Birinchi jahon urushi davrida Angliyaga ocharchilikning oldini olish uchun «Fordzon» traktorlarini jo‘natadi.",
+   "17. Tijoratlashgan va rasmiy xayriya tashkilotlarini tanqid qilib, insonlarga boqimandalik emas, ish berish kerakligini ta'kidlaydi.",
+   "18. Tomas Edison bilan uchrashadi va undan gaz dvigatellari bo‘yicha ruhlantiruvchi maslahat oladi.",
+   "19. AQSH dengiz kuchlari uchun qisqa muddatda River-Rujda po‘lat katerlar va «liberti» motorlarini tayyorlaydi.",
+   "20. O‘zining to‘rtta asosiy biznes tamoyilini bayon etib, halol va xolis xizmat ko‘rsatish g‘oyasini xulosa qiladi."
+  ],
+  "quotes": [
+   "Kuch-quvvat va mashina, pul va mol-mulk bizga hayotiy erkinlik bersagina foydalidir.",
+   "Baxt va faravonlikka faqat halol ishlash bilan erishilishini anglagan holda mehnat qilish tabiiydir.",
+   "Pul — qilingan xizmatning tabiiy mevasi.",
+   "Ehtiyotkorona shubhakorlik tamaddunning muvozanat toshidir.",
+   "Halol muvaffaqiyatsizlik sharmandalik emas, undan qo‘rqish sharmandalikdir.",
+   "Ilojsiz narsaning o‘zi yo‘q… «E'tiqod – umidlarimizning o‘zagi va ko‘rmaganlarimizning dalili»."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Fordning fikricha, pul va mol-mulk inson uchun nima hisoblanadi?",
+   "options": [
+    "A) Bosh maqsad",
+    "B) Maqsad yo‘lidagi vosita",
+    "C) Insoniy baxt",
+    "D) Jamiyat boyligi"
+   ],
+   "answer": "B) Maqsad yo‘lidagi vosita"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ford o‘zining ilk muvaffaqiyatli poygasida kimni mag‘lub etgan?",
+   "options": [
+    "A) Tomas Edisonni",
+    "B) Aleksandr Uintonni",
+    "C) Jorj Seldenni",
+    "D) Leland birodarlarini"
+   ],
+   "answer": "B) Aleksandr Uintonni"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ford bilan sudlashgan Jorj Selden nimaga ega edi?",
+   "options": [
+    "A) Patent huquqiga",
+    "B) Katta zavodga",
+    "C) Yangi motorga",
+    "D) Temiryo‘l liniyasiga"
+   ],
+   "answer": "A) Patent huquqiga"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ford yangi va mislsiz zavod qurish uchun qayerdan yer sotib oldi?",
+   "options": [
+    "A) River-Rujdan",
+    "B) Xaylend-parkdan",
+    "C) Vashingtondan",
+    "D) Klivlenddan"
+   ],
+   "answer": "B) Xaylend-parkdan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Fordning biznes tamoyiliga ko‘ra, mahsulot narxi qanday belgilanishi kerak?",
+   "options": [
+    "A) Bozor talabiga qarab",
+    "B) Ishlab chiqarish xarajatlariga qarab",
+    "C) Raqobatchilar narxiga qarab",
+    "D) Hukumat qaroriga qarab"
+   ],
+   "answer": "B) Ishlab chiqarish xarajatlariga qarab"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ford nega bolsheviklar joriy etgan tizimni muvaffaqiyatsiz deb bildi?",
+   "options": [
+    "A) Malakali muhandislarni haydashgani uchun",
+    "B) Yangi texnika sotib olishmagani uchun",
+    "C) Temiryo‘llarni yopishgani uchun",
+    "D) Dehqonlarda traktori yo‘qligi uchun"
+   ],
+   "answer": "A) Malakali muhandislarni haydashgani uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ford nega Detroyt avtomobil kompaniyasidagi lavozimidan ketishga qaror qildi?",
+   "options": [
+    "A) Faqat pul ketidan quvishgani uchun",
+    "B) Oylik maoshi kamligi uchun",
+    "C) Boshqa shaharga ko‘chgani uchun",
+    "D) Poygalarda yengilgani uchun"
+   ],
+   "answer": "A) Faqat pul ketidan quvishgani uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Fordning hukumat va biznes munosabati haqidagi qarashini qanday baholash mumkin?",
+   "options": [
+    "A) Hukumat biznesga kamroq aralashishi ma'qul",
+    "B) Hukumat hamma biznesni boshqarishi kerak",
+    "C) Biznes hukumatga xizmat qilmasligi kerak",
+    "D) Qonunlar har qanday muammoni yechadi"
+   ],
+   "answer": "A) Hukumat biznesga kamroq aralashishi ma'qul"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Fordning yangi g‘oyalarga shubha bilan qarash haqidagi fikri to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, ehtiyotkorlik muvozanatni saqlaydi",
+    "B) Xato, har bir g‘oyaga ergashish kerak",
+    "C) To‘g‘ri, yangi g‘oyalar hamisha zararli",
+    "D) Xato, eski g‘oyalar yaxshiroq"
+   ],
+   "answer": "A) To‘g‘ri, ehtiyotkorlik muvozanatni saqlaydi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Ehtiyotkorona shubhakorlik tamaddunning muvozanat toshidir» deyganda nimani nazarda tutgan?",
+   "options": [
+    "A) G‘oyalarni sinamay qabul qilmaslikni",
+    "B) Barcha yangilikdan qochishni",
+    "C) Insonlar bir-biriga ishonmasligini",
+    "D) Qonunlarga qat'iy rioya qilishni"
+   ],
+   "answer": "A) G‘oyalarni sinamay qabul qilmaslikni"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ford zavodida ishga qabul qilishda qaysi ma'lumot surishtirilmaydi?",
+   "options": [
+    "A) Ishchining yoshi",
+    "B) Ishchining o‘tmishi",
+    "C) Ishchining manzili",
+    "D) Ishchining ismi"
+   ],
+   "answer": "B) Ishchining o‘tmishi"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ford zavodida professional «ekspert»lar haqida qanday fikr bildirilgan?",
+   "options": [
+    "A) Ularsiz ish yurishmaydi",
+    "B) Ular ilojsiz narsalar haqida gapiradi",
+    "C) Ularga yuqori maosh to‘lanadi",
+    "D) Ular yangi ixtirolar qiladi"
+   ],
+   "answer": "B) Ular ilojsiz narsalar haqida gapiradi"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ford zavodida ishchilar orasida mushtlashuv yuz bersa nima qilingan?",
+   "options": [
+    "A) Jarima solingan",
+    "B) Darhol ishdan bo‘shatilgan",
+    "C) Boshqa sexga o‘tkazilgan",
+    "D) Tanbeh berilgan"
+   ],
+   "answer": "B) Darhol ishdan bo‘shatilgan"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "River-Ruj fabrikasida erigan metall qayerga bevosita quyilgan?",
+   "options": [
+    "A) Katta cho‘michlarga",
+    "B) Maxsus qoliplarga",
+    "C) Suvli havzalarga",
+    "D) Temiryo‘l vagonlariga"
+   ],
+   "answer": "B) Maxsus qoliplarga"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ford zavodida xarajatlarni tejash qanday natijaga olib keladi?",
+   "options": [
+    "A) Yillik ulkan daromadga",
+    "B) Ishchilar soni kamayishiga",
+    "C) Mahsulot sifati buzilishiga",
+    "D) Zavod berkilishiga"
+   ],
+   "answer": "A) Yillik ulkan daromadga"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ford korxonasida maoshlar qanday tizim bo‘yicha belgilangan?",
+   "options": [
+    "A) Ishchining yoshiga qarab",
+    "B) Xronometraj va norma bo‘yicha",
+    "C) Rahbarning kayfiyatiga qarab",
+    "D) Ishchilarning talabi bo‘yicha"
+   ],
+   "answer": "B) Xronometraj va norma bo‘yicha"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ford nega o‘z biznesi uchun banklardan qarz olishni xohlamas edi?",
+   "options": [
+    "A) G‘oya boshqalar nazoratiga o‘tmasligi uchun",
+    "B) Bankirlar ko‘p maosh so‘ragani uchun",
+    "C) Bankda pul bo‘lmagani uchun",
+    "D) Qarz berish taqiqlangani uchun"
+   ],
+   "answer": "A) G‘oya boshqalar nazoratiga o‘tmasligi uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Fordning fikricha, mavsumiylik muammosini qanday yengish mumkin?",
+   "options": [
+    "A) Yil davomida muntazam ishlab chiqarish bilan",
+    "B) Qishda zavodlarni butunlay yopish bilan",
+    "C) Yozda narxlarni keskin oshirish bilan",
+    "D) Faqat buyurtma bo‘lganda ishlash bilan"
+   ],
+   "answer": "A) Yil davomida muntazam ishlab chiqarish bilan"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Fordning ishchilarga munosabati va maoshni oshirishi to‘g‘ri qadam edimi?",
+   "options": [
+    "A) Ha, mehnat samaradorligi va baxtni oshirdi",
+    "B) Yo‘q, kompaniyani bankrot qildi",
+    "C) Ha, lekin ishchilar erjanib ketdi",
+    "D) Yo‘q, raqobatchilar bundan xursand bo‘ldi"
+   ],
+   "answer": "A) Ha, mehnat samaradorligi va baxtni oshirdi"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Pul — qilingan xizmatning tabiiy mevasi» deya nimani ta'kidlaydi?",
+   "options": [
+    "A) Pul ketidan quvish xatoligini",
+    "B) Pul eng oliy maqsad ekanini",
+    "C) Xizmat ko‘rsatish shart emasligini",
+    "D) Savdo-sotiq qalloblik ekanini"
+   ],
+   "answer": "A) Pul ketidan quvish xatoligini"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Tomas Edison yosh Fordning gaz dvigateli g‘oyasiga qanday munosabat bildirdi?",
+   "options": [
+    "A) Ustidan kuldi",
+    "B) Ishni davom ettirishga ilhomlantirdi",
+    "C) Elektrdan voz kechishni aytdi",
+    "D) O‘z kompaniyasiga ishga taklif qildi"
+   ],
+   "answer": "B) Ishni davom ettirishga ilhomlantirdi"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Birinchi jahon urushi davrida Ford Angliyaga qanday texnika yetkazib berdi?",
+   "options": [
+    "A) \"Fordzon\" traktorlarini",
+    "B) Yengil poyga mashinalarini",
+    "C) Katta paroxodlarni",
+    "D) Samolyot dvigatellarini"
+   ],
+   "answer": "A) \"Fordzon\" traktorlarini"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ford tijoratlashgan va rasmiy xayriya tashkilotlariga qanday qaragan?",
+   "options": [
+    "A) Salbiy, insoniylik yo‘qoladi deb bilgan",
+    "B) Juda ijobiy, qo‘llab-quvvatlagan",
+    "C) Ularga millionlab dollar ajratgan",
+    "D) O‘zi shunday tashkilot tuzgan"
+   ],
+   "answer": "A) Salbiy, insoniylik yo‘qoladi deb bilgan"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ford o‘zi sotib olgan temiryo‘lda birinchi navbatda nimani amalga oshirdi?",
+   "options": [
+    "A) Transport xarajatlarini kamaytirdi",
+    "B) Chipta narxini uch baravar oshirdi",
+    "C) Barcha ishchilarni bo‘shatdi",
+    "D) Poyezdlar harakatini to‘xtatdi"
+   ],
+   "answer": "A) Transport xarajatlarini kamaytirdi"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Ford ta'riflagan to‘rtta asosiy biznes tamoyilining eng birinchisi qaysi?",
+   "options": [
+    "A) Kelajakdan qo‘rqmaslik, o‘tmishga sajda qilmaslik",
+    "B) Raqobatchilarni yo‘q qilish",
+    "C) Maksimal daromad ketidan quvish",
+    "D) Faqat bank kreditiga tayanish"
+   ],
+   "answer": "A) Kelajakdan qo‘rqmaslik, o‘tmishga sajda qilmaslik"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Fordning fikricha, nima uchun monopolizm va salbiy raqobat jamiyatga zarar keltiradi?",
+   "options": [
+    "A) Sifatsiz, qimmat mahsulot keltirgani uchun",
+    "B) Yangi zavodlar qurilishini tezlashtirgani uchun",
+    "C) Ishchilar maoshini oshirgani uchun",
+    "D) Hukumatni kuchaytirgani uchun"
+   ],
+   "answer": "A) Sifatsiz, qimmat mahsulot keltirgani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ford insondagi muvaffaqiyatsizlikning asosiy sababi nimada deb hisoblaydi?",
+   "options": [
+    "A) Iroda va qat'iyat yetishmasligida",
+    "B) Bilim va diplom yo‘qligida",
+    "C) Pul va boylik yo‘qligida",
+    "D) Omadsiz tug‘ilganida"
+   ],
+   "answer": "A) Iroda va qat'iyat yetishmasligida"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Fordning «Haqiqiy mehribonlik tizimlashtirilmaydi» degan fikri qanday qadriyatni aks ettiradi?",
+   "options": [
+    "A) Samimiylik va xolis yordamni",
+    "B) Pul orqali maqtanishni",
+    "C) Jamiyatdan ajralib yashashni",
+    "D) Boqimandalikni rag‘batlantirishni"
+   ],
+   "answer": "A) Samimiylik va xolis yordamni"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «Halol muvaffaqiyatsizlik sharmandalik emas» iborasi bilan nimani uqtirmoqchi?",
+   "options": [
+    "A) Xatolardan saboq olib intilish lozimligini",
+    "B) Muvaffaqiyatsizlikka uchramaslik uchun ishlamaslikni",
+    "C) Xato qilish eng katta jinoyat ekanini",
+    "D) O‘tmishdagi omadsizlikni yashirish kerakligini"
+   ],
+   "answer": "A) Xatolardan saboq olib intilish lozimligini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Kitob oxiridagi «Ilojsiz narsaning o‘zi yo‘q» jumlasi kitobxonda qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Qat'iyat va komil ishonch tuyg‘usini",
+    "B) Taqdirga tan berish tuyg‘usini",
+    "C) Qo‘rquv va xavotir hissini",
+    "D) Mansabparastlik ishtiyoqini"
+   ],
+   "answer": "A) Qat'iyat va komil ishonch tuyg‘usini"
+  }
+ ]
+}

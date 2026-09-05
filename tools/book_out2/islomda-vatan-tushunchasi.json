@@ -1,0 +1,79 @@
+{
+ "title": "Islomda Vatan tushunchasi",
+ "author": "Muftiy Nuriddin Xoliqnazarov",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "vatanparvarlik",
+   "odob-axloq",
+   "ma’naviyat",
+   "tarix",
+   "tarbiya"
+  ],
+  "theme": "Kitob Islom dinida Vatan tushunchasining o‘rni, unga bo‘lgan muhabbatning mazmuni, Qur'on va Hadislardagi dalillar hamda tarixdagi buyuk siymolarning vatanparvarlik ibratini yoritishga qaratilgan.",
+  "summary": "Kitob muqaddima hamda bir necha asosiy bo‘limlardan tashkil topgan bo‘lib, unda Vatan va unga muhabbat tushunchasi diniy-ma'rifiy hamda ijtimoiy nuqtayi nazardan atroflicha tahlil qilinadi. Muqaddimada muallif bugungi kunda dunyo bo‘ylab yuz berayotgan notinchliklar, to‘s-to‘polonlar hamda tushunmovchiliklarning tub ildizi insonlarda Vatanga bo‘lgan muhabbat va daxldorlik hissining yetishmasligida ekanini ta'kidlaydi. Shuningdek, Islomda Vatan tushunchasi yo‘q degan puch da'volarga ilmiy hamda shar'iy dalillar bilan raddiya berish kitobning bosh maqsadi ekani bayon etiladi. Birinchi bo‘limda 'Vatan' va 'muhabbat' so‘zlarining lug‘aviy hamda istilohiy ma'nolari 'Lisanul arab', 'Muxtorus sihoh' kabi mo‘tabar arab qomuslari asosida izohlanadi. Vatan – inson fuqaroligini olib, unga mansub bo‘lgan, chegarasiga ega bo‘lgan va jamoaviy yashaydigan davlat ekani ko‘rsatiladi. Kitobning keyingi qismlarida Qur'oni karim oyatlari hamda Hadisi shariflarda Vatan tushunchasining ifodalanishi ko‘rib chiqiladi. Jumladan, Qur'onda Vatandan ayrilish kishining o‘zini o‘ldirishiga tenglashtirilgani, Payg‘ambarimiz Muhammad alayhissalomning Makkaga va Madinaga bo‘lgan cheksiz muhabbatlari hamda safardan qaytganda o‘z yurtlariga oshqqanliklari keltiriladi. Shuningdek, asarda payg‘ambarlar, sahobalar, mutasavviflar, Islom ulamolari hamda dunyo mutafakkirlarining Vatan haqidagi hikmatli so‘zlari jamlangan. Misol uchun, Najmiddin Kubroning mo‘g‘ullar bosqiniga qarshi mardona kurashgani va yurtini tashlab ketmagani haqidagi tarixiy voqea keltiriladi. Zahiriddin Muhammad Boburning Vatan firoqida yozgan ruboiylari hamda Vatan tuprog‘ini ardoqlash borasidagi qarashlar bayon etiladi. Kitobning so‘nggi bo‘limida Vatanning fuqarolar oldidagi haqlari va majburiyatlari sanab o‘tiladi: yashab turgan yerning tozaligini saqlash, tabiatni muhofaza qilish, madaniy merosni asrab-avaylash va o‘z ishini sidqidildan bajarish. Shu bilan birga, Vatanga xiyonat qilish eng og‘ir jinoyat hamda kabira gunoh ekani, tarixdagi xoinlarning achinarli qismati misolida ko‘rsatib beriladi.",
+  "characters": "Muftiy Nuriddin Xoliqnazarov, Najmiddin Kubro, Zahiriddin Muhammad Bobur, Napoleon Bonapart, Abu Rig‘ol, So‘fi Olloyor",
+  "conclusion": "Kitobni o‘qigan kitobxon Vatan tushunchasining teran ma'nosini va uning inson hayotidagi o‘rnini anglab yetadi. O‘quvchi o‘z tug‘ilib o‘sgan yurtini e'zozlash, uning tinchligi va obodligiga hissa qo‘shish har bir fuqaroning muqaddas burchi ekanini tushunadi. Shuningdek, asar yoshlarda milliy va ma'naviy daxldorlik, mas'uliyat va vatanparvarlik tuyg‘ularini shakllantirishga xizmat qiladi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, nasihatomuz, ma'rifiy",
+  "for_whom": "Vatan tarixi, ma'naviyat, Islom ma'rifati va odob-axloq mavzulariga qiziquvchi o‘smirlar va yoshlar uchun.",
+  "events": [
+   "Muallif kitobning yozilish sababi va Vatan tushunchasining dolzarbligini muqaddimada bayon etadi.",
+   "Kitobda Vatan so‘zining arab lug‘atlaridagi va istilohiy ma'nolari atroflicha izohlanadi.",
+   "Muhabbat tuyg‘usining ta'rifi hamda uning amaliy hayotda namoyon bo‘lishi ko‘rsatib beriladi.",
+   "Qur'oni karim oyatlarida yurt va diyor tushunchalarining kelishi tahlil qilinadi.",
+   "Hadisi shariflarda Payg‘ambarimizning Madina va Makkaga bo‘lgan muhabbatlari bayon etiladi.",
+   "Ulamolarning Vatanni sevish va unga oshiqish shariatda mustahab ekani haqidagi hukmlari keltiriladi.",
+   "Muso alayhissalom va Ibrohim alayhissalom kabi payg‘ambarlarning Vatan haqidagi duolari va qissalari yoritiladi.",
+   "Sahobalarning Vatanni obod qilish va yurtni sevish borasidagi hikmatli so‘zlari keltiriladi.",
+   "Najmiddin Kubroning mo‘g‘ullarga qarshi mardona kurashib, Vatan yo‘lida shahid bo‘lgani hikoya qilinadi.",
+   "So‘fi Olloyor va boshqa mutasavviflar ash'orlarida Vatan tuprog‘ining qadri talqin qilinadi.",
+   "Dunyo va Islom olimlarining vatanparvarlik haqidagi fikrlari jamlab ko‘rsatiladi.",
+   "Zahiriddin Muhammad Boburning Vatan firoqidagi kechinmalari va ruboiylari keltiriladi.",
+   "Chumoli va qaldirg‘och kabi jonzotlarning o‘z inini himoya qilishi vatanparvarlikka misol qilinadi.",
+   "Har bir fuqaroning Vatan oldidagi burchlari va haqlari birma-bir sanab o‘tiladi.",
+   "Vatanga xiyonat qilishning og‘ir jinoyat ekani va tarixdagi xoinlar qismati bayon etiladi."
+  ],
+  "quotes": [
+   "Vatani bor inson baxtli insondir. Vatani yo‘q inson esa baxtsiz insondir.",
+   "Musofir bo‘lmaguncha vatan va yurt qadr-qimmatini anglab bo‘lmaydi.",
+   "Safar azobning bir bo‘lagidir. Sizlarni taom, sharob va uyqudan to‘sadi.",
+   "Vatanparvarlik – yolg‘iz o‘z vataniga mehr qo‘yishdan iboratgina emas.",
+   "Ikki kishini tarix esdan chiqarmaydi: Vatan himoyachisi va Vatan xoinini.",
+   "Vatanni ota-onani yaxshi ko‘rgandek sevish lozim."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Vatani bor inson baxtli insondir. Vatani yo‘q inson esa baxtsiz insondir. Kindik qonimiz to‘kilgan va bir umr yashaydigan yurtimiz bizga taqdir qilingan vatandir. Musofir bo‘lmaguncha vatan va yurt qadr-qimmatini anglab bo‘lmaydi.",
+   "question": "Seningcha, nima uchun inson o‘z uyidan uzoqqa ketganida yoki musofir bo‘lganida Vatanining qadrini ko‘proq his qiladi? O‘z hayotingda yoki yaqinlaringiz misolida shunday holatni kuzatganmisan?"
+  },
+  {
+   "part": 1,
+   "context": "Chuniki vatan muhabbati millat, yurt tanlamaydi. Alloh taoloning O‘zi shunday bo‘lishini iroda qilgan. Tuya o‘z yeriga, qush iniga, yovvoyi hayvonlar o‘rmoniga, baliqlar suviga va inson o‘z vataniga oshiqishini ko‘rasiz. Garchi manfaati va rizqi boshqa joyda bo‘lsa ham.",
+   "question": "Har bir jonzot va inson o‘z tug‘ilib o‘sgan makoniga talpinishi haqida o‘ylab ko‘r. Sen o‘z mahallang yoki uyingga qaytganingda qanday tuyg‘ularni his qilasan?"
+  },
+  {
+   "part": 2,
+   "context": "Tarixchilarning yozishicha, Najmiddin Kubro rahmatullohi alayhga Chingizxon tomonidan unga qo‘shilish taklifi bo‘lganda, o‘ylab o‘tirmay rad etgan. Xorazmshoh u zotga oltmish nafarga yaqin shogirdi bilan shahardan chiqib ketish taklifi aytganida ko‘nmagan. Shogirdlariga: “Sizlar ketavering-lar, men dushman bilan olishaman”, deb shaharda qolgan.",
+   "question": "Najmiddin Kubroning o‘z yurtini tashlab ketmasdan, uni himoya qilish uchun qolganidan qanday ibrat olishing mumkin? Qiyin vaziyatda o‘z burchiga sodiq qolish sen uchun nimani anglatadi?"
+  },
+  {
+   "part": 3,
+   "context": "Har bir insonning vatan oldida bir necha burch va vazifalari bor: Vatanga muhabbatli bo‘lish; yashab turgan yerining tozaligi va go‘zalligiga hissa qo‘shish; yer usti va osti boyliklaridan oqilona foydalanish; madaniy va ma'naviy merosni asrab-avaylash, uni o‘rganish, o‘rgatish va kelajak avlodga yetkazish...",
+   "question": "Vatanning obod va ozoda bo‘lishiga kundalik hayotda sen qanday hissa qo‘sha olasan? O‘zing yashaydigan hududni asrash va obodonlashtirish bo‘yicha qanday amaliy ishlarni bajargansan?"
+  },
+  {
+   "part": 3,
+   "context": "Napoleon esa: Vataniga xiyonat qiladigan, millatini zarari uchun dushmaniga tilyog‘lamalik qiladigan kishiga faqat mol beriladi. Imperatorning qo‘liga kelsak, uni ishonchli, olijanob kishilargina ushlaydi!",
+   "question": "Nima uchun inson o‘z el-yurtiga xiyonat qilsa, hatto dushmanlari ham uni hurmat qilmaydi deb o‘ylaysan? Ishonch va sadoqat inson qadriyatida nega muhim o‘rin tutadi?"
+  }
+ ]
+}

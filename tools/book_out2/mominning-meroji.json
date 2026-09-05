@@ -1,0 +1,81 @@
+{
+ "title": "Mo‘minning me'roji",
+ "author": "Shayx Muhammad Sodiq Muhammad Yusuf",
+ "genre": "diniy-maʼrifiy",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "iymon",
+   "namoz",
+   "tahorat",
+   "fiqh",
+   "odob",
+   "poklik"
+  ],
+  "theme": "Kitob Islom dinining asosiy ustunlaridan biri bo‘lgan namoz ibodati, iymon shartlari, tahorat va poklanish qoidalari hamda hanafiy mazhabi bo‘yicha ibodat ahkomlarini o‘rgatishga bag‘ishlangan.",
+  "summary": "«Mo‘minning me'roji» kitobi Islom dinidagi eng ulug‘ ibodatlardan biri bo‘lgan namoz hamda unga bog‘liq shar'iy ahkomlarni hanafiy mazhabi asosida mufassal bayon etuvchi diniy-ma'rifiy qo‘llanmadir. Kitob muqaddima qismida muallif asarning yozilish sabablari, mazhabsizlikka raddiya berish va musulmonlarga ibodatlarni to‘g‘ri ado etishda ko‘maklashish maqsadini tushuntiradi.\n\nAsarning birinchi qismida din, shariat va fiqh tushunchalari, iymonning mohiyati hamda Islomning besh ustuni keltiriladi. Iymon shartlari – Alloh taologa, farishtalarga, ilohiy kitoblarga, payg‘ambarlarga, oxirat kuniga, qazoyu qadarga hamda o‘lgandan so‘ng qayta tirilishga bo‘lgan e'tiqod prinsiplari birma-bir sharhlanadi. Shuningdek, namozning ma'naviy-ruhiy ahamiyati va uning inson salomatligiga keltiradigan tibbiy-jismoniy foydalari sanab o‘tiladi.\n\nIkkinchi qism to‘liqligicha poklanish (tahorat) masalalariga bag‘ishlangan. Unda tahorat uchun ishlatiladigan suv turlari, najosat va sarqitlarning hukmlari, qazoyi hojat va istinjo odoblari, tahorat, g‘usl va tayammumning farz hamda sunnatlari atroflicha yoritiladi. Shuningdek, mahsiga va jarohatga mas'h tortish, hayz, nifos, istihoza hamda uzrli kishilarning ibodat qilish tartiblari ko‘rsatib beriladi.\n\nUchinchi qismda namoz ibodatining amaliy jihatlari: namoz vaqtlari, rakatlar soni, azon va iqomat aytish qoidalari, namozning farz, vojib, sunnat va mustahab amallari, namozni buzuvchi va unda makruh bo‘lgan holatlar bayon etiladi. Ikki, uch va to‘rt rakatli namozlarni o‘qish tartibi, jamoat namozi, qazolar, musofir, juma, janoza, hayit, bemor va turli nafl (tahajjud, ishroq, zuho, tasbeh) namozlarining tartib-qoidalari tushuntiriladi.\n\nKitob yakunida masjid odoblari, salla o‘rash sunnati, olti diniy kalima va qirq farz keltirilib, Payg‘ambarimiz sollallohu alayhi vasallam, roshid xalifalar, sahobalar va avliyolarning namozdagi xushu' hamda ixloslaridan ibratli misollar beriladi.",
+  "characters": "yo‘q",
+  "conclusion": "Ushbu kitob orqali o‘quvchi Islom dinining asosiy e'tiqodiy qoidalari va namoz ibodatining hanafiy mazhabidagi tartib-qoidalarini mukammal o‘rganadi. Poklik, tahorat va g‘uslning shar'iy hamda amaliy jihatlarini anglab yetadi. Ibodatlarda ixlos, xushu' va intizomning naqdar muhimligini hayotiy hamda tarixiy misollar orqali tushunib yetadi. Shuningdek, kundalik hayotda toza va pokiza yashash hamda ma'naviy komillikka intilish tuyg‘usi shakllanadi.",
+  "difficulty": "o‘rta",
+  "mood": "vazmin, nasihatomuz",
+  "for_whom": "Islom dini ahkomlari, tahorat hamda namoz o‘qish tartiblarini hanafiy mazhabi bo‘yicha mukammal o‘rganishni istagan o‘smirlar va kitobxonlar uchun.",
+  "events": [
+   "Kitob muqaddimasida asarning tayyorlanish sabablari va hanafiy mazhabi bo‘yicha namoz kitobiga bo‘lgan ehtiyoj haqida so‘z yuritiladi.",
+   "Din va shariat tushunchalarining ma'nosi hamda Islom dinining besh ustuni tushuntiriladi.",
+   "Iymonning mohiyati va uning qabul bo‘lish shartlari bayon etiladi.",
+   "Allohga, farishtalarga, kitoblarga, payg‘ambarlarga, oxiratga, qadarga va qayta tirilishga iymon keltirish shartlari batafsil yoritiladi.",
+   "Namoz ibodatining inson ruhiyati va jismoniy salomatligi uchun manfaatli foydalari ko‘rib chiqiladi.",
+   "Poklanish uchun ishlatiladigan suvlar va najosatlarning turlari hamda ularning shar'iy hukmlari bayon qilinadi.",
+   "Qazoyi hojat hamda istinjo qilish odoblari ko‘rsatib beriladi.",
+   "Tahorat va g‘uslning farzlari, sunnatlari hamda bajarilish tartibi tushuntiriladi.",
+   "Tayammum qilish hamda mahsi va jarohatga mas'h tortish qoidalari keltiriladi.",
+   "Hayz, nifos va istihoza holatlaridagi ayollarning hamda uzrli kishilarning ibodat hukmlari bayon etiladi.",
+   "Misvok ishlatish sunnati va uning tibbiy hamda ma'naviy foydalari haqida ma'lumot beriladi.",
+   "Azon va iqomat aytish tartibi hamda namozning rakatlari va vaqtlari tushuntiriladi.",
+   "Ikki, uch va to‘rt rakatli namozlarni ado etish tartibi, namozning farz va vojib amallari ko‘rsatiladi.",
+   "Jamoat namozi, qazo namozlari hamda musofir, juma, janoza va hayit namozlarini o‘qish hukmlari bayon etiladi.",
+   "Tahajjud, ishroq, zuho va tasbeh kabi nafl namozlarini o‘qish tartiblari tushuntiriladi.",
+   "Masjid odoblari keltirilib, Payg‘ambarimiz, sahobalar va ulamolarning namozdagi ixlos va xushu'laridan ibratli misollar keltiriladi."
+  ],
+  "quotes": [
+   "Din aqlli insonlarni xayrli va ezgu ishlarga yetaklaydi, faqat yaxshilikka boshlaydi.",
+   "Yeyish, ichish, uxlash moddiy ehtiyoj bo‘lganidek, din ham ma'naviy ehtiyojdir.",
+   "Insonlar manfaatini ta'minlash va uni himoya qilish shariatning asosiy maqsadidir.",
+   "Badanni ham, ruhni ham poklamay turib namoz o‘qib bo‘lmaydi.",
+   "Masjidlar Allohning toati va zikri bilan mashg‘ul bo‘linadigan makonlar bo‘lgani uchun ular “Allohning uylari” deya vasf qilinadi.",
+   "Salla o‘rash Rasululloh sollallohu alayhi vasallamning sunnatlari bo‘lib, mo‘minlikni bildirib turuvchi alomat sanaladi."
+  ]
+ },
+ "questions": [],
+ "no_test": true,
+ "talk_questions": [
+  {
+   "part": 1,
+   "context": "Din aqlli insonlarni xayrli va ezgu ishlarga yetaklaydi, faqat yaxshilikka boshlaydi. Yeyish, ichish, uxlash moddiy ehtiyoj bo‘lganidek, din ham ma'naviy ehtiyojdir.",
+   "question": "Insonning moddiy va ma'naviy ehtiyojlari o‘rtasidagi muvozanatni saqlash seningcha nima uchun muhim va o‘z hayotingda ma'naviy ehtiyojlaringni qanday qondirasan?"
+  },
+  {
+   "part": 1,
+   "context": "Vujudning salomatligi tananing tozaligiga bog‘liqdir. Namoz uchun shart bo‘lgan tahorat va g‘usl poklikning ayni o‘zidir. Binobarin, namoz ham moddiy, ham ma'naviy poklikdir. Badanni ham, ruhni ham poklamay turib namoz o‘qib bo‘lmaydi.",
+   "question": "Poklik va tozalikka rioya qilish sening kunlik kayfiyating hamda o‘zingni his qilishingga qanday ta'sir ko‘rsatadi? Hayotingdan misol keltir."
+  },
+  {
+   "part": 2,
+   "context": "Misvok borasida yuzdan ortiq hadislar vorid bo‘lgan. Bundan tashqari sahobiylarning ham misvokning fazilatlari, foydalari haqidagi so‘zlari ko‘p. Aliy ibn Abu Tolib roziyallohu anhu: “Og‘izlaringiz Qur'on yo‘lidir. Uni misvok bilan tozalang”, “Qur'on o‘qish, ro‘za tutish va misvok ishlatish xotirani kuchaytiradi”, deganlar.",
+   "question": "Kunlik tartibingda shaxsiy gipiyena va tozalik odatlarini shakllantirishda o‘zingga qanday qoidalar belgilab olgansan?"
+  },
+  {
+   "part": 3,
+   "context": "Masjidlar namozlarni jamoat bilan ado etish joylaridir. Masjidlar Allohning toati va zikri bilan mashg‘ul bo‘linadigan makonlar bo‘lgani uchun ular “Allohning uylari” deya vasf qilinadi. Qur'oni Karimda masjidlarning fazli va ahamiyati haqida ko‘plab oyati karimalar kelgan.",
+   "question": "Jamoat bo‘lib birga bajariladigan ezgu ishlar kishilar o‘rtasidagi hamjihatlikka qanday ta'sir qiladi deb o‘ylaysan? O‘z tajribangdan misol so‘zlab ber."
+  },
+  {
+   "part": 3,
+   "context": "Muslim ibn Yasir namozga turganida o‘z oila a'zolariga der ekan: “Sizlar suhbatlashaveringlar, nima gapirganlaringni men bilmasam bo‘ldi”. Bir kuni u Basraning jome' masjidida namoz o‘qirdi. Masjid devorining bir bo‘lagi yiqilib tushdi, hamma jonini qutqarish uchun qochib qoldi, biroq u (Ibn Yasir) shovqinni ham eshitmadi.",
+   "question": "Biror ishga butun diqqat-e'tiboringni qaratish va chalg‘ituvchi omillarga chalg‘imaslik senga qanday yutuqlar beradi? Shunday holatni hayotingda qachon his qilgansan?"
+  }
+ ]
+}

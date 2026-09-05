@@ -1,0 +1,477 @@
+{
+ "title": "Boboso‘z izidan",
+ "author": "Eshqobil Shukur",
+ "genre": "ilmiy-ommabop",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "11-13",
+  "age_hint": "11+",
+  "topics": [
+   "ona tili",
+   "so‘zlar tarixi",
+   "etimologiya",
+   "milliy qadriyatlar",
+   "adabiyot"
+  ],
+  "theme": "O‘zbek tilidagi so‘zlarning kelib chiqishi, asl ma’nolari va xalqimizning boy ma’naviy-tarixiy merosini anglash hamda ona tiliga muhabbat uyg‘otish.",
+  "summary": "Kitob muallifi Eshqobil Shukur ona tilimizdagi ko‘plab so‘zlarning kelib chiqishi va ularning asl ma’nolarini tadqiq etadi. Asar shoir Erkin Vohidovga bag‘ishlangan xat bilan boshlanadi. Muallif tilni shunchaki aloqa vositasi emas, balki millat tafakkurining Vatani deb biladi. U o‘z hayotiy xotiralari va xalq og‘zaki ijodi, qadimiy manbalar (Koshg‘ariyning «Devonu lug‘otit-turk»i, Navoiy asarlari) asosida so‘zlar tarixiga sayohat qiladi. Masalan, «yaylov» va «chayla» so‘zlarining «yoz» (yozloq) ma’nosidan kelib chiqqanini bolalikda adashib cho‘pon o‘toviga borib qolgani xotirasi bilan tushuntiradi. «Ultontoz» ismidagi «ulton» poyabzal tagcharmi ekanini va bu nom dushmanlik obrazi uchun tanlanganini ta’kidlaydi. Ukasining xashagini o‘g‘irlagani uchun Bolta akaga berilgan «Ultontoz» laqabi orqali el orasidagi axloqiy munosabatlarni yoritadi. Shuningdek, «Kimsan» so‘zining bronza, yaltiroq bo‘yoq ekani, «yo‘qla» so‘zining aslida o‘tganlarni xotirlashdan kelgani, «cho‘t» so‘zining rus tilidan o‘zbekchalashgani kabi ko‘plab so‘zlar tahlil qilinadi. Matnda «sinchi», «dangal», «olchoq», «qozon», «tegirmon», «dahanaki jang», «surbet», «ko‘kay» kabi yuzlab so‘zlarning etimologiyasi hamda ularga bog‘liq xalqona urf-odatlar bayon etiladi. Asar so‘ngida ona tili, Mahmud Koshg‘ariy va Navoiyga bag‘ishlangan ta’sirchan she’rlar hamda ona tilining millat taqdiridagi o‘rni haqidagi esse beriladi. Muallif har bir so‘z orqali ajdodlarimizning donishmandligi va milliy o‘zligimizni anglashga da’vat etadi.",
+  "characters": "Eshqobil Shukur — asar muallifi, shoir va adabiyotshunos, so‘zlar tarixining fidoyi tadqiqotchisi. Erkin Vohidov — taniqli shoir, muallifning ustozi va ilhomlantiruvchisi. Maman — muallifning bolalikdagi oshnasi. Bolta aka va Ulash aka — qishloq odamlari, el orasidagi fe’l-atvor va axloqiy saboqlarni ochib beruvchi personajlar.",
+  "conclusion": "Bu kitob kitobxon qalbida ona tiliga nisbatan chuqur ehtirom va muhabbat uyg‘otadi. Bola so‘zlarning shunchaki tovush emas, balki boy tarix va ma’naviyat ekanini anglaydi. Asar mantiqiy fikrlash, so‘z boyligini oshirish va milliy o me’rosga sadoqat ruhida tarbiyalaydi. Ota-onalar uchun bu kitob farzandining milliy o‘zligini anglashi va tilni e’zozlashi uchun eng yaxshi ma’rifiy manbadir.",
+  "difficulty": "o‘rta",
+  "mood": "samimiy, ma’rifiy, o‘ylantiruvchi",
+  "for_whom": "Tilimiz va so‘zlar tarixiga qiziqadigan, so‘zlarning tub ma’nosini bilmoqchi bo‘lgan hamda adabiyotni sevadigan o‘quvchilarga.",
+  "events": [
+   "Eshqobil Shukur Erkin Vohidov xotirasiga ramazon hayiti arafasida maktub yozadi.",
+   "Muallif ona tilini tafakkurining Vatani va aziz Ona timsolida ko‘rishini bayon qiladi.",
+   "Muallif olti yoshida Maman degan oshnasi bilan adashib, yaylovdagi cho‘pon o‘toviga borib qolganini eslaydi.",
+   "Cho‘pon oilasi bolalarga go‘sht, non va qo‘yqatiq berib siylaydi hamda qishloqqa kuzatib qo‘yadi.",
+   "Muallif «ulton» so‘zining qoramol terisidan qilingan tagcharm ekanini izohlaydi.",
+   "Ulash aka ukasi Bolta akani xashak o‘g‘irlayotganda ushlab olgani va onasi uni Ultontoz degani eslanadi.",
+   "«Kimsan» so‘zining oltinga o‘xshash sariq yaltiroq modda (bronza) ekani lug‘atlar yordamida tushuntiriladi.",
+   "Boy o‘z itini «Kimsan!» deb chaqirganda o‘g‘ri qo‘rqib qochib ketgani haqida hikoyat keltiriladi.",
+   "«Yo‘qla» so‘zining dastlab o‘lgan kishini xotirlash ma’nosida qo‘llangani aytib o‘tiladi.",
+   "«Xomcho‘t» so‘zidagi «cho‘t» ruscha «schyot» so‘zidan kelib chiqqani tushuntiriladi.",
+   "«Sinchi» so‘zi odam yoki otning qomatiga qarab fe’lini biladigan kishiga nisbatan aytilishi yoritiladi.",
+   "«Dangal» so‘zining aslida arpa-bug‘doyning dasta qilib bog‘langan bog‘i ekani bayon qilinadi.",
+   "Muallif bolaligida inak sog‘ayotgan ayollarning sigirni erkalab kuylaganlarini eslaydi.",
+   "Qurg‘oqchilik paytida yomg‘ir so‘rab o‘tkaziladigan «Sutxotin» marosimi haqida ma’lumot beriladi.",
+   "Otlarning yoshiga qarab qulun, toy, g‘o‘non, do‘non deb atalishi tushuntiriladi.",
+   "«Dahanaki jang» iborasi og‘iz va til bilan bo‘ladigan og‘zaki aytishuv ekani ta’kidlanadi.",
+   "Muallif bolaligida galagov paytida xirmonjoyda otlar bug‘doy yanchishini tomosha qilganini eslaydi.",
+   "«Surbet» so‘zi quritilgan, qotgan sur go‘sht kabi yuzi qattiq kimsalarga nisbatan aytilishi izohlanadi.",
+   "Muallif Mahmud Koshg‘ariy va Alisher Navoiy yodiga bag‘ishlab yozgan she’rlarini keltirib o‘tadi.",
+   "Ona tili milliy tafakkurni yuksaltiruvchi va millatni asrab qoluvchi buyuk kuch ekani ta’kidlanadi."
+  ],
+  "quotes": [
+   "O‘zbekiston mening, o‘zbek tili esa tafakkurimning Vatanidir.",
+   "So‘zdan uzoqlashgan odam o‘zidan uzoqlashadi.",
+   "Har bitta so‘z o‘z tilining fuqarosi.",
+   "Qaysi millatning maqoli ko‘p bo‘lsa, uning ma’naviyati shuncha teran bo‘ladi.",
+   "Yaxshi usta terini ulton qilur, yaxshi xotin erini sulton qilur.",
+   "Millatning birinchi ma’naviy shahodatnomasi ham uning tilidir."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Eshqobil Shukur kitobdagi birinchi maktubni kimga bag‘ishlagan?",
+   "options": [
+    "A) Erkin Vohidovga",
+    "B) Abdulla Oripovga",
+    "C) Mirtemirga",
+    "D) Halima Xudoyberdiyevaga"
+   ],
+   "answer": "A) Erkin Vohidovga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Muallif olti yoshida kim bilan yaylovga chiqib ketgan?",
+   "options": [
+    "A) Maman bilan",
+    "B) Sobirjon bilan",
+    "C) Ulash aka bilan",
+    "D) Bolta aka bilan"
+   ],
+   "answer": "A) Maman bilan"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lug‘atda \"ulton\" so‘ziga qanday izoh berilgan?",
+   "options": [
+    "A) Qaramol terisidan pishiq tagcharm",
+    "B) Yumshoq ipak mato",
+    "C) Boshga kiyiladigan do‘ppi",
+    "D) Yog‘ochdan yasalgan idish"
+   ],
+   "answer": "A) Qaramol terisidan pishiq tagcharm"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "\"Kimsan\" so‘zining asl ma’nosi nima?",
+   "options": [
+    "A) Bronza, yaltiroq sariq modda",
+    "B) Qimmatbaho ipak mato",
+    "C) Kumushdan yasalgan pichoq",
+    "D) Tog‘da o‘sadigan dori"
+   ],
+   "answer": "A) Bronza, yaltiroq sariq modda"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Muallif \"yaylov\" va \"chayla\" so‘zlarini qaysi fasl bilan bog‘laydi?",
+   "options": [
+    "A) Yoz fasli bilan",
+    "B) Qish fasli bilan",
+    "C) Kuz fasli bilan",
+    "D) Bahor fasli bilan"
+   ],
+   "answer": "A) Yoz fasli bilan"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega baxshilar Alpomishning dushmaniga Ultontoz deb ism qo‘yishgan?",
+   "options": [
+    "A) Uning tubanligini ko‘rsatish uchun",
+    "B) U juda boy bo‘lgani uchun",
+    "C) U poyabzal tikkani uchun",
+    "D) U botir polvon bo‘lgani uchun"
+   ],
+   "answer": "A) Uning tubanligini ko‘rsatish uchun"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "O‘g‘ri nega boyning uyidan juftakni rostlab qolgan?",
+   "options": [
+    "A) \"Kimsan!\" degan chaqiriqdan qo‘rqib",
+    "B) It tishlab olganidan qo‘rqib",
+    "C) Uyda chiroq yonganidan qo‘rqib",
+    "D) Boy uni ushlab olganidan"
+   ],
+   "answer": "A) \"Kimsan!\" degan chaqiriqdan qo‘rqib"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Bolta akaning o‘z ukasidan xashak o‘g‘irlashi qanday xatti-harakat?",
+   "options": [
+    "A) Uyatsiz va nomardlarcha ish",
+    "B) Aqlli va to‘g‘ri qaror",
+    "C) Qahramonlik va jasorat",
+    "D) Oddiy va to‘g‘ri ish"
+   ],
+   "answer": "A) Uyatsiz va nomardlarcha ish"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallifning \"O‘zbekiston mening, o‘zbek tili esa tafakkurimning Vatanidir\" degani nimani anglatadi?",
+   "options": [
+    "A) Til va milliy shuur birligini",
+    "B) Til bilish shart emasligini",
+    "C) Faqat chet tillarini o‘rganishni",
+    "D) Geografik chegaralarni anglashni"
+   ],
+   "answer": "A) Til va milliy shuur birligini"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnga ko‘ra, \"yo‘qla\" va \"yo‘qlov\" so‘zlarining dastlabki ma’nosi nima bilan bog‘liq?",
+   "options": [
+    "A) Aza va marhum xotirasi bilan",
+    "B) To‘y va bayram marosimlari bilan",
+    "C) Ovchilik va dehqonchilik bilan",
+    "D) Savdo va tijorat ishlari bilan"
+   ],
+   "answer": "A) Aza va marhum xotirasi bilan"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qadimgi tilimizda \"tush\" so‘zi qanday ma’noni anglatgan?",
+   "options": [
+    "A) Kun yoki kunduz",
+    "B) Tungi qorong‘ulik",
+    "C) Qishki sovuq",
+    "D) Yozgi issiq"
+   ],
+   "answer": "A) Kun yoki kunduz"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "\"Sinchi\" deb qanday odamga nisbatan aytilgan?",
+   "options": [
+    "A) Tana tuzilishidan fe’lini biladigan",
+    "B) Faqat yog‘och yo‘nadigan usta",
+    "C) Dehqonchilik qiladigan tajribali odam",
+    "D) Suv yo‘llarini tozalaydigan kishi"
+   ],
+   "answer": "A) Tana tuzilishidan fe’lini biladigan"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "\"Dangal\" so‘zining qadimgi asl ma’nosi nima bo‘lgan?",
+   "options": [
+    "A) Dasta qilib bog‘langan g‘alla",
+    "B) Uzun yog‘och tayoq",
+    "C) Katta cho‘yan qozon",
+    "D) Temirdan yasalgan kalit"
+   ],
+   "answer": "A) Dasta qilib bog‘langan g‘alla"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "\"Ichak-chavoq\" birikmasidagi \"chavoq\" so‘zi nimani anglatadi?",
+   "options": [
+    "A) Kichik baliqcha",
+    "B) Qalin teri",
+    "C) Yurt chegarasi",
+    "D) Quruq o‘tin"
+   ],
+   "answer": "A) Kichik baliqcha"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnda \"tegra\", \"tevarak\" va \"to‘garak\" so‘zlari qaysi moslama bilan bog‘lanadi?",
+   "options": [
+    "A) Tegirmon bilan",
+    "B) Sandal bilan",
+    "C) Qozon bilan",
+    "D) O‘tov bilan"
+   ],
+   "answer": "A) Tegirmon bilan"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega payg‘ambarlar ham qadimda \"savchi\" deb atalgan?",
+   "options": [
+    "A) Xudoning so‘zini yetkazgani uchun",
+    "B) To‘ylarni boshqarganliklari uchun",
+    "C) Dehqonchilikni o‘rgatganliklari uchun",
+    "D) Savdo-soqti qilganliklari uchun"
+   ],
+   "answer": "A) Xudoning so‘zini yetkazgani uchun"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Ayol kishi kasal bo‘lgan sigirni nega so‘ydirmaydi?",
+   "options": [
+    "A) Bolalarini suti bilan o‘stirgani uchun",
+    "B) Sigir juda qimmat bo‘lgani uchun",
+    "C) Go‘shti mazali bo‘lmagani uchun",
+    "D) Qo‘shnilarga sotmoqchi bo‘lgani uchun"
+   ],
+   "answer": "A) Bolalarini suti bilan o‘stirgani uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Ayolning o‘z sigiriga \"bolalarimning enasi\" deb qarashi nimani ko‘rsatadi?",
+   "options": [
+    "A) Ezgulik va minnatdorlik tuyg‘usini",
+    "B) Xasislik va ochko‘zlikni",
+    "C) Narsa-buyumga beparvolikni",
+    "D) Bilimsizlik va qoloqlikni"
+   ],
+   "answer": "A) Ezgulik va minnatdorlik tuyg‘usini"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"birpas\" so‘zi tarixini tasvirlaganda qaysi usuldan foydalangan?",
+   "options": [
+    "A) Sakkiz og‘a-ini ramzidan",
+    "B) Yirtqich hayvonlar qiyosidan",
+    "C) Qadimiy janglar tasviridan",
+    "D) Dengiz sayohatlari hikoyasidan"
+   ],
+   "answer": "A) Sakkiz og‘a-ini ramzidan"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnga ko‘ra, \"zangori\" so‘zining tub ildizi qaysi so‘zdan kelib chiqqan?",
+   "options": [
+    "A) Metalldagi zang oksididan",
+    "B) Tiniq suv rangidan",
+    "C) Moviy osmon tusidan",
+    "D) Yashil maysa bargidan"
+   ],
+   "answer": "A) Metalldagi zang oksididan"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "\"Garmsel\" va \"garmdori\" so‘zlaridagi \"garm\" so‘zi nimani bildiradi?",
+   "options": [
+    "A) Issiq",
+    "B) Sovuq",
+    "C) Achchiq",
+    "D) Sho‘r"
+   ],
+   "answer": "A) Issiq"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "\"Surbet\" so‘zidagi \"sur\" so‘zining tub ma’nosi nima?",
+   "options": [
+    "A) Quritilgan, qotgan go‘sht",
+    "B) Yoqimli va chiroyli yuz",
+    "C) Qalin charm poyabzal",
+    "D) Yaltiroq va silliq mato"
+   ],
+   "answer": "A) Quritilgan, qotgan go‘sht"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Otning uch yashari xalq tilida nima deyiladi?",
+   "options": [
+    "A) G‘o‘non",
+    "B) Qulun",
+    "C) Toy",
+    "D) Do‘non"
+   ],
+   "answer": "A) G‘o‘non"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "\"Dahanaki jang\" so‘zi qanday jangni anglatadi?",
+   "options": [
+    "A) Og‘zaki dahanaki aytishuvni",
+    "B) Og‘ir qurollar bilan urushni",
+    "C) Xanjarlar va qilichlar jangini",
+    "D) Ot ustidagi polvonlar kurashini"
+   ],
+   "answer": "A) Og‘zaki dahanaki aytishuvni"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "\"Jo‘yali gap\" iborasi nega mantiqli gap ma’nosida ishlatiladi?",
+   "options": [
+    "A) Jo‘yasiz ekin unmagani kabi",
+    "B) Ariq suvi toza bo‘lgani uchun",
+    "C) Dehqonlar ko‘p gapirgani uchun",
+    "D) Polizda qovun o‘sgani uchun"
+   ],
+   "answer": "A) Jo‘yasiz ekin unmagani kabi"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega muallif maqoli ko‘p tilni qudratli til deb hisoblaydi?",
+   "options": [
+    "A) Maqollarda xalq tajribasi to‘plangani uchun",
+    "B) Maqollarni yodlash juda osonligi uchun",
+    "C) Maqollar faqat kitobda yozilgani uchun",
+    "D) Maqollar qisqa bo‘lgani uchun"
+   ],
+   "answer": "A) Maqollarda xalq tajribasi to‘plangani uchun"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "So‘zlarning asl ma’nosini bilish insonga nima beradi?",
+   "options": [
+    "A) O‘zligini va ma’naviyatini anglashni",
+    "B) Faqat chet elga borishni",
+    "C) Ko‘p pul ishlab topishni",
+    "D) Tezdaroq mashhur bo‘lib ketishni"
+   ],
+   "answer": "A) O‘zligini va ma’naviyatini anglashni"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Insonning o‘z ona tilini sevishi va asrashi nima uchun burch?",
+   "options": [
+    "A) Til millat va tafakkur tayanchi",
+    "B) Shunchaki qoida bo‘lgani uchun",
+    "C) Boshqalar majbur qilgani uchun",
+    "D) Faqat baho olish uchun"
+   ],
+   "answer": "A) Til millat va tafakkur tayanchi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif \"Ro‘mol\" so‘zini \"Yuz mulki\" deb ta’riflab nimani ko‘rsatgan?",
+   "options": [
+    "A) So‘zdagi yuksak poetik ma’noni",
+    "B) Kiyim-kechakning juda qimmatligini",
+    "C) Faqat ip-gazlama sifatini",
+    "D) Qadimiy savdo yo‘llarini"
+   ],
+   "answer": "A) So‘zdagi yuksak poetik ma’noni"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Eshqobil Shukur \"Ona til\" she’rida tilni nimaga qiyoslaydi?",
+   "options": [
+    "A) Onaga va mangu yo‘ldoshga",
+    "B) Salqin shabboda va yerga",
+    "C) Oqar suv va daryoga",
+    "D) Oltin va kumush boylikka"
+   ],
+   "answer": "A) Onaga va mangu yo‘ldoshga"
+  }
+ ]
+}
