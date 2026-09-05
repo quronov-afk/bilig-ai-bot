@@ -45,3 +45,6 @@ tools/fonts_raw/
 
 # Test bazasini muharrirlash jarayonining oraliq fayli
 tools/edit_tests_progress.json
+
+# Yangi muqovalarning xom (matnsiz) nusxalari — 160+ MB, kerak emas
+webapp/covers_new/_xom/
