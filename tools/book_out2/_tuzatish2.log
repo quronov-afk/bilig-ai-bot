@@ -1,0 +1,42 @@
+/Users/bolalaryozuvchisi/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/bolalaryozuvchisi/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/bolalaryozuvchisi/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+2-kun: 1 ta kitob, taxminiy narx ~$0.02
+
+09-05 23:46:12  [1/1] Mohir Bek (to‘liq, 11,170 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-05 23:47:17     ✓ tayyor (65 soniya, jami $0.03)
+
+09-05 23:47:17  YAKUN: 1 ta tayyor, 0 ta chiqmadi. Sarflandi: $0.03 (kirish 9,187, chiqish 5,165 token)
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x10ad8c520>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x10add6520>, 65.686601958)])']
+connector: <aiohttp.connector.TCPConnector object at 0x10ad8c970>
+/Users/bolalaryozuvchisi/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/bolalaryozuvchisi/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/bolalaryozuvchisi/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+3-kun: 1 ta kitob, taxminiy narx ~$0.04
+
+09-05 23:47:18  [1/1] Muqaddas (kesma, 81,202 belgi)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-05 23:47:57     · 1-urinish: 2 ta kamchilik (21-savol: mayda tafsilot so‘ralgan («necha...»): 'Muqaddas i...)
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+09-05 23:49:00     ✓ tayyor (102 soniya, jami $0.10)
+
+09-05 23:49:00  YAKUN: 1 ta tayyor, 0 ta chiqmadi. Sarflandi: $0.10 (kirish 70,128, chiqish 13,025 token)
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x108940520>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x10898a520>, 102.403179708)])']
+connector: <aiohttp.connector.TCPConnector object at 0x108940970>
+=== IKKALASI HAM TUGADI ===

@@ -1,0 +1,336 @@
+{
+ "title": "Gulnor",
+ "author": "G‘afur G‘ulom",
+ "genre": "toʻplam",
+ "age_group": "12",
+ "coverage": "to‘liq",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "ishq va sadoqat",
+   "falsafiy mushohada",
+   "qalb kechinmalari",
+   "odamiylik va ruhiyat"
+  ],
+  "theme": "Insonning o‘zligini anglash, ruhiy izlanishlar, ishq va hayot sinovlari qarshisida qalb pokligini saqlab qolish hamda Parvardigorga intilish g‘oyasi ilgari surilgan.",
+  "summary": "To‘plamda inson ruhiyatining murakkab va nozik qirralari she’riy satrlarda tasvirlanadi. Lirik qahramon hayot va jamiyatdagi ziddiyatlar, yolg‘izlik hamda o‘zlikni anglash yo‘lidagi iztiroblarni boshdan kechiradi. Birinchi she’rlarda muallif o‘zining shaddodligi va tilining qalampirday o‘tkirligi ortida yashiringan ichki dardin bayon etadi. So‘ngra parda ortidagi sahna va hayot o‘rtasidagi farq, odamlar orasidagi munofiqlik hamda qotillik va soflik tuyg‘ularining toqatlari ochib beriladi. Lirik qahramon tabiat va dengiz, yomg‘ir hamda shamol obrazlari orqali o‘zining muallaq holatini, erkinlikka bo‘lgan tashnaligini ifodalaydi. Asar davomida ishq va Haq yo‘lidagi sodiqlik, yolg‘izlik, qafasda qolgan burgut kabi erksizlik iztiroblari va xazonrezgi sog‘inchlar aks etadi. Oxirida maktub tarzidagi poetik murojaat orqali inson har qanday azob va ayriliqda ham sevgan insoniga ma’naviy hamroh va suyanch bo‘la olishi ko‘rsatiladi.",
+  "characters": "Lirik qahramon — chuqur mushohada yurituvchi, haqiqat va soflikka intiluvchi, hayot ziddiyatlaridan qiynaluvchi va Parvardigoriga sadoqatli qalb egasi. Yozuvchi va muallifning ichki 'Men'i — parda ortidagi niqoblardan xalos bo‘lishni va qalbining asl sofligini saqlashni xohlaydigan obraz.",
+  "conclusion": "Ushbu she’riy to‘plam kitobxonga insoniy his-tuyg‘ular va ruhiy kechinmalarning naqadar teranligini anglatadi. Bola hamda o‘smir undan soflik, halollik va soxtalikdan yiroq bo‘lish, hayotiy qiyinchiliklarda sabr qilish sabog‘ini oladi. Asar insonni o‘z ichki dunyosiga nazar solishga va tuyg‘ularni qadrlashga o‘rgatadi.",
+  "difficulty": "qiyin",
+  "mood": "hazin, o‘ylantiruvchi",
+  "for_whom": "She’riyatni xush ko‘radigan, falsafiy va ruhiy kechinmalar haqida o‘ylashni yaxshi ko‘radigan o‘smirlarga.",
+  "events": [
+   "Lirik qahramon o‘zining achchiq haqiqatni aytuvchi tili va ichki dardlarini she’r orqali bayon qiladi.",
+   "Insonlarning soxtaligi va tomoshabin bo‘lib yashashiga qarshi o‘z e’tirozini bildiradi.",
+   "Musofirlik va diydorga intilish tuyg‘ulari, savol-javoblar orqali o‘zligini izlaydi.",
+   "Yomg‘ir obrazi orqali sog‘inch va qalbining so‘nggi choklarigacha iztirob chekayotganini tasvirlaydi.",
+   "Parda ko‘tarilgach, sahnadagi qotil ham, do‘st-u dushman ham o‘zi ekanligini anglaydi va Yaratgandan faqat 'Men' bo‘lib qolishni so‘raydi.",
+   "Dengiz, osmon va tabiat hodisalari fonida insonning muallaqlik holati va mavjudlik siri so‘roqqa tutiladi.",
+   "Ishq hamda erkinlik haqidagi o‘ylarda dunyoning murakkabligi va Haqqa bo‘lgan intilish ifodalanadi.",
+   "Oyna va musiqa klavishlari vositasida xotiralar va o‘tgan umr sahifalari eslanadi.",
+   "Tangridan qalam tutishini va qalbidagi iztiroblarga javob berishini so‘rab iltijo qiladi.",
+   "Qondagi iblisga qarshi isyon ko‘tarib, ruhiyat va siyratning sofligini anglaydi.",
+   "Bo‘m-bo‘sh ramka va muzlagan soat qarshisida o‘z-o‘ziga havas qiladi hamda o‘tmishni xotirlaydi.",
+   "Jamiyat va olomon ichida o‘zining begonaligini hamda Takrorsiz yaratilganini his etadi.",
+   "Azizasiga deraza va pardalarni berkitishni va tashqaridagi vahshiy dunyodan saqlanishni maslahat beradi.",
+   "Momaqaldiroqli ko‘chada kezib, samo va qalb izhorlariga quloq tutadi.",
+   "Kutilgan yomg‘irlar o‘tib, kutilmagan izg‘irin va qorlar kelishi haqida fikr yuritadi.",
+   "G‘urur sababli ikki yil asrdek o‘tganini va qafasdagi burgutdek holatni tasvirlaydi.",
+   "Vaqt va masofa o‘zgargani bilan qalb makoni bir ekanligini aks ettiradi.",
+   "Sohil va to‘lqinlar misolida ichki g‘alayonlar va tashqi osoyishtalik ziddiyatini ko‘rsatadi.",
+   "Maktub orqali har doim suyanchiq va hamroh bo‘lishini, sevgilisining dardi u uchun eng og‘ir azob ekanini aytadi.",
+   "Har qanday iztirob va sujudda ham Haqqa hamda muhabbatga sadoqatli bo‘lib qolishini ta’kidlaydi."
+  ],
+  "quotes": [
+   "Mening shaddodligim barchaga ayon, Tilim ham qalampir shakliga kirgan.",
+   "Xalq dardin berkitib bir bora kulsam, Roziman, ming bora labim yorilsin...",
+   "Qotil qilasanmi va yoki shoir, Faqat “Men” bo‘lishdan asra Xudoyim!",
+   "Erkinlik tilasang – Bir ishq bor, Haq bor!",
+   "Yo Sen meni takrorsiz Yaratgansan, qarzing yo‘q...",
+   "Unutma, men uchun eng shirin quvonch Sening achchiq dardingchalik bo‘lmaydi."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Birinchi she’rda shoir tilini nimaga o‘xshatadi?",
+   "options": [
+    "A) Qalampir shakliga",
+    "B) O‘tkir qilichga",
+    "C) Shirin mevaga",
+    "D) Oqarsuv daryoga"
+   ],
+   "answer": "A) Qalampir shakliga"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Lirik qahramon mehnatsiz nima unmaydi deydi?",
+   "options": [
+    "A) Hech narsa unmaydi",
+    "B) Bitta ham gul",
+    "C) Faqat bug‘doy unadi",
+    "D) Shirin mevalar unmaydi"
+   ],
+   "answer": "A) Hech narsa unmaydi"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Aks» she’rida o‘ng qo‘lda nima bor?",
+   "options": [
+    "A) Xanjar bor",
+    "B) Qalam bor",
+    "C) Gul bor",
+    "D) Kitob bor"
+   ],
+   "answer": "A) Xanjar bor"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Part 1 dagi she’rlarda qaysi obrazlar birga uchraydi?",
+   "options": [
+    "A) Yomg‘ir va ko‘zyosh",
+    "B) Sahro va qum",
+    "C) Qor va muz",
+    "D) Olov va tutun"
+   ],
+   "answer": "A) Yomg‘ir va ko‘zyosh"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoir nega soppa-sog‘ so‘qirlar to‘la dunyoda tomoshabin bo‘lmaydi?",
+   "options": [
+    "A) Xalq dardini yashirishni xohlamaydi",
+    "B) Sahna ko‘rsatuvlarini yoqtirmaydi",
+    "C) Vaqti yo‘qligi sababli",
+    "D) O‘zini boshqalardan ustun biladi"
+   ],
+   "answer": "A) Xalq dardini yashirishni xohlamaydi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "«Aks» she’rida lirik qahramon Yaratgandan nimani so‘raydi?",
+   "options": [
+    "A) Faqat «Men» bo‘lib qolishni",
+    "B) Mashhur shoir bo‘lishni",
+    "C) Ko‘p boylik berishini",
+    "D) Do‘stlarini ko‘paytirishini"
+   ],
+   "answer": "A) Faqat «Men» bo‘lib qolishni"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Manglaydan hikmatsiz oqmaydi ter» misrasi qanday tuyg‘u uyg‘otadi?",
+   "options": [
+    "A) Mehnatning muqaddasligi va qadrini",
+    "B) Qiyinchilikdan shikoyat qilish tuyg‘usini",
+    "C) Bekorchi o‘tirishga undashni",
+    "D) Alam va nafrat tuyg‘usini"
+   ],
+   "answer": "A) Mehnatning muqaddasligi va qadrini"
+  },
+  {
+   "id": 8,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Musiqa klavishlari oshiq va ma’shuqni nima qildi?",
+   "options": [
+    "A) Oq-qora klavishlar ayirdi",
+    "B) Bir-biriga yanada yaqinlashtirdi",
+    "C) Butunlay do‘stlashtirib qo‘ydi",
+    "D) Birga qo‘shiq aytishga undadi"
+   ],
+   "answer": "A) Oq-qora klavishlar ayirdi"
+  },
+  {
+   "id": 9,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "«Anglam» she’rida qondagi nimaga qarshi isyon ko‘piradi?",
+   "options": [
+    "A) Qondagi iblisga qarshi",
+    "B) Dushmanning so‘ziga qarshi",
+    "C) Og‘ir kasallikka qarshi",
+    "D) Dunyodagi urushlarga qarshi"
+   ],
+   "answer": "A) Qondagi iblisga qarshi"
+  },
+  {
+   "id": 10,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Part 2 dagi she’rlarda qaysi buyumlar sanab o‘tilgan?",
+   "options": [
+    "A) Ramka va soat",
+    "B) Qalam va daftar",
+    "C) Ko‘zgu va taroq",
+    "D) Qilich va qalqon"
+   ],
+   "answer": "A) Ramka va soat"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega lirik qahramon «Dengiz menda halok bo‘ladi» deydi?",
+   "options": [
+    "A) Qalbidagi to‘fon dengizdan kuchli",
+    "B) Dengiz suvi qurib qolgani uchun",
+    "C) Suvda suzishni bilmagani sababli",
+    "D) Yaxshi ko‘rgani kelmagani uchun"
+   ],
+   "answer": "A) Qalbidagi to‘fon dengizdan kuchli"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoir nega ko‘kka tik boqishga haddim yetmaydi deydi?",
+   "options": [
+    "A) Yaratgan oldida kamtar bo‘lgani uchun",
+    "B) Quyosh ko‘zini qashtirgani uchun",
+    "C) Osmon juda balandligi sababli",
+    "D) Boshi og‘rib qolgani uchun"
+   ],
+   "answer": "A) Yaratgan oldida kamtar bo‘lgani uchun"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Lirik qahramonning qondagi iblisga qarshi kurashishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, ruhiy poklikka intilishdir",
+    "B) Noto‘g‘ri, o‘zini qiynash keraksiz",
+    "C) Farqi yo‘q, foydasiz harakat",
+    "D) Xato, aybni boshqadan qidirsin"
+   ],
+   "answer": "A) To‘g‘ri, ruhiy poklikka intilishdir"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "«Erkinlik tilasang – Haq bor» satri nimani anglatadi?",
+   "options": [
+    "A) Haqiqiy erkinlik Yaratganga e’tiqoddadir",
+    "B) Qoidalarni buzish erkinlik beradi",
+    "C) Erkinlik faqat boylikda bo‘ladi",
+    "D) Inson har doim yolg‘izdir"
+   ],
+   "answer": "A) Haqiqiy erkinlik Yaratganga e’tiqoddadir"
+  },
+  {
+   "id": 15,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shoir azizasiga qaysi joyni eng vahshiylar shahri deydi?",
+   "options": [
+    "A) Tashqaridagi dunyoni",
+    "B) O‘z xonasini",
+    "C) Eskirgan ko‘chani",
+    "D) Uzoqdagi shaharni"
+   ],
+   "answer": "A) Tashqaridagi dunyoni"
+  },
+  {
+   "id": 16,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Maktub she’rida eng og‘ir azobli qafas nima deyiladi?",
+   "options": [
+    "A) Sujud deb ataladi",
+    "B) Temir panjara deyiladi",
+    "C) Yolg‘izlik deb aytiladi",
+    "D) Tor xona deyiladi"
+   ],
+   "answer": "A) Sujud deb ataladi"
+  },
+  {
+   "id": 17,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Shoir ikkimiz qafasda qolishni istar nimamiz deydi?",
+   "options": [
+    "A) Burgutmiz deydi",
+    "B) Qaldirg‘ochmiz deydi",
+    "C) Bulbulmiz deydi",
+    "D) Kaptarmiz deydi"
+   ],
+   "answer": "A) Burgutmiz deydi"
+  },
+  {
+   "id": 18,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Shartli 3-qismda tabiatning qaysi fasllari va hodisalari eslanadi?",
+   "options": [
+    "A) Yomg‘ir, qor va kuz xazonlari",
+    "B) Bahoriy maysalar va issiq yoz",
+    "C) Musaffo tong va saraton quyoshi",
+    "D) Daryo toshqini va do‘l yog‘ishi"
+   ],
+   "answer": "A) Yomg‘ir, qor va kuz xazonlari"
+  },
+  {
+   "id": 19,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Shoir nega do‘stlarining ko‘zida o‘z aksini ko‘rmaydi?",
+   "options": [
+    "A) U takrorsiz va tushunilmagan",
+    "B) Do‘stlari unga qarashmaydi",
+    "C) Oynada ko‘rinishni xohlamaydi",
+    "D) Ko‘zoynak taqib olgani sababli"
+   ],
+   "answer": "A) U takrorsiz va tushunilmagan"
+  },
+  {
+   "id": 20,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Maktubda sadoqat va g‘amxo‘rlikning ko‘rsatilishi to‘g‘rimi?",
+   "options": [
+    "A) To‘g‘ri, sadoqat va mehr zarurdir",
+    "B) Noto‘g‘ri, boshqaga e’tibor shart emas",
+    "C) Farqi yo‘q, har kim o‘zi uchun",
+    "D) Xato, inson faqat o‘zini o‘ylasin"
+   ],
+   "answer": "A) To‘g‘ri, sadoqat va mehr zarurdir"
+  }
+ ]
+}

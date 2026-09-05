@@ -1,0 +1,478 @@
+{
+ "title": "Raqamlar uchun yaralgan idrok",
+ "author": "Barbara Oukli",
+ "genre": "shaxsiy rivojlanish",
+ "age_group": "12",
+ "coverage": "kesma",
+ "passport": {
+  "age_band": "14-16",
+  "age_hint": "14+",
+  "topics": [
+   "ilm",
+   "ta'lim",
+   "psixologiya",
+   "shaxsiy rivojlanish",
+   "mehnat"
+  ],
+  "theme": "Matematika va tabiiy fanlarni o‘rganish tug‘ma iste'dodga emas, balki miya faoliyatini to‘g‘ri tushunish, diqqat va parishonlik rejimlarini almashtirish hamda to‘g‘ri o‘quv odatlarini shakllantirishga bog‘liq.",
+  "summary": "Kitob muallifi Barbara Oukli yoshligida matematika va aniq fanlarni yomon ko‘organi va ulardan mutlaqo oqsaganini so‘zlab berishdan boshlaydi. Armiyada xizmat qilib, tillarni o‘rganganidan so‘ng, u o o‘z karyerasini o‘zgartirish va miyasini qayta tarbiyalashga qaror qiladi. Natijada u muhandislik bo‘yicha fan doktori va professor darajasiga yetishadi.\n\nKitobda miyaning ikki xil fikrlash rejimi — diqqatli (bir nuqtaga jamlangan) va parishon (keng, erkin fikrlaydigan) rejimlar haqida tushuncha beriladi. Anri Puankare va Tomas Edison kabi olimlarning misollarida murakkab masalalarni yechishda parishonlik rejimining roli ko‘rsatiladi. O‘rganish jarayonida miyada bog‘lamlar (chanklar) hosil qilish, axborotni faol eslash mashqlari orqali xotirada mustahkamlash usullari tushuntiriladi.\n\nShuningdek, kitobda sustkashlik (prokrastinatsiya) bilan kurashish, diqqatni natijaga emas, jarayonga qaratish hamda Pomidor usulidan foydalanish ko‘rsatilgan. Xotirani kuchaytirish uchun tasviriy-fazoviy xotira, Xotira saroyi va istiora (metafora) usullaridan foydalanish tavsiya etiladi. Yakunda muallif guruh bilan ishlashning foydasi, imtihonlarga to‘g‘ri tayyorgarlik ko‘rish ro‘yxati va test topshirishda qiyinidan osoniga sakrash strategiyasini bayon qiladi.",
+  "characters": "Barbara Oukli — kitob muallifi, filologiyadan muhandislik professori darajasigacha yetib borgan tadqiqotchi.\nAnri Puankare — ta'tilda mashhur matematik masalani parishonlik rejimida yechgan fransuz matematigi.\nTomas Edison — ixtirochilikda parishonlik rejimiga o‘tish uchun tavo usulidan foydalangan olim.\nSantyago Ramon-i-Kaxal — yoshligida sho‘x bo‘lgan, keyinchalik miya neyronlarini tadqiq qilib Nobel mukofoti olgan olim.\nRichard Feynman — murakkab tushunchalarni soddalashtirish va amaliy yondashish bilan tanilgan Nobel mukofoti sovrindori fizik.",
+  "conclusion": "Ushbu kitob o‘quvchiga har qanday murakkab fanni, xususan matematika va fizikani oson va samarali o‘rganish yo‘llarini o‘rgatadi. Bola kitobni o‘qish orqali o‘zida qobiliyat yo‘qligi haqidagi noto‘g‘ri komplekslardan xalos bo‘ladi. Vaqtni va odatlarni to‘g‘ri boshqarish, sustkashlikni yengish hamda imtihonlarga stressiz tayyorlanish ko‘nikmalarini egallaydi.",
+  "difficulty": "o‘rta",
+  "mood": "ilhomlantiruvchi, ilmiy-amaliy",
+  "for_whom": "Matematika va aniq fanlardan qiyinchilikka uchrayotgan, o‘qish unumdorligini oshirishni va o‘z ustida ishlashni istagan o‘quvchilar uchun.",
+  "events": [
+   "Barbara Oukli yoshligida matematika va texnikadan juda qiynalganini eslaydi.",
+   "Muallif armiyada rus tilini o‘rganib, tilshunoslik bo‘yicha bilim oladi.",
+   "Karyerasida texnik bilimlar zarurligini tushunib, miyasini qayta tarbiyalashga qaror qiladi.",
+   "To‘siqlarni yengib o‘tib, muhandislik bo‘yicha fan doktori unvoniga erishadi.",
+   "Miyaning diqqatli va parishon fikrlash rejimlariga ega ekani tushuntiriladi.",
+   "Anri Puankare ta'tilda avtobusga chiqayotganda masala yechimini topgani keltiriladi.",
+   "Tomas Edison parishonlik rejimiga o‘tish uchun qo‘lida koinot buyumini ushlab uxlab qolgani aytiladi.",
+   "Aynshtelung effekti va uning yangi yechimlarga to‘sqinlik qilishi tushuntiriladi.",
+   "Neyronlar o‘rtasida mustahkam bog‘lamlar hosil qilish bosqichlari bayon etiladi.",
+   "Axborotni shunchaki qayta o‘qish samarassiz ekani va faol eslash zarurligi ta'kidlanadi.",
+   "Sustkashlik salbiy odat sifatidagi miya mexanizmi ko‘rsatib beriladi.",
+   "Diqqatni natijaga emas, jarayonga qaratish lozimligi uqtiriladi.",
+   "Vaqtni rejalashtirishda kundalik va haftalik ro‘yxatlar tuzish maslahat beriladi.",
+   "Xotirani mustahkamlash uchun Xotira saroyi va visual tasvirlardan foydalanish uqtiriladi.",
+   "Murakkab tushunchalarni o‘rganishda istiora va o‘xshatishlar roli tushuntiriladi.",
+   "O‘rgangan bilimlarni boshqa sohalarga ko‘chirish (transfer) mohiyati ochib beriladi.",
+   "Santyago Ramon-i-Kaxalning qunt va mehnati orqali Nobel olgani misol keltiriladi.",
+   "Jamoada birga dars qilish xatolarni tezroq payqashga yordam berishi aytiladi.",
+   "Professsor Felderning imtihonga tayyorgarlik ko‘rish ro‘yxati taqdim etiladi.",
+   "Imtihonda avval qiyin masalaga qarash va keyin osoniga o‘tish usuli tushuntiriladi."
+  ],
+  "quotes": [
+   "Miyangiz g‘aroyib qobiliyatlarga ega, afsuski, undan samarali foydalanish uchun qo‘llanma yo‘q.",
+   "Aslida, hammamiz matematika va aniq fanlar uchun tabiiy sezgi va qobiliyatga egamiz.",
+   "Tushunmovchilik o‘rganish jarayonining ajralmas qismidir.",
+   "Sustkashlikni yengish borasida shuni ayta olamanki, sizni chalg‘itishi mumkin bo‘lgan hamma narsa, shu jumladan, odamlardan ham o‘zingizni ihotalab qo‘ying.",
+   "Axborotni eslashga qanchalik quvvat sarflansa, u xotiradan shunchalik mustahkam o‘rin oladi.",
+   "Istioralar g‘oyalarni miyaga yaxshiroq joylashga xizmat qiladi.",
+   "Avval bu fanlarni yaxshilab o‘rganib oling."
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Barbara Oukli yoshligida qaysi fanlarni o‘rganishni yaxshi ko‘rardi?",
+   "options": [
+    "A) Tillar va tarixni",
+    "B) Matematika va fizikani",
+    "C) Biologiya va kimyoni",
+    "D) Geometriya va chizmachilikni"
+   ],
+   "answer": "A) Tillar va tarixni"
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Anri Puankare qiyin masala yechimini qayerda anglab yetgan?",
+   "options": [
+    "A) Kutubxonada kitob o‘qiyotganda",
+    "B) Avtobusga chiqayotgan paytda",
+    "C) Uyda uxlab yotganda",
+    "D) Universitetda ma'ruzada"
+   ],
+   "answer": "B) Avtobusga chiqayotgan paytda"
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Edison parishonlik rejimiga o‘tish uchun qo‘lida nimani ushlab turardi?",
+   "options": [
+    "A) Og‘ir metal kovshni",
+    "B) Guruch to‘la qopni",
+    "C) Metal tovani va sharni",
+    "D) Yog‘och tayoqni"
+   ],
+   "answer": "C) Metal tovani va sharni"
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Garri Kasparov kim bilan shaxmat o‘ynaganda durrang o‘ynagan?",
+   "options": [
+    "A) Magnus Karlsen bilan",
+    "B) Richard Feynman bilan",
+    "C) Anri Puankare bilan",
+    "D) Robert Bilder bilan"
+   ],
+   "answer": "A) Magnus Karlsen bilan"
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Matnlarni shunchaki qayta o‘qish nega samarasiz usul hisoblanadi?",
+   "options": [
+    "A) Matn tanishdek tuyulib aldaydi",
+    "B) Kitob tez eskirib qoladi",
+    "C) Ko‘z nurini tez charchatadi",
+    "D) Matnda imlo xatolar ko‘payadi"
+   ],
+   "answer": "A) Matn tanishdek tuyulib aldaydi"
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Aynshtelung effekti inson fikrlashiga qanday ta'sir ko‘rsatadi?",
+   "options": [
+    "A) Birinchi xayolga kelganiga yopishadi",
+    "B) Fikrni darhol ravon qiladi",
+    "C) Xotirani butunlay o‘chirib qo‘yadi",
+    "D) Yangi g‘oyalarni tezlashtiradi"
+   ],
+   "answer": "A) Birinchi xayolga kelganiga yopishadi"
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun muallif o‘quv mashg‘ulotlari orasida tanaffus qilishni maslahat beradi?",
+   "options": [
+    "A) Neyronli bog‘lanishlar qotishi uchun",
+    "B) Darsliklarni almashtirish uchun",
+    "C) Ota-onaga yordam berish uchun",
+    "D) Do‘stlar bilan uchrashish uchun"
+   ],
+   "answer": "A) Neyronli bog‘lanishlar qotishi uchun"
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega Barbara Oukli armiyadan so‘ng muhandislikni o‘rganishga qaror qildi?",
+   "options": [
+    "A) Imkoniyatlarini kengaytirish va o‘sish uchun",
+    "B) Harbiy xizmatni davom ettirish uchun",
+    "C) Chet elga ko‘chib ketish uchun",
+    "D) Rus tilini unuttirish uchun"
+   ],
+   "answer": "A) Imkoniyatlarini kengaytirish va o‘sish uchun"
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Muallifning miyani qayta tarbiyalash tajribasi qanday baholanadi?",
+   "options": [
+    "A) Qat'iyat bilan o‘zgarish mumkinligini isbotlaydi",
+    "B) Faqat harbiy xizmatchilarga mos keladi",
+    "C) Aniq fanlarni rad etishni o‘rgatadi",
+    "D) Yoshlikdagi xatolarni tuzatib bo‘lmasligini ko‘rsatadi"
+   ],
+   "answer": "A) Qat'iyat bilan o‘zgarish mumkinligini isbotlaydi"
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «miyangizda qo‘llanma yo‘q» degan ibora bilan nimaga urg‘u beradi?",
+   "options": [
+    "A) Miyadan foydalanish usullarini o‘rganish zarurligiga",
+    "B) Inson miyasi kitob o‘qiy olmasligiga",
+    "C) Miyani tibbiy davolash kerakligiga",
+    "D) Barcha qo‘llanmalar samarasiz ekanligiga"
+   ],
+   "answer": "A) Miyadan foydalanish usullarini o‘rganish zarurligiga"
+  },
+  {
+   "id": 11,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Miyada axborotni guruhlab o‘rganish nima deb ataladi?",
+   "options": [
+    "A) Bog‘lam hosil qilish",
+    "B) Darsni paysalga solish",
+    "C) Parishon fikrlash rejimi",
+    "D) Qoidani shunchaki yodlash"
+   ],
+   "answer": "A) Bog‘lam hosil qilish"
+  },
+  {
+   "id": 12,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "O‘rganilgan ma'lumotni eslab qolishda qaysi amaliy mashq eng samarali?",
+   "options": [
+    "A) Kitobni kitobga qaramay eslash",
+    "B) Matn tagiga rangli chizish",
+    "C) Sahifalarni ko‘p marta varaqlash",
+    "D) Konspektlarni ko‘chirish o‘zi"
+   ],
+   "answer": "A) Kitobni kitobga qaramay eslash"
+  },
+  {
+   "id": 13,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Sustkashlik bilan kurashishda diqqatni nimaga qaratish kerak?",
+   "options": [
+    "A) Natijaga emas jarayonga",
+    "B) Faqat yakuniy bahoga",
+    "C) Topshiriq hajmining kattaligiga",
+    "D) Boshqalarning tezligiga"
+   ],
+   "answer": "A) Natijaga emas jarayonga"
+  },
+  {
+   "id": 14,
+   "part": 2,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Nil Fiori kitobida reaksiyalarni kuzatish uchun nima qilishni tavsiya etadi?",
+   "options": [
+    "A) Xatti-harakatlarni yozib borishni",
+    "B) Barcha do‘stlar bilan bahslashishni",
+    "C) Xonadan hech qachon chiqmaslikni",
+    "D) Uyquni butunlay kamaytirishni"
+   ],
+   "answer": "A) Xatti-harakatlarni yozib borishni"
+  },
+  {
+   "id": 15,
+   "part": 2,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Kundalik ishlar ro‘yxatini bir kun avval tuzishning qanday afzalligi bor?",
+   "options": [
+    "A) Ong osti vazifalarni tayyorlaydi",
+    "B) Ertalab barvaqt uyg‘onishni ta'minlaydi",
+    "C) Uy vazifalarini avtomatsiz kamaytiradi",
+    "D) Imtihon baholarini darhol oshiradi"
+   ],
+   "answer": "A) Ong osti vazifalarni tayyorlaydi"
+  },
+  {
+   "id": 16,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun muallif matn ostiga ko‘p chizishni tavsiya etmaydi?",
+   "options": [
+    "A) Soxta mahorat hissini uyg‘otadi",
+    "B) Kitob varaqlarini yirtib qo‘yadi",
+    "C) Siyoh ko‘p sarflanishiga olib keladi",
+    "D) Matnni o‘qib bo‘lmaydigan qiladi"
+   ],
+   "answer": "A) Soxta mahorat hissini uyg‘otadi"
+  },
+  {
+   "id": 17,
+   "part": 2,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Axbortni turli masalalar aralash holda yechish nega muhim?",
+   "options": [
+    "A) Qaysi usulni qo‘llashni o‘rganish uchun",
+    "B) Darslikdagi betlarni tez tugatish uchun",
+    "C) Vaqtni tejash va charchamaslik uchun",
+    "D) Masalalarni yodlab olish uchun"
+   ],
+   "answer": "A) Qaysi usulni qo‘llashni o‘rganish uchun"
+  },
+  {
+   "id": 18,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Sustkashlik odatiga berilish inson ruhiyatiga qanday ta'sir ko‘rsatadi?",
+   "options": [
+    "A) Stress va ishonchsizlikni oshiradi",
+    "B) Bilim darajasini oshiradi",
+    "C) Xotirani keskin kuchaytiradi",
+    "D) Vazifalarni sifatli bajaradi"
+   ],
+   "answer": "A) Stress va ishonchsizlikni oshiradi"
+  },
+  {
+   "id": 19,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Kartochkalardan foydalanib takrorlash usuliga qanday baho beriladi?",
+   "options": [
+    "A) Faol va samarali takrorlash usuli",
+    "B) Vaqtni bekorga sarflash yo‘li",
+    "C) Faqat yosh bolalarga mos usul",
+    "D) Imtihondan o‘ta olmaslik sababi"
+   ],
+   "answer": "A) Faol va samarali takrorlash usuli"
+  },
+  {
+   "id": 20,
+   "part": 2,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif sustkashlik miya qismini nega «zombi» deb ataydi?",
+   "options": [
+    "A) Odatga ko‘r-ko‘rona ergashgani uchun",
+    "B) Odamni qo‘rqitib yuborgani uchun",
+    "C) Faqat tunda ishga tushgani uchun",
+    "D) Barcha bilimlarni yo‘q qilgani uchun"
+   ],
+   "answer": "A) Odatga ko‘r-ko‘rona ergashgani uchun"
+  },
+  {
+   "id": 21,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Qaysi xotira usuli uyni xayolan ko‘z oldiga keltirishga asoslanadi?",
+   "options": [
+    "A) Xotira saroyi usuli",
+    "B) Pomidor va taymer usuli",
+    "C) Aynshtelung qoidasi usuli",
+    "D) Kartochka bilan yodlash usuli"
+   ],
+   "answer": "A) Xotira saroyi usuli"
+  },
+  {
+   "id": 22,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Ispaniyalik olim Santyago Ramon-i-Kaxal qaysi sohada Nobel olgan?",
+   "options": [
+    "A) Miyaning neyron tuzilmasi bo‘yicha",
+    "B) Shaxmat o‘yinining qoidalari bo‘yicha",
+    "C) Kimyoviy formulalarni yodlash bo‘yicha",
+    "D) Dasturlash tillarini yaratish bo‘yicha"
+   ],
+   "answer": "A) Miyaning neyron tuzilmasi bo‘yicha"
+  },
+  {
+   "id": 23,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Richard Feynman seyf qulflarini ochishni nega mashq qilgan?",
+   "options": [
+    "A) Xavotir va zerikishni yengish uchun",
+    "B) Pul o‘g‘irlash va boyish uchun",
+    "C) Harbiy unvonini oshirish uchun",
+    "D) Fizikani butunlay tashlash uchun"
+   ],
+   "answer": "A) Xavotir va zerikishni yengish uchun"
+  },
+  {
+   "id": 24,
+   "part": 3,
+   "category": "factual",
+   "barrett": "literal",
+   "question": "Professor Richard Felder imtihon natijasi past talabalarga nimani taqdim etgan?",
+   "options": [
+    "A) Imtihonga tayyorgarlik ro‘yxatini",
+    "B) Qo‘shimcha pul mukofotini",
+    "C) Universitetdan ketish hujjatini",
+    "D) Tayyor test javoblarini"
+   ],
+   "answer": "A) Imtihonga tayyorgarlik ro‘yxatini"
+  },
+  {
+   "id": 25,
+   "part": 3,
+   "category": "factual",
+   "barrett": "reorganization",
+   "question": "Bir sohada o‘rgangan bilimni boshqa sohada qo‘llash nima deyiladi?",
+   "options": [
+    "A) Transfer jarayoni",
+    "B) Sustkashlik rejimi",
+    "C) Diqqat chalg‘ishi",
+    "D) Soxta mahorat"
+   ],
+   "answer": "A) Transfer jarayoni"
+  },
+  {
+   "id": 26,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nima uchun jamoa bo‘lib dars qilish xatolarni tuzatishda foydali?",
+   "options": [
+    "A) O‘z xatosini payqash osonlashadi",
+    "B) Boshqalar vazifani bajarib beradi",
+    "C) Dars qilish shart bo‘lmay qoladi",
+    "D) Imtihonsiz baho olish mumkin"
+   ],
+   "answer": "A) O‘z xatosini payqash osonlashadi"
+  },
+  {
+   "id": 27,
+   "part": 3,
+   "category": "logic",
+   "barrett": "inferential",
+   "question": "Nega imtihonda avval qiyin masalaga qarab, keyin osoniga o‘tiladi?",
+   "options": [
+    "A) Parishonlik rejimi ishlashi uchun",
+    "B) Vaqtni tezroq tugatish uchun",
+    "C) Oson masalalarni unutish uchun",
+    "D) Boshqalarga xalaqit berish uchun"
+   ],
+   "answer": "A) Parishonlik rejimi ishlashi uchun"
+  },
+  {
+   "id": 28,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "evaluation",
+   "question": "Santyago Ramon-i-Kaxalning hayot yo‘li o‘quvchiga qanday saboq beradi?",
+   "options": [
+    "A) Mehnat va qunt bilan natijaga erishiladi",
+    "B) Faqat tug‘ma daholar Nobel oladi",
+    "C) Yoshlikdagi sho‘xlik o‘qishni cheklaydi",
+    "D) Aniq fanlarni o‘rganish befoyda"
+   ],
+   "answer": "A) Mehnat va qunt bilan natijaga erishiladi"
+  },
+  {
+   "id": 29,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Benzol halqasini maymunchalar bilan ifodalash misoli nimani tushuntiradi?",
+   "options": [
+    "A) Istiora bilimlarni ko‘z oldiga keltirishini",
+    "B) Hayvonot olamini o‘rganish zarurligini",
+    "C) Kimyo fani hazildan iboratligini",
+    "D) Tasvirlar chizish befoyda ekanini"
+   ],
+   "answer": "A) Istiora bilimlarni ko‘z oldiga keltirishini"
+  },
+  {
+   "id": 30,
+   "part": 3,
+   "category": "conclusion",
+   "barrett": "appreciation",
+   "question": "Muallif «avval o‘rganing, keyin yoqtirishni hal qilasiz» deb nimani nazarda tutadi?",
+   "options": [
+    "A) Tushunib yetgach fanga qiziqish uyg‘onishini",
+    "B) Yoqmagan fanni baribir o‘qimaslikni",
+    "C) Majburiy ta'lim samarasiz ekanligini",
+    "D) Qiyin fanlardan voz kechish kerakligini"
+   ],
+   "answer": "A) Tushunib yetgach fanga qiziqish uyg‘onishini"
+  }
+ ]
+}
