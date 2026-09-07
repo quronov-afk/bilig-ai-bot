@@ -1770,6 +1770,7 @@ FEED_KINDS_PARENT = {
     "gift_wait",      # kutilayotgan sovg‘a eslatmasi
     "book_request",   # farzand kitob so‘rayapti — qo‘yish kerak
     "book_done",      # kitob tugatildi
+    "reading_started",  # bugun BIRINCHI marta sahifa yuborildi
     "talk_check",     # kechki suhbat savoli — javob berish kerak
     "child_linked",   # farzand o‘z telefonidan ulandi
     "group_request",  # guruhga kirish so‘rovi — tasdiqlash kerak
@@ -4285,6 +4286,14 @@ def _apply_page_progress(book_id, child_id, new_page):
             "INSERT INTO Reading_Logs (child_id, book_id, pages_added, created_at) VALUES (?, ?, ?, ?)",
             (child_id, book_id, pages_added, now_ts)
         )
+        # BOTGA KETADIGAN XABAR (ega qarori, 2026-09-05): ota-ona bilsin
+        # farzandi bugun o‘qishni boshlaganini — lekin faqat BIR MARTA,
+        # kuning BIRINCHI sahifasida. Har sahifada yuborilsa, aynan shu
+        # sabab bilan (kuniga o‘nlab xabar) bir marta olib tashlangan edi.
+        cursor.execute(
+            "SELECT COUNT(*) FROM Reading_Logs WHERE child_id = ? AND substr(created_at, 1, 10) = ?",
+            (child_id, now_ts[:10]))
+        is_first_today = (cursor.fetchone() or [0])[0] == 1
         if earned_bilig > 0:
             cursor.execute(
                 "UPDATE Users SET balance_coins = balance_coins + ?, total_xp = total_xp + ? WHERE user_id = ?",
@@ -4293,6 +4302,21 @@ def _apply_page_progress(book_id, child_id, new_page):
             _ledger(child_id, earned_bilig, "pages",
                     "O‘qilgan betlar · %s" % _book_title)
         conn.commit()
+
+    # BOTGA KETADIGAN XABAR: bugungi BIRINCHI sahifa (ega qarori,
+    # 2026-09-05) — «farzandingiz bugun o‘qishni boshladi». Faqat
+    # bir marta kuniga: shovqin qaytmasin.
+    if is_first_today:
+        _parent_id = get_parent_id(child_id)
+        if _parent_id:
+            _cname = child_name_of(child_id)
+            notify_parent(
+                child_id,
+                "📖 <b>%s</b> bugun «%s» kitobini o‘qishni boshladi — "
+                "hozircha %d bet." % (_cname, _book_title, new_page),
+                feed=("reading_started", "%s bugun o‘qishni boshladi" % _cname,
+                      "«%s» — hozircha %d bet." % (_book_title, new_page)),
+                kind="muhim")
 
     cursor.execute("SELECT streak_days FROM Users WHERE user_id = ?", (child_id,))
     _r = cursor.fetchone()
