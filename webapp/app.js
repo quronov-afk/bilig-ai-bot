@@ -4094,21 +4094,21 @@ const GIFT_EMOJI = [
 
 // Hamyon logosi — chiziqli ikona emas, o‘z rangi bilan chizilgan belgi.
 // Bolalar uchun eng sevimli bo‘lim bo‘lgani uchun u yorqin va «tirik»
-// ko‘rinishi kerak: ko‘k hamyon va uning ustidan tushayotgan oltin Bilig.
+// ko‘rinishi kerak: siyoh-ko‘k hamyon va uning ustidan tushayotgan limon Bilig.
 function walletLogo(size) {
   size = size || 40;
   return '<svg class="wallet-logo" width="' + size + '" height="' + size + '" viewBox="0 0 64 64" fill="none">' +
     // Bilig tangasi
-    '<circle cx="41" cy="15" r="11" fill="#F59E0B"/>' +
-    '<circle cx="41" cy="15" r="7.6" fill="#FBBF24"/>' +
-    '<path d="M41 9.6l1.6 3.3 3.6.5-2.6 2.5.6 3.6-3.2-1.7-3.2 1.7.6-3.6-2.6-2.5 3.6-.5z" fill="#FEF3C7"/>' +
+    '<circle cx="41" cy="15" r="11" fill="#A9C81F"/>' +
+    '<circle cx="41" cy="15" r="7.6" fill="#D7F94F"/>' +
+    '<path d="M41 9.6l1.6 3.3 3.6.5-2.6 2.5.6 3.6-3.2-1.7-3.2 1.7.6-3.6-2.6-2.5 3.6-.5z" fill="#F5FCDD"/>' +
     // Hamyon tanasi
-    '<rect x="6" y="25" width="48" height="31" rx="9" fill="#4E8EF7"/>' +
+    '<rect x="6" y="25" width="48" height="31" rx="9" fill="#2F22E5"/>' +
     // Qopqoq
-    '<path d="M6 34v-1a9 9 0 0 1 9-9h30a9 9 0 0 1 9 9v1z" fill="#7EAFFA"/>' +
+    '<path d="M6 34v-1a9 9 0 0 1 9-9h30a9 9 0 0 1 9 9v1z" fill="#6A5DF5"/>' +
     // Karta uyasi
-    '<rect x="34" y="34" width="26" height="13" rx="6.5" fill="#EAF2FF"/>' +
-    '<circle cx="43" cy="40.5" r="3.1" fill="#F59E0B"/>' +
+    '<rect x="34" y="34" width="26" height="13" rx="6.5" fill="#EAE8FE"/>' +
+    '<circle cx="43" cy="40.5" r="3.1" fill="#C6E63A"/>' +
     '</svg>';
 }
 
@@ -5577,7 +5577,7 @@ function badgeMetaByName(name) {
 
 // ---------- ranglar ----------
 function hex2rgb(h) {
-  h = (h || "#4E8EF7").replace("#", "");
+  h = (h || "#2F22E5").replace("#", "");
   return [parseInt(h.slice(0, 2), 16), parseInt(h.slice(2, 4), 16), parseInt(h.slice(4, 6), 16)];
 }
 function rgb2hex(a) {
@@ -5593,17 +5593,17 @@ function rgbaOf(h, a) { return "rgba(" + hex2rgb(h).join(",") + "," + a + ")"; }
 // Fonni nishon rangi + maskot rangidan quradi. Konfetti ranglarini qaytaradi.
 function applyCelTheme(meta, mascotAccent) {
   const cel = document.getElementById("cel");
-  const rim = meta.rim || "#4E8EF7";
-  const deep = meta.rim_dark || "#2F63D6";
+  const rim = meta.rim || "#2F22E5";
+  const deep = meta.rim_dark || "#2317C0";
   const glow = rgbaOf(mascotAccent || rim, .30);
   cel.style.background =
     "radial-gradient(58% 40% at 74% 78%," + glow + " 0%,transparent 64%)," +
-    "radial-gradient(115% 80% at 50% 34%," + mixColor(deep, "#0B1226", .40) + " 0%," +
-    mixColor(deep, "#0B1226", .74) + " 55%," + mixColor(deep, "#05080F", .88) + " 100%)";
+    "radial-gradient(115% 80% at 50% 34%," + mixColor(deep, "#0D0A24", .40) + " 0%," +
+    mixColor(deep, "#0D0A24", .74) + " 55%," + mixColor(deep, "#05080F", .88) + " 100%)";
   cel.style.setProperty("--ray", rgbaOf(lighten(rim, .5), .24));
   cel.style.setProperty("--eyebrow", lighten(rim, .38));
   cel.style.setProperty("--btn", "linear-gradient(180deg," + lighten(rim, .55) + "," + rim + ")");
-  return [rim, lighten(meta.orn || rim, .35), "#F5C243", "#FFFFFF", mascotAccent || rim];
+  return [rim, lighten(meta.orn || rim, .35), "#D7F94F", "#FFFFFF", mascotAccent || rim];
 }
 
 // ---------- 2-daraja: to‘liq ekran tabrik ----------
@@ -5620,7 +5620,7 @@ function celShow() {
   const cel = document.getElementById("cel");
   const name = celQueue[celIdx];
   const meta = badgeMetaByName(name) ||
-    { slug: "", name: name, msg: "", rim: "#4E8EF7", rim_dark: "#2F63D6", orn: "#2F63D6" };
+    { slug: "", name: name, msg: "", rim: "#2F22E5", rim_dark: "#2317C0", orn: "#2317C0" };
   const colors = applyCelTheme(meta, MASCOT_ACCENT["mascot-sherbola-galaba"]);
   const img = document.getElementById("cel-img");
   if (meta.slug) { img.src = "/badges/" + meta.slug + ".svg?v=" + ASSET_V; img.style.display = "block"; }
@@ -5645,7 +5645,7 @@ function celNext() {
 }
 
 // ---------- konfetti ----------
-let celParts = [], celRaf = null, celColors = ["#F5C243", "#4E8EF7", "#10B981", "#FFFFFF"];
+let celParts = [], celRaf = null, celColors = ["#D7F94F", "#2F22E5", "#7C6BF7", "#FFFFFF"];
 
 function celConfetti(palette) {
   if (palette && palette.length) celColors = palette;

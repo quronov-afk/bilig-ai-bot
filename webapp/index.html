@@ -17,7 +17,7 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
-  background: #F8FAFC; color: #0F172A;
+  background: #F0F1F6; color: #14162A;
   font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased;
 }
@@ -33,11 +33,11 @@ html.css-ok #boot { display: none; }
 #boot {
   position: fixed; inset: 0; display: flex; flex-direction: column;
   align-items: center; justify-content: center; gap: 14px;
-  background: #F8FAFC; color: #64748B; font-size: 15px; font-weight: 600;
+  background: #F0F1F6; color: #565C78; font-size: 15px; font-weight: 600;
 }
 #boot .ring {
   width: 26px; height: 26px; border-radius: 50%;
-  border: 3px solid #E2E8F0; border-top-color: #4E8EF7;
+  border: 3px solid #E6E8F0; border-top-color: #2F22E5;
   animation: bootspin .8s linear infinite;
 }
 @keyframes bootspin { to { transform: rotate(360deg); } }
@@ -61,7 +61,7 @@ setTimeout(function () { document.documentElement.classList.add("css-ok"); }, 10
      o‘z ichida — hech qanday tashqi faylga bog‘liq emas, shuning uchun
      tarmoq qanchalik sekin bo‘lsa ham u albatta to‘g‘ri chiqadi. -->
 <div id="boot">
-  <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#4E8EF7" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+  <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#2F22E5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
   <div class="ring"></div>
   <div>Bilig AI ochilmoqda…</div>
 </div>

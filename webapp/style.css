@@ -34,36 +34,46 @@
    ========================================================== */
 
 :root {
-  --bg: #F8FAFC;
+  /* Playbek uslubidagi palitra (ega tasdiqlagan, 2026-09-11):
+     siyoh-ko‘k + limon-yashil. Oltin butunlay chiqib ketdi —
+     «mukofot» ma'nosini endi limon oladi. */
+  --bg: #F0F1F6;
   --surface: #FFFFFF;
-  --surface-soft: #F1F5F9;
-  --text: #0F172A;
-  --text-soft: #64748B;
-  --text-faint: #94A3B8;
-  --border: #E2E8F0;
+  --surface-soft: #F1F2F8;
+  --text: #14162A;
+  --text-soft: #565C78;
+  --text-faint: #6B7385;
+  --border: #E6E8F0;
 
-  --brand: #4E8EF7;
-  --brand-deep: #2F63D6;
-  --brand-bg: #EAF2FF;
+  --brand: #2F22E5;
+  --brand-deep: #2317C0;
+  --brand-bg: #EAE8FE;
 
-  --gold: #F59E0B;
-  --gold-bg: #FEF3C7;
-  --gold-deep: #92400E;
+  /* Limon. Eski «--gold» nomlari saqlandi — ular ilova bo‘ylab
+     o‘nlab joyda ishlatiladi; faqat qiymati limonga almashdi. */
+  --lime: #D7F94F;
+  --lime-ink: #1A2000;
+  --gold: #B9DC2E;
+  --gold-bg: #F3FBD5;
+  --gold-deep: #5C7300;
 
-  --success: #10B981;
-  --success-bg: #D1FAE5;
-  --success-deep: #065F46;
+  /* Kechki binafsha — AI ustoz kartasi */
+  --night: linear-gradient(150deg, #3A2E9E, #241C6B);
 
-  --danger: #EF4444;
-  --danger-bg: #FEE2E2;
-  --danger-deep: #991B1B;
+  --success: #22A06B;
+  --success-bg: #DCF3E8;
+  --success-deep: #0E6B45;
+
+  --danger: #E5544B;
+  --danger-bg: #FDE8E6;
+  --danger-deep: #9B2A23;
 
   --radius-lg: 20px;
   --radius-md: 16px;
   --radius-sm: 12px;
-  --shadow: 0 10px 26px -12px rgba(15, 23, 42, 0.22), 0 1px 0 rgba(255,255,255,0.6) inset;
-  --shadow-sm: 0 1px 0 rgba(255,255,255,0.7) inset, 0 3px 8px -3px rgba(15, 23, 42, 0.16), 0 1px 2px rgba(15,23,42,0.06);
-  --shadow-raised: 0 1px 0 rgba(255,255,255,0.8) inset, 0 4px 12px -4px rgba(15,23,42,0.18);
+  --shadow: 0 10px 26px -12px rgba(20, 22, 42, 0.22), 0 1px 0 rgba(255,255,255,0.6) inset;
+  --shadow-sm: 0 1px 0 rgba(255,255,255,0.7) inset, 0 3px 8px -3px rgba(20, 22, 42, 0.14), 0 1px 2px rgba(20,22,42,0.05);
+  --shadow-raised: 0 1px 0 rgba(255,255,255,0.8) inset, 0 4px 12px -4px rgba(20,22,42,0.16);
 }
 
 * { box-sizing: border-box; }
@@ -147,8 +157,8 @@ html, body {
   [data-action].is-busy::after { animation: none; }
 }
 .btn.big { width: 100%; max-width: 300px; padding: 15px 18px; font-size: 17px; }
-.btn-primary { background: var(--brand); color: #fff; box-shadow: 0 1px 0 rgba(255,255,255,.35) inset, 0 6px 14px -6px rgba(78,142,247,0.5); }
-.btn-primary:hover { background: var(--brand-deep); }
+.btn-primary { background: var(--lime); color: var(--lime-ink); box-shadow: 0 1px 0 rgba(255,255,255,.45) inset, 0 8px 18px -8px rgba(183,220,46,.95); }
+.btn-primary:hover { background: #C8EC3C; }
 .btn-secondary { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
 .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
 /* Faqat ikonadan iborat kichik tugma (masalan Bolaxonadagi "Tahrirlash") */
@@ -388,7 +398,7 @@ html, body {
   background: var(--surface); border: 1px solid var(--border); color: var(--text-soft); cursor: pointer;
   display: flex; align-items: center; gap: 6px; box-shadow: var(--shadow-raised);
 }
-.chip.active { background: var(--brand); color: #fff; border-color: var(--brand); box-shadow: 0 1px 0 rgba(255,255,255,.35) inset, 0 5px 12px -6px rgba(78,142,247,0.55); }
+.chip.active { background: var(--brand); color: #fff; border-color: var(--brand); box-shadow: 0 1px 0 rgba(255,255,255,.35) inset, 0 5px 12px -6px rgba(47,34,229,0.5); }
 
 .detail-topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
 .back-link, .edit-link {
@@ -484,9 +494,9 @@ html, body {
 }
 
 /* Ikona ranglari */
-.ic-flame { color: #F97316; }
+.ic-flame { color: #EE7150; }
 .ic-coin  { color: var(--gold); }
-.ic-rank  { color: #B45309; }
+.ic-rank  { color: var(--brand-deep); }
 .ic-audio { color: #0891B2; }
 .ic-brand { color: var(--brand); }
 .ic-leaf  { color: var(--success); }
@@ -601,7 +611,7 @@ html, body {
 .tst-best b { color: var(--text-soft); }
 
 /* ---------- Bolaga: kuchli tomoni ---------- */
-.str-card { background: linear-gradient(180deg, #FEFAE8 0%, var(--surface) 70%); border-color: #F7E3A8; }
+.str-card { background: linear-gradient(180deg, #F8FDEA 0%, var(--surface) 70%); border-color: #DCEF95; }
 .str-row { display: flex; gap: 10px; align-items: flex-start; }
 .str-ic { color: var(--gold-deep); flex-shrink: 0; margin-top: 1px; }
 .str-row p { margin: 0; font-size: 15.5px; line-height: 1.5; }
@@ -847,8 +857,8 @@ html, body {
 /* Muz — do‘kon javonidan tashqarida, alohida kartochka */
 .freeze-card {
   display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
-  background: linear-gradient(135deg, #EAF4FF, var(--surface));
-  border: 1px solid #CFE2FB; border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #EFEDFE, var(--surface));
+  border: 1px solid #D9D4FB; border-radius: var(--radius-md);
   padding: 13px 14px; box-shadow: var(--shadow-raised);
 }
 .fz-ic {
@@ -969,9 +979,9 @@ html, body {
    shuning uchun bu yagona joyda to‘q ko‘k, «tirik» kartochka ishlatiladi. */
 .wallet-hero {
   position: relative; overflow: hidden;
-  background: linear-gradient(160deg, #5B95F8 0%, #3B6FDE 55%, #2F5BC4 100%);
+  background: linear-gradient(160deg, #4B3BF2 0%, #2F22E5 55%, #2317C0 100%);
   border-radius: 24px; padding: 20px 16px 16px; text-align: center; margin-bottom: 18px;
-  box-shadow: 0 18px 34px -18px rgba(47, 99, 214, .75);
+  box-shadow: 0 18px 34px -18px rgba(35, 23, 192, .8);
   color: #fff;
 }
 /* Orqadagi yumshoq yorug‘lik — kartochka tekis bo‘lib qolmasin */
@@ -1073,7 +1083,7 @@ html, body {
 
 /* Va'da qilingan sovg‘alar — ota-onaga iliq eslatma */
 .promise-card {
-  background: var(--gold-bg); border: 1px solid #FCD34D; border-radius: var(--radius-md);
+  background: var(--gold-bg); border: 1px solid #D2E97C; border-radius: var(--radius-md);
   padding: 14px; margin-bottom: 16px;
 }
 .pc-title {
@@ -1125,7 +1135,7 @@ html, body {
   width: 30px; height: 30px; border-radius: 50%; cursor: pointer;
   /* To‘liq oq va aniq soya: tugma maskot chizmasi ustida turadi,
      shaffof bo‘lsa unga singib ketardi. */
-  background: #fff; border: 1px solid #CBDBF8; color: var(--brand-deep);
+  background: #fff; border: 1px solid #D9D4FB; color: var(--brand-deep);
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 3px 8px -2px rgba(15,23,42,.24);
   transition: background .15s ease, transform .15s ease;
@@ -1522,7 +1532,7 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
    ========================================================== */
 #cel {
   position: fixed; inset: 0; z-index: 99; display: none; overflow: hidden;
-  background: radial-gradient(115% 80% at 50% 34%, #24356B 0%, #131C3A 55%, #0B1226 100%);
+  background: radial-gradient(115% 80% at 50% 34%, #2A2470 0%, #191445 55%, #0D0A24 100%);
 }
 #cel.on { display: block; }
 #cel canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
@@ -1571,7 +1581,7 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
 }
 .cel-eyebrow {
   font-size: 14.5px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
-  color: var(--eyebrow, #FCD34D); margin: 26px 0 8px; opacity: 0;
+  color: var(--eyebrow, #D7F94F); margin: 26px 0 8px; opacity: 0;
 }
 .cel-name {
   font-size: 28px; font-weight: 800; color: #fff; line-height: 1.15; margin: 0; opacity: 0;
@@ -1584,8 +1594,8 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
 .cel-count { font-size: 14px; font-weight: 700; color: rgba(255,255,255,.5); margin-top: 16px; opacity: 0; }
 .cel-btn {
   margin-top: 28px; border: 0; border-radius: 15px; padding: 15px 46px; font-family: inherit;
-  font-size: 18px; font-weight: 800; color: #1E293B; cursor: pointer; opacity: 0;
-  background: var(--btn, linear-gradient(180deg, #FFE79A, #F5C243));
+  font-size: 18px; font-weight: 800; color: #1A2000; cursor: pointer; opacity: 0;
+  background: var(--btn, linear-gradient(180deg, #E4FC86, #C8EC3C));
   box-shadow: 0 10px 24px -10px rgba(0,0,0,.55);
 }
 #cel.on .cel-eyebrow { animation: cel-up .5s .55s forwards; }
@@ -1601,7 +1611,7 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
 .welc {
   position: relative; display: flex; align-items: center; gap: 10px; padding: 14px 16px;
   background: linear-gradient(135deg, var(--brand-bg), var(--bg));
-  border: 1px solid #D8E4FB; border-radius: var(--radius-md);
+  border: 1px solid #D9D4FB; border-radius: var(--radius-md);
   box-shadow: var(--shadow-raised); overflow: hidden; margin-bottom: 14px;
 }
 .welc .m {
@@ -1668,14 +1678,14 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
   font-weight: 800;
   letter-spacing: .04em;
   text-transform: uppercase;
-  color: var(--text-soft, #64748B);
+  color: var(--text-soft, #565C78);
 }
 .review-all-ok {
   margin: 14px 0 4px;
   padding: 12px 14px;
   border-radius: var(--radius-md, 14px);
   background: rgba(16, 185, 129, .10);
-  color: var(--success-deep, #047857);
+  color: var(--success-deep, #0E6B45);
   font-weight: 700;
   font-size: 14px;
 }
@@ -1708,10 +1718,10 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
   font-weight: 700;
   letter-spacing: .04em;
   text-transform: uppercase;
-  color: var(--text-soft, #64748B);
+  color: var(--text-soft, #565C78);
 }
-.review-line.bad { border-left-color: var(--danger, #EF4444); }
-.review-line.good { border-left-color: var(--success, #10B981); font-weight: 600; }
+.review-line.bad { border-left-color: var(--danger, #E5544B); }
+.review-line.good { border-left-color: var(--success, #22A06B); font-weight: 600; }
 
 
 /* ==========================================================
@@ -1737,15 +1747,15 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
   height: 52px;
   margin: 0 auto 14px;
   border-radius: 50%;
-  background: rgba(78, 142, 247, .12);
-  color: var(--brand, #4E8EF7);
+  background: rgba(47, 34, 229, .10);
+  color: var(--brand, #2F22E5);
 }
 .load-error-title { margin: 0 0 6px; font-size: 17px; font-weight: 800; }
 .load-error-sub {
   margin: 0 0 18px;
   font-size: 14px;
   line-height: 1.45;
-  color: var(--text-soft, #64748B);
+  color: var(--text-soft, #565C78);
 }
 .load-error .btn { width: 100%; }
 
@@ -1770,9 +1780,9 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
    ========================================================== */
 .win-panel {
   position: relative; overflow: hidden; text-align: center;
-  background: linear-gradient(158deg, #FBBF24 0%, #F59E0B 52%, #D97706 100%);
+  background: linear-gradient(158deg, #4A3BF0 0%, #2F22E5 52%, #2317C0 100%);
   border-radius: var(--radius-lg); padding: 22px 16px 16px; margin: 4px 0 14px;
-  box-shadow: 0 18px 32px -18px rgba(180, 83, 9, .8);
+  box-shadow: 0 18px 32px -18px rgba(35, 23, 192, .85);
   color: #fff;
 }
 .win-glow {
@@ -2015,7 +2025,7 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
 .g-code { display: flex; align-items: center; justify-content: space-between; gap: 10px; cursor: pointer; }
 .g-code-val { font-size: 19px; font-weight: 800; letter-spacing: .1em; display: block; }
 .g-code-note { margin: 2px 0 0; font-size: 12.5px; color: var(--text-faint); }
-.g-req { background: var(--gold-bg); border-color: #F6D77E; }
+.g-req { background: var(--gold-bg); border-color: #D2E97C; }
 .g-req .list-row { border-bottom-color: rgba(146, 64, 14, .16); }
 .g-req-t {
   margin: 0 0 4px; font-size: 13px; font-weight: 800; color: var(--gold-deep);
@@ -2099,7 +2109,7 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
   display: flex; gap: 11px; border-radius: var(--radius-md); padding: 13px 15px; margin-bottom: 12px;
   font-size: 13.5px; line-height: 1.5;
 }
-.notice-ai { background: var(--gold-bg); border: 1px solid #F6D77E; color: var(--gold-deep); }
+.notice-ai { background: var(--gold-bg); border: 1px solid #D2E97C; color: var(--gold-deep); }
 .notice-soft { background: var(--surface-soft); color: var(--text-soft); display: block; }
 .notice-ai .n-ic {
   width: 32px; height: 32px; border-radius: 10px; background: rgba(146, 64, 14, .12);
@@ -2120,7 +2130,7 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
   display: flex; align-items: center; gap: 9px; border: 1px solid var(--border); border-radius: var(--radius-sm);
   padding: 9px 11px; margin-bottom: 8px;
 }
-.q-opt.is-right { border-color: #6EE7B7; background: var(--success-bg); }
+.q-opt.is-right { border-color: #8ADBB5; background: var(--success-bg); }
 .q-mark {
   width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--border); background: none;
   flex-shrink: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;
@@ -2153,12 +2163,12 @@ textarea.text-input { min-height: 90px; resize: vertical; text-align: left; lett
   flex: 1; padding: 10px 0; border-radius: 999px; border: 1px solid var(--border); background: var(--surface);
   font-family: inherit; font-size: 14px; font-weight: 700; color: var(--text-soft); cursor: pointer;
 }
-.day-chip.is-on { background: var(--brand-bg); border-color: #A9C8FB; color: var(--brand-deep); }
+.day-chip.is-on { background: var(--brand-bg); border-color: #C5BEFA; color: var(--brand-deep); }
 textarea.g-input { resize: vertical; line-height: 1.45; }
 
 /* Musobaqa yakuni va olqish */
 .win-card {
-  background: linear-gradient(160deg, #FEF3C7, #FDE68A); border: 1px solid #F6D77E;
+  background: linear-gradient(160deg, #F7FDE4, #E9FBB4); border: 1px solid #D2E97C;
   border-radius: var(--radius-lg); padding: 20px 16px; text-align: center; margin-bottom: 14px;
 }
 .win-ic {
@@ -2166,7 +2176,7 @@ textarea.g-input { resize: vertical; line-height: 1.45; }
   display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;
 }
 .win-t { margin: 0; font-size: 21px; font-weight: 800; letter-spacing: -0.01em; color: var(--gold-deep); }
-.win-s { margin: 4px 0 0; font-size: 14.5px; font-weight: 700; color: #A16207; }
+.win-s { margin: 4px 0 0; font-size: 14.5px; font-weight: 700; color: var(--gold-deep); }
 .kudos-row b { font-size: 15.5px; }
 
 
@@ -2235,7 +2245,7 @@ textarea.g-input { resize: vertical; line-height: 1.45; }
 .plus-head.is-on b { color: var(--gold-deep); }
 
 .plus-why {
-  background: var(--gold-bg); border: 1px solid #F6D77E; border-radius: var(--radius-md);
+  background: var(--gold-bg); border: 1px solid #D2E97C; border-radius: var(--radius-md);
   padding: 13px 15px; font-size: 14px; line-height: 1.55; color: var(--text-soft);
   margin-bottom: 16px;
 }
@@ -2271,7 +2281,7 @@ textarea.g-input { resize: vertical; line-height: 1.45; }
 /* Bosh sahifadagi taklif */
 .plus-banner {
   display: flex; align-items: center; gap: 12px; width: 100%; text-align: left;
-  background: var(--surface); border: 1px solid #F6D77E; border-radius: var(--radius-lg);
+  background: var(--surface); border: 1px solid #D2E97C; border-radius: var(--radius-lg);
   padding: 13px 15px; margin-bottom: 14px; font-family: inherit;
   box-shadow: var(--shadow-raised); color: var(--text-faint); cursor: pointer;
 }
@@ -2314,3 +2324,158 @@ textarea.g-input { resize: vertical; line-height: 1.45; }
 }
 .plus-cancel:active { opacity: .6; }
 .kid-more.is-locked { color: var(--gold); }
+
+
+/* ==========================================================
+   PLAYBEK KO‘RINISHI (2026-09-11)
+   ----------------------------------------------------------
+   Ega tasdiqlagan uch belgi: tepada yumaloq siyoh-ko‘k panel,
+   pastda suzib turgan yumaloq menyu, AI ustoz kartasi kechki
+   binafsha rangda. Ilova tuzilmasi va matnlari o‘zgarmagan —
+   faqat ko‘rinish.
+   ========================================================== */
+
+/* --- Tepa panel --- */
+#app-header {
+  background: var(--brand);
+  color: #fff;
+  border-radius: 0 0 26px 26px;
+  padding: 14px 16px 16px;
+  box-shadow: 0 12px 28px -20px rgba(35, 23, 192, .95);
+}
+#app-header .header-name { color: #fff; }
+#app-header .header-role { color: rgba(255, 255, 255, .72); }
+#app-header .avatar {
+  background: #fff; color: var(--brand);
+  border-radius: 50%; border: 2.5px solid var(--lime);
+}
+#app-header .back-btn,
+#app-header .btn-icon { color: #fff; }
+#app-header .back-btn {
+  background: rgba(255, 255, 255, .18); border-color: transparent; box-shadow: none;
+}
+#app-header .back-btn:active { background: rgba(255, 255, 255, .3); }
+#app-header .icon-btn {
+  background: rgba(255, 255, 255, .18); color: #fff; box-shadow: none;
+}
+#app-header .icon-btn-accent,
+#app-header .header-nav .icon-btn.is-on {
+  background: var(--lime); color: var(--lime-ink); border-color: var(--lime);
+}
+
+/* Bolaxona lentasi panelning davomi bo‘lib turadi */
+.bolaxona-banner {
+  background: var(--brand-deep);
+  margin: 10px 14px 0;
+  padding: 9px 12px 9px 14px;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px -10px rgba(35, 23, 192, .75);
+}
+
+/* --- Suzib turgan pastki menyu --- */
+#app-tabs {
+  left: 10px; right: 10px;
+  bottom: calc(10px + env(safe-area-inset-bottom));
+  background: var(--brand);
+  border-top: none;
+  border-radius: 24px;
+  padding: 11px 6px 12px;
+  box-shadow: 0 16px 30px -14px rgba(35, 23, 192, .6);
+}
+.tab-btn { color: rgba(255, 255, 255, .6); font-weight: 700; }
+.tab-btn.active { color: var(--lime); }
+#app-main { padding-bottom: 112px; }
+
+/* --- AI ustoz: kechki binafsha --- */
+.ai-card {
+  background: var(--night);
+  border: none;
+  box-shadow: 0 12px 26px -14px rgba(36, 28, 107, .8);
+}
+.ai-card .ai-ic { color: var(--lime); }
+.ai-card .ai-text { color: rgba(255, 255, 255, .88); }
+.ai-card .ai-topic { background: rgba(255, 255, 255, .10); }
+.ai-card .ai-topic b { color: var(--lime); }
+.ai-card .ai-topic p { color: #fff; }
+
+/* --- Mutolaa chizig‘i siyoh-ko‘k --- */
+.progress-fill { background: var(--brand); }
+
+/* --- Asosiy amal kartasi: limon (Playbek konseptidagi asosiy tugma) --- */
+.hero-card {
+  background: var(--lime);
+  color: var(--lime-ink);
+  box-shadow: 0 14px 28px -14px rgba(160, 196, 30, .95);
+}
+.hero-card .eyebrow { color: rgba(26, 32, 0, .58); }
+.hero-card .icon-circle { background: rgba(26, 32, 0, .10); }
+
+
+/* ==========================================================
+   VERTIKAL RITM — bo‘limlar orasidagi standart oraliq
+   ----------------------------------------------------------
+   Ega ko‘rsatdi: sarlavhalar tepadagi tugma yoki kartaga tegib
+   turgan joylar bor edi. Endi butun ilova bo‘ylab bitta o‘lcham:
+   bo‘lim sarlavhasi tepadan 22px, ostidan 10px; sarlavha ostidagi
+   izoh sarlavha bilan juft bo‘lib turadi.
+   ========================================================== */
+#app-main { padding-top: 10px; }
+
+.sec-label { margin: 22px 0 10px; }
+.sec-more { margin: 22px 0 8px; }
+.sec-more > .sec-label { margin: 0; }
+.sec-more + .section-sub { margin-top: 0; }
+
+/* Sahifaning eng birinchi sarlavhasi tepada ortiqcha bo‘shliq
+   qoldirmasin — panel bilan orasi allaqachon yetarli. */
+#app-main > .sec-label:first-child,
+#app-main > .sec-more:first-child,
+#app-main > .section-title:first-child { margin-top: 4px; }
+
+/* To‘liq enli tugmadan keyin keladigan har qanday blok nafas olsin */
+.btn-block + .sec-label,
+.btn-block + .sec-more,
+.btn-block + .section-title { margin-top: 22px; }
+
+/* Hamyon: «so‘m» tabletkasi limon urg‘uda */
+.wallet-hero:not(.small) .wh-som { background: var(--lime); color: var(--lime-ink); }
+
+/* Sarlavha o‘lchamlari bir xil ritmda */
+.section-title { margin-top: 22px; }
+#feed-slot:not(:empty) { margin-top: 4px; }
+
+/* Hamyon belgisi to‘q kartada yo‘qolib qolmasin — oq doira ichida turadi */
+.wallet-hero:not(.small) .wh-logo {
+  width: 74px; height: 74px; margin: 0 auto 6px;
+  align-items: center; border-radius: 50%;
+  background: rgba(255, 255, 255, .95);
+}
+.wallet-hero:not(.small) .wh-logo .wallet-logo {
+  filter: drop-shadow(0 3px 6px rgba(20, 22, 42, .18));
+}
+
+/* Kichik sarlavha (eyebrow) tepasidagi blokka tegib turmasin */
+#app-main > * + .eyebrow { margin-top: 20px; }
+#modal-body > * + .eyebrow { margin-top: 18px; }
+.modal-book > #modal-body > * + .eyebrow { margin-top: 14px; }
+.hero-card .eyebrow { margin-top: 0; }
+
+/* O‘chirish tugmasi butun qatorni egallab yotmasin — ixcham turadi */
+.action-row .btn-danger { flex: 0 0 auto; min-width: 54px; }
+
+
+/* ==========================================================
+   BOLA REJIMI — limon urg‘usi
+   ----------------------------------------------------------
+   Ega ko‘rsatdi: bola ekrani butunlay ko‘k bo‘lib qolgan, yangi
+   dizayn sezilmayapti. Asosiy kartadagi chiziq, foiz va «Davom
+   etish» endi limon rangda — ota-onadagi limon tugmaning javobi.
+   ========================================================== */
+.rc-eyebrow { color: var(--lime); }
+.rc-bar i { background: var(--lime); }
+.rc-pct { background: var(--lime); color: var(--lime-ink); }
+.rc-go { color: var(--lime); }
+
+/* Sarlavhadagi ism tugmalarga minib ketmasin — uzun ism qisqaradi */
+.header-texts { min-width: 0; }
+#app-header { gap: 10px; }
