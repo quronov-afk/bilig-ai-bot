@@ -897,6 +897,16 @@ TEST_MID_COUNT = 7        # oraliq testda nechta savol
 TEST_FINAL_COUNT = 10     # yakuniy testda nechta savol
 STAGE_ORDER = ("mid_test_1", "mid_test_2", "final_test")
 
+# SAVOL O‘RNI (ega topgan xato, 2026-09-13). Rasmiy bazadagi har savolda
+# «pos» bor — javobi kitobning necha foizida turgani (0-100, to‘liq Word
+# matndan AI'siz topilgan: tools/locate_questions.py). 1-oraliq kitobning
+# 33 foizida ochiladi, lekin savol faqat 25 foizgacha bo‘lgan joydan
+# olinadi; 2-oraliq 67 foizda ochiladi, savol 58 foizgacha. Zaxira —
+# so‘zboshi, rasmlar va bosma nashrning Word'dan boshqacha sahifalanishi
+# uchun. O‘rni aniqlanmagan savol (pos=null) faqat yakuniy testga tushadi.
+POS_MID1_MAX = 25
+POS_MID2_MAX = 58
+
 
 def _split_by_part(questions):
     """Savollarni kitobning uch qismiga ajratadi.
@@ -945,6 +955,8 @@ def stage_questions(questions, stage, done_stages=()):
     Oraliqlarni topshirmagan bolada esa (masalan, test faqat yakuniy
     bo‘lgan kitobda) butun bank ochiq qoladi.
     """
+    if _has_positions(questions):
+        return _stage_by_position(questions, stage, done_stages)
     parts = _split_by_part(questions)
     if stage == "mid_test_1":
         return parts[1][:TEST_MID_COUNT]
@@ -973,6 +985,62 @@ def stage_questions(questions, stage, done_stages=()):
     return picked[:TEST_FINAL_COUNT]
 
 
+def _has_positions(questions):
+    """Testda savol o‘rni («pos») belgilanganmi — rasmiy bazadan kelganmi."""
+    return any(isinstance(q, dict) and "pos" in q for q in questions)
+
+
+def _pos(q):
+    v = q.get("pos")
+    return v if isinstance(v, (int, float)) and not isinstance(v, bool) else None
+
+
+def _stage_by_position(questions, stage, done_stages=()):
+    """Bosqich savollarini javob kitobning QAYERIDA ekaniga qarab tanlaydi.
+
+    Tartib qat'iy (savol berish va tekshirishda aynan bir xil ro‘yxat):
+    savollar bankdagi tartibida olinadi, tasodif yo‘q.
+    """
+    early = [q for q in questions if _pos(q) is not None and _pos(q) <= POS_MID1_MAX]
+    middle = [q for q in questions
+              if _pos(q) is not None and POS_MID1_MAX < _pos(q) <= POS_MID2_MAX]
+    mid1 = early[:TEST_MID_COUNT]
+    if stage == "mid_test_1":
+        return mid1
+    if stage == "mid_test_2":
+        chosen = {id(q) for q in mid1}          # 1-oraliqdagilar takrorlanmasin
+        picked = _take(middle, TEST_MID_COUNT, chosen)
+        if len(picked) < TEST_MID_COUNT:
+            picked += _take(early, TEST_MID_COUNT - len(picked), chosen)
+        if len(picked) < TEST_MID_COUNT:
+            # Zaxira: o‘rni topilmagan, lekin AI «boshlanishi» (1-qism) degan
+            # savol. Tekshiruv (2026-09-13, 852 ta savol): bunday savollarning
+            # 97 foizi kitobning 67 foizigacha turadi — 2-oraliq aynan shu
+            # joyda ochiladi. 2-qism uchun bu ko‘rsatkich 87 % — yetarli emas.
+            first_part = [q for q in questions
+                          if _pos(q) is None and str(q.get("part")) == "1"
+                          and q.get("category") != "conclusion"]
+            picked += _take(first_part, TEST_MID_COUNT - len(picked), chosen)
+        return picked
+
+    asked = set()
+    if "mid_test_1" in done_stages:
+        asked |= {id(q) for q in mid1}
+    if "mid_test_2" in done_stages:
+        asked |= {id(q) for q in _stage_by_position(questions, "mid_test_2")}
+    fresh = [q for q in questions if id(q) not in asked]
+    late = [q for q in fresh if _pos(q) is None or _pos(q) > POS_MID2_MAX]
+    rest = [q for q in fresh if not (_pos(q) is None or _pos(q) > POS_MID2_MAX)]
+    chosen = set()
+    picked = _take(late, 6, chosen) + _take(rest, 4, chosen)
+    if len(picked) < TEST_FINAL_COUNT:
+        picked += _take(fresh, TEST_FINAL_COUNT - len(picked), chosen)
+    if len(picked) < TEST_FINAL_COUNT:
+        # Kichik bankda savolsiz qolgandan ko‘ra bir-ikkitasi takrorlangani yaxshi.
+        picked += _take(questions, TEST_FINAL_COUNT - len(picked), chosen)
+    return picked[:TEST_FINAL_COUNT]
+
+
 def _done_stages(book_id):
     """Bola qaysi oraliq bosqichlarni allaqachon topshirgan."""
     cursor.execute(
@@ -986,13 +1054,42 @@ def _done_stages(book_id):
     return tuple(out)
 
 
+MIN_MID_QUESTIONS = 3     # oraliq testda bundan kam savol chiqsa — bosqich berilmaydi
+
+
+def stage_available(book_id, stage):
+    """Oraliq bosqichda yetarli savol bormi.
+
+    Savol o‘rni bo‘yicha tanlanganda (rasmiy baza) ba'zi kitoblarda kitob
+    boshidan ishonchli joylashgan savol kam chiqadi. 1-2 savollik «test»
+    bolani baholamaydi, faqat Bilig beradi — shuning uchun bunday bosqich
+    yopiq turadi. O‘rni belgilanmagan eski testlarda avvalgi tartib qoladi.
+    """
+    if stage == "final_test":
+        return True
+    cursor.execute("SELECT questions_json FROM Book_Tests WHERE book_id = ?", (book_id,))
+    row = cursor.fetchone()
+    if not row or not row[0]:
+        return True
+    try:
+        questions = json.loads(row[0])
+    except Exception:
+        return True
+    if not _has_positions(questions):
+        return True
+    asked = stage_questions(normalize_questions(questions), stage, _done_stages(book_id))
+    return len(asked) >= MIN_MID_QUESTIONS
+
+
 def stage_gate(book_id, stage):
     """Bu bosqich hozir ochiqmi? Qaytaradi: (ochiqmi, yana necha bet kerak).
 
     1-oraliq — kitobning 1/3 qismi o‘qilganda,
     2-oraliq — 2/3 qismi o‘qilganda,
     yakuniy  — oxirigacha o‘qilganda ochiladi.
-    Kitobning bet soni noma'lum bo‘lsa qulf ishlamaydi — hammasi ochiq.
+    Kitobning bet soni noma'lum bo‘lsa (2026-09-13 dan): oraliq testlar
+    YOPIQ — bola qayerga yetgani noma'lum, o‘qilmagan joydan savol
+    tushmasin. Yakuniy test ochiq, aks holda kitobni yopib bo‘lmasdi.
     """
     cursor.execute("SELECT pages_read, total_pages FROM Plan_Books WHERE book_id = ?", (book_id,))
     row = cursor.fetchone()
@@ -1001,7 +1098,7 @@ def stage_gate(book_id, stage):
     pages = row[0] or 0
     total = row[1] or 0
     if total <= 0:
-        return True, 0
+        return stage == "final_test", 0
     # Yakuniy test uchun 100% talab qilinmaydi: bola oxirgi betni rasmga
     # olmasligi mumkin va test butunlay yopilib qolardi. 90% yetarli.
     need_at = {"mid_test_1": (total + 2) // 3,
@@ -1066,7 +1163,15 @@ def talk_gate(book_id, stage):
     «start» — kitobning uchdan biri o‘qilganda (1-oraliq test bilan bir vaqtda),
     «end»   — kitob oxirigacha o‘qilganda (yakuniy test bilan bir vaqtda).
     """
-    return stage_gate(book_id, "mid_test_1" if stage == "start" else "final_test")
+    if stage == "start":
+        # Bet soni noma'lum kitobda AI ustoz savoli avvalgidek ochiq qoladi:
+        # u testdek aniq joydan so‘ramaydi.
+        cursor.execute("SELECT total_pages FROM Plan_Books WHERE book_id = ?", (book_id,))
+        r = cursor.fetchone()
+        if r is not None and not (r[0] or 0):
+            return True, 0
+        return stage_gate(book_id, "mid_test_1")
+    return stage_gate(book_id, "final_test")
 
 
 def get_talk_question(title, author, stage):
@@ -1354,10 +1459,14 @@ def _import_book_seed():
             except Exception:
                 _books = []
             _fresh = {}
+            _enrich = {}
             for _bid, _t, _a, _src in _books:
+                _k = book_key(_t or "", _a or "")
+                if _src == "seed" and _k in seed_keys:
+                    _enrich[_bid] = _k
+                    continue
                 if _src in ("seed", "parent", "task"):
                     continue
-                _k = book_key(_t or "", _a or "")
                 if _k in seed_keys:
                     _fresh[_bid] = _k
             for _bid, _k in _fresh.items():
@@ -1375,6 +1484,30 @@ def _import_book_seed():
                     traceback.print_exc()
             if _fresh:
                 print("[seed] %d ta kitobda eski test rasmiysi bilan almashtirildi" % len(_fresh))
+
+            # Rasmiy testi ALLAQACHON biriktirilgan kitoblar (2026-09-13):
+            # savollar aynan o‘sha bo‘lsa, yangi nusxa qo‘yiladi — unda savol
+            # o‘rni («pos») bor. Savol almashmaydi, faqat bosqichlarga to‘g‘ri
+            # taqsimlanadi. Savollar farq qilsa — tegilmaydi.
+            _enriched = 0
+            for _bid, _k in _enrich.items():
+                try:
+                    cursor.execute("SELECT questions_json FROM Book_Tests WHERE book_id = ?", (_bid,))
+                    _old = cursor.fetchone()
+                    cursor.execute("SELECT questions_json FROM Test_Bank WHERE book_key = ?", (_k,))
+                    _new = cursor.fetchone()
+                    if not _old or not _new or not _old[0] or not _new[0] or _old[0] == _new[0]:
+                        continue
+                    _oq = {str(q.get("question")) for q in json.loads(_old[0]) if isinstance(q, dict)}
+                    _nq = {str(q.get("question")) for q in json.loads(_new[0]) if isinstance(q, dict)}
+                    if _oq and _oq == _nq:
+                        cursor.execute("UPDATE Book_Tests SET questions_json = ? WHERE book_id = ?",
+                                       (_new[0], _bid))
+                        _enriched += 1
+                except Exception:
+                    traceback.print_exc()
+            if _enriched:
+                print("[seed] %d ta kitob testiga savol o‘rni qo‘shildi" % _enriched)
 
         try:
             cursor.execute(
@@ -2206,8 +2339,23 @@ def api_me():
     row = cursor.fetchone()
 
     if not row:
-        # Bazada umuman yo‘q — link orqali kirmagan, yopiq beta
-        return jsonify({"exists": False, "approved": False})
+        # Yangi foydalanuvchi. Ilova 2026-09-13 dan OMMAGA OCHIQ (ega qarori):
+        # taklif havolasi shart emas — ro‘yxatga olinadi, keyin rol so‘raladi.
+        with db_lock:
+            cursor.execute(
+                "INSERT OR IGNORE INTO Users (user_id, name, is_approved, created_at) "
+                "VALUES (?, ?, 1, ?)",
+                (uid, g.tg_user.get("first_name", ""),
+                 datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+            conn.commit()
+        cursor.execute(
+            "SELECT role, name, is_approved, balance_coins, streak_days, rank_title, avatar_id, profile_done "
+            "FROM Users WHERE user_id = ?",
+            (uid,)
+        )
+        row = cursor.fetchone()
+        if not row:
+            return jsonify({"exists": False, "approved": False})
 
     role, name, approved, coins, streak, rank, avatar_id, profile_done = row
     result = {
@@ -4112,6 +4260,8 @@ def child_book_detail(book_id):
     stages = {}
     for _st in STAGE_ORDER:
         _open, _need = stage_gate(book_id, _st)
+        if not stage_available(book_id, _st):
+            _open, _need = False, 0          # bu kitobda shu oraliq test yo‘q
         stages[_st] = {"open": _open, "need_pages": _need}
     talk = {}
     for _ts in TALK_STAGES:
@@ -4769,6 +4919,8 @@ def child_get_test(book_id):
     is_open, need = stage_gate(book_id, stage)
     if not is_open:
         return jsonify({"error": "Bu testga hali erta. Yana %d bet o‘qi." % need}), 403
+    if not stage_available(book_id, stage):
+        return jsonify({"error": "Bu kitobda bu oraliq test yo‘q — yakuniy testni topshirasan."}), 403
 
     done_stages = _done_stages(book_id)
     cursor.execute("SELECT questions_json FROM Book_Tests WHERE book_id = ?", (book_id,))
@@ -4819,6 +4971,8 @@ def child_submit_test(book_id):
 
     # AYNAN savol berilgan ro‘yxat bo‘yicha tekshiramiz — butun bank
     # bo‘yicha emas, aks holda berilmagan savollar ham «xato» sanalardi.
+    if not stage_available(book_id, stage):
+        return jsonify({"error": "Bu kitobda bu oraliq test yo‘q."}), 403
     asked = stage_questions(questions, stage, _done_stages(book_id))
     correct = 0
     # «Qaysi javobim xato edi?» — bola natijani ko‘rgach shuni bilishi kerak,
@@ -6610,6 +6764,11 @@ def check_trials():
     Ikki xabar: 3 kun qolganda va tugagan kuni. Har biri BIR MARTA
     yuboriladi (`warned` ustunida qaysi xabar ketgani yozib boriladi).
     """
+    if not plus_payment_ready():
+        # To‘lov hali ulanmagan: «pul yechiladi» degan xabar yolg‘on bo‘lardi.
+        # Xabar yuborilmaydi, muddati o‘tgan sinov esa uzaytiriladi.
+        _extend_lapsed_trials()
+        return 0
     try:
         cursor.execute(
             "SELECT parent_id, plan, expires_at, COALESCE(warned, ''), "
@@ -6720,12 +6879,14 @@ def admin_stats():
 #     tugma ham, «to‘lanmagan» so‘zi ham bo‘lmaydi — bitta jumla.
 #  2. Chegara kunlik/haftalik (oylik emas): oylik chegara oyning
 #     o‘rtasida odatni buzadi, kunlik esa har kuni qaytishga sabab.
-#  3. Sinov 14 kun, ota-ona chegaraga BIRINCHI marta urilganda
-#     o‘z-o‘zidan boshlanadi (ega tanlovi). Bir marta beriladi.
-#  4. Ilova ommaga chiqmaguncha chegara O‘CHIQ turadi (PLUS_ENFORCE).
-#     Ega aytganda yoqiladi — kod o‘zgarmaydi.
+#  3. Sinov 15 kun, «15 kun tekin foydalanish» tugmasi bilan boshlanadi,
+#     karta so‘ralmaydi (ega qarori, 2026-09-13). Bir marta beriladi.
+#  4. Chegara YOQIQ — ilova 15-sentabrda ommaga chiqadi. O‘chirish kerak
+#     bo‘lsa: PLUS_ENFORCE=0. To‘lov ulanmaguncha (PLUS_PAYMENT_READY)
+#     sinov tugamaydi — o‘z-o‘zidan uzayadi, hech kim qulfga tushmaydi.
 # ==========================================================
-PLUS_TRIAL_DAYS = 14
+PLUS_TRIAL_DAYS = 15
+PLUS_TRIAL_EXTEND_DAYS = 7     # to‘lov ulanmagan bo‘lsa, sinov shuncha uzayadi
 PLUS_MONTH_PRICE = 24900          # oylik to‘liq narx
 PLUS_MONTH_FIRST = 14940          # birinchi 6 oy (40% chegirma)
 PLUS_DISCOUNT_MONTHS = 6
@@ -6757,8 +6918,42 @@ PLUS_LIMITS = {
 
 
 def plus_enforced():
-    """Chegaralar hozir ishlayaptimi? Ilova ommaga chiqmaguncha — yo‘q."""
-    return os.getenv("PLUS_ENFORCE", "0") == "1"
+    """Chegaralar hozir ishlayaptimi? Sukut bo‘yicha — ha (2026-09-13 dan).
+    Vaqtincha o‘chirish uchun Render'da PLUS_ENFORCE=0 qo‘yiladi."""
+    return os.getenv("PLUS_ENFORCE", "1") != "0"
+
+
+def plus_payment_ready():
+    """To‘lov tizimi (paylov.uz) ulanganmi? Ulanmaguncha sinov hech kimni
+    qulflamaydi. Ulangach Render'da PLUS_PAYMENT_READY=1 qo‘yiladi."""
+    return os.getenv("PLUS_PAYMENT_READY", "0") == "1"
+
+
+def _extend_lapsed_trials(parent_id=None):
+    """Muddati o‘tgan sinovni uzaytiradi — to‘lov hali ulanmagan bo‘lsa.
+
+    Pul to‘lab bo‘lmaydigan paytda «sinov tugadi» deyish — eng yomon
+    taassurot. Shuning uchun sinov jimgina yana bir haftaga cho‘ziladi.
+    Bekor qilingan sinov (plan='free') bunga kirmaydi.
+    """
+    if plus_payment_ready():
+        return 0
+    now = datetime.now()
+    sql = ("UPDATE Subscriptions SET expires_at = ?, warned = '' "
+           "WHERE plan = 'trial' AND expires_at IS NOT NULL AND expires_at < ?")
+    args = [(now + timedelta(days=PLUS_TRIAL_EXTEND_DAYS)).strftime("%Y-%m-%d %H:%M:%S"),
+            now.strftime("%Y-%m-%d %H:%M:%S")]
+    if parent_id is not None:
+        sql += " AND parent_id = ?"
+        args.append(parent_id)
+    try:
+        with db_lock:
+            cursor.execute(sql, args)
+            n = cursor.rowcount
+            conn.commit()
+        return n
+    except Exception:
+        return 0
 
 
 def _family_parent(uid):
@@ -6786,6 +6981,9 @@ def plus_plan(parent_id):
     if row[1]:
         try:
             if datetime.strptime(row[1][:19], "%Y-%m-%d %H:%M:%S") < datetime.now():
+                # To‘lov ulanmaguncha sinov tugamaydi (ega qarori, 2026-09-13).
+                if row[0] == "trial" and not plus_payment_ready():
+                    return "trial"
                 return "free"
         except Exception:
             pass
@@ -6922,6 +7120,7 @@ def plus_block(feature, child_id=None):
 def plus_status():
     """Bilig plus sahifasi uchun hamma ma'lumot bitta javobda."""
     parent_id = _family_parent(g.user_id)
+    _extend_lapsed_trials(parent_id)
     plan = plus_plan(parent_id)
     days_left = 0
     try:
@@ -6933,13 +7132,16 @@ def plus_status():
         row = None
     if row and row[0]:
         try:
-            days_left = max(0, (datetime.strptime(row[0][:19], "%Y-%m-%d %H:%M:%S")
-                                - datetime.now()).days)
+            # Yuqoriga yaxlitlanadi: 14,9 kun qolganda «14» emas, «15» ko‘rinsin.
+            secs = (datetime.strptime(row[0][:19], "%Y-%m-%d %H:%M:%S")
+                    - datetime.now()).total_seconds()
+            days_left = max(0, int(-(-secs // 86400)))
         except Exception:
             days_left = 0
     return jsonify({
         "plan": plan,
         "enforced": plus_enforced(),
+        "payment_ready": plus_payment_ready(),
         "days_left": days_left,
         "period": (row[1] if row else None),
         "trial_used": bool(row[2]) if row else False,
@@ -7003,12 +7205,11 @@ def plus_cancel():
 @app.route("/api/plus/trial", methods=["POST"])
 @require_auth
 def plus_trial():
-    """14 kunlik sinovni boshlash.
+    """15 kunlik sinovni boshlash — «15 kun tekin foydalanish» tugmasi.
 
-    DIQQAT: bu manzilni telefon TO‘G‘RIDAN chaqirmaydi. Sinov karta
-    bog‘langandan keyin boshlanadi — ya'ni to‘lov tizimi kartani
-    tasdiqlagach, ulanish kodi shu yerni chaqiradi. Hozir u sinov
-    uchun ochiq turibdi (to‘lov hali ulanmagan).
+    Ega qarori (2026-09-13): to‘lov tizimi ulanguncha karta so‘ralmaydi,
+    telefon shu manzilni to‘g‘ridan chaqiradi. Karta yoki bir martalik
+    to‘lov — paylov.uz ulangach ega tanlaydi.
     """
     parent_id = _family_parent(g.user_id)
     started = plus_start_trial(parent_id)
@@ -7364,6 +7565,10 @@ def _panel_payload():
             "done_books": done_books, "abandoned": abandoned,
             "pages_today": pages_by_day.get(today, 0),
             "avg_pages": round(total_pages / len(children), 1) if children else 0,
+            "plus_enforced": plus_enforced(),
+            "plus_payment_ready": plus_payment_ready(),
+            "plus_trial": _num("SELECT COUNT(*) FROM Subscriptions WHERE plan = 'trial'"),
+            "plus_paid": _num("SELECT COUNT(*) FROM Subscriptions WHERE plan = 'plus'"),
         },
         "days": days30,
         "series": {

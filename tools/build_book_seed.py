@@ -29,7 +29,10 @@ PASSPORT_FIELDS = ("summary", "characters", "theme", "conclusion", "age_hint",
 
 # Savoldan bazaga ko‘chiriladigan maydonlar. Ortiqchasi (masalan
 # «barrett») tashlanadi — fayl bekorga kattalashmasin.
-Q_FIELDS = ("id", "part", "category", "question", "options", "answer")
+Q_FIELDS = ("id", "part", "category", "question", "options", "answer", "pos")
+
+# Savol javobining kitobdagi o‘rni (0-100) — tools/locate_questions.py yozadi.
+POS_FILE = os.path.join(ROOT, "tools", "question_pos.json")
 
 
 def norm(t):
@@ -53,6 +56,11 @@ def book_key(title, author):
 
 
 def build():
+    try:
+        positions = json.load(open(POS_FILE, encoding="utf-8"))
+    except Exception:
+        positions = {}
+        print("DIQQAT: %s yo‘q — savol o‘rni qo‘shilmaydi" % POS_FILE)
     books = []
     skipped = []
     paths = []
@@ -79,7 +87,12 @@ def build():
             opts = q.get("options") or []
             if not q.get("question") or len(opts) < 2 or q.get("answer") not in opts:
                 continue
-            questions.append({k: q[k] for k in Q_FIELDS if k in q})
+            item = {k: q[k] for k in Q_FIELDS if k in q}
+            book_pos = positions.get(book_key(title, author))
+            if book_pos is not None:
+                # null ham yoziladi: «o‘rni noaniq — faqat yakuniy testga».
+                item["pos"] = book_pos.get(str(q.get("question")))
+            questions.append(item)
 
         books.append({
             "key": book_key(title, author),

@@ -115,14 +115,29 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
             await message.answer(WELCOME_TEXT, parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
             return
 
-    # 3. Havolasiz kirgan begonalar uchun yopiq
-    await message.answer(CLOSED_BETA_TEXT, parse_mode="HTML", reply_markup=types.ReplyKeyboardRemove())
+    # 3. Yangi foydalanuvchi. Ilova 2026-09-13 dan OMMAGA OCHIQ (ega qarori):
+    # taklif havolasi shart emas — ro‘yxatga olinadi va rol so‘raladi.
+    # Ega ataylab to‘sib qo‘ygan odam (is_approved = 0) yopiqligicha qoladi.
+    if user and user[1] == 0:
+        await message.answer(CLOSED_BETA_TEXT, parse_mode="HTML", reply_markup=types.ReplyKeyboardRemove())
+        return
+    cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)",
+                   (user_id, message.from_user.full_name))
+    conn.commit()
+    kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O‘quvchiman")]]
+    await message.answer(WELCOME_TEXT, parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
 
 @router.message(F.text == "👨‍👩‍👦 Men Ota-onaman")
 async def parent_handler(message: types.Message):
     cursor.execute("SELECT is_approved FROM Users WHERE user_id = ?", (message.from_user.id,))
     u = cursor.fetchone()
-    if not u or u[0] != 1:
+    if not u:
+        # Ommaga ochiq: /start bosmasdan to‘g‘ri tugmani bosgan yangi odam ham kiradi
+        cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)",
+                       (message.from_user.id, message.from_user.full_name))
+        conn.commit()
+        u = (1,)
+    if u[0] != 1:
         await message.answer(CLOSED_BETA_TEXT, parse_mode="HTML")
         return
 
@@ -134,7 +149,13 @@ async def parent_handler(message: types.Message):
 async def child_handler(message: types.Message, state: FSMContext):
     cursor.execute("SELECT is_approved FROM Users WHERE user_id = ?", (message.from_user.id,))
     u = cursor.fetchone()
-    if not u or u[0] != 1:
+    if not u:
+        # Ommaga ochiq: /start bosmasdan to‘g‘ri tugmani bosgan yangi odam ham kiradi
+        cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)",
+                       (message.from_user.id, message.from_user.full_name))
+        conn.commit()
+        u = (1,)
+    if u[0] != 1:
         await message.answer(CLOSED_BETA_TEXT, parse_mode="HTML")
         return
 

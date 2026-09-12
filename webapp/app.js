@@ -1192,9 +1192,15 @@ function renderHeaderNav() {
   // Bilig plus — faqat ota-onaning o‘z kabinetida. Bolaxona rejimida
   // ham ko‘rinmaydi: u yerda ekran bolaniki, unda pul gapi bo‘lmaydi.
   if (State.role === "parent" && !State.activeChildId) {
+    // Sinov davrida toj ustida kichik taymer: necha KUN qolgani.
+    // Soniya emas — oilaviy ilovada yugurib turgan raqam bosimdek tuyuladi.
+    const pl = State.plus;
+    const days = pl && pl.plan === "trial" && pl.days_left
+      ? '<span class="plus-days">' + pl.days_left + '</span>' : "";
     html = '<button class="icon-btn plus-btn" data-action="open-plus" ' +
-      'aria-label="Bilig plus" title="Bilig plus">' + icon("crown", 18, 1.9) +
-      '</button>' + html;
+      'aria-label="Bilig plus" title="Bilig plus' +
+      (days ? " — " + pl.days_left + " kun qoldi" : "") + '">' + icon("crown", 18, 1.9) +
+      days + '</button>' + html;
   }
   box.innerHTML = html;
 }
@@ -1318,6 +1324,8 @@ document.addEventListener("click", async function (e) {
       case "cat-back": await Catalog.openBrowse(); break;
       case "cat-age": Catalog.setAge(el.dataset.key); break;
       case "cat-pick": await Catalog.pick(Number(el.dataset.idx)); break;
+      case "book-pages-save": await finishBookPages(false); break;
+      case "book-pages-skip": await finishBookPages(true); break;
       case "wizard-submit-text": await Wizard.submitTextBook(); break;
       case "wizard-save-cover": await Wizard.saveCoverBook(); break;
       case "wizard-add-more": await Wizard.pickMethod(null); break;
@@ -1332,7 +1340,7 @@ document.addEventListener("click", async function (e) {
       case "open-generate-test": openGenerateTestModal(Number(el.dataset.id)); break;
       case "open-book-test-edit": await BookTest.open(Number(el.dataset.id)); break;
       case "open-plus": await openPlusPage(); break;
-      case "plus-trial": openPlusTrialPage(); break;
+      case "plus-trial": await plusStartTrial(); break;
       case "plus-card": await plusBindCard(); break;
       case "plus-cancel": openPlusCancel(); break;
       case "plus-cancel-yes": await plusCancelConfirm(); break;
@@ -2509,16 +2517,51 @@ async function addRecommendedBook(title, author) {
   // keyin unga kitob. Shu tufayli kitob oynasi va testlar avvalgidek ishlaydi.
   const childId = State.selectedChildId || (State.childrenCache[0] && State.childrenCache[0].id);
   if (!childId) { toast("Avval farzand qo‘shing"); return; }
-  const plan = await api("/api/parent/plans", {
-    method: "POST",
-    body: { child_id: childId, name: "Tezkor mutolaa", prize: "", type: "quick" }
+  askBookPages(title, author, async function (pages) {
+    const plan = await api("/api/parent/plans", {
+      method: "POST",
+      body: { child_id: childId, name: "Tezkor mutolaa", prize: "", type: "quick" }
+    });
+    await api("/api/parent/plans/" + plan.plan_id + "/books", {
+      method: "POST", body: { title: title, author: author, total_pages: pages }
+    });
+    closeModal();
+    toast("«" + title + "» qo‘shildi");
+    switchTab("plans");
   });
-  await api("/api/parent/plans/" + plan.plan_id + "/books", {
-    method: "POST", body: { title: title, author: author, total_pages: 0 }
-  });
-  closeModal();
-  toast("«" + title + "» qo‘shildi");
-  switchTab("plans");
+}
+
+/* «Qo‘lingizdagi kitob necha betlik?» — katalog va tavsiyadan qo‘shilganda.
+   Oraliq testlar bola kitobning qayeriga yetganiga qarab ochiladi. Bet soni
+   noma'lum bo‘lsa, ular yopiq turadi va faqat yakuniy test bo‘ladi — aks
+   holda o‘qilmagan joydan savol tushardi (ega topgan xato, 2026-09-13).
+   Bet soni Word fayldan olinmaydi: bosma nashr boshqacha sahifalanadi. */
+const PagesAsk = { then: null };
+
+function askBookPages(title, author, then) {
+  PagesAsk.then = then;
+  openModal("Kitob necha betlik?",
+    '<p class="section-sub">«' + escapeHtml(title) + '» — qo‘lingizdagi nashrning ' +
+    'oxirgi betiga qarang. Oraliq testlar farzandingiz kitobning qayeriga ' +
+    'yetganiga qarab ochiladi.</p>' +
+    '<input id="ask-pages" class="text-input" type="number" inputmode="numeric" ' +
+    'min="1" placeholder="Masalan: 176" style="max-width:none" />' +
+    '<button class="btn btn-primary btn-block" data-action="book-pages-save">Qo‘shish</button>' +
+    '<button class="mini-link" style="justify-content:center;margin-top:10px" ' +
+    'data-action="book-pages-skip">Bilmayman — faqat yakuniy test bo‘ladi</button>');
+  setTimeout(function () {
+    const i = document.getElementById("ask-pages");
+    if (i) i.focus();
+  }, 60);
+}
+
+async function finishBookPages(skip) {
+  const input = document.getElementById("ask-pages");
+  const pages = skip ? 0 : Math.round(Number((input && input.value) || 0));
+  if (!skip && !(pages > 0)) { toast("Bet sonini kiriting yoki «Bilmayman»ni bosing"); return; }
+  const then = PagesAsk.then;
+  PagesAsk.then = null;
+  if (then) await then(pages);
 }
 
 async function askForBook(title, author) {
@@ -2931,6 +2974,22 @@ const PLUS_TEXTS = {
 
 async function loadPlusState() {
   try { State.plus = await api("/api/plus"); } catch (e) { State.plus = null; }
+  renderHeaderNav();   // tojdagi kun taymeri yangilansin
+}
+
+/* Sinovni boshlash — bitta bosishda (ega qarori, 2026-09-13).
+   To‘lov tizimi ulanguncha karta ham, to‘lov ham so‘ralmaydi. */
+async function plusStartTrial() {
+  try {
+    const r = await api("/api/plus/trial", { method: "POST", body: {} });
+    await loadPlusState();
+    closeModal();
+    const open = r.plan === "trial" || r.plan === "plus";
+    toast(open
+      ? PLUS_NAME + " ochildi — " + (r.days || 15) + " kun tekin"
+      : "Sinov davri avval ishlatilgan", 3200);
+    if (State.currentTab === "home") switchTab("home");
+  } catch (e) { apiError(e); }
 }
 
 function hasPlus() {
@@ -2967,9 +3026,9 @@ function openPlusLock(feature) {
     'ko‘rib turasiz.</p>' +
     (trial
       ? '<button class="btn btn-primary btn-block" data-action="plus-trial">' +
-        (p.trial_days || 14) + ' kun tekin sinovdan o‘tkazish</button>' +
+        (p.trial_days || 15) + ' kun tekin foydalanish</button>' +
         '<p class="g-note" style="text-align:center">' +
-        'Sinov ichida bekor qilsangiz, pul yechilmaydi.</p>'
+        'Karta ham, to‘lov ham so‘ralmaydi.</p>'
       : '<button class="btn btn-primary btn-block" data-action="open-plus">' +
         PLUS_NAME + ' haqida</button>'),
     "modal-plus");
@@ -3017,14 +3076,18 @@ async function openPlusPage() {
         '<span class="pp-val">' + money(p.price_year || 149000) + '</span>' +
         '<span class="pp-tag">ikki baravar arzon</span>' +
       '</button>' +
-    '</div>' +
-    (p.trial_used ? "" :
-      '<button class="btn btn-primary btn-block" style="margin-top:10px" ' +
-      'data-action="plus-trial">' + (p.trial_days || 14) +
-      ' kun tekin sinovdan o‘tkazish</button>');
+    '</div>';
+
+  // Asosiy tugma sahifaning TEPASIDA — jadvalni oxirigacha o‘qimasdan ham
+  // ko‘rinsin. Hozircha pullik imkoniyatlarning yagona sharti shu tugma.
+  const trialBtn = (plan === "free" && !p.trial_used)
+    ? '<button class="btn btn-primary btn-block" style="margin-top:14px" data-action="plus-trial">' +
+      (p.trial_days || 15) + ' kun tekin foydalanish</button>' +
+      '<p class="g-note" style="text-align:center">Karta ham, to‘lov ham so‘ralmaydi.</p>'
+    : "";
 
   openModal(PLUS_NAME,
-    head +
+    head + trialBtn +
     '<div class="plus-why">' +
       '<b>Nima uchun?</b>' +
       'Bilig plus — farzandingiz haqiqatan o‘qiganini tekshiradigan yo‘l: ' +
@@ -3035,7 +3098,9 @@ async function openPlusPage() {
     '<th class="c">' + icon("crown", 14, 2) + ' plus</th></tr>' + rows + '</table>' +
     priceBox +
     // Bekor qilish YASHIRILMAYDI: sinovda ham, obunada ham shu yerda turadi.
-    ((plan === "trial" || plan === "plus") && !p.cancelled
+    // To‘lov ulanmaguncha sinovni «bekor qilish»ning ma'nosi yo‘q — pul
+    // baribir yechilmaydi. Shuning uchun tugma faqat to‘lov ochilgach chiqadi.
+    ((plan === "plus" || (plan === "trial" && p.payment_ready)) && !p.cancelled
       ? '<button class="plus-cancel" data-action="plus-cancel">Obunani bekor qilish</button>'
       : "") +
     (p.cancelled && plan === "plus"
@@ -3049,10 +3114,12 @@ async function openPlusPage() {
 /* SINOV — karta bog‘lash orqali (ega qarori, 2026-09-02).
    Mashhur ilovalardagi tartib: karta bugun bog‘lanadi, pul 15-kuni
    yechiladi, 14 kun ichida bekor qilinsa — hech narsa yechilmaydi.
-   Shartlar YASHIRILMAYDI: uchala qadam ham ochiq yozilgan. */
+   Shartlar YASHIRILMAYDI: uchala qadam ham ochiq yozilgan.
+   HOZIR ISHLATILMAYDI (2026-09-13): to‘lov ulanguncha sinov kartasiz,
+   plusStartTrial() orqali. paylov.uz ulanganda ega usulni tanlaydi. */
 function openPlusTrialPage() {
   const p = State.plus || {};
-  const days = p.trial_days || 14;
+  const days = p.trial_days || 15;
   const price = p.price_month || 24900;
   const first = new Date(Date.now() + days * 86400000);
   const dateText = first.getDate() + "-" +
@@ -3162,7 +3229,7 @@ function plusBannerHtml() {
     return '<button class="plus-banner is-trial" data-action="open-plus">' +
       '<span class="pb-ic">' + icon("crown", 20, 1.9) + '</span>' +
       '<span class="pb-tx"><b>Sinov davri — ' + p.days_left + ' kun qoldi</b>' +
-      '<span>Keyin oddiy versiyaga qaytadi. Ko‘rib chiqasizmi?</span></span>' +
+      '<span>Hamma imkoniyat ochiq. Nimalar kirishini ko‘ring.</span></span>' +
       icon("chevron-right", 17, 2.2) + '</button>';
   }
   // Sinovni ishlatib bo‘lgan ota-onaga boshqacha gapiramiz: unga endi
@@ -3177,7 +3244,7 @@ function plusBannerHtml() {
   return '<button class="plus-banner" data-action="open-plus">' +
     '<span class="pb-ic">' + icon("crown", 20, 1.9) + '</span>' +
     '<span class="pb-tx"><b>Farzandingiz qanday o‘qiyapti?</b>' +
-    '<span>Bilig plusda butun o‘qish tarixi, chegarasiz surat va ovozli xulosa.</span></span>' +
+    '<span>' + (p.trial_days || 15) + ' kun tekin: butun o‘qish tarixi, chegarasiz surat va ovozli xulosa.</span></span>' +
     icon("chevron-right", 17, 2.2) + '</button>';
 }
 
@@ -6296,12 +6363,14 @@ const Catalog = {
       openRecBookModal(i, true);
       return;
     }
-    const res = await api("/api/parent/plans/" + Wizard.planId + "/books", {
-      method: "POST",
-      body: { title: b.title, author: b.author }
+    askBookPages(b.title, b.author, async function (pages) {
+      const res = await api("/api/parent/plans/" + Wizard.planId + "/books", {
+        method: "POST",
+        body: { title: b.title, author: b.author, total_pages: pages }
+      });
+      toast('"' + res.title + '" qo‘shildi');
+      Wizard.afterBookAdded();
     });
-    toast('"' + res.title + '" qo‘shildi');
-    Wizard.afterBookAdded();
   }
 };
 
