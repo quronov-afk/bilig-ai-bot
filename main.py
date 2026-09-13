@@ -13,12 +13,13 @@ dp = Dispatcher()
 
 # ==========================================
 # BIR MARTALIK TUZATISH (2026-09-13) — sahifa raqami cheksiz qabul
-# qilingan eski xato (webapp_api.py'da tuzatildi) natijasida uchta
-# yozuvda son millionlab/kvadrilionlab bo‘lib qolgan edi. Ega tasdiqlab,
+# qilingan eski xato (webapp_api.py'da tuzatildi) natijasida bir martada
+# 99 betdan ko‘p (millionlab ham) yozilgan soxta yozuvlar. Ega tasdiqlab,
 # o‘chirishga ruxsat berdi. `Seed_State` belgisi orqali faqat BIR MARTA
 # ishlaydi — server qayta ko‘tarilganda TAKROR ishlamaydi.
 # ==========================================
-_BAD_READING_LOGS = (171, 170, 161)
+_STEP_MAX = 99
+_BOOK_PAGES_MAX = 999
 
 
 async def fix_corrupt_reading_logs_once():
@@ -28,47 +29,56 @@ async def fix_corrupt_reading_logs_once():
                 name TEXT PRIMARY KEY, stamp TEXT, updated_at TEXT
             )""")
         conn.commit()
-        cursor.execute("SELECT stamp FROM Seed_State WHERE name = 'fix_bad_pages_v1'")
+        cursor.execute("SELECT stamp FROM Seed_State WHERE name = 'fix_bad_pages_v2'")
         if cursor.fetchone():
             return
     except Exception:
         return
 
-    fixed = 0
     try:
-        for log_id in _BAD_READING_LOGS:
-            cursor.execute(
-                "SELECT child_id, book_id, pages_added FROM Reading_Logs WHERE log_id = ?",
-                (log_id,))
-            row = cursor.fetchone()
-            if not row:
-                continue
-            child_id, book_id, pages_added = row
+        # Namoyish bolalari (manfiy raqamli) tegilmaydi — ularda bir martada 40 betdan oshmaydi.
+        cursor.execute(
+            "SELECT log_id, child_id, book_id, pages_added, created_at FROM Reading_Logs "
+            "WHERE pages_added > ? AND child_id > 0 ORDER BY log_id", (_STEP_MAX,))
+        bad = cursor.fetchall()
 
+        # Avval hammasini hisoblaymiz (hech narsa o‘chmasdan) — Bilig aynan
+        # yozilgan paytdagi kabi chiqsin va hamyon tarixidagi yozuv topilsin.
+        plan = []
+        for log_id, child_id, book_id, pages_added, created_at in bad:
             cursor.execute(
                 "SELECT COALESCE(SUM(pages_added), 0) FROM Reading_Logs "
                 "WHERE book_id = ? AND log_id < ?", (book_id, log_id))
             old_pages = cursor.fetchone()[0]
-            new_page = old_pages + pages_added
-            wrong_bilig = (new_page // 5) - (old_pages // 5)
+            wrong_bilig = ((old_pages + pages_added) // 5) - (old_pages // 5)
+            plan.append((log_id, child_id, book_id, pages_added, created_at, wrong_bilig))
 
-            cursor.execute("UPDATE Plan_Books SET pages_read = ? WHERE book_id = ?",
-                           (old_pages, book_id))
+        books = set()
+        for log_id, child_id, book_id, pages_added, created_at, wrong_bilig in plan:
             cursor.execute(
                 "UPDATE Users SET balance_coins = MAX(0, balance_coins - ?), "
                 "total_xp = MAX(0, total_xp - ?) WHERE user_id = ?",
                 (wrong_bilig, pages_added, child_id))
             cursor.execute(
-                "DELETE FROM Coin_Ledger WHERE child_id = ? AND kind = 'pages' AND amount = ?",
-                (child_id, wrong_bilig))
+                "DELETE FROM Coin_Ledger WHERE entry_id = ("
+                "SELECT entry_id FROM Coin_Ledger WHERE child_id = ? AND kind = 'pages' "
+                "AND amount = ? AND substr(replace(created_at, 'T', ' '), 1, 16) = substr(?, 1, 16) "
+                "LIMIT 1)", (child_id, wrong_bilig, created_at))
             cursor.execute("DELETE FROM Reading_Logs WHERE log_id = ?", (log_id,))
-            fixed += 1
+            books.add(book_id)
+
+        for book_id in books:
+            cursor.execute(
+                "UPDATE Plan_Books SET pages_read = (SELECT COALESCE(SUM(pages_added), 0) "
+                "FROM Reading_Logs WHERE book_id = ?) WHERE book_id = ?", (book_id, book_id))
+        cursor.execute("UPDATE Plan_Books SET total_pages = 0 WHERE total_pages > ?",
+                       (_BOOK_PAGES_MAX,))
         conn.commit()
         cursor.execute(
             "INSERT OR REPLACE INTO Seed_State (name, stamp, updated_at) VALUES (?, ?, ?)",
-            ("fix_bad_pages_v1", "done", datetime.now().isoformat()))
+            ("fix_bad_pages_v2", "done", datetime.now().isoformat()))
         conn.commit()
-        print(f"Xato sahifa yozuvlari tuzatildi: {fixed} ta")
+        print(f"Soxta sahifa yozuvlari tozalandi: {len(plan)} ta, {len(books)} ta kitob")
     except Exception as e:
         print("Tuzatishda xato:", e)
 
