@@ -6859,6 +6859,63 @@ def admin_logs():
     return Response(body + "\n", mimetype="text/plain; charset=utf-8")
 
 
+@app.route("/api/admin/funnel", methods=["GET"])
+def admin_funnel():
+    """Haqiqiy foydalanish statistikasi — ro‘yxatdan o‘tish emas, kim
+    chindan ishlatayotganini ko‘rsatadi. `/api/admin/logs` bilan bir xil
+    LOG_TOKEN orqali himoyalangan, shuning uchun bevosita brauzerdan yoki
+    terminaldan tekshirish mumkin (Telegram orqali kirish shart emas)."""
+    token = os.getenv("LOG_TOKEN", "")
+    if not token or request.args.get("token") != token:
+        return ("Topilmadi", 404)
+
+    def one(sql, args=()):
+        cursor.execute(sql, args)
+        r = cursor.fetchone()
+        return (r[0] if r and r[0] is not None else 0)
+
+    total_parents = one("SELECT COUNT(*) FROM Users WHERE role='parent'")
+    total_children = one("SELECT COUNT(*) FROM Users WHERE role='child'")
+    linked_families = one("SELECT COUNT(*) FROM Family_Link")
+
+    families_with_book = one(
+        "SELECT COUNT(DISTINCT rp.parent_id) FROM Reading_Plans rp "
+        "JOIN Plan_Books pb ON pb.plan_id = rp.plan_id")
+    children_with_pages = one(
+        "SELECT COUNT(DISTINCT child_id) FROM Reading_Logs")
+    children_with_photo = one(
+        "SELECT COUNT(DISTINCT child_id) FROM Page_Check_Log")
+    children_with_voice = one(
+        "SELECT COUNT(DISTINCT child_id) FROM Diagnostic_Logs WHERE type='voice'")
+    children_with_test = one(
+        "SELECT COUNT(DISTINCT child_id) FROM Diagnostic_Logs WHERE type='test'")
+    families_with_purchase = one(
+        "SELECT COUNT(DISTINCT parent_id) FROM Purchases")
+
+    trial_used = one("SELECT COUNT(*) FROM Subscriptions WHERE trial_used=1")
+    paid = one("SELECT COUNT(*) FROM Subscriptions WHERE months_paid > 0")
+
+    total_pages = one("SELECT COALESCE(SUM(pages_added),0) FROM Reading_Logs")
+    total_photos = one("SELECT COUNT(*) FROM Page_Check_Log")
+
+    data = {
+        "ota_onalar": total_parents,
+        "bolalar": total_children,
+        "boglangan_oilalar": linked_families,
+        "kitob_qoshgan_oilalar": families_with_book,
+        "sahifa_oqigan_bolalar": children_with_pages,
+        "surat_yuborgan_bolalar": children_with_photo,
+        "ovoz_yuborgan_bolalar": children_with_voice,
+        "test_yechgan_bolalar": children_with_test,
+        "dokondan_foydalangan_oilalar": families_with_purchase,
+        "bepul_sinov_bosganlar": trial_used,
+        "pullikka_otganlar": paid,
+        "jami_oqilgan_sahifa": total_pages,
+        "jami_yuborilgan_surat": total_photos,
+    }
+    return jsonify(data)
+
+
 @app.route("/api/admin/stats", methods=["GET"])
 @require_auth
 def admin_stats():
