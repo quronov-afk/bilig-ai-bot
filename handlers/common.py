@@ -161,14 +161,23 @@ async def child_handler(message: types.Message, state: FSMContext):
 
     cursor.execute("UPDATE Users SET role = 'child' WHERE user_id = ?", (message.from_user.id,))
     conn.commit()
-    await message.answer("Iltimos, ota-onangiz bergan kodni kiriting (masalan, BLG-1234):", reply_markup=get_back_reply_keyboard())
+    await message.answer(
+        "Ota-onangiz bergan kodni kiriting (BLG bilan boshlanadi).\n\n"
+        "Kodingiz bo‘lmasa — shart emas: pastdagi «Bilig AI» tugmasi orqali ilovani ochib, "
+        "kitob o‘qishni o‘zingiz boshlayvering. Ota-onangizni keyin ham ulash mumkin.",
+        reply_markup=get_back_reply_keyboard())
     await state.set_state(Registration.waiting_for_parent_code)
 
 @router.message(Registration.waiting_for_parent_code)
 async def process_parent_code(message: types.Message, state: FSMContext):
-    code = message.text.strip().upper()
+    code = (message.text or "").strip().upper().replace(" ", "")
+    if code.isdigit() and len(code) == 8:
+        await message.answer(
+            "Bu — farzand kodi. Uni ilovaning o‘zida kiriting: pastdagi «Bilig AI» tugmasini "
+            "bosing, ilova ochilgach «Ulanish kodi» maydoniga yozing.")
+        return
     if not code.startswith("BLG-"):
-        await message.answer("Kod xato formatda! 'BLG-1234' ko‘rinishida kiriting.")
+        await message.answer("Kod xato formatda! Ota-onangiz kodi «BLG-» bilan boshlanadi.")
         return
     # To‘liq ID bo‘yicha ANIQ solishtirish (ilgari oxirgi 4 raqam bilan
     # LIKE orqali tekshirilardi — foydalanuvchi ko‘payishi bilan boshqa
@@ -178,7 +187,17 @@ async def process_parent_code(message: types.Message, state: FSMContext):
     parent = cursor.fetchone()
     if parent:
         try:
-            cursor.execute("INSERT INTO Family_Link (parent_id, child_id) VALUES (?, ?)", (parent[0], message.from_user.id))
+            uid = message.from_user.id
+            cursor.execute("SELECT 1 FROM Family_Link WHERE child_id = ?", (uid,))
+            if cursor.fetchone():
+                raise ValueError("allaqachon ulangan")
+            cursor.execute(
+                "INSERT INTO Family_Link (parent_id, child_id, child_age) VALUES "
+                "(?, ?, COALESCE((SELECT age FROM Users WHERE user_id = ?), 10))",
+                (parent[0], uid, uid))
+            # Ota-onasiz qo‘shgan kitoblari ota-onaning Kitobxonasida ham ko‘rinsin
+            cursor.execute("UPDATE Reading_Plans SET parent_id = ? WHERE child_id = ? AND parent_id = ?",
+                           (parent[0], uid, uid))
             conn.commit()
             await message.answer("Tabriklaymiz! Ota-onangiz bilan bog‘landingiz! 🎉", reply_markup=get_child_keyboard())
 

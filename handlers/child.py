@@ -50,7 +50,8 @@ async def show_child_books(message_or_callback, user_id, state: FSMContext = Non
         parent_id = data.get('bolaxona_parent_id')
 
     if not parent_id:
-        text_no_parent = "Siz hali ota-onangizga ulanmagansiz! Iltimos, ota-onangiz bergan kod orqali ulaning."
+        text_no_parent = ("Kitoblaringni ilovada o‘qiy olasan: pastdagi «Bilig AI» tugmasini bos. "
+                          "Ota-onangni ulash shart emas.")
         if isinstance(message_or_callback, types.Message):
             await message_or_callback.answer(text_no_parent)
         else:

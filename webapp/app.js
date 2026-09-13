@@ -968,8 +968,13 @@ async function boot() {
     if (!me.exists || !me.approved) { showScreen("screen-closed"); return; }
     if (!me.role) { showScreen("screen-role"); return; }
     State.role = me.role;
-    if (me.role === "child" && !me.linked_to_parent) { showScreen("screen-linkcode"); return; }
-    if (me.role === "child" && me.needs_profile) { showScreen("screen-child-profile"); initAvatarGrid(); return; }
+    // Ota-onasiz bola ham kira oladi (ega qarori, 2026-09-13): profil
+    // to‘ldirilmagan bo‘lsa, avval kod ekrani — u yerda «o‘zim boshlayman» bor.
+    if (me.role === "child" && me.needs_profile) {
+      if (me.linked_to_parent) { showScreen("screen-child-profile"); initAvatarGrid(); }
+      else showScreen("screen-linkcode");
+      return;
+    }
     enterApp();
   } catch (e) { showScreen("screen-closed"); }
 }
@@ -1000,6 +1005,12 @@ document.getElementById("link-code-submit").addEventListener("click", async func
     showScreen("screen-child-profile");
     initAvatarGrid();
   } catch (e) { err.textContent = e.error || "Xatolik"; }
+});
+
+document.getElementById("link-code-skip").addEventListener("click", function () {
+  haptic();
+  showScreen("screen-child-profile");
+  initAvatarGrid();
 });
 
 // ---------------- Bola profili: avatar + ism + yosh ----------------
@@ -1224,6 +1235,8 @@ function openRatingFromHeader() {
 }
 
 function isChildView() { return State.role === "child" || !!State.activeChildId; }
+// Ota-onasiz kirgan bola: kitobni o‘zi tanlaydi, do‘kon ota-ona ulangach ochiladi.
+function childOnOwn() { return State.role === "child" && !!State.me && !State.me.linked_to_parent; }
 function asChildQuery() {
   const cid = State.activeChildId || (State.role === "parent" ? State.selectedChildId : null);
   return cid ? "?as_child=" + cid : "";
@@ -1401,6 +1414,13 @@ document.addEventListener("click", async function (e) {
         await askForBook(rb2.title, rb2.author);
         break;
       }
+      case "rec-self-add": {
+        const rb3 = RecBooks[Number(el.dataset.i)] || {};
+        selfAddBook(rb3.title, rb3.author);
+        break;
+      }
+      case "open-link-parent": openLinkParentModal(); break;
+      case "link-parent-submit": await submitLinkParent(); break;
       case "add-book-for":
         State.selectedChildId = Number(el.dataset.id);
         await Wizard.start();
@@ -2497,7 +2517,12 @@ function openRecBookModal(index, fromCatalog) {
       : "Bu kitob farzandingiz yoshiga mos tanlangan.") + '</p>';
   }
 
-  if (isChildView()) {
+  if (childOnOwn()) {
+    html += '<p class="rec-ask-q">Shu kitobni o‘qimoqchimisan?</p>' +
+      '<button class="btn btn-primary btn-block" data-action="rec-self-add" data-i="' + index + '">O‘qishni boshlash</button>' +
+      '<button class="btn btn-outline btn-block" data-action="' + backAction + '">' +
+      (fromCatalog ? "Orqaga" : "Yo‘q") + '</button>';
+  } else if (isChildView()) {
     html += '<p class="rec-ask-q">Shu kitobni o‘qimoqchimisan? Ota-onangga xabar boradi.</p>' +
       '<button class="btn btn-primary btn-block" data-action="rec-ask-confirm" data-i="' + index + '">Ha, so‘rayman</button>' +
       '<button class="btn btn-outline btn-block" data-action="' + backAction + '">' +
@@ -2542,8 +2567,9 @@ function askBookPages(title, author, then) {
   PagesAsk.then = then;
   openModal("Kitob necha betlik?",
     '<p class="section-sub">«' + escapeHtml(title) + '» — qo‘lingizdagi nashrning ' +
-    'oxirgi betiga qarang. Oraliq testlar farzandingiz kitobning qayeriga ' +
-    'yetganiga qarab ochiladi.</p>' +
+    'oxirgi betiga qarang. Oraliq testlar ' +
+    (isChildView() ? 'kitobning qayeriga yetganingga' : 'farzandingiz kitobning qayeriga yetganiga') +
+    ' qarab ochiladi.</p>' +
     '<input id="ask-pages" class="text-input" type="number" inputmode="numeric" ' +
     'min="1" placeholder="Masalan: 176" style="max-width:none" />' +
     '<button class="btn btn-primary btn-block" data-action="book-pages-save">Qo‘shish</button>' +
@@ -2571,6 +2597,41 @@ async function askForBook(title, author) {
   closeModal();
   mascotToast("boyogli-oqish", "Ota-onangga aytdik",
               "«" + title + "» kitobini so‘raganingni yetkazdik.");
+}
+
+function selfAddBook(title, author) {
+  askBookPages(title, author, async function (pages) {
+    try {
+      await api("/api/child/books/add", {
+        method: "POST", body: { title: title, author: author, total_pages: pages }
+      });
+      closeModal();
+      toast("«" + title + "» Kitobxonangga qo‘shildi");
+      switchTab("plans");
+    } catch (e) { apiError(e); }
+  });
+}
+
+function openLinkParentModal() {
+  openModal("Ota-onangni ulash",
+    '<p class="section-sub">Otang yoki onang ilovani o‘z telefonida ochib, «Farzand qo‘shish»ni ' +
+    'bossin. Bolaxona bo‘limida senga 8 xonali kod chiqadi — shu yerga yoz. ' +
+    'Yiqqan Biliging va kitoblaring saqlanib qoladi.</p>' +
+    '<input id="link-parent-input" class="text-input" placeholder="00000000" maxlength="24" ' +
+    'autocapitalize="characters" style="max-width:none" />' +
+    '<button class="btn btn-primary btn-block" data-action="link-parent-submit">Ulash</button>');
+}
+
+async function submitLinkParent() {
+  const input = document.getElementById("link-parent-input");
+  const code = ((input && input.value) || "").trim();
+  if (!code) { toast("Kodni yoz"); return; }
+  try {
+    await api("/api/link_parent", { method: "POST", body: { code: code } });
+    closeModal();
+    toast("Ota-onang ulandi!");
+    await boot();
+  } catch (e) { apiError(e); }
 }
 
 // Tugallangan kitoblar — yon tarafga siljiydigan javon. Sarlavhani bosib
@@ -3264,7 +3325,8 @@ async function renderChildPlans() {
 
   if (!reading.length && !done.length) {
     html += emptyState("book-open", "Hozircha kitob yo‘q",
-      "Ota-onang tez orada senga kitob qo‘yadi.", {
+      childOnOwn() ? "Yuqoridagi javondan yoki «Barchasi» katalogidan o‘zingga kitob tanla."
+                   : "Ota-onang tez orada senga kitob qo‘yadi.", {
         mascot: "boyogli-oylanish",
         steps: ["Kitob paydo bo‘lganda shu yerda ko‘rinadi",
                 "O‘qigan sahifangni rasmga olib yuborasan",
@@ -4232,7 +4294,16 @@ async function renderStoreTab() {
     State.storeBalance = data.balance;
     let html = walletBarHtml('<b>' + data.balance + '</b> Bilig', "Hamyonim");
     html += await freezeCardHtml();
-    if (!data.items.length) {
+    if (data.no_parent) {
+      html += emptyState("gift", "Biliglaring yig‘ilyapti",
+        "Sovg‘a olish uchun otang yoki onangni ulang — sovg‘alarni ular qo‘yadi.", {
+          mascot: "quyoncha-sovga",
+          steps: ["Otang yoki onang ilovada «Farzand qo‘shish»ni bosadi",
+                  "Senga 8 xonali kod beradi",
+                  "Kodni shu yerga yozasan — do‘kon ochiladi"]
+        }) +
+        '<button class="btn btn-primary btn-block" data-action="open-link-parent">Ota-onamni ulash</button>';
+    } else if (!data.items.length) {
       html += emptyState("gift", "Do‘kon hozircha bo‘sh",
         "Ota-onang tez orada sovg‘alarni qo‘yadi — sen esa Bilig yig‘ib turaver.", {
           mascot: "quyoncha-sovga",

@@ -50,6 +50,8 @@ import badges_engine
 # ------------------------------------------------------------
 _COLUMN_MIGRATIONS = (
     "ALTER TABLE Users ADD COLUMN avatar_id TEXT DEFAULT 'fox'",
+    # Bolaning yoshi — ota-onasiz (mustaqil) kirgan bola uchun ham saqlanadi.
+    "ALTER TABLE Users ADD COLUMN age INTEGER",
     "ALTER TABLE Users ADD COLUMN profile_done INTEGER DEFAULT 0",
     # Ovozli xulosa uchun AI bergan Bilig bahosi (bosh sahifada ko‘rsatiladi)
     "ALTER TABLE Diagnostic_Logs ADD COLUMN bonus_bilig INTEGER DEFAULT 0",
@@ -2379,7 +2381,7 @@ def api_me():
     elif role == "child":
         parent_id = get_parent_id(uid)
         result["linked_to_parent"] = bool(parent_id)
-        result["needs_profile"] = bool(parent_id) and not bool(profile_done)
+        result["needs_profile"] = not bool(profile_done)
 
     if uid == OWNER_ID:
         result["is_admin"] = True
@@ -2413,6 +2415,32 @@ def api_register_role():
     return jsonify(resp)
 
 
+def _move_own_plans(child_id, parent_id):
+    """Bola ota-onasiz qo‘shgan kitoblari ota-ona ulangach uning Kitobxonasida ham ko‘rinsin.
+    Qulfni o‘zi olmaydi — `with db_lock:` ichida chaqiriladi."""
+    cursor.execute("UPDATE Reading_Plans SET parent_id = ? WHERE child_id = ? AND parent_id = ?",
+                   (parent_id, child_id, child_id))
+
+
+def _absorb_own_progress(uid, own, parent_id):
+    """Ota-ona yaratgan profil olinganda bola mustaqil yiqqan Bilig va nishonlar yo‘qolmasin."""
+    coins, xp, streak, badges = own
+    with db_lock:
+        cursor.execute("SELECT badges FROM Users WHERE user_id = ?", (uid,))
+        r = cursor.fetchone()
+        merged = [b for b in ((r[0] if r else "") or "").split(",") if b]
+        for b in (badges or "").split(","):
+            if b and b not in merged:
+                merged.append(b)
+        cursor.execute(
+            "UPDATE Users SET balance_coins = balance_coins + ?, total_xp = total_xp + ?, "
+            "streak_days = MAX(COALESCE(streak_days, 0), ?), badges = ? WHERE user_id = ?",
+            (coins or 0, xp or 0, streak or 0, ",".join(merged), uid))
+        if parent_id:
+            _move_own_plans(uid, parent_id)
+        conn.commit()
+
+
 @app.route("/api/link_parent", methods=["POST"])
 @require_auth
 def api_link_parent():
@@ -2424,8 +2452,14 @@ def api_link_parent():
       • BLG-1234 — ota-ona kodi (eski yo‘l): yangi profil ochiladi.
     """
     data = request.get_json(force=True) or {}
-    code = (data.get("code") or "").strip().upper()
+    code = (data.get("code") or "").strip().upper().replace(" ", "")
     uid = g.user_id
+    # Ota-ona bu kodni yozsa, uning O‘Z hisobi bolaga aylanib qolardi.
+    cursor.execute("SELECT role FROM Users WHERE user_id = ?", (uid,))
+    _role = cursor.fetchone()
+    if _role and _role[0] == "parent":
+        return jsonify({"error": "Bu kod farzandning o‘z telefonida kiritiladi. "
+                                 "Siz ota-ona sifatida kirgansiz."}), 400
 
     # ---- 1-yo‘l: farzandning shaxsiy 8 xonali kodi ----
     digits = "".join(ch for ch in code if ch.isdigit())
@@ -2444,7 +2478,12 @@ def api_link_parent():
 
         cursor.execute("SELECT parent_id FROM Family_Link WHERE child_id = ?", (local_id,))
         prow = cursor.fetchone()
+        cursor.execute("SELECT balance_coins, total_xp, streak_days, badges FROM Users "
+                       "WHERE user_id = ?", (uid,))
+        own = cursor.fetchone()
         _bind_child_to_telegram(local_id, uid)
+        if own:
+            _absorb_own_progress(uid, own, prow[0] if prow else None)
 
         cursor.execute("SELECT name FROM Users WHERE user_id = ?", (uid,))
         nrow = cursor.fetchone()
@@ -2472,11 +2511,16 @@ def api_link_parent():
     if not parent:
         return jsonify({"error": "Bunday kodli ota-ona topilmadi"}), 404
 
+    if get_parent_id(uid):
+        return jsonify({"error": "Siz allaqachon ota-onaga ulangansiz"}), 400
     try:
         with db_lock:
             cursor.execute(
-                "INSERT INTO Family_Link (parent_id, child_id) VALUES (?, ?)", (parent[0], uid)
+                "INSERT INTO Family_Link (parent_id, child_id, child_age) VALUES "
+                "(?, ?, COALESCE((SELECT age FROM Users WHERE user_id = ?), 10))",
+                (parent[0], uid, uid)
             )
+            _move_own_plans(uid, parent[0])
             conn.commit()
     except Exception:
         return jsonify({"error": "Siz allaqachon shu ota-onaga ulangansiz"}), 400
@@ -2490,7 +2534,9 @@ def api_link_parent():
     _feed(parent[0], uid, "child_linked",
           f"{child_name} profilingizga ulandi",
           "Endi uning o‘qishini shu yerdan kuzatib borasiz.")
-    return jsonify({"ok": True})
+    cursor.execute("SELECT profile_done FROM Users WHERE user_id = ?", (uid,))
+    _pd = cursor.fetchone()
+    return jsonify({"ok": True, "profile_ready": bool(_pd and _pd[0])})
 
 
 @app.route("/api/child/profile", methods=["POST"])
@@ -2515,8 +2561,8 @@ def api_child_profile():
     uid = g.user_id
     with db_lock:
         cursor.execute(
-            "UPDATE Users SET name = ?, avatar_id = ?, profile_done = 1 WHERE user_id = ?",
-            (name, avatar_id, uid)
+            "UPDATE Users SET name = ?, avatar_id = ?, age = ?, profile_done = 1 WHERE user_id = ?",
+            (name, avatar_id, age, uid)
         )
         parent_id = get_parent_id(uid)
         if parent_id:
@@ -2967,14 +3013,18 @@ def parent_recommended():
 def child_recommended():
     """Bolaning o‘z yoshiga mos tavsiyalar."""
     child_id = _resolve_active_child(request)
-    parent_id = get_parent_id(child_id)
-    age = 10
-    if parent_id:
-        cursor.execute("SELECT child_age FROM Family_Link WHERE parent_id = ? AND child_id = ?",
-                       (parent_id, child_id))
-        r = cursor.fetchone()
-        age = (r[0] if r else 10) or 10
-    return jsonify(_recommend_for(child_id, age))
+    return jsonify(_recommend_for(child_id, _child_age(child_id)))
+
+
+def _child_age(child_id):
+    """Ota-ona kiritgan yosh; ota-onasiz bolada — o‘zi profilda yozgani."""
+    cursor.execute("SELECT child_age FROM Family_Link WHERE child_id = ?", (child_id,))
+    r = cursor.fetchone()
+    if r and r[0]:
+        return r[0]
+    cursor.execute("SELECT age FROM Users WHERE user_id = ?", (child_id,))
+    r = cursor.fetchone()
+    return (r[0] if r else 0) or 10
 
 
 @app.route("/api/child/book_request", methods=["POST"])
@@ -3004,6 +3054,33 @@ def child_book_request():
         f"📚 <b>{name}</b> «{title}» kitobini so‘rayapti."
     )
     return jsonify({"ok": True})
+
+
+@app.route("/api/child/books/add", methods=["POST"])
+@require_auth
+def child_add_book():
+    """Ota-onasiz kirgan bola kitobni o‘zi tanlaydi (ega qarori, 2026-09-13).
+    Ota-onasi bor bola avvalgidek so‘raydi — kitobni ota-ona qo‘yadi."""
+    child_id = _require_child_actor(request)
+    if get_parent_id(child_id):
+        return jsonify({"error": "Kitobni ota-onang qo‘yadi — «So‘rayman» tugmasini bos"}), 400
+    data = request.get_json(force=True) or {}
+    title = (data.get("title") or "").strip()[:120]
+    author = (data.get("author") or "").strip()[:120]
+    total_pages = _int_arg(data, "total_pages")
+    if not title:
+        return jsonify({"error": "Kitob tanlanmagan"}), 400
+    if total_pages < 0 or total_pages > BOOK_PAGES_MAX:
+        return jsonify({"error": f"Bet sonini to‘g‘ri kiriting (eng ko‘pi {BOOK_PAGES_MAX})"}), 400
+    with db_lock:
+        plan_id = _child_plan_id(child_id)
+        cursor.execute(
+            "INSERT INTO Plan_Books (plan_id, title, author, total_pages) VALUES (?, ?, ?, ?)",
+            (plan_id, title, author, total_pages))
+        conn.commit()
+        book_id = cursor.lastrowid
+    _attach_test_from_bank(book_id, title, author)
+    return jsonify({"ok": True, "book_id": book_id, "title": title})
 
 
 def _build_catalog():
@@ -4236,16 +4313,14 @@ def child_passport_self():
 @require_auth
 def child_books():
     child_id = _resolve_active_child(request)
-    parent_id = get_parent_id(child_id)
-    if not parent_id:
-        return jsonify({"error": "Ota-onaga ulanmagansiz"}), 400
 
     # Asosiy so‘rovdan OLDIN — yordamchi ham shu cursor'dan foydalanadi.
     _final_only = _final_only_book_ids()
+    # Ota-onasiz bola ham o‘z kitoblarini ko‘radi (ega qarori, 2026-09-13).
     cursor.execute(
         "SELECT plan_id, name, prize, plan_type FROM Reading_Plans "
-        "WHERE parent_id = ? AND child_id = ? AND status = 'active'",
-        (parent_id, child_id)
+        "WHERE child_id = ? AND status = 'active'",
+        (child_id,)
     )
     plans = []
     for plan_id, name, prize, plan_type in cursor.fetchall():
@@ -5155,7 +5230,11 @@ def child_store():
     child_id = _resolve_active_child(request)
     parent_id = get_parent_id(child_id)
     if not parent_id:
-        return jsonify({"balance": 0, "items": [], "goal_item_id": 0})
+        # Sovg‘alarni ota-ona qo‘yadi — ungacha do‘kon «ota-onangni ulang» deydi.
+        cursor.execute("SELECT balance_coins FROM Users WHERE user_id = ?", (child_id,))
+        r = cursor.fetchone()
+        return jsonify({"balance": (r[0] if r else 0) or 0, "items": [],
+                        "goal_item_id": 0, "no_parent": True})
 
     cursor.execute("SELECT balance_coins, goal_item_id FROM Users WHERE user_id = ?", (child_id,))
     row = cursor.fetchone()
@@ -7094,6 +7173,13 @@ def _family_parent(uid):
     return uid
 
 
+def _unlinked_child(uid):
+    """Ota-onasiz bola: obuna va sinovni u yoqa olmaydi — to‘lovchi ota-ona."""
+    cursor.execute("SELECT role FROM Users WHERE user_id = ?", (uid,))
+    r = cursor.fetchone()
+    return bool(r and r[0] == "child" and not get_parent_id(uid))
+
+
 def plus_plan(parent_id):
     """Oilaning holati: free | trial | plus. Muddati o‘tgani free bo‘ladi."""
     try:
@@ -7292,6 +7378,8 @@ def plus_subscribe():
     """
     data = request.get_json(force=True) or {}
     period = "year" if data.get("period") == "year" else "month"
+    if _unlinked_child(g.user_id):
+        return jsonify({"error": "Bilig plusni ota-ona yoqadi. Avval ota-onangni ulang."}), 400
     parent_id = _family_parent(g.user_id)
     price = plus_price_now(parent_id, period)
     ai_service.log_line("[plus] obuna niyati: oila=%s muddat=%s narx=%s"
@@ -7337,6 +7425,8 @@ def plus_trial():
     telefon shu manzilni to‘g‘ridan chaqiradi. Karta yoki bir martalik
     to‘lov — paylov.uz ulangach ega tanlaydi.
     """
+    if _unlinked_child(g.user_id):
+        return jsonify({"error": "Bilig plusni ota-ona yoqadi. Avval ota-onangni ulang."}), 400
     parent_id = _family_parent(g.user_id)
     started = plus_start_trial(parent_id)
     return jsonify({"ok": True, "started": started, "plan": plus_plan(parent_id),
