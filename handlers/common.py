@@ -71,7 +71,7 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
                     conn.commit()
                     await message.answer(
                         f"🎉 <b>Xush kelibsiz!</b>\n\nSiz <b>Ota-ona</b> sifatida muvaffaqiyatli ro‘yxatdan o‘tdingiz!\n"
-                        f"Farzandingiz profilingizga ulanishi uchun oilaviy kodingiz: <b>BLG-{str(user_id)[-4:]}</b>\n\n"
+                        f"Farzandingiz profilingizga ulanishi uchun oilaviy kodingiz: <b>BLG-{user_id}</b>\n\n"
                         f"Quyidagi menyu orqali farzandingiz uchun birinchi kitobni qo‘shishingiz mumkin 👇",
                         parse_mode="HTML",
                         reply_markup=get_parent_keyboard()
@@ -143,7 +143,7 @@ async def parent_handler(message: types.Message):
 
     cursor.execute("UPDATE Users SET role = 'parent' WHERE user_id = ?", (message.from_user.id,))
     conn.commit()
-    await message.answer(f"Siz Ota-ona sifatida ro‘yxatdan o‘tdingiz! ✅\nFarzandingiz ulanishi uchun kodingiz: <b>BLG-{str(message.from_user.id)[-4:]}</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
+    await message.answer(f"Siz Ota-ona sifatida ro‘yxatdan o‘tdingiz! ✅\nFarzandingiz ulanishi uchun kodingiz: <b>BLG-{message.from_user.id}</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
 
 @router.message(F.text.in_(["👦👧 Men O‘quvchiman", "👦👧 Men O'quvchiman"]))
 async def child_handler(message: types.Message, state: FSMContext):
@@ -170,8 +170,11 @@ async def process_parent_code(message: types.Message, state: FSMContext):
     if not code.startswith("BLG-"):
         await message.answer("Kod xato formatda! 'BLG-1234' ko‘rinishida kiriting.")
         return
-    parent_suffix = code.replace("BLG-", "")
-    cursor.execute("SELECT user_id FROM Users WHERE role = 'parent' AND CAST(user_id AS TEXT) LIKE ?", ('%' + parent_suffix,))
+    # To‘liq ID bo‘yicha ANIQ solishtirish (ilgari oxirgi 4 raqam bilan
+    # LIKE orqali tekshirilardi — foydalanuvchi ko‘payishi bilan boshqa
+    # ota-onaning kodi bilan chalkashib ketish xavfi bor edi, 2026-09-13).
+    parent_suffix = code.replace("BLG-", "").strip()
+    cursor.execute("SELECT user_id FROM Users WHERE role = 'parent' AND CAST(user_id AS TEXT) = ?", (parent_suffix,))
     parent = cursor.fetchone()
     if parent:
         try:

@@ -2375,7 +2375,7 @@ def api_me():
     }
 
     if role == "parent":
-        result["parent_code"] = f"BLG-{str(uid)[-4:]}"
+        result["parent_code"] = f"BLG-{uid}"
     elif role == "child":
         parent_id = get_parent_id(uid)
         result["linked_to_parent"] = bool(parent_id)
@@ -2409,7 +2409,7 @@ def api_register_role():
 
     resp = {"ok": True, "role": role}
     if role == "parent":
-        resp["parent_code"] = f"BLG-{str(uid)[-4:]}"
+        resp["parent_code"] = f"BLG-{uid}"
     return jsonify(resp)
 
 
@@ -2461,10 +2461,12 @@ def api_link_parent():
     if not code.startswith("BLG-"):
         return jsonify({"error": "Kodni tekshiring: 8 xonali farzand kodi yoki BLG-1234"}), 400
 
-    suffix = code.replace("BLG-", "")
+    # To‘liq ID bo‘yicha ANIQ solishtirish (ilgari oxirgi 4 raqam bilan
+    # LIKE orqali tekshirilardi — chalkashib ketish xavfi bor edi, 2026-09-13).
+    suffix = code.replace("BLG-", "").strip()
     cursor.execute(
-        "SELECT user_id FROM Users WHERE role = 'parent' AND CAST(user_id AS TEXT) LIKE ?",
-        ("%" + suffix,)
+        "SELECT user_id FROM Users WHERE role = 'parent' AND CAST(user_id AS TEXT) = ?",
+        (suffix,)
     )
     parent = cursor.fetchone()
     if not parent:

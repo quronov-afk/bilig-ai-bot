@@ -43,7 +43,7 @@ async def add_book_entrypoint(message: types.Message, state: FSMContext):
     children = cursor.fetchall()
 
     if not children:
-        parent_code = f"BLG-{str(message.from_user.id)[-4:]}"
+        parent_code = f"BLG-{message.from_user.id}"
         await message.answer(
             f"⚠️ <b>Sizga hali hech qaysi farzand biriktirilmagan!</b>\n\n"
             f"Farzandingiz o‘z telefonida botga kirsin va kodingizni kiritsin:\n🔑 Kodingiz: <b>{parent_code}</b>",
@@ -490,7 +490,7 @@ async def enter_bolaxona_mode(message: types.Message, state: FSMContext):
     children = cursor.fetchall()
 
     if not children:
-        parent_code = f"BLG-{str(message.from_user.id)[-4:]}"
+        parent_code = f"BLG-{message.from_user.id}"
         await message.answer(
             f"⚠️ <b>Sizga hali hech qaysi farzand ulanmagan!</b>\n\n"
             f"Farzandingiz o‘z telefonida botga kirsin yoki quyidagi kod orqali ulaning:\n🔑 Kodingiz: <b>{parent_code}</b>",
@@ -1225,7 +1225,7 @@ async def show_parent_results_menu(message_or_call, parent_id):
     links = cursor.fetchall()
 
     if not links:
-        parent_code = f"BLG-{str(parent_id)[-4:]}"
+        parent_code = f"BLG-{parent_id}"
         text = f"Sizga hali hech qaysi farzand ulanmagan.\n\nFarzandingiz botga kirib <b>'👦👧 Men O‘quvchiman'</b> bo‘limini tanlasin va kodingizni kiritsin:\n\n🔑 Kodingiz: <b>{parent_code}</b>"
         kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="➕ Farzand qo‘shish yo‘riqnomasi", callback_data="add_child_info")]])
         if isinstance(message_or_call, types.Message):
@@ -1267,7 +1267,7 @@ async def childres_callback(callback: types.CallbackQuery):
 
 @router.callback_query(F.data == "add_child_info")
 async def add_child_info_handler(callback: types.CallbackQuery):
-    parent_code = f"BLG-{str(callback.from_user.id)[-4:]}"
+    parent_code = f"BLG-{callback.from_user.id}"
     text = (
         f"➕ <b>Yangi farzand qo‘shish yo‘riqnomasi:</b>\n\n"
         f"1. Farzandingiz telefonida botni oching va <b>'👦👧 Men O‘quvchiman'</b>ni bosing.\n"
