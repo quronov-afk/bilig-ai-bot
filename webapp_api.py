@@ -4414,9 +4414,9 @@ def _apply_page_progress(book_id, child_id, new_page):
     # o‘qib yuborsa ham xuddi shunday bo‘lardi.
     # Kitobning umumiy sahifasi noma'lum (0) bo‘lganda bu tekshiruv butunlay
     # o‘tkazib yuborilardi — shu teshikdan millionlab sahifa kiritilgan
-    # holat chiqdi (2026-09-13). Endi noma'lum bo‘lsa ham 3000 betlik
+    # holat chiqdi (2026-09-13). Endi noma'lum bo‘lsa ham 3 xonali (999)
     # qat'iy chegara qo‘yiladi — hech qanday bolalar kitobi bundan oshmaydi.
-    hard_cap = total_pages or 3000
+    hard_cap = total_pages or 999
     if new_page > hard_cap:
         return jsonify({"ok": False, "reason": "too_big",
                          "message": f"Bu kitobda {total_pages} bet bor. "
