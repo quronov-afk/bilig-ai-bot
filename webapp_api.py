@@ -6980,9 +6980,10 @@ def check_trials():
 from html import escape as _html_escape
 
 OWNER_STATS_HOUR = 21
-# AI narxi (1 mln token uchun, dollar) — taxminiy, Render'da o‘zgartirsa bo‘ladi.
-AI_PRICE_IN = float(os.getenv("AI_PRICE_IN", "0.30"))
-AI_PRICE_OUT = float(os.getenv("AI_PRICE_OUT", "2.50"))
+# AI narxi (1 mln token uchun, dollar). Google’dagi gemini-3.6-flash narxi,
+# 2026-yil 31-dekabrgacha amal qiladi — keyin tekshirish kerak.
+AI_PRICE_IN = float(os.getenv("AI_PRICE_IN", "0.75"))
+AI_PRICE_OUT = float(os.getenv("AI_PRICE_OUT", "3.75"))
 
 
 def _arrow(now_v, prev_v):
@@ -7136,7 +7137,7 @@ def build_owner_stats():
     L.append("👑 <b>Bilig plus</b>")
     L.append("Sinovda: %d (3 kunda tugaydi: %d) · Pullik: %d" % (trials, trials_soon, paid))
     L.append("")
-    L.append("🤖 <b>AI sarfi</b> (taxminiy)")
+    L.append("🤖 <b>AI sarfi</b>")
     L.append("Bugun: %d so‘rov · $%.2f · Hafta: %d so‘rov · $%.2f"
              % (ai_n_today, ai_usd_today, ai_n_week, ai_usd_week))
     if top:
