@@ -1813,7 +1813,7 @@ def _notify_allowed(chat_id, limit=None):
     return True, ""
 
 
-def send_telegram_message(chat_id: int, text: str, kind="hisobot", force=False):
+def send_telegram_message(chat_id: int, text: str, kind="hisobot", force=False, reply_markup=None):
     """Botdan foydalanuvchiga Telegram xabari yuborish.
 
     EGA QARORI (2026-09-03): botga FAQAT IKKI XIL xabar boradi —
@@ -1844,7 +1844,8 @@ def send_telegram_message(chat_id: int, text: str, kind="hisobot", force=False):
     try:
         requests.post(
             f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
-            json={"chat_id": chat_id, "text": text, "parse_mode": "HTML"},
+            json=dict({"chat_id": chat_id, "text": text, "parse_mode": "HTML"},
+                      **({"reply_markup": reply_markup} if reply_markup else {})),
             timeout=5
         )
     except Exception as e:
@@ -6893,6 +6894,10 @@ def _summary_loop():
             check_trials()
         except Exception:
             pass
+        try:
+            send_owner_stats_if_due()
+        except Exception:
+            traceback.print_exc()
         time.sleep(1800)          # yarim soatda bir marta tekshiradi
 
 
@@ -6961,6 +6966,214 @@ def check_trials():
         except Exception:
             traceback.print_exc()
     return sent
+
+
+# ==========================================================
+# EGAGA KUNLIK STATISTIKA (ega talabi, 2026-09-13)
+# ----------------------------------------------------------
+# Har kuni 21:00 da botga bitta xabar: jami foydalanuvchilar, o‘sish,
+# voronka, faol o‘qish, qaytib kelish, imkoniyatlar, Bilig plus,
+# AI sarfi, hafta kitoblari va faqat muammo bo‘lganda — ogohlantirish.
+# /stats buyrug‘i ham aynan shu matnni chiqaradi.
+# Namoyish bolalari (manfiy raqamli) hisobga kirmaydi.
+# ==========================================================
+from html import escape as _html_escape
+
+OWNER_STATS_HOUR = 21
+# AI narxi (1 mln token uchun, dollar) — taxminiy, Render'da o‘zgartirsa bo‘ladi.
+AI_PRICE_IN = float(os.getenv("AI_PRICE_IN", "0.30"))
+AI_PRICE_OUT = float(os.getenv("AI_PRICE_OUT", "2.50"))
+
+
+def _arrow(now_v, prev_v):
+    d = (now_v or 0) - (prev_v or 0)
+    if d > 0:
+        return " ↑%d" % d
+    if d < 0:
+        return " ↓%d" % abs(d)
+    return ""
+
+
+def owner_stats_keyboard():
+    rows = [[{"text": "🔄 Yangilash", "callback_data": "admin_refresh_stats"}]]
+    base = (os.getenv("RENDER_EXTERNAL_URL") or "").rstrip("/")
+    token = os.getenv("LOG_TOKEN", "")
+    if base and token:
+        rows.append([{"text": "📊 Batafsil panel", "url": "%s/panel?token=%s" % (base, token)}])
+    return {"inline_keyboard": rows}
+
+
+def build_owner_stats():
+    now = datetime.now()
+    today = now.strftime("%Y-%m-%d")
+    yday = (now - timedelta(days=1)).strftime("%Y-%m-%d")
+    d7 = (now - timedelta(days=6)).strftime("%Y-%m-%d")
+    p_from = (now - timedelta(days=13)).strftime("%Y-%m-%d")
+    p_to = (now - timedelta(days=7)).strftime("%Y-%m-%d")
+
+    parents = {r[0]: (r[1] or "")[:10] for r in _rows(
+        "SELECT user_id, created_at FROM Users WHERE role = 'parent' AND user_id > 0")}
+    children = {r[0]: (r[1] or "")[:10] for r in _rows(
+        "SELECT user_id, created_at FROM Users WHERE role = 'child' AND user_id > 0")}
+    links = _rows("SELECT parent_id, child_id FROM Family_Link")
+    linked_children = {c for _, c in links}
+
+    def new_on(group, day):
+        return sum(1 for d in group.values() if d == day)
+
+    new_p, new_c = new_on(parents, today), new_on(children, today)
+    new_p_y, new_c_y = new_on(parents, yday), new_on(children, yday)
+    own_today = sum(1 for cid, d in children.items() if d == today and cid not in linked_children)
+    new_week = sum(1 for d in list(parents.values()) + list(children.values()) if d >= d7)
+
+    # ---- voronka (ota-onalar bo‘yicha) ----
+    kids_of = {}
+    for p, c in links:
+        if p in parents:
+            kids_of.setdefault(p, set()).add(c)
+    with_book_p = {r[0] for r in _rows(
+        "SELECT DISTINCT rp.parent_id FROM Reading_Plans rp JOIN Plan_Books pb "
+        "ON pb.plan_id = rp.plan_id")} & set(parents)
+    read_days = {}
+    for cid, day in _rows("SELECT child_id, substr(created_at, 1, 10) FROM Reading_Logs "
+                          "WHERE child_id > 0 GROUP BY child_id, substr(created_at, 1, 10)"):
+        read_days.setdefault(cid, set()).add(day)
+    with_page_p = {p for p, ks in kids_of.items() if any(k in read_days for k in ks)}
+    habit_p = {p for p, ks in kids_of.items() if any(len(read_days.get(k, ())) >= 3 for k in ks)}
+    np_ = len(parents) or 1
+
+    def fline(name, n):
+        return "%s: <b>%d</b> · %d%%" % (name, n, round(n * 100.0 / np_))
+
+    # ---- faol o‘qish ----
+    def readers(since, until=None):
+        return {c for c, ds in read_days.items()
+                if any(d >= since and (until is None or d <= until) for d in ds)}
+
+    r_today = {c for c, ds in read_days.items() if today in ds}
+    r_yday = {c for c, ds in read_days.items() if yday in ds}
+    r_week = readers(d7)
+    r_prev = readers(p_from, p_to)
+    pages_today = _num("SELECT SUM(pages_added) FROM Reading_Logs WHERE child_id > 0 "
+                       "AND substr(created_at, 1, 10) = ?", (today,))
+    pages_week = _num("SELECT SUM(pages_added) FROM Reading_Logs WHERE child_id > 0 "
+                      "AND substr(created_at, 1, 10) >= ?", (d7,))
+    avg_week = round(pages_week / len(r_week)) if r_week else 0
+    returned = round(len(r_prev & r_week) * 100.0 / len(r_prev)) if r_prev else None
+
+    # ---- imkoniyatlar (7 kun) ----
+    photos = _num("SELECT COUNT(*) FROM Page_Check_Log WHERE child_id > 0 "
+                  "AND substr(created_at, 1, 10) >= ?", (d7,))
+    voices = _num("SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id > 0 AND type = 'voice' "
+                  "AND substr(created_at, 1, 10) >= ?", (d7,))
+    tests = _num("SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id > 0 AND type = 'test' "
+                 "AND substr(created_at, 1, 10) >= ?", (d7,))
+    buys = _num("SELECT COUNT(*) FROM Purchases WHERE child_id > 0 "
+                "AND substr(created_at, 1, 10) >= ?", (d7,))
+
+    # ---- Bilig plus ----
+    soon_to = (now + timedelta(days=3)).strftime("%Y-%m-%d %H:%M:%S")
+    now_s = now.strftime("%Y-%m-%d %H:%M:%S")
+    trials = _num("SELECT COUNT(*) FROM Subscriptions WHERE plan = 'trial'")
+    trials_soon = _num("SELECT COUNT(*) FROM Subscriptions WHERE plan = 'trial' "
+                       "AND expires_at BETWEEN ? AND ?", (now_s, soon_to))
+    paid = _num("SELECT COUNT(*) FROM Subscriptions WHERE plan = 'plus'")
+
+    # ---- AI sarfi ----
+    def ai_cost(since):
+        r = _rows("SELECT COUNT(*), COALESCE(SUM(prompt_tokens), 0), "
+                  "COALESCE(SUM(total_tokens - prompt_tokens), 0) FROM AI_Usage "
+                  "WHERE substr(created_at, 1, 10) >= ?", (since,))
+        n, tin, tout = r[0] if r else (0, 0, 0)
+        return n or 0, (tin or 0) / 1e6 * AI_PRICE_IN + max(0, tout or 0) / 1e6 * AI_PRICE_OUT
+
+    ai_n_today, ai_usd_today = ai_cost(today)
+    ai_n_week, ai_usd_week = ai_cost(d7)
+
+    # ---- hafta kitoblari ----
+    top = _rows("SELECT pb.title, COUNT(DISTINCT rl.child_id) AS n FROM Reading_Logs rl "
+                "JOIN Plan_Books pb ON pb.book_id = rl.book_id WHERE rl.child_id > 0 "
+                "AND substr(rl.created_at, 1, 10) >= ? GROUP BY pb.title "
+                "ORDER BY n DESC LIMIT 3", (d7,))
+
+    # ---- ogohlantirishlar ----
+    warns = []
+    if r_yday and len(r_today) < len(r_yday):
+        warns.append("Bugun o‘qiganlar kechagidan kam (%d ← %d)." % (len(r_today), len(r_yday)))
+    no_book = len({p for p in kids_of} - with_book_p)
+    if no_book:
+        warns.append("%d ota-ona farzandini ulagan, lekin kitob qo‘ymagan." % no_book)
+    if ai_n_week and ai_usd_today > 0.5 and ai_usd_today > 2 * (ai_usd_week / 7):
+        warns.append("AI sarfi bugun odatdagidan ikki barobar ko‘p.")
+
+    L = []
+    L.append("📊 <b>Bilig AI — kunlik holat</b>")
+    L.append("<i>%s · qavsda: kechagiga nisbatan</i>" % now.strftime("%d.%m.%Y %H:%M"))
+    L.append("")
+    L.append("👥 <b>Jami: %d</b>  (bugun +%d)" % (len(parents) + len(children), new_p + new_c))
+    L.append("Ota-ona: <b>%d</b> (+%d%s) · Bola: <b>%d</b> (+%d%s)"
+             % (len(parents), new_p, _arrow(new_p, new_p_y), len(children), new_c, _arrow(new_c, new_c_y)))
+    L.append("Bugun ota-onasiz kirgan bola: %d · 7 kunda yangi: %d" % (own_today, new_week))
+    L.append("")
+    L.append("🔻 <b>Qayerda to‘xtab qolishyapti</b>")
+    L.append(fline("Ro‘yxatdan o‘tgan ota-ona", len(parents)))
+    L.append(fline("Farzandini uladi", len(kids_of)))
+    L.append(fline("Kitob qo‘shdi", len(with_book_p)))
+    L.append(fline("Birinchi betni o‘qidi", len(with_page_p)))
+    L.append(fline("3+ kun o‘qidi", len(habit_p)))
+    L.append("")
+    L.append("📖 <b>Faol o‘qish</b>")
+    L.append("Bugun o‘qigan bola: <b>%d</b>%s · 7 kunda: <b>%d</b>"
+             % (len(r_today), _arrow(len(r_today), len(r_yday)), len(r_week)))
+    L.append("Bugun o‘qilgan bet: <b>%d</b> · bir bolaga (7 kun): %d bet" % (pages_today, avg_week))
+    L.append("Qaytib kelish: <b>%s</b> — o‘tgan hafta o‘qib, bu hafta ham o‘qigan"
+             % ("%d%%" % returned if returned is not None else "hali hisob yo‘q"))
+    L.append("")
+    L.append("🧩 <b>Shu hafta</b>")
+    L.append("Sahifa surati: %d · Ovozli xulosa: %d · Test: %d · Sovg‘a: %d"
+             % (photos, voices, tests, buys))
+    L.append("")
+    L.append("👑 <b>Bilig plus</b>")
+    L.append("Sinovda: %d (3 kunda tugaydi: %d) · Pullik: %d" % (trials, trials_soon, paid))
+    L.append("")
+    L.append("🤖 <b>AI sarfi</b> (taxminiy)")
+    L.append("Bugun: %d so‘rov · $%.2f · Hafta: %d so‘rov · $%.2f"
+             % (ai_n_today, ai_usd_today, ai_n_week, ai_usd_week))
+    if top:
+        L.append("")
+        L.append("⭐ <b>Hafta kitoblari</b>")
+        for i, (title, n) in enumerate(top, 1):
+            L.append("%d. %s · %d bola" % (i, _html_escape(title or ""), n))
+    if warns:
+        L.append("")
+        L.append("⚠️ <b>Diqqat</b>")
+        for w in warns:
+            L.append("• " + w)
+    return "\n".join(L)
+
+
+def send_owner_stats_if_due():
+    """Kuniga BIR marta, 21:00 dan keyin (tungi jimlikka qadar)."""
+    if not OWNER_ID:
+        return False
+    now = datetime.now()
+    if now.hour < OWNER_STATS_HOUR or now.hour >= 24:
+        return False
+    today = now.strftime("%Y-%m-%d")
+    with db_lock:
+        cursor.execute("CREATE TABLE IF NOT EXISTS Seed_State "
+                       "(name TEXT PRIMARY KEY, stamp TEXT, updated_at TEXT)")
+        conn.commit()
+    if _num("SELECT COUNT(*) FROM Seed_State WHERE name = 'owner_stats_day' AND stamp = ?",
+            (today,)):
+        return False
+    send_telegram_message(OWNER_ID, build_owner_stats(), force=True,
+                          reply_markup=owner_stats_keyboard())
+    with db_lock:
+        cursor.execute("INSERT OR REPLACE INTO Seed_State (name, stamp, updated_at) "
+                       "VALUES ('owner_stats_day', ?, ?)", (today, now.isoformat()))
+        conn.commit()
+    return True
 
 
 def start_summary_worker():

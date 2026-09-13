@@ -9,6 +9,16 @@ from keyboards import get_parent_keyboard, get_child_keyboard
 
 router = Router()
 
+
+def _owner_stats():
+    """Kunlik xabar bilan bir xil matn va tugmalar (webapp_api ichida hisoblanadi)."""
+    from webapp_api import build_owner_stats, owner_stats_keyboard
+    rows = owner_stats_keyboard()["inline_keyboard"]
+    kb = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(**btn) for btn in row] for row in rows
+    ])
+    return build_owner_stats(), kb
+
 @router.message(Command("stats"))
 @router.message(Command("admin"))
 async def admin_stats_handler(message: types.Message):
@@ -16,13 +26,9 @@ async def admin_stats_handler(message: types.Message):
     if OWNER_ID != 0 and user_id != OWNER_ID:
         return  
 
-    stats_text = generate_admin_stats_text()
+    stats_text, kb = _owner_stats()
     if OWNER_ID == 0:
         stats_text += f"\n\n⚙️ <i>Eslatma: Xavfsizlik uchun Render.com'da Environment Variables qismiga <b>OWNER_ID={user_id}</b> o‘zgaruvchisini qo‘shing.</i>"
-
-    kb = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="🔄 Yangilash", callback_data="admin_refresh_stats")]
-    ])
     await message.answer(stats_text, parse_mode="HTML", reply_markup=kb)
 
 @router.callback_query(F.data == "admin_refresh_stats")
@@ -32,14 +38,10 @@ async def refresh_admin_stats(callback: types.CallbackQuery):
         await callback.answer("Ruxsat berilmagan!", show_alert=True)
         return
         
-    stats_text = generate_admin_stats_text()
+    stats_text, kb = _owner_stats()
     if OWNER_ID == 0:
         stats_text += f"\n\n⚙️ <i>Eslatma: Xavfsizlik uchun Render.com'da Environment Variables qismiga <b>OWNER_ID={user_id}</b> o‘zgaruvchisini qo‘shing.</i>"
 
-    kb = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="🔄 Yangilash", callback_data="admin_refresh_stats")]
-    ])
-    
     try:
         await callback.message.edit_text(stats_text, parse_mode="HTML", reply_markup=kb)
     except Exception:
