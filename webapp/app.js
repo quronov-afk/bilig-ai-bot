@@ -6060,7 +6060,7 @@ async function goToBook(bookId) {
 
 function openContactModal() {
   openModal("Yordam va aloqa",
-    '<p class="section-sub">Savol, taklif yoki muammoingizni yozing — administratorga yuboriladi.</p>' +
+    '<p class="section-sub">Savol, taklif yoki muammoingizni yozing. Oddiy savollarga darrov javob olasiz, qolganiga muallif javob beradi.</p>' +
     '<textarea id="contact-text" class="text-input" placeholder="Xabaringizni shu yerga yozing…"></textarea>' +
     '<button class="btn btn-primary btn-block" data-action="submit-contact">Yuborish</button>'
   );
@@ -6068,8 +6068,15 @@ function openContactModal() {
 async function submitContact() {
   const text = document.getElementById("contact-text").value.trim();
   if (!text) { toast("Xabar bo‘sh bo‘lmasin"); return; }
-  await api("/api/parent/contact", { method: "POST", body: { text: text } });
-  toast("Xabaringiz yuborildi");
+  const res = await api("/api/parent/contact", { method: "POST", body: { text: text } });
+  if (res && res.answer) {
+    openModal("Javob",
+      '<p class="section-sub" style="white-space:pre-line">' + escapeHtml(res.answer) + '</p>' +
+      '<p class="section-sub" style="font-size:13.5px">Savolingiz muallifga ham yetkazildi.</p>' +
+      '<button class="btn btn-primary btn-block" data-action="close-modal">Tushunarli</button>');
+    return;
+  }
+  toast("Xabaringiz yuborildi, tez orada javob beramiz");
   closeModal();
 }
 

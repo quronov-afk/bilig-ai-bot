@@ -4032,23 +4032,37 @@ def parent_contact():
     text = (data.get("text") or "").strip()
     if not text:
         return jsonify({"error": "Xabar bo‘sh bo‘lmasin"}), 400
+    cursor.execute("SELECT name, role FROM Users WHERE user_id = ?", (g.user_id,))
+    row = cursor.fetchone()
+    sender_name = (row[0] if row else "Foydalanuvchi") or "Foydalanuvchi"
+    role = (row[1] if row else None) or "Noma'lum"
+
+    # Oddiy savolga AI darrov javob beradi; nozik murojaat muallifga qoladi
+    # (ega qarori, 2026-09-13 — «aralash» yo‘l).
+    ai = None
+    if ai_service.support_quota_ok(g.user_id):
+        try:
+            ai = run_async(ai_service.answer_support(text, role))
+        except Exception:
+            ai = None
+    answered = bool(ai and ai.get("kind") == "simple" and ai.get("answer"))
+
     if OWNER_ID:
-        cursor.execute("SELECT name, role FROM Users WHERE user_id = ?", (g.user_id,))
-        row = cursor.fetchone()
-        sender_name = (row[0] if row else "Foydalanuvchi") or "Foydalanuvchi"
-        role = (row[1] if row else None) or "Noma'lum"
         # Botdagi «Qayta aloqa» xabari bilan BIR XIL shaklda — javob berish
         # har doim aynan shu /reply usulida bo‘lsin (ega talabi, 2026-09-13).
+        ai_line = ("🤖 <b>AI javob berdi:</b>\n" + _html_escape(ai["answer"])) if answered \
+            else "⏳ <b>Javobingizni kutyapti</b> — AI javob bermadi."
         send_telegram_message(
             OWNER_ID, force=True, text=
             f"📩 <b>YANGI XABAR (Mini App)</b>\n\n"
-            f"👤 <b>Yuboruvchi:</b> {sender_name}\n"
+            f"👤 <b>Yuboruvchi:</b> {_html_escape(sender_name)}\n"
             f"🆔 <b>ID:</b> <code>{g.user_id}</code>\n"
             f"🎭 <b>Rol:</b> {role}\n\n"
-            f"{text}\n\n"
+            f"{_html_escape(text)}\n\n"
+            f"{ai_line}\n\n"
             f"<i>Javob yozish uchun:</i>\n<code>/reply {g.user_id} matn</code>"
         )
-    return jsonify({"ok": True})
+    return jsonify({"ok": True, "answer": ai["answer"] if answered else ""})
 
 
 # ==========================================================

@@ -4,6 +4,8 @@ from config import OWNER_ID
 from database import cursor
 from keyboards import get_parent_keyboard, get_child_keyboard, get_back_reply_keyboard
 from states import Feedback
+from html import escape
+import ai_service
 
 router = Router()
 
@@ -42,7 +44,24 @@ async def feedback_receive(message: types.Message, state: FSMContext):
         await message.copy_to(OWNER_ID)
         
         kb = get_parent_keyboard() if role == 'parent' else get_child_keyboard()
-        await message.answer("✅ Xabaringiz muallifga muvaffaqiyatli yetkazildi! Fikringiz uchun tashakkur!", reply_markup=kb)
+        # Oddiy savolga AI darrov javob beradi; nozik murojaat muallifga qoladi
+        # (ega qarori, 2026-09-13 — «aralash» yo‘l). Rasm/video — faqat muallifga.
+        ai = None
+        if message.text and ai_service.support_quota_ok(message.from_user.id):
+            ai = await ai_service.answer_support(message.text, role)
+        if ai and ai.get("kind") == "simple" and ai.get("answer"):
+            await message.answer(
+                "💬 " + escape(ai["answer"]) + "\n\n<i>Savolingiz muallifga ham yetkazildi.</i>",
+                parse_mode="HTML", reply_markup=kb)
+            await message.bot.send_message(
+                OWNER_ID, "🤖 <b>AI javob berdi:</b>\n\n" + escape(ai["answer"]), parse_mode="HTML")
+        else:
+            await message.answer(
+                "✅ Xabaringiz muallifga yetkazildi, tez orada javob beramiz. Fikringiz uchun tashakkur!",
+                reply_markup=kb)
+            if message.text:
+                await message.bot.send_message(
+                    OWNER_ID, "⏳ <b>Javobingizni kutyapti</b> — AI javob bermadi.", parse_mode="HTML")
     except Exception:
         await message.answer("❌ Xabar yuborishda xatolik yuz berdi.")
         
