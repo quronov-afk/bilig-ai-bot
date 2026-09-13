@@ -46,6 +46,50 @@ async def refresh_admin_stats(callback: types.CallbackQuery):
         pass
     await callback.answer("Statistika yangilandi!")
 
+@router.message(Command("send_parents"))
+async def broadcast_parents_handler(message: types.Message, command: CommandObject):
+    """Faqat ota-onalarga xabar — bolalarga tegishli bo‘lmagan e'lonlar uchun."""
+    if OWNER_ID != 0 and message.from_user.id != OWNER_ID:
+        return
+
+    if not command.args:
+        await message.answer(
+            "⚠️ <b>Foydalanish:</b>\n<code>/send_parents Sizning xabaringiz...</code>\n\n"
+            "<i>Ushbu buyruq faqat ota-onalarga xabar yuboradi (bolalarga bormaydi).</i>",
+            parse_mode="HTML"
+        )
+        return
+
+    broadcast_text = command.args
+    status_msg = await message.answer("⏳ <i>Ota-onalarga xabar yetkazilmoqda...</i>", parse_mode="HTML")
+
+    cursor.execute("SELECT user_id FROM Users WHERE is_approved = 1 AND role = 'parent'")
+    users = cursor.fetchall()
+
+    success_count = 0
+    fail_count = 0
+
+    for u in users:
+        try:
+            await message.bot.send_message(
+                u[0],
+                f"📢 <b>BILIG AI BILDIRISHNOMASI:</b>\n\n{broadcast_text}",
+                parse_mode="HTML",
+                reply_markup=get_parent_keyboard()
+            )
+            success_count += 1
+            await asyncio.sleep(0.05)
+        except Exception:
+            fail_count += 1
+
+    await status_msg.edit_text(
+        f"✅ <b>Ota-onalarga xabar yuborildi!</b>\n\n"
+        f"📨 Yetkazildi: <b>{success_count} ta</b> ota-onaga\n"
+        f"⚠️ Yetib bormadi (botni bloklaganlar): <b>{fail_count} ta</b>",
+        parse_mode="HTML"
+    )
+
+
 @router.message(Command("invite"))
 async def generate_invite_package(message: types.Message):
     if OWNER_ID != 0 and message.from_user.id != OWNER_ID:
