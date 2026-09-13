@@ -3955,12 +3955,20 @@ def parent_contact():
     if not text:
         return jsonify({"error": "Xabar bo‘sh bo‘lmasin"}), 400
     if OWNER_ID:
-        cursor.execute("SELECT name FROM Users WHERE user_id = ?", (g.user_id,))
+        cursor.execute("SELECT name, role FROM Users WHERE user_id = ?", (g.user_id,))
         row = cursor.fetchone()
-        sender_name = row[0] if row else "Foydalanuvchi"
+        sender_name = (row[0] if row else "Foydalanuvchi") or "Foydalanuvchi"
+        role = (row[1] if row else None) or "Noma'lum"
+        # Botdagi «Qayta aloqa» xabari bilan BIR XIL shaklda — javob berish
+        # har doim aynan shu /reply usulida bo‘lsin (ega talabi, 2026-09-13).
         send_telegram_message(
             OWNER_ID, force=True, text=
-            f"📞 <b>Yangi murojaat (Mini App)</b>\n👤 {sender_name} (ID: <code>{g.user_id}</code>)\n\n{text}"
+            f"📩 <b>YANGI XABAR (Mini App)</b>\n\n"
+            f"👤 <b>Yuboruvchi:</b> {sender_name}\n"
+            f"🆔 <b>ID:</b> <code>{g.user_id}</code>\n"
+            f"🎭 <b>Rol:</b> {role}\n\n"
+            f"{text}\n\n"
+            f"<i>Javob yozish uchun:</i>\n<code>/reply {g.user_id} matn</code>"
         )
     return jsonify({"ok": True})
 
