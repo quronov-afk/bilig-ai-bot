@@ -4412,10 +4412,17 @@ def _apply_page_progress(book_id, child_id, new_page):
     # 5000 deb yozilsa qabul qilinardi va bola bir zumda minglab Bilig
     # hamda hamma nishonni olib qo‘yardi. AI bet raqamini noto‘g‘ri
     # o‘qib yuborsa ham xuddi shunday bo‘lardi.
-    if total_pages and new_page > total_pages:
+    # Kitobning umumiy sahifasi noma'lum (0) bo‘lganda bu tekshiruv butunlay
+    # o‘tkazib yuborilardi — shu teshikdan millionlab sahifa kiritilgan
+    # holat chiqdi (2026-09-13). Endi noma'lum bo‘lsa ham 3000 betlik
+    # qat'iy chegara qo‘yiladi — hech qanday bolalar kitobi bundan oshmaydi.
+    hard_cap = total_pages or 3000
+    if new_page > hard_cap:
         return jsonify({"ok": False, "reason": "too_big",
                          "message": f"Bu kitobda {total_pages} bet bor. "
-                                    f"Sahifa raqamini tekshirib qayta kiriting."})
+                                    f"Sahifa raqamini tekshirib qayta kiriting."
+                                    if total_pages else
+                                    "Bu son juda katta ko‘rinyapti. Sahifa raqamini tekshirib qayta kiriting."})
 
     earned_bilig = (new_page // 5) - (old_pages // 5)
     pages_added = new_page - old_pages
