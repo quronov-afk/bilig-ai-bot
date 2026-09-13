@@ -6898,6 +6898,11 @@ def admin_funnel():
     total_pages = one("SELECT COALESCE(SUM(pages_added),0) FROM Reading_Logs")
     total_photos = one("SELECT COUNT(*) FROM Page_Check_Log")
 
+    cursor.execute(
+        "SELECT log_id, child_id, book_id, pages_added, created_at FROM Reading_Logs "
+        "ORDER BY pages_added DESC LIMIT 3")
+    top_logs = cursor.fetchall()
+
     data = {
         "ota_onalar": total_parents,
         "bolalar": total_children,
@@ -6912,6 +6917,7 @@ def admin_funnel():
         "pullikka_otganlar": paid,
         "jami_oqilgan_sahifa": total_pages,
         "jami_yuborilgan_surat": total_photos,
+        "eng_katta_yozuvlar": top_logs,
     }
     return jsonify(data)
 
