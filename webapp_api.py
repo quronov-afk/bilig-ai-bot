@@ -2769,7 +2769,9 @@ def parent_children():
 @require_auth
 def parent_set_child_age(child_id):
     data = request.get_json(force=True) or {}
-    age = int(data.get("age", 10))
+    age = _int_arg(data, "age")
+    if age < 3 or age > 17:
+        return jsonify({"error": "Yoshni to‘g‘ri kiriting (3-17)"}), 400
     with db_lock:
         cursor.execute(
             "UPDATE Family_Link SET child_age = ? WHERE child_id = ? AND parent_id = ?",
@@ -3161,7 +3163,9 @@ def parent_add_book_text(plan_id):
     """Kitobni matn shaklida qo‘shish — AI nomi/muallifini avtomatik tozalaydi."""
     data = request.get_json(force=True) or {}
     raw_text = (data.get("text") or "").strip()
-    total_pages = int(data.get("total_pages") or 0)
+    total_pages = _int_arg(data, "total_pages")
+    if total_pages < 0 or total_pages > BOOK_PAGES_MAX:
+        return jsonify({"error": f"Bet sonini to‘g‘ri kiriting (eng ko‘pi {BOOK_PAGES_MAX})"}), 400
 
     # Katalogdan, tavsiyalardan yoki muqova tasdig‘idan kelgan kitobda nom va
     # muallif allaqachon aniq — bunda AI umuman chaqirilmaydi (tez va tekin).
@@ -3494,6 +3498,10 @@ def _enrich_passport(child_id, data):
 @require_auth
 def parent_child_passport(child_id):
     """'Oylik Kitobxon Pasporti' — kognitiv/nutqiy diagnostika."""
+    cursor.execute("SELECT 1 FROM Family_Link WHERE parent_id = ? AND child_id = ?",
+                   (g.user_id, child_id))
+    if not cursor.fetchone():
+        return jsonify({"error": "Bu farzand sizga tegishli emas"}), 403
     data = get_child_passport_data(child_id)
     if not data:
         return jsonify({"error": "Farzand topilmadi"}), 404
@@ -3505,7 +3513,13 @@ def parent_child_passport(child_id):
 def parent_manage_coins(child_id):
     """Ota-ona farzandiga qo‘lda Bilig (tanga) qo‘shishi/ayirishi."""
     data = request.get_json(force=True) or {}
-    delta = int(data.get("delta", 0))
+    cursor.execute("SELECT 1 FROM Family_Link WHERE parent_id = ? AND child_id = ?",
+                   (g.user_id, child_id))
+    if not cursor.fetchone():
+        return jsonify({"error": "Bu farzand sizga tegishli emas"}), 403
+    delta = _int_arg(data, "delta")
+    if not delta or abs(delta) > COINS_DELTA_MAX:
+        return jsonify({"error": f"Bir martada {COINS_DELTA_MAX} Biligdan ko‘p o‘zgartirib bo‘lmaydi"}), 400
     with db_lock:
         cursor.execute(
             "UPDATE Users SET balance_coins = MAX(0, balance_coins + ?) WHERE user_id = ?",
@@ -3572,10 +3586,10 @@ def parent_store_list():
 def parent_store_add():
     data = request.get_json(force=True) or {}
     name = (data.get("name") or "").strip()
-    price = int(data.get("price") or 0)
+    price = _int_arg(data, "price")
     emoji = (data.get("emoji") or "").strip()[:8]
     photo = (data.get("photo") or "").strip()[:64]
-    if not name or price <= 0:
+    if not name or price <= 0 or price > STORE_PRICE_MAX:
         return jsonify({"error": "Nomi va narxini to‘g‘ri kiriting"}), 400
     with db_lock:
         cursor.execute(
@@ -3596,10 +3610,10 @@ def parent_store_update(item_id):
     """
     data = request.get_json(force=True) or {}
     name = (data.get("name") or "").strip()
-    price = int(data.get("price") or 0)
+    price = _int_arg(data, "price")
     emoji = (data.get("emoji") or "").strip()[:8]
     photo = (data.get("photo") or "").strip()[:64]
-    if not name or price <= 0:
+    if not name or price <= 0 or price > STORE_PRICE_MAX:
         return jsonify({"error": "Nomi va narxini to‘g‘ri kiriting"}), 400
 
     cursor.execute("SELECT photo FROM Store_Items WHERE item_id = ? AND parent_id = ?",
@@ -3661,7 +3675,7 @@ def parent_set_rate():
     o‘qish «pul ishlash»ga aylanib qolmasligi uchun.
     """
     data = request.get_json(force=True) or {}
-    rate = int(data.get("rate", 0))
+    rate = max(0, min(COIN_RATE_MAX, _int_arg(data, "rate")))
     show_som = 1 if data.get("show_som") else 0
     with db_lock:
         cursor.execute("UPDATE Users SET coin_rate = ?, show_som = ? WHERE user_id = ?",
@@ -4384,15 +4398,38 @@ def child_submit_page_photo(book_id):
     return _apply_page_progress(book_id, child_id, new_page)
 
 
+# Kiritiladigan sonlar chegarasi (ega qarori, 2026-09-13). Chegarasiz
+# joylardan millionlab bet va Bilig yozilgan holatlar chiqqan edi.
+MANUAL_STEP_MAX = 99        # qo‘lda kiritishda bir martada — 2 xonali son
+DAILY_PAGES_MAX = 300       # bir bola bir kunda
+BOOK_PAGES_MAX = 999        # kitobning umumiy beti
+COINS_DELTA_MAX = 1000      # ota-ona bir martada qo‘shadigan/ayiradigan Bilig
+STORE_PRICE_MAX = 100000    # sovg‘a narxi (Bilig)
+COIN_RATE_MAX = 100000      # 1 Bilig necha so‘m
+
+
+def _int_arg(data, key, default=0):
+    try:
+        return int(data.get(key, default) or 0)
+    except (TypeError, ValueError):
+        return default
+
+
 @app.route("/api/child/book/<int:book_id>/page_manual", methods=["POST"])
 @require_auth
 def child_submit_page_manual(book_id):
     """AI orqali emas, sahifa raqamini qo‘lda kiritish (zaxira variant)."""
     data = request.get_json(force=True) or {}
-    new_page = int(data.get("page_number", 0))
+    new_page = _int_arg(data, "page_number")
     child_id = _require_child_actor(request)
     if new_page <= 0:
         return jsonify({"ok": False, "message": "Sahifa raqamini to‘g‘ri kiriting"}), 400
+    cursor.execute("SELECT pages_read FROM Plan_Books WHERE book_id = ?", (book_id,))
+    _r = cursor.fetchone()
+    if _r and new_page - (_r[0] or 0) > MANUAL_STEP_MAX:
+        return jsonify({"ok": False, "reason": "too_big",
+                        "message": f"Bir martada {MANUAL_STEP_MAX} betdan ko‘p belgilab bo‘lmaydi. "
+                                   f"O‘qigan joyingizni bosqichma-bosqich kiriting."})
     return _apply_page_progress(book_id, child_id, new_page)
 
 
@@ -4416,13 +4453,22 @@ def _apply_page_progress(book_id, child_id, new_page):
     # o‘tkazib yuborilardi — shu teshikdan millionlab sahifa kiritilgan
     # holat chiqdi (2026-09-13). Endi noma'lum bo‘lsa ham 3 xonali (999)
     # qat'iy chegara qo‘yiladi — hech qanday bolalar kitobi bundan oshmaydi.
-    hard_cap = total_pages or 999
+    known_total = total_pages if total_pages and total_pages <= BOOK_PAGES_MAX else 0
+    hard_cap = known_total or BOOK_PAGES_MAX
     if new_page > hard_cap:
         return jsonify({"ok": False, "reason": "too_big",
-                         "message": f"Bu kitobda {total_pages} bet bor. "
+                         "message": f"Bu kitobda {known_total} bet bor. "
                                     f"Sahifa raqamini tekshirib qayta kiriting."
-                                    if total_pages else
+                                    if known_total else
                                     "Bu son juda katta ko‘rinyapti. Sahifa raqamini tekshirib qayta kiriting."})
+
+    cursor.execute(
+        "SELECT COALESCE(SUM(pages_added), 0) FROM Reading_Logs "
+        "WHERE child_id = ? AND substr(created_at, 1, 10) = ?",
+        (child_id, datetime.now().strftime("%Y-%m-%d")))
+    if cursor.fetchone()[0] + (new_page - old_pages) > DAILY_PAGES_MAX:
+        return jsonify({"ok": False, "reason": "daily_limit",
+                         "message": "Bugun juda ko‘p bet belgilandi. Qolganini ertaga davom ettiring."})
 
     earned_bilig = (new_page // 5) - (old_pages // 5)
     pages_added = new_page - old_pages
@@ -6425,7 +6471,7 @@ def tasks_create(gid):
             "goal_value, prize, deadline, final_count, status, created_by, created_at) "
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'draft', ?, ?)",
             (gid, kind, title, (d.get("author") or "").strip()[:120],
-             int(d.get("total_pages") or 0),
+             max(0, min(BOOK_PAGES_MAX, _int_arg(d, "total_pages"))),
              "pages" if d.get("goal_kind") == "pages" else "books",
              int(d.get("goal_value") or 0), prize, deadline, final_count, g.user_id, now)
         )
