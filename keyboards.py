@@ -5,8 +5,13 @@ from aiogram.types import (ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMa
 # Ega qarori (2026-09-14): bot menyusi olib tashlandi, hamma ilovaga yo‘naltiriladi.
 # Eski menyu funksiyalari nomi saqlandi — ular chaqirilgan har joyda endi
 # pastdagi tugmalar olib tashlanadi.
-OPEN_APP_TEXT = ("Kitob qo‘shish, o‘qishni belgilash, Bilig va sovg‘alar — hammasi Bilig AI "
-                 "ilovasida. Ochish uchun pastdagi tugmani bosing.")
+OPEN_APP_TEXT = (
+    "📚 <b>Bilig AI — raqamli kutubxonachi!</b>\n\n"
+    "📖 Farzandingiz o‘qiyotgan (qog‘oz) kitobni kuzatib borishga yordam beradi\n"
+    "📸 O‘qib yetib kelgan sahifani suratga olish kifoya\n"
+    "🎁 Har bir sahifa uchun mukofot\n"
+    "🧠 Testlar, AI ustoz bilan kitob muhokamasi\n\n"
+    "Hoziroq boshlang!")
 
 
 def webapp_url():
@@ -16,7 +21,7 @@ def webapp_url():
 
 def get_open_app_keyboard():
     return InlineKeyboardMarkup(inline_keyboard=[[
-        InlineKeyboardButton(text="📖 Bilig AI ni ochish", web_app=WebAppInfo(url=webapp_url()))
+        InlineKeyboardButton(text="🚀 Boshlash", web_app=WebAppInfo(url=webapp_url()))
     ]])
 
 

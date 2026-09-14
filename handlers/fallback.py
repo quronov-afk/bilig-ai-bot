@@ -12,4 +12,4 @@ router = Router()
 
 @router.message(StateFilter(None), F.text, ~F.text.startswith("/"))
 async def open_app_hint(message: types.Message):
-    await message.answer(OPEN_APP_TEXT, reply_markup=get_open_app_keyboard())
+    await message.answer(OPEN_APP_TEXT, parse_mode="HTML", reply_markup=get_open_app_keyboard())

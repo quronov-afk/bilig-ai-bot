@@ -17,7 +17,7 @@ def _now():
 async def send_open_app(message: types.Message, greeting: str = "Assalomu alaykum! Bilig AI ga xush kelibsiz."):
     """Pastdagi eski menyuni olib tashlaydi va ilovani ochish tugmasini beradi."""
     await message.answer(greeting, reply_markup=types.ReplyKeyboardRemove())
-    await message.answer(OPEN_APP_TEXT, reply_markup=get_open_app_keyboard())
+    await message.answer(OPEN_APP_TEXT, parse_mode="HTML", reply_markup=get_open_app_keyboard())
 
 router = Router()
 
