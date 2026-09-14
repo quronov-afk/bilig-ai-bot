@@ -14,9 +14,8 @@ def _now():
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 
-async def send_open_app(message: types.Message, greeting: str = "Assalomu alaykum! Bilig AI ga xush kelibsiz."):
-    """Pastdagi eski menyuni olib tashlaydi va ilovani ochish tugmasini beradi."""
-    await message.answer(greeting, reply_markup=types.ReplyKeyboardRemove())
+async def send_open_app(message: types.Message):
+    """Ilovani ochish tugmasi bilan bitta xabar (alohida salomlashuv yo‘q)."""
     await message.answer(OPEN_APP_TEXT, parse_mode="HTML", reply_markup=get_open_app_keyboard())
 
 router = Router()
