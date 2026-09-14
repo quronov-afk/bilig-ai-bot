@@ -3043,6 +3043,17 @@ async function loadPlusState() {
   renderHeaderNav();   // tojdagi kun taymeri yangilansin
 }
 
+// To‘lov sahifasi tashqi brauzerda ochiladi: ilova ichida ochilsa,
+// qaytishda Telegram ma'lumoti yo‘qolib, ilova ochilmay qoladi.
+function openPayLink(url) {
+  if (tg && tg.openLink) tg.openLink(url); else window.open(url, "_blank");
+}
+
+// To‘lovdan qaytganda obuna holati darrov yangilansin
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible" && State.role === "parent") loadPlusState();
+});
+
 /* Sinovni boshlash — bitta bosishda (ega qarori, 2026-09-13).
    To‘lov tizimi ulanguncha karta ham, to‘lov ham so‘ralmaydi. */
 async function plusStartTrial() {
@@ -3251,7 +3262,7 @@ async function plusBindCard() {
   // bog‘lash havolasini qaytaradi va foydalanuvchi o‘sha yerga o‘tadi.
   try {
     const r = await api("/api/plus/subscribe", { method: "POST", body: { period: "month", trial: true } });
-    if (r.url) { location.href = r.url; return; }
+    if (r.url) { openPayLink(r.url); return; }
     openModal(PLUS_NAME,
       '<div class="plus-lock">' + icon("crown", 34, 1.7) + '</div>' +
       '<p class="plus-lock-t">To‘lov tez orada ochiladi</p>' +
@@ -3266,6 +3277,7 @@ async function plusBindCard() {
 async function plusBuy(period) {
   try {
     const r = await api("/api/plus/subscribe", { method: "POST", body: { period: period } });
+    if (r.ready && r.url) { openPayLink(r.url); return; }
     if (!r.ready) {
       // To‘lov tizimi hali ulanmagan. Foydalanuvchiga texnik sabab
       // aytilmaydi — unga faqat nima bo‘lishi kerakligi aytiladi.

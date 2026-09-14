@@ -25,6 +25,7 @@ import threading
 import traceback
 import uuid
 import random
+import base64
 import urllib.parse
 from datetime import datetime, date, timedelta
 
@@ -6938,11 +6939,6 @@ def check_trials():
     Ikki xabar: 3 kun qolganda va tugagan kuni. Har biri BIR MARTA
     yuboriladi (`warned` ustunida qaysi xabar ketgani yozib boriladi).
     """
-    if not plus_payment_ready():
-        # To‘lov hali ulanmagan: «pul yechiladi» degan xabar yolg‘on bo‘lardi.
-        # Xabar yuborilmaydi, muddati o‘tgan sinov esa uzaytiriladi.
-        _extend_lapsed_trials()
-        return 0
     try:
         cursor.execute(
             "SELECT parent_id, plan, expires_at, COALESCE(warned, ''), "
@@ -6953,6 +6949,11 @@ def check_trials():
     now = datetime.now()
     sent = 0
     for parent_id, plan, expires, warned, cancelled in rows:
+        if not plus_payment_ready(parent_id):
+            # Bu oilaga to‘lov hali ochilmagan (sinov ro‘yxatida emas) —
+            # «pul yechiladi» xabari yolg‘on bo‘lardi, sinov jimgina uzayadi.
+            _extend_lapsed_trials(parent_id)
+            continue
         if not expires:
             continue
         try:
@@ -7375,10 +7376,75 @@ def plus_enforced():
     return os.getenv("PLUS_ENFORCE", "1") != "0"
 
 
-def plus_payment_ready():
+def _paylov_test_parents():
+    """PAYLOV_TEST_USERS — vergul bilan ajratilgan oila (parent_id) ro‘yxati.
+    Bo‘sh bo‘lsa cheklov yo‘q (hammaga ochiq)."""
+    raw = os.getenv("PAYLOV_TEST_USERS", "")
+    out = set()
+    for part in raw.split(","):
+        part = part.strip()
+        if part:
+            try:
+                out.add(int(part))
+            except ValueError:
+                pass
+    return out
+
+
+def plus_payment_ready(parent_id=None):
     """To‘lov tizimi (paylov.uz) ulanganmi? Ulanmaguncha sinov hech kimni
-    qulflamaydi. Ulangach Render'da PLUS_PAYMENT_READY=1 qo‘yiladi."""
-    return os.getenv("PLUS_PAYMENT_READY", "0") == "1"
+    qulflamaydi. Ulangach Render'da PLUS_PAYMENT_READY=1 qo‘yiladi.
+
+    Sinov bosqichi (2026-09-14, ega talabi): `PAYLOV_TEST_USERS`
+    to‘ldirilgan bo‘lsa, haqiqiy to‘lov FAQAT shu ro‘yxatdagi oilalarga
+    ochiladi — qolganlar avvalgidek «tez orada» oynasini ko‘radi.
+    Ro‘yxat bo‘sh bo‘lsa — hammaga ochiq (to‘liq ishga tushirilgan holat).
+    `parent_id=None` — shaxsdan qat'i nazar, faqat umumiy kalit (masalan
+    boshqaruv panelida «yoqilganmi» degan savolga javob berish uchun).
+    """
+    if os.getenv("PLUS_PAYMENT_READY", "0") != "1":
+        return False
+    if parent_id is None:
+        return True
+    testers = _paylov_test_parents()
+    return not testers or parent_id in testers
+
+
+# ==========================================================
+# PAYLOV.UZ — TO‘LOV HAVOLASI (Checkout API)
+# ==========================================================
+# Ega qarori (2026-09-14): karta raqami BIZNING serverga tegmaydi —
+# foydalanuvchi paylov'ning o‘z sahifasiga o‘tadi, u yerda to‘laydi,
+# keyin ikki narsa sodir bo‘ladi: (1) brauzer return_url'ga qaytadi,
+# (2) paylov'ning o‘z serveri BIZNING callback manzilimizga JSON-RPC
+# xabar yuboradi («transaction.check», keyin «transaction.perform») —
+# obuna aynan shu ikkinchisi kelganda YOQILADI, return_url shunchaki
+# ko‘rinish uchun.
+#
+# Kalitlar Render muhit sozlamalarida turadi (kodda emas):
+#   PAYLOV_MERCHANT_ID, PAYLOV_TOKEN — ega xatdan olib qo‘shadi.
+#
+# order_id sifatida oilaning parent_id'si ishlatiladi — alohida jadval
+# kerak emas, Subscriptions'ning o‘zida (period/price) kutib turadi.
+PAYLOV_CHECKOUT_BASE = "https://my.paylov.uz/checkout/create/"
+
+
+def _paylov_creds():
+    return os.getenv("PAYLOV_MERCHANT_ID", ""), os.getenv("PAYLOV_TOKEN", "")
+
+
+def _paylov_checkout_url(parent_id, amount, return_url):
+    merchant_id, _ = _paylov_creds()
+    params = urllib.parse.urlencode({
+        "merchant_id": merchant_id,
+        "amount": amount,
+        "currency_id": 860,
+        "return_url": return_url,
+        "amount_in_tiyin": "False",
+        "account.order_id": parent_id,
+    })
+    token = base64.b64encode(params.encode()).decode()
+    return PAYLOV_CHECKOUT_BASE + token
 
 
 def _extend_lapsed_trials(parent_id=None):
@@ -7388,7 +7454,7 @@ def _extend_lapsed_trials(parent_id=None):
     taassurot. Shuning uchun sinov jimgina yana bir haftaga cho‘ziladi.
     Bekor qilingan sinov (plan='free') bunga kirmaydi.
     """
-    if plus_payment_ready():
+    if plus_payment_ready(parent_id):
         return 0
     now = datetime.now()
     sql = ("UPDATE Subscriptions SET expires_at = ?, warned = '' "
@@ -7441,7 +7507,7 @@ def plus_plan(parent_id):
         try:
             if datetime.strptime(row[1][:19], "%Y-%m-%d %H:%M:%S") < datetime.now():
                 # To‘lov ulanmaguncha sinov tugamaydi (ega qarori, 2026-09-13).
-                if row[0] == "trial" and not plus_payment_ready():
+                if row[0] == "trial" and not plus_payment_ready(parent_id):
                     return "trial"
                 return "free"
         except Exception:
@@ -7600,7 +7666,7 @@ def plus_status():
     return jsonify({
         "plan": plan,
         "enforced": plus_enforced(),
-        "payment_ready": plus_payment_ready(),
+        "payment_ready": plus_payment_ready(parent_id),
         "days_left": days_left,
         "period": (row[1] if row else None),
         "trial_used": bool(row[2]) if row else False,
@@ -7631,7 +7697,111 @@ def plus_subscribe():
     price = plus_price_now(parent_id, period)
     ai_service.log_line("[plus] obuna niyati: oila=%s muddat=%s narx=%s"
                         % (parent_id, period, price))
-    return jsonify({"ok": True, "ready": False, "period": period, "price": price})
+    if not plus_payment_ready(parent_id):
+        return jsonify({"ok": True, "ready": False, "period": period, "price": price})
+
+    # Tanlangan muddat/narx saqlanadi — callback kelganda shundan o‘qiladi.
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with db_lock:
+        cursor.execute(
+            "INSERT INTO Subscriptions (parent_id, plan, period, price, updated_at) "
+            "VALUES (?, COALESCE((SELECT plan FROM Subscriptions WHERE parent_id = ?), 'free'), ?, ?, ?) "
+            "ON CONFLICT(parent_id) DO UPDATE SET period = excluded.period, "
+            "price = excluded.price, updated_at = excluded.updated_at",
+            (parent_id, parent_id, period, price, now)
+        )
+        conn.commit()
+    # To‘lov sahifasi tashqi brauzerda ochiladi; tugagach foydalanuvchi
+    # botga qaytadi (ilova manziliga emas — u Telegramsiz ochilmaydi).
+    return_url = os.getenv("PAYLOV_RETURN_URL") or "https://t.me/bilig_ai_bot"
+    url = _paylov_checkout_url(parent_id, price, return_url)
+    return jsonify({"ok": True, "ready": True, "period": period, "price": price, "url": url})
+
+
+@app.route("/api/plus/paylov/callback", methods=["POST"])
+def plus_paylov_callback():
+    """Paylov'ning o‘z serveridan keladigan xabar — foydalanuvchidan emas.
+
+    JSON-RPC: avval «transaction.check» (to‘lovdan OLDIN so‘raladi —
+    bunday buyurtma bormi), keyin «transaction.perform» (to‘lov
+    TASDIQLANGANDA — shu yerda obuna yoqiladi). Xavfsizlik: faqat
+    PAYLOV_TOKEN'ni biladigan tomon (Basic Auth) qabul qilinadi.
+    """
+    _, token = _paylov_creds()
+    auth = request.authorization
+    if not token or not auth or not hmac.compare_digest(auth.password or "", token):
+        return jsonify({"jsonrpc": "2.0", "id": None,
+                        "error": {"code": -32504, "message": "Ruxsat yo‘q"}}), 401
+
+    body = request.get_json(force=True, silent=True) or {}
+    req_id = body.get("id")
+    method = body.get("method")
+    params = body.get("params") or {}
+    account = params.get("account") or {}
+    try:
+        parent_id = int(account.get("order_id"))
+    except (TypeError, ValueError):
+        parent_id = None
+
+    cursor.execute("SELECT period, price, plan, expires_at, provider_id FROM Subscriptions "
+                   "WHERE parent_id = ?", (parent_id,))
+    row = cursor.fetchone()
+
+    def err(code, message):
+        return jsonify({"jsonrpc": "2.0", "id": req_id,
+                        "error": {"code": code, "message": message}})
+
+    if not row or not row[1]:
+        return err(-31050, "Buyurtma topilmadi")
+
+    period, price = row[0] or "month", row[1]
+    # Summa bizdagi narxga teng bo‘lmasa — to‘lov qabul qilinmaydi.
+    try:
+        amount = int(float(params.get("amount")))
+    except (TypeError, ValueError):
+        amount = None
+    if amount is not None and amount != price:
+        return err(-31001, "Summa noto‘g‘ri")
+
+    if method == "transaction.check":
+        return jsonify({"jsonrpc": "2.0", "id": req_id,
+                        "result": {"status": "0", "statusText": "OK"}})
+
+    if method == "transaction.perform":
+        now = datetime.now()
+        transaction_id = str(params.get("transaction_id") or "")
+        # Paylov bir xabarni qayta yuborsa, obuna ikkinchi marta qo‘shilmaydi.
+        if transaction_id and row[4] == transaction_id:
+            return jsonify({"jsonrpc": "2.0", "id": req_id,
+                            "result": {"transaction": transaction_id, "state": 1,
+                                       "perform_time": int(now.timestamp() * 1000)}})
+        delta = timedelta(days=365) if period == "year" else timedelta(days=31)
+        # Obuna hali ochiq bo‘lsa, yangi muddat qolgan kunlar ustiga qo‘shiladi.
+        start = now
+        if row[2] == "plus" and row[3]:
+            try:
+                start = max(now, datetime.strptime(row[3][:19], "%Y-%m-%d %H:%M:%S"))
+            except ValueError:
+                pass
+        with db_lock:
+            cursor.execute(
+                "UPDATE Subscriptions SET plan = 'plus', period = ?, started_at = ?, "
+                "expires_at = ?, price = ?, months_paid = months_paid + ?, "
+                "provider = 'paylov', provider_id = ?, cancelled = 0, warned = '', "
+                "updated_at = ? WHERE parent_id = ?",
+                (period, now.strftime("%Y-%m-%d %H:%M:%S"),
+                 (start + delta).strftime("%Y-%m-%d %H:%M:%S"), price,
+                 12 if period == "year" else 1, transaction_id,
+                 now.strftime("%Y-%m-%d %H:%M:%S"), parent_id)
+            )
+            conn.commit()
+        ai_service.log_line("[plus] to‘lov qabul qilindi: oila=%s muddat=%s narx=%s tranzaksiya=%s"
+                            % (parent_id, period, price, transaction_id))
+        return jsonify({"jsonrpc": "2.0", "id": req_id,
+                        "result": {"transaction": transaction_id, "state": 1,
+                                   "perform_time": int(now.timestamp() * 1000)}})
+
+    return err(-32601, "Noma'lum metod")
 
 
 @app.route("/api/plus/cancel", methods=["POST"])
