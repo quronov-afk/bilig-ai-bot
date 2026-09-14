@@ -3049,6 +3049,17 @@ function openPayLink(url) {
   if (tg && tg.openLink) tg.openLink(url); else window.open(url, "_blank");
 }
 
+// Faqat egaga ko‘rinadi: Render sozlamalaridan qaysi biri topilmagani
+function payCheckNote() {
+  const c = State.plus && State.plus.pay_check;
+  if (!c) return "";
+  function yn(v) { return v ? "bor" : "YO‘Q"; }
+  return '<p class="g-note" style="text-align:left;margin-top:10px">Tekshiruv (faqat sizga): ' +
+    'PLUS_PAYMENT_READY — ' + yn(c.switch) + '; PAYLOV_MERCHANT_ID — ' + yn(c.merchant) +
+    '; PAYLOV_TOKEN — ' + yn(c.token) + '; PAYLOV_TEST_USERS — ' + c.testers + ' ta raqam, ' +
+    'siz ro‘yxatda — ' + (c.listed ? "ha" : "YO‘Q") + '. Sizning raqamingiz: ' + c.your_id + '</p>';
+}
+
 // To‘lovdan qaytganda obuna holati darrov yangilansin
 document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "visible" && State.role === "parent") loadPlusState();
@@ -3268,7 +3279,7 @@ async function plusBindCard() {
       '<p class="plus-lock-t">To‘lov tez orada ochiladi</p>' +
       '<p class="plus-lock-d">Bilig plus hozir tayyorlanmoqda. Ochilishi bilan ' +
       'sizga birinchilardan bo‘lib xabar beramiz — va dastlabki obunachilar ' +
-      'uchun narx ' + money(r.price) + ' bo‘lib qoladi.</p>' +
+      'uchun narx ' + money(r.price) + ' bo‘lib qoladi.</p>' + payCheckNote() +
       '<button class="btn btn-primary btn-block" data-action="close-modal">Tushunarli</button>',
       "modal-plus");
   } catch (e) { apiError(e); }
@@ -3286,7 +3297,7 @@ async function plusBuy(period) {
         '<p class="plus-lock-t">To‘lov tez orada ochiladi</p>' +
         '<p class="plus-lock-d">Bilig plus hozir tayyorlanmoqda. Ochilishi bilan ' +
         'sizga birinchilardan bo‘lib xabar beramiz — va dastlabki obunachilar ' +
-        'uchun narx ' + money(r.price) + ' bo‘lib qoladi.</p>' +
+        'uchun narx ' + money(r.price) + ' bo‘lib qoladi.</p>' + payCheckNote() +
         '<button class="btn btn-primary btn-block" data-action="close-modal">Tushunarli</button>',
         "modal-plus");
     }

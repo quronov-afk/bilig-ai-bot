@@ -7379,16 +7379,12 @@ def plus_enforced():
 def _paylov_test_parents():
     """PAYLOV_TEST_USERS — vergul bilan ajratilgan oila (parent_id) ro‘yxati.
     Bo‘sh bo‘lsa cheklov yo‘q (hammaga ochiq)."""
-    raw = os.getenv("PAYLOV_TEST_USERS", "")
-    out = set()
-    for part in raw.split(","):
-        part = part.strip()
-        if part:
-            try:
-                out.add(int(part))
-            except ValueError:
-                pass
-    return out
+    # Faqat raqamlar olinadi — «Id: 123», bo‘sh joy yoki nuqta-vergul ham buzmasin
+    return {int(x) for x in re.findall(r"-?\d+", os.getenv("PAYLOV_TEST_USERS", ""))}
+
+
+def _payment_switch_on():
+    return os.getenv("PLUS_PAYMENT_READY", "").strip().lower() in ("1", "true", "yes", "ha")
 
 
 def plus_payment_ready(parent_id=None):
@@ -7402,7 +7398,7 @@ def plus_payment_ready(parent_id=None):
     `parent_id=None` — shaxsdan qat'i nazar, faqat umumiy kalit (masalan
     boshqaruv panelida «yoqilganmi» degan savolga javob berish uchun).
     """
-    if os.getenv("PLUS_PAYMENT_READY", "0") != "1":
+    if not _payment_switch_on():
         return False
     if parent_id is None:
         return True
@@ -7430,7 +7426,7 @@ PAYLOV_CHECKOUT_BASE = "https://my.paylov.uz/checkout/create/"
 
 
 def _paylov_creds():
-    return os.getenv("PAYLOV_MERCHANT_ID", ""), os.getenv("PAYLOV_TOKEN", "")
+    return os.getenv("PAYLOV_MERCHANT_ID", "").strip(), os.getenv("PAYLOV_TOKEN", "").strip()
 
 
 def _paylov_checkout_url(parent_id, amount, return_url):
@@ -7667,6 +7663,14 @@ def plus_status():
         "plan": plan,
         "enforced": plus_enforced(),
         "payment_ready": plus_payment_ready(parent_id),
+        # Faqat egaga: to‘lov sozlamalari topildimi (qiymatlarning o‘zi emas)
+        "pay_check": ({"switch": _payment_switch_on(),
+                       "merchant": bool(_paylov_creds()[0]),
+                       "token": bool(_paylov_creds()[1]),
+                       "testers": len(_paylov_test_parents()),
+                       "listed": parent_id in _paylov_test_parents(),
+                       "your_id": parent_id}
+                      if OWNER_ID and g.user_id == OWNER_ID else None),
         "days_left": days_left,
         "period": (row[1] if row else None),
         "trial_used": bool(row[2]) if row else False,
