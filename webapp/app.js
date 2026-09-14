@@ -4941,6 +4941,10 @@ async function renderGroupsView(content) {
     out += '<button class="btn btn-primary" data-action="group-create">Guruh ochish</button>';
   }
   out += '<button class="btn btn-secondary" data-action="group-join">Kod bilan qo‘shilish</button></div>';
+
+  out += '<div class="g-hint">Katta oilalar va maktablar uchun qulay: bir nechta ' +
+    'o‘quvchini bitta guruhga to‘plab, kitobxonlik marafonini shu yerdan tashkil qiling.</div>';
+
   content.innerHTML = out;
 }
 
