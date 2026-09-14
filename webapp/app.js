@@ -1134,9 +1134,10 @@ const TABS_PARENT = [
   { id: "home", label: "Bosh sahifa", icon: "home" },
   { id: "plans", label: "Kitobxona", icon: "book-open" },
   { id: "store", label: "Do‘kon", icon: "cart" },
-  { id: "bolaxona", label: "Bolaxona", icon: "users" },
+  { id: "groups", label: "Guruhlar", icon: "users" },
+  { id: "bolaxona", label: "Bolaxona", icon: "user" },
 ];
-// Bolada to‘rtinchi tab yo‘q: natija, nishonlar, guruhlar va reyting
+// Bolada Bolaxona tabi yo‘q: natija va reyting
 // sarlavhadagi kubok belgisi ichiga yig‘ildi. Sabab — uyda bitta telefon
 // bo‘lishi mumkin, ya'ni ota-ona ham shu bo‘limga kira olishi kerak,
 // uning pastki qatorida esa «Bolaxona» turadi.
@@ -1144,12 +1145,14 @@ const TABS_CHILD = [
   { id: "home", label: "Bosh sahifa", icon: "home" },
   { id: "plans", label: "Kitobxona", icon: "book-open" },
   { id: "store", label: "Do‘kon", icon: "cart" },
+  { id: "groups", label: "Guruhlar", icon: "users" },
 ];
 const TABS_PARENT_ACTING = [
   { id: "home", label: "Bosh sahifa", icon: "home" },
   { id: "plans", label: "Kitobxona", icon: "book-open" },
   { id: "store", label: "Do‘kon", icon: "cart" },
-  { id: "ota-ona", label: "Ota-ona", icon: "users", action: "exit-bolaxona" },
+  { id: "groups", label: "Guruhlar", icon: "users" },
+  { id: "ota-ona", label: "Ota-ona", icon: "user", action: "exit-bolaxona" },
 ];
 
 async function setupTabsForRole() {
@@ -1179,17 +1182,12 @@ async function setupTabsForRole() {
   await refreshHeader();
 }
 
-// Sarlavhada bitta belgi — kubok. Ichida to‘rtta ko‘rinish bor:
-// natija, nishonlar, guruhlar va reyting. Ilgari bu yerda uchta alohida
-// tugma turardi va uzun ism ularga sig‘masdi.
-// Global reyting olib tashlandi (2026-08-31, ega qarori): butun ilova
-// bo‘yicha ro‘yxatda o‘rtacha bola hech qachon ko‘rinmasdi va bu unga
-// rag‘bat bermasdi; qolaversa begona bolalarning ismi ochiq turardi.
-// Uning o‘rnini guruh reytingi egalladi — oila ham o‘ziga guruh ochadi.
+// Sarlavhada bitta belgi — kubok. Ichida ikkita ko‘rinish bor:
+// natija va nishonlar. Guruhlar 2026-09-14 da pastki menyuga ko‘chirildi
+// (ega: kubok ichida yashirin qolib, topilmay qolayotgan edi).
 const RATING_VIEWS = [
   { mode: "passport", icon: "chart", label: "Natijam" },
   { mode: "badges", icon: "award", label: "Nishonlar" },
-  { mode: "groups", icon: "users", label: "Guruhlar" },
 ];
 
 function renderHeaderNav() {
@@ -1248,10 +1246,13 @@ function switchTab(tabId) {
   // Hamyon do‘kon ichidagi ko‘rinish. Pastdagi tab qayta bosilsa,
   // foydalanuvchi sovg‘alar javonini kutadi — shuning uchun tiklanadi.
   if (tabId === "store") State.storeView = "shop";
+  // Guruhlar tabi bosilganda doim ro‘yxat boshiga qaytadi — Do‘kon
+  // tabidagi kabi (yuqoridagi qator), ochiq guruh ichida qolib ketmasin.
+  if (tabId === "groups") { State.ratingMode = "groups"; State.groupId = null; State.groupFound = null; State.calShift = 0; }
   document.querySelectorAll(".tab-btn").forEach(function (b) { b.classList.toggle("active", b.dataset.tab === tabId); });
   const renderers = isChildView()
-    ? { home: renderChildHome, plans: renderChildPlans, store: renderStoreTab, rating: renderRatingTab }
-    : { home: renderParentHome, plans: renderParentPlans, store: renderStoreTab, bolaxona: renderBolaxonaTab };
+    ? { home: renderChildHome, plans: renderChildPlans, store: renderStoreTab, rating: renderRatingTab, groups: renderRatingTab }
+    : { home: renderParentHome, plans: renderParentPlans, store: renderStoreTab, bolaxona: renderBolaxonaTab, groups: renderRatingTab };
   const fn = renderers[tabId];
   const main = document.getElementById("app-main");
   main.innerHTML = skeleton(SK_KIND[tabId] || "list");
@@ -4809,9 +4810,11 @@ async function renderRatingTab() {
   // bo‘lim chiplari) yashiriladi — ekranda tugma haddan ziyod ko‘payib
   // ketardi. Chiqilganda ular o‘z-o‘zidan qaytadi.
   const inGroup = mode === "groups" && !!State.groupId;
-  main.innerHTML =
-    (inGroup ? "" : childSwitcherHtml() + ratingChipsHtml(mode)) +
-    '<div id="rating-content">' + skeleton("rows") + '</div>';
+  // Guruhlar endi pastki tab — bu yerda Natijam/Nishonlar chiplari
+  // ko‘rinmaydi, ikki bo‘lim aralashib ketmasin.
+  let top = "";
+  if (!inGroup) top = mode === "groups" ? childSwitcherHtml() : childSwitcherHtml() + ratingChipsHtml(mode);
+  main.innerHTML = top + '<div id="rating-content">' + skeleton("rows") + '</div>';
   renderHeaderNav();
   const content = document.getElementById("rating-content");
 
