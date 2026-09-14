@@ -6,6 +6,18 @@ from config import WELCOME_TEXT
 from database import conn, cursor
 from keyboards import get_parent_keyboard, get_child_keyboard, get_bolaxona_keyboard, get_back_reply_keyboard, get_add_book_methods_keyboard
 from states import Registration, PlanCreation
+from datetime import datetime
+from keyboards import OPEN_APP_TEXT, get_open_app_keyboard
+
+
+def _now():
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+
+async def send_open_app(message: types.Message, greeting: str = "Assalomu alaykum! Bilig AI ga xush kelibsiz."):
+    """Pastdagi eski menyuni olib tashlaydi va ilovani ochish tugmasini beradi."""
+    await message.answer(greeting, reply_markup=types.ReplyKeyboardRemove())
+    await message.answer(OPEN_APP_TEXT, reply_markup=get_open_app_keyboard())
 
 router = Router()
 
@@ -67,7 +79,7 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
                 cursor.execute("UPDATE Invite_Links SET is_used = 1, used_by = ? WHERE code = ?", (user_id, code))
 
                 if code.startswith("prnt_"):
-                    cursor.execute("INSERT OR REPLACE INTO Users (user_id, role, name, is_approved) VALUES (?, 'parent', ?, 1)", (user_id, message.from_user.full_name))
+                    cursor.execute("INSERT OR REPLACE INTO Users (user_id, role, name, is_approved, created_at) VALUES (?, 'parent', ?, 1, ?)", (user_id, message.from_user.full_name, _now()))
                     conn.commit()
                     await message.answer(
                         f"🎉 <b>Xush kelibsiz!</b>\n\nSiz <b>Ota-ona</b> sifatida muvaffaqiyatli ro‘yxatdan o‘tdingiz!\n"
@@ -78,7 +90,7 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
                     )
                     return
                 elif code.startswith("chld_"):
-                    cursor.execute("INSERT OR REPLACE INTO Users (user_id, role, name, is_approved) VALUES (?, 'child', ?, 1)", (user_id, message.from_user.full_name))
+                    cursor.execute("INSERT OR REPLACE INTO Users (user_id, role, name, is_approved, created_at) VALUES (?, 'child', ?, 1, ?)", (user_id, message.from_user.full_name, _now()))
                     conn.commit()
                     await message.answer(
                         "🦸‍♂️ <b>Xush kelibsiz, Qahramon!</b>\n\n"
@@ -90,7 +102,7 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
                     await state.set_state(Registration.waiting_for_parent_code)
                     return
                 else:
-                    cursor.execute("INSERT OR REPLACE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)", (user_id, message.from_user.full_name))
+                    cursor.execute("INSERT OR REPLACE INTO Users (user_id, name, is_approved, created_at) VALUES (?, ?, 1, ?)", (user_id, message.from_user.full_name, _now()))
                     conn.commit()
                     kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O‘quvchiman")]]
                     await message.answer(f"✅ <b>Taklifnoma qabul qilindi!</b>\n\n{WELCOME_TEXT}", parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
@@ -104,16 +116,8 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
     user = cursor.fetchone()
 
     if user and user[1] == 1:
-        if user[0] == 'parent':
-            await message.answer("<b>Asosiy menyuga xush kelibsiz!</b> 👨‍👩‍👦", parse_mode="HTML", reply_markup=get_parent_keyboard())
-            return
-        elif user[0] == 'child':
-            await message.answer("<b>Asosiy menyuga xush kelibsiz, Qahramon!</b> 🦸‍♂️🦸‍♀️", parse_mode="HTML", reply_markup=get_child_keyboard())
-            return
-        else:
-            kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O‘quvchiman")]]
-            await message.answer(WELCOME_TEXT, parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
-            return
+        await send_open_app(message)
+        return
 
     # 3. Yangi foydalanuvchi. Ilova 2026-09-13 dan OMMAGA OCHIQ (ega qarori):
     # taklif havolasi shart emas — ro‘yxatga olinadi va rol so‘raladi.
@@ -121,11 +125,12 @@ async def start_handler(message: types.Message, command: CommandObject, state: F
     if user and user[1] == 0:
         await message.answer(CLOSED_BETA_TEXT, parse_mode="HTML", reply_markup=types.ReplyKeyboardRemove())
         return
-    cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)",
-                   (user_id, message.from_user.full_name))
+    # Kirgan sana yoziladi — ilgari yozilmasdi va kunlik statistika
+    # yangi foydalanuvchilarni ko‘rmay qolardi (2026-09-14).
+    cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved, created_at) VALUES (?, ?, 1, ?)",
+                   (user_id, message.from_user.full_name, _now()))
     conn.commit()
-    kb = [[KeyboardButton(text="👨‍👩‍👦 Men Ota-onaman")], [KeyboardButton(text="👦👧 Men O‘quvchiman")]]
-    await message.answer(WELCOME_TEXT, parse_mode="HTML", reply_markup=ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True))
+    await send_open_app(message)
 
 @router.message(F.text == "👨‍👩‍👦 Men Ota-onaman")
 async def parent_handler(message: types.Message):
@@ -133,8 +138,8 @@ async def parent_handler(message: types.Message):
     u = cursor.fetchone()
     if not u:
         # Ommaga ochiq: /start bosmasdan to‘g‘ri tugmani bosgan yangi odam ham kiradi
-        cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)",
-                       (message.from_user.id, message.from_user.full_name))
+        cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved, created_at) VALUES (?, ?, 1, ?)",
+                       (message.from_user.id, message.from_user.full_name, _now()))
         conn.commit()
         u = (1,)
     if u[0] != 1:
@@ -151,8 +156,8 @@ async def child_handler(message: types.Message, state: FSMContext):
     u = cursor.fetchone()
     if not u:
         # Ommaga ochiq: /start bosmasdan to‘g‘ri tugmani bosgan yangi odam ham kiradi
-        cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved) VALUES (?, ?, 1)",
-                       (message.from_user.id, message.from_user.full_name))
+        cursor.execute("INSERT OR IGNORE INTO Users (user_id, name, is_approved, created_at) VALUES (?, ?, 1, ?)",
+                       (message.from_user.id, message.from_user.full_name, _now()))
         conn.commit()
         u = (1,)
     if u[0] != 1:

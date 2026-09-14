@@ -4,6 +4,7 @@ from .admin import router as admin_router
 from .feedback import router as feedback_router
 from .parent import router as parent_router
 from .child import router as child_router
+from .fallback import router as fallback_router
 
 main_router = Router()
 main_router.include_routers(
@@ -11,5 +12,6 @@ main_router.include_routers(
     admin_router,
     feedback_router,
     parent_router,
-    child_router
+    child_router,
+    fallback_router
 )

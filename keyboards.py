@@ -1,29 +1,33 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+import os
+from aiogram.types import (ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup,
+                           InlineKeyboardButton, ReplyKeyboardRemove, WebAppInfo)
+
+# Ega qarori (2026-09-14): bot menyusi olib tashlandi, hamma ilovaga yo‘naltiriladi.
+# Eski menyu funksiyalari nomi saqlandi — ular chaqirilgan har joyda endi
+# pastdagi tugmalar olib tashlanadi.
+OPEN_APP_TEXT = ("Kitob qo‘shish, o‘qishni belgilash, Bilig va sovg‘alar — hammasi Bilig AI "
+                 "ilovasida. Ochish uchun pastdagi tugmani bosing.")
+
+
+def webapp_url():
+    return (os.getenv("WEBAPP_URL") or os.getenv("RENDER_EXTERNAL_URL")
+            or "https://bilig-ai-bot.onrender.com").rstrip("/") + "/"
+
+
+def get_open_app_keyboard():
+    return InlineKeyboardMarkup(inline_keyboard=[[
+        InlineKeyboardButton(text="📖 Bilig AI ni ochish", web_app=WebAppInfo(url=webapp_url()))
+    ]])
+
 
 def get_parent_keyboard():
-    kb = [
-        [KeyboardButton(text="➕ Kitob qo‘shish"), KeyboardButton(text="📚 Faol rejalar")],
-        [KeyboardButton(text="📊 Farzandim natijalari"), KeyboardButton(text="🛒 Do‘kon")],
-        [KeyboardButton(text="🧒 Bolaxona"), KeyboardButton(text="📞 Qayta aloqa")]
-    ]
-    return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
+    return ReplyKeyboardRemove()
 
 def get_child_keyboard():
-    kb = [
-        [KeyboardButton(text="📖 Kitob o‘qish")],
-        [KeyboardButton(text="🎁 Sovrinlarim"), KeyboardButton(text="🛒 Do‘kon")],
-        [KeyboardButton(text="🏆 Reyting")]
-    ]
-    return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
+    return ReplyKeyboardRemove()
 
 def get_bolaxona_keyboard():
-    kb = [
-        [KeyboardButton(text="📖 Kitob o‘qish")],
-        [KeyboardButton(text="🎁 Sovrinlarim"), KeyboardButton(text="🛒 Do‘kon")],
-        [KeyboardButton(text="🏆 Reyting")],
-        [KeyboardButton(text="👨‍👩‍👦 Ota-ona kabinetiga qaytish")]
-    ]
-    return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
+    return ReplyKeyboardRemove()
 
 def get_back_reply_keyboard():
     return ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="🔙 Orqaga")]], resize_keyboard=True)

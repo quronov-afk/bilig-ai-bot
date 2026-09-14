@@ -7288,6 +7288,12 @@ def admin_funnel():
         "jami_oqilgan_sahifa": total_pages,
         "jami_yuborilgan_surat": total_photos,
         "eng_katta_yozuvlar": top_logs,
+        "created_at_yoq": one(
+            "SELECT COUNT(*) FROM Users WHERE user_id > 0 AND role IN ('parent','child') "
+            "AND (created_at IS NULL OR created_at = '')"),
+        "created_at_bor": one(
+            "SELECT COUNT(*) FROM Users WHERE user_id > 0 AND role IN ('parent','child') "
+            "AND created_at IS NOT NULL AND created_at != ''"),
     }
     return jsonify(data)
 
