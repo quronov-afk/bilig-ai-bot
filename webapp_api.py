@@ -2407,7 +2407,9 @@ def api_register_role():
             "VALUES (?, ?, 1, ?)",
             (uid, name, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         )
-        cursor.execute("UPDATE Users SET role = ? WHERE user_id = ?", (role, uid))
+        # Bare qatorda sana bo‘lmasa (rol shu yerda birinchi marta tanlansa) to‘ldiriladi.
+        cursor.execute("UPDATE Users SET role = ?, created_at = COALESCE(created_at, ?) "
+                       "WHERE user_id = ?", (role, datetime.now().strftime("%Y-%m-%d %H:%M:%S"), uid))
         conn.commit()
 
     resp = {"ok": True, "role": role}

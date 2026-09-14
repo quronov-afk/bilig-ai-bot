@@ -146,7 +146,9 @@ async def parent_handler(message: types.Message):
         await message.answer(CLOSED_BETA_TEXT, parse_mode="HTML")
         return
 
-    cursor.execute("UPDATE Users SET role = 'parent' WHERE user_id = ?", (message.from_user.id,))
+    # Rol birinchi marta shu yerda tanlangan bo‘lishi mumkin — sana bo‘lmasa to‘ldiriladi.
+    cursor.execute("UPDATE Users SET role = 'parent', created_at = COALESCE(created_at, ?) "
+                   "WHERE user_id = ?", (_now(), message.from_user.id))
     conn.commit()
     await message.answer(f"Siz Ota-ona sifatida ro‘yxatdan o‘tdingiz! ✅\nFarzandingiz ulanishi uchun kodingiz: <b>BLG-{message.from_user.id}</b>", parse_mode="HTML", reply_markup=get_parent_keyboard())
 
@@ -164,7 +166,8 @@ async def child_handler(message: types.Message, state: FSMContext):
         await message.answer(CLOSED_BETA_TEXT, parse_mode="HTML")
         return
 
-    cursor.execute("UPDATE Users SET role = 'child' WHERE user_id = ?", (message.from_user.id,))
+    cursor.execute("UPDATE Users SET role = 'child', created_at = COALESCE(created_at, ?) "
+                   "WHERE user_id = ?", (_now(), message.from_user.id))
     conn.commit()
     await message.answer(
         "Ota-onangiz bergan kodni kiriting (BLG bilan boshlanadi).\n\n"
