@@ -15,7 +15,14 @@ def _now():
 
 
 async def send_open_app(message: types.Message):
-    """Ilovani ochish tugmasi bilan bitta xabar (alohida salomlashuv yo‘q)."""
+    """Ilovani ochish tugmasi bilan bitta xabar (alohida salomlashuv yo‘q).
+
+    Eski pastki tugmalar (2026-09-14 dan oldin ishlatilgan) Telegram'da
+    faqat reply_markup ANIQ yechilganda yo‘qoladi — shuning uchun avval
+    ko‘rinmas xabar bilan tozalanadi, aks holda /start bosilsa ham
+    ekranning pastida eski menyu turib qolaveradi.
+    """
+    await message.answer("⁣", reply_markup=types.ReplyKeyboardRemove())
     await message.answer(OPEN_APP_TEXT, parse_mode="HTML", reply_markup=get_open_app_keyboard())
 
 router = Router()

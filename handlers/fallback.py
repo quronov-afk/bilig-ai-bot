@@ -1,7 +1,7 @@
 from aiogram import Router, types, F
 from aiogram.filters import StateFilter
 
-from keyboards import OPEN_APP_TEXT, get_open_app_keyboard
+from handlers.common import send_open_app
 
 # Eng oxirgi router: boshqa hech bir handler ushlamagan oddiy xabarga
 # ilovani ochish tugmasi bilan javob beradi (ega qarori, 2026-09-14 —
@@ -12,4 +12,6 @@ router = Router()
 
 @router.message(StateFilter(None), F.text, ~F.text.startswith("/"))
 async def open_app_hint(message: types.Message):
-    await message.answer(OPEN_APP_TEXT, parse_mode="HTML", reply_markup=get_open_app_keyboard())
+    # send_open_app eski pastki tugmalarni ham tozalaydi (masalan, bola
+    # hali ham eski "📚 Faol rejalar" tugmasini bossa — shu yerga tushadi).
+    await send_open_app(message)
