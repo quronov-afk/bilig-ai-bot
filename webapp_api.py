@@ -5702,6 +5702,9 @@ def groups_list():
     child_id = _resolve_active_child(request)
     cursor.execute("SELECT group_id FROM Group_Members WHERE child_id = ? ORDER BY joined_at", (child_id,))
     ids = [r[0] for r in cursor.fetchall()]
+    # O‘zi a'zo bo‘lmagan admin (masalan farzandsiz o‘qituvchi) ham o‘z guruhini ko‘rsin
+    cursor.execute("SELECT group_id FROM Groups WHERE admin_user_id = ? ORDER BY group_id", (g.user_id,))
+    ids += [r[0] for r in cursor.fetchall() if r[0] not in ids]
     groups = [g_ for g_ in (_group_brief(i, child_id) for i in ids) if g_]
 
     cursor.execute(
@@ -5709,17 +5712,19 @@ def groups_list():
         "WHERE gr.child_id = ? AND gr.status = 'pending'", (child_id,)
     )
     waiting = [{"id": r[0], "name": r[1]} for r in cursor.fetchall()]
-    return jsonify({"groups": groups, "waiting": waiting, "can_create": _user_role() != "child"})
+    return jsonify({"groups": groups, "waiting": waiting, "can_create": True})
 
 
 @app.route("/api/groups", methods=["POST"])
 @require_auth
 def groups_create():
-    """Guruhni ota-ona ochadi va o‘zi admin bo‘ladi."""
-    if _user_role() == "child":
-        return jsonify({"error": "Guruhni ota-ona ochadi"}), 403
+    """Guruhni istalgan foydalanuvchi ochadi va o‘zi admin bo‘ladi.
+
+    2026-09-14 ega qarori: guruhda chat yo‘q, shuning uchun bolalar uchun
+    bezarar — farzandsiz o‘qituvchi ham, bola ham guruh ocha oladi.
+    """
     lim = PLUS_LIMITS["group_own"]["free"]
-    free_plan = plus_enforced() and not plus_active(g.user_id)
+    free_plan = plus_enforced() and not plus_active(_family_parent(g.user_id))
     if free_plan:
         cursor.execute("SELECT COUNT(*) FROM Groups WHERE admin_user_id = ?", (g.user_id,))
         if (cursor.fetchone() or [0])[0] >= lim:
@@ -5731,8 +5736,8 @@ def groups_create():
     if len(name) < 3:
         return jsonify({"error": "Guruh nomini yozing (kamida 3 harf)"}), 400
     child_id = _resolve_active_child(request)
-    if child_id == g.user_id:
-        return jsonify({"error": "Avval farzandni tanlang"}), 400
+    # Kattalar o‘z nomidan ochsa — faqat admin, o‘quvchilar ro‘yxatiga kirmaydi
+    reader = child_id != g.user_id or _user_role() == "child"
     searchable = 0 if data.get("searchable") is False else 1
 
     with db_lock:
@@ -5749,10 +5754,11 @@ def groups_create():
             (name, g.user_id, code, searchable, GROUP_FREE_MEMBERS if free_plan else 0, now)
         )
         gid = cursor.lastrowid
-        cursor.execute(
-            "INSERT INTO Group_Members (group_id, child_id, is_admin, joined_at) VALUES (?, ?, 1, ?)",
-            (gid, child_id, now)
-        )
+        if reader:
+            cursor.execute(
+                "INSERT INTO Group_Members (group_id, child_id, is_admin, joined_at) VALUES (?, ?, 1, ?)",
+                (gid, child_id, now)
+            )
         conn.commit()
     return jsonify({"ok": True, "id": gid, "name": name, "invite_code": code})
 
@@ -6615,6 +6621,8 @@ def tasks_detail(gid, tid):
         return t
     out = _task_brief(t, child_id)
     out["is_admin"] = is_admin
+    cursor.execute("SELECT 1 FROM Group_Members WHERE group_id = ? AND child_id = ?", (gid, child_id))
+    out["is_member"] = bool(cursor.fetchone())
     out["total_pages"] = t["total_pages"]
     out["final_count"] = t["final_count"]
     cursor.execute("SELECT title, author FROM Group_Task_Books WHERE task_id = ?", (tid,))
@@ -6733,6 +6741,9 @@ def tasks_join(gid, tid):
         return t
     if t["status"] != "open":
         return jsonify({"error": "Musobaqa hali boshlanmagan"}), 400
+    cursor.execute("SELECT 1 FROM Group_Members WHERE group_id = ? AND child_id = ?", (gid, child_id))
+    if not cursor.fetchone():
+        return jsonify({"error": "Musobaqada guruh a'zolari qatnashadi"}), 400
     cursor.execute("SELECT 1 FROM Group_Task_Members WHERE task_id = ? AND child_id = ?", (tid, child_id))
     if cursor.fetchone():
         return jsonify({"ok": True, "already": True})

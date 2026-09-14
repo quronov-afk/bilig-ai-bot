@@ -4876,7 +4876,7 @@ async function renderRatingTab() {
 // Ikki xil kirish yo‘li ataylab farq qiladi:
 //   • taklif kodi bilan — darrov a'zo bo‘ladi;
 //   • qidiruv orqali topilsa — admin tasdig‘i kutiladi.
-// Guruhni ota-ona ochadi; xohlasa a'zo bolaga admin huquqini beradi.
+// Guruhni istalgan foydalanuvchi ochadi (2026-09-14); xohlasa a'zoga admin huquqini beradi.
 // ==========================================================
 
 function groupUrl(path) {
@@ -5036,7 +5036,9 @@ async function renderGroupDetail(content, gid) {
       '<div style="min-width:0"><p class="g-name">' + escapeHtml(m.name) + '</p>' +
       '<p class="g-meta">' + m.books + ' kitob</p></div></div>' + end + '</div>';
   }).join("") + '</div>' +
-    '<div class="action-row"><button class="btn btn-outline" data-action="group-leave">Guruhdan chiqish</button></div>';
+    // A'zo bo‘lmagan admin (farzandsiz o‘qituvchi) chiqmaydi — u guruhni boshqaradi
+    (d.members.some(function (m) { return m.id === d.me; })
+      ? '<div class="action-row"><button class="btn btn-outline" data-action="group-leave">Guruhdan chiqish</button></div>' : '');
 
   content.innerHTML = out;
 }
@@ -5275,7 +5277,7 @@ async function renderTaskDetail(content, gid, tid) {
     out += '<div class="notice-soft">Bu musobaqa hali guruhga chiqmagan. Testni tekshirib, e\'lon qiling.</div>' +
       '<button class="btn btn-primary btn-block" data-action="task-edit-questions">Testni ko‘rish va e\'lon qilish</button>' +
       '<button class="btn btn-outline btn-block" style="margin-top:8px" data-action="task-delete">Bekor qilish</button>';
-  } else if (!t.joined) {
+  } else if (!t.joined && t.is_member) {
     out += '<button class="btn btn-primary btn-block" data-action="task-join">Qatnashaman</button>';
   } else {
     out += '<p class="eyebrow">Qatnashyapti — ' + (t.racers || []).length + ' ta</p><div class="card">' +
