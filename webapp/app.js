@@ -150,6 +150,10 @@ const ICON_PATHS = {
   help: [
     '<circle cx="12" cy="12" r="8.8"/>',
     '<circle cx="12" cy="12" r="8.8"/><path d="M9.6 9.6a2.5 2.5 0 1 1 3.3 2.4c-.6.2-.9.8-.9 1.4v.4"/><path d="M12 17.2h.01"/>'],
+  // Bolaxona — smaylik (ega talabi, Guruhlarning ikki bosh belgisidan farqlansin)
+  smile: [
+    '<circle cx="12" cy="12" r="8.8"/>',
+    '<circle cx="12" cy="12" r="8.8"/><path d="M8.2 14.2a4.6 4.6 0 0 0 7.6 0"/><line x1="8.7" y1="10" x2="8.7" y2="10.02"/><line x1="15.3" y1="10" x2="15.3" y2="10.02"/>'],
   flame: [
     '<path d="M12 21.2a5.6 5.6 0 0 0 5.6-5.6c0-4.3-3.4-6.1-4.4-12.8-2.1 2.4-3.3 4.6-3.3 6.6 0 1.1.3 1.9.7 2.7-1.1-.4-1.9-1.2-2.4-2.2-1.2 1.6-1.8 3.4-1.8 5.7a5.6 5.6 0 0 0 5.6 5.6z"/>',
     '<path d="M12 21.2a5.6 5.6 0 0 0 5.6-5.6c0-4.3-3.4-6.1-4.4-12.8-2.1 2.4-3.3 4.6-3.3 6.6 0 1.1.3 1.9.7 2.7-1.1-.4-1.9-1.2-2.4-2.2-1.2 1.6-1.8 3.4-1.8 5.7a5.6 5.6 0 0 0 5.6 5.6z"/><path d="M12 21.2a2.7 2.7 0 0 0 2.7-2.7c0-1.6-1.3-2.5-2.7-4.4-1.4 1.9-2.7 2.8-2.7 4.4a2.7 2.7 0 0 0 2.7 2.7z"/>'],
@@ -1135,7 +1139,7 @@ const TABS_PARENT = [
   { id: "plans", label: "Kitobxona", icon: "book-open" },
   { id: "store", label: "Do‘kon", icon: "cart" },
   { id: "groups", label: "Guruhlar", icon: "users" },
-  { id: "bolaxona", label: "Bolaxona", icon: "user" },
+  { id: "bolaxona", label: "Bolaxona", icon: "smile" },
 ];
 // Bolada Bolaxona tabi yo‘q: natija va reyting
 // sarlavhadagi kubok belgisi ichiga yig‘ildi. Sabab — uyda bitta telefon
@@ -1152,7 +1156,7 @@ const TABS_PARENT_ACTING = [
   { id: "plans", label: "Kitobxona", icon: "book-open" },
   { id: "store", label: "Do‘kon", icon: "cart" },
   { id: "groups", label: "Guruhlar", icon: "users" },
-  { id: "ota-ona", label: "Ota-ona", icon: "user", action: "exit-bolaxona" },
+  { id: "ota-ona", label: "Ota-ona", icon: "smile", action: "exit-bolaxona" },
 ];
 
 async function setupTabsForRole() {
