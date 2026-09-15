@@ -7011,7 +7011,12 @@ def check_trials():
 # voronka, faol o‘qish, qaytib kelish, imkoniyatlar, Bilig plus,
 # AI sarfi, hafta kitoblari va faqat muammo bo‘lganda — ogohlantirish.
 # /stats buyrug‘i ham aynan shu matnni chiqaradi.
-# Namoyish bolalari (manfiy raqamli) hisobga kirmaydi.
+# Namoyish sinfdoshlari hisobga kirmaydi. DIQQAT: manfiy raqam = namoyish
+# EMAS — Telegramsiz farzandning ham raqami manfiy (_new_local_child_id).
+# Ilgari «child_id > 0» sharti ularni butunlay tashlab yuborardi va voronka
+# «Birinchi betni o‘qidi» ni kam ko‘rsatardi (2026-09-15 aniqlandi).
+# Namoyish sinfdoshlarining raqamlari qat'iy: demo_data.DEMO_MATES, -9001…-9006.
+REAL_CHILD = "NOT (child_id BETWEEN -9099 AND -9001)"
 # ==========================================================
 from html import escape as _html_escape
 
@@ -7051,7 +7056,7 @@ def build_owner_stats():
     parents = {r[0]: (r[1] or "")[:10] for r in _rows(
         "SELECT user_id, created_at FROM Users WHERE role = 'parent' AND user_id > 0")}
     children = {r[0]: (r[1] or "")[:10] for r in _rows(
-        "SELECT user_id, created_at FROM Users WHERE role = 'child' AND user_id > 0")}
+        "SELECT user_id, created_at FROM Users WHERE role = 'child' AND " + REAL_CHILD.replace('child_id', 'user_id'))}
     links = _rows("SELECT parent_id, child_id FROM Family_Link")
     linked_children = {c for _, c in links}
 
@@ -7073,7 +7078,7 @@ def build_owner_stats():
         "ON pb.plan_id = rp.plan_id")} & set(parents)
     read_days = {}
     for cid, day in _rows("SELECT child_id, substr(created_at, 1, 10) FROM Reading_Logs "
-                          "WHERE child_id > 0 GROUP BY child_id, substr(created_at, 1, 10)"):
+                          "WHERE " + REAL_CHILD + " GROUP BY child_id, substr(created_at, 1, 10)"):
         read_days.setdefault(cid, set()).add(day)
     with_page_p = {p for p, ks in kids_of.items() if any(k in read_days for k in ks)}
     habit_p = {p for p, ks in kids_of.items() if any(len(read_days.get(k, ())) >= 3 for k in ks)}
@@ -7091,21 +7096,21 @@ def build_owner_stats():
     r_yday = {c for c, ds in read_days.items() if yday in ds}
     r_week = readers(d7)
     r_prev = readers(p_from, p_to)
-    pages_today = _num("SELECT SUM(pages_added) FROM Reading_Logs WHERE child_id > 0 "
+    pages_today = _num("SELECT SUM(pages_added) FROM Reading_Logs WHERE " + REAL_CHILD + " "
                        "AND substr(created_at, 1, 10) = ?", (today,))
-    pages_week = _num("SELECT SUM(pages_added) FROM Reading_Logs WHERE child_id > 0 "
+    pages_week = _num("SELECT SUM(pages_added) FROM Reading_Logs WHERE " + REAL_CHILD + " "
                       "AND substr(created_at, 1, 10) >= ?", (d7,))
     avg_week = round(pages_week / len(r_week)) if r_week else 0
     returned = round(len(r_prev & r_week) * 100.0 / len(r_prev)) if r_prev else None
 
     # ---- imkoniyatlar (7 kun) ----
-    photos = _num("SELECT COUNT(*) FROM Page_Check_Log WHERE child_id > 0 "
+    photos = _num("SELECT COUNT(*) FROM Page_Check_Log WHERE " + REAL_CHILD + " "
                   "AND substr(created_at, 1, 10) >= ?", (d7,))
-    voices = _num("SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id > 0 AND type = 'voice' "
+    voices = _num("SELECT COUNT(*) FROM Diagnostic_Logs WHERE " + REAL_CHILD + " AND type = 'voice' "
                   "AND substr(created_at, 1, 10) >= ?", (d7,))
-    tests = _num("SELECT COUNT(*) FROM Diagnostic_Logs WHERE child_id > 0 AND type = 'test' "
+    tests = _num("SELECT COUNT(*) FROM Diagnostic_Logs WHERE " + REAL_CHILD + " AND type = 'test' "
                  "AND substr(created_at, 1, 10) >= ?", (d7,))
-    buys = _num("SELECT COUNT(*) FROM Purchases WHERE child_id > 0 "
+    buys = _num("SELECT COUNT(*) FROM Purchases WHERE " + REAL_CHILD + " "
                 "AND substr(created_at, 1, 10) >= ?", (d7,))
 
     # ---- Bilig plus ----
@@ -7129,7 +7134,7 @@ def build_owner_stats():
 
     # ---- hafta kitoblari ----
     top = _rows("SELECT pb.title, COUNT(DISTINCT rl.child_id) AS n FROM Reading_Logs rl "
-                "JOIN Plan_Books pb ON pb.book_id = rl.book_id WHERE rl.child_id > 0 "
+                "JOIN Plan_Books pb ON pb.book_id = rl.book_id WHERE NOT (rl.child_id BETWEEN -9099 AND -9001) "
                 "AND substr(rl.created_at, 1, 10) >= ? GROUP BY pb.title "
                 "ORDER BY n DESC LIMIT 3", (d7,))
 
