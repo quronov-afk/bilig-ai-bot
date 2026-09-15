@@ -7045,6 +7045,44 @@ def owner_stats_keyboard():
     return {"inline_keyboard": rows}
 
 
+def _group_stats(today=None):
+    """Guruhlar bo‘yicha raqamlar (ega talabi, 2026-09-15).
+    Namoyish sinfdoshi (-9099…-9001) a'zo bo‘lgan guruh hisobga kirmaydi.
+    «Farzandsiz katta» — farzandi ulanmagan ota-ona (odatda o‘qituvchi):
+    ilovada alohida o‘qituvchi roli yo‘q."""
+    today = today or datetime.now().strftime("%Y-%m-%d")
+    demo = {r[0] for r in _rows(
+        "SELECT DISTINCT group_id FROM Group_Members WHERE child_id BETWEEN -9099 AND -9001")}
+    groups = [r for r in _rows("SELECT group_id, admin_user_id, created_at FROM Groups")
+              if r[0] not in demo]
+    roles = {r[0]: r[1] for r in _rows("SELECT user_id, role FROM Users")}
+    with_kids = {r[0] for r in _rows("SELECT DISTINCT parent_id FROM Family_Link")}
+    admins = {r[1] for r in groups}
+    by_parent = {a for a in admins if roles.get(a) == "parent" and a in with_kids}
+    by_adult = {a for a in admins if roles.get(a) == "parent" and a not in with_kids}
+    by_child = {a for a in admins if roles.get(a) == "child"}
+    ids = {r[0] for r in groups}
+    sizes = {}
+    kids = set()
+    for gid, cid in _rows("SELECT group_id, child_id FROM Group_Members"):
+        if gid in ids:
+            sizes[gid] = sizes.get(gid, 0) + 1
+            kids.add(cid)
+    tasks = sum(1 for gid, in _rows(
+        "SELECT group_id FROM Group_Tasks WHERE status IN ('open', 'done')") if gid in ids)
+    return {
+        "jami_guruh": len(groups),
+        "bugun_ochilgan": sum(1 for r in groups if (r[2] or "")[:10] == today),
+        "guruh_ochganlar": len(admins),
+        "ochgan_ota_ona": len(by_parent),
+        "ochgan_farzandsiz_katta": len(by_adult),
+        "ochgan_bola": len(by_child),
+        "azo_bolalar": len(kids),
+        "besh_plus_azoli": sum(1 for n in sizes.values() if n >= 5),
+        "musobaqalar": tasks,
+    }
+
+
 def build_owner_stats():
     now = datetime.now()
     today = now.strftime("%Y-%m-%d")
@@ -7174,6 +7212,15 @@ def build_owner_stats():
     L.append("🧩 <b>Shu hafta</b>")
     L.append("Sahifa surati: %d · Ovozli xulosa: %d · Test: %d · Sovg‘a: %d"
              % (photos, voices, tests, buys))
+    gs = _group_stats(today)
+    L.append("")
+    L.append("👥 <b>Guruhlar</b>")
+    L.append("Jami: <b>%d</b> (bugun +%d) · Ochganlar: <b>%d</b>"
+             % (gs["jami_guruh"], gs["bugun_ochilgan"], gs["guruh_ochganlar"]))
+    L.append("Ota-ona: %d · Farzandsiz katta: %d · Bola: %d"
+             % (gs["ochgan_ota_ona"], gs["ochgan_farzandsiz_katta"], gs["ochgan_bola"]))
+    L.append("A'zo bola: %d · 5+ a'zoli guruh: %d · Musobaqa: %d"
+             % (gs["azo_bolalar"], gs["besh_plus_azoli"], gs["musobaqalar"]))
     L.append("")
     L.append("👑 <b>Bilig plus</b>")
     L.append("Sinovda: %d (3 kunda tugaydi: %d) · Pullik: %d" % (trials, trials_soon, paid))
@@ -7312,6 +7359,7 @@ def admin_funnel():
         "dokondan_foydalangan_oilalar": families_with_purchase,
         "bepul_sinov_bosganlar": trial_used,
         "plus_cheklov_yoqiq": plus_enforced(),
+        "guruhlar": _group_stats(),
         "pullikka_otganlar": paid,
         "jami_oqilgan_sahifa": total_pages,
         "jami_yuborilgan_surat": total_photos,
