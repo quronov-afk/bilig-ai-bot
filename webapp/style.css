@@ -2301,6 +2301,8 @@ textarea.g-input { resize: vertical; line-height: 1.45; }
 .plus-banner .pb-tx span { font-size: 13px; color: var(--text-soft); line-height: 1.4; }
 .plus-banner.is-trial { border-color: var(--brand); }
 .plus-banner.is-trial .pb-ic { background: var(--brand-bg); color: var(--brand-deep); }
+/* Bepul davr banneri — toj oltin rangda (ega talabi, 2026-09-15) */
+.plus-banner.is-free .pb-ic { background: #FEF3C7; color: #F59E0B; }
 
 /* Sinov sahifasidagi qadamlar */
 .trial-steps { margin: 4px 0 18px; }

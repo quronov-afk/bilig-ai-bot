@@ -1208,7 +1208,7 @@ function renderHeaderNav() {
     // Sinov davrida toj ustida kichik taymer: necha KUN qolgani.
     // Soniya emas — oilaviy ilovada yugurib turgan raqam bosimdek tuyuladi.
     const pl = State.plus;
-    const days = pl && pl.plan === "trial" && pl.days_left
+    const days = pl && pl.enforced && pl.plan === "trial" && pl.days_left
       ? '<span class="plus-days">' + pl.days_left + '</span>' : "";
     html = '<button class="icon-btn plus-btn" data-action="open-plus" ' +
       'aria-label="Bilig plus" title="Bilig plus' +
@@ -3090,6 +3090,14 @@ function plusBadge(size) {
   return '<span class="plus-badge">' + icon("crown", size || 15, 1.9) + '</span>';
 }
 
+// "2026-11-01" -> "1-noyabr"
+function plusDateText(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || "2026-11-01");
+  const months = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust",
+    "sentabr", "oktabr", "noyabr", "dekabr"];
+  return Number(m[3]) + "-" + months[Number(m[2]) - 1];
+}
+
 function money(n) {
   return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " so‘m";
 }
@@ -3128,8 +3136,15 @@ async function openPlusPage() {
   const p = State.plus || {};
   const plan = p.plan || "free";
 
+  // Pullik davr boshlanmaguncha hamma imkoniyat hammaga ochiq (ega qarori,
+  // 2026-09-15): sinov tugmasi yashiriladi, o‘rniga sana e'lon qilinadi.
+  const freeNow = !p.enforced && plan !== "plus";
   let head;
-  if (plan === "plus") {
+  if (freeNow) {
+    head = '<div class="plus-head is-on">' + icon("crown", 38, 1.7) +
+      '<b>Hozircha hammasi bepul</b><span>' + plusDateText(p.paid_from) +
+      'dan ' + PLUS_NAME + ' pullik bo‘ladi</span></div>';
+  } else if (plan === "plus") {
     head = '<div class="plus-head is-on">' + icon("crown", 38, 1.7) +
       '<b>Bilig plus ochiq</b><span>' +
       (p.days_left ? p.days_left + " kun qoldi" : "amal qilmoqda") + '</span></div>';
@@ -3168,7 +3183,7 @@ async function openPlusPage() {
 
   // Asosiy tugma sahifaning TEPASIDA — jadvalni oxirigacha o‘qimasdan ham
   // ko‘rinsin. Hozircha pullik imkoniyatlarning yagona sharti shu tugma.
-  const trialBtn = (plan === "free" && !p.trial_used)
+  const trialBtn = (plan === "free" && !p.trial_used && !freeNow)
     ? '<button class="btn btn-primary btn-block" style="margin-top:14px" data-action="plus-trial">' +
       (p.trial_days || 15) + ' kun tekin foydalanish</button>' +
       '<p class="g-note" style="text-align:center">Karta ham, to‘lov ham so‘ralmaydi.</p>'
@@ -3314,6 +3329,13 @@ function plusBannerHtml() {
   // odamlar Bilig plus haqida oldindan bilib turadi. Qulf esa chegara
   // yoqilmaguncha qo‘yilmaydi: bosilmaydigan tugmaga tamg‘a bosish yolg‘on.
   if (p.plan === "plus") return "";
+  if (!p.enforced) {
+    return '<button class="plus-banner is-trial is-free" data-action="open-plus">' +
+      '<span class="pb-ic">' + icon("crown", 20, 1.9) + '</span>' +
+      '<span class="pb-tx"><b>Hozircha hammasi bepul</b>' +
+      '<span>' + plusDateText(p.paid_from) + 'gacha barcha imkoniyatlar cheklovsiz ochiq.</span></span>' +
+      icon("chevron-right", 17, 2.2) + '</button>';
+  }
   if (p.plan === "trial") {
     return '<button class="plus-banner is-trial" data-action="open-plus">' +
       '<span class="pb-ic">' + icon("crown", 20, 1.9) + '</span>' +

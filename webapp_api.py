@@ -5623,9 +5623,17 @@ def _group_row(gid):
     return cursor.fetchone()
 
 
+def _group_cap(limit):
+    """Tekin versiyada guruhga yozilgan 30 a'zo chegarasi pullik davr
+    boshlanmaguncha hisobga olinmaydi (admin o‘zi qo‘ygan boshqa son qoladi)."""
+    if limit == GROUP_FREE_MEMBERS and not plus_enforced():
+        return 0
+    return limit or 0
+
+
 def _group_full(row):
     """Chegara belgilangan bo‘lsa va joy qolmagan bo‘lsa — True."""
-    limit = row[5] if len(row) > 5 else 0
+    limit = _group_cap(row[5] if len(row) > 5 else 0)
     if not limit:
         return False
     cursor.execute("SELECT COUNT(*) FROM Group_Members WHERE group_id = ?", (row[0],))
@@ -5779,7 +5787,7 @@ def groups_detail(gid):
 
     members = _group_members(gid)
     out = {"id": row[0], "name": row[1], "searchable": bool(row[4]),
-           "max_members": row[5], "admin_name": _group_admin_name(row),
+           "max_members": _group_cap(row[5]), "admin_name": _group_admin_name(row),
            "is_admin": is_admin, "me": child_id, "members": members}
     if is_admin:
         out["invite_code"] = row[3]
@@ -7298,6 +7306,7 @@ def admin_funnel():
         "test_yechgan_bolalar": children_with_test,
         "dokondan_foydalangan_oilalar": families_with_purchase,
         "bepul_sinov_bosganlar": trial_used,
+        "plus_cheklov_yoqiq": plus_enforced(),
         "pullikka_otganlar": paid,
         "jami_oqilgan_sahifa": total_pages,
         "jami_yuborilgan_surat": total_photos,
@@ -7370,10 +7379,19 @@ PLUS_LIMITS = {
 }
 
 
+# Ega qarori (2026-09-15): ilova ommalashsin — shu sanagacha hamma
+# imkoniyat hammaga cheklovsiz, sinov tugmasini bosmasa ham. Sana kelganda
+# chegaralar o‘z-o‘zidan yoqiladi.
+PLUS_START_DATE = "2026-11-01"
+
+
 def plus_enforced():
-    """Chegaralar hozir ishlayaptimi? Sukut bo‘yicha — ha (2026-09-13 dan).
-    Vaqtincha o‘chirish uchun Render'da PLUS_ENFORCE=0 qo‘yiladi."""
-    return os.getenv("PLUS_ENFORCE", "1") != "0"
+    """Chegaralar hozir ishlayaptimi? PLUS_START_DATE dan boshlab — ha.
+    Render'da PLUS_ENFORCE=1 yoki 0 qo‘yilsa, sanadan qat'i nazar shu amal qiladi."""
+    env = os.getenv("PLUS_ENFORCE", "").strip()
+    if env in ("0", "1"):
+        return env == "1"
+    return datetime.now().strftime("%Y-%m-%d") >= PLUS_START_DATE
 
 
 def _paylov_test_parents():
@@ -7662,6 +7680,7 @@ def plus_status():
     return jsonify({
         "plan": plan,
         "enforced": plus_enforced(),
+        "paid_from": PLUS_START_DATE,
         "payment_ready": plus_payment_ready(parent_id),
         # Faqat egaga: to‘lov sozlamalari topildimi (qiymatlarning o‘zi emas)
         "pay_check": ({"switch": _payment_switch_on(),
